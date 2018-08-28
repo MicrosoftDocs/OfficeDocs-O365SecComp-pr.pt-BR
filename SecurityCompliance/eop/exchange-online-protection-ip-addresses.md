@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Os seguintes endereços IP do data center da Microsoft são usados pela Proteção do Exchange Online da Microsoft (EOP) ao enviar e receber emails, ou para o portal de Proteção do Exchange Online e serviços administrativos. Para enviar e receber mensagens do EOP ou para usar serviços administrativos, verifique se sua rede permite conexões desses endereços IP.
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026318"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230003"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Endereços de IP do Exchange Online Protection
 
@@ -26,8 +26,6 @@ Os seguintes endereços IP do data center da Microsoft são usados pela Proteç�
 > A Microsoft está desenvolvendo um serviço web baseado em REST para o endereço IP e as entradas de FQDN nesta página. Esse novo serviço ajudará você a configurar e atualizar os dispositivos de perímetro de rede, como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista, ou alterações específicas. Esse serviço eventualmente substituirão o documento XML, RSS feed e o endereço IP e as entradas de FQDN nesta página. Para testar esse novo serviço, vá para o [serviço Web](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice). 
  
 ## <a name="eop-ip-address-ranges"></a>Intervalos de endereços IP do EOP
-
-O exemplo a seguir é uma lista completa de intervalos de endereços IP do EOP a partir de **2/7/2018**. 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ O Exchange Online Protection faz o roteamento dos emails da maneira mais eficien
 | 216.32.180.0/23 |  | |
 | 2a01:111:f400:7 c 00::/ / 54 |  | |
 ||||
+
