@@ -147,7 +147,7 @@
 ## [Usar a Pesquisa de Conteúdo](content-search.md)
 ### [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
 ### [Exibir as estatísticas de palavra-chave para resultados de Pesquisa de Conteúdo](view-keyword-statistics-for-content-search.md)
-### [Exportar resultados de Pesquisa de Conteúdo](content-search.md#export-search-results)
+### [Exportar resultados de Pesquisa de Conteúdo](export-search-results.md)
 ### [Exportar um relatório da Pesquisa de Conteúdo](export-a-content-search-report.md)
 ### [Pesquisar e excluir mensagens de email](search-for-and-delete-messagesadmin-help.md)
 ### [Pesquisar caixas de correio baseadas em nuvem dos usuários locais no Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +169,11 @@
 ### [Desabilitar relatórios ao exportar os resultados da Pesquisa de Conteúdo](disable-reports-when-you-export-content-search-results.md)
 ## Usar scripts do PowerShell da Pesquisa de Conteúdo
 ### [Usar a Pesquisa de Conteúdo para determinadas coleções](use-content-search-for-targeted-collections.md)
-### [Usar a Pesquisa de Conteúdo para pesquisar na caixa de correio e no site do OneDrive for Business para obter uma lista de usuários](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [Usar a Pesquisa de Conteúdo para pesquisar na caixa de correio e no site do OneDrive for Business para obter uma lista de usuários](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Criar, gerar relatórios e excluir várias Pesquisas de Conteúdo](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clonar uma Pesquisa de Conteúdo](clone-a-content-search.md)
 
-# Gerenciar investigações legais
+# [Gerenciar investigações legais](manage-legal-investigations.md)
 ## [Criar e gerenciar casos de Descoberta eletrônica](ediscovery-cases.md)
 ## [Atribuir permissões de Descoberta eletrônica](assign-ediscovery-permissions.md)
 ## [Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365](set-up-compliance-boundaries.md)
@@ -183,6 +183,7 @@
 ## [Usar um script para adicionar usuários a uma retenção em caso de Descoberta eletrônica](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Criar um relatório sobre retenções em casos de Descoberta eletrônica](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Gerenciar retenções
+### [Criar uma retenção de Descoberta Eletrônica](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [Criar uma retenção de litígio](create-a-litigation-hold.md)
 ### [Excluir itens na pasta de Itens recuperáveis de caixas de correio baseadas em nuvem em retenção](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Aumentar a cota de Itens recuperáveis para caixas de correio em retenção](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
