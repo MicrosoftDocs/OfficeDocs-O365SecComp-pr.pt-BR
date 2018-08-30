@@ -1,0 +1,76 @@
+---
+title: Agrupar seus endereços IP para simplificar o gerenciamento do Office 365 Cloud App Security
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 2/22/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
+description: Para identificar facilmente os conjuntos de endereços IP que você usará na segurança de aplicativo de nuvem do Office 365, como seus endereços IP do escritório físico, você pode configurar grupos de intervalos de endereços IP.
+ms.openlocfilehash: 76cb9625a46d1f5eceaab696de5dcbb72f4d2b47
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22523476"
+---
+# <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a><span data-ttu-id="7f231-103">Agrupar seus endereços IP para simplificar o gerenciamento do Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="7f231-103">Group your IP addresses to simplify management in Office 365 Cloud App Security</span></span>
+  
+|<span data-ttu-id="7f231-104">Avaliação * *\>**</span><span class="sxs-lookup"><span data-stu-id="7f231-104">****Evaluation** \>**</span></span>|<span data-ttu-id="7f231-105">Planejamento * *\>**</span><span class="sxs-lookup"><span data-stu-id="7f231-105">****Planning** \>**</span></span>|<span data-ttu-id="7f231-106">Implantação * *\>**</span><span class="sxs-lookup"><span data-stu-id="7f231-106">****Deployment** \>**</span></span>|<span data-ttu-id="7f231-107">Utilização \* \* \*</span><span class="sxs-lookup"><span data-stu-id="7f231-107">****Utilization****</span></span>|
+|:-----|:-----|:-----|:-----|
+|[<span data-ttu-id="7f231-108">Comece a avaliar</span><span class="sxs-lookup"><span data-stu-id="7f231-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |[<span data-ttu-id="7f231-109">Começar a planejar</span><span class="sxs-lookup"><span data-stu-id="7f231-109">Start planning</span></span>](get-ready-for-office-365-cas.md) <br/> |<span data-ttu-id="7f231-110">Você está aqui!</span><span class="sxs-lookup"><span data-stu-id="7f231-110">You are here!</span></span>  <br/> [<span data-ttu-id="7f231-111">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="7f231-111">Next steps</span></span>](#next-steps) <br/> |[<span data-ttu-id="7f231-112">Iniciar a utilização</span><span class="sxs-lookup"><span data-stu-id="7f231-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
+   
+<span data-ttu-id="7f231-p101">Para identificar facilmente os conjuntos de endereços IP que você usará na segurança de aplicativo de nuvem do Office 365, como seus endereços IP do escritório físico, você pode configurar grupos de intervalos de endereços IP. Definindo permite esses intervalos você marca e categorizá-las e, em seguida, você pode usar marcas e categorias para personalizar como sua atividade logs e os alertas são exibidas e investigadas.</span><span class="sxs-lookup"><span data-stu-id="7f231-p101">To easily identify sets of IP addresses that you'll use in Office 365 Cloud App Security, such as your physical office IP addresses, you can set up groups of IP address ranges. Defining these ranges lets you tag and categorize them, and then you can use tags and categories to customize how your activity logs and alerts are displayed and investigated.</span></span>
+  
+<span data-ttu-id="7f231-p102">Cada grupo de intervalos de IP pode ser identificado com nomes de marca que você escolhe, e, em seguida, as marcas podem ser categorizadas com base em uma lista padrão de categorias IP (por exemplo, Corporate, administrativos, Risky e VPN). Há suporte para endereços IPv4 e IPv6.</span><span class="sxs-lookup"><span data-stu-id="7f231-p102">Each group of IP ranges can be tagged with tag names that you choose, and then the tags can be categorized based on a default list of IP categories (such as Corporate, Administrative, Risky, and VPN). Both IPv4 and IPv6 addresses are supported.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="7f231-p103">Você deve ser um administrador global ou administrador de segurança para executar os procedimentos neste artigo. Para saber mais, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="7f231-p103">You must be a global administrator or security administrator to perform the procedures in this article. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
+  
+## <a name="to-set-up-an-ip-address-range-in-office-365-cloud-app-security"></a><span data-ttu-id="7f231-119">Para configurar um intervalo de endereços IP na segurança de aplicativo de nuvem do Office 365</span><span class="sxs-lookup"><span data-stu-id="7f231-119">To set up an IP address range in Office 365 Cloud App Security</span></span>
+
+1. <span data-ttu-id="7f231-p104">Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. (Isso leva você para a segurança &amp; Centro de conformidade.)</span><span class="sxs-lookup"><span data-stu-id="7f231-p104">As a global administrator or security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account. (This takes you to the Security &amp; Compliance Center.)</span></span> 
+    
+2. <span data-ttu-id="7f231-122">Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.</span><span class="sxs-lookup"><span data-stu-id="7f231-122">In the Security &amp; Compliance Center, choose **Alerts** \> **Manage advanced alerts**.</span></span>
+    
+3. <span data-ttu-id="7f231-123">Escolha **vá para segurança de aplicativo do Office 365 nuvem**.</span><span class="sxs-lookup"><span data-stu-id="7f231-123">Choose **Go to Office 365 Cloud App Security**.</span></span>
+    
+    ![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+  
+4. <span data-ttu-id="7f231-125">Na parte superior direita da página, clique em **configurações** \> **intervalos de endereços IP**.</span><span class="sxs-lookup"><span data-stu-id="7f231-125">On the upper right of the page, click **Settings** \> **IP address ranges**.</span></span>
+    
+    ![Em segurança de aplicativo de nuvem O365, escolha configurações para acessar as configurações do sistema e dados](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)
+  
+5. <span data-ttu-id="7f231-127">Clique no botão novo, que se parece com um sinal de adição ( **+**).</span><span class="sxs-lookup"><span data-stu-id="7f231-127">Click the new button, which resembles a plus sign ( **+**).</span></span>
+    
+6. <span data-ttu-id="7f231-128">Na janela do **intervalo de endereços IP do novo** , especifique os seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="7f231-128">In the **New IP address range** window, specify the following values:</span></span> 
+    
+|<span data-ttu-id="7f231-129">**Campo ou lista**</span><span class="sxs-lookup"><span data-stu-id="7f231-129">**Field or list**</span></span>|<span data-ttu-id="7f231-130">**O que fazer**</span><span class="sxs-lookup"><span data-stu-id="7f231-130">**What to do**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="7f231-131">**Nome**</span><span class="sxs-lookup"><span data-stu-id="7f231-131">**Name**</span></span> <br/> |<span data-ttu-id="7f231-p105">Use este campo para gerenciar as configurações e do intervalo de endereços IP. (Você não verá esse valor nos logs de atividades).</span><span class="sxs-lookup"><span data-stu-id="7f231-p105">Use this field to manage your IP address range and settings. (You won't see this value in activities logs.)</span></span>  <br/> |
+|<span data-ttu-id="7f231-134">**Intervalos de endereços IP**</span><span class="sxs-lookup"><span data-stu-id="7f231-134">**IP address ranges**</span></span> <br/> |<span data-ttu-id="7f231-p106">Especifique um intervalo, usando a notação de prefixo de rede (também conhecido como notação CIDR). Por exemplo, 192.168.1.0/27 inclui o intervalo de valores 192.168.1.0 por meio de 192.168.1.31 (inclusive).</span><span class="sxs-lookup"><span data-stu-id="7f231-p106">Specify a range, using network prefix notation (also known as CIDR notation). For example, 192.168.1.0/27 includes the range of values 192.168.1.0 through 192.168.1.31 (inclusive).</span></span>  <br/> |
+|<span data-ttu-id="7f231-137">**Local** e **registrados ISP**</span><span class="sxs-lookup"><span data-stu-id="7f231-137">**Location** and **Registered ISP**</span></span> <br/> |<span data-ttu-id="7f231-p107">Especifique o local e o provedor de serviços de Internet (ISP) para o intervalo de endereços IP. Isso substitui os campos públicos definidos para os endereços, que é útil para casos, como um endereço IP é o que é considerado publicamente na Irlanda, mas é realmente nos EUA</span><span class="sxs-lookup"><span data-stu-id="7f231-p107">Specify the location and Internet Service Provider (ISP) for the IP address range. This overrides the public fields defined for the addresses, which is helpful for cases, such as an IP address is that is considered publicly to be in Ireland but is actually in the U.S.</span></span>  <br/> |
+|<span data-ttu-id="7f231-140">**Tags**</span><span class="sxs-lookup"><span data-stu-id="7f231-140">**Tags**</span></span> <br/> |<span data-ttu-id="7f231-p108">Use marcas para nomear os grupos de endereços IP. (Ao contrário do campo nome, você verá marcas nos logs de atividade.) Digite uma palavra ou frase que você deseja usar para uma marca. Você pode adicionar quantas marcas desejar para cada intervalo de endereços IP. E se você já configurou uma marca e você deseja adicionar esse intervalo de endereços IP a ele, escolha da lista de marcas atuais que aparecem conforme você começa a digitar.</span><span class="sxs-lookup"><span data-stu-id="7f231-p108">Use tags to name your groups of IP addresses. (Unlike the Name field, you will see Tags in activity logs.) Type a word or phrase that you want to use for a tag. You can add as many tags as you like for each IP address range. And if you've already set up a tag and you want to add this IP address range to it, choose it from the list of current tags that appear as you start typing.</span></span>  <br/> |
+|<span data-ttu-id="7f231-145">**Categoria**</span><span class="sxs-lookup"><span data-stu-id="7f231-145">**Category**</span></span> <br/> | <span data-ttu-id="7f231-p109">Atribua categorias a suas marcas para facilitar a reconhecer atividades que vêm de certos endereços IP. Escolha entre as seguintes opções:</span><span class="sxs-lookup"><span data-stu-id="7f231-p109">Assign categories to your tags to make it easier to recognize activities that come from certain IP addresses. Choose from the following options:  </span></span><br/> <span data-ttu-id="7f231-148">**Administrativas** Todos os endereços IP do seus grupo Administradores.</span><span class="sxs-lookup"><span data-stu-id="7f231-148">**Administrative** All of the IP addresses of your admins.</span></span>  <br/> <span data-ttu-id="7f231-149">**Provedor de nuvem** O endereço IP do seu proxy na nuvem.</span><span class="sxs-lookup"><span data-stu-id="7f231-149">**Cloud provider** The IP address of your proxy in the cloud.</span></span>  <br/> <span data-ttu-id="7f231-150">**Corporativo** Todos o endereços IP na sua rede interna, suas filiais e seus endereços de roaming Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="7f231-150">**Corporate** All of the IP addresses in your internal network, your branch offices, and your Wi-Fi roaming addresses.</span></span>  <br/> <span data-ttu-id="7f231-p110">**Riscado** Qualquer endereço IP que você considera riscado, como os endereços de IP de suspeito você visto no passado, endereços IP nas redes de concorrentes e assim por diante. Por padrão, as categorias riscadas inclui duas marcas IP: **proxy anônimo** e **Tor**</span><span class="sxs-lookup"><span data-stu-id="7f231-p110">**Risky** Any IP addresses that you consider to be risky, such as suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, and so on. By default, the Risky categories includes two IP tags: **Anonymous proxy** and **Tor**</span></span> <br/> <span data-ttu-id="7f231-153">**VPN** Os endereços IP que usam seus funcionários remotos.</span><span class="sxs-lookup"><span data-stu-id="7f231-153">**VPN** Any IP addresses that your remote workers use.</span></span>  <br/> |
+   
+7. <span data-ttu-id="7f231-154">Escolha **Salvar**.</span><span class="sxs-lookup"><span data-stu-id="7f231-154">Choose **Save**.</span></span>
+    
+<span data-ttu-id="7f231-155">Depois de configurar seus intervalos de endereços IP, lembre-se de que apenas futuros eventos são afetados por essas alterações.</span><span class="sxs-lookup"><span data-stu-id="7f231-155">After you set up your IP address ranges, keep in mind that only future events are affected by these changes.</span></span>
+  
+## <a name="next-steps"></a><span data-ttu-id="7f231-156">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="7f231-156">Next steps</span></span>
+
+- [<span data-ttu-id="7f231-157">Alertas e políticas de atividade</span><span class="sxs-lookup"><span data-stu-id="7f231-157">Activity policies and alerts</span></span>](activity-policies-and-alerts.md)
+    
+- [<span data-ttu-id="7f231-158">Políticas de detecção de anomalia</span><span class="sxs-lookup"><span data-stu-id="7f231-158">Anomaly detection policies</span></span>](anomaly-detection-policies-in-ocas.md)
+    
+- [<span data-ttu-id="7f231-159">Integrar seu servidor SIEM</span><span class="sxs-lookup"><span data-stu-id="7f231-159">Integrate your SIEM server</span></span>](integrate-your-siem-server-with-office-365-cas.md)
+    
+- [<span data-ttu-id="7f231-160">Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="7f231-160">Review and take action on alerts in Office 365 Cloud App Security</span></span>](review-office-365-cas-alerts.md)
+    
+
