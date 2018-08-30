@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Configurações de filtro de spam básico incluem selecionando a ação a ser executada em mensagens que são identificadas como spam e escolha se deseja filtrar as mensagens enviadas de determinados países ou regiões ou escritas em idiomas específicos.
-ms.openlocfilehash: b0a5fa1a5640bd0baab68c29d8098059a6025f7d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3e24a69dacc18272baa710c18492759f67583f4f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026528"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002960"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
   
@@ -26,7 +28,6 @@ Configurações de filtro de spam básico incluem selecionando a ação a ser ex
 > Para clientes do Exchange Online Protection (EOP) autônomo: por padrão, os filtros de spam EOP enviam mensagens de spam detectado para pasta de lixo eletrônico de cada destinatário. No entanto, para garantir que a ação de **mover a mensagem para a pasta Lixo eletrônico** funciona para caixas de correio local, você deve configurar regras de transporte do Exchange em seus servidores locais para detectar os cabeçalhos de spam que são adicionados pelo EOP. Para obter detalhes, consulte [Certifique-se de que o spam é roteado para a pasta de lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>Você deve saber antes de começar
-<a name="sectionSection0"> </a>
 
 Tempo estimado para conclusão: 30 minutos
   
@@ -35,7 +36,6 @@ Você precisa ter permissões antes de executar este procedimento ou procediment
 Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Keyboard shortcuts in Exchange 2013**.
   
 ## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>Usar o Centro de administração do Exchange (EAC) para configurar as políticas de filtro de spam
-<a name="sectionSection1"> </a>
 
 1. No Centro de Administração do Exchange (EAC), navegue até **Proteção** \> **Filtro de conteúdo**.
     
@@ -43,7 +43,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
   - Clique duas vezes na política padrão de forma a editá-la para toda a empresa.
     
-  - Clique no ícone ![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) **Novo** para criar uma nova política de filtro de spam personalizada que pode ser aplicada a usuários, grupos e domínios em sua organização. Também é possível editar políticas personalizadas existentes clicando nelas duas vezes. 
+  - Clique no ícone ![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) **Novo** para criar uma nova política de filtro de spam personalizada que pode ser aplicada a usuários, grupos e domínios em sua organização. Também é possível editar políticas personalizadas existentes clicando nelas duas vezes. 
     
 3. Para apenas diretivas personalizadas, especifique um nome para esta diretiva. Opcionalmente, você também pode especificar uma descrição mais detalhada. Não é possível renomear a política padrão.
     
@@ -85,27 +85,27 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
 6. Na página **Listas de Bloqueios**, você pode especificar as entradas, como remetentes ou domínios, que sempre serão marcadas como spam. O serviço aplicará a ação de spam de alta confiança configurada nos emails que corresponderem a essas entradas. 
     
-  - Adicione remetentes indesejados à lista de Bloqueios de Remetentes. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e, na caixa de diálogo de seleção, adicione os endereços dos remetentes que deseja bloquear. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em **Ok** para retornar à página **Listas de Bloqueios**. 
+  - Adicione remetentes indesejados à lista de Bloqueios de Remetentes. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e, na caixa de diálogo de seleção, adicione os endereços dos remetentes que deseja bloquear. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em **Ok** para retornar à página **Listas de Bloqueios**. 
     
-  - Adicione domínios indesejados à lista de Bloqueio de domínios. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e, na caixa de diálogo de seleção, adicione os domínios que deseja bloquear. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em **Ok** para retornar à página **Listas de Bloqueios**. 
+  - Adicione domínios indesejados à lista de Bloqueio de domínios. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e, na caixa de diálogo de seleção, adicione os domínios que deseja bloquear. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em **Ok** para retornar à página **Listas de Bloqueios**. 
     
     > [!CAUTION]
     > Se você bloquear domínios de primeiro nível, é provável que emails não bloqueados sejam marcados como spam. 
   
 7. Na página **Listas de Permissões**, você pode especificar as entradas, como remetentes ou domínios, que sempre serão entregues à caixa de entrada. Os emails dessas entradas não são processados pelo filtro de spam. 
     
-  - Adicione remetentes confiáveis à Lista de permissões de remetentes. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e, na caixa de diálogo de seleção, adicione os endereços dos remetentes que deseja permitir. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em OK para retornar à página **Listas de Permissões**. 
+  - Adicione remetentes confiáveis à Lista de permissões de remetentes. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e, na caixa de diálogo de seleção, adicione os endereços dos remetentes que deseja permitir. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em OK para retornar à página **Listas de Permissões**. 
     
-  - Adicione domínios confiáveis à Lista de permissões de domínios. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e, na caixa de diálogo de seleção, adicione os domínios que deseja permitir. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em OK para retornar à página **Listas de Permissões**. 
+  - Adicione domínios confiáveis à Lista de permissões de domínios. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e, na caixa de diálogo de seleção, adicione os domínios que deseja permitir. Você pode separar várias entradas usando ponto-e-vírgula ou uma nova linha. Clique em OK para retornar à página **Listas de Permissões**. 
     
     > [!CAUTION]
     > Se você permitir domínios de nível superior, é provável que emails não desejados sejam entregues na caixa de entrada. 
   
 8. Na página de **Spam internacional** , você pode filtrar as mensagens de email enviadas de determinados países ou regiões ou escritas em idiomas específicos. Você pode configurar até 250 diferentes regiões e de 86 idiomas diferentes. O serviço se aplicarão a ação configurada de spam de alta confiabilidade. 
     
-1. Marque a caixa de seleção **filtrar mensagens de email gravadas nos seguintes idiomas** para habilitar essa funcionalidade. Clique em ![ícone Adicionar](media/ITPro-EAC-AddIcon.png)e, na caixa de diálogo de seleção, faça suas escolhas (há suporte para várias seleções). Por exemplo, se você selecionar para filtrar mensagens escritas em árabe (AR), e a **mensagem em quarentena** é sua ação configurada para mensagens de spam de alta confiabilidade, todas as mensagens escritas em árabe serão ser colocada em quarentena. Clique em **okey** para retornar ao painel de **Spam internacional** . 
+1. Marque a caixa de seleção **filtrar mensagens de email gravadas nos seguintes idiomas** para habilitar essa funcionalidade. Clique em ![ícone Adicionar](media/ITPro-EAC-AddIcon.gif)e, na caixa de diálogo de seleção, faça suas escolhas (há suporte para várias seleções). Por exemplo, se você selecionar para filtrar mensagens escritas em árabe (AR), e a **mensagem em quarentena** é sua ação configurada para mensagens de spam de alta confiabilidade, todas as mensagens escritas em árabe serão ser colocada em quarentena. Clique em **okey** para retornar ao painel de **Spam internacional** . 
     
-2. Marque a caixa de seleção **filtrar mensagens de email enviadas dos seguintes países ou regiões** para habilitar essa funcionalidade. Clique em ![ícone Adicionar](media/ITPro-EAC-AddIcon.png)e, na caixa de diálogo de seleção, faça suas escolhas (há suporte para várias seleções). Por exemplo, se você selecionar para filtrar todas as mensagens que são enviadas a partir da Austrália (AU), e a **mensagem em quarentena** é sua ação configurada para mensagens de spam de alta confiabilidade e, em seguida, todas as mensagens enviadas a partir da Austrália serão ser colocada em quarentena. Clique em **okey** para retornar ao painel de **Spam internacional** . 
+2. Marque a caixa de seleção **filtrar mensagens de email enviadas dos seguintes países ou regiões** para habilitar essa funcionalidade. Clique em ![ícone Adicionar](media/ITPro-EAC-AddIcon.gif)e, na caixa de diálogo de seleção, faça suas escolhas (há suporte para várias seleções). Por exemplo, se você selecionar para filtrar todas as mensagens que são enviadas a partir da Austrália (AU), e a **mensagem em quarentena** é sua ação configurada para mensagens de spam de alta confiabilidade e, em seguida, todas as mensagens enviadas a partir da Austrália serão ser colocada em quarentena. Clique em **okey** para retornar ao painel de **Spam internacional** . 
     
     > [!NOTE]
     > Por padrão, se não houver qualquer opção de spam internacional selecionada, o serviço filtrará normalmente o spam em mensagens enviadas, em todos os idiomas e de todas as regiões. As mensagens são analisadas e, se definidas como spam ou spam de alta confiança, as ações configuradas são aplicadas. 
@@ -143,10 +143,9 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
 11. Clique em **salvar**. Um resumo das configurações de política aparecerá no painel direito.
     
 > [!TIP]
->  Você pode marque ou desmarque as caixas de seleção na coluna **habilitado** para habilitar ou desabilitar suas diretivas personalizadas. Por padrão, todas as diretivas estão habilitadas. A política padrão não pode ser desabilitada. > Para excluir uma política personalizada, selecione a política, clique no ![ícone Excluir](media/ITPro-EAC-DeleteIcon.png) ícone **Excluir** e confirme que você deseja excluir a diretiva. A política padrão não pode ser excluída. > Políticas personalizadas sempre têm precedência sobre a diretiva padrão. Políticas personalizadas são executados na ordem inversa em que você criou (do mais antigo para o mais recente), mas você pode alterar a prioridade (ordem de execução) das suas diretivas personalizadas clicando o ![ícone de seta para cima](media/ITPro-EAC-UpArrowIcon.png) seta para cima e ![ícone de seta para baixo](media/ITPro-EAC-DownArrowIcon.png) para baixo seta. A política que possui uma **prioridade** **0** será executado primeira, seguido de **1**, e em seguida, **2**e assim por diante. 
+>  Você pode marque ou desmarque as caixas de seleção na coluna **habilitado** para habilitar ou desabilitar suas diretivas personalizadas. Por padrão, todas as diretivas estão habilitadas. A política padrão não pode ser desabilitada. > Para excluir uma política personalizada, selecione a política, clique no ![ícone Excluir](media/ITPro-EAC-DeleteIcon.gif) ícone **Excluir** e confirme que você deseja excluir a diretiva. A política padrão não pode ser excluída. > Políticas personalizadas sempre têm precedência sobre a diretiva padrão. Políticas personalizadas são executados na ordem inversa em que você criou (do mais antigo para o mais recente), mas você pode alterar a prioridade (ordem de execução) das suas diretivas personalizadas clicando o ![ícone de seta para cima](media/ITPro-EAC-UpArrowIcon.gif) seta para cima e ![ícone de seta para baixo](media/ITPro-EAC-DownArrowIcon.gif) para baixo seta. A política que possui uma **prioridade** **0** será executado primeira, seguido de **1**, e em seguida, **2**e assim por diante. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Usar o PowerShell remoto para configurar políticas de filtro de spam
-<a name="sectionSection2"> </a>
 
 Você também pode configurar e aplicar políticas de filtro de spam no PowerShell. Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Para saber como usar o Windows PowerShell para se conectar ao Exchange Online Protection, consulte [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
@@ -161,7 +160,6 @@ Você também pode configurar e aplicar políticas de filtro de spam no PowerShe
 Para aplicar uma política personalizada de filtro de spam a usuários, grupos e/ou domínios, use o cmdlet do [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) (para criar uma nova regra de filtragem que possa ser aplicada a políticas personalizadas) ou o cmdlet [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) (para editar uma regra de filtro existente que possa ser aplicada a políticas personalizadas). Para habilitar ou desabilitar a regra aplicada à política, use o cmdlet [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) ou o cmdlet do [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx). 
   
 ## <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
-<a name="sectionSection3"> </a>
 
 Para garantir que o spam esteja sendo adequadamente detectado e tratado, você pode enviar uma mensagem GTUBE por meio do serviço. Semelhante ao arquivo de teste de antivírus EICAR, o GTUBE oferece um teste pelo qual você pode verificar se o serviço está detectando spam de entrada. Uma mensagem GTUBE sempre deverá ser detectada como spam pelo filtro de spam, e as ações executadas na mensagem deverão corresponder às suas configurações.
   
@@ -172,21 +170,13 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Otimizar sua política de filtro de spam para evitar falsos positivos e falsos negativos
-<a name="sectionSection4"> </a>
 
 Você também pode habilitar as opções avançadas de filtragem de spam, caso queira adotar uma abordagem mais agressiva de filtragem de spam. Para configurações gerais de spam que se apliquem a toda a organização, consulte [Prevenir email falso positivo marcado como spam com uma lista segura ou outras técnicas](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Elas serão úteis se você tiver o controle de nível de administrador e quiser impedir falsos positivos ou falsos negativos.
-  
-## <a name="new-to-office-365"></a>Começando a usar o Office 365?
-<a name="sectionSection5"> </a>
-
-||
-|:-----|
-|![O ícone pequeno do LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Começando a usar o Office 365?**         Descubra cursos em vídeo gratuitos para **Office 365 admins and IT pros**, oferecidos pelo LinkedIn Learning. |
    
 ## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection6"> </a>
 
-[Configurar a política de filtro de conexão](configure-the-connection-filter-policy.md)
+[Configurar a política do filtro de conexão](configure-the-connection-filter-policy.md)
   
 [Configurar a política de spam de saída](configure-the-outbound-spam-policy.md)
   

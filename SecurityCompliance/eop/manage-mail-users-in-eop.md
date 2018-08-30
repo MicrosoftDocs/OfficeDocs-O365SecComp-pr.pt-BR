@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: A definição de usuários de email é uma parte importante do gerenciamento do serviço Exchange Online Protection (EOP).
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027388"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003040"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gerenciar usuários de email no EOP
 
@@ -101,7 +101,7 @@ Para executar este procedimento ou estes procedimentos, você precisa receber pe
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>Adicionar ou remover um usuário de email no EAC
 
-- No EAC, acesse **Destinatários** \> **Contatos**. Na lista de usuários, clique no usuário que você deseja exibir ou alterar e selecione **Editar**![Ícone de edição](../media/ITPro-EAC-EditIcon.png) para atualizar as configurações do usuário conforme necessário. Você pode alterar o nome, o alias ou as informações de contato do usuário, e pode registrar informações detalhadas sobre a função do usuário na organização. Você também pode selecionar um usuário e escolher **Remover**![ícone Remover](../media/ITPro-EAC-RemoveIcon.png) para excluí-lo. 
+- No EAC, vá para **destinatários** \> **Contatos**. Na lista de usuários, clique no usuário que você deseja exibir ou alterar e, em seguida, selecione **Editar** ![ícone Editar](../media/ITPro-EAC-EditIcon.gif) para atualizar as configurações de usuário, conforme necessário. Você pode alterar as informações de contato, alias ou nome do usuário, e você pode registrar informações detalhadas sobre a função do usuário na organização. Você também pode selecionar um usuário e escolha **Remover**![ícone Remover](../media/ITPro-EAC-RemoveIcon.gif) excluí-lo. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Usar o Windows PowerShell remoto para gerenciar usuários de email
 

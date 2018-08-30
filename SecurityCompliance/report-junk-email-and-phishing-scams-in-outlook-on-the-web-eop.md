@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook em que os usuários da web pode relatar lixo eletrônico (spam) e golpes de phishing, usando opções de relatório de eletrônico interno. Você também pode informar a Microsoft se um email tenha sido incorretamente identificado como lixo eletrônico (spam).
-ms.openlocfilehash: f1a71a91bd37e65430b2e05b8d650068ac7440f6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: daa63e3b68927d7c5684c588a79727ba5d08f480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026588"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002980"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Relatar lixo eletrônico e golpes de phishing no Outlook na web 
 

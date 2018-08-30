@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: As pessoas geralmente usam email para trocar informações importantes, como dados financeiros, contratos, informações confidenciais de produtos, relatórios e projeções de vendas, informações sobre a saúde de pacientes ou informações sobre clientes e empregados. Portanto, as caixas de correio podem se tornar repositórios de grandes quantidades de informações potencialmente confidenciais, e o vazamento de informações pode se tornar uma séria ameaça à sua organização.
-ms.openlocfilehash: de3bc22075a4a0f5e81fddece4c7ff3a54b22382
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 5036fe359215de1c2674d7efabbb283c78418a19
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027228"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002554"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Gerenciamento de Direitos de Informação no Exchange Online
 

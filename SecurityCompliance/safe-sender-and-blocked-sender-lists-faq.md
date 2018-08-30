@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Como um administrador do Exchange Online ou Exchange Online Protection (EOP), você pode ajudar a garantir que uma mensagem de email em viagem através do serviço não está marcada como spam. Uma maneira de fazer isso é criar remetente seguro e listas de remetentes bloqueados para as pessoas na sua organização.
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028078"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003100"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Remetentes seguros e bloqueados listas de remetentes no Exchange Online
 
@@ -38,7 +40,7 @@ Observação:
   
 Você pode enfrentar o erro descrita em KB 2590466 ("você recebe o erro"Erro de validação do lixo eletrônico"no Outlook Web App para Exchange Server 2010"). Para resolver esse problema, desmarque a caixa de seleção "Confiar em emails de Meus contatos". Como alternativa, diminua a quantidade de endereços de email que estão na pasta padrão Contatos de colocá-lo dentro o máximo permitido limitar 1.024 no Exchange Online que está definido para o atributo "MaxSafeSenders". Para obter mais informações sobre esse atributo e o cmdlet Set-Mailbox, seethe seguinte tópico:
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>Confira também
 

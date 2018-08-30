@@ -1,5 +1,5 @@
 ---
-title: Gerenciar listas de remetentes seguros para correspondências em massa
+title: Gerenciar listas de remetentes confiáveis para mailers em massa
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
 description: 'Se você quiser usar listas de remetentes confiáveis, você deve saber que Exchange Online Protection (EOP) e o Outlook manipular processamento de forma diferente. O serviço respeita remetentes e domínios inspecionando o endereço do RFC 5321.MailFrom e o endereço do RFC 5322.From, enquanto o Outlook adiciona o endereço de 5322.From do RFC à lista de remetentes seguros de um usuário. (Observação: O serviço inspeciona o endereço de 5321.MailFrom e o endereço de 5322.From para remetentes bloqueados e domínios.)'
-ms.openlocfilehash: e5d6f8440281d527e7ea1846416b785beda25f1c
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9442bb39e15b9db9a826472dd6110a8fa14130c6
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026538"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002990"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gerenciar listas de remetentes seguros para correspondências em massa
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gerenciar listas de remetentes confiáveis para mailers em massa
 
 Se você quiser usar listas de remetentes confiáveis, você deve saber que Exchange Online Protection (EOP) e o Outlook manipular processamento de forma diferente. O serviço respeita remetentes e domínios inspecionando o endereço do RFC 5321.MailFrom e o endereço do RFC 5322.From, enquanto o Outlook adiciona o endereço de 5322.From do RFC à lista de remetentes seguros de um usuário. (Observação: O serviço inspeciona o endereço de 5321.MailFrom e o endereço de 5322.From para remetentes bloqueados e domínios.)
   
