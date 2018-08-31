@@ -1,5 +1,5 @@
 ---
-title: Inteligência de dados de fluxo de email no Office 365
+title: Inteligência de fluxo de emails no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 'Normalmente, você usa um conector para rotear mensagens da sua organização do Office 365 para seu local ambiente de mensagens. Você também pode usar um conector para rotear mensagens enviadas do Office 365 para uma organização parceira. Quando o Office 365 não pode entregar mensagens por meio do conector, eles-em fila no Office 365. '
-ms.openlocfilehash: 495d73524afb3ab3a34fd2f1f5f4cd747481f9d8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4effbb783d6ba8f3b33d0aed446e031193d2f2a3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027618"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002712"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Inteligência de dados de fluxo de email no Office 365
+# <a name="mail-flow-intelligence-in-office-365"></a>Inteligência de fluxo de emails no Office 365
   
 Normalmente, você usa um conector para rotear mensagens da sua organização do Office 365 para seu local ambiente de mensagens. Você também pode usar um conector para rotear mensagens enviadas do Office 365 para uma organização parceira. Quando o Office 365 não pode entregar mensagens por meio do conector, eles-em fila no Office 365. O Office 365 continuará tentar novamente a entrega para cada mensagem para 48 horas. Após 48 horas, a mensagem na fila expirará e a mensagem será retornada ao remetente original em um relatório de falha na entrega (também conhecido como uma mensagem de notificação de falha na ou rejeição).
   
@@ -39,7 +41,6 @@ O Office 365 gerará um erro quando uma mensagem não pode ser entregue por meio
 - [Código de erro: Falha na validação do certificado de 450 4.7.320](mail-flow-intelligence-in-office-365.md#ErrorCode47320)
     
 ## <a name="error-code-450-44312-dns-query-failed"></a>Código de erro: falha de consulta de DNS 450 4.4.312
-<a name="ErrorCode44312"> </a>
 
 Normalmente, esse erro significa o Office 365 tentou se conectar ao host inteligente especificado no conector, mas a consulta DNS para localizar o IP do host inteligente lida com falha. As causas possíveis desse erro são:
   
@@ -54,7 +55,6 @@ Você precisa para corrigir o problema DNS trabalhando com seu serviço de hospe
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="error-code-450-44315-connection-timed-out"></a>Código de erro: 450 4.4.315 Conexão esgotado
-<a name="ErrorCode44315"> </a>
 
 Normalmente, isso significa que Office 365 não pode se conectar ao servidor de mensagens de destino. Detalhes do erro explicará o problema. Por exemplo:
   
@@ -67,7 +67,6 @@ Descobrir qual cenário se aplica a você e faça as correções necessárias. P
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="error-code-450-44316-connection-refused"></a>Código de erro: 450 4.4.316 Conexão recusada
-<a name="ErrorCode44316"> </a>
 
 Normalmente, esse erro significa que Office 365 encontrou um erro de conexão ao tentar se conectar ao servidor de mensagens de destino. Uma causa provável para este erro é que seu firewall está bloqueando conexões de endereços IP do Office 365. Esse erro pode ser por design, se você tiver migrado completamente seu local mensagens do sistema para o Office 365 e desligar o seu local ambiente de mensagens..
   
@@ -75,7 +74,7 @@ Normalmente, esse erro significa que Office 365 encontrou um erro de conexão ao
     
 - Se não há mais mensagens devem ser entregues ao seu ambiente local, clique em **corrigir agora** no alerta para que o Office 365 pode rejeitar imediatamente as mensagens com destinatários inválidos. Isso reduzirá o risco de exceder a cota da sua organização para destinatários inválidos, que poderiam afetar a entrega da mensagem normal. Ou então, você pode usar as instruções a seguir para manualmente para corrigir o problema: 
     
-  - Desabilitar ou excluir o conector do Office 365 ao seu ambiente local: Centro de administração do Office 365 \> **Admin centrais** \> **Exchange** \> **fluxo de emails** \> **conectores** \> selecione o conector com o valor **do** **Office 365** e o **para** **o servidor de email da sua organização**de valor. Excluir o conector clicando em **Excluir**![ícone Excluir](media/ITPro-EAC-DeleteIcon.png), ou desativar o conector clicando em **Editar**![ícone Editar](media/ITPro-EAC-EditIcon.png) e desmarcando **ativá-lo**.
+  - Desabilitar ou excluir o conector do Office 365 ao seu ambiente local: Centro de administração do Office 365 \> **Admin centrais** \> **Exchange** \> **fluxo de emails** \> **conectores** \> selecione o conector com o valor **do** **Office 365** e o **para** **o servidor de email da sua organização**de valor. Excluir o conector clicando em **Excluir**![ícone Excluir](media/ITPro-EAC-DeleteIcon.gif), ou desativar o conector clicando em **Editar** ![ícone Editar](media/ITPro-EAC-EditIcon.gif) e desmarcando **ativá-lo**.
     
   - Alterar o domínio aceito no Office 365 que está associado ao seu local ambiente de mensagens de **Retransmissão interna** como **autoritativo**. Para obter instruções, consulte [Gerenciar domínios aceitos no Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx).
     
@@ -84,7 +83,6 @@ Normalmente, esse erro significa que Office 365 encontrou um erro de conexão ao
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Código de erro: 450 4.4.317 não é possível conectar ao servidor remoto
-<a name="ErrorCode44317"> </a>
 
 Normalmente, esse erro significa o Office 365 é conectado ao servidor de mensagens de destino, mas o servidor respondeu com um erro imediato ou não cumprir os requisitos de conexão. Detalhes do erro explicará o problema. Por exemplo:
   
@@ -97,7 +95,6 @@ Verifique as configurações de TLS e certificados em seu local mensagens servid
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Código de erro: 450 4.4.318 Conexão foi fechada abruptamente
-<a name="ErrorCode44318"> </a>
 
 Normalmente, esse erro significa o Office 365 está tendo dificuldade para se comunicar com o seu local ambiente de mensagens, portanto a conexão foi abandonada. As causas possíveis desse erro são:
   
@@ -112,7 +109,6 @@ Descobrir qual cenário se aplica a você e faça as correções necessárias.
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Código de erro: Falha na validação do certificado de 450 4.7.320
-<a name="ErrorCode47320"> </a>
 
 Normalmente, esse erro significa que Office 365 encontrou um erro ao tentar validar o certificado do servidor de mensagens de destino. Detalhes do erro explicará o erro. Por exemplo:
   
@@ -127,7 +123,6 @@ Corrija o conector ou o certificado para que as mensagens em fila no Office 365c
 Se o erro for de sua organização parceira (por exemplo, um 3º nuvem serviço provedor de terceiros), será necessário entrar em contato com seu parceiro para corrigir o problema.
   
 ## <a name="other-error-codes"></a>Outros códigos de erro
-<a name="sectionSection6"> </a>
 
 O Office 365 está tendo mensagens oferecendo de dificuldade para seu local ou o servidor de mensagens de parceiro. Use as informações do **servidor de destino** no erro para examinar o problema em seu ambiente ou modificar o conector se houver um erro de configuração. 
   

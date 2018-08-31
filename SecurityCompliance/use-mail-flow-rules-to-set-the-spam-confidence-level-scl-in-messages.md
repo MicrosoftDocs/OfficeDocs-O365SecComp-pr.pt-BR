@@ -1,5 +1,5 @@
 ---
-title: Usar regras de fluxo de correio para definir o nível de confiança de spam (SCL) em mensagens
+title: Usar regras de fluxo de emails para definir o SCL (nível de confiança de spam) em mensagens
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: Você pode criar uma regra de transporte que define o nível de confiança de spam (SCL) de uma mensagem de email. O SCL é que uma medida de uma mensagem como provavelmente é spam. Spam é mensagens de email não solicitadas (e normalmente indesejadas). O serviço age diferentes em uma mensagem, dependendo de sua classificação do SCL. Por exemplo, você talvez queira ignorar spam filtragem de conteúdo de mensagens que são enviadas de pessoas dentro da organização, pois você confia que uma mensagem enviada internamente de um colega não é spam. Você usando regras de transporte para definir o valor SCL de uma mensagem dá maior controle na manipulação de spam.
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026728"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002890"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usar regras de fluxo de correio para definir o nível de confiança de spam (SCL) em mensagens
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usar regras de fluxo de emails para definir o SCL (nível de confiança de spam) em mensagens
 
 Você pode criar uma regra de transporte que define o nível de confiança de spam (SCL) de uma mensagem de email. O SCL é que uma medida de uma mensagem como provavelmente é spam. Spam é mensagens de email não solicitadas (e normalmente indesejadas). O serviço age diferentes em uma mensagem, dependendo de sua classificação do SCL. Por exemplo, você talvez queira ignorar spam filtragem de conteúdo de mensagens que são enviadas de pessoas dentro da organização, pois você confia que uma mensagem enviada internamente de um colega não é spam. Você usando regras de transporte para definir o valor SCL de uma mensagem dá maior controle na manipulação de spam. 
   
@@ -34,7 +36,7 @@ Você pode criar uma regra de transporte que define o nível de confiança de sp
 
 1. No Centro de administração do Exchange (EAC), escolha o **fluxo de email** \> **regras**.
     
-2. Escolha **novo**![ícone Adicionar](media/ITPro-EAC-AddIcon.png)e, em seguida, selecione **criar uma nova regra**.
+2. Escolha **novo**![ícone Adicionar](media/ITPro-EAC-AddIcon.gif)e, em seguida, selecione **criar uma nova regra**.
     
 3. Especifique um nome para a regra.
     

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Colocar uma caixa de correio em Retenção de Litígio também preserva todo o conteúdo da caixa de correio, incluindo itens excluídos e versões originais de itens modificados. '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026438"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002840"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Colocar uma caixa de correio em Retenção de Litígio
  
@@ -51,7 +53,7 @@ Colocar uma caixa de correio em Retenção de Litígio também preserva todo o c
 
 1. Acesse **Destinatários** \> **Caixas de Correio**.
     
-2. Na lista de caixas de correio de usuários, clique na caixa de correio para a qual você deseja habilitar ou desabilitar a Retenção de Litígio e clique em **Editar**![Ícone de edição](media/ITPro-EAC-EditIcon.png).
+2. Na lista de caixas de correio do usuário, clique em caixa de correio que você deseja colocar em litígio e, em seguida, clique em **Editar** ![ícone Editar](media/ITPro-EAC-EditIcon.gif).
     
 3. Na página de propriedades da caixa de correio, clique em **recursos de caixa de correio.**
     
@@ -124,7 +126,7 @@ Para verificar se você aplicou com sucesso a Retenção de Litígio em uma caix
     
 1. Acesse **Destinatários** \> **Caixas de Correio**.
     
-2. Na lista de caixas de correio de usuários, clique na caixa de correio para a qual deseja verificar as configurações de Retenção de Litígio e clique em **Editar**![Ícone de edição](media/ITPro-EAC-EditIcon.png).
+2. Na lista de caixas de correio do usuário, clique em caixa de correio que você deseja verificar as configurações de retenção de litígio para e clique em **Editar** ![ícone Editar](media/ITPro-EAC-EditIcon.gif).
     
 3. Na página de propriedades da caixa de correio, clique em **recursos de caixa de correio.**
     
