@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 description: Para certificar-se de que os emails enviados de pessoas que confiáveis não não bloqueado, você pode usar a política de filtro de conexão para criar uma lista de permissões, também conhecido como uma lista de remetentes seguros, de endereços IP que você confia. Você também pode criar uma lista de remetentes bloqueados.
-ms.openlocfilehash: d106e55779c6246b77018fef3ab9d58fa759d99e
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cb9b73ff61b477f1c7ea0bb8da4039bebce83d1b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027598"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003260"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar a política do filtro de conexão
  
@@ -52,7 +54,7 @@ Crie uma Lista de IP Permitidos ou uma Lista de IP Bloqueados editando a políti
     
 2. Clique no item de menu **Filtragem de conexão** e crie as listas que quiser: uma Lista de IP Permitidos, uma Lista de IP Bloqueados ou ambas. 
     
-    Para criar estas listas, clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.png). Na caixa de diálogo posterior, especifique a faixa de endereço ou endereço IP, e então clique em **ok**. Repita este processo para adicionar mais endereços. (Você também pode editar ou remover endereços IP após eles terem sido adicionados.)
+    Para criar estas listas, clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif). Na caixa de diálogo posterior, especifique a faixa de endereço ou endereço IP, e então clique em **ok**. Repita este processo para adicionar mais endereços. (Você também pode editar ou remover endereços IP após eles terem sido adicionados.)
     
     > [!NOTE]
     >  Se você adicionar um endereço IP às duas listas, o email enviado será permitido. >  Os endereços IP do tipo IPV4 devem ser especificados no formato nnn.nnn.nnn.nnn em que nnn é um número de 0 a 255. Também é possível especificar intervalos CIDR (Roteamento entre Domínios sem Classificação) no formato nnn.nnn.nnn.nnn/rr em que rr é um número de 24 a 32. Para especificar intervalos fora do intervalo de 24 a 32, confira [Considerações adicionais ao configurar listas de IP Permitidos](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). >  Você pode especificar um máximo de 1.273 entradas, sendo cada entrada um único endereço IP ou um intervalo CIDR de endereços IP de /24 a /32. >  Se enviar mensagens criptografadas por TLS, não haverá suporte para endereços IPv6 e intervalos de endereços. 
@@ -74,13 +76,13 @@ Para criar esta regra de Transporte, realize as seguintes etapas.
   
 1. No EAC, navegue até **Fluxo de email** \> **Regras**.
     
-2. Clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e em seguida, selecione **Criar uma nova regra**.
+2. Clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e em seguida, selecione **Criar uma nova regra**.
     
 3. Dê um nome à regra e então clique em **Mais opções**.
     
 4. Em **Aplicar esta regra se**, selecione **O remetente** e então selecione **endereço IP em qualquer uma destas faixas ou correspondências exatas**.
     
-5. No campo **especificar endereços IP**, especifique o intervalo de endereços IP, clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e clique em **ok**.
+5. No campo **especificar endereços IP**, especifique o intervalo de endereços IP, clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e clique em **ok**.
     
 6. Na caixa **Faça o seguinte**, defina a ação, escolhendo **Modificar as propriedades da mensagem** e depois **definir o nível de confiança de spam (SCL)**. Na caixa **especificar SCL**, selecione **Ignorar filtragem de spam**, e clique em **ok**.
     
@@ -100,19 +102,19 @@ Para fazer isso, execute as seguintes etapas:
   
 1. No EAC, navegue até **Fluxo de email** \> **Regras**.
     
-2. Clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e em seguida, selecione **Criar uma nova regra**.
+2. Clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e em seguida, selecione **Criar uma nova regra**.
     
 3. Dê um nome à regra e então clique em **Mais opções**.
     
 4. Em **Aplicar esta regra se**, selecione **O remetente** e então selecione **endereço IP em qualquer uma destas faixas ou correspondências exatas**.
     
-5. Na caixa **especificar endereços IP**, especifique o endereço IP ou intervalo de endereços IP que você digitou na lista de permissões de IP, clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) e clique em **ok**.
+5. Na caixa **especificar endereços IP**, especifique o endereço IP ou intervalo de endereços IP que você digitou na lista de permissões de IP, clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e clique em **ok**.
     
 6. Em **Faça**, configure a opção selecionando **Modificar as propriedades da mensagem** e então **defina o nível de confiança do spam (SCL)**. Na caixa **especificar SCL**, selecione **0**, e clique em **ok**.
     
 7. Clique em **adicionar exceção**, e em **Exceto se**, selecione **O remetente** e selecione **domínio é**. 
     
-8. Na caixa **especificar domínio**, digite o domínio para o qual deseja ignorar filtragem de spam, como **contosob.com**. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.png) para movê-lo para a lista de frases. Repita esta etapa se você deseja adicionar mais domínios como exceções e clique em **ok** após ter finalizado. 
+8. Na caixa **especificar domínio**, digite o domínio para o qual deseja ignorar filtragem de spam, como **contosob.com**. Clique em **Adicionar**![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) para movê-lo para a lista de frases. Repita esta etapa se você deseja adicionar mais domínios como exceções e clique em **ok** após ter finalizado. 
     
 9. Se desejar, você pode optar por auditar a regra, testar a regra, ativar a regra durante um período de tempo específico e outras opções. Recomendamos testar a regra por um período antes de aplicá-la. O tópico [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx) contém mais informações sobre estas seleções. 
     

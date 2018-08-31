@@ -9,14 +9,16 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: Você está recebendo uma mensagem de erro ao tentar enviar um email para um destinatário cujo endereço de email está no Office 365? Se acha que não deve estar recebendo a mensagem de erro, use o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365.
-ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026228"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003250"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365
 
@@ -28,7 +30,7 @@ A Microsoft usa a lista de remetentes bloqueados para proteger seus clientes con
   
 Você saberá que foi adicionado à lista quando receber uma resposta a uma mensagem de email que inclui um erro parecido com o seguinte:
   
-550 5.7.606-649 acesso negado, proibidos enviando IP [ _endereço IP_]; Para solicitar remoção dessa lista, visite https://sender.office.com/ e siga as instruções. Para obter mais informações, consulte [relatórios de entrega de Email no Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 acesso negado, proibidos enviando IP [_endereço IP_]; Para solicitar remoção dessa lista, visite https://sender.office.com/ e siga as instruções. Para obter mais informações, consulte [relatórios de entrega de Email no Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 em que  _IP address_ é o endereço IP do computador no qual o servidor de email é executado. 
   

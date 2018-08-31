@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Como um cliente do Proteção do Exchange Online (EOP), todas as mensagens enviadas para sua organização passam através de EOP antes que seus funcionários as vejam. Se você hospedar todas as suas caixas de correio na nuvem com o Exchange Online, ou se você hospedar suas caixas de correio no local (cenário autônomo), talvez para continuar aproveitando sua infraestrutura existente, você tem opções sobre como encaminhar mensagens que passarão pelo EOP para processamento antes que sejam encaminhadas para as caixas de entrada dos seus funcionários.
-ms.openlocfilehash: d35e6f2fdbe7bb991ebf3d766fadae34638831ef
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
+ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027338"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "23002126"
 ---
 # <a name="mail-flow-in-eop"></a>Fluxo de emails no EOP
 
@@ -30,7 +30,7 @@ O EOP oferece muita flexibilidade no modo como suas mensagens são encaminhadas.
   
 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx) Descreve o recurso Bloqueio de Borda Baseado em Diretório, que permite rejeitar mensagens para destinatários inválidos no perímetro da rede de serviço. 
   
-[View or Edit Managed Domains in EOP](http://technet.microsoft.com/library/69523bec-07ee-46f9-ae08-40437e39b87c.aspx) descreve como gerenciar domínios que são associados ao seu serviço EOP. 
+[View or Edit Managed Domains in EOP](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) descreve como gerenciar domínios que são associados ao seu serviço EOP. 
   
 Se você adicionar subdomínios à sua organização, o serviço do EOP poderá ajudá-lo a gerenciá-los também. Saiba mais sobre subdomínios em [Enable Mail Flow for Subdomains in Exchange Online](http://technet.microsoft.com/library/4033a30a-f506-481c-8ef0-fd9a0508ae38.aspx).
   

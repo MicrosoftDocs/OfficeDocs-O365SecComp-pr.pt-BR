@@ -9,21 +9,23 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: Você pode configurar as notificações de spam do usuário final para a política de filtro de spam de toda a empresa padrão ou para políticas de filtro de spam personalizadas que são aplicadas aos domínios.
-ms.openlocfilehash: 4a4c7c6b139fe0f8b0a1f6b69c1b95e321293af5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios.
+ms.openlocfilehash: da370497f78d7f253276c908061a9a80e2f74938
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027528"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002735"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar as notificações de spam do usuário final no Exchange Online
 
 > [!IMPORTANT]
 > Este tópico é para clientes Exchange Online que estão protegendo as caixas de correio hospedadas em nuvem. Clientes do Exchange Online Protection (EOP) que estão protegendo as caixas de correio locais em vez disso, devem ler o tópico a seguir: [Configure notificações de spam do usuário final no EOP](configure-end-user-spam-notifications-in-eop.md). 
   
-Você pode configurar as notificações de spam do usuário final para a política de filtro de spam de toda a empresa padrão ou para políticas de filtro de spam personalizadas que são aplicadas aos domínios. Habilitar mensagens de notificação de spam do usuário final permite que os usuários finais autogerenciar suas próprias mensagens em quarentena de spam. Notificações de spam do usuário final não podem ser usadas com políticas aplicadas a usuários ou grupos ou a uma diretiva com exceções.
+Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios. Habilitar mensagens de notificação de spam do usuário final permite que os usuários finais gerenciem as suas próprias mensagens de spam em quarentena. As notificações de spam do usuário final não podem ser usadas com as políticas aplicadas a usuários ou grupos, ou a uma política com exceções.
   
 As notificações de spam do usuário final contém uma lista de todas as mensagens de spam em quarentena que o usuário final recebeu durante um período de tempo que você configurou (você pode especificar um valor entre 1 e 15 dias). Você também pode configurar o idioma no qual a mensagem de notificação será escrita.
   
@@ -41,7 +43,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
 
 1. No Centro de Administração do Exchange (EAC), navegue até **Proteção** \> **Filtro de conteúdo**.
     
-2. Selecione a política de filtro de spam para o qual você deseja habilitar as notificações de spam do usuário final (elas são desabilitadas por padrão).
+2. Selecione a política de filtro de conteúdo para a qual você deseja habilitar as notificações de spam do usuário final (elas são desabilitadas por padrão).
     
 3. No painel direito, onde as informações resumidas sobre política aparecem, clique no link **Configurar notificações de spam para o usuário final**. 
     
@@ -53,12 +55,12 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
 3. **Idioma da notificação** Usando a lista suspensa, escolha o idioma de escrita das notificações de spam para o usuário final para esta diretiva. 
     
-5. Clique em **Salvar**. Um resumo das suas configurações de política de filtro de spam, incluindo as configurações de notificação de spam do usuário final, é exibida no painel direito.
+5. Clique em **salvar**. Um resumo das suas configurações de política de filtro de conteúdo, incluindo as suas cnfigurações de notificação de spam para o usuário final, aparecem no painel do lado direito.
     
 > [!NOTE]
->  Notificações de spam do usuário final só serão funcionais para as políticas de filtro de spam que estão habilitadas. > Notificações de spam usuário final são enviadas apenas uma vez por dia. O tempo de entrega da notificação não pode ser garantido para qualquer cliente específico e não é configurável. 
+>  As notificações de spam do usuário final só serão funcionais para as políticas de filtragem de conteúdo que estiverem habilitadas. >  As notificações de spam do usuário final só são enviadas uma vez por dia. O horário de entrega da notificação não pode ser garantido para qualquer cliente específico e não é configurável. 
   
- **Dica:** Se você deseja testar as notificações de spam do usuário final, enviando a um conjunto limitado de usuários antes de implementá-las de totalmente, crie uma política de filtro de spam personalizada que permite que as notificações de spam do usuário final para os domínios nos quais os usuários residem. Em seguida, no EAC, em **fluxo de email \> regras**, criar uma regra de transporte para bloquear mensagens de quarantine@messaging.microsoft.com (o endereço de email que envia notificações), com exceções para os usuários que você deseja receber notificações. A imagem a seguir está um exemplo de como criar uma exceção para dois usuários (SaraD e Antoniot) do domínio Contoso.com: 
+ **Dica:** Se você deseja testar notificações de spam do usuário final enviando-as para um conjunto limitado de usuários antes de implementá-las completamente, crie uma política de filtro de conteúdo personalizado que habilite as notificações de spam do usuário final dos domínios nos quais os usuários residem. Em seguida, no EAC, em **Fluxo de email \> regras**, crie uma regra de transporte para bloquear as mensagens de quarantine@messaging.microsoft.com (o endereço de email que envia notificações) com exceções para os usuários dos quais você deseja receber notificações. A imagem a seguir é um exemplo de criação de uma exceção de dois usuários (SaraD e AlbertoD) do domínio Contoso.com: 
   
 ![Regra de transporte para testar notificações de spam do usuário final](media/EOP-ESN-testspecificusers.jpg)
   

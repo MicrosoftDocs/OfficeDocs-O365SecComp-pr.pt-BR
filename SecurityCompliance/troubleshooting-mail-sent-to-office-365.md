@@ -1,5 +1,5 @@
 ---
-title: Solucionando problemas de email enviadas para o Office 365
+title: Solução de problemas de email enviados para o Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: Este artigo fornece informações de solução de problemas para os remetentes que estão enfrentando problemas ao tentar enviar email para caixas de entrada no Office 365 e práticas recomendadas para mala direta para os clientes do Office 365.
-ms.openlocfilehash: 29c30787f493c69eb7d42b8025b25c86acddfff9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026408"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003200"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>Solucionando problemas de email enviadas para o Office 365
+# <a name="troubleshooting-mail-sent-to-office-365"></a>Solução de problemas de email enviados para o Office 365
 
 Este artigo fornece informações de solução de problemas para os remetentes que estão enfrentando problemas ao tentar enviar email para caixas de entrada no Office 365 e práticas recomendadas para mala direta para os clientes do Office 365.
   

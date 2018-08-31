@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 description: Mnsagens são as mensagens de rejeição automatizada que são enviadas pelos servidores de email, geralmente como resultado de spam de entrada. O DNSBLHTTP:// Backscatterer é uma lista de endereços IP que enviam mensagens backscatter. Não é uma lista de remetente de spam e não tentaremos remova nossos servidores o DNSBLHTTP:// Backscatterer.
-ms.openlocfilehash: 8f8a60715f9fb12ca53ffddc6d4fca6e9fab2ede
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2ab5c6a3bec347446452acd3bdfd8c5d309994a9
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028168"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002674"
 ---
 # <a name="backscatter-messages-and-eop"></a>Mnsagens backscatter e EOP
 

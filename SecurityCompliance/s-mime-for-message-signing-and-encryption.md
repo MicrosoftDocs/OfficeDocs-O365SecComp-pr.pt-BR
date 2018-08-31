@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: S/MIME permite criptografar emails e assinar digitalmente-los. Quando você usa o S/MIME com uma mensagem de email, ele ajuda as pessoas que recebem a mensagem, para certificar-se de que ele vê em suas caixas de entrada é a mensagem exata iniciados com o remetente.
-ms.openlocfilehash: 3ce95132476417df8949cdc12f2d825047f6b76d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027588"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002757"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>S/MIME para assinatura e criptografia de mensagens
 
@@ -54,7 +56,7 @@ Os passos que você seguir para configurar S/MIME com cada um desses pontos fina
 
 A configuração do S/MIME para Exchange 2013 SP1 ou Exchange Online com o Outlook Web App envolve as seguintes etapas principais:
   
-1. [Definir configurações de S/MIME para o Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+1. [Definir as configurações de S/MIME para o Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
     
 2. [Configurar coleção de certificados virtuais para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
     

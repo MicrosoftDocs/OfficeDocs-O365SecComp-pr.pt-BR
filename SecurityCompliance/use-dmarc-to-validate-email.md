@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: 'O Domain-based Message Authentication, Reporting, and Conformance (DMARC) funciona com Sender Policy Framework (SPF) e DomainKeys Identified Mail (DKIM) para autenticar remetentes de email e garantir que as mensagens confiáveis de sistemas de email de destino sejam enviadas de seu domínio. '
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026818"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003220"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar emails no Office 365
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-Todos os, ou a maioria dos, emails primeiro serão direcionados a mail.contoso.com, já que este é o MX primário e, então, serão direcionados para o EOP. Em alguns casos, o EOP pode nem estar listado como registro MX e você usa conectores para direcionar os emails. O EOP deve ser a primeira entrada nos registros MX de seu domínio para que as falhas do DMARC sejam aplicadas ao domínio.
+Maioria, ou todos os email primeiro será roteada para mail.contoso.com desde que é o principal MX, e, em seguida, email é roteado para o EOP. Em alguns casos, você talvez nem mesmo listar EOP como um registro MX em todas as e simplesmente ligar conectores façam o roteamento seu email. EOP não precisa ser a primeira entrada de validação de DMARC a ser feito. Apenas garante a validação, como podemos não terá certeza de que todos os servidores em-local/não-O365 fará DMARC verificações.  DMARC está qualificado para ser imposto para o domínio do cliente (não servidor) quando você configurar o registro TXT DMARC, mas é até o servidor de recebimento realmente fazer a imposição.  Se você configurar o EOP como o servidor de recebimento, EOP faz a imposição de DMARC.
+
   
 ## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection8"> </a>

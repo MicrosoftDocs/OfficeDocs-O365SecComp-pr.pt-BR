@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC).
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027478"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003270"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Localizar e liberar mensagens em quarentena como um administrador
 
 Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC). O Office 365envia as mensagens para a quarentena porque foram identificadas como spam ou porque corresponderam a uma regra de transporte. 
   
-Usar a segurança &amp; Centro de conformidade, em vez do EAC para concluir qualquer uma destas tarefas, bem como exibir e trabalhar com mensagens enviadas para quarentena porque eles contêm malware. Para obter mais informações, consulte [mensagens de email de quarentena no Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Usar a segurança &amp; Centro de conformidade, em vez do EAC para concluir qualquer uma destas tarefas, bem como exibir e trabalhar com mensagens enviadas para quarentena porque eles contêm malware. Para obter mais informações, consulte [mensagens de email de quarentena no Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 As mensagens em quarentena são listadas na página **quarentena** do EAC. Por padrão, as mensagens são classificadas da mais nova para a mais antiga no campo **RECEBIDAS**. Os valores **REMETENTE**, **ASSUNTO** e **EXPIRA** também são listados para cada mensagem. Você pode classificar com base em qualquer um desses campos clicando nos cabeçalhos. Clicar em um cabeçalho de coluna uma segunda vez inverterá a ordem de classificação. No máximo 500 mensagens podem ser exibidas na página **quarentena** 
   
@@ -158,7 +160,7 @@ Clique em **Liberar mensagem selecionada e permitir remetente** na lista suspens
     
 4. Clique em **Liberar**. 
     
-Se você clicar no ícone **Atualizar**![Ícone Atualizar](media/ITPro-EAC-RefreshIcon.png) para atualizar seus dados e, depois, clicar duas vezes na mensagem, ela deverá ser liberada para os destinatários pretendidos. 
+Se você clicar no ícone **Atualizar**![Ícone Atualizar](media/ITPro-EAC-RefreshIcon.gif) para atualizar seus dados e, depois, clicar duas vezes na mensagem, ela deverá ser liberada para os destinatários pretendidos. 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Liberar uma ou mais mensagens em quarentena a todos os destinatários
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ Se você clicar no ícone **Atualizar**![Ícone Atualizar](media/ITPro-EAC-Refre
 > [!TIP]
 > Ajude a garantir que uma mensagem não seja marcada como spam seguindo as etapas em [Como ajudar a garantir que uma mensagem não foi marcada como spam](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md). 
   
-Se você clicar no ícone **Atualizar**![Ícone Atualizar](media/ITPro-EAC-RefreshIcon.png) para atualizar seus dados e, depois, clicar duas vezes na mensagem, ela deverá ser liberada para os destinatários pretendidos. 
+Se você clicar no ícone **Atualizar**![Ícone Atualizar](media/ITPro-EAC-RefreshIcon.gif) para atualizar seus dados e, depois, clicar duas vezes na mensagem, ela deverá ser liberada para os destinatários pretendidos. 
   
 ## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection4"> </a>

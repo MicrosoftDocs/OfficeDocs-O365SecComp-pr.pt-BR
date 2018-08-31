@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: Este tópico mostra como configurar o IRM para usar um servidor AD RMS.
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027368"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002778"
 ---
-# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar o IRM para usar um local servidor AD RMS
+# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar o IRM para usar um servidor RMS do AD local
   
 Para uso com implantações em instalações, gerenciamento de direitos de informação (IRM) no Exchange Online usa o Active Directory Rights Management Services (AD RMS), uma tecnologia de proteção de informações no Windows Server 2008 e posterior. Proteção de IRM é aplicada ao email, aplicando um modelo de diretiva de direitos do AD RMS para uma mensagem de email. Direitos estão anexados à mensagem em si, para que ocorra de proteção online e offline e dentro e fora do firewall da organização.
   
@@ -163,6 +165,6 @@ Para verificar se você importou com êxito o TPD e se habilitou o IRM, faça o 
   
 - Use o cmdlet do **Test-IRMConfiguration** para testar a funcionalidade do IRM. Para obter detalhes, confira "Exemplo 1" em [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Redija uma nova mensagem no Outlook Web App e proteja-a com o IRM ao selecionar a opção **Definir permissões** no menu estendido ( ![Ícone Mais opções](media/ITPro-EAC-MoreOptionsIcon.png)).
+- Redija uma nova mensagem no Outlook Web App e proteja-a com o IRM ao selecionar a opção **Definir permissões** no menu estendido ( ![Ícone Mais opções](media/ITPro-EAC-MoreOptionsIcon.gif)).
     
 
