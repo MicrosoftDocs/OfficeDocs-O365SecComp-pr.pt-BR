@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para administradores: excluir itens na pasta de itens recuperáveis de um usuário para uma caixa de correio Exchange Online, mesmo se essa caixa de correio é colocada em retenção legal. Essa é uma maneira eficaz para excluir dados que é acidentalmente sido derramados no Office 365.'
-ms.openlocfilehash: 0519e389f05ed9952090fb9b163a05d18e3bd762
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014025"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796877"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Excluir itens na pasta itens recuperáveis de caixas de correio baseadas em nuvem em espera - ajuda de Admin
 
@@ -110,7 +110,7 @@ Além disso, você precisará fazer a caixa de correio configurações acesso pa
 
    Se a caixa de correio de arquivo morto do usuário estiver habilitada, execute o seguinte comando para obter o tamanho e o número total de itens em pastas e subpastas na pasta itens recuperáveis em suas caixas de correio de arquivo morto. 
 
-    ```
+    ```s
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
