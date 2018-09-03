@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: Aprenda a habilitar o arquivamento de expansão automática no Office 365, que fornece aos usuários com armazenamento ilimitado para suas caixas de correio do Exchange Online. Você pode habilitar a expansão automática de arquivamento para toda sua organização ou apenas para usuários específicos.'
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782148"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809696"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar o arquivamento ilimitado no Office 365 - ajuda de Admin
 
@@ -54,7 +54,7 @@ Você pode habilitar a expansão automática arquivamento para toda sua organiza
 
 Em vez de habilitar a expansão automática de arquivamento para cada usuário em sua organização, você poderá habilitá-lo apenas para usuários específicos. Você pode fazer isso porque apenas alguns usuários podem ter uma necessidade para um armazenamento de arquivo morto muito grande.
   
-Quando você habilita a expansão automática de arquivamento para um usuário específico, as alterações de duas configurações a seguir também são feitas:
+Quando você habilita a expansão automática de arquivamento para um usuário específico e caixa de correio do usuário em espera ou atribuído a uma política de retenção do Office 365, as alterações de duas configurações a seguir são feitas:
   
 - A cota de armazenamento de caixa de correio de arquivo morto principal do usuário é aumentada pelo 10 GB (de 100 GB para 110 GB). A cota de aviso de arquivamento também é aumentada pelo 10 GB (de 90 GB para 100 GB).
     
