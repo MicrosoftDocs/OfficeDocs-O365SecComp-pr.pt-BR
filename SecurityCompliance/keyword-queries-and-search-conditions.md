@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e o arquivo que você pode pesquisar nas caixas de correio do Exchange Online e no SharePoint ou OneDrive para sites corporativos usando a ferramenta de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade.  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524213"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782098"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
@@ -134,7 +134,7 @@ Operadores de pesquisa booleana, **AND**, **OR**e **não**, ajudam você a defin
 |**Operador**|**Usage**|**Descrição**|
 |:-----|:-----|:-----|
 |AND  <br/> |palavra-chave1 AND palavra-chave2  <br/> |Retorna os itens que incluem todas as palavras-chave especificada ou `property:value` expressões. Por exemplo, `from:"Ann Beebe" AND subject:northwind` retornaria todas as mensagens enviadas por Ann Beebe que continha o word northwind na linha de assunto. <sup>2</sup> <br/> |
-|+  <br/> |keyword1?? + keyword2?? + keyword3  <br/> |Retorna os itens que contenham *uma* `keyword2` ou `keyword3` *e* que também contêm `keyword1`. Portanto, este exemplo é equivalente à consulta `(keyword2 OR keyword3) AND keyword1`.  <br/> Observe que a consulta `keyword1 + keyword2` (com um espaço após o **+** símbolo) não é o mesmo que usar o * * e * * operador. Esta consulta seria equivalente à `"keyword1 + keyword2"` e retornar itens com a fase exata `"keyword1 + keyword2"`.<br/> |
+|+  <br/> |keyword1 + keyword2 + keyword3  <br/> |Retorna os itens que contenham *uma* `keyword2` ou `keyword3` *e* que também contêm `keyword1`. Portanto, este exemplo é equivalente à consulta `(keyword2 OR keyword3) AND keyword1`.  <br/> Observe que a consulta `keyword1 + keyword2` (com um espaço após o **+** símbolo) não é o mesmo que usar o * * e * * operador. Esta consulta seria equivalente à `"keyword1 + keyword2"` e retornar itens com a fase exata `"keyword1 + keyword2"`.<br/> |
 |OR  <br/> |palavra-chave1 OR palavra-chave2  <br/> |Retorna os itens que incluem um ou mais das palavras-chave especificadas ou `property:value` expressões. <sup>2</sup> <br/> |
 |NOT  <br/> |palavra-chave1 NOT palavra-chave2  <br/> NOT from:"Clara Barbosa"  <br/> Tipo: mensagem instantânea  <br/> |Exclui os itens especificados por uma palavra-chave ou um `property:value` expressão. No segundo exemplo exclui as mensagens enviadas por Ann Beebe. O exemplo de terceiro exclui qualquer conversas de mensagens instantâneas, como Skype para conversas de negócios que são salvas na pasta de caixa de correio do histórico de conversa. <sup>2</sup> <br/> |
 |-  <br/> |palavra-chave1 -palavra-chave2  <br/> |O mesmo que o operador **não** . Portanto, essa consulta retorna itens que contenham `keyword1` e seria excluir itens que contenham `keyword2`.<br/> |
@@ -152,7 +152,7 @@ Operadores de pesquisa booleana, **AND**, **OR**e **não**, ajudam você a defin
 |(  )  <br/> | (justo OR grátis) AND (from:contoso.com)  <br/>  (IPO OR inicial) AND (ação OR títulos)  <br/>  (finanças trimestrais)  <br/> |Parênteses agrupar Boolean frases, `property:value` itens e palavras-chave. Por exemplo, `(quarterly financials)` retorna itens que contêm as palavras trimestrais e financials.<br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use este operador para propriedades que possuem valores de data ou numérico. > operadores de pesquisa <sup>2</sup>??????Boolean devem estar em maiusculas; Por exemplo, **AND**. Se você usar um operador minúsculo, como **e**, ele será tratado como uma palavra-chave na consulta de pesquisa. 
+> <sup>1</sup> use esse operador para propriedades que possuem valores de data ou numérico.<br/> <sup>2</sup> operadores booleanos de pesquisa devem ser maiusculos; Por exemplo, **AND**. Se você usar um operador minúsculo, como **e**, ele será tratado como uma palavra-chave na consulta de pesquisa. 
   
 ## <a name="search-conditions"></a>Condições de pesquisa
 

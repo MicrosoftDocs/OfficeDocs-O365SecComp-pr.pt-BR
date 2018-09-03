@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usar a pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para procurar conteúdo em caixas de correio, sites do SharePoint Online, contas de OneDrive, Teams da Microsoft, os grupos de Office 365 e Skype para conversas de negócios. Você pode usar as consultas de pesquisa de palavra-chave e critérios de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. Pesquisa de conteúdo também é uma ferramenta eficaz para procurar conteúdo que pode estar relacionado a uma solicitação de entidade de dados GDPR.
-ms.openlocfilehash: f0064ae08226b1b0e864b25bb845054184f1efa4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524737"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782078"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
@@ -75,7 +75,7 @@ Para ter acesso à página **pesquisa de conteúdo** para executar pesquisas e v
     
     Por que usar a lista de palavra-chave? Você pode obter estatísticas que mostram quantos itens correspondem a cada palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais palavras-chave é mais (e menos) eficientes. Você também pode usar uma frase de palavra-chave (entre parênteses) em uma linha. Para obter mais informações sobre estatísticas da pesquisa, consulte [Exibir as estatísticas de palavra-chave para resultados de pesquisa de conteúdo](view-keyword-statistics-for-content-search.md).
     
-- **Condições** - você pode adicionar condições para limitar a pesquisa e retornar um conjunto mais refinado de resultados de pesquisa. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você iniciar a pesquisa. Uma condição logicamente é conectada a consulta de palavra-chave (especificada na caixa de palavra-chave) por um operador lógico ( **c:c**) que é semelhante em funcionalidade ao operador **e** . Isso significa que os itens têm que satisfazer a consulta de palavra-chave e uma ou mais condições a serem incluídos nos resultados. Isso é como ajudam a condições para restringir os resultados. Para obter uma lista e descrição das condições que podem ser usados em uma consulta de pesquisa, consulte a seção "Critérios de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
+- **Condições** - você pode adicionar condições para limitar a pesquisa e retornar um conjunto mais refinado de resultados de pesquisa. Cada condição adiciona uma cláusula a consulta de pesquisa que é criado e executados quando você iniciar a pesquisa. Uma condição logicamente é conectada a consulta de palavra-chave (especificada na caixa de palavra-chave) por um operador lógico ( **c:c**) que é semelhante em funcionalidade ao operador **e** . Isso significa que os itens têm que satisfazer a consulta de palavra-chave e uma ou mais condições a serem incluídos nos resultados. Isso é como ajudam a condições para restringir os resultados. Para obter uma lista e descrição das condições que podem ser usados em uma consulta de pesquisa, consulte a seção "Critérios de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Locais** - escolher os locais de conteúdo para pesquisa.
     
