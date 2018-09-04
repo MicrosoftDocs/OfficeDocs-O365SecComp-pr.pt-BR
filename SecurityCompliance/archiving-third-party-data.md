@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Os administradores podem importar dados de terceiros de plataformas de mídia social, as plataformas de mensagens instantâneas e plataformas de colaboração de documento para caixas de correio em sua organização do Office 365. Isso permite arquivar dados de fontes de dados, Twitter e Facebook no Office 365. Em seguida, você pode appply recursos de conformidade do Office 365 (por exemplo, retenção legal, pesquisa de conteúdo e políticas de retenção) aos dados de terceiros.
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809706"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827085"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Arquivamento de dados de terceiros no Office 365
 
@@ -636,7 +636,7 @@ Aqui estão as etapas para acessar e aceitar a solicitação para registrar o co
 1. Vá para [essa página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e entrar usando as credenciais de um administrador global do Office 365.<br/><br/>A seguinte caixa de diálogo é exibida. Você pode expandir os sinais de interpolação para revisar as permissões que serão atribuídas ao conector.<br/><br/>![A caixa de diálogo de solicitação de permissões é exibida](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. Clique em **Aceitar**.
 
-Após aceitar a solicitação, o [Painel de portal Azure](https://portal.azure.com) é exibida. Para exibir a lista de aplicativos para sua organização, clique em **Active Directory do Azure** > **aplicativos empresariais**. O conector de dados de terceiros do Office 365 está listado no blade **aplicativos empresariais** .
+Após aceitar a solicitação, o [portal do Windows Azure](https://portal.azure.com) é exibida. Para exibir a lista de aplicativos para sua organização, clique em **Active Directory do Azure** > **aplicativos empresariais**. O conector de dados de terceiros do Office 365 está listado no blade **aplicativos empresariais** .
 
 > [!IMPORTANT]
 > Depois de 30 de setembro de 2018, dados de terceiros serão não são mais importados para caixas de correio em sua organização se você não registrar um conector de dados de terceiros no Windows Azure Active Directory. Nota existente conectores de dados de terceiros (aqueles criados antes de 30 de setembro de 2018) também deve ser registrada no Windows Azure Active Directory seguindo o procedimento na etapa 5.
