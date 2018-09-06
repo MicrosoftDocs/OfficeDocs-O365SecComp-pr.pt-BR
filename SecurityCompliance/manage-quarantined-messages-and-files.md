@@ -3,7 +3,7 @@ title: Gerenciar arquivos e mensagens em quarentena como um administrador no Off
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como um administrador, você pode exibir, liberar e relatar mensagens em quarentena falso positivas no Office 365. Você pode configurar políticas para que o Office 365 filtra mensagens e as envia para colocar em quarentena por vários motivos: porque eles foram identificados como spam, em massa, phishing, malware ou porque elas correspondem a uma regra de fluxo de email. '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524106"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839095"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -34,7 +34,7 @@ Você deve ter permissões de administrador no Office 365 para trabalhar com men
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Exibir mensagens em quarentena de sua organização
 
-1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global no seu 365organization Office, entrar no Office 365 e [vá para o Centro de conformidade e segurança](go-to-the-securitycompliance-center.md).
+1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global na sua organização do Office 365, entrar no Office 365 e [vá para o Centro de conformidade e segurança](go-to-the-securitycompliance-center.md).
     
 2. Na lista à esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **quarentena**.
     

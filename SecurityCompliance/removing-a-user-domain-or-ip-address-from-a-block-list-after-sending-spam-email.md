@@ -3,7 +3,7 @@ title: Remover um usuário, domínio ou endereço IP de uma lista de bloqueio ap
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: Se um usuário continuamente envia mensagens de email do Office 365 é classificada como spam, eles serão bloqueados enviem mensagens qualquer mais.
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002584"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839105"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Remover um usuário, domínio ou endereço IP de uma lista de bloqueio após enviar email de spam
 
@@ -34,27 +34,19 @@ Você pode definir configurações de spam de saída para que você obtenha anot
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>Desbloquear uma conta de email do Office 365
 
-Conclusão da tarefa no Centro de administração do Exchange (EAC). Confira [do Exchange admin center no Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) para obter detalhes sobre o EAC. 
-  
-> [!NOTE]
-> Você não verá a Central de ações, a menos que esteja no EAC para Exchange Online. 
-  
-1. No EAC, navegue até **proteção** \> **Central de ações**.
+Conclusão da tarefa no Centro de conformidade (SCC) & segurança do Office 365. [Vá para o Centro de conformidade & segurança do Office 365](go-to-the-securitycompliance-center.md) para obter mais detalhes sobre SCC.
+
+1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global do Office 365, inscreva-se no Centro de conformidade e segurança do Office 365 e na lista à esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **restrito Os usuários**.
     
-    ![Navegar até a central de ações no Centro de administração do Exchange](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. Selecione o ícone de **pesquisa** e, em seguida, insira o endereço SMTP do usuário bloqueado. 
-    
-    ![Pesquisar um usuário bloqueado na central de ações](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. Clique em **Desbloquear conta** do painel de descrição. 
-    
-    ![Desbloquear um usuário na central de ações](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. Clique em **Sim** para confirmar a alteração. 
+    > [!TIP]
+    > Para ir diretamente para a página **Usuários restritos** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. Esta página conterá a lista de usuários que foram bloqueados de envio de e-mail para fora da sua organização.  Encontre o (s) que você deseja remover restrições e clique em **Desbloquear**.
+
+3. Clique em **Sim** para confirmar a alteração. 
     
 > [!NOTE]
-> Há um limite no número de vezes que uma conta pode ser desbloqueada pelo administrador de locatário. Se o limite de um usuário foi excedido, uma mensagem de erro é exibida. Contate o suporte para desbloquear o usuário. 
+> Há um limite no número de vezes que uma conta pode ser desbloqueada pelo administrador de locatário. Se o limite de um usuário foi excedido, uma mensagem de erro é exibida. Você precisará contatar o suporte para desbloquear o usuário. 
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueio de terceiros
 
