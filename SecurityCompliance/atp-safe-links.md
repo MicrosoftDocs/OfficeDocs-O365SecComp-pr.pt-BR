@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: O recurso de Links seguros fornece verificação de tempo do clique de hiperlinks em documentos do Office e em mensagens de email. Use os links seguros para proteger sua organização contra ataques de phishing e outros.
-ms.openlocfilehash: 24960aa20d2870c7aea37a4b76f1792de21f6b5b
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 34e32038cd5718ca3399fc65aae11adfeb0f4ee0
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839941"
+ms.locfileid: "23848071"
 ---
 # <a name="office-365-atp-safe-links"></a>Links seguros de ATP do Office 365
 
@@ -96,7 +96,7 @@ Os recursos de Links de seguros ATP estão ativos quando:
   
 - **Políticas de Links de seguros ATP estiver configuradas** para email e documentos do Word, Excel, PowerPoint e Visio. (Consulte [Configurar políticas de links seguros ATP no Office 365](set-up-atp-safe-links-policies.md)).
 
-- **Aplicativos de cliente do office 365 estão configurados para usar autenticação moderno** com o Windows Azure Active Directory autenticação Library. Para saber mais, consulte [Authentication moderno for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016). 
+- **Aplicativos de cliente do office 365 estão configurados para usar autenticação moderno**. Para saber mais, consulte [Authentication moderno for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016). 
     
 - **Os usuários entrou no Office 365** usando a conta do trabalho ou da escola. (Consulte [entrar no Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     

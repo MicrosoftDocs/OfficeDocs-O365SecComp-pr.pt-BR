@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839971"
+ms.locfileid: "23848081"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
@@ -49,9 +49,11 @@ Como os novos recursos são adicionados, você pode precisar fazer ajustes em su
 
 - Certifique-se de que sua organização tenha [A proteção de ameaça avançadas do Office 365](office-365-atp.md).
     
-- Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+- Certifique-se de que você tem as permissões necessárias para definir ou editar políticas de ATP. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
     
 - [Saiba mais sobre as opções de política de Links de seguros ATP](#learn-about-atp-safe-links-policy-options) (neste artigo). 
+
+- Certifique-se de que os clientes do Office estejam configurados para usar [Autenticação moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
     
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
