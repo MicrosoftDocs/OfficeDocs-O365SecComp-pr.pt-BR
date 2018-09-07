@@ -19,30 +19,20 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: O recurso de Links seguros fornece verificação de tempo do clique de hiperlinks em documentos do Office e em mensagens de email. Use os links seguros para proteger sua organização contra ataques de phishing e outros.
-ms.openlocfilehash: 34e32038cd5718ca3399fc65aae11adfeb0f4ee0
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: 2844be795eade9cfe29fbd50a5b3678680999171
+ms.sourcegitcommit: 5befdaad0f84112cb71a97fce1322579458d1622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848071"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23867384"
 ---
 # <a name="office-365-atp-safe-links"></a>Links seguros de ATP do Office 365
 
 O Office 365 ATP seguros Links (ATP seguros vínculos) (juntamente com o [Office 365 ATP seguros anexos](atp-safe-attachments.md)) é um conjunto de recursos de segurança oferecidos como parte de [Proteção de ameaça avançadas do Office 365](office-365-atp.md) para empresas. Links de seguros ATP pode ajudar a proteger sua organização, fornecendo a verificação de tempo do clique de endereços da web (URLs) em mensagens de email e documentos do Office. Proteção é definida por meio de [Links de seguros ATP políticas](set-up-atp-safe-links-policies.md) definidas pela sua equipe de segurança do Office 365. 
   
 Depois que suas políticas de Links de seguros ATP estão funcionando, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem [Exibir relatórios de proteção avançada de ameaça](view-reports-for-atp.md). As informações contidas nesses relatórios podem ajudar sua equipe de segurança a executar etapas adicionais para proteger sua organização ou pesquisar incidentes de segurança.
-  
-Novos recursos são adicionados constantemente a Links de seguros ATP:
-  
-- Proteção de Links de seguros ATP a partir do final de 2017 de outubro, é estendida para aplicar a URLs em email, bem como as URLs em documentos do Office 365 ProPlus, como Word, Excel, PowerPoint e Visio no Windows, bem como Office apps em dispositivos com Android e iOS.
-    
-- Iniciando no de 2018 de março, proteção de Links de seguros ATP é estendida para aplicar a emails enviados entre pessoas em uma organização.
-    
-- Proteção de Links de seguros ATP começando na segunda metade do 2018, é estendida para aplicar a URLs no Office Online (on-line do Word, Excel Online, on-line do PowerPoint e OneNote Online) e Office 365 ProPlus em Mac.
-    
-- Início em setembro de 2018, o recurso de [páginas de aviso do Office 365 ATP](atp-safe-links-warning-pages.md) um novo esquema de cores, mais detalhes e a capacidade para continuar a um site apesar recebe avisos e recomendações. 
          
-## <a name="how-atp-safe-links-in-email-works"></a>Como funciona a Links de seguros ATP em email
+## <a name="how-atp-safe-links-works-with-email"></a>Como os Links de seguros ATP funciona com o email
 
 Em um alto nível, aqui está como a proteção de Links de seguros ATP funciona para URLs no email (hospedado no Office 365, não no local):
   
@@ -68,7 +58,7 @@ Em um alto nível, aqui está como a proteção de Links de seguros ATP funciona
     
     - Se a URL for determinada seguros, o site é aberto.
     
-## <a name="how-atp-safe-links-in-office-documents-works"></a>Como funciona a Links de seguros ATP em documentos do Office
+## <a name="how-atp-safe-links-works-with-office-documents"></a>Como os Links de seguros ATP funciona com documentos do Office
 
 Em um alto nível, aqui está como proteção de Links de seguros ATP funciona para URLs em aplicativos do Office 365 ProPlus (versões atuais do OneNote, Word, Excel e PowerPoint no Windows ou Mac, Office apps em iOS ou dispositivos Android, o Visio no Windows e do Office Online):
   
@@ -87,6 +77,18 @@ Em um alto nível, aqui está como proteção de Links de seguros ATP funciona p
   - Se a URL vai para um arquivo baixável e as [políticas de Links de seguros ATP](set-up-atp-safe-links-policies.md) estejam configurados para examinar tais downloads, o arquivo baixável é verificado. 
     
   - Se a URL é considerada segura, o usuário é colocado no site.
+
+## <a name="new-features-added-to-atp-safe-links"></a>Novos recursos adicionados ao ATP Links de seguros
+
+Podemos está prosseguindo adicionar novos recursos para Links de ATP seguros. Aqui estão alguns exemplos:
+  
+- Proteção de Links de seguros ATP a partir do final de 2017 de outubro, é estendida para aplicar a URLs em email, bem como as URLs em documentos do Office 365 ProPlus, como Word, Excel, PowerPoint e Visio no Windows, bem como Office apps em dispositivos com Android e iOS. (Certifique-se de que você estiver usando [Autenticação moderna do Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+    
+- Iniciando no de 2018 de março, proteção de Links de seguros ATP é estendida para aplicar a emails enviados entre pessoas dentro de uma organização.
+    
+- Proteção de Links de seguros ATP começando na segunda metade do 2018, é estendida para aplicar a URLs no Office Online (on-line do Word, Excel Online, on-line do PowerPoint e OneNote Online) e Office 365 ProPlus em Mac.
+    
+- Início em setembro de 2018, o recurso de [páginas de aviso do Office 365 ATP](atp-safe-links-warning-pages.md) um novo esquema de cores, mais detalhes e a capacidade para continuar a um site apesar recebe avisos e recomendações. 
     
 ## <a name="how-to-get-atp-safe-links-protection"></a>Como obter proteção ATP Links de seguros
 
@@ -96,17 +98,19 @@ Os recursos de Links de seguros ATP estão ativos quando:
   
 - **Políticas de Links de seguros ATP estiver configuradas** para email e documentos do Word, Excel, PowerPoint e Visio. (Consulte [Configurar políticas de links seguros ATP no Office 365](set-up-atp-safe-links-policies.md)).
 
-- **Aplicativos de cliente do office 365 estão configurados para usar autenticação moderno**. Para saber mais, consulte [Authentication moderno for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016). 
+- **Aplicativos de cliente do office 365 estão configurados para usar autenticação moderno**. (Consulte [autenticação moderna para 2016 do Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)). 
     
 - **Os usuários entrou no Office 365** usando a conta do trabalho ou da escola. (Consulte [entrar no Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     
-- **Que email da organização está hospedada no Office 365**, não em um servidor local. 
+- **Que email da sua organização está hospedada no Office 365**, não em um servidor local. 
     
 ## <a name="make-sure-atp-safe-links-protection-is-in-place"></a>Certifique-se de proteção de Links de seguros ATP esteja in-loco
 
 Uma boa maneira de ver como a proteção de Links de seguros ATP está trabalhando para sua organização está exibindo [relatórios de proteção avançada de ameaça](view-reports-for-atp.md). Além disso, como um administrador global ou de segurança, certifique-se de examinar suas [políticas de Links de ATP seguros](set-up-atp-safe-links-policies.md). Políticas de Links de seguros ATP determinam se proteção se aplica a hiperlinks em mensagens de email só ou a URLs em documentos do Office, bem.
+
+## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Cenários de exemplo onde proteção de Links de seguros ATP pode ou não ser in-loco
   
-A tabela a seguir descreve alguns cenários de exemplo onde proteção de Links de seguros ATP pode ou não ser in-loco. Em todos os casos, assumimos que a organização tiver E5 do Office 365 Enterprise.
+A tabela a seguir descreve alguns cenários de exemplo onde proteção de Links de seguros ATP pode ou não ser in-loco. (Em todos os casos, assumimos que a organização tiver E5 do Office 365 Enterprise.)
   
 |**Cenário de exemplo**|**Proteção de Links de seguros ATP se aplicam neste caso?**|
 |:-----|:-----|
