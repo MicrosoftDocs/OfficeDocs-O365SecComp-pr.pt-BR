@@ -3,7 +3,6 @@ title: Configurar as notificações de spam do usuário final no Exchange Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 description: Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios.
-ms.openlocfilehash: da370497f78d7f253276c908061a9a80e2f74938
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: e29cc850b7f91ed4ec963a8e52e40a0044fa7f6c
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002735"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875803"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar as notificações de spam do usuário final no Exchange Online
 
@@ -29,7 +28,19 @@ Você pode configurar as notificações de spam do usuário final para a políti
   
 As notificações de spam do usuário final contém uma lista de todas as mensagens de spam em quarentena que o usuário final recebeu durante um período de tempo que você configurou (você pode especificar um valor entre 1 e 15 dias). Você também pode configurar o idioma no qual a mensagem de notificação será escrita.
   
-Após receber uma mensagem de notificação, os usuários dinais podem clicar para mover o email de spam para a caixa de entrada ou relatar o email de spam como Não é Lixo Eletrônico, neste caso será enviado para a Equipe de Análise de Spam do Microsoft. 
+Após receber uma mensagem de notificação, os usuários finais podem escolher entre as seguintes opções:
+
+**Visualizar** a mensagem se você gostaria de visualizar o conteúdo ou cabeçalho antes de executar uma ação.
+
+**Baixe** a mensagem se você gostaria de revisar a mensagem e os anexos (se houver) no seu dispositivo antes de executar uma ação.
+
+**Versão** se a mensagem não é spam e você desejar que o Office 365 para enviar a mensagem para sua caixa de correio.
+
+**Versão & Permitir remetente** se a mensagem não é spam e você desejar que o Office 365 para adicionar o remetente a seus remetentes confiáveis e a lista de destinatários para e-mails futuros. Tenha em mente que o seu administrador pode ter outras configurações de permitir/bloquear ampla de organização que substituem sua lista de remetentes seguros.
+
+**Versão & relatório**, se a mensagem não é spam e você deseja enviar a mensagem para sua caixa de correio e relatá-la à Microsoft para análise.
+
+**Bloco** se desejar que o Office 365 para adicionar o remetente à lista de remetentes bloqueados.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
