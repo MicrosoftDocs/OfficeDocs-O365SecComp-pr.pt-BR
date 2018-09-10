@@ -5,7 +5,7 @@
 ## [Apresentando a Classificação de Segurança do Office 365](office-365-secure-score.md)
 ## [Permissões no Centro de Conformidade e Segurança](permissions-in-the-security-and-compliance-center.md)
 ## [Conceder aos usuários acesso ao Centro de Conformidade e Segurança](grant-access-to-the-security-and-compliance-center.md)
-## [Visão geral da segurança do Painel](security-dashboard.md)
+## [Visão geral do Painel de Segurança](security-dashboard.md)
 ## [Instalar o suplemento de supervisão da área de trabalho do Outlook](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [Usar sua assinatura gratuita do Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plano de segurança e conformidade no Office 365](plan-for-security-and-compliance.md)
@@ -223,7 +223,7 @@
 ## [Propriedades detalhadas no log de auditoria](detailed-properties-in-the-office-365-audit-log.md)
 ## [Usar a auditoria de compartilhamento no log de auditoria](use-sharing-auditing.md)
 ## [Procurar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
-# Monitorar a segurança e conformidade
+# [Monitorar a segurança e a conformidade](monitor-security-and-compliance.md)
 ## [Políticas de alerta](alert-policies.md)
 ### [Criar alertas de atividade](create-activity-alerts.md)
 ## [Relatórios inteligentes e insights no Centro de Conformidade e Segurança](reports-and-insights-in-security-and-compliance.md)
