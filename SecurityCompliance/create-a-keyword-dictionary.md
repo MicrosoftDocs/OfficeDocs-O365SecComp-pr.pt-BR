@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: Identificar informações confidenciais, às vezes, exige procurar palavras-chave, especialmente quando identificar o conteúdo genérico (como comunicações relacionadas à saúde) ou idioma inapropriado ou explícito. Embora você possa criar listas de palavra-chave nos tipos de informações confidenciais, essas listas são limitadas no tamanho e exigem modificar XML para criá-los ou editá-los. Dicionários de palavras-chave fornecem um gerenciamento mais simples de palavras-chave em uma escala muito maior, com suporte até 100.000 termos por dicionário.
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013985"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849394"
 ---
 # <a name="create-a-keyword-dictionary"></a>Criar um dicionário de palavras-chave
 
@@ -29,7 +29,7 @@ A Prevenção de perda de dados (DLP) no Office 365 pode identificar, monitorar 
 
 As palavras-chave para o seu dicionário podem vir de uma variedade de fontes, mais comumente de um arquivo (como uma lista .csv ou .txt), de uma lista que você insere diretamente no cmdlet ou de um dicionário existente. Quando você cria um dicionário de palavras-chave, siga as mesmas etapas principais:
   
-1. **Conectar-se ao PowerShell &amp; do Centro de Conformidade e Segurança** - consulte [este tópico](https://go.microsoft.com/fwlink/p/?linkid=799771).
+1. **Conectar-se ao PowerShell do Centro de Segurança e Conformidade** – confira [este tópico](https://docs.microsoft.com/pt-BR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. **Defina ou carregue suas palavras-chave na sua fonte pretendido** - o cmdlet para criar um dicionário de palavras-chave aceita uma lista de palavras-chave separadas por vírgula, de modo que esta etapa podem variar dependendo da origem de suas palavras-chave. 
     
@@ -39,7 +39,7 @@ As palavras-chave para o seu dicionário podem vir de uma variedade de fontes, m
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>Criar um dicionário de palavras-chave de um arquivo
 
-Muitas vezes, quando você precisa criar um dicionário grande é para usar palavras-chave de um arquivo ou uma lista exportados de outra fonte. Nesse caso, você criará um dicionário de palavra-chave que contém uma lista de idioma inadequado para ser exibida em emails externos. Será preciso [conectar-se para a o PowerShell do Centro de Conformidade e Segurança](https://go.microsoft.com/fwlink/p/?linkid=799771).
+Muitas vezes, quando você precisa criar um dicionário grande é para usar palavras-chave de um arquivo ou uma lista exportados de outra fonte. Nesse caso, você criará um dicionário de palavras-chave que contém uma lista de termos inadequados a verificar em emails externos. Será preciso [conectar-se ao PowerShell do Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/pt-BR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copie as palavras-chave para um arquivo de texto e verifique se cada palavra-chave está em uma linha separada.
     
