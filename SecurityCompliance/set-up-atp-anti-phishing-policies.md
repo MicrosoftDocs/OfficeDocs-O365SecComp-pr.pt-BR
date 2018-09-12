@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Proteção antiphishing de ATP, parte do Office 365 avançada proteção contra ameaças, pode ajudar a proteger sua organização contra ataques mal-intencionados phishing baseados em representação e outros ataques de phishing. Se você for um administrador de segurança ou o Office 365 Enterprise global, você pode configurar políticas de AntiPhishing ATP. Phishing ataques vêm em uma variedade de formulários de ataques baseados em mercadorias lança direcionado phishing ou whaling. Com a complexidade crescente, é difícil para o mesmo um olhar treinado identificar alguns desses ataques sofisticados. Felizmente, pode ajudar a proteção de ameaça avançadas do Office 365. Você pode configurar uma política de AntiPhishing ATP para ajudar a garantir que sua organização seja protegida contra esses ataques.
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839961"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955443"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurar as políticas de antiphishing ATP do Office 365
 
@@ -38,7 +38,7 @@ O que fazer:
 
 - Certifique-se de que você é um membro do grupo de funções **administradores de empresa** ou **administradores de segurança** . 
     
-- [Saiba mais sobre as opções de política de AntiPhishing ATP](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (neste artigo). 
+- [Saiba mais sobre as opções de política de AntiPhishing ATP](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (neste artigo). 
     
 - Provavelmente você irá configurar várias políticas de AntiPhishing ATP para sua organização. O Office 365 impõe essas políticas na ordem em que são listados na página **antiphishing ATP** na segurança &amp; Centro de conformidade. Depois que você tiver revisado as opções de política, levar algum tempo para determinar quantas políticas que você precisará e a prioridade para cada um. 
     

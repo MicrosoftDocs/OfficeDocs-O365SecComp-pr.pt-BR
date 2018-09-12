@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 'Para ajudar a impedir phishing, Office 365 e Outlook.com agora requerem conformidade RFC para do: endereços.'
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523495"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955423"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Como o Office 365 valida o endereço de para evitar phishing
 
@@ -35,8 +35,6 @@ Microsoft iniciará a aplicação do reforço das diretivas descrito neste artig
 
 O Office 365 está fazendo alterações à maneira como ele impõe o uso de From: endereço em mensagens recebidas para melhor protegê-lo contra ataques de phishing. Neste artigo:
   
-- [Todas as mensagens devem incluir um valor válido de: endereço](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [Todas as mensagens devem incluir um valor válido de: endereço](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [Formato de From: se você não incluir um nome de exibição de endereços](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
