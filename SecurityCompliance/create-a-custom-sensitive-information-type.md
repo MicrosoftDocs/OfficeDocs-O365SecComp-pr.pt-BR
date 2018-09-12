@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Se você precisa identificar e proteger um tipo diferente de informações confidenciais, como uma ID de funcionário que usa um formato específico para sua organização, poderá criar um tipo personalizado de informações confidenciais. Um tipo de informação confidencial é definido em um arquivo XML chamado de pacote de regras. Este tópico mostra como criar um arquivo XML que define seu próprio tipo personalizado de informações confidenciais. Você precisa saber criar uma expressão regular.
-ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523606"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849424"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Criar um tipo de informação confidencial personalizado
 
@@ -30,6 +30,12 @@ Mas, se você precisa identificar e proteger um tipo diferente de informações 
 Este tópico mostra como criar um arquivo XML que define seu próprio tipo personalizado de informações confidenciais. Você precisa saber criar uma expressão regular. Como exemplo, este tópico cria um tipo personalizado de informações confidenciais que identifica uma ID de funcionário. Você pode usar esse XML de exemplo como ponto de partida para seu próprio arquivo XML.
   
 Depois de criar um arquivo XML bem formado, você poderá carregá-lo para o Office 365 usando o PowerShell. Você estará pronto para usar seu tipo personalizado de informações confidenciais nas suas políticas DLP e testar se ele está detectando as informações confidenciais conforme o planejado.
+
+## <a name="important-disclaimer"></a>Aviso de isenção de responsabilidade importante
+
+Devido às variações nos ambientes do cliente e nos requisitos de correspondência de conteúdo, o Suporte da Microsoft não pode ajudar no fornecimento de definições de correspondência de conteúdo personalizado; por exemplo, definindo classificações personalizadas ou padrões de expressões regulares ("RegEx"). Para desenvolvimento, teste e depuração de correspondência de conteúdo personalizado, os clientes do Office 365 devem contar com recursos de TI internos ou usar um recurso de consultoria externo, como os Serviços de Consultoria Microsoft. Os engenheiros de suporte podem fornecer suporte limitado para o recurso, mas não podem garantir que o desenvolvimento de correspondência de conteúdo personalizado atenda aos requisitos ou à conformidade do cliente. Como exemplo do tipo de auxílio disponível, o suporte pode fornecer padrões de expressões regulares de amostra para fins de teste ou ajudar na solução de um padrão RegEx existente, que não esteja sendo acionado como esperado, com um único exemplo de conteúdo específico.
+
+ Para saber mais sobre o mecanismo de RegEx do .NET usado para processamento de texto, confira a documentação sobre [Expressões regulares no .NET](https://docs.microsoft.com/pt-BR/dotnet/standard/base-types/regular-expressions).
     
 ## <a name="sample-xml-of-a-rule-package"></a>XML de exemplo de um pacote de regras
 
@@ -124,7 +130,7 @@ Antes de começar, é importante compreender a estrutura básica do esquema XML 
   
 Uma regra define uma ou mais entidades (tipos de informações confidenciais) e cada entidade define um ou mais padrões. Um padrão é o que a DLP procura ao avaliar conteúdo como emails e documentos.
   
-(Uma breve observação sobre a terminologia: se você estiver familiarizado com as políticas de DLP, saberá que uma política contém uma ou mais regras formadas por condições e ações. No entanto, neste tópico, a marcação XML usa regras para significar os padrões que definem uma entidade, também conhecido como tipo de informação confidencial. Neste tópico, ao ver uma regra, pense em entidade ou tipo de informação confidencial e não em condições e ações.)
+(Uma breve observação sobre a terminologia: se você estiver familiarizado com as políticas DLP, saberá que uma política contém uma ou mais regras formadas por condições e ações. No entanto, neste tópico, a marcação XML usa regras para significar os padrões que definem uma entidade, também conhecido como tipo de informação confidencial. Neste tópico, ao ver uma regra, pense em entidade ou tipo de informação confidencial e não em condições e ações.)
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Cenário mais simples: entidade com um padrão
 
@@ -328,7 +334,7 @@ Para carregar o pacote de regras, faça o seguinte.
     
     Use o local do arquivo onde o pacote de regras está realmente armazenado. C:\caminhopersonalizado\ é um espaço reservado.
     
-4. Para confirmar, digite S e pressione ENTER.
+4. Para confirmar, digite S e pressione Enter.
     
 5. Verifique se o novo tipo de informação confidencial foi carregado, digitando Get-DlpSensitiveInformationType para ver uma lista de todos os tipos confidenciais. Você pode separar rapidamente os tipos de informações confidenciais personalizados dos internos observando a coluna Publisher. Você pode filtrar a lista para um tipo específico de informações confidenciais executando Get-DlpSensitiveInformationType-Identity "nome do tipo de informação confidencial".
     
@@ -362,7 +368,7 @@ Ao carregar seu arquivo XML do pacote de regras, o sistema validará o XML e ver
     
 Se um tipo personalizado de informações confidenciais contiver um problema que pode afetar o desempenho, ele não será carregado e você poderá ver uma dessas mensagens de erro:
   
-- **Quantificadores genéricos que correspondem a mais conteúdo do que o esperado (por exemplo, "+", "\*')**
+- **Quantificadores genéricos que correspondem a mais conteúdo do que o esperado (por exemplo, "+", "\*")**
     
 - **Declarações de pesquisa**
     
@@ -390,7 +396,7 @@ No Office 365, não é possível solicitar manualmente um novo rastreamento de u
     
     Você deve carregar uma nova versão do seu pacote de regras com essa entidade específica removida, usando Set-DlpSensitiveInformationTypeRulePackage. Será necessário garantir que nenhuma política DLP ou regras de transporte do Exchange ainda faça referência ao tipo de informação confidencial antes de removê-lo.
     
-3. Para confirmar, digite S e pressione ENTER.
+3. Para confirmar, digite S e pressione Enter.
     
 4. Verifique se a nova regra foi removida, digitando Get- DlpSensitiveInformationType, que deixará de exibir o nome do tipo de informação confidencial.
     
