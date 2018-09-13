@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando não há mais precisa preservar o conteúdo de uma caixa de correio inativa do Office 365, você pode excluir permanentemente a caixa de correio inativa, removendo isenção. Depois de remover a retenção, a caixa de correio inativa é marcada para exclusão e é excluída permanentemente depois que ela é processada.
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523527"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965248"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Excluir uma caixa de correio inativa no Office 365
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. No EAC, vá até **gerenciamento de conformidade** \> **Descoberta eletrônica In-loco &amp; mantenha**.
     
-<<<<<<< HEAD
 3. Selecione o bloqueio In-loco que deseja excluir e clique em **Editar** ![ícone Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-=======
-3. Selecione o bloqueio In-loco que deseja excluir e clique em **Editar**! [Ícone de edição](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
->>>>>>> conversão de markjjo
     
 4. Sobre o **Descoberta eletrônica In-loco &amp; mantenha** propriedades de página, clique em **Bloqueio In-loco**, desmarque a caixa de **conteúdo do local que corresponda a consulta de pesquisa em caixas de correio selecionadas em espera** e, em seguida, clique em **Salvar**.
     
