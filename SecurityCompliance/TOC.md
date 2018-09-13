@@ -14,7 +14,7 @@
 ## [Proteger o acesso a dados e serviços no Office 365](protect-access-to-data-and-services.md)
 ## [Escolher entre MDM ou Intune](choose-between-mdm-and-intune.md)
 # [Evitar a perda de dados (DLP)](data-loss-prevention-policies.md)
-## [Assistir a uma visão geral estendida de DLP](https://go.microsoft.com/fwlink/?linkid=852300)
+## [Assistir a uma visão geral estendida de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
 ### [Introdução às recomendações de políticas DLP](get-started-with-dlp-policy-recommendations.md)
 ### [Introdução à política DLP padrão](get-started-with-the-default-dlp-policy.md)
@@ -32,6 +32,7 @@
 ### [Personalizar um tipo de informação confidencial interno](customize-a-built-in-sensitive-information-type.md)
 ### [Criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md)
 ### [Criar um dicionário de palavras-chave](create-a-keyword-dictionary.md)
+### [Impressão Digital de Documento](document-fingerprinting.md) 
 # Gerenciar governança de dados        
 ## [Importar dados](importing-pst-files-to-office-365.md)
 ### [Usar o upload de rede para importar arquivos PST](use-network-upload-to-import-pst-files.md)
@@ -253,8 +254,8 @@
 ### [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](https://docs.microsoft.com/Office365/Enterprise/isolated-sharepoint-online-team-site-dev-test-environment)
 
 # Soluções de conformidade
-## [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços de nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Gerenciar solicitações de entidades de dados RGPD com a ferramenta de ocorrência de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Gerenciar solicitações de titulares de dados RGPD com a ferramenta de ocorrência de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Proteção de informações do Office 365 para o RGPD](office-365-information-protection-for-gdpr.md)
 ### [Visão geral: Proteção do Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
 ### [Pesquisar e localizar dados pessoais](search-for-and-find-personal-data.md)
