@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Saiba como reconhecer e responder a uma conta de email comprometido no Office 365
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782178"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977586"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a uma conta de email comprometida no Office 365
 
@@ -70,6 +70,9 @@ Você deve executar todas as seguintes etapas para recuperar o acesso à sua con
 - Certifique-se de que a senha é segura e se ele contém pelo menos um caractere especial, pelo menos um número e letras maiusculas e minúsculas. 
 - Não reutilize qualquer uma das suas senhas últimos cinco. Embora o requisito de histórico de senha permite que você reutilizar uma senha mais recente, você deve selecionar algo que o invasor não pode adivinhar.
 - Se a sua identidade local é federada com o Office 365, você deverá alterar sua senha no local e, em seguida, você deverá notificar o administrador do comprometimento.
+
+> [!TIP]
+> É altamente recomendável que você habilite a autenticação multifator (MFA) para impedir o comprometimento, especialmente para contas com privilégios administrativos.  É possível aprender mais [aqui](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Etapa 2 endereços de encaminhamento de email suspeitas de remover
 1. Abrir o **Centro de administração do Office 365 > usuários ativos**.
