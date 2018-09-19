@@ -3,7 +3,6 @@ title: Retenção, exclusão e destruição de dados no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Visão geral das políticas da Microsoft para Office 365 relacionadas a retenção de dados, exclusão e destruição.
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523814"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999142"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retenção, exclusão e destruição de dados no Office 365
 
@@ -68,8 +67,8 @@ A Microsoft também tem uma política padrão de manipulação de dados que aten
 Em todos os momentos durante a vigência de uma assinatura, um assinante pode contatar Microsoft Support e desprovisionamento de inscrição de solicitação expedida. Nesse processo, todos os dados do usuário, incluindo os dados no SharePoint Online, o Exchange Online que pode estar em espera ou armazenado em caixas de correio inativas, é excluídos três dias após o administrador insere o código de bloqueio fornecido pela Microsoft. Para obter mais informações sobre acelerado deprovisioning, consulte [Cancelar o Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Links relacionados
-- [Exclusão de dados do Exchange Online](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [Exclusão de dados do SharePoint Online](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Exclusão de dados do Skype for Business ](/office365/enterprise/office-365-skype-data-deletion)
-- [Imutabilidade no Office 365](/office365/enterprise/office-365-data-immutability)
-- [Destruição de dados](/office365/enterprise/office-365-data-destruction)
+- [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
+- [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
+- [Exclusão de dados do Skype for Business ](office-365-skype-data-deletion.md)
+- [Imutabilidade no Office 365](office-365-data-immutability.md)
+- [Destruição de dados](office-365-data-destruction.md)
