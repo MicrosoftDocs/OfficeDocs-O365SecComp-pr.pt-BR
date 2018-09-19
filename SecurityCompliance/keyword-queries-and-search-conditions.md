@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e o arquivo que você pode pesquisar nas caixas de correio do Exchange Online e no SharePoint ou OneDrive para sites corporativos usando a ferramenta de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade.  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782098"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015352"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
-Este tópico descreve as propriedades de email e documentos que você pode pesquisar em itens de email no Exchange Online e documentos armazenados no SharePoint e sites do OneDrive for Business, usando o recurso de pesquisa de conteúdo no Office 365 Security &amp; conformidade Centro. Você também pode usar o ** \*- ComplianceSearch** cmdlets em Security &amp; PowerShell do Centro de conformidade para procurar essas propriedades. Também descreve o tópico: 
+Este tópico descreve as propriedades de email e documentos que você pode pesquisar em itens de email no Exchange Online e documentos armazenados no SharePoint e sites do OneDrive for Business, usando o recurso de pesquisa de conteúdo no Office 365 Security &amp; conformidade Centro. Você também pode usar o ** \*- ComplianceSearch** cmdlets em Security &amp; PowerShell do Centro de conformidade para procurar essas propriedades. Também descreve o tópico:   
   
 - Usando operadores de pesquisa booleana, condições de pesquisa e outras técnicas de consulta de pesquisa para refinar os resultados da pesquisa.
     
