@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523925"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011263"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças do Office 365
 
@@ -88,6 +88,14 @@ Identificar, monitorar e entender os ataques e rapidamente ameaças de endereço
     
 - [Introdução à Inteligência Contra Ameaças do Office 365](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>Gerenciamento de acesso privilegiado
+
+Ajuda a proteger sua organização contra violações que possam usar contas de administração com privilégios existentes com acesso a posição a dados confidenciais ou acesso às definições de configuração crítico. Após habilitar o gerenciamento de acesso privilegiado, serão necessário solicitar acesso just-in-time para executar tarefas com privilégios elevados e privilegiadas por meio de um fluxo de trabalho de aprovação que é altamente no escopo do tempo-limite e usuários.
+  
+- [Obtenha uma visão geral dos privilégios gerenciamento de acesso](privileged-access-management-overview.md)
+    
+- [Introdução ao privilegiada gerenciamento de acesso](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>Opções adicionais
 
 Obtenha mais informações sobre tecnologias relacionadas da Microsoft e processos que ajudam seguro do Office 365 contra ameaças.

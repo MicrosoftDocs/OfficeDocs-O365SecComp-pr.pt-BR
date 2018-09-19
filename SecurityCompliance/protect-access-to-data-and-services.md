@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: página de aterrissagem de proteção de acesso a dados do O365 e serviços
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009097"
+ms.locfileid: "24011273"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Proteger o acesso a dados e serviços no Office 365
 
@@ -58,7 +58,7 @@ Se você estiver usando o Windows Azure AD MFA, crie uma regra de acesso condici
 
 Privilegiado acesso gerenciamento permite que o controle de acesso granular sobre tarefas de administração com privilégios no Office 365.  Ele pode ajudar a proteger sua organização contra violações que possam usar contas de administração com privilégios existentes com acesso a posição a dados confidenciais ou acesso às definições de configuração crítico.
 
-- [Visão geral dos privilégios gerenciamento de acesso](privileged-access-managment-overview.md)
+- [Visão geral dos privilégios gerenciamento de acesso](privileged-access-management-overview.md)
 - [Configurar o gerenciamento de acesso privilegiado](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>Etapa 5: Configurar políticas de acesso de dispositivo do SharePoint
