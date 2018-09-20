@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre privilegiada acessar management no Office 365
-ms.openlocfilehash: 979587e68ea0cbcf255e087eaaeb38dca4fc7ca1
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24016083"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055256"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilégios acessar management no Office 365
 
@@ -57,7 +57,7 @@ Usando o Centro de administração do Office 365 ou PowerShell de gerenciamento 
 
 ### <a name="step-3-access-approval"></a>Etapa 3: Aprovação de acesso
 
-Uma solicitação de aprovação é criada e o grupo de aprovação seja notificado por email da solicitação pendente. Se for concedida a aprovação, a solicitação de acesso privilegiado é processada como uma aprovação e a tarefa está pronta para ser concluída. Se a solicitação for negada, tarefa será bloqueado e não tem acesso para o reqeustor.
+Uma solicitação de aprovação é criada e o grupo de aprovação seja notificado por email da solicitação pendente. Se for concedida a aprovação, a solicitação de acesso privilegiado é processada como uma aprovação e a tarefa está pronta para ser concluída. Se a solicitação for negada, tarefa será bloqueado e não tem acesso para o reqeustor. O solicitante será notificado da aprovação de solicitação ou negação via mensagem de email.
 
 ![Etapa 3 - aprovação de acesso](media/pam-step3-access-approval.jpg)
 
