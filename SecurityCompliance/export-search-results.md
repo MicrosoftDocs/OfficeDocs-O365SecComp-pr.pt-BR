@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportar resultados da pesquisa de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para um computador local. Resultados de email Emaill são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524530"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962957"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportar resultados de pesquisa de conteúdo da segurança do Office 365 &amp; Centro de conformidade
 
@@ -86,7 +86,7 @@ Exportando os resultados de uma pesquisa de conteúdo envolve Preparando os resu
 
 A primeira etapa é preparar os resultados da pesquisa para a exportação. Quando você prepara resultados, elas são carregadas para um local de armazenamento do Azure em nuvem da Microsoft. Observe que o conteúdo de caixas de correio e de sites foi carregada em uma taxa máxima de 2 GB por hora.
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
     
@@ -185,7 +185,7 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
   
 [Relatórios de exportação](export-search-results.md#export-reports)
   
-[Exportar itens não indexados](export-search-results.md#exporting-unindexed-items)
+[Exportando itens indexados parcialmente](#exporting-partially-indexed-items)
   
 [Exportando mensagens individuais ou arquivos PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -282,6 +282,8 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
     C - todos os itens indexados parcialmente de todos os sites na pesquisa serão exportados, independentemente se um site contém itens que correspondem aos critérios de pesquisa.
     
     Se você optar por exportar itens indexados parcialmente, itens de caixa de correio parcialmente indexados são exportados em um arquivo PST separado independentemente da opção que você escolher em **Exchange exportar conteúdo como**.
+
+- Se os itens indexados parcialmente forem retornados na pesquisa resulta (porque outras propriedades de itens indexados parcialmente correspondem aos critérios de pesquisa), e em seguida, essas parcialmente indexados são exportados com os resultados de pesquisa comum. Portanto, se você optar por exportar itens indexados e itens indexados parcialmente (selecionando a opção de exportação de **todos os itens, incluindo aquelas que têm o formato não reconhecido, são criptografados, ou não foram indexados por outros motivos** ), os itens indexados parcialmente exportados com o reslts regular será listado no relatório Results.csv. Eles não serão listados no relatório items.csv não indexados.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportando mensagens individuais ou arquivos PST
   

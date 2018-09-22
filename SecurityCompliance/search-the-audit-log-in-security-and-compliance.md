@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523705"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962967"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365
 
@@ -122,7 +122,7 @@ Aqui é o processo para pesquisar o log de auditoria no Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Etapa 1: Executar uma pesquisa de log de auditoria
 
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Usar uma sessão de navegação privada (não uma sessão normal) para acessar a segurança do Office 365 &amp; conformidade centraliza porque isso impedirá que as credenciais que você está conectado atualmente com sejam usados. Para abrir uma sessão de Navegação InPrivate no Internet Explorer ou Microsoft Edge, basta pressione CTRL + SHIFT + P. Para abrir uma sessão de navegação privada no Google Chrome (chamados de uma janela incognito), pressione CTRL + SHIFT + N. 
@@ -647,3 +647,60 @@ Aqui estão algumas dicas para a procura de atividade no log de auditoria do adm
     
 - Você também pode exibir os eventos no log de auditoria do administrador do Exchange usando o Centro de administração do Exchange. Para obter instruções, consulte o [log de auditoria do administrador do modo de exibição](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
+
+**Onde encontrar sobre os recursos oferecidos pelo serviço de auditoria no Office 365?**
+
+Para obter mais informações sobre os recursos de auditoria e relatórios disponíveis no Office 365, consulte [auditoria e relatórios no Office 365](office-365-auditing-and-reporting-overview.md). 
+
+**Cite diferentes serviços do Office 365 que são auditados no momento.**
+
+O Office 365 Services usado mais como o Exchange Online, SharePoint, OneDrive, Azure Active Directory, Teams da Microsoft, CRM, proteção avançada de ameaça e prevenção de perda de dados sejam auditadas. Consulte a seção [Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) neste artigo para obter uma lista completa.
+
+**Que atividades sejam auditadas fazendo auditoria de serviço no Office 365?**
+
+Consulte a seção de [atividades auditadas](#audited-activities) neste artigo para obter uma lista e descrição das atividades que são auditados no Office 365.
+
+**Quanto tempo leva para um registro de auditoria esteja disponível depois que um evento ocorreu?**
+
+A maioria dos dados de auditoria está disponível em até 30 minutos, mas pode levar até 24 horas após a ocorrência de um evento para a entrada de log de auditoria correspondente a ser exibido nos resultados da pesquisa. Consulte a tabela na seção deste artigo que mostra o tempo que leva para eventos nos serviços diferentes do Office 365 para estar disponíveis [antes de começar](#before-you-begin) .
+
+**Quanto tempo são os registros de auditoria retidos por?**
+
+Atualmente, os registros de log de auditoria são mantidos por 90 dias. Microsoft está trabalhando ativamente em um plano para aumentar esse limite. 
+
+**Posso acessar os dados de auditoria programaticamente?**
+
+Sim. A API de atividade de gerenciamento do Office 365 é usada para buscar os logs de auditoria programaticamente.  Para começar, consulte [Introdução ao APIs de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+**Existem outras maneiras de fazer auditoria logs que não seja suing a segurança do Office 365 & Centro de conformidade ou a API de atividade de gerenciamento do Office 365?**
+
+Não. Esses são apenas duas maneiras de obter dados de serviço de auditoria do Office 365. 
+
+**É necessário habilitar individualmente a auditoria no cada serviço que eu quiser capturar logs de auditoria para?**
+
+Na maioria dos serviços do Office 365, o auditoria está habilitado por padrão depois que você inicialmente ative a auditoria para sua organização do Office 365 (conforme descrito na seção [antes de começar](#before-you-begin) , neste artigo). No entanto, você precisa habilitar auditoria no Exchange Online para cada caixa de correio que você deseja fazer auditoria de caixa de correio.   Estamos trabalhando em Habilitar a auditoria de caixa de correio por padrão para todas as caixas de correio em uma organização do Office 365. Para obter mais informações, consulte "auditoria de caixa de correio do Exchange será habilitada por padrão" no [blog de segurança da Microsoft, privacidade e conformidade](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
+
+**O suporte para Office 365 auditoria serviço eliminação da duplicação de registros?**
+
+Não. O pipeline de serviço de auditoria é quase em tempo real e, portanto, não oferece suporte a eliminação da duplicação.
+ 
+**Fluxo de dados de auditoria do Office 365 entre regiões geográficas?**
+
+Não. No momento, temos auditoria implantações de pipeline no NA (América do Norte), EMEA (Europa, Oriente Médio e África) e regiões APAC (Ásia Pacífico). No entanto, podemos talvez flow os dados entre essas regiões para balanceamento de carga e somente durante o site live problemas. Quando executamos essas atividades, os dados em trânsito são criptografados.   
+ 
+**Auditoria de dados criptografados?**
+
+Auditoria de dados é armazenado em do caixas de correio do Exchange (dados em repouso) na mesma região onde o pipeline de auditoria está implantado. Esses dados não são criptografados. No entanto, os dados em trânsito sempre são criptografados. 
+
+
+
+
+
+
+
+
+
+
+
+

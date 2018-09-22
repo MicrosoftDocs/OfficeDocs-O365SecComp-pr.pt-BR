@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e o arquivo que você pode pesquisar nas caixas de correio do Exchange Online e no SharePoint ou OneDrive para sites corporativos usando a ferramenta de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade.  '
-ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
-ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
+ms.openlocfilehash: 49dab5c26516f0549a6f72a24c98618db459dcc6
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24015352"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962947"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
@@ -45,7 +45,7 @@ A tabela a seguir lista as propriedades da mensagem de email que podem ser pesqu
   
 |**Propriedade**|**Descrição da propriedade**|**Exemplos**|**Resultados de pesquisa retornados pelos exemplos**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames  <br/> |Os nomes dos arquivos anexados a uma mensagem de email.  <br/> |`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual\*`  <br/> |Mensagens que têm um arquivo anexado chamado relatórioanual.ppt. No segundo exemplo, o uso do caractere curinga retorna mensagens com a palavra "anual" no nome de arquivo de um anexo.  <br/> |
+|AttachmentNames  <br/> |Os nomes dos arquivos anexados a uma mensagem de email.  <br/> |`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`  <br/> |Mensagens que têm um arquivo anexado chamado relatórioanual.ppt. No segundo exemplo, o uso do caractere curinga retorna mensagens com a palavra "anual" no nome de arquivo de um anexo.  <br/> |
 |Cco  <br/> |O campo Cco de uma mensagem de email.<sup>1</sup> <br/> |`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`  <br/> |Todos os exemplos retornam mensagens com Brenda Fernandes incluída no campo Cco.  <br/> |
 |Categoria  <br/> | As categorias a serem pesquisadas. As categorias podem ser definidas pelos usuários usando o Outlook ou o Outlook Web App. Os valores possíveis são:  <br/><br/>  azul  <br/>  verde  <br/>  laranja  <br/>  roxo  <br/>  vermelho  <br/>  amarelo  <br/> |`category:"Red Category"`  <br/> |Mensagens que foram atribuídas à categoria vermelho nas caixas de correio de origem.   <br/> |
 |Cc  <br/> |O campo CC de uma mensagem de email.<sup>1</sup> <br/> |`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`  <br/> |Em ambos os exemplos, mensagens com Brenda Fernandes especificada no campo CC.  <br/> |
@@ -54,13 +54,13 @@ A tabela a seguir lista as propriedades da mensagem de email que podem ser pesqu
 |HasAttachment  <br/> |Indica se uma mensagem tiver um anexo. Use os valores **true** ou **false**.<br/> |`from:pilar@contoso.com AND hasattachment:true`  <br/> |Mensagens enviadas pelo usuário especificado e que possuem anexos.  <br/> |
 |Importância  <br/> |A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Por padrão, as mensagens são enviadas com prioridade normal, a menos que o remetente defina a prioridade como **alta** ou **baixa**.<br/> |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`  <br/> |Mensagens marcadas como alta prioridade, prioridade média ou baixa prioridade.  <br/> |
 |Foi lido  <br/> |Indica se ou não mensagens que tenham sido lidas. Use os valores **true** ou **false**.<br/> |`isread:true`  <br/> `isread:false`  <br/> |O primeiro exemplo retorna as mensagens com a propriedade foi lido definida como **True**. O segundo exemplo retorna as mensagens com a propriedade foi lido definida como **False**.<br/> |
-|ItemClass  <br/> |Use essa propriedade para pesquisar os tipos de dados específicos de terceiros que sua organização importada para o Office 365. Use a seguinte sintaxe para essa propriedade:`itemclass:ipm.externaldata.<third-party data type>*` <br/> |`itemclass:ipm.externaldata.Facebook\* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter\* AND from:"Ann Beebe" AND "Northwind Traders"`  <br/> |O primeiro exemplo retorna os itens de Facebook que contêm a palavra "contoso" na propriedade Subject. O segundo exemplo retorna os itens do Twitter que foram lançadas por Ann Beebe e que contenham a frase de palavra-chave "Northwind Traders".<br/> Para obter uma lista completa dos valores a serem usados para tipos de dados de terceiros para a propriedade ItemClass, consulte [Use pesquisa de conteúdo para pesquisar dados de terceiros que foi importados para o Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).  <br/> |
-|Tipo  <br/> | O tipo de mensagem de email a ser pesquisado. Valores possíveis:  <br/>  contatos  <br/>  documentos  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  mensagem instantânea  <br/>  diários  <br/>  reuniões  <br/>  microsoftteams (retorna itens de bate-papos, reuniões e chamadas em Microsoft Teams)  <br/>  observações  <br/>  postagens  <br/>  rssfeeds  <br/>  tarefas  <br/>  caixa postal  <br/> |`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`  <br/> |O primeiro exemplo retorna as mensagens de email que satisfazem os critérios de pesquisa. O segundo exemplo retorna as mensagens de email, conversas de mensagens instantâneas e mensagens de voz que atendam aos critérios de pesquisa. O terceiro exemplo retorna os itens que foram importados para caixas de correio no Office 365 de fontes de dados de terceiros, como Twitter, Facebook e Cisco Jabber, que atendam aos critérios de pesquisa. Para obter mais informações, consulte [arquivamento dados de terceiros no Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).<br/> |
+|ItemClass  <br/> |Use essa propriedade para pesquisar os tipos de dados específicos de terceiros que sua organização importada para o Office 365. Use a seguinte sintaxe para essa propriedade:`itemclass:ipm.externaldata.<third-party data type>*` <br/> |`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`  <br/> |O primeiro exemplo retorna os itens de Facebook que contêm a palavra "contoso" na propriedade Subject. O segundo exemplo retorna os itens do Twitter que foram lançadas por Ann Beebe e que contenham a frase de palavra-chave "Northwind Traders".<br/> Para obter uma lista completa dos valores a serem usados para tipos de dados de terceiros para a propriedade ItemClass, consulte [Use pesquisa de conteúdo para pesquisar dados de terceiros que foi importados para o Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).  <br/> |
+|Tipo  <br/> | O tipo de mensagem de email a ser pesquisado. Valores possíveis:  <br/>  contatos  <br/>  documentos  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  mensagem instantânea  <br/>  diários  <br/>  reuniões  <br/>  microsoftteams (retorna itens de bate-papos, reuniões e chamadas em Microsoft Teams)  <br/>  observações  <br/>  postagens  <br/>  rssfeeds  <br/>  tarefas  <br/>  caixa postal  <br/> |`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`  <br/> |O primeiro exemplo retorna as mensagens de email que satisfazem os critérios de pesquisa. As segundo exemplo retorna mensagens de email, instantânea (incluindo Skype para conversas de negócios e bate-papo no Microsoft Teams) de conversas de mensagens e mensagens que atendam aos critérios de pesquisa de voz. O terceiro exemplo retorna os itens que foram importados para caixas de correio no Office 365 de fontes de dados de terceiros, como Twitter, Facebook e Cisco Jabber, que atendam aos critérios de pesquisa. Para obter mais informações, consulte [arquivamento dados de terceiros no Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).<br/> |
 |Participants  <br/> |Todos os campos de pessoas em uma mensagem de email; os campos são De, Para, Cc e Cco.<sup>1</sup> <br/> |`participants:garthf@contoso.com`  <br/> `participants:contoso.com`  <br/> |Mensagens enviadas por ou para pauloa@contoso.com. O segundo exemplo retorna todas as mensagens enviadas por ou para um usuário no domínio contoso.com.  <br/> |
-|Recebido  <br/> |A data em que uma mensagem de email foi recebida pelo destinatário.  <br/> |`received:04/15/2016`  <br/> `received\>=01/01/2016 AND received\<=03/31/2016`  <br/> |Mensagens que foram recebidas em 15 de abril de 2016. O segundo exemplo retorna todas as mensagens recebidas entre 1 de janeiro de 2016 e 31 de março de 2016.  <br/> |
+|Recebido  <br/> |A data em que uma mensagem de email foi recebida pelo destinatário.  <br/> |`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`  <br/> |Mensagens que foram recebidas em 15 de abril de 2016. O segundo exemplo retorna todas as mensagens recebidas entre 1 de janeiro de 2016 e 31 de março de 2016.  <br/> |
 |Destinatários  <br/> |Todos os campos de destinatários em uma mensagem de email; esses campos são Para, CC e Cco.<sup>1</sup> <br/> |`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`  <br/> |Mensagens enviadas para pauloa@contoso.com. O segundo exemplo retorna mensagens enviadas para qualquer destinatário no domínio contoso.com.  <br/> |
-|Enviado  <br/> |A data em que uma mensagem de email foi enviada pelo remetente.  <br/> |`sent:07/01/2016`  <br/> `sent\>=06/01/2016 AND sent\<=07/01/2016`  <br/> |Mensagens que foram enviadas na data especificada ou dentro do intervalo de datas especificado.  <br/> |
-|Size  <br/> |O tamanho de um item, em bytes.  <br/> |`size\>26214400`  <br/> `size:1..1048567`  <br/> |Mensagens maiores do que 25?? MB. O segundo exemplo retorna as mensagens de 1 a 1,048,567 bytes (1 MB) de tamanho.  <br/> |
+|Enviado  <br/> |A data em que uma mensagem de email foi enviada pelo remetente.  <br/> |`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`  <br/> |Mensagens que foram enviadas na data especificada ou dentro do intervalo de datas especificado.  <br/> |
+|Size  <br/> |O tamanho de um item, em bytes.  <br/> |`size>26214400`  <br/> `size:1..1048567`  <br/> |Mensagens maiores do que 25?? MB. O segundo exemplo retorna as mensagens de 1 a 1,048,567 bytes (1 MB) de tamanho.  <br/> |
 |Subject  <br/> |O texto na linha de assunto de uma mensagem de email.  <br/> **Observação:** Quando você usa a propriedade Subject em uma consulta, a pesquisa de ???the retornará todas as mensagens nas quais a linha de assunto contém o texto que você está procurando. Em outras palavras, a consulta não retorna somente as mensagens que tenham uma correspondência exata. Por exemplo, se você procurar `subject:"Quarterly Financials"`, os resultados incluirão mensagens com o assunto "2018 de finanças trimestrais".<br/> |`subject:"Quarterly Financials"`  <br/> `subject:northwind`  <br/> |Mensagens que contenham a frase "Finanças trimestrais" em qualquer lugar no texto da linha de assunto. O segundo exemplo retorna todas as mensagens que contêm o palavra northwind na linha de assunto.  <br/> |
 |Para  <br/> |O campo Para de uma mensagem de email.<sup>1</sup> <br/> |`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`  <br/> |Todos os exemplos retornam mensagens em que Clara Barbosa é especificada na linha Para:.  <br/> |
    
@@ -82,12 +82,12 @@ Para obter uma lista completa das propriedades do SharePoint que podem ser pesqu
 |DetectedLanguage  <br/> |O idioma de um item.  <br/> |`detectedlanguage:english`  <br/> |Todos os itens em inglês.  <br/> |
 |FileExtension  <br/> |A extensão de um arquivo; Por exemplo, docx, um, pptx ou xlsx.  <br/> |`fileextension:xlsx`  <br/> |Todos os arquivos do Excel (Excel 2007 e posterior)  <br/> |
 |FileName  <br/> |O nome de um arquivo.  <br/> |`filename:"marketing plan"`  <br/> `filename:estimate`  <br/> |O primeiro exemplo retorna os arquivos com a frase exata "plano de marketing" no título. O segundo exemplo retorna arquivos com a palavra "estimativa" no nome de arquivo.  <br/> |
-|LastModifiedTime  <br/> |A data em que um item foi alterado pela última vez.  <br/> |`lastmodifiedtime\>=05/01/2016`  <br/> `lastmodifiedtime\>=05/10/2016 AND lastmodifiedtime\<=06/1/2016`  <br/> |O primeiro exemplo retorna os itens que foram alterados em ou após 1 de maio de 2016. O segundo exemplo retorna itens alterados entre 1 de maio de 2016 e 1 de junho de 2016.  <br/> |
+|LastModifiedTime  <br/> |A data em que um item foi alterado pela última vez.  <br/> |`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`  <br/> |O primeiro exemplo retorna os itens que foram alterados em ou após 1 de maio de 2016. O segundo exemplo retorna itens alterados entre 1 de maio de 2016 e 1 de junho de 2016.  <br/> |
 |ModifiedBy  <br/> |A pessoa que a última alteração de um item. Certifique-se de usar o nome para exibição do usuário para essa propriedade.  <br/> |`modifiedby:"Garth Fort"`  <br/> |Todos os itens que foram alterados pela última vez por Paulo Araújo.  <br/> |
-|Path  <br/> |O caminho (URL) de uma pasta específica em um SharePoint ou OneDrive para o site de negócios. Se você usar essa propriedade, certifique-se de pesquisar no site localizado na pasta especificada.<br/> Para retornar a itens localizados em subpastas na pasta que você especificar para a propriedade path, você precisa adicionar /\* para a URL da pasta especificada; Por exemplo, `path: https://contoso.sharepoint.com/Shared Documents/*`.  <br/> <br/> **Observação:** Usando o `Path` propriedade pesquisar OneDrive locais não devolvem arquivos de mídia, como arquivos. png,. wav ou. TIFF, nos resultados da pesquisa. Use uma propriedade de site diferente em sua consulta de pesquisa para pesquisar os arquivos de mídia nas pastas de OneDrive.<br/> <br/> Para obter mais informações sobre como pesquisar a propriedade Path e usando um script para obter as URLs de caminho das pastas em um site específico, consulte [Uso de pesquisa de conteúdo no Office 365 para conjuntos de destino](use-content-search-for-targeted-collections.md).  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/\*" AND filename:confidential`  <br/> |O primeiro exemplo retorna todos os itens em OneDrive especificado para a pasta de negócios. O segundo exemplo retorna os documentos que contêm a palavra "confidencial" no nome do arquivo na pasta do site especificado (e todas as subpastas).  <br/> |
+|Path  <br/> |O caminho (URL) de uma pasta específica em um SharePoint ou OneDrive para o site de negócios. Se você usar essa propriedade, certifique-se de pesquisar no site localizado na pasta especificada.<br/> Para retornar a itens localizados em subpastas na pasta que você especificar para a propriedade path, você precisa adicionar /\* para a URL da pasta especificada; Por exemplo, `path: https://contoso.sharepoint.com/Shared Documents/*`.  <br/> <br/> **Observação:** Usando o `Path` propriedade pesquisar OneDrive locais não devolvem arquivos de mídia, como arquivos. png,. wav ou. TIFF, nos resultados da pesquisa. Use uma propriedade de site diferente em sua consulta de pesquisa para pesquisar os arquivos de mídia nas pastas de OneDrive.<br/> <br/> Para obter mais informações sobre como pesquisar a propriedade Path e usando um script para obter as URLs de caminho das pastas em um site específico, consulte [Uso de pesquisa de conteúdo no Office 365 para conjuntos de destino](use-content-search-for-targeted-collections.md).  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |O primeiro exemplo retorna todos os itens em OneDrive especificado para a pasta de negócios. O segundo exemplo retorna os documentos que contêm a palavra "confidencial" no nome do arquivo na pasta do site especificado (e todas as subpastas).  <br/> |
 |SharedWithUsersOWSUser  <br/> |Documentos que foram compartilhados com o usuário especificado e exibidos na página **compartilhado** no OneDrive do usuário para o site de negócios. Esses são os documentos que foram explicitamente compartilhados com o usuário especificado por outras pessoas em sua organização. Quando você exporta documentos que correspondem a uma consulta de pesquisa que usa a propriedade SharedWithUsersOWSUser, os documentos são exportados a localização original de conteúdo da pessoa compartilhado do documento com o usuário especificado. Para obter mais detalhes, consulte [pesquisando para conteúdos de sites compartilhados dentro da sua organização](keyword-queries-and-search-conditions.md#internal).<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |Os dois exemplos retornam todos os documentos internos que foram explicitamente compartilhados com Garth Fort e que aparecem na página **compartilhado** na Garth Fort OneDrive for Business account.  <br/> |
 |Site  <br/> |A URL de um site ou grupo de sites em sua organização.  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |O primeiro exemplo retorna os itens de OneDrive para sites corporativos para todos os usuários na organização. O segundo exemplo retorna os itens de todos os sites de equipe.  <br/> |
-|Tamanho  <br/> |O tamanho de um item, em bytes.  <br/> |`size\>=1`  <br/> `size:1..10000`  <br/> |O primeiro exemplo retorna itens com mais de 1 byte. O segundo exemplo retorna itens de 1 a 10.000 bytes de tamanho.  <br/> |
+|Tamanho  <br/> |O tamanho de um item, em bytes.  <br/> |`size>=1`  <br/> `size:1..10000`  <br/> |O primeiro exemplo retorna itens com mais de 1 byte. O segundo exemplo retorna itens de 1 a 10.000 bytes de tamanho.  <br/> |
 |Título  <br/> |O título do documento. A propriedade Title é metadados especificada em documentos do Microsoft Office. É diferente do nome do arquivo do documento.  <br/> |`title:"communication plan"`  <br/> |Qualquer documento que contém a frase "plano de comunicação" na propriedade de metadados Title de um documento do Office.  <br/> |
    
 ## <a name="searchable-contact-properties"></a>Propriedades do contato pesquisáveis
@@ -216,8 +216,8 @@ Ao adicionar uma condição, você pode selecionar um operador que é relevante 
   
 |**Operador**|**Equivalente de consulta**|**Descrição**|
 |:-----|:-----|:-----|
-|After  <br/> |`property\>date`  <br/> |Usado com condições de data. Retorna itens que foram enviados, recebidos ou modificados após a data especificada.   <br/> |
-|Antes  <br/> |`property\<date`  <br/> |Usado com condições de data. Retorna itens que foram enviados, recebidos ou modificados antes da data especificada.  <br/> |
+|After  <br/> |`property>date`  <br/> |Usado com condições de data. Retorna itens que foram enviados, recebidos ou modificados após a data especificada.   <br/> |
+|Antes  <br/> |`property<date`  <br/> |Usado com condições de data. Retorna itens que foram enviados, recebidos ou modificados antes da data especificada.  <br/> |
 |Entre  <br/> |`date..date`  <br/> |Use com as condições de data e tamanho. Quando usado com uma condição de data, retorna itens lá foram enviadas, recebidas ou modificados dentro do intervalo de datas especificado. Quando usado com uma condição de tamanho, retorna os itens cujo tamanho é dentro do intervalo especificado.  <br/> |
 |Contains any of  <br/> |`(property:value) OR (property:value)`  <br/> |Usada com condições para propriedades que especificam um valor string. Retorna os itens que contenham qualquer parte de um ou mais valores de cadeia de caracteres especificada.  <br/> |
 |Doesn't contain any of  <br/> |`-property:value`  <br/> `NOT property:value`  <br/> |Usado com condições para propriedades que especificam um valor de cadeia de caracteres. Retorna itens que não contêm qualquer parte do valor da cadeia de caracteres especificada.  <br/> |
@@ -291,7 +291,7 @@ O exemplo retorna itens de email ou documentos que contêm a palavra-chave "rela
   
  **Sintaxe de consulta de pesquisa**
   
- `report???(c:c)??????(date<2016-04-01)??????(subjecttitle:"northwind")??????(-filetype="aspx")???`
+ `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype="aspx")`
   
  **Lógica de consulta de pesquisa**
   
@@ -342,7 +342,7 @@ O que é considerado o conteúdo que é compartilhado com pessoas fora da sua or
     
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>Use a propriedade ViewableByExternalUsers de problemas
 
-Enquanto o `ViewableByExternalUsers` propriedade representa o status de um documento ou site é compartilhado com usuários externos, existem algumas advertências para que essa propriedade faz e refletir doesn???t. Nos cenários a seguir, o valor do `ViewableByExternalUsers` propriedade não será atualizada e os resultados de uma consulta de pesquisa de conteúdo que usa essa propriedade podem ser inadequados. 
+Enquanto o `ViewableByExternalUsers` propriedade representa o status de um documento ou site é compartilhado com usuários externos, há algumas restrições para o que faz essa propriedade e não reflete. Nos cenários a seguir, o valor do `ViewableByExternalUsers` propriedade não será atualizada e os resultados de uma consulta de pesquisa de conteúdo que usa essa propriedade podem ser inadequados. 
   
 - Alterações de compartilhamento de diretiva, como desativar o compartilhamento externo para um site ou para a organização. A propriedade ainda mostrará documentos compartilhados anteriormente como sendo acessível externamente, mesmo que o acesso externo pode ter sido revogado.
     
@@ -358,9 +358,31 @@ Conforme explicado anteriormente, você pode usar o `SharedWithUsersOWSUser` pro
   
 Observe que os documentos devem ser compartilhados explicitamente com um usuário específico a serem retornadas nos resultados da pesquisa ao usar o `SharedWithUsersOWSUser` propriedade. Por exemplo, quando uma pessoa compartilha um documento em sua conta de OneDrive, eles tem a opção para compartilhá-lo com qualquer pessoa (dentro ou fora da organização), compartilhá-lo apenas com pessoas dentro da organização ou compartilhá-la com uma pessoa específica. Aqui está uma captura de tela da janela de **compartilhamento** no OneDrive, que mostra as três opções de compartilhamento. 
   
-![Somente os arquivos compartilhados com pessoas específicas serão retornados por uma consulta de searcj que usa a propriedade SharedWithUsersOWSUser](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Somente os arquivos compartilhados com pessoas específicas serão retornados por uma consulta de pesquisa que usa a propriedade SharedWithUsersOWSUser](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 Apenas os documentos que são compartilhados usando a terceira opção (compartilhada com **pessoas específicas**) serão retornados por uma consulta de pesquisa que usa a `SharedWithUsersOWSUser` propriedade. 
+
+## <a name="searching-for-skype-for-business-conversations"></a>Procurando Skype para conversas de negócios
+
+Você pode usar a seguinte consulta de palavra-chave para especificamente Procurar conteúdo em Skype para conversas de negócios:
+
+```
+kind:im
+```
+
+Observe que a consulta de pesquisa anterior também retornará chats de Teams da Microsoft. Para impedir isso, você pode restringir os resultados da pesquisa para incluir somente Skype para conversas de negócios usando a seguinte consulta de palavra-chave:
+
+```
+kind:im AND subject:conversation
+```
+
+A consulta de palavra-chave anterior exclui chats no Microsoft Teams porque Skype para conversas de negócios são salvos como mensagens de email com uma linha de assunto que começa com a palavra "Conversa".
+
+Para procurar Skype de conversas de negócios que ocorreram em um intervalo de data específica, use a seguinte consulta de palavra-chave:
+
+```
+kind:im AND subject:conversation AND (received=startdate..enddate)
+```
 
 ## <a name="search-tips-and-tricks"></a>Dicas e truques de pesquisa
 
@@ -378,4 +400,5 @@ Apenas os documentos que são compartilhados usando a terceira opção (comparti
     
 - Ao pesquisar uma propriedade, usar aspas duplas ("") se o valor de pesquisa consiste em várias palavras. Por exemplo `subject:budget Q1` retorna mensagens que contêm o **orçamento** na na linha de assunto e que contêm **T1** em qualquer lugar na mensagem ou em qualquer uma das propriedades de mensagem. Usando `subject:"budget Q1"` retorna todas as mensagens que contêm o **orçamento T1** em qualquer lugar na linha de assunto. 
     
-- Para excluir o conteúdo marcado com um determinado valor de propriedade de seus resultados de pesquisa, coloque um sinal de menos (-) antes do nome da propriedade. Por exemplo, `-from:"Sara Davis"` excluirá todas as mensagens enviadas por Sara Davis. 
+- Para excluir o conteúdo marcado com um determinado valor de propriedade de seus resultados de pesquisa, coloque um sinal de menos (-) antes do nome da propriedade. Por exemplo, `-from:"Sara Davis"` excluirá todas as mensagens enviadas por Sara Davis.
+- Você pode exportar itens com base no tipo de item. Por exemplo, para exportar Skype IM recived de mensagens por um usuário, use a sintaxe 'Tipo: IM'. Esta pesquisa consulta returen todas as mensagens IM. 
