@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5602963c-a1f2-4c21-afb9-f66cd7dca1f0
 description: Este artigo mostra como usar o Windows PowerShell para obter detalhes sobre os dispositivos em sua organização que você definiu para gerenciamento de dispositivos móveis para o Office 365.
-ms.openlocfilehash: 2e406d3583e7892531b7c74bef0db374672956c7
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 90ee59c5afed1cd260e13134299a7cb4f17dc5bc
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272526"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972313"
 ---
 # <a name="get-details-about-devices-managed-by-mobile-device-management-mdm-for-office-365"></a>Obter detalhes sobre os dispositivos gerenciados pelo Mobile Device Management (MDM) para o Office 365
 
@@ -62,12 +62,12 @@ Para obter mais informações sobre essas etapas, consulte [Connect to Office 36
     
 ### <a name="step-2-connect-to-your-office-365-subscription"></a>Etapa 2: conectar-se à sua assinatura do Office 365
 
-1. Em que o Windows Azure Active Directory módulo para Windows PowerShell, execute o seguinte comando.</br>  
+1. Em que o Windows Azure Active Directory módulo para Windows PowerShell, execute o seguinte comando.<br/>  
   `$UserCredential = Get-Credential`
 
 2. Na caixa de diálogo **Solicitação de credencial do Windows PowerShell** , digite o nome de usuário e a senha da sua conta de administrador global do Office 365 e clique em **Okey**.
     
-3. Execute o seguinte comando.</br>
+3. Execute o seguinte comando.<br/>
     `
   Connect-MsolService -Credential $UserCredential
   `
@@ -81,7 +81,7 @@ Para executar o script **Get-MsolUserDeviceComplianceStatus.ps1** , você precis
   
 1. Da sua área de trabalho do Windows, clique em **Iniciar**e, em seguida, digite o Windows PowerShell. Clique com botão direito **Do Windows PowerShell**e clique em **Executar como administrador**.
     
-2. Execute o seguinte comando.</br>
+2. Execute o seguinte comando.<br/>
   `Set-ExecutionPolicy RemoteSigned`
 
 3. Quando solicitado, digite `Y` e pressione Enter. 
@@ -90,7 +90,7 @@ Para executar o script **Get-MsolUserDeviceComplianceStatus.ps1** , você precis
 
 1. Abra o Módulo Microsoft Azure Active Directory para Windows PowerShell.
     
-2. Execute o seguinte comando.</br>
+2. Execute o seguinte comando.<br/>
   ```
   Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
   ```
@@ -101,7 +101,7 @@ Para obter mais exemplos, consulte [Get-MsolDevice](https://go.microsoft.com/fwl
 
 ### <a name="first-save-the-script-to-your-computer"></a>Primeiro, salve o script em seu computador
 
-1. Copie e cole o seguinte texto no bloco de notas.</br> 
+1. Copie e cole o seguinte texto no bloco de notas.<br/> 
   ```
   param (
       [PSObject[]]$users = @(),
@@ -166,21 +166,21 @@ Para obter mais exemplos, consulte [Get-MsolDevice](https://go.microsoft.com/fwl
   
   ```
 
-2. Salve-o como um arquivo de script do Windows PowerShell, usando a extensão de arquivo **. ps1**. </br>Exemplo:</br> `Get-MsolUserDeviceComplianceStatus.ps1`.
+2. Salve-o como um arquivo de script do Windows PowerShell, usando a extensão de arquivo **. ps1**. <br/>Exemplo:<br/> `Get-MsolUserDeviceComplianceStatus.ps1`.
     
 ### <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Execute o script para obter informações do dispositivo para uma conta de usuário único
 
 1. Abra o Módulo Microsoft Azure Active Directory para Windows PowerShell.
     
-2. Navegue até a pasta onde você salvou o script. Por exemplo, se você salvou às C:\PS-Scripts, você faria execute o seguinte comando.</br>
+2. Navegue até a pasta onde você salvou o script. Por exemplo, se você salvou às C:\PS-Scripts, você faria execute o seguinte comando.<br/>
     `cd C:\PS-Scripts`
 
-3. Execute o seguinte comando para identificar o usuário que você deseja obter os detalhes do dispositivo para. Este exemplo obtém detalhes para bar@example.com.</br>
+3. Execute o seguinte comando para identificar o usuário que você deseja obter os detalhes do dispositivo para. Este exemplo obtém detalhes para bar@example.com.<br/>
   ```
   $u = Get-MsolUser -UserPrincipalName bar@example.com
   ```
 
-4. Execute o seguinte comando para iniciar o script.</br>
+4. Execute o seguinte comando para iniciar o script.<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```
@@ -191,15 +191,15 @@ As informações são exportadas para sua área de trabalho do Windows como um a
 
 1. Abra o Módulo Microsoft Azure Active Directory para Windows PowerShell.
     
-2. Navegue até a pasta onde você salvou o script. Por exemplo, se você salvou às C:\PS-Scripts, você faria execute o seguinte comando.</br>
+2. Navegue até a pasta onde você salvou o script. Por exemplo, se você salvou às C:\PS-Scripts, você faria execute o seguinte comando.<br/>
   `cd C:\PS-Scripts`
 
-3. Execute o seguinte comando para identificar o grupo que você deseja obter os detalhes do dispositivo para. Este exemplo obtém detalhes para os usuários no grupo FinanceStaff.</br>
+3. Execute o seguinte comando para identificar o grupo que você deseja obter os detalhes do dispositivo para. Este exemplo obtém detalhes para os usuários no grupo FinanceStaff.<br/>
   ```
   $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_.ObjectId }
   ```
 
-4. Execute o seguinte comando para iniciar o script.</br>
+4. Execute o seguinte comando para iniciar o script.<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```

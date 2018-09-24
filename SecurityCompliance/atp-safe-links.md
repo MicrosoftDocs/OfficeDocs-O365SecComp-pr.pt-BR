@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: O recurso de Links seguros fornece verificação de tempo do clique de hiperlinks em documentos do Office e em mensagens de email. Use os links seguros para proteger sua organização contra ataques de phishing e outros.
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955453"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972343"
 ---
 # <a name="office-365-atp-safe-links"></a>Links seguros de ATP do Office 365
 
@@ -60,9 +60,9 @@ Em um alto nível, aqui está como a proteção de Links de seguros ATP funciona
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Como os Links de seguros ATP funciona com documentos do Office
 
-Em um alto nível, aqui está como proteção de Links de seguros ATP funciona para URLs em aplicativos do Office 365 ProPlus (versões atuais do OneNote, Word, Excel e PowerPoint no Windows ou Mac, Office apps em iOS ou dispositivos Android, o Visio no Windows e do Office Online):
+Em um alto nível, aqui está como proteção de Links de seguros ATP funciona para URLs em aplicativos do Office 365 ProPlus (versões atuais do Word, Excel e PowerPoint no Windows ou Mac, Office apps em iOS ou dispositivos Android, o Visio no Office Online, OneNote Online e o Windows):
   
-1. Pessoas instalou Office 365 ProPlus em seu computador, smartphone ou tablet.
+1. Pessoas instalou Office 365 ProPlus em seu computador, smartphone ou tablet. (Ou que estão usando o Office Online em seu navegador.)
     
 2. Um usuário abre uma Word, Excel, PowerPoint ou Visio e entra no Office 365 Enterprise usando a conta do trabalho ou da escola. O documento contém URLs.
     

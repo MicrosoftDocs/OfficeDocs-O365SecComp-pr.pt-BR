@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook em que os usuários da web pode relatar lixo eletrônico (spam) e golpes de phishing, usando opções de relatório de eletrônico interno. Você também pode informar a Microsoft se um email tenha sido incorretamente identificado como lixo eletrônico (spam).
-ms.openlocfilehash: daa63e3b68927d7c5684c588a79727ba5d08f480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002980"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972293"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Relatar lixo eletrônico e golpes de phishing no Outlook na web 
 
@@ -44,7 +44,7 @@ Para enviar uma mensagem de lixo eletrônico à Microsoft:
 
 Para enviar uma mensagem de golpes de phishing à Microsoft:
   
-1. Clique na mensagem de golpes de phishing, clique na seta ao lado de **lixo eletrônico**e clique em **Phishing** na barra de ferramentas. O Office 365 não bloquear o destinatário porque os remetentes das mensagens de golpes de phishing geralmente representar remetentes legítimos. Se você preferir, adicione o remetente à lista de remetentes bloqueados, seguindo as instruções no tópico [Bloquear ou permitir (configurações de lixo eletrônico)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicar um email é um esquema de phishing no Outlook na web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)</br>Como alternativa, do mouse em uma mensagem para exibir um menu e clique em **Marcar como Phishing**.</br>É possível denunciar uma mensagem de golpes de phishing da sua pasta de **caixa de entrada**, **Itens excluídos** ou **desorganização**. 
+1. Clique na mensagem de golpes de phishing, clique na seta ao lado de **lixo eletrônico**e clique em **Phishing** na barra de ferramentas. O Office 365 não bloquear o destinatário porque os remetentes das mensagens de golpes de phishing geralmente representar remetentes legítimos. Se você preferir, adicione o remetente à lista de remetentes bloqueados, seguindo as instruções no tópico [Bloquear ou permitir (configurações de lixo eletrônico)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicar um email é um esquema de phishing no Outlook na web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>Como alternativa, do mouse em uma mensagem para exibir um menu e clique em **Marcar como Phishing**.<br/>É possível denunciar uma mensagem de golpes de phishing da sua pasta de **caixa de entrada**, **Itens excluídos** ou **desorganização**. 
   
 2. Para algumas organizações, é aberta uma caixa de diálogo perguntando se você deseja enviar uma cópia do e-mail de golpes de phishing à Microsoft para análise. Clique em **relatório** para enviar a mensagem para a equipe de análise de Spam da Microsoft. Essa opção de relatórios está disponível atualmente para um número limitado de organizações; Você não pode ser solicitado a informar um esquema de phishing à Microsoft. 
     
@@ -52,7 +52,7 @@ Para enviar uma mensagem de golpes de phishing à Microsoft:
 
 Quando uma mensagem é identificada incorretamente como lixo eletrônico pelo Office 365, envie uma mensagem como "não é lixo eletrônico" para a Microsoft:
   
-1. Na pasta Lixo eletrônico, clique na mensagem e clique em **Não é lixo eletrônico** na barra de ferramentas. Isso move a mensagem para sua **caixa de entrada** e adiciona o remetente à sua lista de remetentes confiáveis.</br>Você pode também com o botão direito em uma mensagem na sua pasta de lixo eletrônico para exibir um menu e clique em **Marcar como não sendo lixo eletrônico**. 
+1. Na pasta Lixo eletrônico, clique na mensagem e clique em **Não é lixo eletrônico** na barra de ferramentas. Isso move a mensagem para sua **caixa de entrada** e adiciona o remetente à sua lista de remetentes confiáveis.<br/>Você pode também com o botão direito em uma mensagem na sua pasta de lixo eletrônico para exibir um menu e clique em **Marcar como não sendo lixo eletrônico**. 
   
 2. Uma caixa de diálogo será aberta perguntando se você deseja enviar uma cópia da mensagem de email não sendo lixo eletrônico à Microsoft para análise. Clique em **relatório** para enviar a mensagem para a equipe de análise de Spam da Microsoft.. 
     

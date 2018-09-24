@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Se sua organização envia muita de email em massa que está marcado como spam, você poderia obter bloqueado para envio de email com o Office 365. Leia este artigo para saber mais sobre por que isso acontece e o que você pode fazer sobre ele.
-ms.openlocfilehash: c5baf12b9b54e46e3863e33172cfb7339227e309
-ms.sourcegitcommit: 122646e570bb13e93d4fdc5090bdd25ed65d1997
+ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998970"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972243"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Como controlar spam de saída no Office 365
 
@@ -32,11 +32,11 @@ Pegamos Gerenciando spam de saída seriamente porque nossa é um serviço compar
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>O que significa a EOP para controlar o spam de saída 
 
-1. **Segregação de tráfego de saída em pools separados de IPs**. Todas as mensagens que os clientes enviam saídos através do serviço é verificada de spam. Se a mensagem de spam, ela é encaminhada pelo pool de entrega de risco alto. Este pool IP contém spam e notificações de status não entregues. Entrega ao destinatário pretendido não é garantida conforme muitos de terceiros não aceitará email porque a qualidade do email emite.</br></br>O tráfego a divisão desta forma garante que o email de qualidade inferior (spam, backscatter NDRs) não arrastar para baixo a reputação dos pools de emails de saída regular. O pool de alto risco geralmente tem reputação baixa em muitos receptores em torno da Internet, embora isso não seja universal. 
+1. **Segregação de tráfego de saída em pools separados de IPs**. Todas as mensagens que os clientes enviam saídos através do serviço é verificada de spam. Se a mensagem de spam, ela é encaminhada pelo pool de entrega de risco alto. Este pool IP contém spam e notificações de status não entregues. Entrega ao destinatário pretendido não é garantida conforme muitos de terceiros não aceitará email porque a qualidade do email emite.<br/><br/>O tráfego a divisão desta forma garante que o email de qualidade inferior (spam, backscatter NDRs) não arrastar para baixo a reputação dos pools de emails de saída regular. O pool de alto risco geralmente tem reputação baixa em muitos receptores em torno da Internet, embora isso não seja universal. 
 
 2. **Reputação de monitoramento do IP**. O Office 365 consultas vários 3º terceiros IP listas de bloqueio e gerará alertas se qualquer um dos nossos IPs saída estão listado neles. Isso permite reagir rapidamente quando spam causou nossa reputação a ser prejudicado. Quando um alerta é gerado, temos documentação interna externos quais etapas a serem executadas para obter removido da lista. 
 
-3. **Desabilitando das contas ofensivos quando eles enviam uma quantidade excessiva email marcada como spam**. Mesmo que podemos segregar os nossos e não spam em dois pools separados de IP de saída, as contas de email não podem enviar spam indefinidamente. Podemos monitorar quais contas estão enviando spam e se ele excede o limite de um, a conta seja bloqueada para envio de spam.</br></br>Uma única mensagem marcada como spam pode ser uma misclassification pelo mecanismo de spam e também conhecido como um falso positivo. Podemos enviá-la por meio do pool de alto risco dar-lhe uma chance de saindo; No entanto, um grande número de mensagens em um quadro de hora curta é indicar um problema e que ocorre, podemos bloquear a conta do envio de qualquer email mais. Há limites diferentes que existem para contas de email individuais, bem como aggregate para o locatário inteiro.
+3. **Desabilitando das contas ofensivos quando eles enviam uma quantidade excessiva email marcada como spam**. Mesmo que podemos segregar os nossos e não spam em dois pools separados de IP de saída, as contas de email não podem enviar spam indefinidamente. Podemos monitorar quais contas estão enviando spam e se ele excede o limite de um, a conta seja bloqueada para envio de spam.<br/><br/>Uma única mensagem marcada como spam pode ser uma misclassification pelo mecanismo de spam e também conhecido como um falso positivo. Podemos enviá-la por meio do pool de alto risco dar-lhe uma chance de saindo; No entanto, um grande número de mensagens em um quadro de hora curta é indicar um problema e que ocorre, podemos bloquear a conta do envio de qualquer email mais. Há limites diferentes que existem para contas de email individuais, bem como aggregate para o locatário inteiro.
 
 4. **Desabilitando das contas ofensivos quando eles enviam uma quantidade excessiva email no muito curto um período de tempo**. Além dos limites acima desse aparência para uma proporção de mensagens marcadas como spam, também há limites que bloqueiam contas quando atingirem um limite total, independentemente de estarem ou não as mensagens são marcadas como spam. O motivo pelo qual que esse limite existe é porque uma conta comprometida poderia enviem spam de dia zero que é perdida pelo filtro de spam. Como é difícil, se não impossível, às vezes dizer a diferença entre uma campanha de envio em massa legítima e uma campanha de spam em massa, esses limites ativar para limitar os danos potenciais.
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848081"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972303"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
@@ -118,7 +118,7 @@ Conforme você configurar ou editar uma política de Links de seguros ATP, verá
 |**Para esta política**|**Essa opção**|**Faça isto**|
 |:-----|:-----|:-----|
 |Padrão (depois de definidas, a política padrão se aplica a todas as pessoas na organização)  <br/> |**Bloquear as seguintes URLs** <br/> |Habilita sua organização tenha uma lista personalizada de URLs que são bloqueados automaticamente. Quando os usuários clicam uma URL nessa lista, ele será levado a uma [página de aviso](atp-safe-links-warning-pages.md) que explica por que a URL está bloqueada.<br/> Consulte [Configurar uma lista de URLs bloqueada personalizada usando Links de seguros ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md) para obter mais detalhes, como recém-adicionado suporte para até três asteriscos de caractere curinga (\*).  <br/> |
-|Padrão  <br/> |**O Office 365 ProPlus, Office para iOS e Android** <br/> |Quando essa opção é selecionada, Links confiáveis de ATP proteção é aplicada às URLs em documentos que estão no Office 365 ProPlus (Word, Excel e PowerPoint no Windows ou Mac OS), Office documentos abertos em iOS ou dispositivos com Android, 2016 do Visio no Windows e no Office Online (Word Online, on-line do PowerPoint, Excel Online e OneNote Online), fornecida que ao usuário tiver entrado no Office 365. </br></br>Se você vir **2016 do Office no Windows**, em seguida, as atualizações do recurso não atingiu seu ambiente do Office 365 ainda (e eles estão em breve). Até lá, proteção de Links de seguros ATP aplica-se a palavra 2016, 2016 do Excel, PowerPoint 2016 ou 2016 do Visio em execução no Windows.           |
+|Padrão  <br/> |**O Office 365 ProPlus, Office para iOS e Android** <br/> |Quando essa opção é selecionada, Links confiáveis de ATP proteção é aplicada às URLs em documentos que estão no Office 365 ProPlus (Word, Excel e PowerPoint no Windows ou Mac OS), Office documentos abertos em iOS ou dispositivos com Android, 2016 do Visio no Windows e no Office Online (Word Online, on-line do PowerPoint, Excel Online e OneNote Online), fornecida que ao usuário tiver entrado no Office 365. <br/><br/>Se você vir **2016 do Office no Windows**, em seguida, as atualizações do recurso não atingiu seu ambiente do Office 365 ainda (e eles estão em breve). Até lá, proteção de Links de seguros ATP aplica-se a palavra 2016, 2016 do Excel, PowerPoint 2016 ou 2016 do Visio em execução no Windows.           |
 |Padrão  <br/> |**Não rastrear quando os usuários clicam ATP Links de seguros** <br/> |Quando essa opção é selecionada, clique em dados para URLs em documentos do Word, Excel, PowerPoint e Visio não são armazenados.  <br/> |
 |Padrão  <br/> |**Não permita que os usuários clique nos Links de seguros de ATP para a URL original** <br/> |Quando essa opção é selecionada, os usuários não conseguir continuar após uma [página de aviso](atp-safe-links-warning-pages.md) para uma URL que é determinada por serem mal-intencionados.  <br/> |
 |Uma política criada para destinatários de email específicos  <br/> |**Desligado** <br/> |Não examina URLs em mensagens de email.  <br/> Permite que você defina uma regra de exceção, como uma regra que não verifica URLs em mensagens de email para um grupo específico de destinatários.  <br/> |

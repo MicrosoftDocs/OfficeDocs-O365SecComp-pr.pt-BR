@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Aprenda a habilitar o suplemento de mensagem de relatório para o Outlook e Outlook na web, para usuários individuais ou em toda sua organização.
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229993"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972263"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de relatório
 
@@ -40,8 +40,8 @@ Se você for um administrador do Exchange Online, você poderá habilitar o supl
     
 Depois que o suplemento está instalado e habilitado, você verá os ícones a seguir: 
 
-- No Outlook no ícone tem esta aparência: </br> ![Suplemento de mensagem ícone de relatório para o Outlook](media/OutlookReportMessageIcon.png)</br>
-- No Outlook Web App no ícone tem esta aparência:</br>![Outlook no ícone do suplemento de mensagem de relatório na Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- No Outlook no ícone tem esta aparência: <br/> ![Suplemento de mensagem ícone de relatório para o Outlook](media/OutlookReportMessageIcon.png)<br/>
+- No Outlook Web App no ícone tem esta aparência:<br/>![Outlook no ícone do suplemento de mensagem de relatório na Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 Como o próximo passo, Aprenda como [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).

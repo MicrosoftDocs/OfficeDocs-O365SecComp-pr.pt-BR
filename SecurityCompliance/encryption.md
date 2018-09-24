@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Com o Office 365, seu conteúdo é criptografado em repouso e em trânsito, usando o mais forte criptografia, protocolos e tecnologias disponíveis. Obtenha uma visão geral da criptografia no Office 365.
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524064"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972283"
 ---
 # <a name="encryption-in-office-365"></a>Criptografia no Office 365
 
@@ -70,7 +70,7 @@ Consulte os seguintes recursos para saber mais:
 |Configurar a criptografia para minha organização  <br/> |[Configure a criptografia no Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Exibir detalhes sobre certificados, tecnologias e os conjuntos de codificação TLS no Office 365  <br/> |[Detalhes técnicos sobre criptografia no Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Trabalhar com mensagens criptografadas em um dispositivo móvel  <br/> |[Visualizar mensagens criptografadas no seu dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Visualizar mensagens criptografadas no seu iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Criptografar um documento usando a proteção por senha  <br/></br>  Atualmente, a proteção por senha não é suportada no Office Online. Use as versões da área de trabalho do Word, Excel e PowerPoint para proteção por senha.           |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção de **proteção de adicionar** e, em seguida, consulte **Criptografar com senha** )  <br/> |
+|Criptografar um documento usando a proteção por senha  <br/><br/>  Atualmente, a proteção por senha não é suportada no Office Online. Use as versões da área de trabalho do Word, Excel e PowerPoint para proteção por senha.           |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção de **proteção de adicionar** e, em seguida, consulte **Criptografar com senha** )  <br/> |
 |Remover a criptografia de um documento  <br/> |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção **Remover a proteção** e, em seguida, consulte **Remover a criptografia de senha** )  <br/> |
    
 ## <a name="related-topics"></a>Tópicos relacionados

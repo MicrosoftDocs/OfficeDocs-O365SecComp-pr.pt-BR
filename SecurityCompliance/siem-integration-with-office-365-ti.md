@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Integre o servidor SIEM da sua organização com inteligência de ameaça do Office 365 e avançadas de proteção de ameaça com a API de gerenciamento de atividade do Office 365.
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782138"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972253"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integração de SIEM com inteligência de ameaça do Office 365 e proteção de ameaça avançadas
 
@@ -28,7 +28,7 @@ A API de gerenciamento de atividade do Office 365 recupera informações sobre o
 O servidor SIEM ou outro sistema semelhante deve sondar a carga de trabalho **audit.general** eventos de detecção de acesso. Para saber mais, consulte [Introdução ao APIs de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
 > [!IMPORTANT]
-> Você deve ser um administrador global do Office 365 ou ter a função de administrador de segurança atribuída no Centro de conformidade & segurança ao configurar a integração de SIEM com inteligência de ameaça do Office 365 e proteção avançada de ameaça.</br>Log de auditoria deve ser ativado para o seu ambiente do Office 365. Para obter ajuda com isso, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md).
+> Você deve ser um administrador global do Office 365 ou ter a função de administrador de segurança atribuída no Centro de conformidade & segurança ao configurar a integração de SIEM com inteligência de ameaça do Office 365 e proteção avançada de ameaça.<br/>Log de auditoria deve ser ativado para o seu ambiente do Office 365. Para obter ajuda com isso, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
