@@ -3,7 +3,7 @@ title: Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança d
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962967"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974681"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365
 
@@ -47,7 +47,11 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
 - Atividade do usuário e administração no Power BI para Office 365
     
 - Atividade do administrador e usuário em Teams da Microsoft
+
+- Atividade do usuário e administração no Dynamics 365
     
+- Atividade do administrador e usuário no Microsoft Flow
+
 - Atividade do usuário e administração no Yammer
     
 - Atividade do administrador e usuário em Stream da Microsoft
@@ -57,7 +61,7 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
 
 Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia a pesquisa do Office 365.
   
-- Você (ou outro administrador) deve primeiro ativar log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Para ativá-lo, basta clicar em * * Iniciar gravação atividade de administrador e usuário * * na página de **pesquisa de log de auditoria** na segurança &amp; Centro de conformidade. (Se você não vir este link, auditoria já foi ativado para sua organização.) Depois que você ativá-lo, será exibida uma mensagem que informa que o log de auditoria está sendo preparado e que você pode executar uma pesquisa de duas horas após a preparação estiver concluída. Você só precisa fazer isso vez. 
+- Você (ou outro administrador) deve primeiro ativar log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Para ativá-lo, basta clicar em **Iniciar gravação de usuário e a atividade de admin** na página de **pesquisa de log de auditoria** na segurança &amp; Centro de conformidade. (Se você não vir este link, auditoria já foi ativado para sua organização.) Depois que você ativá-lo, será exibida uma mensagem que informa que o log de auditoria está sendo preparado e que você pode executar uma pesquisa de duas horas após a preparação estiver concluída. Você só precisa fazer isso vez. 
     
     > [!NOTE]
     > Estamos no processo de ativação de auditoria, por padrão. Enquanto isso, você pode ativá-lo conforme descrito anteriormente. 
@@ -91,11 +95,20 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
     
 |**Serviço do Office 365**|**30 minutos**|**24 horas**|
 |:-----|:-----|:-----|
-|Azure Active Directory (admin events)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Proteção contra ameaças avançadas e inteligência de ameaça  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (admin events)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Prevenção contra perda de dados  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Descoberta Eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Segurança &amp; Centro de conformidade  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online e OneDrive for Business  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
