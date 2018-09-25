@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Sua organização pode ser necessário para reter os documentos por um período de tempo devido à conformidade, legal, ou outros requisitos de negócios. No entanto, se sua organização mantém documentos mais que o necessário, você cria riscos legais desnecessários. Com uma política de exclusão de documentos, você proativamente pode reduzir riscos, a exclusão de documentos em um site após um período de tempo específico — por exemplo, você pode excluir documentos em OneDrive dos usuários para negócios sites cinco anos depois que os documentos foram criados.
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013655"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002664"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Visão geral das políticas de exclusão de documentos
 
