@@ -1,5 +1,5 @@
 ---
-title: Revogar o email criptografado pelo Office 365 Message Encryption
+title: Revogar emails criptografados por criptografia de mensagens do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Como um administrador do Office 365, você pode revogar determinados emails que tenham sido criptografadas com o Office 365 Message Encryption.
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004244"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011817"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Revogação de e-mail de criptografia de mensagem do Office 365
 
@@ -62,7 +62,7 @@ Há várias maneiras para localizar a identificação de mensagem do email que v
 
 Quando você souber a identificação da mensagem de e-mail que você deseja revogar, você pode revogar o email usando o cmdlet Set-OMEMessageRevocation. 
 
-1. [Conecte-se ao Exchange Online usando o PowerShell remoto](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Conecte-se ao Exchange Online usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Execute o cmdlet Set-OMEMessageRevocation da seguinte maneira:
     
