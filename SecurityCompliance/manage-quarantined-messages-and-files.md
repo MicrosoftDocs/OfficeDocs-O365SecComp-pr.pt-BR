@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como um administrador, você pode exibir, liberar e relatar mensagens em quarentena falso positivas no Office 365. Você pode configurar políticas para que o Office 365 filtra mensagens e as envia para colocar em quarentena por vários motivos: porque eles foram identificados como spam, em massa, phishing, malware ou porque elas correspondem a uma regra de fluxo de email. '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839095"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018875"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -59,7 +59,7 @@ Além disso, como um administrador, você pode optar por filtrar todas as mensag
   
 Você também pode filtrar os resultados para localizar mensagens específicas. Para obter dicas, consulte [para filtrar os resultados e localizar arquivos e mensagens em quarentena](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) neste artigo. 
   
-Após localizar uma determinada mensagem em quarentena, clique na mensagem para exibir detalhes sobre ela e realizar ações, como liberar a mensagem à caixa de entrada de alguém.
+Após localizar uma determinada mensagem em quarentena, clique na mensagem para exibir detalhes sobre ela e realizar ações, como liberar a mensagem à caixa de correio de alguém.
   
 ## <a name="view-your-organizations-quarantined-files"></a>Exibir arquivos em quarentena de sua organização
 

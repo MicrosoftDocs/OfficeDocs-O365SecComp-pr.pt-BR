@@ -13,12 +13,12 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 description: 'Como um usuário do Office 365, você pode gerenciar suas próprias mensagens em quarentena de spam em uma das duas maneiras: respondendo a spams notificações enviadas diretamente à você (se seu administrador tiver configurado a esse recurso,) ou usando o recurso de quarentena de spam na segurança &amp; conformidade Centro.'
-ms.openlocfilehash: 08a0c5c35edb6c0829a1c7cafd7eaf9a41fa22ae
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 728273838d9e592e17638638258f481830bc0bbe
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523456"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018885"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Localizar e liberar mensagens em quarentena como um usuário no Office 365
 
@@ -44,7 +44,7 @@ Você pode exibir uma lista de todas as mensagens em quarentena, ou você pode p
     
 - Email identificado como email em massa.
     
-Após localizar uma determinada mensagem em quarentena, clique na mensagem para exibir detalhes sobre ela e realizar ações. Você pode liberar a mensagem para sua caixa de entrada, visualiza a mensagem, o download da mensagem ou excluir a mensagem da quarentena imediatamente.
+Após localizar uma determinada mensagem em quarentena, clique na mensagem para exibir detalhes sobre ela e realizar ações. Você pode liberar a mensagem para sua caixa de correio, visualiza a mensagem, o download da mensagem ou excluir a mensagem da quarentena imediatamente.
   
 > [!NOTE]
 > Você deve ter permissões de administrador no Office 365 para trabalhar com mensagens em quarentena que foram enviadas para outros usuários. 
@@ -94,7 +94,7 @@ Depois de selecionar uma mensagem, você verá um resumo das propriedades de men
     
 - **Lançados até:** Todos os endereços de email (se houver) para o qual a mensagem foi liberada. 
     
-- **Ainda não foi liberada em:** Todos os endereços de email (se houver) para o qual a mensagem não foi liberada. Você pode escolher **versão** se você deseja liberar a mensagem para sua caixa de entrada (mais informações sobre a liberação de mensagens na próxima seção). 
+- **Ainda não foi liberada em:** Todos os endereços de email (se houver) para o qual a mensagem não foi liberada. Você pode escolher **versão** se você deseja liberar a mensagem para sua caixa de correio (mais informações sobre a liberação de mensagens na próxima seção). 
     
 Você pode obter ainda mais detalhes sobre a mensagem, escolhendo uma das seguintes opções:
   
@@ -108,12 +108,12 @@ Depois de selecionar uma mensagem ou um grupo de mensagens, você tem várias op
   
 - Nada a fazer. Se você optar por fazer nada, a mensagem será excluída pelo Office 365 automaticamente após o vencimento. Lembre-se de que quando o Office 365 exclui uma mensagem da quarentena, você não é possível recuperá-lo.
     
-- **Liberar a mensagem** Libere uma mensagem em quarentena (ou conjunto de mensagens) para que a mensagem é enviada à caixa de entrada. Quando você solta uma mensagem, você tem a opção para relatar a mensagem à Microsoft para análise. 
+- **Liberar a mensagem** Libere uma mensagem em quarentena (ou conjunto de mensagens) para que a mensagem é enviada para sua caixa de correio. Quando você solta uma mensagem, você tem a opção para relatar a mensagem à Microsoft para análise. 
     
     Quando você opta por relatar uma mensagem, também chamada de relatar uma mensagem como um falso positivo, a mensagem é relatada à equipe de análise de Spam da Microsoft. A equipe avalia e analisa as mensagens de falsos positivas e, dependendo dos resultados da análise, as regras de filtro de conteúdo de spam de todo o serviço podem ser ajustadas para permitir que essas mensagens por meio.
     
 - **Baixar mensagem** Permite que você baixe a mensagem como um arquivo. eml. Depois de fazer o download de uma mensagem, você pode analisar o arquivo. eml usando seu cliente de email antes de liberar a mensagem. 
     
-- **Remover da quarentena** Exclui a mensagem imediatamente da quarentena sem liberar a mensagem para sua caixa de entrada. 
+- **Remover da quarentena** Exclui a mensagem imediatamente da quarentena sem liberar a mensagem para sua caixa de correio. 
     
 
