@@ -3,7 +3,6 @@ title: Log de interno do Office 365 para engenharia do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Uma explicação de log como interno para o Office 365 engenharia equipes funciona.
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523763"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038184"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Log interno de engenharia do Office 365
-Além de eventos e dados de log disponíveis para os clientes, há também um sistema de conjunto de dados de log interno que está disponível para os engenheiros do Office 365. Muitos tipos diferentes de dados de log são carregados dos servidores do Office 365 para um serviço chamado Cosmos de computação de dados interno, ganhar. A equipe de cada serviço carrega os logs de auditoria de seus respectivos servidores no banco de dados Cosmos para agregação de lista segura e análise. Essa transferência de dados ocorre via uma conexão FIPS 140-2-validado TLS em especificamente aprovadas portas e protocolos usando uma ferramenta de automação proprietárias chamada o carregador de dados do Office (ODL).
+Além de eventos e dados de log disponíveis para os clientes, há também um sistema de conjunto de dados de log interno que está disponível para os engenheiros do Office 365. Muitos tipos diferentes de dados de log são carregados dos servidores do Office 365 para um serviço chamado Cosmos de computação de dados interno, ganhar. A equipe de cada serviço carrega os logs de auditoria de seus respectivos servidores no banco de dados Cosmos para agregação de lista segura e análise. Essa transferência de dados ocorre via uma conexão FIPS 140-2-validado TLS em especificamente aprovadas portas e protocolos usando uma ferramenta de automação proprietárias chamada o carregador de dados do Office (ODL). As ferramentas usadas no Office 365 para coletar e registros de auditoria de processo não permita permanentes ou alterações irreversíveis original auditoria gravar o conteúdo ou ordenação de tempo.
 
 Equipes de serviço usam Cosmos como um repositório centralizado para conduzir uma análise de uso do aplicativo para medir o desempenho operacional e do sistema e procurar anormalidades e padrões que podem indicar problemas ou problemas de segurança. A equipe de cada serviço carrega uma linha de base dos logs em Cosmos, dependendo se o que procuram para analisar, que geralmente incluem:
 - Logs de eventos

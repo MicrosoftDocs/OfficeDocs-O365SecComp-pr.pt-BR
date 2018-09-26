@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: Você pode usar o Centro de descoberta eletrônica no SharePoint Online para pesquisar todas as OneDrive para sites corporativos em sua organização para determinadas palavras-chave, informações confidenciais e outros critérios de pesquisa. Cada usuário na sua organização é o proprietário de sua OneDrive para o site de negócios, que está localizado no conjunto de sites denominado https://domain-my.sharepoint.com. Por padrão, um administrador global do Office 365 ou um Gerenciador de conformidade não pode usar o Centro de descoberta eletrônica no SharePoint Online para pesquisar qualquer OneDrive para sites corporativos. Para pesquisar um OneDrive for Business site, administradores ou gerentes de conformidade deve ser um administrador de conjunto de sites que onedrive para o site de negócios.
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524077"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038084"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>Atribuir permissões de Descoberta Eletrônica a sites do OneDrive for Business
 

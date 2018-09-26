@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Usar a pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para pesquisar caixas de correio, sites do SharePoint Online e OneDrive para locais de negócios. '
-ms.openlocfilehash: 61c6c3933a75567acb04f793cb6815322fb3fada
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d480579db1c39d51d4fa8b0931106f135c5339d2
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523898"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038314"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Executar uma pesquisa de conteúdo com a segurança do Office 365 &amp; Centro de conformidade
 
@@ -77,7 +74,7 @@ Pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrôni
 ## <a name="create-a-search"></a>Criar uma pesquisa
 <a name="create"> </a>
 
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
     
@@ -287,7 +284,7 @@ Eis aqui para obter mais informações sobre as pesquisas de conteúdo.
 |**Número de caixas de correio**|**Tempo médio de pesquisa**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1,000  <br/> |45 segundos  <br/> |
+|1.000  <br/> |45 segundos  <br/> |
 |10.000  <br/> |4 minutos  <br/> |
 |25.000  <br/> |10 minutos  <br/> |
 |50.000  <br/> |20 minutos  <br/> |

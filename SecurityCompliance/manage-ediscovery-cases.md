@@ -8,19 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MBS150
-- MET150
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Usar a segurança do Office 365 &amp; Centro de conformidade para criar pausas de descoberta eletrônica e para acessar e gerenciar casos do eDiscovery em sua organização.
-ms.openlocfilehash: 5be66419e19f9703be5dde3fad82837bda249b72
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524040"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038324"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gerenciar casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade
 
@@ -78,7 +73,7 @@ A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônic
   
  **Para atribuir as permissões de Descoberta Eletrônica:**
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
     
@@ -99,7 +94,7 @@ A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônic
 
 A próxima etapa é criar um novo caso de descoberta eletrônica. Você deve ser um membro do grupo de função de gerenciadores de descoberta eletrônica para criar casos de eDiscovery. Como previamente explicado, depois de criar um novo caso na segurança &amp; Centro de conformidade, você (e outros membros maiusculas) será capazes de acesso que o mesmo caso no eDiscovery avançado, se você estiver organização tem uma assinatura do Office 365 E5.
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
     
@@ -121,7 +116,7 @@ A próxima etapa é criar um novo caso de descoberta eletrônica. Você deve ser
 
 Depois de criar um novo caso, a próxima etapa é adicionar membros ao caso. Anterior conforme explicado, somente os usuários que são membros do revisor ou grupos de função de gerente de descoberta eletrônica podem ser adicionados como um membro do caso. Observe que o gerente que criou o caso de descoberta eletrônica é adicionada automaticamente como um membro.
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique no nome do que você deseja adicionar membros ao caso.
     
@@ -160,7 +155,7 @@ Quando você cria uma pausa, você tem as seguintes opções para o conteúdo qu
   
 Para criar uma isenção para um caso de eDiscovery:
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja criar os bloqueios no. 
     
@@ -230,7 +225,7 @@ Mantenha as seguintes coisas em mente sobre estatísticas de espera:
 
 Depois de um caso de eDiscovery é criado e qualquer responsáveis relacionadas ao caso são colocados em espera, você pode criar e executar uma ou mais pesquisas de conteúdo associados ao caso. Conteúdo de pesquisas associadas a um caso não estão listadas na página de **pesquisa** na segurança &amp; Centro de conformidade. Isso significa que as pesquisas de conteúdo associadas a um caso só pode ser acessada por integrantes de maiusculas, que também são membros do grupo de função de Gerenciador de descoberta eletrônica. 
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja criar uma pesquisa de conteúdo no. 
     
@@ -308,7 +303,7 @@ Você pode exportar os resultados de um [exportar os resultados de uma única pe
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportar os resultados de uma única pesquisa associada a um caso
 <a name="singlesearch_1"> </a>
 
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja exportar a pesquisa de. 
     
@@ -339,7 +334,7 @@ Como uma alternativa ao exportar os resultados de uma única pesquisa de conteú
 > [!NOTE]
 > É possível exportar os resultados das pesquisas de várias se uma dessas pesquisas foi configurada para pesquisar todo o conteúdo maiusculas. Exporte somente os resultados das pesquisas de várias para pesquisas que estão associadas um caso de eDiscovery. Não é possível exportar os resultados das pesquisas de várias listados na página **pesquisa de conteúdo** na segurança &amp; Centro de conformidade. 
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja exportar a pesquisa de. 
     
@@ -399,7 +394,7 @@ Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, a
 > [!NOTE]
 > Para analisar dados de um usuário usando o eDiscovery avançado, o usuário (o de responsáveis dos dados) deve ser atribuído uma licença do Office 365 E5. Como alternativa, os usuários com uma licença do Office 365 E1 ou E3 podem ser atribuídos uma licença autônoma de eDiscovery avançado. Os administradores e oficiais de conformidade que estão atribuídos ao casos e usam o eDiscovery avançada para analisar dados não precisam de uma licença E5. 
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja preparar os resultados da pesquisa para análise no eDiscovery avançado. 
     
@@ -428,9 +423,9 @@ Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, a
 
 Depois de criar um caso na segurança &amp; Centro de conformidade, que você pode ir para o mesmo caso no eDiscovery avançado.
   
-Para ir até um caso de eDiscovery avançada:
+Para ir a um caso na Descoberta Eletrônica Avançada:
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja ir para a descoberta eletrônica avançada. 
     
@@ -468,7 +463,7 @@ Quando o caso legal ou investigação compatíveis com um caso de eDiscovery for
     
 Para fechar um caso:
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique no nome do caso que você deseja fechar.
     
@@ -497,7 +492,7 @@ Para fechar um caso:
 
 Quando você abre um caso novamente, qualquer isenções que estavam em vigor quando o caso foi fechado não restabelecidas automaticamente. Depois que o caso for reaberto, você precisará ir para a página de **espera** e ativar os bloqueios anteriores. Para ativar uma isenção, selecione-o e clique em **ativá-lo** no painel de detalhes. 
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique no nome do caso que você deseja abrir novamente.
     
@@ -526,9 +521,9 @@ Quando você abre um caso novamente, qualquer isenções que estavam em vigor qu
     
 |**Descrição de limite**|**Limite**|
 |:-----|:-----|
-|Número máximo de casos para uma organização  <br/> |Sem limite  <br/> |
+|Número máximo de casos para uma organização  <br/> |Sem limites  <br/> |
 |Número máximo de caso retenções para uma organização  <br/> |10.000  <br/> |
-|Número máximo de caixas de correio em uma isenção de ocorrência única  <br/> |1,000  <br/> |
+|Número máximo de caixas de correio em uma isenção de ocorrência única  <br/> |1.000  <br/> |
 |Número máximo de SharePoint e OneDrive para sites corporativos em uma isenção de ocorrência única  <br/> |100  <br/> |
    
 - **Que tal casos em que foram criados na página Gerenciamento de casos no eDiscovery avançado?** Você pode acessar uma lista de casos de eDiscovery avançado mais antigos clicando no link na parte inferior na página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade. No entanto, para fazer qualquer trabalho em um caso mais antigo, você precisa contatar o suporte do Office 365 e solicitar que o caso ser transferido para um novo caso de descoberta eletrônica na segurança &amp; Centro de conformidade. 

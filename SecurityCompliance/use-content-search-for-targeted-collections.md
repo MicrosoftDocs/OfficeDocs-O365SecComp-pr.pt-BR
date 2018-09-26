@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Usar a pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para executar os conjuntos de destino. Uma coleção direcionada significa que você está confiante de que os itens respondendo de forma a um caso ou itens privilegiados estão localizados em uma pasta de caixa de correio ou de site específica. Use o script neste artigo para obter o ID da pasta ou o caminho para as pastas de caixa de correio ou de site específicos que você deseja pesquisar.
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523578"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038294"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para conjuntos de destino
 
@@ -210,7 +208,7 @@ Depois de executar o script para coletar a uma lista de IDs de pasta ou caminhos
 > [!NOTE]
 > Usando o `path` propriedade pesquisar OneDrive locais não devolvem arquivos de mídia, como arquivos. png,. wav ou. TIFF, nos resultados da pesquisa. 
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando a conta e as credenciais usadas para executar o script na etapa 1.
     

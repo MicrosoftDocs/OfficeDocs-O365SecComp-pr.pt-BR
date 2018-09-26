@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Saiba como preparar os resultados de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para análise adicional com a ferramenta de descoberta eletrônica avançado.
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524725"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038304"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365
 
@@ -49,7 +47,7 @@ Após uma pesquisa que está associado a um caso de descoberta eletrônica no Of
 
 Você pode preparar os resultados de uma pesquisa que está associado a um caso de eDiscovery. Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, os dados são carregados e temporariamente armazenados em uma área de armazenamento do Windows Azure exclusiva em nuvem da Microsoft. É nesse momento que a funcionalidade de OCR extrai o texto da imagens nos resultados da pesquisa. Em [etapa 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), esse texto e a pesquisa de outra dados dos resultados são carregados ao caso no eDiscovery avançado.
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja preparar os resultados da pesquisa para análise no eDiscovery avançado. 
     
@@ -82,11 +80,11 @@ Quando a preparação for concluída, a próxima etapa é ir para descoberta ele
 > [!NOTE]
 > O tempo que leva para os dados a partir de segurança &amp; Centro de conformidade esteja disponível para adicionar a um caso de eDiscovery avançado varia, dependendo do tamanho dos resultados da pesquisa de descoberta eletrônica. 
   
-1. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery** para exibir a lista de ocorrências em sua organização. 
+1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
 2. Clique em **Abrir** , ao lado do caso em que você deseja carregar dados no eDiscovery avançado. 
     
-3. Na página **inicial** para o caso, clique em **Avançado de eDiscovery**. 
+3. Na página **Início** do caso, clique em **Descoberta Eletrônica Avançada**. 
     
     ![Clique em Alternar para descoberta eletrônica avançada para abrir o caso no eDiscovery avançado](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

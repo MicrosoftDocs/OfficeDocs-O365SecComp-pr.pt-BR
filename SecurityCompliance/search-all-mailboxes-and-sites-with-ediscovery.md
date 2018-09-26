@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: Na Central de descoberta eletrônica no Office 365, você pode pesquisar todas as caixas de correio do Exchange Online, sites do SharePoint Online e OneDrive para sites corporativos em uma pesquisa de descoberta eletrônica único. Para pesquisar todas as fontes de conteúdo na organização, um gerente de descoberta eletrônica deve ter as permissões de descoberta eletrônica apropriado para cada fonte de conteúdo.
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523896"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038094"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>Pesquisar todas as caixas de correio e sites usando o Centro de Descoberta Eletrônica
 

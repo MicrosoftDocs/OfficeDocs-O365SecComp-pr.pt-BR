@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Aprenda como pesquisar o log de auditoria do Office 365 para eventos que são registrados quando os administradores de conformidade executam tarefas de casos de pesquisa de conteúdo e descoberta eletrônica na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524159"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038344"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Procure atividades de descoberta eletrônica no log de auditoria do Office 365
 
@@ -43,7 +41,7 @@ Para obter mais informações sobre como pesquisar no log de auditoria do Office
 
 Atualmente, você precisará fazer algumas coisas específicas para exibir as atividades de descoberta eletrônica no log de auditoria do Office 365. Aqui está como.
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
     

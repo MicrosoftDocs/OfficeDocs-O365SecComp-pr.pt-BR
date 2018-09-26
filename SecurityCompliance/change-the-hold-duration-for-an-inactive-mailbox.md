@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Depois que uma caixa de correio do Office 365 é feita inativa, você pode alterar a duração da retenção ou política de retenção do Office 365 atribuído à caixa de correio inativa. A duração de espera define quanto tempo os itens na pasta são mantidos itens recuperáveis.
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524091"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038054"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Alterar a duração de espera para uma caixa de correio inativa no Office 365
 
@@ -35,7 +33,7 @@ Uma caixa de correio inativa é usada para reter o email de um antigo do funcion
     
   - [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Conecte-se à segurança do Office 365 &amp; PowerShell do Centro de conformidade](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - Observe que retém associado a casos de eDiscovery são infinitas isenções, que significa que não há nenhuma duração de espera pode ser alterada. Itens são mantidos indefinidamente ou até que a suspensão seja removida e a caixa de correio inativa é excluída.
     

@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Os administradores podem importar dados de terceiros de plataformas de mídia social, as plataformas de mensagens instantâneas e plataformas de colaboração de documento para caixas de correio em sua organização do Office 365. Isso permite arquivar dados de fontes de dados, Twitter e Facebook no Office 365. Em seguida, você pode appply recursos de conformidade do Office 365 (por exemplo, retenção legal, pesquisa de conteúdo e políticas de retenção) aos dados de terceiros.
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827085"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038104"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Arquivamento de dados de terceiros no Office 365
 

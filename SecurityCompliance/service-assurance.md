@@ -9,17 +9,16 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - MOE150
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Baixar auditorias de terceiros, descubra como Microsoft mantém os dados do cliente seguros e saber como você pode estar em conformidade com ISO, HIPAA, FINRA e FedRAMP quando você usa o Office 365.
-ms.openlocfilehash: eeb1ac1c22bfdd0063c5e1dda3515e52c1bc8d80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 77fdc042639fb30d2c222148f3eea9f0e6470856
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523967"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038144"
 ---
 # <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>Pessoal assurance no Office 365 Security &amp; Centro de conformidade
 
@@ -54,7 +53,7 @@ Você também pode descobrir como o Office 365 pode ajudar os clientes a conform
   
 Garantia de serviço pode ser acessada usando a segurança &amp; Centro de conformidade. Aqui está como obter para lá.
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola. 
     

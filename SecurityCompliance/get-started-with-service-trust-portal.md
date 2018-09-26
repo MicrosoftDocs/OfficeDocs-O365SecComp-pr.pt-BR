@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para relatórios de conformidade a normas do Office 365, Windows Azure e Dynamics 365 Online, para ver as auditorias de terceiros, descubra como Microsoft mantém os dados do cliente seguros, e como você pode ser compatível com ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando você usa esses serviços online.
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523897"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038214"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao Portal de confiança de serviço da Microsoft
 
@@ -69,7 +70,7 @@ Conteúdo e recursos STP são acessíveis a partir do menu principal, mostrado a
 
 O **Portal do serviço confiar** link leva você para a home page de STP, que inclui um What's New seção para o STP e o Gerenciador de conformidade que fornece detalhes sobre as atualizações mais recentes. 
   
-### <a name="compliance-manager"></a>Gerenciador de Conformidade
+### <a name="compliance-manager"></a>Gerente de Conformidade
 
 Use o [Gerenciador de conformidade para ajudar a atender aos requisitos normativos ao usar os serviços de nuvem da Microsoft e proteção de dados de uso](https://support.office.com/article/429e686f-d8a6-455e-a2b6-3791d763f000) para ajudar a atender a requisitos normativos e proteção de dados ao usar os serviços de nuvem da Microsoft. 
   
@@ -121,26 +122,26 @@ Funções administrativas que estão disponíveis somente para a conta de admini
   
 ### <a name="search"></a>Pesquisar
 
-![Portal de confiança do serviço - campo de entrada de pesquisa](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Portal de Confiança do Serviço – campo de entrada de Pesquisa](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Clique na Lupa no canto superior direito da página para expandir o campo de entrada de pesquisa, digite os termos de pesquisa e pressione Enter. O controle de pesquisa será exibida, com o termo de pesquisa no campo de entrada do painel de pesquisa, e os resultados da pesquisa serão exibidos abaixo.
+Clique na lupa no canto superior direito da página para expandir o campo de entrada de Pesquisa, digite os termos da pesquisa e pressione Enter. O controle de pesquisa exibirá o termo de pesquisa no campo de entrada do painel de pesquisa e os resultados da pesquisa aparecerão abaixo.
   
-Por padrão, a pesquisa retorna resultados de documento, e você pode usar as listas suspensas filtrar por para refinar a lista de documentos exibidos, para adicionar ou remover os resultados da pesquisa da exibição. Você pode usar vários atributos de filtro ao mesmo tempo para reduzir os documentos devolvidos aos serviços de nuvem específico, categorias de conformidade ou regiões do mundo ou setores práticas de segurança. Clique no link do nome do documento para baixar o documento.
+Por padrão, a Pesquisa retorna resultados de Documentos e você pode usar os Filtros nas listas suspensas para refinar a lista de documentos exibidos, para adicionar ou remover resultados de pesquisa no modo de exibição. É possível usar vários atributos de filtro ao mesmo tempo para restringir os documentos retornados para o serviços em nuvem específico, categorias de práticas de conformidade ou segurança, regiões do mundo ou setores. Clique no link do nome do documento para baixar o documento.
   
-![Portal de confiança do serviço - pesquisa em documentos com filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portal de Confiança do Serviço – pesquisa em documentos com filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Clique no link do Gerenciador de conformidade para exibir resultados de pesquisa para controles de avaliação do Gerenciador de conformidade. Os resultados da pesquisa listados mostram a data de avaliação foi criada, o nome da avaliação de agrupamento, o serviço de nuvem aplicável, e se os controles estiverem da Microsoft ou gerenciados pelo cliente.
   
-![Portal de confiança do serviço - pesquisa nos controles do Gerenciador de conformidade](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portal de Confiança do Serviço – pesquisa em controles de gerenciamento de conformidade](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Portal de confiança do serviço de relatórios e documentos estão disponíveis para download para pelo menos doze meses após a publicação ou até uma nova versão do documento se tornar disponível. 
+> Os relatórios e documentos do Portal de Confiança do Serviço ficam disponíveis para baixar durante pelo menos doze meses após a publicação ou até uma nova versão do documento ficar disponível. 
   
 ## <a name="localization-support"></a>Suporte de localização
 
-Portal de confiança do serviço permite que você exiba o conteúdo da página em diferentes idiomas. Para alterar o idioma da página, clique no ícone de globo no canto inferior esquerdo da página e selecione o idioma de sua escolha. 
+O Portal de Confiança do Serviço permite visualizar o conteúdo da página em diferentes idiomas. Para alterar o idioma da página, clique no ícone de globo no canto inferior esquerdo da página e selecione o idioma. 
   
-![Portal de confiança do serviço - localizados opções de conteúdo](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portal de Confiança do Serviço – opções de conteúdo localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Comentários
 

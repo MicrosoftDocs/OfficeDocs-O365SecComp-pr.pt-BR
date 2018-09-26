@@ -8,18 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para localizar rapidamente email nas caixas de correio do Exchange, documentos em sites do SharePoint e locais de OneDrive e conversas em Skype para negócios de mensagens instantâneas.
-ms.openlocfilehash: b9595f66633cca762ea74eaa9402f50ec08c2d7c
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229973"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038224"
 ---
 # <a name="search-for-content-in-office-365"></a>Procurar conteúdo no Office 365
 

@@ -1,5 +1,5 @@
 ---
-title: Investigar itens parcialmente indexados na Descoberta eletrônica do Office 365
+title: Investigar itens parcialmente indexados na Descoberta Eletrônica do Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,19 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Parcialmente indexados itens (também chamada não indexada itens) são itens de caixa de correio do Exchange e documentos no SharePoint e OneDrive sites que, por algum motivo não foram completamente indexado para pesquisa de conteúdo. Neste artigo, você pode Saiba por que os itens não podem ser indexados para pesquisa e são retornados como itens indexados parcialmente, identificar erros de pesquisa para itens indexados parcialmente e usar um script do PowerShell para determinar a exposição da sua organização para emails parcialmente indexados itens.
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524602"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038074"
 ---
-# <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar itens parcialmente indexados na Descoberta eletrônica do Office 365
+# <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar itens parcialmente indexados na Descoberta Eletrônica do Office 365
 
 Uma pesquisa de conteúdo que você executar a partir de segurança do Office 365 &amp; Centro de conformidade inclui automaticamente itens indexados parcialmente nos resultados da pesquisa estimados quando você executa uma pesquisa. Itens indexados parcialmente são itens de caixa de correio do Exchange e documentos no SharePoint e OneDrive para sites corporativos que, por algum motivo, não foram completamente indexadas pela pesquisa. A maioria das mensagens de email e documentos do site são indexados com êxito porque eles ficarem dentro dos [limites de indexação para mensagens de email](limits-for-content-search.md#indexinglimits). No entanto, alguns itens podem exceder esses limites de indexação e serão indexados parcialmente. Aqui estão os outros motivos por que os itens não podem ser indexados para pesquisa e são retornados como itens indexados parcialmente quando você executa uma pesquisa de conteúdo:
   

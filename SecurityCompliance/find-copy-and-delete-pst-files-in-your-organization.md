@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use a ferramenta de conjunto de PST do Microsoft para pesquisar a rede da sua organização para fazer um inventário dos arquivos PST que estão espalhados por toda a sua organização. Depois de localizar arquivos PST, você pode usar a ferramenta de conjunto de PST para copiá-los em um local central para importá-los para o Office 365.
-ms.openlocfilehash: 183ab968b894c824f2b23c08e98e671ef85316cc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524001"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038124"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar a ferramenta de conjunto de PST para localizar, copiar e excluir arquivos PST em sua organização
 

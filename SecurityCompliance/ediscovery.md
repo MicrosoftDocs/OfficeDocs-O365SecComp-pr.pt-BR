@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: O Office 365 oferece diversas ferramentas de eDiscovery diferentes que você pode usar para pesquisar e reter conteúdo encontrado em locais diferentes, como caixas postais do Exchange, SharePoint e do OneDrive for Business sites, grupos de Office 365 e Skype para conversas de negócios.
-ms.openlocfilehash: 0e458e5b2ba83861e7b715ec66a30695045b2e57
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f137454291bcdcdae6f0c61e2639b223a3e310a8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524456"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038234"
 ---
 # <a name="ediscovery-in-office-365"></a>Descoberta eletrônica no Office 365
 

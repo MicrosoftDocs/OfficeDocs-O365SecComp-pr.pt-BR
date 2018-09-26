@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
-- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Use o script do Windows PowerShell neste artigo para clonar rapidamente uma pesquisa de conteúdo existente na segurança &amp; pesquisa Compliane Center. Quando um você clonar uma pesquisa, uma nova pesquisa (com um novo nome) é criada que contém as mesmas propriedades que a pesquisa original. Em seguida, você pode editar a nova pesquisa (alterando a consulta de palavra-chave ou o intervalo de datas) e, em seguida, executá-lo.
-ms.openlocfilehash: a4f801e3de281e8caf8aeb7d1c2bd48f0facb77c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523927"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038044"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Como clonar uma pesquisa de conteúdo de segurança do Office 365 &amp; Centro de conformidade
 

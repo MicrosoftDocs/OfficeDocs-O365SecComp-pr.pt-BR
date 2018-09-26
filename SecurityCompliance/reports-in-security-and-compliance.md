@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.AuditingHelp
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Usar a segurança do Office 365 &amp; relatórios do Centro de conformidade para obter vários relatórios para sua organização do SharePoint Online e o Exchange Online, além do Azure Active Directory.  '
-ms.openlocfilehash: 0b633583e14a18c7cf579d10462cf41714397812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523535"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038334"
 ---
 # <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Relatórios de segurança do Office 365 &amp; Centro de conformidade
 
@@ -41,7 +38,7 @@ Além disso, você teria a ser atribuído à função de prevenção de perda de
   
  **Para abrir a página de relatórios do modo de exibição na segurança &amp; Centro de conformidade:**
   
-1. Vá para [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
+1. Acesse [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
 2. Entrar no Office 365 usando as credenciais para uma conta de usuário em sua organização do Office 365.
     
