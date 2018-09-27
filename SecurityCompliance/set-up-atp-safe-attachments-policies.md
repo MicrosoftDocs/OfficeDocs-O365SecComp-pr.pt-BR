@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Defina políticas de anexos seguros para proteger sua organização contra arquivos maliciosos no email.
-ms.openlocfilehash: 03fb0b62d37dc628241a1108b4b256290c23509b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523963"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092937"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos do Office 365 ATP seguros
 
@@ -32,7 +32,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
 3. [Saiba mais sobre as opções de política de anexos de seguros ATP](#learn-about-atp-safe-attachments-policy-options)
     
-## <a name="review-the-prerequisites"></a>Revise os pré-requisitos
+## <a name="step-1-review-the-prerequisites"></a>Etapa 1: Revisar os pré-requisitos
 
 - Certifique-se de que sua organização tenha [A proteção de ameaça avançadas do Office 365](office-365-atp.md).
     
@@ -42,9 +42,10 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
-## <a name="set-up-an-atp-safe-attachments-policy"></a>Configurar uma política de anexos de seguros ATP
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Etapa 2: Configurar uma política de anexos de seguros ATP (ou editar uma)
 
-Você pode configurar uma política de anexos de seguros ATP usando a segurança do Office 365 &amp; Centro de conformidade ou centro de administração do Exchange (EAC). **é recomendável usar a segurança do Office 365 &amp; Centro de conformidade**. 
+> [!TIP]
+> Você pode configurar uma política de anexos de seguros ATP usando a segurança do Office 365 &amp; Centro de conformidade ou centro de administração do Exchange (EAC). **é recomendável usar a segurança do Office 365 &amp; Centro de conformidade**. 
   
 1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -58,27 +59,27 @@ Você pode configurar uma política de anexos de seguros ATP usando a segurança
     
     **Exemplo:** Para configurar uma política denominada "sem atrasos", o que fornece mensagens de todos os participantes imediatamente e, em seguida, anexa novamente anexos depois que eles são verificados, você pode especificar as configurações a seguir: 
     
-  - Na caixa **nome** , digite sem atrasos.
+      - Na caixa **nome** , digite sem atrasos.
     
-  - Na caixa **Descrição** , digite uma descrição like, oferece mensagens imediatamente e anexos anexa novamente após a verificação.
+      - Na caixa **Descrição** , digite uma descrição like, oferece mensagens imediatamente e anexos anexa novamente após a verificação.
     
-  - Na seção de resposta, escolha a opção de **Entrega dinâmico** . ([Saiba mais sobre entrega dinâmica e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md)).
+      - Na seção de resposta, escolha a opção de **Entrega dinâmico** . ([Saiba mais sobre entrega dinâmica e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md)).
     
-  - Na seção **Redirecionar anexo** , selecione a opção para habilitar o redirecionamento e digite o endereço de email do administrador global, administrador de segurança ou analista de segurança que será investigar anexos mal-intencionado seu Office 365. 
+      - Na seção **Redirecionar anexo** , selecione a opção para habilitar o redirecionamento e digite o endereço de email do administrador global, administrador de segurança ou analista de segurança que será investigar anexos mal-intencionado seu Office 365. 
     
-  - Na seção **Aplicada** , escolha **o domínio do destinatário é**e, em seguida, selecione seu domínio. Escolha **Adicionar**e escolha **Okey**.
+      - Na seção **Aplicada** , escolha **o domínio do destinatário é**e, em seguida, selecione seu domínio. Escolha **Adicionar**e escolha **Okey**.
     
 6. Escolha **Salvar**.
     
 Considere configurar várias políticas de anexos seguros de ATP para sua organização. Essas diretivas serão aplicadas na ordem em que são listados na página **ATP anexos de seguros** . Depois que uma política foi definida ou editada, permitir que pelo menos 30 minutos para as políticas entrem em vigor em toda a data centers da Microsoft. 
   
-## <a name="learn-about-atp-safe-attachments-policy-options"></a>Saiba mais sobre as opções de política de anexos de seguros ATP
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Etapa 3: Aprenda sobre as opções de política de anexos de seguros ATP
 
 Como configurar suas políticas de anexos de seguros ATP, você escolher entre várias opções, incluindo o Monitor, bloquear, substituir, entrega dinâmico e assim por diante. Caso você esteja se perguntando sobre o que fazer essas opções, a tabela a seguir resume cada e seu efeito.
   
 |**Opção**|**Efeito**|**Uso quando você deseja:**|
 |:-----|:-----|:-----|
-|**Desligado** <br/> |Não examina anexos de malware  <br/> Não atrasar a entrega da mensagem  <br/> |Desativar a verificação para remetentes internos, scanners, faxes ou hosts inteligentes que somente enviará conhecidos, boa anexos  <br/> Evitar atrasos desnecessários no roteamento de email interno  <br/> > [!IMPORTANT]> Essa opção não é recomendada para a maioria dos usuários. Permite que você desative a verificação de anexos seguros de ATP para um pequeno grupo de remetentes internos.           |
+|**Desligado** <br/> |Não examina anexos de malware  <br/> Não atrasar a entrega da mensagem  <br/> |Desativar a verificação para remetentes internos, scanners, faxes ou hosts inteligentes que somente enviará conhecidos, boa anexos  <br/> Evitar atrasos desnecessários no roteamento de email interno  <br/> **Essa opção não é recomendada para a maioria dos usuários. Permite que você desative a verificação de anexos seguros de ATP para um pequeno grupo de remetentes internos.**           |
 |**Monitorar** <br/> |Entrega de mensagens com anexos e, em seguida, controla o que acontece com malware detectado  <br/> |Consulte onde malware detectado vai em sua organização  <br/> |
 |**Bloquear** <br/> |Impede que as mensagens com anexos de malware detectado do prosseguir  <br/> Envia mensagens com malware detectado para [quarentena no Office 365](manage-quarantined-messages-and-files.md) onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> Bloqueia as mensagens futuras e anexos automaticamente  <br/> |Proteger sua organização contra ataques repetidas usando os mesmo anexos de malware  <br/> |
 |**Substituir** <br/> |Remove detectado malware de anexos  <br/> Notifica os destinatários que anexos foram removidos  <br/> Envia mensagens com malware detectado para [quarentena no Office 365](manage-quarantined-messages-and-files.md) onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> |Aumentar a visibilidade para destinatários que anexos foram removidos por causa de malware detectado  <br/> |

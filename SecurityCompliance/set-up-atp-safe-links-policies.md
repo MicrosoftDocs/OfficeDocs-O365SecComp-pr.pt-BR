@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972303"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092947"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
 [Links de seguros ATP](atp-safe-links.md) , um recurso de [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) pode ajudar a proteger sua organização contra mal-intencionado links usados em phishing e outros ataques. Se você tiver o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md), você pode configurar políticas de Links de seguros ATP para ajudar a garantir que, quando as pessoas clicarem endereços da web (URLs), sua organização seja protegida. Suas políticas de Links de seguros ATP podem ser configuradas para examinar URLs em email e em documentos do Office.
   
-Novos recursos são adicionados constantemente a Links de seguros ATP:
-  
-- No de 2017 outubro tardia, proteção de Links de seguros ATP é estendida para aplicar ao URLs em email, bem como as URLs em documentos do Office 365 ProPlus, como Word, Excel, PowerPoint no Windows, iOS e dispositivos com Android e arquivos do Visio no Windows.
-    
-- Iniciando no de 2018 de março, proteção de Links de seguros ATP é estendida para aplicar a emails enviados entre pessoas em uma organização.
-    
-- Proteção de Links de seguros ATP a partir do final de 2018 de março, é estendida para aplicar a URLs no Office Online (on-line do Word, Excel Online, on-line do PowerPoint e OneNote Online) e Office 365 ProPlus no Mac OS.
-    
-- Iniciando no maio de 2018, [páginas de aviso](atp-safe-links-warning-pages.md) são atualizados com um novo esquema de cores, mais detalhes e a capacidade para continuar a um site apesar das recomendações de determinado. 
-
-Como os novos recursos são adicionados, você pode precisar fazer ajustes em suas políticas de Links de seguros ATP existentes.
+[Novos recursos são adicionados constantemente aos Links de ATP seguros](atp-safe-links.md#new-features-added-to-atp-safe-links). Como os novos recursos são adicionados, você pode precisar fazer ajustes em suas políticas de Links de seguros ATP existentes.
 
 ## <a name="what-to-do"></a>O que fazer 
   
@@ -41,11 +31,11 @@ Como os novos recursos são adicionados, você pode precisar fazer ajustes em su
     
 2. [Revisão e editar a política de Links de seguros ATP padrão que se aplica a todos](#define-an-atp-safe-links-policy-that-applies-to-everyone). Por exemplo, você pode [configurar sua lista de URLs bloqueada personalizada para Links de ATP seguros](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Adicionar uma política para destinatários de email específicos](#add-a-policy-for-specific-email-recipients), inclusive [Configurar a lista de URLs sua personalizada "Não regravação" para Links de ATP seguros](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+3. [Adicionar ou editar políticas para destinatários de email específicos](#add-a-policy-for-specific-email-recipients), inclusive [Configurar a lista de URLs sua personalizada "Não regravação" para Links de ATP seguros](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
 4. [Saiba mais sobre as opções de política de Links de seguros ATP](#learn-about-atp-safe-links-policy-options) (neste artigo), incluindo configurações para alterações recentes
     
-## <a name="review-the-prerequisites"></a>Revise os pré-requisitos
+## <a name="step-1-review-the-prerequisites"></a>Etapa 1: Revisar os pré-requisitos
 
 - Certifique-se de que sua organização tenha [A proteção de ameaça avançadas do Office 365](office-365-atp.md).
     
@@ -57,9 +47,12 @@ Como os novos recursos são adicionados, você pode precisar fazer ajustes em su
     
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>Definir uma política de Links de seguros ATP que se aplica a todos
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Etapa 2: Definir (ou revisar) a política de Links de seguros ATP que se aplica a todos
 
-Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. Você pode editar sua política em ambos o Security &amp; Centro de conformidade ou centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
+Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. 
+
+> [!TIP]
+> Você pode editar sua política em ambos o Security &amp; Centro de conformidade ou centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -75,9 +68,12 @@ Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, vo
     
 6. Escolha **Salvar**.
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>Adicionar uma diretiva para os destinatários de email específicos
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Etapa 3: Adicionar (ou editar) diretivas de Links de seguros ATP que se aplicam aos destinatários de email específicos
 
-Depois de revisar a política para todos os usuários, considere a possibilidade de definição de políticas adicionais para grupos específicos de destinatários de email. Isso permite que você especifique exceções à sua política padrão. Você pode adicionar políticas usando qualquer um da segurança &amp; Centro de conformidade (recomendado) ou o Centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
+Depois de revisar a política de Links de seguros ATP para todos os usuários, considere a possibilidade de definição de políticas adicionais para grupos específicos de destinatários de email. Isso permite que você especifique exceções à sua política padrão. 
+
+> [!TIP]
+> Você pode adicionar políticas usando qualquer um da segurança &amp; Centro de conformidade (recomendado) ou o Centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -111,9 +107,12 @@ Depois de revisar a política para todos os usuários, considere a possibilidade
     
 6. Escolha **Salvar**.
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>Saiba mais sobre as opções de política de Links de seguros ATP
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>Etapa 5: Saiba mais sobre as opções de política de Links de seguros ATP
 
-Conforme você configurar ou editar uma política de Links de seguros ATP, verá diversas opções disponíveis. Caso você esteja se perguntando quais são essas opções, a tabela a seguir descreve cada um deles e seu efeito. Observe que há dois tipos principais de políticas para definir ou editar: uma política padrão que se aplica a todas as pessoas e políticas adicionais que são definidas para destinatários específicos.
+Conforme você configurar ou editar suas políticas de Links de seguros ATP, verá diversas opções disponíveis. Caso você esteja se perguntando quais são essas opções, a tabela a seguir descreve cada um deles e seu efeito. 
+
+> [!NOTE]
+> Existem dois tipos principais de políticas para definir ou editar: uma política padrão que se aplica a todas as pessoas e políticas adicionais que são definidas para destinatários específicos. Aqueles são diferenciados na coluna "para esta diretiva" na tabela a seguir.
   
 |**Para esta política**|**Essa opção**|**Faça isto**|
 |:-----|:-----|:-----|
