@@ -3,7 +3,7 @@ title: Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/28/2018
+ms.date: 09/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839951"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341426"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -121,6 +121,10 @@ Sim. Use regras de fluxo de correio no Exchange Online para criptografar automat
 
 No momento você pode apenas definir as regras de fluxo de email no Exchange Online. Criptografia atualmente não é suportada no DLP através de segurança &amp; Centro de conformidade.
   
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Pode abrir o criptografadas mensagens enviadas para uma caixa de correio compartilhadas?
+
+Mensagens criptografadas no momento não há suporte para uma caixa de correio compartilhada.
+
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Pode personalizar mensagens criptografadas com a minha empresa branding?
 
 Sim! Para obter informações sobre como personalizar mensagens de email e o portal OME, consulte Adicionar a marca da sua organização às mensagens criptografadas. Consulte [Adicionar a marca da sua organização às mensagens criptografadas.](add-your-organization-brand-to-encrypted-messages.md)
