@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: 0ee9c87c90e6e30d6c43fb0de5291dd85b03be07
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782158"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353257"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
 
@@ -52,9 +52,9 @@ Proteção de Links de seguros ATP usa várias listas, incluindo a lista de URLs
 
 - Nenhum URL que você especificar na lista "não regravação" é excluída dos Links de seguros ATP varredura para os destinatários que você especificar.
  
-- Quando você especifica uma lista de "não regravação" para uma política de ATP Links de seguros, você pode incluir até três asteriscos de caractere curinga (\*). Caracteres curinga (\*) são considerados como entradas de `contoso.com`, que não explicitamente incluir prefixos ou subdomínios, como `http://` ou `https://`. Isso significa que uma entrada, tais como `contoso.com` é semelhante ao `\*contoso.com\*` para sua lista de "não regravação".
+- Quando você especifica uma lista de "não regravação" para uma política de ATP Links de seguros, você pode incluir até três asteriscos de caractere curinga (\*). Caracteres curinga (\*) são considerados como entradas de `contoso.com`, que não explicitamente incluir prefixos ou subdomínios, como `http://` ou `https://`. Isso significa que uma entrada, tais como `contoso.com` é semelhante ao `*contoso.com*` para sua lista de "não regravação".
 
-- Se você já tiver uma lista das URLs em sua lista de "não regravação", certifique-se revisar essa lista e adicionar caracteres curinga, conforme apropriado. Por exemplo, se sua lista existente tiver uma entrada como `http://contoso.com/a` e você deseja incluir subcaminhos como `http://contoso.com/a/b` em sua política, adicione um caractere curinga para a entrada para que ele se parece com `http://contoso.com/a\*`.
+- Se você já tiver uma lista das URLs em sua lista de "não regravação", certifique-se revisar essa lista e adicionar caracteres curinga, conforme apropriado. Por exemplo, se sua lista existente tiver uma entrada como `http://contoso.com/a` e você deseja incluir subcaminhos como `http://contoso.com/a/b` em sua política, adicione um caractere curinga para a entrada para que ele se parece com `http://contoso.com/a*`.
     
 - Não inclua uma barra (/) nas URLs que você especificar em sua lista de "não regravação". Por exemplo, em vez de inserir `contoso.com/` na sua lista de "não regravação", digite `contoso.com`.
     
@@ -62,9 +62,9 @@ Os seguintes exemplos de listas de tabela de que você pode digitar e o que essa
     
 |**Entrada de exemplo**|**O que ele faz**|
 |:-----|:-----|
-|`\*contoso.com\*`  <br/> |Permite que os destinatários específicos a visitar um domínio, subdomínios e caminhos, tais como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
+|`*contoso.com*`  <br/> |Permite que os destinatários específicos a visitar um domínio, subdomínios e caminhos, tais como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a`, mas não subcaminhos, como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a` e subcaminhos like`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a` e subcaminhos like`http://contoso.com/a/b`  <br/> |
    
   
 

@@ -3,7 +3,6 @@ title: Configurar uma lista de URLs bloqueada personalizada usando o Office 365 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Leia este artigo para saber como configurar uma lista das URLs bloqueados para sua organização usando a proteção de ameaça avançadas do Office 365. As URLs bloqueadas serão aplicados a mensagens de email e documentos do Office de acordo com suas políticas de links seguros ATP.
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524099"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353247"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs bloqueada personalizada usando o Office 365 ATP seguros Links
 
@@ -56,9 +55,9 @@ Leia este artigo para saber como configurar personalizada lista de URLs bloqueio
     
 |**Entrada de exemplo**|**O que ele faz**|
 |:-----|:-----|
-|`contoso.com`ou`\*contoso.com\*`  <br/> |Bloqueia o domínio, subdomínios e caminhos, tais como `https://www.contoso.com`, `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
+|`contoso.com`ou`*contoso.com*`  <br/> |Bloqueia o domínio, subdomínios e caminhos, tais como `https://www.contoso.com`, `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloqueia um site `http://contoso.com/a` mas subcaminhos não adicionais, como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Bloqueia um site `http://contoso.com/a` e subcaminhos adicionais, como`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Bloqueia um site `http://contoso.com/a` e subcaminhos adicionais, como`http://contoso.com/a/b`  <br/> |
    
 5. Quando terminar de adicionar URLs, no canto inferior direito da tela, escolha **Salvar**.
     
