@@ -51,6 +51,7 @@
 ### [Visão geral de rótulos](labels.md)
 ### [Visão geral das revisões de disposição](disposition-reviews.md)
 ### [Visão geral de retenção orientada a eventos](event-driven-retention.md)
+### [Visão geral do gerenciador de planos de arquivo](file-plan-manager.md)
 ## [Gerenciar caixas de correio inativas](inactive-mailboxes-in-office-365.md)
 ### [Criar e gerenciar caixas de correio inativas](create-and-manage-inactive-mailboxes.md)
 ### [Alterar a duração de retenção de uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
