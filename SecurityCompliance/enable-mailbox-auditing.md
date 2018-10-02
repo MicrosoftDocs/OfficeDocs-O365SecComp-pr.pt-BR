@@ -3,7 +3,7 @@ title: Habilitar a auditoria de caixa de correio no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: No Office 365, você pode ativar o log de auditoria de caixa de correio para registrar o acesso à caixa de correio por proprietários de caixa de correio, representantes e administradores. Por padrão, a auditoria de caixa de correio no Office 365 não está ativado. Após habilitar uma caixa de correio do log de auditoria de caixa de correio, você pode pesquisar o log de auditoria do Office 365 para atividades realizadas na caixa de correio.
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523881"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358380"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar a auditoria de caixa de correio no Office 365
   
@@ -129,14 +129,14 @@ A tabela a seguir lista as ações que podem ser registradas por caixa de correi
 |:-----|:-----|:-----|:-----|:-----|
 |**Copiar** <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
 |**Criar** <br/> |Um item é criado na pasta Calendário, contatos, anotações ou tarefas na caixa de correio; Por exemplo, uma nova solicitação de reunião é criada. Observe que a criação, enviando ou recebendo uma mensagem não sofre auditoria. Além disso, não é auditado criando uma pasta de caixa de correio.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
-|**FolderBind** <br/> |Uma pasta da caixa de correio foi acessada. Esta ação também é registrada quando o administrador ou representante abrem a caixa de correio.  <br/> |Sim\*  <br/> |Sim\*\*  <br/> |Não  <br/> |
+|**FolderBind** <br/> |Uma pasta da caixa de correio foi acessada. Esta ação também é registrada quando o administrador ou representante abrem a caixa de correio.  <br/> |Sim  <br/> |Sim\*\*  <br/> |Não  <br/> |
 |**HardDelete** <br/> |Uma mensagem foi removida da pasta de Itens Recuperáveis.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
 |**MailboxLogin** <br/> |O usuário entrou em sua caixa de correio.  <br/> |Não  <br/> |Não  <br/> |Sim  <br/> |
 |**MessageBind** <br/> |Uma mensagem foi exibida no painel de visualização ou aberta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
-|**Move** <br/> |Uma mensagem foi movida para outra pasta.  <br/> |Sim\*  <br/> |Sim  <br/> |Sim  <br/> |
-|**MoveToDeletedItems** <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |Sim\*  <br/> |Sim  <br/> |Sim  <br/> |
+|**Move** <br/> |Uma mensagem foi movida para outra pasta.  <br/> |Sim  <br/> |Sim  <br/> |Sim  <br/> |
+|**MoveToDeletedItems** <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
 |**SendAs** <br/> |Uma mensagem foi enviada usando a permissão SendAs. Isto significa que outro usuário enviou a mensagem apesar de ter vindo do proprietário da caixa de correio.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Não  <br/> |
-|**SendOnBehalf** <br/> |Uma mensagem foi enviada usando a permissão SendOnBehalf. Isto significa que outro usuário enviou a mensagem em nome do proprietário da caixa de correio. A mensagem indica ao destinatário em nome de quem a mensagem foi enviada e quem na verdade enviou a mensagem.  <br/> |Sim\*  <br/> |Sim  <br/> |Não  <br/> |
+|**SendOnBehalf** <br/> |Uma mensagem foi enviada usando a permissão SendOnBehalf. Isto significa que outro usuário enviou a mensagem em nome do proprietário da caixa de correio. A mensagem indica ao destinatário em nome de quem a mensagem foi enviada e quem na verdade enviou a mensagem.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Não  <br/> |
 |**SoftDelete** <br/> |Uma mensagem foi excluída permanentemente da pasta Itens Excluídos. Os itens excluídos temporariamente são movidos para a pasta Itens Recuperáveis.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
 |**Atualizar** <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
 |**UpdateCalendarDelegation** <br/> |Uma representação de calendário foi atribuída a uma caixa de correio. Delegação de calendário oferece a outra pessoa nas mesmas permissões de organização para gerenciar o calendário do proprietário da caixa de correio.  <br/> |Sim\*  <br/> |Não  <br/> |Sim\*  <br/> |
@@ -144,7 +144,7 @@ A tabela a seguir lista as ações que podem ser registradas por caixa de correi
 |**UpdateInboxRules** <br/> |Uma regra de caixa de correio foram adicionada, removida ou alterada. Regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e execute as ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou exclusão de uma mensagem.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Auditados por padrão, se a auditoria está habilitada para uma caixa de correio. > <sup> \* </sup> Entradas para ações de vincular pasta executadas por representantes são consolidadas. Uma entrada de log é gerada para acesso a pastas individuais dentro de um período de tempo de 24 horas. > <sup> \* \* </sup> Um administrador que tenha sido atribuído a permissão de acesso completo à caixa de correio de um usuário é considerado um usuário delegado. 
+> <sup>\*</sup>Auditados por padrão, se a auditoria está habilitada para uma caixa de correio.<br/><br/>  <sup>\*\*</sup>Entradas para ações de vincular pasta executadas por representantes são consolidadas. Uma entrada de log é gerada para acesso a pastas individuais dentro de um período de tempo de 24 horas.<br/><br/><sup>\*\*\*</sup>Um administrador que tenha sido atribuído a permissão de acesso completo à caixa de correio de um usuário é considerado um usuário delegado. 
   
 Se você não precisar mais determinados tipos de ações de caixa de correio a ser auditado, você deve modificar a configuração de log de auditoria da caixa de correio para desabilitar essas ações. Entradas de log existentes não são limpo até o limite de idade de 90 dias para entradas do log de auditoria for atingido.
   

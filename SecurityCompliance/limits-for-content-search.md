@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Saiba mais sobre os limites em vigor para o recurso de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade, como o número máximo de pesquisas simultâneas. '
-ms.openlocfilehash: 896d1fb5aafb7ae28f00c5e19af229415d800f36
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 917351f380c81ebfabfd4b3ff05a534c65c8f318
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524089"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358370"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Limites para a pesquisa de conteúdo de segurança do Office 365 &amp; Centro de conformidade
 
@@ -43,24 +43,24 @@ A tabela a seguir lista os limites de pesquisa na segurança &amp; Centro de con
   
 |**Descrição de limite**|**Limite**|
 |:-----|:-----|
-|O número máximo de caixas de correio ou sites que podem ser pesquisadas em uma única pesquisa de conteúdo  <br/> |Sem limite  <br/> |
-|O número máximo de pesquisas de conteúdo que podem ser executados ao mesmo tempo em sua organização.  <br/> |Sem limite  <br/> |
+|O número máximo de caixas de correio ou sites que podem ser pesquisadas em uma única pesquisa de conteúdo  <br/> |Sem limites  <br/> |
+|O número máximo de pesquisas de conteúdo que podem ser executados ao mesmo tempo em sua organização.  <br/> |Sem limites  <br/> |
 |O número máximo de pesquisas de conteúdo que pode ser iniciada por um único usuário ao mesmo tempo. Observe que esse limite mais provável é atingido quando o usuário tentar iniciar várias pesquisas usando o **Get-ComplianceSearch \| Start-ComplianceSearch** command no PowerShell do Centro de conformidade & segurança.<br/> |10   <br/> |
 |O número máximo de itens por caixa de correio de usuário que são exibidos na página visualização ao visualizar resultados de pesquisa de conteúdo.  <br/> |100  <br/> |
-|O número máximo de itens encontrados em todas as caixas de correio do usuário que são exibidas na página visualização ao visualizar resultados de pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |1,000  <br/> |
-|O número máximo de caixas de correio de usuário que pode ser visualizado para resultados de pesquisa. Se houver mais de 1000 caixas de correio que contém conteúdo que corresponde à consulta de pesquisa, somente as principais 1000 caixas de correio com a maioria dos resultados de pesquisa será disponíveis para visualização.  <br/> |1,000  <br/> |
+|O número máximo de itens encontrados em todas as caixas de correio do usuário que são exibidas na página visualização ao visualizar resultados de pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |1.000  <br/> |
+|O número máximo de caixas de correio de usuário que pode ser visualizado para resultados de pesquisa. Se houver mais de 1000 caixas de correio que contém conteúdo que corresponde à consulta de pesquisa, somente as principais 1000 caixas de correio com a maioria dos resultados de pesquisa será disponíveis para visualização.  <br/> |1.000  <br/> |
 |O número máximo de itens encontrados no SharePoint e OneDrive para sites corporativos que são exibidos na página visualização ao visualizar resultados de pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |200  <br/> |
 |O número máximo de sites (no SharePoint e o OneDrive for Business) que pode ser visualizado para resultados de pesquisa. Se houver mais de 200 sites total que contém conteúdo que corresponde à consulta de pesquisa, somente os principais 200 sites com a maioria dos resultados de pesquisa será disponíveis para visualização.  <br/> |200  <br/> |
 |O número máximo de itens por caixa de correio de pasta pública que são exibidos na página visualização ao visualizar resultados de pesquisa de conteúdo.  <br/> |100  <br/> |
 |O número máximo de itens encontrados em todas as caixas de correio de pasta pública que são exibidas na página visualização ao visualizar resultados de pesquisa de conteúdo.  <br/> |200  <br/> |
 |O número máximo de caixas de correio públicas que pode ser visualizado para resultados de pesquisa. Se houver mais de 500 caixas de correio de pasta pública que contém conteúdo que corresponde à consulta de pesquisa, somente as principais 500 pasta pública caixas de correio com a maioria dos resultados de pesquisa será disponíveis para visualização.  <br/> |500  <br/> |
-|O número máximo de caracteres para consulta de pesquisa (incluindo operadores e condições) para uma pesquisa de conteúdo.  <br/> **Observação:** Esse limite entrará em vigor depois que a consulta é expandida, o que significa que a consulta irá obter expandida em relação a cada uma das palavras-chave. Por exemplo, se uma consulta de pesquisa tiver 15 palavras-chave e parâmetros adicionais e condições, a consulta obtém expandida 15 vezes, cada um com os outros parâmetros e condições da consulta. Portanto, mesmo que o número de caracteres da consulta de pesquisa pode ser abaixo do limite, é a consulta expandida que pode contribuir para exceder esse limite.<br/> |**Caixas de correio:** 10.000  <br/> **Sites:** 4.000 ao pesquisar todos os sites ou 2.000 durante a pesquisa de sites até 20 <sup>1</sup> <br/> |
-|Número máximo de variants retornados ao usar um curinga no prefixo para procurar uma frase exata em uma consulta de pesquisa ou ao usar um curinga prefixo e o operador booleano **NEAR** ou **ONEAR** .  <br/> |10.000<sup>2</sup> <br/> |
-|O número mínimo de caracteres alfa para curingas de prefixo; Por exemplo, `time*`, `one*`, ou `set*`.  <br/> |3  <br/> |
+|O número máximo de caracteres para consulta de pesquisa (incluindo operadores e condições) para uma pesquisa de conteúdo.  <br/><br/> **Observação:** Esse limite entrará em vigor depois que a consulta é expandida, o que significa que a consulta irá obter expandida em relação a cada uma das palavras-chave. Por exemplo, se uma consulta de pesquisa tiver 15 palavras-chave e parâmetros adicionais e condições, a consulta obtém expandida 15 vezes, cada um com os outros parâmetros e condições da consulta. Portanto, mesmo que o número de caracteres da consulta de pesquisa pode ser abaixo do limite, é a consulta expandida que pode contribuir para exceder esse limite.<br/> |**Caixas de correio:** 10.000  <br/> **Sites:** 4.000 ao pesquisar todos os sites ou 2.000 durante a pesquisa de sites até 20 <sup>1</sup> <br/> |
+|Número máximo de variants retornados ao usar um curinga no prefixo para procurar uma frase exata em uma consulta de pesquisa ou ao usar um curinga prefixo e o operador booleano **NEAR** ou **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
+|O número mínimo de caracteres alfa para curingas de prefixo; Por exemplo, `time*`, `one*`, ou `set*`.  <br/> |3   <br/> |
 |O número máximo de caixas de correio em uma pesquisa de conteúdo que você pode excluir itens fazendo uma ação "Pesquisar e limpar" (usando o **New-ComplianceSearchAction-limpar** comando). Se a pesquisa de conteúdo que você estiver fazendo uma ação de limpeza para tem mais caixas de correio de origem que esse limite, a ação de limpeza falhará. Para obter mais informações sobre a pesquisa e limpar, consulte [Procurar e excluir mensagens de email em sua organização do Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> |50.000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> durante a pesquisa do SharePoint e OneDrive para locais de negócios, os caracteres nas URLs dos sites que estão sendo pesquisados são contados contra esse limite. > <sup>2</sup> para consultas de frase de não (um valor de palavra-chave que não usa aspas duplas) usamos um índice de prefixo especiais. Esse procedimento informa que uma palavra ocorre em um documento, mas não onde ele ocorre no documento. Para fazer uma consulta de frase (um valor de palavra-chave com sinais de aspas duplas), precisamos comparar a posição dentro do documento para as palavras na frase. Isso significa que não podemos usar o índice de prefixo para consultas de frase. Nesse caso, a consulta com todas as palavras que o prefixo expande; que expandimos internamente Por exemplo, `"time*"` podem expandir a `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 é o número máximo de variants que a palavra pode expandir a, não o número de documentos que correspondem a consulta. Não há nenhum limite superior para os termos de não-frase. 
+> <sup>1</sup> durante a pesquisa do SharePoint e OneDrive para locais de negócios, os caracteres nas URLs dos sites que estão sendo pesquisados são contados contra esse limite.<br/> <sup>2</sup> para consultas de não-frase (um valor de palavra-chave que não usa aspas duplas) usamos um índice de prefixo especiais. Esse procedimento informa que uma palavra ocorre em um documento, mas não onde ele ocorre no documento. Para fazer uma consulta de frase (um valor de palavra-chave com sinais de aspas duplas), precisamos comparar a posição dentro do documento para as palavras na frase. Isso significa que não podemos usar o índice de prefixo para consultas de frase. Nesse caso, a consulta com todas as palavras que o prefixo expande; que expandimos internamente Por exemplo, `"time*"` podem expandir a `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 é o número máximo de variants que a palavra pode expandir a, não o número de documentos que correspondem a consulta. Não há nenhum limite superior para os termos de não-frase. 
   
 [Return to top](limits-for-content-search.md#top)
   
@@ -71,7 +71,7 @@ A tabela a seguir descreve os limites de indexação que possam resultar em uma 
   
 |**Limite de indexação**|**Observações**|**Descrição**|
 |:-----|:-----|:-----|
-|Tamanho máximo de anexo (excluindo arquivos do Excel)  <br/> |150 MB  <br/> |O tamanho máximo de um anexo de email que analisa para indexação. Qualquer anexo que for maior do que esse limite não ser analisado para indexação e a mensagem com o anexo será marcada como parcialmente indexados.<br/> > [!NOTE]> Análise é o processo em que o serviço de indexação extrai o texto do anexo, remove caracteres desnecessários como pontuação e espaços e divide o texto em palavras (em um processo de geração de tokens de chamada), que são armazenados no índice.           |
+|Tamanho máximo de anexo (excluindo arquivos do Excel)  <br/> |150 MB  <br/> |O tamanho máximo de um anexo de email que analisa para indexação. Qualquer anexo que for maior do que esse limite não ser analisado para indexação e a mensagem com o anexo será marcada como parcialmente indexados.<br/> <br/>**Observação:** Analisar é o processo de onde o serviço de indexação extrai o texto do anexo, remove caracteres desnecessários como pontuação e espaços e divide o texto em palavras (em um processo de geração de tokens de chamada), que são armazenados no índice.           |
 |Tamanho máximo de arquivos do Excel  <br/> |4 MB  <br/> |O tamanho máximo de um arquivo do Excel localizado em um site ou anexado a uma mensagem de email que será analisada para indexação. Qualquer arquivo do Excel que é maior do que esse limite não ser analisado e o arquivo ou o email que a mensagem com o anexo de arquivo será marcada como não indexados.  <br/> |
 |Número máximo de anexos  <br/> |250  <br/> |O número máximo de arquivos anexados a uma mensagem de email que será analisada para indexação. Se uma mensagem tiver mais de 250 anexos, os primeiros 250 anexos são analisados e indexados, e a mensagem é marcada como parcialmente indexados porque ele tinha adicionais anexos que não foram analisados.  <br/> |
 |Profundidade máxima de anexo  <br/> |30  <br/> |O número máximo de anexos aninhados, que são analisados. Por exemplo, se uma mensagem de email tem outra mensagem anexada a ele e a mensagem anexada tem um documento do Word anexado, o documento do Word e a mensagem anexada serão indexados. Esse comportamento continuará até 30 anexos aninhados.  <br/> |
@@ -93,7 +93,7 @@ Há aspectos de limites adicionais relacionadas a diferentes da pesquisa de cont
     
 - [Itens parcialmente indexados na Pesquisa de Conteúdo do Office 365](partially-indexed-items-in-content-search.md)
     
-- [Investigar itens parcialmente indexados na Descoberta eletrônica do Office 365](investigating-partially-indexed-items-in-ediscovery.md)
+- [Investigar itens parcialmente indexados na Descoberta Eletrônica do Office 365](investigating-partially-indexed-items-in-ediscovery.md)
     
 - [Limites de pesquisa do SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
