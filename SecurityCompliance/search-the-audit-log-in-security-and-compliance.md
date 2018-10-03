@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974681"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363144"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365
 
@@ -50,9 +50,9 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
 
 - Atividade do usuário e administração no Dynamics 365
     
-- Atividade do administrador e usuário no Microsoft Flow
-
 - Atividade do usuário e administração no Yammer
+ 
+- Atividade do administrador e usuário no Microsoft Flow
     
 - Atividade do administrador e usuário em Stream da Microsoft
     
@@ -71,6 +71,15 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
     > [!IMPORTANT]
     > Se você atribuir um usuário a função Logs de auditoria somente para exibição ou Logs de auditoria na página **permissões** na segurança &amp; Centro de conformidade, eles não poderão pesquisar o log de auditoria do Office 365. Você precisa atribuir as permissões no Exchange Online. Isso ocorre porque o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online. 
   
+- Quando uma atividade auditada é executada por um usuário ou administrador, um registro de auditoria é gerado e armazenado no log de auditoria do Office 365 para sua organização. O período de tempo que um registro de auditoria é retido (e pesquisável no log de auditoria) depende de sua assinatura do Office 365.
+
+     - **Office 365 E3** - auditoria registros são mantidos por 90 dias. Isso significa que você pode pesquisar o log de auditoria para atividades que foram executadas nos últimos 90 dias.
+
+     - **Office 365 E5** - auditoria registros são mantidos por 365 dias (um ano). Isso significa que você pode pesquisar o log de auditoria para atividades que foram executadas no último ano. Também está disponível para organizações que possuem uma assinatura E3 e uma assinatura de complemento do Office 365 avançadas conformidade reter registros de auditoria para um ano.
+
+        > [!NOTE]
+        > O período de retenção de um ano para registros de auditoria está atualmente disponível como parte do Office 365 Preview programar e está disponível apenas para organizações com uma assinatura E5 que são inscritos no programa de visualização. Além disso, auditar registros para atividades que foram executadas antes de outubro de 2018 ainda serão mantidos por apenas 90 dias. A partir de outubro de 2018, novos registros de auditoria serão mantidos por um ano para organizações com uma assinatura E5 ou que tenham uma assinatura E3 e uma assinatura de complemento de conformidade avançadas.
+
 - Se você deseja desativar a pesquisa de log de auditoria no Office 365 para sua organização, você pode executar o seguinte comando no PowerShell remoto conectado à sua organização do Exchange Online:
     
   ```
@@ -88,8 +97,6 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
 - Conforme indicado anteriormente, o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online, que é **UnifiedAuditLog de pesquisa**. Isso significa que você pode usar esse cmdlet para pesquisar o log de auditoria do Office 365 em vez de usar a página de **pesquisa de log de auditoria** na segurança &amp; Centro de conformidade. Você precisa executar esse cmdlet do PowerShell remoto conectado à sua organização do Exchange Online. Para obter mais informações, consulte [UnifiedAuditLog de pesquisa](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Se você deseja baixar programaticamente os dados do log de auditoria do Office 365, é recomendável que você usar a API de atividade de gerenciamento do Office 365 em vez de usar um script do PowerShell. A API de atividade de gerenciamento do Office 365 é um serviço web REST que você pode usar para desenvolver soluções de monitoramento de conformidade para sua organização, segurança e operações. Para obter mais informações, consulte [referência de API de atividade de gerenciamento do Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
-    
-- Você pode pesquisar o log de auditoria do Office 365 para atividades que foram executadas nos últimos 90 dias.
     
 - Ele pode levar até 30 minutos ou backup de 24 horas após um evento ocorre para a entrada de log de auditoria correspondente a ser exibido nos resultados da pesquisa. A tabela a seguir mostra o tempo que leva para os diferentes serviços no Office 365.
     
@@ -287,7 +294,8 @@ Clique em um dos seguintes links para ir para uma tabela específica.
 |[Atividades de sway](#sway-activities) <br/> |[Atividades de administração do usuário](#user-administration-activities) <br/> |[Atividades de administração de grupo do Windows Azure AD](#azure-ad-group-administration-activities) <br/> |
 |[Atividades de administração do aplicativo](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |[Atividades de administração de diretório](#directory-administration-activities) <br/> |
 |[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades do Power BI](#power-bi-activities) <br/> |[Atividades de Teams da Microsoft](#microsoft-teams-activities) <br/> |
-|[Atividades do Yammer](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Log de auditoria de administração do Exchange](#exchange-admin-audit-log) <br/> |
+|[Atividades do Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Log de auditoria de administração do Exchange](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>Atividades de arquivo e página
@@ -640,6 +648,11 @@ A tabela a seguir lista o usuário e o log de auditoria de atividades de adminis
 |Nome do arquivo atualizado  <br/> |FileUpdateName  <br/> |Usuário altera o nome de um arquivo.  <br/> |
 |Arquivo visualizado  <br/> |FileVisited  <br/> |Usuário exibe um arquivo.  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem a criação, edição e exclusão de fluxos e alterar permissões de fluxo. Para obter informações sobre a auditoria de atividades do fluxo, consulte o blog [Fluxo Microsoft auditar eventos agora está disponíveis no Centro de conformidade e segurança do Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 Você pode pesquisar o log de auditoria para atividades em Microsoft Stream. Essas atividades incluem vídeos atividades executadas pelos usuários, atividades de canal de grupo e as atividades de admin como gerenciar usuários, gerenciar as configurações da organização e exportação de relatórios. Para obter uma descrição dessas atividades, consulte a seção "Atividades registradas em Microsoft Stream" nos [Logs de auditoria no Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
@@ -678,9 +691,16 @@ Consulte a seção de [atividades auditadas](#audited-activities) neste artigo p
 
 A maioria dos dados de auditoria está disponível em até 30 minutos, mas pode levar até 24 horas após a ocorrência de um evento para a entrada de log de auditoria correspondente a ser exibido nos resultados da pesquisa. Consulte a tabela na seção deste artigo que mostra o tempo que leva para eventos nos serviços diferentes do Office 365 para estar disponíveis [antes de começar](#before-you-begin) .
 
-**Quanto tempo são os registros de auditoria retidos por?**
+**Quanto tempo os registros de auditoria são retidos para?**
 
-Atualmente, os registros de log de auditoria são mantidos por 90 dias. Microsoft está trabalhando ativamente em um plano para aumentar esse limite. 
+Conforme explicado anteriormente, o período de retenção de registros de auditoria depende da assinatura do Office 365 da sua organização.  
+
+- **Office 365 E3** - auditoria registros são mantidos por 90 dias.
+
+- **Office 365 E5** - auditoria registros são mantidos por 365 dias (um ano). Também está disponível para organizações que possuem uma assinatura E3 e uma assinatura de complemento do Office 365 avançadas conformidade reter registros de auditoria para um ano.
+
+     > [!NOTE]
+     > O período de retenção de um ano para registros de auditoria está atualmente disponível apenas para organizações que estão inscritos no programa de avaliação do Office 365.
 
 **Posso acessar os dados de auditoria programaticamente?**
 
