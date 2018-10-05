@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
-ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
+ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25363144"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435118"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365
 
@@ -71,14 +71,14 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
     > [!IMPORTANT]
     > Se você atribuir um usuário a função Logs de auditoria somente para exibição ou Logs de auditoria na página **permissões** na segurança &amp; Centro de conformidade, eles não poderão pesquisar o log de auditoria do Office 365. Você precisa atribuir as permissões no Exchange Online. Isso ocorre porque o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online. 
   
-- Quando uma atividade auditada é executada por um usuário ou administrador, um registro de auditoria é gerado e armazenado no log de auditoria do Office 365 para sua organização. O período de tempo que um registro de auditoria é retido (e pesquisável no log de auditoria) depende de sua assinatura do Office 365.
+- Quando uma atividade auditada é executada por um usuário ou administrador, um registro de auditoria é gerado e armazenado no log de auditoria do Office 365 para sua organização. O período de tempo que um registro de auditoria é retido (e pesquisável no log de auditoria) depende de sua assinatura do Office 365 e especificamente o tipo da licença atribuída a um usuário específico.
 
      - **Office 365 E3** - auditoria registros são mantidos por 90 dias. Isso significa que você pode pesquisar o log de auditoria para atividades que foram executadas nos últimos 90 dias.
 
-     - **Office 365 E5** - auditoria registros são mantidos por 365 dias (um ano). Isso significa que você pode pesquisar o log de auditoria para atividades que foram executadas no último ano. Também está disponível para organizações que possuem uma assinatura E3 e uma assinatura de complemento do Office 365 avançadas conformidade reter registros de auditoria para um ano.
+     - **Office 365 E5** - auditoria registros são mantidos por 365 dias (um ano). Isso significa que você pode pesquisar o log de auditoria para atividades que foram executadas no último ano. Reter registros de auditoria para um ano também está disponível para usuários que recebem uma licença E3/Exchange Online plano 1 e têm uma licença de complemento de conformidade avançadas do Office 365.
 
         > [!NOTE]
-        > O período de retenção de um ano para registros de auditoria está atualmente disponível como parte do Office 365 Preview programar e está disponível apenas para organizações com uma assinatura E5 que são inscritos no programa de visualização. Além disso, auditar registros para atividades que foram executadas antes de outubro de 2018 ainda serão mantidos por apenas 90 dias. A partir de outubro de 2018, novos registros de auditoria serão mantidos por um ano para organizações com uma assinatura E5 ou que tenham uma assinatura E3 e uma assinatura de complemento de conformidade avançadas.
+        > O período de retenção de um ano de registros de auditoria estarão disponíveis em breve como parte do Office 365 Preview programar e serão disponível somente para organizações inscritos no programa de visualização. Quando o período de retenção mais registros de auditoria se tornam disponível no modo de visualização (e mais tarde para disponibilidade geral), somente os novos registros de auditoria (para atividades realizadas após o período de retenção mais é lançado) serão mantidos por um ano.
 
 - Se você deseja desativar a pesquisa de log de auditoria no Office 365 para sua organização, você pode executar o seguinte comando no PowerShell remoto conectado à sua organização do Exchange Online:
     
@@ -700,7 +700,9 @@ Conforme explicado anteriormente, o período de retenção de registros de audit
 - **Office 365 E5** - auditoria registros são mantidos por 365 dias (um ano). Também está disponível para organizações que possuem uma assinatura E3 e uma assinatura de complemento do Office 365 avançadas conformidade reter registros de auditoria para um ano.
 
      > [!NOTE]
-     > O período de retenção de um ano para registros de auditoria está atualmente disponível apenas para organizações que estão inscritos no programa de avaliação do Office 365.
+     > O período de retenção de um ano de auditoria registros em breve estará disponíveis para organizações que estão inscritos no programa de avaliação do Office 365.
+
+Observe também que a duração do período de retenção de registros de auditoria se baseia em licenciamento por usuário. Por exemplo, se uma licença do Office 365 E3 é atribuída a um usuário em sua organização, os registros de auditoria para atividades realizadas pelo usuário são mantidos por 90 dias. Se um usuário diferente for atribuído a uma licença do Office 365 E5, seus registros de auditoria são mantidos por um ano. 
 
 **Posso acessar os dados de auditoria programaticamente?**
 
