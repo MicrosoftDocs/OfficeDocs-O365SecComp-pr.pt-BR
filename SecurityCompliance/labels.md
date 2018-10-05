@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Os rótulos no Office 365 podem ajudar você a executar as ações certas no conteúdo certo. Com os rótulos, você pode classificar os dados em toda a organização para prover governança e impor regras de retenção com base nessa classificação. Você também pode usar os rótulos para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 5507b694dc0c4655649a20c179ac2c49ce4a2ec9
+ms.sourcegitcommit: aa12f19b901d910e92e202d4e703aa2c31736bdb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25342809"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25362776"
 ---
 # <a name="overview-of-labels"></a>Visão geral de rótulos
 
@@ -267,28 +267,15 @@ Depois de selecionar um modelo de política, você pode adicionar ou remover qua
     
 ![Opções para identificar tipos de informações confidenciais](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar rótulos automaticamente a conteúdos com palavras-chave ou propriedades pesquisáveis
+### <a name="auto-apply-labels-to-content-with-keywords"></a>Aplicar automaticamente rótulos ao conteúdo com palavras-chave
 
-Você pode aplicar automaticamente os rótulos ao conteúdo que atenda a certas condições. As condições disponíveis agora dão suporte à aplicação de um rótulo a conteúdos que incluem palavras ou frases específicas, ou valores de propriedades pesquisáveis. Você pode refinar a consulta usando os operadores de pesquisa AND, OR e NOT. 
+Você pode aplicar automaticamente os rótulos ao conteúdo que atenda a certas condições. As condições disponíveis agora dão suporte à aplicação de um rótulo a conteúdos que incluem palavras ou frases. Você pode refinar a consulta usando os operadores de pesquisa AND, OR e NOT. 
 
 Para saber mais sobre sintaxe de consulta, confira:
 
 - [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Rótulos baseados em consultas usam o índice de pesquisa para identificar conteúdos. Para saber mais sobre propriedades pesquisáveis válidas, confira:
-
-- [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
-- [Visão geral de propriedades rastreadas e gerenciadas no SharePoint Server](https://docs.microsoft.com/pt-BR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
-  
-Consultas de exemplos:
-
-- Exchange
-    - assunto:"Finanças trimestrais"
-    - recipients:garthf<!--nolink-->@contoso.com
-
-- SharePoint e OneDrive for Business
-    - contenttype:contract
-    - site:https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement E contenttype:contract
+Observe que os rótulos baseados em consulta usam o índice de pesquisa para identificar conteúdo.
   
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
