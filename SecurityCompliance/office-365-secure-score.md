@@ -1,7 +1,7 @@
 ---
 title: Apresentando a Classificação de Segurança do Office 365
-ms.author: brendonb
-author: brendonb
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/23/2018
 ms.audience: Admin
@@ -13,34 +13,22 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Já se perguntou como seguro sua organização do Office 365 é realmente? Tempo para interromper se perguntando - a pontuação de seguro do Office 365 está aqui para ajudar. Pontuação segura analisa a segurança do sua organização Office 365 com base nas suas atividades regulares e configurações de segurança e atribui uma pontuação. Pense como a pontuação de crédito para segurança.
-ms.openlocfilehash: 02f958ec4b9b9287f5db8ddbb5cd83f3cef68007
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523537"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450746"
 ---
 # <a name="introducing-the-office-365-secure-score"></a>Apresentando a Classificação de Segurança do Office 365
 
 Já se perguntou como seguro sua organização do Office 365 é realmente? Tempo para interromper se perguntando - a pontuação de seguro do Office 365 está aqui para ajudar. Pontuação segura analisa a segurança do sua organização Office 365 com base nas suas atividades regulares e configurações de segurança e atribui uma pontuação. Pense como a pontuação de crédito para segurança.
   
-## <a name="in-this-article"></a>Neste artigo
-
-[Como obter a pontuação de seguro?](office-365-secure-score.md#howtoaccess)
-  
-[Como funciona?](office-365-secure-score.md#HowWorks)
-  
-[Como ele ajudará mim?](office-365-secure-score.md#HowHelps)
-  
-[Perguntas frequentes](office-365-secure-score.md#FAQ)
-  
 ## <a name="how-do-i-get-to-secure-score"></a>Como obter a pontuação de seguro?
-<a name="howtoaccess"> </a>
 
 Qualquer pessoa que tenha permissões de administrador (administrador global ou uma função personalizada admin) para uma assinatura do Office 365 Business Premium ou Enterprise pode acessar a pontuação seguro no [https://securescore.office.com](https://securescore.office.com). Usuários que não estão atribuídos a uma função de administrador não conseguirá acessar pontuação seguro. No entanto, os administradores podem usar a ferramenta para compartilhar seus resultados com outras pessoas em suas organizações.
   
 ## <a name="how-does-it-work"></a>Como funciona?
-<a name="HowWorks"> </a>
 
 Proteja as ilustrações de pontuação quais serviços do Office 365, você estiver usando (como OneDrive, SharePoint e Exchange) examina suas configurações e atividades e compará-los a uma linha de base estabelecida pelo Microsoft. Você receberá uma pontuação com base em como alinhado estiver com as práticas recomendadas de segurança.
   
@@ -63,7 +51,6 @@ Clique em qualquer ponto de dados para ver uma análise detalhada da sua pontua�
 ![Na guia analisador de pontuação mostrando um ponto de dados selecionado do gráfico](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
   
 ## <a name="how-will-it-help-me"></a>Como ele ajudará mim?
-<a name="HowHelps"> </a>
 
 Usar pontuação seguro ajuda a aumentar a segurança da sua organização por encorajando utilizar os recursos internos de segurança no Office 365 (muitos dos quais você já adquiriu mas não estar ciente). Aprender mais sobre esses recursos, como usar a ferramenta permitirão que você peça mente que você estiver levando os procedimentos apropriados para proteger sua organização contra ameaças.
   
@@ -75,7 +62,6 @@ Confira o nosso [postagem de blog](https://go.microsoft.com/fwlink/?linkid=83689
 > A pontuação seguro express não uma medida absoluta de como provavelmente você devem obter violado. Ele expressa a extensão ao qual você adotaram controles que podem deslocar o risco de ser violado. Nenhum serviço pode garantir que você não vai ser violado e a pontuação seguro não deve ser interpretada como uma garantia de nenhuma maneira. 
   
 ## <a name="faqs"></a>Perguntas frequentes
-<a name="FAQ"> </a>
 
 ### <a name="who-can-use-secure-score"></a>Quem pode usar pontuação seguro?
 
@@ -118,5 +104,9 @@ Se você tiver quaisquer problemas, informe-pelo lançamento no [segurança do O
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Minha organização tem apenas alguns recursos de segurança. Isso afeta minha pontuação?
 
 A pontuação seguro calcula sua pontuação com base nos serviços fornecidos por que você comprou. Por exemplo, se você comprou somente um plano do Exchange Online, você não marcados para recursos de segurança do SharePoint Online. Denominador da pontuação de é a soma de todas as linhas de base para os controles que se aplicam aos produtos que você comprou. O numerador é a soma de todos os controles para os quais você concluída ou parcialmente concluído, as ações para atender a esse controle.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+[Visão geral do painel de segurança](security-dashboard.md)
   
 

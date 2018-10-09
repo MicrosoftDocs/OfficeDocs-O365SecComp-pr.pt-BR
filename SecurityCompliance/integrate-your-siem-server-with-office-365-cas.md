@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: É possível integrar seu servidor SIEM com segurança de aplicativo de nuvem do Office 365. Leia este artigo para obter uma visão geral de como ele funciona e como configurá-lo.
-ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972323"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450756"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar seu servidor SIEM ao Office 365 Cloud App Security
   
@@ -25,11 +25,13 @@ ms.locfileid: "24972323"
 |:-----|:-----|:-----|:-----|
 |[Comece a avaliar](office-365-cas-overview.md) <br/> |[Começar a planejar](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](utilization-activities-for-ocas.md) <br/> |[Iniciar a utilização](utilization-activities-for-ocas.md) <br/> |
    
+## <a name="overview-and-prerequisites"></a>Visão geral e pré-requisitos
+
 É possível integrar a [Segurança de aplicativo de nuvem do Office 365](get-ready-for-office-365-cas.md) com sua segurança eventos e informações management (SIEM) server para habilitar o monitoramento centralizado de alertas. Isso é especialmente vantajoso para organizações que estejam usando os serviços em nuvem e aplicativos do servidor local. Integrando com um servidor SIEM permite que sua equipe de segurança proteger melhor seus aplicativos do Office 365 enquanto mantém o seu fluxo de trabalho de segurança usual, automatizando determinados procedimentos de segurança e correlacionando entre baseado em nuvem e eventos no local.  
   
 Ao integrar seu servidor SIEM primeiro com segurança de aplicativo de nuvem do Office 365, alertas dos últimos dois dias são encaminhados para o servidor SIEM, bem como todos os alertas do então em (com base em quaisquer filtros que você selecionar). Além disso, se você desativar esse recurso por um longo período, quando você ativá-lo novamente, ele encaminhará últimos dois dias de alertas e, em seguida, todos os alertas a partir.
- 
-## <a name="siem-integration-architecture"></a>Arquitetura de integração de SIEM
+
+### <a name="siem-integration-architecture"></a>Arquitetura de integração de SIEM
 
 Um agente SIEM é configurado na rede da sua organização. Quando implantada e configurada, o agente SIEM extrai os tipos de dados que foram configurados (alertas) usando o Office 365 nuvem App segurança APIs por REST. O tráfego é enviado por um canal HTTPS criptografado na porta 443.
   
@@ -37,13 +39,13 @@ Quando um agente SIEM recupera dados de segurança de aplicativo de nuvem do Off
 
 ![Arquitetura de segurança de aplicativo de nuvem e SIEM](media/siem-architecture.png)
 
-## <a name="supported-siem-servers"></a>Servidores SIEM suportados
+### <a name="supported-siem-servers"></a>Servidores SIEM suportados
 
 Atualmente, a segurança de aplicativo de nuvem do Office 365 suporta os seguintes servidores SIEM:
 - Foco Micro ArcSight
 - CEF genérico
 
-## <a name="prerequisites"></a>Pré-requisitos
+### <a name="prerequisites"></a>Pré-requisitos
 
 - Você deve ser um administrador global ou administrador de segurança para executar as tarefas descritas neste artigo. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
 
@@ -63,9 +65,7 @@ Atualmente, a segurança de aplicativo de nuvem do Office 365 suporta os seguint
 
 - Você deve concordar com [os termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862491) baixar o [arquivo JAR](https://go.microsoft.com/fwlink/?linkid=838596) será necessário para integrar o seu servidor SIEM.
  
-## <a name="integrate-office-365-cloud-app-security"></a>Integrar a segurança de aplicativo de nuvem do Office 365
-    
-### <a name="step-1-set-it-up-in-the-office-365-cloud-app-security-portal"></a>Etapa 1: Configurá-lo no portal de segurança de aplicativo de nuvem do Office 365
+## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Etapa 1: Montá-lo um agente SIEM na segurança de aplicativo de nuvem do Office 365
 
 1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
     
@@ -98,21 +98,22 @@ Depois que você clique em Fechar e sair do assistente, na tela de extensões de
 
 ![Agente SIEM criado](media/SIEMAgentCreated.png)
     
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Etapa 2: Baixar o arquivo JAR e executá-lo em seu servidor
+## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>Etapa 2: Baixar um arquivo JAR e executá-lo em seu servidor SIEM
 
 1. Baixe o [Microsoft Cloud App segurança SIEM Agent](https://go.microsoft.com/fwlink/?linkid=838596) e descompacte a pasta. (Você deve concordar com [os termos de licença de software](https://go.microsoft.com/fwlink/?linkid=862491) para continuar.) 
     
-2. Extraia o arquivo. jar da pasta compactada e executá-lo em seu servidor.
+2. Extraia o arquivo. jar da pasta compactada e executá-lo em seu servidor SIEM.
     
 3. Depois de executar o arquivo, execute o seguinte: comando:<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
-#### <a name="important-notes"></a>Observações importantes
+### <a name="important-notes"></a>Observações importantes
 
 - O nome do arquivo pode diferir, dependendo da versão do agente SIEM. 
 
-- Recomendamos que você execute o preenchimento JAR em seu servidor durante a instalação do servidor.
+- Recomendamos que você execute o arquivo JAR no seu servidor SIEM durante a instalação do servidor.
+
     - **Windows**: executar como uma tarefa agendada, certificando-se de configurar a tarefa seja **executada se o usuário está conectado ou não** e desmarque a opção de **interromper a tarefa caso ela seja executada superiores** .
 
     - **Linux**: adicionar o comando de execução com um **&** para o `rc.local` arquivo. <br/>Exemplo:<br/> 
@@ -126,31 +127,13 @@ Depois que você clique em Fechar e sair do assistente, na tela de extensões de
     - **TOKEN** é o token de agente SIEM copiados no primeiro procedimento.
     - Para obter ajuda, digite `-h`. 
   
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Etapa 3: Validar se o agente SIEM está funcionando
+## <a name="step-3-validate-that-the-siem-agent-is-working"></a>Etapa 3: Validar se o agente SIEM está funcionando
 
 1. Verifique se o status do agente SIEM no portal de segurança de aplicativo de nuvem do Office 365 não é exibido como **erro de Conexão** ou **desconectada** e que não há nenhuma notificação de agente.<br/>Por exemplo, aqui podemos ver que o servidor SIEM está conectado:<br/>![Servidor SIEM conectado](media/siem-connected.png)<br/>E aqui, podemos ver que o servidor SIEM é desconectado:<br/>![Servidor SIEM não conectado](media/siem-not-connected.png) 
   
 2. No seu servidor Syslog/SIEM, verifique se que você vê que os alertas foram recebidos de segurança de aplicativo de nuvem do Office 365.
   
-## <a name="regenerating-your-token"></a>Regenerando seu token
-
-Se você perder o token de seu, você poderá regenerá-la sempre. Na tabela, localize a linha para o agente de SIEM. Clique nas reticências e escolha **regenerar token**.
-
-![Regenere um token clicando nas reticências para seu agente SIEM](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
-  
-## <a name="editing-your-siem-agent"></a>Editando seu agente SIEM
-
-Para editar seu agente SIEM, na tabela, localize a linha para o agente de SIEM. Clique nas reticências e escolha **Editar**. Se você editar o agente SIEM, você não precisará executar novamente o arquivo. jar; ele atualiza automaticamente.
-
-![Para editar seu agente SIEM, escolha as elipses e escolha Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
-  
-## <a name="deleting-your-siem-agent"></a>Excluindo seu agente SIEM
-
-Para excluir o agente de SIEM, na tabela, localize a linha para o agente de SIEM. Clique nas reticências e escolha **Excluir**.
-
-![Para excluir um agente SIEM, escolha as elipses e escolha Excluir.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
-
-## <a name="sample-logfiles"></a>Arquivos de log de amostra
+## <a name="what-the-logfiles-look-like"></a>Aparência dos arquivos de log
 
 Aqui está um exemplo de arquivo de log de alertas que pode ser enviado para um servidor SIEM:
 
@@ -168,7 +151,7 @@ Aqui está um exemplo de arquivo de log de alertas que pode ser enviado para um 
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
 
-E aqui está um exemplo no formato CEF
+E aqui está outro exemplo, desta vez, no formato CEF:
 
 
 |Nome do campo CEF  | Descrição  |
@@ -181,6 +164,37 @@ E aqui está um exemplo no formato CEF
 |destinationServiceName     | alerta provenientes de aplicativo, como o Office 365, SharePoint ou OneDrive        |
 |csLabel     | Varia (rótulos tem significados diferentes). Normalmente, os rótulos são auto-explicativos, como targetObjects.        |
 |cs     | Informações correspondendo a um rótulo (por exemplo, o usuário de destino de um alerta conforme o exemplo de rótulo)        |
+
+## <a name="additional-tasks-as-needed"></a>Tarefas adicionais (conforme necessário)
+
+Depois que você configurou seu servidor SIEM e integrou com segurança de aplicativo de nuvem do Office 365, talvez seja necessário regenerar um token, um agente SIEM de editar ou excluir um operador SIEM. As seções a seguir descrevem como executar essas tarefas.
+
+### <a name="regenerate-a-token"></a>Regenere um token
+
+Se você perder o token de seu, você poderá regenerar uma. 
+
+1. No portal de segurança de aplicativo de nuvem do Office 365, escolha **configurações** > **extensões de segurança**.
+
+2. Na tabela, localize a linha para o agente de SIEM. 
+
+3. Clique nas reticências e escolha **regenerar token**.<br/>![Regenere um token clicando nas reticências para seu agente SIEM](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
+  
+### <a name="edit-a-siem-agent"></a>Editar um agente SIEM
+
+1. No portal de segurança de aplicativo de nuvem do Office 365, escolha **configurações** > **extensões de segurança**.
+
+2. Localize a linha para o agente de SIEM. 
+
+3. Clique nas reticências e escolha **Editar**. (Se você editar o agente SIEM, você não precisará executar novamente o arquivo. jar; ele atualiza automaticamente.)<br/>![Para editar seu agente SIEM, escolha as elipses e escolha Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+  
+### <a name="delete-a-siem-agent"></a>Excluir um operador SIEM
+
+1. No portal de segurança de aplicativo de nuvem do Office 365, escolha **configurações** > **extensões de segurança**.
+
+2. Localize a linha para o agente de SIEM. 
+
+3. Clique nas reticências e escolha **Excluir**.<br/>![Para excluir um agente SIEM, escolha as elipses e escolha Excluir.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
+
   
 ## <a name="next-steps"></a>Próximas etapas
 

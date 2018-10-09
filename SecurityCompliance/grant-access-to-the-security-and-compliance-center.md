@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Os usuários precisam ter permissões de segurança do Office 365 &amp; Centro de conformidade antes que eles possam gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013795"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450736"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornecer acesso aos usuários para a segurança do Office 365 &amp; Centro de conformidade
 
@@ -41,11 +41,7 @@ Para obter mais informações sobre as permissões diferentes, você pode conced
 
 1. [Entrar no Office 365 e vá para o Centro de administração](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-<<<<<<< HEAD
 2. No Centro de administração do Office 365, abra a **centrais de administração** e clique **segurança &amp; conformidade**. 
-=======
-2. No Centro de administração do Office 365, abra a **centrais de administração** e clique **segurança &amp; conformidade**. 
->>>>>>> mestre
     
 3. Na segurança &amp; Centro de conformidade, vá para **permissões**.
     
