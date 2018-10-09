@@ -3,7 +3,7 @@ title: Perguntas Frequentes sobre a importação de arquivos PST para o Office 3
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/3/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Perguntas frequentes para administradores sobre como usar o serviço de importação do Office 365 para importar arquivos de PST do seu organizaiton às caixas de correio do Office 365. '
-ms.openlocfilehash: 35080106f92b38e944ba31f74d5564e65ba1f752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7230e68f896766df643f12b2a132f987670e9afa
+ms.sourcegitcommit: eecf6f3aafbf460ee2ff9988f2b055e62b1fdb9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524733"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454048"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Perguntas Frequentes sobre a importação de arquivos PST para o Office 365
 
@@ -48,7 +48,7 @@ Além disso criar a importação de trabalhos no Office 365 Security &amp; Centr
   
  **Onde o carregamento de rede está disponível?**
   
-Carregamento de rede está disponível atualmente nos Estados Unidos, Canadá, Brasil, o Reino Unido, Europa, Índia, Leste Asiático, Sudeste Asiático, Japão, República Popular da Coreia e Austrália. Carregamento de rede estará disponível em regiões mais breve.
+Carregamento de rede está disponível atualmente nos Estados Unidos, Canadá, Brasil, o Reino Unido, França, Europa, Índia, Leste Asiático, Sudeste Asiático, Japão, República Popular da Coreia e Austrália. Carregamento de rede estará disponível em regiões mais breve.
   
  **Qual é o preço para importação dos arquivos PST usando o carregamento de rede?**
   
