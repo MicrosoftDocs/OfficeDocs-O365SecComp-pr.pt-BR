@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Saiba como encontrar e usar os relatórios para o Office 365 avançadas Threat Protection na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782108"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454298"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios de proteção de ameaça avançadas do Office 365
 
-Se sua organização tem [A proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) e você tem as permissões necessárias, você pode usar vários relatórios ATP na segurança &amp; Centro de conformidade. (Vá para **relatórios** \> **Dashboard**.)
+Se sua organização tem [A proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) e você tem as [permissões necessárias](#what-permissions-are-needed-to-view-these-reports), você pode usar vários relatórios ATP na segurança &amp; Centro de conformidade. (Vá para **relatórios** \> **Dashboard**.)
   
 ![A segurança &amp; painel do Centro de conformidade pode ajudá-lo a ver onde a proteção de ameaça Avançado está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Relatórios de ATP incluem o relatório de status de proteção de ameaça, o relatório de tipos de arquivo ATP e o relatório de disposição de mensagem ATP. Este artigo descreve os relatórios de ATP e inclui links para exibir os relatórios adicionais.
+Relatórios de ATP incluem o [relatório de status de proteção contra ameaças](#threat-protection-status-report), o [relatório de tipos de arquivo ATP](#atp-file-types-report)e o [relatório de disposição de mensagem ATP](#atp-message-disposition-report). Este artigo descreve os relatórios de ATP e inclui links para [Exibir os relatórios adicionais](#additional-reports-to-view).
   
 ## <a name="threat-protection-status-report"></a>Relatório de status de proteção de ameaça
 
@@ -77,9 +77,9 @@ Além dos relatórios de ATP descritos neste artigo, [os relatórios de seguran�
   
 E, se sua organização tiver [Inteligência de ameaça do Office 365](office-365-ti.md), você também pode [uso Explorer na segurança &amp; Centro de conformidade](use-explorer-in-security-and-compliance.md).
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quais permissões são necessárias para exibir esses relatórios?
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Quais permissões são necessárias para exibir os relatórios de ATP?
 
-Para exibir e usar os relatórios de segurança de email descritos neste artigo, você deve ter uma função apropriada atribuída na segurança &amp; Centro de conformidade e no Centro de administração do Exchange.
+Para exibir e usar os relatórios descritos neste artigo, você deve ter uma função apropriada atribuída na segurança &amp; Centro de conformidade e no Centro de administração do Exchange.
   
 |**Default management role assignments for this role**|**Onde atribuído**|**Saiba mais**|
 |:-----|:-----|:-----|

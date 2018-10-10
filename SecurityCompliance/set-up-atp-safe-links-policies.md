@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092947"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454328"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
 [Links de seguros ATP](atp-safe-links.md) , um recurso de [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) pode ajudar a proteger sua organização contra mal-intencionado links usados em phishing e outros ataques. Se você tiver o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md), você pode configurar políticas de Links de seguros ATP para ajudar a garantir que, quando as pessoas clicarem endereços da web (URLs), sua organização seja protegida. Suas políticas de Links de seguros ATP podem ser configuradas para examinar URLs em email e em documentos do Office.
   
-[Novos recursos são adicionados constantemente aos Links de ATP seguros](atp-safe-links.md#new-features-added-to-atp-safe-links). Como os novos recursos são adicionados, você pode precisar fazer ajustes em suas políticas de Links de seguros ATP existentes.
+[Novos recursos são adicionados constantemente aos Links de ATP seguros](atp-safe-links.md#new-features-are-continually-being-added-to-atp-safe-links). Como os novos recursos são adicionados, você pode precisar fazer ajustes em suas políticas de Links de seguros ATP existentes.
 
 ## <a name="what-to-do"></a>O que fazer 
   
@@ -50,9 +50,6 @@ ms.locfileid: "25092947"
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Etapa 2: Definir (ou revisar) a política de Links de seguros ATP que se aplica a todos
 
 Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. 
-
-> [!TIP]
-> Você pode editar sua política em ambos o Security &amp; Centro de conformidade ou centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -71,9 +68,6 @@ Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, vo
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Etapa 3: Adicionar (ou editar) diretivas de Links de seguros ATP que se aplicam aos destinatários de email específicos
 
 Depois de revisar a política de Links de seguros ATP para todos os usuários, considere a possibilidade de definição de políticas adicionais para grupos específicos de destinatários de email. Isso permite que você especifique exceções à sua política padrão. 
-
-> [!TIP]
-> Você pode adicionar políticas usando qualquer um da segurança &amp; Centro de conformidade (recomendado) ou o Centro de administração do Exchange. **é recomendável usar a segurança &amp; Centro de conformidade para analisar ou editar qualquer uma das suas políticas de ATP**.
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -81,13 +75,9 @@ Depois de revisar a política de Links de seguros ATP para todos os usuários, c
     
 3. Escolha **Links seguros**.
     
-4. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (botão novo se parece com um sinal de adição ( **+**)).
-    
-    ![Escolha Novo para adicionar uma diretiva de segurança Links para os destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (botão novo se parece com um sinal de adição ( **+**)).<br/>![Escolha Novo para adicionar uma diretiva de segurança Links para os destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-5. Especifique o nome, a descrição e as configurações da política.
-    
-    **Exemplo:** Para configurar uma política não denominada "nenhum direto de Clickthrough do" que não permite que as pessoas em um determinado grupo em sua organização que clicar em um site específico sem proteção ATP Links de seguros, você pode especificar as seguintes configurações recomendadas: 
+5. Especifique o nome, a descrição e as configurações da política.<br/>**Exemplo:** Para configurar uma política não denominada "nenhum direto de Clickthrough do" que não permite que as pessoas em um determinado grupo em sua organização que clicar em um site específico sem proteção ATP Links de seguros, você pode especificar as seguintes configurações recomendadas: 
     
   - Na caixa **nome** , não digite nenhum clickthrough direto.
     
@@ -111,8 +101,7 @@ Depois de revisar a política de Links de seguros ATP para todos os usuários, c
 
 Conforme você configurar ou editar suas políticas de Links de seguros ATP, verá diversas opções disponíveis. Caso você esteja se perguntando quais são essas opções, a tabela a seguir descreve cada um deles e seu efeito. 
 
-> [!NOTE]
-> Existem dois tipos principais de políticas para definir ou editar: uma política padrão que se aplica a todas as pessoas e políticas adicionais que são definidas para destinatários específicos. Aqueles são diferenciados na coluna "para esta diretiva" na tabela a seguir.
+Existem dois tipos principais de políticas para definir ou editar: uma política padrão que se aplica a todas as pessoas e políticas adicionais que são definidas para destinatários específicos. Aqueles são diferenciados na coluna **para esta política** na tabela a seguir.
   
 |**Para esta política**|**Essa opção**|**Faça isto**|
 |:-----|:-----|:-----|

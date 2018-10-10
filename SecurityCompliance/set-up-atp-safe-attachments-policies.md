@@ -3,7 +3,6 @@ title: Configurar políticas de anexos do Office 365 ATP seguros
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Defina políticas de anexos seguros para proteger sua organização contra arquivos maliciosos no email.
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092937"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454278"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos do Office 365 ATP seguros
 
@@ -43,9 +42,6 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Etapa 2: Configurar uma política de anexos de seguros ATP (ou editar uma)
-
-> [!TIP]
-> Você pode configurar uma política de anexos de seguros ATP usando a segurança do Office 365 &amp; Centro de conformidade ou centro de administração do Exchange (EAC). **é recomendável usar a segurança do Office 365 &amp; Centro de conformidade**. 
   
 1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     

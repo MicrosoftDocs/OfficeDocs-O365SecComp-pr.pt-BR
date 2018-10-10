@@ -3,7 +3,6 @@ title: Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
 ms.author: derng
 author: derng
 manager: laurawi
-ms.date: 5/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,19 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Saiba como ativar ATP para o SharePoint, OneDrive e equipes, incluindo como configurar alertas para arquivos detectados.
-ms.openlocfilehash: bb99aee0887f15f065a47d691c59ce47639bdc32
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: eb3687f6afd2e7f9a3698944019bcdb8dcbff5ae
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972233"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454286"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
 
 [ATP do Office 365 para SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md) protege a sua organização contra inadvertidamente compartilhamento de arquivos mal-intencionados. Quando um arquivo mal-intencionado é detectado, esse arquivo está bloqueado para que ninguém pode abrir, copiar, mover ou compartilhá-la até que outras ações são executadas pela equipe de segurança da organização. Leia este artigo para ativar ATP para SharePoint, OneDrive e equipes, configure os alertas para ser notificado sobre arquivos detectados e siga as próximas etapas. 
   
-> [!TIP]
-> Para executar as tarefas descritas neste artigo, você deve ter as permissões necessárias atribuídas no Office 365 e na segurança &amp; Centro de conformidade.
+Para executar as tarefas descritas neste artigo, você deve ter as permissões necessárias atribuídas no Office 365 e na segurança &amp; Centro de conformidade.
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar a ATP para SharePoint, OneDrive e Microsoft Teams
 
@@ -45,14 +43,13 @@ ms.locfileid: "24972233"
     
 5. Revise (e, conforme apropriado, edite) as [políticas de Links seguros](set-up-atp-safe-links-policies.md)e as [políticas de segurança de anexos](set-up-atp-safe-attachments-policies.md) da sua organização.
     
-6. (Recomendado) Como um administrador global ou um administrador do SharePoint Online, execute o cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** com o parâmetro **DisallowInfectedFileDownload** definido como *true* . <br/><br/>Definindo o parâmetro para *true* bloqueia todas as ações (exceto excluir) para arquivos de detectados. As pessoas não podem abrir, mover, copiar ou compartilhar arquivos detectados.<br/><br/>Configuração do parâmetro como *false* bloqueia todas as ações, exceto excluir e Download. Pessoas podem optar por aceitar o risco e baixar um arquivo detectado.<br/><br/>Recomendamos a definição do parâmetro como *true*. 
+6. (Recomendado) Como um administrador global ou um administrador do SharePoint Online, execute o cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** com o parâmetro **DisallowInfectedFileDownload** definido como *true* . <br/>Definindo o parâmetro para *true* bloqueia todas as ações (exceto excluir) para arquivos de detectados. As pessoas não podem abrir, mover, copiar ou compartilhar arquivos detectados.<br/>Configuração do parâmetro como *false* bloqueia todas as ações, exceto excluir e Download. Pessoas podem optar por aceitar o risco e baixar um arquivo detectado.<br/>Recomendamos a definição do parâmetro como *true*. 
    
 7. Permitir até 30 minutos para que suas alterações à difusão em todos os centros de dados do Office 365.
     
 8. (Recomendado) Vá para configurar alertas para arquivos detectados.
     
-> [!TIP]
-> Para saber mais sobre como usar o PowerShell com o Office 365, consulte [Gerenciar o Office 365 com o PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). > Para saber mais sobre a experiência do usuário quando um arquivo foi detectado como mal-intencionado, consulte [o que fazer quando um arquivo mal-intencionado é encontrado no SharePoint Online, OneDrive ou equipes da Microsoft](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
+Para saber mais sobre como usar o PowerShell com o Office 365, consulte [Gerenciar o Office 365 com o PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). > Para saber mais sobre a experiência do usuário quando um arquivo foi detectado como mal-intencionado, consulte [o que fazer quando um arquivo mal-intencionado é encontrado no SharePoint Online, OneDrive ou equipes da Microsoft](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
   
 ## <a name="set-up-alerts-for-detected-files"></a>Configurar alertas para arquivos detectados
 
@@ -76,8 +73,7 @@ Para receber uma notificação quando um arquivo no SharePoint Online, OneDrive 
     
 7. Clique em **Salvar**.
     
-> [!TIP]
-> Para saber mais sobre alertas, consulte [criar alertas de atividade no Office 365 Security &amp; Centro de conformidade](create-activity-alerts.md). 
+Para saber mais sobre alertas, consulte [criar alertas de atividade no Office 365 Security &amp; Centro de conformidade](create-activity-alerts.md). 
   
 ## <a name="next-steps"></a>Próximas etapas
 

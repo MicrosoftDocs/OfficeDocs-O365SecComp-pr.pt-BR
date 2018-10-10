@@ -3,7 +3,6 @@ title: Exibir relatórios de segurança de email na segurança &amp; Centro de c
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Saiba como encontrar e usar os relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524726"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454338"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email na segurança &amp; Centro de conformidade
 
-Relatórios de uma variedade de segurança de email estão disponíveis na segurança &amp; Centro de conformidade para ajudá-lo a ver como os recursos antispam e antimalware no Office 365 proteção de sua organização. Se você tiver as permissões necessárias, você pode exibir esses relatórios na segurança &amp; Centro de conformidade indo para **relatórios** \> **painel**.
+Relatórios de uma variedade de segurança de email estão disponíveis na segurança &amp; Centro de conformidade para ajudá-lo a ver como os recursos antispam e antimalware no Office 365 proteção de sua organização. Se você tem as [permissões necessárias](#what-permissions-are-needed-to-view-these-reports), você pode exibir esses relatórios na segurança &amp; Centro de conformidade indo para **relatórios** \> **painel**.
   
 ![A segurança &amp; painel do Centro de conformidade pode ajudá-lo a ver onde a proteção de ameaça Avançado está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -186,7 +185,7 @@ Se você não estiver vendo dados em seus relatórios, verifique novamente se su
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Proteção de Anti-Spam de Email do Office 365](anti-spam-protection.md)
+[Proteção antispam de emails do Office 365](anti-spam-protection.md)
   
 [Relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md)
   

@@ -3,7 +3,6 @@ title: O Office 365 ATP Safe anexos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/03/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,20 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: O recurso de anexos seguros fornece verificação de tempo do clique de anexos de email. Uso de anexos seguros para proteger sua organização contra pessoas arquivos mal-intencionados enviar ou receber no email.
-ms.openlocfilehash: 0a28923bff8aa2cd987159edd3cad77ed42f80f4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524054"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454308"
 ---
 # <a name="office-365-atp-safe-attachments"></a>O Office 365 ATP Safe anexos
 
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Visão geral do Office 365 ATP Safe anexos
+
 Anexos de seguros ATP (juntamente com [Links de seguros ATP](atp-safe-links.md)) é parte da [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP). O recurso de anexos de seguros ATP verifica se os anexos de email estão mal-intencionado e, em seguida, executa a ação para proteger sua organização. O recurso de anexos de seguros ATP protege a sua organização de acordo com [anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) definidas por seu Office 365 global ou administradores de segurança. 
   
-Começando no tardia de 2018 de março e sobre próximas semanas, proteção ATP é sendo estendida para arquivos no SharePoint Online, o OneDrive for Business e Teams da Microsoft. Para saber mais, consulte [Office 365 avançadas Threat Protection for SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md).
+Recentemente, proteção ATP foi estendida para arquivos no SharePoint Online, o OneDrive for Business e Teams da Microsoft. Para saber mais, consulte [Office 365 avançadas Threat Protection for SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md).
        
-## <a name="how-it-works"></a>Como funciona
+### <a name="how-it-works"></a>Como funciona
 
 O recurso de anexos de seguros ATP verifica os anexos de email de pessoas da sua organização. Quando uma política de anexos de seguros ATP esteja in-loco e alguém coberto por que a política views seus emails no Office 365, seus anexos de email são verificados e ações adequadas são colocadas, com base nas suas políticas de anexos de ATP seguros. Dependendo de como as políticas são definidas, as pessoas podem continuar trabalhando sem saber que foram enviadas arquivos mal-intencionados.
   
@@ -41,7 +42,7 @@ Diretivas de anexos de seguros ATP podem ser aplicadas a pessoas específicas ou
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Como obter ATP anexos de seguros
 
-O recurso de anexos de seguros ATP é parte da proteção de ameaça avançadas, que está incluído no Office 365 Enterprise E5. Se sua organização estiver usando outra assinatura do Office 365 Enterprise, a proteção avançada de ameaça pode ser adquirida como um complemento. (Como um administrador global, no Centro de administração do Office 365, escolha **faturamento** \> **Adicionar assinaturas**.) Para obter mais informações, consulte [Descrição do serviço de plataforma do Office 365: segurança do Office 365 &amp; Centro de conformidade](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [comprar ou editar um complemento para o Office 365 para empresas](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+O recurso de anexos de seguros ATP faz parte do avançada proteção contra ameaças, que está incluído no Microsoft 365 Enterprise, Office 365 Enterprise E5 e Microsoft 365 Business. Se sua organização estiver usando outra assinatura do Office 365 Enterprise, a proteção avançada de ameaça pode ser adquirida como um complemento. (Como um administrador global, no Centro de administração do Office 365, escolha **faturamento** \> **Adicionar assinaturas**.) Para obter mais informações, consulte [Descrição do serviço de plataforma do Office 365: segurança do Office 365 &amp; Centro de conformidade](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [comprar ou editar um complemento para o Office 365 para empresas](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
   
 O recurso de anexos de seguros ATP aplica-se quando:
   
@@ -49,7 +50,7 @@ O recurso de anexos de seguros ATP aplica-se quando:
     
 - Os usuários entrou no Office 365 usando a conta do trabalho ou da escola. (Consulte [entrar no Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Como saber se a proteção de anexos de seguros ATP é in-loco
+### <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Como saber se a proteção de anexos de seguros ATP é in-loco
 
  [Anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) devem ser definidas em ordem para proteção de anexos de seguros ATP estar em vigor. 
   
@@ -67,7 +68,9 @@ Além disso, a tabela a seguir descreve alguns cenários de exemplo. Em todos os
    
 ## <a name="submitting-files-for-malware-analysis"></a>Como enviar arquivos para análise de malware
 
-Se você receber um arquivo que você deseja pedir analisar a Microsoft, visite o [envio de um arquivo para análise de malware](https://aka.ms/wdsi/submit).
+- Se você receber um arquivo que você deseja pedir analisar a Microsoft, visite o [envio de um arquivo para análise de malware](https://aka.ms/wdsi/submit).
+
+- Se você receber uma mensagem de email (com ou sem um anexo) que você deseja enviar à Microsoft para análise, use o [suplemento de mensagem de relatório](enable-the-report-message-add-in.md).
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
