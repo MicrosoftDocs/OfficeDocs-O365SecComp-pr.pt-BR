@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Essa solução informa a você que o mais comuns segurança na Internet ataques podem ter aparência no Office 365 e como responder a eles
-ms.openlocfilehash: 3b72b9bf8c68df2fcc1233b56ee33eaf45695bfe
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524471"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494072"
 ---
 # <a name="office-365-security-incident-response"></a>Resposta a incidentes de segurança do Office 365
 
@@ -41,9 +41,14 @@ Esta série de artigo ajuda a entender o que um determinado tipo de ataque pode 
 Volte mais tarde mensalmente mais artigos serão adicionados ao longo do tempo.
 
 ## <a name="detect-and-remediate-articles"></a>Detectar e remediar artigos
+
 - [Detectar e corrigir a concessão de autorização ilícita no Office 365](detect-and-remediate-illicit-consent-grants.md)
 - [Detectar e corrigir ataques de injeção a regras do Outlook e formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
  
+## <a name="incident-response-articles"></a>Artigos de resposta a incidentes
+
+- [Responder a uma conta de email comprometida no Office 365](responding-to-a-compromised-email-account.md)
+
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger o Office 365 como um cybersecurity pro
 Sua assinatura do Office 365 é fornecido com um conjunto avançado de recursos de segurança que você pode usar para proteger seus dados e seus usuários.  Use o [mapa de segurança do Office 365: principais prioridades para os primeiros 30 dias, 90 dias e além](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar as práticas recomendadas para proteger seu locatário do Office 365 do Microsoft.
 - Tarefas para realizar nos primeiros 30 dias.  Elas têm efeito imediato e são baixo impacto para seus usuários.

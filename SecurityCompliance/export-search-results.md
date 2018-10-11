@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportar resultados da pesquisa de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para um computador local. Resultados de email Emaill são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
-ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962957"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494062"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportar resultados de pesquisa de conteúdo da segurança do Office 365 &amp; Centro de conformidade
 
@@ -283,7 +283,7 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
     
     Se você optar por exportar itens indexados parcialmente, itens de caixa de correio parcialmente indexados são exportados em um arquivo PST separado independentemente da opção que você escolher em **Exchange exportar conteúdo como**.
 
-- Se os itens indexados parcialmente forem retornados na pesquisa resulta (porque outras propriedades de itens indexados parcialmente correspondem aos critérios de pesquisa), e em seguida, essas parcialmente indexados são exportados com os resultados de pesquisa comum. Portanto, se você optar por exportar itens indexados e itens indexados parcialmente (selecionando a opção de exportação de **todos os itens, incluindo aquelas que têm o formato não reconhecido, são criptografados, ou não foram indexados por outros motivos** ), os itens indexados parcialmente exportados com o reslts regular será listado no relatório Results.csv. Eles não serão listados no relatório items.csv não indexados.
+- Se os itens indexados parcialmente forem retornados na pesquisa resulta (porque outras propriedades de itens indexados parcialmente correspondem aos critérios de pesquisa), e em seguida, essas parcialmente indexados são exportados com os resultados de pesquisa comum. Portanto, se você optar por exportar itens indexados e itens indexados parcialmente (selecionando a opção de exportação de **todos os itens, incluindo aquelas que têm o formato não reconhecido, são criptografados, ou não foram indexados por outros motivos** ), os itens indexados parcialmente exportados com os resultados regulares serão listados no relatório Results.csv. Eles não serão listados no relatório items.csv não indexados.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportando mensagens individuais ou arquivos PST
   
