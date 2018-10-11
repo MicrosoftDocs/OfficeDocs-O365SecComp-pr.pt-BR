@@ -3,7 +3,7 @@ title: Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341426"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495515"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -89,7 +89,7 @@ Não. Se você estiver usando o Exchange Online com o serviço de gerenciamento 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Minha organização tem uma implantação híbrida do Exchange. Posso usar esse recurso?
 
-No local os usuários podem enviar mensagens criptografadas usando regras de fluxo de correio Exchange Online. Para fazer isso, você precisa rotear emails através do Exchange Online.
+No local os usuários podem enviar mensagens criptografadas usando regras de fluxo de correio Exchange Online. Para fazer isso, você precisa rotear emails através do Exchange Online. Para obter mais informações, consulte [parte 2: configurar o email para o fluxo do seu servidor de email para o Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>O cliente de email que precisa ser usado para criar uma mensagem criptografada de OME? Quais aplicativos são suportados para o envio de mensagens protegidas?
 
@@ -119,7 +119,7 @@ Sim. Use regras de fluxo de correio no Exchange Online para criptografar automat
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Posso automaticamente criptografar mensagens, configurando políticas em Data Loss Prevention (DLP) através de segurança &amp; Centro de conformidade?
 
-No momento você pode apenas definir as regras de fluxo de email no Exchange Online. Criptografia atualmente não é suportada no DLP através de segurança &amp; Centro de conformidade.
+Sim! Você pode configurar regras de fluxo de correio no Exchange Online ou por meio de DLP na segurança &amp; Centro de conformidade.
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Pode abrir o criptografadas mensagens enviadas para uma caixa de correio compartilhadas?
 
