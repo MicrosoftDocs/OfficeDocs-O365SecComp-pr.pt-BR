@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/5/2018
+ms.date: 10/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Proteção antiphishing de ATP, parte do Office 365 avançada proteção contra ameaças, pode ajudar a proteger sua organização contra ataques mal-intencionados phishing baseados em representação e outros ataques de phishing. Se você for um administrador de segurança ou o Office 365 Enterprise global, você pode configurar políticas de AntiPhishing ATP. Phishing ataques vêm em uma variedade de formulários de ataques baseados em mercadorias lança direcionado phishing ou whaling. Com a complexidade crescente, é difícil para o mesmo um olhar treinado identificar alguns desses ataques sofisticados. Felizmente, pode ajudar a proteção de ameaça avançadas do Office 365. Você pode configurar uma política de AntiPhishing ATP para ajudar a garantir que sua organização seja protegida contra esses ataques.
-ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 37a38863296ab87feaade93b7939029b9306ec30
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955443"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496562"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurar as políticas de antiphishing ATP do Office 365
 
