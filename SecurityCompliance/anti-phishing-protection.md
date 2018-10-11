@@ -3,7 +3,7 @@ title: Proteção antiphishing no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/05/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 description: O Office 365 oferece uma variedade de proteção contra ataques de phishing, por padrão e também através de ofertas adicionais, como antiphishing ATP. Este tópico apresenta os recursos online que você pode usar para aprender sobre e implementar antiphishing opções e estratégias no Office 365.
-ms.openlocfilehash: b1a0f09aa34cf1bb2c57fcf415923568c063522a
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: 163d03ee49ccf18f7d50324e0ac13ac6d219a4ea
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435098"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496875"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Proteção antiphishing no Office 365
 
@@ -31,7 +31,7 @@ Antes de fazer qualquer alteração à sua configuração do Office 365, certifi
   
 O mais importante que você pode fazer para proteger seu ambiente é instruir seus usuários sobre os riscos e os sinais de aviso de ataques de phishing. Para começar, se familiarize os usuários com as informações [proteger-se contra os esquemas de phishing e outras formas de fraude on-line](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
   
-Para organizações do Office 365 com o Office Enterprise E5, você pode usar antiphishing ATP na segurança &amp; Centro de conformidade. ATP antiphishing aplica um conjunto de modelos de aprendizado de máquina junto com os algoritmos de detecção de representação às mensagens de entrada para fornecer proteção de mercadorias e lança ataques de phishing. ATP antiphishing protege a sua organização de acordo com as políticas definidas por seu Office 365 global ou administradores de segurança. Para saber mais, consulte [os recursos antiphishing ATP no Office 365](atp-anti-phishing.md) e [Configurar políticas de AntiPhishing ATP no Office 365](set-up-atp-anti-phishing-policies.md).
+Para organizações do Office 365 com o Office Enterprise E5, você pode usar antiphishing ATP na segurança &amp; Centro de conformidade. ATP antiphishing aplica um conjunto de modelos de aprendizado de máquina junto com os algoritmos de detecção de representação às mensagens de entrada para fornecer proteção de mercadorias e lança ataques de phishing. ATP antiphishing protege a sua organização de acordo com as políticas definidas por seu Office 365 global ou administradores de segurança. Para saber mais, consulte [os recursos antiphishing ATP no Office 365](atp-anti-phishing.md) e [Configurar políticas de AntiPhishing no Office 365](set-up-anti-phishing-policies.md).
   
 Para obter mais detalhes sobre como o Office 365 é configurada por padrão para proteger contra ataques de phishing, consulte [como o Office 365 valida From: endereço para evitar phishing](how-office-365-validates-the-from-address.md).
   

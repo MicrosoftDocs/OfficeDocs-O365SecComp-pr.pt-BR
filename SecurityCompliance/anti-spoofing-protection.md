@@ -3,7 +3,7 @@ title: Proteção antifalsificação no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artigo descreve como Office 365 reduz contra ataques de phishing que usa falsificado domínios do remetente, ou seja, os domínios que são falsificados. Ele realiza isso analisando as mensagens e bloquear aqueles que podem ser autenticados neithe usando os métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing organizações no Office 365 estão expostas a.
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559216"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496895"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -25,7 +25,7 @@ Este artigo descreve como Office 365 reduz contra ataques de phishing que usa fa
   
 Este artigo também descreve por que essa alteração está sendo feita, como os clientes podem se preparar para que essa alteração, como visualizar mensagens que serão afetadas, como a ser relatado nas mensagens, como reduzir os falsos positivos, bem como os remetentes à Microsoft devem se preparar para isso Altere.
   
-Tecnologia de antifalsificação da Microsoft é inicialmente implantada seus clientes de E5 e a proteção de ameaça avançadas (ATP) do Office 365. No entanto, devido ao modo como todos os seus filtros de aprenderem uns dos outros clientes de não-ATP e até mesmo usuários de Outlook.com também podem ser afetados.
+A tecnologia da Microsoft antifalsificação inicialmente foi implantada para suas organizações que tinham uma assinatura do Office 365 Enterprise E5 ou comprou o complemento de proteção de ameaça avançadas (ATP) do Office 365 da assinatura deles. A partir de outubro de 2018, podemos estendi a proteção para as organizações que possuem o Exchange Online Protection (EOP) também. Além disso, por causa da maneira que todos nossos filtros Saiba uns dos outros, Outlook.com usuários também podem ser afetados.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Como a falsificação é usada nos ataques de phishing
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Após antifalsificação, se você for um cliente de proteção avançada de ameaça ou E5, o valor de compauth é marcado (não-ATP e não-E5 os clientes não são afetados):
+Após antifalsificação, se você tiver o Office 365 Enterprise E5, EOP ou ATP, o valor de compauth é marcado:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Esse recurso está atualmente em desenvolvimento. Como obter mais detalhes são 
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Noções básicas sobre como spam, phishing e phishing avançadas detecções são combinadas
 
-Clientes do Exchange Online - ATP e não-ATP - são capazes de especificar as ações a serem tomadas quando o serviço identifica mensagens como malware, spam, phishing, spam de alta confiabilidade e em massa. No entanto, com a introdução das novas políticas de AntiPhishing para clientes ATP e o fato de que uma mensagem pode alcance vários tipos de detecção (por exemplo, malware, phishing e representação de usuário), pode haver alguma confusão sobre qual política se aplica. 
+Organizações que usam o Exchange Online, com ou sem ATP, podem especificar quais ações tomar quando o serviço identifica mensagens como malware, spam, phishing, spam de alta confiabilidade e em massa. Com as políticas de AntiPhishing ATP para clientes ATP e as políticas de AntiPhishing para clientes do EOP e o fato de que uma mensagem pode alcance vários tipos de detecção (por exemplo, malware, phishing e representação de usuário), pode haver alguma confusão sobre qual política se aplica. 
   
 Em geral, a diretiva aplicada a uma mensagem é identificada no cabeçalho X-Forefront-Antispam-Report na propriedade CAT (categoria). 
   
 |**Priority**|**Política**|**Categoria**|**Onde gerenciadas?**|**Aplica-se a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todos os clientes  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos os clientes  <br/> |
-|3  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos os clientes  <br/> |
-|4  <br/> |Falsificação  <br/> |REALIZAR A FALSIFICAÇÃO  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553), [inteligência de falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Somente ATP  <br/> |
-|5  <br/> |Spam  <br/> |SPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos os clientes  <br/> |
-|6  <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos os clientes  <br/> |
-|7  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Somente ATP  <br/> |
-|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Somente ATP  <br/> |
+|1   <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|3   <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|4   <br/> |Falsificação  <br/> |REALIZAR A FALSIFICAÇÃO  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553), [inteligência de falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas as organizações  <br/> |
+|5   <br/> |Spam  <br/> |SPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|6   <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|7   <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP  <br/> |
+|8   <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP <br/> |
    
 Se você tiver vários diferentes políticas AntiPhishing, aquele com a prioridade mais alta serão aplicadas. Por exemplo, suponha que você tem duas políticas:
   
 |**Política**|**Priority**|**Representação de domínio do usuário**|**Antifalsificação**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Ativado  <br/> |Desativado  <br/> |
-|B  <br/> |2  <br/> |Desligado  <br/> |Em  <br/> |
+|A  <br/> |1   <br/> |Ativado  <br/> |Desativado  <br/> |
+|B  <br/> |2   <br/> |Desligado  <br/> |Em  <br/> |
    
 Se uma mensagem entra em ação e é identificada como representação de falsificação e o usuário e o mesmo conjunto de usuários destinado a política A e B de política, e em seguida, a mensagem é tratada como um falso mas nenhuma ação é aplicada desde e falsificação está desativado , e realizar a FALSIFICAÇÃO é executado em uma prioridade maior (4) que a representação de usuário (8).
   
@@ -683,7 +683,7 @@ A própria Microsoft primeiro adotado esse recurso várias semanas antes de impl
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft trará esse recurso para o Outlook.com e não - avançadas proteção contra ameaças de clientes do Office 365?
 
-Proteção antifalsificação será inicialmente implementada para os clientes ATP/E5 e pode ser liberada no futuro para seus outros usuários. No entanto, se contiver, pode haver alguns recursos que não são aplicados, como relatórios e substitui personalizado.
+A tecnologia da Microsoft antifalsificação inicialmente foi implantada para suas organizações que tinham uma assinatura do Office 365 Enterprise E5 ou comprou o complemento de proteção de ameaça avançadas (ATP) do Office 365 da assinatura deles. A partir de outubro de 2018, podemos estendi a proteção para as organizações que possuem o Exchange Online Protection (EOP) também. No futuro, podemos pode liberá-la para o Outlook.com. No entanto, se o fizermos, pode haver alguns recursos que não são aplicados, como relatórios e substitui personalizado.
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Como posso relatar mensagens de spam ou não spam volta para a Microsoft?
 

@@ -3,7 +3,7 @@ title: Configurar seu locatário do Office 365 para aumentar a segurança
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: O orienta durante a configuração recomendada para configurações de todo o locatário que afetam a segurança do seu ambiente do Office 365. Suas necessidades de segurança podem exigir mais ou menos segurança. Use estas recomendações como um ponto de partida.
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013865"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496865"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar seu locatário do Office 365 para aumentar a segurança
 
@@ -32,7 +32,7 @@ A segurança do Office 365 &amp; Centro de conformidade inclui recursos de prote
   
 |Área * * *|Inclui um padrão política * * *|Recomendação * * *|
 |:-----|:-----|:-----|
-|**ATP AntiPhishing** <br/> |Não  <br/> | Se você tiver um domínio personalizado, crie uma política de AntiPhishing para proteger as contas de email dos seus usuários mais valiosos, como o CEO e proteger seu domínio. Revise a [Configurar uma política de AntiPhishing ATP](set-up-atp-anti-phishing-policies.md) e criar uma política utilizando o exemplo como um guia: "exemplo: política de AntiPhishing para proteger um usuário e um domínio."|
+|**AntiPhishing** <br/> |Sim  <br/> | Se você tiver um domínio personalizado, crie uma política de AntiPhishing para proteger as contas de email dos seus usuários mais valiosos, como o CEO e proteger seu domínio. Revise a [Configurar uma política de AntiPhishing](set-up-anti-phishing-policies.md) e criar uma política utilizando o exemplo como um guia: "exemplo: política de AntiPhishing para proteger um usuário e um domínio."|
 |**Mecanismo antimalware** <br/> |Sim  <br/> | Edite a política padrão:  <br/> Tipos de filtro do anexo comuns de • — selecione ativado  <br/><br>  Você também pode criar políticas de filtro de malware personalizado e aplicá-las a usuários especificados, grupos ou domínios em sua organização.  <br/> <br> Mais informações:  <br/> • [Proteção contra malware](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> • [Configurar políticas de antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
 |**Anexos seguros de ATP** <br/> |Não  <br/> | Na página principal para anexos seguros, protege arquivos no SharePoint, OneDrive e Teams da Microsoft, marcando essa caixa:  <br/>  • Ativar ATP para SharePoint, OneDrive e equipes da Microsoft  <br/> <br> Adicione uma nova diretiva de segurança de anexo com estas configurações:  <br/>  • Bloco — bloquear a atuais e futuros emails e anexos com malware detectado (escolher essa opção)  <br/>  • Enable redirecionar — (essa caixa de seleção e insira um endereço de email, como uma conta de administrador ou quarentena)  <br/>  • Aplicar a seleção acima se esgotar o tempo limite malware faça a verificação de anexos ou ocorrerá erro (essa caixa de seleção)  <br/>  • Aplicadas ao — domínio do destinatário é (selecione seu domínio)  <br/>  <br>Obter mais informações: [Configurar políticas de anexos seguros ATP do Office 365](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Links de ATP seguros** <br/> |Sim  <br/> | Adicione essa configuração para a política padrão para toda a organização:  <br/> • Links de seguros de uso em: Office 365 ProPlus, Office para iOS e Android (Selecione esta opção).  <br/> <br>Política recomendada para destinatários específicos:  <br/>  • URLs serão reconfigurados e verificadas em relação a uma lista de links mal-intencionado conhecidos, quando o usuário clica no link (Selecione esta opção).  <br/>  • Anexos seguros de uso para examinar o conteúdo baixável (essa caixa de seleção).  <br/>  • Aplicadas ao — domínio do destinatário é (selecione seu domínio).  <br/> <br> Obter mais informações: [links de seguros ATP do Office 365](atp-safe-links.md).  <br/> |

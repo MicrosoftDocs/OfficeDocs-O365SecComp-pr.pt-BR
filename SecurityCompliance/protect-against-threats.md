@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011263"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496845"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças do Office 365
 
@@ -54,7 +54,7 @@ Configure diretivas para gerenciar a falsificação, proteger contra ataques de 
     
 - [Saiba mais sobre inteligência de falsificação](learn-about-spoof-intelligence.md)
     
-- [Configurar políticas de AntiPhishing ATP](set-up-atp-anti-phishing-policies.md)
+- [Configurar políticas de AntiPhishing](set-up-anti-phishing-policies.md)
     
 - [Configurar as políticas de Links seguros de ATP](set-up-atp-safe-links-policies.md)
     
@@ -68,7 +68,7 @@ Obter um manual sobre criptografia, configurar políticas de gerenciamento de di
     
 - [Configure a criptografia no Office 365 Enterprise](set-up-encryption.md)
     
-- [OME (Criptografia de Mensagem do Office 365)](ome.md)
+- [OME (Criptografia de Mensagens do Office 365)](ome.md)
     
 - [Implementar Traga sua própria chave (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
