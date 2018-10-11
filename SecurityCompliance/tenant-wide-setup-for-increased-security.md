@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: O orienta durante a configuração recomendada para configurações de todo o locatário que afetam a segurança do seu ambiente do Office 365. Suas necessidades de segurança podem exigir mais ou menos segurança. Use estas recomendações como um ponto de partida.
-ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 5c989b5a8abace686df50b6847a0a182393927d5
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496865"
+ms.locfileid: "25498097"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar seu locatário do Office 365 para aumentar a segurança
 
@@ -37,7 +37,7 @@ A segurança do Office 365 &amp; Centro de conformidade inclui recursos de prote
 |**Anexos seguros de ATP** <br/> |Não  <br/> | Na página principal para anexos seguros, protege arquivos no SharePoint, OneDrive e Teams da Microsoft, marcando essa caixa:  <br/>  • Ativar ATP para SharePoint, OneDrive e equipes da Microsoft  <br/> <br> Adicione uma nova diretiva de segurança de anexo com estas configurações:  <br/>  • Bloco — bloquear a atuais e futuros emails e anexos com malware detectado (escolher essa opção)  <br/>  • Enable redirecionar — (essa caixa de seleção e insira um endereço de email, como uma conta de administrador ou quarentena)  <br/>  • Aplicar a seleção acima se esgotar o tempo limite malware faça a verificação de anexos ou ocorrerá erro (essa caixa de seleção)  <br/>  • Aplicadas ao — domínio do destinatário é (selecione seu domínio)  <br/>  <br>Obter mais informações: [Configurar políticas de anexos seguros ATP do Office 365](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Links de ATP seguros** <br/> |Sim  <br/> | Adicione essa configuração para a política padrão para toda a organização:  <br/> • Links de seguros de uso em: Office 365 ProPlus, Office para iOS e Android (Selecione esta opção).  <br/> <br>Política recomendada para destinatários específicos:  <br/>  • URLs serão reconfigurados e verificadas em relação a uma lista de links mal-intencionado conhecidos, quando o usuário clica no link (Selecione esta opção).  <br/>  • Anexos seguros de uso para examinar o conteúdo baixável (essa caixa de seleção).  <br/>  • Aplicadas ao — domínio do destinatário é (selecione seu domínio).  <br/> <br> Obter mais informações: [links de seguros ATP do Office 365](atp-safe-links.md).  <br/> |
 |**Anti-Spam (filtragem de email)** <br/> |Sim  <br/> | O que deve tomar para:  <br/>  • Muito spam — escolha as configurações personalizadas e editar a política de filtro de spam padrão.  <br/>  • Inteligência de falsificação — examine remetentes que são falsificação de seu domínio. Bloquear ou permitir desses remetentes.<br/>  <br>Obter mais informações: [Proteção de Anti-Spam de Email do Office 365](anti-spam-protection.md).  <br/> |
-|**DKIM (DomainKeys identificado Mail)** <br/> |Sim  <br/> |DKIM é um processo de autenticação que pode ajudar a proteger os remetentes e destinatários para falsificado (FALSO) e email de phishing. Seu locatário inclui uma assinatura padrão para seu domínio. Crie uma assinatura de verificação adicional se você adicionar domínios personalizados ao seu locatário.<br/> <br>Obter mais informações: [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
+|**DKIM (DomainKeys identificado Mail)** <br/> |Sim  <br/> |DKIM é um processo de autenticação que pode ajudar a proteger os remetentes e destinatários para falsificado (FALSO) e email de phishing. Seu locatário inclui uma assinatura padrão para seu domínio. Crie uma assinatura de verificação adicional se você adicionar domínios personalizados ao seu locatário.<br/> <br>Obter mais informações: [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) <br/> |
    
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios e painéis na segurança &amp; Centro de conformidade
 

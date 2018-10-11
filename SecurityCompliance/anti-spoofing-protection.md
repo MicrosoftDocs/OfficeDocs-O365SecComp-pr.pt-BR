@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artigo descreve como Office 365 reduz contra ataques de phishing que usa falsificado domínios do remetente, ou seja, os domínios que são falsificados. Ele realiza isso analisando as mensagens e bloquear aqueles que podem ser autenticados neithe usando os métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing organizações no Office 365 estão expostas a.
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496895"
+ms.locfileid: "25498107"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -55,7 +55,7 @@ Segunda, falsificadas mensagens criar incerteza para usuários que saber sobre m
   
 A mensagem acima provém da Microsoft, mas ao mesmo tempo, os usuários são usados para obtenção de mensagens de phishing que pode fazer com que um usuário clicar em um link e abandonada suas credenciais, baixando malware ou responder a uma mensagem com conteúdo confidencial. Como é difícil dizer a diferença entre uma redefinição de senha real e um falso, muitos usuários ignoram essas mensagens, indicá-las como spam ou desnecessariamente indicá as mensagens de volta para a Microsoft como golpes de phishing perdidas.
     
-Para interromper a falsificação, o setor de filtragem de email desenvolveu protocolos de autenticação de email como [SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx), [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)e [DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx). DMARC impede a falsificação examinando o remetente da mensagem - aquele que o usuário vê em seu cliente de email (nos exemplos acima, isto é service.outlook.com, outlook.com e accountprotection.microsoft.com) - com o domínio que transmita SPF ou DKIM. Ou seja, o domínio que o usuário vê tiverem sido autenticado e, portanto, não falsificado. Para obter uma discussão mais completa, consulte a seção " *Noções básicas sobre por que a autenticação de email nem sempre é suficiente para interromper a falsificação"* posteriormente contidas neste documento. 
+Para interromper a falsificação, o setor de filtragem de email desenvolveu protocolos de autenticação de email como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impede a falsificação examinando o remetente da mensagem - aquele que o usuário vê em seu cliente de email (nos exemplos acima, isto é service.outlook.com, outlook.com e accountprotection.microsoft.com) - com o domínio que transmita SPF ou DKIM. Ou seja, o domínio que o usuário vê tiverem sido autenticado e, portanto, não falsificado. Para obter uma discussão mais completa, consulte a seção "*Noções básicas sobre por que a autenticação de email nem sempre é suficiente para interromper a falsificação"* posteriormente contidas neste documento. 
   
 No entanto, o problema é que a autenticação de email registros são opcionais, não é necessário. Portanto, enquanto os domínios com políticas de autenticação forte like microsoft.com e skype.com estão protegidos contra falsificação, domínios que publicar as políticas de autenticação mais fracas ou nenhuma diretiva nisso, são alvos de sendo falsificado. A partir de março de 2018, somente 9% dos domínios das empresas da Fortune 500 publicar as políticas de autenticação de alta segurança de email. O restante 91% pode ser falsificado pelo phisher e, a menos que o filtro de email detecta-lo usando a diretiva de outra, pode ser entregue a um usuário final e levando-las:
   
@@ -65,7 +65,7 @@ A proporção de empresas de pequeno a médio porte que não estão na Fortune 5
   
 Este é um grande problema porque enquanto as empresas podem não estar cientes de como funciona a autenticação de email, phishers entender e tirar proveito da falta de-lo.
   
-Para obter informações sobre como configurar o SPF, DKIM e DMARC, consulte a seção " *os clientes do Office 365"* mais adiante neste documento. 
+Para obter informações sobre como configurar o SPF, DKIM e DMARC, consulte a seção "*os clientes do Office 365"* mais adiante neste documento. 
   
 ## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Parando falsificação com a autenticação de email implícita
 
@@ -619,11 +619,11 @@ Se você é um administrador que atualmente envia mensagens à Microsoft, Office
 
 Se você for um cliente do Office 365 e usar o Office 365 para enviar emails de saída:
   
-- Para seus domínios, [Configure SPF no Office 365 para ajudar a impedir a falsificação](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)
+- Para seus domínios, [Configure SPF no Office 365 para ajudar a impedir a falsificação](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- Para seus domínios principais, [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)
+- Para seus domínios principais, [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [É recomendável configurar o registros DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx) para seu domínio para determinar quem são os seus remetentes legítimos 
+- [É recomendável configurar o registros DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) para seu domínio para determinar quem são os seus remetentes legítimos 
     
 Microsoft não oferece diretrizes detalhadas de implementação para cada um dos SPF, DKIM e DMARC. No entanto, há muitas informações publicadas on-line. Também há 3º empresas de terceiros dedicado a ajudar sua organização a configurar registros de autenticação de email.
   

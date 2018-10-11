@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimize o potencial de uma violação de dados ou uma conta comprometida seguindo estas práticas recomendadas.
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524617"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498087"
 ---
 # <a name="security-best-practices-for-office-365"></a>Práticas recomendadas de segurança para Office 365
 
@@ -70,9 +70,9 @@ Implementar o rich conjunto no Exchange Online Protection de recursos e obter ma
     
 - Se você estiver usando um domínio personalizado para sua organização no Office 365, configure SPF, DKIM e DMARC para validar emails enviados por sua organização e para ajudar a impedir a falsificação:
     
-  - [Configurar SPF no Office 365 para ajudar a impedir a falsificação](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Configurar SPF no Office 365 para ajudar a impedir a falsificação](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
-  - [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Verificação de uso para validar emails de saída enviados a partir de seu domínio personalizado no Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
   - [Use DMARC para validar emails no Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
