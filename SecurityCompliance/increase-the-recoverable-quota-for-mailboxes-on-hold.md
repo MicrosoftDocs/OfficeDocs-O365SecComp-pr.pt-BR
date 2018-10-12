@@ -3,7 +3,7 @@ title: Aumentar a cota de Itens Recuperáveis para caixas de correio em espera
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Habilite a caixa de correio de arquivo morto e ativar o arquivamento para aumentar o tamanho da pasta itens recuperáveis para uma caixa de correio no Office 365 expansão automática. '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522272"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar a cota de Itens Recuperáveis para caixas de correio em espera
 
@@ -35,7 +35,7 @@ Para ajudar a reduzir a chance de exceder esse limite, a cota de armazenamento p
 |**Cota de armazenamento total para a pasta Itens Recuperáveis** <br/> |Ilimitado  <br/> |Ilimitado  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>A cota de armazenamento inicial para a caixa de correio de arquivo morto é de 100 GB para usuários com uma licença do Exchange Online (plano 2). No entanto, quando expansão automática arquivamento está ativado para caixas de correio em espera, a cota de armazenamento para ambos os a caixa de correio de arquivo morto e a pasta itens recuperáveis é aumentado para 110 GB. Espaço de armazenamento de arquivo morto adicional será provisionado quando necessário que resulta em uma quantidade ilimitada de armazenamento de arquivamento. Para obter mais informações sobre a expansão automática arquivamento, consulte [Overview of arquivamento ilimitado no Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>A cota de armazenamento inicial para a caixa de correio de arquivo morto é de 100 GB para usuários com uma licença do Exchange Online (plano 2). No entanto, quando a expansão automática de arquivamento é ativada para caixas de correio em espera, a cota de armazenamento para a caixa de correio de arquivo morto e a pasta itens recuperáveis é aumentada para 110 GB. Espaço de armazenamento de arquivo morto adicional será provisionado quando necessário que resulta em uma quantidade ilimitada de armazenamento de arquivamento. Para obter mais informações sobre a expansão automática arquivamento, consulte [Overview of arquivamento ilimitado no Office 365](unlimited-archiving.md). 
   
 Quando a cota de armazenamento da pasta Itens Recuperáveis na caixa de correio principal de uma caixa de correio em espera está quase atingindo o limite, você pode fazer o seguinte:
   

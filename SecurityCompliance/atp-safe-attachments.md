@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: O recurso de anexos seguros fornece verificação de tempo do clique de anexos de email. Uso de anexos seguros para proteger sua organização contra pessoas arquivos mal-intencionados enviar ou receber no email.
-ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: a43f5aac30f074f6331d809c800005596a721204
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522258"
 ---
 # <a name="office-365-atp-safe-attachments"></a>O Office 365 ATP Safe anexos
 

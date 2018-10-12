@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crie uma política de arquivamento e exclusão no Office 365 que automaticamente move itens à caixa de correio de arquivo morto do usuário.
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522292"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar uma política de arquivamento e exclusão de caixas de correio em sua organização do Office 365
 
@@ -60,7 +60,7 @@ A primeira etapa é habilitar a caixa de correio de arquivamento para cada usuá
 > [!NOTE]
 > Você pode habilitar caixas de correio de arquivo morto qualquer momento durante esse processo, desde que elas são habilitadas em algum momento antes de concluir o processo. Se uma caixa de correio de arquivo morto não estiver habilitada, nenhuma ação é executada em todos os itens que tenham uma política de arquivamento atribuída a ela. 
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta de administrador global.
     
@@ -238,7 +238,7 @@ Quando uma nova caixa de correio é criada, uma política de retenção denomina
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Opcional) Etapa 5: Executar o Assistente de pasta gerenciada para aplicar as novas configurações
 <a name="step3"> </a>
 
-Depois de aplicar a nova política de retenção a caixas de correio na etapa 4, pode demorar até sete dias no Exchange Online para que as novas configurações de retenção a ser aplicado às caixas de correio. Isso acontece porque um processo chamado as Assistente de pasta gerenciada caixas de correio de processos de uma vez a cada 7 dias. Em vez de esperar o Assistente de pasta gerenciada executar, você pode forçar isso aconteça, executando o cmdlet **Start-ManagedFolderAssistant** no PowerShell do Exchange Online. 
+Depois de aplicar a nova política de retenção a caixas de correio na etapa 4, pode demorar até sete dias no Exchange Online para que as novas configurações de retenção a ser aplicado às caixas de correio. Isso acontece porque um processo chamado as Assistente de pasta gerenciada caixas de correio de processos de uma vez a cada 7 dias. Em vez de esperar o Assistente de pasta gerenciada executar, você pode forçar isso aconteça, executando o cmdlet **Start-ManagedFolderAssistant** uma PowerShell no Exchange Online. 
   
  **o que acontece quando você executa o Assistente de pasta gerenciada?** Ele aplica as configurações na política de retenção inspecionando itens na caixa de correio e determinar se eles estão sujeitos a retenção. Ele então carimba itens sujeitos a retenção com a marca de retenção apropriadas e, em seguida, executa a ação de retenção especificado itens fora da sua idade de retenção. 
   

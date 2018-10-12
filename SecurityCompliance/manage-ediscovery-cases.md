@@ -3,19 +3,19 @@ title: Gerenciar casos de descoberta eletrônica no Office 365 Security &amp; Ce
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Usar a segurança do Office 365 &amp; Centro de conformidade para criar pausas de descoberta eletrônica e para acessar e gerenciar casos do eDiscovery em sua organização.
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038324"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522302"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gerenciar casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade
 
@@ -87,7 +87,7 @@ A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônic
     
 4. Após ter adicionado todos os usuários, clique em **concluído**, clique em **Salvar** para salvar as alterações ao grupo de funções e, em seguida, clique em **Fechar**.
     
-[Return to top](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>Etapa 2: Criar um novo caso
 <a name="step2_1"> </a>
@@ -108,8 +108,6 @@ A próxima etapa é criar um novo caso de descoberta eletrônica. Você deve ser
     
     > [!TIP]
     > Depois de criar um novo caso, você poderá renomeá-lo a qualquer momento. Basta clicar no nome da ocorrência na página de **Descoberta eletrônica** . Na página **Gerenciar neste caso** submenu, alterar o nome exibido na caixa em **nome**e, em seguida, salvar as alterações. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>Etapa 3: Adicionar membros a um caso
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ Depois de criar um novo caso, a próxima etapa é adicionar membros ao caso. Ant
     Em **Gerenciar neste caso**, clique em **Salvar** para salvar a nova lista de membros de maiusculas. 
     
 6. Clique em **Salvar** para salvar a nova lista de membros de maiusculas. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Etapa 4: Local locais de conteúdo em espera
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ Para criar uma isenção para um caso de eDiscovery:
   
 2. **Sites** Clique em **Adicionar**![ícone Adicionar](media/ITPro-EAC-AddIcon.gif) especificar SharePoint e OneDrive para sites corporativos para colocar em espera. Digite a URL para cada site que você deseja colocar em espera. Você também pode adicionar a URL do site do SharePoint para um Team Microsoft ou de um grupo do Office 365. 
     
-<<<<<<< Consulte cabeça o [gerenciar casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) seção para obter dicas sobre a colocação de grupos do Office 365 e Teams da Microsoft em espera. === Consulte a seção de [informações adicionais](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) para obter dicas sobre a colocação de grupos do Office 365 e Teams da Microsoft em espera. 
->>>>>>> conversão de deniseb
+    Consulte a seção de [informações adicionais](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) para obter dicas sobre a colocação de grupos do Office 365 e Teams da Microsoft em espera. 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > No caso raro que o nome principal de usuário de uma pessoa (UPN) é alterada, a URL para a sua conta de OneDrive também será alterada para incorporar o UPN novo. Se isso acontecer, você terá que modificar a retenção a nova URL do usuário de OneDrive de adicionando e removendo o antigo. 
   
 3. **Pastas públicas** Clique em **espera todas as pastas públicas** para colocar todas as pastas públicas em sua organização em retenção Exchange Online. Observe que não é possível escolher específicos de pastas públicas para colocar em espera. Deixe a opção **não mantenha quaisquer pastas públicas** selecionada se você não deseja colocar um bloqueio em pastas públicas. 
     
@@ -199,8 +194,6 @@ Para criar uma isenção para um caso de eDiscovery:
 2. Sob **condições**, clique em **Adicionar condição** para adicionar uma ou mais condições para restringir a consulta de pesquisa para a retenção. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você cria o bloqueio. Por exemplo, você pode especificar um intervalo de datas para que os documentos de email ou site que foram criados dentro da intervalo de data são colocados em espera. Uma condição logicamente está conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **e** . Isso significa que o item deve satisfazer ambos a consulta de palavra-chave e a condição sejam colocadas em espera. 
     
 9. Depois de configurar uma consulta com base em espera, clique em **Concluir** para criar a pausa. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>Mantenha as estatísticas
 
@@ -217,8 +210,6 @@ Mantenha as seguintes coisas em mente sobre estatísticas de espera:
 - Você pode obter as informações mais recentes mantenha estatísticas clicando em **Atualizar estatísticas** para executar novamente uma pesquisa estimar que calcula o número atual de itens em espera. Se necessário, clique em **Atualizar**![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) na barra de ferramentas para atualizar as estatísticas de espera no painel de detalhes. 
     
 - De TI normal para o número de itens em espera para aumentar ao longo do tempo porque os usuários cujas caixas de correio ou o site está em retenção são geralmente enviando ou recebendo a nova mensagem de email e criando novo SharePoint e OneDrive para documentos de negócios.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Etapa 5: Criar e executar uma pesquisa de conteúdo associados a um caso
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ Depois de um caso de eDiscovery é criado e qualquer responsáveis relacionadas 
     
 7. Depois que você selecionou os locais de conteúdo para pesquisa, clique em **Avançar**.
     
-8. Na página **Nova pesquisa**, você pode adicionar palavras-chave e condições para criar a consulta de pesquisa. 
-    
-    ![Critérios de pesquisa e condições](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. Na página **Nova pesquisa**, você pode adicionar palavras-chave e condições para criar a consulta de pesquisa. <br/>![Critérios de pesquisa e condições](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. Na caixa em **que você deseja fazer conosco para procurar?**, digite uma consulta de pesquisa na caixa. Você pode especificar palavras-chave, mensagem propriedades tais como enviados e recebidos datas, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterada pela última vez. Você pode usar um consultas mais complexas que usam um operador booleano, como **AND**, **ou**, **não**, **NEAR**ou **ONEAR**. Você também pode pesquisar informações confidenciais (por exemplo, números do seguro social) em documentos ou procurar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificados será incluído nos resultados da pesquisa. 
+9. Na caixa em **que você deseja fazer conosco para procurar?**, digite uma consulta de pesquisa na caixa. Você pode especificar palavras-chave, mensagem propriedades tais como enviados e recebidos datas, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterada pela última vez. Você pode usar um consultas mais complexas que usam um operador booleano, como **AND**, **ou**, **não**, **NEAR**ou **ONEAR**. Você também pode pesquisar informações confidenciais (por exemplo, números do seguro social) em documentos ou procurar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificados será incluído nos resultados da pesquisa. 
     
-2. Você pode clicar na caixa de seleção **Mostrar lista de palavra-chave** e o tipo de uma palavra-chave em cada linha. Se você fizer isso, as palavras-chave em cada linha são conectadas pela operadora **ou** na consulta de pesquisa que é criada. 
+10. Você pode clicar na caixa de seleção **Mostrar lista de palavra-chave** e o tipo de uma palavra-chave em cada linha. Se você fizer isso, as palavras-chave em cada linha são conectadas pela operadora **ou** na consulta de pesquisa que é criada. 
     
     ![Palavras-chave de pesquisa](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ Depois de um caso de eDiscovery é criado e qualquer responsáveis relacionadas 
     
     Para obter mais informações sobre como usar a lista de palavras-chave, consulte [mais informações](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-3. Clique em **consulta para erros de digitação de seleção** para verificar sua consulta para caracteres não suportados e operadores booleanos que não podem estar em letras maiusculas. Não há suporte para caracteres geralmente estão ocultas e geralmente causam um erro de pesquisa ou retornam resultados inesperados. Para obter mais informações sobre os caracteres não suportados que são verificados, consulte [verificar sua consulta de pesquisa de conteúdo se há erros](check-your-content-search-query-for-errors.md).
+11. Clique em **consulta para erros de digitação de seleção** para verificar sua consulta para caracteres não suportados e operadores booleanos que não podem estar em letras maiusculas. Não há suporte para caracteres geralmente estão ocultas e geralmente causam um erro de pesquisa ou retornam resultados inesperados. Para obter mais informações sobre os caracteres não suportados que são verificados, consulte [verificar sua consulta de pesquisa de conteúdo se há erros](check-your-content-search-query-for-errors.md).
     
-4. Sob **condições**, adicione condições para uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você iniciar a pesquisa. Uma condição logicamente está conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **e** . Isso significa que itens precisam satisfazer tanto a consulta de palavra-chave e a condição a ser incluído nos resultados. Isso é como ajudam a condições para restringir os resultados. 
+12. Sob **condições**, adicione condições para uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você iniciar a pesquisa. Uma condição logicamente está conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **e** . Isso significa que itens precisam satisfazer tanto a consulta de palavra-chave e a condição a ser incluído nos resultados. Isso é como ajudam a condições para restringir os resultados. 
     
     Para saber mais sobre como criar uma consulta de pesquisa e usar condições, confira [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-9. Clique em **Pesquisar** para salvar as configurações da pesquisa e iniciá-la. 
+13. Clique em **Pesquisar** para salvar as configurações da pesquisa e iniciá-la. 
     
     A pesquisa é iniciada. Após algum tempo, uma estimativa dos resultados da pesquisa é exibida no painel de detalhes. A estimativa inclui o tamanho total e o número de itens que correspondem aos critérios de pesquisa. A estimativa de pesquisa também inclui o número de itens indexados nos locais do conteúdo que foram pesquisados. O número de itens indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas da pesquisa exibidas no painel de detalhes. Se um item não indexadas corresponde à pesquisa de consulta (porque outras propriedades de mensagem ou documento atendam aos critérios de pesquisa), não será incluído o número estimado de itens indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído na estimativa de itens indexados.
     
     Uma vez concluída a pesquisa, você pode visualizar os resultados da pesquisa. Se necessário, clique em **Atualizar**![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) para atualizar as informações no painel de detalhes. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Etapa 6: Exportar os resultados de uma pesquisa de conteúdo associados a um caso
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ Como uma alternativa ao exportar os resultados de uma única pesquisa de conteú
 - Se você reiniciar uma exportação da página **exportações** em um caso de eDiscovery, resultados da pesquisa que são transferidos para a área de armazenamento do Azure substituirá os resultados anteriores; os resultados anteriores havia transferidos não estará disponível para download. 
     
 - Preparar os resultados das pesquisas de várias para análise no eDiscovery Avançado não está disponível. Você só pode preparar os resultados de uma única pesquisa para análise no eDiscovery avançado.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Etapa 7: Preparar resultados para eDiscovery avançada de pesquisa
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, a
     Os resultados da pesquisa são preparados para análise com eDiscovery avançado.
     
 7. No painel de detalhes, clique em **Verificar status de preparação** para exibir informações sobre o processo de preparação. Quando o processo de preparação for concluído, você pode ir para o caso da eDiscovery avançada para processar os dados para análise. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Etapa 8: Vá para o caso da eDiscovery avançado
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ Para ir a um caso na Descoberta Eletrônica Avançada:
     
 > [!TIP]
 > Clique em **Alternar para descoberta eletrônica** para voltar para o mesmo caso na segurança &amp; Centro de conformidade. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>(Opcional) Etapa 9: Fechar um caso
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ Para fechar um caso:
 7. Na página de **Descoberta eletrônica** , clique em ![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** para atualizar o status do caso fechado. Ela pode levar até 60 minutos para concluir o processo de fechamento. 
     
     Quando o processo estiver concluído, o status do caso é alterado para **Fechar** na página de **Descoberta eletrônica** . Clique no nome do caso novamente para exibir a página de submenu **Gerenciar neste caso** , que contém informações sobre quando o caso foi fechado e a quem fechá-la. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>(Opcional) Etapa 10: Reabrir uma ocorrência fechada
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ Quando você abre um caso novamente, qualquer isenções que estavam em vigor qu
 6. Na página de **Descoberta eletrônica** , clique em ![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** para atualizar o status do caso aberto novamente. Ela pode levar até 60 minutos para que o processo de abertura novamente concluir. 
     
     Quando o processo estiver concluído, o status do caso é alterado para **ativo** na página de **Descoberta eletrônica** . 
-    
-[Voltar ao início](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>Mais informações
 <a name="moreinfo_1"> </a>
@@ -536,12 +513,9 @@ Quando você abre um caso novamente, qualquer isenções que estavam em vigor qu
     
     Finalmente, anterior conforme explicado, administradores de descoberta eletrônica na segurança &amp; Centro de conformidade são automaticamente adicionados como administradores no eDiscovery avançado. Isso significa que uma pessoa que é um administrador de descoberta eletrônica pode executar tarefas administrativas na descoberta eletrônica avançada, como configurar usuários, criando casos e adicionar dados para casos.
     
-<<<<<<< HEAD
-- **Quais são os requisitos de licenciamento para colocar os locais de conteúdo em espera?** Em geral, as organizações exigem uma assinatura do Office 365 E3 ou superior para colocar os locais de conteúdo em espera. Para colocar as caixas de correio em espera, uma licença do Exchange Online plano 2 é necessária. Para obter mais informações, consulte este [eDiscovery FAQ](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5). =======
 - **Quais são os requisitos de licenciamento para colocar os locais de conteúdo em espera?** Em geral, as organizações exigem uma assinatura do Office 365 E3 ou superior para colocar os locais de conteúdo em espera. Para colocar as caixas de correio em espera, uma licença do Exchange Online plano 2 é necessária. Para obter mais informações, consulte este [FAQ](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5).
->>>>>>> conversão de deniseb
-    
-- **o que mais você deve saber sobre a pesquisa de todo o conteúdo maiusculas na etapa 5?** Conforme explicado anteriormente, você pode pesquisar o os locais de conteúdo que foram colocados em espera no caso. Quando você fizer isso, apenas o conteúdo que corresponde aos critérios de espera é pesquisa. Se não houver nenhum critério de espera, todo o conteúdo é pesquisado. Se o conteúdo está em uma consulta com base em espera, somente o conteúdo que ambas as correspondências mantém critérios (da retenção colocado na etapa 4) e os critérios de pesquisa (de pesquisa na etapa 5) é retornado com os resultados da pesquisa.
+
+- **o que mais você deve saber sobre a pesquisa de todo o conteúdo maiusculas na etapa 5?** Conforme explicado anteriormente, você pode pesquisar os locais de conteúdo que foram colocados em espera no caso. Quando você fizer isso, apenas o conteúdo que corresponde aos critérios de espera é pesquisa. Se não houver nenhum critério de espera, todo o conteúdo é pesquisado. Se o conteúdo está em uma consulta com base em espera, somente o conteúdo que ambas as correspondências mantém critérios (da retenção colocado na etapa 4) e os critérios de pesquisa (de pesquisa na etapa 5) é retornado com os resultados da pesquisa.
     
     Aqui estão algumas outras coisas, tenha em mente ao pesquisar todo o conteúdo caso:
     

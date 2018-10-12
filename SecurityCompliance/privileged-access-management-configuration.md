@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre como configurar o gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522252"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configurando o gerenciamento de acesso privilegiado no Office 365
 
 > [!IMPORTANT]
 > Este tópico aborda as diretrizes de implantação e configuração para recursos somente está disponíveis no Office 365 E5 e avançadas SKUs de conformidade.
 
-Este tópico vai orientá-lo por meio de habilitando e configurando o gerenciamento de acesso privilegiado em sua organização do Office 365. Você pode usar tanto o acesso de privilegiado o Centro de administração do Microsoft 365 ou PowerShell de gerenciamento do Exchange para gerenciar e usar. 
+Este tópico vai orientá-lo por meio de habilitando e configurando o gerenciamento de acesso privilegiado em sua organização do Office 365. Você pode usar o Centro de administração do Microsoft 365 ou o PowerShell de gerenciamento do Exchange para gerenciar e usar acesso privilegiado. 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitar e configurar o gerenciamento de acesso privilegiado
 
