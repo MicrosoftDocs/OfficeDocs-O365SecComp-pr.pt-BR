@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Saiba como encontrar e usar os relatórios para o Office 365 avançadas Threat Protection na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454298"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552329"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios de proteção de ameaça avançadas do Office 365
 
@@ -25,13 +25,16 @@ Se sua organização tem [A proteção de ameaça avançadas do Office 365](offi
   
 ![A segurança &amp; painel do Centro de conformidade pode ajudá-lo a ver onde a proteção de ameaça Avançado está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Relatórios de ATP incluem o [relatório de status de proteção contra ameaças](#threat-protection-status-report), o [relatório de tipos de arquivo ATP](#atp-file-types-report)e o [relatório de disposição de mensagem ATP](#atp-message-disposition-report). Este artigo descreve os relatórios de ATP e inclui links para [Exibir os relatórios adicionais](#additional-reports-to-view).
+Relatórios de ATP incluem o [relatório de Status de proteção de ameaça](#threat-protection-status-report), o [relatório de tipos de arquivo ATP](#atp-file-types-report)e o [relatório de disposição de mensagem ATP](#atp-message-disposition-report). Este artigo descreve os relatórios de ATP e inclui links para [Exibir os relatórios adicionais](#additional-reports-to-view).
   
-## <a name="threat-protection-status-report"></a>Relatório de status de proteção de ameaça
+## <a name="threat-protection-status-report"></a>Relatório de Status de proteção de ameaça
 
-O relatório de **status de proteção de ameaça** é um modo de exibição único que reúne informações sobre email mal-intencionado do conteúdo e mal-intencionados detectadas e bloqueadas pelo Exchange Online e proteção avançada de ameaça. O relatório fornece uma contagem agregada exclusivo de mensagens de email com conteúdo mal-intencionado (arquivos ou URLs) bloqueadas pelo mecanismo antimalware, [zero horas automático Limpar (ZAP)](zero-hour-auto-purge.md)e recursos de proteção de ameaça avançadas, como [Links de seguros ATP](atp-safe-links.md), [ATP Anexos seguros](atp-safe-attachments.md)e [os recursos de AntiPhishing ATP no Office 365](atp-anti-phishing.md).
+O relatório de **Status de proteção de ameaça** é um modo de exibição único que reúne informações sobre email mal-intencionado do conteúdo e mal-intencionados detectadas e bloqueadas pelo [Office 365 ATP](office-365-atp.md)e o [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP). O relatório fornece uma contagem agregada exclusivo de mensagens de email com conteúdo mal-intencionado (arquivos ou endereços de site (URLs)) bloqueado pelo mecanismo antimalware, [zero horas automático Limpar (ZAP)](zero-hour-auto-purge.md)e recursos de ATP, como [Links de seguros ATP](atp-safe-links.md), [ATP seguros Anexos](atp-safe-attachments.md)e [os recursos de AntiPhishing ATP](atp-anti-phishing.md).
+
+> [!NOTE]
+> Um relatório de Status de proteção de ameaça está disponível para clientes que possuem [ATP do Office 365](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); No entanto, as informações exibidas no relatório de Status de proteção de ameaça para clientes ATP provavelmente irá conter dados diferentes de quais clientes EOP podem ver. Por exemplo, o relatório de Status de proteção de ameaça para clientes ATP irá conter informações sobre [arquivos mal-intencionados detectada no SharePoint Online, OneDrive ou equipes da Microsoft](atp-for-spo-odb-and-teams.md). Tais informações serão específicas para ATP, portanto, os clientes que tenham o EOP, mas não ATP não verá os detalhes em seu relatório de Status de proteção de ameaça.
   
-Para exibir o relatório de status de proteção de ameaça, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **o status de proteção de ameaça**.
+Para exibir o relatório de Status de proteção de ameaça, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **O Status de proteção de ameaça**.
   
 ![Relatório de Status de proteção de ameaça ATP](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -39,7 +42,7 @@ Para obter o status detalhado para um dia, passe o mouse sobre o gráfico.
   
 ![Dados de Status de proteção de ameaça ATP para um dia](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Por padrão, o relatório de status de proteção de ameaça mostra dados para os últimos sete dias. No entanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados por até 90 dias. 
+Por padrão, o relatório de Status de proteção de ameaça mostra dados para os últimos sete dias. No entanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados por até 90 dias. 
   
 ![Filtros do Status de proteção de ameaça ATP](media/4f703369-642b-402b-9758-b9c828283410.png)
   
@@ -73,9 +76,16 @@ Quando você focaliza uma barra no gráfico, você pode ver quais ações foram 
   
 ## <a name="additional-reports-to-view"></a>Exibir os relatórios adicionais
 
-Além dos relatórios de ATP descritos neste artigo, [os relatórios de segurança de email](view-email-security-reports.md) estão disponíveis na segurança &amp; Centro de conformidade. Relatórios de segurança de email incluem um [relatório de destinatários e remetentes da parte superior](view-email-security-reports.md#top-senders-and-recipients-report), um [relatório de mensagens de falso](view-email-security-reports.md#spoof-mail-report), um [relatório detecções de Spam](view-email-security-reports.md#spam-detections-report)e muito mais.
-  
-E, se sua organização tiver [Inteligência de ameaça do Office 365](office-365-ti.md), você também pode [uso Explorer na segurança &amp; Centro de conformidade](use-explorer-in-security-and-compliance.md).
+Além dos relatórios de ATP descritos neste artigo, vários outros relatórios estão disponíveis, conforme descrito na tabela a seguir:
+
+
+|Tipo de relatório  |Saiba mais  |
+|---------|---------|
+|**Relatórios de segurança de email**, como uma parte superior de remetentes e destinatários relatório, um relatório de falsificação de email e um relatório detecções de Spam. | [Exibir relatórios de segurança de email na segurança &amp; Centro de conformidade](view-email-security-reports.md)        |
+|**Explorer** (também conhecido como ameaça Explorer, isso é incluído no [Office 365 Threat Intelligence](office-365-ti.md))     | [Use o Explorer na segurança &amp; Centro de conformidade](use-explorer-in-security-and-compliance.md)        |
+|**Resultados do EOP e ATP** (Isto é um relatório personalizado que você gera usando o PowerShell). Este relatório contém informações, como o domínio, data, tipo de evento, direção, ação e contagem de mensagem.  | [Referência do cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
+|**Detecções de EOP e ATP** (Isto é um relatório personalizado que você gera usando o PowerShell). Este relatório contém detalhes sobre arquivos mal-intencionados ou URLs, tentativas de phishing, representação e outras possíveis ameaças em arquivos ou email.   | [Referência do cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Quais permissões são necessárias para exibir os relatórios de ATP?
 
@@ -83,12 +93,12 @@ Para exibir e usar os relatórios descritos neste artigo, você deve ter uma fun
   
 |**Default management role assignments for this role**|**Onde atribuído**|**Saiba mais**|
 |:-----|:-----|:-----|
-| Uma das seguintes opções:  <br/>  Gerenciamento da Organização  <br/>  Administrador de segurança  <br/>  Leitor de segurança  <br/> |Segurança &amp; Centro de conformidade  <br/> |[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uma das seguintes opções:  <br/>  Gerenciamento da Organização  <br/>  Gerenciamento da organização somente exibição  <br/>  Função destinatários de somente leitura  <br/>  Gerenciamento de Conformidade  <br/> |Centro de Administração do Exchange  <br/> |[Permissões de recursos no Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Administrador segurança  <br/>– Leitor de segurança  <br/> |Segurança &amp; Centro de conformidade  <br/> |[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Gerenciamento da organização somente leitura  <br/>– Função destinatários somente para exibição  <br/>– Gerenciamento de conformidade do  <br/> |Centro de Administração do Exchange  <br/> |[Permissões de recursos no Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se os relatórios não são mostrando dados?
 
-Se você não estiver vendo dados em seus relatórios, verifique novamente se suas políticas estão configuradas corretamente. Sua organização deve ter [políticas de Links de ATP seguros](set-up-atp-safe-links-policies.md) e [anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) definidas na ordem de proteção de ATP estar em vigor. Consulte também a [proteção antispam e antimalware no Office 365](anti-spam-and-anti-malware-protection.md).
+Se você não está vendo dados em seus relatórios ATP, confira a suas políticas estão configuradas corretamente. Sua organização deve ter [políticas de Links de ATP seguros](set-up-atp-safe-links-policies.md) e [anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) definidas na ordem de proteção de ATP estar em vigor. Consulte também a [proteção antispam e antimalware no Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## <a name="related-topics"></a>Tópicos relacionados
 

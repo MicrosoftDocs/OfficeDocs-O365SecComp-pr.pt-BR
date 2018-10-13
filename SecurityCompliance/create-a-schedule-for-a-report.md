@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Saiba como configurar uma agenda para um relatório na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 38223d670622e602fbb145aed6b4dc0f6ecb36f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523452"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552349"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade
 
@@ -31,7 +31,7 @@ Na segurança &amp; Centro de conformidade, vários [relatórios e ideias](repor
   
 1. Na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel**.
     
-2. Escolha um relatório. Nesse exemplo, iremos escolher o relatório de status de proteção de ameaça.
+2. Escolha um relatório. Nesse exemplo, iremos escolher o relatório de Status de proteção de ameaça.
     
 3. No canto superior esquerdo do relatório, escolha **+ criar agendamento**.
     

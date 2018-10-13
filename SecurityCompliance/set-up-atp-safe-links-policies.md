@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454328"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552339"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
@@ -49,7 +49,7 @@ ms.locfileid: "25454328"
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Etapa 2: Definir (ou revisar) a política de Links de seguros ATP que se aplica a todos
 
-Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. 
+Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. Certifique-se de revisar e, se necessário, editar sua política padrão.
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
@@ -67,7 +67,7 @@ Quando você tem a proteção de ameaça avançadas no Office 365 Enterprise, vo
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Etapa 3: Adicionar (ou editar) diretivas de Links de seguros ATP que se aplicam aos destinatários de email específicos
 
-Depois de revisar a política de Links de seguros ATP para todos os usuários, considere a possibilidade de definição de políticas adicionais para grupos específicos de destinatários de email. Isso permite que você especifique exceções à sua política padrão. 
+Depois de ter analisado (ou editados) a política de Links de seguros ATP padrão que se aplica a todos, sua próxima etapa é definir políticas adicionais que seriam se aplicam a destinatários específicos. Por exemplo, você pode especificar exceções à diretiva padrão definindo uma política adicional. 
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     

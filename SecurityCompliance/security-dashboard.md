@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-description: Use o novo painel de segurança para examinar o status de proteção de ameaça do Office 365 e exibir e agir em alertas de segurança.
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+description: Use o novo painel de segurança para examinar o Status de proteção de ameaça do Office 365 e exibir e agir em alertas de segurança.
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839075"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552359"
 ---
 # <a name="security-dashboard-overview"></a>Visão geral do painel de segurança
 
-A segurança &amp; Centro de conformidade permite que sua organização gerenciar a conformidade e proteção de dados. Início em março de 2018, a segurança &amp; um novo painel de segurança, você pode usar para examinar o seu status de proteção de ameaça e exibir e agir em alertas de segurança dos recursos do Centro de conformidade. 
+A segurança &amp; Centro de conformidade permite que sua organização gerenciar a conformidade e proteção de dados. Início em março de 2018, a segurança &amp; um novo painel de segurança, você pode usar para examinar o seu Status de proteção de ameaça e exibir e agir em alertas de segurança dos recursos do Centro de conformidade. 
   
 Assista ao vídeo para obter uma visão geral e, em seguida, leia este artigo para saber mais.
   
@@ -45,7 +45,7 @@ Para exibir o painel de segurança, na [a segurança do Office 365 &amp; Centro 
   
 ## <a name="threat-protection-status"></a>Status de proteção de ameaça
 
-No canto superior esquerdo do painel de controle de segurança é um widget de status de proteção de ameaça que mostra a eficiência da proteção de ameaça. Este widget informa num relance ameaças quantos foram bloqueadas pelo [Office 365 Exchange Online Protection](anti-spam-protection.md) e [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (se configurado) nos últimos sete dias. Este widget também mostra o número de mensagens de email detectada como classificados incorretamente e relatados usando a [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Revise seus recursos anti-spam, antimalware e políticas de AntiPhishing para melhorar sua configuração.
+No canto superior esquerdo do painel de controle de segurança é um widget do Status de proteção de ameaça que mostra a eficiência da proteção de ameaça. Este widget informa num relance ameaças quantos foram bloqueadas pelo [Office 365 Exchange Online Protection](anti-spam-protection.md) e [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (se configurado) nos últimos sete dias. Este widget também mostra o número de mensagens de email detectada como classificados incorretamente e relatados usando a [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Revise seus recursos anti-spam, antimalware e políticas de AntiPhishing para melhorar sua configuração.
   
 ![Widgets da proteção de ameaça na parte superior do painel de controle de segurança](media/5c7c644e-6b01-4bf8-b991-f6ba0fdc5717.png)
   

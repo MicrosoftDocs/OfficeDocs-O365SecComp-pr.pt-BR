@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Saiba como tirar ação nesses arquivos e aonde ir para exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou equipes.
-ms.openlocfilehash: 370e5e3d4d7fd5f35caa8ef993f6245d15ee9999
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454268"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552379"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou Teams da Microsoft
 
@@ -27,9 +27,9 @@ Para executar as tarefas descritas neste artigo, você deve ter o necessário [p
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Exibir relatórios com informações sobre arquivos detectados
 
-Para exibir o status e informações detalhadas sobre arquivos que foram detectados pelo Office 365 ATP, você pode usar o relatório de status de proteção de ameaça.
+Para exibir o status e informações detalhadas sobre arquivos que foram detectados pelo Office 365 ATP, você pode usar o relatório de Status de proteção de ameaça.
   
-1. No Office 365 Security &amp; Centro de conformidade, escolha **relatórios** \> **painel** \> **o status de proteção de ameaça**.
+1. No Office 365 Security &amp; Centro de conformidade, escolha **relatórios** \> **painel** \> **O Status de proteção de ameaça**.
     
 2. No canto superior direito do relatório, escolha **tabela do modo de exibição detalhes**.
     

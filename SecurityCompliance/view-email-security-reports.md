@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Saiba como encontrar e usar os relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454338"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552389"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email na segurança &amp; Centro de conformidade
 
@@ -27,7 +27,7 @@ Relatórios de uma variedade de segurança de email estão disponíveis na segur
   
 Os relatórios de segurança de email incluem o seguinte:
   
-- [Relatório de status de proteção de ameaça](view-email-security-reports.md#tps) (novo)! 
+- [Relatório de Status de proteção de ameaça](view-email-security-reports.md#tps) (novo)! 
     
 - [Relatório detecções de malware](view-email-security-reports.md#maldet)
     
@@ -43,15 +43,18 @@ Os relatórios de segurança de email incluem o seguinte:
     
 - [Relatório de mensagens relatado pelo usuário](view-email-security-reports.md#userreported) (novo)! 
     
-## <a name="threat-protection-status-report-new"></a>Relatório de status de proteção de ameaça (novo)!
+## <a name="threat-protection-status-report-new"></a>Relatório de Status de proteção (novo)! de ameaça
 
-O novo relatório de **status de proteção de ameaça** é um relatório inteligente que mostra o email mal-intencionado que foi detectado e bloqueada pelo Exchange Online Protection. Este relatório mostra informações sobre email identificado como malware ou uma tentativa de phishing. 
+O novo relatório de **Status de proteção de ameaça** é um relatório inteligente que mostra o email mal-intencionado que foi detectado e bloqueada pelo Exchange Online Protection. Este relatório mostra informações sobre email identificado como malware ou uma tentativa de phishing. 
+
+> [!NOTE]
+> Um relatório de Status de proteção de ameaça está disponível para clientes que possuem [ATP do Office 365](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); No entanto, as informações exibidas no relatório de Status de proteção de ameaça para clientes ATP provavelmente irá conter dados diferentes de quais clientes EOP podem ver. Por exemplo, os clientes do EOP podem exibir informações sobre detecções de malware detectado em email, mas não informações sobre [arquivos mal-intencionados detectada no SharePoint Online, OneDrive ou equipes da Microsoft](atp-for-spo-odb-and-teams.md), um recurso específico ATP. ([Saiba mais sobre os relatórios de ATP](view-reports-for-atp.md)).
   
-Para exibir este relatório, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **o status de proteção de ameaça**.
+Para exibir este relatório, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **O Status de proteção de ameaça**.
   
 ![Relatório de Status de proteção de ameaça](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Quando você abre o relatório de status de proteção de ameaça, primeiro o relatório mostra dados para os últimos sete dias por padrão. No entanto, você pode clique em **filtros** e alterar o intervalo de datas por até 90 dias de detalhes. Este relatório é útil para exibir a eficácia e o impacto dos recursos do Exchange Online Protection da sua organização e para análise de tendências de longo prazo. 
+Quando você abre o relatório de Status de proteção de ameaça, primeiro o relatório mostra dados para os últimos sete dias por padrão. No entanto, você pode clique em **filtros** e alterar o intervalo de datas por até 90 dias de detalhes. Este relatório é útil para exibir a eficácia e o impacto dos recursos do Exchange Online Protection da sua organização e para análise de tendências de longo prazo. 
   
 ![Filtros do relatório de Status de proteção de ameaça](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -67,7 +70,7 @@ Para exibir este relatório, na segurança &amp; Centro de conformidade, vá par
   
 ![Exemplo de relatório detecções de malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-Semelhante a outros relatórios, como o relatório de status de proteção de ameaça, o relatório exibe dados para os últimos sete dias por padrão. No entanto, você pode escolher **filtros** para alterar o intervalo de datas. 
+Semelhante a outros relatórios, como o relatório de Status de proteção de ameaça, o relatório exibe dados para os últimos sete dias por padrão. No entanto, você pode escolher **filtros** para alterar o intervalo de datas. 
   
 ## <a name="top-malware-report"></a>Relatório de Malware principais
 
@@ -176,8 +179,8 @@ Para exibir e usar os relatórios de segurança de email descritos neste artigo,
   
 |**Default management role assignments for this role**|**Onde atribuído**|**Saiba mais**|
 |:-----|:-----|:-----|
-| Uma das seguintes opções:  <br/>  Gerenciamento da Organização  <br/>  Administrador de segurança  <br/>  Leitor de segurança  <br/> |Segurança &amp; Centro de conformidade  <br/> |[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uma das seguintes opções:  <br/>  Gerenciamento da Organização  <br/>  Gerenciamento da organização somente exibição  <br/>  Função destinatários de somente leitura  <br/>  Gerenciamento de Conformidade  <br/> |Centro de Administração do Exchange  <br/> |[Permissões de recursos no Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Administrador segurança  <br/>– Leitor de segurança  <br/> |Segurança &amp; Centro de conformidade  <br/> |[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Gerenciamento da organização somente leitura  <br/>– Função destinatários somente para exibição  <br/>– Gerenciamento de conformidade do  <br/> |Centro de Administração do Exchange  <br/> |[Permissões de recursos no Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se os relatórios não são mostrando dados?
 

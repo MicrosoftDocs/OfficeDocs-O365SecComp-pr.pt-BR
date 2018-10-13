@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Use o gerenciamento de ameaça para ajudar a controlar e gerenciar o acesso de dispositivo móvel aos dados da sua organização, para ajudar a proteger sua organização contra perda de dados e ajudar a proteger mensagens de entrada e saídas contra spam e softwares mal-intencionados. Você também pode usar threat management para proteger a reputação do seu domínio e para determinar se ou não os remetentes são falsificação de modo mal-intencionado contas do seu domínio.
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011827"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552399"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Gerenciamento de segurança do Office 365 de ameaça &amp; Centro de conformidade
 
@@ -62,6 +62,6 @@ Em alguns casos, há pequenas diferenças entre a segurança e a EAT &amp; imple
 |**Anexos Seguros** <br/> |[Anexos seguros](atp-safe-attachments.md) é parte da proteção avançada de ameaça. Quando habilitada, os anexos de email são abertos em um ambiente isolado especial que é separado do Office 365, antes de serem enviadas às caixas de entrada de destinatários. Anexos seguros foi projetado para ajudar a detectar anexos mal-intencionado mesmo antes de assinaturas de antivírus estão disponíveis. Para saber mais, consulte [Anexos seguros no Office 365](atp-safe-attachments.md).<br/> |
 |**Links Seguros** <br/> |[Links seguros](atp-safe-links.md) é parte da proteção avançada de ameaça. Links seguros ajudam a impedir que os usuários seguintes URLs em email ou em documentos do Office que apontam para sites da web que são reconhecidos como sendo maliciosas. Para saber mais, consulte [Links seguros no Office 365](atp-safe-links.md).<br/> |
 |**Quarentena** <br/> |Configurar a [quarentena](http://go.microsoft.com/fwlink/p/?LinkID=809005) para mensagens de email de entrada no Office 365 onde as mensagens que foram filtradas como spam, em massa, phishing, e malware email pode ser mantido para revisão posterior. Usuários e administradores podem trabalhar com mensagens em quarentena. Os usuários podem trabalhar com apenas suas próprias mensagens filtradas em quarentena. Os administradores podem pesquisar e gerenciar mensagens em quarentena para todos os usuários.<br/> |
-|**Ameaças avançadas** <br/> |Exiba o [relatório de status de proteção de ameaça](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) para ver informações sobre o conteúdo mal-intencionado encontrado e bloqueadas pelo Exchange Online Protection e proteção avançada de ameaça.  <br/> |
+|**Ameaças avançadas** <br/> |Exiba o [relatório de Status de proteção de ameaça](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) para ver informações sobre o conteúdo mal-intencionado encontrado e bloqueadas pelo Exchange Online Protection e proteção avançada de ameaça.  <br/> |
    
 
