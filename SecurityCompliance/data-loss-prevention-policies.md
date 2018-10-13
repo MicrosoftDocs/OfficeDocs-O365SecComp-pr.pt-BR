@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Com uma política de prevention (DLP) de perda de dados no Office 365 Security &amp; Centro de conformidade, você pode identificar, monitorar e proteger automaticamente informações confidenciais across Office 365.
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540417"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção contra perda de dados
 
@@ -304,7 +304,7 @@ Por esses motivos, a orientação para a criação de regras com correspondênci
     
 - Geralmente, quaisquer níveis de confiança intermediária variam de logo acima o nível de confiança inferior para imediatamente abaixo o nível mais alto de confiança.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usando um rótulo como uma condição de uma política de DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usar um rótulo como condição em uma política DLP
 
 Você pode criar um rótulo e, em seguida:
   
@@ -312,7 +312,7 @@ Você pode criar um rótulo e, em seguida:
     
 - Ele de conteúdo que **se aplicam automático** corresponde às condições que você escolher. 
     
-Para obter mais informações sobre rótulos, consulte [Overview of rótulos](labels.md).
+Para saber mais sobre rótulos, confira [Visão geral dos rótulos](labels.md).
   
 Depois de criar um rótulo, você pode usar esse rótulo como uma condição em suas políticas de DLP. Por exemplo, talvez você queira fazer isso porque:
   
@@ -332,7 +332,7 @@ Usando rótulos como uma condição em suas regras DLP, pode você aplicar selet
 
 Vários recursos podem ser aplicados ao conteúdo que contém informações confidenciais:
   
-- Um [aplicando um rótulo automaticamente com base nas condições](labels.md#applying-a-label-automatically-based-on-conditions) e uma [política de retenção](retention-policies.md) podem impor ações de **retenção** nesse conteúdo. 
+- Um [rótulo de retenção](labels.md#applying-a-retention-label-automatically-based-on-conditions)[aplicando um rótulo automaticamente com base nas condições] e uma [política de retenção](retention-policies.md) podem impor ações de **retenção** nesse conteúdo. 
     
 - Uma política de DLP pode impor a **proteção** ações sobre este conteúdo. E antes de impô essas ações, uma política de DLP pode exigir outras condições sejam atendidas além do conteúdo que contém um rótulo. 
     
@@ -478,7 +478,7 @@ Essas permissões são necessárias somente para criar e aplicar uma política d
 
 Para usar a maioria dos cmdlets para a segurança &amp; Centro de conformidade, você precisa:
   
-1. [Conecte-se para a segurança do Office 365 &amp; usando o PowerShell remoto do Centro de conformidade](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectar ao &amp;Centro de Conformidade e Segurança do Office 365 usando o PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Use qualquer uma dessas [a segurança do Office 365 &amp; cmdlets do Centro de conformidade](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
