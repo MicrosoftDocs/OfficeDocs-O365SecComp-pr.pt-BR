@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540397"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -259,7 +259,7 @@ Uma política de retenção que se aplica ao Teams pode usar [Bloqueio de Preser
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Como excluir tipos específicos de itens do Exchange de uma política de retenção
 Usando o PowerShell, você poderá excluir tipos específicos de itens do Exchange de uma política de retenção. Por exemplo, você poderá excluir mensagens de caixa postal, conversas de mensagens instantâneas e outro conteúdo do Skype for Business Online nas caixas de correio. Você também pode excluir o calendário, as anotações e os itens de tarefas. Esse recurso está disponível apenas usando o PowerShell; não está disponível na interface de usuário quando você cria uma política de retenção.
   
-Para fazer isso, use o parâmetro `ExcludedItemClasses` dos cmdlets `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](retention-policies.md#powershell).
+Para fazer isso, use o parâmetro `ExcludedItemClasses` dos cmdlets `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](#find-the-powershell-cmdlets-for-retention-policies).
   
 ## <a name="locking-a-retention-policy"></a>Como bloquear uma política de retenção
 Algumas organizações talvez precisem cumprir regras definidas por órgãos regulamentadores, como a Regra 17a-4 do Securities and Exchange Commission (SEC), que exige que após uma política de retenção ser ativada, ela não pode ser desativada ou se tornar menos restritiva. Com o Bloqueio de Preservação, você pode bloquear a política para que ninguém, nem o administrador, possa desativar a política ou torná-la menos restritiva.
@@ -268,7 +268,7 @@ Após o bloqueio de uma política, ninguém poderá desativá-la nem remover loc
   
 Portanto, antes de bloquear uma política de retenção, é **fundamental** que você entenda os requisitos de conformidade da sua organização e **não bloqueie uma política** até ter certeza de que isso é necessário.
   
-Você pode bloquear uma política de retenção usando apenas o PowerShell. Use o parâmetro `RestrictiveRetention` do cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](retention-policies.md#powershell).
+Você pode bloquear uma política de retenção usando apenas o PowerShell. Use o parâmetro `RestrictiveRetention` do cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](#find-the-powershell-cmdlets-for-retention-policies).
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Os princípios de retenção ou o que tem precedência?
 
