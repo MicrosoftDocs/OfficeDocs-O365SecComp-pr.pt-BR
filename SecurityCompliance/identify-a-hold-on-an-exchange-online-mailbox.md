@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Aprenda a identificar os diferentes tipos de espera que pode ser colocado em uma caixa de correio do Office 365. Esses tipos de isenções incluem litígio, isenções de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário uma política de retenção de toda a organização foram excluído
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965258"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577070"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
 
@@ -172,7 +172,7 @@ Para obter mais informações sobre rótulos, consulte [Visão geral do Office 3
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Mantenha a gerenciar caixas de correio em atraso
 
-Depois de qualquer tipo de espera é removido de uma caixa de correio, o valor da propriedade *DelayHoldApplied* caixa de correio é definido como **True**. Isso é chamado um *atraso de espera* e significa que a remoção real da isenção foi adiada por 30 dias impedir que os dados sejam excluídas permanentemente (purgados) da caixa de correio. Isso admins uma oportunidade para pesquisar ou recuperar itens de caixa de correio que serão removidos após a suspensão seja removida de fato. Quando uma isenção de atraso é colocada na caixa de correio, a caixa de correio é considerada ainda ser em espera por um período ilimitado, como se a caixa de correio estava em suspensão de litígio. Após 30 dias, a retenção de atraso expira, e o Office 365 automaticamente tentar remover a retenção de atraso (definindo a propriedade *DelayHoldApplied* como **False**) para que a suspensão serão realmente removida. Após a propriedade *DelayHoldApplied* como **False**, os itens que estão marcados para remoção vão ser removidos na próxima vez em que a caixa de correio é processada pelo Assistente de pasta gerenciada.
+Depois de qualquer tipo de espera é removido de uma caixa de correio, o valor da propriedade *DelayHoldApplied* caixa de correio é definido como **True**. Isso ocorre na próxima vez em que processa a caixa de correio e detecta que foi removida uma isenção Assistente de pasta gerenciada. Isso é chamado um *atraso de espera* e significa que a remoção real da isenção foi adiada por 30 dias impedir que os dados sejam excluídas permanentemente (purgados) da caixa de correio. Isso admins uma oportunidade para pesquisar ou recuperar itens de caixa de correio que serão removidos após a suspensão seja removida de fato. Quando uma isenção de atraso é colocada na caixa de correio, a caixa de correio é considerada ainda ser em espera por um período ilimitado, como se a caixa de correio estava em suspensão de litígio. Após 30 dias, a retenção de atraso expira, e o Office 365 automaticamente tentar remover a retenção de atraso (definindo a propriedade *DelayHoldApplied* como **False**) para que a suspensão serão realmente removida. Após a propriedade *DelayHoldApplied* como **False**, os itens que estão marcados para remoção vão ser removidos na próxima vez em que a caixa de correio é processada pelo Assistente de pasta gerenciada.
 
 Para exibir o valor da propriedade *DelayHoldApplied* para uma caixa de correio, execute o seguinte comando no PowerShell do Exchange Online.
 

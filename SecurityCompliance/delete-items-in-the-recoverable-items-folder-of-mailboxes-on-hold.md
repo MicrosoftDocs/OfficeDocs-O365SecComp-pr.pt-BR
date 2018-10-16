@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para administradores: excluir itens na pasta de itens recuperáveis de um usuário para uma caixa de correio Exchange Online, mesmo se essa caixa de correio é colocada em retenção legal. Essa é uma maneira eficaz para excluir dados que é acidentalmente sido derramados no Office 365.'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566882"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577080"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Excluir itens na pasta itens recuperáveis de caixas de correio baseadas em nuvem em espera - ajuda de Admin
 
@@ -245,22 +245,22 @@ Depois que você identificou o nome do caso de descoberta eletrônica e isençã
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Etapa 4: Remover a retenção de atraso da caixa de correio
 
-Depois de qualquer tipo de espera é removido de uma caixa de correio, o valor da propriedade *DelayHoldApplied* caixa de correio é definido como **True**. Isso é chamado um *atraso de espera* e significa que a remoção real da isenção foi adiada por 30 dias impedir que os dados sejam excluídas permanentemente (purgados) da caixa de correio.   Quando uma isenção de atraso é colocada na caixa de correio, a caixa de correio é considerada ainda ser em espera por um período ilimitado, como se a caixa de correio estava em suspensão de litígio. (A finalidade de uma isenção de atraso é dar uma oportunidade para pesquisar ou recuperar itens de caixa de correio que serão removidos após um bloqueio seja removido de admins.) Noe que, após 30 dias, o atraso mantém expira e Office 365 automaticamente tentar remover a retenção de atraso (definindo a propriedade *DelayHoldApplied* como **False**) para que a suspensão serão realmente removida. 
+Depois de qualquer tipo de espera é removido de uma caixa de correio, o valor da propriedade *DelayHoldApplied* caixa de correio é definido como **True**. Isso ocorre na próxima vez em que processa a caixa de correio e detecta que foi removida uma isenção Assistente de pasta gerenciada. Isso é chamado um *atraso de espera* e significa que a remoção real da isenção foi adiada por 30 dias impedir que os dados sejam excluídos permanentemente da caixa de correio. (A finalidade de uma isenção de atraso é dar uma oportunidade para pesquisar ou recuperar itens de caixa de correio que serão removidos após um bloqueio seja removido de admins.)  Quando uma isenção de atraso é colocada na caixa de correio, a caixa de correio é considerada ainda ser em espera por um período ilimitado, como se a caixa de correio estava em suspensão de litígio. Após 30 dias, a retenção de atraso expira, e o Office 365 automaticamente tentar remover a retenção de atraso (definindo a propriedade *DelayHoldApplied* como **False**) para que a suspensão seja removida de fato. 
 
-Antes de excluir itens na etapa 5, você precisa remover a retenção de atraso da caixa de correio. Execute o seguinte comando no Exchange Online PowerShell para remover a retenção de atraso: 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-Observe que você deve ser atribuído a função de retenção Legal no Exchange Online para usar o parâmetro *RemoveDelayHoldApplied* .
-
-Para verificar que espera atraso foi removida, execute o seguinte comando.
+Antes de excluir itens na etapa 5, você precisa remover a retenção de atraso da caixa de correio. Primeiro, determine se a retenção de atraso será aplicada à caixa de correio executando o seguinte comando no PowerShell do Exchange Online:
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-O valor **False** para a propriedade *DelayHoldApplied* indica que o atraso foi removido.
+Se o valor da propriedade *DelayHoldApplied* estiver definido como **False**, uma isenção atraso não foi colocada na caixa de correio. Você pode ir para a etapa 5 e excluir itens na pasta itens recuperáveis.
+
+Se o valor da propriedade *DelayHoldApplied* é definido como **True**, execute o seguinte comando para remover a retenção de atraso:
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Observe que você deve ser atribuído a função de retenção Legal no Exchange Online para usar o parâmetro *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Etapa 5: Excluir itens na pasta itens recuperáveis
 
