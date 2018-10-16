@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use as ferramentas de descoberta eletrônica e pesquisa do Office 365 para gerenciar e responder a um incidente de algum derramamento de dados em sua organização.
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523563"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566872"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solução de descoberta eletrônica: cenário de algum derramamento de dados - pesquisa e limpar
 
@@ -159,6 +159,8 @@ Se a recuperação de item único está habilitada ou uma caixa de correio é co
 - Consulte "etapa 2: preparar a caixa de correio" no [Excluir itens na pasta de caixas de correio baseadas em nuvem em espera itens recuperáveis](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) para obter instruções sobre como desabilitar a recuperação de item único. 
     
 - Consulte "etapa 3: remover todas as isenções da caixa de correio" no [Excluir itens na pasta de caixas de correio baseadas em nuvem em espera itens recuperáveis](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) para obter instruções sobre como remover uma política de retenção ou retenção de uma caixa de correio. 
+
+- Consulte "etapa 4: remover o atraso de espera da caixa de correio" no [Excluir itens na pasta de caixas de correio baseadas em nuvem em espera itens recuperáveis](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) para obter instruções sobre como remover a retenção de atraso é colocada na caixa de correio depois de qualquer tipo de espera é removido.
     
  **Importante:** Verifique com o gerenciamento de registros ou departamentos legais antes de remover uma política de retenção ou de espera. Sua organização pode ter uma política que define se uma caixa de correio em espera ou um incidente de algum derramamento de dados tem prioridade. 
   
@@ -168,7 +170,7 @@ Certifique-se de reverter configurações anteriores a caixa de correio depois d
 
 Usando os locais de caixa de correio que você coletadas e preparado na etapa 6 e a consulta de pesquisa que foi criada e refinada na etapa 3 para encontrar as mensagens de email que contêm os dados derramados, você pode agora excluir permanentemente os dados derramados. Conforme explicado anteriormente, você precisa ter a função caixa de correio importar e exportar no Exchange Online para excluir mensagens usando o procedimento a seguir.
   
-1. [Conecte-se para o Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Conectar-se ao Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Execute o seguinte comando:
     
@@ -198,7 +200,7 @@ A etapa final do fluxo de trabalho para gerenciar um incidente de algum derramam
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Revertendo as caixas de correio ao estado anterior
 
-Se você alterou a qualquer configuração de caixa de correio na etapa 6 para preparar as caixas de correio antes que os dados derramados foi excluídos, você precisará revertê-los ao seu estado anterior. Consulte "etapa 5: reverter a caixa de correio ao estado anterior" em [Excluir itens na pasta de caixas de correio baseadas em nuvem em espera itens recuperáveis](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
+Se você alterou a qualquer configuração de caixa de correio na etapa 6 para preparar as caixas de correio antes que os dados derramados foi excluídos, você precisará revertê-los ao seu estado anterior. Consulte "etapa 6: reverter a caixa de correio ao estado anterior" em [Excluir itens na pasta de caixas de correio baseadas em nuvem em espera itens recuperáveis](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Excluir a consulta de pesquisa
 

@@ -3,7 +3,7 @@ title: Excluir itens na pasta itens recuperáveis de caixas de correio baseadas 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para administradores: excluir itens na pasta de itens recuperáveis de um usuário para uma caixa de correio Exchange Online, mesmo se essa caixa de correio é colocada em retenção legal. Essa é uma maneira eficaz para excluir dados que é acidentalmente sido derramados no Office 365.'
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796877"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566882"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Excluir itens na pasta itens recuperáveis de caixas de correio baseadas em nuvem em espera - ajuda de Admin
 
@@ -33,16 +33,18 @@ A pasta itens recuperáveis para uma caixa de correio do Exchange Online existe 
 
 [Etapa 3: Remova todas as isenções da caixa de correio](#step-3-remove-all-holds-from-the-mailbox)
 
-[Etapa 4: Excluir itens na pasta itens recuperáveis](#step-4-delete-items-in-the-recoverable-items-folder)
+[Etapa 4: Remover a retenção de atraso da caixa de correio](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Etapa 5: Reverter a caixa de correio ao estado anterior](#step-5-revert-the-mailbox-to-its-previous-state)
+[Etapa 5: Excluir itens na pasta itens recuperáveis](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[Etapa 6: Reverter a caixa de correio ao estado anterior](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > Os procedimentos descritos neste artigo resultará em dados sendo permanentemente excluídos (purgados) de uma caixa de correio do Exchange Online. Isso significa que as mensagens que você exclua da pasta itens recuperáveis não podem ser recuperadas e não estarão disponíveis para descoberta legal ou outras finalidades de conformidade. Se você deseja excluir mensagens de uma caixa de correio é colocada em espera como parte de um litígio, bloqueio In-loco, retenção de descoberta eletrônica, ou política de retenção do Office 365 criados na segurança do Office 365 &amp; Centro de conformidade, a seleção com o gerenciamento de registros ou o departamento jurídico departamentos antes de remover o bloqueio. Sua organização pode ter uma política que define se uma caixa de correio em espera ou um incidente de algum derramamento de dados tem prioridade. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa ser atribuído ambas as seguintes funções de gerenciamento no Exchange Online para pesquisar e excluir mensagens da pasta itens recuperáveis na etapa 4.
+- Você precisa ser atribuído ambas as seguintes funções de gerenciamento no Exchange Online para pesquisar e excluir mensagens da pasta itens recuperáveis na etapa 5.
     
   - **Pesquisa de caixa de correio** - essa função permite que você para pesquisar caixas de correio em sua organização. Os administradores do Exchange não estão atribuídos a essa função por padrão. Para atribuir a mesmo essa função, adicione si mesmo como membro do grupo de funções de gerenciamento de descoberta no Exchange Online. 
     
@@ -56,13 +58,13 @@ A pasta itens recuperáveis para uma caixa de correio do Exchange Online existe 
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Etapa 1: Coletar informações sobre a caixa de correio
 
-Essa primeira etapa é coletar propriedades selecionadas da caixa de correio de destino que afetarão a esse procedimento. Certifique-se de anotar essas configurações ou salvá-los em um arquivo de texto, porque você irá alterar algumas dessas propriedades e, em seguida, reverter para os valores originais na etapa 5, depois que você excluir itens da pasta itens recuperáveis. Aqui está uma lista das propriedades de caixa de correio que você precisa coletar.
+Essa primeira etapa é coletar propriedades selecionadas da caixa de correio de destino que afetarão a esse procedimento. Certifique-se de anotar essas configurações ou salvá-los em um arquivo de texto, porque você irá alterar algumas dessas propriedades e, em seguida, reverter para os valores originais na etapa 6, depois que você excluir itens da pasta itens recuperáveis. Aqui está uma lista das propriedades de caixa de correio que você precisa coletar.
   
 -  *SingleItemRecoveryEnabled* e *RetainDeletedItemsFor* ; Se necessário, você desabilitar a recuperação única e aumentar o período de retenção de itens excluídos na etapa 3. 
     
 -  *LitigationHoldEnabled* e *InPlaceHolds* ; Você precisa identificar todos os bloqueios colocados na caixa de correio, para que possa removê-los temporariamente na etapa 3. Consulte a seção de [informações adicionais](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) para obter dicas sobre como identificar a retenção de tipo pode ser colocada em uma caixa de correio. 
     
-Além disso, você precisará fazer a caixa de correio configurações acesso para cliente, portanto, você pode desabilitá-los temporariamente para que o proprietário (ou outros usuários) não possam acessar a caixa de correio durante esse procedimento. Finalmente, você pode obter o tamanho atual e o número de itens na pasta itens recuperáveis. Depois que você excluir itens na pasta itens recuperáveis na etapa 4, você vai usar essas informações para verificar se os itens foram removidos realmente.
+Além disso, você precisará fazer a caixa de correio configurações acesso para cliente, portanto, você pode desabilitá-los temporariamente para que o proprietário (ou outros usuários) não possam acessar a caixa de correio durante esse procedimento. Finalmente, você pode obter o tamanho atual e o número de itens na pasta itens recuperáveis. Depois que você excluir itens na pasta itens recuperáveis na etapa 5, você vai usar essas informações para verificar se os itens foram removidos realmente.
   
 1. [Conecte-se para o Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Certifique-se de usar um nome de usuário e senha para uma conta de administrador que tenha sido atribuída as funções de gerenciamento apropriado no Exchange Online. 
     
@@ -114,7 +116,7 @@ Além disso, você precisará fazer a caixa de correio configurações acesso pa
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Quando você excluir itens na etapa 4, você pode optar por excluir ou não excluir itens na pasta itens recuperáveis na caixa de correio de arquivo morto principal do usuário. Observe que, se a expansão automática de arquivamento estiver habilitado para a caixa de correio, itens em uma caixa de correio de arquivo morto auxiliar não serão excluídos.
+   Quando você excluir itens na etapa 5, você pode optar por excluir ou não excluir itens na pasta itens recuperáveis na caixa de correio de arquivo morto principal do usuário. Observe que, se a expansão automática de arquivamento estiver habilitado para a caixa de correio, itens em uma caixa de correio de arquivo morto auxiliar não serão excluídos.
   
 ## <a name="step-2-prepare-the-mailbox"></a>Etapa 2: Preparar a caixa de correio
 
@@ -122,11 +124,11 @@ Depois de coletar e o salvamento de informações sobre a caixa de correio, a pr
   
 - **Desabilitar o acesso do cliente à caixa de correio** para que o proprietário da caixa de correio não pode acessar suas caixas de correio e faça as alterações nos dados de caixa de correio durante esse procedimento. 
     
-- **Aumentar o período de retenção de itens excluídos** para 30 dias (o valor máximo no Exchange Online) para que os itens não são removidos da pasta itens recuperáveis antes de excluí-los na etapa 4. 
+- **Aumentar o período de retenção de itens excluídos** para 30 dias (o valor máximo no Exchange Online) para que os itens não são removidos da pasta itens recuperáveis antes de excluí-los na etapa 5. 
     
-- **Desabilitar a recuperação de Item única** para os itens que não serão mantidas (por toda a duração do período de retenção de item excluído) após a exclusão da pasta itens recuperáveis na etapa 4. 
+- **Desabilitar a recuperação de Item única** para os itens que não serão mantidas (por toda a duração do período de retenção de item excluído) após a exclusão da pasta itens recuperáveis na etapa 5. 
     
-- **Desativar o Assistente de pasta gerenciada** para que ele não processar a caixa de correio e manter os itens que você excluir na etapa 4. 
+- **Desativar o Assistente de pasta gerenciada** para que ele não processar a caixa de correio e manter os itens que você excluir na etapa 5. 
     
 Execute as seguintes etapas no PowerShell do Exchange Online.
   
@@ -162,7 +164,7 @@ Execute as seguintes etapas no PowerShell do Exchange Online.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Etapa 3: Remova todas as isenções da caixa de correio
 
-A última etapa antes de excluir itens da pasta itens recuperáveis é remover todas as isenções (que você identificou na etapa 1) colocadas na caixa de correio. Todas as isenções devem ser removidas para que os itens não serão mantidas após a exclusão da pasta itens recuperáveis. As seções a seguir contêm informações sobre como remover tipos diferentes de isenções em uma caixa de correio. Consulte a seção de [informações adicionais](#more-information) para obter dicas sobre como identificar a retenção de tipo pode ser colocada em uma caixa de correio. 
+A última etapa antes de excluir itens da pasta itens recuperáveis é remover todas as isenções (que você identificou na etapa 1) colocadas na caixa de correio. Todas as isenções devem ser removidas para que os itens não serão mantidas após a exclusão da pasta itens recuperáveis. As seções a seguir contêm informações sobre como remover tipos diferentes de isenções em uma caixa de correio. Consulte a seção de [informações adicionais](#more-information) para obter dicas sobre como identificar a retenção de tipo pode ser colocada em uma caixa de correio. Para obter informações adicionais, consulte [como identificar o tipo de bloqueio colocado em uma caixa de correio do Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > Conforme indicado anteriormente, consulte o gerenciamento de registros ou departamentos legais antes de remover uma isenção de uma caixa de correio. 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 Depois de identificar as políticas de retenção do Office 365 de toda a organização, vá para a **governança de data** \> página **retenção** de segurança &amp; Centro de conformidade, edite cada política de retenção de toda a organização que você identificou no anterior etapa e adicione a caixa de correio à lista de destinatários excluídos. Fazer isso removerá da caixa de correio do usuário a política de retenção. 
-  
+
+### <a name="office-365-retention-labels"></a>Rótulos de retenção do Office 365
+
+Sempre que um usuário aplica um rótulo que está configurado para reter o conteúdo ou manter e excluir conteúdo para qualquer pasta ou um item em suas caixas de correio, a propriedade de caixa de correio de *ComplianceTagHoldApplied* é definida como **True**. Quando isso acontece, a caixa de correio é considerada como estar em espera, como se ele foi colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365.
+
+Para exibir o valor da propriedade *ComplianceTagHoldApplied* , execute o seguinte comando no PowerShell do Exchange Online:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Depois que você identificou que uma caixa de correio está em espera porque um rótulo de retenção é aplicado a uma pasta ou um item, você pode usar a ferramenta de pesquisa de conteúdo na segurança & Centro de conformidade para procurar itens de rotulado usando a condição de pesquisa ComplianceTag. Para obter mais informações, consulte a seção "Critérios de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+
+Para obter mais informações sobre rótulos, consulte [Visão geral do Office 365 rótulos](labels.md).
+
  ### <a name="ediscovery-case-holds"></a>caso de descoberta eletrônica retenções
   
 Execute os seguintes comandos [segurança &amp; PowerShell do Centro de conformidade](https://go.microsoft.com/fwlink/?linkid=627084) para identificar a retenção associada a um caso de eDiscovery que é aplicado à caixa de correio. Usar o GUID (não incluindo o `UniH` prefixo) para o eDiscovery, bloqueio que você identificou na etapa 1. Observe que o segundo comando exibe o nome da isenção é associada a; o caso de descoberta eletrônica o terceiro comando exibe o nome da isenção. 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 Depois que você identificou o nome do caso de descoberta eletrônica e isenção, vá para o **pesquisa &amp; investigação** \> página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade, abra a ocorrência e remover a caixa de correio da isenção. Para obter mais informações, consulte [gerenciar casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](manage-ediscovery-cases.md).
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>Etapa 4: Excluir itens na pasta itens recuperáveis
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Etapa 4: Remover a retenção de atraso da caixa de correio
+
+Depois de qualquer tipo de espera é removido de uma caixa de correio, o valor da propriedade *DelayHoldApplied* caixa de correio é definido como **True**. Isso é chamado um *atraso de espera* e significa que a remoção real da isenção foi adiada por 30 dias impedir que os dados sejam excluídas permanentemente (purgados) da caixa de correio.   Quando uma isenção de atraso é colocada na caixa de correio, a caixa de correio é considerada ainda ser em espera por um período ilimitado, como se a caixa de correio estava em suspensão de litígio. (A finalidade de uma isenção de atraso é dar uma oportunidade para pesquisar ou recuperar itens de caixa de correio que serão removidos após um bloqueio seja removido de admins.) Noe que, após 30 dias, o atraso mantém expira e Office 365 automaticamente tentar remover a retenção de atraso (definindo a propriedade *DelayHoldApplied* como **False**) para que a suspensão serão realmente removida. 
+
+Antes de excluir itens na etapa 5, você precisa remover a retenção de atraso da caixa de correio. Execute o seguinte comando no Exchange Online PowerShell para remover a retenção de atraso: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Observe que você deve ser atribuído a função de retenção Legal no Exchange Online para usar o parâmetro *RemoveDelayHoldApplied* .
+
+Para verificar que espera atraso foi removida, execute o seguinte comando.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+O valor **False** para a propriedade *DelayHoldApplied* indica que o atraso foi removido.
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Etapa 5: Excluir itens na pasta itens recuperáveis
 
 Agora você está pronto para realmente excluir itens na pasta itens recuperáveis usando o cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) no Exchange Online PowerShell. Você tem três opções ao executar o cmdlet **Search-Mailbox** . 
   
@@ -308,7 +343,7 @@ Execute o seguinte comando para obter o tamanho e o número total de itens em pa
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>Etapa 5: Reverter a caixa de correio ao estado anterior
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Etapa 6: Reverter a caixa de correio ao estado anterior
 
 A etapa final é reverter a caixa de correio de volta para a configuração anterior. Isso significa redefinir as propriedades que você alterou na etapa 2 e reaplicação os bloqueios que você removeu na etapa 3. Isso inclui:
   
@@ -389,7 +424,9 @@ Execute as seguintes etapas (na sequência especificada) no PowerShell do Exchan
   
 ## <a name="more-information"></a>Mais informações
 
-Aqui está uma tabela que descreve como identificar os diferentes tipos de isenções com base nos valores na propriedade *InPlaceHolds* quando você executar os cmdlets **Get-Mailbox** ou **Get-OrganizationConfig** . Como previamente explicado, você precisa remover todas as isenções e políticas de retenção do Office 365 de uma caixa de correio antes com êxito podem excluir itens na pasta itens recuperáveis. 
+Aqui está uma tabela que descreve como identificar os diferentes tipos de isenções com base nos valores na propriedade *InPlaceHolds* quando você executar os cmdlets **Get-Mailbox** ou **Get-OrganizationConfig** . Para obter informações mais detalhadas, consulte [como identificar o tipo de bloqueio colocado em uma caixa de correio do Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+Como previamente explicado, você precisa remover todas as isenções e políticas de retenção do Office 365 de uma caixa de correio antes com êxito podem excluir itens na pasta itens recuperáveis. 
   
 |**Tipo de bloqueio**|**Valor de exemplo**|**Como identificar a suspensão**|
 |:-----|:-----|:-----|
