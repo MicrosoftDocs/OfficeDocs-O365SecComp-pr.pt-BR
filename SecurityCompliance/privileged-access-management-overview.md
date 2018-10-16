@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre privilegiada acessar management no Office 365
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011857"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575335"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilégios acessar management no Office 365
 
@@ -31,7 +31,7 @@ Privilegiado acesso gerenciamento permite que o controle de acesso granular sobr
 
 Privilegiado acesso gerenciamento complementa outras proteções de recurso de dados e o acesso dentro da arquitetura de segurança do Office 365. Habilitando o gerenciamento de acesso privilegiado como parte de uma abordagem integrada à segurança e proteção de sua organização, um modelo de segurança em camadas pode ser usado para aumentar a proteção de informações confidenciais e definições de configuração do Office 365. Conforme mostrado no diagrama a seguir, habilitando privilegiado ajuda de gerenciamento de acesso amplia a proteção fornecida com criptografia nativa de dados do Office 365 e o modelo de segurança do controle de acesso baseado na função dos serviços do Office 365. Quando usado em conjunto com o [Windows Azure AD privilegiado gerenciamento de identidade](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), esses dois recursos fornecem controle de acesso com acesso just-in-time em escopos diferentes.
 
-![Proteção em camadas no Office 365](media/pam-layered-protection.jpg)
+![Proteção em camadas no Office 365](media/pam-layered-protection.png)
 
 Privilegiado access pode ser definido e com escopo no nível da **tarefa** , enquanto o Azure AD privilegiado Identity Management se aplica a proteção no nível de **função** com a capacidade de executar várias tarefas de gerenciamento no Office 365.  Gerenciamento de identidade do Azure AD privilegiada principalmente permite Gerenciando acessos para grupos de função e funções do AD, enquanto com privilégios de acesso gerenciamento no Office 365 é aplicado apenas no nível da tarefa.
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Além da linha de base, o nível de volume criptografia que é habilitada por meio do BitLocker e Gerenciador de chave distribuído (DKM), o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para o conteúdo do cliente no Office 365, incluindo os dados do Exchange On-line, Skype para negócios, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559236"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575325"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
 
@@ -29,8 +29,8 @@ Para fornecer comentários sobre a chave do cliente, incluindo a documentação,
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>Qual é a criptografia de serviço com a chave do cliente?
 
-Chave de cliente é um recurso que permite provisionar e gerenciar as teclas usadas para criptografar dados em repouso no Office 365. O recurso aproveita a criptografia de serviço, que é a criptografia é realizada pelo Office 365 Exchange e SharePoint. Criptografia de serviço fornece vantagens além do que o BitLocker fornecido - notadamente, maior na defesa contra invasores. A criptografia de serviço é uma medida defensiva forte se um invasor tenta ignorar o sistema de controle de acesso do Office 365 que é usado para processar todas as solicitações de acesso a dados do cliente. Isso ocorre porque a criptografia de serviço significa que um administrador de servidor não tem o controle ou par acesso para a criptografia de chaves e não é possível desabilitar a criptografia, ao contrário com BitLocker. Portanto, o invasor com acesso administrativo para um servidor que hospeda os dados do cliente que foi criptografados usando a criptografia de serviço não será possível ler os dados do cliente e mesmo se os dados criptografados são copiados logoff do servidor permanecerá inútil. 
-  
+Chave de cliente aumenta a capacidade da sua organização a atender às demandas dos requisitos de conformidade que especificam as principais organizações com o provedor de serviços de nuvem. Com chave de cliente, você pode fornece e controlar as chaves de criptografia para o Office 365 dados em repouso no nível do aplicativo. Como resultado, você pode exercício controle e revogar chaves da sua organização, você deve decidir sair do serviço. Por meio da revogação as chaves, os dados são ilegíveis para o serviço. Revogação de chaves é a primeira etapa no caminho em direção a exclusão de dados.
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>Quais dados o Office 365 em repouso são abordados pela chave cliente?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
@@ -222,7 +222,7 @@ Não. Por definição, assinaturas de avaliação têm uma vida útil limitada. 
 
 Além do licenciamento necessários para a chave do cliente, os clientes provocará um custo para o uso de chave Vault. [Obter detalhes sobre preços do Azure chave Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) descreve o modelo de custo e auxiliarão com estimando. Não há um meio para prever o custo exato que qualquer cliente incorrerá porque variam de padrões de uso. A experiência mostra que o custo é muito baixo e geralmente cair dentro do intervalo de US $0,002 para $0,005 por usuário por mês, mais o custo das teclas HSM reserva. O custo também variam de acordo com a configuração de registro em log escolhida pelo cliente e a quantidade de armazenamento Azure usado para o Windows Azure chave Vault logs. 
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para começar com a chave de cliente, consulte [controlar seus dados no Office 365 usando a chave do cliente](controlling-your-data-using-customer-key.md).
