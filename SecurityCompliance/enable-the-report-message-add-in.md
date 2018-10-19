@@ -3,7 +3,7 @@ title: Habilitar o suplemento de Mensagem de relatório
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/04/2018
+ms.date: 10/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,27 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Aprenda a habilitar o suplemento de mensagem de relatório para o Outlook e Outlook na web, para usuários individuais ou em toda sua organização.
-ms.openlocfilehash: 2eb12bd14f92e2d4ee26fbef817578d32e737b85
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435088"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638005"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de relatório
 
-O suplemento de mensagem de relatório para o Outlook permite que as pessoas facilmente relatado email classificados incorretamente, se seguros ou mal-intencionada, Microsoft e suas afiliadas para análise. A Microsoft usa essas envios para melhorar a eficácia das tecnologias de proteção de email. Além disso, se sua organização estiver usando os serviços do Microsoft Cloud que incluem [A proteção de ameaça avançadas do Office 365](office-365-atp.md) ou [Threat Intelligence](office-365-ti.md), o suplemento de mensagem de relatório fornece equipe de segurança da sua organização com informações úteis eles podem usar para examinar e atualizar as diretivas de segurança. 
+## <a name="overview"></a>Visão geral
 
-Por exemplo, suponha que as pessoas são relatórios muitas mensagens como phishing. Este mostra informações no [Painel de segurança](security-dashboard.md) e outros relatórios. Equipe de segurança da sua organização pode usar essas informações como uma indicação de que as políticas de AntiPhishing talvez precisem ser atualizados. Ou, se as pessoas estão relatando muita mensagens que foram sinalizados como lixo eletrônico, como não sendo lixo eletrônico usando o suplemento de mensagem de relatório, talvez seja necessário ajustar o [políticas antispam](configure-the-anti-spam-policies.md)equipe de segurança da sua organização.  
+O suplemento de mensagem de relatório para o Outlook e Outlook na Web permite que as pessoas facilmente relatado email classificados incorretamente, se seguros ou mal-intencionada, Microsoft e suas afiliadas para análise. A Microsoft usa essas envios para melhorar a eficácia das tecnologias de proteção de email. Além disso, se sua organização estiver usando [A proteção de ameaça avançadas do Office 365](office-365-atp.md) ou [Office 365 Threat Intelligence](office-365-ti.md), o suplemento de mensagem de relatório fornece equipe de segurança da sua organização com informações úteis, que eles podem usar para analisar e atualizar diretivas de segurança. 
+
+Por exemplo, suponha que as pessoas são relatórios muitas mensagens como phishing. Este mostra informações no [Painel de segurança](security-dashboard.md) e outros relatórios. Equipe de segurança da sua organização pode usar essas informações como uma indicação de que as políticas de AntiPhishing talvez precisem ser atualizados. Ou, se as pessoas estão relatando muita mensagens que foram sinalizados como lixo eletrônico, como não sendo lixo eletrônico usando o suplemento de mensagem de relatório, talvez seja necessário ajustar o [políticas antispam](configure-the-anti-spam-policies.md)equipe de segurança da sua organização. 
+
+O suplemento de mensagem de relatório funciona com sua assinatura do Office 365 e produtos a seguir:
+ - Outlook na Web
+ - Outlook 2013 SP1
+ - Outlook 2016
+ - Outlook 2016 para Mac
+ - Outlook incluído com o Office 365 ProPlus
   
 Se você for um usuário individual, você pode [Habilitar o suplemento de mensagem de relatório por conta própria](#get-the-report-message-add-in-for-yourself). 
   
@@ -77,32 +86,15 @@ Como o próximo passo, Aprenda como [usar o suplemento de mensagem de relatório
     
 11. Especifica quem obtém a mensagem de relatório suplemento. <br/>![Especificar quem obtém a mensagem de relatório de suplemento](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
 
-12. Escolha **Salvar**.
+12. Escolha **Salvar**. <br/>
+> [!TIP]
+> Recomendamos a [configuração de uma regra para obter uma cópia das mensagens de email relatado pelos usuários](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
-Dependendo do que você selecionou usando o assistente, pessoas da sua organização terão o relatório mensagem suplemento disponível. Pessoas da sua organização verá os ícones a seguir: 
+Dependendo do que você selecionou usando o assistente, pessoas da sua organização terão o [suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) disponíveis. Pessoas da sua organização verá os ícones a seguir: 
 
 - No Outlook no ícone tem esta aparência: <br/> ![Suplemento de mensagem ícone de relatório para o Outlook](media/OutlookReportMessageIcon.png)<br/>
 - No Outlook Web App no ícone tem esta aparência:<br/>![Outlook no ícone do suplemento de mensagem de relatório na Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-
-Em seguida, saiba como [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)e configurar uma regra para ver as mensagens de email relatados.
-
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Analisar ou editar as configurações padrão para o suplemento de mensagem de relatório
-
-Você pode analisar e editar as configurações padrão para o suplemento de mensagem de relatório usando o Centro de administração. 
-
-> [!IMPORTANT]
-> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa.
-    
-1. Se apenas, você instalou o suplemento de mensagem de relatório para sua organização, você já será na página serviços e suplementos. Caso contrário, vá [aqui](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) e entrar usando sua conta de trabalho ou da escola para o Office 365.
-
-2. Procure a **Mensagem de relatório**e selecioná-lo.<br/>![Serviços e suplementos para o Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
-    
-3. Um painel aberto que exibe as configurações que foram selecionadas para o suplemento de mensagem de relatório durante a implantação.<br/>![Configurações para o suplemento de mensagem de relatório](media/ReportMessage-reviewaddinsettings.png)<br/> 
-
-4. Revise e, se necessário, editar configurações para o suplemento de mensagem de relatório e salve as alterações.
-    
-  
 ## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>Configurar uma regra para obter uma cópia das mensagens de email relatado pelos usuários
 
 > [!IMPORTANT]
@@ -137,6 +129,25 @@ Você pode configurar uma regra para obter uma cópia das mensagens de email rel
 10. Escolha **Salvar**. 
     
 Com essa regra in-loco, sempre que alguém em sua organização relata uma mensagem de email usando o suplemento do relatório de mensagem, seu administrador global, administrador de segurança e/ou leitor de segurança receberá uma cópia da mensagem. Essas informações podem permitem definir ou ajustar políticas, como políticas de [Vínculos do Office 365 ATP seguros](atp-safe-links.md) . 
+
+## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Analisar ou editar as configurações padrão para o suplemento de mensagem de relatório
+
+Você pode analisar e editar as configurações padrão para o suplemento de mensagem de relatório usando o Centro de administração. 
+
+> [!IMPORTANT]
+> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa.
+    
+1. Se apenas, você instalou o suplemento de mensagem de relatório para sua organização, você já será na página serviços e suplementos. Caso contrário, vá [aqui](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) e entrar usando sua conta de trabalho ou da escola para o Office 365.
+
+2. Procure a **Mensagem de relatório**e selecioná-lo.<br/>![Serviços e suplementos para o Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
+    
+3. Um painel aberto que exibe as configurações que foram selecionadas para o suplemento de mensagem de relatório durante a implantação.<br/>![Configurações para o suplemento de mensagem de relatório](media/ReportMessage-reviewaddinsettings.png)<br/> 
+
+4. Revise e, se necessário, editar configurações para o suplemento de mensagem de relatório e salve as alterações.
+    
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Saiba como usar o suplemento de mensagem de relatório
+
+Consulte [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimize o potencial de uma violação de dados ou uma conta comprometida seguindo estas práticas recomendadas.
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498087"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25637995"
 ---
 # <a name="security-best-practices-for-office-365"></a>Práticas recomendadas de segurança para Office 365
 
@@ -44,7 +44,7 @@ Acesso seguro a pontuação no [https://SecureScore.office.com](https://SecureSc
 
 MFA adiciona uma camada adicional de proteção para a estratégia de senha forte por exigir que os usuários de agradecer uma chamada telefônica, uma notificação de aplicativo em seu telefone inteligente após inserir corretamente suas senhas ou mensagem de texto. Com MFA in-loco, contas de usuário do Office 365 ainda estão protegidas contra acesso não autorizado, mesmo se uma senha de usuário for comprometida. Contas são protegidas porque o access não é concedido a uma conta até após o desafio adicional foram atendido. Uma senha comprometida ou furtada não é suficiente.
   
-- [Planejar a autenticação multifator para implantações do Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Plano para a autenticação multifator para Implantações do Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [Configurar a autenticação multifator para usuários do Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
@@ -90,7 +90,7 @@ DLP permite identificar dados confidenciais e criar políticas que ajuda a imped
   
 ## <a name="use-customer-lockbox"></a>Use o cliente Lockbox
 
-Como um administrador do Office 365, você pode usar o cliente Lockbox para controlar como um engenheiro de suporte da Microsoft acessa os dados durante uma sessão de Ajuda. Em casos onde o engenheiro exige acesso aos seus dados para solucionar problemas e corrigir um problema, Lockbox do cliente permite que você aprovar ou rejeitar a solicitação de acesso. Se você aprová-la, o engenheiro pode acessar os dados. Cada solicitação possui um tempo de expiração e depois que o problema for resolvido, a solicitação é fechada e o acesso será revogado. Cliente Lockbox está incluído no plano do Office 365 Enterprise 5 ou você pode adquirir uma assinatura separada com outro plano de enterprise do Office 365. Para obter informações, consulte [Solicitações de Lockbox do cliente do Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+Como um administrador do Office 365, você pode usar o cliente Lockbox para controlar como um engenheiro de suporte da Microsoft acessa os dados durante uma sessão de Ajuda. Em casos onde o engenheiro exige acesso aos seus dados para solucionar problemas e corrigir um problema, Lockbox do cliente permite que você aprovar ou rejeitar a solicitação de acesso. Se você aprová-la, o engenheiro pode acessar os dados. Cada solicitação possui um tempo de expiração e depois que o problema for resolvido, a solicitação é fechada e o acesso será revogado. Cliente Lockbox está incluído no plano do Office 365 Enterprise E5 ou você pode adquirir uma assinatura separada com outro plano de enterprise do Office 365. Para obter informações, consulte [Solicitações de Lockbox do cliente do Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Experimente você mesmo
 <a name="SecureScore"> </a>
