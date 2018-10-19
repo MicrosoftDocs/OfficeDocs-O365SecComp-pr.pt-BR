@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: No Office 365, você pode ativar o log de auditoria de caixa de correio para registrar o acesso à caixa de correio por proprietários de caixa de correio, representantes e administradores. Por padrão, a auditoria de caixa de correio no Office 365 não está ativado. Após habilitar uma caixa de correio do log de auditoria de caixa de correio, você pode pesquisar o log de auditoria do Office 365 para atividades realizadas na caixa de correio.
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358380"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639660"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar a auditoria de caixa de correio no Office 365
   
@@ -28,8 +28,6 @@ No Office 365, você pode ativar o log de auditoria de caixa de correio para reg
 ## <a name="before-you-begin"></a>Antes de começar
   
 - Você precisa usar o PowerShell do Exchange Online para habilitar a caixa de correio do log de auditoria. Não é possível utilizar a segurança do Office 365 &amp; Centro de conformidade ou centro de administração do Exchange.
-    
-- Após habilitar uma caixa de correio do log de auditoria de caixa de correio, acesso para as ações de caixa de correio e determinados admin e delegado são registrados por padrão. Para registrar ações tomadas pelo proprietário da caixa de correio, você deve especificar quais ações de proprietário de auditoria. Consulte a seção "Mais informações" para ver uma lista de ações que são registrados depois que o log de auditoria de caixa de correio está habilitada e quais ações estão disponíveis para cada tipo de logon do usuário.
     
 - Não será possível habilitar o log da caixa de correio que está associado a um grupo do Office 365 ou de uma equipe no Microsoft Teams de auditoria de caixa de correio.
     
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>Etapa 3: Especificar ações de proprietário para auditoria
 
-Quando você habilita a auditoria de uma caixa de correio, apenas uma ação ( **UpdateFolderPermissions** ) executada pelo proprietário da caixa de correio é auditada por padrão. Você precisa especificar outras ações de proprietário de auditoria. Consulte a tabela na seção "Ações de caixa de correio" para uma lista e uma descrição das ações de proprietário que podem ser auditados. 
+Quando você habilita a auditoria de uma caixa de correio, algumas ações executadas pelo proprietário da caixa de correio são auditadas por padrão. Você precisa especificar outras ações de proprietário de auditoria. Consulte a tabela na seção [ações de auditoria de caixa de correio](#mailbox-auditing-actions) para uma lista e uma descrição das ações de proprietário que são registradas por padrão e outras ações que podem ser auditadas. 
   
 Este exemplo adiciona as ações de proprietário **MailboxLogin** e **HardDelete** à caixa de correio auditoria de caixa de correio do Pilar Pinilla. Este exemplo pressupõe que a auditoria de caixa de correio já foi ativado para esta caixa de correio. 
 
@@ -103,7 +101,7 @@ Este exemplo adiciona as ações de proprietário **SoftDelete** , **HardDelete*
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditOwner @{Add="MailboxLogin","HardDelete","SoftDelete"}
 ```
   
-## <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
+## <a name="how-do-you-know-this-worked"></a>Como você sabe se funcionou?
 
 Para verificar se você habilitou o log de auditoria para uma caixa de correio, use o cmdlet **Get-Mailbox** para recuperar as configurações de auditoria dessa caixa de correio. 
   
@@ -123,9 +121,9 @@ Um valor de **True** referente à propriedade **AuditEnabled** verifica que audi
     
 ## <a name="mailbox-auditing-actions"></a>Ações de auditoria de caixa de correio
   
-A tabela a seguir lista as ações que podem ser registradas por caixa de correio do log de auditoria. A tabela inclui qual ação pode ser registrada para os tipos de logon de usuário diferente. Na tabela, um **não** indica que uma ação não puder ser registrada para esse tipo de logon. Um asterisco ( **\*** ) indica que a ação é registrada por padrão, quando o log de auditoria de caixa de correio está habilitada para a caixa de correio. Conforme indicado anteriormente, a ação somente o proprietário auditada por padrão quando você ativar a auditoria de caixa de correio é UpdateFolderPermissions. Para fazer logon outras ações tomadas pelo proprietário da caixa de correio, você deve especificar ações adicionais de proprietário de auditoria. Para fazer isso, consulte a [etapa 3](#step-3-specify-owner-actions-to-audit) neste tópico. 
+A tabela a seguir lista as ações que podem ser registradas por caixa de correio do log de auditoria. A tabela inclui qual ação pode ser registrada para os tipos de logon de usuário diferente. Na tabela, um **não** indica que uma ação não puder ser registrada para esse tipo de logon. Um asterisco ( **\*** ) indica que a ação é registrada por padrão, quando o log de auditoria de caixa de correio está habilitada para a caixa de correio. 
   
-|**Action**|**Descrição**|**Admin**|**Representante\*\*\***|**Proprietário**|
+|**Action**|**Descrição**|**Administrador**|**Representante\*\*\***|**Proprietário**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copiar** <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
 |**Criar** <br/> |Um item é criado na pasta Calendário, contatos, anotações ou tarefas na caixa de correio; Por exemplo, uma nova solicitação de reunião é criada. Observe que a criação, enviando ou recebendo uma mensagem não sofre auditoria. Além disso, não é auditado criando uma pasta de caixa de correio.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
@@ -146,7 +144,7 @@ A tabela a seguir lista as ações que podem ser registradas por caixa de correi
 > [!NOTE]
 > <sup>\*</sup>Auditados por padrão, se a auditoria está habilitada para uma caixa de correio.<br/><br/>  <sup>\*\*</sup>Entradas para ações de vincular pasta executadas por representantes são consolidadas. Uma entrada de log é gerada para acesso a pastas individuais dentro de um período de tempo de 24 horas.<br/><br/><sup>\*\*\*</sup>Um administrador que tenha sido atribuído a permissão de acesso completo à caixa de correio de um usuário é considerado um usuário delegado. 
   
-Se você não precisar mais determinados tipos de ações de caixa de correio a ser auditado, você deve modificar a configuração de log de auditoria da caixa de correio para desabilitar essas ações. Entradas de log existentes não são limpo até o limite de idade de 90 dias para entradas do log de auditoria for atingido.
+Se você não precisar mais determinados tipos de ações de caixa de correio a ser auditado, você deve modificar a configuração de log de auditoria da caixa de correio para desabilitar essas ações. Entradas de log existentes não são limpo até o limite de idade de retenção para entradas do log de auditoria for atingido. Para obter mais informações sobre a idade de retenção para as entradas de log de auditoria, consulte a seção "antes de começar" na [pesquisa da auditoria, faça logon no Centro de conformidade & segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#before-you-begin).
   
 ## <a name="more-infotab"></a>[Mais informações](#tab/)
   
