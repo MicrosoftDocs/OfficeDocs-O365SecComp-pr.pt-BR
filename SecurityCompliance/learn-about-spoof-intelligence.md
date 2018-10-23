@@ -3,7 +3,7 @@ title: Saiba mais sobre a inteligência contra falsificação
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Use intelligence falso na segurança &amp; Centro de conformidade, na página Configurações do anti-spam para examinar todos os remetentes que são falsificação de qualquer um dos domínios que fazem parte da sua organização ou falsificação de domínios externos. Realizar a falsificação de inteligência de dados está disponível como parte do Office 365 Enterprise E5 ou, separadamente, como parte da proteção de ameaça avançadas e o Exchange Online Protection.
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715907"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Saiba mais sobre a inteligência contra falsificação
 
@@ -102,7 +102,7 @@ Se você tiver uma assinatura do Office 365 Enterprise E5 ou ter adquiridos sepa
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configurando a política antifalsificação
 <a name="Managespooflist"> </a>
 
-Além de permitir ou bloquear um remetente específico enviem email falsificado em sua organização, você também pode configurar como rigor que você deseja que o filtro a ser, a ação a ser executada quando uma mensagem de falsificação for encontrada e se deseja ou não habilitar dicas de segurança para antifalsificação.
+Além de permitir ou bloquear um remetente específico enviem email falsificado em sua organização, você também pode configurar como estrito desejado filtro a ser e a ação a ser executada quando uma mensagem de falsificação é encontrada.
   
 Proteção antifalsificação é aplicada ao email de remetentes de domínios que são externos à sua organização do Office 365. Você pode aplicar a política aos destinatários cujas caixas de correio são licenciadas para E5 de Enterprise do Office 365, proteção avançada de ameaça e a partir de outubro, 2018 EOP customers também. Você gerenciar a política antifalsificação junto com as outras configurações do antiphishing. Para obter mais informações sobre configurações de AntiPhishing, consulte [Configurar as diretivas de AntiPhishing do Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
   
@@ -126,11 +126,7 @@ Embora a política antifalsificação aparece sob a política de AntiPhishing na
   
     ![Captura de tela mostrando a política antifalsificação editar opções](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Escolha se deseja habilitar ou desabilitar antifalsificação dicas de segurança. O Office 365 recomenda a habilitação da dica de segurança **a autenticação falha** para avisar aos usuários quando eles estão interagindo com um remetente cuja identidade não pôde ser verificada. O Office 365 também recomenda habilitando a dica de segurança para um **autenticação soft-pass** para grupos menores de usuários, pois essa dica safety pode gerar muita avisos se o usuário recebe email de várias fontes legítimos, mas não-autenticados.  
-  
-    ![Captura de tela mostrando antifalsificação opções de ponta de segurança](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. Fazer sua escolha e escolha **Salvar**. 
+7. Fazer sua escolha e escolha **Salvar**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Outras maneiras de gerenciar a falsificação e phishing com o Office 365
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Estar atento sobre falsificação e proteção contra phishing. Aqui estão mane
 - Verifique o relatório de email do Exchange Online Protection falsificação como parte de sua rotina. Você pode usar este relatório com frequência para exibir e ajudar a gerenciar remetentes falsificados. Para obter informações, consulte o **relatório de email de falsificação** em [relatórios de proteção de email de uso no Office 365 para exibir dados sobre malware, spam e detecções de regra](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
 Para administradores do Office 365 mais avançados, você também pode concluir essas verificações:
+    
     
 - Analise sua configuração de política de remetente Framework (SPF). Para obter uma introdução rápida SPF e instalá-la configurado rapidamente, consulte [Configurar SPF no Office 365 para ajudar a impedir a falsificação](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Para ter uma compreensão mais detalhada de como o Office 365 usa SPF ou para implantações não-padrão ou de solução de problemas, por exemplo, híbrida, inicie com [como o Office 365 usa Framework de política do remetente (SPF) para evitar a falsificação](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     

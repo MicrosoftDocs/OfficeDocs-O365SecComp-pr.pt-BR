@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Saiba como manter emails reais fora do lixo eletrônico e impedir que sejam marcadas como spam no Office 365.
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002634"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596714"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
@@ -59,7 +59,7 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
     
 - **Desabilitar a filtragem de SmartScreen no Outlook** Se os usuários estiverem usando o cliente de área de trabalho do Outlook, desabilite a funcionalidade de filtragem de SmartScreen, que foi descontinuada. Se estiver habilitado, ela poderá causar falsos positivos. Isso não será necessário se o cliente de área de trabalho do Outlook estiver atualizado. 
     
-- **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas.
+- **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas. 
     
 - **Imediatamente permitir um remetente** Caso você precise imediatamente permitir um remetente, recomendamos que você **APENAS permita o endereço IP do remetente específico**. Como alternativa, você pode permitir um remetente e confira se o remetente passa em uma verificação de autenticação, como SPF ou DKIM ao criar uma regra de transporte que procura **as duas coisas**: um domínio do remetente e um cabeçalho Authentication-Results bem-sucedido. 
     
