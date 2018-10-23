@@ -3,7 +3,7 @@ title: Gerenciar investigações legais no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use os casos de eDiscovery no Office 365 Security &amp; Centro de conformidade para gerenciar a investigação de legais da sua organização. Se você tiver uma assinatura E5, você pode analisar os dados de ocorrências mais usando as capacidades de codificação previsão de indisponibilidade do eDiscovery avançado, aprendizado de máquina e análise de texto.
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719045"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gerenciar investigações legais no Office 365
 
@@ -32,7 +32,7 @@ As organizações têm vários motivos para responder a um caso jurídico envolv
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gerenciar investigações legais com casos de eDiscovery
 
-descoberta eletrônica casos permitem que você controle quem pode criar, acessar e gerenciar casos do eDiscovery em sua organização. Casos de uso para adicionar membros e controle quais tipos de ações que eles possam executar, colocar uma isenção em locais de conteúdo relevante a um caso jurídico e usar a ferramenta de pesquisa de conteúdo para os locais de pesquisa em espera para o conteúdo que pode ser responsivo ao seu caso. Em seguida, também pode exportar e baixar esses resultados para uma investigação detalhada por revisores externos. Se sua organização do Office 365 tem e E5 assinatura, você pode também preparar os resultados da pesquisa para análise no eDiscovery avançado.
+descoberta eletrônica casos permitem que você controle quem pode criar, acessar e gerenciar casos do eDiscovery em sua organização. Casos de uso para adicionar membros e controle quais tipos de ações que eles possam executar, colocar uma isenção em locais de conteúdo relevante a um caso jurídico e usar a ferramenta de pesquisa de conteúdo para os locais de pesquisa em espera para o conteúdo que pode ser responsivo ao seu caso. Em seguida, também pode exportar e baixar esses resultados para uma investigação detalhada por revisores externos. Se sua organização do Office 365 tem uma assinatura de E5, você também pode preparar os resultados da pesquisa para análise no eDiscovery avançado.
   
 - [Gerenciar o fluxo de trabalho de descoberta eletrônica](ediscovery-cases.md) , criando e usando casos de eDiscovery para cada investigação legal sua organização deve se RESPONSABILIZARÃO 
     
