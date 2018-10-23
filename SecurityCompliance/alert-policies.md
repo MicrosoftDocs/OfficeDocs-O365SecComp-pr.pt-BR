@@ -3,7 +3,7 @@ title: Políticas de segurança do Office 365 de alerta &amp; Centro de conformi
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Criar políticas de alerta de segurança do Office 365 &amp; Centro de conformidade para monitorar o problema de permissões, perda de dados e possíveis ameaças. Em seguida, você pode exibir e gerenciar os alertas que são gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524005"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698017"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Políticas de segurança do Office 365 de alerta &amp; Centro de conformidade
 
@@ -74,7 +74,9 @@ Uma política de alerta consiste as configurações e as condições a seguir.
     
   - Governança de dados
     
-  - Proteção de perda de dados
+  - Prevenção contra perda de dados
+
+  - Fluxo de mensagens
     
   - Permissões
     
@@ -100,6 +102,7 @@ A tabela a seguir lista e descreve as políticas de alerta padrão disponíveis 
 |**Política de alerta padrão**|**Descrição**|**Assinatura do Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Criação da regra de encaminhamento/redirecionamento** <br/> |Gera um alerta quando alguém em sua organização cria uma regra de caixa de entrada para suas caixas de correio que encaminha ou redireciona as mensagens para outra conta de email. Essa diretiva controla somente as regras de entrada que são criadas usando o Outlook Web App ou do PowerShell do Exchange Online. Essa diretiva tem uma configuração de gravidade de **baixo** . Para obter mais informações usando regras de caixa de entrada para encaminhar e redirecionar o email no Outlook Web App, consulte [Use regras no Outlook Web App para encaminhar automaticamente mensagens para outra conta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |E1, E3 ou E5  <br/> |
+|**pesquisa de descoberta eletrônica iniciada ou exportados** <br/> |Gera um alerta quando alguém utiliza a ferramenta de pesquisa de conteúdo no Centro de conformidade & segurança. Um alerta é acionado quando as seguintes atividades de pesquisa de conteúdo são realizadas:<br/><br/>• Uma pesquisa de conteúdo é iniciado<br/>• Os resultados de uma pesquisa de conteúdo são exportados<br/>• Um relatório de pesquisa de conteúdo é exportado<br/><br/>Alertas são também trigged quando as atividades de pesquisa de conteúdo anterior são realizadas em associação com um caso de eDiscovery. Essa diretiva tem uma configuração de severidade **média** . Para obter mais informações sobre atividades de pesquisa de conteúdo, consulte [Search para atividades de descoberta eletrônica no Office 365 log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |E1, E3 ou E5  <br/> |
 |**Elevação do privilégio de administração do Exchange** <br/> |Gera um alerta quando alguém recebe permissões administrativas em sua organização do Exchange Online; Por exemplo, se um usuário é adicionado à função de gerenciamento da organização grupo no Exchange Online. Essa diretiva tem uma configuração de gravidade de **baixo** .<br/> |E1, E3 ou E5  <br/> |
 |**As mensagens foram adiadas** <br/> |Gera um alerta quando o Office 365 não pode enviar mensagens de email para sua organização local ou de um parceiro de servidores usando um conector. Quando isso acontecer, a mensagem está na fila no Office 365. Esse alerta é disparado quando há 2.000 mensagens ou mais enfileirados para mais de uma hora. Essa diretiva tem uma configuração de severidade **alta** .<br/> |E1, E3 ou E5  <br/> |
 |**Campanha de malware detectada após a entrega** <br/> |Gera um alerta quando um grande número incomum de mensagens que contêm malware é entregues às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas postais do Exchange Online. Essa diretiva tem uma configuração de severidade **alta** .<br/> |Assinatura de complemento E5 ou inteligência de ameaça do Office 365  <br/> |
@@ -124,7 +127,7 @@ Você pode usar os seguintes filtros para exibir um subconjunto de todos os aler
   
 - **Status** - Use este filtro para mostrar os alertas que são atribuídas a um determinado status; o status padrão está **ativa**. Outros administradores ou você podem alterar o valor de status.
     
-- **Políticas** - Use este filtro para mostrar os alertas que correspondem a configuração de uma ou mais políticas de alerta. Ou então, você apenas poderá exibir todos os alertas para todas as políticas de alerta.
+- **Política** - Use este filtro para mostrar os alertas que correspondem a configuração de uma ou mais políticas de alerta. Ou então, você apenas poderá exibir todos os alertas para todas as políticas de alerta.
     
 - **Intervalo de tempo** - Use este filtro para mostrar os alertas que foram gerados dentro de uma data específica e um intervalo de tempo.
     

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Aprenda como pesquisar o log de auditoria do Office 365 para eventos que são registrados quando os administradores de conformidade executam tarefas de casos de pesquisa de conteúdo e descoberta eletrônica na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038344"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698027"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Procure atividades de descoberta eletrônica no log de auditoria do Office 365
 
@@ -43,7 +43,7 @@ Atualmente, você precisará fazer algumas coisas específicas para exibir as at
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. No painel esquerdo, clique em **pesquisa &amp; investigação**e clique em **pesquisa de log de auditoria**.
     
@@ -94,7 +94,7 @@ A tabela a seguir descreve a pesquisa de conteúdo e atividades relacionadas a d
 |Caso de descoberta eletrônica excluído  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Um caso de eDiscovery foi excluído. Observe que qualquer associada à ocorrência de espera deve ser removido antes do caso pode ser excluído.  <br/> |
 |Filtro de permissões de pesquisa excluídos  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Um filtro de permissões de pesquisa foi excluído.  <br/> |
 |Consulta de pesquisa excluídos para retenção de casos de eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Uma isenção baseado em consulta associada a um caso de eDiscovery foi excluída. Removendo a consulta da retenção é geralmente o resultado da exclusão de uma isenção. Quando uma isenção ou uma consulta de espera forem excluídas, os locais de conteúdo que estavam em espera sejam liberados.  <br/> |
-|Baixado exportação de conteúdo de pesquisa  <br/> |SearchResultDownloaded  <br/> |N/D  <br/> |Um usuário baixado os resultados de uma pesquisa de conteúdo para seus computadores locais. Observe que uma atividade **iniciado exportar de pesquisa de conteúdo** deve ser iniciada antes que os resultados da pesquisa podem ser baixados.<br/> |
+|Baixado exportação de conteúdo de pesquisa  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Um usuário baixado os resultados de uma pesquisa de conteúdo para seus computadores locais. Observe que uma atividade **iniciado exportar de pesquisa de conteúdo** deve ser iniciada antes que os resultados da pesquisa podem ser baixados.<br/> |
 |Visualizados resultados da pesquisa de conteúdo  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Um usuário visualizados os resultados de uma pesquisa de conteúdo.  <br/> |
 |Removidos resultados da pesquisa de conteúdo  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Um usuário removidos os resultados de uma pesquisa de conteúdo executando o **New-ComplianceSearchAction-limpar** comando.  <br/> |
 |Análise removido da pesquisa de conteúdo  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Uma pesquisa de conteúdo preparar ação (para preparar os resultados da pesquisa avançada do Office 365 eDiscovery) foi excluído. Se a ação de preparação era menor que duas semanas, resultados da pesquisa que foram preparados para o eDiscovery avançado foram excluídos da área de armazenamento do Microsoft Azure. Se a ação de preparação foi mais antiga do que 2 semanas, esse evento indica que somente a ação de preparação correspondente foi excluída.  <br/> |
