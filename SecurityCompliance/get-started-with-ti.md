@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Saiba mais sobre o Office 365 Threat Intelligence e como começar.
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524320"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769890"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Introdução à Inteligência Contra Ameaças do Office 365
 
@@ -80,7 +80,7 @@ O Office 365 Threat Intelligence está incluído no Office 365 Enterprise E5. Se
     
     Se você vir uma assinatura diferente, como o **Office 365 Enterprise E3** ou **Office 365 Enterprise E1**, você pode adicionar inteligência de ameaça do Office 365. Para fazer isso, escolha **+ Adicionar assinatura**.
     
-4. No Centro de administração do Office 365, escolha **usuários** \> **usuários ativos**.
+4. No Centro de administração do Office 365, escolha **Usuários** \> **Usuários ativos**.
     
 5. Atribua licenças de inteligência de dados do Office 365 ameaça aos usuários. Para obter mais informações sobre como atribuir licenças, consulte [Atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
@@ -92,7 +92,7 @@ O Office 365 Threat Intelligence está incluído no Office 365 Enterprise E5. Se
 |Usar o painel de ameaça (ou o novo [Painel de segurança](security-dashboard.md))  <br/> Exibir informações sobre as ameaças recentes ou atuais  <br/> |Administrador Global do Office 365  <br/> Administrador de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> Leitor de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> |
 |Use o Gerenciador de ameaça (também conhecido como Explorer)  <br/> Analisar ameaças  <br/> |Administrador Global do Office 365  <br/> Administrador de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> Leitor de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> |
 |Modo de exibição de incidentes  <br/> Adicionar mensagens de email a um incidente  <br/> |Administrador Global do Office 365  <br/> Administrador de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> Leitor de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> |
-|Ações de email de gatilho em um incidente  <br/> Localizar e excluir mensagens de email suspeitas  <br/> |Administrador Global do Office 365  <br/> Pesquisar e limpar (atribuída na segurança &amp; Centro de conformidade)  <br/> |
+|Ações de email de gatilho em um incidente  <br/> Localizar e excluir mensagens de email suspeitas  <br/> |Administrador Global do Office 365 ou segurança  <br/> Pesquisar e limpar (atribuída na segurança &amp; Centro de conformidade)  <br/> |
 |Integrar a Inteligência Contra Ameaças do Office 365 com a Proteção Avançada contra Ameaças do Windows Defender  <br/> Integrar o Office 365 Threat Intelligence com um servidor SIEM  <br/> |Administrador Global do Office 365  <br/> Administrador de segurança (atribuída na segurança &amp; Centro de conformidade)  <br/> Função adequada atribuída em aplicativos adicionais (por exemplo, portal de proteção de ameaça avançado do Windows Defender ou um servidor SIEM)  <br/> |
    
 Para obter informações sobre funções, grupos de funções e permissões, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).

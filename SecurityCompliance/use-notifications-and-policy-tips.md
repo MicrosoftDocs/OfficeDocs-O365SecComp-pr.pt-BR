@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está funcionando com o conteúdo que está em conflito com uma política de DLP. Você pode usar as dicas de política e notificações por email para aumentar a conscientização e ajudar a instruir as pessoas sobre diretivas da sua organização. Você também pode conceder precisam de pessoas a opção de substituir a política, para que eles não estiver bloqueados caso possuam uma empresa válida ou se a diretiva está detectando um falso positivo. '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524663"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769910"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e Mostrar dicas de política para políticas de DLP
 
@@ -206,6 +206,25 @@ Se as dicas de política estão configuradas para permitir substituição, você
 ![Diálogo de dica de política, onde você pode substituir a dica de política](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Observe que quando você adiciona informações confidenciais a um email, pode haver latência entre quando das informações confidenciais são adicionadas e quando a dica de política será exibida.
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 e posterior suporta mostrando as dicas de política para apenas algumas condições
+
+Atualmente, o Outlook 2013 e posterior oferece suporte a dicas de política mostrando apenas para essas condições:
+
+- Contém conteúdo
+- Conteúdo é compartilhado
+
+Estamos atualmente trabalhando no suporte para a exibição de dicas de política para condições adicionais. Elas incluem:
+
+- Conteúdo de qualquer anexo de email não pôde ser examinado
+- Conteúdo de qualquer anexo de email não completou a digitalização
+- Extensão de arquivo de anexo é
+- Anexo é protegido por senha
+- Propriedade de documento é
+- Domínio do destinatário é
+- Endereço IP do remetente é
+
+Observe que todas essas condições funcionam no Outlook, onde eles serão corresponder conteúdo e impor ações de proteção no conteúdo. Mas, mostrar as dicas de política para os usuários ainda não é suportado.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Dicas de política no Centro de administração do Exchange versus a segurança do Office 365 &amp; Centro de conformidade
 
@@ -218,8 +237,7 @@ Observe que as notificações de email enquanto dicas de política podem desenha
 ### <a name="default-text-for-policy-tips-in-email"></a>Texto padrão para dicas de política em email
 
 Por padrão, dicas de política exibem texto semelhante ao seguinte para email.
-  
-| |
+
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a dica de política padrão diz isso...**|
 |:-----|:-----|
 |Envia uma notificação, mas não permite a substituição  <br/> |Seu email está em conflito com uma diretiva em sua organização.  <br/> |
@@ -255,8 +273,7 @@ Em cada um desses programas de área de trabalho do Office 2016, as pessoas pode
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto padrão para dicas de política no Excel 2016, PowerPoint 2016 e Word 2016
 
 Por padrão, as dicas de política exibem texto semelhante ao seguinte no modo de exibição de Backstage e de Barra de mensagem de um documento aberto. O texto de notificação é configurado separadamente para cada regra, para que o texto exibido seja diferente dependendo da regra que for correspondida.
-  
-| |
+
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a dica de política padrão diz isso...**|
 |:-----|:-----|
 |Envia uma notificação, mas não permite a substituição  <br/> |Esse arquivo está em conflito com uma diretiva em sua organização. Vá para o menu **arquivo** para obter mais informações.<br/> |
