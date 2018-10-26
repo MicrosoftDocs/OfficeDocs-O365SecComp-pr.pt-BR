@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre privilegiada acessar management no Office 365
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575335"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793546"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilégios acessar management no Office 365
 
@@ -80,7 +80,7 @@ Pretendemos oferecer esse recurso em outras cargas de trabalho do Office 365 em 
 Estamos planejando aumentar o limite atual de 30 políticas de acesso privilegiado por organização do Office 365 em breve.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>É necessário ser um Administrador Global para gerenciar o acesso privilegiado no Office 365?
-Você precisa ter privilégios de Administrador Global para poder gerenciar acesso privilegiado no Office 365. Os usuários que estão incluídos no grupo dos aprovadores um não precisam ser um Administrador Global para revisar e aprovar solicitações. 
+Não, você precisa ter a função de gerenciamento de função do Exchange atribuída às contas que gerenciará o acesso privilegiado no Office 365. No entanto, a função de Administrador Global inclui essa função por padrão e pode ser usada para gerenciar o acesso privilegiado se não desejar configurar a função de gerenciamento de função como uma permissão de conta autônomo. Os usuários que estão incluídos no grupo dos aprovadores um não precisam ser um Administrador Global ou ter a função de gerenciamento de função atribuída a revisar e aprovar solicitações. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Como é o gerenciamento de acesso privilegiado no Office 365 relacionadas ao cliente Lockbox?
 [Lockbox do cliente](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) permite que um nível de controle de acesso para as organizações para acesso a dados pelo seu provedor de serviço, ou seja, a Microsoft. Privilegiado acesso management no Office 365 permite que o controle de acesso granular dentro de uma organização para todas as tarefas do Office 365 privilegiado.
