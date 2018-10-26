@@ -39,15 +39,15 @@ ms.locfileid: "22523646"
     
   - Para cada problema, use o mesmo especialista em todo o processo de treinamento de relevância. Não é permitido marcar simultaneamente o mesmo problema por vários especialistas.
     
-  - Determine se cada grupo de arquivos é pertinente apenas um problema específico. 
+  - Determine se cada grupo de arquivos é pertinente a apenas um problema específico. 
     
-  - Se um problema for definido de maneira muito genérica, a Descoberta Eletrônica Avançada pode gerar arquivos demais que realmente não são relevantes. Se um problema for definido de maneira muito estrita, o processo de treinamento de relevância poderá levar mais tempo. 
+  - Se um problema for definido de maneira muito genérica, a Descoberta Eletrônica Avançada poderá gerar arquivos demais que realmente não são relevantes. Se um problema for definido de maneira muito estrita, o processo de treinamento de relevância poderá levar mais tempo. 
     
   - Durante cada ciclo de treinamento de relevância, a Descoberta Eletrônica Avançada concentra-se em um único problema ativo e os resultados de exemplo provisórios são exibidos adequadamente.
     
-  - Em um cenário de vários problemas, modo de amostragem permite a seleção dos problemas a serem incluídos no processamento. Os problemas definidos como "desativados" não são tratados até o modo de amostra ser alterado. Um problema pode ser "ocioso" ou "ativado" para apenas um especialista.
+  - Em um cenário de vários problemas, o modo de amostragem permite a seleção dos problemas a serem incluídos no processamento. Os problemas definidos como "desativados" não são tratados até o modo de amostragem ser alterado. Um problema pode estar "ocioso" ou "ativado" para apenas um especialista.
     
-  -  A Descoberta Eletrônica Avançada pode ser usada para gerar arquivos de privilégio candidato. Configure um problema separado para privilégio. Se possível, treine e selecione primeiro para relevância e treine para privilégio no conjunto selecionado (recarregar o conjunto definido como um caso separado). 
+  -  A Descoberta Eletrônica Avançada pode ser usada para gerar arquivos de privilégio de candidato. Configure um problema separado para privilégio. Se possível, treine e selecione primeiro para relevância e treine para privilégio no conjunto selecionado (recarregar o conjunto definido como um caso separado). 
     
   - O cálculo em lote pode ser realizado somente quando não houver amostras abertas (quando você clica em cálculo em lote, haverá uma lista de usuários com amostras abertas). Para "fechar" amostras de outros usuários (isso deverá ser executado somente se esses usuários não estiverem marcando essas amostras), um administrador pode usar o utilitário de "Modificar relevância" com a opção "Amostra de todos os usuários".
     
@@ -55,7 +55,7 @@ ms.locfileid: "22523646"
     
 - **Riqueza**: se a riqueza para um problema for inferior a 3% após a avaliação, considere a propagação do treinamento em relevância com arquivos conhecidos relevantes e não relevantes.
     
-- **Tamanho do arquivo**: arquivos grandes (mais de 5.242.880 de caracteres de texto extraído) são ignorados em Relevância. Os arquivos não participam do processo de treinamento de relevância e não recebe uma pontuação de relevância após o lote de cálculo. Os arquivos com mais de 5MB podem ser incluído no conjunto da avaliação.
+- **Tamanho do arquivo**: arquivos grandes (mais de 5.242.880 de caracteres de texto extraído) são ignorados em Relevância. Os arquivos não participam do processo de treinamento de relevância e não recebem uma pontuação de relevância após o lote de cálculo. Os arquivos com mais de 5 MB podem ser incluídos no conjunto da avaliação.
     
 ## <a name="setting-up-case-issues"></a>Como configurar os problemas de caso
 
@@ -73,7 +73,7 @@ Após os parâmetros serem definidos, o revisor/especialista pode começar o tre
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Como definir problemas e atribuindo usuários](define-issues-and-assign-users.md)
+[Como definir problemas e atribuir usuários](define-issues-and-assign-users.md)
   
 [Como configurar carregamentos para adicionar os arquivos importados](set-up-loads-to-add-imported-files.md)
   

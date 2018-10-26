@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor as configurações de proteção, como criptografia ou marcas d'água no conteúdo rotulado.
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577090"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678120"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -71,7 +71,7 @@ Depois que um rótulo de confidencialidade é aplicado a um email ou documento, 
 
 - **Criptografar** apenas o email ou o email e documentos. Você pode escolher quais usuários ou qual grupo tem permissões para executar as ações e por quanto tempo. Por exemplo, você pode optar por permitir que os usuários em um domínio específico fora da sua organização tenham permissões para examinar o conteúdo por apenas 7 dias após ele ser rotulado.
 
-- **Marcar o conteúdo** adicionando marcas-d'água, cabeçalhos ou rodapés personalizados a emails ou documentos com rótulos aplicados. As marcas-d'água são aplicadas apenas a documentos, não a emails, e são limitadas a 255 caracteres. Além disso, os cabeçalhos e rodapés também são limitados a 1.024 caracteres, exceto no Excel, onde são limitados a 253 caracteres.
+- **Marcar o conteúdo** adicionando marcas-d'água, cabeçalhos ou rodapés personalizados a emails ou documentos com rótulos aplicados. As marcas-d'água são aplicadas apenas a documentos, não a emails, e são limitadas a 255 caracteres. Além disso, os cabeçalhos e rodapés também são limitados a 1.024 caracteres, exceto no Excel, onde são limitados a 255 caracteres ou menos, dependendo se o documento contém outros cabeçalhos ou rodapés e de outros fatores.
 
     ![Marca-d'água e cabeçalho aplicados ao documento](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ Um documento ou email pode ter apenas um único rótulo de confidencialidade apl
 
 ### <a name="sublabels-grouping-labels"></a>Sub-rótulos (agrupamento de rótulos)
 
-Com sub-rótulos, você pode agrupar um ou mais rótulos sob um cabeçalho que um usuário vê em um aplicativo do Office. Por exemplo, em Confidencial, sua organização pode usar vários rótulos diferentes para tipos específicos dessa classificação. Nesse exemplo, o rótulo Confidencial é simplesmente um rótulo de texto sem configurações de proteção, portanto, não pode ser aplicado ao conteúdo. Em vez disso, os usuários deverão escolher Confidencial para exibir os sub-rótulos, e eles podem escolher um sub-rótulo que se aplique ao conteúdo.
+Com sub-rótulos, você pode agrupar um ou mais rótulos sob um cabeçalho que um usuário vê em um aplicativo do Office. Por exemplo, em Confidencial, sua organização pode usar vários rótulos diferentes para tipos específicos dessa classificação. Nesse exemplo, o rótulo Confidencial é simplesmente um rótulo de texto sem configurações de proteção e, como tem sub-rótulos, não pode ser aplicado ao conteúdo. Em vez disso, os usuários deverão escolher Confidencial para exibir os sub-rótulos, e eles podem escolher um sub-rótulo que se aplique ao conteúdo.
 
 Sub-rótulos são simplesmente uma maneira de apresentar os rótulos aos usuários em grupos lógicos. Sub-rótulos não herdam nenhuma configuração do rótulo em que se encontram.
 
@@ -148,7 +148,7 @@ Nos aplicativos do Office em dispositivos com Windows, os rótulos de confidenci
 
 Em breve, haverá suporte nativo para rótulos de confidencialidade nos aplicativos do Office no Windows.
 
-Caso seja um cliente existente da Proteção de Informações do Azure, você pode implantar o cliente de rotulagem unificado nela, o qual dá suporte a rótulos de confidencialidade e estará disponível em breve. (Volte a verificar se há um link com informações sobre como implantar o cliente). Estamos trabalhando em suporte nativo para os rótulos de confidencialidade nos aplicativos do Office no Windows, de modo que o cliente de rotulagem unificado da Proteção de Informações do Azure não seja mais necessário.
+Caso seja um cliente existente da Proteção de Informações do Azure, você pode implantar o cliente de rotulagem unificado nela, o qual dá suporte a rótulos de confidencialidade. Confira mais informações sobre como baixar o cliente em [Cliente de rotulagem unificado de Proteção de Informações do Azure: informações de versão](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Estamos trabalhando em suporte nativo para os rótulos de confidencialidade nos aplicativos do Office no Windows, de modo que o cliente de rotulagem unificado da Proteção de Informações do Azure não seja mais necessário.
 
 ![Botão Confidencialidade na faixa de opções do Excel no Windows](media/Sensitivity_label_Sensitivity_button.png)
 
