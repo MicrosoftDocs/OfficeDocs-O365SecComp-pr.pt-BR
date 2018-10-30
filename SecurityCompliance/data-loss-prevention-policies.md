@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Com uma política de prevention (DLP) de perda de dados no Office 365 Security &amp; Centro de conformidade, você pode identificar, monitorar e proteger automaticamente informações confidenciais across Office 365.
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540417"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829192"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção contra perda de dados
 
@@ -312,7 +312,7 @@ Você pode criar um rótulo e, em seguida:
     
 - Ele de conteúdo que **se aplicam automático** corresponde às condições que você escolher. 
     
-Para saber mais sobre rótulos, confira [Visão geral dos rótulos](labels.md).
+Para obter mais informações sobre rótulos, consulte [Overview of rótulos de retenção](labels.md).
   
 Depois de criar um rótulo, você pode usar esse rótulo como uma condição em suas políticas de DLP. Por exemplo, talvez você queira fazer isso porque:
   
@@ -327,12 +327,16 @@ Depois de criar um rótulo, você pode usar esse rótulo como uma condição em 
 Usando rótulos como uma condição em suas regras DLP, pode você aplicar seletivamente ações de proteção em um conjunto específico de conteúdo, locais ou usuários.
   
 ![Rótulos como uma condição](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Suporte para os rótulos de sensibilidade vem
+
+Observe que você pode usar um rótulo de retenção somente atualmente como uma condição, não um [rótulo de sensibilidade](sensitivity-labels.md). Estamos atualmente trabalhando suporte para usar um rótulo de sensibilidade nessa condição.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Como esse recurso se relaciona com outros recursos
 
 Vários recursos podem ser aplicados ao conteúdo que contém informações confidenciais:
   
-- Um [rótulo de retenção](labels.md#applying-a-retention-label-automatically-based-on-conditions)[aplicando um rótulo automaticamente com base nas condições] e uma [política de retenção](retention-policies.md) podem impor ações de **retenção** nesse conteúdo. 
+- Um [rótulo de retenção](labels.md#applying-a-retention-label-automatically-based-on-conditions) e uma [política de retenção](retention-policies.md) podem impor ações de **retenção** nesse conteúdo. 
     
 - Uma política de DLP pode impor a **proteção** ações sobre este conteúdo. E antes de impô essas ações, uma política de DLP pode exigir outras condições sejam atendidas além do conteúdo que contém um rótulo. 
     

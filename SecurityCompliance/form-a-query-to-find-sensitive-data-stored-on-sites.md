@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir os documentos que contêm dados confidenciais em todo o seu locatário. Depois de descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para pesquisar dados confidenciais.
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013855"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829182"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Criar uma consulta para encontrar dados confidenciais armazenados em sites
 
@@ -84,9 +84,7 @@ Nem todas as consultas são criadas iguais. A tabela a seguir fornece exemplos d
    
 ## <a name="for-more-information"></a>Para saber mais
 
-[Localizar dados confidenciais armazenados em sites do SharePoint Online](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[Inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999)
+[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
   
 [Executar uma pesquisa de conteúdo com a segurança do Office 365 &amp; Centro de conformidade](run-a-content-search-in-the-security-and-compliance-center.md)
   
