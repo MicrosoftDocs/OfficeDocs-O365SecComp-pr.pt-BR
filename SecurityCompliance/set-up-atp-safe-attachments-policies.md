@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Defina políticas de anexos seguros para proteger sua organização contra arquivos maliciosos no email.
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454278"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850835"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos do Office 365 ATP seguros
 
@@ -37,7 +37,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
 - Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
     
-- [Saiba mais sobre as opções de política de anexos de seguros ATP](#learn-about-atp-safe-attachments-policy-options) (neste artigo). Algumas opções, como as opções de Monitor ou substituir, podem resultar em um atraso secundário de email, enquanto os anexos são examinados. Para evitar atrasos de mensagem, considere o uso de [entrega dinâmica e visualização](dynamic-delivery-and-previewing.md).
+- [Saiba mais sobre as opções de política de anexos de seguros ATP](#learn-about-atp-safe-attachments-policy-options) (neste artigo). Algumas opções, como as opções de Monitor ou substituir, podem resultar em um atraso secundário de email, enquanto os anexos são examinados. Para evitar atrasos de mensagem, considere o uso [dinâmico de entrega e de visualização](dynamic-delivery-and-previewing.md).
     
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
@@ -59,7 +59,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
       - Na caixa **Descrição** , digite uma descrição like, oferece mensagens imediatamente e anexos anexa novamente após a verificação.
     
-      - Na seção de resposta, escolha a opção de **Entrega dinâmico** . ([Saiba mais sobre entrega dinâmica e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md)).
+      - Na seção de resposta, escolha a opção de **Entrega dinâmico** . ([Saiba mais sobre a entrega dinâmica e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md)).
     
       - Na seção **Redirecionar anexo** , selecione a opção para habilitar o redirecionamento e digite o endereço de email do administrador global, administrador de segurança ou analista de segurança que será investigar anexos mal-intencionado seu Office 365. 
     
@@ -79,7 +79,7 @@ Como configurar suas políticas de anexos de seguros ATP, você escolher entre v
 |**Monitorar** <br/> |Entrega de mensagens com anexos e, em seguida, controla o que acontece com malware detectado  <br/> |Consulte onde malware detectado vai em sua organização  <br/> |
 |**Bloquear** <br/> |Impede que as mensagens com anexos de malware detectado do prosseguir  <br/> Envia mensagens com malware detectado para [quarentena no Office 365](manage-quarantined-messages-and-files.md) onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> Bloqueia as mensagens futuras e anexos automaticamente  <br/> |Proteger sua organização contra ataques repetidas usando os mesmo anexos de malware  <br/> |
 |**Substituir** <br/> |Remove detectado malware de anexos  <br/> Notifica os destinatários que anexos foram removidos  <br/> Envia mensagens com malware detectado para [quarentena no Office 365](manage-quarantined-messages-and-files.md) onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> |Aumentar a visibilidade para destinatários que anexos foram removidos por causa de malware detectado  <br/> |
-|**Entrega dinâmica** <br/> |Entrega de mensagens imediatamente  <br/> Substitui os anexos com um arquivo de espaço reservado até que o exame seja concluída e, em seguida, anexa novamente os anexos, se nenhum malware é detectado  <br/> Inclui o anexo a visualização de recursos para a maioria dos PDFs e Office arquivos durante a verificação  <br/> Envia mensagens com malware detectado para quarentena onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> [Saiba mais sobre entrega dinâmica e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar atrasos de mensagem, protegendo a destinatários contra arquivos maliciosos  <br/> Permitir que os destinatários visualizar anexos no modo de segurança, enquanto a verificação estiver ocorrendo  <br/> |
+|**Entrega dinâmica** <br/> |Entrega de mensagens imediatamente  <br/> Substitui os anexos com um arquivo de espaço reservado até que o exame seja concluída e, em seguida, anexa novamente os anexos, se nenhum malware é detectado  <br/> Inclui o anexo a visualização de recursos para a maioria dos PDFs e Office arquivos durante a verificação  <br/> Envia mensagens com malware detectado para quarentena onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> [Saiba mais sobre entrega dinâmico e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar atrasos de mensagem, protegendo a destinatários contra arquivos maliciosos  <br/> Permitir que os destinatários visualizar anexos no modo de segurança, enquanto a verificação estiver ocorrendo  <br/> |
 |**Habilitar o redirecionamento** <br/> |Aplica-se quando a opção de Monitor, bloquear ou substituir for escolhida  <br/> Envia anexos para um endereço de email especificado onde os administradores de segurança ou os analistas podem investigar  <br/> |Permitir que os administradores de segurança e os analistas anexos suspeitos de pesquisas  <br/> |
    
 ## <a name="related-topics"></a>Tópicos relacionados
