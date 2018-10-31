@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857239"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza Automática Zero Hora – proteção contra spam e malware
 
@@ -74,7 +74,7 @@ Os administradores também podem [Desabilitar ZAP](zero-hour-auto-purge.md#BK_Po
     
     Se você escolher **Salvar** neste ponto, a política se aplica ao seu locatário do Office 365. 
     
-    ![Conjuntos de ações em massa e de spam a mensagem Mpve para a pasta Lixo eletrônico](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![Conjuntos de ações em massa e de spam para mover a mensagem para a pasta Lixo eletrônico](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. Se você criou uma nova política, e você deseja aplicar a política a apenas um conjunto de usuários, role para a seção **Aplicada a** na janela de filtro de diretiva e dos controles de menu escolher os **destinatários**, **domínio**ou **associações de grupo** você deseja aplicar a política. Você também pode definir exceções e condições adicionais. 
     
@@ -121,7 +121,7 @@ Regras criadas por administradores (regras de fluxo de email) ou regras de bloqu
 ## <a name="related-topics"></a>Tópicos relacionados
 <a name="BK_FAQ"> </a>
 
-[Proteção de Anti-Spam de Email do Office 365](anti-spam-protection.md)
+[Proteção antispam de emails do Office 365](anti-spam-protection.md)
   
 [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](block-email-spam-to-prevent-false-negatives.md)
   
