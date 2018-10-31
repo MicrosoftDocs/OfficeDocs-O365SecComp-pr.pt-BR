@@ -14,6 +14,7 @@
 ## [Escolher entre MDM e Intune](choose-between-mdm-and-intune.md)
 # Proteger as informações
 ## [Rótulos de confidencialidade](sensitivity-labels.md)
+## [Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade](encryption-sensitivity-labels.md)
 ## [Evitar a perda de dados (DLP)](data-loss-prevention-policies.md)
 ## [Assistir a uma visão geral estendida de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
@@ -108,7 +109,7 @@
 #### [Configurar uma lista personalizada de URLs bloqueadas](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 #### [Páginas de aviso de Links seguros de ATP](atp-safe-links-warning-pages.md)
 ### [Anexos seguros de ATP](atp-safe-attachments.md)
-#### [Configurar uma política de Anexos seguros de ATP](set-up-atp-safe-attachments-policies.md)
+#### [Configurar uma política de Anexos Seguros de ATP](set-up-atp-safe-attachments-policies.md)
 #### [Entrega dinâmica e a visualização de Anexos Seguros](dynamic-delivery-and-previewing.md)
 ### [Office 365 ATP para SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)
 #### [Ativar a ATP para SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
@@ -149,7 +150,7 @@
 ## [Usar a Pesquisa de Conteúdo](content-search.md)
 ### [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
 ### [Exibir as estatísticas de palavra-chave para resultados de Pesquisa de Conteúdo](view-keyword-statistics-for-content-search.md)
-### [Exportar resultados de Pesquisa de Conteúdo](export-search-results.md)
+### [Exportar resultados de Pesquisa de Conteúdo ](export-search-results.md)
 ### [Exportar um relatório da Pesquisa de Conteúdo](export-a-content-search-report.md)
 ### [Pesquisar e excluir mensagens de email](search-for-and-delete-messagesadmin-help.md)
 ### [Pesquisar caixas de correio baseadas em nuvem dos usuários locais no Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,6 +259,7 @@
 ### [Implantar um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [Gerenciar um site de equipe do SharePoint Online isolado](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Integração com o servidor SIEM](siem-server-integration.md)
 
 # Soluções de conformidade
 ## [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
