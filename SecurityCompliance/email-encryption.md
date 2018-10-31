@@ -3,7 +3,7 @@ title: Criptografia de email no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Comparar as opções de criptografia no Office 365, incluindo Office Message Encryption (OME), S/MIME, gerenciamento de direitos de informação (IRM) e saiba mais sobre a segurança de camada de transporte (TLS).
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524142"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853076"
 ---
 # <a name="email-encryption-in-office-365"></a>Criptografia de email no Office 365
 
@@ -54,7 +54,7 @@ Assista a este vídeo para ver uma introdução à [criptografia no Office 365](
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Comparação das opções de criptografia de email disponíveis no Office 365
 
-||**        ![Arte conceitual que descreve a OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![Arte conceitual que descreve o IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![Arte conceitual que descreve SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![Arte conceitual que descreve a OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![Arte conceitual que descreve o IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![Arte conceitual que descreve SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |O que é isso?  <br/> |Criptografia de Mensagens do Office 365 (OME) é um serviço integrado ao Azure Rights Management (Azure RMS) que permite o envio de emails criptografados para pessoas dentro ou fora da sua organização, independente do endereço de email de destino (Gmail, Yahoo! Email, Outlook.com, etc.).  <br/> Como administrador, você pode configurar regras de transporte que definam as condições da criptografia. Quando um usuário envia uma mensagem que corresponde a uma regra, a criptografia é aplicada automaticamente.  <br/> Para ler mensagens criptografadas, os destinatários podem obter uma senha de uma única vez, logon com uma conta da Microsoft ou sinal com um trabalho ou escola conta associada com o Office 365. Destinatários também podem enviar respostas criptografadas. Eles não precisam de uma assinatura do Office 365 para exibir mensagens criptografadas ou enviar respostas criptografadas.  <br/> |O IRM é uma solução de criptografia que também aplica restrições de uso a mensagens de email. Isso ajuda a evitar que informações confidenciais sejam impressas, encaminhadas ou copiadas por pessoas não autorizadas.  <br/> Os recursos IRM no Office 365 usam o Azure Rights Management (Azure RMS). 
   <br/> |S/MIME é uma solução baseada em certificado de criptografia que permite ao criptografar e assinar digitalmente uma mensagem. A criptografia de mensagem ajuda a garantir que somente o destinatário pretendido pode abrir e ler a mensagem. Uma assinatura digital ajuda o destinatário valida a identidade do remetente.  <br/> As assinaturas digitais e a criptografia de mensagem são disponibilizadas por meio do uso de certificados digitais exclusivos que contêm as chaves para verificar assinaturas digitais e criptografar ou descriptografar mensagens.  <br/> Para usar S/MIME, você deve ter as chaves públicas no arquivo para cada destinatário. Destinatários precisam manter suas próprias chaves particulares, que devem permanecer seguros. Se as chaves particulares de um destinatário estão comprometidas, o destinatário precisa fazer uma nova chave privada e redistribua chaves públicas para todos os remetentes possíveis.  <br/> |
@@ -84,7 +84,7 @@ Para saber mais sobre as opções de criptografia de email neste artigo, bem sob
   
  **OME**
   
-[OME (Criptografia de Mensagem do Office 365)](ome.md)
+[OME (Criptografia de Mensagens do Office 365)](ome.md)
   
  **IRM**
   

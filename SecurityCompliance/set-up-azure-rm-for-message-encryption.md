@@ -3,7 +3,7 @@ title: Configurar o Azure Rights Management para a Criptografia de Mensagens do 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/3/2017
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: 'Criptografia de mensagem do Office 365 depende do Microsoft Azure Rights Management (anteriormente conhecida como Windows Azure Active Directory Rights Management). '
-ms.openlocfilehash: 99c8de49330cf99545d28d81e0c99c2138797356
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: A versão anterior do Office 365 Message Encryption depende do Microsoft Azure Rights Management (anteriormente conhecida como Windows Azure Active Directory Rights Management).
+ms.openlocfilehash: f8759da8628d4c78fe5409f5c47e3fc2b3e9484e
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853066"
 ---
-# <a name="set-up-azure-rights-management-for-office-365-message-encryption"></a>Configurar o Azure Rights Management para a Criptografia de Mensagens do Office 365
+# <a name="this-article-applies-to-the-previous-version-of-ome"></a>Este artigo aplica-se a versão anterior do OME
+Se você ainda não migraram sua organização do Office 365 para os novos recursos OME, mas você já implantou OME, as informações neste artigo se aplicam à sua organização. A Microsoft recomenda que você faça um plano para mover-se para as novas capacidades OME tão logo razoáveis para sua organização. Para obter instruções, consulte [configurar novos recursos do Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md). Se você deseja saber mais sobre como as novas capacidades funcionam pela primeira vez, consulte [Criptografia de mensagem do Office 365](ome.md). O restante deste artigo refere-se ao comportamento OME antes do lançamento de novos recursos OME.
+
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurar o Azure Rights Management para a versão anterior do Office 365 Message Encryption
 
 Este tópico descreve as etapas que precisam ser seguidas para ativar e, em seguida, defina o Azure RMS (Rights Management), a parte de proteção de informações do Windows Azure, para uso com o Office 365 Message Encryption (OME).
   
-## <a name="prerequisites-for-using-office-365-message-encryption"></a>Pré-requisitos para usar a Criptografia de Mensagens do Office 365
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Pré-requisitos para usar a versão anterior do Office 365 Message Encryption
 <a name="warmprereqs"> </a>
 
 O Office 365 Message Encryption (OME), incluindo o IRM, depende do Azure Rights Management (RMS do Windows Azure). RMS Azure é a tecnologia de proteção usada pela proteção de informações do Windows Azure. Para usar o OME, sua organização do Office 365 deve incluir uma assinatura do Exchange Online ou Exchange Online Protection que, por sua vez, inclui uma assinatura de gerenciamento de direitos do Windows Azure.
@@ -39,12 +42,12 @@ O Office 365 Message Encryption (OME), incluindo o IRM, depende do Azure Rights 
     
 - Se você já configurou OME para funcionar com o Azure Rights Management para o Exchange Online ou Exchange Online Protection, dependendo de como configurá-lo, você pode estar pronto para começar a usar o OME e seus novos recursos imediatamente. Este artigo explica como determinar se você configurou OME corretamente, o que fazer se você precisar alterar sua instalação e o que acontece se você optar por não alterar sua instalação. Por exemplo, para usar os novos recursos, você deve usar o RMS do Windows Azure com OME. Você não pode usar os novos recursos com um RMS diretório ativo do local.
     
-## <a name="activate-azure-rights-management-for-ome-in-office-365"></a>Ativar o Azure Rights Management para OME no Office 365
+## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>Ativar o Azure Rights Management para a versão anterior do OME no Office 365
 <a name="activatewarm"> </a>
 
 Você precisa ativar o Azure Rights Management para que os usuários em sua organização possam aplicar proteção de informações para mensagens enviadas por eles e abrir mensagens e arquivos que foram protegidos pelo serviço de gerenciamento de direitos do Windows Azure. Para obter instruções, consulte [Ativar o Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=525775). Depois de ter concluído a ativação, volte aqui e continuar com as tarefas neste artigo.
   
-## <a name="set-up-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>Configurar o OME para usar o Azure RMS importando domínios de publicação confiáveis (TPDs)
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>Configurar a versão anterior do OME para usar o Azure RMS importando domínios de publicação confiáveis (TPDs)
 <a name="importTPDs"> </a>
 
 O TPD é um arquivo XML que contém informações sobre configurações de gerenciamento de direitos da sua organização. Por exemplo, o TPD contém informações sobre o certificado de licenciador de servidor (SLC) usado para assinatura e criptografia de certificados e licenças, as URLs usadas para licenciamento e publicação e assim por diante. Você pode importar o TPD para sua organização do Office 365 usando o Windows PowerShell.
@@ -108,7 +111,7 @@ O TPD é um arquivo XML que contém informações sobre configurações de geren
 
 8. Para verificar que você com êxito importado o TPD e habilitou o Azure Rights Management, use o cmdlet Test-IRMConfiguration para testar a funcionalidade de gerenciamento de direitos do Windows Azure. Para obter detalhes, consulte "Exemplo 1" em [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
-## <a name="i-have-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tenho OME configurado com o Active Directory Rights Management não proteção de informações do Windows Azure, o que eu faço?
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tenho a versão anterior do OME configurado com o Active Directory Rights Management não proteção de informações do Windows Azure, o que eu faço?
 <a name="importTPDs"> </a>
 
 Você pode continuar a usar suas regras de fluxo de email existentes do Office 365 Message Encryption com gerenciamento de direitos do Active Directory, mas não é possível configurar ou usar os novos recursos OME. Em vez disso, será preciso migrar à proteção de informações do Windows Azure. Para obter informações sobre migração e o que isso significa para sua organização, consulte [Migrando do AD RMS à proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms).
