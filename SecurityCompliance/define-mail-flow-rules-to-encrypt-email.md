@@ -3,7 +3,7 @@ title: Definir regras de fluxo de email para criptografar mensagens de email no 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Como administrador global do Office 365, você pode criar email regras do fluxo para habilitar o Office 365 Message Encryption (OME). Você pode criptografar qualquer mensagens de email de saída e remover a criptografia de mensagens internas ou de respostas a mensagens criptografadas enviadas de sua organização.
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853086"
+ms.locfileid: "25890029"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir regras de fluxo de email para criptografar mensagens de email no Office 365
 
@@ -29,7 +29,7 @@ Se você recentemente migrado do AD RMS à proteção de informações do Window
 Para obter informações sobre os componentes que compõem a regras de fluxo de correio e como as regras de fluxo de email comercial, consulte [(regras de transporte) de regras de fluxo de email no Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Para obter informações adicionais sobre como as regras de fluxo de correio funcionam com proteção de informações do Windows Azure, consulte [Configurando o Exchange Online regras de fluxo de email para os rótulos de proteção de informações do Windows Azure](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Ambientes híbridos do Exchange: fazer isso primeiro
-No local os usuários podem enviar mensagens criptografadas usando OME se você rotear emails através do Exchange Online. Para fazer isso, você precisará configurar mail flow para fluxo do seu servidor de email para o Office 365. Depois que você configurou o email para fluem através do Office 365, você pode fazer as regras de fluxo de correio para OME usando este artigo.
+No local os usuários podem enviar mensagens criptografadas usando OME se você rotear emails através do Exchange Online. Para fazer isso, você precisará configurar o email para o fluxo do seu servidor de email para o Office 365. Uma vez, você configurou email a fluir através do Office 365, e em seguida, você pode fazer as regras de fluxo de email para OME usando neste artigo.
 
 Para obter instruções, consulte [Configurar conectores façam o roteamento de email entre o Office 365 e seus próprios servidores de email](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). Em particular, conclua as etapas na "parte 2: configurar o email para o fluxo do seu servidor de email para o Office 365".
 
