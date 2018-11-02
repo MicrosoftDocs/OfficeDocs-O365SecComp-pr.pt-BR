@@ -3,7 +3,7 @@ title: Remover um usuário, domínio ou endereço IP de uma lista de bloqueio ap
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: Se um usuário continuamente envia mensagens de email do Office 365 é classificada como spam, eles serão bloqueados enviem mensagens qualquer mais.
-ms.openlocfilehash: 295d92fc6a1cd26783b18304a2d119d2ea0d7f1f
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 0f58f9f2270c8be38b3ea2ea81f04656eb10e7fb
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577060"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899652"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Remover um usuário, domínio ou endereço IP de uma lista de bloqueio após enviar email de spam
 
@@ -44,7 +44,7 @@ Conclusão da tarefa no Centro de conformidade (SCC) & segurança do Office 365.
 3. Clique em **Sim** para confirmar a alteração. 
     
 > [!NOTE]
-> Há um limite no número de vezes que uma conta pode ser desbloqueada pelo administrador de locatário. Se o limite de um usuário foi excedido, uma mensagem de erro é exibida. Você precisará contatar o suporte para desbloquear o usuário.
+> Há um limite no número de vezes que uma conta pode ser desbloqueada pelo administrador de locatário. Se o limite de um usuário foi excedido, uma mensagem de erro é exibida. Você precisará contatar o suporte para desbloquear o usuário.</br></br> Pode levar até 1 hora antes que o usuário seja desbloqueado.
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueio de terceiros
 
