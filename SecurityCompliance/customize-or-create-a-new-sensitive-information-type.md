@@ -1,5 +1,5 @@
 ---
-title: Personalizar ou criar um novo tipo de informações confidenciais
+title: Personalizar ou criar um novo tipo de informação confidencial
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,41 +16,41 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Saiba como modificar ou criar novos tipos de informações confidenciais do Office 365 para GDPR.
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Saiba como modificar ou criar novos tipos de informação confidencial do Office 365 para GDPR.
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272256"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857279"
 ---
-# <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar ou criar um novo tipo de informações confidenciais
+# <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar ou criar um novo tipo de informação confidencial
 
-Este artigo fornece três exemplos para demonstrar como modificar ou criar novos tipos de informações confidenciais do Office 365 para GDPR.
+Este artigo fornece três exemplos para demonstrar como modificar ou criar novos tipos de informação confidencial do Office 365 para GDPR.
 
--   Modificar um tipo de informações confidenciais existente – Número de Cartão de Débito da UE
+- Modificar um tipo de informação confidencial existente – Número de Cartão de Débito da UE
 
--   Criar um novo tipo de informação confidencial – endereço de email
+- Criar um novo tipo de informação confidencial – endereço de email
 
--   Criar um novo tipo de informações confidenciais com o arquivo XML de exemplo – número de cliente da Contoso
+- Criar um novo tipo de informação confidencial com o arquivo XML de exemplo – número de cliente da Contoso
 
 Confira também:
 
--   [Criar um tipo de informação confidencial personalizado](https://support.office.com/pt-BR/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   [Criar um tipo de informação confidencial interno](https://support.office.com/pt-BR/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [Personalizar um tipo de informação confidencial interno](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>Modificar um tipo de informação confidencial para melhorar a precisão
 
-Se você estiver usando a Pesquisa de Conteúdo para pesquisar dados pessoais usando tipos de informações confidenciais e não estiver recebendo os resultados esperados ou a consulta retornar muitos falsos positivos, considere a possibilidade de modificar o tipo de informação confidencial para se adequar melhor ao seu ambiente.
+Se você estiver usando a Pesquisa de Conteúdo para pesquisar dados pessoais usando tipos de informação confidencial e não estiver recebendo os resultados esperados ou a consulta retornar muitos falsos positivos, considere a possibilidade de modificar o tipo de informação confidencial para se adequar melhor ao seu ambiente.
 
 A prática recomendada ao criar ou personalizar um tipo de informação confidencial é criar um novo tipo de informação confidencial com base em uma informação existente, dando a ela um nome exclusivo e identificadores. Por exemplo, se quiser ajustar os parâmetros do tipo de informação confidencial do "Número de Cartão de Débito da UE", dê o nome "Cartão de Débito da UE Aprimorado" à sua cópia da regra para diferenciá-la do tipo original.
 
-No novo tipo de informação confidencial, basta modificar os valores que você deseja alterar para melhorar a precisão. Depois de concluído, carregue seu novo tipo de informação confidencial e crie uma nova regra DLP (ou modifique uma existente) para usar o novo tipo de informação confidencial que você acabou de adicionar. Modificar a precisão de tipos de informações confidenciais pode exigir algumas tentativas e erros, portanto, manter uma cópia do tipo original permite recuperá-lo posteriormente, caso isso seja necessário.
+No novo tipo de informação confidencial, basta modificar os valores que você deseja alterar para melhorar a precisão. Depois de concluído, carregue seu novo tipo de informação confidencial e crie uma nova regra DLP (ou modifique uma existente) para usar o novo tipo de informação confidencial que você acabou de adicionar. Modificar a precisão de tipos de informação confidencial pode exigir algumas tentativas e erros, portanto, manter uma cópia do tipo original permite recuperá-lo posteriormente, caso isso seja necessário.
 
 Para personalizar um tipo de informação confidencial:
 
-1.  Exporte o Pacote de Regras da Microsoft existente de tipos de informações confidenciais internos no Office 365.
+1.  Exporte o Pacote de Regras da Microsoft existente de tipos de informação confidencial internos no Office 365.
 
 2.  Renomeie este arquivo XML e abra-o em seu editor de XML favorito.
 
@@ -62,7 +62,7 @@ Para personalizar um tipo de informação confidencial:
 
 6.  Ajuste os requisitos de correspondência para melhorar a precisão.
 
-    1.  Modificações de proximidade – Modifique a proximidade do padrão de caracteres para expandir ou reduzir a janela na qual as palavras-chave devem ser encontradas em todos os tipos de informações confidenciais.
+    1.  Modificações de proximidade – Modifique a proximidade do padrão de caracteres para expandir ou reduzir a janela na qual as palavras-chave devem ser encontradas em todos os tipos de informação confidencial.
 
     2.  Modificações de palavras-chave – Adicione palavras-chave a um dos elementos \<Keywords\> para fornecer ao tipo de informação confidencial evidências comprobatórias mais específicas para a pesquisa com o intuito de sinalizar uma correspondência nessa regra. Você também pode remover palavras-chave que estejam gerando falsos positivos.
 
@@ -132,19 +132,19 @@ Para criar um novo tipo de informação confidencial personalizada, comece usand
 
 Use esses resultados para criar um novo tipo de informação confidencial e otimize o novo tipo de informação confidencial para seu ambiente.
 
-Observação: vários novos tipos de informações confidenciais estarão brevemente disponíveis para dados pessoais de países da UE. Se precisar criar novos tipos de informações confidenciais, comece direcionando dados personalizados para seu ambiente.
+Observação: vários novos tipos de informação confidencial estarão brevemente disponíveis para dados pessoais de países da UE. Se precisar criar novos tipos de informação confidencial, comece direcionando dados personalizados para seu ambiente.
 
 ### <a name="step-1--use-kql-queries-and-key-words-to-find-additional-data-in-your-environment"></a>Etapa 1: Usar consultas KQL e palavras-chave para encontrar dados adicionais em seu ambiente
 
-Talvez seja preciso criar outras consultas para localizar dados pessoais sujeitos à GDPR. A Pesquisa de Conteúdo usa a Keyword Query Language (KQL) para localizar os dados. Não é possível detectar os dados mais importantes com precisão usando apenas a KQL sem os tipos de informações confidenciais. Portanto, o objetivo é testar e otimizar cadeias de caracteres da KQL usando a Pesquisa de Conteúdo e usá-las para criar e ajustar novos tipos de informações confidenciais para alcançar ainda mais precisão.
+Talvez seja preciso criar outras consultas para localizar dados pessoais sujeitos à GDPR. A Pesquisa de Conteúdo usa a Keyword Query Language (KQL) para localizar os dados. Não é possível detectar os dados confidenciais mais importantes com precisão usando apenas a KQL sem os tipos de informação confidencial. Portanto, o objetivo é testar e otimizar cadeias de caracteres da KQL usando a Pesquisa de Conteúdo e usá-las para criar e ajustar novos tipos de informação confidencial para alcançar ainda mais precisão.
 
 Use estes recursos para formular e otimizar consultas usando KQL:
 
 -   [Referência de sintaxe (DMC) da Keyword Query Language(KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Executar uma Pesquisa de Conteúdo no Centro de Conformidade e Segurança do Office 365](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Executar uma Pesquisa de Conteúdo no Centro de Conformidade e Segurança do Office 365](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-A Pesquisa de Conteúdo oferece outro recurso para ajudar você a desenvolver consultas KQL e tipos de informações confidenciais – as palavras-chave. Por que usar a lista de palavras-chave? Para ver estatísticas que mostram o número de itens que correspondem a cada palavra-chave, o que pode ajudar a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Para saber mais sobre as estatísticas de pesquisas, confira [Exibir as estatísticas de palavras-chave dos resultados da Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+A Pesquisa de Conteúdo oferece outro recurso para ajudar você a desenvolver consultas KQL e tipos de informação confidencial – as palavras-chave. Por que usar a lista de palavras-chave? Para ver estatísticas que mostram o número de itens que correspondem a cada palavra-chave, o que pode ajudar a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Para saber mais sobre as estatísticas de pesquisas, confira [Exibir as estatísticas de palavras-chave dos resultados da Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
 As palavras-chave de cada linha são conectadas pelo operador OR na consulta da pesquisa que é criada. Você também pode usar uma frase de palavra-chave (entre parênteses) em uma linha.
 
@@ -154,7 +154,7 @@ Para saber mais, confira [Consultas de palavra-chave e condições de pesquisa p
 
 Os endereços de email são considerados informações confidenciais relacionadas aos assuntos de dados. Isso é um exemplo simples para demonstrar como a Pesquisa de Conteúdo pode ajudar.
 
-As palavras-chave e o KQL não podem ser usados em conjunto. Use essas ferramentas separadamente para aperfeiçoar sua consulta e determinar as palavras-chave que podem ser úteis para os tipos de informações confidenciais.
+As palavras-chave e o KQL não podem ser usados em conjunto. Use essas ferramentas separadamente para aperfeiçoar sua consulta e determinar as palavras-chave que podem ser úteis para os tipos de informação confidencial.
 
 ### <a name="kql-query"></a>Consulta KQL
 
@@ -188,7 +188,7 @@ Neste exemplo, você pode perceber que as palavras-chave não são necessárias 
 
 ### <a name="step-2--create-a-new-custom-sensitive-information-type"></a>Etapa 2 – Criar um novo tipo de informação confidencial personalizada
 
-Após usar as consultas KQL e palavras-chave para identificar informações confidenciais, use-as para criar novos tipos de informações confidenciais personalizadas. Em muitos casos, você precisará da sofisticação dos tipos de informações confidenciais para atingir o nível certo de precisão. Em seguida, use esses tipos de informações confidenciais personalizadas com a Pesquisa de Conteúdo em políticas DLP, em outras ferramentas e em outras consultas KQL.
+Após usar as consultas KQL e palavras-chave para identificar informações confidenciais, use-as para criar novos tipos de informação confidencial personalizadas. Em muitos casos, você precisará da sofisticação dos tipos de informação confidencial para atingir o nível certo de precisão. Em seguida, use esses tipos de informação confidencial personalizadas com a Pesquisa de Conteúdo em políticas DLP, em outras ferramentas e em outras consultas KQL.
 
 A prática recomendada é criar um novo tipo de informação confidencial com base em um tipo existente. Use o mesmo processo descrito anteriormente neste artigo.
 
@@ -291,7 +291,7 @@ Exemplos de CCNs:
 >
 > 17040O1118
 
-A Contoso sempre faz referência aos clientes usando um CCN nas correspondências interna e externa, em documentos, etc. A empresa deseja criar um tipo personalizado de informação confidencial para detectar o uso do CCN no Office 365 e assim aplicar proteção no uso desse formulário de dados pessoais.
+A Contoso sempre faz referência aos clientes usando um CCN nas correspondências interna e externa, em documentos, etc. A empresa deseja criar um tipo de informação confidencial personalizado para detectar o uso do CCN no Office 365 e assim aplicar proteção no uso desse formulário de dados pessoais.
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Criar um novo tipo de informação confidencial para o número de cliente da Contoso
 
@@ -369,7 +369,7 @@ A Contoso sempre faz referência aos clientes usando um CCN nas correspondência
 </tbody>
 </table>
 
-### <a name="example-xml-file-for-the-new-sensitive-information-type-step-7"></a>Exemplo de arquivo XML para o novo tipo de informações confidenciais (etapa 7)
+### <a name="example-xml-file-for-the-new-sensitive-information-type-step-7"></a>Exemplo de arquivo XML para o novo tipo de informação confidencial (etapa 7)
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
