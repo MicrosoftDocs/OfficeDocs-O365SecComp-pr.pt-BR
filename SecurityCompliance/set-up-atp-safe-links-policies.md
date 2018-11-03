@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552339"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935548"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552339"
 - Certifique-se de que sua organização tenha [A proteção de ameaça avançadas do Office 365](office-365-atp.md).
     
 - Certifique-se de que você tem as permissões necessárias para definir ou editar políticas de ATP. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+
+- Certifique-se de que os clientes do Office estejam configurados para usar a [Autenticação moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (isto é para proteção de Links de seguros ATP em documentos do Office).
     
 - [Saiba mais sobre as opções de política de Links de seguros ATP](#learn-about-atp-safe-links-policy-options) (neste artigo). 
 
-- Certifique-se de que os clientes do Office estejam configurados para usar [Autenticação moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
-    
 - Permitir até 30 minutos para sua política novo ou atualizado à difusão em todos os centros de dados do Office 365.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Etapa 2: Definir (ou revisar) a política de Links de seguros ATP que se aplica a todos

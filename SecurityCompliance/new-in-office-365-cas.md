@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Veja o que há de novo na segurança de aplicativo de nuvem do Office 365
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796867"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935568"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Novidades na segurança de aplicativo de nuvem do Office 365
 
@@ -27,11 +28,11 @@ Este artigo foi atualizado com frequência, como recursos são adicionados ou ap
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Versão de segurança do aplicativo de nuvem do Office 365 130
 
-*Versões de 5 de setembro de 2018*
+*Lançada em 5 de setembro de 2018*
 
 **Liberando com a [versão de segurança de aplicativo do Microsoft Cloud 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
 
-- **Nova barra de menus** Para fornecer uma experiência de administração mais consistente entre produtos Microsoft 365 e permitem que você dinamizar mais facilmente entre soluções de segurança da Microsoft, a barra de menus de portal de segurança de aplicativo de nuvem foi movido para o lado esquerdo da tela. A navegação consistente experiência ajuda a orientar você mesmo durante a mudança de um portal de segurança da Microsoft para outro.
+- **Nova barra de menus** Para fornecer uma experiência de administração mais consistente entre produtos Microsoft 365 e permitem que você dinamizar mais facilmente entre soluções de segurança da Microsoft, a barra de menus de portal de segurança de aplicativo de nuvem foi movido para o lado esquerdo da tela. A navegação consistente experiência ajuda a orientar você mesmo durante a mudança de um portal de segurança da Microsoft para outro.<br/>![Barra de menus na segurança de aplicativo de nuvem do Office](media/OCAS-MenuBar.png)<br/>
 
 - **Impacto OAuth pontuação de aplicativo** Agora você pode enviar os comentários da equipe de segurança de aplicativo de nuvem para nos informar se houver um aplicativo de OAuth descoberto em sua organização que parece mal-intencionado. Esse novo recurso permite fazer parte da nossa comunidade de segurança e melhorar a pontuação de risco de app OAuth e análise. Para obter mais informações, consulte [Gerenciar permissões de aplicativo](manage-app-permissions-in-ocas.md).
 
