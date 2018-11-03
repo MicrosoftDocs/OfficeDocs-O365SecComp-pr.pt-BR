@@ -234,7 +234,7 @@
 ## [Procurar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Monitorar a segurança e a conformidade]()
 ## [Políticas de alerta](alert-policies.md)
-### [Criar alertas de atividade](create-activity-alerts.md)
+## [Alertas de atividade](create-activity-alerts.md)
 ## [Relatórios inteligentes e insights no Centro de Conformidade e Segurança](reports-and-insights-in-security-and-compliance.md)
 ### [Exibir relatórios de segurança de email no Centro de Conformidade e Segurança](view-email-security-reports.md)
 #### [Passo a passo – de um relatório detalhado para um insight](from-a-detailed-report-to-an-insight.md)
