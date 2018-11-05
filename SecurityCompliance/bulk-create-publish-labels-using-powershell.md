@@ -1,5 +1,5 @@
 ---
-title: Criação e publicação em massa de rótulos usando o PowerShell
+title: Criação e publicação em massa de rótulos de retenção usando o PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: 1/17/2018
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: No Office 365, você pode usar rótulos para implementar um agendamento de retenção para a sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos para criar e publicar. Você pode fazer isso pela interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos um de cada vez é ineficiente e demorado. Usando o script e os arquivos .csv fornecidos abaixo, você pode criar em massa e publicar rótulos e as políticas de rótulo. Primeiro, você cria uma lista dos rótulos e uma lista das políticas de rótulos no Excel e, em seguida, você cria em massa os rótulos e as políticas de rótulos nessas listas usando o PowerShell. Isso facilita criar e publicar ao mesmo tempo todos os rótulos exigidos pelo agendamento de retenção.
-ms.openlocfilehash: 43e521d937a9589b522c608aca2e75fcfc2bf569
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523554"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899662"
 ---
-# <a name="bulk-create-and-publish-labels-by-using-powershell"></a>Criação e publicação em massa de rótulos usando o PowerShell
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Criação e publicação em massa de rótulos de retenção usando o PowerShell
 
 No Office 365, você pode usar rótulos para implementar um agendamento de retenção para a sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos para criar e publicar. Você pode fazer isso pela interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos uma de cada vez é demorado e ineficiente.
   
