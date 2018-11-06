@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9a8e7bdbd176c5852c43b35c9c56cd8f0aae58fb
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: af40426f626920ccd2c247a671a57958044d0388
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002654"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999965"
 ---
 # <a name="office-365-security-and-compliance"></a>Conformidade e segurança do office 365
 
@@ -35,7 +35,7 @@ Se sua organização precisa proteger seus dados ou cumprir os padrões legais o
                     </div>
                     <div class="cardText">
                         <h3>Guia de Introdução - 30 primeiros dias</h3>
-                <p>Esses básica tarefas de segurança e conformidade podem ser realizadas rapidamente e tem um pouco impacto para os usuários: <br> - <a href="https://securescore.office.com" target="_blank">Verificar a pontuação de segura</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Ativar o log de auditoria</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurar a segurança do locatário</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Conecte-se a segurança de aplicativo de nuvem</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Habilitar a proteção de identidade do Windows Azure AD</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteja arquivos e sites do SharePoint</a> <br> - <a href="configure-supervision-policies.md">Habilitar uma diretiva de governança de dados</a> </p>
+                <p>Esses básica tarefas de segurança e conformidade podem ser realizadas rapidamente e tem um pouco impacto para os usuários: <br> - <a href="office-365-secure-score.md" target="_blank">Verificar a pontuação de segura</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Ativar o log de auditoria</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurar a segurança do locatário</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Conecte-se a segurança de aplicativo de nuvem</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Habilitar a proteção de identidade do Windows Azure AD</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteja arquivos e sites do SharePoint</a> <br> - <a href="configure-supervision-policies.md">Habilitar uma diretiva de governança de dados</a> </p>
                     </div>
                 </div>
             </div>
