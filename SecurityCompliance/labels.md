@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698037"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299245"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -52,9 +52,10 @@ Com os rótulos de retenção, você pode:
   - Você não precisa depender dos usuários para classificar corretamente o conteúdo.
     
   - Os usuários não precisam mais conhecer as políticas de governança de dados; em vez disso, eles podem se concentrar no próprio trabalho.
-    
-    Observe que os rótulos de aplicação automática exigem uma assinatura do Office 365 Enterprise E5.
-    
+
+  > [!NOTE]
+  > A capacidade de aplicar rótulos automaticamente requer uma licença do Office 365 Enterprise E5 para cada usuário que tem permissões para editar conteúdo que tenha sido rotulado automaticamente em um site ou caixa de correio. Os usuários que possuem apenas o acesso somente leitura não precisam de uma licença.
+      
 - **Aplique um rótulo de retenção padrão a uma biblioteca de documentos** em sites de grupo do SharePoint ou do Office 365, de forma que todos os documentos nessa biblioteca recebam o rótulo de retenção padrão. 
     
 - **Implemente o gerenciamento de registros no Office 365**, inclusive em emails e documentos. Você pode usar um rótulo de retenção para classificar o conteúdo como registro. Quando isso acontece, o rótulo não pode ser alterado ou removido, e o conteúdo não pode ser editado ou excluído. 
