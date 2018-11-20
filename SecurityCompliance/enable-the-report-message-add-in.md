@@ -3,7 +3,7 @@ title: Habilitar o suplemento de Mensagem de relatório
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/18/2018
+ms.date: 11/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Aprenda a habilitar o suplemento de mensagem de relatório para o Outlook e Outlook na web, para usuários individuais ou em toda sua organização.
-ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857259"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618917"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de relatório
 
@@ -37,7 +37,7 @@ O suplemento de mensagem de relatório funciona com sua assinatura do Office 365
   
 Se você for um usuário individual, você pode [Habilitar o suplemento de mensagem de relatório por conta própria](#get-the-report-message-add-in-for-yourself). 
   
-Se você for um administrador do Exchange Online, você pode [Habilitar o suplemento de mensagem de relatório para sua organização](#get-and-enable-the-report-message-add-in-for-your-organization).
+Se você é um administrador global do Office 365 ou um administrador do Exchange Online e Exchange está configurado para usar a autenticação OAuth, você pode [Habilitar o suplemento de mensagem de relatório para sua organização](#get-and-enable-the-report-message-add-in-for-your-organization). O suplemento do relatório de mensagem agora está disponível por meio da [Implantação centralizados](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenha a mensagem de relatório suplemento para si mesmo
 
@@ -49,7 +49,6 @@ Se você for um administrador do Exchange Online, você pode [Habilitar o suplem
     
 4. Entrar no seu email do Office 365 usando seu trabalho ou a conta de escola (para uso de negócios) ou a sua conta da Microsoft (para uso pessoal).
     
-
 Depois que o suplemento está instalado e habilitado, você verá os ícones a seguir: 
 
 - No Outlook no ícone tem esta aparência: <br/> ![Suplemento de mensagem ícone de relatório para o Outlook](media/OutlookReportMessageIcon.png)<br/>
@@ -60,33 +59,24 @@ Como o próximo passo, Aprenda como [usar o suplemento de mensagem de relatório
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obter e habilitar o suplemento de mensagem de relatório para sua organização
 
 > [!IMPORTANT]
-> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa.
+> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa. Além disso, o Exchange deve ser configurado para usar a autenticação OAuth para saber mais, consulte [requisitos do Exchange (centralizados implantação dos suplementos)](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
 
-1. Vá para [https://portal.office.com](https://portal.office.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Ir para a [página de suplementos & serviços](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no Centro de administração do Microsoft 365 novo.<br/>![Página de serviços e suplementos no novo Microsoft 365 Admin Center](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
-2. Escolha **Admin** para ir para o Centro de administração. 
+2. Escolha **+ implantar o suplemento**.<br/>![Escolha implantar o suplemento](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. Escolha **Admin centrais** \> **Exchange** para ir para o Centro de administração do Exchange (EAC). 
+3. Na tela do novo suplemento, revise as informações e escolha **Avançar**.<br/>![Detalhes do novo suplemento](media/NewAddInScreen1.png)<br/>
     
-4. Escolha **organização** \> **suplementos**. 
+4. Selecione **eu quiser adicionar um suplemento da Office Store**e escolha **Avançar**.<br/>![Eu quiser adicionar um novo suplemento](media/NewAddInScreen2.png)<br/> 
     
-5. Escolha **+**  >  **Adicionar da Office Store**.<br/>![Escolha Adicionar da Office Store](media/EAC-Org-AddFromOfficeStore.png)<br/>Isso abre a Office Store no seu navegador da web.
+5. Pesquisa de mensagem de relatório e na lista de resultados, ao lado do relatório de mensagem suplemento, escolha Adicionar.<br/>![Procure a mensagem de relatório e escolha Adicionar](media/NewAddInScreen3.png)<br/>
     
-6. Procure a mensagem de relatório.<br/>![Procure a mensagem de relatório](media/ReportMessageSearchOfficeStore.png)<br/>
-    
-7. Na lista de **aplicativos** , selecione **A mensagem de relatório**e escolha **Obter TI agora**.<br/>![Escolha GET IT agora](media/ReportMessageGETITNOW.png)<br/> 
-    
-8. Analise os termos da política de uso e de privacidade. Em seguida, clique em **continuar**. 
-    
-    ![Clique em Continuar para aceitar os termos e a diretiva de privacidade](media/ReportMessageTermsAndConditions.png)
-  
-9. Um assistente é aberto para ajudá-lo a configurar as informações de revisão de suplemento a mensagem de relatório e escolha **próximo** para continuar.<br/>![Mensagem suplemento do Assistente de relatório para o Office 365](media/ReportMessageAdminInstallUI.png)<br/> 
+6. Na tela de mensagem de relatório, revise as informações e escolha **Avançar**.<br/>![Detalhes da mensagem de relatório](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
-10. Especifique a configuração padrão que você deseja atribuir ao usuário para o suplemento de mensagem de relatório.<br/>![Especificar configurações padrão para o suplemento de mensagem de relatório](media/ReportMessageUserOptionsAdminsSet.png)<br/>
-    
-11. Especifica quem obtém a mensagem de relatório suplemento. <br/>![Especificar quem obtém a mensagem de relatório de suplemento](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
+7. Especifique as configurações de usuário padrão para o Outlook e escolha **Avançar**.<br/>![Relatar as configurações padrão de mensagem do Outlook](media/ReportMessageOptionsScreen5.png)<br/>
 
-12. Escolha **Salvar**. <br/>
+8. Especificar quem obtém o suplemento de mensagem de relatório e escolha **Salvar**. <br/>![Quem obtém a mensagem de relatório suplemento](media/ReportMessageOptionsScreen6.png)<br/>
+
 > [!TIP]
 > Recomendamos a [configuração de uma regra para obter uma cópia das mensagens de email relatado pelos usuários](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
@@ -110,41 +100,33 @@ Você pode configurar uma regra para obter uma cópia das mensagens de email rel
     
 4. Na lista **Aplicar esta regra se** , escolha **o endereço do destinatário inclui...**. 
     
-5. Na tela **Especificar palavras ou expressões** , adicione junk@office365.microsoft.com e phish@office365.microsoft.com e escolha **Okey**. 
-    
-    ![Especificar os endereços de email de lixo eletrônico e phishing para a regra](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+5. Na tela **Especificar palavras ou expressões** , adicione `junk@office365.microsoft.com` e `phish@office365.microsoft.com`e escolha **Okey**.<br/>![Especificar os endereços de email de lixo eletrônico e phishing para a regra](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)<br/>
   
 6. Na lista **faça o seguinte …** , escolha **Cco da mensagem para...**. 
     
-7. Adicione um administrador global, administrador de segurança e/ou leitor de segurança que deve receber uma cópia de cada mensagem de email que pessoas reportam à Microsoft e escolha **Okey**. 
-    
-    ![Adicionar um administrador global ou de segurança para receber uma cópia de cada mensagem relatada](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+7. Adicione um administrador global, administrador de segurança e/ou leitor de segurança que deve receber uma cópia de cada mensagem de email que pessoas reportam à Microsoft e escolha **Okey**.<br/>![Adicionar um administrador global ou de segurança para receber uma cópia de cada mensagem relatada](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)<br/>
   
 8. Selecione **Auditar esta regra com nível de severidade**e escolha **Médio**. 
     
-9. Em **Escolher um modo para essa regra**, escolha **Enforce**. 
-    
-    ![Configurar uma regra para obter uma cópia de cada mensagem relatada](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+9. Em **Escolher um modo para essa regra**, escolha **Enforce**.<br/>![Configurar uma regra para obter uma cópia de cada mensagem relatada](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
 10. Escolha **Salvar**. 
     
 Com essa regra in-loco, sempre que alguém em sua organização relata uma mensagem de email usando o suplemento do relatório de mensagem, seu administrador global, administrador de segurança e/ou leitor de segurança receberá uma cópia da mensagem. Essas informações podem permitem definir ou ajustar políticas, como políticas de [Vínculos do Office 365 ATP seguros](atp-safe-links.md) . 
 
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Analisar ou editar as configurações padrão para o suplemento de mensagem de relatório
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Analisar ou editar as configurações para o suplemento de mensagem de relatório
 
-Você pode analisar e editar as configurações padrão para o suplemento de mensagem de relatório usando o Centro de administração. 
+Você pode examinar e editar as configurações padrão para o relatório de mensagem suplemento na [página serviços e suplementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
 
 > [!IMPORTANT]
 > Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa.
     
-1. Se apenas, você instalou o suplemento de mensagem de relatório para sua organização, você já será na página serviços e suplementos. Caso contrário, vá [aqui](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) e entrar usando sua conta de trabalho ou da escola para o Office 365.
+1. Ir para a [página de suplementos & serviços](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no Centro de administração do Microsoft 365 novo.<br/>![Página de serviços e suplementos no novo Microsoft 365 Admin Center](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
-2. Procure a **Mensagem de relatório**e selecioná-lo.<br/>![Serviços e suplementos para o Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
+2. Localize e selecione o suplemento do relatório de mensagem.<br/>![Localize e selecione o suplemento de mensagem de relatório](media/FindReportMessageAddIn.png)<br/> 
     
-3. Um painel aberto que exibe as configurações que foram selecionadas para o suplemento de mensagem de relatório durante a implantação.<br/>![Configurações para o suplemento de mensagem de relatório](media/ReportMessage-reviewaddinsettings.png)<br/> 
+3. Na tela de mensagem de relatório, revise e editar configurações, conforme apropriado para sua organização.<br/>![Configurações para o suplemento de mensagem de relatório](media/EditReportMessageAddIn.png)<br/> 
 
-4. Revise e, se necessário, editar configurações para o suplemento de mensagem de relatório e salve as alterações.
-    
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Saiba como usar o suplemento de mensagem de relatório
 
 Consulte [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Os usuários precisam ter permissões de segurança do Office 365 &amp; Centro de conformidade antes que eles possam gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450736"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539103"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornecer acesso aos usuários para a segurança do Office 365 &amp; Centro de conformidade
 
@@ -63,7 +63,7 @@ Para obter mais informações sobre as permissões diferentes, você pode conced
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Use o PowerShell para fornecer outro acesso de usuário de segurança &amp; Centro de conformidade
 
-1. [Conectar para a segurança do Office 365 &amp; usando o PowerShell remoto do Centro de conformidade](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+1. [Conectar-se a segurança do Office 365 & PowerShell do Centro de conformidade](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Use o comando **Add-RoleGroupMember** para adicionar um usuário à função de Gerenciamento de Organização, conforme mostrado no exemplo a seguir. 
     

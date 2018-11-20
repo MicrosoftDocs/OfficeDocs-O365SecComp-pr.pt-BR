@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Obtenha uma visão geral das páginas de aviso de que você pode ver quando a proteção de ameaça avançadas do Office 365 estiver no trabalho.
-ms.openlocfilehash: eae893da6bb2692ae4fb9f934bc892d2058beecd
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782128"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238263"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Páginas de aviso do Office 365 ATP Links de seguros
 
@@ -107,14 +107,3 @@ Página atualizada de aviso:
 
 ![Erro](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
-## <a name="related-topics"></a>Tópicos relacionados
-
-[Como o Office ajuda a proteger você de esquemas de phishing](https://support.office.com/article/be0de46a-29cd-4c59-aaaf-136cf177d593)
-  
-[Links do Office 365 ATP seguros](atp-safe-links.md)
-  
-[Anexos do Office 365 ATP seguros](atp-safe-attachments.md)
-  
-[Proteção antispam e antimalware do Office 365](anti-spam-and-anti-malware-protection.md)
-  
-

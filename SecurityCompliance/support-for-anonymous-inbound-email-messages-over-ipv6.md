@@ -3,7 +3,7 @@ title: Suporte para mensagens de email de entrada anônimas por IPv6
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-description: Exchange Online Protection (EOP) e o Exchange Online suportam o recebimento de mensagens de email de entrada anônimas sobre IPv6 comunicações de remetentes que não enviem mensagens sobre segurança de camada de transporte (TLS). Você pode opt-in para receber mensagens sobre IPv6, solicitando essa funcionalidade do UNRESOLVED_TOKEN_VAL(exMCSS) abrindo o Centro de administração do Office 365 em https://portal.office.com/adminportal/home, clicando em suporte e, em seguida, clicando em nova solicitação de serviço). Se você não opt-in para IPv6, você vai continuar a receber mensagens via IPv4.
-ms.openlocfilehash: 93575c57bb6eac5e0f92066dab3e6ed8b5f4b215
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Saiba como configurar o suporte para mensagens anônimas de origens de IPv6 para o Exchange Online Protection e o Exchange Online.
+ms.openlocfilehash: 0d324ce6e0ff0ff9104ef597176b09a5a319abc7
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003010"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255806"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Suporte para mensagens de email de entrada anônimas por IPv6
 
-Exchange Online Protection (EOP) e o Exchange Online suportam o recebimento de mensagens de email de entrada anônimas sobre IPv6 comunicações de remetentes que não enviem mensagens sobre segurança de camada de transporte (TLS). Você pode opt-in para receber mensagens sobre IPv6, solicitando essa funcionalidade do UNRESOLVED_TOKEN_VAL(exMCSS) abrindo o Centro de administração do Office 365 em [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), clicando em **suporte**e, em seguida, clicando em **nova solicitação de serviço**). Se você não opt-in para IPv6, você vai continuar a receber mensagens via IPv4.
+Exchange Online Protection (EOP) e o Exchange Online suportam o recebimento de mensagens de email de entrada anônimas sobre IPv6 comunicações de remetentes que não enviem mensagens sobre segurança de camada de transporte (TLS). Você pode opt-in para receber mensagens sobre IPv6, solicitando essa funcionalidade do Microsoft Support abrindo o Centro de administração do Office 365 em [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), clicando em **suporte**e, em seguida, clicando em **nova solicitação de serviço**). Se você não opt-in para IPv6, você vai continuar a receber mensagens via IPv4.
   
 Remetentes que transmitem mensagens para serviço sobre IPv6 devem cumprir com os dois requisitos a seguir:
   

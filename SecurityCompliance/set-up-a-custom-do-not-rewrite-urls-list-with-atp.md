@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353257"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238383"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
 
@@ -66,20 +66,4 @@ Os seguintes exemplos de listas de tabela de que você pode digitar e o que essa
 |`http://contoso.com/a`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a`, mas não subcaminhos, como`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a` e subcaminhos like`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>Tópicos relacionados
-
-[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) 
-  
-[Links de ATP seguros no Office 365](atp-safe-links.md)
-  
-[Configurar políticas de Links de ATP seguros no Office 365](set-up-atp-safe-links-policies.md)
-  
-[Configurar uma lista de URLs bloqueada personalizada usando ATP Links de seguros](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Exibir relatórios de proteção de ameaça avançadas do Office 365](view-reports-for-atp.md)
-
-[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

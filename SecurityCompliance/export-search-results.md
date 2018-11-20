@@ -1,9 +1,9 @@
 ---
-title: Exportar resultados de pesquisa de conteúdo da segurança do Office 365 &amp; Centro de conformidade
+title: Exportar resultados da pesquisa de conteúdo no Centro de conformidade a segurança do Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportar resultados da pesquisa de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para um computador local. Resultados de email Emaill são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494062"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539113"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportar resultados de pesquisa de conteúdo da segurança do Office 365 &amp; Centro de conformidade
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar resultados da pesquisa de conteúdo no Centro de conformidade a segurança do Office 365
 
 Depois que uma pesquisa de conteúdo for executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, serem transferidas para seu computador como arquivos PST. Quando você exporta o conteúdo do SharePoint e OneDrive para sites corporativos, cópias de documentos do Office nativos são exportadas. Há documentos adicionais e relatórios que estão incluídos com os resultados da pesquisa exportado.
   
@@ -88,7 +88,7 @@ A primeira etapa é preparar os resultados da pesquisa para a exportação. Quan
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** \> **Pesquisa de Conteúdo**.
     
@@ -177,23 +177,22 @@ Conforme explicado anteriormente, você pode aumentar a velocidade de download, 
 
   
 ## <a name="more-information"></a>Mais informações
-<a name="moreinfo"> </a>
 
 Eis aqui para obter mais informações sobre como exportar os resultados da pesquisa.
   
-[Limites de exportação](export-search-results.md#export-limits)
+[Limites de exportação](#export-limits)
   
-[Relatórios de exportação](export-search-results.md#export-reports)
+[Relatórios de exportação](#export-reports)
   
 [Exportando itens indexados parcialmente](#exporting-partially-indexed-items)
+
+[Exportando mensagens individuais ou arquivos PST](#exporting-individual-messages-or-pst-files)
   
-[Exportando mensagens individuais ou arquivos PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[Descriptografando mensagens criptografadas por RMS](#decrypting-rms-encrypted-messages)
+
+[Nomes de arquivo de itens exportados](#filenames-of-exported-items)  
   
-[Descriptografando mensagens criptografadas por RMS](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[Nomes de arquivo de itens exportados](export-search-results.md#Filenames-of-exported-items)
-  
-[Diversos](export-search-results.md#miscellaneous)
+[Diversos](#miscellaneous)
   
  ### <a name="export-limits"></a>Limites de exportação
   
@@ -209,7 +208,7 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
     
   - Exportando relatórios de pesquisa de conteúdo não conta em relação a qualquer um dos limites da exportação. 
     
-- Conforme anteriormente mencionado, os resultados da pesquisa de caixas de correio e de sites são carregados para o local de armazenamento do Windows Azure (conforme descrito em [etapa 1: preparar resultados para exportação de pesquisa](export-search-results.md#step1)) a uma taxa máxima de 2 GB por hora.
+- Conforme anteriormente mencionado, os resultados da pesquisa de caixas de correio e de sites são carregados para o local de armazenamento do Windows Azure (conforme descrito em [etapa 1: preparar resultados para exportação de pesquisa](#step-1-prepare-search-results-for-export)) a uma taxa máxima de 2 GB por hora.
     
 - O tamanho máximo de um arquivo PST que pode ser exportado é 10 GB por padrão. Isso significa que se os resultados da pesquisa de caixa de correio do usuário são maiores que 10 GB, os resultados da pesquisa da caixa de correio serão exportados em arquivos PST da separados duas (ou mais). Além disso, se você optar por exportar todos os resultados da pesquisa em um único arquivo PST, o arquivo PST será divido em arquivos de PST adicionais se o tamanho total dos resultados da pesquisa for maior que 10 GB. Se você quiser alterar esse tamanho padrão, você pode editar o registro do Windows no computador que você usa para exportar os resultados da pesquisa. Consulte [alterar o tamanho dos arquivos PST ao exportar os resultados da pesquisa de descoberta eletrônica](change-the-size-of-pst-files-when-exporting-results.md).
     

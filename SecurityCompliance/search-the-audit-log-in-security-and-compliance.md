@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: 'Use o Centro de conformidade & segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935588"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522803"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar no log de auditoria no Centro de conformidade & segurança do Office 365
 
 Precisa encontrar se um usuário exibido um documento específico ou removidos de um item de suas caixas de correio? Se precisar, você pode usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. Por que uma auditoria unificada efetuar? Porque você pode pesquisar os seguintes tipos de atividade do usuário e administração no Office 365:
   
@@ -100,26 +98,26 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
     
 - Ele pode levar até 30 minutos ou backup de 24 horas após um evento ocorre para a entrada de log de auditoria correspondente a ser exibido nos resultados da pesquisa. A tabela a seguir mostra o tempo que leva para os diferentes serviços no Office 365.
     
-|**Serviço do Office 365**|**30 minutos**|**24 horas**|
-|:-----|:-----|:-----|
-|Proteção contra ameaças avançadas e inteligência de ameaça  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory (admin events)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Prevenção contra perda de dados  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Descoberta Eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Segurança &amp; Centro de conformidade  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online e OneDrive for Business  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Serviço do Office 365**|**30 minutos**|**24 horas**|
+    |:-----|:-----|:-----|
+    |Proteção contra ameaças avançadas e inteligência de ameaça  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (admin events)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory (eventos de logon do usuário)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Prevenção contra perda de dados  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Descoberta Eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Segurança &amp; Centro de conformidade  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online e OneDrive for Business  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (AD Azure) é o serviço de diretório para o Office 365. O log de auditoria unificada contém o usuário, grupo, aplicativo, domínio e atividades de diretório realizadas no Centro de administração do Office 365 ou no Azure no portal de gerenciamento. Para obter uma lista completa de eventos do Windows Azure AD, consulte [Eventos de relatório de auditoria do Active Directory do Windows Azure](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
@@ -160,18 +158,18 @@ Aqui é o processo para pesquisar o log de auditoria no Office 365.
   
 4. Configure os seguintes critérios de pesquisa:
     
-1. **Atividades** Clique na lista suspensa para exibir as atividades que você pode pesquisar. Atividades de administrador e usuário são organizadas em grupos de atividades relacionadas. Você pode selecionar atividades específicas ou você pode clicar no nome do grupo de atividade para selecionar todas as atividades no grupo. Você também pode clicar uma atividade selecionada para limpar a seleção. Após executar a pesquisa, apenas as entradas de log de auditoria para as atividades selecionadas são exibidas. A seleção de **Mostrar os resultados de todas as atividades** exibirá resultados para todas as atividades realizadas pelo usuário selecionado ou grupo de usuários. 
+    r. **atividades** clique na lista suspensa para exibir as atividades que você pode pesquisar. Atividades de administrador e usuário são organizadas em grupos de atividades relacionadas. Você pode selecionar atividades específicas ou você pode clicar no nome do grupo de atividade para selecionar todas as atividades no grupo. Você também pode clicar uma atividade selecionada para limpar a seleção. Após executar a pesquisa, apenas as entradas de log de auditoria para as atividades selecionadas são exibidas. A seleção de **Mostrar os resultados de todas as atividades** exibirá resultados para todas as atividades realizadas pelo usuário selecionado ou grupo de usuários. 
     
     Mais de 100 atividades de administrador e usuário são registradas no log de auditoria do Office 365. Clique na guia **atividades auditadas** , no tópico deste artigo para ver as descrições de cada atividade em cada um dos serviços do Office 365 diferentes. 
     
-2. **Data de início** e **Data de término** últimos sete dias são marcadas por padrão. Selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. A data e hora são apresentados no formato Tempo Universal Coordenado (UTC). O intervalo de datas máximo que você pode especificar é 90 dias. Um erro será exibido se o intervalo de datas selecionado é maior que 90 dias. 
+    b. **Data de início** e **Data de término** últimos sete dias são marcadas por padrão. Selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. A data e hora são apresentados no formato Tempo Universal Coordenado (UTC). O intervalo de datas máximo que você pode especificar é 90 dias. Um erro será exibido se o intervalo de datas selecionado é maior que 90 dias. 
     
     > [!TIP]
     > Se você estiver usando o intervalo de datas máximo de 90 dias, selecione a hora atual para a **Data de início**. Caso contrário, você receberá uma mensagem de erro informando que a data de início é anterior à data de término. Se você tiver ativado a auditoria nos últimos 90 dias, o intervalo de datas máximo não pode iniciar antes da data em que a auditoria foi ativada. 
   
-3. **Usuários** Clique nesta caixa e selecione um ou mais usuários para exibir resultados de pesquisa para. As entradas do log de auditoria da atividade selecionada executadas pelos usuários que você selecionar nesta caixa são exibidas na lista de resultados. Deixe esta caixa em branco para retornar as entradas para todos os usuários (e contas de serviço) em sua organização. 
+    c. resultados para mais **os usuários** clicam nesta caixa e selecione um ou mais usuários para exibir a pesquisa. As entradas do log de auditoria da atividade selecionada executadas pelos usuários que você selecionar nesta caixa são exibidas na lista de resultados. Deixe esta caixa em branco para retornar as entradas para todos os usuários (e contas de serviço) em sua organização. 
     
-4. **Arquivo ou pasta** Digite parte ou todo um nome de arquivo ou pasta para procurar a atividade relacionada ao arquivo da pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de que o tipo o caminho completo do URL, ou se você digitar apenas uma parte da URL, não inclua quaisquer caracteres especiais ou espaços. 
+    d. **arquivo ou pasta** digite parte ou todo um nome de arquivo ou pasta para procurar a atividade relacionada ao arquivo da pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de que o tipo o caminho completo do URL, ou se você digitar apenas uma parte da URL, não inclua quaisquer caracteres especiais ou espaços. 
     
     Deixe esta caixa em branco para retornar as entradas para todos os arquivos e pastas em sua organização.
     

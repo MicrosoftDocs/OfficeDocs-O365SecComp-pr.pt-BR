@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Defina políticas de anexos seguros para proteger sua organização contra arquivos maliciosos no email.
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850835"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238403"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos do Office 365 ATP seguros
 
@@ -82,18 +82,9 @@ Como configurar suas políticas de anexos de seguros ATP, você escolher entre v
 |**Entrega dinâmica** <br/> |Entrega de mensagens imediatamente  <br/> Substitui os anexos com um arquivo de espaço reservado até que o exame seja concluída e, em seguida, anexa novamente os anexos, se nenhum malware é detectado  <br/> Inclui o anexo a visualização de recursos para a maioria dos PDFs e Office arquivos durante a verificação  <br/> Envia mensagens com malware detectado para quarentena onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> [Saiba mais sobre entrega dinâmico e visualização de anexos de seguros ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar atrasos de mensagem, protegendo a destinatários contra arquivos maliciosos  <br/> Permitir que os destinatários visualizar anexos no modo de segurança, enquanto a verificação estiver ocorrendo  <br/> |
 |**Habilitar o redirecionamento** <br/> |Aplica-se quando a opção de Monitor, bloquear ou substituir for escolhida  <br/> Envia anexos para um endereço de email especificado onde os administradores de segurança ou os analistas podem investigar  <br/> |Permitir que os administradores de segurança e os analistas anexos suspeitos de pesquisas  <br/> |
    
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="next-steps"></a>Próximas etapas
 
-[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) 
-  
-[Anexos de ATP seguros no Office 365](atp-safe-attachments.md)
-  
-[Links de ATP seguros no Office 365](atp-safe-links.md)
-  
-[Configurar políticas de Links de ATP seguros no Office 365](set-up-atp-safe-links-policies.md)
-  
-[Exibir relatórios de Proteção avançada contra ameaças](view-reports-for-atp.md)
-
-[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
-  
-
+Depois que suas políticas de anexos de seguros ATP estão funcionando, você pode ver como ATP está trabalhando para sua organização exibindo relatórios. Consulte os seguintes recursos para saber mais:
+- [Exibir relatórios de proteção de ameaça avançadas do Office 365](view-reports-for-atp.md)
+- [Use o Explorer na segurança &amp; Centro de conformidade](use-explorer-in-security-and-compliance.md)
+ 

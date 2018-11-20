@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para localizar rapidamente email nas caixas de correio do Exchange, documentos em sites do SharePoint e locais de OneDrive e conversas em Skype para negócios de mensagens instantâneas.
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038224"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238393"
 ---
 # <a name="search-for-content-in-office-365"></a>Procurar conteúdo no Office 365
 
@@ -42,6 +42,8 @@ A primeira etapa é iniciar usando a ferramenta de pesquisa de conteúdo para es
     
 - [Editar em massa](bulk-edit-content-searches.md) a consulta e locais de conteúdo para várias pesquisas 
     
+- [Destinatários Cco preservar](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , portanto, você poderá procurá-la 
+
 ## <a name="perform-actions-on-content-you-find"></a>Executar ações no conteúdo que você acha
 
 Depois de executar uma pesquisa e refiná-lo conforme necessário, a próxima etapa é fazer algo com os resultados retornados pela pesquisa. Você pode exportar e baixe os resultados ao computador local ou no caso de um ataque de email em sua organização, você pode excluir os resultados de uma pesquisa de caixas de correio do usuário.

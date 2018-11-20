@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/08/2018
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Estenda a proteção de ameaça avançadas do Office 365 para arquivos no SharePoint Online, o OneDrive for Business e Teams da Microsoft habilitar a colaboração mais segura para sua organização.
-ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454318"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238443"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP para SharePoint, OneDrive e Microsoft Teams
 
@@ -25,7 +26,7 @@ ms.locfileid: "25454318"
 
 Compartilhar arquivos de pessoas regularmente e colaborar através do SharePoint, OneDrive e Teams da Microsoft. Com [A proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP), sua organização pode colaborar de maneira mais segura. ATP ajuda a detectar e bloquear arquivos que são identificados como sendo maliciosas em bibliotecas de documentos e sites de equipe.  
   
-### <a name="how-it-works"></a>Como funciona
+## <a name="how-it-works"></a>Como funciona
 
 Quando um arquivo no SharePoint Online, o OneDrive for Business e Teams da Microsoft foi identificado como sendo maliciosas, ATP integra-se diretamente com os repositórios de arquivos de bloqueio de arquivo. A imagem a seguir mostra um exemplo de um arquivo mal-intencionado detectado em uma biblioteca.
   
@@ -41,7 +42,7 @@ Dependendo de como o Office 365 é configurada, as pessoas podem ou podem não t
   
 Para saber mais, consulte [Ativar ATP do Office 365 para SharePoint, OneDrive e as equipes da Microsoft](turn-on-atp-for-spo-odb-and-teams.md).
   
-### <a name="keep-the-following-points-in-mind"></a>Tenha em mente os seguintes pontos
+## <a name="keep-these-points-in-mind"></a>Tenha em mente esses pontos
 
 - ATP não examinará cada arquivo no SharePoint Online, OneDrive para negócios ou Teams da Microsoft. Isso ocorre por design. Os arquivos são examinados assincronamente, por meio de um processo que usa os eventos de atividade de compartilhamento e de convidado, juntamente com os sinais de ameaça e heurístico inteligente para identificar arquivos mal-intencionados.
 
@@ -69,16 +70,7 @@ Caso você seja parte da equipe de segurança do Office 365 da sua organização
     
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft](turn-on-atp-for-spo-odb-and-teams.md)
+1. [Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft](turn-on-atp-for-spo-odb-and-teams.md)
     
-- [Exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou Teams da Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
+2. [Exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou Teams da Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
     
-## <a name="related-topics"></a>Tópicos relacionados
-
-[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) 
-  
-[Exibir os relatórios de proteção de ameaça avançadas do Office 365](view-reports-for-atp.md)
-  
-[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
-  
-

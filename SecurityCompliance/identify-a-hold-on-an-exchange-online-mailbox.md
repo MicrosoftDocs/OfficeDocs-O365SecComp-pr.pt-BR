@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Aprenda a identificar os diferentes tipos de espera que pode ser colocado em uma caixa de correio do Office 365. Esses tipos de isenções incluem litígio, isenções de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário uma política de retenção de toda a organização foram excluído
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577070"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026508"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
 
@@ -39,7 +39,7 @@ O Office 365 oferece diversas maneiras de se sua organização pode impedir que 
 
     - **Políticas de retenção de toda a organização** - essas são as políticas que são atribuídas a todos os locais de conteúdo na sua organização. Você pode usar o cmdlet **Get-OrganizationConfig** no PowerShell do Exchange Online para obter informações sobre as políticas de retenção de toda a organização. Para obter mais informações, consulte a seção "Aplicando uma política de retenção para toda a organização ou locais específicos" em [políticas de retenção de visão geral do Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Rótulos do office 365** - se um usuário aplica um rótulo de Office 365 (aquele que está configurado para reter o conteúdo ou manter e excluir conteúdo) para *qualquer* pasta ou item em suas caixas de correio, uma isenção é colocado na caixa de correio, como se a caixa de correio foi colocada em retenção de litígio Mantenha ou atribuído a uma política de retenção do Office 365. Para obter mais informações, consulte a seção [identificando a caixas de correio em espera porque um rótulo tiver sido aplicado a uma pasta ou item](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) neste artigo.
+- **Rótulos de retenção do office 365** - se um usuário aplica um rótulo de retenção do Office 365 (aquele que está configurado para reter o conteúdo ou manter e excluir conteúdo) para *qualquer* pasta ou item em suas caixas de correio, uma isenção é colocado na caixa de correio, como se fosse a caixa de correio colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365. Para obter mais informações, consulte a seção [identificando a caixas de correio em espera porque um rótulo de retenção tiver sido aplicado a uma pasta ou item](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) neste artigo.
 
 Para gerenciar caixas de correio em espera, você precisa identificar o tipo de espera é colocada em uma caixa de correio, para que você possa realizar tarefas como alterar a duração de espera, temporária ou permanentemente a remoção de retenção ou excluindo uma caixa de correio de uma política de retenção do Office 365. Nesses casos, a primeira etapa é identificar o tipo de bloqueio colocado na caixa de correio. E porque vários bloqueios (e tipos diferentes de isenções) podem ser colocados em uma única caixa de correio, você vai ter que identifique todas as isenções colocadas em uma caixa de correio se você deseja remover ou alterar essas isenções.
 
@@ -154,9 +154,9 @@ Execute o seguinte comando no PowerShell do Centro de conformidade & segurança 
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identificação de caixas de correio em espera porque um rótulo tiver sido aplicado a uma pasta ou item
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identificação de caixas de correio em espera porque um rótulo de retenção tiver sido aplicado a uma pasta ou item
 
-Sempre que um usuário aplica um rótulo que está configurado para reter o conteúdo ou manter e excluir conteúdo para qualquer pasta ou um item em suas caixas de correio, a propriedade de caixa de correio de *ComplianceTagHoldApplied* é definida como **True**. Quando isso acontece, a caixa de correio é considerada como estar em espera, como se ele foi colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365. Quando a propriedade *ComplianceTagHoldApplied* é definida como **True**, as seguintes ações podem ocorrer:
+Sempre que um usuário aplica um rótulo de retenção que está configurado para reter o conteúdo ou manter e excluir conteúdo para qualquer pasta ou um item em suas caixas de correio, a propriedade de caixa de correio de *ComplianceTagHoldApplied* é definida como **True**. Quando isso acontece, a caixa de correio é considerada como estar em espera, como se ele foi colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365. Quando a propriedade *ComplianceTagHoldApplied* é definida como **True**, as seguintes ações podem ocorrer:
 
 - Se a caixa de correio ou da conta de usuário do Office 365 do usuário for excluída, a caixa de correio torna-se uma [caixa de correio inativa](inactive-mailboxes-in-office-365.md).
 - Você não poderá desabilitar a caixa de correio (caixa de correio primária ou a caixa de correio de arquivo morto, se ele estiver habilitado).
@@ -168,7 +168,7 @@ Para exibir o valor da propriedade *ComplianceTagHoldApplied* , execute o seguin
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Para obter mais informações sobre rótulos, consulte [Visão geral do Office 365 rótulos](labels.md).
+Para obter mais informações sobre os rótulos de retenção, consulte [Visão geral do Office 365 rótulos de retenção](labels.md).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Mantenha a gerenciar caixas de correio em atraso
 

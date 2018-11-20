@@ -3,7 +3,7 @@ title: Suporte para validação de mensagens assinadas por DKIM
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: O Exchange Online Protection (EOP) e o Exchange Online suportam validação de entrada de mensagens de Email Identificado por Chaves de Domínio (DKIM). DKIM é um método para validar que uma mensagem foi enviada do domínio que ela diz ter originado e que não foi falsificada por qualquer outra pessoa. Ele liga uma mensagem de email ao responsável da organização por enviá-la. A verificação DKIM é usada automaticamente para todas as mensagens enviadas em comunicações IPv6. (Para saber mais sobre o suporte a IPv6, veja Suporte para mensagens de email de entrada anônimas por IPv6.).
-ms.openlocfilehash: d2fab69847732bb7ed54f943d2c7845e06084936
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Saiba mais sobre a validação do DKIM assinado mensagens no Exchange Online Protection e o Exchange Online
+ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002244"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255826"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Suporte para validação de mensagens assinadas por DKIM
 
@@ -28,6 +28,6 @@ DKIM valida uma mensagem assinada digitalmente que aparece no cabeçalho DKIM-As
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Administradores podem criar Exchange [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) nos resultados de uma validação DKIM para filtrar ou encaminhar mensagens conforme o necessário. 
+Administradores podem criar Exchange [regras de fluxo de correio](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (também conhecido como regras de transporte) nos resultados de uma validação DKIM para filtrar ou encaminhar mensagens como necessário. 
   
 

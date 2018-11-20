@@ -1,7 +1,7 @@
 ---
 title: Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
-ms.author: derng
-author: derng
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Saiba como ativar ATP para o SharePoint, OneDrive e equipes, incluindo como configurar alertas para arquivos detectados.
-ms.openlocfilehash: eb3687f6afd2e7f9a3698944019bcdb8dcbff5ae
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454286"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238413"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
 
@@ -31,19 +31,17 @@ Para executar as tarefas descritas neste artigo, você deve ter as permissões n
   
 1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com)e entre com sua conta do trabalho ou da escola.
     
-2. No Office 365 Security &amp; Centro de conformidade, no painel de navegação à esquerda, em **gerenciamento de ameaça**, escolha **política** \> **Anexos seguros**.
-    
-    ![Na segurança &amp; Centro de conformidade, escolha gerenciamento de ameaça \> política](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. No Office 365 Security &amp; Centro de conformidade, no painel de navegação à esquerda, em **gerenciamento de ameaça**, escolha **política** \> **Anexos seguros**. <br/>![Na segurança &amp; Centro de conformidade, escolha gerenciamento de ameaça \> política](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. Selecione **Ativar ATP para SharePoint, OneDrive e as equipes da Microsoft**.
-    
-    ![Ativar proteção contra ameaças avançado para SharePoint Online, o OneDrive for Business e equipes da Microsoft](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. Selecione **Ativar ATP para SharePoint, OneDrive e as equipes da Microsoft**.<br/>![Ativar proteção contra ameaças avançado para SharePoint Online, o OneDrive for Business e equipes da Microsoft](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
 4. Clique em **Salvar**.
     
 5. Revise (e, conforme apropriado, edite) as [políticas de Links seguros](set-up-atp-safe-links-policies.md)e as [políticas de segurança de anexos](set-up-atp-safe-attachments-policies.md) da sua organização.
     
-6. (Recomendado) Como um administrador global ou um administrador do SharePoint Online, execute o cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** com o parâmetro **DisallowInfectedFileDownload** definido como *true* . <br/>Definindo o parâmetro para *true* bloqueia todas as ações (exceto excluir) para arquivos de detectados. As pessoas não podem abrir, mover, copiar ou compartilhar arquivos detectados.<br/>Configuração do parâmetro como *false* bloqueia todas as ações, exceto excluir e Download. Pessoas podem optar por aceitar o risco e baixar um arquivo detectado.<br/>Recomendamos a definição do parâmetro como *true*. 
+6. (Recomendado) Como um administrador global ou um administrador do SharePoint Online, execute o cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** com o parâmetro **DisallowInfectedFileDownload** definido como *true*. <br/>
+  - Definindo o parâmetro para *true* bloqueia todas as ações (exceto excluir) para arquivos de detectados. As pessoas não podem abrir, mover, copiar ou compartilhar arquivos detectados.
+  - Configuração do parâmetro como *false* bloqueia todas as ações, exceto excluir e Download. Pessoas podem optar por aceitar o risco e baixar um arquivo detectado.  
    
 7. Permitir até 30 minutos para que suas alterações à difusão em todos os centros de dados do Office 365.
     
@@ -77,16 +75,10 @@ Para saber mais sobre alertas, consulte [criar alertas de atividade no Office 36
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou Teams da Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [Exibir informações sobre arquivos mal-intencionados detectada no SharePoint, OneDrive ou Teams da Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
     
-- [Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365](manage-quarantined-messages-and-files.md)
+2. [Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365](manage-quarantined-messages-and-files.md)
     
-## <a name="related-topics"></a>Tópicos relacionados
 
-[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) 
-  
-[Exibir os relatórios de proteção de ameaça avançadas do Office 365](view-reports-for-atp.md)
-  
-[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
   
 
