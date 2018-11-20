@@ -21,6 +21,7 @@
 ### [Introdução às recomendações de políticas DLP](get-started-with-dlp-policy-recommendations.md)
 ### [Introdução à política DLP padrão](get-started-with-the-default-dlp-policy.md)
 ### [Criar uma política DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+### [Criar, testar e ajustar uma política DLP](create-test-tune-dlp-policy.md)
 ### [Usar notificações e dicas de política nas políticas DLP](use-notifications-and-policy-tips.md)
 ### [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
 ### [Criar uma política DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
