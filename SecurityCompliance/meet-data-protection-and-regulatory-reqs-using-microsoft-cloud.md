@@ -3,7 +3,7 @@ title: Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos r
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: O Gerenciador de Conformidade no Portal de Confiança do Serviço Microsoft fornece ferramentas para monitorar, implementar e gerenciar os controles para ajudar sua organização a alcançar a conformidade de acordo com os padrões de segurança e proteção de dados do setor (como RGPD, ISO 27001 e 27018, e HIPAA) quando comparados aos serviços em nuvem da Microsoft, como o Microsoft Azure e o Office 365. O Gerenciador de Conformidade ajuda quem supervisiona a estratégia de privacidade e proteção de dados da sua organização a gerenciar o processo de avaliação de risco e conformidade.
-ms.openlocfilehash: b8493775210be14a44c6d8185c56371b55634329
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524231"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618927"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft
 
  *O Gerenciador de Conformidade não está disponível no Office 365 operado pela 21Vianet, Office 365 Germany, Office 365 US Government Community High (GCC High) ou Office 365 Department of Defense.* 
   
-O Gerenciador de Conformidade, uma ferramenta de avaliação de risco baseada no fluxo de trabalho da Microsoft [Introdução ao Portal de Confiança do Serviço Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), permite monitorar, atribuir e verificar as atividades de conformidade normativas da sua organização relacionadas aos Serviços Profissionais e aos serviços em nuvem da Microsoft, como o Microsoft Office 365, o Microsoft Dynamics 365 e o Microsoft Azure. O Gerenciador de Conformidade:
+O Gerenciador de Conformidade, uma ferramenta de avaliação de risco baseada no [Portal de Confiança do Serviço](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662) da Microsoft, permite monitorar, atribuir e verificar as atividades de conformidade normativas da sua organização relacionadas aos Serviços Profissionais e aos serviços em nuvem da Microsoft, como o Microsoft Office 365, o Microsoft Dynamics 365 e o Microsoft Azure. O Gerenciador de Conformidade:
   
 - Combina as informações detalhadas fornecidas pela Microsoft para auditores e reguladores como parte de várias auditorias de terceiros dos serviços em nuvem da Microsoft em relação a vários padrões (por exemplo, ISO 27001, ISO 27018 e NIST) e as informações que a Microsoft compila internamente para sua conformidade com as regulamentações (como HIPAA ou o RGPD – Regulamento Geral sobre a Proteção de Dados da UE) com sua própria avaliação de conformidade da organização com esses padrões e regulamentações.
     
@@ -131,7 +131,7 @@ Depois que o acesso ao Gerenciador de Conformidade estiver configurado, qualquer
 
 ## <a name="understanding-the-compliance-score"></a>Noções básicas sobre a pontuação de conformidade
 
-No Painel, o Gerenciador de Conformidade exibe uma pontuação total para avaliações do Office 365 no canto superior direito do bloco. Este é o total geral da Pontuação de Conformidade da Avaliação e apresenta o acúmulo de pontos recebidos para cada avaliação de controle marcada como Implementada e testada na Avaliação. Ao adicionar uma Avaliação, você verá que a Pontuação de Conformidade já está a caminho da conclusão porque os pontos para os controles gerenciados da Microsoft que foram implementados pela Microsoft e testados por terceiros independentes já foram aplicados.
+No Painel, o Gerenciador de Conformidade exibe uma pontuação total para avaliações do Office 365 no canto superior direito do bloco. Este é o total geral da Pontuação de Conformidade da Avaliação e apresenta o acúmulo de pontos recebidos para cada avaliação de controle marcada como Implementada e Testada na Avaliação. Ao adicionar uma Avaliação, você verá que a Pontuação de Conformidade já está a caminho da conclusão porque os pontos para os controles gerenciados da Microsoft que foram implementados pela Microsoft e testados por terceiros independentes já foram aplicados.
   
 ![Painel do Gerenciador de Conformidade – pontuação total de conformidade](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
@@ -831,8 +831,8 @@ O Gerenciador de Conformidade foi projetado para ser atualizado regularmente par
    
 ## <a name="see-also"></a>Confira também
 
-- [Anúncio da disponibilidade geral do Gerenciador de Conformidade](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-    
-- [O Microsoft 365 oferece uma estratégia de proteção de informações para ajudar com o RGPD](https://blogs.office.com/pt-BR/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
-    
+- [Guia interativo do Gerenciador de Conformidade](https://content.cloudguides.com/guides/Compliance%20Manager)
 
+- [Anúncio da disponibilidade geral do Gerenciador de Conformidade](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
+
+- [O Microsoft 365 oferece uma estratégia de proteção de informações para ajudar com o RGPD](https://blogs.office.com/pt-BR/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
