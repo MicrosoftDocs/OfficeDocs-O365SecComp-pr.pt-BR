@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o Centro de conformidade & segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522803"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626147"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar no log de auditoria no Centro de conformidade & segurança do Office 365
 
@@ -40,9 +40,9 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
     
 - Atividade do usuário e administração no Sway
     
-- atividades de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade
+- atividades de descoberta eletrônica no Centro de conformidade & segurança do Office 365
     
-- Atividade do usuário e administração no Power BI para Office 365
+- Atividade do usuário e administração no Power BI
     
 - Atividade do administrador e usuário em Teams da Microsoft
 
@@ -123,7 +123,7 @@ Certifique-se de ler o log de auditoria de itens a seguir antes de você inicia 
     
 - Logs de auditoria Exchange Online consistem em dois tipos de eventos: eventos de administração (ações executadas pelos administradores) e eventos de caixa de correio (ações tomadas pelos usuários em caixas de correio) do Exchange. Observe que a auditoria de caixa de correio não está habilitado por padrão. Ela deve ser ativar para cada caixa de correio do usuário antes de eventos de caixa de correio podem ser pesquisados no log de auditoria do Office 365. Para obter mais informações sobre a auditoria de caixa de correio e a caixa de correio auditoria de ações que serão registradas, consulte [Habilitar caixa de correio auditorias no Office 365](enable-mailbox-auditing.md).
     
-- Log de auditoria para Power BI não está habilitado por padrão. Para procurar atividades Power BI no log de auditoria do Office 365, você precisa habilitar a auditoria no portal de administração do Power BI. Para obter instruções, consulte [Power BI de auditoria](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Log de auditoria para Power BI não está habilitado por padrão. Para procurar atividades Power BI no log de auditoria do Office 365, você precisa habilitar a auditoria no portal de administração do Power BI. Para obter instruções, consulte a seção "Logs de auditoria" no [portal de administração do Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
 ## <a name="search-the-audit-log"></a>Pesquisas o log de auditoria
@@ -140,7 +140,7 @@ Aqui é o processo para pesquisar o log de auditoria no Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Etapa 1: Executar uma pesquisa de log de auditoria
 
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Usar uma sessão de navegação privada (não uma sessão normal) para acessar a segurança do Office 365 &amp; conformidade centraliza porque isso impedirá que as credenciais que você está conectado atualmente com sejam usados. Para abrir uma sessão de Navegação InPrivate no Internet Explorer ou Microsoft Edge, basta pressione CTRL + SHIFT + P. Para abrir uma sessão de navegação privada no Google Chrome (chamados de uma janela incognito), pressione CTRL + SHIFT + N. 
@@ -276,7 +276,6 @@ Você pode exportar os resultados de uma pesquisa de log de auditoria para um ar
     
     Para obter uma descrição das propriedades listadas na coluna **AuditData** no arquivo CSV quando você baixe todos os resultados e o serviço de cada uma se aplica ao, consulte o [log de auditoria de propriedades detalhadas no Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
-  
 ## <a name="audited-activities"></a>Atividades auditadas
 
 As tabelas desta seção descrevem as atividades que são auditadas no Office 365. Você pode pesquisar por esses eventos pesquisando a auditoria, faça logon na segurança &amp; Centro de conformidade. Clique na guia **pesquisa o log de auditoria** para obter instruções detalhadas. 
@@ -565,32 +564,9 @@ Para uma lista e uma descrição detalhada das atividades de descoberta eletrôn
   
 ### <a name="power-bi-activities"></a>Atividades do Power BI
   
-A tabela a seguir lista as atividades de admin no Power BI que são registradas no log de auditoria do Office 365 e de usuário.
+Você pode pesquisar o log de auditoria para atividades no Power BI. Para obter informações sobre atividades do Power BI, consulte a seção "Atividades auditados por Power Power BI" [Using auditoria dentro da sua organização](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
- **Importante:** Log de auditoria para Power BI não está habilitado por padrão. Para procurar atividades Power BI no log de auditoria do Office 365, você precisa habilitar a auditoria no portal de administração do Power BI. Para obter instruções, consulte [Power BI de auditoria](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
-  
-|**Nome amigável**|**Operation**|**Descrição**|
-|:-----|:-----|:-----|
-|Membros do grupo Power BI adicionados  <br/> |AddGroupMembers  <br/> |Um membro é adicionado a um espaço de trabalho de grupo do Power BI.  <br/> |
-|Conjunto de dados analisado Power BI  <br/> |AnalyzedByExternalApplication  <br/> |Um conjunto de dados é analisado por um aplicativo externo.  <br/> |
-|Painel criado do Power BI  <br/> |CreateDashboard  <br/> |Um novo painel é criado.  <br/> |
-|Grupo criado do Power BI  <br/> |CreateGroup  <br/> |Um grupo é criado.  <br/> |
-|Criado organizacional pacote de conteúdo do Power BI  <br/> |CreateOrgApp  <br/> |Um pacote de conteúdo organizacional é criado.  <br/> |
-|Painel excluído do Power BI  <br/> |DeleteDashboard  <br/> |Um painel é excluído.  <br/> |
-|Conjunto de dados excluído Power BI  <br/> |DeleteDataset  <br/> |Um conjunto de dados é excluído.  <br/> |
-|Relatório excluído do Power BI  <br/> |DeleteReport  <br/> |Um relatório é excluído.  <br/> |
-|Relatório baixado do Power BI  <br/> |DownloadReport  <br/> |Um usuário baixa um relatório do Power BI do serviço de seus computadores.  <br/> |
-|Painel editada do Power BI  <br/> |EditDashboard  <br/> |Um painel é renomeado.  <br/> |
-|Dados exportados da visuais de relatório do Power BI  <br/> |ExportReport  <br/> |Dados são exportados a partir de um bloco de relatório.  <br/> |
-|Dados exportados de blocos Power BI  <br/> |ExportTile  <br/> |Dados são exportados de um lado do painel.  <br/> |
-|Painel do Power BI impressa  <br/> |PrintDashboard  <br/> |Um painel é impressa.  <br/> |
-|Página de relatório impressa Power BI  <br/> |PrintReport  <br/> |Um relatório é impresso.  <br/> |
-|Relatório do Power BI publicado web  <br/> |PublishToWebReport  <br/> |Um relatório é publicado na Web.  <br/> |
-|Painel compartilhado do Power BI  <br/> |ShareDashboard  <br/> |Um painel é compartilhado.  <br/> |
-|Avaliação do Power BI Introdução  <br/> |OptInForProTrial  <br/> |Um usuário inicia uma assinatura de avaliação para profissionais Power BI.  <br/> |
-|Configurações do Power BI da organização atualizados  <br/> |UpdatedAdminFeatureSwitch  <br/> |Um administrador alterado uma definição organizacional no portal de administração do Power BI.  <br/> |
-|Painel visualizado do Power BI  <br/> |ViewDashboard  <br/> |Um painel é exibido.  <br/> |
-|Relatório exibido do Power BI  <br/> |ViewReport  <br/> |Um relatório é visualizado.  <br/> |
+Observe que o log de auditoria para Power BI não está habilitado por padrão. Para procurar atividades Power BI no log de auditoria do Office 365, você precisa habilitar a auditoria no portal de administração do Power BI. Para obter instruções, consulte a seção "Logs de auditoria" no [portal de administração do Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
 ### <a name="microsoft-teams-activities"></a>Atividades de Teams da Microsoft
   
