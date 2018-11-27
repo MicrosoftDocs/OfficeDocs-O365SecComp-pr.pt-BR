@@ -100,7 +100,7 @@
 |------|------------|--------|
 | 23/10/2018 | [Configurar seu serviço EOP](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | modificado |
 | 23/10/2018 | [Saiba mais sobre a inteligência contra falsificação](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | modificado |
-| 23/10/2018 | [Gerenciar investigações legais no Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | modificado |
+| 23/10/2018 | [Gerencie as investigações legais no Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | modificado |
 | 10/24/2018 | [Introdução à Inteligência Contra Ameaças do Office 365](/Office365/SecurityCompliance/get-started-with-ti) | modificado |
 | 10/24/2018 | [Visão geral de rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) | modificado |
 | 10/24/2018 | [Enviar notificações por email e Mostrar dicas de política para políticas de DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | modificado |
@@ -128,12 +128,12 @@
 | 10/29/2018 | [Visão geral de rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) | modificado |
 | 10/29/2018 | [Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modificado |
 | 10/29/2018 | [Integração do servidor SIEM com Microsoft 365](/Office365/SecurityCompliance/siem-server-integration) | modificado |
-| 10/30/2018 | [Entrega dinâmica e visualização de anexos do Office 365 ATP seguros](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | modificado |
-| 10/30/2018 | [Proteção Avançada contra Ameaças do Office 365](/Office365/SecurityCompliance/office-365-atp)  | modificado |
-| 10/30/2018 | [Configurar políticas de anexos do Office 365 ATP seguros](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | modificado |
-| 10/30/2018 | [Definir regras de fluxo de email para criptografar mensagens de email no Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
-| 10/30/2018 | [Criptografia de email no Office 365](/Office365/SecurityCompliance/email-encryption) | modificado |
-| 10/30/2018 | [Configurar o Azure Rights Management para a Criptografia de Mensagens do Office 365](/Office365/SecurityCompliance/set-up-azure-rm-for-message-encryption) | modificado |
+| 30/10/2018 | [Entrega dinâmica e visualização de anexos do Office 365 ATP seguros](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | modificado |
+| 30/10/2018 | [Proteção Avançada contra Ameaças do Office 365](/Office365/SecurityCompliance/office-365-atp)  | modificado |
+| 30/10/2018 | [Configurar políticas de anexos do Office 365 ATP seguros](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | modificado |
+| 30/10/2018 | [Definir regras de fluxo de email para criptografar mensagens de email no Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
+| 30/10/2018 | [Criptografia de email no Office 365](/Office365/SecurityCompliance/email-encryption) | modificado |
+| 30/10/2018 | [Configurar o Azure Rights Management para a Criptografia de Mensagens do Office 365](/Office365/SecurityCompliance/set-up-azure-rm-for-message-encryption) | modificado |
 | 10/31/2018 | [Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | adicionado |
 | 10/31/2018 | [Criar um tipo de informação confidencial personalizado](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificado |
 | 10/31/2018 | [Criar um dicionário de palavras-chave](/Office365/SecurityCompliance/create-a-keyword-dictionary) | modificado |
@@ -142,28 +142,28 @@
 | 10/31/2018 | [Limpeza Automática Zero Hora – proteção contra spam e malware](/Office365/SecurityCompliance/zero-hour-auto-purge) | modificado |
 | 10/31/2018 | [Habilitar o suplemento de Mensagem de relatório](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificado |
 | 10/31/2018 | [Definir regras de fluxo de email para criptografar mensagens de email no Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
-| 11/1/2018 | [Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modificado |
-| 11/1/2018 | [Criar um tipo de informação confidencial personalizado](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificado |
-| 11/1/2018 | [Criação e publicação em massa de rótulos de retenção usando o PowerShell](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | modificado |
-| 11/1/2018 | [Remover um usuário, domínio ou endereço IP de uma lista de bloqueio após enviar email de spam](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | modificado |
+| 01/11/2018 | [Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modificado |
+| 01/11/2018 | [Criar um tipo de informação confidencial personalizado](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificado |
+| 01/11/2018 | [Criação e publicação em massa de rótulos de retenção usando o PowerShell](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | modificado |
+| 01/11/2018 | [Remover um usuário, domínio ou endereço IP de uma lista de bloqueio após enviar email de spam](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | modificado |
 | 11/2/2018 | [Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
 | 11/2/2018 | [Links seguros de ATP do Office 365](/Office365/SecurityCompliance/atp-safe-links) | modificado |
 | 11/2/2018 | [Novidades na segurança de aplicativo de nuvem do Office 365](/Office365/SecurityCompliance/new-in-office-365-cas) | modificado |
 | 11/2/2018 | [Configurar políticas de vínculos do Office 365 ATP seguros](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificado |
 
 
-## <a name="week-of-november-05-2018"></a>Semana de 05 de novembro de 2018
+## <a name="week-of-november-05-2018"></a>Semana de 5 de novembro de 2018
 
 
 | Publicado em |Título do tópico | Alteração |
 |------|------------|--------|
-| 11/5/2018 | [Office 365 Security and Compliance](/Office365/SecurityCompliance/index) | modificado |
-| 11/5/2018 | [Classificação de Segurança do Office 365](/Office365/SecurityCompliance/office-365-secure-score) | modificado |
-| 11/5/2018 | [Limpeza Automática Zero Hora – proteção contra spam e malware](/Office365/SecurityCompliance/zero-hour-auto-purge) | modificado |
+| 05/11/2018 | [Office 365 Security and Compliance](/Office365/SecurityCompliance/index) | modificado |
+| 05/11/2018 | [Classificação de Segurança do Office 365](/Office365/SecurityCompliance/office-365-secure-score) | modificado |
+| 05/11/2018 | [Limpeza Automática Zero Hora – proteção contra spam e malware](/Office365/SecurityCompliance/zero-hour-auto-purge) | modificado |
 | 11/6/2018 | [Como identificar o tipo de retenção de uma caixa de correio do Exchange Online](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | modificado |
 | 11/6/2018 | [Detalhes de referências técnicas sobre a criptografia no Office 365](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | modificado |
 | 8/11/2018 | [Definir regras de fluxo de email para criptografar mensagens de email no Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
-| 8/11/2018 | [Procurar conteúdo no Office 365](/Office365/SecurityCompliance/search-for-content) | modificado |
+| 8/11/2018 | [Procure conteúdo no Office 365](/Office365/SecurityCompliance/search-for-content) | modificado |
 | 8/11/2018 | [Office 365 ATP para SharePoint, OneDrive e Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | modificado |
 | 8/11/2018 | [O Office 365 ATP Safe anexos](/Office365/SecurityCompliance/atp-safe-attachments) | modificado |
 | 8/11/2018 | [Páginas de aviso do Office 365 ATP Links de seguros](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modificado |
@@ -215,3 +215,13 @@
 | 11/16/2018 | [Visão geral de políticas de retenção](/Office365/SecurityCompliance/retention-policies) | modificado |
 | 11/16/2018 | [Visão geral de rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) | modificado |
 | 11/16/2018 | [Use o Explorer na segurança &amp; Centro de conformidade](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modificado |
+
+
+## <a name="week-of-november-19-2018"></a>Semana de 19 de novembro de 2018
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 11/19/2018 | [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | modificado |
+| 11/19/2018 | [Habilitar o suplemento de Mensagem de relatório](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificado |
+| 20/11/2018 | [Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |

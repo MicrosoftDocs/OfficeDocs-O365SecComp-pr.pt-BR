@@ -3,7 +3,7 @@ title: Use o Explorer na segurança &amp; Centro de conformidade
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 11/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 description: Saiba mais sobre Explorer (também chamado de ameaça Explorer) na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 51228101ba75eb2d51b2594db50f679ff107ed46
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1b3088028651b445d890333a25804902843d915d
+ms.sourcegitcommit: 7f45890ecfa5e15575df4e3ebe472a8dd8d99112
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524635"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674916"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Use o Explorer na segurança &amp; Centro de conformidade
 
-Se sua organização tem [Inteligência de ameaça do Office 365](office-365-ti.md)e você tem as [permissões no Centro de conformidade de segurança do Office 365 e](permissions-in-the-security-and-compliance-center.md)de necessárias, você pode usar o Explorer para identificar e analisar as ameaças. Por exemplo, você pode identificar e excluir email mal-intencionado que foi entregue ou consulte malware que foi detectada pelos recursos de segurança do Office 365. Explorer (também conhecido como ameaça Explorer) é uma poderosa perto de relatório em tempo real na segurança &amp; Centro de conformidade.
+Se sua organização tem [Inteligência de ameaça do Office 365](office-365-ti.md)e você tem as permissões necessárias, você pode usar o Explorer para identificar e analisar as ameaças. Por exemplo, você pode identificar e excluir email mal-intencionado que foi entregue ou consulte malware que foi detectada pelos recursos de segurança do Office 365. Explorer (também conhecido como ameaça Explorer) é uma poderosa perto de relatório em tempo real na segurança &amp; Centro de conformidade.
   
 ![Vá para gerenciamento de ameaça \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -30,7 +30,7 @@ Para usar o Explorer, na segurança &amp; Centro de conformidade, vá para **ger
       
 ## <a name="explorer-overview"></a>Visão geral do Explorer
 
-Explorer exibe informações sobre suspeito malware em email e arquivos no Office 365, bem como outros ameaças de segurança e riscos à sua organização. Quando você abre o Explorer pela primeira vez, o modo de exibição padrão mostra detecções de malware do antivírus. Explorer também pode mostrar segurança recursos de proteção no Office 365, incluindo [Links seguros](atp-safe-links.md) e [Anexos seguros](atp-safe-attachments.md).
+Explorer exibe informações sobre suspeito malware em email e arquivos no Office 365, bem como outros ameaças de segurança e riscos à sua organização. Quando você abre o Explorer pela primeira vez, o modo de exibição padrão mostra detecções de malware de antivírus para dos últimos 7 dias. Explorer também pode mostrar segurança recursos de proteção no Office 365, incluindo [Links seguros](atp-safe-links.md) e [Anexos seguros](atp-safe-attachments.md) e pode ser modificado para mostrar os dados nos últimos 30 dias.
   
 ![Explorer mostra informações sobre malwares principais e usuários de destino](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
@@ -38,15 +38,63 @@ Use o menu Exibir para alterar quais informações serão exibidas.
   
 ![No menu Exibir para o Explorer](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-Explorer tem várias filtragem e consultas de recursos que permitem que você extrair para obter detalhes, como top destinadas aos usuários, malwares principais famílias e mais. Cada tipo de relatório oferece uma variedade de maneiras de exibir e explorar dados, conforme descrito na tabela a seguir.
-  
-|**Escolha esta opção**|**Para exibir estes dados**|
-|:-----|:-----|
-|**Email** \> **Malware** <br/> |Mensagens de email identificadas como contendo o malware.  <br/> Exibir informações no gráfico pela família de malware, domínio do remetente, IP do remetente, o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365) e tecnologia de detecção (como o malware foi detectado).  <br/> ![Exibir dados sobre detecções de malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)           <br/> O gráfico abaixo, exibir detalhes sobre malwares principais famílias, superior direcionadas usuários e mais detalhes sobre mensagens específicas.  <br/> |
-|**Email** \> **Phish** <br/> |Envie mensagens identificadas como tentativas de phishing.  <br/> Exibir informações de domínio do remetente, IP do remetente e o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365).  <br/> ![Exibir dados sobre email identificado como tentativas de phishing](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png)           <br/> O gráfico abaixo, exiba mais detalhes sobre mensagens específicas.  <br/> |
-|**Email** \> **Relatado pelo usuário** <br/> |Email que os usuários informados como lixo eletrônico, não lixo ou phishing de email.  <br/> Exibir informações por tipo de relatório (se o email foi lixo, não lixo ou phishing de determinação do usuário) e por motivo de entrega (motivos por que o email passou para um local específico, como uma política de filtro de spam, uma regra de fluxo de email, uma lista de remetentes bloqueados, uma lista de remetentes seguros, etc.).  <br/> ![Exibir dados sobre os usuários de email relatados como lixo eletrônico, não lixo ou phishing](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)           <br/> O gráfico abaixo, exiba mais detalhes sobre mensagens de email específica, como linha de assunto, o endereço IP do remetente, o usuário que relatou a mensagem como lixo eletrônico, não lixo eletrônico, ou phishing e mais.  <br/> |
-|**Email** \> **Todos os emails** <br/> |Um modo de exibição de todo o da atividade de email, incluindo email identificado como mal-intencionado devido ao phishing ou malware, como também todos os emails não mal-intencionados (email normal, spam e em massa email).  <br/> > [!NOTE]> Se você receber um erro que lê **demais quantidade de dados para exibir**, adicionar um filtro e, se necessário, restringir o intervalo de datas que você esteja visualizando. Para aplicar um filtro, escolha o **remetente**, selecione um item na lista e, em seguida, clique no botão Atualizar. No nosso exemplo, usamos a **tecnologia de detecção** como um filtro (há várias opções disponíveis).           Exibir informações por remetente, domínio do remetente, destinatários, assunto, nome de arquivo de anexo, família de malware, o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365), a tecnologia de detecção (como o malware foi detectado), e mais.<br/> ![Exibir dados sobre o e-mail detectado por tecnologia de detecção](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)           <br/> O gráfico abaixo, exiba mais detalhes sobre mensagens de email específica, como a linha de assunto, remetente, destinatário, status e assim por diante.  <br/> |
-|**Conteúdo** \> **Malware** <br/> |Arquivos que foram identificados como sendo maliciosas no SharePoint Online, o OneDrive for Business e Teams da Microsoft.  <br/> Exibir informações por tecnologia de detecção família, malware (como o malware foi detectado) e a carga de trabalho (OneDrive, SharePoint ou equipes).  <br/> ![Exibir dados sobre detecções de malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)           <br/> O gráfico abaixo, exiba mais detalhes sobre arquivos específicos, como nome de arquivo de anexo, a carga de trabalho, tamanho do arquivo, que modificou por último o arquivo e muito mais.  <br/> |
+Explorer tem várias filtragem e consultas de recursos que permitem que você extrair para obter detalhes, como top destinadas aos usuários, malwares principais famílias e mais. Cada tipo de relatório oferece uma variedade de maneiras de exibir e explorar dados.
+
+> [!IMPORTANT]
+> Não use caracteres curinga, como um asterisco (*) ou um ponto de interrogação (?), com o Explorer. Quando você pesquisa no campo assunto para mensagens de email, o Explorer executará correspondente e rendimento resultados parciais semelhantes a uma pesquisa com curinga.
+
+## <a name="email--malware"></a>Email \> Malware
+
+Esta exibição mostra as mensagens de email identificadas como contendo o malware.  
+
+Exibir informações no gráfico pela família de malware, domínio do remetente, IP do remetente, o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365) e tecnologia de detecção (como o malware foi detectado).  
+
+![Exibir dados sobre detecções de malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
+
+O gráfico abaixo, exibir detalhes sobre malwares principais famílias, superior direcionadas usuários e mais detalhes sobre mensagens específicas. 
+
+## <a name="email--phish"></a>Email \> Phish
+
+Esta exibição mostra as mensagens de email identificadas como tentativas de phishing.  
+
+Exibir informações de domínio do remetente, IP do remetente e o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365). 
+
+![Exibir dados sobre email identificado como tentativas de phishing](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
+
+O gráfico abaixo, exiba mais detalhes sobre mensagens específicas. 
+
+## <a name="email--user-reported"></a>Email \> relatado pelo usuário
+
+Esta exibição mostra o email que os usuários têm reportado como lixo eletrônico, não lixo eletrônico ou email de phishing.  
+
+Exibir informações por tipo de relatório (se o email foi lixo, não lixo ou phishing de determinação do usuário) e por motivo de entrega (motivos por que o email passou para um local específico, como uma política de filtro de spam, uma regra de fluxo de email, uma lista de remetentes bloqueados, uma lista de remetentes seguros, etc.).  
+
+![Exibir dados sobre os usuários de email relatados como lixo eletrônico, não lixo ou phishing](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
+
+O gráfico abaixo, exiba mais detalhes sobre mensagens de email específica, como linha de assunto, o endereço IP do remetente, o usuário que relatou a mensagem como lixo eletrônico, não lixo eletrônico, ou phishing e mais. 
+
+## <a name="email--all-mail"></a>Email \> todos os emails
+
+Este modos de exibição mostra um modo de exibição de todo o da atividade de email, incluindo email identificado como sendo maliciosas de vencimento phishing ou malware, também todas as mensagens não mal-intencionados (email normal, spam e em massa email). 
+
+> [!NOTE]
+> Se você receber um erro dizendo que lê **demais quantidade de dados para exibir**, adicionar um filtro e, se necessário, restringir o intervalo de datas que você esteja visualizando. 
+
+Para aplicar um filtro, escolha o **remetente**, selecione um item na lista e, em seguida, clique no botão Atualizar. No nosso exemplo, usamos a **tecnologia de detecção** como um filtro (há várias opções disponíveis). Exibir informações por remetente, domínio do remetente, destinatários, assunto, nome de arquivo de anexo, família de malware, o status de proteção (ações realizadas por seus recursos de proteção de ameaça e diretivas no Office 365), a tecnologia de detecção (como o malware foi detectado), e mais. 
+
+![Exibir dados sobre o e-mail detectado por tecnologia de detecção](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
+
+O gráfico abaixo, exiba mais detalhes sobre mensagens de email específica, como a linha de assunto, remetente, destinatário, status e assim por diante. 
+
+## <a name="content--malware"></a>Conteúdo \> Malware
+
+Este modo de exibição mostra os arquivos que foram identificados como mal-intencionados no SharePoint Online, o OneDrive for Business e Teams da Microsoft.
+
+Exibir informações por tecnologia de detecção família, malware (como o malware foi detectado) e a carga de trabalho (OneDrive, SharePoint ou equipes). 
+
+![Exibir dados sobre detecções de malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
+
+O gráfico abaixo, exiba mais detalhes sobre arquivos específicos, como nome de arquivo de anexo, a carga de trabalho, tamanho do arquivo, que modificou por último o arquivo e muito mais. 
   
 ## <a name="new-click-to-filter-capabilities"></a>(Novo)! Recursos de filtro de Click
 
@@ -70,7 +118,9 @@ A capacidade de filtrar um clique e navegue até detalhes específicos poderá p
   
 ## <a name="how-do-i-get-explorer"></a>Como posso obter Explorer?
 
-Explorer está incluída no [Office 365 Threat Intelligence](office-365-ti.md). Você deve ter apropriado [no Centro de conformidade de segurança do Office 365 e as permissões atribuídas](permissions-in-the-security-and-compliance-center.md), como administrador de segurança ou leitor de segurança, para exibir e usar o Explorer.
+Explorer está incluída no [Office 365 Threat Intelligence](office-365-ti.md). 
+
+Você deve ter as permissões apropriadas, como aquelas concedido a um administrador de segurança ou leitor de segurança, para exibir e usar o Explorer. Para saber mais, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
