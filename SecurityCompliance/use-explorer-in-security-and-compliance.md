@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 description: Saiba mais sobre Explorer (também chamado de ameaça Explorer) na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 1b3088028651b445d890333a25804902843d915d
-ms.sourcegitcommit: 7f45890ecfa5e15575df4e3ebe472a8dd8d99112
+ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674916"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699924"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Use o Explorer na segurança &amp; Centro de conformidade
 
