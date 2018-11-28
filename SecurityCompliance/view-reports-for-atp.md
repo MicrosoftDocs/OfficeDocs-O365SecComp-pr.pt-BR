@@ -3,6 +3,7 @@ title: Exibir relatórios de proteção de ameaça avançadas do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Saiba como encontrar e usar os relatórios para o Office 365 avançadas Threat Protection na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552329"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706315"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios de proteção de ameaça avançadas do Office 365
 
@@ -34,7 +35,7 @@ O relatório de **Status de proteção de ameaça** é um modo de exibição ún
 > [!NOTE]
 > Um relatório de Status de proteção de ameaça está disponível para clientes que possuem [ATP do Office 365](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); No entanto, as informações exibidas no relatório de Status de proteção de ameaça para clientes ATP provavelmente irá conter dados diferentes de quais clientes EOP podem ver. Por exemplo, o relatório de Status de proteção de ameaça para clientes ATP irá conter informações sobre [arquivos mal-intencionados detectada no SharePoint Online, OneDrive ou equipes da Microsoft](atp-for-spo-odb-and-teams.md). Tais informações serão específicas para ATP, portanto, os clientes que tenham o EOP, mas não ATP não verá os detalhes em seu relatório de Status de proteção de ameaça.
   
-Para exibir o relatório de Status de proteção de ameaça, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **O Status de proteção de ameaça**.
+Para exibir o relatório de Status de proteção de ameaça, no [segurança &amp; Centro de conformidade](https://security.microsoft.com), vá para **relatórios** \> **painel** \> **O Status de proteção de ameaça**.
   
 ![Relatório de Status de proteção de ameaça ATP](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ Você também pode usar o menu **Exibir dados por** alterar quais informações 
 
 O relatório de **Tipos de arquivo ATP** mostra o tipo de arquivos detectados como mal-intencionado por [ATP anexos de seguros](atp-safe-attachments.md).
   
-Para exibir este relatório, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **ATP tipos de arquivo**.
+Para exibir este relatório, no [segurança &amp; Centro de conformidade](https://security.microsoft.com), vá para **relatórios** \> **painel** \> **ATP tipos de arquivo**.
   
 ![Relatório de tipos de arquivo ATP](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ Quando você focaliza em um determinado dia, você pode ver a divisão dos tipos
 
 O relatório de **Disposição de mensagem ATP** mostra as ações que foram feitas para mensagens de email que foram detectadas como tendo conteúdo mal-intencionado. 
   
-Para exibir este relatório, na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel** \> **ATP disposição de mensagem**.
+Para exibir este relatório, no [segurança &amp; Centro de conformidade](https://security.microsoft.com), vá para **relatórios** \> **painel** \> **ATP disposição de mensagem**.
   
 ![Relatório de descarte de mensagens de ATP](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,12 +90,24 @@ Além dos relatórios de ATP descritos neste artigo, vários outros relatórios 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Quais permissões são necessárias para exibir os relatórios de ATP?
 
-Para exibir e usar os relatórios descritos neste artigo, você deve ter uma função apropriada atribuída na segurança &amp; Centro de conformidade e no Centro de administração do Exchange.
-  
-|**Default management role assignments for this role**|**Onde atribuído**|**Saiba mais**|
-|:-----|:-----|:-----|
-| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Administrador segurança  <br/>– Leitor de segurança  <br/> |Segurança &amp; Centro de conformidade  <br/> |[Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uma das seguintes opções:  <br/><br/>– Organization Management  <br/>– Gerenciamento da organização somente leitura  <br/>– Função destinatários somente para exibição  <br/>– Gerenciamento de conformidade do  <br/> |Centro de Administração do Exchange  <br/> |[Permissões de recursos no Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Para exibir e usar os relatórios descritos neste artigo, você deve ter uma função apropriada atribuída em ambos os a segurança &amp; Centro de conformidade e o Centro de administração do Exchange.
+
+- Para obter a segurança &amp; Centro de conformidade, você deve ter uma das seguintes funções atribuídas:
+    - Gerenciamento de Organização
+    - Administrador de segurança
+    - Leitor de segurança
+
+- Para o Exchange Online, você deve ter uma das seguintes funções atribuídas:
+    - Gerenciamento de Organização
+    - Gerenciamento de Organização Somente para Exibição
+    - Função de Destinatários Somente para Exibição
+    - Gerenciamento de Conformidade
+
+Para saber mais, consulte os seguintes recursos:
+
+- [Permissões de segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md)
+
+- [Permissões de recursos no Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se os relatórios não são mostrando dados?
 

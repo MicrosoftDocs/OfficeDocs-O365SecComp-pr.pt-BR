@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Crie relatórios com o Office 365 App segurança na nuvem que permitem que você entenda como pessoas da sua organização estiver usando o Office 365 e outros aplicativos.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523474"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706295"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Criar relatórios de descoberta de aplicativo usando o Office 365 Cloud App Security
 
@@ -44,7 +44,7 @@ Para criar um relatório de descoberta de aplicativo, você deve identificar a f
   
 1. Colete [logs de tráfego da web e fontes de dados para segurança de aplicativo de nuvem do Office 365](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
+2. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
     
 3. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     

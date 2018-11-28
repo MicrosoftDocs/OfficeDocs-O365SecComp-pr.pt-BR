@@ -3,7 +3,6 @@ title: Rastreadores de ameaças – novos e notáveis
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Saiba mais sobre rastreadores de ameaça, incluindo novos rastreadores notável, para ajudar sua organização mantenha-se na parte superior de preocupações de segurança.
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523950"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706375"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de ameaças – novos e notáveis
 
-[Office 365 Threat Intelligence](office-365-ti.md) permite que a equipe de segurança da sua organização descobrir e executar uma ação contra ameaças cybersecurity. **Que começando no tardia 2018 de março e sobre as próximas semanas, inteligência de dados do Office 365 ameaça incluirá novos recursos de ameaça Tracker**, incluindo rastreadores notável. Leia este artigo para obter uma visão geral dos novos recursos e próximas etapas. 
+[Office 365 Threat Intelligence](office-365-ti.md) permite que a equipe de segurança da sua organização descobrir e executar uma ação contra ameaças cybersecurity. Começando no tardia de 2018 de março e sobre próximas semanas, inteligência de dados do Office 365 ameaça incluirá novos recursos de ameaça Tracker, incluindo rastreadores notável. Leia este artigo para obter uma visão geral dos novos recursos e próximas etapas. 
   
 ## <a name="what-are-threat-trackers"></a>Cite rastreadores de ameaça.
 
@@ -36,7 +35,7 @@ A maioria das páginas tracker incluir números de tendências que são atualiza
   
 Rastreadores são apenas alguns dos muitos excelentes recursos que você obtém com [Inteligência de dados do Office 365 ameaça](office-365-ti.md). Quando estiver disponível, o seu novo rastreadores de ameaça incluirá [rastreadores notável](threat-trackers.md#notey), [rastreadores de tendência](threat-trackers.md#trending), [acompanhados consultas](threat-trackers.md#trackedq)e [Saved consultas](threat-trackers.md#savedq).
   
-Para exibir e usar sua rastreadores de ameaça quando ele estiver disponível para sua organização, vá para a segurança &amp; Centro de conformidade ([https://protection.office.com](https://protection.office.com)) e escolha **gerenciamento de ameaça** \> **tracker de ameaça**.
+Para exibir e usar sua rastreadores de ameaça quando ele estiver disponível para sua organização, vá para a segurança &amp; Centro de conformidade ([https://security.microsoft.com](https://security.microsoft.com)) e escolha **gerenciamento de ameaça** \> **tracker de ameaça**.
   
 > [!NOTE]
 > Para usar rastreadores de ameaça, você deve ser um administrador global do Office 365, o administrador de segurança ou leitor de segurança. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). 
@@ -75,7 +74,7 @@ Se você estiver revisando email, conteúdo ou atividades do Office (em breve), 
   
 Quando rastreadores de ameaça estão disponíveis para você, tente-las - e lembre-se de que você pode sempre nos fornecer comentários neste ou em outros recursos de segurança do Office 365 clicando no botão **Feedback** no canto inferior direito do [Visão geral do Office 365 Segurança &amp; Centro de conformidade](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Segurança do Office 365 &amp; Centro de conformidade](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Centro de Conformidade do &amp;Office 365 Security](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores e Office 365 proteção avançada
 

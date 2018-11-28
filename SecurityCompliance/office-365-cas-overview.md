@@ -3,7 +3,6 @@ title: Visão geral do Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Segurança de aplicativo de nuvem do Office 365 oferece ideias sobre atividades suspeitas no Office 365 para que você possa investigar situações em que são potencialmente problemáticas e, se necessário, execute uma ação para solucionar problemas de segurança. '
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523781"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706395"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Visão geral do Office 365 Cloud App Security
   
@@ -40,13 +39,9 @@ Segurança de aplicativo de nuvem do Office 365 oferece percepção atividades s
   
 Você pode obter o portal de segurança de aplicativo de nuvem do Office 365 através de segurança do Office 365 &amp; Centro de conformidade. Aqui está uma boa maneira de fazê-la:
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
     
-2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**. 
-    
-    ![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    (Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
+2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**. <br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
     
 3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**. 
     

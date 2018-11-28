@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Aprenda a habilitar o suplemento de mensagem de relatório para o Outlook e Outlook na web, para usuários individuais ou em toda sua organização.
-ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618917"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706365"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de relatório
 
@@ -59,7 +59,7 @@ Como o próximo passo, Aprenda como [usar o suplemento de mensagem de relatório
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obter e habilitar o suplemento de mensagem de relatório para sua organização
 
 > [!IMPORTANT]
-> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa. Além disso, o Exchange deve ser configurado para usar a autenticação OAuth para saber mais, consulte [requisitos do Exchange (centralizados implantação dos suplementos)](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
+> Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para completar esta tarefa. Além disso, o Exchange deve ser configurado para usar a autenticação OAuth para saber mais, consulte [requisitos do Exchange (centralizados implantação dos suplementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
 
 1. Ir para a [página de suplementos & serviços](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no Centro de administração do Microsoft 365 novo.<br/>![Página de serviços e suplementos no novo Microsoft 365 Admin Center](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
@@ -92,7 +92,7 @@ Dependendo do que você selecionou usando o assistente, pessoas da sua organiza�
   
 Você pode configurar uma regra para obter uma cópia das mensagens de email relatado pelos usuários em sua organização. Isso é feito depois que você baixou e habilitou o suplemento de mensagem de relatório para sua organização.
   
-1. No EAC, selecione o **fluxo de email** \> **regras**. 
+1. No Centro de administração do Exchange, escolha **fluxo de emails** \> **regras**. 
     
 2. Escolha **+** \> **criar uma nova regra**. 
     

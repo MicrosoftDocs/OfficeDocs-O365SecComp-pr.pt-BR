@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Saiba como configurar uma agenda para um relatório na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552349"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706015"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade
 
@@ -29,7 +29,7 @@ Na segurança &amp; Centro de conformidade, vários [relatórios e ideias](repor
 > [!IMPORTANT]
 > Verifique se você tem as permissões necessárias para executar essa tarefa. Em geral, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem acessar relatórios na segurança &amp; Centro de conformidade. Para saber mais sobre permissões, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
   
-1. Na segurança &amp; Centro de conformidade, vá para **relatórios** \> **painel**.
+1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), vá para **relatórios** \> **painel**.
     
 2. Escolha um relatório. Nesse exemplo, iremos escolher o relatório de Status de proteção de ameaça.
     

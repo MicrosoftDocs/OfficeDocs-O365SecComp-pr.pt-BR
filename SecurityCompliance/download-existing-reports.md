@@ -13,30 +13,29 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Aprenda a fazer o download de um ou mais relatórios existentes na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 0d176917d6591fa5b37c4db1e9bd0dfc761d670d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9d27f61a88cd42a4808879686605a4c4eb796d4
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524041"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706325"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Baixar relatórios existentes na segurança &amp; Centro de conformidade
 
-Na segurança &amp; Centro de conformidade, vários [relatórios e ideias](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização atenuar e tratar ameaças à sua organização. Se você for um membro da equipe de segurança da sua organização, você pode baixar um ou mais relatórios existentes. 
+No [segurança &amp; Centro de conformidade](https://security.microsoft.com), vários [relatórios e ideias](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização atenuar e tratar ameaças à sua organização. Se você for um membro da equipe de segurança da sua organização, você pode baixar um ou mais relatórios existentes. 
   
 ## <a name="download-existing-reports"></a>Baixar relatórios existentes
 
 > [!IMPORTANT]
 > Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). Em geral, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem acessar relatórios na segurança &amp; Centro de conformidade. 
   
-1. Na segurança &amp; Centro de conformidade, vá para **relatórios** \> **relatórios para baixar**.
+1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), vá para **relatórios** \> **relatórios para baixar**.
     
 2. Selecione um ou mais itens na lista.
     
 3. Clique em **baixar relatório**e clique em **Fechar**.
     
 ## <a name="related-topics"></a>Tópicos relacionados
-<a name="download"> </a>
 
 [Relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md)
   

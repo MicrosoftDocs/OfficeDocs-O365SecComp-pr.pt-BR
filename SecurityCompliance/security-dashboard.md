@@ -3,7 +3,7 @@ title: Visão geral do painel de segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Use o novo painel de segurança para examinar o Status de proteção de ameaça do Office 365 e exibir e agir em alertas de segurança.
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552359"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706275"
 ---
 # <a name="security-dashboard-overview"></a>Visão geral do painel de segurança
 
-A segurança &amp; Centro de conformidade permite que sua organização gerenciar a conformidade e proteção de dados. Início em março de 2018, a segurança &amp; um novo painel de segurança, você pode usar para examinar o seu Status de proteção de ameaça e exibir e agir em alertas de segurança dos recursos do Centro de conformidade. 
+O [segurança &amp; Centro de conformidade](go-to-the-securitycompliance-center.md) permite que sua organização gerenciar a conformidade e proteção de dados. Início em março de 2018, a segurança &amp; um novo painel de segurança, você pode usar para examinar o seu Status de proteção de ameaça e exibir e agir em alertas de segurança dos recursos do Centro de conformidade. 
   
 Assista ao vídeo para obter uma visão geral e, em seguida, leia este artigo para saber mais.
   
@@ -41,7 +41,7 @@ Dependendo de qual inclui assinatura do Office 365 da sua organização, o paine
 Para exibir o painel de segurança, na [a segurança do Office 365 &amp; Centro de conformidade](go-to-the-securitycompliance-center.md), vá para o **gerenciamento de ameaça** \> **painel**.
   
 > [!NOTE]
-> Você deve ser um Office 365 administrador global, administrador de segurança ou leitor de segurança para exibir o painel de segurança. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). 
+> Você deve ser um administrador global do Office 365, um administrador de segurança ou um leitor de segurança para exibir o painel de segurança. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-protection-status"></a>Status de proteção de ameaça
 

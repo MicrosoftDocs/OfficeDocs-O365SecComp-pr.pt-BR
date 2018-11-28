@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: Saiba como você pode ir de um painel para um insight com ações recomendadas na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524443"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706145"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Passo a passo – de um painel para um insight
 
@@ -30,7 +30,7 @@ Essa é uma das diversas orientações para a segurança &amp; Centro de conform
 
 Vamos examinar o fluxo de um painel para um relatório para um insight e a ação. (Isto é um exemplo breve [intelligence falso](learn-about-spoof-intelligence.md) ). 
   
-1. Começamos com o painel de segurança na segurança &amp; Centro de conformidade. (Vá para **gerenciamento de ameaça** \> **Dashboard**.)
+1. Começamos com o painel de segurança no [segurança &amp; Centro de conformidade](https://security.microsoft.com). (Vá para **gerenciamento de ameaça** \> **Dashboard**.)
     
     ![Na segurança &amp; Centro de conformidade, escolha gerenciamento de ameaça \> painel](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

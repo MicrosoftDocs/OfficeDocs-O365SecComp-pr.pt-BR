@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Políticas de detecção de anomalias na segurança de aplicativo do Office 365 nuvem usam algoritmos internos para ajudar a descobrir possíveis problemas. Você deve ter a política de detecção de anomalia pelo menos um, que você pode ajustar (quando você criá-lo) usando filtros. '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524637"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706335"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Políticas de detecção de anomalias no Office 365 Cloud App Security
 
@@ -51,7 +51,7 @@ Verifique se:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Exibir suas políticas de detecção de anomalia
 
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     
@@ -67,7 +67,7 @@ Verifique se:
   
 5. Selecione uma política para analisar ou editar suas configurações.
     
-6. Escolha **Update** para salvar suas alterações. 
+6. Selecione **Atualizar** para salvar as alterações. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Saiba mais sobre políticas de detecção de anomalia
 
@@ -93,7 +93,7 @@ A tabela a seguir descreve as políticas de detecção de anomalia padrão, o qu
 
 À medida que chegam alertas, você pode triagem esses alertas rapidamente e determinar quais devem lidar com pela primeira vez. Ter o contexto de um alerta permite que você consulte panorama e determine se algo mal-intencionado está acontecendo na verdade. Use o procedimento a seguir para dar início a explorando um alerta:
   
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     
@@ -118,7 +118,6 @@ A tabela a seguir descreve as políticas de detecção de anomalia padrão, o qu
 Um alerta em vários logins com falha de fato ser suspeito e pode indicar um ataque de força bruta potencial. No entanto, um alerta tal também pode ser um erro de configuração de aplicativo, fazendo com que o alerta para ser um positivo true benigno. Se você vir um alerta de logons falhou múltiplo com atividades suspeitas adicionais, há uma probabilidade maior que uma conta for comprometida. Por exemplo, suponha que um alerta de login falhou múltiplo é seguido por atividade de um endereço IP TOR e viagens impossíveis de atividade, ambos os indicadores fortes de comprometimento. Você ainda pode ver que o mesmo usuário realizada uma atividade de download em massa, que é geralmente um indicador do invasor executando exfiltration de dados. Ele do coisas como o que você pode explorar na segurança do aplicativo de nuvem do Office 365 visualizar e triagem os alertas e agir onde for necessário.
   
 ## <a name="next-steps"></a>Próximas etapas
-<a name="nextsteps"> </a>
 
 - [Integrar seu servidor SIEM](integrate-your-siem-server-with-office-365-cas.md)
     

@@ -5,7 +5,6 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: 2fce043aaf6e5e844415bd0caaaded8d30c18291
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238452"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706085"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
-[Links de seguros ATP](atp-safe-links.md) , um recurso de [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) pode ajudar a proteger sua organização contra mal-intencionado links usados em phishing e outros ataques. Se você tiver o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md), você pode configurar políticas de Links de seguros ATP para ajudar a garantir que, quando as pessoas clicarem endereços da web (URLs), sua organização seja protegida. Suas políticas de Links de seguros ATP podem ser configuradas para examinar URLs em email e em documentos do Office.
+[Links de seguros ATP](atp-safe-links.md) , um recurso de [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP) pode ajudar a proteger sua organização contra mal-intencionado links usados em phishing e outros ataques. Se você tiver o necessário [permissões para a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md), você pode configurar políticas de Links de seguros ATP para ajudar a garantir que, quando as pessoas clicarem endereços da web (URLs), sua organização seja protegida. Suas políticas de Links de seguros ATP podem ser configuradas para examinar URLs em email e em documentos do Office.
   
 [Novos recursos são adicionados constantemente a ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp). Como os novos recursos são adicionados, você pode precisar fazer ajustes em suas políticas de Links de seguros ATP existentes.
 
@@ -52,13 +51,11 @@ ms.locfileid: "26238452"
 
 Quando você tem [A proteção de ameaça avançadas do Office 365](office-365-atp.md), você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. Certifique-se de revisar e, se necessário, editar sua política padrão.
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
+1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No painel de navegação esquerdo, em **gerenciamento de ameaça**, escolha **política \> ** **Links seguros**.
     
-3. Na seção **políticas que se aplicam a toda a organização** , selecione **padrão**e, em seguida, escolha **Editar** (no botão Editar se parece com um lápis). 
-    
-    ![Clique em Editar para editar sua política padrão para a proteção de Links de seguros](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. Na seção **políticas que se aplicam a toda a organização** , selecione **padrão**e, em seguida, escolha **Editar** (no botão Editar se parece com um lápis).<br/>![Clique em Editar para editar sua política padrão para a proteção de Links de seguros](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. Na seção **bloquear as seguintes URLs** , especifique uma ou mais URLs que você deseja evitar que as pessoas na sua organização do visitando. (Consulte [Configurar uma lista de URLs bloqueada personalizada usando Links de seguros ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md)).
     
@@ -70,7 +67,7 @@ Quando você tem [A proteção de ameaça avançadas do Office 365](office-365-a
 
 Depois de ter analisado (ou editados) a política de Links de seguros ATP padrão que se aplica a todos, sua próxima etapa é definir políticas adicionais que seriam se aplicam a destinatários específicos. Por exemplo, você pode especificar exceções à diretiva padrão definindo uma política adicional. 
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
+1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No painel de navegação esquerdo, em **gerenciamento de ameaça**, escolha **uma política**.
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Defina políticas de atividade com segurança de aplicativo do Office 365 nuvem para configurar alertas para disparar quando atividades específicas acontecem ou acontecer muito frequentemente. Configurando políticas para acionar os alertas, você pode ser notificado sobre e monitora atividades específicas.
-ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272366"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706465"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Políticas de atividades e alertas no Office 365 Cloud App Security
 
@@ -47,7 +47,7 @@ Verifique se:
     
 ## <a name="create-a-new-activity-policy"></a>Criar uma nova política de atividade
 
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     

@@ -1,9 +1,8 @@
 ---
-title: Proteção contra ameaças do Office 365
+title: Proteja-se contra ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496845"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706055"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças do Office 365
+# <a name="protect-against-threats-in-office-365"></a>Proteja-se contra ameaças do Office 365
 
 Com o Office 365 Enterprise, você pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados. Use os recursos nesta página para saber mais sobre a proteção contra ameaças e ações que podem ser realizadas.
   
@@ -28,11 +27,11 @@ Com o Office 365 Enterprise, você pode ajudar a proteger sua organização cont
 
 Se você estiver usando um domínio personalizado no Office 365, ajudam interromper fraude remetente da sua organização, melhorar a segurança de email e proteger reputação do seu domínio.
   
-- [Impedir a falsificação de SPF](https://go.microsoft.com/fwlink/?linkid=851943)
+- [Impedir a falsificação de SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
     
-- [Validar emails de saída com DKIM](https://go.microsoft.com/fwlink/?linkid=851944)
+- [Validar emails de saída com DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
     
-- [Validar emails com DMARC](https://go.microsoft.com/fwlink/?linkid=832951)
+- [Validar emails com DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
     
 ## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; antimalware
 
@@ -40,11 +39,11 @@ Saiba mais sobre a pontuação de anti-spam do Office 365, a filtragem de conex�
   
 - [Anti-spam &amp; proteção antimalware](anti-spam-and-anti-malware-protection.md)
     
-- [Ativar o log de email](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [Ativar o log de email]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
     
 - [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md)
     
-- [Enviar conteúdo suspeito à Microsoft](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [Enviar conteúdo suspeito à Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
     
 ## <a name="advanced-threat-protection"></a>Proteção Avançada contra Ameaças
 
@@ -58,7 +57,7 @@ Configure diretivas para gerenciar a falsificação, proteger contra ataques de 
     
 - [Configurar as políticas de Links seguros de ATP](set-up-atp-safe-links-policies.md)
     
-- [Configurar uma política de Anexos seguros de ATP](set-up-atp-safe-attachments-policies.md)
+- [Configurar uma política de Anexos Seguros de ATP](set-up-atp-safe-attachments-policies.md)
     
 ## <a name="encryption"></a>Criptografia
 

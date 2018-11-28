@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de segurança do Office 365 de ameaça &amp; Centro de conformidade
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Use o gerenciamento de ameaça para ajudar a controlar e gerenciar o acesso de dispositivo móvel aos dados da sua organização, para ajudar a proteger sua organização contra perda de dados e ajudar a proteger mensagens de entrada e saídas contra spam e softwares mal-intencionados. Você também pode usar threat management para proteger a reputação do seu domínio e para determinar se ou não os remetentes são falsificação de modo mal-intencionado contas do seu domínio.
-ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 6aac4e7c3af0f1d2b7adc767f696653252674e6a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552399"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706425"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Gerenciamento de segurança do Office 365 de ameaça &amp; Centro de conformidade
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 Use o gerenciamento de ameaça para ajudar a controlar e gerenciar o acesso de dispositivo móvel aos dados da sua organização, para ajudar a proteger sua organização contra perda de dados e ajudar a proteger mensagens de entrada e saídas contra spam e softwares mal-intencionados. Você também pode usar threat management para proteger a reputação do seu domínio e para determinar se ou não os remetentes são falsificação de modo mal-intencionado contas do seu domínio.
   
@@ -31,7 +31,7 @@ No Office 365, use a segurança &amp; Centro de conformidade para gerenciar as a
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. No painel esquerdo, selecione **gerenciamento de ameaça**.
     
@@ -39,7 +39,7 @@ No Office 365, use a segurança &amp; Centro de conformidade para gerenciar as a
   
  **Para ir para a segurança &amp; Centro de conformidade usando o iniciador de aplicativo do Office 365:**
   
-1. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+1. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 2. Selecione o iniciador app ![ícone do iniciador de aplicativo no Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo de canto e selecione o **segurança &amp; conformidade** lado a lado. 
     

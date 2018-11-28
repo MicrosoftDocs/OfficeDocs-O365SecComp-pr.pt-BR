@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c93d9ab9-efb2-4349-9b93-30c30562ee22
 description: Microsoft Intune e gerenciamento de dispositivos móveis internos para o Office 365 proporcionam a capacidade de gerenciar dispositivos móveis em sua organização. Mas há diferenças fundamentais, como descritas neste tópico.
-ms.openlocfilehash: 339399e2e518c22fa9f0f7482fc527990f1a8541
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 03def8ea26c0cdfcb4782f2168840e6a15bd6606
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523520"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706005"
 ---
 # <a name="choose-between-mdm-for-office-365-and-microsoft-intune"></a>Escolher entre MDM para o Office 365 e Microsoft Intune
 
@@ -34,7 +34,7 @@ Microsoft Intune e gerenciamento de dispositivos móveis internos para o Office 
 |:-----|:-----|:-----|
 |**Área de recurso** <br/> |**MDM para Office 365** <br/> |**Microsoft Intune** <br/> |
 |Cost  <br/> |Incluído com muitos assinaturas comerciais do Office 365.  <br/> |Requer uma assinatura paga para Microsoft Intune ou pode ser adquirido com pacote de mobilidade do Enterprise.  <br/> |
-|Como você gerencia dispositivos  <br/> |Gerenciar dispositivos usando o [Ir para a segurança do Office 365 &amp; Centro de conformidade](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) Office 365.  <br/> |Se você usar Intune por si só, você gerencia dispositivos usando o console de administração Intune.  <br/> Se você integre Intune System Center Configuration Manager 2012, use o console do Configuration Manager para gerenciar dispositivos local e na nuvem.  <br/> |
+|Como você gerencia dispositivos  <br/> |Gerenciar dispositivos usando o [a segurança do Office 365 &amp; Centro de conformidade](https://security.microsoft.com) Office 365.  <br/> |Se você usar Intune por si só, você gerencia dispositivos usando o console de administração Intune.  <br/> Se você integre Intune System Center Configuration Manager 2012, use o console do Configuration Manager para gerenciar dispositivos local e na nuvem.  <br/> |
 |Você pode gerenciar de dispositivos  <br/> |Gerenciamento baseado em nuvem para iOS, Android e Windows dispositivos  <br/> |Baseado em nuvem gerenciamento para iOS, Mac OS X, Android, Windows 8.1 (telefone e PC) ou posterior para incluir Windows 10. <br/> |
 |Principais recursos  <br/> |Ajuda a garantir que documentos e emails corporativos do Office 365 podem ser acessados apenas em telefones e tablets que são gerenciados por sua empresa e que são compatíveis com suas diretivas de TI.  <br/> Definir e gerenciar políticas de segurança, como o pin de nível lock e jailbreak detecção do dispositivo, para ajudar a impedir que usuários não autorizados acessem email corporativo e dados em um dispositivo quando ele for perdido ou roubado.  <br/> Remova o Office 365 dados da empresa do dispositivo de um funcionário, deixando os seus dados pessoais no lugar.  <br/> Detalhes são incluídos nos [recursos de gerenciamento de dispositivos móveis internos para o Office 365](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0).  <br/> |MDM para recursos do Office 365, mais:  <br/> Ajuda os usuários acessarem o recurso corporativo com certificados, Wi-Fi, VPN e perfis de email.  <br/> Registrar e gerenciar conjuntos de dispositivos pertencentes corporativo, simplificando a implantação de política e app.  <br/> Implante seus aplicativos de linha de negócios internos e armazena os aplicativos para os usuários.  <br/> Permitir que os usuários acessem com mais segurança informações corporativas, usando o Office mobile e linha de negócios apps souberem, garantindo a segurança dos dados, ajudando a restringir ações copiar, colar recortado,, como e salvar como, apenas estes aplicativos gerenciados por Intune.  <br/> Habilite a navegação mais seguro da web usando o app Intune gerenciados navegador.  <br/> Gerenciar PCs da nuvem com nenhuma infra-estrutura necessária usando Intune ou conecte Intune até o Configuration Manager para gerenciar todos os seus dispositivos, incluindo PCs, Macs, Linux e UNIX servidores e dispositivos móveis de um console de gerenciamento único.  <br/> Uma assinatura Intune também permite que você defina as políticas do MAM (gerenciamento de aplicativos móveis) usando o portal do Azure, mesmo se os dispositivos de pessoas não estão inscritos no Intune. Consulte a [proteger os dados de aplicativo usando diretivas MAM](https://go.microsoft.com/fwlink/?LinkId=825439).<br/> |
 

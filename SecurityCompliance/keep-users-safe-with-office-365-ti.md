@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: Saiba como inteligência de ameaça do Office 365 pode ajudar sua organização a detecção de invasão e ameaças e rapidamente atenuar e recuperar contra ameaças.
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524611"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706095"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Mantenha os usuários do Office 365 protegidos com a Inteligência Contra Ameaças do Office 365
 
- *Você sabe que os usuários do Office 365 estão sob ataque ou pior - comprometida? Para saber como atenuar e recuperar contra ataques que estão direcionando seus usuários? Você sabia que você pode fazer exatamente isso com os recursos de segurança que já estão disponíveis no Office 365?* 
+## <a name="overview"></a>Visão geral
+
+Você sabe que os usuários do Office 365 estão sob ataque ou pior - comprometida? Para saber como atenuar e recuperar contra ataques que estão direcionando seus usuários? Você sabia que você pode fazer exatamente isso com os recursos de segurança que já estão disponíveis no Office 365? 
   
 [Inteligência de dados do Office 365 ameaça](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 E5. O Office 365 ameaça inteligência ajudou Microsoft IT reduzir o tempo médio de resolução de incidentes de engenharia social, 80% e taxa de transferência aumentada maiusculas em 37% por mês em comparação com 2 últimos trimestres! 
   
@@ -30,9 +32,9 @@ Recentemente, adicionamos novos recursos para ajudar a melhorar a como você pod
   
 ## <a name="detect-intrusions-and-threats"></a>Detecção de invasão e ameaças
 
-O **Office 365 ameaça Explorer** ajuda os administradores de segurança e os analistas identificam e entender as ameaças que estão ativas em sua empresa, porque o mesmo as configurações de segurança mais complexas podem ser seja contornadas por configurações de usuário aparentemente inofensiva como white lists de remetentes seguros. Explorer de ameaça ajuda a global do Office 365 ou administradores de segurança rapidamente determinam se os usuários tenham sido comprometidos por ameaças como malware ou de phishing. Isso ajuda a priorizar quais usuários estão mais em risco de uma ameaça e a resposta do requisito. 
+[Explorer](use-explorer-in-security-and-compliance.md) (também conhecido como ameaça Explorer) ajuda os administradores de segurança e os analistas identificar e entender as ameaças que estão ativas em sua empresa, porque o mesmo as configurações de segurança mais complexas podem ser seja contornadas por configurações de usuário aparentemente inofensiva como seguros white lists do remetente. Office 365 global de Ajuda do Explorer ou administradores de segurança rapidamente determinam se os usuários tenham sido comprometidos por ameaças como malware ou de phishing. Isso ajuda a priorizar quais usuários estão mais em risco de uma ameaça e a resposta do requisito. 
   
-Explorer de ameaça também ajuda administradores navegar pelas relações entre usuários e email. Saber de um email específico que era ruim? Procure por ele ver quais usuários recebeu o email, siga a série de eventos e ver o que esses usuários por sua vez tenham feito.
+Explorer também ajuda administradores navegar pelas relações entre usuários e email. Saber de um email específico que era ruim? Procure por ele ver quais usuários recebeu o email, siga a série de eventos e ver o que esses usuários por sua vez tenham feito.
 
 Se você ainda não tiver inteligência de ameaça, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [aprender mais sobre o Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
   

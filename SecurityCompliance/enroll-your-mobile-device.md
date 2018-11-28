@@ -15,18 +15,18 @@ search.appverid:
 - MBS150
 ms.assetid: c8ac722d-dcaf-4135-8345-3e6327f5d3c5
 description: Antes de poder usar serviços do Office 365 com o seu dispositivo, talvez seja necessário que você siga estas etapas para se inscrever em gerenciamento de dispositivos móveis para o Office 365 (MDM). Você fazer isso quando você adiciona seu trabalho ou escola a conta de email para seu dispositivo pela primeira vez.
-ms.openlocfilehash: 63e4052d42007d97928f158a704beb9721758a44
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 0584309770cb978a5051bc84082de6e6be0b989e
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272296"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706345"
 ---
 # <a name="enroll-your-mobile-device-in-office-365"></a>Inscrever seu dispositivo móvel no Office 365
 
 Usando seu telefone, tablet e outros dispositivos móveis para o trabalho é uma ótima maneira permaneçam informados e trabalhar em projetos de negócios enquanto você estiver fora do escritório. Antes de poder usar serviços do Office 365 com o seu dispositivo, talvez seja necessário primeiro registrar-se-lo no gerenciamento de dispositivos móveis para o Office 365 (MDM) usando o Portal do Microsoft Intune empresa.
   
-Organizações escolhem MDM para que os funcionários possam usar seus dispositivos móveis para acessar com segurança o email de trabalho, calendários e documentos enquanto a empresa protege dados importantes e atende aos seus requisitos de conformidade. [Saiba mais sobre MDM no Office 365](https://go.microsoft.com/fwlink/?LinkId=615142).
+Organizações escolhem MDM para que os funcionários possam usar seus dispositivos móveis para acessar com segurança o email de trabalho, calendários e documentos enquanto a empresa protege dados importantes e atende aos seus requisitos de conformidade. [Saiba mais sobre MDM no Office 365](https://support.office.com/article/overview-of-mobile-device-management-mdm-for-office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
   
 > [!IMPORTANT]
 > Quando você registrar seu dispositivo no MDM para o Office 365, você talvez precise configurar uma senha, junto com permitindo a opção para sua organização de trabalho para apagar o dispositivo. Uma limpeza de dispositivo pode ser executada (a partir do Centro de administração do Office 365), por exemplo, para remover todos os dados do dispositivo, se a senha for digitada incorretamente muitas vezes ou termos de uso serão desfeitos. 
@@ -46,7 +46,7 @@ MDM e InTune funciona com a maioria dos, mas nem todos os dispositivos móveis. 
 Se o dispositivo não estiver listado acima, e você precisa usá-lo com MDM e Intune, contate o administrador de trabalho ou da escola.
   
 > [!TIP]
-> Se você estiver tendo problemas inscrevendo seu dispositivo, consulte: [Troubleshoot o registro do dispositivo com o MDM para o Office 365](troubleshoot-mdm.md). 
+> Se você estiver tendo problemas inscrevendo seu dispositivo, consulte: [Troubleshoot o registro do dispositivo com o MDM para o Office 365](https://support.office.com/article/Troubleshoot-device-enrollment-with-MDM-for-Office-365-c863b2bf-45f3-483a-ba05-29fc7f4d6434). 
   
 ## <a name="set-up-your-mobile-device-with-intune-and-mdm-for-office-365"></a>Configurar o seu dispositivo móvel com Intune e MDM para Office 365
 
@@ -55,20 +55,12 @@ O Portal da empresa Intune permite que um dispositivo a serem gerenciados pelo O
 ### <a name="iphone-or-ipad"></a>iPhone ou iPad
 
 > [!TIP]
-> Você não poderá enviar e receber emails, até que você conclua esta etapa. 
-  
-> Vá para o repositório de App Apple, baixe e instale o Intune Portal da empresa.
-    
-> [Siga estas etapas para configurar e se conectar](https://go.microsoft.com/fwlink/?linkid=875316) seu telefone iOS ou tablet com o portal de empresa para o Office 365. 
+> Você não poderá enviar e receber emails, até que você conclua esta etapa. Vá para o repositório de App Apple, baixe e instale o **Intune Portal da empresa**. Consulte [Configurar o acesso de dispositivo iOS aos seus recursos de empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios). 
     
 ### <a name="android-phone-or-tablet"></a>Telefone Android ou tablet
 
 > [!TIP]
-> Você não poderá enviar e receber emails, até que você conclua esta etapa. 
-  
-> Vá para o repositório do Google Play, baixe e instale o Intune Portal da empresa.
-    
-> [Siga estas etapas para configurar e se conectar](https://go.microsoft.com/fwlink/?linkid=875317) seu telefone Android ou tablet com o portal de empresa para o Office 365. 
+> Você não poderá enviar e receber emails, até que você conclua esta etapa. Vá para o repositório do Google Play, baixe e instale o Intune Portal da empresa. Consulte [registrar seu dispositivo Android no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). 
     
 ## <a name="whats-next"></a>Qual é a próxima
 

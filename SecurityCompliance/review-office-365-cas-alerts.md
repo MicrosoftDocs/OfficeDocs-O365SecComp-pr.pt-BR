@@ -3,7 +3,6 @@ title: Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use a página alertas na segurança de aplicativo de nuvem do Office 365 para exibir possíveis problemas e executar ação. Você pode descartar ou resolver alertas e, se necessário, suspender uma conta de usuário.
-ms.openlocfilehash: 62431adc73354e573978781f120a11746aef08d9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523443"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706115"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
   
@@ -33,17 +32,13 @@ Você pode usar a página alertas na segurança de aplicativo de nuvem do Office
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Como chegar à página de alertas
 
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     
-3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.
-    
-    ![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.<br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Na barra de navegação na parte superior da tela, escolha **alertas**.
-    
-    ![Na página alertas, você pode ver os alertas que foram acionados e quaisquer ações tomadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+4. Na barra de navegação na parte superior da tela, escolha **alertas**.<br/>![Na página alertas, você pode ver os alertas que foram acionados e quaisquer ações tomadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Revisão e a alça de alertas
 

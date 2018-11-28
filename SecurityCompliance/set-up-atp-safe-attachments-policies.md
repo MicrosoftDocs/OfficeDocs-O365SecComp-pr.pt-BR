@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Defina políticas de anexos seguros para proteger sua organização contra arquivos maliciosos no email.
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238403"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706065"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos do Office 365 ATP seguros
 
@@ -35,7 +35,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
 
 - Certifique-se de que sua organização tenha [A proteção de ameaça avançadas do Office 365](office-365-atp.md).
     
-- Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+- Certifique-se de que você tenha o necessário [permissões para a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
     
 - [Saiba mais sobre as opções de política de anexos de seguros ATP](#learn-about-atp-safe-attachments-policy-options) (neste artigo). Algumas opções, como as opções de Monitor ou substituir, podem resultar em um atraso secundário de email, enquanto os anexos são examinados. Para evitar atrasos de mensagem, considere o uso [dinâmico de entrega e de visualização](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +43,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Etapa 2: Configurar uma política de anexos de seguros ATP (ou editar uma)
   
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No Office 365 Security &amp; Centro de conformidade, no painel de navegação à esquerda, em **gerenciamento de ameaça**, escolha **política** \> **Anexos seguros**.
     
@@ -51,9 +51,7 @@ Pessoas regularmente enviar, receber e compartilhe anexos, como documentos, apre
     
 4. Escolha **novo** (botão novo se parece com um sinal de adição ( **+**)) para começar a criar sua política.
     
-5. Especifique o nome, descrição e configurações para a política.
-    
-    **Exemplo:** Para configurar uma política denominada "sem atrasos", o que fornece mensagens de todos os participantes imediatamente e, em seguida, anexa novamente anexos depois que eles são verificados, você pode especificar as configurações a seguir: 
+5. Especifique o nome, descrição e configurações para a política.<br/><br/>**Exemplo:** Para configurar uma política denominada "sem atrasos", o que fornece mensagens de todos os participantes imediatamente e, em seguida, anexa novamente anexos depois que eles são verificados, você pode especificar as configurações a seguir: 
     
       - Na caixa **nome** , digite sem atrasos.
     

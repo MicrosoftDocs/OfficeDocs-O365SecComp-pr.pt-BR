@@ -3,7 +3,7 @@ title: Classificação de Segurança do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 11/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Já se perguntou como seguro sua organização realmente esteja no Office 365? Pontuação segura está aqui para ajudar. Pontuação segura analisa a segurança da sua organização com base nas suas atividades regulares e configurações de segurança no Office 365 e atribui uma pontuação.
-ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999985"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706175"
 ---
 # <a name="office-365-secure-score"></a>Classificação de Segurança do Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "25999985"
 
 Se sua organização tiver uma assinatura que inclui o [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)ou Business Premium do Office 365 e você tem as permissões necessárias, você pode exibir a pontuação da organização seguro visitando [https://securescore.office.com](https://securescore.office.com). 
 
-Como alternativa, você pode visitar o Centro de conformidade e segurança ([https://protection.office.com](https://protection.office.com)), onde você encontrará um widget pontuação seguro que fornece com sua pontuação atual.
+Como alternativa, você pode visitar o Centro de conformidade e segurança ([https://security.microsoft.com](https://security.microsoft.com)), onde você encontrará um widget pontuação seguro que fornece com sua pontuação atual.
 
 ![Widget da pontuação de seguro](media/SecureScoreWidget-o365.png)
 
@@ -65,8 +65,6 @@ Usar pontuação seguro ajuda a aumentar a segurança da sua organização por e
   
 Mas não apenas se o nosso word para ele. Clientes que utilizam o Secure pontuação vimos seus pontuação aumentar a cinco vezes maior em relação a clientes que não são utilizá-lo. (O aumento de seus pontuação corresponde com os recursos de segurança que está sendo usados em suas organizações.)
   
-Confira o nosso [postagem de blog](https://go.microsoft.com/fwlink/?linkid=836898) para saber mais. 
-  
 > [!NOTE]
 > Pontuação segura não expressa uma medida absoluta de como provavelmente você devem obter violado. Ele expressa a extensão ao qual você adotaram controles que podem deslocar o risco de ser violado. Nenhum serviço pode garantir que você não vai ser violado e pontuação seguro não deve ser interpretada como uma garantia de nenhuma maneira. 
   
@@ -74,7 +72,7 @@ Confira o nosso [postagem de blog](https://go.microsoft.com/fwlink/?linkid=83689
 
 ### <a name="who-can-use-secure-score"></a>Quem pode usar pontuação seguro?
 
-Qualquer pessoa que tenha permissões de administrador (administrador global ou uma função personalizada admin) para uma assinatura do Office 365 Enterprise, Microsoft 365 Business ou Office 365 Business Premium pode acessar seguro pontuação no [https://securescore.office.com](https://securescore.office.com). Usuários que não estão atribuídos a uma função de administrador não conseguirá acessar pontuação seguro. No entanto, os administradores podem usar a ferramenta para compartilhar seus resultados com outras pessoas em suas organizações. Estamos examinando incluindo outras, funções de não-administrador na lista de permissões no futuro. Se houver funções específicas que você gostaria que nós a serem considerados, fale pelo lançamento no [segurança do Office, privacidade &amp; comunidade de conformidade](https://go.microsoft.com/fwlink/?linkid=836898).
+Qualquer pessoa que tenha permissões de administrador (administrador global ou uma função personalizada admin) para uma assinatura do Office 365 Enterprise, Microsoft 365 Business ou Office 365 Business Premium pode acessar seguro pontuação no [https://securescore.office.com](https://securescore.office.com). Usuários que não estão atribuídos a uma função de administrador não conseguirá acessar pontuação seguro. No entanto, os administradores podem usar a ferramenta para compartilhar seus resultados com outras pessoas em suas organizações. Estamos examinando incluindo outras, funções de não-administrador na lista de permissões no futuro. Se houver funções específicas que você gostaria que nós a serem considerados, fale pelo lançamento no [segurança do Office, privacidade &amp; comunidade de conformidade](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy).
   
 ### <a name="what-does-not-scored-mean"></a>O que significa [não avaliados] significa?
 
@@ -108,7 +106,7 @@ Nós queremos saber a sua opinião. Envie suas ideias sobre o [segurança do Off
   
 ### <a name="something-isnt-working-right-who-should-i-contact"></a>Algo não está funcionando direito. Quem posso contatar?
 
-Se você tiver quaisquer problemas, informe-pelo lançamento no [segurança do Office, privacidade &amp; comunidade de conformidade](https://go.microsoft.com/fwlink/?linkid=836898). Estamos monitorando da comunidade e fornecerá a Ajuda.
+Se você tiver quaisquer problemas, informe-pelo lançamento no [segurança do Office, privacidade &amp; comunidade de conformidade](hhttps://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy). Estamos monitorando da comunidade e fornecerá a Ajuda.
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Minha organização tem apenas alguns recursos de segurança. Isso afeta minha pontuação?
 

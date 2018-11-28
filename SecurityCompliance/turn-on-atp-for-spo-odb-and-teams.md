@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Saiba como ativar ATP para o SharePoint, OneDrive e equipes, incluindo como configurar alertas para arquivos detectados.
-ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: e9df56da5d5f1a087d4e75e0122b51933ae7b315
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699934"
+ms.locfileid: "26706445"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
 
@@ -29,7 +29,7 @@ Para executar as tarefas descritas neste artigo, você deve ter as permissões n
 
  **Antes de começar esse procedimento, certifique-se de que os logs de auditoria já esteja ativado para o seu ambiente do Office 365**. Normalmente, isso é feito por alguém que tenha a função de Logs de auditoria atribuída no Exchange Online. Para obter mais informações, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md).
   
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com)e entre com sua conta do trabalho ou da escola.
+1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com)e entre com sua conta do trabalho ou da escola.
     
 2. No Office 365 Security &amp; Centro de conformidade, no painel de navegação à esquerda, em **gerenciamento de ameaça**, escolha **política** \> **Anexos seguros**. <br/>![Na segurança &amp; Centro de conformidade, escolha gerenciamento de ameaça \> política](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
@@ -55,7 +55,7 @@ Para saber mais sobre a experiência do usuário quando um arquivo foi detectado
 
 Para receber uma notificação quando um arquivo no SharePoint Online, OneDrive para negócios ou Microsoft Teams tenha sido identificado como mal-intencionado, você pode configurar um alerta.
   
-1. No Office 365 Security &amp; Centro de conformidade, escolha **alertas** \> **Gerenciar alertas**.
+1. Na [a segurança do Office 365 &amp; Centro de conformidade](https://security.microsoft.com), escolha **alertas** \> **Gerenciar alertas**.
     
 2. Escolha **nova política de alerta**.
     

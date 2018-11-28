@@ -3,7 +3,6 @@ title: Analisar descobertas de aplicativos do Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Analisar relatórios de descoberta de aplicativo no gerenciamento de segurança avançadas pode ajudá-lo a saber mais sobre como as pessoas na sua organização usam aplicativos na nuvem. Depois de criar relatórios de descoberta de aplicativo usando os arquivos de log de seus firewalls e proxies, revise os resultados no painel de descoberta do aplicativo.
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523461"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706255"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Analisar descobertas de aplicativos do Office 365 Cloud App Security
   
@@ -36,9 +35,7 @@ O painel de descoberta de nuvem trabalha com logs de tráfego da web para fornec
 
 1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
     
-2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
-    
-    (Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
+2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.<br/>(Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
     
 3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.
     
@@ -70,21 +67,11 @@ Você pode usar a descoberta de nuvem para dar uma olhada mais aprofundada em ap
     
 2. Use a seção filtros para exibir aplicativos pelo nome, categoria, nível de uso ou data da última Vista.
     
-3. Na lista de resultados, passe o mouse por um nome de aplicativo para revelar o link **Exibir subdomínios** . 
+3. Na lista de resultados, passe o mouse por um nome de aplicativo para revelar o link **Exibir subdomínios** .<br/> ![Passe o mouse ao lado de um aplicativo para revelar um link para exibir detalhes do subdomínio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Informações detalhadas sobre o aplicativo selecionado serão exibida.
     
-    ![Passe o mouse ao lado de um aplicativo para revelar um link para exibir detalhes do subdomínio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    Informações detalhadas sobre o aplicativo selecionado serão exibida.
+4. Para exibir detalhes sobre os endereços IP, escolha a guia de **endereços IP** .<br/>![Descoberta de nuvem mostra informações detalhadas sobre endereços IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Na lista de resultados, selecione um endereço IP individual para exibir informações mais detalhadas.
     
-4. Para exibir detalhes sobre os endereços IP, escolha a guia de **endereços IP** . 
-    
-    ![Descoberta de nuvem mostra informações detalhadas sobre endereços IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    Na lista de resultados, selecione um endereço IP individual para exibir informações mais detalhadas.
-    
-5. Para exibir detalhes sobre os usuários do Office 365 dentro da sua organização, escolha a guia de **usuários** . 
-    
-    ![Descoberta de nuvem - info de usuários](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Para exibir detalhes sobre os usuários do Office 365 dentro da sua organização, escolha a guia de **usuários** .<br/>![Descoberta de nuvem - info de usuários](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>Excluir entidades
 
@@ -98,7 +85,7 @@ Você pode excluir determinados usuários do sistema ou endereços IP para focal
     
 4. Especificar os usuários ou os endereços IP e, na caixa **comentários** , digite as informações sobre por que você está excluindo a esses usuários ou endereços IP. 
     
-5. Selecione **Adicionar**.
+5. Escolha **Adicionar**.
     
 ## <a name="next-steps"></a>Próximas etapas
 

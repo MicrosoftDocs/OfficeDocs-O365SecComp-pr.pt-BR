@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238383"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26705975"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
 
@@ -29,13 +29,11 @@ Este artigo descreve como especificar uma lista das URLs que são excluídos da 
 
 Proteção de Links de seguros ATP usa várias listas, incluindo a lista de URLs bloqueios da sua organização e as listas de "não regravação" para exceções. Se você tiver as permissões necessárias, você pode configurar suas listas de "não regravação" personalizado. Você fazer isso quando você adicionar ou editar políticas de seguros Links que se aplicam a destinatários específicos na sua organização. 
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
+1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No painel de navegação esquerdo, em **gerenciamento de ameaça** \> **política** \> **Links seguros**.
     
-3. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (botão novo se parece com um sinal de adição ( **+**)) para criar uma nova política. (Como alternativa, você pode editar uma política existente).
-    
-    ![Escolha Novo para adicionar uma diretiva de segurança Links para os destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (botão novo se parece com um sinal de adição ( **+**)) para criar uma nova política. (Como alternativa, você pode editar uma política existente).<br/>![Escolha Novo para adicionar uma diretiva de segurança Links para os destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 4. Especifique um nome e descrição para a diretiva.
     

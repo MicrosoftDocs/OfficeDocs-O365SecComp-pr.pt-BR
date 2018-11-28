@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: Integre a proteção de ameaça avançadas do Office 365 Windows Defender avançada proteção contra ameaças para ver as informações mais detalhadas de gerenciamento de ameaça.
-ms.openlocfilehash: 574594d5881853b268713e0bb74444ae80ffcf46
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523764"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706135"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrar a Inteligência Contra Ameaças do Office 365 com a Proteção Avançada contra Ameaças do Windows Defender
 
@@ -34,7 +34,7 @@ Neste exemplo, você pode ver que os destinatários da mensagem de email têm qu
 
 - Sua organização deve ter inteligência de ameaça do Office 365 e Windows Defender ATP.
     
-- Você deve ser um administrador global do Office 365 ou ter uma função de administrador de segurança atribuída na segurança &amp; Centro de conformidade. (Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md))
+- Você deve ser um administrador global do Office 365 ou ter uma função de administrador de segurança atribuída no [segurança &amp; Centro de conformidade](https://security.microsoft.com). (Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md))
     
 - Você deve ter acesso ao Office 365 Threat Intelligence e o portal do Windows Defender ATP.
     
@@ -42,7 +42,7 @@ Neste exemplo, você pode ver que os destinatários da mensagem de email têm qu
 
 Integrando o Office 365 Threat Intelligence com Windows Defender ATP é configurado no Office 365 e no portal do Windows Defender ATP.
   
-1. Como um global do Office 365 ou um administrador de segurança, vá para [https://portal.office.com](https://portal.office.com) e entre com sua conta de trabalho ou da escola para o Office 365. 
+1. Como um global do Office 365 ou um administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta de trabalho ou da escola para o Office 365. 
     
 2. Escolha **gerenciamento de ameaça** \> **explorer de ameaça**.
     
