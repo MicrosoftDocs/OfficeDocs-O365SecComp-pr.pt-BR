@@ -265,6 +265,7 @@
 ## [Integração com o servidor SIEM](siem-server-integration.md)
 
 # Soluções de conformidade
+## [Introdução ao Portal de Confiança do Serviço Microsoft](get-started-with-service-trust-portal.md)
 ## [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Gerenciar solicitações de titulares de dados RGPD com a ferramenta de ocorrência de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Proteção de informações do Office 365 para o RGPD](office-365-information-protection-for-gdpr.md)
