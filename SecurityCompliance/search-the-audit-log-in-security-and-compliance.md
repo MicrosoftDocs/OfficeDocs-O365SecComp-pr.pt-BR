@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o Centro de conformidade & segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
-ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
+ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26626147"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118137"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar no log de auditoria no Centro de conformidade & segurança do Office 365
 
@@ -169,7 +169,7 @@ Aqui é o processo para pesquisar o log de auditoria no Office 365.
   
     c. resultados para mais **os usuários** clicam nesta caixa e selecione um ou mais usuários para exibir a pesquisa. As entradas do log de auditoria da atividade selecionada executadas pelos usuários que você selecionar nesta caixa são exibidas na lista de resultados. Deixe esta caixa em branco para retornar as entradas para todos os usuários (e contas de serviço) em sua organização. 
     
-    d. **arquivo ou pasta** digite parte ou todo um nome de arquivo ou pasta para procurar a atividade relacionada ao arquivo da pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de que o tipo o caminho completo do URL, ou se você digitar apenas uma parte da URL, não inclua quaisquer caracteres especiais ou espaços. 
+    d. **site, arquivo ou pasta,** digite parte ou todo um nome de arquivo ou pasta para procurar a atividade relacionada ao arquivo da pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de que o tipo o caminho completo do URL, ou se você digitar apenas uma parte da URL, não inclua quaisquer caracteres especiais ou espaços. 
     
     Deixe esta caixa em branco para retornar as entradas para todos os arquivos e pastas em sua organização.
     
