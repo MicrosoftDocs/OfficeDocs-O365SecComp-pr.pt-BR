@@ -233,6 +233,7 @@
 ## [Ativar ou desativar a pesquisa de log de auditoria](turn-audit-log-search-on-or-off.md)
 ## [Habilitar a auditoria de caixa de correio](enable-mailbox-auditing.md)
 ## [Propriedades detalhadas no log de auditoria](detailed-properties-in-the-office-365-audit-log.md)
+## [Usar o log de auditoria para solucionar problemas de cenários comuns](auditing-troubleshooting-scenarios.md)
 ## [Usar a auditoria de compartilhamento no log de auditoria](use-sharing-auditing.md)
 ## [Procurar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Monitorar a segurança e a conformidade]()
