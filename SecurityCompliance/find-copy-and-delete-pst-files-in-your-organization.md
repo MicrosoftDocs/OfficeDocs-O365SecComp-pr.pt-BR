@@ -3,7 +3,7 @@ title: Usar a ferramenta de conjunto de PST para localizar, copiar e excluir arq
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use a ferramenta de conjunto de PST do Microsoft para pesquisar a rede da sua organização para fazer um inventário dos arquivos PST que estão espalhados por toda a sua organização. Depois de localizar arquivos PST, você pode usar a ferramenta de conjunto de PST para copiá-los em um local central para importá-los para o Office 365.
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038124"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154207"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar a ferramenta de conjunto de PST para localizar, copiar e excluir arquivos PST em sua organização
+
+> [!IMPORTANT]
+> A ferramenta de conjunto de PST descrita neste artigo não é suportada em qualquer serviço ou programa de suporte padrão da Microsoft. A ferramenta é fornecida como está sem qualquer garantia. Microsoft também se isenta de todas as garantias implícitas incluindo, sem limitações, qualquer implícitas de comercialização ou adequação a uma finalidade específica. O risco decorrente do uso ou o desempenho do ferramenta e da documentação permanece com você. Em nenhuma hipótese Microsoft, seus autores ou qualquer pessoa else envolvidas na criação, produção ou entrega da ferramenta será responsável por quaisquer danos (incluindo, sem limitação, danos por perda de lucros cessantes, perda de informações comerciais ou outras perdas PECUNIÁRIAS) decorrente do uso ou incapacidade de usar a ferramenta ou documentação, mesmo que a Microsoft tenha sido informada da possibilidade de tais danos.
 
 Você pode usar a ferramenta Microsoft PST Collection para pesquisar a rede da sua organização para arquivos PST. A ferramenta ajuda você a obter um inventário dos arquivos PST que estão espalhados por toda a sua organização. Depois de localizar arquivos PST, você pode usar a ferramenta de conjunto de PST para copiá-los em um local central. Tendo PSTs em um local e permite que você importá-los para o Exchange Online caixas de correio (ou uma única caixa de correio Exchange Online), onde você pode então aplicar o rico conjunto de recursos de conformidade no Office 365. Isso inclui importando PSTs para arquivo morto contém caixas de correio, procurar mensagens específicas nos arquivos PST que você importou usando as ferramentas de pesquisa de descoberta eletrônica, retenção de mensagens usando a descoberta eletrônica e políticas de retenção do Office 365 dos usuários e gerenciando a vida ciclo dessas mensagens usando a mensagens registra os recursos de gerenciamento no Exchange Online. Depois que você estiver confiante de que os arquivos PST que você coletou foram importados com êxito para o Office 365, você pode usar a ferramenta para excluí-los a partir de seu local original em sua rede. 
   
