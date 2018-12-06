@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como um administrador, você pode exibir, liberar e relatar mensagens em quarentena falso positivas no Office 365. Você pode configurar políticas para que o Office 365 filtra mensagens e as envia para colocar em quarentena por vários motivos: porque eles foram identificados como spam, em massa, phishing, malware ou porque elas correspondem a uma regra de fluxo de email. '
-ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
-ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
+ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018875"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180881"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -65,8 +65,7 @@ Após localizar uma determinada mensagem em quarentena, clique na mensagem para 
 
 1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global na sua organização do Office 365, faça logon no Office 365 e [vá para o Centro de conformidade e segurança](go-to-the-securitycompliance-center.md).
     
-2. À esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **quarentena**. 
-    
+2. À esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **quarentena**. <br/>
     > [!TIP]
     > Para ir diretamente para a página de **quarentena** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
@@ -83,36 +82,27 @@ Dependendo das suas configurações, pode haver muita mensagens em quarentena e 
   
 1. Na página de **quarentena** , certifique-se de que a linha superior de filtros está definida como exibir mensagens ou arquivos conforme apropriado: 
     
-  - Para pesquisar arquivos, configure os filtros para mostrar os **arquivos** em quarentena devido a **malware**.
-    
+      - Para pesquisar arquivos, configure os filtros para mostrar os **arquivos** em quarentena devido a **malware**.<br/>
     Para arquivos em quarentena, a página exibe arquivos tudo em quarentena, não apenas sua própria, independentemente do que você dizer equipe de TI para mostrar.
     
-  - Para pesquisar mensagens em quarentena, definir filtros para mostrar **tudo** ou **apenas meu** **email**. Para o último filtro escolher o tipo de mensagem em quarentena que você está procurando. Você pode pesquisar mensagens em quarentena que foram identificadas como **spam**, para mensagens que correspondem a um fluxo de email ou **regra de transporte**, email **em massa** , email de **phishing** ou emails que contenham **malware**.
+      - Para pesquisar mensagens em quarentena, definir filtros para mostrar **tudo** ou **apenas meu** **email**. Para o último filtro escolher o tipo de mensagem em quarentena que você está procurando. Você pode pesquisar mensagens em quarentena que foram identificadas como **spam**, para mensagens que correspondem a um fluxo de email ou **regra de transporte**, email **em massa** , email de **phishing** ou emails que contenham **malware**.
     
-2. Em **resultados de classificar por**, selecione o filtro ou os filtros que você deseja usar para pesquisar nas listas suspensas. As opções variam com base em se você estiver procurando por arquivos ou mensagens. Curingas não são suportados nos campos de pesquisa neste momento.
+2. Em **resultados de classificar por**, selecione o filtro ou os filtros que você deseja usar para pesquisar nas listas suspensas. As opções variam com base em se você estiver procurando por arquivos ou mensagens. Curingas não são suportados nos campos de pesquisa neste momento.<br/><br/>Para arquivos e mensagens, você pode optar por filtrar pela data da mensagem ou arquivo foi enviado para quarentena. Você pode especificar a data ou um intervalo de datas, incluindo o tempo. Você também pode filtrar os resultados de pesquisa pela data de validade no qual o arquivo ou a mensagem será excluída da quarentena, ou você pode usar uma combinação de filtros. Para pesquisar por data de expiração, escolha **filtro avançado**. Em **expira**, você pode selecionar mensagens que serão excluídas da quarentena dentro das próximas 24 horas ( **hoje**) dentro das próximas 48 horas ( **próximo 2 dias**), na próxima semana ( **próximo 7 dias**), ou você pode selecionar um intervalo de tempo personalizada.<br/><br/>Para mensagens, você tem as seguintes opções adicionais:
     
-    Para arquivos e mensagens, você pode optar por filtrar pela data da mensagem ou arquivo foi enviado para quarentena. Você pode especificar a data ou um intervalo de datas, incluindo o tempo. Você também pode filtrar os resultados de pesquisa pela data de validade no qual o arquivo ou a mensagem será excluída da quarentena, ou você pode usar uma combinação de filtros. Para pesquisar por data de expiração, escolha **filtro avançado**. Em **expira**, você pode selecionar mensagens que serão excluídas da quarentena dentro das próximas 24 horas ( **hoje**) dentro das próximas 48 horas ( **próximo 2 dias**), na próxima semana ( **próximo 7 dias**), ou você pode selecionar um intervalo de tempo personalizada.
+      - **ID da mensagem**. Use esta opção para identificar uma mensagem específica quando você souber a ID de mensagem.<br/><br/>Por exemplo, se uma mensagem específica é enviada pelo ou destinada a um usuário em sua organização, mas nunca atingiu seu destino, você pode pesquisar a mensagem usando um rastreamento da mensagem (consulte [executar um rastreamento da mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para quarentena, talvez porque ele corresponde a uma regra de fluxo de email ou foi identificado como spam, você pode, em seguida, facilmente encontrar essa mensagem em quarentena especificando seu ID de mensagem. Certifique-se de incluir a cadeia de caracteres de ID de mensagem completa. Isso pode incluir colchetes angulares (\<\>), por exemplo:<br/>
+    `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
-    Para mensagens, você tem as seguintes opções adicionais:
+      - **Endereço de email do remetente**. Escolha esta opção para filtrar por um endereço de email do remetente único. 
     
-  - **ID da mensagem**. Use esta opção para identificar uma mensagem específica quando você souber a ID de mensagem. 
+      - **Endereço de email do destinatário**. Escolha esta opção para filtrar por um endereço de email do destinatário único. 
     
-    Por exemplo, se uma mensagem específica é enviada pelo ou destinada a um usuário em sua organização, mas nunca atingiu seu destino, você pode pesquisar a mensagem usando um rastreamento da mensagem (consulte [executar um rastreamento da mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para quarentena, talvez porque ele corresponde a uma regra de fluxo de email ou foi identificado como spam, você pode, em seguida, facilmente encontrar essa mensagem em quarentena especificando seu ID de mensagem. Certifique-se de incluir a cadeia de caracteres de ID de mensagem completa. Isso pode incluir colchetes angulares (\<\>), por exemplo:
-    
-    \<79239079-D95A-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
-    
-  - **Endereço de email do remetente**. Escolha esta opção para filtrar por um endereço de email do remetente único. 
-    
-  - **Endereço de email do destinatário**. Escolha esta opção para filtrar por um endereço de email do destinatário único. 
-    
-  - **Assunto**. Insira o assunto de um endereço de email que você deseja localizar. Desde que não há suporte para a pesquisa de caractere curinga, você deve usar o assunto da mensagem inteiro na ordem de pesquisa para retornar a mensagem nos resultados da. A pesquisa não diferencia maiusculas de minúsculas. 
+      - **Assunto**. Insira o assunto de um endereço de email que você deseja localizar. Desde que não há suporte para a pesquisa de caractere curinga, você deve usar o assunto da mensagem inteiro na ordem de pesquisa para retornar a mensagem nos resultados da. A pesquisa não diferencia maiusculas de minúsculas. 
     
 ## <a name="view-details-about-quarantined-messages-and-files"></a>Exibir detalhes sobre mensagens em quarentena e arquivos
-<a name="BKMK_ViewDetails"> </a>
 
 Quando você seleciona um item exibido na lista de quarentena, você verá um resumo das suas propriedades no painel de **detalhes** no lado direito da segurança &amp; Centro de conformidade. 
   
- **Detalhes exibidas para mensagens em quarentena**
+**Detalhes exibidas para mensagens em quarentena**
   
 - **ID da mensagem**. O identificador exclusivo para a mensagem. 
     
@@ -198,8 +188,7 @@ Você pode configurar quanto tempo mensagens e arquivos permanecerão em quarent
 
 1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global na sua organização do Office 365, faça logon no Office 365 e [vá para o Centro de conformidade e segurança](go-to-the-securitycompliance-center.md).
     
-2. À esquerda, expanda **Gerenciamento de ameaça**, escolha **política**e escolha **anti-spam**. 
-    
+2. À esquerda, expanda **Gerenciamento de ameaça**, escolha **política**e escolha **anti-spam**. <br/>
     > [!TIP]
     > Para ir diretamente para a página de **antispam** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   

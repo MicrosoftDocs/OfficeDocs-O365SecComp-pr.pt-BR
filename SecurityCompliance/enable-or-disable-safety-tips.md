@@ -3,7 +3,7 @@ title: Habilitar ou desabilitar dicas de segurança no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Informa os administradores do Office 365 e o EOP como habilitar e desabilitar dicas de segurança em mensagens de email.
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524157"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180851"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar ou desabilitar dicas de segurança no Office 365
 
@@ -36,9 +36,9 @@ Neste tópico:
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>Para ativar ou desativar dicas de segurança usando a segurança do Office 365 &amp; Centro de conformidade
 <a name="SandCCsafetytip"> </a>
 
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 com sua conta corporativa ou de estudante.
+2. Entre no Office 365 com a sua conta corporativa ou de estudante.
     
 3. Escolha **gerenciamento de ameaça** \> **política**. 
     
@@ -75,7 +75,7 @@ Os administradores podem usar o PowerShell do Exchange Online para habilitar ou 
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    Onde:
+Onde:
     
   -  *nome da política* é o nome da política que deseja modificar, por exemplo **padrão**.
     
@@ -89,9 +89,9 @@ Os administradores podem usar o PowerShell do Exchange Online para habilitar ou 
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    Para obter mais informações sobre esse cmdlet, consulte [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Para obter mais informações sobre esse cmdlet, consulte [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
-## <a name="still-need-help"></a>Precisa de mais ajuda?
+## <a name="still-need-help"></a>Ainda precisa de ajuda?
 <a name="pshellsafetytip"> </a>
 
 Se desabilitada dicas de segurança, mas são ainda vê-las em suas mensagens de email, verifique esses aspectos:

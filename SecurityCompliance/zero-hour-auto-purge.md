@@ -3,7 +3,7 @@ title: Limpeza Automática Zero Hora – proteção contra spam e malware
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999966"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180841"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza Automática Zero Hora – proteção contra spam e malware
 
 ## <a name="overview"></a>Visão geral
 
-Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
+Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com malware, spam ou phishing que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado; email pode ser zapped devido ao conteúdo de email, URLs ou anexos.
   
 ZAP está disponível com o Exchange Online Protection for incluído com qualquer assinatura do Office 365 que contenha caixas de correio Exchange Online padrão.
 
@@ -39,7 +39,11 @@ ZAP está ativado por padrão, mas as condições a seguir devem ser atendidas:
 ## <a name="how-does-zap-work"></a>Como funciona o ZAP?
 
 Atualizações de assinaturas de mecanismo e malware antispam do Office 365 em tempo real em uma base diária. No entanto, os usuários ainda podem obter mal-intencionado mensagens entregues a suas caixas de entrada para uma variedade de motivos, incluindo se o conteúdo é aproveitado depois de ser entregue aos usuários. Apagar tudo isso por meio do monitoramento continuamente atualiza e as assinaturas do Office 365 spam e malware de endereços. ZAP pode encontrar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários. 
+
 - Para email que é identificado como spam, ZAP move mensagens não lidas para a pasta Lixo eletrônico dos usuários. 
+
+- Para email que é identificado como spam, ZAP move mensagens para a pasta de lixo eletrônico dos usuários, independentemente se o email foi lido.
+
 - Para malware detectado recentemente, ZAP remove anexos das mensagens de email, independentemente se o email foi lido. 
   
 A ação ZAP é perfeita para o usuário de caixa de correio; eles não são notificados se uma mensagem de email for movida.
@@ -49,8 +53,11 @@ Permitir listas, [regras de fluxo de correio](https://go.microsoft.com/fwlink/p/
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar ou definir uma política de filtro de spam
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365.
+
 2. Em **gerenciamento de ameaça**, escolha **anti-spam**.
+
 3. Revise as configurações padrão. 
+
 4. Se desejar personalizar suas configurações, selecione a guia **personalizada** e ativar **configurações personalizadas**. Editar suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova diretiva. 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP movida sua mensagem
