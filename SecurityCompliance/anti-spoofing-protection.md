@@ -3,7 +3,7 @@ title: Proteção antifalsificação no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artigo descreve como Office 365 reduz contra ataques de phishing que usa falsificado domínios do remetente, ou seja, os domínios que são falsificados. Ele realiza isso analisando as mensagens e bloquear aqueles que podem ser autenticados neithe usando os métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing organizações no Office 365 estão expostas a.
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194712"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -302,17 +302,17 @@ Ao contrário de uma política que você criar, você não pode excluir a polít
   
 ![Detalhes da política padrão AntiPhishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Mais tarde, em 2018, para configurar sua proteção padrão por meio do PowerShell:
+Para configurar sua proteção padrão por meio do PowerShell:
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 Você deve desativar proteção antifalsificação somente se você tiver servidores na frente do Office 365 ou outro servidor de email (consulte legítimos cenários para desabilitar antifalsificação para obter mais detalhes). 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,7 +412,7 @@ Organizações que usam o Exchange Online, com ou sem ATP, podem especificar qua
   
 Em geral, a diretiva aplicada a uma mensagem é identificada no cabeçalho X-Forefront-Antispam-Report na propriedade CAT (categoria). 
   
-|**Priority**|**Política**|**Categoria**|**Onde gerenciadas?**|**Aplica-se a**|
+|**Prioridade**|**Política**|**Categoria**|**Onde gerenciadas?**|**Aplica-se a**|
 |:-----|:-----|:-----|:-----|:-----|
 |1   <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
 |2   <br/> |Phishing  <br/> |PHSH  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
@@ -425,7 +425,7 @@ Em geral, a diretiva aplicada a uma mensagem é identificada no cabeçalho X-For
    
 Se você tiver vários diferentes políticas AntiPhishing, aquele com a prioridade mais alta serão aplicadas. Por exemplo, suponha que você tem duas políticas:
   
-|**Política**|**Priority**|**Representação de domínio do usuário**|**Antifalsificação**|
+|**Política**|**Prioridade**|**Representação de domínio do usuário**|**Antifalsificação**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1   <br/> |Ativado  <br/> |Desativado  <br/> |
 |B  <br/> |2   <br/> |Desligado  <br/> |Em  <br/> |
