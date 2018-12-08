@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportar resultados da pesquisa de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para um computador local. Resultados de email Emaill são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Exporte resultados da pesquisa de uma pesquisa de conteúdo no Centro de conformidade & segurança do Office 365 para um computador local. Resultados de email são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539113"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201575"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar resultados da pesquisa de conteúdo no Centro de conformidade a segurança do Office 365
 
@@ -333,3 +333,5 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
 - Todos os resultados de pesquisa e os relatórios de exportação são incluídos em uma pasta que tem o mesmo nome que a pesquisa de conteúdo. As mensagens de email que foram exportadas estão localizadas em uma pasta denominada **Exchange**. Documentos estão localizados em uma pasta chamada **SharePoint**. 
     
 - Os metadados do sistema de arquivo para documentos no SharePoint e OneDrive para sites corporativos é mantido quando os documentos são exportados para o computador local. Que significa propriedades do documento, como criado e modificado pela última vez datas, não é alterado quando os documentos são exportados.
+
+- Se os resultados de pesquisa incluam um item de lista do SharePoint que corresponde à consulta de pesquisa, todas as linhas na lista serão exportadas além do item que corresponde à consulta de pesquisa. Isso inclui todos os anexos na lista. O motivo para isso é fornecer um contexto para os itens de lista que são retornados nos resultados da pesquisa. Observe também que os itens de lista adicionais e os anexos podem causar a contagem de itens exportados seja diferente a estimativa original dos resultados da pesquisa.

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: 67652fc11a42263b2666554021c018df01ad33cd
-ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
+ms.openlocfilehash: 13af2ae96d8c4cbf363e1273a3d1ed5fb9be2077
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871999"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201565"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -88,11 +88,11 @@ Para cada domínio para o qual você deseja adicionar uma assinatura de DKIM no 
 Use o seguinte formato para os registros CNAME:
   
 ```
-Host name:          selector1._domainkey.<domain>
+Host name:          selector1._domainkey
 Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
 
-Host name:          selector2._domainkey.<domain>
+Host name:          selector2._domainkey
 Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
 ```
@@ -112,20 +112,20 @@ Em que:
 Por exemplo, se você tiver o domínio inicial cohovineyardandwinery.onmicrosoft.com e dois domínios personalizados, cohovineyard.com e cohowinery.com, precisará configurar dois registros CNAME para cada domínio adicional, totalizando quatro registros CNAME.
   
 ```
-Host name:          selector1._domainkey.cohovineyard.com  
-Points to address or value: selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:          selector1._domainkey
+Points to address or value: **selector1-cohovineyard-com**._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 
-Host name:          selector2._domainkey.cohovineyard.com  
-Points to address or value: selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:          selector2._domainkey
+Points to address or value: **selector2-cohovineyard-com**._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 
-Host name:          selector1._domainkey.cohowinery.com
-Points to address or value: selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com 
+Host name:          selector1._domainkey
+Points to address or value: **selector1-cohowinery-com**._domainkey.cohovineyardandwinery.onmicrosoft.com 
 TTL:                3600
  
-Host name:          selector2._domainkey.cohowinery.com
-Points to address or value: selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com 
+Host name:          selector2._domainkey
+Points to address or value: **selector2-cohowinery-com**._domainkey.cohovineyardandwinery.onmicrosoft.com 
 TTL:                3600
 ```
 
