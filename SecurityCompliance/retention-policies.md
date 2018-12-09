@@ -3,7 +3,7 @@ title: Visão geral de políticas de retenção
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540397"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194702"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -110,7 +110,7 @@ Depois que uma política de retenção é atribuída a uma caixa de correio ou p
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Como funciona uma política de retenção com versões de documento em um site
 
-O controle de versão é um recurso de todas as bibliotecas de documentos no SharePoint Online e no OneDrive for Business. Por padrão, o controle de versão guarda um mínimo de cem versões principais, embora você possa aumentar esse limite. Para saber mais, confira [Habilitar e configurar o controle de versão para uma lista ou biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+O controle de versão é um recurso de todas as bibliotecas de documentos no SharePoint Online e no OneDrive for Business. Por padrão, o controle de versão guarda um mínimo de quinhentas versões principais, embora você possa aumentar esse limite. Para saber mais, confira [Habilitar e configurar o controle de versão para uma lista ou biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
 Uma política de retenção guarda todas as versões de um documento em um site do SharePoint ou uma conta do OneDrive. Sempre que um documento sujeito a uma política de retenção é editado ou excluído, uma versão é copiada para a biblioteca de retenção para preservação. Cada versão do documento na biblioteca de retenção para preservação existe como um item separado com seu próprio período de retenção:
   
@@ -197,17 +197,13 @@ Outros recursos importantes de uma política de retenção no âmbito da organiz
 - Não há um limite para o número de caixas de correio ou sites que essa política pode incluir.
     
 - Para o Exchange, as caixas de correio criadas após a aplicação da política herdam a política automaticamente.
-    
-No entanto, há um limite de 10 políticas no âmbito da organização e políticas no local inteiro combinadas (confira a próxima seção) por locatário.
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Uma política aplicável a locais inteiros
 
 Ao escolher locais, você poderá facilmente incluir ou excluir um local inteiro, como os emails do Exchange ou contas do OneDrive. Para fazer isso, basta ativar ou desativar o **Status** desse local. 
   
 Como uma política no âmbito da organização, se uma política for aplicada a qualquer combinação de locais inteiros, não haverá um limite para o número de caixas de correio ou sites que essa política poderá incluir. Por exemplo, se uma política incluir todos os emails do Exchange e sites do SharePoint, todos os sites e caixas de correio serão incluídas, independentemente da quantidade. E para o Exchange, as caixas de correio criadas após a aplicação da política herdarão a política automaticamente.
-  
-No entanto, há um limite de 10 políticas no âmbito da organização e políticas no local inteiro combinadas por locatário.
-  
+ 
 ![Página Escolher locais](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Uma política com inclusões ou exclusões específicas
