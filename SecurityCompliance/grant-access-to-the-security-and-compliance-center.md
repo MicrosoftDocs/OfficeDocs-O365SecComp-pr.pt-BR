@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Os usuários precisam ter permissões de segurança do Office 365 &amp; Centro de conformidade antes que eles possam gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
+ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539103"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27221062"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornecer acesso aos usuários para a segurança do Office 365 &amp; Centro de conformidade
 
@@ -74,9 +74,9 @@ Para obter mais informações sobre as permissões diferentes, você pode conced
 
  **Parâmetros**
   
--  _-Identity_ é o grupo de funções ao qual adicionar um membro. 
+- _-Identity_ é o grupo de funções ao qual adicionar um membro. 
     
-- - _Membro_ é a caixa de correio, o grupo de segurança universal (USG) ou computador para adicionar ao grupo de funções. Você pode especificar somente um membro ao mesmo tempo. 
+- _Membro_ é a caixa de correio, o grupo de segurança universal (USG) ou computador para adicionar ao grupo de funções. Você pode especificar somente um membro ao mesmo tempo. 
     
 Para obter informações detalhadas sobre sintaxe e parâmetros, consulte [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
