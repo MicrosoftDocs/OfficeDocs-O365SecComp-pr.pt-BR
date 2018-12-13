@@ -3,7 +3,7 @@ title: Configurar uma política de arquivamento e exclusão de caixas de correio
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,20 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crie uma política de arquivamento e exclusão no Office 365 que automaticamente move itens à caixa de correio de arquivo morto do usuário.
-ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522292"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240574"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar uma política de arquivamento e exclusão de caixas de correio em sua organização do Office 365
 
- **Este artigo destina-se a administradores. Deseja adicionar políticas de arquivo morto e retenção para itens na sua caixa de correio? Consulte [atribuir a política de retenção para mensagens de email](https://support.office.com/article/3e5fd2dc-633f-4a38-b313-b31b81f7cf7a) | [políticas de retenção e arquivo morto no Outlook na web para negócios](https://support.office.com/article/465372e4-e16b-47db-bee0-aba44799085e)**
+ No Office 365, os administradores podem criar uma política de arquivamento e exclusão que automaticamente move itens à caixa de correio de arquivo morto do usuário e exclui automaticamente os itens da caixa de correio. O administrador faz isso criando uma política de retenção que é atribuída às caixas de correio e move itens à caixa de correio de arquivo morto do usuário depois de certo período de tempo e que também exclui itens da caixa de correio depois atingirem um determinado limite de idade. As regras reais que determinam quais itens são movidas ou excluídas e quando isso acontece são marcas de retenção chamado. Marcas de retenção vinculadas a uma política de retenção, que por sua vez, é atribuída à caixa de correio do usuário. Uma marca de retenção aplica configurações de retenção para mensagens individuais e pastas na caixa de correio do usuário. Ele define quanto tempo uma mensagem permanece na caixa de correio e a ação a ser tomada quando a mensagem atingir a idade de retenção especificado. Quando uma mensagem atinge sua idade de retenção, ele é movido ou caixa de correio de arquivo morto do usuário ou que ele seja excluído. 
   
-No Office 365, você pode criar uma política de arquivamento e exclusão que automaticamente move itens à caixa de correio de arquivo morto do usuário e exclui automaticamente os itens da caixa de correio. Você pode fazer isso criando uma política de retenção que ' s atribuída a caixas de correio e move itens à caixa de correio de arquivo morto do usuário depois de um certo período de tempo e que também exclui itens da caixa de correio depois atingirem um determinado limite de idade. As regras reais que determinam quais itens são movidas ou excluídas e quando isso acontece são marcas de retenção chamado. Marcas de retenção vinculadas a uma política de retenção, que por sua vez, é atribuída à caixa de correio do usuário. Uma marca de retenção aplica configurações de retenção para mensagens individuais e pastas na caixa de correio do usuário. Ele define quanto tempo uma mensagem permanece na caixa de correio e a ação a ser tomada quando a mensagem atingir a idade de retenção especificado. Quando uma mensagem atinge sua idade de retenção, ele é movido ou caixa de correio de arquivo morto do usuário ou que ele seja excluído. 
-  
-As etapas neste tópico irá configurar uma política de retenção e arquivamento para uma organização fictícia chamada Alpine House. Configurando a essa diretiva inclui as seguintes tarefas:
+As etapas neste artigo irá configurar uma política de retenção e arquivamento para uma organização fictícia chamada Alpine House. Configurando a essa diretiva inclui as seguintes tarefas:
   
 - Habilitar uma caixa de correio de arquivamento para cada usuário na organização. Isso oferece aos usuários armazenamento de caixa de correio de adição e é necessário para que uma política de retenção pode mover itens para a caixa de correio de arquivo morto. Ele também vamos um informações de arquivamento de repositório do usuário movendo itens a suas caixas de correio de arquivo morto. 
     
@@ -37,7 +35,7 @@ As etapas neste tópico irá configurar uma política de retenção e arquivamen
     
   - Move automaticamente os itens que estão 3 anos a caixa de correio de arquivo morto do usuário. Mover itens para a caixa de correio de arquivo morto libera espaço na caixa de correio principal do usuário.
     
-  - Exclui automaticamente os itens que têm 5 anos da pasta Itens excluídos. Isso também libera espaço na caixa de correio principal do usuário. Usuário terá a oportunidade de recuperar esses itens, se necessário. Consulte a nota de rodapé na seção [obter mais informações](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) , para obter mais detalhes. 
+  - Exclui automaticamente os itens que têm 5 anos da pasta Itens excluídos. Isso também libera espaço na caixa de correio principal do usuário. Usuário terá a oportunidade de recuperar esses itens, se necessário. Consulte a nota de rodapé na seção [obter mais informações](#more-information) , para obter mais detalhes. 
     
   - Automaticamente (e permanentemente) exclui os itens que estão sete anos antigos do ambas principal e caixa de correio de arquivo morto. Por causa de regulamentos de conformidade, alguns organização é necessárias para reter o email para um determinado período de tempo. Depois que o período de tempo expirar, uma organização talvez queira remover permanentemente essas caixas de correio de usuário de itens. 
     
@@ -104,7 +102,7 @@ Para criar novas marcas de retenção, você usará o Centro de administração 
     
 2. No painel de navegação à esquerda do Centro de administração do Office 365, clique em **Admin centrais**e, em seguida, clique em **Exchange**.
     
-    ![Captura de tela mostra que o Centro de administração do Office 365 com o administrador centrais expandida de opção e Exchange selecionado.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. No EAC, vá até **gerenciamento de conformidade** \> **marcas de retenção**
     
@@ -232,11 +230,8 @@ Quando uma nova caixa de correio é criada, uma política de retenção denomina
 2. Na página de propriedades de caixa de correio do usuário selecionado, clique em **recursos de caixa de correio**.
     
     O nome da nova diretiva atribuída à caixa de correio é exibido na lista suspensa **política de retenção** . 
-    
 
-  
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Opcional) Etapa 5: Executar o Assistente de pasta gerenciada para aplicar as novas configurações
-<a name="step3"> </a>
 
 Depois de aplicar a nova política de retenção a caixas de correio na etapa 4, pode demorar até sete dias no Exchange Online para que as novas configurações de retenção a ser aplicado às caixas de correio. Isso acontece porque um processo chamado as Assistente de pasta gerenciada caixas de correio de processos de uma vez a cada 7 dias. Em vez de esperar o Assistente de pasta gerenciada executar, você pode forçar isso aconteça, executando o cmdlet **Start-ManagedFolderAssistant** uma PowerShell no Exchange Online. 
   
@@ -244,7 +239,7 @@ Depois de aplicar a nova política de retenção a caixas de correio na etapa 4,
   
 Aqui estão as etapas para se conectar ao Exchange Online PowerShell e execute o Assistente de pasta gerenciada em cada caixa de correio em sua organização.
   
-1. No computador local, abra o Windows PowerShell e execute o comando a seguir.
+1. Em seu computador local, abra o Windows PowerShell e execute o comando a seguir.
     
     ```
     $UserCredential = Get-Credential
@@ -271,7 +266,7 @@ Aqui estão as etapas para se conectar ao Exchange Online PowerShell e execute o
     ```
 
     > [!NOTE]
-    > Para saber mais, ou se você tiver problemas para se conectar à sua organização do Exchange Online, confira [Conectar-se ao Exchange Online usando o PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
+    > Para obter mais informações ou se você tiver problemas para se conectar à sua organização do Exchange Online, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
   
 5. Execute os dois comandos a seguir para iniciar o Assistente de pasta gerenciada para todas as caixas de correio do usuário em sua organização.
     
@@ -285,8 +280,27 @@ Aqui estão as etapas para se conectar ao Exchange Online PowerShell e execute o
 
 Isso é tudo! Você configurou uma política de arquivamento e de exclusão para a organização Alpine House.
   
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Opcional) Etapa 6: Tornar a nova política de retenção padrão para sua organização
+
+Na etapa 4, você precisa atribuir a nova política de retenção a caixas de correio existentes. Mas você pode configurar o Exchange Online para que a nova política de retenção é atribuída ao novas caixas de correio que são criadas no futuro. Você pode fazer isso usando o PowerShell do Exchange Online para atualizar o plano de caixa de correio padrão da sua organização. Um *plano de caixa de correio* é um modelo que automaticamente configura propriedades em novas caixas de correio.  Nesta etapa opcional, você pode substituir a política de retenção atual atribuída ao plano de caixa de correio (por padrão, a política MRM padrão) com a política de retenção que você criou na etapa 3. Depois de atualizar o plano de caixa de correio, será atribuída a nova política de retenção para novas caixas de correio.
+
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) ou consulte a etapa 5.
+
+2. Execute o seguinte comando para exibir informações sobre os planos de caixa de correio em sua organização.
+
+    ```
+    Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
+    ```
+    Observe o plano de caixa de correio que está definido como padrão.
+
+3. Execute o seguinte comando para atribuir a nova política de retenção que você criou na etapa 3 (por exemplo, **arquivo morto de câmara Alpine e política de retenção**) ao plano de caixa de correio padrão. Este exemplo pressupõe que o nome do plano de caixa de correio padrão é **ExchangeOnlineEnterprise**.
+
+    ```
+    Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
+    ```
+4. Você pode executar novamente o comando na etapa 2 para verificar se a política de retenção atribuída ao plano de caixa de correio padrão foi alterada.
+
 ## <a name="more-information"></a>Mais informações
-<a name="moreinfo"> </a>
 
 - Como a idade de retenção é calculada? A idade da retenção de itens de caixa de correio é calculado a partir da data de entrega ou a data de criação para itens como mensagens de rascunho que não são enviadas, mas são criados pelo usuário. Quando o Assistente de pasta gerenciada processa itens em uma caixa de correio, ele carimba uma data de início e uma data de validade para todos os itens que tenham marcas de retenção com a ação de retenção excluir e permitir recuperação ou excluir permanentemente. Itens que tenham uma marca de arquivo morto são marcados com uma move date. 
     
@@ -294,9 +308,9 @@ Isso é tudo! Você configurou uma política de arquivamento e de exclusão para
     
     |**Marca de retenção**|**O que significa nesta marca**|**Internos ou personalizados?**|**Tipo**|
     |:-----|:-----|:-----|:-----|
-    |Alpine House movimentação de 3 anos para arquivo morto  <br/> |Move itens que estão 1095 dias (3 anos) na caixa de correio de arquivo morto.  <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Marca de diretiva padrão (archive); nesta marca será automaticamente aplicada à caixa de correio inteira.  <br/> |
-    |Alpine House 7 anos excluir permanentemente  <br/> |Exclui permanentemente os itens na caixa de correio primária ou a caixa de correio de arquivo morto quando estiverem sete anos antigos.  <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Marca de diretiva padrão (exclusão); nesta marca será automaticamente aplicada à caixa de correio inteira.  <br/> |
-    |Alpine House excluídos itens 5 anos excluir e permite recuperação  <br/> |Exclui os itens da pasta Itens excluídos que têm 5 anos. Os usuários podem recuperar esses itens para backup 14 dias após sendo excluído.<sup>\*</sup> <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Marca de política de retenção (itens excluídos); nesta marca será automaticamente aplicada a itens na pasta Itens excluídos.  <br/> |
+    |Alpine House movimentação de 3 anos para arquivo morto  <br/> |Move itens que estão 1095 dias (3 anos) na caixa de correio de arquivo morto.  <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de diretiva padrão (archive); nesta marca será automaticamente aplicada à caixa de correio inteira.  <br/> |
+    |Alpine House 7 anos excluir permanentemente  <br/> |Exclui permanentemente os itens na caixa de correio primária ou a caixa de correio de arquivo morto quando estiverem sete anos antigos.  <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de diretiva padrão (exclusão); nesta marca será automaticamente aplicada à caixa de correio inteira.  <br/> |
+    |Alpine House excluídos itens 5 anos excluir e permite recuperação  <br/> |Exclui os itens da pasta Itens excluídos que têm 5 anos. Os usuários podem recuperar esses itens para backup 14 dias após sendo excluído.<sup>\*</sup> <br/> |Sinalizador (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivamento e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de política de retenção (itens excluídos); nesta marca será automaticamente aplicada a itens na pasta Itens excluídos.  <br/> |
     |Dias de 14 de itens recuperáveis mover para arquivo morto  <br/> |Move itens que tenham sido na pasta itens recuperáveis para 14 dias para a pasta itens recuperáveis na caixa de correio de arquivo morto.  <br/> |Integração  <br/> |Marca de política de retenção (itens recuperáveis); nesta marca será automaticamente aplicada aos itens na pasta itens recuperáveis.  <br/> |
     |Lixo eletrônico  <br/> |Exclui permanentemente os itens que foram na pasta Lixo eletrônico por 30 dias. Os usuários podem recuperar esses itens para backup 14 dias após sendo excluído.<sup>\*</sup> <br/> |Integração  <br/> |Marca de política de retenção (lixo eletrônico); nesta marca será automaticamente aplicada a itens na pasta Lixo eletrônico.  <br/> |
     |Excluir em 1 mês  <br/> |Exclui permanentemente os itens que são 30 dias. Os usuários podem recuperar esses itens para backup 14 dias após sendo excluído.<sup>\*</sup> <br/> |Integração  <br/> |Pessoais; nesta marca pode ser aplicada por usuários.  <br/> |

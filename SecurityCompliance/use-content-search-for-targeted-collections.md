@@ -3,7 +3,7 @@ title: Usar a pesquisa de conteúdo no Office 365 para conjuntos de destino
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Usar a pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para executar os conjuntos de destino. Uma coleção direcionada significa que você está confiante de que os itens respondendo de forma a um caso ou itens privilegiados estão localizados em uma pasta de caixa de correio ou de site específica. Use o script neste artigo para obter o ID da pasta ou o caminho para as pastas de caixa de correio ou de site específicos que você deseja pesquisar.
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522282"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245058"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para conjuntos de destino
 
-O recurso de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade não ofereça uma maneira direta na interface de usuário para pesquisar pastas específicas em caixas de correio do Exchange ou o SharePoint e o OneDrive sites corporativos. No entanto, é possível pesquisar pastas específicas (chamadas de um conjunto de destino), especificando o ID da pasta ou o caminho na sintaxe da consulta de pesquisa real. Uso de pesquisa de conteúdo para executar um conjunto de destino é útil quando você estiver confiante de que os itens respondendo de forma a um caso ou itens privilegiados estão localizados em uma pasta de caixa de correio ou de site específica. Você pode usar o script neste artigo para obter o ID de pasta para pastas de caixa de correio ou o caminho para pastas em um SharePoint e OneDrive para o site de negócios. Em seguida, você pode usar o ID da pasta ou o caminho em uma consulta de pesquisa para retornar a itens localizados na pasta.
+O recurso de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade não ofereça uma maneira direta na interface de usuário para pesquisar pastas específicas em caixas de correio do Exchange ou o SharePoint e o OneDrive sites corporativos. No entanto, é possível pesquisar pastas específicas (chamadas um *destinadas a coleção*), especificando o ID da pasta ou o caminho na sintaxe da consulta de pesquisa real. Uso de pesquisa de conteúdo para executar um conjunto de destino é útil quando você estiver confiante de que os itens respondendo de forma a um caso ou itens privilegiados estão localizados em uma pasta de caixa de correio ou de site específica. Você pode usar o script neste artigo para obter o ID de pasta para pastas de caixa de correio ou o caminho para pastas em um SharePoint e OneDrive para o site de negócios. Em seguida, você pode usar o ID da pasta ou o caminho em uma consulta de pesquisa para retornar a itens localizados na pasta.
   
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -44,7 +44,7 @@ O recurso de pesquisa de conteúdo no Office 365 Security &amp; Centro de confor
 
 O script que você execute nesta etapa primeiro vai retornar uma lista de pastas de caixa de correio ou SharePoint ou o OneDrive para pastas de negócios e o ID da pasta correspondente ou o caminho para cada pasta. Quando você executar esse script, ele solicitará para as informações a seguir.
   
-- **URL do site ou o endereço de email** Digite um endereço de email do dos responsáveis para retornar uma lista de pastas de caixa de correio do Exchange e dobrar IDs. Ou então, digite a URL para um site do SharePoint ou um OneDrive para o site de negócios para retornar uma lista de caminhos do site especificado. Aqui estão alguns exemplos: 
+- **URL do site ou o endereço de email** Digite um endereço de email do dos responsáveis para retornar uma lista de pastas de caixa de correio do Exchange e IDs de pasta. Ou então, digite a URL para um site do SharePoint ou um OneDrive para o site de negócios para retornar uma lista de caminhos do site especificado. Aqui estão alguns exemplos: 
     
   - **Exchange** - stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Para exibir uma lista de pastas de caixa de correio ou nomes de caminho do site:
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,7 +216,7 @@ Depois de executar o script para coletar a uma lista de IDs de pasta ou caminhos
     
 4. Na página **Nova pesquisa**, digite um nome para a Pesquisa de Conteúdo. O nome deve ser exclusivo em sua organização. 
     
-5. Em **onde você deseja com a aparência**, siga um destes procedimentos, com base em se sua pesquisa uma pasta de caixa de correio ou uma pasta do site:
+5. Em **onde você deseja com a aparência**, siga um destes procedimentos, com base na qual está pesquisando uma pasta de caixa de correio ou de uma pasta do site:
     
     - Clique em **Escolher caixas de correio específicas para pesquisar** e adicione a mesma caixa de correio que você especificou quando executou o script na etapa 1. 
     
@@ -264,14 +264,16 @@ Aqui estão alguns exemplos de como usar o `folderid` e `path` propriedades em u
   
 ## <a name="more-information"></a>Mais informações
 
-Mantenha as seguintes coisas em mente ao usar o script neste artigo e executando voltadas conjuntos.
+Mantenha as seguintes coisas em mente ao usar o script neste artigo para executar os conjuntos de destino.
   
 - O script não remove todas as pastas dos resultados. Para algumas pastas listados nos resultados podem ser não pesquisáveis (ou retornar zero itens) porque eles contêm conteúdo gerada pelo sistema.
     
 - Esse script retorna apenas informações de pasta de caixa de correio principal do usuário. Ele não retorna informações sobre pastas na caixa de correio de arquivo morto do usuário.
     
-- Ao pesquisar pastas de caixa de correio, somente a pasta especificada (identificado pelo seu `folderid` propriedade) devem ser pesquisadas. As subpastas não ser pesquisadas. Para Pesquisar subpastas, você precisará usar o `folderid` para a subpasta que você deseja pesquisar. 
+- Ao pesquisar pastas de caixa de correio, somente a pasta especificada (identificado pelo seu `folderid` propriedade) devem ser pesquisadas. As subpastas não ser pesquisadas. Para Pesquisar subpastas, você precisará usar o ID da pasta para a subpasta que você deseja pesquisar. 
     
 - Ao pesquisar pastas do site, na pasta (identificado pelo seu `path` propriedade) e todas as subpastas devem ser pesquisadas. 
     
 - Conforme indicado anteriormente, não é possível usar `path` propriedade para procurar arquivos de mídia,. png,. TIFF ou arquivos. wav, localizado em OneDrive locais. Use uma [propriedade do site](keyword-queries-and-search-conditions.md#searchable-site-properties) de diferentes para pesquisar os arquivos de mídia nas pastas de OneDrive. 
+
+- Ao exportar os resultados de uma pesquisa em que você especificou apenas o `folderid` propriedade na consulta de pesquisa, você pode escolher a exportação a primeira opção, "todos os itens, excluindo aquelas que têm um formato não reconhecido, são criptografados ou não foram indexados por outros motivos." Todos os itens na pasta sempre serão exportados independente do status de indexação porque o ID da pasta sempre é indexado.

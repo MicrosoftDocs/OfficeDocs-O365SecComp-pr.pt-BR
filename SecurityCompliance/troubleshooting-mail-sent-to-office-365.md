@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: Este artigo fornece informações de solução de problemas para os remetentes que estão enfrentando problemas ao tentar enviar email para caixas de entrada no Office 365 e práticas recomendadas para mala direta para os clientes do Office 365.
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003200"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240554"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Solução de problemas de email enviados para o Office 365
 
@@ -115,7 +115,7 @@ Você recebeu o NDR porque foi detectada atividade suspeita do endereço IP e se
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Não consigo receber email dos remetentes no Office 365
 <a name="AllowEOPIPs"> </a>
 
- Para receber mensagens de nossos usuários, certifique-se de que sua rede permite conexões de saída dos endereços IP que EOP usa em nossos centros de dados. Para obter mais informações, consulte [endereços IP do Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). Para um registro de IP de todos os endereços que foram adicionados, alterados ou preteridos no ano passado, consulte a [notificação de alteração de endereços IP do EOP](eop/change-notification-for-eop-ip-addresses.md).
+ Para receber mensagens de nossos usuários, certifique-se de que sua rede permite conexões de saída dos endereços IP que EOP usa em nossos centros de dados. Para obter mais informações, consulte [endereços IP do Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Práticas recomendadas para um email em massa, aos usuários do Office 365
 <a name="BulkMailer"> </a>
