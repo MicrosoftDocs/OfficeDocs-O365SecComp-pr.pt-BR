@@ -3,7 +3,7 @@ title: Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumo: Aplique rótulos do Office 365 e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
-ms.openlocfilehash: f8d835481c0eac00be11f7934c1d74b8a2d08d78
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 38ded352c91a4c7f0138a6b9932840842d730926
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345963"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240564"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365
 
@@ -68,13 +68,13 @@ Para criar os rótulos, você pode usar o Centro de administração do Office 36
     
 4. Na nova guia **Início – Segurança &amp;e Conformidade** do navegador, clique em **Classificações > Rótulos**.
     
-5. No painel **Início > Rótulos**, clique em **Criar um rótulo**.
+5. No painel **Página inicial > Rótulos**, clique na guia **Retenção** e, em seguida, clique em **Criar um rótulo**.
     
-6. No painel **Atribuir nome ao seu rótulo**, digite o nome do rótulo e clique em **Avançar**.
-    
+6. No painel **Atribuir nome ao seu rótulo**, digite o nome do rótulo e uma descrição para administradores e usuários e, em seguida, clique em **Avançar**.
+
 7. No painel **Configurações do rótulo**, clique em **Avançar**.
     
-8. No painel **Examine as configurações**, clique em **Criar este rótulo** e clique em **Fechar**.
+8. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
     
 9. Repita as etapas de 5 a 8 para os rótulos adicionais.
     
@@ -89,9 +89,11 @@ Para criar os rótulos, você pode usar o Centro de administração do Office 36
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
+### <a name="publish-your-new-labels"></a>Publicar seus novos rótulos
+
 Em seguida, use estas etapas para publicar os novos rótulos do Office 365.
   
-1. No painel **Início > Rótulos** no Centro de Segurança&amp; e Conformidade, clique em** Publicar rótulos**.
+1. No painel **Início > Rótulos** no Centro de Segurança &amp;e Conformidade, clique na guia **Retenção** e, em seguida, clique em **Publicar rótulos**.
     
 2. No painel **Escolher rótulos para publicar**, clique em **Escolher rótulos para publicar**.
     
@@ -106,6 +108,7 @@ Em seguida, use estas etapas para publicar os novos rótulos do Office 365.
 7. No painel **Atribuir um nome à política**, digite um nome para o conjunto de rótulos em **Nome** e clique em **Avançar**.
     
 8. No painel **Examine as configurações**, clique em **Publicar rótulos** e clique em **Fechar**.
+
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Etapa 3: Aplicar os rótulos do Office 365 aos sites do SharePoint Online
 
@@ -134,14 +137,16 @@ Esta é a configuração resultante.
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Políticas DLP para seus sites do SharePoint Online
 
 Use estas etapas para configurar uma política DLP que notifica os usuários quando eles compartilham um documento em um site de equipe confidencial do SharePoint Online fora da organização.
-  
-1. Na guia **Microsoft Office Home** no navegador, clique no bloco **Segurança&amp; Conformidade**.
+
+1. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
     
-2. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+2. Na nova guia **Centro de Administração do Office** do navegador, clique em **Centros de Administração > Segurança&amp; e Conformidade**.
     
-3. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
+3. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
     
-4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
+4. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
+    
+5. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
     
 5. No painel **Atribuir um nome à política**, digite o nome da política DLP de nível confidencial em **Nome** e clique em **Avançar**.
     
@@ -158,7 +163,7 @@ Use estas etapas para configurar uma política DLP que notifica os usuários qua
 11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
 12. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Avançar**.
-    
+
 13. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Personalizar a dica e o email**.
     
 14. No painel **Personalizar dicas de política e notificações de email**, clique em **Personalizar o texto da dica da política**.
@@ -172,7 +177,7 @@ Use estas etapas para configurar uma política DLP que notifica os usuários qua
     
 16. Clique em **OK**.
     
-17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, desmarque a caixa de seleção **Impedir que as pessoas compartilhem e restringir o acesso ao conteúdo compartilhado** e clique em **Avançar**.
+17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
     
 18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     
@@ -220,7 +225,7 @@ Em seguida, use estas etapas para configurar uma política DLP que bloqueia os u
     
 16. Clique em **OK**.
     
-17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, selecione **Exigir uma justificativa de negócios para substituir** e clique em **Avançar**.
+17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
     
 18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: 13af2ae96d8c4cbf363e1273a3d1ed5fb9be2077
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
+ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201565"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27263910"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -83,9 +83,12 @@ Para configurar o DKIM, execute estas etapas:
 
 Para cada domínio para o qual você deseja adicionar uma assinatura de DKIM no DNS, é preciso publicar dois registros CNAME. Um registro CNAME é usado pelo DNS para especificar que o nome canônico de um domínio é um alias para outro nome de domínio. 
   
- O Office 365 executa a rotação de chaves automática usando os dois registros estabelecidos. Se você provisionou domínios personalizados em adição ao domínio inicial no Office 365, deve publicar dois registros CNAME para cada domínio adicional. Portanto, se você tem dois domínios, deve publicar dois registros CNAME adicionais e assim por diante. 
+ O Office 365 executa a rotação de chaves automática usando os dois registros estabelecidos. Se você provisionou domínios personalizados em adição ao domínio inicial no Office 365, deve publicar dois registros CNAME para cada domínio adicional. Portanto, se você tem dois domínios, deve publicar dois registros CNAME adicionais e assim por diante.
   
-Use o seguinte formato para os registros CNAME:
+Use o seguinte formato para os registros CNAME.
+
+> [!IMPORTANT]
+> Se você for um de nossos clientes GCC, o método domainGUID não funcionará para você! Certifique-se de usar o valor de MX adequado para seu domínio. Uso: `selector2-<domain-key>._domainkey.<initialDomain>` para os exemplos a seguir. Use [Este artigo](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) para localizar o registro MX necessário para o valor de *chave do domínio* .
   
 ```
 Host name:          selector1._domainkey
