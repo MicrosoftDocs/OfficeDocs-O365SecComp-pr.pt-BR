@@ -3,7 +3,7 @@ title: Exportar um relatório da Pesquisa de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Em vez de exportar os resultados reais de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade, você pode exportar apenas um relatório de resultados de pesquisa. O relatório contém um resumo dos resultados da pesquisa e um documento com informações detalhadas sobre cada item que deve ser exportado.
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523462"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283137"
 ---
 # <a name="export-a-content-search-report"></a>Exportar um relatório da Pesquisa de Conteúdo
 
@@ -55,7 +55,9 @@ Quando você exporta um relatório, ele será baixado para uma pasta que tem o m
     - Microsoft Internet Explorer 10 e versões posteriores
     
     **Observação:** A Microsoft não fabrica extensões de terceiros ou complementos para aplicativos ClickOnce. Exportar resultados de pesquisa usando um navegador sem suporte com extensões de terceiros ou complementos não é suportado. 
-    
+
+- Se o tamanho total estimado dos resultados retornados por uma pesquisa de conteúdo excede 20&nbsp;TB, exportar o relatório falhará. Para exportar um relatório com êxito, tente restringir o escopo e execute novamente a pesquisa para o tamanho estimado dos resultados seja menor que 20&nbsp;TB.
+
 ## <a name="generate-and-download-a-content-search-report"></a>Gerar e faça o download de um relatório de pesquisa de conteúdo
 
 As etapas para gerar e faça o download de um relatório de pesquisa de conteúdo serão bastante similares às realmente exportar os resultados de pesquisa.
@@ -64,9 +66,9 @@ As etapas para gerar e faça o download de um relatório de pesquisa de conteúd
 
 A primeira etapa é preparar o relatório para baixar para seu computador exportando. Quando você o relatório, o relatório de documentos são carregados para uma área de armazenamento do Azure na Microsoft em nuvem.
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** \> **Pesquisa de Conteúdo**.
     
