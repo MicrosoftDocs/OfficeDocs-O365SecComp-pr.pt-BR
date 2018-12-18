@@ -3,7 +3,7 @@ title: casos de descoberta eletrônica no Office 365 Security &amp; Centro de co
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Usar a segurança do Office 365 &amp; Centro de conformidade para criar e gerenciar casos de eDiscovery em sua organização. Você pode atribuir membros o caso, colocar o conteúdo de locais em espera, execute Searchs de conteúdo associados com o caso e a exportação os resultados da pesquisa. Você também pode preparar maiusculas dados para análise adicional no eDiscovery avançado.
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299357"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade
 
@@ -53,9 +53,9 @@ Use o fluxo de trabalho a seguir para configurar e usar os casos de eDiscovery n
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência
 
-A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônica relacionados a pessoas, portanto, você poderá adicioná-los a um caso de descoberta eletrônica na etapa 2. Você precisa ser membro do grupo de funções de gerenciamento da organização (ou a ser atribuído à função de gerenciamento de função) no Office 365 Security &amp; Centro de conformidade para atribuir permissões de descoberta eletrônica. A lista a seguir descreve os grupos de função relacionadas a descoberta eletrônica na segurança &amp; Centro de conformidade.
+A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônica relacionados a pessoas, portanto, você poderá adicioná-los a um caso de descoberta eletrônica na etapa 2. Você precisa ser membro do grupo de funções de gerenciamento da organização (ou a ser atribuído à função de gerenciamento de função) no Office 365 Security &amp; Centro de conformidade para atribuir permissões de descoberta eletrônica. A lista a seguir descreve os grupos de função relacionadas a descoberta eletrônica na segurança &amp; Centro de conformidade. 
   
-- **Revisor** - este grupo de funções tem as permissões mais restritivas de descoberta eletrônica relacionados. Os membros desse grupo só podem ver e abrir a lista dos casos na página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade que eles são membros. Eles não podem criar casos, adicionar membros a um caso, criar pausas, criar pesquisas, exportar resultados da pesquisa ou preparar os resultados para eDiscovery avançado. No entanto, os membros podem acessar casos de eDiscovery avançado para executar tarefas de análise. 
+- **Revisor** - este grupo de funções tem as permissões mais restritivas de descoberta eletrônica relacionados. A principal finalidade deste grupo de função é permitir que os membros da exibição e acesso caso dados no eDiscovery avançadas do Office 365. Os membros desse grupo só podem ver e abrir a lista dos casos na página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade que eles são membros. Depois que o usuário acessa um caso no Centro de conformidade & segurança, eles podem clicar **mudança para o eDiscovery avançada** para acessar e analisar os dados de casos de eDiscovery avançado. Eles não podem criar casos, adicionar membros a um caso, criar pausas, criar pesquisas, visualizar resultados da pesquisa, exportar resultados da pesquisa ou preparar os resultados para eDiscovery avançado. 
     
 - **gerente de descoberta eletrônica** - membros desse grupo de função pode criar e gerenciar casos do eDiscovery. Eles podem adicionar e remover membros, colocar conteúdo locais em espera, criar e editar pesquisas de conteúdo associados a um caso, exportar os resultados de uma pesquisa de conteúdo e preparar os resultados da pesquisa para análise no eDiscovery avançado. Existem dois subgrupos nesse grupo de função. A diferença entre esses subgrupos baseia-se em escopo.
     
@@ -65,20 +65,22 @@ A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônic
     
     - Exibir todas as ocorrências listadas na página **Descoberta Eletrônica**. 
     
-    - Depois que eles adicionam-se como um membro do caso, gerencie qualquer caso de descoberta eletrônica na organização.
+    - Depois que eles adicionam-se como um membro do caso, gerencie qualquer caso na organização.
     
-    - Execute tarefas administrativas no eDiscovery avançado, como processamento de dados casos para análise, definindo configurações de maiusculas e exportando dados do eDiscovery avançado. Isso ocorre porque uma pessoa que é um administrador na segurança de descoberta eletrônica &amp; Centro de conformidade é adicionado automaticamente como um administrador no eDiscovery avançado.
+    - Acesse os dados maiusculas no eDiscovery avançada para qualquer caso na organização.
     
-    Consulte a seção [More information](ediscovery-cases.md#moreinfo_1) para conhecer os motivos pelos quais convém ter um Administrador de Descoberta Eletrônica em sua organização. 
+    Consulte a seção [More information](#more-information) para conhecer os motivos pelos quais convém ter um Administrador de Descoberta Eletrônica em sua organização. 
     
 > [!IMPORTANT]
 > Se uma pessoa não for um membro de um desses grupos de função relacionadas a descoberta eletrônica ou não é um membro de um grupo de função que atribuiu a função de revisor, você não pode adicioná-los como um membro de um caso de eDiscovery. 
+
+Para obter mais informações sobre as permissões de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](assign-ediscovery-permissions.md).
   
  **Para atribuir as permissões de Descoberta Eletrônica:**
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. Na segurança &amp; Centro de conformidade, clique em **permissões**e, em seguida, siga um destes procedimentos com base nas permissões de eDiscovery que você deseja atribuir.
     
@@ -96,7 +98,7 @@ A próxima etapa é criar um novo caso de descoberta eletrônica. Você deve ser
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
 3. Na segurança &amp; Centro de conformidade, clique em **pesquisa &amp; investigação** \> **eDiscovery**e clique ![ícone Adicionar](media/ITPro-EAC-AddIcon.gif) **criar um caso**.
     
@@ -142,7 +144,10 @@ Depois de criar um novo caso, a próxima etapa é adicionar membros ao caso. Ant
 ## <a name="step-4-place-content-locations-on-hold"></a>Etapa 4: Local locais de conteúdo em espera
 
 Você pode usar um caso de eDiscovery para criar pausas para preservar o conteúdo que pode ser relevante ao caso. Você pode colocar uma isenção nas caixas de correio e OneDrive para sites corporativos das pessoas que são responsáveis no caso. Você também pode fazer uma pausa na caixa de correio de grupo, site do SharePoint e OneDrive para o site de negócios para um grupo do Office 365. Da mesma forma, você pode colocar uma pausa no site que estão associados a Teams da Microsoft e da caixa de correio. Quando você realiza locais de conteúdo em espera, o conteúdo é mantido até que você remova o bloqueio do conteúdo local ou até que você exclua isenção.
-  
+
+> [!NOTE]
+> Depois de colocar um local de conteúdo em espera, que leva até 24 horas para a retenção entrem em vigor. 
+>   
 Quando você cria uma pausa, você tem as seguintes opções para o conteúdo que é mantido nos locais especificados conteúdos de escopo:
   
 - Criar uma espera infinita, onde todo o conteúdo é colocado em espera. Como alternativa, é possível criar uma isenção baseado em consulta onde somente o conteúdo que corresponda a uma consulta de pesquisa é colocado em espera.
@@ -183,7 +188,7 @@ Para criar uma isenção para um caso de eDiscovery:
   
    b. **Sites do SharePoint** - clique em **sites de escolha** e clique em **Escolher sites** novamente para especificar SharePoint e OneDrive para sites corporativos para colocar em espera. Digite a URL para cada site que você deseja colocar em espera. Você também pode adicionar a URL do site do SharePoint para um Team Microsoft ou de um grupo do Office 365. Clique em **Escolher**e, em seguida, clique em **concluído**.
     
-    Consulte a seção de [informações adicionais](ediscovery-cases.md#moreinfo_1) para obter dicas sobre a colocação de grupos do Office 365 e Teams da Microsoft em espera. 
+    Consulte a seção de [informações adicionais](#more-information) para obter dicas sobre a colocação de grupos do Office 365 e Teams da Microsoft em espera. 
     
     > [!NOTE]
     > No caso raro que o nome principal de usuário de uma pessoa (UPN) é alterada, a URL para a sua conta de OneDrive também será alterada para incorporar o UPN novo. Se isso acontecer, você terá que modificar a retenção a nova URL do usuário de OneDrive de adicionando e removendo o antigo. 
@@ -391,7 +396,7 @@ Como uma alternativa ao exportar os resultados de uma única pesquisa de conteú
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Etapa 7: Preparar resultados para eDiscovery avançada de pesquisa
 
-Se sua organização tiver uma assinatura do Office 365 E5, você pode preparar os resultados de pesquisas de conteúdo associados a um caso para análise no eDiscovery avançado. Depois de preparar os resultados da pesquisa, você pode ir para descoberta eletrônica avançada (consulte [etapa 8: vá para o caso da eDiscovery avançado](ediscovery-cases.md#gotoAeD_1)) e processar os dados de resultado de pesquisa para análise adicional no eDiscovery avançado.
+Se sua organização tiver uma assinatura do Office 365 E5, você pode preparar os resultados de pesquisas de conteúdo associados a um caso para análise no eDiscovery avançado. Depois de preparar os resultados da pesquisa, você pode ir para descoberta eletrônica avançada (consulte [etapa 8: vá para o caso da eDiscovery avançado](#step-8-go-to-the-case-in-advanced-ediscovery)) e processar os dados de resultado de pesquisa para análise adicional no eDiscovery avançado.
   
 Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, a funcionalidade de reconhecimento óptico de caracteres (OCR) extrai automaticamente texto de imagens. OCR é suportado para arquivos flexível, anexos de email e imagens incorporadas. Isso permite que você aplique as capacidades analíticas de texto de eDiscovery avançado (perto duplicatas, email threading, temas e previsão de codificação) para qualquer texto nos arquivos de imagem.
   
@@ -530,7 +535,7 @@ Quando você reabrir um caso, qualquer isenções que estavam em vigor quando o 
     
     Finalmente, anterior conforme explicado, administradores de descoberta eletrônica na segurança &amp; Centro de conformidade são automaticamente adicionados como administradores no eDiscovery avançado. Isso significa que uma pessoa que é um administrador de descoberta eletrônica pode executar tarefas administrativas na descoberta eletrônica avançada, como configurar usuários, criando casos e adicionar dados para casos.
     
-- **Quais são os requisitos de licenciamento para colocar os locais de conteúdo em espera?** Em geral, as organizações exigem uma assinatura do Office 365 E3 ou superior para colocar os locais de conteúdo em espera. Para colocar as caixas de correio em espera, uma licença do Exchange Online plano 2 é necessária.
+- **Quais são os requisitos de licenciamento para colocar os locais de conteúdo em espera?** Em geral, as organizações exigem uma assinatura do Office 365 E3 ou superior para colocar os locais de conteúdo em espera. Para colocar as caixas de correio em espera, uma licença do Exchange Online plano 2 é necessária para a caixa de correio que você deseja colocar em espera.
     
 - **o que mais você deve saber sobre a pesquisa de todo o conteúdo maiusculas na etapa 5?** Conforme explicado anteriormente, você pode pesquisar os locais de conteúdo que foram colocados em espera no caso. Quando você fizer isso, apenas o conteúdo que corresponde aos critérios de espera é pesquisa. Se não houver nenhum critério de espera, todo o conteúdo é pesquisado. Se o conteúdo está em uma consulta com base em espera, somente o conteúdo que ambas as correspondências mantém critérios (da retenção colocado na etapa 4) e os critérios de pesquisa (de pesquisa na etapa 5) é retornado com os resultados da pesquisa.
     
