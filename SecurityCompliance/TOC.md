@@ -185,9 +185,8 @@
 ## [Atribuir permissões de Descoberta eletrônica](assign-ediscovery-permissions.md)
 ## [Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365](set-up-compliance-boundaries.md)
 ## [Série de solução de Descoberta eletrônica – Cenário de derramamento de dados – Pesquisar e remover](data-spillage-scenariosearch-and-purge.md)
-## [Preparar resultados de pesquisa para Descoberta eletrônica avançada](prepare-search-results-for-advanced-ediscovery.md)
-## [Atribuir permissões de Descoberta eletrônica a sites do OneDrive for Business](assign-permissions-to-onedrive-for-business-sites.md)
-## [Usar um script para adicionar usuários a uma retenção em caso de Descoberta eletrônica](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+## [Preparar resultados de pesquisa para Descoberta Eletrônica Avançada](prepare-search-results-for-advanced-ediscovery.md)
+## [Usar um script para adicionar usuários a uma retenção em caso de Descoberta Eletrônica](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Criar um relatório sobre retenções em casos de Descoberta eletrônica](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Gerenciar retenções
 ### [Criar uma retenção de Descoberta Eletrônica](ediscovery-cases.md#step-4-place-content-locations-on-hold)
