@@ -3,7 +3,7 @@ title: Logs do tráfego da Web e fontes de dados do Office 365 Cloud App Securit
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: O Office 365 segurança de aplicativo de nuvem trabalha com logs de tráfego da web a partir de uma ampla gama de provedores. Leia este artigo para saber mais sobre logs de tráfego da web e suporte a fontes de dados para segurança de aplicativo de nuvem do Office 365.
-ms.openlocfilehash: 09b0358e0d8b9a6ed59393d8771237f7eaf8bb98
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524150"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447049"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Logs do tráfego da Web e fontes de dados do Office 365 Cloud App Security
   
@@ -35,102 +35,102 @@ Você pode usar uma ampla variedade de fontes de dados e arquivos de log do trá
 
 O Office 365 segurança de aplicativo de nuvem usa dados em logs de tráfego da web para ajudá-lo a entender quais aplicativos de pessoas em sua organização está usando. Mais detalhes são incluídos nos arquivos de log, a melhor visibilidade terá atividade do usuário.
   
-A tabela a seguir lista os requisitos e os atributos necessários para logs de tráfego da web funcionar corretamente com segurança de aplicativo de nuvem do Office 365:
-  
-|**Atributos**|**Requisitos adicionais **|
-|:-----|:-----|
-| Data da transação  <br/>  IP de origem  <br/>  Usuário de origem (recomendado)  <br/>  Endereço IP de destino  <br/>  URL de destino (recomendado: URLs oferecem maior precisão para detecção de aplicativo de nuvem que endereços IP)  <br/>  Quantidade total de dados (recomendados)  <br/>  Quantidade de carregamento ou download de dados (recomendado: fornece ideias sobre nuvem padrões de uso do aplicativo)  <br/>  Ação executada (permitidas ou bloqueadas)  <br/> | Fonte de dados para os arquivos de log deve ser suportada.  <br/>  O formato de que usam os arquivos de log deve corresponder ao formato padrão. Quando o arquivo for carregado, a descoberta de aplicativo verificar isso.  <br/>  Os eventos no log de devem ocorreram não mais de 90 dias.  <br/>  O arquivo de log deve incluir as informações de tráfego de saída que podem ser analisadas para atividade de rede.  <br/> |
-   
-Se os atributos não estão incluídos nos logs que são carregados, segurança de aplicativo de nuvem do Office 365 não podem mostrar ou analisar as informações para você. Por exemplo, o formato de log padrão do Firewall do Cisco ASA não inclui a quantidade de bytes carregados por transação, o nome de usuário ou uma URL de destino (somente um IP de destino). Como essas informações não está nos arquivos de log Cisco, a segurança de aplicativo de nuvem do Office 365 não incluí-lo ao analisar o tráfego de rede da sua organização.
-  
-> [!NOTE]
-> Para alguns tipos de firewalls, você deve definir um nível de informações para logs de tráfego da web incluir os atributos necessários. Por exemplo, Cisco ASA firewalls devem ter o nível de informações definida como 6. Certifique-se confirmar que os seus firewalls estão definidos para fornecer as informações corretas em logs de tráfego da web. 
+As seções a seguir listam os atributos necessários e os requisitos adicionais para logs de tráfego da web funcionar corretamente com segurança de aplicativo de nuvem do Office 365.
+
+### <a name="attributes"></a>Atributos
+
+O Office 365 segurança de aplicativo de nuvem não consigo mostrar ou analisar os atributos que não são incluídos em logs de tráfego da web. Por exemplo, o formato de log padrão do Firewall do Cisco ASA não tem o número de bytes carregados por transação, o nome de usuário ou uma URL de destino (somente um IP de destino). Portanto, esses atributos não são mostrados nos dados de descoberta de nuvem e os aplicativos de nuvem de visibilidade é limitada. Para Cisco ASA firewalls, o nível de informações deve ser definido como 6. 
+
+Logs de tráfego da web devem incluir os seguintes atributos:
+
+- Data da transação
+- IP de origem
+- Usuário de origem (altamente recomendado)
+- Endereço IP de destino
+- URL de destino (recomendado; URLs oferecem maior precisão para detecção de aplicativo de nuvem que endereços IP)
+- Quantidade total de dados (recomendado; informações de dados são altamente valiosos)
+- Quantidade de carregamento ou download de dados (recomendado; fornece ideias sobre nuvem padrões de uso do aplicativo)
+- Ação executada (permitidas ou bloqueadas)
+
+### <a name="additional-requirements"></a>Requisitos adicionais 
+
+Além de incluir os atributos listados anteriormente neste artigo, os logs de tráfego da web devem atender aos seguintes requisitos:
+
+- Fonte de dados para os arquivos de log deve ser suportada.
+- O formato de que usam os arquivos de log deve corresponder ao formato padrão. Quando o arquivo for carregado, a descoberta de aplicativo verificar isso.
+- Os eventos no log de devem ocorreram não mais de 90 dias.
+- O arquivo de log deve incluir as informações de tráfego de saída que podem ser analisadas para atividade de rede.
   
 ## <a name="data-attributes-for-different-vendors"></a>Atributos de dados para diferentes fornecedores
-<a name="BKMK_LogAndData"> </a>
 
 A tabela a seguir resume as informações nos logs de tráfego da web de vários fornecedores. **Verifique com seu fornecedor para obter as informações mais recentes.**
-  
-|**Fonte de dados**|**URL do aplicativo de destino**|**IP de aplicativo de destino**|**Username**|**Origem IP**|**Tráfego total**|**Bytes carregados**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Barracuda  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |Não  <br/> |
-|Azul pelo  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Ponto de verificação  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |Não  <br/> |
-|Cisco ASA  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |
-|Cisco FWSM  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |
-|Cisco Ironport WSA  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Cisco Meraki  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |Não  <br/> |
-|Clavister NGFW (Syslog)  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|SonicWall da Dell  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|FortiGate  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Juniper SRX  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Juniper SSG  <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|McAfee SWG  <br/> |**Sim** <br/> |Não  <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Meraki (Cisco)  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |Não  <br/> |Não  <br/> |
-|Microsoft Threat Management Gateway  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Redes Palo Alto  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Sophos  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |
-|Lula (comum)  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |
-|Lula (nativo)  <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |**Sim** <br/> |Não  <br/> |**Sim** <br/> |
-|Websense - relatório de detalhe investigação (CSV)  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Websense - registro de atividade da Internet (CEF)  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
-|Zscaler  <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |**Sim** <br/> |
+
+
+|                 Fonte de dados                  |    URL do aplicativo de destino    |    IP de aplicativo de destino     |       Nome de usuário       |      Origem IP       |    Tráfego total     |    Bytes carregados    |
+|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+|                  Barracuda                   | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |          Não          |
+|                  Azul pelo                   | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Ponto de verificação                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
+|              Cisco ASA (Syslog)              |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|           Cisco ASA com potência           | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Cisco FWSM                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|              Cisco Ironport WSA              | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Cisco Meraki                 | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
+|           Clavister NGFW (Syslog)            | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                SonicWall (anteriormente Dell)                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|            Digital artes i-FILTER             | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  FortiGate                   |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SSG                  |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  McAfee SWG                  | <strong>Sim</strong> |          Não          |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    TMG MS                    | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|              Redes Palo Alto              |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    Sophos                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|                Lula (comum)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
+|                Lula (nativo)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
+| Websense - relatório de detalhe investigação (CSV) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|    Websense - registro de atividade da Internet (CEF)    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                   Zscaler                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
    
 ## <a name="supported-vendor-firewalls-and-proxies"></a>Com suporte do fornecedor de firewalls e proxies
-<a name="BKMK_Supported"> </a>
 
 Segurança de aplicativo de nuvem do Office 365 suporta os seguintes firewalls e proxies.
   
-- Barracuda - Firewall de aplicativo da Web (W3C)
-    
+- Barracuda - Firewall de aplicativo da Web (W3C)  
 - Azul pelo Proxy SG - log de acesso (W3C)
-    
 - Ponto de verificação
-    
-- Cisco ASA Firewall (Observe que você deve definir o nível de informações como 6)
-    
+- Cisco ASA Firewall (certifique-se definir o nível de informações como 6)
+- Cisco ASA com potência   
 - Cisco IronPort WSA
-    
 - Cisco ScanSafe
-    
 - Cisco Merkai - o log de URLs
-    
-- Sonicwall da Dell
-    
+- Clavister NGFW (Syslog)
+- Digital artes i-FILTER
 - Fortinet Fortigate
-    
+- iboss Secure Cloud Gateway
 - Juniper SRX
-    
 - Juniper SSG
-    
 - Gateway da Web seguro McAfee
-    
 - Microsoft Forefront Threat Management Gateway (W3C)
-    
 - Série de Palo Alto Firewall
-    
+- SonicWALL (anteriormente Dell)   
 - Sophos SG
-    
+- Sophos XG
 - Sophos Cyberoam
-    
 - Lula (comum)
-    
 - Lula (nativo)
-    
 - Relatório de detalhe investigação Websense - soluções de segurança de Web - (CSV)
-    
 - Log de atividade de Internet Websense - soluções de segurança de Web - (CEF)
-    
 - Zscaler
     
 > [!NOTE]
-> Se uma fonte de dados que você gostaria de usar não é incluída aqui, você poderá solicitar que ele seja adicionado ao descoberta de aplicativo. Para fazer isso, quando você estiver criando um relatório, selecione **outra** **fonte**de dados. Digite o nome da fonte de dados que você está tentando carregar. Vamos examinar o log e permitem que você saiba se adicionamos suporte para esse tipo de log. 
+> Se uma fonte de dados que você gostaria de usar não é incluída aqui, você poderá solicitar que ele seja adicionado ao descoberta de aplicativo. Para fazer isso, quando você estiver criando um relatório, selecione **outra** **fonte**de dados. Digite o nome da fonte de dados que você está tentando carregar. Vamos examinar o log e permitem que você saiba se adicionamos suporte para esse tipo de log. Como alternativa, você pode [definir um analisador personalizado](https://docs.microsoft.com/cloud-app-security/custom-log-parser) que coincida com o seu formato. 
   
 ## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>Solucionar erros quando os arquivos de log são carregados
 
 Depois de carregar arquivos de log do tráfego da web, verifique o log de governança para ver se ocorreram erros. Se houver erros, use as informações na tabela a seguir para resolver esses erros.
   
-|**Erro**|**Descrição**|**Solução**|
+|**Erro**|**Descrição**|**Resolução**|
 |:-----|:-----|:-----|
 |Tipo de arquivo incompatíveis  <br/> |O arquivo carregado não é um arquivo de log válido. Por exemplo, um arquivo de imagem.  <br/> |Carrega um arquivo de texto, zip ou gzip que foi exportá-los diretamente de seu firewall ou proxy.  <br/> |
 |Erro interno  <br/> |Uma falha de recursos internos foi detectada.  <br/> |Clique em **Repetir** para executar novamente a tarefa.  <br/> |
