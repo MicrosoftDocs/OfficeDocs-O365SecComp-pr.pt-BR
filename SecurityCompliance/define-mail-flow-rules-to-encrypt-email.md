@@ -1,9 +1,8 @@
 ---
-title: Definir regras de fluxo de email para criptografar mensagens de email no Office 365
+title: Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Admins pode aprender a criar email regras de fluxo (também conhecido como regras de transporte) para criptografar e descriptografar mensagens usando o Office 365 Message Encryption (OME).
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194672"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466920"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir regras de fluxo de email para criptografar mensagens de email no Office 365
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365
 
 Como um administrador global do Office 365, você pode criar mail flow regras (também conhecido como regras de transporte) para ajudar a proteger mensagens de email enviadas e recebidas. Você pode configurar regras para criptografar qualquer mensagens de email de saída e remover a criptografia de mensagens criptografadas provenientes de dentro da organização ou de respostas a mensagens criptografadas enviadas de sua organização. Você pode usar o Centro de administração do Exchange (EAC) ou PowerShell do Exchange Online para criar estas regras. Além das regras de criptografia geral, você também pode optar por habilitar ou desabilitar as opções de criptografia de mensagem individual para usuários finais.
 
@@ -195,7 +194,7 @@ Quando os usuários de email enviam mensagens criptografadas, os destinatários 
 
 Confira informações detalhadas de sintaxe e parâmetro em [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Criptografia no Office 365](encryption.md)
 
