@@ -92,7 +92,7 @@
 ### [Criptografia de e-mail no Office 365](email-encryption.md)
 ### [OME (Criptografia de Mensagens do Office 365)](ome.md)
 #### [Configurar novos recursos de Criptografia de Mensagens do Office 365](set-up-new-message-encryption-capabilities.md)
-#### [Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365](https://docs.microsoft.com/pt-BR/office365/securitycompliance/define-mail-flow-rules-to-encrypt-mail.md)
+#### [Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365](define-mail-flow-rules-to-encrypt-email.md)
 #### [Gerenciar a Criptografia de Mensagens do Office 365](manage-office-365-message-encryption.md)
 #### [Perguntas frequentes sobre Criptografia de Mensagem do Office 365](ome-faq.md)
 #### [Revogar e-mails criptografados por criptografia de mensagens do Office 365](revoke-ome-encrypted-mail.md)
