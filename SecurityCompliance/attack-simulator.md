@@ -3,7 +3,7 @@ title: Simulador de ataque no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Como administrador global do Office 365, você pode usar o simulador de ataque para executar cenários de ataque realístico em sua organização. Isso pode ajudá-lo a identificar e encontrar vulnerável usuários antes de um ataque real atinge seu negócio.
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471994"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataque no Office 365
 
@@ -49,7 +49,7 @@ Certifique-se de que você e sua organização atendem aos seguintes requisitos 
     
 - Você é um administrador global do Office 365
     
-- Sua organização estiver usando [a autenticação multifator para usuários do Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- Sua organização estiver usando [a autenticação multifator para usuários do Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - Sua organização tem [Inteligência de ameaça do Office 365](office-365-ti.md), com simulador de ataque visível na segurança &amp; Centro de conformidade (vá para **gerenciamento de ameaça** \> **simulador de ataque**)<br/>![Gerenciamento de ameaça - simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ Esse ataque enfoca permitindo que você manipule a quem a mensagem é exibida pa
 
 ![Corpo do Email de redação](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-Você pode desenvolver o editor de HTML avançado diretamente no **corpo do Email** de campo próprio ou trabalhar com código fonte HTML. Há dois campos importantes para inclusão em HTML: 
+Você pode desenvolver o editor de HTML avançado diretamente no **corpo do Email** de campo próprio ou trabalhar com código fonte HTML.
   
 1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
     
@@ -118,7 +118,7 @@ Um ataque de senha de força bruta contra uma organização geralmente é utiliz
     
 3. Especifique o destinatário de destino. Um destinatário de destino deve ter um Exchange Online da caixa de correio para o ataque seja bem-sucedido.
     
-4. Especifique um conjunto de senhas a ser usado para o ataque. Você pode usar um arquivo de texto (. txt) para sua lista de senhas. O arquivo de texto não pode exceder 10 MB em tamanho de arquivo. Use uma senha por linha e certifique-se de incluir um retorno de carro após a última senha na sua lista.
+4. Especifique um conjunto de senhas a ser usado para o ataque. Para fazer isso, você pode usar um arquivo de texto (. txt) para sua lista de senhas. O arquivo de texto não pode exceder 10 MB em tamanho de arquivo. Use uma senha por linha e certifique-se de incluir um retorno de carro após a última senha na sua lista.
     
 5. Escolha **Concluir** para iniciar o ataque. 
     
