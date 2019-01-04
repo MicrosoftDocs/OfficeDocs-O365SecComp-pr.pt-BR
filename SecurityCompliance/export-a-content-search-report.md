@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Em vez de exportar os resultados reais de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade, você pode exportar apenas um relatório de resultados de pesquisa. O relatório contém um resumo dos resultados da pesquisa e um documento com informações detalhadas sobre cada item que deve ser exportado.
-ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
-ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
+ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283137"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544122"
 ---
 # <a name="export-a-content-search-report"></a>Exportar um relatório da Pesquisa de Conteúdo
 
@@ -57,6 +57,8 @@ Quando você exporta um relatório, ele será baixado para uma pasta que tem o m
     **Observação:** A Microsoft não fabrica extensões de terceiros ou complementos para aplicativos ClickOnce. Exportar resultados de pesquisa usando um navegador sem suporte com extensões de terceiros ou complementos não é suportado. 
 
 - Se o tamanho total estimado dos resultados retornados por uma pesquisa de conteúdo excede 20&nbsp;TB, exportar o relatório falhará. Para exportar um relatório com êxito, tente restringir o escopo e execute novamente a pesquisa para o tamanho estimado dos resultados seja menor que 20&nbsp;TB.
+
+- Exportando a pesquisa de conteúdo relata contagens contra o número máximo de exportações em execução ao mesmo tempo e o número máximo de exportações que um único usuário pode ser executado. Para obter mais informações sobre os limites de exportação, consulte [resultados de pesquisa de conteúdo de exportação da segurança do Office 365 & Centro de conformidade](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Gerar e faça o download de um relatório de pesquisa de conteúdo
 

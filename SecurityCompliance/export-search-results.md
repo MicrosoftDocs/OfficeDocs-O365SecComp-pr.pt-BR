@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte resultados da pesquisa de uma pesquisa de conteúdo no Centro de conformidade & segurança do Office 365 para um computador local. Resultados de email são exportados como arquivos PST. Conteúdo do SharePoint e do OneDrive para sites corporativos são exportadas como documentos nativos do Office. '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201575"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544112"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar resultados da pesquisa de conteúdo no Centro de conformidade a segurança do Office 365
 
@@ -77,10 +77,6 @@ Exportando os resultados de uma pesquisa de conteúdo envolve Preparando os resu
        </defaultProxy>
     </system.net>
     ```
-
-- Consulte a seção para obter uma descrição dos limites para exportar os resultados da pesquisa. 
-    
-- O tamanho máximo de um arquivo PST que pode ser exportado é 10 GB. Se você quiser alterar esse tamanho padrão, você pode editar o registro do Windows no computador que você usa para exportar os resultados da pesquisa. Consulte [alterar o tamanho dos arquivos PST ao exportar os resultados da pesquisa de descoberta eletrônica](change-the-size-of-pst-files-when-exporting-results.md).
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Etapa 1: Preparar resultados para exportação de pesquisa
 
@@ -99,13 +95,13 @@ A primeira etapa é preparar os resultados da pesquisa para a exportação. Quan
     > [!NOTE]
     > Se os resultados de uma pesquisa tiverem mais de 7 dias, você precisará atualizá-los. Se isso acontecer, cancele a exportação, clique em **Atualizar resultados de pesquisa** no painel de detalhes para a pesquisa selecionada e inicie a exportação novamente após os resultados serem atualizados.  
   
-6. Na página **exportar os resultados da pesquisa** , em **incluir estes itens da pesquisa**, escolha uma das seguintes opções:
+6. Na página **exportar os resultados da pesquisa** , em **Opções de saída**, escolha uma das seguintes opções:
     
-    - Exportar somente itens indexados
+    - Todos os itens, excluindo aquelas que têm o formato não reconhecido, são criptografados ou não foram indexados por outros motivos
     
-    - Exportar itens indexados e parcialmente indexados
+    - Todos os itens, incluindo aquelas que têm o formato não reconhecido, são criptografados ou não foram indexados por outros motivos
     
-    - Exportar itens indexados parcialmente somente
+    - Somente os itens que tenham um formato não reconhecido, são criptografados ou não foram indexados por outros motivos
     
     Consulte a seção de [informações adicionais](#more-information) para obter uma descrição sobre itens indexados como parcialmente são exportados. Para obter mais informações sobre itens indexados parcialmente, consulte [parcialmente indexados itens na pesquisa de conteúdo](partially-indexed-items-in-content-search.md).
     
@@ -205,8 +201,9 @@ Eis aqui para obter mais informações sobre como exportar os resultados da pesq
   - Você pode ter no máximo 10 exportações em execução ao mesmo tempo dentro de sua organização.
     
   - Um único usuário pode executar um máximo de três exportações ao mesmo tempo.
-    
-  - Exportando relatórios de pesquisa de conteúdo não conta em relação a qualquer um dos limites da exportação. 
+
+  > [!NOTE]
+  > Exportando somente os relatórios de uma pesquisa de conteúdo também conta em relação ao número de exportações em execução ao mesmo tempo e o número de exportações que um único usuário pode ser executado.
     
 - Conforme anteriormente mencionado, os resultados da pesquisa de caixas de correio e de sites são carregados para o local de armazenamento do Windows Azure (conforme descrito em [etapa 1: preparar resultados para exportação de pesquisa](#step-1-prepare-search-results-for-export)) a uma taxa máxima de 2 GB por hora.
     
