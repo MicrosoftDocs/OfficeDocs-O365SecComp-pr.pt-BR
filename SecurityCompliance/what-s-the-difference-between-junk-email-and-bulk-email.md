@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: Os clientes às vezes askwhat da diferença entre lixo eletrônico e mensagens de email em massa? O objetivo deste tópico é explicar a diferença e fornecem informações sobre as diferentes opções disponíveis para ambos no Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
+ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003150"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27733297"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Qual é a diferença entre lixo eletrônico e email em massa?
 
@@ -41,6 +41,6 @@ A maneira de gerenciar o email em massa não é uma decisão clara - afinal, se 
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Habilitar o controle de sensibilidade de email em massa na política de filtro de conteúdo
 
-Dependendo da política da sua empresa em mensagens de email em massa, os administradores podem selecionar um limite para atribuir o email em massa. A configuração é é configurável por meio de políticas de filtro de conteúdo no EAC. Confira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)) para as etapas. Você pode escolher uma configuração de limite de 1 a 9, onde 1 marca a maioria dos emails em massa como spam e 9 permite que a maioria dos emails em massa ao ser entregue. O serviço, em seguida, executa a ação configurada, por exemplo, enviar a mensagem para a pasta de lixo eletrônico do destinatário. 
+Dependendo da política da sua empresa em mensagens de email em massa, os administradores podem selecionar um limite para atribuir o email em massa. A configuração é configurável por meio de políticas de filtro de conteúdo no EAC. Confira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para as etapas. Você pode escolher uma configuração de limite de 1 a 9, onde 1 marca a maioria dos emails em massa como spam e 9 permite que a maioria dos emails em massa ao ser entregue. O serviço, em seguida, executa a ação configurada, por exemplo, enviar a mensagem para a pasta de lixo eletrônico do destinatário. 
   
 
