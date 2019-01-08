@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: Saiba como configurar a autenticação baseada em domínio de mensagem, relatórios e conformidade (DMARC) para validar as mensagens enviadas de sua organização do Office 365.
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255866"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750040"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar emails no Office 365
 
@@ -136,16 +136,16 @@ Para obter instruções sobre como configurar o DKIM para seu domínio, incluind
 Apesar de haver outras opções de sintaxe que não são mencionadas aqui, essas são as opções mais comumente usadas para o Office 365. Formar o registro TXT do DMARC para seu domínio no formato:
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 em que:
   
 - *é o domínio que você queira proteger.* Por padrão, o registro protege o email do domínio e todos os subdomínios. Por exemplo, se você especificar \_dmarc.contoso.com, em seguida, DMARC protege o email do domínio e todos os subdomínios, como housewares.contoso.com ou plumbing.contoso.com. 
     
-- *TTL* deve ser sempre equivalente a uma hora. A unidade usada para TTL, horas (1 hora), minutos (60 minutos) ou segundos (3600 segundos), varia dependendo do registrador de seu domínio. 
+- *TTL* deve sempre ser o equivalente de uma hora. A unidade usada para o TTL, ambos horas (1 hora), minutos (60 minutos) ou segundos (3.600 segundos), irá variar dependendo do registrador para o seu domínio. 
     
-- pct=100 indica que esta regra deve ser usada para 100% dos emails.
+- *pct = 100* indica que esta regra deve ser usada para 100% de email.
     
 - *diretiva* Especifica qual diretiva você deseja que o servidor de recebimento a seguir se DMARC falhar. Você pode definir a política como nenhum, quarentena, ou rejeitar. 
     
