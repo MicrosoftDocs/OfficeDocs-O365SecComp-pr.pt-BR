@@ -3,7 +3,7 @@ title: Exibir relatórios de segurança de email na segurança &amp; Centro de c
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Saiba como encontrar e usar os relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706415"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749325"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email na segurança &amp; Centro de conformidade
 
@@ -28,7 +28,7 @@ Uma variedade de relatórios de segurança de email estão disponíveis no [segu
   
 Os relatórios de segurança de email incluem o seguinte:
   
-- [Relatório de Status de proteção de ameaça](view-email-security-reports.md#tps) (novo)! 
+- [Relatório de Status de proteção de ameaça](view-email-security-reports.md#tps) 
     
 - [Relatório detecções de malware](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ Os relatórios de segurança de email incluem o seguinte:
     
 - [Relatório de mensagens relatado pelo usuário](view-email-security-reports.md#userreported) (novo)! 
     
-## <a name="threat-protection-status-report-new"></a>Relatório de Status de proteção (novo)! de ameaça
+## <a name="threat-protection-status-report"></a>Relatório de Status de proteção de ameaça
 
 O novo relatório de **Status de proteção de ameaça** é um relatório inteligente que mostra o email mal-intencionado que foi detectado e bloqueada pelo Exchange Online Protection. Este relatório mostra informações sobre email identificado como malware ou uma tentativa de phishing. 
 
@@ -176,7 +176,7 @@ Para exibir este relatório, no [segurança &amp; Centro de conformidade](https:
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quais permissões são necessárias para exibir esses relatórios?
 
-Para exibir e usar os relatórios descritos neste artigo, você deve ter uma função apropriada atribuída em ambos os a segurança &amp; Centro de conformidade e o Centro de administração do Exchange.
+Para exibir e usar os relatórios descritos neste artigo, **você deve ter uma função apropriada atribuída em ambos os a segurança &amp; Centro de conformidade e Exchange Admin Center**.
 
 - Para obter a segurança &amp; Centro de conformidade, você deve ter uma das seguintes funções atribuídas:
     - Gerenciamento de Organização

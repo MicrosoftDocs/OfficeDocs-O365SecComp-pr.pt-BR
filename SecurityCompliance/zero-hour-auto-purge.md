@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180841"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749315"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza Automática Zero Hora – proteção contra spam e malware
 
@@ -30,7 +30,7 @@ Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que
   
 ZAP está disponível com o Exchange Online Protection for incluído com qualquer assinatura do Office 365 que contenha caixas de correio Exchange Online padrão.
 
-ZAP está ativado por padrão, mas as condições a seguir devem ser atendidas:
+ZAP está ativado por padrão, mas as seguintes condições devem ser atendidas:
   
 - **Ação de spam** é definido para **mover a mensagem para a pasta Lixo eletrônico**. <br/>Você também pode criar uma nova política de filtro de spam que se aplica somente a um conjunto de usuários se não desejar que todas as caixas de correio a ser filtrada pelo ZAP.
 
@@ -62,7 +62,7 @@ Permitir listas, [regras de fluxo de correio](https://go.microsoft.com/fwlink/p/
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP movida sua mensagem
 
-Se você quiser ver se ZAP movida sua mensagem, você pode usar o [relatório de Status de proteção de ameaça](view-email-security-reports.md#threat-protection-status-report-new) (tanto na [Ameaça Explorer](use-explorer-in-security-and-compliance.md)).
+Se você quiser ver se ZAP movida sua mensagem, você pode usar o [relatório de Status de proteção de ameaça](view-email-security-reports.md#threat-protection-status-report) (tanto na [Ameaça Explorer](use-explorer-in-security-and-compliance.md)).
     
 ## <a name="to-disable-zap"></a>Para desabilitar ZAP
   
@@ -88,7 +88,7 @@ ZAP não move mensagens em quarentena na caixa de entrada no momento.
   
 Regras criadas por administradores (regras de fluxo de email) ou regras de bloqueio e permitir têm precedência. Essas mensagens são excluídas dos critérios de recurso.
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Proteção antispam de emails do Office 365](anti-spam-protection.md)
   

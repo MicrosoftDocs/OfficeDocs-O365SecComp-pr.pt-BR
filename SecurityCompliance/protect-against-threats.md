@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706055"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749305"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteja-se contra ameaças do Office 365
 
@@ -27,11 +27,11 @@ Com o Office 365 Enterprise, você pode ajudar a proteger sua organização cont
 
 Se você estiver usando um domínio personalizado no Office 365, ajudam interromper fraude remetente da sua organização, melhorar a segurança de email e proteger reputação do seu domínio.
   
-- [Impedir a falsificação de SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [Validar emails de saída com DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Validar emails com DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; antimalware
 
@@ -39,11 +39,11 @@ Saiba mais sobre a pontuação de anti-spam do Office 365, a filtragem de conex�
   
 - [Anti-spam &amp; proteção antimalware](anti-spam-and-anti-malware-protection.md)
     
-- [Ativar o log de email]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [Habilitar a auditoria de caixa de correio no Office 365](enable-mailbox-auditing.md)
     
 - [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md)
     
-- [Enviar conteúdo suspeito à Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [Enviar malware e não malware para a Microsoft para análise](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>Proteção Avançada contra Ameaças
 
