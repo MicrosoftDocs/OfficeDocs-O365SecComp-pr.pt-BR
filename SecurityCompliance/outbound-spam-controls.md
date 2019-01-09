@@ -1,5 +1,5 @@
 ---
-title: Controlando o spam de saída no Office 365
+title: Como controlar spam de saída no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Se sua organização envia muita de email em massa que está marcado como spam, você poderia obter bloqueado para envio de email com o Office 365. Leia este artigo para saber mais sobre por que isso acontece e o que você pode fazer sobre ele.
-ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: a18e584a260218a53494ef49dd2d7380a0a9a3f1
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977576"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769776"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Controlando o spam de saída no Office 365
+# <a name="controlling-outbound-spam-in-office-365"></a>Como controlar spam de saída no Office 365
 
 Pegamos Gerenciando spam de saída seriamente porque nossa é um serviço compartilhado.  Há muitos clientes atrás de um pool compartilhado de recursos, onde se um cliente envia spam de saída, ele pode prejudicar a reputação de IP de saída do serviço e afeta a deliverability bem-sucedida de email para outros clientes. É desleal ao cliente A se cliente B envia spam e vários 3º terceiros IP listas de bloqueio de listam o endereço IP que ele usa.
 
@@ -50,7 +50,7 @@ Uma única mensagem marcada como spam pode ser uma misclassification pelo mecani
 
 É difícil obter um equilíbrio entre os clientes que desejam enviar um grande volume de email versus protegendo o serviço de contas comprometidas e emailers em massa com as práticas de aquisição de lista ruim. Novamente, o custo de uma saída IP inicial em uma lista de bloqueios de terceiros 3º é maior que o bloqueio de um cliente de enviar emails de saída. Conforme descrito no [Exchange Online Service Description](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits), usando o EOP para enviar emails em massa não é um com suporte ao uso do serviço e é permitido somente em uma base "melhor esforço". Para clientes que desejam enviar email em massa, recomendamos o seguinte:
 
-r. **enviar o email em massa por meio de seus próprios servidores de email no local**. Isso significa que o cliente terá que manter sua própria infra-estrutura de email para esse tipo de email.
+r. **enviar o email em massa por meio do seu próprio local de servidores de email**. Isso significa que o cliente terá que manter sua própria infra-estrutura de email para esse tipo de email.
 
 b. **emailer de em massa de terceiros de uso um 3rd para enviar a comunicação em massa**. Há várias 3º participante em massa emailers cujo negócio único é enviar emails em massa. Eles podem trabalhar com os clientes para garantir que eles têm boas práticas enviando e eles têm recursos dedicados ao impô-la. 
 

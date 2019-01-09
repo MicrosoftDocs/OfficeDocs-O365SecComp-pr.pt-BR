@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artigo descreve como Office 365 reduz contra ataques de phishing que usa falsificado domínios do remetente, ou seja, os domínios que são falsificados. Ele realiza isso analisando as mensagens e bloquear aqueles que podem ser autenticados neithe usando os métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing organizações no Office 365 estão expostas a.
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194712"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769855"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -414,21 +414,21 @@ Em geral, a diretiva aplicada a uma mensagem é identificada no cabeçalho X-For
   
 |**Prioridade**|**Política**|**Categoria**|**Onde gerenciadas?**|**Aplica-se a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|3   <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|4   <br/> |Falsificação  <br/> |REALIZAR A FALSIFICAÇÃO  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553), [inteligência de falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas as organizações  <br/> |
-|5   <br/> |Spam  <br/> |SPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|6   <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|7   <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP  <br/> |
-|8   <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP <br/> |
+|1  <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|3  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|4  <br/> |Falsificação  <br/> |REALIZAR A FALSIFICAÇÃO  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553), [inteligência de falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas as organizações  <br/> |
+|5  <br/> |Spam  <br/> |SPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|6  <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|7  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP  <br/> |
+|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP <br/> |
    
 Se você tiver vários diferentes políticas AntiPhishing, aquele com a prioridade mais alta serão aplicadas. Por exemplo, suponha que você tem duas políticas:
   
 |**Política**|**Prioridade**|**Representação de domínio do usuário**|**Antifalsificação**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |Ativado  <br/> |Desativado  <br/> |
-|B  <br/> |2   <br/> |Desligado  <br/> |Em  <br/> |
+|A  <br/> |1  <br/> |Ativado  <br/> |Desativado  <br/> |
+|B  <br/> |2  <br/> |Desligado  <br/> |Em  <br/> |
    
 Se uma mensagem entra em ação e é identificada como representação de falsificação e o usuário e o mesmo conjunto de usuários destinado a política A e B de política, e em seguida, a mensagem é tratada como um falso mas nenhuma ação é aplicada desde e falsificação está desativado , e realizar a FALSIFICAÇÃO é executado em uma prioridade maior (4) que a representação de usuário (8).
   
@@ -444,7 +444,7 @@ No entanto, há um cenário legítimo onde antifalsificação deve ser desabilit
   
 ![Registro MX cliente não aponta para o Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-O outro servidor pode ser um servidor de email no local do Exchange, um dispositivo como Ironport, a filtragem de email ou serviço hospedado de nuvem de outro.
+O outro servidor pode ser uma troca de servidor de email, um dispositivo como Ironport, a filtragem de email no local ou serviço hospedado de nuvem de outro.
   
 Se o registro MX do domínio do destinatário não apontar para o Office 365, não é necessário desabilitar antifalsificação porque o Office 365 procura registro MX do seu domínio receptor e suprime antifalsificação se ela aponta para outro serviço. Se você não souber se o seu domínio tem outro servidor na frente, você pode usar um site como MX Toolbox para procurar o registro MX. Ele pode dizer algo semelhante ao seguinte:
   
@@ -456,7 +456,7 @@ No entanto, se o registro MX do domínio do destinatário *does* apontar para o 
   
 ![Diagrama de roteamento de reconfiguração de destinatário](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-Registro MX do domínio contoso.com aponta para o servidor no local, enquanto o registro MX do domínio @office365.contoso .net aponta para o Office 365, porque ele contém \*. protection.outlook.com, ou \*. eo.outlook.com no registro MX:
+Registro de MX do domínio contoso.com aponta para o servidor local, enquanto o registro MX do domínio @office365.contoso .net aponta para o Office 365, porque ele contém \*. protection.outlook.com, ou \*. eo.outlook.com no registro MX:
   
 ![Pontos de registro MX para o Office 365, portanto, provavelmente destinatário reescrever](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
@@ -635,7 +635,7 @@ Se você for um administrador de domínio, mas não for um cliente do Office 365
     
 - Se você tiver remetentes de mala direta que estão transmitindo um email em seu nome, você deve trabalhar com eles para enviar email de uma forma, de forma que o domínio de envio no campo From: endereço (se ela pertence a você) se alinha com o domínio que passa SPF ou DMARC.
     
-- Se você tiver no local servidores de email ou enviá-lo a partir de um provedor de Software como serviço ou um serviço de hospedagem de nuvem, como o Microsoft Azure, GoDaddy, rack, Amazon Web Services, ou semelhante, você deve assegurar que eles são adicionados ao seu registro SPF.
+- Se você tiver local servidores de email ou enviá-lo a partir de um provedor de Software como serviço ou um serviço de hospedagem de nuvem, como o Microsoft Azure, GoDaddy, rack, Amazon Web Services, ou semelhante, você deve assegurar que eles são adicionados ao seu registro SPF.
     
 - Se você for um pequeno domínio que é hospedado por um ISP, você deve configurar seu registro SPF acordo com as instruções fornecidas a você pelo ISP. A maioria dos provedores fornecem esses tipos de instruções e podem ser encontradas nas páginas de suporte da empresa.
     

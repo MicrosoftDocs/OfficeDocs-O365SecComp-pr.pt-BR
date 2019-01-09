@@ -3,7 +3,7 @@ title: Entrega dinâmica e visualização de anexos do Office 365 ATP seguros
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/08/2018
+ms.date: 01/08/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,34 +13,36 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Ao configurar suas políticas de anexos seguros ATP, escolha entrega dinâmica para evitar atrasos de mensagem e permitem que as pessoas visualizem anexos que estão sendo examinados.
-ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238423"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769825"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinâmica e visualização de anexos do Office 365 ATP seguros
 
 **Resumo**: entrega dinâmica é uma opção que pode ser selecionada para [ATP anexos de seguros](atp-safe-attachments.md). Leia este artigo para saber mais sobre a entrega dinâmicos e recursos de visualização de anexo no [ATP anexos de seguros no Office 365](atp-safe-attachments.md).
+
+Quando [as políticas de anexos de seguros ATP são configuradas](set-up-atp-safe-attachments-policies.md) para sua organização, há várias opções para como anexos de email são manipulados. Isso inclui **Bloquear**, **Substitua**e **Entrega dinâmico**. Dependendo de como as políticas de anexos de seguros ATP são configuradas, os destinatários do email podem sofrer um atraso secundário na entrega de email enquanto seus anexos são verificados. Para evitar atrasos de mensagem, escolha **Entrega dinâmico**.
   
 ## <a name="how-dynamic-delivery-works"></a>Como funciona a entrega dinâmico
-
-Quando [as políticas de anexos de seguros ATP são configuradas](set-up-atp-safe-attachments-policies.md) para sua organização, há várias opções para como anexos de email são manipulados. Isso inclui **Bloquear**, **Substitua**e **Entrega dinâmico**. Dependendo de como as políticas de anexos de seguros ATP são configuradas, os destinatários de email podem levar algum secundária na entrega de email enquanto seus anexos são verificados. Para evitar atrasos de mensagem, escolha **Entrega dinâmico**.
   
-Entrega dinâmica elimina atrasos de email, enviando o corpo de uma mensagem de email por meio para o destinatário com um espaço reservado para cada anexo de email. O espaço reservado permanece até que uma cópia do anexo é examinada e determinada seguros pela [ATP anexos de seguros](atp-safe-attachments.md). A maioria dos PDFs e Office documentos podem ser visualizados no modo de segurança, enquanto a verificação ATP está em andamento. Se um anexo não é compatível com o Visualizador de entrega dinâmico, os destinatários de email Consulte um espaço reservado de anexo até que a verificação de anexos de seguros ATP seja concluída.
+Entrega dinâmica elimina atrasos de email, enviando o corpo de uma mensagem de email por meio para o destinatário com um espaço reservado para cada anexo de email. O espaço reservado permanece até que uma cópia do anexo é examinada e determinada seguros pela [ATP anexos de seguros](atp-safe-attachments.md). 
 
 - Como cada anexo estiver desmarcado, ele está disponível para abrir ou baixar. 
 
 - Se um anexo é determinado mal-intencionado, ela será enviada para quarentena, onde uma pessoa na equipe de segurança da sua organização (por exemplo, um administrador global do Office 365 ou segurança) pode [Gerenciar mensagens em quarentena no Office 365](manage-quarantined-messages-and-files.md).
 
-Com o fornecimento dinâmico, os destinatários do email podem ler e responder às suas mensagens de email imediatamente, sabendo que seus anexos estão sendo analisados. 
+A maioria dos PDFs e Office documentos podem ser visualizados no modo de segurança, enquanto a verificação ATP está em andamento. Se um anexo não é compatível com o Visualizador de entrega dinâmico, os destinatários de email Consulte um espaço reservado de anexo até que a verificação de anexos de seguros ATP seja concluída.
+
+Com o fornecimento dinâmico, pessoas podem ler e responder às suas mensagens de email imediatamente, enquanto seus anexos estão sendo analisados. 
 
 Anexos de seguros ATP verificação leva coloque na mesma região onde estão seus dados do Office 365. Para obter mais informações sobre Geografia do Centro de dados, consulte [onde estão seus dados localizados?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>O que acontece quando alguém encaminha um email que contenha um anexo?
 
-Suponha que uma organização está usando dinâmico de entrega para a sua [política de anexos de ATP seguros](set-up-atp-safe-attachments-policies.md)e alguém recebe um email que contenha um anexo. Agora suponha que a pessoa está prestes a encaminhar a mensagem de email para outra pessoa. O que acontece? Isso depende se os destinatários adicionais são incluídos nas políticas de anexos de ATP seguros.
+Suponha que uma organização está usando dinâmico de entrega para a sua [política de anexos de ATP seguros](set-up-atp-safe-attachments-policies.md)e alguém recebe um email que contenha um anexo. Agora suponha que a pessoa encaminhe a mensagem de email para outra pessoa. O que acontece? Isso depende se os destinatários adicionais são incluídos nas políticas de anexos de ATP seguros.
   
 - Se um destinatário é coberto por uma política de anexos de seguros ATP usando a opção de entrega dinâmico, o receptor vê espaço reservado, com a capacidade de visualizar arquivos compatíveis.
     
@@ -62,13 +64,13 @@ Há determinadas situações em que a entrega dinâmica não é suportada. Isso 
     
 - Mensagens de email que são roteadas de ausência temporária e, em seguida, que voltou ao caixa de correio do usuário usando regras personalizadas
     
-- Mensagens que são movidas (automática ou manualmente) fora da caixa de correio hospedada e em outros locais, incluindo pastas de arquivo morto
+- Mensagens de email que serão movidas (automática ou manualmente) fora da caixa de correio hospedada e em outros locais, incluindo pastas de arquivo morto
     
-- Mensagens que são excluídas
+- Mensagens de email excluídas
     
 - Pasta de pesquisa de caixa de correio de um usuário que está em um estado de erro
     
-- Ambientes em que um administrador do Exchange Online tiver habilitado Exclaimer. (Consulte [mensagens com anexos não são entregues quando são usados ATP dinâmicos de entrega e Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+- Ambientes em que um administrador do Exchange Online tiver habilitado Exclaimer. Para resolver esse problema, consulte [mensagens com anexos não são entregues quando ATP dinâmicos de entrega e Exclaimer são usados](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
-- Mensagens criptografadas com o Secure/Multipurpose Internet Mail Extensions ([S/MIME](s-mime-for-message-signing-and-encryption.md))
+- Mensagens criptografadas com o [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
     

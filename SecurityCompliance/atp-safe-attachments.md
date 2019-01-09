@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 01/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: O recurso de anexos seguros fornece verificação de tempo do clique de anexos de email. Uso de anexos seguros para proteger sua organização contra pessoas arquivos mal-intencionados enviar ou receber no email.
-ms.openlocfilehash: e09c9abec7485408f102fa6c20d14b91d9c2bf36
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238433"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769835"
 ---
 # <a name="office-365-atp-safe-attachments"></a>O Office 365 ATP Safe anexos
 
@@ -39,13 +39,13 @@ Aqui estão dois exemplos de anexos de seguros ATP no trabalho.
     
 - **Exemplo 2: o arquivo no SharePoint Online** Suponha que Jean recebida de um arquivo e carregado-lo em uma biblioteca no SharePoint Online. Jean compartilha o link para o arquivo com o restante da equipe, não sabendo que o arquivo é realmente mal-intencionado. Felizmente, [ATP para SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md) detecta o arquivo mal-intencionado e bloqueia a ele. Alguns dias mais tarde, Chris vai para abrir o documento. Embora Chris pode ver que o arquivo estiver listada, Chris não podem abrir ou compartilhá-lo, o que impede que o computador de Chris e outros o arquivo mal-intencionado. 
     
-Diretivas de anexos de seguros ATP podem ser aplicadas a pessoas específicas ou grupos em sua organização ou para todo o seu domínio. Para saber mais, consulte **[Configurar políticas de anexos de ATP seguros no Office 365](set-up-atp-safe-attachments-policies.md)**. 
+Anexos de seguros ATP verificação leva coloque na mesma região onde estão seus dados do Office 365. Para obter mais informações sobre Geografia do Centro de dados, consulte [onde estão seus dados localizados?](https://products.office.com/where-is-your-data-located?geo=All) 
+
+Diretivas de anexos de seguros ATP podem ser aplicadas a pessoas específicas ou grupos em sua organização ou para todo o seu domínio. Além disso, as diretivas de anexos de seguros ATP podem ser configuradas para usar anexos de espaço reservado enquanto estão sendo examinados anexos reais. Para saber mais, consulte **[Configurar políticas de anexos de ATP seguros no Office 365](set-up-atp-safe-attachments-policies.md)**. 
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Como obter ATP anexos de seguros
 
-O recurso de anexos de seguros ATP é parte da [Proteção avançada de ameaça](office-365-atp.md), que está incluído no Microsoft 365 Enterprise, Office 365 Enterprise E5 e Microsoft 365 Business. 
-  
-O recurso de anexos de seguros ATP aplica-se quando:
+O recurso de anexos de seguros ATP é parte da [Proteção de ameaça avançadas do Office 365](office-365-atp.md). Os recursos de anexos de seguros ATP se aplicam quando:
   
 - Configurar políticas de anexos de ATP seguros. (Consulte [Configurar políticas de anexos de ATP seguros no Office 365](set-up-atp-safe-attachments-policies.md)).
     
@@ -53,11 +53,12 @@ O recurso de anexos de seguros ATP aplica-se quando:
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Como saber se a proteção de anexos de seguros ATP é in-loco
 
- [Anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) devem ser definidas em ordem para proteção de anexos de seguros ATP estar em vigor. 
-  
 Uma boa maneira de ver como o serviço está funcionando está exibindo [relatórios de proteção avançada de ameaça](view-reports-for-atp.md).
+
+
+[Anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) devem ser definidas em ordem para proteção de anexos de seguros ATP estar em vigor.   
   
-Além disso, a tabela a seguir descreve alguns cenários de exemplo. Em todos os casos, assumimos que a organização tiver o Office 365 Enterprise E5, que inclui a proteção avançada de ameaça.
+A tabela a seguir descreve alguns cenários de exemplo. Em todos os casos, assumimos que a organização tiver uma assinatura do Office 365 que inclui a proteção avançada de ameaça.
   
 |**Cenário de exemplo**|**Proteção de anexos de seguros ATP se aplicam neste caso?**|
 |:-----|:-----|

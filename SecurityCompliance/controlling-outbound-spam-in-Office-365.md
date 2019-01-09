@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Se sua organização envia muita de email em massa que está marcado como spam, você poderia obter bloqueado para envio de email com o Office 365. Leia este artigo para saber mais sobre por que isso acontece e o que você pode fazer sobre ele.
-ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2d198bc1b61da429f45f0d1f54c63876d59d890f
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972243"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769805"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Como controlar spam de saída no Office 365
 
@@ -47,7 +47,7 @@ Pegamos Gerenciando spam de saída seriamente porque nossa é um serviço compar
 
 É difícil obter um equilíbrio entre os clientes que desejam enviar um grande volume de email versus protegendo o serviço de contas comprometidas e emailers em massa com as práticas de aquisição de lista ruim. Novamente, o custo de uma saída IP inicial em uma lista de bloqueios de terceiros 3º é maior que o bloqueio de um cliente de enviar emails de saída. Conforme descrito no [Exchange Online Service Description](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits), usando o EOP para enviar emails em massa não é um com suporte ao uso do serviço e é permitido somente em uma base "melhor esforço". Para clientes que desejam enviar email em massa, recomendamos o seguinte:
 
-1. **Enviar o email em massa por meio de seus próprios servidores de email no local**. Isso significa que o cliente terá que manter sua própria infra-estrutura de email para esse tipo de email.
+1. **Enviar o email em massa por meio do seu próprio local de servidores de email**. Isso significa que o cliente terá que manter sua própria infra-estrutura de email para esse tipo de email.
 
 2. **Use um 3rd emailer em massa para enviar a comunicação em massa de terceiros**. Há várias 3º participante em massa emailers cujo negócio único é enviar emails em massa. Eles podem trabalhar com os clientes para garantir que eles têm boas práticas enviando e eles têm recursos dedicados ao impô-la. 
 
