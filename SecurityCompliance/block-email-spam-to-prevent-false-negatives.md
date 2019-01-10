@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: Dicas para configurar o filtro de spam do Office 365 a fim de ajudar a bloquear spam e evitar mensagens de falso negativo. Um administrador usa o filtro antispam do Office 365 para evitar o envio de spam para as caixas de entrada de usuários.
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523947"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769865"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos
 
@@ -79,7 +79,7 @@ O serviço do EOP foi projetado para respeitar os remetentes confiáveis e bloqu
   
 - Se uma mensagem passar pela filtragem de spam normal no EOP e, em seguida, for entregue a um servidor local do Exchange e o EOP atribuir um veredito de spam SCL 1-4 (não spam), a lista local de remetentes bloqueados dos usuários substituirá o veredito do filtro de spam do EOP e a entregará à sua pasta Lixo Eletrônico.
     
-- Se uma mensagem no EOP receber um SCL -1 de uma regra de fluxo de email do Exchange, ou porque o endereço IP ou domínio está em sua lista de permissões, o SCL será propagado para o servidor local do Exchange usando conectores. Nesse caso, a lista de remetentes bloqueados do usuário não será aplicada. Para alterar isso, crie uma regra de fluxo de email local que define o SCL como 0. Isso fará com que o Outlook aplique a lista de remetentes bloqueados local do usuário.
+- Se uma mensagem no EOP recebe um SCL -1 de uma regra de fluxo de email do Exchange, ou porque o endereço IP ou domínio está em sua lista de permissões, o SCL será propagado para o servidor local do Exchange usando conectores. Nesse caso, a lista de remetentes bloqueados do usuário não será aplicada. Para alterar isso, crie uma regra de fluxo de email local que define o SCL como 0. Isso fará com que o Outlook aplique a lista de remetentes bloqueados do local do usuário.
     
 **Para configurar uma regra de fluxo de email a fim de impedir que as mensagens sejam entregues na caixa de entrada dos usuários usando a lista de remetentes bloqueados**
   
@@ -97,9 +97,8 @@ O serviço do EOP foi projetado para respeitar os remetentes confiáveis e bloqu
 > Se você usar uma regra de fluxo de email para alterar o valor do SCL para 0 (ou para qualquer valor diferente de -1), todas as opções de lixo eletrônico do Outlook serão aplicadas à mensagem. Isso significa que as listas confiáveis e bloqueadas serão cumpridas, mas também significa que as mensagens que não têm endereços nas listas bloqueadas ou confiáveis serão possivelmente marcadas como lixo eletrônico pelo processamento do filtro de lixo eletrônico no lado do cliente. Se você quiser que o Outlook processe as listas bloqueadas e confiáveis, mas não use o filtro de lixo eletrônico no lado do cliente, defina a opção "Sem Filtragem Automática" nas Opções de Lixo Eletrônico do Outlook. "Sem Filtragem Automática" é a opção padrão nas versões mais recentes do Outlook, mas você deve confirmar se essa configuração está presente, a fim de garantir que o filtro de lixo eletrônico do lado do cliente não seja aplicado às mensagens. Como administrador, você pode impor a desativação da filtragem de Lixo Eletrônico do Outlook seguindo as instruções em [Outlook: configuração de política para desativar a IU de lixo eletrônico e o mecanismo de filtragem](https://support.microsoft.com/pt-BR/kb/2180568).
   
 ## <a name="see-also"></a>Confira também
-<a name="BKMK_please_comment"> </a>
 
-[Proteção antispam de emails do Office 365](anti-spam-protection.md)
+[Proteção anti-spam de emails do Office 365](anti-spam-protection.md)
   
 [Impedir falsos positivos marcados como spam usando uma lista confiável ou outras técnicas](prevent-email-from-being-marked-as-spam-0.md)
   
