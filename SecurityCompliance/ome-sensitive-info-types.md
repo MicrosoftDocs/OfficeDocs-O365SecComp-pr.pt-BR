@@ -3,7 +3,7 @@ title: Nova política de criptografia de mensagem do Office 365 para informaçõ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumo: Automaticamente aplicada a política de criptografia de mensagem do Office 365 para tipos de informações confidenciais aplicação a todos os locatários.'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752078"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789449"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Política de criptografia de mensagem do Office 365 para informações confidenciais
 
@@ -30,7 +30,7 @@ Sua organização receberá uma notificação no Centro de mensagem do Office 36
 
 ## <a name="sensitive-information-type-policy-details"></a>Detalhes de política do tipo de informações confidenciais
 
-Será criada uma regra de fluxo de email do Exchange na sua organização que serão automaticamente criptografados emails indo fora da sua organização com o *Criptografar somente* se eles contêm os seguintes tipos de informações confidenciais de política:
+Será criada uma regra de fluxo de email do Exchange na sua organização que serão automaticamente criptografados emails indo fora da sua organização com o *Criptografar somente* se os emails ou seus anexos contenham os seguintes tipos de informações confidenciais de política:
 
 - Número de roteamento ABA
 - Número de cartão de crédito
@@ -70,6 +70,6 @@ Se você gostaria de recusar essa alteração, siga estas etapas:
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>Como desabilitar o a diretiva automática?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>Como desabilitar ou personalizar a diretiva automática?
 
-Se você não tiver recusar essa alteração e a regra de correio do Exchange tiver sido criada, você pode [Desabilitar a regra](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) indo para **fluxo de email** > **regras** em que o administrador do Exchange center (EAC) e desabilitar a regra "*criptografar saída emails confidenciais (sem regra caixa)*".
+Se você não tiver recusar essa alteração e a regra de fluxo de email do Exchange tiver sido criada, você pode [desabilitar ou editar a regra](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) indo para **fluxo de email** > **regras** em que o administrador do Exchange center (EAC) e desabilitar a regra "*criptografar emails de saída confidenciais (sem regra caixa)*".

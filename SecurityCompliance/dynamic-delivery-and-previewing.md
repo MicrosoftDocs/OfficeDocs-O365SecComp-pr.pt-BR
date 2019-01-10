@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Ao configurar suas políticas de anexos seguros ATP, escolha entrega dinâmica para evitar atrasos de mensagem e permitem que as pessoas visualizem anexos que estão sendo examinados.
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769825"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789459"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinâmica e visualização de anexos do Office 365 ATP seguros
 
@@ -35,6 +35,9 @@ Entrega dinâmica elimina atrasos de email, enviando o corpo de uma mensagem de 
 - Se um anexo é determinado mal-intencionado, ela será enviada para quarentena, onde uma pessoa na equipe de segurança da sua organização (por exemplo, um administrador global do Office 365 ou segurança) pode [Gerenciar mensagens em quarentena no Office 365](manage-quarantined-messages-and-files.md).
 
 A maioria dos PDFs e Office documentos podem ser visualizados no modo de segurança, enquanto a verificação ATP está em andamento. Se um anexo não é compatível com o Visualizador de entrega dinâmico, os destinatários de email Consulte um espaço reservado de anexo até que a verificação de anexos de seguros ATP seja concluída.
+
+> [!TIP]
+> Se você estiver usando um dispositivo móvel e PDFs não estão sendo processados no Visualizador de entrega dinâmico em um primeiro momento, tente fazer o login no Office 365 usando o navegador móvel.
 
 Com o fornecimento dinâmico, pessoas podem ler e responder às suas mensagens de email imediatamente, enquanto seus anexos estão sendo analisados. 
 
@@ -73,4 +76,4 @@ Há determinadas situações em que a entrega dinâmica não é suportada. Isso 
 - Ambientes em que um administrador do Exchange Online tiver habilitado Exclaimer. Para resolver esse problema, consulte [mensagens com anexos não são entregues quando ATP dinâmicos de entrega e Exclaimer são usados](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - Mensagens criptografadas com o [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
-    
+
