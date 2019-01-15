@@ -3,6 +3,7 @@ title: Visão geral do Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Segurança de aplicativo de nuvem do Office 365 oferece ideias sobre atividades suspeitas no Office 365 para que você possa investigar situações em que são potencialmente problemáticas e, se necessário, execute uma ação para solucionar problemas de segurança. '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706395"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014923"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Visão geral do Office 365 Cloud App Security
   
@@ -39,7 +40,7 @@ Segurança de aplicativo de nuvem do Office 365 oferece percepção atividades s
   
 Você pode obter o portal de segurança de aplicativo de nuvem do Office 365 através de segurança do Office 365 &amp; Centro de conformidade. Aqui está uma boa maneira de fazê-la:
   
-1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**. <br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
     
@@ -47,7 +48,7 @@ Você pode obter o portal de segurança de aplicativo de nuvem do Office 365 atr
     
 ## <a name="policies"></a>Diretivas
 
-O Office 365 segurança de aplicativo de nuvem trabalha com as políticas definidas para sua organização. Com a segurança de aplicativo de nuvem do Office 365, sua organização obtém 10 políticas de detecção de anomalia predefinidos e vários modelos de políticas de atividade. Essas diretivas são projetadas para detectar problemas gerais, identificar usuários de log de um endereço IP riscado, detectar ransomware atividades, detectar atividades de administrador de não-corporativos endereços IP e muito mais.
+O Office 365 segurança de aplicativo de nuvem trabalha com as políticas definidas para sua organização. Com a segurança de aplicativo de nuvem do Office 365, sua organização obtém muitos políticas de detecção de anomalia predefinidos e vários modelos de políticas de atividade. Essas diretivas são projetadas para detectar problemas gerais, identificar usuários de log de um endereço IP riscado, detectar ransomware atividades, detectar atividades de administrador de não-corporativos endereços IP e muito mais.
   
 ![No portal do CAS, selecione controle \> modelos para exibir ou criar modelos de política](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
@@ -91,17 +92,17 @@ Você pode usar os logs de tráfego da web com segurança de aplicativo de nuvem
   
 [Saiba mais sobre as fontes de dados e logs de tráfego da web para segurança de aplicativo de nuvem do Office 365](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>Permissões de aplicativo
+## <a name="oauth-apps"></a>Aplicativos do OAuth
 
 Com a segurança de aplicativo de nuvem do Office 365, você pode permitir ou impedir que as pessoas na sua organização para usar aplicativos de terceiros que acessam dados no Office 365.
   
-![O CAS O365, você pode acessar a página Gerenciar permissões de aplicativo no menu investigar.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![O365 CAS, você pode acessar a página de aplicativos gerenciar OAuth no menu investigar.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-Para acessar esta página, vá para **investigar** \> **permissões do aplicativo**. 
+Para acessar esta página, vá para **investigar** \> **OAuth apps**. 
   
 ![No portal do O365 CAS, escolha investigar.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Gerenciar permissões de aplicativo usando o Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+[Gerenciar aplicativos do OAuth usando o Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Painel de descoberta de nuvem
 

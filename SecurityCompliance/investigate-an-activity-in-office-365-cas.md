@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Com a segurança de aplicativo de nuvem do Office 365, você pode ver o que está acontecendo no seu ambiente do Office 365 consultando e investigando atividades e contas. '
-ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706455"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014893"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Investigar uma atividade no Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ O Office 365 segurança de aplicativo de nuvem funciona com o [log de auditoria 
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Como chegar à página de log de atividade
 
-1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. (Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).)
+1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. (Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).)
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     

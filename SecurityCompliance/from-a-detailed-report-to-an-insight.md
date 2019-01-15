@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Saiba como você pode mover de um relatório detalhado para um insight com ações recomendadas na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706245"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014973"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Passo a passo – de um relatório detalhado para um insight
 
@@ -30,7 +30,7 @@ Essa é uma das diversas orientações para a segurança &amp; Centro de conform
 
 Vamos examinar o fluxo de um relatório detalhado para um insight e ações. (Isto é um exemplo breve [antispam e antimalware](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Começamos com [segurança &amp; Centro de conformidade](https://security.microsoft.com) relatórios. (Vá para **relatórios** \> **Dashboard**.)<br/>![Na segurança &amp; Centro de conformidade, vá para relatórios \> painel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Começamos com [segurança &amp; Centro de conformidade](https://protection.office.com) relatórios. (Vá para **relatórios** \> **Dashboard**.)<br/>![Na segurança &amp; Centro de conformidade, vá para relatórios \> painel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Podemos escolher um relatório para obter uma visão mais detalhada. (Escolha um relatório, como o relatório de **Status de proteção de ameaça** ).<br/>![Relatório de Status de proteção de ameaça mostrando insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Como administrador global do Office 365, você pode usar o simulador de ataque para executar cenários de ataque realístico em sua organização. Isso pode ajudá-lo a identificar e encontrar vulnerável usuários antes de um ataque real atinge seu negócio.
-ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
-ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
+ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27471994"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015033"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataque no Office 365
 
@@ -66,7 +66,7 @@ Esse ataque enfoca permitindo que você manipule a quem a mensagem é exibida pa
   
 Você pode desenvolver o editor de HTML avançado diretamente no **corpo do Email** de campo próprio ou trabalhar com código fonte HTML.
   
-1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
+1. No [segurança &amp; Centro de conformidade](https://protection.office.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
     
 2. Especifique um nome de campanha significativo para o ataque ou selecione um modelo. <br/>![Página inicial de phishing](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ Esse ataque enfoca permitindo que você especifique uma senha comum em relação
   
 ### <a name="to-simulate-a-password-spray-attack"></a>Para simular um ataque borrifada de senha
 
-1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
+1. No [segurança &amp; Centro de conformidade](https://protection.office.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
     
 2. Especifique um nome de campanha significativo para o ataque.
     
@@ -112,7 +112,7 @@ Um ataque de senha de força bruta contra uma organização geralmente é utiliz
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Para simular um ataque de senha de força bruta
 
-1. No [segurança &amp; Centro de conformidade](https://security.microsoft.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
+1. No [segurança &amp; Centro de conformidade](https://protection.office.com), escolha **gerenciamento de ameaça** \> **simulador de ataque**.
     
 2. Especifique um nome de campanha significativo para o ataque.
     

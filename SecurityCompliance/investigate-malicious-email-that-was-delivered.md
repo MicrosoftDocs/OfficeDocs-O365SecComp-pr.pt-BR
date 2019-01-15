@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Aprenda a usar inteligência de ameaça para localizar e investigar email mal-intencionado.
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706035"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014913"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Localizar e investigar email mal-intencionado que foi entregue (Office 365 Threat Intelligence)
 
@@ -48,7 +48,7 @@ Invasores mal-intencionados podem ser enviar email aos seus usuários para testa
 > [!TIP]
 > [Gerenciador de ameaça](get-started-with-ti.md#threat-explorer) (também conhecido como Explorer) é um relatório poderoso que pode atender a vários propósitos, como Localizando e excluindo mensagens, que identifica o endereço IP de um remetente do email maliciosa ou iniciar um incidente para uma investigação detalhada. O procedimento a seguir se concentra em usando o Explorer para localizar e excluir email maliciosa de caixas de correio de destinatários. 
   
-1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. Isso leva você para a segurança &amp; Centro de conformidade. 
+1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. Isso leva você para a segurança &amp; Centro de conformidade. 
     
 2. No painel de navegação esquerdo, escolha **gerenciamento de ameaça** \> **Explorer**.
     

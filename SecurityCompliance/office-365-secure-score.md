@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Já se perguntou como seguro sua organização realmente esteja no Office 365? Pontuação segura está aqui para ajudar. Pontuação segura analisa a segurança da sua organização com base nas suas atividades regulares e configurações de segurança no Office 365 e atribui uma pontuação.
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706175"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015063"
 ---
 # <a name="office-365-secure-score"></a>Classificação de Segurança do Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706175"
 
 Se sua organização tiver uma assinatura que inclui o [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)ou Business Premium do Office 365 e você tem as permissões necessárias, você pode exibir a pontuação da organização seguro visitando [https://securescore.office.com](https://securescore.office.com). 
 
-Como alternativa, você pode visitar o Centro de conformidade e segurança ([https://security.microsoft.com](https://security.microsoft.com)), onde você encontrará um widget pontuação seguro que fornece com sua pontuação atual.
+Como alternativa, você pode visitar o Centro de conformidade e segurança ([https://protection.office.com](https://protection.office.com)), onde você encontrará um widget pontuação seguro que fornece com sua pontuação atual.
 
 ![Widget da pontuação de seguro](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ Para ver o impacto de suas ações na segurança da sua organização, selecione
   
 ![Guia do analisador de pontuação da ferramenta pontuação seguro do Office 365](media/SecureScore-ScoreAnalyzer-7days.png)
   
-O gráfico abaixo, você verá um lsit de pontuações e ações por categoria.
+O gráfico abaixo, você verá uma lista de ações e pontuações por categoria.
   
 ![Na guia analisador de pontuação mostrando um ponto de dados selecionado do gráfico](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

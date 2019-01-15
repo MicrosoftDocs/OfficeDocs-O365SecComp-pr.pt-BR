@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Leia este artigo para saber como ativar o Office 365 gerenciamento avançado de segurança, possibilitada pela segurança de aplicativo de nuvem in Microsoft Azure.
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706285"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014783"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706285"
 > [!IMPORTANT]
 > Você deve ser um administrador global ou administrador de segurança para executar a tarefa a seguir. Para saber mais, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). Na ordem de segurança de aplicativo do Office 365 nuvem trabalhem corrija, o **log de auditoria deve ser ativado** para o seu ambiente do Office 365. Para obter mais informações, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md). 
   
-1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
     
 2. Vá para **alertas** \> **avançadas de gerenciar alertas**.
     

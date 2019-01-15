@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configure políticas de Links seguros para proteger sua organização contra mal-intencionado links em arquivos do Word, Excel, PowerPoint e Visio, bem como nas mensagens de email.
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706085"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015053"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de vínculos do Office 365 ATP seguros
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706085"
 
 Quando você tem [A proteção de ameaça avançadas do Office 365](office-365-atp.md), você terá uma política de Links de seguros ATP padrão que se aplica a todas as pessoas da sua organização. Certifique-se de revisar e, se necessário, editar sua política padrão.
   
-1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
+1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No painel de navegação esquerdo, em **gerenciamento de ameaça**, escolha **política \> ** **Links seguros**.
     
@@ -67,7 +67,7 @@ Quando você tem [A proteção de ameaça avançadas do Office 365](office-365-a
 
 Depois de ter analisado (ou editados) a política de Links de seguros ATP padrão que se aplica a todos, sua próxima etapa é definir políticas adicionais que seriam se aplicam a destinatários específicos. Por exemplo, você pode especificar exceções à diretiva padrão definindo uma política adicional. 
   
-1. Vá para [https://security.microsoft.com](https://security.microsoft.com) e entre com sua conta do trabalho ou da escola. 
+1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     
 2. No painel de navegação esquerdo, em **gerenciamento de ameaça**, escolha **uma política**.
     

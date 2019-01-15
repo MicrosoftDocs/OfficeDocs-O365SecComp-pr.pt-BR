@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Políticas de detecção de anomalias na segurança de aplicativo do Office 365 nuvem usam algoritmos internos para ajudar a descobrir possíveis problemas. Você deve ter a política de detecção de anomalia pelo menos um, que você pode ajustar (quando você criá-lo) usando filtros. '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706335"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015068"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Políticas de detecção de anomalias no Office 365 Cloud App Security
 
@@ -51,7 +51,7 @@ Verifique se:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Exibir suas políticas de detecção de anomalia
 
-1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     
@@ -89,11 +89,10 @@ A tabela a seguir descreve as políticas de detecção de anomalia padrão, o qu
 |Várias tentativas de login com falha  <br/> |Identifica os usuários que falharam várias tentativas de logon em uma única sessão com relação a linha de base aprendida, que poderia indicar em uma tentativa de violação.  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>Alertas de detecção de anomalia triagem
-<a name="triage"> </a>
 
 À medida que chegam alertas, você pode triagem esses alertas rapidamente e determinar quais devem lidar com pela primeira vez. Ter o contexto de um alerta permite que você consulte panorama e determine se algo mal-intencionado está acontecendo na verdade. Use o procedimento a seguir para dar início a explorando um alerta:
   
-1. Como administrador global ou administrador de segurança, vá para [https://security.microsoft.com](https://security.microsoft.com) e entrar usando sua conta do trabalho ou da escola. 
+1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
     
 2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
     

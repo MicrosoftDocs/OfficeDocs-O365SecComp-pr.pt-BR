@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Saiba mais sobre rastreadores de ameaça, incluindo novos rastreadores notável, para ajudar sua organização mantenha-se na parte superior de preocupações de segurança.
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706375"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014993"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de ameaças – novos e notáveis
 
@@ -35,7 +35,7 @@ A maioria das páginas tracker incluir números de tendências que são atualiza
   
 Rastreadores são apenas alguns dos muitos excelentes recursos que você obtém com [Inteligência de dados do Office 365 ameaça](office-365-ti.md). Quando estiver disponível, o seu novo rastreadores de ameaça incluirá [rastreadores notável](threat-trackers.md#notey), [rastreadores de tendência](threat-trackers.md#trending), [acompanhados consultas](threat-trackers.md#trackedq)e [Saved consultas](threat-trackers.md#savedq).
   
-Para exibir e usar sua rastreadores de ameaça quando ele estiver disponível para sua organização, vá para a segurança &amp; Centro de conformidade ([https://security.microsoft.com](https://security.microsoft.com)) e escolha **gerenciamento de ameaça** \> **tracker de ameaça**.
+Para exibir e usar sua rastreadores de ameaça quando ele estiver disponível para sua organização, vá para a segurança &amp; Centro de conformidade ([https://protection.office.com](https://protection.office.com)) e escolha **gerenciamento de ameaça** \> **tracker de ameaça**.
   
 > [!NOTE]
 > Para usar rastreadores de ameaça, você deve ser um administrador global do Office 365, o administrador de segurança ou leitor de segurança. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). 
