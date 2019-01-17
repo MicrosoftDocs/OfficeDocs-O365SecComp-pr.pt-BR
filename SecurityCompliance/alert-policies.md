@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Criar políticas de alerta de segurança do Office 365 &amp; Centro de conformidade para monitorar o problema de permissões, perda de dados e possíveis ameaças. Em seguida, você pode exibir e gerenciar os alertas que são gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
-ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
+ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "26988430"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328137"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Políticas de segurança do Office 365 de alerta &amp; Centro de conformidade
 
@@ -84,7 +84,7 @@ Uma política de alerta consiste as configurações e as condições a seguir.
     
   - Outras pessoas
     
-    Quando uma atividade ocorre que corresponde às condições da política de alerta, o alerta que seja gerado marcado com a categoria definida nessa configuração. Isso permite controlar e gerenciar alertas que tenham a mesma configuração de categoria na página **Exibir alertas** na segurança &amp; Centro de conformidade pois você pode classificar e filtrar alertas com base na categoria. 
+  Quando uma atividade ocorre que corresponde às condições da política de alerta, o alerta que seja gerado marcado com a categoria definida nessa configuração. Isso permite controlar e gerenciar alertas que tenham a mesma configuração na página **Exibir alertas** no Centro de conformidade do & de segurança porque você pode classificar e filtrar alertas com base na categoria de categoria. 
     
 - **Alerta gravidade** - semelhante à categoria de alerta, atribua um atributo de gravidade ( **baixa**, **média**ou **alta**) políticas de alerta. Como a categoria de alerta, quando uma atividade ocorre que corresponde às condições da diretiva de alerta, o alerta que seja gerado é marcado com o mesmo nível de severidade que está definido para a política de alerta. Novamente, isso permite controlar e gerenciar alertas que tenham a mesma configuração de severidade na página **Exibir alertas** . Por exemplo, você pode filtrar a lista de alertas para que somente os alertas com severidade **alta** sejam exibidos. 
     
@@ -102,7 +102,7 @@ A tabela a seguir lista e descreve as políticas de alerta padrão disponíveis 
 |**Política de alerta padrão**|**Descrição**|**Assinatura do Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Criação da regra de encaminhamento/redirecionamento** <br/> |Gera um alerta quando alguém em sua organização cria uma regra de caixa de entrada para suas caixas de correio que encaminha ou redireciona as mensagens para outra conta de email. Essa diretiva controla somente as regras de entrada que são criadas usando o Outlook Web App ou do PowerShell do Exchange Online. Essa diretiva tem uma configuração de gravidade de **baixo** . Para obter mais informações usando regras de caixa de entrada para encaminhar e redirecionar o email no Outlook Web App, consulte [Use regras no Outlook Web App para encaminhar automaticamente mensagens para outra conta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |/ G1 de E1, E3/G3 ou E5/G5  <br/> |
-|**pesquisa de descoberta eletrônica iniciada ou exportados** <br/> |Gera um alerta quando alguém utiliza a ferramenta de pesquisa de conteúdo no Centro de conformidade & segurança. Um alerta é acionado quando as seguintes atividades de pesquisa de conteúdo são realizadas:<br/><br/>• Uma pesquisa de conteúdo é iniciado<br/>• Os resultados de uma pesquisa de conteúdo são exportados<br/>• Um relatório de pesquisa de conteúdo é exportado<br/><br/>Alertas são também trigged quando as atividades de pesquisa de conteúdo anterior são realizadas em associação com um caso de eDiscovery. Essa diretiva tem uma configuração de severidade **média** . Para obter mais informações sobre atividades de pesquisa de conteúdo, consulte [Search para atividades de descoberta eletrônica no Office 365 log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 de E1, E3/G3 ou E5/G5  <br/> |
+|**pesquisa de descoberta eletrônica iniciada ou exportados** <br/> |Gera um alerta quando alguém utiliza a ferramenta de pesquisa de conteúdo da & de segurança Centro de conformidade. Um alerta é acionado quando as seguintes atividades de pesquisa de conteúdo são realizadas:<br/><br/>• Uma pesquisa de conteúdo é iniciado<br/>• Os resultados de uma pesquisa de conteúdo são exportados<br/>• Um relatório de pesquisa de conteúdo é exportado<br/><br/>Alertas são também trigged quando as atividades de pesquisa de conteúdo anterior são realizadas em associação com um caso de eDiscovery. Essa diretiva tem uma configuração de severidade **média** . Para obter mais informações sobre atividades de pesquisa de conteúdo, consulte [Search para atividades de descoberta eletrônica no Office 365 log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 de E1, E3/G3 ou E5/G5  <br/> |
 |**Elevação do privilégio de administração do Exchange** <br/> |Gera um alerta quando alguém recebe permissões administrativas em sua organização do Exchange Online; Por exemplo, se um usuário é adicionado à função de gerenciamento da organização grupo no Exchange Online. Essa diretiva tem uma configuração de gravidade de **baixo** .<br/> |/ G1 de E1, E3/G3 ou E5/G5  <br/> |
 |**As mensagens foram adiadas** <br/> |Gera um alerta quando o Office 365 não pode enviar mensagens de email para sua organização local ou de um parceiro de servidores usando um conector. Quando isso acontecer, a mensagem está na fila no Office 365. Esse alerta é disparado quando há 2.000 mensagens ou mais enfileirados para mais de uma hora. Essa diretiva tem uma configuração de severidade **alta** .<br/> |/ G1 de E1, E3/G3 ou E5/G5  <br/> |
 |**Campanha de malware detectada após a entrega** <br/> |Gera um alerta quando um grande número incomum de mensagens que contêm malware é entregues às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas postais do Exchange Online. Essa diretiva tem uma configuração de severidade **alta** .<br/> |Assinatura de complemento E5/G5 ou inteligência de ameaça do Office 365  <br/> |
@@ -135,9 +135,66 @@ Você pode usar os seguintes filtros para exibir um subconjunto de todos os aler
     
 - **Categoria** - Use este filtro para mostrar os alertas de uma ou mais categorias de alerta.
 
-- **Fonte** - Use este filtro para mostrar os alertas acionados por políticas de alerta de segurança & Centro de conformidade ou alertas disparados por políticas de segurança de aplicativo de nuvem do Office 365, ou ambos. Para obter mais informações sobre os alertas de segurança de aplicativo de nuvem do Office 365, consulte a seção de [alertas de segurança de aplicativo de nuvem exibindo](#viewing-cloud-app-security-alerts) .
+- **Fonte** - Use este filtro para mostrar os alertas acionados por políticas de alerta no Centro de conformidade do & de segurança ou os alertas acionados por políticas de segurança de aplicativo de nuvem do Office 365, ou ambos. Para obter mais informações sobre os alertas de segurança de aplicativo de nuvem do Office 365, consulte a seção de [alertas de segurança de aplicativo de nuvem exibindo](#viewing-cloud-app-security-alerts) .
 
-  
+### <a name="rbac-permissions-required-to-view-alerts"></a>Permissões de RBAC necessárias para exibir alertas
+
+> [!NOTE]
+> A funcionalidade descrita nesta seção serão distribuir para organizações começando em 20 de fevereiro de 2019 e será concluída em todo o mundo no final de março de 2019.
+
+As permissões de controle de acesso de Bases de função (RBAC) atribuídas aos usuários em sua organização determina quais usuários podem ver na página **Exibir alertas** de alertas. Como isso é realizado? As funções de gerenciamento atribuídas aos usuários (com base na sua participação em grupos de função no Centro de conformidade do & de segurança) determinam quais um usuário pode ver na página **Exibir alertas** de categorias de alerta. Aqui estão alguns exemplos:
+
+- Membros do grupo de funções de gerenciamento de registros podem exibir somente os alertas que são gerados por políticas de alerta que são atribuídas a categoria de **governança de dados** .
+- Membros do grupo de função de administrador de conformidade não conseguem exibir alertas que são gerados por políticas de alerta que são atribuídas a categoria de **gerenciamento de ameaça** . 
+- Membros do grupo de função de Gerenciador de descoberta eletrônica não conseguem exibir qualquer alerta porque nenhuma das funções atribuídas fornecer permissão para exibir alertas de qualquer categoria de alerta.
+
+Esse design (com base nas permissões de RBAC) permite determinar quais alertas podem ser exibidas (e gerenciadas) por usuários em funções específicas em sua organização. 
+
+A tabela a seguir lista as funções necessárias para exibir alertas das diferentes categorias de alerta a 6. A primeira coluna nas tabelas a lista de todas as funções de centro de conformidade de & segurança.  Uma marca de seleção indica que um usuário que é atribuído a essa função possa exibir alertas da categoria de alerta correspondente listada na linha superior.
+
+|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de mensagens|Permissões|Gerenciamento de ameaças|Outras pessoas | 
+|:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|Logs de auditoria <br/> |         ||         |         |         |         |
+|Gerenciamento de casos <br/>|         |         |         |         |         |         |
+|Administrador de conformidade<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Pesquisa de Conformidade<br/>|         |         |         |         |         |         |
+|Gerenciamento de dispositivo<br/>|         |         |         |         |         |         |
+|Gerenciamento de disposição<br/>|         |         |         |         |         |         |
+|Gerenciamento de conformidade de DLP<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Exportar<br/>|         |         |         |         |         |         |
+|Bloqueio<br/>|         |         |         |         |         |         |
+|Gerenciar Alertas<br/>|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configuração da organização|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Visualização <br/>|         |         |         |         |         |         |
+|Gerenciamento de registros <br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gerenciamento de retenção <br/>| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Revisão  <br/>|         |         |         |         |         |         |
+|Descriptografia do RMS<br/>|         |         |         |         |         |         |
+|Gerenciamento de função<br/>|         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
+|Pesquisar e limpar<br/>|         |         |         |         |         |         |
+|Administrador de segurança<br/>||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Leitor de segurança<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Modo de exibição de garantia de serviço<br/>|         |         |         |         |         |         |
+|Administrador de revisão de supervisão<br/>|         |         |         |         |         |         |
+|Logs de auditoria somente para exibição<br/>|         |         |         |         |         |         |
+|Gerenciamento de dispositivos de somente leitura<br/>|         |         |         |         |         |         |
+|Gerenciamento de conformidade de DLP somente leitura<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Somente exibição Gerenciar alertas<br/>|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Destinatários Somente para Exibição<br/>|         |         |  ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
+|Gerenciamento de registro somente para exibição<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gerenciamento de retenção de somente leitura<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|         |         |         |         |         |         |
+
+**Dica:** Para exibir as funções que são atribuídas a cada um dos grupos de função padrão, execute os seguintes comandos em segurança & PowerShell do Centro de conformidade: 
+
+```
+$RoleGroups = Get-RoleGroup
+
+$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+```
+Também é possível exibir as funções atribuídas a um grupo de função no Centro de conformidade do & de segurança. Vá para a página de **permissões** e clique em um grupo de função. As funções atribuídas são listadas na página de submenu.
+
+
 ## <a name="managing-alerts"></a>Gerenciando alertas
 
 Depois que os alertas foram geradas e exibidas na página **Exibir alertas** na segurança &amp; Centro de conformidade, você pode triagem, investigar e resolvê-los. Aqui estão algumas tarefas que podem ser executadas para gerenciar alertas. 
@@ -164,17 +221,17 @@ Depois que os alertas foram geradas e exibidas na página **Exibir alertas** na 
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Exibir alertas de segurança de aplicativo de nuvem
   
-Alertas que são acionadas por políticas de segurança de aplicativo de nuvem do Office 365 agora são exibidas na página **Exibir alertas** no Centro de conformidade & segurança. Isso inclui os alertas que são acionados por políticas de atividade e alertas que são acionadas por políticas de detecção de anomalias na segurança de aplicativo de nuvem do Office 365. Isso significa que você pode exibir todos os alertas no Centro de conformidade & segurança. Observe que a segurança de aplicativo de nuvem do Office 365 só está disponível para organizações com uma assinatura do Office 365 Enterprise E5 ou Office 365 conosco governamentais G5. Para obter mais informações, consulte [Visão geral do Office 365 App segurança na nuvem](office-365-cas-overview.md).
+Alertas que são acionadas por políticas de segurança de aplicativo de nuvem do Office 365 agora são exibidas na página **Exibir alertas** no Centro de conformidade do & de segurança. Isso inclui os alertas que são acionados por políticas de atividade e alertas que são acionadas por políticas de detecção de anomalias na segurança de aplicativo de nuvem do Office 365. Isso significa que você pode exibir todos os alertas no Centro de conformidade do & de segurança. Observe que a segurança de aplicativo de nuvem do Office 365 só está disponível para organizações com uma assinatura do Office 365 Enterprise E5 ou Office 365 conosco governamentais G5. Para obter mais informações, consulte [Visão geral do Office 365 App segurança na nuvem](office-365-cas-overview.md).
 
-Além disso, as organizações que possuem a segurança de aplicativo de nuvem Microsoft como parte de uma empresa mobilidade + segurança E5 assinatura ou como um serviço autônomo também pode exibir alertas de segurança de aplicativo de nuvem que estão relacionadas a aplicativos do Office 365 e serviços na segurança & Centro de conformidade.
+Além disso, as organizações que possuem a segurança de aplicativo de nuvem Microsoft como parte de uma empresa mobilidade + segurança E5 assinatura ou como um serviço autônomo também podem exibir alertas de segurança de aplicativo de nuvem que estão relacionados aos aplicativos do Office 365 e serviços em & a segurança Centro de conformidade.
 
-Para exibir somente os alertas de segurança de aplicativo de nuvem no Centro de conformidade & segurança, use o filtro de **origem** e selecione **Segurança de aplicativo de nuvem**.
+Para exibir somente os alertas de segurança de aplicativo de nuvem do Centro de conformidade do & de segurança, use o filtro de **origem** e selecione **Segurança de aplicativo de nuvem**.
 
 ![Use o filtro de origem para exibir somente os alertas de segurança de aplicativo de nuvem](media/FilterCASAlerts.png)
 
-Semelhante a um alerta disparado por uma política de alerta do Centro de conformidade e segurança, você pode clicar para exibir uma página de submenu com detalhes sobre o alerta, um alerta de segurança do aplicativo de nuvem. O alerta inclui um link para exibir os detalhes e gerenciar o alerta no portal de segurança de aplicativo de nuvem e um link para a diretiva de segurança de aplicativo de nuvem correspondente que disparou o alerta. Consulte a [ação de revisão e take alertas na segurança de aplicativo de nuvem do Office 365](review-office-365-cas-alerts.md).
+Semelhante a um alerta disparado por uma política de alerta do Centro de conformidade do & de segurança, você pode clicar para exibir uma página de submenu com detalhes sobre o alerta, um alerta de segurança do aplicativo de nuvem. O alerta inclui um link para exibir os detalhes e gerenciar o alerta no portal de segurança de aplicativo de nuvem e um link para a diretiva de segurança de aplicativo de nuvem correspondente que disparou o alerta. Consulte a [ação de revisão e take alertas na segurança de aplicativo de nuvem do Office 365](review-office-365-cas-alerts.md).
 
 ![Detalhes de alerta contêm links para o portal de segurança de aplicativo de nuvem](media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Alteração do status de um alerta de segurança do aplicativo de nuvem no Centro de conformidade & segurança não atualiza o status de resolução para o mesmo alerta no portal de segurança de aplicativo de nuvem. Por exemplo, se você marcar o status do alerta como **resolvido** na segurança & Centro de conformidade, o status do alerta no portal de segurança de aplicativo de nuvem é inalterado. Para resolver ou descartar um alerta de segurança do aplicativo de nuvem, gerencie o alerta no portal de segurança de aplicativo de nuvem.
+> Alteração do status de um alerta de segurança do aplicativo de nuvem no Centro de conformidade do & de segurança não atualiza o status de resolução para o mesmo alerta no portal de segurança de aplicativo de nuvem. Por exemplo, se você marcar o status do alerta como **resolvido** no Centro de conformidade do & de segurança, o status do alerta no portal de segurança de aplicativo de nuvem é inalterado. Para resolver ou descartar um alerta de segurança do aplicativo de nuvem, gerencie o alerta no portal de segurança de aplicativo de nuvem.
