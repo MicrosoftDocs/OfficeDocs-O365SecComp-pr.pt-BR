@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre privilegiada acessar management no Office 365
-ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793546"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723228"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilégios acessar management no Office 365
 
 > [!IMPORTANT]
 > Este tópico aborda as diretrizes de implantação e configuração para recursos somente está disponíveis no Office 365 E5 e avançadas SKUs de conformidade.
 
-Privilegiado acesso gerenciamento permite que o controle de acesso granular sobre tarefas de administração com privilégios no Office 365.  Ele pode ajudar a proteger sua organização contra violações que possam usar contas de administração com privilégios existentes com acesso a posição a dados confidenciais ou acesso às definições de configuração crítico. Após habilitar o gerenciamento de acesso privilegiado, serão necessário solicitar acesso just-in-time para executar tarefas com privilégios elevados e privilegiadas por meio de um fluxo de trabalho de aprovação que é altamente no escopo do tempo-limite e usuários. Isso dá usuários just-o suficiente-acesso para realizar a tarefa em questão, sem o risco de exposição dos dados confidenciais ou definições de configuração crítico. Habilitando o gerenciamento de acesso privilegiado no Office 365 permitirá a sua organização para operar com zero privilégios a posição e fornecem uma camada de defesa contra vulnerabilidades resultantes por causa de tal acesso administrativo de posição. 
+Privilegiado acesso gerenciamento permite que o controle de acesso granular sobre tarefas de administração com privilégios no Office 365. Ele pode ajudar a proteger sua organização contra violações que possam usar contas de administração com privilégios existentes com acesso a posição a dados confidenciais ou acesso às definições de configuração crítico. Após habilitar o gerenciamento de acesso privilegiado, serão necessário solicitar acesso just-in-time para executar tarefas com privilégios elevados e privilegiadas por meio de um fluxo de trabalho de aprovação que é altamente no escopo do tempo-limite e usuários. Isso dá usuários just-o suficiente-acesso para realizar a tarefa em questão, sem o risco de exposição dos dados confidenciais ou definições de configuração crítico. Habilitando o gerenciamento de acesso privilegiado no Office 365 permitirá a sua organização para operar com zero privilégios a posição e fornecem uma camada de defesa contra vulnerabilidades resultantes por causa de tal acesso administrativo de posição. 
 
 ## <a name="layers-of-protection"></a>Camadas de proteção
 
@@ -57,7 +57,7 @@ Usando o Centro de administração do Office 365 ou PowerShell de gerenciamento 
 
 ### <a name="step-3-access-approval"></a>Etapa 3: Aprovação de acesso
 
-Uma solicitação de aprovação é criada e o grupo de aprovação seja notificado por email da solicitação pendente. Se for concedida a aprovação, a solicitação de acesso privilegiado é processada como uma aprovação e a tarefa está pronta para ser concluída. Se a solicitação for negada, tarefa será bloqueado e não tem acesso para o reqeustor. O solicitante será notificado da aprovação de solicitação ou negação via mensagem de email.
+Uma solicitação de aprovação é criada e o grupo de aprovação seja notificado por email da solicitação pendente. Se for concedida a aprovação, a solicitação de acesso privilegiado é processada como uma aprovação e a tarefa está pronta para ser concluída. Se a solicitação for negada, tarefa está bloqueada e não tem acesso para o reqeustor. O solicitante será notificado da aprovação de solicitação ou negação via mensagem de email.
 
 ![Etapa 3 - aprovação de acesso](media/pam-step3-access-approval.jpg)
 
@@ -73,7 +73,7 @@ Para solicitações de aprovadas, a tarefa é processada pelo runspace gerenciam
 Privilegiado acesso gerenciamento atualmente só está disponível para clientes com o Office 365 E5 e avançadas SKUs de conformidade.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Quando o acesso privilegiado estará disponível para cargas de trabalho do Office 365 além do Exchange?
-Pretendemos oferecer esse recurso em outras cargas de trabalho do Office 365 em breve. Quando estamos prontos para compartilhar um cronograma, ele estará disponível por meio do mapa do Office 365.
+Pretendemos oferecer esse recurso em outras cargas de trabalho do Office 365 em breve. Quando estamos prontos para compartilhar um cronograma, ele estará disponível por meio do [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Minhas necessidades da organização com mais de 30 acesso privilegiado diretivas, esse limite ser aumentado?
 
@@ -83,4 +83,4 @@ Estamos planejando aumentar o limite atual de 30 políticas de acesso privilegia
 Não, você precisa ter a função de gerenciamento de função do Exchange atribuída às contas que gerenciará o acesso privilegiado no Office 365. No entanto, a função de Administrador Global inclui essa função por padrão e pode ser usada para gerenciar o acesso privilegiado se não desejar configurar a função de gerenciamento de função como uma permissão de conta autônomo. Os usuários que estão incluídos no grupo dos aprovadores um não precisam ser um Administrador Global ou ter a função de gerenciamento de função atribuída a revisar e aprovar solicitações. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Como é o gerenciamento de acesso privilegiado no Office 365 relacionadas ao cliente Lockbox?
-[Lockbox do cliente](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) permite que um nível de controle de acesso para as organizações para acesso a dados pelo seu provedor de serviço, ou seja, a Microsoft. Privilegiado acesso management no Office 365 permite que o controle de acesso granular dentro de uma organização para todas as tarefas do Office 365 privilegiado.
+[Lockbox do cliente](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) permite que um nível de controle de acesso para as organizações para acesso a dados pelo seu provedor de serviço, ou seja, a Microsoft. Privilegiado acesso management no Office 365 permite que o controle de acesso granular dentro de uma organização para todas as tarefas do Office 365 privilegiado.
