@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Saiba como configurar o chave de cliente para o Office 365 para Exchange Online, Skype para negócios, SharePoint Online e OneDrive for Business. Com a chave do cliente, você controlar as chaves de criptografia da sua organização e configurar o Office 365 para usá-los para criptografar dados em repouso em centros de dados da Microsoft.
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965605"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723248"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar seus dados no Office 365 usando a Chave do cliente
 
@@ -54,7 +54,7 @@ Você concluirá maioria dessas tarefas conectando remotamente ao PowerShell do 
     
 - [Enviar uma solicitação para ativar a chave do cliente para o Office 365](controlling-your-data-using-customer-key.md#FastTrack)
     
-    Depois que você criou as duas novas inscrições Azure, você precisará enviar a solicitação de oferta de chave de cliente apropriada, completando um formulário da web que é hospedado no portal do Microsoft FastTrack. A equipe de FastTrack não prestar assistência com chave de cliente. Office simplesmente usa o portal de FastTrack para permitir que você envie o formulário e nos ajudar a controlar as ofertas relevantes para a chave do cliente.
+    Depois que você criou as duas novas inscrições Azure, você precisará enviar a solicitação de oferta de chave de cliente apropriada, completando um formulário da web que é hospedado no portal do Microsoft FastTrack. **FastTrack a equipe não prestar assistência com chave de cliente. Office simplesmente usa o portal FastTrack para permitir que você envie o formulário e nos ajudar a controlar as ofertas relevantes para a chave de cliente**.
   
 Depois que você enviou uma oferta de chave de cliente, o Microsoft analisa sua solicitação e notifica você quando você pode continuar com o restante das tarefas de instalação. Esse processo pode levar até cinco dias úteis.
     
@@ -218,7 +218,7 @@ Para cada chave vault, você precisará definir três conjuntos de permissões p
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
   ```
 
-    Onde:
+    Em que:
     
   - *vaultname* é o nome do chave vault que você criou. 
     
@@ -277,7 +277,7 @@ Para criar uma chave diretamente no seu vault principal, execute o cmdlet [Add-A
 Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-Onde:
+Em que:
   
 -  *vaultname* é o nome do chave vault no qual você deseja criar a chave. 
     
@@ -446,7 +446,7 @@ Para criar a DEP, siga estas etapas:
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   Onde:
+   Em que:
     
    -  *PolicyName* é o nome que você deseja usar para a política. Nomes não podem conter espaços. Por exemplo, USA_mailboxes. 
     

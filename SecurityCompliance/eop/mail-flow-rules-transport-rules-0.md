@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Você pode usar regras de fluxo de emails (também conhecidas como regras de transporte) para identificar e agir com base nas mensagens que fluem pela organização do Office 365.
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026608"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723238"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regras de fluxo de emails (regras de transporte) no Exchange Online Protection
 
@@ -54,7 +54,7 @@ Um regra de fluxo de emails é formada por condições, exceções, ações e pr
   
 - **Condições** Identificam as mensagens nas quais você gostaria de aplicar uma ação. Algumas condições examinam campos de cabeçalhos de mensagens (por exemplo, os campos Para, De ou Cc). Outras condições examinam propriedades de mensagens (por exemplo, assunto, corpo, anexos, tamanho e classificação da mensagem). A maioria das condições exige que você especifique um operador de comparação (por exemplo, igual a, diferente de ou contém) e um valor a ser correspondido. Se não houver condições ou exceções, a regra será aplicada a todas as mensagens. 
     
-    Para obter mais informações sobre de email condições de regra de fluxo no Exchange Online Protection, consulte [condições de regra de fluxo e email exceções (predicados) no Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+    Para obter mais informações sobre condições de regra de fluxo de email no Exchange Online Protection, consulte [exceções (predicados) e condições de regra de fluxo de email no Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Exceções** Opcionalmente, identificam as mensagens às quais as ações não devem se aplicar. Os mesmos identificadores de mensagens disponíveis nas condições também estão disponíveis nas exceções. As exceções substituem as condições e impedem que as ações da regra sejam aplicadas a uma mensagem, mesmo que a mensagem atenda a todas as condições configuradas. 
     
@@ -132,7 +132,7 @@ Existem vários tipos de mensagens que transitam por uma organização. A tabela
   
 [Usando as regras de transporte para inspecionar os anexos das mensagens](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
-[Criptografia de email no Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
+[Criptografia de e-mail no Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
 [Procedimentos de regra de transporte](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
   
