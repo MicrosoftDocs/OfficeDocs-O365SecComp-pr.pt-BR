@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328127"
+---
 # [Introdução]()
 ## [Mapa de segurança do Office 365](security-roadmap.md)
 ## [Configurar seu locatário do Office 365 para aumentar a segurança](tenant-wide-setup-for-increased-security.md)
@@ -156,7 +164,7 @@
 ### [Exibir as estatísticas de palavra-chave para resultados de Pesquisa de Conteúdo](view-keyword-statistics-for-content-search.md)
 ### [Exportar resultados de Pesquisa de Conteúdo ](export-search-results.md)
 ### [Exportar um relatório da Pesquisa de Conteúdo](export-a-content-search-report.md)
-### [Pesquisar e excluir mensagens de email](search-for-and-delete-messagesadmin-help.md)
+### [Pesquisar e excluir mensagens de email](search-for-and-delete-messages-in-your-organization.md)
 ### [Pesquisar caixas de correio baseadas em nuvem dos usuários locais no Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [Edição em massa de várias Pesquisas de Conteúdo](bulk-edit-content-searches.md)
 ### [Preparar um arquivo CSV para uma lista de IDs de Pesquisa de Conteúdo](csv-file-for-an-id-list-content-search.md)
@@ -240,7 +248,7 @@
 ## [Políticas de alerta](alert-policies.md)
 ## [Relatórios inteligentes e insights no Centro de Conformidade e Segurança](reports-and-insights-in-security-and-compliance.md)
 ### [Exibir relatórios de segurança de email no Centro de Conformidade e Segurança](view-email-security-reports.md)
-#### [Passo a passo – de um relatório detalhado para um insight](from-a-detailed-report-to-an-insight.md)
+#### [Passo a passo – De um relatório detalhado para um insight](from-a-detailed-report-to-an-insight.md)
 #### [Passo a passo – de um insight para um relatório detalhado](from-an-insight-to-a-detailed-report.md)
 #### [Passo a passo – de um painel para um insight](from-a-dashboard-to-an-insight.md)
 #### [Criar um cronograma de um relatório](create-a-schedule-for-a-report.md)
@@ -248,13 +256,22 @@
 #### [Configurar e baixar um relatório personalizado](set-up-and-download-a-custom-report.md)
 #### [Baixar relatórios existentes](download-existing-reports.md)
 ## [Habilitar ou desabilitar dicas de segurança no Office 365](enable-or-disable-safety-tips.md)
-## [Habilitar o suplemento de Mensagem de relatório](enable-the-report-message-add-in.md)
+## [Habilitar o suplemento de Mensagem de Relatório](enable-the-report-message-add-in.md)
+# Fluxo de emails
+## [Rastreamento de mensagens no Centro de Conformidade e Segurança](message-trace-scc.md)
+## [Fluxo de emails no Centro de Conformidade e Segurança](mail-flow-insights.md)
+### [Relatório de encaminhamento automático de mensagens](mfi-auto-forwarded-messages-report.md)
+### [Insight de loop de email](mfi-mail-loop-insight.md)
+### [Fluxo de entrada e saída de emails](mfi-outbound-and-inbound-mail-flow.md)
+### [Alertas de filas e filas](mfi-queue-alerts-and-queues.md)
+### [Insights de regras de fluxo de email – modo lento](mfi-slow-mail-flow-rules-insight.md)
 # Soluções de segurança
 ## [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ### [Definir grupos e usuários para um ambiente de desenvolvimento/teste de uma campanha política](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ### [Criar sites de equipe em um ambiente de desenvolvimento/teste de campanha política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
 ### [Implantar sites do SharePoint Online para três camadas de proteção](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
+### [Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [Sites de equipe do SharePoint Online isolados](isolated-sharepoint-online-team-sites.md)
 ### [Projetar um site de equipe do SharePoint Online isolado](design-an-isolated-sharepoint-online-team-site.md)
@@ -262,12 +279,11 @@
 ### [Gerenciar um site de equipe do SharePoint Online isolado](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [Integração com o servidor SIEM](siem-server-integration.md)
-
 # Soluções de conformidade
-## [Introdução ao Portal de Confiança do Serviço Microsoft](get-started-with-service-trust-portal.md)
-## [Usar o Gerenciador de conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Gerenciar solicitações de titulares de dados RGPD com a ferramenta de ocorrência de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Proteção de informações do Office 365 para o RGPD](office-365-information-protection-for-gdpr.md)
+## [Portal de Confiança do Serviço da Microsoft](get-started-with-service-trust-portal.md)
+## [Gerenciador de Conformidade](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Ferramenta de solicitação de dados RGPD do indivíduo](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Proteção de Informações do Office 365 para o RGPD](office-365-information-protection-for-gdpr.md)
 ### [Visão geral: Proteção do Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
 ### [Pesquisar e localizar dados pessoais](search-for-and-find-personal-data.md)
 ### [Personalizar ou criar um novo tipo de informação confidencial para RGPD](customize-or-create-a-new-sensitive-information-type.md)
