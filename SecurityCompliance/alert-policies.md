@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Criar políticas de alerta de segurança do Office 365 &amp; Centro de conformidade para monitorar o problema de permissões, perda de dados e possíveis ameaças. Em seguida, você pode exibir e gerenciar os alertas que são gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426026"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Políticas de segurança do Office 365 de alerta &amp; Centro de conformidade
 
@@ -34,11 +34,11 @@ Aqui está uma visão geral rápida do trabalho de alerta como as políticas e o
   
 ![Visão geral do trabalho de alerta como diretivas](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Cria um administrador em sua organização, configura e ativa uma política de alerta, usando a página de **políticas de alerta** na segurança &amp; Centro de conformidade. Você também pode criar políticas de alerta usando o cmdlet **New-ProtectionAlert** no PowerShell. 
+1. Um administrador em sua organização cria, configura e ativa uma política de alerta, usando a página de **políticas de alerta** no Centro de conformidade do & de segurança. Você também pode criar políticas de alerta usando o cmdlet **New-ProtectionAlert** no PowerShell. Para criar políticas de alerta, você precisa ser atribuída a função da configuração da organização ou a função de gerenciar alertas no Centro de conformidade do & de segurança.
     
 2. Um usuário realiza uma atividade que corresponde às condições de uma política de alerta. No caso de ataques de malware, mensagens de email infectados enviadas aos usuários em sua organização irá disparar um alerta.
     
-3. O Office 365 gera um alerta que é exibido na página **Exibir alertas** na segurança &amp; Centro de conformidade. Além disso, se as notificações de email estão habilitadas para a política de alerta, o Office 365 envia uma notificação para destinatários uma lista. 
+3. O Office 365 gera um alerta que é exibido na página **Exibir alertas** na segurança &amp; Centro de conformidade. Além disso, se as notificações de email estão habilitadas para a política de alerta, o Office 365 envia uma notificação para destinatários uma lista. Os alertas que um administrador ou outros usuários podem ver na página **Exibir alertas** é determinado pelas funções atribuídas ao usuário. Para obter mais informações, consulte a seção de [permissões de RBAC necessárias para exibir alertas](#rbac-permissions-required-to-view-alerts) .
     
 4. Um administrador gerencia alertas na segurança &amp; Centro de conformidade. Gerenciando alertas consiste em atribuir um status de alerta para ajudar a controlar e gerenciar qualquer investigação.
     
@@ -76,7 +76,7 @@ Uma política de alerta consiste as configurações e as condições a seguir.
     
   - Prevenção contra perda de dados
 
-  - Fluxo de mensagens
+  - Fluxo de emails
     
   - Permissões
     
@@ -152,7 +152,7 @@ Esse design (com base nas permissões de RBAC) permite determinar quais alertas 
 
 A tabela a seguir lista as funções necessárias para exibir alertas das diferentes categorias de alerta a 6. A primeira coluna nas tabelas a lista de todas as funções de centro de conformidade de & segurança.  Uma marca de seleção indica que um usuário que é atribuído a essa função possa exibir alertas da categoria de alerta correspondente listada na linha superior.
 
-|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de mensagens|Permissões|Gerenciamento de ameaças|Outras pessoas | 
+|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de emails|Permissões|Gerenciamento de ameaças|Outras pessoas | 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Logs de auditoria <br/> |         ||         |         |         |         |
 |Gerenciamento de casos <br/>|         |         |         |         |         |         |
