@@ -1,0 +1,210 @@
+---
+title: Novidades na segurança de aplicativo de nuvem do Office 365
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.audience: Admin
+ms.topic: reference
+ms.date: 01/25/2019
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+description: Consulte o que lançada durante 2018 para segurança de aplicativo de nuvem do Office 365
+ms.openlocfilehash: f206273b0eff63e6740d80cd2550ae9fcec9a41c
+ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29579809"
+---
+# <a name="office-365-cloud-app-security-updates-during-2018"></a>Atualizações de segurança de aplicativo de nuvem do Office 365 durante 2018
+
+## <a name="office-365-cloud-app-security-release-138"></a>Versão de segurança do aplicativo de nuvem do Office 365 138
+
+*Lançada em 23 de dezembro de 2018*
+
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 138](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-138)**:
+
+- **Carregamento de log automática usando Docker no Windows** Segurança de aplicativo de nuvem agora oferece suporte a carregamento de log automática para Windows 10 ([Atualização de criadores de queda](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) e mais recente) e Windows Server ([versão 1709](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1709) e mais recente) usando Docker no Windows. Consulte [Este artigo](https://docs.microsoft.com/cloud-app-security/discovery-docker-windows) para saber mais e configurar Docker.  
+
+- **Integração com o fluxo da Microsoft** Segurança de aplicativo de nuvem agora se integra [Fluxo da Microsoft](https://docs.microsoft.com/flow/getting-started) para fornecer playbooks automação e orquestração alertas personalizados. Consulte [Este artigo](https://docs.microsoft.com/cloud-app-security/flow-integration) para saber mais e configurar a integração do Microsoft Flow. 
+
+## <a name="office-365-cloud-app-security-release-137"></a>Versão de segurança do aplicativo de nuvem do Office 365 137
+
+*Lançada em 8 de dezembro de 2018*
+
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 137](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-137)**:
+
+- **Adicionado suporte para Dynamics** Segurança de aplicativo de nuvem agora inclui o suporte para as atividades do Microsoft Dynamics suportados no log de auditoria do Office 365. 
+
+- **Descendo backup – nova terminologia!** O nome dos recursos de permissões de aplicativo foi alterado para manter a clareza – agora é chamado OAuth apps. 
+
+## <a name="office-365-cloud-app-security-release-136"></a>Versão de segurança do aplicativo de nuvem do Office 365 136
+
+*Lançada em 25 de novembro de 2018*
+
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 136](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-136)**:
+
+- **Atualizações de descoberta de nuvem** O analisador de log personalizada foi melhorado para suportar adicionais e formatos de logs de tráfego da web mais complexo. Como parte desses usuários aprimoramentos agora pode inserir cabeçalhos personalizados para os arquivos de log sem cabeçalho CSV, use delimitadores especiais para arquivos de chave-valor, processo de formato de arquivo Syslog e muito mais.
+
+- **Nova política de detecção de anomalia: regras de manipulação de caixa de entrada suspeitos** Essa diretiva profiles seu ambiente e gatilhos alertas quando suspeitas regras que excluir ou mover mensagens ou pastas são definidas na caixa de entrada do usuário. Isso pode indicar que a conta do usuário for comprometida, que as mensagens estão sendo intencionalmente ocultos e que a caixa de correio está sendo usada para distribuir spam ou malware em sua organização.
+
+- **Suporte a grupos em políticas de permissão de aplicativo** Segurança de aplicativo de nuvem agora proporciona a capacidade de definir políticas de permissão do aplicativo de forma mais granular, com base em das associações de grupo dos usuários que são autorizados os aplicativos. Por exemplo, um administrador pode optar por definir uma política que revoga apps incomuns se eles solicitem permissões altas, somente se o usuário que as permissões de autorização é um membro do grupo Administradores.
+
+## <a name="office-365-cloud-app-security-releases-133-134-and-135"></a>Lançamentos de segurança de aplicativo de nuvem do Office 365 133, 134 e 135
+
+*Lançada em novembro de outubro, 2018*
+
+**Após o [lançamento de segurança de aplicativo de nuvem do Microsoft 133, 134 e 135](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-133-134-135)**:
+
+- **Novas políticas de detecção de anomalia** são aplicação gradualmente:
+    
+    - A nova política de **exfiltration dados aos aplicativos unsanctioned** é ativada automaticamente para alertá-lo quando um usuário ou o endereço IP usa um aplicativo que não é aprovado para executar uma atividade que se parece com uma tentativa para exfiltrate de informações da sua organização.
+    
+    - A nova política de **atividades VM excluir vários** perfis de seu ambiente e dispara alertas quando os usuários excluírem várias VMs em uma única sessão, em relação a linha de base na sua organização.
+
+- **Suporte a descoberta de nuvem para i-Filter** O recurso de descoberta de nuvem de segurança de aplicativo de nuvem agora melhorou o suporte para o analisador de syslog i-Filter.
+
+## <a name="office-365-cloud-app-security-release-131"></a>Versão de segurança do aplicativo de nuvem do Office 365 131
+
+*Lançada em 16 de setembro de 2018*
+
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 131](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-131)**:
+
+- **Automaticamente revogar permissões nos aplicativos do OAuth riscados** Agora você pode controlar quais aplicativos OAuth seus usuários têm acesso, por revogar permissão de aplicativo para aplicativos do OAuth no Office. Ao criar uma política de permissão do aplicativo, você agora pode definir a diretiva para revogar permissão de um aplicativo.
+
+- **Descoberta de nuvem analisador interno adicional com suporte** Descoberta de nuvem agora é compatível com o formato de log Forcepoint nuvem de segurança de Web.
+  
+## <a name="office-365-cloud-app-security-release-130"></a>Versão de segurança do aplicativo de nuvem do Office 365 130
+
+*Lançada em 5 de setembro de 2018*
+
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
+
+- **Nova barra de menus** Para fornecer uma experiência de administração mais consistente entre produtos Microsoft 365 e permitem que você dinamizar mais facilmente entre soluções de segurança da Microsoft, a barra de menus de portal de segurança de aplicativo de nuvem foi movido para o lado esquerdo da tela. A navegação consistente experiência ajuda a orientar você mesmo durante a mudança de um portal de segurança da Microsoft para outro.<br/>![Barra de menus na segurança de aplicativo de nuvem do Office](media/OCAS-MenuBar.png)<br/>
+
+- **Impacto OAuth pontuação de aplicativo** Agora você pode enviar os comentários da equipe de segurança de aplicativo de nuvem para nos informar se houver um aplicativo de OAuth descoberto em sua organização que parece mal-intencionado. Esse novo recurso permite fazer parte da nossa comunidade de segurança e melhorar a pontuação de risco de app OAuth e análise. Para obter mais informações, consulte [Gerenciar OAuth apps](manage-app-permissions-in-ocas.md).
+
+- **Analisadores do novo descoberta de nuvem** Os analisadores de descoberta de nuvem agora suportam iboss Secure Cloud Gateway e Sophos XG.
+
+## <a name="office-365-cloud-app-security-release-128"></a>Versão de segurança do aplicativo de nuvem do Office 365 128
+
+*Lançada em 5 de agosto de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
+  
+- **Aplicativos de OAuth entre vários aplicativos** Para aplicativos do OAuth, agora você pode proibir ou aprovar vários aplicativos em uma única ação. Por exemplo, você pode examinar todos os aplicativos que receberam permissão por usuários em sua organização, selecione todos os aplicativos que você deseja proibir e clique em Proibir apps para revogar todos consentimento concedido e não são mais permitirá que os usuários conceder permissão para estes aplicativos. Para saber mais, consulte [apps gerenciar OAuth usando a segurança de aplicativo de nuvem do Office 365](manage-app-permissions-in-ocas.md). 
+    
+- **Nova consulta sugerida: aplicativos de nuvem GDPR prontos** Não há uma nova consulta sugerida para habilitá-lo identificar descobertos aplicativos que estão GDPR pronto. Como você provavelmente já sabe, GDPR tem recentemente se tornou uma prioridade para administradores de segurança. Esta consulta ajuda você a facilmente identificar aplicativos que estão GDPR pronto e atenuar ameaças, como avaliar o risco dos aplicativos que não estejam. Para usar a nova consulta, no painel **Descoberta de nuvem** , na guia **aplicativos Discovered** , escolha **consultas** > **GDPR prontos aplicativos na nuvem**.<br/>![Consulta de aplicativos de nuvem GDPR prontos](media/OCAS-FindGDPRQueries.png)<br/>
+    
+## <a name="office-365-cloud-app-security-release-126"></a>Versão de segurança do aplicativo de nuvem do Office 365 126
+
+*Lançada 7 de julho de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 126](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**: 
+  
+- **Correção automatizada para atividades suspeitas** Agora você pode definir ações de correção automática para sessão suspeito acionada pelas políticas de detecção de anomalia. Essa melhoria permite ser alertado instantaneamente quando uma violação ocorre e aplicar ações de governança automaticamente, tais como suspender o usuário. Para obter mais informações, consulte [políticas de detecção de anomalias na segurança de aplicativo de nuvem do Office 365](anomaly-detection-policies-in-ocas.md).
+    
+- **Detecção automatizada de aplicativos de OAuth riscado** Além de investigar existente de aplicativos de OAuth conectados ao seu ambiente, segurança de aplicativo de nuvem do Office 365 agora permite que você definir notificações automatizadas para que você saiba quando um aplicativo OAuth atende a determinados critérios. Por exemplo, você pode automaticamente ser alertado quando há aplicativos que exigem um nível de permissão alta e eram autorizadas por mais de 50 usuários. Para obter mais informações, consulte [apps gerenciar OAuth usando a segurança de aplicativo de nuvem do Office 365](manage-app-permissions-in-ocas.md).
+    
+- **Suporte ao gerenciamento de provedor de serviços de segurança gerenciados (MSSP)** Segurança de aplicativo de nuvem do Office 365 agora oferece uma melhor experiência de gerenciamento para MSSPs e permite que você configure os parceiros externos como administradores com qualquer uma das funções disponíveis no momento na segurança de aplicativo de nuvem do Office 365. Além disso, os administradores com direitos de acesso a mais de um inquilino agora podem dinamizar facilmente entre os locatários. 
+    
+## <a name="office-365-cloud-app-security-release-124"></a>Versão de segurança do aplicativo de nuvem do Office 365 124
+
+*Lançada em 10 de junho de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 124](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**: 
+  
+- **Implantações de todo o escopo** Empresas forma granular podem determinar quais usuários para monitorar e proteger com base na associação de grupo. Esse recurso permite que você selecione usuários cujas atividades não serão exibidas para qualquer um dos aplicativos protegidos. Monitoramento com escopo é especialmente útil para conformidade e licenciamento. Alguns regulamentos de conformidade exigem que você evite usuários de determinados países/regiões devido às leis locais de monitoramento. E, então, você pode monitorar o menor número de usuários permaneçam dentro dos limites de suas licenças de segurança de aplicativo de nuvem do Office 365. 
+    
+- **Novo servidor de email** O servidor de email para segurança de aplicativo de nuvem do Office 365 foi alterado e usa os intervalos de endereços IP diferentes. Para certificar-se de que você pode obter notificações, adicione os novos endereços IP à sua lista de recursos anti-spam branca. Para organizações que personalizar suas notificações, a segurança de aplicativo de nuvem permite isso usando MailChimp, um serviço de email de terceiros. Para a lista de endereços IP do servidor de email e instruções para habilitar o trabalho com MailChimp, consulte [requisitos de rede (segurança de aplicativo do Microsoft Cloud)](https://docs.microsoft.com/cloud-app-security/network-requirements) e [configurações de email (segurança de aplicativo do Microsoft Cloud)](https://docs.microsoft.com/cloud-app-security/mail-settings).
+    
+## <a name="office-365-cloud-app-security-release-121"></a>Versão de segurança do aplicativo de nuvem do Office 365 121
+
+*Lançada 6 de maio de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 121](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**: 
+  
+- **Aprimoramentos de política de detecção de anomalia**. Políticas de detecção do título do Office 365 nuvem App anomalia foram melhoradas para incluir dois novos tipos de detecção de ameaça gradualmente divulgando: 
+    
+  - **Atividade Ransomware.** Recursos de detecção de ransomware são estendidos com detecção de anomalias para proporcionar mais abrangente cobertura contra ataques ransomware sofisticados. 
+    
+  - **Terminada a atividade do usuário.** Encerrada habilita de atividade do usuário monitorar as contas dos usuários encerradas quem pode ter sido desprovisionada de aplicativos corporativos, mas que talvez ainda têm acesso a certos recursos corporativos. 
+    
+    Para exibir suas [políticas de detecção de anomalias](anomaly-detection-policies-in-ocas.md), no portal de segurança de aplicativo de nuvem do Office 365, selecione **controle** \> **políticas**.
+    
+## <a name="office-365-cloud-app-security-release-120"></a>Versão de segurança do aplicativo de nuvem do Office 365 120
+
+*Lançada em 22 de abril de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 120](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**: 
+  
+- **Aplicativos internos como atividades do usuário**. Para Office 365 e Windows Azure Active Directory (AD Azure), podemos são agora gradualmente aplicação a capacidade de detectar aplicativos internos como atividades de conta de usuário realizadas pelos aplicativos do Office 365 e o Azure AD (internos e externos). Isso permite que você crie políticas para alertá-lo a se um aplicativo realiza atividades inesperadas e não autorizadas. 
+    
+- **Exportar mais campos na lista de aplicativos do OAuth**. Ao exportar uma lista de aplicativos do OAuth para csv, campos adicionais, como o publisher, o uso de comunidade e nível de permissões são incluídos para ajudar o processo de conformidade e investigação. 
+    
+## <a name="office-365-cloud-app-security-release-119"></a>Versão de segurança do aplicativo de nuvem do Office 365 119
+
+*Lançada 1 de abril de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**: 
+  
+- **Aprimoramentos para descoberta de nuvem**. A descoberta de nuvem fornece mais informações sobre os principais usuários e endereços IP, tornando mais fácil para exibir detalhes de uso sobre o Office 365 e outros aplicativos. Para saber mais, consulte [descobertas de descoberta de aplicativo da revisão na segurança de aplicativo de nuvem do Office 365](review-app-discovery-findings-in-ocas.md).
+    
+    ![O painel de descoberta de nuvem foi atualizado](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
+  
+## <a name="office-365-cloud-app-security-release-118"></a>Versão de segurança do aplicativo de nuvem do Office 365 118
+
+*Lançada 18 de março de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 118](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**: 
+  
+- **Suporte a barracuda**. Descoberta de nuvem agora oferece suporte a série de F Barracuda firewalls e série Barracuda F firewall web log streaming. 
+    
+## <a name="office-365-cloud-app-security-release-117"></a>Versão de segurança do aplicativo de nuvem do Office 365 117
+
+*Lançada 6 de março de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 117](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**: 
+  
+- **suporte de i-FILTER**. Descoberta de nuvem agora oferece suporte a i-FILTER. 
+    
+## <a name="office-365-cloud-app-security-release-116"></a>Versão de segurança do aplicativo de nuvem do Office 365 116
+
+*Lançada 18 de fevereiro de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 116](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**: 
+  
+- **Aprimoramentos na diretiva de detecção de anomalia**. Políticas de detecção de anomalias em segurança de aplicativo de nuvem do Office 365 foram aprimorados com novas detecções baseado em cenário incluindo impossíveis viagens, a atividade de um endereço IP suspeito e tentativas de login vários. As novas políticas são automaticamente habilitadas, fornecendo detecção de ameaça da caixa em seu ambiente de nuvem. Além disso, as novas políticas exponham mais dados do mecanismo de detecção de segurança de aplicativo de nuvem do Office 365, que pode ajudar a acelerar o processo de investigação e conter ameaças em andamento. Para saber mais, consulte o artigo de segurança de aplicativo do Microsoft Cloud, [Obtenha instantâneo analytics comportamento e detecção de anomalias](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).
+    
+- **Suporte do analisador de log para formatos de ponto de verificação**. Analisadores de log a descoberta de nuvem agora suportam dois formatos adicionais de ponto de verificação: XML e KPC. 
+    
+## <a name="office-365-cloud-app-security-release-114"></a>Versão de segurança do aplicativo de nuvem do Office 365 114
+
+*Lançada 21 de janeiro de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**: 
+  
+- **Status do serviço**. Agora você pode verificar o status atual do serviço de segurança de aplicativo de nuvem do Office 365 indo para **ajudar a** \> **status do sistema**. 
+    
+    ![Clique em Ajuda \> Status do sistema para exibir o status de integridade do sistema](media/2b496dac-ed9d-4480-83b6-85f9510d3aea.png)
+  
+- **Consultas personalizadas para o log de atividade**. Começando na versão 114, a capacidade de criar e salvar consultas personalizadas no log de atividade está aplicação gradualmente. Consultas personalizadas permitem que você criar modelos de filtro que podem ser reutilizados para aprofundar investigação. Além disso, sugerido consultas foram adicionados para fornecer modelos de caixa investigação para filtrar suas atividades e detectados apps. Filtros personalizados para identificar riscos como atividades de representação, as atividades de administrador, aplicativos de armazenamento de nuvem incompatíveis riscado, aplicativos empresariais com criptografia fraca e os riscos de segurança incluem as consultas sugeridas. Use as consultas sugeridas como um ponto de partida, modificá-los conforme necessário e salvá-las como uma nova consulta. 
+    
+## <a name="office-365-cloud-app-security-release-113"></a>Versão de segurança do aplicativo de nuvem do Office 365 113
+
+*Lançada em 8 de janeiro de 2018* 
+  
+**Após o [lançamento de segurança de aplicativo do Microsoft Cloud 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
+  
+- **Suporte de analisador de log para formatos genéricos**. Analisadores de log a descoberta de nuvem agora suportam os seguintes formatos genéricos: LEEF, CEF e W3C. 
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+[Novidades na segurança de aplicativo de nuvem do Office 365](new-in-office-365-cas.md)
+
+[Consulte as atualizações de 2017 para segurança de aplicativo de nuvem do Office 365](new-in-office-365-cas-2017.md)
+    
+[Atividades de utilização após a implantação do Office 365 Cloud App Security](utilization-activities-for-ocas.md)
