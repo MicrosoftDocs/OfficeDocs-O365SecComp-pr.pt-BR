@@ -32,7 +32,7 @@ Essa recomendação é exibida quando as mensagens de e-mail identificadas como 
 
 ## <a name="label-attorney-client-privilege-content"></a>Etiquetar conteúdo de privilégio advogado-cliente 
 
-Este recomendação é exibida quando os seguintes critérios são atendidos.
+Esta recomendação é exibida quando os seguintes critérios são atendidos.
 
 - Qualquer combinação dessas palavras-chave for detectada no corpo da mensagem de email:
     - ACP
@@ -47,7 +47,7 @@ Este recomendação é exibida quando os seguintes critérios são atendidos.
 
 ## <a name="retain-audio-files"></a>Manter os arquivos de áudio
 
-Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
+Esta recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
 
 - .MP3
 - .WMA
@@ -65,7 +65,7 @@ Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo
 
 ## <a name="retain-cad-files"></a>Manter os arquivos do CAD
 
-Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
+Esta recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
 
 - .3DXML
 - .ACIS
@@ -104,7 +104,7 @@ Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo
 
 ## <a name="retain-image-files"></a>Manter os arquivos de imagem
 
-Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
+Esta recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
 
 - .JPEG
 - .GIF
@@ -124,7 +124,7 @@ Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo
 
 ## <a name="retain-nda-content"></a>Reter o conteúdo NDA 
 
-Este recomendação é exibida quando os seguintes critérios são atendidos.
+Esta recomendação é exibida quando os seguintes critérios são atendidos.
 
 - Qualquer combinação dessas palavras-chave for detectada no corpo da mensagem de email:
     - NDA
@@ -137,7 +137,7 @@ Este recomendação é exibida quando os seguintes critérios são atendidos.
 
 ## <a name="retain-software-development-files"></a>Manter os arquivos de desenvolvimento de software
 
-Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
+Esta recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
 
 - .ASAX
 - .ASM
@@ -170,7 +170,7 @@ Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo
 
 ## <a name="retain-video-files"></a>Manter os arquivos de vídeo
 
-Este recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
+Esta recomendação é exibida quando qualquer um dos seguintes tipos de arquivo é detectado no SharePoint ou OneDrive.
 
 - .AVCHD
 - .AVI
