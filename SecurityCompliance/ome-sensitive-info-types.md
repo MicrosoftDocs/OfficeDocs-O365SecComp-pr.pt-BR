@@ -3,7 +3,7 @@ title: Nova política de criptografia de mensagem do Office 365 para informaçõ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumo: Automaticamente aplicada a política de criptografia de mensagem do Office 365 para tipos de informações confidenciais aplicação a todos os locatários.'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789449"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614375"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Política de criptografia de mensagem do Office 365 para informações confidenciais
 
-Estamos criando uma nova política automática no locatários do Office 365 que se aplicarão a criptografia de mensagem do Office 365 para todos os emails que contenham informações confidenciais e que estão sendo enviadas de fora da sua organização. Essa nova regra de fluxo de correio do Exchange será automaticamente criada no seu locatário do Office 365 para que a sua organização será protegida por padrão.
+Para um grupo seleto de locatários, com base em sua organização tamanho e complexidade do fluxo de mensagens, estamos fazendo uma distribuídas lenta de uma nova diretiva automática no que se aplicarão a criptografia de mensagem do Office 365 para emails que contenham certos tipos de confidenciais locatários do Office 365 informações. Estamos testando isso com um pequeno grupo de inquilinos. Essa diretiva não será aplicada a todas as organizações e considerações sobre como o tamanho da organização e a complexidade do fluxo de email será usada para determinar a qualificação para este distribuídas. Se sua organização estiver selecionada para este distribuídas, você receberá uma notificação no Centro de mensagem do Office 365 informando a data em que essa diretiva automática será criada e você receberá pelo menos um aviso de 30 dias e a opção para sair. Se você não quer esperar para a Microsoft criar essa diretiva e gostaria de fazê-lo si, você pode criar essa diretiva automática usando regras de fluxo de emails do Exchange.
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>Quando esperar que a atualização para o seu locatário
 
@@ -52,7 +52,7 @@ Você não precisará atualizar ou modificar quaisquer definições de configura
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>Como essa alteração será representada no log de auditoria?
 
-Esta atividade é auditada e está disponível para clientes.  A operação é 'New-TransportRule' e um trecho de uma entrada de auditoria de amostra da pesquisa de Log de auditoria no Centro de conformidade e segurança está abaixo:
+Esta atividade é auditada e está disponível para clientes.  A operação é 'New-TransportRule' e um trecho de uma entrada de auditoria de amostra da pesquisa de Log de auditoria no Centro de conformidade de & de segurança está abaixo:
 
 |     |
 | --- |

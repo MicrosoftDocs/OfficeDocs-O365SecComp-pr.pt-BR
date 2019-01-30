@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem.
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255886"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614455"
 ---
 # <a name="anti-spam-message-headers"></a>Cabeçalhos de mensagem antispam
 
@@ -54,7 +54,7 @@ Depois de acessar as informações do cabeçalho da mensagem, procure **X-Forefr
 |SFV:NSPM|A mensagem foi marcada como não spam e enviada aos destinatários pretendidos.|
 |H: [helostring]|A cadeia de caracteres HELO ou EHLO do servidor de email que está se conectando.|
 |PTR: [ReverseDNS]|O registro PTR, ou registro do ponteiro, do endereço IP de envio, também conhecido como o endereço de DNS reverso.|
-|SFTY|A mensagem foi identificada como phishing e também será marcada com um dos seguintes valores: <br/>• 9.1: valor padrão. A mensagem contém uma URL de phishing, pode conter outros conteúdos de phishing ou talvez foram marcada como phishing por outro filtro de email, como uma versão local do Exchange Server antes de retransmitir a mensagem para o Office 365. <br/>• 9.11: mensagem falhou antifalsificação verificações onde o domínio de envio no campo From: cabeçalho é o mesmo, ou se alinha com ou é parte da mesma organização que o domínio de recebimento. <br/>• 9.21: mensagem falhou verificações antifalsificação e o domínio de envio no campo From: cabeçalho não autenticar. Usado em combinação com CompAuth (Consulte autenticação resultados). <br/>• 9.22: igual à 9.21, exceto que o usuário tem um remetente seguro que foi substituído. <br/>• 9.23: igual à 9.22, exceto que a organização tem um remetente permitido ou domínio que foi substituído. <br/>• 9,24: igual à 9.23, exceto que o usuário possui uma regra de fluxo de email do Exchange que foi substituída.|
+|SFTY|A mensagem foi identificada como phishing e também será marcada com um dos seguintes valores: <br/>• 9.1: valor padrão. A mensagem contém uma URL de phishing, pode conter outros conteúdos de phishing ou talvez foram marcada como phishing por outro filtro de email, como uma versão local do Exchange Server antes de retransmitir a mensagem para o Office 365. <br/>• 9.11: mensagem falhou antifalsificação verificações onde o domínio de envio no campo From: cabeçalho é o mesmo, ou se alinha com ou é parte da mesma organização que o domínio de recebimento. Isso indica que uma dica de safety falsificação interna da organização será adicionada à mensagem. <br/>• 9.19: mensagem falhou verificações de representação do domínio onde o domínio de envio está tentando representar um domínio pertencentes ao receptor ou um domínio personalizado protegido pela política antiphishing. Isso indica que uma dica de segurança de representação será adicionada à mensagem, se for habilitada por meio da política Anti-Phishig. <br/>• 9,20: mensagem falhou verificações de representação de usuário onde o usuário de envio está tentando representar um usuário dentro da organização de receptores, ou um usuário personalizado protegido pela política antiphishing. Isso indica que uma dica de segurança de representação será adicionada à mensagem, se for habilitada por meio da política Anti-Phishig. <br/>• 9.21: mensagem falhou verificações antifalsificação e o domínio de envio no campo From: cabeçalho não autenticar e é de um domínio externo. Usado em combinação com CompAuth (Consulte autenticação resultados). <br/>• 9.22: igual à 9.21, exceto que o usuário tem um remetente seguro que foi substituído. <br/>• 9.23: igual à 9.22, exceto que a organização tem um remetente permitido ou domínio que foi substituído. <br/>• 9,24: igual à 9.23, exceto que o usuário possui uma regra de fluxo de email do Exchange que foi substituída.|
 |X-CustomSpam: [ASFOption]|A mensagem corresponde a uma opção de filtragem de spam avançada. Por exemplo, **X-CustomSpam: links para sites remotos da imagem** indica que a opção de **links de imagem para sites remotos** ASF correspondida. Para descobrir qual texto de cabeçalho X é adicionado para cada opção de ASF específica, consulte [Opções de filtragem de spam avançada](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campos de cabeçalho da mensagem X-Microsoft-Antispam
