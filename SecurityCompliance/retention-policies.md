@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380611"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607163"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -263,8 +263,32 @@ Algumas organizações talvez precisem cumprir regras definidas por órgãos reg
 Após o bloqueio de uma política, ninguém poderá desativá-la nem remover locais da política. Além disso, não é possível modificar ou excluir o conteúdo que está sujeito à política durante o período de retenção. Depois que a política for bloqueada, só se poderá modificar a política de retenção adicionando locais a ela ou ampliando sua duração. Uma política bloqueada pode ser aumentada ou estendida, mas não poderá ser reduzida ou desativada.
   
 Portanto, antes de bloquear uma política de retenção, é **fundamental** que você entenda os requisitos de conformidade da sua organização e **não bloqueie uma política** até ter certeza de que isso é necessário.
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>Bloquear uma política de retenção usando o PowerShell
   
-Você pode bloquear uma política de retenção usando apenas o PowerShell. Use o parâmetro `RestrictiveRetention` do cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](#find-the-powershell-cmdlets-for-retention-policies).
+Você pode bloquear uma política de retenção apenas usando o PowerShell.
+
+Primeiro, [conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Em segundo lugar, para exibir uma lista de suas políticas de retenção e encontrar o nome da política que você quer bloquear, execute `Get-RetentionCompliancePolicy`.
+
+![Lista de políticas de retenção no PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+Terceiro lugar, para colocar um bloqueio de preservação a política de retenção, execute `Set-RetentionCompliancePolicy` com o `RestrictiveRetention` parâmetro definido como verdadeiro, por exemplo:
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![Parâmetro RestrictiveRetention no PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+Depois de executar esse cmdlet, você pode ver um prompt de confirmação. Escolha **Sim para todos**.
+
+![Solicitar confirmação antes de confirmar que deseja bloquear uma política de retenção no PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+Agora, o bloqueio de preservação é colocado na política de retenção. Se você executar o parâmetro `Get-RetentionCompliancePolicy`, o `RestrictiveRetention` é definido como verdadeiro, por exemplo:
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![Bloquear a política com todos os parâmetros mostrados no PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Os princípios de retenção ou o que tem precedência?
 
