@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: No Office 365, você pode usar rótulos para implementar um agendamento de retenção para a sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos para criar e publicar. Você pode fazer isso pela interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos um de cada vez é ineficiente e demorado. Usando o script e os arquivos .csv fornecidos abaixo, você pode criar em massa e publicar rótulos e as políticas de rótulo. Primeiro, você cria uma lista dos rótulos e uma lista das políticas de rótulos no Excel e, em seguida, você cria em massa os rótulos e as políticas de rótulos nessas listas usando o PowerShell. Isso facilita criar e publicar ao mesmo tempo todos os rótulos exigidos pelo agendamento de retenção.
-ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
-ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
+ms.openlocfilehash: d05246dacd71ee59a795121e60a2a4202cfef69f
+ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25899662"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29629043"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Criação e publicação em massa de rótulos de retenção usando o PowerShell
 
@@ -77,7 +77,7 @@ Observações:
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
-Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,,,,,,,,,,,
+Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
 ## <a name="step-3-create-the-powershell-script"></a>Etapa 3: Criar o script do PowerShell
