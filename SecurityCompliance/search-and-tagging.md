@@ -3,7 +3,7 @@ title: Pesquisa e marcação
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/13/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,51 +12,64 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: No eDiscovery avançado, o módulo de pesquisa e marcação permite pesquisar, visualizar e organizar documentos no seu caso. Atualmente, este módulo está na versão beta.
-ms.openlocfilehash: fde887e496e9a40aa88d841053a0c66e48f04200
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524135"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666141"
 ---
 # <a name="search-and-tagging"></a>Pesquisa e marcação
 
-No eDiscovery avançado, o módulo de pesquisa e marcação permite pesquisar, visualizar e organizar documentos no seu caso. Atualmente, este módulo está na versão beta.
+No eDiscovery avançado, o módulo de pesquisa e marcação permite pesquisar, visualizar e organizar documentos no seu caso. Atualmente, este módulo está na versão beta. Para uma demonstração em breve de pesquisa e a marcação, consulte o vídeo de [gerenciar seus dados com o eDiscovery avançado](https://www.youtube.com/watch?v=VaPYL3DHP6I) .
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="search-the-documents-in-your-case"></a>Pesquisar os documentos no seu caso
 
-Depois que tiver processado documentos no eDiscovery avançado e, opcionalmente, executar o módulo de analisar ou o módulo de relevância, você pode usar a pesquisa e marcação para pesquisar os documentos no caso e organizá-los usando marcas específicas ao caso. Você pode definir suas consultas usando as placas de condição fornecida ou por meio de uma linguagem de consulta KQL semelhantes nas palavras-chave condição cartão. Sintaxe KQL comum, como AND, OR, NOT e NEAR(n) são compatível, bem como à direita múltiplos caractere caractere curinga (*). Essas propriedades são suportadas no nome da propriedade de linguagem de consulta:
+Depois de ter processado documentos em um caso de eDiscovery avançado (e, opcionalmente, execute o módulo analisar ou relevância), você pode usar a pesquisa e a marcação para pesquisar documentos e, em seguida, organizá-los aplicando marcas caso específico (também chamadas de rótulos). Você pode definir uma consulta de pesquisa usando as placas de condição fornecida ou por meio de uma linguagem de consulta KQL semelhantes nas palavras-chave condição cartão. Sintaxe KQL comum, como AND, OR, NOT e NEAR(n) são compatível, bem como à direita múltiplos caractere caractere curinga (*). 
 
-- caselabel: marcas criado/aplicadas na pesquisa e a marcação para este caso 
-- responsáveis: responsáveis atribuídos no caso - sujeitos a limitações
-- Data: enviada data para email, modificado data para documentos
-- FileID: ID do arquivo dentro do gabinete
-- FileType: extensão de arquivo nativo
-- fileclass: email, documento ou anexo
-- senderauthor: remetente para e-mails, autor de documentos
-- Tamanho: tamanho do arquivo no KB
-- subjecttitle: assunto para e-mails, título de documentos
-- bcc
-- cc
-- participantes: endereços de E-mail de todos os participantes em um segmento de email, incluindo para vínculos ausentes
-- recebidos: data de recebimento
-- destinatários: endereços (para, cc, Cco) ou os nomes dos destinatários de email
-- remetente
-- LastModifiedDate: data de um documento da última modificação
-- enviados: enviadas a data de um email
-- para
-- autor: autor de um email
-- título: título de um documento
-- dominanttheme: dominante tema de um item\*
-- themeslist: temas que estão associados um item\*
-- readpercentile_ [issuenum]: Leia percentil de um item para o problema [issuenum]\*\*
-- relevancescore_ [issuenum]: a pontuação de relevância de um item para o problema [issuenum]\*\*
-- relevancetag_ [issuenum]: se um item foi marcado manualmente para a relevância, sua tag para [issuenum]\*\*
+A tabela a seguir lista as propriedades que você pode pesquisar usando uma consulta de palavra-chave KQL. Como alternativa, você pode usar um cartão de condição para na ferramenta de pesquisa do eDiscovery avançada para adicionar uma condição (para propriedades selecionadas) para uma consulta de pesquisa.
 
-\*Disponível somente se o módulo de temas tiver sido executado \* \* só estará disponível se o módulo de relevância tenha sido executado.
+|**Propriedade**|**Descrição**|
+|:-----|:-----|
+|**caselabel** <br/> | O nome da marca criado/aplicada quando um documento marcado. <br/> |
+|**dos responsáveis** <br/> | Dos responsáveis associado a um documento. está sujeito às limitações. <br/> |
+|**Data** <br/> | Enviada data para email; a data de modificação de documentos do site. <br/> |
+|**FileID** <br/> | A identificação do arquivo dentro do caso. <br/> |
+|**FileType** <br/> | A extensão de arquivo nativo. <br/> |
+|**fileclass** <br/> | Email, documento ou anexo. <br/> |
+|**senderauthor** <br/> | O remetente do email; o autor para documentos do site. <br/> |
+|**tamanho** <br/> | O tamanho do arquivo no KB. <br/> |
+|**subjecttitle** <br/> | O assunto de email; o título de documentos do site. <br/> |
+|**bcc** <br/> | O campo Cco de um email. <br/> |
+|**cc** <br/> | O campo Cc de um email. <br/> |
+|**participantes** <br/> | O endereço de email de todos os participantes em um segmento de email, incluindo para vínculos ausentes. <br/> |
+|**recebido** <br/> | A data em que um email foi recebido. <br/> |
+|**destinatários** <br/> | Destinatários de um email, incluídos em para, Cc ou Cco, campos. <br/> |
+|**remetente** <br/> | O remetente de um email. <br/> |
+|**LastModifiedDate** <br/> | A última data de um documento do site da modificação. <br/> |
+|**enviado** <br/> | A data enviada de um email. <br/> |
+|**Para** <br/> | O destinatário listado no campo para de um email. <br/> |
+|**autor** <br/> | O autor de um documento do site. <br/> |
+|**título** <br/> | O título de um documento do site. <br/> |
+|**dominanttheme**\* <br/> | O tema dominante de um item. <br/> |
+|**themeslist**\* <br/> | Temas que estão associados um item. <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | O percentil de leitura de um item, para o problema definido pela [issuenum]. <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | A pontuação de relevância de um item, para o problema definido pela [issuenum]. <br/> |
+|**relevancetag_ [tagname]**\*\* <br/> | Se um item tiver sido marcados manualmente para a relevância, a marca definida pela [tagname]. <br/> |
+|||
+
+\*Disponível somente se o módulo de temas tiver sido executado.
+
+\*\*Disponível somente se o módulo de relevância tiver sido executado.
+
+Como alternativa, você pode usar um cartão de condição na ferramenta de pesquisa do eDiscovery avançada para adicionar uma condição (para propriedades selecionadas) para uma consulta de pesquisa. A captura de tela a seguir mostra as condições que podem ser adicionadas a uma consulta. A coluna **grupo** indica se a propriedade se aplica a email, documentos de site ou ambos (indicado pelo valor *comum*). Essa coluna também identifica as propriedades pesquisáveis que estão disponíveis depois de executar o módulo de relevância.
+
+![Condições de pesquisa na ferramenta de pesquisa de descoberta eletrônica avançada](media/AeDSearchConditions.png)
+
+Para obter mais informações sobre propriedades pesquisáveis, consulte [consultas de palavra-chave e condições de pesquisa](keyword-queries-and-search-conditions.md).
   
 ## <a name="see-also"></a>Confira também
 
