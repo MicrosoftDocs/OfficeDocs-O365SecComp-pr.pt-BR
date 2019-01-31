@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Saiba como manter emails reais fora do lixo eletrônico e impedir que sejam marcadas como spam no Office 365.
-ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: 4da27aea157d3d816f8ce9a9631dd608dd5cd164
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596714"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614425"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
@@ -29,11 +29,13 @@ A Proteção do Exchange Online (EOP) tenta filtrar spams, manter sua caixa de e
   
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar o motivo pelo qual a mensagem foi marcada como spam
 
-Vários problemas com spam no Office 365 podem ser resolvidos pela opção [Exibir cabeçalhos de email](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) e determinar o que deu errado. Se você vir um cabeçalho de mensagem chamado X-Forefront-Antispam-Report que contém a cadeia de caracteres SFV:NSPM, isso significará que a Proteção do Exchange Online (EOP) digitalizou a mensagem e pensou que era spam. Nesse caso, recomendamos que você [Use o suplemento Mensagem de Relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ajudar a melhorar nossos filtros. Se você não vir esse valor nos cabeçalhos, isso poderá significar que o email não passa pela verificação de spam ou houve um problema de configuração que fez a mensagem ser classificada como spam incorretamente. Você pode [saber mais informações sobre os cabeçalhos de mensagem antispam](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
+Para resolver muitos problemas de spam no Office 365, confira o artigo [Exibir cabeçalhos de mensagens de email](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) e determine o que deu errado. Procure um cabeçalho chamado X-Forefront-Antispam-Report. [Saiba mais sobre cabeçalhos de mensagem antispam](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
   
 No cabeçalho, procure os cabeçalhos e os valores a seguir.
   
 ### <a name="x-forefront-antispam-report"></a>X-Forefront-Antispam-Report
+
+- **SFV:SPM** Indica que a mensagem foi marcada como spam devido aos filtros de spam da Proteção do Exchange Online. 
 
 - **SFV:BLK** Indica que a mensagem foi marcada como spam porque o endereço de envio está na lista de Remetentes Bloqueados do destinatário. 
     
@@ -41,7 +43,7 @@ No cabeçalho, procure os cabeçalhos e os valores a seguir.
     
 - **SFV:SKB** Indica que a mensagem foi marcada como spam porque correspondeu a uma lista de bloqueios na política de filtro de spam. 
     
-- **SFV:Bulk** Indica que o valor do Nível de Reclamação em Massa (BCL) localizado no cabeçalho x-microsoft-antispam está acima do limite de massa que foi definido para o filtro de conteúdo. Emails em massa são emails que os usuários podem ter se inscrito para receber, mas ainda assim podem ser indesejados. No cabeçalho da mensagem, localize a propriedade BCL (Nível de Confiança em Massa) no cabeçalho X-Microsoft-Antispam. Se o valor de BCL for menor que o limite definido no filtro de spam, ajuste o limite para marcar esses tipos de mensagens em massa como spam. Usuários diferentes têm tolerâncias e preferências diferentes para [como o email em massa é tratado](https://blogs.msdn.microsoft.com/tzink/2014/08/25/different-levels-of-bulk-mail-filtering-in-office-365/). Você pode criar regras ou políticas diferentes para atender a diferentes preferências do usuário.
+- **SFV:Bulk** Indica que o valor do Nível de Reclamação em Massa (BCL) localizado no cabeçalho x-microsoft-antispam está acima do limite de massa que foi definido para o filtro de conteúdo. Emails em massa são emails que os usuários podem ter se inscrito para receber, mas ainda assim podem ser indesejados. No cabeçalho da mensagem, localize a propriedade BCL (Nível de Confiança em Massa) no cabeçalho X-Microsoft-Antispam. Se o valor de BCL for menor que o limite definido no filtro de spam, ajuste o limite para marcar esses tipos de mensagens em massa como spam. Usuários diferentes têm tolerâncias e preferências diferentes para [como o email em massa é tratado](https://docs.microsoft.com/pt-BR/office365/SecurityCompliance/bulk-complaint-level-values). Você pode criar regras ou políticas diferentes para atender a diferentes preferências do usuário.
     
 - **CAT:SPOOF** ou **CAT:PHISH** Indica que a mensagem parece ser falsa, ou seja, a fonte da mensagem não pode ser validada e pode ser suspeita. Se for válida, o remetente precisará garantir que ele tenha a configuração correta de DKIM e SPF. Verifique o cabeçalho Authentication-Results para obter mais informações. Embora possa ser difícil fazer todos os remetentes usarem métodos adequados de autenticação de email, ignorar essas verificações podem ser muito perigoso e é a principal causa de comprometimentos. 
     
@@ -67,8 +69,6 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
 
 - **Relatar o spam à Microsoft** Relatar mensagens de spam para a Microsoft usando a opção [Usar o suplemento Mensagem de Relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode enviar uma mensagem para junk@office365.microsoft.com e anexe uma ou mais mensagens ao relatório.
     
-    **Importante** Se você não encaminhar as mensagens como anexos, [os cabeçalhos estarão ausentes e não poderemos melhorar](https://blogs.msdn.microsoft.com/tzink/2017/11/30/when-creating-support-tickets-about-spam-be-sure-to-include-message-headers/) a filtragem de lixo eletrônico no Office 365. 
+    **Importante** Se você não encaminhar as mensagens como anexos, os cabeçalhos estarão ausentes e não poderemos melhorar a filtragem de lixo eletrônico no Office 365. 
     
 - **Adicionar um remetente a sua lista de permissões, mas use com moderação** Como último recurso, você pode [Bloquear ou permitir (configurações de lixo eletrônico)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Se fizer isso, esteja ciente de que uma tentativa de phishing direcionada poderá ter acesso a sua caixa de entrada.
-    
-
