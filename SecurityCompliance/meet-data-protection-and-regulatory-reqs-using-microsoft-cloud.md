@@ -13,18 +13,20 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: O Gerenciador de Conformidade no Portal de Confiança do Serviço Microsoft fornece ferramentas para monitorar, implementar e gerenciar os controles para ajudar sua organização a alcançar a conformidade de acordo com os padrões de segurança e proteção de dados do setor (como RGPD, ISO 27001 e 27018, e HIPAA) quando comparados aos serviços em nuvem da Microsoft, como o Microsoft Azure e o Office 365. O Gerenciador de Conformidade ajuda quem supervisiona a estratégia de privacidade e proteção de dados da sua organização a gerenciar o processo de avaliação de risco e conformidade.
-ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: 6f423ba29540bdc498c2725b9741dece2557e4be
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618927"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666171"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft
 
  *O Gerenciador de Conformidade não está disponível no Office 365 operado pela 21Vianet, Office 365 Germany, Office 365 US Government Community High (GCC High) ou Office 365 Department of Defense.* 
   
-O Gerenciador de Conformidade, uma ferramenta de avaliação de risco baseada no [Portal de Confiança do Serviço](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662) da Microsoft, permite monitorar, atribuir e verificar as atividades de conformidade normativas da sua organização relacionadas aos Serviços Profissionais e aos serviços em nuvem da Microsoft, como o Microsoft Office 365, o Microsoft Dynamics 365 e o Microsoft Azure. O Gerenciador de Conformidade:
+O Gerenciador de Conformidade, uma ferramenta de avaliação de risco baseada no [Portal de Confiança do Serviço](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662) da Microsoft, permite monitorar, atribuir e verificar as atividades de conformidade normativas da sua organização relacionadas aos Serviços Profissionais e aos serviços em nuvem da Microsoft, como o Microsoft Office 365, o Microsoft Dynamics 365 e o Microsoft Azure. 
+
+Gerenciador de Conformidade:
   
 - Combina as informações detalhadas fornecidas pela Microsoft para auditores e reguladores como parte de várias auditorias de terceiros dos serviços em nuvem da Microsoft em relação a vários padrões (por exemplo, ISO 27001, ISO 27018 e NIST) e as informações que a Microsoft compila internamente para sua conformidade com as regulamentações (como HIPAA ou o RGPD – Regulamento Geral sobre a Proteção de Dados da UE) com sua própria avaliação de conformidade da organização com esses padrões e regulamentações.
     
@@ -35,36 +37,17 @@ O Gerenciador de Conformidade, uma ferramenta de avaliação de risco baseada no
 - Fornece um repositório seguro para carregar e gerenciar evidências e outros artefatos relacionados às suas atividades de conformidade.
     
 - Produz relatórios ricos e detalhados no Microsoft Excel que documentam as atividades de conformidade executadas pela Microsoft e por sua organização, que podem ser fornecidos aos auditores, reguladores e outros participantes de conformidade.
+
+Uma breve demonstração do Gerenciador de conformidade, confira esse vídeo [gerente de conformidade](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
+
     
 > [!IMPORTANT]
 > O Gerenciador de Conformidade é um painel que fornece um resumo de sua estatura de conformidade e de proteção de dados e as recomendações para melhorar a conformidade e a proteção de dados. As Ações de clientes fornecidas no Gerenciador de Conformidade são recomendações; cabe a cada organização avaliar a eficácia dessas recomendações em seus respectivos ambientes regulatórios antes da implementação. As recomendações encontradas no Gerenciador de Conformidade não devem ser interpretadas como garantia de conformidade.
+
     
 ## <a name="what-is-compliance-manager"></a>O que é o Gerenciador de Conformidade?
 
 O Gerenciador de Conformidade é uma ferramenta de avaliação de risco com base no fluxo de trabalho projetada para ajudar a gerenciar a conformidade regulamentar no modelo de responsabilidade compartilhada da nuvem. O Gerenciador de Conformidade fornece um modo de exibição do painel de padrões, regulamentações e avaliações que contém detalhes de implementação de controles e resultados de testes da Microsoft, bem como orientação e rastreamento da implementação de controle do cliente para sua organização seguir. O Gerenciador de Conformidade fornece definições de controle de avaliação de certificação, orientação na implementação e testes de controles, pontuação ponderada de risco de controles, gerenciamento de acesso baseado na função e um fluxo de trabalho de atribuição de ação de controle in-loco para acompanhar a implementação de controles, o status de testes e o gerenciamento de evidências. O Gerenciador de Conformidade otimiza a carga de trabalho de conformidade, permitindo que os clientes agrupem as avaliações de forma lógica e que apliquem os testes de controle de avaliação a controles idênticos ou relacionados, reduzindo a duplicação de esforços que poderiam ser necessários para atender a requisitos de controle idênticos em certificações diferentes.
-  
-## <a name="using-search"></a>Usar a pesquisa
-
-![Portal de Confiança do Serviço – campo de entrada de Pesquisa](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
-  
-Clique na lupa no canto superior direito da página para expandir o campo de entrada de Pesquisa, digite os termos da pesquisa e pressione Enter. O controle de pesquisa exibirá o termo de pesquisa no campo de entrada do painel de pesquisa e os resultados da pesquisa aparecerão abaixo.
-  
-Por padrão, a Pesquisa retorna resultados de Documentos e você pode usar os Filtros nas listas suspensas para refinar a lista de documentos exibidos, para adicionar ou remover resultados de pesquisa no modo de exibição. É possível usar vários atributos de filtro ao mesmo tempo para restringir os documentos retornados para o serviços em nuvem específico, categorias de práticas de conformidade ou segurança, regiões do mundo ou setores. Clique no link do nome do documento para baixar o documento.
-  
-![Portal de Confiança do Serviço – pesquisa em documentos com filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-  
-Clique no link Gerenciador de Conformidade para exibir os resultados de pesquisa para controles de avaliação do Gerenciador de Conformidade. Os resultados listados na pesquisa mostram a data em que a avaliação foi criada, o nome do agrupamento da avaliação, o serviço de nuvem aplicável e se os controles são gerenciados pela Microsoft ou pelo cliente.
-  
-![Portal de Confiança do Serviço – pesquisa em controles de gerenciamento de conformidade](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
-> [!NOTE]
-> Os relatórios e documentos do Portal de Confiança do Serviço ficam disponíveis para baixar durante pelo menos doze meses após a publicação ou até uma nova versão do documento ficar disponível. 
- 
-## <a name="localization-support"></a>Suporte de localização
-
-O Portal de Confiança do Serviço permite visualizar o conteúdo da página em diferentes idiomas. Para alterar o idioma da página, clique no ícone de globo no canto inferior esquerdo da página e selecione o idioma. 
-  
-![Portal de Confiança do Serviço – opções de conteúdo localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="assessments-in-compliance-manager"></a>Avaliações no Gerenciador de Conformidade
 
@@ -690,6 +673,30 @@ Para exibir as avaliações arquivadas:
 3. Clique no nome de avaliação que deseja exibir.
     
 Ao exibir uma avaliação arquivada, nenhum dos controles normalmente editáveis (ou seja, Implementação, Resultados de testes) estarão ativos e o botão **Documentos gerenciados** estará ausente.
+
+## <a name="using-search"></a>Usar a pesquisa
+
+![Portal de Confiança do Serviço – campo de entrada de Pesquisa](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+  
+Clique na lupa no canto superior direito da página para expandir o campo de entrada de Pesquisa, digite os termos da pesquisa e pressione Enter. O controle de pesquisa exibirá o termo de pesquisa no campo de entrada do painel de pesquisa e os resultados da pesquisa aparecerão abaixo.
+  
+Por padrão, a Pesquisa retorna resultados de Documentos e você pode usar os Filtros nas listas suspensas para refinar a lista de documentos exibidos, para adicionar ou remover resultados de pesquisa no modo de exibição. É possível usar vários atributos de filtro ao mesmo tempo para restringir os documentos retornados para o serviços em nuvem específico, categorias de práticas de conformidade ou segurança, regiões do mundo ou setores. Clique no link do nome do documento para baixar o documento.
+  
+![Portal de Confiança do Serviço – pesquisa em documentos com filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+  
+Clique no link Gerenciador de Conformidade para exibir os resultados de pesquisa para controles de avaliação do Gerenciador de Conformidade. Os resultados listados na pesquisa mostram a data em que a avaliação foi criada, o nome do agrupamento da avaliação, o serviço de nuvem aplicável e se os controles são gerenciados pela Microsoft ou pelo cliente.
+  
+![Portal de Confiança do Serviço – pesquisa em controles de gerenciamento de conformidade](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+  
+> [!NOTE]
+> Os relatórios e documentos do Portal de Confiança do Serviço ficam disponíveis para baixar durante pelo menos doze meses após a publicação ou até uma nova versão do documento ficar disponível. 
+ 
+## <a name="localization-support"></a>Suporte de localização
+
+O Portal de Confiança do Serviço permite visualizar o conteúdo da página em diferentes idiomas. Para alterar o idioma da página, clique no ícone de globo no canto inferior esquerdo da página e selecione o idioma. 
+  
+![Portal de Confiança do Serviço – opções de conteúdo localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+
 
 ## <a name="change-log-for-customer-managed-controls"></a>Alterar log para Controles gerenciados do cliente
 
