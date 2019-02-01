@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
+ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607163"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690412"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -60,7 +60,7 @@ Você pode criar e gerenciar políticas de retenção na página **Retenção** 
 
 Quando você incluir um local como um site ou caixa de correio em uma política de retenção, o conteúdo permanecerá no local original. As pessoas podem continuar a trabalhar com seus documentos ou emails como se nada tivesse mudado. Mas, se elas editarem ou excluírem o conteúdo incluído na política, será mantida uma cópia do conteúdo conforme existia antes da aplicação da política.
   
-Para sites, uma cópia do conteúdo original é guardada na biblioteca de retenção para preservação quando os usuários o editam ou o excluem; para emails e pastas públicas, a cópia é mantida na pasta Itens Recuperáveis. Esses locais seguros e o conteúdo retido não ficam visíveis para a maioria das pessoas. Com uma política de retenção, as pessoas nem mesmo precisam saber que seu conteúdo está sujeito à política.
+Para conjuntos de sites do SharePoint, uma cópia do conteúdo original é guardada na biblioteca de retenção para preservação quando os usuários o editam ou o excluem. No caso de emails e pastas públicas, a cópia é mantida na pasta Itens Recuperáveis. Esses locais seguros e o conteúdo retido não ficam visíveis para a maioria das pessoas. Com uma política de retenção, as pessoas nem mesmo precisam saber que o conteúdo está sujeito a uma política.
   
 Observações:
   
@@ -70,15 +70,15 @@ Observações:
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Conteúdo em contas do OneDrive e dos sites do SharePoint
 
-Uma política de retenção é aplicada no nível de um site. Quando você inclui um site do SharePoint ou conta do OneDrive em uma política de retenção, uma biblioteca de Retenção para Preservação será criada, caso ainda não exista uma. A maioria dos usuários não conseguirá exibir a biblioteca de Retenção para Preservação porque ela só fica visível para administradores de conjunto de sites.
+Uma política de retenção é aplicada no nível de um conjunto de sites. Quando você inclui um conjunto de sites do SharePoint ou uma conta do OneDrive em uma política de retenção, uma biblioteca de retenção para preservação é criada, caso ainda não exista uma. Essa biblioteca está disponível para exibição na página **Conteúdo do site**. A maioria dos usuários não consegue exibir a biblioteca de retenção para preservação porque ela fica visível apenas para administradores de conjuntos de sites.
   
-Caso uma pessoa tente alterar ou excluir o conteúdo de um site que esteja sujeito à política de retenção, primeiro a política verificará se o conteúdo foi alterado desde a aplicação da política. Se essa for a primeira alteração desde que a política de retenção foi aplicada, a política copiará o conteúdo na Biblioteca de Retenção para Preservação e, então, permitirá que a pessoa altere ou exclua o conteúdo original. Observe que qualquer conteúdo do site poderá ser copiado para a biblioteca de Retenção para Preservação, mesmo se não corresponder à consulta usada pela política de retenção.
+Caso uma pessoa tente alterar ou excluir o conteúdo de um site que esteja sujeito à política de retenção, primeiro a política verificará se o conteúdo foi alterado desde a aplicação da política. Se essa for a primeira alteração desde que a política de retenção foi aplicada, a política copiará o conteúdo na biblioteca de retenção para preservação e, em seguida, permitirá que a pessoa altere ou exclua o conteúdo original. Observe que qualquer conteúdo do conjunto de sites poderá ser copiado para a biblioteca de retenção para preservação, mesmo que não corresponda à consulta usada pela política de retenção.
   
 Em seguida, uma tarefa do temporizador limpa a Biblioteca de Retenções para Preservação. A tarefa do temporizador é executada periodicamente e compara todo o conteúdo da biblioteca de Retenção com todas as consultas usadas pelas políticas de retenção no site. A menos que o conteúdo corresponda a pelo menos uma das consultas, a tarefa do temporizador excluirá permanentemente o conteúdo da Biblioteca de Retenções para Preservação.
   
-O anterior aplica-se ao conteúdo existente quando a política de retenção for aplicada. Além disso, qualquer conteúdo novo criado ou adicionado ao site depois que ele tiver sido incluído na política será retido após a exclusão. Entretanto, o novo conteúdo não será copiado para a Biblioteca de Retenções para Preservação na primeira vez em que for editado, somente quando for excluído. Para reter todas as versões de um arquivo, será necessário ativar o controle de versão; consulte a seção abaixo sobre controle de versão.
+A medida anterior se aplica ao conteúdo existente, na ocasião em que a política de retenção é aplicada. Além disso, qualquer conteúdo novo criado ou adicionado ao conjunto de sites depois que ele for incluído na política será retido após a exclusão. Entretanto, o novo conteúdo não será copiado na biblioteca de retenção para preservação na primeira vez em que for editado, somente quando for excluído. Para reter todas as versões de um arquivo, será necessário ativar o controle de versão. Confira a seção abaixo sobre controle de versão.
   
-Observe que um usuário receberá uma mensagem de erro se tentar excluir uma biblioteca, lista, pasta ou site que está sujeito a uma política de retenção. Um usuário poderá excluir uma pasta se primeiro mover ou excluir os arquivos na pasta que está sujeita à política.
+Observe que um usuário receberá uma mensagem de erro se tentar excluir uma biblioteca, lista, pasta ou um site que está sujeito a uma política de retenção. Ele poderá excluir uma pasta, se primeiro mover ou excluir os arquivos da pasta que está sujeita à política. Além disso, a biblioteca de retenção para preservação é criada apenas quando o primeiro item precisa ser copiado para a biblioteca, e não quando você cria a política de retenção. Portanto, para testar a política, primeiro edite ou exclua um documento em um site que esteja sujeito à política e, em seguida, navegue até a biblioteca de retenção para preservação para exibir a cópia retida.
   
 ![Diagrama de fluxo de retenção no SharePoint e no OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
   
@@ -108,11 +108,11 @@ Depois que uma política de retenção é atribuída a uma caixa de correio ou p
     
 2. **Se o item não for modificado ou excluído** durante o período de retenção, o mesmo processo será executado periodicamente em todas as pastas na caixa de correio e identificará itens cujo período de retenção tenha expirado, e esses itens serão permanentemente excluídos em até 14 dias após o fim do período de retenção. Observe que 14 dias é a configuração padrão, que pode ser estendida para até 30 dias. 
     
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Como funciona uma política de retenção com versões de documento em um site
+## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Como funciona uma política de retenção com versões de documento em um conjunto de sites
 
 O controle de versão é um recurso de todas as bibliotecas de documentos no SharePoint Online e no OneDrive for Business. Por padrão, o controle de versão guarda um mínimo de quinhentas versões principais, embora você possa aumentar esse limite. Para saber mais, confira [Habilitar e configurar o controle de versão para uma lista ou biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Uma política de retenção guarda todas as versões de um documento em um site do SharePoint ou uma conta do OneDrive. Sempre que um documento sujeito a uma política de retenção é editado ou excluído, uma versão é copiada para a biblioteca de retenção para preservação. Cada versão do documento na biblioteca de retenção para preservação existe como um item separado com seu próprio período de retenção:
+Uma política de retenção guarda todas as versões de um documento em um conjunto de sites do SharePoint ou em uma conta do OneDrive. Sempre que um documento sujeito a uma política de retenção é editado ou excluído, uma versão é copiada para a biblioteca de retenção para preservação. Cada versão do documento na biblioteca de retenção para preservação existe como um item separado com um período de retenção próprio:
   
 - Se a política de retenção se basear em quando o conteúdo foi criado, cada versão terá a mesma data de expiração do documento original. O documento original e suas versões expirarão ao mesmo tempo.
     
@@ -122,7 +122,7 @@ Uma política de retenção guarda todas as versões de um documento em um site 
 
 Com uma política de retenção, é possível reter o conteúdo indefinidamente ou por um número específico de dias, meses ou anos. Observe que a duração para a retenção do conteúdo é calculada com base na idade desse conteúdo e não de quando a política de retenção tiver sido aplicada. Você pode escolher se a idade se baseia em quando o conteúdo tiver sido criado ou (para o OneDrive e do SharePoint) quando ele foi modificado pela última vez.
   
-Por exemplo, se você quiser reter o conteúdo em um site por sete anos desde que foi modificado pela última vez, e se um documento nesse site não tiver sido modificado em seis anos, o documento será retido somente por mais um ano caso não seja modificado. Se o documento for editado novamente, a idade do documento será calculada a partir da última data de modificação, e ele será retido por mais sete anos.
+Por exemplo, se você quiser reter o conteúdo em um conjunto de sites por sete anos desde que foi modificado pela última vez, e se um documento nesse conjunto de sites não tiver sido modificado em seis anos, o documento será retido somente por mais um ano, caso não seja modificado. Se o documento for editado novamente, a idade do documento será calculada a partir da data da última modificação, e ele será retido por mais sete anos.
   
 Da mesma forma, se você desejar reter o conteúdo em uma caixa de correio por sete anos, e uma mensagem tiver sido enviada há seis anos, a mensagem será retida por apenas um ano. Para conteúdo do Exchange, a idade sempre se baseará na data de recebimento ou de envio (elas são iguais). A retenção do conteúdo com base em quando ele foi modificado pela última vez aplica-se apenas ao conteúdo de site do OneDrive e do SharePoint.
   
@@ -140,7 +140,7 @@ Se sua política de retenção excluir conteúdo, será importante entender que 
   
 Por exemplo, suponha que você crie uma política de retenção que exclui conteúdo após três anos e, em seguida, atribui essa política a todas as contas do OneDrive, que incluem uma grande quantidade de conteúdo criado há quatro ou cinco anos. Nesse caso, muito conteúdo será excluído logo após atribuir a política de retenção pela primeira vez. Por esse motivo **uma política de retenção que exclui conteúdo pode ter um impacto considerável sobre o conteúdo**. 
   
-Portanto, antes de adicionar uma política de retenção a um site pela primeira vez, você deverá primeiro considerar a idade dos conteúdos e de que modo a política poderá afetá-los. Você também poderá informar os seus usuários sobre a nova política antes de atribuí-la, para que eles tenham tempo para avaliar o possível impacto. Observe esse aviso que aparece quando você analisa as configurações para sua política de retenção antes de criá-la.
+Portanto, quando atribuir uma política de retenção a um conjunto de sites pela primeira vez, primeiro considere a idade do conteúdo e de que modo a política poderá afetá-los. Você também poderá informar os usuários sobre a nova política antes de atribuí-la, para que eles tenham tempo de avaliar o possível impacto. Observe esse aviso que é exibido quando você revisa as configurações da política de retenção antes de criá-la.
   
 ![Aviso sobre exclusão de conteúdo](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -182,7 +182,7 @@ Um dos recursos mais avançados de política de retenção é que, por padrão, 
   
 - Email do Exchange
     
-- Sites do SharePoint
+- Conjuntos de sites do SharePoint
     
 - Contas do OneDrive
     
@@ -212,9 +212,9 @@ Você também pode aplicar uma política de retenção a usuários específicos.
   
 No entanto, observe que os seguintes limites existem para uma política de retenção que inclui ou exclui mais de 1.000 usuários específicos:
   
-- Essa política de retenção pode conter, no máximo, 1.000 caixas de correio e 100 sites.
+- Essa política de retenção pode conter, no máximo, 1.000 caixas de correio e 100 conjuntos de sites.
     
-- Um locatário pode conter não mais de 10.000 políticas de retenção.
+- Um locatário pode conter no máximo 10.000 políticas de retenção.
     
 Embora esses limites existam, entenda que você pode acessar ignorá-los aplicando uma política no âmbito da organização ou uma política a locais inteiros.
   
