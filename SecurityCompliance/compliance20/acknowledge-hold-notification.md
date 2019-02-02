@@ -1,5 +1,5 @@
 ---
-title: Reconhecendo notificações de espera
+title: Confirmar as notificações de uma isenção
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2ed2a30919332f7c301d3175350dfd23a66b1f3c
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5ed3d214fe55df658faee6859d366637ef0fd37b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607386"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694927"
 ---
-# <a name="acknowledging-hold-notifications"></a>Reconhecendo notificações de espera 
+# <a name="acknowledge-a-hold-notification"></a>Confirmar uma notificação de isenção 
 
 Conteúdo em breve.
