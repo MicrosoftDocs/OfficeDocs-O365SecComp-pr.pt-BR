@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Use o Centro de conformidade & segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: 'Use o Centro de conformidade do & de segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118137"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735463"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar no log de auditoria no Centro de conformidade & segurança do Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>O log de auditoria de pesquisa do Centro de conformidade do & de segurança do Office 365
 
 Precisa encontrar se um usuário exibido um documento específico ou removidos de um item de suas caixas de correio? Se precisar, você pode usar a segurança do Office 365 &amp; Centro de conformidade para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. Por que uma auditoria unificada efetuar? Porque você pode pesquisar os seguintes tipos de atividade do usuário e administração no Office 365:
   
@@ -40,7 +40,7 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
     
 - Atividade do usuário e administração no Sway
     
-- atividades de descoberta eletrônica no Centro de conformidade & segurança do Office 365
+- atividades de descoberta eletrônica no Centro de conformidade do & de segurança do Office 365
     
 - Atividade do usuário e administração no Power BI
     
@@ -172,6 +172,9 @@ Aqui é o processo para pesquisar o log de auditoria no Office 365.
     d. **site, arquivo ou pasta,** digite parte ou todo um nome de arquivo ou pasta para procurar a atividade relacionada ao arquivo da pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de que o tipo o caminho completo do URL, ou se você digitar apenas uma parte da URL, não inclua quaisquer caracteres especiais ou espaços. 
     
     Deixe esta caixa em branco para retornar as entradas para todos os arquivos e pastas em sua organização.
+    
+    > [!TIP]
+    > Se você estiver procurando por todas as atividades relacionadas a um **site**, adicione o símbolo de caractere curinga (\*) após a URL para retornar todas as entradas do site; Por exemplo, **"https://contoso-my.sharepoint.com/personal/*"**.
     
 5. Clique em **pesquisa** para executar a pesquisa usando os critérios de pesquisa. 
     
@@ -400,7 +403,8 @@ A tabela a seguir lista os eventos que resultam de tarefas de administração do
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
 |Adicionado o agente de usuários isentos  <br/> |ExemptUserAgentSet  <br/> |Um administrador global ou o SharePoint adiciona um agente de usuário à lista de agentes de usuários isentos no Centro de administração do SharePoint.  <br/> |
-|Administrador do conjunto de sites adicionados  <br/> |SiteCollectionAdminAdded  <br/> |Administrador de conjunto de sites ou proprietário adiciona uma pessoa como um administrador de conjunto de sites para um site. Os administradores de conjunto de sites tem permissões de controle total para o conjunto de sites e todos os subsites.  <br/> |
+|Administrador do conjunto de sites adicionados  <br/> |SiteCollectionAdminAdded  <br/> |Administrador de conjunto de sites ou proprietário adiciona uma pessoa como um administrador de conjunto de sites para um site. Os administradores de conjunto de sites tem permissões de controle total para o conjunto de sites e todos os subsites. Esta atividade também é registrada quando um administrador fornece sozinhos acesso a uma conta de usuário OneDrive (editando o perfil de usuário no Centro de administração do SharePoint ou [usando o Centro de administração do Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).<br/> |
+|(nenhum)  <br/> |SiteCollectionAdminRemoved <br/> |Administrador de conjunto de sites ou proprietário remove uma pessoa como um administrador de conjunto de sites para um site. Esta atividade também é registrada quando um administrador remove sozinhos da lista de administradores do conjunto de sites para uma conta de usuário OneDrive (editando o perfil de usuário no Centro de administração do SharePoint).  Observe que, para retornar a esta atividade nos resultados da pesquisa de log de auditoria, você precisa para todas as atividades de pesquisa. <br/> |
 |Adicionados pelo usuário ou grupo ao grupo do SharePoint  <br/> |AddedToGroup  <br/> |Usuário adicionado a um membro ou convidado a um grupo do SharePoint. Isso pode ter sido uma ação intencional ou o resultado de outra atividade, como um evento de compartilhamento.  <br/> |
 |Permissão de usuário criar grupos  <br/> |AllowGroupCreationSet  <br/> |Administrador de site ou proprietário adiciona um nível de permissão a um site que permite que um usuário atribuído a essa permissão para criar um grupo para esse site.  <br/> |
 |Mover sites cancelado geo  <br/> |SiteGeoMoveCancelled  <br/> |Um administrador global ou o SharePoint com êxito cancela uma lista do SharePoint ou OneDrive site geo mover. O recurso de Multi-Geo permite que uma organização do Office 365 abranger várias regiões de datacenter para Office 365, que são chamados geos. Para obter mais informações, consulte [Os recursos de Multi-Geo no OneDrive e SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
@@ -421,7 +425,7 @@ A tabela a seguir lista os eventos que resultam de tarefas de administração do
 |Enabled RSS feeds  <br/> |NewsFeedEnabledSet  <br/> |Administrador de site ou proprietário habilita feeds RSS para um site. Os administradores globais podem habilitar RSS feeds para toda a organização no Centro de administração do SharePoint.  <br/> |
 |A definição de solicitação de acesso modificado  <br/> |WebRequestAccessModified  <br/> |As configurações de solicitação de acesso foram modificadas em um site.  <br/> |
 |Configuração de membros podem compartilhar modificada  <br/> |WebMembersCanShareModified  <br/> |A configuração de **Membros podem compartilhar** foi modificada em um site.  <br/> |
-|Permissões de site modificada  <br/> |SitePermissionsModified  <br/> |Administrador de sites ou proprietário (ou a conta do sistema) altera o nível de permissão que são atribuídos a um grupo em um site. Esta atividade é registrada também se todas as permissões forem removidas de um grupo.<br/> > [!NOTE]> Essa operação foi preterida no SharePoint Online. Para localizar os eventos relacionados, você pode procurar por outras atividades relacionadas a permissão como **administrador do conjunto de sites foi adicionado**, **foram adicionados usuário ou grupo ao grupo do SharePoint**, **usuário permitidos para criar grupos**, **grupo criado**e **Deleted grupo.**         |
+|Permissões de site modificada  <br/> |SitePermissionsModified  <br/> |Administrador de sites ou proprietário (ou a conta do sistema) altera o nível de permissão que são atribuídos a um grupo em um site. Esta atividade é registrada também se todas as permissões forem removidas de um grupo.<br/> > [!NOTE]gt _ essa operação foi preterida no SharePoint Online. Para localizar os eventos relacionados, você pode procurar por outras atividades relacionadas a permissão como **administrador do conjunto de sites foi adicionado**, **foram adicionados usuário ou grupo ao grupo do SharePoint**, **usuário permitidos para criar grupos**, **grupo criado**e **Deleted grupo.**         |
 |Removido o usuário ou grupo do grupo do SharePoint  <br/> |RemovedFromGroup  <br/> |Usuário removido um membro ou convidado de um grupo do SharePoint. Isso pode ter sido uma ação intencional ou o resultado de outra atividade, como um evento descompartilhando.  <br/> |
 |Site renomeado  <br/> |SiteRenamed  <br/> |Administrador de site ou proprietário renomeia um site  <br/> |
 |Permissões de administrador do site solicitado  <br/> |SiteAdminChangeRequest  <br/> |Solicitações de usuário a ser adicionado como um administrador de conjunto de sites para um conjunto de sites. Os administradores de conjunto de sites tem permissões de controle total para o conjunto de sites e todos os subsites.  <br/> |
@@ -624,7 +628,7 @@ A tabela a seguir lista o usuário e o log de auditoria de atividades de adminis
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem a criação, edição e exclusão de fluxos e alterar permissões de fluxo. Para obter informações sobre a auditoria de atividades do fluxo, consulte o blog [Fluxo Microsoft auditar eventos agora está disponíveis no Centro de conformidade e segurança do Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem a criação, edição e exclusão de fluxos e alterar permissões de fluxo. Para obter informações sobre a auditoria de atividades do fluxo, consulte o blog [Fluxo Microsoft auditar eventos agora está disponíveis no Centro de conformidade de & de segurança do Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
@@ -682,7 +686,7 @@ Observe também que a duração do período de retenção de registros de audito
 
 Sim. A API de atividade de gerenciamento do Office 365 é usada para buscar os logs de auditoria programaticamente.  Para começar, consulte [Introdução ao APIs de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Existem outras maneiras de fazer auditoria logs que não seja suing a segurança do Office 365 & Centro de conformidade ou a API de atividade de gerenciamento do Office 365?**
+**Existem outras maneiras de fazer auditoria logs diferentes usando o Centro de conformidade de & de segurança do Office 365 ou a API de atividade de gerenciamento do Office 365?**
 
 Não. Esses são apenas duas maneiras de obter dados de serviço de auditoria do Office 365. 
 
