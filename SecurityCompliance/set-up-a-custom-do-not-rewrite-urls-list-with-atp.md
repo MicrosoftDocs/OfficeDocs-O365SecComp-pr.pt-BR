@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: f97abdb0f4e20ed968b4f71761a60cda79658d18
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015043"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741064"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
 
@@ -28,6 +29,14 @@ Este artigo descreve como especificar uma lista das URLs que são excluídos da 
 ## <a name="set-up-a-do-not-rewrite-list"></a>Configurar uma lista de "não regravação"
 
 Proteção de Links de seguros ATP usa várias listas, incluindo a lista de URLs bloqueios da sua organização e as listas de "não regravação" para exceções. Se você tiver as permissões necessárias, você pode configurar suas listas de "não regravação" personalizado. Você fazer isso quando você adicionar ou editar políticas de seguros Links que se aplicam a destinatários específicos na sua organização. 
+
+Para editar (ou definir) políticas ATP, você deve ter uma das funções descritas na tabela a seguir:
+
+|Função  |Onde/como atribuído  |
+|---------|---------|
+|Administrador Global do Office 365 |A pessoa que se inscreve para comprar o Office 365 é um administrador global por padrão. (Consulte [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais).         |
+|Administrador de segurança do Office 365 |Centro de administração ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Gerenciamento de organização Online do Exchange |Centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
     

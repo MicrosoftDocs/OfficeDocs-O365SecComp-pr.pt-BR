@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,24 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Saiba como ativar ATP para o SharePoint, OneDrive e equipes, incluindo como configurar alertas para arquivos detectados.
-ms.openlocfilehash: 770af7078166857bcb9784112710262b7de788bb
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 23eaa4def0fafdcd0df0ae30f8358104c0f877b6
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014883"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741024"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar o Office 365 ATP para SharePoint, OneDrive e equipes da Microsoft
 
 [ATP do Office 365 para SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md) protege a sua organização contra inadvertidamente compartilhamento de arquivos mal-intencionados. Quando um arquivo mal-intencionado é detectado, esse arquivo está bloqueado para que ninguém pode abrir, copiar, mover ou compartilhá-la até que outras ações são executadas pela equipe de segurança da organização. Leia este artigo para ativar ATP para SharePoint, OneDrive e equipes, configure os alertas para ser notificado sobre arquivos detectados e siga as próximas etapas. 
   
-Para executar as tarefas descritas neste artigo, você deve ter as permissões necessárias atribuídas no Office 365 e na segurança &amp; Centro de conformidade.
+Para definir (ou editar) políticas ATP, você deve ter uma das funções descritas na tabela a seguir:
+
+|Função  |Onde/como atribuído  |
+|---------|---------|
+|Administrador Global do Office 365 |A pessoa que se inscreve para comprar o Office 365 é um administrador global por padrão. (Consulte [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais).         |
+|Administrador de segurança do Office 365 |Centro de administração ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Gerenciamento de organização Online do Exchange |Centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar a ATP para SharePoint, OneDrive e Microsoft Teams
 
- **Antes de começar esse procedimento, certifique-se de que os logs de auditoria já esteja ativado para o seu ambiente do Office 365**. Normalmente, isso é feito por alguém que tenha a função de Logs de auditoria atribuída no Exchange Online. Para obter mais informações, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md).
+**Antes de começar esse procedimento, certifique-se de que os logs de auditoria já esteja ativado para o seu ambiente do Office 365**. Normalmente, isso é feito por alguém que tenha a função de Logs de auditoria atribuída no Exchange Online. Para obter mais informações, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md).
   
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com)e entre com sua conta do trabalho ou da escola.
+1. Vá para [https://protection.office.com](https://protection.office.com)e entre com sua conta do trabalho ou da escola.
     
 2. No Office 365 Security &amp; Centro de conformidade, no painel de navegação à esquerda, em **gerenciamento de ameaça**, escolha **política** \> **Anexos seguros**. <br/>![Na segurança &amp; Centro de conformidade, escolha gerenciamento de ameaça \> política](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   

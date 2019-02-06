@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e o arquivo que você pode pesquisar nas caixas de correio do Exchange Online e no SharePoint ou OneDrive para sites corporativos usando a ferramenta de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade.  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328157"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741164"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
@@ -206,8 +206,8 @@ Crie uma condição usando propriedades de documento durante a pesquisa de docum
 |:-----|:-----|
 |Autor  <br/> |O campo autor dos documentos do Office, do qual persiste se um documento é copiado. Por exemplo, se um usuário cria um documento e os e-mails-la a alguém que carrega-lo no SharePoint, o documento ainda manterá o autor original.  <br/> |
 |Cargo  <br/> |O título do documento. A propriedade Title é metadados especificada em documentos do Office. É diferente do nome de arquivo do documento.  <br/> |
-|Created  <br/> |A data em que um documento foi criado.  <br/> |
-|Modificado pela última vez  <br/> |A data em que um documento foi alterado pela última vez.  <br/> |
+|Criado em  <br/> |A data em que um documento foi criado.  <br/> |
+|Última modificação  <br/> |A data em que um documento foi alterado pela última vez.  <br/> |
 |Tipo de arquivo  <br/> |A extensão de um arquivo; Por exemplo, docx, um, pptx ou xlsx. Esta é a mesma propriedade como a propriedade do site ExtensãoDeArquivo.  <br/> |
   
 ### <a name="operators-used-with-conditions"></a>Operadores usados com condições
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Ao pesquisar uma propriedade, usar aspas duplas ("") se o valor de pesquisa consiste em várias palavras. Por exemplo `subject:budget Q1` retorna mensagens que contêm o **orçamento** na na linha de assunto e que contêm **T1** em qualquer lugar na mensagem ou em qualquer uma das propriedades de mensagem. Usando `subject:"budget Q1"` retorna todas as mensagens que contêm o **orçamento T1** em qualquer lugar na linha de assunto. 
     
 - Para excluir o conteúdo marcado com um determinado valor de propriedade de seus resultados de pesquisa, coloque um sinal de menos (-) antes do nome da propriedade. Por exemplo, `-from:"Sara Davis"` excluirá todas as mensagens enviadas por Sara Davis.
-- Você pode exportar itens com base no tipo de item. Por exemplo, para exportar Skype IM recived de mensagens por um usuário, use a sintaxe 'Tipo: IM'. Esta pesquisa consulta returen todas as mensagens IM. 
+
+- Você pode exportar itens com base no tipo de mensagem. Por exemplo, para exportar Skype conversas e bate-papo no Microsoft Teams, use a sintaxe `kind:im`. Para retornar somente as mensagens de email, você usaria `kind:email`. Para retornar o bate-papos, reuniões e chamadas em Microsoft Teams, use `kind:microsoftteams`.

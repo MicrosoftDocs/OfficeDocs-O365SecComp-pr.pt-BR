@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 01/08/2019
+ms.date: 02/05/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: O recurso de anexos seguros fornece verificação de tempo do clique de anexos de email. Uso de anexos seguros para proteger sua organização contra pessoas arquivos mal-intencionados enviar ou receber no email.
-ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 3717c0d278aaba4fce25cb196ebef9e277921408
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769835"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741124"
 ---
 # <a name="office-365-atp-safe-attachments"></a>O Office 365 ATP Safe anexos
 
@@ -27,7 +27,7 @@ ms.locfileid: "27769835"
 
 Anexos de seguros ATP (juntamente com [Links de seguros ATP](atp-safe-links.md)) é parte da [Proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP). O recurso de anexos de seguros ATP verifica se os anexos de email estão mal-intencionado e, em seguida, executa a ação para proteger sua organização. O recurso de anexos de seguros ATP protege a sua organização de acordo com [anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) definidas por seu Office 365 global ou administradores de segurança. 
   
-Recentemente, proteção ATP foi estendida para arquivos no SharePoint Online, o OneDrive for Business e Teams da Microsoft. Para saber mais, consulte [Office 365 avançadas Threat Protection for SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md).
+Proteção de ATP também pode ser estendida para arquivos no SharePoint Online, o OneDrive for Business e Teams da Microsoft. Para saber mais, consulte [Office 365 avançadas Threat Protection for SharePoint, OneDrive e as equipes da Microsoft](atp-for-spo-odb-and-teams.md).
        
 ## <a name="how-it-works"></a>Como funciona
 
@@ -45,18 +45,25 @@ Diretivas de anexos de seguros ATP podem ser aplicadas a pessoas específicas ou
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Como obter ATP anexos de seguros
 
-O recurso de anexos de seguros ATP é parte da [Proteção de ameaça avançadas do Office 365](office-365-atp.md). Os recursos de anexos de seguros ATP se aplicam quando:
+Primeiro, verifique se que sua assinatura incluir [Proteção avançada de ameaça](office-365-atp.md). ATP está incluído nas assinaturas, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, A5 de educação do Office 365, etc. Se sua organização tiver uma assinatura do Office 365 que não inclui ATP do Office 365, você pode adquirir potencialmente ATP como um complemento. Para obter mais informações, consulte [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+
+Em seguida, certifique-se de que suas políticas de anexos de seguros ATP são definidas. (Consulte [Configurar políticas de anexos seguros do Office 365 ATP](set-up-atp-safe-attachments-policies.md)) Recursos de anexos de seguros ATP estão ativos quando:
   
 - Configurar políticas de anexos de ATP seguros. (Consulte [Configurar políticas de anexos de ATP seguros no Office 365](set-up-atp-safe-attachments-policies.md)).
     
 - Os usuários entrou no Office 365 usando a conta do trabalho ou da escola. (Consulte [entrar no Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
+
+Para definir (ou editar) políticas ATP, você deve ter uma das funções descritas na tabela a seguir:
+
+|Função  |Onde/como atribuído  |
+|---------|---------|
+|Administrador Global do Office 365 |A pessoa que se inscreve para comprar o Office 365 é um administrador global por padrão. (Consulte [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais).         |
+|Administrador de segurança do Office 365 |Centro de administração ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Gerenciamento de organização Online do Exchange |Centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Como saber se a proteção de anexos de seguros ATP é in-loco
 
-Uma boa maneira de ver como o serviço está funcionando está exibindo [relatórios de proteção avançada de ameaça](view-reports-for-atp.md).
-
-
-[Anexos de seguros ATP políticas](set-up-atp-safe-attachments-policies.md) devem ser definidas em ordem para proteção de anexos de seguros ATP estar em vigor.   
+Após ter [definido (ou analisado) suas políticas de anexos de seguros ATP](set-up-atp-safe-attachments-policies.md), uma boa maneira de ver como o serviço está funcionando está exibindo [relatórios de proteção avançada de ameaça](view-reports-for-atp.md).
   
 A tabela a seguir descreve alguns cenários de exemplo. Em todos os casos, assumimos que a organização tiver uma assinatura do Office 365 que inclui a proteção avançada de ameaça.
   
