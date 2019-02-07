@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usar a pesquisa e limpar o recurso no Office 365 Security &amp; Centro de conformidade para pesquisar e excluir uma mensagem de email de todas as caixas de correio em sua organização.
-ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: be83b2e3e765980ae401356b924c26c53386a2b3
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015013"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755252"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Pesquisar e excluir mensagens de email em sua organização do Office 365 - ajuda de Admin
 
@@ -38,9 +38,9 @@ Você pode usar o recurso de pesquisa de conteúdo no Office 365 para pesquisar 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para criar e executar uma pesquisa de conteúdo, você precisa ser membro do grupo de função de **gerente de descoberta eletrônica** ou ser atribuída a função de gerenciamento de **Conformidade de pesquisa** . Para excluir mensagens, você precisa ser membro do grupo de funções de **Gerenciamento da organização** ou ser atribuída a função de gerenciamento de **Pesquisa e limpar** . Para obter informações sobre como adicionar usuários a um grupo de funções, consulte [Conceder aos usuários acesso para a segurança do Office 365 &amp; Centro de conformidade](grant-access-to-the-security-and-compliance-center.md).
+- Para criar e executar uma pesquisa de conteúdo, você precisa ser membro do grupo de função de **gerente de descoberta eletrônica** ou ser atribuída a função de gerenciamento de **Conformidade de pesquisa** . Para excluir mensagens, você precisa ser membro do grupo de funções de **Gerenciamento da organização** ou ser atribuída a função de gerenciamento de **Pesquisa e limpar** . Para obter informações sobre como adicionar usuários a um grupo de funções, consulte [Conceder aos usuários acesso para o Centro de conformidade do & de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md).
     
-- Você precisa usar segurança &amp; PowerShell do Centro de conformidade para excluir mensagens. Consulte a [etapa 2](#step-2-connect-to-security-amp-compliance-center-powershell) para obter instruções sobre como se conectar.
+- Você precisa usar segurança & PowerShell do Centro de conformidade para excluir mensagens. Consulte a [etapa 2](#step-2-connect-to-security-amp-compliance-center-powershell) para obter instruções sobre como se conectar.
     
 - Um máximo de 10 itens por caixa de correio pode ser removido de uma só vez. Como a capacidade de pesquisar e remover mensagens destina-se para ser uma ferramenta de resposta a incidentes, esse limite ajuda a garantir que as mensagens rapidamente serão removidas das caixas de correio. Esse recurso não é destinado a limpar caixas de correio do usuário. Para excluir mais de 10 itens, você pode usar o comando **Search-Mailbox-DeleteContent** no PowerShell do Exchange Online. Consulte [Procurar e excluir mensagens - ajuda de Admin](search-for-and-delete-messagesadmin-help.md).
     
@@ -50,7 +50,7 @@ Você pode usar o recurso de pesquisa de conteúdo no Office 365 para pesquisar 
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Etapa 1: Criar uma Pesquisa de conteúdo para localizar a mensagem para exclusão
 
-A primeira etapa é criar e executar uma pesquisa de conteúdo para encontrar a mensagem que você deseja remover de caixas de correio em sua organização. Você pode criar a pesquisa usando a segurança &amp; Centro de conformidade ou executando os cmdlets **New-ComplianceSearch** e **Start-ComplianceSearch** . As mensagens que correspondem à consulta para esta pesquisa serão excluídas por executando o cmdlet **New-ComplianceSearchAction** na [etapa 3](#step-3-delete-the-message). Para obter informações sobre como criar uma pesquisa de conteúdo e configuração de consultas de pesquisa, consulte os tópicos a seguir: 
+A primeira etapa é criar e executar uma pesquisa de conteúdo para encontrar a mensagem que você deseja remover de caixas de correio em sua organização. Você pode criar a pesquisa usando a segurança &amp; Centro de conformidade ou executando os cmdlets **New-ComplianceSearch** e **Start-ComplianceSearch** . As mensagens que correspondem à consulta para esta pesquisa será excluída executando o **New-ComplianceSearchAction-limpar** command na [etapa 3](#step-3-delete-the-message). Para obter informações sobre como criar uma pesquisa de conteúdo e configuração de consultas de pesquisa, consulte os tópicos a seguir: 
   
 - [Pesquisa de conteúdo no Office 365](content-search.md)
     
@@ -91,11 +91,11 @@ Aqui estão dois exemplos de consultas para localizar mensagens de email suspeit
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security-amp-compliance-center-powershell"></a>Etapa 2: Conectar-se à segurança &amp; PowerShell do Centro de conformidade
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Etapa 2: Conectar ao PowerShell de centro de conformidade de & de segurança
 
-A próxima etapa é conectar à segurança &amp; PowerShell do Centro de conformidade para sua organização. Para obter instruções detalhadas, consulte [conectar a segurança do Office 365 &amp; PowerShell do Centro de conformidade](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+A próxima etapa é conectar para segurança & PowerShell do Centro de conformidade para sua organização. Para obter instruções detalhadas, consulte [conectar a segurança do Office 365 &amp; PowerShell do Centro de conformidade](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Se a sua conta do Office 365 usa a autenticação multifator (MFA) ou autenticação federada, é possível utilizar as instruções no tópico anterior durante a conexão com segurança &amp; PowerShell do Centro de conformidade. Em vez disso, consulte as instruções no tópico [conectar a segurança do Office 365 &amp; PowerShell do Centro de conformidade usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Se a sua conta do Office 365 usa a autenticação multifator (MFA) ou federados autenticação, é possível usar as instruções no tópico anterior sobre como conectar a segurança & PowerShell do Centro de conformidade. Em vez disso, consulte as instruções no tópico [conectar ao PowerShell do Centro de conformidade de & de segurança do Office 365 usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-3-delete-the-message"></a>Etapa 3: Excluir a mensagem
 
@@ -106,22 +106,16 @@ No exemplo a seguir, o comando irá reversível excluir os resultados de pesquis
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-No exemplo a seguir, o comando excluirá grave os resultados de pesquisa retornados por uma pesquisa de conteúdo chamado "Remover a mensagem de Phishing". 
-
-```
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
-```
-
-A pesquisa especificada pelo parâmetro *SearchName* é a pesquisa de conteúdo que você criou na etapa 1. 
 
 Disco rígido-excluídos os itens retornados pela pesquisa conteúda "Remover a mensagem de Phishing", você precisará executar este comando:
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
+
+Observe que, quando você executa o comando anterior às mensagens soft - ou disco rígido-delete, a pesquisa especificada pelo parâmetro *SearchName* é a pesquisa de conteúdo que você criou na etapa 1. 
   
 Para obter mais informações, consulte [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
-  
 
 ## <a name="more-information"></a>Mais informações
 
@@ -147,6 +141,6 @@ Para obter mais informações, consulte [New-ComplianceSearchAction](https://doc
 
     Depois que a mensagem é limpo e movida para a pasta limpezas, a mensagem é retida até que a duração da retenção expira. Se a duração da retenção for ilimitada, itens são mantidos até que a suspensão seja removida ou a duração da retenção é alterada.
     
-- **Por que é a pesquisa e remover dividido entre diferentes grupos de função do Centro de conformidade e segurança do fluxo de trabalho?**
+- **Por que é a pesquisa e remover dividido entre diferentes grupos de função do Centro de conformidade & de segurança do fluxo de trabalho?**
 
     Conforme explicado anteriormente, uma pessoa deve ser membro do grupo de função de Gerenciador de descoberta eletrônica ou ser atribuída a função de gerenciamento de conformidade de pesquisa para pesquisar caixas de correio. Para excluir mensagens, uma pessoa deve ser membro do grupo de funções de gerenciamento da organização ou ser atribuída a função de gerenciamento de pesquisa e limpar. Isso possibilita para controlar quem pode pesquisar caixas de correio na organização e quem pode excluir mensagens. 

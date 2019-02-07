@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode atribuir automaticamente um rótulo ao documento ou email, ou solicitar que os usuários selecionem o rótulo recomendado.
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610578"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760762"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar um rótulo de confidencialidade automaticamente ao conteúdo
 
@@ -36,7 +36,7 @@ A capacidade de aplicar rótulos de confidencialidade automaticamente ao conteú
 
 ![Opções de rotulagem automática para rótulos de confidencialidade](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Aplicar um rótulo de confidencialidade automaticamente com base em condições
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Aplicar um rótulo de confidencialidade automaticamente com base em condições
 
 Um dos recursos mais avançados dos rótulos de confidencialidade é a capacidade de aplicá-los automaticamente ao conteúdo que atende a determinadas condições. Nesse caso, as pessoas na organização não precisam aplicar os rótulos de confidencialidade, pois o Office 365 faz isso por elas.
    
@@ -52,7 +52,7 @@ Quando um rótulo de confidencialidade é aplicado automaticamente, o usuário v
 
 ![Notificação informando que o documento tem um rótulo aplicado automaticamente](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recomendar ao usuário que ele aplique um rótulo de confidencialidade
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recomendar ao usuário que ele aplique um rótulo de confidencialidade
 
 Se preferir, em vez de aplicar automaticamente um rótulo de confidencialidade ao conteúdo, você pode recomendar aos usuários que eles apliquem o rótulo. Com essa opção, os usuários têm a flexibilidade de aceitar a classificação e qualquer proteção associada, ou descartar a recomendação se o rótulo não for adequado para o documento ou email.
 
@@ -64,7 +64,7 @@ Veja o exemplo de um aviso ao configurar uma condição para aplicar um rótulo 
 
 ![Aviso para aplicar um rótulo recomendado](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>Como aplicar rótulos automáticos ou recomendados
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>Como aplicar rótulos automáticos ou recomendados
 
 - A rotulagem automática se aplica ao Word, Excel e PowerPoint quando os documentos são salvos, e ao Outlook quando os emails são enviados. Essas condições detectam informações confidenciais no texto do corpo, em documentos e emails, e nos cabeçalhos e rodapés, exceto na linha do assunto ou nos anexos de email.
 
@@ -74,6 +74,6 @@ Veja o exemplo de um aviso ao configurar uma condição para aplicar um rótulo 
 
 - Não é possível usar a classificação recomendada para documentos que tenham sido rotulados com uma classificação mais alta. Nesse caso, se o conteúdo já foi rotulado com uma classificação mais alta, o usuário não verá o aviso com a recomendação e a dica de política.
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Como várias condições são avaliadas quando elas se aplicam a mais de um rótulo
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Como várias condições são avaliadas quando elas se aplicam a mais de um rótulo
 
 Os rótulos são ordenados para avaliação de acordo com a posição especificada na política: o rótulo posicionado no início tem a posição mais baixa (menos confidencial) e o rótulo posicionado no final tem a posição mais alta (mais confidencial). Para saber mais sobre prioridade, confira [Prioridade de rótulos: a ordem é importante](sensitivity-labels.md#label-priority-order-matters)

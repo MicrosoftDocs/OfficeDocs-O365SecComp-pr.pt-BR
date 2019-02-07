@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Noções básicas sobre diretivas de supervisão no Office 365
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603521"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760073"
 ---
 # <a name="supervision-policies-in-office-365"></a>Diretivas de supervisão no Office 365
 
@@ -69,12 +69,7 @@ Para simplificar sua instalação, crie grupos para as pessoas que terão sua co
 
 Com as diretivas de supervisão, você pode optar por monitorar as mensagens em uma ou mais das seguintes plataformas de comunicação:
 
-- **Email do exchange:** Caixas de correio hospedadas no Exchange Online como parte de sua assinatura do Office 365 são todos os candidatos para supervisão de mensagem. Emails e anexos condições de diretiva de supervisão correspondentes são instantaneamente disponíveis para o monitoramento e nos relatórios de supervisão. Tipos de anexos suportados são:
-
-    - Microsoft Word (. docx)
-    - Microsoft Excel (. xlsx)
-    - Microsoft PowerPoint (. pptx)
-
+- **Email do exchange:** Caixas de correio hospedadas no Exchange Online como parte de sua assinatura do Office 365 são todos os candidatos para supervisão de mensagem. Emails e anexos condições de diretiva de supervisão correspondentes são instantaneamente disponíveis para o monitoramento e nos relatórios de supervisão. Tipos de anexos suportados para supervisão são os mesmos os [tipos de arquivo compatíveis para inspeção de conteúdo do Exchange mail flow regra](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 - **Equipes da Microsoft:** Comunicações de bate-papo e anexos associados no canais de Teams Microsoft públicos e particulares e chats individuais podem ser supervisionados. Condições da diretiva de supervisão de correspondência de chats de equipes são processadas uma vez a cada 24 horas e, em seguida, estão disponíveis para o monitoramento e nos relatórios de supervisão.
 - **Fontes de terceiros:** Você pode for o Supervisor comunicações de fontes de terceiros (como do Facebook ou pasta de recados) se que você importou esses dados para caixas de correio do Office 365 em sua organização. [Saiba como importar dados de terceiros 3rd no Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 

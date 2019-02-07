@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Usar a segurança do Office 365 &amp; Centro de conformidade para criar e gerenciar casos de eDiscovery em sua organização. Você pode atribuir membros o caso, colocar o conteúdo de locais em espera, execute Searchs de conteúdo associados com o caso e a exportação os resultados da pesquisa. Você também pode preparar maiusculas dados para análise adicional no eDiscovery avançado.
-ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
-ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
+ms.openlocfilehash: d03ed0a16b74f1b073c2528fa2160ed182840ede
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27299357"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755242"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade
 
@@ -55,7 +55,7 @@ Use o fluxo de trabalho a seguir para configurar e usar os casos de eDiscovery n
 
 A primeira etapa é atribuir as permissões apropriadas de descoberta eletrônica relacionados a pessoas, portanto, você poderá adicioná-los a um caso de descoberta eletrônica na etapa 2. Você precisa ser membro do grupo de funções de gerenciamento da organização (ou a ser atribuído à função de gerenciamento de função) no Office 365 Security &amp; Centro de conformidade para atribuir permissões de descoberta eletrônica. A lista a seguir descreve os grupos de função relacionadas a descoberta eletrônica na segurança &amp; Centro de conformidade. 
   
-- **Revisor** - este grupo de funções tem as permissões mais restritivas de descoberta eletrônica relacionados. A principal finalidade deste grupo de função é permitir que os membros da exibição e acesso caso dados no eDiscovery avançadas do Office 365. Os membros desse grupo só podem ver e abrir a lista dos casos na página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade que eles são membros. Depois que o usuário acessa um caso no Centro de conformidade & segurança, eles podem clicar **mudança para o eDiscovery avançada** para acessar e analisar os dados de casos de eDiscovery avançado. Eles não podem criar casos, adicionar membros a um caso, criar pausas, criar pesquisas, visualizar resultados da pesquisa, exportar resultados da pesquisa ou preparar os resultados para eDiscovery avançado. 
+- **Revisor** - este grupo de funções tem as permissões mais restritivas de descoberta eletrônica relacionados. A principal finalidade deste grupo de função é permitir que os membros da exibição e acesso caso dados no eDiscovery avançadas do Office 365. Os membros desse grupo só podem ver e abrir a lista dos casos na página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade que eles são membros. Depois que o usuário acessa um caso do Centro de conformidade do & de segurança, eles podem clicar **mudança para o eDiscovery avançada** para acessar e analisar os dados de casos de eDiscovery avançado. Eles não podem criar casos, adicionar membros a um caso, criar pausas, criar pesquisas, visualizar resultados da pesquisa, exportar resultados da pesquisa ou preparar os resultados para eDiscovery avançado. 
     
 - **gerente de descoberta eletrônica** - membros desse grupo de função pode criar e gerenciar casos do eDiscovery. Eles podem adicionar e remover membros, colocar conteúdo locais em espera, criar e editar pesquisas de conteúdo associados a um caso, exportar os resultados de uma pesquisa de conteúdo e preparar os resultados da pesquisa para análise no eDiscovery avançado. Existem dois subgrupos nesse grupo de função. A diferença entre esses subgrupos baseia-se em escopo.
     
@@ -249,9 +249,9 @@ Depois de um caso de eDiscovery é criado e qualquer responsáveis relacionadas 
     
     ![Nova pesquisa](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-1. Você pode especificar palavras-chave, mensagem, propriedades, tais como enviados e recebidos datas, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterada pela última vez. Você pode usar consultas mais complexas que usam um operador booleano, como **AND**, **ou**, **não**, **NEAR**ou **ONEAR**. Você também pode pesquisar informações confidenciais (por exemplo, números do seguro social) em documentos ou procurar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificados será incluído nos resultados da pesquisa. 
+6. Você pode especificar palavras-chave, mensagem, propriedades, tais como enviados e recebidos datas, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterada pela última vez. Você pode usar consultas mais complexas que usam um operador booleano, como **AND**, **ou**, **não**, **NEAR**ou **ONEAR**. Você também pode pesquisar informações confidenciais (por exemplo, números do seguro social) em documentos ou procurar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificados será incluído nos resultados da pesquisa. 
     
-2. Você pode clicar na caixa de seleção **Mostrar lista de palavra-chave** e o tipo de uma palavra-chave em cada linha. Se você fizer isso, as palavras-chave em cada linha são conectadas pela operadora **ou** na consulta de pesquisa que é criada. 
+7. Você pode clicar na caixa de seleção **Mostrar lista de palavra-chave** e o tipo de uma palavra-chave em cada linha. Se você fizer isso, as palavras-chave em cada linha são conectadas pela operadora **ou** na consulta de pesquisa que é criada. 
     
     ![Lista de palavra-chave](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
@@ -259,45 +259,45 @@ Depois de um caso de eDiscovery é criado e qualquer responsáveis relacionadas 
     
     Para obter mais informações sobre como usar a lista de palavras-chave, consulte [criar uma consulta de pesquisa](content-search.md#building-a-search-query).
     
-3. Sob **condições**, adicione condições para uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você iniciar a pesquisa. Uma condição logicamente está conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **e** . Isso significa que itens precisam satisfazer tanto a consulta de palavra-chave e a condição a ser incluído nos resultados. Isso é como ajudam a condições para restringir os resultados. 
+8. Sob **condições**, adicione condições para uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta KQL pesquisa que é criada e executada quando você iniciar a pesquisa. Uma condição logicamente está conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **e** . Isso significa que itens precisam satisfazer tanto a consulta de palavra-chave e a condição a ser incluído nos resultados. Isso é como ajudam a condições para restringir os resultados. 
     
     Para saber mais sobre como criar uma consulta de pesquisa e usar condições, confira [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-6. Sob **locais: locais em espera**, escolha os locais de conteúdo que você deseja pesquisar. Você pode pesquisar caixas de correio, sites e pastas públicas na mesma pesquisa.
+9. Sob **locais: locais em espera**, escolha os locais de conteúdo que você deseja pesquisar. Você pode pesquisar caixas de correio, sites e pastas públicas na mesma pesquisa.
     
     ![Locais, locais em espera](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-  - **Todos os locais** - Selecione essa opção para pesquisar todos os locais de conteúdo na sua organização. Quando você seleciona essa opção, você pode optar por pesquisar todas as caixas de correio do Exchange (que inclui as caixas de correio para todos os grupos do Office 365 e Microsoft Teams), SharePoint e o OneDrive para sites corporativos (que inclui os sites para todos os grupos do Office 365 e Microsoft As equipes) e todas as pastas públicas.
+    - **Todos os locais** - Selecione essa opção para pesquisar todos os locais de conteúdo na sua organização. Quando você seleciona essa opção, você pode optar por pesquisar todas as caixas de correio do Exchange (que inclui as caixas de correio para todos os grupos do Office 365 e Microsoft Teams), SharePoint e o OneDrive para sites corporativos (que inclui os sites para todos os grupos do Office 365 e Microsoft As equipes) e todas as pastas públicas.
     
-  - **Que todos os locais em mantenha** - Selecione essa opção para pesquisar todos os locais de conteúdo que foram colocados em espera no caso. Se o caso contiver várias retenções, o conteúdo de locais de todas as isenções devem ser pesquisadas quando você seleciona essa opção. Além disso, se um local de conteúdo foi colocado em uma espera baseado em consulta, somente os itens que estão em espera serão pesquisados quando você executar a pesquisa de conteúdo que você está criando nesta etapa. Por exemplo, se um usuário foi colocado em espera maiusculas baseado em consulta que preserva itens que foram enviados ou criados antes de uma data específica, somente aqueles itens ser pesquisados usando os critérios de pesquisa da pesquisa conteúdo. Isso é realizado conectando-se a consulta de espera de maiusculas e a consulta de pesquisa de conteúdo por um operador **e** . Consulte a seção [mais informações](ediscovery-cases.md#moreinfo_1) no final deste artigo para obter mais detalhes sobre como pesquisar conteúdo maiusculas. 
+    - **Que todos os locais em mantenha** - Selecione essa opção para pesquisar todos os locais de conteúdo que foram colocados em espera no caso. Se o caso contiver várias retenções, o conteúdo de locais de todas as isenções devem ser pesquisadas quando você seleciona essa opção. Além disso, se um local de conteúdo foi colocado em uma espera baseado em consulta, somente os itens que estão em espera serão pesquisados quando você executar a pesquisa de conteúdo que você está criando nesta etapa. Por exemplo, se um usuário foi colocado em espera maiusculas baseado em consulta que preserva itens que foram enviados ou criados antes de uma data específica, somente aqueles itens ser pesquisados usando os critérios de pesquisa da pesquisa conteúdo. Isso é realizado conectando-se a consulta de espera de maiusculas e a consulta de pesquisa de conteúdo por um operador **e** . Consulte a seção [mais informações](ediscovery-cases.md#moreinfo_1) no final deste artigo para obter mais detalhes sobre como pesquisar conteúdo maiusculas. 
     
-  - **Locais específicos** - Selecione essa opção para selecionar as caixas de correio e os sites que você deseja pesquisar. Quando você seleciona essa opção e clique em **Modificar**, é exibida uma lista de locais. Você pode optar por um ou todos os usuários, grupos, equipes ou locais de site de pesquisa.
+    - **Locais específicos** - Selecione essa opção para selecionar as caixas de correio e os sites que você deseja pesquisar. Quando você seleciona essa opção e clique em **Modificar**, é exibida uma lista de locais. Você pode optar por um ou todos os usuários, grupos, equipes ou locais de site de pesquisa.
     
-    ![Selecionar locais específicos](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Selecionar locais específicos](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
-    Você também pode optar por pesquisar todas as pastas públicas em sua organização, mas se você selecionar essa opção e pesquisa de qualquer local do conteúdo que está em espera, qualquer consulta de uma isenção maiusculas baseado em consulta não será aplicada à consulta de pesquisa. Em outras palavras, todo o conteúdo em um local é pesquisado, não apenas o conteúdo que é preservado por uma isenção maiusculas baseado em consulta.
+      Você também pode optar por pesquisar todas as pastas públicas em sua organização, mas se você selecionar essa opção e pesquisa de qualquer local do conteúdo que está em espera, qualquer consulta de uma isenção maiusculas baseado em consulta não será aplicada à consulta de pesquisa. Em outras palavras, todo o conteúdo em um local é pesquisado, não apenas o conteúdo que é preservado por uma isenção maiusculas baseado em consulta.
     
-    Você pode remover os locais de conteúdo maiusculas pré-preenchida ou adicionar novos. Se você escolher essa opção, você também tem a flexibilidade para pesquisar todos os locais de conteúdo para um serviço específico (por exemplo, pesquisar todas as caixas de correio do Exchange) ou você pode pesquisar locais de conteúdo específico para um serviço. Você também pode escolher se ou não pesquisar as pastas públicas em sua organização.
+      Você pode remover os locais de conteúdo maiusculas pré-preenchida ou adicionar novos. Se você escolher essa opção, você também tem a flexibilidade para pesquisar todos os locais de conteúdo para um serviço específico (por exemplo, pesquisar todas as caixas de correio do Exchange) ou você pode pesquisar locais de conteúdo específico para um serviço. Você também pode escolher se ou não pesquisar as pastas públicas em sua organização.
     
-    Mantenha em mente ao adicionar locais de conteúdo para pesquisa:
+      Mantenha em mente ao adicionar locais de conteúdo para pesquisa:
     
-  - Quando você clica **Escolher usuários, grupos ou equipes** para especificar as caixas de correio para pesquisar, o seletor de caixa de correio que é exibido está vazio. Isso ocorre por design para aprimorar o desempenho. Para adicionar destinatários para essa lista, clique em **Escolher usuários, grupos ou equipes**, digite um nome (um mínimo de 3 caracteres) na caixa de pesquisa, marque a caixa de seleção ao lado do nome e, em seguida, clique em **Escolher**. 
+      - Quando você clica **Escolher usuários, grupos ou equipes** para especificar as caixas de correio para pesquisar, o seletor de caixa de correio que é exibido está vazio. Isso ocorre por design para aprimorar o desempenho. Para adicionar destinatários para essa lista, clique em **Escolher usuários, grupos ou equipes**, digite um nome (um mínimo de 3 caracteres) na caixa de pesquisa, marque a caixa de seleção ao lado do nome e, em seguida, clique em **Escolher**. 
     
-  - Você pode adicionar caixas de correio inativas, grupos do Office 365, Teams da Microsoft e grupos de distribuição à lista de caixas de correio a ser pesquisado. Grupos dinâmicos de distribuição não são suportados. Se você adicionar grupos do Office 365 ou Teams da Microsoft, a caixa de correio de grupo ou equipe é pesquisada; as caixas de correio dos membros do grupo não são pesquisadas.
+      - Você pode adicionar caixas de correio inativas, grupos do Office 365, Teams da Microsoft e grupos de distribuição à lista de caixas de correio a ser pesquisado. Grupos dinâmicos de distribuição não são suportados. Se você adicionar grupos do Office 365 ou Teams da Microsoft, a caixa de correio de grupo ou equipe é pesquisada; as caixas de correio dos membros do grupo não são pesquisadas.
     
-  - Para adicionar sites clique em **Escolher sites**, clique em **Escolher sites** novamente e, em seguida, digite a URL para cada site que você deseja pesquisar. Você também pode adicionar a URL do site do SharePoint para o Office 365 grupos e Teams da Microsoft. 
+      - Para adicionar sites clique em **Escolher sites**, clique em **Escolher sites** novamente e, em seguida, digite a URL para cada site que você deseja pesquisar. Você também pode adicionar a URL do site do SharePoint para o Office 365 grupos e Teams da Microsoft. 
     
-7. Depois de selecionar os locais de conteúdo de pesquisa, clique em **concluído** e clique em **Salvar**.
+10. Depois de selecionar os locais de conteúdo de pesquisa, clique em **concluído** e clique em **Salvar**.
     
-8. Na página **nova pesquisa** , clique em **Salvar** e, em seguida, digite um nome para a pesquisa. Pesquisas de conteúdo associadas a um caso devem ter nomes exclusivos dentro da sua organização do Office 365. 
+11. Na página **nova pesquisa** , clique em **Salvar** e, em seguida, digite um nome para a pesquisa. Pesquisas de conteúdo associadas a um caso devem ter nomes exclusivos dentro da sua organização do Office 365. 
     
-9. Clique em **Salvar &amp; execute** para salvar as configurações de pesquisa. 
+12. Clique em **Salvar &amp; execute** para salvar as configurações de pesquisa. 
     
-10. Insira um nome exclusivo para a pesquisa e clique em **Salvar** para iniciar a pesquisa. 
+13. Insira um nome exclusivo para a pesquisa e clique em **Salvar** para iniciar a pesquisa. 
     
     A pesquisa começa. Após algum tempo, uma estimativa dos resultados da pesquisa é exibida no painel de detalhes. A estimativa inclui o tamanho total e o número de itens que correspondem aos critérios de pesquisa. A estimativa de pesquisa também inclui o número de itens indexados nos locais do conteúdo que foram pesquisados. O número de itens indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas da pesquisa exibidas no painel de detalhes. Se um item não indexadas corresponde à pesquisa de consulta (porque outras propriedades de mensagem ou documento atendam aos critérios de pesquisa), não será incluído o número estimado de itens indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído na estimativa de itens indexados.
     
-    Uma vez concluída a pesquisa, você pode visualizar os resultados da pesquisa. Se necessário, clique em **Atualizar**![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) para atualizar as informações no painel de detalhes. 
+  Uma vez concluída a pesquisa, você pode visualizar os resultados da pesquisa. Se necessário, clique em **Atualizar**![ícone atualizar](media/O365-MDM-Policy-RefreshIcon.gif) para atualizar as informações no painel de detalhes. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Etapa 6: Exportar os resultados de uma pesquisa de conteúdo associados a um caso
 

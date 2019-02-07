@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: Saiba como reconhecer e remediar consentimento ilícito concede ataque no Office 365.
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524711"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755232"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir a concessão de autorização ilícita no Office 365
 
@@ -34,7 +34,7 @@ Em um consentimento ilícito conceda ataque, que o invasor cria um aplicativo re
 Você precisa para o Office 365 de **log de auditoria** para localizar sinais, também chamados de indicadores de comprometimento (IOC) desse ataque de pesquisa. Para organizações com vários aplicativos Azure registrado e uma grande base de usuários, a prática recomendada é examinar seu consentimento de organizações concede ao semanalmente.
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Etapas para localizar os sinais desse ataque
 1. Abra o **Centro de conformidade e segurança** no seu locatário do Office 365.
-2. Navegue até o nó de **pesquisa & investigação** e selecione pesquisa de **log de auditoria** .
+2. Navegue até o nó **investigação de & de pesquisa** e selecione a pesquisa de **log de auditoria** .
 3. Criar uma pesquisa (todas as atividades e todos os usuários) e filtrar os resultados consentimento para o aplicativo e adicione OAuth2PermissionGrant.
 4. Examine a propriedades estendidas e a seleção para ver se IsAdminContent for definido como True.
 
@@ -65,7 +65,7 @@ Isso mostrará os aplicativos que estão atribuídos ao usuário e quais permiss
 Que os usuários acesse https://myapps.microsoft.com e revise seu próprios acesso ao aplicativo lá. Eles devem possam ver todos os aplicativos com o access, exibir detalhes sobre cada um deles (incluindo o escopo do access) e poderá revogar privilégios aos aplicativos suspeitos ou ilícitas.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Etapas para fazer isso com o PowerShell
-A maneira mais simples de verificar o ataque ilícito Grant concorda é executar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que será despejo todas as concessões de consentimento do OAuth e permissões do aplicativo para todos os usuários em sua locação em um único arquivo. csv. 
+A maneira mais simples de verificar o ataque ilícito Grant concorda é executar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que será despejo todas as concessões de consentimento do OAuth e aplicativos do OAuth para todos os usuários em sua locação em um único arquivo. csv. 
 
 #### <a name="pre-requisites"></a>Pré-requisitos
 - Biblioteca do Azure AD PowerShell instalada.
@@ -79,7 +79,7 @@ A maneira mais simples de verificar o ataque ilícito Grant concorda é executar
 2. Faça download ou copie o script de [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub para uma pasta da qual você executará o scruipt.  Esse será a mesma pasta que será gravado no arquivo de saída "permissions.csv".
 3. Abra uma instância do PowerShell como administrador e abra até a pasta que você salvou o script.
 4. Conectar ao seu diretório usando o cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) .
-5. Execute esta linha de comando do PowerShell da seguinte maneira:`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. Execute esta linha de comando do PowerShell da seguinte maneira:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 O script produz um arquivo chamado Permissions.csv. Siga estas etapas para procurar por aplicativo ilícito permissão concede: 
 1. Pesquise o valor "AllPrinciples" na coluna ConsentType (coluna G). A permissão de AllPrincipals permite que o aplicativo cliente para acessar o conteúdo de todos os participantes em aluguel. Aplicativos do Office 365 nativos precisam essa permissão funcione corretamente. Todos os aplicativos não-Microsoft com esta permissão devem ser revisados cuidadosamente.

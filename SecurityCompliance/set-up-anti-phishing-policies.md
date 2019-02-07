@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Proteção AntiPhishing, com uma proteção abrangente como parte da proteção de ameaça avançadas do Office 365 e proteção básica no Office 365 Exchange Online Protection, pode ajudar a proteger sua organização contra ataques mal-intencionados phishing baseados em representação e outros ataques de phishing.
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741144"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755262"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar políticas de AntiPhishing e antiphishing ATP do Office 365
 
@@ -43,9 +43,11 @@ O que fazer:
     |Função  |Onde/como atribuído  |
     |---------|---------|
     |Administrador Global do Office 365 |A pessoa que se inscreve para comprar o Office 365 é um administrador global por padrão. (Consulte [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais).         |
-    |Administrador de segurança do Office 365 |Centro de administração ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Administrador de segurança |Centro de administração do Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Gerenciamento de organização Online do Exchange |Centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    Para saber mais sobre as funções e permissões, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+
 - Provavelmente você irá configurar várias políticas de AntiPhishing para sua organização. O Office 365 impõe essas políticas na ordem em que são listados nas páginas **antiphishing página** e **antiphishing ATP** na segurança &amp; Centro de conformidade. Depois que você tiver revisado suas [Opções de política](#learn-about-atp-anti-phishing-policy-options), levar algum tempo para determinar quantas políticas que você precisará e a prioridade para cada um. 
     
 - Planeje gastar cerca de 5 a 15 minutos para configurar sua política de AntiPhishing primeira.
