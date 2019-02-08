@@ -3,7 +3,7 @@ title: Introdução à Inteligência Contra Ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Saiba mais sobre o Office 365 Threat Intelligence e como começar.
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426036"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770786"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Introdução à Inteligência Contra Ameaças do Office 365
 
 Se você fizer parte da equipe de segurança da sua organização, você pode usar o Office 365 Threat Intelligence para proteger os usuários contra ataques. Inteligência de dados do Office 365 ameaça ajuda os analistas de segurança e os administradores mantêm os usuários protegidos por bolha backup ideias e que identifica a ação com base no que está acontecendo no seu ambiente do Office 365. Esses insights se baseiam em um repositório abrangente de dados de inteligência de ameaça e sistemas padrões especial que correspondem a ataques comportamentos e atividades suspeitas.
-  
-![Inteligência de ameaça ajuda você a entender destinadas a sua organização de ataques](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 Leia este artigo para saber mais sobre o que inclui o Office 365 Threat Intelligence e como começar.
   
