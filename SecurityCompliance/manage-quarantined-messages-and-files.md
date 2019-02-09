@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como um administrador, você pode exibir, liberar e relatar mensagens em quarentena falso positivas no Office 365. Você pode configurar políticas para que o Office 365 filtra mensagens e as envia para colocar em quarentena por vários motivos: porque eles foram identificados como spam, em massa, phishing, malware ou porque elas correspondem a uma regra de fluxo de email. '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180881"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792502"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -27,10 +27,10 @@ Como um administrador, você pode exibir, versão e excluir mensagens em quarent
   
 Por padrão, o Office 365 envia mensagens de phishing e mensagens que contêm malware diretamente para a quarentena. Outras mensagens filtradas são enviadas para a pasta de lixo eletrônico dos usuários, a menos que você configurar uma política de enviá-los para a quarentena.
   
-Você deve ter permissões de administrador no Office 365 para trabalhar com mensagens em quarentena que foram enviadas para outros usuários e trabalhar com arquivos em quarentena.
+Você deve ter permissões de administrador global (GA) no Office 365 para trabalhar com mensagens em quarentena que foram enviadas para outros usuários e trabalhar com arquivos em quarentena.
   
 > [!IMPORTANT]
-> Por padrão, as mensagens que foram colocados em quarentena porque elas correspondem a uma regra de fluxo de email, em massa, malware, phishing e spam são mantidas em quarentena por 30 dias. Você pode personalizar o tempo de quarentena em configurações antispam na segurança &amp; Centro de conformidade. Quando o Office 365 exclui uma mensagem de quarentena, não é possível recuperá-lo. Se desejar, você pode alterar o período de retenção de mensagens em quarentena em suas políticas de filtro anti-spam. Para obter mais informações, consulte [Definindo o período de retenção da quarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) neste artigo. 
+>Por padrão, as mensagens de spam, em massa e phishing são mantidas em quarentena por 30 dias. Mensagens que estão em quarentena porque elas correspondem a uma regra de fluxo de email são mantidas em quarentena por 7 dias. Mensagens de malware são mantidas em quarentena por 15 dias. Você pode personalizar o tempo de quarentena de spam em configurações antispam na segurança &amp; Centro de conformidade. Quando o Office 365 exclui uma mensagem de quarentena, não é possível recuperá-lo. Se desejar, você pode alterar o período de retenção de mensagens em quarentena em suas políticas de filtro anti-spam. Para obter mais informações, consulte [Definindo o período de retenção da quarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) neste artigo. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Exibir mensagens em quarentena de sua organização
 
@@ -39,7 +39,7 @@ Você deve ter permissões de administrador no Office 365 para trabalhar com men
 2. Na lista à esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **quarentena**.
     
     > [!TIP]
-    > Para ir diretamente para a página de **quarentena** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Para ir diretamente para a página de **quarentena** na segurança &amp; Centro de conformidade, use esta URL: gt _[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
     Por padrão, a segurança &amp; Centro de conformidade exibe todas as mensagens de email que tenham sido colocados em quarentena como spam. As mensagens são classificadas do mais recente para o mais antigo com base na **Data** em que a mensagem foi recebida. **Remetente**, **assunto**e a data de validade (sob **expira** ) também são exibidas para cada mensagem. Você pode classificar em um campo clicando no cabeçalho da coluna correspondente; Clique em um cabeçalho de coluna uma segunda vez para reverter a ordem de classificação. 
     
@@ -67,7 +67,7 @@ Após localizar uma determinada mensagem em quarentena, clique na mensagem para 
     
 2. À esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **quarentena**. <br/>
     > [!TIP]
-    > Para ir diretamente para a página de **quarentena** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Para ir diretamente para a página de **quarentena** na segurança &amp; Centro de conformidade, use esta URL: gt _[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 3. Por padrão, a página exibe mensagens de email em quarentena. Para exibir arquivos em quarentena, configure os filtros na parte superior da página para mostrar os **arquivos**, colocados em quarentena devido a **malware**. Você deve ter permissões de administrador no Office 365 para trabalhar com arquivos em quarentena. 
     
@@ -190,7 +190,7 @@ Você pode configurar quanto tempo mensagens e arquivos permanecerão em quarent
     
 2. À esquerda, expanda **Gerenciamento de ameaça**, escolha **política**e escolha **anti-spam**. <br/>
     > [!TIP]
-    > Para ir diretamente para a página de **antispam** na segurança &amp; Centro de conformidade, use esta URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > Para ir diretamente para a página de **antispam** na segurança &amp; Centro de conformidade, use esta URL: gt _[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
 3. Escolha **personalizado** para exibir a guia **configurações personalizadas** . 
     

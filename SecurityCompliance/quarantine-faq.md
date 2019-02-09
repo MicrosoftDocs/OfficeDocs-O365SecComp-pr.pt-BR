@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a quarentena hospedada.
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003190"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792492"
 ---
 # <a name="quarantine-faq"></a>Perguntas Frequentes sobre a Quarentena
 
@@ -50,7 +50,7 @@ R. Uma mensagem que corresponda a uma regra de transporte também pode ser envia
   
  **P. Por quanto tempo as mensagens são mantidas na quarentena?**
   
-R. por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 15 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após este período de tempo, as mensagens são excluídas e não são recuperáveis. O período de retenção de mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No entanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido por meio da configuração de **spam de reter de (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
+R. por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 30 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após este período de tempo, as mensagens são excluídas e não são recuperáveis. O período de retenção de mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No entanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido por meio da configuração de **spam de reter de (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
   
  **P. Posso liberar ou relatar mais de uma mensagem em quarentena por vez?**
   
