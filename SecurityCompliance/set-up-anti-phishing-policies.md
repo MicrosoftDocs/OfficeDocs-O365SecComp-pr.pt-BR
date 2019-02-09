@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Proteção AntiPhishing, com uma proteção abrangente como parte da proteção de ameaça avançadas do Office 365 e proteção básica no Office 365 Exchange Online Protection, pode ajudar a proteger sua organização contra ataques mal-intencionados phishing baseados em representação e outros ataques de phishing.
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755262"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792276"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar políticas de AntiPhishing e antiphishing ATP do Office 365
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755262"
 Phishing ataques vêm em uma variedade de formulários de ataques baseados em mercadorias lança direcionado phishing ou whaling. Com a complexidade crescente, é difícil para o mesmo um olhar treinado identificar alguns desses ataques sofisticados. Felizmente, pode ajudar a proteção de ameaça avançadas do Office 365. Você pode configurar uma política de AntiPhishing ATP para ajudar a garantir que sua organização seja protegida contra esses ataques.
   
 > [!NOTE]
-> ATP antiphishing só está disponível na proteção de ameaça avançadas (ATP). ATP está incluído nas assinaturas, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, A5 de educação do Office 365, etc. Se sua organização tiver uma assinatura do Office 365 que não inclui ATP do Office 365, você pode adquirir potencialmente ATP como um complemento. Para obter mais informações, consulte [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Verifique se a que sua organização está usando a versão mais recente do Office 365 ProPlus no Windows para aproveitar totalmente proteção antiphishing de ATP. 
+> ATP antiphishing só está disponível na proteção de ameaça avançadas (ATP). ATP está incluído nas assinaturas, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, A5 de educação do Office 365, etc. Se sua organização tiver uma assinatura do Office 365 que não inclui ATP do Office 365, você pode adquirir potencialmente ATP como um complemento. Para obter mais informações, consulte [preços e planos de proteção de ameaça avançadas do Office 365](https://products.office.com/exchange/advance-threat-protection) e o [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Verifique se a que sua organização está usando a versão mais recente do Office 365 ProPlus no Windows para aproveitar totalmente proteção antiphishing de ATP. 
 
 Uma política de AntiPhishing também está disponível para o Office 365 Exchange Online Protection, com um conjunto limitado de proteção antifalsificação que destina-se a proteção contra ataques baseados em descrição e autenticação.
   
