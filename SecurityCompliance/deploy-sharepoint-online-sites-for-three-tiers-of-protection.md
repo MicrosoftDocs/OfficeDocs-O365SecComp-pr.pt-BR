@@ -3,7 +3,7 @@ title: Implantar sites do SharePoint Online para três camadas de proteção
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2018
+ms.date: 12/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumo: Crie e configure sites de equipe do SharePoint Online para vários níveis de proteção de informações.'
-ms.openlocfilehash: 54392194f7ac5ce90337df3f33e23db595b1aa5c
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 69dc7395e8394694eab9eb6c27f229ea971516b0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345823"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27281772"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implantar sites do SharePoint Online para três camadas de proteção
 
@@ -264,15 +264,14 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
   
 ## <a name="next-step"></a>Próxima etapa
 
-[Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
-    
+[Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
+
+
 ## <a name="see-also"></a>Confira também
 
-[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger os sites do SharePoint Online em um ambiente de desenvolvimento/teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-  
-[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

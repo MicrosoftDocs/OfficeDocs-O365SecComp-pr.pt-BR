@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este tópico explica como configurar os fluxos dos processos empresariais para automatizar a retenção por meio de eventos usando a API REST do Microsoft 365.
-ms.openlocfilehash: e356dcfcd921f96ee242e21d34ff691d8520f09c
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610598"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740863"
 ---
 # <a name="automate-event-based-retention"></a>Automatizar retenção baseada em eventos
 
@@ -365,8 +365,8 @@ Etapa 2 – Executar o seguinte script.
 <tbody>
 <tr class="odd">
 <td><p>param([string]$baseUri)</p>
-<p>$userName = &quot;admin@o365ediscoverydemo.onmicrosoft.com&quot;</p>
-<p>$password = &quot;EDiscoO365Demo&quot;</p>
+<p>$userName = &quot;UserName&quot;</p>
+<p>$password = &quot;Password&quot;</p>
 <p>$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</p>
 <p>$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</p>
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>

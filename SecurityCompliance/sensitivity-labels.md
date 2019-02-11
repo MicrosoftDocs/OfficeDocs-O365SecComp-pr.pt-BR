@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor as configurações de proteção, como criptografia ou marcas d'água no conteúdo rotulado.
-ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 48d66a93c82a7430bc34373975d385ebc7bfbf9a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607153"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706162"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -124,6 +124,9 @@ Com uma política de rótulos, você pode:
     ![Prompt no qual os usuários inserem uma justificativa](media/Sensitivity_label_justification_required.png)
 
 - **É preciso aplicar um rótulo a emails e documentos. ** Se você quiser todo o conteúdo de um usuário a ser rotulado, você pode exigir que um rótulo deva ser aplicado a todos os documentos salvos e emails enviados. O rótulo pode ser atribuído manualmente por usuário, automaticamente como uma condição ou atribuído por padrão (a opção de rótulo padrão descrita acima). Aqui está o prompt mostrado no Outlook quando um usuário deve atribuir um rótulo.
+
+    > [!NOTE]
+    > A rotulagem obrigatória exige uma assinatura da Proteção de Informações do Azure. Para usar esse recurso, você tem que baixar e instalar o [cliente de Proteção de Informações do Azure](https://www.microsoft.com/en-us/download/details.aspx?id=53018) ou o [cliente de rotulagem unificada da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/install-unifiedlabelingclient-app) mais recente. Estamos desenvolvendo um suporte nativo para esse recurso nos aplicativos do Office, para que ele não exija o cliente de Proteção de Informações do Azure. Além disso, o cliente é executado apenas no Windows, portanto, esse recurso ainda não tem suporte para Mac, iOS e Android.
 
     ![Prompt no Outlook pedindo ao usuário para aplicar o rótulo necessário](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
 

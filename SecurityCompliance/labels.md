@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299245"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614495"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -266,22 +266,34 @@ Depois de selecionar um modelo de política, você pode adicionar ou remover qua
     
 - O tipo de informação confidencial detectado tiver uma precisão de correspondência (ou nível de confiança) de pelo menos 75. Muitos tipos de informações confidenciais são definidos com vários padrões, em que um padrão de precisão de correspondência superior exige mais evidências para ser encontrado (como palavras-chave, datas ou endereços), enquanto um padrão de precisão de correspondência inferior exige menos evidências. Resumindo, quanto menor a precisão de correspondência **min**, mais fácil será para o conteúdo atender à condição. 
     
-    Se você alterar a precisão de correspondência (ou o nível de confiança), deverá usar um dos níveis de confiança usados em um padrão para esse tipo de informação confidencial, conforme definido em [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
+Para saber mais sobre essas opções, confira [Como ajustar as regras para facilitar ou dificultar a correspondência](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Opções para identificar tipos de informações confidenciais](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-retention-labels-to-content-with-keywords"></a>Aplicar automaticamente rótulos de retenção ao conteúdo com palavras-chave
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar rótulos automaticamente a conteúdos com palavras-chave ou propriedades pesquisáveis
 
-Você pode aplicar automaticamente os rótulos de retenção ao conteúdo que atenda a certas condições. As condições disponíveis agora dão suporte à aplicação de um rótulo de retenção a conteúdos que incluem palavras ou frases específicas. Você pode refinar a consulta usando os operadores de pesquisa AND, OR e NOT. 
+Você pode aplicar automaticamente os rótulos ao conteúdo que atenda a certas condições. As condições disponíveis agora dão suporte à aplicação de um rótulo a conteúdos que incluem palavras ou frases específicas, ou valores de propriedades pesquisáveis. Você pode refinar a consulta usando os operadores de pesquisa AND, OR e NOT.
 
 Para saber mais sobre sintaxe de consulta, confira:
 
-- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Observe que os rótulos de retenção baseados em consulta usam o índice de pesquisa para identificar conteúdo.
-  
+Rótulos baseados em consultas usam o índice de pesquisa para identificar conteúdos. Para saber mais sobre propriedades pesquisáveis válidas, confira:
+
+- [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
+- [Visão geral de propriedades rastreadas e gerenciadas no SharePoint Server](https://docs.microsoft.com/pt-BR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+Consultas de exemplos:
+
+- Exchange
+    - assunto:"Finanças trimestrais"
+    - recipients:garthf<!--nolink-->@contoso.com
+- SharePoint e OneDrive for Business
+    - contenttype:contract
+    - site:https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement E contenttype:contract
+
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-  
+
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Aplicar um rótulo de retenção padrão a todo o conteúdo em uma biblioteca do SharePoint, pasta ou conjunto de documentos
 
 Além de permitir que as pessoas apliquem um rótulo de retenção a documentos individuais, você também pode aplicar um rótulo de retenção padrão a uma biblioteca, pasta ou conjunto de documentos do SharePoint, para que todos os documentos nesse local recebam o rótulo de retenção padrão.
@@ -346,7 +358,7 @@ Quando um item é rotulado como registro, ocorrem quatro coisas:
     
 ### <a name="who-can-classify-content-as-a-record"></a>Quem pode classificar o conteúdo como registro
 
-Para o conteúdo do SharePoint, qualquer usuário do grupo padrão Membros (o nível de permissão Contribuição) pode aplicar um rótulo de registro ao conteúdo. Somente o administrador do conjunto de sites pode remover ou alterar esse rótulo de retenção após a aplicação. Além disso, um rótulo de retenção que classifica o conteúdo como registro precisa ser aplicado manualmente; ele não pode ser aplicado automaticamente.
+Para o conteúdo do SharePoint, qualquer usuário do grupo padrão Membros (o nível de permissão Contribuição) pode aplicar um rótulo de registro ao conteúdo. Somente o administrador do conjunto de sites pode remover ou alterar esse rótulo de retenção após a aplicação. Além disso, um rótulo de retenção que classifica o conteúdo como registro pode ser [aplicado automaticamente ao conteúdo](#auto-apply-retention-labels).
   
 ### <a name="records-and-folders"></a>Registros e pastas
 
