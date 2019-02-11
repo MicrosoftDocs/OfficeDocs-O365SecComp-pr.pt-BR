@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumo: aplique a Proteção de Informações do Azure para proteger arquivos em um site de equipe altamente confidencial do SharePoint Online.'
 ms.openlocfilehash: 738e64784de20af46050413985fb7932000f864e
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345793"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28021640"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure
 
