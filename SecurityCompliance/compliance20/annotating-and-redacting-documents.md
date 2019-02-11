@@ -1,5 +1,5 @@
 ---
-title: Exibindo documentos em um conjunto de trabalho
+title: Exibir documentos em um conjunto de trabalho
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bed86f17ce8027da85eefc2a4c39ac4e25523016
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 800bc1f0e8ac9a736ea676519d0e995767a82dcb
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607351"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695107"
 ---
-# <a name="viewing-documents-in-a-working-set"></a><span data-ttu-id="94025-102">Exibindo documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="94025-102">Viewing documents in a working set</span></span>
+# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="0ef5c-102">Exibir documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="0ef5c-102">View documents in a working set</span></span>
 
-<span data-ttu-id="94025-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="94025-103">Content coming soon.</span></span>
+<span data-ttu-id="0ef5c-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="0ef5c-103">Content coming soon.</span></span>
