@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de isenções em eDiscovery avançado (Preview)
+title: Gerenciar isenções no eDiscovery avançado (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607361"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695177"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>Gerenciamento de isenções em eDiscovery avançado (Preview)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gerenciar isenções no eDiscovery avançado (Preview)
 
 Você pode usar um caso de eDiscovery avançado (Preview) para criar pausas para preservar o conteúdo que pode ser relevante ao seu caso. Usando o eDiscovery avançado (Preview) mantenha recursos, você pode colocar isenções em responsáveis e suas fontes de dados. Além disso, você pode colocar uma isenção não custódia em caixas de correio e OneDrive para sites corporativos. Você também pode fazer uma pausa na caixa de correio de grupo, site do SharePoint e OneDrive para o site de negócios para um grupo do Office 365. Da mesma forma, você pode colocar uma pausa no site que estão associados a Teams da Microsoft e da caixa de correio. Quando você realiza locais de conteúdo em espera, o conteúdo é retido até que você liberar dos responsáveis, remove um local de dados específicos ou excluir a política de retenção inteiramente.
 

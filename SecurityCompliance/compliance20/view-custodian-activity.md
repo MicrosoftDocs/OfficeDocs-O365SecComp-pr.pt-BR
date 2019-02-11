@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607318"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706142"
 ---
-# <a name="viewing-custodian-audit-activity"></a>Exibindo a atividade de auditoria dos responsáveis
+# <a name="view-custodian-audit-activity"></a>Atividade de auditoria do modo de exibição dos responsáveis
 
 Precisa encontrar se um usuário exibido um documento específico ou removidos de um item de suas caixas de correio? EDiscovery avançado (Preview) agora é integrado com a ferramenta de pesquisa de log de auditoria existente no Centro de conformidade do & de segurança. Usando essa experiência incorporada, você pode usar a ferramenta de gerenciamento dos responsáveis eDiscovery avançado (Preview) para facilitar sua investigação facilmente acessando e pesquisar a atividade responsáveis dentro de seu caso.
 
@@ -101,8 +101,4 @@ Você pode exportar os resultados de uma pesquisa de log de auditoria para um ar
 
 3. Depois de selecionar uma opção de exportação, uma mensagem é exibida na parte inferior da janela solicitando que você abra o arquivo CSV, salve-o na pasta Downloads ou salvá-lo em uma pasta específica
 
-[!NOTE] 
- Para obter mais informações sobre a visualização, filtragem ou exportar os resultados de pesquisa do log de auditoria, consulte:
-   - Exiba a lista de atividades auditadas 
-   - Antes de começar: Logs de auditoria unificada
- 
+Para obter mais informações sobre como visualizar, a filtragem ou exportar os resultados de pesquisa de log de auditoria, consulte [Search a auditoria efetuar login do Centro de conformidade do & de segurança do Office 365](../search-the-audit-log-in-security-and-compliance.md).

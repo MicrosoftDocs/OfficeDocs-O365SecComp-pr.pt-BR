@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use a página alertas na segurança de aplicativo de nuvem do Office 365 para exibir possíveis problemas e executar ação. Você pode descartar ou resolver alertas e, se necessário, suspender uma conta de usuário.
-ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014823"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603672"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
   
@@ -32,13 +32,9 @@ Você pode usar a página alertas na segurança de aplicativo de nuvem do Office
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Como chegar à página de alertas
 
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
-    
-2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
-    
-3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.<br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Vá para o portal de segurança de aplicativo de nuvem ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e entrar.
   
-4. Na barra de navegação na parte superior da tela, escolha **alertas**.<br/>![Na página alertas, você pode ver os alertas que foram acionados e quaisquer ações tomadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. Na barra de navegação na parte superior da tela, escolha **alertas**.<br/>![Na página alertas, você pode ver os alertas que foram acionados e quaisquer ações tomadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Revisão e a alça de alertas
 

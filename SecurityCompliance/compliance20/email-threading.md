@@ -14,22 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2340128f508a3be389afce86596f7e6395a0bb7e
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4328971a6b13c60c4d8b9f5b6db310d72a5b215
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607353"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29705992"
 ---
 # <a name="email-threading"></a>Email threading
+
 Considere a possibilidade de uma conversa de email acontecendo por algum tempo. Na maioria dos casos, o último email no thread incluirá o conteúdo de todos os emails anteriores; analisar o último email fornecerá um contexto completo da conversa que ocorreram no segmento. Email threading identifica tais emails para que os revisores podem revisar uma fração de documentos coletados sem perder nenhum contexto.
 
 ## <a name="what-does-email-threading-do"></a>O que faz threading de email?
+
 Email threading analisa cada email e desconstructs-la para mensagens individuais; cada email é uma cadeia de mensagens individuais. Em seguida, ele analisa todos os emails no conjunto de trabalho para determinar se um email tem conteúdo exclusivo ou se a cadeia está totalmente contida em um email diferente. No final emails são divididos em quatro categorias:
-- Inclusives: a última mensagem no email tem conteúdo exclusivo e o email tem todos os anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
-- Inclusive menos: a última mensagem no email tem conteúdo exclusivo, mas o email não contém alguns dos anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
-- Inclusive cópia: uma cópia exata de um inclusive/inclusive menos email
-- NONE: O conteúdo deste e-mail está totalmente contido em pelo menos um email que está marcado como inclusive inclusive subtração.
+
+- **Inclusiva**: a última mensagem no email possui conteúdo exclusivo e o email tem todos os anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
+
+
+- **Inclusiva menos**: a última mensagem no email tem conteúdo exclusivo, mas o email não contém alguns dos anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
+
+- **Inclusive cópia**: uma cópia exata de um inclusive/inclusive menos email
+
+- **None**: O conteúdo deste e-mail está totalmente contido em pelo menos um email que está marcado como inclusive inclusive subtração.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>Como ele é diferente do conversas no Outlook?
 Em um relance, isso sons bastante similar às agrupamentos de conversa no Outlook. No entanto, há algumas distinções importantes. Considere a possibilidade de uma conversa de email que receber bifurcada em dois conversa; Por exemplo, alguém respondeu a um email que não seja as informações mais recentes na conversa para que os duas últimas emails na conversa que ambos tenham o conteúdo exclusivo.

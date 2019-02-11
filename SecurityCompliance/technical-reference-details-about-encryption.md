@@ -3,7 +3,7 @@ title: Detalhes de referências técnicas sobre a criptografia no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Exibir detalhes técnicos sobre criptografia no Office 365.
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026518"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326932"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Detalhes de referências técnicas sobre a criptografia no Office 365
 
 Consulte este artigo para saber mais sobre certificados, tecnologias e TLS conjuntos de codificação empregados para [criptografia no Office 365](encryption.md). Este artigo também fornece detalhes sobre reprovações planejadas.
   
 - Se você estiver procurando por informações gerais, consulte [criptografia no Office 365](encryption.md).
-    
 - Se você estiver procurando informações sobre a instalação, consulte [Configure a criptografia no Office 365 Enterprise](set-up-encryption.md).
+- Para obter informações sobre os conjuntos de codificação suportada pelas versões específicas do Windows, consulte [Conjuntos de codificação em TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gerenciamento e propriedade de certificado do Microsoft Office 365
 
@@ -35,7 +35,10 @@ Não é necessário comprar nem manter certificados do Office 365, pois a Micros
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Padrões de criptografia atuais e reprovações planejadas
 
-Para continuar a fornecer melhor classe criptografia para o Office 365, a Microsoft regularmente analisa os padrões de criptografia com suporte. Às vezes, precisamos preterir padrões antigos conforme se tornarem desatualizada e, portanto, menos seguro. Este tópico descreve os conjuntos de codificação com suporte no momento e outros padrões bem como detalhes sobre reprovações planejadas.
+Para continuar a fornecer melhor classe criptografia para o Office 365, a Microsoft regularmente analisa os padrões de criptografia com suporte. Às vezes, precisamos preterir padrões antigos conforme se tornarem desatualizada e, portanto, menos seguro. Este tópico descreve os conjuntos de codificação com suporte no momento e outros padrões bem como detalhes sobre reprovações planejadas. 
+
+## <a name="fips-compliance-for-office-365"></a>Conformidade FIPS para o Office 365
+Todos os conjuntos de codificação suportados pelo Office 365 usam algoritmos aceitáveis em FIPS 140-2. O Office 365 herda validações FIPS do Windows (por meio de Schannel). Para obter informações sobre Schannel, consulte [Conjuntos de codificação em TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versões do TLS com suporte do Office 365
 
@@ -89,6 +92,8 @@ Um conjunto de codificações é uma coleção de algoritmos de criptografia que
   
 |**Protocolos**|**Nome do conjunto de codificações**|**Algoritmo de troca de chave/Eficácia**|**Suporte ao protocolo PFS**|**Algoritmo de autenticação/Eficácia**|**Codificação/Eficácia**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Sim  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Sim  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Sim  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Sim  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Sim  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ Um conjunto de codificações é uma coleção de algoritmos de criptografia que
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Não  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Não  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Não  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |Não  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>Tópicos relacionados
-<a name="TLSCipherSuites"> </a>
+[Conjuntos de codificação TLS no Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Criptografia no Office 365](encryption.md)
   

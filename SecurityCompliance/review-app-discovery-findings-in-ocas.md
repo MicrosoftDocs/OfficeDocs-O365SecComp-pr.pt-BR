@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Analisar relatórios de descoberta de aplicativo no gerenciamento de segurança avançadas pode ajudá-lo a saber mais sobre como as pessoas na sua organização usam aplicativos na nuvem. Depois de criar relatórios de descoberta de aplicativo usando os arquivos de log de seus firewalls e proxies, revise os resultados no painel de descoberta do aplicativo.
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706255"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603742"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Analisar descobertas de aplicativos do Office 365 Cloud App Security
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706255"
    
 O painel de descoberta de nuvem trabalha com logs de tráfego da web para fornecer informações detalhadas sobre o uso do aplicativo de nuvem da sua organização. Se você for um administrador global, administrador de segurança ou leitor de segurança e sua organização tenha [criado os relatórios de descoberta de aplicativo na segurança de aplicativo de nuvem do Office 365](create-app-discovery-reports-in-ocas.md), você pode usar o painel de descoberta de nuvem para percepção como as pessoas na sua organização estiver usando o Office 365 e outros aplicativos de nuvem. (O painel de descoberta de nuvem é também conhecido como descoberta de aplicativos de produtividade.)
   
- **A partir de março 2018, o painel de descoberta de nuvem tem recursos novos** que facilitam exibir informações detalhadas sobre como as pessoas na sua organização estiver usando o Office 365 e outros aplicativos. 
+ O painel de descoberta de nuvem permite exibir informações detalhadas sobre como as pessoas na sua organização estiver usando o Office 365 e outros aplicativos. 
   
 ![O painel de descoberta de nuvem foi atualizado](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>Vá para o painel de descoberta de nuvem
 
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+1. Vá para o portal de segurança de aplicativo de nuvem ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e entrar.
     
-2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.<br/>(Se a segurança de aplicativo de nuvem do Office 365 ainda não estiver habilitada, e você é um administrador global, [Ative a segurança de aplicativo do Office 365 nuvem](turn-on-office-365-cas.md).)
-    
-3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.
-    
-4. Vá para **descobrir** \> **Painel de descoberta de nuvem**.
+2. Vá para **descobrir** \> **Painel de descoberta de nuvem**.
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Veja os principais usuários, endereços IP, aplicativos e níveis de risco
 

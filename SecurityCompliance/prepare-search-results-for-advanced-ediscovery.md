@@ -3,7 +3,7 @@ title: Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Saiba como preparar os resultados de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para análise adicional com a ferramenta de descoberta eletrônica avançado.
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038304"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280164"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365
 
 Após uma pesquisa que está associado a um caso de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade é executado com êxito, você pode preparar os resultados da pesquisa para análise adicional com eDiscovery avançadas do Office 365, que permite que você analise grandes, dados não estruturados define e reduzem a quantidade de dados relevantes a um caso jurídico. Recursos de descoberta eletrônica avançada incluem:
   
-- **Reconhecimento óptico de caracteres** - quando você prepara os resultados da pesquisa para eDiscovery avançada, a funcionalidade de reconhecimento óptico de caracteres (OCR) automaticamente extrai texto de imagens e inclui isso com os resultados da pesquisa que são carregados em para EDiscovery avançada para análise. OCR é suportado para arquivos flexível, anexos de email e imagens incorporadas. Isso permite que você aplique as capacidades analíticas de texto de eDiscovery avançado (perto duplicatas, email threading, temas e previsão de codificação) para o conteúdo de texto em arquivos de imagem. 
+- **Reconhecimento óptico de caracteres** - quando você prepara os resultados da pesquisa para eDiscovery avançada, a funcionalidade de reconhecimento óptico de caracteres (OCR) automaticamente extrai texto de imagens e inclui isso com os resultados da pesquisa que são carregados em para EDiscovery avançada para análise. OCR é suportado para arquivos flexível, anexos de email e imagens incorporadas. Isso permite que você aplique as capacidades analíticas de texto de eDiscovery avançado (perto duplicatas, email threading, temas e previsão de codificação) para o conteúdo de texto em arquivos de imagem. EDiscovery avançado OCR suporta os seguintes formatos de arquivos de imagem:
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **Detecção de quase duplicados** - permite que você estruturar sua análise de dados com mais eficiência, para que uma pessoa analisa um grupo de documentos semelhantes. Isso ajuda a impedir que vários revisores tenham que exibir diferentes versões do mesmo documento. 
     
@@ -41,7 +47,7 @@ Após uma pesquisa que está associado a um caso de descoberta eletrônica no Of
 
 - Para analisar dados de um usuário usando o eDiscovery avançado, o usuário (o de responsáveis dos dados) deve ser atribuído uma licença do Office 365 E5. Como alternativa, os usuários com uma licença do Office 365 E1 ou E3 podem ser atribuídos uma licença autônoma de eDiscovery avançado. Os administradores e oficiais de conformidade que estão atribuídos ao casos e usam o eDiscovery avançada para analisar dados não precisam de uma licença E5. 
     
-- Você precisa ser uma administrador no Office 365 Security descoberta eletrônica ou uma gerente de descoberta eletrônica &amp; Centro de conformidade para preparar os resultados da pesquisa avançada de eDiscovery. Uma gerente de descoberta eletrônica é um membro do grupo de função de Gerenciador de descoberta eletrônica. Um eDiscovery administrador também é membro do grupo de função de gerente de descoberta eletrônica, mas foi atribuído privilégios de descoberta eletrônica adicionais. Para obter instruções sobre como atribuir permissões de administrador de descoberta eletrônica, consulte a etapa 1 em [casos de descoberta eletrônica no Centro de conformidade & segurança do Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Você precisa ser uma administrador no Office 365 Security descoberta eletrônica ou uma gerente de descoberta eletrônica &amp; Centro de conformidade para preparar os resultados da pesquisa avançada de eDiscovery. Uma gerente de descoberta eletrônica é um membro do grupo de função de Gerenciador de descoberta eletrônica. Um eDiscovery administrador também é membro do grupo de função de gerente de descoberta eletrônica, mas foi atribuído privilégios de descoberta eletrônica adicionais. Para obter instruções sobre como atribuir permissões de administrador de descoberta eletrônica, consulte a etapa 1 em [casos de descoberta eletrônica no Centro de conformidade do & de segurança do Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Etapa 1: Preparar resultados para eDiscovery avançada de pesquisa
 

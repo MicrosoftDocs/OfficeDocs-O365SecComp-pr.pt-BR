@@ -3,7 +3,6 @@ title: Gerenciar a Criptografia de Mensagens do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +11,25 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: Depois de concluir a configuração de backup do Office 365 Message Encryption (OME), você pode personalizar a configuração da sua implantação em um número de formas. Por exemplo, você pode configurar se deseja habilitar as senhas de uma única vez, exibir o botão de Protect no Outlook na web e muito mais. As tarefas neste artigo descrevem como.
-ms.openlocfilehash: 460ac0bba4d10fe8bef896a23a20f74527f031b2
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750050"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696225"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gerenciar a Criptografia de Mensagens do Office 365
 
-Depois de concluir a configuração de backup do Office 365 Message Encryption (OME), você pode personalizar a configuração da sua implantação em um número de formas. Por exemplo, você pode configurar se deseja habilitar as senhas de uma única vez, exibir o botão de **Protect** no Outlook na web e muito mais. As tarefas neste artigo descrevem como. 
+Depois de concluir a configuração de backup do Office 365 Message Encryption (OME), você pode personalizar a configuração da sua implantação em um número de formas. Por exemplo, você pode configurar se deseja habilitar as senhas de uma única vez, exibir o botão de **Protect** no Outlook na web e muito mais. As tarefas neste artigo descrevem como.
   
 ||
 |:-----|
 |Este artigo faz parte de uma maior série de artigos sobre o Office 365 Message Encryption. Este artigo destina-se aos administradores e profissionais de TI. Se você apenas estiver procurando informações sobre como enviar ou receber uma mensagem criptografada, consulte a lista de artigos no [Office 365 Message Encryption (OME)](ome.md) e localize o artigo que atenda às suas necessidades. |
+||
 
 ## <a name="managing-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Gerenciando se destinatários Google, Yahoo e Account da Microsoft podem usar essas contas para entrar no portal do Office 365 Message Encryption
 
-Por padrão, quando você configura os novos recursos do Office 365 Message Encryption, usuários em sua organização podem enviar mensagens para destinatários que estão fora da sua organização do Office 365. Se o destinatário usa uma *ID social* como uma conta do Google, Yahoo conta ou conta da Microsoft, o destinatário pode entrar no portal do OME usando o ID de social. Se desejar, você pode optar por não permitir que os destinatários usar IDs sociais para entrar no portal OME. 
+Por padrão, quando você configura os novos recursos do Office 365 Message Encryption, usuários em sua organização podem enviar mensagens para destinatários que estão fora da sua organização do Office 365. Se o destinatário usa uma *ID social* como uma conta do Google, Yahoo conta ou conta da Microsoft, o destinatário pode entrar no portal do OME usando o ID de social. Se desejar, você pode optar por não permitir que os destinatários usar IDs sociais para entrar no portal OME.
   
 ### <a name="to-manage-whether-or-not-to-allow-recipients-to-use-social-ids-to-sign-in-to-the-ome-portal"></a>Para gerenciar se deseja ou não permitir que os destinatários usar IDs sociais para entrar no portal OME
   
@@ -37,21 +37,21 @@ Por padrão, quando você configura os novos recursos do Office 365 Message Encr
 
 2. Execute o cmdlet Set-OMEConfiguration com o parâmetro SocialIdSignIn da seguinte maneira:
 
-  ```
-  Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
-  ```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
+   ```
 
-  Por exemplo, para desativar as IDs sociais:
-  
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
-  ```
+   Por exemplo, para desativar as IDs sociais:
 
-  Para permitir que IDs sociais:
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
+   ```
 
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
-  ```
+   Para permitir que IDs sociais:
+
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
+   ```
 
 ## <a name="managing-the-use-of-one-time-pass-codes-for-signing-in-to-the-office-365-message-encryption-portal"></a>Gerenciando o uso de senhas únicas para entrar no portal do Office 365 Message Encryption
 
@@ -63,19 +63,25 @@ Por padrão, se o destinatário de uma mensagem criptografada por OME não usa o
 
 2. Execute o cmdlet Set-OMEConfiguration com o parâmetro OTPEnabled:
 
-   ```Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   ```
 
    Por exemplo, para desabilitar as senhas de uma única vez:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false
+   ```
 
    Para permitir que as senhas de uma única vez:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
+   ```
 
 ## <a name="managing-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Gerenciar a exibição do botão Protect no Outlook na web
 
-Por padrão, o botão **Protect** no Outlook na web não está habilitado quando você configura OME. Como administrador, você pode gerenciar se deseja ou não exibir este botão aos usuários finais. 
+Por padrão, o botão **Protect** no Outlook na web não está habilitado quando você configura OME. Como administrador, você pode gerenciar se deseja ou não exibir este botão aos usuários finais.
   
 ### <a name="to-manage-whether-or-not-the-protect-button-appears-in-outlook-on-the-web"></a>Para gerenciar ou não o botão Protect aparece no Outlook na web
   
@@ -83,15 +89,21 @@ Por padrão, o botão **Protect** no Outlook na web não está habilitado quando
 
 2. Execute o cmdlet Set-IRMConfiguration com o parâmetro - SimplifiedClientAccessEnabled:
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
+   ```
 
    Por exemplo, para desabilitar o botão **Protect** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
    Para habilitar o botão **Protect** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $true```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Habilitar a descriptografia do lado do serviço de mensagens de email para usuários de aplicativo de email iOS
 
@@ -99,7 +111,7 @@ O aplicativo de email iOS não é possível descriptografar mensagens protegidas
   
 Se você optar por não permitir descriptografadas mensagens sejam enviadas aos usuários do aplicativo de email de iOS, os usuários recebem uma mensagem informando que não têm os direitos para exibir a mensagem. Por padrão, a descriptografia do lado do serviço de mensagens de email não está habilitada.
   
-Para obter mais informações e para um modo de exibição da experiência do cliente, consulte a seção "[ler mensagens criptografadas no seu iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf#iOSEncryptedMail)de" em [visualizar mensagens criptografadas no seu iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Para obter mais informações e para um modo de exibição da experiência do cliente, consulte [View criptografadas mensagens no seu iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### <a name="to-manage-whether-or-not-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Para gerenciar usuários de aplicativo de email do iOS ou não pode exibir mensagens protegidas pelo Office 365 Message Encryption
   
@@ -107,19 +119,25 @@ Para obter mais informações e para um modo de exibição da experiência do cl
 
 2. Execute o cmdlet Set-ActiveSyncOrganizations com o parâmetro AllowRMSSupportForUnenlightenedApps:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
+   ```
 
    Por exemplo, para configurar o serviço para descriptografar mensagens antes de serem enviadas aos aplicativos unenlightened como o iOS mensagens app:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
+   ```
 
    Ou, para configurar o serviço não para enviar mensagens descriptografadas aos aplicativos unenlightened:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Habilitar a descriptografia do lado do serviço de anexos de email para clientes de email do navegador da web
 
-Normalmente, quando você usa criptografia de mensagem do Office 365, anexos serão criptografados automaticamente. Como um administrador do Office 365, você pode aplicar a descriptografia do lado do serviço anexos de email que os usuários fazer download de um navegador da web. 
+Normalmente, quando você usa criptografia de mensagem do Office 365, anexos serão criptografados automaticamente. Como um administrador do Office 365, você pode aplicar a descriptografia do lado do serviço anexos de email que os usuários fazer download de um navegador da web.
   
 Quando você optar por fazer isso, o serviço envia uma cópia descriptografada do arquivo para o dispositivo. A mensagem ainda é criptografada. O anexo de email também mantém informações sobre os direitos de uso, mesmo que o navegador não se aplica a direitos de uso do cliente para o usuário. Isso significa que o usuário pode copiar ou imprimir o anexo de email, mesmo se eles não tivesse originalmente os direitos de fazê-lo. No entanto, se o usuário tentar concluir uma ação que requer que o servidor de email do Office 365, como encaminhamento o anexo, o servidor não permitirá que a ação se o usuário não tivesse originalmente o direito de uso de fazê-lo.
   
@@ -135,15 +153,21 @@ Para obter mais informações sobre como o Office 365 implementa a criptografia 
 
 2. Execute o cmdlet Set-IRMConfiguration com o parâmetro DecryptAttachmentFromPortal:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   ```
 
    Por exemplo configurar o serviço para descriptografar os anexos de email quando um usuário faz o download de um navegador da web:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $true```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   ```
 
    Para configurar o serviço para deixar anexos de email criptografadas como eles estão após o download:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $false```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   ```
 
 ## <a name="customizing-the-appearance-of-email-messages-and-the-ome-portal"></a>Personalizando a aparência das mensagens de email e o portal OME
 
@@ -159,8 +183,12 @@ Esperamos que ela não vir a ele, mas se você precisa, desabilitando os novos r
 
 2. Se você habilitou o botão **Protect** no Outlook na web, desabilitá-lo executando o cmdlet Set-IRMConfiguration com o parâmetro SimplifiedClientAccessEnabled. Caso contrário, ignore esta etapa.
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
 3. Desabilite os novos recursos para o OME executando o cmdlet Set-IRMConfiguration com o parâmetro AzureRMSLicensingEnabled definido como false:
 
-   ```Set-IRMConfiguration -AzureRMSLicensingEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -AzureRMSLicensingEnabled $false
+   ```

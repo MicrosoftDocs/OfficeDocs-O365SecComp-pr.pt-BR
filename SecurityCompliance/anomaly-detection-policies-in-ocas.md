@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Políticas de detecção de anomalias na segurança de aplicativo do Office 365 nuvem usam algoritmos internos para ajudar a descobrir possíveis problemas. Você deve ter a política de detecção de anomalia pelo menos um, que você pode ajustar (quando você criá-lo) usando filtros. '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604412"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612704"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Políticas de detecção de anomalias no Office 365 Cloud App Security
 
@@ -28,7 +28,7 @@ Gerenciamento de segurança avançada do Office 365 agora é segurança de aplic
 |:-----|:-----|:-----|:-----|
 |[Comece a avaliar](office-365-cas-overview.md) <br/> |[Começar a planejar](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Iniciar a utilização](utilization-activities-for-ocas.md) <br/> |
    
-Começando com a [versão de segurança de aplicativo do Microsoft Cloud 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), segurança de aplicativo de nuvem do Office 365 inclui várias anomalia predefinidos detecção diretivas ("pronto") que incluem o usuário e análise de comportamento de entidade (UEBA) e máquina aprendizagem (ML).
+Começando com a [versão de segurança de aplicativo do Microsoft Cloud 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), segurança de aplicativo de nuvem do Office 365 inclui várias anomalia predefinidos detecção diretivas ("pronto") que incluem o usuário e análise de comportamento de entidade (UEBA) e máquina aprendizagem (ML).
   
 ![Para exibir suas políticas de detecção de anomalias, selecione controle \> políticas.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   

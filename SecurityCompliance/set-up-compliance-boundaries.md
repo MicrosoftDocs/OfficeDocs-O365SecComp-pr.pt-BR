@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use os limites de conformidade para criar limites lógicos dentro de uma organização do Office 365 que controlam os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Limites de conformidade usam permissões de pesquisa filtragem (também chamado de conformidade segurança filtros) para controlar quais caixas de correio, os sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299235"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768012"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
 
@@ -55,8 +55,6 @@ A primeira etapa é escolher um atributo do Active Directory do Azure para usá-
 Aqui está uma lista de atributos de usuário do Windows Azure Active Directory que você pode usar os limites de conformidade de:
   
 - Empresa
-    
-- CountryCode
     
 - CustomAttribute1 - CustomAttribute15
     
@@ -123,7 +121,7 @@ Aqui está uma descrição de cada parâmetro no comando:
     
   -  `Site`-Especifica as contas de OneDrive que os grupos de função definidos no `Users` parâmetro pode pesquisar. Para o filtro de OneDrive, use a cadeia de caracteres real `ComplianceAttribute`; Isso irá mapear para o mesmo atributo que você identificou na etapa 1 e que é sincronizado com o OneDrive contas como resultado da solicitação de suporte que você enviados na etapa 2;  *Valor de atributo* Especifica a agência. Esse filtro permite que os membros do grupo de função para pesquisar somente as contas de OneDrive em uma agência específica; Por exemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`-Especifica os sites do SharePoint que os grupos de função definidos no `Users` parâmetro pode pesquisar. O *SharePointURL* Especifica os sites em agência que membros do grupo de função podem pesquisar; Por exemplo,`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-Especifica os sites do SharePoint que os grupos de função definidos no `Users` parâmetro pode pesquisar. O *SharePointURL* Especifica os sites em agência que membros do grupo de função podem pesquisar; Por exemplo,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-Especifica o tipo de ação de pesquisa de conformidade que o filtro é aplicado à. Por exemplo, `-Action Search` se aplica apenas ao filtro quando membros dos grupos de função definidos no `Users` parâmetro executa uma pesquisa de conteúdo. Nesse caso, o filtro não seria ser aplicado ao exportar os resultados da pesquisa. Limites de conformidade, use `-Action All` para o filtro se aplica a todas as ações de pesquisa. 
     

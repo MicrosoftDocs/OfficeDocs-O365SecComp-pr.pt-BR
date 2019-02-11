@@ -1,5 +1,5 @@
 ---
-title: Coleta de dados para um caso de eDiscovery avançado (Preview)
+title: Coletar dados para um caso de eDiscovery avançado (Preview)
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607352"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695047"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>Coleta de dados para um caso de eDiscovery avançado (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Coletar dados para um caso de eDiscovery avançado (Preview)
 
 Depois de ter identificado responsáveis e fontes de dados de interesse para seu caso, é hora para identificar o conjunto de documentos para abordar. Você pode usar a ferramenta de pesquisa no eDiscovery avançado (Preview) para identificar esses de custódia e não custódia locais no Office 365.
 

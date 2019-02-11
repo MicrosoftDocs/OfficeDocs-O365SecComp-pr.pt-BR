@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Usar o recurso de estatísticas de pesquisa para exibir e comparar estatísticas para várias pesquisas de conteúdo na segurança do Office 365 &amp; Centro de conformidade. Você também pode configurar a lista de palavra-chave quando você cria ou edita uma consulta de pesquisa para obter estatísticas avançadas que mostram a quantos itens correspondem a cada palavra-chave ou frase de palavra-chave.
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524119"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209802"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Exibir as estatísticas de palavra-chave para resultados de Pesquisa de Conteúdo
 
@@ -100,6 +100,10 @@ Para exibir as estatísticas de pesquisas de conteúdo:
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtenha as estatísticas de palavra-chave para pesquisas de conteúdo
 
 Anterior conforme explicado, a página de **consultas** mostra a consulta de pesquisa e o número (e tamanho) de itens que correspondem à consulta. Se você usar uma lista de palavra-chave quando você cria ou edita uma consulta de pesquisa, você pode obter estatísticas avançadas que mostram a quantos itens correspondem a cada palavra-chave ou frase de palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais partes da consulta são mais (e menos) eficientes. Por exemplo, se uma palavra-chave retorna um grande número de itens, você pode escolher refinar a consulta de palavra-chave para restringir os resultados de pesquisa. Você pode configurar uma lista de palavra-chave quando você cria ou editar uma pesquisa de conteúdo. 
+
+
+
+
   
 Para criar uma lista de palavra-chave e exibir estatísticas de palavra-chave para uma pesquisa de conteúdo:
   
@@ -130,3 +134,6 @@ Para criar uma lista de palavra-chave e exibir estatísticas de palavra-chave pa
     - A consulta de pesquisa real para cada palavra-chave, que inclui qualquer condições de consulta de pesquisa. 
     
     - A consulta de pesquisa completa (identificado como **principal** na coluna **parte** ) e as estatísticas para a consulta completa. Observe que essas são as mesmas estatísticas exibidas na página de **Resumo** . 
+
+> [!NOTE]
+> Para ajudar a reduzir problemas causados por palavra-chave grandes listas, agora você está limitado a um máximo de 20 linhas na lista de palavra-chave de uma consulta de pesquisa.

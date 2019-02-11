@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607349"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706102"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Adicionar responsáveis a um eDiscovery avançado (Preview) caso
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Adicionar responsáveis a um caso de eDiscovery avançado (Preview)
 
 Usando o eDiscovery avançado (Preview), você pode aproveitar a ferramenta de gerenciamento dos responsáveis internas para coordenar os fluxos de trabalho em torno Gerenciando responsáveis e identificar as fontes de dados relevantes, custódia dentro de um caso. Quando você adiciona um funcionário encarregado, o sistema pode identificar automaticamente e retenções locais em sua caixa de correio principal do Exchange e OneDrive para o site de negócios. Conforme você conduzir sua descoberta, você pode descobrir e mapear caixas de correio adicionais ou sites que um funcionário encarregado acessado no passado ou equipes que um funcionário encarregado é um membro de hoje.
 

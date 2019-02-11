@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artigo descreve como Office 365 reduz contra ataques de phishing que usa falsificado domínios do remetente, ou seja, os domínios que são falsificados. Ele realiza isso analisando as mensagens e bloquear aqueles que podem ser autenticados neithe usando os métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing organizações no Office 365 estão expostas a.
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769855"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614505"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Motivo**|**Descrição**|
-|0XX|Mensagem de falha na autenticação composta.<br/>**000** significa que a mensagem falhou DMARC com uma ação de rejeição ou quarentena.                    -001 significa que a mensagem de falha na autenticação de email implícita. Isso significa que o domínio de envio não tinha registros de autenticação de e-mail publicados ou se eles fizeram, que tinham uma política de falha mais fraca (fail suave de SPF ou neutro, política DMARC de p = none).<br/>**002** significa que a organização possui uma política para o par de remetente/domínio proibido explicitamente enviem email falsificado, essa configuração é definir manualmente por um administrador.  <br/>**010** significa a mensagem falhou DMARC com uma ação de rejeição ou quarentena e o domínio de envio é um dos domínios aceitos da sua organização (Isso é parte de auto-to-self ou interna da organização, falsificação).  <br/>**011** significa que a mensagem de falha na autenticação de email implícita, e o domínio de envio é um dos domínios aceitos de sua organização (Isso é parte de auto-to-self ou interna da organização, falsificação).|
+|0XX|Mensagem de falha na autenticação composta.<br/>**000** significa que a mensagem falhou DMARC com uma ação de rejeição ou quarentena.  <br/>**001** significa que a mensagem de falha na autenticação de email implícita. Isso significa que o domínio de envio não tinha registros de autenticação de e-mail publicados ou se eles fizeram, que tinham uma política de falha mais fraca (fail suave de SPF ou neutro, política DMARC de p = none).<br/>**002** significa que a organização possui uma política para o par de remetente/domínio proibido explicitamente enviem email falsificado, essa configuração é definir manualmente por um administrador.  <br/>**010** significa a mensagem falhou DMARC com uma ação de rejeição ou quarentena e o domínio de envio é um dos domínios aceitos da sua organização (Isso é parte de auto-to-self ou interna da organização, falsificação).  <br/>**011** significa que a mensagem de falha na autenticação de email implícita, e o domínio de envio é um dos domínios aceitos de sua organização (Isso é parte de auto-to-self ou interna da organização, falsificação).|
 |Todos os outros códigos (1xx, 2xx, 3xx, 4xx, 5xx)|Corresponde à diversos códigos internos para o motivo pelo qual uma mensagem passadas autenticação implícita ou não tinha nenhuma autenticação, mas nenhuma ação foi aplicada.|
    
 Examinando os cabeçalhos de uma mensagem, um administrador ou até mesmo um usuário final pode determinar como o Office 365 chega na conclusão que o remetente pode ser falsificado.
@@ -419,9 +419,9 @@ Em geral, a diretiva aplicada a uma mensagem é identificada no cabeçalho X-For
 |3  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
 |4  <br/> |Falsificação  <br/> |REALIZAR A FALSIFICAÇÃO  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553), [inteligência de falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas as organizações  <br/> |
 |5  <br/> |Spam  <br/> |SPM  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|6  <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
-|7  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP  <br/> |
-|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP <br/> |
+|6   <br/> |Em massa  <br/> |EM MASSA  <br/> |[Política de filtro de conteúdo hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas as organizações  <br/> |
+|7   <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP  <br/> |
+|8   <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Política de AntiPhishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizações com ATP <br/> |
    
 Se você tiver vários diferentes políticas AntiPhishing, aquele com a prioridade mais alta serão aplicadas. Por exemplo, suponha que você tem duas políticas:
   
@@ -669,7 +669,7 @@ Não é garantido que deliverability à Microsoft, mesmo se você autenticar ema
   
 Para obter mais detalhes sobre as práticas recomendadas de provedores de serviço, consulte [M3AAWG Mobile Messaging práticas recomendadas para provedores de serviços](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
   
-## <a name="frequently-asked-questions"></a>Perguntas frequentes
+## <a name="frequently-asked-questions"></a>Perguntas Frequentes
 
 ### <a name="why-is-microsoft-making-this-change"></a>Por que a Microsoft está fazendo essa alteração?
 

@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495515"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696265"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
-Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui. Além disso, dê uma olhada em [Perguntas frequentes sobre proteção de dados em proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/get-started/faqs-rms) para obter respostas a perguntas sobre o serviço de proteção de dados, o Azure Rights Management, em proteção de informações do Windows Azure. 
+Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui. Além disso, dê uma olhada em [Perguntas frequentes sobre proteção de dados em proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/get-started/faqs-rms) para obter respostas a perguntas sobre o serviço de proteção de dados, o Azure Rights Management, em proteção de informações do Windows Azure.
+
+||
+|:-----|
+|Este artigo faz parte de uma maior série de artigos sobre o Office 365 Message Encryption. Este artigo destina-se aos administradores e profissionais de TI. Se você apenas estiver procurando informações sobre como enviar ou receber uma mensagem criptografada, consulte a lista de artigos no [Office 365 Message Encryption (OME)](ome.md) e localize o artigo que atenda às suas necessidades. |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>O que é o Office 365 Message Encryption (OME)?
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607377"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706132"
 ---
 # <a name="create-a-search-to-collect-data"></a>Criar uma pesquisa para coletar dados
 
@@ -31,11 +31,11 @@ Cada pesquisa com um caso deve ter um nome exclusivo. Opcionalmente, você pode 
 
 ## <a name="define-your-conditions"></a>Definir suas condições
 
-Você pode definir as condições de sua pesquisa usando as placas de condição pré-criados ou usando o idioma de consulta de palavra-chave (KQL). Para obter mais informações, consulte [Construindo consultas de pesquisa](building-search-queries.md).
+Você pode definir as condições de sua pesquisa usando as placas de condição pré-criados ou usando o idioma de consulta de palavra-chave (KQL). Para obter mais informações, consulte [consultas de pesquisa de compilação](building-search-queries.md).
 
 ## <a name="choose-the-custodians-to-search-from"></a>Escolha os responsáveis da pesquisa
 
-Depois que você definiu seus condições, é preciso escolher quais locais que você deseja pesquisar. Uma maneira de fazê-lo é especificando quais responsáveis já tiver adicionado ao caso você deseja pesquisar. Selecionando dos responsáveis, você será executado a pesquisa em todas as fontes de dados mapeadas para dos responsáveis. Para obter mais informações sobre como adicionar responsáveis ao seu caso e gerenciar suas fontes de dados, consulte [Trabalhando com responsáveis](managing-custodians.md) .
+Depois que você definiu seus condições, é preciso escolher quais locais que você deseja pesquisar. Uma maneira de fazê-lo é especificando quais responsáveis já tiver adicionado ao caso você deseja pesquisar. Selecionando dos responsáveis, você será executado a pesquisa em todas as fontes de dados mapeadas para dos responsáveis. Consulte [trabalhar com responsáveis](managing-custodians.md) para obter mais informações sobre como adicionar responsáveis ao seu caso e gerenciar suas fontes de dados.
 
 ## <a name="choose-non-custodial-locations"></a>Escolher não custódia locais
 

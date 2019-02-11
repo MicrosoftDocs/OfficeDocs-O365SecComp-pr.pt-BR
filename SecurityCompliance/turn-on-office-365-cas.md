@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Leia este artigo para saber como ativar o Office 365 gerenciamento avançado de segurança, possibilitada pela segurança de aplicativo de nuvem in Microsoft Azure.
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014783"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603772"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014783"
 3. Selecione **Ativar segurança de aplicativo do Office 365 nuvem**.
     
 4. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.<br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Isso leva você para o portal de segurança de aplicativo de nuvem do Office 365, onde você pode exibir relatórios e criar ou editar suas políticas.
+
+Depois que você ativou segurança de aplicativo de nuvem do Office 365, você pode ir para o portal de segurança de aplicativo de nuvem visitando [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e entrando.
     
 > [!NOTE]
 > Quando você ativa a segurança de aplicativo de nuvem do Office 365, auditoria informações sobre suas contas de usuário do Office 365 e as atividades do usuário são transferidas para o [Aplicativo de nuvem Microsoft Security](https://aka.ms/whatiscas). Isso permite que o Office 365 fornecer alertas avançadas, filtragem e outros recursos para que você possa obter informações e agir sobre atividades suspeitas. 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Saiba mais sobre as configurações de recursos anti-spam e os filtros que irão ajudar que você impedir spam no Exchange Online e o Office 365. Obtendo uma quantidade excessiva de spam no Office 365? Você pode personalizar seus filtros de spam e configurações de política anti-spam.
-ms.openlocfilehash: 5547904633a0be9ad57fa7431aeddf1267871662
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0a23ddd0610599bbd6478781c61e5e32b06726bc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524088"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652266"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Proteção antispam de emails do Office 365
 
@@ -43,37 +43,35 @@ O vídeo a seguir fornece uma visão geral de configuração no EOP de filtragem
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
   
-Para obter mais detalhes, consulte o tópico [Configure políticas de filtro de spam](https://go.microsoft.com/fwlink/p/?LinkId=617147) . 
+Para obter mais detalhes, consulte o tópico [Configure políticas de filtro de spam](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
   
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Verificar suas mensagens de saída para impedir que o spam no Office 365
 
  **Filtragem de saída.** O Office 365 também verifica para certificar-se de que os usuários não enviem spam. Por exemplo, o computador de um usuário pode obter infectado com malware que faz com que ele enviar mensagens de spam, por isso criamos proteção contra que chamado a *filtragem de saída* . Você não pode desativar a filtragem de saída, mas você pode definir as configurações que descrito em [Configure a política de spam de saída](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx). Se você estiver preocupado com muita spam no Office 365, use a filtragem de saída para ajudar a evitar spam no Exchange Online.
   
 ## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>Além do básico: outras maneiras de impedir que o spam no Office 365
-<a name="BeyondBasics"> </a>
 
- **Regras de fluxo de email.** Se quiser ir além de filtragem de spam interna e criar regras personalizadas que são baseados em suas políticas de negócios, *[regras de fluxo de email](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)* , também chamadas de *regras de transporte* , são outro filtro que ajudá-lo a evitar spam no Office 365. Por exemplo, você pode usar as regras de fluxo de correio para definir o valor de (SCL) nível do spam confidence para mensagens que correspondam às condições específicas, conforme descrito em [usar regras de fluxo de email para definir o nível de confiança de spam (SCL) em mensagens](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx). 
+ **Regras de fluxo de email.** Se quiser ir além de filtragem de spam interna e criar regras personalizadas que são baseados em suas políticas de negócios, *[regras de fluxo de email](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)*, também chamadas de *regras de transporte*, são outro filtro que ajudá-lo a evitar spam no Office 365. Por exemplo, você pode usar as regras de fluxo de correio para definir o valor de (SCL) nível do spam confidence para mensagens que correspondam às condições específicas, conforme descrito em [usar regras de fluxo de email para definir o nível de confiança de spam (SCL) em mensagens](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx).
   
- **Autenticação de email.** Técnicas que usam o sistema de nome de domínio (DNS) para adicionar informações verificáveis às mensagens de email sobre o remetente de uma mensagem de email são chamadas de autenticação de email. Usar o Office 365 mais avançado, os administradores podem fazer desses métodos de autenticação de email: 
+ **Autenticação de email.** Técnicas que usam o sistema de nome de domínio (DNS) para adicionar informações verificáveis às mensagens de email sobre o remetente de uma mensagem de email são chamadas de autenticação de email. Usar o Office 365 mais avançado, os administradores podem fazer desses métodos de autenticação de email:
   
 - **(SPF) de estrutura de política do remetente.** SPF valida à origem de mensagens de email, verificando o endereço IP do remetente contra o proprietário denúncia do domínio de envio. Para obter uma introdução rápida SPF e instalá-la configurado rapidamente, consulte [Configurar SPF no Office 365 para ajudar a impedir a falsificação](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Para ter uma compreensão mais detalhada de como o Office 365 usa SPF ou para implantações não-padrão ou de solução de problemas, por exemplo, híbrida, inicie com [como o Office 365 usa Framework de política do remetente (SPF) para evitar a falsificação](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
-    
+
 - **DomainKeys identificado Mail (DKIM).** DKIM permite anexar uma assinatura digital para mensagens de email no cabeçalho da mensagem de emails que você enviar. Sistemas de email que recebam email de seu domínio usam essa assinatura digital para determinar se o email de entrada que eles recebem é legítimo. Para obter informações sobre a verificação e o Office 365, consulte [Verificação de uso para validar emails de saída enviados do seu domínio no Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
-    
+
 - **Autenticação de mensagens baseada em domínio, relatórios e conformidade (DMARC).** Ajuda do DMARC recebendo sistemas de email determinar o que fazer com mensagens que falham verificações SPF ou DKIM e fornece um outro nível de confiança para seus parceiros de email. Para obter informações sobre como configurar o DMARC, consulte [DMARC de uso para validar emails no Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 Se você estiver preocupado com spam, phishing e falsificação no Office 365, use SPF, DKIM e DMARC juntos para ajudar a evitar spam e falsificação indesejadas.
   
  **Configurações do usuário final gerenciado.** Se você estiver procurando informações sobre como os usuários finais podem gerenciar suas próprias configurações de spam, consulte [Visão geral do filtro de lixo eletrônico](https://go.microsoft.com/fwlink/?LinkId=270065) (para usuários do Microsoft Outlook) ou [Saiba mais sobre lixo eletrônico e phishing](https://go.microsoft.com/fwlink/?LinkId=270068) (para o Outlook em que os usuários da web). Se você estiver usando o EOP para proteger as caixas de correio local, certifique-se de usar a sincronização de diretórios para garantir que essas configurações são sincronizadas para o serviço. Para obter mais informações sobre como configurar a sincronização de diretórios, consulte "Usar a sincronização de diretórios para gerenciar usuários de email" em [Gerenciar usuários de email no EOP](https://technet.microsoft.com/library/dn636911%28v=exchg.150%29.aspx).
   
 ## <a name="for-more-information"></a>Para saber mais
-<a name="BeyondBasics"> </a>
 
 [Blog: Por que spam e phishing obtém por meio do Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
   
 [Perguntas frequentes sobre a proteção antispam](https://technet.microsoft.com/library/jj937231%28v=exchg.150%29.aspx)
   
-[Impedir email falso positivo marcado como spam com uma lista de segura ou outras técnicas](prevent-email-from-being-marked-as-spam-0.md)
+[Impedir falsos positivos marcados como spam usando uma lista confiável ou outras técnicas](prevent-email-from-being-marked-as-spam-0.md)
   
 [Como configurar a filtragem para ajudar a bloquear mensagens de lixo eletrônico de spam do Office 365](block-email-spam-to-prevent-false-negatives.md)
   
@@ -82,14 +80,11 @@ Se você estiver preocupado com spam, phishing e falsificação no Office 365, u
 [Cabeçalhos de mensagem antispam](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)
   
 [Mnsagens backscatter e EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
-  
-## <a name="still-need-help"></a>Precisa de mais ajuda?
-<a name="BeyondBasics"> </a>
 
-[![Obtenha ajuda nos fóruns da comunidade do Office 365](media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![Administradores: Entre e crie uma solicitação de serviço](media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![Administradores: Chame o suporte técnico](media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
+## <a name="more-resources"></a>Mais recursos
 
+[Obter ajuda de fóruns da comunidade do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+  
+[Administradores: Entrar e criar uma solicitação de serviço](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+  
+[Administradores: Ligar para o Suporte](https://go.microsoft.com/fwlink/p/?LinkID=518322)

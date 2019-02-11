@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Configurações de filtro de spam básico incluem selecionando a ação a ser executada em mensagens que são identificadas como spam e escolha se deseja filtrar as mensagens enviadas de determinados países ou regiões ou escritas em idiomas específicos.
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180891"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614475"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
   
@@ -51,7 +51,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
       - **Excluir mensagem** Exclui a mensagem inteira, incluindo todos os anexos. 
         
-      - **Mensagem em quarentena** Envia a mensagem para a quarentena em vez de para os destinatários pretendidos. Se você selecionar essa opção, na caixa de entrada **Manter spam por (dias)**, especifique a quantidade de dias durante os quais a mensagem de spam ficará em quarentena. (Ela será automaticamente excluída após o tempo decorrido. O valor padrão é de 15 dias, que é o valor máximo. O valor mínimo é 1 dia).<br/><br/>Dica: Para obter informações sobre como os administradores podem gerenciar mensagens de email residem na quarentena no EAC, consulte [quarentena](quarantine.md) e [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md). > Para obter informações sobre como configurar mensagens de notificação de spam sejam enviadas aos usuários, consulte [Configure End-User spam notificações no EOP](configure-end-user-spam-notifications-in-eop.md) ou [Configure End-User spam notificações no Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+      - **Mensagem em quarentena** Envia a mensagem para a quarentena em vez de para os destinatários pretendidos. Se você selecionar essa opção, na caixa de entrada **Manter spam por (dias)**, especifique a quantidade de dias durante os quais a mensagem de spam ficará em quarentena. (Ela será automaticamente excluída após o tempo decorrido. O valor padrão é de 15 dias, que é o valor máximo. O valor mínimo é 1 dia).<br/><br/>Dica: Para obter informações sobre como os administradores podem gerenciar mensagens de email residem na quarentena no EAC, consulte [quarentena](quarantine.md) e [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md). gt _ para obter informações sobre como configurar mensagens de notificação de spam sejam enviadas aos usuários, consulte [Configure End-User spam notificações no EOP](configure-end-user-spam-notifications-in-eop.md) ou [Configure End-User spam notificações no Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
       - **Mover mensagem para a pasta Lixo Eletrônico** Envia a mensagem para a pasta Lixo Eletrônico dos destinatários especificados. Essa é a ação padrão para ambos os níveis de limite de confiança.<br/><br/>**IMPORTANTE: Para clientes do Exchange Online Protection (EOP): na ordem para esta ação trabalhar com caixas de correio local, você deve configurar as duas regras de transporte do Exchange em seus servidores locais para detectar os cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [Certifique-se de que o spam é roteado para a pasta de lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
   
@@ -62,6 +62,8 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
       - Se você incluir espaços dentro do texto de cabeçalho personalizado, ou se você adicionar os dois-pontos sozinho (tal como "X este é o meu cabeçalho personalizado" ou "X-This-is-my-custom-header:"), o texto de cabeçalho X reverte para o padrão como "X deste-for-Spam: essa mensagem é exibida como spam."
     
       - Você não pode especificar o texto do cabeçalho no formato \< *cabeçalho*  \>:\<  *valor*  \>. Se fizer isso, os dois valores antes e depois dos dois-pontos serão ignorado e o texto de cabeçalho X padrão é exibida: "X deste-for-Spam: essa mensagem é exibida como spam." 
+      
+      - Lembre-se de que mails com este cabeçalho X podem ser transferidos ainda para pasta de lixo eletrônico da caixa de correio devido à configuração de lixo eletrônico da caixa de correio. Você pode alterar isso ao desativar esse recurso com Set-MailboxJunkEmailConfiguration.
         
       - **Linha de assunto prepend com texto** Envia a mensagem para os destinatários pretendidos mas precede a linha de assunto com o texto que você especificar na caixa de entrada **a linha de assunto com este texto de prefixo** . Usando esse texto como identificador, opcionalmente, você pode criar regras para filtrar ou encaminhar mensagens conforme necessário. 
         
@@ -112,7 +114,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
 16. Clique em **salvar**. Um resumo das configurações de política aparecerá no painel direito.
 
 > [!TIP]
->  Você pode marque ou desmarque as caixas de seleção na coluna **habilitado** para habilitar ou desabilitar suas diretivas personalizadas. Por padrão, todas as diretivas estão habilitadas. A política padrão não pode ser desabilitada. > Para excluir uma política personalizada, selecione a política, clique no ![ícone Excluir](media/ITPro-EAC-DeleteIcon.gif) ícone **Excluir** e confirme que você deseja excluir a diretiva. A política padrão não pode ser excluída. > Políticas personalizadas sempre têm precedência sobre a diretiva padrão. Políticas personalizadas são executados na ordem inversa em que você criou (do mais antigo para o mais recente), mas você pode alterar a prioridade (ordem de execução) das suas diretivas personalizadas clicando o ![ícone de seta para cima](media/ITPro-EAC-UpArrowIcon.gif) seta para cima e ![ícone de seta para baixo](media/ITPro-EAC-DownArrowIcon.gif) para baixo seta. A política que possui uma **prioridade** **0** será executado primeira, seguido de **1**, e em seguida, **2**e assim por diante. 
+>  Você pode marque ou desmarque as caixas de seleção na coluna **habilitado** para habilitar ou desabilitar suas diretivas personalizadas. Por padrão, todas as diretivas estão habilitadas. A política padrão não pode ser desabilitada. gt _ para excluir uma política personalizada, selecione a política, clique no ![ícone Excluir](media/ITPro-EAC-DeleteIcon.gif) ícone **Excluir** e confirme que você deseja excluir a diretiva. A política padrão não pode ser excluída. políticas de sinalizador gt _ sempre têm precedência sobre a diretiva padrão. Políticas personalizadas são executados na ordem inversa em que você criou (do mais antigo para o mais recente), mas você pode alterar a prioridade (ordem de execução) das suas diretivas personalizadas clicando o ![ícone de seta para cima](media/ITPro-EAC-UpArrowIcon.gif) seta para cima e ![ícone de seta para baixo](media/ITPro-EAC-DownArrowIcon.gif) para baixo seta. A política que possui uma **prioridade** **0** será executado primeira, seguido de **1**, e em seguida, **2**e assim por diante. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Usar o PowerShell remoto para configurar políticas de filtro de spam
 

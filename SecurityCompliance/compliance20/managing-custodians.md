@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com responsáveis no eDiscovery avançado (Preview)
+title: Trabalhar com responsáveis no eDiscovery avançado (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607362"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706012"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>Trabalhando com responsáveis no eDiscovery avançado (Preview)
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Trabalhar com responsáveis no eDiscovery avançado (Preview)
 
 Muitas vezes, quando uma organização está respondendo a uma investigação legal, o fluxo de trabalho em torno de identificação, preservando e coletando o conteúdo relevante potencialmente baseia desativa responsáveis pessoas ou dados dentro da sua organização. No eDiscovery, essas pessoas são chamadas responsáveis de dados em são definidas como "pessoas ter controle administrativo de um documento ou arquivo eletrônico". Por exemplo, todos os dados de um email poderia ser o proprietário da caixa de correio que contém a mensagem relevante.  
 
@@ -33,9 +33,9 @@ Para obter mais informações sobre como trabalhar com responsáveis, consulte o
 
 - [Adicionar responsáveis a um caso](add-custodians-to-case.md)
 
-- [Gerenciando responsáveis em um caso](manage-new-custodians.md)
+- [Gerenciar responsáveis em um caso](manage-new-custodians.md)
 
-- [Exibindo a atividade dos responsáveis](view-custodian-activity.md)
+- [Modo de exibição dos responsáveis atividade](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>Funções e permissões
 

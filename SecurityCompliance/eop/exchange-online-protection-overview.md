@@ -1,9 +1,9 @@
 ---
 title: Visão geral do Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens.
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026688"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686360"
 ---
 # <a name="exchange-online-protection-overview"></a>Visão geral do Exchange Online Protection
 
@@ -44,11 +44,16 @@ O EOP é executado em uma rede mundial de data center projetados para fornecer a
   
 EOP realiza balanceamento de carga entre data centers, mas apenas dentro de uma região. Se você for aprovisionado em uma região, todas as suas mensagens serão processadas usando o roteamento de email para essa região. A lista a seguir mostra como o roteamento de email regional funciona para os data centers EOP:
   
-- Nos América, todos os Exchange on-line caixas postais estejam localizadas em datacenters EUA, com exceção da América do Sul onde datacenters no Brasil e Chile são usados e no Canadá, onde os centros de dados no Canadá são usados. Todas as mensagens de email, incluindo mensagens para clientes na América do Sul e no Canadá, são roteadas através dos EUA datacenters para filtragem do EOP; No entanto, quaratined email é armazenado no datacenter onde se encontra o inquilino..
     
 - Na Europa, Oriente Médio e África (EMEA), todas as caixas de correio do Exchange Online são localizadas nos data centers da EMEA e todas as mensagens são roteadas através de data centers da EMEA para filtragem do EOP.
     
-- Na Ásia Pacífico (APAC), todas as caixas de correio do Exchange Online estão localizadas em datacenters da APAC, mas as mensagens são atualmente roteadas através de datacenters da EMEA para filtragem do EOP. Tem-se o objetivo de mudar isso no quarto trimestre de 2014, quando as mensagens serão roteadas através de datacenters da APAC para a filtragem do EOP.
+- No Pacífico Asiático (APAC), todas as caixas de correio Exchange Online estão localizadas em datacenters APAC, mas as mensagens são roteadas atualmente por meio de datacenters APAC para filtragem do EOP.
+=======
+- Américas, todas as caixas de correio Exchange Online estão localizadas em data centers nos EUA, com exceção de onde os data centers no Brasil e Chile são usados na América do Sul e no Canadá, onde os centros de dados no Canadá são usados. Todas as mensagens de email, incluindo mensagens para clientes na América do Sul e no Canadá, são roteadas através de centros de dados locais para filtragem do EOP; email quaratined é armazenado no datacenter onde se encontra o inquilino.
+    
+- Na Europa, Oriente Médio e África (EMEA), todas as caixas de correio do Exchange Online são localizadas nos data centers da EMEA e todas as mensagens são roteadas através de data centers da EMEA para filtragem do EOP.
+    
+- No Pacífico Asiático (APAC), todas as caixas de correio Exchange Online estão localizadas em datacenters APAC e mensagens atualmente são roteadas através de datacenters APAC para filtragem do EOP.
     
 - Para a Nuvem de Comunidade Governamental (GCC), todas as caixas de correio do Exchange Online localizadas em data centers dos EUA e todas as mensagens são roteadas através de data centers dos EUA para filtragem do EOP.
     

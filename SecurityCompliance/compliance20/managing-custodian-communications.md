@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com a comunicação no eDiscovery avançado (Preview)
+title: Trabalhar com a comunicação no eDiscovery avançado (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607383"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695037"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>Trabalhando com a comunicação no eDiscovery avançado (Preview)
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Trabalhar com a comunicação no eDiscovery avançado (Preview)
 
 EDiscovery avançado (Preview) permite que os departamentos legais simplificar seus processos em torno de acompanhamento e distribuir as notificações de retenção legal. O recurso de comunicação dos responsáveis permite que os departamentos legais gerenciar e automatizar seus processos de retenção legal inteira – de notificações e lembretes escalonamentos – tudo em um único local.
 

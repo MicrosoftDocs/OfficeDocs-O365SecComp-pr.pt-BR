@@ -3,7 +3,7 @@ title: Visão geral do arquivamento ilimitado no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Saiba mais sobre a expansão automática arquivamento no Office 365, que fornece armazenamento de arquivamento ilimitado para caixas de correio Exchange Online.
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782118"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740813"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Visão geral do arquivamento ilimitado no Office 365
 
@@ -69,11 +69,11 @@ As capturas de tela a seguir mostram uma lista de pasta antes e depois que as me
 
 Para acessar as mensagens que são armazenadas em um arquivo morto expandido para automático, os usuários precisam usar um dos seguintes clientes do Outlook:
   
-- Outlook 2016 para Windows
+- Outlook 2016 ou 2019 do Outlook para Windows
     
 - Outlook na Web 
     
-- Outlook 2016 para Mac 
+- Outlook 2016 ou 2019 do Outlook para Mac 
     
 > [!NOTE]
 > Usuários do Outlook 2013 podem acessar apenas os itens que estavam originalmente armazenados em suas caixas de correio de arquivo morto. Eles não poderão acessar os itens que são movidos para o armazenamento de arquivamento adicionais. 
@@ -96,7 +96,7 @@ Esta seção explica a funcionalidade entre a expansão automática de arquivame
   
 - **Descoberta eletrônica** - quando você usar uma ferramenta de descoberta eletrônica do Office 365, como pesquisa de conteúdo ou In-Place eDiscovery, as áreas de armazenamento adicional em um arquivo morto expandido para automático também são pesquisados.
     
-- **Retenção** - quando você coloca uma caixa de correio em espera usando ferramentas como litígio no Exchange Online ou contém caso de descoberta eletrônica e políticas de retenção no Office 365 Security &amp; Centro de conformidade, o conteúdo localizado em um arquivo morto autoexpandida também é colocada em espera.
+- **Retenção** - quando você colocar uma caixa de correio em espera usando ferramentas como litígio no Exchange Online ou eDiscovery caso retenções e políticas de retenção no & de segurança do Office 365 Centro de conformidade, o conteúdo localizadas em um arquivo morto expandido para automático é também colocada em espera.
     
 - **Mensagens (MRM) de gerenciamento de registros** - se você usar políticas de exclusão de MRM no Exchange Online para excluir permanentemente os itens expirados de caixa de correio, itens expirados localizados no arquivamento automático-expandida também serão excluídas.
     

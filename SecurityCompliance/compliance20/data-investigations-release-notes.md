@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova versão do eDiscovery avançado (Preview) no Microsoft 365.
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636605"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695057"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de versão do investigações de dados (Preview) no Microsoft 365
 
-Você pode usar a nova ferramenta investigações de dados (Preview) no Microsoft 365 triagem, investigar e corrigir os dados relacionados incidentes, como uma investigação interna ou de um incidente de algum derramamento de dados. As investigações de visualização de dados públicos oferece acesso antecipado à funcionalidade futura e atualizações. Para obter acesso antecipado para os recursos mais recentes, crie uma nova investigação em investigações de dados (Preview) no Centro de conformidade do & de segurança do Office 365. Para saber como, consulte [Gerenciando um incidente de algum derramamento de dados no Microsoft 365](manage-data-spillage-incidents.md).
+Você pode usar a nova ferramenta investigações de dados (Preview) no Microsoft 365 triagem, investigar e corrigir os dados relacionados incidentes, como uma investigação interna ou de um incidente de algum derramamento de dados. As investigações de visualização de dados públicos oferece acesso antecipado à funcionalidade futura e atualizações. Para obter acesso antecipado para os recursos mais recentes, crie uma nova investigação em investigações de dados (Preview) no Centro de conformidade do & de segurança do Office 365. Para saber como fazer isso, consulte [Manage um incidente de algum derramamento de dados no Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novidades 
 

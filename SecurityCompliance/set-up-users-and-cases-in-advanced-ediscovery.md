@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Saiba como configurar funções de usuário, crie casos e atribuir usuários a casos de eDiscovery avançadas do Office 365.  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524312"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559054"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuários e casos na Descoberta Eletrônica Avançada do Office 365
 
 Este tópico descreve como configurar usuários e casos de eDiscovery avançadas do Office 365.
   
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -61,7 +61,5 @@ Depois de criar um caso de eDiscovery e adicionar membros, você (ou qualquer me
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Preparar os dados](prepare-data-for-advanced-ediscovery.md)
-  
-[Acesso e funções de usuário](user-roles-and-access-in-advanced-ediscovery.md)
-
+[Preparação de dados](prepare-data-for-advanced-ediscovery.md)
+ 

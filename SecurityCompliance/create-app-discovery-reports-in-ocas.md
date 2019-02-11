@@ -3,7 +3,7 @@ title: Criar relatórios de descoberta de aplicativo usando o Office 365 Cloud A
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Crie relatórios com o Office 365 App segurança na nuvem que permitem que você entenda como pessoas da sua organização estiver usando o Office 365 e outros aplicativos.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014863"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603712"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Criar relatórios de descoberta de aplicativo usando o Office 365 Cloud App Security
 
@@ -44,28 +44,17 @@ Para criar um relatório de descoberta de aplicativo, você deve identificar a f
   
 1. Colete [logs de tráfego da web e fontes de dados para segurança de aplicativo de nuvem do Office 365](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
-    
-3. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
-    
-4. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.
-    
-5. Escolha **descobrir** \> **Criar novo relatório**.
-    
-    ![No portal do Office 365 CAS, escolha Discover](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. Vá para o portal de segurança de aplicativo de nuvem ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e entrar. 
+       
+3. Escolha **descobrir** \> **Criar novo relatório**. <br>![No portal do Office 365 CAS, escolha Discover](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. Especifique um nome e uma descrição para o seu relatório e, em seguida, selecione a fonte de dados de logs de tráfego da web na lista **fonte de dados** . 
-    
-    ![O CAS O365, escolha descobrir \> criar novo relatório](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. Especifique um nome e uma descrição para o seu relatório e, em seguida, selecione a fonte de dados de logs de tráfego da web na lista **fonte de dados** . <br>![O CAS O365, escolha descobrir \> criar novo relatório](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>Se uma fonte de dados que você deseja usar não estiver listada, você poderá solicitar a ser adicionado. Selecione **outra** **fonte**de dados e, em seguida, digite o nome da fonte de dados que você está tentando carregar. Vamos examinar o log e permitem que você saiba se podemos adicionar suporte para a fonte de dados que geraram a ele. 
   
-    > [!NOTE]
-    > Se uma fonte de dados que você deseja usar não estiver listada, você poderá solicitar a ser adicionado. Selecione **outra** **fonte**de dados e, em seguida, digite o nome da fonte de dados que você está tentando carregar. Vamos examinar o log e permitem que você saiba se podemos adicionar suporte para a fonte de dados que geraram a ele. 
-  
-7. Navegue até o local dos arquivos de log que você coletou e selecione os arquivos. Os arquivos de log devem ter sido gerados por fonte de dados que você escolheu para o relatório.
+5. Navegue até o local dos arquivos de log que você coletou e selecione os arquivos. Os arquivos de log devem ter sido gerados por fonte de dados que você escolheu para o relatório.
     
-8. Clique em **criar** para iniciar o processo de criação do relatório. 
+6. Clique em **criar** para iniciar o processo de criação do relatório. 
     
-9. Para ver o status do relatório, clique em **Gerenciar relatórios de instantâneo**. Quando um relatório estiver pronto, você verá a opção **Exibir relatório** . 
+7. Para ver o status do relatório, clique em **Gerenciar relatórios de instantâneo**. Quando um relatório estiver pronto, você verá a opção **Exibir relatório** . 
     
 ## <a name="next-steps"></a>Próximas etapas
 

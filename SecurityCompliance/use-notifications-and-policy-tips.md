@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está funcionando com o conteúdo que está em conflito com uma política de DLP. Você pode usar as dicas de política e notificações por email para aumentar a conscientização e ajudar a instruir as pessoas sobre diretivas da sua organização. Você também pode conceder precisam de pessoas a opção de substituir a política, para que eles não estiver bloqueados caso possuam uma empresa válida ou se a diretiva está detectando um falso positivo. '
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769910"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25803992"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e Mostrar dicas de política para políticas de DLP
 
@@ -49,7 +49,7 @@ No Office 365 Security &amp; Centro de conformidade, quando você cria uma polí
 
 Quando você cria uma política de DLP, dicas de política e notificações por email são parte da seção **notificações de usuário** . 
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entrar no Office 365 usando sua conta do trabalho ou da escola. Agora você está de segurança do Office 365 &amp; Centro de conformidade.
     
@@ -90,7 +90,7 @@ Para cada regra de uma política de DLP, você pode:
 - Personalize o texto que está incluído na notificação usando HTML ou tokens. Consulte a seção a seguir para obter mais informações.
     
 > [!NOTE]
->  Notificações de email podem ser enviadas a destinatários individuais apenas como — não grupos ou listas de distribuição. > Apenas conteúdo novo irá disparar uma notificação de e-mail. Edição de conteúdo existente irá disparar dicas de política, mas não uma notificação de e-mail. 
+>  Notificações de email podem ser enviadas a destinatários individuais apenas como — não grupos ou listas de distribuição. gt _ apenas conteúdo novo irá disparar uma notificação de e-mail. Edição de conteúdo existente irá disparar dicas de política, mas não uma notificação de e-mail. 
   
 ![Opções de notificação de email](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Notificações têm uma linha de assunto que começa com a ação tomada, como "
 ![Mensagem de notificação](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 Por padrão, as notificações exibem um texto semelhante ao seguinte para um item em um site. O texto de notificação é configurado separadamente para cada regra, para que o texto exibido seja diferente dependendo da regra que for correspondida.
-  
-| |
+
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a notificação de padrão para o SharePoint ou OneDrive para documentos comerciais diz que isso …**|**Em seguida, a notificação padrão para mensagens do Outlook diz que isso …**|
 |:-----|:-----|:-----|
 |Envia uma notificação, mas não permite a substituição  <br/> |Este item está em conflito com uma política de sua organização.  <br/> |Suas conflitos de mensagem de email com uma diretiva em sua organização.  <br/> |
@@ -114,8 +113,7 @@ Por padrão, as notificações exibem um texto semelhante ao seguinte para um it
 Você pode criar uma notificação de e-mail personalizado em vez de enviar a notificação de e-mail padrão para seus usuários finais ou administradores. Notificação por e-mail personalizado ofereça suporte a HTML e tem um limite de 5.000 caracteres. Você pode usar o HTML para incluir imagens, formatação e outros branding na notificação.
   
 Você também pode usar os símbolos a seguir para ajudar a personalizar a notificação por e-mail. Esses tokens são variáveis que são substituídas por uma informação específica na notificação é enviada.
-  
-| |
+
 |**Token**|**Descrição**|
 |:-----|:-----|
 |% % AppliedActions % %  <br/> |As ações aplicadas ao conteúdo.  <br/> |
@@ -177,8 +175,7 @@ As políticas de DLP são sincronizadas para sites e o conteúdo é avaliado em 
 ### <a name="default-text-for-policy-tips-on-sites"></a>Texto padrão para dicas de política em sites
 
 Por padrão, as dicas de política exibem um texto semelhante ao seguinte para um item em um site. O texto de notificação é configurado separadamente para cada regra, para que o texto exibido seja diferente dependendo da regra que for correspondida.
-  
-| |
+
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a dica de política padrão diz isso...**|
 |:-----|:-----|
 |Envia uma notificação, mas não permite a substituição  <br/> |Este item está em conflito com uma política de sua organização.  <br/> |
@@ -294,6 +291,6 @@ Você pode personalizar o texto de dicas de política separadamente da notifica�
     
 - [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
     
-- [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
+- [O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Análise de dados em um conjunto de trabalho no eDiscovery avançado (Preview)
+title: Analisar dados em um conjunto de trabalho no eDiscovery avançado (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607309"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695137"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Análise de dados em um conjunto de trabalho no eDiscovery avançado (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analisar dados em um conjunto de trabalho no eDiscovery avançado (Preview)
 
 Quando o número de documentos coletados for muito grande, pode ser muito difícil revisar todas elas. EDiscovery avançado (Preview) fornece várias ferramentas para analisar os documentos para reduzir o volume de documentos seja revisada sem que ocorra perda em informações e para ajudá-lo a organizar os documentos de maneira coerente. Para saber mais sobre esses recursos, consulte:
 

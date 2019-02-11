@@ -1,5 +1,5 @@
 ---
-title: Gerenciar comunicações
+title: Gerenciar notificações de espera
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607405"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706042"
 ---
-# <a name="manage-communications"></a>Gerenciar comunicações
+# <a name="manage-hold-notifications"></a>Gerenciar notificações de espera
 
 Depois que você inicia seu departamento jurídico mantenha o fluxo de trabalho de notificação, você pode aproveitar o eDiscovery avançado (Preview) para acompanhar o status de suas comunicações. Guia comunicações apresenta todas as notificações de espera dentro de seu caso de eDiscovery avançado (Preview). Aqui, você pode ver detalhes, como o número dos responsáveis que tiverem sido atribuídos ou tiver confirmado o aviso.
 
@@ -71,6 +71,8 @@ Quando você atualiza o conteúdo ou as configurações do aviso de emissão, ve
 
 ## <a name="related-information"></a>Informações relacionadas 
 
-    - [Criar uma notificação de retenção Legal] (~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [Confirmar uma notificação de retenção Legal] (~/acknowledge-hold-notification.md)
-    - [Adicionando responsáveis a um caso]
+- [Criar um aviso de isenção legal](create-hold-notification.md)
+    
+- [Confirmar uma notificação de isenção](acknowledge-hold-notification.md)
+    
+- [Adicionar responsáveis a um caso](add-custodians-to-case.md)

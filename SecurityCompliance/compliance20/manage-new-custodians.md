@@ -1,5 +1,5 @@
 ---
-title: Gerenciando responsáveis em um caso de eDiscovery avançado (Preview)
+title: Gerenciar responsáveis em um caso de eDiscovery avançado (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607375"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706092"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciando responsáveis em um caso de eDiscovery avançado (Preview)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciar responsáveis em um caso de eDiscovery avançado (Preview)
 
 Na guia responsáveis contém uma lista classificada de todos os responsáveis no caso. Depois de adicionar responsáveis a um caso, detalhes sobre cada responsável automaticamente serão coletadas do Azure Active Directory.
 
@@ -70,7 +70,7 @@ Para atualizar dos responsáveis e as fontes de dados selecionado:
   
 4. Atualize seleções para locais do Exchange e OneDrive clicando em **fontes de dados de escolha**.
   
-5. Adicionar ou remover o Exchange, SharePoint ou equipes caixas de correio mapeado o usuário clicando para **Selecionar as fontes de dados adicionais**. Para obter mais informações sobre como mapear dados fontes para dos responsáveis, consulte [Adicionar responsáveis a um eDiscovery avançado (Preview) caso](add-custodians-to-case.md).
+5. Adicionar ou remover o Exchange, SharePoint ou equipes caixas de correio mapeado o usuário clicando para **Selecionar as fontes de dados adicionais**. Para obter mais informações sobre como mapear dados fontes para dos responsáveis, consulte [Add responsáveis a um caso](add-custodians-to-case.md).
   
 6. Para atualizar o status de retenção dos responsáveis, clique em **retenções locais custódia**e habilitar ou desabilitar a isenção para os responsáveis.
 
@@ -95,7 +95,7 @@ Para disparar um processo de indexação novamente para endereço parcialmente i
 
 5. O status para o processo de indexação novamente também podem ser rastreado na guia **Jobs** .
 
-Para obter mais informações sobre os itens indexados parcialmente indexação novamente e remediando, consulte [Corrigindo erros no eDiscovery avançado (Preview) de processamento](processing-data-for-case.md).
+Para obter mais informações sobre os itens indexados parcialmente indexação novamente e remediando, consulte a [corrigir erros de processamento](processing-data-for-case.md).
 
 ## <a name="releasing-a-custodian-from-a-case"></a>Liberação de um funcionário encarregado de um caso
 
@@ -118,6 +118,5 @@ Para liberar um funcionário encarregado:
 
 ## <a name="related-information"></a>Informações relacionadas
 
- - Atributos de usuário no Active Directory 
  - [Correção de erro durante o processamento de dados](error-remediation.md) 
- - [Trabalhando com a comunicação](managing-custodian-communications.md)
+- [Trabalhar com a comunicação](managing-custodian-communications.md)

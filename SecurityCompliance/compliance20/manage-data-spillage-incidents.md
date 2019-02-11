@@ -1,5 +1,5 @@
 ---
-title: Gerenciando um incidente de algum derramamento de dados no Microsoft 365
+title: Gerenciar um incidente de algum derramamento de dados no Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve como usar a nova ferramenta investigações (Preview) de dados no Centro de conformidade do & de segurança do Office 365 para gerenciar um incidente de algum derramamento de dados.
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636606"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706172"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Gerenciando um incidente de algum derramamento de dados no Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de algum derramamento de dados no Microsoft 365 
 
 Algum derramamento de dados é quando um documento confidencial é liberado para um ambiente de não confiável. Quando um incidente de algum derramamento de dados é detectado, é importante avaliar rapidamente o tamanho e os locais do algum derramamento, examine as atividades do usuário ao redor dele e limpar permanentemente os dados derramados do sistema.
 
@@ -130,7 +130,7 @@ Observe que se a recuperação de item único está habilitada para caixas de co
 
 ### <a name="deleting-site-items"></a>Excluindo itens do site
 
-Para excluir permanentemente um documento de um site do SharePoint ou OneDrive para negócios conta, você precisa excluí-lo e, em seguida, você precisará excluir do site e, em seguida, excluído da Lixeira do conjunto de sites. Para obter instruções, consulte [excluindo documentos no SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Para excluir permanentemente um documento de um site do SharePoint ou OneDrive para negócios conta, você precisa excluí-lo e, em seguida, você precisará excluir do site e, em seguida, excluído da Lixeira do conjunto de sites. Para obter instruções, consulte [Excluir documentos no SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
 Como alternativa, você pode excluir um conjunto de sites inteiro que talvez continha derramada de dados. Para obter instruções, consulte [Excluir um conjunto de sites](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
@@ -141,6 +141,7 @@ Após a exclusão de documentos em locais de conteúdo de origem (caixas de corr
 Para excluir uma investigação:
 
 1. Na guia **configurações** , clique em **informações de investigação**.
+
 2. Clique em **Excluir caso**. 
 
 Se você não precisa excluir a investigação ou se você deseja salvar a informação que você coletou durante a investigação, você pode clicar em **Fechar o caso**. Posteriormente, você pode reabrir investigações fechadas.

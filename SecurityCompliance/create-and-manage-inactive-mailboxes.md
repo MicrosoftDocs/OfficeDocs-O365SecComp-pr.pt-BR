@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Você pode criar uma caixa de correio inativa no Office 365 aplicando uma espera ou a política de retenção do Office 365 à caixa de correio e, em seguida, excluindo a conta de usuário correspondente do Office 365. Itens em uma caixa de correio inativa são retidos para a duração da política de retenção ou retenção que foi aplicada a ele antes que ela foi feita inativa. Para excluir permanentemente uma caixa de correio inativa, basta remova a política de retenção ou retenção.
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523829"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740833"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Criar e gerenciar caixas de correio inativas no Office 365
 
@@ -122,8 +122,6 @@ Depois que uma caixa de correio é feita inativa, você pode alterar a duração
 ## <a name="recover-an-inactive-mailbox"></a>Recuperar uma caixa de correio inativa
 
 Se um antigo funcionário retornará à sua organização, ou se um novo funcionário é contratado para assumir as responsabilidades de trabalho do funcionário departed, você pode recuperar o conteúdo da caixa de correio inativa. Ao recuperar uma caixa de correio inativa, a caixa de correio é convertida em uma nova caixa de correio, o conteúdo e estrutura de pastas da caixa de correio inativa são mantidos e a caixa de correio está vinculada a uma nova conta de usuário. Depois que ele seja recuperado, a caixa de correio inativa não existe mais. Para procedimentos passo a passo e obter mais informações sobre acontece quando você recuperar uma caixa de correio inativa, consulte [recuperar uma caixa de correio inativa no Office 365](recover-an-inactive-mailbox.md).
-  
-[Gerenciando caixas de correio inativas](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Restaurar o conteúdo de uma caixa de correio inativa em outra caixa de correio
 

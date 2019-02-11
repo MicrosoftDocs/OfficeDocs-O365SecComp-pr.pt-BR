@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614445"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696328"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -88,9 +88,7 @@ Para cada domínio para o qual você deseja adicionar uma assinatura de DKIM no 
 Use o seguinte formato para os registros CNAME.
 
 > [!IMPORTANT]
-> Se você for um de nossos clientes GCC alta, calculamos _domainGuid_ diferentemente! Em vez de procurando o registro MX para sua _initialDomain_ calcular _domainGuid_, em vez disso calculamos-lo diretamente do domínio personalizado. Por exemplo, se o seu domínio personalizado for "contoso.com" sua domainGuid torna-se "contoso-com", qualquer períodos são substituídos por um traço.
-
-Portanto, independentemente de qual registro MX seus pontos initialDomain, sempre use o método acima para calcular o domainGuid usar em seus registros CNAME.
+> Se você for um de nossos clientes GCC alta, calculamos _domainGuid_ diferentemente! Em vez de procurando o registro MX para sua _initialDomain_ calcular _domainGuid_, em vez disso calculamos-lo diretamente do domínio personalizado. Por exemplo, se o seu domínio personalizado for "contoso.com" sua domainGuid torna-se "contoso-com", qualquer períodos são substituídos por um traço. Portanto, independentemente de qual registro MX seus pontos initialDomain, sempre use o método acima para calcular o domainGuid usar em seus registros CNAME.
 
   
 ```

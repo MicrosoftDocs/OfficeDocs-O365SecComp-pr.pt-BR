@@ -3,7 +3,7 @@ title: Pesquisa de conteúdo no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usar a pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para procurar conteúdo em caixas de correio, sites do SharePoint Online, contas de OneDrive, Teams da Microsoft, os grupos de Office 365 e Skype para conversas de negócios. Você pode usar as consultas de pesquisa de palavra-chave e critérios de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. Pesquisa de conteúdo também é uma ferramenta eficaz para procurar conteúdo que pode estar relacionado a uma solicitação de entidade de dados GDPR.
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782078"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686112"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
@@ -43,7 +43,7 @@ Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um 
 
 Para ter acesso à página **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar os resultados da pesquisa, um administrador, responsável pela conformidade ou gerente de descoberta eletrônica deve ser membro do grupo de função do Gerenciador de descoberta eletrônica na segurança &amp; Centro de conformidade. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](assign-ediscovery-permissions.md).
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre usando seu endereço de email do Office 365 e a senha. 
     
@@ -74,6 +74,8 @@ Para ter acesso à página **pesquisa de conteúdo** para executar pesquisas e v
     Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavra-chave** e o tipo de uma palavra-chave em cada linha. Se você fizer isso, as palavras-chave em cada linha são conectadas por um operador lógico ( **c:s**) que é semelhante em funcionalidade ao operador **OR** na consulta de pesquisa que é criado. 
     
     Por que usar a lista de palavra-chave? Você pode obter estatísticas que mostram quantos itens correspondem a cada palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais palavras-chave é mais (e menos) eficientes. Você também pode usar uma frase de palavra-chave (entre parênteses) em uma linha. Para obter mais informações sobre estatísticas da pesquisa, consulte [Exibir as estatísticas de palavra-chave para resultados de pesquisa de conteúdo](view-keyword-statistics-for-content-search.md).
+
+    [!NOTE] Para ajudar a reduzir problemas causados por palavra-chave grandes listas, agora você está limitado a um máximo de 20 linhas na lista de palavra-chave.
     
 - **Condições** - você pode adicionar condições para limitar a pesquisa e retornar um conjunto mais refinado de resultados de pesquisa. Cada condição adiciona uma cláusula a consulta de pesquisa que é criado e executados quando você iniciar a pesquisa. Uma condição logicamente é conectada a consulta de palavra-chave (especificada na caixa de palavra-chave) por um operador lógico ( **c:c**) que é semelhante em funcionalidade ao operador **e** . Isso significa que os itens têm que satisfazer a consulta de palavra-chave e uma ou mais condições a serem incluídos nos resultados. Isso é como ajudam a condições para restringir os resultados. Para obter uma lista e descrição das condições que podem ser usados em uma consulta de pesquisa, consulte a seção "Critérios de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
     
@@ -268,7 +270,7 @@ Mantenha as seguintes coisas em mente ao pesquisar por conteúdo em Microsoft Te
 - Como alternativa, conversas que fazem parte da lista de bate-papo no Microsoft Teams são armazenadas na caixa de correio Exchange Online dos usuários que participam do bate-papo. E os arquivos que um usuário compartilha em conversas de bate-papo são armazenados em OneDrive para a conta comercial do usuário que compartilha o arquivo. Portanto, você precisará adicionar caixas de correio de usuário individual e OneDrive para contas de negócios, como locais de conteúdo para pesquisar conversas e arquivos na lista de bate-papo.
     
     > [!NOTE]
-    > Os usuários participem de conversas que fazem parte da lista de bate-papo no Microsoft Teams devem ter uma caixa de correio (baseado em nuvem) Exchange Online na ordem a procura de conversas de bate-papo. Isso acontece porque conversas que fazem parte da lista de Chat são armazenadas nas caixas de correio baseadas em nuvem dos participantes bate-papo. Se um participante de bate-papo não tiver uma caixa de correio do Exchange Online, você não conseguirá conversas de bate-papo de pesquisa. Por exemplo, em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local poderá participar de conversas que fazem parte da lista de bate-papo no Microsoft Teams. No entanto nesse caso, o conteúdo desses conversa não pesquisáveis porque os usuários não têm caixas de correio baseadas em nuvem. 
+    > Em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local podem participar de conversas que fazem parte da lista de bate-papo no Microsoft Teams. Nesse caso, o conteúdo dessas conversas também é pesquisável porque ele é salvo para uma área de armazenamento na nuvem (chamada de uma *caixa de correio baseada em nuvem para usuários locais*) para usuários que possuem uma caixa de correio local. Para obter mais informações, consulte [pesquisando caixas de correio baseadas em nuvem para usuários no Office 365 local](search-cloud-based-mailboxes-for-on-premises-users.md).
   
 - Cada canal Microsoft Team ou equipe contém um Wiki para colaboração e anotações. O conteúdo Wiki automaticamente é salvo em um arquivo com um formato. mht. Este arquivo é armazenado na biblioteca de documentos de equipes Wiki dados no site do SharePoint da equipe. Você pode usar a ferramenta de pesquisa de conteúdo para pesquisar o Wiki, especificando o site do SharePoint da equipe como o local do conteúdo a ser pesquisado. 
     

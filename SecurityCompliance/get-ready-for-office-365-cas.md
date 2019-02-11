@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Começar a usar a segurança de aplicativo de nuvem do Office 365
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229983"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603692"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Introdução ao Office 365 Cloud App Security
   
@@ -41,17 +41,15 @@ Em ordem para segurança de aplicativo do Office 365 nuvem trabalhem correto, os
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Etapa 3: Ir para o portal de segurança de aplicativo de nuvem do Office 365
 
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+Você pode obter o portal de segurança de aplicativo de nuvem do Office 365 indo para [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e entrando. 
+
+Você também pode chegar lá da segurança do Office 365 &amp; Centro de conformidade. Aqui está uma boa maneira de fazê-la:
+
+1. Vá para [https://protection.office.com](https://protection.office.com) e sign in (isso leva você para a segurança &amp; Centro de conformidade.)
     
 2. Vá para **alertas** \> **avançadas de gerenciar alertas**.
     
-3. Escolha **vá para segurança de aplicativo de nuvem do Office 365** para ir para o portal de segurança de aplicativo de nuvem do Office 365. 
-    
-    ![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, a primeira página que você vê é a página de políticas, que é semelhante à seguinte imagem:
-    
-    ![Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, você iniciar com a página de políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. Escolha **vá para segurança de aplicativo de nuvem do Office 365** para ir para o portal de segurança de aplicativo de nuvem do Office 365.<br> ![Escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, a primeira página que você vê é a página de políticas, que é semelhante à seguinte imagem:<br>![Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, você iniciar com a página de políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>Etapa 4: Definir políticas e configurar alertas &amp; ações
 
@@ -85,7 +83,7 @@ Para preencher relatórios com as informações que necessárias, carregar seus 
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>Etapa 6: Gerenciar aplicativos que sua organização estiver usando o Access Office 365
 
-Como um administrador global ou administrador de segurança, você pode gerenciar aplicativos, como aplicativos personalizados ou aplicativos de terceiros, que pessoas da sua organização estão usando em seus dispositivos com o Office 365. Por exemplo, suponha que alguém tenha baixado um aplicativo personalizado que queiram usar com o Office 365. Você pode analisar os aplicativos pessoas estão usando, proibir aplicativos não confiáveis ou marcar aplicativos como aprovados para fins de acompanhamento. [Gerenciar permissões de aplicativo usando a segurança de aplicativo de nuvem do Office 365](manage-app-permissions-in-ocas.md).
+Como um administrador global ou administrador de segurança, você pode gerenciar aplicativos, como aplicativos personalizados ou aplicativos de terceiros, que pessoas da sua organização estão usando em seus dispositivos com o Office 365. Por exemplo, suponha que alguém tenha baixado um aplicativo personalizado que queiram usar com o Office 365. Você pode analisar os aplicativos pessoas estão usando, proibir aplicativos não confiáveis ou marcar aplicativos como aprovados para fins de acompanhamento. [Aplicativos de gerenciar OAuth usando a segurança de aplicativo de nuvem do Office 365](manage-app-permissions-in-ocas.md).
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>Etapa 7: Use seu servidor SIEM com segurança de aplicativo de nuvem do Office 365
 

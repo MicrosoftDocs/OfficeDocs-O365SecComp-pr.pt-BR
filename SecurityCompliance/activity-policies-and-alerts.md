@@ -3,7 +3,7 @@ title: Políticas de atividades e alertas no Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Defina políticas de atividade com segurança de aplicativo do Office 365 nuvem para configurar alertas para disparar quando atividades específicas acontecem ou acontecer muito frequentemente. Configurando políticas para acionar os alertas, você pode ser notificado sobre e monitora atividades específicas.
-ms.openlocfilehash: 6f5039d09dea98de970ab4bd28e95a6cfad73db4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015003"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29604088"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Políticas de atividades e alertas no Office 365 Cloud App Security
 
@@ -47,42 +47,25 @@ Verifique se:
     
 ## <a name="create-a-new-activity-policy"></a>Criar uma nova política de atividade
 
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta do trabalho ou da escola. 
-    
-2. Na segurança &amp; Centro de conformidade, escolha **alertas** \> **avançadas de gerenciar alertas**.
-    
-3. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.
-    
-    Isso leva você para a página de diretivas de segurança de aplicativo de nuvem do Office 365.
-    
-    ![Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, você iniciar com a página de políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. Como administrador global ou administrador de segurança, vá para o portal de segurança de aplicativo de nuvem ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e entrar. <br>Isso leva você para a página de diretivas de segurança de aplicativo de nuvem do Office 365.<br>![Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, você iniciar com a página de políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-4. Clique em **Criar política**e selecione **a política de atividade**.
-    
-    ![Quando você cria uma política no O365 CAS, você pode escolher entre as políticas de atividade e detecção de anomalias.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Clique em **Criar política**e selecione **a política de atividade**.<br>![Quando você cria uma política no O365 CAS, você pode escolher entre as políticas de atividade e detecção de anomalias.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-5. Na página **criar a política de atividade** , especifique o **nome da diretiva** e a **Descrição**. Para basear sua política em um modelo padrão, escolha uma opção na lista **modelo de política** ou criar sua própria política sem usar um modelo. 
-    
-    ![Você pode criar políticas de atividade com segurança de aplicativo de nuvem do Office 365.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Na página **criar a política de atividade** , especifique o **nome da diretiva** e a **Descrição**. Para basear sua política em um modelo padrão, escolha uma opção na lista **modelo de política** ou criar sua própria política sem usar um modelo.<br>![Você pode criar políticas de atividade com segurança de aplicativo de nuvem do Office 365.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-6. Escolha a **gravidade da política** (baixa, média ou alta) que mede como sérios é a você se essa diretiva dispara um alerta. Isso ajudará você filtrar alertas quando você estiver revisá-las mais tarde. 
+4. Escolha a **gravidade da política** (baixa, média ou alta) que mede como sérios é a você se essa diretiva dispara um alerta. Isso ajudará você filtrar alertas quando você estiver revisá-las mais tarde. 
     
-7. Escolha uma **categoria** para esta diretiva. Isso ajudará você filtrar e classificar alertas que tiverem sido disparadas, ou quando você estiver revisá-las para fazer alterações de diretivas de grupo. 
+5. Escolha uma **categoria** para esta diretiva. Isso ajudará você filtrar e classificar alertas que tiverem sido disparadas, ou quando você estiver revisá-las para fazer alterações de diretivas de grupo. 
     
-8. Escolha **os filtros de atividade** para configurar outras ações ou métricas que acionarão um alerta com base nesta diretiva. 
+6. Escolha **os filtros de atividade** para configurar outras ações ou métricas que acionarão um alerta com base nesta diretiva. 
     
-9. Em **atividade correspondem a parâmetros**, especifique se uma violação de política será acionada quando os filtros corresponde a uma única atividade, ou se um número especificado de atividades repetidas for necessária antes do alerta dispara.
+7. Em **atividade correspondem a parâmetros**, especifique se uma violação de política será acionada quando os filtros corresponde a uma única atividade, ou se um número especificado de atividades repetidas for necessária antes do alerta dispara.<br>Se você selecionar **repetida atividade**, especifique o número de atividades, o intervalo de tempo, e se uma violação contará para um usuário em um aplicativo específico ou para o mesmo usuário com qualquer aplicativo.
     
-    Se você selecionar **repetida atividade**, especifique o número de atividades, o intervalo de tempo, e se uma violação contará para um usuário em um aplicativo específico ou para o mesmo usuário com qualquer aplicativo.
-    
-10. Opcionalmente, você pode selecionar **criar alerta** para criar alertas adicionais para receber notificações dessa diretiva (via email, mensagem de texto ou ambos). 
-    
-    > [!IMPORTANT]
-    > Certifique-se de que o seu provedor de email não bloqueie emails enviados a partir de no-reply@cloudappsecurity.com. 
+8. Opcionalmente, você pode selecionar **criar alerta** para criar alertas adicionais para receber notificações dessa diretiva (via email, mensagem de texto ou ambos).<br>**Certificar-se de que o seu provedor de email não bloqueie emails enviados a partir `no-reply@cloudappsecurity.com` **. 
   
-11. Escolha as **ações** que devem ser tomadas quando um alerta é acionado para suspender o usuário ou exigem que o usuário entrar novamente para aplicativos do Office 365. 
+9. Escolha as **ações** que devem ser tomadas quando um alerta é acionado para suspender o usuário ou exigem que o usuário entrar novamente para aplicativos do Office 365. 
     
-12. Escolha **criar** para concluir a criação de sua política. 
+10. Escolha **criar** para concluir a criação de sua política. 
     
 ## <a name="next-steps"></a>Próximas etapas
 
