@@ -3,7 +3,7 @@ title: Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagem no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696265"
+ms.locfileid: "29890032"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -48,7 +48,7 @@ Você pode usar os novos recursos para o OME sob as seguintes condições:
 
 Para usar os novos recursos OME, você precisa de um dos seguintes planos:
   
-- O Office 365 Message Encryption é oferecido como parte do Office 365 E3 e E5, Microsoft E3 e E5, A1 do Office 365, A3 e A5 e Office 365 G3 e G5. Os clientes não precisam licenças adicionais para receber os novos recursos de proteção possibilitados pela proteção de informações do Windows Azure. 
+- O Office 365 Message Encryption é oferecido como parte do Office 365 Enterprise E3 e E5, Microsoft Enterprise E3 e E5, Microsoft 365 Business, Office 365 A1, A3 e A5 e Office 365 governamental G3 e G5. Os clientes não precisam licenças adicionais para receber os novos recursos de proteção possibilitados pela proteção de informações do Windows Azure. 
     
 - Você também pode adicionar Azure informações proteção plano 1 para os seguintes planos receber os novos recursos do Office 365 Message Encryption: Exchange Online plano 1, Exchange Online plano 2, F1 do Office 365, Essentials do Office 365 Business, Business Premium do Office 365, ou O Office 365 Enterprise E1.
     
