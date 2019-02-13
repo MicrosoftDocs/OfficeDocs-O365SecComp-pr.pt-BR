@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Exibir detalhes técnicos sobre criptografia no Office 365.
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326932"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966185"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Detalhes de referências técnicas sobre a criptografia no Office 365
 
@@ -89,6 +89,9 @@ Iniciando 1 de dezembro de 2014, Office 365 começou desabilitando o suporte par
 <a name="TLSCipherSuites"> </a>
 
 Um conjunto de codificações é uma coleção de algoritmos de criptografia que o TLS usa para estabelecer conexões seguras. Os conjuntos de codificações com suporte no Office 365 são apresentados na tabela a seguir em ordem de eficácia, com o conjunto de criptografia mais eficaz listado primeiro. Quando o Office 365 recebe uma solicitação de conexão, primeiro ele tenta se conectar usando o conjunto de codificações de nível superior e, caso não consiga, tenta o segundo conjunto da lista e assim por diante até o final da lista. Quando o Office 365 envia uma solicitação de conexão para outro servidor, ou para um cliente, o servidor ou o cliente deve escolher o conjunto de codificações ou se o TLS será usado.
+
+> [!IMPORTANT]
+> Lembre-se que as versões TLS preterir e que preterido versões *não deve ser usado* em que as versões mais recentes estiverem disponíveis. Em outras palavras, em qualquer lugar onde listou que TLS 1.0, 1.1 e 1.2 são suportados, escolha a versão *mais recente* (TLS 1.2).
   
 |**Protocolos**|**Nome do conjunto de codificações**|**Algoritmo de troca de chave/Eficácia**|**Suporte ao protocolo PFS**|**Algoritmo de autenticação/Eficácia**|**Codificação/Eficácia**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
