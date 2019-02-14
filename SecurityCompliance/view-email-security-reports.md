@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: Saiba como encontrar e usar os relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014983"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995292"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email na segurança &amp; Centro de conformidade
 
@@ -176,14 +177,14 @@ Para exibir este relatório, no [segurança &amp; Centro de conformidade](https:
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quais permissões são necessárias para exibir esses relatórios?
 
-Para exibir e usar os relatórios descritos neste artigo, **você deve ter uma função apropriada atribuída em ambos os a segurança &amp; Centro de conformidade e Exchange Admin Center**.
+Para exibir e usar os relatórios descritos neste artigo, **você deve ter uma função apropriada atribuída para ambos os a segurança &amp; Centro de conformidade e Exchange Admin Center**.
 
 - Para obter a segurança &amp; Centro de conformidade, você deve ter uma das seguintes funções atribuídas:
     - Gerenciamento de Organização
-    - Administrador de segurança
+    - Administrador de segurança (Isso pode ser atribuído no Centro de administração do Windows Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Leitor de segurança
 
-- Para o Exchange Online, você deve ter uma das seguintes funções atribuídas:
+- Para o Exchange Online, você deve ter uma das seguintes funções atribuídas em um centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) ou com os cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Gerenciamento de Organização
     - Gerenciamento de Organização Somente para Exibição
     - Função de Destinatários Somente para Exibição

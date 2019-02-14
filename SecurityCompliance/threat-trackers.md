@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: Saiba mais sobre rastreadores de ameaça, incluindo novos rastreadores notável, para ajudar sua organização mantenha-se na parte superior de preocupações de segurança.
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014993"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995302"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de ameaças – novos e notáveis
 
 [Office 365 Threat Intelligence](office-365-ti.md) permite que a equipe de segurança da sua organização descobrir e executar uma ação contra ameaças cybersecurity. Começando no tardia de 2018 de março e sobre próximas semanas, inteligência de dados do Office 365 ameaça incluirá novos recursos de ameaça Tracker, incluindo rastreadores notável. Leia este artigo para obter uma visão geral dos novos recursos e próximas etapas. 
+
+> [!IMPORTANT]
+> Iniciando no fevereiro de 2019 e aplicação nos próximos meses várias, inteligência de dados do Office 365 ameaça está se tornando Office 365 avançadas ameaça proteção plano 2, com os recursos de proteção de ameaça adicional. Para saber mais, consulte [preços e planos de proteção de ameaça avançadas do Office 365](https://products.office.com/exchange/advance-threat-protection) e o [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Cite rastreadores de ameaça.
 

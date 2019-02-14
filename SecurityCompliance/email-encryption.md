@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Comparar as opções de criptografia no Office 365, incluindo Office Message Encryption (OME), S/MIME, gerenciamento de direitos de informação (IRM) e saiba mais sobre a segurança de camada de transporte (TLS).
-ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: a6db6c9cf6af180fe84e955613fb6b1175ee0747
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853076"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995352"
 ---
 # <a name="email-encryption-in-office-365"></a>Criptografia de email no Office 365
 

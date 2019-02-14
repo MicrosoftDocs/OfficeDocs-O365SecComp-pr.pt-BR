@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o Centro de conformidade do & de segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade de administrador e usuário em sua organização do Office 365. '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890052"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995402"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>O log de auditoria de pesquisa do Centro de conformidade do & de segurança do Office 365
 
@@ -53,6 +53,8 @@ Precisa encontrar se um usuário exibido um documento específico ou removidos d
 - Atividade do administrador e usuário no Microsoft Flow
     
 - Atividade do administrador e usuário em Stream da Microsoft
+
+- Atividade do administrador e analista na análise de local de trabalho do Microsoft
     
    
 ## <a name="before-you-begin"></a>Antes de começar
@@ -562,7 +564,7 @@ A seguinte tabela lista Azure AD diretório e domínio relacionados atividades q
    
 ### <a name="ediscovery-activities"></a>atividades de descoberta eletrônica
   
-Pesquisa e atividades relacionadas a descoberta eletrônica que são executadas na segurança do Office 365 conteúdo &amp; Centro de conformidade ou executando o Windows PowerShell correspondente cmdlets são registrados no log de auditoria do Office 365. Isso inclui as seguintes atividades:
+Pesquisa de conteúdo e atividades relacionadas a descoberta eletrônica que são executadas no Centro de conformidade de & de segurança do Office 365 ou executando os cmdlets do Windows PowerShell correspondentes são registradas no log de auditoria do Office 365. Isso inclui as seguintes atividades:
   
 - Criando e gerenciando casos de eDiscovery
     
@@ -587,7 +589,7 @@ Observe que o log de auditoria para Power BI não está habilitado por padrão. 
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Atividades de análise de local de trabalho do Microsoft
 
-A tabela a seguir lista o administrador e log de auditoria de atividades de analista na análise de local de trabalho do Microsoft que são registrados no Office 365. Local de trabalho análise fornece percepção como grupos colaboram em toda a organização do Office 365. Para obter mais informações, consulte [Análise do local de trabalho](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Local de trabalho análise fornece percepção como grupos colaboram em toda a organização do Office 365. A tabela a seguir lista as atividades realizadas pelos usuários que recebem a função de administrador ou as funções de analista na análise de local de trabalho. Os usuários atribuídos à função de analista têm acesso total a todos os recursos de serviço e usam o produto fazer análise. Os usuários atribuídos à função de administrador podem definir configurações de privacidade e padrões do sistema e pode preparar, carregar e verificar dados organizacionais na análise de local de trabalho. Para obter mais informações, consulte [Análise do local de trabalho](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|

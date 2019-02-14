@@ -3,7 +3,7 @@ title: Use o Explorer na segurança &amp; Centro de conformidade
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: Saiba mais sobre Explorer (também chamado de ameaça Explorer) na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699924"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995112"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Use o Explorer na segurança &amp; Centro de conformidade
 
@@ -27,6 +28,9 @@ Se sua organização tem [Inteligência de ameaça do Office 365](office-365-ti.
 ![Vá para gerenciamento de ameaça \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Para usar o Explorer, na segurança &amp; Centro de conformidade, vá para **gerenciamento de ameaça** \> **Explorer**.
+
+> [!IMPORTANT]
+> Iniciando no fevereiro de 2019 e aplicação nos próximos meses várias, inteligência de dados do Office 365 ameaça está se tornando Office 365 avançadas ameaça proteção plano 2, com os recursos de proteção de ameaça adicional. Para saber mais, consulte [preços e planos de proteção de ameaça avançadas do Office 365](https://products.office.com/exchange/advance-threat-protection) e o [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Visão geral do Explorer
 

@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
+- M365-security-compliance
 description: 'Resumo: Leia este artigo para obter uma visão geral da integração do servidor SIEM com Microsoft 365.'
-ms.openlocfilehash: bd512ca6d75928712e3444581a78610a0869123d
-ms.sourcegitcommit: 63ed467fc3e1ab1ab9ee122df97c64737169834e
+ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25842673"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995192"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integração do SIEM server com aplicativos e serviços da Microsoft 365
 
@@ -33,7 +34,7 @@ Um servidor SIEM pode receber dados de uma ampla variedade de aplicativos e serv
 | Serviço Microsoft 365 ou aplicativo | Entradas de servidor SIEM | Recursos para saber mais |
 | --- | --- | --- |
 | [Proteção Avançada contra Ameaças do Office 365](office-365-atp.md)  <br/>   ou   <br/>[Inteligência Contra Ameaças do Office 365](office-365-ti.md) | Logs de auditoria | [Integração de SIEM com inteligência de ameaça do Office 365 e proteção de ameaça avançadas](siem-integration-with-office-365-ti.md) |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integração de log | [Integração de SIEM com segurança de aplicativo de nuvem Microsoft](https://docs.microsoft.com/cloud-app-security/siem) |
+| [Segurança no Aplicativo da Nuvem da Microsoft](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integração de log | [Integração de SIEM com segurança de aplicativo de nuvem Microsoft](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 Cloud App Security](office-365-cas-overview.md) | Integração de log | [Integrar seu servidor SIEM ao Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
 | [Proteção Avançada Contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integração de log | [Alertas de recepção para suas ferramentas SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Central de segurança do Windows Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Proteção contra ameaças e detecção de ameaça) | Alertas | [Exportação de dados de segurança Azure SIEM - configuração de Pipeline - Preview](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
@@ -44,11 +45,12 @@ Um servidor SIEM pode receber dados de uma ampla variedade de aplicativos e serv
 
 Verifique se o log de auditoria está ativado antes de configurar a integração do servidor SIEM. 
 
-- SharePoint Online, OneDrive for Business e Windows Azure Active Directory, o [log de auditoria está ativado no Centro de conformidade & segurança](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- SharePoint Online, OneDrive for Business e Windows Azure Active Directory, [os logs de auditoria está ativado o Centro de conformidade do & de segurança](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
 
 - Para Exchange Online, [o log de auditoria está ativado com o Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
 ## <a name="see-also"></a>Confira também
+
 
 [Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

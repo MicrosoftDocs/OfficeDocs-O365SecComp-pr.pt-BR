@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
+ms.collection: M365-security-compliance
 description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755282"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995372"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
+
+> [!IMPORTANT]
+> Este artigo destina-se a clientes corporativos. Se você for um usuário doméstico procurando informações sobre Links seguros no Outlook, consulte [Outlook.com avançadas de segurança](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Com [A proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP), sua organização pode ter um [URLs bloqueados personalizados](set-up-a-custom-blocked-urls-list-wtih-atp.md), de forma que, quando as pessoas clicarem na web endereços (URLs) em mensagens de email ou certos documentos do Office, eles são impedidos de pretende dessas URLs. Sua organização também pode ter listas personalizadas "não regravação" para grupos específicos na sua organização. Uma lista de "não regravação" permite que algumas pessoas visite URLs que são bloqueados contrário por [Links de ATP seguros no Office 365](atp-safe-links.md). 
   
