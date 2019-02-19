@@ -3,7 +3,6 @@ title: Destruição de dados do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,21 +10,28 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: Visão geral de políticas da Microsoft relacionados a reciclagem, descarte ou destruição das unidades de disco de datacenter do Office 365 e servidores.
-ms.openlocfilehash: c9950be4919520f2f46badaa4a7d4cfce5c55b45
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Uma visão geral das políticas da Microsoft sobre a reciclagem, a alienação ou a destruição de drives e servidores de disco de datacenter do Office 365.
+ms.openlocfilehash: d273640dc12370386f08d16fe3f254800ede47b3
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523797"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29696318"
 ---
 # <a name="office-365-data-destruction"></a>Destruição de dados do Office 365
-A Microsoft tem políticas padrão de manipulação de dados que atenda recycle e descarte de unidades de disco e de servidores com falha ou retiradas. Antes de usar novamente qualquer drives de disco no Office 365, Microsoft executa um processo de limpeza físico que é consistente com Instituto Nacional de padrões e tecnologia de publicação especial 800-88 ([diretrizes do SP NIST 800-88 para limpeza de mídia](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf) ). Todas as unidades de disco no Office 365 são criptografadas usando a criptografia de nível de volume de disco BitLocker, portanto a eliminação compatíveis com 800-88 NIST SP na prática, não é necessária. No entanto, ele ainda é realizado pela Microsoft.
 
-Falha de discos usados em datacenters fisicamente são destruídos e auditadas por meio do processo ISO do Office 365. O meio apropriado de descarte é determinado pelo tipo de ativo. Para os discos rígidos que não podem ser apagados, a Microsoft usa um processo de destruição que destrua a mídia (por exemplo, disintegrates, pulverizes ou incinerates) e renderiza a recuperação de informações impossíveis. Microsoft também mantém todos os registros de destruição. Microsoft executa um processo semelhante de limpeza em servidores que estão sendo reutilizados dentro do Office 365. Estas diretrizes abrangem a limpeza eletrônica e física.
+## <a name="physical-data-destruction"></a>Destruição de dados físicos
 
-Unidades de disco que não podem ser reutilizadas são descartadas usando um processo de destruição física que é executado no local dentro do data center que contém os discos sendo destruídos. Designado para o descarte de mídia de armazenamento é colocadas em bandejas seguras localizadas em cada área do datacenter. Cada estação bin segura é monitorada pelo vídeo. Depois que uma bandeja de descarte aproximadamente 50% atinge sua capacidade máxima, a equipe de serviços de Site entra em contato com a equipe de segurança física para coordenar a sua remoção. Equipe de serviços de site, remova a bandeja de disposição em escort pelo responsável por segurança até que ele é colocado em uma área de armazenamento seguro para aguardar destruição de dados. Políticas e procedimentos que regem a manipulação de dados identificando dispositivos durante o descarte rotineiramente são testados inclui procedimentos para garantir a condição de máquinas aprovada para destruição.
+A Microsoft tem políticas padrão de manipulação de dados que resolvem a reciclagem e a eliminação de drives de disco e falharam ou aposentaram servidores. Antes de reutilizar quaisquer drives de disco no Office 365, a Microsoft executa um processo de limpeza física consistente com a National Institute of Standards and Technology Special publication [[diretrizes do NIST SP 800-88 para a limpeza de mídia](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf) ). Todas as unidades de disco no Office 365 são criptografadas usando a criptografia de nível de volume do BitLocker, portanto, na prática, a eliminação compatível com o NIST SP 800-88 não é necessária. No enTanto, ele ainda é executado pela Microsoft.
 
-No processo de destruição de dados, o disco é apagado primeiro de uma maneira que seja compatível com NIST 800-88 (se possível) e, em seguida, ele é colocado em um shredder industrial e demolished fisicamente. A Microsoft mantém accountability para deixar o datacenter usando SP NIST 800-88 consistente limpeza/limpeza, destruição ativos, criptografia, precisos levantamento, controle e proteção de cadeia de custódia durante o transporte de ativos. Esse processo é monitorado por meio de circuito fechado de televisão e um certificado de destruição é emitida após a conclusão.
+Os discos com falha usados nos datacenters do Office 365 são destruídos fisicamente e auditados por meio do processo ISO. O meio adequado de alienação é determinado pelo tipo de ativo. Para discos rígidos que não podem ser apagados, a Microsoft usa um processo de destruição que destrói a mídia (por exemplo, desintegra, pulverizes ou incinerates) e renderiza a recuperação de informações impossível. A Microsoft também mantém todos os registros da destruição. A Microsoft executa um processo de limpeza semelhante nos servidores que estão sendo reutilizados no Office 365. Essas diretrizes englobam a limpeza eletrônica e física.
 
-A Microsoft usa unidades de eliminação de dados de [Soluções de protocolo extrema](http://www.enterprisedataerasure.com/) (EPS). Software EPS suporta SP NIST 800-88 requisitos para eliminação de limpeza e limpeza/seguro. Antes da limpeza ou destruição, um inventário é criado pelo Gerenciador ativo do Microsoft. Se um fornecedor é usado para destruição, o fornecedor fornece um certificado de destruição para cada ativo destruído, que é validado pelo gerente de ativos.
+As unidades de disco que não podem ser reutilizadas são descartadas de usar um processo de destruição física executado no local no datacenter que contém os discos que estão sendo destruídos. As mídias de armazenamento designadas para descarte são colocadas em compartimentos seguros localizados em cada área do datacenter. Cada estação de compartimento seguro é monitorada pela vigilância por vídeo. Depois que um compartimento de descarte alcança aproximadamente 50% de capacidade, a equipe de serviços de site contata a equipe de segurança física para coordenar sua remoção. Equipe de serviços de site em seguida, remova o compartimento de alienação em Escort por um diretor de segurança até que ele seja colocado em uma área de armazenamento segura para aguardar a destruição dos dados. Políticas e procedimentos que regem o tratamento de dados que ostentam os dispositivos durante o descarte são testados rotineiramente incluindo procedimentos para garantir a condição de maquinação aprovada para destruição.
+
+No processo de destruição de dados, o disco é apagado primeiro de uma maneira que é compatível com o NIST 800-88 (se possível) e, em seguida, é colocado em um picador industrial e fisicamente demolished. A Microsoft mantém a responsabilidade dos ativos que saem do datacenter usando a limpeza/limpeza consistentes do NIST SP 800-88, destruição de ativos, criptografia, inventário preciso, acompanhamento e proteção da cadeia de custódia durante o transporte. Esse processo é monitorado via televisão de circuito fechado, e um certificado de destruição é emitido após a conclusão.
+
+A Microsoft usa unidades de eliminação de dados das [soluções de protocolo extremo](http://www.enterprisedataerasure.com/) (EPS). O software EPS suporta os requisitos do NIST SP 800-88 para limpeza e limpeza/eliminação segura. Antes da limpeza ou destruição, um inventário é criado pelo Microsoft Asset Manager. Se um fornecedor for usado para destruição, o fornecedor fornecerá um certificado de destruição para cada ativo destruído, que é validado pelo Asset Manager.
+
+## <a name="virtual-data-destruction"></a>Destruição de dados virtuais
+
+A Microsoft tem políticas e procedimentos de manipulação de dados que também abordam a destruição virtual efetiva dos dados para proteger contra a possibilidade de dados sendo compartilhados inadequadamente entre os locatários de serviço ou podem ser acessados após a exclusão difícil no serviço. Os dados excluídos do serviço em um locatário não podem ser acessados por outro locatário de serviço, mesmo se algum ou todo o mesmo armazenamento físico subjacente for reatribuído posteriormente. Este é um resultado dos efeitos compostos de várias tecnologias de virtualização e fragmentação usadas para dimensionar ambientes virtuais, os comportamentos de exclusão ativa de aplicativos dentro de cada locatário de serviço (como anulação de [página](https://docs.microsoft.com/office365/securitycompliance/office-365-exchange-online-data-deletion#page-zeroing)) e os requisitos processos de criptografia de conteúdo de aplicativos e mídia.

@@ -1,9 +1,8 @@
 ---
 title: BitLocker do Office 365 para criptografia
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,33 +10,33 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Resumo: Informações sobre o BitLocker para criptografia na nuvem.'
-ms.openlocfilehash: 86c6bc9282d7c2b0a7d4e08d4636c8f9c2fa5db8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Resumo: informações sobre o BitLocker para criptografia na nuvem.'
+ms.openlocfilehash: 2f532282622abef49e3499c692f664b4714c3192
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524071"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664097"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker e Distributed Key Manager (DKM) para criptografia
-Servidores do Office 365 usam BitLocker para criptografar as unidades de disco que contém os dados em repouso no nível de volume do cliente. Criptografia de disco BitLocker é um recurso de proteção de dados interno do Windows. O BitLocker é uma das tecnologias usadas para a proteção contra ameaças, caso haja falhas em outros processos ou controles (por exemplo, controle de acesso ou reciclagem de hardware) que poderiam levar a alguém que tenha acesso físico nos discos contendo os dados do cliente. Nesse caso, o BitLocker elimina o potencial de dados roubo ou exposição por causa de discos e computadores inadequadamente, perdidos ou roubados.
+Os servidores do Office 365 usam o BitLocker para criptografar as unidades de disco que contêm os dados do cliente em repouso no nível do volume. A criptografia BitLocker é um recurso de proteção de dados interno do Windows. O BitLocker é uma das tecnologias usadas para proteger contra ameaças caso haja interrupções em outros processos ou controles (por exemplo, controle de acesso ou reciclagem de hardware) que podem levar a alguém obtendo acesso físico a discos que contêm dados do cliente. Nesse caso, o BitLocker elimina a possibilidade de roubo de dados ou exposição por causa de computadores e discos perdidos, roubados ou indevidamente descomissionados.
 
-O BitLocker é implantado com criptografia de 256 bits padrão de criptografia avançada (AES) em discos contendo dados do cliente no Exchange Online, SharePoint Online e Skype para negócios. Setores do disco são criptografadas com um completo Volume criptografia FVEK (chave), que é criptografado com o Volume VMK (chave mestra), que por sua vez, está acoplado para o módulo de plataforma confiável (TPM) no servidor. A VMK protege diretamente a FVEK e portanto, protegendo a VMK se torna crítico. A figura a seguir ilustra um exemplo de cadeia de proteção de chave BitLocker para um determinado servidor (no caso, usando um servidor Exchange Online).
+O BitLocker é implantado com a criptografia de 256 bits do padrão de criptografia avançada (AES) em discos que contêm dados do cliente no Exchange Online, no SharePoint Online e no Skype for Business. Os setores de disco são criptografados com uma chave de criptografia de volume (FVEK), que é criptografada com a chave mestra de volume (VMK), que por sua vez está associada ao TPM (módulo de plataforma confiável) no servidor. A VMK protege diretamente a FVEK e, portanto, a proteção da VMK se torna crítica. A figura a seguir ilustra um exemplo da cadeia de proteção de chave do BitLocker para um determinado servidor (neste caso, usando um servidor Exchange Online).
 
-A tabela a seguir descreve a cadeia de proteção de chaves de BitLocker para um determinado servidor (neste caso, um servidor Exchange Online).
+A tabela a seguir descreve a cadeia de proteção de chave do BitLocker para um determinado servidor (neste caso, um servidor Exchange Online).
 
-| PROTETOR DE CHAVE | GRANULARIDADE | COMO GERADO? | ONDE ELE ESTÁ ARMAZENADO? | PROTEÇÃO |
+| PROTETOR DE CHAVE | GRANULARIDADE | COMO É GERADO? | ONDE É ARMAZENADO? | PROTE |
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
-| Chave AES de 256 bits externo | Por servidor | APIs de disco BitLocker | TPM ou secreto seguros | Lockbox / controle de acesso |
-|  |  |  | Registro do servidor de caixa de correio | TPM criptografada |
-| Senha numérica de 48 dígitos | Por disco | APIs de disco BitLocker | Active Directory | Lockbox / controle de acesso |
-| Protetor de chave pública também chamado de certificado x. 509 como o agente de recuperação de dados (DRA) | Ambiente (por exemplo, o Exchange Online multi-inquilinos) | Autoridade de certificação da Microsoft | Criar sistema | Nenhum usuário tem a senha completa para a chave privada. A senha é sob proteção física. |
+| Chave externa AES de 256 bits | Por servidor | APIs do BitLocker | TPM ou secreto seguro | Lockbox/controle de acesso |
+|  |  |  | Registro do servidor de caixa de correio | TPM criptografado |
+| Senha numérica de 48 dígitos | Por disco | APIs do BitLocker | Active Directory | Lockbox/controle de acesso |
+| O certificado X. 509 como o agente de recuperação de dados (DRA) também é chamado de protetor de chave pública | Ambiente (por exemplo, multilocatário do Exchange Online) | AUTORIDADE de certificação da Microsoft | Sistema de compilação | Não há um usuário com a senha completa para a chave privada. A senha está sob proteção física. |
 
 
-Gerenciamento de chaves BitLocker envolve o gerenciamento de chaves de recuperação que são usadas para desbloquear/recuperar discos criptografados em um datacenter do Office 365. O Office 365 armazena as chaves mestre em um compartilhamento protegido, acessível apenas por pessoas que foram analisadas e aprovadas. As credenciais para as chaves são armazenadas em um repositório seguro para dados de controle de acesso (o que é chamada "repositório secreto"), que exige um alto nível de aprovações elevação e gerenciamento para acessar usando uma ferramenta do access just-in-time elevação.
+O gerenciamento de chaves BitLocker envolve o gerenciamento de chaves de recuperação usadas para desbloquear/recuperar discos criptografados em um datacenter do Office 365. O Office 365 armazena as chaves mestre em um compartilhamento protegido, acessível somente por indivíduos que foram filtrados e aprovados. As credenciais para as chaves são armazenadas em um repositório seguro para dados de controle de acesso (o que chamamos de um "repositório secreto"), que exige um alto nível de aprovação de elevação e gerenciamento para acessar usando uma ferramenta de elevação de acesso just-in-time.
 
-O BitLocker suporta chaves que se enquadram em duas categorias de gerenciamento:
-- O BitLocker gerenciados chaves, que são geralmente temporários e e associado com o tempo de vida de uma instância de sistema operacional instalado em um servidor ou em um determinado disco. Essas chaves são excluídas e redefinidos durante a reinstalação do servidor ou a formatação de disco.
-- Chaves de recuperação de disco BitLocker, que são gerenciadas fora BitLocker mas usadas para a descriptografia de disco. O BitLocker usa as chaves de recuperação para o cenário no qual um sistema operacional é reinstalado e discos de dados criptografados já existirem. Chaves de recuperação também são usadas pelo monitoramento sondas no Exchange Online onde um Respondente talvez precisem de disponibilidade gerenciada para desbloquear um disco.
+O BitLocker oferece suporte a chaves que se enquadram em duas categorias de gerenciamento:
+- Chaves gerenciadas pelo BitLocker, que geralmente são de vida curta e ligadas à vida útil de uma instância do sistema operacional instalada em um servidor ou em um determinado disco. Essas chaves são excluídas e redefinidas durante a reinstalação do servidor ou a formatação do disco.
+- Chaves de recuperação do BitLocker, que são gerenciadas fora do BitLocker, mas usadas para descriptografia de disco. O BitLocker usa chaves de recuperação para o cenário no qual um sistema operacional é reinstalado e os discos de dados criptografados já existem. As chaves de recuperação também são usadas por sondas de monitoramento de disponibilidade gerenciada no Exchange Online, onde um respondente pode precisar desbloquear um disco.
 
-Volumes protegidas pelo BitLocker são criptografados com uma chave de criptografia de volume completo, que por sua vez, é criptografada com uma chave mestra de volume. O BitLocker usa algoritmos compatíveis com FIPS para garantir que as chaves de criptografia nunca são armazenadas ou enviadas por telefone criptografado. A implementação do Office 365 do cliente em-rest-proteção de dados não desviar da implementação de disco BitLocker padrão.
+Os volumes protegidos por BitLocker são criptografados com uma chave de criptografia de volume completo, que, por sua vez, é criptografada com uma chave mestra de volume. O BitLocker usa algoritmos compatíveis com FIPS para garantir que as chaves de criptografia nunca sejam armazenadas ou enviadas pela conexão. A implementação do Office 365 de dados do cliente em repouso-proteção não se desvia da implementação padrão do BitLocker.
