@@ -10,38 +10,40 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Entenda a resiliência de dados no Microsoft Office 365.
-ms.openlocfilehash: 7d43c766615ff1520c6529427116c42795da8565
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 126e00c53e578b287538617a0e1ad84ae86ce7f1
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524331"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090533"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resiliência de dados no Office 365
 
 ## <a name="introduction"></a>Introdução
-Devido à natureza complexa da computação em nuvem, a Microsoft está Lembre-se que ele não é um caso de se coisas dê erradas, mas em vez disso, quando. Criamos nossos serviços de nuvem para maximizar a confiabilidade e minimizar os efeitos negativos nos clientes quando as coisas dão errado. Podemos ultrapassou a estratégia tradicional da depender complexa infra-estrutura física e criamos redundância diretamente em nossos serviços de nuvem. Usamos uma combinação de infra-estrutura física menos complexa e de software mais inteligente que cria a resiliência de dados em nossos serviços e fornece a alta disponibilidade para os clientes. 
+Dada a natureza complexa da computação em nuvem, a Microsoft está atento a que não é um caso de coisas erradas, mas sim quando. Projetamos nossos serviços em nuvem para maximizar a confiabilidade e minimizar os efeitos negativos sobre os clientes quando as coisas entram erradas. Mudamos além da estratégia tradicional de depender de uma infraestrutura física complexa, e criamos redundância diretamente em nossos serviços de nuvem. Usamos uma combinação de infra-estrutura física menos complexa e software mais inteligente que cria resiliência de dados em nossos serviços e oferece alta disponibilidade para nossos clientes. 
 
-## <a name="resiliency-and-recoverability-are-built-in"></a>Resiliência e a capacidade de recuperação são internos 
-Construção em resiliência e recuperação começa com a pressuposição de que a infra-estrutura e os processos subjacentes falhará em algum momento: hardware (infraestrutura) irá falhar, as pessoas serão cometer erros e software terá bugs. Embora seja incorreto dizer que os desenvolvedores de software não eram pensar essas coisas antes de nuvem, como esses problemas foram tratados em uma implementação típica do IT era muito diferente antes da nuvem: 
-- Em primeiro lugar, proteções de hardware e infraestrutura foram significativas. Isso quer dizer tendo centros de dados com eficiência significativa de confiabilidade de 99,99% necessárias e a redundância da rede e servidores foram implementadas com baseada em hardware clustering, duas fontes de alimentação, interfaces de rede dual e assim por diante. 
-- Em segundo lugar, o processo foi primordial. As equipes de operações mantido procedimentos rigorosos, alteração windows foram empregados, e geralmente era sobrecarga de gerenciamento de projeto significativo. 
-- Terceiro, a implantação foi realizada em um ritmo glacial. Implantando código ao qual pertence a fonte quer dizer em espera para as versões de patch e versão principal libera a substituição do hardware envolvidos e gastos de capital significativo. Além disso, a única maneira de corrigir um problema era reversão. Assim, a maioria das organizações de TI seriam implantar versões principais apenas para evitar o trabalho se manter atualizado. 
-- Finalmente, a escala de sistemas implantados, bem como o nível de sua capacidade de interconexão foi historicamente muito menor do que é agora. 
+## <a name="resiliency-and-recoverability-are-built-in"></a>Resiliência e capacidade de recuperação são internas 
+A criação de resiliência e recuperação começa com a suposição de que a infraestrutura e os processos subjacentes falharão em algum momento: o hardware (infraestrutura) falhará, as pessoas farão erros e o software terá bugs. Embora seja incorreto dizer que os desenvolvedores de software não estavam pensando nesses itens antes da nuvem, como esses problemas foram tratados em uma implementação de ti típica era muito diferente antes da nuvem: 
+- Primeiro, as proteções de hardware e infraestrutura eram significativas. Isso significava que os datacenters com confiabilidade de 99,99% exigiam uma capacidade significativa de energia e de rede, e os servidores foram implementados com clustering baseado em hardware, fontes de alimentação duais, interfaces de rede duplas e semelhantes. 
+- Segundo, o processo era fundamental. As equipes de operações mantiveram procedimentos rigorosos, mudanças no Windows foram empregadas e, em geral, houve uma sobrecarga significativa de gerenciamento de projetos. 
+- Terceiro, a implantação foi realizada em um glacial ritmo. A implantação do código sem a posse da origem está aguardando versões de patch e versões principais de versão envolveram a substituição de hardware e a capitalização outlay significativa. Além disso, a única maneira de corrigir um problema era reverter. Portanto, a maioria das organizações de ti implantaria apenas as versões principais para evitar que o trabalho seja atualizado. 
+- Por fim, a escala de sistemas implantados, bem como o nível de sua interconexão era historicamente muito menor do que agora. 
 
-Hoje, os clientes esperam inovação contínua da Microsoft sem comprometer a qualidade, e esse é um dos motivos por que o software e os serviços da Microsoft são criadas com o resiliência e a capacidade de recuperação em mente. 
+Atualmente, os clientes esperam uma inovação contínua da Microsoft sem comprometer a qualidade, e essa é uma das razões pelas quais os serviços e software da Microsoft são criados com a resiliência e a capacidade de recuperação em mente. 
 
 ## <a name="office-365-data-resiliency-principles"></a>Princípios de resiliência de dados do Office 365 
-Resiliência refere-se à capacidade de um serviço baseado em nuvem para suportar a determinados tipos de falhas e ainda permanecer totalmente funcional da perspectiva dos clientes. Resiliência de dados significa que, não importa qual falhas no Office 365, dados críticos do cliente permanecem intacta e inalterada. Para esse fim, Office 365 serviços foram projetados cerca de cinco princípios de resiliência específico: 
-- Não há dados críticos e não críticas. Dados não-crítico (por exemplo, se uma mensagem foi lido) podem ser descartados em cenários de falha rara. Dados críticos (por exemplo, dados de cliente, como mensagens de email) devem ser protegidos com extremo custo. Como um objetivo do design, mensagens de email entregue sempre são críticas e coisas como se uma mensagem foi lido é não-crítica. 
-- Cópias de dados do cliente devem ser separadas em zonas de falhas diferentes ou à medida que muitas falhas domínios possível (por exemplo, data centers, acessadas por credenciais único (processo, servidor ou operador)) para oferecer isolamento de falhas. 
-- Dados críticos do cliente devem ser monitorados para falhando qualquer parte da atomicidade, consistência, isolamento, durabilidade (ACID). 
-- Dados de cliente devem ser protegidos contra corrupção. Ele deve ser ativamente digitalizados ou monitorados, pode ser reparado e recuperáveis. 
-- Portanto, a maioria dos resultados de perda de dados de ações do cliente, permitem aos clientes recuperar seus próprios usando uma interface gráfica que permite que eles restaurar itens excluídos acidentalmente. 
+Resiliência refere-se à capacidade de um serviço baseado em nuvem de resistir a certos tipos de falhas e ainda permanecer totalmente funcional da perspectiva dos clientes. Resiliência de dados significa que não importa quais falhas ocorram no Office 365, os dados críticos do cliente permanecem intactos e não são afetados. Para esse fim, os serviços do Office 365 foram projetados em torno de cinco princípios de resiliência específicos: 
+- Há dados críticos e não críticos. Dados não críticos (por exemplo, se uma mensagem foi lida) podem ser descartados em situações raras de falha. Dados críticos (por exemplo, dados do cliente, como mensagens de email) devem ser protegidos com custo extremo. Como meta de design, as mensagens de email entregues são sempre críticas, e as coisas como se uma mensagem foi lida não são críticas. 
+- As cópias dos dados dos clientes devem ser separadas em diferentes zonas de falha ou tantos domínios de falha quanto possível (por exemplo, datacenters, acessíveis por credenciais únicas (processo, servidor ou operador)) para fornecer falha no isolamento. 
+- Dados críticos do cliente devem ser monitorados com falha em qualquer parte da atomicidade, consistência, isolamento, durabilidade (ACID). 
+- Os dados do cliente devem estar protegidos contra corrupção. Ele deve ser ativamente examinado ou monitorado, reparável e recuperável. 
+- A maioria dos resultados de perda de dados de ações do cliente permite que os clientes se recuperem por conta própria usando uma GUI que permite restaurar itens excluídos acidentalmente. 
  
-Por meio da compilação de nossos serviços de nuvem para estes princípios, juntamente com o teste robusto e validação, o Office 365 é capaz de atender e superar os requisitos de clientes, garantindo uma plataforma para inovação contínua e aperfeiçoamento. 
+Por meio da criação de nossos serviços em nuvem para esses princípios, em conjunto com um teste e validação robustos, o Office 365 é capaz de atender e exceder os requisitos dos clientes, garantindo uma plataforma para inovação contínua e melhorias. 
 
 ## <a name="related-links"></a>Links relacionados
 

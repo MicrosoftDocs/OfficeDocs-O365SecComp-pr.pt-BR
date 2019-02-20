@@ -1,5 +1,5 @@
 ---
-title: Alertas de segurança do Office 365 &amp; Centro de conformidade
+title: Alertas no centro de conformidade de &amp; segurança do Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -12,47 +12,47 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
-description: Saiba mais sobre os alertas que você pode definir para ajudá-lo com segurança no Office 365.
-ms.openlocfilehash: 9854192bdb108981dfa650685262471f8d8e000b
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Saiba mais sobre os alertas que você pode definir para ajudar com a segurança no Office 365.
+ms.openlocfilehash: 657bd35bd537db731b7994af625f95094a5bceab
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272276"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087320"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alertas de segurança do Office 365 &amp; Centro de conformidade
+# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alertas no centro de conformidade de &amp; segurança do Office 365
 
-Use os recursos de alertas de segurança do Office 365 &amp; Centro de conformidade para exibir e gerenciar alertas para sua organização do Office 365, incluindo o gerenciamento avançado de alertas como parte de [alertas de gerenciamento de segurança avançada](office-365-cas-overview.md).
+Use os recursos de alerta no centro de conformidade &amp; de segurança do Office 365 para exibir e gerenciar alertas para sua organização do Office 365, incluindo o gerenciamento de alertas avançados como parte dos [alertas do Office 365 Cloud app Security](office-365-cas-overview.md).
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>Recursos de alertas como obter o Office 365
+## <a name="how-to-get-to-the-office-365-alerts-features"></a>Como obter os recursos de alertas do Office 365
 
-Alertas no Office 365 estão na segurança &amp; Centro de conformidade. Aqui está como chegar à página.
+Os alertas no Office 365 estão no centro &amp; de conformidade de segurança. ConFira aqui como acessar a página.
   
- **Para ir diretamente para a segurança &amp; Centro de conformidade:**
+ **Para ir diretamente para o centro &amp; de conformidade de segurança:**
   
-1. Vá para [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entrar no Office 365 usando sua conta do trabalho ou da escola. 
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante. 
     
-3. No painel esquerdo, clique em **alertas** para ver os recursos de alertas. 
+3. No painel esquerdo, clique em **alertas** para ver os recursos de alerta. 
     
- **Para ir para a segurança &amp; Centro de conformidade usando o iniciador de aplicativo do Office 365:**
+ **Para ir para o centro &amp; de conformidade de segurança usando o inicializador de aplicativos do Office 365:**
   
-1. Entrar no Office 365 usando sua conta do trabalho ou da escola. 
+1. Entre no Office 365 usando a sua conta corporativa ou de estudante. 
     
-2. Clique no iniciador app no canto superior esquerdo e, em seguida, clique em **segurança &amp; conformidade**.
+2. Clique no inicializador de aplicativos no canto superior esquerdo e, em seguida, clique em **conformidade de segurança &amp; **.
     
-    Não é possível encontrar o aplicativo que você está procurando? A partir do iniciador de aplicativo, selecione **todos os aplicativos** para ver uma lista alfabética os aplicativos do Office 365 disponíveis para você. A partir daí, você pode pesquisar para um aplicativo específico. 
+    Não consegue encontrar o aplicativo que está procurando? No inicializador de aplicativos, selecione **Todos os aplicativos** para ver uma lista em ordem alfabética dos aplicativos disponíveis do Office 365. Nesse local, você pode pesquisar um aplicativo específico. 
     
-3. No painel esquerdo, clique em **alertas** para ver os recursos de alertas. 
+3. No painel esquerdo, clique em **alertas** para ver os recursos de alerta. 
     
-## <a name="alerts-features"></a>Recursos de alertas
+## <a name="alerts-features"></a>Recursos de alerta
 
-A tabela a seguir descreve as ferramentas que estão disponíveis nos **alertas** na segurança &amp; Centro de conformidade. 
+A tabela a seguir descreve as ferramentas que estão disponíveis em **alertas** no centro &amp; de conformidade de segurança. 
   
 |**Ferramenta**|**Descrição**|
 |:-----|:-----|
-|[Gerenciar alertas](create-activity-alerts.md) <br/> |Use alertas de atividade para enviar notificações por email para si mesmo ou a outros administradores quando os usuários realizam atividades específicas no Office 365. Alertas de atividade são semelhantes às pesquisando os eventos no log de auditoria do Office 365, exceto que você vai ser enviada uma mensagem de email quando um evento que você criou um alerta para ocorre.  <br/> |
-|[Gerenciar alertas avançadas](office-365-cas-overview.md) <br/> |Use o recurso de **Gerenciar alertas de avançadas** de gerenciamento de segurança avançadas para definir as políticas que podem alertá-lo à atividade suspeita e anômalos no Office 365. Depois que você será avisado, você pode investigar situações em que são potencialmente problemáticas e, se necessário, execute uma ação para solucionar problemas de segurança.<br/> |
+|[Gerenciar alertas](create-activity-alerts.md) <br/> |Use os alertas de atividade para enviar notificações por email para si mesmo ou para outros administradores quando os usuários executarem atividades específicas no Office 365. Os alertas de atividade são semelhantes à pesquisa de eventos no log de auditoria do Office 365, exceto pelo fato de que você enviará uma mensagem de email quando um evento que você criou um alerta.  <br/> |
+|[Gerenciar alertas avançados](office-365-cas-overview.md) <br/> |Use o recurso **Gerenciar alertas avançados** do Office 365 Cloud app Security para configurar políticas que podem alertá-lo sobre atividades suspeitas e anormais no Office 365. Depois de alertar, você pode investigar situações que são potencialmente problemáticas e, se necessário, tomar medidas para resolver problemas de segurança.<br/> |
    
 

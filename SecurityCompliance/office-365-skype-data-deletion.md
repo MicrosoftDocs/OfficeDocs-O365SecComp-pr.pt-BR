@@ -1,5 +1,5 @@
 ---
-title: O Office 365 Skype para exclusão de dados corporativos
+title: Exclusão de dados do Skype for Business do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,50 +10,52 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Uma explicação de exclusão de dados em Skype para negócios.
-ms.openlocfilehash: f3ddd0ad0797c465857919e8f7b28341492769ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Uma explicação da exclusão de dados no Skype for Business.
+ms.openlocfilehash: 191b78befb114f4c10335490d298d968a4fda2c4
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524308"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090923"
 ---
-# <a name="skype-for-business-data-deletion-in-office-365"></a>Skype para exclusão de dados corporativos no Office 365
+# <a name="skype-for-business-data-deletion-in-office-365"></a>Exclusão de dados do Skype for Business no Office 365
 
 O Skype for Business oferece arquivamento de mensagens instantâneas ponto a ponto, mensagens instantâneas entre várias pessoas e atividades de carregamento de conteúdo em reuniões. O recurso de arquivamento requer o Exchange e é controlado pelo atributo de Bloqueio In-loco da caixa de correio do Exchange do usuário, que arquiva tanto o email quanto o conteúdo do Skype for Business.
 
 Todo o arquivamento no Skype for Business é considerado "arquivamento de nível do usuário" porque é possível habilitá-lo ou desabilitá-lo para um ou mais usuários ou grupos de usuários específicos criando, configurando e aplicando uma política de arquivamento de nível do usuário para esses usuários. Não há controle direto das configurações de arquivamento de dentro do Centro de administração do Skype for Business.
 
-Os seguintes tipos de conteúdo não são arquivados no Skype para negócios: 
+Os seguintes tipos de conteúdo não são arquivados no Skype for Business: 
 - Transferências de arquivos de ponto a ponto
 - Áudio/vídeo para mensagens instantâneas de ponto a ponto e conferências
 - Compartilhamento de aplicativo para mensagens instantâneas ponto a ponto e conferências
 - Anotações de conferência 
 
 ## <a name="meeting-content-retention"></a>Retenção de conteúdo de reunião
-Clientes que usam o Skype para negócios podem carregar conteúdo para um Skype para reunião de negócios como anexos, como apresentações do PowerPoint, OneNote arquivos e outros arquivos. O período de retenção de conteúdo que foram carregado para uma reunião é o seguinte:
-- **Reunião única** - conteúdo é retido por 15 dias começando a partir de quando a última pessoa deixou a reunião.
-- **Reunião recorrente** - conteúdo é retido por 15 dias após a última pessoa deixou a última sessão da reunião. O timer de retenção redefine se alguém ingressar a mesma sessão de reunião em 15 dias. Por exemplo, suponha que um Skype para reunião de negócios está programada para ocorrer semanalmente por um ano, e um arquivo carregado para a reunião durante a primeira instância. Se pelo menos uma pessoa ingressar na sessão de reunião toda semana, o arquivo é mantido no Skype para servidores corporativos Online para o ano inteiro plus 15 dias após a última pessoa deixou a última reunião da série.
-- Conteúdo da **reunião reunir agora** - é mantido por 8 horas após a hora de término da reunião.
+Os clientes que usam o Skype for Business podem carregar conteúdo para uma reunião do Skype for Business como anexos, como apresentações do PowerPoint, arquivos do OneNote e outros arquivos. O período de retenção do conteúdo que foi carregado para uma reunião é o seguinte:
+- **Reunião de uso único** -o conteúdo é mantido por 15 dias a partir de quando a última pessoa deixa a reunião.
+- **Reunião recorrente** -o conteúdo é mantido por 15 dias após a última pessoa sair da última sessão da reunião. O timer de retenção redefine se alguém ingressar na mesma sessão de reunião dentro de 15 dias. Por exemplo, suponha que uma reunião do Skype for Business está agendada para ocorrer semanal por um ano, e um arquivo é carregado para a reunião durante a primeira instância. Se pelo menos uma pessoa ingressar na sessão de reunião toda semana, o arquivo será mantido nos servidores do Skype for Business online por todo o ano mais 15 dias após a última pessoa sair da última reunião da série.
+- **Reunião agora** -o conteúdo é retido por 8 horas após a hora de término da reunião.
 
 > [!NOTE]
-> Se um usuário não licenciado ou desabilitado (por exemplo, se **msRTCSIP-userenabled** estiver definida como *False*) e é licenciado novamente ou reabilitada, conteúdo da reunião não é mantido.
+> Se um usuário não estiver licenciado ou estiver desabilitado (por exemplo, se **msRTCSIP-userhabilitado** for definido como *false*) e, em seguida, for novamente licenciado ou reabilitado, o conteúdo da reunião não será mantido.
 
 ## <a name="meeting-expiration"></a>Expiração de reunião
 Os usuários podem acessar uma reunião específica, após a reunião ter terminado, sujeitos aos seguinte períodos de expiração:
-- **Reunião única** - reunião expira 14 dias após a reunião agendada hora de término.
-- **Reunião recorrente com data de término** - reunião expira 14 dias após a hora de término agendada da última ocorrência de reunião.
-- A **reunião reunir agora** - reunião expira após 8 horas.
+- **Reunião de uso único** – a reunião expira 14 dias após a hora de término da reunião agendada.
+- **Reunião recorrente com data de término** – a reunião expira 14 dias após a hora de término agendada da última ocorrência da reunião.
+- **Reunião agora** – a reunião expira após 8 horas.
 
 ## <a name="whiteboard-collaboration"></a>Colaboração de quadro de comunicações
-As anotações feitas em quadros de comunicações serão vistas por todos os participantes. Ao salvar um quadro de comunicações, o quadro de comunicações e todas as anotações serão armazenadas em um Skype para Business server, e ele será retido no servidor de acordo com as diretivas de expiração de conteúdo de reunião definida pelo administrador.
+As anotações feitas em quadros de comunicações serão vistas por todos os participantes. Ao salvar um quadro de comunicações, o quadro de comunicações e todas as anotações serão armazenados em um Skype for Business Server e serão retidos no servidor de acordo com as políticas de expiração de conteúdo da reunião definidas pelo administrador.
 
 ## <a name="audio-test-service"></a>Serviço de teste de áudio
-Uma amostra de short (aproximadamente 5 segundos) da sua voz é registrada durante a chamada do serviço de teste de áudio. O exemplo de voz é usado por você para verificar e/ou verificar a qualidade do som de sua Skype para chamada de negócios com base na qualidade da gravação. Quando a chamada de serviço de teste de áudio for encerrada, a amostra de voz é excluída.
+Um curto (aproximadamente 5 segundos) amostra de sua voz é registrado durante a chamada do serviço de teste de áudio. O exemplo de voz é usado para verificar e/ou verificar a qualidade de som da chamada do Skype for Business com base na qualidade da gravação. Quando a chamada de serviço de teste de áudio termina, a amostra de voz é excluída.
 
 ## <a name="persistent-group-chat"></a>Chat de grupo persistente
-O Chat de grupo persistente armazena o conteúdo das conversas de bate-papo de grupo. Se for habilitada, o administrador pode controlar o período de retenção, o servidor no qual essas informações são armazenadas, se o histórico de Chat de grupo será arquivado para conformidade ou outras finalidades e gerenciar/modificar quaisquer propriedades em uma sala. Os usuários com funções diferentes têm acesso diferente para os dados persistentes, da seguinte maneira:
-- Os administradores podem excluir conteúdo mais antigo (por exemplo, o conteúdo publicado antes de uma determinada data) de qualquer sala de chat para evitar que crescendo significativamente o tamanho do banco de dados. Ou, podem remover ou substituir mensagens consideradas inadequados para uma determinada sala de chat (ou considerado inadequada).
-- Os usuários finais, incluindo os autores das mensagens, não é possível excluir o conteúdo de qualquer sala de chat.
-- Gerentes de sala de chat podem desabilitar salas, mas não é possível excluir salas. Apenas administradores podem excluir uma sala de bate-papo após sua criação.
+O chat de grupo persistente armazena o conteúdo de conversas de chat de grupo. Se for habilitada, o administrador poderá controlar o período de retenção, o servidor em que essas informações estão armazenadas, se o histórico de chat de grupo for arquivado para fins de conformidade ou outras finalidades, e gerenciar/modificar quaisquer propriedades em uma sala. Os usuários com funções diferentes têm acesso diferente aos dados persistentes da seguinte maneira:
+- Os administradores podem excluir conteúdo mais antigo (por exemplo, o conteúdo postado antes de uma determinada data) de qualquer sala de chat para manter o tamanho do banco de dados crescendo muito. Ou podem remover ou substituir mensagens consideradas inadequadas para uma determinada sala de chat (ou consideradas inadequadas).
+- Os usuários finais, incluindo autores de mensagens, não podem excluir conteúdo de qualquer sala de chat.
+- Os gerentes de salas de chat podem desabilitar salas, mas não podem excluir salas. Somente os administradores podem excluir uma sala de chat após sua criação.

@@ -1,5 +1,5 @@
 ---
-title: Controles de acesso do Office 365 Yammer Enterprise
+title: Controles de acesso corporativo do Office 365 Yammer
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,19 +10,21 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Resumo: Um breve resumo sobre controles de acesso do Yammer Enterprise no ambiente de produção.'
-ms.openlocfilehash: 3f51e63c16022353e743b57d8e977f2ea2e6a835
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Resumo: um breve resumo sobre os controles de acesso corporativo do Yammer no ambiente de produção.'
+ms.openlocfilehash: 33126ee6acf42a97148c12917855535a8578e8cf
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524576"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090723"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Controles de acesso do Yammer Enterprise 
 
-Acesso físico e lógico para o ambiente de produção do Yammer é restrito a um conjunto muito pequeno de pessoas (infra-estrutura e operações). Assim como acontece com outros engenheiros do Office 365, Yammer engenheiros tem zero acessar a posição dados dos clientes. Acesso deve ser solicitado usando um sistema de controle de acesso baseado em aprovação de just-in-time semelhante a Lockbox e há um número limitado de aprovadores. Aprovadores verificar a solicitação (por exemplo, eles verificar que se a solicitação é legítima com base na necessidade, caso comercial, tempo, etc.) e, em seguida, aprovar ou negar a solicitação. Se a solicitação for aprovada, acesso JIT é concedido por um período definido e limitado, após o qual ele expira automaticamente. 
+O acesso físico e lógico ao ambiente de produção do Yammer é restrito a um conjunto muito pequeno de pessoas (infraestrutura e operações). Como em outros engenheiros do Office 365, os engenheiros do Yammer têm zero acesso à dados dos clientes. O acesso deve ser solicitado usando um sistema de controle de acesso just-in-time baseado em aprovação semelhante ao Lockbox, e há um número limitado de aprovadores. Os aprovadores verificam a solicitação (por exemplo, eles verificam se a solicitação é legítima com base em necessidade, caso de negócios, hora etc.) e, em seguida, aprovar ou negar a solicitação. Se a solicitação for aprovada, o acesso JIT será concedido para um tempo definido e limitado, após o qual ele expirará automaticamente. 
 
-Assim como acontece com outros serviços do Office 365, todo o acesso ao ambiente de produção do Yammer utiliza a autenticação multifator. Todo o histórico de acesso e o comando é atribuído a um usuário e conectado e revisado regularmente pela equipe de segurança do Yammer.
+Como em outros serviços do Office 365, todo o acesso ao ambiente de produção do Yammer aproveita a autenticação multifator. Todos os acessos e o histórico de comandos são atribuídos a um usuário e registrados e revisados regularmente pela equipe de segurança do Yammer.
 
-Para obter mais informações sobre o Yammer administração e gerenciamento, consulte a [Ajuda de administração no Yammer](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US).
+Para obter mais informações sobre administração e gerenciamento do Yammer, consulte [ajuda do administrador do Yammer](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US).

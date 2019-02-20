@@ -1,5 +1,5 @@
 ---
-title: Controle de acesso no Azure Active Directory e isolamento do Office 365
+title: Controle de acesso e isolamento do Office 365 no Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,38 +10,40 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Resumo: Como o isolamento e controle de acesso trabalham dentro do Azure Active Directory.'
-ms.openlocfilehash: db4fa0d026c6c608f09252c65bf1e0de5354f68c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Resumo: como o isolamento e o controle de acesso funcionam no Azure Active Directory.'
+ms.openlocfilehash: 01103361a084d50adbc6c0a8351d9af8311a39fd
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524583"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090503"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolamento e controle de acesso do Azure Active Directory
 
-Azure Active Directory foi projetado para hospedar vários locatários de maneira altamente segura por meio de isolamento de dados lógicos. Acesso ao Active Directory do Windows Azure, determinado por uma camada de autorização. Azure Active Directory isola clientes usando o locatário contêineres como limites de segurança para proteger o conteúdo do cliente para que o conteúdo não pode ser acessado ou comprometido por inquilinos colegas. Três verificações são executadas pela camada de autorização do Azure Active Directory:
-- A entidade está habilitada para acesso ao locatário do Azure Active Directory?
-- A entidade está habilitada para acesso aos dados neste locatário?
-- É função do principal neste locatário autorizado para o tipo de acesso a dados solicitado?
+O Azure Active Directory foi projetado para hospedar vários locatários de forma altamente segura através do isolamento lógico de dados. O acesso ao Azure Active Directory é restringido por uma camada de autorização. O Azure Active Directory isola os clientes que usam contêineres de locatário como limites de segurança para proteger o conteúdo de um cliente, de modo que o conteúdo não possa ser acessado ou comprometido por colocatários. Três verificações são realizadas pela camada de autorização do Azure Active Directory:
+- O principal está habilitado para acesso ao locatário do Azure Active Directory?
+- O principal está habilitado para acesso aos dados neste locatário?
+- A função do principal neste locatário é autorizada para o tipo de acesso a dados solicitado?
 
-Nenhum aplicativo, usuário, servidor ou serviço pode acessar o Azure Active Directory sem a devida autenticação e o token ou o certificado. Solicitações serão rejeitadas se eles não são acompanhados por credenciais apropriadas.
+Nenhum aplicativo, usuário, servidor ou serviço pode acessar o Azure Active Directory sem a autenticação apropriada e token ou certificado. As solicitações serão rejeitadas se não forem acompanhadas por credenciais adequadas.
 
-Com eficácia, o Azure Active Directory hospeda cada locatário em seu próprio contêiner protegido, com políticas e permissões para e dentro do contêiner exclusivamente pertencentes e gerenciados por inquilino.
+Efetivamente, o Azure Active Directory hospeda cada locatário em seu próprio contêiner protegido, com políticas e permissões para e dentro do contêiner exclusivamente proprietário e gerenciado pelo locatário.
  
 ![Contêiner do Azure](media/office-365-isolation-azure-container.png)
 
-O conceito de contêineres de Inquilino é extremamente bicicletas no serviço de diretório em todas as camadas de portais totalmente para armazenamento persistente. Mesmo quando vários metadados de locatário do Azure Active Directory são armazenados no mesmo disco físico, há nenhuma relação entre os contêineres que não seja o que é definido pelo serviço de diretório, por sua vez, é determinado pelo administrador do locatário. Não pode haver nenhum conexões diretas para o armazenamento do Azure Active Directory de qualquer aplicativo solicitante ou de serviço sem passar primeiro por meio da camada de autorização.
+O conceito de contêineres de locatário está profundamente refinado no serviço de diretório em todas as camadas, de portais de forma totalmente direcionada para o armazenamento persistente. Mesmo quando vários metadados do locatário do Azure Active Directory são armazenados no mesmo disco físico, não há relação entre os contêineres que não são definidos pelo serviço de diretório, que, por sua vez, é determinado pelo administrador do locatário. Não pode haver conexões diretas com o armazenamento do Azure Active Directory a partir de qualquer aplicativo ou serviço solicitante sem passar pela camada de autorização.
 
-No exemplo a seguir, a Contoso e Fabrikam tem contêineres separados e dedicados e Apesar desses contêineres podem compartilhar algumas da mesma infra-estrutura subjacente, como servidores e armazenamento, eles permanecem separadas e isolados entre si e com porta por camadas de controle de acesso e autorização.
+No exemplo abaixo, a Contoso e a Fabrikam têm contêineres separados e dedicados, e mesmo que esses contêineres possam compartilhar algumas das mesmas infra-estruturas subjacentes, como servidores e armazenamento, eles permanecem separados e isolados uns dos outros, e por portão por camadas de autorização e controle de acesso.
  
-![Azure contêineres dedicados](media/office-365-isolation-azure-dedicated-containers.png)
+![Contêineres dedicados do Azure](media/office-365-isolation-azure-dedicated-containers.png)
 
-Além disso, não há nenhum componente do aplicativo que pode ser executado de dentro do Windows Azure Active Directory, e não é possível para um locatário obrigatoriamente violar a integridade do outro locatário, acessar as chaves de criptografia do outro locatário ou ler dados brutos do servidor.
+Além disso, não há componentes de aplicativo que podem ser executados de dentro do Azure Active Directory, e não é possível que um locatário viole forçosamente a integridade de outro locatário, chaves de criptografia de acesso de outro locatário ou leia dados brutos do servidor.
 
-Por padrão, o Azure Active Directory proíbe todas as operações emitidas por identidades em outros tenants. Cada locatário é isolado logicamente dentro do Azure Active Directory por meio de controles de acesso baseado em declarações. Leituras e gravações de dados são contêineres de locatário o escopo e de entrada para uma camada de abstração interno e a camada de acesso baseado em função RBAC (controle), que juntos impor o locatário como o limite de segurança de diretório. Todas as solicitações de acesso de dados do diretório é processada por essas camadas e todas as solicitações de acesso no Office 365 é controlada pela lógica de acima.
+Por padrão, o Azure Active Directory proíbe todas as operações emitidas por identidades em outros locatários. Cada locatário é logicamente isolado no Azure Active Directory por meio de controles de acesso baseados em declarações. Leituras e gravações de dados de diretório são delimitadas aos contêineres de locatários e restringidas por uma camada de abstração interna e uma camada de controle de acesso baseado em função (RBAC), que juntos aplicam o locatário como o limite de segurança. Todas as solicitações de acesso a dados de diretório são processadas por essas camadas e todas as solicitações de acesso no Office 365 são vigiadas pela lógica acima.
 
-Azure Active Directory possui América do Norte, governo dos Estados Unidos, União Europeia, Alemanha e World Wide partições. Um locatário existe em uma única partição e partições podem conter vários locatários. Informações de partição são abstraídas dos usuários. Uma determinada partição (incluindo todos os locatários dentro dele) é replicada para vários centros de dados. A partição para um inquilino for escolhida com base nas propriedades do inquilino (por exemplo, o código do país). Segredos e outras informações confidenciais em cada partição é criptografado com uma chave dedicada. As chaves são geradas automaticamente quando uma nova partição é criada.
+O Azure Active Directory tem a América do Norte, governo dos EUA, União Européia, Alemanha e partições mundiais. Há um locatário em uma única partição, e as partições podem conter vários locatários. As informações de partição são recortadas dos usuários. Uma determinada partição (incluindo todos os locatários dentro dela) é replicada em vários datacenters. A partição de um locatário é escolhida com base nas propriedades do locatário (por exemplo, o código do país). Segredos e outras informações confidenciais em cada partição são criptografados com uma chave dedicada. As chaves são geradas automaticamente quando uma nova partição é criada.
 
-Funcionalidades de sistema do Azure Active Directory são uma instância exclusiva para cada sessão de usuário. Além disso, o Azure Active Directory usa as tecnologias de criptografia para oferecer isolamento de recursos compartilhados do sistema no nível da rede para evitar a transferência não autorizada e acidentais de informações.
+As funcionalidades de sistema do Azure Active Directory são uma instância exclusiva para cada sessão de usuário. Além disso, o Azure Active Directory usa tecnologias de criptografia para fornecer isolamento de recursos compartilhados do sistema no nível da rede para impedir a transferência não autorizada e indesejada das informações.

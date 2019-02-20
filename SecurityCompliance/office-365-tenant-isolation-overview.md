@@ -1,5 +1,5 @@
 ---
-title: Isolamento de Inquilino no Office 365
+title: Isolamento de locatário no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,32 +10,34 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Um resumo de como o Microsoft impõe o isolamento de Inquilino do Office 365.
-ms.openlocfilehash: fcf66ee65c2a4cfdf73ae0eac77f54bd555d059d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Um resumo de como a Microsoft impõe o isolamento de locatário para o Office 365.
+ms.openlocfilehash: c0b58f149ace1e6b1ecf179534bdd75d15840a7f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524118"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090983"
 ---
-# <a name="tenant-isolation-in-office-365"></a>Isolamento de Inquilino no Office 365
+# <a name="tenant-isolation-in-office-365"></a>Isolamento de locatário no Office 365
 
-Um dos principais benefícios da nuvem computação é o conceito de uma infraestrutura compartilhada, comum entre vários clientes simultaneamente, levando a economia de escala. Esse conceito é chamado de *multilocação*. A Microsoft trabalha continuamente para garantir que as arquiteturas de multilocatários de nossos serviços de nuvem oferecem suporte aos padrões de segurança, confidencialidade, privacidade, integridade e disponibilidade de nível empresarial.
+Um dos principais benefícios da computação em nuvem é o conceito de uma infraestrutura comum e compartilhada em vários clientes ao mesmo tempo, levando em economia de escala. Esse conceito é chamado *de multilocação*. A Microsoft trabalha continuamente para garantir que as arquiteturas de vários locatários de nossos serviços de nuvem suportam padrões de segurança, confidencialidade, privacidade, integridade e disponibilidade de nível empresarial.
 
-Com base nos investimentos significativos e experiência obtidas do [Trustworthy Computing](https://www.microsoft.com/en-us/twc/default.aspx) e o [Security Development Lifecycle](http://www.microsoft.com/security/sdl/default.aspx), serviços de nuvem da Microsoft foram projetados com a pressuposição de que todos os locatários são potencialmente hostis a todos outros tenants e podemos implementou as medidas de segurança para impedir que as ações de um inquilino afetar a segurança ou o serviço de outro locatário, ou acessem o conteúdo de outro locatário.
+Com base nos investimentos e na experiência significativos coletados da [computação confiável](https://www.microsoft.com/en-us/twc/default.aspx) e do [ciclo de vida de desenvolvimento de segurança](http://www.microsoft.com/security/sdl/default.aspx), os serviços de nuvem da Microsoft foram criados com a suposição de que todos os locatários sejam hosts potencialmente hostil para todos outros locatários e implementamos medidas de segurança para impedir que as ações de um locatário afetem a segurança ou o serviço de outro locatário ou acessem o conteúdo de outro locatário.
 
-Os dois objetivos principais de manter o isolamento de locatário em um ambiente de multilocação são:
-1.  Impedindo o vazamento de ou acesso não autorizado a, conteúdo de cliente entre locatários; e
-2.  Impedindo que as ações de um inquilino afetar adversamente o serviço para outro locatário
+As duas metas principais para manter o isolamento de locatário em um ambiente de vários locatários são:
+1.  Impedir o vazamento ou o acesso não autorizado ao conteúdo do cliente nos locatários; e
+2.  Impedir que as ações de um locatário afetem adversamente o serviço para outro locatário
 
-Vários formulários de proteção foram implementados ao longo do Office 365 para impedir que os clientes de serviços do Office 365 comprometer ou aplicativos ou que tenha acesso não autorizado às informações de outros tenants ou o sistema do Office 365 propriamente dito, incluindo:
-- Isolamento lógico do conteúdo de cliente dentro de cada locatário para serviços do Office 365 é obtido por meio de autorização do Azure Active Directory e controle de acesso baseado em função.
-- SharePoint Online oferece mecanismos de isolamento no nível de armazenamento de dados.
-- A Microsoft usa rigorosa segurança física, triagem de plano de fundo e uma estratégia de várias camadas de criptografia para proteger a confidencialidade e a integridade do conteúdo de cliente. Todos os centros de dados do Office 365 têm controles de acesso biométrica, com mais exigir imprime palm para obter acesso físico. Além disso, os funcionários da Microsoft todas baseadas em US são necessárias para concluir com êxito uma verificação de plano de fundo padrão como parte do processo de contratação. Para obter mais informações sobre os controles usados para acesso administrativo no Office 365, consulte [Controles de acesso administrativo do Office 365](office-365-administrative-access-controls-overview.md).
-- O Office 365 usa tecnologias no lado do serviço que criptografar conteúdo de cliente em repouso e em trânsito, incluindo o BitLocker, criptografia por arquivo, segurança de camada de transporte (TLS) e Internet Protocol Security (IPsec). Para obter detalhes específicos sobre a criptografia no Office 365, consulte [Tecnologias de criptografia de dados no Office 365](office-365-encryption-in-the-microsoft-cloud-overview.md).
+Várias formas de proteção foram implementadas em todo o Office 365 para impedir que os clientes comprometam serviços ou aplicativos do Office 365 ou obtenham acesso não autorizado às informações de outros locatários ou ao próprio sistema do Office 365, incluindo:
+- O isolamento lógico do conteúdo do cliente dentro de cada locatário para os serviços do Office 365 é obtido por meio da autorização do Azure Active Directory e do controle de acesso baseado em função.
+- O SharePoint Online fornece mecanismos de isolamento de dados no nível de armazenamento.
+- A Microsoft usa rigorosa segurança física, a triagem de plano de fundo e uma estratégia de criptografia em várias camadas para proteger a confidencialidade e integridade do conteúdo do cliente. Todos os datacenters do Office 365 têm controles de acesso biométrico, com a maioria dos que precisam de impressões Palm para obter acesso físico. Além disso, todos os funcionários da Microsoft baseados nos EUA são necessários para concluir com êxito uma verificação em segundo plano padrão como parte do processo de contratação. Para obter mais informações sobre os controles usados para acesso administrativo no Office 365, consulte [controles de acesso administrativo do office 365](office-365-administrative-access-controls-overview.md).
+- O Office 365 usa tecnologias do lado do serviço que criptografam o conteúdo do cliente em repouso e em trânsito, incluindo BitLocker, criptografia por arquivo, segurança da camada de transporte (TLS) e segurança do protocolo Internet (IPsec). Para obter detalhes específicos sobre a criptografia no Office 365, consulte [tecnologias de criptografia de dados no office 365](office-365-encryption-in-the-microsoft-cloud-overview.md).
 
-Juntos, as proteções listados acima fornecem controles de isolamento lógico robusta que oferecem proteção contra ameaças e redução de risco equivalente à fornecida por isolamento físico sozinho.
+Juntos, as proteções acima listadas oferecem controles de isolamento lógicos sólidos que oferecem proteção contra ameaças e redução equivalente ao que é fornecido apenas por um isolamento físico.
 
 ## <a name="related-links"></a>Links relacionados
 - [Isolamento e controle de acesso do Azure Active Directory](office-365-isolation-in-azure-active-directory.md)

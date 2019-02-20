@@ -1,5 +1,5 @@
 ---
-title: Princípios de núcleo do Office 365 de defesa contra ataques de negação de serviço
+title: Princípios básicos do Office 365 de defesa contra ataques de negação de serviço
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,33 +9,35 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Como a Microsoft usa os princípios fundamentais de absorção, detecção e redução de risco em sua defesa contra ataques (dos negação) de negação de serviço.
-ms.openlocfilehash: e313d5514e9bc493db78bebffca24a0fae4cbca7
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Como a Microsoft utiliza os princípios fundamentais de absorção, detecção e atenuação em sua defesa contra ataques de negação de serviço (DoS).
+ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741094"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091003"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Princípios básicos de defesa contra ataques de negação de serviço
 
-Os três principais princípios quando defesa contra ataques DoS baseada em rede é absorção, detecção e redução de risco. Absorção ocorre antes da detecção, e a detecção acontece antes de redução de risco. Absorção é a melhor defesa contra um ataques DoS. Se o ataque não pode ser detectado, ele não pode ser atenuado. Mas se até mesmo o menor ataque DoS não pode ser absorver acordo, em seguida, serviços não são irá sobreviver tempo suficiente para que o ataque seja detectada.
+Os três princípios fundamentais ao se defender contra ataques de DoS baseados em rede são absorção, detecção e mitigação. A absorção ocorre antes da detecção e a detecção ocorre antes da redução. O absorção é a melhor defesa contra ataques de DoS. Se não for possível detectar o ataque, não será possível diminuí-lo. Mas, se mesmo o menor ataque de DoS não puder ser absorvido, os serviços não ficarão sobreviventes o suficiente para que o ataque seja detectado.
 
-Obviamente, geralmente não é economicamente possível para a maioria das organizações adquirir o excesso de capacidade necessário absorver ataques DoS, pois isso requer um investimento considerável em tecnologia e habilidades técnicas. Isso realça um dos benefícios do uso de serviços de nuvem da Microsoft; segurança a escala enorme de nossos serviços nos permite oferecer proteção de rede forte a nossos clientes de nuvem de forma econômica. Mas, até mesmo em nossa escala, porém, deve existir um equilíbrio entre a absorção, detecção e redução de risco. Para localizar esse equilíbrio, podemos estudar a taxa de crescimento do ataque para estimar quanto precisamos absorver.
+Obviamente, geralmente não é possível ser economicamente viável para a maioria das organizações comprar a capacidade em excesso necessária para absorver ataques de DoS, já que isso requer um investimento considerável em tecnologia e habilidades técnicas. Isso realça um dos benefícios de segurança do uso dos serviços de nuvem da Microsoft; a escalabilidade de nossos serviços nos permite fornecer uma forte proteção de rede para nossos clientes de nuvem de forma econômica. Mas mesmo em nossa escala, no entanto, ainda deve haver um equilíbrio entre absorção, detecção e mitigação. Para encontrar esse saldo, estudamos a taxa de crescimento de um ataque para estimar a quantidade de necessidade de absorver.
 
-Detecção é um jogo cat-and-mouse. Você deve constantemente olhar para as novas pessoas maneiras são ataque a você ou tentando vencer seus sistemas. Detectar - gt _ atenuar - gt _ detectar - gt _ minimizar, etc., é um estado perpétua persistente que continuará indefinidamente.
+A detecção é um jogo de gato e mouse. Você deve procurar constantemente por novas maneiras pelas quais as pessoas estão atacando você ou tentando derrotar seus sistemas. Detect-> Atenuate-> Detect-> atenuar, etc., é um estado permanente e persistente que continuará indefinidamente.
 
-## <a name="defending-against-dos-attacks"></a>Defesa contra ataques DoS
+## <a name="defending-against-dos-attacks"></a>Como se proteger contra ataques de DoS
 
-Para obter êxito proteção contra um ataque DoS, detecção antecipada é essencial. Detectando um ataque antes que o sistema está sobrecarregado, defensores podem executar um plano de resposta.
+Para se defender com êxito contra ataques de DoS, a detecção antecipada é essencial. Ao detectar um ataque antes que o sistema fique sobrecarregado, os defensores podem executar um plano de resposta.
 
-A fórmula a seguir ajudarão aproximado o tempo de impacto de um ataque DoS:
+A fórmula a seguir ajudará a aproximar o tempo de impacto de um ataque de DoS:
 
-   **Capacidade máxima (em bytes/seg) / taxa de crescimento (em bytes/seg) = tempo até o impacto (em bytes/seg)**
+   **Capacidade máxima (em bytes/seg)/taxa de crescimento (em bytes/seg) = tempo de impacto (em bytes/seg)**
 
-Se o tempo para detecção ocorre após o tempo para impacto, e em seguida, é provável que o ataque DoS será aprovado. Se o tempo para detecção ocorre antes do impacto no tempo, os serviços que está sendo atacados devem permanecer online e acessível, se as estratégias de redução de risco são usadas. Assim, há apenas duas coisas que podem ser feitas para se proteger contra ataques DoS:
-- Aumentar a capacidade que eleve o teto da capacidade máxima (que por sua vez, fornece mais tempo para detectar um ataque); ou
-- Reduza o tempo para detectar.
+Se o tempo de detecção ocorrer após o tempo de impacto, é provável que o ataque de DoS seja bem-sucedido. Se o tempo de detecção ocorrer antes do tempo de impacto, os serviços que estão sendo atacados devem permanecer online e acessíveis, se as estratégias de mitigação forem usadas. Portanto, há apenas duas coisas que podem ser realizadas para se defender contra ataques de DoS:
+- Aumente a capacidade para elevar o teto da capacidade máxima (que, por sua vez, fornece mais tempo para detectar um ataque); ou
+- Diminuir o tempo para detectar.
 
-Aumento da capacidade tem um impacto fiscal direto. A Microsoft recomenda que os clientes desenvolvem absorção básica pelo menos capacidade, para garantir que eles podem sobreviver algum nível de ataque DoS. A capacidade de absorção real irá variar de cliente para cliente, como cada cliente tem seus próprios limites de gastos financeiros, riscos e exposição. Por fim, por razões econômicas, investimentos de pesquisas e tempo de maneiras de reduzir o tempo para detecção geralmente são a defesa mais econômica.
+O aumento da capacidade tem um impacto fiscal direto. A Microsoft recomenda que os clientes desenvolvam pelo menos a capacidade básica de absorção, para garantir que eles possam sobreviver a algum nível de ataque de DoS. A capacidade de absorção real varia de cliente para cliente, uma vez que cada cliente tem seus próprios limites de exposição, risco e outlay financeiro. Em última análise, por motivos econômicos, os investimentos de pesquisa e tempo para reduzir o tempo de detecção normalmente são a defesa mais econômica.
