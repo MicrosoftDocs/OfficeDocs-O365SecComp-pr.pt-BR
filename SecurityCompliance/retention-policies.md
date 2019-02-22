@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202752"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -224,7 +224,13 @@ Quando você escolhe os usuários do Skype for Business, pode incluir rapidament
   
 ![Página Escolher usuários do Skype](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Observe que o **Histórico da Conversa**, uma pasta no Outlook, é um recurso que não tem nada a ver com o arquivamento do Skype. **Histórico da Conversa** pode ser desativado pelo usuário final, mas o arquivamento para o Skype é feito armazenando-se uma cópia das conversas do Skype em uma pasta oculta que é inacessível ao usuário, mas disponível para Descoberta Eletrônica. 
+Observe que o **Histórico da Conversa**, uma pasta no Outlook, é um recurso que não tem nada a ver com o arquivamento do Skype. **Histórico da Conversa** pode ser desativado pelo usuário final, mas o arquivamento para o Skype é feito armazenando-se uma cópia das conversas do Skype em uma pasta oculta que é inacessível ao usuário, mas disponível para Descoberta Eletrônica.
+
+### <a name="office-365-groups-locations"></a>Locais de grupos do Office 365
+
+Para reter o conteúdo de um Grupo do Office 365, é necessário usar o local dos grupos do Office 365. Mesmo que um Grupo do Office 365 tenha uma caixa de correio do Exchange, uma política de retenção que inclua todo o local do Exchange não incluirá conteúdo nas caixas de correio de Grupo do Office 365. Uma política de retenção aplicada a um grupo do Office 365 inclui a caixa de correio do grupo e um site.
+
+Além disso, não é possível usar o local do Exchange para incluir ou excluir uma caixa de correio de grupo específica. Embora o local do Exchange permita inicialmente que uma caixa de correio de grupo seja selecionada, quando você tentar salvar a política de retenção, receberá um erro informando que "RemoteGroupMailbox" não é uma seleção válida para o local do Exchange. 
   
 ### <a name="teams-locations"></a>Locais do Teams
 

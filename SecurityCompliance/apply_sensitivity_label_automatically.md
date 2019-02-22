@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode atribuir automaticamente um rótulo ao documento ou email, ou solicitar que os usuários selecionem o rótulo recomendado.
-ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
-ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
+ms.openlocfilehash: a65b0848d6fb875366d35a0130ccc45cbe7adc75
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202782"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar um rótulo de confidencialidade automaticamente ao conteúdo
 

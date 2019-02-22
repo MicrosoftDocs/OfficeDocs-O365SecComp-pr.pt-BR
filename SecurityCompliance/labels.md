@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614495"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202762"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -229,6 +229,10 @@ Também é possível criar um modo de exibição da biblioteca que contém a col
 ### <a name="office-365-groups"></a>Grupos do Office 365
 
 Ao publicar rótulos de retenção em um grupo do Office 365, eles aparecem no site do grupo e na caixa de correio do grupo no Outlook na Web. A experiência de aplicação de um rótulo de retenção ao conteúdo é idêntica à exibida acima para email e documentos.
+
+Para reter o conteúdo de um Grupo do Office 365, é necessário usar o local dos grupos do Office 365. Mesmo que um Grupo do Office 365 tenha uma caixa de correio do Exchange, uma política de retenção que inclua todo o local do Exchange não incluirá conteúdo nas caixas de correio de Grupo do Office 365.
+
+Além disso, não é possível usar o local do Exchange para incluir ou excluir uma caixa de correio de grupo específica. Embora o local do Exchange permita inicialmente que uma caixa de correio de grupo seja selecionada, quando você tentar salvar a política de retenção, receberá um erro informando que "RemoteGroupMailbox" não é uma seleção válida para o local do Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Aplicar um rótulo de retenção automaticamente com base em condições
 
