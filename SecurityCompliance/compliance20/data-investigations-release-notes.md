@@ -1,48 +1,48 @@
 ---
-title: Notas de versão do investigações de dados (Preview) no Microsoft 365
+title: Notas de versão para investigações de dados (visualização) no Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artigo descreve a nova versão do eDiscovery avançado (Preview) no Microsoft 365.
-ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Este artigo descreve a nova versão da descoberta eletrônica avançada (prévia) no Microsoft 365.
+ms.openlocfilehash: 851712d6eae876f4c74c4d3322de487d3ff14858
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695057"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212801"
 ---
-# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de versão do investigações de dados (Preview) no Microsoft 365
+# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de versão para investigações de dados (visualização) no Microsoft 365
 
-Você pode usar a nova ferramenta investigações de dados (Preview) no Microsoft 365 triagem, investigar e corrigir os dados relacionados incidentes, como uma investigação interna ou de um incidente de algum derramamento de dados. As investigações de visualização de dados públicos oferece acesso antecipado à funcionalidade futura e atualizações. Para obter acesso antecipado para os recursos mais recentes, crie uma nova investigação em investigações de dados (Preview) no Centro de conformidade do & de segurança do Office 365. Para saber como fazer isso, consulte [Manage um incidente de algum derramamento de dados no Microsoft 365](manage-data-spillage-incidents.md).
+Você pode usar a ferramenta novas investigações de dados (visualização) no Microsoft 365 para fazer a triagem, investigar e corrigir incidentes relacionados a dados, como um incidente de derramamento de dados ou uma investigação interna. A visualização pública de investigações de dados fornece acesso antecipado às futuras funcionalidades e atualizações. Para obter acesso antecipado aos recursos mais recentes, crie uma nova investigação em investigações de dados (visualização) no centro de conformidade do & de segurança do Office 365. Para saber como, confira [gerenciar um incidente de derramamento de dados no Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novidades 
 
-- **Investigações** - você pode agrupar pesquisas e incidentes criando uma investigação. Gerencie quem pode acessar a investigação adicionando ou removendo membros.  Você também pode selecionar e marcar suas investigações favoritas. Controlar e monitorar a atividade dentro e entre investigações usando novos painéis. Depois de concluir sua investigação, você pode fechar ou excluí-lo.
+- **Investigações** – você pode agrupar pesquisas e incidentes criando uma investigação. Gerenciar quem pode acessar a investigação adicionando ou removendo membros.  Você também pode selecionar e marcar suas investigações favoritas. Controlar e monitorar a atividade dentro e nas investigações usando novos painéis. Depois de concluir sua investigação, você pode fechá-la ou excluí-la.
 
-- **Pessoas de interesse** – quando você adiciona usuários para investigações como pessoas de interesse, você pode ver suas caixas de correio, OneDrive para negócios conta e sites de Teams da Microsoft. Você pode usá-los à suas investigação pesquisas de conteúdo de escopo. Para obter mais investigar uma pessoa de interesse, também é possível exibir auditar registros relacionados a suas atividades no Office 365 e outros serviços da Microsoft.
+- **Pessoas de interesse** – ao adicionar usuários a investigações como pessoas de interesse, você pode ver a caixa de correio, a conta do onedrive for Business e os sites do Microsoft Teams. Você pode usá-los para fazer o escopo das pesquisas de conteúdo investigativas. Para investigar ainda mais uma pessoa de interesse, você também pode exibir registros de auditoria relacionados às suas atividades no Office 365 e outros serviços da Microsoft.
 
-- **Pesquisas** – criar uma pesquisa de toda a organização usando diversas condição de pesquisa. Se você souber a usuários ou sites que você deseja pesquisar, você pode fazer isso, esses usuários adicionando pessoas de interesse ou especificação locais de site no Assistente para criação de pesquisa. 
+- **Pesquisas** – crie uma pesquisa em toda a organização usando várias condições de pesquisa. Se você souber os usuários ou sites que deseja pesquisar, poderá fazê-lo adicionando-os como pessoas de interesse ou especificando locais de site no assistente de criação de pesquisa. 
 
-- **Incidentes** – criar um novo incidente e adicionar os resultados de pesquisa que você deseja analisar. Você pode analisar documentos individuais, anotar para deixar investigação anotações e exportar os resultados para mover para um ambiente diferente. 
+- **Incidentes** – crie um novo incidente e adicione resultados de pesquisa que você deseja examinar. Você pode revisar documentos individuais, anotar para sair de notas de investigação e exportar resultados para mover para um ambiente diferente. 
 
-- **Revise** – Use uma nativo, texto e modo de exibição de quase nativos para analisar documentos adicionados a um incidente. Você também pode aplicar analytics aos documentos agrupar itens, duplicatas, threads de email e temas, que podem ajudar a ajudar sua revisão do incidente. 
+- **Revisão** – use um modo de exibição nativo, de texto e quase nativo para revisar os documentos adicionados a um incidente. Você também pode aplicar a análise a documentos para agrupar itens por duplicatas, threads de email e temas, que podem ajudar a analisar o incidente. 
 
-- **Redact, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você examine os documentos.
+- **Redigir, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você revisar documentos.
   
-- **Indexação minuciosa** – se houver itens indexados parcialmente, eles serão indexados novamente sob demanda para que todos os dados estarão disponíveis para pesquisa.
+- **IndexAção profunda** – se houver algum item parcialmente indexado, eles serão novamente reindexados por demanda, de forma que todos os dados estarão disponíveis para pesquisa.
 
-- **Correção de erro** – corrigir ou erros de processamento de download. Isso inclui o suporte de remediação para tipos de arquivos grandes, arquivos e outros problemas relacionados à indexação erros protegido por senha. 
+- **Correção de erro** : corrigir ou baixar erros de processamento. Isso inclui suporte de correção para tipos de arquivo grandes, arquivos protegidos por senha e outros problemas relacionados a erros de indexação. 
 
-- **Trabalhos** – controlar o status dos processos de longa execução.
+- **Jobs** – rastreie o status de processos de execução longa.
 
-- **Itens de caixa de correio rígido-delete** - urgente situações, você talvez seja necessário excluir permanentemente os itens no local errado. Para fazer isso, você pode executar o **New-ComplianceSearchAction-limpar - PurgeType HardDelete** command na segurança & PowerShell do Centro de conformidade para remover permanentemente os itens de caixas de correio. Para obter mais informações, consulte [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Itens de caixa de correio de exclusão de hardware** -em situações urgentes, talvez seja necessário excluir permanentemente os itens no local errado. Para fazer isso, você pode executar o comando **New-ComplianceSearchAction-purga-PurgeType HardDelete** no Security & centro de conformidade do PowerShell para remover itens permanentemente das caixas de correio. Para obter mais informações, consulte [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

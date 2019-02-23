@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,61 +14,61 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
-description: Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
+ms.openlocfilehash: eac984289cf5e2785e8ff61e4a3dd3e0c0d99732
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749315"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213561"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza Automática Zero Hora – proteção contra spam e malware
 
 ## <a name="overview"></a>Visão geral
 
-Limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com malware, spam ou phishing que já foram entregues às caixas de entrada dos usuários e processa o conteúdo mal-intencionado inofensiva. Como ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado; email pode ser zapped devido ao conteúdo de email, URLs ou anexos.
+A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com phishing, spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP depende do tipo de conteúdo mal-intencionado detectado; os emails podem ser zapped devido a conteúdo, URLs ou anexos de email.
   
-ZAP está disponível com o Exchange Online Protection for incluído com qualquer assinatura do Office 365 que contenha caixas de correio Exchange Online padrão.
+O ZAP está disponível com a proteção do Exchange Online padrão incluída em qualquer assinatura do Office 365 que contenha caixas de correio do Exchange Online.
 
-ZAP está ativado por padrão, mas as seguintes condições devem ser atendidas:
+O ZAP é ativado por padrão, mas as seguintes condições devem ser atendidas:
   
-- **Ação de spam** é definido para **mover a mensagem para a pasta Lixo eletrônico**. <br/>Você também pode criar uma nova política de filtro de spam que se aplica somente a um conjunto de usuários se não desejar que todas as caixas de correio a ser filtrada pelo ZAP.
+- A **ação de spam** é definida para **mover a mensagem para a pasta lixo eletrônico**. <br/>Você também pode criar uma nova política de filtro de spam que se aplique somente a um conjunto de usuários se não quiser que todas as caixas de correio sejam filtradas por ZAP.
 
-- Os usuários têm mantidos seu padrão configurações de lixo eletrônico e não tem desativado de proteção de lixo eletrônico. (Consulte [alterar o nível de proteção em que o filtro de lixo eletrônico](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obter detalhes sobre as opções de usuário no Outlook.) 
+- Os usuários mantiveram suas configurações de lixo eletrônico padrão e não desativaram a proteção de lixo eletrônico. (Consulte [alterar o nível de proteção no filtro de lixo eletrônico](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obter detalhes sobre as opções do usuário no Outlook.) 
   
-## <a name="how-does-zap-work"></a>Como funciona o ZAP?
+## <a name="how-does-zap-work"></a>Como o ZAP funciona?
 
-Atualizações de assinaturas de mecanismo e malware antispam do Office 365 em tempo real em uma base diária. No entanto, os usuários ainda podem obter mal-intencionado mensagens entregues a suas caixas de entrada para uma variedade de motivos, incluindo se o conteúdo é aproveitado depois de ser entregue aos usuários. Apagar tudo isso por meio do monitoramento continuamente atualiza e as assinaturas do Office 365 spam e malware de endereços. ZAP pode encontrar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários. 
+O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No enTanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários. 
 
-- Para email que é identificado como spam, ZAP move mensagens não lidas para a pasta Lixo eletrônico dos usuários. 
+- Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários. 
 
-- Para email que é identificado como spam, ZAP move mensagens para a pasta de lixo eletrônico dos usuários, independentemente se o email foi lido.
+- Para email identificado como spam, o ZAP move mensagens para a pasta lixo eletrônico dos usuários, independentemente se o email foi lido.
 
-- Para malware detectado recentemente, ZAP remove anexos das mensagens de email, independentemente se o email foi lido. 
+- Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido. 
   
-A ação ZAP é perfeita para o usuário de caixa de correio; eles não são notificados se uma mensagem de email for movida.
+A ação ZAP é transparente para o usuário da caixa de correio; Eles não são notificados quando uma mensagem de email é movida.
   
-Permitir listas, [regras de fluxo de correio](https://go.microsoft.com/fwlink/p/?LinkId=722755)e regras do usuário final ou filtros adicionais têm precedência sobre ZAP.
+As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p/?LinkId=722755)de emails e as regras de usuário final ou filtros adicionais têm precedência sobre o zap.
   
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar ou definir uma política de filtro de spam
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar ou configurar uma política de filtro de spam
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365.
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365.
 
-2. Em **gerenciamento de ameaça**, escolha **anti-spam**.
+2. Em **Gerenciamento de ameaças**, escolha **anti-spam**.
 
 3. Revise as configurações padrão. 
 
-4. Se desejar personalizar suas configurações, selecione a guia **personalizada** e ativar **configurações personalizadas**. Editar suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova diretiva. 
+4. Se você quiser personalizar suas configurações, selecione a guia **personalizado** e ative **as configurações personalizadas**. Edite suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova política. 
     
-## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP movida sua mensagem
+## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP moveu sua mensagem
 
-Se você quiser ver se ZAP movida sua mensagem, você pode usar o [relatório de Status de proteção de ameaça](view-email-security-reports.md#threat-protection-status-report) (tanto na [Ameaça Explorer](use-explorer-in-security-and-compliance.md)).
+Se você deseja ver se ZAP moveu sua mensagem, pode usar o relatório de [status de proteção contra ameaças](view-email-security-reports.md#threat-protection-status-report) (ou o [Gerenciador de ameaças](use-explorer-in-security-and-compliance.md)).
     
-## <a name="to-disable-zap"></a>Para desabilitar ZAP
+## <a name="to-disable-zap"></a>Para desabilitar o ZAP
   
-Se você deseja desabilitar Apagar tudo para seu locatário do Office 365 ou um conjunto de usuários, use o parâmetro **ZapEnabled** do [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet do EOP.
+Se você quiser desabilitar o ZAP para o seu locatário do Office 365, ou um conjunto de usuários, use o parâmetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
     
-No exemplo a seguir, ZAP está desabilitado para uma política de filtro de conteúdo chamada "Test".
+No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conteúdo chamada "Test".
     
 ```
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
@@ -76,21 +76,21 @@ No exemplo a seguir, ZAP está desabilitado para uma política de filtro de cont
 
 ## <a name="faq"></a>Perguntas frequentes
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>O que acontece se uma mensagem legítima é movida para a pasta Lixo eletrônico?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>O que acontece se uma mensagem legítima for movida para a pasta lixo eletrônico?
   
-Você deve seguir o processo de emissão normal de falsos positivos. A única razão seria movida a mensagem da caixa de entrada para a pasta Lixo eletrônico seria porque o serviço determinou que a mensagem foi spam ou mal intencionado.
+Você deve seguir o processo de relatório normal para falsos positivos. A única razão pela qual a mensagem seria movida da caixa de entrada para a pasta lixo eletrônico seria porque o serviço determinou que a mensagem era spam ou mal-intencionada.
   
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>Se usar a quarentena do Office 365 em vez da pasta de lixo eletrônico?
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>E se eu usar a quarentena do Office 365 em vez da pasta lixo eletrônico?
   
-ZAP não move mensagens em quarentena na caixa de entrada no momento.
+ZAP não move mensagens para a quarentena da caixa de entrada neste momento.
   
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>E se eu tiver uma regra de fluxo de email personalizado (bloquear / permitir regra)?
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>E se eu tiver uma regra de fluxo de emails personalizada (regra bloquear/permitir)?
   
-Regras criadas por administradores (regras de fluxo de email) ou regras de bloqueio e permitir têm precedência. Essas mensagens são excluídas dos critérios de recurso.
+Regras criadas por administradores (regras de fluxo de emails) ou regras de bloqueio e permissão têm precedência. Essas mensagens são excluídas dos critérios de recurso.
   
 ## <a name="related-topics"></a>Tópicos Relacionados
 
-[Proteção antispam de emails do Office 365](anti-spam-protection.md)
+[Proteção anti-spam de emails do Office 365](anti-spam-protection.md)
   
 [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](block-email-spam-to-prevent-false-negatives.md)
   

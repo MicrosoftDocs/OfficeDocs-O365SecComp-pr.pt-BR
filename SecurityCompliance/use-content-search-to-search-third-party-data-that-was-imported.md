@@ -1,58 +1,58 @@
 ---
-title: Use a pesquisa de conteúdo para pesquisar dados de terceiros que foi importados para o Office 365
+title: Usar a pesquisa de conteúdo para pesquisar dados de terceiros que foram importados para o Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo para procurar itens que tenham sido importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para procurar todos os itens importados ou criar uma consulta para pesquisar por tipos de dados específicos de terceiros. Este artigo lista os valores que você pode usar em uma consulta de palavra-chave para pesquisar os tipos de dados de terceiros que podem ser importados para o Office 365.
-ms.openlocfilehash: 6829e894ba687fb09184c32201f76394e37bbbf8
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados ou criar uma consulta para Pesquisar tipos de dados específicos de terceiros. Este artigo lista os valores que podem ser usados em uma consulta de palavra-chave para pesquisar os tipos de dados de terceiros que podem ser importados para o Office 365.
+ms.openlocfilehash: 793024f765aa1d016f7a043d14eb75ca6c2435c3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037964"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214871"
 ---
-# <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Use a pesquisa de conteúdo para pesquisar dados de terceiros que foi importados para o Office 365
+# <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar a pesquisa de conteúdo para pesquisar dados de terceiros que foram importados para o Office 365
 
-Você pode usar a [ferramenta de pesquisa de conteúdo de descoberta eletrônica](content-search.md) no Office 365 Security &amp; Centro de conformidade para procurar itens que tenham sido importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar importados todos os itens de dados de terceiros ou você pode criar uma consulta para pesquisar somente itens de dados específicos de terceiros. Além disso, você também pode criar uma política de preservação baseado em consulta ou uma descoberta eletrônica baseado em consulta espera preservar dados de terceiros no Office 365. 
+Você pode usar a [ferramenta de descoberta eletrônica de pesquisa de conteúdo](content-search.md) no &amp; centro de conformidade de segurança do Office 365 para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados de dados de terceiros ou pode criar uma consulta para pesquisar apenas itens de dados de terceiros específicos. Além disso, você também pode criar uma política de preservação baseada em consulta ou uma descoberta eletrônica baseada em consulta para preservar dados de terceiros no Office 365. 
   
-Para obter mais informações sobre a importação de dados de terceiros e uma lista dos tipos de dados de terceiros que podem ser importados para o Office 365, consulte [arquivamento dados de terceiros no Office 365](archiving-third-party-data.md). 
+Para obter mais informações sobre a importação de dados de terceiros e uma lista dos tipos de dados de terceiros que podem ser importados para o Office 365, consulte arquivamento de dados de terceiros [no office 365](archiving-third-party-data.md). 
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a>Criando uma consulta para pesquisar todos os dados de terceiros
+## <a name="creating-a-query-to-search-all-third-party-data"></a>Criar uma consulta para pesquisar todos os dados de terceiros
 
-Para pesquisar (ou colocada em espera) qualquer tipo de dados de terceiros que você importou para o Office 365, é possível que você pode usar o `kind:externaldata` par de mensagens do valor da propriedade na caixa de palavra-chave para uma pesquisa de conteúdo ou ao criar uma isenção baseado em consulta. Por exemplo, para procurar itens que tenham sido importados de qualquer fonte de dados de terceiros e contêm a palavra "contoso" na propriedade assunto do item importado, você usaria a seguinte consulta: 
+Para pesquisar (ou colocar em espera) qualquer tipo de dados de terceiros que você importou para o Office 365, é possível usar o `kind:externaldata` par propriedade-valor da mensagem na caixa palavra-chave para uma pesquisa de conteúdo ou ao criar uma retenção baseada em consulta. Por exemplo, para pesquisar itens que foram importados de qualquer fonte de dados de terceiros e que contenham a palavra "contoso" na propriedade Subject do item importado, você usaria a seguinte consulta: 
   
 ```
 kind:externaldata AND subject:contoso
 ```
 
-O exemplo anterior de consulta de palavra-chave inclui a propriedade subject. Para obter uma lista das outras propriedades para itens de dados de terceiros que podem incluído em uma consulta de palavra-chave, consulte a seção "Mais informações" em [arquivamento de dados de terceiros no Office 365](archiving-third-party-data.md#more-information).
+O exemplo de consulta de palavra-chave anterior inclui a propriedade Subject. Para obter uma lista de outras propriedades dos itens de dados de terceiros que podem ser incluídos em uma consulta de palavra-chave, consulte a seção "mais informações" em arquivamento de [dados de terceiros no Office 365](archiving-third-party-data.md#more-information).
   
-Ao criar consultas para pesquisar e manter os dados de terceiros, você também pode usar condições para restringir os resultados da pesquisa. Para obter mais informações sobre como criar consultas de pesquisa de conteúdo, consulte [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md).
+Ao criar consultas para pesquisar e manter dados de terceiros, você também pode usar condições para restringir os resultados da pesquisa. Para obter mais informações sobre a criação de consultas de pesquisa de conteúdo, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Criando uma consulta para pesquisar tipos específicos de dados de terceiros
+## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Criar uma consulta para Pesquisar tipos específicos de dados de terceiros
 
-Em vez de pesquisar todos os tipos de dados de terceiros, você pode criar consultas de pesquisa somente para um tipo de dados de terceiros de especificar usando o seguinte par de valor de propriedade de mensagem na caixa de palavra-chave para uma pesquisa de conteúdo:
+Em vez de Pesquisar todos os tipos de dados de terceiros, você pode criar consultas que só pesquisem um tipo especificado de dados de terceiros usando o par de valor de propriedade de mensagem a seguir na caixa de palavra-chave de uma pesquisa de conteúdo:
   
 ```
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Por exemplo, para pesquisar somente dados de Facebook que contenham a palavra "contoso" na propriedade Subject, você usaria a seguinte consulta:
+Por exemplo, para pesquisar apenas dados do Facebook que contenham a palavra "contoso" na propriedade Subject, você deve usar a seguinte consulta:
   
 ```
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-A tabela a seguir lista os tipos de dados de terceiros que você pode pesquisar e o valor a ser usado para o `itemclass:` propriedade especificamente pesquisar por esse tipo de dados de terceiros message. Observe que a sintaxe de consulta não diferenciam maiusculas de minúsculas. 
+A tabela a seguir lista os tipos de dados de terceiros que podem ser pesquisados e o valor a ser usado `itemclass:` para a propriedade Message para pesquisar especificamente o tipo de dados de terceiros. Observe que a sintaxe de consulta não diferencia maiúsculas de minúsculas. 
   
-|**Tipo de dados de terceiros**|**O valor para `itemclass:` propriedade**|
+|**Tipo de dados de terceiros**|**Valor da `itemclass:` Propriedade**|
 |:-----|:-----|
 |OBJETIVO  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -62,23 +62,22 @@ A tabela a seguir lista os tipos de dados de terceiros que você pode pesquisar 
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
 |Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
 |Axs Local Archive  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
-|Espaço reservado do AXs  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
+|Espaço reservado do AXS  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
-|Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
+|BearShare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
-|BlackBerry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Logs de chamada do blackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Rim  <br/> | `ipm.externaldata.Blackberry*` <br/> |
+|Logs de chamadas do BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
-|BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
-|BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
+|PIN do BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
+|SMS BlackBerry  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg Mail
   <br/> | `ipm.externaldata.BloombergMail*` <br/> |
-|Mensagens Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|Box
-  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco IM &amp; servidor de presença  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Mensagens do Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
+|Caixa  <br/> | `ipm.externaldata.Box*` <br/> |
+|Servidor de &amp; presença de im da Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Conexão Direta  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
@@ -95,9 +94,9 @@ A tabela a seguir lista os tipos de dados de terceiros que você pode pesquisar 
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
 |Hopster  <br/> | `ipm.externaldata.Hopster*` <br/> |
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
-|Conexões da IBM  <br/> | `ipm.externaldata.Connections*` <br/> |
+|Conexões IBM  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|Bate-papo do ICE  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|Chat de gelo  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
 |Indii Messenger
   <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram
@@ -112,11 +111,11 @@ A tabela a seguir lista os tipos de dados de terceiros que você pode pesquisar 
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
-|Comunicação unificada da Microsoft  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|Alinhar mente  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|UC da Microsoft  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
+|Alinhamento de mentalidade  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
-|Meu espaço  <br/> | `ipm.externaldata.MySpace*` <br/> |
+|MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
 |Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |

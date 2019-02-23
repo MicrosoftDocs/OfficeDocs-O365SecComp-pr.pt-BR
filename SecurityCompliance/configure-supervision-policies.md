@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar uma política de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090953"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216731"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão da sua organização
 
@@ -53,7 +53,7 @@ Siga estas etapas para configurar e usar a supervisão na sua organização do O
 
     Testar sua política de supervisão para garantir que esteja funcionando conforme o desejado é uma parte importante da garantia de que sua estratégia de conformidade esteja atendendo aos padrões.
 
-- **Etapa 6-(opcional)** [Configurar o suplemento do Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o OWA para analisar comunicações supervisionadas](configure-supervision-policies.md#UseOutlook)
+- **Etapa 6-(opcional)** [Configurar o suplemento do Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar as comunicações supervisionadas](configure-supervision-policies.md#UseOutlook)
 
     O suplemento de supervisão para o Outlook oferece aos revisores o acesso ao direito de funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
 

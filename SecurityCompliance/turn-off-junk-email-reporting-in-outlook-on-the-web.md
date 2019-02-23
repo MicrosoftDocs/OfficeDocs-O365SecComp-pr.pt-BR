@@ -1,60 +1,60 @@
 ---
-title: Desativar relatório no Outlook na web de lixo eletrônico
+title: Desativar os relatórios de lixo eletrônico no Outlook na Web
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2015
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
-description: Como um administrador do Office 365, você pode desativar a capacidade de pessoas para email de relatório como lixo eletrônico.
-ms.openlocfilehash: 8ee5ff87408b80c443e4cf950ce49f624096becb
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Como um administrador do Office 365, você pode desativar a capacidade de os usuários reportarem email como lixo eletrônico.
+ms.openlocfilehash: 4c84ae6b92658d045675fd8e8ffe6a6cff516886
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272036"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213911"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desativar relatório no Outlook na web de lixo eletrônico
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desativar os relatórios de lixo eletrônico no Outlook na Web
 
-Você pode enviar mensagens não sendo lixo eletrônico, phishing e lixo eletrônico à Microsoft para análise usando o Outlook no web relatório de lixo eletrônico opções, conforme descrito no [relatório lixo eletrônico e golpes de phishing no Outlook na web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Se você não quiser usar essas opções, os administradores podem desativá-los por meio do cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
+Você pode enviar mensagens de lixo eletrônico, phishing e não é lixo eletrônico para a Microsoft para análise usando as opções de relatório de lixo eletrônico do Outlook na Web (anteriormente conhecido como Outlook Web App), conforme descrito em [relatar lixo eletrônico e golpes de phishing no Outlook na Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Se você não quiser usar essas opções, os administradores podem desativá-las por meio do cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 <a name="sectionSection0"> </a>
 
 - Tempo estimado para conclusão: 5 minutos
     
-- Você precisa ter permissões antes de executar este procedimento ou procedimentos. Para ver quais permissões você precisa, consulte a entrada "Políticas de caixa de correio do Outlook Web App" no tópico [permissões do Outlook Web App](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
-    
-- Antes de executar os cmdlets necessários para desativar o relatório de lixo eletrônico, pode ser útil revisar as informações de referência nos tópicos [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) e [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
-    
-## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Desativar phishing lixo e não o relatório para a Microsoft de lixo
+- Você precisa receber permissões antes de executar este procedimento ou procedimentos. Para ver de que permissões você precisa, consulte o entrada "diretivas de caixa de correio do Outlook na Web" no tópico [Outlook na Web Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
+
+- Para se conectar ao PowerShell do Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Desativar os relatórios de lixo eletrônico, phishing e não lixo eletrônico para a Microsoft
 <a name="sectionSection1"> </a>
 
-Primeiro, para obter os diretórios virtuais nos quais queira desativar os relatórios, execute o cmdlet abaixo:
+Primeiro, execute o seguinte comando para obter os nomes das políticas de caixa de correio do Outlook disponíveis na Web:
   
 ```
-Get-OwaMailboxPolicy -Identity <parameter>
+Get-OwaMailboxPolicy | Format-Table Name
 ```
 
-Em seguida, para desativar o relatório para a Microsoft de lixo eletrônico e não lixo eletrônico execute este cmdlet:
+Em seguida, use a seguinte sintaxe para habilitar ou desabilitar o lixo eletrônico e não os relatórios de lixo eletrônico para a Microsoft no Outlook na Web:
   
 ```
-Set-OwaMailboxPolicy -Identity <parameter> -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
 ```
 
-O cmdlet abaixo, por exemplo, desativa os relatórios para o diretório virtual Contoso\owa:
+Este exemplo desativa o relatório na política de caixa de correio padrão do Outlook Web App:
   
 ```
-Set-OwaMailboxPolicy -Identity Default -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
 ```
+
+Para informações detalhadas de sintaxes e de parâmetros, consulte [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) e [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
 
 ## <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 <a name="sectionSection2"> </a>
 
-Execute o Get-OWAMailboxPolicy para verificar se os valores dos parâmetros e, em seguida, acessar o Outlook na web e verifique se as opções para relatar lixo eletrônico, phishing e não lixo eletrônico não estão disponíveis. Você ainda será capaz de marcar as mensagens como lixo eletrônico, phishing e não é lixo eletrônico, mas você não conseguirá indicá-las. 
-  
-
+Execute **Get-OwaMailboxPolicy** para verificar os valores de parâmetro e, em seguida, abra o Outlook na Web para um usuário afetado (que tenha a política de caixa de correio do Outlook na Web aplicada a eles) e verifique se as opções de relatório de lixo eletrônico, phishing e não estão disponíveis. Você ainda poderá marcar mensagens como lixo eletrônico, phishing e não lixo eletrônico, mas não poderá relatá-las. 

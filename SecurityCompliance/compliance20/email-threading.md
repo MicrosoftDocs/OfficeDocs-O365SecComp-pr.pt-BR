@@ -1,12 +1,12 @@
 ---
-title: Email threading
+title: Encadeamento de email
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,31 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d4328971a6b13c60c4d8b9f5b6db310d72a5b215
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a3c4f940c34a9c51bf58107d10e04d0ed60f28a8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29705992"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213421"
 ---
-# <a name="email-threading"></a>Email threading
+# <a name="email-threading"></a>Encadeamento de email
 
-Considere a possibilidade de uma conversa de email acontecendo por algum tempo. Na maioria dos casos, o último email no thread incluirá o conteúdo de todos os emails anteriores; analisar o último email fornecerá um contexto completo da conversa que ocorreram no segmento. Email threading identifica tais emails para que os revisores podem revisar uma fração de documentos coletados sem perder nenhum contexto.
+Considere uma conversa por email que está acontecendo por algum tempo. Na maioria dos casos, o último email no thread incluirá o conteúdo de todos os emails anteriores; a revisão do último email fornecerá um contexto completo da conversa que aconteceu no thread. O encadeamento de emails identifica esses emails para que os Revisores possam revisar uma fração de documentos coletados sem perder nenhum contexto.
 
-## <a name="what-does-email-threading-do"></a>O que faz threading de email?
+## <a name="what-does-email-threading-do"></a>O que o thread de email faz?
 
-Email threading analisa cada email e desconstructs-la para mensagens individuais; cada email é uma cadeia de mensagens individuais. Em seguida, ele analisa todos os emails no conjunto de trabalho para determinar se um email tem conteúdo exclusivo ou se a cadeia está totalmente contida em um email diferente. No final emails são divididos em quatro categorias:
+O encadeamento de emails analisa cada email e o desconstructs para mensagens individuais; cada email é uma cadeia de mensagens individuais. Em seguida, ele analisa todos os emails no conjunto de trabalho para determinar se um email tem conteúdo exclusivo ou se a cadeia está totalmente contida em um email diferente. Nos emails finais estão divididos em quatro categorias:
 
-- **Inclusiva**: a última mensagem no email possui conteúdo exclusivo e o email tem todos os anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
+- **Inclusive**: a última mensagem no email tem conteúdo exclusivo e o email tem todos os anexos que foram incluídos em outros emails dos quais o conteúdo está totalmente contido neste email.
 
 
-- **Inclusiva menos**: a última mensagem no email tem conteúdo exclusivo, mas o email não contém alguns dos anexos que foram incluídos em outras emails dos quais o conteúdo está totalmente contido neste email.
+- **Inclusive menos**: a última mensagem no email tem conteúdo exclusivo, mas o email não contém alguns dos anexos que foram incluídos em outros emails dos quais o conteúdo está totalmente contido neste email.
 
-- **Inclusive cópia**: uma cópia exata de um inclusive/inclusive menos email
+- **Cópia inclusiva**: uma cópia exata de um email incluindo menos de um
 
-- **None**: O conteúdo deste e-mail está totalmente contido em pelo menos um email que está marcado como inclusive inclusive subtração.
+- **Nenhum**: o conteúdo desse email está totalmente contido em pelo menos um email marcado como incluindo, inclusive, o menos.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>Como ele é diferente do conversas no Outlook?
-Em um relance, isso sons bastante similar às agrupamentos de conversa no Outlook. No entanto, há algumas distinções importantes. Considere a possibilidade de uma conversa de email que receber bifurcada em dois conversa; Por exemplo, alguém respondeu a um email que não seja as informações mais recentes na conversa para que os duas últimas emails na conversa que ambos tenham o conteúdo exclusivo.
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>Qual é a diferença entre conversas no Outlook?
+Em resumo, isso parece muito semelhante aos agrupamentos de conversa no Outlook. No enTanto, há algumas diferenças importantes. Considere uma conversa de email que foi bifurcada em duas conversas; por exemplo, alguém respondeu a um email que não é o mais recente na conversa para que os dois últimos emails da conversa tenham conteúdo exclusivo.
 
-Outlook ainda seria agrupar os e-mails em uma única conversa; ler somente o último email significaria faltando o contexto do segundo recente e-mail, que também contém conteúdo exclusivo. Porque o email threading analisa check-out de cada email em componentes individuais e os compara, email threading seria marcar ambas os duas últimas emails como inclusives, garantindo que você não perca nenhum contexto desde que você leia todos os e-mails marcados como inclusive.
+O Outlook ainda agruparia os emails em uma única conversa; somente leitura o último email significaria ter o contexto do segundo email, que também contém conteúdo exclusivo. Como o encadeamento de emails analisa todos os emails em componentes individuais e os compara, o encadeamento de emails marcaria os dois últimos emails como inclusivos, garantindo que você não perderá nenhum contexto, desde que Leia todos os emails marcados como inclusive.

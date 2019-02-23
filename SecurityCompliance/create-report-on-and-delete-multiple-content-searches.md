@@ -6,41 +6,41 @@ manager: laurawi
 ms.date: 6/26/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell no Office 365 Security &amp; Centro de conformidade.
-ms.openlocfilehash: a32c003dfd9a27ea8c38b29b31001b612368bc4a
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell &amp; no centro de conformidade de segurança do Office 365.
+ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038134"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213231"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, gerar relatórios e excluir várias Pesquisas de Conteúdo
 
- Criando rapidez e relatar as pesquisas de descoberta geralmente é uma etapa importante no eDiscovery e investigações quando você está tentando Saiba mais sobre os dados subjacentes e a riqueza e a qualidade das pesquisas. Para ajudá-lo a fazer isso, a segurança &amp; Centro de conformidade oferece um conjunto de cmdlets do Windows PowerShell para automatizar tarefas demoradas de pesquisa de conteúdo. Esses scripts fornecem uma maneira rápida e fácil para criar um número de pesquisas e, em seguida, executar relatórios dos resultados da pesquisa estimados que podem ajudá-lo a determinar a quantidade de dados em questão. Você também pode usar os scripts para criar versões diferentes de pesquisas para comparar os resultados de que cada um produz. Esses scripts podem ajudá-lo a identificar e analisar os dados rápida e eficiente. 
+ Criar e relatar rapidamente pesquisas de descoberta é geralmente uma etapa importante na descoberta eletrônica e investigações quando você está tentando saber mais sobre os dados subjacentes, e a riqueza e a qualidade das pesquisas. Para ajudá-lo a fazer isso, &amp; o centro de conformidade de segurança oferece um conjunto de cmdlets do Windows PowerShell para automatizar tarefas de pesquisa de conteúdo demoradas. Esses scripts fornecem uma maneira rápida e fácil de criar várias pesquisas e, em seguida, executar relatórios dos resultados estimados da pesquisa que podem ajudá-lo a determinar a quantidade de dados em questão. Você também pode usar os scripts para criar versões diferentes de pesquisas para comparar os resultados que cada um produz. Esses scripts podem ajudá-lo a identificar e analisar os dados de forma rápida e eficiente. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa ser membro do grupo de função do Gerenciador de descoberta eletrônica na segurança &amp; Centro de conformidade para executar os scripts que são descritos neste tópico. 
+- Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de &amp; conformidade de segurança para executar os scripts descritos neste tópico. 
     
-- Para coletar uma lista das URLs do OneDrive para sites corporativos em sua organização que você pode adicionar o arquivo CSV na etapa 1, consulte [criar uma lista de todos os locais de OneDrive na sua organização](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
+- Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização que você pode adicionar ao arquivo CSV na etapa 1, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
-- Certifique-se de salvar todos os arquivos que você criar neste tópico na mesma pasta. Será que tornam mais fácil executar os scripts.
+- Certifique-se de salvar todos os arquivos que você criou neste tópico para a mesma pasta. Isso facilitará a execução dos scripts.
     
-- Os scripts incluem o tratamento de erros mínimas. Sua finalidade principal é criar rapidamente, relatar e excluir várias pesquisas de conteúdo.
+- Os scripts incluem um tratamento de erros mínimo. Seu objetivo principal é criar, relatar e excluir rapidamente várias pesquisas de conteúdo.
     
 - Os scripts de exemplo fornecidos neste tópico não são compatíveis com nenhum serviço ou programa de suporte padrão da Microsoft. Os scripts de exemplo são fornecidos COMO ESTÃO sem qualquer tipo de garantia. A Microsoft também se isenta de todas as garantias implícitas, incluindo sem limitações quaisquer garantias aplicáveis de padrões de comercialização ou de adequação a uma finalidade específica. Todos os riscos decorrentes do uso ou da execução da documentação ou scripts de exemplo serão de sua responsabilidade. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
     
-## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Etapa 1: Criar um arquivo CSV que contém informações sobre as pesquisas que você deseja executar
+## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Etapa 1: criar um arquivo CSV que contenha informações sobre as pesquisas que você deseja executar
 
-O arquivo (CSV) de valores separados por vírgulas que você criar nesta etapa contém uma linha para cada usuário que deseja pesquisar. Você pode pesquisar o Exchange Online de correio do usuário (que inclui a caixa de correio de arquivo morto, se ele estiver habilitado) e seu OneDrive para o site de negócios. Ou você pode pesquisar apenas a caixa de correio ou OneDrive para o site de negócios. Você também pode pesquisar qualquer site na sua organização do SharePoint Online. O script que você pode executar na etapa 3 criará uma pesquisa separado para cada linha no arquivo CSV. 
+O arquivo de valor separado por vírgula (CSV) que você criou nesta etapa contém uma linha para cada usuário que deseja pesquisar. Você pode pesquisar a caixa de correio do Exchange Online do usuário (que inclui a caixa de correio de arquivo morto, se ela estiver habilitada) e seu site do OneDrive for Business. Ou você pode pesquisar apenas a caixa de correio ou o site do OneDrive for Business. Você também pode pesquisar qualquer site em sua organização do SharePoint Online. O script executado na etapa 3 criará uma pesquisa separada para cada linha no arquivo CSV. 
   
-1. Copie e cole o seguinte texto em um arquivo. txt usando o bloco de notas. Salve o arquivo para uma pasta no computador local. Você poupará os outros scripts para essa pasta também.
+1. Copie e cole o texto a seguir em um arquivo. txt usando o bloco de notas. Salve esse arquivo em uma pasta no computador local. Você também salvará outros scripts nessa pasta.
     
     ```
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
@@ -52,25 +52,25 @@ O arquivo (CSV) de valores separados por vírgulas que você criar nesta etapa c
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    A primeira linha ou a linha de cabeçalho do arquivo lista os parâmetros que serão usados pelo cmdlet **New-ComplianceSearch** (no script na etapa 3) para criar um novo pesquisas de conteúdo. O nome de cada parâmetro é separado por uma vírgula. Certificar-se de que não existem espaços na linha de cabeçalho. Cada linha sob a linha de cabeçalho representa os valores de parâmetro para cada pesquisa. Certifique-se de substituir os dados de espaço reservado no arquivo CSV com seus dados reais. 
+    A primeira linha, ou linha de cabeçalho, do arquivo lista os parâmetros que serão usados pelo cmdlet **New-ComplianceSearch** (no script na etapa 3) para criar novas pesquisas de conteúdo. Cada nome de parâmetro é separado por uma vírgula. Certifique-se de que não haja espaços na linha de cabeçalho. Cada linha sob a linha de cabeçalho representa os valores de parâmetro de cada pesquisa. Certifique-se de substituir os dados de espaço reservado no arquivo CSV pelos dados reais. 
     
-2. Abra o arquivo. txt no Excel e, em seguida, use as informações na tabela a seguir para editar o arquivo com informações para cada pesquisa. 
+2. Abra o arquivo. txt no Excel e use as informações da tabela a seguir para editar o arquivo com as informações de cada pesquisa. 
     
     |**Parameter**|**Descrição**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |O endereço SMTP da caixa de correio do usuário.  <br/> |
-    | `SharePointLocation` <br/> |A URL de OneDrive do usuário para o site de negócios ou a URL de qualquer site na sua organização. Para a URL do OneDrive for sites corporativos, use o seguinte formato: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Por exemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
-    | `ContentMatchQuery` <br/> |A consulta de pesquisa para a pesquisa. Para obter mais informações sobre como criar uma consulta de pesquisa, consulte [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md).<br/> |
-    | `StartDate` <br/> |Para email, a data em ou após uma mensagem foi recebida por um destinatário ou enviada pelo remetente. Para documentos no SharePoint ou OneDrive para sites corporativos, a data em ou após um documento última modificação.  <br/> |
-    | `EndDate` <br/> |Para email, a data em ou antes de uma mensagem foi enviada pelo enviados pelo usuário. Para documentos no SharePoint ou OneDrive para sites corporativos, a data em ou antes de um documento de última modificação.  <br/> |
+    | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
+    | `ContentMatchQuery` <br/> |A consulta de pesquisa para a pesquisa. Para obter mais informações sobre como criar uma consulta de pesquisa, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).<br/> |
+    | `StartDate` <br/> |Para email, a data de ou após uma mensagem foi recebida por um destinatário ou enviada pelo remetente. Para documentos em sites do SharePoint ou do OneDrive for Business, a data da última modificação de um documento.  <br/> |
+    | `EndDate` <br/> |Para email, a data de ou antes de uma mensagem foi enviada por um enviado pelo usuário. Para documentos em sites do SharePoint ou do OneDrive for Business, a data em ou antes da última modificação de um documento.  <br/> |
    
-3. Salve o arquivo do Excel como um arquivo CSV para uma pasta no computador local. O script que você criar na etapa 3 usará as informações neste arquivo CSV para criar as pesquisas. 
+3. Salve o arquivo do Excel como um arquivo CSV em uma pasta no computador local. O script criado na etapa 3 usará as informações neste arquivo CSV para criar as pesquisas. 
   
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Etapa 2: Conectar ao PowerShell do Centro de conformidade & segurança
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Etapa 2: conectar-se ao Security & central de conformidade do PowerShell
 
-A próxima etapa é conectar o Windows PowerShell para a segurança &amp; Centro de conformidade para sua organização.
+A próxima etapa é conectar o Windows PowerShell ao centro de &amp; conformidade de segurança da sua organização.
   
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, `ConnectSCC.ps1`. Salve o arquivo na mesma pasta que você salvou o arquivo CSV na etapa 1.
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `ConnectSCC.ps1`. Salve o arquivo na mesma pasta em que você salvou o arquivo CSV na etapa 1.
     
     ```
     # Get login credentials 
@@ -80,23 +80,23 @@ A próxima etapa é conectar o Windows PowerShell para a segurança &amp; Centro
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
     ```
 
-2. No computador local, abra o Windows PowerShell, vá para a pasta onde se encontra o script que você criou na etapa anterior e, em seguida, execute o script; Por exemplo:
+2. No computador local, abra o Windows PowerShell, vá para a pasta onde o script criado na etapa anterior está localizado e, em seguida, execute o script; por exemplo:
     
     ```
     .\ConnectSCC.ps1
     ```
   
-## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Etapa 3: Executar o script para criar e iniciar as pesquisas
+## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Etapa 3: executar o script para criar e iniciar as pesquisas
 
-O script nesta etapa criará uma pesquisa de conteúdo separado para cada linha no arquivo CSV que você criou na etapa 1. Quando você executar esse script, você será solicitado para dois valores:
+O script nesta etapa criará uma pesquisa de conteúdo separada para cada linha no arquivo CSV que você criou na etapa 1. Ao executar esse script, você será solicitado a fornecer dois valores:
   
-- **ID do grupo de busca** - esse nome fornece uma maneira fácil de organizar as pesquisas criados a partir do arquivo CSV. Cada pesquisa que é criada é chamada com a ID do grupo de pesquisa e, em seguida, um número foi acrescentado ao nome de pesquisa. Por exemplo, se você inserir **ContosoCase** para a ID do grupo de pesquisa, as pesquisas são nomeadas **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**e assim por diante. Observe que o nome que você digita diferencia maiusculas de minúsculas. Quando você usa a ID do grupo de busca na etapa 4 e etapa 5, você precisará usar o mesmo caso como fez quando criá-la. 
+- **ID do grupo de pesquisa** -este nome oferece uma maneira fácil de organizar as pesquisas criadas a partir do arquivo CSV. Cada pesquisa criada é nomeada com a ID do grupo de pesquisa e, em seguida, um número é acrescentado ao nome da pesquisa. Por exemplo, se você inserir **ContosoCase** para a ID do grupo de pesquisa, as pesquisas serão nomeadas como **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**e assim por diante. Observe que o nome digitado diferencia maiúsculas de minúsculas. Quando você usa a ID do grupo de pesquisa na etapa 4 e a etapa 5, é necessário usar o mesmo caso que você fez ao criá-la. 
     
-- **Arquivo CSV** - o nome do arquivo CSV que você criou na etapa 1. Certifique-se de incluir a usar o nome de arquivo completo, inclua a extensão de arquivo. csv; Por exemplo, `ContosoCase.csv`.
+- **Arquivo CSV** -o nome do arquivo CSV que você criou na etapa 1. Certifique-se de incluir o uso do nome de arquivo completo, inclua a extensão de arquivo. csv; por exemplo, `ContosoCase.csv`.
     
 Para executar o script:
 
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, `CreateSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `CreateSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
   ```
   # Get the Search Group ID and the location of the CSV input file
@@ -173,27 +173,27 @@ Para executar o script:
   }
   ```
 
-2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e, em seguida, execute o script; Por exemplo:
+2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
     ```
     .\CreateSearches.ps1
     ```
 
-3. No prompt do **ID do grupo de busca** , digite o nome de um grupo de pesquisa e pressione **Enter**. Por exemplo, `ContosoCase`. Lembre-se de que esse nome diferencia maiusculas de minúsculas, portanto você terá que digitar ele da mesma maneira nas etapas posteriores.
+3. No prompt **ID do grupo de pesquisa** , digite um nome de grupo de pesquisa e pressione **Enter**. por exemplo, `ContosoCase`. Lembre-se de que esse nome diferencia maiúsculas de minúsculas, portanto, você terá que digitá-lo da mesma maneira nas etapas subsequentes.
     
-4. No prompt do **arquivo CSV de origem** , digite o nome do arquivo CSV, incluindo a extensão de arquivo. csv; Por exemplo, `ContosoCase.csv`.
+4. No prompt de **arquivo CSV de origem** , digite o nome do arquivo CSV, incluindo a extensão de arquivo. csv; por exemplo, `ContosoCase.csv`.
     
-5. Pressione **Enter** para continuar a execução do script. 
+5. Pressione **Enter** para continuar executando o script. 
     
-    O script exibe o progresso da criação e execução das pesquisas. Quando o script for concluído, ele retorna ao prompt. 
+    O script exibe o progresso da criação e execução das pesquisas. Quando o script é concluído, ele retorna ao prompt. 
     
     ![Exemplo de saída da execução do script para criar várias pesquisas de conformidade](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
-## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Etapa 4: Executar o script a ser relatado a pesquisa estima
+## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Etapa 4: executar o script para relatar as estimativas de pesquisa
 
-Depois de criar as pesquisas, a próxima etapa é executar um script que exibe um relatório simples do número de ocorrências de pesquisa para cada pesquisa que foi criada na etapa 3. O relatório também inclui o tamanho dos resultados para cada pesquisa e o número total de acertos e o tamanho total de todas as pesquisas. Quando você executa o script de relatórios, você será solicitado para a ID do grupo de pesquisa e um nome de arquivo CSV se você deseja salvar o relatório para um arquivo CSV.
+Após criar as pesquisas, a próxima etapa é executar um script que exibe um relatório simples do número de visitas de pesquisa para cada pesquisa criada na etapa 3. O relatório também inclui o tamanho dos resultados de cada pesquisa e o número total de acertos e o tamanho total de todas as pesquisas. Ao executar o script de relatório, você será solicitado a solicitar o ID do grupo de pesquisa e um nome de arquivo CSV se quiser salvar o relatório em um arquivo CSV.
   
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, `SearchReport.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `SearchReport.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
   ```
   $searchGroup = Read-Host 'Search Group ID'
@@ -248,30 +248,30 @@ Depois de criar as pesquisas, a próxima etapa é executar um script que exibe u
   }
   ```
 
-2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e, em seguida, execute o script; Por exemplo:
+2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
     ```
     .\SearchReport.ps1
     ```
 
-3. No prompt do **ID do grupo de busca** , digite o nome de um grupo de pesquisa e pressione **Enter**. Por exemplo `ContosoCase`. Lembre-se de que esse nome diferencia maiusculas de minúsculas, portanto você terá que digitá-lo da mesma maneira fez quando executou o script na etapa 3.
+3. No prompt **ID do grupo de pesquisa** , digite um nome de grupo de pesquisa e pressione **Enter**. por exemplo `ContosoCase`. Lembre-se de que esse nome diferencia maiúsculas de minúsculas, portanto, você terá que digitá-la da mesma maneira que fez ao executar o script na etapa 3.
     
-4. No prompt do **caminho do arquivo para salvar o relatório para um arquivo CSV (deixe em branco para exibir apenas o relatório)** , digite um nome de arquivo do caminho completo do nome de arquivo (incluindo a extensão de arquivo. csv) se você deseja salvar o relatório para um arquivo CSV. nome do arquivo CSV, incluindo a extensão de arquivo. csv. Por exemplo, você pode digitar `ContosoCaseReport.csv` para salvá-lo no diretório atual, ou você pode digitar `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` salvá-lo em uma pasta diferente. Você também pode deixar o prompt em branco para exibir o relatório, mas não salve-o em um arquivo. 
+4. No **caminho do arquivo para salvar o relatório em um arquivo CSV (deixe em branco para exibir o relatório)** , digite um nome de arquivo completo para o caminho de arquivo (incluindo a extensão de arquivo. csv) se quiser salvar o relatório em um arquivo CSV. nome do arquivo CSV, incluindo a extensão de arquivo. csv. Por exemplo, você poderia digitar `ContosoCaseReport.csv` para salvá-lo no diretório atual ou poderia digitar `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` para salvá-lo em uma pasta diferente. Você também pode deixar o prompt em branco para exibir o relatório, mas não salvá-lo em um arquivo. 
     
 5. Pressione **Enter**.
     
-    O script exibe o progresso da criação e execução das pesquisas. Quando o script for concluído, o relatório é exibido. 
+    O script exibe o progresso da criação e execução das pesquisas. Quando o script estiver concluído, o relatório será exibido. 
     
     ![Executar o relatório de pesquisa para exibir as estimativas para o grupo de pesquisa](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
-> Se a mesma caixa de correio ou site é especificado como um local de conteúdo em mais de uma pesquisa em um grupo de busca, a estimativa de resultados totais no relatório (para o número de itens e o tamanho total) pode incluir resultados para os mesmos itens. Isso ocorre porque a mesma mensagem de email ou o documento será contado mais de uma vez se ela corresponde à consulta de pesquisas diferentes no grupo de pesquisa. 
+> Se a mesma caixa de correio ou site for especificado como um local de conteúdo em mais de uma pesquisa em um grupo de pesquisa, a estimativa de resultados total no relatório (para o número de itens e o tamanho total) poderá incluir resultados para os mesmos itens. Isso ocorre porque o mesmo documento ou mensagem de email será contado mais de uma vez se corresponder à consulta de pesquisas diferentes no grupo de pesquisa. 
   
-## <a name="step-5-run-the-script-to-delete-the-searches"></a>Etapa 5: Executar o script para excluir as pesquisas
+## <a name="step-5-run-the-script-to-delete-the-searches"></a>Etapa 5: executar o script para excluir as pesquisas
 
-Porque você pode estar criando uma grande quantidade de pesquisas, esse último script apenas facilita excluir rapidamente as pesquisas que você criou na etapa 3. Como os scripts, este também solicita a identificação do grupo de busca. Todas as pesquisas com a ID do grupo de busca no nome da pesquisa serão excluídas quando você executar esse script. 
+Como você pode estar criando muitas pesquisas, esse último script simplesmente facilita a exclusão rápida das pesquisas que você criou na etapa 3. Assim como os outros scripts, isso também solicita a ID do grupo de pesquisa. Todas as pesquisas com a ID do grupo de pesquisa no nome da pesquisa serão excluídas quando você executar esse script. 
   
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, `DeleteSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `DeleteSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
   ```
   # Delete all searches in a search group
@@ -287,14 +287,14 @@ Porque você pode estar criando uma grande quantidade de pesquisas, esse último
   }
   ```
 
-2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e, em seguida, execute o script; Por exemplo:
+2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
     ```
     .\DeleteSearches.ps1
     ```
 
-3. No prompt do **ID do grupo de busca** , digite um nome de grupo de pesquisa para as pesquisas que você deseja excluir e pressione **Enter**. Por exemplo, `ContosoCase`. Lembre-se de que esse nome diferencia maiusculas de minúsculas, portanto você terá que digitá-lo da mesma maneira fez quando executou o script na etapa 3.
+3. No prompt **ID do grupo de pesquisa** , digite um nome de grupo de pesquisa para as pesquisas que você deseja excluir e pressione **Enter**. por exemplo, `ContosoCase`. Lembre-se de que esse nome diferencia maiúsculas de minúsculas, portanto, você terá que digitá-la da mesma maneira que fez ao executar o script na etapa 3.
     
-    O script exibe o nome de cada pesquisa que é excluído.
+    O script exibe o nome de cada pesquisa que foi excluída.
     
     ![Executar o script para excluir as pesquisas no grupo de pesquisa](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

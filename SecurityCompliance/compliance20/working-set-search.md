@@ -1,12 +1,12 @@
 ---
-title: Consulta os dados em um conjunto de trabalho
+title: Consultar os dados em um conjunto de trabalho
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: f5b7bef5d9f20c6425e8d4636c94ed59f72504d3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29694987"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212831"
 ---
-# <a name="query-the-data-in-a-working-set"></a>Consulta os dados em um conjunto de trabalho
+# <a name="query-the-data-in-a-working-set"></a>Consultar os dados em um conjunto de trabalho
 
-Na maioria dos casos, será útil poder aprofundar no que há em um conjunto de trabalho e organizá-los para analisar com mais eficiência. Consultas em um conjunto de trabalho permite fazê-lo, permitindo que você focalizar um subconjunto de documentos que atendam aos critérios definidos por você ao mesmo tempo.
+Na maioria dos casos, será útil ser capaz de se aprofundar em um conjunto de trabalho e organizá-los para análise mais eficiente. As consultas em um conjunto de trabalho permitem que você faça isso, permitindo que você se concentre em um subconjunto de documentos que atendem aos critérios definidos por você ao mesmo tempo.
 
 ## <a name="creating-and-running-a-query-within-a-working-set"></a>Criar e executar uma consulta dentro de um conjunto de trabalho
 
-Para criar e executar uma consulta de seu conjunto de trabalho, clique em "Nova consulta" no seu conjunto de trabalho. Depois de chamar sua consulta e definir as condições, clique em "Salvar" para executar a consulta. Para executar uma consulta que tenha sido salva anteriormente, basta clicar na consulta salva.
+Para criar e executar uma consulta dentro do seu conjunto de trabalho, clique em "nova consulta" em seu conjunto de trabalho. Depois de nomear sua consulta e definir as condições, clique em "salvar" para executar a consulta. Para executar uma consulta que tenha sido salva anteriormente, basta clicar na consulta salva.
 
 ## <a name="conditions"></a>Condições
 
-Você pode usar um número de condições para definir suas consultas. Essas opções variam da data de metadados, como enviadas e participantes para resultados de análise, inclusive tipos e temas dominantes. Primeiro, você deve analisar seu conjunto antes de usar os resultados de análise como condições de trabalho. As condições podem ser Unidos com or ou agrupadas; para combinar os conectores, você pode usar grupos de condição.
+Você pode usar várias condições para definir suas consultas. Eles vão de metadados, como data de envio e participantes, aos resultados da análise, como tipos inclusivos e temas dominantes. Primeiro, você deve analisar o conjunto de trabalho antes de usar os resultados da análise como condições. As condições podem ser OR'ed ou AND'ed; para misturar conectores, você pode usar grupos de condição.
 
 ## <a name="filters"></a>Filtros
-Filtros agir como consultando dentro de uma consulta; Você pode filtrar extremamente condições seu critério de pesquisa.
+Os filtros agem como consulta dentro de uma consulta; Você pode filtrar as condições de vez em sua condição de pesquisa.
 
 

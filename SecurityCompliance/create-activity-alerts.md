@@ -1,12 +1,12 @@
 ---
-title: Criar alertas de atividade no Office 365 Security &amp; Centro de conformidade
+title: Criar alertas de atividade no centro de conformidade &amp; de segurança do Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,32 +14,32 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
-description: Adicione e gerencie alertas de atividade na segurança &amp; Centro de conformidade para que o Office 365 enviará as notificações de email quando os usuários realizam atividades específicas no Office 365.
-ms.openlocfilehash: 2a579e850d16b730a777ce6c4e5c0446305a027d
-ms.sourcegitcommit: 3a376619dbae472495c29da7c061f5c5faeeaddb
+description: Adicione e gerencie alertas de atividade no &amp; centro de conformidade de segurança para que o Office 365 envie notificações por email quando os usuários executarem atividades específicas no Office 365.
+ms.openlocfilehash: 25262105332b5317ddf29d49e0364faed57f3d3a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "26282735"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214901"
 ---
-# <a name="create-activity-alerts-in-the-office-365-security-amp-compliance-center"></a>Criar alertas de atividade no Office 365 Security &amp; Centro de conformidade
+# <a name="create-activity-alerts-in-the-office-365-security-amp-compliance-center"></a>Criar alertas de atividade no centro de conformidade &amp; de segurança do Office 365
 
-Você pode criar um alerta de atividade que lhe enviará uma notificação de email quando os usuários realizam atividades específicas no Office 365. Alertas de atividade são semelhantes às procurando eventos no log de auditoria do Office 365, exceto que você vai ser enviada uma mensagem de email quando um evento para uma atividade que você criou um alerta para acontece. 
+Você pode criar um alerta de atividade que lhe enviará uma notificação por email quando os usuários executarem atividades específicas no Office 365. Os alertas de atividade são semelhantes à pesquisa de eventos no log de auditoria do Office 365, exceto pelo fato de você receber uma mensagem de email quando um evento de uma atividade que você criou um alerta para acontecer. 
   
- **Por que usar alertas de atividade em vez de pesquisar o log de auditoria?** Pode haver certos tipos de atividade ou atividade executadas pelos usuários específicos que você realmente deseja saber sobre. Em vez de lembrar pesquisar o log de auditoria para essas atividades, você pode usar os alertas de atividade ter o Office 365 enviar uma mensagem de email quando os usuários realizam essas atividades. Por exemplo, você pode criar um alerta de atividade para ser notificado quando um usuário exclui arquivos no SharePoint ou você pode criar um alerta para notificá-lo quando um usuário exclui permanentemente mensagens de suas caixas de correio. A notificação de email enviada a você inclui informações sobre qual atividade foi executada e o usuário que executou a ele. 
+ **Por que usar alertas de atividade em vez de Pesquisar o log de auditoria?** Pode haver certos tipos de atividade ou atividade executados por usuários específicos que você realmente deseja saber. Em vez de ter que se lembrar de Pesquisar o log de auditoria dessas atividades, você pode usar os alertas de atividade para que o Office 365 envie uma mensagem de email quando os usuários realizarem essas atividades. Por exemplo, você pode criar um alerta de atividade para notificá-lo quando um usuário exclui arquivos no SharePoint ou você pode criar um alerta para notificá-lo quando um usuário exclui permanentemente mensagens de suas caixas de correio. A notificação de email enviada para você inclui informações sobre qual atividade foi realizada e o usuário que a realizou. 
 
 > [!NOTE]
-> Recomendamos que você começar a usar políticas de alerta no Centro de conformidade & segurança em vez de criar novos alertas de atividade. Políticas de alerta fornecem funcionalidade de adição como a capacidade de criar uma política de alerta que dispara um alerta quando qualquer usuário realiza uma atividade especificada e exibindo os alertas na página **Exibir alertas** no Centro de conformidade & segurança. Para obter mais informações, consulte [políticas de segurança do Office 365 de alerta &amp; Centro de conformidade](alert-policies.md).
+> Recomendamos que você comece a usar políticas de alerta no centro de conformidade do & de segurança em vez de criar novos alertas de atividade. As políticas de alerta fornecem funcionalidade adicional, como a capacidade de criar uma política de alerta que dispara um alerta quando qualquer usuário executa uma atividade específica e exibe alertas na página **exibir alertas** no centro de conformidade do _AMP_ de segurança. Para obter mais informações, consulte [políticas de alerta no centro de &amp; conformidade de segurança do Office 365](alert-policies.md).
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você deve ser atribuído à função de configuração da organização na segurança &amp; Centro de conformidade para gerenciar alertas de atividade. Por padrão, essa função é atribuída aos grupos de função de administrador de conformidade e gerenciamento da organização. Para obter mais informações sobre como adicionar membros a grupos de funções, consulte [Conceder aos usuários acesso para a segurança do Office 365 &amp; Centro de conformidade](grant-access-to-the-security-and-compliance-center.md).
+- Você deve receber a função de configuração da organização no centro &amp; de conformidade de segurança para gerenciar os alertas de atividade. Por padrão, essa função é atribuída ao administrador de conformidade e aos grupos de função de gerenciamento da organização. Para obter mais informações sobre como adicionar membros a grupos de função, consulte [conceder aos usuários acesso ao &amp; centro de conformidade de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md).
     
-- Você (ou outro administrador) primeiro deve ativar o log de auditoria para sua organização antes de começar a usar alertas de atividade. Para fazer isso, basta clicar em **Iniciar gravação de usuário e a atividade de admin** na página **alertas de atividade** . (Se você não vir este link, auditoria já foi ativado para sua organização.) Você também pode ativar auditoria na página de **pesquisa de log de auditoria** na segurança &amp; Centro de conformidade (vá para **pesquisa &amp; investigação** \> **pesquisa de log de auditoria**). Você só precisa fazer isso vez para sua organização.
+- Você (ou outro administrador) deve primeiro ativar o log de auditoria para sua organização antes de começar a usar os alertas de atividade. Para fazer isso, basta clicar em **iniciar a gravação da atividade de administrador e usuário** na página alertas de **atividade** . (Se você não vir este link, a auditoria já foi ativada para sua organização.) Você também pode ativar a auditoria na página **pesquisa de log de auditoria** no centro de &amp; conformidade de segurança (vá para pesquisa de **log de auditoria**de investigação \> de **pesquisa &amp; ** ). Você só precisa fazer isso uma vez para sua organização.
   
-- Você pode criar alertas para as mesmas atividades que você pode pesquisar no log de auditoria do Office 365. Ver as [informações mais](#more-information) seção para obter uma lista de cenários comuns (e a atividade específica para monitorar) que você pode criar alertas para. 
+- Você pode criar alertas para as mesmas atividades que você pode pesquisar no log de auditoria do Office 365. Consulte a seção [mais informações](#more-information) para obter uma lista de cenários comuns (e a atividade específica a ser monitorada) para a qual você pode criar alertas. 
     
-- Você pode usar a página **alertas de atividade** na segurança &amp; Centro de conformidade para criar alertas somente para atividades realizadas pelos usuários que estão listados no catálogo de endereços da sua organização. Você não pode usar esta página para criar alertas para atividade realizada por usuários externos que não estão listados no catálogo de endereços. 
+- Você pode usar a página **alertas de atividade** no centro &amp; de conformidade de segurança para criar alertas somente para atividades realizadas por usuários que estão listados no catálogo de endereços da sua organização. Você não pode usar esta página para criar alertas para atividades realizadas por usuários externos que não estão listados no catálogo de endereços. 
     
 ## <a name="create-an-activity-alert"></a>Criar um alerta de atividade
 
@@ -47,86 +47,86 @@ Você pode criar um alerta de atividade que lhe enviará uma notificação de em
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. Na página **alertas de atividade** , clique em ![ícone Adicionar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
+3. Na página **alertas de atividade** , clique ![em Adicionar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ícone **novo**.
 
-   A página de submenu para criar um alerta de atividade é exibida.
+   A página de menu para criar um alerta de atividade é exibida.
 
     
     ![Criar um alerta de atividade](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
-4. Preencha os campos a seguintes para criar um alerta de atividade:
+4. Preencha os seguintes campos para criar um alerta de atividade:
     
-    r. **nome** - digite um nome para o alerta. Nomes de alertas devem ser exclusivos dentro da sua organização.
+    a. **Name** -digite um nome para o alerta. Os nomes de alerta devem ser exclusivos dentro da sua organização.
     
-    b. **Descrição** (opcional) - descrevem alerta, as atividades e os usuários que está sendo rastreados, e os usuários que as notificações de email são enviados para. Descrições fornecem uma maneira rápida e fácil para descrever a finalidade do alerta para outros administradores.
+    b. **Description** (opcional)-descrever o alerta, como as atividades e os usuários que estão sendo controlados e os usuários para os quais as notificações de email são enviadas. As descrições fornecem uma maneira rápida e fácil de descrever a finalidade do alerta para outros administradores.
     
-    c. **tipo de alerta** - Verifique se a opção **personalizado** está selecionada. 
+    c. **tipo de alerta** : Certifique-se de que a opção **personalizada** está selecionada. 
 
-    d. **Enviar este alerta quando** - Click **Enviar este alerta quando** e defina esses dois campos:
+    d. **Envie este alerta quando** -clique em **Enviar este alerta quando** e configure estes dois campos:
     
-    - **Atividades** - clique na lista suspensa lista para exibir as atividades que você pode criar um alerta para. Esta é a mesma lista de atividades que é exibida quando você pesquisar o log de auditoria do Office 365. Você pode selecionar uma ou mais atividades específicas ou você pode clicar no nome do grupo de atividade para selecionar todas as atividades no grupo. Para obter uma descrição dessas atividades, consulte a seção "Auditadas atividades" na [pesquisa da auditoria, faça logon no Centro de conformidade & segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities). Quando um usuário realiza qualquer uma das atividades que você tenha adicionado ao alerta, um email de notificação é enviada. 
+    - **Atividades** -clique na lista suspensa para exibir as atividades para as quais você pode criar um alerta. Esta é a mesma lista de atividades que é exibida quando você pesquisa o log de auditoria do Office 365. Você pode selecionar uma ou mais atividades específicas ou pode clicar no nome do grupo de atividades para selecionar todas as atividades no grupo. Para obter uma descrição dessas atividades, consulte a seção "atividades auditadas" em [Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities). Quando um usuário executa qualquer uma das atividades que você adicionou ao alerta, uma notificação de email é enviada. 
     
-     - **Os usuários** - clique nesta caixa e selecione um ou mais usuários. Se os usuários nesta caixa executam as atividades que você adicionou à caixa de **atividades** , um alerta será enviado. Deixe a caixa de **usuários** em branco para enviar um alerta quando qualquer usuário em sua organização executa as atividades especificadas no alerta. 
+     - **Usuários** – clique nesta caixa e selecione um ou mais usuários. Se os usuários nessa caixa executarem as atividades que você adicionou à caixa **atividades** , um alerta será enviado. Deixe a caixa **usuários** em branco para enviar um alerta quando qualquer usuário em sua organização executar as atividades especificadas pelo alerta. 
 
-    e. **enviar esse alerta para** - clique em **enviar esse alerta**e, em seguida, clique na caixa de **destinatários** e digite um nome para adicionar um usuários que receberão uma notificação de email quando um usuário (especificado na caixa **usuários** ) realiza uma atividade (especificado no Caixa de **atividades** ). Observe que, por padrão, você é adicionado à lista de destinatários. Você pode remover o seu nome dessa lista.
+    e. **Envie este alerta para** clicar em **Enviar este alerta**e, em seguida, clique na caixa **destinatários** e digite um nome para adicionar usuários que receberão uma notificação por email quando um usuário (especificado na caixa **usuários** ) executar uma atividade (especificada no Caixa **atividades** ). Observe que você é adicionado à lista de destinatários por padrão. Você pode remover seu nome dessa lista.
     
-5. Clique em **Salvar** para criar o alerta. 
+5. Clique em **salvar** para criar o alerta. 
     
-    O novo alerta é exibido na lista na página **alertas de atividade** . 
+    O novo alerta é exibido na lista da página **alertas de atividade** . 
     
-    ![É exibida uma lista de alertas na página de atividade de alertas na segurança &amp; Centro de conformidade](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
+    ![Uma lista de alertas é exibida na página alertas de atividade no centro de &amp; conformidade de segurança](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
-    O status do alerta é definido para **ativado**. Observe que os destinatários que serão recebeu uma notificação de email quando um alerta é enviado também são listados. 
+    O status do alerta é definido como **ativado**. Observe que os destinatários que receberão uma notificação por email quando um alerta é enviado também são listados. 
   
 ## <a name="turn-off-an-activity-alert"></a>Desativar um alerta de atividade
 
-Você pode desativar um alerta de atividade para que uma notificação de e-mail não será enviada. Após desativar o alerta de atividade, ele ainda é exibido na lista de alertas de atividade para sua organização e você ainda poderá exibir suas propriedades.
+Você pode desativar um alerta de atividade para que uma notificação por email não seja enviada. Após desativar o alerta de atividade, ele ainda será exibido na lista de alertas de atividade da sua organização e você ainda poderá exibir suas propriedades.
   
 1. Acesse [https://protection.office.com/#/managealerts](https://protection.office.com/#/managealerts).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. Na lista de alertas de atividade para sua organização, clique no alerta que você deseja desativar.
+3. Na lista de alertas de atividade da sua organização, clique no alerta que você deseja desativar.
     
-4. Na página **Editar alerta** , clique o switch de alternância **em** para alterar o status para **Desativar**e, em seguida, clique em **Salvar**.
+4. Na página **Editar alerta** , clique no botão **Ativar** /desativar para alterar o status para **desativado**e clique em **salvar**.
     
-    O status do alerta nas páginas de **alertas de atividade** estiver definido como **desativado**. 
+    O status do alerta nas páginas **alertas de atividade** está definido como **desativado**. 
     
-Para ativar um alerta de atividade, basta Repita essas etapas e clique no switch de alternância **desativado** para alterar o status para **ativado**.
+Para ativar novamente um alerta de atividade, basta repetir estas etapas e clicar no botão de alternância **desligar** para alterar o status para **ativado**.
   
 ## <a name="more-information"></a>Mais informações
 
-- Aqui está um exemplo do email de notificação é enviada para os usuários que são especificados no Sent nesse alerta ao campo (e listados em **destinatários** na página **alertas de atividade** ) na segurança &amp; Centro de conformidade. 
+- Veja um exemplo de notificação de email que é enviada aos usuários especificados no campo enviar este alerta para (e listados em **destinatários** da página **alertas de atividade** ) no centro de conformidade de segurança &amp; . 
     
-    ![Exemplo de uma notificação de email enviada para um alerta de atividade](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Exemplo de notificação de email enviada para um alerta de atividade](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
-- São do Eis aqui algumas atividades comuns do documento e de email que você pode criar uma atividade de alertas para. As tabelas descreve a atividade, o nome da atividade para criar um alerta para e o nome do grupo de atividades que a atividade está listada na lista suspensa de **atividades** . Para ver uma lista completa das atividades que você pode criar alertas de atividade para, consulte a seção "Auditadas atividades" na [pesquisa da auditoria, faça logon no Centro de conformidade & segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Veja aqui algumas atividades comuns de documentos e emails para as quais você pode criar alertas de atividade. As tabelas descrevem a atividade, o nome da atividade para criar um alerta e o nome do grupo de atividade em que a atividade está listada na lista suspensa **atividades** . Para ver uma lista completa das atividades para as quais você pode criar alertas de atividade, consulte a seção "atividades auditadas" em [Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities).
     
     > [!TIP]
-    > Talvez você queira criar um alerta de atividade para apenas uma atividade que é executada por qualquer usuário. Ou talvez você queira criar um alerta de atividade que controlar várias atividades realizadas por um ou outros contatos usuários. 
+    > Você pode querer criar um alerta de atividade para apenas uma atividade que é executada por qualquer usuário. Ou talvez você queira criar um alerta de atividade que acompanhe várias atividades realizadas por um ou mais usuários. 
   
-    A tabela a seguir lista algumas atividades comuns relacionadas a documentos no SharePoint ou OneDrive for Business.
+    A tabela a seguir lista algumas atividades comuns relacionadas a documentos no SharePoint ou no OneDrive for Business.
     
-    |**Quando um usuário faz isso …**|**Criar um alerta para esta atividade**|**Grupo de atividades**|
+    |**Quando um usuário faz isso...**|**Criar um alerta para esta atividade**|**Grupo de atividade**|
     |:-----|:-----|:-----|
-    |Exibe um documento em um site.  <br/> |Arquivos acessados  <br/> |Atividades de arquivo e pasta  <br/> |
+    |Exibe um documento em um site.  <br/> |Arquivo acEssado  <br/> |Atividades de arquivo e pasta  <br/> |
     |Edita ou altera um documento.  <br/> |Arquivo modificado  <br/> |Atividades de arquivo e pasta  <br/> |
-    |Compartilhar um documento com um usuário fora da sua organização.  <br/> |Compartilhar o arquivo, pasta ou site  <br/> E  <br/> Criado o convite de compartilhamento  <br/> Para obter mais informações, consulte [Use compartilhamento auditorias no log de auditoria do Office 365](use-sharing-auditing.md).  <br/> |Atividades de solicitação de compartilhamento e acesso  <br/> |
-    |Carrega ou descarrega um documento.  <br/> |Arquivo carregado  <br/> E/ou  <br/> Arquivo baixado  <br/> |Atividades de arquivo e pasta  <br/> |
-    |Altera as permissões de acesso a um site.  <br/> |Permissões de site modificada  <br/> |Atividades de administração de site  <br/> |
+    |Compartilha um documento com um usuário fora da sua organização.  <br/> |Compartilhar arquivo, pasta ou site  <br/> E  <br/> Convite de compartilhamento criado  <br/> Para obter mais informações, consulte [usar a auditoria de compartilhamento no log de auditoria do Office 365](use-sharing-auditing.md).  <br/> |Compartilhamento e acesso às atividades de solicitação  <br/> |
+    |Carrega ou baixa um documento.  <br/> |Arquivo carregado  <br/> E/ou  <br/> Arquivo baixado  <br/> |Atividades de arquivo e pasta  <br/> |
+    |Altera as permissões de acesso para um site.  <br/> |Permissões de site modificadas  <br/> |Atividades de administração do site  <br/> |
 
-    A tabela a seguir lista algumas atividades comuns relacionados a email no Exchange Online.
+    A tabela a seguir lista algumas atividades comuns relacionadas a email no Exchange Online.
 
-    |**Quando um usuário faz isso …**|**Criar um alerta para esta atividade**|**Grupo de atividades**|
+    |**Quando um usuário faz isso...**|**Criar um alerta para esta atividade**|**Grupo de atividade**|
     |:-----|:-----|:-----|
-    |Permanentemente exclui (limpezas) um email mensagem da sua caixa de correio.  <br/> |Mensagens limpas de caixa de correio  <br/> | Atividades de caixa de correio do Exchange  <br/> |
-    |Envia uma mensagem de email de uma caixa de correio compartilhada.  <br/> |Enviada usando permissões Enviar como de mensagem  <br/> E  <br/> Enviada usando permissões Enviar em nome de mensagem  <br/> | Atividades de caixa de correio do Exchange  <br/> |
+    |Exclui permanentemente (limpa) uma mensagem de email da caixa de correio.  <br/> |Mensagens limpas da caixa de correio  <br/> | Atividades de caixa de correio do Exchange  <br/> |
+    |Envia uma mensagem de email de uma caixa de correio compartilhada.  <br/> |Mensagem enviada usando permissões Enviar como  <br/> E  <br/> Mensagem enviada usando permissões Enviar em nome de  <br/> | Atividades de caixa de correio do Exchange  <br/> |
    
-- Você também pode usar os cmdlets **New-ActivityAlert** e **Set-ActivityAlert** na segurança &amp; PowerShell do Centro de conformidade para criar e editar alertas de atividade. Se você usar esses cmdlets para criar ou editar alertas de atividade, mantenha as seguintes coisas em mente: 
+- Você também pode usar os cmdlets **New-ActivityAlert** e **set-ActivityAlert** no PowerShell &amp; do centro de conformidade de segurança para criar e editar alertas de atividade. Lembre-se dos seguintes pontos se você usar esses cmdlets para criar ou editar alertas de atividades: 
     
-  - Se você usar um cmdlet para adicionar uma atividade para o alerta de que não está listado na lista suspensa de **atividades** , uma mensagem é exibida na página de propriedades para o alerta que diz, "Este alerta possui operações personalizadas que não está listadas no seletor de". 
+  - Se você usar um cmdlet para adicionar uma atividade ao alerta que não está listado na lista suspensa de **atividades** , uma mensagem será exibida na página de propriedades para o alerta que diz, "este alerta tem operações personalizadas não listadas no seletor". 
     
-  - Um bom motivo para usar os cmdlets para criar ou editar um alerta de atividade é para enviar notificações por email a alguém de fora da sua organização. Este usuário externo será listado na lista de destinatários para o alerta. Mas se você remover este usuário externo no alerta, que o usuário não pode ser adicionado ao alerta novamente usando a página **Editar alerta** na segurança &amp; Centro de conformidade. Você vai precisar adicione novamente o usuário externo usando o cmdlet **Set-ActivityAlert** ou use o cmdlet **New-ActivityAlert** para adicionar o usuário externo mesmo (ou diferente) para um novo alerta. 
+  - Um bom motivo para usar os cmdlets para criar ou editar um alerta de atividade é enviar notificações por email para alguém fora da sua organização. Esse usuário externo será listado na lista de destinatários para o alerta. Mas se você remover esse usuário externo do alerta, esse usuário não poderá ser adicionado novamente ao alerta usando a página **Editar alerta** no centro de conformidade de &amp; segurança. Você terá que adicionar novamente o usuário externo usando o cmdlet **set-ActivityAlert** ou usar o cmdlet **New-ActivityAlert** para adicionar o mesmo usuário externo (ou diferente) a um novo alerta. 
     
   
 

@@ -1,12 +1,12 @@
 ---
-title: Use o módulo de relevância para analisar dados no eDiscovery avançado (Preview)
+title: Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada (visualização)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,130 +14,130 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 53f1906b28c6c6b467e147951e7c55aa7358a4a7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695167"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215431"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Use o módulo de relevância para analisar dados no eDiscovery avançado (Preview)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada (visualização)
 
-No eDiscovery avançado (Preview), o módulo de relevância inclui o treinamento de relevância e a revisão dos arquivos relacionados a um caso. O fluxo de trabalho de relevância é exibido e descrito a seguir:
+Na descoberta eletrônica avançada (visualização), o módulo de relevância inclui o treinamento de relevância e a revisão de arquivos relacionados a um caso. O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
   
 ![Fluxo de trabalho de relevância](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- **Ciclos de avaliação e de rastreamento**:
+- **Ciclos de avaliação e controle**:
     
-  - **Avaliação**: habilita a avaliação preliminar com base em uma amostra aleatória de arquivos e usa essa avaliação para aplicar decisões para determinar o desempenho do processo de codificação de previsão. 
+  - **Avaliação**: habilita a avaliação prévia com base em uma amostra aleatória de arquivos e usa essa avaliação para aplicar decisões para determinar o desempenho do processo de codificação de previsão. 
     
-  - **Acompanhar**: calcular e exibir resultados provisórios da avaliação ao monitorar estatística validade do processo. 
+  - **Track**: calcular e exibir resultados provisórios da avaliação e monitorar a validade estatística do processo. 
     
-- **Ciclos de treinamento e controle**
+- **Ciclos de treinamento e acompanhamento**
     
-  - **Marca**: eDiscovery avançado (Preview) aprende critérios de relevância específicos para cada questão com base na revisão de repetitivo do especialista e marcação de arquivos individuais.
+  - **Marca**: descoberta eletrônica avançada (versão prévia) aprende critérios de relevância específicos para cada problema com base na revisão iterativa do especialista e marcação de arquivos individuais.
     
-  - **Acompanhar**: calcular e exibir resultados provisórios do treinamento ao monitorar estatística validade do processo de relevância. 
+  - **Track**: calcular e exibir resultados provisórios do treinamento de relevância e monitorar a validade estatística do processo. 
     
-- **Cálculo de lote**: os critérios de relevância aprendidos e acumulados é aplicado à coleção todo o arquivo e uma pontuação de relevância é gerada para cada arquivo.
+- **Cálculo de lote**: os critérios de relevância acumulados e aprendidos são aplicados a todo o conjunto de arquivos e uma pontuação de relevância é gerada para cada arquivo.
     
-- **Decida**: os resultados da análise aplicada ao caso inteiro é exibido após o cálculo de lote e dados usados para tomar decisões de revisão de documento são exibidos.
+- ****@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ Os resultados da análise aplicada ao caso inteiro são exibidos após o cálculo de lote, e os dados usados para fazer decisões de revisão
     
-- **Teste**: resultados podem ser testados para verificar a validade e a eficácia do processamento de eDiscovery avançado (Preview).
+- **Test**: os resultados podem ser testados para verificar a validade e a eficácia do processamento de descoberta eletrônica avançada (visualização).
 
-- **Pesquisa**: quando o fluxo de trabalho de relevância for concluído, você pode usar a saída como percentil de leitura de um documento para seu problema quando você executa uma consulta em seu conjunto de trabalho.
+- **Pesquisa**: depois que o fluxo de trabalho de relevância estiver concluído, você poderá usar a saída como ler percentil de um documento para o seu problema ao executar uma consulta dentro do seu conjunto de trabalho.
     
-## <a name="guidelines-for-relevance-training-and-review"></a>Diretrizes para treinamento de relevância e revisão
+## <a name="guidelines-for-relevance-training-and-review"></a>Diretrizes para treinamento e análise de relevância
 
-A seguir está uma visão geral das diretrizes para treinamento de relevância e revisão:
+Veja a seguir uma visão geral das diretrizes de treinamento e análise de relevância:
   
-- **Erros e inconsistências**: se erros de marcação são feitos durante o treinamento, retorne à amostras de arquivo anterior para corrigi-los. Se há muitos erros para corrigir ou não há uma nova perspectiva do problema ou caso, os critérios de relevância devem ser redefinidos pelo administrador e o treinamento de relevância reiniciados.
+- **Erros e**inconsistências: se forem feitos erros de marcação durante o treinamento, retorne a amostras de arquivos anteriores para corrigi-los. Se houver muitos erros para corrigir ou se houver uma nova perspectiva do caso ou problema, os critérios de relevância deverão ser redefinidos pelo administrador e o treinamento de relevância reiniciado.
     
-- **Treinamento e marcação**: 
+- **Marcação e treinamento**: 
     
-  - Arquivos devem ser marcados com base no conteúdo apenas. Não consideram metadados, como dos responsáveis, data ou caminho do arquivo. 
+  - Os arquivos devem ser marcados com base apenas no conteúdo. Não considere metadados, como os responsáveis, a data ou o caminho do arquivo. 
     
-  - Não consideram data indicações de intervalo do texto quando os arquivos de marcação.
+  - Não considere indicações de intervalo de datas no texto ao marcar arquivos.
     
-  - Não consideram imagens gráficas incorporadas quando os arquivos de marcação.
+  - Não considere imagens gráficas incorporadas ao marcar arquivos.
      
-  - Ignorar texto aplicado a relevância será removido no conteúdo do arquivo exibido no modo de exibição de texto em relevância. Se os valores para Ignorar texto foram definidos após a relevância já treinamento Introdução, o novo texto ignorado será aplicado aos arquivos de exemplo criados a partir do ponto no qual ele foi definido. O recurso Ignorar texto deve ser usado com cautela, como usá-las pode reduzir o desempenho da análise de arquivo
+  - Ignorar o texto aplicado à relevância será removido no conteúdo do arquivo exibido no modo de exibição de texto de relevância. Se os valores para ignorar texto tiverem sido definidos após o treinamento de relevância já ter sido iniciado, o novo texto ignorado será aplicado a arquivos de exemplo criados a partir do ponto em que foi definido. O recurso Ignorar texto deve ser usado com cautela, pois seu uso pode reduzir o desempenho da análise de arquivos
     
-  - Use a opção **Ignorar a marcação** somente quando necessário. EDiscovery avançado (Preview) não treinar com base em arquivos ignorados. Na avaliação, se é difícil identificar se um arquivo é relevante, é melhor a marca como Relevant (R) ou não relevante (NR) sempre que possível, em vez de selecionando **Ignorar**. Quando o eDiscovery avançado (Preview) avalia treinamento, ele poderá ser visto quão bem esses tipos de arquivos foram processados.
+  - Use a opção **ignorar marcação** apenas quando necessário. A descoberta eletrônica avançada (prévia) não treina com base em arquivos ignorados. Em avaliação, se for difícil dizer se um arquivo é relevante, é melhor marcar como relevante (R) ou não relevante (NR) sempre que possível, em vez de selecionar **ignorar**. Quando a descoberta eletrônica avançada (prévia) avalia o treinamento, ela pode ser vista como esses tipos de arquivos foram processados.
     
-  - Mesmo com um valor muito pequeno do texto extraído os arquivos deve ser marcado em treinamento como R/NR, e não como "Ignorar", quando possível. 
+  - Até mesmo arquivos com uma quantidade muito pequena de texto extraído deve ser marcado em treinamento como R/NR, e não como "ignorar", quando possível. 
     
-  - Marcação pode afetar o classificador, desde que o arquivo pode ser lido e pode ser marcado como R/NR.
+  - A marcação pode impactar o classificador, desde que o arquivo seja legível e possa ser marcado como R/NR.
     
-  - O número de sequência de arquivo na lista de arquivos de amostra exibida na guia **marca** permite que o usuário retornar na ordem exibida original dos arquivos. 
+  - O número de sequência de arquivo na lista de arquivos de amostra exibidos na guia **marca** permite que o usuário retorne à ordem de exibição original dos arquivos. 
     
-  - Você pode voltar à qualquer amostra e alterar a marcação de avaliação e treinamento definidas para arquivos. As alterações serão aplicadas ao criar o próximo exemplo.
+  - Você pode retornar a qualquer amostra e alterar a marcação dos arquivos de avaliação e de conjunto de treinamento. As alterações serão aplicadas durante a criação do próximo exemplo.
     
-  - Excel descoberta arquivos no formato PDF devem ser tratados da mesma como arquivos nativos do Excel quando os arquivos de marcação.
+  - Os arquivos do Excel digitalizados no formato PDF devem ser tratados da mesma forma que os arquivos nativos do Excel ao marcar arquivos.
     
-  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcação incorreto durante o treinamento de relevância pode causar perda de tempo posteriormente no processo e também pode ter um impacto negativo sobre a qualidade dos resultados gerais.
+  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações inCorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
     
-  - Palavras-chave que foram definidas no palavras-chave listas serão exibidas em cores para ajudar o usuário a identificar arquivos relevantes durante a marcação.
+  - As palavras-chave que foram definidas nas listas de palavras-chave serão exibidas em cores para ajudar o usuário a identificar arquivos relevantes durante a marcação.
     
-- **Cálculo de lote**: arquivos que foram marcados como R/NR pelo especialista receberá uma pontuação entre 0 e 100. Isso se aplica a marcação feitas antes de cálculo de lote. Se o especialista alternado o problema para ocioso após o cálculo de lote e continua a marcação esse problema, as pontuações recentemente marcadas não será 100/0, mas em vez disso, a pontuação original.
+- **Cálculo em lotes**: os arquivos que foram marcados como R/NR pelo especialista receberão uma pontuação de 0 ou 100. Isso se aplica à marcação feita antes do cálculo em lote. Se o especialista tiver alternado o problema para ficar inativo após o cálculo de lote e a marcação contínua desse problema, as pontuações recentemente marcadas não serão 100/0, mas sim a pontuação original.
     
-- **Problemas e modo de amostragem**: problemas são normalmente desativados quando o trabalho neles é concluído (treinamento de relevância é estabilizado e cálculo de lote foi realizado), quando os problemas são cancelados ou quando outro usuário está funcionando sobre os problemas.
+- **Modo de problemas e de amostragem**: problemas geralmente estão desativados quando o trabalho deles é concluído (o treinamento de relevância é estabilizado e o cálculo do lote foi realizado), quando os problemas são cancelados ou quando outro usuário está trabalhando com os problemas.
     
-## <a name="steps-in-relevance-training"></a>Etapas em treinamento de relevância
+## <a name="steps-in-relevance-training"></a>Etapas no treinamento de relevância
 
-No **relevância \> Track** guia, o eDiscovery avançado oferece recomendações sobre como prosseguir no processamento, com as próximas etapas a seguir. As implicações estão descritas a seguir quando cada uma das etapas a seguir é recomendada no processo de treinamento de relevância. 
+Na guia **controle \> de relevância** , a descoberta eletrônica avançada fornece recomendações sobre como proceder no processamento, com as próximas etapas a seguir. As implicações são descritas abaixo quando cada uma das etapas a seguir é recomendada no processo de treinamento de relevância. 
   
-- Marcação / continuar a marcação: revisão do arquivo e a marcação de relevância realizado por um especialista para cada arquivo e emitir dentro de uma amostra.
+- Marcação/continuação de marcação: marcação de arquivo e classificação de relevância executada por um especialista para cada arquivo e problema em um exemplo.
     
-  - Implicação: Uma amostra existente deve ser marcado.
+  - Implicação: um exemplo existente precisa ser marcado.
     
-- Avaliação / continuar assessment: habilita a validação inicial de relevância de ocorrência do problema e uma exibição preliminar da relevância da população arquivo importada para o caso atual.
+- Avaliação/continuação da avaliação: habilita a validação antecipada da relevância do problema de caso e uma exibição preliminar da relevância da população de arquivo importada para o caso atual.
     
-  - Implicação: Avaliação mais é necessário ou recomendada.
+  - Implicação: mais avaliação obrigatória ou recomendada.
     
-- Treinamento / continuar treinamento: processo durante o qual avançado eDiscovery aprende com o especialista que é o arquivo de marcação amostras e adquire a capacidade de identificar os critérios de relevância pertinentes à cada questão dentro do contexto de cada caso.
+- Treinamento de treinamento/continuação: processo durante o qual a descoberta eletrônica avançada aprende do especialista que está marcando os exemplos de arquivo e obtém a capacidade de identificar critérios de relevância pertinentes a cada problema dentro do contexto de cada caso.
     
-  - Implicação: O problema precisa mais treinamento; o próximo exemplo deve ser criado e marcado. 
+  - Implicação: o problema precisa de mais treinamento; o próximo exemplo deve ser criado e marcado. 
     
-- Cálculo de lote: processo de relevância no qual avançado eDiscovery leva o conhecimento adquirido durante o estágio de treinamento e aplica à população todo o arquivo. Todos os arquivos no grupo de arquivos pertinentes são avaliados para a relevância e atribuídos a uma pontuação de relevância.
+- Cálculo em lote: processo de relevância no qual a descoberta eletrônica avançada Obtém o conhecimento adquirido durante o estágio de treinamento e a aplica à população de arquivo inteiro. Todos os arquivos no grupo de arquivos pertinente são avaliados por relevância e recebem uma pontuação de relevância.
     
-  - Implicação: O problema tem estabilizada e cálculo de lote pode ser executado.
+  - Implicação: o problema foi estabilizado e o cálculo de lote pode ser executado.
     
-- Recuperar o atraso: Relevância indica quando um especialista analisa e marcas de obter um exemplo dos arquivos selecionados de um carregamento de arquivo adicionais durante um cenário de aplicação do carrega.
+- Atualização: relevância indica quando um especialista revisa e marca uma amostra de arquivos selecionados a partir de uma carga de arquivos adicional durante um cenário de cargas sem interrupção.
     
-  - Implicação: Foi adicionada uma nova carga e recuperar o atraso é necessário para continuar trabalhando.
+  - Implicação: uma nova carga foi adicionada e a atualização é necessária para continuar trabalhando.
     
-- Marcar inconsistências: processo identifica, por meio de um algoritmo de descoberta eletrônica avançado, inconsistências no arquivo de marcação de processo que pode ter um impacto negativo a análise.
+- Inconsistências de marca: o processo identifica, por meio de um algoritmo de descoberta eletrônica avançado, inconsistências no processo de marcação de arquivos que podem afetar negativamente a análise.
     
-  - Implicação: O próximo exemplo incluirá arquivos que foram marcados nos exemplos anteriores e seus recursos de marcação devem ser refeito.
+  - Implicação: o exemplo a seguir inclui arquivos que foram marcados em exemplos anteriores e sua marcação deve ser refeita.
     
-- Atualizar classificador: permite ao usuário aplicar marcação ou alterações de propagação.
+- Classificador de atualização: permite que o usuário Aplique alterações de marcação ou propagação.
     
-  - Implicação: Marcação e propagação alterações podem ser aplicadas sem precisar executar manualmente o outro exemplo de relevância.
+  - Implicação: as alterações de marcação e propagação podem ser aplicadas sem a necessidade de executar outra amostra de relevância manualmente.
     
-- Em espera: A relevância treinamento processo seja concluído.
+- Em retenção: o processo de treinamento de relevância foi concluído.
     
-  - Implicação: Nenhum treinamento relevância é necessário nesse momento.
+  - Implicação: nenhum treinamento de relevância é necessário neste ponto.
     
-Embora eDiscovery avançado orienta você durante o processo, com próximas etapas recomendadas em estágios diferentes, ele também permite que você para navegar entre páginas e guias e fazer escolhas em situações de endereço que podem ser pertinentes à sua caso individual, o problema, ou processo de revisão de documento. 
+Embora a descoberta eletrônica avançada orienta você durante o processo, com as próximas etapas recomendadas em estágios diferentes, ela também permite que você navegue entre guias e páginas e faça escolhas para lidar com situações que possam ser pertinentes a seu caso, problema ou processo de revisão de documento. 
   
-É possível aceitar ou substituir a próxima etapa de descoberta eletrônica avançada escolhas de processamento. Se você deseja executar uma etapa que não seja a próxima etapa recomendada, clique na **próxima etapa** listados na exibição expandida problema na caixa de diálogo, clique no botão **Modificar** ao lado da próxima etapa e selecione outra opção de etapa em próximo. 
+É possível aceitar ou substituir as opções de processamento de próxima etapa de descoberta eletrônica avançada. Se você deseja executar uma etapa diferente da próxima etapa recomendada, clique na **próxima etapa** listada na exibição de problema expandida na caixa de diálogo, clique no botão **Modificar** ao lado da próxima etapa e selecione outra opção de próxima etapa. 
   
 > [!NOTE]
-> Algumas opções podem permanecer desabilitadas após desbloqueando conforme eles não são suportados para uso nesse momento no processo. 
+> Algumas opções podem permanecer desabilitadas após a desbloqueio, pois elas não são suportadas para uso nesse ponto no processo. 
   
 ## <a name="more-information"></a>Mais informações
 
-[Noções básicas sobre avaliação na relevância](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Noções básicas sobre avaliação em relevância](../assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Avaliação e marcação](../tagging-and-assessment-in-advanced-ediscovery.md)
+[Marcação e avaliação](../tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Marcação e treinamento de relevância](../tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Treinamento de marcação e relevância](../tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Análise de relevância de acompanhamento](../track-relevance-analysis-in-advanced-ediscovery.md)
+[Análise de relevância de rastreamento](../track-relevance-analysis-in-advanced-ediscovery.md)
   
 [Decidindo com base nos resultados](../decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Análise de relevância de teste](../test-relevance-analysis-in-advanced-ediscovery.md)
+[Testando análise de relevância](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Consultar dentro do conjunto de trabalho](working-set-search.md)
+[Consulta no conjunto de trabalho](working-set-search.md)

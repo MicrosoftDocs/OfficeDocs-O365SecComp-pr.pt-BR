@@ -1,15 +1,15 @@
 ---
-title: Crie um certificado APNs para dispositivos iOS
+title: Criar um certificado APNs para dispositivos iOS
 ms.author: brendonb
 author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
 ms.audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
 - O365E_APNCertMDM
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,57 +18,57 @@ search.appverid:
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: Para gerenciar dispositivos iOS como iPad e iPhones no gerenciamento de dispositivos móveis para o Office 365, siga estas etapas para criar primeiro um certificado APNs.
-ms.openlocfilehash: 28e8888d7dd57c3052cdcb5994725f11a5f0445f
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272046"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220451"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>Crie um certificado APNs para dispositivos iOS
+# <a name="create-an-apns-certificate-for-ios-devices"></a>Criar um certificado APNs para dispositivos iOS
 
  Para gerenciar dispositivos iOS como iPad e iPhones no gerenciamento de dispositivos móveis para o Office 365, você deve criar um certificado APNs. 
   
-Para fazer isso, siga as etapas no link **Configurar** na página do portal. (Vá para **segurança &amp; Centro de conformidade** \> **diretivas de segurança** \> **Device management** \> **Gerenciar definições**.)
+Para fazer isso, siga as etapas do link **Configurar** na página do Portal. ( \> Acesse gerenciamento de **dispositivos** de **políticas** \> de segurança do \> **centro de conformidade de &amp; segurança** **gerenciar configurações**.)
   
-![Configurar o gerenciamento de dispositivo móvel etapas obrigatórias e recomendadas](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
+![Configurar o gerenciamento de dispositivo móvel necessário e as etapas recomendadas](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
-1. Ao lado de **Configurar um certificado de APNs para dispositivos iOS**, selecione **Configurar**.
+1. Ao lado de **configurar um certificado APNs para dispositivos IOS**, selecione **Configurar**.
     
-2. Selecione **baixar seu arquivo CSR** e salve a solicitação de certificado de assinatura em algum lugar no seu computador que irá se lembrar. 
+2. Selecione **baixar seu arquivo CSR** e salvar a solicitação de assinatura de certificado em algum lugar no seu computador que você se lembrará. 
     
-    ![Instalar a caixa de diálogo certificado APN](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
+    ![Caixa de diálogo Instalar certificado APN](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
   
 3. Selecione **Avançar**.
     
-4. Crie um certificado APN.
+4. Criar um certificado APN.
     
-  - Selecione **Apple APNS Portal** para abrir o Portal de certificados do Apple Push. 
+  - Selecione **portal Apple APNS** para abrir o portal Apple Push Certificates. 
     
-    ![Instalar a caixa de diálogo de cert de notificação de APN com o Portal do Apple APNS selecionado](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
+    ![Instalar a caixa de diálogo de certificado de notificação APN com o portal Apple APNS selecionado](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
   
-  - Entrar com uma ID de Apple.
+  - Entre com uma ID da Apple.
     
     > [!IMPORTANT]
-    > Use uma empresa que Apple ID associado a uma conta de email que permanecerão com sua organização, mesmo se deixa o usuário que gerencia a conta. Salve este ID, pois você precisará usar a mesma identificação quando é hora de renovar o certificado. 
+    > Use uma ID da Apple associada a uma conta de email que permanecerá com sua organização, mesmo que o usuário que gerencia a conta saia. Salve esta ID porque você precisará usar a mesma ID quando for hora de renovar o certificado. 
   
-  - Selecione **criar um certificado** e aceitar os **Termos de uso**.
+  - Selecione **criar um certificado** e aceitar os **termos de uso**.
     
-  - **Navegue** para a assinatura de certificado solicitar que você baixou para seu computador do Office 365 e selecione **carregar**.
+  - **Navegue** até a solicitação de assinatura de certificado que você baixou para seu computador no Office 365 e selecione **carregar**.
     
-  - **Baixar** o certificado APN criados pelo Portal de certificado do Apple Push ao seu computador. 
+  - **Baixe** o certificado APN criado pelo portal de certificado por push da Apple no seu computador. 
     
     > [!TIP]
-    > Se você estiver tendo problemas baixando o certificado, atualize o navegador. 
+    > Se você estiver tendo problemas para baixar o certificado, atualize seu navegador. 
   
-5. Voltar para o Office 365 e selecione **Avançar** para chegar à página **APNS carregar certificado** . 
+5. Volte para o Office 365 e selecione **Avançar** para acessar a página **carregar certificado APNS** . 
     
-6. Navegue até o certificado APN que você baixou a partir do Portal de certificados do Apple Push.
+6. Navegue até o certificado APN que você baixou do portal de certificados por push da Apple.
     
-    ![Clique no botão Procurar para selecionar o cert APNS que você baixou da Apple](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
+    ![Clique no botão procurar para selecionar o certificado APNS baixado da Apple](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Selecione **Concluir**.
+7. Selecione **concluir**.
     
-Volte para **segurança &amp; Centro de conformidade** \> **diretivas de segurança** \> **Device management** \> **Gerenciar configurações** para concluir a instalação. 
+Voltar ao \> centro de **conformidade de segurança &amp; ** **as políticas** \> de segurança **Gerenciamento** \> de dispositivos **gerenciar configurações** para concluir a instalação. 
   
 

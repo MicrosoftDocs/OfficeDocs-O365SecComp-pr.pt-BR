@@ -1,5 +1,5 @@
 ---
-title: Enviar e receber S/MIME assinadas e criptografadas de email
+title: Enviar e receber emails assinados e criptografados com S/MIME
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Enviar ou responder a mensagens criptografadas com S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada.
-ms.openlocfilehash: d70625b2c65a021132cf251f35228d279cb4c44a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 071b96452ed5668c4fcfb34c9c8fadcd6369ce84
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003180"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206354"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email"></a>Enviar e receber S/MIME assinadas e criptografadas de email
+# <a name="send-and-receive-smime-signed-and-encrypted-email"></a>Enviar e receber emails assinados e criptografados com S/MIME
 
-Enviar ou responder a mensagens criptografadas com S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada. Para obter mais informações sobre a leitura ou o envio de mensagens criptografadas com S/MIME de um programa de email como o Outlook Web App, consulte [Usar o Outlook para enviar e responder mensagens criptografadas com S/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520).
+O envio ou a resposta a uma mensagem criptografada por S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada. Para obter mais informações sobre como ler ou enviar mensagens criptografadas por S/MIME de um programa de email como o Outlook na Web (anteriormente conhecido como Outlook Web App), consulte [usar o Outlook para enviar e responder a mensagens criptografaDas S/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520).
   
 ## <a name="for-more-information"></a>Para saber mais
 
