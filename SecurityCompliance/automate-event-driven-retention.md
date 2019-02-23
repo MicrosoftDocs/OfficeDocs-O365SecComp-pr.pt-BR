@@ -3,7 +3,6 @@ title: Automatizar retenção orientada a eventos
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este tópico explica como configurar os fluxos dos processos empresariais para automatizar a retenção por meio de eventos usando a API REST do Microsoft 365.
-ms.openlocfilehash: a43fb7dd2c87879ec5c89c48e830c8c205eeedec
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 799f831e937d3f676bb05eb188b813b1ca23622c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220511"
+ms.locfileid: "30223750"
 ---
 # <a name="automate-event-based-retention"></a>Automatizar retenção baseada em eventos
 
@@ -485,4 +484,4 @@ Um sistema de ERP (Planejamento de Recursos Empresariais) pode trabalhar com o M
 
 Este tópico foi revisado por:
 
-Antonio Maio</br>MVP de aplicativos e serviços do Microsoft Office</br> Antonio.Maio@Protiviti.com
+Antonio Maio<br/>MVP de aplicativos e serviços do Microsoft Office<br/> Antonio.Maio@Protiviti.com
