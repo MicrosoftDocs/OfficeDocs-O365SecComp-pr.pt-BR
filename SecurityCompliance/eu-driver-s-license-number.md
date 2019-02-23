@@ -1,25 +1,25 @@
 ---
-title: Número de carteira de motorista da UE
+title: Número da carteira de motorista da UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
-description: Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando ele detectar o tipo de informação confidencial número de carteira de motorista da UE. Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: 065684249f9766d567c63e6b8170d36f56692e45
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de licença do driver da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
+ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524018"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217741"
 ---
-# <a name="eu-drivers-license-number"></a>Número de carteira de motorista da UE
+# <a name="eu-drivers-license-number"></a>Número da carteira de motorista da UE
 
-Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando ele detectar o tipo de informação confidencial número de carteira de motorista da UE. Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
+Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de licença do driver da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
   
 ## <a name="austria"></a>Áustria
 
@@ -39,9 +39,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_austria_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_austria_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_austria_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_austria_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -59,7 +59,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> licença de motorista  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/>  número de carteira de dirigir  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein republik osterreich  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> licença do driver  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/>  número da licença de dirigir  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Bélgica
 
@@ -79,9 +79,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_belgium_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_belgium_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_belgium_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_belgium_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -99,7 +99,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-nr  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-NR  <br/> fuehrerschein-NR  <br/> fuehrerschein-NR  <br/> |
    
 ## <a name="bulgaria"></a>Bulgária
 
@@ -119,9 +119,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_bulgaria_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_bulgaria_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_bulgaria_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_bulgaria_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -139,7 +139,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МПС  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МОТОРНО ПРЕВОЗНО СРЕДСТВО  <br/> СУМПС  <br/> ШОФЬОРСКА КНИЖКА  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Croácia
 
@@ -159,9 +159,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_croatia_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_croatia_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_croatia_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_croatia_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -179,7 +179,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> vozačka dozvola  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Chipre
 
@@ -199,9 +199,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_cyprus_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_cyprus_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_cyprus_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_cyprus_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -218,19 +218,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> ΆΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>República Tcheca
 
 ### <a name="format"></a>Formato
 
-Duas letras seguidas de seis dígitos
+Duas letras seguidas por seis dígitos
   
 ### <a name="pattern"></a>Padrão
 
 Oito letras e dígitos:
   
-- Duas letras (não diferencia maiusculas de minúsculas)
+- Duas letras (não diferencia maiúsculas de minúsculas)
     
 - Um espaço (opcional)
     
@@ -244,9 +244,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_czech_republic_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_czech_republic_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_czech_republic_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_czech_republic_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -264,7 +264,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> Řidičský prúkaz  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Dinamarca
 
@@ -284,9 +284,9 @@ Sim
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_denmark_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_denmark_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_denmark_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_denmark_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -304,19 +304,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estônia
 
 ### <a name="format"></a>Formato
 
-Duas letras seguidas de seis dígitos
+Duas letras seguidas por seis dígitos
   
 ### <a name="pattern"></a>Padrão
 
 Duas letras e seis dígitos:
   
--  As letras "ET" (não diferencia maiusculas de minúsculas) 
+-  As letras "ET" (não diferencia maiúsculas de minúsculas) 
     
 - Seis dígitos
     
@@ -328,9 +328,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_estonia_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_estonia_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_estonia_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_estonia_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -347,7 +347,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> 
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número da licença de dirigir  <br/> dlno #  <br/> 
 permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finlândia
@@ -358,7 +358,7 @@ permis de conduire  <br/> |
   
 ### <a name="pattern"></a>Padrão
 
-10 dígitos que contém um hífen:
+10 dígitos contendo um hífen:
   
 -  Seis dígitos 
     
@@ -374,9 +374,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_finland_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_finland_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_finland_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_finland_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -393,15 +393,15 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> ajokortti  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>França
 
-Para obter detalhes, consulte a seção "Número de carteira de motorista da França" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número da carteira de motorista do driver da França" em [o que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Alemanha
 
-Para obter detalhes, consulte a seção "Número de carteira de motorista da Alemanha" em [quais tipos de informações confidenciais a procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número da carteira de motorista do driver alemão" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grécia
 
@@ -421,9 +421,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_greece_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_greece_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_greece_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_greece_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -440,19 +440,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|dlL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> ΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> Adeia odigisis  <br/> |
+|DlL  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> δεια οδήγησης  <br/> AdeIa odigisis  <br/> |
    
 ## <a name="hungary"></a>Hungria
 
 ### <a name="format"></a>Formato
 
-Duas letras seguidas de seis dígitos
+Duas letras seguidas por seis dígitos
   
 ### <a name="pattern"></a>Padrão
 
 Duas letras e seis dígitos:
   
--  Duas letras (não diferencia maiusculas de minúsculas) 
+-  Duas letras (não diferencia maiúsculas de minúsculas) 
     
 - Seis dígitos
     
@@ -464,9 +464,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_hungary_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_hungary_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_hungary_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_hungary_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -483,13 +483,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
 ### <a name="format"></a>Formato
 
-Seis dígitos seguidos por quatro letras
+Seis dígitos seguidos de quatro letras
   
 ### <a name="pattern"></a>Padrão
 
@@ -497,7 +497,7 @@ Seis dígitos e quatro letras:
   
 - Seis dígitos
     
-- Quatro letras (não diferencia maiusculas de minúsculas)
+- Quatro letras (não diferencia maiúsculas de minúsculas)
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -507,9 +507,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_ireland_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_ireland_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_ireland_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_ireland_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -526,23 +526,23 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>Itália
 
-Para obter detalhes, consulte a seção "Número de carteira de motorista da Itália" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número da carteira de motorista do driver da Itália" em [o que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="latvia"></a>Letônia
 
 ### <a name="format"></a>Formato
 
-Três letras seguidas de seis dígitos
+Três letras seguidas por seis dígitos
   
 ### <a name="pattern"></a>Padrão
 
 Três letras e seis dígitos:
   
--  Três letras (não diferencia maiusculas de minúsculas) 
+-  Três letras (não diferencia maiúsculas de minúsculas) 
     
 - Seis dígitos
     
@@ -554,9 +554,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_latvia_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_latvia_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_latvia_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_latvia_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -573,7 +573,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Lituânia
 
@@ -593,9 +593,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_lithuania_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_lithuania_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_lithuania_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_lithuania_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -612,9 +612,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
    
-## <a name="luxemburg"></a>Luxemburgo
+## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Formato
 
@@ -632,9 +632,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_luxemburg_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_luxemburg_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_luxemburg_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_luxemburg_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -651,7 +651,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -663,7 +663,7 @@ Combinação de dois caracteres e seis dígitos no padrão especificado
 
 Combinação de dois caracteres e seis dígitos:
   
-- Dois caracteres (dígitos ou letras, não diferencia maiusculas de minúsculas)
+- Dois caracteres (dígitos ou letras, não diferenciam maiúsculas de minúsculas)
     
 - Um espaço (opcional)
     
@@ -681,9 +681,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_malta_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_malta_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_malta_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_malta_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -700,7 +700,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> tarefa liċenzja-sewqan  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> liċenzja tas-sewqan  <br/> |
    
 ## <a name="netherlands"></a>Países Baixos
 
@@ -720,9 +720,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_netherlands_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_netherlands_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_netherlands_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_netherlands_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -739,7 +739,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> 
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> 
 permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polônia
@@ -750,7 +750,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
   
 ### <a name="pattern"></a>Padrão
 
-14 dígitos e 2 barras:
+14 dígitos e 2 barras de avanço:
   
 -  Cinco dígitos 
     
@@ -770,9 +770,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_poland_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_poland_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_poland_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_poland_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -789,19 +789,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> prawo jazdy  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> Prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Formato
 
-Duas letras seguidas por um sete números no padrão especificado
+Duas letras seguidas por sete números no padrão especificado
   
 ### <a name="pattern"></a>Padrão
 
 Duas letras seguidas por sete números com caracteres especiais:
   
--  Duas letras (não diferencia maiusculas de minúsculas) 
+-  Duas letras (não diferencia maiúsculas de minúsculas) 
     
 - Um hífen
     
@@ -819,9 +819,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_portugal_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_portugal_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_portugal_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_portugal_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -838,19 +838,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> carteira de motorista  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Romênia
 
 ### <a name="format"></a>Formato
 
-Um caractere seguido oito dígitos
+Um caractere seguido por oito dígitos
   
 ### <a name="pattern"></a>Padrão
 
-Um caractere seguido oito dígitos:
+Um caractere seguido por oito dígitos:
   
--  Uma letra (não diferencia maiusculas de minúsculas) ou dígito 
+-  Uma letra (não diferencia maiúsculas de minúsculas) ou dígito 
     
 - Oito dígitos
     
@@ -862,9 +862,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_romania_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_romania_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_romania_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_romania_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -881,7 +881,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> permis de conducere  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> permé de conducere  <br/> |
    
 ## <a name="slovakia"></a>Eslováquia
 
@@ -893,7 +893,7 @@ Um caractere seguido por sete dígitos
 
 Um caractere seguido por sete dígitos
   
-- Uma letra (não diferencia maiusculas de minúsculas) ou dígito
+- Uma letra (não diferencia maiúsculas de minúsculas) ou dígito
     
 -  Sete dígitos 
     
@@ -905,9 +905,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_slovakia_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_slovakia_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovakia_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_slovakia_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -924,7 +924,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Eslovênia
 
@@ -944,9 +944,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_slovenia_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_slovenia_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovenia_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_slovenia_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -963,21 +963,21 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>Espanha
 
 ### <a name="format"></a>Formato
 
-Oito dígitos seguidos por um caractere
+Oito dígitos seguidos de um caractere
   
 ### <a name="pattern"></a>Padrão
 
-Oito dígitos seguidos por um caractere:
+Oito dígitos seguidos de um caractere:
   
 -  Oito dígitos 
     
-- Um dígito ou carta (não diferencia maiusculas de minúsculas)
+- Um dígito ou letra (não diferencia maiúsculas de minúsculas)
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -987,9 +987,9 @@ Sim
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_spain_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_spain_eu_driver's_license_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_spain_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_spain_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1006,19 +1006,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> DL #  <br/> lic drivers.  <br/> licença de driver  <br/> licença de driver  <br/> drivers licence  <br/> 
-drivers license  <br/> licença de motorista  <br/> de motorista carteira  <br/> driving licence
-  <br/> orientando licença  <br/> número de carteira de licença  <br/> número de carteira de motorista  <br/> número de licenciar drivers  <br/> número de carteira de drivers  <br/> número de licença de motorista  <br/> número de carteira de motorista  <br/> número de licença driving  <br/> número de carteira de dirigir  <br/> orientando permitir  <br/> número de permitir que controla  <br/> permiso de conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> el carnet de conducir  <br/> carnet conducir  <br/> |
+|dlno #  <br/> distribuição  <br/> drivers driver'lic.  <br/> licença de driver  <br/> licença de driver  <br/> drivers licence  <br/> 
+drivers license  <br/> licença do driver  <br/> carteira de motorista  <br/> driving licence
+  <br/> direcionando a licença  <br/> número de licença de driver  <br/> número de carteira de motorista  <br/> número de licença de drivers  <br/> número de licença de drivers  <br/> número de licença do driver  <br/> número da carteira de motorista  <br/> número da licença de dirigir  <br/> número da licença de dirigir  <br/> permissão de condução  <br/> número de permissão de dirigir  <br/> permiso de conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> número de Carnet de conducir  <br/> número Carnet conducir  <br/> licencia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> El Carnet de conducir  <br/> Carnet conducir  <br/> |
    
 ## <a name="sweden"></a>Suécia
 
 ### <a name="format"></a>Formato
 
-Dez dígitos que contém um hífen
+Dez dígitos contendo um hífen
   
 ### <a name="pattern"></a>Padrão
 
-Dez dígitos que contém um hífen:
+Dez dígitos contendo um hífen:
   
 -  Seis dígitos 
     
@@ -1034,9 +1034,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_sweden_eu_driver's_license_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_sweden_eu_driver's_license_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_sweden_eu_driver's_license_number` for encontrado. 
+- Uma palavra- `Keywords_sweden_eu_driver's_license_number` chave de foi encontrada. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1053,13 +1053,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> lic drivers.  <br/> carteira de motorista  <br/> drivers licence  <br/> de motorista carteira  <br/> número de carteira de motorista  <br/> número de licença de motorista  <br/> número de carteira de dirigir  <br/> dlno #  <br/> körkort  <br/> |
+|distribuição  <br/> licença de driver  <br/> número de carteira de motorista  <br/> licença de driver  <br/> drivers driver'lic.  <br/> licença de drivers  <br/> drivers licence  <br/> carteira de motorista  <br/> número da carteira de motorista  <br/> número de licença do driver  <br/> número da licença de dirigir  <br/> dlno #  <br/> körkort  <br/> |
    
-## <a name="uk"></a>REINO UNIDO
+## <a name="uk"></a>Reino Unido
 
-Para obter detalhes, consulte a seção "Número de carteira de motorista do Reino Unido" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número da carteira de motorista do Reino Unido" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Confira também
 
-[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
+[O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
 

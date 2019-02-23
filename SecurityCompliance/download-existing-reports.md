@@ -1,48 +1,48 @@
 ---
-title: Baixar relatórios existentes na segurança &amp; Centro de conformidade
+title: Baixar relatórios existentes no centro de &amp; conformidade de segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: Aprenda a fazer o download de um ou mais relatórios existentes na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: b4231a29fd9c3282bd36bed6197f811de36de092
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Saiba como baixar um ou mais relatórios existentes no centro de conformidade &amp; de segurança.
+ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014833"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219121"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Baixar relatórios existentes na segurança &amp; Centro de conformidade
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Baixar relatórios existentes no centro de &amp; conformidade de segurança
 
-No [segurança &amp; Centro de conformidade](https://protection.office.com), vários [relatórios e ideias](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização atenuar e tratar ameaças à sua organização. Se você for um membro da equipe de segurança da sua organização, você pode baixar um ou mais relatórios existentes. 
+No [centro de &amp; conformidade de segurança](https://protection.office.com), vários [relatórios e informações](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização a reduzir e resolver ameaças à sua organização. Se você é membro da equipe de segurança da sua organização, pode baixar um ou mais relatórios existentes. 
   
 ## <a name="download-existing-reports"></a>Baixar relatórios existentes
 
 > [!IMPORTANT]
-> Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). Em geral, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem acessar relatórios na segurança &amp; Centro de conformidade. 
+> Verifique se você tem as permissões necessárias [atribuídas no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md). Em geral, os administradores globais do Office 365, administradores de segurança e leitores de segurança podem acessar relatórios &amp; no centro de conformidade de segurança. 
   
-1. No [segurança &amp; Centro de conformidade](https://protection.office.com), vá para **relatórios** \> **relatórios para baixar**.
+1. No [centro de &amp; conformidade de segurança](https://protection.office.com), vá para relatórios de **relatórios** \> **para download**.
     
 2. Selecione um ou mais itens na lista.
     
-3. Clique em **baixar relatório**e clique em **Fechar**.
+3. Clique em **baixar relatório**e, em seguida, clique em **fechar**.
     
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md)
+[Relatórios e insights no centro de conformidade de &amp; segurança do Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade](create-a-schedule-for-a-report.md)
+[Criar um cronograma para um relatório no centro de &amp; conformidade de segurança](create-a-schedule-for-a-report.md)
   
-[Gerenciar agendas para relatórios na segurança &amp; Centro de conformidade](manage-schedules-for-multiple-reports.md)
+[Gerenciar agendas para relatórios no centro &amp; de conformidade de segurança](manage-schedules-for-multiple-reports.md)
   
-[Faça o download de um relatório personalizado na segurança &amp; Centro de conformidade](set-up-and-download-a-custom-report.md)
+[Baixar um relatório personalizado no centro de &amp; conformidade de segurança](set-up-and-download-a-custom-report.md)
   
 

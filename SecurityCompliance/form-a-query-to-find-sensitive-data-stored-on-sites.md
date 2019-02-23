@@ -6,87 +6,87 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
-description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir os documentos que contêm dados confidenciais em todo o seu locatário. Depois de descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para pesquisar dados confidenciais.
-ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
-ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
+description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir documentos que contêm dados confidenciais em todo o locatário. Depois de descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para pesquisar dados confidenciais.
+ms.openlocfilehash: 3dc1081d4627f1a26c50eed84f733c31a3f6c194
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "25829182"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217231"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Criar uma consulta para encontrar dados confidenciais armazenados em sites
 
-Os usuários costumam armazenam dados confidenciais, como números de cartão de crédito, números do seguro social, ou pessoal, em seus sites e ao longo do tempo isso pode expor a organização para um risco significativo de perda de dados. Documentos armazenados em sites — incluindo OneDrive para sites corporativos — poderão ser compartilhadas com pessoas fora da organização que não devem ter acesso às informações. Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir os documentos que contêm dados confidenciais em todo o seu locatário. Depois de descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para pesquisar dados confidenciais.
+Os usuários geralmente armazenam dados confidenciais, como números de cartão de crédito, números de seguridade social ou pessoais, em seus sites e com o passar do tempo, que pode expor uma organização a um risco significativo de perda de dados. Os documentos armazenados nos sites, incluindo os sites do OneDrive for Business, podem ser compartilhados com pessoas de fora da organização que não deveriam ter acesso às informações. Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir documentos que contêm dados confidenciais em todo o locatário. Depois de descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para pesquisar dados confidenciais.
   
 > [!NOTE]
-> Descoberta eletrônica, ou eDiscovery e DLP são recursos premium que exigem o [SharePoint Online plano 2](https://go.microsoft.com/fwlink/?LinkId=510080). 
+> A descoberta eletrônica, ou eDiscovery, e a DLP são recursos premium que exigem o [SharePoint Online plano 2](https://go.microsoft.com/fwlink/?LinkId=510080). 
   
 ## <a name="forming-a-basic-dlp-query"></a>Criando uma consulta básica de DLP
 
-Existem três partes que compõem uma consulta básica de DLP: SensitiveType, contar o intervalo e o intervalo de confiança. Conforme ilustrado no gráfico a seguir, **SensitiveType: "\<tipo\>"** é necessário e ambas**|\<contar intervalo\> ** e**|\<o intervalo de confiança\> ** são opcionais. 
+Há três partes que compõem uma consulta de DLP básica: Sensitivetype, intervalo de contagem e intervalo de confiança. Conforme ilustrado no gráfico a seguir, **sensitivetype:\<"\>Type"** é necessário, e o**|\<intervalo\> de contagem** e o**|\<\> intervalo de confiança** são opcionais. 
   
 ![Consulta de exemplo dividida em necessária e opcional](media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>Tipo confidencial - necessário
 
-O que é cada parte? Consultas de SharePoint DLP geralmente começam com a propriedade `SensitiveType:"` e um tipo de informação nome do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999)e terminam com um `"`. Você também pode usar o nome de um [tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) que você criou para sua organização. Por exemplo, você pode estar procurando por documentos que contenham números de cartão de crédito. Na instância, você usaria o seguinte formato: `SensitiveType:"Credit Card Number"`. Porque você não incluiu o intervalo de contagem ou intervalo de confiança, a consulta retorna todos os documentos em que um número de cartão de crédito é detectado. Esta é a consulta mais simples que podem ser executados, e retorna a maioria dos resultados. Tenha em mente que importa a ortografia e o espaçamento do tipo confidencial. 
+Então, o que é cada parte? As consultas de DLP do SharePoint normalmente começam `SensitiveType:"` com a propriedade e um nome de tipo de informação do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999)e terminam com um `"`. Você também pode usar o nome de um [tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) que você criou para sua organização. Por exemplo, você pode estar procurando documentos que contenham números de cartão de crédito. Nesse caso, você usaria o seguinte formato: `SensitiveType:"Credit Card Number"`. Como você não incluiu o intervalo de contagem ou o intervalo de confiança, a consulta retorna todos os documentos nos quais um número de cartão de crédito é detectado. Esta é a consulta mais simples que você pode executar e retorna os resultados mais. Tenha em mente que a ortografia e o espaçamento do tipo confidencial são importantes. 
   
 ### <a name="ranges---optional"></a>Intervalos - opcionais
 
-Ambas as próximas duas partes são intervalos, vamos examinar rapidamente a aparência de um intervalo. Em consultas de SharePoint DLP, um intervalo básico é representado por dois números separados por dois pontos, que tem esta aparência: `[number]..[number]`. Por exemplo, se `10..20` é usado, aquele intervalo seria capturar números de 10 a 20. Há muitas combinações de intervalo diferente e várias são abordadas neste tópico. 
+Ambas as duas partes seguintes são intervalos, portanto, vamos examinar rapidamente a aparência de um intervalo. Nas consultas de DLP do SharePoint, um intervalo básico é representado por dois números separados por dois pontos, que tem a `[number]..[number]`seguinte aparência:. Por exemplo, se `10..20` for usado, esse intervalo capturaria números de 10 a 20. Há várias combinações de intervalo diferentes e várias são abordadas neste tópico. 
   
-Vamos adicionar um intervalo de contagem à consulta. Você pode usar o intervalo de contagem para definir o número de ocorrências de um documento precisa conter antes que ele está incluído nos resultados da consulta de informações confidenciais. Por exemplo, se desejar que a sua consulta para retornar apenas os documentos que contenham exatamente cinco números de cartão de crédito, use isso: `SensitiveType:"Credit Card Number|5"`. Intervalo de contagem pode ajudá-lo a identificar documentos que impõem alto grau de risco. Por exemplo, sua organização pode considerar documentos com cinco ou mais números de cartão de crédito um alto risco. Para localizar documentos ajustando a esse critério, você usaria esta consulta: `SensitiveType:"Credit Card Number|5.."`. Como alternativa, você pode localizar documentos com cinco ou menos números de cartão de crédito usando esta consulta: `SensitiveType:"Credit Card Number|..5"`. 
+Vamos adicionar um intervalo de contagem à consulta. Você pode usar o intervalo de contagem para definir o número de ocorrências de informações confidenciais que um documento precisa conter antes de ser incluído nos resultados da consulta. Por exemplo, se você quiser que a consulta retorne apenas documentos que contenham exatamente cinco números de cartão de `SensitiveType:"Credit Card Number|5"`crédito, use:. O intervalo de contagem também pode ajudá-lo a identificar documentos que representam altos graus de risco. Por exemplo, sua organização pode considerar documentos com cinco ou mais números de cartão de crédito em um alto risco. Para localizar documentos que estejam ajustando esse critério, você usaria esta `SensitiveType:"Credit Card Number|5.."`consulta:. Como alternativa, você pode encontrar documentos com cinco ou menos números de cartão de crédito usando esta consulta `SensitiveType:"Credit Card Number|..5"`:. 
   
 #### <a name="confidence-range"></a>Intervalo de confiança
 
-Finalmente, o intervalo de confiança é o nível de confiança que o tipo de confidencial detectado é realmente uma correspondência. Os valores para o intervalo de confiança funcionam da mesma forma, para contar o intervalo. É possível formar uma consulta sem incluir um intervalo de contagem. Por exemplo, para pesquisar documentos com qualquer número de cartão de crédito números — desde o intervalo de confiança é de 85 por cento ou superior — você usaria esta consulta: `SensitiveType:"Credit Card Number|*|85.."`. 
+Por fim, o intervalo de confiança é o nível de confiança de que o tipo confidencial detectado é realmente uma correspondência. Os valores para o intervalo de confiança funcionam de forma semelhante ao intervalo de contagem. Você pode formar uma consulta sem incluir um intervalo de contagem. Por exemplo, para pesquisar documentos com qualquer número de números de cartão de crédito, contanto que o intervalo de confiança seja de 85% ou mais — você usaria esta `SensitiveType:"Credit Card Number|*|85.."`consulta:. 
   
 > [!IMPORTANT]
-> O asterisco ( `*`) é um caractere curinga que significa works qualquer valor. Você pode usar o caractere curinga ( `*`) do intervalo de contagem ou do intervalo de confiança mas não em um tipo confidencial. 
+> O asterisco ( `*`) é um caractere curinga que significa que qualquer valor funciona. Você pode usar o caractere curinga ( `*`) tanto no intervalo de contagem quanto no intervalo de confiança, mas não em um tipo confidencial. 
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Propriedades de pesquisa e operadores de consulta adicionais disponíveis no Centro de Descoberta Eletrônica
 
-DLP no SharePoint também introduz o LastSensitiveContentScan propriedade, que pode ajudá-lo procurar arquivos verificados dentro de um período específico. Para obter exemplos de consulta com o `LastSensitiveContentScan` propriedade, consulte os [exemplos de consultas complexas](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) na próxima seção. 
+DLP no SharePoint também apresenta a propriedade LastSensitiveContentScan, que pode ajudá-lo a Pesquisar arquivos verificados dentro de um período específico. Para obter exemplos de consulta `LastSensitiveContentScan` com a propriedade, consulte os [exemplos de consultas complexas](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) na próxima seção. 
   
-Você pode usar não apenas propriedades específicas de DLP para criar uma consulta, mas também propriedades padrão de pesquisa de descoberta eletrônica do SharePoint como `Author` ou `FileExtension`. Você pode usar os operadores para construir consultas complexas. Para lista de operadores e propriedades disponíveis, consulte a postagem do blog do [usando propriedades de pesquisa e operadores com eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093) . 
+Você pode usar não apenas propriedades específicas de DLP para criar uma consulta, mas também Propriedades de pesquisa de descoberta eletrônica do `Author` SharePoint `FileExtension`padrão, como ou. Você pode usar operadores para criar consultas complexas. Para obter a lista de propriedades e operadores disponíveis, consulte o [usando as propriedades de pesquisa e os operadores com](https://go.microsoft.com/fwlink/?LinkId=510093) postagem do blog de descoberta eletrônica. 
   
 ## <a name="examples-of-complex-queries"></a>Exemplos
 
-Os exemplos a seguir usam tipos diferentes de confidenciais, propriedades e operadores para ilustrar como você pode refinar suas consultas para localizar exatamente o que você está procurando.
+Os exemplos a seguir usam diferentes tipos confidenciais, propriedades e operadores para ilustrar como você pode refinar suas consultas para localizar exatamente o que você está procurando.
   
-|**Consulta**|**Explicação**|
+|**Query**|**Explicação**|
 |:-----|:-----|
-| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |O nome pode parecer estranho porque ele é tão grande, mas é o nome correto para aquele tipo confidencial. Certifique-se de usar nomes exatos do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999). Você também pode usar o nome de um [tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) que você criou para sua organização.<br/> |
-| ' SensitiveType: "número de cartão de crédito|1..4294967295|1..100"' <br/> |Isso retornará documentos com pelo menos uma correspondência para o tipo de confidencial "Número de cartão de crédito." Os valores para cada intervalo são os respectivos valores mínimos e máximo. É uma maneira mais simples para gravar esta consulta `SensitiveType:"Credit Card Number"`, mas onde é a diversão nisso?<br/> |
-| ' SensitiveType: "número de cartão de crédito| 5..25" e LastSensitiveContentScan:"8/11/2018..8/13/2018 "' <br/> |Isso retornará documentos com 5-25 números de cartão de crédito que foram verificados de 11 de agosto de 2018 por meio de 13 de agosto de 2018.  <br/> |
-| ' SensitiveType: "número de cartão de crédito| 5..25" e LastSensitiveContentScan:"8/11/2018..8/13/2018 "não FileExtension:XLSX' <br/> |Isso retornará documentos com 5-25 números de cartão de crédito que foram verificados de 11 de agosto de 2018 por meio de 13 de agosto de 2018. Arquivos com uma extensão XLSX não são incluídos nos resultados da consulta.  `FileExtension` é uma das muitas propriedades que você pode incluir em uma consulta. Para obter mais informações, consulte [usando propriedades de pesquisa e operadores com eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).<br/> |
+| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |O nome pode parecer estranho porque é muito longo, mas é o nome correto para esse tipo confidencial. Certifique-se de usar nomes exatos do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999). Você também pode usar o nome de um [tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) que você criou para sua organização.<br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |Isso retorna documentos com pelo menos uma correspondência para o tipo confidencial "número de cartão de crédito". Os valores de cada intervalo são os respectivos valores mínimo e máximo. Uma maneira mais simples de escrever essa consulta é `SensitiveType:"Credit Card Number"`, mas onde é a diversão?<br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018.  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018. Arquivos com uma extensão XLSX não são incluídos nos resultados da consulta.  `FileExtension` é uma das muitas propriedades que você pode incluir em uma consulta. Para obter mais informações, consulte [usando propriedades e operadores de pesquisa com o eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).<br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |Isso retornará documentos que contenham um número de cartão de crédito ou um número de previdência social.  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>Exemplos
 
-Nem todas as consultas são criadas iguais. A tabela a seguir fornece exemplos de consultas que não funcionam com DLP no SharePoint e descreve o motivo.
+Nem todas as consultas são criadas iguais. A tabela a seguir fornece exemplos de consultas que não funcionam com DLP no SharePoint e descreve o porquê.
   
 |**Consulta incompatível**|**Motivo**|
 |:-----|:-----|
-| ' SensitiveType: "número de cartão de crédito|.." ` <br/> |Você deve adicionar pelo menos um serviço.  <br/> |
-| `SensitiveType:"NotARule"` <br/> |"NotARule" não é um nome válido de tipo confidenciais. Somente os nomes do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999) funcionam em consultas DLP.<br/> |
-| ' SensitiveType: "número de cartão de crédito|0"' <br/> |Zero não é válido como o valor mínimo ou o valor máximo em um intervalo.  <br/> |
-| `SensitiveType:"Credit Card Number"` <br/> |É pode ser difícil ver, mas não há espaço em branco extra entre "Crédito" e "Placa", o que faz com que a consulta inválida. Use nomes de tipo confidenciais exato do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999).<br/> |
-| ' SensitiveType: "número de cartão de crédito|1.. 3"' <br/> |A parte de dois períodos não deve ser separada por um espaço.  <br/> |
-| ' SensitiveType: "número de cartão de crédito| |1..|"80... ' <br/> |Há muitas (delimitadores de pipe|). Siga esse formato em vez disso: ' SensitiveType: "número de cartão de crédito|1..|"80... ' <br/> |
-| ' SensitiveType: "número de cartão de crédito|1..|80..101"' <br/> |Como os valores de confiança representam uma porcentagem, eles não podem exceder 100. Em vez disso, escolha um número entre 1 e 100.  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |Você deve adicionar pelo menos um serviço.  <br/> |
+| `SensitiveType:"NotARule"` <br/> |"NotARule" não é um nome de tipo confidencial válido. Somente os nomes no [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999) funcionam em consultas de DLP.<br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |Zero não é válido como o valor mínimo ou o valor máximo em um intervalo.  <br/> |
+| `SensitiveType:"Credit Card Number"` <br/> |Talvez seja difícil ver, mas há um espaço em branco extra entre "crédito" e "cartão" que torna a consulta inválida. Use nomes de tipo confidenciais exatos do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999).<br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |A parte de dois períodos não deve ser separada por um espaço.  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |Há muitos delimitadores de pipe (|). Em vez disso, siga este formato:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Como os valores de confiança representam uma porcentagem, eles não podem exceder 100. Escolha um número de 1 a 100 em vez disso.  <br/> |
    
 ## <a name="for-more-information"></a>Para saber mais
 
-[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
+[O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
   
-[Executar uma pesquisa de conteúdo com a segurança do Office 365 &amp; Centro de conformidade](run-a-content-search-in-the-security-and-compliance-center.md)
+[Executar uma pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365](run-a-content-search-in-the-security-and-compliance-center.md)
   
 [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
   

@@ -8,16 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use o centro de conformidade do & de segurança do Office 365 para obter vários relatórios para sua organização do SharePoint Online e do Exchange Online, além de relatórios do Azure Active Directory.  '
-ms.openlocfilehash: 36e6d3efce1758d52cd30451a2b60b19f4654056
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: d6605ebfa5f733f24b6a3aa8d36c85203c264c0c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087300"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219961"
 ---
 # <a name="reports-in-the-office-365-security--compliance-center"></a>Relatórios no Centro de Conformidade e Segurança do Office 365
 

@@ -1,35 +1,35 @@
 ---
-title: Número de passaporte da UE
+title: Número do Passport da UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
-description: Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando detecta o tipo de informações confidenciais de número de passaporte da UE. Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número do Passport da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
+ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25840320"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218261"
 ---
-# <a name="eu-passport-number"></a>Número de passaporte da UE
+# <a name="eu-passport-number"></a>Número do Passport da UE
 
-Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando detecta o tipo de informações confidenciais de número de passaporte da UE. Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
+Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número do Passport da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
   
 ## <a name="austria"></a>Áustria
 
 ### <a name="format"></a>Formato
 
-Uma letra seguida por um espaço opcional e sete dígitos
+Uma letra seguida de um espaço opcional e sete dígitos
   
 ### <a name="pattern"></a>Padrão
 
-Uma combinação de uma letra, um espaço e sete dígitos:
+Uma combinação de uma letra, sete dígitos e um espaço:
   
 - Uma letra (não diferencia maiúscula de minúscula)
     
@@ -45,9 +45,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_austria_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_austria_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_austria_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_austria_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -64,17 +64,17 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte austríaco  <br/> Passport nenhum  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
+|número de passaporte  <br/> número de passaporte austríaco  <br/> Passport não  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
    
 ## <a name="belgium"></a>Bélgica
 
 ### <a name="format"></a>Formato
 
-Duas letras seguidas de seis dígitos sem espaços ou delimitadores
+Duas letras seguidas por seis dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Duas letras e seguido de seis dígitos
+Duas letras e seguidas por seis dígitos
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -84,9 +84,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_belgium_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_belgium_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_belgium_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_belgium_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -103,7 +103,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte belga  <br/> Passport nenhum  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
+|número de passaporte  <br/> número de passaporte belga  <br/> Passport não  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass Kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgária
 
@@ -123,9 +123,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_bulgaria_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_bulgaria_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_bulgaria_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_bulgaria_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -142,7 +142,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte búlgaro  <br/> Passport nenhum  <br/> НОМЕР НА ПАСПОРТА  <br/> |
+|número de passaporte  <br/> número de passaporte búlgaro  <br/> Passport não  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Croácia
 
@@ -162,9 +162,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_croatia_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_croatia_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_croatia_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_croatia_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -181,13 +181,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte croata  <br/> Passport nenhum  <br/> broj putovnice  <br/> |
+|número de passaporte  <br/> número de passaporte Croata  <br/> Passport não  <br/> broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Chipre
 
 ### <a name="format"></a>Formato
 
-Uma letra seguida de 6 a 8 dígitos sem espaços ou delimitadores
+Uma letra seguida de 6-8 dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
@@ -201,9 +201,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_cyprus_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_cyprus_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_cyprus_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_cyprus_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -220,7 +220,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte Chipre  <br/> Passport nenhum  <br/> ΑΡΙΘΜΌ ΔΙΑΒΑΤΗΡΊΟΥ  <br/> |
+|número de passaporte  <br/> número de passaporte do Chipre  <br/> Passport não  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>República Tcheca
 
@@ -240,9 +240,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_czech_republic_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_czech_republic_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_czech_republic_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_czech_republic_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -259,7 +259,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte tcheco  <br/> Passport nenhum  <br/> cestovní pas  <br/> PAS  <br/> |
+|número de passaporte  <br/> número de passaporte tcheco  <br/> Passport não  <br/> Pas cestovní  <br/> Pas  <br/> |
    
 ## <a name="denmark"></a>Dinamarca
 
@@ -279,9 +279,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_denmark_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_denmark_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_denmark_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_denmark_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -298,7 +298,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte dinamarquês  <br/> Passport nenhum  <br/> PAS  <br/> pasnummer  <br/> |
+|número de passaporte  <br/> número de passaporte dinamarquês  <br/> Passport não  <br/> Pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estônia
 
@@ -318,9 +318,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_estonia_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_estonia_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_estonia_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_estonia_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -337,19 +337,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte estoniano  <br/> Passport nenhum  <br/> eesti kodaniku secreta  <br/> |
+|número de passaporte  <br/> número de passaporte estoniano  <br/> Passport não  <br/> Eesti kodaniku  <br/> |
    
 ## <a name="finland"></a>Finlândia
 
-Para obter detalhes, consulte a seção "Número de passaporte da Finlândia" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número de passaporte da Finlândia" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>França
 
-Para obter detalhes, consulte a seção "Número de passaporte da França" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número do passaporte da França" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Alemanha
 
-Para obter detalhes, consulte a seção "Número de passaporte da Alemanha" em [quais tipos de informações confidenciais a procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número de passaporte da Alemanha" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grécia
 
@@ -369,9 +369,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_greece_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_greece_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_greece_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_greece_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -388,7 +388,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte grego  <br/> Passport nenhum  <br/> ΔΙΑΒΑΤΗΡΙΟ  <br/> |
+|número de passaporte  <br/> número de passaporte grego  <br/> Passport não  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Hungria
 
@@ -408,9 +408,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_hungary_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_hungary_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_hungary_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_hungary_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -427,13 +427,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte húngaro  <br/> Passport nenhum  <br/> útlevél száma  <br/> |
+|número de passaporte  <br/> número de passaporte húngaro  <br/> Passport não  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
 ### <a name="format"></a>Formato
 
-Duas letras ou dígitos seguidos por sete dígitos sem espaços ou delimitadores
+Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
@@ -451,9 +451,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_ireland_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_ireland_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_ireland_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_ireland_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -470,13 +470,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte irlandês  <br/> Passport nenhum  <br/> PAS  <br/> passport  <br/> passeport  <br/> numero passeport  <br/> |
+|número de passaporte  <br/> número de passaporte do irlandês  <br/> Passport não  <br/> Pas  <br/> passport  <br/> passeport  <br/> passeport numero  <br/> |
    
 ## <a name="italy"></a>Itália
 
 ### <a name="format"></a>Formato
 
-Duas letras ou dígitos seguidos por sete dígitos sem espaços ou delimitadores
+Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
@@ -494,9 +494,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_italy_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_italy_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_italy_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_italy_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -513,13 +513,13 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|número de passaporte italiano  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> número de passaporte  <br/> italiana passaporto numero  <br/> numero passaporto  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
+|número de passaporte italiano  <br/> Repubblica Italiana PASSAPORTO  <br/> PASSAPORTO  <br/> PASSAPORTO italiana  <br/> número de passaporte  <br/> italiana PASSAPORTO numero  <br/> PASSAPORTO numero  <br/> Numéro passeport Italien  <br/> Numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Letônia
 
 ### <a name="format"></a>Formato
 
-Duas letras ou dígitos seguidos por sete dígitos sem espaços ou delimitadores
+Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
@@ -537,9 +537,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_latvia_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_latvia_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_latvia_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_latvia_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -556,7 +556,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte letão  <br/> Passport nenhum  <br/> pase numurs  <br/> |
+|número de passaporte  <br/> número de passaporte da Letão  <br/> Passport não  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituânia
 
@@ -566,7 +566,7 @@ Oito dígitos ou letras sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Oito dígitos ou letras (não maiusculas de minúsculas)
+Oito dígitos ou letras (não diferencia maiúsculas de minúsculas)
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -576,9 +576,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_lithuania_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_lithuania_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_lithuania_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_lithuania_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -595,9 +595,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte lithunian  <br/> Passport nenhum  <br/> Paso numeris  <br/> |
+|número de passaporte  <br/> número de passaporte lithunian  <br/> Passport não  <br/> Paso Numeris  <br/> |
    
-## <a name="luxemburg"></a>Luxemburgo
+## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Formato
 
@@ -605,7 +605,7 @@ Oito dígitos ou letras sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Oito dígitos ou letras (não maiusculas de minúsculas)
+Oito dígitos ou letras (não diferencia maiúsculas de minúsculas)
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -615,9 +615,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_nation_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_nation_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_nation_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_nation_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -634,7 +634,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte letão  <br/> Passport nenhum  <br/> passnummer  <br/> |
+|número de passaporte  <br/> número de passaporte da Letão  <br/> Passport não  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -654,9 +654,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_malta_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_malta_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_malta_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_malta_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -673,7 +673,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte Maltês  <br/> Passport nenhum  <br/> horizontal-passaport numru  <br/> |
+|número de passaporte  <br/> número de passaporte Maltês  <br/> Passport não  <br/> numru tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Países Baixos
 
@@ -693,9 +693,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_netherlands_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_netherlands_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_netherlands_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_netherlands_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -712,11 +712,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|número de passaporte holandês  <br/> número de passaporte  <br/> número de passaporte países baixos  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|número de passaporte holandês  <br/> número de passaporte  <br/> número de passaporte Holanda  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polônia
 
-Para obter detalhes, consulte a seção "Número de passaporte da Polônia" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número de passaporte da Polônia" em [o que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
@@ -726,7 +726,7 @@ Uma letra seguida de seis dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Uma letra seguida de seis dígitos:
+Uma letra seguida por seis dígitos:
   
 - Uma letra (não diferencia maiúscula de minúscula)
     
@@ -740,9 +740,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_portugal_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_portugal_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_portugal_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_portugal_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -759,7 +759,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte português  <br/> Passport nenhum  <br/> número passaporte  <br/> |
+|número de passaporte  <br/> número de passaporte Português  <br/> Passport não  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>Romênia
 
@@ -779,9 +779,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_romania_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_romania_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_romania_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_romania_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -798,7 +798,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte romeno  <br/> Passport nenhum  <br/> numărul pașaportului  <br/> |
+|número de passaporte  <br/> número de passaporte romeno  <br/> Passport não  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Eslováquia
 
@@ -808,7 +808,7 @@ Um dígito ou letra seguido por sete dígitos sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Um dígito ou carta (não maiusculas de minúsculas) seguido por sete dígitos
+Um dígito ou letra (não diferencia maiúsculas de minúsculas) seguido por sete dígitos
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -818,9 +818,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_slovakia_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_slovakia_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovakia_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_slovakia_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -837,7 +837,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte eslovaco  <br/> Passport nenhum  <br/> Číslo pasu  <br/> |
+|número de passaporte  <br/> número de passaporte eslovaco  <br/> Passport não  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Eslovênia
 
@@ -851,7 +851,7 @@ Duas letras seguidas por sete dígitos:
   
 - A letra "P"
     
-- Uma letra maiuscula
+- Uma letra maiúscula
     
 - Sete dígitos
     
@@ -863,9 +863,9 @@ Não
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_slovenia_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_slovenia_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovenia_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_slovenia_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -882,21 +882,21 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|número de passaporte  <br/> número de passaporte esloveno  <br/> Passport nenhum  <br/> Lista de potnega številka  <br/> |
+|número de passaporte  <br/> número de passaporte esloveno  <br/> Passport não  <br/> lista de številka potnega  <br/> |
    
 ## <a name="spain"></a>Espanha
 
 ### <a name="format"></a>Formato
 
-Uma combinação de oito ou nove caracteres de letras e números sem espaços ou delimitadores
+Uma combinação de letras e números de oito ou nove caracteres sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Uma combinação de oito ou nove caracteres de letras e números:
+Uma combinação de letras e números de oito ou nove caracteres:
   
 -  Dois dígitos ou letras 
     
-- Um dígito ou carta (opcional)
+- Um dígito ou letra (opcional)
     
 - Seis dígitos
     
@@ -908,9 +908,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_spain_eu_passport_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_spain_eu_passport_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_spain_eu_passport_number` for encontrado. 
+- Uma palavra- `Keywords_spain_eu_passport_number` chave de foi encontrada. 
     
 ```
  <!-- EU Passport Number -->
@@ -927,15 +927,15 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> passaporte da Espanha  <br/> Catálogo do Passport  <br/> número de passaporte  <br/> Passport nenhum  <br/> libreta pasaporte  <br/> número pasaporte  <br/> españa pasaporte  <br/> pasaporte  <br/> |
+|passport  <br/> o Passport da Espanha  <br/> Catálogo do Passport  <br/> número de passaporte  <br/> Passport não  <br/> Libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suécia
 
-Para obter detalhes, consulte a seção "Número de passaporte da Suécia" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número de passaporte da Suécia" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
-## <a name="uk"></a>REINO UNIDO
+## <a name="uk"></a>Reino Unido
 
-Para obter detalhes, consulte a seção "Número de passaporte US / Reino Unido" nos [quais os tipos de informações confidenciais procurar](what-the-sensitive-information-types-look-for.md).
+Para obter detalhes, consulte a seção "número de passaporte americano/Reino Unido" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Confira também
 

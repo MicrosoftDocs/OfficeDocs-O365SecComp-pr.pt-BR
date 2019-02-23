@@ -6,102 +6,102 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Saiba mais sobre como localizar os resultados de um módulo de processo executar em eDiscovery avançadas do Office 365, incluindo o status da tarefa e o processo de resumo.  '
-ms.openlocfilehash: 01093b0230aaf78ab7ccf1235f0874a0b69aa1bd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Saiba mais sobre como localizar os resultados de um módulo de processo executado na descoberta eletrônica avançada do Office 365, incluindo o status da tarefa e o resumo do processo.  '
+ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523470"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218051"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Exibir os resultados do Módulo de processo na Descoberta Eletrônica Avançada do Office 365
 
-Após **Preparar** \> **processo** é iniciado, você pode exibir o andamento e os resultados. 
+Depois que o **processo** de **preparação** \> é iniciado, você pode exibir o progresso e os resultados. 
   
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="process-task-status"></a>Status do processo de tarefa
+## <a name="process-task-status"></a>Status da tarefa de processo
 
-Em **Prepare** \> **processo** \> **resultados**, a página mostra o status atual (se o processo está sendo executado) ou o último status de tarefa de status do processo conforme mostrado no exemplo a seguir.
+Nos **resultados**do **processo** \> de **preparação** \> , a página mostra o status atual (se o processo estiver em execução no momento) ou o status da tarefa de status do último processo, conforme mostrado no exemplo a seguir.
   
 ![Status da tarefa do módulo de processamento](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 As tarefas exibidas podem variar dependendo das opções de processo selecionadas. 
   
-- **Inventário**: eDiscovery avançado itera todos os arquivos selecionados para o processo e executa a coleta de dados básica.
+- **Inventory**: a descoberta eletrônica avançada repete todos os arquivos selecionados para o processo e executa uma coleção de dados básica.
     
-- **Calcular assinaturas**: calcula as assinaturas digitais de MD5.
+- **Calculate Signatures**: calcula as assinaturas digitais MD5.
     
-- **Extração de compostos**: extrai interna ou contida arquivos recursivamente de arquivos compostos (por exemplo, PST, ZIP, MSG). Arquivos extraídos são armazenados na pasta maiusculas do caso.
+- **Extração de compostos**: extrai arquivos internos ou contidos recursivamente de arquivos compostos (por exemplo, PST, zip, msg). Os arquivos extraídos são armazenados na pasta de casos do caso.
     
-- **Banco de dados de sincronização**: o processo de banco de dados interno.
+- **Sincronizando banco de dados**: processo de banco de dados interno.
     
-- **Cópia de arquivo**: arquivos do processo de cópias. Essa tarefa é sempre exibida, mesmo quando a opção avançada de arquivos de cópia está selecionada.
+- **Cópia de arquivo**: copia arquivos de processo. Essa tarefa sempre é exibida, mesmo quando a opção de cópia avançada de arquivos está selecionada.
     
-- **Extração de texto**: quando houver arquivos nativos, eDiscovery avançado extrai o texto desses arquivos usando DTSearch. O texto extraído desses arquivos é armazenado como arquivos de texto na pasta maiusculas.
+- **Extração de texto**: quando há arquivos nativos, a descoberta eletrônica avançada extrai o texto desses arquivos usando o DTSearch. O texto extraído desses arquivos é armazenado como arquivos de texto na pasta de caso.
     
-- **Atualizando metadados**: processa os metadados carregado. 
+- **Atualizando metadados**: processa os metadados carregados. 
     
-- **Finalizing**: processamento interno que finaliza dados de carregado arquivos maiusculas (por exemplo, identificar os arquivos de erro e êxito). 
+- **Finalizando**: o processamento interno que finaliza os dados de arquivos de caso carregados (por exemplo, identificar arquivos de erro e de êxito). 
     
-Status da tarefa: exibido após a conclusão da tarefa. Enquanto estiver executando tarefas, a duração da execução é exibida.
+Status da tarefa: exibido após a conclusão da tarefa. Enquanto as tarefas estão em execução, a duração da execução é exibida.
   
 > [!NOTE]
-> Tarefas concluídas também podem incluir totais de arquivos que o processamento foi concluído ou arquivos com erros. 
+> As tarefas concluídas também podem incluir totais de arquivos que concluiram o processamento ou arquivos com erros. 
   
 > [!TIP]
-> "Cancelar" fornece uma opção de reversão para interromper a execução do processo e, em seguida, reverta para a população de dados anterior ou salvo dados processados. Reversão limpa processados todos os dados. Se você não quiser que os dados processados a ser perdida (por exemplo, você planeja recarregar esses arquivos), selecione o "Cancelar" opção nessa janela escolher não fazer a reversão. 
+> "Cancelar" oferece uma opção de reversão para interromper a execução do processo e reverter para o preenchimento de dados anterior ou os dados processados salvos. Rollback limpa todos os dados processados. Se você não quiser que os dados processados sejam perdidos (por exemplo, você planeja recarregar esses arquivos), selecione a opção "Cancelar" nesta janela para escolher não reverter. 
   
 ## <a name="process-summary"></a>Resumo do processo
 
-Em Prepare \> processo \> resultados \> Process resumo, uma divisão dos resultados de arquivo carregado é exibida de acordo com os resultados de processamento e de erro do arquivo bem-sucedida.
+No resumo \> do \> processo \> de preparação dos resultados do processo, uma divisão dos resultados do arquivo carregado é exibida de acordo com o processamento de arquivos bem-sucedido e resultados de erros.
   
-Os painéis apresentam uma exibição gráfica das estatísticas de arquivo importado, da seguinte maneira:
+Os painéis apresentam uma exibição gráfica das estatísticas de arquivo importadas, da seguinte maneira:
   
-- Todos os arquivos no caso de d: **Resumo de processo se acumulam**.
+- **Resumo do processo acumula**d: todos os arquivos no caso.
     
-- **Resumo do processo de última**: arquivos carregados da última sessão, ou ação. 
+- **Resumo do processo por último**: arquivos carregados da última sessão ou ação. 
     
-- **Famílias últimos**: informações de família no caso (se houver).
+- **Famílias por último**: informações da família no caso (se houver).
     
-- Se os arquivos de **propagação** foram adicionados, o número de arquivos de propagação é listado por problema que foi definido para os arquivos. 
+- Se os arquivos **semente** foram adicionados, o número de arquivos semente é listado por problema definido para os arquivos. 
     
-    Se a marcação dos arquivos de **propagação** falhou, que também é citado. 
+    Se a marcação de arquivos de **propagação** falhar, isso também será observado. 
     
-- Se o arquivos **previamente marcado** foram adicionados, o número de arquivos previamente marcados estará listado por problema que foi definido para os arquivos. 
+- Se forem adicionados arquivos **previamente marcados** , o número de arquivos previamente marcados será listado por problema definido para os arquivos. 
     
-    Se a marcação de arquivos **previamente marcado** falhou, que também é citado. 
+    Se a marcação de arquivos **previamente marcados** falhou, isso também é observado. 
     
 ![Resumo do módulo de processamento](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
-## <a name="process-summary-accumulated-and-last-charts"></a>Resumo de processo acumulados e último gráficos
+## <a name="process-summary-accumulated-and-last-charts"></a>Resumo do processo acumulado e últimos gráficos
 
-Barra à esquerda inclui fonte + arquivos extraídos: qual é a todos os arquivos encontrados. 
+A barra esquerda inclui arquivos de origem + extraídos: que são todos os arquivos encontrados. 
   
-À direita da barra, processadas, inclui:
+A barra direita, processada, inclui:
   
 - Arquivos com erros de carregamento
     
 - Arquivos carregados com êxito, que podem incluir: 
     
-  - **Existente**: arquivos que foram carregados antes e agora são carregados novamente (incluindo duplicatas).
+  - **Existentes**: arquivos que foram carregados antes e agora são carregados novamente (incluindo duplicatas).
     
-  - **Texto**: arquivos exclusivos com texto.
+  - **Text**: arquivos exclusivos com texto.
     
-  - **Não-texto**: esvaziar arquivos de texto, arquivos de texto nativo vazio, arquivos de texto não nativos. 
+  - **Não texto**: Arquivos de texto vazios, arquivos de texto nativo vazios, arquivos de não-texto nativo. 
     
-  - **Duplicar**o s: duplicata arquivos com texto.
+  - **Duplicar**s: duplicar arquivos com texto.
     
-## <a name="last-process-errors"></a>Últimos erros do processo
+## <a name="last-process-errors"></a>Erros do último processo
 
-Em Prepare \> processo \> resultados \> últimos erros de processo, detalhes dos erros na última ação realizada ou sessão são exibidos.
+Em preparar \> resultados \> \> do processo últimos erros de processo, os detalhes dos erros na última sessão ou ação executada são exibidos.
   
 ![Erros do módulo de processamento](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
@@ -109,5 +109,5 @@ Em Prepare \> processo \> resultados \> últimos erros de processo, detalhes dos
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Executando o módulo de processo e carregamento de dados](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Executando o módulo de processo e carregando dados](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

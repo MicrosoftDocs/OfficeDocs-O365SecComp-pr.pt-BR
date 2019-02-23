@@ -1,12 +1,12 @@
 ---
-title: Mapa de segurança do Office 365 - principais prioridades para os primeiros 30 dias, 90 dias e além
+title: Mapa de segurança do Office 365-principais prioridades para os primeiros 30 dias, 90 dias e além de
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/08/2018
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -15,43 +15,43 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
-description: 'Principais recomendações da equipe de cybersecurity da Microsoft para implementar os recursos de segurança para proteger seu ambiente do Office 365. '
-ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 'Principais recomendações da equipe do cybersecurity da Microsoft para a implementação de recursos de segurança para proteger seu ambiente do Office 365. '
+ms.openlocfilehash: feb11c90272fc639aacb0a49cc3272627df18af6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995282"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220801"
 ---
-# <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Mapa de segurança do Office 365 - principais prioridades para os primeiros 30 dias, 90 dias e além
+# <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Mapa de segurança do Office 365-principais prioridades para os primeiros 30 dias, 90 dias e além de
 
-Este artigo inclui as principais recomendações da equipe de cybersecurity da Microsoft para implementar os recursos de segurança para proteger seu ambiente do Office 365. Este artigo foi adaptado de uma sessão do Microsoft Ignite — [seguro do Office 365 como um profissional de cybersecurity: principais prioridades para os primeiros 30 dias, 90 dias e além](https://www.youtube.com/watch?v=luignzNyR-o). Esta sessão foi desenvolvido e apresentado por Mark Simos e Matt Kemelhar, arquitetos de Cybersecurity da empresa.
+Este artigo inclui as principais recomendações da equipe do cybersecurity da Microsoft para a implementação de recursos de segurança para proteger seu ambiente do Office 365. Este artigo é adaptado de uma sessão do Microsoft Ignite — [Secure Office 365 like a cybersecurity pro: principais prioridades para os primeiros 30 dias, 90 dias e além](https://www.youtube.com/watch?v=luignzNyR-o). Esta sessão foi desenvolvida e apresentada por Mark Simos e Matt Kemelhar, Enterprise cybersecurity Architects.
   
 Neste artigo:
   
-- [Resultados do mapa](security-roadmap.md#Roadmap)
+- [Resultados do roteiro](security-roadmap.md#Roadmap)
     
-- [30 dias — poderosas wins rápidas](security-roadmap.md#Thirdaydays)
+- [30 dias — rápido WINS avançado](security-roadmap.md#Thirdaydays)
     
-- [90 dias — enhanced proteções](security-roadmap.md#Ninetydays)
+- [90 dias — proteções aprimoradas](security-roadmap.md#Ninetydays)
     
-- [Além](security-roadmap.md#Beyond)
+- [Deles](security-roadmap.md#Beyond)
     
-## <a name="roadmap-outcomes"></a>Resultados do mapa
+## <a name="roadmap-outcomes"></a>Resultados do roteiro
 <a name="Roadmap"> </a>
 
-Estas recomendações de mapa são testadas em três fases em uma ordem lógica com os seguintes objetivos.
+Essas recomendações de roteiro são testadas em três fases em uma ordem lógica com os seguintes objetivos.
 
 |||
 |:-----|:-----|
 | |Resultados
-|30 dias|Configuração rápida:  <br/> • Proteções de admin básica  <br/> • Registro e análise  <br/> • Proteções de identidade básica  <br/> Configuração do inquilino  <br/>  Preparar os participantes  <br/> |
-|90 dias|Proteções de avançadas:  <br/> • Contas de administração  <br/>  • Dados &amp; contas de usuário  <br/>  Visibilidade às necessidades de conformidade, ameaça e usuário  <br/>  Adaptar-se e implementar proteções e políticas padrão  <br/> |
-|Além|Ajustar e refinar os principais políticas e controles  <br/> Estender proteções de dependências de local  <br/> Integração com processos comerciais e de segurança (legais, ameaça interna, etc.)  <br/> |
+|30 dias|Configuração rápida:  <br/> • Proteções básicas de administração  <br/> • Registro em log e análise  <br/> • Proteções de identidade básica  <br/> Configuração do locatário  <br/>  Preparar participantes  <br/> |
+|90 dias|Proteções avançadas:  <br/> • Contas de administrador  <br/>  • Contas &amp; de usuário de dados  <br/>  Visibilidade das necessidades de conformidade, ameaça e usuário  <br/>  Adaptar e implementar políticas e proteções padrão  <br/> |
+|Deles|Ajustar e refinar políticas e controles de chave  <br/> Estender as proteções para dependências locais  <br/> Integração com processos de segurança e de negócios (jurídico, ameaça de insider, etc.)  <br/> |
   
 
    
-## <a name="30-days--powerful-quick-wins"></a>30 dias — poderosas wins rápidas
+## <a name="30-days--powerful-quick-wins"></a>30 dias — rápido WINS avançado
 <a name="Thirdaydays"> </a>
 
 Essas tarefas podem ser realizadas rapidamente e tem baixo impacto para os usuários.
@@ -59,12 +59,12 @@ Essas tarefas podem ser realizadas rapidamente e tem baixo impacto para os usuá
 |||
 |:-----|:-----|
 |Área  <br/> |Tasks  <br/> |
-|Gerenciamento de segurança  <br/> |• Verificar pontuação seguro e tome nota das sua pontuação atual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Ativar o log de auditoria para o Office 365. Consulte [Pesquisar o log de auditoria de segurança do Office 365 &amp; Centro de conformidade](search-the-audit-log-in-security-and-compliance.md).<br/> • [Configure seu locatário do Office 365 para aumentar a segurança](tenant-wide-setup-for-increased-security.md) .  <br/>  • Examine regularmente painéis e relatórios na segurança do Office 365 e Centro de conformidade e segurança de aplicativo de nuvem.  <br/> |
-|Proteção contra Ameaças  <br/> |[Conectar o Office 365 para segurança de aplicativo do Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) ao iniciar a monitoração usando as políticas de detecção de ameaça padrão para comportamentos anômalos. Leva sete dias para criar uma linha de base para detecção de anomalias.<br><br/>  Implementar a proteção para contas de administração:  <br/> • Usar dedicada admin accounts para atividade de admin.  <br/>  • Impor a autenticação multifator (MFA) para contas de administrador.  <br/>  • Usar um [altamente seguros dispositivo Windows 10](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para atividade de admin.  <br/> |
-|Gerenciamento de identidades e acesso  <br/> |• [Habilitar a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para ambientes de identidade federada, impor a segurança da conta (comprimento da senha, idade, complexidade, etc.).  <br/> |
-|Proteção de informações  <br/> | Revise as recomendações de proteção de informações de exemplo. Proteção das informações requer coordenação em toda a organização. Introdução a estes recursos:<br/> • [Proteção do office 365 informações para GDPR](http://aka.ms/o365gdpr) <br/> • [Arquivos e sites seguro do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) (inclui compartilhamento, classificação, prevenção de perda de dados e proteção de informações do Windows Azure)  <br/> |
+|Gerenciamento de segurança  <br/> |• Verifique a pontuação segura e anote sua pontuação atual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Ative o log de auditoria do Office 365. ConFira [Pesquisar o log de auditoria no centro de &amp; conformidade de segurança do Office 365](search-the-audit-log-in-security-and-compliance.md).<br/> • [Configure seu locatário do Office 365 para maior segurança](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise regularmente painéis e relatórios no centro de segurança e conformidade do Office 365 e no Cloud app Security.  <br/> |
+|Proteção contra Ameaças  <br/> |[Conecte o Office 365 ao Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar o monitoramento usando as políticas de detecção de ameaças padrão para comportamentos anormais. Leva sete dias para criar uma linha de base para detecção de anomalias.<br><br/>  Implementar proteção para contas de administrador:  <br/> • Use contas de administrador dedicadas para atividades de administração.  <br/>  • Aplicar a MFA (autenticação multifator) para contas de administrador.  <br/>  • Use um [dispositivo Windows 10 altamente seguro](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para a atividade de administração.  <br/> |
+|Gerenciamento de identidades e acesso  <br/> |• [Habilitar a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para ambientes de identidade federada, reforçar a segurança da conta (comprimento da senha, idade, complexidade, etc.).  <br/> |
+|Proteção de informações  <br/> | ReVisar exemplos de recomendações de proteção de informações. A proteção de informações exige coordenação em toda a organização. Introdução a estes recursos:<br/> • [Proteção de informações do Office 365 para rgpd](http://aka.ms/o365gdpr) <br/> • [Proteger sites e arquivos do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) (inclui compartilhamento, classificação, prevenção de perda de dados e proteção de informações do Azure)  <br/> |
    
-## <a name="90-days--enhanced-protections"></a>90 dias — enhanced proteções
+## <a name="90-days--enhanced-protections"></a>90 dias — proteções aprimoradas
 <a name="Ninetydays"> </a>
 
 Essas tarefas demoram um pouco mais para planejar e implementar, mas aumentam significativamente as condições de segurança. 
@@ -72,24 +72,24 @@ Essas tarefas demoram um pouco mais para planejar e implementar, mas aumentam si
 |||
 |:-----|:-----|
 |Área  <br/> |Tarefa  <br/> |
-|Gerenciamento de segurança  <br/> | • Verificar pontuação seguro para as ações recomendadas para seu ambiente ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Continuam a examinar regularmente painéis e relatórios na segurança do Office 365 e Centro de conformidade, segurança de aplicativo de nuvem e ferramentas SIEM.  <br/>  • Procure e implementar atualizações de software.  <br/>  • Simulações de ataque de conduta para lança-phishing, borrifada de senha e senha brute-force attacks usando [Simulador de ataque](https://support.office.com/article/attack-simulator-office-365-da5845db-c578-4a41-b2cb-5a09689a551b) (incluído no [Office 365 Threat Intelligence](office-365-ti.md)).  <br/>  • Olhar para o compartilhamento de risco examinando os relatórios internos na segurança do aplicativo de nuvem (na guia investigar).  <br/>  • Verifique o [Gerenciador de conformidade](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md) para examinar o status de normas que se aplicam à sua organização (por exemplo, GDPR, NIST 800-171).  <br/> |
-|Proteção contra Ameaças  <br/> | Implemente proteções avançadas para contas de administração:  <br/>  • Configure [Privilegiado estações de trabalho do Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (patas) de atividade de admin.  <br/>  • Configurar o [gerenciamento de identidade privilegiada do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).  <br/>  • Configure uma segurança eventos e informações (SIEM) ferramenta de gerenciamento para coletar dados de registro em log do Office 365, segurança de aplicativo de nuvem e outros serviços, inclusive o AD FS. O Log de auditoria do Office 365 armazena dados por apenas 90 dias. Capturar dados na ferramenta SIEM permite que você armazene dados por um período maior.<br/> |
-|Gerenciamento de identidades e acesso  <br/> | • Habilite e impor MFA para todos os usuários.  <br/>  • Implementar um conjunto de [acesso condicional e políticas relacionadas](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations). |
-|Proteção de informações  <br/> | Adaptar e implementar políticas de proteção de informações. Esses recursos incluem exemplos:<br/> • [Proteção do office 365 informações para GDPR](http://aka.ms/o365gdpr) <br/> • [Arquivos e sites seguro do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) <br/> <br> Políticas de prevenção de perda de dados de uso e ferramentas de monitoramento no Office 365 para dados armazenados no Office 365 (em vez de segurança de aplicativo de nuvem). <br><br>Use a segurança de aplicativo de nuvem com o Office 365 para avançados recursos (além de prevenção de perda de dados) de alerta.  <br/> |
+|Gerenciamento de segurança  <br/> | • Verifique a pontuação segura para as ações recomendadas para [https://securescore.office.com](https://securescore.office.com)seu ambiente ().  <br/>  • Continue a examinar regularmente painéis e relatórios no centro de segurança e conformidade do Office 365, no Cloud app Security e nas ferramentas SIEM.  <br/>  • Procure e implemente atualizações de software.  <br/>  • Conduzir simulações de ataque para os ataques de senhas de spear-phishing, de irrigação de senha e de força bruta usando o [Attack Simulator](https://support.office.com/article/attack-simulator-office-365-da5845db-c578-4a41-b2cb-5a09689a551b) (incluído no [Office 365 Threat Intelligence](office-365-ti.md)).  <br/>  • Procure por compartilhar riscos examinando os relatórios internos no Cloud app Security (na guia investigar).  <br/>  • Verifique o [Gerenciador de conformidade](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md) para analisar o status das regulamentações que se aplicam à sua organização (como RGPD, NIST 800-171).  <br/> |
+|Proteção contra Ameaças  <br/> | Implementar proteções aprimoradas para contas de administrador:  <br/>  • Configure o PAWs ( [estações de trabalho com privilégios de acesso privilegiados](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) ) para atividades de administrador.  <br/>  • Configure o [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).  <br/>  • Configure uma ferramenta de gerenciamento de eventos e informações de segurança (SIEM) para coletar dados de log do Office 365, do Cloud app Security e de outros serviços, incluindo o AD FS. O log de auditoria do Office 365 armazena dados por apenas 90 dias. A captura desses dados na ferramenta SIEM permite que você armazene dados por um período mais longo.<br/> |
+|Gerenciamento de identidades e acesso  <br/> | • Habilitar e impor a MFA para todos os usuários.  <br/>  • Implemente um conjunto de [acesso condicional e políticas relacionadas](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations). |
+|Proteção de informações  <br/> | Adaptar e implementar políticas de proteção de informações. Esses recursos incluem exemplos:<br/> • [Proteção de informações do Office 365 para rgpd](http://aka.ms/o365gdpr) <br/> • [Proteger sites e arquivos do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) <br/> <br> Use políticas de prevenção de perda de dados e ferramentas de monitoramento no Office 365 para dados armazenados no Office 365 (em vez de segurança do Cloud app). <br><br>Use o Cloud app Security com o Office 365 para recursos avançados de alerta (diferentes de prevenção de perda de dados).  <br/> |
    
-## <a name="beyond"></a>Além
+## <a name="beyond"></a>Deles
 <a name="Beyond"> </a>
 
-Estas são as medidas de segurança importantes que se baseiam em trabalhos anterior. 
+Essas são medidas de segurança importantes que são criadas no trabalho anterior. 
   
 |||
 |:-----|:-----|
 |Área  <br/> |Tarefa  <br/> |
-|Gerenciamento de segurança  <br/> |• Continuar a planejar as próximas ações usando pontuação seguro ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Continuam a examinar regularmente painéis e relatórios na segurança do Office 365 e Centro de conformidade, segurança de aplicativo de nuvem e ferramentas SIEM.  <br/>  • Continuam a procurar e implementar atualizações de software.  <br/>  • Integrar o eDiscovery em seu legais e processos de resposta de ameaça.  <br/> |
-|Proteção contra Ameaças  <br/> | • Implementar o [Acesso privilegiado seguro](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) para componentes de identidade no local (AD, o AD FS).  <br/>  • Segurança de aplicativo de nuvem de uso para o monitoramento de ameaças internas.  <br/>  • Descobrir o uso de TI SaaS sombra usando a segurança de aplicativo de nuvem.  <br/> |
-|Gerenciamento de identidades e acesso  <br/> | • Refinar políticas de proteção de informações:  <br/>  • Proteção de informações azure e o Office 365 prevenção de perda de dados (DLP).  <br/>  • Políticas de segurança de aplicativo de nuvem e alertas.  <br/> |
-|Proteção de informações  <br/> | • Refinar políticas e processos operacionais.  <br/>  • Proteção de identidade de usar o Windows Azure AD para identificar as ameaças internas.  <br/> |
+|Gerenciamento de segurança  <br/> |• Continue planejando as próximas ações usando a pontuação segura [https://securescore.office.com](https://securescore.office.com)().  <br/>  • Continue a examinar regularmente painéis e relatórios no centro de segurança e conformidade do Office 365, no Cloud app Security e nas ferramentas SIEM.  <br/>  • Continue a procurar e implementar atualizações de software.  <br/>  • Integre a descoberta eletrônica em seus processos de resposta legal e de ameaça.  <br/> |
+|Proteção contra Ameaças  <br/> | • Implemente o [acesso privilegiaDo seguro](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (Spa) para componentes de identidade no local (AD, AD FS).  <br/>  • Use o Cloud app Security para monitorar ameaças Insider.  <br/>  • Descubra o uso do SaaS de ti de sombra usando o Cloud app Security.  <br/> |
+|Gerenciamento de identidades e acesso  <br/> | • Aprimore as políticas de proteção de informações:  <br/>  • Proteção de informações do Azure e prevenção de perda de dados do Office 365 (DLP).  <br/>  • Políticas e alertas do Cloud app Security.  <br/> |
+|Proteção de informações  <br/> | • Refine políticas e processos operacionais.  <br/>  • Use o Azure AD Identity Protection para identificar ameaças Insider.  <br/> |
    
-Consulte também: [como atenuar rapid cyberattacks como Petya e WannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/). 
+Consulte também: [como mitigar cyberattacks rápidos, como Petya e WannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/). 
   
 

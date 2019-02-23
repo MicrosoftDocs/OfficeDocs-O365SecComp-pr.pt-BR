@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9528a4bcfaa77f2e232b25d03eda46cce42ebb9
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 253650bb9916da8260491870d1a0bc899d6245c8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607331"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217101"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Definir as configurações de pesquisa e análise
 
 
-## <a name="near-duplicates-and-email-threading"></a>Quase duplicatas e email threading
+## <a name="near-duplicates-and-email-threading"></a>Duplicados próximos e threads de email
 
-Nesta seção, você pode definir parâmetros para detecção de duplicatas, perto de detecção de duplicatas e threading de email.
+Nesta seção, você pode definir parâmetros para detecção de duplicidades, detecção de duplicidade próxima e thread de email.
 
-- Habilitar/desabilitar: inclua a detecção de duplicatas, perto de detecção de duplicatas e email threading como parte do fluxo de análise se habilitado. Porque eles criarem na parte superior de umas às outras, você deve habilitar todos eles ou desabilitar todos eles.
+- Enable/disable: incluir a detecção de duplicidades, a detecção de duplicidade próxima e o encadeamento de email como parte do fluxo de análise, se habilitado. Como eles se baseiam uns dos outros, você deve habilitar todos eles ou desabilitá-los.
 
-- Limite: se o nível de semelhança de dois documentos acima do limite, eles serão colocados no mesmo perto conjunto duplicado.
+- Limite: se o nível de similaridade de dois documentos estiver acima do limite, ele será colocado no mesmo conjunto próximo duplicado.
 
-- Ocultar duplicatas por padrão: se essa configuração estiver ligado, um filtro para ocultar documentos duplicados será aplicado em trabalhar definido por padrão. O filtro pode ser removido manualmente no trabalho definido, se necessário.
+- Ocultar duplicatas por padrão: se essa configuração estiver ativada, um filtro para ocultar documentos duplicados será aplicado no conjunto de trabalho por padrão. O filtro pode ser removido manualmente no conjunto de trabalho, se necessário.
 
-- Número mínimo/máximo de palavras: perto duplicatas e email threading será executado somente em documentos que tenham pelo menos o número mínimo de palavras e no máximo o número máximo de palavras. Para obter mais informações, consulte [perto de detecção de duplicatas](near-duplicates.md) e [threading de Email](email-threading.md).
+- Número mínimo/máximo de palavras: próximas duplicatas e o encadeamento de emails será executado somente em documentos que tenham pelo menos o número mínimo de palavras e, no máximo, o número máximo de palavras. Para obter mais informações, consulte [Near Duplicate](near-duplicates.md) Detection and [e-mail Threading](email-threading.md).
 
 ## <a name="themes"></a>Temas
 
 Nesta seção, você pode definir parâmetros para temas.
 
-- Habilitar/desabilitar: incluem temas clustering como parte do fluxo de análise se habilitado.
-- Ajustar o número máximo de temas dinamicamente dinamicamente: em certos casos, não há documentos suficiente para produzir o número desejado de temas. Se essa configuração estiver ativada, em seguida, em vez de tentar forçar o número máximo desejado de temas, o sistema ajusta o número máximo de temas dinamicamente.
-- Número máximo de temas: desejado o número de temas
-- Incluir números em temas: Quando habilitada, ela incluirá números em ao gerar temas.  
+- Enable/disable: incluir agrupamento de temas como parte do fluxo de análise, se habilitado.
+- Ajustar o número máximo de temas dinamicamente dinamicamente: em certos casos, não há documentos suficientes para produzir o número desejado de temas. Se essa configuração estiver ativada, em vez de tentar forçar o número máximo de temas desejado, o sistema ajustará o número máximo de temas dinamicamente.
+- Número máximo de temas: número desejado de temas
+- Incluir números em temas: quando habilitado, ele incluirá números ao gerar temas.  
 
 ## <a name="optical-character-recognition-ocr"></a>Reconhecimento óptico de caracteres (OCR)
 
-Quando essa configuração é ativada, OCR será executada em imagens que são incluídas em conjuntos de trabalho para que eles possam ser pesquisáveis.
+Quando essa configuração estiver ativada, o OCR será executado em imagens que são incluídas em conjuntos de trabalho para que possam ser pesquisadas.
 
 ## <a name="ignore-text"></a>Ignorar texto
 
-Há instâncias onde determinados textos reduzirá a qualidade da análise, como avisos de isenção longos que obtém adicionados a determinados emails independentemente do conteúdo do email. Se você estiver ciente nesses casos, você pode excluir esse texto do analytics especificando-se o texto (RegEx é suportada) e qual módulos de texto deve ser excluído para.
+Há situações em que determinados textos reduzirão a qualidade da análise, como avisos de isenção de responsabilidade longos que são adicionados a certos emails, independentemente do conteúdo do email. Se você estiver ciente desses casos, poderá excluir esse texto da análise especificando o texto (RegEx é suportado) e de quais módulos o texto deve ser excluído.

@@ -1,54 +1,54 @@
 ---
-title: Gerenciar agendas para vários relatórios na segurança &amp; Centro de conformidade
+title: Gerenciar agendas para vários relatórios no centro &amp; de conformidade de segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
-description: Saiba como exibir, editar e gerenciar agendas para relatórios na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Saiba como exibir, editar e gerenciar cronogramas para relatórios no centro de conformidade &amp; de segurança.
+ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014903"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218831"
 ---
-# <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gerenciar agendas para vários relatórios na segurança &amp; Centro de conformidade
+# <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gerenciar agendas para vários relatórios no centro &amp; de conformidade de segurança
 
-Na segurança &amp; Centro de conformidade, vários [relatórios e ideias](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização atenuar e tratar ameaças à sua organização. Se você for um membro da equipe de segurança da sua organização, você pode gerenciar agendas para um ou mais relatórios. 
+No centro de &amp; conformidade de segurança, vários [relatórios e informações](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização a reduzir e resolver ameaças à sua organização. Se você for membro da equipe de segurança da sua organização, poderá gerenciar agendamentos para um ou mais relatórios. 
   
 ## <a name="manage-schedules-for-reports"></a>Gerenciar agendas para relatórios
 
 > [!IMPORTANT]
-> Certifique-se de que você tenha o necessário [permissões atribuídas no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). Em geral, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem acessar relatórios na segurança &amp; Centro de conformidade. 
+> Verifique se você tem as permissões necessárias [atribuídas no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md). Em geral, os administradores globais do Office 365, administradores de segurança e leitores de segurança podem acessar relatórios &amp; no centro de conformidade de segurança. 
   
-![Na segurança &amp; Centro de conformidade, escolha relatórios \> Gerenciar agendas](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
+![No centro de &amp; conformidade de segurança, escolha \> relatórios gerenciar agendas](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar. Isso leva você para o Centro de conformidade e segurança.
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre. Isso leva você para o centro de conformidade do & de segurança.
 
-2. Na segurança &amp; Centro de conformidade, vá para **relatórios** \> **Gerenciar agendas**.
+2. No centro de &amp; conformidade de segurança, vá para **relatórios** \> **gerenciar agendas**.
     
 3. Selecione um item na lista.
     
-4. Revise as informações de agendamento do relatório.
+4. Revise as informações da agenda do relatório.
     
-5. Conforme apropriado, editar ou excluir a agenda e clique em **Fechar**.
+5. Conforme apropriado, edite ou exclua a agenda e, em seguida, clique em **fechar**.
     
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md)
+[Relatórios e insights no centro de conformidade de &amp; segurança do Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade](create-a-schedule-for-a-report.md)
+[Criar um cronograma para um relatório no centro de &amp; conformidade de segurança](create-a-schedule-for-a-report.md)
   
-[Faça o download de um relatório personalizado na segurança &amp; Centro de conformidade](set-up-and-download-a-custom-report.md)
+[Baixar um relatório personalizado no centro de &amp; conformidade de segurança](set-up-and-download-a-custom-report.md)
   
-[Baixar relatórios existentes na segurança &amp; Centro de conformidade](download-existing-reports.md)
+[Baixar relatórios existentes no centro de &amp; conformidade de segurança](download-existing-reports.md)
   
 

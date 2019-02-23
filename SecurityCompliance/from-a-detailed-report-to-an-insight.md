@@ -1,49 +1,49 @@
 ---
-title: Passo a passo – de um relatório detalhado para um insight
+title: Passo a passo – De um relatório detalhado para um insight
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
-description: Saiba como você pode mover de um relatório detalhado para um insight com ações recomendadas na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Saiba como você pode migrar de um relatório detalhado para uma visão com as ações recomendadas &amp; no centro de conformidade de segurança.
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014973"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219081"
 ---
-# <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Passo a passo – de um relatório detalhado para um insight
+# <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Passo a passo – De um relatório detalhado para um insight
 
-Se estiver familiarizado com [relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md), ele pode ser útil para visualizar como você pode navegar facilmente a partir de um relatório detalhado para um insight e ações recomendadas. 
+Se você for novo para [relatórios e insights no centro de conformidade de &amp; segurança do Office 365](reports-and-insights-in-security-and-compliance.md), poderá ajudar a ver como você pode navegar facilmente de um relatório detalhado para uma percepção e ações recomendadas. 
   
-Essa é uma das diversas orientações para a segurança &amp; Centro de conformidade. Para ver as orientações adicionais, consulte a seção de [Tópicos relacionados](#related-topics) . 
+Esta é uma das várias orientações passo a passo para &amp; o centro de conformidade de segurança. Para ver orientações adicionais, consulte a seção [Tópicos relacionados](#related-topics) . 
   
 ## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Passo a passo: de um relatório detalhado para um insight
 
-Vamos examinar o fluxo de um relatório detalhado para um insight e ações. (Isto é um exemplo breve [antispam e antimalware](anti-spam-and-anti-malware-protection.md) ). 
+Vamos examinar o fluxo de um relatório detalhado para obter informações e ações. (Este é um exemplo breve [de antispam e antimalware](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Começamos com [segurança &amp; Centro de conformidade](https://protection.office.com) relatórios. (Vá para **relatórios** \> **Dashboard**.)<br/>![Na segurança &amp; Centro de conformidade, vá para relatórios \> painel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Começamos com os relatórios do [centro de conformidade de segurança &amp; ](https://protection.office.com) . (Vá para o **painel**de **relatórios** \> .)<br/>![No centro de &amp; conformidade de segurança, vá para \> painel de relatórios](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Podemos escolher um relatório para obter uma visão mais detalhada. (Escolha um relatório, como o relatório de **Status de proteção de ameaça** ).<br/>![Relatório de Status de proteção de ameaça mostrando insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Escolhemos um relatório para obter uma visão mais detalhada. (Escolha um relatório, como o relatório de **status de proteção contra ameaças** .)<br/>![Relatório de status de proteção contra ameaças mostrando insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
-3. Podemos Observe um indicador insights no gráfico, bem como abaixo do relatório. Posicionar o ponteiro do mouse em marcador insights oferece alguns detalhes adicionais. (Passe o mouse sobre o marcador ideias para ver detalhes adicionais.)
+3. Notamos um indicador de insights no gráfico, bem como abaixo do relatório. Posicionar o ponteiro do mouse no marcador do insights fornece alguns detalhes adicionais. (Passe o mouse sobre o marcador do insights para ver detalhes adicionais.)
     
-4. Clicar em significa o marcador insights no gráfico ou o widget ideias sobre detecções de malware abaixo do gráfico abre um painel de detalhes. (Abaixo do gráfico, selecione o widget ideias.)<br/>![Detalhes de ideias sobre detecções de malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Painel de detalhes fornece informações e recomendações a serem considerados, incluindo revisando políticas, ainda mais conduzir exploração e status de edição. ([Mais informações sobre proteção antispam e antimalware no Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Clicar no marcador insights no gráfico ou no widget insights sobre malware abaixo do gráfico abre um painel de detalhes. (Abaixo do gráfico, selecione o widget insights.)<br/>![Detalhes de insights sobre malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>O painel de detalhes fornece informações e recomendações a serem consideradas, incluindo políticas de revisão, realização de mais explorações e status de edição. ([Saiba mais sobre proteção antispam e antimalware no Office 365](anti-spam-and-anti-malware-protection.md).)
     
-Dessa forma, podemos pode mover de um relatório detalhado para um insight e ações recomendadas. 
+Dessa forma, podemos mudar de um relatório detalhado para uma percepção e ações recomendadas. 
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Passo a passo: a partir da perspectiva de um relatório detalhado](from-an-insight-to-a-detailed-report.md)
+[Passo a passo: de uma visão para um relatório detalhado](from-an-insight-to-a-detailed-report.md)
   
-[Passo a passo: de um painel para um insight](from-a-dashboard-to-an-insight.md)
+[Passo a passo: de um painel para uma visão](from-a-dashboard-to-an-insight.md)
   
 

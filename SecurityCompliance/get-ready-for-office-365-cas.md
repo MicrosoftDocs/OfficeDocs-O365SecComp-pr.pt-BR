@@ -6,19 +6,19 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introdução ao uso do Office 365 Cloud app Security
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: d6049bb1a36a078c6e5e33c60928bd3ae872c33f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087430"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219891"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Introdução ao Office 365 Cloud App Security
   

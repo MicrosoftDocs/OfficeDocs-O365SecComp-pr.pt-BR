@@ -1,7 +1,7 @@
 ---
 title: Localizar e liberar mensagens em quarentena como um administrador
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
+ms.collection:
+- M365-security-compliance
 description: Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC).
-ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003270"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219031"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Localizar e liberar mensagens em quarentena como um administrador
 
 Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC). O Office 365envia as mensagens para a quarentena porque foram identificadas como spam ou porque corresponderam a uma regra de transporte. 
   
-Usar a segurança &amp; Centro de conformidade, em vez do EAC para concluir qualquer uma destas tarefas, bem como exibir e trabalhar com mensagens enviadas para quarentena porque eles contêm malware. Para obter mais informações, consulte [mensagens de email de quarentena no Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Use o centro &amp; de conformidade de segurança em vez do Eat para concluir qualquer uma dessas tarefas, bem como o modo de exibição e o trabalho com mensagens que foram enviadas à quarentena porque elas contêm malware. Para obter mais informações, consulte [Quarantine Email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 As mensagens em quarentena são listadas na página **quarentena** do EAC. Por padrão, as mensagens são classificadas da mais nova para a mais antiga no campo **RECEBIDAS**. Os valores **REMETENTE**, **ASSUNTO** e **EXPIRA** também são listados para cada mensagem. Você pode classificar com base em qualquer um desses campos clicando nos cabeçalhos. Clicar em um cabeçalho de coluna uma segunda vez inverterá a ordem de classificação. No máximo 500 mensagens podem ser exibidas na página **quarentena** 
   
@@ -37,7 +39,7 @@ As mensagens em quarentena são listadas na página **quarentena** do EAC. Por p
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 <a name="sectionSection0"> </a>
 
-- Você precisa ter permissões antes de executar este procedimento ou procedimentos. Para ver quais permissões você precisa, consulte a entrada "Quarentena" no tópico [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Você precisa receber permissões antes de executar este procedimento ou procedimentos. Para ver de que permissões você precisa, consulte o entrada "quarentena" no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - Você pode liberar ou relatar várias mensagens ao mesmo tempo na página **quarentena**. Como alternativa, pode criar um script do Windows PowerShell remoto para realizar essa tarefa. Use o cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para procurar as mensagens e o cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberá-las. 
     
@@ -68,7 +70,7 @@ No Centro de administração do Exchange (EAC), você pode filtrar itens da quar
 6. **Expira** Você pode escolher se a mensagem será excluída da quarentena nas próximas 24 horas ( **Hoje**), nas próximas 48 horas ( **Próximos 2 dias**), na próxima semana ( **Próximos 7 dias**) ou pode escolher um intervalo de tempo personalizado durante o qual a mensagem será excluída da quarentena.
     
     > [!IMPORTANT]
-    > Por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 15 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após este período de tempo que o Office 365 exclui as mensagens e elas não são recuperáveis. O período de retenção de mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No entanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido por meio da configuração de **spam de reter de (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md). 
+    > Por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 15 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após esse período de tempo, o Office 365 exclui as mensagens e elas não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md). 
   
 7. **Tipo** É possível especificar se deseja pesquisar por mensagens em quarentena que foram identificadas como **Spam**, ou se deseja pesquisar por mensagens que correspondem a uma **Regra de transporte**.
     

@@ -1,12 +1,12 @@
 ---
-title: Corrigir erros de processamento no eDiscovery avançado (Preview)
+title: Corrigir erros de processamento em descoberta eletrônica avançada (versão prévia)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 1e473ee3813e53600d8843c0db399e54fc16915f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694807"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219551"
 ---
-# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>Corrigir erros de processamento no eDiscovery avançado (Preview)
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>Corrigir erros de processamento em descoberta eletrônica avançada (versão prévia)
 
-Processamento é o processo de identificação do arquivo, expansão de documentos incorporados e anexos, extração de texto, o OCR (reconhecimento óptico de caracteres) dos arquivos de imagem e de indexação de conteúdo.  Quando um funcionário encarregado for colocado em espera, todos os itens indexados parcialmente do Office 365 são processados para torná-las totalmente pesquisável.  Da mesma forma, quando o conteúdo é adicionado a um conjunto de trabalho de fontes de dados do Office 365 ou fontes de dados não - Office 365, o conteúdo também é processado.
+Processing é o processo de identificação de arquivos, expansão de documentos e anexos incorporados, extração de texto, OCR (reconhecimento óptico de caracteres) de arquivos de imagem e indexação desse conteúdo.  Quando um responsáveis é colocado em espera, todos os itens parcialmente indexados do Office 365 são processados para torná-los totalmente pesquisáveis.  Da mesma forma, quando o conteúdo é adicionado a um conjunto de trabalho de fontes de dados do Office 365 ou fontes de dados não-Office 365, o conteúdo também é processado.
 
-Na guia **processamento** no eDiscovery avançado (Preview) fornece transparência sobre o status de indexação avançada para todos esses cenários.
+A guia **processamento** em descoberta eletrônica avançada (visualização) fornece transparência no status da indexação avançada para todos esses cenários.
 
-Consulte os seguintes artigos para obter mais detalhes.
+Consulte os artigos a seguir para obter mais detalhes.
 
-- [Indexação dos dados dos responsáveis avançada](indexing-custodian-data.md)
-- [Correção de erro durante o processamento de dados](error-remediation.md)
+- [Indexação avançada de dados de responsáveis](indexing-custodian-data.md)
+- [Correção de erro ao processar dados](error-remediation.md)

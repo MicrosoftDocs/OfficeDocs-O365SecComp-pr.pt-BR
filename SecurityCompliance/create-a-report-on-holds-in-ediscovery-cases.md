@@ -6,37 +6,37 @@ manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Use o script neste artigo para gerar um relatório que contém informações sobre todos os bloqueios que estão associados a casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade.
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Use o script neste artigo para gerar um relatório que contenha informações sobre todas as isenções associadas a ocorrências de descoberta eletrônica no centro de conformidade &amp; de segurança do Office 365.
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038204"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217432"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Criar um relatório sobre isenções em casos de descoberta eletrônica no Office 365
   
-O script neste artigo permite que os administradores de descoberta eletrônica e gerentes de descoberta eletrônica geram um relatório que contém informações sobre todas as isenções que estão associados a casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade. O relatório contém informações como o nome do caso de uma isenção está associado, os locais de conteúdo são colocadas em espera e se a suspensão é baseado em consulta. Se houver casos que não têm qualquer isenções, o script criará um relatório adicional com uma lista de ocorrências sem isenções.
+O script neste artigo permite que os administradores de descoberta eletrônica e os gerentes de descoberta eletrônica gerem um relatório que contém informações sobre todas as isenções associadas a &amp; casos de descoberta eletrônica no centro de conformidade de segurança do Office 365. O relatório contém informações como o nome do caso ao qual uma retenção está associada, os locais de conteúdo que são colocados em espera e se a retenção é baseada em consulta. Se houver casos em que não haja isenções, o script criará um relatório adicional com uma lista de casos sem isenções.
 
-Consulte a seção de [informações adicionais](#more-information) para obter uma descrição detalhada das informações incluídas no relatório. 
+Consulte a seção [mais informações](#more-information) para obter uma descrição detalhada das informações incluídas no relatório. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para gerar um relatório sobre todos os casos de eDiscovery em sua organização, você precisa ser um administrador de eDiscovery em sua organização. Se você for uma gerente de descoberta eletrônica, o relatório só incluirá informações sobre os casos em que você pode acessar. Para obter mais informações sobre as permissões de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](assign-ediscovery-permissions.md).
+- Para gerar um relatório sobre todas as ocorrências de descoberta eletrônica em sua organização, você precisa ser um administrador de descoberta eletrônica em sua organização. Se você for um gerente de descoberta eletrônica, o relatório só incluirá informações sobre os casos que você pode acessar. Para obter mais informações sobre permissões de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica &amp; no centro de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
     
-- O script neste artigo tem o tratamento de erros mínimas. O objetivo principal é criar rapidamente o relatório sobre os bloqueios que estão associados os casos de eDiscovery em sua organização.
+- O script deste artigo tem um tratamento de erros mínimo. O objetivo principal é criar rapidamente um relatório sobre as isenções associadas às ocorrências de descoberta eletrônica em sua organização.
     
 - Os scripts de exemplo fornecidos neste tópico não são compatíveis com nenhum serviço ou programa de suporte padrão da Microsoft. Os scripts de exemplo são fornecidos COMO ESTÃO sem qualquer tipo de garantia. A Microsoft também se isenta de todas as garantias implícitas, incluindo sem limitações quaisquer garantias aplicáveis de padrões de comercialização ou de adequação a uma finalidade específica. Todos os riscos decorrentes do uso ou da execução da documentação ou scripts de exemplo serão de sua responsabilidade. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Etapa 1: Conectar à segurança &amp; usando o PowerShell remoto do Centro de conformidade
+## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Etapa 1: conectar-se ao &amp; centro de conformidade de segurança usando o PowerShell remoto
 
-A primeira etapa é conectar o Windows PowerShell para a segurança &amp; Centro de conformidade para sua organização.
+A primeira etapa é conectar o Windows PowerShell ao centro de &amp; conformidade de segurança da sua organização.
   
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, `ConnectSCC.ps1`. 
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `ConnectSCC.ps1`. 
     
       ```
       # Get login credentials 
@@ -48,19 +48,19 @@ A primeira etapa é conectar o Windows PowerShell para a segurança &amp; Centro
 
 2. No computador local, abra o Windows PowerShell e vá para a pasta onde você salvou o script. 
     
-3. Executar o script; Por exemplo:
+3. Executar o script; por exemplo:
 
     ```
     .\ConnectSCC.ps1
     ```
    
-4. Quando solicitado a fornecer suas credenciais, digite seu endereço de email e senha e clique em **Okey**. 
+4. Quando solicitar suas credenciais, insira seu endereço de email e senha e clique em **OK**. 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Etapa 2: Executar o script a ser relatado no retém associado casos de eDiscovery
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Etapa 2: executar o script para relatar em suspensões associadas a ocorrências de descoberta eletrônica
 
-Depois de se conectar à segurança &amp; Centro de conformidade com o PowerShell remoto, a próxima etapa é criar e executar o script que coleta informações sobre os casos de eDiscovery em sua organização. 
+Depois de se conectar ao centro de &amp; conformidade de segurança com o PowerShell remoto, a próxima etapa é criar e executar o script que coleta informações sobre as ocorrências de descoberta eletrônica em sua organização. 
   
-1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo de. ps1; Por exemplo, CaseHoldsReport.ps1. 
+1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, CaseHoldsReport. ps1. 
     
   ```
 #script begin
@@ -150,49 +150,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. Na sessão do Windows PowerShell que aberto na etapa 1, vá para a pasta onde você salvou o script. 
+2. Na sessão do Windows PowerShell que foi aberta na etapa 1, vá para a pasta onde você salvou o script. 
     
-3. Executar o script; Por exemplo:
+3. Executar o script; por exemplo:
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    O script perguntará para uma pasta de destino para salvar o relatório. 
+    O script solicitará uma pasta de destino para salvar o relatório. 
     
 4. Digite o nome do caminho completo da pasta para salvar o relatório e pressione **Enter**.
     
     > [!TIP]
-    > Para salvar o relatório na mesma pasta que o script está localizado em, digite um ponto (".") quando solicitado para uma pasta de destino. Para salvar o relatório em uma subpasta na pasta onde o script está localizado, basta digite o nome da subpasta. 
+    > Para salvar o relatório na mesma pasta em que o script está localizado, digite um ponto (".") quando solicitado a fornecer uma pasta de destino. Para salvar o relatório em uma subpasta na pasta em que o script está localizado, basta digitar o nome da subpasta. 
   
-    O script começa a coletar informações sobre todos os casos de eDiscovery em sua organização. Não acesse o arquivo de relatório enquanto o script está sendo executado. Quando o script for concluído, será exibida uma mensagem de confirmação da sessão do Windows PowerShell. Depois que essa mensagem é exibida, você pode acessar o relatório na pasta que você especificou na etapa 4. O nome de arquivo para o relatório é `CaseHoldsReport<DateTimeStamp>.csv`.
+    O script começa a coletar informações sobre todos os casos de descoberta eletrônica em sua organização. Não acesse o arquivo de relatório enquanto o script estiver em execução. Depois que o script for concluído, uma mensagem de confirmação será exibida na sessão do Windows PowerShell. Depois que esta mensagem for exibida, você poderá acessar o relatório na pasta que você especificou na etapa 4. O nome de arquivo para o relatório `CaseHoldsReport<DateTimeStamp>.csv`é.
 
-    Addtionally, o script também cria um relatório com uma lista das ocorrências que não têm qualquer isenções. O nome de arquivo para este relatório é `CaseswithNoHolds<DateTimeStamp>.csv`.
+    O script também cria um relatório com uma lista de casos que não tem nenhuma isenção. O nome de arquivo para esse relatório `CaseswithNoHolds<DateTimeStamp>.csv`é.
     
-    Aqui está um exemplo de execução do script CaseHoldsReport.ps1. 
+    Veja um exemplo de execução do script CaseHoldsReport. ps1. 
     
-    ![A saída após executar o script CaseHoldsReport.ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![A saída após a execução do script CaseHoldsReport. ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Mais informações
 
-O caso contém o relatório que é criado quando você executar o script neste artigo contém as seguintes informações sobre cada isenção. Conforme explicado anteriormente, você precisa ser uma administrador para retornar informações sobre todas as isenções em sua organização de descoberta eletrônica. Para obter mais informações sobre o caso contém, consulte [casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](ediscovery-cases.md).
+O relatório de ocorrências que é criado quando você executa o script neste artigo contém as seguintes informações sobre cada isenção. Conforme explicado anteriormente, você precisa ser um administrador de descoberta eletrônica para retornar informações de todas as isenções em sua organização. Para obter mais informações sobre isenções de caso, consulte [casos de descoberta eletrônica no &amp; centro de conformidade de segurança do Office 365](ediscovery-cases.md).
   
-  - O nome da isenção e o nome no caso de eDiscovery que a suspensão está associada.
+  - O nome da retenção e o nome da ocorrência de descoberta eletrônica à qual a suspensão está associada.
     
-  - Ou não o caso de descoberta eletrônica é ativo ou fechado.
+  - Se a ocorrência de descoberta eletrônica está ativa ou fechada.
     
-  - Ou não a espera está habilitada ou desabilitada.
+  - Se a retenção está habilitada ou desabilitada.
     
-  - Os membros no caso de eDiscovery que a suspensão está associada. Membros de maiusculas podem exibir ou gerenciar um caso, dependendo das permissões de descoberta eletrônica que tenham sido atribuídos a eles.
+  - Os membros da ocorrência de descoberta eletrônica à qual a suspensão está associada. Os membros de caso podem exibir ou gerenciar um caso, dependendo das permissões de descoberta eletrônica que foram atribuídas.
     
-  - A hora e data que o caso foi criado.
+  - A hora e a data em que o caso foi criado.
     
-  - Se um caso for fechado, a pessoa que fechado-lo e a hora e data que ele foi fechada.
+  - Se uma ocorrência estiver fechada, a pessoa que a fechou e a hora e a data em que ela foi fechada.
     
-  - Caixas de correio do Exchange e SharePoint sites locais que estão em espera.
+  - Os locais de caixas de correio do Exchange e sites do SharePoint que estão em espera.
     
-  - Se a suspensão é baseado em consulta, a sintaxe de consulta.
+  - Se a retenção for baseada em consulta, a sintaxe da consulta.
     
-  - A hora e data que isenção foi criada e a pessoa que criou a ele.
+  - A hora e a data em que o bloqueio foi criado e a pessoa que o criou.
     
-  - A hora e data da que última alteração isenção e a pessoa que-la alterado.
+  - A hora e a data em que a retenção foi alterada pela última vez e a pessoa que a alterou.

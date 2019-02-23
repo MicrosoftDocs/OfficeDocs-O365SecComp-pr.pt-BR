@@ -6,178 +6,178 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Saiba como visualizar e interpretar os resultados para problemas de maiusculas no eDiscovery avançadas do Office 365 e o status de treinamento de relevância.  '
-ms.openlocfilehash: a19f7eaabf5dc15eefaa7209ded8261020d0d557
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Saiba como exibir e interpretar os resultados e o status de treinamento de relevância para problemas de caso na descoberta eletrônica avançada do Office 365.  '
+ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524710"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218169"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Acompanhar análises de relevância na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-No eDiscovery avançada, na guia faixa de relevância exibe a validade calculada do treinamento relevância executada na guia marca e indica a próxima etapa para tirar no processo de treinamento interativas em relevância. 
+Na descoberta eletrônica avançada, a guia controle de relevância exibe a validade calculada do treinamento de relevância executado na guia marca e indica a próxima etapa a ser tomada em relevância do processo de treinamento iterativo. 
   
 ## <a name="tracking-relevance-training-status"></a>Status de treinamento de relevância de rastreamento
 
-1. Exiba os detalhes a seguir na faixa de relevância para os problemas de maiusculas, conforme mostrado no exemplo a seguir de uma caixa de diálogo **nome do problema** abaixo. 
+1. Exibir os seguintes detalhes no controle de relevância para os problemas de caso, conforme mostrado no exemplo a seguir de uma caixa de diálogo de **nome de problema** abaixo. 
     
-  - **Avaliação**: este indicador de progresso mostra até que grau a relevância treinamento executadas até esse ponto alcançou a meta de avaliação em termos de margem de erro. O aperfeiçoamento em termos dos resultados de treinamento da relevância também é exibido. 
+  - **Avaliação**: Este indicador de progresso mostra a que grau o treinamento de relevância realizado neste ponto atingiu o alvo da avaliação em termos de margem de erro. A riqueza dos resultados de treinamento de relevância também é exibida. 
     
-  - **Treinamento**: essa tela de dica de ferramenta e indicador de progresso codificada indica o treinamento de relevância de resultados estabilidade e uma escala numérica mostrando o número de amostras de treinamento de relevância marcados para cada questão. Especialista monitora o andamento do processo de treinamento de relevância repetitivo. 
+  - **Treinamento**: Este indicador de progresso por cores e exibição de dica de ferramenta indica a estabilidade dos resultados de treinamento de relevância e uma escala numérica que mostra o número de amostras de treinamento de relevância marcadas para cada problema. O especialista monitora o andamento do processo de treinamento de relevância iterativa. 
     
-  - **Cálculo de lote**: esse indicador de progresso fornece informações sobre a conclusão de cálculo de lote.
+  - **Cálculo em lote**: Este indicador de progresso fornece informações sobre a conclusão do cálculo em lote.
     
-  - **Próxima etapa**: exibe a recomendação para a próxima etapa a ser executada. 
+  - **Próxima etapa**: exibe a recomendação para que a próxima etapa seja executada. 
     
-    No exemplo, é mostrada uma avaliação concluída com êxito para um problema, indicado pelo indicador de progresso de cor concluídas e a marca de seleção. Marcação está em andamento, mas o caso ainda é considerado instável (o status de estabilidade também é mostrado em uma dica de ferramenta). A recomendação de etapa próxima é "treinamento". 
+    No exemplo, uma avaliação concluída com êxito para um problema é exibida, indicada pelo indicador de progresso de cor preenchido e pela marca de execução. A marcação está em andamento, mas o caso ainda é considerado instável (o status de estabilidade também é mostrado em uma dica de ferramenta). A recomendação de próxima etapa é "treinamento". 
     
     ![Etapa 1 do treinamento do Controle de Relevância](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    O modo de exibição expandido exibe opções e informações adicionais. A margem de erro atual exibido é a margem de erro de cancelamento de no estado atual da avaliação, recebe os arquivos de avaliação (já marcados) existente.
+    O modo de exibição expandido exibe informações e opções adicionais. A margem de erro atual exibida é a margem de erro da recuperação no estado atual de avaliação, dado os arquivos de avaliação existentes (já marcados).
     
     > [!NOTE]
-    >  O estágio de avaliação pode ser desviado desmarcando a caixa de seleção de **avaliação** por problema e, em seguida, para "todos os problemas". No entanto, como resultado, não haverá nenhuma estatísticas para esse problema. > Desmarcar a caixa de seleção **Assessment** só pode ser feito antes de avaliação é executada. Onde várias questões existirem no caso, avaliação é ignorada apenas se a caixa de seleção estiver desmarcada para cada questão 
+    >  O estágio de avaliação pode ser ignorado, desmarcando a caixa de seleção de **avaliação** por problema e, em seguida, para "todos os problemas". No enTanto, como resultado, não haverá estatísticas para esse problema. > a caixa de seleção de **avaliação** só pode ser feita antes da avaliação ser realizada. Onde houver vários problemas em um caso, a avaliação será ignorada somente se a caixa de seleção estiver desmarcada para cada problema 
   
-    Quando assessment não for concluído com o exemplo primeiro conjunto de arquivos, avaliação pode ser a próxima etapa para marcação mais arquivos. 
+    Quando a avaliação não é concluída com o primeiro conjunto de exemplos de arquivos, a avaliação pode ser a próxima etapa para marcar mais arquivos. 
     
-    Na **relevância** \> **trilha**, o indicador de progresso de treinamento e a dica de ferramenta indicam o número estimado de exemplos adicionais necessárias para alcançar a estabilidade. Essa estimativa fornece uma diretriz para o treinamento adicional necessário.
+    No **** \> **controle**de relevância, o indicador de progresso de treinamento e a dica de ferramenta indicam o número estimado de amostras adicionais necessárias para alcançar a estabilidade. Esta estimativa fornece uma diretriz para o treinamento adicional necessário.
     
     ![Treinamento do controle de relevância](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. Quando tiver concluído de marcação e se você precisar continuar, treinamento, clique em **treinamento**. Outro conjunto de amostra de arquivos é gerado a partir do arquivo carregado definido para treinamento adicional. Você retorna à guia marca para marcar e treinar mais arquivos.
+2. Quando tiver terminado a marcação e se precisar continuar o treinamento, clique em **treinamento**. Outro conjunto de exemplos de arquivos é gerado a partir do conjunto de arquivos carregado para obter treinamento adicional. Em seguida, você retorna à guia marca para marcar e treinar mais arquivos.
     
-### <a name="reaching-stable-training-levels"></a>Atingir níveis de treinamento estável
+### <a name="reaching-stable-training-levels"></a>Atingir níveis de treinamento estáveis
 
-Depois que os arquivos de avaliação obtiveram um nível estável de treinamento, eDiscovery Avançado está pronto para cálculo de lote.
+Após os arquivos de avaliação terem alcançado um nível estável de treinamento, a descoberta eletrônica avançada estará pronta para o cálculo em lote.
   
 > [!NOTE]
-> Normalmente, após três estável amostras de treinamento, a próxima etapa é "Cálculo de lote". Pode haver exceções, por exemplo, quando não havia alterações para a marcação dos arquivos de exemplos anteriores ou quando os arquivos de propagação foram adicionados. 
+> Normalmente, após três amostras de treinamento estáveis, a próxima etapa é "cálculo em lote". Podem haver exceções, por exemplo, quando houve alterações na marcação de arquivos de exemplos anteriores ou quando os arquivos semente foram adicionados. 
   
-### <a name="performing-batch-calculation"></a>Executando o cálculo de lote
+### <a name="performing-batch-calculation"></a>Executando cálculo em lote
 
-Cálculo de lote é executado como a próxima etapa quando treinamento for concluído com êxito (quando um status de treinamento estável é mostrado pela barra de progresso, uma marca de seleção e o status estável na dica de ferramenta.) Cálculo de lote aplica o conhecimento adquirido durante o treinamento de relevância à população todo o arquivo, para avaliar a relevância dos arquivos e atribuir as pontuações de relevância.
+O cálculo de lote é executado como a próxima etapa após o treinamento ter sido concluído com êxito (quando um status de treinamento estável é mostrado pela barra de progresso, uma marca de e o status de estável na ferramenta dica.) O cálculo de lote aplica o conhecimento adquirido durante o treinamento de relevância a todo o preenchimento de arquivo, para avaliar a relevância dos arquivos e para atribuir pontuações de relevância.
   
-Quando houver mais de um problema, cálculo de lote é feito por um problema. Durante o cálculo de lote, progresso é monitorado durante o processamento de todos os arquivos. 
+Quando há mais de um problema, o cálculo do lote é feito por questão. Durante o cálculo do lote, o andamento é monitorado durante o processamento de todos os arquivos. 
   
-Aqui, a próxima etapa recomendada é "None", que indica que nenhuma treinamento de relevância repetitivo adicional é necessário nesse momento. A próxima fase é o **relevância \> decida** tab. 
+Aqui, a próxima etapa recomendada é "nenhum", que indica que nenhum treinamento adicional de relevância iterativa é necessário neste ponto. A fase seguinte é a **de \> relevância-decisão** . 
   
-Se você deseja importar novos arquivos após o cálculo de lote, o administrador pode adicionar os arquivos importados para uma nova carga.
+Se você deseja importar novos arquivos após o cálculo de lote, o administrador pode adicionar os arquivos importados a uma nova carga.
   
 > [!NOTE]
-> Se você clicar em **Cancelar** durante o cálculo de lote, o processo salva o que já foi executado. Se você executar novamente o cálculo do lote, o processo continuará partir do último ponto executado. 
+> Se você clicar em **Cancelar** durante o cálculo do lote, o processo salvará o que já foi executado. Se você executar o cálculo em lotes novamente, o processo continuará a partir do último ponto executado. 
   
-### <a name="assessing-tagging-consistency"></a>Avaliando a marcação de consistência
+### <a name="assessing-tagging-consistency"></a>Avaliando a consistência de marcação
 
-Se houver inconsistências no arquivo de marcação, ele pode afetar a análise. A marcação de processo de consistência de eDiscovery avançada pode ser usada quando os resultados não forem ideais ou consistência está em dúvida. Uma lista dos arquivos de forma inconsistente marcados possíveis é retornada, e pode ser examinados e novamente marcados, conforme necessário.
+Se houver inconsistências na marcação de arquivos, ela poderá afetar a análise. O processo de consistência de marcação de descoberta eletrônica avançada pode ser usado quando os resultados não são ideais ou a consistência está em dúvida. Uma lista de possíveis arquivos marcados inconsistentes é retornada, e eles podem ser revisados e remarcados, conforme necessário.
   
 > [!NOTE]
-> Após sete ou mais Arredonda treinamento seguir avaliação, consistência de marcação pode ser exibida em **relevância** \> **Track** \> **problema** \> **resultados detalhados** \> **progresso de treinamento**. Este examinar é feita para um problema ao mesmo tempo. 
+> Após sete ou mais rodadas de treinamento após a avaliação, a consistência de marcação pode ser visualizada no **andamento do treinamento**de **resultados** \> detalhados do **problema** \> de **controle** \> de **relevância** \> . Essa análise é feita para um problema de cada vez. 
   
-1. No **relevância \> Track**, expanda linha de um problema.
+1. No **controle \> de relevância**, expanda a linha de um problema.
     
 2. À direita da **próxima etapa**, clique em **Modificar**.
     
-3. Selecione **inconsistências de marca** como a opção de **próxima etapa** , após sete exemplos de treinamento e clique **Okey**.
+3. Selecione inconsistências de **marca** como a opção **próxima etapa** , após sete amostras de treinamento e clique em **OK**.
     
-4. Selecione **inconsistências de marca**. Na guia **marca** abre exibindo uma lista das inconsistências para marcar novamente conforme necessário. 
+4. Selecione inconsistências de **marca**. A guia **marca** é aberta exibindo uma lista das inconsistências a serem marcadas novamente, conforme necessário. 
     
-5. Clique em **Calcular** para enviar as alterações. A próxima etapa depois de marcar inconsistências é "treinamento". 
+5. Clique em **calcular** para enviar as alterações. A próxima etapa após a marcação de inconsistências é "treinamento". 
     
 ## <a name="viewing-and-using-relevance-results"></a>Exibindo e usando resultados de relevância
 
-No **relevância \> Track** guia, expanda a linha de um problema e ao lado de **resultados detalhados**, clique em **Exibir**. Os painéis de resultados detalhados são exibidos, conforme mostrado e descrito abaixo.
+Na guia **controle \> de relevância** , expanda a linha de um problema e ao lado de **resultados detalhados**, clique em **Exibir**. Os painéis de resultados detalhados são exibidos, conforme mostrado e descrito abaixo.
   
 ![Resultados detalhado do treinamento de relevância](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Resumo de marcação
 
- No exemplo mostrado abaixo, a **marcação resumida** exibe os totais para cada um dos arquivo os processos de marcação, treinamento e avaliação. 
+ No exemplo mostrado abaixo, o **Resumo de marcação** exibe os totais para cada um dos processos de marcação de avaliação, treinamento e arquivo de verificação. 
   
 ![Resumo de marcação de controle de relevância](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Palavras-chave
 
-Uma palavra-chave é uma cadeia de caracteres exclusiva, word, frase ou sequência de palavras em um arquivo identificado por eDiscovery avançado, como um indicador de significativo se um arquivo é relevante. As colunas de "Include" listam palavra-chave e espessuras nos arquivos marcados como relevantes e as colunas "Excluir" lista palavras-chave e espessuras nos arquivos marcados como não é relevante.
+Uma palavra-chave é uma cadeia de caracteres exclusiva, palavra, frase ou sequência de palavras em um arquivo identificado por uma descoberta eletrônica avançada como um indicador significativo do fato de um arquivo ser relevante. A palavra-chave "include" da lista de colunas e os pesos em arquivos marcados como relevantes e as colunas "exclude" lista palavras-chave e pesos em arquivos marcados como não relevantes.
   
-EDiscovery avançado atribui valores de peso de negativo ou positivo de palavra-chave. O peso maior, maior a probabilidade de que um arquivo no qual a palavra-chave aparece é atribuído com uma pontuação maior de relevância durante o cálculo de lote. 
+A descoberta eletrônica avançada atribui valores de peso de palavra-chave negativas ou positivos. Quanto maior o peso, maior a probabilidade de um arquivo em que a palavra-chave seja exibida é atribuída uma pontuação de relevância maior durante o cálculo do lote. 
   
-A lista de descoberta eletrônica avançada de palavras-chave pode ser usada para complementar uma lista criada por um especialista ou como uma verificação de integridade indiretas a qualquer momento no arquivo do processo de revisão.
+A lista de descoberta eletrônica avançada de palavras-chave pode ser usada para complementar uma lista criada por um especialista ou como uma verificação de sanidade indireta em qualquer ponto do processo de revisão de arquivo.
   
 ### <a name="training-progress"></a>Progresso do treinamento
 
-Painel de **Progresso de treinamento** inclui um treinamento progresso qualidade e gráfico indicador display, conforme mostrado no exemplo a seguir. 
+O painel **andamento do treinamento** inclui um gráfico de progresso de treinamento e um indicador de qualidade, conforme mostrado no exemplo abaixo. 
   
 ![Progresso do treinamento do Controle de Relevância](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
- **Indicador de qualidade de treinamento**: exibe a classificação da marca consistência da seguinte maneira:
+ **Indicador de qualidade de treinamento**: exibe a classificação da consistência de marcação da seguinte maneira:
   
-- **BOM**: arquivos estão marcados de forma consistente. (Luz verde exibido)
+- **Boa**: os arquivos são marcados de forma consistente. (Luz verde exibida)
     
-- **Médio**: alguns arquivos podem ser marcados de forma inconsistente. (Amarelo claro exibido)
+- **Médio**: alguns arquivos podem ser marcados de forma inconsistente. (Luz amarela exibida)
     
-- **Aviso**: muitos arquivos podem ser marcados de forma inconsistente. (Luz vermelha exibido)
+- **Aviso**: muitos arquivos podem ser marcados de forma inconsistente. (Luz vermelha exibida)
     
- **Gráfico de progresso de treinamento**: mostra o grau de estabilidade de treinamento de relevância após um número de ciclos de treinamento de relevância em comparação com o valor da medida de F. Como podemos mover da esquerda para a direita pelo gráfico, restringe o intervalo de confiança e é usado, junto com a medida de F, por eDiscovery avançado relevância para determinar a estabilidade quando o treinamento de relevância de resultados otimizados.
+ **Gráfico de progresso do treinamento**: mostra o grau de estabilidade de treinamento de relevância após vários ciclos de treinamento de relevância em comparação ao valor de medida F. À medida que mudamos da esquerda para a direita no gráfico, o intervalo de confiança diminui e é usado, juntamente com a medida F, por uma relevância avançada de descoberta eletrônica para determinar a estabilidade quando os resultados de treinamento de relevância são otimizados.
   
 > [!NOTE]
-> Relevância usa F2, uma métrica de medida de F onde Recall recebe o dobro peso como precisão. Para casos com riqueza alta (mais de 25%), usos de relevância F1 (taxa de 1:1). A taxa de medida de F pode ser configurada na **instalação de relevância** \> **Configurações avançadas**. 
+> A relevância usa F2, uma métrica de C-Measure onde a recuperação recebe duas vezes mais peso que a precisão. Para casos com grande riqueza (mais de 25%), a relevância usa F1 (taxa de 1:1). A taxa de medida de F pode ser configurada em **Configurações avançadas**de **configuração** \> de relevância. 
   
-### <a name="batch-calculation-results"></a>Resultados do cálculo de lote
+### <a name="batch-calculation-results"></a>Resultados do cálculo em lote
 
-Painel de **resultados de cálculo de lote** inclui o número de arquivos que foram marcados para a relevância, da seguinte maneira: 
+O painel **resultados do cálculo em lotes** inclui o número de arquivos que foram pontuados para fins de relevância da seguinte maneira: 
   
 - **Êxito**
     
-- **Vazio**: não contém texto, por exemplo, somente espaços/guias
+- **Vazio**: não contém texto, por exemplo, somente espaços/abas
     
-- **Falha**: devido ao tamanho excessivo ou não pôde ser lido
+- **Falha**: devido a tamanho excessivo ou não pôde ser lido
     
 - **Ignorado**: devido ao tamanho excessivo
     
-- **Nebulous**: contém texto insignificante ou nenhuma recursos relevantes para o problema
+- **Nebulous**: contém texto sem sentido ou nenhum recurso relevante para o problema
     
 > [!NOTE]
-> Vazio, falhou, Ignored ou Nebulous receberá uma pontuação de relevância de -1. 
+> Empty, Failed, ignored ou nebulous receberá uma pontuação de relevância de-1. 
   
 ### <a name="training-statistics"></a>Estatísticas de treinamento
 
-O painel de **estatísticas de treinamento** exibe estatísticas e gráficos com base nos resultados de treinamento de relevância de descoberta eletrônica avançado. 
+O painel **Estatísticas de treinamento** exibe as estatísticas e os gráficos com base nos resultados do treinamento de relevância de descoberta eletrônica avançada. 
   
 ![Estatística do treinamento do controle de relevância](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Este modo de exibição mostra o seguinte:
   
-- **Taxa de cancelamento de revisão**: pontuações de comparação dos resultados de acordo com a relevância em uma revisão Hipoteticamente linear. Cancelamento é estimado de acordo com o conjunto de tamanho do conjunto de revisão.
+- **Taxa de recuperação de revisão**: comparação de resultados de acordo com as pontuaÇões de relevância em uma revisão hipotéticamente linear. A reChamada é estimada de acordo com o tamanho do conjunto de revisão definido.
     
-- **Parâmetros**: cumulativa calculado das estatísticas referentes à revisão definida em relação à população arquivo para o caso de inteiro.
+- **Parâmetros**: estatísticas calculadas cumulativas pertencentes ao conjunto de revisão em relação à população de arquivo para o caso inteiro.
     
-- **Revise**: porcentagem de arquivos para analisar com base neste corte.
+- **Revisão**: porcentagem de arquivos a serem revisados com base nesse corte.
     
-- **Cancelar**: arquivos de porcentagem de relevante no conjunto de revisão. 
+- **Recall**: porcentagem de arquivos relevantes no conjunto de revisão. 
     
-- **Distribuição por pontuação de relevância**: arquivos na exibição cinza escuro para a esquerda estão abaixo a pontuação de fechamento. Uma dica de ferramenta exibe a pontuação de relevância e a porcentagem relacionada de arquivos no arquivo revisão definido em relação aos arquivos total.
+- **Distribuição por Pontuação de relevância**: os arquivos na exibição cinza escuro à esquerda estão abaixo da Pontuação de corte. Uma dica de ferramenta exibe a pontuação de relevância e a porcentagem relacionada de arquivos no conjunto de arquivos de revisão em relação ao total de arquivos.
     
 ## <a name="see-also"></a>Confira também
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Noções básicas sobre avaliação na relevância](assessment-in-relevance-in-advanced-ediscovery.md)
+[Noções básicas sobre avaliação em relevância](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Executando e revisão de avaliação](tagging-and-assessment-in-advanced-ediscovery.md)
+[Realizando e revisando a avaliação](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Executando o treinamento de relevância](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Realizando treinamento de relevância](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Tomar decisões com base nos resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Tomada de decisões com base nos resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Análise de relevância de teste](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testando análise de relevância](test-relevance-analysis-in-advanced-ediscovery.md)
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informações sobre o monitoramento e recursos de auto-recuperação do Office 365.
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090513"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217541"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Monitoramento e auto-recuperação do Office 365
 Dada a escala do Office 365, seria impossível manter os dados do cliente resistentes e seguros contra malware sem o monitoramento integrado, que é um alerta abrangente e de auto-recuperação, que é mais rápido e confiável. Monitorar um conjunto de serviços na escala do Office 365 é muito desafiador. Novas mentalidades e metodologias precisavam ser introduzidas, e todos os novos conjuntos de tecnologia precisavam ser criados para operar e gerenciar o serviço em um ambiente global conectado. Mudamos para longe da abordagem de monitoramento tradicional da coleta de dados e filtragem para criar alertas para uma abordagem baseada na análise de dados; demorando sinais e criando confiança nesses dados e usando a automação para recuperar ou resolver o problema. Essa abordagem ajuda a tirar os seres humanos da equação de recuperação, o que, por sua vez, torna as operações menos dispendiosas, mais rápidas e menos sujeitas a erros. 

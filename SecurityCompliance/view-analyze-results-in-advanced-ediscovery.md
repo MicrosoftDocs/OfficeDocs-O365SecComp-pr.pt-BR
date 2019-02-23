@@ -6,69 +6,69 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Compreenda where exibir os resultados do processo de análise no eDiscovery avançadas do Office 365, incluindo definições das opções de tipo de exibição de tarefa.  '
-ms.openlocfilehash: 8f1de53e5548c8721f8fbfdb83374edb18379114
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Entenda onde exibir os resultados do processo de análise na descoberta eletrônica avançada do Office 365, incluindo as definições das opções de tarefa exibidas.  '
+ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524441"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218821"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Exibir resultados de análise na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-No eDiscovery avançado, andamento e os resultados para o processo de analisar podem ser exibidos em uma variedade de exibe conforme descrito abaixo.
+Na descoberta eletrônica avançada, o andamento e os resultados do processo de análise podem ser exibidos em uma variedade de exibições, conforme descrito abaixo.
   
-## <a name="view-analyze-task-status"></a>Exibir o status da tarefa de analisar
+## <a name="view-analyze-task-status"></a>Exibir o status da tarefa de análise
 
-No **Prepare \> analisar \> resultados \> status da tarefa**, o status é exibido durante e após a execução do processo de análise. 
+Em **preparar \> o \> status \> da tarefa de análise de resultados**, o status é exibido durante e após analisar a execução do processo. 
   
 ![Status de tarefa de análise](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 As tarefas exibidas podem variar dependendo das opções selecionadas. 
   
-- **Término/ET: instalação**: prepara para o tempo de execução, por exemplo, define os parâmetros de execução e maiusculas.
+- **ND/et: configuração**: prepara para a execução, por exemplo, define os parâmetros Run e case.
     
-- **Término/ET: cálculo de término**: análise de quase duplicados de processos de arquivos.
+- **ND/et: o cálculo**: processa a análise quase duplicada de arquivos.
     
-- **Término/ET: cálculo ET**: análise realiza Thread de Email no conjunto de email inteira.
+- **ND/et: et cálculo**: realiza análise de thread de email em todo o conjunto de emails.
     
-- **Término/ET: dinamização e semelhanças**: executa pivot e processamento de semelhança do arquivo.
+- **ND/et: pivôs e semelhanças**: realiza o processamento dinâmico e de similaridade de arquivos.
     
-- **Término/ET: atualização de metadados**: Finaliza os novos dados coletados nos arquivos do banco de dados.
+- **ND/et: atualização de metadados**: finaliza os novos dados coletados nos arquivos do banco de dados.
     
-- **Temas: cálculo de temas**: executa a análise de temas. (Exibida somente se tiver selecionado).
+- **Temas: cálculo de temas**: executa a análise de temas. (Exibido somente se selecionado).
     
-- **Status da tarefa**: esta linha é exibida após a conclusão da tarefa. Enquanto estiver executando tarefas, a duração da execução é exibida.
+- **Status da tarefa**: essa linha é exibida após a conclusão da tarefa. Enquanto as tarefas estão em execução, a duração da execução é exibida.
     
 > [!NOTE]
-> Os resultados de analisar de perto duplicatas e segmentos de Email (término e ED) aplica-se ao número de documentos a serem processados. Ele não inclui arquivos duplicados exatos. 
+> Os resultados da análise de quase duplicatas e threads de email (ND e ED) se aplicam ao número de documentos a serem processados. Ele não inclui arquivos duplicados exAtos. 
   
-## <a name="view-near-duplicates-and-email-threads-status"></a>Exibir o status de perto duplicatas e segmentos de Email
+## <a name="view-near-duplicates-and-email-threads-status"></a>Exibir o status de duplicidades e threads de email
 
-Os resultados da população de **destino** exibem o número de documentos, emails, anexos e erros da população de destino. 
+Os resultados da população de **destino** exibem o número de documentos, emails, anexos e erros na população de destino. 
   
-Os resultados de **documentos** exibem o número de dinamização, perto duplicatas exclusivas e extraia os arquivos duplicados. 
+Os resultados dos **documentos** exibem o número de pivôs, únicos duplicatas ou arquivos duplicados exatos. 
   
-Os resultados de **Emails** exibem o número de inclusive, inclusive menos, cópias inclusive exclusivas e o restante das mensagens de email. Os diferentes tipos de resultados de email são: 
+Os resultados da mensagem de **email** exibem o número de cópias inclusivas, incluindo menos, inclusive, e o restante das mensagens de email. Os diferentes tipos de resultados de email são: 
   
-- **Inclusiva**: um email inclusive é o nó terminação em um segmento de email e contém todos os o histórico anterior desse thread. Como resultado, o revisor com segurança pode se concentrar na inclusive email, sem a necessidade de ler as mensagens anteriores no segmento. 
+- **Inclusive**: um email inclusivo é o nó de terminação em um thread de email e contém todos os históricos anteriores desse thread. Como resultado, o revisor pode focalizar com segurança o email inclusivo, sem a necessidade de ler as mensagens anteriores no thread. 
     
-- **Inclusiva menos**: um email inclusive é designado como inclusive subtração, se houver um ou mais anexos diferentes associados com os pais da mensagem inclusive. Neste contexto, o termo que pai é usado para mensagens localizadas para cima no segmento de email ou conversas são incluídos nesse email inclusive específico. Um revisor pode usar inclusive menos indicação como um sinal que embora talvez não seja necessário analisar o conteúdo dos pais inclusive email, ele pode ser útil revisar os anexos associados com os pais inclusive caminho. 
+- **Inclusive menos**: um email inclusivo é designado como incluindo menos, se houver um ou mais anexos diferentes associados aos pais da mensagem inclusiva. Neste contexto, o termo pai é usado para mensagens localizadas no final do thread de email ou conversas incluídas nesse email inclusivo específico. Um revisor pode usar a indicação de menos, incluindo um sinal que, embora talvez não seja necessário revisar o conteúdo dos pais de email inclusivos, pode ser útil revisar os anexos associados aos pais de caminho inclusivos. 
     
-- **Inclusive cópia**: um email inclusive é designado como cópia inclusive se ela for a cópia de outra mensagem marcado como inclusive ou inclusive menos. Em outras palavras, essa mensagem tem o mesmo assunto e corpo como outra mensagem inclusive e, como tal, co reside nos mesmos nós. Como mensagens de cópia inclusive contêm o mesmo conteúdo, eles geralmente podem ser ignorados no processo de revisão. 
+- **Cópia inclusiva**: um email inclusivo é designado como uma cópia inclusiva, se for a cópia de outra mensagem marcada como inclusiva ou inclusive menos. Em outras palavras, esta mensagem tem o mesmo assunto e corpo de outra mensagem inclusiva e, como tal, reside no mesmo nó. Como as mensagens de cópia inclusiva contêm o mesmo conteúdo, elas normalmente podem ser ignoradas no processo de revisão. 
     
-- **O restante**: isso indica que o email que não contêm qualquer conteúdo exclusivo e, portanto, não se enquadram qualquer uma das três categorias anteriores. Essas mensagens de email não precisam ser revisados. Se uma mensagem contiver um anexo que não está em um email inclusive mais tarde, o anexo, em seguida, talvez seja necessário ser analisado. Isso é indicado pela existência de uma inclusive menos email dentro do segmento.
+- **O restante**: indica email que não contém conteúdo exclusivo e, portanto, não se enquadram em nenhuma das três categorias anteriores. Essas mensagens de email não precisam ser revisadas. Se uma mensagem contiver um anexo que não esteja em um email inclusive mais recente, talvez seja necessário revisar o anexo. Isso é indicado pela existência de um email inclusive menos um dentro do thread.
     
-Os resultados de **anexos** exibem o número de anexos, de acordo com tal tipo como exclusivo e duplicatas. 
+Os resultados de **anexos** exibem o número de anexos, de acordo com esse tipo como exclusivo e duplicado. 
   
 ![Quase duplicatas e threads de email](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
@@ -76,11 +76,11 @@ Os resultados de **anexos** exibem o número de anexos, de acordo com tal tipo c
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Noções básicas sobre semelhança de documento](understand-document-similarity-in-advanced-ediscovery.md)
+[Noções básicas sobre a similaridade de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Definindo opções de analisar](set-analyze-options-in-advanced-ediscovery.md)
+[Configuração das opções de análise](set-analyze-options-in-advanced-ediscovery.md)
   
-[Configuração Ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
+[Configuração ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
   
-[Analisar configuração configurações avançada](view-analyze-results-in-advanced-ediscovery.md)
+[Configuração analisar configurações avançadas](view-analyze-results-in-advanced-ediscovery.md)
 

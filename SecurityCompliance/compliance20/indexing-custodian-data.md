@@ -1,12 +1,12 @@
 ---
-title: Indexação dos dados dos responsáveis avançada
+title: Indexação avançada de dados de responsáveis
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 158af8acf4acdb8ad6650c377a23b44ed28c6f54
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607306"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218661"
 ---
-# <a name="advanced-indexing-of-custodian-data"></a>Indexação dos dados dos responsáveis avançada
+# <a name="advanced-indexing-of-custodian-data"></a>Indexação avançada de dados de responsáveis
 
-Quando um funcionário encarregado é adicionado a um caso de eDiscovery avançado (Preview), qualquer conteúdo no Office 365 foi considerada como parcialmente indexado é re-processado para torná-la totalmente pesquisável.  Esse processo é chamado de *indexação avançada*. O conteúdo pode ser indexado parcialmente para vários motivos, inclusive a existência de imagens, tipos de arquivo incompatíveis ou quando os limites de tamanho de arquivo indexação forem encontrados.  Para saber mais sobre itens indexados parcialmente, consulte [parcialmente indexados itens na pesquisa de conteúdo no Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search).
+Quando um qualificador é adicionado a um caso de descoberta eletrônica avançada (visualização), qualquer conteúdo no Office 365 que foi considerado parcialmente indexado é reprocessado para torná-lo totalmente pesquisável.  Esse processo é chamado de *indexAção avançada*. O conteúdo pode ser parcialmente indexado por vários motivos, incluindo a existência de imagens, tipos de arquivos não suportados ou quando são encontrados limites de tamanho de arquivo de indexação.  Para saber mais sobre itens parcialmente indexados, confira [itens parcialmente indexados na pesquisa de conteúdo no Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search).
 
-## <a name="viewing-advanced-indexing-results"></a>Exibição de resultados avançados de indexação
+## <a name="viewing-advanced-indexing-results"></a>Exibindo resultados avançados de indexação
 
-Quando o processo de indexação avançado for concluído, você pode obter uma compreensão da eficácia do processamento novamente.  Na exibição de indexação dos responsáveis, o gráfico lista todos os itens adicionados ao *índice híbrida*.  O índice de híbrido é onde o eDiscovery avançado (Preview) armazena o conteúdo de re-processado.
+Após a conclusão do processo de indexação avançada, você pode entender a eficácia da reprocessamento.  No modo de exibição de indexação de responsáveis, o gráfico lista todos os itens adicionados ao *índice híbrido*.  O índice híbrido é onde a descoberta eletrônica avançada (visualização) armazena o conteúdo reprocessado.
 
-O gráfico também inclui o número de itens que exigem remediação e outro gráfico de erros por tipo de arquivo. Para obter mais informações, consulte [correção de erro durante o processamento de dados](error-remediation.md).
+O gráfico também inclui o número de itens que exigem correção e outro gráfico de erros por tipo de arquivo. Para obter mais informações, consulte [Error remediation When Processing data](error-remediation.md).
 
-## <a name="updating-advanced-indexes-for-custodians"></a>Atualização de índices avançadas para responsáveis
+## <a name="updating-advanced-indexes-for-custodians"></a>Atualizando índices avançados para os responsáveis
 
-Quando um funcionário encarregado é adicionado a um caso de eDiscovery avançado (Preview), todos os itens indexados parcialmente são processados novamente. No entanto, como passar do tempo, itens indexados mais parcialmente podem ser adicionados à caixa de correio de um usuário ou conta de OneDrive.  Quando necessário, você poderá atualizar os índices.
+Quando um responsáveis é adicionado a uma descoberta eletrônica avançada (visualização), todos os itens parcialmente indexados são processados novamente. No enTanto, à medida que o tempo passa, os itens mais parcialmente indexados podem ser adicionados à caixa de correio de um usuário ou a uma conta do OneDrive.  Quando necessário, você pode atualizar os índices.
 
 > [!NOTE]
-> Atualização de índices dos responsáveis é um processo em tempo de execução. É recomendável que você não atualizar índices mais de uma vez por dia em um caso.
+> Atualizar os índices dos responsáveis é um processo de execução longa. É recomendável que você não atualize os índices mais de uma vez por dia em um caso.

@@ -6,75 +6,73 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
-description: Defina políticas de atividade com segurança de aplicativo do Office 365 nuvem para configurar alertas para disparar quando atividades específicas acontecem ou acontecer muito frequentemente. Configurando políticas para acionar os alertas, você pode ser notificado sobre e monitora atividades específicas.
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Definir políticas de atividade com o Office 365 Cloud app Security para configurar alertas a serem acionados quando atividades específicas acontecem ou acontecem com muita frequência. Configurando políticas para acionar alertas, você pode ser notificado sobre e monitorar atividades específicas.
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604088"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219761"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Políticas de atividades e alertas no Office 365 Cloud App Security
 
-Gerenciamento de segurança avançada do Office 365 agora é segurança de aplicativo de nuvem do Office 365.
-  
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
-|[Comece a avaliar](office-365-cas-overview.md) <br/> |[Começar a planejar](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](anomaly-detection-policies-in-ocas.md) <br/> |[Iniciar a utilização](utilization-activities-for-ocas.md) <br/> |
+|[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](anomaly-detection-policies-in-ocas.md) <br/> |[Começar a usar](utilization-activities-for-ocas.md) <br/> |
    
-Com a segurança de aplicativo de nuvem do Office 365, políticas de gerenciamento avançado de nuvem disparam alertas para atividades específicas que acontecesse ou acontecer muito frequentemente. Por exemplo, suponha que um usuário tenta entrar no Office 365 e falha 70 vezes em um minuto. Suponha que outro usuário baixa 7.000 arquivos ou parece estar conectado no Canadá, quando o usuário deve para estar em outro local. Ou pior, suponha que a conta de alguém foi comprometida e um invasor esteja usando essa conta para acessar dados confidenciais e aplicativos de nuvem da sua organização.
+Com o Office 365 Cloud app Security, as políticas avançadas de gerenciamento de nuvem disparam alertas para atividades específicas que acontecem ou acontecem com muito frequência. Por exemplo, suponha que um usuário tente entrar no Office 365 e falhe 70 vezes em um minuto. Suponha que outro usuário Baixe 7.000 arquivos ou que esteja conectado do Canadá, quando esse usuário deve estar em outro local. Ou pior, suponha que a conta de alguém tenha sido comprometida e um invasor esteja usando essa conta para acessar os aplicativos de nuvem e dados confidenciais da sua organização.
   
-Se você for um [administrador global ou administrador de segurança](permissions-in-the-security-and-compliance-center.md), os alertas de atividade notificam quando eventos, como estas ocorre. Em seguida, você pode tirar ações específicas, como suspendendo uma conta de usuário até que você possa investigar o que aconteceu.
+Se você for um [administrador global ou administrador de segurança](permissions-in-the-security-and-compliance-center.md), os alertas de atividade o notificarão quando eventos como esses ocorrerem. Você pode então tomar ações específicas, como suspender uma conta de usuário até que você possa investigar o que aconteceu.
   
 > [!NOTE]
-> Diretivas de segurança de aplicativo de nuvem do Office 365 são diferentes dos [políticas de segurança do Office 365 de alerta &amp; Centro de conformidade](alert-policies.md). A atividade políticas descritas neste artigo são definidas no portal de segurança de aplicativo de nuvem do Office 365 e poderá ajudá-lo gerenciar o ambiente de nuvem da sua organização. 
+> As políticas de segurança do aplicativo Cloud do Office 365 são diferentes das [políticas de alerta &amp; no centro de conformidade de segurança do Office 365](alert-policies.md). As políticas de atividade descritas neste artigo são definidas no portal do Office 365 Cloud app Security e podem ajudá-lo a gerenciar melhor o ambiente de nuvem da sua organização. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
 Verifique se:
   
-- Sua organização tem [Segurança de aplicativo de nuvem do Office 365](office-365-cas-overview.md)e o serviço está [ativado](turn-on-office-365-cas.md).
+- Sua organização tem o [Office 365 Cloud app Security](office-365-cas-overview.md)e o serviço está [ativado](turn-on-office-365-cas.md).
     
-- [Log de auditoria](turn-audit-log-search-on-or-off.md) está ativado para o seu ambiente do Office 365. 
+- O [registro em log de auditoria](turn-audit-log-search-on-or-off.md) está ativado para seu ambiente do Office 365. 
     
-- Você é um administrador global ou administrador de segurança para o Office 365.
+- Você é um administrador global ou administrador de segurança do Office 365.
     
 ## <a name="create-a-new-activity-policy"></a>Criar uma nova política de atividade
 
-1. Como administrador global ou administrador de segurança, vá para o portal de segurança de aplicativo de nuvem ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e entrar. <br>Isso leva você para a página de diretivas de segurança de aplicativo de nuvem do Office 365.<br>![Quando você vai para o portal de segurança de aplicativo de nuvem do Office 365, você iniciar com a página de políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. Como administrador global ou administrador de segurança, vá para o portal do Cloud app Security[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() e entre. <br>Isso leva você à página de políticas de segurança do aplicativo nuvem do Office 365.<br>![Ao acessar o portal do Office 365 Cloud app Security, comece com a página políticas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-2. Clique em **Criar política**e selecione **a política de atividade**.<br>![Quando você cria uma política no O365 CAS, você pode escolher entre as políticas de atividade e detecção de anomalias.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Clique em **criar política**e selecione **política de atividade**.<br>![Ao criar uma política no O365 CAS, você pode escolher entre políticas de atividade e políticas de detecção de anomalias.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-3. Na página **criar a política de atividade** , especifique o **nome da diretiva** e a **Descrição**. Para basear sua política em um modelo padrão, escolha uma opção na lista **modelo de política** ou criar sua própria política sem usar um modelo.<br>![Você pode criar políticas de atividade com segurança de aplicativo de nuvem do Office 365.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Na página **criar política de atividade** , especifique o **nome** e a **Descrição**da política. Para basear sua política em um modelo padrão, escolha uma na lista **modelo de política** ou crie sua própria política sem usar um modelo.<br>![Você pode criar políticas de atividade com o Office 365 Cloud app Security.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-4. Escolha a **gravidade da política** (baixa, média ou alta) que mede como sérios é a você se essa diretiva dispara um alerta. Isso ajudará você filtrar alertas quando você estiver revisá-las mais tarde. 
+4. Escolha uma **severidade de política** (baixa, média ou alta) que mede o grau de seriedade para você se essa política disparar um alerta. Isso ajudará você a filtrar alertas quando estiver examinando mais tarde. 
     
-5. Escolha uma **categoria** para esta diretiva. Isso ajudará você filtrar e classificar alertas que tiverem sido disparadas, ou quando você estiver revisá-las para fazer alterações de diretivas de grupo. 
+5. Escolha uma **categoria** para esta política. Isso ajudará você a filtrar e classificar alertas que foram disparados ou a políticas de grupo quando estiver revisando a fazer alterações. 
     
-6. Escolha **os filtros de atividade** para configurar outras ações ou métricas que acionarão um alerta com base nesta diretiva. 
+6. Escolha **filtros de atividade** para configurar outras ações ou métricas que irão disparar um alerta baseado nessa política. 
     
-7. Em **atividade correspondem a parâmetros**, especifique se uma violação de política será acionada quando os filtros corresponde a uma única atividade, ou se um número especificado de atividades repetidas for necessária antes do alerta dispara.<br>Se você selecionar **repetida atividade**, especifique o número de atividades, o intervalo de tempo, e se uma violação contará para um usuário em um aplicativo específico ou para o mesmo usuário com qualquer aplicativo.
+7. Em **parâmetros de correspondência de atividade**, especifique se uma violação de política será disparada quando uma única atividade corresponder aos filtros ou se um número especificado de atividades repetidas for necessário antes de os gatilhos de alerta.<br>Se você selecionar **atividade repetida**, especifique o número de atividades, o período de tempo e se uma violação será contabilizada para um usuário dentro de um aplicativo específico ou para o mesmo usuário com qualquer aplicativo.
     
-8. Opcionalmente, você pode selecionar **criar alerta** para criar alertas adicionais para receber notificações dessa diretiva (via email, mensagem de texto ou ambos).<br>**Certificar-se de que o seu provedor de email não bloqueie emails enviados a partir `no-reply@cloudappsecurity.com` **. 
+8. Opcionalmente, você pode selecionar **criar alerta** para criar alertas adicionais para receber notificações dessa política (por email, mensagem de texto ou ambos).<br>**Certifique-se de que seu provedor de email não bloqueie `no-reply@cloudappsecurity.com`emails enviados **. 
   
-9. Escolha as **ações** que devem ser tomadas quando um alerta é acionado para suspender o usuário ou exigem que o usuário entrar novamente para aplicativos do Office 365. 
+9. Escolha as **ações** que devem ser executadas quando um alerta é disparado para suspender o usuário ou solicitar que o usuário entre novamente nos aplicativos do Office 365. 
     
-10. Escolha **criar** para concluir a criação de sua política. 
+10. Escolha **criar** para concluir a criação da política. 
     
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Políticas de detecção de anomalia](anomaly-detection-policies-in-ocas.md)
+- [Políticas de detecção de anomalias](anomaly-detection-policies-in-ocas.md)
     
 - [Integrar seu servidor SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Revise e agir em alertas](review-office-365-cas-alerts.md)
+- [ReVisar e executar ação em alertas](review-office-365-cas-alerts.md)
     
-- [Seus endereços IP para simplificar o gerenciamento de grupo](group-your-ip-addresses-in-ocas.md)
+- [Agrupar seus endereços IP para simplificar o gerenciamento](group-your-ip-addresses-in-ocas.md)
     
 

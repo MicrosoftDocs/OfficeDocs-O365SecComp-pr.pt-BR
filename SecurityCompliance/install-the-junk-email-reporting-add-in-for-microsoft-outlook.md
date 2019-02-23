@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
-description: Nesta articleSupported LanguagesInstall o lixo Email relatórios Add-inUninstall as informações de adicionar relatório de lixo eletrônico mais informações
-ms.openlocfilehash: 4204c80f298a0756f8e2fde2d0845d07570eaff9
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Neste articleSupported LanguagesInstall o relatório de lixo eletrônico adicionar-desIntalar o suplemento de relatório de lixo eletrônico-inFor mais informações
+ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272316"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217021"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar o Suplemento Relatório de Lixo Eletrônico para o Microsoft Outlook
   

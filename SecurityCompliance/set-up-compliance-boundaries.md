@@ -5,212 +5,212 @@ author: markjjo
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Use os limites de conformidade para criar limites lógicos dentro de uma organização do Office 365 que controlam os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Limites de conformidade usam permissões de pesquisa filtragem (também chamado de conformidade segurança filtros) para controlar quais caixas de correio, os sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
+ms.openlocfilehash: ce7c00130312abab4d4d91fcf04590c109741f26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29768012"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218161"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
 
-Limites de conformidade criar limites lógicos dentro de uma organização do Office 365 que controlam os locais de conteúdo usuário (por exemplo, caixas de correio, sites do SharePoint e contas do OneDrive) que os gerentes de descoberta eletrônica podem pesquisar. Além disso, conformidade limites controlar quem pode acessar os casos de eDiscovery usados para gerenciar o legais, recursos humanos ou outras investigações dentro da sua organização. A necessidade de limites de conformidade geralmente é necessária para várias Nações corporações que precisam respeitar hóspedes geográficas e regulamentações e para os governos, que são geralmente divididos em órgãos diferentes. No Office 365, ajuda de limites de conformidade, você atende a esses requisitos ao executar conteúdo pesquisas e gerenciando investigações com casos de eDiscovery.
+Os limites de conformidade criam limites lógicos em uma organização do Office 365 que controlam os locais de conteúdo do usuário (como caixas de correio, sites do SharePoint e contas do OneDrive) que os gerentes de descoberta eletrônica podem pesquisar. Além disso, os limites de conformidade controlam quem pode acessar os casos de descoberta eletrônica usados para gerenciar os recursos jurídicos, humanos ou outras investigações em sua organização. A necessidade de limites de conformidade é geralmente necessária para as corporações de várias nações que precisam respeitar as normas e as regulamentações geográficas, e para governos, que geralmente são divididas em diferentes agências. No Office 365, os limites de conformidade o ajudam a atender a esses requisitos ao executar pesquisas de conteúdo e gerenciar investigações com ocorrências de descoberta eletrônica.
   
-Usaremos o exemplo na ilustração a seguir para explicam como funcionam os limites de conformidade.
+Usaremos o exemplo na ilustração a seguir para explicar como os limites de conformidade funcionam.
   
-![Limites de conformidade consistem de filtros de permissões de pesquisa que os grupos de controlar o acesso às agências e a função de administrador que controlam o acesso aos casos de eDisocovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Os limites de conformidade consistem em filtros de permissão de pesquisa que controlam o acesso a agências e grupos de funções de administrador que controlam o acesso a casos do eDisocovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-Neste exemplo, a Contoso LTD é uma organização do Office 365 que consiste em duas subsidiárias, Fourth Coffee e Vinícola Coho. A empresa exigir que os investigadores e gerentes de descoberta eletrônica somente podem pesquisar as caixas de correio do Exchange, contas de OneDrive e sites do SharePoint em seu agência. Além disso, os gerentes de descoberta eletrônica e investigadores só podem ver os casos de eDiscovery no em seu agência, e eles podem acessar apenas os casos que eles estão um membro de. Aqui está como limites de conformidade atendem a esses requisitos.
+Neste exemplo, a contoso LTD é uma organização do Office 365 que consiste em duas subsidiárias, Fourth Coffee e Coho Winery. A empresa exige que os gerentes e investigadores de eDiscovery só possam Pesquisar nas caixas de correio do Exchange, contas do OneDrive e sites do SharePoint em sua agência. Além disso, os gerentes e investigadores de descoberta eletrônica só podem ver ocorrências de descoberta eletrônica no seu órgão, e eles só podem acessar os casos dos quais eles são membros. Veja aqui como os limites de conformidade atendem a esses requisitos.
   
-- As permissões de pesquisa funcionalidade em controles de conteúdo de pesquisa de filtragem os locais de conteúdo que investigadores e gerentes de descoberta eletrônica podem pesquisar. Isso significa que os gerentes de descoberta eletrônica e investigadores na agência Fourth Coffee somente podem pesquisar locais de conteúdo das subsidiárias Fourth Coffee. A mesma restrição se aplica a subsidiária Vinícola Coho.
+- A funcionalidade de filtragem de permissões de pesquisa na pesquisa de conteúdo controla os locais de conteúdo que os gerentes de descoberta eletrônica e os investigadores podem pesquisar. Isso significa que os gerentes de descoberta eletrônica e os investigadores no quarto café podem pesquisar apenas os locais de conteúdo na quarta subsidiária. A mesma restrição se aplica à subsidiária Coho Winery.
     
-    Grupos de função controlar quem pode ver os casos de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade. Isso significa que investigadores e gerentes de descoberta eletrônica só podem ver os casos de eDiscovery em seu agência.
+    Grupos de função controle quem pode ver os casos de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365. Isso significa que os gerentes e investigadores de descoberta eletrônica só podem ver os casos de descoberta eletrônica em suas agências.
     
-- Grupos de função também controlam quem pode atribuir membros a um caso de eDiscovery. Isso significa que investigadores e gerentes de descoberta eletrônica só podem atribuir membros a casos que eles próprios serão um membro do.
+- Os grupos de função também controlam quem pode atribuir membros a uma ocorrência de descoberta eletrônica. Isso significa que os gerentes de descoberta eletrônica e os investigadores só podem atribuir membros a casos nos quais eles eles mesmos são membros.
     
-Aqui está o processo para configurar limites de conformidade:
+Este é o processo de configuração dos limites de conformidade:
   
-[Etapa 1: Identificar um atributo de usuário para definir suas agências](#step-1-identify-a-user-attribute-to-define-your-agencies)
+[Etapa 1: identificar um atributo de usuário para definir suas agências](#step-1-identify-a-user-attribute-to-define-your-agencies)
 
-[Etapa 2: Uma solicitação com o Microsoft Support para sincronizar o atributo do usuário às contas de OneDrive do arquivo](#step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts)
+[Etapa 2: arquivar uma solicitação com o suporte da Microsoft para sincronizar o atributo de usuário com as contas do OneDrive](#step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts)
 
-[Etapa 3: Criar um grupo de funções para cada agência](#step-3-create-a-role-group-for-each-agency)
+[Etapa 3: criar um grupo de função para cada agência](#step-3-create-a-role-group-for-each-agency)
 
-[Etapa 4: Criar um filtro de permissões de pesquisa para impor o limite de conformidade](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+[Etapa 4: criar um filtro de permissões de pesquisa para reforçar o limite de conformidade](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
-[Etapa 5: Criar um caso de eDiscovery para investigações uma agência da UE](#step-5-create-an-ediscovery-case-for-an-intra-agency-investigations)
+[Etapa 5: criar um caso de descoberta eletrônica para investigações dentro da Agência](#step-5-create-an-ediscovery-case-for-an-intra-agency-investigations)
   
-## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Etapa 1: Identificar um atributo de usuário para definir suas agências
+## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Etapa 1: identificar um atributo de usuário para definir suas agências
 
-A primeira etapa é escolher um atributo do Active Directory do Azure para usá-la definirá seus agências. Este atributo será ser usado para criar o filtro de permissões de pesquisa que limita o eDiscovery manager para pesquisar apenas os locais de conteúdo de usuários que estão atribuídos a um valor específico para esse atributo. Por exemplo, digamos que Contoso decida utilizar o atributo do **departamento** . O valor para este atributo para os usuários na subsidiária de Fourth Coffee seria `FourthCoffee` e o valor para os usuários na subsidiária da Coho Winery seria `CohoWinery`. Na etapa 4, você usará esse `attribute:value` par (por exemplo, o *Departamento: FourthCoffee* ) para limitar o usuário que os gerentes de descoberta eletrônica podem pesquisar locais de conteúdo. 
+A primeira etapa é escolher um atributo do Azure Active Directory para usar que irá definir suas agências. Este atributo será usado para criar o filtro permissões de pesquisa que limita um gerente de descoberta eletrônica para pesquisar apenas os locais de conteúdo de usuários aos quais foram atribuídos um valor específico para este atributo. Por exemplo, digamos que a contoso decida usar o atributo **Department** . O valor desse atributo para os usuários na quarta subsidiária da Fourth Coffee seria `FourthCoffee` e o valor para os usuários da vinícola Coho-subsidiária seria. `CohoWinery` Na etapa 4, você usará esse `attribute:value` par (por exemplo, *Department: fourthcoffee* ) para limitar os locais de conteúdo do usuário que os gerentes de descoberta eletrônica podem pesquisar. 
   
-Aqui está uma lista de atributos de usuário do Windows Azure Active Directory que você pode usar os limites de conformidade de:
+Veja a seguir uma lista de atributos de usuário do Azure Active Directory que você pode usar para limites de conformidade:
   
 - Empresa
     
-- CustomAttribute1 - CustomAttribute15
+- CustomAttribute1-CustomAttribute15
     
 - Departamento
     
 - Escritório
     
-Embora mais atributos de usuário estão disponíveis, especialmente para caixas de correio do Exchange, os atributos listados acima são os únicos suportados atualmente pelo OneDrive.
+Embora mais atributos de usuário estejam disponíveis, particularmente para caixas de correio do Exchange, os atributos listados acima são os únicos com suporte no OneDrive.
   
-## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Etapa 2: Uma solicitação com o Microsoft Support para sincronizar o atributo do usuário às contas de OneDrive do arquivo
+## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Etapa 2: arquivar uma solicitação com o suporte da Microsoft para sincronizar o atributo de usuário com as contas do OneDrive
 
-A próxima etapa é uma solicitação ao Microsoft Support para sincronizar o atributo do Azure Active Directory que você escolheu na etapa 1 para todas as contas de OneDrive na sua organização. Depois que essa sincronização ocorre, o atributo (e seu valor) que você escolheu na etapa 1 será mapeada para uma propriedade gerenciada oculta no SharePoint denominado `ComplianceAttribute`. Você usará esse atributo para criar o filtro de permissões de pesquisa onedrive na etapa 4.
+A próxima etapa é arquivar uma solicitação com o suporte da Microsoft para sincronizar o atributo do Azure Active Directory que você escolheu na etapa 1 para todas as contas do OneDrive em sua organização. Após essa sincronização ocorrer, o atributo (e seu valor) que você escolheu na etapa 1 será mapeado para uma propriedade gerenciada oculta no SharePoint nomeada `ComplianceAttribute`. Você usará esse atributo para criar o filtro de permissões de pesquisa para o OneDrive na etapa 4.
   
-Quando você envia a solicitação para o suporte da Microsoft, inclua as seguintes informações:
+Inclua as seguintes informações ao enviar a solicitação para o suporte da Microsoft:
   
 - O nome de domínio padrão da sua organização do Office 365
     
-- O nome do atributo do Active Directory do Windows Azure (da etapa 1)
+- O nome do atributo do Azure Active Directory (da etapa 1)
     
-- O título ou a descrição do objetivo da solicitação de suporte a seguir: "Habilitar OneDrive para Business sincronização com o Azure Active Directory para conformidade filtros de segurança". Isso ajudará a rotear a solicitação para a equipe de engenharia de descoberta eletrônica de Office 365 que implementará a solicitação.
+- O seguinte título ou descrição da finalidade da solicitação de suporte: "habilitar a sincronização do OneDrive for Business com o Azure Active Directory para filtros de segurança de conformidade". Isso ajudará a encaminhar a solicitação para a equipe de engenharia de descoberta eletrônica do Office 365 que implementará a solicitação.
     
-Após a alteração de engenharia é feita e o atributo é sincronizado com o OneDrive, o Microsoft Support o enviará o número de compilação que a alteração ser feita no e uma data de implantação estimado. Observe que, em geral, o processo de implantação leva de 4 a 6 semanas após enviar a solicitação de suporte.
+Após a alteração da engenharia ser feita e o atributo ser sincronizado com o OneDrive, o suporte da Microsoft lhe enviará o número de compilação que a alteração foi feita e uma data de implantação estimada. Observe que o processo de implantação geralmente leva 4-6 semanas após o envio da solicitação de suporte.
   
- **Importante:** Você pode concluir a etapa 3, a etapa 5 antes que a alteração seja implantada. Mas executar pesquisas de conteúdo não devolvem documentos de sites de OneDrive especificados no filtro de permissões de pesquisa até depois que a alteração seja implantada. 
+ **Importante:** Você pode concluir a etapa 3 à etapa 5 antes de a alteração ser implantada. Mas a execução de pesquisas de conteúdo não retornará documentos de sites do OneDrive especificados no filtro permissões de pesquisa até que a alteração seja implantada. 
   
-## <a name="step-3-create-a-role-group-for-each-agency"></a>Etapa 3: Criar um grupo de funções para cada agência
+## <a name="step-3-create-a-role-group-for-each-agency"></a>Etapa 3: criar um grupo de função para cada agência
 
-A próxima etapa é criar os grupos de função no Office 365 Security &amp; Centro de conformidade que irá se alinhem à suas agências. Recomendamos que você crie um novo grupo de função copiando o grupo gerentes de descoberta eletrônica internas, adicionando os membros apropriados e Removendo funções que podem não ser aplicáveis às suas necessidades. Para obter mais informações sobre funções de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade](assign-ediscovery-permissions.md).
+A próxima etapa é criar os grupos de função no centro de conformidade de &amp; segurança do Office 365 que serão alinhados com suas agências. Recomendamos que você crie um novo grupo de função, copiando o grupo de gerenciadores de descoberta eletrônica interno, adicionando os membros apropriados e removendo funções que podem não se aplicar às suas necessidades. Para obter mais informações sobre funções relacionadas à descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no &amp; centro de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
   
-Para criar os grupos de função, vá para a página de **permissões** na segurança &amp; Centro de conformidade e criar um grupo de funções para cada equipe em cada agência que usarão os limites de conformidade e casos de eDiscovery para gerenciar investigações. 
+Para criar os grupos de função, acesse a página de **permissões** no &amp; centro de conformidade de segurança e crie um grupo de função para cada equipe em cada agência que usará limites de conformidade e ocorrências de descoberta eletrônica para gerenciar investigações. 
   
-Usando o cenário de limites de conformidade Contoso, quatro grupos de função precisam ser criadas e os membros apropriados adicionados a cada um deles.
+Usando o cenário de limites de conformidade da Contoso, quatro grupos de função precisam ser criados e os membros apropriados são adicionados a cada um.
   
-- Gerentes de Fourth Coffee eDiscovery
+- Gerentes de descoberta eletrônica da Fourth Coffee
     
-- Quarto investigadores Coffee
+- Investigadores da Fourth Coffee
     
-- Coho Winery eDiscovery gerentes
+- Gerentes de descoberta eletrônica Coho
     
-- Coho Winery investigadores
+- Investigadores da vinícola Coho
     
 
   
-## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Etapa 4: Criar um filtro de permissões de pesquisa para impor o limite de conformidade
+## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Etapa 4: criar um filtro de permissões de pesquisa para reforçar o limite de conformidade
 <a name="step4"> </a>
 
-Depois que você criou a grupos de funções para cada agência, a próxima etapa é criar os filtros de permissões de pesquisa que associar cada grupo de funções ao seu agência específica e define o limite de conformidade em si. Você precisa criar um filtro de permissões de pesquisa para cada agência. Para obter mais informações sobre como criar filtros de permissões de segurança, consulte [Configure permissions filtragem para a pesquisa de conteúdo](permissions-filtering-for-content-search.md).
+Depois de criar grupos de função para cada agência, a próxima etapa é criar os filtros de permissão de pesquisa que associam cada grupo de função a sua agência específica e definem o limite de conformidade propriamente dito. Você precisa criar um filtro de permissões de pesquisa para cada agência. Para obter mais informações sobre como criar filtros de permissões de segurança, consulte [Configure Permissions Filtering for Content Search](permissions-filtering-for-content-search.md).
   
-Aqui está a sintaxe usada para criar um filtro de permissões de pesquisa usado para os limites de conformidade.
+Veja a sintaxe usada para criar um filtro de permissões de pesquisa usado para limites de conformidade.
 
 ```
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq <AttributeValue>' -or Site_Path -like <SharePointURL> *'" -Action <Action >
 ```
   
-Aqui está uma descrição de cada parâmetro no comando:
+Veja a seguir uma descrição de cada parâmetro no comando:
   
--  `FilterName`-Especifica o nome do filtro. Use um nome que descreve ou identifica a agência que filtram será usado no. 
+-  `FilterName`-Especifica o nome do filtro. Use um nome que descreva ou identifique a Agência em que o filtro será usado. 
     
--  `Users`-Especifica os usuários ou grupos que obtém esse filtro aplicado para as ações de pesquisa de conteúdo que eles executam. Limites de conformidade deste parâmetro especifica os grupos de função (que você criou na etapa 3) na agência que você está criando o filtro para. Observe que este é um parâmetro de valor múltiplos, para que você possa incluir um ou mais grupos de função, separados por vírgulas. 
+-  `Users`-Especifica os usuários ou grupos que obtêm esse filtro aplicado às ações de pesquisa de conteúdo que eles executam. Para limites de conformidade, esse parâmetro especifica os grupos de função (que você criou na etapa 3) na agência para a qual você está criando o filtro. Observação Este é um parâmetro de vários valores para que você possa incluir um ou mais grupos de função, separados por vírgulas. 
     
--  `Filters`-Especifica os critérios de pesquisa para o filtro. Para os limites de conformidade, você irá definir os seguintes filtros. Cada um deles se aplica a um local de conteúdo do usuário. 
+-  `Filters`-Especifica os critérios de pesquisa para o filtro. Para os limites de conformidade, você irá definir os filtros a seguir. Cada uma se aplica a um local de conteúdo do usuário. 
     
-  -  `Mailbox`-Especifica as caixas de correio que os grupos de função definidos no `Users` parâmetro pode pesquisar. Limites de conformidade, *ComplianceAttribute* é o mesmo atributo que você identificou na etapa 1 e *valor de atributo* Especifica a agência. Esse filtro permite que os membros do grupo de função para pesquisar somente as caixas de correio em uma agência específica; Por exemplo, `"Mailbox_Department -eq 'FourthCoffee'"` . 
+  -  `Mailbox`-Especifica as caixas de correio que os grupos de função definidos `Users` no parâmetro podem pesquisar. Para limites de conformidade ** , complianceattribute é o mesmo atributo identificado na etapa 1 e *AttributeValue* especifica a agência. Este filtro permite que os membros do grupo de função pesquisem apenas as caixas de correio em uma agência específica; por exemplo, `"Mailbox_Department -eq 'FourthCoffee'"` . 
     
-  -  `Site`-Especifica as contas de OneDrive que os grupos de função definidos no `Users` parâmetro pode pesquisar. Para o filtro de OneDrive, use a cadeia de caracteres real `ComplianceAttribute`; Isso irá mapear para o mesmo atributo que você identificou na etapa 1 e que é sincronizado com o OneDrive contas como resultado da solicitação de suporte que você enviados na etapa 2;  *Valor de atributo* Especifica a agência. Esse filtro permite que os membros do grupo de função para pesquisar somente as contas de OneDrive em uma agência específica; Por exemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+  -  `Site`-Especifica as contas do OneDrive que os grupos de função definidos `Users` no parâmetro podem pesquisar. Para o filtro do OneDrive, use a cadeia `ComplianceAttribute`de caracteres real; Isso será mapeado para o mesmo atributo que você identificou na etapa 1 e que é sincronizado com as contas do OneDrive como resultado da solicitação de suporte que você enviou na etapa 2;  *AttributeValue* especifica a agência. Este filtro permite que os membros do grupo de função pesquisem apenas as contas do OneDrive em uma agência específica; por exemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`-Especifica os sites do SharePoint que os grupos de função definidos no `Users` parâmetro pode pesquisar. O *SharePointURL* Especifica os sites em agência que membros do grupo de função podem pesquisar; Por exemplo,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-Especifica os sites do SharePoint que os grupos de função definidos `Users` no parâmetro podem pesquisar. O *SharePointURL* especifica os sites na agência que os membros do grupo de funções podem pesquisar; por exemplo,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
--  `Action`-Especifica o tipo de ação de pesquisa de conformidade que o filtro é aplicado à. Por exemplo, `-Action Search` se aplica apenas ao filtro quando membros dos grupos de função definidos no `Users` parâmetro executa uma pesquisa de conteúdo. Nesse caso, o filtro não seria ser aplicado ao exportar os resultados da pesquisa. Limites de conformidade, use `-Action All` para o filtro se aplica a todas as ações de pesquisa. 
+-  `Action`-Especifica o tipo de ação de pesquisa de conformidade à qual o filtro é aplicado. Por exemplo, `-Action Search` só aplicaria o filtro quando os membros dos grupos de função definidos no `Users` parâmetro executarem uma pesquisa de conteúdo. Nesse caso, o filtro não será aplicado durante a exportação dos resultados da pesquisa. Para limites de conformidade, `-Action All` use para que o filtro se aplique a todas as ações de pesquisa. 
     
-    Para obter uma lista das ações a pesquisa de conteúdo, consulte a seção "New-ComplianceSecurityFilter" em [Configure permissions filtragem para a pesquisa de conteúdo](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+    Para obter uma lista das ações de pesquisa de conteúdo, consulte a seção "New-ComplianceSecurityFilter" em [Configure Permissions Filtering for Content Search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
     
-Estes são exemplos dos filtros de duas pesquisa permissões que pode ser criados para suportar o cenário de limites de conformidade de Contoso.
+Aqui estão exemplos dos dois filtros de permissões de pesquisa que seriam criados para dar suporte ao cenário de limites de conformidade da contoso.
   
- **A Fourth Coffee**
+ **Fourth Coffee**
 
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
    
- **Vinícola Coho**
+ **Coho Winery**
 
 ```
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
-## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Etapa 5: Criar um caso de eDiscovery para investigações uma agência da UE
+## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Etapa 5: criar um caso de descoberta eletrônica para investigações dentro da Agência
 
-A etapa final é criar um novo caso de descoberta eletrônica na segurança &amp; Centro de conformidade e, em seguida, adicione o grupo de função — que você criou na etapa 3 — como membro do caso. Isso resulta em duas características importantes do uso de limites de conformidade:
+A etapa final é criar uma nova ocorrência de descoberta eletrônica no centro &amp; de conformidade de segurança e, em seguida, adicionar o grupo de função, que você criou na etapa 3, como membro do caso. Isso resulta em duas características importantes de usar limites de conformidade:
   
-- Somente membros do grupo de função adicionado ao caso poderão ver e acessar o caso na segurança &amp; Centro de conformidade. Por exemplo, se o grupo de funções investigadores de Fourth Coffee é o único membro de um caso, em seguida, os membros do grupo de função de gerentes de descoberta eletrônica Fourth Coffee (ou membros de qualquer outro grupo de função) não conseguirá ver ou acessar o caso.
+- Somente os membros do grupo de função adicionado ao caso poderão ver e acessar o caso no centro de conformidade de segurança &amp; . Por exemplo, se o grupo de funções da Fourth Coffee Investigations for o único membro de um caso, os membros do grupo de função gerentes de descoberta eletrônica da Fourth Coffee (ou membros de qualquer outro grupo de função) não poderão ver ou acessar o caso.
     
-- Quando um membro do grupo de funções atribuído a um caso executa uma pesquisa associada com o caso, eles somente poderão pesquisar os conteúdo locais dentro de sua agência (que é definida pelo filtro de permissões de pesquisa que você criou na etapa 4.)
+- Quando um membro do grupo de função atribuído a uma ocorrência executar uma pesquisa associada ao caso, eles só poderão pesquisar os locais de conteúdo dentro da agência (que é definido pelo filtro de permissões de pesquisa que você criou na etapa 4.)
 
 
-Para criar um novo caso e atribuir membros:
+Para criar um novo caso e atribuir Membros:
     
-1. Vá para a página de **Descoberta eletrônica** na segurança &amp; Centro de conformidade e criar um novo caso. 
+1. Vá para a página de **descoberta eletrônica** no &amp; centro de conformidade de segurança e crie um novo caso. 
     
-2. Na lista de casos de eDiscovery, clique no nome do caso que você acabou de criar.
+2. Na lista de ocorrências de descoberta eletrônica, clique no nome do caso que você acabou de criar.
     
-3. Na página **Gerenciar neste caso** submenu, em **grupos de função de gerenciar**, clique em ![ícone Adicionar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
+3. Na página **gerenciar esse** submenu de caso, **em grupos de função**de gerenciamento ![, clique](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) em Adicionar ícone **Adicionar**.
     
-    ![Adicionar um grupo de funções como um membro de um caso de eDiscovery](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![Adicionar um grupo de função como membro de uma ocorrência de descoberta eletrônica](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
-4. Na lista de grupos de função, selecione um dos grupos da função que você criou na etapa 3 e clique em **Adicionar**.
+4. Na lista de grupos de função, selecione um dos grupos de função que você criou na etapa 3 e clique em **Adicionar**.
     
-5. Clique em **Salvar** no submenu a **Gerenciar neste caso** para salvar a alteração. 
+5. Clique em **salvar** no submenu **gerenciar este caso** para salvar a alteração. 
 
 ## <a name="compliance-boundary-limitations"></a>Limitações de limite de conformidade
 
-Lembre-se as seguintes limitações ao gerenciar casos do eDiscovery e investigações que usam dos limites de conformidade.
+Tenha em mente as seguintes limitações ao gerenciar casos de descoberta eletrônica e investigações que usam limites de conformidade.
   
-- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar os locais de conteúdo que estão fora da sua agência. No entanto, devido ao filtro de permissões de pesquisa, o conteúdo a partir desses locais não será incluído nos resultados da pesquisa.
+- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar locais de conteúdo fora da sua agência. No enTanto, por causa do filtro de permissões de pesquisa, o conteúdo desses locais não será incluído nos resultados da pesquisa.
     
-- Limites de conformidade não se aplicam ao isenções em casos de eDiscovery. Isso significa que um gerente de descoberta eletrônica em uma agência pode colocar um usuário em uma agência diferente em espera. No entanto, o limite de conformidade será imposto se o gerente de descoberta eletrônica pesquisará os locais de conteúdo do usuário que foi colocada em espera. Isso significa que o gerente de descoberta eletrônica não ser capaz de pesquisa locais de conteúdo do usuário, mesmo que eles conseguiram colocar o usuário em espera.
+- Os limites de conformidade não se aplicam a isenções em casos de descoberta eletrônica. Isso significa que um gerente de descoberta eletrônica em uma agência pode colocar um usuário em uma agência diferente em espera. No enTanto, o limite de conformidade será imposto se o Gerenciador de descoberta eletrônica Pesquisar nos locais de conteúdo do usuário que foi colocado em espera. Isso significa que o Gerenciador de descoberta eletrônica não poderá pesquisar os locais de conteúdo do usuário, mesmo que eles possam colocar o usuário em espera.
     
-    Além disso, espera estatísticas serão aplicadas somente ao conteúdo locais no agência.
+    Além disso, as estatísticas de retenção só serão aplicadas aos locais de conteúdo na agência.
     
-- Filtros de permissões de pesquisa não são aplicados para pastas públicas do Exchange.
+- Os filtros de permissão de pesquisa não são aplicados às pastas públicas do Exchange.
 
-## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Pesquisando e exportação de conteúdo em ambientes de Multi-Geo
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Pesquisando e exportando conteúdo em ambientes multiGeográfico
 
-Filtros de permissões de pesquisa também permitem que você controle a que o conteúdo é roteado para a exportação e qual datacenter pode ser pesquisada durante a pesquisa de contas do OneDrive e sites do SharePoint em um [ambiente do SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840):
+Os filtros de permissões de pesquisa também permitem que você controle onde o conteúdo é encaminhado para exportação e qual datacenter pode ser pesquisado ao pesquisar sites do SharePoint e contas do OneDrive em um [ambiente multigeográfico do SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
   
-- Exporte resultados da pesquisa de um data center específico. Isso significa que você pode especificar o que local do centro os dados serão exportados resultados da pesquisa.
+- Exportar resultados de pesquisa de um Data Center específico. Isso significa que você pode especificar o local do data center de onde os resultados da pesquisa serão exportados.
     
-- Pesquisas de rota de sites do SharePoint e contas de OneDrive para um data center de satélite. Isso significa que você pode especificar o local do data center em que as pesquisas serão executadas.
+- Direcionar pesquisas de sites do SharePoint e contas do OneDrive para um data center de satélite. Isso significa que você pode especificar o local do data center onde as pesquisas serão executadas.
     
-Use o parâmetro **Region** para os cmdlets **New-ComplianceSecurityFilter** ou **Set-ComplianceSecurityFilter** para criar ou alterar o qual a exportação será roteada através de datacenter.
+Use o parâmetro **Region** para os cmdlets **New-ComplianceSecurityFilter** ou **set-ComplianceSecurityFilter** para criar ou alterar o datacenter ao qual a exportação será roteada.
   
-|**Valor do parâmetro**|**Localização do data center**|
+|**Valor do parâmetro**|**Local do Data Center**|
 |:-----|:-----|
-|NAM  <br/> |América do Norte (dados reais centers estão nos EUA)  <br/> |
+|NAM  <br/> |América do Norte (os data centers reais estão nos EUA)  <br/> |
 |EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Ásia Pacífico  <br/> |
+|APC  <br/> |Ásia (Pacífico)  <br/> |
 |CAN <br/> |Canadá
    
-Da mesma forma, você pode usar os seguintes valores para os valores de parâmetro de **região** para controlar qual data center que as pesquisas de conteúdo será executado durante a pesquisa locais do SharePoint e OneDrive. Observe que a tabela a seguir também mostra qual exportações serão roteadas através do Centro de dados. 
+Da mesma forma, você pode usar os valores a seguir para os valores de parâmetros de **região** para controlar em quais data centers as pesquisas de conteúdo serão executadas ao pesquisar o SharePoint e os locais do onedrive. Observe que a tabela a seguir também mostra quais exportações de data centers serão roteadas. 
   
-|**Valor do parâmetro**|**Locais de roteamento para exportação de data center**|
+|**Valor do parâmetro**|**Locais de roteamento do Data Center para exportação**|
 |:-----|:-----|
 |NAM  <br/> |EUA  <br/> |
 |EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Ásia Pacífico  <br/> |
+|APC  <br/> |Ásia (Pacífico)  <br/> |
 |CAN  <br/> |EUA  <br/> |
-|AUS  <br/> |Ásia Pacífico  <br/> |
-|KOR  <br/> |Centro de dados padrão da organização  <br/> |
+|AUS  <br/> |Ásia (Pacífico)  <br/> |
+|KOR  <br/> |O Data Center padrão da organização  <br/> |
 |GBR  <br/> |Europa  <br/> |
-|JPN  <br/> |Ásia Pacífico  <br/> |
-|IND  <br/> |Ásia Pacífico  <br/> |
+|JPN  <br/> |Ásia (Pacífico)  <br/> |
+|IND  <br/> |Ásia (Pacífico)  <br/> |
 |LAM  <br/> |EUA  <br/> |
    
- **Observação:** Se você não especificar o parâmetro Region para um filtro de permissões de pesquisa, a região de SharePoint organizações padrão devem ser pesquisada, então os resultados da pesquisa são exportados para o Centro de dados mais próximo. 
+ **Observação:** Se você não especificar o parâmetro Region para um filtro de permissões de pesquisa, a região padrão do SharePoint da organização será pesquisada e os resultados da pesquisa serão exportados para o Data Center mais próximo. 
   
-Estes são exemplos de como usar o **-região** parâmetro ao criar filtros de permissão de pesquisa para os limites de conformidade. Isso pressupõe que o subsidiária de Fourth Coffee está localizada na América do Norte e que a Vinícola Coho está na Europa. 
+Aqui estão exemplos de como usar o parâmetro **-Region** ao criar filtros de permissão de pesquisa para limites de conformidade. Isso pressupõe que a quarta subsidiária de café está localizada na América do Norte e que a Coho Winery está na Europa. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
@@ -220,17 +220,17 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-Mantenha as seguintes coisas em mente ao pesquisar e exportação de conteúdo em ambientes de multi-geo.
+Tenha em mente as seguintes coisas ao pesquisar e exportar conteúdo em ambientes multigeográfico.
   
-- O parâmetro **Region** não controlar pesquisas de caixas de correio do Exchange; todos os centros de dados devem ser pesquisados quando você pesquisa de caixas de correio. Para limitar o escopo do qual Exchange caixas de correio podem ser pesquisadas, use o parâmetro de **filtros** ao criar ou alterar um filtro de permissões de pesquisa. 
+- O parâmetro **Region** não controla pesquisas de caixas de correio do Exchange; todos os data centers serão pesquisados quando você Pesquisar caixas de correio. Para limitar o escopo do qual as caixas de correio do Exchange podem ser pesquisadas, use o parâmetro **Filters** ao criar ou alterar um filtro de permissões de pesquisa. 
     
-- Se for necessário para um gerente para pesquisar em várias regiões SharePoint eDiscovery, você precisará criar uma conta de usuário diferente para que o eDiscovery manager que pode ser usado no filtro de permissões de pesquisa para especificar a região alternativa onde o Sites do SharePoint ou as contas do OneDrive estão localizadas.
+- Se for necessário que um gerente de descoberta eletrônica pesquise em várias regiões do SharePoint, você precisará criar uma conta de usuário diferente para o Gerenciador de descoberta eletrônica que pode ser usado no filtro permissões de pesquisa para especificar a região alternativa onde o Os sites do SharePoint ou as contas do OneDrive estão localizados.
     
-- Durante a pesquisa de conteúdo no SharePoint e OneDrive, o parâmetro **Region** direciona pesquisas para qualquer um dos principal ou satélite local onde o gerente de descoberta eletrônica conduzirá investigações de descoberta eletrônica. Se um gerente de descoberta eletrônica pesquisar sites SharePoint e OneDrive fora da região que é especificado no filtro de permissões de pesquisa, nenhum resultado de pesquisa será retornado. 
+- Ao pesquisar conteúdo no SharePoint e no OneDrive, o parâmetro **Region** direciona as pesquisas para o local principal ou de satélite onde o gerente de descoberta eletrônica conduzirá investigações de descoberta eletrônica. Se um gerente de descoberta eletrônica pesquisa sites do SharePoint e do OneDrive fora da região especificada no filtro permissões de pesquisa, nenhum resultado de pesquisa será retornado. 
     
-- Ao exportar os resultados da pesquisa, conteúdo de todos os locais de conteúdo (incluindo o Exchange, Skype onedrive de negócios, SharePoint e outros serviços do Office 365 que você pode pesquisar usando a ferramenta de pesquisa de conteúdo) será carregado para o local de armazenamento do Azure na Centro de dados que é especificado pelo parâmetro **região** . Isso ajuda as organizações a ficar dentro conformidade não permitindo que o conteúdo a ser exportado entre as fronteiras controladas. Se nenhuma região é especificado no filtro de permissões de pesquisa, o conteúdo é carregado a região de padrão da organização. 
+- Ao exportar os resultados da pesquisa, o conteúdo de todos os locais de conteúdo (incluindo o Exchange, o Skype for Business, o SharePoint, o OneDrive e outros serviços do Office 365 que você pode pesquisar usando a ferramenta de pesquisa de conteúdo) será carregado para o local de armazenamento do Azure no Data Center especificado pelo parâmetro **Region** . Isso ajuda as organizações a ficar dentro da conformidade, não permitindo que o conteúdo seja exportado por bordas controladas. Se nenhuma região for especificada no filtro permissões de pesquisa, o conteúdo será carregado para a região padrão da organização. 
     
-- Você pode editar um filtro existente de permissões de pesquisa para adicionar ou alterar a região executando o seguinte comando:
+- Você pode editar um filtro de permissões de pesquisa existente para adicionar ou alterar a região executando o seguinte comando:
 
     ```
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
@@ -238,30 +238,30 @@ Mantenha as seguintes coisas em mente ao pesquisar e exportação de conteúdo e
  
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
- **Quem pode criar e gerenciar filtros de permissões de pesquisa (usando New-ComplianceSecurityFilter e cmdlets Set-ComplianceSecurityFilter)?**
+ **Quem pode criar e gerenciar filtros de permissões de pesquisa (usando os cmdlets New-ComplianceSecurityFilter e Set-ComplianceSecurityFilter)?**
   
-Para criar, visualizar e modificar os filtros de permissões de pesquisa, você precisa ser membro do grupo de funções de gerenciamento da organização na segurança &amp; Centro de conformidade.
+Para criar, exibir e modificar filtros de permissões de pesquisa, você precisa ser membro do grupo de função gerenciamento da organização no centro &amp; de conformidade de segurança.
   
- **Se um gerente de descoberta eletrônica é atribuído a mais de um grupo de função que abrange várias agências, como eles para pesquisar por conteúdo em uma agência ou outra?**
+ **Se um gerente de descoberta eletrônica for atribuído a mais de um grupo de função que abrange várias agências, como pesquisará conteúdo em uma agência ou outra?**
   
-O gerente de descoberta eletrônica pode adicionar parâmetros à sua consulta de pesquisa que restringe a pesquisa para uma agência específica. Por exemplo, se uma organização especificou a propriedade **CustomAttribute10** para diferenciar os órgãos, eles podem acrescentar o seguinte à sua consulta de pesquisa para pesquisar caixas de correio e contas do OneDrive em uma agência específica: `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`.
+O Gerenciador de descoberta eletrônica pode adicionar parâmetros à consulta de pesquisa que restringe a pesquisa a uma agência específica. Por exemplo, se uma organização especificou a propriedade **CustomAttribute10** para diferenciar agências, elas podem acrescentar o seguinte à consulta de pesquisa para pesquisar caixas de correio e contas do onedrive em uma agência `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`específica:.
   
- **O que acontece se o valor do atributo que é usado como o atributo de conformidade em um filtro de permissões de pesquisa for alterado?**
+ **O que acontece se o valor do atributo usado como atributo de conformidade em um filtro de permissões de pesquisa for alterado?**
   
-Leva até 3 dias para um filtro de permissões de pesquisa para impor o limite de conformidade, se o valor do atributo que é usado no filtro é alterado. Por exemplo, no cenário Contoso digamos que um usuário nos agência Fourth Coffee é transferido para a agência da Coho Winery. Como resultado, o valor do atributo **Department** no objeto do usuário é alterado de *FourthCoffee* para *CohoWinery* . Nessa situação, investidores e eDiscovery Fourth Coffee poderá obter resultados de pesquisa para esse usuário para o backup de 3 dias após o atributo é alterado. Da mesma forma, levará até 3 dias antes de gerentes de descoberta eletrônica da Coho Winery e investigadores receberá os resultados da pesquisa para o usuário. 
+É necessário até 3 dias para um filtro de permissões de pesquisa para impor o limite de conformidade se o valor do atributo usado no filtro for alterado. Por exemplo, no cenário da Contoso, vamos supor que um usuário na quarta agência de café seja transferido para a Agência Coho Winery. Como resultado, o valor do atributo **Department** no objeto user é alterado de *fourthcoffee* para *CohoWinery* . Nessa situação, a quarta-Discovery e os investidores de café receberão resultados de pesquisa para o usuário por até 3 dias após o atributo ser alterado. Da mesma forma, levará até 3 dias antes que os gerentes e investigadores da descoberta da vinícola Coho recebam resultados de pesquisa para o usuário. 
   
- **Um gerente de descoberta eletrônica pode ver o conteúdo de dois limites de conformidade separado?**
+ **Um gerente de descoberta eletrônica pode ver o conteúdo de dois limites de conformidade separados?**
   
-Sim. Isso pode ser feito adicionando o usuário a grupos de funções que têm a visibilidade para ambas as agências.
+Sim. Isso pode ser feito adicionando o usuário aos grupos de função que têm visibilidade para ambas as agências.
   
- **A pesquisa funciona de filtros de permissões para DLP, as políticas de retenção do Office 365 ou isenções casos de descoberta eletrônica?**
+ **Os filtros de permissões de pesquisa funcionam para isenções de caso de descoberta eletrônica, políticas de retenção do Office 365 ou DLP?**
   
-Não, não desta vez
+Não no momento
   
- **Se eu especificar uma região para controlar onde o conteúdo será exportado, mas não tenho uma organização do SharePoint na região, podem ainda pesquisar SharePoint?**
+ **Se eu especificar uma região para controlar onde o conteúdo é exportado, mas não tenho uma organização do SharePoint nessa região, ainda poderei Pesquisar o SharePoint?**
   
-Se a região especificada no filtro de permissões de pesquisa não existir na sua organização, a região padrão devem ser pesquisada.
+Se a região especificada no filtro permissões de pesquisa não existir na sua organização, a região padrão será pesquisada.
   
- **O que é o número máximo de filtros de permissões de pesquisa que podem ser criados em uma organização?**
+ **Qual é o número máximo de filtros de permissão de pesquisa que podem ser criados em uma organização?**
   
-Não há nenhum limite ao número de filtros de permissões de pesquisa que podem ser criados em uma organização. No entanto, o desempenho de pesquisa será afetado quando há mais de 100 filtros de permissões de pesquisa. Para manter o número de filtros de permissões de pesquisa em sua organização tão pequeno quanto possível, crie filtros que combinam regras para Exchange, SharePoint e OneDrive em um filtro de permissões de pesquisa único sempre que possível.
+Não há limite para o número de filtros de permissões de pesquisa que podem ser criados em uma organização. No enTanto, o desempenho da pesquisa será afetado quando houver mais de 100 filtros de permissões de pesquisa. Para manter o número de filtros de permissão de pesquisa em sua organização o menor possível, crie filtros que combinem regras para o Exchange, SharePoint e OneDrive em um único filtro de permissões de pesquisa sempre que possível.
