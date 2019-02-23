@@ -1,7 +1,7 @@
 ---
-title: Combater o lixo eletrônico enviado para o Office 365
-ms.author: krowley
-author: kccross
+title: Combatendo lixo eletrônico enviado para o Office 365
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,67 +12,69 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
-description: Mapa de segurança de email da Microsoft envolve uma abordagem de entre produtos incomparável. Tecnologia de filtragem anti-spam e antiphishing Exchange Online Protection (EOP) está sendo aplicada em todas as plataformas de email da Microsoft para fornecer aos usuários a últimas ferramentas antispams e anti-phishing e inovações em toda a rede. O objetivo do EOP é oferecer um serviço de email abrangente e utilizáveis que ajuda a detectar e proteger os usuários de lixo eletrônico, ameaças de e-mail fraudulento (phishing) e malware.
-ms.openlocfilehash: d4047e373b7808fe4b30dd23a1e7486ee7eb5a66
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: O mapa de segurança de email da Microsoft envolve uma abordagem de vários produtos sem correspondência. A tecnologia de filtragem antispam e antispam do Exchange Online Protection (EOP) está sendo aplicada nas plataformas de email da Microsoft para fornecer aos usuários as ferramentas e inovações mais recentes antispam e anti-phishing em toda a rede. O objetivo do EOP é oferecer um serviço de email abrangente e útil que ajuda a detectar e proteger os usuários contra lixo eletrônico, ameaças de email fraudulentas (phishing) e malware.
+ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002870"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216561"
 ---
-# <a name="fighting-junk-email-sent-to-office-365"></a>Combater o lixo eletrônico enviado para o Office 365
+# <a name="fighting-junk-email-sent-to-office-365"></a>Combatendo lixo eletrônico enviado para o Office 365
 
-Mapa de segurança de email da Microsoft envolve uma abordagem de entre produtos incomparável. Tecnologia de filtragem anti-spam e antiphishing Exchange Online Protection (EOP) está sendo aplicada em todas as plataformas de email da Microsoft para fornecer aos usuários a últimas ferramentas antispams e anti-phishing e inovações em toda a rede. O objetivo do EOP é oferecer um serviço de email abrangente e utilizáveis que ajuda a detectar e proteger os usuários de lixo eletrônico, ameaças de e-mail fraudulento (phishing) e malware.
+O mapa de segurança de email da Microsoft envolve uma abordagem de vários produtos sem correspondência. A tecnologia de filtragem antispam e antispam do Exchange Online Protection (EOP) está sendo aplicada nas plataformas de email da Microsoft para fornecer aos usuários as ferramentas e inovações mais recentes antispam e anti-phishing em toda a rede. O objetivo do EOP é oferecer um serviço de email abrangente e útil que ajuda a detectar e proteger os usuários contra lixo eletrônico, ameaças de email fraudulentas (phishing) e malware.
   
 ## <a name="the-challenge"></a>O desafio
 
-Email se tornou uma ferramenta importante de comunicação não apenas para os consumidores, mas também para ajudar empresas de todos os tamanhos, a equipe de suporte, organizações de vendas e comerciantes. Como o uso de email cresceu, isso tem mau uso de email. Não monitorado lixo eletrônico pode obstruir caixas de entrada e redes, satisfação de impacto do usuário e dificultar a eficácia das comunicações de emails legítimos. É por isso que a Microsoft continua a investir em tecnologias anti-spam. Em outras palavras, ele começa contendo e filtragem de lixo eletrônico. 
+O email se tornou uma ferramenta de comunicação importante não só para consumidores, mas também para os vendedores, equipe de suporte, organizações de vendas e empresas de todos os portes. Como o uso de email cresceu, isso tem abuso de email. O lixo eletrônico não monitorado pode obstruir as caixas de entrada e redes, impactar a satisfação do usuário e dificultar a eficácia de comunicações de email legítimas. É por isso que a Microsoft continua a investir em tecnologias antispam. Em suma, ele começa com a contém e filtra o lixo eletrônico. 
   
 ## <a name="our-efforts"></a>Nossos esforços
 
-EOP oferece diversas etapas para minimizar o impacto negativo lixo eletrônico tem sobre a experiência de email dos nossos usuários.
+O EOP oferece várias etapas para minimizar o impacto negativo que o lixo eletrônico tem sobre a experiência de email dos usuários.
   
-### <a name="exchange-online-protection-technology"></a>Tecnologia do Exchange Online Protection
+### <a name="exchange-online-protection-technology"></a>Tecnologia de proteção do Exchange Online
 
-Para ajudar a reduzir o lixo eletrônico, EOP inclui a proteção de lixo eletrônico usando tecnologias de filtragem de EOP proprietária email tela para identificar e separar lixo eletrônico de emails legítimos. O filtro de conteúdo do EOP aprende do conhecida spam e phishing ameaças e comentários de usuário de nossa plataforma de consumidor, Outlook.com. Esses tipos de dados ajudar no treinamento tecnologias EOP reconhecer lixo eletrônico e email legítimo e são principais entradas em reputação do remetente. Em andamento comentários de usuários EOP no programa de classificação de lixo eletrônico ajuda a garantir que as tecnologias EOP são treinadas e aprimoradas continuamente.
+Para ajudar a reduzir o lixo eletrônico, o EOP inclui a proteção de lixo eletrônico usando tecnologias de filtragem EOP de proprietário, nas quais o email de tela identifica e separa lixo eletrônico de emails legítimos. O filtro de conteúdo do EOP aprende de ameaças conhecidas contra spam e phishing e comentários de usuários da nossa plataforma de consumidores, Outlook.com. Esses tipos de dados ajudam a treinar as tecnologias do EOP a reconhecer emails e lixo eletrônico legítimos e as principais entradas na reputação do remetente. Comentários contínuos dos usuários do EOP no programa de classificação de lixo eletrônico ajuda a garantir que as tecnologias do EOP sejam continuamente treinadas e aprimoradas.
   
 #### <a name="how-does-eop-work"></a>Como o EOP funciona?
 
-Quando um usuário externo envia uma mensagem de email a um usuário do EOP, tecnologias de filtragem do EOP avaliar o conteúdo da mensagem e atribui uma classificação à mensagem com base na probabilidade que a mensagem é lixo eletrônico. Essa classificação é armazenada como uma propriedade de mensagem chamada um nível de confiança de Spam (SCL) dentro da mensagem em si. A classificação SCL permanece com a mensagem como ele é enviado a outras camadas de proteção antispam no EOP. 
+Quando um usuário externo envia uma mensagem de email para um usuário do EOP, as tecnologias de filtragem do EOP avaliam o conteúdo da mensagem e atribui uma classificação à mensagem com base na probabilidade de que a mensagem seja lixo eletrônico. Essa classificação é armazenada como uma propriedade de mensagem chamada SCL (nível de confiança de spam) dentro da própria mensagem. A classificação de SCL permanece com a mensagem à medida que é enviada para outras camadas de proteção antispam no EOP. 
   
-Regras de EOP estão definidas para lidar com as mensagens de email com várias classificações de SCL. Se uma mensagem tiver uma classificação de SCL maior do que um determinado limite, ele será considerado spam. A mensagem será colocada em quarentena ou entregue para a pasta de lixo eletrônico do usuário dependendo de como o administrador do sistema configura a opção de entrega de spam.
+As regras dentro do EOP são definidas para lidar com mensagens de email com várias classificações de SCL. Se uma mensagem tiver uma classificação de SCL superior a um determinado limite, ela será considerada spam. A mensagem será colocada em quarentena ou entregue à pasta lixo eletrônico do usuário, dependendo de como o administrador do sistema configura a opção de entrega de spam.
   
-#### <a name="eop-filters"></a>Filtros do EOP
+#### <a name="eop-filters"></a>Filtros EOP
 
-As tecnologias de filtragem de antispam, além de EOP também proporciona ao administrador do sistema a capacidade de definir os níveis de filtro para personalizar a entrega de email para suas contas de usuário. Os administradores podem facilmente adicionar um remetente ou nome de domínio para a lista de domínios e de remetentes confiáveis, para que o email desse remetente ou domínio nunca é tratado como lixo eletrônico, independentemente do conteúdo da mensagem. Para obter informações, consulte [Remetentes seguros e bloqueados listas de remetentes no Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+Além das tecnologias de filtragem antispam, o EOP também dá ao administrador do sistema a capacidade de definir níveis de filtro para personalizar ainda mais a entrega de emails para suas contas de usuário. Os administradores podem facilmente adicionar um nome de domínio ou remetente à lista de remetentes e domínios confiáveis para que o email desse remetente ou domínio nunca seja tratado como lixo eletrônico independentemente do conteúdo da mensagem. Para saber mais, confira [listas de remetentes seguros e remetentes bloqueados no Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
   
 ### <a name="phishing-protection"></a>Proteção contra phishing
 
-O phishing (pronuncia-se "phishing") é um formulário de roubo de identidade e uma das ameaças mais rápido crescimento na Internet. Geralmente, você pode identificar uma mensagem de phishing quando ele solicita informações pessoais ou financeiras ou inclui um link para um site que solicite tais informações. EOP oferece proteção contra phishing como parte das tecnologias de filtragem EOP proprietárias. Tecnologias de filtragem do EOP analisam o email para ajudar a detectar links fraudulentos ou domínios falsificados para ajudar a proteger os usuários contra esses tipos de golpes on-line.
+Phishing (pronuncia-se "pesca") é uma forma de roubo de identidade e uma das ameaças de crescimento mais rápido na Internet. Geralmente, você pode identificar uma mensagem de phishing ao solicitar informações pessoais ou financeiras ou inclui um link para um site que solicita essas informações. O EOP oferece proteção contra phishing como parte das tecnologias de filtragem de EOP de proprietário. As tecnologias de filtragem do EOP analisam o email para ajudar a detectar links fraudulentos ou domínios falsificados para ajudar a proteger os usuários contra esses tipos de golpes online.
   
 #### <a name="how-does-phishing-protection-work"></a>Como funciona a proteção contra phishing?
 
-Geralmente um email de phishing será enviado contendo um link, uma vez clicado no link redireciona os usuários para um site fraudulento exibida válido (como seu instituição financeira ou serviço on-line). Este site de phishing geralmente solicita que os usuários insiram as informações pessoais, como nomes de usuário, senhas e números de seguridade social. Qualquer informação digitada no site de phishing ajuda o phisher roubar sua identidade. Usando nomes de marca confiáveis conhecidos e logotipos, phishers são capazes de parecer legítimo. Tecnologia de filtro de phishing oferecidas no EOP verifica as características de phishing possíveis em email. Se encontrado, o email é movido para a pasta Lixo eletrônico.
+Geralmente, um email de phishing será enviado contendo um link, depois de clicar no link redireciona os usuários para um site da Web fraudulento que parece válido (como sua instituição financeira ou serviço online). Este site de phishing normalmente solicita que os usuários insiram informações pessoais, como nomes de usuário, senhas e números de segurança social. Qualquer informação inserida no site de phishing ajuda o phishing a roubar sua identidade. Usando os nomes e logotipos conhecidos da marca confiável, os phishers podem parecer legítimos. A tecnologia de filtro de phishing oferecida no EOP verifica possíveis características de phishing no email. Se encontrado, o email será movido para a pasta lixo eletrônico.
   
-Microsoft está concentrando os esforços de tecnologia antiphishing em dois aspectos: primeiro, ajudando a impedir que as mensagens de email de phishing atinja nossos usuários e a segunda, ajudando a eliminar a possibilidade de usuários que está sendo enganado por emails falsificados e sites da web. 
+A Microsoft está concentrando seus esforços de tecnologia anti-phishing em duas frentes: primeiro, ajudando a impedir que mensagens de email de phishing cheguem aos nossos usuários e segundo, ajudando a eliminar a possibilidade de os usuários serem induzidos por emails falsificados e sites da Web. 
   
 > [!TIP]
-> Internet Explorer versão 7 e acima será bloquear ou avisar aos usuários quando eles visitam conhecidos ou sites de phishing em potencial para que eles não são levados a fornecer informações pessoais. [Verifique se você tem a versão mais recente do Internet Explorer](https://www.microsoft.com/windows/ie/default.mspx). 
+> O Internet Explorer versão 7 e superior bloqueará ou avisará os usuários quando eles visitarem sites de phishing potenciais ou conhecidos para que não sejam induzidos a fornecer informações pessoais. [Verifique se você tem a versão mais recente do Internet Explorer](https://www.microsoft.com/windows/ie/default.mspx). 
   
 #### <a name="authentication"></a>Autenticação
 
-Falsificação de domínio é uma maneira de imitar um endereço de email legítimo para fazer com que o e-mail fraudulento pareça legítimo. Falsificação é usada pelo mal-intencionado pessoas ou organizações em golpes de phishing para atrair pessoas a divulgar informações pessoais confidenciais. Divulgação de informações pode levar a identificar roubo e outros tipos de fraude.
+A falsificação de domínio é uma maneira de imitar um endereço de email legítimo para fazer com que o email fraudulento pareça legítimo. A falsificação é usada por pessoas ou organizações mal-intencionadas em golpes de phishing para atrair pessoas a divulgar informações pessoais confidenciais. A divulgação dessas informações pode levar à identificação de roubo e outros tipos de fraude.
   
-EOP usa Framework de proteção do remetente (SPF), DomainKeys identificado Mail (DKIM) e a autenticação baseada em domínio de mensagens, relatórios e conformidade (DMARC) e outras autenticações implícitas para verificar que a mensagens provenientes do domínio que dizem ser originadas de . Recomendamos que todos os remetentes usam SPF e DKIM para proteger seus destinatários de lixo eletrônico e golpes de phishing. Recomendamos remetentes considere um DMARC para rejeitar ou colocar em quarentena mensagens enviadas de remetentes não autorizados de publicação.
+O EOP usa a estrutura de proteção do remetente (SPF), o DomainKeys identificado mail (DKIM) e a autenticação de mensagens baseadas em domínio, relatórios e conformidade (DMARC) e outras autenticações implícitas para verificar se as mensagens são provenientes do domínio do qual dizem . Recomendamos que todos os remetentes usem o SPF e o DKIM para proteger seus destinatários contra spam e golpes de phishing. Recomendamos que os remetentes considerem publicar um DMARC para rejeitar ou colocar em quarentena os emails enviados de remetentes não autorizados.
   
-- Para saber mais sobre SPF, consulte [RFC 7208](https://tools.ietf.org/html/rfc7208) e [Estrutura de política do remetente](http://www.openspf.org/).
+- Para saber mais sobre o SPF, confira [RFC 7208](https://tools.ietf.org/html/rfc7208) e [Sender Policy Framework](http://www.openspf.org/).
     
-- Para saber mais sobre DKIM, consulte [RFC 6376](https://tools.ietf.org/html/rfc6376) e [DKIM.org](http://dkim.org/).
+- Para saber mais sobre o DKIM, confira [RFC 6376](https://tools.ietf.org/html/rfc6376) e [DKIM.org](http://dkim.org/).
     
-- Para saber mais sobre DMARC, consulte [DMARC.org](https://dmarc.org/).
+- Para saber mais sobre o DMARC, confira [DMARC.org](https://dmarc.org/).
     
 ### <a name="legislation"></a>Legislação
 
-Na Microsoft, podemos acredite que o desenvolvimento de novas tecnologias e Autoregulamentação requer o suporte da política do governo efetiva e estruturas de legais. A proliferação de spam em todo o mundo tem spurred vários corpos legislativas para regular emails comerciais. Muitos países/regiões agora ter contra os spams leis in-loco. Estados Unidos possui leis federais e estaduais orientando spam e essa abordagem complementar é ajudar a diminuir o spam, permitindo a criação de comércio legítimo prosperar. O ato de SPAM CAN expande as ferramentas disponíveis para restrição aos emails fraudulentos e falsos.
+Na Microsoft, acreditamos que o desenvolvimento de novas tecnologias e autoregulamentação requer o suporte da política governamental efetiva e estruturas legais. A proliferação mundial de spam tem spurred vários órgãos legislativos para regulamentar emails comerciais. Muitos países/regiões agora têm leis de combate de spam em vigor. Os Estados Unidos têm leis federais e estaduais que regem o spam, e essa abordagem complementar está ajudando a curtailr spam e, ao mesmo tempo, permitindo o e-commerce legítimo para o Prosper. O Act CAN-SPAM expande as ferramentas disponíveis para moderar mensagens de email fraudulentas e enganosas.
   
 

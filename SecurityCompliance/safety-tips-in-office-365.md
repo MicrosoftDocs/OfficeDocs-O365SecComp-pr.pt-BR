@@ -6,57 +6,57 @@ manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
-description: Apresenta dicas de segurança para mensagens de email filtradas pelo filtro de spam EOP e o Office 365.
-ms.openlocfilehash: 206141fd516f6273a145f4f954c0994be39da26a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Apresenta dicas de segurança para mensagens de email filtradas pelo EOP e pelo filtro de spam do Office 365.
+ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523447"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214301"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Dicas de segurança em mensagens de email no Office 365
 
-Exchange Online Protection (EOP) e Office 365 protegem-lo com prevenção de malware, spam e phishing. Hoje, alguns desses ataques são criados tão bem que eles se parecer legítimos. Pasta mensagens enviadas para o lixo eletrônico nem sempre é suficiente. Agora, quando você verificar seu email no Outlook ou no Outlook na web, o EOP automaticamente verifica o remetente e adiciona uma dica de segurança para a parte superior do email. 
+O Exchange Online Protection (EOP) e o Office 365 protegem você com spam, phishing e prevenção contra malware. Hoje, alguns desses ataques são tão bem criados que parecem legítimos. Enviar mensagens para a pasta lixo eletrônico nem sempre é suficiente. Agora, quando você verificar seu email no Outlook ou no Outlook na Web, o EOP verifica automaticamente o remetente e adiciona uma dica de segurança à parte superior do email. 
   
-A dica de segurança — uma mensagem codificada — avisará você sobre mensagens potencialmente prejudiciais. A maioria das mensagens na caixa de entrada não terá uma dica de segurança. Você só verá-los quando EOP e o Office 365 possui informações necessárias para ajudar a impedir ataques de malware, phishing e spam. Se as dicas de segurança mostrada na sua caixa de entrada, você pode usar os exemplos a seguir para saber mais sobre cada tipo de dica de segurança.
+A dica de segurança — uma mensagem codificada por cores — avisará você sobre mensagens potencialmente prejudiciais. A maioria das mensagens em sua caixa de entrada não terá uma dica de segurança. Você só as verá quando o EOP e o Office 365 tiverem informações necessárias para ajudar a evitar spam, phishing e ataques de malware. Se as dicas de segurança aparecerem em sua caixa de entrada, você poderá usar os exemplos a seguir para saber mais sobre cada tipo de dica de segurança.
   
-- Email suspeita (tip safety vermelho).
+- Email suspeito (dica de segurança vermelha).
     
-    ![Captura de tela que mostra uma dica de safety vermelho.](media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Captura de tela que mostra uma dica de segurança vermelha.](media/5078a0be-e556-44a1-b169-09d780d26898.png)
   
-    Uma dica de vermelho safety em um email significa que a mensagem recebida contém algo suspeito, como um esquema de phishing. Recomendamos que você exclua desse tipo de mensagem de email da caixa de entrada sem abri-lo.
+    Uma dica de segurança vermelha em um email significa que a mensagem recebida contém algo suspeito, como um golpe de phishing. Recomendamos que você exclua esse tipo de mensagem de email da caixa de entrada sem abri-la.
     
-- Spam (tip safety amarelo).
+- Spam (dica de segurança amarela).
     
-    ![Captura de tela que mostra uma dica de safety amarelo.](media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Captura de tela que mostra uma dica de segurança amarela.](media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
   
-    Uma dica safety amarelo em um email significa que a mensagem foi marcada como spam. Se você não reconhecer e confiar no remetente da mensagem, não baixe todos os anexos ou imagens e não clique em todos os links na mensagem. No Outlook na web, você pode clicar **é não spam** na barra amarela de um item de lixo eletrônico para mover a mensagem para sua caixa de entrada. Se a dica de safety amarelo aparece em uma mensagem que foi entregue à caixa de entrada, ele está provavelmente porque você desabilitou spam se movendo para a pasta Lixo eletrônico. 
+    Uma dica de segurança amarela em um email significa que a mensagem foi marcada como spam. Se você não reconhece e confia no remetente da mensagem, não baixe nenhum anexo ou imagem e não clique em nenhum link da mensagem. No Outlook na Web, você pode clicar em **não é spam** na barra amarela de um item de lixo eletrônico para mover a mensagem para sua caixa de entrada. Se a dica de segurança amarela aparecer em uma mensagem que foi entregue na caixa de entrada, é provável que você tenha desabilitado a movimentação de spam para a pasta lixo eletrônico. 
     
-- Email seguro (tip safety verde).
+- Email seguro (dica de segurança verde).
     
-    ![Captura de tela que mostra uma dica de safety verde.](media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Captura de tela que mostra uma dica de segurança verde.](media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
   
-    Além das mensagens não seguras, também falaremos sobre mensagens válidas de remetentes que podemos confiança com uma dica safety verde. Uma dica safety verde em um email significa que podemos verificado o remetente da mensagem e verificado que é seguro. A Microsoft mantém essa lista de remetentes confiáveis que inclui as organizações financeiras e outras pessoas que é frequentemente falsificada ou representada.
+    Além de mensagens não seguras, também Informaremos sobre mensagens válidas de remetentes que confiamos com uma dica de segurança verde. Uma dica de segurança verde em um email significa que verificamos o remetente da mensagem e verificamos se ela é segura. A Microsoft mantém esta lista de remetentes confiáveis que inclui organizações financeiras e outras que são freqüentemente falsificadas ou representadas.
     
-- Email não filtrado (tip safety cinza).
+- Emails não filtrados (dica de segurança cinza).
     
-    ![Captura de tela que mostra uma dica de safety cinza.](media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Captura de tela que mostra uma dica de segurança cinza.](media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
   
-    Também falaremos quando é ignorada verificação um email porque ele é de um remetente que você confia na sua lista de remetentes confiáveis ou se existe uma regra de fluxo de email para ignorar a filtragem. 
+    Também avisaremos quando ignoramos a verificação de um email porque ele é proveniente de um remetente em sua lista de remetentes confiáveis ou se existe uma regra de fluxo de emails para ignorar a filtragem. 
     
-    A dica de cinza safety também é mostrada quando imagens externas são bloqueadas, ou seja, a mensagem é sua caixa de entrada e não parece ser spam, mas contém imagens externas que você ainda não tiver optado para baixar.
+    A dica de segurança cinza também aparece quando imagens externas são bloqueadas, ou seja, a mensagem está na sua caixa de entrada e não parece ser spam, mas contém imagens externas que você não optou por baixar.
     
-## <a name="working-with-safety-tips"></a>Trabalhando com dicas de segurança
+## <a name="working-with-safety-tips"></a>Trabalhar com dicas de segurança
 
-Dicas de segurança são sempre habilitadas para o Outlook na web, mesmo que não cada mensagem receberá uma. Administradores do Office 365 podem desativar dicas de segurança para outros clientes de email como o Outlook. Para obter mais informações, consulte [Ativar ou desativar dicas de segurança no Office 365](enable-or-disable-safety-tips.md).
+As dicas de segurança sempre são habilitadas para o Outlook na Web, mesmo que nem todas as mensagens recebam um. Os administradores do Office 365 podem desativar Dicas de segurança para outros clientes de email, como o Outlook. Para obter mais informações, consulte [habilitar ou desabilitar dicas de segurança no Office 365](enable-or-disable-safety-tips.md).
   
-Se você Discordo como o Office 365 e o EOP categorizados uma mensagem (ou seja, não é spam ou que não seja legítimo), você pode enviar as mensagens para análise ajudar a tornar sua experiência melhor. Para obter mais informações, consulte [relatório lixo eletrônico e golpes de phishing no Outlook na web](https://technet.microsoft.com/library/dn594557.aspx). Você também pode clicar no link comentários na dica de segurança para enviar comentários diretamente à Microsoft para ajudar a melhorar.
+Se você discordar com o modo como o Office 365 e o EOP categorizaram uma mensagem (ou seja, não é spam ou não é legítimo), você pode enviar as mensagens para análise para ajudar a melhorar a experiência. Para saber mais, confira [relatar spam e golpes de phishing no Outlook na Web](https://technet.microsoft.com/library/dn594557.aspx). Você também pode clicar no link de comentários na dica de segurança para enviar comentários diretamente para a Microsoft para nos ajudar a melhorar.
   
 ## <a name="see-also"></a>Confira também
 

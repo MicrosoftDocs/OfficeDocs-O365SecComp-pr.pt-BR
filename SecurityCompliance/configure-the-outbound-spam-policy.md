@@ -1,7 +1,7 @@
 ---
 title: Configurar a política de spam de saída
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/10/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
+ms.collection:
+- M365-security-compliance
 description: A filtragem de spam de saída está sempre habilitada se você utilizar o serviço de envio de email de saída, protegendo assim as organizações que utilizam o serviço e seus destinatários desejados.
-ms.openlocfilehash: b6185cfded28613cb5a512882aefb1a99db158db
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 095098c058a5ca5165e0ad24ef48296c980eadcf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002397"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214521"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar a política de spam de saída
 
@@ -33,11 +35,11 @@ O vídeo a seguir mostra como configurar a política de spam de saída:
 
 Tempo estimado para conclusão: 5 minutos
   
-Você precisa ter permissões antes de executar este procedimento ou procedimentos. Para ver quais permissões você precisa, consulte a "entrada de antispam no tópico [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+Você precisa receber permissões antes de executar este procedimento ou procedimentos. Para ver de que permissões você precisa, consulte o tópico "entrada antispam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Atalhos de teclado no Centro de administração do Exchange**.
+Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de administração do Exchange**.
   
-O procedimento a seguir também pode ser executado via o PowerShell remoto. Use o cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) para examinar suas configurações e o [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) para editar as configurações de política de spam de saída. Para saber como usar o Windows PowerShell para se conectar ao Exchange Online Protection, consulte [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+O procedimento a seguir também pode ser executado por meio do PowerShell remoto. Use o cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) para revisar suas configurações e o [set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) para editar suas configurações de política de spam de saída. Para saber como usar o Windows PowerShell para se conectar à proteção do Exchange Online, confira [conectar-se ao PowerShell do Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290). Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554).
   
 ## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>Utilize o EAC para editar a política de spam de saída padrão
 <a name="sectionSection1"> </a>
@@ -56,15 +58,15 @@ Utilize o procedimento a seguir para editar a política de spam de saída padrã
     
 2. Envie uma notificação para o seguinte endereço de email quando um remetente for bloqueado por enviar **spam de saída**. Separe com ponto e vírgula os diversos endereços.
     
-    Quando uma quantidade significativa de spam é provenientes de um usuário específico, o usuário está desabilitado enviem mensagens de email. O administrador do domínio, que é especificado usando essa configuração, será informado que mensagens de saída são bloqueadas para esse usuário. Para ver qual essa notificação aparência, consulte [notificação de amostra quando um remetente for bloqueado enviem spam de saída](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md). Para obter informações sobre a obtenção reabilitado, consulte [Remover um usuário, o domínio ou o endereço IP a partir de uma lista de bloqueios após o envio de mensagens de spam](http://technet.microsoft.com/library/712cfcc1-31e8-4e51-8561-b64258a8f1e5.aspx).
+    Quando uma quantidade significativa de spam é originada de um usuário específico, o usuário está desabilitado no envio de mensagens de email. O administrador do domínio, que é especificado usando essa configuração, será informado de que as mensagens de saída serão bloqueadas para este usuário. Para ver a aparência dessa notificação, confira [exemplo de notificação quando um remetente estiver bloqueado enviando spam de saída](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md). Para obter informações sobre como habilitar novamente, consulte [removendo um usuário, domínio ou endereço IP de uma lista de bloqueios após o envio de email de spam](http://technet.microsoft.com/library/712cfcc1-31e8-4e51-8561-b64258a8f1e5.aspx).
     
 4. Clique em **salvar**. Um resumo das suas configurações de política padrão aparece no painel à direita.
     
 ## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection2"> </a>
 
-[Pool de alto risco de entrega para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
+[Pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
   
-[Perguntas frequentes sobre a proteção antispam](anti-spam-protection-faq.md)
+[PERGUNTAS FREQUENTEs sobre proteção antispam](anti-spam-protection-faq.md)
   
 

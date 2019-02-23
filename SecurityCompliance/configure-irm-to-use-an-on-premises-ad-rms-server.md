@@ -1,7 +1,7 @@
 ---
-title: Configurar o IRM para usar um local servidor AD RMS
-ms.author: krowley
-author: kccross
+title: Configurar o IRM para usar um servidor AD RMS local
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
+ms.collection:
+- M365-security-compliance
 description: Este tópico mostra como configurar o IRM para usar um servidor AD RMS.
-ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002778"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215252"
 ---
-# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar o IRM para usar um servidor RMS do AD local
+# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar o IRM para usar um servidor AD RMS local
   
-Para uso com implantações em instalações, gerenciamento de direitos de informação (IRM) no Exchange Online usa o Active Directory Rights Management Services (AD RMS), uma tecnologia de proteção de informações no Windows Server 2008 e posterior. Proteção de IRM é aplicada ao email, aplicando um modelo de diretiva de direitos do AD RMS para uma mensagem de email. Direitos estão anexados à mensagem em si, para que ocorra de proteção online e offline e dentro e fora do firewall da organização.
+Para uso com implantações locais, o gerenciamento de direitos de informação (IRM) no Exchange Online usa o Active Directory Rights Management Services (AD RMS), uma tecnologia de proteção de informações no Windows Server 2008 e posteriores. A proteção de IRM é aplicada ao email aplicando um modelo de política de direitos do AD RMS a uma mensagem de email. Os direitos são anexados à própria mensagem para que a proteção ocorra online e offline e dentro e fora do firewall da sua organização.
   
-Este tópico mostra como configurar o IRM para usar um servidor AD RMS. Para obter informações sobre como usar os novos recursos para a criptografia de mensagem do Office 365 com o Active Directory do Windows Azure e o Azure Rights Management, consulte as [Perguntas frequentes sobre a criptografia de mensagem do Office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+Este tópico mostra como configurar o IRM para usar um servidor AD RMS. Para obter informações sobre como usar os novos recursos para a criptografia de mensagem do Office 365 com o Azure Active Directory e o Azure Rights Management, consulte as [perguntas frequentes sobre a criptografia de mensagens do office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Para saber mais sobre IRM no Exchange Online, consulte [Gerenciamento de Direitos de Informação no Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -71,7 +73,7 @@ Ao importar o TPD, ele é armazenado e protegido no Exchange Online.
     
 6. Nas caixas **Senha** e **Confirmar Senha**, digite uma senha segura que será usada para criptografar o arquivo de domínio de publicação confiável. Você terá de especificar essa senha quando importar o TPD para a sua organização de email baseada em nuvem. 
     
-### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Etapa 2: Usar o Shell de gerenciamento do Exchange para importar o TPD para o Exchange Online
+### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Etapa 2: usar o Shell de gerenciamento do Exchange para importar o TPD para o Exchange Online
 
 Depois de exportar o TPD para um arquivo XML, você terá de importá-lo para o Exchange Online. Quando um TPD é importado, os modelos do AD RMS da sua organização também são importados. Quando o primeiro TPD é importado, ele se torna o TPD padrão para sua organização baseada em nuvem. Se você importar outro TPD, poderá usar o botão **Padrão** para torná-lo o TPD padrão que está disponível para os usuários. 
   
@@ -93,13 +95,13 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 
 Para obter informações detalhadas de sintaxes e de parâmetros, confira [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
   
-#### <a name="how-do-you-know-this-step-worked"></a>Como saber se essa etapa funcionou?
+#### <a name="how-do-you-know-this-step-worked"></a>Como saber se esta etapa funcionou?
 
 Para verificar se você importou com êxito o TPD, execute o cmdlet **Get-RMSTrustedPublishingDomain** para recuperar TPDs em sua organização do Exchange Online. Para obter detalhes, consulte os exemplos no [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/69499195-f08f-41bd-b0ed-443688410b12.aspx).
   
-### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Etapa 3: Usar o Shell de gerenciamento do Exchange para distribuir um modelo de diretiva de direitos do AD RMS
+### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Etapa 3: usar o Shell de gerenciamento do Exchange para distribuir um modelo de política de direitos do AD RMS
 
-Depois de importar o TPD, você deverá garantir que um modelo de política de direitos do AD RMS seja distribuído. Um modelo distribuído fica visível para os usuários do Outlook Web App, que podem aplicar os modelos a uma mensagem de email.
+Depois de importar o TPD, você deve verificar se um modelo de política de direitos do AD RMS está distribuído. Um modelo distribuído é visível para os usuários do Outlook na Web (anteriormente conhecido como Outlook Web App), que podem aplicar os modelos a uma mensagem de email.
   
 Para retornar uma lista de todos os modelos contidos no TPD padrão, execute este comando:
   
@@ -107,7 +109,7 @@ Para retornar uma lista de todos os modelos contidos no TPD padrão, execute est
 Get-RMSTemplate -Type All | fl
 ```
 
-Se o valor do parâmetro  _Type_ for  `Archived`, o modelo não ficará visível para os usuários. Somente modelos distribuídos no TPD padrão estão disponíveis no Outlook Web App.
+Se o valor do parâmetro _Type_ for `Archived`, o modelo não ficará visível para os usuários. Somente os modelos distribuídos no TPD padrão estão disponíveis no Outlook na Web.
   
 Para distribuir um modelo, execute este comando:
   
@@ -140,11 +142,11 @@ Quando o modelo **Não Encaminhar** é aplicado a uma mensagem, somente os desti
   
 Você pode criar mais modelos de política de direitos do AD RMS no servidor AD RMS, na sua organização local, para atender aos requisitos de proteção de IRM. Se você criar modelos de política de direitos do AD RMS adicionais, terá de exportar o TPD do servidor AD RMS local novamente e atualizar o TPD na organização de email baseada em nuvem. 
   
-#### <a name="how-do-you-know-this-step-worked"></a>Como saber se essa etapa funcionou?
+#### <a name="how-do-you-know-this-step-worked"></a>Como saber se esta etapa funcionou?
 
 Para verificar se você distribuiu com êxito um modelo de política de direitos do AD RMS, execute o cmdlet **Get-RMSTemplate** para verificar as propriedades do modelo. Para obter detalhes, consulte os exemplos no [Get-RMSTemplate](http://technet.microsoft.com/library/4a5066e8-b770-4aa2-b464-0d2190914f71.aspx).
   
-### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Etapa 4: Usar o Shell de gerenciamento do Exchange para habilitar o IRM
+### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Etapa 4: usar o Shell de gerenciamento do Exchange para habilitar o IRM
 
 Depois de importar o TPD e distribuir um modelo de política de direitos do AD RMS, execute o comando a seguir para habilitar o IRM para sua organização de email baseada em nuvem.
   
@@ -165,6 +167,6 @@ Para verificar se você importou com êxito o TPD e se habilitou o IRM, faça o 
   
 - Use o cmdlet do **Test-IRMConfiguration** para testar a funcionalidade do IRM. Para obter detalhes, confira "Exemplo 1" em [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Redija uma nova mensagem no Outlook Web App e proteja-a com o IRM ao selecionar a opção **Definir permissões** no menu estendido ( ![Ícone Mais opções](media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Redija uma nova mensagem no Outlook na Web e proteja-a com o IRM ao selecionar a opção **definir permissões** no menu estendido ![(ícone](media/ITPro-EAC-MoreOptionsIcon.gif)mais opções).
     
 

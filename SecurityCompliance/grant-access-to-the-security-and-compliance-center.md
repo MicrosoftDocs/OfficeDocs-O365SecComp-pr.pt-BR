@@ -1,5 +1,5 @@
 ---
-title: Fornecer acesso aos usuários para a segurança do Office 365 &amp; Centro de conformidade
+title: Conceder aos usuários acesso ao centro de conformidade &amp; de segurança do Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,62 +8,62 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Os usuários precisam ter permissões de segurança do Office 365 &amp; Centro de conformidade antes que eles possam gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
-ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
+description: Os usuários precisam receber permissões no centro de conformidade de segurança &amp; do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade.
+ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27221062"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216301"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornecer acesso aos usuários para a segurança do Office 365 &amp; Centro de conformidade
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Conceder aos usuários acesso ao centro de conformidade &amp; de segurança do Office 365
 
-Os usuários precisam ter permissões de segurança do Office 365 &amp; Centro de conformidade antes que eles possam gerenciar qualquer um dos seus recursos de segurança ou conformidade. Como um administrador global do Office 365 ou um membro do grupo de função OrganizationManagement na segurança &amp; Centro de conformidade, você pode conceder essas permissões aos usuários. Os usuários somente poderão gerenciar os recursos de segurança ou conformidade que você conceda acesso a. 
+Os usuários precisam receber permissões no centro de conformidade de segurança &amp; do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade. Como um administrador global do Office 365 ou membro do grupo de função gerenciamento no centro &amp; de conformidade de segurança, você pode conceder essas permissões aos usuários. Os usuários só poderão gerenciar os recursos de segurança ou de conformidade aos quais você conceder acesso. 
   
-Para obter mais informações sobre as permissões diferentes, você pode conceder aos usuários na segurança &amp; Centro de conformidade, check-out [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+Para obter mais informações sobre as diferentes permissões que você pode dar aos usuários no &amp; centro de conformidade de segurança, confira [permissões no centro &amp; de conformidade de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
-- Você precisa ser um administrador global do Office 365 ou um membro do grupo de funções OrganizationManagement na segurança &amp; Centro de conformidade, conclua as etapas neste artigo.
+- Você precisa ser um administrador global do Office 365, ou um membro do grupo de função gerenciamento no centro de &amp; conformidade de segurança, para concluir as etapas neste artigo.
     
-- Grupos de função para a segurança &amp; Centro de conformidade podem ter nomes semelhantes aos grupos de função no Exchange Online, mas eles não são os mesmos. 
+- Grupos de função para o &amp; centro de conformidade de segurança podem ter nomes semelhantes aos grupos de função no Exchange Online, mas eles não são os mesmos. 
     
-- Associações de grupo de função não são compartilhadas entre o Exchange Online e a segurança &amp; Centro de conformidade.
+- As associações do grupo de funções não são compartilhadas &amp; entre o Exchange Online e o centro de conformidade de segurança.
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Use o Centro de administração do Office 365 para fornecer outro acesso de usuário de segurança &amp; Centro de conformidade
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Usar o centro de administração do Office 365 para dar a outro usuário acesso &amp; ao centro de conformidade de segurança
 
-1. [Entrar no Office 365 e vá para o Centro de administração](https://go.microsoft.com/fwlink/p/?LinkId=525275).
+1. [Entre no Office 365 e vá para o centro de administração](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-2. No Centro de administração do Office 365, abra a **centrais de administração** e clique **segurança &amp; conformidade**. 
+2. No centro de administração do Office 365, abra **centros de administração** e clique em conformidade de **segurança &amp; **. 
     
-3. Na segurança &amp; Centro de conformidade, vá para **permissões**.
+3. No centro de &amp; conformidade de segurança, acesse **permissões**.
     
-4. Na lista, escolha o grupo de função que você deseja adicionar o usuário e clique em **Editar** ![ícone Editar](media/O365_MDM_CreatePolicy_EditIcon.gif).
+4. Na lista, escolha o grupo de funções ao qual você deseja adicionar o usuário e clique em **Editar** ![ícone](media/O365_MDM_CreatePolicy_EditIcon.gif)de edição.
     
-5. Na página de propriedades do grupo de funções em **membros**, clique em **Adicionar**![ícone Adicionar](media/ITPro-EAC-AddIcon.gif) e selecione o nome do usuário (ou usuários) para o qual você deseja adicionar. 
+5. Na página de propriedades do grupo de funções, em **Membros**, clique em](media/ITPro-EAC-AddIcon.gif) **Adicionar**![ícone de adição e selecione o nome do usuário (ou usuários) que você deseja adicionar. 
     
-6. Quando você tiver selecionado todos os usuários que você deseja adicionar ao grupo de funções, clique em **Adicionar-\> ** e **Okey**.
+6. Depois de selecionar todos os usuários que você deseja adicionar ao grupo de funções, clique em **Adicionar\> ** e em **OK**.
     
 7. Clique em **Salvar** para salvar as alterações feitas no grupo de funções. 
     
 ### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 
-1. Na segurança &amp; Centro de conformidade, vá para **permissões**.
+1. No centro de &amp; conformidade de segurança, acesse **permissões**.
     
 2. Na lista, selecione o grupo de funções para exibir os membros.
     
-3. À direita, nos detalhes do grupo de função, você pode exibir os membros do grupo de função.
+3. No lado direito, nos detalhes do grupo de função, você pode exibir os membros do grupo de função.
     
-## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Use o PowerShell para fornecer outro acesso de usuário de segurança &amp; Centro de conformidade
+## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Usar o PowerShell para conceder a outro usuário acesso ao &amp; centro de conformidade de segurança
 
-1. [Conectar-se a segurança do Office 365 & PowerShell do Centro de conformidade](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Conecte-se ao PowerShell do centro de conformidade do & de segurança do Office 365](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Use o comando **Add-RoleGroupMember** para adicionar um usuário à função de Gerenciamento de Organização, conforme mostrado no exemplo a seguir. 
     
@@ -76,13 +76,13 @@ Para obter mais informações sobre as permissões diferentes, você pode conced
   
 - _-Identity_ é o grupo de funções ao qual adicionar um membro. 
     
-- _Membro_ é a caixa de correio, o grupo de segurança universal (USG) ou computador para adicionar ao grupo de funções. Você pode especificar somente um membro ao mesmo tempo. 
+- _Member_ é a caixa de correio, grupo de segurança universal (USG) ou computador a ser adicionado ao grupo de funções. Você pode especificar apenas um membro por vez. 
     
 Para obter informações detalhadas sobre sintaxe e parâmetros, consulte [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
 ### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 
-Para verificar que você tiver concedido aos usuários acesso à segurança &amp; Centro de conformidade, use o cmdlet **Get-RoleGroupMember** para exibir os membros no grupo de função de gerenciamento da organização, conforme mostrado no exemplo a seguir. 
+Para verificar se você concedeu aos usuários acesso ao centro &amp; de conformidade de segurança, use o cmdlet **Get-RoleGroupMember** para exibir os membros no grupo de função gerenciamento da organização, conforme mostrado no exemplo a seguir. 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"

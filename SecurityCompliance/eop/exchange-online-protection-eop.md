@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Aqui estão algumas coisas que você deve estar ciente antes de começar a trabalhar com o EOP.
-ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: Veja algumas coisas que você deve estar ciente antes de começar a trabalhar com o EOP.
+ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026378"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206554"
 ---
 # <a name="exchange-online-protection"></a>Proteção do Exchange Online 
 
@@ -44,19 +44,19 @@ O conteúdo da Ajuda para administradores do EOP é composta pelas seguintes cat
     
 - [Mudando para EOP da Google Postini, Firewall de Vírus ou Spam Barracuda ou Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Descreve o processo para mudar para EOP a partir de outro produto de proteção de e-mail. 
     
-- [Gerenciar destinatários e grupos de funções de administrador no EOP](manage-recipients-and-admin-role-groups-in-eop.md) Descreve como gerenciar destinatários e como atribuir usuários a grupos de funções de administração. 
+- [Gerenciar destinatários e grupos de funções de administrador no EOP](manage-recipients-and-admin-role-groups-in-eop.md) Descreve como gerenciar destinatários e como atribuir usuários a grupos de funções de administrador. 
     
 - [Fluxo de emails no EOP](mail-flow-in-eop.md) Descreve como configurar cenários personalizados de fluxo de email usando conectores, como gerenciar domínios associados ao serviço e como ativar o recurso de Bloqueio de Borda Baseado em Diretório (DBEB). 
     
-- [Práticas recomendadas para configuração do EOP](best-practices-for-configuring-eop.md) Descreve as definições de configuração recomendada e considerações para depois de configurar e provisionar o seu serviço. 
+- [Práticas recomendadas para a configuração do EOP](best-practices-for-configuring-eop.md) Descreve as configurações e as considerações de configuração recomendadas para depois de configurar e provisionar o serviço. 
     
-- [Política de mensagens e conformidade no EOP](messaging-policy-and-compliance-in-eop.md) Descreve como usar regras de transporte do Exchange (regras de filtragem personalizadas) para impor políticas e normas específicas da empresa e como usar relatórios de auditoria para rastrear alterações na configuração para o serviço. 
+- [Política de mensagens e conformidade no EOP](messaging-policy-and-compliance-in-eop.md) Descreve como usar regras de transporte do Exchange (regras de filtragem personalizadas) para impor políticas e regulamentações específicas da empresa e como usar relatórios de auditoria para rastrear as alterações de configuração no serviço. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Descreve a filtragem de spam e de malware e mostra como personalizá-las para melhor atender às necessidades da sua organização. Descreve também as tarefas que os administradores e usuários finais podem realizar em mensagens em quarentena. 
     
-- [Relatórios e rastreamento de mensagens no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Descreve os relatórios e ferramentas de solução de problemas que estão disponíveis. 
+- [Relatórios e rastreamento de mensagens no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Descreve os relatórios e as ferramentas de solução de problemas disponíveis. 
     
-- [Exchange admin center uma proteção no Exchange Online](../exchange-admin-center-in-exchange-online-protection-eop.md) Descreve como acessar e navegar por meio da interface de gerenciamento do Exchange admin center (EAC) para gerenciar seu serviço EOP. 
+- [Centro de administração do Exchange no Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Descreve como acessar e navegar pela interface de gerenciamento do centro de administração do Exchange (Eat) para gerenciar o serviço EOP. 
     
 - [PowerShell da Proteção do Exchange Online](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Oferece informações sobre o PowerShell remoto, que permite gerenciar seu serviço do EOP a partir da linha de comando. 
     
@@ -69,11 +69,11 @@ O conteúdo da Ajuda para auxiliar usuários finais do EOP a gerenciar spam é c
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Descreve como os usuários finais podem localizar e liberar suas próprias mensagens em quarentena de spam na interface de usuário de quarentena de spam e indicá-las, opcionalmente, como não sendo lixo eletrônico para a Microsoft. 
         
-- [Envio de spam, não spam e mensagens de golpes de phishing à Microsoft para análise](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Descreve as diferentes maneiras em que os usuários finais podem enviar mensagens de spam (lixo) e não spam (não lixo) à Microsoft. Este tópico inclui links para as ferramentas de relatórios disponíveis no Microsoft Outlook e no OWA. 
+- [Enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Descreve as diferentes maneiras pelas quais os usuários finais podem enviar mensagens de spam (lixo eletrônico) e não spam (não lixo eletrônico) para a Microsoft. Este tópico inclui links para as ferramentas de relatório disponíveis no Microsoft Outlook e no Outlook na Web (anteriormente conhecido como Outlook Web App). 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Descreve como os usuários finais podem enviar um malware que passou por filtros anteriores ou enviar um arquivo que você acha que foi identificado incorretamente como malware. 
     
-- Os usuários finais pode adicionar domínios ou usuários específicos para uma lista de remetentes confiáveis ou uma lista de remetentes bloqueados, definindo suas configurações de lixo eletrônico no OWA Microsoft ou no Outlook. Observe que as mensagens enviadas de remetentes bloqueados são marcadas como spam, não é rejeitada, que significa que eles podem ser recuperados na pasta de lixo eletrônico ou quarentena (dependendo de onde seu administrador tiver configurado o serviço para enviar spam.) Para obter mais informações, consulte [usar o suplemento de mensagem de relatório](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Os usuários finais podem adicionar usuários ou domínios específicos a uma lista de remetentes seguros ou uma lista de remetentes bloqueados Configurando suas configurações de lixo eletrônico no Outlook ou no Outlook na Web. Observe que as mensagens enviadas de remetentes bloqueados são marcadas como spam, não rejeitadas, o que significa que elas podem ser recuperadas da pasta de lixo eletrônico ou quarentena (dependendo de onde o administrador configurou o serviço para enviar spam.) Para obter mais informações, consulte [use the Report Message Add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Ajuda e suporte para EOP](help-and-support-for-eop.md) Fornece informações sobre como obter ajuda e suporte técnico. 
     

@@ -1,54 +1,54 @@
 ---
-title: Substituição de aplicativo de Visualizador de criptografia do Office 365 de mensagem
+title: ReProvando o aplicativo visualizador de criptografia de mensagens do Office 365
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
-description: Em 15 de agosto de 2018, podemos removerá o aplicativo móvel do Office 365 Message Encryption (OME) Visualizador de armazenamentos Android e Apple. O aplicativo móvel do Visualizador de criptografia de mensagem do Office 365 foi necessária para ler mensagens de email e anexos que tenham sido criptografados com a versão anterior do OME no Apple e telefones Android. Além de remover o aplicativo do Visualizador de OME, não estamos fazendo outras alterações para a versão anterior do OME.
-ms.openlocfilehash: 43e514bd8336d283aaf774ffa4f49565f86e7102
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: No dia 15 de agosto de 2018, iremos remover o aplicativo móvel do Visualizador de criptografia de mensagens do Office 365 (OME) do Android e dos repositórios da Apple. O aplicativo móvel Office 365 Message Encryption Viewer era necessário para ler mensagens de email e anexos que foram criptografados com a versão anterior do OME em telefones Apple e Android. Além de remover o aplicativo OME Viewer, não estamos fazendo outras alterações na versão anterior do OME.
+ms.openlocfilehash: e08b6ecac9d68d7aa8e9e1d6cca6450a6461f67e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523457"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216831"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>Substituição de aplicativo de Visualizador de criptografia do Office 365 de mensagem
+# <a name="deprecating-office-365-message-encryption-viewer-app"></a>ReProvando o aplicativo visualizador de criptografia de mensagens do Office 365
 
-Em 15 de agosto de 2018, podemos removerá o aplicativo móvel do Office 365 Message Encryption (OME) Visualizador de armazenamentos Android e Apple. O aplicativo móvel do Visualizador de criptografia de mensagem do Office 365 foi necessária para ler mensagens de email e anexos que tenham sido criptografados com a versão anterior do OME no Apple e telefones Android. Além de remover o aplicativo do Visualizador de OME, não estamos fazendo outras alterações para a versão anterior do OME.
+No dia 15 de agosto de 2018, iremos remover o aplicativo móvel do Visualizador de criptografia de mensagens do Office 365 (OME) do Android e dos repositórios da Apple. O aplicativo móvel Office 365 Message Encryption Viewer era necessário para ler mensagens de email e anexos que foram criptografados com a versão anterior do OME em telefones Apple e Android. Além de remover o aplicativo OME Viewer, não estamos fazendo outras alterações na versão anterior do OME.
   
-## <a name="changes-beginning-august-2018"></a>Alterações começando de 2018 de agosto
+## <a name="changes-beginning-august-2018"></a>Alterações começando em agosto de 2018
 
-Como anunciado último setembro, podemos ter lançado uma nova versão do [Office 365 Message Encryption](https://aka.ms/ome2017) para que os usuários podem enviar criptografadas e protegidas mensagens para qualquer pessoa dentro ou fora da organização, sem a necessidade do aplicativo móvel. Desde então, adicionamos recursos adicionais: 
+Conforme anunciado em setembro, lançamos uma nova versão da [criptografia de mensagem do Office 365](https://aka.ms/ome2017) para que os usuários possam enviar mensagens criptografadas e protegidas para qualquer pessoa dentro ou fora da organização, sem a necessidade do aplicativo móvel. Desde então, adicionamos recursos adicionais: 
   
-- [Criptografar somente modelo](https://aka.ms/encryptonly)
+- [Modelo somente criptografia](https://aka.ms/encryptonly)
     
 - [Controle para descriptografar anexos](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
-Com essa alteração, os usuários não mais poderão baixar o aplicativo móvel do Visualizador de criptografia de mensagem do Office 365 começando 1 de agosto. Como resultado, os destinatários de email não poderá ler mensagens criptografadas com a versão anterior do OME em alguns dispositivos móveis Android e Apple. No entanto, eles ainda poderão ler essas mensagens em computadores pessoais (via navegadores desktop). Os usuários que já tenham baixado o aplicativo continuará possam usá-lo.
+Com essa alteração, os usuários não poderão mais baixar o aplicativo móvel do Office 365 Message Encryption Viewer, começando em 1º de agosto. Como resultado, os destinatários de email podem não conseguir ler mensagens criptografadas com a versão anterior do OME em alguns dispositivos móveis Android e Apple. No enTanto, eles ainda poderão ler essas mensagens em computadores pessoais (por meio de navegadores da área de trabalho). Os usuários que já baixaram o aplicativo continuarão a ser capazes de usá-lo.
   
 ## <a name="why-this-change-was-made"></a>Por que essa alteração foi feita
 
-A nova versão do OME não exige um aplicativo móvel para ler mensagens de email protegido e anexos. Os clientes do Office 365 usando o OME novo recursos podem exibir a mensagem protegida no Outlook mobile e os clientes do Office 365 podem exibir protegido mensagens em um navegador.
+A nova versão do OME não requer mais um aplicativo móvel para ler mensagens de email e anexos protegidos. Os clientes do Office 365 que usam os novos recursos do OME podem exibir a mensagem protegida no Outlook Mobile e os clientes não-Office 365 podem exibir mensagens protegidas em um navegador.
   
-Exigir que os usuários fazer o download de um aplicativo móvel é outro obstáculo para os clientes para exibir mensagens protegidas. Os novos recursos do Office 365 Message Encryption fornecem uma melhor experiência móvel.
+Exigir que os usuários baixem um aplicativo móvel é outro obstáculo para os clientes exibirem mensagens protegidas. Os novos recursos de criptografia de mensagem do Office 365 oferecem uma experiência móvel melhor.
   
-## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>Posso usar a versão anterior do Office 365 Message Encryption ainda
+## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>Ainda posso usar a versão anterior da criptografia de mensagem do Office 365
 
-A versão anterior do Office 365 Message Encryption não será preterida neste momento, no entanto, tomamos aprimoramentos significativos para a nova versão do Office 365 Message Encryption, o que fazer com que facilitam criptografar e proteger dados confidenciais para qualquer pessoa de direitos e em qualquer dispositivo -, incluindo a capacidade dos usuários do Office 365 ler mensagens protegidas diretamente no Outlook (área de trabalho, mobile e web). 
+A versão anterior da criptografia de mensagem do Office 365 não será preterida no momento, no entanto, fizemos melhorias significativas na nova versão da criptografia de mensagem do Office 365, o que facilita a criptografia e os direitos de proteção de dados confidenciais para qualquer pessoa e, em qualquer dispositivo, incluindo a capacidade de os usuários do Office 365 lerem mensagens protegidas diretamente no Outlook (desktop, Mobile e Web). 
   
-## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que é necessário fazer para preparar para que essa alteração
+## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que eu preciso fazer para se preparar para essa alteração
 
-Se sua organização atualmente envia criptografados anexos aos destinatários que exigem o aplicativo OME visualizador, você deverá atualizar seus recursos de treinamento e documentação.
+Se sua organização envia atualmente anexos criptografados para destinatários que exigem o aplicativo visualizador do OME, você deve atualizar a documentação e os recursos de treinamento.
   
-É recomendável atualizar as regras de fluxo de email Exchange existentes para usar a versão atual do OME para que sua organização pode tirar proveito dos recursos novos e aprimorados. Depois que você definiu as novas capacidades OME, os destinatários não será necessário o aplicativo OME Viewer para ler mensagens criptografadas em dispositivos móveis.
+Recomendamos a atualização de regras de fluxo de emails existentes do Exchange para usar a versão atual do OME para que sua organização possa aproveitar os recursos novos e aprimorados. Depois de configurar os novos recursos do OME, os destinatários não precisarão que o aplicativo do OME Viewer Leia mensagens criptografadas em dispositivos móveis.
   
-A Microsoft recomenda que você faça um plano para mover-se para as novas capacidades OME tão logo razoáveis para sua organização. Para obter instruções, consulte [configurar novos recursos do Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md). Se você deseja saber mais sobre como as novas capacidades funcionam pela primeira vez, consulte [Criptografia de mensagem do Office 365](ome.md).
+A Microsoft recomenda que você faça um plano para migrar para os novos recursos do OME assim que for razoável para sua organização. Para obter instruções, consulte [configurar novos recursos de criptografia de mensagem do Office 365](set-up-new-message-encryption-capabilities.md). Se quiser saber mais sobre como os novos recursos funcionam primeiro, confira criptografia de [mensagem do Office 365](ome.md).
   
 

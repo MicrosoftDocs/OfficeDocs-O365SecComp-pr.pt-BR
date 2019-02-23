@@ -1,28 +1,13 @@
 ---
-title: Configurar as notificações de spam para o usuário final no EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
-description: Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios.
-ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875793"
+Título: "configurar notificações de spam do usuário final no EOP" MS. Author: Krowley Author: kccross Manager: laurawi MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 MS. AssetID: e9947db5-1dd1-4493-872D-7362b24c7ba0 MS. Collection:
+    - M365-segurança-Descrição da conformidade: "você pode configurar notificações de spam para o usuário final para a política de filtro de conteúdo padrão da empresa ou para políticas de filtro de conteúdo personalizadas que são aplicadas a domínios."
 ---
+
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar as notificações de spam para o usuário final no EOP
   
 > [!IMPORTANT]
-> Este tópico é para clientes do Exchange Online Protection (EOP) que estão protegendo as caixas de correio local. Clientes do Exchange Online que estão protegendo as caixas de correio hospedadas em nuvem em vez disso, devem ler o tópico a seguir: [Configure End-User spam notificações no Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+> Este tópico é para clientes autônomos do Exchange Online Protection (EOP) que estão protegendo caixas de correio locais. Os clientes do Exchange Online que estão protegendo caixas de correio hospedadas na nuvem devem ler o seguinte tópico em vez disso: [configurar notificações de spam para o usuário final no Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
 Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios. Habilitar mensagens de notificação de spam do usuário final permite que os usuários finais gerenciem as suas próprias mensagens de spam em quarentena. As notificações de spam do usuário final não podem ser usadas com as políticas aplicadas a usuários ou grupos, ou a uma política com exceções.
   
@@ -30,17 +15,17 @@ As notificações de spam do usuário final contém uma lista de todas as mensag
   
 Após receber uma mensagem de notificação, os usuários finais podem escolher entre as seguintes opções:
 
-**Visualizar** a mensagem se você gostaria de visualizar o conteúdo ou cabeçalho antes de executar uma ação.
+**Visualize** a mensagem se quiser visualizar o conteúdo ou o cabeçalho antes de executar a ação.
 
-**Baixe** a mensagem se você gostaria de revisar a mensagem e os anexos (se houver) no seu dispositivo antes de executar uma ação.
+**Baixe** a mensagem se quiser revisar a mensagem e os anexos (se houver) no dispositivo antes de executar a ação.
 
-**Versão** se a mensagem não é spam e você desejar que o Office 365 para enviar a mensagem para sua caixa de correio.
+**Versão** se a mensagem não for spam e se você quiser que o Office 365 envie a mensagem para sua caixa de correio.
 
-**Versão & Permitir remetente** se a mensagem não é spam e você desejar que o Office 365 para adicionar o remetente a seus remetentes confiáveis e a lista de destinatários para e-mails futuros. Tenha em mente que o seu administrador pode ter outras configurações de permitir/bloquear ampla de organização que substituem sua lista de remetentes seguros.
+**Release _AMP_ Allow Sender** se a mensagem não for spam e se você quiser que o Office 365 adicione o remetente à sua lista de remetentes e destinatários confiáveis para futuros emails. Tenha em mente que seu administrador pode ter outras configurações de permissão/bloqueio de toda a organização que substituem sua lista de remetentes seguros.
 
-**Versão & relatório**, se a mensagem não é spam e você deseja enviar a mensagem para sua caixa de correio e relatá-la à Microsoft para análise.
+**Release _AMP_ Report**, se a mensagem não for spam e você deseja enviar a mensagem para sua caixa de correio e relatá-la para a Microsoft para análise.
 
-**Bloco** se desejar que o Office 365 para adicionar o remetente à lista de remetentes bloqueados.
+**Bloquear** se você quiser que o Office 365 adicione o remetente à sua lista de remetentes bloqueados.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 <a name="sectionSection0"> </a>

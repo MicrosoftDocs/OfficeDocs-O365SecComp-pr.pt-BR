@@ -1,60 +1,60 @@
 ---
-title: Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade
+title: Criar um cronograma para um relatório no centro de &amp; conformidade de segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
-description: Saiba como configurar uma agenda para um relatório na segurança &amp; Centro de conformidade.
-ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Saiba como configurar um cronograma para um relatório no centro de conformidade de &amp; segurança.
+ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014773"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216751"
 ---
-# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Para criar um cronograma para um relatório na segurança &amp; Centro de conformidade
+# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Criar um cronograma para um relatório no centro de &amp; conformidade de segurança
 
-Na segurança &amp; Centro de conformidade, vários [relatórios e ideias](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização atenuar e tratar ameaças à sua organização. Se você for um membro da equipe de segurança da sua organização, você pode criar um cronograma para um relatório. A agenda que você criar pode incluir um intervalos de data personalizada para atender à sua organização. 
+No centro de &amp; conformidade de segurança, vários [relatórios e informações](reports-and-insights-in-security-and-compliance.md) estão disponíveis para ajudar a equipe de segurança da sua organização a reduzir e resolver ameaças à sua organização. Se você é membro da equipe de segurança da sua organização, pode criar um cronograma para um relatório. O agendamento que você cria pode incluir um intervalo de datas personalizado para atender à sua organização. 
   
 ## <a name="create-a-schedule-for-a-report"></a>Criar um cronograma de um relatório
 
 > [!IMPORTANT]
-> Verifique se você tem as permissões necessárias para executar essa tarefa. Em geral, os administradores globais do Office 365, os administradores de segurança e leitores de segurança podem acessar relatórios na segurança &amp; Centro de conformidade. Para saber mais sobre permissões, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+> Verifique se você tem as permissões necessárias para executar essa tarefa. Em geral, os administradores globais do Office 365, administradores de segurança e leitores de segurança podem acessar relatórios &amp; no centro de conformidade de segurança. Para saber mais sobre permissões, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
   
-1. No [segurança &amp; Centro de conformidade](https://protection.office.com), vá para **relatórios** \> **painel**.
+1. No [centro de &amp; conformidade de segurança](https://protection.office.com), vá para **painel**de **relatórios** \> .
     
-2. Escolha um relatório. Nesse exemplo, iremos escolher o relatório de Status de proteção de ameaça.
+2. Escolha um relatório. Para este exemplo, escolheremos o relatório de status de proteção contra ameaças.
     
 3. No canto superior esquerdo do relatório, escolha **+ criar agendamento**.
     
-    ![Você pode criar um cronograma para relatórios na segurança &amp; Centro de conformidade](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Você pode criar um cronograma para relatórios no centro de &amp; conformidade de segurança](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
   
-    Abre a caixa de diálogo **criar agendamento** . 
+    A caixa de diálogo **criar agendamento** é aberta. 
     
-4. Mantenha as configurações padrão e escolha **criar agendamento**ou escolha **Personalizar agenda**.
+4. Mantenha as configurações padrão e escolha **criar agenda**ou escolha **Personalizar agendamento**.
     
-    ![Você pode usar as configurações padrão ou personalizar um cronograma de relatório](media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![Você pode usar as configurações padrão ou personalizar um agendamento de relatório](media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    Se você optar por personalizar seu agendamento de relatório, você pode especificar a frequência do relatório, o endereço de email de um remetente e o endereço de email do destinatário. 
+    Se você optar por personalizar seu cronograma de relatório, poderá especificar a frequência do relatório, o endereço de email de um remetente e o endereço de email de um destinatário. 
     
-Depois de ter criado uma agenda para um relatório, o que o relatório será entregue via email para os endereços dos destinatários emali automaticamente. 
+Depois de criar um cronograma para um relatório, esse relatório será entregue por email aos endereços de emali dos destinatários automaticamente. 
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Relatórios e ideias de segurança do Office 365 &amp; Centro de conformidade](reports-and-insights-in-security-and-compliance.md)
+[Relatórios e insights no centro de conformidade de &amp; segurança do Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Gerenciar agendas para relatórios na segurança &amp; Centro de conformidade](manage-schedules-for-multiple-reports.md)
+[Gerenciar agendas para relatórios no centro &amp; de conformidade de segurança](manage-schedules-for-multiple-reports.md)
   
-[Baixar relatórios existentes na segurança &amp; Centro de conformidade](download-existing-reports.md)
+[Baixar relatórios existentes no centro de &amp; conformidade de segurança](download-existing-reports.md)
   
-[Faça o download de um relatório personalizado na segurança &amp; Centro de conformidade](set-up-and-download-a-custom-report.md)
+[Baixar um relatório personalizado no centro de &amp; conformidade de segurança](set-up-and-download-a-custom-report.md)
   
 

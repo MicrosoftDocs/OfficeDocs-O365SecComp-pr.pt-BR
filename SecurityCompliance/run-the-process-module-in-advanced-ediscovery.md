@@ -6,74 +6,74 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Saiba as diretrizes para preparar os arquivos casos de dados do Office 365 para análise com eDiscovery avançadas do Office 365.  '
-ms.openlocfilehash: 52b1dce9fb778c6628d90c39135f0c93f08134d7
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Saiba mais sobre as diretrizes para preparar arquivos de caso dos dados do Office 365 para análise com a descoberta eletrônica avançada do Office 365.  '
+ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524606"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216111"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Executar o Módulo de processo na Descoberta Eletrônica Avançada do Office 365
 
-Arquivos de maiusculas são carregados para o eDiscovery Avançado durante a **preparação** \> **processo**. 
+Os arquivos de caso são carregados na descoberta eletrônica avançada durante o **processo**de **preparação** \> . 
   
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Diretrizes: Preparar dados para descoberta eletrônica avançada
+## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Diretrizes: preparando dados para descoberta eletrônica avançada
 
-- **Qualidade**: identificar claramente a população de arquivo maiusculas pertinente ao caso.
+- **Qualidade**: identifique claramente o preenchimento de arquivo de caso pertinente à ocorrência.
     
-- **Cargas**: carregar os arquivos em um local que seja acessível para descoberta eletrônica avançada.
+- **Carrega**: carregar os arquivos em um local acessível à descoberta eletrônica avançada.
     
-- **ID do arquivo**: um identificador de arquivo exclusivo no eDiscovery avançado. Se nenhum identificador de arquivo for importado, o eDiscovery avançado gera automaticamente o ID. Se você mapear a ID de uma carga de processo subsequente e mapear um caminho diferente na carga da processo inicial, eDiscovery avançado irá substituir o caminho (em vez de adicionar uma nova entrada de arquivo). A ID pode ser usada como uma referência no processo de exportação. O valor de ID não deve ser "-1".
+- **ID de arquivo**: um identificador de arquivo exclusivo na descoberta eletrônica avançada. Se nenhum identificador de arquivo for importado, a descoberta eletrônica avançada gerará automaticamente a ID. Se você mapear a ID em uma carga de processo subsequente e mapear um caminho diferente do que na carga de processo inicial, a descoberta eletrônica avançada substituirá o caminho (em vez de adicionar uma nova entrada de arquivo). A ID pode ser usada como referência no processo de exportação. O valor de ID não deve ser "-1".
     
-- **MD5**: essa assinatura é usada para diferenciar arquivos (dois arquivos não são considerados cópias exatas a menos que tenham o mesmo MD5). Por padrão, o eDiscovery avançado calcula o MD5 dos arquivos. Quando os arquivos carregados são arquivos de texto, é recomendável para carregar e mapear o valor de MD5 original em vez de calculá-lo no eDiscovery avançado.
+- **MD5**: essa assinatura é usada para diferenciar entre arquivos (dois arquivos não são considerados duplicatas exatas, a menos que tenham o mesmo MD5). Por padrão, a descoberta eletrônica avançada calcula o MD5 de arquivos. Quando os arquivos carregados são arquivos de texto, é recomendável carregar e mapear o valor MD5 original, em vez de calcular a descoberta eletrônica avançada.
     
-- O **nome e tipo de arquivo**:
+- **Nome e tipo de arquivo**:
     
-  - EDiscovery avançado pode processar arquivos de vários formatos e extrair arquivos nativos carregados em um formato padrão, tais como \*. TXT, HTML, ou. XML. processamento de arquivos de texto é menor do que arquivos nativos. Arquivos de texto extraídos são armazenados na pasta maiusculas.
+  - A descoberta eletrônica avançada pode processar arquivos de vários formatos e extrair arquivos nativos carregados em um formato padrão, \*como. TXT, HTML ou. XML. o processamento de arquivos de texto é mais rápido do que arquivos nativos. Arquivos de texto extraídos são armazenados na pasta de casos.
     
-  - Não carrega arquivos que não podem ser extraídos, como arquivos de sistema ou imagens gráficas. Esses arquivos podem atrasar.
+  - Não carregue arquivos que não podem ser extraídos, como arquivos do sistema ou imagens gráficas. Esses arquivos podem atrasar o processamento.
     
-  - Verifique se os nomes de arquivo são significativamente nomeados e caminhos estão corretos.
+  - Verifique se os nomes de arquivo são nomeados de forma significativa e se os caminhos estão corretos.
     
-- **Caminho do arquivo**: eDiscovery avançado pode carregar arquivos com comprimentos de caminho até 400 caracteres.
+- **Caminho do arquivo**: a descoberta eletrônica avançada pode carregar arquivos com comprimentos de caminho de até 400 caracteres.
     
-- **Extração de texto**: quando extrair texto de arquivos nativos, bem como texto normal, o seguinte também é extraído: colunas de texto oculto (Excel e. doc), oculto (Excel), controlar alterações (. doc), objetos de notas (. ppt), incorporados de alto-falante (por exemplo, Objetos do Excel em um. ppt). Eles podem ser exibidos no editor de texto.
+- **Extração de texto**: ao extrair texto de arquivos nativos, além do texto normal, os seguintes itens também são extraídos: texto oculto (Excel e. doc), colunas ocultas (Excel), controles de acompanhamento (. doc), anotações do orador (. ppt), objetos incorporados (por exemplo, Objetos do Excel em um. ppt). Eles podem ser exibidos no editor de texto.
     
-- **Ignorar texto**: esse recurso opcional é definido depois que o processo é executado e antes de analisar. Ignorar texto deve ser usado com cuidado porque seu uso pode reduzir o desempenho da análise de arquivo.
+- **Ignorar texto**: este recurso opcional é definido após a execução do processo e antes da análise. Ignorar texto deve ser usado com cuidado porque seu uso pode reduzir o desempenho da análise de arquivo.
     
-- **Texto multilíngue**: eDiscovery avançada não processa atualmente multilíngues nomes para marcas, dos responsáveis e problemas.
+- **Texto multilíngue**: a descoberta eletrônica avançada atualmente não lida com nomes multilíngues para marcas, responsáveis e problemas.
     
-- **Metadados**: Determine se há metadados que você deseja salvar no banco de dados caso para referência futura, como o intervalo de datas, tamanho do arquivo, tipo de arquivo, dos responsáveis e da entidade. Metadados podem ser carregados depois arquivos já foram carregados sem executar novamente o inventário ou adicionando reprocessamento sobrecarga. 
+- **Metadados**: Determine se há metadados que você deseja salvar no banco de dados de caso para referência futura, como intervalo de datas, tamanho do arquivo, tipo de arquivo, responsáveis e assunto. Os metadados podem ser carregados depois que os arquivos já foram carregados sem a execução do inventário ou a adição de sobrecarga de reprocessamento. 
     
-  - Se os arquivos foram originalmente carregados pelo caminho, mapeie a coluna de caminho quando mais tarde a importação de metadados. É possível consultar o arquivo pela ID e para mapear um caminho diferente. Este cenário útil é quando os caminhos de arquivo são alterados.
+  - Se os arquivos foram originalmente carregados pelo caminho, mapeie a coluna de caminho quando importar metadados mais tarde. É possível fazer referência ao arquivo pela ID e mapear um caminho diferente. Este é um cenário útil quando os caminhos de arquivo mudam.
     
-  - Se os arquivos foram originalmente carregados pela ID do arquivo, mapeie a coluna identificação ao carregar os metadados. Referindo-se ao arquivo pelo caminho (em vez de ID) fará com que arquivos sejam carregados novamente com um ID diferente. EDiscovery avançado cria cópias dos arquivos de preferência seja que metadados de carregamento dos arquivos existentes.
+  - Se os arquivos foram originalmente carregados por ID de arquivo, mapeie a coluna de ID ao carregar metadados. Fazer referência ao arquivo por caminho (em vez de ID) causará a reinicialização de arquivos com uma ID diferente. A descoberta eletrônica avançada cria cópias dos arquivos, em vez de carregar metadados dos arquivos existentes.
     
-- **Famílias**: não é possível carregar uma família sem seu pai (cabeça da família). 
+- **Famílias**: não é possível carregar uma família sem o seu pai (chefe da família). 
     
-- **Tamanho do arquivo**: não há nenhuma limitação no tamanho de arquivos carregados para descoberta eletrônica avançada. Para análise (Analyze, relevância, etc.), o limite é 5,242,880 caracteres de texto extraído. Arquivos maiores são ignorados (por exemplo, em relevância, arquivos não participa do processo de treinamento de relevância em não receberá uma pontuação de relevância após o cálculo de lote).
+- **Tamanho do arquivo**: não há limitação no tamanho dos arquivos carregados para a descoberta eletrônica avançada. Para análise (análise, relevância, etc.), o limite é de 5.242.880 caracteres de texto extraído. Arquivos maiores são ignorados (por exemplo, em relevância, os arquivos não participam do processo de treinamento de relevância e não recebem uma pontuação de relevância após o cálculo em lotes).
     
-- **Quantidade de arquivo**: não há nenhum limite recomendado no número de arquivos que podem ser administrados em um único caso. Desempenho depende dos recursos do seu sistema. 
+- **Quantidade de arquivo**: não há limite recomendado para o número de arquivos que podem ser tratados em um único caso. O desempenho depende dos recursos do seu sistema. 
     
-## <a name="filtering-files"></a>Filtragem de arquivos
+## <a name="filtering-files"></a>Filtrando arquivos
 
-Um rótulo definida pelo usuário pode ser associado um conjunto de arquivos para excluí-los do processo ou outras tarefas. Cada sessão de processo é associado a uma ID de lote. Embora a ID de lote não estiver visível ao especialista em relevância, isso pode ser feito usando um utilitário de pesquisa, adicionando um filtro para o lote atual e a marcação de todos os arquivos apropriados com um rótulo definida pelo usuário. 
+Um rótulo definido pelo usuário pode ser associado a um conjunto de arquivos para excluí-los do processo ou de outras tarefas. Cada sessão de processo é associada a uma ID de lote. Embora a ID de lote não fique visível para o especialista em relevância, isso pode ser feito com o uso de um utilitário de pesquisa, adicionando um filtro para o lote atual e marcando todos os arquivos apropriados com um rótulo definido pelo usuário. 
   
 ## <a name="see-also"></a>Confira também
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Executando o módulo de processo e carregamento de dados](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Executando o módulo de processo e carregando dados](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   
-[Exibição de resultados de módulo de processo](view-process-module-results-in-advanced-ediscovery.md)
+[Exibir resultados do módulo de processo](view-process-module-results-in-advanced-ediscovery.md)
 

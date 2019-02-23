@@ -1,71 +1,71 @@
 ---
-title: Localizar e investigar email mal-intencionado que foi entregue (Office 365 Threat Intelligence)
+title: Encontre e investigue emails mal-intencionados que foram entregues (inteligência de ameaças do Office 365)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: M365-security-compliance
-description: Aprenda a usar inteligência de ameaça para localizar e investigar email mal-intencionado.
-ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Saiba como usar a inteligência de ameaças para localizar e investigar emails mal-intencionados.
+ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995182"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215491"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Localizar e investigar email mal-intencionado que foi entregue (Office 365 Threat Intelligence)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Encontre e investigue emails mal-intencionados que foram entregues (inteligência de ameaças do Office 365)
 
-[Office 365 Threat Intelligence](office-365-ti.md) permite investigar atividades que colocam seus usuários em risco e ações para proteger sua organização. Por exemplo, se você fazem parte da equipe de segurança da sua organização, poderá localizar e investigar mensagens de email suspeitas que foram entregues aos seus usuários. Você pode fazer isso usando o [Gerenciador de ameaça](get-started-with-ti.md#threat-explorer).
+O [Office 365 Threat Intelligence](office-365-ti.md) permite investigar as atividades que colocam seus usuários em risco e tomar medidas para proteger sua organização. Por exemplo, se você fizer parte da equipe de segurança da sua organização, poderá encontrar e investigar mensagens de email suspeitas que foram entregues aos seus usuários. Você pode fazer isso usando o [Explorador de ameaças](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> Iniciando no fevereiro de 2019 e aplicação nos próximos meses várias, inteligência de dados do Office 365 ameaça está se tornando Office 365 avançadas ameaça proteção plano 2, com os recursos de proteção de ameaça adicional. Para saber mais, consulte [preços e planos de proteção de ameaça avançadas do Office 365](https://products.office.com/exchange/advance-threat-protection) e o [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partir de fevereiro de 2019 e saindo dos próximos meses, o Office 365 Threat Intelligence está se tornando o Office 365 Advanced Threat Protection Plan 2, com recursos adicionais de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Antes de começar...
 
 Verifique se os seguintes requisitos são atendidos:
   
-- Sua organização tem [Inteligência de ameaça do Office 365](office-365-ti.md) e [Atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Sua organização tem a [inteligência contra ameaças do office 365](office-365-ti.md) e [atribui licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
-- [Log de auditoria do Office 365](turn-audit-log-search-on-or-off.md) é ativada para sua organização. 
+- O [log de auditoria do Office 365](turn-audit-log-search-on-or-off.md) está ativado para sua organização. 
     
-- Sua organização tem políticas definidas para antispam, antimalware, antiphishing e assim por diante. Consulte [gerenciamento de segurança do Office 365 de ameaça &amp; Centro de conformidade](threat-management.md).
+- Sua organização tem políticas definidas para antispam, anti-malware, anti-phishing e assim por diante. Consulte [Gerenciamento de ameaças no centro de conformidade &amp; de segurança do Office 365](threat-management.md).
     
-- Você é um administrador global do Office 365 ou você tem o administrador de segurança ou a função de pesquisa e limpar atribuída na segurança &amp; Centro de conformidade. Consulte [Permissions in a segurança do Office 365 &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+- Você é um administrador global do Office 365 ou tem o administrador de segurança ou a função de pesquisa e limpeza atribuída no centro de &amp; conformidade de segurança. Consulte [permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="dealing-with-suspicious-emails"></a>Lidando com emails suspeitos
 
-Invasores mal-intencionados podem ser enviar email aos seus usuários para testar e phishing suas credenciais e acessar os seus segredos corporativos! Para impedir isso, você deve usar os serviços de proteção de ameaça oferecidos pelo Office 365, incluindo o Exchange Online Protection e proteção avançada de ameaça. No entanto, há ocasiões quando um invasor pode enviar emails para seus usuários contendo uma URL e apenas no futuro fazer esse ponto de URL conteúdo mal-intencionado (malware, etc.). Como alternativa, você pode perceber muito depois que um usuário em sua organização foi comprometido e enquanto o usuário foi comprometido, o invasor usados essa conta para enviar email para outros usuários da sua empresa. Como parte do limpando esses dois cenários, convém remover mensagens de email de entrada dos usuários. Em situações como essas, você pode aproveitar o Explorer de ameaça para encontrar e remover essas mensagens de email!
+Invasores mal-intencionados podem estar enviando emails aos seus usuários para tentarem e Phish suas credenciais e obter acesso aos segredos corporativos! Para evitar isso, você deve usar os serviços de proteção contra ameaças oferecidos pelo Office 365, incluindo proteção do Exchange Online e proteção avançada contra ameaças. No enTanto, há ocasiões em que um invasor pode enviar emails para seus usuários que contenham uma URL e apenas mais tarde, fazer essa URL apontar para conteúdo mal-intencionado (malware, etc.). Como alternativa, você pode perceber muito tarde que um usuário em sua organização foi comprometido e enquanto esse usuário foi comprometido, um invasor usou essa conta para enviar emails a outros usuários da sua empresa. Como parte da limpeza desses dois cenários, talvez você queira remover mensagens de email de caixas de entrada de usuários. Em situações como essas, você pode usar o explorador de ameaças para encontrar e remover essas mensagens de email!
   
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Localizar e excluir email suspeita que foi entregue
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Localizar e excluir emails suspeitos que foram entregues
 
 > [!TIP]
-> [Gerenciador de ameaça](get-started-with-ti.md#threat-explorer) (também conhecido como Explorer) é um relatório poderoso que pode atender a vários propósitos, como Localizando e excluindo mensagens, que identifica o endereço IP de um remetente do email maliciosa ou iniciar um incidente para uma investigação detalhada. O procedimento a seguir se concentra em usando o Explorer para localizar e excluir email maliciosa de caixas de correio de destinatários. 
+> [Explorador de ameaças](get-started-with-ti.md#threat-explorer) (também chamado de Explorer), é um relatório poderoso que pode servir a vários propósitos, como localizar e excluir mensagens, identificar o endereço IP de um remetente de email mal-intencionado ou iniciar um incidente para investigação adicional. O procedimento a seguir se concentra no uso do Explorer para localizar e excluir emails mal-intencionados de caixas de correio de destinatários. 
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. Isso leva você para a segurança &amp; Centro de conformidade. 
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365. Isso leva você para o centro &amp; de conformidade de segurança. 
     
-2. No painel de navegação esquerdo, escolha **gerenciamento de ameaça** \> **Explorer**.
+2. No painel de navegação à esquerda, escolha **Gerenciador**de **Gerenciamento** \> de ameaças.
     
-3. No menu Exibir, escolha **todos os emails**.<br/>![Use o menu Exibir para escolher entre eletrônico e conteúdo de relatórios](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. No menu Exibir, escolha **todos os emails**.<br/>![Usar o menu Exibir para escolher entre relatórios de email e conteúdo](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Observe os rótulos que aparecem no relatório, como **entregues**, **desconhecido**ou **entregue ao lixo**.<br/>![Gerenciador de ameaça mostrando dados para todos os emails](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Dependendo das ações que foram feitas em mensagens de email para sua organização, você poderá ver rótulos adicionais, como **bloqueado** ou **foi substituído**.)
+4. Observe os rótulos que aparecem no relatório, como **entregue**, **desconhecido**ou **entregue ao lixo eletrônico**.<br/>![Explorador de ameaças mostrando dados para todos os emails](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Dependendo das ações que foram tomadas nas mensagens de email de sua organização, você poderá ver rótulos adicionais, como bloqueados **** ou **substituídos**.)
     
-5. No relatório, escolha **entregue** para exibir somente os emails que terminou nas caixas de entrada dos usuários.<br/>![Clicando em "Entregue ao lixo" remove dados de modo de exibição](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. No relatório, escolha **entregue** para exibir apenas os emails que acabaram nas caixas de entrada dos usuários.<br/>![Clicar em "entregue a lixo eletrônico" remove esses dados da exibição](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. O gráfico abaixo, revise a lista de **Email** abaixo do gráfico.<br/>![O gráfico abaixo, exibir uma lista de mensagens de email que foram detectados](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Abaixo do gráfico, revise **** a lista de emails abaixo do gráfico.<br/>![Abaixo do gráfico, exiba uma lista de mensagens de email que foram detectadas](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. Na lista, escolha um item para exibir mais detalhes sobre essa mensagem de email. Por exemplo, você pode clicar a linha de assunto para exibir informações sobre o remetente, recipients, anexos e outras semelhantes mensagens de email.<br/>![Você pode exibir informações adicionais sobre um item, incluindo detalhes e todos os anexos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. Na lista, escolha um item para exibir mais detalhes sobre a mensagem de email. Por exemplo, você pode clicar na linha de assunto para exibir informações sobre o remetente, destinatários, anexos e outras mensagens de email semelhantes.<br/>![Você pode visualizar informações adicionais sobre um item, incluindo detalhes e todos os anexos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. Depois de exibir informações sobre as mensagens de email, selecione um ou mais itens na lista para ativar **+ ações**.
+8. Após exibir informações sobre mensagens de email, selecione um ou mais itens na lista para ativar **+ ações**.
     
-9. Use a lista **+ ações** para aplicar uma ação, como itens de **Mover para excluído** . Isso excluirá as mensagens selecionadas de caixas de correio dos destinatários.<br/>![Quando você seleciona uma ou mais mensagens de email, você poderá escolher entre várias ações disponíveis](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Use a lista de **ações +** para aplicar uma ação, como **mover para itens excluídos** . Isso excluirá as mensagens selecionadas das caixas de correio dos destinatários.<br/>![Ao selecionar uma ou mais mensagens de email, você pode escolher entre várias ações disponíveis](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -73,6 +73,6 @@ Invasores mal-intencionados podem ser enviar email aos seus usuários para testa
   
 [Proteção contra ameaças do Office 365](protect-against-threats.md)
   
-[Exibir relatórios de proteção de ameaça avançadas do Office 365](view-reports-for-atp.md)
+[Exibir relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md)
   
 

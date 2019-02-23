@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Você já se perguntou qual é a segurança da sua organização no Office 365? A pontuação segura está aqui para ajudar. A pontuação segura analisa a segurança da sua organização com base em suas atividades regulares e configurações de segurança no Office 365 e atribui uma pontuação.
-ms.openlocfilehash: cf272869981dd73e1ceb4bd7180cc16acaed0516
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29992355"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220351"
 ---
 # <a name="office-365-secure-score"></a>Classificação de Segurança do Office 365
 

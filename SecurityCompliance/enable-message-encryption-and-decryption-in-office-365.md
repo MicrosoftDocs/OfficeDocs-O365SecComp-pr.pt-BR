@@ -6,23 +6,23 @@ manager: laurawi
 ms.date: 4/27/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
-description: Criptografia de mensagem do Office 365 permite que os usuários de email enviem mensagens criptografadas pessoas dentro ou fora da organização. Como administrador, você pode habilitar o Office 365 Message Encryption criando mail regras do fluxo (também conhecido como regras de transporte) que definiu as condições para a criptografia.
-ms.openlocfilehash: be25b0cd2ece5269091309b91bff5df3a83cee5c
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: A criptografia de mensagem do Office 365 permite que os usuários de email enviem mensagens criptografadas para pessoas dentro de nossa organização externa. Como administrador, você pode habilitar a criptografia de mensagem do Office 365 criando regras de fluxo de emails (também conhecidas como regras de transporte) que definem as condições de criptografia.
+ms.openlocfilehash: 32d363b350cb9dfcfc4f8ac5d47b345075ead45a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272136"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215601"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Habilitar a criptografia e a descriptografia [EOP]
 
-Criptografia de mensagem do Office 365 permite que os usuários de email enviem mensagens criptografadas pessoas dentro ou fora da organização. Como administrador, você pode habilitar o Office 365 Message Encryption criando mail regras do fluxo (também conhecido como regras de transporte) que definiu as condições para a criptografia. Quando um de seus usuários envia uma mensagem que corresponde às condições da regra, a mensagem é criptografada.
+A criptografia de mensagem do Office 365 permite que os usuários de email enviem mensagens criptografadas para pessoas dentro de nossa organização externa. Como administrador, você pode habilitar a criptografia de mensagem do Office 365 criando regras de fluxo de emails (também conhecidas como regras de transporte) que definem as condições de criptografia. Quando um de seus usuários envia uma mensagem que corresponde às condições da regra, a mensagem é criptografada.
   
-Para saber como criar regras de fluxo de criptografia de mail, consulte [definir regras para criptografar ou descriptografar mensagens de email](https://go.microsoft.com/fwlink/p/?LinkID=402846).
+Para saber como criar regras de fluxo de emails para criptografia, confira [definir regras para criptografar ou descriptografar mensagens de email](https://go.microsoft.com/fwlink/p/?LinkID=402846).
   
 ## <a name="see-also"></a>See also
 

@@ -6,61 +6,61 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Revise o funcionamento do documento semelhança valor, o nível mínimo de semelhança para dois arquivos a serem considerados perto duplicatas no eDiscovery avançadas do Office 365. '
-ms.openlocfilehash: 39cd8c31204f0164f6b52c71fa707253cb22758a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Revise como o valor de similaridade do documento, o nível mínimo de aparência de dois arquivos a serem considerados próximos duplicados, funciona na descoberta eletrônica avançada do Office 365. '
+ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523885"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220421"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Entender similaridade de documentos na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-No eDiscovery avançado, semelhança de documento é o nível mínimo de semelhança necessário para dois documentos a serem considerados como perto duplicatas.
+Na descoberta eletrônica avançada, a similaridade de documentos é o nível mínimo de aparência necessária para dois documentos a serem considerados como duplicatas.
   
 > [!TIP]
-> Para a maioria dos aplicativos de negócios, é recomendável usar um valor de semelhança de 60% - 75%. Para material de reconhecimento óptico de caracteres (OCR) de péssima qualidade, valores de semelhança menores podem ser aplicados. 
+> Para a maioria dos aplicativos de negócios, é recomendável usar um valor de similaridade de 60% a 75%. Para material de reconhecimento óptico de caracteres (OCR) de qualidade muito ruim, valores de similaridade menores podem ser aplicados. 
   
 > [!NOTE]
-> Depois que ele tiver sido definida e executar para um determinado caso, o valor de semelhança não pode ser alterado. 
+> Após a definição e a execução de um determinado caso, o valor de similaridade não pode ser alterado. 
   
-Em um conjunto de duplicados Near (fim), pode haver documentos com um nível de semelhança abaixo do limiar de semelhança. Para um documento ingressar em um conjunto de término, deve haver pelo menos um documento no término definidas com um nível de semelhança excedendo a semelhança. 
+Dentro de um conjunto Near-Duplicate (ND), pode haver documentos com um nível de aparência abaixo do limite de similaridade. Para que um documento ingresse em um conjunto de ND, deve haver pelo menos um documento no conjunto de ND com um nível de semelhante. 
   
-Por exemplo, suponha a semelhança estiver definida como 80%, F1 do documento se parece com o documento F2 em um nível de 85% e documento F2 se parece com o documento F3 em um nível de 90%. 
+Por exemplo, suponha que a similaridade seja definida como 80%, o documento F1 se parece com o documento F2 em um nível de 85%, e o documento F2 é parecido com o documento F3 em um nível de 90%. 
   
-No entanto, documento F1 pode se parecer com o documento F3 em um nível de apenas 70%, que está abaixo do limiar. No entanto, neste exemplo, documentos F1, F2 e F3 todos serão exibidos no término de um definido. Da mesma forma, usando um valor de semelhança de 80%, talvez criamos dois conjuntos, EquiSet-1 e EquiSet-2. EquiSet-1 contém documentos E1 e E2. Equiset-2 contém documentos F1, F2 e F3. 
+No enTanto, o documento F1 pode se parecer com o documento F3 em um nível de apenas 70%, o que está abaixo do limite. No enTanto, neste exemplo, os documentos F1, F2 e F3 aparecem no conjunto de um. Da mesma forma, usando um valor de similaridade de 80%, podemos criar dois conjuntos, EquiSet-1 e EquiSet-2. EquiSet-1 contém documentos E1 e E2. Equiset-2 contém documentos F1, F2 e F3. 
   
 Os níveis de semelhança são ilustrados da seguinte maneira:
   
 ![Similaridade de documentos](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-Suponha que a outro documento, X1, agora é inserido. A semelhança entre X1 e E3 é 87%. Da mesma forma, a semelhança entre X1 e F1 é 92%. Como resultado, o EquiSet -1, EquiSet -2 e X1 agora são combinados em um término definido.
+Suponha que outro documento, x1, agora seja inserido. A semelhança entre X1 e E3 é de 87%. Da mesma forma, a semelhança entre X1 e F1 é de 92%. Como resultado, EquiSet-1, EquiSet-2 e X1 agora são combinados em um conjunto de ND.
   
 ![Similaridade de documentos](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
-> Se qualquer dois documentos são atribuídos a um conjunto de término, eles permanecerão juntos no mesmo conjunto de término, mesmo se adicionais os documentos são adicionados ao conjunto ou se os conjuntos são mesclados. 
+> Se houver dois documentos atribuídos a um conjunto de ND, eles permanecerão juntos no mesmo conjunto de ND, mesmo se os documentos adicionais forem adicionados ao conjunto ou se os conjuntos forem mesclados. 
   
-Depois que forem mesclados conjuntos, o documento Pivot pode alterar quando novos documentos forem adicionados a um conjunto. 
+Após a mesclagem dos conjuntos, o documento dinâmico pode ser alterado quando novos documentos são adicionados a um conjunto. 
   
 ## <a name="see-also"></a>Confira também
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Definindo opções de analisar](set-analyze-options-in-advanced-ediscovery.md)
+[Configuração das opções de análise](set-analyze-options-in-advanced-ediscovery.md)
   
-[Configuração Ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
+[Configuração ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
   
-[Analisar configuração configurações avançada](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Configuração analisar configurações avançadas](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Exibindo os resultados da análise](view-analyze-results-in-advanced-ediscovery.md)
+[Exibindo resultados de análise](view-analyze-results-in-advanced-ediscovery.md)
 

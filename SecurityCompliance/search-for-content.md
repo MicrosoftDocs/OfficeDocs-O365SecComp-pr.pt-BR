@@ -1,85 +1,85 @@
 ---
-title: Procurar conteúdo no Office 365
+title: Procure conteúdo no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/4/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para localizar rapidamente email nas caixas de correio do Exchange, documentos em sites do SharePoint e locais de OneDrive e conversas em Skype para negócios de mensagens instantâneas.
-ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+description: Use a ferramenta descoberta eletrônica de pesquisa de conteúdo no centro &amp; de conformidade de segurança do Office 365 para localizar emails rapidamente nas caixas de correio do Exchange, documentos em sites do SharePoint e locais do onedrive e conversas de mensagens instantâneas no Skype for Business.
+ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238393"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214531"
 ---
-# <a name="search-for-content-in-office-365"></a>Procurar conteúdo no Office 365
+# <a name="search-for-content-in-office-365"></a>Procure conteúdo no Office 365
 
-Use a ferramenta de pesquisa de conteúdo na segurança &amp; Centro de conformidade para localizar rapidamente email nas caixas de correio do Exchange, documentos em sites do SharePoint e locais de OneDrive e conversas em Skype para negócios de mensagens instantâneas. Você pode usar a ferramenta de pesquisa de conteúdo para pesquisar por email, documentos e nas ferramentas de colaboração do Office 365, como Microsoft Teams e grupos do Office 365 as conversas de mensagens instantâneas.
+Use a ferramenta de pesquisa de conteúdo no &amp; centro de conformidade de segurança para localizar rapidamente emails em caixas de correio do Exchange, documentos em sites do SharePoint e locais do onedrive e conversas de mensagens instantâneas no Skype for Business. Você pode usar a ferramenta de pesquisa de conteúdo para pesquisar emails, documentos e conversas de mensagens instantâneas em ferramentas de colaboração do Office 365, como Microsoft Teams e grupos do Office 365.
   
 ## <a name="search-for-content"></a>Procurar conteúdo
 
-A primeira etapa é iniciar usando a ferramenta de pesquisa de conteúdo para escolher locais de conteúdo para pesquisar e configurar uma consulta de palavra-chave para procurar itens específicos. Ou então, basta deixar a consulta em branco e retornar todos os itens em locais de destino.
+A primeira etapa é começar a usar a ferramenta de pesquisa de conteúdo para escolher os locais de conteúdo para pesquisar e configurar uma consulta de palavra-chave para procurar itens específicos. Ou você pode simplesmente deixar a consulta em branco e retornar todos os itens nos locais de destino.
   
 - [Criar e executar](content-search.md) uma pesquisa de conteúdo 
     
-- [Consultas de pesquisa e usar as condições de compilação](keyword-queries-and-search-conditions.md) para restringir a pesquisa 
+- [Criar consultas de pesquisa e usar condições](keyword-queries-and-search-conditions.md) para restringir a pesquisa 
     
-- [Configurar permissões de pesquisa de filtragem](permissions-filtering-for-content-search.md) para que um gerente de descoberta eletrônica somente pode pesquisar o subconjunto de caixas de correio ou sites em sua organização 
+- [Configurar a filtragem de permissões de pesquisa](permissions-filtering-for-content-search.md) para que um gerente de descoberta eletrônica possa Pesquisar apenas o subconjunto de sites ou caixas de correio em sua organização 
     
-- [Executar uma pesquisa de ID de lista](csv-file-for-an-id-list-content-search.md) para pesquisar mensagens de email específicos 
+- [Executar uma pesquisa de lista de ID](csv-file-for-an-id-list-content-search.md) para pesquisar mensagens de email específicas 
     
-- [Caixas de correio baseadas em nuvem do pesquisa](search-cloud-based-mailboxes-for-on-premises-users.md) para usuários locais no Office 365
+- [Pesquisar caixas de correio baseadas em nuvem](search-cloud-based-mailboxes-for-on-premises-users.md) para usuários locais no Office 365
 
-- [Exibir estatísticas de palavra-chave](view-keyword-statistics-for-content-search.md) para os resultados de uma pesquisa e, em seguida, refinar a consulta, se necessário 
+- [Exibir estatísticas de palavras-chave](view-keyword-statistics-for-content-search.md) para os resultados de uma pesquisa e depois refinar a consulta, se necessário 
     
-- [Pesquisa de dados de terceiros](use-content-search-to-search-third-party-data-that-was-imported.md) que sua organização tem importadas para o Office 365 
+- [Pesquisar dados de terceiros](use-content-search-to-search-third-party-data-that-was-imported.md) que sua organização tenha importado para o Office 365 
     
-- [Editar em massa](bulk-edit-content-searches.md) a consulta e locais de conteúdo para várias pesquisas 
+- [Editar em massa](bulk-edit-content-searches.md) os locais de consulta e conteúdo para várias pesquisas 
     
-- [Destinatários Cco preservar](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , portanto, você poderá procurá-la 
+- [Preservar destinatários Cco](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) para que você possa procurá-los 
 
-## <a name="perform-actions-on-content-you-find"></a>Executar ações no conteúdo que você acha
+## <a name="perform-actions-on-content-you-find"></a>Executar ações no conteúdo que você encontrar
 
-Depois de executar uma pesquisa e refiná-lo conforme necessário, a próxima etapa é fazer algo com os resultados retornados pela pesquisa. Você pode exportar e baixe os resultados ao computador local ou no caso de um ataque de email em sua organização, você pode excluir os resultados de uma pesquisa de caixas de correio do usuário.
+Após executar uma pesquisa e refiná-la conforme necessário, a próxima etapa é fazer algo com os resultados retornados pela pesquisa. Você pode exportar e baixar os resultados para o seu computador local ou no caso de um ataque de email em sua organização, você pode excluir os resultados de uma pesquisa de caixas de correio do usuário.
   
-- [Exportar os resultados de uma pesquisa de conteúdo](export-search-results.md) e fazer o download deles para seu computador local 
+- [Exportar os resultados de uma pesquisa de conteúdo](export-search-results.md) e baixá-los no computador local 
     
-- [Procurar e excluir mensagens de email](search-for-and-delete-messages-in-your-organization.md) , como mensagens que o conteúdo de um vírus, anexo perigoso ou mensagens de phishing 
+- [Procurar e excluir mensagens de email](search-for-and-delete-messages-in-your-organization.md) , como mensagens que contenham um vírus, um anexo perigoso ou mensagens de phishing 
     
 - [Exportar um relatório](export-a-content-search-report.md) sobre os resultados de uma pesquisa de conteúdo, sem exportar os resultados reais 
     
-- [Aumentar a velocidade de download](increase-download-speeds-when-exporting-ediscovery-results.md) quando você exporta os resultados da pesquisa 
+- [Aumentar a velocidade de download](increase-download-speeds-when-exporting-ediscovery-results.md) ao exportar os resultados da pesquisa 
     
 ## <a name="learn-more-about-content-search"></a>Saiba mais sobre a pesquisa de conteúdo
 
-Pesquisa de conteúdo é fácil de usar, mas também é uma ferramenta poderosa. Dos bastidores, há muito em andamento. Quanto mais você souber sobre ele e entender seu comportamento e suas limitações, mais bem-sucedida você usará para necessidades de pesquisa e a investigação da sua organização. Saiba mais sobre:
+A pesquisa de conteúdo é fácil de usar, mas também é uma poderosa ferramenta. Por trás das cenas, há muito em andamento. Quanto mais você souber sobre ele e entender seu comportamento e suas limitações, mais bem-sucedida você o usará para as necessidades de pesquisa e investigação da sua organização. Saiba mais sobre:
   
-- [Parcialmente indexados itens no Exchange e SharePoint](partially-indexed-items-in-content-search.md) e como incluir ou exclui-los ao exportar e baixe os resultados de pesquisa 
+- [Itens parcialmente indexados no Exchange e no SharePoint](partially-indexed-items-in-content-search.md) e como incluí-los ou excluí-los ao exportar e baixar os resultados da pesquisa 
     
-- [Investigar itens indexados parcialmente](investigating-partially-indexed-items-in-ediscovery.md) e determinar a exposição da sua organização para acessá-los 
+- [Investigar itens parcialmente indexados](investigating-partially-indexed-items-in-ediscovery.md) e determinar a exposição da sua organização a eles 
     
-- [Limites da ferramenta de pesquisa de conteúdo](limits-for-content-search.md), como o número máximo de pesquisas que podem ser executados ao mesmo tempo e o número máximo de locais de conteúdo, que você pode incluir em uma única pesquisa 
+- Os [limites da ferramenta de pesquisa de conteúdo](limits-for-content-search.md), como o número máximo de pesquisas que podem ser executadas ao mesmo tempo e o número máximo de locais de conteúdo que podem ser incluídos em uma única pesquisa 
     
-- [Resultados de pesquisa real e estimada](differences-between-estimated-and-actual-ediscovery-search-results.md) e os motivos por que pode haver diferenças entre elas quando você exporta e baixe os resultados da pesquisa 
+- [Resultados de pesquisa estimados e reais](differences-between-estimated-and-actual-ediscovery-search-results.md) e os motivos pelos quais pode haver diferenças entre eles ao exportar e baixar os resultados da pesquisa 
     
-- [Eliminação da duplicação nos resultados da pesquisa](de-duplication-in-ediscovery-search-results.md) que você pode habilitar ao exportar mensagens de email que são os resultados de uma pesquisa 
+- [Desduplicação nos resultados de pesquisa](de-duplication-in-ediscovery-search-results.md) que você pode habilitar ao exportar mensagens de email que são os resultados de uma pesquisa 
     
 ## <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para cenários avançados
 
-Em alguns casos, você precisa executar tarefas de pesquisa de conteúdo mais avançado, complexo e repetitivas. Nesses casos, é mais fácil e rápido para usar os comandos do PowerShell a segurança &amp; Centro de conformidade. Para ajudar a facilitar isso, criamos um número de segurança &amp; scripts do PowerShell do Centro de conformidade para ajudá-lo a concluir tarefas relacionados à pesquisa de conteúdo complexas.
+Às vezes, você precisa executar tarefas de pesquisa de conteúdo mais avançadas, complexas e repetitivas. Nesses casos, é mais fácil e rápido usar os comandos do PowerShell no centro de &amp; conformidade de segurança. Para ajudar a tornar isso mais fácil, criamos vários scripts do &amp; PowerShell do centro de conformidade de segurança para ajudá-lo a concluir tarefas relacionadas à pesquisa de conteúdo complexo.
   
-- [Caixa de correio específica de pesquisa e pastas de site](use-content-search-for-targeted-collections.md) (chamado um *destinadas a coleção* ) quando estiver confiante de que os itens responsivos a um caso estão localizados nessa pasta 
+- [Pesquisar caixa de correio e pastas de site específicas](use-content-search-for-targeted-collections.md) (chamado de *conjunto direcionado* ) quando você tiver certeza de que os itens que respondem a um caso estão localizados nessa pasta 
     
-- [Pesquisar a caixa de correio e a localização do OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) para obter uma lista de usuários 
+- [Pesquisar a caixa de correio e o local do onedrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) para obter uma lista de usuários 
     
-- [Criar, relatar e excluir várias pesquisas](create-report-on-and-delete-multiple-content-searches.md) para identificar e analisar dados de pesquisa rápida e eficiente 
+- [Criar, relatar e excluir várias pesquisas](create-report-on-and-delete-multiple-content-searches.md) para identificar e analisar de forma rápida e eficiente os dados de pesquisa 
     
-- [Como clonar uma pesquisa de conteúdo](clone-a-content-search.md) e comparar rapidamente os resultados de consultas de pesquisa de palavra-chave diferentes executados na mesmos locais conteúdos; ou use o script para economizar tempo sem a necessidade de reinserir um grande número de locais de conteúdo quando você cria uma nova pesquisa 
+- [Clonar uma pesquisa de conteúdo](clone-a-content-search.md) e comparar rapidamente os resultados das diferentes consultas de pesquisa de palavras-chave executadas nos mesmos locais de conteúdo; ou use o script para economizar tempo não precisa reinserir um grande número de locais de conteúdo ao criar uma nova pesquisa 
     
 

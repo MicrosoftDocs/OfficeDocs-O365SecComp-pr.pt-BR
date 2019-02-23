@@ -1,12 +1,12 @@
 ---
-title: Gerenciar responsáveis em um caso de eDiscovery avançado (Preview)
+title: Gerenciar os responsáveis em um caso de descoberta eletrônica avançada (visualização)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,109 +14,109 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0c33335ecc103a97090dacaa769315ad9413b3c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706092"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214971"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciar responsáveis em um caso de eDiscovery avançado (Preview)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciar os responsáveis em um caso de descoberta eletrônica avançada (visualização)
 
-Na guia responsáveis contém uma lista classificada de todos os responsáveis no caso. Depois de adicionar responsáveis a um caso, detalhes sobre cada responsável automaticamente serão coletadas do Azure Active Directory.
+A guia responsáveis contém uma lista classificável de todos os responsáveis da ocorrência. Após adicionar os responsáveis a um caso, os detalhes sobre cada um serão automaticamente coletados do Azure Active Directory.
 
-## <a name="viewing-custodian-details"></a>Exibir os detalhes dos responsáveis
+## <a name="viewing-custodian-details"></a>Exibindo detalhes do responsáveis
 
-A página de submenu que contém detalhes dos responsáveis é exibida depois de adicionar um funcionário encarregado a um caso e selecione-os da lista na guia **responsáveis** . A partir daqui, você pode exibir todos os detalhes relacionados a dos responsáveis. A página de submenu contém os seguintes campos:
+A página de menu que contém os detalhes dos responsáveis é exibida após você adicionar um dos responsáveis a um caso e selecioná-los na lista da guia **responsáveis** . A partir daqui, você pode exibir todos os detalhes relacionados a esses responsáveis. A página de submenu contém os seguintes campos:
 
 - Informações de contato
 
-  - **Nome de exibição**: O nome exibido no catálogo de endereços para dos responsáveis. Isso geralmente é a combinação entre nome das dos responsáveis, nome intermediário de inicial e o sobrenome.
-  - **Mail/SMTP**: endereço SMTP o dos responsáveis, por exemplo, jeff@contoso.onmicrosoft.com.  
-  - **Título**: o cargo de responsáveis.
-  - **Departamento**: O nome para o departamento no qual dos responsáveis funciona.
-  - **Gerente**: gerente de responsáveis. O gerente designado receberá qualquer comunicações de escalonamento para dos responsáveis.
+  - **Nome para exibição**: o nome exibido no catálogo de endereços para os responsáveis. Geralmente, é a combinação do nome do responsáveis, inicial e sobrenome do meio.
+  - **Mail/SMTP**: o endereço SMTP para os responsáveis, por exemplo, Jeff@contoso.onmicrosoft.com.  
+  - **Título**: o cargo do profissional.
+  - **Departamento**: o nome do departamento no qual os responsáveis funciona.
+  - **Gerente**: gerente do responsáveis. O gerente designado receberá qualquer comunicação de escalonamento para este responsáveis.
   
 - Informações sobre o local
 
-  - **Cidade**: A cidade na qual dos responsáveis está localizado.
-  - **Estado**: O estado ou província no endereço de responsáveis.
-  - **País/região**: O país/região no qual dos responsáveis está localizado; Por exemplo, "EUA" ou "UK".
-  - **Office**: O local do escritório no lugar de responsáveis dos negócios.
+  - **Cidade**: a cidade na qual o responsáveis está localizado.
+  - **Estado**: o estado ou província no endereço do responsáveis.
+  - **País/região**: o país/região no qual o responsáveis está localizado; por exemplo, "US" ou "ru".
+  - **Office**: o local do escritório no local de trabalho do responsáveis.
 
-- Informações do caso
+- Informações sobre o caso
 
-  - **Status de isenção**: indica se dos responsáveis foi colocado em espera. 
-  - **Status de comunicação**: indica se dos responsáveis tem sido emitido um aviso de isenção. Se dos responsáveis tem sido emitido um aviso, em seguida, isso será marcado como *publicado*. Se dos responsáveis não tem sido emitido um aviso, então esse status será *cancelada*. 
-  - **Status**: O status do dos responsáveis dentro o caso. Isso estará *ativo* se dos responsáveis estiver ainda em espera para o caso. Se um funcionário encarregado for removido de um caso, seu status será alterado para *liberado*. 
+  - **Status de espera**: indica se os responsáveis foram colocados em espera. 
+  - **Status de Comunicação**: indica se os responsáveis foram emitidos um aviso de espera. Se o objecttiver sido emitido um aviso, ele será marcado como *publicado*. Se não tiver sido emitido um aviso para os responsáveis, este status será canCelado. ** 
+  - **Status**: o status dos responsáveis dentro do caso. Isso estará *ativo* se os responsáveis ainda estiverem em espera para o caso. Se um responsáveis for removido de uma ocorrência, seu status será alterado para *liberado*. 
 
-- Status do processamento
+- Status de processamento
 
-  - **Status da indexação**: indica o status do trabalho de indexação aprofundado.  
-  - **Indexação última vez atualizados**: indica a datestamp de quando o trabalho de indexação minuciosa última foi disparado.
-  - **Fontes de dados**: mostra a contagem de caixas de correio, sites e equipes que foram selecionadas para dos responsáveis.
+  - **Status**de indexação: indica o status do trabalho de indexação profunda.  
+  - **Hora da última atualização**da indexação: indica o dateStamp de quando o trabalho de indexação profunda foi disparado pela última vez.
+  - **Fontes de dados**: mostra a contagem de caixas de correio, sites e equipes que foram selecionadas para os responsáveis.
 
-## <a name="updating-a-custodian"></a>Atualizando um funcionário encarregado
+## <a name="updating-a-custodian"></a>Atualizando um responsáveis
 
-Como suas maiusculas em andamento, você pode descobrir que podem haver fontes de dados adicionais relevantes para uma & dos responsáveis específico seu caso. Em outros cenários, convém remover determinadas fontes de dados que foram revisadas e considerados como não relevantes.
+À medida que seu caso avança, você pode descobrir que pode haver fontes de dados adicionais relevantes para um determinado & de seu caso. Em outros cenários, talvez você queira remover determinadas fontes de dados que foram revisadas e consideradas não relevantes.
 
-Para atualizar dos responsáveis e as fontes de dados selecionado:
+Para atualizar um Objecte as fontes de dados selecionadas:
 
-1. Selecione uma ocorrência existente a **eDiscovery avançado do eDiscovery gt _ (Preview)**.
+1. Selecione um caso existente na **descoberta eletrônica avançada do > de descoberta eletrônica (visualização)**.
   
 2. No caso, clique na guia **responsáveis** .
   
-3. Selecione o custodian(s) na lista e clique em **Editar fontes**.
+3. Selecione os responsáveis (s) na lista e clique em **Editar fontes**.
   
-4. Atualize seleções para locais do Exchange e OneDrive clicando em **fontes de dados de escolha**.
+4. Atualize as seleções para os locais do Exchange e do OneDrive clicando em **escolher fontes de dados**.
   
-5. Adicionar ou remover o Exchange, SharePoint ou equipes caixas de correio mapeado o usuário clicando para **Selecionar as fontes de dados adicionais**. Para obter mais informações sobre como mapear dados fontes para dos responsáveis, consulte [Add responsáveis a um caso](add-custodians-to-case.md).
+5. Adicione ou remova as caixas de correio do Teams, SharePoint ou Exchange mapeadas ao usuário clicando para **selecionar outras fontes de dados**. Para obter mais informações sobre como mapear fontes de dados para um dos responsáveis, confira [Adicionar responsáveis a um caso](add-custodians-to-case.md).
   
-6. Para atualizar o status de retenção dos responsáveis, clique em **retenções locais custódia**e habilitar ou desabilitar a isenção para os responsáveis.
+6. Para atualizar o status de retenção de responsáveis, clique em **colocar custodial isenções**e habilite ou desabilite a retenção para os responsáveis.
 
 > [!TIP]
-> Você pode selecionar vários responsáveis para realizar ações em massa, como reindexação, liberando ou editando um conjunto dos responsáveis.
+> Você pode selecionar vários responsáveis para executar ações em massa, como reindexação, liberação ou edição de um conjunto de responsáveis.
 
-## <a name="resolving-custodian-processing-errors"></a>Resolvendo erros de processamento dos responsáveis
+## <a name="resolving-custodian-processing-errors"></a>Resolvendo erros de processamento de responsáveis
 
-Na maioria dos fluxos de trabalho Legal, depois responsáveis são adicionados para uma investigação específica, um subconjunto de dados dos usuários será pesquisado. Devido aos tamanhos de arquivos grandes ou corrupção possível, alguns itens dentro de fontes de dados dos responsáveis podem ser indexadas parcialmente. Usando o recurso de indexação minuciosa eDiscovery avançado (Preview), esses itens indexados parcialmente podem ser remediadas de automaticamente pelo novamente rastrear e indexar novamente esses itens sob demanda. 
+Na maioria dos fluxos de trabalho jurídicos, após a adição de responsáveis por uma investigação específica, um subconjunto dos dados dos usuários será pesquisado. Devido a grandes tamanhos de arquivo ou possíveis danos, alguns itens dentro das fontes de dados dos responsáveis podem ser parcialmente indexados. Usando o recurso de indexação avançada de descoberta eletrônica avançada (visualização), esses itens parcialmente indexados podem ser corrigidos automaticamente por meio de um novo rastreamento e re-indexação desses itens sob demanda. 
 
-Quando um funcionário encarregado é adicionado a um caso, os dados serão automaticamente "profundidade indexados", permitindo que os usuários deixar estas parcialmente indexados itens locais em vez de informarem baixar, remediar e execute novamente a pesquisas fora do Office 365. Durante o ciclo de vida de um caso, um usuário pode remediar itens ou adicionar novas fontes de dados para dos responsáveis determinado. Isso pode exigir o índice dos responsáveis a ser atualizado. 
+Quando um usuário é adicionado a uma ocorrência, seus dados serão automaticamente "indexados em profundidade", permitindo que os usuários deixem esses itens parcialmente indexados em vez de terem que baixar, corrigir e executar novamente as pesquisas fora do Office 365. Durante o ciclo de vida de um caso, um usuário pode corrigir itens ou adicionar novas fontes de dados para um determinado usuário. Isso pode exigir que o índice de responsáveis seja atualizado. 
 
-Para disparar um processo de indexação novamente para endereço parcialmente itens indexados:
+Para acionar um processo de reindexação para lidar com itens parcialmente indexados:
 
-1. Vá para **eDiscovery avançado do eDiscovery gt _ (Preview)** e selecione uma ocorrência existente.
+1. Vá para descoberta eletrônica **_GT_ avançada de descoberta eletrônica (visualização)** e selecione uma ocorrência existente.
 
-2. No caso, clique em à **guia responsáveis**. 
+2. No caso, clique em para a **guia responsáveis**. 
 
-3. Selecione o custodian(s) que precisa ser indexado novamente e, em seguida, clique em **Atualizar índice** da página de submenu.
+3. Selecione os responsáveis que precisam ser indexados novamente e clique em **Atualizar índice** na página do menu suspenso.
 
-4. Verificar o status do índice dos responsáveis clicando no link na coluna **Status do trabalho de indexação** na guia **responsáveis** .  
+4. Verifique o status do índice de responsáveis clicando no link na coluna **status do trabalho** de indexação na guia **responsáveis** .  
 
-5. O status para o processo de indexação novamente também podem ser rastreado na guia **Jobs** .
+5. O status do processo de reindexação também pode ser acompanhado na guia **trabalhos** .
 
-Para obter mais informações sobre os itens indexados parcialmente indexação novamente e remediando, consulte a [corrigir erros de processamento](processing-data-for-case.md).
+Para obter mais informações sobre a reindexação e a correção de itens parcialmente indexados, consulte [corrigir erros de processamento](processing-data-for-case.md).
 
-## <a name="releasing-a-custodian-from-a-case"></a>Liberação de um funcionário encarregado de um caso
+## <a name="releasing-a-custodian-from-a-case"></a>Liberar um dos responsáveis por um caso
 
-Dos responsáveis for lançado em situações onde um caso for fechado, um funcionário encarregado não está mais sendo obrigação de preservar o conteúdo de um caso ou quando um funcionário encarregado é considerado nenhum mais ser relevantes para uma determinada caso. 
+Um dos responsáveis é lançado em situações em que um caso é fechado, um não está mais sob obrigação de preservar o conteúdo de um caso ou quando um Objecté considerado não mais relevante para um caso específico. 
 
-Se você solta um funcionário encarregado após um aviso de isenção foi publicado, um aviso de versão será enviado para dos responsáveis. Além disso, qualquer isenções custódia atribuídas aos responsáveis lançadas também serão removidas.
+Se você liberar um dos responsáveis após um aviso de isenção ter sido publicado, um aviso de lançamento será enviado para o seu. Além disso, qualquer custodial que tenha sido atribuído aos responsáveis liberados também será removido.
 
-Se dos responsáveis foi colocado em uma espera silenciosa, onde eles não foram emitidos qualquer notificações de retenção legal, qualquer isenções custódia atribuídas aos responsáveis lançadas serão removidas.  
+Se o objecttiver sido colocado em um bloqueio silencioso, onde não foram emitidos notificações de bloqueio legal, qualquer custodial será atribuído aos responsáveis liberados serão removidos.  
 
-Para liberar um funcionário encarregado: 
+Para liberar um responsáveis: 
 
 1.  Vá para a guia **responsáveis** .
 
-2.  Selecione dos responsáveis da lista e clique **responsáveis versão** na página submenu.
+2.  Selecione os responsáveis na lista e clique em **liberar responsáveis** na página do menu suspenso.
 
-    O status do dos responsáveis na guia **responsáveis** é definido para a **Outubrolançada** e o **status de retenção** na página submenu é alterado para **inativo**. 
+    O status do responsáveis na guia **responsáveis** é definido como **liberado** e o **status de retenção** na página do submenu é alterado para inativo. **** 
 
 > [!TIP]
-> Dos responsáveis podem ser simultaneamente estar envolvido nos vários assuntos de retenção legal. Quando um funcionário encarregado é liberado de um caso, as isenções e notificações em outros assuntos não serão afetadas.
+> Os responsáveis podem estar simultaneamente envolvidos em várias questões legais. Quando um dos responsáveis é liberado de uma ocorrência, as isenções e notificações entre outras coisas não serão afetadas.
 
 ## <a name="related-information"></a>Informações relacionadas
 
- - [Correção de erro durante o processamento de dados](error-remediation.md) 
-- [Trabalhar com a comunicação](managing-custodian-communications.md)
+ - [Correção de erro ao processar dados](error-remediation.md) 
+- [Trabalhar com comunicações](managing-custodian-communications.md)

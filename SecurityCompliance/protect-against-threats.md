@@ -5,28 +5,28 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: M365-security-compliance
-description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: 6caf891acb8c96d17a3aa1b4ffc222380ed9341b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
+ms.openlocfilehash: ca2bfda0403a1f482989977f7bc018bbd94afeb5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995132"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220481"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteja-se contra ameaças do Office 365
 
-Com o Office 365 Enterprise, você pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo a falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados. Use os recursos nesta página para saber mais sobre a proteção contra ameaças e ações que podem ser realizadas.
+Com o Office 365 Enterprise, você pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados. Use os recursos nesta página para saber mais sobre a proteção contra ameaças e as ações que você pode realizar.
   
-## <a name="anti-spoofing"></a>Antifalsificação
+## <a name="anti-spoofing"></a>Anti-falsificação
 
-Se você estiver usando um domínio personalizado no Office 365, ajudam interromper fraude remetente da sua organização, melhorar a segurança de email e proteger reputação do seu domínio.
+Se você estiver usando um domínio personalizado no Office 365, ajude a interromper as fraudes de remetentes da sua organização, melhorar a segurança de email e proteger a reputação do seu domínio.
   
 - [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
@@ -34,11 +34,11 @@ Se você estiver usando um domínio personalizado no Office 365, ajudam interrom
     
 - [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md)
     
-## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; antimalware
+## <a name="anti-spam-amp-anti-malware"></a>&amp; Antimalware antispam
 
-Saiba mais sobre a pontuação de anti-spam do Office 365, a filtragem de conexão e captura de malware, inclusive as configurações padrão e como relatar email mal-intencionado.
+Saiba mais sobre a pontuação antispam do Office 365, filtragem de conexão e captura de malware, incluindo configurações padrão e como relatar emails mal-intencionados.
   
-- [Anti-spam &amp; proteção antimalware](anti-spam-and-anti-malware-protection.md)
+- [Proteção Antimalware &amp; anti-spam](anti-spam-and-anti-malware-protection.md)
     
 - [Habilitar a auditoria de caixa de correio no Office 365](enable-mailbox-auditing.md)
     
@@ -48,13 +48,13 @@ Saiba mais sobre a pontuação de anti-spam do Office 365, a filtragem de conex�
     
 ## <a name="advanced-threat-protection"></a>Proteção Avançada contra Ameaças
 
-Configure diretivas para gerenciar a falsificação, proteger contra ataques de phishing e catch URLs mal-intencionadas ou arquivos em mensagens de email com a proteção de ameaça avançadas (ATP).
+Configure políticas para gerenciar falsificação, proteger contra ataques de phishing e capturar URLs ou arquivos mal-intencionados em mensagens de email com a proteção avançada contra ameaças (ATP).
   
 - [Saiba mais sobre o Office 365 ATP](office-365-atp.md)
     
-- [Saiba mais sobre inteligência de falsificação](learn-about-spoof-intelligence.md)
+- [Saiba mais sobre a inteligência de falsificação](learn-about-spoof-intelligence.md)
     
-- [Configurar políticas de AntiPhishing](set-up-anti-phishing-policies.md)
+- [Configurar políticas anti-phishing](set-up-anti-phishing-policies.md)
     
 - [Configurar as políticas de Links seguros de ATP](set-up-atp-safe-links-policies.md)
     
@@ -62,47 +62,47 @@ Configure diretivas para gerenciar a falsificação, proteger contra ataques de 
     
 ## <a name="encryption"></a>Criptografia
 
-Obter um manual sobre criptografia, configurar políticas de gerenciamento de direitos e criptografia de email e definir configurações de criptografia adicionais. Obter detalhes sobre o certificado raiz usado pelos nossos servidores de email para o Office 365.
+Obtenha um complemento na criptografia, configure políticas de gerenciamento de direitos e criptografia de email e defina configurações de criptografia adicionais. Obtenha detalhes sobre o certificado raiz usado por nossos servidores de email para o Office 365.
   
-- [Saiba mais sobre criptografia no Office 365](encryption.md)
+- [Saiba mais sobre a criptografia no Office 365](encryption.md)
     
 - [Configure a criptografia no Office 365 Enterprise](set-up-encryption.md)
     
 - [OME (Criptografia de Mensagens do Office 365)](ome.md)
     
-- [Implementar Traga sua própria chave (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
+- [Implementar a sua própria chave (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
-## <a name="managing-devices-amp-apps"></a>Gerenciando dispositivos &amp; apps
+## <a name="managing-devices-amp-apps"></a>Gerenciando &amp; dispositivos aplicativos
 
-Monitorar e controlar o acesso de dispositivos móveis como seus dados do Office 365 e proibir ou aprovar aplicativos móveis em uso em sua organização.
+Monitorar e controlar como os dispositivos móveis acessam seus dados do Office 365 e proibir ou aprovar aplicativos móveis em uso na sua organização.
   
 - [Criar e implantar políticas de segurança de dispositivo](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
 - [Gerenciar permissões de aplicativo usando o Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
-## <a name="threat-intelligence"></a>Inteligência de ameaça
+## <a name="threat-intelligence"></a>Inteligência de ameaças
 
-Identificar, monitorar e entender os ataques e rapidamente ameaças de endereço usando as ideias e disponível para evitar ataques de dados de Conhecimento.
+Identifique, monitore e entenda os ataques e, rapidamente, atenda a ameaças usando as ideias e o conhecimento disponíveis para evitar ataques.
   
-- [Obtenha uma visão geral de inteligência de ameaça do Office 365](office-365-ti.md)
+- [Obter uma visão geral do Office 365 Threat Intelligence](office-365-ti.md)
     
 - [Introdução à Inteligência Contra Ameaças do Office 365](get-started-with-ti.md)
     
 ## <a name="privileged-access-management"></a>Gerenciamento de acesso privilegiado
 
-Ajuda a proteger sua organização contra violações que possam usar contas de administração com privilégios existentes com acesso a posição a dados confidenciais ou acesso às definições de configuração crítico. Após habilitar o gerenciamento de acesso privilegiado, serão necessário solicitar acesso just-in-time para executar tarefas com privilégios elevados e privilegiadas por meio de um fluxo de trabalho de aprovação que é altamente no escopo do tempo-limite e usuários.
+Ajudar a proteger sua organização contra violações que podem usar contas de administrador privilegiadas com acesso à posição para dados confidenciais ou acesso a definições de configuração crítica. Depois de habilitar o gerenciamento de acesso privilegiado, os usuários precisarão solicitar acesso just-in-time para concluir tarefas elevadas e privilegiadas por meio de um fluxo de trabalho de aprovação com alta abrangência e limite de tempo.
   
-- [Obtenha uma visão geral dos privilégios gerenciamento de acesso](privileged-access-management-overview.md)
+- [Obter uma visão geral do gerenciamento de acesso privilegiado](privileged-access-management-overview.md)
     
-- [Introdução ao privilegiada gerenciamento de acesso](privileged-access-management-configuration.md)
+- [Introdução ao gerenciamento de acesso privilegiado](privileged-access-management-configuration.md)
 
 ## <a name="additional-options"></a>Opções adicionais
 
-Obtenha mais informações sobre tecnologias relacionadas da Microsoft e processos que ajudam seguro do Office 365 contra ameaças.
+Obtenha mais informações sobre tecnologias e processos da Microsoft relacionados que ajudam a proteger o Office 365 contra ameaças.
   
 - [Saiba mais sobre o Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [Saiba mais sobre o Azure Vault principal](https://docs.microsoft.com/azure/key-vault/)
+- [Saiba mais sobre o Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
     
 - [Saiba mais sobre o isolamento de locatário](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
     

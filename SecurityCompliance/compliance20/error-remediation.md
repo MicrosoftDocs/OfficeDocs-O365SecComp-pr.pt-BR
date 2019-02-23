@@ -1,12 +1,12 @@
 ---
-title: Correção de erro durante o processamento de dados
+title: Correção de erro ao processar dados
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,78 +14,78 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 82e6d44ded64d586611f429f9b3eebe4f47e9898
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 0224e6bf750af209eefd47902f1f4a78200d1db1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607376"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215991"
 ---
-# <a name="error-remediation-when-processing-data"></a>Correção de erro durante o processamento de dados
+# <a name="error-remediation-when-processing-data"></a>Correção de erro ao processar dados
 
-Correção de erro permite que administradores de descoberta eletrônica a capacidade corrigir problemas de dados que impedir a corretamente o conteúdo de processamento do eDiscovery avançado (Preview). Por exemplo, arquivos que são protegidas por senha não podem ser processados, desde que os arquivos estão bloqueados ou criptografados. Usando a correção de erro, os administradores de descoberta eletrônica podem fazer o download de arquivos com esses erros, remover a proteção por senha e carregar os arquivos remediados por teste.
+A correção de erros permite que os administradores de descoberta eletrônica corrijam problemas de dados que impedem a descoberta eletrônica avançada (visualização) de processar corretamente o conteúdo. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os administradores de descoberta eletrônica podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.
 
-Use o seguinte fluxo de trabalho para remediar arquivos com erros em casos de eDiscovery avançado (Preview).
+Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de descoberta eletrônica avançada (visualização).
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Criando uma sessão de correção de erro para remediar arquivos com erros de processamento
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Criando uma sessão de correção de erro para corrigir arquivos com erros de processamento
 
 >[!NOTE]
->Se o Assistente de correção de erro é fechado a qualquer momento durante o procedimento a seguir, é possível retornar para a sessão de correção de erro a partir da guia **processamento** selecionando **correções de erro** no menu suspenso **modo de exibição** .
+>Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correÇões de **erro** no menu suspenso **Exibir** .
 
-1. Na guia **processamento** em um caso de eDiscovery avançado (Preview), selecione **erros** no menu suspenso **modo de exibição** .
+1. Na guia **processamento** em um caso de descoberta eletrônica avançada (visualização), selecione **erros** no menu suspenso **Exibir** .
 
-2. Selecione os erros que você deseja remediar clicando no botão de opção ao lado do tipo de erro ou um tipo de arquivo.  No exemplo a seguir, podemos estiver correção um arquivo de protegido por senha.
+2. Selecione os erros que você deseja corrigir clicando no botão de opção ao lado do tipo de erro ou tipo de arquivo.  No exemplo a seguir, estamos corrigindo um arquivo protegido por senha.
 
-3. Clique em **+ novo correção de erro**.
+3. Clique em **+ nova correção de erro**.
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    A sessão de correção de erro será iniciada, começando com um estágio de preparação onde os arquivos ou com erros são movidos para um local seguro de Azure sejam baixados.
+    A sessão de correção de erro será iniciada, começando com um estágio de preparação em que os arquivos com erro são movidos para um local seguro do Azure a ser baixado.
 
-    ![Preparando a correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Após a preparação for concluída, clique em **próximo: baixar arquivos** para prosseguir com o download.
+4. Após a conclusão da preparação, clique em **Avançar: baixar arquivos** para continuar com o download.
 
     ![Baixar arquivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão, % USERPROFILE%\Downloads\errors, aponta para a pasta de downloads do usuário registrado no; Isso pode ser alterado conforme necessário.
+5. Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.
 
     >[!NOTE]
-    >Recomendamos que você use um caminho de arquivo local, em vez de um caminho de rede remoto para um desempenho ideal.
+    >Recomendamos que você use um caminho de arquivo local em vez de um caminho de rede remoto para obter o desempenho ideal.
 
     > [!NOTE]
-    > Se você não instalou AzCopy, você pode instalá-lo a partir daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Se você ainda não instalou o AzCopy, você pode instalá-lo daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
-6. Copie o comando predefinido, clicando em **Copiar para a área de transferência**. Inicie um prompt de comando do windows, cole o comando e pressione **Enter**.  
+6. Copie o comando predefinido clicando em **copiar para área de transferência**. Inicie um prompt de comando do Windows, Cole o comando e pressione **Enter**.  
 
     Os arquivos serão baixados.
 
-    ![Preparando a correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Se você tiver problemas ao executar esse comando, consulte https://go.microsoft.com/fwlink/?linkid=2038117 para dicas de solução de problemas.
+     > Se você tiver problemas para executar este comando, https://go.microsoft.com/fwlink/?linkid=2038117 consulte para obter dicas de solução de problemas.
 
-7. Depois de baixar os arquivos, você pode remediá-los com uma ferramenta adequada. Arquivos protegidos por senha, há um número de ferramentas que você pode usar para quebrar senhas. Se você souber as senhas para os arquivos, você pode abri-los e remover a proteção por senha.
+7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     > [!NOTE]
-    > IT é importante que você mantenha os nomes de arquivo e a estrutura de diretório dos arquivos remediados por teste intacto.  Todas as convenções de nomenclatura usada nos arquivos baixados e pastas tornam possível associar os arquivos remdiated original.
+    > É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
 
-8. Agora, volte à eDiscovery avançado (Preview) e clique em **próximo: carregar arquivos**.  Isso moverá para a próxima etapa onde você agora pode carregar os arquivos.
+8. Agora, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.
 
     ![Carregar arquivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Especifique o local dos arquivos remediados por teste na caixa de texto **caminho para o local dos arquivos** , clique em **Copiar para clibpboard**.
+9. Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para o clibpboard**.
 
-10. Cole o comando em um Prompt de comando do Windows e pressione **Enter** para carregar os arquivos.
+10. Cole o comando em um prompt de comando do Windows e pressione **Enter** para carregar os arquivos.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Finalmente, volte à eDiscovery avançado (Preview) e clique em **próximo: processar arquivos**.
+11. Por fim, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: processar arquivos**.
 
-12. Quando o processamento é concluído.  Você pode retornar ao conjunto de trabalho e consulte o arquivo remediados por teste.
+12. Quando o processamento estiver concluído.  Você pode retornar ao conjunto de trabalho e ver o arquivo corrigido.
 
-## <a name="what-happens-when-files-are-remediated"></a>O que acontece quando os arquivos são remediados
+## <a name="what-happens-when-files-are-remediated"></a>O que acontece quando os arquivos são corrigidos
 
-Quando remediados por teste arquivos são carregados, os metadados original é preservado, com exceção dos seguintes campos: 
+Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos: 
 
 - DocumentExtractedUrl
 - ExtractedTextSize
@@ -93,11 +93,11 @@ Quando remediados por teste arquivos são carregados, os metadados original é p
 - IsErrorRemediate
 - IsParentExtractedUrl
 - ItemExtractedUrl
-- LoadId
+- Loadid
 - ProcessingErrorMessage
-- Processamento
+- ProcessingStatus
 - Texto
 - WordCount
 - WorkingsetId
 
-Para uma definição de todos os campos de metadados de documento no eDiscovery avançado (Preview), consulte [os campos de metadados de documento](document-metadata-fields.md).
+Para obter uma definição de todos os campos de metadados do documento na descoberta eletrônica avançada (visualização), confira [campos de metadados do documento](document-metadata-fields.md).

@@ -1,5 +1,5 @@
 ---
-title: S/MIME para assinatura e criptografia de mensagens
+title: S/MIME para assinatura e criptografia de mensagens no Exchange Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: S/MIME permite criptografar emails e assinar digitalmente-los. Quando você usa o S/MIME com uma mensagem de email, ele ajuda as pessoas que recebem a mensagem, para certificar-se de que ele vê em suas caixas de entrada é a mensagem exata iniciados com o remetente.
-ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: O S/MIME permite criptografar emails e assiná-los digitalmente. Quando você usa S/MIME com uma mensagem de email, ele ajuda as pessoas que recebem essa mensagem a certificar-se de que elas vejam na caixa de entrada são a mensagem exata que começou com o remetente.
+ms.openlocfilehash: 41a84d5332092748f9a8cc8fe4936c39e5fd2012
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206504"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>S/MIME para assinatura e criptografia de mensagens
 
@@ -29,13 +29,11 @@ Como administrador, você pode habilitar a segurança baseada em S/MIME para sua
 ## <a name="supported-scenarios-and-technical-considerations"></a>Cenários suportados e considerações técnicas
 <a name="sectionSection0"> </a>
 
-Se sua organização usa Exchange 2013 SP1 ou Exchange Online, você pode configurar o S/MIME para funcionar com qualquer um dos seguintes pontos finais: 
+Você pode configurar o S/MIME para funcionar com qualquer um dos seguintes pontos de extremidade: 
   
-- Outlook 2010
+- Outlook 2010 ou posterior
     
-- Outlook 2013
-    
-- Outlook Web App
+- Outlook na Web (anteriormente conhecido como Outlook Web App)
     
 - Exchange ActiveSync (EAS)
     
@@ -47,20 +45,20 @@ Os passos que você seguir para configurar S/MIME com cada um desses pontos fina
     
 - Para organizações do Exchange Online, sincronize os certificados de usuário de AD DS para Active Directory do Azure usando uma versão apropriada de DirSync. Em seguida, esses certificados serão sincronizados do Active Directory do Azure para o diretório do Exchange Online e serão usados ao criptografar uma mensagem para um destinatário.
     
-- Configurar uma coletânea de certificados virtuais para validar S/MIME. Essas informações são usadas pelo OWA ao validar a assinatura de um email e garantir que ele foi assinado por um certificado confiável.
+- Configurar uma coleção de certificados virtuais para validar S/MIME. Essas informações são usadas pelo Outlook na Web (anteriormente conhecido como Outlook na Web) ao validar a assinatura de um email e garantir que ele tenha sido assinado por um certificado confiável.
     
 - Configurar o ponto final do Outlook ou EAS para usar S/MIME. 
     
-## <a name="setup-smime-with-outlook-web-app"></a>Configurar S/MIME com Outlook Web App
+## <a name="setup-smime-with-outlook-on-the-web"></a>Configurar S/MIME com o Outlook na Web
 <a name="sectionSection1"> </a>
 
-A configuração do S/MIME para Exchange 2013 SP1 ou Exchange Online com o Outlook Web App envolve as seguintes etapas principais:
+A configuração do S/MIME para o Exchange Online com o Outlook na Web envolve as seguintes etapas principais:
   
-1. [Definir as configurações de S/MIME para o Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+1. [Configurar definições S/MIME para o Outlook na Web](configure-s-mime-settings-for-outlook-web-app.md)
     
 2. [Configurar coleção de certificados virtuais para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
     
-3. [Sincronizar certificados de usuário para o Office 365 para S/MIME](sync-user-certificates-to-office-365-for-s-mime.md) Esta etapa somente se aplica ao Exchange Online. 
+3. [Sincronizar certificados de usuário com o Office 365 para S/MIME](sync-user-certificates-to-office-365-for-s-mime.md) Esta etapa se aplica apenas ao Exchange Online. 
     
 ## <a name="related-message-encryption-technologies"></a>Tecnologias de criptografia de mensagem relacionadas
 <a name="sectionSection2"> </a>
@@ -80,7 +78,7 @@ S/MIME requer uma infraestrutura de certificado e publicação que é geralmente
 ## <a name="more-information"></a>Mais informações
 <a name="sectionSection3"> </a>
 
-[Outlook Web App](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook na Web](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
   
 [Email Seguro (2000)](https://technet.microsoft.com/en-us/library/cc962043.aspx)
   

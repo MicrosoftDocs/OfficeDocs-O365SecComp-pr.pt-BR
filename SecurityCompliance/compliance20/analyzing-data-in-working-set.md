@@ -1,12 +1,12 @@
 ---
-title: Analisar dados em um conjunto de trabalho no eDiscovery avançado (Preview)
+title: Analisar dados em um conjunto de trabalho em descoberta eletrônica avançada (visualização)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,46 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ae024f423ac9b4ab9210ddfab519093a9fee3e42
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695137"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216791"
 ---
-# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analisar dados em um conjunto de trabalho no eDiscovery avançado (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analisar dados em um conjunto de trabalho em descoberta eletrônica avançada (visualização)
 
-Quando o número de documentos coletados for muito grande, pode ser muito difícil revisar todas elas. EDiscovery avançado (Preview) fornece várias ferramentas para analisar os documentos para reduzir o volume de documentos seja revisada sem que ocorra perda em informações e para ajudá-lo a organizar os documentos de maneira coerente. Para saber mais sobre esses recursos, consulte:
+Quando o número de documentos coletados é grande, pode ser muito difícil examiná-los. A descoberta eletrônica avançada (prévia) fornece várias ferramentas para analisar os documentos para reduzir o volume de documentos a serem revisados sem perda de informações e para ajudá-lo a organizar os documentos de forma coerente. Para saber mais sobre esses recursos, confira:
 
-- [Perto de detecção de duplicatas](near-duplicates.md)
-- [Email threading](email-threading.md)
+- [Detecção próxima duplicação](near-duplicates.md)
+- [Encadeamento de email](email-threading.md)
 - [Temas](themes.md)
 
-Para analisar os dados em um conjunto de trabalho:
+Para analisar dados em um conjunto de trabalho:
 
-1. Defina configurações de análise para seu caso. Para obter mais informações, consulte [Configurar definições de pesquisa e análise](configure-search-analytics-settings.md).
-2. Abra o conjunto de trabalho que deseja analisar.
-3. Vá para "Gerenciar o conjunto de trabalho".
-4. Clique em "Analisar".
+1. Defina as configurações de análise para o seu caso. Para obter mais informações, consulte [Configurar definições de pesquisa e análise](configure-search-analytics-settings.md).
+2. Abra o conjunto de trabalho que você deseja analisar.
+3. Vá para "gerenciar conjunto de trabalho".
+4. Clique em "analisar".
 
-Você pode verificar o andamento da análise na guia trabalhos no seu caso.
+Você pode verificar o progresso da análise na guia trabalhos em seu caso.
 
- Depois que a análise for concluída, você pode exibir o relatório de análise, executar consultas em seu trabalho definir em saídas da análise (para obter mais informações, consulte [consulta dentro de seu trabalho definido](working-set-search.md)) e ver os documentos relacionados de um certo documento (para mais informações, consulte [ Analisando dados no conjunto de trabalho](reviewing-data-in-working-set.md)).
+ Após a conclusão da análise, você pode exibir o relatório de análise, executar consultas em seu conjunto de trabalho nas saídas da análise (para obter mais informações, confira [consulta em seu conjunto de trabalho](working-set-search.md)) e ver documentos relacionados de um determinado documento (para obter mais informações, consulte [ Revisão de dados no conjunto de trabalho](reviewing-data-in-working-set.md)).
 
 ## <a name="analytics-report"></a>Relatório de análise
 
 Para exibir um relatório de análise para seu conjunto de trabalho:
 
-1. Abra o conjunto de trabalho.
-2. Vá para "Gerenciar o conjunto de trabalho".
-3. Clique em "Relatório".
+1. Abra seu conjunto de trabalho.
+2. Vá para "gerenciar conjunto de trabalho".
+3. Clique em "relatório".
 
-O relatório tem quatro componentes de análise:
+O relatório tem quatro componentes da análise:
 
-- **Divisão** - quantos emails, anexos e afastados documentos foram encontrados no conjunto de trabalho.
+- **Divisão** -quantos emails, anexos e documentos soltos foram encontrados no conjunto de trabalho.
 
-- **Documentos (excluindo anexos)** - quantos documentos afastados foram dinamização, exclusiva próximo duplicatas de uma tabela dinâmica ou uma duplicata exata de outro documento.
+- **Documentos (exceto anexos)** : Quantos documentos soltos foram dinâmicos, únicos duplicatas próximas de uma tabela dinâmica ou uma duplicata exata de outro documento.
 
-- **Emails** - quantos emails foram inclusives, inclusive cópias, inclusive desvantagens ou nenhuma das perguntas acima.
+- **Emails** -quantos emails foram incluídos, cópias inclusivas, inclusive minuses ou nenhuma das opções acima.
 
-- **Anexos** - quantos anexos de email foram exclusivos ou duplica de um anexo de email diferentes dentro do conjunto de trabalho.
+- **Attachments** -quantos anexos de email foram exclusivos ou duplicados de um anexo de email diferente no conjunto de trabalho.

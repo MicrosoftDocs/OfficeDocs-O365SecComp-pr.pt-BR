@@ -1,81 +1,81 @@
 ---
-title: Desativar relatórios ao exportar os resultados de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade
+title: Desabilitar relatórios ao exportar resultados de pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/30/2016
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Edite o registro do Windows no computador local para desabilitar os relatórios ao exportar os resultados de uma pesquisa de conteúdo da segurança do Office 365 &amp; Comliance Center. Desabilitar esses relatórios pode reduzir o tempo de download e salve o espaço em disco.
-ms.openlocfilehash: 62782c472adca892e1dcf239a45fe80f0fa7251b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Edite o registro do Windows no computador local para desabilitar relatórios ao exportar os resultados de uma pesquisa de conteúdo do centro de segurança &amp; do Office 365 Comliance. A desabilitação desses relatórios pode acelerar o tempo de download e poupar espaço em disco.
+ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037974"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213471"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Desativar relatórios ao exportar os resultados de pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade
+# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Desabilitar relatórios ao exportar resultados de pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
 
-Quando você usar a ferramenta de exportação de descoberta eletrônica do Office 365 para exportar os resultados de uma pesquisa de conteúdo na segurança &amp; Centro de conformidade, a ferramenta cria automaticamente e exporta dois relatórios que contêm informações adicionais sobre o conteúdo exportado. Esses relatórios são o arquivo de Results.csv e o arquivo manifest XML (consulte a seção de [Perguntas frequentes sobre como desativar os relatórios de exportação](#frequently-asked-questions-about-disabling-export-reports) neste tópico para obter descrições detalhadas desses relatórios). Como esses arquivos podem ser muito grandes, você pode reduzir o tempo de download e salve o espaço em disco, impedindo que esses arquivos estão sendo exportados. Você pode fazer isso, alterando o registro do Windows no computador que você usa para exportar os resultados da pesquisa. Se você quiser incluir os relatórios mais tarde, você pode editar a configuração do registro. 
+Ao usar a ferramenta de exportação de descoberta eletrônica do Office 365 para exportar os resultados de uma pesquisa de &amp; conteúdo no centro de conformidade de segurança, a ferramenta cria e exporta automaticamente dois relatórios que contêm informações adicionais sobre o conteúdo exportado. Esses relatórios são o arquivo Results. csv e o arquivo manifest. XML (consulte a seção [perguntas frequentes sobre](#frequently-asked-questions-about-disabling-export-reports) a desabilitação de relatórios de exportação neste tópico para obter descrições detalhadas desses relatórios). Como esses arquivos podem ser muito grandes, você pode acelerar o tempo de download e poupar espaço em disco, impedindo que esses arquivos sejam exportados. Você pode fazer isso alterando o registro do Windows no computador que você usa para exportar os resultados da pesquisa. Se você quiser incluir os relatórios mais tarde, poderá editar a configuração do registro. 
   
-## <a name="create-registry-settings-to-disable-the-export-reports"></a>Criar configurações de registro para desativar os relatórios de exportação
+## <a name="create-registry-settings-to-disable-the-export-reports"></a>Criar configurações do registro para desabilitar os relatórios de exportação
 
 Execute o procedimento a seguir no computador que você usará para exportar os resultados de uma pesquisa de conteúdo.
   
-1. Feche a ferramenta de exportação de descoberta eletrônica do Office 365 se ele estiver aberto.
+1. Feche a ferramenta de exportação de descoberta eletrônica do Office 365 se ela estiver aberta.
     
-2. Execute uma das etapas a seguir, dependendo de qual relatório de exportação para o qual você deseja desabilitar ou ambas.
+2. Execute uma ou ambas as etapas a seguir, dependendo do relatório de exportação que você deseja desabilitar.
     
-    - **Results.csv**
+    - **Results. csv**
     
-      Salve o seguinte texto em um arquivo de registro do Windows usando um sufixo de nome de arquivo de. reg; Por exemplo, DisableResultsCsv.reg.
+      Salve o seguinte texto em um arquivo de registro do Windows usando um sufixo de nome de arquivo. reg; por exemplo, DisableResultsCsv. reg.
     
       ```
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **Manifest**
+    - **Manifest. xml**
     
-      Salve o seguinte texto em um arquivo de registro do Windows usando um sufixo de nome de arquivo de. reg; Por exemplo, DisableManifestXml.reg.
+      Salve o seguinte texto em um arquivo de registro do Windows usando um sufixo de nome de arquivo. reg; por exemplo, DisableManifestXml. reg.
     
       ```
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. No Windows Explorer, clique em ou duas vezes no arquivo. reg que você criou nas etapas anteriores.
+3. No Windows Explorer, clique ou clique duas vezes no arquivo. reg que você criou nas etapas anteriores.
     
-4. Na janela de controle de acesso de usuário, clique em **Sim** para permitir que o Editor do registro faça a alteração. 
+4. Na janela controle de acesso do usuário, clique em **Sim** para permitir que o editor do Registro faça a alteração. 
     
-5. Quando solicitado a continuar, clique em **Sim**.
+5. Quando for solicitado a continuar, clique em **Sim**.
     
-    O Editor do registro exibe uma mensagem informando que a configuração foi adicionada com êxito ao registro.
+    O editor do registro exibe uma mensagem dizendo que a configuração foi adicionada com êxito ao registro.
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Editar configurações de registro para habilitar novamente os relatórios de exportação
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Editar configurações do registro para habilitar novamente os relatórios de exportação
 
-Se você desabilitou os relatórios Results.csv e manifest criando os arquivos. reg no procedimento anterior, você pode editar esses arquivos para reabilitar um relatório para que ele será exportado com os resultados da pesquisa. Novamente, execute o procedimento a seguir no computador que você usará para exportar os resultados de uma pesquisa de conteúdo.
+Se você desabilitou os relatórios Results. csv e manifest. XML criando os arquivos. reg no procedimento anterior, poderá editar esses arquivos para reabilitar um relatório para que ele seja exportado com os resultados da pesquisa. Novamente, execute o procedimento a seguir no computador que você usará para exportar os resultados de uma pesquisa de conteúdo.
   
-1. Feche a ferramenta de exportação de descoberta eletrônica do Office 365 se ele estiver aberto.
+1. Feche a ferramenta de exportação de descoberta eletrônica do Office 365 se ela estiver aberta.
     
-2. Edite uma ou ambas dos editar os arquivos. reg que você criou no procedimento anterior.
+2. Edite um ou ambos os arquivos. reg Edit que você criou no procedimento anterior.
     
-    - **Results.csv**
+    - **Results. csv**
     
-        Abra o arquivo DisableResultsCsv.reg no bloco de notas, altere o valor `False` para `True`e salve o arquivo. Por exemplo, depois de editar o arquivo, ele tem esta aparência:
+        Abra o arquivo DisableResultsCsv. reg no bloco de notas, altere `False` o `True`valor para e salve o arquivo. Por exemplo, após editar o arquivo, ele terá a seguinte aparência:
     
         ```
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **Manifest**
+    - **Manifest. xml**
     
-        Abra o arquivo DisableManifestXml.reg no bloco de notas, altere o valor `False` para `True`e salve o arquivo. Por exemplo, depois de editar o arquivo, ele tem esta aparência:
+        Abra o arquivo DisableManifestXml. reg no bloco de notas, altere `False` o `True`valor para e salve o arquivo. Por exemplo, após editar o arquivo, ele terá a seguinte aparência:
     
       ```
       Windows Registry Editor Version 5.00
@@ -84,20 +84,20 @@ Se você desabilitou os relatórios Results.csv e manifest criando os arquivos. 
 
 3. No Windows Explorer, clique ou clique duas vezes em um arquivo. reg que você editou na etapa anterior.
     
-4. Na janela de controle de acesso de usuário, clique em **Sim** para permitir que o Editor do registro faça a alteração. 
+4. Na janela controle de acesso do usuário, clique em **Sim** para permitir que o editor do Registro faça a alteração. 
     
-5. Quando solicitado a continuar, clique em **Sim**.
+5. Quando for solicitado a continuar, clique em **Sim**.
     
-    O Editor do registro exibe uma mensagem informando que a configuração foi adicionada com êxito ao registro.
+    O editor do registro exibe uma mensagem dizendo que a configuração foi adicionada com êxito ao registro.
   
-## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Perguntas frequentes sobre como desativar os relatórios de exportação
+## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Perguntas frequentes sobre a desabilitação de relatórios de exportação
 <a name="faqs"> </a>
 
- **Quais são os relatórios Results.csv e manifest?**
+ **Quais são os relatórios Results. csv e manifest. xml?**
   
-Os arquivos Results.csv e manifest contêm informações adicionais sobre o conteúdo que foi exportado.
+Os arquivos Results. csv e manifest. xml contêm informações adicionais sobre o conteúdo que foi exportado.
   
-- Documento do Excel de uma **Results.csv** que contém informações sobre cada item que é o download como um resultado de pesquisa. Para email, o log de resultado contém informações sobre cada mensagem, incluindo: 
+- **Results. csv** um documento do Excel que contém informações sobre cada item que é baixado como resultado da pesquisa. Para email, o log de resultados contém informações sobre cada mensagem, incluindo: 
     
   - O local da mensagem na caixa de correio de origem (inclusive se a mensagem está na caixa de correio principal ou de arquivo morto).
     
@@ -107,9 +107,9 @@ Os arquivos Results.csv e manifest contêm informações adicionais sobre o cont
     
   - O remetente e os destinatários da mensagem.
     
-  - Se a mensagem é uma mensagem duplicada se você habilitou a eliminação da duplicação ao exportar os resultados da pesquisa. Mensagens duplicadas terá um valor na coluna **Pai ItemId** que identifica a mensagem como uma duplicata. O valor na coluna **ItemId pai** é o mesmo que o valor na coluna **Item DocumentId** da mensagem que foi exportada. 
+  - Se a mensagem é uma mensagem duplicada se você habilitou a eliminação de duplicação ao exportar os resultados da pesquisa. As mensagens duplicadas terão um valor na coluna **ItemId pai** que identifica a mensagem como uma duplicata. O valor na coluna **ItemId pai** é o mesmo que o valor da coluna DocumentID de **Item** da mensagem que foi exportada. 
     
-    Para documentos do SharePoint e do OneDrive para sites corporativos, o log de resultado contém informações sobre cada documento, incluindo:
+    Para documentos de sites do SharePoint e do OneDrive for Business, o log de resultados contém informações sobre cada documento, incluindo:
     
   - A URL para o documento.
     
@@ -119,20 +119,20 @@ Os arquivos Results.csv e manifest contêm informações adicionais sobre o cont
     
   - O nome do documento (que está localizado na coluna Assunto no log de resultados).
     
-- **Manifest** um arquivo de manifesto (no formato XML) que contém informações sobre cada item incluído nos resultados da pesquisa. As informações neste relatório são o mesmo que o relatório de Results.csv, mas ele está no formato especificado pelo Electronic Discovery Reference Model (EDRM). Para obter mais informações sobre EDRM, vá para [https://www.edrm.net](https://www.edrm.net).
+- **Manifest. xml** um arquivo de manifesto (no formato XML) que contém informações sobre cada item incluído nos resultados da pesquisa. As informações neste relatório são as mesmas do relatório Results. csv, mas estão no formato especificado pelo modelo de referência de descoberta eletrônica (EDRM). Para obter mais informações sobre o EDRM, [https://www.edrm.net](https://www.edrm.net)acesse.
     
- **Quando eu desabilite exportando esses relatórios?**
+ **Quando devo desabilitar a exportação desses relatórios?**
   
-Ela depende de suas necessidades específicas. Muitas organizações não exigem informações adicionais sobre os resultados da pesquisa e não precisam esses relatórios.
+Depende de suas necessidades específicas. Muitas organizações não exigem informações adicionais sobre os resultados da pesquisa e não precisam desses relatórios.
   
- **Computador em que é necessário fazer isso em?**
+ **Em qual computador tenho que fazer isso?**
   
- Você precisa alterar a configuração de registro em qualquer computador local que você execute a ferramenta de exportação de descoberta eletrônica do Office 365 em. 
+ Você precisa alterar a configuração do registro em qualquer computador local em que executa a ferramenta de exportação de descoberta eletrônica do Office 365. 
   
- **Após alterar essa configuração, eu tenho que reiniciar o computador?**
+ **Após alterar essa configuração, preciso reiniciar o computador?**
   
-Não, você não precisa reiniciar o computador. Mas, se estiver executando a ferramenta de exportação de descoberta eletrônica do Office 365, você precisará fechá-la e, em seguida, reiniciá-lo depois de alterar a configuração do registro.
+Não, não é necessário reiniciar o computador. Mas, se a ferramenta de exportação de descoberta eletrônica do Office 365 estiver em execução, você terá que fechá-la e reiniciá-la depois de alterar a configuração do registro.
   
- **Uma chave do registro existente fazer editada ou fazer uma nova chave criada?**
+ **Uma chave de registro existente é editada ou faz uma nova chave ser criada?**
   
-Uma nova chave de registro é criada na primeira vez que você executar o arquivo. reg que você criou no procedimento neste tópico. Em seguida, a configuração é editada sempre que você alterar e execute novamente o arquivo. reg editar.
+Uma nova chave de registro é criada na primeira vez que você executa o arquivo. reg que você criou no procedimento deste tópico. Em seguida, a configuração será editada sempre que você alterar e executar novamente o arquivo. reg Edit.

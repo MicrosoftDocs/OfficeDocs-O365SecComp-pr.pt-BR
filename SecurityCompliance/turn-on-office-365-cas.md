@@ -5,52 +5,52 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
-description: Leia este artigo para saber como ativar o Office 365 gerenciamento avançado de segurança, possibilitada pela segurança de aplicativo de nuvem in Microsoft Azure.
-ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Leia este artigo para saber como ativar o Office 365 Cloud app Security, ativado pela Cloud app Security no Microsoft Azure.
+ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603772"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220361"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
-|[Comece a avaliar](office-365-cas-overview.md) <br/> |[Começar a planejar](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](activity-policies-and-alerts.md) <br/> |[Iniciar a utilização](utilization-activities-for-ocas.md) <br/> |
+|[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](activity-policies-and-alerts.md) <br/> |[Começar a usar](utilization-activities-for-ocas.md) <br/> |
   
 ## <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
 
 > [!IMPORTANT]
-> Você deve ser um administrador global ou administrador de segurança para executar a tarefa a seguir. Para saber mais, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md). Na ordem de segurança de aplicativo do Office 365 nuvem trabalhem corrija, o **log de auditoria deve ser ativado** para o seu ambiente do Office 365. Para obter mais informações, consulte [Ativar o Office 365 pesquisa de log de auditoria ativado ou desativado](turn-audit-log-search-on-or-off.md). 
+> Você deve ser um administrador global ou administrador de segurança para executar a tarefa a seguir. Para saber mais, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md). Para que o Office 365 Cloud app Security funcione corretamente, o **log de auditoria deve estar ativado** para o seu ambiente do Office 365. Para obter mais informações, consulte [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md). 
   
-1. Como administrador global ou administrador de segurança, vá para [https://protection.office.com](https://security.microsoft.com) e entrar usando sua conta de trabalho ou da escola para o Office 365. (Isso leva você para a segurança &amp; Centro de conformidade.) 
+1. Como administrador global ou administrador de segurança, acesse [https://protection.office.com](https://security.microsoft.com) e entre usando sua conta corporativa ou de estudante para o Office 365. (Isso leva você para o centro &amp; de conformidade de segurança.) 
     
-2. Vá para **alertas** \> **avançadas de gerenciar alertas**.
+2. Vá até **alertas** \> **Gerenciar alertas avançados**.
     
-3. Selecione **Ativar segurança de aplicativo do Office 365 nuvem**.
+3. Selecione **ativar o Office 365 Cloud app Security**.
     
-4. Escolha **vá para segurança de aplicativo do Office 365 nuvem**.<br/>![Na segurança &amp; Centro de conformidade, escolha gerenciar alertas avançadas para ir à segurança de aplicativo de nuvem do Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Isso leva você para o portal de segurança de aplicativo de nuvem do Office 365, onde você pode exibir relatórios e criar ou editar suas políticas.
+4. Escolha **ir para o Office 365 Cloud app Security**.<br/>![No centro de &amp; conformidade de segurança, escolha Gerenciar alertas avançados para acessar o Office 365 Cloud app Security](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Isso leva você para o portal do Office 365 Cloud app Security, onde você pode exibir relatórios e criar ou editar suas políticas.
 
-Depois que você ativou segurança de aplicativo de nuvem do Office 365, você pode ir para o portal de segurança de aplicativo de nuvem visitando [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e entrando.
+Depois de ter ativado o Office 365 Cloud app Security, você pode ir para o portal do Cloud app Security visitando [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e entrando.
     
 > [!NOTE]
-> Quando você ativa a segurança de aplicativo de nuvem do Office 365, auditoria informações sobre suas contas de usuário do Office 365 e as atividades do usuário são transferidas para o [Aplicativo de nuvem Microsoft Security](https://aka.ms/whatiscas). Isso permite que o Office 365 fornecer alertas avançadas, filtragem e outros recursos para que você possa obter informações e agir sobre atividades suspeitas. 
+> Quando você ativa o Office 365 Cloud app Security, as informações de auditoria sobre suas contas de usuário e as atividades do usuário do Office 365 são transferidas para o [Microsoft Cloud app Security](https://aka.ms/whatiscas). Isso permite que o Office 365 forneça alertas avançados, filtragem e outros recursos para que você possa obter informações e tomar medidas sobre atividades suspeitas. 
   
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Políticas de atividade](activity-policies-and-alerts.md)
     
-- [Políticas de detecção de anomalia](anomaly-detection-policies-in-ocas.md)
+- [Políticas de detecção de anomalias](anomaly-detection-policies-in-ocas.md)
     
 - [Integrar seu servidor SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Seus endereços IP para simplificar o gerenciamento de grupo](group-your-ip-addresses-in-ocas.md)
+- [Agrupar seus endereços IP para simplificar o gerenciamento](group-your-ip-addresses-in-ocas.md)
     
 

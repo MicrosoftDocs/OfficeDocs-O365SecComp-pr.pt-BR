@@ -1,12 +1,12 @@
 ---
-title: Gerenciar trabalhos em eDiscovery avançado (Preview)
+title: Gerenciar trabalhos na descoberta eletrônica avançada (versão prévia)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694797"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214981"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gerenciar trabalhos em eDiscovery avançado (Preview)
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gerenciar trabalhos na descoberta eletrônica avançada (versão prévia)
 
-Aqui está uma lista dos trabalhos que são rastreadas na guia **trabalhos** de um caso de eDiscovery avançado (Preview).
+Veja a seguir uma lista dos trabalhos que são controlados na guia **trabalhos** de um caso na descoberta eletrônica avançada (visualização).
 
-- Reindexação dados dos responsáveis
-- Estimando os resultados da pesquisa
-- Preparando a visualização da pesquisa
+- Reindexar dados de responsáveis
+- Estimando resultados de pesquisa
+- Preparando visualização de pesquisa
 - Adicionando dados a um conjunto de trabalho
-- Adicionar dados para outro conjunto de trabalho
-- Adicionando dados não - Office 365 para um conjunto de trabalho
-- Preparando para resolução de erro
-- Adicionando dados remediados por teste a um conjunto de trabalho
-- Comparando carga define
-- Marcação de documentos
-- Execução de análises
-- Preparar dados para exportação
+- Adicionando dados a outro conjunto de trabalho
+- Adicionando dados que não sejam do Office 365 a um conjunto de trabalho
+- Preparando para a resolução de erros
+- Adicionando dados corrigidos a um conjunto de trabalho
+- ComParando conjuntos de carregamento
+- Marcando documentos
+- Executando o Analytics
+- Preparando dados para exportação

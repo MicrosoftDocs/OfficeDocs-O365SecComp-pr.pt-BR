@@ -6,119 +6,119 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
-description: Quando você cria um rótulo que retém o conteúdo no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
-ms.openlocfilehash: c0a2933f597c9b314ac4ce2e72de9619fac90082
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Ao criar um rótulo que mantém o conteúdo no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
+ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013715"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215001"
 ---
 # <a name="overview-of-disposition-reviews"></a>Visão geral das revisões de disposição
 
-Quando o conteúdo atinge o final do período de retenção, há vários motivos por que talvez você queira revisar o conteúdo para decidir se ele pode ser excluído com segurança ("descartados"). Por exemplo, você pode precisar:
+Quando o conteúdo atinge o final do período de retenção, há vários motivos para que você possa querer revisar o conteúdo para decidir se ele pode ser excluído com segurança ("descartado"). Por exemplo, você pode precisar:
   
-- Suspenda a exclusão ("descarte") de conteúdo relevante em caso de litígio ou auditoria.
+- Suspender a exclusão ("disposição") de conteúdo relevante no caso de litígio ou auditoria.
     
-- Remova o conteúdo da lista disposição para armazenar em um arquivo morto, se esse conteúdo tiver research ou um valor de histórico.
+- Remova o conteúdo da lista de descarte para armazenar em um arquivo morto, se esse conteúdo tiver um valor de pesquisa ou histórico.
     
-- Atribua um período de retenção diferente para o conteúdo, se a diretiva original foi uma solução temporária ou provisional.
+- Atribua um período de retenção diferente ao conteúdo, se a política original era uma solução temporária ou provisionada.
     
-- Retornar o conteúdo aos clientes ou transferi-la para outra organização.
+- Retornar o conteúdo aos clientes ou transferi-lo para outra organização.
     
-Quando você cria um rótulo que retém o conteúdo no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
+Ao criar um rótulo que mantém o conteúdo no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
   
-- As pessoas que você escolher recebem uma notificação de e-mail que têm conteúdo para analisar. Esses revisores podem ser usuários individuais, distribuição ou grupos de segurança ou grupos do Office 365. Observe que as notificações são enviadas semanalmente.
+- As pessoas escolhidas recebem uma notificação por email de que o conteúdo deve ser revisado. Esses revisores podem ser usuários individuais, grupos de distribuição ou segurança ou grupos do Office 365. Observe que as notificações são enviadas semanalmente.
     
-- Os revisores ir para a página de **disposição** na segurança &amp; Centro de conformidade para analisar o conteúdo. 
+- Os revisores vão para a página de **disposição** no centro &amp; de conformidade de segurança para analisar o conteúdo. 
     
 - Para cada documento, o revisor pode:
     
-  - Aplica um rótulo diferente.
+  - Aplicar um rótulo diferente.
     
   - Estenda seu período de retenção.
     
-  - Excluí-lo permanentemente.
+  - Excluí-la permanentemente.
     
-- Revisores podem exibir descartes pendentes ou históricos e exportar essa lista como um arquivo. csv.
+- Os revisores podem exibir as desposições de histórico ou pendentes e exportar essa lista como um arquivo. csv.
     
-Observe que disposição revisões requerem uma assinatura do Office 365 Enterprise E5.
+Observe que as revisões de disposição exigem uma assinatura do Office 365 Enterprise e5.
   
-Uma análise de disposição pode incluir o conteúdo em caixas de correio do Exchange, sites do SharePoint, OneDrive contas e grupos do Office 365. Aguardando uma análise de disposição nesses locais de conteúdo é excluído somente depois que um revisor escolhe excluir permanentemente o conteúdo.
+Uma análise de disposição pode incluir conteúdo em caixas de correio do Exchange, sites do SharePoint, contas do OneDrive e grupos do Office 365. O conteúdo que está aguardando uma revisão de disposição nesses locais é excluído somente depois que um revisor escolhe excluir permanentemente o conteúdo.
   
 ![Página de disposição](media/b7436fb2-1f35-4146-8ca2-32c9d10f7e09.png)
   
-## <a name="setting-up-the-disposition-review-by-creating-a-label"></a>Configurando a revisão de disposição criando um rótulo
+## <a name="setting-up-the-disposition-review-by-creating-a-label"></a>ConFigurando a revisão de disposição criando um rótulo
 
-Este é o fluxo de trabalho básico para configurar uma análise de disposição. Observe que esse fluxo mostra um rótulo que está sendo publicado e aplicada manualmente por um usuário; Como alternativa, um rótulo que dispara uma análise de disposição pode ser autoaplicado ao conteúdo.
+Este é o fluxo de trabalho básico para configurar uma revisão de disposição. Observe que esse fluxo mostra um rótulo que está sendo publicado e, em seguida, aplicado manualmente por um usuário; Como alternativa, um rótulo que dispara uma revisão de disposição pode ser aplicado automaticamente ao conteúdo.
   
-![Gráfico mostrando o fluxo de como funciona a disposição](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Gráfico mostrando o fluxo de como o descarte funciona](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Uma análise de disposição é uma opção quando você cria um rótulo no Office 365. Observe que essa opção não está disponível em uma política de retenção, mas somente em um rótulo com as configurações de retenção.
+Uma revisão de disposição é uma opção quando você cria um rótulo no Office 365. Observe que essa opção não está disponível em uma política de retenção, mas somente em um rótulo com configurações de retenção.
   
-Para obter mais informações sobre rótulos, consulte [Overview of rótulos](labels.md).
+Para saber mais sobre rótulos, confira [Visão geral dos rótulos](labels.md).
   
 ![Configurações de retenção para um rótulo](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
   
-## <a name="disposing-content"></a>Disposição de conteúdo
+## <a name="disposing-content"></a>DesCartando conteúdo
 
-Quando um revisor será notificado por email que o conteúdo está pronto para analisar, eles podem ir para a página de **disposição** na segurança &amp; Centro de conformidade e selecione um ou mais itens. O revisor pode então: 
+Quando um revisor é notificado por email que o conteúdo está pronto para revisão, eles podem ir até a página de **disposição** no &amp; centro de conformidade de segurança e selecionar um ou mais itens. O revisor pode então: 
   
-- Aplica um rótulo diferente.
+- Aplicar um rótulo diferente.
     
 - Estenda o período de retenção.
     
-- Exclua permanentemente o item.
+- Excluir permanentemente o item.
     
-Um revisor pode usar o link para exibir o documento em seu local original, se o revisor tiver permissões para esse local. Durante uma revisão de disposição, nunca move o conteúdo de seu local original e ele é excluído nunca até que o revisor decide fazê-lo.
+Um revisor pode usar o link para exibir o documento em seu local original, se o revisor tiver permissões para esse local. Durante uma revisão de disposição, o conteúdo nunca se move do local original e nunca é excluído até que o revisor opte por fazê-lo.
   
-Observe que as notificações de email são enviadas automaticamente aos revisores semanalmente. Portanto, quando o conteúdo atinge o final do período de retenção, pode levar até sete dias para revisores receber email de notificação que o conteúdo está aguardando disposição.
+Observe que as notificações por email são enviadas automaticamente aos revisores de forma semanal. Portanto, quando o conteúdo atinge o final do período de retenção, pode levar até sete dias para que os revisores recebam a notificação por email de que o conteúdo está aguardando disposição.
   
-Observe também que todas as ações de disposição sejam auditadas. Para garantir isso, você deve ativar a auditoria de pelo menos um dia antes da primeira ação de disposição - para obter mais informações, consulte [Pesquisar o log de auditoria de segurança do Office 365 &amp; Centro de conformidade](search-the-audit-log-in-security-and-compliance.md). 
+Observe também que todas as ações de disposição são auditadas. Para garantir isso, você deve ativar a auditoria pelo menos um dia antes da primeira ação de disposição: para saber mais, confira [Pesquisar o log de auditoria no centro de conformidade &amp; de segurança do Office 365](search-the-audit-log-in-security-and-compliance.md). 
   
 ![Opções de disposição para um documento](media/771630fd-a9b0-47cf-983b-fe85eb4cdafd.png)
   
-## <a name="permissions-for-disposition"></a>Permissões de disposição
+## <a name="permissions-for-disposition"></a>Permissões para descarte
 
-Para obter acesso à página de **disposição** , revisores devem ser membros da função de **Gerenciamento de disposição** e a função **Logs de auditoria somente para exibição** . Recomendamos a criação de um novo grupo de função chamado revisores de disposição, adicionando essas duas funções a esse grupo de função e, em seguida, adicionar membros ao grupo de funções. 
+Para obter acesso à página de **disposição** , os revisores devem ser membros da função de **Gerenciamento de descarte** e da função de logs de **auditoria somente para exibição** . Recomendamos a criação de um novo grupo de função chamado revisores de disposição, adição dessas duas funções a esse grupo de função e adição de membros ao grupo de funções. 
   
-Para obter mais informações, consulte [Conceder aos usuários acesso para a segurança do Office 365 &amp; Centro de conformidade](grant-access-to-the-security-and-compliance-center.md)
+Para obter mais informações, consulte [conceder aos usuários acesso ao centro de &amp; conformidade de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md)
   
-## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Quanto tempo até que o conteúdo descartado é permanentemente excluído
+## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Quanto tempo até o conteúdo Descartado é excluído permanentemente
 
-Aguardando uma análise de disposição de conteúdo é excluído somente depois que um revisor escolhe excluir permanentemente o conteúdo. Quando o revisor escolhe essa opção, o conteúdo no site do SharePoint ou conta de OneDrive se torna qualificado para o processo de limpeza standard descrito nesta seção: [funcionamento de uma política de retenção com conteúdo in-loco](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+O conteúdo que está aguardando uma análise de disposição é excluído somente depois que um revisor escolhe excluir permanentemente o conteúdo. Quando o revisor escolhe essa opção, o conteúdo do site do SharePoint ou da conta do OneDrive fica qualificado para o processo de limpeza padrão descrito nesta seção: [como funciona uma política de retenção com conteúdo in-loco](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 Isso significa que:
   
-- Conteúdo em uma biblioteca de documentos será movido para o primeiro estágio Recycle Bin **dentro de 7 dias** de disposição e excluídos permanentemente **93 dias** depois disso. A Lixeira não é indexada pela pesquisa e, portanto, não está disponível a uma isenção de descoberta eletrônica de seu conteúdo. 
+- O conteúdo de uma biblioteca de documentos será movido para a lixeira de primeiro estágio **dentro de sete dias** de disposição e, em seguida, excluído permanentemente **93 dias** após isso. A lixeira não é indexada pela pesquisa e, portanto, seu conteúdo não está disponível para um bloqueio de descoberta eletrônica. 
     
-- Conteúdo na preservação, mantenha biblioteca serão permanentemente excluídos **dentro de 7 dias** de disposição. 
+- O conteúdo da biblioteca de retenção de preservação será excluído permanentemente **dentro de 7 dias** após o descarte. 
     
-## <a name="view-pending-and-completed-dispositions"></a>Modo de exibição pendentes e concluídas de vendas
+## <a name="view-pending-and-completed-dispositions"></a>Exibir as desposições pendentes e concluídas
 
-Na página **disposição** da segurança &amp; Centro de conformidade, você pode exibir descartes pendentes e concluídas: 
+Na página **disposição** do centro de conformidade &amp; de segurança, você pode exibir as desposições pendentes e concluídas: 
   
-- **Pendente** descartes atingiu o final do seu período de retenção e exigem uma análise de disposição. Após revisar cada item, decida se deseja aplicar um rótulo diferente a ele, estender seu período de retenção ou excluí-lo permanentemente. 
+- **** As disposições pendentes atingiram o final do período de retenção e exigem uma análise de disposição. Após a revisão de cada item, decida se deseja aplicar um rótulo diferente a ele, estenda o período de retenção ou exclua-o permanentemente. 
     
-- **Concluído** descartes foram aprovadas para exclusão durante uma revisão de disposição e agora estão no processo sejam excluídos permanentemente. Itens que tinham um rótulo diferente aplicado ou seu período de retenção estendido como parte de uma análise não aparecerá aqui. 
+- **** As desposições concluídas foram aprovadas para exclusão durante uma revisão de disposição e agora estão em processo de exclusão permanente. Os itens que tinham um rótulo diferente aplicado ou seu período de retenção estendido como parte de uma revisão não aparecerão aqui. 
     
-### <a name="filter-the-disposition-views"></a>Filtrar os modos de exibição de disposição
+### <a name="filter-the-disposition-views"></a>Filtrar as exibições de disposição
 
-Você pode filtrar esses modos de exibição pelo intervalo de rótulo ou hora. Para pendentes descartes, o intervalo de tempo se baseia na data de vencimento. Para descartes históricas, o intervalo de tempo baseia-se na data de exclusão.
+Você pode filtrar esses modos de exibição por rótulo ou intervalo de tempo. Para desposições pendentes, o intervalo de tempo é baseado na data de expiração. Para desposições históricas, o intervalo de tempo é baseado na data de exclusão.
   
 ![Opções de filtro na página de disposição](media/8682a9f5-a77d-45ae-b902-8418a3ebbea1.png)
   
 ### <a name="export-the-disposition-items"></a>Exportar os itens de disposição
 
-Além disso, você pode exportar os itens em qualquer modo de exibição como um arquivo. csv que pode ser aberta no Excel.
+Além disso, você pode exportar os itens em um modo de exibição como um arquivo. csv que pode ser aberto no Excel.
   
-![Dados de disposição exportado no Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Dados de disposição exPortados no Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

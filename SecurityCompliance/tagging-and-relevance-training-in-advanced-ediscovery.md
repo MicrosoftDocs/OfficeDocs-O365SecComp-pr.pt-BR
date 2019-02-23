@@ -6,107 +6,107 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Conheça as etapas a marca e, em seguida, trabalhar com um exemplo de treinamento de 40 arquivos durante o estágio de treinamento de relevância de eDiscovery avançadas do Office 365.  '
-ms.openlocfilehash: 90272452c8c1317957e542eba07bc43722f9c0e9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Conheça as etapas para marcar e, em seguida, trabalhar com um exemplo de treinamento de 40 arquivos durante o estágio de treinamento de relevância do Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524090"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221061"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Treinamento de marcação e relevância na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Este tópico descreve o procedimento para trabalhar com o módulo de treinamento de relevância de descoberta eletrônica avançado. 
+Este tópico descreve o procedimento para trabalhar com o módulo de treinamento de relevância de descoberta eletrônica avançada. 
   
-Após Assessment for concluída no eDiscovery avançado, e você inserir o estágio de treinamento de relevância, uma amostra de treinamento de 40 arquivos é transformada para a guia marca para marcação. 
+Após a conclusão da avaliação na descoberta eletrônica avançada, e você insere o estágio de treinamento relevância, um exemplo de treinamento de 40 arquivos é trazido para a guia marca para marcação. 
   
-## <a name="performing-relevance-training"></a>Executando o treinamento de relevância
+## <a name="performing-relevance-training"></a>Realizando treinamento de relevância
 
-1. No **relevância \> marca** guia, o painel de marcação é exibido por padrão no painel à esquerda e a amostra de arquivos são exibidos, um por vez para marcação. 
+1. Na guia **marca \> de relevância** , o painel de marcação é exibido por padrão no painel esquerdo e os arquivos de exemplo são exibidos, um de cada vez para marcação. 
     
     ![Painel Marca de Relevância](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Na guia **marca** , o nome para exibição do arquivo é mostrado. Isso poderia ser o caminho, assunto do email, cargo ou nome definido pelo usuário. A ID, o caminho do arquivo ou o caminho de texto pode ser copiado clicando no caminho do arquivo. 
+    Na guia **marca** , o nome de exibição do arquivo é mostrado. Pode ser o caminho, o assunto do email, o título ou o nome definido pelo usuário. A ID, o caminho do arquivo ou o caminho do texto podem ser copiados clicando com o botão direito do mouse no caminho do arquivo. 
     
-    Na guia **marca** Mostrar estatísticas de marcação, o número de amostra do arquivo (na parte superior do painel à esquerda), o número do arquivo exibido atualmente sem o total de arquivos na amostra de (parte inferior do painel direito) e o número total atual dos arquivos marcados na amostra de (parte inferior do t ele painel esquerdo), que muda à medida que você marcar os arquivos. Isso se aplica para qualquer marcação de relevância feito na avaliação, treinamento, ajuste ou teste. 
+    As estatísticas de marcação de tabulação de **marca** mostram o número de exemplo de arquivo (na parte superior do painel esquerdo), o número do arquivo exibido no momento no total de arquivos no exemplo (parte inferior do painel direito) e o número total atual de arquivos marcados no exemplo (fim de t o painel esquerdo), que muda à medida que você marca os arquivos. Isso se aplica a qualquer marcação de relevância feita, seja em avaliação, treinamento, atualização ou teste. 
     
-    Ícones indicando a existência de comentários, marcas e família arquivos são exibidos no modo de exibição de arquivo em uma barra acima do arquivo.
+    Os ícones que indicam a existência de comentários, marcas e arquivos da família são exibidos no modo de exibição de arquivo em uma barra acima do arquivo.
     
-2. Determine a relevância do arquivo para o problema de maiusculas e marca o arquivo usando os botões de ícone de opção de marcação ou atalhos de teclado, conforme mostrado na tabela a seguir:
+2. Determine a relevância do arquivo para o problema do caso e marque o arquivo usando os botões ou atalhos de teclado da opção de marcação, conforme mostrado na tabela a seguir:
     
 | |
-|**Opção de marcação**|**Descrição**|**Atalho do teclado**|**Para várias questões - em massa atalho de teclado de marca**|
+|**Opção de marcação**|**Descrição**|**Atalho de teclado**|**Para vários problemas – atalho de teclado de marca em massa**|
 |:-----|:-----|:-----|:-----|
-|S  <br/> |Relevantes  <br/> |A  <br/> |SHIFT + Z  <br/> |
-|NR  <br/> |Não é relevante  <br/> |X  <br/> |SHIFT + X  <br/> |
-|Ignorar  <br/> |Ignorar  <br/> |C  <br/> |Shift + A  <br/> |
+|S  <br/> |Necessários  <br/> |A  <br/> |Shift + Z  <br/> |
+|NR  <br/> |Não relevante  <br/> |X  <br/> |Shift + X  <br/> |
+|Pular  <br/> |Pular  <br/> |C  <br/> |Shift + A  <br/> |
    
-  - Quando há várias questões para um arquivo, após a marcação de um problema, move a seleção para a próxima edição (se houver). 
+  - Quando houver vários problemas para um arquivo, depois de marcar um problema, a seleção será movida para o próximo problema (se houver algum). 
     
-  - Palavras-chave que foram definidas pelo administrador ou do gerente de casos, quando o realce de palavras-chave (instalação de relevância \> realçado palavras-chave), será exibida (em cores especificadas) para ajudar a identificar arquivos relevantes durante a marcação. Se uma palavra-chave contém um sublinhado duplo, ele pode ser clicado para exibir uma dica de ferramenta com descrição da palavra-chave. 
+  - Palavras-chave que foram definidas pelo administrador ou gerente de caso ao realçar palavras-chave (palavras \> -chave de configuração de relevância realçadas), serão exibidas (em cores especificadas) para ajudar a identificar arquivos relevantes durante a marcação. Se uma palavra-chave tiver um sublinhado duplo, poderá ser clicado para exibir uma dica de ferramenta com a descrição da palavra-chave. 
     
     Opcionalmente, na guia **marca** , clique em **configurações de marca** para definir as seguintes opções: 
     
     ![Configurações de marca de relevância](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-  - **Marca em massa**: Use esta opção para atribuir várias questões para um arquivo, selecionando **todos** para definir a marca para o arquivo selecionado para todos os problemas (substituições já marcados problemas) ou selecionando **o restante** para aplicar a marca para os problemas não marcados restantes. A opção selecionada permanece em vigor para todos os casos desse usuário até ser alterado pelo usuário (configuração é por usuário para casos de todas as do usuário). 
+  - **Marca em massa**: Use esta opção para atribuir vários problemas para um arquivo selecionando **todos** para definir a marca do arquivo selecionado para todos os problemas (substituições já marcadas) ou selecionando **o restante** para aplicar a marca aos outros problemas não marcados. A opção selecionada permanecerá em vigor para todos os casos deste usuário até ser alterada por esse usuário (a definição é por usuário para todos os casos do usuário). 
     
-  - **Marca automático**: marque essa caixa de seleção para definir a outros problemas de um arquivo como não é relevante após uma única marcação relevantes.
+  - **Marca automática**: Marque essa caixa de seleção para definir outros problemas para um arquivo como não relevante após uma única marcação relevante.
     
-  - **Avanço automático**: marque essa caixa de seleção para mover a seleção de arquivo exibido para o próximo arquivo quando a última ou somente o problema não marcado de marcação. 
+  - **Avanço automático**: Marque essa caixa de seleção para mover a seleção de arquivo exibida para o próximo arquivo ao marcar o último ou apenas o problema não marcado. 
     
-    Arquivos ignorados não serão considerados para fins de pontuação de relevância e treinamento de relevância.
+    Arquivos ignorados não serão considerados para fins de classificação de relevância e treinamento de relevância.
     
-3. Comentários de texto livre, associados a um arquivo, podem ser exibidos e editados por meio da opção de **comentário** na lista suspensa painel esquerdo. (opcional) 
+3. Comentários de texto livre, associados a um arquivo, podem ser exibidos e editados por meio da opção **Comentário** na lista suspensa do painel esquerdo. opcion 
     
-4. Diretrizes para marcação podem ser exibidas, selecionando a opção de **diretrizes de marcação** na lista suspensa painel esquerdo. 
+4. As diretrizes para marcação podem ser exibidas selecionando a opção **diretrizes de marcação** na lista suspensa do painel esquerdo. 
     
-5. Depois de concluir a todos os arquivos na lista de marcação e estiver pronto para calcular os resultados, clique em **Calcular**. A guia **faixa** é exibida. 
+5. Após concluir a marcação de todos os arquivos na lista e estiver pronto para calcular os resultados, clique em **calcular**. A guia **rastrear** é exibida. 
     
-## <a name="working-with-the-sample-files-list"></a>Trabalhando com a lista de arquivos de amostra
+## <a name="working-with-the-sample-files-list"></a>Trabalhar com a lista de arquivos de exemplo
 
-A lista de arquivos de amostra permite exibir uma lista dos arquivos em um exemplo de treinamento e executar várias ação em um ou mais arquivos. Na **relevância** \> guia **marca** , no painel esquerdo de **arquivos de exemplo** exibe uma lista dos arquivos de amostra para processamento com avaliação, treinamento, ajuste e inconsistências de processos. 
+A lista arquivos de amostra permite exibir uma lista dos arquivos em um exemplo de treinamento e realizar várias ações em um ou mais arquivos. Na guia **** \> **marca** de relevância, o painel esquerdo **arquivos de exemplo** exibe uma lista de arquivos de amostra para processamento com processos de avaliação, treinamento, acompanhamento e inconsistências. 
   
-1. No **relevância \> marca** guia, selecione os arquivos de exemplo na lista suspensa painel esquerdo. Os arquivos de exemplo estão listados no painel à esquerda. 
+1. Na guia **marca \> de relevância** , selecione os arquivos de exemplo na lista suspensa painel esquerdo. Os arquivos de exemplo estão listados no painel esquerdo. 
     
     ![Lista de arquivos de exemplo de Marca de Relevância](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Selecione um número específico de amostra ou arquivo inserindo ou selecionando o seu número nas caixas de **amostra** ou o **arquivo** . 
+2. Selecione um exemplo ou número de arquivo específico inserindo ou selecionando seu número nas caixas de **exemplo** ou de **arquivo** . 
     
-  -   - Um número de sequência de arquivo está listado na coluna à esquerda da lista de arquivo exibido na guia **marca** . Clicando no cabeçalho, a ordem exibida original dos arquivos retorna à sua ordem original. 
+  -   - Um número de sequência de arquivos está listado na coluna esquerda da lista de arquivos exibidos na guia **marca** . Clicando no cabeçalho, a ordem de exibição original dos arquivos retorna a sua ordem original. 
     
-  - Clicar em uma linha do arquivo exibe seu conteúdo no painel direito.
+  - Clicar em uma linha de arquivo exibe o conteúdo no painel direito.
     
-  - Navegar entre arquivos na amostra de atual usando as opções de barra de menu inferiores. Além disso, os atalhos de teclado de navegação estão disponíveis:
+  - Navegue entre arquivos no exemplo atual usando as opções de barra de menu inferior. Além disso, os atalhos de teclado de navegação estão disponíveis:
     
-    Para navegar até o primeiro arquivo na amostra: Shift + Ctrl +\<
+    Para navegar até o primeiro arquivo do exemplo: Shift + Ctrl +\<
     
-    Para navegar até o arquivo anterior na amostra: Shift +\<
+    Para navegar para o arquivo anterior no exemplo: Shift +\<
     
-    Para navegar até o próximo arquivo na amostra: Shift +\>
+    Para navegar até o próximo arquivo no exemplo: Shift +\>
     
-    Para navegar até o último arquivo na amostra: Shift + Ctrl +\>
+    Para navegar até o último arquivo no exemplo: Shift + Ctrl +\>
     
 ## <a name="see-also"></a>Confira também
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Noções básicas sobre avaliação na relevância](assessment-in-relevance-in-advanced-ediscovery.md)
+[Noções básicas sobre avaliação em relevância](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Avaliação e marcação](tagging-and-assessment-in-advanced-ediscovery.md)
+[Marcação e avaliação](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Análise de relevância de acompanhamento](track-relevance-analysis-in-advanced-ediscovery.md)
+[Análise de relevância de rastreamento](track-relevance-analysis-in-advanced-ediscovery.md)
   
 [Decidindo com base nos resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Análise de relevância de teste](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testando análise de relevância](test-relevance-analysis-in-advanced-ediscovery.md)
 

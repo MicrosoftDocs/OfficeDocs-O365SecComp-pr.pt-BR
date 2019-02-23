@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma explicação sobre os vários aspectos da resiliência de dados no Exchange Online e no Office 365.
-ms.openlocfilehash: 5c0f42d1abc48b497a915354e3056b47a41326c5
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090943"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220401"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resiliência de dados do Exchange Online no Office 365
 

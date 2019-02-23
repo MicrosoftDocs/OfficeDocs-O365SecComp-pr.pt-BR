@@ -1,64 +1,64 @@
 ---
-title: Notas de versão do eDiscovery avançado (Preview)
+title: Notas de versão para descoberta eletrônica avançada (versão prévia)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artigo contém as notas de versão para eDiscovery avançado (Preview).
-ms.openlocfilehash: 305d1da31c9628f4f87b7b50da0b48c64efb808d
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+description: Este artigo contém as notas de versão da descoberta eletrônica avançada (versão prévia).
+ms.openlocfilehash: c717a07d75e84046de07203515fceaf26aab5a41
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607342"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212931"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de versão do eDiscovery avançado (Preview)
+# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de versão para descoberta eletrônica avançada (versão prévia)
 
-O programa de demonstração pública para descoberta eletrônica avançado é a maneira de obter acesso antecipado à funcionalidade futura e atualizações. Para obter acesso antecipado para os recursos mais recentes, basta criar e um caso de eDiscovery avançado (Preview) use o Centro de conformidade do & de segurança do Office 365. Consulte [criar um novo caso](create-new-ediscovery-case.md).
+O programa de visualização pública para descoberta eletrônica avançada é a maneira de obter acesso antecipado à funcionalidade e às atualizações futuras. Para obter acesso antecipado aos recursos mais recentes, basta criar e usar um caso de descoberta eletrônica avançada (visualização) no centro de conformidade do & de segurança do Office 365. ConFira [criar um novo caso](create-new-ediscovery-case.md).
 
 ## <a name="issues-fixed-in-this-release"></a>Problemas corrigidos nesta versão
 
-- DCR: Manipulação de itens Unindexed e órfã de exceção
-- DCR: Notificações de espera
-- DCR: Responsáveis no eDiscovery
+- DCR: manipulação de exceção para itens não indexados e órfãos
+- DCR: notificações de bloqueio
+- DCR: responsáveis pela descoberta eletrônica
 
 ## <a name="whats-new"></a>Novidades
 
-- **Navegação Redesigned no Centro de conformidade de segurança &** – eDiscovery avançado (Preview) tem uma nova aparência. Use o eDiscovery avançado (Preview) para gerenciar mais das maiusculas seu fluxo de trabalho.
+- **Navegação reprojetada no centro de conformidade do & de segurança** – a descoberta eletrônica avançada (visualização) tem uma nova aparência. Use a descoberta eletrônica avançada (versão prévia) para gerenciar mais de seu fluxo de trabalho de caso.
 
-- **Gerenciamento de casos** – há suporte adicional para novos tipos de maiusculas. Você também pode selecionar e salvar seus casos recentes e Favoritos. Controlar e monitorar a atividade dentro e entre os casos usando novos painéis.
+- **Gerenciamento de casos** – há suporte adicional para novos tipos de caso. Você também pode selecionar e salvar seus casos recentes e favoritos. Controlar e monitorar a atividade em e entre casos usando novos painéis.
 
-- **Gerenciamento dos responsáveis** – adicionar e remover usuários como responsáveis de dados dentro de um caso.
+- **Gerenciamento de responsáveis** – adicione e remova usuários como responsáveis por dados em um caso.
 
-- O **Exchange, o OneDrive e a integração de equipes** – adicionar automaticamente o correio atual de um usuário, OneDrive para negócios conta e sites do Microsoft Teams a um caso. 
+- **Integração com o Exchange, o onedrive e** o Teams – adicione automaticamente a caixa de correio de um usuário, a conta do onedrive for Business e os sites do Microsoft Teams a uma ocorrência. 
 
-- **Comunicação dos responsáveis** – enviar e gerenciar notificações de retenção legal em nome de sua organização.
+- **Comunicações de responsáveis** – envie e gerencie notificações de retenção legal em nome da sua organização.
 
-- **Portal dos responsáveis** – novo portal para responsáveis acessar seus ativos espera avisos.
+- **Portal de responsáveis** – novo portal para que os responsáveis acessem seus avisos de isenção ativos.
 
-- **Indexação de profundidade** – itens sob demanda parcialmente rastreamento indexados.
+- **IndexAção profunda** – Rastreie novamente os itens parcialmente indexados sob demanda.
 
-- **Correção de erro** – corrigir ou download de processamento de erros; Isso inclui suporte de remediação para tipos de arquivos grandes, arquivos protegidos por senha e mais. 
+- **Correção de erro** : corrigir ou baixar erros de processamento; Isso inclui suporte de correção para tipos de arquivo grandes, arquivos protegidos por senha e muito mais. 
 
-- **Aprimoramentos para pesquisar** – criar uma pesquisa identificando responsáveis e/ou locais.
+- **Melhorias na pesquisa** – crie uma pesquisa identificando os responsáveis e/ou locais.
 
-- **Conjuntos de trabalho** – auditoria estático, controlar e gerenciar conjuntos de documentos.
+- **Conjuntos de trabalho** – gerencie, rastreie e faça auditoria de conjuntos estáticos de documentos.
 
-- **Revise** – Use uma nativo, texto e modo de exibição de quase nativos para analisar documentos adicionados ao seu conjunto de trabalho.
+- **Revisão** – use um modo de exibição nativo, de texto e quase nativo para revisar os documentos adicionados ao seu conjunto de trabalho.
 
-- **Redact, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você examine os documentos.
+- **Redigir, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você revisar documentos.
   
-- **Revisão ativado por analytics**– análise de descoberta eletrônica alavancar localizar, pesquisar e selecionar os resultados dentro de um conjunto de trabalho.
+- **Análise com capacidade para análise**– Aproveite a análise de descoberta eletrônica para localizar, Pesquisar e examinar os resultados em um conjunto de trabalho.
 
-- **Trabalhos** – controlar o status dos processos de longa execução.
+- **Jobs** – rastreie o status de processos de execução longa.
 
-- **Atividades de auditoria de New** – trilha e modo de exibição novo auditar a atividade do eDiscovery avançado.
+- **Novas atividades de auditoria** – rastrear e exibir novas atividades de auditoria para descoberta eletrônica avançada.

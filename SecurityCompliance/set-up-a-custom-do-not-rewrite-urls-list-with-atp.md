@@ -1,85 +1,85 @@
 ---
-title: Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
+title: Configurar uma lista personalizada de URLs do não Rewrite usando os links seguros de ATP do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection: M365-security-compliance
-description: Ao configurar suas políticas de links seguros ATP, você pode incluir reconfiguração execute-não é ' lista de URLs para permitir que algumas pessoas na sua organização visitar sites que você pode incluir em sua lista.
-ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Ao configurar as políticas de links seguros de ATP, você pode incluir uma lista de URLs que não reconfigura para permitir que algumas pessoas em sua organização visitem sites que você inclui na sua lista.
+ms.openlocfilehash: 7fbc7d0d0caec79dcdbb3dc5b1b5a8a4e085dc09
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995372"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215021"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs execute-não-reconfiguração personalizada usando o Office 365 ATP seguros Links
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista personalizada de URLs do não Rewrite usando os links seguros de ATP do Office 365
 
 > [!IMPORTANT]
-> Este artigo destina-se a clientes corporativos. Se você for um usuário doméstico procurando informações sobre Links seguros no Outlook, consulte [Outlook.com avançadas de segurança](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artigo destina-se a clientes corporativos. Se você for um usuário doméstico que procura informações sobre links seguros no Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Com [A proteção de ameaça avançadas do Office 365](office-365-atp.md) (ATP), sua organização pode ter um [URLs bloqueados personalizados](set-up-a-custom-blocked-urls-list-wtih-atp.md), de forma que, quando as pessoas clicarem na web endereços (URLs) em mensagens de email ou certos documentos do Office, eles são impedidos de pretende dessas URLs. Sua organização também pode ter listas personalizadas "não regravação" para grupos específicos na sua organização. Uma lista de "não regravação" permite que algumas pessoas visite URLs que são bloqueados contrário por [Links de ATP seguros no Office 365](atp-safe-links.md). 
+Com a [proteção avançada contra ameaças do Office 365](office-365-atp.md) (ATP), sua organização pode ter um [URL bloqueado personalizado](set-up-a-custom-blocked-urls-list-wtih-atp.md), de modo que, quando as pessoas clicam em endereços da Web (URLs) em mensagens de email ou determinados documentos do Office, eles são impedidos de ir para essas URLs. Sua organização também pode ter listas personalizadas de "não reescrever" para grupos específicos em sua organização. Uma lista "não reconfigurar" permite que algumas pessoas visitem URLs que, de outra forma, são bloqueadas por [links de ATP seguros no Office 365](atp-safe-links.md). 
   
-Este artigo descreve como especificar uma lista das URLs que são excluídos da verificação de Links de ATP seguros e alguns pontos importantes a serem tenha em mente.
+Este artigo descreve como especificar uma lista de URLs que são excluídas da verificação de links seguros de ATP e alguns pontos importantes a ter em mente.
 
-## <a name="set-up-a-do-not-rewrite-list"></a>Configurar uma lista de "não regravação"
+## <a name="set-up-a-do-not-rewrite-list"></a>Configurar uma lista de "não reconfigurar"
 
-Proteção de Links de seguros ATP usa várias listas, incluindo a lista de URLs bloqueios da sua organização e as listas de "não regravação" para exceções. Se você tiver as permissões necessárias, você pode configurar suas listas de "não regravação" personalizado. Você fazer isso quando você adicionar ou editar políticas de seguros Links que se aplicam a destinatários específicos na sua organização. 
+A proteção de links seguros de ATP usa várias listas, incluindo a lista de URLs bloqueadas da organização e as listas "não reescrever" para exceções. Se você tiver as permissões necessárias, poderá configurar as listas personalizadas de "não reescrever". Você faz isso quando adiciona ou edita políticas de links seguros que se aplicam a destinatários específicos em sua organização. 
 
-Para editar (ou definir) políticas ATP, você deve ter uma das funções descritas na tabela a seguir:
+Para editar (ou definir) políticas ATP, você deve receber uma das funções descritas na tabela a seguir:
 
-|Função  |Onde/como atribuído  |
+|Função  |Onde/como a atribuição  |
 |---------|---------|
-|Administrador Global do Office 365 |A pessoa que se inscreve para comprar o Office 365 é um administrador global por padrão. (Consulte [funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais).         |
-|Administrador de segurança |Centro de administração do Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Gerenciamento de organização Online do Exchange |Centro de administração do Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Cmdlets do PowerShell (consulte [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
+|Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
+|Gerenciamento da organização do Exchange Online |Centro de administração do[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>ou <br>  Cmdlets do PowerShell (consulte [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Para saber mais sobre as funções e permissões, consulte [permissões no Office 365 Security &amp; Centro de conformidade](permissions-in-the-security-and-compliance-center.md).
+> Para saber mais sobre funções e permissões, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Para exibir ou editar uma lista de URLs personalizada "não regravação"
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Para exibir ou editar uma lista de URLs de "não reescrever" personalizada
   
-1. Vá para [https://protection.office.com](https://protection.office.com) e entre com sua conta do trabalho ou da escola. 
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
     
-2. No painel de navegação esquerdo, em **gerenciamento de ameaça** \> **política** \> **Links seguros**.
+2. Na navegação à esquerda, em **links seguros**da **política** \> de **Gerenciamento** \> de ameaças.
     
-3. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (botão novo se parece com um sinal de adição ( **+**)) para criar uma nova política. (Como alternativa, você pode editar uma política existente).<br/>![Escolha Novo para adicionar uma diretiva de segurança Links para os destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Na seção **políticas que se aplicam a destinatários específicos** , escolha **novo** (o botão novo é semelhante a um sinal **+** de adição ()) para criar uma nova política. (Como alternativa, você pode editar uma política existente.)<br/>![Escolha novo para adicionar uma política de links seguros para destinatários de email específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-4. Especifique um nome e descrição para a diretiva.
+4. Especifique um nome e uma descrição para a política.
     
-5. Na seção **não reescrever as seguintes URLs** , marque a caixa **Digite uma URL válida** , digite uma URL e clique no sinal de adição (+). 
+5. Na seção não **reescrever as seguintes URLs** , selecione a caixa **Insira uma URL válida** e, em seguida, digite uma URL e, em seguida, escolha o sinal de adição (+). 
     
-6. Na seção **Aplicada** , escolha **o destinatário é um membro da**e escolha o grupo (s) que você deseja incluir na sua política. Escolha **Adicionar**e escolha **Okey**.
+6. Na seção **aplica-se** a, escolha **o destinatário é um membro de**e, em seguida, escolha o (s) grupo (s) que você deseja incluir na política. Escolha **Adicionar**e, em seguida, escolha **OK**.
     
-7. Quando terminar de adicionar URLs, no canto inferior direito da tela, escolha **Salvar**.
+7. Quando terminar de adicionar URLs, no canto inferior direito da tela, escolha **salvar**.
     
 > [!NOTE]
-> Certifique-se de revisar a lista de bloqueados URLs personalizada da sua organização. Consulte [Configurar uma lista de URLs bloqueada personalizada usando Links de ATP seguros](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
+> Certifique-se de revisar a lista personalizada de URLs bloqueadas da sua organização. ConFira [Configurar uma lista de URLs bloqueadas personalizada usando os links seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
   
-## <a name="important-points-to-keep-in-mind"></a>Pontos importantes a serem tenha em mente
+## <a name="important-points-to-keep-in-mind"></a>Pontos importantes a ter em mente
 
-- Nenhum URL que você especificar na lista "não regravação" é excluída dos Links de seguros ATP varredura para os destinatários que você especificar.
+- Qualquer URL especificada na lista "não reescrever" será excluída da verificação de links seguros de ATP para os destinatários que você especificar.
  
-- Quando você especifica uma lista de "não regravação" para uma política de ATP Links de seguros, você pode incluir até três asteriscos de caractere curinga (\*). Caracteres curinga (\*) são considerados como entradas de `contoso.com`, que não explicitamente incluir prefixos ou subdomínios, como `http://` ou `https://`. Isso significa que uma entrada, tais como `contoso.com` é semelhante ao `*contoso.com*` para sua lista de "não regravação".
+- Ao especificar uma lista "não reconfigurar" para uma política de links seguros de ATP, você pode incluir até três asteriscos curinga (\*). Caracteres curinga (\*) são considerados para entradas como `contoso.com`, por exemplo, que não incluem prefixos ou subdomínios, `http://` como `https://`ou. Isso significa que uma entrada, como `contoso.com` é semelhante à `*contoso.com*` da lista "não reconfigurar".
 
-- Se você já tiver uma lista das URLs em sua lista de "não regravação", certifique-se revisar essa lista e adicionar caracteres curinga, conforme apropriado. Por exemplo, se sua lista existente tiver uma entrada como `http://contoso.com/a` e você deseja incluir subcaminhos como `http://contoso.com/a/b` em sua política, adicione um caractere curinga para a entrada para que ele se parece com `http://contoso.com/a*`.
+- Se você já tiver uma lista de URLs na lista de "não reescrever", verifique se a lista e adicione caracteres curinga conforme apropriado. Por exemplo, se a sua lista existente tem uma entrada `http://contoso.com/a` como e você deseja incluir subcaminhos como `http://contoso.com/a/b` em sua política, adicione um curinga à sua entrada para que ele se `http://contoso.com/a*`pareça.
     
-- Não inclua uma barra (/) nas URLs que você especificar em sua lista de "não regravação". Por exemplo, em vez de inserir `contoso.com/` na sua lista de "não regravação", digite `contoso.com`.
+- Não inclua uma barra (/) nas URLs que você especificar na lista "não reconfigurar". Por exemplo, em vez de `contoso.com/` inserir na lista "não reescrever", insira `contoso.com`.
     
-Os seguintes exemplos de listas de tabela de que você pode digitar e o que essas entradas de efeito tem.
+A tabela a seguir lista exemplos do que você pode inserir e o efeito que essas entradas têm.
     
 |**Entrada de exemplo**|**O que ele faz**|
 |:-----|:-----|
-|`*contoso.com*`  <br/> |Permite que os destinatários específicos a visitar um domínio, subdomínios e caminhos, tais como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a`, mas não subcaminhos, como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Permite que os destinatários específicos visitar um site como `http://contoso.com/a` e subcaminhos like`http://contoso.com/a/b`  <br/> |
+|`*contoso.com*`  <br/> |Permite que destinatários específicos visitem um domínio, subdomínios e caminhos, como `http://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
+|`http://contoso.com/a`  <br/> |Permite que destinatários específicos visitem um site `http://contoso.com/a`como, mas não subcaminhos como`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Permite que destinatários específicos visitem um site `http://contoso.com/a` como e subcaminhos como`http://contoso.com/a/b`  <br/> |
    
  

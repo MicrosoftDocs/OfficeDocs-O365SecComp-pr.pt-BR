@@ -6,20 +6,20 @@ manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: Os tipos de informações confidenciais procure por um padrão específico e corroborá-lo assegurando formatação apropriada, aplicando somas de verificação e procurando por palavras-chave relevantes ou outras informações. Alguns dessa funcionalidade é realizada pelas funções internas. Este tópico explica o que essas funções procuram, para ajudá-lo a entender como os tipos de informações confidenciais predefinidos funcionam.
-ms.openlocfilehash: 510f98e2b4e1d2480550f11026cf445be6ffc931
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Os tipos de informações confidenciais procuram um padrão específico e o corroboratem, garantindo a formatação adequada, aplicando as somas de verificação e procurando palavras-chave relevantes ou outras informações. Algumas dessas funcionalidades são executadas por funções internas. Este tópico explica o que essas funções procuram para ajudá-lo a entender como funcionam os tipos de informações confidenciais predefinidos.
+ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013755"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219351"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>O que as funções DLP procuram
 
@@ -29,7 +29,7 @@ Este tópico explica o que essas funções procuram, para ajudar você a entende
   
 ## <a name="funcusdate"></a>Func_us_date
 
-Essa função procura por uma data no formato comumente usada nos EUA Isso inclui os formatos de "mês/dia/ano", "mês-dia-ano," e "mês dia/ano". Os nomes ou abreviações de meses não diferenciam maiusculas de minúsculas. 
+Essa função procura uma data no formato comumente usado nos EUA. Isso inclui os formatos "mês/dia/ano", "mês-dia-ano" e "ano dia do mês". Os nomes ou abreviações de meses não diferenciam maiúsculas de minúsculas. 
   
 Exemplos:
   
@@ -37,23 +37,23 @@ Exemplos:
     
 - 2 de dezembro de 2016
     
-- dez 2016 02
+- Dec 02 2016
     
 - 12/2/2016
     
 - 12/02/16
     
-- Dez-2-2016
+- Dec-2-2016
     
-- 2-12-16
+- 12-2-16
     
 Nomes de meses aceitos:
   
 - Inglês
     
-  - Janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
+  - Janeiro, fevereiro, março, abril, maio, junho de julho, agosto, setembro, outubro, novembro de dezembro
     
-  - Junho, julho ago Dec de novembro de outubro de setembro de maio de fevereiro de janeiro abr de março.
+  - Jan. Fev. mar. abr. Maio de 1º de julho de agosto de setembro. Dec.
     
 ## <a name="funceudate"></a>Func_eu_date
 
@@ -61,17 +61,17 @@ Essa função procura uma data no formato comumente usado na UE (e na maioria do
   
 Exemplos:
   
-- De 2016 2 de dezembro
+- 2 Dec 2016
     
-- dez 02 2016
+- 02 de dezembro de 2016
     
-- 16 de dezembro de 2
+- 2 de dezembro de 16
     
 - 2/12/2016
     
-- 16/12/02
+- 02/12/16
     
-- 2-Dec-2016
+- 2-dez-2016
     
 - 2-12-16
     
@@ -79,66 +79,66 @@ Nomes de meses aceitos:
   
 - Inglês
     
-  - Janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
+  - Janeiro, fevereiro, março, abril, maio, junho de julho, agosto, setembro, outubro, novembro de dezembro
     
-  - Junho, julho ago Dec de novembro de outubro de setembro de maio de fevereiro de janeiro abr de março.
+  - Jan. Fev. mar. abr. Maio de 1º de julho de agosto de setembro. Dec.
     
 - Holandês
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan CTP de fevereiro maart abr mei junho, julho agosto Set setembro oct okt novembro dec
+  - Jan fevereiro de maart de abril de Mei jun jul setembro de agosto de dezembro de Okt de Nov
     
 - Francês
     
-  - janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre
+  - Janvier, Février, Mars, Avril, Mai, Juin Juillet, Août, Septembre, outubro, Novembre, décembre
     
-  - janv. févr. MARS avril mai juin juil. setembro de août outubro de novembro. déc.
+  - Janv. févr. Mars Avril Mai Juin Juil. Août set. Oct. nov. déc.
     
 - Alemão
     
-  - jänuar, februar, märz, abril, mai, juni juli, agosto, setembro, oktober, novembro, dezember
+  - jänuar, februar, März, abril, Mai, Juni Juli, agosto, setembro, Oktober, novembro de Dezember
     
-  - Jan. / Jän. Fevereiro März Mai abr Juni Juli ago setembro Okt. Dez de novembro.
+  - Jan./Jän. Fev. März abr. Mai Juni Juli ago. set. Okt. Nov. dez.
     
 - Italiano
     
-  - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
+  - gennaio, febbraio, Marzo, Aprile, Maggio, giugno, Luglio, agosto, Settembre, ottobre, Novembre, Dicembre
     
-  - genn. febbr. Mar. abr. magg. giugno luglio ag. definições. ott. novembro. dic.
+  - Genn. febbr. mar. abr. Magg. giugno Luglio AG. definida. Ott. Nov. DIC.
     
 - Português
     
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
     
-  - Jan fev mar abr mai junho, julho atrás dispostos dez novembro
+  - Jan fev mar abr mai jun jul atrás Set out nov dez
     
 - Espanhol
     
-  - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
+  - Enero, Febrero, Marzo, abril, Mayo, junio, Julio, agosto, Septiembre, Octubre, Noviembre, Diciembre
     
-  - enero CTP de fevereiro. marzo abr. mayo junho julho. setembro de agosto/conjunto. outubro de novembro. dic.
+  - Enero Fev. Marzo abr. Mayo Jun. Jul. agosto set./set. Oct. nov. DIC.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (preterido)
 
 > [!NOTE]
-> Essa função foi preterida porque ele oferece suporte a apenas nomes de mês português, que agora estão incluídos na `Func_eu_date` função acima. 
+> Essa função foi preterida porque dá suporte apenas a `Func_eu_date` nomes de meses em Português, que agora estão incluídos na função acima. 
   
-Essa função procura por uma data no formato normalmente usado em português. O formato para essa função é os mesmos `Func_eu_date`, diferentes apenas no idioma usado.
+Essa função procura uma data no formato comumente usado em Português. O formato dessa função é o mesmo que `Func_eu_date`, diferente somente no idioma usado.
   
 Exemplos:
   
-- Dez 2 2016
+- 2 dez 2016
     
-- dez 02 2016
+- 02 dez 2016
     
-- Dez 2 16
+- 2 dez 16
     
 - 2/12/2016
     
-- 16/12/02
+- 02/12/16
     
-- 2-Dez-2016
+- 2-dez-2016
     
 - 2-12-16
     
@@ -148,26 +148,26 @@ Nomes de meses aceitos:
     
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
     
-  - Jan fev mar abr mai junho, julho atrás dispostos dez novembro
+  - Jan fev mar abr mai jun jul atrás Set out nov dez
     
 ## <a name="funceudate2-deprecated"></a>Func_eu_date2 (preterido)
 
 > [!NOTE]
-> Essa função foi preterida porque ele oferece suporte a apenas nomes de mês holandês, que agora estão incluídos na `Func_eu_date` função acima. 
+> Essa função foi preterida porque dá suporte apenas a `Func_eu_date` nomes de meses em Holandês, que agora estão incluídos na função acima. 
   
-Essa função procura por uma data no formato comumente usada em alemão. O formato para essa função é os mesmos `Func_eu_date`, diferentes apenas no idioma usado.
+Essa função procura uma data no formato comumente usado em Holandês. O formato dessa função é o mesmo que `Func_eu_date`, diferente somente no idioma usado.
   
 Exemplos:
   
 - 2 Mei 2016
     
-- 02 mei 2016
+- 02 Mei 2016
     
 - 2 Mei 16
     
 - 2/12/2016
     
-- 16/12/02
+- 02/12/16
     
 - 2-Mei-2016
     
@@ -179,11 +179,11 @@ Nomes de meses aceitos:
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan CTP de fevereiro maart abr mei junho, julho agosto Set setembro oct okt novembro dec
+  - Jan fevereiro de maart de abril de Mei jun jul setembro de agosto de dezembro de Okt de Nov
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-Essa função procura por uma data nos formatos costumam ser utilizados pelos cartões de crédito e débito, que excluir dias em favor meses. Essa função corresponderá datas no formato de "mês/ano", "mês-ano", "ano [nome do mês]" e "ano [abreviação mês]". Os nomes ou abreviações de meses não diferenciam maiusculas de minúsculas.
+Essa função procura uma data nos formatos comumente usados por cartões de crédito e débito, que excluem dias em favor de meses. Essa função coincidirá datas no formato de "mês/ano", "Mês-Year", "[month Name] Year" e "[month abreviation] Year". Os nomes ou abreviações de meses não diferenciam maiúsculas de minúsculas.
   
 Exemplos
   
@@ -203,15 +203,15 @@ Os seguintes formatos dão suporte a AA ou AAAA:
     
 - MêsAAAA – por exemplo, 'janeiro2010' ou 'Jan2010' ou 'janeiro10' ou 'Jan10'
     
-- Mês aaaa – por exemplo, 'janeiro de 2010' ou ' Jan/2010' ou ' janeiro/10' ou ' Jan/10'
+- Month/aaaa--por exemplo, ' Janeiro/2010 ' ou ' Jan/2010 ' ou ' janeiro/10 ' ou ' Jan/10 '
     
 Nomes de meses aceitos:
   
 - Inglês
     
-  - Janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
+  - Janeiro, fevereiro, março, abril, maio, junho de julho, agosto, setembro, outubro, novembro de dezembro
     
-  - CTP de fevereiro de Jan Mar Abr talvez junho, julho agosto setembro Oct novembro Dec
+  - Jan fev mar de junho de julho de agosto de agosto de abril de dezembro
     
 ## <a name="funcusaddress"></a>Func_us_address
 

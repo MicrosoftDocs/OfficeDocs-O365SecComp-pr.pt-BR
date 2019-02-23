@@ -1,12 +1,12 @@
 ---
-title: Use o editor de comunicações
+title: Usar o editor de comunicações
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b148ff1a77cd9225a26f98e7612e9fb5b57331e3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 967320aeb960258d77d90cca4e3b681849f9952e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706052"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215801"
 ---
-# <a name="use-the-communications-editor"></a>Use o editor de comunicações
+# <a name="use-the-communications-editor"></a>Usar o editor de comunicações
 
-Conforme você define o conteúdo de seu conteúdo de portal, legais segure notificações e lembretes/escalonamentos relacionados, você pode aproveitar o Editor de comunicações para formatar e personalizar dinamicamente seu conteúdo.
+À medida que você define o conteúdo do seu conteúdo de portal, as notificações de retenção legal e lembretes/rementeções relacionados, você pode aproveitar o editor de comunicações para formatar e personalizar dinamicamente o conteúdo.
 
-## <a name="rich-text-editor"></a>Editor de rich text 
+## <a name="rich-text-editor"></a>Editor de Rich Text 
 
-O Editor de comunicações permite que o usuário personalize o texto usando as opções de editor. Por exemplo, os usuários podem alterar os tipos de fonte, criar listas com marcadores, realce conteúdo e mais. 
+O editor de comunicações permite que o usuário personalize o texto usando as opções do editor. Por exemplo, os usuários podem alterar os tipos de fonte, criar listas com marcadores, destacar conteúdo e muito mais. 
 
-## <a name="merge-field-variables"></a>Variáveis de campo de mesclagem
+## <a name="merge-field-variables"></a>Mesclar variáveis de campo
 
-Você pode aproveitar as variáveis de mesclagem email no Editor de comunicações para incorporar os atributos dos responsáveis personalizada no corpo de texto de uma comunicação. Quando enviado para dos responsáveis, o campo de mesclagem será preenchido com o campo correspondente. Por exemplo, quando enviado para dos responsáveis John Smith, o campo de mesclagem [nome dos responsáveis] seria convertido com o nome correspondente. 
+Você pode aproveitar as variáveis de mala direta por email do editor de comunicações para inserir atributos de responsáveis personalizados no corpo de texto de uma comunicação. Quando enviado para os responsáveis, o campo de mesclagem será preenchido com o campo correspondente. Por exemplo, quando enviado para os responsáveis John Smith, o campo de mesclagem [nome do responsáveis] seria convertido com o nome correspondente. 
 
-Você pode usar os campos de mesclagem email selecionando os ícones de **campo de mala direta** na parte superior do controle de editor de rich text. O espaço reservado será adicionado com base desativa a localização do cursor dos usuários. 
+Você pode usar campos de mala direta por email selecionando os ícones do **campo** de mesclagem na parte superior do controle do editor de Rich Text. O espaço reservado será adicionado com base no local do cursor dos usuários. 
 
-### <a name="list-of-merge-field-variables"></a>Lista de variáveis de campo de mala direta
+### <a name="list-of-merge-field-variables"></a>Lista de variáveis de campo de mesclagem
 
 | Nome do campo                  | Detalhes do campo | 
 | :------------------- | :------------------- |
-| Nome para Exibição  | Dos responsáveis pela primeira vez e o último nome. | 
-| Link de confirmação | Um link personalizado para registrar a confirmação da cada responsável.|                 |
-| Link de portal     | Um link personalizado para Portal do dos responsáveis de conformidade.|                |
-| Responsável pela emissora                   | O endereço de email do responsável pela emissora especificado.|                   |
+| Nome para Exibição  | O nome e o sobrenome do responsáveis. | 
+| Link de confirmação | Um link personalizado para registrar a confirmação de cada um dos responsáveis.|                 |
+| Link do portal     | Um link personalizado para o portal de conformidade do responsáveis.|                |
+| Responsável pela emissão                   | O endereço de email do responsável pela emissão especificado.|                   |
 | Data de emissão                   | A data em que o aviso foi emitido (UTC).              |

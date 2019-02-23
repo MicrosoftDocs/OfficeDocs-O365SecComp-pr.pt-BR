@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral da resiliência de dados no SharePoint Online no Office 365.
-ms.openlocfilehash: c550cb6572cb71b53cd544af64339129f72b888f
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4fd17b50551639f6e11975acbc3822fb6ffa8bb2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090883"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214801"
 ---
 # <a name="sharepoint-online-data-resiliency"></a>Resiliência de dados do SharePoint Online
 Um princípio importante para O SharePoint Online nunca tem uma cópia única de qualquer parte dos dados. O SharePoint Online usa a replicação do SQL Server, que é um conjunto de tecnologias para copiar e distribuir dados e objetos de banco de dados de um banco de dados para outro e, em seguida, sincronizar entre bancos de dados para manter a consistência. 

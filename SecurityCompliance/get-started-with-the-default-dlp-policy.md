@@ -6,76 +6,76 @@ manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
-description: Antes de criar sua primeira diretiva de prevention (DLP) de perda de dados até mesmo, DLP é ajudar a proteger suas informações confidenciais com uma política padrão. Essa diretiva padrão e seu recomendação (mostrada abaixo) ajudam a manter seu conteúdo confidencial seguro por informando quando o número do cartão de email ou documentos contendo um crédito foram compartilhadas com alguém de fora da sua organização.
-ms.openlocfilehash: 1b522a2c04e72353970ef5dfcd62183023a01994
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização.
+ms.openlocfilehash: 25d42a7c7598a82fcf153ce05b64ee990e104b40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524718"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216581"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introdução à política DLP padrão
 
-Antes de criar sua primeira diretiva de prevention (DLP) de perda de dados até mesmo, DLP é ajudar a proteger suas informações confidenciais com uma política padrão. Essa diretiva padrão e seu recomendação (mostrada abaixo) ajudam a manter seu conteúdo confidencial seguro por informando quando o número do cartão de email ou documentos contendo um crédito foram compartilhadas com alguém de fora da sua organização. Você verá essa recomendação na página **inicial** da segurança &amp; Centro de conformidade. 
+Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização. Você verá essa recomendação na **Home** Page do centro de conformidade de &amp; segurança. 
   
-Você pode usar este widget para visualizar rapidamente quando e quanta informação confidencial foi compartilhada e, em seguida, refinar a política DLP padrão em apenas um ou dois cliques. Você também pode editar a política DLP padrão a qualquer momento, porque ele é totalmente personalizável. Observe que se você não vir a recomendação inicialmente, tente clicando em **+ mais** na parte inferior da seção **recomendado para você** . 
+Você pode usar esse widget para exibir rapidamente quando e quantas informações confidenciais foram compartilhadas e, em seguida, refinar a política de DLP padrão em apenas um clique ou dois. Você também pode editar a política de DLP padrão a qualquer momento, pois ela é totalmente personalizável. Observe que, se você não vir a recomendação primeiro, tente clicar **+ mais** na parte inferior da seção **recomendada para você** . 
   
-![Widget denominado adicionais proteger conteúdo compartilhado](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget chamado proteger mais conteúdo compartilhado](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
-## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Exibir o relatório e refinar a política DLP padrão
+## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Exibir o relatório e refinar a política de DLP padrão
 
-Quando o widget mostra que os usuários compartilhou informações confidenciais com pessoas fora da sua organização, escolha a **política de DLP refinar** na parte inferior. 
+Quando o widget mostrar que os usuários compartilharam informações confidenciais com pessoas de fora da sua organização, escolha reFinar **política de DLP** na parte inferior. 
   
-O relatório detalhado mostra quando e como a quantidade de conteúdo que contém os números de cartão de crédito foi compartilhada nos últimos 30 dias. Observe que as correspondências de regra podem levar até 48 horas seja mostrada no widget.
+O relatório detalhado mostra quando e quanto conteúdo que contém os números do cartão de crédito foi compartilhado nos últimos 30 dias. Observe que as correspondências de regra podem levar até 48 horas para serem exibidas no widget.
   
-Para ajudar a proteger as informações confidenciais, a política DLP padrão:
+Para ajudar a proteger as informações confidenciais, a política de DLP padrão:
   
-- Detecta quando o conteúdo no Exchange, SharePoint e OneDrive que contém o número de pelo menos um cartão de crédito é compartilhado com pessoas fora da sua organização.
+- Detecta quando o conteúdo no Exchange, SharePoint e OneDrive que contém pelo menos um número de cartão de crédito é compartilhado com pessoas de fora da sua organização.
     
-- Mostra uma dica de política e envia uma notificação de e-mail para usuários quando eles tentam compartilhar essas informações confidenciais com pessoas fora da sua organização. Para obter mais informações sobre essas opções, consulte [Enviar notificações por email e Mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md).
+- Mostra uma dica de política e envia uma notificação por email aos usuários quando eles tentam compartilhar essas informações confidenciais com pessoas de fora da sua organização. Para obter mais informações sobre essas opções, consulte [enviar notificações por email e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md).
     
-- Gera relatórios de atividade detalhada de modo que você pode controlar coisas como quem o conteúdo compartilhado com pessoas fora da sua organização e quando eles fizeram. Você pode usar os [relatórios DLP](view-the-dlp-reports.md) e os [dados de log de auditoria](search-the-audit-log-in-security-and-compliance.md) (onde **atividade** = **DLP**) para ver essa informação.
+- Gera relatórios de atividade detalhados para que você possa rastrear coisas como quem compartilhou o conteúdo com pessoas de fora da sua organização e quando eles faziam. Você pode usar os [relatórios de DLP](view-the-dlp-reports.md) e [dados de log de auditoria](search-the-audit-log-in-security-and-compliance.md) (onde a **atividade** = **DLP**) para ver essas informações.
     
-Para refinar rapidamente a política DLP padrão, você pode optar por fazer com que ele:
+Para refinar rapidamente a política de DLP padrão, você pode optar por fazê-la:
   
-- Envie um email de relatório de incidente quando usuários compartilharem essas informações confidenciais com pessoas fora da sua organização.
+- Envie um email de relatório de incidentes quando os usuários compartilharem essas informações confidenciais com pessoas de fora da sua organização.
     
-- Adicione outros usuários para o relatório de incidente de email.
+- Adicione outros usuários ao relatório de incidentes de email.
     
-- Bloqueie o acesso ao conteúdo que contém as informações confidenciais, mas permitir que o usuário substituir e compartilhar ou enviar se eles precisam.
+- Bloquear o acesso ao conteúdo que contém as informações confidenciais, mas permitir que o usuário substitua e compartilhe ou envie se necessário.
     
-Para obter mais informações sobre relatórios de incidentes ou restrição de acesso, consulte [Visão geral das políticas de prevenção de perda de dados](data-loss-prevention-policies.md).
+Para obter mais informações sobre relatórios de incidentes ou restringir o acesso, consulte [visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md).
   
-Se você quiser alterar essas opções mais tarde, você pode editar o padrão a política de DLP a qualquer momento - consulte a próxima seção.
+Se você quiser alterar essas opções mais tarde, poderá editar a política de DLP padrão a qualquer momento-consulte a próxima seção.
   
-![Configurações de widget denominado adicionais de protegem conteúdo compartilhado](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Configurações para widget chamado proteger mais conteúdo compartilhado](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
-## <a name="edit-the-default-dlp-policy"></a>Editar a política DLP padrão
+## <a name="edit-the-default-dlp-policy"></a>Editar a política de DLP padrão
 
-Esta diretiva é chamada **política padrão DLP do Office 365** e aparece na **prevenção de perda de dados** na página **política** de segurança &amp; Centro de conformidade. 
+Essa política é chamada de **política padrão de DLP do Office 365** e aparece sob **prevenção de perda de dados** na página &amp; **política** do centro de conformidade de segurança. 
   
-Essa diretiva é totalmente personalizável, o mesmo que qualquer política DLP que você criou do zero. Você também pode desativar ou excluir a diretiva, para que os usuários não são mais recebem dicas de política ou notificações de email.
+Essa política é totalmente personalizável, o mesmo que qualquer política de DLP que você criar a partir do zero. Você também pode desativar ou excluir a política, para que os usuários não recebam mais dicas de política ou notificações por email.
   
-![Política de DLP chamada política padrão DLP do Office 365](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Política de DLP chamada política padrão de DLP do Office 365](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
-## <a name="when-the-widget-does-and-does-not-appear"></a>Quando o widget e não aparecem
+## <a name="when-the-widget-does-and-does-not-appear"></a>Quando o widget não aparece
 
-O widget denominado **proteger ainda mais o conteúdo compartilhado** aparece na seção **recomendado para você** da página **inicial** da segurança &amp; Centro de conformidade. 
+O widget chamado **proteger mais conteúdo compartilhado** aparece na seção **recomendado para você** da **Home** Page do centro de conformidade de &amp; segurança. 
   
 Este widget aparece somente quando:
   
-- Não há nenhuma políticas de prevenção de perda de dados na segurança &amp; Centro de conformidade ou centro de administração do Exchange. Este widget destina-se para ajudá-lo a começar a usar DLP, portanto, ela não será exibido se você já tem políticas de DLP.
+- Não há políticas de prevenção contra perda de dados no &amp; centro de conformidade de segurança ou no centro de administração do Exchange. Este widget tem o objetivo de ajudá-lo a começar a usar o DLP, portanto, ele não aparecerá se você já tiver políticas de DLP.
     
-- O conteúdo que contém pelo menos um cartão de crédito foi compartilhado com alguém de fora da sua organização nos últimos 30 dias.
+- O conteúdo que contém menos um cartão de crédito foi compartilhado com alguém de fora da sua organização nos últimos 30 dias.
     
-Observe que as correspondências de regra podem levar até 48 horas esteja disponível para o widget, portanto após informações confidenciais shared externamente são detectadas, pode levar até dois dias para a recomendação apareça.
+Observe que as correspondências de regras podem levar até 48 horas para estar disponível para o widget, portanto, depois que as informações confidenciais compartilhadas externamente forem detectadas, pode levar até dois dias para que a recomendação seja exibida.
   
-Finalmente, depois de usar o widget para refinar a política DLP padrão, o widget desaparecerá da página **inicial** . 
+Por fim, depois de usar o widget para refinar a política de DLP padrão, o widget desaparecerá da **Home** Page. 
   
 

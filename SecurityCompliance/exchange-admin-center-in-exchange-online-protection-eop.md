@@ -1,7 +1,7 @@
 ---
 title: 'Centro de administração do Exchange na Proteção do Exchange Online '
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
+ms.collection:
+- M365-security-compliance
 description: O EAC (Centro de administração do Exchange) é o console de gerenciamento baseado na Web da EOP (Proteção do Exchange Online) da Microsoft.
-ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002940"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220461"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administração do Exchange na Proteção do Exchange Online 
 
@@ -32,7 +34,7 @@ Procurando a versão do Exchange Online deste tópico? Confira [Exchange admin c
 
 Na maioria dos casos, os clientes da EOP acessam o EAC por meio do Centro de administração do Office 365. Você encontra um link para a EOP no menu suspenso no bloco **Administrador**, que fica ao lado do bloco **Eu**. Clique no bloco **Administrador** e selecione **Proteção do Exchange Online** no menu suspenso para ir até o EAC. 
   
-Você também pode acessar a página diretamente via a seguinte URL de entrada EAT: https://admin.protection.outlook.com/ecp/\<companydomain\>. Por exemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Após especificar suas credenciais de usuário, você será levado diretamente no EAC.
+Você também pode acessar a página de entrada do Eat diretamente por meio da seguinte https://admin.protection.outlook.com/ecp/\<companydomain\>URL:. Por exemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Após especificar suas credenciais de usuário, você será levado diretamente para o Eat.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementos da interface do usuário comuns no EAC
 
@@ -89,7 +91,7 @@ O bloco **Eu** permite sair do EAC e entrar como um usuário diferente. No menu 
     
 2. **Desabilitar bolha de Ajuda** A bolha de Ajuda exibe ajuda contextual para os campos quando você cria ou edita um objeto. Você pode desativar a bolha de Ajuda ou ativá-la se tiver sido desabilitada. 
     
-3. **Direitos autorais** Clique nesse link para ler o aviso de direitos autoral para o Exchange Online Protection. 
+3. **Direitos autorais** Clique neste link para ler o aviso de direitos autorais para o Exchange Online Protection. 
     
 4. **Privacidade** Clique para ler a política de privacidade do Proteção do Exchange Online. 
     

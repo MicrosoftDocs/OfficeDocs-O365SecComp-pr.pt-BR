@@ -1,55 +1,55 @@
 ---
-title: Alterar a duração de espera para uma caixa de correio inativa no Office 365
+title: Alterar a duração da retenção para uma caixa de correio inativa no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 8/29/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: Depois que uma caixa de correio do Office 365 é feita inativa, você pode alterar a duração da retenção ou política de retenção do Office 365 atribuído à caixa de correio inativa. A duração de espera define quanto tempo os itens na pasta são mantidos itens recuperáveis.
-ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Depois que uma caixa de correio do Office 365 é desativada, você pode alterar a duração da política de retenção de bloqueio ou do Office 365 atribuída à caixa de correio inativa. A duração da retenção define por quanto tempo os itens da pasta itens recuperáveis são mantidos.
+ms.openlocfilehash: 3f92d51505ba8a9a9f4b8e78d0fb79036b6db489
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038054"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220611"
 ---
-# <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Alterar a duração de espera para uma caixa de correio inativa no Office 365
+# <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Alterar a duração da retenção para uma caixa de correio inativa no Office 365
 
-Uma caixa de correio inativa é usada para reter o email de um antigo do funcionário depois que ele deixa a sua organização. Uma caixa de correio fica inativa quando um litígio, um bloqueio In-loco, uma política de retenção do Office 365, ou uma isenção que está associado a um caso de eDiscovery é colocada na caixa de correio e a conta de usuário do Office 365 correspondente é excluída. O conteúdo de uma caixa de correio inativa é retido para a duração da retenção feita na caixa de correio antes que ela foi feita inativa. A duração de espera define quanto tempo os itens na pasta são mantidos itens recuperáveis. Quando a duração da retenção expira para um item na pasta itens recuperáveis, o item é excluído permanentemente (descartados) da caixa de correio inativa. Depois que uma caixa de correio é feita inativa, você pode alterar a duração da retenção ou política de retenção do Office 365 atribuído à caixa de correio inativa.
+Uma caixa de correio inativa é usada para manter o email de um funcionário anterior, depois que ele deixa sua organização. Uma caixa de correio fica inativa quando uma retenção de litígio, um bloqueio in-loco, uma política de retenção do Office 365 ou uma retenção associada a uma ocorrência de descoberta eletrônica é colocada na caixa de correio e a conta de usuário do Office 365 correspondente é excluída. O conteúdo de uma caixa de correio inativa é mantido pela duração da retenção que foi colocada na caixa de correio antes de ser desativada. A duração da retenção define por quanto tempo os itens da pasta itens recuperáveis são mantidos. Quando a duração da retenção expira para um item na pasta itens recuperáveis, o item é excluído permanentemente (limpo) da caixa de correio inativa. Depois que uma caixa de correio for desativada, você poderá alterar a duração da política de retenção de espera ou do Office 365 atribuída à caixa de correio inativa.
   
 > [!IMPORTANT]
 > Adiamos o prazo de 1º de julho de 2017 para criar novos Bloqueios In-loco para tornar uma caixa de correio inativa. Mas no final deste ano ou no início do próximo, você não poderá criar novos Bloqueios In-loco no Exchange Online. Nesse momento, somente retenções de litígio e políticas de retenção do Office 365 poderão ser usadas para criar uma caixa de correio inativa. No entanto, as caixas de correio inativas existentes que estão com Bloqueio In-loco ainda terão suporte, e você poderá continuar a gerenciar Bloqueios In-loco em caixas de correio inativas. Isso inclui a alteração da duração de um Bloqueio In-loco e a exclusão permanente de uma caixa de correio inativa, removendo o Bloqueio In-loco. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa usar o PowerShell do Exchange Online para alterar a duração de espera de um litígio em uma caixa de correio inativa. Você não pode usar o Centro de administração do Exchange (EAC). Mas você pode usar o PowerShell do Exchange Online ou o EAC para alterar a duração de espera de um bloqueio In-loco. Você pode usar a segurança do Office 365 &amp; Centro de conformidade ou a segurança &amp; PowerShell do Centro de conformidade para alterar a duração de espera para uma política de retenção do Office 365.
+- Você precisa usar o PowerShell do Exchange Online para alterar a duração da retenção para uma retenção de litígio em uma caixa de correio inativa. Você não pode usar o centro de administração do Exchange (Eat). Mas você pode usar o PowerShell do Exchange Online ou o Eat para alterar a duração da retenção de um bloqueio in-loco. Você pode usar o centro de conformidade &amp; de segurança do Office 365 &amp; ou o PowerShell do centro de conformidade de segurança para alterar a duração de retenção de uma política de retenção do Office 365.
     
-- Para conectar ao PowerShell do Exchange Online ou segurança &amp; PowerShell do Centro de conformidade, consulte um dos seguintes tópicos:
+- Para se conectar ao PowerShell do Exchange Online &amp; ou do centro de conformidade de segurança, consulte um dos seguintes tópicos:
     
   - [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
   - [Conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
-- Observe que retém associado a casos de eDiscovery são infinitas isenções, que significa que não há nenhuma duração de espera pode ser alterada. Itens são mantidos indefinidamente ou até que a suspensão seja removida e a caixa de correio inativa é excluída.
+- Observe que as suspensões associadas às ocorrências de descoberta eletrônica são infinitas, o que significa que não há duração de retenção que pode ser alterada. Os itens são retidos para sempre ou até que a retenção seja removida e a caixa de correio inativa seja excluída.
     
-- Para obter mais informações sobre caixas de correio inativas, consulte [caixas de correio inativas no Office 365](inactive-mailboxes-in-office-365.md).
+- Para obter mais informações sobre caixas de correio inativas, consulte [inativa caixas de correio no Office 365](inactive-mailboxes-in-office-365.md).
     
-## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Etapa 1: Identificar os bloqueios em uma caixa de correio inativa
+## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Etapa 1: identificar as isenções em uma caixa de correio inativa
 
-Porque os diferentes tipos de isenções ou uma ou mais políticas de retenção do Office 365 podem ser colocadas em uma caixa de correio inativa, a primeira etapa é identificar os bloqueios em uma caixa de correio inativa.
+Como diferentes tipos de isenções ou uma ou mais políticas de retenção do Office 365 podem ser colocadas em uma caixa de correio inativa, a primeira etapa é identificar as isenções em uma caixa de correio inativa.
   
-Execute o seguinte comando no Exchange Online PowerShell para exibir as informações de espera para todas as caixas de correio inativas em sua organização.
+Execute o seguinte comando no PowerShell do Exchange Online para exibir as informações de retenção de todas as caixas de correio inativas em sua organização.
   
 ```
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
    
-O valor de **True** para a propriedade **LitigationHoldEnabled** indica que a caixa de correio inativa está em retenção de litígio. Se um bloqueio In-loco, retenção de descoberta eletrônica ou política de retenção do Office 365 é colocada em uma caixa de correio inativa, um GUID para a política de retenção ou retenção é exibido como o valor da propriedade **InPlaceHolds** . Por exemplo, o exemplo a seguir mostra resultados de caixas de correio inativas 5. 
+O valor de **true** para a propriedade **LitigationHoldEnabled** indica que a caixa de correio inativa está em retenção de litígio. Se um bloqueio in-loco, um bloqueio de descoberta eletrônica ou uma política de retenção do Office 365 for colocado em uma caixa de correio inativa, um GUID para a política de retenção ou bloqueio será exibido como o valor da propriedade **InPlaceHolds** . Por exemplo, o seguinte mostra os resultados de cinco caixas de correio inativas. 
   
 ||
 |:-----|
@@ -91,90 +91,90 @@ LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
    
-A tabela a seguir identifica os cinco tipos diferentes de espera que foram usados para tornar cada caixa de correio inativa.
+A tabela a seguir identifica os cinco tipos de retenção diferentes que foram usados para tornar cada caixa de correio inativa.
   
-|**Caixa de correio inativa**|**Tipo de bloqueio**|**Como identificar o bloqueio na caixa de correio inativa**|
+|**Caixa de correio inativa**|**Tipo de bloqueio**|**Como identificar a retenção na caixa de correio inativa**|
 |:-----|:-----|:-----|
-|Ann Beebe  <br/> |Retenção de litígio  <br/> |A propriedade *LitigationHoldEnabled* estiver definida como `True`.  <br/> |
-|Pilar Pinilla  <br/> |Bloqueio In-loco  <br/> |A propriedade *InPlaceHolds* contém o GUID do In-Place Hold é colocado na caixa de correio inativa. Você pode dizer que isso é um bloqueio In-loco, porque a ID não começa com um prefixo.<br/> Você pode usar o ' Get-MailboxSearch - InPlaceHoldIdentity<hold GUID> | FL' command no PowerShell do Exchange Online para obter mais informações sobre o bloqueio In-loco na caixa de correio inativa.  <br/> |
-|Mario Necaise  <br/> |Política de retenção do Office 365 toda a organização na segurança &amp; Centro de conformidade  <br/> |A propriedade *InPlaceHolds* está vazia. Isso indica que um ou mais toda a organização ou (Exchange toda) Office 365 política de retenção é aplicada à caixa de correio inativa. Nesse caso, é possível executar o ' Get-OrganizationConfig | Select-Object - ExpandProperty InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies that are applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> <br/>To identity the Office 365 retention policy that's applied to the inactive mailbox, run the following command in Security &amp; Compliance Center PowerShell.  <br/><br/> `Get-RetentionCompliancePolicy<retention policy GUID without prefix> | Nome de FL'<br/><br/>
-|Carol Olson  <br/> |Política de retenção do Office 365 na segurança &amp; Centro de conformidade aplicadas a caixas de correio específicas  <br/> |A propriedade *InPlaceHolds* contém o GUID da política de retenção Office 365 que é aplicado à caixa de correio inativa. Você pode dizer que essa é uma política de retenção aplicada às caixas de correio específicas, porque o GUID começa com a `mbx` prefixo. Observe que, se o GUID da política de retenção aplicada à caixa de correio inativa iniciados com o `skp` prefixo, que indica se a política de retenção é aplicada para Skype para conversas de negócios.<br/><br/> A política de retenção da identidade do Office 365 que é aplicada à caixa de correio inativa, execute o seguinte comando na segurança &amp; PowerShell do Centro de conformidade.<br/><br/> ' Get-RetentionCompliancePolicy<retention policy GUID without prefix> | Nome de FL` <br/><br/>Be sure to remove the  `mbx` or  `skp' prefix quando você executar esse comando.  <br/> |
-|Abraham McMahon  <br/> |retenção de caso de descoberta eletrônica na segurança &amp; Centro de conformidade  <br/> |A propriedade *InPlaceHolds* contém o GUID da isenção casos de eDiscovery que é colocado na caixa de correio inativa. Você pode dizer que isso é uma espera de casos de eDiscovery, porque o GUID começa com a `UniH` prefixo.<br/> Você pode usar o `Get-CaseHoldPolicy` cmdlet em Security &amp; PowerShell do Centro de conformidade para obter mais informações sobre o caso de eDiscovery que o bloqueio na caixa de correio inativa está associado. Por exemplo, você pode executar o comando ' Get-CaseHoldPolicy<hold GUID without prefix> | Nome de FL` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` prefix when you run this command.  <br/><br/> To identity the eDiscovery case that the hold on the inactive mailbox is associated with, run the following commands.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix> `<br/><br/> `$CaseHold.CaseId Get-ComplianceCase | Nome de FL'<br/><br/><br/> **Observação:** Não recomendamos usando a descoberta eletrônica contém de caixas de correio inativas. Isso ocorre porque os casos de eDiscovery servem para casos específicos e de ligação de tempo relacionados a uma questão legal. Em algum momento, um caso jurídico provavelmente será finalizado e os bloqueios associados à ocorrência serão removidos e o caso de descoberta eletrônica estará fechado (ou excluídos). Na verdade, se uma isenção que é colocada em uma caixa de correio inativa é associada a um caso de eDiscovery e a suspensão seja removida ou o caso de descoberta eletrônica é fechado ou excluído, a caixa de correio inativa será excluída permanentemente. 
+|Ana Beebe  <br/> |Retenção de litígio  <br/> |A propriedade *LitigationHoldEnabled* está definida como `True`.  <br/> |
+|Pilar Fernandes  <br/> |Bloqueio In-loco  <br/> |A propriedade *InPlaceHolds* contém o GUID do bloqueio in-loco colocado na caixa de correio inativa. É possível dizer que isso é um bloqueio in-loco porque a ID não começa com um prefixo.<br/> Você pode usar o `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando no PowerShell do Exchange Online para obter informações sobre o bloqueio in-loco na caixa de correio inativa.  <br/> |
+|Mario Necaise  <br/> |Política de retenção do Office 365 em toda a organização &amp; no centro de conformidade de segurança  <br/> |A propriedade *InPlaceHolds* está vazia. Isso indica que uma ou mais políticas de retenção do Office 365 em toda a organização ou (no Exchange) são aplicadas à caixa de correio inativa. Nesse caso, você pode executar o `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` comando no PowerShell do Exchange Online para obter uma lista dos GUIDs das políticas de retenção do Office 365 em toda a organização. O GUID para políticas de retenção em toda a organização que são aplicadas às caixas de correio do `mbx` Exchange começam com o prefixo; por exemplo `mbxa3056bb15562480fadb46ce523ff7b02`.<br/> <br/>Para identificar a política de retenção do Office 365 aplicada à caixa de correio inativa, execute o seguinte comando no &amp; PowerShell do centro de conformidade de segurança.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Carol Olson  <br/> |Política de retenção do Office 365 no &amp; centro de conformidade de segurança aplicada a caixas de correio específicas  <br/> |A propriedade *InPlaceHolds* contém o GUID da política de retenção do Office 365 que é aplicada à caixa de correio inativa. Você pode dizer que esta é uma política de retenção que se aplica a caixas de correio específicas porque o `mbx` GUID começa com o prefixo. Observe que, se o GUID da política de retenção aplicado à caixa de correio inativa `skp` começou com o prefixo, isso indicaria que a política de retenção é aplicada às conversas do Skype for Business.<br/><br/> Para identificar a política de retenção do Office 365 aplicada à caixa de correio inativa, execute o seguinte comando no &amp; PowerShell do centro de conformidade de segurança.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Certifique-se de remover `mbx` o `skp` prefixo ou ao executar este comando.  <br/> |
+|Abraham McMahon  <br/> |retenção de caso de descoberta eletrônica &amp; no centro de conformidade de segurança  <br/> |A propriedade *InPlaceHolds* contém o GUID da retenção de ocorrência de descoberta eletrônica que é colocada na caixa de correio inativa. É possível dizer que esta é uma retenção de caso de descoberta eletrônica porque o `UniH` GUID começa com o prefixo.<br/> Você pode usar o `Get-CaseHoldPolicy` cmdlet no PowerShell &amp; do centro de conformidade de segurança para obter informações sobre a ocorrência de descoberta eletrônica à qual a retenção está associada à caixa de correio inativa. Por exemplo, você pode executar o comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` para exibir o nome da retenção de caso que está na caixa de correio inativa. Certifique-se de remover `UniH` o prefixo ao executar este comando.<br/><br/> Para identificar a ocorrência de descoberta eletrônica à qual a retenção está associada à caixa de correio inativa, execute os seguintes comandos.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Observação:** Não recomendamos o uso de bloqueios de descoberta eletrônica para caixas de correio inativas. Isso ocorre porque os casos de descoberta eletrônica se destinam a casos específicos e associados a tempo relacionados a um problema legal. Em algum momento, um caso jurídico provavelmente será encerrado e as suspensões associadas ao caso serão removidas e o caso de descoberta eletrônica será fechado (ou excluído). Na verdade, se uma retenção colocada em uma caixa de correio inativa estiver associada a uma ocorrência de descoberta eletrônica e a retenção for liberada ou se a ocorrência de descoberta eletrônica estiver fechada ou excluída, a caixa de correio inativa será excluída permanentemente. 
 
-Para obter mais informações sobre as políticas de retenção do Office 365, consulte [Visão geral das políticas de retenção](retention-policies.md).
+Para obter mais informações sobre as políticas de retenção do Office 365, consulte [visão geral das políticas de retenção](retention-policies.md).
   
-## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Etapa 2: Alterar a duração de espera para uma caixa de correio inativa
+## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Etapa 2: alterar a duração da retenção de uma caixa de correio inativa
 
-Depois de identificar que tipo de espera é colocado na caixa de correio inativa (e se há vários bloqueios), a próxima etapa é para alterar a duração da espera. 
+Depois de identificar o tipo de retenção que é colocado na caixa de correio inativa (e se há várias isenções), a próxima etapa é alterar a duração da retenção. 
   
-### <a name="change-the-duration-for-a-litigation-hold"></a>Alterar a duração de um litígio
+### <a name="change-the-duration-for-a-litigation-hold"></a>Alterar a duração de uma retenção de litígio
 
-Aqui está como usar o PowerShell do Exchange Online para alterar a duração de espera para um litígio que é colocada em uma caixa de correio inativa. Você não pode usar o EAC. Execute o seguinte comando para alterar a duração de espera. Neste exemplo, a duração da retenção é alterada para um período ilimitado.
+ConFira aqui como usar o PowerShell do Exchange Online para alterar a duração da retenção para uma retenção de litígio que é colocada em uma caixa de correio inativa. Você não pode usar o Eat. Execute o seguinte comando para alterar a duração da retenção. Neste exemplo, a duração da retenção é alterada para um período de tempo ilimitado.
   
 ```
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
-O resultado é que os itens na caixa de correio inativa são mantidos indefinidamente ou até que a suspensão seja removida ou a duração da retenção é alterada para um valor diferente.
+O resultado é que os itens da caixa de correio inativa são mantidos indefinidamente ou até que a retenção seja removida ou a duração da retenção seja alterada para um valor diferente.
   
 > [!TIP]
-> A melhor maneira de identificar uma caixa de correio inativa é usando seu valor de **Nome distinto** ou o **GUID do Exchange** . Usar um desses valores ajuda a evitar a acidentalmente especificando a caixa de correio errada. 
+> A melhor maneira de identificar uma caixa de correio inativa é usando seu **nome distinto** ou valor de **GUID do Exchange** . O uso de um desses valores ajuda a evitar a especificação acidental da caixa de correio errada. 
   
-### <a name="change-the-duration-for-an-in-place-hold"></a>Alterar a duração de um bloqueio In-loco
+### <a name="change-the-duration-for-an-in-place-hold"></a>Alterar a duração de um bloqueio in-loco
 
- Você pode usar o EAC ou o PowerShell do Exchange Online para alterar a duração de espera de um bloqueio In-loco. 
+ Você pode usar o Eat ou o PowerShell do Exchange Online para alterar a duração da retenção para um bloqueio in-loco. 
   
-#### <a name="use-the-eac-to-change-the-hold-duration"></a>Usar o EAC para alterar a duração de espera
+#### <a name="use-the-eac-to-change-the-hold-duration"></a>Usar o Eat para alterar a duração da retenção
 
-1. Se você souber o nome do bloqueio In-loco que você deseja alterar, vá para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome de In-Place Hold é colocado na caixa de correio inativa. Use o GUID bloqueio In-loco que você obteve na [etapa 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
+1. Se você souber o nome do bloqueio in-loco que deseja alterar, vá para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco que é colocado na caixa de correio inativa. Use o GUID de bloqueio in-loco obtido na [etapa 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
-2. No EAC, vá até **gerenciamento de conformidade** \> **Descoberta eletrônica In-loco &amp; mantenha**.
+2. No Eat, vá para **Gerenciamento** \> **de conformidade e descoberta eletrônica &amp; in-loco**.
     
-3. Selecione o bloqueio In-loco você deseja alterar e clique em **Editar** ![ícone Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+3. Selecione o bloqueio in-loco que você deseja alterar e clique em **Editar** ![ícone](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)de edição.
     
-4. Sobre o **Descoberta eletrônica In-loco &amp; mantenha** propriedades página, clique em **Bloqueio In-loco**. 
+4. Na página Propriedades **de retenção de &amp; descoberta eletrônica in-loco** , clique **em bloqueio in-loco**. 
     
-5. Um dos seguintes com base no atual duração da retenção:
+5. Siga um destes procedimentos com base na duração atual da retenção:
     
-1. Clique em **espera indefinidamente** para reter itens por um período ilimitado. 
+1. Clique em **reter** indefinidamente para reter itens por um período de tempo ilimitado. 
     
-2. Clique em **especificar o número de dias para reter itens em relação à sua data de recebimento** para reter itens por um período específico. Digite o número de dias em que você deseja reter itens para. 
+2. Clique em **especificar número de dias para manter os itens em relação à data de recebimento** para reter itens por um período específico. Digite o número de dias para os quais você deseja armazenar itens. 
     
     ![Captura de tela da alteração da duração de um Bloqueio In-loco](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
 6. Clique em **Salvar**.
     
-#### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Use o PowerShell do Exchange Online para alterar a duração de espera
+#### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Usar o PowerShell do Exchange Online para alterar a duração da retenção
 
-1. Se você souber o nome do bloqueio In-loco que você deseja alterar, vá para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome de In-Place Hold é colocado na caixa de correio inativa. Use o GUID bloqueio In-loco que você obteve na [etapa 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
+1. Se você souber o nome do bloqueio in-loco que deseja alterar, vá para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco que é colocado na caixa de correio inativa. Use o GUID de bloqueio in-loco obtido na [etapa 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
-2. Execute o seguinte comando para alterar a duração de espera. Neste exemplo, a duração da retenção é alterada para 2,555 dias (aproximadamente sete anos). 
+2. Execute o seguinte comando para alterar a duração da retenção. Neste exemplo, a duração da retenção é alterada para 2.555 dias (aproximadamente sete anos). 
     
     ```
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
-     Para alterar a duração de espera para um período ilimitado de tempo, use _- ItemHoldPeriod ilimitado_.
+     Para alterar a duração da retenção para um período de tempo ilimitado, use _-ItemHoldPeriod_Unlimited.
   
 ## <a name="more-information"></a>Mais informações
 
-- **Como a duração da retenção é calculada para um item em uma caixa de correio inativa?** A duração é calculada a partir da data original de um item de caixa de correio foi recebido ou criado. 
+- **Como a duração da retenção é calculada para um item em uma caixa de correio inativa?** A duração é calculada a partir da data original em que um item de caixa de correio foi recebido ou criado. 
     
-- **o que acontece quando a duração da retenção expira?** Quando a duração da retenção expira para um item de caixa de correio na pasta itens recuperáveis, o item é excluído permanentemente (descartados) da caixa de correio inativa. Se não houver nenhuma duração especificada para o bloqueio colocado na caixa de correio inativa, itens na pasta itens recuperáveis nunca são limpos (a menos que a duração de espera para a caixa de correio inativa mudou). 
+- **O que acontece quando a duração da retenção expira?** Quando a duração da retenção expira para um item de caixa de correio na pasta itens recuperáveis, o item é excluído permanentemente (limpo) da caixa de correio inativa. Se não houver nenhuma duração especificada para a retenção colocada na caixa de correio inativa, os itens na pasta itens recuperáveis nunca serão removidos (a menos que a duração da retenção de caixa de correio inativa seja alterada). 
     
-- **é uma política de retenção do Exchange ainda processada em caixas de correio inativas?** Se uma política de retenção do Exchange (os registros de mensagens gerenciamento ou MRM, recurso no Exchange Online) foi aplicada a uma caixa de correio quando ela foi feita inativa, as políticas de exclusão (que são configuradas com uma ação de retenção **Excluir** as marcas de retenção) será Continue a serem processados na caixa de correio inativa. Isso significa que os itens que estão marcados com uma política de exclusão são movidos para a pasta itens recuperáveis quando o período de retenção expira. Os itens são limpos, em seguida, da caixa de correio inativa quando a duração de espera para um item expira. 
+- **Uma política de retenção do Exchange ainda é processada em caixas de correio inativas?** Se uma política de retenção do Exchange (o recurso gerenciamento de registros de mensagens ou MRM, no Exchange Online) tiver sido aplicada a uma caixa de correio quando for desativada, as políticas de exclusão (que são marcas de retenção configuradas com uma ação de retenção de **exclusão** ) serão continuar a ser processado na caixa de correio inativa. Isso significa que os itens que estão marcados com uma política de exclusão são movidos para a pasta itens recuperáveis quando o período de retenção expira. Esses itens são, então, removidos da caixa de correio inativa quando a duração da retenção de um item expira. 
     
-    Por outro lado, quaisquer políticas de arquivamento (que são marcas de retenção configuradas com uma ação de retenção **MoveToArchive** ) que estão incluídas na política de retenção atribuída a uma caixa de correio inativa serão ignoradas. Isso significa que os itens em uma caixa de correio inativa que estão marcados com uma política de arquivamento permanecem na caixa de correio principal quando o período de retenção expira. Elas não serão movidas para a caixa de correio de arquivo morto ou para a pasta itens recuperáveis na caixa de correio de arquivo morto. Porque um usuário não pode entrar em uma caixa de correio inativa, não há nenhum motivo para consumir recursos do datacenter para processar as diretivas de arquivamento. 
+    Por outro lado, todas as políticas de arquivamento (que são marcas de retenção configuradas com uma ação de retenção do **MoveToArchive** ) que estão incluídas na política de retenção atribuída a uma caixa de correio inativa são ignoradas. Isso significa que os itens em uma caixa de correio inativa que estão marcados com uma política de arquivo morto permanecem na caixa de correio principal quando o período de retenção expira. Eles não são movidos para a caixa de correio de arquivo morto ou para a pasta itens recuperáveis na caixa de correio de arquivo morto. Como um usuário não pode entrar em uma caixa de correio inativa, não há motivo para consumir recursos de datacenter para processar políticas de arquivamento. 
     
-- **Para verificar se a nova duração da retenção, execute um dos seguintes comandos.** O primeiro comando destina litígio; o segundo é para bloqueio In-loco. 
+- **Para verificar a duração da nova retenção, execute um dos seguintes comandos.** O primeiro comando é para retenção de litígio; o segundo é para bloqueio in-loco. 
 
     ```
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
@@ -184,13 +184,13 @@ O resultado é que os itens na caixa de correio inativa são mantidos indefinida
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
-- **Como caixas de correio regulares, a Managed pasta Assistant (MFA) também processa caixas de correio inativas.** No Exchange Online, o MFA processa caixas de correio aproximadamente uma vez a cada 7 dias. Depois de alterar a duração de espera para uma caixa de correio inativa, você pode usar o cmdlet **Start-ManagedFolderAssistant** para iniciar imediatamente o processamento a nova duração de espera para a caixa de correio inativa. Execute o seguinte comando. 
+- **Assim como as caixas de correio normais, o assistente de pasta gerenciada (MFA) também processa caixas de correio inativas.** No Exchange Online, a MFA processa as caixas de correio aproximadamente uma vez a cada 7 dias. Após alterar a duração da retenção para uma caixa de correio inativa, você pode usar o cmdlet **Start-ManagedFolderAssistant** para iniciar imediatamente o processamento da nova duração de retenção para a caixa de correio inativa. Execute o comando a seguir. 
 
     ```
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
-- **Se muita isenções são colocados em uma caixa de correio inativa, nem todos da isenção GUIDs serão exibidos.** Você pode executar o seguinte comando para exibir os GUIDs de todas as isenções (exceto litígio retém) que são colocadas em uma caixa de correio inativa. 
+- **Se uma grande quantidade de isenções for colocada em uma caixa de correio inativa, nem todos os GUIDs de retenção serão exibidos.** Você pode executar o comando a seguir para exibir os GUIDs de todas as isenções (exceto as isenções de litígio) que são colocadas em uma caixa de correio inativa. 
     
     ```
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds

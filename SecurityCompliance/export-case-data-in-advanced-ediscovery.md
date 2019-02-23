@@ -6,42 +6,42 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Compreenda as diretrizes para a exportação de dados de casos de eDiscovery e resultados para revisão usando o processo de exportação no eDiscovery avançadas do Office 365.  '
-ms.openlocfilehash: 1cb4cb45b1456649f7b3e12ed07565694b6bf6ec
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Entenda as diretrizes para exportar dados de ocorrência de descoberta eletrônica e resultados para revisão usando o processo de exportação na descoberta eletrônica avançada do Office 365.  '
+ms.openlocfilehash: 01997d3c799eeabc9686e3d747652d54fc963d26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524042"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215571"
 ---
 # <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportar dados de casos na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-O processo de exportação no eDiscovery avançada permite a exportação de conteúdo do eDiscovery avançado e resultados para revisão externa. 
+O processo de exportação em descoberta eletrônica avançada permite a exportação de conteúdo e resultados de descoberta eletrônica avançada para análise externa. 
   
-## <a name="guidelines-for-exporting-data"></a>Diretrizes para exportação de dados
+## <a name="guidelines-for-exporting-data"></a>Diretrizes para exportar dados
 
-- Você pode analisar os dados de exportação gerados a partir de eDiscovery avançada, por exemplo, para distribuir elementos pertinentes à equipe de revisão do documento ou exportar para uma ferramenta de revisão de documento externo.
+- Você pode revisar os dados de exportação gerados da descoberta eletrônica avançada, por exemplo, para distribuir elementos pertinentes à equipe de revisão de documentos ou exportar para uma ferramenta de revisão de documento externo.
     
-- Você pode gerar e manipular a saída de exportação a qualquer momento durante e após o processamento de descoberta eletrônica avançado. Em um cenário standard, resultados significativos são atingidos depois que o cálculo de lote e treinamento de relevância foram concluídas com êxito. Por exemplo, você pode gerar uma amostra dos 1.000 arquivos mais relevantes e avaliar o desempenho de descoberta eletrônica avançada antes de prosseguir.
+- Você pode gerar e manipular a saída de exportação a qualquer momento durante e após o processamento avançado de descoberta eletrônica. Em um cenário padrão, resultados significativos são obtidos após o treinamento de relevância e o cálculo de lote serem concluídos com êxito. Por exemplo, você pode gerar um exemplo dos arquivos mais relevantes 1.000 e avaliar o desempenho da descoberta eletrônica avançada antes de prosseguir.
     
-- Exportando uma grande quantidade de dados para um banco de dados pode ter um impacto significativo sobre o tamanho do banco de dados necessários e a configuração necessária do banco de dados avançado de eDiscovery.
+- Exportar uma grande quantidade de dados para um banco de dados pode ter um impacto significativo no tamanho do banco de dados necessário e na configuração necessária do banco de dados de descoberta eletrônica avançada.
     
 ## <a name="see-also"></a>Confira também
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Exportar resultados](export-results-in-advanced-ediscovery.md)
+[Exportação de resultados](export-results-in-advanced-ediscovery.md)
   
-[Exibir o histórico de lotes e resultados de exportação](view-batch-history-and-export-past-results.md)
+[Exibindo históricos de lote e exportação de resultados](view-batch-history-and-export-past-results.md)
 
-[Campos de exportação de relatório](export-report-fields-in-advanced-ediscovery.md)
+[Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md)
 

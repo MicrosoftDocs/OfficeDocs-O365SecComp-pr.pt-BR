@@ -6,40 +6,40 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: 'Saiba como configurar as configurações avançadas, incluindo perto duplicatas, threads de email e temas, para que o processo de analisar no Office 365 avançado eDiscovery. '
-ms.openlocfilehash: 7ffb80230a43eacb98a9c4ecb569f03cff134aac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Saiba como definir configurações avançadas, incluindo duplicatas, threads de email e temas, para o processo de análise na descoberta eletrônica avançada do Office 365. '
+ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22523519"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220081"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Definir configurações avançadas de análise na Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
-> EDiscovery Avançado requer um Office 365 E3 com o complemento de conformidade avançadas ou uma assinatura E5 para sua organização. Se você não tiver que plano e quiser tentar eDiscovery avançado, você pode [inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-EDiscovery avançado fornece parâmetros padrão avançada para analisar configurações do módulo. O procedimento a seguir descreve as configurações que podem ser especificadas.
+A descoberta eletrônica avançada fornece parâmetros avançados padrão para analisar configurações de módulo. O procedimento a seguir descreve as configurações que podem ser especificadas.
   
-1. No **Prepare \> analisar \> instalação** , clique em **Configurações avançadas** (na parte inferior da página). Painel a seguir é exibido. 
+1. Na guia **preparar \> configuração \> de análise** , clique em **Configurações avançadas** (na parte inferior da página). O painel a seguir é exibido. 
     
     ![Definir as configurações avançadas de análise](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
-2. Em **quase duplicatas e os parâmetros de threads de Email**, selecione valores para os seguintes itens conforme necessário:
+2. Em **parâmetros Near-Duplicate e threads de email**, selecione valores para os seguintes, conforme necessário:
     
-  - **Número mínimo de palavras**: número mínimo de palavras, abaixo do qual um arquivo não será enviado para análise de quase duplicados. 
+  - **Número mínimo de palavras**: o número mínimo de palavras, abaixo do qual um arquivo não é enviado para análise quase duplicada. 
     
-  - **Número máximo de palavras**: o número máximo de palavras, acima do qual um arquivo não será enviado para análise de quase duplicados.
+  - **Número máximo de palavras**: número máximo de palavras, acima do qual um arquivo não é enviado para análise quase duplicada.
     
-  - **Semelhança de email**: nível mínimo de semelhança para e-mails de duas a serem considerados semelhantes. Valor sempre é igual a, ou maior semelhança do documento. O padrão é 90%.
+  - **Similaridade de email**: nível mínimo de aparência de dois emails a serem considerados semelhantes. O valor é sempre igual ou maior que a similaridade de documentos. O padrão é 90%.
     
-3. Nos **parâmetros de temas**, marque a caixa de seleção **incluir números na análise de tema** para incluir números no processamento de temas durante analisar. 
+3. Em **parâmetros de temas**, marque a caixa de seleção **incluir números na análise de temas** para incluir números no processamento de temas durante a análise. 
     
 4. Clique em **Salvar**. 
     
@@ -47,11 +47,11 @@ EDiscovery avançado fornece parâmetros padrão avançada para analisar configu
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   
-[Noções básicas sobre semelhança de documento](understand-document-similarity-in-advanced-ediscovery.md)
+[Noções básicas sobre a similaridade de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Definindo opções de analisar](set-analyze-options-in-advanced-ediscovery.md)
+[Configuração das opções de análise](set-analyze-options-in-advanced-ediscovery.md)
   
-[Configuração Ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
+[Configuração ignorar texto](set-ignore-text-in-advanced-ediscovery.md)
   
-[Exibindo os resultados da análise](view-analyze-results-in-advanced-ediscovery.md)
+[Exibindo resultados de análise](view-analyze-results-in-advanced-ediscovery.md)
 

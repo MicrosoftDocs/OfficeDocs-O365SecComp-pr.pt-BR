@@ -1,35 +1,35 @@
 ---
-title: Número de identificação de imposto da UE
+title: Número de identificação do imposto da UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando detecta o tipo de informações confidenciais de número de identificação de imposto da UE. Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação de imposto da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524029"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213821"
 ---
-# <a name="eu-tax-identification-number"></a>Número de identificação de imposto da UE
+# <a name="eu-tax-identification-number"></a>Número de identificação do imposto da UE
 
-Este tópico mostra o que uma política de prevenção (DLP) de perda de dados procura por quando detecta o tipo de informações confidenciais de número de identificação da UE imposto (TIN). Esse tipo de informações confidenciais define diferentes padrões, palavras-chave e outras evidências para cada país.
+Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação de imposto (TIN) da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
   
 ## <a name="austria"></a>Áustria
 
 ### <a name="format"></a>Formato
 
-Nove dígitos com hífen opcional e barra invertida
+Nove dígitos com hífen opcional e barra para frente
   
 ### <a name="pattern"></a>Padrão
 
-Nove dígitos com hífen opcional e barra invertida:
+Nove dígitos com hífen opcional e barra para frente:
   
 -  Dois dígitos 
     
@@ -49,13 +49,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_austria_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_austria_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_austria_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_austria_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_austria_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_austria_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -74,16 +74,16 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-número
+série
   
-número de inscrição
+número de registro de imposto
   
 tax id
 
   
-St.nr.
+St.Nr.
   
 steuernummer
   
@@ -99,7 +99,7 @@ steuernummer
   
 - Dois dígitos
     
-- "0" ou "1"
+- Um "0" ou "1"
     
 - Um dígito
     
@@ -115,9 +115,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_belgium_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_belgium_eu_tax_file_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_belgium_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_belgium_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -133,22 +133,22 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-número de registro nacional
+número de Registro Nacional
   
-número de inscrição
+número de registro de imposto
   
 tax id
 
   
-NIF
+nse
   
-NIF #
+nse
   
-numéro de registre nacional
+Numéro de Registro Nacional
   
-numéro d'identification fiscale
+Numéro d'identification fiscal
   
 ## <a name="bulgaria"></a>Bulgária
 
@@ -168,13 +168,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_bulgaria_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_bulgaria_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_bulgaria_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_bulgaria_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_bulgaria_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_bulgaria_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -195,31 +195,31 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 bucn
   
-número de civil Uniform
+número civil uniforme
   
 bucn #
   
 uniformcivilnumber #
   
-id de civil Uniform
+ID civil uniforme
   
-Uniform não civil
+Nenhum civil uniforme
   
-egn
+Egn
   
-número de civil uniform búlgaro
+número civil uniforme búlgaro
   
 uniformcivilno #
   
-egn #
+Egn #
   
-УНИФОРМ ГРАЖДАНСКИ НОМЕР
+униформ граждански номер
   
-Id униформ
+ID униформ
   
-Id граждански униформ
+ID de граждански униформ
   
-УНИФОРМ ГРАЖДАНСКИ НЕ
+униформ граждански не
   
 ## <a name="croatia"></a>Croácia
 
@@ -233,7 +233,7 @@ Id граждански униформ
   
 - Dez dígitos, escolhidos aleatoriamente
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -243,13 +243,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_croatia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_croatia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_croatia_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_croatia_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_croatia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_croatia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -268,16 +268,16 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
-número de imposto
+número do imposto
   
 imposto
   
 tax id
 
   
-identificação de objeto
+OID
   
-identificação de objeto #
+OID
   
 porezni broj
   
@@ -291,11 +291,11 @@ Oito dígitos e uma letra no padrão especificado
 
 Oito dígitos e uma letra:
   
--  "0" 
+-  Um "0" 
     
 - Sete dígitos 
     
-- Uma letra (não diferencia maiusculas de minúsculas)
+- Uma letra (não diferencia maiúsculas de minúsculas)
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -305,13 +305,13 @@ Não aplicável
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_cyprus_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_cyprus_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_cyprus_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_cyprus_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_cyprus_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_cyprus_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -330,7 +330,7 @@ Pattern confidenceLevel="75">
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
-número de imposto
+número do imposto
   
 imposto
   
@@ -339,25 +339,25 @@ tax id
   
 código de identificação de imposto
   
-velha
+TIC
   
-velha #
+TIC #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμός φορολογικού μητρώου
   
-ΦΟΡΟΛΟΓΙΚΉ ΤΑΥΤΌΤΗΤΑ
+φορολογική ταυτότητα
   
-ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+κωδικός φορολογικού μητρώου
   
 ## <a name="czech-republic"></a>República Tcheca
 
 ### <a name="format"></a>Formato
 
-Nove ou dez dígitos com uma barra invertida a opcional
+Nove ou dez dígitos com uma barra invertida opcional
   
 ### <a name="pattern"></a>Padrão
 
-Nove ou dez dígitos com um backslashl opcional:
+Nove ou dez dígitos com uma barra invertida opcional:
   
 - Seis dígitos 
     
@@ -373,9 +373,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_czech_republic_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_czech_republic_eu_tax_file_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_czech_republic_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_czech_republic_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -391,14 +391,14 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
-número de imposto
+número do imposto
   
 imposto
   
 tax id
 
   
-número de pessoal
+número pessoal
   
 daňové číslo
   
@@ -408,17 +408,17 @@ osobní číslo
 
 ### <a name="format"></a>Formato
 
-Dez dígitos que contém um hífen
+Dez dígitos contendo um hífen
   
 ### <a name="pattern"></a>Padrão
 
-Dez dígitos que contém um hyphenl:
+Dez dígitos contendo um hífen:
   
--  Seis dígitos que correspondem à data de nascimento (DDMMYY) 
+-  Seis dígitos que correspondem à data de nascimento (DDMMAA) 
     
 - Um hífen
     
-- Quatro dígitos que correspondem a um número de sequência em que o primeiro dígito corresponde como o century de nascimento e o último dígito corresponde ao gênero do indivíduo (ímpar para masculino e até mesmo fêmea)
+- Quatro dígitos que correspondem a um número de sequência onde o primeiro dígito corresponde ao século do nascimento e o último dígito corresponde ao sexo da pessoa (ímpar para macho e par para fêmea)
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -428,13 +428,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_denmark_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_denmark_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_denmark_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_denmark_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_denmark_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_denmark_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -453,7 +453,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
-número de imposto
+número do imposto
   
 imposto
   
@@ -462,11 +462,11 @@ tax id
   
 número de CPR
   
-CPR #
+pedir
   
-skat nummer
+Skat Nummer
   
-id de skat
+ID Skat
   
 ## <a name="estonia"></a>Estônia
 
@@ -478,13 +478,13 @@ id de skat
 
 11 dígitos:
   
--  Um dígito que corresponde ao gênero e century de nascimento onde um número ímpar indica masculino e o número par fêmea da seguinte maneira: 1, 2 para o décimo nono century; 3, 4 para o century 20; e 5, 6 para o century 21 
+-  Um dígito que corresponde ao gênero e ao século de nascimento onde um número ímpar indica macho e o número par indica fêmea da seguinte maneira: 1, 2 para o século 19; 3, 4 para o século 20; e 5, 6 para o século 21 
     
-- Seis dígitos que correspondem à data de nascimento (aammdd)
+- Seis dígitos que correspondem à data de nascimento (AAMMDD)
     
-- Três dígitos que correspondem a um número de série separando pessoas nascidas na mesma data
+- Três dígitos que correspondem a um número de série separando as pessoas que nasceu na mesma data
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -494,13 +494,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_estonia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_estonia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_estonia_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_estonia_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_estonia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_estonia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -519,7 +519,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
-número de imposto
+número do imposto
   
 imposto
   
@@ -530,7 +530,7 @@ código pessoal
   
 maksunumber
   
-id de maksu
+ID maksu
   
 isikukood
   
@@ -538,15 +538,15 @@ isikukood
 
 ### <a name="format"></a>Formato
 
-Uma combinação de 11 caracteres de dígitos, letras, e mais e menos de entrada
+Uma combinação de 11 caracteres de dígitos, letras e sinal de mais e de menos
   
 ### <a name="pattern"></a>Padrão
 
-Uma combinação de 11 caracteres de dígitos, letras, e mais e menos entrada:
+Uma combinação de 11 caracteres de dígitos, letras e sinal de mais e menos:
   
 - Seis dígitos
     
-- Um dos seguintes: um sinal de adição, um sinal de subtração ou a letra "A" (não diferenciar maiusculas de minúsculas) onde o sinal de adição significa nascer entre 1800-1899, o sinal de menos assinar significa nascer entre 1900-1999 e "A" significa Nascida 2000 e depois
+- Uma das seguintes opções: um sinal de adição, um sinal de menos ou a letra "A" (não diferencia maiúsculas de minúsculas) onde o sinal de mais significa que nasceu entre 1800-1899, o sinal de menos significa que nasceu entre 1900-1999 e "A" significa que nasceu 2000 e depois
     
 - Três dígitos
     
@@ -560,13 +560,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_finland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_finland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_finland_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_finland_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_finland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_finland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -588,11 +588,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 identification number
 
   
-identificação pessoal
+ID pessoal
   
 número de identidade
   
-número de identificação nacional finlandês
+número de ID nacional da finlandês
   
 personalidnumber #
   
@@ -600,11 +600,11 @@ número de identificação nacional
   
 número de identificação
   
-id nacional nenhum.
+n º de ID nacional
   
-número de identificação nacional
+número de ID nacional
   
-ID nenhum
+ID não
   
 tunnistenumero
   
@@ -612,11 +612,11 @@ henkilötunnus
   
 yksilöllinen henkilökohtainen tunnistenumero
   
-ainutlaatuinen henkilökohtainen tunnus
+ainutlaatuinen henkilökohtainen Tunnus
   
-numero identiteetti
+identiteetti numero
   
-suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
@@ -624,17 +624,17 @@ kansallisen tunnistenumero
   
 tunnusnumero
   
-kansallinen tunnus numero
+Kansallinen Tunnus numero
   
 ## <a name="france"></a>França
 
 ### <a name="format"></a>Formato
 
-13 dígitos dos indivíduos e nove dígitos para entidades
+13 dígitos para pessoas e nove dígitos para entidades
   
 ### <a name="pattern"></a>Padrão
 
-13 dígitos para as pessoas:
+13 dígitos para pessoas:
   
 - Um dígito que deve ser 0, 1, 2 ou 3
     
@@ -650,13 +650,13 @@ Não aplicável
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_france_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_france_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_france_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_france_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_france_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_france_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -675,14 +675,14 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-número de identificação de imposto
+número de identificação do imposto
   
-número de imposto
+número do imposto
   
 tax id
 
   
-numéro d'identification fiscale
+Numéro d'identification fiscal
   
 ## <a name="germany"></a>Alemanha
 
@@ -696,7 +696,7 @@ numéro d'identification fiscale
   
 -  Dez dígitos 
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -706,13 +706,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_germany_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_germany_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_germany_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_germany_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_germany_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_germany_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -731,9 +731,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -744,15 +744,15 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
 steuernummer
   
-id de steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -774,9 +774,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_greece_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_greece_eu_tax_file_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_greece_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_greece_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -797,33 +797,33 @@ AFM
 tin
 
   
-id de imposto não.
+n º de ID de imposto
   
-id de imposto não
+ID de imposto não
   
-número de identificação de imposto
+número de identificação do imposto
   
-número de registro de imposto
+número do registro de imposto
   
-imposto do registro não.
+n º do registro de impostos
   
-AFM #
+AFM
   
-TIN #
+Tin
   
 taxidno #
   
 taxregistryno #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμός φορολογικού μητρώου
   
 aφμ
   
 aφμ αριθμός
   
-ΝΟ DE ΜΗΤΡΏΟΥ ΦΟΡΟΛΟΓΙΚΟΎ.
+φορολογικού μητρώου νο.
   
-ΤΟΝ ΑΡΙΘΜΌ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+τον αριθμό φορολογικού μητρώου
   
 ## <a name="hungary"></a>Hungria
 
@@ -835,13 +835,13 @@ Dez dígitos sem espaços ou delimitadores
 
 Dez dígitos:
   
--  Um dígito que deve estar "8" 
+-  Um dígito que deve ser "8" 
     
-- Cinco dígitos que corresponde ao número de dias entre a data 01/01/1867 e a data do nascimento do indivíduo
+- Cinco dígitos que correspondem ao número de dias entre a data 01/01/1867 e a data do nascimento da pessoa
     
-- Três dígitos que corresponde ao número gerado por acaso para diferenciar indivíduos nascidos no mesmo dia
+- Três dígitos que correspondem ao número gerado pela chance de diferenciar as pessoas nasceu no mesmo dia
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -851,13 +851,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_hungary_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_hungary_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_hungary_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_hungary_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_hungary_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_hungary_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -876,21 +876,21 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-número de identificação de imposto húngaro
+número de identificação do imposto húngaro
   
-tin húngaro
+Tin húngaro
   
-número de identificação de imposto
+número de ID do imposto
   
-número VAT
+número de IVA
   
-autoridade de fiscal não
+autoridade de imposto não
   
-número de identidade de imposto de id de imposto
+número de identidade do imposto ID do imposto
   
 taxidnumber #
   
-TIN #
+Tin
   
 hungatiantin #
   
@@ -908,15 +908,15 @@ adóhatóság szám
 
 ### <a name="format"></a>Formato
 
-Sete dígitos, seguidos por uma letra sem espaços ou delimitadores
+Sete dígitos seguidos de uma letra sem espaços ou delimitadores
   
 ### <a name="pattern"></a>Padrão
 
-Sete dígitos seguidos por uma letra:
+Sete dígitos seguidos de uma letra:
   
 -  Sete dígitos  
     
-- Uma letra (não diferencia maiusculas de minúsculas)
+- Uma letra (não diferencia maiúsculas de minúsculas)
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -926,13 +926,13 @@ Não aplicável
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_ireland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_ireland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_ireland_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_ireland_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_ireland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_ireland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -951,27 +951,27 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-serviço público nenhum
+serviço público não
   
-serviço de público pessoal nenhum
+serviço público pessoal não
   
-PPS nenhum
+PPS não
   
-pessoal de serviço não
+serviço pessoal não
   
-PPS pessoal não
+serviço PPS não
   
 ppsno #
   
-Irlandês pps nenhum
+número do PPS do irlandês
   
 publicserviceno #
   
-número de serviço pessoal de público
+número de serviço público pessoal
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh PPS
+PPS uimh
   
 uimhir aitheantais phearsanta
   
@@ -985,19 +985,19 @@ uimhir aitheantais phearsanta
 
 16 letras e dígitos:
   
--  Três letras que correspondem às três primeiros consoantes no nome da família 
+-  Três letras que correspondem às três primeiras consoantes no nome da família 
     
-- Três letras que correspondem à primeira, terceira e quarta consoantes no primeiro nome de usuário
+- Três letras que correspondem à primeira, terceira e quarta consoantes no primeiro nome
     
-- Dois dígitos que correspondem à última dígitos do ano nascimento
+- Dois dígitos que correspondem aos últimos dígitos do ano de nascimento
     
-- Um dígito que corresponde ao mês de nascimento — letras são usadas em ordem alfabética, mas apenas as letras de a F, R, L, M, P, R para T são usadas (assim, janeiro é uma e outubro é R)
+- Um dígito que corresponde ao mês de nascimento-as letras são usadas em ordem alfabética, mas apenas as letras de a a E, H, L, M, P, R a T são usadas (portanto, Janeiro é A e outubro é R)
     
-- Dois dígitos que correspondem ao dia do mês de nascimento onde 40 é adicionado ao dia de nascimento para mulheres diferenciar dos homens
+- Dois dígitos que correspondem ao dia do mês de nascimento, onde 40 é adicionado ao dia de nascimento de mulheres para diferenciar da homens
     
-- Quatro dígitos que correspondem a um código de área específico para o município onde a pessoa surgiu — códigos de todo o país são usados para países estrangeiros
+- Quatro dígitos que correspondem a um código de área específico para o município onde a pessoa nasceu — códigos em todo o país são usados para países estrangeiros
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -1007,13 +1007,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_italy_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_italy_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_italy_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_italy_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_italy_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_italy_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1032,9 +1032,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1045,11 +1045,11 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
 código fiscal
   
-codice fiscale
+fiscalização codice
   
 ## <a name="latvia"></a>Letônia
 
@@ -1061,9 +1061,9 @@ codice fiscale
 
 11 dígitos no padrão especificado
   
--  Seis dígitos que correspondem à data de nascimento (DDMMYY) 
+-  Seis dígitos que correspondem à data de nascimento (DDMMAA) 
     
-- Um dígito que corresponde do century de nascimento onde "0" corresponde ao décimo nono century, corresponde "1" como century 20 e "2" corresponde a century 21
+- Um dígito que corresponde ao século de nascimento onde "0" corresponde ao século 19, "1" corresponde a 20 Century e "2" corresponde ao século 21
     
 - Quatro dígitos
     
@@ -1075,13 +1075,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_latvia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_latvia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_latvia_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_latvia_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_latvia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_latvia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1100,9 +1100,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1113,11 +1113,11 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
 nodokļa numurs
   
@@ -1143,13 +1143,13 @@ Não aplicável
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_lithuania_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_lithuania_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_lithuania_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_lithuania_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_lithuania_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_lithuania_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1168,11 +1168,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
-imposto não #
+n º do imposto
   
 taxnumber #
   
@@ -1181,19 +1181,19 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
-id de mokesčių
+ID mokesčių
   
-mokesčių numeris
+mokesčių Numeris
   
-mokesčių identifikavimas numeris
+mokesčių identifikavimas Numeris
   
-## <a name="luxemburg"></a>Luxemburgo
+## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Formato
 
@@ -1215,13 +1215,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_luxemburg_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_luxemburg_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_luxemburg_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_luxemburg_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_luxemburg_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_luxemburg_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1240,9 +1240,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1253,15 +1253,15 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
 steuernummer
   
-id de steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -1269,19 +1269,19 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Formato
 
-Para cidadãos Maltês: 7 dígitos e uma letra no padrão especificado
+Para as nacionalidades maltês: 7 dígitos e uma letra no padrão especificado
   
-Não-Maltês cidadãos e entidades Maltês: 9 dígitos
+Entidades nacionais e Maltês não-maltês: 9 dígitos
   
 ### <a name="pattern"></a>Padrão
 
-Maltês cidadãos: 7 dígitos e uma letra
+Nacionalidades maltês: 7 dígitos e uma letra
   
 -  Sete dígitos  
     
-- Uma letra (não diferencia maiusculas de minúsculas)
+- Uma letra (não diferencia maiúsculas de minúsculas)
     
-Não-Maltês cidadãos e entidades Maltês: 9 dígitos
+Entidades nacionais e Maltês não-maltês: 9 dígitos
   
 -  Nove dígitos 
     
@@ -1293,13 +1293,13 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_malta_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_malta_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_malta_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_malta_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_malta_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_malta_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1318,9 +1318,9 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1331,17 +1331,17 @@ taxnumber
 tax id
 
   
-taxid #
+táxi #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
 numru tat-taxxa
   
 ID tat-taxxa
   
-numru guias ' identifikazzjoni tat-taxxa
+numru ta ' identifikazzjoni tat-taxxa
   
 ## <a name="netherlands"></a>Países Baixos
 
@@ -1361,13 +1361,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_netherlands_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_netherlands_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_netherlands_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_netherlands_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_netherlands_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_netherlands_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1386,55 +1386,55 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-número de identificação de imposto países baixos
+número de identificação do imposto Holanda
   
-identificação de imposto países baixos
+identificação de imposto Holanda
   
-número de identificação do Antilhas imposto
+número de identificação de imposto do Netherland
   
-identificação de imposto do Antilhas
+identificação de imposto do Netherland
   
-número de identificação de imposto
+número de identificação do imposto
   
-id de imposto holandês
+ID de imposto holandês
   
-número de identificação de imposto holandês
+número de identificação do imposto holandês
   
 tax id
 
   
-n º fiscal
+ID de imposto #
   
-número de imposto
+número do imposto
   
-imposto não #
+n º do imposto
   
-imposto #
+imposto
   
 tin
 
   
-TIN #
+Tin
   
-tin países baixos
+Tin Holanda
   
-tin do Antilhas
+Tin do Netherland
   
-Holanda belasting identificatienummer
+Países Baixos identificatienummer
   
-identificatienummer van belasting
+identificatienummer Van é última
   
-identificatienummer belasting
+identificatienummer a última
   
-Holanda belasting identificatie
+Países Baixos identificatie
   
-Holanda belasting id nummer
+Países Baixos Nummer ID da última vez
   
-Holanda belastingnummer
+Países Baixos belastingnummer
   
-btw nummer
+BTW Nummer
   
-nederlandse belasting identificatie
+Nederlandse identificatie
   
 ## <a name="poland"></a>Polônia
 
@@ -1454,13 +1454,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_poland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_poland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_poland_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_poland_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_poland_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_poland_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1479,9 +1479,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1489,36 +1489,36 @@ taxnumber #
   
 taxnumber
   
-NIP
+Nip
   
-NIP #
+Nip #
   
 tax id
 
   
-n º fiscal
+ID de imposto #
   
-id de NIP
+ID Nip
   
-id de NIP #
+NIP ID #
   
-número de identificação de imposto
+número de identificação do imposto
   
-identificação de imposto não.
+n º de identificação de imposto
   
-número VAT
+número de IVA
   
 IVA não.
   
 vatno #
   
-id de VAT
+ID de IVA
   
-id de VAT #
+ID de IVA #
   
-número identyfikacji podatkowej
+numer identyfikacji podatkowej
   
-Polski número identyfikacji podatkowej
+Polski numer identyfikacji podatkowej
   
 numeridentyfikacjipodatkowej #
   
@@ -1540,13 +1540,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_portugal_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_portugal_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_portugal_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_portugal_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_portugal_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_portugal_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1565,9 +1565,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
-número de imposto
+número do imposto
   
-imposto não.
+n º do imposto
   
 taxno #
   
@@ -1575,11 +1575,11 @@ taxnumber #
   
 taxnumber
   
-NIF
+nse
   
-NIF #
+nse
   
-numero fiscal
+fiscal numero
   
 número de identificação fiscal
   
@@ -1601,9 +1601,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_romania_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_romania_eu_tax_file_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_romania_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_romania_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1622,25 +1622,25 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-número de identificação de imposto
+número de ID do imposto
   
-arquivo do imposto não
+arquivo de imposto não
   
 
 
 tax file number
   
-imposto não
+n º do imposto
   
-número de imposto
+número do imposto
   
-taxid #
+táxi #
   
 taxno #
   
-ID-ul taxei
+ID-UL Taxei
   
-numărul de identificare fiscală
+numărul de identificare Fiscală
   
 ## <a name="slovakia"></a>Eslováquia
 
@@ -1660,9 +1660,9 @@ Não aplicável
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A expressão regular `Regex_slovakia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A expressão `Regex_slovakia_eu_tax_file_number` regular localiza o conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovakia_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_slovakia_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1681,28 +1681,28 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-número de identificação de imposto
+número de ID do imposto
   
-id de estanho
+ID do Tin
   
-não estanho
+Tin não
   
-id de estanho eslovaco
+ID de Tin de eslovaco
   
 tin
 
   
-arquivo do imposto não
+arquivo de imposto não
   
 
 
 tax file number
   
-imposto não
+n º do imposto
   
-número de imposto
+número do imposto
   
-taxid #
+táxi #
   
 taxno #
   
@@ -1730,13 +1730,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_slovenia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_slovenia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_slovenia_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_slovenia_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_slovenia_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_slovenia_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1758,28 +1758,28 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-número de identificação de imposto
+número de ID do imposto
   
-id de estanho
+ID do Tin
   
-não estanho
+Tin não
   
-id de estanho esloveno
+ID de Tin esloveno
   
 tin
 
   
-arquivo do imposto não
+arquivo de imposto não
   
 
 
 tax file number
   
-imposto não
+n º do imposto
   
-número de imposto
+número do imposto
   
-taxid #
+táxi #
   
 taxno #
   
@@ -1787,7 +1787,7 @@ identifikacijska številka davka
   
 davčna številka
   
-Številka davčne datoteke
+številka davčne datoteke
   
 ## <a name="spain"></a>Espanha
 
@@ -1797,43 +1797,43 @@ Sete ou oito dígitos e uma ou duas letras no padrão especificado
   
 ### <a name="pattern"></a>Padrão
 
-Espanholas Natural as pessoas com um cartão de identificação nacional da Espanha:
+Pessoas naturais do espanhol com um cartão de identidade nacional da Espanha:
   
 -  Oito dígitos 
     
-- Uma letra maiuscula (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula (diferencia maiúsculas de minúsculas) 
     
-Não residente Spaniards sem um cartão de identificação nacional da Espanha
+Spaniards não residente sem um cartão de identidade nacional da Espanha
   
-- Uma letra maiuscula "L" (diferencia maiusculas de minúsculas)
+- Uma letra maiúscula "L" (diferencia maiúsculas de minúsculas)
     
 - Sete dígitos 
     
-- Uma letra maiuscula (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula (diferencia maiúsculas de minúsculas) 
     
-Spaniards residente sob a idade dos 14 anos sem um Espanha nacional identidade cartão:
+Spaniards residentes sob a idade de 14 anos sem um cartão de identidade nacional da Espanha:
   
-- Uma letra maiuscula "K" (diferencia maiusculas de minúsculas)
+- Uma letra maiúscula "K" (diferencia maiúsculas de minúsculas)
     
 -  Sete dígitos  
     
-- Uma letra maiuscula (diferencia maiusculas de minúsculas)
+- Uma letra maiúscula (diferencia maiúsculas de minúsculas)
     
-Estrangeiros com número de identificação de um Foreigner
+Foreigners com o número de identificação do estrangeiro
   
-- Letras maiusculas uma letra ou seja "X", "Y" ou "Z" (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula que é "X", "Y" ou "Z" (diferencia maiúsculas de minúsculas) 
     
 - Sete dígitos 
     
-- Uma letra maiuscula (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula (diferencia maiúsculas de minúsculas) 
     
-Estrangeiros sem número de identificação de um Foreigner
+Foreigners sem um número de identificação do estrangeiro
   
-- Uma letra maiuscula que é "M" (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula que é "M" (diferencia maiúsculas de minúsculas) 
     
 - Sete dígitos 
     
-- Uma letra maiuscula (diferencia maiusculas de minúsculas) 
+- Uma letra maiúscula (diferencia maiúsculas de minúsculas) 
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -1843,13 +1843,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_spain_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_spain_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_spain_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_spain_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_spain_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_spain_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1871,31 +1871,31 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-número de identificação de imposto
+número de ID do imposto
   
-id de CIF
+ID de CIF
   
-CIF nenhum
+Não CIF
   
-id do espanhol cif
+ID de CIF espanhol
   
 CIF
   
-arquivo do imposto não
+arquivo de imposto não
   
-número de cif espanhol
+número de CIF espanhol
   
 
 
 tax file number
   
-Espanhol cif nenhum
+Não CIF espanhol
   
-imposto não
+n º do imposto
   
-número de imposto
+número do imposto
   
-taxid #
+táxi #
   
 taxno #
   
@@ -1909,9 +1909,9 @@ número de contribuyente
   
 número de impuesto corporativo
   
-número de identificación fiscal
+número de Identificación fiscal
   
-número de CIF
+número CIF
   
 cifnúmero #
   
@@ -1925,17 +1925,17 @@ Dez dígitos e um símbolo no padrão especificado
 
 Dez dígitos e um símbolo:
   
--  Seis dígitos que correspondem à data de nascimento (aammdd) 
+-  Seis dígitos que correspondem à data de nascimento (AAMMDD) 
     
-- Um sinal de adição, sinal de subtração ou barra invertida
+- Um sinal de adição, sinal de menos ou barra invertida
     
-- Três dígitos que tornam a identificação do número exclusivo where: 
+- Três dígitos que tornam o número de identificação exclusivo, onde: 
     
-  - Para números emitidos antes de 1990, o sétimo e oitavo dígito identificar a região de nascimento ou foreign-born pessoas
+  - Para números emitidos antes de 1990, o sétimo e oitavo dígito identificam o Condado de nascimento ou pessoas de nasceu
     
-  - O dígito na posição mais à nono indica gênero por qualquer um dos ímpares para Masculino ou até mesmo fêmea
+  - O dígito na nona posição indica sexo por tanto ímpar para masculino ou par para fêmea
     
-- Seleção de um dígito
+- Um dígito de verificação
     
 ### <a name="checksum"></a>Soma de verificação
 
@@ -1945,13 +1945,13 @@ Sim
 
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_sweden_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_sweden_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_sweden_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_sweden_eu_tax_file_number` chave de foi encontrada. 
     
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_sweden_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_sweden_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1973,46 +1973,46 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-id de imposto não.
+n º de ID de imposto
   
-número de identificação de imposto
+número de ID do imposto
   
 tax identification
 
   
 identificação de imposto #
   
-imposto não.
+n º do imposto
   
-imposto #
+imposto
   
-taxid #
+táxi #
   
-arquivo impostos
+arquivo de imposto
   
-imposto não o arquivo.
+arquivo de impostos não.
   
 número de identificação pessoal
   
-skatt id nummer
+skatt ID Nummer
   
 skatt identifikation
   
 personnummer
   
-## <a name="uk"></a>REINO UNIDO
+## <a name="uk"></a>Reino Unido
 
 ### <a name="format"></a>Formato
 
-Referência de contribuinte exclusivo (UTR): 10 dígitos sem espaços e delimitadores
+Referência de contribuidor exclusivo (UTR): 10 dígitos sem espaços e delimitadores
   
-Número de seguro de Nacional (NINO): Para obter detalhes, consulte a seção "número de Insurance nacional da Reino Unido (NINO)" em [quais tipos de informações confidenciais a procurar](what-the-sensitive-information-types-look-for.md).
+Número de seguro nacional (NINO): para obter detalhes, consulte a seção "número de seguro nacional do Reino Unido (NINO)" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Padrão
 
-Referência de contribuinte exclusivo (UTR): 10 dígitos
+Referência de contribuidor exclusivo (UTR): 10 dígitos
   
-Número de seguro de Nacional (NINO): Para obter detalhes, consulte a seção "número de Insurance nacional da Reino Unido (NINO)" em [quais tipos de informações confidenciais a procurar](what-the-sensitive-information-types-look-for.md).
+Número de seguro nacional (NINO): para obter detalhes, consulte a seção "número de seguro nacional do Reino Unido (NINO)" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -2022,9 +2022,9 @@ Sim
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
   
-- A função `Func_uk_eu_tax_file_number` encontra conteúdo que corresponde ao padrão. 
+- A função `Func_uk_eu_tax_file_number` localiza conteúdo que corresponde ao padrão. 
     
-- Uma palavra-chave da `Keywords_uk_eu_tax_file_number` for encontrado. 
+- Uma palavra- `Keywords_uk_eu_tax_file_number` chave de foi encontrada. 
     
 ```
  <!-- EU Tax File Number -->
@@ -2043,26 +2043,26 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 tax id
 
   
-id de imposto não.
+n º de ID de imposto
   
-número de identificação de imposto
+número de ID do imposto
   
 tax identification
 
   
 identificação de imposto #
   
-imposto não.
+n º do imposto
   
-imposto #
+imposto
   
-taxid #
+táxi #
   
-arquivo impostos
+arquivo de imposto
   
-imposto não o arquivo.
+arquivo de impostos não.
   
 ## <a name="see-also"></a>Confira também
 
-[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
+[O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
 

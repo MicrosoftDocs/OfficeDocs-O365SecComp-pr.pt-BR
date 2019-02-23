@@ -6,63 +6,63 @@ manager: laurawi
 ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: 'Resumo: Implante um novo isolado SharePoint Online site de equipe com estas instruções passo a passo.'
-ms.openlocfilehash: d233ec46b1e7257a92451c781afd6c61312f44b8
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+description: 'Resumo: implante um novo site de equipe do SharePoint Online isolado com as instruções passo a passo.'
+ms.openlocfilehash: 6a552e7ce8982f3b7d943136907764385fa33115
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345973"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216601"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implantar um site de equipe do SharePoint Online isolado
 
- **Resumo:** Implante um novo isolado SharePoint Online site de equipe com estas instruções passo a passo.
+ **Resumo:** Implante um novo site de equipe do SharePoint Online isolado com as instruções passo a passo.
   
-Este artigo é um guia passo a passo de implantação para criar e configurar um site de equipe do SharePoint Online isolado em Microsoft Office 365. Essas etapas pressupõem o uso dos três grupos padrão do SharePoint e níveis de permissão correspondente, com um grupo único de acesso baseado no AD do Windows Azure Active Directory para cada nível de acesso.
+Este artigo é um guia de implantação passo a passo para criar e configurar um site de equipe do SharePoint Online isolado no Microsoft Office 365. Essas etapas pressupõem o uso dos três grupos padrão do SharePoint e níveis de permissão correspondentes, com um único grupo de acesso baseado em AD (Active Directory) do Azure para cada nível de acesso.
   
-## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>Fase 1: Crie e preencha os grupos de acesso do site de equipe
+## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>Fase 1: criar e preencher os grupos de acesso ao site de equipe
 
-Nesta fase, você cria os três grupos Azure acesso baseado em AD para os grupos padrão de três do SharePoint e preenchê-los com as contas de usuário apropriada.
+Nesta fase, você cria os três grupos de acesso baseados no AD do Azure para os três grupos padrão do SharePoint e os preenche com as contas de usuário apropriadas.
   
 > [!NOTE]
-> As etapas a seguir pressupõem que todas as contas de usuário necessários já existirem e recebem as licenças apropriadas. Caso contrário, adicione-os e atribuir licenças antes de prosseguir para a etapa 1. 
+> As etapas a seguir pressupõem que todas as contas de usuário necessárias já existam e que recebem as licenças apropriadas. Caso contrário, adicione-os e atribua licenças antes de prosseguir para a etapa 1. 
   
-### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Etapa 1: Listar os administradores do SharePoint Online para o site
+### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Etapa 1: listar os administradores do SharePoint Online para o site
 
-Determine que o conjunto de usuário contas correspondente ao grupo de administradores do SharePoint Online para o site de equipe isolado.
+Determine o conjunto de contas de usuário correspondentes aos administradores do SharePoint Online para o site de equipe isolado.
   
-Se você está gerenciando contas de usuários e grupos por meio do Office 365 e deseja usar o Windows PowerShell, faça uma lista dos seus usuários nomes principais (UPNs) (exemplo UPN: belindan@contoso.com).
+Se você estiver gerenciando contas de usuário e grupos através do Office 365 e quiser usar o Windows PowerShell, faça uma lista de seus nomes principais de usuário (UPNs) (exemplo de UPN: belindan@contoso.com).
   
-### <a name="step-2-list-the-members-for-the-site"></a>Etapa 2: Listam os membros do site
+### <a name="step-2-list-the-members-for-the-site"></a>Etapa 2: listar os membros do site
 
-Determine o conjunto de contas de usuário correspondente aos membros para o site de equipe isolado, aqueles que vai ser colaborando em recursos armazenados dentro do site.
+Determine o conjunto de contas de usuário correspondentes aos membros do site de equipe isolado, aqueles que serão colaborativos nos recursos armazenados no site.
   
-Se você está gerenciando contas de usuários e grupos por meio do Office 365 e deseja usar o PowerShell, faça uma lista de seus UPNs. Se houver muitos membros do site, você pode armazenar a lista de UPNs em um arquivo de texto e adicioná-los a todos com um único comando do PowerShell.
+Se você estiver gerenciando contas de usuário e grupos através do Office 365 e quiser usar o PowerShell, faça uma lista de seus UPNs. Se houver muitos membros do site, você poderá armazenar a lista de UPNs em um arquivo de texto e adicioná-los todos com um único comando do PowerShell.
   
-### <a name="step-3-list-the-viewers-for-the-site"></a>Etapa 3: Listar os visualizadores para o site
+### <a name="step-3-list-the-viewers-for-the-site"></a>Etapa 3: listar os visualizadores para o site
 
-Determine o conjunto de contas de usuário correspondente para os visualizadores do site da equipe isolado, aqueles que pode exibir os recursos armazenados no site, mas não modificá-los ou colaborar diretamente em seu conteúdo.
+Determinar o conjunto de contas de usuário correspondentes aos visualizadores do site de equipe isolado, aqueles que podem exibir os recursos armazenados no site, mas não modificá-los ou colaborar diretamente em seu conteúdo.
   
-Se você está gerenciando contas de usuários e grupos por meio do Office 365 e deseja usar o PowerShell, faça uma lista de seus UPNs. Se houver muitos membros do site, você pode armazenar a lista de UPNs em um arquivo de texto e adicioná-los a todos com um único comando do PowerShell.
+Se você estiver gerenciando contas de usuário e grupos através do Office 365 e quiser usar o PowerShell, faça uma lista de seus UPNs. Se houver muitos membros do site, você poderá armazenar a lista de UPNs em um arquivo de texto e adicioná-los todos com um único comando do PowerShell.
   
-Visualizadores para o site podem incluir a gerência executiva, assessores jurídicos ou inter-departmental participantes.
+Os visualizadores do site podem incluir gerência executiva, assessoria jurídica ou participantes entre departamentos.
   
-### <a name="step-4-create-the-three-access-groups-for-the-site-in-azure-ad"></a>Etapa 4: Criar os grupos de três do access para o site no Windows Azure AD
+### <a name="step-4-create-the-three-access-groups-for-the-site-in-azure-ad"></a>Etapa 4: criar os três grupos de acesso para o site no Azure AD
 
 Você precisa criar os seguintes grupos de acesso no Azure AD:
   
-- Administradores de site (que conterão a lista da etapa 1)
+- Administradores de site (que conterá a lista da etapa 1)
     
-- Membros do site (que conterão a lista da etapa 2)
+- Membros do site (que conterá a lista da etapa 2)
     
-- Visitantes do site (que conterão a lista da etapa 3)
+- Visualizadores de site (que conterá a lista da etapa 3)
     
-1. No seu navegador, vá para o portal do Windows Azure em [https://portal.azure.com](https://portal.azure.com) e entre com as credenciais de uma conta que tenha sido atribuída com função de administrador de gerenciamento de usuários ou administrador da empresa.
+1. No navegador, vá para o portal do Azure em [https://portal.azure.com](https://portal.azure.com) e entre com as credenciais de uma conta que tenha sido atribuída com o administrador de gerenciamento de usuário ou a função de administrador da empresa.
     
 2. No Portal do Azure, clique em **Azure Active Directory > Grupos**.
     
@@ -72,42 +72,42 @@ Você precisa criar os seguintes grupos de acesso no Azure AD:
     
   - Escolha **Office 365** em **Tipo de Grupo**.
     
-  - Digite o nome do grupo no **nome**.
+  - Digite o nome do grupo em **nome**.
     
-  - Digite uma descrição do grupo na **Descrição do grupo**.
+  - Digite uma descrição do grupo em **Descrição do grupo**.
     
   - Escolha **Atribuído** em **Tipo de Associação**.
     
 5. Clique em **Criar** e, em seguida, feche a folha **Grupo**.
     
-6. Repita as etapas 3 a 5 para os grupos adicionais.
+6. Repita as etapas 3-5 para seus grupos adicionais.
     
 > [!NOTE]
-> Você precisará usar o portal do Windows Azure para criar os grupos para que eles tenham os recursos do Office habilitados. Se um site do SharePoint Online isolado posteriormente é configurado como um site altamente confidenciais com um rótulo de proteção de informações do Windows Azure (AIP) para criptografar arquivos e atribuir permissões a grupos específicos, os grupos permitidos devem ter sido criados com os recursos do Office habilitado. Você não pode alterar a configuração de recursos do Office de um grupo do Windows Azure AD após ele ter sido criado. 
+> Você precisa usar o portal do Azure para criar os grupos de modo que eles tenham recursos do Office habilitados. Se um site isolado do SharePoint Online for configurado posteriormente como um site altamente confidencial com um rótulo de proteção de informações do Azure (AIP) para criptografar arquivos e atribuir permissão a grupos específicos, os grupos permitidos deverão ter sido criados com recursos do Office permiti. Você não pode alterar a configuração de recursos do Office de um grupo do Azure AD após ele ter sido criado. 
   
-Aqui está a configuração resultante com os grupos de acesso de três do site.
+Aqui está a configuração resultante com os três grupos de acesso de site.
   
 ![Os três grupos de acesso para sua implantação de um site isolado do SharePoint Online.](media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Etapa 5. Adicione as contas de usuário para os grupos de acesso
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Etapa 5. Adicionar as contas de usuário aos grupos de acesso
 
 Nesta etapa, faça o seguinte:
   
 1. Adicionar a lista de usuários da etapa 1 ao grupo de acesso de administradores de site
     
-2. Adicionar a lista de usuários da etapa 2 para o grupo de acesso de membros do site
+2. Adicionar a lista de usuários da etapa 2 ao grupo de acesso de membros do site
     
-3. Adicionar a lista de usuários da etapa 3, ao grupo de acesso do site visualizadores
+3. Adicionar a lista de usuários da etapa 3 ao grupo de acesso de visualizadores de sites
     
-Se você está gerenciando contas de usuários e grupos por meio do Windows Server AD, adicione usuários aos grupos de acesso apropriado usando seu usuário normal do Windows Server AD e procedimentos de gerenciamento de grupo e aguarde a sincronização com sua assinatura do Office 365.
+Se você estiver gerenciando contas de usuário e grupos por meio do Windows Server AD, adicione usuários aos grupos de acesso apropriados usando seus procedimentos normais de gerenciamento de usuários e grupos do Windows Server AD e aguarde a sincronização com sua assinatura do Office 365.
   
-Se você estiver gerenciando contas de usuários e grupos por meio do Office 365, você pode usar o Centro de administração do Office ou do PowerShell. Se você tiver os nomes de grupo duplicado para qualquer um dos grupos de acesso, você deve usar o Centro de administração do Office.
+Se estiver gerenciando contas de usuário e grupos através do Office 365, você poderá usar o centro de administração do Office ou o PowerShell. Se você tiver nomes de grupo duplicados para qualquer um dos grupos de acesso, deverá usar o centro de administração do Office.
   
-Para o Centro de administração do Office, entrar com uma conta de usuário que tenha sido atribuída a função de administrador da conta de usuário ou administrador da empresa e use grupos para adicionar as contas de usuário apropriados e para os grupos de acesso apropriado.
+Para o centro de administração do Office, entre com uma conta de usuário que tenha atribuído a função Administrador de conta de usuário ou administrador da empresa e use grupos para adicionar as contas de usuário e grupos apropriados aos grupos de acesso apropriados.
   
-Para o PowerShell, primeiro [conectar com o módulo do Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Para o PowerShell, primeiro [Conecte-se ao módulo PowerShell do Azure Active Directory v2](https://go.microsoft.com/fwlink/?linkid=842218).
   
-Em seguida, use o seguinte bloco de comando para adicionar uma conta de usuário individual para um grupo de acesso:
+Em seguida, use o seguinte bloco de comando para adicionar uma conta de usuário individual a um grupo de acesso:
   
 ```
 $userUPN="<UPN of the user account>"
@@ -116,9 +116,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> Para um arquivo de texto que contém todos os comandos do PowerShell e um Excel planilha de configuração que gera os comandos do PowerShell com base no seu grupo e usuário nomes de conta, baixe o [Isolado SharePoint Online Team Site Deployment Kit](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
+> Para um arquivo de texto que contém todos os comandos do PowerShell e uma planilha de configuração do Excel que gera comandos do PowerShell com base em seus nomes de conta de usuário e de grupo, baixe o [Kit de implantação de site de equipe do SharePoint Online isolado](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
   
-Se você armazenou os UPNs das contas de usuário para qualquer um dos grupos de acesso em um arquivo de texto, você pode usar o seguinte bloco de comando do PowerShell para adicioná-los todos ao mesmo tempo:
+Se você armazenou os UPNs de contas de usuário para qualquer um dos grupos de acesso em um arquivo de texto, você pode usar o seguinte bloco de comando do PowerShell para adicionar todos ao mesmo tempo:
   
 ```
 $grpName="<display name of the access group>"
@@ -127,7 +127,7 @@ $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID $grpID }
 ```
 
-Para PowerShell, use o seguinte bloco de comando para adicionar um grupo individual para um grupo de acesso:
+Para o PowerShell, use o seguinte bloco de comando para adicionar um grupo individual a um grupo de acesso:
   
 ```
 $nestedGrpName="<display name of the group to add to the access group>"
@@ -136,30 +136,30 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ```
 
-Os resultados devem ser o seguinte:
+Os resultados devem ser os seguintes:
   
-- Grupo do Azure AD de administradores de site contém as contas de usuário do administrador de site ou grupos
+- O grupo Administradores do site do Azure AD contém as contas de usuário ou grupos de administrador do site
     
-- Grupo do Azure AD de membros do site contém as contas de usuário do site membro ou grupos
+- O grupo membros do site do Azure AD contém as contas de usuário ou grupos do site membro
     
-- Grupo de visualizadores Azure AD de site contém as contas de usuário ou grupos que só podem visualizar o conteúdo do site
+- O grupo Visualizador do site do Azure AD contém as contas de usuário ou grupos que só podem exibir o conteúdo do site
     
-Valide a lista de membros de grupo para cada grupo de acesso com o Centro de administração do Office ou com o seguinte bloco de comando do PowerShell:
+Valide a lista de membros do grupo para cada grupo de acesso com o centro de administração do Office ou com o seguinte bloco de comando do PowerShell:
   
 ```
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
 
-Aqui está a configuração resultante com os grupos de acesso do três site preenchida com as contas de usuário ou grupos.
+Aqui está a configuração resultante com os três grupos de acesso de site preenchidos com contas de usuário ou grupos.
   
 ![Os três grupos de acesso preenchidos com contas de usuário.](media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
-## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: Criar e configurar o site de equipe isolado
+## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: criar e configurar o site de equipe isolado
 
-Nesta fase, você cria o site do SharePoint Online isolado e configurar as permissões para os níveis de permissão padrão do SharePoint Online usar os novos grupos do Azure acesso baseado em AD.
+Nesta fase, você cria o site do SharePoint Online isolado e configura as permissões para os níveis de permissão padrão do SharePoint Online para usar seus novos grupos de acesso baseados no Azure AD.
   
-Primeiro, crie o site da equipe do SharePoint Online com estas etapas.
+Primeiro, crie o site de equipe do SharePoint Online com estas etapas.
   
 1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -169,15 +169,15 @@ Primeiro, crie o site da equipe do SharePoint Online com estas etapas.
     
 4. Na página **Criar um site**, clique em **Site de equipe**.
     
-5. Em **nome do Site**, digite um nome para o site de equipe. 
+5. Em **nome do site**, digite um nome para o site de equipe. 
     
-6. Na **Descrição do site de equipe,** digite uma descrição opcional da finalidade do site.
+6. Em **Descrição do site de equipe,** digite uma descrição opcional do objetivo do site.
     
-7. Em **Configurações de privacidade**, escolha **Privado – somente membros podem acessar esse site** e clique em **Avançar**.
+7. Em **Configurações de privacidade**, selecione **Privado – somente membros podem acessar esse site** e clique em **Avançar**.
     
 8. No painel **Quem você deseja adicionar?**, clique em **Concluir**.
     
-Em seguida, do novo site de equipe do SharePoint Online, configure permissões.
+Em seguida, no novo site de equipe do SharePoint Online, configure as permissões.
   
 1. Na barra de ferramentas, clique no ícone Configurações e, em seguida, clique em **Permissões do site**.
     
@@ -185,53 +185,54 @@ Em seguida, do novo site de equipe do SharePoint Online, configure permissões.
     
 3. Na nova guia **Permissões** do navegador, clique em **Configurações de Solicitação de Acesso**.
     
-4. Na caixa de diálogo **Configurações de solicitações de acesso** , desmarque **Permitir membro para compartilhar o site e arquivos e pastas individuais** e **solicitações de acesso permitir** (de forma que todas as três caixas de seleção estiver desmarcadas) e clique em **Okey**.
+4. Na caixa de diálogo **configurações de solicitações de acesso** , desmarque **permitir membro para compartilhar o site e arquivos e pastas individuais** e **Permitir solicitações de acesso** (para que todas as três caixas de seleção sejam desmarcadas) e clique em **OK**.
     
-5. Na guia **permissões** do seu navegador, clique em ** \<nome do site > membros** na lista.
+5. Na guia **permissões** do navegador, clique em ** \<membros do name> de site** na lista.
     
 6. Em **Pessoas e Grupos**, clique em **Novo**.
     
-7. Na caixa de diálogo **compartilhar** , digite o nome do grupo de acesso de membros do site, selecione-o e, em seguida, clique em **compartilhar**.
+7. Na caixa de diálogo **compartilhar** , digite o nome do grupo de acesso de membros do site, selecione-o e clique em **compartilhar**.
     
-8. Clique no botão voltar de seu navegador.
+8. Clique no botão Voltar de seu navegador.
     
-9. Clique em ** \<nome do site > proprietários** na lista.
+9. Clique em ** \<proprietários de name> de site** na lista.
     
 10. Em **Pessoas e Grupos**, clique em **Novo**.
     
-11. Na caixa de diálogo **compartilhamento** , digite o nome do grupo de acesso de administradores do site, selecioná-la e, em seguida, clique em **compartilhar**.
+11. Na caixa de diálogo **compartilhar** , digite o nome do grupo de acesso de administradores de site, selecione-o e clique em **compartilhar**.
     
-12. Clique no botão voltar de seu navegador.
+12. Clique no botão Voltar de seu navegador.
     
-13. Clique em ** \<nome do site > visitantes** na lista.
+13. Clique em ** \<sites name> visitantes** na lista.
     
 14. Em **Pessoas e Grupos**, clique em **Novo**.
     
-15. Na caixa de diálogo **compartilhamento** , digite o nome do grupo de acesso ao site visualizadores, selecioná-la e, em seguida, clique em **compartilhar**.
+15. Na caixa de diálogo **compartilhar** , digite o nome do grupo de acesso visualizadores de sites, selecione-o e clique em **compartilhar**.
     
 16. Feche a guia **Permissões** do navegador.
     
 Os resultados dessas configurações de permissão são:
   
-- O ** \<nome do site > proprietários** grupo do SharePoint contém o grupo de acesso de administradores de site, no quais todos os membros têm o nível de permissão **controle total** .
+- O ** \<grupo sites name> proprietários do site** do SharePoint contém o grupo de acesso de administradores de site, em que todos os membros têm o nível de permissão **controle total** .
     
-- O ** \<nome do site > membros** grupo do SharePoint contém o grupo de acesso de membros do site, em que todos os membros têm o nível de permissão **Editar** .
+- O ** \<grupo site name> Members** SharePoint contém o grupo de acesso de membros do site, em que todos os membros têm o nível de permissão **Editar** .
     
-- O ** \<nome do site > visitantes** grupo do SharePoint contém o site grupo visualizadores de acesso, no quais todos os membros têm o nível de permissão de **leitura** .
+- O ** \<grupo sites name> visitantes** do SharePoint contém o grupo de acesso visualizadores de sites, em que todos os membros têm o nível de permissão de **leitura** .
     
-- A capacidade de membros convidar outros membros ou de membros solicitar acesso está desabilitada.
+- A capacidade de os membros de convidar outros membros ou de não membros solicitarem o acesso está desabilitada.
     
 Aqui está a configuração resultante com os três grupos do SharePoint para o site configurado para usar os três grupos de acesso, que são preenchidos com contas de usuário ou grupos do Azure AD.
   
 ![A configuração final do seu site isolado do SharePoint Online com contas de usuário e grupos de acesso.](media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
-Você e os membros do site, por meio de associação de grupo em um dos grupos de acesso, agora podem colaborar usando os recursos do site.
+Você e os membros do site, por meio da Associação de grupo em um dos grupos de acesso, agora podem colaborar usando os recursos do site.
   
 ## <a name="next-step"></a>Próxima etapa
 
-Quando você precisar alterar a associação de grupo de acesso do site ou criar uma pasta de documentos com permissões personalizadas, consulte [Gerenciar um site de equipe do SharePoint Online isolado](manage-an-isolated-sharepoint-online-team-site.md).
+Quando você precisar alterar a associação de grupo de acesso ao site ou criar uma pasta de documentos com permissões personalizadas, consulte [gerenciar um site de equipe isolado do SharePoint Online](manage-an-isolated-sharepoint-online-team-site.md).
   
 ## <a name="see-also"></a>Confira também
+
 
 [Sites de equipe do SharePoint Online isolados](isolated-sharepoint-online-team-sites.md)
   

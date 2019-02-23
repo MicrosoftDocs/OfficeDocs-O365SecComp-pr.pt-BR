@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Um resumo de como a Microsoft impõe o isolamento de locatário para o Office 365.
-ms.openlocfilehash: c0b58f149ace1e6b1ecf179534bdd75d15840a7f
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: dceff3b73ac01d3e0422a190d450ee28f7fdfb27
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090983"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220271"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Isolamento de locatário no Office 365
 

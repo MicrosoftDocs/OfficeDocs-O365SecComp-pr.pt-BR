@@ -6,67 +6,67 @@ manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
-description: Essa recomendação orientado a percepção ajuda a sua organização manter o conteúdo confidencial seguras quando ele tem armazenado e compartilhado no Office 365 por informando quando há uma lacuna possível em sua cobertura de política DLP. Você verá essa recomendação na Home page da segurança &amp; Centro de conformidade, se seus documentos contêm qualquer um dos cinco maiores tipos mais comuns de informações confidenciais, mas não são protegidos por uma política DLP.
-ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: Essa recomendação orientada por informações ajuda sua organização a manter o conteúdo confidencial seguro quando ele é armazenado e compartilhado no Office 365, informando quando há uma lacuna possível na cobertura da política de DLP. Você verá essa recomendação na home page do centro de conformidade de &amp; segurança, se seus documentos contiverem qualquer um dos cinco tipos de informações confidenciais mais comuns, mas não estiverem protegidos por uma política de DLP.
+ms.openlocfilehash: ba5a1dd6165309ec024087f6b7c036edd5b480bc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002624"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220531"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introdução às recomendações de políticas DLP
 
-Essa recomendação orientado a percepção ajuda a sua organização manter o conteúdo confidencial seguras quando ele tem armazenado e compartilhado no Office 365 por informando quando há uma lacuna possível em sua cobertura de política DLP. Você verá essa recomendação na página **inicial** da segurança &amp; Centro de conformidade, se seus documentos contêm qualquer um dos cinco maiores tipos mais comuns de informações confidenciais, mas não são protegidos por uma política de prevenção (DLP) de perda de dados. 
+Essa recomendação orientada por informações ajuda sua organização a manter o conteúdo confidencial seguro quando ele é armazenado e compartilhado no Office 365, informando quando há uma lacuna possível na cobertura da política de DLP. Você verá essa recomendação na **Home** Page do centro de conformidade de &amp; segurança, se seus documentos contiverem qualquer um dos cinco tipos de informações confidenciais mais comuns, mas não estiverem protegidos por uma política de prevenção de perda de dados (DLP). 
   
-Você pode usar este widget para criar rapidamente uma política de DLP personalizada em apenas um ou dois cliques e depois de criar essa política DLP, ele é totalmente personalizável. Observe que se você não vir a recomendação inicialmente, tente clicando em **+ mais** na parte inferior da seção **recomendado para você** . 
+Você pode usar esse widget para criar rapidamente uma política de DLP personalizada com apenas um clique ou dois, e depois de criar essa política de DLP, ela é totalmente personalizável. Observe que, se você não vir a recomendação primeiro, tente clicar **+ mais** na parte inferior da seção **recomendada para você** . 
   
-![Widget denominado informações confidenciais desprotegidas](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget chamado informações confidenciais desprotegidas](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
-## <a name="create-the-recommended-dlp-policy"></a>Criar a política DLP recomendada
+## <a name="create-the-recommended-dlp-policy"></a>Criar a política de DLP recomendada
 
-Quando o widget mostra que você desprotegido informações confidenciais, escolha a **guia de Introdução** na parte inferior para criar rapidamente uma política DLP. 
+Quando o widget mostrar informações confidenciais desprotegidas, escolha **introdução** no final para criar rapidamente uma política de DLP. 
   
-Para ajudar a proteger as informações sigilosas, essa política DLP:
+Para ajudar a proteger as informações confidenciais, esta política de DLP:
   
-- Detecta quando o conteúdo no Exchange, SharePoint e OneDrive que contém um dos tipos de informações confidenciais desprotegidos é compartilhado com pessoas fora da sua organização.
+- Detecta quando o conteúdo no Exchange, SharePoint e OneDrive que contém um dos tipos desprotegidos de informações confidenciais é compartilhado com pessoas de fora da organização.
     
-- Gera relatórios de atividade detalhada de modo que você pode controlar coisas como quem o conteúdo compartilhado com pessoas fora da sua organização e quando eles fizeram. Você pode usar os [relatórios DLP](view-the-dlp-reports.md) e os [dados de log de auditoria](search-the-audit-log-in-security-and-compliance.md) (onde **atividade** = **DLP**) para ver essa informação.
+- Gera relatórios de atividade detalhados para que você possa rastrear coisas como quem compartilhou o conteúdo com pessoas de fora da sua organização e quando eles faziam. Você pode usar os [relatórios de DLP](view-the-dlp-reports.md) e [dados de log de auditoria](search-the-audit-log-in-security-and-compliance.md) (onde a **atividade** = **DLP**) para ver essas informações.
     
-Você também pode optar por têm a política DLP:
+Você também pode optar por ter a política de DLP:
   
-- Envie um email de relatório de incidente quando usuários compartilharem muitas dessas informações confidenciais com pessoas fora da sua organização.
+- Envie um email de relatório de incidentes quando os usuários compartilharem muitas dessas informações confidenciais com pessoas de fora da sua organização.
     
-- Adicione outros usuários para o relatório de incidente de email.
+- Adicione outros usuários ao relatório de incidentes de email.
     
-- Mostrar uma dica de política e enviar uma notificação por e-mail aos usuários quando eles tentam compartilhar essas informações confidenciais com pessoas fora da sua organização. Para obter mais informações sobre essas opções, consulte [Enviar notificações por email e Mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md).
+- Mostrar uma dica de política e enviar uma notificação por email aos usuários quando eles tentarem compartilhar essas informações confidenciais com pessoas de fora da organização. Para obter mais informações sobre essas opções, consulte [enviar notificações por email e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md).
     
-Se você quiser alterar essas opções mais tarde, você pode editar a política de DLP após sua criação. Por exemplo, você pode fazer a política mais restritivas por pessoas mesmo bloqueio de compartilhamento de conteúdo que contém informações confidenciais em primeiro lugar -, consulte a próxima seção.
+Se você quiser alterar essas opções mais tarde, poderá editar a política de DLP após sua criação. Por exemplo, você pode tornar a política mais restritiva até mesmo impedindo que as pessoas compartilhem conteúdo que contém informações confidenciais no primeiro lugar-Confira a próxima seção.
   
-![Configurações do widget denominado informações confidenciais desprotegidas](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Configurações do widget chamado informações confidenciais desprotegidas](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Editar a política DLP recomendada
 
-Depois de usar o widget para criar uma política DLP, a política aparece na **prevenção de perda de dados** na página **política** de segurança &amp; Centro de conformidade. 
+Após usar o widget para criar uma política de DLP, a política aparecerá em **prevenção de perda de dados** na página **política** do &amp; centro de conformidade de segurança. 
   
-Por padrão, a política é denominada **Diretiva recomendados do sistema para o compartilhamento de informações confidenciais**. Essa diretiva é totalmente personalizável, o mesmo que qualquer política DLP que você criou do zero. Por exemplo, se você decidiu não ativar dicas de política e relatórios de incidentes quando você usou o widget, você sempre pode editar a política e ativar essas opções a qualquer momento.
+Por padrão, a política é chamada de **política recomendada pelo sistema para compartilhar informações confidenciais**. Essa política é totalmente personalizável, o mesmo que qualquer política de DLP que você criar a partir do zero. Por exemplo, se você optou por não ativar relatórios de incidentes e dicas de política ao usar o widget, sempre é possível editar a política e ativar essas opções a qualquer momento.
   
-![Sistema recomendado de política para o compartilhamento de informações confidenciais](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![Política recomendada de sistema para compartilhamento de informações confidenciais](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
-## <a name="when-the-widget-does-and-does-not-appear"></a>Quando o widget e não aparecem
+## <a name="when-the-widget-does-and-does-not-appear"></a>Quando o widget não aparece
 
-O widget denominado **Informações confidenciais desprotegidas** aparece na seção **recomendado para você** da página **inicial** da segurança &amp; Centro de conformidade. 
+O widget chamado **informações confidenciais** desprotegidas aparece na seção **recomendada para você** da **Home** Page do centro de conformidade de &amp; segurança. 
   
 Este widget aparece somente quando:
   
-- Novos documentos que contenham qualquer um dos cinco tipos mais comuns de informações confidenciais detectados no SharePoint ou OneDrive nos últimos 30 dias.
+- Novos documentos que contêm qualquer um dos cinco tipos mais comuns de informações confidenciais são detectados no SharePoint ou no OneDrive nos últimos 30 dias.
     
-- Que informações confidenciais já não estão protegidas por uma política DLP existente.
+- Que as informações confidenciais ainda não estão protegidas por uma política de DLP existente.
     
-Ao contrário de políticas de DLP que estão constantemente verificação de seus dados, essa recomendação examina de falhas na sua cobertura de política DLP quase a cada 48 horas, portanto depois que o novo conteúdo é carregado, pode levar até dois dias para a recomendação apareça.
+Diferentemente das políticas de DLP que estão examinando constantemente seus dados, essa recomendação verifica intervalos em sua cobertura de política de DLP aproximadamente a cada 48 horas, portanto, após o carregamento do novo conteúdo, pode levar até dois dias para que a recomendação seja exibida.
   
-Finalmente, depois de usar o widget para criar uma política DLP recomendada, o widget desaparecerá da página **inicial** . 
+Por fim, depois de usar o widget para criar uma política de DLP recomendada, o widget desaparecerá da **Home** Page. 
   
 

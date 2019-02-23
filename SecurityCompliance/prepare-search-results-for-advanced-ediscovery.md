@@ -8,24 +8,24 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: Saiba como preparar os resultados de uma pesquisa de conteúdo no Office 365 Security &amp; Centro de conformidade para análise adicional com a ferramenta de descoberta eletrônica avançado.
-ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Saiba como preparar os resultados de uma pesquisa de conteúdo no centro de conformidade de &amp; segurança do Office 365 para análise adicional com a ferramenta de descoberta eletrônica avançada.
+ms.openlocfilehash: 52573169692c2457e51898f9f36d2c586c7e7a4b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27280164"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212671"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365
 
-Após uma pesquisa que está associado a um caso de descoberta eletrônica no Office 365 Security &amp; Centro de conformidade é executado com êxito, você pode preparar os resultados da pesquisa para análise adicional com eDiscovery avançadas do Office 365, que permite que você analise grandes, dados não estruturados define e reduzem a quantidade de dados relevantes a um caso jurídico. Recursos de descoberta eletrônica avançada incluem:
+Depois que uma pesquisa associada a uma ocorrência de descoberta eletrônica no centro de conformidade &amp; de segurança do Office 365 é executada com êxito, você pode preparar os resultados da pesquisa para análise adicional com a descoberta eletrônica avançada do Office 365, que permite a análise de grandes conjuntos de dados não estruturados e reduz a quantidade de dados que são relevantes para um caso jurídico. Os recursos avançados de descoberta eletrônica incluem:
   
-- **Reconhecimento óptico de caracteres** - quando você prepara os resultados da pesquisa para eDiscovery avançada, a funcionalidade de reconhecimento óptico de caracteres (OCR) automaticamente extrai texto de imagens e inclui isso com os resultados da pesquisa que são carregados em para EDiscovery avançada para análise. OCR é suportado para arquivos flexível, anexos de email e imagens incorporadas. Isso permite que você aplique as capacidades analíticas de texto de eDiscovery avançado (perto duplicatas, email threading, temas e previsão de codificação) para o conteúdo de texto em arquivos de imagem. EDiscovery avançado OCR suporta os seguintes formatos de arquivos de imagem:
+- **Reconhecimento óptico de caracteres** : ao preparar os resultados de pesquisa para descoberta eletrônica avançada, a funcionalidade de reconhecimento óptico de caracteres (OCR) extrai automaticamente o texto de imagens e o inclui com os resultados de pesquisa que são carregados no no Descoberta eletrônica avançada para análise. O OCR tem suporte para arquivos soltos, anexos de email e imagens incorporadas. Isso permite que você aplique os recursos analíticos de texto de descoberta eletrônica avançada (quase duplicatas, threads de email, temas e codificação de previsão) ao conteúdo de texto em arquivos de imagem. O OCR de descoberta eletrônica avançada oferece suporte aos seguintes formatos de arquivos de imagem:
 
     - GIF
     - JPEG
@@ -33,85 +33,85 @@ Após uma pesquisa que está associado a um caso de descoberta eletrônica no Of
     - PNG
     - TIFF
     
-- **Detecção de quase duplicados** - permite que você estruturar sua análise de dados com mais eficiência, para que uma pessoa analisa um grupo de documentos semelhantes. Isso ajuda a impedir que vários revisores tenham que exibir diferentes versões do mesmo documento. 
+- **Detecção quase duplicada** : permite que você estruture sua análise de dados com mais eficiência, portanto, uma pessoa revisa um grupo de documentos semelhantes. Isso ajuda a evitar que vários revisores tenham que exibir versões diferentes do mesmo documento. 
     
-- **Email threading** - o ajudará a identificar as mensagens exclusivas em um segmento de email para poder focalizar somente as novas informações em cada mensagem. Em um segmento de email, a segunda mensagem contém a mensagem primeira. Da mesma forma, as mensagens de posteriores contêm todas as mensagens anteriores. Email threading remove a necessidade de revisar todas as mensagens em sua totalidade em um segmento de email. 
+- **Encadeamento de email** – ajuda a identificar as mensagens exclusivas em um thread de email para que você possa se concentrar apenas nas novas informações de cada mensagem. Em um thread de email, a segunda mensagem contém a primeira mensagem. Da mesma forma, as mensagens posteriores contêm todas as mensagens anteriores. O encadeamento de emails remove a necessidade de revisar cada mensagem inteira em um thread de email. 
     
-- **Temas** - ajudá-lo a obter informações valiosas sobre seus dados além apenas estatísticas de pesquisa de palavra-chave. Temas ajudam investigações agrupando documentos relacionados, portanto, você pode examinar os documentos em contexto. Ao usar temas, você pode exibir os temas relacionados para um conjunto de documentos, determinar quaisquer sobreposição e, em seguida, identificar seções cruzadas de dados relacionados. 
+- **Temas** : ajuda você a obter informações valiosas sobre seus dados além das estatísticas de pesquisa de palavra-chave. Temas ajudam investigações ao agrupar documentos relacionados para que você possa examinar os documentos no contexto. Ao usar temas, você pode exibir os temas relacionados para um conjunto de documentos, determinar qualquer sobreposição e, em seguida, identificar as seções cruzadas de dados relacionados. 
     
-- **Previsão de codificação** - lhe permite treinar o sistema no qual você está procurando, permitindo que você tomar decisões (sobre se algo é relevante ou não) em um conjunto pequeno de documentos. EDiscovery avançada aplica esse aprendizado (com base em sua orientação) quando analisando todos os documentos no conjunto de dados. Com base no que aprendizado, eDiscovery avançado oferece uma classificação de relevância para que você possa decidir quais documentos a serem analisados com base em qual documento são bem provável de ser relevante ao caso. 
+- **Codificação preditiva** : permite que você treine o sistema do que você está procurando, permitindo tomar decisões (sobre se algo é relevante ou não) em um pequeno conjunto de documentos. A descoberta eletrônica avançada, em seguida, aplica o aprendizado (com base nas suas diretrizes) durante a análise de todos os documentos no conjunto de dados. Com base nesse aprendizado, a descoberta eletrônica avançada fornece uma classificação de relevância para que você possa decidir quais documentos serão revisados com base em qual documento é o mais provável de ser relevante para o caso. 
     
-- **Exportando dados para revisar os aplicativos** - você pode exportar dados de descoberta eletrônica avançada e o Office 365 depois de concluir sua análise e reduziu o conjunto de dados. O pacote de exportação inclui um arquivo CSV que contém as propriedades dos metadados de análise e o conteúdo exportado. Esse pacote de exportação, em seguida, pode ser importado para um aplicativo de revisão de descoberta eletrônica. 
+- **Exportando dados para aplicativos de revisão** -você pode exportar dados de descoberta eletrônica avançada e do Office 365 depois de concluir a análise e reduzir o conjunto de dados. O pacote de exportação inclui um arquivo CSV que contém as propriedades do conteúdo exportado e dos metadados da análise. Esse pacote de exportação pode ser importado para um aplicativo de análise de descoberta eletrônica. 
     
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para analisar dados de um usuário usando o eDiscovery avançado, o usuário (o de responsáveis dos dados) deve ser atribuído uma licença do Office 365 E5. Como alternativa, os usuários com uma licença do Office 365 E1 ou E3 podem ser atribuídos uma licença autônoma de eDiscovery avançado. Os administradores e oficiais de conformidade que estão atribuídos ao casos e usam o eDiscovery avançada para analisar dados não precisam de uma licença E5. 
+- Para analisar os dados de um usuário usando a descoberta eletrônica avançada, o usuário (o responsáveis dos dados) deve receber uma licença do Office 365 e5. Como alternativa, os usuários com uma licença do Office 365 E1 ou E3 podem receber uma licença autônoma de descoberta eletrônica avançada. Administradores e gerentes de conformidade atribuídos aos casos e usar a descoberta eletrônica avançada para analisar os dados não precisam de uma licença e5. 
     
-- Você precisa ser uma administrador no Office 365 Security descoberta eletrônica ou uma gerente de descoberta eletrônica &amp; Centro de conformidade para preparar os resultados da pesquisa avançada de eDiscovery. Uma gerente de descoberta eletrônica é um membro do grupo de função de Gerenciador de descoberta eletrônica. Um eDiscovery administrador também é membro do grupo de função de gerente de descoberta eletrônica, mas foi atribuído privilégios de descoberta eletrônica adicionais. Para obter instruções sobre como atribuir permissões de administrador de descoberta eletrônica, consulte a etapa 1 em [casos de descoberta eletrônica no Centro de conformidade do & de segurança do Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Você precisa ser um gerente de descoberta eletrônica ou um administrador de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365 para preparar resultados de pesquisa para descoberta eletrônica avançada. Um gerente de descoberta eletrônica é membro do grupo de função Gerenciador de descoberta eletrônica. Um administrador de descoberta eletrônica também é membro do grupo de função Gerenciador de descoberta eletrônica, mas recebeu privilégios adicionais de descoberta eletrônica. Para obter instruções sobre como atribuir permissões de administrador de descoberta eletrônica, consulte a etapa 1 em [casos de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
-## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Etapa 1: Preparar resultados para eDiscovery avançada de pesquisa
+## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Etapa 1: preparar resultados de pesquisa para descoberta eletrônica avançada
 
-Você pode preparar os resultados de uma pesquisa que está associado a um caso de eDiscovery. Ao preparar os resultados da pesquisa para a descoberta eletrônica avançada, os dados são carregados e temporariamente armazenados em uma área de armazenamento do Windows Azure exclusiva em nuvem da Microsoft. É nesse momento que a funcionalidade de OCR extrai o texto da imagens nos resultados da pesquisa. Em [etapa 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), esse texto e a pesquisa de outra dados dos resultados são carregados ao caso no eDiscovery avançado.
+Você pode preparar os resultados de uma pesquisa associada a uma ocorrência de descoberta eletrônica. Ao preparar resultados de pesquisa para descoberta eletrônica avançada, os dados são carregados e temporariamente armazenados em uma área de armazenamento exclusiva do Windows Azure na nuvem da Microsoft. Nesse ponto, a funcionalidade do OCR extrai texto de imagens nos resultados da pesquisa. Na [etapa 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), esse texto e os outros dados de resultados da pesquisa são carregados no caso da descoberta eletrônica avançada.
   
 1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
-2. Clique em **Abrir** , ao lado do caso em que você deseja preparar os resultados da pesquisa para análise no eDiscovery avançado. 
+2. Clique em **abrir** ao lado do caso em que você deseja preparar os resultados da pesquisa para análise na descoberta eletrônica avançada. 
     
-3. Na página **inicial** para o caso, clique em **Pesquisar**e, em seguida, selecione a pesquisa.
+3. Na **Home** Page do caso, clique em **Pesquisar**e selecione a pesquisa.
     
-4. No painel de detalhes, **Analisar resultados com eDiscovery avançada**, clique em **Preparar resultados para análise**.
+4. No painel de detalhes, em **analisar resultados com descoberta eletrônica avançada**, clique em **preparar resultados para análise**.
     
     > [!NOTE]
     > Se os resultados de pesquisa tiverem mais de sete dias, você será solicitado a atualizá-los. 
   
 5. Na página **Preparar os resultados para análise**, faça o seguinte:  
     
-    - Escolha preparar itens indexados, itens indexados e não indexados ou apenas itens indexados para análise no eDiscovery avançado.
+    - Opte por preparar itens indexados, itens indexados e não indexados ou apenas itens não indexados para análise na descoberta eletrônica avançada.
     
-    - Escolha se deseja incluir todas as versões de documentos encontrados no SharePoint que atendidos os critérios de pesquisa. Essa opção aparecerá somente se as fontes de conteúdo para a pesquisa inclui sites.
+    - Escolha se deseja incluir todas as versões de documentos encontrados no SharePoint que atendam aos critérios de pesquisa. Essa opção será exibida somente se as fontes de conteúdo da pesquisa incluirem sites.
     
-    - Especifique se deseja que uma mensagem de notificação enviada (ou copiou) para uma pessoa quando o processo de preparação é concluído e os dados estão prontos para ser processado no eDiscovery avançado.
+    - Especifique se você deseja que uma mensagem de notificação seja enviada (ou copiada) para uma pessoa quando o processo de preparação for concluído e os dados estiverem prontos para serem processados na descoberta eletrônica avançada.
     
 6. Clique em **Preparar**.
     
-    Os resultados da pesquisa são preparados para análise com eDiscovery avançado.
+    Os resultados da pesquisa estão preparados para análise com descoberta eletrônica avançada.
     
-7. No painel de detalhes, clique em **Verificar status de preparação** para exibir informações sobre o processo de preparação. Quando o processo de preparação for concluído, você pode ir para o caso da eDiscovery avançada para processar os dados para análise. 
+7. No painel de detalhes, clique em **verificar status de preparação** para exibir informações sobre o processo de preparação. Quando o processo de preparação for concluído, você poderá ir para o caso em descoberta eletrônica avançada para processar os dados para análise. 
     
-## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Etapa 2: Adicionar os dados dos resultados de pesquisa para o caso da eDiscovery avançado
+## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Etapa 2: adicionar os dados dos resultados da pesquisa ao caso na descoberta eletrônica avançada
 <a name="step2"> </a>
 
-Quando a preparação for concluída, a próxima etapa é ir para descoberta eletrônica avançada e carregar os dados dos resultados de pesquisa (que foram carregados para uma área de armazenamento do Azure em nuvem da Microsoft) para o caso da eDiscovery avançado. Explicado como anteriormente, para acessar o eDiscovery avançado, você precisa ser um administrador na segurança do eDiscovery &amp; Centro de conformidade ou um administrador no eDiscovery avançado.
+Quando a preparação é concluída, a próxima etapa é usar a descoberta eletrônica avançada e carregar os dados dos resultados da pesquisa (que foram carregados para uma área de armazenamento do Azure na nuvem da Microsoft) para o caso na descoberta eletrônica avançada. Conforme explicado anteriormente, para acessar a descoberta eletrônica avançada, você precisa ser um administrador de &amp; descoberta eletrônica no centro de conformidade de segurança ou um administrador na descoberta eletrônica avançada.
   
 > [!NOTE]
-> O tempo que leva para os dados a partir de segurança &amp; Centro de conformidade esteja disponível para adicionar a um caso de eDiscovery avançado varia, dependendo do tamanho dos resultados da pesquisa de descoberta eletrônica. 
+> O tempo que leva para que os dados do centro &amp; de conformidade de segurança fique disponível para adicionar a um caso na descoberta eletrônica avançada varia, dependendo do tamanho dos resultados da pesquisa de descoberta eletrônica. 
   
 1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
-2. Clique em **Abrir** , ao lado do caso em que você deseja carregar dados no eDiscovery avançado. 
+2. Clique em **abrir** ao lado do caso para o qual você deseja carregar dados na descoberta eletrônica avançada. 
     
 3. Na página **Início** do caso, clique em **Descoberta Eletrônica Avançada**. 
     
-    ![Clique em Alternar para descoberta eletrônica avançada para abrir o caso no eDiscovery avançado](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Clique em alternar para descoberta eletrônica avançada para abrir o caso na descoberta eletrônica avançada](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    A barra de progresso **Conectando-se a descoberta eletrônica avançada** é exibida. Quando você estiver conectado ao eDiscovery avançado, é exibida uma lista de contêineres na página configuração para o caso. 
+    A barra de progresso **conectaNdo-se à descoberta eletrônica avançada** é exibida. Quando você estiver conectado à descoberta eletrônica avançada, uma lista de contêineres será exibida na página de configuração do caso. 
     
-    ![O caso é exibido no eDiscovery avançado](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![O caso é exibido na descoberta eletrônica avançada](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Desses contêineres representam os resultados da pesquisa que você preparou para análise no eDiscovery Avançado na etapa 1. Observe que o nome do contêiner tem o mesmo nome que a pesquisa no caso de segurança &amp; Centro de conformidade. Os contêineres na lista são aqueles que você preparou. Se um usuário diferente preparado os resultados da pesquisa para a descoberta eletrônica avançada, os contêineres correspondentes não serão incluídos na lista. 
+     Esses contêineres representam os resultados de pesquisa que você preparou para análise na descoberta eletrônica avançada na etapa 1. Observe que o nome do contêiner tem o mesmo nome da pesquisa no caso do centro de conformidade de segurança &amp; . Os contêineres na lista são aqueles que você preparou. Se um usuário diferente preparou resultados de pesquisa para descoberta eletrônica avançada, os contêineres correspondentes não serão incluídos na lista. 
     
-4. Para carregar os dados de resultado de pesquisa de um contêiner ao caso no eDiscovery avançada, selecione um contêiner e, em seguida, clique em **processar**.
+4. Para carregar os dados de resultado de pesquisa de um contêiner para o caso na descoberta eletrônica avançada, selecione um contêiner e clique em **processo**.
     
 ## <a name="next-steps"></a>Próximas etapas
 
-Após os resultados de uma descoberta eletrônica pesquisa são adicionados a um caso, a próxima etapa é usar as ferramentas de descoberta eletrônica avançadas para analisar os dados e identifique o conteúdo que está respondendo de forma a um caso jurídico específico. Para obter informações sobre como usar a descoberta eletrônica avançada, consulte [eDiscovery avançadas do Office 365](office-365-advanced-ediscovery.md).
+Depois que os resultados de uma pesquisa de descoberta eletrônica são adicionados a um caso, a próxima etapa é usar as ferramentas de descoberta eletrônica avançadas para analisar os dados e identificar o conteúdo que responde a um caso jurídico específico. Para obter informações sobre como usar a descoberta eletrônica avançada, confira a [descoberta eletrônica avançada do Office 365](office-365-advanced-ediscovery.md).
   
 ## <a name="more-information"></a>Mais informações
 
-Todas as mensagens de email criptografadas RMS que estão incluídas nos resultados da pesquisa serão descriptografadas quando prepará-los para análise no eDiscovery avançado. Essa capacidade de descriptografia está habilitada por padrão para membros do grupo de função de Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento do RMS descriptografar é atribuída a este grupo de função. Mantenha as seguintes coisas em mente sobre descriptografando mensagens de email:
+Todas as mensagens de email criptografadas por RMS incluídas nos resultados da pesquisa serão descriptografadas quando você prepará-las para análise na descoberta eletrônica avançada. Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de desCriptografia do RMS é atribuída a esse grupo de função. Lembre-se das seguintes coisas em relação à descriptografia de mensagens de email:
   
-- No momento, esse recurso de descriptografia não inclui conteúdo criptografado do SharePoint e OneDrive para sites corporativos. Somente as mensagens de email criptografadas RMS serão descriptografadas, quando você exportá-los.
+- Atualmente, esse recurso de descriptografia não inclui conteúdo criptografado de sites do SharePoint e do OneDrive for Business. Somente mensagens de email criptografadas por RMS serão descriptografadas quando você exportá-las.
     
-- Se uma mensagem de email criptografadas RMS tiver um anexo (por exemplo, um documento ou outra mensagem de email) que também é criptografado, será descriptografada, somente a mensagem de email de nível superior.
+- Se uma mensagem de email criptografada por RMS tiver um anexo (como um documento ou outra mensagem de email) também criptografada, somente a mensagem de email de nível superior será descriptografada.
     
-- Se você precisar impedir que alguém descriptografando mensagens criptografadas por RMS ao preparar os resultados da pesquisa para análise no eDiscovery avançado, você precisará criar um grupo de função personalizada (copiando o grupo de função de Gerenciador de eDiscovery interna) e remova o RMS Descriptografe a função de gerenciamento do grupo de função personalizada. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como membro do grupo de função personalizada.
+- Se você precisar impedir que alguém descriptografe mensagens criptografadas por RMS ao preparar resultados de pesquisa para análise na descoberta eletrônica avançada, será necessário criar um grupo de função personalizado (copiando o grupo de função de Gerenciador de descoberta eletrônica interno) e remover o RMS DesCriptografar função de gerenciamento do grupo de função personalizado. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como um membro do grupo de função personalizado.
