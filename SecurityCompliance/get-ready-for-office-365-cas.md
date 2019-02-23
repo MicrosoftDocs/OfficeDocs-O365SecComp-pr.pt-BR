@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
-ms.topic: overview
+ms.topic: article
 ms.date: 02/15/2019
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introdução ao uso do Office 365 Cloud app Security
-ms.openlocfilehash: d6049bb1a36a078c6e5e33c60928bd3ae872c33f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219891"
+ms.locfileid: "30223710"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Introdução ao Office 365 Cloud App Security
   

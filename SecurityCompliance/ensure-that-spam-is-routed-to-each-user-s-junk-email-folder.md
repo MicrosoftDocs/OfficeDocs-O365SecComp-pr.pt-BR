@@ -15,12 +15,12 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: A ação antispam padrão para os clientes do EOP é mover as mensagens de spam para a pasta lixo eletrônico dos destinatários. Para que essa ação funcione com caixas de correio locais, você deve configurar as regras de transporte do Exchange em seus servidores de borda ou Hub no local para detectar cabeçalhos de spam adicionados pelo EOP. Essas regras de transporte definem o nível de confiança de spam (SCL) usado pela propriedade SclJunkThreshold do cmdlet Set-OrganizationConfig para mover o spam para a pasta lixo eletrônico de cada caixa de correio.
-ms.openlocfilehash: d0ae9637ce95a1a8f0d4d241b3aef928c84ba3fa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221021"
+ms.locfileid: "30222880"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário
 

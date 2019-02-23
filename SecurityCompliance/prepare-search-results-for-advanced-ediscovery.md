@@ -3,7 +3,6 @@ title: Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,12 +13,12 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Saiba como preparar os resultados de uma pesquisa de conteúdo no centro de conformidade de &amp; segurança do Office 365 para análise adicional com a ferramenta de descoberta eletrônica avançada.
-ms.openlocfilehash: 52573169692c2457e51898f9f36d2c586c7e7a4b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 04de96064f400f8055d0e477bf41ed1c7cb1b35f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212671"
+ms.locfileid: "30223840"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365
 

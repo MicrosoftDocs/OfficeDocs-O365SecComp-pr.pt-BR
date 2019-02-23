@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use a filtragem de permissões de pesquisa de conteúdo para permitir que um gerente de descoberta eletrônica pesquise somente um subconjunto de caixas de correio e sites em sua organização do Office 365.
-ms.openlocfilehash: ddf474dca814a8e4dc2c8a374b8d74a17d583d27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 61db727646f4158419c4afd0201acf0fc167d382
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214641"
+ms.locfileid: "30223670"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurar permissões de filtragem para a Pesquisa de Conteúdo
 

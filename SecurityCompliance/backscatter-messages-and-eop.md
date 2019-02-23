@@ -1,9 +1,27 @@
 ---
-Título: "mensagens de dispersão e EOP" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 12/9/2016 MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal:
-- MET150 MS. AssetID: 6f64f2de-d626-48ed-8084-03cc72301aa4 MS. Collection:
-    - M365-segurança-Descrição de conformidade: "as mensagens de dispersão são as mensagens de retorno automatizadas enviadas por servidores de email, geralmente como resultado de um spam de entrada. O DNSBL dispersão é uma lista de endereços IP que enviam mensagens de dispersão. Não é uma lista de remetentes de spam e não tentamos remover nossos servidores da DNSBL dispersão. "
+title: Mnsagens backscatter e EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
+ms.collection:
+- M365-security-compliance
+description: As mensagens de dispersão são as mensagens de retorno automatizadas que são enviadas por servidores de email, geralmente como resultado de um spam de entrada. O DNSBL dispersão é uma lista de endereços IP que enviam mensagens de dispersão. Não é uma lista de remetentes de spam e não tentamos remover nossos servidores da DNSBL dispersão.
+ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222770"
 ---
-
 # <a name="backscatter-messages-and-eop"></a>Mnsagens backscatter e EOP
 
 As mensagens de dispersão são as mensagens de retorno automatizadas que são enviadas por servidores de email, geralmente como resultado de um spam de entrada. Como o Exchange Online Protection (EOP) é um serviço de filtragem de spam, as mensagens de email enviadas a destinatários inexistentes e a outros destinos suspeitos são rejeitadas pelo nosso serviço. Quando isso acontece, EOP gera uma mensagem de notificação de falha na entrega (NDR) e a entrega de volta para o "remetente". Como os spammers freqüentemente usam um endereço "de" forjado ou inválido em suas mensagens, o endereço do remetente ao qual o NDR é enviado pode resultar em uma mensagem de inspersão. Quando isso acontece, os servidores de saída associados à rede do EOP podem ser listados na lista de bloqueios de DNS (DNSBL) do dispersão. O DNSBL dispersão é uma lista de endereços IP que enviam mensagens de dispersão. Não é uma lista de remetentes de spam e não tentamos remover nossos servidores da DNSBL dispersão. 

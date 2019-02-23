@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Saiba como usar o carregamento de rede para importar arquivos PST criptografados por RMS para caixas de correio de usuário no Office 365.
-ms.openlocfilehash: 01f0783f3245e29d03e9a44113ab1e1bf63a4235
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c552e8a4d1ddc4163fefaeff18b75a4dbd5ee4cb
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216481"
+ms.locfileid: "30223640"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Usar o carregamento de rede para importar arquivos PST criptografados por RMS para o Office 365
 

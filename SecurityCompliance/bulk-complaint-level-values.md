@@ -1,9 +1,27 @@
 ---
-Título: "valores de nível de queixa em massa" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 3/5/2015 MS. Audience: profissionais MS. tópico: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 MS. AssetID: a5b03b3c-37dd-429E-8e9b-2c1b25031794 MS. Collection:
-    - M365 – descrição da conformidade com segurança: "os remetentes em massa variam em suas tternss de envio, criação de conteúdo e aquisição de lista. Alguns são bons remetentes em massa que enviam mensagens desejadas com conteúdo relevante para seus assinantes. Essas mensagens geram poucas reclamações de destinatários. Outros remetentes em massa enviam mensagens não solicitadas que parecem muito parecidas com spam e geram muitas queixas de destinatários. Para distinguir esses tipos de remetentes em massa, as mensagens de email em massa recebem uma classificação de BCL (nível de reclamação em massa). A classificação de BCL varia de 1 a 9, dependendo da probabilidade de o remetente de mensagens em massa gerar queixas. Um remetente que tenha uma classificação da BCL 9 provavelmente gerará muitas queixas de destinatários, enquanto uma classificação da BCL 3 será improvável de gerar muitas queixas. A Microsoft usa fontes internas e de terceiros para identificar emails em massa e determinar a BCL apropriada. Essa classificação é exposta no cabeçalho X-Microsoft-antispam de cada mensagem. Para obter mais informações sobre esse cabeçalho de mensagem, consulte anti-spam Message Headers.
+title: Valores de nível de reclamação em massa
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 3/5/2015
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
+ms.collection:
+- M365-security-compliance
+description: Os emails em massa variam em suas tternss de envio, criação de conteúdo e aquisição de lista. Alguns são bons remetentes em massa que enviam mensagens desejadas com conteúdo relevante para seus assinantes. Essas mensagens geram poucas reclamações de destinatários. Outros remetentes em massa enviam mensagens não solicitadas que parecem muito parecidas com spam e geram muitas queixas de destinatários. Para distinguir esses tipos de remetentes em massa, as mensagens de email em massa recebem uma classificação de BCL (nível de reclamação em massa). A classificação de BCL varia de 1 a 9, dependendo da probabilidade de o remetente de mensagens em massa gerar queixas. Um remetente que tenha uma classificação da BCL 9 provavelmente gerará muitas queixas de destinatários, enquanto uma classificação da BCL 3 será improvável de gerar muitas queixas. A Microsoft usa fontes internas e de terceiros para identificar emails em massa e determinar a BCL apropriada. Essa classificação é exposta no cabeçalho X-Microsoft-antispam de cada mensagem. Para obter mais informações sobre esse cabeçalho de mensagem, consulte anti-spam Message Headers.
+ms.openlocfilehash: 9947c0f36681126748e8617d67116c6932209760
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222920"
 ---
-
 # <a name="bulk-complaint-level-values"></a>Valores de nível de reclamação em massa
 
 Os emails em massa variam em seus padrões de envio, criação de conteúdo e práticas de aquisição de lista. Alguns são bons remetentes em massa que enviam mensagens desejadas com conteúdo relevante para seus assinantes. Essas mensagens geram poucas reclamações de destinatários. Outros remetentes em massa enviam mensagens não solicitadas que parecem muito parecidas com spam e geram muitas queixas de destinatários. Para distinguir esses tipos de remetentes em massa, as mensagens de email em massa recebem uma classificação de BCL (nível de reclamação em massa). A classificação de BCL varia de 1 a 9, dependendo da probabilidade de o remetente de mensagens em massa gerar queixas. Um remetente que tenha uma classificação da BCL 9 provavelmente gerará muitas queixas de destinatários, enquanto uma classificação da BCL 3 será improvável de gerar muitas queixas. A Microsoft usa fontes internas e de terceiros para identificar emails em massa e determinar a BCL apropriada. Essa classificação é exposta no cabeçalho **X-Microsoft-antispam** de cada mensagem. Para obter mais informações sobre esse cabeçalho de mensagem, consulte [anti-spam Message Headers](anti-spam-message-headers.md). 

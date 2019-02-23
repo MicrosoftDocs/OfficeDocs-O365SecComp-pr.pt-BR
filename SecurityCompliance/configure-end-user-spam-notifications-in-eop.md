@@ -1,9 +1,26 @@
 ---
-Título: "configurar notificações de spam do usuário final no EOP" MS. Author: Krowley Author: kccross Manager: laurawi MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 MS. AssetID: e9947db5-1dd1-4493-872D-7362b24c7ba0 MS. Collection:
-    - M365-segurança-Descrição da conformidade: "você pode configurar notificações de spam para o usuário final para a política de filtro de conteúdo padrão da empresa ou para políticas de filtro de conteúdo personalizadas que são aplicadas a domínios."
+title: Configurar as notificações de spam para o usuário final no EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
+ms.collection:
+- M365-security-compliance
+description: Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios.
+ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222970"
 ---
-
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar as notificações de spam para o usuário final no EOP
   
 > [!IMPORTANT]

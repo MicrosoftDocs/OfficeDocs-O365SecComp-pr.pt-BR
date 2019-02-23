@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: Ao procurar informações confidenciais no conteúdo, você precisa descrevê-las no que é chamado de regra. A Prevenção contra perda de dados (DLP) inclui regras para os tipos de informação confidencial mais comuns que você pode usar imediatamente. Para usar essas regras, você precisa incluí-las em uma política. Se quiser ajustar essas regras internas para atender às necessidades específicas da sua organização, basta criar um tipo de informação confidencial personalizado. Este tópico mostra como personalizar o arquivo XML que contém a coleção de regras existente para detectar um intervalo maior de possíveis informações de cartão de crédito.
-ms.openlocfilehash: 37731eff5af1d37da6e4aaf9fbb93159378e498c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 9014a2270947fb97edc1ce834985fbd084bc19e6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857269"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215441"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar um tipo de informação confidencial interno
 

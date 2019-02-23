@@ -14,63 +14,63 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-description: Se um usuário continuamente envia mensagens de email do Office 365 é classificada como spam, eles serão bloqueados enviem mensagens qualquer mais.
-ms.openlocfilehash: 6f6f4504a9c79463aadc21f2eaeadcd769e8b151
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+description: Se um usuário envia continuamente mensagens de email do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens.
+ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614395"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223080"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Remover um usuário, domínio ou endereço IP de uma lista de bloqueio após enviar email de spam
 
-Se um usuário continuamente envia mensagens de email do Office 365 é classificada como spam, eles serão bloqueados enviem mensagens qualquer mais. O usuário será listado no serviço como um remetente de saída inválido e receberá um não-entrega relatório (NDR) declarando:
+Se um usuário envia continuamente mensagens de email do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens. O usuário será listado no serviço como um remetente de saída incorreto e receberá uma notificação de falha na entrega (NDR) que diz:
 
-- Sua mensagem não pôde ser entregue porque você não foram reconhecido como um remetente válido. O motivo mais comum para que isso é que o seu endereço de email é suspeito de envio de spam e ele não tem permissão para enviar mensagens fora da sua organização. Para obter assistência, entre em contato com seu administrador de email.  Servidor remoto retornou '550 5.1.8 acesso negado, remetente saída ruim'
+- Sua mensagem não pôde ser entregue porque você não foi reconhecido como um remetente válido. O motivo mais comum para isso é que seu endereço de email é suspeito de enviar spam e não é mais permitido enviar mensagens fora da sua organização. Entre em contato com seu administrador de email para obter assistência.  O servidor remoto retornou ' 550 5.1.8 acesso negado, remetente de saída inválido '
 
-Os administradores de Inquilino também receberá um alerta indicando que o usuário tiver sido protegido enviem todas as mensagens de saída mais.
+Os administradores de locatários também receberão um alerta informando que o usuário foi impedido de enviar mais mensagens de saída.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 <a name="sectionSection0"> </a>
 
 Tempo estimado para conclusão: 5 minutos
   
-Você precisa ter permissões antes de executar este procedimento ou procedimentos. Para ver quais permissões você precisa, consulte a "entrada de antispam no tópico [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+Você precisa receber permissões antes de executar este procedimento ou procedimentos. Para ver de que permissões você precisa, consulte o tópico "entrada antispam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-O procedimento a seguir também pode ser executado via o PowerShell remoto. Use o cmdlet Get-BlockedSenderAddress para obter a lista de usuários restritos e Remove-BlockedSenderAddress para remover a restrição. Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+O procedimento a seguir também pode ser executado por meio do PowerShell remoto. Use o cmdlet Get-BlockedSenderAddress para obter a lista de usuários restritos e remove-BlockedSenderAddress para remover a restrição. Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
-## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Remova as restrições de uma conta de email do Office 365 bloqueada
+## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Remover restrições para uma conta de email bloqueada do Office 365
 
-Conclusão da tarefa no Centro de conformidade (SCC) do & de segurança do Office 365. Para obter mais detalhes sobre SCC, [vá para o Centro de conformidade do & de segurança do Office 365](go-to-the-securitycompliance-center.md) . Você precisa estar no **Gerenciamento da organização** ou grupo de funções de **Segurança de administrador** para executar essas funções. [Vá para permissões no Centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md) para obter mais detalhes sobre os grupos de função SCC.
+Você conclui essa tarefa no centro de conformidade do & de segurança do Office 365 (SCC). [Vá para o centro de conformidade do & de segurança do Office 365](go-to-the-securitycompliance-center.md) para obter mais detalhes sobre SCC. Você precisa estar no grupo de função **Gerenciamento da organização** ou administrador de **segurança** para executar essas funções. [Vá até permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md) para obter mais detalhes sobre grupos de função SCC.
 
-1. Usando uma conta de trabalho ou da escola que tenha privilégios de administrador global do Office 365, inscreva-se no Centro de conformidade e segurança do Office 365 e na lista à esquerda, expanda **Gerenciamento de ameaça**, escolha a **revisão**e escolha **restrito Os usuários**.
+1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global do Office 365, entre no centro de conformidade e segurança do Office 365 e, na lista à esquerda, expanda **Gerenciamento de ameaças**, escolha **revisão**e, em seguida, escolha **restrito Usuários**.
     
     > [!TIP]
-    > Para ir diretamente para a página **Usuários restritos** (anteriormente conhecida como o Centro de ação) na segurança &amp; Centro de conformidade, use esta URL: gt _[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Para ir diretamente para a página **usuários restritos** (anteriormente conhecida como central de ações) no centro &amp; de conformidade de segurança, use esta URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
-2. Esta página conterá a lista de usuários que foram bloqueados de envio de e-mail para fora da sua organização.  Encontre o usuário que você deseja remover restrições em e clique em **Desbloquear**.
+2. Esta página conterá a lista de usuários que foram impedidos de enviar emails para fora da sua organização.  Localize o usuário para o qual deseja remover as restrições e clique em **desbloquear**.
 
 3. Clique em **Sim** para confirmar a alteração. 
     
 > [!NOTE]
-> Há um limite no número de vezes que uma conta pode ser desbloqueada pelo administrador de locatário. Se o limite de um usuário foi excedido, uma mensagem de erro é exibida. Você precisará contatar o suporte para desbloquear o usuário.</br></br> Pode levar até 1 hora antes que o usuário seja desbloqueado.
+> Há um limite para o número de vezes que uma conta pode ser desbloqueada pelo administrador de locatários. Se o limite de um usuário foi excedido, uma mensagem de erro será exibida. Em seguida, será necessário entrar em contato com o suporte para desbloquear o usuário.<br/><br/> Pode levar até 1 hora para que o usuário seja desbloqueado.
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueio de terceiros
 
-Exchange Online Protection também usa a listas de bloqueio de terceiros para ajudar a tomar decisões na filtragem de spam. Usuários, sites, domínios e endereços IP podem ser adicionados para bloquear listas apenas para que aparecem em uma mensagem de spam. Como o administrador do Office 365, você deve tentar obter esses objetos removidos dos provedores de lista de softwares de terceiros se eles pertencem a você.
+O Exchange Online Protection também usa listas de bloqueio de terceiros para ajudar a tomar decisões sobre filtragem de spam. Usuários, sites, domínios e endereços IP podem ser adicionados para bloquear listas apenas para aparecer em uma mensagem de spam. Como o administrador do Office 365, você deve tentar obter esses objetos removidos dos provedores de lista de terceiros se eles pertencem a você.
 
 > [!NOTE]
-> Se alguém de fora do Office 365 não pode enviar mensagens à sua conta do Office 365, sua conta pode ficar em lista de remetentes bloqueados externo. Usuários que estão fora do Office 365 podem tentar removem-se usando o [portal de autoatendimento de retirada da lista](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
+> Se alguém fora do Office 365 não puder enviar mensagens para a sua conta do Office 365, sua conta poderá estar na lista de remetentes bloqueados externos. Os usuários fora do Office 365 podem tentar remover a si próprios usando o [portal de Can-lista](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis)de autoatendimento. 
 
 ## <a name="for-more-information"></a>Para saber mais
 
-[Respondendo a uma conta de email comprometido](responding-to-a-compromised-email-account.md)
+[Respondendo a uma conta de email comprometida](responding-to-a-compromised-email-account.md)
 
 [Configurar a política de spam de saída](configure-the-outbound-spam-policy.md)
   
-[Pool de alto risco de entrega para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
+[Pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Permissões no Centro de conformidade de & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
+[Permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
 
   
 

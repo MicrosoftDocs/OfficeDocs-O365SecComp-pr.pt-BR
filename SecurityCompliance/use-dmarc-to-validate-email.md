@@ -3,7 +3,6 @@ title: Usar DMARC para validar emails no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,26 +11,26 @@ search.appverid:
 - MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
-description: Saiba como configurar a autenticação baseada em domínio de mensagem, relatórios e conformidade (DMARC) para validar as mensagens enviadas de sua organização do Office 365.
-ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+description: Saiba como configurar a autenticação, o relatório e a conformidade de mensagens baseadas em domínio (DMARC) para validar as mensagens enviadas de sua organização do Office 365.
+ms.openlocfilehash: f96fbe147a14087ee86bca2b9fae04d281ccdbec
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750040"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223720"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar emails no Office 365
 
-Autenticação de mensagem, relatórios e conformidade ([DMARC](https://dmarc.org)) baseada em domínio funciona com o Framework de política do remetente (SPF) e email de identificado DomainKeys (DKIM) para autenticar remetentes de email e certifique-se de que os sistemas de email de destino deve confiar mensagens enviadas de seu domínio. Implementar DMARC com SPF e DKIM fornece proteção adicional contra email falsificação e phishing. Ajuda DMARC sistemas de recebimento de email determinam o que fazer com que as mensagens enviadas a partir de seu domínio SPF fail ou DKIM verifica.
+A autenticação, geração de relatórios e conformidade da mensagem baseada em domínio ([DMARC](https://dmarc.org)) funciona com a SPF (Sender Policy Framework) e o DomainKeys identificado mail (DKIM) para autenticar remetentes de email e garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio. Implementar o DMARC com SPF e DKIM fornece proteção adicional contra falsificação e emails de phishing. O DMARC ajuda a receber sistemas de email determinam o que fazer com as mensagens enviadas do seu domínio que falham nas verificações de SPF ou DKIM.
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>Como o SPF e o DMARC trabalham juntos para proteger o email no Office 365?
 <a name="SPFandDMARC"> </a>
 
  Uma mensagem de email pode conter vários endereços originadores ou de remetente. Esses endereços são usados com finalidades diferentes. Por exemplo, considere esses endereços: 
   
-- **"Mail From" endereço**: identifique o remetente e especifica para onde enviar avisos de retorno, se houver problemas com a entrega da mensagem, como os avisos de falha na entrega. Isso é exibida na parte de envelope de uma mensagem de email e não é geralmente exibido pelo seu aplicativo de email. Às vezes, isso é chamado o endereço de 5321.MailFrom ou o endereço do caminho de ordem inversa.
+- **Endereço "email de"**: identifica o remetente e especifica para onde enviar avisos de retorno se ocorrerem problemas com a entrega da mensagem, como notificações de falha na entrega. Isso aparece na parte do envelope de uma mensagem de email e geralmente não é exibido pelo seu aplicativo de email. Isso às vezes é chamado de endereço 5321. MailFrom ou o endereço de caminho inverso.
     
-- **Endereço "De"**: O endereço exibido como o endereço de pelo seu aplicativo de email. Esse endereço identifica o autor do email. Ou seja, a caixa de correio da pessoa ou do sistema responsável pela elaboração a mensagem. Às vezes, isso é chamado de endereço de 5322.From.
+- **Endereço "de"**: o endereço exibido como endereço de pelo seu aplicativo de email. Esse endereço identifica o autor do email. Ou seja, a caixa de correio da pessoa ou do sistema responsável por gravar a mensagem. Isso às vezes é chamado de endereço 5322. from.
     
 O SPF usa um registro TXT DNS para fornecer uma lista de endereços IP de envio autorizados para um determinado domínio. Normalmente, só são executadas verificações de SPF contra o endereço 5321.MailFrom. Isso significa que o endereço 5322.From não é autenticado ao usar SPF por si só. Isso possibilita que exista um cenário em que um usuário recebe uma mensagem que passa por uma verificação de SPF mas tem um endereço de remetente 5322.From falso. Por exemplo, considere esta transcrição SMTP:
   
@@ -141,13 +140,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 
 em que:
   
-- *é o domínio que você queira proteger.* Por padrão, o registro protege o email do domínio e todos os subdomínios. Por exemplo, se você especificar \_dmarc.contoso.com, em seguida, DMARC protege o email do domínio e todos os subdomínios, como housewares.contoso.com ou plumbing.contoso.com. 
+- *domínio* é o domínio que você deseja proteger. Por padrão, o registro protege o email do domínio e de todos os subdomínios. Por exemplo, se você especificar \_dMarc.contoso.com, o dMarc protegerá o email do domínio e de todos os subdomínios, como housewares.contoso.com ou Plumbing.contoso.com. 
     
-- *TTL* deve sempre ser o equivalente de uma hora. A unidade usada para o TTL, ambos horas (1 hora), minutos (60 minutos) ou segundos (3.600 segundos), irá variar dependendo do registrador para o seu domínio. 
+- *TTL* deve sempre ser o equivalente de uma hora. A unidade usada para TTL, tanto horas (1 hora), minutos (60 minutos) ou segundos (3600 segundos), variará dependendo do registrador de seu domínio. 
     
-- *pct = 100* indica que esta regra deve ser usada para 100% de email.
+- o *PCT = 100* indica que esta regra deve ser usada para 100% de email.
     
-- *diretiva* Especifica qual diretiva você deseja que o servidor de recebimento a seguir se DMARC falhar. Você pode definir a política como nenhum, quarentena, ou rejeitar. 
+- *Policy* especifica qual política você deseja que o servidor de recebimento siga se o DMARC falhar. Você pode definir a política como nenhuma, quarentena ou rejeitar. 
     
 Para saber mais sobre quais opções usar, familiarize-se com os conceitos em [Práticas recomendadas para implementar o DMARC no Office 365](use-dmarc-to-validate-email.md#DMARCbestpractices).
   
@@ -195,7 +194,7 @@ Você pode implementar o DMARC gradualmente sem causar impacto no restante de se
 ## <a name="how-office-365-handles-outbound-email-that-fails-dmarc"></a>Como o Office 365 lida com emails de saída que não passam na verificação do DMARC
 <a name="outbounddmarcfail"> </a>
 
-Se uma mensagem é a saída do Office 365 e falha DMARC e você tiver definido a política como p = quarentena ou p = reject, a mensagem é encaminhada pelo [pool de alto risco de entrega para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md). Não há nenhuma substituição para emails de saída.
+Se uma mensagem for de saída do Office 365 e falhar DMARC e você tiver definido a política como p = Quarantine ou p = Reject, a mensagem será roteada através do [pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md). Não há substituição para email de saída.
   
 Se você publicar uma política de rejeição (p=reject) do DMARC, nenhum outro cliente no Office 365 poderá imitar (spoof) seu domínio, porque as mensagens não conseguirão passar pelas verificações de SPF ou DKIM para seu domínio durante a retransmissão de uma mensagem de saída pelo serviço. No entanto, se você publicar uma política de rejeição do DMARC, mas não tiver todos os seus emails autenticados pelo Office 365, algumas mensagens poderão ser marcadas como spam para emails de entrada (conforme descrito acima), ou poderão ser rejeitadas, caso você não publique o SPF e tente retransmiti-las pelo serviço. Isso acontece, por exemplo, se você esquecer de incluir alguns dos endereços IP para servidores e aplicativos que enviam emails em nome do seu domínio ao formar o registro TXT do DMARC.
   
@@ -222,7 +221,7 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-Maioria, ou todos os email primeiro será roteada para mail.contoso.com desde que é o principal MX, e, em seguida, email é roteado para o EOP. Em alguns casos, você talvez nem mesmo listar EOP como um registro MX em todas as e simplesmente ligar conectores façam o roteamento seu email. EOP não precisa ser a primeira entrada de validação de DMARC a ser feito. Apenas garante a validação, como podemos não terá certeza de que todos os servidores em-local/não-O365 fará DMARC verificações.  DMARC está qualificado para ser imposto para o domínio do cliente (não servidor) quando você configurar o registro TXT DMARC, mas é até o servidor de recebimento realmente fazer a imposição.  Se você configurar o EOP como o servidor de recebimento, EOP faz a imposição de DMARC.
+Todos, ou a maioria, os emails serão roteados primeiro para o mail.contoso.com, já que é o MX principal, e, em seguida, os emails serão roteados para o EOP. Em alguns casos, você pode nem mesmo listar EOP como um registro MX e simplesmente conectar conectores para encaminhar seu email. EOP não precisa ser a primeira entrada para a validação de DMARC ser feita. Só garante a validação, já que não podemos ter certeza de que todos os servidores locais/não do O365 farão verificações do DMARC.  O DMARC está qualificado para ser aplicado ao domínio de um cliente (não ao servidor) quando você configura o registro TXT do DMARC, mas está no servidor de recebimento para realmente realizar a aplicação.  Se você configurar o EOP como o servidor de recebimento, então o EOP fará a imposição de DMARC.
   
 ## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection8"> </a>

@@ -10,19 +10,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.custom: ''
 ms.assetid: ''
 search.appverid:
 - MET150
 description: Determine se sua organização implementará os rótulos como parte do plano do RGPD.
-ms.openlocfilehash: 82eec50284f0aa4b0b74346c9fbbfc717dc08d07
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 361637c179b1441bcb132518c442f2ad90b19c54
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272246"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214651"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Desenvolver um esquema de classificação para dados pessoais
 

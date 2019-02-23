@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Atribua as permissões necessárias para executar tarefas relacionadas à descoberta eletrônica usando o &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 44992697af8ba27f50566398c3f79095653ea4c0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c4dcbf51282aa2887fd7d5032eb8587b5e9d56d7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219521"
+ms.locfileid: "30223270"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Atribuir permissões de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365
 

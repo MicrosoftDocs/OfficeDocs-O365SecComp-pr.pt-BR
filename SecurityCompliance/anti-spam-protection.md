@@ -1,10 +1,27 @@
 ---
-Título: "proteção antispam de email do Office 365" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 6/29/2018 MS. Audience: admin MS. tópico: visão geral MS. Service: O365-seccomp localization_priority: normal Search. appverid:
+title: Proteção antispam de emails do Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - MET150
-- MOE150 MS. AssetID: 6a601501-a6a8-4559-b2e7-56b59c96a586 MS. Collection:
-    - Descrição de conformidade com segurança M365: "Saiba mais sobre as configurações e filtros antispam que ajudarão você a evitar spam no Exchange Online e no Office 365. Obtendo muito spam no Office 365? Você pode personalizar os filtros de spam e as configurações de política antispam. "
+- MOE150
+ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
+description: Saiba mais sobre as configurações e filtros antispam que ajudarão você a evitar spam no Exchange Online e no Office 365. Obtendo muito spam no Office 365? Você pode personalizar suas configurações de política antispam e filtros de spam.
+ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223420"
 ---
-
 # <a name="office-365-email-anti-spam-protection"></a>Proteção antispam de emails do Office 365
 
 Você está preocupado com muito spam no Office 365? Criamos vários filtros de spam no serviço do Office 365 ou do Exchange Online Protection (EOP), para que seu email fique protegido do momento em que você recebe a primeira mensagem. Para ajudar a evitar spam no Office 365, talvez você queira alterar uma configuração de proteção para lidar com um problema específico em sua organização, digamos que você esteja recebendo muitos spams de um remetente específico, por exemplo, ou simplesmente ajustar suas configurações para que elas sejam adaptado para atender melhor às necessidades da sua organização. Para fazer isso, você pode alterar as configurações antispam no centro de conformidade de segurança &amp; do Office 365.

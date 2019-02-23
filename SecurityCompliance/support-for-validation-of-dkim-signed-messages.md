@@ -3,7 +3,6 @@ title: Suporte para validação de mensagens assinadas por DKIM
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: Saiba mais sobre a validação do DKIM assinado mensagens no Exchange Online Protection e o Exchange Online
-ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+description: Saiba mais sobre a validação de mensagens assinadas do DKIM no Exchange Online Protection e no Exchange Online
+ms.openlocfilehash: 7b40769e18c01199669043c42031987695bba639
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255826"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223320"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Suporte para validação de mensagens assinadas por DKIM
 
@@ -28,6 +27,6 @@ DKIM valida uma mensagem assinada digitalmente que aparece no cabeçalho DKIM-As
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Administradores podem criar Exchange [regras de fluxo de correio](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (também conhecido como regras de transporte) nos resultados de uma validação DKIM para filtrar ou encaminhar mensagens como necessário. 
+Os administradores podem criar [regras de fluxo](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) de emails do Exchange (também conhecidas como regras de transporte) nos resultados de uma validação de DKIM para filtrar ou rotear mensagens, conforme necessário. 
   
 

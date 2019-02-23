@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 1/15/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: O Centro de Segurança e Conformidade do Office 365 fornece recomendações para governança de dados com base na configuração atual da sua organização e permite que você configure as coisas com apenas alguns cliques. Algumas dessas recomendações detectam conteúdo específico em sua organização e, em seguida, fornecem etapas recomendadas para gerenciar esse conteúdo. Por exemplo, uma recomendação pode detectar itens que contenham conteúdo essencial para os negócios (como privilégio advogado-cliente ou informações do NDA) e permitir que você aplique automaticamente um rótulo de retenção a esses itens para garantir que eles sejam classificados e retidos conforme necessário. Este tópico lista as recomendações de controle de dados que você pode ver e descreve qual conteúdo é detectado para acionar cada um deles.
-ms.openlocfilehash: a3f803105ea5c2626c8c2a26ad898df5f45af2f0
-ms.sourcegitcommit: c7737903ff2e1d047682ee61f7ac21b0bdd1c6fd
+ms.openlocfilehash: 24e41501ed11d54e60f8b3d9f27a2e96f3cde112
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "28263934"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220431"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Como o conteúdo é identificado para recomendações de governança de dados
 

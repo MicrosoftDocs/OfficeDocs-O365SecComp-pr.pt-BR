@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para administradores: saiba como importar em massa os arquivos PST da sua organização para as caixas de correio do Office 365 copiando arquivos PST para um disco rígido e, em seguida, enviá-los para a Microsoft. '
-ms.openlocfilehash: 7a03f7b9092cf75a468f9ddad514c7508cfc006e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 44ca6e58d9273c73a807ba0b186c47721949c6f6
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217291"
+ms.locfileid: "30223680"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Usar o envio de unidade para importar arquivos PST da sua organização para o Office 365
 

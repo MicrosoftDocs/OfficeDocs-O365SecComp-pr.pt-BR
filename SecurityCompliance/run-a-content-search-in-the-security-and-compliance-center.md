@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar caixas de correio, sites do SharePoint Online e locais do onedrive for Business. '
-ms.openlocfilehash: 82e8d2338fe003f2c37cd99994d8f71db2716da8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219281"
+ms.locfileid: "30223730"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Executar uma pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
 

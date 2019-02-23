@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor as configurações de proteção, como criptografia ou marcas d'água no conteúdo rotulado.
-ms.openlocfilehash: 48d66a93c82a7430bc34373975d385ebc7bfbf9a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706162"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220941"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 

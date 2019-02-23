@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Saiba mais sobre itens não indexados no Exchange e no SharePoint que você pode incluir em uma pesquisa de conteúdo executada por meio &amp; do centro de conformidade de segurança do Office 365. '
-ms.openlocfilehash: 028a0468e352121c64e12fbec209658dc32f9bbe
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f307f3ecff1bb63c30ff6ce1f792901475fe2c4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219491"
+ms.locfileid: "30223430"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Itens parcialmente indexados na Pesquisa de Conteúdo do Office 365
 

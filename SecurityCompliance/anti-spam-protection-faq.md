@@ -1,9 +1,27 @@
 ---
-Título: "perguntas FREQUENTEs sobre a proteção antispam" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 12/9/2016 MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal. appverid:
-- MET150 MS. AssetID: c534a35d-b121-45da-9d0a-ce738ce51fce MS. Collection:
-    - M365-segurança-Descrição da conformidade: "Este tópico fornece perguntas frequentes e respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Exchange Online Protection (EOP). "
+title: PERGUNTAS FREQUENTEs sobre proteção antispam
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223050"
 ---
-
 # <a name="anti-spam-protection-faq"></a>PERGUNTAS FREQUENTEs sobre proteção antispam
 
 Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP). 

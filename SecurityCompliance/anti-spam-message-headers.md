@@ -1,9 +1,26 @@
 ---
-Título: "cabeçalhos de mensagens antispam" MS. Author: Krowley Author: kccross Manager: laurawi MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp MS. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 MS. AssetID: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db MS. Collection:
-    - M365-segurança-Descrição da conformidade: "quando o Exchange Online Protection verifica uma mensagem de email de entrada, ele insere o cabeçalho **X-Forefront-antispam-Report** em cada mensagem."
+title: Cabeçalhos de mensagem antispam
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
+ms.collection:
+- M365-security-compliance
+description: Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem.
+ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223580"
 ---
-
 # <a name="anti-spam-message-headers"></a>Cabeçalhos de mensagem antispam
 
 Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem. Os campos nesse cabeçalho podem ajudar a fornecer aos administradores informações sobre a mensagem e sobre como ela foi processada. Os campos no cabeçalho **X-Microsoft-Antispam** fornecem mais informações sobre email em massa e phishing. Além esses dois cabeçalhos, o Proteção do Exchange Online também insere resultados de autenticação de email para cada mensagem que ele processa no cabeçalho **Authentication-results**.

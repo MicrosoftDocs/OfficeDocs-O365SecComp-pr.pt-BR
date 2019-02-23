@@ -3,7 +3,6 @@ title: Pesquisa e marcação
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Na descoberta eletrônica avançada, o módulo de pesquisa e marcação permite pesquisar, Visualizar e organizar os documentos em seu caso. Atualmente, este módulo está no beta.
-ms.openlocfilehash: d5fdf12621bfb2064f3782b947fa4be386d544d1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219201"
+ms.locfileid: "30222960"
 ---
 # <a name="search-and-tagging"></a>Pesquisa e marcação
 

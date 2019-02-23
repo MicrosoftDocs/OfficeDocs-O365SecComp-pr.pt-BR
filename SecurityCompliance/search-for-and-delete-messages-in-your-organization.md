@@ -3,7 +3,6 @@ title: Procurar e excluir mensagens de email na sua organização do Office 365-
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use o recurso de pesquisa e limpeza no centro de conformidade &amp; de segurança do Office 365 para pesquisar e excluir uma mensagem de email de todas as caixas de correio em sua organização.
-ms.openlocfilehash: 0f69759a0e73f8f89eb686c6472e5e22567fa534
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ecdacd4e484d6de267e029b8e3fcdafc9b1fce4d
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219451"
+ms.locfileid: "30223610"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Procurar e excluir mensagens de email na sua organização do Office 365-ajuda do administrador
 

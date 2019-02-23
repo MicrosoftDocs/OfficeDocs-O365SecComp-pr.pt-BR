@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 description: Este tópico explica como configurar os fluxos dos processos empresariais para automatizar a retenção por meio de eventos usando a API REST do Microsoft 365.
-ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a43fb7dd2c87879ec5c89c48e830c8c205eeedec
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740863"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220511"
 ---
 # <a name="automate-event-based-retention"></a>Automatizar retenção baseada em eventos
 

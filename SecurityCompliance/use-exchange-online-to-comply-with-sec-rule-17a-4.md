@@ -3,21 +3,20 @@ title: Usar o Exchange Online e o Centro de Conformidade e Segurança para atend
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: A Cohasset Associates comprovou que, quando o Exchange Online e o Centro de Conformidade e Segurança são configurados conforme recomendado, eles atendem aos requisitos de armazenamento relevantes das normas 1.31(c)-(d) da CFTC, 4511 da FINRA e 17a-4 da SEC. A avaliação está disponível para baixar.
-ms.openlocfilehash: 0b81c99eeff65e5e9d98c6167d8e8f52b9535d98
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: a50771b7565e328b2a288a2824706626c82b026c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610558"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223030"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar o Exchange Online e o Centro de Conformidade e Segurança para atender à norma 17a-4 da SEC
 

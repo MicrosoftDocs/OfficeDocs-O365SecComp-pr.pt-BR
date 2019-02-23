@@ -1,9 +1,26 @@
 ---
-Título: "proteção contra falsificação no Office 365" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 12/06/2018 MS. Audience: profissionais MS. Topic: artigo MS. Service: O365-seccomp localization_priority: normal Search. appverid:
-- MET150 MS. AssetID: d24bb387-c65d-486e-93E7-06a4f1a436c0 MS. Collection:
-    - M365-segurança-Descrição de conformidade: "Este artigo descreve como o Office 365 diminui contra ataques de phishing que usam domínios de remetente forjados, ou seja, domínios falsificados. Ele realiza isso analisando as mensagens e bloqueando as que podem ser autenticadas neithe usando métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Esta alteração está sendo implementada para reduzir o número de ataques de phishing que as organizações do Office 365 estão expostas a. "
+title: Proteção antifalsificação no Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/06/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
+ms.collection:
+- M365-security-compliance
+description: Este artigo descreve como o Office 365 diminui contra ataques de phishing que usam domínios de remetente forjados, ou seja, domínios falsificados. Ele realiza isso analisando as mensagens e bloqueando as que podem ser autenticadas neithe usando métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Esta alteração está sendo implementada para reduzir o número de ataques de phishing que as organizações do Office 365 estão expostas.
+ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223870"
 ---
-
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
 Este artigo descreve como o Office 365 diminui contra ataques de phishing que usam domínios de remetente forjados, ou seja, domínios falsificados. Ele realiza isso analisando as mensagens e bloqueando as que não podem ser autenticadas usando métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração está sendo implementada para reduzir o número de ataques de phishing aos quais os clientes estão expostos.

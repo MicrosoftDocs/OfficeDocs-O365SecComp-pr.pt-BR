@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'A maneira mais fácil e mais comum de começar as políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 58ff52e0fdcd1579985d05d06887d6aca2bb2940
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 14582a6507d271bc569aeb0c5456a662962d20a9
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220471"
+ms.locfileid: "30223740"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Criar, testar e ajustar uma política DLP
 
-**Autor da entidade** </br>
-Paul Cunningham, MVP da Microsoft </br>
-[Prática 365](https://practical365.com/) </br>
-[@Practical365](https://twitter.com/practical365)</br>
+**Autor da entidade** <br/>
+Paul Cunningham, MVP da Microsoft <br/>
+[Prática 365](https://practical365.com/) <br/>
+[@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
 A prevenção de perda de dados é um recurso de conformidade do Office 365 projetado para ajudar sua organização a impedir a exposição intencional ou acidental de informações confidenciais a partes indesejadas. O DLP tem suas raízes no Exchange Server e no Exchange Online e também se aplica ao SharePoint Online e ao OneDrive for Business.
