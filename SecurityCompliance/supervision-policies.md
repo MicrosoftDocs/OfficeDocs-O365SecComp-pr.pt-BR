@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Noções básicas sobre políticas de supervisão no Office 365
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090973"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214111"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -215,7 +215,7 @@ Use os relatórios de supervisão para ver a atividade de análise no nível de 
   
 ### <a name="how-to-use-the-report"></a>Como usar o relatório
 
-Quando uma política de supervisão identifica uma mensagem de comunicação para revisão, o email é entregue na pasta de supervisão do revisor no Outlook e no Outlook Web App. Este relatório lista o nome de cada política e o número de comunicações em cada estágio no processo de revisão.
+Quando uma política de supervisão identifica uma mensagem de comunicação para revisão, o email é entregue na pasta de supervisão do revisor no Outlook e no Outlook na Web (anteriormente conhecido como Outlook Web App). Este relatório lista o nome de cada política e o número de comunicações em cada estágio no processo de revisão.
   
 Use o relatório para:
   
@@ -228,7 +228,7 @@ Aqui está uma divisão dos valores que podem ser exibidos na coluna **tipo de m
   
 |**Tipo de marca**|**O que significa**|
 |:-----|:-----|
-| Não reVisado | O número de emails que ainda não foram revisados. Esses emails estão aguardando revisão no painel de supervisão do Office 365 ou na pasta de supervisão do revisor no Outlook/Outlook Web App.|
+| Não reVisado | O número de emails que ainda não foram revisados. Estes emails estão aguardando revisão no painel de supervisão do Office 365 ou na pasta de supervisão do revisor no Outlook/Outlook na Web
 | Com | O número de emails revisados e marcados como em conformidade. Essas mensagens ainda precisam ser resolvidas. |
 | Questionáveis | O número de emails revisados e marcados como questionáveis. Isso atua como um sinalizador; outros revisores podem ajudar a verificar se um email precisa de investigação de conformidade. Essas mensagens ainda precisam ser resolvidas. |
 | Não compatível (ativo) | O número de emails não compatíveis que os revisores estão investigando no momento. |

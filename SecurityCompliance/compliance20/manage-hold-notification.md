@@ -1,12 +1,12 @@
 ---
-title: Gerenciar notificações de espera
+title: Gerenciar notificações de retenção
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,65 +14,65 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: b633e2522b1f3593f2c095a8f0cc74b4e8571f4a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706042"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213581"
 ---
-# <a name="manage-hold-notifications"></a>Gerenciar notificações de espera
+# <a name="manage-hold-notifications"></a>Gerenciar notificações de retenção
 
-Depois que você inicia seu departamento jurídico mantenha o fluxo de trabalho de notificação, você pode aproveitar o eDiscovery avançado (Preview) para acompanhar o status de suas comunicações. Guia comunicações apresenta todas as notificações de espera dentro de seu caso de eDiscovery avançado (Preview). Aqui, você pode ver detalhes, como o número dos responsáveis que tiverem sido atribuídos ou tiver confirmado o aviso.
+Após iniciar seu fluxo de trabalho de notificação de retenção legal, você pode aproveitar a descoberta eletrônica avançada (visualização) para acompanhar o status de suas comunicações. A guia comunicações contém todas as notificações de bloqueio no caso de descoberta eletrônica avançada (visualização). Aqui, você pode ver detalhes, como o número de responsáveis que foram atribuídos ou que confirmaram o aviso.
 
 ## <a name="view-communication-details"></a>Exibir detalhes de comunicação
 
-### <a name="track-acknowledgements"></a>Rastrear reconhecimentos
+### <a name="track-acknowledgements"></a>Rastrear confirmações
 
-Depois que você selecionar uma comunicação das **comunicações**, você pode exibir uma lista dos responsáveis que tiver confirmado um aviso de isenção de guia. 
+Depois de selecionar uma comunicação nas **comunicações**, guia você pode exibir uma lista de responsáveis que reconheceram um aviso de isenção. 
 
-### <a name="preview-acknowledgements"></a>Reconhecimentos de visualização
+### <a name="preview-acknowledgements"></a>Visualizar confirmações
 
-No submenu detalhes da comunicação, você pode visualizar os detalhes sobre sua comunicação de retenção legal. No painel de **visualização** , você poderá ver um instantâneo rápido de seu estado de retenção legal Observe, bem como as configurações e o conteúdo do seus notificações de fluxo de trabalho. O painel Visualização também será superfície detalhes em torno da qual responsáveis já tiverem confirmado o aviso.
+No submenu detalhes da comunicação, você pode visualizar os detalhes sobre a comunicação de retenção legal. No painel **Visualização** , você poderá ver um instantâneo rápido do seu aviso de bloqueio legal, bem como as configurações e o conteúdo das notificações de fluxo de trabalho. O painel visualização também fornecerá detalhes sobre quais responsáveis já confirmaram o aviso.
 
-## <a name="taking-action-on-existing-communications"></a>Executando ação nas comunicações existentes
+## <a name="taking-action-on-existing-communications"></a>Executar ações em comunicações existentes
 
 ### <a name="re-send-a-hold-notice"></a>Enviar novamente um aviso de isenção
 
-Ocasionalmente, responsáveis perdem o controle de seus emails em seu trabalho diário. Ou, para um litígio de execução longa, um funcionário encarregado pode alcançar e pedir que você envie novamente um aviso. Ao gerenciar seu fluxo de trabalho em torno de avisos de isenção legal, você pode precisar enviar novamente um aviso de colocá-lo de volta para o "superior da caixa de correio do usuário".
+Ocasionalmente, os responsáveis perdem o controle de seus emails no seu trabalho diário. Ou, para um litígio de longa duração, os responsáveis podem chegar e solicitar que você envie novamente um aviso. Ao gerenciar o fluxo de trabalho em relação aos avisos de retenção legal, talvez seja necessário enviar novamente um aviso para trazê-lo de volta à "parte superior da caixa de correio de um usuário".
 
-Novamente, você pode enviar um aviso de isenção para sua dos responsáveis por:
-1. Navegue até um caso de **segurança e conformidade gt _ avançado eDiscovery (Preview)**.
-2. Depois que você tiver selecionado um caso, navegue até a guia **Communications** .
-3. Para enviar novamente um aviso de isenção legal para dos responsáveis, selecione a comunicação e clique na opção **Enviar novamente** .
-4. Se um funcionário encarregado já não foi confirmado sua notificação de espera, em seguida, o fluxo de lembrete e escalonamento será reiniciado. Se um funcionário encarregado já tiver confirmado o aviso de isenção, dos responsáveis receberá apenas uma cópia do aviso de isenção inicial.
+Você pode reenviar um aviso de isenção para seus responsáveis por:
+1. Navegue até um caso na **descoberta eletrônica avançada de segurança e conformidade do > (visualização)**.
+2. Depois de selecionar uma ocorrência, navegue até a guia **comunicações** .
+3. Para reenviar um aviso de retenção legal para um responsáveis, selecione a comunicação e clique na **** opção reenviar.
+4. Se um funcionário ainda não confirmou sua notificação de espera, o lembrete e o fluxo de escalonamento serão reiniciados. Se um dos responsáveis já tiver confirmado o aviso de espera, ele receberá apenas uma cópia do aviso de bloqueio inicial.
 
 > [!NOTE]
-> Só é possível enviar novamente uma notificação de retenção legal aos responsáveis que são atribuídas à comunicação. 
+> Você só pode reenviar uma notificação de retenção legal para os responsáveis que são atribuídos à comunicação. 
 
 ### <a name="edit-a-communication"></a>Editar uma comunicação
 
-#### <a name="update-preservation-requirements"></a>Requisitos de atualização de preservação
+#### <a name="update-preservation-requirements"></a>Requisitos de preservação da atualização
   
-Como o andamento de maiusculas, responsáveis podem ser necessários para preservar dados adicionais ou que anteriormente era instruído. Em termos de descoberta eletrônica, você precisará emita novamente o aviso de isenção com conteúdo atualizado.
+Como o caso progride, os responsáveis podem ser necessários para preservar dados adicionais ou menos do que foram instruídos anteriormente. Em termos de descoberta eletrônica, você precisa emitir novamente o aviso de retenção com conteúdo atualizado.
 
-Para atualizar o conteúdo do aviso de isenção inicial:
+Para atualizar o conteúdo do aviso de bloqueio inicial:
 
-1. Navegue até um caso de **segurança e conformidade gt _ avançado eDiscovery (Preview)**.
-2. Depois que você tiver selecionado um caso, navegue até a guia **Communications** .
-3. Selecione o aviso de isenção que você gostaria de atualizar e clique em **Editar**.
-4. No fluxo de trabalho editar, selecione **Definir o conteúdo do Portal** e atualizar o conteúdo de seu aviso. 
-5. Clique em **Salvar**. Depois de salvo, o aviso de re-emissão será enviado aos todos os responsáveis atualmente atribuídos a notificação de retenção legal. Além disso, se os avisos de lembrete/escalonamento estão habilitados, em seguida, esses fluxos de trabalho serão reiniciado também. 
+1. Navegue até um caso na **descoberta eletrônica avançada de segurança e conformidade do > (visualização)**.
+2. Depois de selecionar uma ocorrência, navegue até a guia **comunicações** .
+3. Selecione o aviso de isenção que você deseja atualizar e clique em **Editar**.
+4. No fluxo de trabalho editar, selecione **definir conteúdo do portal** e atualizar o conteúdo do seu aviso. 
+5. Clique em **salvar**. Depois de salvo, o aviso de reemissão será enviado a todos os responsáveis que estão atualmente atribuídos à notificação de retenção legal. Além disso, se os avisos de encaminhamento/lembrete estiverem habilitados, esses fluxos de trabalho também serão reiniciados. 
 
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Mantenha a atualização legais notificações e configurações
+#### <a name="update-legal-hold-notifications-and-settings"></a>Atualizar notificações e configurações de retenção legal
 
-Quando você atualiza o conteúdo ou as configurações do aviso de emissão, versão, reedição, lembrete ou escalonamento, essas alterações serão aplicadas a todas as comunicações futuras geradas pelo fluxo de trabalho.
+Ao atualizar o conteúdo ou as configurações do aviso de emissão, lançamento, reEmissão, lembrete ou escalonamento, essas alterações serão aplicadas a todas as comunicações futuras geradas pelo fluxo de trabalho.
 
 ## <a name="related-information"></a>Informações relacionadas 
 
-- [Criar um aviso de isenção legal](create-hold-notification.md)
+- [Criar um aviso de retenção legal](create-hold-notification.md)
     
-- [Confirmar uma notificação de isenção](acknowledge-hold-notification.md)
+- [Confirmar uma notificação de bloqueio](acknowledge-hold-notification.md)
     
-- [Adicionar responsáveis a um caso](add-custodians-to-case.md)
+- [Adicionar os responsáveis a um caso](add-custodians-to-case.md)

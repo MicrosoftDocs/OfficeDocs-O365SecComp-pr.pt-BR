@@ -6,76 +6,76 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection: M365-security-compliance
-description: Saiba como inteligência de ameaça do Office 365 pode ajudar sua organização a detecção de invasão e ameaças e rapidamente atenuar e recuperar contra ameaças.
-ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Saiba como o Office 365 Threat Intelligence pode ajudar sua organização a detectar invasões e ameaças, além de reduzir e recuperar rapidamente as ameaças.
+ms.openlocfilehash: c2c601c7828e947c6cfa1c91723a19acee9e09ee
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995362"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213691"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Mantenha os usuários do Office 365 protegidos com a Inteligência Contra Ameaças do Office 365
 
 ## <a name="overview"></a>Visão geral
 
-Você sabe que os usuários do Office 365 estão sob ataque ou pior - comprometida? Para saber como atenuar e recuperar contra ataques que estão direcionando seus usuários? Você sabia que você pode fazer exatamente isso com os recursos de segurança que já estão disponíveis no Office 365? 
+Você sabe quais dos seus usuários do Office 365 estão sob ataque ou estão menos comprometidos? Sabe como mitigar e recuperar ataques direcionados a seus usuários? Você sabia que pode fazer isso exatamente com os recursos de segurança que já estão disponíveis no Office 365? 
   
-[Inteligência de dados do Office 365 ameaça](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 E5. O Office 365 ameaça inteligência ajudou Microsoft IT reduzir o tempo médio de resolução de incidentes de engenharia social, 80% e taxa de transferência aumentada maiusculas em 37% por mês em comparação com 2 últimos trimestres! 
+[Office 365 Threat Intelligence](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 e5. O Office 365 Threat Intelligence ajudou a ti da Microsoft a reduzir o tempo médio de resolução para incidentes de engenharia social por 80% e maior throughput de caso em 37% por mês em comparação aos 2 últimos trimestres! 
 
 > [!IMPORTANT]
-> Iniciando no fevereiro de 2019 e aplicação nos próximos meses várias, inteligência de dados do Office 365 ameaça está se tornando Office 365 avançadas ameaça proteção plano 2, com os recursos de proteção de ameaça adicional. Para saber mais, consulte [preços e planos de proteção de ameaça avançadas do Office 365](https://products.office.com/exchange/advance-threat-protection) e o [Office 365 avançadas Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partir de fevereiro de 2019 e saindo dos próximos meses, o Office 365 Threat Intelligence está se tornando o Office 365 Advanced Threat Protection Plan 2, com recursos adicionais de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-Recentemente, adicionamos novos recursos para ajudar a melhorar a como você pode detectar e recuperar contra ameaças! Eis uma rápida passo a passo de como o serviço de inteligência de ameaça atualizado pode tornar você ainda mais eficiente.
+Recentemente, adicionamos novos recursos para ajudar a melhorar o modo como você pode detectar e recuperar contra ameaças! Veja aqui uma rápida explicação sobre como o serviço atualizado de inteligência de ameaças pode tornar você ainda mais eficiente.
   
-## <a name="detect-intrusions-and-threats"></a>Detecção de invasão e ameaças
+## <a name="detect-intrusions-and-threats"></a>Detectar invasões e ameaças
 
-[Explorer](use-explorer-in-security-and-compliance.md) (também conhecido como ameaça Explorer) ajuda os administradores de segurança e os analistas identificar e entender as ameaças que estão ativas em sua empresa, porque o mesmo as configurações de segurança mais complexas podem ser seja contornadas por configurações de usuário aparentemente inofensiva como seguros white lists do remetente. Office 365 global de Ajuda do Explorer ou administradores de segurança rapidamente determinam se os usuários tenham sido comprometidos por ameaças como malware ou de phishing. Isso ajuda a priorizar quais usuários estão mais em risco de uma ameaça e a resposta do requisito. 
+[Explorer](use-explorer-in-security-and-compliance.md) (também chamado de Gerenciador de ameaças) ajuda os administradores de segurança e analistas a identificar e compreender ameaças que estão ativas em sua empresa, pois mesmo as configurações de segurança mais complexas podem ser burladas por configurações de usuário aparentemente inofensivas, como segurança whitelists do remetente. O Explorer ajuda o Office 365 global ou administradores de segurança a determinar rapidamente se os usuários foram comprometidos por ameaças como malware ou phishing. Isso ajuda a priorizar quais usuários estão mais em risco para uma ameaça e a resposta de requisito. 
   
-Explorer também ajuda administradores navegar pelas relações entre usuários e email. Saber de um email específico que era ruim? Procure por ele ver quais usuários recebeu o email, siga a série de eventos e ver o que esses usuários por sua vez tenham feito.
+O Explorer também ajuda os administradores a navegar pelas relações entre usuários e emails. Sabe de um email específico que era ruim? Procure-o para ver quais usuários receberam o email, depois siga a série de eventos e veja o que os usuários já fizeram em vez.
 
-Se você ainda não tiver inteligência de ameaça, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [aprender mais sobre o Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+Se você ainda não tem inteligência de ameaças, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre a inteligência contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
   
-![Captura de tela do Gerenciador de ameaça no Office 365, codificados por cor pela família de malware](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Captura de tela do explorador de ameaças no Office 365, codificado em cores pela família de malware](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
-## <a name="quickly-mitigate-and-recover-from-threats"></a>Atenuar rapidamente e recuperar contra ameaças
+## <a name="quickly-mitigate-and-recover-from-threats"></a>Reduzir e recuperar rapidamente as ameaças
 
-Depois que os administradores de segurança identificar algo suspeito ou mal intencionado de acontecendo no seu locatário, eles podem rapidamente contêm e responder a essa ameaça com o **Incidente Framework**. Agrupar mensagens indesejadas com um clique e remover rapidamente as mensagens de email de caixas de correio do usuário. 
+Depois que os administradores de segurança identificaram algo suspeito ou mal-intencionado em seus locatários, eles podem conter rapidamente e responder a essa ameaça com a **estrutura de incidentes**. Agrupe mensagens indesejadas com um clique e remova rapidamente as mensagens de email das caixas de correio do usuário. 
   
- **Atualização:** Adicionamos recentemente a capacidade de excluir (excluir suaves ou sólidas) emails diretamente a partir do Framework incidente. Anteriormente administradores poderiam mover somente os emails para a pasta de lixo eletrônico do usuário, onde os usuários poderiam recuperar o item. Com os recursos de excluir recentemente liberados, você pode agora ter certeza de que um email mal-intencionado ou indesejado será removido permanentemente. 
+ **Atualização:** Recentemente, adicionamos a capacidade de excluir e-mails de emails diretamente da estrutura de incidentes. Os administradores anteriores só podiam mover emails para a pasta de lixo eletrônico de um usuário, onde os usuários podem recuperar o item. Com os recursos de exclusão recém-lançado, agora você pode ter certeza de que um email mal-intencionado ou indesejado é removido permanentemente. 
   
-Se você ainda não tiver inteligência de ameaça, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [aprender mais sobre o Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+Se você ainda não tem inteligência de ameaças, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre a inteligência contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
   
-![Captura de tela da lista de email de incidente remediação](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Captura de tela da lista de emails de correção de incidentes](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
-## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Aproveite a telemetria de ameaça da Microsoft
+## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Aproveitar a telemetria de ameaças da Microsoft
 
-Inteligência de dados do Office 365 ameaça é alimentada com dados do Microsoft inteligente segurança Graph. O gráfico adquire o sinal de ameaça mais recente dentre mais de 1 bilhão dispositivos do Windows, logons do Azure mensais 450 bilhões e 400 bilhões mensal mensagens de email no Office 365. Esse sinal de ameaça excelentes é o que dá a visibilidade ampla em um locatário do cliente que é fundamental para os analistas admins e segurança ter uma visão completa das ameaças afetar a sua organização. 
+O Office 365 Threat Intelligence é equipado com dados do Microsoft Intelligent Security Graph. O gráfico adquire o sinal de ameaça mais recente de mais de 1.000.000.000 dispositivos do Windows, 450.000.000.000 logins mensais do Azure e mensagens de email mensal 400.000.000.000 no Office 365. Esse sinal de ameaça inigualável é o que oferece uma ampla visibilidade em um locatário do cliente crucial para administradores e analistas de segurança para ter uma visão completa das ameaças que afetam sua organização. 
   
-## <a name="more-to-come"></a>Mais a seguir
+## <a name="more-to-come"></a>Mais para entrar
 
-Esses são apenas alguns exemplos de como o Office 365 Threat Intelligence ajuda você a proteger a sua empresa! Nas próximas semanas estamos adicionando melhorias significativas para o produto incluindo:
+Estes são apenas alguns exemplos de como o Office 365 Threat Intelligence ajuda você a proteger sua empresa! Nas próximas semanas, estamos adicionando aprimoramentos significativos ao produto, incluindo:
   
-- Fornecendo percepção possivelmente perigosos ações realizadas em documentos do SharePoint Online e de email do Exchange Online
+- Fornecendo informações sobre ações potencialmente arriscadas realizadas em emails do Exchange Online e documentos do SharePoint Online
     
-- Fornecendo percepção de phishing mal-intencionado mensagens de email que foram enviadas aos usuários, incluindo alguns que têm talvez foram recebido e lido por usuários antes que eles foram aproveitados
+- Fornecer informações sobre mensagens de email de phishing mal-intencionados que foram enviadas aos usuários, incluindo algumas que podem ter sido recebidas e lidas por usuários antes de serem enarmadas
     
-- Aumentar o conjunto de ações de administradores pode ser executadas para responder a incidentes
+- Aumentar o conjunto de ações que os administradores podem tomar para responder a incidentes
     
-## <a name="why-threat-intelligence"></a>Por que inteligência de ameaça?
+## <a name="why-threat-intelligence"></a>Por que o inteligência de ameaças?
 
-Gartner estima que em 2017 sozinho sobre $90B gasto na cybersecurity. SID Deshpande, analista research principal do Gartner, está entre aspas como dizendo que "shift do setor para detecção e resposta … envia uma mensagem clara que prevenção é inútil, a menos que ele está ligado a uma capacidade de resposta e de detecção." Inteligência de ameaça é uma parte importante de portfólio do toda empresa de serviços e pode ser consumida como serviço autônomo ou como parte do Office 365 E5.
+O Gartner estima que, em 2017, apenas cerca de US $90B foi gasto no cybersecurity. O Sid Deshpande, analista de pesquisa principal da Gartner, está citado como dizer que "o turno da indústria para detecção e resposta... envia uma mensagem clara que a prevenção é futile, a menos que esteja vinculada a uma capacidade de detecção e resposta. " A inteligência de ameaças é uma parte crucial do portfólio de serviços de cada empresa e pode ser consumida como serviço autônomo ou como parte do Office 365 e5.
   
-## <a name="whats-next"></a>Qual é a próxima
+## <a name="whats-next"></a>Qual é o próximo
 
-- Saiba mais sobre o Office 365 Threat Intelligence nesta sessão registradas: [Permaneçam com antecedência do Cyberattacks com inteligência de ameaça do Office 365](https://myignite.microsoft.com/videos/53723)
+- Saiba mais sobre o Office 365 Threat Intelligence nesta sessão gravada: [fique à frente do cyberattacks com o Office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
     
-- [Teste o Office 365 Threat Intelligence agora](https://aka.ms/tryo365threatintel3) ou começar sua avaliação do Office E5 hoje! 
+- [Experimente o office 365 Threat Intelligence agora](https://aka.ms/tryo365threatintel3) ou comece sua avaliação do Office E5 hoje mesmo! 
     
 

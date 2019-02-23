@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 09af09c4a538bb43fed5fce044eb1be60c235aaa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706132"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212641"
 ---
 # <a name="create-a-search-to-collect-data"></a>Criar uma pesquisa para coletar dados
 
-Na guia **pesquisas** no seu caso, você pode criar uma nova pesquisa clicando em **New pesquisar** e seguindo o assistente.
+Na guia **pesquisas** do seu caso, você pode criar uma nova pesquisa clicando em **nova pesquisa** e seguindo o assistente.
 
-## <a name="name-your-search-and-give-description"></a>Nome de sua pesquisa e forneça a descrição
+## <a name="name-your-search-and-give-description"></a>Nomear sua pesquisa e dar descrição
 
-Cada pesquisa com um caso deve ter um nome exclusivo. Opcionalmente, você pode fornecer uma descrição para a pesquisa. 
+Cada pesquisa com uma ocorrência deve ter um nome exclusivo. Opcionalmente, você pode fornecer uma descrição para sua pesquisa. 
 
 ## <a name="define-your-conditions"></a>Definir suas condições
 
-Você pode definir as condições de sua pesquisa usando as placas de condição pré-criados ou usando o idioma de consulta de palavra-chave (KQL). Para obter mais informações, consulte [consultas de pesquisa de compilação](building-search-queries.md).
+Você pode definir as condições para sua pesquisa usando os cartões de condição pré-criados ou usando a linguagem de consulta de palavra-chave (KQL). Para obter mais informações, consulte [Build Search queries](building-search-queries.md).
 
-## <a name="choose-the-custodians-to-search-from"></a>Escolha os responsáveis da pesquisa
+## <a name="choose-the-custodians-to-search-from"></a>Escolha os responsáveis pela pesquisa
 
-Depois que você definiu seus condições, é preciso escolher quais locais que você deseja pesquisar. Uma maneira de fazê-lo é especificando quais responsáveis já tiver adicionado ao caso você deseja pesquisar. Selecionando dos responsáveis, você será executado a pesquisa em todas as fontes de dados mapeadas para dos responsáveis. Consulte [trabalhar com responsáveis](managing-custodians.md) para obter mais informações sobre como adicionar responsáveis ao seu caso e gerenciar suas fontes de dados.
+Depois de definir suas condições, você precisará escolher quais locais deseja pesquisar. Uma maneira de fazer isso é especificando quais responsáveis você já adicionou à ocorrência que você deseja pesquisar. Ao selecionar um responsáveis, você executará a pesquisa em todas as fontes de dados mapeadas para os responsáveis. ConFira [trabalhar com os responsáveis](managing-custodians.md) para obter mais informações sobre como adicionar os responsáveis ao seu caso e gerenciar suas fontes de dados.
 
-## <a name="choose-non-custodial-locations"></a>Escolher não custódia locais
+## <a name="choose-non-custodial-locations"></a>Escolher locais não custodial
 
-Em alguns casos, talvez você queira pesquisar fontes de dados que não são mapeados para dos responsáveis. Nesse caso, você pode especificar os locais que você gostaria de pesquisa ou escolha Pesquisar todos os locais de conteúdo para um serviço específico do Office 365 (por exemplo, pesquisar todas as caixas de correio do Exchange ou do SharePoint e OneDrive todos os sites corporativos).
+Em alguns casos, talvez você queira Pesquisar fontes de dados que não estão mapeadas para um determinado. Nesse caso, você pode especificar os locais que deseja pesquisar ou optar por pesquisar todos os locais de conteúdo de um serviço específico do Office 365 (como pesquisar todas as caixas de correio do Exchange ou todos os sites do SharePoint e do OneDrive for Business).
