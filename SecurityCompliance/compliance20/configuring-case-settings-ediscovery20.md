@@ -1,12 +1,12 @@
 ---
-title: Definir configurações de maiusculas no eDiscovery avançado (Preview)
+title: Configurar as definições de caso na descoberta eletrônica avançada (versão prévia)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8549af59965a9197179b328581d61dd559846797
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 304951e7e60b83619930048583cbf26cc97b50d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694817"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216821"
 ---
-# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a><span data-ttu-id="19ee6-102">Definir configurações de maiusculas no eDiscovery avançado (Preview)</span><span class="sxs-lookup"><span data-stu-id="19ee6-102">Configure case settings in Advanced eDiscovery (Preview)</span></span>
+# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a><span data-ttu-id="0401d-102">Configurar as definições de caso na descoberta eletrônica avançada (versão prévia)</span><span class="sxs-lookup"><span data-stu-id="0401d-102">Configure case settings in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="19ee6-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="19ee6-103">Content coming soon.</span></span>
+<span data-ttu-id="0401d-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="0401d-103">Content coming soon.</span></span>

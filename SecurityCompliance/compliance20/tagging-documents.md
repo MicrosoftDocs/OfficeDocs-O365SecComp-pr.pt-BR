@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6743ac5ac4a52343419eabceee59b380695edfd4
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: d12f37f82176c61736948aa32298276126f9cd1c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694777"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213651"
 ---
-# <a name="tag-documents-in-a-working-set"></a><span data-ttu-id="50fb3-102">Marcar documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="50fb3-102">Tag documents in a working set</span></span>
+# <a name="tag-documents-in-a-working-set"></a><span data-ttu-id="d947c-102">Marcar documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="d947c-102">Tag documents in a working set</span></span>
 
-<span data-ttu-id="50fb3-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="50fb3-103">Content coming soon.</span></span>
+<span data-ttu-id="d947c-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="d947c-103">Content coming soon.</span></span>
