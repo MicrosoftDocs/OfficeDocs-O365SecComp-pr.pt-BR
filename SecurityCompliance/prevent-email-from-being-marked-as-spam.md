@@ -1,32 +1,38 @@
 ---
-title: Como impedir que emails reais sejam marcados como spam no Office 365
+title: Como impedir que falsos positivos aconteçam no Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
-description: Saiba como manter emails reais fora do lixo eletrônico e impedir que sejam marcadas como spam no Office 365.
-ms.openlocfilehash: 4da27aea157d3d816f8ce9a9631dd608dd5cd164
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
+ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614425"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219411"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
  **Seu email real está sendo marcado como spam no Office 365? Faça isso.**
   
-A Proteção do Exchange Online (EOP) tenta filtrar spams, manter sua caixa de entrada livre de conteúdo que os usuários não desejam ver. Mas, às vezes, o EOP filtra o que você deseja ver.
-  
+O EOP (Proteção do Exchange Online) é um serviço de filtragem de email baseado na nuvem que ajuda a proteger sua organização contra spam e malware. Se você tem caixas de correio no Office 365, elas são automaticamente protegidas pelo EOP como parte do serviço.
+
+O EOP tenta filtrar o spam e manter sua Caixa de Entrada limpa de conteúdos que os usuários não desejam ver. Mas, às vezes, o EOP filtra o que você deseja ver. Quando uma mensagem é incorretamente marcada como spam pelo filtro de spam isso é chamado de falso positivo.
+
+Se você receber um falso positivo, relate a mensagem à Microsoft usando [Use o suplemento de relatório de mensagem](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode encaminhar a mensagem *como um anexo* para not_junk@office365.microsoft.com.
+
+    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+    
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar o motivo pelo qual a mensagem foi marcada como spam
 
 Para resolver muitos problemas de spam no Office 365, confira o artigo [Exibir cabeçalhos de mensagens de email](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) e determine o que deu errado. Procure um cabeçalho chamado X-Forefront-Antispam-Report. [Saiba mais sobre cabeçalhos de mensagem antispam](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
@@ -59,16 +65,44 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
 
 - **Aponte seus registros de DNS para o Office 365** Para que o EOP ofereça proteção, os registros DNS do seu servidor de mensagens (MX) para todos os domínios devem apontar para o Office 365 e apenas para o Office 365. Se seu MX não apontar para o Office 365, o EOP não fornecerá filtragem de spam para seus usuários. Se você desejar usar outro dispositivo ou serviço para fornecer a filtragem de spam do seu domínio, desabilite a proteção contra spam no EOP. Você pode fazer isso criando uma regra de transporte que defina o valor do SCL como -1. Se você mais tarde decidir usar o EOP, remova essa regra de transporte. 
     
-- **Desabilitar a filtragem de SmartScreen no Outlook** Se os usuários estiverem usando o cliente de área de trabalho do Outlook, desabilite a funcionalidade de filtragem de SmartScreen, que foi descontinuada. Se estiver habilitado, ela poderá causar falsos positivos. Isso não será necessário se o cliente de área de trabalho do Outlook estiver atualizado. 
-    
 - **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas. 
     
-- **Imediatamente permitir um remetente** Caso você precise imediatamente permitir um remetente, recomendamos que você **APENAS permita o endereço IP do remetente específico**. Como alternativa, você pode permitir um remetente e confira se o remetente passa em uma verificação de autenticação, como SPF ou DKIM ao criar uma regra de transporte que procura **as duas coisas**: um domínio do remetente e um cabeçalho Authentication-Results bem-sucedido. 
-    
 ### <a name="for-users"></a>Para usuários
+    
+- **Crie uma lista de remetentes confiáveis** Os usuários podem adicionar endereços de remetentes seguros em sua lista de remetentes confiáveis no [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) ou [Outlook na Web](https://go.microsoft.com/fwlink/p/?LinkId=294862). Para começar no Outlook na Web, escolha **Configurações**![ConfigureAPowerBIAnalysisServicesConnector_settingsIcon](media/24bd5467-c8d2-4936-9c37-a179bd0e21ec.png) \> **Opções** \> **Bloquear ou permitir**. O diagrama a seguir mostra um exemplo de como adicionar alguém a uma lista de remetentes confiáveis.
+  
+![Adicionar um remetente seguro no Outlook na web](media/8de6b24e-429e-4e8f-8ce8-53ba659cbfcb.png)
+  
+O EOP aceita os Remetentes e destinatários confiáveis dos seus usuários, mas não aceita Domínios confiáveis. Isso acontece independentemente do domínio ser adicionado através do Outlook na web ou adicionado no Outlook e sincronizado usando o Diretório de Sincronização.
 
-- **Relatar o spam à Microsoft** Relatar mensagens de spam para a Microsoft usando a opção [Usar o suplemento Mensagem de Relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode enviar uma mensagem para junk@office365.microsoft.com e anexe uma ou mais mensagens ao relatório.
+- **Desabilitar a filtragem de SmartScreen no Outlook** Se você estiver usando o antigo cliente de área de trabalho do Outlook, desabilite a funcionalidade de filtragem de SmartScreen, que foi descontinuada. Se estiver habilitado, ela poderá causar falsos positivos. Isso não será necessário se o cliente de área de trabalho do Outlook estiver atualizado.
+
+## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Solução de problemas: Uma mensagem termina na pasta de Lixo eletrônico embora EOP tenha marcado a mensagem como não spam
+<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
+Se os usuários tem o Outlook habilitado para “Somente listas seguras: Somente emails de pessoas ou domínios na sua lista de Remetentes e destinatários confiáveis serão entregues na sua caixa de entrada”, todos os outros emails irão para a pasta de lixo eletrônico. Isso acontecerá independentemente do EOP marcar a mensagem como não spam, ou de você ter configurado uma regra no EOP para marcar uma mensagem como não spam.
+  
+Você pode desabilitar a opção Apenas Listas de Confiança para seus usuários do Outlook seguindo as instruções em [Outlook: política de configuração para desabilitar a UI do lixo eletrônico e do mecanismo de filtragem](https://support.microsoft.com/pt-BR/kb/2180568).
+  
+Se você visualizar a mensagem no Outlook na Web, existirá um aviso de segurança em amarelo indicando que a mensagem está na pasta Lixo eletrônico porque o remetente não está na lista de remetentes confiáveis do destinatário.
+  
+Se você observar o cabeçalho de uma mensagem verá que ela pode incluir o carimbo SFV:SKN  (permissões de IP ou permissões ETR) ou SFV:NSPM (não spam), mas ela ainda estará na pasta Lixo eletrônico do usuário. Não há nada no cabeçalho da mensagem que indica que o usuário tenha  "Apenas listas de confiança" habilitado. Isso acontece porque a opção "Apenas listas de confiança" definida pelos usuários no Outlook substituem a configuração do EOP. 
+  
+ **Para verificar por que uma mensagem de um remetente seguro é marcada como não spam no cabeçalho da mensagem mas ainda assim termina na pasta de lixo eletrônico do usuário**
+  
+1. Para aprender a se conectar ao Exchange Online PowerShell, confira [Conectar ao Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). 
     
-    **Importante** Se você não encaminhar as mensagens como anexos, os cabeçalhos estarão ausentes e não poderemos melhorar a filtragem de lixo eletrônico no Office 365. 
+2. Execute o seguinte comando para exibir as configurações de lixo eletrônico do usuário:
     
-- **Adicionar um remetente a sua lista de permissões, mas use com moderação** Como último recurso, você pode [Bloquear ou permitir (configurações de lixo eletrônico)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Se fizer isso, esteja ciente de que uma tentativa de phishing direcionada poderá ter acesso a sua caixa de entrada.
+  ```
+  Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
+  ```
+
+- Se TrustedListsOnly é definido como verdadeiro, significa que essa configuração está ativada
+- Se ContactsTrusted é definido como verdadeiro, isso significa que o usuário confia em remetentes confiáveis e contatos
+- O TrustedSendersAndDomains lista o conteúdo da lista de remetentes confiáveis do usuário
+
+
+## <a name="eop-only-customers-use-directory-synchronization"></a>Clientes somente EOP: usar a sincronização de diretório
+
+Se você for um cliente somente EOP, ou seja inscrito no serviço EOP para uso com o servidor de email (Exchange) no local, você deve sincronizar as configurações de usuário com o serviço usando a sincronização de diretórios. Isso garante que sua lista de remetentes confiáveis seja respeitada pelo EOP. Para saber mais, confira "Utilizar a sincronização de diretórios para gerenciar usuários de email" em [Gerenciar usuários de email no EOP](https://go.microsoft.com/fwlink/?LinkId=534098).

@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Saiba como o Office 365 Threat Intelligence pode ajudar sua organização a detectar invasões e ameaças, além de reduzir e recuperar rapidamente as ameaças.
-ms.openlocfilehash: c2c601c7828e947c6cfa1c91723a19acee9e09ee
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 40b39cc7f388152bd95000e2653ef94b970a6fa3
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213691"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241953"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Mantenha os usuários do Office 365 protegidos com a Inteligência Contra Ameaças do Office 365
 

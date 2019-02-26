@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Saiba como configurar um cronograma para um relatório no centro de conformidade de &amp; segurança.
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216751"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241863"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Criar um cronograma para um relatório no centro de &amp; conformidade de segurança
 
@@ -45,7 +45,7 @@ No centro de &amp; conformidade de segurança, vários [relatórios e informaç�
   
     Se você optar por personalizar seu cronograma de relatório, poderá especificar a frequência do relatório, o endereço de email de um remetente e o endereço de email de um destinatário. 
     
-Depois de criar um cronograma para um relatório, esse relatório será entregue por email aos endereços de emali dos destinatários automaticamente. 
+Depois de criar um cronograma para um relatório, esse relatório será entregue automaticamente por email aos endereços de email dos destinatários. 
   
 ## <a name="related-topics"></a>Tópicos relacionados
 

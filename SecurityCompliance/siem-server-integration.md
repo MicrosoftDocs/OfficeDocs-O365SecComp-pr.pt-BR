@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
-- M365-security-compliance
 description: 'Resumo: Leia este artigo para obter uma visão geral da integração do SIEM Server com o Microsoft 365.'
-ms.openlocfilehash: 56ac1b244bc7bfc62bd6edb097a733e8477baa26
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4b9b631ab27d777be610ed3b954acc7b2c3bdf50
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215651"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241873"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integração com o servidor SIEM com serviços e aplicativos da Microsoft 365
 
@@ -50,7 +49,6 @@ Certifique-se de que o registro em log de auditoria está ativado antes de confi
 - Para o Exchange Online, o [log de auditoria é ativado com o Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
 ## <a name="see-also"></a>Confira também
-
 
 [Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
