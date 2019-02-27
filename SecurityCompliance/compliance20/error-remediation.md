@@ -8,96 +8,96 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0224e6bf750af209eefd47902f1f4a78200d1db1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215991"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296724"
 ---
-# <a name="error-remediation-when-processing-data"></a><span data-ttu-id="e4145-102">Correção de erro ao processar dados</span><span class="sxs-lookup"><span data-stu-id="e4145-102">Error remediation when processing data</span></span>
+# <a name="error-remediation-when-processing-data"></a><span data-ttu-id="5085d-102">Correção de erro ao processar dados</span><span class="sxs-lookup"><span data-stu-id="5085d-102">Error remediation when processing data</span></span>
 
-<span data-ttu-id="e4145-p101">A correção de erros permite que os administradores de descoberta eletrônica corrijam problemas de dados que impedem a descoberta eletrônica avançada (visualização) de processar corretamente o conteúdo. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os administradores de descoberta eletrônica podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.</span><span class="sxs-lookup"><span data-stu-id="e4145-p101">Error remediation allows eDiscovery administrators the ability to rectify data issues which prevent Advanced eDiscovery (Preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection and upload the remediated files.</span></span>
+<span data-ttu-id="5085d-p101">A correção de erros permite que os administradores de descoberta eletrônica corrijam problemas de dados que impedem a descoberta eletrônica avançada (visualização) de processar corretamente o conteúdo. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os administradores de descoberta eletrônica podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.</span><span class="sxs-lookup"><span data-stu-id="5085d-p101">Error remediation allows eDiscovery administrators the ability to rectify data issues which prevent Advanced eDiscovery (Preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection and upload the remediated files.</span></span>
 
-<span data-ttu-id="e4145-106">Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de descoberta eletrônica avançada (visualização).</span><span class="sxs-lookup"><span data-stu-id="e4145-106">Use the following workflow to remediate files with errors in Advanced eDiscovery (Preview) cases.</span></span>
+<span data-ttu-id="5085d-106">Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de descoberta eletrônica avançada (visualização).</span><span class="sxs-lookup"><span data-stu-id="5085d-106">Use the following workflow to remediate files with errors in Advanced eDiscovery (Preview) cases.</span></span>
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a><span data-ttu-id="e4145-107">Criando uma sessão de correção de erro para corrigir arquivos com erros de processamento</span><span class="sxs-lookup"><span data-stu-id="e4145-107">Creating an error remediation session to remediate files with processing errors</span></span>
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a><span data-ttu-id="5085d-107">Criando uma sessão de correção de erro para corrigir arquivos com erros de processamento</span><span class="sxs-lookup"><span data-stu-id="5085d-107">Creating an error remediation session to remediate files with processing errors</span></span>
 
 >[!NOTE]
-><span data-ttu-id="e4145-108">Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correÇões de **erro** no menu suspenso **Exibir** .</span><span class="sxs-lookup"><span data-stu-id="e4145-108">If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Error remediations** in the **View** drop down menu.</span></span>
+><span data-ttu-id="5085d-108">Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correÇões de **erro** no menu suspenso **Exibir** .</span><span class="sxs-lookup"><span data-stu-id="5085d-108">If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Error remediations** in the **View** drop down menu.</span></span>
 
-1. <span data-ttu-id="e4145-109">Na guia **processamento** em um caso de descoberta eletrônica avançada (visualização), selecione **erros** no menu suspenso **Exibir** .</span><span class="sxs-lookup"><span data-stu-id="e4145-109">On the **Processing** tab in an Advanced eDiscovery (Preview) case, select **Errors** in the **View** drop down menu.</span></span>
+1. <span data-ttu-id="5085d-109">Na guia **processamento** em um caso de descoberta eletrônica avançada (visualização), selecione **erros** no menu suspenso **Exibir** .</span><span class="sxs-lookup"><span data-stu-id="5085d-109">On the **Processing** tab in an Advanced eDiscovery (Preview) case, select **Errors** in the **View** drop down menu.</span></span>
 
-2. <span data-ttu-id="e4145-p102">Selecione os erros que você deseja corrigir clicando no botão de opção ao lado do tipo de erro ou tipo de arquivo.  No exemplo a seguir, estamos corrigindo um arquivo protegido por senha.</span><span class="sxs-lookup"><span data-stu-id="e4145-p102">Select the errors you want to remediate by clicking the radio button next to either the error type or file type.  In the following example, we're remediating a password protected file.</span></span>
+2. <span data-ttu-id="5085d-p102">Selecione os erros que você deseja corrigir clicando no botão de opção ao lado do tipo de erro ou tipo de arquivo.  No exemplo a seguir, estamos corrigindo um arquivo protegido por senha.</span><span class="sxs-lookup"><span data-stu-id="5085d-p102">Select the errors you want to remediate by clicking the radio button next to either the error type or file type.  In the following example, we're remediating a password protected file.</span></span>
 
-3. <span data-ttu-id="e4145-112">Clique em **+ nova correção de erro**.</span><span class="sxs-lookup"><span data-stu-id="e4145-112">Click **+ New error remediation**.</span></span>
+3. <span data-ttu-id="5085d-112">Clique em **+ nova correção de erro**.</span><span class="sxs-lookup"><span data-stu-id="5085d-112">Click **+ New error remediation**.</span></span>
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    <span data-ttu-id="e4145-114">A sessão de correção de erro será iniciada, começando com um estágio de preparação em que os arquivos com erro são movidos para um local seguro do Azure a ser baixado.</span><span class="sxs-lookup"><span data-stu-id="e4145-114">The error remediation session will begin, starting with a preparation stage where the files that errored are moved to a secure Azure location to be downloaded.</span></span>
+    <span data-ttu-id="5085d-114">A sessão de correção de erro será iniciada, começando com um estágio de preparação em que os arquivos com erro são movidos para um local seguro do Azure a ser baixado.</span><span class="sxs-lookup"><span data-stu-id="5085d-114">The error remediation session will begin, starting with a preparation stage where the files that errored are moved to a secure Azure location to be downloaded.</span></span>
 
     ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. <span data-ttu-id="e4145-116">Após a conclusão da preparação, clique em **Avançar: baixar arquivos** para continuar com o download.</span><span class="sxs-lookup"><span data-stu-id="e4145-116">After the preparation is completed, click **Next: Download files** to proceed with download.</span></span>
+4. <span data-ttu-id="5085d-116">Após a conclusão da preparação, clique em **Avançar: baixar arquivos** para continuar com o download.</span><span class="sxs-lookup"><span data-stu-id="5085d-116">After the preparation is completed, click **Next: Download files** to proceed with download.</span></span>
 
     ![Baixar arquivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. <span data-ttu-id="e4145-p103">Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="e4145-p103">To download files, specify the **Destination path for download**; this is a path on your local computer where the file should be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder; this can be changed as needed.</span></span>
+5. <span data-ttu-id="5085d-p103">Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="5085d-p103">To download files, specify the **Destination path for download**; this is a path on your local computer where the file should be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder; this can be changed as needed.</span></span>
 
     >[!NOTE]
-    ><span data-ttu-id="e4145-120">Recomendamos que você use um caminho de arquivo local em vez de um caminho de rede remoto para obter o desempenho ideal.</span><span class="sxs-lookup"><span data-stu-id="e4145-120">We recommend that you use a local file path instead of a remote network path for optimal performance.</span></span>
+    ><span data-ttu-id="5085d-120">Recomendamos que você use um caminho de arquivo local em vez de um caminho de rede remoto para obter o desempenho ideal.</span><span class="sxs-lookup"><span data-stu-id="5085d-120">We recommend that you use a local file path instead of a remote network path for optimal performance.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="e4145-121">Se você ainda não instalou o AzCopy, você pode instalá-lo daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy</span><span class="sxs-lookup"><span data-stu-id="e4145-121">If you haven't installed AzCopy, you can install it from here: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy</span></span>
+    > <span data-ttu-id="5085d-121">Se você ainda não instalou o AzCopy, você pode instalá-lo daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy</span><span class="sxs-lookup"><span data-stu-id="5085d-121">If you haven't installed AzCopy, you can install it from here: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy</span></span>
 
-6. <span data-ttu-id="e4145-p104">Copie o comando predefinido clicando em **copiar para área de transferência**. Inicie um prompt de comando do Windows, Cole o comando e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="e4145-p104">Copy the predefined command by clicking **Copy to clipboard**. Start a windows command prompt, paste the command, and then press **Enter**.</span></span>  
+6. <span data-ttu-id="5085d-p104">Copie o comando predefinido clicando em **copiar para área de transferência**. Inicie um prompt de comando do Windows, Cole o comando e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="5085d-p104">Copy the predefined command by clicking **Copy to clipboard**. Start a windows command prompt, paste the command, and then press **Enter**.</span></span>  
 
-    <span data-ttu-id="e4145-124">Os arquivos serão baixados.</span><span class="sxs-lookup"><span data-stu-id="e4145-124">The files will be downloaded.</span></span>
+    <span data-ttu-id="5085d-124">Os arquivos serão baixados.</span><span class="sxs-lookup"><span data-stu-id="5085d-124">The files will be downloaded.</span></span>
 
     ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > <span data-ttu-id="e4145-126">Se você tiver problemas para executar este comando, https://go.microsoft.com/fwlink/?linkid=2038117 consulte para obter dicas de solução de problemas.</span><span class="sxs-lookup"><span data-stu-id="e4145-126">If you have issues running this command, see https://go.microsoft.com/fwlink/?linkid=2038117 for troubleshooting tips.</span></span>
+     > <span data-ttu-id="5085d-126">Se você tiver problemas para executar este comando, https://go.microsoft.com/fwlink/?linkid=2038117 consulte para obter dicas de solução de problemas.</span><span class="sxs-lookup"><span data-stu-id="5085d-126">If you have issues running this command, see https://go.microsoft.com/fwlink/?linkid=2038117 for troubleshooting tips.</span></span>
 
-7. <span data-ttu-id="e4145-p105">Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.</span><span class="sxs-lookup"><span data-stu-id="e4145-p105">After downloading the files, you can remediate them with an appropriate tool. For password protected files, there are a number of password cracking tools you can use. If you know the passwords for the files, you can open them and remove the password protection.</span></span>
+7. <span data-ttu-id="5085d-p105">Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.</span><span class="sxs-lookup"><span data-stu-id="5085d-p105">After downloading the files, you can remediate them with an appropriate tool. For password protected files, there are a number of password cracking tools you can use. If you know the passwords for the files, you can open them and remove the password protection.</span></span>
     > [!NOTE]
-    > <span data-ttu-id="e4145-p106">É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.</span><span class="sxs-lookup"><span data-stu-id="e4145-p106">IT is important that you retain the directory structure and file names of the remediated files in tact.  All naming conventions used in the downloaded files and folders make it possible to associate the remdiated files back to the original.</span></span>
+    > <span data-ttu-id="5085d-p106">É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.</span><span class="sxs-lookup"><span data-stu-id="5085d-p106">IT is important that you retain the directory structure and file names of the remediated files in tact.  All naming conventions used in the downloaded files and folders make it possible to associate the remdiated files back to the original.</span></span>
 
-8. <span data-ttu-id="e4145-p107">Agora, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.</span><span class="sxs-lookup"><span data-stu-id="e4145-p107">Now, return to Advanced eDiscovery (Preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.</span></span>
+8. <span data-ttu-id="5085d-p107">Agora, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.</span><span class="sxs-lookup"><span data-stu-id="5085d-p107">Now, return to Advanced eDiscovery (Preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.</span></span>
 
     ![Carregar arquivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. <span data-ttu-id="e4145-135">Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para o clibpboard**.</span><span class="sxs-lookup"><span data-stu-id="e4145-135">Specifiy the location of the remediated files in the **Path to location of files** text box, then click **Copy to clibpboard**.</span></span>
+9. <span data-ttu-id="5085d-135">Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para o clibpboard**.</span><span class="sxs-lookup"><span data-stu-id="5085d-135">Specifiy the location of the remediated files in the **Path to location of files** text box, then click **Copy to clibpboard**.</span></span>
 
-10. <span data-ttu-id="e4145-136">Cole o comando em um prompt de comando do Windows e pressione **Enter** para carregar os arquivos.</span><span class="sxs-lookup"><span data-stu-id="e4145-136">Paste the command into a Windows Command Prompt and press **Enter** to upload the files.</span></span>
+10. <span data-ttu-id="5085d-136">Cole o comando em um prompt de comando do Windows e pressione **Enter** para carregar os arquivos.</span><span class="sxs-lookup"><span data-stu-id="5085d-136">Paste the command into a Windows Command Prompt and press **Enter** to upload the files.</span></span>
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. <span data-ttu-id="e4145-138">Por fim, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: processar arquivos**.</span><span class="sxs-lookup"><span data-stu-id="e4145-138">Finally, return to Advanced eDiscovery (Preview) and click **Next: Process files**.</span></span>
+11. <span data-ttu-id="5085d-138">Por fim, retorne à descoberta eletrônica avançada (visualização) e clique em **Avançar: processar arquivos**.</span><span class="sxs-lookup"><span data-stu-id="5085d-138">Finally, return to Advanced eDiscovery (Preview) and click **Next: Process files**.</span></span>
 
-12. <span data-ttu-id="e4145-p108">Quando o processamento estiver concluído.  Você pode retornar ao conjunto de trabalho e ver o arquivo corrigido.</span><span class="sxs-lookup"><span data-stu-id="e4145-p108">When processing is complete.  You can return to the working set and see the remediated file.</span></span>
+12. <span data-ttu-id="5085d-p108">Quando o processamento estiver concluído.  Você pode retornar ao conjunto de trabalho e ver o arquivo corrigido.</span><span class="sxs-lookup"><span data-stu-id="5085d-p108">When processing is complete.  You can return to the working set and see the remediated file.</span></span>
 
-## <a name="what-happens-when-files-are-remediated"></a><span data-ttu-id="e4145-141">O que acontece quando os arquivos são corrigidos</span><span class="sxs-lookup"><span data-stu-id="e4145-141">What happens when files are remediated</span></span>
+## <a name="what-happens-when-files-are-remediated"></a><span data-ttu-id="5085d-141">O que acontece quando os arquivos são corrigidos</span><span class="sxs-lookup"><span data-stu-id="5085d-141">What happens when files are remediated</span></span>
 
-<span data-ttu-id="e4145-142">Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos:</span><span class="sxs-lookup"><span data-stu-id="e4145-142">When remediated files are uploaded, the original metadata is preserved with the exception of the following fields:</span></span> 
+<span data-ttu-id="5085d-142">Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos:</span><span class="sxs-lookup"><span data-stu-id="5085d-142">When remediated files are uploaded, the original metadata is preserved with the exception of the following fields:</span></span> 
 
-- <span data-ttu-id="e4145-143">DocumentExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="e4145-143">DocumentExtractedUrl</span></span>
-- <span data-ttu-id="e4145-144">ExtractedTextSize</span><span class="sxs-lookup"><span data-stu-id="e4145-144">ExtractedTextSize</span></span>
-- <span data-ttu-id="e4145-145">HasText</span><span class="sxs-lookup"><span data-stu-id="e4145-145">HasText</span></span>
-- <span data-ttu-id="e4145-146">IsErrorRemediate</span><span class="sxs-lookup"><span data-stu-id="e4145-146">IsErrorRemediate</span></span>
-- <span data-ttu-id="e4145-147">IsParentExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="e4145-147">IsParentExtractedUrl</span></span>
-- <span data-ttu-id="e4145-148">ItemExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="e4145-148">ItemExtractedUrl</span></span>
-- <span data-ttu-id="e4145-149">Loadid</span><span class="sxs-lookup"><span data-stu-id="e4145-149">LoadId</span></span>
-- <span data-ttu-id="e4145-150">ProcessingErrorMessage</span><span class="sxs-lookup"><span data-stu-id="e4145-150">ProcessingErrorMessage</span></span>
-- <span data-ttu-id="e4145-151">ProcessingStatus</span><span class="sxs-lookup"><span data-stu-id="e4145-151">ProcessingStatus</span></span>
-- <span data-ttu-id="e4145-152">Texto</span><span class="sxs-lookup"><span data-stu-id="e4145-152">Text</span></span>
-- <span data-ttu-id="e4145-153">WordCount</span><span class="sxs-lookup"><span data-stu-id="e4145-153">WordCount</span></span>
-- <span data-ttu-id="e4145-154">WorkingsetId</span><span class="sxs-lookup"><span data-stu-id="e4145-154">WorkingsetId</span></span>
+- <span data-ttu-id="5085d-143">DocumentExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="5085d-143">DocumentExtractedUrl</span></span>
+- <span data-ttu-id="5085d-144">ExtractedTextSize</span><span class="sxs-lookup"><span data-stu-id="5085d-144">ExtractedTextSize</span></span>
+- <span data-ttu-id="5085d-145">HasText</span><span class="sxs-lookup"><span data-stu-id="5085d-145">HasText</span></span>
+- <span data-ttu-id="5085d-146">IsErrorRemediate</span><span class="sxs-lookup"><span data-stu-id="5085d-146">IsErrorRemediate</span></span>
+- <span data-ttu-id="5085d-147">IsParentExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="5085d-147">IsParentExtractedUrl</span></span>
+- <span data-ttu-id="5085d-148">ItemExtractedUrl</span><span class="sxs-lookup"><span data-stu-id="5085d-148">ItemExtractedUrl</span></span>
+- <span data-ttu-id="5085d-149">Loadid</span><span class="sxs-lookup"><span data-stu-id="5085d-149">LoadId</span></span>
+- <span data-ttu-id="5085d-150">ProcessingErrorMessage</span><span class="sxs-lookup"><span data-stu-id="5085d-150">ProcessingErrorMessage</span></span>
+- <span data-ttu-id="5085d-151">ProcessingStatus</span><span class="sxs-lookup"><span data-stu-id="5085d-151">ProcessingStatus</span></span>
+- <span data-ttu-id="5085d-152">Texto</span><span class="sxs-lookup"><span data-stu-id="5085d-152">Text</span></span>
+- <span data-ttu-id="5085d-153">WordCount</span><span class="sxs-lookup"><span data-stu-id="5085d-153">WordCount</span></span>
+- <span data-ttu-id="5085d-154">WorkingsetId</span><span class="sxs-lookup"><span data-stu-id="5085d-154">WorkingsetId</span></span>
 
-<span data-ttu-id="e4145-155">Para obter uma definição de todos os campos de metadados do documento na descoberta eletrônica avançada (visualização), confira [campos de metadados do documento](document-metadata-fields.md).</span><span class="sxs-lookup"><span data-stu-id="e4145-155">For a definition of all document metadata fields in Advanced eDiscovery (Preview), see [Document metadata fields](document-metadata-fields.md).</span></span>
+<span data-ttu-id="5085d-155">Para obter uma definição de todos os campos de metadados do documento na descoberta eletrônica avançada (visualização), confira [campos de metadados do documento](document-metadata-fields.md).</span><span class="sxs-lookup"><span data-stu-id="5085d-155">For a definition of all document metadata fields in Advanced eDiscovery (Preview), see [Document metadata fields](document-metadata-fields.md).</span></span>

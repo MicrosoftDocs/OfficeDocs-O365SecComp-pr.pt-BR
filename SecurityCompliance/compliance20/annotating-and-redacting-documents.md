@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9195cdc557b29934a47901cecd593f04e6631f13
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: dd708554e9b89c8f1057cffb1bcbaddb302cb253
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218361"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296474"
 ---
-# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="71085-102">Exibir documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="71085-102">View documents in a working set</span></span>
+# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="bfe51-102">Exibir documentos em um conjunto de trabalho</span><span class="sxs-lookup"><span data-stu-id="bfe51-102">View documents in a working set</span></span>
 
-<span data-ttu-id="71085-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="71085-103">Content coming soon.</span></span>
+<span data-ttu-id="bfe51-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="bfe51-103">Content coming soon.</span></span>
