@@ -4,20 +4,21 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: O Gerenciador de Conformidade no Portal de Confiança do Serviço Microsoft fornece ferramentas para monitorar, implementar e gerenciar os controles para ajudar sua organização a alcançar a conformidade de acordo com os padrões de segurança e proteção de dados do setor (como RGPD, ISO 27001 e 27018, e HIPAA) quando comparados aos serviços em nuvem da Microsoft, como o Microsoft Azure e o Office 365. O Gerenciador de Conformidade ajuda quem supervisiona a estratégia de privacidade e proteção de dados da sua organização a gerenciar o processo de avaliação de risco e conformidade.
-ms.openlocfilehash: 5f0982aaf807e22440d0f35dd285d06c5ed343b2
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223770"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296834"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft
 
