@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'O log de auditoria do Office 365 é um log de auditoria unificado. Por que um log de auditoria unificado? Como os eventos da maioria dos serviços do Office 365 que você é assinante são registrados em um único log de auditoria que você pode pesquisar. Isso significa que você pode pesquisar o usuário e a atividade de administrador nesses serviços:'
-ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214081"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296514"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365
 

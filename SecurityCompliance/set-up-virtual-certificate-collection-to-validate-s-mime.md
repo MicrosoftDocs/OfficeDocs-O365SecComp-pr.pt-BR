@@ -1,9 +1,9 @@
 ---
-title: Configurar coleção de certificados virtuais para validar S/MIME
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
+title: Configurar coleção de certificados virtuais no Exchange Online para validar S/MIME
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,37 +12,42 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: s um administrador de locatários você precisará configurar uma coleção de certificados virtuais que será usada para validar certificados S/MIME.
-ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+description: Os administradores podem aprender a criar uma coleção de certificados virtuais que será usada para validar certificados S/MIME no Exchange Online.
+ms.openlocfilehash: 2aa6e529f5ca374af6fe6d80a403058a8b6e468a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091053"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296944"
 ---
-# <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>Configurar coleção de certificados virtuais para validar S/MIME
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Configurar coleção de certificados virtuais no Exchange Online para validar S/MIME
 
-Como um administrador de locatário, você precisará configurar uma coleção de certificados virtuais que será usada para validar certificados S/MIME. Esta coleção de certificados virtuais é configurada como um tipo de arquivo de repositório de certificados com uma extensão de nome de arquivo SST. O arquivo SST contém todos os certificados raiz e intermediários usados na validação de um certificado S/MIME.
-  
+Como administrador, você precisará configurar uma coleção de certificados virtuais no Exchange Online que será usada para validar certificados S/MIME. Essa coleção de certificados virtuais é configurada como um repositório de certificados com uma extensão de nome de arquivo SST. O arquivo SST contém todos os certificados raiz e intermediários usados durante a validação de um certificado S/MIME.
+
 ## <a name="create-and-save-an-sst"></a>Criar e salvar um SST
-<a name="sectionSection0"> </a>
 
-Você só pode usar o Shell para executar este procedimento. Para saber como abrir o Shell de gerenciamento do Exchange em sua organização local do Exchange, confira **abrir o Shell**. Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554).
-  
-Como administrador, você pode criar este arquivo SST exportando os certificados de uma máquina confiável usando o cmdlet  `Export-Certificate` e especificando o tipo como SST. Para obter mais informações sobre o cmdlet  `Export-Certificate`, consulte o tópico de referência sobre [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps). 
-  
-Assim que o arquivo SST for gerado, use o cmdlet  `Set-Smimeconfig` para salvá-lo no repositório de certificados virtuais usando o parâmetro  _-SMIMECertificateIssuingCA_. Por exemplo:  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`
-  
+Você pode criar esse arquivo de repositório de certificados SST exportando os certificados de uma máquina confiável usando o cmdlet **Export-Certificate** no Windows PowerShell e especificando o valor _Type_ como SST. Para obter instruções, consulte [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).
+
+Depois de ter o arquivo de repositório de certificados SST, use a sintaxe a seguir no PowerShell do Exchange Online para salvar o conteúdo do arquivo SST no repositório de certificados virtual do Exchange Online. Para se conectar ao PowerShell do Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554).
+
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
+```
+
+Este exemplo importa o arquivo SST C:\Meus Documents\Exported Certificate Store. SST.
+
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
+```
+
+Para informações detalhadas de sintaxes e de parâmetros, consulte [set-SmimeConfig](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).
+
 ## <a name="ensuring-a-certificate-is-valid"></a>Garantir que um certificado seja válido
-<a name="sectionSection1"> </a>
 
-O Exchange 2013 SP1 primeiro verifica o arquivo SST e valida o certificado. Se a validação falhar, ele examinará o repositório de certificados da máquina local para validar o certificado. Esse comportamento é novo no Exchange 2013 SP1 e diferente de versões anteriores do Exchange. No Exchange Online, somente o SST será usado para validação.
-  
+No Exchange Online, somente o SST é usado para validação de certificado.
+
 ## <a name="more-information"></a>Mais informações
-<a name="sectionSection2"> </a>
 
 [S/MIME para assinatura e criptografia de mensagens](s-mime-for-message-signing-and-encryption.md)
-  
-[Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
-  
 
+[Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)

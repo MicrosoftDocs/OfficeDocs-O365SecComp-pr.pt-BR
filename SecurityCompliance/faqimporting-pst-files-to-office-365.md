@@ -7,18 +7,19 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Perguntas frequentes para administradores sobre como usar o serviço de importação do Office 365 para importar os arquivos PST do Organizaiton para caixas de correio do Office 365. '
-ms.openlocfilehash: 9ca2e206a1d06c1398181c51e41b4dc68d8d965c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bef9c9e80f4f4c8261e9c44ba201a978937e2841
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218401"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296874"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>PERGUNTAS FREQUENTEs sobre a importação de arquivos PST para o Office 365
 

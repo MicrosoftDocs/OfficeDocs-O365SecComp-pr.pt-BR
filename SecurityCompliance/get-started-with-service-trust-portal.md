@@ -8,15 +8,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
+mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para os relatórios de conformidade normativa do Office 365, Azure e Dynamics 365 online, para ver auditorias de terceiros, descubra como a Microsoft mantém a segurança dos dados dos clientes e como é possível ser compatível com ISO, HIPAA, NIST, FINRA, RGPD e FedRAMP quando você usa esses serviços online.
-ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220251"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296684"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao Portal de Confiança do Serviço Microsoft
 

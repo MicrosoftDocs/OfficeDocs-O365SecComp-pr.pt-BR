@@ -1,7 +1,7 @@
 ---
-title: Evite caracteres inválidos em suas regras de filtro de spam e a política de filtro de spam
-ms.author: krowley
-author: kccross
+title: Evitar caracteres inválidos em suas regras de filtro de spam e na política de filtro de spam
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
 ms.audience: ITPro
@@ -10,30 +10,32 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Fornece ajuda para os administradores que possuem caracteres inválidos em suas configurações antispam e ter problemas ao tentar usar a segurança &amp; Centro de conformidade.
-ms.openlocfilehash: ca409b4daa7bec01417adb7cbfdfa2a128929e81
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.collection:
+- M365-security-compliance
+description: Fornece ajuda para os administradores que têm caracteres inválidos na configuração antispam e estão em problemas ao tentar usar o centro de conformidade &amp; de segurança.
+ms.openlocfilehash: 90cf89d019a34658b676f02baa84c70f27200262
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018730"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276071"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evite caracteres inválidos em suas regras de filtro de spam e política de filtro de spam 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar caracteres inválidos em suas regras de filtro de spam e política de filtro de spam 
 
-Anteriormente, os administradores do Office 365 configurar e definidas as regras de filtro de spam e a política de filtro de spam por meio do Centro de administração do Exchange (EAC). Agora, você pode usar a segurança &amp; Centro de conformidade para gerenciar a sua configuração de antispam. Os caracteres a seguir foram suportados no EAC, mas não há suporte para uso na segurança &amp; Centro de conformidade.  
+Anteriormente, os administradores do Office 365 configuram e configuraram regras de filtro de spam e a política de filtro de spam usando o centro de administração do Exchange (Eat). Agora, use o centro de &amp; conformidade de segurança para gerenciar a configuração antispam. Os seguintes caracteres foram suportados no Eat, mas não têm suporte para uso no centro de &amp; conformidade de segurança.  
 
-**Caracteres inválidos:**
+**Caracteres inVálidos:**
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-Se suas regras de filtro de spam ou sua política de filtro de spam contém qualquer um dos caracteres inválidos, você pode encontrar um ou todos esses problemas:
-- Você talvez não consiga encontrar a política ou regras na segurança &amp; Centro de conformidade.
-- Você pode receber erros ao tentar obter as regras ou a política usando o Windows PowerShell.
-- Você pode achar que a diretiva ou configurações não executar ou executar conforme o esperado.
+Se suas regras de filtro de spam ou sua política de filtro de spam contiver qualquer um dos caracteres inválidos, você poderá encontrar qualquer um ou todos esses problemas:
+- Você pode não conseguir encontrar a política ou as regras no centro de &amp; conformidade de segurança.
+- Você pode receber erros ao tentar obter as regras ou política usando o Windows PowerShell.
+- Você pode achar que a política ou as configurações não são executadas ou executadas conforme o esperado.
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Remova os caracteres inválidos da política de filtro de spam e regras
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Remover os caracteres inválidos da política e regras de filtro de spam
 
-Depois de identificar a política e regras que contêm caracteres inválidos, você pode alterar os nomes usando os cmdlets do Windows PowerShell. 
+Depois de identificar a política e as regras que contêm caracteres inválidos, você pode alterar os nomes usando os cmdlets do Windows PowerShell. 
 
 1. [Conecte-se ao Exchange Online usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
@@ -52,7 +54,7 @@ Depois de identificar a política e regras que contêm caracteres inválidos, vo
   
  ## <a name="for-more-information"></a>Para saber mais
 
-[Gerenciamento de segurança de ameaça &amp; Centro de conformidade](threat-management.md)
+[Gerenciamento de ameaças no centro &amp; de conformidade de segurança](threat-management.md)
   
 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 

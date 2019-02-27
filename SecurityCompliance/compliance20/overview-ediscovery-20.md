@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova versão da descoberta eletrônica avançada (prévia) no Microsoft 365.
-ms.openlocfilehash: a7b134cb527ae98b9df659a9377903f8fcdb3e9f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e2d89c2b8499c8818bececc4414182a6db689fb6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219571"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297014"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Visão geral da descoberta eletrônica avançada (visualização) no Microsoft 365
 

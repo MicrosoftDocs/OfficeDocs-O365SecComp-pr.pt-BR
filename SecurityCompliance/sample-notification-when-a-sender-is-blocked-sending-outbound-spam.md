@@ -1,7 +1,7 @@
 ---
-title: Notificação de amostra quando um remetente for bloqueado enviem spam de saída
-ms.author: krowley
-author: kccross
+title: Notificação de exemplo quando um remetente é bloqueado enviando spam de saída
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
@@ -12,55 +12,57 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
-description: 'Quando um remetente seja bloqueado para o serviço devido ao envio de spam de saída, o administrador de domínio especificado quando você configurar a política de spam de saída receberá um email de notificação semelhante ao seguinte:'
-ms.openlocfilehash: b9fcdf9c2f44a4446a678ca4b22a0a12b24b6fd4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: 'Quando um remetente é bloqueado do serviço devido ao envio de spam de saída, o administrador de domínio especificado ao configurar a política de spam de saída receberá um email de notificação semelhante ao seguinte:'
+ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003240"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275471"
 ---
-# <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Notificação de amostra quando um remetente for bloqueado enviem spam de saída
+# <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Notificação de exemplo quando um remetente é bloqueado enviando spam de saída
 
-Quando um remetente é bloqueado pelo serviço devido ao envio de saída de spam, o administrador de domínio especificado quando você [Configurar a política de spam de saída](configure-the-outbound-spam-policy.md) receberá um email de notificação semelhante ao seguinte: 
+Quando um remetente é bloqueado do serviço devido ao envio de spam de saída, o administrador de domínio especificado ao [Configurar a política de spam de saída](configure-the-outbound-spam-policy.md) receberá um email de notificação semelhante ao seguinte: 
   
  **Endereço do remetente:** spamalerts@microsoft.com 
   
- **Assunto:** Notificação de spam de saída - \< *nome da conta* \> bloqueado para enviar email de saída     
+ **Assunto:** Notificação de spam de \<saída- *nome* \> da conta bloqueado do envio de email de saída     
   
- **Corpo:** Esta é uma resposta automática do sistema de análise de Spam do Exchange Online Protection. 
+ **Corpo:** Esta é uma resposta automática do sistema de análise de spam do Exchange Online Protection. 
   
-Você está sendo contatado porque foi detectado volumes altos de email marcadas como spam ou outro comportamento suspeito, provenientes de sua organização. As contas de email a seguir foram bloqueadas enviem email (eles ainda poderá receber email):
+Você está sendo contatado porque detectamos altos volumes de email marcados como spam ou outro comportamento suspeito originado da sua organização. As contas de email a seguir foram impedidas de enviar email (eles ainda podem receber emails):
   
 \<*nome da conta*  \> 
   
-É provável que essa conta de email foi comprometida. Siga estas etapas:
+É provável que essa conta de email tenha sido comprometida. Siga estas etapas:
   
-1. Resolva esse problema no seu lado a lado:
+1. Resolva este problema ao seu lado:
     
-  - Alterando a senha da conta.
+  - Alterar a senha da conta.
     
-  - Determinar como a conta foi comprometida.
+  - Determinando como a conta foi comprometida.
     
-  - Tomando precauções para garantir que essa vulnerabilidade não vai ser explorada novamente.
+  - Tomar precauções para garantir que essa vulnerabilidade não será explorada novamente.
     
-  - Confirmando que a sua fila de mensagens de saída foi limpa de todas as mensagens ofensivos.
+  - Confirmando que a fila de saída de emails foi limpa de todas as mensagens transgressores.
     
-2. Contate o suporte da Microsoft usando seu canal de contato regular.
+2. Entre em contato com o suporte da Microsoft usando seu canal de contato normal.
     
-3. Explique que você tenha um usuário que seja bloqueado para enviar email e que o problema tiver sido resolvido com.
+3. Explique que você tem um usuário que é bloqueado pelo envio de emails e que o problema foi tratado.
     
-4. O agente criará um tíquete de suporte com as informações que você forneça e escalá-lo para configurar o endereço de email ou domínio desbloqueado.
+4. O agente criará um tíquete de suporte com as informações que você fornecer e o escalonará para ter o endereço de email ou o domínio desbloqueado.
     
-5. Depois que o endereço foi desbloqueado e pendentes sem outros problemas, você será contatado e alertado sobre o desbloqueando.
+5. Depois que o endereço tiver sido desbloqueado e não tiver outros problemas, você será contatado e alertado para o desbloqueio.
     
-Obrigado por auxiliando conosco controlando indesejadas de email.
+Obrigado por nos ajudar a controlar emails indesejados.
   
-Exchange Online Protection.
+Proteção do Exchange Online.
   
-\*\*Observação:-não responda a este email conforme ela é enviada de um endereço não monitorado\*\*
+\*\*Observação: não responda a este email à medida que ele é enviado de um endereço não monitorado\*\*
   
 > [!TIP]
-> Você também pode contatar o suporte via as opções documentados em [Ajuda e suporte para EOP](eop/help-and-support-for-eop.md). 
+> Você também pode entrar em contato com o suporte via opções documentadas em [ajuda e suporte para o EOP](eop/help-and-support-for-eop.md). 
   
 

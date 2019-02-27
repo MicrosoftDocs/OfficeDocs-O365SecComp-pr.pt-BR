@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas e informações de suporte
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+ms.collection:
+- M365-security-compliance
 description: Este tópico descreve as etapas de solução de problemas para os usuários finais e administradores e fornece informações sobre como contatar o suporte técnico para obter assistência.
-ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003120"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275991"
 ---
 # <a name="troubleshooting-and-support-information"></a>Solução de problemas e informações de suporte
 
@@ -43,7 +45,7 @@ Ocasionalmente, você pode enfrentar problemas com o Microsoft Office Outlook de
 Se o problema persistir, entre em contato com o administrador de TI.
   
 > [!TIP]
-> Você também pode enviar mensagens de spam diretamente à Microsoft usando o endereço de email [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) e mensagens de falso positivo usando o endereço de email [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Para obter mais informações, consulte o [envio de spam, não spam e mensagens de golpes de phishing à Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> Você também pode enviar mensagens de spam diretamente para a Microsoft usando o endereço de email [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) e mensagens falsas positivas usando o endereço de email do [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Para obter mais informações, consulte [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
 ## <a name="troubleshooting-for-administrators"></a>Solução de problemas para os administradores
 
@@ -85,11 +87,11 @@ Como administrador, você pode perceber problemas com usuários que utilizam o S
     
 ## <a name="support-information"></a>Informações de suporte
 
-Se você precisar de ajuda com a instalação, configuração ou desinstalação do add-in, entre em contato com suporte técnico usando o novo link de solicitação de serviço da página de suporte no Centro de administração do Office 365. Para obter outras opções, incluindo enviando uma solicitação de serviço através das opções de telefone e auto-suporte, consulte a [Ajuda e suporte para EOP](eop/help-and-support-for-eop.md).
+Se você precisar de ajuda com a instalação, configuração ou desinstalação do suplemento, entre em contato com o suporte técnico usando o link nova solicitação de serviço na página suporte no centro de administração do Office 365. Para opções adicionais, incluindo o envio de uma solicitação de serviço por meio de opções de telefone e de autoatendimento, consulte [ajuda e suporte para EOP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Para saber mais
 
-[Habilitar o suplemento de Mensagem de relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Habilitar o suplemento de Mensagem de Relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Relatar mensagens de lixo eletrônico à Microsoft](report-junk-email-messages-to-microsoft.md)
   

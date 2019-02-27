@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: 'Resumo: entenda a resiliência de dados no Microsoft Office 365.'
-ms.openlocfilehash: 650f6a915b2d35eddd30e25b9a45787591f783fa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8cfdcc62a28ba5feaf9a76e0ec004fd1b3890831
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218901"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276151"
 ---
 # <a name="encryption-risks-and-protections"></a>Riscos e proteções de criptografia
 

@@ -1,7 +1,7 @@
 ---
 title: Usar notificações de spam do usuário final para liberar e relatar mensagens de spam em quarentena
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
-description: ''
-ms.openlocfilehash: 314c8ae028a24370c9c47fb3f005f18f9881e9e9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: 'Os usuários que vêem uma mensagem de notificação de spam de usuário final do seu administrador sobre emails em quarentena podem executar essas ações nas mensagens. '
+ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215901"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275211"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificações de spam do usuário final para liberar e relatar mensagens de spam em quarentena
 

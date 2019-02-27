@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: No Office 365, você pode ativar o log de auditoria de caixa de correio para registrar o acesso à caixa de correio por proprietários de caixa de correio, representantes e administradores. Por padrão, a auditoria de caixa de correio no Office 365 não está ativada. Depois de habilitar o log de auditoria de caixa de correio para uma caixa de correio, você pode pesquisar o log de auditoria do Office 365 para atividades realizadas na caixa de correio.
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214601"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295914"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar a auditoria de caixa de correio no Office 365
   

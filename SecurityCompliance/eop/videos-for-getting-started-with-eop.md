@@ -1,7 +1,7 @@
 ---
 title: Vídeos de introdução ao EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: A série de vídeos a seguir ajudará você a configurar e usar o serviço de filtragem de email hospedado pelo Exchange Online Protection (EOP).
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027638"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276001"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vídeos de introdução ao EOP
 
@@ -30,7 +32,7 @@ Estes vídeos são sobre como adaptar as configurações antispam para atender �
 - Configurar as Listas de permissão de IP e de bloqueio de IP no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-    Para obter mais detalhes, consulte o tópico [Configure a política de filtro de conexão](../configure-the-connection-filter-policy.md) . 
+    Para obter mais detalhes, consulte o tópico [Configurar a política de filtro de conexão](../configure-the-connection-filter-policy.md) . 
     
 - Configurar a filtragem de conteúdo de spam no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
@@ -47,7 +49,7 @@ Você também pode querer configurar a política de spam de saída porque deseja
 - Configurar a Política de Spam de Saída
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
-    Para obter mais detalhes, consulte [Configure a política de spam de saída](../configure-the-outbound-spam-policy.md)
+    Para obter mais detalhes, consulte o [Configure the Outbound Spam Policy](../configure-the-outbound-spam-policy.md)
     
 O EOP também tem configurações para tratar malware que é detectado pelo serviço, como descrito pelo vídeo de filtragem antimalware.
   
@@ -61,7 +63,7 @@ Para filtrar e rotear mensagens com base em condições específicas definidas, 
 - Configurar regras de Transporte do Exchange no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Para obter mais detalhes, consulte o tópico [de email regras do fluxo (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se você usar o EOP autônomo, ou consulte o tópico de [regras de transporte](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , se você usar o Exchange Online. 
+    Para obter mais detalhes, consulte o tópico sobre [regras de fluxo de emails (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se você usar o EOP autônomo, ou consulte o tópico [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se você usar o Exchange Online. 
     
 Se estiver interessado em configurar o serviço executando scripts na linha de comando, o vídeo do PowerShell remoto o ajudará a começar.
   

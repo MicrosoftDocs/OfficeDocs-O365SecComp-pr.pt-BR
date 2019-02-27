@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Saiba como configurar o registro do Windows para aumentar a taxa de transferência de dados ao baixar os resultados da pesquisa e pesquisar dados &amp; do centro de conformidade de segurança do Office 365 e da descoberta eletrônica avançada do Office 365.
-ms.openlocfilehash: bafe9eda98b411472098770e4178748eb84f8afd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216241"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295424"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar a velocidade de download ao exportar resultados de pesquisa de descoberta eletrônica do Office 365
 

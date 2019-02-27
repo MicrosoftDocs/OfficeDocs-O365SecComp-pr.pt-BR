@@ -1,7 +1,7 @@
 ---
 title: Listas de remetentes seguros e remetentes bloqueados no Exchange Online
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
+ms.collection:
+- M365-security-compliance
 description: Como um administrador do Exchange Online ou do Exchange Online Protection (EOP), você pode ajudar a garantir que uma mensagem de email que viaja pelo serviço não seja marcada como spam. Uma maneira de fazer isso é criar listas de remetentes seguros e remetentes bloqueados para as pessoas da sua organização.
-ms.openlocfilehash: 923d71c4feeae16db538e381ee7c2ed7814cb8f8
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222940"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275651"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remetentes seguros e remetentes bloqueados no Exchange Online
 

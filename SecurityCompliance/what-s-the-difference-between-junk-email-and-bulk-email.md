@@ -1,7 +1,7 @@
 ---
 title: Qual é a diferença entre lixo eletrônico e email em massa?
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 1/7/2015
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
-description: Os clientes às vezes askwhat da diferença entre lixo eletrônico e mensagens de email em massa? O objetivo deste tópico é explicar a diferença e fornecem informações sobre as diferentes opções disponíveis para ambos no Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
-ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
+ms.collection:
+- M365-security-compliance
+description: Os clientes às vezes askwhat a diferença entre lixo eletrônico e mensagens de email em massa? O objetivo deste tópico é explicar a diferença e fornecer informações sobre as diferentes opções disponíveis para o Exchange Online e o Exchange Online Protection (EOP).
+ms.openlocfilehash: 877912c94af5d4b399769759189d091c62d50075
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27733297"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275711"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Qual é a diferença entre lixo eletrônico e email em massa?
 
@@ -29,7 +31,7 @@ ms.locfileid: "27733297"
 As mensagens de lixo eletrônico são mensagens de "spam", significando emails não solicitados (e geralmente indesejados) que são filtrados pelo serviço. Por padrão, o serviço rejeita a mensagem de spam com base na reputação do endereço IP de envio. Entretanto, se ele passa pela inspeção de IP, mas é classificado como spam pelos filtros de conteúdo, a mensagem é enviada para a pasta Lixo Eletrônico dos destinatários pretendidos. 
   
 > [!NOTE]
-> A ação executada em mensagens de conteúdo filtrado é configurável por meio de políticas de filtro de conteúdo no Centro de administração do Exchange (EAC), conforme descrito em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md). Além disso, se você concorda com a classificação de spam, é possível denunciar mensagens que você considera spam ou não spam à Microsoft de várias maneiras, conforme descrito em [envio de spam, não spam e mensagens de golpes de phishing à Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> A ação executada em mensagens filtradas por conteúdo é configurável por meio de políticas de filtro de conteúdo no centro de administração do Exchange (Eat), conforme descrito em [Configure Your spam filter Policies](configure-your-spam-filter-policies.md). Além disso, se você discordar da classificação de spam, poderá relatar mensagens que você considerar como spam ou não spam para a Microsoft de várias maneiras, conforme descrito em [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
  **O que é email em massa?**
   
@@ -41,6 +43,6 @@ A maneira de gerenciar o email em massa não é uma decisão clara - afinal, se 
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Habilitar o controle de sensibilidade de email em massa na política de filtro de conteúdo
 
-Dependendo da política da sua empresa em mensagens de email em massa, os administradores podem selecionar um limite para atribuir o email em massa. A configuração é configurável por meio de políticas de filtro de conteúdo no EAC. Confira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para as etapas. Você pode escolher uma configuração de limite de 1 a 9, onde 1 marca a maioria dos emails em massa como spam e 9 permite que a maioria dos emails em massa ao ser entregue. O serviço, em seguida, executa a ação configurada, por exemplo, enviar a mensagem para a pasta de lixo eletrônico do destinatário. 
+Dependendo da política de sua empresa em mensagens de email em massa, os administradores podem selecionar um limite para atribuir o email em massa. A configuração é configurável por meio de políticas de filtro de conteúdo no Eat. ConFira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para as etapas. Você pode escolher uma configuração de limite de 1-9, onde 1 marca a maior parte dos emails em massa como spam, e 9 permite que a maior parte dos emails em massa seja entregue. Em seguida, o serviço realiza a ação configurada, como enviar a mensagem para a pasta lixo eletrônico do destinatário. 
   
 

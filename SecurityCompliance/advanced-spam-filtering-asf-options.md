@@ -1,7 +1,7 @@
 ---
 title: Opções avançadas de filtragem de spam
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/26/2015
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: As opções avançadas de filtragem de spam oferecem aos administradores a capacidade de inspecionar vários atributos de conteúdo de uma mensagem. A presença desses atributos em uma mensagem aumenta a pontuação de spam da mensagem (aumentando o potencial para que ela seja identificada como spam) ou marca a mensagem como spam. O destino das opções ASF Propriedades de mensagens específicas, como marcas HTML e redirecionamento de URL, que normalmente são encontrados em mensagens de spam.
-ms.openlocfilehash: d9333fd4f5c8937e440efb15e1a04db787b39b78
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: dd782c4e1e95865651df7e9e14b72a920c8efd6f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218671"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275961"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opções avançadas de filtragem de spam
 

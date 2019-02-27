@@ -4,21 +4,23 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Criar políticas de alerta no centro de conformidade &amp; de segurança do Office 365 para monitorar possíveis ameaças, perda de dados e problemas de permissões. Em seguida, você pode exibir e gerenciar os alertas gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 5c2d9dc7cf74198198036f062e8300f82fd69631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6418315914a0a80421db382ae8e55ccf3fc310a2
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220661"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296554"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Políticas de alerta no centro de conformidade &amp; de segurança do Office 365
 
@@ -165,7 +167,7 @@ Para ver a qual categoria uma política de alerta padrão é atribuída, confira
 |Gerenciamento de dispositivo<br/>|         |         |         |         |         |         |
 |Gerenciamento de descarte<br/>|         |         |         |         |         |         |
 |Gerenciamento de conformidade de DLP<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
-|Exportar<br/>|         |         |         |         |         |         |
+|Exportação<br/>|         |         |         |         |         |         |
 |Bloqueio<br/>|         |         |         |         |         |         |
 |Gerenciar Alertas<br/>|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuração da organização|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

@@ -1,7 +1,7 @@
 ---
 title: Usar o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: Você está recebendo uma mensagem de erro ao tentar enviar um email para um destinatário cujo endereço de email está no Office 365? Se acha que não deve estar recebendo a mensagem de erro, use o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365.
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003250"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276172"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365
 
@@ -30,7 +32,7 @@ A Microsoft usa a lista de remetentes bloqueados para proteger seus clientes con
   
 Você saberá que foi adicionado à lista quando receber uma resposta a uma mensagem de email que inclui um erro parecido com o seguinte:
   
-550 5.7.606-649 acesso negado, proibidos enviando IP [_endereço IP_]; Para solicitar remoção dessa lista, visite https://sender.office.com/ e siga as instruções. Para obter mais informações, consulte [relatórios de entrega de Email no Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 acesso negado, envio de IP proibido [_endereço IP_]; Para solicitar a remoção dessa lista, acesse https://sender.office.com/ e siga as instruções. Confira mais informações [em notificações de falha na entrega de email no Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 em que  _IP address_ é o endereço IP do computador no qual o servidor de email é executado. 
   
@@ -42,7 +44,7 @@ em que  _IP address_ é o endereço IP do computador no qual o servidor de email
     
 3. Clique em **Enviar**.
     
-    O portal envia um email para o endereço de email que você fornecer. O email terá uma aparência semelhante a seguinte: ![captura de tela de email recebido quando você envia uma solicitação por meio do portal de delist](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    O portal envia um email para o endereço de email que você fornece. O email será parecido com o seguinte: ![captura de tela do email recebido ao enviar uma solicitação pelo portal de deslista](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. Clique no link confirmação no email enviado a você pelo portal de remoção da lista.
     

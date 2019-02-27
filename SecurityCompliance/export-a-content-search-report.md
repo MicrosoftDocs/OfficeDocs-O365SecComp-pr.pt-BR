@@ -9,7 +9,9 @@ f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Em vez de exportar os resultados reais de uma pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365, você pode apenas exportar um relatório de resultados de pesquisa. O relatório contém um resumo dos resultados da pesquisa e um documento com informações detalhadas sobre cada item que seria exportado.
-ms.openlocfilehash: 12799474bfb099c521f72cd3902173d42b17d4dd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216231"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295974"
 ---
 # <a name="export-a-content-search-report"></a>Exportar um relatório da Pesquisa de Conteúdo
 

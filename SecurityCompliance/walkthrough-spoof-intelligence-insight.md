@@ -1,7 +1,7 @@
 ---
 title: Visão geral do spoofing Intelligence
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 ms.date: 7/30/2018
 ms.audience: ITPro
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
+ms.collection:
+- M365-security-compliance
 description: Veja como funciona a nova compreensão de inteligência de falsificação.
-ms.openlocfilehash: 83fa1580a0e7c4717581cc5f23b8f525d6b918e0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220321"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275911"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Passo a passo: informações sobre spoof Intelligence
 

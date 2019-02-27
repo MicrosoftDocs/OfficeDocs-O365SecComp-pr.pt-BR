@@ -1,5 +1,5 @@
 ---
-title: Proteção antispam de emails do Office 365
+title: Proteção contra spam de email do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre as configurações e filtros antispam que ajudarão você a evitar spam no Exchange Online e no Office 365. Obtendo muito spam no Office 365? Você pode personalizar suas configurações de política antispam e filtros de spam.
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223420"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296314"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Proteção antispam de emails do Office 365
+# <a name="office-365-email-anti-spam-protection"></a>Proteção contra spam de email do Office 365
 
 Você está preocupado com muito spam no Office 365? Criamos vários filtros de spam no serviço do Office 365 ou do Exchange Online Protection (EOP), para que seu email fique protegido do momento em que você recebe a primeira mensagem. Para ajudar a evitar spam no Office 365, talvez você queira alterar uma configuração de proteção para lidar com um problema específico em sua organização, digamos que você esteja recebendo muitos spams de um remetente específico, por exemplo, ou simplesmente ajustar suas configurações para que elas sejam adaptado para atender melhor às necessidades da sua organização. Para fazer isso, você pode alterar as configurações antispam no centro de conformidade de segurança &amp; do Office 365.
   
@@ -75,7 +75,7 @@ Se você estiver preocupado com spam, phishing e falsificação no Office 365, u
   
 [Impedir falsos positivos marcados como spam usando uma lista confiável ou outras técnicas](prevent-email-from-being-marked-as-spam-0.md)
   
-[Como configurar a filtragem de spam do Office 365 para ajudar a bloquear mensagens de lixo eletrônico](block-email-spam-to-prevent-false-negatives.md)
+[Como configurar a filtragem de spam do Office 365 para ajudar a bloquear mensagens de lixo eletrônico](reduce-spam-email.md)
   
 [Qual é a diferença entre lixo eletrônico e email em massa?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   
