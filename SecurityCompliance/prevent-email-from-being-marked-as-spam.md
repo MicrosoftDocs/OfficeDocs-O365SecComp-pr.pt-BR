@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219411"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296884"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
  **Seu email real está sendo marcado como spam no Office 365? Faça isso.**
   
-O EOP (Proteção do Exchange Online) é um serviço de filtragem de email baseado na nuvem que ajuda a proteger sua organização contra spam e malware. Se você tem caixas de correio no Office 365, elas são automaticamente protegidas pelo EOP como parte do serviço.
-
-O EOP tenta filtrar o spam e manter sua Caixa de Entrada limpa de conteúdos que os usuários não desejam ver. Mas, às vezes, o EOP filtra o que você deseja ver. Quando uma mensagem é incorretamente marcada como spam pelo filtro de spam isso é chamado de falso positivo.
-
 Se você receber um falso positivo, relate a mensagem à Microsoft usando [Use o suplemento de relatório de mensagem](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode encaminhar a mensagem *como um anexo* para not_junk@office365.microsoft.com.
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**Importante** Se você não encaminhar as mensagens como anexos, os cabeçalhos estarão ausentes e não poderemos melhorar a filtragem de lixo eletrônico no Office 365.
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar o motivo pelo qual a mensagem foi marcada como spam
 
