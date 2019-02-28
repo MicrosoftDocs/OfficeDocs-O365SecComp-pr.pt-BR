@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar uma política de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216731"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313167"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão da sua organização
 
@@ -53,9 +53,9 @@ Siga estas etapas para configurar e usar a supervisão na sua organização do O
 
     Testar sua política de supervisão para garantir que esteja funcionando conforme o desejado é uma parte importante da garantia de que sua estratégia de conformidade esteja atendendo aos padrões.
 
-- **Etapa 6-(opcional)** [Configurar o suplemento do Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar as comunicações supervisionadas](configure-supervision-policies.md#UseOutlook)
+- **Etapa 6-(opcional)** [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](configure-supervision-policies.md#UseOutlook)
 
-    O suplemento de supervisão para o Outlook oferece aos revisores o acesso ao direito de funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
+    O Outlook pode ser configurado para dar aos revisores o acesso à funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Depois de criar uma política de supervisão, é uma boa ideia testar para garan
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>Etapa 6: configurar o suplemento do Outlook para revisores (opcional)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Etapa 6: configurar o Outlook para revisores (opcional)
 
-Os revisores que desejam usar o Outlook em vez de usar o painel de supervisão no Office 365 ou no Outlook na Web para revisar as comunicações devem instalar o suplemento de supervisão para o cliente do Outlook.
+Os revisores que desejam usar o Outlook em vez de usar o painel de supervisão no Office 365 para rever as comunicações devem configurar o cliente do Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Etapa 1: copiar o endereço da caixa de correio de supervisão
 
-Para instalar o suplemento para a área de trabalho do Outlook, você precisará do endereço da caixa de correio de supervisão criada como parte da configuração da política de supervisão.
+Para configurar a revisão do Outlook para a área de trabalho do Outlook para a Web, você precisará do endereço da caixa de correio de supervisão criada como parte da configuração da política de supervisão.
   
 > [!NOTE]
 > Se outra pessoa criou a política, você precisará obter esse endereço deles para instalar o suplemento.
@@ -210,7 +210,7 @@ Para instalar o suplemento para a área de trabalho do Outlook, você precisará
 
 4. No submenu detalhes da política, em **caixa de correio de supervisão**, copie o endereço.<br/>![A seção "caixa de correio de supervisão" do submenu de detalhes da política de supervisão mostrando o endereço da caixa de correio de supervisão realçada](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>Etapa 2: configurar a caixa de correio de supervisão para o Outlook desktop Access
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Etapa 2: configurar a caixa de correio de supervisão para o acesso do Outlook
 
 Em seguida, os revisores precisarão executar alguns comandos do PowerShell do Exchange Online para que eles possam conectar o Outlook à caixa de correio de supervisão.
   
