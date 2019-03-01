@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: Ao procurar informações confidenciais no conteúdo, você precisa descrevê-las no que é chamado de regra. A Prevenção contra perda de dados (DLP) inclui regras para os tipos de informação confidencial mais comuns que você pode usar imediatamente. Para usar essas regras, você precisa incluí-las em uma política. Se quiser ajustar essas regras internas para atender às necessidades específicas da sua organização, basta criar um tipo de informação confidencial personalizado. Este tópico mostra como personalizar o arquivo XML que contém a coleção de regras existente para detectar um intervalo maior de possíveis informações de cartão de crédito.
-ms.openlocfilehash: 9014a2270947fb97edc1ce834985fbd084bc19e6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215441"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341452"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar um tipo de informação confidencial interno
 
@@ -212,16 +212,16 @@ Estas são as definições dos termos encontrados durante este procedimento.
   
 |**Termo**|**Definição**|
 |:-----|:-----|
-|Entidade  <br/> |Entidades são o que chamamos de tipos de informação confidencial, como os números de cartão de crédito. Cada entidade tem um GUID exclusivo como ID. Quando você copia um GUID e pesquisa por ele no XML, encontra a definição de regra XML e todas as traduções localizadas dessa regra XML. Também é possível encontrar essa definição localizando o GUID para a tradução e depois pesquisando por este GUID.  <br/> |
-|Funções  <br/> |As referências `Func_credit_card` do arquivo XML são uma função no código compilado. Funções são usadas para executar expressões regulares complexas e confirmam se as somas de verificação correspondem às nossas regras internas. Como isso ocorre no código, algumas das variáveis não aparecem no arquivo XML.  <br/> |
-|IdMatch  <br/> |É com esse identificador que o padrão está tentando fazer a correspondência, por exemplo, com um número de cartão de crédito. Saiba mais sobre isso e sobre as marcas `Match` em [Regras de entidades](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).  <br/> |
-|Lista de palavras-chave  <br/> |O arquivo XML também faz referência a `keyword_cc_verification` e a `keyword_cc_name`, que são listas de palavras-chave, nas quais procuramos por correspondência em `patternsProximity` com a entidade. Atualmente elas não são exibidas no XML.  <br/> |
-|Padrão  <br/> |O padrão contém a lista daquilo que o tipo confidencial está procurando, o que inclui expressões regulares, palavras-chave e funções internas (que realizam tarefas como verificar as somas de verificação). Os tipos de informação confidencial podem ter vários padrões com confianças exclusivas, o que é útil na criação de um tipo de informação confidencial que retornará uma confiança alta se a evidência comprobatória for encontrada e uma confiança baixa se pouca ou nenhuma evidência comprobatória for encontrada.  <br/> |
-|confidenceLevel padrão  <br/> |Esse é o nível de confiança que o mecanismo de DLP encontrou na correspondência. Esse nível de confiança está associado a uma correspondência para o padrão se os requisitos do padrão são atendidos. Essa é a medida de confiança que deve ser considerada ao usar as regras de transporte do Exchange (ETRs).  <br/> |
-|patternsProximity  <br/> |Quando encontramos algo que parece um padrão de número de cartão de crédito, o `patternsProximity` é a proximidade em torno desse número, onde procuraremos evidências corroborativas.  <br/> |
-|recommendedConfidence  <br/> |Esse é o nível de confiança recomendável para esta regra. A confiança recomendada se aplica às entidades e afinidades. Para entidades, esse número nunca é avaliado em relação ao `confidenceLevel` do padrão. É simplesmente uma sugestão para ajudá-lo a escolher um nível de confiança, caso deseje usar um. Com afinidades, o `confidenceLevel` do padrão deve ser maior do que o número de `recommendedConfidence` para uma ação ETR ser chamada. A `recommendedConfidence` é o nível de confiança padrão usado em ETRs que chamam uma ação. Se quiser, é possível alterar manualmente o ETR que será chamado com base no nível de confiança do padrão.  <br/> |
+|Entidade|Entidades são o que chamamos de tipos de informação confidencial, como os números de cartão de crédito. Cada entidade tem um GUID exclusivo como ID. Quando você copia um GUID e pesquisa por ele no XML, encontra a definição de regra XML e todas as traduções localizadas dessa regra XML. Também é possível encontrar essa definição localizando o GUID para a tradução e depois pesquisando por este GUID.|
+|Funções|As referências `Func_credit_card` do arquivo XML são uma função no código compilado. Funções são usadas para executar expressões regulares complexas e confirmam se as somas de verificação correspondem às nossas regras internas. Como isso ocorre no código, algumas das variáveis não aparecem no arquivo XML.|
+|IdMatch|É com esse identificador que o padrão está tentando fazer a correspondência, por exemplo, com um número de cartão de crédito. Saiba mais sobre isso e sobre as marcas `Match` em [Regras de entidades](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).|
+|Lista de palavras-chave|O arquivo XML também faz referência a `keyword_cc_verification` e a `keyword_cc_name`, que são listas de palavras-chave, nas quais procuramos por correspondência em `patternsProximity` com a entidade. Atualmente elas não são exibidas no XML.|
+|Padrão|O padrão contém a lista daquilo que o tipo confidencial está procurando, o que inclui expressões regulares, palavras-chave e funções internas (que realizam tarefas como verificar as somas de verificação). Os tipos de informação confidencial podem ter vários padrões com confianças exclusivas, o que é útil na criação de um tipo de informação confidencial que retornará uma confiança alta se a evidência comprobatória for encontrada e uma confiança baixa se pouca ou nenhuma evidência comprobatória for encontrada.|
+|confidenceLevel padrão|Esse é o nível de confiança que o mecanismo de DLP encontrou na correspondência. Esse nível de confiança está associado a uma correspondência para o padrão se os requisitos do padrão são atendidos. Essa é a medida de confiança que deve ser considerada ao usar as regras de fluxo de emails (também conhecidas como regras de transporte) do Exchange.|
+|patternsProximity|Quando encontramos algo que parece um padrão de número de cartão de crédito, o `patternsProximity` é a proximidade em torno desse número, onde procuraremos evidências corroborativas.|
+|recommendedConfidence|Esse é o nível de confiança recomendável para esta regra. A confiança recomendada se aplica às entidades e afinidades. Para entidades, esse número nunca é avaliado em relação ao `confidenceLevel` do padrão. É simplesmente uma sugestão para ajudá-lo a escolher um nível de confiança, caso deseje usar um. Com afinidades, o `confidenceLevel` do padrão deve ser maior do que o número de `recommendedConfidence` para uma ação de regra de fluxo de emails ser chamada. A `recommendedConfidence` é o nível de confiança padrão usado em regras de fluxo de emails que chamam uma ação. Se quiser, é possível alterar manualmente a regra de fluxo de emails que será chamada com base no nível de confiança do padrão.  |
    
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 - [O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
     

@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores autônomos de EOP para ajudar a evitar falsos negativos de spam
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306540"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341812"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar o filtro antispam do Office 365 com estas configurações
 
@@ -37,9 +37,9 @@ Personalize o filtro de spam do Office 365 adicionando o endereço IP do remeten
     
 3. Adicione o endereço IP à Lista de IP Bloqueados executando as etapas em "Usar o EAC para editar a política de filtro de conexão padrão" em [Configurar a política de filtro de conexão](https://technet.microsoft.com/pt-BR/library/jj200718%28v=exchg.150%29.aspx).
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Bloquear emails em massa com regras de transporte ou filtro de spam
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloquear emails em massa com regras de fluxo de emails (também conhecida como regras de transporte) ou filtro de spam
 
-O spam é, em grande parte, emails em massa, por exemplo, boletins informativos ou promoções. Personalize o filtro de spam no Office 365 se você [Usar regras de transporte para filtrar rigorosamente as mensagens de email em massa](https://technet.microsoft.com/pt-BR/library/dn720438%28v=exchg.150%29.aspx) ou ative a configuração de **Emails em massa** nas [Opções Avançadas de Filtragem de Spam](https://technet.microsoft.com/pt-BR/library/jj200750%28v=exchg.150%29.aspx) em seu filtro de spam. No Centro de administração do Exchange, comece clicando em **Proteção** \> **Filtro de conteúdo** e, em seguida, clique duas vezes para filtrar a política que você deseja ajustar. Clique em **Ações para spam e emails em massa** para ajustar as configurações, conforme mostrado aqui. 
+O spam é, em grande parte, emails em massa, por exemplo, boletins informativos ou promoções. Personalize o filtro de spam no Office 365 se você [Usar regras de fluxo de emails para configurar a filtragem de email em massa](use-transport-rules-to-configure-bulk-email-filtering.md) ou ative a configuração de **Emails em massa** nas [Opções avançadas de filtragem de spam](advanced-spam-filtering-asf-options.md) em seu filtro de spam. No Centro de administração do Exchange, comece clicando em **Proteção** \> **Filtro de conteúdo** e, em seguida, clique duas vezes para filtrar a política que você deseja ajustar. Clique em **Ações para spam e emails em massa** para ajustar as configurações, conforme mostrado aqui. 
   
 ![Definir o filtro de email em massa no Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   

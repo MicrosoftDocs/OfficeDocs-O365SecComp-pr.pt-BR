@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296884"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341472"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
@@ -41,7 +41,7 @@ No cabeçalho, procure os cabeçalhos e os valores a seguir.
 
 - **SFV:BLK** Indica que a mensagem foi marcada como spam porque o endereço de envio está na lista de Remetentes Bloqueados do destinatário. 
     
-- **SFV:SKS** Indica que a mensagem foi marcada como spam antes do filtro de conteúdo. Isso pode incluir uma regra de transporte marcando a mensagem como spam. Execute um rastreamento de mensagens para ver se uma regra de transporte disparada pode ter definido um nível de confiança alto de spam (SCL). 
+- **SFV:SKS** Indica que a mensagem foi marcada como spam antes do filtro de conteúdo. Isso pode incluir uma regra de fluxo de emails (também conhecida como regra de transporte) marcando a mensagem como spam. Execute um rastreamento de mensagens para ver se uma regra de fluxo de emails disparada pode ter definido um nível de confiança alto de spam (SCL). 
     
 - **SFV:SKB** Indica que a mensagem foi marcada como spam porque correspondeu a uma lista de bloqueios na política de filtro de spam. 
     
@@ -59,7 +59,7 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
   
 ### <a name="for-admins"></a>Para administradores
 
-- **Aponte seus registros de DNS para o Office 365** Para que o EOP ofereça proteção, os registros DNS do seu servidor de mensagens (MX) para todos os domínios devem apontar para o Office 365 e apenas para o Office 365. Se seu MX não apontar para o Office 365, o EOP não fornecerá filtragem de spam para seus usuários. Se você desejar usar outro dispositivo ou serviço para fornecer a filtragem de spam do seu domínio, desabilite a proteção contra spam no EOP. Você pode fazer isso criando uma regra de transporte que defina o valor do SCL como -1. Se você mais tarde decidir usar o EOP, remova essa regra de transporte. 
+- **Aponte seus registros de DNS para o Office 365** Para que o EOP ofereça proteção, os registros DNS do seu servidor de mensagens (MX) para todos os domínios devem apontar para o Office 365 e apenas para o Office 365. Se seu MX não apontar para o Office 365, o EOP não fornecerá filtragem de spam para seus usuários. Se você desejar usar outro dispositivo ou serviço para fornecer a filtragem de spam do seu domínio, desabilite a proteção contra spam no EOP. Você pode fazer isso criando uma regra de fluxo de emails que defina o valor do SCL como -1. Se você mais tarde decidir usar o EOP, remova essa regra de fluxo de emails. 
     
 - **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas. 
     

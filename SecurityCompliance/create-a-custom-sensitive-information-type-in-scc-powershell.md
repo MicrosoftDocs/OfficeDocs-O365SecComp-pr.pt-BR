@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Saiba como criar e importar um tipo de informação confidencial personalizado para DLP no Centro de Conformidade e Segurança do Office 365.
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223300"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341512"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365
 
@@ -319,9 +319,9 @@ Ao concluir, seu elemento RulePack deve ter esta aparência.
   
 ## <a name="changes-for-exchange-online"></a>Mudanças para o Exchange Online
 
-Anteriormente, você podia usar o Exchange Online PowerShell para importar os tipos personalizados de informações confidenciais para a DLP. Agora os tipos personalizados de informações confidenciais podem ser usados no Centro de Administração do Exchange e o Centro de Conformidade e Segurança. Como parte dessa melhoria, você deve usar o PowerShell do Centro de Conformidade e Segurança para importar tipos de informações confidenciais personalizados, você não poderá mais importá-los do Exchange PowerShell. Os tipos personalizados de informações confidenciais continuarão a funcionar como antes; no entanto, pode levar até uma hora para que as alterações feitas nos tipos personalizados de informações confidenciais no Centro de Conformidade e Segurança apareçam no Centro de Administração do Exchange.
+Anteriormente, você podia usar o Exchange Online PowerShell para importar os tipos personalizados de informações confidenciais para a DLP. Agora os tipos personalizados de informações confidenciais podem ser usados no Centro de administração do Exchange e o Centro de Conformidade &amp; Segurança. Como parte dessa melhoria, você deve usar o PowerShell do Centro de Conformidade &amp; Segurança para importar tipos de informações confidenciais personalizados, você não poderá mais importá-los do Exchange PowerShell. Os tipos personalizados de informações confidenciais continuarão a funcionar como antes; no entanto, pode levar até uma hora para que as alterações feitas nos tipos personalizados de informações confidenciais no Centro de Conformidade &amp; Segurança apareçam no Centro de administração do Exchange.
   
-Observe que, no Centro de Conformidade e Segurança, o cmdlet `DlpSensitiveInformationTypeRulePackage` é usado para carregar um pacote de regras. Anteriormente, no Centro de Administração do Exchange, o cmdlet `ClassificationRuleCollection` era usado. 
+Observe que, no Centro de Conformidade &amp; Segurança, o cmdlet `DlpSensitiveInformationTypeRulePackage` é usado para carregar um pacote de regras. Anteriormente, no Centro de administração do Exchange, o cmdlet `ClassificationRuleCollection` era usado. 
   
 ## <a name="upload-your-rule-package"></a>Carregar o pacote de regras
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Aprenda as maneiras mais comuns de reduzir spam e lixo eletrônico no Office 365.
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295504"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340882"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Como reduzir emails de spam no Office 365
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295504"
   
 É altamente recomendável relatar as mensagens de Falso negativo [usando o suplemento Mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ajudar a melhorar nossa filtros. Além disso, você pode encaminhar a mensagem *como um anexo* para junk@office365.microsoft.com ou phish@office365.microsoft.com (se foi phishing).
 
->[Aviso] Se você acha que a mensagem é lixo eletrônico e está na pasta Lixo eletrônico, isso não deve ser um problema. Se você não deseja vê-la na caixa de correio, altere a política antispam para colocar a mensagem em quarentena. Mais informações sobre como colocar as mensagens em quarentena podem ser encontradas em [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md).
+> [!TIP]
+> Se você acha que a mensagem é lixo eletrônico e está na pasta Lixo eletrônico, isso não deve ser um problema. Se você não deseja vê-la na caixa de correio, altere a política antispam para colocar a mensagem em quarentena. Mais informações sobre como colocar as mensagens em quarentena podem ser encontradas em [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md).
 
 ## <a name="fixing-allowed-spam"></a>Corrigir spam permitido
 
-Geralmente, vemos que os clientes recebem lixo eletrônico em sua caixa de entrada devido às configurações incorretas. O mais comum é configurar seus domínios em uma regra de transporte para ignorar filtros ou listar os domínios na lista de permissão/remetentes. Isso não é bom porque essas mensagens ignoram a filtragem de spam e poderiam ter sido detectadas.  
+Geralmente, vemos que os clientes recebem lixo eletrônico em sua caixa de entrada devido às configurações incorretas. O mais comum é configurar seus domínios em uma regra de fluxo de emails (também conhecida como regra de transporte) para ignorar filtros ou listar os domínios na lista de permissão/remetentes. Isso não é bom porque essas mensagens ignoram a filtragem de spam e poderiam ter sido detectadas.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Soluções para outras causas comuns de recebimento de muito spam
 
@@ -50,7 +51,7 @@ Para evitar que você receba muito spam, a Proteção do Exchange Online (EOP) e
     
 - **Marcar emails em massa como spam** Emails em massa são emails de serviços nos quais os usuários podem ter se inscrito, mas que ainda assim podem ser indesejados. No cabeçalho da mensagem, localize a propriedade BCL (Nível de confiança em massa) no cabeçalho X-Microsoft-Antispam. Se o valor de BCL for menor que o limite definido no filtro de spam, ajuste o limite para marcar esses tipos de mensagens em massa como spam. Usuários diferentes têm tolerâncias e preferências diferentes para [como o email em massa é tratado](https://docs.microsoft.com/pt-BR/office365/SecurityCompliance/bulk-complaint-level-values). Você pode criar regras ou políticas diferentes para atender a diferentes preferências do usuário. 
     
-- **Bloquear um remetente imediatamente** Caso você precise bloquear um remetente imediatamente, poderá bloquear por endereço de email, domínio ou endereço IP. Confira [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falso negativo](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user). Uma entrada em uma lista de permissões de usuário final pode substituir um bloqueio definido pelo administrador.
+- **Bloquear imediatamente um remetente** Caso você precise bloquear imediatamente um remetente, é possível bloquear pelo endereço de email, domínio ou endereço IP. Confira [Usar o EAC para criar uma regra de fluxo de emails que bloqueia mensagens enviadas de um domínio ou usuário](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Uma entrada em uma lista de permissões do usuário final pode substituir um conjunto de bloqueios definido pelo administrador.
     
 - **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas.
     
