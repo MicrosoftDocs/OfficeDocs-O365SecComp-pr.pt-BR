@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Você pode usar regras de fluxo de emails (também conhecidas como regras de transporte) para identificar e agir com base nas mensagens que fluem pela organização do Office 365.
-ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+description: Você pode usar regras de fluxo de emails (regras de transporte) para identificar e executar ações em mensagens que fluem pela sua organização do Office 365.
+ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723238"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341202"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regras de fluxo de emails (regras de transporte) no Exchange Online Protection
 
@@ -24,7 +24,7 @@ Você pode usar regras de fluxo de emails (também conhecidas como regras de tra
   
 Este artigo explica os componentes das regras de fluxo de emails e como eles funcionam.
   
-Para obter etapas para criar, copiar e gerenciar regras de fluxo de correio, consulte **Gerenciar regras de fluxo de email**. Para cada regra, você tem a opção de impô-la, testá-lo, ou testando-o e notificar o remetente. Para saber mais sobre as opções de teste, consulte **Dicas de política**e **testar uma regra de fluxo de email** .
+Para obter as etapas para criar, copiar e gerenciar regras de fluxo de emails, consulte **Manage Mail Flow Rules**. Para cada regra, você tem a opção de fazê-lo, testá-lo ou testá-lo e notificar o remetente. Para saber mais sobre as opções de teste, confira **testar uma regra de fluxo** de emails e **dicas de política**.
   
 Para relatórios de resumo e detalhes sobre as mensagens que correspondem a regras de fluxo de emails, confira **Usar relatórios de proteção de email no Office 365 para exibir dados sobre detecções de malware, spam e de regra**.
   
@@ -44,7 +44,7 @@ Para implementar políticas de mensagens específicas usando regras do fluxo de 
     
 - [Definir regras para criptografar ou descriptografar mensagens de email](https://go.microsoft.com/fwlink/p/?Linkid=402846).
     
-O vídeo a seguir fornece uma demonstração do email está configurando regras de fluxo no Exchange Online Protection.
+O vídeo a seguir fornece uma demonstração da configuração de regras de fluxo de emails na proteção do Exchange Online.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
@@ -54,13 +54,13 @@ Um regra de fluxo de emails é formada por condições, exceções, ações e pr
   
 - **Condições** Identificam as mensagens nas quais você gostaria de aplicar uma ação. Algumas condições examinam campos de cabeçalhos de mensagens (por exemplo, os campos Para, De ou Cc). Outras condições examinam propriedades de mensagens (por exemplo, assunto, corpo, anexos, tamanho e classificação da mensagem). A maioria das condições exige que você especifique um operador de comparação (por exemplo, igual a, diferente de ou contém) e um valor a ser correspondido. Se não houver condições ou exceções, a regra será aplicada a todas as mensagens. 
     
-    Para obter mais informações sobre condições de regra de fluxo de email no Exchange Online Protection, consulte [exceções (predicados) e condições de regra de fluxo de email no Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+    Para obter mais informações sobre as condições de regra de fluxo de emails no Exchange Online Protection, consulte [Mail Flow Rule Conditions and exceptions (predicates) no Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Exceções** Opcionalmente, identificam as mensagens às quais as ações não devem se aplicar. Os mesmos identificadores de mensagens disponíveis nas condições também estão disponíveis nas exceções. As exceções substituem as condições e impedem que as ações da regra sejam aplicadas a uma mensagem, mesmo que a mensagem atenda a todas as condições configuradas. 
     
 - **Ações** Especificam o que fazer com as mensagens que atendem a todas as condições na regra, mas não se encaixam em nenhuma das exceções. Há muitas ações disponíveis, como rejeitar, excluir ou redirecionar mensagens, incluir destinatários adicionais, incluir prefixos no assunto da mensagem ou inserir avisos de isenção legal no corpo da mensagem. 
     
-    Para obter mais informações sobre proteção de email de ações de regra de fluxo que estão disponíveis no Exchange Online, consulte [de email ações de regra de fluxo no Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+    Para obter mais informações sobre ações de regra de fluxo de emails disponíveis no Exchange Online Protection, consulte [Mail Flow Rule Actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
     
 - **Propriedades** Especificam outras configurações de regras que não sejam condições, exceções ou ações. Por exemplo, quando a regra deve ser aplicada, se devemos impor ou testar a regra e o período em que a regra é ativa. 
     
@@ -118,24 +118,14 @@ Existem vários tipos de mensagens que transitam por uma organização. A tabela
    
 ## <a name="what-else-should-i-know"></a>O que mais devo saber?
 
-- O valor da propriedade **Version** ou **RuleVersion** para uma regra não é importante no Exchange Online Protection. 
+- O valor da propriedade **version** ou **RuleVersion** para uma regra não é importante no Exchange Online Protection. 
     
 - Após criar ou alterar uma regra de fluxo de emails, pode levar até 30 minutos para a regra nova ou atualizada ser aplicada às mensagens.
     
 ## <a name="for-more-information"></a>Para saber mais
-
-[Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
-[Transport Rule Predicates](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-  
-[Ações de Regras de Transporte](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
-  
-[Usando as regras de transporte para inspecionar os anexos das mensagens](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[Usar regras de fluxo de email para inspecionar anexos de mensagens no Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [Criptografia de e-mail no Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[Procedimentos de regra de transporte](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
-  
-[Limites de regras de transporte e caixa de entrada](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-  
-
+[Limites de regras de diário, transporte e caixa de entrada](https://go.microsoft.com/fwlink/p/?LinkId=324584)

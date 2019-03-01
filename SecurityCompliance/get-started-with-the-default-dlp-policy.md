@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 description: Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização.
-ms.openlocfilehash: 25d42a7c7598a82fcf153ce05b64ee990e104b40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216581"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341312"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introdução à política DLP padrão
 

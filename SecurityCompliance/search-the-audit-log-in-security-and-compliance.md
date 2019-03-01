@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança do Office 365 para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296604"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341766"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365
 
@@ -110,7 +110,7 @@ Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de a
     |Azure Active Directory (eventos de administração)  <br/> ||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
     |Prevenção contra perda de dados  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       <br/>| |
     |Dynamics 365 CRM <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Descoberta Eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Descoberta eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Forms  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
@@ -295,12 +295,13 @@ Clique em um dos seguintes links para ir para uma tabela específica.
 |:-----|:-----|:-----|
 |[Atividades de arquivo e página](#file-and-page-activities)<br/> |[Atividades de pasta](#folder-activities)<br/> |[Compartilhamento e acesso às atividades de solicitação](#sharing-and-access-request-activities)<br/> |
 |[Atividades de sincronização](#synchronization-activities)<br/> |[Atividades de administração do site](#site-administration-activities)<br/> |[Atividades de caixa de correio do Exchange](#exchange-mailbox-activities)<br/> |
-|[Atividades do Sway](#sway-activities) <br/> |[Atividades de administração de usuário](#user-administration-activities) <br/> |[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> |
-|[Atividades de administração de aplicativos](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |[Atividades de administração de diretório](#directory-administration-activities) <br/> |
-|[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades do Power BI](#power-bi-activities) <br/> |[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|
-[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |[Atividades do Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>|
-|||
+|[Política de retenção e atividades de rótulo](#retention-policy-and-label-activities) <br/>|[Atividades do Sway](#sway-activities) <br/> |[Atividades de administração de usuário](#user-administration-activities) <br/> 
+|[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> |[Atividades de administração de aplicativos](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |
+|[Atividades de administração de diretório](#directory-administration-activities) <br/> |[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades do Power BI](#power-bi-activities) <br/> |
+|[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |[Atividades do Yammer](#yammer-activities) <br/> |
+[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
+|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Atividades de arquivo e página
@@ -450,8 +451,10 @@ A tabela a seguir lista as atividades que podem ser registradas pelo log de audi
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
 |Adicionadas permissões de caixa de correio delegada  <br/> |Add-MailboxPermission  <br/> |Um administrador atribuiu a permissão de caixa de correio FullAccess a um usuário (conhecido como um representante) à caixa de correio de outra pessoa. A permissão FullAccess permite que o representante Abra a caixa de correio da outra pessoa e leia e gerencie o conteúdo da caixa de correio.  <br/> |
+|Mensagem classificada como registro  <br/> |ApplyRecordLabel<br/> |Uma mensagem foi classificada como um registro. Isso ocorre quando um rótulo de retenção que classifica o conteúdo como um registro é aplicado manualmente ou automaticamente a uma mensagem.<br/> |
 |Mensagens coPiadas para outra pasta  <br/> |Copiar  <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |
 |Item de caixa de correio criado  <br/> |Criar  <br/> |Um item é criado na pasta calendário, contatos, anotações ou tarefas na caixa de correio; por exemplo, uma nova solicitação de reunião é criada. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |
+|Nova regra de caixa de entrada criada no Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Mensagens excluídas da pasta itens excluídos  <br/> |SoftDelete  <br/> |Uma mensagem foi excluída ou excluída permanentemente da pasta itens excluídos. Esses itens são movidos para a pasta itens recuperáveis. As mensagens também são movidas para a pasta itens recuperáveis quando um usuário seleciona e pressiona **Shift + Delete**.<br/> |
 |Mensagens moVidas para outra pasta  <br/> |Move  <br/> |Uma mensagem foi movida para outra pasta.  <br/> |
 |Mensagens moVidas para a pasta itens excluídos  <br/> |MoveToDeletedItems  <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |
@@ -466,6 +469,28 @@ A tabela a seguir lista as atividades que podem ser registradas pelo log de audi
 |nenhum  <br/> |UpdateInboxRules  <br/> |Uma regra de caixa de entrada foi adicionada, removida ou alterada. As regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e realizar ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou excluir uma mensagem.<br/> Para retornar entradas para atividades de regra de caixa de entrada, você precisa selecionar **Mostrar resultados de todas as atividades** na lista de **atividades** . Use as caixas intervalo de datas e lista de **usuários** para restringir os resultados da pesquisa.<br/> |
 ||||
   
+### <a name="retention-policy-and-label-activities"></a>Política de retenção e atividades de rótulo
+
+A tabela a seguir descreve as atividades relacionadas a políticas de retenção do Office 365 e rótulos de retenção do Office 365 para obter mais informações, consulte:
+
+- [Visão geral de políticas de retenção](retention-policies.md)
+- [Visão geral de rótulos de retenção](labels.md)
+<br/>
+
+|**Atividade**|**Operation**|**Descrição**|
+|:-----|:-----|:-----|
+| Configuração de retenção criada para uma política de retenção<br/> |NewRetentionComplianceRule<br/> |O administrador define as configurações de retenção para uma nova política de retenção. As configurações de retenção incluem por quanto tempo os itens são mantidos e o que acontece com os itens quando o período de retenção expira (como a exclusão de itens, retenção de itens ou retenção e exclusão). Essa atividade também corresponde à execução do cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
+| Rótulo de retenção criado <br/> |NewComplianceTag<br/>  |O administrador cria um novo rótulo de retenção.<br/> |
+| Política de retenção criada<br/> |NewRetentionCompliancePolicy<br/> |O administrador cria uma nova política de retenção.<br/>  |
+| Exclusão da configuração de retenção de uma política de retenção<br/> | RemoveRetentionComplianceRule<br/>| O administrador exclui as definições de configuração de uma política de retenção. Provavelmente, essa atividade será registrada quando um administrador excluir uma política de retenção ou executar o cmdlet **Remove-RetentionComplianceRule** .<br/> |
+| Rótulo de retenção excluído <br/> |RemoveComplianceTag<br/>  | O administrador exclui um rótulo de retenção.<br/>|
+| Política de retenção excluída<br/> |RemoveRetentionCompliancePolicy<br/> |O administrador exclui uma política de retenção. <br/>  |
+| Habilitar recursos de conformidade normativa<br/> |SetRestrictiveRetentionUI<br/> |O administrador permite recursos de conformidade normativa executando o cmdlet **set-RegulatoryComplianceUI** . Depois que este cmdlet é executado, os administradores podem bloquear uma política de retenção e especificar um rótulo de retenção como um registro normativo usando a interface de usuário do centro de conformidade do & de segurança. Até que uma organização Use o cmdlet **set-RegulatoryComplianceUI** para habilitar esses recursos, o bloqueio de uma política de retenção e a criação de um rótulo de retenção regulamentada só podem ser realizados usando o PowerShell.<br/>|
+| Configuração de retenção atualizada para uma política de retenção<br/> | SetRetentionComplianceRule<br/>| O administrador altera as configurações de retenção de uma política de retenção existente. As configurações de retenção incluem por quanto tempo os itens são mantidos e o que acontece com os itens quando o período de retenção expira (como a exclusão de itens, retenção de itens ou retenção e exclusão). Essa atividade também corresponde à execução do cmdlet [set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) .<br/>|
+| Rótulo de retenção atualizado <br/> |SetComplianceTag<br/>  | O administrador atualiza um rótulo de retenção existente.<br/>|
+| Política de retenção atualizada<br/> |SetRetentionCompliancePolicy <br/>|O administrador atualiza uma política de retenção existente. As atualizações que disparam esse evento incluem adicionar ou excluir locais de conteúdo aos quais a política de retenção é aplicada.<br/>|
+||||
+
 ### <a name="sway-activities"></a>Atividades do Sway
   
 A tabela a seguir lista as atividades de usuário e administrador no Sway. O Sway é um aplicativo do Office 365 que ajuda os usuários a reunir, Formatar e compartilhar ideias, histórias e apresentações em uma tela interativa baseada na Web. Para obter mais informações, consulte [perguntas frequentes sobre o Sway-ajuda do administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
@@ -663,7 +688,7 @@ A tabela a seguir lista as atividades de usuário e de administrador no Yammer q
 |Arquivo exibido  <br/> |FileVisitado  <br/> |O usuário exibe um arquivo.  <br/> |
 ||||
    
-### <a name="microsoft-flow"></a>Microsoft Flow
+### <a name="microsoft-flow-activities"></a>Atividades de fluxo da Microsoft
 
 Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem criar, editar e excluir fluxos e alterar as permissões de fluxo. Para obter informações sobre auditoria de atividades de fluxo, consulte o blog [Microsoft Flow Audit Events Now Available in Office 365 Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
@@ -671,10 +696,10 @@ Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas
 
 Você pode pesquisar no log de auditoria por atividades relacionadas ao aplicativo no PowerApps. Essas atividades incluem criar, iniciar e publicar um aplicativo. a atribuição de permissões a aplicativos também é auditada. Para obter uma descrição de todas as atividades do PowerApps, consulte [log de atividade do powerapps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
-### <a name="microsoft-stream"></a>Microsoft Stream
+### <a name="microsoft-stream-activities"></a>Atividades do Microsoft Stream
   
 Você pode pesquisar o log de auditoria para atividades no Microsoft Stream. Essas atividades incluem atividades de vídeo realizadas por usuários, atividades de canal de grupo e atividades administrativas, como gerenciamento de usuários, gerenciamento de configurações da organização e exportação de relatórios. Para obter uma descrição dessas atividades, consulte a seção "atividades registradas no Microsoft Stream" em [logs de auditoria no Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
-  
+
 ### <a name="exchange-admin-audit-log"></a>Log de auditoria de administração do Exchange
   
 Registro em log de auditoria do administrador do Exchange, que é habilitado por padrão no Office 365 — registra um evento no log de auditoria do Office 365 quando um administrador (ou um usuário que tenha recebido permissões administrativas) faz uma alteração na sua organização do Exchange Online. As alterações feitas usando o centro de administração do Exchange ou executando um cmdlet no Windows PowerShell são registradas no log de auditoria do administrador do Exchange. Para obter informações mais detalhadas sobre o log de auditoria de administrador no Exchange, consulte [log de auditoria de administrador](https://go.microsoft.com/fwlink/p/?LinkID=619225).

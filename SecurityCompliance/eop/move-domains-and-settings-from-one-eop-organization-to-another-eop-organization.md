@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: A alteração de requisitos comerciais, às vezes, pode exigir a divisão de uma organização (locatário) Microsoft Proteção do Exchange Online (EOP) em duas organizações separadas, mesclando duas organizações em uma ou movendo os domínios e as configurações de EOP de uma organização para outra.
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002197"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341552"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover domínios e configurações de uma organização do EOP para outra organização do EOP
 
 A alteração de requisitos comerciais, às vezes, pode exigir a divisão de uma organização (locatário) Microsoft Proteção do Exchange Online (EOP) em duas organizações separadas, mesclando duas organizações em uma ou movendo os domínios e as configurações de EOP de uma organização para outra. Mover de uma organização EOP para uma segunda organização EOP pode ser desafiador, mas com alguns scripts remotos básicos do Windows PowerShell e um pouco de preparação, isso pode ser obtido com uma janela de manutenção relativamente pequena. 
   
 > [!NOTE]
->  As configurações podem ser confiável movidas somente a partir de um organização (padrão) para outro EOP padrão ou um Exchange Enterprise CAL à serviços (Premium EOP) do EOP autônomo ou de uma organização EOP Premium para outra organização EOP Premium. Porque não há suporte para alguns recursos premium em organizações EOP Standard, move a partir de uma organização Premium do EOP para uma organização padrão do EOP pode não ser bem-sucedidas. > Essas instruções são para organizações de filtragem somente do EOP. Existem considerações adicionais na movimentação de uma organização do Exchange Online para outra organização do Exchange Online. As organizações do Exchange Online estão fora do escopo estas instruções. 
+>  As configurações podem ser movidas de forma confiável apenas de uma organização autônoma do EOP (Standard) para outro EOP padrão ou uma organização do Exchange Enterprise CAL com serviços (EOP Premium) ou de uma organização do EOP Premium para outra organização Premium do EOP. Como alguns recursos premium não são suportados nas organizações padrão do EOP, as movimentações de uma organização Premium do EOP para uma organização padrão do EOP podem não ter êxito. > estas instruções são para organizações somente para filtragem do EOP. Há considerações adicionais ao mudar de uma organização do Exchange Online para outra organização do Exchange Online. As organizações do Exchange Online estão fora do escopo para estas instruções. 
   
 No exemplo a seguir, a Contoso, Ltd. foi mesclada com a Contoso Suites. A imagem a seguir mostra o processo de mover domínios, usuários de email e grupos e configurações da organização de origem EOP (contoso.onmicrosoft.com) para organização de destino EOP (contososuites.onmicrosoft.com):
   
@@ -47,10 +47,10 @@ Para recriar a organização de origem na organização de destino, verifique se
     
 - Conectores
     
-- Regras de transporte
+- Regras de fluxo de emails (também conhecidas como regras de transporte)
     
     > [!NOTE]
-    > No momento, o suporte a cmdlet da exportação e importação do Conjunto de Regras de Transporte só está disponível em planos de assinatura EOP Premium. 
+    > O suporte de cmdlet para a exportação e importação do conjunto de regras de fluxo de emails atualmente só tem suporte para planos de assinatura do EOP Premium. 
   
 A maneira mais fácil para coletar todas as suas configurações é usar o Windows PowerShell remoto. Para conectar a EOP usando o Windows PowerShell remoto, consulte [Conectar-se ao Exchange Online Protection usando o PowerShell Remoto](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-O script a seguir pode ser usado para coletar todos os usuários de email, os grupos, as configurações antispam, as configurações antimalware, os conectores e as regras de transporte na organização de origem. Copie e cole o texto a seguir em um editor de texto como o Bloco de Notas, salve o arquivo como Source_EOP_Settings.ps1 no diretório Exportar, que você acabou de criar, e execute o comando a seguir:
+O script a seguir pode ser usado para coletar todos os usuários de email, grupos, configurações antispam, configurações Antimalware, conectores e regras de fluxo de emails na organização de origem. Copie e cole o texto a seguir em um editor de texto como o bloco de notas, salve o arquivo como Source_EOP_Settings. ps1 no diretório de exportação que você acabou de criar e execute o seguinte comando:
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 Execute os seguintes comandos no diretório Exportar para atualizar os arquivos .xml com a organização de destino. Substitua contoso.onmicrosoft.com e contososuites.onmicrosoft.com pelos nomes de organização de origem e destino.

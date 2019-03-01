@@ -13,12 +13,12 @@ ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: A série de vídeos a seguir ajudará você a configurar e usar o serviço de filtragem de email hospedado pelo Exchange Online Protection (EOP).
-ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276001"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341182"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vídeos de introdução ao EOP
 
@@ -27,7 +27,7 @@ A série de vídeos a seguir ajudará você a configurar e usar o serviço de fi
 > [!NOTE]
 > Antes de iniciar as tarefas descritas nos vídeos, recomendamos que você configure o fluxo de emails. Para saber mais, consulte o tópico [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-Estes vídeos são sobre como adaptar as configurações antispam para atender às necessidades da sua organização. Para emails de entrada que trafeguem do serviço para a sua organização, isso inclui criar listas de remetentes e destinatários confiáveis com base nos endereços IP e definir configurações de filtro de conteúdo. Também há um vídeo mostrando como os administradores podem encontrar e liberar mensagens de spam filtradas por conteúdo ou mensagens que tenham correspondido a uma regra de transporte que foi enviada para a quarentena, e ainda como relatar mensagens de email para nos ajudar a melhorar o serviço.
+Esses vídeos são sobre a adaptação de suas configurações antispam para atender às necessidades da sua organização. Para emails de entrada viajando através do serviço para sua organização, isso inclui a criação de listas de remetentes seguros e remetentes bloqueados com base em endereços IP e a definição de configurações de filtro de conteúdo. Há também um vídeo mostrando como os administradores podem localizar e liberar mensagens de spam filtradas por conteúdo ou mensagens que correspondam a uma regra de fluxo de emails (também conhecida como regra de transporte) que foram enviadas para a quarentena e também como relatar mensagens de spam para nos ajudar a melhorar o serviço.
   
 - Configurar as Listas de permissão de IP e de bloqueio de IP no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
@@ -58,12 +58,12 @@ O EOP também tem configurações para tratar malware que é detectado pelo serv
   
     Para obter mais detalhes, consulte o tópico [Configurar políticas antimalware](../configure-anti-malware-policies.md). 
     
-Para filtrar e rotear mensagens com base em condições específicas definidas, com base na política da empresa ou em regulamentações, você desejará assistir ao vídeo sobre como criar regras de transporte.
+Para filtrar e rotear mensagens com base em condições específicas definidas, com base na política ou nas normas da empresa, convém assistir ao vídeo sobre como criar regras de fluxo de emails.
   
-- Configurar regras de Transporte do Exchange no EOP
+- Configurar regras de fluxo de mensagens do Exchange no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Para obter mais detalhes, consulte o tópico sobre [regras de fluxo de emails (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se você usar o EOP autônomo, ou consulte o tópico [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se você usar o Exchange Online. 
+    Para obter mais detalhes, consulte o tópico sobre [regras de fluxo de emails (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se você usar o EOP autônomo ou consulte [regras de fluxo de emails (regras de transporte) no tópico do Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se usar o Exchange Online.
     
 Se estiver interessado em configurar o serviço executando scripts na linha de comando, o vídeo do PowerShell remoto o ajudará a começar.
   

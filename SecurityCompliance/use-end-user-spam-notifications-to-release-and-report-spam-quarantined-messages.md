@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Os usuários que vêem uma mensagem de notificação de spam de usuário final do seu administrador sobre emails em quarentena podem executar essas ações nas mensagens. '
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275211"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341232"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificações de spam do usuário final para liberar e relatar mensagens de spam em quarentena
 
@@ -41,6 +41,6 @@ Você pode executar as seguintes ações em cada mensagem:
 - **Relatar como Não Lixo Eletrônico** Clicar nesse link envia uma cópia da mensagem para análise da Microsoft. A equipe de spam avalia e analisa a mensagem e, dependendo dos resultados da análise, ajusta as regras do filtro antispam para permitir a passagem da mensagem. 
     
 > [!NOTE]
->  As mensagens colocadas em quarentena devido à correspondência a uma regra de transporte não estão incluídas nas mensagens em quarentena de spam do usuário final. Somente as mensagens em quarentena por spam estão listadas. >  Você só pode liberar uma mensagem e relatá-la como falso positivo (e não como lixo eletrônico) uma vez. 
+>  As mensagens que estão em quarentena devido a uma correspondência de regra de fluxo de email (também conhecida como) não estão incluídas nas mensagens em quarentena de spam do usuário final. Apenas as mensagens de spam em quarentena são listadas. > você só pode liberar uma mensagem e relatá-la como falso positivo (e não como lixo eletrônico) uma vez. 
   
 

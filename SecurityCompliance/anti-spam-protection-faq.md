@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223050"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341672"
 ---
 # <a name="anti-spam-protection-faq"></a>PERGUNTAS FREQUENTEs sobre proteção antispam
 
@@ -34,7 +34,7 @@ Este tópico fornece as perguntas frequentes e respectivas respostas sobre a pro
 R. **Para mensagens de entrada:** A maioria dos spams é excluída por meio da filtragem de conexão, que se baseia no endereço IP do remetente. O serviço então inspeciona o conteúdo da mensagem. Por padrão, o spam de conteúdo filtrado é enviado para a pasta Lixo Eletrônico do destinatário. Você pode alterar essa ação. Por exemplo, você pode optar por enviar mensagens de spam para a quarentena em vez de configurar a política de filtro de conteúdo. 
   
 > [!IMPORTANT]
-> Para clientes autônomos do EOP: Para garantir que a ação **Mover a mensagem para a pasta Lixo Eletrônico** funcionará com caixas de correio locais, você deve configurar duas regras de Transporte do Exchange em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes autônomos do EOP: para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Para mensagens de saída:** A mensagem foi roteada através do pool de entrega de risco mais alto ou foi devolvida sem ser entregue; em cujo caso o remetente receberá uma mensagem de notificação de status de entrega (DSN) informando que a mensagem não pôde ser entregue. 
   

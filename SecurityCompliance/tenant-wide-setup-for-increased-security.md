@@ -1,6 +1,6 @@
 ---
 title: Configurar seu locatário do Office 365 para aumentar a segurança
-ms.author: tracyp
+ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Orienta você na configuração recomendada para definições de todos os locatários que afetam a segurança de seu ambiente do Office 365. Suas necessidades de segurança podem exigir mais ou menos segurança. Use estas recomendações como ponto de partida.
-ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223160"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341502"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar seu locatário do Office 365 para aumentar a segurança
 
@@ -61,8 +61,8 @@ Muitos dos controles de segurança e proteção no centro de administração do 
   
 |Área * * * *|Inclui uma política padrão * * * *|Recomendação * * * *|
 |:-----|:-----|:-----|
-|**Fluxo de mensagens** (Regras de transporte)  <br/> |Não  <br/> | Adicione uma regra de fluxo de emails para ajudar a proteger contra o ransomware. Consulte "como usar as regras de transporte do Exchange para rastrear ou bloquear emails com extensões de arquivo usadas pelo ransomware" neste artigo de blog: [como lidar com o ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Crie uma regra de transporte para impedir o encaminhamento automático de emails para domínios externos. Para obter mais informações, consulte [mitigaTing Client external forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/> <br>Mais informações: [regras de fluxo de emails (regras de transporte) no Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**Habilitar a autenticação moderna** <br/> |Não  <br/> | A autenticação moderna no Office 365 é um pré-requisito para usar a protocolo de autenticação multifator (MFA). A MFA é recomendada para proteger o acesso a recursos de nuvem, incluindo email.<br/>  <br>ConFira estes tópicos:  <br/> • [Habilitar ou desabilitar a autenticação moderna no Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> • [Skype for Business Online: habilitar seu locatário para autenticação moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>A autenticação moderna está habilitada por padrão para clientes do Office 2016, SharePoint Online e OneDrive for Business.  <br/>  <br>Mais informações: [usando a autenticação moderna do office 365 com clientes do Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**Fluxo de mensagens** (regras de fluxo de email, também conhecidas como regras de transporte)|Não|Adicione uma regra de fluxo de emails para ajudar a proteger contra o ransomware. Consulte "como usar as regras de transporte do Exchange para rastrear ou bloquear emails com extensões de arquivo usadas pelo ransomware" neste artigo de blog: [como lidar com o ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Crie uma regra de fluxo de emails para impedir o encaminhamento automático de emails para domínios externos. Para obter mais informações, consulte [mitigaTing Client external forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/><br/> Mais informações: [regras de fluxo de emails (regras de transporte) no Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Habilitar a autenticação moderna**|Não|A autenticação moderna no Office 365 é um pré-requisito para usar a protocolo de autenticação multifator (MFA). A MFA é recomendada para proteger o acesso a recursos de nuvem, incluindo email.<br/><br/> ConFira estes tópicos:  <br/>• [Habilitar ou desabilitar a autenticação moderna no Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for Business Online: habilitar seu locatário para autenticação moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> A autenticação moderna está habilitada por padrão para clientes do Office 2016, SharePoint Online e OneDrive for Business. <br/><br/> Mais informações: [usando a autenticação moderna do office 365 com clientes do Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurar políticas de compartilhamento em todo o locatário no centro de administração do SharePoint
 
@@ -74,7 +74,7 @@ Para dar suporte às metas de proteção de linha de base, configure as polític
   
 |Área * * * *|Inclui uma política padrão * * * *|Recomendação * * * *|
 |:-----|:-----|:-----|
-|**Compartilhamento** (SharePoint Online e OneDrive for Business)  <br/> |Sim  <br/> | O compartilhamento externo está habilitado por padrão. Estas configurações são recomendadas:<br/>  • Permitir o compartilhamento de usuários externos autenticados e o uso de links de acesso anônimo (configuração padrão).  <br/>  • Os links de acesso anônimo expiram em vários dias. Insira um número, se desejado, como 30 dias.<br/>  • Tipo de link padrão — selecione interno (somente pessoas na organização). Os usuários que desejam compartilhar usando links anônimos devem escolher essa opção no menu compartilhamento.<br/>  <br>Mais informações: [visão geral do compartilhamento externo](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
+|**Compartilhamento** (SharePoint Online e OneDrive for Business)|Sim|O compartilhamento externo está habilitado por padrão. Estas configurações são recomendadas:<br/>• Permitir o compartilhamento de usuários externos autenticados e o uso de links de acesso anônimo (configuração padrão). <br/>  • Os links de acesso anônimo expiram em vários dias. Insira um número, se desejado, como 30 dias.<br/>• Tipo de link padrão — selecione interno (somente pessoas na organização). Os usuários que desejam compartilhar usando links anônimos devem escolher essa opção no menu compartilhamento.<br/><br/> Mais informações: [visão geral do compartilhamento externo](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85)|
    
 O centro de administração do SharePoint e o centro de administração do OneDrive for Business incluem as mesmas configurações. As configurações no centro de administração se aplicam a ambos.
   

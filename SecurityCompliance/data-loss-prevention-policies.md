@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218971"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341762"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção contra perda de dados
 
@@ -456,7 +456,7 @@ O DLP avalia qualquer conteúdo que possa ser indexado. Para obter mais informa�
 
 Quando você cria uma política de DLP que inclui o Exchange Online como um local, a política foi sincronizada do centro de &amp; conformidade de segurança do Office 365 para o Exchange Online e, em seguida, do Exchange Online para o Outlook na Web e do Outlook 2013 e posterior.
   
-Quando uma mensagem está sendo composta no Outlook, o usuário pode ver dicas de política à medida que o conteúdo que está sendo criado é avaliado em relação a políticas de DLP. E depois que uma mensagem é enviada, ela é avaliada em relação às políticas de DLP como uma parte normal do fluxo de emails, juntamente com as regras de transporte do Exchange e as políticas de DLP criadas no centro de administração do Exchange (consulte a próxima seção para obter mais informações). As políticas DLP examinam a mensagem e os anexos.
+Quando uma mensagem está sendo composta no Outlook, o usuário pode ver dicas de política à medida que o conteúdo que está sendo criado é avaliado em relação a políticas de DLP. E depois que uma mensagem é enviada, ela é avaliada em relação às políticas de DLP como uma parte normal do fluxo de emails, juntamente com as regras de fluxo de email do Exchange (também conhecidas como regras de transporte) e as políticas de DLP criadas no centro de administração do Exchange (consulte a próxima seção para obter mais informações). As políticas DLP examinam a mensagem e os anexos.
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Avaliação de política nos programas de área de trabalho do Office 2016
 
@@ -506,7 +506,7 @@ No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365
     
 - [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
     
-- [O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
+- [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
     
 - [O que as funções DLP procuram](what-the-dlp-functions-look-for.md)
     

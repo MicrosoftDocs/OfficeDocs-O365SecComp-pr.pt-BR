@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC).
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219031"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341782"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Localizar e liberar mensagens em quarentena como um administrador
 
-Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC). O Office 365envia as mensagens para a quarentena porque foram identificadas como spam ou porque corresponderam a uma regra de transporte. 
+Este tópico descreve como os administradores do Exchange Online e do proteção do Exchange Online (EOP) podem localizar, liberar e relatar mensagens em quarentena no centro de administração do Exchange (Eat). O Office 365 direciona as mensagens para quarentena porque elas foram identificadas como spam ou correspondem a uma regra de fluxo de emails (também conhecida como regra de transporte). 
   
 Use o centro &amp; de conformidade de segurança em vez do Eat para concluir qualquer uma dessas tarefas, bem como o modo de exibição e o trabalho com mensagens que foram enviadas à quarentena porque elas contêm malware. Para obter mais informações, consulte [Quarantine Email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -70,9 +70,9 @@ No Centro de administração do Exchange (EAC), você pode filtrar itens da quar
 6. **Expira** Você pode escolher se a mensagem será excluída da quarentena nas próximas 24 horas ( **Hoje**), nas próximas 48 horas ( **Próximos 2 dias**), na próxima semana ( **Próximos 7 dias**) ou pode escolher um intervalo de tempo personalizado durante o qual a mensagem será excluída da quarentena.
     
     > [!IMPORTANT]
-    > Por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 15 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após esse período de tempo, o Office 365 exclui as mensagens e elas não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md). 
+    > Por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 15 dias, enquanto as mensagens em quarentena que correspondem a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. Após esse período de tempo, o Office 365 exclui as mensagens e elas não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de fluxo de emails não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md). 
   
-7. **Tipo** É possível especificar se deseja pesquisar por mensagens em quarentena que foram identificadas como **Spam**, ou se deseja pesquisar por mensagens que correspondem a uma **Regra de transporte**.
+7. **Tipo** Você pode especificar se deseja pesquisar por mensagens em quarentena que foram identificadas como **spam**ou se deseja pesquisar mensagens que correspondam a uma regra de fluxo de emails (**regra de transporte**).
     
 3. Clique em **OK** para iniciar a pesquisa avançada. 
     
@@ -90,7 +90,7 @@ Após localizar uma determinada mensagem em quarentena na página **quarentena**
     
     Os valores de **Status da mensagem** são os seguintes: 
     
-  - **Tipo** Indica se a mensagem foi identificada como **Spam** ou se corresponde a uma **Regra de transporte**.
+  - **Tipo** Indica se a mensagem foi identificada como **spam** ou se corresponde a uma regra de fluxo de emails (**regra de transporte**).
     
   - **Vencimento** A data em que a mensagem será excluída da quarentena. 
     
@@ -145,7 +145,7 @@ Se você quiser liberar as mensagens para destinatários, as opções são:
   
 Clique em **Liberar mensagem selecionada e permitir remetente** na lista suspensa. 
     
-3. A caixa de diálogo **liberar mensagem e permitir remetente** é exibida. Opcionalmente, você pode optar por relatar a mensagem para a Microsoft e, então, clicar em **liberar e permitir**. A mensagem será disponibilizada a todos os destinatários para os quais é endereçada e todas as mensagens futuras deste remetente serão permitidas. No entanto, se essa mensagem foi colocada em quarentena devido a uma regra de transporte ou remetente bloqueado, o remetente continuará a ser bloqueado para mensagens futuras. 
+3. A caixa de diálogo **liberar mensagem e permitir remetente** é aberta. Opcionalmente, você pode optar por relatar a mensagem à Microsoft e, em seguida, clicar em **liberar e permitir**. A mensagem será liberada para todos os destinatários endereçados e todas as mensagens futuras desse remetente serão permitidas. No enTanto, se essa mensagem foi colocada em quarentena devido a uma regra de fluxo de emails ou remetente bloqueado, o remetente continuará a ser bloqueado para mensagens futuras. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Liberar uma mensagem em quarentena para destinatários específicos sem relatá-la como falso positivo
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

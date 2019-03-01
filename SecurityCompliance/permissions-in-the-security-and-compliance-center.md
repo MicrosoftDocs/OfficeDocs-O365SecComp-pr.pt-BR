@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: O centro de conformidade &amp; de segurança do Office 365 permite que você conceda permissões a pessoas que executam tarefas de conformidade, como gerenciamento de dispositivos, prevenção de perda de dados, eDiscovery, retenção e assim por diante. Essas pessoas podem executar apenas as tarefas às quais você concede explicitamente o acesso. Para acessar o centro &amp; de conformidade de segurança, os usuários precisam ser um administrador global do Office 365 ou um membro de um &amp; ou mais grupos de funções do centro de conformidade de segurança.
-ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: e935c71f9324dbce8e0b359bfe723b93ff500b0a
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223500"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341352"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Permissões no centro de conformidade de &amp; segurança do Office 365
 
@@ -47,7 +47,7 @@ Você pode editar ou excluir os grupos de função existentes, mas não recomend
 
 A tabela a seguir lista os grupos de função padrão que estão disponíveis no &amp; centro de conformidade de segurança. Para conceder permissões a um usuário para executar uma tarefa de conformidade, adicione-os ao grupo &amp; de função centro de conformidade de segurança apropriado.
   
-O gerenciamento de permissões no &amp; centro de conformidade de segurança fornece aos usuários acesso aos recursos de conformidade disponíveis no próprio &amp; centro de conformidade de segurança. Se quiser conceder permissões a outros recursos de conformidade que não estão no centro de &amp; conformidade de segurança, como regras de transporte do Exchange, você precisará usar o centro de administração do Exchange.
+O gerenciamento de permissões no &amp; centro de conformidade de segurança fornece aos usuários acesso aos recursos de conformidade disponíveis no próprio &amp; centro de conformidade de segurança. Se quiser conceder permissões a outros recursos de conformidade que não estão no centro de &amp; conformidade de segurança, como regras de fluxo de emails do Exchange (também conhecidas como regras de transporte), você precisa usar o centro de administração do Exchange.
   
 Para ver como conceder acesso ao centro de conformidade &amp; de segurança, confira [conceder aos usuários acesso ao centro de administração de conformidade do Office 365](grant-access-to-the-security-and-compliance-center.md).
   

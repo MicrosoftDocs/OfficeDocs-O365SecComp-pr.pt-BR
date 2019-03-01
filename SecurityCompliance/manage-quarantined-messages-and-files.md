@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, você pode exibir, liberar e relatar mensagens em quarentena falsas positivas no Office 365. Você pode configurar políticas para que o Office 365 Filtre mensagens e as envie para quarentena por vários motivos: porque elas foram identificadas como spam, em massa, phishing, malware ou porque corresponderam a uma regra de fluxo de emails. '
-ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276261"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341722"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -49,7 +49,7 @@ Você deve ter permissões de administrador global (GA) no Office 365 para traba
     
   - Email identificado como spam
     
-  - Email colocado em quarentena porque correspondeu a uma política definida por uma regra de fluxo de emails (também chamada de regra de transporte)
+  - Email colocado em quarentena porque correspondeu a uma política definida por uma regra de fluxo de emails (também conhecida como regra de transporte)
     
   - Email identificado como email em massa
     
@@ -87,7 +87,7 @@ Dependendo das suas configurações, pode haver muito de arquivos e mensagens em
       - Para procurar arquivos, defina os filtros para mostrar **arquivos** em quarentena devido a **malware**.<br/>
     Para arquivos em quarentena, a página exibe todos os arquivos em quarentena, não apenas os seus, independentemente do que você deseja que seja mostrado.
     
-      - Para pesquisar mensagens em quarentena, defina filtros para mostrar **todos** ou **apenas o meu** **email**. Para o último filtro, escolha o tipo de mensagem em quarentena que você está procurando. Você pode pesquisar por mensagens em quarentena que foram identificadas como **spam**, para mensagens que correspondam a um fluxo de email ou **regra de transporte**, email **em massa** , email de **phishing** ou emails que contenham **malware**.
+      - Para pesquisar mensagens em quarentena, defina filtros para mostrar **todos** ou **apenas o meu** **email**. Para o último filtro, escolha o tipo de mensagem em quarentena que você está procurando. Você pode pesquisar por mensagens em quarentena que foram identificadas como **spam**, para mensagens que correspondam a uma regra de fluxo de emails (**regra de transporte**), emails **em massa** , emails de **phishing** ou emails que contenham **malware**.
     
 2. Em **classificar resultados por**, escolha o filtro ou filtros que você deseja usar para Pesquisar nas listas suspensas. As opções variam de acordo com o fato de você estar pesquisando arquivos ou mensagens. Não há suporte para caracteres curinga nos campos de pesquisa no momento.<br/><br/>Para arquivos e mensagens, você pode optar por filtrar pela data em que a mensagem ou o arquivo foi enviado para a quarentena. Você pode especificar a data ou um intervalo de datas, incluindo a hora. Você também pode filtrar os resultados da pesquisa pela data de expiração na qual o arquivo ou a mensagem será excluído da quarentena ou você pode usar uma combinação de filtros. Para pesquisar por data de expiração, escolha **filtro avançado**. Em **expirar**, você pode selecionar mensagens que serão excluídas da quarentena nas próximas 24 horas ( **hoje**), nas próximas 48 horas ( **próximos 2 dias**), na próxima semana (próximos **7 dias**) ou você pode selecionar um intervalo de tempo personalizado.<br/><br/>Para mensagens, você tem as seguintes opções adicionais:
     
@@ -114,7 +114,7 @@ Ao selecionar um item exibido na lista quarentena, você verá um resumo de suas
     
 - **Assunto**. O texto da linha de assunto da mensagem. 
     
-- **Tipo**. Mostra se uma mensagem foi identificada como **spam**, **em massa**, **Phish**, corresponde a uma regra de fluxo de emails ( **regra de transporte**) ou foi identificada como contendo **malware**.
+- **Tipo**. Mostra se uma mensagem foi identificada como **spam**, **em massa**, **Phish**, corresponde a uma regra de fluxo de emails (**regra de transporte**) ou foi identificada como contendo **malware**.
     
 - **Expira**. A data e a hora em que a mensagem será automaticamente excluída da quarentena. 
     

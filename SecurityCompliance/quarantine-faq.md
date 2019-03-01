@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a quarentena hospedada.
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276021"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341172"
 ---
 # <a name="quarantine-faq"></a>Perguntas Frequentes sobre a Quarentena
 
@@ -48,11 +48,11 @@ A. para acessar a quarentena de spam do usuário final, os usuários finais deve
   
  **P. É possível enviar qualquer outra mensagem, além de spam, para a quarentena?**
   
-R. Uma mensagem que corresponda a uma regra de transporte também pode ser enviada para a quarentena do administrador, desde que a ação esteja configurada. A quarentena de usuário final destina-se apenas a spam.
+A. mensagens que correspondem a uma regra de fluxo de emails (também conhecida como regra de transporte) também podem ser enviadas para a quarentena do administrador, se essa for a ação configurada. A quarentena de usuário final é somente para spam.
   
  **P. Por quanto tempo as mensagens são mantidas na quarentena?**
   
-A. por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 30 dias, enquanto as mensagens em quarentena que correspondem a uma regra de transporte são mantidas em quarentena por 7 dias. Após esse período de tempo, as mensagens são excluídas e não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de transporte não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md).
+A. por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 30 dias, enquanto as mensagens em quarentena que correspondem a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. Após esse período de tempo, as mensagens são excluídas e não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de fluxo de emails não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md).
   
  **P. Posso liberar ou relatar mais de uma mensagem em quarentena por vez?**
   

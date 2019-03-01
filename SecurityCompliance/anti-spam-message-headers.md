@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem.
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276191"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341732"
 ---
 # <a name="anti-spam-message-headers"></a>Cabeçalhos de mensagem antispam
 
@@ -46,10 +46,10 @@ Depois de acessar as informações do cabeçalho da mensagem, procure **X-Forefr
 |IPV:CAL|A mensagem foi permitida pelos filtros de spam porque o endereço IP estava especificado em uma Lista de Permissões de IP do filtro de conexão.|
 |IPV:NLI|O endereço IP não está listado em qualquer lista de reputação de IP.|
 |SFV:SPM|O filtro de conteúdo marcou a mensagem como spam.|
-|SFV:SKS|A mensagem foi marcada como spam antes de ser processada pelo filtro de conteúdo. Isso inclui mensagens que atenderam a uma regra Transporte para marcá-la automaticamente como spam e ignorar toda filtragem adicional.|
+|SFV:SKS|A mensagem foi marcada como spam antes de ser processada pelo filtro de conteúdo. Isso inclui mensagens em que a mensagem corresponde a uma regra de fluxo de emails (também conhecida como regra de transporte) para marcá-la automaticamente como spam e ignora toda a filtragem adicional.|
 |SFV:SKA|A mensagem ignorou a filtragem e foi entregue à caixa de entrada porque correspondeu a uma lista de permissões na política de filtro de spam, como a lista de **permissões do remetente**.|
 |SFV:SKB|A mensagem foi marcada como spam porque correspondeu a uma lista de bloqueios na política de filtro de spam, como a lista de **bloqueio de remetente**.|
-|SFV:SKN|A mensagem foi marcada como não sendo spam antes de ser processada pelo filtro de conteúdo. Isso inclui mensagens que atenderam a uma regra de transporte para marcá-la automaticamente como não sendo spam e ignorar qualquer filtragem adicional.|
+|SFV:SKN|A mensagem foi marcada como não spam antes de ser processada pelo filtro de conteúdo. Isso inclui mensagens em que a mensagem corresponde a uma regra de fluxo de emails para marcá-la automaticamente como não spam e ignora toda a filtragem adicional.|
 |SFV:SKI|De forma semelhante a SFV:SKN, a filtragem de mensagem é ignorada por outro motivo, como sendo email intraorganizacional em um locatário.|
 |SFV:SKQ|A mensagem foi liberada da quarentena e enviada para os destinatários pretendidos.|
 |SFV:NSPM|A mensagem foi marcada como não spam e enviada aos destinatários pretendidos.|

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gerenciar seus destinatários de email. Como administrador, você pode executar determinadas tarefas de gerenciamento no Centro de administração do Exchange (EAC) ou usando o Windows PowerShell remoto, e verificar outras tarefas de gerenciamento executadas no Centro de administração do Microsoft Office 365.
-ms.openlocfilehash: 0159604eaa4e021d9ccef544306e8b274af11f18
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027568"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341652"
 ---
 # <a name="manage-recipients-in-eop"></a>Gerenciar destinatários no EOP
 
@@ -24,7 +24,7 @@ O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gere
   
 O EOP oferece suporte a estes três tipos de destinatários:
   
-- **Usuários de email** Usuários de email são gerenciados de destinatários no seu EOP domínios. Esses destinatários tem credenciais de logon em sua organização do Office 365, mas eles têm endereços de email externo, que significa que suas caixas de correio do destinatários estão localizadas fora da sua organização em nuvem. Você pode adicionar usuários de email para que eles podem receber email e você também pode criar regras de transporte para usuários específicos. Você também pode atribuir funções a usuários de email em sua organização; os usuários com privilégios de grupo de função de gerenciamento podem acessar o Centro de administração do Exchange (EAC) e executar algumas tarefas de gerenciamento. Para saber mais sobre as funções de usuário e como atribuir funções de usuário no EOP, consulte [Gerenciar permissões de grupo de função administrador no EOP](manage-admin-role-group-permissions-in-eop.md).
+- **Usuários de email** Os usuários de email são destinatários em seus domínios gerenciados do EOP. Esses destinatários têm credenciais de logon na sua organização do Office 365, mas têm endereços de email externos, o que significa que suas caixas de correio de destinatário estão localizadas fora da sua organização em nuvem. Você pode adicionar usuários de email para que eles possam receber emails e também pode criar regras de fluxo de emails (também conhecidas como regras de transporte) para usuários específicos. Você também pode atribuir funções aos usuários de email em sua organização; os usuários com privilégios de grupo de função de gerenciamento podem acessar o centro de administração do Exchange (Eat) e realizar determinadas tarefas de gerenciamento. Para saber mais sobre as funções de usuário e como atribuir funções de usuário no EOP, confira [gerenciar permissões do grupo de funções de administrador no EOP](manage-admin-role-group-permissions-in-eop.md).
     
     Para obter mais informações sobre o gerenciamento de usuários de email no EOP, consulte [Gerenciar usuários de email no EOP](manage-mail-users-in-eop.md).
     

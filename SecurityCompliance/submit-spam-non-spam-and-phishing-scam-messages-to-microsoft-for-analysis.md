@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Você e seus usuários podem enviar mensagens de spam falsas negativas e falsos positivos para a Microsoft para análise. '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276091"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341522"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 
@@ -79,7 +79,7 @@ Você pode enviar mensagens que não são spam das seguintes maneiras:
     
 - Se você usar a ação **mensagem em quarentena** em vez da ação **mover mensagem para a pasta lixo eletrônico** ao configurar seus filtros de conteúdo: 
     
-  - Os administradores podem liberar as mensagens de spam em quarentena e relatá-las como falsos positivos do centro de administração do Exchange. Para obter mais informações, consulte [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md).
+  - Os administradores podem liberar a mensagens em quarentena e relatá-las como falsos positivos no Centro de Administração do Exchange. Para obter mais informações, consulte [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md).
     
   - Os usuários podem liberar suas próprias mensagens em quarentena de spam e relatá-las como falsos positivos por meio dos seguintes canais: 
     

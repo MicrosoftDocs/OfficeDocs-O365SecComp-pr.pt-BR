@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: O objetivo deste tópico é ajudar você a entender o processo de optar pelo Exchange Online Protection (EOP) a partir de um serviço de proteção na nuvem ou ferramenta de higienização de email local e então oferecer recursos de ajuda para começar.
-ms.openlocfilehash: d1dc75e8d020f865e4f358899802d0da320deeb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026398"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340752"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Mudando para EOP da Google Postini, Firewall de Vírus ou Spam Barracuda ou Cisco IronPort
 
@@ -26,11 +26,11 @@ Se você é novo no EOP e deseja ler uma visão geral dos seus recursos antes de
   
 Antes de mudar para EOP, é importante que você decida se deseja hospedar as suas caixas de correio protegias pelo EOP na nuvem, com o Exchange Online, localmente ou em um cenário híbrido. (Hybrid significa que você tem algumas caixas de correio hospedadas no local e outra parte hospedado com o Exchange Online.) Cada um desses cenários de hospedagem: nuvem, no local, e híbrido, é possível, mas as etapas de configuração podem variar. Aqui estão algumas considerações para ajudar você a escolher a implantação apropriada:
   
-- **Proteção de EOP com caixas de correio local** Este cenário é apropriado se você tiver a infraestrutura de hospedagem de email existente que deseja usar, ou você tem requisitos de negócios para manter caixas de correio local e quiser que a proteção de email baseada em nuvem do EOP. [Alternar para o EOP autônomo](#BKMK_SwitchStandalone.md) descreve este cenário em mais detalhes. 
+- **Proteção do EOP com caixas de correio locais** Esse cenário será apropriado se você tiver uma infraestrutura de Hospedagem de emails existente que você deseja usar ou se tiver requisitos de negócios para manter as caixas de correio locais e quiser a proteção de email baseada em nuvem do EOP. [Alternar para EOP autônomo](#BKMK_SwitchStandalone.md) descreve esse cenário em mais detalhes. 
     
-- **Proteção de EOP com caixas de correio Exchange Online** Este cenário é apropriado se você quiser proteção EOP e todas as suas caixas de correio hospedadas na nuvem. Ele pode ajudar a reduzir a complexidade, porque você não precisa manter mensagens servidores locais. [Alternar para o Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) descreve neste cenário. 
+- **Proteção do EOP com caixas de correio do Exchange Online** Este cenário será apropriado se você quiser proteção do EOP e todas as suas caixas de correio hospedadas na nuvem. Ele pode ajudá-lo a reduzir a complexidade, porque você não precisa manter os servidores de mensagens locais. [Mudar para o Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) descreve esse cenário. 
     
-- **Proteção de EOP com caixas de correio híbrida** Talvez você queira que caixas de correio da nuvem, mas você precisa manter caixas de correio para alguns usuários no local. Escolha este cenário se desejar que algumas caixas de correio hospedadas no local e a outra parte hospedado com o Exchange Online. [Alternar para uma solução híbrida](#BKMK_SwitchHybrid.md) descreve neste cenário. 
+- **Proteção do EOP com caixas de correio híbridas** Talvez você queira as caixas de correio na nuvem, mas precisa manter caixas de correio para alguns usuários no local. Escolha este cenário se quiser algumas caixas de correio hospedadas no local e outra parte hospedada com o Exchange Online. [Alternar para uma solução híbrida](#BKMK_SwitchHybrid.md) descreve esse cenário. 
     
 ## <a name="switch-to-eop-standalone"></a>Mudar para EOP standalone
 <a name="BKMK_SwitchStandalone"> </a>
@@ -56,11 +56,11 @@ O melhor lugar para começar, se você está considerando uma implantação híb
 
 Quando você decide mudar para EOP, certifique-se de que você está considerando especialmente as seguintes áreas:
   
-- **Regras de filtragem personalizadas** Se você tiver filtragem personalizada ou regras de política de negócios para capturar spam específico, é recomendável que você tente EOP com as configurações padrão para um período, antes de migrar suas regras. EOP oferece proteção de spam de nível empresarial, com as configurações padrão, ele pode acabar que você não precisa migrar algumas de suas regras para EOP. Obviamente, se você tiver regras in-loco que impor políticas de negócios personalizado específico, você pode criar aqueles. [Regras de transporte](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) fornece instruções detalhadas para a criação de regras de transporte no EOP. 
+- **Regras de filtragem personalizadas** Se você tiver regras de filtro ou política de negócios personalizadas para detectar spam específico, recomendamos que tente EOP com as configurações padrão para um período, antes de migrar suas regras. O EOP oferece proteção de spam de nível empresarial com as configurações padrão, pode ser que você não precise migrar algumas de suas regras para o EOP. Obviamente, se você tiver regras no local que imponham políticas de negócios personalizadas específicas, você poderá criá-las. [Regras de fluxo de email (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) fornece instruções detalhadas para a criação de regras de fluxo de email no EOP. 
     
-- **Permissões de IP, listas e listas de bloqueios IP** Se você tiver por usuário Permitir listas e listas de bloqueio, permitir algum tempo copiar as listas para EOP como parte do seu processo de instalação. Para obter mais informações sobre IP permitir listas e listas de bloqueios IP, consulte [Configure a política de filtro de conexão](../configure-the-connection-filter-policy.md).
+- Listas **de IPs permitidos e listas de IPs bloqueados** Se você tiver listas de permissões e listas de bloqueio por usuário, aguarde algum tempo para copiar as listas para o EOP como parte do processo de instalação. Para obter mais informações sobre listas de IPs permitidos e listas de bloqueios de IP, consulte [Configurar a política de filtro de conexão](../configure-the-connection-filter-policy.md).
     
-- **Comunicação segura** Se você tiver um parceiro que exige a mensagens criptografadas, recomendamos que você configure isso no Centro de administração do Exchange. Para configurar este cenário, consulte [criar conectores de um canal de email seguro usando a segurança de camada de transporte (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
+- **Comunicação segura** Se você tiver um parceiro que exija mensagens criptografadas, recomendamos que você configure isso no centro de administração do Exchange. Para configurar esse cenário, consulte [Create Connectors for a Secure Mail Channel using Transport Layer Security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     
 > [!TIP]
 > Quando você mudar de uma ferramenta local para EOP, é possível deixar a sua ferramenta ou um servidor preparado para realizar as verificações de regra de negócio. Por exemplo, se a sua ferramenta realiza filtragem personalizada no email de saída e você deseja que isso continue sendo feito, você pode configurar o EOP para enviar email diretamente para a ferramenta para uma filtragem adicional antes que o mesmo seja roteado para a Internet. [Exchange Online Protection Connectors - Outbound Smart Host Scenario](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx) mostra como configurar o fluxo de mensagens nesse caso. 

@@ -15,19 +15,19 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: As configurações básicas de filtro de spam incluem a seleção da ação a ser executada em mensagens identificadas como spam e a escolha da filtragem de mensagens escritas em idiomas específicos ou enviadas de países ou regiões específicos.
-ms.openlocfilehash: 44ed773ae95976714d502a142aed75fa24a1b843
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1f5ff5db88d11971df070d316ad4aaff6eb88712
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296984"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341802"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
   
 As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada. Você pode editar a política de filtro de spam padrão para definir as configurações de filtro de spam para toda a empresa e criar políticas personalizadas de filtro de spam e aplicá-las a usuários, grupos ou domínios específicos em sua organização. As políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de prioridade mais alta será aplicada se várias políticas atenderem ao conjunto de critérios. 
   
 > [!IMPORTANT]
-> Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No enTanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar as regras de transporte do Exchange em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No enTanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar regras de fluxo de email do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>O que você precisa saber antes de começar
 
@@ -45,7 +45,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
       - Revise a política padrão para toda a empresa nas configurações padrão.
     
-      - Clique na guia **Personalizar** , altere o seletor de **configurações personalizadas** para **ativado**e clique no botão * *![adicionar ícone](media/ITPro-EAC-AddIcon.gif) **criar uma política** para criar uma nova política personalizada de filtro de spam que possa ser aplicada aos usuários, grupos e domínios em sua organização. Você também pode editar políticas personalizadas existentes clicando duas vezes nelas. 
+      - Clique na guia **Personalizar** , altere o seletor de **configurações personalizadas** para **ativado**e clique no botão ![adicionar ícone](media/ITPro-EAC-AddIcon.gif) **criar uma política** para criar uma nova política personalizada de filtro de spam que possa ser aplicada a usuários, grupos e domínios em sua organização. Você também pode editar políticas personalizadas existentes clicando duas vezes nelas. 
     
 3. Somente para políticas personalizadas, especifique um nome para a política. Opcionalmente, você também pode especificar uma descrição mais detalhada. Não é possível renomear a política padrão.<br/><br/>Observação: quando você cria uma política, todas as definições de configuração aparecem em uma única tela. Por outro lado, ao editar uma política, você deve navegar por várias telas. As configurações são as mesmas em qualquer um dos casos, mas o restante deste procedimento descreve como acessar essas configurações ao editar uma política. 
   
@@ -55,7 +55,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
         
       - **Mensagem de quarentena:** Envia a mensagem para quarentena em vez de para os destinatários pretendidos. Se você selecionar essa opção, na caixa de entrada **reter spam para (dias)** , especifique o número de dias durante os quais a mensagem de spam será colocada em quarentena. (Ele será excluído automaticamente após o tempo decorrido. O valor padrão é 15 dias, que é o valor máximo. O valor mínimo é 1 dia.)<br/><br/>Dica: para obter informações sobre como os administradores podem gerenciar mensagens de email residentes na quarentena no Eat, confira [quarentena](quarantine.md) e [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md). > para obter informações sobre como configurar as mensagens de notificação de spam a serem enviadas aos usuários, consulte [Configure End-User spam Notifications in EOP](configure-end-user-spam-notifications-in-eop.md) ou [Configure End-User spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-      - **Mover mensagem para a pasta de lixo eletrônico:** Envia a mensagem para a pasta lixo eletrônico dos destinatários especificados. Esta é a ação padrão para os dois níveis de limite de confiança.<br/><br/>**IMPORTANTE: para os clientes do Exchange Online Protection (EOP): para que essa ação funcione com caixas de correio locais, você deve configurar duas regras de transporte do Exchange em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
+      - **Mover mensagem para a pasta de lixo eletrônico:** Envia a mensagem para a pasta lixo eletrônico dos destinatários especificados. Esta é a ação padrão para os dois níveis de limite de confiança.<br/><br/>**Importante**: para os clientes do Exchange Online Protection (EOP): para que essa ação funcione com caixas de correio locais, você deve configurar duas regras de fluxo de email do Exchange em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
       - **Adicionar cabeçalho X:** Envia a mensagem para os destinatários especificados, mas adiciona o texto do cabeçalho X ao cabeçalho da mensagem para identificar a mensagem como spam. Usando esse texto como um identificador, você pode, opcionalmente, criar regras de caixa de entrada ou usar um dispositivo downstream para atuar na mensagem. O texto padrão do cabeçalho X é **esta mensagem parece ser spam**.<br/>Você pode personalizar o texto do cabeçalho X usando a caixa de entrada **Adicionar este texto do cabeçalho x** . Se você personalizar o texto do cabeçalho X, esteja ciente das seguintes condições: 
     

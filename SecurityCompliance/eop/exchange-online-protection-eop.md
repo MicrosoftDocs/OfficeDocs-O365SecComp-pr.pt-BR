@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Veja algumas coisas que você deve estar ciente antes de começar a trabalhar com o EOP.
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206554"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341742"
 ---
 # <a name="exchange-online-protection"></a>Proteção do Exchange Online 
 
@@ -50,7 +50,7 @@ O conteúdo da Ajuda para administradores do EOP é composta pelas seguintes cat
     
 - [Práticas recomendadas para a configuração do EOP](best-practices-for-configuring-eop.md) Descreve as configurações e as considerações de configuração recomendadas para depois de configurar e provisionar o serviço. 
     
-- [Política de mensagens e conformidade no EOP](messaging-policy-and-compliance-in-eop.md) Descreve como usar regras de transporte do Exchange (regras de filtragem personalizadas) para impor políticas e regulamentações específicas da empresa e como usar relatórios de auditoria para rastrear as alterações de configuração no serviço. 
+- [Política de mensagens e conformidade no EOP](messaging-policy-and-compliance-in-eop.md) Descreve como usar as regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) para impor políticas e regulamentos específicas da empresa e como usar relatórios de auditoria para rastrear as alterações de configuração no serviço. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Descreve a filtragem de spam e de malware e mostra como personalizá-las para melhor atender às necessidades da sua organização. Descreve também as tarefas que os administradores e usuários finais podem realizar em mensagens em quarentena. 
     

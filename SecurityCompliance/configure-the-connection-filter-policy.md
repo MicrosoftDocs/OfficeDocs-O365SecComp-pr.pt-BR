@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para garantir que os emails enviados de pessoas confiáveis não sejam bloqueados, você pode usar a política de filtro de conexão para criar uma lista de permissões, também conhecida como lista de remetentes confiáveis, dos endereços IP nos quais você confia. Você também pode criar uma lista de remetentes bloqueados.
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216901"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341602"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar a política do filtro de conexão
  
@@ -98,9 +98,9 @@ Depois de criar e impor a regra, o serviço ignora a filtragem de spam para o in
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Controlando uma exceção da lista de IP Permitidos para um domínio específico
 
-Em geral, recomendamos que você adicione endereços IP (ou faixas de endereço IP) para todos os domínios que você considerar seguro para a lista de IP Permitidos. No entanto, se você não quer que sua lista de permissões de IP se aplique a todos os seus domínios, é possível criar uma regra de transporte que excetua domínios específicos. 
+Em geral, recomendamos que você adicione os endereços IP (ou intervalos de endereços IP) para todos os seus domínios que considera seguros à lista de IPs permitidos. No enTanto, se você não quiser que a entrada da lista de IPs permitidos seja aplicada a todos os seus domínios, você pode criar uma regra de fluxo de emails (também conhecida como regra de transporte), exceto domínios específicos. 
   
-Por exemplo, digamos que você tem três domínios: ContosoA.com, ContosoB.com e ContosoC.com, e você deseja adicionar o endereço IP (para simplificar, vamos usar 1.2.3.4) e pular a filtragem apenas para o domínio ContosoB.com. Você poderia criar uma lista de permissões de IP para 1.2.3.4, que define o nível de confiança de spam (SCL) a -1 (o que significa que é classificado como não-spam) em todos os domínios. Você pode, então, criar uma regra de transporte que define o SCL para todos os domínios, exceto ContosoB.com a 0. Isso resulta na mensagem sendo reexaminada novamente para todos os domínios relacionados com o endereço IP, exceto para ContosoB.com que é o domínio listado como exceção na regra. ContosoB.com ainda tem um SCL de -1, o que significa ignorar filtragem, enquanto ContosoA.com e ContosoC.com têm SCLs de 0, o que significa que será examinado novamente pelo filtro de conteúdo.
+Por exemplo, digamos que você tenha três domínios: ContosoA.com, ContosoB.com e ContosoC.com e deseja adicionar o endereço IP (por questões de simplicidade, vamos usar 1.2.3.4) e ignorar a filtragem somente para o domínio ContosoB.com. Você deve criar uma lista de IPs permitidos para 1.2.3.4, que define o nível de confiança de spam (SCL) como-1 (o que significa que ele é classificado como não spam) para todos os domínios. Você pode criar uma regra de fluxo de emails que define o SCL de todos os domínios, exceto ContosoB.com para 0. Isso resulta na reverificação da mensagem para todos os domínios associados ao endereço IP, exceto para o ContosoB.com, que é o domínio listado como exceção na regra. ContosoB.com ainda tem um SCL de-1, o que significa ignorar a filtragem, enquanto ContosoA.com e ContosoC.com têm SCLs de 0, o que significa que eles serão verificados novamente pelo filtro de conteúdo.
   
 Para fazer isso, execute as seguintes etapas:
   

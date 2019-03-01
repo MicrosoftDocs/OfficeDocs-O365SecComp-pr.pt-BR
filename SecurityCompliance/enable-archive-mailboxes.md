@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use o centro de conformidade &amp; de segurança do Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
-ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296054"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341792"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro &amp; de conformidade de segurança do Office 365
   
@@ -138,7 +138,6 @@ Execute o seguinte comando para desabilitar a caixa de correio de arquivo morto 
     - Move os itens que têm 14 dias ou mais da pasta Itens Recuperáveis na caixa de correio principal do usuário para a pasta Itens Recuperáveis nas caixas de correio de arquivo morto.
     
 - Para obter mais informações sobre caixas de correio de arquivo morto e políticas de retenção do Exchange, consulte:
-  
     
   - [Marcas e políticas de retenção](https://go.microsoft.com/fwlink/?LinkId=404424)
     

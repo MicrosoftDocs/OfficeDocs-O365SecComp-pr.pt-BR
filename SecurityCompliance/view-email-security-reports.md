@@ -3,7 +3,7 @@ title: Exibir relatórios de segurança de email no &amp; centro de conformidade
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Saiba como encontrar e usar relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241993"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341442"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 
-Vários relatórios de segurança de email estão disponíveis no [centro de &amp; conformidade de segurança](https://security.microsoft.com) para ajudá-lo a ver como os recursos antispam e antimalware no Office 365 estão protegendo sua organização. Se você tiver as [permissões necessárias](#what-permissions-are-needed-to-view-these-reports), poderá exibir esses relatórios no centro de conformidade &amp; de segurança acessando o **painel**de **relatórios** \> .
+Vários relatórios estão disponíveis no [centro de conformidade de &amp; segurança](https://protection.office.com) para ajudá-lo a ver como os recursos de segurança de email, como os recursos antispam, Antimalware e de criptografia no Office 365 estão protegendo sua organização. Se você tiver as [permissões necessárias](#what-permissions-are-needed-to-view-these-reports), poderá exibir esses relatórios no centro de conformidade &amp; de segurança acessando o **painel**de **relatórios** \> .
   
-![O painel &amp; do centro de conformidade de segurança pode ajudá-lo a ver onde a proteção avançada contra ameaças está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Painel em que você vê como a proteção avançada contra ameaças está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Os relatórios de segurança de email incluem o seguinte:
+
+- [Relatório de criptografia](#encryption-report) (Novo!)
   
 - [Relatório de status de proteção contra ameaças](view-email-security-reports.md#tps) 
     
@@ -43,12 +45,36 @@ Os relatórios de segurança de email incluem o seguinte:
 - [Relatório de detecções de spam](#spam-detections-report)
     
 - [Relatório de email enviado e recebido](view-email-security-reports.md#sentreceivedemail)
+
+- [Relatório de mensagens relatadas pelo usuário](view-email-security-reports.md#userreported)
     
-- [Relatório de mensagens relatadas pelo usuário](view-email-security-reports.md#userreported) (novo!) 
-    
+## <a name="encryption-report"></a>Relatório de criptografia
+
+(**Novo!**) O **relatório de criptografia** mostra informações sobre as mensagens de email que foram criptografadas por meio de políticas ou de controles de usuário final. A equipe de segurança da sua organização pode usar essas informações para identificar padrões e aplicar proativamente ou ajustar políticas para mensagens de email confidenciais.
+
+Para exibir esse relatório, no centro de conformidade do & de segurança, vá para **relatório de criptografia**de **painel** \> de **relatórios** \> .
+
+![Relatório de criptografia](media/encryptionreport-defaultview.png) 
+
+Quando o relatório for aberto pela primeira vez, você verá dados sobre os métodos de criptografia usados em mensagens de email dos últimos sete (7) dias. Você pode alterar o intervalo de datas e os detalhes no relatório clicando em filtros no canto superior direito da tela.
+
+![Filtros de relatório de criptografia](media/encryptionreport-filters.png)   
+
+Você também pode usar o menu dividir por para exibir dados por modelo de criptografia (ou método).
+
+![Método ou modelo de criptografia](media/encryptionreport-breakdownby.png)
+
+E você pode usar o menu exibir dados por para alterar o modo de exibição para ver as contagens de mensagens criptografadas para os cinco domínios de destinatários principais.
+
+![Dados de exibição do relatório de criptografia por menu](media/encryptionreport-viewdataby.png)
+
+Com a flexibilidade do novo relatório de criptografia, você pode exibir tendências e tomar as ações apropriadas. Por exemplo, se você vir um grande número de mensagens de email criptografadas por usuários, talvez queira adicionar uma política de criptografia para automatizar a criptografia para determinados casos de uso. E, se você tiver vários modelos de criptografia disponíveis, mas nenhum deles estiver usando, você poderá explorar se os usuários precisam de treinamento para esse recurso. 
+
+Este relatório permite que a equipe de segurança e conformidade da sua organização monitore a forma como a criptografia de mensagens está sendo usada e se são necessárias mais ações.
+
 ## <a name="threat-protection-status-report"></a>Relatório de status de proteção contra ameaças
 
-O novo relatório de **status de proteção contra ameaças** é um relatório inteligente que mostra emails mal-intencionados que foram detectados e bloqueados pela proteção do Exchange Online. Este relatório mostra informações sobre o email identificado como malware ou uma tentativa de phishing. 
+O relatório de **status de proteção contra ameaças** é um relatório inteligente que mostra emails mal-intencionados que foram detectados e bloqueados pela proteção do Exchange Online. Este relatório mostra informações sobre o email identificado como malware ou uma tentativa de phishing. 
 
 > [!NOTE]
 > Um relatório de status de proteção contra ameaças está disponível para clientes que tenham o [Office 365 ATP](office-365-atp.md) ou o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); no entanto, as informações exibidas no relatório de status de proteção contra ameaças para clientes ATP provavelmente conterão dados diferentes do que os clientes do EOP podem ver. Por exemplo, os clientes do EOP podem exibir informações sobre malware detectado no email, mas não informações sobre [arquivos mal-intencionados detectados no SharePoint Online, no onedrive ou no Microsoft Teams](atp-for-spo-odb-and-teams.md), um recurso específico de ATP. ([Saiba mais sobre os relatórios de ATP](view-reports-for-atp.md).)
@@ -109,13 +135,13 @@ Use a lista **Mostrar dados de** para escolher se deseja exibir dados para os re
   
 Abaixo do gráfico, você verá quem os principais remetentes ou destinatários de emails foram, juntamente com uma contagem de mensagens enviadas ou recebidas pelo período de tempo especificado.
   
-## <a name="spoof-mail-report"></a>Relatório de falsificação de email
+## <a name="spoof-detections-report"></a>Relatório de detecções falsas
 
-O relatório de **email** de falsificação mostra quantas mensagens de email de falsificação foram detectadas, e delas, que foram consideradas "boas" (emails falsos realizados por motivos de negócios legítimos). 
+O relatório de **detecções falsas** mostra quantas mensagens de email de falsificação foram detectadas, e dessas, quais foram consideradas "boas" (emails falsos realizados por motivos de negócios legítimos). 
   
 Para exibir esse relatório, no [centro de &amp; conformidade de segurança](https://protection.office.com), vá para **relatório** \> de falsificação de **painel** \> **** de relatórios.
   
-![Para exibir esse relatório, no centro de &amp; conformidade de segurança, vá para \> o \> painel relatórios email de spoof](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![No centro de &amp; conformidade de segurança, vá para \> o \> painel relatórios email de spoof](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 Ao passar o mouse sobre um dia no gráfico, você pode ver quantas mensagens de email de falsificação foram recebidas.
   
@@ -157,7 +183,7 @@ Abaixo do gráfico, você verá uma lista de categorias de email, como **GoodMai
   
 ![Este relatório informa sobre o anti-malware, antispam e outras detecções de mensagens](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>Relatório de mensagens relatadas pelo usuário (novo!)
+## <a name="user-reported-messages-report"></a>Relatório de mensagens relatadas pelo usuário
 
 O relatório de mensagens relatadas pelo **usuário** mostra informações sobre as mensagens de email que os usuários relataram como lixo eletrônico, tentativas de phishing ou emails de boa qualidade usando o suplemento de [mensagem de relatório](enable-the-report-message-add-in.md).
   

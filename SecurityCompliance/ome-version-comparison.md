@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Ajuda a explicar as diferenças nos recursos entregues com diferentes versões da criptografia de mensagens do Office 365, além de como as duas continuam a trabalhar em conjunto.
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216671"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341432"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versões do OME
 
@@ -31,7 +31,7 @@ Este artigo compara a criptografia de mensagem do Office 365 herdada para os nov
 |                                   |Recursos antigos       |                   |Novos recursos              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Funcionalidade**                     | **OME herdado**    | **IRM**           | **Novos recursos do OME** |
-|*Enviar um email criptografado*        |Por meio de regras de fluxo de email do Exchange|O usuário final iniciou a partir do Outlook na Web ou do Outlook na Web; ou por meio de regras de fluxo de email do Exchange|Usuário final iniciado a partir da área de trabalho do Outlook, Outlook para Mac ou Outlook na Web; por meio de regras de transporte do Exchange e prevenção de perda de dados do Office 365 (DLP)|
+|*Enviar um email criptografado*        |Por meio de regras de fluxo de email do Exchange|O usuário final iniciou a partir do Outlook na Web ou do Outlook na Web; ou por meio de regras de fluxo de email do Exchange|Usuário final iniciado a partir da área de trabalho do Outlook, Outlook para Mac ou Outlook na Web; por meio de regras de fluxo de email do Exchange (também conhecidas como regras de transporte) e prevenção de perda de dados do Office 365 (DLP)|
 |*Modelo de gerenciamento de direitos*       |   N/D      |Opção não enCaminhar e modelos personalizados|Opção não enCaminhar, opção somente criptografia e modelos personalizados|
 |*Tipo de destinatário*                   |Destinatários internos e externos|Somente destinatários internos         |Destinatários internos e externos|
 |*Experiência para o destinatário interno*|Os destinatários recebem uma mensagem HTML, que eles baixam e abrem em um navegador da Web ou aplicativo móvel|Experiência interna nativa em clientes do Outlook|Experiência interna nativa para destinatários do Office 365. Todos os outros destinatários podem ler a mensagem do portal do OME (sem download ou aplicativo necessário).|
