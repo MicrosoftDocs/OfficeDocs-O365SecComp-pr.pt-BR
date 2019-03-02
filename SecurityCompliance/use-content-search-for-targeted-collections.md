@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para realizar coleções direcionadas. Uma coleção direcionada significa que você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Use o script neste artigo para obter a ID da pasta ou o caminho das pastas de caixa de correio ou de site específicas que você deseja pesquisar.
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296924"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354683"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para coleções direcionadas
 
@@ -55,7 +55,7 @@ O script executado nesta primeira etapa retornará uma lista de pastas de caixa 
     
 - **Suas credenciais de usuário** -o script usará suas credenciais para se conectar ao Exchange Online e &amp; ao centro de conformidade de segurança com o PowerShell remoto. Conforme explicado anteriormente, você precisa atribuir as permissões apropriadas para executar esse script com êxito.
     
-Para exibir uma lista de pastas de caixa de correio ou nomes de caminho de site:
+Para exibir uma lista de pastas de caixa de correio ou nomes de site documentlink (caminho):
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `GetFolderSearchParameters.ps1`.
     
@@ -66,9 +66,10 @@ Para exibir uma lista de pastas de caixa de correio ou nomes de caminho de site:
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Para exibir uma lista de pastas de caixa de correio ou nomes de caminho de site:
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ O exemplo na etapa 2 mostra a consulta usada para pesquisar a subpasta de limpez
   
 ### <a name="script-output-for-site-folders"></a>Saída de script para pastas de site
 
-Se você estiver obtendo caminhos de sites do SharePoint ou do OneDrive for Business, o script se conecta &amp; ao centro de conformidade de segurança usando o PowerShell remoto, cria uma nova pesquisa de conteúdo que procura por pastas no site e, em seguida, exibe uma lista das pastas localizado no site especificado. O script exibe o nome de cada pasta e adiciona o prefixo de **caminho** (que é o nome da propriedade de site) à URL da pasta. Como a propriedade **path** é uma propriedade pesquisável, você usará `path:<path>` uma consulta de pesquisa na etapa 2 para pesquisar essa pasta. 
+Se você estiver obtendo documentlinks de sites do SharePoint ou do OneDrive for Business, o script se conecta &amp; ao centro de conformidade de segurança usando o PowerShell remoto, cria uma nova pesquisa de conteúdo que procura por pastas no site e, em seguida, exibe uma lista de pastas localizadas no site especificado. O script exibe o nome de cada pasta e adiciona o prefixo de **caminho** (que é o nome da propriedade de site) à URL da pasta. Como a propriedade **path** é uma propriedade pesquisável, você usará `path:<path>` uma consulta de pesquisa na etapa 2 para pesquisar essa pasta. 
   
 Veja um exemplo de saída retornada pelo script para pastas de site.
   
-![Exemplo da lista de nomes de caminho para pastas de site retornadas pelo script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Exemplo da lista de nomes de documentlink para pastas de site retornadas pelo script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>Etapa 2: usar uma ID de pasta ou um caminho para executar uma coleção de direcionamento
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Etapa 2: usar uma ID de pasta ou documentlink para executar uma coleção direcionada
 
-Após executar o script para coletar uma lista de IDs de pasta ou caminhos para um usuário específico, a próxima etapa para acessar o centro de conformidade &amp; de segurança e criar uma nova pesquisa de conteúdo para pesquisar uma pasta específica. Você usará a `folderid:<folderid>` propriedade `path:<path>` ou na consulta de pesquisa que você configura na caixa palavra-chave de pesquisa de conteúdo (ou como o valor para o parâmetro *ContentMatchQuery* se você usar o cmdlet **New-ComplianceSearch** ). Você pode combinar a `folderid` propriedade `path` ou com outros parâmetros de pesquisa ou condições de pesquisa. Se você incluir apenas a `folderid` propriedade `path` ou na consulta, a pesquisa retornará todos os itens localizados na pasta especificada. 
-  
-> [!NOTE]
-> O uso `path` da propriedade para pesquisar os locais do onedrive não retornará arquivos de mídia, como arquivos. png,. TIFF ou. wav, nos resultados da pesquisa. 
+Após executar o script para coletar uma lista de IDs de pasta ou documentlinks para um usuário específico, a próxima etapa para acessar o centro de conformidade &amp; de segurança e criar uma nova pesquisa de conteúdo para pesquisar uma pasta específica. Você usará a `folderid:<folderid>` propriedade `documentlink:<path>` ou na consulta de pesquisa que você configura na caixa palavra-chave de pesquisa de conteúdo (ou como o valor para o parâmetro *ContentMatchQuery* se você usar o cmdlet **New-ComplianceSearch** ). Você pode combinar a `folderid` propriedade `documentlink` ou com outros parâmetros de pesquisa ou condições de pesquisa. Se você incluir apenas a `folderid` propriedade `documentlink` ou na consulta, a pesquisa retornará todos os itens localizados na pasta especificada. 
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
@@ -227,17 +225,17 @@ Após executar o script para coletar uma lista de IDs de pasta ou caminhos para 
     
 6. Clique em **Avançar**.
     
-7. Na caixa palavra-chave da página **o que você deseja procurar** , Cole o ou `folderid:<folderid>` `path:<path>` o valor retornado pelo script na etapa 1. 
+7. Na caixa palavra-chave da página **o que você deseja procurar** , Cole o ou `folderid:<folderid>` `documentlink:<path>` o valor retornado pelo script na etapa 1. 
     
     Por exemplo, a consulta na captura de tela a seguir pesquisará qualquer item na subpasta de limpezas na pasta itens recuperáveis do usuário (o valor `folderid` da propriedade da subpasta de limpezas é mostrado na captura de tela na etapa 1):
     
-    ![Cole o FolderId ou o caminho na caixa de palavra-chave da consulta de pesquisa](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Cole o FolderId ou documentlink na caixa palavra-chave da consulta de pesquisa](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Clique em **Pesquisar** para iniciar a pesquisa de coleção direcionada. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Exemplos de consultas de pesquisa para coleções direcionadas
 
-Aqui estão alguns exemplos de como usar `folderid` as `path` Propriedades e em uma consulta de pesquisa para executar uma coleção direcionada. Observe que os espaços reservados são usados `folderid:<folderid>` para `path:<path>` o e economizar espaço. 
+Aqui estão alguns exemplos de como usar `folderid` as `documentlink` Propriedades e em uma consulta de pesquisa para executar uma coleção direcionada. Observe que os espaços reservados são usados `folderid:<folderid>` para `documentlink:<path>` o e economizar espaço. 
   
 - Este exemplo pesquisa três pastas de caixa de correio diferentes. Você pode usar sintaxe de consulta semelhante para pesquisar as pastas ocultas em uma pasta de itens recuperáveis de um usuário.
     
@@ -254,13 +252,13 @@ Aqui estão alguns exemplos de como usar `folderid` as `path` Propriedades e em 
 - Este exemplo pesquisa uma pasta de site (e todas as subpastas) para documentos que contenham as letras "NDA" no título.
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - Este exemplo pesquisa uma pasta de site (e qualquer subpasta) para documentos que foram alterados em um intervalo de datas.
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>Mais informações
@@ -273,8 +271,6 @@ Tenha em mente os seguintes pontos ao usar o script neste artigo para executar c
     
 - Ao pesquisar pastas de caixa de correio, somente a pasta especificada ( `folderid` identificado por sua propriedade) será pesquisada. As subpastas não serão pesquisadas. Para pesquisar subpastas, você precisa usar a ID de pasta para a subpasta que você deseja pesquisar. 
     
-- Ao pesquisar pastas de site, a pasta (identificado por `path` sua propriedade) e todas as subpastas serão pesquisadas. 
+- Ao pesquisar pastas de site, a pasta (identificado por `documentlink` sua propriedade) e todas as subpastas serão pesquisadas. 
     
-- Conforme mencionado anteriormente, você não pode `path` usar a propriedade para pesquisar arquivos de mídia, como arquivos. png,. TIFF ou. wav, localizados em locais do onedrive. Use uma [propriedade de site](keyword-queries-and-search-conditions.md#searchable-site-properties) diferente para pesquisar arquivos de mídia em pastas do onedrive. 
-
 - Ao exportar os resultados de uma pesquisa na qual você só especificou `folderid` a propriedade na consulta de pesquisa, você pode escolher a primeira opção de exportação, "todos os itens, exceto aqueles que têm um formato não reconhecido, são criptografados ou não foram indexados por outros motivos". Todos os itens na pasta sempre serão exportados, independentemente do status de indexação, porque a ID da pasta é sempre indexada.

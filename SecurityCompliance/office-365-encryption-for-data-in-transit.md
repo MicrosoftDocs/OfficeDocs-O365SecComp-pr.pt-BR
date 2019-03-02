@@ -10,20 +10,23 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: 'Resumo: uma breve explicação de como a Microsoft criptografa dados em trânsito.'
-ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ba1317a0a2a685d0f3ac2216939d04e402503e49
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275841"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357602"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Criptografia do Office 365 para dados em trânsito
 
 Além de proteger os dados do cliente em repouso, a Microsoft usa tecnologias de criptografia para proteger os dados do cliente do Office 365 em trânsito. 
 
 Os dados estão em trânsito:
+
 - Quando uma máquina cliente se comunica com um servidor do Office 365;
 - Quando um servidor do Office 365 se comunica com outro servidor do Office 365; e
 - Quando um servidor do Office 365 se comunica com um servidor não-Office 365 (por exemplo, o Exchange Online que entrega emails para um servidor de email externo).
@@ -33,6 +36,7 @@ A comunicação entre o datacenter entre os servidores do Office 365 ocorre por 
 Os certificados públicos são emitidos pelo SSL de ti da Microsoft usando o SSLAdmin, uma ferramenta interna da Microsoft para proteger a confidencialidade das informações transmitidas. Todos os certificados emitidos pela TI da Microsoft têm um mínimo de 2048 bits de [](http://www.webtrust.org/homepage-documents/item70372.pdf) duração, e a conformidade do WebTrust requer o SSLAdmin para garantir que os certificados sejam emitidos apenas para endereços IP públicos pertencentes à Microsoft. Qualquer endereço IP que não atenda a esse critério é roteado por meio de um processo de exceção.
 
 Todos os detalhes de implementação, como a versão do TLS que está sendo usada, se o sigilo total (FS) está habilitado, a ordem de pacotes de codificação, etc., estão disponíveis publicamente. Uma maneira de ver esses detalhes é usar um site de terceiros, como laboratórios de Qualys SSL (www.ssllabs.com). Veja a seguir os links para páginas de teste automatizadas do Qualys que exibem informações sobre os seguintes serviços:
+
 - [Portal do Office 365](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
 - [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)

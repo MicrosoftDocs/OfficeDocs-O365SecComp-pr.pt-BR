@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Uma visão geral da criptografia na nuvem da Microsoft.
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275939"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357512"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Criptografia no Microsoft Cloud
 
@@ -36,6 +38,7 @@ De acordo com o padrão de segurança operacional de infraestrutura de chave pú
 O FIPS 140-2 é um padrão projetado especificamente para validar módulos de produto que implementam criptografia em vez de usar os produtos que os utilizam. Módulos criptográficos que são implementados em um serviço podem ser certificados como atender aos requisitos de intensidade de hash, gerenciamento de chave e semelhantes. Sempre que os recursos criptográficos são empregados para proteger a confidencialidade, integridade ou disponibilidade dos dados nos serviços de nuvem da Microsoft, os módulos e codificações usados atendem ao padrão FIPS 140-2.
 
 A Microsoft certifica os módulos de criptografia subjacente usados em nossos serviços em nuvem com cada nova versão do sistema operacional Windows:
+
 - Governo dos EUA do Azure e Azure
 - Dynamics 365 e Dynamics 365 governo dos EUA
 - Office 365, Office 365 governo dos EUA e Office 365 defesa do governo dos EUA

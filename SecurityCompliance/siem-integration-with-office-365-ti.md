@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
+ms.collection:
+- M365-security-compliance
 description: Integre o servidor SIEM da sua organização com o Office 365 Threat Intelligence e proteção avançada contra ameaças com a API de gerenciamento de atividades do Office 365.
-ms.openlocfilehash: cecfb3910520ddf535c50bbe4bccbf200ae8e121
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 68d2b4387c1af2363fbb67d0671edeaaa4dc652d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212731"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357432"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integração do SIEM com o Office 365 Threat Intelligence e proteção avançada contra ameaças
 

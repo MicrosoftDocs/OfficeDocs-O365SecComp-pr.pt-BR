@@ -8,19 +8,20 @@ ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
+ms.collection:
+- M365-security-compliance
+- Strat_O365_IP
 description: Saiba como o Exchange Online e o Office 365 usam a segurança de camada de transporte (TLS) e o sigilo total de comunicação por email. Além disso, obtenha informações sobre o certificado emitido pela Microsoft para o Exchange Online.
-ms.openlocfilehash: 2621bb325c5bf97baa0a25f1e5eb590339856549
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e80f477c807f3a7ad5f751e0987b191024c816d9
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220491"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354623"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Como o Exchange Online usa o TLS para proteger conexões de email no Office 365
 
