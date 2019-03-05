@@ -10,6 +10,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -17,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Saiba como modificar ou criar novos tipos de informação confidencial do Office 365 para GDPR.
-ms.openlocfilehash: 756c68c2270f010d229c65fe9f9829356b661972
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c55828572760485eb1d197178d918aee7acaa0b6
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220131"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373932"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar ou criar um novo tipo de informação confidencial
 
