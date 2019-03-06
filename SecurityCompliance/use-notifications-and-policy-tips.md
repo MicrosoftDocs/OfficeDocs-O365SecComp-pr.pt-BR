@@ -10,22 +10,21 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está trabalhando com conteúdo que está em conflito com uma política de DLP. Você pode usar notificações por email e dicas de política para aumentar a conscientização e ajudar a ensinar as pessoas sobre as políticas da sua organização. Você também pode conceder às pessoas a opção de substituir a política, para que elas não sejam bloqueadas se tiverem uma necessidade comercial válida ou se a política estiver detectando um falso positivo. '
-ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341692"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410916"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e mostrar dicas de política para políticas de DLP
 
-Você pode usar uma política de prevenção de perda de dados (DLP) para identificar, monitorar e proteger informações confidenciais no Office 365. Você deseja que as pessoas em sua organização que trabalhem com essas informações confidenciais permaneçam em conformidade com suas políticas de DLP, mas não convém bloqueá-las desnecessariamente da realização de seus trabalhos. É aqui que as notificações por email e dicas de política podem ajudar.
+Você pode usar uma política de prevenção contra perda de dados (DLP) para identificar, monitorar e proteger informações confidenciais no Office 365. Você deseja que as pessoas em sua organização que trabalhem com essas informações confidenciais permaneçam em conformidade com suas políticas de DLP, mas não convém bloqueá-las desnecessariamente da realização de seus trabalhos. É aí que as notificações por email e as dicas de política podem ajudar.
   
 ![Barra de mensagem mostra a dica de política no Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
@@ -51,7 +50,7 @@ Quando você cria uma política de DLP, as notificações por email e as dicas d
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 usando sua conta corporativa ou de estudante. Agora você está no centro de conformidade com &amp; segurança do Office 365.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante. Agora você está no centro de conformidade com &amp; segurança do Office 365.
     
 3. Na navegação \> à &amp; esquerda centro \> de conformidade de segurança \> **política** \> de **prevenção contra perda de dados** **+ criar uma política**.
     
@@ -90,7 +89,7 @@ Para cada regra de uma política de DLP, você pode:
 - Personalizar o texto que está incluído na notificação usando HTML ou tokens. ConFira a seção abaixo para obter mais informações.
     
 > [!NOTE]
->  As notificações por email podem ser enviadas somente para destinatários individuais, não grupos ou listas de distribuição. > apenas conteúdo novo disparará uma notificação por email. A edição do conteúdo existente acionará dicas de política, mas não uma notificação por email. 
+>  As notificações por email podem ser enviadas somente para destinatários individuais, não grupos ou listas de distribuição. > apenas conteúdo novo disparará uma notificação por email. Editar o conteúdo existente disparará dicas de política, mas não uma notificação por email. 
   
 ![Opções de notificação por email](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -105,7 +104,7 @@ Por padrão, as notificações exibem um texto semelhante ao seguinte para um it
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a notificação padrão para documentos do SharePoint ou do OneDrive for Business diz isso...**|**Em seguida, a notificação padrão para mensagens do Outlook diz isso...**|
 |:-----|:-----|:-----|
 |Envia uma notificação, mas não permite substituição  <br/> |Este item está em conflito com uma política de sua organização.  <br/> |Sua mensagem de email está em conflito com uma política da sua organização.  <br/> |
-|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este item está em conflito com uma política da sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado.  <br/> |Sua mensagem de email está em conflito com uma política da sua organização. A mensagem não foi entregue a todos os destinatários.  <br/> |
+|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este item está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado.  <br/> |Sua mensagem de email está em conflito com uma política da sua organização. A mensagem não foi entregue a todos os destinatários.  <br/> |
 |Bloqueia o acesso e envia uma notificação  <br/> |Este item está em conflito com uma política de sua organização. O acesso a este item está bloqueado para todos, exceto seu proprietário, o último modificador e o administrador de conjunto de site principal.  <br/> |Sua mensagem de email está em conflito com uma política da sua organização. A mensagem não foi entregue a todos os destinatários.  <br/> |
    
 ### <a name="custom-email-notification"></a>Notificação de email personalizada
@@ -114,7 +113,7 @@ Você pode criar uma notificação de email personalizada em vez de enviar a not
   
 Você também pode usar os tokens a seguir para ajudar a personalizar a notificação por email. Esses tokens são variáveis que são substituídas por informações específicas na notificação que é enviada.
 
-|**Geração**|**Descrição**|
+|**Token**|**Descrição**|
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |As ações aplicadas ao conteúdo.  <br/> |
 |%% ContentURL%%  <br/> |A URL do documento no site do SharePoint Online ou do OneDrive for Business.  <br/> |
@@ -126,11 +125,11 @@ Você também pode usar os tokens a seguir para ajudar a personalizar a notifica
 
 Para cada regra de uma política de DLP, você pode configurar as dicas de política para:
   
-- Basta notificar a pessoa de que o conteúdo está em conflito com uma política de DLP, para que eles possam executar uma ação para resolver o conflito. Você pode usar o texto padrão (consulte as tabelas abaixo) ou inserir texto personalizado sobre as políticas específicas da sua organização.
+- Simplesmente notificar a pessoa de que o conteúdo está em conflito com uma política de DLP, para que ela possa executar ações para resolver o conflito. Você pode usar o texto padrão (consulte as tabelas abaixo) ou inserir texto personalizado sobre as políticas específicas da sua organização.
     
 - Permita que a pessoa substitua a política de DLP. Opcionalmente, você pode:
     
-  - Exija que a pessoa Insira uma justificativa de negócios para substituir a política. Essas informações são registradas e você pode exibi-las nos relatórios DLP na seção **relatórios** do centro de &amp; conformidade de segurança. 
+  - Exigir que a pessoa insira uma justificativa comercial para substituir a política. Essas informações são registradas e você pode exibi-las nos relatórios DLP na seção **relatórios** do centro de &amp; conformidade de segurança. 
     
   - Permitir que a pessoa relate falsos positivos e substitua a política de DLP. Essas informações também são registradas em log para fins de relatório, para que você possa usar falsos positivos para ajustar suas regras.
     
@@ -140,7 +139,7 @@ Por exemplo, você pode ter uma política de DLP aplicada a sites do OneDrive fo
   
 1. Primeira regra: Se menos de cinco instâncias dessas informações confidenciais forem detectadas em um documento e o documento for compartilhado com pessoas de dentro da organização, a ação **Enviar uma notificação** exibe uma dica de política. Para obter dicas de política, nenhuma opção de substituição é necessária porque essa regra está simplesmente notificando as pessoas e não bloqueando o acesso. 
     
-2. Segunda regra: se mais de cinco instâncias dessas informações confidenciais forem detectadas em um documento e o documento for compartilhado com pessoas dentro da organização, a ação **bloquear acesso ao conteúdo** restringirá as permissões para o arquivo e o ** Enviar uma ação de notificação** permite que as pessoas substituam as ações nesta regra fornecendo uma justificativa de negócios. Às vezes, os negócios da sua organização exigem que pessoas internas compartilhem dados de PII e você não deseja que sua política de DLP bloqueie esse trabalho. 
+2. Segunda regra: Se mais do que cinco instâncias dessas informações confidenciais forem detectadas em um documento e o documento for compartilhado com pessoas dentro da organização, a ação **Revogar acesso ao conteúdo** restringe as permissões para o arquivo e a ação **Enviar uma notificação** permite que as pessoas substituam as ações nesta regra, fornecendo uma justificativa de negócios. Às vezes, os negócios da sua organização exigem que pessoas internas compartilhem dados de PII e você não deseja que sua política de DLP bloqueie esse trabalho. 
     
 3. Terceira regra: Se mais do que cinco instâncias dessas informações confidenciais forem detectadas em um documento e o documento for compartilhado com pessoas de fora organização, a ação **Revogar acesso ao conteúdo** restringe as permissões para o arquivo e a ação **Enviar uma notificação** não permite que as pessoas substituam as ações nesta regra, porque as informações são compartilhadas externamente. Sob nenhuma circunstância deve-se permitir que as pessoas em sua organização compartilhem dados de PII fora da organização. 
     
@@ -148,7 +147,7 @@ Veja aqui alguns pontos para entender sobre o uso de uma dica de política para 
   
 - A opção de substituição é por regra, e substitui todas as ações na regra (exceto o envio de uma notificação, que não pode ser substituído).
     
-- É possível que o conteúdo corresponda a várias regras em uma política de DLP, mas apenas a dica de política da regra mais restritiva e de maior prioridade será mostrada. Por exemplo, uma dica de política de uma regra que bloqueia o acesso ao conteúdo será mostrada em uma dica de política de uma regra que simplesmente envia uma notificação. Isso impede que as pessoas vejam uma cascata de dicas de política.
+- É possível que o conteúdo corresponda a várias regras em uma política de DLP, mas apenas a dica de política da regra mais restritiva e de maior prioridade será mostrada. Por exemplo, uma dica de política de uma regra que bloqueia o acesso ao conteúdo será mostrada em detrimento de uma dica de política de uma regra que simplesmente envia uma notificação. Isso impede que as pessoas vejam uma cascata de dicas de política.
     
 - Se as dicas de política na regra mais restritiva permitir que as pessoas substituam a regra, substituir essa regra também substitui quaisquer outras regras que o conteúdo correspondeu.
     
@@ -179,7 +178,7 @@ Por padrão, as dicas de política exibem um texto semelhante ao seguinte para u
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a dica de política padrão diz isso...**|
 |:-----|:-----|
 |Envia uma notificação, mas não permite substituição  <br/> |Este item está em conflito com uma política de sua organização.  <br/> |
-|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este item está em conflito com uma política da sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado.  <br/> |
+|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este item está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado.  <br/> |
 |Bloqueia o acesso e envia uma notificação  <br/> |Este item está em conflito com uma política de sua organização. O acesso a este item está bloqueado para todos, exceto seu proprietário, o último modificador e o administrador de conjunto de site principal.  <br/> |
    
 ### <a name="custom-text-for-policy-tips-on-sites"></a>Texto personalizado para dicas de política em sites
@@ -273,9 +272,9 @@ Por padrão, as dicas de política exibem texto semelhante ao seguinte no modo d
 
 |**Se a regra de política de DLP fizer isso...**|**Em seguida, a dica de política padrão diz isso...**|
 |:-----|:-----|
-|Envia uma notificação, mas não permite substituição  <br/> |Este arquivo entra em conflito com uma política da sua organização. Vá para o menu **arquivo** para obter mais informações.<br/> |
-|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este arquivo entra em conflito com uma política da sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.<br/> |
-|Bloqueia o acesso e envia uma notificação  <br/> |Este arquivo entra em conflito com uma política da sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.<br/> |
+|Envia uma notificação, mas não permite substituição  <br/> |Este arquivo está em conflito com uma política de sua organização. Vá para o menu **arquivo** para obter mais informações.  <br/> |
+|Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este arquivo está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.  <br/> |
+|Bloqueia o acesso e envia uma notificação  <br/> |Este arquivo está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.  <br/> |
    
 ### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto personalizado para dicas de política no Excel 2016, PowerPoint 2016 e Word 2016
 
@@ -285,11 +284,11 @@ Você pode personalizar o texto para dicas de política separadamente da notific
 
 - [Visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md)
     
-- [Criar uma política DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
     
-- [Criar uma política DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
+- [Criar uma política de DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
     
-- [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
+- [O que os modelos de política de DLP incluem](what-the-dlp-policy-templates-include.md)
     
 - [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
     

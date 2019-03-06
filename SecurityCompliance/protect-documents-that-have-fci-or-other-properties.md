@@ -12,15 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
-ms.assetid: 1b9e3c6c-4308-4a20-b11e-c37b8013e177
-description: Muitas organizações já têm um processo para identificar e classificar informações confidenciais usando as propriedades de classificação na infraestrutura de classificação de arquivos do Windows Server (FCI), nas propriedades do documento no SharePoint ou nas propriedades do documento aplicada por um sistema de terceiros. Se isso descrever sua organização, você pode criar uma política de DLP no Office 365 que reconhece as propriedades que foram aplicadas a documentos pelo Windows Server FCI ou outro sistema, para que a política de DLP possa ser imposta em documentos do Office com FCI específico ou outros valores de propriedade.
-ms.openlocfilehash: 71f37d616c6bb6c3e63bad8707b650b36f66fa62
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+description: Muitas organizações já têm um processo para identificar e classificar informações confidenciais usando as propriedades de classificação no arquivo de classificação de infraestrutura (FCI) do Windows Server, as propriedades do documento no SharePoint ou as propriedades do documento aplicadas por um sistema de terceiros. Se essa for a sua organização, você pode criar uma política de DLP no Office 365 que reconhece as propriedades que foram aplicadas a documentos pelo FCI do Windows Server ou outro sistema, para que a política de DLP possa ser imposta em documentos do Office com FCI específico ou outros valores de propriedade.
+ms.openlocfilehash: d4468859781703012438a06ec782b75d1acce963
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214361"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410526"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Criar uma política de DLP para proteger documentos com FCI ou outras propriedades
 
@@ -28,7 +27,7 @@ No Office 365, você pode usar uma política de prevenção (DLP) contra perda d
   
 ![Diagrama mostrando o Office 365 e o sistema de classificação externa](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-Por exemplo, sua organização pode usar o Windows Server FCI para identificar documentos com informações de identificação pessoal (PII), como números de segurança social, e classificar o documento definindo as **informações de identificação pessoal** Propriedade como **alta**, **moderada**, **baixa**, **pública**ou **não como PII** com base no tipo e no número de ocorrências de PII encontradas no documento. No Office 365, você pode criar uma política de DLP que identifica documentos que tenham essa propriedade definida como valores específicos, como **alto** e **médio**, e, em seguida, executa uma ação como bloquear o acesso a esses arquivos. A mesma política pode ter outra regra que toma uma ação diferente se a propriedade for definida como **baixa**, como enviar uma notificação por email. Dessa forma, a DLP no Office 365 integra-se com o Windows Server FCI e pode ajudar a proteger os documentos do Office carregados ou compartilhados para o Office 365 a partir de servidores de arquivos baseados no Windows Server.
+Por exemplo, sua organização pode usar o FCI do Windows Server para identificar documentos com informações de identificação pessoal (PII), como cadastros de pessoas físicas e, em seguida, classificar o documento, definindo a propriedade **Informações de Identificação Pessoal** como **Alta**, **Moderada**, **Baixa**, **Pública** ou **Não PII** com base no tipo e número de ocorrências de PII localizadas no documento. No Office 365, você pode criar uma política de DLP que identifica documentos que têm essa propriedade definida como valores específicos, como **Alta** e **Média** e depois executa uma ação como o bloqueio do acesso a esses arquivos. A mesma política pode ter outra regra que executa uma ação diferente se a propriedade for definida como **Baixa**, como o envio de uma notificação por email. Dessa forma, a DLP no Office 365 integra-se com o Windows Server FCI e pode ajudar a proteger os documentos do Office carregados ou compartilhados para o Office 365 a partir de servidores de arquivos baseados no Windows Server.
   
 Uma política de DLP simplesmente procura por um par de nome/valor de propriedade específico. Qualquer propriedade de documento pode ser usada, contanto que a propriedade tenha uma propriedade gerenciada correspondente para a pesquisa do SharePoint. Por exemplo, um conjunto de sites do SharePoint pode usar um tipo de conteúdo chamado **Relatório de viagem** com um campo obrigatório chamado **Cliente**. Sempre que uma pessoa criar um relatório de viagem, ela deve digitar o nome do cliente. Esse par de nome/valor de propriedade também pode ser usado em uma política de DLP — por exemplo, se você desejar que uma regra que bloqueia o acesso ao documento para usuários externos quando o campo **Cliente** contiver **Contoso**.
   
@@ -36,7 +35,7 @@ Observe que, se você quiser aplicar sua política de DLP ao conteúdo com rótu
   
 ## <a name="before-you-create-the-dlp-policy"></a>Antes de criar a política de DLP
 
-Antes de poder usar uma propriedade FCI do Windows Server ou outra propriedade em uma política de DLP, você precisa criar uma propriedade gerenciada no centro de administração do SharePoint. Veja por quê.
+Antes de usar uma propriedade de FCI do Windows Server ou outra propriedade em uma política de DLP, você precisa criar uma propriedade gerenciada no centro de administração do SharePoint. Veja por quê.
   
 Exemplos
   
@@ -46,7 +45,7 @@ Para obter mais informações sobre propriedades gerenciadas e pesquisa, consult
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Etapa 1: Carregar um documento com a propriedade necessária para o Office 365
 
-Primeiro, você precisa carregar um documento com a propriedade que você deseja fazer referência em sua política de DLP. O Office 365 detectará a propriedade e criará automaticamente uma propriedade rastreada a partir dela. Na próxima etapa, você criará uma propriedade gerenciada e, em seguida, mapeará a propriedade gerenciada para essa propriedade rastreada.
+Primeiro você precisa carregar um documento com a propriedade à qual você deseja fazer referência em sua política de DLP. O Office 365 detecta a propriedade e cria automaticamente uma propriedade rastreada a partir dela. Na próxima etapa, você criará uma propriedade gerenciada e, em seguida, mapeará a propriedade gerenciada para essa propriedade rastreada.
   
 ### <a name="step-2-create-a-managed-property"></a>Etapa 2: Criar uma propriedade gerenciada
 
@@ -116,7 +115,7 @@ Para obter mais informações sobre esses cmdlets, consulte cmdlets do [centro d
     
 Quando você terminar, a política deverá ter duas novas regras que usem as **Propriedades do documento contendo qualquer uma dessas** condições. Observe que essa condição não aparecerá na interface do usuário, embora as outras condições, ações e configurações apareçam. 
   
-Uma regra bloqueia o acesso ao conteúdo onde a propriedade de **informações de identificação pessoal** é igual a **alta** ou **moderada**. Uma segunda regra envia uma notificação sobre o conteúdo em que a propriedade de **informações de identificação pessoal** é igual a **baixa**.
+Uma regra bloqueia o acesso ao conteúdo em que a propriedade **Informações de identificação pessoal** é igual a **Alta** ou **Moderada**. Uma segunda regra envia uma notificação sobre o conteúdo em que a propriedade **Informações de identificação pessoal** é igual a **Baixa**.
   
 ![Caixa de diálogo de nova política de DLP mostrando duas regras recém-criadas](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
@@ -127,7 +126,7 @@ Executar as etapas nas seções anteriores criará uma política de DLP que dete
 Para detectar o conteúdo com essa propriedade em todos os lugares, convém solicitar manualmente que sua biblioteca, site ou conjunto de sites seja reindexado, para que a política de DLP esteja ciente de todo o conteúdo com essa propriedade. No SharePoint Online, o conteúdo é rastreado automaticamente com base em um agendamento de rastreamento definido. O rastreador seleciona o conteúdo que foi alterado desde o último rastreamento e atualiza o índice. Se você precisar de sua política de DLP para proteger o conteúdo antes do próximo rastreamento agendado, você pode executar estas etapas.
   
 > [!CAUTION]
-> A reindexação de um site pode causar uma carga maciça no sistema de pesquisa. Não reindexe o site, a menos que o cenário o exija absolutamente. 
+> A reindexação de um site pode gerar uma grande carga no sistema de pesquisa. Não reindexe o site, a menos que o cenário o exija absolutamente. 
   
 Para obter mais informações, consulte [manualmente solicitações de rastreamento e reindexação de um site, uma biblioteca ou uma lista](http://go.microsoft.com/fwlink/p/?LinkID=627457).
   
@@ -141,11 +140,11 @@ Para obter mais informações, consulte [manualmente solicitações de rastreame
 
 - [Visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md)
     
-- [Criar uma política DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
     
 - [Enviar notificações e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md)
     
-- [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
+- [O que os modelos de política de DLP incluem](what-the-dlp-policy-templates-include.md)
     
 - [Inventário de tipos de informações confidenciais](what-the-sensitive-information-types-look-for.md)
     

@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o número de segurança social da UE ou o tipo de informação confidencial de ID equivalente. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216521"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410796"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de seguro social da UE ou ID equivalente
 
 Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o número de segurança social da UE (SSN) ou o tipo de informação confidencial de ID equivalente. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
   
-## <a name="austria"></a>Áustria
+## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos no formato especificado
   
@@ -73,9 +73,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 segurança social não
   
 social security number
-
   
-
 social security code
   
 número de seguro
@@ -98,9 +96,9 @@ soziale Sicherheit Kein
   
 versicherungsnummer
   
-## <a name="belgium"></a>Bélgica
+## <a name="belgium"></a>Bélgica 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços ou delimitadores
   
@@ -146,7 +144,6 @@ número Nacional belga
 número nacional
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 nacional Numéro
   
 numéro de sécurité
-
   
 Numéro d'assuré
   
@@ -179,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>Croácia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços e delimitadores
   
@@ -228,10 +224,9 @@ número de identificação pessoal
   
 número do cidadão mestre
   
-número de identificação nacional
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -255,7 +250,7 @@ Osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>República Tcheca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos e uma barra invertida no padrão especificado
   
@@ -306,12 +301,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 número de nascimento
   
-número de identificação nacional
+national identification number
   
 número de identificação pessoal
   
 social security number
-
   
 nationalnumber #
   
@@ -333,7 +327,7 @@ RODNE cislo
   
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos e um hífen no padrão especificado
   
@@ -382,10 +376,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 número de identificação pessoal
   
-número de identificação nacional
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -405,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>Finlândia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Uma combinação de 11 caracteres no formato especificado
   
@@ -461,7 +454,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
-
   
 ID pessoal
   
@@ -471,7 +463,7 @@ número de ID nacional da finlandês
   
 personalidnumber #
   
-número de identificação nacional
+national identification number
   
 número de identificação
   
@@ -517,7 +509,7 @@ Para obter detalhes, consulte a seção "cartão de ID nacional da Grécia" em [
   
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove dígitos sem espaços e delimitadores
   
@@ -561,7 +553,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 número de seguro social de seguridade
   
 social security number
-
   
 socialSecurityNumber #
   
@@ -603,7 +594,7 @@ Para obter detalhes, consulte a seção "número de seguridade social da Espanha
   
 ## <a name="sweden"></a>Suécia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos sem espaços e delimitadores
   
@@ -657,7 +648,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 número de identificação pessoal
   
 identification number
-
   
 n º de identificação pessoal
   
@@ -683,5 +673,5 @@ identifikationsnumret #
   
 ## <a name="see-also"></a>Confira também
 
-[O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
+[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
 

@@ -3,7 +3,7 @@ title: Simulador de ataque no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global do Office 365, você pode usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real atinja sua empresa.
-ms.openlocfilehash: ba5658dfa9075b5779f8ca09ccad3547dbddcbb5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 25686ce194deca8d1ca07fca40f8142492951574
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216271"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410826"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataque no Office 365
 
@@ -50,13 +50,13 @@ Para acessar o simulador de conformidade, &amp; no centro de conformidade de seg
 
 Verifique se você e sua organização atendem aos seguintes requisitos para o simulador de ataques:
       
-- O email da sua organização está hospedado no Exchange Online. (O simulador de ataque não está disponível para os servidores de email locais.)
+- **O email da sua organização está hospedado no Exchange Online**. (O simulador de ataque não está disponível para os servidores de email locais.)
     
-- Você é um administrador global do Office 365
+- **Você é um administrador global do Office 365**
     
-- Sua organização está usando a [autenticação multifator para usuários do Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
+- **A [protocolo de autenticação](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) multifator (MFA) está ativada, por pelo menos a conta de administrador global do Office 365**. (O ideal é que a MFA seja ativada para todos os usuários da sua organização.)
  
-- sua organização tem [o Office 365 Threat Intelligence](office-365-ti.md), com o simulador de ataques &amp; visível no centro de conformidade de segurança (vá para o **Threat management** \> **Attack simulator**)<br/>![Gerenciamento de ameaças-simulador de ataques](media/ThreatMgmt-AttackSimulator.png)
+- **sua organização tem [o Office 365 Threat Intelligence](office-365-ti.md)**, com o simulador de ataques &amp; visível no centro de conformidade de segurança (vá para o **Threat management** \> **Attack simulator**)<br/>![Gerenciamento de ameaças-simulador de ataques](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nome de exibição spear-phishing Attack
@@ -81,7 +81,7 @@ Você pode criar o editor de HTML avançado diretamente no próprio campo de **c
     
 5. Especifique o texto para o campo **de (nome)** . Este é o campo que mostra o **nome de exibição** no cliente de recebimento de email. 
     
-6. Especifique o texto ou o campo **de** . Este é o campo que aparece como o endereço de email do remetente no cliente de recebimento de email.<br/>Você pode inserir um namespace de email existente dentro da sua organização (isso fará com que o endereço de email seja realmente resolvido no cliente de recebimento, facilitando um modelo de confiança muito alto) ou você pode inserir um endereço de email externo. O endereço de email que você especificar não precisa realmente existir, mas ele precisa seguir o formato de um endereço SMTP válido, como User @ nome_do_domínio. Extension. 
+6. Especifique o texto ou o campo **de** . Este é o campo que aparece como o endereço de email do remetente no cliente de recebimento de email. <br/>Você pode inserir um namespace de email existente dentro da sua organização (isso fará com que o endereço de email seja realmente resolvido no cliente de recebimento, facilitando um modelo de confiança muito alto) ou você pode inserir um endereço de email externo. O endereço de email que você especificar não precisa realmente existir, mas ele precisa seguir o formato de um endereço SMTP válido, como User @ nome_do_domínio. Extension. 
   
 7. Usando o seletor suspenso, selecione uma URL de servidor de logon de phishing que reflita o tipo de conteúdo que você terá dentro de seu ataque. Várias URLs com temas são fornecidas para você escolher, como entrega de documentos, técnica, folha de pagamento, etc. Isso é efetivamente a URL para a qual os usuários direcionados são solicitados a clicar.
     
@@ -130,10 +130,18 @@ Um ataque de senha de força bruta em relação a uma organização é geralment
 ## <a name="new-features-in-attack-simulator"></a>Novos recursos no simulador de ataques
 
 Novos recursos estão sendo adicionados ao simulador de ataques. Eles incluem:
+
 - **Recursos avançados de relatórios**. Você poderá ver dados como o tempo mais rápido (ou mais lento) para abrir uma mensagem de email de simulação de ataque, o tempo mais rápido (ou mais lento) para clicar em um link na mensagem e muito mais.
+
 - **Editor de modelos de email**. Você pode criar um modelo de email reutilizável e personalizado que pode ser usado para simulações de ataque futuras.
 
 Visite o [mapa do Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver o que está em desenvolvimento, o que está saindo e o que já foi iniciado.
+
+## <a name="see-also"></a>Confira também
+
+[Serviço de proteção avançada contra ameaças do Office 365 desription](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md)
 
 
 

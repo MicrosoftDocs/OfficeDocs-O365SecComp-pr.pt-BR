@@ -1,30 +1,29 @@
 ---
-title: Visão geral das políticas de prevenção contra perda de dados
+title: Visão geral das políticas de prevenção de perda de dados
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341762"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410866"
 ---
-# <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção contra perda de dados
+# <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
-Para estar em conformidade com padrões de negócios e regulamentações do setor, as organizações precisam proteger informações confidenciais e impedir sua divulgação inadvertida. Exemplos de informações confidenciais que você pode querer impedir de vazar fora da organização incluem dados financeiros ou informações de identificação pessoal (PII), como números de cartão de crédito, números de seguridade social ou registros de integridade. Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
+Para estar em conformidade com padrões de negócios e regulamentações do setor, as organizações precisam proteger as informações confidenciais e evitar sua divulgação acidental. Dados financeiros ou informações de identificação pessoal, como números de cartão de crédito, números de previdência social ou registros de saúde, são exemplos de informações confidenciais que você provavelmente deseja evitar que vazem para fora da sua organização. Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
   
 Com uma política de DLP, você pode:
   
@@ -38,11 +37,11 @@ Com uma política de DLP, você pode:
     
 - **Monitore e proteja as informações confidenciais nas versões de área de trabalho do Excel 2016, PowerPoint 2016 e Word 2016.**
     
-    Assim como no Exchange Online, no SharePoint Online e no OneDrive for Business, esses programas da área de trabalho do Office 2016 incluem os mesmos recursos para identificar informações confidenciais e aplicar políticas de DLP. A DLP fornece monitoramento contínuo quando as pessoas compartilham conteúdo nestes programas do Office 2016.
+    Assim como no Exchange Online, no SharePoint Online e no OneDrive for Business, esses programas da área de trabalho do Office 2016 incluem os mesmos recursos para identificar informações confidenciais e aplicar políticas de DLP. A DLP oferece monitoramento contínuo, quando as pessoas compartilham conteúdo nestes programas do Office 2016.
     
-- **Ajudar os usuários a aprender a manter a conformidade sem interromper o fluxo de trabalho.**
+- **Ajude os usuários a aprender a manter a conformidade sem interromper o fluxo de trabalho.**
     
-    Você pode instruir seus usuários sobre as políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear o trabalho. Por exemplo, se um usuário tenta compartilhar um documento contendo informações confidenciais, uma política de DLP pode enviá-los para uma notificação por email e mostrá-los uma dica de política no contexto da biblioteca de documentos que permite que eles substituam a política se tiverem uma empresa elabora. As mesmas dicas de política também aparecem no Outlook na Web, Outlook 2013 e posterior, Excel 2016, PowerPoint 2016 e Word 2016.
+    Você pode instruir os usuários sobre políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear seu trabalho. Por exemplo, se um usuário tentar compartilhar um documento que contém informações confidenciais, uma política de DLP pode enviar uma notificação por email e mostrar uma dica de política no contexto da biblioteca de documentos que permite substituir a política se ele tivere uma justificativa de negócios. As mesmas dicas de política também aparecem no Outlook na Web, Outlook 2013 e posterior, Excel 2016, PowerPoint 2016 e Word 2016.
     
 - **Exibir relatórios DLP mostrando o conteúdo que corresponde às políticas de DLP da sua organização.**
     
@@ -64,9 +63,9 @@ Uma política de DLP contém algumas informações básicas:
     
   - **Ações** que você deseja que a regra adote automaticamente quando o conteúdo correspondente às condições for encontrado -- por exemplo, bloquear o acesso ao documento e enviar uma notificação por email ao responsável pela conformidade e ao usuário. 
     
-Você pode usar uma regra para atender a um requisito de proteção específico e, em seguida, usar uma política de DLP para agrupar os requisitos de proteção comuns, como todas as regras necessárias para cumprir uma regulamentação específica.
+Você pode usar uma regra para atender a uma necessidade específica de proteção e, em seguida, usar uma política de DLP para agrupar os requisitos de proteção comuns, como todas as regras necessárias à conformidade com uma regulamentação específica.
   
-Por exemplo, você pode ter uma política de DLP que ajuda a detectar a presença de informações sujeitas ao ato de portabilidade e responsabilidade de seguro de saúde (HIPAA). Essa política de DLP pode ajudar a proteger os dados da HIPAA (o que) em todos os sites do SharePoint Online e todos os sites do OneDrive for Business (o onde) encontrando qualquer documento que contenha essas informações confidenciais que são compartilhadas com pessoas de fora da organização (o condições) e, em seguida, bloquear o acesso ao documento e enviar uma notificação (as ações). Esses requisitos são armazenados como regras individuais e agrupados como uma política de DLP para simplificar o gerenciamento e os relatórios.
+Por exemplo, você pode ter uma política de DLP que ajuda a detectar a presença de informações sujeitas à lei americana HIPAA (Health Insurance Portability Accountability Act). Essa política de DLP pode ajudar a proteger os dados da HIPAA (o que) em todos os sites do SharePoint Online e todos os sites do OneDrive for Business (o onde) encontrando qualquer documento que contenha essas informações confidenciais que são compartilhadas com pessoas de fora da organização (o condições) e, em seguida, bloquear o acesso ao documento e enviar uma notificação (as ações). Esses requisitos são armazenados como regras individuais e agrupados como uma política de DLP para simplificar o gerenciamento e os relatórios.
   
 ![Diagrama mostra que a política de DLP contém locais e regras](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
@@ -80,7 +79,7 @@ Observe que, se você optar por incluir ou excluir sites específicos do SharePo
   
 ### <a name="rules"></a>Regras
 
-As regras são o que impõe seus requisitos de negócios no conteúdo da sua organização. Uma política contém uma ou mais regras, e cada regra consiste em condições e ações. Para cada regra, quando as condições forem atendidas, as ações serão realizadas automaticamente. As regras são executadas de forma seqüencial, começando com a regra de maior prioridade em cada política.
+As regras são o que impõe seus requisitos de negócios no conteúdo da sua organização. Uma política contém uma ou mais regras, e cada regra consiste em condições e ações. Para cada regra, quando as condições forem atendidas, as ações são executadas automaticamente. As regras são executadas de forma seqüencial, começando com a regra de maior prioridade em cada política.
   
 Uma regra também fornece opções para notificar os usuários (com dicas de política e notificações por email) e administradores (com relatórios de incidentes de email) de que o conteúdo correspondeu à regra.
   
@@ -92,7 +91,7 @@ Estes são os componentes de uma regra, cada um explicado abaixo.
 
 As condições são importantes porque determinam os tipos de informações que você está procurando e quando executar uma ação. Por exemplo, você pode optar por ignorar o conteúdo que contém os números do Passport, a menos que o conteúdo contenha mais de dez desses números e seja compartilhado com pessoas de fora da organização.
   
-As condições se concentram no **conteúdo**, como os tipos de informações confidenciais que você está procurando e também no **contexto**, como quem o documento é compartilhado. Você pode usar as condições para atribuir diferentes ações a diferentes níveis de risco, por exemplo, conteúdo confidencial compartilhado internamente pode ser menor risco e exigir menos ações do que o conteúdo confidencial compartilhado com pessoas de fora da organização. 
+As condições se concentram no **conteúdo**, como os tipos de informações confidenciais que você está procurando e também no **contexto**, como quem o documento é compartilhado. É possível usar condições para atribuir ações diferentes a níveis de risco diferentes - por exemplo, o conteúdo confidencial compartilhado internamente pode diminuir o risco e exigir menos ações do que o conteúdo confidencial compartilhado com pessoas fora da organização. 
   
 ![Lista que mostra as condições DLP disponíveis](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -106,7 +105,7 @@ As condições disponíveis agora podem determinar se:
     
 #### <a name="types-of-sensitive-information"></a>Tipos de informações confidenciais
 
-Uma política de DLP pode ajudar a proteger informações confidenciais, que é definida como um **tipo de informação confidencial**. O Office 365 inclui definições para muitos tipos comuns de informações confidenciais em várias regiões diferentes que estão prontas para uso, como um número de cartão de crédito, números de contas bancárias, números de identificação nacional e números de passaporte. 
+Uma política de DLP pode ajudar a proteger informações confidenciais, que é definida como um **tipo de informação confidencial**. O Office 365 inclui 51 definições para vários tipos comuns de informações confidenciais em diferentes regiões que estão prontos para uso, como um número de cartão de crédito, números de contas bancárias, números de carteiras de identidade e números de passaporte. 
   
 ![Lista de tipos de informações confidenciais disponíveis](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -130,7 +129,7 @@ Quando o conteúdo corresponde a uma condição em uma regra, você pode aplicar
   
 Com as ações disponíveis agora, você pode:
   
-- **Restringir o acesso ao conteúdo** Para o conteúdo do site, isso significa que as permissões para o documento são restritas a todos exceto o administrador principal do conjunto de sites, o proprietário do documento e a pessoa que modificou o documento pela última vez. Essas pessoas podem remover as informações confidenciais do documento ou executar outras ações corretivas. Quando o documento estiver em conformidade, as permissões originais serão restauradas automaticamente. Quando o acesso a um documento é bloqueado, o documento aparece com um ícone de dica de política especial na biblioteca no site. 
+- **Restringir o acesso ao conteúdo** Para o conteúdo do site, isso significa que as permissões para o documento são restritas a todos exceto o administrador principal do conjunto de sites, o proprietário do documento e a pessoa que modificou o documento pela última vez. Essas pessoas podem remover as informações confidenciais do documento ou executar outra ação corretiva. Quando o documento estiver em conformidade, as permissões originais serão restauradas automaticamente. Quando o acesso a um documento é bloqueado, o documento aparece com um ícone de dica de política especial na biblioteca do site. 
     
     ![A dica de política mostrando acesso ao documento está bloqueada](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
@@ -140,7 +139,7 @@ Com as ações disponíveis agora, você pode:
   
 #### <a name="user-notifications-and-user-overrides"></a>Notificações de usuário e substituições de usuário
 
-Você pode usar notificações e substituições para instruir seus usuários sobre as políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear o trabalho. Por exemplo, se um usuário tenta compartilhar um documento contendo informações confidenciais, uma política de DLP pode enviá-los para uma notificação por email e mostrá-los uma dica de política no contexto da biblioteca de documentos que permite que eles substituam a política se tiverem uma empresa elabora.
+Você pode usar notificações e substituições para instruir seus usuários sobre as políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear o trabalho. Por exemplo, se um usuário tentar compartilhar um documento que contém informações confidenciais, uma política de DLP pode enviar uma notificação por email e mostrar uma dica de política no contexto da biblioteca de documentos que permite substituir a política se ele tivere uma justificativa de negócios.
   
 ![Notificações de usuário e seções de substituições de usuário do editor de regras DLP](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
@@ -154,7 +153,7 @@ Além de enviar uma notificação por email, uma notificação de usuário exibe
     
 - No Excel 2016, PowerPoint 2016 e Word 2016, quando o documento é armazenado em um site incluído em uma política de DLP.
     
-A dica de política e a notificação por email explicam por que o conteúdo está em conflito com uma política de DLP. Se você escolher, a notificação por email e a dica de política podem permitir que os usuários substituam uma regra, relatando um falso positivo ou fornecendo uma justificativa de negócios. Isso pode ajudá-lo a treinar os usuários sobre suas políticas de DLP e aplicá-los sem impedir que as pessoas façam seu trabalho. As informações sobre substituições e falsos positivos também são registradas para relatórios (consulte abaixo sobre os relatórios de DLP) e incluídas nos relatórios de incidentes (próxima seção), de modo que o responsável pela conformidade possa examiná-las regularmente.
+A dica de política e a notificação por email explicam por que o conteúdo está em conflito com uma política de DLP. Se você escolher, a notificação por email e a dica de política podem permitir que usuários substituam uma regra ao relatar um falso positivo ou fornecer uma justificativa de negócios. Isso pode ajudar você a treinar os usuários sobre as políticas de DLP e aplicá-las sem impedir que as pessoas façam seu trabalho. Informações sobre substituições e falsos positivos também são registradas para relatório (veja abaixo sobre os relatórios de DLP) e incluídas nos relatórios de incidentes (próxima seção), para que o responsável pela conformidade possa analisar regularmente essas informações.
   
 Veja como é uma dica de política em uma conta do OneDrive for Business.
   
@@ -204,7 +203,7 @@ Por exemplo, a política do HIPAA interna da **U.S.** tem uma regra que usa um o
   
 - no grupo **identificadorEs PII** (pelo menos um número de SSN **ou** número DEA) 
     
-    **E**
+    **AND**
     
 - no grupo de **termos médicos** (pelo menos uma palavra-chave ICD-9-cm **ou** uma palavra-chave ICD-10-cm) 
     
@@ -234,7 +233,7 @@ Neste exemplo, observe que as correspondências de todas as regras são registra
   
 Com relação às dicas de política, observe que:
   
-- Somente a dica de política da prioridade mais alta, a regra mais restritiva será mostrada. Por exemplo, uma dica de política de uma regra que bloqueia o acesso ao conteúdo será mostrada em uma dica de política de uma regra que simplesmente envia uma notificação. Isso impede que as pessoas vejam uma cascata de dicas de política.
+- Somente a dica de política da prioridade mais alta, a regra mais restritiva será mostrada. Por exemplo, uma dica de política de uma regra que bloqueia o acesso ao conteúdo será mostrada em detrimento de uma dica de política de uma regra que simplesmente envia uma notificação. Isso impede que as pessoas vejam uma cascata de dicas de política.
     
 - Se as dicas de política na regra mais restritiva permitir que as pessoas substituam a regra, substituir essa regra também substitui quaisquer outras regras que o conteúdo correspondeu.
     
@@ -250,7 +249,7 @@ Para resolver esses problemas, você pode ajustar suas regras ajustando a contag
   
 ### <a name="instance-count"></a>Contagem de instâncias
 
-A contagem de instâncias significa simplesmente quantas ocorrências de um tipo específico de informações confidenciais devem estar presentes para que o conteúdo corresponda à regra. Por exemplo, o conteúdo corresponderá à regra mostrada abaixo se entre 1 e 9 números exclusivos dos EUA ou do Reino Unido são identificados.
+A contagem de instâncias significa simplesmente quantas ocorrências de um tipo específico de informações confidenciais devem estar presentes para que o conteúdo corresponda à regra. Por exemplo, o conteúdo corresponderá à regra mostrada abaixo se entre 1 e 9 os Estados Unidos ou Reino Unido são exclusivos. os números de passaporte são identificados.
   
 Observe que a contagem de instância inclui **** somente correspondências exclusivas para tipos de informações confidenciais e palavras-chave. Por exemplo, se um email contiver 10 ocorrências do mesmo número de cartão de crédito, essas 10 ocorrências conterão como uma única instância de um número de cartão de crédito. 
   
@@ -304,7 +303,7 @@ Por esses motivos, a orientação para a criação de regras com a mesma diferen
     
 - Todos os níveis de confiança entre si normalmente variam desde o nível de confiança mais baixo até logo abaixo do nível de confiança maior.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usar um rótulo como condição em uma política DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usando um rótulo como uma condição em uma política de DLP
 
 Você pode criar um rótulo e, em seguida:
   
@@ -376,11 +375,11 @@ Para ir rapidamente para uma seção, clique em um item na navegação superior 
   
 ![Menu de navegação superior do editor de regras DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modelos de política DLP
+## <a name="dlp-policy-templates"></a>Modelos de política de DLP
 
 A primeira etapa na criação de uma política de DLP é escolher quais informações proteger. Ao iniciar com um modelo DLP, você salva o trabalho de criar um novo conjunto de regras do zero e descobrir quais tipos de informações devem ser incluídos por padrão. Em seguida, você pode adicionar ou modificar esses requisitos para ajustar a regra para atender aos requisitos específicos da sua organização.
   
-Um modelo de política de DLP pré-configurado pode ajudá-lo a detectar tipos específicos de informações confidenciais, como dados da HIPAA, dados PCI-DSS, dados da lei Gramm-Leach-Bliley ou até mesmo informações de identificação pessoal (P.I.) específicas de localidade. Para facilitar a localização e a proteção de tipos comuns de informações confidenciais, os modelos de política incluídos no Office 365 já contêm os tipos de informações confidenciais mais comuns necessários para que você comece.
+Um modelo de política de DLP pré-configurado pode ajudá-lo a detectar tipos específicos de informações confidenciais, como dados da HIPAA, dados PCI-DSS, dados da lei Gramm-Leach-Bliley ou até mesmo informações de identificação pessoal (P.I.) específicas de localidade. Para facilitar a localização e a proteção de tipos comuns de informações confidenciais, os modelos de política incluídos no Office 365 já contêm os tipos mais comuns de informações confidenciais necessários para você começar.
   
 ![Lista de modelos para políticas de prevenção contra perda de dados com o foco no modelo para a lei Patriot Act dos EUA](media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -388,15 +387,15 @@ Sua organização também pode ter seus próprios requisitos específicos, caso 
   
 ## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Implementar políticas de DLP gradualmente com o modo de teste
 
-Ao criar suas políticas de DLP, considere a possibilidade de refazê-las gradualmente para avaliar o impacto e testar sua eficácia antes de aplicá-las completamente. Por exemplo, você não deseja que uma nova política de DLP bloqueie acidentalmente o acesso a milhares de documentos aos quais as pessoas precisam acessar para realizar o trabalho.
+Depois de criar as políticas de DLP, você deve considerar a implementação gradual delas para avaliar o impacto e testar a eficácia delas antes de aplicá-las completamente. Por exemplo, você não deseja que uma nova política de DLP bloqueie acidentalmente o acesso a milhares de documentos aos quais as pessoas precisam acessar para realizar o trabalho.
   
 Se você estiver criando políticas DLP com um grande impacto em potencial, recomendamos seguir esta sequência:
   
-1. **Inicie no modo de teste sem dicas de política** e use os relatórios de DLP e todos os relatórios de incidentes para avaliar o impacto. Você pode usar os relatórios de DLP para exibir o número, o local, o tipo e a severidade das correspondências de política. Com base nos resultados, você pode ajustar as regras conforme necessário. No modo de teste, as políticas de DLP não afetarão a produtividade das pessoas que trabalham na sua organização. 
+1. **Inicie no modo de teste sem dicas de política** e use os relatórios de DLP e todos os relatórios de incidentes para avaliar o impacto. Você pode usar relatórios de DLP para exibir o número, o local, o tipo e a gravidade das correspondências de política. Com base nos resultados, você pode ajustar as regras conforme necessário. No modo de teste, as políticas de DLP não afetarão a produtividade das pessoas que trabalham na sua organização. 
     
-2. **Mover para o modo de teste com notificações e dicas de política** para que você possa começar a ensinar os usuários sobre suas políticas de conformidade e prepará-los para as regras que serão aplicadas. Neste estágio, você também pode solicitar que os usuários reportem falsos positivos para que possa refinar ainda mais as regras. 
+2. **Mover para o modo de teste com Dicas de Política e notificações** para que você possa começar a ensinar os usuários sobre suas políticas de conformidade e prepará-los para as regras que serão aplicadas. Nesse estágio, você também pode pedir aos usuários para relatar falsos positivos para que você possa refinar as regras. 
     
-3. **Iniciar a aplicação completa nas políticas** para que as ações nas regras sejam aplicadas e que o conteúdo seja protegido. Continue a monitorar os relatórios de DLP e quaisquer relatórios de incidentes ou notificações para garantir que os resultados sejam os que você pretende. 
+3. **Iniciar a aplicação completa nas políticas** para que as ações nas regras sejam aplicadas e que o conteúdo seja protegido. Continue a monitorar os relatórios de DLP e qualquer relatório de incidentes ou notificações para certificar-se de que os resultados sejam os desejados. 
     
 ![Opções para usar o modo de teste e ativar a política](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -406,7 +405,7 @@ Você pode desativar uma política de DLP a qualquer momento, o que afeta todas 
   
 ## <a name="dlp-reports"></a>Relatórios DLP
 
-Depois de criar e ativar suas políticas de DLP, convém verificar se elas estão funcionando conforme desejado e ajudando você a se manter em conformidade. Com os relatórios de DLP, você pode exibir rapidamente o número de correspondências de política de DLP e regras com o tempo e o número de falsos positivos e substituições. Para cada relatório, você pode filtrar essas correspondências por local, intervalo de tempo e até mesmo restringir a política, regra ou ação específica.
+Depois de criar e ativar suas políticas de DLP, convém verificar se elas estão funcionando conforme desejado e ajudando você a se manter em conformidade. Com os relatórios de DLP, você pode exibir rapidamente o número de correspondências de regra e política de DLP ao longo do tempo e o número de falsos positivos e substituições. Para cada relatório, você pode filtrar as correspondências por local, intervalo de tempo e até mesmo restringi-lo a uma diretiva, regra ou ação específica.
   
 Com os relatórios de DLP, você pode obter ideias de negócios e:
   
@@ -440,7 +439,7 @@ Após a sincronização da política com os locais certos, ela começará a aval
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Avaliação da política em sites do OneDrive for Business e SharePoint Online
 
-Em todos os sites do SharePoint Online e do OneDrive for Business, os documentos são constantemente alterados — eles estão sempre sendo criados, editados, compartilhados e assim por diante. Isso significa que os documentos podem entrar em conflito ou serem compatíveis com uma política de DLP a qualquer momento. Por exemplo, uma pessoa pode carregar um documento que não contém informações confidenciais para seu site de equipe, mas mais tarde, uma pessoa diferente pode editar o mesmo documento e adicionar informações confidenciais a ela.
+Em todos os sites do SharePoint Online e do OneDrive for Business, os documentos são constantemente alterados — eles estão sempre sendo criados, editados, compartilhados e assim por diante. Isso significa que os documentos podem conflitar ou ficar em conformidade com uma política de DLP a qualquer momento. Por exemplo, uma pessoa pode carregar um documento que não contém nenhuma informação confidencial para seus sites de equipe, mas, posteriormente, outra pessoa pode editar o mesmo documento e adicionar informações confidenciais a ele.
   
 Por esse motivo, as políticas de DLP verificam documentos em busca de correspondências de política com frequência em segundo plano. Você pode considerar isso uma avaliação assíncrona da política.
   
@@ -450,7 +449,7 @@ Veja como funciona. À medida que as pessoas adicionam ou alteram documentos em 
   
 Por fim, os documentos podem conflitar uma política de DLP, mas eles também podem ficar em conformidade com ela. Por exemplo, se uma pessoa adicionar números de cartão de crédito a um documento, isso poderá fazer com que uma política de DLP bloqueie o acesso ao documento automaticamente. Mas, se a pessoa remover, mais tarde, as informações confidenciais, a ação (neste caso, bloqueio) será desfeita na próxima vez que se avaliar se o documento está de acordo com a política.
   
-O DLP avalia qualquer conteúdo que possa ser indexado. Para obter mais informações sobre quais tipos de arquivo são rastreados por padrão, confira [extensões de nome de arquivo rastreaDo padrão e tipos de arquivo analisados no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+A DLP avalia qualquer conteúdo que possa ser indexado. Para obter mais informações sobre quais tipos de arquivo são rastreados por padrão, confira [extensões de nome de arquivo rastreaDo padrão e tipos de arquivo analisados no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Avaliação de política no Exchange Online, Outlook 2013 e posterior e Outlook na Web
 
@@ -460,7 +459,7 @@ Quando uma mensagem está sendo composta no Outlook, o usuário pode ver dicas d
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Avaliação de política nos programas de área de trabalho do Office 2016
 
-Excel 2016, PowerPoint 2016 e Word 2016 incluem o mesmo recurso para identificar informações confidenciais e aplicar políticas de DLP como o SharePoint Online e o OneDrive for Business. Estes programas do Office 2016 sincronizam suas políticas de DLP diretamente no repositório de políticas central e, em seguida, avaliam continuamente o conteúdo em relação às políticas de DLP quando as pessoas trabalham com documentos abertos de um site incluído em uma política de DLP.
+O Excel 2016, o PowerPoint 2016 e o Word 2016 incluem o mesmo recurso para identificar informações confidenciais e aplicar políticas de DLP que o SharePoint Online e o OneDrive for Business. Estes programas do Office 2016 sincronizam suas políticas de DLP diretamente no repositório de políticas central e, em seguida, avaliam continuamente o conteúdo em relação às políticas de DLP quando as pessoas trabalham com documentos abertos de um site incluído em uma política de DLP.
   
 A avaliação de política de DLP no Office 2016 foi projetada para não afetar o desempenho dos programas ou a produtividade de pessoas que trabalham no conteúdo. Se eles estiverem trabalhando em um documento grande ou se o computador do usuário estiver ocupado, pode levar alguns segundos para que uma dica de política seja exibida.
   
@@ -498,13 +497,13 @@ No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365
     
 ## <a name="more-information"></a>Mais informações
 
-- [Criar uma política DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
     
 - [Enviar notificações e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md)
     
-- [Criar uma política DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
+- [Criar uma política de DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
     
-- [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
+- [O que os modelos de política de DLP incluem](what-the-dlp-policy-templates-include.md)
     
 - [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
     

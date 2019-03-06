@@ -1,9 +1,9 @@
 ---
-title: Habilitar o suplemento de Mensagem de Relatório
+title: Habilitar o suplemento de mensagem de relatório
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Saiba como habilitar o suplemento de mensagem de relatório para o Outlook e o Outlook na Web, para usuários individuais ou para toda a organização.
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341422"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410896"
 ---
-# <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de Relatório
+# <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de mensagem de relatório
+
+> [!NOTE]
+> O suplemento de mensagem de relatório para o Outlook e o Outlook na Web não é exatamente o mesmo que o [filtro de lixo eletrônico do Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), embora ambos possam ser usados para marcar email como lixo eletrônico, não lixo eletrônico ou uma tentativa de phishing. A diferença é, o suplemento de mensagem de relatório para o Outlook e o Outlook na Web notifica a Microsoft sobre emails não classificados, enquanto o filtro de lixo eletrônico do Outlook é usado para organizar mensagens de email na caixa de correio de um usuário. 
 
 ## <a name="overview"></a>Visão geral
 
@@ -37,8 +40,7 @@ O suplemento de mensagem de relatório funciona com sua assinatura do Office 365
  - Outlook 2016 para Mac
  - Outlook incluído no Office 365 proPlus
 
-> [!NOTE]
-> O suplemento de mensagem de relatório para o Outlook e o Outlook na Web não é exatamente o mesmo que o [filtro de lixo eletrônico do Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), embora ambos possam ser usados para marcar email como lixo eletrônico, não lixo eletrônico ou uma tentativa de phishing. O suplemento de mensagem de relatório para o Outlook e o Outlook na Web notifica a Microsoft sobre emails incorretamente classificados, enquanto o filtro de lixo eletrônico do Outlook é usado para organizar mensagens de email na caixa de correio de um usuário. 
+O navegador da Web existente deve ser suficiente para que o suplemento de mensagem de relatório funcione; no entanto, se você notar que o suplemento não está disponível ou não está funcionando conforme o esperado, tente um navegador diferente.
   
 Se você for um usuário individual, é possível [habilitar o relatório de suplemento de mensagens para você](#get-the-report-message-add-in-for-yourself). 
   
@@ -50,7 +52,7 @@ Se você for um administrador global do Office 365 ou um administrador do Exchan
     
 2. Escolha **obtê-lo agora**.<br/>![Mensagem de relatório-obter agora](media/ReportMessageGETITNOW.png)<br/> 
     
-3. Revise os termos de uso e política de privacidade. Em seguida, escolha **continuar**. 
+3. Revise os termos de uso e política de privacidade. Em seguida, escolha **Continuar**. 
     
 4. Entre no Office 365 usando sua conta corporativa ou de estudante (para uso comercial) ou sua conta da Microsoft (para uso pessoal).
     
@@ -139,7 +141,7 @@ Você pode revisar e editar as configurações padrão para o suplemento de mens
 2. Localize e selecione o suplemento de mensagem de relatório.<br/>![Localizar e selecionar o suplemento de mensagem de relatório](media/FindReportMessageAddIn.png)<br/> 
     
 3. Na tela de mensagens de relatório, revise e edite as configurações conforme apropriado para sua organização.<br/>![Configurações para o suplemento de mensagem de relatório](media/EditReportMessageAddIn.png)<br/> 
-  
+
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

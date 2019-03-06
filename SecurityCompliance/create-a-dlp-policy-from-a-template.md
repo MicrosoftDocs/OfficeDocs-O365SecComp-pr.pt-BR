@@ -10,22 +10,20 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: 'A maneira mais fácil e mais comum de começar as políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219431"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410946"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política DLP com base em um modelo
+# <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
 
-A maneira mais fácil e mais comum de começar as políticas de DLP é usar um dos modelos incluídos no Office 365. Você pode usar um desses modelos como está ou personalizar as regras para atender aos requisitos de conformidade específicos da sua organização.
+A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. Você pode usar um desses modelos como está ou personalizar as regras para atender aos requisitos de conformidade específicos da sua organização.
   
 O Office 365 inclui mais de 40 modelos prontos para uso que podem ajudar você a atender a uma grande variedade de necessidades comuns de regulamentação e de política de negócios. Por exemplo, existem modelos de política de DLP para:
   
@@ -51,13 +49,13 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 - Tornar a política mais confidencial, para que uma única ocorrência de informações confidenciais seja suficiente para restringir o acesso de usuários externos.
     
-- Permitir que os usuários substituam as ações fornecendo uma justificativa comercial ou relatando um falso positivo. Dessa forma, sua política de DLP não impedirá que as pessoas em sua organização tenham seus trabalhos concluídos, contanto que tenham uma razão comercial válida para o compartilhamento de informações confidenciais.
+- Permitir que os usuários substituam as ações fornecendo uma justificativa de negócios ou relatando um falso positivo. Dessa forma, sua política de DLP não impedirá que as pessoas em sua organização tenham seus trabalhos concluídos, contanto que tenham uma razão comercial válida para o compartilhamento de informações confidenciais.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política DLP com base em um modelo
+### <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
 
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 usando sua conta corporativa ou de estudante. Agora você está no centro de conformidade com &amp; segurança do Office 365.
+2. Entre no Office 365 usando a sua conta corporativa ou de estudante. Agora você está no centro de conformidade com &amp; segurança do Office 365.
     
 3. Na navegação \> à &amp; esquerda centro \> de conformidade de segurança \> **política** \> de **prevenção contra perda de dados** **+ criar uma política**.
     
@@ -81,7 +79,7 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
     Para incluir ou excluir um local inteiro, como todos os emails do Exchange ou todas as contas do OneDrive, altere ou desative o **status** desse local. 
     
-    Para incluir apenas sites específicos do SharePoint ou contas do OneDrive for Business, altere o **status** para ativado e clique nos links em **incluir** para escolher sites ou contas específicos. Quando você aplica uma política a um site, as regras configuradas na política são automaticamente aplicadas a todos os subsites desse site. 
+    Para incluir apenas sites específicos do SharePoint ou contas do OneDrive for Business, altere o **status** para ativado e clique nos links em **incluir** para escolher sites ou contas específicos. Quando você aplicar uma política a um site, as regras configuradas nessa política são aplicadas automaticamente a todos os subsites do site. 
     
     ![Opções para locais onde uma política DLP pode ser aplicada](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -135,11 +133,11 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 15. Revise as condições e ações para esta \> regra **em seguida**.
     
-    À direita, observe a opção de **status** da regra. Se você desativar uma política inteira, todas as regras contidas na política também serão desativadas. No enTanto, você pode desativar uma regra específica sem desativar toda a política. Isso pode ser útil quando você precisa investigar uma regra que está gerando um grande número de falsos positivos. 
+    À direita, observe a opção de **status** da regra. Se você desativar uma política inteira, todas as regras contidas na política também serão desativadas. No enTanto, você pode desativar uma regra específica sem desativar toda a política. Isso pode ser útil quando você precisar investigar uma regra que está gerando um grande número de falsos positivos. 
     
 16. Na próxima página, leia e entenda o seguinte e, em seguida, escolha se deseja ativar ou testar primeiro \> **** a regra.
     
-     Antes de criar suas políticas de DLP, considere a possibilidade de refazê-las gradativamente para avaliar o impacto e testar sua eficácia antes de aplicá-las totalmente. Por exemplo, você não deseja que uma nova política de DLP bloqueie acidentalmente o acesso a milhares de documentos que as pessoas precisam para realizar o trabalho. 
+     Depois de criar as políticas de DLP, você deve considerar a implementação gradual delas para avaliar o impacto e testar a eficácia delas antes de as impor completamente. Por exemplo, você não deseja que uma nova política de DLP bloqueie acidentalmente o acesso a milhares de documentos que as pessoas precisam para realizar o trabalho. 
     
     Se você estiver criando políticas DLP com um grande impacto em potencial, recomendamos seguir esta sequência:
     
@@ -147,7 +145,7 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 18. Mover para o modo de teste com Dicas de Política e notificações para que você possa começar a ensinar os usuários sobre suas políticas de conformidade e prepará-los para as regras que serão aplicadas. Nesse estágio, você também pode pedir aos usuários para relatar falsos positivos para que você possa refinar as regras.
     
-19. Ative as políticas para que as regras sejam aplicadas e o conteúdo seja protegido. Continue a monitorar os relatórios de DLP e quaisquer relatórios de incidentes ou notificações para garantir que os resultados sejam os que você pretende. 
+19. Ative as políticas para que as regras sejam aplicadas e o conteúdo seja protegido. Continue a monitorar os relatórios de DLP e qualquer relatório de incidentes ou notificações para certificar-se de que os resultados sejam os desejados. 
     
     ![Opções para usar o modo de teste e ativar a política](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -157,7 +155,7 @@ Depois de criar e ativar uma política de DLP, ela é implantada em qualquer fon
   
 ## <a name="view-the-status-of-a-dlp-policy"></a>Exibir o status de uma política de DLP
 
-A qualquer momento, você pode exibir o status de suas políticas de DLP na página **política** , na seção **prevenção de perda de dados** do &amp; centro de conformidade de segurança. Aqui você pode encontrar informações importantes, como se uma política foi habilitada ou desabilitada com êxito ou se a política está no modo de teste. 
+A qualquer momento, você pode exibir o status de suas políticas de DLP na página **política** , na seção **prevenção de perda de dados** do &amp; centro de conformidade de segurança. Nessa página, você encontra informações importantes, por exemplo, se uma política foi habilitada ou desabilitada com êxito e se a política está no modo de teste. 
   
 Eis aqui os diferentes status e o que eles significam.
   
@@ -166,9 +164,9 @@ Eis aqui os diferentes status e o que eles significam.
 |**Ativando…** <br/> |A política está sendo implantada nas fontes de conteúdo incluídas. A política ainda não foi imposta para todas as fontes.  <br/> |
 |**Testando, com notificações** <br/> |A política está no modo de teste. As ações em uma regra não são aplicadas, mas as correspondências de política são coletadas e podem ser visualizadas usando os relatórios de DLP. As notificações sobre correspondências de política são enviadas aos destinatários especificados.  <br/> |
 |**Testando, sem notificações** <br/> |A política está no modo de teste. As ações em uma regra não são aplicadas, mas as correspondências de política são coletadas e podem ser visualizadas usando os relatórios de DLP. As notificações sobre correspondências de política não são enviadas aos destinatários especificados.  <br/> |
-|**Ativado** <br/> |A política está ativa e imposta. A política foi implantada com êxito a todas as suas fontes de conteúdo.  <br/> |
+|**On** <br/> |A política está ativa e imposta. A política foi implantada com êxito a todas as suas fontes de conteúdo.  <br/> |
 |**Desativando...** <br/> |A política está sendo removida para as fontes de conteúdo incluídas. A política ainda pode estar ativa e imposta em algumas fontes. Desativando uma política pode levar até 45 minutos.  <br/> |
-|**Desativada** <br/> |A política não está ativa e não foi imposta. As configurações da política (fontes, palavras-chave, duração, etc.) são salvas.  <br/> |
+|**Desligado** <br/> |A política não está ativa e não foi imposta. As configurações da política (fontes, palavras-chave, duração, etc.) são salvas.  <br/> |
 |**Excluindo...** <br/> |A política está sendo excluída. A política não está ativa e não foi imposta.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Desativar uma política de DLP
@@ -187,9 +185,9 @@ Além disso, você pode desativar cada regra individualmente editando a polític
     
 - [Enviar notificações e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md)
     
-- [Criar uma política DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
+- [Criar uma política de DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
     
-- [O que os modelos de política DLP incluem](what-the-dlp-policy-templates-include.md)
+- [O que os modelos de política de DLP incluem](what-the-dlp-policy-templates-include.md)
     
 - [Inventário de tipos de informações confidenciais](what-the-sensitive-information-types-look-for.md)
     

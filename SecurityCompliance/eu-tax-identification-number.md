@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação de imposto da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213821"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410906"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificação do imposto da UE
 
 Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação de imposto (TIN) da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
   
-## <a name="austria"></a>Áustria
+## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove dígitos com hífen opcional e barra para frente
   
@@ -76,20 +76,19 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 número do imposto
   
-série
+number
   
 número de registro de imposto
   
 tax id
-
   
 St.Nr.
   
 steuernummer
   
-## <a name="belgium"></a>Bélgica
+## <a name="belgium"></a>Bélgica 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços e delimitadores
   
@@ -140,7 +139,6 @@ número de Registro Nacional
 número de registro de imposto
   
 tax id
-
   
 nse
   
@@ -152,7 +150,7 @@ Numéro d'identification fiscal
   
 ## <a name="bulgaria"></a>Bulgária
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos sem espaços e delimitadores
   
@@ -223,7 +221,7 @@ ID de граждански униформ
   
 ## <a name="croatia"></a>Croácia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços ou delimitadores
   
@@ -273,7 +271,6 @@ número do imposto
 imposto
   
 tax id
-
   
 OID
   
@@ -283,7 +280,7 @@ porezni broj
   
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Oito dígitos e uma letra no padrão especificado
   
@@ -335,7 +332,6 @@ número do imposto
 imposto
   
 tax id
-
   
 código de identificação de imposto
   
@@ -351,7 +347,7 @@ TIC #
   
 ## <a name="czech-republic"></a>República Tcheca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove ou dez dígitos com uma barra invertida opcional
   
@@ -396,7 +392,6 @@ número do imposto
 imposto
   
 tax id
-
   
 número pessoal
   
@@ -406,7 +401,7 @@ osobní číslo
   
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos contendo um hífen
   
@@ -458,7 +453,6 @@ número do imposto
 imposto
   
 tax id
-
   
 número de CPR
   
@@ -470,7 +464,7 @@ ID Skat
   
 ## <a name="estonia"></a>Estônia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços ou delimitadores
   
@@ -524,7 +518,6 @@ número do imposto
 imposto
   
 tax id
-
   
 código pessoal
   
@@ -536,7 +529,7 @@ isikukood
   
 ## <a name="finland"></a>Finlândia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Uma combinação de 11 caracteres de dígitos, letras e sinal de mais e de menos
   
@@ -586,7 +579,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
-
   
 ID pessoal
   
@@ -596,7 +588,7 @@ número de ID nacional da finlandês
   
 personalidnumber #
   
-número de identificação nacional
+national identification number
   
 número de identificação
   
@@ -628,7 +620,7 @@ Kansallinen Tunnus numero
   
 ## <a name="france"></a>França
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos para pessoas e nove dígitos para entidades
   
@@ -680,13 +672,12 @@ número de identificação do imposto
 número do imposto
   
 tax id
-
   
 Numéro d'identification fiscal
   
 ## <a name="germany"></a>Alemanha
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços e delimitadores
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -758,7 +748,7 @@ steueridentifikationsnummer
   
 ## <a name="greece"></a>Grécia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove dígitos sem espaços e delimitadores
   
@@ -794,8 +784,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 AFM
   
-tin
-
+Tin
   
 n º de ID de imposto
   
@@ -827,7 +816,7 @@ aφμ αριθμός
   
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos sem espaços ou delimitadores
   
@@ -906,7 +895,7 @@ adóhatóság szám
   
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Sete dígitos seguidos de uma letra sem espaços ou delimitadores
   
@@ -977,7 +966,7 @@ uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>Itália
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 letras e dígitos no padrão especificado
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -1053,7 +1041,7 @@ fiscalização codice
   
 ## <a name="latvia"></a>Letônia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços ou delimitadores
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -1127,7 +1114,7 @@ nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>Lituânia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos sem espaços ou delimitadores
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -1195,7 +1181,7 @@ mokesčių identifikavimas Numeris
   
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos sem espaços ou delimitadores
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -1267,7 +1252,7 @@ steueridentifikationsnummer
   
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Para as nacionalidades maltês: 7 dígitos e uma letra no padrão especificado
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 táxi #
   
@@ -1345,7 +1329,7 @@ numru ta ' identifikazzjoni tat-taxxa
   
 ## <a name="netherlands"></a>Países Baixos
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove dígitos sem espaços ou delimitadores
   
@@ -1401,7 +1385,6 @@ ID de imposto holandês
 número de identificação do imposto holandês
   
 tax id
-
   
 ID de imposto #
   
@@ -1411,8 +1394,7 @@ n º do imposto
   
 imposto
   
-tin
-
+Tin
   
 Tin
   
@@ -1438,7 +1420,7 @@ Nederlandse identificatie
   
 ## <a name="poland"></a>Polônia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Onze dígitos sem espaços ou delimitadores
   
@@ -1494,7 +1476,6 @@ Nip
 Nip #
   
 tax id
-
   
 ID de imposto #
   
@@ -1524,7 +1505,7 @@ numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove dígitos sem espaços ou delimitadores
   
@@ -1585,7 +1566,7 @@ número de identificação fiscal
   
 ## <a name="romania"></a>Romênia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos sem espaços ou delimitadores
   
@@ -1620,14 +1601,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
-
   
 número de ID do imposto
   
 arquivo de imposto não
   
-
-
 tax file number
   
 n º do imposto
@@ -1644,7 +1622,7 @@ numărul de identificare Fiscală
   
 ## <a name="slovakia"></a>Eslováquia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos sem espaços ou delimitadores
   
@@ -1679,7 +1657,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
-
   
 número de ID do imposto
   
@@ -1689,13 +1666,10 @@ Tin não
   
 ID de Tin de eslovaco
   
-tin
-
+Tin
   
 arquivo de imposto não
   
-
-
 tax file number
   
 n º do imposto
@@ -1714,7 +1688,7 @@ daňové číslo súboru
   
 ## <a name="slovenia"></a>Eslovênia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Oito dígitos sem espaços ou delimitadores
   
@@ -1756,7 +1730,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
-
   
 número de ID do imposto
   
@@ -1766,13 +1739,10 @@ Tin não
   
 ID de Tin esloveno
   
-tin
-
+Tin
   
 arquivo de imposto não
   
-
-
 tax file number
   
 n º do imposto
@@ -1791,7 +1761,7 @@ davčna številka
   
 ## <a name="spain"></a>Espanha
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Sete ou oito dígitos e uma ou duas letras no padrão especificado
   
@@ -1869,7 +1839,6 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
-
   
 número de ID do imposto
   
@@ -1885,8 +1854,6 @@ arquivo de imposto não
   
 número de CIF espanhol
   
-
-
 tax file number
   
 Não CIF espanhol
@@ -1917,7 +1884,7 @@ cifnúmero #
   
 ## <a name="sweden"></a>Suécia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dez dígitos e um símbolo no padrão especificado
   
@@ -1971,14 +1938,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
-
   
 n º de ID de imposto
   
 número de ID do imposto
   
 tax identification
-
   
 identificação de imposto #
   
@@ -2002,17 +1967,17 @@ personnummer
   
 ## <a name="uk"></a>Reino Unido
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Referência de contribuidor exclusivo (UTR): 10 dígitos sem espaços e delimitadores
   
-Número de seguro nacional (NINO): para obter detalhes, consulte a seção "número de seguro nacional do Reino Unido (NINO)" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
+Número de seguro nacional (NINO): para obter detalhes, consulte a seção "Reino Unido Número de seguro nacional (NINO) "em [o que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Padrão
 
 Referência de contribuidor exclusivo (UTR): 10 dígitos
   
-Número de seguro nacional (NINO): para obter detalhes, consulte a seção "número de seguro nacional do Reino Unido (NINO)" em [o que os tipos de informações confidenciais buscam](what-the-sensitive-information-types-look-for.md).
+Número de seguro nacional (NINO): para obter detalhes, consulte a seção "Reino Unido Número de seguro nacional (NINO) "em [o que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Soma de verificação
 
@@ -2041,14 +2006,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
-
   
 n º de ID de imposto
   
 número de ID do imposto
   
 tax identification
-
   
 identificação de imposto #
   
@@ -2064,5 +2027,5 @@ arquivo de impostos não.
   
 ## <a name="see-also"></a>Confira também
 
-[O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
+[O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
 

@@ -8,23 +8,23 @@ ms.audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
-description: Os operadores de informações de sua organização lidam com vários tipos de informações confidenciais durante um dia típico. A impressão digital de documento facilita a proteção dessas informações por meio da identificação de formulários padrão usados em toda a organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
-ms.openlocfilehash: 20b9f59902c52d347e7c439cb6f380ee9fd4a30e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Os funcionários de TI em sua organização lidam com vários tipos de informações confidenciais em um dia comum. A Impressão Digital de Documento facilita a proteção dessas informações identificando formas padrão usadas em sua organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
+ms.openlocfilehash: ef3f8450c9a0c65669c736c667e52568ab5996bd
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341282"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410636"
 ---
 # <a name="document-fingerprinting"></a>Impressão Digital de Documento
 
-Os operadores de informações de sua organização lidam com vários tipos de informações confidenciais durante um dia típico. No centro de &amp; conformidade de segurança, a impressão digital de documentos facilita a proteção dessas informações identificando formulários padrão que são usados em toda a organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
+Os funcionários de TI em sua organização lidam com vários tipos de informações confidenciais em um dia comum. No centro de &amp; conformidade de segurança, a impressão digital de documentos facilita a proteção dessas informações identificando formulários padrão que são usados em toda a organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Cenário básico da Impressão Digital de Documento
 
-A impressão digital de documento é um recurso de prevenção contra perda de dados (DLP) que converte um formulário padrão em um tipo de informação confidencial, que você pode usar nas regras de suas políticas de DLP. Por exemplo, você pode criar uma impressão digital de documento com base em um modelo de patente em branco e, em seguida, criar uma política de DLP que detecta e bloqueia todos os modelos de patente de saída com conteúdo confidencial preenchido. Opcionalmente, você pode configurar [dicas de política](use-notifications-and-policy-tips.md) para notificar os remetentes de que eles podem estar enviando informações confidenciais, e o remetente deve verificar se os destinatários estão qualificados para receber as patentes. Esse processo funciona com qualquer formulário baseado em texto usado em sua organização. Exemplos adicionais de formulários que você pode carregar incluem: 
+A impressão digital de documento é um recurso de prevenção contra perda de dados (DLP) que converte um formulário padrão em um tipo de informação confidencial, que você pode usar nas regras de suas políticas de DLP. Por exemplo, você pode criar uma impressão digital de documento com base em um modelo de patente em branco e, então, criar uma política DLP que detecta e bloqueia todos os modelos de patente de saída com conteúdo confidencial. Opcionalmente, você pode configurar [dicas de política](use-notifications-and-policy-tips.md) para notificar os remetentes de que eles podem estar enviando informações confidenciais, e o remetente deve verificar se os destinatários estão qualificados para receber as patentes. Esse processo funciona com qualquer formulário baseado em texto usado em sua organização. Exemplos adicionais de formulários que você pode carregar incluem: 
   
 - Formulários governamentais
     
@@ -34,11 +34,11 @@ A impressão digital de documento é um recurso de prevenção contra perda de d
     
 - Formulários personalizados criados especificamente para sua organização
     
-O ideal é que sua organização já tenha uma prática de negócios estabelecida de usar certos formulários para transmitir informações confidenciais. Após carregar um formulário vazio para ser convertido em uma impressão digital de documento e configurar uma política correspondente, a DLP detecta qualquer documento no email de saída que corresponde a essa impressão digital.
+Idealmente, sua organização já tem uma prática comercial estabelecida sobre o uso de determinados formulários para transmitir informações confidenciais. Após carregar um formulário vazio para ser convertido em uma impressão digital de documento e configurar uma política correspondente, a DLP detecta qualquer documento no email de saída que corresponde a essa impressão digital.
   
 ## <a name="how-document-fingerprinting-works"></a>Funcionamento da Impressão Digital de Documento
 
-Você provavelmente já adivinhou que os documentos não têm impressões digitais reais, mas o nome ajuda a explicar o recurso. Da mesma forma que as impressões digitais de uma pessoa têm padrões exclusivos, os documentos têm padrões do Word exclusivos. Quando você carrega um arquivo, a DLP identifica o padrão de palavra exclusivo no documento, cria uma impressão digital de documento com base nesse padrão e usa essa impressão digital de documento para detectar documentos de saída que contenham o mesmo padrão. É por isso que carregar um formulário ou modelo cria o tipo mais eficaz de impressão digital de documento. Todos os usuários que preenchem um formulário usam o mesmo conjunto de palavras original e, em seguida, adicionam suas próprias palavras ao documento. Desde que o documento de saída não esteja protegido por senha e que contenha todo o texto do formulário original, a DLP pode determinar se o documento corresponde à impressão digital de documento.
+Provavelmente você já sabe que os documentos não têm impressões digitais reais, mas o nome ajuda a explicar o recurso. Da mesma maneira que as impressões digitais de uma pessoa têm padrões exclusivos, os documentos têm padrões de palavra exclusivos. Quando você carrega um arquivo, a DLP identifica o padrão de palavra exclusivo no documento, cria uma impressão digital de documento com base nesse padrão e usa essa impressão digital de documento para detectar documentos de saída que contenham o mesmo padrão. É por isso que o carregamento de um formulário ou de um modelo cria o tipo mais eficaz de impressão digital de documento. Todos que preenchem um formulário usam o mesmo conjunto de palavras do original e, então, adicionam suas próprias palavras ao documento. Desde que o documento de saída não esteja protegido por senha e que contenha todo o texto do formulário original, a DLP pode determinar se o documento corresponde à impressão digital de documento.
   
 O exemplo a seguir mostra o que acontecerá se você criar uma impressão digital de documento com base em um modelo de patente, mas você pode usar qualquer formulário como base para a criação de uma impressão digital de documento.
   
@@ -52,7 +52,7 @@ Por exemplo, você pode querer configurar uma política de DLP que impede que fu
   
 ### <a name="supported-file-types"></a>Tipos de arquivo com suporte
 
-A impressão digital de documento oferece suporte aos mesmos tipos de arquivo suportados nas regras de fluxo de emails (também conhecidas como regras de transporte). Para obter uma lista de tipos de arquivo com suporte, confira [tipos de arquivo com suporte para inspeção de conteúdo de regra de fluxo de email](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Uma observação rápida sobre os tipos de arquivo: nem as regras de fluxo de emails e a impressão digital de documentos dão suporte ao tipo de arquivo. dotx, que pode ser confuso porque é um arquivo de modelo no Word. Quando você vir a palavra "modelo" neste e em outros tópicos de impressão digital de documento, ela se refere a um documento que você estabeleceu como um formulário padrão, e não o tipo de arquivo de modelo.
+A impressão digital de documento oferece suporte aos mesmos tipos de arquivo suportados nas regras de fluxo de emails (também conhecidas como regras de transporte). Para obter uma lista de tipos de arquivo com suporte, confira [tipos de arquivo com suporte para inspeção de conteúdo de regra de fluxo de email](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Uma observação rápida sobre os tipos de arquivo: nem as regras de fluxo de emails e a impressão digital de documentos dão suporte ao tipo de arquivo. dotx, que pode ser confuso porque é um arquivo de modelo no Word. Quando você vir a palavra "modelo" neste e em outros tópicos sobre Impressão Digital de Documento, ela se referirá a um documento já estabelecido como um formulário padrão, e não ao tipo de arquivo de modelo.
   
 #### <a name="limitations-of-document-fingerprinting"></a>Limitações da impressão digital de documento
 
@@ -68,7 +68,7 @@ A impressão digital de documento não detectará informações confidenciais no
 
 Observe que, no momento, você pode criar uma impressão digital de documento usando o &amp; PowerShell no centro de conformidade de segurança. Para se conectar, confira [conectar-se ao PowerShell do centro de conformidade do & de segurança do Office 365](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-A DLP usa pacotes de regras de classificação para detectar conteúdo confidencial. Para criar um pacote de regras de classificação com base em uma impressão digital de documento, use os cmdlets **New-DlpFingerprint** e **New-DlpSensitiveInformationType** . Como os resultados de **New-DlpFingerprint** não são armazenados fora da regra de classificação de dados, você sempre executa **New-DlpFingerprint** e **New-DlpSensitiveInformationType** ou **set-DlpSensitiveInformationType** no mesmo Sessão do PowerShell. O exemplo a seguir cria uma nova impressão digital de documento com base no arquivo C:\My Documents\Contoso Employee template. docx. Você armazena a nova impressão digital como uma variável para que possa usá-la com o cmdlet **New-DlpSensitiveInformationType** na mesma sessão do PowerShell. 
+A DLP usa pacotes de regras de classificação para detectar conteúdo confidencial. Para criar um pacote de regras de classificação com base em uma impressão digital de documento, use os cmdlets **New-DlpFingerprint** e **New-DlpSensitiveInformationType** . Como os resultados de **New-DlpFingerprint** não são armazenados fora da regra de classificação de dados, você sempre executa **New-DlpFingerprint** e **New-DlpSensitiveInformationType** ou **set-DlpSensitiveInformationType** no mesmo Sessão do PowerShell. Este exemplo cria uma nova impressão digital de documento baseada no arquivo CC:\My Documents\Contoso Employee Template.docx. Você armazena a nova impressão digital como uma variável para que possa usá-la com o cmdlet **New-DlpSensitiveInformationType** na mesma sessão do PowerShell. 
   
 ```
 $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte -ReadCount 0

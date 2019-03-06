@@ -5,20 +5,21 @@ author: stephow-msft
 manager: laurawi
 ms.date: 8/4/2017
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Saiba como a DLP no centro de conformidade do & de segurança funciona com a DLP e regras de fluxo de emails (regras de transporte) no centro de administração do Exchange.
-ms.openlocfilehash: c20cf5d4e7b83a726b104a57b89f2d8f765d7f16
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 512d9e4c9d3181cbaec2d58faac4f95f649b78c8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341482"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410676"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Como a DLP funciona entre o centro de conformidade do & de segurança e o centro de administração do Exchange
 

@@ -1,5 +1,5 @@
 ---
-title: Responder a uma conta de email comprometida no Office 365
+title: Respondendo a uma conta de email comprometida no Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,23 +9,24 @@ ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como reconhecer e responder a uma conta de email comprometida no Office 365
-ms.openlocfilehash: 326ec01c570ad97b5f1eaf06dcfe1ad4e6ad76f4
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3f64cd249a425cc098fc49f6e9bbbe1901c734de
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341092"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412939"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a uma conta de email comprometida no Office 365
+# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Respondendo a uma conta de email comprometida no Office 365
 
 **Resumo** Saiba como reconhecer e responder a uma conta de email comprometida no Office 365.
 
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>O que é uma conta de email comprometida no Office 365?
-O acesso a caixas de correio, dados e outros serviços do Office 365 é controlado por meio do uso de credenciais, por exemplo, um nome de usuário e senha ou PIN. Quando alguém que não seja o usuário pretendido roubar essas credenciais, as credenciais roubadas serão consideradas comprometidas. Com eles, o invasor pode entrar como o usuário original e executar ações ilícitas. Usando as credenciais roubadas, o invasor pode acessar a caixa de correio do Office 365, pastas do SharePoint ou arquivos do usuário no OneDrive do usuário. Uma ação comumente vista é o atacante enviando emails como o usuário original para destinatários dentro e fora da organização. Quando o invasor envia dados para destinatários externos, isso é chamado de data exfiltration.
+O acesso a caixas de correio, dados e outros serviços do Office 365 é controlado por meio do uso de credenciais, por exemplo, um nome de usuário e senha ou PIN. Quando alguém que não seja o usuário pretendido roubar essas credenciais, as credenciais roubadas serão consideradas comprometidas. Com eles, o invasor pode entrar como o usuário original e executar ações ilícitas.
+Usando as credenciais roubadas, o invasor pode acessar a caixa de correio do Office 365, pastas do SharePoint ou arquivos do usuário no OneDrive do usuário. Uma ação comumente vista é o atacante enviando emails como o usuário original para destinatários dentro e fora da organização. Quando o invasor envia dados para destinatários externos, isso é chamado de data exfiltration.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomas de uma conta de email comprometida do Office 365
 Os usuários podem notar e relatar atividades incomuns em suas caixas de correio do Office 365. Estes são alguns sintomas comuns:
@@ -90,7 +91,7 @@ Se a caixa de correio comprometida suspeita foi usada de ilícito para enviar em
 > [!IMPORTANT]
 > Você pode impedir que a conta comprometida suspeita de entrar até acreditar que é seguro reabilitar o acesso.
 
-1. Vá para o centro de administração do Office 365.
+1. Go to the Office 365 admin center.
 2. No Centro de administração do Office 365, selecione **Usuários**.
 3. Selecione o funcionário que você deseja bloquear e, em seguida, escolha **Editar** ao lado de **status de entrada** no painel do usuário
 4. No painel **Status de entrada**, escolha **Entrada bloqueada** e **Salvar**. 
@@ -106,11 +107,13 @@ Se a caixa de correio comprometida suspeita foi usada de ilícito para enviar em
 1. Entre no centro de administração do Office 365 com uma conta de administrador global e abra **usuários ativos**.
 2. Encontre a conta comprometida suspeita e verifique manualmente se há funções administrativas atribuídas à conta.
 3. Abra o **centro de conformidade do & de segurança**.
-4. Clique em **permissões**.
-5. Revise manualmente os grupos de função para ver se a conta comprometida suspeita é um membro de qualquer um deles.  Se for: a. Clique no grupo de função e clique em **Editar grupo de função**.  b. clique em **escolher Membros** e **Editar** para remover o usuário do grupo de funções.
+4. Clique em **Permissões**.
+5. Revise manualmente os grupos de função para ver se a conta comprometida suspeita é um membro de qualquer um deles.  Se for: a. Clique no grupo função e clique em **Editar grupo de função**.
+    b. Clique em **escolher Membros** e **Editar** para remover o usuário do grupo de funções.
 6. Abrir o **centro de administração do Exchange**
-7. Clique em **permissões**.
-8. Revise manualmente os grupos de função para ver se a conta comprometida suspeita é um membro de qualquer um deles. Se for: a. Clique no grupo de funções e clique em **Editar**.  b. Use a **** seção Members para remover o usuário do grupo de função.
+7. Clique em **Permissões**.
+8. Revise manualmente os grupos de função para ver se a conta comprometida suspeita é um membro de qualquer um deles. Se for: a. Clique no grupo de funções e clique em **Editar**.
+    b. Use a seção **Membros** para remover o usuário do grupo de funções.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Etapa 7 opcional: etapas de precaução adicionais
 1. Certifique-se de verificar seus itens enviados. Talvez você precise informar as pessoas na sua lista de contatos de que sua conta foi comprometida. O invasor pode solicitar dinheiro, falsificação, por exemplo, que você esteve em um país diferente e que precisava de um dinheiro, ou o invasor pode enviar a eles um vírus para também seqüestrar seus computadores.
@@ -123,8 +126,8 @@ Sua assinatura do Office 365 vem com um conjunto poderoso de recursos de seguran
 - Tarefas a serem realizadas em 90 dias. Esses tempos são mais demorados para planejar e implementar, mas melhorar muito a postura de segurança.
 - Além de 90 dias. Esses aprimoramentos são criados nos seus primeiros 90 dias de trabalho.
 
-## <a name="see-also"></a>ConFira também:
-- [Práticas recomendadas de segurança para Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
-- [Detectar e corrigir ataques de injeção a regras do Outlook e formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## <a name="see-also"></a>Confira também:
+- [Práticas recomendadas de segurança para o Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+- [Detectar e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Centro de reclamações de crime da Internet](http://www.ic3.gov/preventiontips.aspx)
 - [Interrupções de títulos e do Exchange – fraude de "phishing"](http://www.sec.gov/investor/pubs/phishing.htm)
