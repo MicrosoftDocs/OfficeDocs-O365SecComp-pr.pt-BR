@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
 ms.collection: Strat_O365_IP
+localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d225f7ae3a97d497787c91ed6d4baab1b979f0c3
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341472"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410776"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 

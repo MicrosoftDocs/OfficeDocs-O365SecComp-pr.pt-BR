@@ -7,18 +7,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Saiba como criar, modificar, remover e testar tipos de informações confidenciais personalizados para DLP na interface gráfica do usuário no Centro de Conformidade e Segurança do Office 365.
-ms.openlocfilehash: 4a94ae8c5fd2f4aed9df0d481fecaaaef8b08074
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 16bc49f23de20479ed18ce56720fd70a05b986e3
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213851"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410806"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Criar um tipo de informação confidencial personalizado
 
