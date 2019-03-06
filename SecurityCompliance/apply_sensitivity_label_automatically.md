@@ -6,17 +6,18 @@ manager: laurawi
 ms.audience: Admin
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
+ms.topic: article
 search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode atribuir automaticamente um rótulo ao documento ou email, ou solicitar que os usuários selecionem o rótulo recomendado.
-ms.openlocfilehash: 3009056989b0cc26f8b2c76db4318042ce470482
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a57d51dce77e44fe4098f038babca3d6d015e8c
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214812"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412929"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar um rótulo de confidencialidade automaticamente ao conteúdo
 
@@ -76,3 +77,7 @@ Veja o exemplo de um aviso ao configurar uma condição para aplicar um rótulo 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Como várias condições são avaliadas quando elas se aplicam a mais de um rótulo
 
 Os rótulos são ordenados para avaliação de acordo com a posição especificada na política: o rótulo posicionado no início tem a posição mais baixa (menos confidencial) e o rótulo posicionado no final tem a posição mais alta (mais confidencial). Para saber mais sobre prioridade, confira [Prioridade de rótulos: a ordem é importante](sensitivity-labels.md#label-priority-order-matters)
+
+## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Não configure uma etiqueta pai para ser aplicada automaticamente ou recomendada
+
+Lembre-se de que um rótulo pai (um rótulo com sub rótulos) não pode ser aplicado ao conteúdo. Certifique-se de não configurar uma etiqueta pai para aplicação automática ou para a opção recomendada, pois a etiqueta pai não será aplicada ao conteúdo em aplicativos do Office que usam o cliente de rotulagem unificada da Proteção de Informações do Azure. Confira mais informações em rótulos de pai e sub-rótulos[Sub-rótulos (agrupamento de rótulos)](sensitivity-labels.md#sublabels-grouping-labels).
