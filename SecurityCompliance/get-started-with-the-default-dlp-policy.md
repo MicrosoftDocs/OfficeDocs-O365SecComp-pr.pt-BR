@@ -1,5 +1,5 @@
 ---
-title: Introdução à política DLP padrão
+title: Introdução à política de DLP padrão
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -12,15 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
+ms.collection:
+- M365-security-compliance
 description: Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização.
-ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341312"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455363"
 ---
-# <a name="get-started-with-the-default-dlp-policy"></a>Introdução à política DLP padrão
+# <a name="get-started-with-the-default-dlp-policy"></a>Introdução à política de DLP padrão
 
 Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização. Você verá essa recomendação na **Home** Page do centro de conformidade de &amp; segurança. 
   

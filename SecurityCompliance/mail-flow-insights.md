@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 1312e7362cd7765a3fbf3df9410e2e777682ece0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215581"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455143"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informações sobre o fluxo de emails no centro de conformidade do & de segurança
 
@@ -22,15 +22,15 @@ Os administradores podem usar o painel de fluxo de emails no centro de conformid
 
 As ideias, os relatórios e os widgets disponíveis no painel de fluxo de emails são:
 
-- [Fluxo de entrada e saída de emails](mfi-outbound-and-inbound-mail-flow.md)
+- [Fluxo de mensagens de entrada e de saída](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Alertas de filas e filas](mfi-queue-alerts-and-queues.md)
+- [Alertas de fila e filas](mfi-queue-alerts-and-queues.md)
 
-- [Relatório de encaminhamento automático de mensagens](mfi-auto-forwarded-messages-report.md)
+- [Relatório de mensagens automaticamente encaminhadas](mfi-auto-forwarded-messages-report.md)
 
-- [Insight de loop de email](mfi-mail-loop-insight.md)
+- [Informações de loop de email](mfi-mail-loop-insight.md)
 
-- [Insights de regras de fluxo de email – modo lento](mfi-slow-mail-flow-rules-insight.md)
+- [Visão de regras de fluxo de email lento](mfi-slow-mail-flow-rules-insight.md)
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Permissões necessárias para exibir o painel de fluxo de emails
 

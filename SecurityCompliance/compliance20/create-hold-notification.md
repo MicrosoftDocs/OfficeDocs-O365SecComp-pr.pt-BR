@@ -14,22 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c7fa8c7229ebb6b5304b80e15fba604c139076cd
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296134"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455193"
 ---
 # <a name="create-a-legal-hold-notice"></a>Criar um aviso de retenção legal
 
 Usando as comunicações de conversões de descoberta eletrônica avançada (prévia), as organizações podem gerenciar seu fluxo de trabalho em relação à comunicação com os responsáveis. Por meio da ferramenta de comunicação, as equipes jurídicas podem, sistematicamente, enviar, coletar e acompanhar as notificações de retenção legal. O processo de criação flexível também permite que as equipes personalizem o fluxo de trabalho de notificação de espera e o conteúdo dos avisos enviados aos responsáveis. 
+
+![Página de comunicações](../media/CommunicationPage.PNG)
 
 O artigo descreve as etapas no fluxo de trabalho de notificação de retenção.
 
 ## <a name="step-1-specify-communication-details"></a>Etapa 1: especificar detalhes de comunicação
 
 A primeira etapa é especificar os detalhes apropriados para avisos de retenção legal ou outras comunicações do mesmo. 
+
+![Página de comunicação de nome](../media/NameCommunication.PNG)
 
 1. No centro de conformidade do & de segurança, vá para descoberta **eletrônica avançada do > (visualização)** para exibir a lista de casos em sua organização.
    
@@ -47,9 +51,11 @@ A primeira etapa é especificar os detalhes apropriados para avisos de retençã
 
 Em seguida, você pode criar e adicionar o conteúdo do aviso de isenção. Na página **definir conteúdo do portal** no Assistente para **criar comunicação** , especifique o conteúdo do aviso de isenção. Esse conteúdo será automaticamente acrescentado aos avisos de emissão, reEmissão, lembrete e escalonamento. Além disso, esse conteúdo aparecerá no portal de conformidade do responsáveis. 
 
+![Página de conteúdo do portal](../media/PortalContent.PNG)
+
 Para criar o conteúdo do portal:
 
-1. Digite (ou recorte e coledor de outro documento) seu aviso de espera na caixa de texto do conteúdo do Portal. 
+1. Digite (ou recorte e Cole de outro documento) seu aviso de bloqueio na caixa de texto do conteúdo do Portal. 
 
 2. Insira as variáveis de mesclagem no seu aviso para personalizar o aviso e compartilhar o portal de conformidade do responsáveis.
 
@@ -119,6 +125,8 @@ Para criar uma notificação de lançamento:
 
 Opcionalmente, você pode simplificar o fluxo de trabalho para acompanhar os responsáveis por não responder, criando e agendando notificações automatizadas de lembrete e escalonamento.
 
+![Página de encaminhamento/lembrete](../media/ReminderEscalations.PNG)
+
 ### <a name="reminders"></a>Lembretes
 
 Depois de enviar uma notificação de espera, você pode acompanhar os responsáveis por não responder, definindo um fluxo de trabalho de lembrete. 
@@ -161,7 +169,9 @@ Para agendar escalonamentos:
    
 ## <a name="step-5-assign-custodians"></a>Etapa 5: atribuir os responsáveis 
 
-Depois de finalizar o conteúdo para notificações, selecione os responsáveis para enviar as notificações. 
+Depois de finalizar o conteúdo para notificações, selecione os responsáveis que você gostaria de enviar as notificações. 
+
+![Selecionar página de responsáveis](../media/SelectCustodians.PNG)
 
 Para adicionar os responsáveis:
 

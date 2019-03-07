@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296714"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455293"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Adicionar os responsáveis a uma descoberta eletrônica avançada (visualização)
 
@@ -69,15 +69,13 @@ Dependendo do seu caso, você também pode querer adicionar caixas de correio qu
 ![Mapear fontes de dados adicionais](../media/AddCustodianStep3.PNG)
 
 Para mapear caixas de correio, sites ou equipes para um determinado local:
+1. Selecione **Adicionar** para atribuir locais de conteúdo, como caixas de correio, sites e equipes, a um determinado local. 
 
-1. Selecione **Atualizar** para atribuir locais de conteúdo, como caixas de correio, sites e equipes a um determinado local. 
-
-2. No submenu, especifique o seguinte:
-   
-    -  **Caixas de correio do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente. Para especificar as caixas de correio a serem atribuídas aos responsáveis selecionados, use a caixa de pesquisa para localizar caixas de correio de usuário e grupos de distribuição. Você também pode atribuir a caixa de correio associada a um grupo do Office 365 ou a uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
+2. No submenu, especifique o seguinte: ![mapear fontes de dados](../media/AddCustodianStep4.PNG)
+  -  **Caixas de correio do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente. Para especificar as caixas de correio a serem atribuídas aos responsáveis selecionados, use a caixa de pesquisa para localizar caixas de correio de usuário e grupos de distribuição. Você também pode atribuir a caixa de correio associada a um grupo do Office 365 ou a uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
 
         > [!NOTE]
-        > Ao clicar em escolher usuários, grupos ou equipes para especificar caixas de correio, o seletor de caixa de correio exibido estará vazio. Isso é projetado para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa.
+        > Ao clicar em escolher usuários, grupos ou equipes para especificar caixas de correio, o seletor de caixa de correio exibido estará vazio. Isso foi desenvolvido para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa.
      
      - **Sites do SharePoint** -clique em **escolher sites** e, em seguida, clique em **escolher sites** novamente para especificar sites adicionais do SharePoint e do onedrive for Business que você gostaria de atribuir aos responsáveis selecionados. Você também pode adicionar a URL do site do SharePoint para um grupo do Office 365 ou uma equipe da Microsoft. Digite a URL de cada site que você deseja atribuir. Clique em **escolher**e em **concluído**.
      - **Microsoft Teams** – clique em **escolher equipes** e, em seguida, clique em **escolher Teams** novamente para exibir uma lista de grupos do Microsoft Team nos quais o responsáveis é membro de hoje. Selecione as equipes que você gostaria de adicionar a seus responsáveis. Depois de selecionado, o sistema identificará automaticamente o & selecione o site do SharePoint associado e a caixa de correio de grupo associados a essa equipe da Microsoft. Clique em **escolher**e em **concluído**.
@@ -89,6 +87,8 @@ Após concluir o mapeamento de suas fontes, você poderá exibir as caixas de co
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Opcion Etapa 4: colocar os responsáveis em espera
 
+![Colocar suspensões](../media/AddCustodianStep5.PNG)
+
 Depois de finalizar os responsáveis e as fontes de dados que você deseja adicionar ao seu caso, você pode, opcionalmente, colocar alguns ou todos os seus responsáveis em espera. Quando você coloca um bloqueador, o conteúdo mapeado para esse usuário é mantido até que você libere os responsáveis do caso ou até que a retenção seja excluída. Em alguns casos, talvez você queira adicionar os responsáveis por um caso sem colocá-los em espera. 
 
 Para colocar os responsáveis e as fontes de dados selecionados em retenção:
@@ -99,4 +99,4 @@ Para colocar os responsáveis e as fontes de dados selecionados em retenção:
 
 3. Clique em **Editar** para exibir todas as fontes de dados do responsáveis.
 
-    ![Colocar suspensões](../media/AddCustodianStep4.PNG)
+   

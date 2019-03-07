@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297094"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455413"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Coletar dados para uma ocorrência na descoberta eletrônica avançada (visualização)
 
@@ -27,7 +27,7 @@ Depois de identificar os responsáveis e as fontes de dados que são de interess
 
 Após executar uma pesquisa, você poderá exibir estatísticas sobre os itens recuperados, como os locais que tinham a maioria dos itens que corresponderam à consulta de pesquisa. Você também pode visualizar um subconjunto dos resultados. Quando você identificou o conjunto de documentos que deseja examinar mais, você pode adicionar os resultados da pesquisa a um conjunto de trabalho para coletar e processar.
 
-## <a name="create-a-search"></a>Criar uma pesquisa
+## <a name="create-a-search"></a>Create a search
 
 Clicar em **nova pesquisa** na guia **pesquisas** iniciará um assistente que orienta você durante a criação de uma pesquisa. Para obter informações detalhadas sobre como criar uma pesquisa, consulte [criar uma pesquisa para coletar dados](create-search-to-collect-data.md).
 
@@ -40,8 +40,7 @@ Após a conclusão da pesquisa, clique na pesquisa para exibir a página do menu
 
 - Resumo
 - Principais locais
-- Repete
-- Refinadores
+- Queries
 
 Para obter mais informações sobre estatísticas de pesquisa, confira [Estatísticas de pesquisa](search-statistics.md).
 

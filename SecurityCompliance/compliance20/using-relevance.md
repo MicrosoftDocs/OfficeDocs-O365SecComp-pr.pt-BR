@@ -14,16 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f08fe644bfd4eaae27e1ef8718c54166417e53ae
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295824"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454943"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada (visualização)
 
-Na descoberta eletrônica avançada (visualização), o módulo de relevância inclui o treinamento de relevância e a revisão de arquivos relacionados a um caso. O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
+Na descoberta eletrônica avançada (visualização), o módulo de relevância inclui o treinamento de relevância e a revisão de arquivos relacionados a um caso. Para usar o fluxo de trabalho de relevância, vá para gerenciar o conjunto de trabalho em um conjunto de trabalho e clique em mostrar relevância. Há algumas etapas que precisam ser concluídas para que você possa iniciar o fluxo de trabalho:
+- Processo: cada conjunto de carga adicionado ao conjunto de trabalho será exibido como um "contêiner" aqui. Você precisa processar esses documentos para poder adicioná-los ao módulo de relevância; Isso também é onde você pode marcá-los como semente ou pré-selecionado para um problema específico.
+- Adicionar à relevância: em cargas \> de relevância, você pode adicionar documentos que foram processados à relevância para torná-los disponíveis para treinamento.
+
+O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
   
 ![Fluxo de trabalho de relevância](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   

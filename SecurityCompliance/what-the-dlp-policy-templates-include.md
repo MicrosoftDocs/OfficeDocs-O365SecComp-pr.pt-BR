@@ -9,18 +9,19 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 inclui modelos de política prontos para uso que atendem aos requisitos de conformidade comuns, como ajudá-lo a proteger informações confidenciais sujeitas ao decreto de seguro de saúde dos EUA ( HIPAA), lei Gramm-Leach-Bliley (GLBA) dos EUA ou Patriot americano. Este tópico lista todos os modelos de política, quais tipos de informações confidenciais elas procuram e quais são as condições e ações padrão.
-ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 00e2c4ff42df039804b1b8a3962be7e3c3798022
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411006"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455203"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>O que os modelos de política de DLP incluem
 

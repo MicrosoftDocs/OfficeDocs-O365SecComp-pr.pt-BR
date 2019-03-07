@@ -5,20 +5,20 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade do & de segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: 95682b02f50996594650ac5d3aebf18f795efd65
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341562"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455343"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no centro de conformidade do & de segurança
 
-O rastreamento de mensagens no centro de conformidade do & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra quais ações foram tomadas na mensagem antes de atingir o status final.
+O rastreamento de mensagens no centro de conformidade do & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.
 
 O rastreamento de mensagens no centro de conformidade do & de segurança melhora o rastreamento de mensagens que estava disponível no centro de administração do Exchange (Eat). Você pode usar as informações do rastreamento de mensagens para responder com eficiência às perguntas do usuário sobre o que aconteceu com suas mensagens, solucionar problemas de fluxo de emails e validar as alterações na política.
 
@@ -102,7 +102,7 @@ Você pode deixar o valor padrão **todos** selecionado ou pode selecionar um do
 
 Esta é a ID de mensagem da Internet (também conhecida como ID do cliente) encontrada no campo de cabeçalho **Message-ID:** no cabeçalho da mensagem. Os usuários podem fornecer esse valor para investigar mensagens específicas.
 
-Esse valor é constante para o tempo de vida da mensagem. Para mensagens criadas no Office 365 ou Exchange, o valor está no formato `<GUID@ServerFQDN>`, incluindo os colchetes angulares (\< \>). Por exemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Outros sistemas de mensagens podem usar sintaxes ou valores diferentes. Esse valor deve ser exclusivo, mas nem todos os sistemas de email seguem estritamente esse requisito. Se o campo **ID da mensagem:** cabeçalho não existir ou estiver em branco para mensagens de entrada de fontes externas, um valor arbitrário é atribuído.
+Esse valor é constante durante o tempo de vida da mensagem. Para mensagens criadas no Office 365 ou Exchange, o valor está no formato `<GUID@ServerFQDN>`, incluindo os colchetes angulares (\< \>). Por exemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Outros sistemas de mensagens podem usar sintaxes ou valores diferentes. Esse valor deve ser exclusivo, mas nem todos os sistemas de email seguem estritamente esse requisito. Se o campo **ID da mensagem:** cabeçalho não existir ou estiver em branco para mensagens de entrada de fontes externas, um valor arbitrário é atribuído.
 
 Ao usar **ID de mensagem** para filtrar os resultados, certifique-se de incluir a cadeia de caracteres completa, incluindo colchetes angulares.
 
@@ -200,7 +200,7 @@ Os detalhes de rastreamento de mensagem contêm as seguintes informações adici
 
    - **Defer**: a entrega da mensagem foi adiada e pode ser tentada novamente mais tarde.
 
-   - **Resolvido**: a mensagem foi redirecionada para um novo endereço de destinatário com base em uma pesquisa do Active Directory. Quando isso acontece, o endereço do destinatário original é listado em uma linha separada no rastreamento de mensagens, juntamente com o status final da entrega da mensagem.
+   - **Resolvido**: a mensagem foi redirecionada para um novo endereço de destinatário com base em uma pesquisa do Active Directory. Quando isso acontece, o endereço original de destinatário é listado em uma linha separada no rastreamento de mensagem junto com o status final de entrega da mensagem.
 
    Observe que até mesmo uma mensagem sem eventos que é entregue com êxito gerará várias entradas de **evento** no rastreamento de mensagens.
 
@@ -210,9 +210,9 @@ Os detalhes de rastreamento de mensagem contêm as seguintes informações adici
 
    - **Tamanho da mensagem**
 
-   - **De IP**: o endereço IP do computador que enviou a mensagem. Para mensagens de saída enviadas do Exchange Online, esse valor está em branco.
+   - **De IP**: o endereço IP do computador que enviou a mensagem. Para as mensagens de saída enviadas a partir do Exchange Online, o valor é nulo.
 
-   - **Para IP**: o endereço IP ou endereços onde o serviço tentou entregar a mensagem. Se a mensagem tiver vários destinatários, eles serão exibidos. Para mensagens de entrada enviadas para o Exchange Online, esse valor está em branco.
+   - **Para IP**: o endereço IP ou endereços onde o serviço tentou entregar a mensagem. Se a mensagem tiver vários destinatários, eles serão exibidos. Para mensagens de entrada enviadas para o Exchange Online, o valor é nulo.
 
 ### <a name="enhanced-summary-reports"></a>Relatórios de resumo aprimorados
 
@@ -278,7 +278,7 @@ Relatórios estendidos disponíveis (concluídos) estão disponíveis na seção
 
 - **internal_message_id**: um identificador de mensagem atribuído pelo servidor do Exchange Online que está processando a mensagem no momento.
 
-- **recipient_address**: os endereços de email dos destinatários da mensagem. Vários endereços de email são separados pelo caractere ponto e vírgula (;).
+- **recipient_address**: os endereços de email dos destinatários da mensagem. Vários endereços de email são separados pelo caractere de ponto-e-vírgula (;).
 
 - **recipient_count**: o número total de destinatários na mensagem.
 
@@ -298,7 +298,7 @@ Relatórios estendidos disponíveis (concluídos) estão disponíveis na seção
 
    - **MAILBOXRULE**: contém o valor **internal_message_id** da mensagem de entrada que fez com que a regra de caixa de entrada gerasse a mensagem de saída.
 
-   Para outros tipos de eventos, o campo geralmente está em branco.
+   Para outros tipos de eventos, esse campo geralmente está em branco.
 
 - **return_path**: o endereço de email de retorno especificado pelo comando **mail from** que enviou a mensagem. Embora esse campo nunca fique vazio, ele pode ter o valor de endereço de remetente nulo `<>`representado como.
 
@@ -336,7 +336,7 @@ Um valor **custom_data** que começa com `S:SFA` é do agente Filtro de spam. Os
 |`DI=SJ`|A mensagem foi enviada para a pasta de lixo eletrônico do destinatário.|
 |`DI=SN`|A mensagem foi roteada através do pool de entrega de risco mais alto. Para obter mais informações, consulte [pool de entrega de alto risco para mensagens de saída](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|A mensagem foi roteada através do pool normal de entrega de saída.|
-|`SFS=[a]|SFS=[b]`|Isso indica que houve correspondência com regras de spam.|
+|' SFS = [a]|SFS = [b] '|Isso indica que houve correspondência com regras de spam.|
 |`IPV=CAL`|A mensagem foi permitida pelos filtros de spam porque o endereço IP estava especificado em uma Lista de Permissões de IP do filtro de conexão.|
 |`H=<EHLOstring>`|A cadeia de caracteres HELO ou EHLO do servidor de email de conexão.|
 |`PTR=<ReverseDNS>`|O registro PTR do endereço IP de envio, também conhecido como o endereço de DNS reverso.|
@@ -351,7 +351,7 @@ Um valor **custom_data** que começa com `S:AMA` é do agente de filtro de malwa
 
 |**Valor**|**Descrição**|
 |:-----|:-----|
-|`AMA=SUM|v=1|`ou`AMA=EV|v=1`|A mensagem foi determinada para conter malware. `SUM` indica que o malware pode ter sido detectado por qualquer número de mecanismos. `EV` indica que o malware foi detectado por um mecanismo específico. Quando o malware é detectado por um mecanismo, isso dispara as ações subsequentes.|
+|' AMA = SUM|v=1|` or `AMA=EV|v = 1 '|Foi determinado que a mensagem contém malware. `SUM`indica que o malware pode ter sido detectado por qualquer número de mecanismos. `EV`indica que o malware foi detectado por um mecanismo específico. Quando um mecanismo detecta malware, isto aciona as ações subseqüentes.|
 |`Action=r`|A mensagem foi substituída.|
 |`Action=p`|A mensagem foi ignorada.|
 |`Action=d`|A mensagem foi adiada.|
@@ -374,10 +374,10 @@ Um valor **custom_data** que começa com`S:TRA` é do agente de regra de transpo
 
 |**Valor**|**Descrição**|
 |:-----|:-----|
-|`ETR|ruleId=<guid>`|A identificação da regra encontrou uma correspondência.|
+|' ETR|RuleId =<guid>`|A identificação da regra encontrou uma correspondência.|
 |`St=<datetime>`|A data e a hora no UTC quando a correspondência da regra ocorreu.|
 |`Action=<ActionDefinition>`|A ação que foi aplicada. Para obter uma lista de ações disponíveis, consulte [Mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
-|`Mode=<Mode>`|O modo da regra. Os valores válidos são:<br/>• **Impor**: todas as ações da regra serão impostas. <br/>• **Teste com dicas de política:**: qualquer ação de dica de política será enviada, mas outras ações de imposição não serão aplicadas. <br/>• **Teste sem dicas de política**: as ações serão listadas em um arquivo de log, mas os remetentes não serão notificados de nenhuma maneira e as ações de imposição não serão aplicadas.|
+|`Mode=<Mode>`|O modo da regra. Os valores válidos são: <br/>• **Impor**: todas as ações da regra serão impostas. <br/>• **Teste com dicas de política:**: qualquer ação de dica de política será enviada, mas outras ações de imposição não serão aplicadas. <br/>• **Teste sem dicas de política**: as ações serão listadas em um arquivo de log, mas os remetentes não serão notificados de nenhuma maneira e as ações de imposição não serão aplicadas.|
 
 Um valor de exemplo **custom_data** para mensagens que correspondem às condições de uma regra de fluxo de emails tem a seguinte aparência:
 

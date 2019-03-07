@@ -14,16 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95a1bcbbc279ad4e476fc479e701b0f8a921c83b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295674"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454933"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciar os responsáveis em um caso de descoberta eletrônica avançada (visualização)
 
 A guia responsáveis contém uma lista classificável de todos os responsáveis da ocorrência. Após adicionar os responsáveis a um caso, os detalhes sobre cada um serão automaticamente coletados do Azure Active Directory.
+
+![Gerenciar responsáveis](../media/CustodianDetails.PNG)
 
 ## <a name="viewing-custodian-details"></a>Exibindo detalhes do responsáveis
 
@@ -37,7 +39,7 @@ A página de menu que contém os detalhes dos responsáveis é exibida após voc
   - **Departamento**: o nome do departamento no qual os responsáveis funciona.
   - **Gerente**: gerente do responsáveis. O gerente designado receberá qualquer comunicação de escalonamento para este responsáveis.
   
-- Informações sobre o local
+- Informações de local
 
   - **Cidade**: a cidade na qual o responsáveis está localizado.
   - **Estado**: o estado ou província no endereço do responsáveis.
@@ -56,7 +58,7 @@ A página de menu que contém os detalhes dos responsáveis é exibida após voc
   - **Hora da última atualização**da indexação: indica o dateStamp de quando o trabalho de indexação profunda foi disparado pela última vez.
   - **Fontes de dados**: mostra a contagem de caixas de correio, sites e equipes que foram selecionadas para os responsáveis.
 
-## <a name="updating-a-custodian"></a>Atualizando um responsáveis
+## <a name="editing-a-custodian"></a>Edição de um responsáveis
 
 À medida que seu caso avança, você pode descobrir que pode haver fontes de dados adicionais relevantes para um determinado & de seu caso. Em outros cenários, talvez você queira remover determinadas fontes de dados que foram revisadas e consideradas não relevantes.
 
@@ -67,6 +69,8 @@ Para atualizar um Objecte as fontes de dados selecionadas:
 2. No caso, clique na guia **responsáveis** .
   
 3. Selecione os responsáveis (s) na lista e clique em **Editar fontes**.
+
+    ![Editar fontes de dados](../media/EditCustodianDataSource.PNG)
   
 4. Atualize as seleções para os locais do Exchange e do OneDrive clicando em **escolher fontes de dados**.
   
@@ -89,7 +93,7 @@ Para acionar um processo de reindexação para lidar com itens parcialmente inde
 
 2. No caso, clique em para a **guia responsáveis**. 
 
-3. Selecione os responsáveis que precisam ser indexados novamente e clique em **Atualizar índice** na página do menu suspenso.
+3. Selecione os responsáveis que precisam ser indexados novamente e clique em ![Atualizar índice](../media/UpdateIndex.PNG) na página do menu de atalho.
 
 4. Verifique o status do índice de responsáveis clicando no link na coluna **status do trabalho** de indexação na guia **responsáveis** .  
 
@@ -109,7 +113,7 @@ Para liberar um responsáveis:
 
 1.  Vá para a guia **responsáveis** .
 
-2.  Selecione os responsáveis na lista e clique em **liberar responsáveis** na página do menu suspenso.
+2.  Selecione os responsáveis na lista e clique em ![Liberar responsáveis](../media/ReleaseCustodian.PNG) na página do menu de atalho.
 
     O status do responsáveis na guia **responsáveis** é definido como **liberado** e o **status de retenção** na página do submenu é alterado para inativo. **** 
 

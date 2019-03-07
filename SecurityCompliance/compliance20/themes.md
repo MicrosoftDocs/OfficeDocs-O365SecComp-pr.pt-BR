@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1983fbcc16469e5ed533fcb6bd5ee01ce7182163
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296274"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454673"
 ---
 # <a name="themes"></a>Temas
+Como uma pessoa escreve um documento? Geralmente, elas começam com uma ou mais ideias que desejam transmitir no documento e compor usando palavras que se alinham com as ideias. Quanto mais predominante uma ideia é, mais frequentes as palavras relacionadas a essa ideia tendem a ser. Isso informa como as pessoas consomem documentos também; o importante para a leitura de um documento é a idéia de que o documento está tentando transmitir e quais ideias aparecem onde e quais são as relações entre as idéias.
 
-Quando alguém redige um documento, ele não escolhe palavras aleatoriamente; Eles estão tentando transmitir algumas ideias ou conceitos, e as palavras são escolhidas de acordo. Os módulos de temas agrupam documentos que discutem assuntos semelhantes para que os Revisores possam ser mais eficientes em documentos.
+Isso pode ser estendido para a forma como uma pessoa deseja consumir um conjunto de documentos. Eles desejam ver quais ideias estão presentes nos conjuntos e quais documentos estão falando sobre essas ideias. Além disso, caso encontrem um documento de interesse específico, eles desejam poder ver documentos que discutem ideias semelhantes.
+
+O módulo temas tenta simular a razão dos seresns de documentos, analisando os "temas" que são discutidos em um conjunto de trabalho e atribuindo-os a documentos. Temas avançam um passo adiante e identificam por documento o "tema dominante"; ou seja, o tema que aparece mais.
 
 ## <a name="how-does-themes-work"></a>Como os temas funcionam?
 Temas analisa documentos com texto em um conjunto de trabalho para analisar temas comuns que aparecem em todos os documentos. Em seguida, ele atribui esses temas aos documentos em que eles aparecem. Ele também rotula cada um com palavras usadas nos documentos representativos do tema. Como um documento pode ser sobre mais de um assunto, em muitos casos, um documento tem mais de um temas atribuídos a ele. O tema que aparece mais proeminentemente em um documento é designado como seu tema dominante.

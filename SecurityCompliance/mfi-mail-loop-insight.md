@@ -1,22 +1,22 @@
 ---
-title: Insight de loop de email
+title: Informações de loop de email
 ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Os administradores podem aprender sobre as informações de loop de email no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 67d9fd7e7ffe54e78acf75cbafcbc21d7f733e1a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214814"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455233"
 ---
-# <a name="mail-loop-insight"></a>Insight de loop de email
+# <a name="mail-loop-insight"></a>Informações de loop de email
 
 Um loop de email é ruim porque ele desperdiça recursos do sistema, consome a cota de volume de emails da sua organização e envia notificações confusas de falha na entrega (também conhecidas como NDRs ou mensagens de devolução) para os remetentes originais. Esta informação relata quando um loop de email é encontrado na sua organização, os domínios de email envolvidos no loop e o número de mensagens do dia anterior que estavam no loop.
 

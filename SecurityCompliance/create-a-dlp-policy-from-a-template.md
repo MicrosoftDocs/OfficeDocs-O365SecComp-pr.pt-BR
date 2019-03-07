@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410946"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455253"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
 

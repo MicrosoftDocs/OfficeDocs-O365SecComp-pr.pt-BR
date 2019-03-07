@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295524"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455163"
 ---
 # <a name="view-custodian-audit-activity"></a>Exibir atividade de auditoria de responsáveis
 
@@ -38,17 +38,19 @@ Você precisa receber a função de logs de auditoria somente para exibição ou
    
    2. Navegue até a guia **responsáveis** e selecione um responsáveis.
    
-   3. Depois de selecionar um responsáveis, clique em **Exibir atividade de responsáveis** no painel de detalhes.
+   3. Depois de selecionar um responsáveis, clique em  ![Exibir atividade de responsáveis](../media/ViewCustodianActivity.PNG)  no painel de detalhes.
    
    4. Configure os seguintes critérios de pesquisa:
       
-      a. **Activities** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades que atendem aos outros critérios de pesquisa.
+      a. **Atividades** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades que atendem aos outros critérios de pesquisa.
+
+      ![Lista de atividades](../media/CustodianActivityAudit.PNG)
       
-      b. **data de início e data de término** -selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. Os últimos sete dias são selecionados por padrão. A data e a hora são apresentadas no formato UTC (tempo Universal Coordenado). O intervalo de datas máximo que você pode especificar é um ano.
+      b. **Data de início e data de término** -selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. Os últimos sete dias são selecionados por padrão. A data e a hora são apresentadas no formato UTC (tempo Universal Coordenado). O intervalo de datas máximo que você pode especificar é um ano.
       
-      c. **responsáveis** -clique nesta caixa e selecione um ou mais responsáveis para exibir os resultados da pesquisa. Os registros de auditoria da atividade selecionada executada pelos usuários selecionados nesta caixa são exibidos na lista de resultados.
-    
-    1. Clique em **Pesquisar** para executar a pesquisa usando seus critérios de pesquisa. Os resultados da pesquisa são carregados e após alguns momentos em que são exibidos em resultados na página de pesquisa de atividades do responsáveis. 
+      c. **Responsáveis** – clique nesta caixa e selecione um ou mais responsáveis para exibir os resultados da pesquisa. Os registros de auditoria da atividade selecionada executada pelos usuários selecionados nesta caixa são exibidos na lista de resultados.
+      
+   5. Clique em   ![Botão Pesquisar](../media/SearchButton.PNG)  para executar a pesquisa usando seus critérios de pesquisa. Os resultados da pesquisa são carregados e após alguns momentos em que são exibidos em resultados na página de pesquisa de atividades do responsáveis. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Etapa 2: exibir os resultados da pesquisa de log de auditoria
 
