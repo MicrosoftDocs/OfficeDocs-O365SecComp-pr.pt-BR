@@ -14,13 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 972c6c6e8cd6ebe3a4f078b02f238642509b752a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 904bc5f8a6d6cef937d55336e8f383957713769a
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295014"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475691"
 ---
 # <a name="download-export-jobs"></a>Baixar trabalhos de exportação
 
-Conteúdo em breve.
+Todos os dados exportados são adicionados a um blob do Microsoft Azure. Isso fornece várias opções para lidar com a downstream dos dados. Há várias maneiras de acessar um blob do Azure. Um método é usar o Gerenciador de armazenamento do Azure. Este método oferece suporte a conexão simples, navegação e download. Para obter mais informações, visite<https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer>
+
+1.  Para baixar o conteúdo após a conclusão de um trabalho de exportação, vá para a guia exportar e selecione um trabalho de exportação.
+
+2.  Copie o texto na seção "locais" do submenu.
+
+![](../media/eDiscoExportJob.png)
+
+3.  Abra o Azure Storage Explorer e clique no botão "conectar"
+
+![](../media/AzureStorageConnect.png)
+
+4.  Selecione "usar um URI de assinatura de acesso compartilhado" e clique em avançar
+
+![](../media/AzureStorageConnect2.png)
+
+5.  Cole o texto do local na caixa de texto URI e clique em avançar
+
+![](../media/AzureStorageConnect3.png)
+
+6.  Clique em conectar
+
+![](../media/AzureStorageConnect4.png)
+
+Isso adicionará a exportação como um objeto nos contêineres de contas de armazenamento/serviços anexados por SAS/BLOB. Você poderá explorar a exportação e baixar todos ou partes da exportação.
+
+![](../media/AzureStorageConnect5.png)

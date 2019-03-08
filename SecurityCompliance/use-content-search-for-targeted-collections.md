@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para realizar coleções direcionadas. Uma coleção direcionada significa que você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Use o script neste artigo para obter a ID da pasta ou o caminho das pastas de caixa de correio ou de site específicas que você deseja pesquisar.
-ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 1a2a104405cdbbbbbeba0bb62e302ae59638be07
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354683"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475711"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para coleções direcionadas
 
@@ -39,7 +39,7 @@ O recurso de pesquisa de conteúdo no centro de &amp; conformidade de segurança
     
 - O script inclui o tratamento de erros mínimo. O objetivo principal do script é exibir rapidamente uma lista de IDs de pasta de caixa de correio ou caminhos de site que podem ser usados na sintaxe de consulta de pesquisa de uma pesquisa de conteúdo para executar uma coleção direcionada.
     
-- Não há suporte para o script de exemplo fornecido neste tópico em qualquer serviço ou programa de suporte padrão da Microsoft. O script de exemplo é fornecido como está sem garantia de qualquer tipo. A Microsoft se isenta de todas as garantias implícitas, incluindo, sem limitação, quaisquer garantias implícitas de comercialização ou ADEQÜAÇÃO para um propósito específico. Todo o risco resultante do uso ou do desempenho do script de exemplo e da documentação permanece com você. Em hipótese alguma a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou entrega dos scripts serão responsáveis por qualquer dano (incluindo, sem limitação, danos à perda de lucros de negócios, interrupção de negócios, perda de informações comerciais ou outras perdas de pecuniary) resultantes do uso ou da incapacidade de usar os scripts de exemplo ou a documentação, mesmo que a Microsoft tenha sido avisada da possibilidade de tais danos.
+- Não há suporte para o script de exemplo fornecido neste tópico em qualquer serviço ou programa de suporte padrão da Microsoft. O script de exemplo é fornecido como está sem garantia de qualquer tipo. A Microsoft também se isenta de todas as garantias implícitas, incluindo sem limitações quaisquer garantias aplicáveis de padrões de comercialização ou de adequação a uma finalidade específica. Todo o risco resultante do uso ou do desempenho do script de exemplo e da documentação permanece com você. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Etapa 1: executar o script para obter uma lista de pastas para uma caixa de correio ou site
 
@@ -188,6 +188,9 @@ Para exibir uma lista de pastas de caixa de correio ou nomes de site documentlin
 ### <a name="script-output-for-mailbox-folders"></a>Saída de script para pastas de caixa de correio
 
 Se você estiver obtendo IDs de pasta de caixa de correio, o script se conecta ao Exchange Online usando o PowerShell remoto, executa o cmdlet **Get-MailboxFolderStatisics** e exibe a lista de pastas da caixa de correio especificada. Para cada pasta na caixa de correio, o script exibe o nome da pasta na coluna **FolderPath** e a ID da pasta na coluna **FolderQuery** . Além disso, o script adiciona o prefixo **** de FolderId (que é o nome da propriedade da caixa de correio) à ID da pasta. Como a **** Propriedade FolderId é uma propriedade pesquisável, você usará `folderid:<folderid>` uma consulta de pesquisa na etapa 2 para pesquisar essa pasta. 
+
+> [!IMPORTANT]
+> O script neste artigo inclui lógica de codificação que converte os valores de ID de pasta de 64 caracteres retornados pelo **Get-MailboxFolderStatistics** para o mesmo formato de caractere 48 que é indexado para pesquisa. Se você apenas executar o cmdlet **Get-MailboxFolderStatistics** no PowerShell para obter uma ID de pasta (em vez de executar o script neste artigo), uma consulta de pesquisa que usa esse valor de ID de pasta falhará. Você precisa executar o script para obter as IDs de pasta formatadas corretamente que podem ser usadas em uma pesquisa de conteúdo.
   
 Veja um exemplo de saída retornada pelo script para pastas de caixa de correio.
   
