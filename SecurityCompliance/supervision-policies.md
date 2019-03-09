@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Noções básicas sobre políticas de supervisão no Office 365
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465468"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492850"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -57,7 +57,8 @@ Você criará políticas de supervisão no centro de conformidade do & de segura
 Antes de começar a usar a supervisão, você precisará determinar quem terá suas comunicações revisadas. Na política, você usará endereços de email do usuário para identificar pessoas ou grupos de pessoas a supervisionar. Alguns exemplos desses grupos são grupos do Office 365, listas de distribuição baseados no Exchange e canais do Microsoft Teams. Você também pode excluir usuários ou grupos específicos da supervisão que estão incluídos em um grupo supervisionado ou uma lista de grupos.
 
 > [!IMPORTANT]
-> Todos os usuários monitorados por políticas de supervisão devem ter uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou serem incluídos em uma assinatura do Office 365 Enterprise e5. Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5.
+Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -153,9 +154,9 @@ A **Home** Page do painel tem várias seções para ajudá-lo a tomar medidas ra
 - Ver uma lista dos revisores e das equipes de revisão da política selecionada
 - Veja quais plataformas de comunicação têm conteúdo sob supervisão para a política.
 
-#### <a name="supervise-tab"></a>Guia supervisionar
+#### <a name="review-tab"></a>Guia revisão
 
-A **** guia supervisionar é onde os revisores podem executar ações e resolver itens identificados pela política selecionada. Aqui você pode:
+A guia **revisão** é onde os revisores podem executar a ação e resolver itens identificados pela política selecionada. Aqui você pode:
 
 - Filtrar por itens pendentes, compatíveis, não compatíveis e questionáveis
 - Marcar um item único como compatível, não compatível ou questionável. Você também pode gravar um comentário com o item para ajudar a esclarecer a ação de marcação executada.

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre como configurar o gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221081"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492820"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>ConFigurando o gerenciamento de acesso privilegiado no Office 365
 
@@ -120,7 +120,7 @@ Você pode criar e configurar até 30 políticas de acesso privilegiado para sua
     
     **Tipo de política**: tarefa, função ou grupo de função
 
-    **Escopo da política**: Exchange ou Office 365
+    **Escopo da política**: Exchange
 
     **Nome da política**: selecione nas políticas disponíveis
 

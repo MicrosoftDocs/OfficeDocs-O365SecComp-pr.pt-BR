@@ -1,24 +1,9 @@
 ---
-title: Habilitar ou desabilitar dicas de segurança no Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/05/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
-description: Informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email.
-ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215551"
+title: "habilitar ou desabilitar dicas de segurança no Office 365" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 12/05/2018 MS. Audience: admin MS. Topic: artigo MS. Service: o365-Administration localization_priority: normal Search. appverid: 
+- MET150 MS. AssetID: f09668bd-fe1a-4c01-89e3-e88c370e66c7 MS. Collection:
+    - M365-segurança-Descrição de conformidade: "informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email."
 ---
+
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar ou desabilitar dicas de segurança no Office 365
 
 O proteção do Exchange Online (EOP) adiciona, ou carimbos, uma dica de segurança a mensagens de email que ele fornece. Essas dicas de segurança fornecem aos destinatários uma forma rápida e Visual de determinar se uma mensagem é de um remetente seguro e verificado, se a mensagem tiver sido marcada como spam pelo Office 365, se a mensagem contiver algo suspeito, como um golpe de phishing, ou se imagens externas tiverem foi bloqueado. Os administradores do Office 365 e do EOP-autônomo podem editar uma configuração de política de spam para habilitar ou desabilitar que as dicas de segurança sejam exibidas no email no Outlook e em outros clientes de email de área de trabalho. 
@@ -67,7 +52,7 @@ Neste tópico:
 
 Os administradores podem usar o PowerShell do Exchange Online para habilitar ou desabilitar dicas de segurança. Use o cmdlet Set-HostedContentFilterPolicy para habilitar ou desabilitar dicas de segurança em uma política de filtro de spam.
   
-1. Conecte-se ao PowerShell do Exchange Online. Para saber mais, confira [conectar-se ao PowerShell do Exchange Online](http://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Conectar-se ao Exchange Online PowerShell. Para saber mais, confira [conectar-se ao PowerShell do Exchange Online](http://go.microsoft.com/fwlink/p/?LinkId=396554).
     
 2. Execute o cmdlet Set-HostedContentFilterPolicy para habilitar ou desabilitar dicas de segurança:
     

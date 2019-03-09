@@ -12,13 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
-description: página de aterrissagem para planejar a segurança e a conformidade
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Página de aterrissagem para planejar a segurança e a conformidade
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218461"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512646"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planejar a conformidade &amp; de segurança no Office 365
 
@@ -34,11 +35,11 @@ Orientar-se para os recursos de proteção de informações no pôster de prote�
 
 Depois de configurar sua assinatura do Office 365, anote sua pontuação inicial. A pontuação segura fornece sugestões de configuração do Office 365 que você pode tomar para aumentar sua pontuação. O objetivo é estar ciente das oportunidades que você pode tomar para proteger seu ambiente, o que não afetará negativamente a produtividade dos seus usuários.
   
-- [Apresentando a Classificação de Segurança do Office 365](office-365-secure-score.md)
+- [Introdução à pontuação segura do Office 365](office-365-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Etapa 3: planejar a proteção de acesso para identidade e dispositivos
 
-Proteger o acesso aos seus dados e serviço do Office 365 é essencial para você se proteger contra ataques cibernéticos e ter proteção contra perda de dados.
+Proteger o acesso aos dados e serviços do Office 365 é crucial para se defender contra ataques de cyberismo e proteger contra a perda de dados.
   
 - [Proteger o acesso a dados e serviços no Office 365](protect-access-to-data-and-services.md)
     
@@ -58,7 +59,7 @@ O centro &amp; de conformidade de segurança oferece uma visão única dos contr
   
 - [Vá para o centro de conformidade &amp; de segurança do Office 365](go-to-the-securitycompliance-center.md)
     
-- [Permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
 - [Conceder aos usuários acesso ao centro de conformidade &amp; de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md)
     
@@ -68,15 +69,15 @@ Use estas configurações recomendadas como ponto de partida para cenários de s
   
 - [Configurações e políticas de email seguro](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Contoso no Microsoft Cloud](http://aka.ms/cloudarchcontoso)
+- [Contoso na nuvem da Microsoft](http://aka.ms/cloudarchcontoso)
     
 ## <a name="office-365-admin-centers-and-dashboards"></a>Centros e painéis de administração do Office 365
 
 Defina suas configurações de segurança e conformidade nesses centros e painéis de administração para proteger seu ambiente do Office 365
   
-|**Inscrição**|**URL de gerenciamento**|**Painéis e centros de administração**|
+|**Assinatura**|**URL de gerenciamento**|**Painéis e centros de administração**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Centro de administração do Office 365  <br/>  Centro &amp; de conformidade de segurança  <br/>  Centro de administração do Exchange  <br/>  Centro de administração do SharePoint e centro de administração do OneDrive for Business  <br/> |
+|Office 365  <br/> |`https://portal.office.com`  <br/> | Centro de administração do Office 365  <br/>  Security &amp; Compliance Center  <br/>  Centro de administração do Exchange  <br/>  Centro de administração do SharePoint e centro de administração do OneDrive for Business  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gerenciamento de aplicativos móveis da Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Segurança no Aplicativo na Nuvem  <br/> |
    
