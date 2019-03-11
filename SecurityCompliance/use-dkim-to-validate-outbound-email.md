@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: ba3fc67d906c2d87a79d0f006cdc98aab5f401fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275891"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524075"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -82,7 +82,7 @@ Para configurar o DKIM, execute estas etapas:
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>Publicar dois registros CNAME para o seu domínio personalizado no DNS
 <a name="Publish2CNAME"> </a>
 
-Para cada domínio para o qual você deseja adicionar uma assinatura de DKIM no DNS, é preciso publicar dois registros CNAME. Um registro CNAME é usado pelo DNS para especificar que o nome canônico de um domínio é um alias para outro nome de domínio. 
+Para cada domínio para o qual você deseja adicionar uma assinatura de DKIM no DNS, é preciso publicar dois registros CNAME. Um registro CNAME é usado pelo DNS para especificar que o nome canônico de um domínio é um alias para outro nome de domínio. Os registros CNAME devem ser criados nos servidores DNS publicamente disponíveis para seus domínios personalizados. Os registros CNAME no seu DNS apontarão para já ter criado os registros que existem no DNS nos servidores DNS da Microsoft para o Office 365.
   
  O Office 365 executa a rotação de chaves automática usando os dois registros estabelecidos. Se você provisionou domínios personalizados em adição ao domínio inicial no Office 365, deve publicar dois registros CNAME para cada domínio adicional. Portanto, se você tem dois domínios, deve publicar dois registros CNAME adicionais e assim por diante.
   
@@ -112,7 +112,7 @@ Em que:
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ é o domínio usado quando você se inscreveu no Office 365. Os domínios iniciais sempre terminam no onmicrosoft.com. Para obter informações sobre como determinar o domínio inicial, confira [perguntas frequentes sobre domínios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ é o domínio que você usou quando se inscreveu no Office 365. Os domínios iniciais sempre terminam no onmicrosoft.com. Para saber mais sobre como determinar seu domínio inicial, confira [Perguntas frequentes sobre domínios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Por exemplo, se você tiver o domínio inicial cohovineyardandwinery.onmicrosoft.com e dois domínios personalizados, cohovineyard.com e cohowinery.com, precisará configurar dois registros CNAME para cada domínio adicional, totalizando quatro registros CNAME.
   
@@ -226,7 +226,7 @@ Desabilitar a política de assinatura não desabilita completamente o DKIM. Apó
     Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
     ```
 
-    Em que _number_ é o índice da política. Por exemplo: 
+    Onde _número_ é o índice da política. Por exemplo: 
     
     ```
     Set-DkimSigningConfig -identity $p[0].identity -enabled $false
@@ -283,6 +283,6 @@ Neste exemplo, para obter este resultado:
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Próximas etapas: depois de configurar o DKIM para o Office 365
 <a name="DKIMNextSteps"> </a>
 
-Embora o DKIM seja projetado para ajudar a evitar a falsificação, o DKIM funciona melhor com o SPF e o DMARC. Depois de configurar o DKIM, se você ainda não tiver configurado o SPF, deverá fazê-lo. Para obter uma breve introdução ao SPF e para configurá-lo rapidamente, consulte [set up SPF in Office 365 para ajudar a evitar a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obter uma compreensão mais detalhada sobre como o Office 365 usa o SPF ou para solução de problemas ou implantações não padrão, como implantações híbridas, comece a [usar a estrutura de política de remetente (SPF) para evitar falsificações](how-office-365-uses-spf-to-prevent-spoofing.md). Em seguida, confira [usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md). [Cabeçalhos de mensagens antispam](anti-spam-message-headers.md) inclui a sintaxe e os campos de cabeçalho usados pelo Office 365 para verificações de DKIM. 
+Embora o DKIM tenha sido projetado para ajudar a evitar a falsificação, ele funciona melhor com SPF e DMARC. Depois que você configurar o DKIM, se já não tiver configurado o SPF, deve fazê-lo. Para obter uma introdução rápida sobre SPF e configurá-lo rapidamente, confira [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para compreender melhor como o Office 365 usa SPF, para solucionar problemas, ou para saber mais sobre implantações incomuns, como implantações híbridas, comece com [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). A seguir, confira [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md). [Cabeçalhos de mensagem antispam](anti-spam-message-headers.md), que inclui a sintaxe e os campos de cabeçalho usados pelo Office 365 para verificações de DKIM. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Limpeza Automática Zero Hora – proteção contra spam e malware
+title: Limpeza automática de zero horas-proteção contra spam e malware
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,14 +17,14 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 84d9c1dc12c3caf0630d25a3980cdaea1830a4c0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295634"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524015"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza Automática Zero Hora – proteção contra spam e malware
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática de zero horas-proteção contra spam e malware
 
 ## <a name="overview"></a>Visão geral
 
@@ -44,7 +44,7 @@ O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo re
 
 - Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários. 
 
-- Para email identificado como spam, o ZAP move mensagens para a pasta lixo eletrônico dos usuários, independentemente se o email foi lido.
+- Para email identificado como Phish, o ZAP move mensagens para a pasta lixo eletrônico dos usuários, independentemente se o email foi lido.
 
 - Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido. 
   

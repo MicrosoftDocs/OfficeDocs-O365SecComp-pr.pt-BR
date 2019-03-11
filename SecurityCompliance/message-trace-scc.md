@@ -9,14 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade do & de segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455343"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524085"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no centro de conformidade do & de segurança
+
+## <a name="overview"></a>Visão geral
 
 O rastreamento de mensagens no centro de conformidade do & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.
 
@@ -54,7 +56,8 @@ Os valores padrão são **todos os remetentes** e **todos os destinatários**, m
 
 - **Para estas pessoas**: clique neste campo para selecionar um ou mais destinatários em sua organização.
 
-Você também pode digitar os endereços de email de remetentes e destinatários externos. Há suporte para curingas`*@contoso.com` ( `scot?@contoso.com`ou), mas você não pode usar várias entradas curinga no mesmo campo ao mesmo tempo.
+> [!NOTE]Você também pode digitar os endereços de email de remetentes e destinatários externos. Há suporte para curingas`*@contoso.com` ( `scot?@contoso.com`ou), mas você não pode usar várias entradas curinga no mesmo campo ao mesmo tempo.
+> [!NOTE]Você pode colar vários remetentes ou listas de destinatários separados por ponto`;`-e-vírgula (). Espaços (`\s`), retorno de carro`\r`() ou símbolos de`\n`linhas Next () são permitidos.
 
 ### <a name="time-range"></a>Intervalo de tempo
 
