@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os relatórios de DLP no Office 365, você pode exibir rapidamente o número de correspondências de política de DLP, substituições ou falsos positivos; Veja se eles estão em tendência de cima ou para baixo ao longo do tempo; filtrar o relatório de formas diferentes; e exiba detalhes adicionais selecionando um ponto em uma linha no gráfico.
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454843"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510218"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Exibir os relatórios de prevenção contra perda de dados
 
@@ -71,6 +71,16 @@ Os relatórios podem mostrar ideias e recomendações onde você pode clicar no 
   
 ![Clicando em um ícone do insights para ver detalhes e ações a serem tomadas](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>Permissões para relatórios de DLP
+
+Para exibir relatórios de DLP no centro de conformidade do & de segurança, você precisa ter a atribuição de:
+
+- Função de **leitor de segurança** no centro de administração do Exchange. Por padrão, essa função é atribuída aos grupos de função de gerenciamento de organização e leitor de segurança no centro de administração do Exchange.
+
+- **Somente exibição** a função de gerenciamento de conformidade DLP no centro de conformidade do _AMP_ de segurança. Por padrão, essa função é atribuída aos grupos de função Administrador de conformidade, gerenciamento de organização, administrador de segurança e leitor de segurança no centro de conformidade do & de segurança.
+
+- Função de **destinatários somente para exibição** no centro de administração do Exchange. Por padrão, essa função é atribuída ao gerenciamento de conformidade, ao gerenciamento da organização e aos grupos de função de gerenciamento da organização somente para exibição no centro de administração do Exchange.
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Localizar os cmdlets dos relatórios de DLP
 
 Para usar a maioria dos cmdlets do centro de &amp; conformidade de segurança, você precisa:

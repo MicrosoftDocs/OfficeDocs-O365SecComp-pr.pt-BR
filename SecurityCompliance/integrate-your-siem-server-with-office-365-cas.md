@@ -1,5 +1,5 @@
 ---
-title: Integrar seu servidor SIEM ao Office 365 Cloud App Security
+title: Integrar seu servidor SIEM com o Office 365 Cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Você pode integrar seu servidor SIEM com o Office 365 Cloud app Security. Leia este artigo para obter uma visão geral de como ele funciona e como configurá-lo.
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215869"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548581"
 ---
-# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar seu servidor SIEM ao Office 365 Cloud App Security
+# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar seu servidor SIEM com o Office 365 Cloud app Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
@@ -27,7 +27,7 @@ ms.locfileid: "30215869"
    
 ## <a name="overview-and-prerequisites"></a>Visão geral e pré-requisitos
 
-Você pode integrar o [Office 365 Cloud app Security](get-ready-for-office-365-cas.md) ao seu servidor de gerenciamento de eventos e informações de segurança (Siem) para habilitar o monitoramento centralizado de alertas. Isso é especialmente vantajoso para organizações que usam serviços de nuvem e aplicativos de servidor local. A integração com um servidor SIEM permite que sua equipe de segurança melhor proteja seus aplicativos do Office 365 enquanto mantém seu fluxo de trabalho de segurança usual, automatizando determinados procedimentos de segurança e correlacionando entre eventos baseados em nuvem e locais.  
+Você pode integrar o [Office 365 Cloud app Security](get-ready-for-office-365-cas.md) ao seu servidor de gerenciamento de eventos e informações de segurança (Siem) para habilitar o monitoramento centralizado de alertas. Isso é especialmente vantajoso para organizações que usam serviços de nuvem e aplicativos de servidor local. Você pode integrar seu servidor SIEM para receber alertas e atividades do Office 365 Cloud app Security no seu servidor SIEM. A integração com um servidor SIEM permite que sua equipe de segurança melhor proteja seus aplicativos do Office 365 enquanto mantém seu fluxo de trabalho de segurança usual, automatizando determinados procedimentos de segurança e correlacionando entre eventos baseados em nuvem e locais.  
   
 Quando você integra pela primeira vez o seu servidor SIEM com o Office 365 Cloud app Security, os alertas dos últimos dois dias são encaminhados para o servidor SIEM, bem como todos os alertas de depois (com base nos filtros selecionados). Além disso, se você desabilitar esse recurso por um período estendido, ao habilitá-lo novamente, ele encaminhará os últimos dois dias de alertas e todos os alertas de então em diante.
 
@@ -82,7 +82,8 @@ O Office 365 Cloud app Security atualmente oferece suporte aos seguintes servido
   
 7. Na etapa **tipos de dados** , execute um dos seguintes procedimentos e clique em **Avançar**:
     - Manter a configuração padrão de **todos os alertas**<br/>OU
-    - Clique em **todos os alertas**e, em seguida, escolha **filtros específicos**. Defina filtros para selecionar os tipos de alertas que você deseja enviar ao seu servidor SIEM.<br/>![Etapa tipos de dados do assistente](media/ArcSightS1ExportOptions.png)
+    - Clique em **todos os alertas**e, em seguida, escolha **filtros específicos**. Defina filtros para selecionar os tipos de alertas que você deseja enviar ao seu servidor SIEM.
+<br/>![Etapa tipos de dados do assistente](media/ArcSightS1ExportOptions.png)
   
 8. Na tela Parabéns, copie o token e salve-o para mais tarde.<br/>![Tela criada pelo agente SIEM](media/SIEMAgentFinished.png) 
 
@@ -155,10 +156,10 @@ E aqui está outro exemplo, desta vez no formato CEF:
 
 |Nome do campo CEF  | Descrição  |
 |---------|---------|
-|inicialização     | carimbo de hora do alerta        |
-|ponto     | carimbo de hora do alerta        |
+|iniciar     | carimbo de hora do alerta        |
+|end     | carimbo de hora do alerta        |
 |RT     | carimbo de hora do alerta        |
-|msg     | Descrição de alerta conforme mostrado no portal do Office 365 Cloud app Security        |
+|MSG     | Descrição de alerta conforme mostrado no portal do Office 365 Cloud app Security        |
 |suser     | alerta de usuário de requerente        |
 |destinationServiceName     | alerta o aplicativo de origem, como o Office 365, SharePoint ou OneDrive        |
 |csLabel     | Varia (os rótulos têm significados diferentes). Normalmente, os rótulos são auto-explicativos, como targetObjects.        |
@@ -184,7 +185,7 @@ Se você perder o token, poderá regenerar um.
 
 2. Localize a linha do agente SIEM. 
 
-3. Clique nas reticências e, em seguida, escolha **Editar**. (Se você editar o agente SIEM, não será necessário executar novamente o arquivo. jar; ele é atualizado automaticamente.)<br/>![Para editar seu agente SIEM, escolha as reticências e, em seguida, escolha Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Clique nas reticências e, em seguida, escolha **Editar**. (Se você editar o agente SIEM, não será necessário executar novamente o arquivo. jar; ele é atualizado automaticamente.) <br/>![Para editar seu agente SIEM, escolha as reticências e, em seguida, escolha Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Excluir um agente SIEM
 
@@ -197,7 +198,7 @@ Se você perder o token, poderá regenerar um.
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Atividades de utilização após a implantação do Office 365 Cloud App Security](utilization-activities-for-ocas.md)
+- [Atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md)
     
 - [ReVisar e executar ação em alertas](review-office-365-cas-alerts.md)
     

@@ -6,16 +6,16 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Siga estas etapas para configurar os aplicativos do Azure AD Office 365 para serem controlados pelo controle de aplicativo de acesso condicional do Office 365 Cloud app Security.
-ms.openlocfilehash: cfb3d885fdfaf0e4698b1f8f9a0e13baacf43f66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221051"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312068"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Implantar o controle de aplicativo do Access condicional para aplicativos do Office 365
 
@@ -96,4 +96,4 @@ para configurar uma política avançada, crie uma política de [acesso](ocas-ac
 
 - [Saiba mais sobre as políticas de acesso no Office 365 Cloud app Security](ocas-access-policies.md) 
 
-- [Agrupar seus endereços IP para simplificar o gerenciamento do Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
+- [Agrupar seus endereços IP para simplificar o gerenciamento no Office 365 Cloud app Security](group-your-ip-addresses-in-ocas.md)

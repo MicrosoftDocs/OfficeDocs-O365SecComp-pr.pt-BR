@@ -6,16 +6,16 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: As políticas de acesso do Office 365 Cloud app Security permitem o monitoramento em tempo real e o controle sobre o acesso a aplicativos em nuvem com base no usuário, local, dispositivo e aplicativo. Você pode criar políticas de acesso para qualquer dispositivo, incluindo dispositivos que não são associados ao domínio, e não gerenciados pelo Windows Intune, distribuindo certificados de cliente para dispositivos gerenciados ou usando certificados existentes, como certificados MDM de terceiros. Por exemplo, você pode implantar certificados de cliente em dispositivos gerenciados e, em seguida, bloquear o acesso de dispositivos sem um certificado.
-ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219771"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312078"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Políticas de acesso no Office 365 Cloud app Security
 
@@ -73,4 +73,4 @@ Para criar uma nova política de acesso, siga este procedimento:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Agrupar seus endereços IP para simplificar o gerenciamento do Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
+- [Agrupar seus endereços IP para simplificar o gerenciamento no Office 365 Cloud app Security](group-your-ip-addresses-in-ocas.md)

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Criar políticas de alerta no centro de conformidade &amp; de segurança do Office 365 para monitorar possíveis ameaças, perda de dados e problemas de permissões. Em seguida, você pode exibir e gerenciar os alertas gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 6418315914a0a80421db382ae8e55ccf3fc310a2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 639cd893b39505b002cbe8a72cde6f3c9f9643fa
+ms.sourcegitcommit: 8b36bf7949f1769f1418d740293637d60e403f87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296554"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30339449"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Políticas de alerta no centro de conformidade &amp; de segurança do Office 365
 
@@ -75,13 +75,13 @@ Uma política de alerta consiste nas configurações e condições a seguir.
     
   - Prevenção contra perda de dados
 
-  - Fluxo de emails
+  - Fluxo de mensagens
     
   - Permissões
     
   - Gerenciamento de ameaças
     
-  - Usuários
+  - Outros
     
   Quando ocorre uma atividade que corresponde às condições da política de alerta, o alerta gerado é marcado com a categoria definida nesta configuração. Isso permite que você rastreie e gerencie alertas que tenham a mesma configuração de categoria na página **exibir alertas** no centro de conformidade do _AMP_ de segurança, pois é possível classificar e filtrar alertas com base na categoria. 
     
@@ -100,19 +100,20 @@ A tabela a seguir lista e descreve as políticas de alerta padrão disponíveis 
 
 A tabela também indica os planos do governo dos EUA do Office 365 Enterprise e do Office 365 necessários para cada um. Observe que algumas políticas de alerta padrão estão disponíveis se sua organização tem a assinatura complementar apropriada, além de uma assinatura E1/G1 ou E3/G3. 
   
-|**Política de alerta padrão**|**Descrição**|**Categoria**|**Assinatura do Office 365 Enterprise**|
+|**Política de alerta padrão**|**Descrição**|**Category**|**Assinatura do Office 365 Enterprise**|
 |:-----|:-----|:-----|:-----|
-|**Criação de regra de encaminhamento/redirecionamento** <br/> |Gera um alerta quando alguém em sua organização cria uma regra de caixa de entrada para a caixa de correio que encaminha ou redireciona mensagens para outra conta de email. Esta política controla apenas as regras de caixa de entrada que são criadas usando o Outlook na Web (anteriormente conhecido como Outlook Web App) ou o PowerShell do Exchange Online. Essa política tem uma configuração de **baixa** gravidade. Para obter mais informações sobre como usar regras de caixa de entrada para encaminhar e redirecionar emails no Outlook na Web, confira [usar regras no Outlook na Web para encaminhar automaticamente as mensagens para outra conta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |Gerenciamento de ameaças <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
-|**pesquisa de descoberta eletrônica iniciada ou exportada** <br/> |Gera um alerta quando alguém usa a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança. Um alerta é disparado quando as seguintes atividades de pesquisa de conteúdo são executadas:<br/><br/>• Uma pesquisa de conteúdo foi iniciada<br/>• Os resultados de uma pesquisa de conteúdo são exportados<br/>• Um relatório de pesquisa de conteúdo é exportado<br/><br/>Os alertas também são acionada quando as atividades de pesquisa de conteúdo anteriores são realizadas em associação a uma ocorrência de descoberta eletrônica. Essa política tem uma configuração de severidade **média** . Para obter mais informações sobre as atividades de pesquisa de conteúdo, consulte [Search for eDiscovery Activities no log de auditoria do Office 365](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |Gerenciamento de ameaças<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
-|**Elevação do privilégio de administrador do Exchange** <br/> |Gera um alerta quando alguém recebe permissões administrativas na sua organização do Exchange Online; por exemplo, se um usuário é adicionado ao grupo de função gerenciamento da organização no Exchange Online. Essa política tem uma configuração de **baixa** gravidade.<br/> |Permissões <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
-|**As mensagens foram atrasadas** <br/> |Gera um alerta quando o Office 365 não consegue enviar mensagens de email para sua organização local ou para servidores parceiros usando um conector. Quando isso acontecer, a mensagem será enfileirada no Office 365. Este alerta é disparado quando há 2.000 mensagens ou mais que foram enfileiradas por mais de uma hora. Essa política tem uma configuração de **alta** gravidade.<br/> |Fluxo de emails<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
-|**Campanha de malware detectada após a entrega** <br/> |Gera um alerta quando um número excepcionalmente grande de mensagens contendo malware é entregue às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas de correio do Exchange Online. Essa política tem uma configuração de **alta** gravidade.<br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
-|**Campanha de malware detectada e bloqueada** <br/> |Gera um alerta quando alguém tentava enviar um número excepcionalmente grande de mensagens de email contendo um determinado tipo de malware para os usuários em sua organização. Se esse evento ocorrer, as mensagens infectadas serão bloqueadas pelo Office 365 e não serão entregues às caixas de correio. Essa política tem uma configuração de **baixa** gravidade.<br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
-|**Campanha de malware detectada no SharePoint e no OneDrive** <br/> |Gera um alerta quando um volume excepcionalmente alto de malware ou vírus é detectado em arquivos localizados em sites do SharePoint ou em contas do OneDrive em sua organização. Essa política tem uma configuração de **alta** gravidade.<br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
-|**Atividade de arquivo de usuário externo incomum** <br/> |Gera um alerta quando um grande número de atividades geralmente é executado em arquivos no SharePoint ou no OneDrive por usuários fora da sua organização. Isso inclui atividades como acessar arquivos, baixar arquivos e excluir arquivos. Essa política tem uma configuração de **alta** gravidade.<br/> |Governança de dados<br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
-|**Volume incomum de compartilhamento de arquivos externos** <br/> |Gera um alerta quando um número muito grande de arquivos no SharePoint ou no OneDrive são compartilhados com usuários fora da sua organização. Essa política tem uma configuração de severidade **média** .<br/> |Governança de dados<br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
-|**Volume incomum de exclusão de arquivo** <br/> |Gera um alerta quando um número excepcionalmente grande de arquivos é excluído no SharePoint ou no OneDrive dentro de um curto período de tempo. Essa política tem uma configuração de severidade **média** .<br/> |Governança de dados <br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
-|**Aumento incomum no email relatado como phishing** <br/> |Gera um alerta quando há um aumento significativo no número de pessoas em sua organização usando o suplemento de mensagem de relatório no Outlook para relatar mensagens como email de phishing. Essa política tem uma configuração de **alta** gravidade. Para obter mais informações sobre esse suplemento, confira [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).<br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
+|**Criação de regra de encaminhamento/redirecionamento** <br/> |Gera um alerta quando alguém em sua organização cria uma regra de caixa de entrada para a caixa de correio que encaminha ou redireciona mensagens para outra conta de email. Esta política controla apenas as regras de caixa de entrada que são criadas usando o Outlook na Web (anteriormente conhecido como Outlook Web App) ou o PowerShell do Exchange Online. Essa política tem uma configuração de **baixa** gravidade. Para obter mais informações sobre como usar regras de caixa de entrada para encaminhar e redirecionar emails no Outlook na Web, confira [usar regras no Outlook na Web para encaminhar automaticamente as mensagens para outra conta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).  <br/> |Gerenciamento de ameaças <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
+|**pesquisa de descoberta eletrônica iniciada ou exportada** <br/> |Gera um alerta quando alguém usa a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança. Um alerta é disparado quando as seguintes atividades de pesquisa de conteúdo são executadas: <br/><br/>• Uma pesquisa de conteúdo foi iniciada<br/>• Os resultados de uma pesquisa de conteúdo são exportados<br/>• Um relatório de pesquisa de conteúdo é exportado<br/><br/>Os alertas também são acionada quando as atividades de pesquisa de conteúdo anteriores são realizadas em associação a uma ocorrência de descoberta eletrônica. Essa política tem uma configuração de severidade **média** . Para obter mais informações sobre as atividades de pesquisa de conteúdo, consulte [Search for eDiscovery Activities no log de auditoria do Office 365](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities). <br/> |Gerenciamento de ameaças<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
+|**Elevação do privilégio de administrador do Exchange** <br/> |Gera um alerta quando alguém recebe permissões administrativas na sua organização do Exchange Online; por exemplo, se um usuário é adicionado ao grupo de função gerenciamento da organização no Exchange Online. Essa política tem uma configuração de **baixa** gravidade.  <br/> |Permissões <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
+|**As mensagens foram atrasadas** <br/> |Gera um alerta quando o Office 365 não consegue enviar mensagens de email para sua organização local ou para servidores parceiros usando um conector. Quando isso acontecer, a mensagem será enfileirada no Office 365. Este alerta é disparado quando há 2.000 mensagens ou mais que foram enfileiradas por mais de uma hora. Essa política tem uma configuração de **alta** gravidade.  <br/> |Fluxo de mensagens<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
+|**Campanha de malware detectada após a entrega** <br/> |Gera um alerta quando um número excepcionalmente grande de mensagens contendo malware é entregue às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas de correio do Exchange Online. Essa política tem uma configuração de **alta** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
+|**Campanha de malware detectada e bloqueada** <br/> |Gera um alerta quando alguém tentava enviar um número excepcionalmente grande de mensagens de email contendo um determinado tipo de malware para os usuários em sua organização. Se esse evento ocorrer, as mensagens infectadas serão bloqueadas pelo Office 365 e não serão entregues às caixas de correio. Essa política tem uma configuração de **baixa** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
+|**Campanha de malware detectada no SharePoint e no OneDrive** <br/> |Gera um alerta quando um volume excepcionalmente alto de malware ou vírus é detectado em arquivos localizados em sites do SharePoint ou em contas do OneDrive em sua organização. Essa política tem uma configuração de **alta** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
+|**Atividade de arquivo de usuário externo incomum** <br/> |Gera um alerta quando um grande número de atividades geralmente é executado em arquivos no SharePoint ou no OneDrive por usuários fora da sua organização. Isso inclui atividades como acessar arquivos, baixar arquivos e excluir arquivos. Essa política tem uma configuração de **alta** gravidade.  <br/> |Governança de dados<br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
+|**Volume incomum de compartilhamento de arquivos externos** <br/> |Gera um alerta quando um número muito grande de arquivos no SharePoint ou no OneDrive são compartilhados com usuários fora da sua organização. Essa política tem uma configuração de severidade **média** .  <br/> |Governança de dados<br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
+|**Volume incomum de exclusão de arquivo** <br/> |Gera um alerta quando um número excepcionalmente grande de arquivos é excluído no SharePoint ou no OneDrive dentro de um curto período de tempo. Essa política tem uma configuração de severidade **média** .  <br/> |Governança de dados <br/> |E5/G5 ou o Office 365 Threat Intelligence ou a assinatura de complemento de conformidade avançada  <br/> |
+|**Aumento incomum no email relatado como phishing** <br/> |Gera um alerta quando há um aumento significativo no número de pessoas em sua organização usando o suplemento de mensagem de relatório no Outlook para relatar mensagens como email de phishing. Essa política tem uma configuração de **alta** gravidade. Para obter mais informações sobre esse suplemento, confira [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).  <br/> |Gerenciamento de ameaças<br/> |Licença complementar de inteligência de ameaças do Office 365 ou E5/G5  <br/> |
+|**Usuário impedido de enviar email** <br/> |Gera um alerta quando alguém em sua organização não tem permissão para enviar emails de saída. Isso geralmente ocorre quando uma conta é comprometida e o usuário é listado na página **usuários restritos** no centro de conformidade do _AMP_ de segurança. (Para acessar essa página, vá para **Gerenciamento de ameaça > revisar _GT_ usuários restritos**). Essa política tem uma configuração de **alta** gravidade. Para obter mais informações sobre usuários restritos, consulte [removendo um usuário, domínio ou endereço IP de uma lista de bloqueios após o envio de email de spam](https://docs.microsoft.com/office365/securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email).  <br/> |Gerenciamento de ameaças<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
 |||||
    
 Observe que a atividade incomum monitorada por algumas das políticas internas é baseada no mesmo processo da configuração de limite de alerta descrita anteriormente. O Office 365 estabelece um valor de linha de base que define a frequência normal da atividade "normal". Os alertas são disparados quando a frequência das atividades rastreadas pela política de alerta interna excede muito o valor da linha de base.
@@ -158,23 +159,23 @@ A tabela a seguir lista as funções necessárias para exibir alertas das 6 cate
 
 Para ver a qual categoria uma política de alerta padrão é atribuída, confira a tabela na seção [políticas de alerta padrão](#default-alert-policies) .
 
-|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de emails|Permissões|Gerenciamento de ameaças|Usuários | 
+|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de mensagens|Permissões|Gerenciamento de ameaças|Outros | 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Logs de auditoria <br/> |         ||         |         |         |         |
 |Gerenciamento de casos <br/>|         |         |         |         |         |         |
-|Administrador de conformidade<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Pesquisa de Conformidade<br/>|         |         |         |         |         |         |
-|Gerenciamento de dispositivo<br/>|         |         |         |         |         |         |
+|Administrador de Conformidade<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Pesquisa de conformidade<br/>|         |         |         |         |         |         |
+|Gerenciamento de dispositivos<br/>|         |         |         |         |         |         |
 |Gerenciamento de descarte<br/>|         |         |         |         |         |         |
 |Gerenciamento de conformidade de DLP<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
-|Exportação<br/>|         |         |         |         |         |         |
-|Bloqueio<br/>|         |         |         |         |         |         |
+|Exportar<br/>|         |         |         |         |         |         |
+|Retenção<br/>|         |         |         |         |         |         |
 |Gerenciar Alertas<br/>|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuração da organização|         |         |         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Visualização <br/>|         |         |         |         |         |         |
 |Gerenciamento de registros <br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Gerenciamento de retenção <br/>| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
-|Revisão  <br/>|         |         |         |         |         |         |
+|Examinar <br/>|         |         |         |         |         |         |
 |DesCriptografia do RMS<br/>|         |         |         |         |         |         |
 |Gerenciamento de função<br/>|         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
 |Pesquisa e limpeza<br/>|         |         |         |         |         |         |

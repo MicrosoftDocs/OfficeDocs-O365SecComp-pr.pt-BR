@@ -1,7 +1,7 @@
 ---
 title: Quarentena
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -11,14 +11,16 @@ ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
-description: Aprenda sobre a quarentena hospedada para o Exchange Online e Exchange Online Protection.
-ms.openlocfilehash: 2455f912fbe3b309e3759a0fdc3fd7df7ed47390
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
+ms.collection:
+- M365-security-compliance
+description: Saiba mais sobre a quarentena hospedada para o Exchange Online e o Exchange Online Protection.
+ms.openlocfilehash: 9d0f00f5305838f1862eebdc649de0205679d282
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003000"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510208"
 ---
 # <a name="quarantine"></a>Quarentena
 
@@ -28,10 +30,10 @@ Os tópicos a seguir fornecem informações sobre a quarentena hospedada para ad
     
 - [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md) : descreve como os administradores podem localizar e liberar qualquer mensagem que resida na quarentena do Centro de administração do Exchange (EAC) e, opcionalmente, relatá-la como falso positivo (mensagem que não é lixo eletrônico) para a Microsoft. 
     
-- [Find and Release Quarantined Messages (usuários finais)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) - descreve como os usuários finais podem localizar e liberar suas próprias mensagens em quarentena de spam na interface do usuário de quarentena de spam e indicá-las como não sendo lixo eletrônico à Microsoft. 
+- [Localizar e liberar mensagens em quarentena (usuários finais)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) – descreve como os usuários finais podem localizar e liberar suas próprias mensagens em quarentena de spam na interface de usuário de quarentena de spam e relatá-las como não sendo lixo eletrônico para a Microsoft. 
     
     > [!IMPORTANT]
-    > Para acessar a quarentena de spam do usuário final, os usuários finais devem ter um ID de usuário válido do Office 365 e uma senha. Os clientes do EOP protegendo as caixas de correio local devem ser criados por meio da sincronização de diretório ou o EAC de usuários de email válido. Para obter mais informações sobre como gerenciar usuários, os administradores do EOP podem consultar a [Gerenciar usuários de email no EOP](eop/manage-mail-users-in-eop.md). Para clientes do EOP, é recomendável usar a sincronização de diretórios e habilitando Directory Based Edge Blocking; Para obter mais informações, consulte [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
+    > Para acessar a quarentena de spam de usuário final, os usuários finais devem ter uma ID de usuário e senha válidas para o Office 365. Os clientes do EOP que protegem caixas de correio locais devem ser usuários de email válidos criados via sincronização de diretórios ou pelo EAC. Para obter mais informações sobre o gerenciamento de usuários, os administradores do EOP podem consultar [gerenciar usuários de email no EOP](eop/manage-mail-users-in-eop.md). Para clientes autônomos do EOP, recomendamos usar a sincronização de diretórios e habilitar o Bloqueio de Borda Baseado em Diretórios; para obter mais informações, consulte [Usar Bloqueio de Borda Baseado em Diretório para Rejeitar Mensagens Enviadas a Destinatários Inválidos](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
   
     
 

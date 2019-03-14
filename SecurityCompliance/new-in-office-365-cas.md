@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 01/25/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Veja o que há de novo no Office 365 Cloud app Security
-ms.openlocfilehash: c85671eb135afb1cb92883a5d75ad112c46538c1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bc85c0c6444eadf8f623a6fee853ff03d31565d1
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219511"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312058"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>O que há de novo no Office 365 Cloud app Security
 
@@ -26,6 +26,22 @@ ms.locfileid: "30219511"
   
 > [!TIP]
 > Este artigo é atualizado com frequência, à medida que os recursos são adicionados ou aprimorados. As atualizações do Office 365 Cloud app Security são lançadas aproximadamente duas semanas após as atualizações do Microsoft Cloud app Security, e nem todas as atualizações do Microsoft Cloud app Security aplicam-se ao Office 365 Cloud app Security. Além disso, os novos recursos podem levar uma semana ou mais após sua data de lançamento para exibição no ambiente de segurança do seu Office 365 Cloud app.
+
+## <a name="office-365-cloud-app-security-release-142"></a>Versão 142 do Office 365 Cloud app Security
+
+*Lançamento de 17 de fevereiro de 2019*
+
+Seguinte [Microsoft Cloud app Security versão 142](https://docs.microsoft.com/en-us/cloud-app-security/release-notes#cloud-app-security-release-142)
+
+- **Políticas de acesso/sessão para o Office 365 Cloud app Security** O controle de aplicativo Conditional Access foi adicionado ao Office 365 Cloud app Security. As políticas de acesso e de sessão agora podem ser configuradas nos seguintes aplicativos na visualização pública:
+    - Exchange Online (versão prévia)
+    - OneDrive for Business (visualização)
+    - Power BI (visualização)
+    - SharePoint Online (visualização)
+    - Yammer (versão prévia)
+    - Microsoft Teams (visualização)
+
+    Para saber mais, confira [proteger aplicativos com o controle de aplicativo de acesso condicional do Office 365 Cloud app Security](ocas-conditional-access-app-control.md).
 
 ## <a name="office-365-cloud-app-security-releases-139-140"></a>Office 365 Cloud app Security releases 139, 140
 
@@ -41,4 +57,4 @@ ms.locfileid: "30219511"
 
 [Consulte as atualizações 2017 para o Office 365 Cloud app Security](new-in-office-365-cas-2017.md)
     
-[Atividades de utilização após a implantação do Office 365 Cloud App Security](utilization-activities-for-ocas.md)
+[Atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md)

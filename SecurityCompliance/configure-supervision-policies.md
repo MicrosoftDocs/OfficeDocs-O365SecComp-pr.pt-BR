@@ -1,5 +1,5 @@
 ---
-title: Configurar políticas de supervisão da sua organização
+title: Configurar políticas de supervisão para sua organização
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,19 +17,20 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar uma política de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
+ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313167"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474152"
 ---
-# <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão da sua organização
+# <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
 Use políticas de supervisão para capturar comunicações de funcionários para verificação por revisores internos ou externos. Para obter mais informações sobre como as políticas de supervisão podem ajudá-lo a monitorar as comunicações em sua organização, consulte [políticas de supervisão no Office 365](supervision-policies.md).
 
 > [!NOTE]
-> Os usuários monitorados pelas políticas de supervisão devem ter uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou serem incluídos em uma assinatura do Office 365 Enterprise e5. Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5.
+Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estas etapas para configurar e usar a supervisão na sua organização do Office 365:
   
@@ -79,7 +80,7 @@ Na Contoso Financial International, uma amostra das comunicações entre agentes
 |**Configurar esse grupo de distribuição**|**Endereço do grupo (alias)**|**Descrição**|
 |:-----|:-----|:-----|
 |Todos os agentes dos EUA | US_Brokers@Contoso.com | Esse grupo inclui endereços de email para todos os agentes dos EUA que trabalham para a Contoso. |
-| Todos os agentes de conformidade dos EUA | US_Compliance@Contoso.com  | Esse grupo inclui endereços de email para todos os gerentes de conformidade baseados nos EUA que trabalham na contoso. Como esse grupo é um subconjunto de todos os agentes baseados nos EUA, você pode usar esse alias para isentar os responsáveis pela conformidade de uma política de supervisão. |
+| Todos os agentes de conformidade dos EUA | US_Compliance@Contoso.com  | Esse grupo inclui endereços de email para todos os agentes de conformidade dos EUA que trabalham para a Contoso. Como esse grupo é um subconjunto de todos os agentes baseados nos EUA, você pode usar esse alias para isentar os responsáveis pela conformidade de uma política de supervisão. |
   
 <a name="MakeAvailable"> </a>
 
@@ -105,7 +106,7 @@ Para fazer isso, você pode adicionar a si mesmo como um membro do grupo de fun�
 
 2. No centro de conformidade do & de segurança, acesse **permissões** e clique em**+** adicionar ().
 
-3. Na seção **funções** , clique em Adicionar (**+**) e role para baixo até **administrador de análise de supervisão**. Adicione essa função ao grupo de funções.
+3. Na seção **funções** , clique em Adicionar (**+**) e role para baixo até **administrador de análise de supervisão**. Adicione esta função ao grupo de função.
 
 4. Na seção **Membros** , adicione as pessoas que você deseja gerenciar a supervisão da sua organização.
 
@@ -214,7 +215,7 @@ Para configurar a revisão do Outlook para a área de trabalho do Outlook para a
 
 Em seguida, os revisores precisarão executar alguns comandos do PowerShell do Exchange Online para que eles possam conectar o Outlook à caixa de correio de supervisão.
   
-1. Conecte-se ao PowerShell do Exchange Online. [Como faço isso?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Conectar-se ao Exchange Online PowerShell. [Como faço isso?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Execute os seguintes comandos, onde *SupervisoryReview {GUID} @domain. onmicrosoft.com* é o endereço que você copiou na etapa 1 acima, e *User* é o nome do revisor que será conectado à caixa de correio de supervisão na etapa 3.
 

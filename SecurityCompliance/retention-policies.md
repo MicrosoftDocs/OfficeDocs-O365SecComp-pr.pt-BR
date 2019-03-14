@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: b09f879779b0209944c37dd70df4786b26d7a4bd
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410936"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455443"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 

@@ -11,15 +11,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
+ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: Integre o servidor SIEM da sua organização com a proteção avançada contra ameaças do Office 365 e eventos de ameaça relacionados na API de gerenciamento de atividades do Office 365.
-ms.openlocfilehash: 6c0468f8f3fdd25082bff8a3008d2abf00ed9d4d
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: fa9dcda0556684b748068cbe5ee848ba443d7667
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30523985"
+ms.locfileid: "30536171"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Integração do SIEM com a proteção avançada contra ameaças do Office 365
 
@@ -27,7 +28,17 @@ Se sua organização estiver usando um servidor de gerenciamento de incidentes e
 
 A API de gerenciamento de atividades do Office 365 recupera informações sobre ações e eventos de usuário, administração, sistema e políticas dos logs de atividades do Office 365 e do Azure Active Directory da sua organização. O [esquema de proteção avançada contra ameaças do office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-intelligence-schema) funciona com a proteção avançada contra ameaças, portanto, se sua organização tiver o plano de proteção avançada contra ameaças do Office 365 ou o plano 2 ou o Office 365 e5, você ainda poderá usar essa mesma API para sua integração com o Siem Server. 
 
-O servidor SIEM ou outro sistema semelhante deve sondar a **auditoria.** carga de trabalho geral para acessar eventos de detecção. Para saber mais, confira [introdução às APIs de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
+O servidor SIEM ou outro sistema semelhante deve sondar a **auditoria.** carga de trabalho geral para acessar eventos de detecção. Para saber mais, confira [introdução às APIs de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). Além disso, os seguintes valores de **AuditLogRecordType** são relevantes para eventos de ATP do Office 365:
+
+### <a name="enum-auditlogrecordtype---type-edmint32"></a>Enumeração: AuditLogRecordType - Tipo: Edm.Int32
+
+#### <a name="auditlogrecordtype"></a>AuditLogRecordType
+
+|Valor|Nome do membro|Descrição|
+|:-----|:-----|:-----|
+|28|ThreatIntelligence|Eventos de phishing e malware da Proteção do Exchange Online e da Proteção Avançada contra Ameaças do Office 365.|
+|41|ThreatIntelligenceUrl|Links seguros de ATP os eventos de tempo de bloqueio e substituição de bloqueio da proteção avançada contra ameaças do Office 365.|
+|47|ThreatIntelligenceAtpContent|Eventos de phishing e malware para arquivos no SharePoint Online, no OneDrive for Business e no Microsoft Teams da proteção avançada contra ameaças do Office 365.|
 
 > [!IMPORTANT]
 > Você deve ser um administrador global do Office 365 ou ter a função de administrador de segurança atribuída para o centro de conformidade do & de segurança para configurar a integração do SIEM com a proteção avançada contra ameaças do Office 365.<br/>O log de auditoria deve estar ativado para o seu ambiente do Office 365. Para obter ajuda com isso, consulte [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md).
