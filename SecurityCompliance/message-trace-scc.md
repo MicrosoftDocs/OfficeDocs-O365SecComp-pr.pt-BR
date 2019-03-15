@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade do & de segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524085"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573545"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no centro de conformidade do & de segurança
 
@@ -56,8 +56,8 @@ Os valores padrão são **todos os remetentes** e **todos os destinatários**, m
 
 - **Para estas pessoas**: clique neste campo para selecionar um ou mais destinatários em sua organização.
 
-> [!NOTE]Você também pode digitar os endereços de email de remetentes e destinatários externos. Há suporte para curingas`*@contoso.com` ( `scot?@contoso.com`ou), mas você não pode usar várias entradas curinga no mesmo campo ao mesmo tempo.
-> [!NOTE]Você pode colar vários remetentes ou listas de destinatários separados por ponto`;`-e-vírgula (). Espaços (`\s`), retorno de carro`\r`() ou símbolos de`\n`linhas Next () são permitidos.
+> [!NOTE]
+> Você também pode digitar os endereços de email de remetentes e destinatários externos. Há suporte para curingas`*@contoso.com` ( `scot?@contoso.com`ou), mas você não pode usar várias entradas curinga no mesmo campo ao mesmo tempo.<br/>Você pode colar vários remetentes ou listas de destinatários separados por ponto`;`-e-vírgula (). Espaços (`\s`), retorno de carro`\r`() ou símbolos de`\n`linhas Next () são permitidos.
 
 ### <a name="time-range"></a>Intervalo de tempo
 
@@ -339,7 +339,7 @@ Um valor **custom_data** que começa com `S:SFA` é do agente Filtro de spam. Os
 |`DI=SJ`|A mensagem foi enviada para a pasta de lixo eletrônico do destinatário.|
 |`DI=SN`|A mensagem foi roteada através do pool de entrega de risco mais alto. Para obter mais informações, consulte [pool de entrega de alto risco para mensagens de saída](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|A mensagem foi roteada através do pool normal de entrega de saída.|
-|' SFS = [a]|SFS = [b] '|Isso indica que houve correspondência com regras de spam.|
+|`SFS=[a]|SFS=[b]`|Isso indica que houve correspondência com regras de spam.|
 |`IPV=CAL`|A mensagem foi permitida pelos filtros de spam porque o endereço IP estava especificado em uma Lista de Permissões de IP do filtro de conexão.|
 |`H=<EHLOstring>`|A cadeia de caracteres HELO ou EHLO do servidor de email de conexão.|
 |`PTR=<ReverseDNS>`|O registro PTR do endereço IP de envio, também conhecido como o endereço de DNS reverso.|
@@ -354,7 +354,7 @@ Um valor **custom_data** que começa com `S:AMA` é do agente de filtro de malwa
 
 |**Valor**|**Descrição**|
 |:-----|:-----|
-|' AMA = SUM|v=1|` or `AMA=EV|v = 1 '|Foi determinado que a mensagem contém malware. `SUM`indica que o malware pode ter sido detectado por qualquer número de mecanismos. `EV`indica que o malware foi detectado por um mecanismo específico. Quando um mecanismo detecta malware, isto aciona as ações subseqüentes.|
+|`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Foi determinado que a mensagem contém malware. `SUM`indica que o malware pode ter sido detectado por qualquer número de mecanismos. `EV`indica que o malware foi detectado por um mecanismo específico. Quando um mecanismo detecta malware, isto aciona as ações subseqüentes.|
 |`Action=r`|A mensagem foi substituída.|
 |`Action=p`|A mensagem foi ignorada.|
 |`Action=d`|A mensagem foi adiada.|
@@ -377,7 +377,7 @@ Um valor **custom_data** que começa com`S:TRA` é do agente de regra de transpo
 
 |**Valor**|**Descrição**|
 |:-----|:-----|
-|' ETR|RuleId =<guid>`|A identificação da regra encontrou uma correspondência.|
+|`ETR|ruleId=<guid>`|A identificação da regra encontrou uma correspondência.|
 |`St=<datetime>`|A data e a hora no UTC quando a correspondência da regra ocorreu.|
 |`Action=<ActionDefinition>`|A ação que foi aplicada. Para obter uma lista de ações disponíveis, consulte [Mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
 |`Mode=<Mode>`|O modo da regra. Os valores válidos são: <br/>• **Impor**: todas as ações da regra serão impostas. <br/>• **Teste com dicas de política:**: qualquer ação de dica de política será enviada, mas outras ações de imposição não serão aplicadas. <br/>• **Teste sem dicas de política**: as ações serão listadas em um arquivo de log, mas os remetentes não serão notificados de nenhuma maneira e as ações de imposição não serão aplicadas.|

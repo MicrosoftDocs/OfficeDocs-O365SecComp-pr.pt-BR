@@ -1,9 +1,26 @@
 ---
-title: "habilitar ou desabilitar dicas de segurança no Office 365" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 12/05/2018 MS. Audience: admin MS. Topic: artigo MS. Service: o365-Administration localization_priority: normal Search. appverid: 
-- MET150 MS. AssetID: f09668bd-fe1a-4c01-89e3-e88c370e66c7 MS. Collection:
-    - M365-segurança-Descrição de conformidade: "informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email."
+title: Habilitar ou desabilitar dicas de segurança no Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/05/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
+ms.collection:
+- M365-security-compliance
+description: Informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email.
+ms.openlocfilehash: 020ee15676cc2d4dd6156db9e4d50558ff7793f0
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573525"
 ---
-
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar ou desabilitar dicas de segurança no Office 365
 
 O proteção do Exchange Online (EOP) adiciona, ou carimbos, uma dica de segurança a mensagens de email que ele fornece. Essas dicas de segurança fornecem aos destinatários uma forma rápida e Visual de determinar se uma mensagem é de um remetente seguro e verificado, se a mensagem tiver sido marcada como spam pelo Office 365, se a mensagem contiver algo suspeito, como um golpe de phishing, ou se imagens externas tiverem foi bloqueado. Os administradores do Office 365 e do EOP-autônomo podem editar uma configuração de política de spam para habilitar ou desabilitar que as dicas de segurança sejam exibidas no email no Outlook e em outros clientes de email de área de trabalho. 
@@ -45,7 +62,7 @@ Neste tópico:
     
 9. Para habilitar as dicas de segurança, em **dicas de segurança**, marque a caixa **de seleção ao** . Para desabilitar as dicas de segurança, desmarque a caixa **de seleção ao** . 
     
-10. Escolha **Salvar**.
+10. Selecione **Salvar**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Para habilitar ou desabilitar dicas de segurança usando o PowerShell
 <a name="pshellsafetytip"> </a>

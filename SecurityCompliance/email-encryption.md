@@ -1,10 +1,27 @@
 ---
-title: "criptografia de email no Office 365" MS. Author: Krowley Author: kccross Manager: laurawi MS. Date: 10/30/2018 MS. Audience: admin MS. Topic: visão geral MS. Service: o365-Administration localization_priority: normal Search. appverid: 
+title: Criptografia de email no Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/30/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
 - MOE150
-- MET150 MS. AssetID: c0d87cbe-6d65-4c03-88ad-5216ea5564e8 MS. Collection:
-    - M365-Security-Compliance Description: "Compare as opções de criptografia no Office 365, incluindo a criptografia de mensagens do Office (OME), S/MIME, gerenciamento de direitos de informação (IRM) e saiba mais sobre Transport Layer Security (TLS)."
+- MET150
+ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
+ms.collection:
+- M365-security-compliance
+description: Compare as opções de criptografia no Office 365, incluindo a criptografia de mensagem do Office (OME), S/MIME, gerenciamento de direitos de informação (IRM) e saiba mais sobre TLS (Transport Layer Security).
+ms.openlocfilehash: 8b8eb96b49d2b3d875ceba5216edfd0f12f8aa97
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573535"
 ---
-
 # <a name="email-encryption-in-office-365"></a>Criptografia de email no Office 365
 
 Este artigo compara as opções de criptografia no Office 365, incluindo a criptografia de mensagens do Office (OME), S/MIME, gerenciamento de direitos de informação (IRM) e apresenta a segurança da camada de transporte (TLS).
