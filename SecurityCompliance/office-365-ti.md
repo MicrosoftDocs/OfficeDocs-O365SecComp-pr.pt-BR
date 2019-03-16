@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra como os recursos de inteligência de ameaças no Office 365 proteção avançada contra ameaças pode ajudá-lo a Pesquisar ameaças em sua organização, responder a malware, phishing e outros ataques que o Office 365 detectou em seu nome e Pesquisar ameaças indicadores.
-ms.openlocfilehash: e3696306b5188858e6ca72e265c4f1aa24574f79
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 54dbe4cc39456189bca2af71294d181adce6f50b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536181"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639028"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigação e resposta contra ameaças do Office 365
 
@@ -41,7 +41,7 @@ Os recursos de investigação e resposta contra ameaças no Office 365 proteçã
 
 Antigamente, os recursos de investigação e resposta contra ameaças do Office 365 foram incluídos em assinaturas, como o Office 365 Enterprise e5. Isso ainda é o caso, e agora esses recursos agora fazem parte do plano de proteção avançada contra ameaças do Office 365 (e isso está incluído no Office 365 Enterprise E5). 
 
-Além disso, a investigação de ameaças e o capbailities de resposta do Office 365 estavam anteriormente disponíveis para compra como um complemento para o Office 365 para clientes corporativos. Agora, esses recursos estão incluídos no Office 365 Advanced Threat Protection Plan 2 (que também inclui o Office 365 Advanced Threat Protection Plan 1). Para saber mais, confira [planos e preços avançados de proteção contra ameaças do Office 365](https://products.office.com/exchange/advance-threat-protection).
+Além disso, os recursos de investigação e resposta contra ameaças do Office 365 estavam disponíveis anteriormente para compra como um complemento para o Office 365 para clientes de negócios. Agora, esses recursos estão incluídos no Office 365 Advanced Threat Protection Plan 2 (que também inclui o Office 365 Advanced Threat Protection Plan 1). Para saber mais, confira [planos e preços avançados de proteção contra ameaças do Office 365](https://products.office.com/exchange/advance-threat-protection).
 
 Veja o que isso significa:
 
@@ -53,7 +53,7 @@ Veja o que isso significa:
 
 Confira mais informações em [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-investigaiton-and-response-capabilities"></a>Introdução aos recursos de investigaiton e resposta de ameaças
+## <a name="get-started-with-threat-investigation-and-response-capabilities"></a>Introdução aos recursos de investigação e resposta contra ameaças
 
 Use os seguintes recursos para saber mais sobre os recursos de investigação de ameaças e de resposta no Office 365 e como você pode usá-lo para manter as pessoas em sua organização mais seguras.
   

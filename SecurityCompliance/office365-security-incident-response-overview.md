@@ -1,5 +1,5 @@
 ---
-title: Resposta a incidentes de segurança do Office 365
+title: Resposta de incidente de segurança do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -8,20 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Esta solução informa o que os ataques de segurança da Cyber mais comuns podem parecer no Office 365 e como respondê-los
-ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223280"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656017"
 ---
-# <a name="office-365-security-incident-response"></a>Resposta a incidentes de segurança do Office 365
+# <a name="office-365-security-incident-response"></a>Resposta de incidente de segurança do Office 365
 
  **Resumo:** Esta solução informa quais são os indicadores para os ataques mais comuns de segurança da CyberSource no Office 365, como confirmar positivamente qualquer ataque e como respondê-lo.
   
@@ -40,12 +40,12 @@ ConFira aqui mensalmente quando mais artigos forem adicionados com o tempo.
 
 ## <a name="detect-and-remediate-articles"></a>Detectar e corrigir artigos
 
-- [Detectar e corrigir a concessão de autorização ilícita no Office 365](detect-and-remediate-illicit-consent-grants.md)
-- [Detectar e corrigir ataques de injeção a regras do Outlook e formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detectar e corrigir subsídios de consentimento ilícito no Office 365](detect-and-remediate-illicit-consent-grants.md)
+- [Detectar e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
  
 ## <a name="incident-response-articles"></a>Artigos sobre resposta a incidentes
 
-- [Responder a uma conta de email comprometida no Office 365](responding-to-a-compromised-email-account.md)
+- [Respondendo a uma conta de email comprometida no Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger o Office 365 como um cybersecurity pro
 Sua assinatura do Office 365 vem com um conjunto poderoso de recursos de segurança que você pode usar para proteger seus dados e seus usuários.  Use o [mapa de segurança do Office 365: as principais prioridades para os primeiros 30 dias, 90 dias e além da](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) implementação das práticas recomendaDas da Microsoft recomendadas para proteger seu locatário do Office 365.

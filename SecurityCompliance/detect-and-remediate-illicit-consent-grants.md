@@ -1,5 +1,5 @@
 ---
-title: Detectar e corrigir a concessão de autorização ilícita no Office 365
+title: Detectar e corrigir subsídios de consentimento ilícito no Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -8,20 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
-ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223350"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656067"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir a concessão de autorização ilícita no Office 365
+# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir subsídios de consentimento ilícito no Office 365
 
 **Resumo**  Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
 
@@ -109,7 +109,7 @@ Sua assinatura do Office 365 vem com um conjunto poderoso de recursos de seguran
 - Tarefas a serem realizadas em 90 dias. Esses tempos são mais demorados para planejar e implementar, mas melhorar muito a postura de segurança.
 - Além de 90 dias. Esses aprimoramentos são criados nos seus primeiros 90 dias de trabalho.
 
-## <a name="see-also"></a>ConFira também:
+## <a name="see-also"></a>Confira também:
 - [Aplicativo inesperado na lista meus aplicativos](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) orienta os administradores por meio de várias ações que podem ser tomadas após perceber que há aplicativos inesperados com acesso aos dados.
 - [Integração de aplicativos com o Azure Active Directory]  (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) é uma visão geral de alto nível de consentimento e permissões.  Preste atenção especial à [visão geral da seção da estrutura de consentimento](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework) .
 - [Problemas para desenvolver meu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) fornece links para vários artigos relacionados a consentimento.

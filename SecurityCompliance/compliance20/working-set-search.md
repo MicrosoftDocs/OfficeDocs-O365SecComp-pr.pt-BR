@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2523072181307cce510f0f318834329b2c70b376
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454983"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639008"
 ---
 # <a name="query-the-data-in-a-working-set"></a>Consultar os dados em um conjunto de trabalho
 
@@ -31,7 +31,7 @@ Para criar e executar uma consulta dentro do seu conjunto de trabalho, clique em
 
 ## <a name="building-your-query"></a>Criar sua consulta
 
-Você pode criar sua consulta usando uma combinação de cartões de condição e linguagem de consulta no cartão de condição de palavras-chave.
+Você pode criar sua consulta usando uma combinação de cartões de condição e linguagem de consulta no cartão de condição de palavras-chave. Você pode agrupar cartões de condição juntos como um bloco para criar uma consulta mais complexa.
 
 ### <a name="condition-card"></a>Cartão de condição
 
@@ -40,9 +40,15 @@ Cada campo pesquisável em um conjunto de trabalho tem um cartão de condição 
 Há vários tipos de cartões de condição:
 - FREETEXT: o cartão de condição do freetext é usado para campos de texto como o assunto. Você pode listar vários termos de pesquisa separando-os com uma vírgula.
 - Date: o cartão de condição de data é usado para campos de data, como data da última modificação.
-- Opções de pesquisa: o cartão de condição opções de pesquisa fornecerá uma lista de valores possíveis para o campo específico em seu conjunto de trabalho. Isso é usado para campos como remetente, onde há um número finito de valores possíveis em seu conjunto de trabalho.
+- Opções de pesquisa: o cartão de condição opções de pesquisa fornecerá uma lista de valores possíveis para o campo específico em seu conjunto de trabalho. Isso é usado para campos, como remetente, onde há um número finito de valores possíveis em seu conjunto de trabalho.
 - Palavra-chave: cartão de condição de palavra-chave é uma instância específica do cartão de condição FREETEXT que você pode usar para pesquisar termos ou usar o idioma de consulta do KQL. Veja mais detalhes abaixo.
 
 ### <a name="query-language"></a>Linguagem de consulta
 
 Além de cartões de condição, você pode usar um idioma de consulta do tipo KQL no cartão de palavras-chave para criar sua consulta. A linguagem de consulta oferece suporte à sintaxe KQL padrão como e, ou, não e NEAR (n). Também suporta curingas de caractere único (?) e curinga de vários caracteres (*).
+
+## <a name="filter"></a>Filtrar
+
+Além das consultas que você pode salvar, você pode sobrepor mais condições de imediato aos resultados da consulta usando filtros. Os filtros diferem das consultas de algumas maneiras significativas:
+- Os filtros são temporários (ou seja, não persistem em diferentes sessões), enquanto as consultas são salvas no conjunto de trabalho.
+- Os filtros são sempre aditivos; os filtros serão aplicados na parte superior da consulta que você tem em vigor no momento, ao passo que a aplicação de uma consulta substituirá a consulta em vigor.

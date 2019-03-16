@@ -1,7 +1,7 @@
 ---
 title: Criar uma consulta para encontrar dados confidenciais armazenados em sites
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir documentos que contêm dados confidenciais em todo o locatário. Após descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para procurar dados confidenciais.
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455063"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639128"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Criar uma consulta para encontrar dados confidenciais armazenados em sites
 
@@ -64,9 +64,9 @@ Os exemplos a seguir usam diferentes tipos confidenciais, propriedades e operado
 |**Query**|**Explicação**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |O nome pode parecer estranho porque é muito longo, mas é o nome correto para esse tipo confidencial. Certifique-se de usar nomes exatos do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999). Você também pode usar o nome de um [tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) que você criou para sua organização.  <br/> |
-| ' Sensitivetype: "número de cartão de crédito|1.. 4294967295|1.. 100 "' <br/> |Isso retorna documentos com pelo menos uma correspondência para o tipo confidencial "número de cartão de crédito". Os valores para cada intervalo são os respectivos valores mínimo e máximo. Uma maneira mais simples de escrever essa consulta é `SensitiveType:"Credit Card Number"`, mas onde é a diversão?  <br/> |
-| ' Sensitivetype: "número de cartão de crédito| 5.. 25 "e LastSensitiveContentScan:" 8/11/2018.. 8/2018 "" <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018.  <br/> |
-| ' Sensitivetype: "número de cartão de crédito| 5.. 25 "e LastSensitiveContentScan:" 8/11/2018.. 8/2018 "não ExtensãoDeArquivo: XLSX" <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018. Arquivos com uma extensão XLSX não são incluídos nos resultados da consulta.  `FileExtension`é uma das muitas propriedades que você pode incluir em uma consulta. Para obter mais informações, consulte [usando propriedades e operadores de pesquisa com o eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |Isso retorna documentos com pelo menos uma correspondência para o tipo confidencial "número de cartão de crédito". Os valores para cada intervalo são os respectivos valores mínimo e máximo. Uma maneira mais simples de escrever essa consulta é `SensitiveType:"Credit Card Number"`, mas onde é a diversão?  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018.  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |Isso retorna documentos com números de cartão de crédito de 5-25 que foram verificados de 11 de agosto de 2018 até 13 de agosto de 2018. Arquivos com uma extensão XLSX não são incluídos nos resultados da consulta.  `FileExtension`é uma das muitas propriedades que você pode incluir em uma consulta. Para obter mais informações, consulte [usando propriedades e operadores de pesquisa com o eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |Isso retornará documentos que contenham um número de cartão de crédito ou um número de previdência social.  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>Exemplos
@@ -75,15 +75,15 @@ Nem todas as consultas são criadas da mesma forma. A tabela a seguir fornece ex
   
 |**Consulta incompatível**|**Motivo**|
 |:-----|:-----|
-| ' Sensitivetype: "número de cartão de crédito|.."` <br/> |Você deve adicionar pelo menos um serviço.  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |Você deve adicionar pelo menos um serviço.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" não é um nome de tipo confidencial válido. Somente os nomes no [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999) funcionam em consultas de DLP.  <br/> |
-| ' Sensitivetype: "número de cartão de crédito|0 "' <br/> |Zero não é válido como o valor mínimo ou o valor máximo em um intervalo.  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |Zero não é válido como o valor mínimo ou o valor máximo em um intervalo.  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |Talvez seja difícil ver, mas há um espaço em branco extra entre "crédito" e "cartão" que torna a consulta inválida. Use nomes de tipo confidenciais exatos do [inventário de tipos de informações confidenciais](https://go.microsoft.com/fwlink/?LinkID=509999).  <br/> |
-| ' Sensitivetype: "número de cartão de crédito|1.. 3 "' <br/> |A parte de dois períodos não deve ser separada por um espaço.  <br/> |
-| ' Sensitivetype: "número de cartão de crédito| |1..|80.. "' <br/> |Há muitos delimitadores de pipe (|). Siga este formato em vez de: ' Sensitivetype: "número do cartão de crédito|1..|80.. "' <br/> |
-| ' Sensitivetype: "número de cartão de crédito|1..|80.. 101 "" <br/> |Como os valores de confiança representam uma porcentagem, eles não podem exceder 100. Escolha um número de 1 a 100 em vez disso.  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |A parte de dois períodos não deve ser separada por um espaço.  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |Há muitos delimitadores de pipe (|). Em vez disso, siga este formato:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Como os valores de confiança representam uma porcentagem, eles não podem exceder 100. Escolha um número de 1 a 100 em vez disso.  <br/> |
    
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 [O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
   

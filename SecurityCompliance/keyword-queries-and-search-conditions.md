@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e de arquivo que você pode pesquisar em caixas de correio do Exchange Online e em sites do SharePoint ou do OneDrive for Business usando a &amp; ferramenta de pesquisa de conteúdo no centro de conformidade de segurança do Office 365.  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354753"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639158"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
@@ -123,11 +123,14 @@ A tabela a seguir lista as propriedades de contato que estão indexadas e que vo
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de dados confidenciais pesquisáveis
 
-Você pode usar o recurso de pesquisa de conteúdo no &amp; centro de conformidade de segurança para pesquisar dados confidenciais, como números de cartão de crédito ou números de segurança social, que são armazenados em documentos nos sites do SharePoint e do onedrive for Business. Você pode fazer isso usando a `SensitiveType` Propriedade e o nome de um tipo de informação confidencial em uma consulta de palavra-chave. Por exemplo, a consulta `SensitiveType:"Credit Card Number"` retorna documentos que contenham um número de cartão de crédito. A consulta `SensitiveType:"U.S. Social Security Number (SSN)"` retorna documentos que contêm um número de segurança social dos EUA. Para ver uma lista dos tipos de dados confidenciais que você pode pesquisar, vá para **classificações** \> de **tipos de informações confidenciais** no centro &amp; de conformidade de segurança. Ou você pode usar o cmdlet **Get-DlpSensitiveInformationType** no PowerShell do &amp; centro de conformidade de segurança para exibir uma lista de tipos de informações confidenciais. 
+Você pode usar o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar dados confidenciais, como números de cartão de crédito ou números de seguridade social, que são armazenados em documentos nos sites do SharePoint e do OneDrive for Business. Você pode fazer isso usando a `SensitiveType` Propriedade e o nome de um tipo de informação confidencial em uma consulta de palavra-chave. Por exemplo, a consulta `SensitiveType:"Credit Card Number"` retorna documentos que contenham um número de cartão de crédito. A consulta `SensitiveType:"U.S. Social Security Number (SSN)"` retorna documentos que contêm um número de segurança social dos EUA. Para ver uma lista dos tipos de dados confidenciais que você pode pesquisar, vá para **classificações** \> de **tipos de informações confidenciais** no centro &amp; de conformidade de segurança. Ou você pode usar o cmdlet **Get-DlpSensitiveInformationType** no PowerShell do &amp; centro de conformidade de segurança para exibir uma lista de tipos de informações confidenciais. 
   
 Você também pode usar a `SensitiveType` propriedade para pesquisar o nome de um tipo de informação confidencial personalizado que você (ou outro administrador) criou para sua organização. Observe que você pode usar a coluna **Publisher** na página **tipos de informações confidenciais** no centro de &amp; conformidade de segurança (ou na propriedade **Publisher** no PowerShell) para diferenciar entre os dados confidenciais internos e personalizados tipos de informações. Para obter mais informações, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md).
   
 Para obter mais informações sobre como criar consultas `SensitiveType` usando a propriedade, consulte [formulário uma consulta para encontrar dados confidenciais armazenados em sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+
+> [!NOTE]
+> Você não pode usar tipos de dados confidenciais `SensitiveType` e a propriedade Search para pesquisar dados confidenciais em caixas de correio do Exchange Online. No enTanto, você pode usar políticas de DLP (prevenção contra perda de dados) para proteger dados confidenciais de email em trânsito. Para obter mais informações, consulte [visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md) e [pesquisa e localização de dados pessoais](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operadores de pesquisa
 

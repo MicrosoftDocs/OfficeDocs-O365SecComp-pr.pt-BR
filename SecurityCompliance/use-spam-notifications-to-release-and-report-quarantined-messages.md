@@ -3,7 +3,7 @@ title: Usar notificações de spam do usuário para liberar e relatar mensagens 
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 5/12/2018
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Se seu administrador habilitar as notificações para usuários, você receberá uma mensagem de notificação que lista as mensagens enviadas para sua caixa de correio que foram identificadas como spam, massa ou mensagens de phishing. Você pode liberar ou relatar mensagens depois de ser notificado.
-ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492720"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638968"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificações de spam do usuário para liberar e relatar mensagens em quarentena no Office 365
 
@@ -40,12 +40,20 @@ A mensagem recebida inclui o número de mensagens de spam em quarentena que voc�
     
 - **Tamanho** O tamanho da mensagem, em kilobytes (KBs). 
     
-No momento, há duas ações que você pode realizar com uma mensagem em quarentena:
-  
-- **Liberar para caixa de entrada** Escolha esta caixa de correio para enviar a mensagem para sua caixa de entrada, onde você pode exibi-la. 
-    
-- **Relatar como não sendo lixo eletrônico** Escolha esta para enviar uma cópia da mensagem para a Microsoft para análise. A equipe de spam avalia e analisa a mensagem e, dependendo dos resultados da análise, ajusta as regras do filtro antispam para permitir a passagem da mensagem. 
-    
+Estas são as ações que você pode realizar com uma mensagem em quarentena:
+
+- **Visualize** a mensagem se quiser visualizar o conteúdo ou o cabeçalho antes de executar a ação.
+
+- **Baixe** a mensagem se quiser revisar a mensagem e os anexos (se houver) no dispositivo antes de executar a ação.
+
+- **Versão** se a mensagem não for spam e se você quiser que o Office 365 envie a mensagem para sua caixa de correio.
+
+- **Release _AMP_ Allow Sender** se a mensagem não for spam e se você quiser que o Office 365 adicione o remetente à sua lista de remetentes e destinatários confiáveis para futuros emails. Tenha em mente que seu administrador pode ter outras configurações de permissão/bloqueio de toda a organização que substituem sua lista de remetentes seguros.
+
+- **Release _AMP_ Report**, se a mensagem não for spam e você deseja enviar a mensagem para sua caixa de correio e relatá-la para a Microsoft para análise.
+
+- **Bloquear** se você quiser que o Office 365 adicione o remetente à sua lista de remetentes bloqueados.
+
 Esteja ciente do seguinte:
   
 - As mensagens colocadas em quarentena porque corresponderam a uma regra de fluxo de emails não estão incluídas nas mensagens em quarentena do usuário. Somente as mensagens em quarentena por spam estão listadas.

@@ -8,25 +8,26 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365
-ms.openlocfilehash: 214be3e8492c2896d2a4010c30768e41bc149078
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215231"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656057"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar e corrigir ataques de injeção a regras do Outlook e formulários personalizados no Office 365
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365
 
 **Resumo** Saiba como reconhecer e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Quais são as regras do Outlook e o ataque de injeção de formulários personalizados?
-Depois que um invasor violar uma conta em sua locação e entrar, você tentará estabelecer uma maneira de permanecer ou uma maneira de entrar novamente após serem descobertas e removidas. Isso é chamado de estabelecimento de um mecanismo de persistência. Duas maneiras de fazer isso é explorar as regras do Outlook ou injetar formulários personalizados no Outlook. Em ambos os casos, a regra ou o formulário é sincronizado a partir do serviço de nuvem para o cliente de desktop, portanto, um formato completo e a reinstalação do software cliente não eliminam o mecanismo de injeção. Isso ocorre porque, quando o software cliente do Outlook se reconecta à caixa de correio na nuvem, ele rebaixará as regras e formulários da nuvem. Depois que as regras e os formulários estiverem em vigor, o invasor o usará para executar códigos remotos ou personalizados, geralmente para instalar o malware na máquina local. O malware, então, reroubará as credenciais ou executará outras atividades ilícitas. A boa notícia aqui é que, se você mantiver seus clientes corrigidos para a versão mais recente, não estará vulnerável à ameaça à medida que os padrões atuais do cliente do Outlook bloquearão ambos os mecanismos. 
+Depois que um invasor violar uma conta em sua locação e entrar, você tentará estabelecer uma maneira de permanecer ou uma maneira de entrar novamente após serem descobertas e removidas. Isso é chamado de estabelecimento de um mecanismo de persistência. Duas maneiras de fazer isso é explorar as regras do Outlook ou injetar formulários personalizados no Outlook.
+Em ambos os casos, a regra ou o formulário é sincronizado a partir do serviço de nuvem para o cliente de desktop, portanto, um formato completo e a reinstalação do software cliente não eliminam o mecanismo de injeção. Isso ocorre porque, quando o software cliente do Outlook se reconecta à caixa de correio na nuvem, ele rebaixará as regras e formulários da nuvem. Depois que as regras e os formulários estiverem em vigor, o invasor o usará para executar códigos remotos ou personalizados, geralmente para instalar o malware na máquina local. O malware, então, reroubará as credenciais ou executará outras atividades ilícitas. A boa notícia aqui é que, se você mantiver seus clientes corrigidos para a versão mais recente, não estará vulnerável à ameaça à medida que os padrões atuais do cliente do Outlook bloquearão ambos os mecanismos. 
 
 Os ataques geralmente seguem estes padrões:
 
@@ -140,7 +141,8 @@ As regras e os exploits de formulários são usados apenas por um invasor depois
 
 A melhor maneira de proteger suas contas de usuário e, especialmente suas contas de administrador, é [Configurar a autenticação multifator para usuários do Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  Você também deve:
 <ol>
-    <li>Monitorar como suas contas de usuário são acessadas <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">e usadas</a>. Não é possível impedir a violação inicial, mas você diminuirá a duração e o impacto da violação detectando-a antes. Você pode usá-las: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">as políticas de segurança do aplicativo Cloud do Office 365</a> para monitorar suas contas e alertar sobre atividades incomuns.<ol type="a">
+    <li>Monitorar como suas contas de usuário são acessadas <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">e usadas</a>. Não é possível impedir a violação inicial, mas você diminuirá a duração e o impacto da violação detectando-a antes. Você pode usá-las: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">as políticas de segurança do aplicativo Cloud do Office 365</a> para monitorar suas contas e alertar sobre atividades incomuns. 
+        <ol type="a">
             <li><b>Várias tentativas de logon com falha</b> Esta política faz o perfil de seu ambiente e dispara alertas quando os usuários executam várias atividades de logon com falha em uma única sessão com relação à linha de base aprendida, que pode indicar uma tentativa de violação.</li>
             <li><b>Viagens impossível</b> - Essa política faz o perfil de seu ambiente e dispara alertas quando as atividades são detectadas do mesmo usuário em diferentes locais dentro de um período de tempo menor do que o tempo de viagem esperado entre os dois locais. Isso pode indicar que um usuário diferente está usando as mesmas credenciais. Detectar esse comportamento anômala exige um período de aprendizado inicial de sete dias durante o qual ele aprende o padrão de atividade de um novo usuário.</li>
             <li><b>Atividade representada incomum (por usuário)</b> - Esta política faz o perfil de seu ambiente e dispara alertas quando os usuários executam várias atividades representadas em uma única sessão com relação à linha de base aprendida, que pode indicar uma tentativa de violação.</li>
@@ -179,7 +181,7 @@ Sua assinatura do Office 365 vem com um conjunto poderoso de recursos de seguran
 - Tarefas a serem realizadas em 90 dias. Esses tempos são mais demorados para planejar e implementar, mas melhorar muito a postura de segurança.
 - Além de 90 dias. Esses aprimoramentos são criados nos seus primeiros 90 dias de trabalho.
 
-## <a name="see-also"></a>ConFira também:
+## <a name="see-also"></a>Confira também:
 - [Regras mal-intencionadas do Outlook](https://silentbreaksecurity.com/malicious-outlook-rules/) por postagem de segurança do SilentBreak sobre o vetor de regras fornece uma revisão detalhada de como as regras do Outlook. 
 - [MAPI sobre http e Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) no blog do Sensepost sobre Mailrule Pwnage discute uma ferramenta chamada Ruler que permite explorar caixas de correio por meio de regras do Outlook.
 - [Formulários do Outlook e shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/) no blog do Sensepost sobre o vetor de ameaça de formulários. 

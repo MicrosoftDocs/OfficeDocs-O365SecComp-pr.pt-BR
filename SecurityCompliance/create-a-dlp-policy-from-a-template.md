@@ -1,7 +1,7 @@
 ---
 title: Criar uma política de DLP a partir de um modelo
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455253"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639098"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
 
