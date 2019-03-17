@@ -1,7 +1,7 @@
 ---
 title: Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como criar e importar um tipo de informação confidencial personalizado para DLP no Centro de Conformidade e Segurança do Office 365.
-ms.openlocfilehash: 03121a76a7c7cf21d0ae21138c43bca594a7839b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455123"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639118"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365
 
