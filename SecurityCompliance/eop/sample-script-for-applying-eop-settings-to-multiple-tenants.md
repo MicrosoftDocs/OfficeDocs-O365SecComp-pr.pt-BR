@@ -11,43 +11,44 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: A seguinte amostra de script permite que os administradores do Microsoft Proteção do Exchange Online (EOP) que gerenciam vários locatários (empresas) usem o Windows PowerShell para aplicar configurações aos seus locatários.
-ms.openlocfilehash: 899cc51f80230e92b573803301f0e462205af61a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 787847721f46fc4b3caeec037e89306ef450141a
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028088"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670405"
 ---
-# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="c34ec-103">Amostra de script para aplicação de configurações de EOP a vários locatários</span><span class="sxs-lookup"><span data-stu-id="c34ec-103">Sample script for applying EOP settings to multiple tenants</span></span>
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="e5c1b-103">Amostra de script para aplicação de configurações de EOP a vários locatários</span><span class="sxs-lookup"><span data-stu-id="e5c1b-103">Sample script for applying EOP settings to multiple tenants</span></span>
 
-<span data-ttu-id="c34ec-104">A seguinte amostra de script permite que os administradores do Microsoft Proteção do Exchange Online (EOP) que gerenciam vários locatários (empresas) usem o Windows PowerShell para aplicar configurações aos seus locatários.</span><span class="sxs-lookup"><span data-stu-id="c34ec-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
+<span data-ttu-id="e5c1b-104">A seguinte amostra de script permite que os administradores do Microsoft Proteção do Exchange Online (EOP) que gerenciam vários locatários (empresas) usem o Windows PowerShell para aplicar configurações aos seus locatários.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
   
-### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="c34ec-105">Para executar um script ou cmdlet em vários locatários</span><span class="sxs-lookup"><span data-stu-id="c34ec-105">To run a script or cmdlet on multiple tenants</span></span>
+### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="e5c1b-105">Para executar um script ou cmdlet em vários locatários</span><span class="sxs-lookup"><span data-stu-id="e5c1b-105">To run a script or cmdlet on multiple tenants</span></span>
 
-1. <span data-ttu-id="c34ec-106">Usando um aplicativo como o Excel, crie um arquivo .csv (por exemplo, c:\scripts\inputfile.csv):</span><span class="sxs-lookup"><span data-stu-id="c34ec-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
+1. <span data-ttu-id="e5c1b-106">Usando um aplicativo como o Excel, crie um arquivo .csv (por exemplo, c:\scripts\inputfile.csv):</span><span class="sxs-lookup"><span data-stu-id="e5c1b-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
     
-1. <span data-ttu-id="c34ec-107">No arquivo .csv, especifique dois nomes de coluna: UserName e Cmdlet.</span><span class="sxs-lookup"><span data-stu-id="c34ec-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
+1. <span data-ttu-id="e5c1b-107">No arquivo .csv, especifique dois nomes de coluna: UserName e Cmdlet.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
     
-2. <span data-ttu-id="c34ec-p101">Para cada linha no arquivo .csv, adicione o nome de administrador do locatário na coluna UserName e o cmdlet a ser executado para esse locatário na coluna Cmdlet. Por exemplo, use admin@contoso.com e Get-AcceptedDomain.</span><span class="sxs-lookup"><span data-stu-id="c34ec-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
+2. <span data-ttu-id="e5c1b-p101">Para cada linha no arquivo .csv, adicione o nome de administrador do locatário na coluna UserName e o cmdlet a ser executado para esse locatário na coluna Cmdlet. Por exemplo, use admin@contoso.com e Get-AcceptedDomain.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
     
-2. <span data-ttu-id="c34ec-110">Copie o script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) em um editor como o Bloco de Notas, e salve o arquivo em um local (como c:\scripts) que facilite a localização dos arquivos .ps1.</span><span class="sxs-lookup"><span data-stu-id="c34ec-110">Copy the [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.</span></span> 
+2. <span data-ttu-id="e5c1b-110">Copie o script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) em um editor como o Bloco de Notas, e salve o arquivo em um local (como c:\scripts) que facilite a localização dos arquivos .ps1.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-110">Copy the [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.</span></span> 
     
-3. <span data-ttu-id="c34ec-111">Execute o script usando a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="c34ec-111">Run the script by using the following syntax:</span></span>
+3. <span data-ttu-id="e5c1b-111">Execute o script usando a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="e5c1b-111">Run the script by using the following syntax:</span></span>
+    ```Powershell
+     & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
+    ```
     
-     `&amp; "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"`
+    <span data-ttu-id="e5c1b-112">Veja um exemplo.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-112">Here's an example.</span></span> 
     
-    <span data-ttu-id="c34ec-112">Veja um exemplo.</span><span class="sxs-lookup"><span data-stu-id="c34ec-112">Here's an example.</span></span> 
-    
-  ```
-  &amp; "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
-  ```
+    ```Powershell
+    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+    ```
 
-4. <span data-ttu-id="c34ec-113">Cada locatário efetuará logon e executará o cmdlet.</span><span class="sxs-lookup"><span data-stu-id="c34ec-113">Each tenant will be logged on to, and the cmdlet will be run.</span></span>
+4. <span data-ttu-id="e5c1b-113">Cada locatário efetuará logon e executará o cmdlet.</span><span class="sxs-lookup"><span data-stu-id="e5c1b-113">Each tenant will be logged on to, and the cmdlet will be run.</span></span>
     
-## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="c34ec-114">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="c34ec-114">RunCmdletOnMultipleTenants.ps1</span></span>
-<span data-ttu-id="c34ec-115"><a name="RunCmdletOnMultipleTenants.ps1"> </a></span><span class="sxs-lookup"><span data-stu-id="c34ec-115"></span></span>
+## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="e5c1b-114">RunCmdletOnMultipleTenants. ps1</span><span class="sxs-lookup"><span data-stu-id="e5c1b-114">RunCmdletOnMultipleTenants.ps1</span></span>
+<span data-ttu-id="e5c1b-115"><a name="RunCmdletOnMultipleTenants.ps1"> </a></span><span class="sxs-lookup"><span data-stu-id="e5c1b-115"></span></span>
 
-```
+```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #  
