@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: A seguinte amostra de script permite que os administradores do Microsoft Proteção do Exchange Online (EOP) que gerenciam vários locatários (empresas) usem o Windows PowerShell para aplicar configurações aos seus locatários.
-ms.openlocfilehash: 899cc51f80230e92b573803301f0e462205af61a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 787847721f46fc4b3caeec037e89306ef450141a
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028088"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670405"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Amostra de script para aplicação de configurações de EOP a vários locatários
 
@@ -33,21 +33,22 @@ A seguinte amostra de script permite que os administradores do Microsoft Proteç
 2. Copie o script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) em um editor como o Bloco de Notas, e salve o arquivo em um local (como c:\scripts) que facilite a localização dos arquivos .ps1. 
     
 3. Execute o script usando a seguinte sintaxe:
-    
-     `&amp; "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"`
+    ```Powershell
+     & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
+    ```
     
     Veja um exemplo. 
     
-  ```
-  &amp; "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
-  ```
+    ```Powershell
+    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+    ```
 
 4. Cada locatário efetuará logon e executará o cmdlet.
     
-## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
+## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants. ps1
 <a name="RunCmdletOnMultipleTenants.ps1"> </a>
 
-```
+```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #  

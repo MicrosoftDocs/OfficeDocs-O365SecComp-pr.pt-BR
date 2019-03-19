@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524015"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670574"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática de zero horas-proteção contra spam e malware
 
@@ -72,7 +72,7 @@ Se você quiser desabilitar o ZAP para o seu locatário do Office 365, ou um con
     
 No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conteúdo chamada "Test".
     
-```
+```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
@@ -80,7 +80,7 @@ No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conte
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>O que acontece se uma mensagem legítima for movida para a pasta lixo eletrônico?
   
-Você deve seguir o processo de relatório normal para falsos positivos. A única razão pela qual a mensagem seria movida da caixa de entrada para a pasta lixo eletrônico seria porque o serviço determinou que a mensagem era spam ou mal-intencionada.
+Você deve seguir o processo de relatório normal para [falsos positivos](prevent-email-from-being-marked-as-spam.md). A única razão pela qual a mensagem seria movida da caixa de entrada para a pasta lixo eletrônico seria porque o serviço determinou que a mensagem era spam ou mal-intencionada.
   
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>E se eu usar a quarentena do Office 365 em vez da pasta lixo eletrônico?
   
@@ -88,7 +88,7 @@ ZAP não move mensagens para a quarentena da caixa de entrada neste momento.
   
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>E se eu tiver uma regra de fluxo de emails personalizada (regra bloquear/permitir)?
   
-Regras criadas por administradores (regras de fluxo de emails) ou regras de bloqueio e permissão têm precedência. Essas mensagens são excluídas dos critérios de recurso.
+Regras criadas por administradores (regras de fluxo de emails) ou regras de bloqueio e permissão têm precedência. Essas mensagens são excluídas dos critérios de recurso para que o fluxo de email siga a ação de regra (regra bloquear/permitir).
   
 ## <a name="related-topics"></a>Tópicos Relacionados
 

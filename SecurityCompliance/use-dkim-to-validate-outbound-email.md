@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 8792f41ade704c7742445646b3cb965561994d02
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524075"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670676"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -137,9 +137,9 @@ TTL:                3600
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>Habilitar a assinatura DKIM para o seu domínio personalizado no Office 365
 <a name="EnableDKIMinO365"> </a>
 
-Depois de publicar os registros CNAME no DNS, você estará pronto para habilitar a assinatura DKIM pelo Office 365. Para tanto, use o Centro de administração do Office 365 ou o PowerShell.
+Depois de publicar os registros CNAME no DNS, você estará pronto para habilitar a assinatura DKIM pelo Office 365. Você pode fazer isso por meio do centro de administração do Microsoft 365 ou usando o PowerShell.
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>Para habilitar a assinatura DKIM para o seu domínio personalizado por meio do Centro de administração do Office 365
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Para habilitar a assinatura do DKIM para o seu domínio personalizado por meio do centro de administração
 
 1. [Entre no Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
     

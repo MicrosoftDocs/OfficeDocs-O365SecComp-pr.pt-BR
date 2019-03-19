@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gerenciar seus destinatários de email. Como administrador, você pode executar determinadas tarefas de gerenciamento no Centro de administração do Exchange (EAC) ou usando o Windows PowerShell remoto, e verificar outras tarefas de gerenciamento executadas no Centro de administração do Microsoft Office 365.
-ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gerenciar seus destinatários de email. Como administrador, você pode executar determinadas tarefas de gerenciamento no centro de administração do Exchange (Eat) ou usar o Windows PowerShell remoto e verificar outras tarefas de gerenciamento executadas no centro de administração do Microsoft 365.
+ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341652"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670396"
 ---
 # <a name="manage-recipients-in-eop"></a>Gerenciar destinatários no EOP
 
-O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gerenciar seus destinatários de email. Como administrador, você pode executar determinadas tarefas de gerenciamento no Centro de administração do Exchange (EAC) ou usando o Windows PowerShell remoto, e verificar outras tarefas de gerenciamento executadas no Centro de administração do Microsoft Office 365.
+O Microsoft Proteção do Exchange Online (EOP) oferece várias maneiras de gerenciar seus destinatários de email. Como administrador, você pode executar determinadas tarefas de gerenciamento no centro de administração do Exchange (Eat) ou usar o Windows PowerShell remoto e verificar outras tarefas de gerenciamento executadas no centro de administração do Microsoft 365.
   
 O EOP oferece suporte a estes três tipos de destinatários:
   

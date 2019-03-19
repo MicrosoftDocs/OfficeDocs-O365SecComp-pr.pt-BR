@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: A Microsoft fornece ajudar para a EOP através de uma variedade de lugares e métodos incluindo auto-suporte e suporte assistido.
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027548"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670526"
 ---
 # <a name="help-and-support-for-eop"></a>Ajuda e suporte para EOP
 
@@ -38,7 +38,7 @@ Depois que você entra, o portal do Office 365 fornece informações sobre o sta
   
 ## <a name="assisted-support-from-microsoft"></a>Suporte assistido da Microsoft
 
-Você pode obter ajuda da Microsoft fazendo uma solicitação de novo serviço dentro do Centro de administração do Office 365 ou ligando pelo telefone. Assinantes do Premier Support têm mais opções de suporte.
+Você pode obter ajuda da Microsoft iniciando uma nova solicitação de serviço no centro de administração do Microsoft 365 ou ligando para o telefone. Assinantes do Premier Support têm mais opções de suporte.
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Suporte para assinantes do Microsoft Premier Support
 
@@ -48,7 +48,7 @@ Para saber mais sobre como o Suporte Premier pode ajudar sua organização a max
   
 ### <a name="ask-for-help-on-the-web"></a>Peça ajuda na web
 
-1. Entre no Centro de administração do Office 365.
+1. Faça logon no centro de administração do Microsoft 365.
     
 2. Vá em **Suporte** \> **Solicitar Suporte ao Cliente** \> **Nova Solicitação de Serviço**
     
@@ -56,7 +56,7 @@ Para saber mais sobre como o Suporte Premier pode ajudar sua organização a max
     
 ### <a name="ask-for-help-on-the-telephone"></a>Peça ajuda pelo telefone
 
-1. Entre no Centro de administração do Office 365.
+1. Faça logon no centro de administração do Microsoft 365.
     
 2. Para problemas gerais de produto vá em **Suporte** \> **Solicitar Suporte ao Cliente** \> **Ligar para o suporte técnico**.
     
@@ -83,6 +83,6 @@ A Microsoft fornece números de telefone locais ou chamadas gratuitas para supor
 
 [Avisos de direitos autorais de terceiros](third-party-copyright-notices.md)
   
-[Acessibilidade para pessoas com deficiência](accessibility-for-people-with-disabilities.md)
+[Acessibilidade para pessoas com deficiências](accessibility-for-people-with-disabilities.md)
   
 

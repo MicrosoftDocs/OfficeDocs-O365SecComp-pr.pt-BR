@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Se você enviar um alto volume de emails de domínio não registrados, correrá o risco de que seu email fique bloqueado. Leia este artigo para saber mais.
-ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276221"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670536"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Email de domínio não registrado: o que você precisa saber
 
@@ -37,7 +37,7 @@ Após o comprometimento, os locatários serão impedidos de enviar emails de sa�
 
 Há várias coisas que você precisa fazer se você estiver bloqueado para envio de domínios não registrados:
 
-1. Certifique-se de registrar todos os seus domínios no centro de administração do Office 365. Mais informações podem ser encontradas [aqui](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Certifique-se de registrar todos os seus domínios no centro de administração do Microsoft 365. Mais informações podem ser encontradas [aqui](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Procure por conectores incomuns. Os atores mal-intencionados geralmente criarão novos conectores de entrada em seu locatário do Office 365 para enviar spam. Você pode encontrar mais informações sobre como verificar seus conectores [aqui](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 
@@ -48,9 +48,9 @@ Há várias coisas que você precisa fazer se você estiver bloqueado para envio
 
 4. Após concluir, você precisará ligar para o suporte da Microsoft e solicitar que o locatário seja desbloqueado para envio de domínios não registrados.  Fornecer o código de erro é útil, mas você precisará provar que seu ambiente está protegido e que o spam não será enviado novamente. É possível encontrar mais informações sobre como abrir um caso de suporte [aqui](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
-[Proteção antispam de emails do Office 365](anti-spam-protection.md)
+[Office 365 email anti-spam protection](anti-spam-protection.md)
 
 [Notificações de falha na entrega de email no Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 

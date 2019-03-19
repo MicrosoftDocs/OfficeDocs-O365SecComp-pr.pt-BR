@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Aqui, respondemos às dúvidas gerais mais comuns sobre o Proteção do Exchange Online (EOP), o serviço de filtragem de email hospedado na nuvem da Microsoft. Para ver mais tópicos de perguntas frequentes, vá para os seguintes links:'
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027378"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670446"
 ---
 # <a name="eop-general-faq"></a>Perguntas frequentes gerais sobre o EOP
 
@@ -26,13 +26,13 @@ Aqui, respondemos às dúvidas gerais mais comuns sobre o Proteção do Exchange
     
 - [Perguntas frequentes sobre administração delegada](delegated-administration-faq.md)
     
-- [Perguntas frequentes sobre a proteção antispam](../anti-spam-protection-faq.md)
+- [PERGUNTAS FREQUENTEs sobre proteção antispam](../anti-spam-protection-faq.md)
     
-- [Remetentes seguros e bloqueados listas de remetentes no Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
+- [Listas de remetentes seguros e remetentes bloqueados no Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
-- [Perguntas Frequentes sobre a Quarentena](../quarantine-faq.md)
+- [Quarantine FAQ](../quarantine-faq.md)
     
-- [Perguntas frequentes sobre proteção de antimalware](../anti-malware-protection-faq-eop.md)
+- [PERGUNTAS FREQUENTEs sobre proteção contra malware](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -64,7 +64,7 @@ R. O Office 365 é o nome dado a um conjunto de produtos e serviços que podem s
   
  **P. O EOP tem um portal de comunicação em que posso obter informações sobre problemas conhecidos e resoluções esperadas? E quanto a novos recursos?**
   
-R. O Centro de administração do Office 365 terá algumas dessas informações. Se você foi afetado por um Evento de Nível de Serviço, deverá ver um alerta de comunicação (normalmente acompanhado por um ícone de sino) depois de entrar no Centro de administração do Office 365. Recomendamos ler as informações e executar as ações necessárias para qualquer item, conforme apropriado.
+R. O centro de administração do Microsoft 365 terá algumas dessas informações. Se você for afetado por um evento de nível de serviço, deverá ver um alerta de comunicação (normalmente acompanhado por um ícone de sino) após entrar no centro de administração do Microsoft 365. Recomendamos ler as informações e executar as ações necessárias para qualquer item, conforme apropriado.
   
 Em relação aos novos recursos do EOP, o [Mapa de recursos do Office 365 para empresas](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) é uma boa ferramenta para encontrar informações sobre novos recursos. Postaremos também artigos de blog sobre os novos recursos no site [Office Blogs](https://go.microsoft.com/fwlink/p/?LinkId=392724). 
   

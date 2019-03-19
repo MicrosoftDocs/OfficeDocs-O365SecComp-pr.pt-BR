@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Saiba como configurar o suporte para mensagens anônimas de fontes IPv6 para o Exchange Online Protection e o Exchange Online.
-ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 328cef29b7f8b9637ece7aca729ad1d706351667
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276351"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670516"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Suporte para mensagens de email de entrada anônimas por IPv6
 
-Exchange Online Protection (EOP) e Exchange Online suportam o recebimento de mensagens de email de entrada anônimas sobre comunicações IPv6 de remetentes que não enviam mensagens sobre Transport Layer Security (TLS). Você pode optar por receber mensagens por IPv6 solicitando essa funcionalidade do suporte da Microsoft abrindo o centro de administração do Office 365 em [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), clicando em **suporte**e, em seguida, clicando em **nova solicitação de serviço**. Se você não optar por IPv6, continuará recebendo mensagens sobre IPv4.
+Exchange Online Protection (EOP) e Exchange Online suportam o recebimento de mensagens de email de entrada anônimas sobre comunicações IPv6 de remetentes que não enviam mensagens sobre Transport Layer Security (TLS). Você pode optar por receber mensagens por IPv6 solicitando essa funcionalidade do suporte da Microsoft abrindo o centro de administração do Microsoft 365 em [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home), clicando em **suporte**e, em seguida, clicando em **nova solicitação de serviço**. Se você não optar por IPv6, continuará recebendo mensagens sobre IPv4.
   
 Remetentes que transmitem mensagens para serviço sobre IPv6 devem cumprir com os dois requisitos a seguir:
   
@@ -42,7 +42,7 @@ Se você não tiver a opção de receber mensagens sobre IPv6 e o remetente tent
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 [Suporte para validação de mensagens assinadas por DKIM](support-for-validation-of-dkim-signed-messages.md)
   

@@ -1,5 +1,5 @@
 ---
-title: 'Centro de administração do Exchange na Proteção do Exchange Online '
+title: 'Centro de administração do Exchange no Exchange Online Protection '
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,14 +15,14 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: O EAC (Centro de administração do Exchange) é o console de gerenciamento baseado na Web da EOP (Proteção do Exchange Online) da Microsoft.
-ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d1e3ee90f3df20359634ae55286270b49d766324
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220461"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670426"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administração do Exchange na Proteção do Exchange Online 
+# <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administração do Exchange no Exchange Online Protection 
 
 O EAC (Centro de administração do Exchange) é o console de gerenciamento baseado na Web da EOP (Proteção do Exchange Online) da Microsoft. 
   
@@ -32,9 +32,9 @@ Procurando a versão do Exchange Online deste tópico? Confira [Exchange admin c
   
 ## <a name="accessing-the-eac"></a>Acessando o EAC
 
-Na maioria dos casos, os clientes da EOP acessam o EAC por meio do Centro de administração do Office 365. Você encontra um link para a EOP no menu suspenso no bloco **Administrador**, que fica ao lado do bloco **Eu**. Clique no bloco **Administrador** e selecione **Proteção do Exchange Online** no menu suspenso para ir até o EAC. 
+Na maioria dos casos, os clientes do EOP acessarão a Eat através do centro de administração do Microsoft 365. Você encontra um link para a EOP no menu suspenso no bloco **Administrador**, que fica ao lado do bloco **Eu**. Clique no bloco **Administrador** e selecione **Proteção do Exchange Online** no menu suspenso para ir até o EAC. 
   
-Você também pode acessar a página de entrada do Eat diretamente por meio da seguinte https://admin.protection.outlook.com/ecp/\<companydomain\>URL:. Por exemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Após especificar suas credenciais de usuário, você será levado diretamente para o Eat.
+You can also access the EAC sign in page directly via the following URL: https://admin.protection.outlook.com/ecp/\<companydomain\>. For example, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. After specifying your user credentials you will be taken directly into the EAC.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementos da interface do usuário comuns no EAC
 
@@ -85,23 +85,23 @@ Quando você seleciona um objeto na exibição de lista, informações sobre ess
   
 ### <a name="me-tile-and-help"></a>Bloco Eu e Ajuda
 
-O bloco **Eu** permite sair do EAC e entrar como um usuário diferente. No menu suspenso **Ajuda**![Ícone Ajuda](media/ITPro-EAC-HelpIcon.gif), é possível realizar as seguintes ações: 
+O bloco **Eu** permite sair do EAC e entrar como um usuário diferente. No menu ****![suspenso do ícone](media/ITPro-EAC-HelpIcon.gif) ajuda da ajuda, é possível executar as seguintes ações: 
   
-1. **Ajuda** Clique em ![Ícone Ajuda](media/ITPro-EAC-HelpIcon.gif) para exibir o conteúdo da ajuda online. 
+1. **Ajuda** Clique em ![Ícone Ajuda](media/ITPro-EAC-HelpIcon.gif) para visualizar o conteúdo de ajuda online. 
     
-2. **Desabilitar bolha de Ajuda** A bolha de Ajuda exibe ajuda contextual para os campos quando você cria ou edita um objeto. Você pode desativar a bolha de Ajuda ou ativá-la se tiver sido desabilitada. 
+2. **Desabilitar bolha de ajuda** A bolha de ajuda exibe a ajuda contextual para os campos quando você cria ou edita um objeto. Você pode desativar a bolha de Ajuda ou ativá-la se tiver sido desabilitada. 
     
 3. **Direitos autorais** Clique neste link para ler o aviso de direitos autorais para o Exchange Online Protection. 
     
-4. **Privacidade** Clique para ler a política de privacidade do Proteção do Exchange Online. 
+4. **Privacidade** Clique para ler a política de privacidade do Exchange Online Protection. 
     
 ## <a name="supported-browsers"></a>Navegadores com suporte
 
-Para ter a melhor experiência ao usar o EAC, recomendamos que você sempre use os navegadores, clientes do Office e aplicativos mais recentes. Também recomendamos que você instale as atualizações de software quando elas estiverem disponíveis. Para obter mais informações sobre os navegadores suportados e requisitos do sistema para o serviço, consulte [Requisitos do sistema do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
+Para ter a melhor experiência ao usar o EAC, recomendamos que você sempre use os navegadores, clientes do Office e aplicativos mais recentes. Também recomendamos que você instale as atualizações de software quando elas estiverem disponíveis. Para obter mais informações sobre os navegadores e requisitos de sistema compatíveis com o serviço, confira [requisitos de sistema do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
   
 ## <a name="supported-languages-in-eop"></a>Idiomas com suporte na EOP
 
-Os seguintes idiomas têm suporte e estão disponíveis para o Proteção do Exchange Online:
+Os seguintes idiomas têm suporte e estão disponíveis para o Exchange Online Protection.
   
 - Amárico
     
@@ -165,7 +165,7 @@ Os seguintes idiomas têm suporte e estão disponíveis para o Proteção do Exc
     
 - Cazaque
     
-- Quissuaíli
+- Kiswahili
     
 - Coreano
     
@@ -185,7 +185,7 @@ Os seguintes idiomas têm suporte e estão disponíveis para o Proteção do Exc
     
 - Norueguês (Nynorsk)
     
-- Odia
+- Oriá
     
 - Persa
     
@@ -213,7 +213,7 @@ Os seguintes idiomas têm suporte e estão disponíveis para o Proteção do Exc
     
 - Tâmil
     
-- Télugo
+- Telugu
     
 - Tailandês
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do onedrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo que possa estar relacionado a uma solicitação de entidade de dados do RGPD.
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296354"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670716"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
@@ -54,7 +54,7 @@ Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas 
     
     ![A nova lista suspensa de pesquisa](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Você pode escolher uma destas opções:
+    Utilize a guia Pesquisas de DNS Interno para especificar se serão utilizados servidores DNS configurados em um adaptador de rede instalado no servidor ou se serão utilizados servidores DNS específicos ao resolver os endereços de servidores de email para entrega de mensagens internas. Servidores DNS internos são usados para resolver os endereços IP de servidores que estão dentro da organização.
     
   - **Pesquisa orientada** : essa opção inicia um assistente que orienta você durante a criação da pesquisa. A interface do usuário para selecionar locais de conteúdo e compilar a consulta de pesquisa é a mesma que a nova opção de **pesquisa** . 
     
@@ -148,21 +148,21 @@ Para obter informações mais detalhadas sobre estatísticas de pesquisa, consul
   
 ## <a name="export-search-results"></a>Exportar resultados de pesquisa
 
-Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles podem ser baixados para seu computador como arquivos PST ou como mensagens individuais (arquivos. msg). Quando você exporta conteúdo de sites do SharePoint e do OneDrive, cópias de documentos nativos do Office são exportadas. Também existem documentos adicionais e relatórios incluídos nos resultados de pesquisa exportados. Você também pode apenas exportar o relatório de resultados de pesquisa e não os itens reais.
+Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles podem ser baixados para seu computador como arquivos PST ou como mensagens individuais (arquivos. msg). Quando você exporta conteúdo de sites do SharePoint e do OneDrive, cópias de documentos nativos do Office são exportadas. Também há outros documentos e relatórios que são incluídos nos resultados de pesquisa exportados. Você também pode apenas exportar o relatório de resultados de pesquisa e não os itens reais.
   
 Para exportar os resultados da pesquisa:
   
-1. Na página de **pesquisa de conteúdo** no centro &amp; de conformidade de segurança, clique em **abrir** e, em seguida, clique na pesquisa para a qual você deseja exportar os resultados da pesquisa. 
+1. Na página de **pesquisa de conteúdo** no centro &amp; de conformidade de segurança, clique na pesquisa para a qual você deseja exportar os resultados da pesquisa. 
     
 2. Na página sair ![, clique em exportar ícone](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de resultados de pesquisa **mais**e clique em **Exportar resultados**. Observe que você também pode exportar um relatório de resultados de pesquisa.
     
-3. Conclua as seções na página do submenu **Exportar resultados**. Certifique-se de usar a barra de rolagem para exibir todas as opções de exportação. 
+3. Conclua as seções na página **importar resultados** de saída. Certifique-se de usar a barra de rolagem para exibir todas as opções de exportação. 
     
 Para obter instruções mais detalhadas e dicas de solução de problemas, consulte:
   
 - [Exportar resultados de pesquisa do centro de conformidade &amp; de segurança do Office 365](export-search-results.md)
     
-- [Exportar um relatório da Pesquisa de Conteúdo](export-a-content-search-report.md)
+- [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
     
 
   
@@ -219,7 +219,7 @@ Lembre-se do seguinte ao usar a lista de palavras-chave para criar uma consulta 
   
 - Você também pode preparar uma lista de palavras-chave ou frases de palavras-chave em um arquivo do Excel ou em um arquivo de texto sem formatação e, em seguida, copiar e colar a lista na lista de palavras-chave. Para fazer isso, você precisa selecionar a caixa de seleção **Mostrar lista de palavras-chave** . Em seguida, clique na primeira linha da lista de palavras-chave e cole sua lista. Cada linha do Excel ou arquivo de texto será colada em uma linha separada na lista de palavras-chave. 
     
-- Após criar uma consulta usando a lista de palavras-chave, é uma boa ideia verificar a sintaxe da consulta de pesquisa para fazer a consulta de pesquisa é o que você pretendia. Na consulta de pesquisa exibida em **consulta** no painel de detalhes, as palavras-chave são separadas pelo texto **(c:s)**. isso indica que as palavras-chave estão conectadas por um operador lógico semelhante em funcionalidade ao operador **or** . Da mesma forma, se a consulta de pesquisa incluir condições, as palavras-chave e as condições serão separadas pelo texto **(c:c)**. isso indica que as palavras-chave estão conectadas às condições com um operador lógico semelhante em funcionalidade ao **e** operador. Veja a seguir um exemplo da consulta de pesquisa (exibido no painel de detalhes) que ocorre quando se usa a lista de palavras-chave e uma condição. 
+- Após criar uma consulta usando a lista de palavras-chave, é uma boa ideia verificar a sintaxe da consulta de pesquisa para fazer a consulta de pesquisa é o que você pretendia. Na consulta de pesquisa exibida em **consulta** no painel de detalhes, as palavras-chave são separadas pelo texto **(c:s)**. Isso indica que as palavras-chave estão conectadas por um operador lógico semelhante em funcionalidade ao operador **or** . Da mesma forma, se a consulta de pesquisa incluir condições, as palavras-chave e as condições serão separadas pelo texto **(c:c)**. Isso indica que as palavras-chave estão conectadas às condições com um operador lógico semelhante em funcionalidade ao operador **and** . Veja a seguir um exemplo da consulta de pesquisa (exibido no painel de detalhes) que ocorre quando se usa a lista de palavras-chave e uma condição. 
     
     ![Exemplo da consulta que é criada ao usar a lista de palavras-chave e uma condição](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -342,7 +342,7 @@ Você pode visualizar tipos de arquivo suportados no painel de visualização. S
     
 Além disso, há suporte para os seguintes tipos de contêiner de arquivos. Você pode exibir a lista de arquivos no contêiner no painel de visualização.
   
-- .zip
+- . zip
     
 - . gzip
     

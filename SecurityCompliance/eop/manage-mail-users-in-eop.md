@@ -11,25 +11,25 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: A definição de usuários de email é uma parte importante do gerenciamento do serviço Exchange Online Protection (EOP).
-ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9ab4420dd9fcf6c056bc661b5f3646672a89a683
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341022"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670636"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gerenciar usuários de email no EOP
 
 A definição de usuários de email é uma parte importante do gerenciamento do serviço Exchange Online Protection (EOP). Existem várias maneiras possíveis de gerenciar usuários no EOP:
   
-- Usar a sincronização de diretórios para gerenciar usuários de email: se sua empresa tiver contas de usuário existentes em um ambiente do Active Directory local, você poderá sincronizar essas contas no Azure Active Directory (AD), onde uma cópia das contas está armazenada na nuvem. Ao sincronizar suas contas de usuário existentes com o Azure Active Directory, você pode exibir esses usuários no painel **destinatários** do centro de administração do Exchange (Eat). É recomendável usar a sincronização de diretórios. 
+- Utilizar a sincronização de diretórios para gerenciar usuários de email: se sua empresa possui contas de usuário existentes em um ambiente do Active Directory local, é possível sincronizar essas contas com o Azure Active Directory (AD), onde uma cópia dessas contas fica armazenada na nuvem. Ao sincronizar suas contas de usuário existentes com o Azure Active Directory, será possível exibir esses usuários no painel **Destinatários** do Centro de administração do Exchange (EAC). Recomendamos usar a sincronização de diretório. 
     
 - Usar o EAC para gerenciar usuários de email: adicione e gerencie usuários de email diretamente no EAC. Esse é o modo mais fácil de adicionar usuários de email e é útil para adicionar um usuário por vez.
     
 - Usar o Windows PowerShell remoto para gerenciar usuários de email: adicione e gerencie usuários de email executando o Windows PowerShell remoto. Este método é útil para adicionar vários registros e criar scripts.
     
 > [!NOTE]
-> Você pode adicionar usuários no Centro de administração do Office 365, no entanto, esses usuários não podem ser usados como destinatários de email. 
+> Você pode adicionar usuários no centro de administração do Microsoft 365, no entanto, esses usuários não podem ser usados como destinatários de email. 
   
 ## <a name="before-you-begin"></a>Antes de você começar
 
@@ -45,10 +45,10 @@ A definição de usuários de email é uma parte importante do gerenciamento do 
 Esta seção oferece informações sobre o gerenciamento de usuários de email usando a sincronização de diretório.
   
 > [!IMPORTANT]
-> Se você utilizar a sincronização de diretórios para gerenciar seus destinatários, ainda é possível adicionar e gerenciar usuários no Centro de administração do Office 365, porém eles não serão sincronizados com seu Active Directory local. Isso porque a sincronização de diretórios sincroniza apenas destinatários de seu Active Directory local com a nuvem. 
+> Se você usar a sincronização de diretório para gerenciar seus destinatários, ainda poderá adicionar e gerenciar usuários no centro de administração do Microsoft 365, mas eles não serão sincronizados com o Active Directory local. Isso porque a sincronização de diretórios sincroniza apenas destinatários de seu Active Directory local com a nuvem. 
   
 > [!TIP]
->  O uso da sincronização de diretórios é recomendado para uso com os seguintes recursos: > **Outlook Safe Sender e listas** de remetentes bloqueados-quando sincronizado com o serviço, essas listas terão precedência sobre a filtragem de spam no serviço. Isso permite que os usuários gerenciem suas próprias listas de remetentes seguros e remetentes bloqueados por usuário ou por domínio. **bloqueio de borda baseado em diretório do > (DBEB)** – para obter mais informações sobre o DBEB, confira [usar o bloqueio de borda baseado em diretório para rejeitar mensagens enviadas a destinatários](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)inválidos. **quarentena de spam do usuário final** do >-para acessar a quarentena de spam do usuário final, os usuários finais devem ter uma ID de usuário e uma senha válida do Office 365. Os clientes do EOP que protegem caixas de correio locais devem ser usuários de email válidos. **regras de fluxo** de emails do >-quando você usa a sincronização de diretório, os usuários e grupos existentes do Active Directory são carregados automaticamente para a nuvem e você pode criar regras de fluxo de emails (também conhecidas como regras de transporte) que direcionam usuários específicos e/ ou grupos sem precisar adicioná-los manualmente por meio do PowerShell de proteção do Exchange Online ou do Eat. Observe que os [grupos dinâmicos de distribuição](https://go.microsoft.com/fwlink/?LinkId=507569) não podem ser sincronizados por meio da sincronização de diretórios. 
+>  A sincronização de diretório é recomendada para uso com os seguintes recursos: > **Listas de remetentes confiáveis e bloqueados do Outlook**: quando sincronizadas com o serviço, essas listas terão precedência sobre a filtragem de spam. Isso permite que os usuários gerenciem suas próprias listas de remetentes confiáveis e bloqueados por usuário ou por domínio. > **Bloqueio de Borda Baseado em Diretório (DBEB)**: para obter mais informações sobre DBEB, consulte [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Quarentena de spam de usuário final**: para acessar a quarentena de spam de usuário final, os usuários finais devem ter uma ID de usuário e senha válidas no Office 365. Os clientes do EOP que estão protegendo caixas de correio locais devem ser usuários de email válidos. > **Regras de fluxo** de emails-quando você usa a sincronização de diretório, os usuários e grupos existentes do Active Directory são carregados automaticamente para a nuvem e você pode criar regras de fluxo de emails (também conhecidas como regras de transporte) que direcionam usuários específicos e/ou grupos sem precisar adicioná-los manualmente por meio do PowerShell de proteção do Exchange Online ou do Eat. Observe que os [grupos dinâmicos de distribuição](https://go.microsoft.com/fwlink/?LinkId=507569) não podem ser sincronizados através da sincronização de diretório. 
   
  **Antes de você começar**
   
@@ -75,7 +75,7 @@ Obtenha as permissões necessárias e prepare-se para a sincronização de diret
 
 Esta seção oferece informações sobre a adição e o gerenciamento de usuários de email diretamente no EAC.
   
- **Antes de você começar**
+ **Antes de iniciar**
   
 Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o Entrada "Usuários, contatos e grupos de funções" no tópico [Permissões de recurso no EOP](feature-permissions-in-eop.md).
   
@@ -101,7 +101,7 @@ Para executar este procedimento ou estes procedimentos, você precisa receber pe
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>Adicionar ou remover um usuário de email no EAC
 
-- No Eat, vá para **contatos**de **destinatários** \> . Na lista de usuários, clique no usuário que você deseja exibir ou alterar e selecione **Editar** ![ícone](../media/ITPro-EAC-EditIcon.gif) de edição para atualizar as configurações do usuário, conforme necessário. Você pode alterar o nome do usuário, o alias ou as informações de contato e pode registrar informações detalhadas sobre a função do usuário na organização. Você também pode selecionar um usuário e, em ****![seguida, escolher](../media/ITPro-EAC-RemoveIcon.gif) Remover ícone para excluí-lo. 
+- No EAC, acesse **Destinatários** \> **Contatos**. Na lista de usuários, clique no usuário que você deseja exibir ou alterar e selecione **Editar** ![ícone](../media/ITPro-EAC-EditIcon.gif) de edição para atualizar as configurações do usuário, conforme necessário. Você pode alterar o nome, o alias ou as informações de contato do usuário, e pode registrar informações detalhadas sobre a função do usuário na organização. Você também pode selecionar um usuário e escolher **Remover**![ícone Remover](../media/ITPro-EAC-RemoveIcon.gif) para excluí-lo. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Usar o Windows PowerShell remoto para gerenciar usuários de email
 
@@ -133,7 +133,7 @@ O exemplo usa o cmdlet [New-EOPMailUser](http://technet.microsoft.com/library/05
     
 - A senha é Pa$$word1.
     
-```
+```Powershell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
@@ -141,7 +141,7 @@ New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -N
   
 Execute o cmdlet [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) conforme as etapas a seguir para mostrar as informações sobre o novo usuário de email Diogo Martins: 
   
-```
+```Powershell
 Get-User "Jeffrey Zeng"
 
 ```
@@ -152,13 +152,13 @@ Use os cmdlets [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad
   
 Este exemplo define o endereço de email externo de Brenda Fernandes.
   
-```
+```Powershell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 Este exemplo define a propriedade Company de todos os usuários de email como Contoso.
   
-```
+```Powershell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
@@ -168,14 +168,14 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
   
 No exemplo anterior, alteramos as propriedades do usuário de email Brenda Fernandes, use o cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) para verificar as alterações. (Observe que você pode visualizar várias propriedades para vários contatos de email.) 
   
-```
+```Powershell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List 
 
 ```
 
 No exemplo anterior em que a propriedade Company foi definida como Contoso para todos os usuários de email, execute o comando a seguir para verificar as alterações:
   
-```
+```Powershell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
@@ -186,7 +186,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
   
 Este exemplo usa o cmdlet [Remove-EOPMailUser](http://technet.microsoft.com/library/cb91dc26-ed22-4d3c-9f64-df9df1754edb.aspx) para excluir o usuário Diogo Martins: 
   
-```
+```Powershell
 Remove-EOPMailUser -Identity Jeffrey
 ```
 
@@ -194,7 +194,7 @@ Remove-EOPMailUser -Identity Jeffrey
   
 Execute o cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) da seguinte maneira. Uma mensagem de erro deve ser exibida já que o usuário não existe mais. 
   
-```
+```Powershell
 Get-Recipient Jeffrey | fl
 ```
 

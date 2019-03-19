@@ -1,5 +1,5 @@
 ---
-title: Criar, gerar relatórios e excluir várias Pesquisas de Conteúdo
+title: Criar, relatar e excluir várias pesquisas de conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell &amp; no centro de conformidade de segurança do Office 365.
-ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213231"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670656"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, gerar relatórios e excluir várias Pesquisas de Conteúdo
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, relatar e excluir várias pesquisas de conteúdo
 
  Criar e relatar rapidamente pesquisas de descoberta é geralmente uma etapa importante na descoberta eletrônica e investigações quando você está tentando saber mais sobre os dados subjacentes, e a riqueza e a qualidade das pesquisas. Para ajudá-lo a fazer isso, &amp; o centro de conformidade de segurança oferece um conjunto de cmdlets do Windows PowerShell para automatizar tarefas de pesquisa de conteúdo demoradas. Esses scripts fornecem uma maneira rápida e fácil de criar várias pesquisas e, em seguida, executar relatórios dos resultados estimados da pesquisa que podem ajudá-lo a determinar a quantidade de dados em questão. Você também pode usar os scripts para criar versões diferentes de pesquisas para comparar os resultados que cada um produz. Esses scripts podem ajudá-lo a identificar e analisar os dados de forma rápida e eficiente. 
   
@@ -52,15 +52,15 @@ O arquivo de valor separado por vírgula (CSV) que você criou nesta etapa cont�
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    A primeira linha, ou linha de cabeçalho, do arquivo lista os parâmetros que serão usados pelo cmdlet **New-ComplianceSearch** (no script na etapa 3) para criar novas pesquisas de conteúdo. Cada nome de parâmetro é separado por uma vírgula. Certifique-se de que não haja espaços na linha de cabeçalho. Cada linha sob a linha de cabeçalho representa os valores de parâmetro de cada pesquisa. Certifique-se de substituir os dados de espaço reservado no arquivo CSV pelos dados reais. 
+    A primeira linha, ou linha de cabeçalho, do arquivo lista os parâmetros que serão usados pelo cmdlet **New-ComplianceSearch** (no script na etapa 3) para criar novas pesquisas de conteúdo. Os nomes dos parâmetros são separados por vírgula. Certifique-se de que não haja espaços na linha de cabeçalho. Cada linha sob a linha de cabeçalho representa os valores de parâmetro de cada pesquisa. Certifique-se de substituir os dados de espaço reservado no arquivo CSV pelos dados reais. 
     
 2. Abra o arquivo. txt no Excel e use as informações da tabela a seguir para editar o arquivo com as informações de cada pesquisa. 
     
-    |**Parameter**|**Descrição**|
+    |**Parâmetro**|**Descrição**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |O endereço SMTP da caixa de correio do usuário.  <br/> |
-    | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
-    | `ContentMatchQuery` <br/> |A consulta de pesquisa para a pesquisa. Para obter mais informações sobre como criar uma consulta de pesquisa, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).<br/> |
+    | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `ContentMatchQuery` <br/> |A consulta de pesquisa para a pesquisa. Para obter mais informações sobre como criar uma consulta de pesquisa, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Para email, a data de ou após uma mensagem foi recebida por um destinatário ou enviada pelo remetente. Para documentos em sites do SharePoint ou do OneDrive for Business, a data da última modificação de um documento.  <br/> |
     | `EndDate` <br/> |Para email, a data de ou antes de uma mensagem foi enviada por um enviado pelo usuário. Para documentos em sites do SharePoint ou do OneDrive for Business, a data em ou antes da última modificação de um documento.  <br/> |
    
@@ -98,7 +98,7 @@ Para executar o script:
 
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `CreateSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
-  ```
+  ```Powershell
   # Get the Search Group ID and the location of the CSV input file
   $searchGroup = Read-Host 'Search Group ID'
   $csvFile = Read-Host 'Source CSV file'
@@ -175,7 +175,7 @@ Para executar o script:
 
 2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
-    ```
+    ```Powershell
     .\CreateSearches.ps1
     ```
 
@@ -195,7 +195,7 @@ Após criar as pesquisas, a próxima etapa é executar um script que exibe um re
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `SearchReport.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
-  ```
+  ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
   $outputFile = Read-Host 'Enter a file name or file path to save the report to a .csv file. Leave blank to only display the report'
   $searches = Get-ComplianceSearch | ?{$_.Name -clike $searchGroup + "_*"}
@@ -250,7 +250,7 @@ Após criar as pesquisas, a próxima etapa é executar um script que exibe um re
 
 2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
-    ```
+    ```Powershell
     .\SearchReport.ps1
     ```
 
@@ -273,7 +273,7 @@ Como você pode estar criando muitas pesquisas, esse último script simplesmente
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `DeleteSearches.ps1`. Salve o arquivo na mesma pasta onde você salvou os outros arquivos.
     
-  ```
+  ```Powershell
   # Delete all searches in a search group
   $searchGroup = Read-Host 'Search Group ID'
   Get-ComplianceSearch |
@@ -289,7 +289,7 @@ Como você pode estar criando muitas pesquisas, esse último script simplesmente
 
 2. No Windows PowerShell, vá para a pasta onde você salvou o script na etapa anterior e execute o script; por exemplo:
     
-    ```
+    ```Powershell
     .\DeleteSearches.ps1
     ```
 

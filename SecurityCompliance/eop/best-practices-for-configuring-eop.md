@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estas práticas recomendadas para a EOP (Proteção do Exchange Online) a fim de evitar erros comuns de configuração e obter êxito.
-ms.openlocfilehash: a70fe44eb80b49c6e8c6ea46bc1d38b92bd07279
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d58b03d4ac3e11c863cec32430236ca9f0cea13e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670706"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Práticas recomendadas para a configuração do EOP
   
@@ -32,16 +32,16 @@ Se sua organização tiver contas de usuário existentes em um ambiente local do
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>Personalização de registro SPF para ajudar a evitar falsificação
 
-Ao configurar o EOP, você adicionou um registro SPF (Sender Policy Framework) para o EOP aos seus registros DNS. O registro SPF ajuda a evitar a falsificação. Para obter mais informações sobre como um registro SPF impede o spoofing e como você pode adicionar seus endereços IP locais ao registro SPF, consulte [set up SPF in Office 365 para ajudar a impedir a falsificação](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+Quando você configurou a EOP, adicionou um registro SPF (estrutura de diretiva de remetente) da EOP aos seus registros DNS. O registro SPF ajuda a evitar a falsificação. Para obter mais informações sobre como um registro SPF impede o spoofing e como você pode adicionar seus endereços IP locais ao registro SPF, consulte [set up SPF in Office 365 para ajudar a impedir a falsificação](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
   
 ## <a name="set-anti-spam-options"></a>Definir as opções de antispam
 
-Gerencie suas configurações de filtro de conexão adicionando endereços IP a listas de IPs permitidos e IP bloqueados e selecionando a opção **habilitar lista segura** , que deve reduzir o número de falsos positivos (mensagens boas classificadas como spam) recebidas. Saiba mais em [Configurar a política de filtro de conexão](../configure-the-connection-filter-policy.md). Para obter mais configurações de spam que se apliquem a toda a organização, confira [como ajudar a garantir que uma mensagem não seja marcada como spam](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [bloqueie spam de email com o filtro de spam do Office 365 para evitar problemas falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Isso será útil se você tiver controle de nível de administrador e quiser impedir falsos positivos ou falsos negativos.
+Gerencie as configurações de filtro de conexão adicionando endereços IP das listas de IPs Permitidos e de IPs Bloqueados e selecionando a opção **Habilitar lista de confiança**, o que deve reduzir o número de falsos positivos (emails bons que são classificados como spam) recebidos. Saiba mais em [Configurar a política de filtro de conexão](../configure-the-connection-filter-policy.md). Para mais configurações de spam que se apliquem a toda a organização, veja [Como ajudar a garantir que uma mensagem não será marcada como spam](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Elas serão úteis se você tiver o controle de nível de administrador e quiser impedir falsos positivos ou falsos negativos.
   
 Gerencie seus filtros de conteúdo examinando e opcionalmente alterando as configurações padrão. Por exemplo, você pode alterar a ação para o que acontece com as mensagens detectadas por spam. Se você quiser buscar uma abordagem agressiva para a filtragem de spam, configure opções avançadas de filtragem de spam. Recomendamos que você teste essas opções primeiro antes de implementá-las em seu ambiente de produção (ligando-as), recomenda-se que as organizações que se preocupam com phishing ativem a opção **registro SPF: falha** grave. Saiba mais em [configurar suas políticas de filtro de spam](../configure-your-spam-filter-policies.md) e [Opções avançadas de filtragem de spam](../advanced-spam-filtering-asf-options.md).
   
 > [!IMPORTANT]
-> Se você estiver usando a ação de filtro de conteúdo padrão, **mova a mensagem para a pasta lixo eletrônico**, para garantir que esta ação funcione com caixas de correio locais, você deve configurar as regras de fluxo de email do Exchange (também conhecidas como regras de transporte) no local servidores para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Se você estiver usando a ação de filtro de conteúdo padrão, **mova a mensagem para a pasta lixo eletrônico**, para garantir que esta ação funcione com caixas de correio locais, você deve configurar as regras de fluxo de email do Exchange (também conhecidas como regras de transporte) no local servidores para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 Recomendamos que você revise as [perguntas frequentes de proteção](../anti-spam-protection-faq.md)antispam, incluindo a seção práticas recomendadas de envio de mensagens de saída, o que ajudará a garantir que seu email de saída seja entregue.
   
@@ -49,11 +49,11 @@ Você pode enviar falsos negativos (spam) e falsos positivos (não spam) para a 
   
 ## <a name="set-anti-malware-options"></a>Definir opções de antimalware
 
-Revise e ajuste as configurações de filtro de malware no centro de administração do Exchange (Eat). Saiba mais em [Configure anti-malware Policies](../configure-anti-malware-policies.md). Recomendamos também ler sobre outras perguntas frequentes e respostas referentes à proteção antimalware em nossas [perguntas frequentes de proteção contra malware ](../anti-malware-protection-faq-eop.md).
+Revise e ajuste as suas configurações de filtro de malware no EAC (Centro de administração do Exchange). Saiba mais em [Configure anti-malware Policies](../configure-anti-malware-policies.md). Recomendamos também ler sobre outras perguntas frequentes e respostas referentes à proteção antimalware em nossas [perguntas frequentes de proteção contra malware ](../anti-malware-protection-faq-eop.md).
   
-Se você estiver preocupado com arquivos executáveis que contenham malware, você pode criar uma regra de fluxo de email do Exchange que bloqueia qualquer anexo de email que tenha conteúdo executável. Siga as etapas em [como reduzir as ameaças de malware através do bloqueio de anexo de arquivo no Exchange Online Protection](https://support.microsoft.com/kb/2959596) para bloquear os tipos de arquivo listados em [usar regras de fluxo de emails para inspecionar anexos de mensagens no Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+Se estiver preocupado com arquivos executáveis que contêm malware, poderá criar uma regra de fluxo de emails do Exchange para bloquear os anexos de email que incluam conteúdo executável. Siga as etapas em [como reduzir as ameaças de malware através do bloqueio de anexo de arquivo no Exchange Online Protection](https://support.microsoft.com/kb/2959596) para bloquear os tipos de arquivo listados em [usar regras de fluxo de emails para inspecionar anexos de mensagens no Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
   
-Você pode usar o filtro tipos de anexo comuns no Eat. Selecione **proteger** \> **filtros de malware**. Você pode criar uma regra de fluxo de emails que bloqueia qualquer anexo de email que tenha conteúdo executável. 
+Você pode usar o Filtro de Tipos de Anexos Comuns no EAC. Escolha **proteção** \> **filtros de malware**. Você pode criar uma regra de fluxo de emails que bloqueia qualquer anexo de email que tenha conteúdo executável. 
   
 Para aumentar a proteção, recomendamos também que você use regras de fluxo de emails para bloquear algumas ou todas as seguintes extensões: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. Isso pode ser feito usando a condição **Qualquer extensão de arquivo de anexo que inclua essas palavras**. 
   
@@ -67,7 +67,7 @@ Ao implementar uma nova regra à produção, selecione um dos modos de teste pri
   
 Ao implementar novas regras, considere adicionar outras ações de **Gerar Relatório de Incidente** para monitorar a regra em ação. 
   
-Se você estiver em uma configuração de implantação híbrida, com parte da sua organização no local e parte do Office 365, você poderá criar regras que se apliquem a toda a organização. Para fazer isso, use as condições disponíveis tanto no local quanto no Office 365. Enquanto a maioria das condições está disponível em ambas as implantações, há um pequeno conjunto específico a um cenário de implantação específico. Saiba mais em [regras de fluxo de emails (regras de transporte) no Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
+Se estiver configurando uma implantação híbrida, com parte da organização no local e parte no Office 365, poderá criar regras que se apliquem a toda a empresa. Para fazer isso, use as condições que estão disponíveis no local e no Office 365. Embora a maioria das condições esteja disponível para ambas as implantações, há um pequeno conjunto específico para um determinado cenário de implantação. Saiba mais em [regras de fluxo de emails (regras de transporte) no Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 Se desejar inspecionar anexos de mensagens de email em trânsito na sua organização, você poderá fazê-lo configurando regras de fluxo de emails. Em seguida, você poderá tomar as devidas providências nas mensagens inspecionadas com base no conteúdo ou nas características desses anexos. Saiba mais em [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx).
   
@@ -90,13 +90,13 @@ Campanhas bem-sucedidas de spam e phishing também podem ser reduzidas bloqueand
   
 ### <a name="extension-blocking"></a>Bloqueio de Extensão
 
-Se você estiver preocupado com arquivos executáveis que contenham malware, pode configurar políticas antimalware para bloquear qualquer anexo de email que tenha conteúdo executável. Siga as etapas em [Configure anti-malware Policies](../configure-anti-malware-policies.md).
+Se você estiver preocupado em relação a arquivos executáveis contendo malware, é possível configurar políticas anti-malware para bloquear qualquer anexo de email que contenha conteúdo executável. Siga as etapas em [Configure anti-malware Policies](../configure-anti-malware-policies.md).
   
 Para maior proteção, nós também recomendamos que você bloqueie algumas ou todas as extensões a seguir: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
   
 ## <a name="reporting-and-troubleshooting"></a>Relatórios e solução de problemas
 
-Solucione problemas e tendências em geral usando os relatórios no Centro de administração do Office 365. Encontre um ponto de dados específico sobre uma mensagem usando a ferramenta de Rastreamento de Mensagem. Saiba mais sobre relatórios em [Relatórios e rastreamento de mensagem no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Saiba mais sobre a ferramenta de Rastreamento de Mensagem em [Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx).
+Solucionar problemas gerais e tendências usando os relatórios no centro de administração. Encontre um ponto de dados específico sobre uma mensagem usando a ferramenta de Rastreamento de Mensagem. Saiba mais sobre relatórios em [Relatórios e rastreamento de mensagem no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Saiba mais sobre a ferramenta de Rastreamento de Mensagem em [Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx).
   
 ## <a name="for-more-information"></a>Para obter mais informações
 
