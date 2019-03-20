@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455093"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670646"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
@@ -62,6 +62,10 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
 - **Aponte seus registros de DNS para o Office 365** Para que o EOP ofereça proteção, os registros DNS do seu servidor de mensagens (MX) para todos os domínios devem apontar para o Office 365 e apenas para o Office 365. Se seu MX não apontar para o Office 365, o EOP não fornecerá filtragem de spam para seus usuários. Se você desejar usar outro dispositivo ou serviço para fornecer a filtragem de spam do seu domínio, desabilite a proteção contra spam no EOP. Você pode fazer isso criando uma regra de fluxo de emails que defina o valor do SCL como -1. Se você mais tarde decidir usar o EOP, remova essa regra de fluxo de emails. 
     
 - **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas. 
+
+- **Verifique se os usuários estão dentro dos limites permitidos** para enviar e receber emails como mostrou [aqui](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+
+ - **Verifique os níveis em massa** conforme especificado [aqui](bulk-complaint-level-values.md)
     
 ### <a name="for-users"></a>Para usuários
     
@@ -74,7 +78,7 @@ O EOP aceita os Remetentes e destinatários confiáveis dos seus usuários, mas 
 - **Desabilitar a filtragem de SmartScreen no Outlook** Se você estiver usando o antigo cliente de área de trabalho do Outlook, desabilite a funcionalidade de filtragem de SmartScreen, que foi descontinuada. Se estiver habilitado, ela poderá causar falsos positivos. Isso não será necessário se o cliente de área de trabalho do Outlook estiver atualizado.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Solução de problemas: Uma mensagem termina na pasta de Lixo eletrônico embora EOP tenha marcado a mensagem como não spam
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 Se os usuários tem o Outlook habilitado para “Somente listas seguras: Somente emails de pessoas ou domínios na sua lista de Remetentes e destinatários confiáveis serão entregues na sua caixa de entrada”, todos os outros emails irão para a pasta de lixo eletrônico. Isso acontecerá independentemente do EOP marcar a mensagem como não spam, ou de você ter configurado uma regra no EOP para marcar uma mensagem como não spam.
   
@@ -90,7 +94,7 @@ Se você observar o cabeçalho de uma mensagem verá que ela pode incluir o cari
     
 2. Execute o seguinte comando para exibir as configurações de lixo eletrônico do usuário:
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 
