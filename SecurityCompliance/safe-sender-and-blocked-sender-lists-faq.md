@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: Como um administrador do Exchange Online ou do Exchange Online Protection (EOP), você pode ajudar a garantir que uma mensagem de email que viaja pelo serviço não seja marcada como spam. Uma maneira de fazer isso é criar listas de remetentes seguros e remetentes bloqueados para as pessoas da sua organização.
-ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 11ae38733418bb0842732978512698ca6a6274fd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275651"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692220"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remetentes seguros e remetentes bloqueados no Exchange Online
 
@@ -31,7 +30,7 @@ Se você não for um administrador e só quiser gerenciar seu próprio lixo elet
   
 ## <a name="what-is-the-safe-and-blocked-sender-limits-in-exchange-online"></a>Quais são os limites de remetentes seguros e bloqueados no Exchange Online?
 
-Os limites de remetentes seguros e bloqueados no Exchange Online diferem dos limites do Active Directory e do Outlook. Eles são:
+Os limites de remetentes seguros e bloqueados no Exchange Online diferem dos limites do Active Directory e do Outlook. São eles:
   
 - Limite de remetente seguro: 1.024
     

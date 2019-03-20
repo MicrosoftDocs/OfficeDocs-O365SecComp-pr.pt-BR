@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: Neste articleSupported LanguagesInstall o relatório de lixo eletrônico adicionar-desIntalar o suplemento de relatório de lixo eletrônico-inFor mais informações
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276301"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693010"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar o Suplemento Relatório de Lixo Eletrônico para o Microsoft Outlook
   
@@ -26,7 +25,7 @@ Este tópico descreve como instalar e desinstalar o Suplemento Relatório de Lix
   
 O suplemento (para todos os idiomas com suporte) permite que você relate lixo eletrônico diretamente da faixa de opções do Outlook. A versão em inglês do suplemento inclui opções adicionais para relatar problemas de email para a Microsoft diretamente da faixa de opções:
   
--   Relatar emails de esquemas de phishing recebidos 
+-  Relatar emails de esquemas de phishing recebidos 
     
 - Relate emails identificados incorretamente como lixo eletrônico.
     

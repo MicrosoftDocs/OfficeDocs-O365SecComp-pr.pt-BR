@@ -7,20 +7,19 @@ ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens.
-ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: e639b1185d75959061163b5391cf046bc789e3c4
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341622"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693520"
 ---
 # <a name="exchange-online-protection-overview"></a>Visão geral do Exchange Online Protection
 
-O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de email com base na nuvem que ajuda a proteger sua organização contra spam e malware e inclui recursos para proteger sua organização contra violações da política de envio de mensagens. O EOP pode simplificar o gerenciamento de seu ambiente de mensagens e aliviar muitos dos fardos que acompanham a manutenção de hardware e software locais.
+O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens. O EOP pode simplificar o gerenciamento de seu ambiente de mensagem e reduzir muitos dos problemas que surgem na manutenção do hardware e do software locais.
   
 Veja a seguir algumas das principais formas de usar o EOP para proteção de mensagens:
   
@@ -36,7 +35,7 @@ Para entender como o EOP funciona, ele o ajuda a ver como processa o email de en
   
 ![EOP-email-processamento](../media/EOP-email-processing.png)
   
-Uma mensagem de entrada passa inicialmente por filtragem de conexão, que verifica a reputação do remetente e inspeciona a mensagem em busca de malware. A maior parte do spam é interrompida neste ponto e excluída pelo EOP. As mensagens continuam por meio da filtragem de política, onde as mensagens são avaliadas em relação às regras de fluxo de emails personalizadas (também conhecidas como regras de transporte) que você cria ou impõe de um modelo. Por exemplo, você pode ter uma regra que envia uma notificação para um gerente quando o email chega de um remetente específico. (As verificações de prevenção de perda de dados também ocorrem neste ponto, se você tiver esse recurso; para obter informações sobre a disponibilidade de recursos, consulte a [Descrição do serviço de proteção do Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Em seguida, as mensagens passam pela filtragem de conteúdo, onde o conteúdo é verificado em busca de terminologias ou propriedades comuns a spam. Uma mensagem determinada como spam pelo filtro de conteúdo pode ser enviada para a pasta de lixo eletrônico de um usuário ou para a quarentena, entre outras opções, com base em suas configurações. Depois que uma mensagem passa todas essas camadas de proteção com êxito, ela é entregue ao destinatário.
+Uma mensagem de entrada passa inicialmente pela filtragem de conexão, que verifica a reputação do remetente e inspeciona a mensagem em busca de malware. Grande parte do spam é interceptada nesse ponto e excluída pelo EOP. As mensagens continuam por meio da filtragem de política, onde as mensagens são avaliadas em relação às regras de fluxo de emails personalizadas (também conhecidas como regras de transporte) que você cria ou impõe de um modelo. Por exemplo, você pode ter uma regra que envia uma notificação a um gerente quando o email chega de um remetente específico. (As verificações preventivas de perda de dados também acontecem nesse ponto, caso você tenha esse recurso; para saber mais sobre a disponibilidade do recurso, veja [Descrição do serviço de proteção do Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Em seguida, as mensagens passam pela filtragem de conteúdo, na qual o conteúdo é verificado com relação à terminologia ou propriedades comuns ao spam. Uma mensagem considerada spam pelo filtro de conteúdo pode ser enviada a uma pasta de Lixo Eletrônico do usuário ou para a quarentena, entre outras opções, com base em suas configurações. Depois que uma mensagem passa todas essas camadas de proteção com êxito, ela é entregue ao destinatário.
   
 ### <a name="eop-datacenters"></a>Datacenters EOP
 

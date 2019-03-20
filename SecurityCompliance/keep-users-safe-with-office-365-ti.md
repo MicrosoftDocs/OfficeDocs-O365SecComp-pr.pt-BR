@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Saiba como os recursos de investigação e resposta do Office 365 podem ajudar sua organização a detectar invasões e ameaças, e reduzir rapidamente e recuperar contra ameaças.
-ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536131"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692280"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenha os usuários do Office 365 seguros com os recursos de investigação e resposta de ameaças do Office 365
 
@@ -28,10 +28,10 @@ ms.locfileid: "30536131"
 
 Você sabe quais dos seus usuários do Office 365 estão sob ataque ou estão menos comprometidos? Sabe como mitigar e recuperar ataques direcionados a seus usuários? Você sabia que pode fazer isso exatamente com os recursos de segurança que já estão disponíveis no Office 365? 
   
-O [office 365 Threat Investigation and Response](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 e5. Os recursos de investigação e resposta contra ameaças do Office 365 ajudaram a ti da Microsoft a reduzir o tempo médio de resolução de incidentes de engenharia social por 80% e maior throughput de caso em 37% por mês em comparação aos 2 últimos trimestres! 
+O [office 365 Threat Investigation and Response](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 E5 (como parte do Office 365 Advanced Threat Protection Plan 2). Os recursos de investigação e resposta contra ameaças do Office 365 ajudaram a ti da Microsoft a reduzir o tempo médio de resolução de incidentes de engenharia social por 80% e maior throughput de caso em 37% por mês em comparação aos 2 últimos trimestres! 
 
 > [!IMPORTANT]
-> O Office 365 proteção avançada contra ameaças e a investigação e a resposta contra ameaças (anteriormente conhecida como Office 365 Threat Intelligence) agora fazem parte do plano de proteção avançada contra ameaças do Office 365, com recursos adicionais de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A investigação de ameaças e os recursos de resposta (anteriormente conhecidos como Office 365 Threat Intelligence) agora fazem parte do plano avançado de proteção avançada contra ameaças do Office 365, juntamente com outros recursos de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Recentemente, adicionamos novos recursos para ajudar a melhorar o modo como você pode detectar e recuperar contra ameaças! Veja aqui uma rápida explicação sobre como os recursos de investigação e resposta atualizados de ameaça podem tornar você ainda mais eficiente.
   
@@ -51,7 +51,7 @@ Depois que os administradores de segurança identificaram algo suspeito ou mal-i
   
  **Atualização:** Adicionamos a capacidade de excluir e-mails de emails diretamente da estrutura de incidentes. Os administradores anteriores só podiam mover emails para a pasta de lixo eletrônico de um usuário, onde os usuários podem recuperar o item. Com os recursos de exclusão recém-lançado, agora você pode ter certeza de que um email mal-intencionado ou indesejado é removido permanentemente. 
   
-Se você ainda não tem esses recursos de investigação e resposta contra ameaças do Office 365, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre os recursos de investigação e resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
+Se você ainda não tem esses recursos, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre os recursos de investigação e resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Captura de tela da lista de emails de correção de incidentes](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -66,7 +66,7 @@ O Gartner estima que, em 2017, apenas cerca de US $90B foi gasto no cybersecurit
   
 ## <a name="whats-next"></a>Qual é o próximo
 
-- Saiba mais sobre os recursos de investigação e resposta contra ameaças do Office 365 nesta sessão gravada: [fique à frente do cyberattacks com o Office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
+- Saiba mais sobre os recursos de investigação e resposta contra ameaças do Office 365 nesta sessão gravada: [fique à frente do cyberattacks com o Office 365](https://myignite.microsoft.com/videos/53723)
     
 - [Experimente os recursos de investigação e resposta contra ameaças do office 365 agora](https://aka.ms/tryo365threatintel3) ou comece sua avaliação do Office E5 hoje mesmo! 
     

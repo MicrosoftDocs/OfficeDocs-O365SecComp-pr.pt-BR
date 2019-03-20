@@ -1,5 +1,5 @@
 ---
-title: 'Executar relatório do grupo de funções de administrador no EOP '
+title: 'Executar um relatório de grupo de funções de administrador no EOP '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -7,18 +7,17 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Quando um administrador adiciona ou remove membros dos grupos de função de administrador, o Microsoft Proteção do Exchange Online (EOP) registra cada ocorrência.
-ms.openlocfilehash: 49311faa4ee54fafa1c05a2314ed2f9d74cbe5a5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027198"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692710"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>Executar relatório do grupo de funções de administrador no EOP 
+# <a name="run-an-administrator-role-group-report-in-eop"></a>Executar um relatório de grupo de funções de administrador no EOP 
 
  Quando um administrador adiciona ou remove membros dos grupos de função de administrador, o Microsoft Proteção do Exchange Online (EOP) registra cada ocorrência. Quando você executa um relatório de grupo de funções de administrador no Centro de administração do Exchange, as entradas são exibidas como resultados de pesquisa e incluem os grupos de função afetados, quem e quando alterou a associação do grupo de função, e quais atualizações de associação foram feitas. Use esse relatório para monitorar as alterações nas permissões administrativas atribuídas aos usuários da sua organização.
   
@@ -28,7 +27,7 @@ ms.locfileid: "22027198"
     
 - Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o Seção "Relatórios" do tópico [Permissões de recurso no EOP](feature-permissions-in-eop.md). 
     
-- Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Atalhos de teclado no Centro de administração do Exchange**.
+- Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > Está enfrentando problemas? Peça ajuda nos fóruns do Exchange. Visite os fóruns em: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), ou [Proteção do Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=285351). 

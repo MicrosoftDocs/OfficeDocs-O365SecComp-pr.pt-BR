@@ -1,5 +1,5 @@
 ---
-title: Proteja-se contra ameaças do Office 365
+title: Proteção contra ameaças no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,28 +14,28 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Saiba como o Office 365 Enterprise pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados.
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245577"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693240"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Proteja-se contra ameaças do Office 365
+# <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças no Office 365
 
 Com o Office 365 Enterprise, você pode ajudar a proteger sua organização contra uma variedade de ameaças, incluindo falsificação, malware, spam, tentativas de phishing e acesso não autorizado aos dados. Use os recursos nesta página para saber mais sobre as opções e ações de proteção contra ameaças que você pode executar.
 
-## <a name="malware"></a>Malware
+## <a name="malware"></a>Software
 
 - [Proteção Antimalware &amp; anti-spam](anti-spam-and-anti-malware-protection.md)
     
 - [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md)
     
-- [Enviar malware e não malware para a Microsoft para análise](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
+- [Enviando malware e não malware para a Microsoft para análise](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 
 ## <a name="zero-day-protection"></a>Proteção de dia zero
 
-- [Limpeza Automática Zero Hora – proteção contra spam e malware](zero-hour-auto-purge.md)
+- [Limpeza automática de zero horas-proteção contra spam e malware](zero-hour-auto-purge.md)
 
 - [Anexos seguros de ATP do Office 365](atp-safe-attachments.md)
 
@@ -45,25 +45,25 @@ Com o Office 365 Enterprise, você pode ajudar a proteger sua organização cont
 
 A proteção contra phishing inclui representação de usuário, representação de domínio e proteção contra falsificação externa. 
 
-- [Proteção antifalsificação no Office 365](anti-spoofing-protection.md)
+- [Proteção contra falsificação no Office 365](anti-spoofing-protection.md)
 
-- [Saiba mais sobre a inteligência contra falsificação](learn-about-spoof-intelligence.md)
+- [Saiba mais sobre a inteligência de falsificação](learn-about-spoof-intelligence.md)
 
 Se você estiver usando um domínio personalizado no Office 365, ajude a interromper as fraudes de remetentes da sua organização, melhorar a segurança de email e proteger a reputação do seu domínio.
   
-- [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- [Configurar a SPF no Office 365 para ajudar a evitar falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
 - [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md)
+- [Usar o DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md)
 
 ## <a name="anti-spam"></a>Antispam
 
-- [Proteção antispam de emails do Office 365](anti-spam-protection.md)
+- [Office 365 email anti-spam protection](anti-spam-protection.md)
 
-- [Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Criar listas de remetentes seguros para toda a organização ou remetentes bloqueados no Office 365](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
 
-- [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
+- [Garantir que o spam seja roteado para a pasta de lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
   
     
 ## <a name="advanced-threat-protection"></a>Proteção Avançada contra Ameaças
@@ -72,13 +72,13 @@ Configure políticas para gerenciar falsificação, proteger contra ataques de p
   
 - [Saiba mais sobre o Office 365 ATP](office-365-atp.md)
 
-- [Obter uma visão geral do Office 365 Threat Intelligence](office-365-ti.md)
+- [Obter uma visão geral do Office 365 ATP Plan 2](office-365-ti.md)
     
 - [Configurar políticas anti-phishing](set-up-anti-phishing-policies.md)
     
-- [Configurar as políticas de Links seguros de ATP](set-up-atp-safe-links-policies.md)
+- [Configurar políticas de links seguros de ATP](set-up-atp-safe-links-policies.md)
     
-- [Configurar uma política de Anexos Seguros de ATP](set-up-atp-safe-attachments-policies.md)
+- [Configurar políticas de anexos seguros de ATP](set-up-atp-safe-attachments-policies.md)
     
 ## <a name="encryption"></a>Criptografia
 
@@ -86,9 +86,9 @@ Obtenha um complemento na criptografia, configure políticas de gerenciamento de
   
 - [Saiba mais sobre a criptografia no Office 365](encryption.md)
     
-- [Configure a criptografia no Office 365 Enterprise](set-up-encryption.md)
+- [Configurar a criptografia no Office 365 Enterprise](set-up-encryption.md)
     
-- [OME (Criptografia de Mensagens do Office 365)](ome.md)
+- [OME (Criptografia de Mensagem do Office 365)](ome.md)
     
 - [Implementar a sua própria chave (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
         

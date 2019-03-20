@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumo: Leia este artigo para obter uma visão geral da integração do SIEM Server com o Microsoft 365.'
-ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357492"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693640"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integração com o servidor SIEM com serviços e aplicativos da Microsoft 365
 
@@ -33,10 +33,10 @@ Um servidor SIEM pode receber dados de uma ampla variedade de serviços e aplica
 
 | Serviço ou aplicativo Microsoft 365 | Entradas do servidor SIEM | Recursos para saber mais |
 | --- | --- | --- |
-| [Proteção Avançada contra Ameaças do Office 365](office-365-atp.md)  <br/>   ou   <br/>[Inteligência Contra Ameaças do Office 365](office-365-ti.md) | Logs de auditoria | [Integração do SIEM com o Office 365 Threat Intelligence e proteção avançada contra ameaças](siem-integration-with-office-365-ti.md) |
+| [Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) <br/>   ou   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Logs de auditoria | [Integração do SIEM com a proteção avançada contra ameaças do Office 365](siem-integration-with-office-365-ti.md) |
 | [Segurança no Aplicativo da Nuvem da Microsoft](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integração de log | [Integração do SIEM com o Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integração de log | [Integrar seu servidor SIEM ao Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
-| [Proteção Avançada Contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integração de log | [Extrair alertas para suas ferramentas SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integração de log | [Integrar seu servidor SIEM com o Office 365 Cloud app Security](integrate-your-siem-server-with-office-365-cas.md) |
+| [Proteção Avançada contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integração de log | [Extrair alertas para suas ferramentas SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Proteção contra ameaças e detecção de ameaças) | Alertas | [Exportação de dados de segurança do Azure para configuração de pipeline SIEM-visualização](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Logs de auditoria | [Integrar logs de auditoria do Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Análises avançadas de ameaças do Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integração de log | [Referência do registro do ATA SIEM](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
@@ -50,6 +50,7 @@ Certifique-se de que o registro em log de auditoria está ativado antes de confi
 - Para o Exchange Online, o [log de auditoria é ativado com o Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
 ## <a name="see-also"></a>Confira também
+
 
 [Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

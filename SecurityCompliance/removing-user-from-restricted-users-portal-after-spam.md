@@ -9,7 +9,6 @@ ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se um usuário enviar continuamente emails do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens.
-ms.openlocfilehash: 61d52ad1f25dc3767ad51da5b3a217ace59303ce
-ms.sourcegitcommit: 9918411c01e962d5c67d53dd30a8a9c28c547397
+ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30654548"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692010"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Remover um usuário do portal de usuários restritos após o envio de email de spam
 

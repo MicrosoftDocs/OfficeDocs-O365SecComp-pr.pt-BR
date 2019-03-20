@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,32 +14,32 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
-ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341672"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692230"
 ---
 # <a name="anti-spam-protection-faq"></a>PERGUNTAS FREQUENTEs sobre proteção antispam
 
 Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP). 
   
 > [!TIP]
-> Para perguntas e respostas sobre remetente seguro e listas de remetentes bloqueados, confira [listas de remetentes seguros e remetentes bloqueados no Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para perguntas e respostas sobre a quarentena, consulte [perguntas frequentes sobre quarentena](quarantine-faq.md). 
+> Para perguntas e respostas sobre remetente seguro e listas de remetentes bloqueados, confira [listas de remetentes seguros e remetentes bloqueados no Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para obter perguntas e respostas sobre a quarentena, veja [Perguntas Frequentes sobre a Quarentena](quarantine-faq.md). 
   
  **P. Por padrão, o que acontece com uma mensagem de spam detectada?**
   
 R. **Para mensagens de entrada:** A maioria dos spams é excluída por meio da filtragem de conexão, que se baseia no endereço IP do remetente. O serviço então inspeciona o conteúdo da mensagem. Por padrão, o spam de conteúdo filtrado é enviado para a pasta Lixo Eletrônico do destinatário. Você pode alterar essa ação. Por exemplo, você pode optar por enviar mensagens de spam para a quarentena em vez de configurar a política de filtro de conteúdo. 
   
 > [!IMPORTANT]
-> Para clientes autônomos do EOP: para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes autônomos do EOP: para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Para mensagens de saída:** A mensagem foi roteada através do pool de entrega de risco mais alto ou foi devolvida sem ser entregue; em cujo caso o remetente receberá uma mensagem de notificação de status de entrega (DSN) informando que a mensagem não pôde ser entregue. 
   
  **P. o que é uma variante de spam de dia zero e como ela é manipulada pelo serviço?**
   
-A. uma variante de spam de zero dias é uma última geração, uma variante anteriormente desconhecida de spam que nunca foi capturada ou analisada, portanto, nossos filtros de conteúdo de spam ainda não têm informações disponíveis para detectá-lo. Após uma amostra de spam de zero dias ser capturada e analisada por nossos analistas de spam, se ela atender aos critérios de classificação de spam, nossos filtros de conteúdo de spam são atualizados para detectar e não são mais considerados "de dia zero". ( **Observação:** se você receber uma mensagem que pode ser uma variante de spam de dia zero, para nos ajudar a melhorar o serviço, envie a mensagem para a Microsoft usando um dos métodos descritos em [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+R. Uma variante de spam de dia zero é uma última geração, uma variante anteriormente desconhecida de spam que nunca foi capturada ou analisada, portanto, nossos filtros de conteúdo de spam ainda não têm informações disponíveis para detectá-lo. Após uma amostra de spam de zero dias ser capturada e analisada por nossos analistas de spam, se ela atender aos critérios de classificação de spam, nossos filtros de conteúdo de spam são atualizados para detectar e não são mais considerados "de dia zero". ( **Observação:** se você receber uma mensagem que pode ser uma variante de spam de dia zero, para nos ajudar a melhorar o serviço, envie a mensagem para a Microsoft usando um dos métodos descritos em [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
   
  **P. Eu preciso configurar o serviço para fornecer proteção contra spam?**
   
@@ -48,7 +47,7 @@ R. Depois de se inscrever no serviço e adicionar o seu domínio, a filtragem de
   
 Para obter mais informações sobre como configurar suas políticas contra spam, consulte os seguintes tópicos:
   
-[Configurar a política do filtro de conexão](configure-the-connection-filter-policy.md)
+[Configurar a política de filtro de conexão](configure-the-connection-filter-policy.md)
   
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   
@@ -60,7 +59,7 @@ R. Pode levar até 1 hora para que as alterações entrem em efeito.
   
  **P. A filtragem de email em massa é habilitada automaticamente?**
   
-A. por padrão, a opção de filtragem de spam avançada de **email em massa** está habilitada para novos clientes. Para clientes migrados, esta configuração corresponderá à configuração do FOPE. Para obter mais informações sobre emails em massa, confira [o que é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+R. Por padrão, a opção de filtragem avançada de spam de **email em massa** está habilitada para novos clientes. Para os clientes migrados, esta configuração corresponderá com sua configuração FOPE. Para saber mais sobre emails em massa, veja [Qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md)
   
  **P. O serviço oferece filtragem de URL?**
   
@@ -68,11 +67,11 @@ R. Sim, o serviço possui um filtro de URL que verifica se há URLs nas mensagen
   
  **P. Como os clientes que utilizam o serviço podem enviar falsos negativos (spam) e falsos positivos (não spam) para a Microsoft?**
   
-Um. spam e mensagens não spam podem ser enviadas para a Microsoft para análise de várias maneiras. Para obter mais informações, consulte [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+R. Mensagens de spam e não spam podem ser enviadas para a Microsoft para análise de várias maneiras. Para obter mais informações, consulte [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
  **P. Posso obter relatórios de spam?**
   
-A. Sim, por exemplo, você pode obter um relatório de detecção de spam no centro de administração do Office 365. Este relatório mostra o volume de spam como uma contagem de mensagens exclusivas. Para obter mais informações sobre relatórios, consulte os seguintes links:
+R. Sim, por exemplo, você pode obter um relatório de detecção de spam no centro de administração do Office 365. Este relatório mostra o volume de spam como uma contagem de mensagens exclusivas. Para obter mais informações sobre relatórios, consulte os seguintes links:
   
 Clientes do Exchange Online: [monitoramento, relatórios e rastreamento de mensagens no Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
@@ -84,9 +83,9 @@ R. Sim, a ferramenta de rastreamento de mensagens permite que você siga as mens
   
  **Q. O serviço limitará (limite de taxa) meu email se os meus usuários enviarem spam de saída?**
   
-A. se mais da metade do email enviado de um usuário por meio do serviço em um determinado período de tempo (por exemplo, por hora) for determinada como spam pelo Office 365, o usuário será impedido de enviar mensagens. Na maioria dos casos, se uma mensagem de saída é determinada como spam, ela é roteada através do pool de entrega de alto risco, que reduz a probabilidade de o pool de IP de saída normal ser adicionado a uma lista de bloqueios.
+R. Se mais de metade das mensagens enviadas de um usuário por meio do serviço dentro de um determinado período (por exemplo, por hora), for considerada como spam pelo Office 365, o usuário será impedido de enviar mensagens. Na maioria dos casos, se uma mensagem de saída é determinada como spam, ela é roteada através do pool de entrega de alto risco, que reduz a probabilidade de o pool de IP de saída normal ser adicionado a uma lista de bloqueios.
   
-Você pode enviar uma notificação para um endereço de email especificado quando um remetente estiver bloqueado enviando spam de saída. Para obter mais informações sobre essa configuração, consulte [Configure the Outbound Spam Policy](configure-the-outbound-spam-policy.md).
+Você pode enviar uma notificação para um endereço de email especificado quando um remetente for impedido de enviar spam de saída. Para obter mais informações sobre essa configuração, consulte [Configure the Outbound Spam Policy](configure-the-outbound-spam-policy.md).
   
  **P. Posso usar um provedor de antispam e antimalware de terceiros em conjunto com o Exchange Online?**
   
@@ -110,7 +109,7 @@ R. As diretrizes apresentadas abaixo são as práticas recomendas para o envio d
   
 1. **O domínio de envio do email deve resolver em DNS.**
     
-    Por exemplo, se o remetente for user@example.com, o domínio example.com será resolvido como o endereço IP 192.0.43.10. Se um domínio de envio não tiver registros A-Record e no MX no DNS, o serviço encaminhará a mensagem por seu pool de entrega de risco mais alto, independentemente do conteúdo da mensagem ser ou não spam. Para obter mais informações sobre o pool de entrega de risco mais alto, consulte [pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md). 
+    Por exemplo, se o remetente for usuário@exemplo.com, o domínio exemplo.com resolve no endereço IP 192.0.43.10. Se um domínio de envio não tiver nenhum registro A e nenhum registro MX no DNS, o serviço encaminhará a mensagem por seu pool de entrega de risco mais alto, independentemente de o conteúdo da mensagem ser spam ou não. Para obter mais informações sobre o pool de entrega de risco mais alto, consulte [pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **O endereço IP de envio do servidor de email de saída deve ter uma entrada de DNS reverso (PTR).**
     
@@ -124,7 +123,7 @@ R. As diretrizes apresentadas abaixo são as práticas recomendas para o envio d
     
     Os registros SPF são um mecanismo para a validação de que os emails enviados de um domínio realmente vêm desse domínio e de que os emails não são falsificados. Para obter mais informações sobre registros SPF, consulte os seguintes links:
     
-    [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+    [Configurar a SPF no Office 365 para ajudar a evitar falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
     [Criar registros DNS do Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
     

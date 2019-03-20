@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: A série de vídeos a seguir ajudará você a configurar e usar o serviço de filtragem de email hospedado pelo Exchange Online Protection (EOP).
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341182"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693560"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vídeos de introdução ao EOP
 
@@ -27,7 +26,7 @@ A série de vídeos a seguir ajudará você a configurar e usar o serviço de fi
 > [!NOTE]
 > Antes de iniciar as tarefas descritas nos vídeos, recomendamos que você configure o fluxo de emails. Para saber mais, consulte o tópico [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-Esses vídeos são sobre a adaptação de suas configurações antispam para atender às necessidades da sua organização. Para emails de entrada viajando através do serviço para sua organização, isso inclui a criação de listas de remetentes seguros e remetentes bloqueados com base em endereços IP e a definição de configurações de filtro de conteúdo. Há também um vídeo mostrando como os administradores podem localizar e liberar mensagens de spam filtradas por conteúdo ou mensagens que correspondam a uma regra de fluxo de emails (também conhecida como regra de transporte) que foram enviadas para a quarentena e também como relatar mensagens de spam para nos ajudar a melhorar o serviço.
+Estes vídeos são sobre como adaptar as configurações antispam para atender às necessidades da sua organização. Para emails de entrada que trafeguem do serviço para a sua organização, isso inclui criar listas de remetentes e destinatários confiáveis com base nos endereços IP e definir configurações de filtro de conteúdo. Há também um vídeo mostrando como os administradores podem localizar e liberar mensagens de spam filtradas por conteúdo ou mensagens que correspondam a uma regra de fluxo de emails (também conhecida como regra de transporte) que foram enviadas para a quarentena e também como relatar mensagens de spam para nos ajudar a melhorar o serviço.
   
 - Configurar as Listas de permissão de IP e de bloqueio de IP no EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

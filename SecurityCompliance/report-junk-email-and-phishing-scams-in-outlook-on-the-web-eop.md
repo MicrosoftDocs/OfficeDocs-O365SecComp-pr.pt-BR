@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Os usuários do Microsoft Outlook na Web podem relatar lixo eletrônico (spam) e golpes de phishing usando opções de relatório de email internas. Você também pode informar a Microsoft se um email foi identificado incorretamente como lixo eletrônico (spam).
-ms.openlocfilehash: e40770d8ff7e2c24058674f25b9ee8eb72e2bf7c
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492810"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693310"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>RePortar spam e golpes de phishing no Outlook na Web 
 
@@ -61,7 +60,7 @@ Quando uma mensagem é identificada incorretamente como lixo eletrônico pelo Of
   
 2. Uma caixa de diálogo é aberta perguntando se você quer enviar uma cópia da mensagem que não é lixo eletrônico para análise da Microsoft. Clique em **relatório** para enviar a mensagem para a equipe de análise de spam da Microsoft. 
     
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 [Saiba mais sobre lixo eletrônico e phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 

@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Os usuários que vêem uma mensagem de notificação de spam de usuário final do seu administrador sobre emails em quarentena podem executar essas ações nas mensagens. '
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341232"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691970"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificações de spam do usuário final para liberar e relatar mensagens de spam em quarentena
 
@@ -41,6 +40,6 @@ Você pode executar as seguintes ações em cada mensagem:
 - **Relatar como Não Lixo Eletrônico** Clicar nesse link envia uma cópia da mensagem para análise da Microsoft. A equipe de spam avalia e analisa a mensagem e, dependendo dos resultados da análise, ajusta as regras do filtro antispam para permitir a passagem da mensagem. 
     
 > [!NOTE]
->  As mensagens que estão em quarentena devido a uma correspondência de regra de fluxo de email (também conhecida como) não estão incluídas nas mensagens em quarentena de spam do usuário final. Apenas as mensagens de spam em quarentena são listadas. > você só pode liberar uma mensagem e relatá-la como falso positivo (e não como lixo eletrônico) uma vez. 
+>  As mensagens que estão em quarentena devido a uma correspondência de regra de fluxo de email (também conhecida como) não estão incluídas nas mensagens em quarentena de spam do usuário final. Somente as mensagens em quarentena por spam estão listadas. >  Você só pode liberar uma mensagem e relatá-la como falso positivo (e não como lixo eletrônico) uma vez. 
   
 

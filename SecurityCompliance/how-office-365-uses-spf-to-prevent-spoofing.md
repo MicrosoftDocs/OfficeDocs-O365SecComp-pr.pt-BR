@@ -1,5 +1,5 @@
 ---
-title: Como o Office 365 usa o Sender Policy Framework (SPF) para evitar a falsificação
+title: Como o Office 365 usa o Sender Policy Framework (SPF) para evitar falsificação
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -7,7 +7,6 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,14 +14,14 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: Este artigo descreve como o Office 365 usa o registro TXT SPF (Sender Policy Framework) no DNS para garantir que os sistemas de email de destino confiem em mensagens enviadas do seu domínio personalizado. Isso se aplica a mensagens de saída enviadas do Office 365. As mensagens enviadas do Office 365 para um destinatário no Office 365 sempre passarão a SPF.'
-ms.openlocfilehash: 76267f89744b696185022a2bb036dcde09dfcde5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276101"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693590"
 ---
-# <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Como o Office 365 usa o Sender Policy Framework (SPF) para evitar a falsificação
+# <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Como o Office 365 usa o Sender Policy Framework (SPF) para evitar falsificação
 
  **Resumo:** Este artigo descreve como o Office 365 usa o registro TXT SPF (Sender Policy Framework) no DNS para garantir que os sistemas de email de destino confiem em mensagens enviadas do seu domínio personalizado. Isso se aplica a mensagens de saída enviadas do Office 365. As mensagens enviadas do Office 365 para um destinatário no Office 365 sempre passarão a SPF. 
   
@@ -31,10 +30,10 @@ Um registro TXT SPF é um registro DNS que ajuda a evitar falsificação e phish
 > [!NOTE]
 > Os tipos de registro SPF tornaram-se obsoletos pela IETF (Internet Engineering Task Force) em 2014. Em vez disso, use os registros TXT no DNS para publicar as informações da sua SPF. O restante deste artigo usa o termo registro TXT SPF para maior clareza. 
   
-Administradores de domínio publicam informações do SPF em registros TXT no DNS. As informações do SPF identificam servidores de email de saída autorizados. Os sistemas de email de destino verificam se as mensagens têm origem em servidores de email de saída autorizados. Se você está acostumado com o SPF ou tem uma implantação simples e só precisa saber o que incluir no seu registro TXT SPF no DNS para o Office 365, acesse [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Se você não tem uma implantação totalmente hospedada no Office 365 ou se deseja obter mais informações sobre como o SPF funciona ou como solucionar problemas do SPF para o Office 365, continue lendo este artigo.
+Administradores de domínio publicam informações do SPF em registros TXT no DNS. As informações do SPF identificam servidores de email de saída autorizados. Os sistemas de email de destino verificam se as mensagens têm origem em servidores de email de saída autorizados. Se você já estiver familiarizado com o SPF ou se tiver uma implantação simples e precisar saber o que incluir em seu registro TXT SPF no DNS para o Office 365, poderá ir para [Configurar o SPF no office 365 para ajudar a impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Se você não tem uma implantação totalmente hospedada no Office 365 ou se deseja obter mais informações sobre como o SPF funciona ou como solucionar problemas do SPF para o Office 365, continue lendo este artigo.
   
 > [!NOTE]
-> Antes, era necessário adicionar um registro TXT SPF diferente para seu domínio personalizado se você também usasse o SharePoint Online. Isso não é mais necessário. Essa alteração deve reduzir o risco de mensagens de notificação do SharePoint Online acabarem na pasta Lixo Eletrônico. Não é necessário fazer nenhuma alteração imediatamente, mas se você receber a mensagem de erro "muitas pesquisas", modifique seu registro TXT SPF conforme descrito em [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+> Antes, era preciso adicionar um registro TXT SPF diferente ao seu domínio personalizado se você também usou o SharePoint Online. Isso não é mais necessário. Essa alteração deve reduzir o risco de mensagens de notificação do SharePoint Online acabarem na pasta Lixo Eletrônico. Não é necessário fazer qualquer alteração imediatamente, mas se você receber o erro "muitas pesquisas", modifique o registro TXT SPF conforme descrito em [Configurar o SPF no Office 365 para ajudar a impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
      
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Como o SPF funciona para evitar falsificação e phishing no Office 365
 <a name="HowSPFWorks"> </a>
@@ -199,7 +198,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 ## <a name="next-steps-set-up-spf-for-office-365"></a>Próximas etapas: configurar o SPF para o Office 365
 <a name="SPFNextSteps"> </a>
 
-Depois que você tiver formulado seu registro SPF da TXT, siga as etapas em [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) para adicioná-lo ao seu domínio. 
+Depois de formular seu registro TXT SPF, siga as etapas em [Configurar o SPF no Office 365 para ajudar a impedir](set-up-spf-in-office-365-to-help-prevent-spoofing.md) a falsificação de adicioná-lo ao seu domínio. 
   
 Embora o SPF tenha sido projetado para ajudar a evitar falsificação, existem técnicas de falsificação contra as quais o SPF não pode oferecer proteção. Para proteger-se contra elas, depois de ter configurado o SPF, você também deve configurar o DKIM e o DMARC para o Office 365. Para começar, confira [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md). Em seguida, confira [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md).
   
@@ -242,7 +241,7 @@ Quando você inclui domínios de terceiros no seu registro TXT SPF, precisa conf
 
 Você pode usar nslookup para visualizar seus registros DNS, incluindo seu registro TXT SPF. Ou, se preferir, há uma série de ferramentas online gratuitas disponíveis que você pode usar para visualizar o conteúdo do seu registro TXT SPF. Ao examinar seu registro TXT SPF e seguir a cadeia de redirecionamentos e instruções de inclusão, é possível determinar quantas pesquisas de DNS o registro exige. Algumas ferramentas online até mesmo contarão e exibirão essas pesquisas para você. Manter o controle desse número ajudará a evitar que mensagens enviadas da sua organização disparem um erro permanente, chamado de permerror, do servidor de recebimento.
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 <a name="SPFTroubleshoot"> </a>
 
 Precisa de ajuda para adicionar o registro TXT SPF? Estão disponíveis [instruções passo a passo](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) para atualizar registros TXT SPF em uma série de registradores de domínios conhecidos. [Cabeçalhos de mensagem antispam](anti-spam-message-headers.md) inclui os campos de cabeçalho e sintaxe usados pelo Office 365 para verificações do SPF. 

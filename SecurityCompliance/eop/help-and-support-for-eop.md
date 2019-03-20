@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: A Microsoft fornece ajudar para a EOP através de uma variedade de lugares e métodos incluindo auto-suporte e suporte assistido.
-ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670526"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693530"
 ---
 # <a name="help-and-support-for-eop"></a>Ajuda e suporte para EOP
 
@@ -81,7 +80,7 @@ A Microsoft fornece números de telefone locais ou chamadas gratuitas para supor
    
 ## <a name="for-more-information-about-eop-documentation"></a>Par mais informações sobre a documentação da EOP
 
-[Avisos de direitos autorais de terceiros](third-party-copyright-notices.md)
+[Aviso de direitos autorais de terceiros](third-party-copyright-notices.md)
   
 [Acessibilidade para pessoas com deficiências](accessibility-for-people-with-disabilities.md)
   

@@ -3,7 +3,7 @@ title: Proteção Avançada contra Ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/20/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: A proteção avançada contra ameaças do Office 365 inclui anexos seguros, links seguros, ferramentas anti-phishing avançadas, ferramentas de relatórios e recursos de inteligência de ameaças.
-ms.openlocfilehash: 33a98781c29a6ab8a44a69922afd976ce044c09d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220001"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693050"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Proteção Avançada contra Ameaças do Office 365
 
@@ -35,7 +35,7 @@ A proteção avançada contra ameaças (ATP) do Office 365 protege sua organiza�
 
 - [Relatórios](#view-atp-reports): exibir relatórios em tempo real para monitorar o desempenho da ATP em sua organização. 
 
-- [Recursos de inteligência de ameaças](#utilize-threat-intelligence-capabilities): usar ferramentas de ponta para investigar, entender, simular e evitar ameaças. 
+- [Recursos de investigação e resposta contra ameaças](#use-threat-investigation-and-response-capabilities): Use ferramentas de ponta para investigar, entender, simular e evitar ameaças. 
  
 
 ## <a name="configure-atp-policies"></a>Configurar diretivas ATP
@@ -54,15 +54,15 @@ As políticas definidas para sua organização determinam o comportamento e o n�
 
 - [Proteção anti-phishing do ATP](atp-anti-phishing.md): detecta tentativas de representar seus usuários e domínios personalizados. Ele aplica modelos de aprendizado de máquina e algoritmos avançados de detecção de representação a ataques de phishing da AVERT. Para saber mais, confira [configurar as políticas de anti-phishing e anti-phishing do Office 365 ATP](set-up-anti-phishing-policies.md).
 
-## <a name="view-atp-reports"></a>Exibir relatórios ATP
+## <a name="view-atp-reports"></a>Exibir relatórios de ATP
 
 O Office 365 ATP inclui um [painel](view-reports-for-atp.md) avançado de relatórios para monitorar o desempenho da ATP. Você pode acessá-lo em **relatórios do _GT_ Dashboard** no centro de conformidade do _AMP_ de segurança. 
 
 Relata a atualização em tempo real, fornecendo as informações mais recentes. Esses relatórios também fornecem recomendações e alertam você sobre ameaças iminentes. Relatórios preDefinidos incluem o [relatório de status de proteção contra ameaças](view-reports-for-atp.md#threat-protection-status-report), o relatório de tipos de [arquivos ATP](view-reports-for-atp.md#atp-file-types-report), o [relatório de disposição de mensagens ATP](view-reports-for-atp.md#atp-message-disposition-report) e mais. 
 
-## <a name="utilize-threat-intelligence-capabilities"></a>Usar recursos de inteligência de ameaças
+## <a name="use-threat-investigation-and-response-capabilities"></a>Usar os recursos de investigação e resposta contra ameaças
 
-O Office 365 ATP inclui as melhores ferramentas de [inteligência de ameaças](office-365-ti.md) que permitem que a equipe de segurança da sua organização antecipe, entenda e Evite ataques mal-intencionados. 
+O Office 365 ATP Plan 2 inclui as melhores ferramentas de [investigação e resposta de ameaças](office-365-ti.md) que permitem que a equipe de segurança da sua organização antecipe, entenda e Evite ataques mal-intencionados. 
 
 - Os rastreadores de [ameaças](threat-trackers.md) fornecem a mais recente inteligência em problemas de cybersecurity de prevalecentes. Por exemplo, você pode exibir informações sobre o malware mais recente e tomar medidas defensivas antes de se tornar uma ameaça real à sua organização. Os rastreadores disponíveis [](threat-trackers.md#noteworthy-trackers)incluem rastreadores dignos de [tendências](threat-trackers.md#trending-trackers), rastreadores, [consultas rastreadas](threat-trackers.md#tracked-queries)e [consultas salvas](threat-trackers.md#saved-queries).
 
@@ -78,9 +78,10 @@ Para acessar os recursos de ATP no centro de conformidade do & de segurança, vo
 |---------|---------|
 |Administrador global do Office 365 |[Tudo sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Administrador de segurança |[Permissões de função de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gerenciamento da organização do Exchange Online |[Permissões no Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br> e <br> [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Gerenciamento da organização do Exchange Online |[Permissões no Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>and<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-ConFira também:
+Para obter mais informações, consulte:
+
 - [Permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md) 
 
 - [Conceder aos usuários acesso ao centro de conformidade do & de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md)

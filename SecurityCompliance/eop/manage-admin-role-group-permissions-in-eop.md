@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: No Microsoft Proteção do Exchange Online (EOP), é possível usar o Centro de administração do Exchange (EAC) para tornar um usuário membro de um grupo ou de grupos de funções a fim de atribuir a ele permissões de execução de tarefas administrativas específicas. Também é possível remover um usuário de um grupo ou grupo de funções usando o EAC.
-ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002970"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693420"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gerenciar permissões do grupo de funções de administrador no EOP
   
@@ -30,7 +29,7 @@ No Microsoft Proteção do Exchange Online (EOP), é possível usar o Centro de 
     
 - Determinadas permissões no Office 365 mapeiam para as permissões do grupo de funções de administração do EOP. Para obter mais informações, consulte a coluna "Função no Exchange Online" na seção "Para quais serviços minhas permissões do Office 365 se estendem?" em [Atribuição de funções de administração](https://go.microsoft.com/fwlink/p/?LinkId=286708).
     
-- Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Atalhos de teclado no Centro de administração do Exchange**.
+- Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, consulte **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > Está enfrentando problemas? Peça ajuda nos fóruns do Exchange. Visite os fóruns em: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), ou [Proteção do Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -39,7 +38,7 @@ No Microsoft Proteção do Exchange Online (EOP), é possível usar o Centro de 
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Usar o EAC para atribuir membros a grupos de funções de administração
 
-1. No EAC, navegue até **permissões** \> **Funções de administrador**, clique no grupo de função que você deseja adicionar o usuário ou usuários e, em seguida, clique em **Editar** ![ícone Editar](../media/ITPro-EAC-EditIcon.gif).
+1. No Eat, navegue até **permissões** \> **administrador funções**, clique no grupo de funções ao qual você deseja adicionar o usuário ou usuários e, em seguida, **** ![clique em Editar](../media/ITPro-EAC-EditIcon.gif)ícone de edição.
     
 2. Em Membros, clique em **Adicionar**![Ícone Adicionar](../media/ITPro-EAC-AddIcon.gif). A janela Selecionar Membros será exibida.
     
@@ -54,7 +53,7 @@ No Microsoft Proteção do Exchange Online (EOP), é possível usar o Centro de 
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Usar o EAC para remover membros de grupos de funções de administração
 
-1. No EAC, navegue até **permissões** \> **Funções de administrador**, clique no grupo de função que você deseja remover um usuário ou usuários e, em seguida, clique em **Editar** ![ícone Editar](../media/ITPro-EAC-EditIcon.gif).
+1. No Eat, navegue até **permissões** \> **administrador funções**, clique no grupo de funções do qual você deseja remover um usuário ou usuários e, em seguida, **** ![clique em Editar](../media/ITPro-EAC-EditIcon.gif)ícone de edição.
     
 2. Em Membros, selecione o usuário ou usuários que você deseja remover e clique em **Remover**![ícone Remover](../media/ITPro-EAC-RemoveIcon.gif).
     

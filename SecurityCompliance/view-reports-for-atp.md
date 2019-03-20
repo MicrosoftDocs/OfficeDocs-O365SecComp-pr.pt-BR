@@ -3,7 +3,7 @@ title: Exibir relatórios para a proteção avançada contra ameaças do Office 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Saiba como encontrar e usar relatórios para a proteção avançada contra ameaças do Office 365 no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 72776d6d7df98ffb43046a0d98e589c5ea39c257
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3a128103d16ed03edb18becde96a5d20ee6eca9b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341082"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692400"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios para a proteção avançada contra ameaças do Office 365
 
@@ -84,7 +84,7 @@ Além dos relatórios ATP descritos neste artigo, vários outros relatórios est
 |Tipo de relatório  |Saiba mais  |
 |---------|---------|
 |**Relatórios de segurança de email**, como um relatório superior de remetentes e destinatários, um relatório de email de falsificação e um relatório de detecções de spam. | [Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança](view-email-security-reports.md)        |
-|**Explorer** (também mencionado como o explorador de ameaças, isso está incluído no [Office 365 Threat Intelligence](office-365-ti.md))     | [Usar o Explorer no centro &amp; de conformidade de segurança](use-explorer-in-security-and-compliance.md)        |
+|**Explorer** (também mencionado como o explorador de ameaças, isso está incluído no [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md))     | [Usar o Explorer no centro &amp; de conformidade de segurança](use-explorer-in-security-and-compliance.md)        |
 |**Resultados de EOP e ATP** (Este é um relatório personalizado que você gera usando o PowerShell). Este relatório contém informações, como o domínio, a data, o tipo de evento, a direção, a ação e a contagem de mensagens.  | [Referência do cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
 |**Detecções de EOP e ATP** (Este é um relatório personalizado que você gera usando o PowerShell). Este relatório contém detalhes sobre arquivos mal-intencionados ou URLs, tentativas de phishing, representação e outras ameaças potenciais em emails ou arquivos.   | [Referência do cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
 
@@ -106,7 +106,7 @@ Para exibir e usar os relatórios descritos neste artigo, **você deve ter uma f
 
 Para saber mais, confira os seguintes recursos:
 
-- [Permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Permissões de recursos no Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    

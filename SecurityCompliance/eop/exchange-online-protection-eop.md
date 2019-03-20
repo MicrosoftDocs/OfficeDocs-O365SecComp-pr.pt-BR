@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Veja algumas coisas que você deve estar ciente antes de começar a trabalhar com o EOP.
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341742"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692320"
 ---
 # <a name="exchange-online-protection"></a>Proteção do Exchange Online 
 
@@ -48,13 +47,13 @@ O conteúdo da Ajuda para administradores do EOP é composta pelas seguintes cat
     
 - [Fluxo de emails no EOP](mail-flow-in-eop.md) Descreve como configurar cenários personalizados de fluxo de email usando conectores, como gerenciar domínios associados ao serviço e como ativar o recurso de Bloqueio de Borda Baseado em Diretório (DBEB). 
     
-- [Práticas recomendadas para a configuração do EOP](best-practices-for-configuring-eop.md) Descreve as configurações e as considerações de configuração recomendadas para depois de configurar e provisionar o serviço. 
+- [Best practices for configuring EOP](best-practices-for-configuring-eop.md) Describes recommended configuration settings and considerations for after you set up and provision your service. 
     
 - [Política de mensagens e conformidade no EOP](messaging-policy-and-compliance-in-eop.md) Descreve como usar as regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) para impor políticas e regulamentos específicas da empresa e como usar relatórios de auditoria para rastrear as alterações de configuração no serviço. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Descreve a filtragem de spam e de malware e mostra como personalizá-las para melhor atender às necessidades da sua organização. Descreve também as tarefas que os administradores e usuários finais podem realizar em mensagens em quarentena. 
     
-- [Relatórios e rastreamento de mensagens no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Descreve os relatórios e as ferramentas de solução de problemas disponíveis. 
+- [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Describes the reports and troubleshooting tools that are available. 
     
 - [Centro de administração do Exchange no Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Descreve como acessar e navegar pela interface de gerenciamento do centro de administração do Exchange (Eat) para gerenciar o serviço EOP. 
     

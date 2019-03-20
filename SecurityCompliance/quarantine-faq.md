@@ -7,7 +7,6 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a quarentena hospedada.
-ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9a9673b3360a9a8b6bf837e09b49aca7a38e2172
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341172"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693260"
 ---
 # <a name="quarantine-faq"></a>Perguntas Frequentes sobre a Quarentena
 
@@ -32,7 +31,7 @@ Você precisa usar o centro de &amp; conformidade de segurança para exibir e tr
   
  **P. Como configuro o serviço para enviar mensagens de spam para a quarentena?**
   
-A. por padrão, as mensagens filtradas por conteúdo são enviadas para a pasta de lixo eletrônico destinatários. No enTanto, os administradores podem configurar as políticas de filtro de conteúdo para enviar mensagens de spam em quarentena para a quarentena. Para obter mais informações sobre as diferentes ações que podem ser executadas em mensagens filtradas por conteúdo, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md).
+R. Por padrão, mensagens filtradas por conteúdo são enviadas para a pasta Lixo Eletrônico dos destinatários. No entanto, os administradores podem configurar suas políticas de filtro de conteúdo para enviar mensagens de spam para a quarentena. Para obter mais informações sobre as diferentes ações que podem ser executadas em mensagens filtradas por conteúdo, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md).
   
  **P. O serviço tem administrador e gerenciamento de usuário final de mensagens de spam em quarentena?**
   
@@ -44,19 +43,19 @@ Como usuário final, você pode gerenciar suas próprias mensagens em quarentena
         
  **P. Como posso conceder acesso à quarentena de spam para os usuários finais?**
   
-A. para acessar a quarentena de spam do usuário final, os usuários finais devem ter uma ID de usuário e uma senha válida do Office 365. Os clientes do EOP que protegem caixas de correio locais devem ser usuários de email válidos criados por meio da sincronização de diretórios ou do Eat. Para obter mais informações sobre o gerenciamento de usuários, os administradores do EOP podem consultar [gerenciar usuários de email no EOP](eop/manage-mail-users-in-eop.md). Para clientes autônomos do EOP, recomendamos o uso da sincronização de diretórios e a habilitação do bloqueio de borda baseado em diretório; para obter mais informações, consulte [usar o bloqueio de borda baseado em diretório para rejeitar mensagens enviadas a destinatários](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)inválidos.
+R. Para acessar a quarentena de spam de usuário final, os usuários finais devem ter uma ID de usuário e senha válidas para o Office 365. Os clientes do EOP que protegem caixas de correio locais devem ser usuários de email válidos criados via sincronização de diretórios ou pelo EAC. Para obter mais informações sobre o gerenciamento de usuários, os administradores do EOP podem consultar [gerenciar usuários de email no EOP](eop/manage-mail-users-in-eop.md). Para clientes autônomos do EOP, recomendamos usar a sincronização de diretórios e habilitar o Bloqueio de Borda Baseado em Diretórios; para obter mais informações, consulte [Usar Bloqueio de Borda Baseado em Diretório para Rejeitar Mensagens Enviadas a Destinatários Inválidos](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
  **P. É possível enviar qualquer outra mensagem, além de spam, para a quarentena?**
   
-A. mensagens que correspondem a uma regra de fluxo de emails (também conhecida como regra de transporte) também podem ser enviadas para a quarentena do administrador, se essa for a ação configurada. A quarentena de usuário final é somente para spam.
+R. As mensagens que correspondem a uma regra de fluxo de emails (também conhecida como regra de transporte) também podem ser enviadas para a quarentena do administrador, se essa for a ação configurada. A quarentena de usuário final destina-se apenas a spam.
   
  **P. Por quanto tempo as mensagens são mantidas na quarentena?**
   
-A. por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 30 dias, enquanto as mensagens em quarentena que correspondem a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. Após esse período de tempo, as mensagens são excluídas e não são recuperáveis. O período de retenção para mensagens em quarentena que correspondem a uma regra de fluxo de emails não é configurável. No enTanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **reter spam por (dias)** em suas políticas de filtro de conteúdo. Para obter mais informações, consulte [Configure Your spam filter Policies](configure-your-spam-filter-policies.md).
+R. Por padrão, as mensagens de spam em quarentena são mantidas em quarentena por 30 dias, enquanto as mensagens em quarentena que correspondem a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. Após esse período de tempo, as mensagens serão excluídas e não podem ser recuperadas. O período de retenção para mensagens em quarentena que correspondem a uma regra de fluxo de emails não é configurável. No entanto, o período de retenção para mensagens de spam em quarentena pode ser reduzido através da configuração **Reter spam por (dias)** nas suas políticas de filtro de conteúdo. Para saber mais, confira [Configure your spam filter policies](configure-your-spam-filter-policies.md).
   
  **P. Posso liberar ou relatar mais de uma mensagem em quarentena por vez?**
   
-A. a capacidade de liberar ou relatar várias mensagens de uma só vez não está disponível atualmente no Eat ou na quarentena de spam do usuário final. No enTanto, os administradores podem criar um script do Windows PowerShell remoto para realizar essa tarefa. Use o cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para pesquisar mensagens e o cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberá-las. 
+R. A capacidade de liberar ou relatar várias mensagens ao mesmo tempo não está disponível no momento no Eat ou na quarentena de spam do usuário final. No entanto, os administradores podem criar um script remoto do Windows PowerShell para realizar essa tarefa. Use o cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para procurar por mensagens, e o cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberá-las. 
   
  **P. Coringas são aceitos durante a pesquisa de mensagens em quarentena? Posso pesquisar mensagens em quarentena em um domínio específico?**
   

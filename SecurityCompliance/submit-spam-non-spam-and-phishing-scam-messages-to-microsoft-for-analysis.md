@@ -1,5 +1,5 @@
 ---
-title: Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
+title: Enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -7,7 +7,6 @@ ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,14 +14,14 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Você e seus usuários podem enviar mensagens de spam falsas negativas e falsos positivos para a Microsoft para análise. '
-ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341522"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693620"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
+# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise
 
 Pode ser frustrante quando os usuários da sua organização recebem mensagens de lixo eletrônico (spam) ou de phishing scam em suas respectivas caixa de entrada ou se não recebem uma mensagem de email legítima porque estão marcados como lixo eletrônico. Estamos constantemente ajustando os nossos filtros de spam para serem mais precisos. Você e seus usuários podem ajudar nesse processo enviando mensagens de spam falso negativo e falso positivo para a Microsoft para análise. Um "falso negativo" é uma mensagem de spam que deveria ter sido, mas não foi identificada como spam. Um "falso positivo" é uma mensagem de email legítima que foi identificada incorretamente como spam. 
   
@@ -87,7 +86,7 @@ Você pode enviar mensagens que não são spam das seguintes maneiras:
     
   - Mensagens de notificação de spam de usuário final (se estiverem habilitadas pelo administrador). 
     
-- Você também pode usar o email para enviar mensagens para a Microsoft que não devem ser classificadas como spam. Ao fazer isso, certifique-se de usar as etapas do procedimento a seguir.
+- Também é possível usar o email para enviar à Microsoft as mensagens que não deveriam ser classificadas como spam. Ao fazer isso, certifique-se de usar as etapas do procedimento a seguir.
     
 ### <a name="use-email-to-submit-false-positive-messages"></a>Envie por email as mensagens de falsos positivos
 
@@ -96,7 +95,7 @@ Use o mesmo procedimento descrito em "[usar email para enviar lixo eletrônico (
 ## <a name="spam-evaluation-and-rules-deployment"></a>Avaliação de spam e implantação de regras
 <a name="sectionSection2"> </a>
 
-A equipe de análise de spam examina as mensagens enviadas e ajusta os filtros de spam para evitar o lixo eletrônico futuro. Como resultado, os filtros de spam do Office 365 areconstantly refinados. Todos os itens enviados são avaliados no nível de rede. Envios falsos positivos são examinados e avaliados para possível ajuste de regra para permitir mensagens futuras por meio de filtros de spam. Portanto, notificar o serviço de falsos positivos e também falsos negativos (spam não filtrado) é vantajoso para você e todos os clientes que usam a rede global. A equipe de spam examina os indicadores dentro de cada mensagem enviada, como as seguintes:
+A equipe de análise de spam examina as mensagens enviadas e ajusta os filtros de spam para evitar o lixo eletrônico futuro. Como resultado, os filtros de spam do Office 365 areconstantly refinados. Todos os itens apresentados são avaliados ao nível de toda a rede. Envios falsos positivos são examinados e avaliados para possível ajuste de regra para permitir mensagens futuras por meio de filtros de spam. Portanto, notificar o serviço de falsos positivos e também falsos negativos (spam não filtrado) é vantajoso para você e todos os clientes que usam a rede global. A equipe de spam analisa indicadores em cada mensagem enviada, como o seguinte:
   
 - Endereço De
     
@@ -114,9 +113,9 @@ Depois de examinar essas informações, a equipe de spam pode fazer alterações
   
 [Vídeo da equipe de spam do Microsoft Exchange](https://youtu.be/-TpX_-GMC7o?hd=1)
   
-A avaliação de spam é um processo contínuo que se aplica independentemente do idioma ou conjunto de caracteres de origem. Como uma mensagem de spam pode ser vaga ou mesmo falta de texto no corpo da mensagem ou assunto, a equipe de spam se baseia em outras características da mensagem para executar a filtragem. Isso significa que, após a equipe de spam sinalizar uma determinada mensagem como spam e faz as alterações necessárias à sua base de regras, essa mensagem será bloqueada no futuro até que suas características tenham sido modificadas o suficiente para evitar nossos filtros. Novas regras de spam são implantadas continuamente. Os intervalos de tempo para regras em envios individuais variam de acordo com a quantidade e a qualidade dos envios. Como as novas regras de spam são definidas globalmente para todos os clientes, nem todos os envios de spam individuais resultarão em uma nova regra de spam.
+A avaliação de spam é um processo contínuo que se aplica independentemente do idioma ou conjunto de caracteres de origem. Como uma mensagem de spam pode ser vaga ou mesmo falta de texto no corpo da mensagem ou assunto, a equipe de spam se baseia em outras características da mensagem para executar a filtragem. Isso significa que, após a equipe de spam marcar uma determinada mensagem como spam e fazer as alterações necessárias na sua base de regra, essa mensagem ficará bloqueada no futuro até que suas características sejam modificadas o suficiente para evitar os nossos filtros. Novas regras de spam são implantadas de forma contínua. Os intervalos de tempo para regras em envios individuais variam de acordo com a quantidade e a qualidade dos envios. Como as novas regras de spam são definidas globalmente para todos os clientes, nem todos os envios de spam individuais resultarão em uma nova regra de spam.
    
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 <a name="sectionSection4"> </a>
 
 [Proteção antispam e antimalware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)

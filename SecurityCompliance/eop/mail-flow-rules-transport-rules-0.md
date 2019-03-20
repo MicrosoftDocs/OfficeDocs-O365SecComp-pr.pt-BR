@@ -7,16 +7,15 @@ ms.date: 4/29/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Você pode usar regras de fluxo de emails (regras de transporte) para identificar e executar ações em mensagens que fluem pela sua organização do Office 365.
-ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341202"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693250"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regras de fluxo de emails (regras de transporte) no Exchange Online Protection
 
@@ -24,21 +23,21 @@ Você pode usar regras de fluxo de emails (também conhecidas como regras de tra
   
 Este artigo explica os componentes das regras de fluxo de emails e como eles funcionam.
   
-Para obter as etapas para criar, copiar e gerenciar regras de fluxo de emails, consulte **Manage Mail Flow Rules**. Para cada regra, você tem a opção de fazê-lo, testá-lo ou testá-lo e notificar o remetente. Para saber mais sobre as opções de teste, confira **testar uma regra de fluxo** de emails e **dicas de política**.
+Para obter as etapas para criar, copiar e gerenciar regras de fluxo de emails, consulte **Manage Mail Flow Rules**. Você pode impor e testar cada regra ou testar e notificar o remetente. Para saber mais sobre as políticas de teste, consulte **Test a transport rule** e **Policy Tips**.
   
 Para relatórios de resumo e detalhes sobre as mensagens que correspondem a regras de fluxo de emails, confira **Usar relatórios de proteção de email no Office 365 para exibir dados sobre detecções de malware, spam e de regra**.
   
 Para implementar políticas de mensagens específicas usando regras do fluxo de emails, confira estes tópicos:
   
-- [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+- [Usar regras de fluxo de email para inspecionar anexos de mensagens no Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Configure a criptografia no Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Configurar a criptografia no Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
-- [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
+- [Avisos de isenção de mensagem em toda a organização, assinaturas, rodapés ou cabeçalhos no Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+- [Usar regras de fluxo de correio para definir o nível de confiança de spam (SCL) em mensagens](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Create organization-wide safe sender or blocked sender lists in Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Criar listas de remetentes seguros para toda a organização ou remetentes bloqueados no Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
     
 - [Redução de ameaças de malware com o bloqueio de anexos de arquivo no Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     
@@ -72,10 +71,10 @@ A seguinte tabela mostra como várias condições, valores de condição, exceç
   
 |**Componente**|**Lógica**|**Comentários**|
 |:-----|:-----|:-----|
-|Várias condições  <br/> |E  <br/> |Uma mensagem deve atender a todas as condições da regra. Se você precisar combinar uma condição ou outra, use regras separadas para cada condição. Por exemplo, se quiser adicionar o mesmo aviso de isenção legal a mensagens com anexos e mensagens com texto específico, crie uma regra para cada condição. No EAC, você pode facilmente copiar uma regra.  <br/> |
-|Uma condição com vários valores  <br/> |OU  <br/> |Algumas condições permitem especificar mais de um valor. A mensagem deve corresponder a qualquer um dos valores especificados (não todos). Por exemplo, se o assunto de uma mensagem de email for Informações sobre o mercado de ações e a condição **O assunto inclui qualquer uma destas palavras** estiver configurada para corresponder às palavras Contoso ou ações, a condição será atendida, pois o assunto contém pelo menos um dos valores especificados.  <br/> |
-|Várias exceções  <br/> |OU  <br/> |Se uma mensagem corresponder a qualquer uma das exceções, as ações não são aplicadas na mensagem. A mensagem não precisa coincidir com todas as exceções.  <br/> |
-|Várias ações  <br/> |E  <br/> |As mensagens que atendem às condições de uma regra recebem todas as ações que estão especificadas na regra. Por exemplo, se as ações **Preceder o assunto da mensagem com** e **Adicionar destinatários à caixa Cco** estiverem selecionadas, ambas as ações serão aplicadas à mensagem.  <br/> Lembre-se que algumas ações, como **Excluir a mensagem sem notificar ninguém**, impedem que regras subsequentes sejam aplicadas à mensagem. Outras ações como **Encaminhar a mensagem** não permitem ações adicionais.  <br/> Também é possível configurar uma ação em uma regra de tal forma que, quando ela for aplicada, as regras seguintes não sejam aplicadas à mensagem.  <br/> |
+|Comentários  <br/> |E  <br/> |Uma mensagem deve atender a todas as condições da regra. Se você precisar combinar uma condição ou outra, use regras separadas para cada condição. Por exemplo, se quiser adicionar o mesmo aviso de isenção legal a mensagens com anexos e mensagens com texto específico, crie uma regra para cada condição. No EAC, você pode facilmente copiar uma regra.  <br/> |
+|Uma mensagem deve atender a todas as condições da regra. Se você precisar combinar uma condição ou outra, use regras separadas para cada condição. Por exemplo, se quiser adicionar o mesmo aviso de isenção legal a mensagens com anexos e mensagens com conteúdo que corresponde a um padrão, crie uma regra para cada condição. Você pode facilmente copiar uma regra.  <br/> |OU  <br/> |Algumas condições permitem especificar mais de um valor. A mensagem deve corresponder a qualquer um dos valores especificados (não todos). Por exemplo, se o assunto de uma mensagem de email for Informações sobre o mercado de ações e a condição **O assunto inclui qualquer uma destas palavras** estiver configurada para corresponder às palavras Contoso ou ações, a condição será atendida, pois o assunto contém pelo menos um dos valores especificados.  <br/> |
+|Algumas condições permitem especificar mais de um valor. Se uma condição permitir inserir vários valores, a mensagem deverá corresponder a qualquer um dos valores especificados naquela condição. Por exemplo, se o assunto de uma mensagem de email for Informações sobre o mercado de ações e a condição O assunto inclui qualquer uma destas palavras estiver configurada para corresponder às palavras Contoso ou ações, a condição será atendida, pois o assunto contém pelo menos um dos valores da condição.  <br/> |OU  <br/> |Se uma mensagem corresponder a qualquer uma das exceções, as ações não são aplicadas na mensagem. A mensagem não precisa coincidir com todas as exceções.  <br/> |
+|Se uma mensagem corresponder a qualquer uma das exceções, as ações não são processadas. A mensagem não precisa coincidir com todas as exceções.  <br/> |E  <br/> |As mensagens que atendem às condições de uma regra recebem todas as ações que estão especificadas na regra. Por exemplo, se as ações **Preceder o assunto da mensagem com** e **Adicionar destinatários à caixa Cco** estiverem selecionadas, ambas as ações serão aplicadas à mensagem.  <br/> As mensagens que atendem às condições de uma regra recebem todas as ações especificadas na regra. Por exemplo, se as ações Preceder o assunto da mensagem com e Adicionar destinatários à caixa Cco estiverem selecionadas, ambas as ações serão aplicadas à mensagem. A mensagem receberá a cadeia de caracteres assinalada no assunto da mensagem e os destinatários especificados serão adicionados como destinatários de Cco.<br/> Também é possível configurar uma ação em uma regra de tal forma que, quando ela for aplicada, as regras seguintes não sejam aplicadas à mensagem.  <br/> |
    
 ### <a name="mail-flow-rule-properties"></a>Propriedades de regras de fluxo de email
 <a name="Properties"> </a>
@@ -91,7 +90,7 @@ A tabela a seguir descreve as propriedades das regras que estão disponíveis na
 |**Adiar a mensagem se o processamento de regra não for concluído** <br/> | _RuleErrorAction_ <br/> |Você pode especificar como a mensagem deveria ser tratada se o processamento de regra não puder ser concluído. Por padrão, a regra será ignorada, mas você pode optar por reenviar a mensagem para processamento.  <br/> |
 |**Corresponder endereço do remetente da mensagem** <br/> | _SenderAddressLocation_ <br/> |Se a regra usa condições ou exceções que examinam o endereço de email do remetente, você pode procurar o valor no cabeçalho da mensagem, no envelope da mensagem ou em ambos.  <br/> |
 |**Parar o processamento de mais regras** <br/> | _SenderAddressLocation_ <br/> |Essa é uma ação para a regra, mas se parece com uma propriedade no EAC. Você pode optar por evitar a aplicação de regras adicionais a uma mensagem após uma regra processar uma mensagem.  <br/> |
-|**Comentários** <br/> | _Comments_ <br/> |Você pode inserir comentários descritivos sobre a regra.  <br/> |
+|**Comments** <br/> | _Comments_ <br/> |Você pode inserir comentários descritivos sobre a regra.  <br/> |
    
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Como as regras de fluxo de emails são aplicadas a mensagens
 
@@ -126,6 +125,6 @@ Existem vários tipos de mensagens que transitam por uma organização. A tabela
   
 [Usar regras de fluxo de email para inspecionar anexos de mensagens no Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
-[Criptografia de e-mail no Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
+[Criptografia de email no Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[Limites de regras de diário, transporte e caixa de entrada](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Limites de regras de Diário, Transporte e Caixa de Entrada](https://go.microsoft.com/fwlink/p/?LinkId=324584)

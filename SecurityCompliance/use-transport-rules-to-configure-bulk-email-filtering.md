@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Os administradores podem aprender a usar regras de fluxo de email no Exchange Online Protection para filtragem de email em massa.
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275681"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693280"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar regras de fluxo de email para configurar a filtragem de email em massa no Exchange Online Protection
 
@@ -28,17 +27,17 @@ Você pode definir filtros de conteúdo para toda a empresa para spam e email em
 Se você quiser mais opções para filtrar mensagens em massa, você pode criar regras de fluxo de emails (também conhecidas como regras de transporte) para procurar padrões de texto ou frases freqüentemente encontradas em emails em massa. Qualquer mensagem que contenha essas características será marcada como spam. O uso dessas regras pode ajudar a reduzir a quantidade de emails em massa indesejados que sua organização recebe.
 
 > [!IMPORTANT]
-> Antes de criar as regras de fluxo de emails documentadas neste tópico, recomendamos que você leia primeiro [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valores de nível de reclamação em massa](bulk-complaint-level-values.md).<br>Os seguintes procedimentos marcam uma mensagem como spam para toda a sua organização. No enTanto, você pode adicionar outra condição para aplicar essas regras somente a destinatários específicos em sua organização. Dessa forma, as configurações agressivas de filtragem de email em massa podem ser aplicadas a alguns usuários altamente direcionados, enquanto o restante de seus usuários (que recebem principalmente o email em massa que eles se inscreveram) não são afetados. 
+> Antes de criar as regras de fluxo de emails documentadas neste tópico, recomendamos que você leia primeiro [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valores de nível de reclamação em massa](bulk-complaint-level-values.md).<br> Os seguintes procedimentos marcam uma mensagem como spam para toda a sua organização. No enTanto, você pode adicionar outra condição para aplicar essas regras somente a destinatários específicos em sua organização. Dessa forma, as configurações agressivas de filtragem de email em massa podem ser aplicadas a alguns usuários altamente direcionados, enquanto o restante de seus usuários (que recebem principalmente o email em massa que eles se inscreveram) não são afetados. 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Criar uma regra de fluxo de emails para filtrar mensagens de email em massa com base em padrões de texto
 
-1. No Centro de administração do Exchange (EAC), vá para **fluxo de emails** \> **regras**.
+1. No Centro de administração do Exchange (EAC), vá para **Fluxo de emails** \> **Regras**.
     
 2. Clique em **Adicionar** ![ícone](media/ITPro-EAC-AddIcon.gif) de adição e selecione **criar uma nova regra**.
     
 3. Especifique um nome para a regra.
     
-4. Clique em **mais opções**. Em **aplicar esta regra se**, selecione **o assunto ou o** \> **assunto ou o corpo corresponde a esses padrões de texto**.
+4. Clique em **Mais opções**. Em **aplicar esta regra se**, selecione **o assunto ou o** \> **assunto ou o corpo corresponde a esses padrões de texto**.
     
 5. Na caixa de diálogo **especificar palavras ou expressões**, adicione, uma de cada vez, as seguintes expressões regulares que são normalmente encontradas em emails em massa e clique em **ok** quando tiver concluído: 
     
@@ -66,13 +65,13 @@ Se você quiser mais opções para filtrar mensagens em massa, você pode criar 
     
    - `click (here to|the) unsubscribe`
     
-   A lista acima não é um conjunto completo de expressões regulares encontradas em emails em massa; é possível adicionar ou remover mais, conforme necessário. No enTanto, é um bom ponto de partida.<br>A pesquisa por palavras ou padrões de texto no assunto ou em outros campos de cabeçalho da mensagem ocorre *depois* que a mensagem foi decodificada a partir do método de codificação de transferência de conteúdo MIME usado para transmitir a mensagem binária entre os servidores SMTP no texto ASCII. Você não pode usar condições ou exceções para pesquisar os valores de codificação (geralmente, Base64) de assunto ou outros campos de cabeçalho em mensagens. 
+   A lista acima não é um conjunto completo de expressões regulares encontradas em emails em massa; é possível adicionar ou remover mais, conforme necessário. Entretanto, é um bom ponto de partida.<br>A pesquisa por palavras ou padrões de texto no assunto ou em outros campos de cabeçalho da mensagem ocorre *depois* que a mensagem foi decodificada a partir do método de codificação de transferência de conteúdo MIME usado para transmitir a mensagem binária entre os servidores SMTP no texto ASCII. Não é possível usar condições ou exceções para buscar os valores codificados brutos (tipicamente com base64) dos campos de cabeçalho assunto ou outros nas mensagens. 
     
 6. Em **Execute a ação a seguir**, selecione **Modificar as propriedades da mensagem** \> **definir o SCL (nível de confiança de spam)**.
     
 7. Na caixa de diálogo **especificar SCL**, defina o SCL como **5**, **6** ou **9** e clique em **ok**.
     
-   A configuração do SCL como 5 ou 6 executa a ação de **spam** , ao passo que a configuração do SCL como 9 usa a ação de **spam de alta confiança** , conforme configurado na política de filtro de conteúdo. O serviço executará a ação definida na política de filtro de conteúdo. A ação padrão é entregar a mensagem para a pasta lixo eletrônico dos destinatários, mas ações diferentes podem ser configuradas conforme descrito em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
+   Configurar o SCL como 5 ou 6 executa a ação **Spam**; configurar o SCL como 9 executa a ação **Spam de alta confiança**, conforme definido na política de filtro de conteúdo. O serviço executará a ação definida na política de filtro de conteúdo. A ação padrão é entregar a mensagem para a pasta lixo eletrônico dos destinatários, mas ações diferentes podem ser configuradas conforme descrito em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
     
    Se sua ação configurada for colocar em quarentena a mensagem em vez de enviá-la para a pasta lixo eletrônico dos destinatários, a mensagem será enviada para a quarentena do administrador como uma correspondência de regra de fluxo de email e não estará disponível na quarentena de spam do usuário final ou via usuário final notificações de spam. 
   
@@ -88,7 +87,7 @@ Se você quiser mais opções para filtrar mensagens em massa, você pode criar 
     
 3. Especifique um nome para a regra.
     
-4. Clique em **mais opções**. Em **aplicar esta regra se**, selecione **o assunto ou o** \> **assunto ou o corpo da mensagem inclui qualquer uma destas palavras**.
+4. Clique em **Mais opções**. Em **aplicar esta regra se**, selecione **o assunto ou o** \> **assunto ou o corpo da mensagem inclui qualquer uma destas palavras**.
     
 5. Na caixa de diálogo **especificar palavras ou expressões**, adicione, uma de cada vez, as seguintes frases comuns encontradas em emails em massa e clique em **ok** quando tiver concluído: 
     
@@ -118,13 +117,13 @@ Se você quiser mais opções para filtrar mensagens em massa, você pode criar 
     
    - `You are receiving this email because you are subscribed`
     
-   Essa lista não é um conjunto exaustivo de frases encontradas em emails em massa; é possível adicionar ou remover mais, conforme necessário. No enTanto, é um bom ponto de partida.
+   Essa lista não é um conjunto exaustivo de frases encontradas em emails em massa; é possível adicionar ou remover mais, conforme necessário. Entretanto, é um bom ponto de partida.
     
 6. Em **Execute a ação a seguir**, selecione **Modificar as propriedades da mensagem** \> **definir o SCL (nível de confiança de spam)**.
     
 7. Na caixa de diálogo **especificar SCL**, defina o SCL como **5**, **6** ou **9** e clique em **ok**.
     
-   A configuração do SCL como 5 ou 6 executa a ação de **spam** , ao passo que a configuração do SCL como 9 usa a ação de **spam de alta confiança** , conforme configurado na política de filtro de conteúdo. O serviço executará a ação definida na política de filtro de conteúdo. A ação padrão é entregar a mensagem para a pasta lixo eletrônico dos destinatários, mas ações diferentes podem ser configuradas conforme descrito em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
+   Configurar o SCL como 5 ou 6 executa a ação **Spam**; configurar o SCL como 9 executa a ação **Spam de alta confiança**, conforme definido na política de filtro de conteúdo. O serviço executará a ação definida na política de filtro de conteúdo. A ação padrão é entregar a mensagem para a pasta lixo eletrônico dos destinatários, mas ações diferentes podem ser configuradas conforme descrito em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
     
    Se sua ação configurada for colocar em quarentena a mensagem em vez de enviá-la para a pasta lixo eletrônico dos destinatários, a mensagem será enviada para a quarentena do administrador como uma correspondência de regra de fluxo de email e não estará disponível na quarentena de spam do usuário final ou via usuário final notificações de spam. 
   

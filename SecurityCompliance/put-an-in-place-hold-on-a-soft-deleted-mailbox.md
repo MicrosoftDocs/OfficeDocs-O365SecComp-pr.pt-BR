@@ -6,24 +6,23 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Saiba como criar um bloqueio in-loco para uma caixa de correio excluída de forma reversível para torná-la inativa e preservar seu conteúdo. Em seguida, você pode usar as ferramentas de descoberta eletrônica da Microsoft para pesquisar a caixa de correio inativa.
-ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 5113bd0dffe98a7af1c65af234caaefffff95184
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223520"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692590"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar um bloqueio in-loco em uma caixa de correio excluída de forma reversível no Exchange Online
 
 Saiba como criar um bloqueio in-loco para uma caixa de correio excluída de forma reversível para torná-la inativa e preservar seu conteúdo. Em seguida, você pode usar as ferramentas de descoberta eletrônica da Microsoft para pesquisar a caixa de correio inativa.
   
 > [!NOTE]
-> Adiamos o prazo para a criação de novas suspensões in-loco no Exchange Online (nos planos autônomos do Office 365 e do Exchange Online). Mas, posteriormente neste ano ou no início do próximo ano, você não poderá criar novos bloqueios in-loco no Exchange Online. Como alternativa ao uso de bloqueio in-loco, você pode usar [casos de descoberta eletrônica](https://go.microsoft.com/fwlink/?linkid=780738) ou [políticas de retenção](https://go.microsoft.com/fwlink/?linkid=827811) no centro &amp; de conformidade de segurança do Office 365. Depois de encerrarmos novas suspensões in-loco, você ainda poderá modificar bloqueios in-loco existentes e criar novos bloqueios in-loco no Exchange Server 2013 e implantações híbridas do Exchange ainda terão suporte. Além disso, você ainda poderá colocar caixas de correio em retenção de litígio. 
+> Adiamos o prazo para a criação de novas suspensões in-loco no Exchange Online (nos planos autônomos do Office 365 e do Exchange Online). Mas no final deste ano ou no início do próximo, você não poderá criar novos Bloqueios In-loco no Exchange Online. Como alternativa ao uso de bloqueio in-loco, você pode usar [casos de descoberta eletrônica](https://go.microsoft.com/fwlink/?linkid=780738) ou [políticas de retenção](https://go.microsoft.com/fwlink/?linkid=827811) no centro &amp; de conformidade de segurança do Office 365. Depois de encerrarmos novas suspensões in-loco, você ainda poderá modificar bloqueios in-loco existentes e criar novos bloqueios in-loco no Exchange Server 2013 e implantações híbridas do Exchange ainda terão suporte. Além disso, você ainda poderá colocar caixas de correio em retenção de litígio. 
   
 Você pode ter uma situação em que uma pessoa deixou sua organização e a conta de usuário correspondente e caixa de correio foram excluídas. Posteriormente, você perceberá que há informações na caixa de correio que precisam ser preservadas. O que você pode fazer? Se o período de retenção de caixa de correio excluída ainda não tiver expirado, você pode colocar um bloqueio in-loco na caixa de correio excluída (chamada de caixa de correio excluída por software) e torná-la uma caixa de correio inativa. Uma *caixa de correio inativa* é usada para preservar o email de um funcionário anterior, depois que ele deixa sua organização. O conteúdo de uma caixa de correio inativa é preservado para a duração do bloqueio in-loco que foi colocado na caixa de correio excluída por software quando ele foi tornado inativo. Após a caixa de correio ser desativada, você pode pesquisar a caixa de correio usando a descoberta eletrônica in-loco no Exchange Online, pesquisa de &amp; conteúdo no centro de conformidade de segurança do Office 365 ou no centro de descoberta eletrônica no SharePoint Online. 
   
@@ -34,7 +33,7 @@ Você pode ter uma situação em que uma pessoa deixou sua organização e a con
 
 - Você precisa usar o cmdlet **New-MailboxSearch** no Windows PowerShell para colocar um bloqueio in-loco em uma caixa de correio excluída de forma reversível. Você não pode usar o centro de administração do Exchange (Eat) ou o centro de descoberta eletrônica no SharePoint Online. 
     
-- Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira o artigo [Conectar-se ao Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira [Connect to Exchange Online Using Remote PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - Execute o seguinte comando para obter informações de identidade sobre as caixas de correio excluídas por software em sua organização. 
     
@@ -84,7 +83,7 @@ Use o cmdlet **New-MailboxSearch** para tornar uma caixa de correio de exclusão
 
 Após tornar uma caixa de correio inativa excluída por software, há várias maneiras de gerenciar a caixa de correio. Para obter mais informações, consulte:
   
-- [Alterar a duração de retenção de uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
+- [Alterar a duração da retenção de uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
     
 - [Recuperar uma caixa de correio inativa](recover-an-inactive-mailbox.md)
     

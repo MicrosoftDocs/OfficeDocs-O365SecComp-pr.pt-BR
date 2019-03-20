@@ -3,7 +3,7 @@ title: Encontre e investigue emails mal-intencionados que foram entregues (intel
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: Saiba como usar a inteligência de ameaças para localizar e investigar emails mal-intencionados.
-ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
+ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241903"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692450"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Encontre e investigue emails mal-intencionados que foram entregues (inteligência de ameaças do Office 365)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Encontre e investigue emails mal-intencionados que foram entregues (Office 365 Advanced Threat Protection Plan 2)
 
-O [Office 365 Threat Intelligence](office-365-ti.md) permite investigar as atividades que colocam seus usuários em risco e tomar medidas para proteger sua organização. Por exemplo, se você fizer parte da equipe de segurança da sua organização, poderá encontrar e investigar mensagens de email suspeitas que foram entregues aos seus usuários. Você pode fazer isso usando o [Explorador de ameaças](get-started-with-ti.md#threat-explorer).
+[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) permite investigar as atividades que colocam seus usuários em risco e tomar medidas para proteger sua organização. Por exemplo, se você fizer parte da equipe de segurança da sua organização, poderá encontrar e investigar mensagens de email suspeitas que foram entregues aos seus usuários. Você pode fazer isso usando o [Explorador de ameaças](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> A partir de fevereiro de 2019 e saindo dos próximos meses, o Office 365 Threat Intelligence está se tornando o Office 365 Advanced Threat Protection Plan 2, com recursos adicionais de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> O Office 365 Threat Intelligence é agora o Office 365 Advanced Threat Protection Plan 2, juntamente com outros recursos de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Antes de começar...
 
 Verifique se os seguintes requisitos são atendidos:
   
-- Sua organização tem a [inteligência contra ameaças do office 365](office-365-ti.md) e [atribui licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Sua organização tem o [plano de proteção avançada contra ameaças do Office 365](office-365-ti.md) e [atribui licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
 - O [log de auditoria do Office 365](turn-audit-log-search-on-or-off.md) está ativado para sua organização. 
     
@@ -70,9 +70,9 @@ Invasores mal-intencionados podem estar enviando emails aos seus usuários para 
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Inteligência Contra Ameaças do Office 365](office-365-ti.md)
+[Office 365 plano avançado de proteção contra ameaças 2](office-365-ti.md)
   
-[Proteção contra ameaças do Office 365](protect-against-threats.md)
+[Proteção contra ameaças no Office 365](protect-against-threats.md)
   
 [Exibir relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md)
   

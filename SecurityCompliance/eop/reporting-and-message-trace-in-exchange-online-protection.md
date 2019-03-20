@@ -7,20 +7,19 @@ ms.date: 12/18/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: O Microsoft Proteção do Exchange Online (EOP) oferece muitos relatórios diferentes que podem ajudá-lo a determinar o status e a integridade gerais de sua organização. Existem também ferramentas que ajudam você a solucionar problemas com eventos específicos (tais como uma mensagem que não chega aos destinatários pretendidos), e relatórios de auditoria para ajudar nos requisitos de conformidade. A tabela a seguir descreve os relatórios e as ferramentas de solução de problemas disponíveis para o administradores de EOP.
-ms.openlocfilehash: 01a09b2b4b72161352af3793686c6cc888e44e29
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027138"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693160"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Relatórios e rastreamento de mensagem no Exchange Online Protection
 
-Microsoft Exchange Online Protection (EOP) oferece vários relatórios diferentes que podem ajudá-lo a determinam o status geral e a integridade da sua organização. Há também ferramentas para ajudá-lo a solucionar problemas de eventos específicos (por exemplo, uma mensagem que chegam não para seus destinatários pretendidos) e relatórios de auditoria para auxiliar com os requisitos de conformidade. 
+O Microsoft Proteção do Exchange Online (EOP) oferece muitos relatórios diferentes que podem ajudá-lo a determinar o status e a integridade gerais de sua organização. Existem também ferramentas que ajudam você a solucionar problemas com eventos específicos (tais como uma mensagem que não chega aos destinatários pretendidos), e relatórios de auditoria para ajudar nos requisitos de conformidade. 
 
 ## <a name="usage-reports"></a>Relatórios de uso
 
@@ -28,48 +27,48 @@ Microsoft Exchange Online Protection (EOP) oferece vários relatórios diferente
 
 **Atividade de email** Exibir informações sobre o número de mensagens enviadas, recebidas e lidas em toda sua organização e por usuários específicos.  
 
-**Uso do aplicativo de email** Exibir informações sobre os aplicativos de email que são usados. Isso inclui o número total de conexões para cada aplicativo e as versões do Outlook que estão se conectando.  
+**Uso do aplicativo de email** Exibir informações sobre os aplicativos de email usados. Isso inclui o número total de conexões para cada aplicativo, e as versões do Outlook que estão se conectando.  
 
 **Uso de caixa de correio** Exibir informações sobre o armazenamento usado, consumo de cota, contagem de itens e última atividade (atividade de leitura ou envio) para caixas de correio.
 
-Consulte os seguintes recursos para obter mais informações:
+ConFira os recursos a seguir para obter mais informações:
 
-- [Relatórios do Office 365 no Centro de administração - grupos do Office 365](https://go.microsoft.com/fwlink/p/?linkid=861610) 
+- [Relatórios do Office 365 no centro de administração-grupos do Office 365](https://go.microsoft.com/fwlink/p/?linkid=861610) 
 - [Relatórios do Office 365 no Centro de administrador - Atividade de email](https://go.microsoft.com/fwlink/p/?linkid=859706) 
 - [Relatórios do Office 365 no Centro de administrador - Uso do aplicativo de email](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [Relatórios do Office 365 no Centro de administrador - Uso de caixa de correio](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Segurança &amp; relatórios de conformidade no Centro de administração do Office 365
+## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Relatórios &amp; de conformidade de segurança no centro de administração do Office 365
 
-Esses relatórios aprimorados fornecem uma experiência interativa de relatórios para os administradores do EOP, que inclui informações de resumo e a capacidade de fazer uma busca detalhada para obter mais detalhes.  
+Esses relatórios aprimorados fornecem uma experiência de relatório interativa para administradores do EOP, que inclui informações de resumo e a capacidade de aprofundar para obter mais detalhes.  
 
 **Proteção avançada contra ameaças (ATP)** Exibir informações sobre links e anexos seguros que fazem parte da ATP.  
 
-**EOP** Exibir informações sobre detecções de malware, mensagens falsificadas, detecções de spam e fluxo de emails de e para sua organização.  
+**EOP** Exibir informações sobre detecções de malware, email falsificado, detecções de spam e fluxo de emails de e para sua organização.  
 
-[Exibir relatórios de proteção de ameaça avançadas e Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409) 
+[Exibir relatórios para proteção avançada contra ameaças e proteção do Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=852409) 
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Relatórios personalizados usando o Microsoft Graph
 
-Criar relatórios que estão disponíveis no Centro de administração do Office 365 usando o Microsoft Graph ver programaticamente os subtópicos de [trabalhar com relatórios de uso do Office 365 no Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
+Criar proGramaticamente relatórios disponíveis no centro de administração do Office 365 usando o Microsoft Graph conFira os subtópicos sobre [como trabalhar com os relatórios de uso do office 365 no Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>Relatórios personalizados usando serviços Web de relatório
 
-Crie relatórios de maneira programática disponível PowerShell do Exchange Online Protection cmdlets de relatório usando a filtragem de consulta do REST/ODATA2.
+Criar proGramaticamente relatórios dos cmdlets disponíveis de relatórios do PowerShell do Exchange Online Protection usando a filtragem de consulta REST/ODATA2.
 
-Consulte o [Office 365 Reporting Web Services](https://go.microsoft.com/fwlink/p/?LinkId=279926) 
+ConFira [Serviços Web de relatório do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=279926) 
 
 ##<a name="message-trace"></a>Rastreamento de mensagens
 
-Mensagens de email são conforme elas viajam através do EOP. Você pode determinar se uma mensagem de email foi recebida, rejeitada, adiada ou entregue pelo serviço. Ele também mostra quais ações foram realizadas na mensagem antes de que atingiu seu status final.  
+Acompanhe as mensagens enviadas conforme elas circulam através di EOP. Você pode determinar se uma mensagem de email foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.  
 
 Você pode usar essa informação para responder com eficiência às perguntas dos seus usuários, solucionar problemas de fluxo de email, validar alterações de política e reduzir a necessidade de contatar o suporte técnico para obter assistência.  
 
-Consulte [rastrear uma mensagem de Email](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx) 
+Consulte [rastrear uma mensagem de email](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx) 
 
 ## <a name="audit-logging"></a>Registro em log de auditoria
 
-Rastreia alterações específicas feitas por administradores para sua organização. Esses relatórios podem ajudar você a solucionar problemas de configuração ou encontrar a causa de problemas relacionados à conformidade ou de segurança.  consulte [relatórios de auditoria no EOP](auditing-reports-in-eop.md) 
+Rastreie alterações específica feitas pelos administradores na sua organização. Estes relatórios ajudam você a solucionar problemas de configuração ou a encontrar a causa de problemas relacionados à conformidade ou à segurança.  Ver [relatórios de auditoria no EOP](auditing-reports-in-eop.md) 
 
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Disponibilidade e latência de dados de relatórios e rastreamento de mensagens
@@ -79,8 +78,8 @@ A tabela a seguir descreve quando dados de relatórios e rastreamento de mensage
 ||||
 |:-----|:-----|:-----|
 |**Tipo de relatório** <br/> |**Dados disponíveis por (período retrospectivo)** <br/> |**Latência** <br/> |
-|Relatórios resumidos de proteção de email  <br/> |90 dias  <br/> |A agregação de dados de mensagens geralmente é concluída em 24 a 48 horas. Algumas pequenas alterações agregadas progressivas podem ocorrer por até 5 dias.  <br/> |
-|Relatórios de detalhes de proteção de email  <br/> |90 dias  <br/> |Para obter dados detalhados de um período menor que sete dias, os dados deverão aparecer no prazo de 24 horas, mas a operação talvez não seja concluída em até 48 horas. Algumas pequenas alterações incrementais podem ocorrer por até cinco dias.  <br/> Para exibir relatórios detalhados de mensagens ocorridas em um período superior a sete dias, os resultados podem demorar umas poucas horas.  <br/> |
+|Relatórios de Resumo de proteção de email  <br/> |90 dias  <br/> |A agregação de dados de mensagens geralmente é concluída em 24 a 48 horas. Algumas pequenas alterações agregadas progressivas podem ocorrer por até 5 dias.  <br/> |
+|Relatórios de detalhes de proteção de email  <br/> |90 dias  <br/> |Para obter dados detalhados de um período menor que 7 dias, os dados deverão aparecer no prazo de 24 horas, mas a operação talvez não seja concluída em até 48 horas. Algumas pequenas alterações incrementais podem ocorrer por até 5 dias.  <br/> Para exibir relatórios detalhados de mensagens ocorridas em um período superior a sete dias, os resultados podem demorar umas poucas horas.  <br/> |
 |Dados de rastreamento de mensagem  <br/> |90 dias  <br/> |Ao rastrear mensagens ocorridas em um período menor que 7 dias, as mensagens devem aparecer no intervalo de 5 a 30 minutos.  <br/> Ao rastrear mensagens ocorridas em um período superior a 7 dias, os resultados podem demorar umas poucas horas.  <br/> |
    
 > [!NOTE]

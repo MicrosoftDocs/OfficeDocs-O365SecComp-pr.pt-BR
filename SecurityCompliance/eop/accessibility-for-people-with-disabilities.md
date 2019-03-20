@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: A Microsoft está comprometida com a fabricação de produtos e serviços que sejam fáceis para todos usarem.
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206374"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693100"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Acessibilidade para pessoas com deficiências
 
@@ -33,20 +32,20 @@ Além disso, alguns recursos e utilitários de acessibilidade do Windows podem b
   
 ## <a name="accessibility-features-of-exchange-help"></a>Recursos de acessibilidade da ajuda do Exchange
 
-Todas as figuras na ajuda do Microsoft Exchange, incluindo capturas de tela, diagramas, gráficos de fluxo e outras figuras, têm texto alternativo associado. Os usuários que têm dificuldade para exibir os números podem pausar o cursor na figura para ler o texto alternativo. O texto alternativo descreve o que é ilustrado na figura.
+Todas as figuras na ajuda do Microsoft Exchange, incluindo capturas de tela, diagramas, gráficos de fluxo e outras figuras, têm texto alternativo associado. Os usuários com dificuldade em exibir imagens podem pausar o cursor na imagem para ler o texto alternativo. O texto alternativo descreve o que é ilustrado na figura.
   
 ## <a name="accessibility-products-and-services-from-microsoft"></a>Produtos de acessibilidade e serviços da Microsoft
 
 As seções a seguir fornecem informações sobre os recursos, produtos e serviços que tornam o Microsoft Windows mais acessível para pessoas com deficiências.
   
 > [!NOTE]
-> As informações nesta seção se aplicam somente aos usuários que licenciam os produtos Microsoft nos Estados Unidos. Se você obteve este produto fora dos Estados Unidos, visite o [site de acessibilidade da Microsoft](https://www.microsoft.com/enable) para obter uma lista de números de telefone e endereços para serviços de suporte da Microsoft. Você pode entrar em contato com sua subsidiária para saber se os tipos de produtos e serviços descritos nesta seção estão disponíveis na sua área. Você pode saber mais sobre os recursos de acessibilidade incluídos nos produtos da Microsoft sobre a acessibilidade no site de produtos da Microsoft. 
+> A informação nesta seção aplica-se apenas aos usuários cuja licença de produtos Microsoft está nos Estados Unidos. Se você obteve este produto fora dos Estados Unidos, visite o [site de acessibilidade da Microsoft](https://www.microsoft.com/enable) para obter uma lista de números de telefone e endereços para serviços de suporte da Microsoft. É possível entrar em contato com sua subsidiária para descobrir se o tipo de produto e serviço descrito nesta seção está disponível em sua área. Você pode saber mais sobre os recursos de acessibilidade incluídos nos produtos da Microsoft sobre a acessibilidade no site de produtos da Microsoft. 
   
 ### <a name="accessibility-features-of-windows"></a>Recursos de acessibilidade do Windows
 
-O sistema operacional Windows tem vários recursos de acessibilidade internos que são úteis para pessoas que têm dificuldade para digitar ou usar um mouse, são cegas ou têm deficiência visual ou que são surdas ou com problemas de audição. Os recursos são instalados durante a instalação. Para obter mais informações sobre esses recursos, consulte a ajuda do Windows e [acessibilidade da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
+O sistema operacional Windows tem vários recursos de acessibilidade internos que são úteis para pessoas que têm dificuldade para digitar ou usar um mouse, são cegas ou têm deficiência visual ou que são surdas ou com problemas de audição. Os recursos instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a ajuda do Windows e [acessibilidade da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
   
-- **Tutoriais passo a passo gratuitos** A Microsoft oferece uma série de tutoriais passo a passo que fornecem procedimentos detalhados para ajustar as opções e configurações de acessibilidade no seu computador. Essas informações são apresentadas em um formato lado a lado para que você possa aprender a usar o mouse, o teclado ou uma combinação de ambos. 
+- **Tutoriais passo a passo gratuitos** A Microsoft oferece uma série de tutoriais passo a passo que fornecem procedimentos detalhados para ajustar as opções e configurações de acessibilidade no seu computador. Esta informação é apresentada em um formato lado a lado para que você possa saber como usar o mouse, o teclado ou uma combinação de ambos. 
     
     Para encontrar tutoriais passo a passo para produtos da Microsoft, consulte [acessibilidade da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
     
@@ -56,7 +55,7 @@ O sistema operacional Windows tem vários recursos de acessibilidade internos qu
     
 ### <a name="documentation-in-alternative-formats"></a>Documentação em formatos alternativos
 
-Se você tiver dificuldade para ler ou manusear materiais impressos, poderá obter a documentação de vários produtos da Microsoft em formatos mais acessíveis. Você pode obter um índice de documentação de produto acessível na [acessibilidade da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139). 
+Se você tem dificuldades para ler ou manusear materiais impressos, é possível obter a documentação de vários produtos da Microsoft em formatos mais acessíveis. Você pode obter um índice de documentação de produto acessível na [acessibilidade da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139). 
   
 Além disso, você pode obter publicações adicionais da Microsoft no Learning Ally. O Ally de aprendizado distribui esses documentos para membros registrados e qualificados do serviço de distribuição. Para obter informações sobre a disponibilidade da documentação do produto Microsoft e dos manuais da Microsoft Press, contate o Learning Ally. 
   
@@ -72,9 +71,9 @@ Se você é surdo ou tem problema auditivo, conclua o acesso aos serviços do cl
     
 - Para assistência técnica nos Estados Unidos, entre em contato com o Serviço de Suporte do Produto da Microsoft em (800) 892-5234 das 6:00 horas às 18:00 horas, horário do Pacífico, de Segunda a Sexta, excluindo feriados. No Canadá, ligue para (905) 568-9641 das 8:00 horas às 20:00 horas, horário do Leste, de Segunda a Sexta, excluindo feriados. 
     
-Os serviços de suporte da Microsoft estão sujeitos aos preços, termos e condições vigentes no momento em que o serviço é usado. Para obter mais informações, consulte [suporte da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
+Os Serviços de Suporte da Microsoft estão sujeitos aos preços, termos e condições no momento que o serviço é usado. Para obter mais informações, consulte [suporte da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar a vida de pessoas com deficiências, consulte [Microsoft Accessibility](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

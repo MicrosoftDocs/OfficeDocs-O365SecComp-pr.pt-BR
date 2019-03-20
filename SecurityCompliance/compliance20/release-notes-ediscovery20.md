@@ -14,20 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo contém as notas de versão da descoberta eletrônica avançada (versão prévia).
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295004"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684350"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de versão para descoberta eletrônica avançada (versão prévia)
 
 O programa de visualização pública para descoberta eletrônica avançada é a maneira de obter acesso antecipado à funcionalidade e às atualizações futuras. Para obter acesso antecipado aos recursos mais recentes, basta criar e usar um caso de descoberta eletrônica avançada (visualização) no centro de conformidade do & de segurança do Office 365. ConFira [criar um novo caso](create-new-ediscovery-case.md).
 
+## <a name="known-issues"></a>Problemas conhecidos
+
+**Microsoft Forms**
+
+- Os dados correspondentes a um formulário criado antes de 31 de janeiro de 2019 não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio. Formulários criados após essa data estarão disponíveis para pesquisa.
+
+- Um formulário criado por um usuário ainda pode receber respostas, mesmo depois que o usuário que criou o formulário é excluído. No enTanto, os dados correspondentes para essas respostas (que ocorreram depois da exclusão da caixa de correio) não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio de responsáveis.
+ 
+**Microsoft Sway**
+
+- Se um usuário editar um Sway imediatamente antes da exclusão da conta de usuário para o proprietário desse Sway, essas alterações poderão não ser pesquisadas ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio de responsáveis. O Sway bloqueia alterações em um Sway assim que recebe um sinal de que a conta foi excluída. No enTanto, há uma pequena chance de que um Sway possa ser editado antes que esse sinal seja recebido.
+
 ## <a name="issues-fixed-in-this-release"></a>Problemas corrigidos nesta versão
 
-- DCR: manipulação de exceção para itens não indexados e órfãos
+- DCR: manipulação de exceção para itens não indexados e itens órfãos
 - DCR: notificações de bloqueio
 - DCR: responsáveis pela descoberta eletrônica
 
