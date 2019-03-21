@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Noções básicas sobre políticas de supervisão no Office 365
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492850"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720271"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -99,7 +99,7 @@ Para saber mais sobre detalhes de informações confidenciais e os padrões incl
 
 #### <a name="custom-keyword-dictionaries"></a>Dicionários de palavras-chave personalizados
 
-Configurar dicionários de palavras-chave personalizados (ou léxicos) pode fornecer gerenciamento simples de palavras-chave específicas para sua organização ou setor e pode suportar até 100.000 termos por dicionário. Se necessário, você pode aplicar vários dicionários de palavras-chave personalizados a uma única política ou ter um único dicionário de palavra-chave por política. Esses dicionários são atribuídos em uma política de supervisão e podem ser originados de um arquivo (como uma lista. csv ou. txt) ou de uma lista que você pode [Inserir diretamente em um cmdlet do PowerShell](create-a-keyword-dictionary.md).
+Configurar dicionários de palavras-chave personalizados (ou léxicos) pode fornecer gerenciamento simples de palavras-chave específicas para sua organização ou setor e pode suportar até 100.000 termos por dicionário. Se necessário, você pode aplicar vários dicionários de palavras-chave personalizados a uma única política ou ter um único dicionário de palavra-chave por política. Esses dicionários são atribuídos em uma política de supervisão e podem ser originados de um arquivo (como uma lista. csv ou. txt) ou de uma lista que pode ser importada [no centro de conformidade](create-a-keyword-dictionary.md).
 
 #### <a name="conditional-settings"></a>Configurações condicionais
 
@@ -249,16 +249,17 @@ As seguintes atividades de política de supervisão são auditadas e podem ser e
 
 |**Atividades**|**Comandos associados**|
 |:-----|:-----|
-| Criar uma política | New-SupervisoryReviewPolicy <br> New-SupervisoryReviewRule |
-| Editando uma política | Set-SupervisoryReviewPolicy <br> Set-SupervisoryReviewRule |
-| Excluindo uma política| Remove-SupervisoryReviewPolicy |
+| Criar uma política | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| Editando uma política | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| Excluindo uma política| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| Exibindo uma política | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 As auditorias podem ser recuperadas usando a função de pesquisa de log de auditoria unificada ou usando o cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) do PowerShell.
 
 Por exemplo, o exemplo a seguir retorna as atividades para todas as atividades de análise de supervisão (políticas e regras) e lista informações detalhadas de cada:
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 Além das informações fornecidas nos logs e relatórios de supervisão, você também pode usar o cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) do PowerShell para retornar uma listagem detalhada completa de todas as atividades de política de supervisão.

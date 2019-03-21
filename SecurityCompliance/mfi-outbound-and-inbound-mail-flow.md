@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Os administradores podem saber mais sobre o widget fluxo de email de saída e entrada no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454883"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720281"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Fluxo de mensagens de entrada e de saída
 
@@ -48,3 +48,7 @@ O modo de exibição de **fluxo** de emails mostra o volume de mensagens por mei
 Você pode selecionar o modo de exibição de **uso de TLS** no menu suspenso para ver a divisão da proteção TLS para mensagens por meio do conector. Assim como o relatório de **relatório de visão geral de TLS** , este modo de exibição mostra a porcentagem das diferentes versões de TLS. Para conexões TLS 1,0, você realmente precisa obter o servidor de email ou o servidor de seu parceiro atualizado ou corrigido para evitar qualquer problema quando o suporte a TLS 1,0 for eventualmente preterido no Office 365. Para obter mais informações, consulte [Technical Reference Details about Encryption in Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
 
 O ideias aponta para conectores para ajudar a chamar a atenção para possíveis problemas de criptografia TLS para o conector. Os insights são: **nenhum TLS é maior que 25%** ou **TLS 1,0 está acima de 50%**. Se você vir esses insights, será necessário investigar seus servidores de email associados ao conector ou acessar sua organização de parceiro.
+
+## <a name="see-also"></a>Confira também
+
+Para obter mais informações sobre outros insights de fluxo de email no painel de fluxo de emails, consulte [Mail Flow insights no centro de conformidade de & de segurança](mail-flow-insights.md).

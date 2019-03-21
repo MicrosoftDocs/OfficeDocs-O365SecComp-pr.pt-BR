@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Os administradores podem aprender sobre alertas de fila e filas no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454863"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720301"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertas de fila e filas
 
@@ -69,3 +69,7 @@ Mesmo que o volume da mensagem na fila não tenha excedido o limite, você ainda
 Quando você clica no número de mensagens em filas, **** os detalhes e a orientação da fila para corrigir o problema aparecerão em um painel de submenu (o mesmo submenu exibido depois que você clicar em **Exibir fila** nos detalhes de um alerta de fila).
 
 ![Detalhes da fila](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>Confira também
+
+Para obter mais informações sobre outros insights de fluxo de email no painel de fluxo de emails, consulte [Mail Flow insights no centro de conformidade de & de segurança](mail-flow-insights.md).

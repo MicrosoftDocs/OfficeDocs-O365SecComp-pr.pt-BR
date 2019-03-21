@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Os administradores podem aprender sobre as informações de loop de email no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455233"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720291"
 ---
 # <a name="mail-loop-insight"></a>Informações de loop de email
 
@@ -25,3 +25,7 @@ Um loop de email é ruim porque ele desperdiça recursos do sistema, consome a c
 Você pode clicar em **Exibir detalhes** para ver os detalhes em um painel de submenu. Também identificamos os cenários de loop mais comuns e fornecemos as ações recomendadas (se disponível) para corrigir o loop.
 
 ![Painel de subMenu depois de clicar em Exibir detalhes em uma percepção de um loop de mal-formado no painel de fluxo de emails](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+
+## <a name="see-also"></a>Confira também
+
+Para obter mais informações sobre outros insights de fluxo de email no painel de fluxo de emails, consulte [Mail Flow insights no centro de conformidade de & de segurança](mail-flow-insights.md).

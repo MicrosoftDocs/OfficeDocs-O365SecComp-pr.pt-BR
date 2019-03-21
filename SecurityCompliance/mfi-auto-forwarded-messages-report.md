@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Os administradores podem saber mais sobre o relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454923"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720261"
 ---
 # <a name="auto-forwarded-messages-report"></a>Relatório de mensagens automaticamente encaminhadas
 
@@ -33,3 +33,7 @@ Quando você clica no número de mensagens no widget, um painel de submenu apare
 ## <a name="insights"></a>Informações
 
 Dois insights são gerados com base nos dados do relatório: **novos usuários** de encaminhamento e **novos domínios**de encaminhamento. Cada informação fornece um resumo do número de novos encaminhadores ou domínios com um link para o **novo relatório** de encaminhamento que fornece mais detalhes para os dois tipos de dados. O **novo relatório** de encaminhamento também mostra um modo de exibição de linha do tempo de nova atividade e a tabela detalhes identifica quem começou a encaminhar e a quais domínios.
+
+## <a name="see-also"></a>Confira também
+
+Para obter mais informações sobre outros insights de fluxo de email no painel de fluxo de emails, consulte [Mail Flow insights no centro de conformidade de & de segurança](mail-flow-insights.md).

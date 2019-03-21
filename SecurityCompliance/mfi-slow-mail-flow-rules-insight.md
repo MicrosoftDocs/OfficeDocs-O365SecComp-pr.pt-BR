@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Os administradores podem saber mais sobre as regras de fluxo de email lentos no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454873"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720251"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Visão de regras de fluxo de email lento
 
@@ -34,3 +34,7 @@ As informações ajudarão você a identificar e ajustar as regras de fluxo de e
 Quando você clica em **Exibir detalhes**, um painel flutuante aparece onde você pode revisar a regra. No painel de submenu, também é possível clicar em **Exibir mensagens de amostra** para ver quais tipos de mensagens são impactados pela regra.
 
 ![Painel de subMenu depois de clicar em Exibir detalhes em uma visão geral de regras de fluxo de emails no painel de fluxo de emails](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+
+## <a name="see-also"></a>Confira também
+
+Para obter mais informações sobre outros insights de fluxo de email no painel de fluxo de emails, consulte [Mail Flow insights no centro de conformidade de & de segurança](mail-flow-insights.md).

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar uma política de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474152"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701286"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
@@ -62,26 +62,20 @@ Siga estas etapas para configurar e usar a supervisão na sua organização do O
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Etapa 1-configurar grupos de supervisão (opcional)
 
- Ao criar uma política de supervisão, você determinará quem terá suas comunicações revisadas e quem executará essas análises. Na política, você usará endereços de email para identificar pessoas ou grupos de pessoas. Para simplificar a configuração, crie grupos para pessoas que terão suas comunicações revisadas e grupos para pessoas que examinarão essas comunicações. Se você estiver usando grupos, poderá precisar de vários — por exemplo, se quiser monitorar as comunicações entre dois grupos distintos de pessoas ou se quiser especificar um grupo que não será supervisionado. ConFira [exemplos de grupos de distribuição](configure-supervision-policies.md#GroupExample) para obter detalhes sobre como isso funciona.
-  
-Para supervisionar as comunicações entre ou dentro de grupos da sua organização, configure os grupos de distribuição no centro de administração do Exchange (vá para **grupos**de **destinatários** \> ). Para obter mais informações sobre como configurar grupos de distribuição, consulte [Manage Distribution groups](http://go.microsoft.com/fwlink/?LinkId=613635)
-  
-> [!NOTE]
-> Você também pode usar grupos de distribuição dinâmica ou grupos de segurança para supervisão, se preferir. Para ajudá-lo a decidir se esses melhores atendem às necessidades da sua organização, confira [gerenciar grupos de segurança habilitados para email](http://go.microsoft.com/fwlink/?LinkId=627033)e [gerenciar grupos dinâmicos de distribuição](http://go.microsoft.com/fwlink/?LinkId=627058).
-  
-<a name="GroupExample"> </a>
+ Ao criar uma política de supervisão, você determinará quem terá suas comunicações revisadas e quem executará essas análises. Na política, você usará endereços de email para identificar pessoas ou grupos de pessoas. Para simplificar a configuração, você pode criar grupos para pessoas que terão suas comunicações revisadas e grupos para pessoas que irão revisar essas comunicações. Se você estiver usando grupos, talvez precise de vários — por exemplo, se quiser monitorar as comunicações entre dois grupos distintos de pessoas ou se quiser especificar um grupo que não será supervisionado.
 
-### <a name="example-distribution-groups"></a>Exemplos de grupos de distribuição
+Use o gráfico a seguir para ajudá-lo a configurar grupos na sua organização para políticas de supervisão:
 
-Este exemplo inclui um grupo de distribuição que foi configurado para uma organização financeira chamada contoso Financial International.
-  
-Na Contoso Financial International, uma amostra das comunicações entre agentes nos Estados Unidos deve ser supervisionada. No entanto, os agentes de conformidade dentro desse grupo não exigem supervisão. Neste exemplo, podemos criar os seguintes grupos:
-  
-|**Configurar esse grupo de distribuição**|**Endereço do grupo (alias)**|**Descrição**|
+| **Membro de política** | **Grupos com suporte** | **Grupos sem suporte** |
 |:-----|:-----|:-----|
-|Todos os agentes dos EUA | US_Brokers@Contoso.com | Esse grupo inclui endereços de email para todos os agentes dos EUA que trabalham para a Contoso. |
-| Todos os agentes de conformidade dos EUA | US_Compliance@Contoso.com  | Esse grupo inclui endereços de email para todos os agentes de conformidade dos EUA que trabalham para a Contoso. Como esse grupo é um subconjunto de todos os agentes baseados nos EUA, você pode usar esse alias para isentar os responsáveis pela conformidade de uma política de supervisão. |
+|Usuários supervisionados | Grupos de distribuição <br> Grupos do Office 365 | Grupos dinâmicos de distribuição |
+| Reviewers | Grupos de segurança habilitados para email  | Grupos de distribuição <br> Grupos dinâmicos de distribuição |
   
+Para obter mais informações sobre a configuração de grupos, consulte:
+- [Criar e gerenciar grupos de distribuição](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Gerenciar grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Visão geral dos grupos do Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Etapa 2-tornar a supervisão disponível em sua organização (obrigatório)
@@ -118,43 +112,26 @@ Para obter mais informações sobre grupos de funções e permissões, consulte 
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>Etapa 3: criar tipos de informações confidenciais personalizados ou dicionários de palavras-chave personalizados (opcional)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Etapa 3: criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados (opcional)
 
 Para escolher entre os tipos de informações confidenciais personalizadas existentes ou os dicionários de palavras-chave personalizados no assistente de política de supervisão, primeiro você precisará criar esses itens, se necessário.
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Criar dicionário de palavras-chave personalizado/léxico (opcional)
+
+Usando um editor de texto (como o bloco de notas), crie um novo arquivo que inclui os termos de palavra-chave que você gostaria de monitorar em uma política de supervisão. Certifique-se de que cada termo está em uma linha separada e salve o arquivo no formato **Unicode/UTF-16 (little endian)** .
+
 ### <a name="create-custom-sensitive-information-types"></a>Criar tipos de informações confidenciais personalizados
 
-1. Crie um novo tipo de informação confidencial no centro de conformidade do & de segurança do Office 365. Navegue até **classificações** \> de **tipos de informações confidenciais** e siga as etapas no **Assistente novo tipo de informação confidencial**. Aqui você irá:
+1. Crie um novo tipo de informação confidencial e adicione seu dicionário personalizado no centro de conformidade do & de segurança do Office 365. Navegue até **classificações** \> de **tipos de informações confidenciais** e siga as etapas no **Assistente novo tipo de informação confidencial**. Aqui você irá:
 
     - Definir um nome e uma descrição para o tipo de informações confidenciais
     - Definir os elementos de proximidade, nível de confiança e padrão primário
+    - Importe seu dicionário personalizado como um requisito para o elemento correspondente
     - ReVisar suas seleções e criar o tipo de informações confidenciais
 
-    Para obter informações mais detalhadas, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md).
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>Criar dicionário de palavras-chave personalizado/léxico
-
-1. Usando um editor de texto (como o bloco de notas), crie um novo arquivo que inclui os termos de palavra-chave que você gostaria de monitorar em uma política de supervisão. Certifique-se de que cada termo está em uma linha separada e salve o arquivo no formato **Unicode/UTF-16 (little endian)** .
-2. Importe o arquivo de palavra-chave para o seu locatário do Office 365 usando o PowerShell. Para conectar-se ao Office 365 com o PowerShell, confira [Connect to office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-    Depois de se conectar ao Office 365 com o PowerShell, execute os seguintes comandos para importar seu dicionário de palavra-chave:
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    Para obter informações mais detalhadas, consulte [criar um dicionário de palavras-chave](create-a-keyword-dictionary.md).
-
-3. Crie um novo tipo de informação confidencial no centro de conformidade do & de segurança do Office 365. Navegue até **classificações** \> de **tipos de informações confidenciais** e siga as etapas no **Assistente novo tipo de informação confidencial**. Aqui você irá:
-
-    - Definir um nome e uma descrição para o tipo de informações confidenciais
-    - Adicionar seu dicionário personalizado como um requisito para o elemento correspondente
-    - ReVisar suas seleções e criar o tipo de informações confidenciais
+    Para obter informações mais detalhadas, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md) e [criar um dicionário de palavras-chave](create-a-keyword-dictionary.md)
 
     Depois que o dicionário personalizado/léxico é criado, você pode exibir as palavras-chave configuradas usando o cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) ou adicionar e remover termos usando o cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
-
-    Para obter informações mais detalhadas, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md).
 
 <a name="setupsuper"> </a>
 
