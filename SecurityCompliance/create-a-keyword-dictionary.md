@@ -3,23 +3,22 @@ title: Criar um dicionário de palavras-chave
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Identificar informações confidenciais, às vezes, exige procurar palavras-chave, especialmente quando identificar o conteúdo genérico (como comunicações relacionadas à saúde) ou idioma inapropriado ou explícito. Embora você possa criar listas de palavra-chave nos tipos de informação confidencial, essas listas são limitadas no tamanho e exigem modificar XML para criá-los ou editá-los. Dicionários de palavras-chave fornecem um gerenciamento mais simples de palavras-chave em uma escala muito maior, com suporte até 100.000 termos por dicionário.
-ms.openlocfilehash: 8e115c0feddbd55a498db3481e6ad4bc7ebb07e7
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 5561f8b11cf7bab8c726da332caca1484d455b35
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638908"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701306"
 ---
 # <a name="create-a-keyword-dictionary"></a>Criar um dicionário de palavras-chave
 
@@ -27,17 +26,32 @@ A Prevenção de perda de dados (DLP) no Office 365 pode identificar, monitorar 
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Etapas básicas para criar um dicionário de palavra-chave
 
-As palavras-chave para o seu dicionário podem vir de uma variedade de fontes, mais comumente de um arquivo (como uma lista .csv ou .txt), de uma lista que você insere diretamente no cmdlet ou de um dicionário existente. Quando você cria um dicionário de palavras-chave, siga as mesmas etapas principais:
+As palavras-chave para o seu dicionário podem vir de uma variedade de fontes, mais comumente de um arquivo (como uma lista .csv ou .txt), importada no serviço ou pelo cmdlet do PowerShell de uma lista que você insere diretamente no cmdlet do PowerShell ou de um dicionário existente. Quando você cria um dicionário de palavras-chave, siga as mesmas etapas principais:
   
-1. **Conectar-se ao PowerShell do Centro de Segurança e Conformidade** – confira [este tópico](https://docs.microsoft.com/pt-BR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Use o**Centro de Conformidade e Segurança** ou conectar-se com a **Segurança do &amp; Centro de Conformidade do PowerShell**.
     
-2. **Defina ou carregue suas palavras-chave na sua fonte pretendido** - o cmdlet para criar um dicionário de palavras-chave aceita uma lista de palavras-chave separadas por vírgula, de modo que esta etapa podem variar dependendo da origem de suas palavras-chave. 
+2. **Defina ou carregue suas palavras-chave na sua fonte pretendido** - o assistente e o cmdlet para criar aceitam uma lista de palavras-chave separadas por vírgula, de modo que esta etapa podem variar dependendo da origem de suas palavras-chave. Uma vez carregadas, elas são codificadas e convertidas em uma matriz bytes antes de serem importadas.
     
-3. **Codifique suas palavras-chave** - uma vez carregadas, são convertidas em uma matriz bytes antes de serem importadas. 
+3. **Crie seu dicionário** - escolha um nome e uma descrição e crie seu dicionário.
+
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Criar um dicionário de palavras-chave usando o Centro de Conformidade e Segurança
+
+Use as etapas a seguir para criar e importar palavras-chave para um dicionário personalizado:
+
+1. Conectar-se ao [Centro de Conformidade e Segurança](https://protection.office.com).
+2. Navegue até **Classificações > Tipos de informações confidenciais**.
+3. Selecione **Criar** e insira **Nome** e **Descrição** para o tipo de informações confidenciais, em seguida, selecione **Avançar**
+4. Selecione **Adicionar um elemento**e selecione **Dicionário (Palavras-chave grandes)** na lista suspensa **Detectar conteúdo que tenha**.
+5. Selecione **Adicionar um dicionário**
+6. Sob o controle da pesquisa, selecione **Você pode criar novos dicionários de palavras-chave**.
+7. Insira um **Nome** para o dicionário personalizado.
+8. Selecione **Importação**e selecione **a partir do texto** ou **a partir do csv** dependendo do tipo de arquivo de palavra-chave.
+9. Na caixa de diálogo arquivo, selecione o arquivo de palavra-chave no compartilhamento de arquivos do computador ou rede local e selecione **Abrir**.
+10. Selecione **Salvar**, em seguida selecione o dicionário personalizado da lista **Dicionários de palavras-chave**.
+11. Selecione **Próximo**, e em seguida**Avançar**.
+12. Revise e finalize as seleções de tipo de informações confidenciais e selecione **Terminar**.
     
-4. **Crie seu dicionário** - escolha um nome e uma descrição e crie seu dicionário. 
-    
-## <a name="create-a-keyword-dictionary-from-a-file"></a>Criar um dicionário de palavras-chave de um arquivo
+## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Criar um dicionário de palavras-chave de um arquivo usando o Power Shell
 
 Muitas vezes, quando você precisa criar um dicionário grande é para usar palavras-chave de um arquivo ou uma lista exportados de outra fonte. Nesse caso, você criará um dicionário de palavras-chave que contém uma lista de termos inadequados a verificar em emails externos. Será preciso [conectar-se ao PowerShell do Centro de Segurança e Conformidade do Office 365](https://docs.microsoft.com/pt-BR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
@@ -59,7 +73,9 @@ Muitas vezes, quando você precisa criar um dicionário grande é para usar pala
 
 ## <a name="modifying-an-existing-keyword-dictionary"></a>Como modificar um dicionário de palavra-chave existente
 
-Talvez seja necessário modificar palavras-chave em um dos seus dicionários de palavras-chave ou modificar um dos dicionários internos. Neste exemplo, modificaremos alguns termos no PowerShell, salvaremos os termos localmente onde você pode modificá-los em um editor e atualizar os termos anteriores no local. Primeiro, recupere o objeto dicionário:
+Talvez seja necessário modificar palavras-chave em um de seus dicionários de palavras-chave ou modificar um dos dicionários internos. Atualmente, você pode atualizar somente um dicionário personalizado de palavras-chave usando o PowerShell. 
+
+Neste exemplo, modificaremos alguns termos no PowerShell, salvaremos os termos em um local onde você poderá modificá-los em um editor e atualizaremos os termos anteriores no local. Primeiro, recupere o objeto dicionário:
   
 ```
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
