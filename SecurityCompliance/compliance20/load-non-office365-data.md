@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b177fc292c748f21907621196dc28d6b8fe17959
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296784"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737661"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Carregar dados que não sejam do Office 365 em um conjunto de trabalho
 
 Nem todos os documentos que você pode precisar analisar com a descoberta eletrônica avançada do Office 365 residirão no Office 365. Com o recurso de importação de conteúdo não-Office 365 na descoberta eletrônica avançada, é possível carregar documentos que não residem no Office 365 em um conjunto de trabalho para que seja analisado com a descoberta eletrônica avançada. Este procedimento mostra como trazer documentos não-Office 365 para a descoberta eletrônica avançada para análise.
 
 >[!Note]
->A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá Inscrever-se para uma avaliação do Office 365 Enterprise E5.
+>A descoberta eletrônica avançada requer um Office 365 E3 com o complemento de conformidade avançada ou uma assinatura E5 para sua organização. Se você não tiver esse plano e quiser tentar a descoberta eletrônica avançada, poderá se inscrever para uma avaliação do Office 365 Enterprise e5.
 
 ## <a name="before-you-begin"></a>Antes de começar
 O uso do recurso de upload que não é do Office 365 conforme descrito neste procedimento exige que você tenha:
@@ -38,6 +38,14 @@ O uso do recurso de upload que não é do Office 365 conforme descrito neste pro
 - Uma ocorrência de descoberta eletrônica existente.
 
 - Todos os arquivos para carregamento são coletados em pastas onde há uma pasta por responsáveis e o nome das pastas está neste formato *alias @ nome_do_domínio* . O *alias @ nome_do_domínio* deve ser Users Office 365 alias and Domain. Você pode coletar todas as pastas *alias @* DomainName em uma pasta raiz. A pasta raiz pode conter apenas as pastas *alias @* DomainName, não deve haver arquivos soltos na pasta raiz.
+
+   A estrutura de pastas para os dados que não são do Office 365 que você planeja carregar deve ser semelhante ao seguinte:
+
+   - c:\nonO365\abraham.mcmahon@contoso.com
+   - c:\nonO365\jewell.gordon@contoso.com
+   - c:\nonO365\staci.gonzalez@contoso.com
+
+   Onde abraham.mcmahon@contoso.com, jewell.gordon@contoso.com e staci.gonzalez@contoso.com são endereços SMTP dos responsáveis no caso.
 
 - Uma conta que seja um Gerenciador de descoberta eletrônica ou ferramentas de armazenamento do Microsoft Azure administrador instaladas em um computador que tenha acesso à estrutura de pasta de conteúdo não-Office 365.
 
@@ -65,6 +73,9 @@ O uso do recurso de upload que não é do Office 365 conforme descrito neste pro
 ![Arquivos não-Office 365 Import-upload](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
 ![Importação de AzCopy não-Office 365](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+
+> [!NOTE]
+> Se o comando AzCopy fornecido falhar, consulte [solucionar problemas de AzCopy na descoberta eletrônica avançada (versão prévia)](troubleshooting-azcopy.md)
 
 6. Por fim, volte para a conformidade do & de segurança e clique no botão **próximo: processar arquivos** .  Isso iniciará o processamento, a extração de texto e a indexação de arquivos carregados.  Você pode acompanhar o progresso do processamento aqui ou na guia **trabalhos** .  Depois de concluído, os novos arquivos estarão disponíveis no conjunto de trabalho.  Quando o processamento estiver concluído, você poderá ignorar o assistente.
 

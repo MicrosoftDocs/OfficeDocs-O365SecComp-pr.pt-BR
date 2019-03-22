@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296724"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737671"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correção de erro ao processar dados
 
@@ -62,8 +62,8 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
     ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > Se você tiver problemas para executar este comando, https://go.microsoft.com/fwlink/?linkid=2038117 consulte para obter dicas de solução de problemas.
+    > [!NOTE]
+    > Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada (versão prévia)](troubleshooting-azcopy.md)
 
 7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     > [!NOTE]
