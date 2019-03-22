@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Aprenda as maneiras mais comuns de reduzir spam e lixo eletrônico no Office 365.
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670556"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Como reduzir emails de spam no Office 365
 
@@ -56,6 +56,9 @@ Para evitar que você receba muito spam, a Proteção do Exchange Online (EOP) e
 - **Bloquear imediatamente um remetente** Caso você precise bloquear imediatamente um remetente, é possível bloquear pelo endereço de email, domínio ou endereço IP. Confira [Usar o EAC para criar uma regra de fluxo de emails que bloqueia mensagens enviadas de um domínio ou usuário](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Uma entrada em uma lista de permissões do usuário final pode substituir um conjunto de bloqueios definido pelo administrador.
     
 - **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas.
+- **Habilite [DKIM](use-dkim-to-validate-outbound-email.md)** para assinar todas as suas mensagens de saída e aumentar a segurança no seu domínio e locatário.
+ > [!TIP]
+> Depois de habilitar o DKIM, habilite o [ DMARC ](use-dkim-to-validate-outbound-email.md), pois esse registro validará se o DKIM e o SPF estão funcionando do modo correto e, geralmente, os e-mails de falsificação não têm assinatura, pois o O365 gerencia sua chave simétrica pública e privada.
     
 ### <a name="for-users"></a>Para usuários
 
