@@ -1,5 +1,5 @@
 ---
-title: Proteção antiphishing no Office 365
+title: Proteção contra phishing no Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -11,17 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: O Office 365 oferece uma variedade de proteção contra ataques de phishing por padrão e também por meio de ofertas adicionais, como o anti-phishing da ATP. Este tópico apresenta os recursos online que você pode usar para aprender sobre e implementar opções e estratégias anti-phishing no Office 365.
-ms.openlocfilehash: 8248c90db6158cf6fc5f30871fc3bd7c5096d077
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276051"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747567"
 ---
-# <a name="anti-phishing-protection-in-office-365"></a>Proteção antiphishing no Office 365
+# <a name="anti-phishing-protection-in-office-365"></a>Proteção contra phishing no Office 365
 
 O Office 365 oferece uma variedade de proteção contra ataques de phishing por padrão e também por meio de ofertas adicionais, como o anti-phishing da ATP. Este tópico apresenta os recursos online que você pode usar para aprender sobre e implementar opções e estratégias anti-phishing no Office 365.
   
@@ -39,12 +40,12 @@ Para obter mais detalhes sobre como o Office 365 é configurado por padrão para
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Como o Office 365 valida o endereço do remetente para impedir o phishing](how-office-365-validates-the-from-address.md)
+[Como o Office 365 valida o endereço de: para impedir o phishing](how-office-365-validates-the-from-address.md)
   
 [Proteger-se contra esquemas de phishing e outras formas de fraude online](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
   
-[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) 
+[Proteção Avançada contra Ameaças do Office 365](office-365-atp.md)
   
-[Recursos antiphishing ATP no Office 365](atp-anti-phishing.md)
+[Recursos de anti-phishing do ATP no Office 365](atp-anti-phishing.md)
   
 
