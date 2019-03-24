@@ -3,7 +3,7 @@ title: Desenvolver um esquema de classificação para dados pessoais
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine se sua organização implementará os rótulos como parte do plano do RGPD.
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373862"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789436"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Desenvolver um esquema de classificação para dados pessoais
 
@@ -45,13 +45,13 @@ Selecione uma das opções a seguir.
 
 -   No futuro, eles funcionarão com o Cloud App Security e será possível detectar informações confidenciais em outros aplicativos SaaS.
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>Opção 2: usar os tipos de informações confidenciais + os rótulos do Office
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opção 2: usar os tipos de informações confidenciais + rótulos de retenção
 
--   Será preciso que os tipos de informações confidenciais apliquem rótulos automaticamente a dados pessoais sujeitos ao RGPD, então, isso é um pré-requisito.
+-   Será necessário que os tipos de informações confidenciais apliquem rótulos automaticamente aos dados pessoais sujeitos ao RGPD, o que faz deles um pré-requisito.
 
--   O uso de rótulos do Office permite incluir dados pessoais sujeitos ao RGPD em um plano de governança de dados mais amplo para a sua organização.
+-   Usar a retenção de rótulos permite incluir dados pessoais que são sujeitos ao RGPD em um plano mais amplo de governança de dados para a sua organização.
 
--   Posteriormente, os rótulos do Office se fundirão com os da Proteção de Informações do Azure para um mecanismo de classificação e rotulação unificadas.
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Desenvolver um esquema de rotulação que inclui dados pessoais
 
