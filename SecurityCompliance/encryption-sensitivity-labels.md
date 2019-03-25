@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode restringir o acesso ao conteúdo ao qual o rótulo será aplicado. Rótulos de confidencialidade podem usar criptografia para proteger o conteúdo.
-ms.openlocfilehash: c76fb44fa00edc141e5037b99258a9501e722d86
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455333"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737691"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade
 
@@ -47,7 +47,7 @@ A criptografia usa o Azure Rights Management (Azure RMS). O Azure RMS usa identi
 Para começar, basta colocar **Criptografia** no estado **Ativado** e depois usar as opções abaixo para controlar quem pode acessar emails ou documentos aos quais o rótulo é aplicado. Você pode:
 
 1. **Aplicar criptografia em emails e documentos, ou apenas em emails. ** Se quiser aplicar somente aos emails, as mensagens com esse rótulo serão criptografadas no Outlook, mas os documentos com este rótulo não serão criptografados em outros aplicativos, como Word ou PowerPoint. 
-2. **Permitir que o acesso ao conteúdo rotulado expire**, em uma data específica ou depois de um número específico de dias após o rótulo ser aplicado. Após este período, os usuários não poderão abrir o item rotulado. Se você especificar uma data, isso será válido a partir da meia-noite da data em questão em seu fuso horário atual. 
+2. **Permitir que o acesso ao conteúdo rotulado expire**, em uma data específica ou depois de um número específico de dias após o rótulo ser aplicado. Após este período, os usuários não poderão abrir o item rotulado. Se você especificar uma data, isso será válido a partir da meia-noite da data em questão em seu fuso horário atual. (Observe que alguns clientes de email podem não impor expiração e exibir emails após a data de vencimento, devido a seus mecanismos de cache.)
 3. **Permitir o acesso offline** nunca, sempre ou por um número específico de dias após o rótulo ser aplicado. Se você restringir o acesso offline para nunca ou por um número de dias, quando este limite for atingido, os usuários precisarão ser autenticados novamente e seu acesso será registrado. Para saber mais, confira a próxima seção na licença de uso de Gerenciamento de Direitos.
 
 ![Configurações de criptografia do rótulo de confidencialidade](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)

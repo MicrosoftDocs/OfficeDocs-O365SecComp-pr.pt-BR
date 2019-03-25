@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor as configurações de proteção, como criptografia ou marcas d'água no conteúdo rotulado.
-ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455023"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737681"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -35,6 +35,8 @@ Você pode usar rótulos de confidencialidade para:
 - **Proteger o conteúdo em aplicativos do Office em vários dispositivos e plataformas diferentes.** Rótulos de confidencialidade funcionam em aplicativos do Office no Windows, Mac, iOS e Android. Haverá suporte para os aplicativos Web do Office em breve.
     
 - **Impedir que conteúdo confidencial saia da organização em dispositivos com Windows** usando a proteção do ponto de extremidade do Microsoft Intune. Depois de um rótulo de confidencialidade ter sido aplicado a um conteúdo presente em um dispositivo Windows, a proteção de ponto de extremidade pode impedir que o material seja copiado para um aplicativo de terceiros, como Twitter ou Gmail, ou um armazenamento removível, como uma unidade USB.
+
+- **Proteger o conteúdo em aplicativos e serviços de terceiros** usando o Microsoft Cloud App Security. Com o Cloud App Security, você pode detectar, classificar, rotular e proteger o conteúdo em serviços e aplicativos de terceiros, como SalesForce, Box ou Dropbox, mesmo que o aplicativo ou serviço de terceiros não leia nem ofereça suporte a rótulos de confidencialidade.
 
 - **Estender rótulos de confidencialidade a aplicativos e serviços de terceiros.** Com o SDK de proteção de informações da Microsoft, os aplicativos de terceiros no Windows, Mac e Linux podem ler rótulos de confidencialidade e aplicar configurações de proteção. Este recurso estará disponível para aplicativos iOS e Android em breve.
 
@@ -221,7 +223,20 @@ Antes que seus rótulos de confidencialidade possam usar a WIP, é necessário a
 - [Configure a WDATP (Proteção Avançada contra Ameaças do Windows Defender)](https://docs.microsoft.com/pt-BR/windows/security/threat-protection/windows-defender-atp/get-started), que examina o conteúdo em busca de um rótulo e aplica a proteção WIP correspondente. A ATP executa algumas ações independentemente da WIP, como gerar relatórios sobre anomalias.
 - Crie uma política de WIP que se aplique aos dispositivos de ponto de extremidade. Você pode fazer isso em qualquer um destes locais:
     - [Crie uma política de WIP com MDM usando o portal do Azure para o Microsoft Intune](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Crie e implante uma política de WIP (Proteção de Informações do Windows) usando o System Center Configuration Manager](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - [Crie e implante uma política de WIP usando o System Center Configuration Manager](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+
+## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteger o conteúdo em aplicativos e serviços de terceiros usando o Microsoft Cloud App Security
+
+Proteger o conteúdo em aplicativos e serviços de terceiros usando o Cloud App Security (CAS). Com o CAS, é possível detectar, classificar, rotular e proteger o conteúdo em serviços e aplicativos de terceiros, como SalesForce, Box ou Dropbox. Por exemplo, Dropbox não pode entender um rótulo de confidencialidade, mas o CAS pode se destacar e proteger o conteúdo rotulado nessa localização.
+
+Para obter mais informações, consulte [Aplicar automaticamente rótulos de classificação da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/use-case-information-protection).
+
+### <a name="important-prerequisites"></a>Pré-requisitos importantes
+
+Antes que seus rótulos de confidencialidade possam usar a CAS, é necessário atender aos pré-requisitos descritos aqui: [Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/use-case-information-protection). Esse tópico descreve os seguintes pré-requisitos:
+
+- [Habilitar a Segurança no Aplicativo na Nuvem e a Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/azip-integration) para seu locatário.
+- [Conectar o aplicativo](https://docs.microsoft.com/pt-BR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Segurança no Aplicativo na Nuvem.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Estender rótulos de confidencialidade a aplicativos e serviços de terceiros usando o SDK de Proteção de Informações da Microsoft
 
