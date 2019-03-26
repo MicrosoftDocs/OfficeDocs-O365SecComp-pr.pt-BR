@@ -1,5 +1,5 @@
 ---
-title: Introdução ao Portal de Confiança do Serviço Microsoft
+title: Introdução ao portal de confiança do serviço Microsoft
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,14 +12,14 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para os relatórios de conformidade normativa do Office 365, Azure e Dynamics 365 online, para ver auditorias de terceiros, descubra como a Microsoft mantém a segurança dos dados dos clientes e como é possível ser compatível com ISO, HIPAA, NIST, FINRA, RGPD e FedRAMP quando você usa esses serviços online.
-ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296684"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647331"
 ---
-# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao Portal de Confiança do Serviço Microsoft
+# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao portal de confiança do serviço Microsoft
 
 O portal de confiança do serviço Microsoft oferece uma variedade de conteúdo, ferramentas e outros recursos sobre as práticas de segurança, privacidade e conformidade da Microsoft.
   
@@ -33,7 +33,7 @@ O portal de confiança do serviço contém detalhes sobre a implementação da M
 
 - Dynamics 365
 
-- Azure
+- Azul-fino
     
  > [!NOTE]
  > As contas do Active Directory do Azure associadas a organizações têm acesso a todo o intervalo de documentos e recursos, como o Gerenciador de conformidade. As contas da Microsoft criadas para uso pessoal têm acesso limitado ao conteúdo do portal de confiança do serviço. 
@@ -87,9 +87,9 @@ Fornece informações de conformidade específicas do setor e da região sobre o
     - Educação
     - Serviços financeiros
     - Legais
-    - Integridade
+    - Saúde
     - Fabricação
-    - Varejo
+    - Loja
 
 - **Regiões** : fornece opiniões legais sobre a conformidade dos serviços em nuvem da Microsoft com várias leis de vários países. Os países específicos incluem Austrália, República Tcheca, Alemanha, Polônia, Romênia, Espanha e Reino Unido.
   
@@ -100,11 +100,11 @@ Fornece uma infinidade de informações de implementação e design de seguranç
 - White papers, perguntas frequentes e instruções
 - Guias de conformidade
 - Testes de caneta e avaliações de segurança
-- Pontuação segura
+- Classificação de Segurança
 - Plantas de segurança e conformidade do Azure
 - Controles auditados
   
-### <a name="trust-center"></a>Central de Confiabilidade
+### <a name="trust-center"></a>Centro de confiabilidade
 
 Links para a [central de confiabilidade da Microsoft](https://www.microsoft.com/trustcenter), que fornece mais informações sobre segurança, conformidade e privacidade na nuvem da Microsoft. Isso inclui informações sobre os recursos nos serviços do Microsoft Cloud que podem ser usados para atender a requisitos específicos do RGPD, documentação útil para sua responsabilidade do RGPD e para sua compreensão das medidas técnicas e organizacionais A Microsoft levou para dar suporte ao RGPD.
   
@@ -118,7 +118,7 @@ Funções administrativas que estão disponíveis somente para a conta de admini
   
  A página de **configurações** permite que você atribua acesso baseado em função ao Gerenciador de conformidade. Para obter mais informações, consulte a seção "permissões e controle de acesso baseado em função" em [usar o Gerenciador de conformidade para ajudar a atender aos requisitos de proteção de dados e regulamentados ao usar os serviços de nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Pesquisa
+### <a name="search"></a>Pesquisar
 
 Clique na lupa no canto superior direito da página do portal de confiança do serviço para expandir a caixa, insira seus termos de pesquisa e pressione **Enter**.
 
@@ -139,7 +139,7 @@ Para listar os controles de avaliações no gerente de conformidade relacionados
   
 ## <a name="my-library"></a>Minha biblioteca
 
-Use o recurso minha biblioteca para adicionar documentos e recursos no portal de confiança do serviço à sua página minha biblioteca. Isso permite que você acesse documentos que são relevantes para você em um único local.  Para adicionar um documento à sua biblioteca, clique no menu **...** à direita de um documento e selecione **Adicionar à biblioteca**. Você pode adicionar vários documentos à minha biblioteca clicando na caixa de seleção ao lado de um ou mais documentos e, em seguida, clicando em **salvar na biblioteca** na parte superior da página.
+Use o recurso minha biblioteca para adicionar documentos e recursos no portal de confiança do serviço à sua página minha biblioteca. Isso permite que você acesse documentos que são relevantes para você em um único local.  Para adicionar um documento à sua biblioteca, clique no menu **...** à direita de um documento e, em seguida, selecione **salvar na biblioteca**. Você pode adicionar vários documentos à minha biblioteca clicando na caixa de seleção ao lado de um ou mais documentos e, em seguida, clicando em **salvar na biblioteca** na parte superior da página.
 
 Além disso, o recurso Notifications permite que você configure a minha biblioteca para que uma mensagem de email seja enviada sempre que a Microsoft atualizar um documento que você tenha adicionado à minha biblioteca. Para configurar notificações, vá para a minha biblioteca e clique em **configurações de notificação**. Você pode escolher a frequência de notificações e especificar um endereço de email em sua organização para o qual enviar notificações. As notificações por email incluem links para os documentos que foram atualizados e uma breve descrição da atualização.
 

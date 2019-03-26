@@ -1,7 +1,7 @@
 ---
 title: O que os tipos de informações confidenciais procuram
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537638"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639188"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>O que os tipos de informações confidenciais procuram
 
@@ -27,7 +27,7 @@ A prevenção de perda de dados (DLP) no centro &amp; de conformidade de seguran
   
 ## <a name="aba-routing-number"></a>Número de roteamento ABA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 9 dígitos que podem estar em um padrão formatado ou não formatado
 
@@ -87,7 +87,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="argentina-national-identity-dni-number"></a>Número de Identidade Nacional (DNI) da Argentina
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos separados por pontos
 
@@ -136,7 +136,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="australia-bank-account-number"></a>Número de conta de banco da Austrália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 6 a 10 dígitos com ou sem um número BSB
 
@@ -199,7 +199,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="australia-drivers-license-number"></a>Número de carteira de motorista da Austrália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove letras e dígitos
 
@@ -350,7 +350,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="australia-medical-account-number"></a>Número de conta médica da Austrália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 a 11 dígitos
 
@@ -412,7 +412,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="australia-passport-number"></a>Número de passaporte da Austrália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra seguida por sete dígitos
 
@@ -483,7 +483,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="australia-tax-file-number"></a>Número de imposto de renda da Austrália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 8 a 9 dígitos
 
@@ -569,7 +569,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ## <a name="azure-documentdb-auth-key"></a>Chave de autenticação do Azure DocumentDB
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 A cadeia de caracteres "DocumentDb" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo.
 
@@ -616,14 +616,14 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Cadeia de conexão de banco de dados Azure IAAS e cadeia de conexão do Azure SQL
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
-A cadeia de caracteres "Server", "Server" ou "Data Source" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo a cadeia de caracteres "cloudapp. Azure. <!--no-hyperlink-->com "ou" cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net ", e a cadeia de caracteres" password "ou" password "ou" pwd ".
+A cadeia de caracteres "Server", "Server" ou "Data Source" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo a cadeia de caracteres "cloudapp. Azure.<!--no-hyperlink-->com "ou" cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET ", e a cadeia de caracteres" password "ou" password "ou" pwd ".
 
 ### <a name="pattern"></a>Padrão
 
@@ -632,7 +632,7 @@ A cadeia de caracteres "Server", "Server" ou "Data Source" seguida dos caractere
 - Um sinal de igual (=)
 - 0-2 caracteres de espaço em branco
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
-- A cadeia de caracteres "cloudapp. Azure. <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net "
+- A cadeia de caracteres "cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->Netlogon
 - Qualquer combinação entre 1-300 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
 - A cadeia de caracteres "password", "password" ou "pwd"
 - 0-2 caracteres de espaço em branco
@@ -676,14 +676,14 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-iot-connection-string"></a>Cadeia de conexão IoT do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
-A cadeia de caracteres "HostName" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo as cadeias de caracteres "Azure-Devices. <!--no-hyperlink-->net "e" SharedAccessKey ".
+A cadeia de caracteres "HostName" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo as cadeias de caracteres "Azure-Devices.<!--no-hyperlink-->NET "e" SharedAccessKey ".
 
 ### <a name="pattern"></a>Padrão
 
@@ -692,7 +692,7 @@ A cadeia de caracteres "HostName" seguida dos caracteres e cadeias de caracteres
 - Um sinal de igual (=)
 - 0-2 caracteres de espaço em branco
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
-- A cadeia de caracteres "Azure-Devices. <!--no-hyperlink-->net "
+- A cadeia de caracteres "Azure-Devices.<!--no-hyperlink-->Netlogon
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
 - A cadeia de caracteres "SharedAccessKey"
 - 0-2 caracteres de espaço em branco
@@ -736,12 +736,12 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-publish-setting-password"></a>Senha de configuração de publicação do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 A cadeia de caracteres "userpwd =" seguida de uma cadeia de caracteres alfanumérica.
 
@@ -787,18 +787,18 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-redis-cache-connection-string"></a>Cadeia de conexão do cache do Redis do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
-A cadeia de caracteres "Redis. cache. Windows. <!--no-hyperlink-->net "seguido pelos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo a cadeia de caracteres" password "ou" pwd ".
+A cadeia de caracteres "Redis. cache. Windows.<!--no-hyperlink-->NET "seguido pelos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo a cadeia de caracteres" password "ou" pwd ".
 
 ### <a name="pattern"></a>Padrão
 
-- A cadeia de caracteres "Redis. cache. Windows. <!--no-hyperlink-->net "
+- A cadeia de caracteres "Redis. cache. Windows.<!--no-hyperlink-->Netlogon
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
 - A cadeia de caracteres "password" ou "pwd"
 - 0-2 caracteres de espaço em branco
@@ -842,12 +842,12 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-sas"></a>SAS do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 A cadeia de caracteres "SIG" seguida pelos caracteres e cadeias de caracteres descritos no padrão abaixo.
 
@@ -881,9 +881,9 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ## <a name="azure-service-bus-connection-string"></a>Cadeia de conexão do barramento de serviço do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
-A cadeia de caracteres "EndPoint" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo as cadeias de caracteres "ServiceBus. Windows. <!--no-hyperlink-->net "e" SharedAccesKey ".
+A cadeia de caracteres "EndPoint" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo as cadeias de caracteres "ServiceBus. Windows.<!--no-hyperlink-->NET "e" SharedAccesKey ".
 
 ### <a name="pattern"></a>Padrão
 
@@ -892,7 +892,7 @@ A cadeia de caracteres "EndPoint" seguida dos caracteres e cadeias de caracteres
 - Um sinal de igual (=)
 - 0-2 caracteres de espaço em branco
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
-- A cadeia de caracteres "ServiceBus. Windows. <!--no-hyperlink-->net "
+- A cadeia de caracteres "ServiceBus. Windows.<!--no-hyperlink-->Netlogon
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
 - A cadeia de caracteres "SharedAccessKey"
 - 0-2 caracteres de espaço em branco
@@ -936,12 +936,12 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-storage-account-key"></a>Chave da conta de armazenamento do Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 A cadeia de caracteres "DefaultEndpointsProtocol" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo, incluindo a cadeia de caracteres "AccountKey".
 
@@ -1002,12 +1002,12 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="azure-storage-account-key-generic"></a>Chave da conta de armazenamento do Azure (genérico)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Qualquer combinação de letras maiúsculas ou minúsculas de 86, dígitos, barra (/) ou sinal de adição (+), precedida ou seguida dos caracteres descritos no padrão abaixo.
 
@@ -1038,7 +1038,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ## <a name="belgium-national-number"></a>Número Nacional da Bélgica
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos mais delimitadores
 
@@ -1101,7 +1101,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="brazil-cpf-number"></a>Número de CPF do Brasil
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos que incluem um dígito de verificação e podem ser formatados ou não formatados
 
@@ -1163,7 +1163,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Número de Pessoa Jurídica (CNPJ) do Brasil
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 14 dígitos que incluem um número de registro, o número da ramificação e dígitos de verificação, além de delimitadores de seleção
 
@@ -1233,7 +1233,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="brazil-national-id-card-rg"></a>	Cartão de Identidade Nacional (RG) do Brasil
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Registro geral (formato antigo): nove dígitos
 
@@ -1291,7 +1291,7 @@ Cédula de identidade ID nacional número de registro registro de identidade reg
    
 ## <a name="canada-bank-account-number"></a>Número de conta bancária do Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Sete ou doze dígitos
 
@@ -1364,7 +1364,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="canada-drivers-license-number"></a>Número de carteira de motorista do Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Varia por província
 
@@ -1581,7 +1581,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="canada-health-service-number"></a>Número de serviço de saúde do Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos
 
@@ -1627,7 +1627,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
       
 ## <a name="canada-passport-number"></a>Número de passaporte do Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras maiúsculas, seguidas de seis dígitos
 
@@ -1694,7 +1694,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="canada-personal-health-identification-number-phin"></a>Número de identificação pessoal de saúde do Canadá (PHIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos
 
@@ -1763,7 +1763,7 @@ São encontradas pelo menos duas palavras-chave do Keyword_canada_phin ou do Key
    
 ## <a name="canada-social-insurance-number"></a>Número de seguro social do Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos com espaços ou hífens opcionais
 
@@ -1846,7 +1846,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="chile-identity-card-number"></a>	Número do Cartão de Identidade do Chile
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 7-8 dígitos mais delimitadores um dígito ou letra de verificação
 
@@ -1908,7 +1908,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="china-resident-identity-card-prc-number"></a>	Número do Cartão de Identidade de Residentes (PRC) da China
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 18 dígitos
 
@@ -1965,7 +1965,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="credit-card-number"></a>Credit Card Number
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 16 dígitos que podem ser formatados ou não formatados (dddddddddddddddd) e devem passar no teste Luhn.
 
@@ -2209,7 +2209,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
    
 ## <a name="croatia-identity-card-number"></a>	Número do Cartão de Identidade da Croácia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos
 
@@ -2247,7 +2247,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="croatia-personal-identification-oib-number"></a>	Número de Identificação Pessoal (OIB) da Croácia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
 
@@ -2296,7 +2296,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="czech-personal-identity-number"></a>Número de identidade pessoal tcheco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos com barra de avanço opcional (formato antigo) 10 dígitos com barra de avanço opcional (novo formato)
 
@@ -2346,7 +2346,7 @@ A soma de verificação passa.
    
 ## <a name="denmark-personal-identification-number"></a>	Número de Identificação Pessoal da Dinamarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos que contêm um hífen
 
@@ -2388,7 +2388,7 @@ A soma de verificação passa.
    
 ## <a name="drug-enforcement-agency-dea-number"></a>Número da Drug Enforcement Agency (DEA)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por sete dígitos
 
@@ -2425,7 +2425,7 @@ Nenhum
    
 ## <a name="eu-debit-card-number"></a>Número de cartão de débito da UE
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 16 dígitos
 
@@ -2794,7 +2794,7 @@ Para saber mais, confira [número de identificação de imposto da UE tipo de in
   
 ## <a name="finland-national-id"></a>ID nacional da Finlândia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Seis dígitos mais um caractere indicando um século mais três dígitos mais um dígito de verificação
 
@@ -2846,7 +2846,7 @@ Keyword_finland_passport_number de palavras-chave o Passport Passi
    
 ## <a name="france-drivers-license-number"></a>Número de carteira de motorista da França
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos
 
@@ -2895,7 +2895,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ## <a name="france-national-id-card-cni"></a>Cartão de identificação nacional da França (CNI)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos
 
@@ -2927,7 +2927,7 @@ Nenhum
    
 ## <a name="france-passport-number"></a>Número de passaporte da França
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove letras e dígitos
 
@@ -2984,7 +2984,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
       
 ## <a name="france-social-security-number-insee"></a>Número de seguridade social da França (INSEE)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 15 dígitos
 
@@ -3059,7 +3059,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="german-drivers-license-number"></a>Número de carteira de motorista da Alemanha
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Combinação de 11 dígitos e letras
 
@@ -3201,7 +3201,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="german-passport-number"></a>Número de passaporte da Alemanha
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos ou letras
 
@@ -3285,7 +3285,7 @@ bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Número da carteira de identidade alemã
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Desde 1 de novembro de 2010: nove letras e dígitos
 
@@ -3334,7 +3334,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
    
 ## <a name="greece-national-id-card"></a>Cartão de Identificação Nacional da Grécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Combinação de 7 a 8 letras e números mais um traço
 
@@ -3381,7 +3381,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>Número do Cartão de Identidade de Hong Kong (HKID)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Combinação de 8 a 9 letras e números mais parênteses opcionais ao redor do caractere final
 
@@ -3463,7 +3463,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
    
 ## <a name="india-permanent-account-number-pan"></a>Número da Conta Permanente da Índia (PAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 letras ou dígitos
 
@@ -3504,7 +3504,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="india-unique-identification-aadhaar-number"></a>Número de Identificação Exclusivo da Índia (Aadhaar)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos contendo espaços opcionais ou traços
 
@@ -3542,7 +3542,7 @@ A soma de verificação passa.
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Número do Cartão de Identidade da Indonésia (KTP)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 16 dígitos contendo pontos opcionais
 
@@ -3594,7 +3594,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="international-banking-account-number-iban"></a>Número da Conta Bancária Internacional (IBAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Código do país (duas letras) mais dígitos de verificação (dois dígitos) mais Bban número (até 30 caracteres)
 
@@ -3636,7 +3636,7 @@ Nenhum
    
 ## <a name="ip-address"></a>Endereço IP
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 #### <a name="ipv4"></a>IPv4
 Padrão complexo que é responsável por versões formatadas (pontos) e não formatadas (sem pontos) dos endereços IPv4
@@ -3700,7 +3700,7 @@ Para IPv6, uma política de DLP tem 95% de certeza de que ela detectou este tipo
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificação internacional do Diseases (ICD-10-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dictionary
 
@@ -3733,7 +3733,7 @@ Qualquer termo do dicionário de palavra-chave Dictionary_icd_10_cm, que se base
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificação internacional do Diseases (ICD-9-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dictionary
 
@@ -3764,7 +3764,7 @@ Qualquer termo do dicionário de palavra-chave Dictionary_icd_9_cm, que se basei
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de Serviço Público Pessoal (PPS) da Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Formato antigo (até 31 de dezembro de 2012):
 - Sete dígitos seguidos de 1 a 2 letras  
@@ -3834,7 +3834,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
    
 ## <a name="israel-bank-account-number"></a>Número de conta bancária de Israel
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos
 
@@ -3883,7 +3883,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="israel-national-id"></a>ID nacional de Israel
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos
 
@@ -3923,7 +3923,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="italy-drivers-license-number"></a>Número de carteira de motorista da Itália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de 10 letras e dígitos
 
@@ -3966,7 +3966,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="japan-bank-account-number"></a>Número de conta bancária do Japão
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Sete ou oito dígitos
 
@@ -4081,7 +4081,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>Número de carteira de motorista do Japão
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos
 
@@ -4141,7 +4141,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="japan-passport-number"></a>Número de passaporte do Japão
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por sete dígitos
 
@@ -4180,7 +4180,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente do Japão
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
 
@@ -4227,7 +4227,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="japan-social-insurance-number-sin"></a>Número de seguro social do Japão (SIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 7 a 12 dígitos
 
@@ -4279,7 +4279,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ## <a name="japanese-residence-card-number"></a>Número do cartão de residência japonês
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 letras e dígitos
 
@@ -4321,7 +4321,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="malaysia-id-card-number"></a>Número do Cartão de Identificação da Malásia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos contendo hifens opcionais
 
@@ -4387,7 +4387,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número do Serviço do Cidadão (BSN) da Holland
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 8 a 9 dígitos contendo espaços opcionais
 
@@ -4437,7 +4437,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="new-zealand-ministry-of-health-number"></a>Número do Ministério da Saúde da Nova Zelândia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Três letras, um espaço (opcional) e quatro dígitos
 
@@ -4479,7 +4479,7 @@ Keyword_nz_terms
    
 ## <a name="norway-identification-number"></a>Número de Identificação da Noruega
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
 
@@ -4531,7 +4531,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>Número de Identificação Multiuso Unificada das Filipinas
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos separados por hifens
 
@@ -4575,7 +4575,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="poland-identity-card"></a>Cartão de Identificação da Polônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Três letras e seis dígitos
 
@@ -4618,7 +4618,7 @@ A soma de verificação passa.
    
 ## <a name="poland-national-id-pesel"></a>ID nacional da Polônia (PESEL)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
 
@@ -4657,7 +4657,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="poland-passport"></a>Passaporte da Polônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras e sete dígitos
 
@@ -4698,7 +4698,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="portugal-citizen-card-number"></a>Número do Cartão de Cidadão de Portugal
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos
 
@@ -4738,7 +4738,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="saudi-arabia-national-id"></a>ID nacional da Arábia Saudita
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos
 
@@ -4780,7 +4780,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Número do Cartão de Identidade do Registro Nacional (NRIC) de Cingapura
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove letras e dígitos
 
@@ -4834,7 +4834,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="south-africa-identification-number"></a>Número de Identificação da África do Sul
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos que podem conter espaços
 
@@ -4878,7 +4878,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="south-korea-resident-registration-number"></a>Número do Registro de Residentes da Coreia do Sul
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos que contém um hifen
 
@@ -4932,7 +4932,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="spain-social-security-number-ssn"></a>Número de seguridade social da Espanha (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 a 12 dígitos
 
@@ -4970,7 +4970,7 @@ Nenhum
 
 ## <a name="sql-server-connection-string"></a>Cadeia de caracteres de conexão do SQL Server
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 A cadeia de caracteres "User ID", "User ID", "UID" ou "UserId" seguida dos caracteres e cadeias de caracteres descritos no padrão abaixo.
 
@@ -5041,12 +5041,12 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Onebox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->suplementos
+- s-int.<!--no-hyperlink-->Netlogon
 
 ## <a name="sweden-national-id"></a>ID nacional da Suécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 ou 12 dígitos e um delimitador opcional
 
@@ -5083,7 +5083,7 @@ Não
    
 ## <a name="sweden-passport-number"></a>Número de passaporte da Suécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos
 
@@ -5153,7 +5153,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="swift-code"></a>Código SWIFT
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Quatro letras seguidas por 5 a 31 letras ou dígitos
 
@@ -5223,7 +5223,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="taiwan-national-id"></a>ID nacional de Taiwan
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra (em inglês) seguida de nove dígitos
 
@@ -5276,7 +5276,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="taiwan-passport-number"></a>	Número de passaporte de Taiwan
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 - Número de passaporte biométrico: nove dígitos
 - Número de passaporte não biométrico: nove dígitos
@@ -5324,7 +5324,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Número do Certificado de residente de Taiwan (ARC/TARC)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 letras e dígitos
 
@@ -5373,7 +5373,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ## <a name="thai-population-identification-code"></a>Código de identificação de população em tailandês
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos
 
@@ -5422,7 +5422,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
   
 ## <a name="turkish-national-identification-number"></a>Número de identificação nacional turco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
 
@@ -5467,7 +5467,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ## <a name="uk-drivers-license-number"></a>Número de carteira de motorista do Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Combinação de 18 letras e dígitos no formato especificado
 
@@ -5523,7 +5523,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="uk-electoral-roll-number"></a>Número de Título de Eleitor do Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por 1 a 4 dígitos
 
@@ -5565,7 +5565,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="uk-national-health-service-number"></a>Número do serviço de saúde nacional do Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 a 17 dígitos separados por espaços
 
@@ -5632,7 +5632,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
    
 ## <a name="uk-national-insurance-number-nino"></a>Número de seguro nacional do Reino Unido (NINO)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 7 caracteres ou 9 caracteres separados por espaços ou traços
 
@@ -5707,7 +5707,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="us--uk-passport-number"></a>Número de passaporte dos EUA/Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos
 
@@ -5759,7 +5759,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="us-bank-account-number"></a>Número de conta bancária dos EUA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 8 a 17 dígitos
 
@@ -5821,7 +5821,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="us-drivers-license-number"></a>Número de carteira de motorista dos EUA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Depende do estado
 
@@ -5971,7 +5971,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Número de identificação de contribuinte individual (ITIN) dos EUA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos que começam com "9" e contêm um "7" ou "8" como o quarto dígito, opcionalmente formatado com espaços ou traços
 
@@ -6064,7 +6064,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="us-social-security-number-ssn"></a>Número de seguridade social dos EUA (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 9 dígitos que podem estar em um padrão formatado ou não formatado
 

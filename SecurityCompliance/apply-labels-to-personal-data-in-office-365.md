@@ -3,7 +3,7 @@ title: Aplicar rótulos a dados pessoais no Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,38 +16,42 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como usar os rótulos do Office como parte do seu plano de proteção do GDPR.
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373892"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789426"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar rótulos a dados pessoais no Office 365
 
- Este tópico é útil se estiver usando os rótulos do Office como parte do seu plano de proteção do GDPR. Atualmente, os rótulos podem ser criados no Centro de Conformidade e Segurança do Office 365 e na Proteção de Informações do Azure. Com o tempo, essas tecnologias se fundirão em uma experiência de classificação e rotulação unificadas, e você fará ainda mais com elas.
+ Use este tópico se você estiver usando rótulos de classificação como parte do seu plano de proteção GDPR. 
 
-Se você estiver usando rótulos para a proteção de dados pessoais no Office 365, a Microsoft recomenda começar com os rótulos do Office. Use o Advanced Data Governance para aplicar automaticamente os rótulos com base nos tipos de informações confidenciais ou em outros critérios. Use os rótulos do Office com a prevenção contra perda de dados para protegê-los. Também é possível usar os rótulos com a Descoberta eletrônica e com a Pesquisa de Conteúdo. Em breve será possível usar tanto os rótulos quanto os tipos de informações confidenciais com o Cloud App Security para monitorar os dados pessoais localizados em outros aplicativos SaaS.
+Se você estiver usando rótulos para proteção de dados pessoais no Office 365, recomendamos que você comece com [rótulos de retenção](labels.md). Com os rótulos de retenção, você pode:
+- Use o Advanced Data Governance para aplicar automaticamente rótulos com base em tipos de informações confidenciais ou outros critérios.
+-  Use rótulos de retenção com a prevenção de perda de dados para aplicar a proteção. 
+- Use rótulos com pesquisa de conteúdo e descoberta eletrônica. 
+- Use rótulos e tipos de informações confidenciais com o Cloud App Security para monitorar dados pessoais que residem em outros aplicativos SaaS.
 
-Atualmente, os rótulos de Proteção de Informações do Azure são recomendados para arquivos no local e outros serviços e provedores na nuvem. Também são recomendados para arquivos no Office 365 que exijam a criptografia Azure Rights Management (Azure RMS) para a proteção de dados, como arquivos de segredos comerciais.
+[Rótulos de confidencialidade](sensitivity-labels.md) atualmente são recomendadas para aplicar rótulos a arquivos no local e em outros serviços de nuvem e provedores. Eles também são recomendados para arquivos no Office 365 que exijam criptografia de proteção de informações do Azure (AIP) para a proteção de dados, como arquivos secretos.
 
-No momento, não é recomendável usar a Proteção de Informações do Azure para aplicar a criptografia Azure RMS em arquivos do Office 365 com dados sujeitos ao GDPR. Os serviços do Office 365 no momento não leem os arquivos criptografados pelo RMS. Portanto, o serviço não consegue localizar dados confidenciais nesses arquivos.
+Neste momento, usar a proteção de informações do Azure para aplicar a criptografia não é recomendável para arquivos no Office 365 com dados sujeitos ao GDPR. Os serviços do Office 365 não podem ler em arquivos criptografados AIP no momento. Portanto, o serviço não consegue encontrar dados confidenciais nesses arquivos.
 
-Os rótulos de Proteção de Informações do Azure podem ser aplicados a emails no Exchange Online e funcionam em conjunto com a proteção contra perda de dados do Office 365. Em breve, com o mecanismo de classificação e rotulação unificadas, será possível usar os mesmos rótulos para emails e arquivos, incluindo rotular e proteger automaticamente os emails em trânsito.
+Os rótulos de confidencialidade podem ser aplicados a emails no Exchange Online e esses rótulos funcionam com a prevenção contra perda de dados do Office 365. 
 
 ![Rótulos do Office 365 e rótulos da Proteção de Informações do Azure](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 Na ilustração:
 
--   Use os rótulos do Office 365 em dados pessoais e arquivos de segredos comerciais e altamente regulados no SharePoint Online e no OneDrive for Business.
+-   Use os rótulos de retenção em dados pessoais e arquivos de segredos comerciais e altamente regulados no SharePoint Online e no OneDrive for Business.
 
--   Use os rótulos da Proteção de Informações do Azure (AIP) em arquivos de segredos comerciais e altamente regulados, emails do Exchange Online, arquivos de outros serviços SaaS, arquivos em datacenters no local e arquivos em outros provedores em nuvem.
+-   Use os rótulos de confidencialidade em arquivos de segredos comerciais e altamente regulados, emails do Exchange Online, arquivos de outros serviços SaaS, arquivos em datacenters no local e arquivos em outros provedores em nuvem.
 
--   Em breve: os dois tipos de rótulos se fundirão em uma experiência de classificação e rotulação unificadas.
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usar os rótulos do Office e os tipos de informações confidenciais no Microsoft 365 para proteção de informações
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usar os rótulos de retenção e os tipos de informações confidenciais no Microsoft 365 para proteção de informações
 
-A ilustração a seguir mostra como os rótulos do Office e os tipos de informações confidenciais podem ser usados em políticas de rotulação, de prevenção contra perda de dados e nas políticas do Cloud App Security.
+A ilustração a seguir mostra como os rótulos de retenção e os tipos de informações confidenciais podem ser usados em políticas de rotulação, de prevenção contra perda de dados e nas políticas do Cloud App Security.
 
 ![Rótulos do Office e tipos de informações confidenciais](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -64,7 +68,7 @@ Para maior acessibilidade, a tabela a seguir fornece os mesmos exemplos da ilust
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Rótulos do Office. Exemplos: Pessoal, Público, Dados do cliente, Dados de RH, Confidencial, Altamente confidencial</td>
+<td align="left">Rótulos de retenção. Exemplos: Pessoal, Público, Dados do cliente, Dados de RH, Confidencial, Altamente confidencial</td>
 <td align="left"><p>Aplicar automaticamente este rótulo...</p>
 <p>Dados do cliente</p>
 <p>...aos documentos que correspondam a estes tipos de informações confidenciais...</p>
@@ -178,8 +182,8 @@ Crie rótulos e políticas no Centro de Conformidade e Segurança.
 <p>Confira <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Conceder aos usuários acesso ao Centro de Conformidade e Segurança do Office 365</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Criar rótulos do Office.</p></td>
-<td align="left">Acesse Classificações, no Centro de Conformidade e Segurança, escolha Rótulos e crie os rótulos para o seu ambiente.</td>
+<td align="left"><p>Crie rótulos de retenção.</p></td>
+<td align="left">Acesse Classificações, no Centro de Conformidade e Segurança, escolha Rótulos de retenção e crie os rótulos para o seu ambiente.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Criar políticas de aplicação automática para rótulos.</p></td>

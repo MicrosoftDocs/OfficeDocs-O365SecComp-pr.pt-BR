@@ -1,5 +1,5 @@
 ---
-title: Proteção contra falsificação no Office 365
+title: Proteção antifalsificação no Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
@@ -7,84 +7,85 @@ ms.date: 3/6/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Este artigo descreve como o Office 365 diminui contra ataques de phishing que usam domínios de remetente forjados, ou seja, domínios falsificados. Ele realiza isso analisando as mensagens e bloqueando as que podem ser autenticadas, nem usando métodos de autenticação de email padrão, nem outras técnicas de reputação de remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 são expostas.
-ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
-ms.translationtype: MT
+ms.custom: TopSMBIssues
+localization_priority: Priority
+description: Este artigo descreve como o Office 365 mitiga ataques de phishing que usam domínios de remetentes forjados, ou seja, domínios falsificados. Isso é feito analisando as mensagens e bloqueando as que não podem ser autenticadas com métodos de autenticação de email padrão nem outras técnicas de reputação de remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 estão expostas.
+ms.openlocfilehash: 8b308e4b5ce651632834884c12a4500989b43bf5
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492870"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747577"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Proteção contra falsificação no Office 365
+# <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
-Este artigo descreve como o Office 365 diminui contra ataques de phishing que usam domínios de remetente forjados, ou seja, domínios falsificados. Ele realiza isso analisando as mensagens e bloqueando as que não podem ser autenticadas usando métodos de autenticação de email padrão, nem outras técnicas de reputação do remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 são expostas.
+Este artigo descreve como o Office 365 mitiga ataques de phishing que usam domínios de remetentes forjados, ou seja, domínios falsificados. Isso é feito analisando as mensagens e bloqueando as que não podem ser autenticadas com métodos de autenticação de email padrão nem outras técnicas de reputação de remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 estão expostas.
   
-Este artigo também descreve por que essa alteração está sendo feita, como os clientes podem se preparar para essa alteração, como exibir mensagens que serão afetadas, como relatar mensagens, como reduzir os falsos positivos, bem como como os remetentes à Microsoft devem se preparar para esse trocar.
+Este artigo também descreve por que essa alteração está sendo feita, como os clientes podem se preparar para a alteração, como exibir mensagens que serão afetadas, como enviar relatórios sobre mensagens, como reduzir a ocorrência de falsos positivos e como os remetentes para a Microsoft devem se preparar para essa alteração.
   
-A tecnologia antifalsificação da Microsoft foi inicialmente implantada em suas organizações que possuíam uma assinatura do Office 365 Enterprise E5 ou compraram o complemento do Office 365 Advanced Threat Protection (ATP) para sua assinatura. A partir de outubro de 2018, estendemos a proteção para organizações que também têm o Exchange Online Protection (EOP). Além disso, devido à forma como todos os nossos filtros aprendem uns dos outros, os usuários do Outlook.com também podem ser afetados.
+A tecnologia antifalsificação da Microsoft foi implantada inicialmente nas organizações da empresa que tinham uma assinatura do Office 365 Enterprise E5 ou que tinham o complemento ATP (Proteção Avançada contra Ameaças) do Office 365 na assinatura. Desde outubro de 2018, estendemos a proteção para organizações que também têm a EOP (Proteção do Exchange Online). Além disso, devido à maneira como todos os nossos filtros aprendem uns com os outros, os usuários do Outlook.com também podem ser afetados.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Como a falsificação é usada em ataques de phishing
 
-Quando se trata de proteger seus usuários, a Microsoft leva seriamente a ameaça de phishing. Uma das técnicas comumente usadas por spammers e phishers é a falsificação, que é quando o remetente é forjado, e uma mensagem parece originar de alguém ou de outro lugar que não seja a fonte real. Essa técnica é freqüentemente usada em campanhas de phishing projetadas para obter credenciais de usuário. A tecnologia antifalsificação da Microsoft examina especificamente a falsificação do cabeçalho ' de: ', que é aquele que aparece em um cliente de email como o Outlook. Quando a Microsoft tem alta confiança de que o cabeçalho from: é falsificado, ele identifica a mensagem como uma falsificação.
+Quando se trata de proteger os usuários, a Microsoft leva a sério a ameaça de phishing. Uma das técnicas usadas por spammers e phishers é a falsificação, que é quando o remetente é forjado e uma mensagem parece se originar de alguém ou algum outro lugar que não seja a fonte atual. Essa técnica é frequentemente usada em campanhas de phishing criadas para obter credenciais de usuários. A tecnologia antifalsificação da Microsoft analisa especificamente a falsificação do "cabeçalho De:", que é o que aparece em um cliente de email como o Outlook. Quando a Microsoft tem alta confiança de que o cabeçalho De: é falsificado, identifica a mensagem como uma falsificação.
   
-As mensagens de falsificação têm duas implicações negativas para usuários de vida real:
+As mensagens falsificadas têm duas implicações negativas para os usuários da vida real:
   
-### <a name="1-spoofed-messages-deceive-users"></a>1. mensagens falsificadas usuários enganar
+### <a name="1-spoofed-messages-deceive-users"></a>1. As mensagens falsificadas enganam os usuários
   
-Primeiro, uma mensagem falsificada pode induzir o usuário a clicar em um link e fornecer suas credenciais, baixar malware ou responder a uma mensagem com conteúdo confidencial (o que é conhecido como comprometimento de email comercial). Por exemplo, a seguir está uma mensagem de phishing com um remetente falso de msoutlook94@service.outlook.com:
+Primeiro, uma mensagem falsificada pode induzir o usuário a clicar em um link e fornecer as credenciais, baixar malware ou responder a uma mensagem com conteúdo confidencial (essa última situação é conhecida como Comprometimento de Email Empresarial). Por exemplo, a seguir está uma mensagem de phishing com o remetente falsificado msoutlook94@service.outlook.com:
   
-![Mensagem de phishing representando service.outlook.com](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Mensagem de phishing se passando por service.outlook.com](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
   
-O acima não veio realmente do service.outlook.com, mas, em vez disso, foi falsificado pelo phishing para que ele pareça ter sido. Ele está tentando induzir um usuário a clicar no link dentro da mensagem.
+O exemplo acima não veio realmente de service.outlook.com. Em vez disso, foi falsificado pelo phisher para parecer que veio. Está tentando enganar um usuário para clicar no link na mensagem.
   
-O próximo exemplo é o spoofing contoso.com:
+O próximo exemplo está falsificando contoso.com:
   
-![Mensagem de phishing-compromisso de email comercial](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Mensagem de phishing ‒ comprometimento de email empresarial](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
   
-A mensagem parece legítima, mas, na verdade, é uma falsificação. Essa mensagem de phishing é um tipo de comprometimento de email comercial que é uma subcategoria de phishing.
+A mensagem parece legítima, mas na verdade é uma falsificação. Essa mensagem de phishing é um tipo de Comprometimento de Email Empresarial, que é uma subcategoria de phishing.
 
-### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. os usuários confundem mensagens reais para falsificações
+### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. Os usuários confundem as mensagens reais com as falsas
   
-Segundo, as mensagens falsificadas criam incertezas para os usuários que conhecem mensagens de phishing, mas não podem dizer a diferença entre uma mensagem real e uma falsificada. Por exemplo, o seguinte é um exemplo de uma redefinição de senha real do endereço de email da conta de segurança da Microsoft:
+Em segundo lugar, as mensagens falsificadas criam incerteza para os usuários que sabem da existência de mensagens de phishing, mas não conseguem distinguir entre uma mensagem real e uma falsificada. Por exemplo, a seguir há uma redefinição de senha real do endereço de email da conta de Segurança da Microsoft:
   
-![Redefinição de senha legítima da Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Redefinição de senha da Microsoft legítima](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
   
-A mensagem acima vem da Microsoft, mas ao mesmo tempo, os usuários são usados para obter mensagens de phishing que podem enganar o usuário clicando em um link e fornecendo suas credenciais, baixando o malware ou respondendo a uma mensagem com conteúdo confidencial. Como é difícil dizer a diferença entre uma redefinição de senha real e uma falsa, muitos usuários ignoram essas mensagens, os relatam como spam ou relatam as mensagens de volta à Microsoft como golpes de phishing perdidos.
+A mensagem acima veio da Microsoft, mas, ao mesmo tempo, os usuários estão acostumados a receber mensagens de phishing que podem enganá-los para clicar em um link e fornecer credenciais, baixar malware ou responder a uma mensagem com conteúdo confidencial. Como é difícil distinguir entre uma redefinição de senha real e uma falsa, muitos usuários ignoram essas mensagens, as relatam como spam ou desnecessariamente à Microsoft como tentativas de phishing perdidas.
 
-Para interromper a falsificação, o setor de filtragem de email desenvolveu protocolos de autenticação de email, como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impede falsificação examinando o remetente de uma mensagem-o que o usuário vê no cliente de email (nos exemplos acima, isso é service.outlook.com, outlook.com e accountprotection.microsoft.com) – com o domínio que aprovou SPF ou DKIM. Ou seja, o domínio que o usuário vê foi autenticado e, portanto, não é falsificado. Para obter uma discussão mais completa, consulte a seção "*entendendo por que a autenticação de email nem sempre é suficiente para interromper a falsificação"* mais adiante neste artigo.
+Para impedir a falsificação, o setor de filtragem de email desenvolveu protocolos de autenticação de email, como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). O DMARC impede a falsificação examinando o remetente de uma mensagem ‒ aquele que o usuário vê no cliente de email (nos exemplos acima, trata-se de service.outlook.com, outlook.com e accountprotection.microsoft.com) ‒ com o domínio que foi aprovado no SPF ou no DKIM. Ou seja, o domínio que o usuário vê foi autenticado e, assim, não é falsificado. Para uma discussão mais completa, confira a seção "*Entender por que a autenticação de email nem sempre é suficiente para impedir a falsificação"* mais adiante neste artigo.
   
-No enTanto, o problema é que os registros de autenticação de email são opcionais, não necessários. Portanto, enquanto os domínios com políticas de autenticação sólida como o microsoft.com e o skype.com são protegidos da falsificação, os domínios que publicam diretivas de autenticação mais fracas, ou nenhuma política, são alvos para serem falsificados. A partir de março de 2018, apenas 9% dos domínios de empresas no Fortune 500 publicam políticas de autenticação de email forte. As 91% restantes podem ser falsificadas por um phishing e, a menos que o filtro de email a detecte usando outra política, pode ser entregue a um usuário final e induzi-los:
+No entanto, o problema é que os registros de autenticação de email são opcionais, não obrigatórios. Portanto, embora domínios com políticas de autenticação fortes, como microsoft.com e skype.com, sejam protegidos contra falsificação, domínios que publicam políticas de autenticação mais fracas ou nenhuma política são alvo de falsificação. Em março de 2018, apenas 9% dos domínios de empresas da lista Fortune 500 publicavam políticas de autenticação de email fortes. Os 91% restantes podem ser falsificados por um phisher e, a menos que o filtro de email os detecte usando outra política, podem ser entregues a um usuário final e enganá-lo:
   
-![Políticas do DMARC das empresas Fortune 500](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Políticas do DMARC de empresas da lista Fortune 500](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
   
-A proporção de empresas de pequeno e médio porte que não estão no Fortune 500 que publicam políticas de autenticação de email forte é menor e ainda menor do que os domínios fora da América do Norte e da Europa Ocidental.
+A proporção de pequenas e médias empresas que não fazem parte da lista Fortune 500 e que publicam políticas de autenticação de email fortes é menor, sendo ainda menor para domínios fora da América do Norte e da Europa Ocidental.
   
-Esse é um grande problema porque, embora as empresas talvez não saibam como funciona a autenticação de email, os phishers entendem e aproveitam a falta da ti.
+Esse é um grande problema porque, embora as empresas possam não estar cientes de como a autenticação de email funciona, os phishers entendem e aproveitam a falta dela.
   
-Para obter informações sobre como configurar o SPF, DKIM e DMARC, consulte a seção "*Customers of Office 365"* , mais adiante neste documento. 
+Para obter informações sobre como configurar o SPF, o DKIM e o DMARC, confira a seção "*Clientes do Office 365"*, mais adiante neste documento. 
   
-## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Interromper a falsificação com autenticação de email implícita
+## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Impedir a falsificação com a autenticação de email implícita
 
-Como phishing e spear phishing é um problema, e por causa da adoção limitada de políticas seguras de autenticação de email, a Microsoft continua a investir em recursos para proteger seus clientes. Portanto, a Microsoft está se movendo para a *autenticação de email implícita* , se um domínio não se autenticar, a Microsoft o tratará como se tivesse publicado os registros de autenticação de email e o tratará de acordo, se não passar. 
+Como o phishing e o spear phishing são um problema muito sério, e devido à adoção limitada de políticas de autenticação de email fortes, a Microsoft continua investindo em recursos para proteger os clientes. Portanto, a Microsoft está progredindo com a *autenticação de email implícita*. Se um domínio não for autenticado, a Microsoft o tratará como se como se ele tivesse publicado registros de autenticação de email e o tratará da maneira apropriada, se não for aprovado. 
   
-Para fazer isso, a Microsoft criou inúmeras extensões para a autenticação de email regular, incluindo a reputação do remetente, histórico do remetente/destinatário, análise comportamental e outras técnicas avançadas. Uma mensagem enviada de um domínio que não publica a autenticação de email será marcada como falsa, a menos que contenha outros sinais para indicar que ela é legítima.
+Para isso, a Microsoft criou várias extensões para a autenticação regular de emails, incluindo a reputação do remetente, o histórico do remetente/destinatário, a análise comportamental e outras técnicas avançadas. Uma mensagem enviada de um domínio que não publica a autenticação de email será marcada como falsificação, a menos que contenha outros sinais para indicar que é legítima.
   
-Fazendo isso, os usuários finais podem ter certeza de que um email enviado para eles não foi falsificado, os remetentes podem ter certeza de que ninguém está representando o domínio, e os clientes do Office 365 podem oferecer uma proteção ainda melhor, como a proteção de representação.
+Dessa forma, os usuários finais podem saber com confiança que um email não foi falsificado, os remetentes podem ter certeza de que ninguém está fingindo ser o domínio deles e os clientes do Office 365 podem oferecer proteção ainda melhor, como a proteção contra falsificação de identidade.
   
-Para ver o comunicado geral da Microsoft, consulte [um mar de Phish parte 2-antifalsificaÇão aprimorada no Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+Para ver o comunicado geral da Microsoft, confira [Um mar de phishing, parte 2 ‒ antifalsificação aprimorada no Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
   
-## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identificando se uma mensagem foi classificada como falsificada
+## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identificar que uma mensagem foi classificada como falsificada
 
 ### <a name="composite-authentication"></a>Autenticação composta
 
-Embora os SPF, DKIM e DMARC sejam todos úteis por si mesmos, eles não comunicam o status de autenticação suficiente no caso de uma mensagem não ter registros de autenticação explícitos. Portanto, a Microsoft desenvolveu um algoritmo que combina vários sinais em um único valor chamado autenticação composta ou compauth para curto. Os clientes do Office 365 têm valores compauth marcados no cabeçalho *Authentication-Results* nos cabeçalhos da mensagem. 
+Embora o SPF, o DKIM e o DMARC sejam úteis por si só, não comunicam um status de autenticação suficiente caso uma mensagem não tenha registros de autenticação explícitos. Portanto, a Microsoft desenvolveu um algoritmo que combina vários sinais em um único valor chamado Autenticação Composta, abreviada como compauth. Os clientes no Office 365 têm valores compartilhados marcados no cabeçalho *Authentication-Results* nos cabeçalhos das mensagens. 
   
 ```
 Authentication-Results:
@@ -92,82 +93,82 @@ Authentication-Results:
 
 ```
 
-|**Resultado CompAuth**|**Descrição**|
+|**Resultado de CompAuth**|**Descrição**|
 |:-----|:-----|
-|malsucedida|Falha da mensagem autenticação explícita (envio de registros publicados de domínio explicitamente no DNS) ou autenticação implícita (o domínio de envio não publicou registros no DNS, portanto, o Office 365 interpolaru o resultado como se tivesse registros publicados).|
-|passar|A mensagem passou autenticação explícita (mensagem passou DMARC ou [melhor palpite aprovado DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) ou autenticação implícita com alta confiança (o domínio de envio não publica registros de autenticação de email, mas o Office 365 tem sinais de back-end fortes para indica que a mensagem é provavelmente legítima.|
-|softpass|A mensagem passou a autenticação implícita com confiança de baixo para médio (o domínio de envio não publica a autenticação de email, mas o Office 365 tem sinais de back-end para indicar que a mensagem é legítima, mas a intensidade do sinal é mais fraca).|
-|nenhum|A mensagem não foi autenticada (ou foi autenticada, mas não foi alinhada), mas a autenticação composta não foi aplicada devido à reputação do remetente ou a outros fatores.|
+|fail|A mensagem foi reprovada na autenticação explícita (envio de registros publicados no domínio explicitamente no DNS) ou autenticação implícita (o domínio de envio não publicou registros no DNS, assim, o Office 365 interpolou o resultado como se tivesse registros publicados).|
+|pass|A mensagem foi aprovada na autenticação explícita (a mensagem foi aprovada no DMARC ou [Best Guess Passed DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) ou autenticação implícita com alta confiança (o domínio de envio não publica registros de autenticação de email, mas o Office 365 tem sinais de back-end fortes para indicar que a mensagem é provavelmente legítima).|
+|softpass|A mensagem foi aprovada na autenticação implícita com confiança de baixa a média (o domínio de envio não publica a autenticação de email, mas o Office 365 tem sinais de back-end para indicar que a mensagem é legítima, embora a intensidade do sinal seja mais fraca).|
+|nenhuma|A mensagem não foi autenticada (ou foi autenticada, mas não foi alinhada), mas a autenticação composta não foi aplicada devido à reputação do remetente ou a outros fatores.|
    
 |||
 |:-----|:-----|
 |**Motivo**|**Descrição**|
-|0XX|Falha na autenticação composta da mensagem.<br/>**000** significa que a mensagem falhou DMARC com uma ação de rejeição ou quarentena.  <br/>**001** significa que a mensagem falhou na autenticação de email implícita. Isso significa que o domínio de envio não tinha os registros de autenticação de email publicados, ou se eles tinham, uma diretiva de falha mais fraca (ou uma diretiva de erro de SPF Soft ou neutra, DMARC política de p = None).  <br/>**002** significa que a organização tem uma política para o par de remetente/domínio explicitamente proibido de enviar email falsificado, essa configuração é definida manualmente por um administrador.  <br/>**010** significa que a mensagem falhou DMARC com uma ação de rejeição ou quarentena, e o domínio de envio é um dos domínios aceitos de sua organização (isso faz parte de auto-para-self, ou intra-org, falsificação).  <br/>**011** significa que a mensagem falhou na autenticação de email implícita e o domínio de envio é um dos domínios aceitos de sua organização (isso faz parte de auto-para-self, ou intra-org).|
-|Todos os outros códigos (1xx, 2xx, 3xx, 4xx, 5xx)|Corresponde a vários códigos internos por que uma mensagem passou autenticação implícita ou não teve autenticação, mas nenhuma ação foi aplicada.|
+|0xx|A mensagem foi reprovada na autenticação composta.<br/>**000** significa que a mensagem foi reprovada no DMARC com uma ação de rejeição ou quarentena.  <br/>**001** significa que a mensagem foi reprovada na autenticação de email implícita. Isso significa que o domínio de envio não tinha registros de autenticação de email publicados ou, se os tinha, eles usavam uma política de falha mais fraca (falha não grave do SPF ou neutra; política do DMARC de p=nenhum).  <br/>**002** significa que a organização tem uma política para o par remetente/domínio, que é explicitamente proibido de enviar emails falsificados. Essa configuração é definida manualmente por um administrador.  <br/>**010** significa que a mensagem foi reprovada no DMARC com uma ação de rejeição ou quarentena, e o domínio de envio é um dos domínios aceitos de sua organização (isso faz parte da falsificação self-to-self ou dentro da organização).  <br/>**011** significa que a mensagem foi reprovada na autenticação de email implícita, e o domínio de envio é um dos domínios aceitos de sua organização (isso faz parte da falsificação self-to-self ou dentro da organização).|
+|Todos os outros códigos (1xx, 2xx, 3xx, 4xx, 5xx)|Corresponde a vários códigos internos que indicam o motivo pelo qual uma mensagem foi aprovada na autenticação implícita ou não teve autenticação, mas nenhuma ação foi aplicada.|
    
-Ao examinar os cabeçalhos de uma mensagem, um administrador ou até mesmo um usuário final pode determinar como o Office 365 chega à conclusão de que o remetente pode ser falsificado.
+Examinando os cabeçalhos de uma mensagem, um administrador ou até mesmo um usuário final pode determinar como o Office 365 chega à conclusão de que o remetente pode ser falsificado.
   
-### <a name="differentiating-between-different-types-of-spoofing"></a>Diferenciar entre diferentes tipos de falsificação
+### <a name="differentiating-between-different-types-of-spoofing"></a>Diferenciar os tipos de falsificação
 
-A Microsoft diferencia dois tipos diferentes de mensagens de falsificação:
+A Microsoft diferencia dois tipos de mensagens de falsificação:
   
  **Falsificação dentro da organização**
   
-Também conhecido como falsificação autoautoria, isso ocorre quando o domínio no endereço de: é o mesmo que ou se alinha com o domínio do destinatário (quando o domínio do destinatário é um dos [domínios aceitos](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)de sua organização); ou, quando o domínio no endereço de: é parte da mesma organização.
+Também conhecida como falsificação self-to-self, ocorre quando o domínio no endereço De: é igual ou está alinhado ao domínio do destinatário (quando o domínio do destinatário é um dos [Domínios Aceitos](https://technet.microsoft.com/pt-BR/library/jj945194%28v=exchg.150%29.aspx) de sua organização) ou quando o domínio no endereço De: faz parte da mesma organização.
   
-Por exemplo, o seguinte tem remetente e destinatário do mesmo domínio (contoso.com). Os espaços são inseridos no endereço de email para impedir a coleta de spambots nesta página):
+O exemplo a seguir tem remetente e destinatário do mesmo domínio (contoso.com). Espaços são inseridos no endereço de email para evitar a coleta de spambot na página):
   
-De: Sender @ contoso.com
+De: remetente @ contoso.com
   
 Para: destinatário @ contoso.com
   
-Os itens a seguir têm os domínios de remetente e destinatário alinhados ao domínio organizacional (fabrikam.com):
+No seguinte exemplo, os domínios de remetente e destinatário estão alinhados com o domínio organizacional (fabrikam.com):
   
-De: Sender @ foo.fabrikam.com
+De: remetente @ foo.fabrikam.com
   
 Para: destinatário @ bar.fabrikam.com
   
-Os seguintes domínios de remetente e destinatário são diferentes (microsoft.com e bing.com), mas pertencem à mesma organização (ou seja, ambos fazem parte dos domínios aceitos da organização):
+No seguinte exemplo, os domínios de remetente e destinatário são diferentes (microsoft.com e bing.com), mas pertencem à mesma organização (ou seja, ambos fazem parte dos Domínios Aceitos da organização):
   
-De: Sender @ microsoft.com
+De: remetente @ microsoft.com
   
 Para: destinatário @ bing.com
   
-As mensagens que falham na falsificação dentro da organização contêm os seguintes valores nos cabeçalhos:
+As mensagens reprovadas na falsificação dentro da organização contêm os seguintes valores nos cabeçalhos:
   
-X-Forefront-antispam-Report:... GATO: SPM/HSPM/PHSH;... SFTY: 9.11
+X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
   
-O gato é a categoria da mensagem e é normalmente marcado como SPM (spam), mas ocasionalmente pode ser HSPM (spam de alta confiança) ou PHISH (phishing), dependendo do que outros tipos de padrões ocorrem na mensagem.
+CAT é a categoria da mensagem, normalmente carimbada como SPM (spam), mas ocasionalmente pode ser HSPM (spam de alta confiança) ou PHISH (phishing), dependendo de quais outros tipos de padrões ocorrem na mensagem.
   
-O SFTY é o nível de segurança da mensagem, o primeiro dígito (9) significa que a mensagem é phishing e o segundo conjunto de dígitos após o ponto (11) significa que ele é falsificação dentro da organização.
+SFTY é o nível de segurança da mensagem. O primeiro dígito (9) significa que se trata de uma mensagem de phishing, e o segundo conjunto de dígitos após o ponto (11) significa que é uma falsificação dentro da organização.
   
-Não há um código de motivo específico para a autenticação composta para falsificação dentro da organização, que será carimbada posteriormente em 2018 (cronograma ainda não definido).
+Não há um código de razão específico de Autenticação Composta para falsificação dentro da organização. Ela será marcada mais tarde em 2018 (a linha do tempo ainda não está definida).
   
  **Falsificação entre domínios**
   
-Isso ocorre quando o domínio de envio no endereço de: é um domínio externo para a organização de recebimento. As mensagens que falharam na autenticação composta devido à falsificação entre domínios contêm os seguintes valores nos cabeçalhos:
+Isso ocorre quando o domínio de envio no endereço De: é um domínio externo à organização receptora. Mensagens que são reprovadas na Autenticação Composta devido a falsificação entre domínios contêm os seguintes valores nos cabeçalhos:
   
-Authentication-Results:... compauth = razão do falha = 000/001
+Authentication-Results: … compauth=fail reason=000/001
   
-X-Forefront-antispam-Report:... GATO: FALSIFICAR;... SFTY: 9.22
+X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
   
-Em ambos os casos, a dica de segurança vermelha a seguir está marcada na mensagem ou um equivalente que é personalizado para o idioma da caixa de correio do destinatário:
+Em ambos os casos, a seguinte dica de segurança vermelha está marcada na mensagem ou há um equivalente que é personalizado para o idioma da caixa de correio do destinatário:
   
-![Dica de segurança vermelha-detecção de fraude](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Dica de segurança vermelha ‒ detecção de fraudes](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
   
-É só observar o endereço de: e saber quais são seus emails de destinatário ou inspecionar os cabeçalhos de email, que você pode diferenciar entre a falsificação entre domínios e dentro da organização.
+É apenas observando o endereço De: e sabendo qual é o email do destinatário ou inspecionando os cabeçalhos de email que você pode diferenciar entre falsificação dentro da organização e entre domínios.
   
-## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Como os clientes do Office 365 podem se preparar para a nova proteção contra falsificação
+## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Como os clientes do Office 365 podem se preparar para a nova proteção antifalsificação
 
 ### <a name="information-for-administrators"></a>Informações para administradores
 
-Como administrador de uma organização no Office 365, há várias informações importantes que você deve estar ciente.
+Como administrador de uma organização no Office 365, há várias informações importantes que você deve conhecer.
   
-### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Entendendo por que a autenticação de email nem sempre é suficiente para interromper a falsificação
+### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Entender por que a autenticação de email nem sempre é suficiente para impedir a falsificação
 
-A nova proteção contra falsificação depende da autenticação de email (SPF, DKIM e DMARC) para não marcar uma mensagem como falsificação. Um exemplo comum é quando um domínio de envio nunca publicou registros SPF. Se não houver registros SPF ou se estiverem configurados incorretamente, uma mensagem enviada será marcada como falsificada, a menos que a Microsoft tenha inteligência de back-end que diga que a mensagem é legítima.
+A nova proteção antifalsificação depende da autenticação de email (SPF, DKIM e DMARC) para não marcar uma mensagem como falsificada. Um exemplo comum é quando um domínio de envio nunca publicou registros SPF. Se não houver registros SPF ou eles estiverem configurados incorretamente, uma mensagem enviada será marcada como falsificada, a menos que a Microsoft tenha inteligência de back-end para informar que a mensagem é legítima.
   
-Por exemplo, antes de a antifalsificação ser implantada, uma mensagem pode ter a aparência a seguir sem o registro SPF, nenhum registro DKIM e nenhum registro DMARC: 
+Por exemplo, antes de a antifalsificação ser implantada, uma mensagem pode ter a seguinte aparência, sem nenhum registro SPF, nenhum registro DKIM e nenhum registro DMARC: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -177,7 +178,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Após a falsificação, se você tiver o Office 365 Enterprise e5, o EOP ou a ATP, o valor compauth será carimbado:
+Após a antifalsificação, se você tiver o Office 365 Enterprise E5, EOP ou ATP, o valor de compauth será marcado:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -189,7 +190,7 @@ To: receiver @ contoso.com
 
 ```
 
-Se o example.com corrigiu isso Configurando um registro SPF, mas não um registro DKIM, isso transmitiria a autenticação composta porque o domínio que passou o SPF alinhado ao domínio no endereço de: 
+Se example.com corrigiu isso configurando um registro SPF, mas não um registro DKIM, isso seria aprovado pela autenticação composta porque o domínio aprovado no SPF estava alinhado com o domínio no endereço De: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
@@ -200,7 +201,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Ou, se eles configurarem um registro DKIM, mas não um registro SPF, isso também passaria na autenticação composta, pois o domínio no DKIM-Signature que passou alinhado com o domínio no endereço de: 
+Ou, caso tenha sido configurado um registro DKIM, mas não um registro SPF, isso também será aprovado na autenticação composta porque o domínio na Assinatura DKIM aprovada estava alinhado com o domínio no endereço De: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -212,7 +213,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-No enTanto, um phishing também pode configurar o SPF e o DKIM e assinar a mensagem com seu próprio domínio, mas especificar um domínio diferente no endereço de:. Nem o SPF nem o DKIM exigem que o domínio seja alinhado com o domínio no endereço de:, a menos que example.com publicado DMARC registros, isso não seria marcado como um falso usando o DMARC: 
+No entanto, um phisher também pode configurar o SPF e o DKIM e assinar a mensagem com seu próprio domínio, mas especificar um domínio diferente no endereço De:. O SPF e o DKIM não exigem que o domínio se alinhe com o domínio no endereço De:. Portanto, a menos que example.com tenha publicado registros DMARC, isso não será marcado como uma falsificação usando DMARC: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
@@ -223,11 +224,11 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-No cliente de email (Outlook, Outlook na Web ou qualquer outro cliente de email), somente o domínio de: é exibido, não o domínio no SPF ou DKIM e pode induzir o usuário a pensar que a mensagem provém do example.com, mas que, na verdade, vem de maliciousDomain.com .
+No cliente de email (Outlook, Outlook na Web ou qualquer outro cliente de email), apenas o domínio De: é exibido, não o domínio no SPF ou DKIM. Isso pode induzir o usuário a pensar que a mensagem veio de example.com, mas na verdade, ela veio de maliciousDomain.com.
   
-![A mensagem autenticada, exceto: domain, não se alinha com o que passou SPF ou DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![A mensagem foi autenticada, mas o domínio De: não está alinhado com o que foi aprovado no SPF ou no DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
   
-Por esse motivo, o Office 365 requer que o domínio no endereço: seja alinhado com o domínio na assinatura SPF ou DKIM e, se não contiver, contenha alguns outros sinais internos que indiquem que a mensagem é legítima. Caso contrário, a mensagem seria uma falha de compauth. 
+Por esse motivo, o Office 365 exige que o domínio no endereço De: se alinhe com o domínio na assinatura SPF ou DKIM e, se ele não se alinhar, que contenha alguns outros sinais internos que indiquem que a mensagem é legítima. Caso contrário, a mensagem será reprovada em compauth. 
   
 ```
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
@@ -239,41 +240,41 @@ From: sender@contoso.com
 To: someone@example.com
 ```
 
-Dessa forma, a antifalsificação do Office 365 protege contra domínios sem autenticação e de domínios que definem a autenticação, mas não são compatíveis com relação ao domínio no endereço de: como é aquele que o usuário vê e acredita ser o remetente da mensagem. Isso é verdadeiro tanto para domínios externos para sua organização, quanto para domínios dentro de sua organização.
+Portanto, a antifalsificação do Office 365 protege contra domínios sem autenticação e contra domínios que configuram a autenticação, mas não correspondem ao domínio no endereço De: porque ele é o que o usuário vê e acredita ser o remetente da mensagem. Isso vale para is domínios externos à sua organização e para os domínios dela.
   
-Portanto, se você receber uma mensagem que falhou na autenticação composta e estiver marcada como falsificada, mesmo que a mensagem tenha passado SPF e DKIM, isso ocorre porque o domínio que aprovou o SPF e o DKIM não estão alinhados com o domínio no endereço de:.
+Portanto, se você receber uma mensagem que foi reprovada na autenticação composta e está marcada como falsificada, mesmo que a mensagem tenha sido aprovada no SPF e no DKIM, é porque o domínio que foi aprovado no SPF e no DKIM não está alinhado com o domínio no endereço De:.
   
-### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Noções básicas sobre alterações no modo como os emails falsificados são tratados
+### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Entender as alterações na maneira como os emails falsificados são tratados
 
-Atualmente, para todas as organizações no Office 365-ATP e não-ATP-messages que falham DMARC com uma política de rejeição ou quarentena são marcadas como spam e normalmente têm a ação de spam de alta confiança ou, às vezes, a ação de spam regular (dependendo de se outro spam as regras primeiro o identificam como spam. As detecções de falsificação dentro da organização usam a ação regular de spam. Esse comportamento não precisa ser habilitado, nem pode ser desabilitado.
+Atualmente, para todas as organizações no Office 365 (com e sem ATP), as mensagens reprovadas no DMARC com uma política de rejeição ou quarentena são marcadas como spam e geralmente são submetidas à ação de spam de alta confiança ou, às vezes, à ação de spam regular (dependendo de outras regras de spam as identificarem primeiro como spam). Detecções de spoofs dentro da organização levam à ação regular de spam. Esse comportamento não precisa ser habilitado nem pode ser desabilitado.
   
-No enTanto, para mensagens de falsificação entre domínios, antes dessa alteração eles passaram por spam, phishing e verificações de malware regulares e, se outras partes do filtro as identificarem como suspeitas, marcariam como spam, Phish ou malware, respectivamente. Com a nova proteção de falsificação entre domínios, qualquer mensagem que não possa ser autenticada será, por padrão, a ação definida na política antifalsificação \> do anti-phishing. Se não houver um definido, ele será movido para uma pasta de lixo eletrônico de usuários. Em alguns casos, mais mensagens suspeitas também terão a dica de segurança vermelha adicionada à mensagem.
+No entanto, para mensagens de spoofing entre domínios, antes dessa alteração, elas passariam por verificações regulares de spam, phishing e malware, e se outras partes do filtro as identificassem como suspeitas, seriam marcadas como spam, phishing ou malware, respectivamente. Com a nova proteção contra falsificação entre domínios, qualquer mensagem que não puder ser autenticada será submetida, por padrão, à ação definida na política Antiphishing \> Antifalsificação. Se não houver uma definida, ela será movida para uma pasta Lixo Eletrônico do usuário. Em alguns casos, mensagens mais suspeitas também terão a dica de segurança vermelha adicionada a elas.
   
-Isso pode resultar em algumas mensagens que foram previamente marcadas como spam ainda estão sendo marcadas como spam, mas também terão uma dica de segurança vermelha; em outros casos, as mensagens que foram previamente marcadas como não spam começarão a ser marcadas como spam (CAT: SPOOF) com uma dica de segurança vermelha adicionada. Ainda em outros casos, os clientes que estavam movendo todos os spams e phishing para a quarentena podem vê-los para a pasta de lixo eletrônico (esse comportamento pode ser alterado, confira [alterar suas configurações de anti-falsificação](#changing-your-anti-spoofing-settings)).
+Isso pode fazer com que algumas mensagens marcadas anteriormente como spam continuem sendo marcadas assim, mas agora elas também terão uma dica de segurança vermelha. Em outros casos, as mensagens marcadas como não spam começarão a ser marcadas como spam (CAT:SPOOF), com uma dica de segurança vermelha adicionada. Em outros casos, os clientes que estavam movendo todos os itens de spam e phishing para a quarentena agora os verão na Pasta de Lixo Eletrônico (esse comportamento pode ser alterado; confira [Alterar suas configurações antifalsificação](#changing-your-anti-spoofing-settings)).
   
-Há várias maneiras diferentes pelas quais uma mensagem pode ser falsificada (consulte [diferenciação entre diferentes tipos de falsificação](#differentiating-between-different-types-of-spoofing) anteriormente neste artigo), mas a partir de março de 2018, a maneira como o Office 365 trata essas mensagens ainda não são unificadas. A tabela a seguir é um resumo rápido, com a proteção de falsificação entre domínios sendo novo comportamento: 
+Há várias maneiras diferentes de falsificar uma mensagem (confira [Diferenciar entre tipos de falsificação](#differentiating-between-different-types-of-spoofing) anteriormente neste artigo), mas, em março de 2018, a maneira como o Office 365 trata essas mensagens ainda não está unificada. A tabela a seguir é um resumo rápido, em que a proteção contra falsificação entre domínios é um novo comportamento: 
   
-|**Tipo de falsificação**|**Category**|**Dica de segurança adicionada?**|**Aplica-se a**|
+|**Tipo de falsificação**|**Categoria**|**Dica de segurança adicionada?**|**Aplica-se a**|
 |:-----|:-----|:-----|:-----|
-|Falha de DMARC (quarentena ou rejeição)  <br/> |HSPM (padrão), também pode ser SPM ou PHSH  <br/> |Não (ainda não)  <br/> |Todos os clientes do Office 365, Outlook.com  <br/> |
-|Auto para si  <br/> |SPM  <br/> |Sim  <br/> |Todas as organizações do Office 365, Outlook.com  <br/> |
-|Entre domínios  <br/> |SIMULAÇÃO  <br/> |Sim  <br/> |Proteção avançada contra ameaças do Office 365 e clientes e5  <br/> |
+|Reprovação no DMARC (quarentena ou rejeição)  <br/> |HSPM (padrão); também pode ser SPM ou PHSH  <br/> |Não (ainda não)  <br/> |Todos os clientes do Office 365, Outlook.com  <br/> |
+|Self-to-self  <br/> |SPM  <br/> |Sim  <br/> |Todas as organizações do Office 365, Outlook.com  <br/> |
+|Entre domínios  <br/> |SPOOF  <br/> |Sim  <br/> |Clientes da Proteção Avançada contra Ameaças do Office 365 e E5  <br/> |
 
-### <a name="changing-your-anti-spoofing-settings"></a>Alterar as configurações de anti-falsificação
+### <a name="changing-your-anti-spoofing-settings"></a>Alterar suas configurações antifalsificação
 
-Para criar ou atualizar suas configurações de antifalsificação (entre domínios), navegue até as configurações antifalsificação \> do anti-phishing na guia política de gerenciamento \> de ameaças no centro de &amp; conformidade de segurança. Se você nunca criou nenhuma configuração anti-phishing, será necessário criar uma:
+Para criar ou atualizar suas configurações antifalsificação (entre domínios), navegue até as configurações Antiphishing \> Antifalsificação na guia Política do Gerenciamento de Ameaças \> no Centro de Conformidade &amp; Segurança. Se você nunca tiver criado uma configuração antiphishing, será necessário criar uma:
   
-![Anti-phishing-criar uma nova política](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Antiphishing ‒ criar uma nova política](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
   
-Se você já criou um, pode selecioná-lo para modificá-lo:
+Se já tiver criado uma, você poderá selecioná-la para modificá-la:
   
-![Anti-phishing – modificar política existente](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Antiphishing ‒ modificar uma política existente](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-Selecione a política que você acabou de criar e siga as etapas descritas em [saiba mais sobre o spoof Intelligence](learn-about-spoof-intelligence.md).
+Selecione a política que você acabou de criar e siga as etapas descritas em [Saiba mais sobre a falsificação de informações](learn-about-spoof-intelligence.md).
   
-![Habilitar ou desabilitar a suavização de antifalsificação](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Habilitar ou desabilitar a antifalsificação](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
-![Habilitar ou desabilitar dicas de segurança antifalsificação](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Habilitar ou desabilitar dicas de segurança de antifalsificação](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
   
 Para criar uma nova política usando o PowerShell: 
   
@@ -291,19 +292,19 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
 ```
 
-Você pode modificar os parâmetros da política anti-phishing usando o PowerShell, seguindo a documentação em [set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). Você pode especificar o $name como um parâmetro:
+Você pode modificar os parâmetros da política antiphishing usando o PowerShell, seguindo a documentação em [Set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). Você pode especificar $name como parâmetro:
   
 ```powershell
 Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 ```
 
-Mais tarde, no 2018, em vez de você precisar criar uma política padrão, uma será criada para você com escopo para todos os destinatários em sua organização para que você não precise especificá-la manualmente (as capturas de tela abaixo estão sujeitas a alterações antes da implementação final).
+Mais adiante em 2018,em vez de você ter que criar uma política padrão, ela será criada para você com escopo para todos os destinatários de sua organização. Assim, você não precisará especificá-la manualmente (as capturas de tela a seguir estão sujeitas a alterações antes da implementação final).
   
-![Política padrão para anti-phishing](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Política antiphishing padrão](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
   
-Ao contrário de uma política que você cria, não é possível excluir a política padrão, modificar sua prioridade ou escolher quais usuários, domínios ou grupos para fazer o escopo.
+Diferentemente de uma política que você cria, não é possível excluir a política padrão, modificar sua prioridade ou escolher quais usuários, domínios ou grupos estão no escopo para ela.
   
-![Detalhes da política padrão do anti-phishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Detalhes da política antiphishing padrão](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
 Para configurar sua proteção padrão usando o PowerShell:
   
@@ -312,7 +313,7 @@ $defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
-Você só deve desabilitar a proteção contra falsificação se tiver outro servidor de email ou servidores na frente do Office 365 (Confira cenários legítimos para desabilitar a antifalsificação para obter mais detalhes).
+Você só deverá desabilitar a proteção antifalsificação se tiver outro servidor de email ou servidores na frente do Office 365 (confira Cenários legítimos para desabilitar a antifalsificação para obter mais detalhes).
   
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
@@ -320,31 +321,31 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 
 ```
 > [!IMPORTANT]
-> Se o primeiro salto no seu caminho de email for o Office 365 e você estiver recebendo muitos emails legítimos marcados como falsificados, primeiro você deve configurar seus remetentes que têm permissão para enviar emails falsificados para seu domínio (consulte a seção *"Gerenciando remetentes legítimos que estão enviando u nauthenticated email "* ). Se você ainda estiver recebendo muitos falsos positivos (ou seja, mensagens legítimas marcadas como falso), não recomendamos desabilitar totalmente a proteção contra falsificação. Em vez disso, recomendamos escolher Basic em vez de alta proteção. É melhor trabalhar através de falsos positivos do que expor sua organização a emails falsificados, que podem acabar impondo custos significativamente mais altos a longo prazo.
+> Se o primeiro salto no caminho de email for o Office 365 e você estiver recebendo muitos emails legítimos marcados como falsificação, primeiro configure os remetentes com permissão para enviar e-mails falsificados para seu domínio (confira a seção *"Gerenciar remetentes legítimos que estão enviando emails não autenticados"*). Se você ainda está recebendo muitos falsos positivos (ou seja, mensagens legítimas marcadas como falsificação), NÃO recomendamos desabilitar a proteção antifalsificação. Em vez disso, recomendamos escolher a proteção Básica em vez de Alta. É melhor trabalhar com falsos positivos do que expor sua organização a emails falsificados, o que poderia acabar acarretando custos significativamente mais altos em longo prazo.
 
-### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gerenciando remetentes legítimos que estão enviando emails não autenticados
+### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gerenciar remetentes legítimos que estão enviando emails não autenticados
 
-O Office 365 acompanha quem está enviando emails não autenticados para sua organização. Se o serviço achar que o remetente não é legítimo, ele irá marcá-lo como uma falha de *compauth* . Isso será classificado como FALSIFICAção, embora dependa de sua política antifalsificação que foi aplicada à mensagem.
+O Office 365 mantém o controle de quem está enviando emails não autenticados para sua organização. Se o serviço achar que o remetente não é legítimo, ele será marcado como uma falha de *compauth*. Isso será classificado como SPOOF, embora dependa da política antifalsificação aplicada à mensagem.
   
-No enTanto, como administrador, você pode especificar quais remetentes têm permissão para enviar emails falsificados, substituindo a decisão do Office 365.
+No entanto, como administrador, você pode especificar quais remetentes têm permissão para enviar emails falsificados, substituindo a decisão do Office 365.
   
-**Método 1-se a sua organização for proprietária do domínio, configure email Authentication**
+**Método 1 ‒ se sua organização possui o domínio, configure a autenticação de email**
   
-Este método pode ser usado para resolver o spoofing da organização e a falsificação entre domínios em casos em que você possui ou interage com vários locatários. Também ajuda a resolver a falsificação entre domínios onde você envia para outros clientes no Office 365 e também para terceiros hospedados em outros provedores.
+Esse método pode ser usado para resolver o spoofing dentro da organização e o spoofing entre domínios, nos casos em que você possui ou interage com vários locatários. Também ajuda a resolver a falsificação entre domínios, em que você envia a outros clientes no Office 365 e também a terceiros hospedados em outros provedores.
   
-Para obter mais detalhes, consulte [Customers of Office 365](#customers-of-office-365).
+Para obter mais detalhes, confira [Clientes do Office 365](#customers-of-office-365).
 
-**Método 2-usar inteligência de falsificação para configurar remetentes permitidos de emails não autenticados**
+**Método 2 ‒ use a Inteligência contra Falsificação para configurar os remetentes permitidos de emails não autenticados**
   
-Você também pode usar o [spoof Intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) para permitir que os remetentes transmitam mensagens não autenticadas para sua organização. 
+Você também pode usar a [Inteligência contra Falsificação](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) para permitir que os remetentes transmitam mensagens não autenticadas para sua organização. 
   
-Para domínios externos, o usuário falsificado é o domínio no endereço de, enquanto a infraestrutura de envio é o endereço IP de envio (dividido em/24 intervalos CIDR) ou o domínio organizacional do registro PTR (na captura de tela abaixo, o IP de envio pode ser 131.107.18.4 cujo registro PTR é outbound.mail.protection.outlook.com e isso seria mostrado como outlook.com para a infraestrutura de envio).
+Para domínios externos, o usuário falsificado é o domínio no endereço De, enquanto a infraestrutura de envio é o endereço IP de envio (dividido em /24 intervalos CIDR) ou o domínio organizacional do registro PTR (na captura de tela a seguir, o IP de envio pode ser 131.107.18.4, cujo registro PTR é outbound.mail.protection.outlook.com, e isso seria exibido como outlook.com para a infraestrutura de envio).
   
-Para permitir que este remetente envie emails não autenticados, altere **não** para **Sim**.
+Para permitir que esse remetente envie emails não autenticados, altere **No** para **Yes**.
   
-![ConFigurando os remetentes permitidos contra falsificação](media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Configurar remetentes permitidos pela antifalsificação](media/d4334921-d820-4334-8217-788279701e94.jpg)
   
-Você também pode usar o PowerShell para permitir que o remetente específico falsifique seu domínio:
+Você também pode usar o PowerShell para permitir que um remetente específico falsifique seu domínio:
   
 ```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
@@ -354,120 +355,120 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Obtendo remetentes falsificados do PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Obter remetentes falsificados do PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
   
-Na imagem anterior, foram adicionadas quebras de linha adicionais para fazer com que esta captura de tela caiba. Normalmente, todos os valores aparecem em uma única linha.
+Na imagem anterior, foram adicionadas quebras de linha para ajustar a captura de tela. Normalmente, todos os valores apareceriam em uma única linha.
   
-Edite o arquivo e procure a linha que corresponde ao outlook.com e ao bing.com e altere a entrada AllowedToSpoof de não para Sim:
+Edite o arquivo, procure a linha que corresponde a outlook.com e bing.com e altere a entrada AllowedToSpoof de No para Yes:
   
-![Configuração de falsificação permitir sim no PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Definir spoof allow como Yes no PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
   
-Salve o arquivo e, em seguida, execute:
+Salve o arquivo e execute:
   
 ```powershell
 $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
 Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
 ```
 
-Isso agora permitirá que o bing.com envie emails não autenticados de \*. Outlook.com.
+Agora isso permitirá que bing.com envie emails não autenticados de \*.outlook.com.
 
-**Método 3-criar uma entrada de permissão para o par de remetente/destinatário**
+**Método 3 ‒ crie uma entrada de permissão para o par emissor/destinatário**
   
-Você também pode optar por ignorar a filtragem de spam de um remetente específico. Para obter mais detalhes, consulte [como adicionar um remetente com segurança a uma lista de permissões no Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
+Você também pode optar por ignorar toda a filtragem de spam para determinado remetente. Para obter mais detalhes, confira [Como adicionar com segurança um remetente a uma lista de permissões no Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
   
-Se você usar esse método, ele ignorará spam e parte da filtragem de phishing, mas não a filtragem de malware.
+Se você usar esse método, ele ignorará o spam e alguns dos filtros de phishing, mas não a filtragem de malware.
   
-**Método 4 – contate o remetente e peça para configurar a autenticação de email**
+**Método 4 ‒ entre em contato com o remetente e peça que ele configure a autenticação de email**
   
-Devido ao problema de spam e phishing, a Microsoft recomenda que todos os remetentes configurem a autenticação de email. Se você souber um administrador do domínio de envio, entre em contato com ele e solicite que eles configurem os registros de autenticação de email para que você não precise adicionar substituições. Para obter mais informações, consulte [Administradores de domínios que não são clientes do Office 365](#administrators-of-domains-that-are-not-office-365-customers)", mais adiante neste artigo. 
+Devido ao problema de spam e phishing, a Microsoft recomenda que todos os remetentes configurem a autenticação de email. Se você conhece um administrador do domínio de envio, entre em contato com ele e solicite que ele configure registros de autenticação de email para que você não precise adicionar nenhuma substituição. Para obter mais informações, confira [Administradores de domínios que não são clientes do Office 365](#administrators-of-domains-that-are-not-office-365-customers) mais adiante neste artigo. 
   
-Embora isso possa ser difícil no princípio, para obter domínios de envio para autenticar, ao longo do tempo, à medida que mais e mais filtros de email começam a ser lixo eletrônico ou mesmo rejeitando seus emails, ele fará com que eles configurem os registros apropriados para garantir uma entrega melhor.
+Embora inicialmente possa ser difícil enviar domínios para autenticação, com o passar do tempo, à medida que mais e mais filtros de email começarem a acumular ou até mesmo rejeitar seus emails, isso fará com que eles configurem os registros apropriados para melhorar a entrega.
   
-### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Exibindo relatórios sobre quantas mensagens foram marcadas como falsificadas
+### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Exibir relatórios de quantas mensagens foram marcadas como falsificadas
 
-Depois que a política antifalsificação estiver habilitada, você poderá usar a inteligência de ameaças para obter números sobre quantas mensagens são marcadas como phishing. Para fazer isso, vá para o centro &amp; de conformidade de segurança (SCC) no \> Gerenciador de gerenciamento de ameaças, defina o modo de exibição como Phish e agrupe por domínio do remetente ou status de proteção:
+Depois que a política antifalsificação estiver habilitada, você poderá usar os recursos de resposta e investigação de ameaça para obter o número de mensagens marcadas como phishing. Para fazer isso, vá até o Centro de Conformidade &amp; Segurança, em Gerenciamento de Ameaças \> Explorer, defina a Exibição como Phish e agrupe por Domínio de Remetente ou Status de Proteção:
   
-![Visualizando quantas mensagens são marcadas como phishing](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Exibir quantas mensagens estão marcadas como phishing](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-Você pode interagir com os vários relatórios para ver quantas foram marcadas como phishing, incluindo as mensagens marcadas como falso. Para saber mais, confira [introdução à inteligência contra ameaças do Office 365](get-started-with-ti.md).
+Você pode interagir com vários relatórios para ver quantas foram marcadas como phishing, inclusive mensagens marcadas como FALSAS. Para saber mais, confira [Introdução à resposta e investigação de ameaças do Office 365](get-started-with-ti.md).
   
-Você ainda não pode dividir quais mensagens foram marcadas devido à falsificação em vez de outros tipos de phishing (phishing geral, de domínio ou usuário, e assim por diante). No enTanto, mais tarde, você poderá fazer isso por meio do &amp; centro de conformidade de segurança. Depois de fazer isso, você pode usar esse relatório como um local de início para identificar os domínios de envio que podem ser legítimos que estão sendo marcados como falsificados devido à falha na autenticação.
+Você ainda não pode separar as mensagens que foram marcadas devido à falsificação de outros tipos de phishing (phishing geral, representação de domínio ou usuário e assim por diante). No entanto, mais tarde, você poderá fazer isso por meio do Centro de Conformidade &amp; Segurança. Depois disso, você poderá usar esse relatório como ponto de partida para identificar domínios de envio que possam ser legítimos e que estejam sendo marcados como falsificação devido a falhas na autenticação.
   
-A captura de tela a seguir é uma proposta de como será a aparência desses dados, mas podem ser alteradas quando lançadas:
+A captura de tela a seguir é uma proposta da aparência que esses dados terão, mas eles poderão mudar quando forem lançados:
   
-![Exibindo relatórios de phishing por tipo de detecção](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Exibir relatórios de phishing por tipo de detecção](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
   
-Para clientes não-ATP e e5, esses relatórios estarão disponíveis posteriormente nos relatórios de status de proteção contra ameaças (TPS), mas serão atrasados por pelo menos 24 horas. Esta página será atualizada à medida que elas forem integradas ao &amp; centro de conformidade de segurança.
+Para clientes não ATP e E5, esses relatórios estarão disponíveis mais tarde nos relatórios de TPS (Status de Proteção contra Ameaças), mas serão atrasados em pelo menos 24 horas. Essa página será atualizada à medida que eles forem integrados ao Centro de Conformidade &amp; Segurança.
   
-### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>PreVendo quantas mensagens serão marcadas como falsas
+### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Prever quantas mensagens serão marcadas como falsas
 
-Quando o Office 365 atualiza suas configurações para permitir que você desative a imposição antifalsificação ou com a imposição básica ou alta, você terá a capacidade de ver como a disposição da mensagem será alterada nas várias configurações. Ou seja, se a antifalsificação estiver desAtivada, você poderá ver quantas mensagens serão detectadas como falsificadas, se você mudar para básico; ou, se for básico, você poderá ver quantas mensagens serão detectadas como falsificadas se você ativá-la para alta.
+Depois que o Office 365 atualizar suas configurações para permitir que você ative ou desative a imposição de antifalsificação com a imposição Básica ou Alta, você poderá ver como a disposição da mensagem será alterada nas várias configurações. Ou seja, se a antifalsificação estiver desativada, você poderá ver quantas mensagens serão detectadas como Falsas se você ativar a opção Básica. Se ela for Básica, você poderá ver quantas outras mensagens serão detectadas como Falsas se você mudar para a opção Alta.
   
-Este recurso está atualmente em desenvolvimento. À medida que mais detalhes são definidos, esta página será atualizada com capturas de tela do centro de segurança e conformidade e com os exemplos do PowerShell.
+No momento esse recurso está em desenvolvimento. À medida que mais detalhes forem definidos, essa página será atualizada com capturas de tela do Centro de Segurança e Conformidade e com exemplos do PowerShell.
   
-![Relatório "e se" para habilitar a anti-falsificação](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Relatório "What If" para habilitar a antifalsificação](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
   
-![Possível UX para permitir um remetente falso](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![Possível experiência do usuário para permitir um remetente falsificado](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Noções básicas sobre como spam, phishing e detecções avançadas de phishing são combinados
+### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Entender como as detecções de spam, phishing e phishing avançado são combinadas
 
-As organizações que usam o Exchange Online, com ou sem ATP, podem especificar quais ações serão executadas quando o serviço identificar mensagens como malware, spam, spam de alta confiança, phishing e massa. Com as políticas de anti-phishing do ATP para clientes ATP e as políticas anti-phishing para clientes do EOP e o fato de que uma mensagem pode atingir vários tipos de detecção (por exemplo, malware, phishing e representação do usuário), pode haver uma certa confusão quanto ao que política se aplica.
+As organizações que usam o Exchange Online, com ou sem ATP, podem especificar quais ações devem ser executadas quando o serviço identifica mensagens como malware, spam, spam de alta confiança, phishing e em massa. Com as políticas antiphishing da ATP para clientes da ATP e as políticas antiphishing para clientes da EOP, além do fato de que uma mensagem pode passar por vários tipos de detecção (por exemplo, malware, phishing e representação de usuário), pode haver confusão sobre qual política é aplicável.
   
-Em geral, a política aplicada a uma mensagem é identificada no cabeçalho X-Forefront-antispam-Report na propriedade CAT (categoria).
+Em geral, a política aplicada a uma mensagem é identificada no cabeçalho X-Forefront-Antispam-Report na propriedade CAT (Categoria).
   
-|**Prioridade**|**Política**|**Category**|**Onde gerenciado?**|**Aplica-se a**|
+|**Prioridade**|**Política**|**Categoria**|**Gerenciada onde?**|**Aplica-se a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Software  <br/> |MALW  <br/> |[Política de malware](configure-anti-malware-policies.md) <br/> |Todas as organizações  <br/> |
-|duas  <br/> |Fraude  <br/> |PHSH  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|3D  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|quatro  <br/> |Spoofing  <br/> |SIMULAÇÃO  <br/> |[Política anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), inteligência de [falsificação](learn-about-spoof-intelligence.md) <br/> |Todas as organizações  <br/> |
-|0,5  <br/> |Spam  <br/> |SPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|6  <br/> |Impresso  <br/> |IMPRESSO  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|178  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[Configurar políticas de anti-phishing e anti-phishing do Office 365 ATP](set-up-anti-phishing-policies.md) <br/> |Organizações somente com ATP  <br/> |
-|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[Configurar políticas de anti-phishing e anti-phishing do Office 365 ATP](set-up-anti-phishing-policies.md) <br/> |Organizações somente com ATP <br/> |
+|1  <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](configure-anti-malware-policies.md) <br/> |Todas as organizações  <br/> |
+|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
+|3  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
+|4  <br/> |Spoofing  <br/> |SPOOF  <br/> |[Política antiphishing](https://go.microsoft.com/fwlink/?linkid=864553), [Inteligência contra Falsificação](learn-about-spoof-intelligence.md) <br/> |Todas as organizações  <br/> |
+|5  <br/> |Spam  <br/> |SPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
+|6  <br/> |Em massa  <br/> |BULK  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
+|7  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[ Configurar políticas antiphishing e antiphishing da ATP do Office 365](set-up-anti-phishing-policies.md) <br/> |Apenas organizações com ATP  <br/> |
+|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[ Configurar políticas antiphishing e antiphishing da ATP do Office 365](set-up-anti-phishing-policies.md) <br/> |Apenas organizações com ATP <br/> |
 
-Se você tiver várias políticas anti-phishing diferentes, será aplicada a prioridade mais alta. Por exemplo, suponha que você tenha duas políticas:
+Se você tiver várias políticas antiphishing diferentes, a que tiver prioridade máxima será aplicada. Por exemplo, suponha que você tenha duas políticas:
 
-|**Política**|**Prioridade**|**Representação de usuário/domínio**|**Anti-falsificação**|
+|**Política**|**Prioridade**|**Representação de Usuário/Domínio**|**Antifalsificação**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Ativado  <br/> |Desligado  <br/> |
-|B  <br/> |duas  <br/> |Desligado  <br/> |Ativado  <br/> |
+|A  <br/> |1  <br/> |Ativada  <br/> |Desativada  <br/> |
+|B  <br/> |2  <br/> |Desativada  <br/> |Ativada  <br/> |
 
-Se uma mensagem chegar e for identificada como falsificação e representação do usuário, e o mesmo conjunto de usuários estiver no escopo da política A e da política B, a mensagem será tratada como uma falsificação, mas nenhuma ação será aplicada, pois a antifalsificação está desativada e a FALSIFICAção é executada em uma prioridade mais alta (4) que a representação de usuário (8).
+Se uma mensagem chegar e for identificada como falsificação e representação de usuário e o mesmo conjunto de usuários tiver como escopo a Política A e a Política B, a mensagem será tratada como uma falsificação, mas nenhuma ação será aplicada porque a Antifalsificação está desativada e SPOOF é executado com prioridade mais alta (4) do que a Representação do Usuário (8).
   
-Para fazer com que outros tipos de política de phishing se apliquem, será necessário ajustar as configurações das quais as várias políticas são aplicadas.
+Para aplicar outros tipos de política de phishing, você precisará ajustar as configurações que indicam para quem as várias políticas são aplicadas.
   
-### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Cenários legítimos para desabilitar a anti-falsificação
+### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Cenários legítimos para desabilitar a antifalsificação
 
-A antifalsificação melhor protege os clientes contra ataques de phishing e, portanto, desabilitar a proteção contra falsificação é altamente recomendável. Ao desabilitá-lo, você pode resolver alguns falsos positivos de curto prazo, mas o longo prazo será exposto a mais riscos. O custo para configurar a autenticação no lado do remetente ou fazer ajustes nas políticas de phishing, geralmente são eventos de ocorrência única ou exigem apenas manutenção mínima e periódica. No enTanto, o custo de recuperação de um ataque de phishing em que os dados foram expostos ou os ativos foram muito mais altos.
+A antifalsificação protege melhor os clientes contra ataques de phishing. Portanto, a desabilitação da proteção antifalsificação é altamente desencorajada. Se a desabilitar, você poderá resolver alguns falsos positivos de curto prazo, mas estará exposto a mais riscos em longo prazo. O custo da configuração da autenticação no lado do remetente ou dos ajustes nas políticas de phishing geralmente envolve eventos únicos ou apenas manutenção mínima e periódica. No entanto, o custo para se recuperar de um ataque de phishing em que os dados foram expostos ou os ativos foram comprometidos é muito maior.
   
-Por esse motivo, é melhor trabalhar com o antifalsificação de falsos positivos do que desabilitar a proteção antifalsificada.
+Por esse motivo, é melhor trabalhar com falsos positivos antifalsificação do que desabilitar a proteção antifalsificação.
   
-No enTanto, há um cenário legítimo em que a anti-falsificação deve ser desabilitada e, quando há produtos adicionais de filtragem de email no roteamento de mensagens, e o Office 365 não é o primeiro salto no caminho de email:
+No entanto, há um cenário legítimo em que a antifalsificação deve ser desabilitada. É quando há produtos adicionais de filtragem de mensagens no roteamento de mensagens, e o Office 365 não é o primeiro salto no caminho de email:
   
 ![O registro MX do cliente não aponta para o Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-O outro servidor pode ser um servidor de email local do Exchange, um dispositivo de filtragem de email, como o IronPort, ou outro serviço hospedado na nuvem.
+O outro servidor pode ser um servidor de correio local do Exchange, um dispositivo de filtragem de email, como o Ironport, ou outro serviço hospedado na nuvem.
   
-Se o registro MX do domínio do destinatário não apontar para o Office 365, não há necessidade de desabilitar a antifalsificação, pois o Office 365 procura o registro MX do seu domínio de recebimento e suprime o antifalsificação se ele apontar para outro serviço. Se você não sabe se o seu domínio tem outro servidor na frente, você pode usar um site como o MX Toolbox para pesquisar o registro MX. Isso pode dizer algo como o seguinte:
+Se o registro MX do domínio do destinatário não apontar para o Office 365, não será necessário desabilitar a antifalsificação porque o Office 365 procura o registro MX do domínio de recebimento e suprime a antifalsificação se ela aponta para outro serviço. Se você não sabe se seu domínio tem outro servidor diante dele, poderá usar um site como o MX Toolbox para pesquisar o registro MX. Ele poderá dizer algo como:
   
-![O registro MX indica que o domínio não aponta para o Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![O registro indica que o domínio não aponta para o Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
   
-Este domínio tem um registro MX que não aponta para o Office 365, portanto, o Office 365 não aplicaria a aplicação antifalsificação.
+Esse domínio tem um registro MX que não aponta para o Office 365. Portanto, o Office 365 não aplicaria a imposição antifalsificação.
   
-No enTanto, se o registro MX do domínio do destinatário apontar para *o* Office 365, embora haja outro serviço na frente do Office 365, você deve desabilitar a antifalsificação. O exemplo mais comum é o uso de uma reconfiguração de destinatário: 
+No entanto, se o registro MX do domínio do destinatário *apontar* para o Office 365, mesmo que haja outro serviço diante do Office 365, você deverá desabilitar a antifalsificação. O exemplo mais comum é com o uso de uma reescrita de destinatário: 
   
-![Diagrama de roteamento para reconfiguração de destinatário](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Diagrama de roteamento para reescrita do destinatário](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-O registro MX do domínio contoso. com aponta para o servidor local, enquanto o registro MX do domínio @office365. contoso. net aponta para o Office 365 porque contém \*. Protection.Outlook.com ou \*. eo.Outlook.com no registro MX:
+O registro MX do domínio contoso.com aponta para o servidor local, enquanto o registro MX do domínio @office365.contoso.net aponta para o Office 365 porque contém \*.protection.outlook.com ou \*.eo.outlook.com no registro MX:
   
-![O registro MX aponta para o Office 365, portanto, provavelmente, a reconfiguração do destinatário](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![O registro MX aponta para o Office 365. Portanto, provavelmente será necessária a reescrita do destinatário](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
-Certifique-se de diferenciar quando o registro MX de um domínio do destinatário não apontar para o Office 365 e quando tiver percorrido uma regravação do destinatário. É importante dizer a diferença entre esses dois casos.
+Diferencie quando o registro MX de um domínio de destinatário não aponta para o Office 365 e quando ele foi submetido a uma reescrita de destinatário. É importante saber a diferença entre esses dois casos.
   
-Se você não tiver certeza se o domínio de recebimento passou ou não por regravação de destinatários, às vezes você pode saber com os cabeçalhos da mensagem.
+Se você não tem certeza se seu domínio de recebimento foi ou não submetido a uma reescrita de destinatário, às vezes é possível determinar isso examinando os cabeçalhos das mensagens.
   
-a) primeiro, examine os cabeçalhos da mensagem do domínio do destinatário no cabeçalho Authentication-Results:
+a) Primeiro, examine os cabeçalhos na mensagem do domínio do destinatário no cabeçalho Authentication-Results:
   
 ```
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
@@ -477,33 +478,33 @@ Authentication-Results: spf=fail (sender IP is 1.2.3.4)
   header.from=example.com; compauth=fail reason=001
 ```
 
-O domínio do destinatário é encontrado no texto em negrito vermelho acima, neste caso, office365.contoso.net. Isso pode ser diferente do destinatário no cabeçalho para::
+O domínio do destinatário é encontrado no texto em negrito acima; neste caso, é office365.contoso.net. Isso pode ser diferente do destinatário no cabeçalho Para:
   
-Para: exemplo de \<destinatário @ contoso.com\>
+Para: Exemplo de Destinatário \<destinatário @ contoso.com\>
   
-Executar uma pesquisa de registro MX do domínio do destinatário real. Se ele contiver \*. protection.outlook.com, mail.Messaging.Microsoft.com \*,. eo.Outlook.com ou mail.global.frontbridge.com, isso significa que a MX aponta para o Office 365.
+Execute uma pesquisa de registro MX do domínio real do destinatário. Se ele contiver \*.protection.outlook.com, mail.messaging.microsoft.com, \*.eo.outlook.com ou mail.global.frontbridge.com, isso indicará que o MX aponta para o Office 365.
   
-Se não contiver esses valores, significa que o MX não aponta para o Office 365. Uma ferramenta que você pode usar para verificar se essa é a caixa de ferramentas MX.
+Se não contiver esses valores, isso indicará que o MX não aponta para o Office 365. Uma ferramenta que você pode usar para verificar isso é o MX Toolbox.
   
-Para esse exemplo específico, o seguinte diz que contoso.com, o domínio que se parece com o destinatário, pois ele é o cabeçalho to:, tem um registro MX apontando para um servidor local:
+Para esse exemplo específico, o seguinte item informa que contoso.com, o domínio que parece ser do destinatário, já que era o cabeçalho Para:, tem um registro MX que aponta para um servidor local:
   
 ![O registro MX aponta para o servidor local](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
   
-No enTanto, o destinatário real é office365.contoso.net cujo registro MX aponta para o Office 365:
+No entanto, o destinatário real é office365.contoso.net, cujo registro MX aponta para o Office 365:
   
-![MX aponta para o Office 365, deve ser reconfiguração de destinatário](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![O MX aponta para o Office 365; deve ser executada a reescrita do destinatário](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
   
-Portanto, essa mensagem provavelmente passou por uma regravação de destinatário.
+Portanto, essa mensagem provavelmente foi submetida à reescrita de destinatário.
   
-b) segunda, certifique-se de distinguir entre casos de uso comuns de regravações de destinatário. Se você pretende reescrever o domínio do destinatário para \*. onmicrosoft.com, em vez disso, reescreva \*-o em. mail.onmicrosoft.com.
+b) Em segundo lugar, diferencie os casos de uso comum de reescrita de destinatários. Se você vai reescrever o domínio do destinatário para \*.onmicrosoft.com, em vez disso, reescreva-o para \*.mail.onmicrosoft.com.
   
-Depois de identificar o domínio do destinatário final que é roteado por trás de outro servidor e o registro MX do domínio do destinatário realmente aponta para o Office 365 (conforme publicado em seus registros DNS), você pode continuar a desabilitar a antifalsificação.
+Após identificar o domínio do destinatário final roteado por trás de outro servidor e verificar se o registro MX do domínio do destinatário realmente aponta para o Office 365 (conforme publicado em seus registros DNS), você pode desabilitar a antifalsificação.
   
-Lembre-se de que você não deseja desabilitar a antifalsificação se o primeiro salto do domínio no caminho de roteamento for o Office 365, somente quando estiver por trás de um ou mais serviços.
+Lembre-se: você não deverá desabilitar a antifalsificação se o primeiro salto do domínio no caminho de roteamento for o Office 365, mas somente quando ele estiver por trás de um ou mais serviços.
   
-### <a name="how-to-disable-anti-spoofing"></a>Como desabilitar a suavização de antifalsificação
+### <a name="how-to-disable-anti-spoofing"></a>Como desabilitar a antifalsificação
 
-Se você já tiver uma política anti-phishing criada, defina o parâmetro EnableAntispoofEnforcement como $false:
+Se você já tiver criado uma política antiphishing, defina o parâmetro EnableAntispoofEnforcement como $false:
   
 ```
 $name = "<name of policy>"
@@ -511,13 +512,13 @@ Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
 
 ```
 
-Se você não souber o nome da política (ou políticas) a ser desativada, poderá exibi-las:
+Se você não souber o nome da(s) política(s) a ser(em) desabilitada(s), poderá exibi-la(s):
   
 ```
 Get-AntiphishPolicy | fl Name
 ```
 
-Se você não tiver políticas anti-phishing existentes, poderá criar uma e, em seguida, desabilitá-la (mesmo que você não tenha uma política, a antifalsificação ainda seja aplicada; posteriormente em 2018, uma política padrão será criada para você e você poderá então desabilitar isso em vez de criar uma) . Você terá que fazer isso em várias etapas:
+Se não tiver políticas antiphishing, você poderá criar uma e desabilitá-la (mesmo que você não tenha uma política, a antifalsificação ainda será aplicada; mais adiante em 2018, uma política padrão será criada e você poderá então desabilitá-la em vez de criar uma). Você terá que fazer isso em várias etapas:
   
 ```
 $org = Get-OrganizationConfig
@@ -538,180 +539,180 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 ```
 
-A desabilitação da antifalsificação só estará disponível via cmdlet (posteriormente, ela estará disponível no centro &amp; de conformidade de segurança). Se você não tiver acesso ao PowerShell, crie um tíquete de suporte.
+A desabilitação da antifalsificação está disponível apenas via cmdlet (mais tarde, ele estará disponível no Centro de Conformidade &amp; Segurança). Se você não tiver acesso ao PowerShell, crie um tíquete de suporte.
   
-Lembre-se de que isso só deve ser aplicado a domínios que passam por roteamento indireto quando enviados para o Office 365. Resistir à tentação de desabilitar a antifalsificação devido a alguns falsos positivos, será melhor na execução longa para que funcionem.
+Lembre-se: isso só deve ser aplicado a domínios que passam por roteamento indireto quando enviados para o Office 365. Resista à tentação de desativar a antifalsificação por causa de alguns falsos positivos. Em longo prazo, será melhor lidar com eles.
   
 ### <a name="information-for-individual-users"></a>Informações para usuários individuais
 
-Os usuários individuais são limitados em como podem interagir com a dica de segurança anti-falsificação. No enTanto, há várias coisas que você pode fazer para resolver cenários comuns.
+Há limitações na maneira como usuários individuais podem interagir com a dica de segurança antifalsificação. No entanto, há várias coisas que você pode fazer para resolver cenários comuns.
   
-### <a name="common-scenario-1---mailbox-forwarding"></a>#1 de cenário comum – encaminhamento de caixa de correio
+### <a name="common-scenario-1---mailbox-forwarding"></a>Cenário comum nº 1 ‒ encaminhamento de caixa de correio
 
-Se você usar outro serviço de email e encaminhar seu email para o Office 365 ou Outlook.com, seu email poderá ser marcado como falsificação e receber uma dica de segurança vermelha. O Office 365 e o Outlook.com Plan para resolver isso automaticamente quando o encaminhador é um dos Outlook.com, Office 365, Gmail ou qualquer outro serviço que usa o [protocolo Arc](https://arc-spec.org). No enTanto, até que a correção seja implantada, os usuários devem usar o recurso de contas conectadas para importar suas mensagens diretamente, em vez de usar a opção de encaminhamento.
+Se você usar outro serviço de email e encaminhar seus emails para o Office 365 ou o Outlook.com, eles poderão ser marcado como falsificação e receber uma dica de segurança vermelha. O Office 365 e o Outlook.com planejam tratar disso automaticamente quando o encaminhador for um dos serviços Outlook.com, Office 365, Gmail ou qualquer outro serviço que use o [protocolo ARC](https://arc-spec.org). No entanto, até que essa correção seja implantada, os usuários devem usar o recurso Contas Conectadas para importar suas mensagens diretamente, em vez de usar a opção de encaminhamento.
   
-Para configurar contas conectadas no Office 365, selecione o ícone de engrenagem no canto superior direito das contas \> de caixa de \> correio \> de conta \> de email da interface da Web do Office 365 conectadas.
+Para configurar contas conectadas no Office 365, selecione o ícone de engrenagem no canto superior direito da interface da Web do Office 365 em \> Email \> Email \> Contas \> Contas conectadas.
   
-![Opção de contas conectadas do Office 365](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
+![Office 365 ‒ Opção de contas conectadas](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
   
-No Outlook.com, o processo é a opção opções \> \> de ícone \> de \> engrenagem contas de email conectadas.
+No Outlook.com, o processo é o ícone de engrenagem \> Opções \> Email \> Contas \> Contas conectadas.
   
-### <a name="common-scenario-2---discussion-lists"></a>#2 de cenário comuns – listas de discussão
+### <a name="common-scenario-2---discussion-lists"></a>Cenário comum nº 2 ‒ listas de discussão
 
-As listas de discussão são conhecidas por ter problemas com a antifalsificação devido à maneira como encaminhar a mensagem e modificar o conteúdo ainda manter o original de: endereço.
+Sabe-se que as listas de discussão têm problemas com a antifalsificação, devido à maneira como encaminham mensagens e modificam o conteúdo, mas mantêm o endereço De: original.
   
-Por exemplo, suponha que seu endereço de email seja User @ contoso.com, e você esteja interessado em assistir à visita e ingressar na lista de discussão birdwatchers @ example.com. Ao enviar uma mensagem para a lista de discussão, você pode enviá-la dessa forma:
+Por exemplo, suponha que seu endereço de email seja usuario@contoso.com e você esteja interessado em Observação de Pássaros e participe da lista de discussão observacaodepassaros@example.com. Quando você envia uma mensagem para a lista de discussão, pode enviá-la desta maneira:
   
-**De:** John Doe \<usuário @ contoso.com\> 
+**De:** Carlos Lima \<usuario @ contoso.com\> 
   
-**Para:** Lista \<de discussão do Birdwatcher birdwatchers @ example.com\> 
+**Para:** Lista de Discussão de Observação de Pássaros \<observacaodepassaros @ example.com\> 
   
-**Assunto:** Grande visualização de Jays azuis no topo de Mt. Rainier esta semana 
+**Assunto:** Belo exemplo de gaios azuis no topo do Monte Rainier esta semana 
   
-Qualquer pessoa deseja fazer o check-out da exibição desta semana de Mt. Rainier?
+Alguém quer conferir esta semana a vista do Monte Rainier?
   
-Quando a lista de emails receber a mensagem, ela formatará a mensagem, modificará seu conteúdo e a repetirá para o restante dos membros na lista de discussão que é composta por participantes de vários receptores de email diferentes.
+Quando a lista de email recebe a mensagem, a formata, modifica seu conteúdo e a reproduz para o restante dos membros da lista de discussão, composta de participantes de vários destinatários de email diferentes.
   
-**De:** John Doe \<usuário @ contoso.com\> 
+**De:** Carlos Lima \<usuario @ contoso.com\> 
   
-**Para:** Lista \<de discussão do Birdwatcher birdwatchers @ example.com\> 
+**Para:** Lista de Discussão de Observação de Pássaros \<observacaodepassaros @ example.com\> 
   
-**Assunto:** [BIRDWATCHERS] Grande visualização de Jays azuis no topo de Mt. Rainier esta semana 
+**Assunto:** [OBSERVAÇÃODEPÁSSAROS] Belo exemplo de gaios azuis no topo do Monte Rainier esta semana 
   
-Qualquer pessoa deseja fazer o check-out da exibição desta semana de Mt. Rainier?
+Alguém quer conferir esta semana a vista do Monte Rainier?
   
 ---
   
-Essa mensagem foi enviada para a lista de discussão do birdwatchers. Você pode cancelar a assinatura a qualquer momento.
+Esta mensagem foi enviada para a lista de discussão de Observação de Pássaros. Você pode cancelar a assinatura a qualquer momento.
   
-No acima, a mensagem repetida tem o mesmo de: Address (User @ contoso.com), mas a mensagem original foi modificada adicionando uma marca à linha de assunto e um rodapé à parte inferior da mensagem. Esse tipo de modificação de mensagem é comum nas listas de endereçamento e pode resultar em falsos positivos.
+No exemplo acima, a mensagem repetida tem o mesmo endereço De: (usuario @ contoso.com), mas a mensagem original foi modificada com a adição de uma marca à linha Assunto e um rodapé à parte inferior da mensagem. Esse tipo de modificação de mensagem é comum em listas de discussão e pode resultar em falsos positivos.
   
-Se você ou alguém da sua organização for um administrador da lista de endereçamento, você poderá configurá-lo para passar por verificações anti-falsificação.
+Se você ou alguém de sua organização for um administrador de lista de discussão, você poderá configurá-la para aprovação em verificações antifalsificação.
   
-- Verificar as perguntas FREQUENTEs em DMARC.org: [eu opere uma lista de endereçamento e desejo interoperar com o DMARC, o que devo fazer?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
+- Confira as perguntas frequentes em DMARC.org: [Opero uma lista de discussão e quero interoperar com o DMARC. O que devo fazer?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
 
-- Leia as instruções nesta postagem de blog: [uma dica para que os operadores de lista de endereçamento interoperem com o DMARC para evitar falhas](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
+- Leia as instruções nesta postagem do blog: [Uma dica para operadores de listas de discussão interoperarem com o DMARC para evitar falhas](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
 
-- Considere instalar atualizações no servidor de lista de endereçamento para dar suporte ao arco, consulte[https://arc-spec.org](https://arc-spec.org/)
+- Considere a instalação de atualizações em seu servidor de lista de discussão para dar suporte ao ARC. Veja [https://arc-spec.org](https://arc-spec.org/)
 
-Se você não tem a propriedade da lista de endereçamento:
+Se você não é proprietário da propriedade da lista de discussão:
   
-- Você pode solicitar o mantenedor da lista de endereçamento para implementar uma das opções acima (elas também devem ter a autenticação de email configurada para o domínio para o qual a lista de endereçamento é retransmitida)
+- Você pode solicitar ao mantenedor da lista de discussão que implemente uma das opções acima (ele também deve configurar a autenticação de email para o domínio do qual a lista de discussão está sendo retransmitida)
 
-- Você pode criar regras de caixa de correio em seu cliente de email para mover mensagens para a caixa de entrada. Você também pode solicitar que os administradores da sua organização configurem regras de permissão ou substituições conforme discutido na seção Gerenciando remetentes legítimos que estão enviando emails não autenticados
+- Você pode criar regras de caixa de correio em seu cliente de email para mover mensagens para a Caixa de Entrada. Você também pode solicitar que os administradores de sua organização configurem regras de permissão ou substituições, conforme discutido na seção Gerenciar remetentes legítimos que estão enviando emails não autenticados
 
-- Você pode criar um tíquete de suporte com o Office 365 para criar uma substituição para a lista de endereçamento para tratá-la como legítima
+- Você pode criar um tíquete de suporte com o Office 365 para criar uma substituição para a lista de distribuição a fim de tratá-la como legítima
 
 ### <a name="other-scenarios"></a>Outros cenários
 
-1. Se nenhum dos cenários comuns acima se aplica à sua situação, relate a mensagem como um falso positivo de volta para a Microsoft. Para obter mais informações, consulte a seção [como posso relatar spam ou mensagens que não são spam de volta para a Microsoft?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) mais adiante neste artigo. 
+1. Se nenhum dos cenários comuns acima se aplicar à sua situação, relate a mensagem como um falso positivo para a Microsoft. Para obter mais informações, confira a seção [Como relatar mensagens de spam ou não spam à Microsoft?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) mais adiante neste artigo. 
 
-2. Você também pode entrar em contato com seu administrador de email que pode ser gerado como um tíquete de suporte com a Microsoft. A equipe de engenharia da Microsoft investigará por que a mensagem foi marcada como falsa.
+2. Você também pode entrar em contato com seu administrador de email, que pode criar um tíquete de suporte na Microsoft. A equipe de engenharia da Microsoft investigará por que a mensagem foi marcada como uma falsificação.
 
-3. Além disso, se você souber quem é o remetente e tiver certeza de que eles não estão sendo falsificados de forma mal-intencionada, você poderá responder ao remetente, indicando que eles estão enviando mensagens de um servidor de email que não é autenticado. Às vezes, isso resulta no remetente original contatando seu administrador de ti, que configurará os registros de autenticação de email necessários.
+3. Além disso, se você souber quem é o remetente e tiver certeza de que ele não está sendo falsificado de forma mal-intencionada, poderá responder ao remetente para indicar que ele está enviando mensagens de um servidor de email que não está autenticado. Às vezes isso faz com que o remetente original entre em contato com o administrador de TI, que configurará os registros de autenticação de email necessários.
   
-Quando remetentes suficientes respondem a proprietários de domínio que devem configurar registros de autenticação de email, ele os Spurs a realizar ações. Embora a Microsoft também funcione com proprietários de domínio para publicar os registros necessários, ajuda ainda mais quando usuários individuais o solicitam.
+Quando um número suficiente de remetentes responde aos proprietários do domínio que devem configurar registros de autenticação de email, isso os incentiva a agir. Embora a Microsoft também trabalhe com proprietários de domínio para publicar os registros necessários, é ainda mais eficaz quando usuários individuais solicitam isso.
 
-4. Opcionalmente, adicione o remetente à sua lista de remetentes seguros. No enTanto, lembre-se de que, se um phishing falsificar essa conta, ele será entregue à sua caixa de correio. Portanto, essa opção deve ser usada com moderação.
+4. Opcionalmente, adicione o remetente à sua lista de Remetentes Confiáveis. No entanto, lembre-se de que, se um phisher falsificar essa conta, ela será entregue em sua caixa postal. Portanto, essa opção deve ser usada com moderação.
 
-## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Como os remetentes da Microsoft devem se preparar para a proteção contra falsificação
+## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Como os remetentes para a Microsoft devem se preparar para proteção antifalsificação
 
-Se você for um administrador que envia mensagens no momento para a Microsoft, o Office 365 ou o Outlook.com, verifique se o seu email está autenticado corretamente caso contrário, ele pode ser marcado como spam ou phishing.
+Se você é um administrador que atualmente envia mensagens para a Microsoft, para o Office 365 ou o Outlook.com, deve garantir que seu email esteja devidamente autenticado. Caso contrário, ele poderá ser marcado como spam ou phishing.
   
 ### <a name="customers-of-office-365"></a>Clientes do Office 365
 
 Se você é um cliente do Office 365 e usa o Office 365 para enviar emails de saída:
   
-- Para seus domínios, [Configure o SPF no Office 365 para ajudar a impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Para seus domínios, [Configure o SPF no Office 365 para impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- Para seus domínios primários, [use DKIM para validar emails de saída enviados do seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
+- Para seus domínios primários, [Use o DKIM para validar emails de saída enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
 
-- [Considere configurar registros do DMARC](use-dmarc-to-validate-email.md) para o seu domínio para determinar quem são seus remetentes legítimos
+- [Considere a configuração de registros DMARC](use-dmarc-to-validate-email.md) para seu domínio a fim de determinar quem são seus remetentes legítimos
 
-A Microsoft não fornece diretrizes de implementação detalhadas para cada SPF, DKIM e DMARC. No enTanto, há muitas informações publicadas online. Há também empresas de terceiros dedicadas para ajudar sua organização a configurar registros de autenticação de email.
+A Microsoft não fornece diretrizes de implementação detalhadas para SPF, DKIM e DMARC. No entanto, há muitas informações publicadas online. Também há empresas de terceiros dedicadas a ajudar sua organização a configurar registros de autenticação de email.
   
 ### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>Administradores de domínios que não são clientes do Office 365
 
-Se você for um administrador de domínio, mas não for um cliente do Office 365:
+Se você é um administrador de domínio, mas não é cliente do Office 365:
   
-- Você deve configurar o SPF para publicar os endereços IP de envio do seu domínio e também configurar o DKIM (se disponível) para assinar mensagens digitalmente. Você também pode considerar configurar registros do DMARC.
+- Você deve configurar o SPF para publicar os endereços IP de envio de seu domínio e também configurar o DKIM (se disponível) para assinar digitalmente as mensagens. Você também pode considerar a configuração de registros DMARC.
 
-- Se você tiver remetentes em massa que transmitam emails em seu nome, você deve trabalhar com eles para enviar emails de forma que o domínio de envio no endereço de: (se ele pertencer a você) se alinhe com o domínio que passa SPF ou DMARC.
+- Se você tiver remetentes em massa que transmitem emails em seu nome, trabalhe com eles para enviar emails de forma que o domínio de envio no endereço De: (se pertencer a você) esteja alinhado ao domínio aprovado por SPF ou DMARC.
 
-- Se você tiver servidores de email locais, ou enviar de um provedor de software como de serviço ou de um serviço de hospedagem na nuvem, como o Microsoft Azure, GoDaddy, Rackspace, serviços Web da Amazon ou similares, verifique se eles foram adicionados ao seu registro SPF.
+- Se você tiver servidores de email locais, enviar de um provedor de software como um serviço ou de um serviço de hospedagem na nuvem como Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services ou semelhante, garanta que eles sejam adicionado ao registro SPF.
 
-- Se você for um domínio pequeno hospedado por um provedor de Internet, deverá configurar o registro SPF de acordo com as instruções fornecidas pelo provedor de Internet. A maioria dos ISPs fornece esses tipos de instruções e pode ser encontrada nas páginas de suporte da empresa.
+- Se você é um pequeno domínio hospedado por um ISP, deve configurar seu registro SPF de acordo com as instruções fornecidas pelo ISP. A maioria dos ISPs fornece esses tipos de instruções, e elas podem ser encontradas nas páginas de suporte da empresa.
 
-- Mesmo que você não precise publicar registros de autenticação de email antes e funcionou bem, ainda deve publicar os registros de autenticação de email a serem enviados para a Microsoft. Fazendo isso, você está ajudando a lutar contra phishing e reduzindo a possibilidade de que você ou as organizações que você envia, serão enfeitas.
+- Mesmo que você não tenha precisado publicar registros de autenticação de email antes e isso tenha funcionado bem, ainda deverá publicar registros de autenticação de email para enviar à Microsoft. Fazendo isso, você ajuda na luta contra o phishing e reduz a possibilidade de que você ou organizações para as quais envia sejam afetados por phishing.
 
 ### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>E se você não souber quem envia emails como seu domínio?
 
-Muitos domínios não publicam registros SPF porque não sabem quem todos os remetentes estão. Tudo bem, você não precisa saber quem são todos eles. Em vez disso, você deve começar publicando um registro SPF para aqueles que você conhece, especialmente onde o tráfego corporativo está localizado e publicar uma política SPF neutra,? All:
+Muitos domínios não publicam registros SPF porque não sabem quem são todos os seus remetentes. Não há problemas. Você não precisa saber quem são todos eles. Em vez disso, você deve começar publicando um registro SPF para aqueles que conhece, especialmente onde o tráfego corporativo está localizado, e publicar uma política de SPF neutra, ?all:
   
-example.com em TXT "v = spf1 inclui include. example. com? All"
+example.com IN TXT "v=spf1 include:spf.example.com ?all"
   
-A política de SPF neutra significa que qualquer email que saia da infraestrutura corporativa transmitirá a autenticação de email em todos os outros receptores de email. Os emails provenientes de remetentes que você não conhece serão reproduzidos em neutro, o que é quase o mesmo que publicar nenhum registro SPF.
+A política de SPF neutra significa que qualquer email que saia de sua infraestrutura corporativa passará pela autenticação de email em todos os outros destinatários de email. O email proveniente de remetentes que você não conhece retornará ao nível neutro, o que é quase o mesmo que não publicar um registro SPF.
   
-Ao enviar para o Office 365, os emails provenientes do seu tráfego corporativo serão marcados como autenticados, mas o email proveniente de fontes que você não sabe que ainda pode ser marcado como falso (dependendo se o Office 365 pode ou não ser autenticado implicitamente). No enTanto, ainda é uma melhoria de todos os emails que estão sendo marcados como falsificados pelo Office 365.
+Ao enviar para o Office 365, os emails provenientes de seu tráfego corporativo serão marcados como autenticados, mas os emails provenientes de fontes que você não conhece ainda poderão ser marcados como falsificados (dependendo de o Office 365 poder autenticá-los implicitamente ou não). No entanto, isso ainda é uma melhoria em relação à situação em que todos os emails são marcados como falsificação pelo Office 365.
   
-Depois de começar a usar um registro SPF com uma política de fallback de? tudo, você pode incluir mais e mais infraestrutura de envio e, em seguida, publicar uma política mais estrita. 
+Após começar a usar um registro SPF com a política de fallback ?all, você pode gradualmente incluir mais infraestrutura de envio e publicar uma política mais rígida. 
   
-### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>E se você for o proprietário de uma lista de endereçamento?
+### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>E se você for o proprietário de uma lista de discussão?
 
-Consulte a seção [cenários comuns de #2 de discussão](#common-scenario-2---discussion-lists).
+Confira a seção [Cenário comum nº 2 ‒ listas de discussão](#common-scenario-2---discussion-lists).
   
-### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>E se você for um provedor de infra-estrutura, como um provedor de serviços de Internet (ISP), provedor de serviços de email (ESP) ou serviço de hospedagem na nuvem?
+### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>E se você for um provedor de infraestrutura, como um ISP (Provedor de Serviços de Internet), um ESP (Provedor de Serviços de Email) ou um serviço de hospedagem na nuvem?
 
-Se você hospedar o email de um domínio e ele enviar emails ou fornecer infraestrutura de hospedagem que possa enviar emails, faça o seguinte:
+Se você hospedar o email de um domínio, e ele enviar um email ou fornecer uma infraestrutura de hospedagem que possa enviar emails, faça o seguinte:
   
-- Garantir que seus clientes tenham documentação detalhando o que publicar em seus registros SPF
+- Garanta que seus clientes tenham a documentação com detalhes sobre o que publicar nos registros SPF
 
-- Considere assinar DKIM em email de saída, mesmo que o cliente não o configure explicitamente (assine com um domínio padrão). Você pode até assinar de forma dupla o email com assinaturas do DKIM (uma vez com o domínio do cliente, caso o tenha configurado e uma segunda vez com a assinatura do DKIM da sua empresa)
+- Considere a inclusão de assinaturas DKIM nos emails de saída, mesmo que o cliente não os configure explicitamente (assine com um domínio padrão). Você pode até mesmo assinar duplamente o email com assinaturas DKIM (uma vez com o domínio do cliente, se ele estiver configurado, e uma segunda vez com a assinatura DKIM de sua empresa)
 
-A entrega da Microsoft não é garantida, mesmo se você autenticar emails originários de sua plataforma, mas pelo menos ele garantirá que a Microsoft não envie lixo eletrônico por não ser autenticado. Para obter mais detalhes sobre como o Outlook.com filtra emails, consulte a [página postmaster do Outlook.com](https://postmaster.live.com/pm/postmaster.aspx).
+A capacidade de entrega para a Microsoft não é garantida, mesmo que você autentique emails originados de sua plataforma, mas pelo menos isso garante que a Microsoft não marque seu email como lixo eletrônico porque ele não está autenticado. Para obter mais detalhes sobre como o Outlook.com filtra os emails, confira a [Página Postmaster do Outlook.com](https://postmaster.live.com/pm/postmaster.aspx).
   
-Para obter mais detalhes sobre as práticas recomendadas de provedores de serviços, consulte [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Para obter mais detalhes sobre as práticas recomendadas dos provedores de serviços, confira [Práticas recomendadas de mensagens móveis do M3AAWG para provedores de serviços](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
   
 ## <a name="frequently-asked-questions"></a>Perguntas Frequentes
 
 ### <a name="why-is-microsoft-making-this-change"></a>Por que a Microsoft está fazendo essa alteração?
 
-Devido ao impacto de ataques de phishing, e como a autenticação de emails esteve por mais de 15 anos, a Microsoft acredita que o risco de continuar a permitir emails não autenticados é maior do que o risco de perder emails legítimos.
+Devido ao impacto de ataques de phishing e porque a autenticação de email existe há mais de 15 anos, a Microsoft acredita que o risco de continuar a permitir emails não autenticados é maior do que o risco de perder emails legítimos.
   
-### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Essa alteração fará com que os emails legítimos sejam marcados como spam?
+### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Essa alteração fará com que emails legítimos sejam marcados como spam?
 
-Em primeiro lugar, haverá algumas mensagens marcadas como spam. No enTanto, ao longo do tempo, os remetentes serão ajustados e a quantidade de mensagens intituladas informadamente como falsificada será insignificante para a maioria dos caminhos de email.
+Inicialmente, algumas mensagens serão marcadas como spam. No entanto, com o tempo, os remetentes se ajustarão e, em seguida, a quantidade de mensagens rotuladas incorretamente como falsificadas será insignificante para a maioria dos caminhos de email.
   
-A própria Microsoft primeiro adotou este recurso várias semanas antes de implantá-lo para o restante de seus clientes. Enquanto houve interrupção no primeiro lugar, ela recusou gradualmente.
+A própria Microsoft adotou esse recurso várias semanas antes de implantá-lo no restante de seus clientes. Embora tenha havido dificuldades no início, elas diminuíram gradualmente.
   
-### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>A Microsoft trará esse recurso para os clientes do Outlook.com e de proteção contra ameaças não avançados do Office 365?
+### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>A Microsoft levará esse recurso para o Outlook.com e clientes que não tenham a Proteção Avançada contra Ameaças do Office 365?
 
-A tecnologia antifalsificação da Microsoft foi inicialmente implantada em suas organizações que possuíam uma assinatura do Office 365 Enterprise E5 ou compraram o complemento do Office 365 Advanced Threat Protection (ATP) para sua assinatura. A partir de outubro de 2018, estendemos a proteção para organizações que também têm o Exchange Online Protection (EOP). No futuro, poderemos liberá-lo para o Outlook.com. No enTanto, se isso ocorrer, pode haver alguns recursos que não são aplicados, como relatórios e substituições personalizadas.
+A tecnologia antifalsificação da Microsoft foi implantada inicialmente nas organizações da empresa que tinham uma assinatura do Office 365 Enterprise E5 ou que tinham o complemento ATP (Proteção Avançada contra Ameaças) do Office 365 na assinatura. Desde outubro de 2018, estendemos a proteção para organizações que também têm a EOP (Proteção do Exchange Online). No futuro, podemos lançá-la para o Outlook.com. No entanto, se fizermos isso, alguns recursos poderão não ser aplicados, como relatórios e substituições personalizadas.
   
-### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Como posso relatar spam ou mensagens que não são spam de volta para a Microsoft?
+### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Como relatar mensagens de spam ou não spam para a Microsoft?
 
-Você pode usar o [suplemento de mensagem de relatório para o Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), ou se ele não estiver instalado, [enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
+Você pode usar o [Suplemento para Relatar Mensagens para o Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, se não estiver instalado, [Enviar mensagens de spam, não spam e de phishing à Microsoft para análise](https://technet.microsoft.com/pt-BR/library/jj200769%28v=exchg.150%29.aspx).
   
-### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sou um administrador de domínio que não sabe quem todos os meus remetentes estão!
+### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sou um administrador de domínio que não sabe quem são todos os meus remetentes!
 
-Confira [os administradores de domínios que não são clientes do Office 365](#administrators-of-domains-that-are-not-office-365-customers).
+Confira [Administradores de domínios que não são clientes do Office 365](#administrators-of-domains-that-are-not-office-365-customers).
   
-### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>O que acontece se eu desabilitar a proteção contra falsificação para minha organização, mesmo que o Office 365 seja meu filtro primário?
+### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>O que acontecerá se eu desabilitar a proteção antifalsificação em minha organização, mesmo que o Office 365 seja meu filtro principal?
 
-Não recomendamos isso, pois você ficará exposto a mensagens de phishing e spam perdidas. Nem todo phishing é falsificado, e nem todos os spoofs serão perdidos. No enTanto, o risco será maior do que um cliente que habilite a anti-falsificação.
+Não recomendamos isso porque você será exposto a mais mensagens de phishing e spam. Nem todos os tipos de phishing são falsificações, e nem todas as falsificações serão ignoradas. No entanto, seu risco será maior do que um cliente que habilita a antifalsificação.
   
-### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Habilitar a proteção contra falsificação significa que eu será protegido contra todos os phishing?
+### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>A habilitação da proteção antifalsificação significa que ficarei protegido contra todos os tipos de phishing?
 
-Infelizmente, não, como os phishers se adaptarão ao uso de outras técnicas, como contas comprometidas, ou a configuração de contas de serviços gratuitos. No enTanto, a proteção anti-phishing funciona muito melhor para detectar esses outros tipos de métodos de phishing, pois as camadas de proteção do Office 365 são projetadas juntas e se baseiam.
+Infelizmente, não, porque os phishers vão se adaptar para usar outras técnicas, como contas comprometidas, ou vão configurar contas de serviços gratuitos. No entanto, a proteção antiphishing funciona muito melhor para detectar esses outros tipos de métodos de phishing porque as camadas de proteção do Office 365 são projetadas para trabalhar juntas e auxiliar umas às outras.
   
-### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>Outros destinatários de email grandes bloqueiam emails não autenticados?
+### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>Outros grandes receptores de email bloqueiam emails não autenticados?
 
-Quase todos os grandes receptores de emails implementam SPF, DKIM e DMARC tradicionais. Alguns receptores têm outras verificações que são mais estritas do que apenas esses padrões, mas poucos vão para o Office 365 bloquear emails não autenticados e tratá-los como falsificados. No enTanto, a maior parte do setor está se tornando cada vez mais estrita sobre esse tipo específico de email, particularmente por causa do problema de phishing.
+Quase todos os grandes receptores de email implementam SPF, DKIM e DMARC tradicionais. Alguns receptores têm outras verificações que são mais rigorosas do que apenas esses padrões, mas poucos chegam ao mesmo nível que o Office 365 para bloquear emails não autenticados e tratá-los como uma falsificação. No entanto, a maior parte do setor está se tornando cada vez mais rigorosa em relação a esse tipo específico de email, principalmente devido ao problema de phishing.
   
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Ainda precisará da opção de filtragem de spam avançada habilitada para "falha de hardware SPF" se habilitar a antifalsificação?
+### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Ainda precisarei ter a opção Filtragem de Spam Avançada habilitada para "Falha Irrecuperável de FPS" se eu habilitar a antifalsificação?
 
-Não, essa opção não é mais necessária porque o recurso antifalsificação não apenas considera a falha do SPF, mas um conjunto muito mais amplo de critérios. Se você tiver o antifalsificação habilitado e a opção de falha de hardware SPF habilitada, provavelmente receberá mais falsos positivos. Recomendamos desabilitar esse recurso, pois ele não forneceria quase nenhuma armadilha adicional para spam ou phishing e, em vez disso, geraria a maioria dos falsos positivos.
+Não, essa opção não é mais necessária porque o recurso antifalsificação não considera apenas as falhas graves de SPF, mas um conjunto muito mais amplo de critérios. Se você tiver antifalsificação e a opção Falha Irrecuperável de FPS habilitadas, provavelmente obterá mais falsos positivos. Recomendamos desabilitar esse recurso porque ele não fornece quase nenhuma captura adicional de spam ou phishing, e gera principalmente falsos positivos.
   
-### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>A ajuda do esquema de reconfiguração do remetente (SRS) corrige emails encaminhados?
+### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>O SRS (Esquema de Reescrita de Remetente) ajuda a corrigir o email encaminhado?
 
-O SRS apenas corrige o problema de email encaminhado. Ao reescrever o email SMTP de, o SRS pode garantir que a mensagem encaminhada passe SPF no próximo destino. No enTanto, como a antifalsificação se baseia no endereço de: em combinação com o domínio de assinatura de email ou de DKIM (ou outros sinais), não é suficiente impedir que emails encaminhados sejam marcados como falsificados.
+O SRS corrige apenas parcialmente o problema dos emails encaminhados. Reescrevendo SMTP MAIL FROM, o SRS pode garantir que a mensagem encaminhada seja aprovada no SPF no próximo destino. No entanto, como a antifalsificação é baseada no endereço De: em combinação com o domínio de assinatura MAIL FROM ou DKIM (ou outros sinais), não é suficiente para impedir que emails encaminhados sejam marcados como falsificados.

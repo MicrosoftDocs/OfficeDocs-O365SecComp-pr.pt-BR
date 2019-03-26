@@ -1,5 +1,5 @@
 ---
-title: Encontre e investigue emails mal-intencionados que foram entregues (inteligência de ameaças do Office 365)
+title: Encontre e investigue emails mal-intencionados que foram fornecidos (investigação de ameaças e resposta do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692450"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732244"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Encontre e investigue emails mal-intencionados que foram entregues (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Verifique se os seguintes requisitos são atendidos:
     
 - O [log de auditoria do Office 365](turn-audit-log-search-on-or-off.md) está ativado para sua organização. 
     
-- Sua organização tem políticas definidas para antispam, anti-malware, anti-phishing e assim por diante. Consulte [Gerenciamento de ameaças no centro de conformidade &amp; de segurança do Office 365](threat-management.md).
+- Sua organização tem políticas definidas para antispam, anti-malware, anti-phishing e assim por diante. ConFira [proteção avançada contra ameaças do Office 365](office-365-atp.md).
     
 - Você é um administrador global do Office 365 ou tem o administrador de segurança ou a função de pesquisa e limpeza atribuída no centro de &amp; conformidade de segurança. Consulte [permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
     
