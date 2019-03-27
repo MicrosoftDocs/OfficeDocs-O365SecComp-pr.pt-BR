@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine se sua organização implementará os rótulos como parte do plano do RGPD.
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789436"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800293"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Desenvolver um esquema de classificação para dados pessoais
 
@@ -43,7 +43,7 @@ Selecione uma das opções a seguir.
 
 -   Eles trabalham com regras de DLP (assim como os rótulos do Office).
 
--   No futuro, eles funcionarão com o Cloud App Security e será possível detectar informações confidenciais em outros aplicativos SaaS.
+-   Tipos de informações confidenciais funcionam com Segurança de aplicativos de nuvem, assim será possível detectar informações confidenciais em outros aplicativos SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opção 2: usar os tipos de informações confidenciais + rótulos de retenção
 
