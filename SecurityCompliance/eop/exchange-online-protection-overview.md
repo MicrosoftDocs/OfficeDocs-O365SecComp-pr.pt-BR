@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens.
-ms.openlocfilehash: e639b1185d75959061163b5391cf046bc789e3c4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693520"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899940"
 ---
 # <a name="exchange-online-protection-overview"></a>Visão geral do Exchange Online Protection
 
@@ -77,8 +77,6 @@ Se você já comprou o EOP, consulte [Configurar seu serviço EOP](set-up-your-e
 ## <a name="for-more-information"></a>Para obter mais informações
 
 [Recursos EOP](eop-features.md)
-  
-[Vídeos de introdução ao EOP](videos-for-getting-started-with-eop.md)
   
 [Perguntas frequentes gerais sobre o EOP](eop-general-faq.md)
   

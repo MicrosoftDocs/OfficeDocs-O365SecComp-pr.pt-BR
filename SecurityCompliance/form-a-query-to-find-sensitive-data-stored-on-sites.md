@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir documentos que contêm dados confidenciais em todo o locatário. Após descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para procurar dados confidenciais.
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639128"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900050"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Criar uma consulta para encontrar dados confidenciais armazenados em sites
 
@@ -53,7 +53,7 @@ Finalmente, intervalo de confiança é o nível de confiança a que o tipo confi
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Propriedades de pesquisa e operadores de consulta adicionais disponíveis no Centro de Descoberta Eletrônica
 
-DLP no SharePoint também apresenta a propriedade LastSensitiveContentScan, que pode ajudá-lo a Pesquisar arquivos verificados dentro de um período específico. Para obter exemplos de consulta `LastSensitiveContentScan` com a propriedade, consulte os [exemplos de consultas complexas](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) na próxima seção. 
+DLP no SharePoint também apresenta a propriedade LastSensitiveContentScan, que pode ajudá-lo a Pesquisar arquivos verificados dentro de um período específico. Para obter exemplos de consulta `LastSensitiveContentScan` com a propriedade, consulte os [exemplos de consultas complexas](#examples-of-complex-queries) na próxima seção. 
   
 Você pode usar não apenas propriedades específicas de DLP para criar uma consulta, mas também Propriedades de pesquisa de descoberta eletrônica do `Author` SharePoint `FileExtension`padrão, como ou. Você pode usar operadores para criar consultas complexas. Para obter a lista de propriedades e operadores disponíveis, consulte o [usando as propriedades de pesquisa e os operadores com](https://go.microsoft.com/fwlink/?LinkId=510093) postagem do blog de descoberta eletrônica. 
   

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: O RGPD fornece aos seus dados pessoais direitos específicos da UE (chamados de dados). esses direitos incluem a obtenção de cópias dele, a solicitação de alterações, a restrição do processamento dele, a exclusão ou o recebimento de um formato eletrônico. Uma solicitação formal por um assunto de dados para realizar uma ação em seus dados pessoais é chamada de solicitação de entidade de dados ou DSR. Você pode usar casos de DSR no centro de conformidade &amp; de segurança do Office 365 para gerenciar as investigações de DSR da sua organização.
-ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296584"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900140"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no &amp; centro de conformidade de segurança do Office 365
 
@@ -56,7 +56,7 @@ Usando a ferramenta de ocorrência de DSR, você pode:
     
 Este é o processo de alto nível para usar a ferramenta de caso DSR para gerenciar investigações de DSR:
   
-[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Etapa 2: criar uma ocorrência de DSR e adicionar membros](#step-2-create-a-dsr-case-and-add-members)
 
@@ -103,9 +103,9 @@ A próxima etapa é criar um caso DSR. Ao criar um caso, você pode optar por in
   
     Neste ponto, você pode executar uma das seguintes ações:
     
-    a. clicar em **Mostrar resultados da pesquisa** inicia a pesquisa. Esta é a seleção padrão. A pesquisa interna executada quando você seleciona essa opção e os resultados retornados são discutidos na etapa 3.
+    a. Clicar em **Mostrar resultados de pesquisa** iniciará a pesquisa. Esta é a seleção padrão. A pesquisa interna executada quando você seleciona essa opção e os resultados retornados são discutidos na etapa 3.
     
-    b. o clique em **concluir** fecha o novo caso do DSR sem iniciar a pesquisa interna. Quando você seleciona essa opção, a nova ocorrência de DSR é exibida na página **solicitações de entidades de dados** .
+    b. Clicar em **concluir** fecha o novo caso DSR sem iniciar a pesquisa interna. Quando você seleciona essa opção, a nova ocorrência de DSR é exibida na página **solicitações de entidades de dados** .
     
 6. Clique em **concluir** para que você possa ir para o novo caso de DSR e adicionar membros a ele. 
     
@@ -172,9 +172,6 @@ Quando você exporta os resultados da pesquisa, os itens da caixa de correio pod
 O computador que você usa para exportar dados precisa atender aos seguintes requisitos de sistema:
   
 - Versões de 32 e 64 bits do Windows 7 e versões posteriores
-
-
-
     
 - Microsoft .NET Framework 4,7
     
@@ -201,9 +198,9 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
     
     ![Definir as configurações de exportação](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    a. em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados. O motivo pelo qual você não deseja exportar itens parcialmente indexados da pesquisa interna é porque itens parcialmente indexados de outros usuários serão exportados. Para exportar apenas os itens parcialmente indexados para o assunto dos dados, recomendamos que você crie uma pesquisa separada. Para obter mais informações, consulte exPortando [itens parcialmente indexados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) na seção "mais informações sobre como usar a ferramenta de caso DSR".
+    a. Em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados. O motivo pelo qual você não deseja exportar itens parcialmente indexados da pesquisa interna é porque itens parcialmente indexados de outros usuários serão exportados. Para exportar apenas os itens parcialmente indexados para o assunto dos dados, recomendamos que você crie uma pesquisa separada. Para obter mais informações, consulte exPortando [itens parcialmente indexados](#exporting-partially-indexed-items) na seção "mais informações sobre como usar a ferramenta de caso DSR".
     
-    b. em **exportar conteúdo do Exchange como**, selecione a terceira opção, **um arquivo PST contendo todas as mensagens em uma única pasta**. Como alguns dos resultados podem ser para itens originados na caixa de correio de outro usuário, essa opção apenas lista o item em uma única pasta sem indicar a caixa de correio real e é a melhor opção para usar quando você elimina a duplicação dos resultados, conforme recomendado no próximo item . Essa opção também permite que o assunto dos dados revise itens em ordem cronológica (os itens são classificados por data de envio) sem precisar navegar na estrutura de pastas da caixa de correio original de cada item.
+    b. Em **exportar conteúdo do Exchange como**, selecione a terceira opção, **um arquivo PST contendo todas as mensagens em uma única pasta**. Como alguns dos resultados podem ser para itens originados na caixa de correio de outro usuário, essa opção apenas lista o item em uma única pasta sem indicar a caixa de correio real e é a melhor opção para usar quando você elimina a duplicação dos resultados, conforme recomendado no próximo item . Essa opção também permite que o assunto dos dados revise itens em ordem cronológica (os itens são classificados por data de envio) sem precisar navegar na estrutura de pastas da caixa de correio original de cada item.
     
     c. Selecione **habilitar opção de eliminação de duplicação** para excluir mensagens de email duplicadas. Recomendamos esta opção porque a pesquisa interna pesquisa todas as caixas de correio em sua organização. Portanto, se várias cópias da mesma mensagem forem encontradas nas caixas de correio que foram pesquisadas, essa opção significará que apenas uma cópia de uma mensagem será exportada. Essa opção, juntas, a exportação de mensagens em um arquivo PST em uma única pasta resulta na melhor experiência do usuário para solicitações de exportação de DSR. Observe que o relatório de exportação Results. csv listará todos os locais onde as mensagens duplicadas foram encontradas.
     
@@ -217,7 +214,7 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
     
 7. Clique no trabalho de exportação que você acabou de criar para exibir a página de submenu exportar. Esta página mostra informações sobre a pesquisa, como o tamanho e o número total de itens a serem exportados, e a porcentagem dos itens que foram transferidos para uma área de armazenamento do Azure. Clique em **Atualizar** para atualizar as informações de status de carregamento. 
     
-8. Em **chave de exportação**, clique em **copiar para área de transferência**. Você usará essa chave na etapa 11 para baixar os resultados da pesquisa.
+8. Em **Exportar chave**, clique em **Copiar para a área de transferência**. Você usará essa chave na etapa 11 para baixar os resultados da pesquisa.
     
 9. Clique ![em exportar resultados de](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) pesquisa ícone **baixar resultados** na parte superior da página de submenu exportar. 
     
@@ -232,13 +229,13 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
   
 13. Clique em **Iniciar** para baixar os resultados da pesquisa em seu computador. 
     
-    A **ferramenta de exportação de descoberta eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. Para obter mais informações sobre os relatórios que foram incluídos ao baixar os resultados da pesquisa de conteúdo, consulte a seção [mais informações](export-search-results.md#more-information) em "exportar resultados de pesquisa de &amp; conteúdo do centro de conformidade de segurança do Office 365". 
+    A **Ferramenta de Exportação de Descoberta Eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. Para obter mais informações sobre os relatórios que foram incluídos ao baixar os resultados da pesquisa de conteúdo, consulte a seção [mais informações](export-search-results.md#more-information) em "exportar resultados de pesquisa de &amp; conteúdo do centro de conformidade de segurança do Office 365". 
     
 Depois que os dados são exportados, os resultados da pesquisa e os relatórios de exportação estão localizados em uma pasta com o mesmo nome do caso DSR. Os arquivos PST que contêm itens de caixa de correio estão localizados em uma subpasta denominada **Exchange**. Documentos e outros itens de sites estão localizados em uma subpasta denominada **SharePoint**. 
   
 ## <a name="optional-step-5-revise-the-built-in-search-query"></a>Opcion Etapa 5: reVisar a consulta de pesquisa interna
 
-Depois de executar a pesquisa interna, você pode revisá-la para restringir o escopo a retornar menos resultados de pesquisa. Você pode fazer isso adicionando condições à consulta. Uma condição é conectada logicamente à consulta de palavra-chave pelo operador **and** . Isso significa ser retornado nos resultados da pesquisa, os itens devem atender à consulta de palavra-chave e às condições adicionadas. É assim que as condições ajudam a restringir os resultados. Se você adicionar duas ou mais condições exclusivas a uma consulta de pesquisa (condições que especificam propriedades diferentes), essas condições serão conectadas logicamente pelo operador **and** . Isso significa que somente os itens que atendem a todas as condições (além da consulta de palavra-chave) são retornados. Se você adicionar vários valores (separados por vírgulas ou pontos-e-vírgulas) a uma única condição, esses valores serão conectados pelo operador **or** . Isso significa que os itens são retornados se eles contiverem qualquer um dos valores especificados para a propriedade na condição. 
+Depois de executar a pesquisa interna, você pode revisá-la para restringir o escopo a retornar menos resultados de pesquisa. Você pode fazer isso adicionando condições à consulta. Uma condição é conectada logicamente à consulta de palavra-chave pelo operador **and** . Isso significa ser retornado nos resultados da pesquisa, os itens devem atender à consulta de palavra-chave e às condições adicionadas. É assim que as condições ajudam a restringir os resultados. Se você adicionar duas ou mais condições exclusivas a uma consulta de pesquisa (condições que especificam propriedades diferentes), essas condições serão conectadas logicamente pelo operador **and** . Isso significa que somente os itens que atendem a todas as condições (além da consulta de palavra-chave) são retornados. Se você adicionar vários valores (separados por vírgulas ou pontos-e-vírgulas) a uma única condição, esses valores serão conectados pelo operador **or** . Isso significa que os itens serão retornados se contiverem qualquer um dos valores especificados para a propriedade na condição. 
   
 Veja a seguir alguns exemplos de condições que você pode adicionar à consulta de pesquisa interna de um caso DSR. O nome da propriedade real usada em uma consulta de pesquisa é mostrado entre parênteses.
   
@@ -266,11 +263,11 @@ Para modificar os locais de conteúdo para pesquisa:
     
     ![Página Modificar locais do submenu](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    a. a seção alternar em **selecionar tudo** na caixa de correio na parte superior da página do submenu está selecionada, indicando que todas as caixas de correio são pesquisadas. Para restringir o escopo da pesquisa, clique em alternar para desmarcar e, em seguida, clique em **escolher usuários, grupos ou equipes** e escolha caixas de correio específicas para pesquisa.
+    a. A seção alternar em **selecionar tudo** na caixa de correio na parte superior da página do submenu está selecionada, indicando que todas as caixas de correio são pesquisadas. Para restringir o escopo da pesquisa, clique em alternar para desmarcar e, em seguida, clique em **escolher usuários, grupos ou equipes** e escolha caixas de correio específicas para pesquisa.
     
-    b. a opção Alternar em **selecionar tudo** na seção sites no meio da página de submenu está selecionada, indicando que todos os sites são pesquisados. Para restringir a pesquisa a sites selecionados, desmarque a opção Alternar e clique em **escolher sites**. Você terá que adicionar cada site específico que deseja pesquisar, incluindo a conta do OneDrive dos dados da entidade.
+    b. A opção Alternar em **selecionar tudo** na seção sites no meio da página de submenu está selecionada, indicando que todos os sites foram pesquisados. Para restringir a pesquisa a sites selecionados, desmarque a opção Alternar e clique em **escolher sites**. Você terá que adicionar cada site específico que deseja pesquisar, incluindo a conta do OneDrive dos dados da entidade.
     
-    c. a opção Alternar na seção pastas públicas do Exchange está selecionada, o que significa que todas as pastas públicas do Exchange são pesquisadas. Observe que você só pode pesquisar todas as pastas públicas do Exchange ou nenhuma delas. Você não pode escolher os itens específicos para pesquisa.
+    c. A opção Alternar na seção pastas públicas do Exchange está selecionada, o que significa que todas as pastas públicas do Exchange são pesquisadas. Observe que você só pode pesquisar todas as pastas públicas do Exchange ou nenhuma delas. Você não pode escolher os itens específicos para pesquisa.
     
 3. Se você modificar os locais de conteúdo na pesquisa interna, clique em **Salvar &amp; executar** para reiniciar a pesquisa. 
   
@@ -300,10 +297,10 @@ Você pode criar uma pesquisa de conteúdo separada (e associá-la a uma ocorrê
   
 Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os dados são salvos em uma pasta separada para cada aplicativo localizado na pasta **ApplicationDataRoot** , que está em uma pasta que é nome com o endereço de email da entidade de dados. Esses dados são exportados como arquivos JSON, que são arquivos de texto legíveis para pessoas semelhantes aos arquivos XML ou TXT, anexados a mensagens de email. Atualmente, essas pastas são nomeadas com um identificador global exclusivo (GUID) atribuído ao myAnalytics e ao serviço de roaming do Office, que estão listados na tabela a seguir. Em versões futuras da ferramenta de caso DSR, o GUID será substituído pelo nome do aplicativo real. 
   
-|**Aplicativo**|**GUID/nome da pasta**|
+|**Application**|**GUID/nome da pasta**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
-|Serviço de Roaming do Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
+|Serviço de roaming do Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Para pesquisar e exportar dados do serviço de roaming e do Office**
   
@@ -339,11 +336,11 @@ Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os
     
     ![Opções de exportação ao exportar dados de uso do serviço de roaming e do Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-    a. em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados.
+    a. Em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados.
     
-    b. em **exportar conteúdo do Exchange como**, selecione a segunda opção, **um arquivo PST contendo todas as mensagens**.
+    b. Em **exportar conteúdo do Exchange como**, selecione a segunda opção, **um arquivo PST contendo todas as mensagens**.
     
-    c. deixe desmarcadas as opções de exportação restantes.
+    c. Deixe as opções de exportação restantes desmarcadas.
     
 4. Após escolher as configurações de exportação, clique em **Exportar**.
     
@@ -353,7 +350,7 @@ Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os
     
 6. Clique no trabalho de exportação que você acabou de criar para exibir a página de submenu exportar. 
     
-7. Em **chave de exportação**, clique em **copiar para área de transferência**. Você usará essa chave na etapa 10 para baixar os resultados da pesquisa.
+7. Em **Exportar chave**, clique em **Copiar para a área de transferência**. Você usará essa chave na etapa 10 para baixar os resultados da pesquisa.
     
 8. Clique ![em exportar resultados de](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) pesquisa ícone **baixar resultados** na parte superior da página de submenu exportar. 
     
@@ -368,7 +365,7 @@ Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os
   
 12. Clique em **Iniciar** para baixar os resultados da pesquisa em seu computador. 
     
-    A **ferramenta de exportação de descoberta eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá abrir o arquivo PST do Exchange no Outlook e ir até a pasta **ApplicationDataRoot** para acessar as subpastas no myAnalytics e no serviço de roaming. 
+    A **Ferramenta de Exportação de Descoberta Eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá abrir o arquivo PST do Exchange no Outlook e ir até a pasta **ApplicationDataRoot** para acessar as subpastas no myAnalytics e no serviço de roaming. 
     
     Como explicado anteriormente, os arquivos JSON que contêm dados de uso são anexados a mensagens. Para exibir um arquivo JSON, clique em uma mensagem e, em seguida, abra o arquivo JSON anexado. 
   
@@ -428,4 +425,4 @@ Aqui está um processo de alto nível para pesquisar itens que o assunto dos dad
 
   - Pesquisar todas as pastas públicas do Exchange
     
-  - Após executar a pesquisa e concluí-la, você poderá exportar e baixar os resultados da pesquisa (conforme descrito na [etapa 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Use as configurações a seguir para exportar itens parcialmente indexados. 
+  - Após executar a pesquisa e concluí-la, você poderá exportar e baixar os resultados da pesquisa (conforme descrito na [etapa 4](#step-4-export-the-data)). Use as configurações a seguir para exportar itens parcialmente indexados. 

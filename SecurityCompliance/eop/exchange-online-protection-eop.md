@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Veja algumas coisas que você deve estar ciente antes de começar a trabalhar com o EOP.
-ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692320"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900120"
 ---
 # <a name="exchange-online-protection"></a>Proteção do Exchange Online 
 
@@ -23,7 +23,7 @@ Bem-vindo ao serviço de filtragem de email hospedado no Microsoft Proteção do
   
 - Para saber mais sobre o EOP, confira a [Descrição do Exchange Online Protection Service ](https://go.microsoft.com/fwlink/p/?LinkId=320619). Outros recursos úteis são o [Visão geral do Exchange Online Protection](exchange-online-protection-overview.md), [Perguntas frequentes gerais sobre o EOP](eop-general-faq.md) e [Recursos EOP](eop-features.md), além da [página inicial do Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
     
-- Para começar com o EOP, os novos clientes devem dirigir-se ao [Configurar seu serviço EOP](set-up-your-eop-service.md). Este tópico fornece passos que vão ajudá-lo colocar o EOP em funcionamento. Convém também exibir a série de vídeos introdutórios exibida em [Vídeos de introdução ao EOP](videos-for-getting-started-with-eop.md).
+- Para começar com o EOP, os novos clientes devem dirigir-se ao [Configurar seu serviço EOP](set-up-your-eop-service.md). Este tópico fornece passos que vão ajudá-lo colocar o EOP em funcionamento. 
     
 - Se você precisar de mais ajuda ou deseja compartilhar ideias, o [Fórum de EOP](https://go.microsoft.com/fwlink/?LinkId=285351) é um ótimo lugar para começar. 
     
@@ -36,8 +36,6 @@ O conteúdo da Ajuda para administradores do EOP é composta pelas seguintes cat
 - [Visão geral do Exchange Online Protection](exchange-online-protection-overview.md) Apresenta como o EOP funciona e fornece links para informações adicionais. 
     
 - [Recursos EOP](eop-features.md) Fornece uma lista dos recursos que estão disponíveis no EOP. 
-    
-- [Vídeos de introdução ao EOP](videos-for-getting-started-with-eop.md) Apresenta o EOP com uma série de vídeos que detalham tarefas de configuração comuns. 
     
 - [Configurar seu serviço EOP](set-up-your-eop-service.md) Fornece etapas para configurar o seu serviço do EOP e links para informações adicionais. 
     

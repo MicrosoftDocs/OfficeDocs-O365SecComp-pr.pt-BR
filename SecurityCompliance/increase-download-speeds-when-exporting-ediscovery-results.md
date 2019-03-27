@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Saiba como configurar o registro do Windows para aumentar a taxa de transferência de dados ao baixar os resultados da pesquisa e pesquisar dados &amp; do centro de conformidade de segurança do Office 365 e da descoberta eletrônica avançada do Office 365.
-ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ddeb247be6981dbfdb874e270a123e4465914d86
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295424"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899920"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar a velocidade de download ao exportar resultados de pesquisa de descoberta eletrônica do Office 365
 
@@ -52,7 +52,7 @@ Execute o procedimento a seguir no computador que você usará para baixar os re
 6. Você pode repetir as etapas 2-5 para alterar o valor da `DownloadConcurrency` configuração do registro. 
     
     > [!IMPORTANT]
-    > Após criar ou alterar a `DownloadConcurrency` configuração do registro, certifique-se de criar um novo trabalho de exportação ou reinicie um trabalho de exportação existente para os resultados de pesquisa ou os dados que você deseja baixar. Consulte a seção [mais informações](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) para obter mais detalhes. 
+    > Após criar ou alterar a `DownloadConcurrency` configuração do registro, certifique-se de criar um novo trabalho de exportação ou reinicie um trabalho de exportação existente para os resultados de pesquisa ou os dados que você deseja baixar. Consulte a seção [mais informações](#more-information) para obter mais detalhes. 
   
 ## <a name="more-information"></a>Mais informações
 
@@ -66,5 +66,5 @@ Execute o procedimento a seguir no computador que você usará para baixar os re
     
   - [Exportar resultados de pesquisa de conteúdo do centro de &amp; conformidade de segurança do Office 365](export-search-results.md)
     
-  - [Exportar resultados na Descoberta Eletrônica Avançada do Office 365](export-results-in-advanced-ediscovery.md)
+  - [Exportar resultados na descoberta eletrônica avançada do Office 365](export-results-in-advanced-ediscovery.md)
     

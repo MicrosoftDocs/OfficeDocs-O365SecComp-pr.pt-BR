@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando não for mais necessário preservar o conteúdo de uma caixa de correio inativa do Office 365, você poderá excluir permanentemente a caixa de correio inativa, removendo a isenção. Após a remoção da isenção, a caixa de correio inativa é marcada para exclusão e é excluída permanentemente após ser processada.
-ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295734"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899980"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Excluir uma caixa de correio inativa no Office 365
 
-Uma caixa de correio inativa é usada para preservar o email de um funcionário anterior, depois que ele deixa sua organização. Quando não for mais necessário preservar o conteúdo de uma caixa de correio inativa, você poderá excluir permanentemente a caixa de correio inativa, removendo a isenção. Além disso, é possível que várias isenções possam ser colocadas em uma caixa de correio inativa. Por exemplo, uma caixa de correio inativa pode ser colocada em retenção de litígio e em uma ou mais suspensões in-loco. Além disso, uma política de retenção do Office 365 (criada no centro &amp; de conformidade de segurança do Office 365) pode ser aplicada à caixa de correio inativa. Você deve remover todas as retenções e as políticas de retenção do Office 365 de uma caixa de correio inativa para excluí-la. Após remover as políticas de retenção e retenção, a caixa de correio inativa é marcada para exclusão e excluída permanentemente após ser processada.
+Uma caixa de correio inativa é usada para preservar emails de um ex-funcionário depois que ele deixa sua organização. Quando não for mais necessário preservar o conteúdo de uma caixa de correio inativa, você poderá excluir permanentemente a caixa de correio inativa, removendo a isenção. Além disso, é possível que várias isenções possam ser colocadas em uma caixa de correio inativa. Por exemplo, uma caixa de correio inativa pode ser colocada em retenção de litígio e em uma ou mais suspensões in-loco. Além disso, uma política de retenção do Office 365 (criada no centro &amp; de conformidade de segurança do Office 365) pode ser aplicada à caixa de correio inativa. Você deve remover todas as retenções e as políticas de retenção do Office 365 de uma caixa de correio inativa para excluí-la. Após remover as políticas de retenção e retenção, a caixa de correio inativa é marcada para exclusão e excluída permanentemente após ser processada.
   
 > [!IMPORTANT]
 > Adiamos o prazo de 1º de julho de 2017 para criar novos Bloqueios In-loco para tornar uma caixa de correio inativa. Mas no final deste ano ou no início do próximo, você não poderá criar novos Bloqueios In-loco no Exchange Online. Nesse momento, somente retenções de litígio e políticas de retenção do Office 365 poderão ser usadas para criar uma caixa de correio inativa. No entanto, as caixas de correio inativas existentes que estão com Bloqueio In-loco ainda terão suporte, e você poderá continuar a gerenciar Bloqueios In-loco em caixas de correio inativas. Isso inclui a alteração da duração de um Bloqueio In-loco e a exclusão permanente de uma caixa de correio inativa, removendo o Bloqueio In-loco. 
   
-Consulte a seção [mais informações](delete-an-inactive-mailbox.md#moreinfo) para obter uma descrição do que acontece depois que as retenções são removidas de uma caixa de correio inativa. 
+Consulte a seção [mais informações](#more-information) para obter uma descrição do que acontece depois que as retenções são removidas de uma caixa de correio inativa. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa usar o PowerShell do Exchange Online para remover uma retenção de litígio de uma caixa de correio inativa. Você não pode usar o centro de administração do Exchange (Eat). Para obter instruções detalhadas, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Você pode usar o PowerShell do Exchange Online ou o Eat para remover um bloqueio in-loco de uma caixa de correio inativa. 
+- Você precisa usar o PowerShell do Exchange Online para remover uma retenção de litígio de uma caixa de correio inativa. Você não pode usar o Centro de Administração do Exchange (EAC). Para obter instruções detalhadas, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Você pode usar o PowerShell do Exchange Online ou o Eat para remover um bloqueio in-loco de uma caixa de correio inativa. 
     
 - Você pode copiar o conteúdo de uma caixa de correio inativa para outra caixa de correio antes de remover a retenção e excluir uma caixa de correio inativa. Para obter detalhes, consulte [restaurar uma caixa de correio inativa no Office 365](restore-an-inactive-mailbox.md).
     
@@ -97,7 +97,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>Use o Eat para excluir um bloqueio in-loco
 
-1. Se você souber o nome do bloqueio in-loco que deseja excluir, poderá ir para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco que é colocado na caixa de correio inativa que você deseja excluir permanentemente. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](delete-an-inactive-mailbox.md#step1).
+1. Se você souber o nome do bloqueio in-loco que deseja excluir, poderá ir para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco que é colocado na caixa de correio inativa que você deseja excluir permanentemente. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
@@ -115,7 +115,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Usar o PowerShell do Exchange Online para excluir um bloqueio in-loco
 
-1. Crie uma variável que contenha as propriedades do bloqueio in-loco que você deseja excluir. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](delete-an-inactive-mailbox.md#step1).
+1. Crie uma variável que contenha as propriedades do bloqueio in-loco que você deseja excluir. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -135,7 +135,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Use o Eat para remover uma caixa de correio inativa de um bloqueio in-loco
 
-1. Se você souber o nome do bloqueio in-loco colocado na caixa de correio inativa, poderá ir para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco colocado na caixa de correio. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](delete-an-inactive-mailbox.md#step1).
+1. Se você souber o nome do bloqueio in-loco colocado na caixa de correio inativa, poderá ir para a próxima etapa. Caso contrário, execute o seguinte comando para obter o nome do bloqueio in-loco colocado na caixa de correio. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
@@ -149,7 +149,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 5. Na lista de caixas de correio de origem, clique no nome da caixa de correio inativa que você deseja remover e clique em **remover**![remover](media/adf01106-cc79-475c-8673-065371c1897b.gif).
     
-6. Clique em **salvar** para salvar a alteração. Uma mensagem é exibida dizendo que a operação foi concluída com êxito. 
+6. Clique em **Salvar** para salvar a alteração. Uma mensagem é exibida dizendo que a operação foi concluída com êxito. 
     
 7. Repita as etapas 1 a 6 para remover outros bloqueios in-loco colocados na caixa de correio inativa.
     
@@ -157,7 +157,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 Se o bloqueio in-loco contiver um grande número de caixas de correio de origem, é possível que a caixa de correio inativa não seja listada na página **fontes** no Eat. Até 3.000 caixas de correio são exibidas na página **fontes** quando você edita um bloqueio in-loco. Se uma caixa de correio inativa não estiver listada na página **fontes** , você poderá usar o PowerShell do Exchange Online para removê-lo do bloqueio in-loco. 
   
-1. Criar uma variável que contém as propriedades do bloqueio in-loco colocado na caixa de correio inativa. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](delete-an-inactive-mailbox.md#step1).
+1. Criar uma variável que contém as propriedades do bloqueio in-loco colocado na caixa de correio inativa. Use o GUID de bloqueio in-loco obtido na [etapa 1: identificar as isenções em uma caixa de correio inativa](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>

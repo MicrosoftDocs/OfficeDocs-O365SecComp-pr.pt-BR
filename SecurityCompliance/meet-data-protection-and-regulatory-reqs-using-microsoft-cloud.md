@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: O Gerenciador de Conformidade no Portal de Confiança do Serviço Microsoft fornece ferramentas para monitorar, implementar e gerenciar os controles para ajudar sua organização a alcançar a conformidade de acordo com os padrões de segurança e proteção de dados do setor (como RGPD, ISO 27001 e 27018, e HIPAA) quando comparados aos serviços em nuvem da Microsoft, como o Microsoft Azure e o Office 365. O Gerenciador de Conformidade ajuda quem supervisiona a estratégia de privacidade e proteção de dados da sua organização a gerenciar o processo de avaliação de risco e conformidade.
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296834"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900170"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft
 
@@ -385,7 +385,7 @@ Determinadas regulamentações exigem que uma organização deve ser capaz de ex
   
 - [Procurar um usuário](#search-for-a-user)
 
-- [Exportar um relatório do histórico de dados da conta](#export-report-of-account-data-history)
+- [Exportar um relatório do histórico de dados da conta](#export-a-report-of-account-data-history)
 
 - [Reatribuir os itens de ação](#reassign-action-items)
 
@@ -511,9 +511,9 @@ Para adicionar uma avaliação ao Gerenciador de Conformidade:
   
 1. No painel Gerenciador de Conformidade, clique em ![Ícone Adicionar](media/ITPro-EAC-AddIcon.gif) **Adicionar Avaliação**. 
     
-2. Na janela **Adicionar uma Avaliação**, você pode criar um novo grupo ao qual adicionará a avaliação ou pode adicioná-la a um grupo existente (o grupo interno é denominado "Grupo inicial"). Dependendo da opção escolhida, digite o nome do novo grupo ou selecione um grupo existente na lista suspensa. Para saber mais, confira [Agrupamento de avaliações](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
+2. Na janela **Adicionar uma Avaliação**, você pode criar um novo grupo ao qual adicionará a avaliação ou pode adicioná-la a um grupo existente (o grupo interno é denominado "Grupo inicial"). Dependendo da opção escolhida, digite o nome do novo grupo ou selecione um grupo existente na lista suspensa. Para saber mais, confira [Agrupamento de avaliações](#grouping-assessments).
     
-    Se você criar um novo grupo, também tem a opção de copiar informações de um grupo existente para a nova avaliação. Isso significa que as informações adicionadas aos campos Detalhes da implementação, Plano de teste e Resposta de gerenciamento dos controles gerenciados pelo cliente das avaliações do grupo que você está copiando ficarão iguais nos mesmos controles gerenciados pelo cliente (ou relacionados) na nova avaliação. Se você adicionar uma nova avaliação a um grupo existente, as informações comuns das avaliações desse grupo serão copiadas para a nova avaliação. Para saber mais, confira [Copiar informações de avaliações existentes](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying).
+    Se você criar um novo grupo, também tem a opção de copiar informações de um grupo existente para a nova avaliação. Isso significa que as informações adicionadas aos campos Detalhes da implementação, Plano de teste e Resposta de gerenciamento dos controles gerenciados pelo cliente das avaliações do grupo que você está copiando ficarão iguais nos mesmos controles gerenciados pelo cliente (ou relacionados) na nova avaliação. Se você adicionar uma nova avaliação a um grupo existente, as informações comuns das avaliações desse grupo serão copiadas para a nova avaliação. Para saber mais, confira [Copiar informações de avaliações existentes](#copying-information-from-existing-assessments).
     
 3. Clique em **Avançar** e faça o seguinte:
     
@@ -553,7 +553,7 @@ Da mesma forma, as informações de controles gerenciados do cliente compartilha
   
 1. Esta seção mostra as informações do resumo da Avaliação, incluindo o nome de agrupamento, o produto, o nome e o número de controles da Avaliação
     
-2. Esta seção mostra os controles de Filtro de avaliação. Para obter uma explicação mais detalhada de como usar os controles de Filtro de avaliação, confira a seção [Como gerenciar o processo de avaliação](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1). 
+2. Esta seção mostra os controles de Filtro de avaliação. Para obter uma explicação mais detalhada de como usar os controles de Filtro de avaliação, confira a seção [Como gerenciar o processo de avaliação](#managing-the-assessment-process). 
     
 3. Esta seção mostra os serviços em nuvem individuais no escopo da avaliação.
     
@@ -561,7 +561,7 @@ Da mesma forma, as informações de controles gerenciados do cliente compartilha
     
 5. Esta seção contém controles gerenciados pelo cliente, que também são organizados por família de controle. Clique em uma família de controle para expandi-la e exibir os controles de individuais.
     
-6. Exibe o número total de controles da família de controles e quantos desses controles já foram avaliados. Um recurso chave do Gerenciador de Conformidade é acompanhar o andamento da organização na avaliação dos controles gerenciados pelo cliente. Para saber mais, confira a seção [Noções básicas sobre a pontuação de conformidade](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore). 
+6. Exibe o número total de controles da família de controles e quantos desses controles já foram avaliados. Um recurso chave do Gerenciador de Conformidade é acompanhar o andamento da organização na avaliação dos controles gerenciados pelo cliente. Para saber mais, confira a seção [Noções básicas sobre a pontuação de conformidade](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gerenciar o processo de avaliação
 

@@ -1,0 +1,58 @@
+---
+title: Como as políticas e proteções são combinadas quando os emails são sinalizados em vermelho
+description: Quais políticas se aplicam e quais ações tomar, quando o email está marcado como malware, spam, spam de alta confiança, phishing e massa por EOP e/ou ATP.
+keywords: segurança, malware, Microsoft 365, M365, central de segurança, ATP, Windows Defender ATP, Office 365 ATP, Azure ATP
+ms.author: tracyp
+author: MSFTTracyp
+manager: laurawi
+ms.date: 03/26/2019
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 7aa0f89eed379273cb069cd65c083749a9552e91
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30926459"
+---
+# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Qual política se aplica quando vários métodos de proteção e verificações de detecção são executados em seu email
+
+Provavelmente, seus emails de entrada podem ser sinalizados por várias formas de proteção (por exemplo, EOP *e* ATP) e várias verificações de detecção (como spam *e* phishing). Isso é possível porque há políticas anti-phishing de ATP para clientes ATP e políticas anti-phishing do EOP para clientes do EOP. Isso também significa que a mensagem pode navegar por várias verificações de detecção de malware, phishing e representação de usuário, por exemplo. Dada a todas essas atividades, pode haver uma certa confusão à qual a política se aplica.
+
+Em geral, a política aplicada a uma mensagem é identificada no cabeçalho **X-Forefront-antispam-Report** na propriedade **Cat (categoria)** . Se você tiver várias políticas anti-phishing, o que será aplicado com a prioridade mais alta.
+
+As políticas abaixo se aplicam a _todas as organizações_.
+
+|Prioridade |Política  |Categoria  |Onde gerenciado |
+|---------|---------|---------|---------|
+|1     | Malware      | MALW      | Política de malware   |
+|duas     | Phishing     | PHSH     | Configurar suas políticas de filtro de spam     |
+|3D     | Spam de alta confiança      | HSPM        | Configurar suas políticas de filtro de spam        |
+|quatro     | Spoofing        | SPOOF        | Política anti-phishing, inteligência de falsificação        |
+|0,5     | Spam         | SPM         | Configurar suas políticas de filtro de spam         |
+|6     | Em massa         | BULK        | Configurar suas políticas de filtro de spam         |
+
+Além disso, essas políticas se aplicam a _organizações com ATP_.
+
+|Prioridade |Política  |Categoria  |Onde gerenciado |
+|---------|---------|---------|---------|
+|178     | Representação de domínio         | DIMP         |  Configurar políticas antiphishing e antiphishing da ATP do Office 365        |
+|8     | Representação de usuário        | UIMP         |  Configurar políticas antiphishing e antiphishing da ATP do Office 365         |
+
+Por exemplo, se você tiver duas políticas:
+
+|Política  |Prioridade  |Representação de Usuário/Domínio  |Antifalsificação  |
+|---------|---------|---------|---------|
+|A     | 1        | Ativada        |Desativada         |
+|B     | duas        | Desativada        | Ativada        |
+
+Se uma mensagem for identificada como _representação de usuário_ e _falsificação_ (consulte anti-falsificação na tabela acima), e o mesmo conjunto de usuários com escopo de política a estiver no escopo da política B, a mensagem será sinalizada e tratada como uma _falsificação_, mas não a ação é aplicada porque a antifalsificação está desativada, e como a falsificação é **executada em uma prioridade mais alta (4) do que a representação de usuário (8)**.
+
+Para fazer com que outros tipos de política de phishing se apliquem, será necessário ajustar as configurações das quais as várias políticas se aplicam.
+
+
+
