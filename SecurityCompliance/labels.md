@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455303"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900130"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -90,7 +90,7 @@ Os rótulos de retenção são blocos de construção independentes e reutilizá
     
 - Se houver várias regras que atribuem um rótulo de aplicação automática, e o conteúdo atender às condições das regras, será atribuído o rótulo de retenção da regra mais antiga.
     
-Os rótulos atribuídos manualmente são explicitamente atribuídos; os rótulos aplicados automaticamente são implicitamente atribuídos; um rótulo de retenção explícito tem precedência sobre um rótulo implícito. Para saber mais, confira a seção abaixo sobre [Os princípios de retenção ou o que tem precedência?](labels.md#principles).
+Os rótulos atribuídos manualmente são explicitamente atribuídos; os rótulos aplicados automaticamente são implicitamente atribuídos; um rótulo de retenção explícito tem precedência sobre um rótulo implícito. Para saber mais, confira a seção abaixo sobre [Os princípios de retenção ou o que tem precedência?](#the-principles-of-retention-or-what-takes-precedence).
 
 Todas as informações nesta seção se aplicam somente aos rótulos de retenção. Observe que um item de conteúdo também pode ter um rótulo de confidencialidade aplicado a ele, além de um rótulo de retenção.
   
@@ -291,10 +291,10 @@ Consultas de exemplos:
 
 - Exchange
     - assunto:"Finanças trimestrais"
-    - recipients:garthf<!--nolink-->@contoso.com
+    - destinatários:garthf<!--nolink-->@contoso.com
 - SharePoint e OneDrive for Business
     - contenttype:contract
-    - site:https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement E contenttype:contract
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement E contenttype:contract
 
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
