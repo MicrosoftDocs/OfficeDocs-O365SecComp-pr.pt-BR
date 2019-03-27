@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como usar os rótulos do Office como parte do seu plano de proteção do GDPR.
-ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789426"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800283"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar rótulos a dados pessoais no Office 365
 
@@ -29,15 +29,16 @@ ms.locfileid: "30789426"
 
 Se você estiver usando rótulos para proteção de dados pessoais no Office 365, recomendamos que você comece com [rótulos de retenção](labels.md). Com os rótulos de retenção, você pode:
 - Use o Advanced Data Governance para aplicar automaticamente rótulos com base em tipos de informações confidenciais ou outros critérios.
--  Use rótulos de retenção com a prevenção de perda de dados para aplicar a proteção. 
-- Use rótulos com pesquisa de conteúdo e descoberta eletrônica. 
-- Use rótulos e tipos de informações confidenciais com o Cloud App Security para monitorar dados pessoais que residem em outros aplicativos SaaS.
+- Use rótulos de retenção com a prevenção de perda de dados para aplicar a proteção. 
+- Usar rótulos com Pesquisa de Conteúdo e Descoberta Eletrônica. 
 
-[Rótulos de confidencialidade](sensitivity-labels.md) atualmente são recomendadas para aplicar rótulos a arquivos no local e em outros serviços de nuvem e provedores. Eles também são recomendados para arquivos no Office 365 que exijam criptografia de proteção de informações do Azure (AIP) para a proteção de dados, como arquivos secretos.
+O Cloud App Security atualmente não suporta rótulos de retenção, mas você pode usar tipos de informações confidenciais do Office 365 com o Cloud App Security para monitorar dados pessoais que residem em outros aplicativos SaaS.
+
+[Rótulos de confidencialidade](sensitivity-labels.md) atualmente são recomendados para a aplicação de rótulos a arquivos locais e em outros serviços de nuvem e provedores. Eles também são recomendados para arquivos no Office 365 que exijam criptografia de proteção de informações do Azure (AIP) para a proteção de dados, como arquivos secretos.
 
 Neste momento, usar a proteção de informações do Azure para aplicar a criptografia não é recomendável para arquivos no Office 365 com dados sujeitos ao GDPR. Os serviços do Office 365 não podem ler em arquivos criptografados AIP no momento. Portanto, o serviço não consegue encontrar dados confidenciais nesses arquivos.
 
-Os rótulos de confidencialidade podem ser aplicados a emails no Exchange Online e esses rótulos funcionam com a prevenção contra perda de dados do Office 365. 
+Rótulos de retenção podem ser aplicados a email no Exchange Online e esses rótulos funcionam com a prevenção contra a perda de dados do Office 365.  
 
 ![Rótulos do Office 365 e rótulos da Proteção de Informações do Azure](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
@@ -45,8 +46,8 @@ Os rótulos de confidencialidade podem ser aplicados a emails no Exchange Online
 Na ilustração:
 
 -   Use os rótulos de retenção em dados pessoais e arquivos de segredos comerciais e altamente regulados no SharePoint Online e no OneDrive for Business.
-
--   Use os rótulos de confidencialidade em arquivos de segredos comerciais e altamente regulados, emails do Exchange Online, arquivos de outros serviços SaaS, arquivos em datacenters no local e arquivos em outros provedores em nuvem.
+-   Os tipos de informações confidenciais do Office 365 podem ser usados dentro do Office 365 e com o Cloud App Security para monitorar dados pessoais que residem em outros aplicativos SaaS. 
+-   Use os rótulos de confidencialidade em arquivos de segredos comerciais e altamente regulados, emails do Exchange Online, arquivos de outros serviços SaaS, arquivos em datacenters no local e arquivos em outros provedores de serviços de nuvem.
 
 
 ## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usar os rótulos de retenção e os tipos de informações confidenciais no Microsoft 365 para proteção de informações
@@ -78,8 +79,8 @@ Para maior acessibilidade, a tabela a seguir fornece os mesmos exemplos da ilust
 <p>...aos documentos com este rótulo...</p>
 <p>Dados do cliente</p></td>
 <td align="left"><p>Alertar quando os arquivos com esses atributos...</p>
-<p>&lt;atributo PII predefinido – ou – expressão personalizada&gt;</p>
-<p>...forem compartilhados fora da organização em qualquer aplicativo sancionado pela SaaS </p></td>
+<p>Escolha um ou mais atributos: atributo PII predefinido, tipo de informação confidencial do Office 365, rótulo de confidencialidade (API), expressão personalizada</p>
+<p>. . . que forem compartilhados fora da organização em qualquer aplicativo SaaS sancionado.</p><p>Obs.: rótulos de retenção atualmente não são suportados pelo Cloud App Security.</td>
 </tr>
 <tr class="even">
 <td align="left">Tipos de informações confidenciais. Exemplos: Número Nacional de Identificação da Bélgica, Número do cartão de crédito, Número de Cartão de Identidade da Croácia, ID nacional da Finlândia</td>
@@ -90,7 +91,7 @@ Para maior acessibilidade, a tabela a seguir fornece os mesmos exemplos da ilust
 <td align="left"><p>Aplicar esta proteção...</p>
 <p>&lt;definir proteção&gt;</p>
 <p>...aos documentos que correspondam a estes tipos de informações confidenciais&gt;</p></td>
-<td align="left">Observação: entre os atributos que chegarão em breve ao Cloud App Security estão os Tipos de informações confidenciais do Office 365 e os Rótulos unificados no Office 365 e na Proteção de Informações do Azure.</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
