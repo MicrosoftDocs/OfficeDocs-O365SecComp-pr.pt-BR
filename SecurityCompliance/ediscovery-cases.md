@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use o centro de conformidade &amp; de segurança do Office 365 para criar e gerenciar casos de descoberta eletrônica em sua organização. Você pode atribuir Membros ao caso, colocar os locais de conteúdo em espera, executar pesquisas de conteúdo associadas ao caso e exportar os resultados da pesquisa. Você também pode preparar dados de caso para análise adicional na descoberta eletrônica avançada.
-ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 52ebc7f06bf9d60450d56b8591f7cfc184b4dbf6
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296844"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900190"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>ocorrências de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365
 
 Você pode usar casos de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365 para controlar quem pode criar, acessar e gerenciar casos de descoberta eletrônica em sua organização. Se sua organização tiver uma assinatura do Office 365 e5, você também poderá usar casos de descoberta eletrônica para analisar os resultados da pesquisa usando a descoberta eletrônica avançada do Office 365.
   
-Um caso de descoberta eletrônica permite que você adicione membros a um caso, controle quais tipos de ações que os membros de casos específicos podem executar, colocar uma retenção em locais de conteúdo relevantes para um caso jurídico e associar várias pesquisas de conteúdo a um único caso. Você também pode exportar os resultados de qualquer pesquisa de conteúdo associada a um caso ou preparar resultados de pesquisa para análise na descoberta eletrônica avançada. as ocorrências de descoberta eletrônica são uma boa maneira de limitar as pessoas que têm acesso a pesquisas de conteúdo e resultados de pesquisa para um caso jurídico específico em sua organização.
+Uma ocorrência de Descoberta Eletrônica permite a você adicionar membros a uma ocorrência, controlar que tipos de ações os membros dessa ocorrência específica podem realizar, colocar em retenção locais de conteúdo relevantes para um caso jurídico e associar várias Pesquisas de Conteúdo com uma única ocorrência. Você também pode exportar os resultados de qualquer pesquisa de conteúdo associada a um caso ou preparar resultados de pesquisa para análise na descoberta eletrônica avançada. As ocorrências de Descoberta Eletrônica são uma boa maneira de limitar quem tem acesso às Pesquisas de Conteúdo e aos resultados da pesquisa de um caso jurídico específico na sua organização.
   
 Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta &amp; eletrônica no centro de conformidade de segurança e descoberta eletrônica avançada.
 
-[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Etapa 2: criar um novo caso](#step-2-create-a-new-case)
 
@@ -58,11 +58,11 @@ A primeira etapa é atribuir as permissões relacionadas à descoberta eletrôni
   
 - **Revisor** -esse grupo de função tem as permissões mais restritivas relacionadas a descoberta eletrônica. O principal objetivo desse grupo de função é permitir que os membros exibam e acessem os dados de ocorrência na descoberta eletrônica avançada do Office 365. Os membros desse grupo só podem ver e abrir a lista de casos na página **descoberta eletrônica** no centro de conformidade &amp; de segurança do qual eles são membros. Depois que o usuário acessa um caso no centro de conformidade do & de segurança, ele pode clicar em **alternar para descoberta eletrônica avançada** para acessar e analisar os dados do caso na descoberta eletrônica avançada. Eles não podem criar casos, adicionar membros a uma ocorrência, criar isenções, criar pesquisas, Visualizar resultados de pesquisa, exportar resultados de pesquisa ou preparar resultados para descoberta eletrônica avançada. 
     
-- **Gerenciador de descoberta eletrônica** -os membros desse grupo de funções podem criar e gerenciar ocorrências de descoberta eletrônica. Eles podem adicionar e remover membros, colocar os locais de conteúdo em espera, criar e editar pesquisas de conteúdo associadas a uma ocorrência, exportar os resultados de uma pesquisa de conteúdo e preparar resultados de pesquisa para análise na descoberta eletrônica avançada. Há dois subgrupos nesse grupo de função. A diferença entre esses subgrupos baseia-se no escopo.
+- **Gerenciador de descoberta eletrônica** -os membros desse grupo de funções podem criar e gerenciar ocorrências de descoberta eletrônica. Eles podem adicionar e remover membros, colocar os locais de conteúdo em espera, criar e editar pesquisas de conteúdo associadas a uma ocorrência, exportar os resultados de uma pesquisa de conteúdo e preparar resultados de pesquisa para análise na descoberta eletrônica avançada. Há dois subgrupos nesse grupo de função. A diferença entre esses subgrupos está no escopo.
     
   - **Gerenciador de descoberta eletrônica** – pode exibir e gerenciar os casos de descoberta eletrônica que eles criam ou são membros de. Se outro gerenciador de descoberta eletrônica criar uma ocorrência, mas não adicionar um segundo Gerenciador de descoberta eletrônica como membro desse caso, o segundo Gerenciador de descoberta eletrônica não poderá exibir ou abrir o caso na página **descoberta eletrônica** no centro de conformidade de segurança &amp; . Os gerentes de descoberta eletrônica também podem acessar seus casos na descoberta eletrônica avançada para executar tarefas de análise. 
     
-  - **administrador de descoberta eletrônica** – pode executar todas as tarefas de gerenciamento de caso que um gerente de descoberta eletrônica possa fazer. Além disso, um administrador de descoberta eletrônica pode:
+  - **administrador de descoberta eletrônica** – pode executar todas as tarefas de gerenciamento de caso que um gerente de descoberta eletrônica possa fazer. Além disso, um Administrador de Descoberta Eletrônica pode:
     
     - Exibir todas as ocorrências listadas na página **Descoberta Eletrônica**. 
     
@@ -95,7 +95,7 @@ Para obter mais informações sobre permissões de descoberta eletrônica, consu
 
 ## <a name="step-2-create-a-new-case"></a>Etapa 2: criar um novo caso
 
-A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função gerentes de descoberta eletrônica para criar ocorrências de descoberta eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no &amp; centro de conformidade de segurança, você (e outros membros de caso) poderão acessar o mesmo caso na descoberta eletrônica avançada, se você tiver uma assinatura do Office 365 e5.
+A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função Gerente de Descoberta Eletrônica para criar ocorrências de Descoberta Eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no &amp; centro de conformidade de segurança, você (e outros membros de caso) poderão acessar o mesmo caso na descoberta eletrônica avançada, se você tiver uma assinatura do Office 365 e5.
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
@@ -144,7 +144,7 @@ Após criar um novo caso, a próxima etapa é adicionar membros à ocorrência. 
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Etapa 4: colocar os locais de conteúdo em espera
 
-Você pode usar um caso de descoberta eletrônica para criar isenções para preservar o conteúdo que pode ser relevante para o caso. Você pode colocar uma retenção nas caixas de correio e nos sites do OneDrive for Business de pessoas que são responsáveis pelo caso. Você também pode colocar uma retenção na caixa de correio de grupo, site do SharePoint e no OneDrive for Business para um grupo do Office 365. Da mesma forma, você pode colocar uma retenção na caixa de correio e no site associados ao Microsoft Teams. Quando você coloca os locais de conteúdo em espera, o conteúdo é mantido até que você remova o bloqueio do local de conteúdo ou até que você exclua a isenção.
+Você pode usar uma ocorrência de Descoberta Eletrônica para criar retenções e preservar conteúdo que possa ser relevante para a ocorrência. Você pode colocar uma retenção nas caixas de correio e nos sites do OneDrive for Business de pessoas que são responsáveis pelo caso. Você também pode colocar uma retenção na caixa de correio de grupo, site do SharePoint e no OneDrive for Business para um grupo do Office 365. Da mesma forma, você pode colocar uma retenção na caixa de correio e no site associados ao Microsoft Teams. Quando você coloca os locais de conteúdo em espera, o conteúdo é mantido até que você remova o bloqueio do local de conteúdo ou até que você exclua a isenção.
 
 > [!NOTE]
 > Depois que você coloca um local de conteúdo em espera, leva até 24 horas para que a retenção entre em vigor. 
@@ -170,7 +170,7 @@ Para criar uma retenção para um caso de descoberta eletrônica:
   
 4. Na página **reter** , clique em ![adicionar ícone](media/ITPro-EAC-AddIcon.gif) **criar**.
     
-5. Na página **nomear sua suspensão** , dê um nome à isenção. O nome da retenção deve ser exclusivo em sua organização. 
+5. Na página **nomear sua suspensão** , dê um nome à isenção. O nome da retenção deve ser exclusivo na sua organização. 
     
     ![Forneça um nome exclusivo para o controle](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
@@ -182,19 +182,19 @@ Para criar uma retenção para um caso de descoberta eletrônica:
     
     ![Escolher os locais de conteúdo para colocar em espera](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **email do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente. para especificar as caixas de correio a serem colocadas em espera. Use a caixa de pesquisa para localizar caixas de correio de usuários e grupos de distribuição (para colocar uma retenção nas caixas de correio dos membros do grupo) para colocar em espera. Você também pode colocar uma retenção na caixa de correio associada para um grupo do Office 365 ou uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
+   a. **Email do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente. para especificar as caixas de correio a serem colocadas em espera. Use a caixa de pesquisa para localizar caixas de correio de usuários e grupos de distribuição (para colocar uma retenção nas caixas de correio dos membros do grupo) para colocar em espera. Você também pode colocar uma retenção na caixa de correio associada para um grupo do Office 365 ou uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
     
     > [!NOTE]
-    > Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio que serão colocadas em espera, o seletor de caixa de correio exibido estará vazio. Isso é projetado para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa. 
+    > Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio que serão colocadas em espera, o seletor de caixa de correio exibido estará vazio. Isso foi desenvolvido para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa. 
   
-   b. **sites do SharePoint** -clique em **escolher sites** e clique em **escolher sites** novamente para especificar o SharePoint e os sites do onedrive for Business para colocar em espera. Digite a URL de cada site que você deseja colocar em espera. Você também pode adicionar a URL do site do SharePoint para um grupo do Office 365 ou uma equipe da Microsoft. Clique em **escolher**e em **concluído**.
+   b. **Sites do SharePoint** -clique em **escolher sites** e, em seguida, clique em **escolher sites** novamente para especificar o SharePoint e os sites do onedrive for Business para colocar em espera. Digite a URL de cada site que você deseja colocar em retenção. Você também pode adicionar a URL do site do SharePoint para um grupo do Office 365 ou uma equipe da Microsoft. Clique em **escolher**e em **concluído**.
     
     Consulte a seção [mais informações](#more-information) para obter dicas sobre como colocar grupos do Office 365 e o Microsoft Teams em espera. 
     
     > [!NOTE]
     > No caso raro em que o UPN (nome principal de usuário) de uma pessoa é alterado, a URL de sua conta do OneDrive também será alterada para incorporar o novo UPN. Se isso acontecer, você terá que modificar a retenção adicionando a nova URL do OneDrive do usuário e removendo a antiga. 
   
-   c. **pastas públicas do Exchange** -mova o controle ![](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Toggle switch toggle para a posição **All** para colocar todas as pastas públicas em sua organização do Exchange Online em espera. Observe que você não pode escolher pastas públicas específicas para colocar em espera. Deixe a opção de alternância definida como **nenhuma** se você não quiser colocar uma retenção em pastas públicas.
+   c. **Pastas públicas do Exchange** -mova o controle ![](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) alternar comutador alterna para a posição **All** para colocar todas as pastas públicas em sua organização do Exchange Online em espera. Observe que você não pode escolher pastas públicas específicas para colocar em espera. Deixe a opção de alternância definida como **nenhuma** se você não quiser colocar uma retenção em pastas públicas.
     
 9. Quando você terminar de adicionar locais de conteúdo à isenção, clique em **Avançar**.
     
@@ -203,9 +203,9 @@ Para criar uma retenção para um caso de descoberta eletrônica:
     ![Criar uma retenção baseada em consulta com condições](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
-       a. na caixa em **palavras-chave**, digite uma consulta de pesquisa na caixa para que apenas o conteúdo que atende aos critérios de pesquisa seja colocado em espera. Você pode especificar palavras-chave, propriedades de mensagem ou propriedades do documento, como nomes de arquivo. Você também pode usar consultas mais complexas que usam um operador Boolean, como **e**, **ou ou** **não**. Se você deixar a caixa de palavras-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será colocado em espera.
+       a. Na caixa em **palavras-chave**, digite uma consulta de pesquisa na caixa para que apenas o conteúdo que atende aos critérios de pesquisa seja colocado em espera. Você pode especificar palavras-chave, propriedades de mensagem ou propriedades do documento, como nomes de arquivo. Você também pode usar consultas mais complexas que usam um operador Boolean, como **e**, **ou ou** **não**. Se você deixar a caixa de palavras-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será colocado em espera.
     
-    b. Clique ![em Adicionar](media/ITPro-EAC-AddIcon.gif) ícone **Adicionar condições** para adicionar uma ou mais condições para restringir a consulta de pesquisa para a isenção. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você cria a retenção. Por exemplo, você pode especificar um intervalo de datas para que os documentos de email ou de site criados dentro do intervalo de datas sejam colocados em espera. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) pelo operador **and** . Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser colocada em espera.
+    b. Clique ![em Adicionar](media/ITPro-EAC-AddIcon.gif) ícone **Adicionar condições** para adicionar uma ou mais condições para restringir a consulta de pesquisa para a isenção. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você cria a retenção. Por exemplo, você pode especificar um intervalo de datas para que os documentos de email ou de site criados dentro do intervalo de datas sejam colocados em espera. Uma condição está logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **AND**. Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser colocada em espera.
 
     Para obter mais informações sobre como criar uma consulta de pesquisa e usar condições, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -234,7 +234,7 @@ Tenha em mente as seguintes coisas em relação a estatísticas de retenção:
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Etapa 5: criar e executar uma pesquisa de conteúdo associada a uma ocorrência
 
-Depois que um caso de descoberta eletrônica é criado e os responsáveis relacionados ao caso são colocados em espera, você pode criar e executar uma ou mais pesquisas de conteúdo associadas à ocorrência. As pesquisas de conteúdo associadas a um caso não estão **** listadas na página de &amp; pesquisa no centro de conformidade de segurança. Isso significa que as pesquisas de conteúdo associadas a um caso podem ser acessadas apenas por membros de caso que também são membros do grupo de função Gerenciador de descoberta eletrônica. 
+Depois de criar uma ocorrência de Descoberta Eletrônica e os responsáveis relacionados à ocorrência serem colocados em retenção, você poderá criar e executar uma ou mais Pesquisas de Conteúdo associadas à ocorrência. As pesquisas de conteúdo associadas a um caso não estão **** listadas na página de &amp; pesquisa no centro de conformidade de segurança. Isso significa que as pesquisas de conformidade associadas a uma ocorrência só podem ser acessadas por membros da ocorrência que também sejam membros do grupo de função Gerente de Descoberta Eletrônica. 
   
 1. No Centro de Conformidade e Segurança, clique em **Pesquisa e investigação** \> **Descoberta Eletrônica** para exibir a lista de casos na sua organização. 
     
@@ -260,7 +260,7 @@ Depois que um caso de descoberta eletrônica é criado e os responsáveis relaci
     
     Para obter mais informações sobre como usar a lista de palavras-chave, consulte [criando uma consulta de pesquisa](content-search.md#building-a-search-query).
     
-8. Em **condições**, adicione condições a uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta de pesquisa do KQL que é criada e executada quando você inicia a pesquisa. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) pelo operador **and** . Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser incluída nos resultados. É assim que as condições ajudam a restringir os resultados. 
+8. Em **condições**, adicione condições a uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você inicia a pesquisa. Uma condição é logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **AND**. Isso significa que os itens precisam atender à consulta de palavra-chave e à condição para serem incluídos nos resultados. É assim que as condições ajudam a restringir os resultados. 
     
     Para saber mais sobre como criar uma consulta de pesquisa e usar condições, confira [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -270,7 +270,7 @@ Depois que um caso de descoberta eletrônica é criado e os responsáveis relaci
   
     - **Todos os locais** -Selecione essa opção para pesquisar todos os locais de conteúdo em sua organização. Ao selecionar essa opção, você pode optar por pesquisar todas as caixas de correio do Exchange (que inclui as caixas de correio de todos os grupos do Office 365 e Microsoft Teams), todos os sites do SharePoint e do OneDrive for Business (que inclui os sites de todos os grupos do Office 365 e Microsoft Teams) e todas as pastas públicas.
     
-    - **Todos os locais em espera** -Selecione essa opção para pesquisar todos os locais de conteúdo que foram colocados em espera no caso. Se o caso contiver várias isenções, os locais de conteúdo de todas as isenções serão pesquisados quando você selecionar essa opção. Além disso, se um local de conteúdo foi colocado em um bloqueio baseado em consulta, somente os itens que estão em retenção serão pesquisados quando você executar a pesquisa de conteúdo que você está criando nesta etapa. Por exemplo, se um usuário foi colocado em um bloqueio de caso baseado em consulta que preserva os itens que foram enviados ou criados antes de uma data específica, somente esses itens seriam pesquisados usando os critérios de pesquisa da pesquisa de conteúdo. Isso é feito conectando-se à consulta de retenção de caso e à consulta de pesquisa de conteúdo por um operador **and** . Consulte a seção [mais informações](ediscovery-cases.md#moreinfo_1) no final deste artigo para obter mais detalhes sobre como pesquisar o conteúdo do caso. 
+    - **Todos os locais em espera** -Selecione essa opção para pesquisar todos os locais de conteúdo que foram colocados em espera no caso. Se o caso contiver várias isenções, os locais de conteúdo de todas as isenções serão pesquisados quando você selecionar essa opção. Além disso, se um local de conteúdo foi colocado em um bloqueio baseado em consulta, somente os itens que estão em retenção serão pesquisados quando você executar a pesquisa de conteúdo que você está criando nesta etapa. Por exemplo, se um usuário foi colocado em um bloqueio de caso baseado em consulta que preserva os itens que foram enviados ou criados antes de uma data específica, somente esses itens seriam pesquisados usando os critérios de pesquisa da pesquisa de conteúdo. Isso é feito conectando-se à consulta de retenção de caso e à consulta de pesquisa de conteúdo por um operador **and** . Consulte a seção [mais informações](#more-information) no final deste artigo para obter mais detalhes sobre como pesquisar o conteúdo do caso. 
     
     - **Locais específicos** -Selecione essa opção para selecionar as caixas de correio e os sites que você deseja pesquisar. Quando você seleciona essa opção e clica em **Modificar**, uma lista de locais é exibida. Você pode optar por pesquisar qualquer um ou todos os usuários, grupos, equipes ou locais de sites.
     
@@ -282,9 +282,9 @@ Depois que um caso de descoberta eletrônica é criado e os responsáveis relaci
     
       Lembre-se destes pontos ao adicionar locais de conteúdo para pesquisa:
     
-      - Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio a serem pesquisadas, o seletor de caixa de correio exibido estará vazio. Isso é projetado para melhorar o desempenho. Para adicionar destinatários a essa lista, clique em **escolher usuários, grupos ou equipes**, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa, marque a caixa de seleção ao lado do nome e clique em **escolher**. 
+      - Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio a serem pesquisadas, o seletor de caixa de correio exibido estará vazio. Isso foi desenvolvido para melhorar o desempenho. Para adicionar destinatários a essa lista, clique em **escolher usuários, grupos ou equipes**, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa, marque a caixa de seleção ao lado do nome e clique em **escolher**. 
     
-      - Você pode adicionar caixas de correio inativas, grupos do Office 365, Microsoft Teams e grupos de distribuição à lista de caixas de correio a serem pesquisadas. Não há suporte para grupos dinâmicos de distribuição. Se você adicionar grupos do Office 365 ou o Microsoft Teams, a caixa de correio de grupo ou equipe será pesquisada; as caixas de correio dos membros do grupo não são pesquisadas.
+      - Você pode adicionar caixas de correio inativas, grupos do Office 365, Microsoft Teams e grupos de distribuição à lista de caixas de correio a serem pesquisadas. Não há suporte para grupos de distribuição dinâmicos. Se você adicionar grupos do Office 365 ou o Microsoft Teams, a caixa de correio de grupo ou equipe será pesquisada; as caixas de correio dos membros do grupo não são pesquisadas.
     
       - Para adicionar sites, **** clique em escolher sites, clique em **escolher sites** novamente e digite a URL de cada site que você deseja pesquisar. Você também pode adicionar a URL para o site do SharePoint para grupos do Office 365 e Microsoft Teams. 
     
@@ -296,15 +296,15 @@ Depois que um caso de descoberta eletrônica é criado e os responsáveis relaci
     
 13. Insira um nome exclusivo para a pesquisa e clique em **salvar** para iniciar a pesquisa. 
     
-    A pesquisa começa. Após um tempo, uma estimativa dos resultados da pesquisa é exibida no painel de detalhes. A previsão inclui o tamanho total e o número de itens que correspondem aos critérios de pesquisa. A estimativa de pesquisa também inclui o número de itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa serão incluídos nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído na estimativa de itens não indexados.
+    A pesquisa começa. Após um tempo, uma estimativa dos resultados da pesquisa é exibida no painel de detalhes. A previsão inclui o tamanho total e o número de itens que correspondem aos critérios de pesquisa. A estimativa de pesquisa também inclui o número de itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído na estimativa de itens não indexados.
     
-  Após a conclusão da pesquisa, você pode visualizar os resultados da pesquisa. Se necessário, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif) de atualização para atualizar as informações no painel de detalhes. 
+  Após a conclusão da pesquisa, você poderá visualizar os resultados. Se necessário, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif) de atualização para atualizar as informações no painel de detalhes. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Etapa 6: exportar os resultados de uma pesquisa de conteúdo associada a uma ocorrência
 
 Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa. Quando você exporta os resultados da pesquisa, os itens da caixa de correio são baixados em arquivos PST ou como mensagens individuais. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office e outros documentos são exportadas. Um arquivo de manifesto (em formato XML) que contém informações sobre cada resultado de pesquisa também é exportado.
   
-Você pode exportar os resultados de uma [exportação dos resultados de uma única pesquisa associada a um caso](ediscovery-cases.md#singlesearch_1) ou pode exportar os resultados de [exportar os resultados de várias pesquisas associadas a um caso](ediscovery-cases.md#multiplesearches_1).
+Você pode exportar os resultados de uma [única pesquisa associada a um caso](#export-the-results-of-a-single-search-associated-with-a-case) ou pode exportar os resultados de [várias pesquisas associadas a um caso](#export-the-results-of-multiple-searches-associated-with-a-case).
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportar os resultados de uma única pesquisa associada a uma ocorrência
 
@@ -320,7 +320,7 @@ Você pode exportar os resultados de uma [exportação dos resultados de uma ún
     
     ![Exportar página de resultados](media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
-    O fluxo de trabalho para exportar os resultados de uma pesquisa de conteúdo associada a um caso é o mesmo que exportar os resultados da pesquisa para uma pesquisa na página de **pesquisa de conteúdo** . Para obter instruções detalhadas, consulte [Exportar resultados de pesquisa de conteúdo do centro de conformidade de segurança &amp; do Office 365](export-search-results.md).
+    O fluxo de trabalho para exportar os resultados de uma Pesquisa de Conteúdo associada a uma ocorrência é o mesmo que o usado para exportar os resultados da pesquisa para uma pesquisa na página **Pesquisa de Conteúdo**. Para obter instruções detalhadas, consulte [Exportar resultados de pesquisa de conteúdo do centro de conformidade de segurança &amp; do Office 365](export-search-results.md).
     
     > [!NOTE]
     > Ao exportar resultados de pesquisa, você tem a opção de habilitar a eliminação de duplicação para que apenas uma cópia de uma mensagem de email seja exportada, embora várias instâncias da mesma mensagem possam ter sido encontradas nas caixas de correio que foram pesquisadas. Para obter mais informações sobre a eliminação de duplicação e como os itens duplicados são identificados, consulte desduplicação [nos resultados da pesquisa de descoberta eletrônica](de-duplication-in-ediscovery-search-results.md). 
@@ -463,7 +463,7 @@ Quando o caso ou a investigação legal suportados por uma ocorrência de descob
   
 - Se o caso contiver qualquer local de conteúdo em espera, essas isenções serão desativadas. Isso pode resultar na exclusão ou limpeza permanente do conteúdo, seja pelo usuário ou por um processo automatizado, como uma política de exclusão.
     
-- O fechamento de um caso desativa apenas as suspensões que estão associadas a esse caso. Se outras isenções forem mantidas em um local de conteúdo (como uma retenção de litígio. uma política de preservação ou uma retenção de um caso de descoberta eletrônica diferente) essas isenções ainda serão mantidas.
+- O fechamento de um caso desativa apenas as suspensões que estão associadas a esse caso. Se outras isenções forem colocadas em um local de conteúdo (como uma retenção de litígio. uma política de preservação, ou uma retenção de um caso de descoberta eletrônica diferente, essas isenções ainda serão mantidas.
     
 - O caso ainda está listado na página descoberta eletrônica no centro de &amp; conformidade de segurança. Os detalhes, isenções, pesquisas e membros de um caso fechado são mantidos.
     
@@ -517,9 +517,9 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
   
 ## <a name="more-information"></a>Mais informações
 
-- Há **limites para casos de descoberta eletrônica ou isenções associados a uma ocorrência de descoberta eletrônica?** A tabela a seguir lista os limites de ocorrências de descoberta eletrônica e isenções de caso.
+- **Há limites para casos de descoberta eletrônica ou isenções associados a uma ocorrência de descoberta eletrônica?** A tabela a seguir lista os limites de ocorrências de descoberta eletrônica e isenções de caso.
     
-  |**Descrição de limite**|**Limite**|
+  |**Descrição do limite**|**Limite**|
   |:-----|:-----|
   |Número máximo de casos para uma organização  <br/> |Sem limite  <br/> |
   |Número máximo de isenções de caso para uma organização  <br/> |10.000  <br/> |
@@ -528,11 +528,11 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
    
 - **E os casos que foram criados na página de gerenciamento de casos na descoberta eletrônica avançada?** Você pode acessar uma lista de casos de descoberta eletrônica avançada mais antigas clicando no link na parte inferior da página de **descoberta eletrônica** no centro de conformidade de segurança &amp; . No enTanto, para fazer qualquer trabalho em um caso mais antigo, você precisa entrar em contato com o suporte do Office 365 e solicitar que o caso seja movido para &amp; uma nova ocorrência de descoberta eletrônica no centro de conformidade de segurança. 
     
-- **Por que criar um administrador de descoberta eletrônica?** Como explicado anteriormente, um administrador de descoberta eletrônica é membro do grupo de funções Gerenciador de descoberta eletrônica que pode exibir e acessar todos os casos de descoberta eletrônica em sua organização. Essa capacidade de acessar todos os casos de descoberta eletrônica tem duas finalidades importantes:
+- **Por que criar um Administrador de Descoberta Eletrônica? ** Conforme explicado anteriormente, um Administrador de Descoberta Eletrônica é membro do grupo de funções Gerente de Descoberta Eletrônica e pode ver e acessar todas as ocorrências de Descoberta Eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
     
-  - Se uma pessoa que é o único membro de um caso de descoberta eletrônica sair da sua organização, ninguém (incluindo membros do grupo de função gerenciamento da organização ou outro membro do grupo de funções do Gerenciador de descoberta eletrônica) poderá acessar esse caso de descoberta eletrônica, pois eles não são membros de uma ocorrência. Nessa situação, não haveria como acessar os dados no caso. No enTanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles &amp; podem ver o caso no centro de conformidade de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
+  - se uma pessoa que é o único membro de um ocorrência de Descoberta Eletrônica sair de sua organização, ninguém (incluindo os membros do grupo de funções Gerenciamento da organização ou outro membro do grupo de funções Gerente de Descoberta Eletrônica) poderá acessar essa ocorrência de Descoberta Eletrônica, pois não é membro de uma ocorrência. Nessa situação, não haveria um modo de acessar os dados na ocorrência. No enTanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles &amp; podem ver o caso no centro de conformidade de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
     
-  - Como um administrador de descoberta eletrônica pode exibir e acessar todos os casos de descoberta eletrônica, eles podem auditar e supervisionar todos os casos e pesquisas de conteúdo associadas. Isso pode ajudar a evitar qualquer mau uso de pesquisas de conteúdo ou ocorrências de descoberta eletrônica. E como os administradores de eDiscovery podem acessar informações potencialmente confidenciais nos resultados de uma pesquisa de conteúdo, você deve limitar o número de pessoas que são administradores de descoberta eletrônica.
+  - Como um administrador de descoberta eletrônica pode exibir e acessar todos os casos de descoberta eletrônica, eles podem auditar e supervisionar todos os casos e pesquisas de conteúdo associadas. Isso pode ajudar a evitar o uso indevido de Pesquisas de Conteúdo ou de ocorrências de Descoberta Eletrônica. Além disso, como os Administradores de Descoberta Eletrônica podem acessar informações possivelmente confidenciais nos resultados de uma Pesquisa de Conteúdo, você deve limitar o número de pessoas com a função de Administrador de Descoberta Eletrônica.
     
     Por fim, como explicado anteriormente, os administradores de &amp; descoberta eletrônica no centro de conformidade de segurança são automaticamente adicionados como administradores na descoberta eletrônica avançada. Isso significa que uma pessoa que é um administrador de descoberta eletrônica pode executar tarefas administrativas em descoberta eletrônica avançada, como configurar usuários, criar ocorrências e adicionar dados a ocorrências.
     
@@ -552,7 +552,7 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
     
   - Conforme mencionado anteriormente, se uma pesquisa estiver configurada para pesquisar todo o conteúdo do caso, não será possível incluir essa pesquisa se você quiser exportar os resultados de várias pesquisas. Se uma pesquisa estiver configurada para pesquisar todo o conteúdo do caso, você terá que exportar os resultados dessa única pesquisa.
     
-- **Se uma caixa de correio, site do SharePoint ou uma conta do onedrive que está em espera for movida para uma região diferente em um ambiente multigeográfico, a retenção ainda será aplicada?** Em todos os casos, o conteúdo em uma caixa de correio, site ou conta do OneDrive ainda será mantido. No enTanto, as estatísticas de retenção não incluirão mais itens de um local de conteúdo que tenha sido movido para uma região diferente. Para incluir estatísticas de retenção para um local de conteúdo que tenha sido movido, você terá que editar a espera e atualizar a URL (ou o endereço SMTP de uma caixa de correio) para que o local do conteúdo seja novamente incluído nas estatísticas de retenção. 
+- **Se uma caixa de correio, site do SharePoint ou uma conta do OneDrive que está em espera for movida para uma região diferente em um ambiente multigeográfico, a retenção ainda será aplicada?** Em todos os casos, o conteúdo em uma caixa de correio, site ou conta do OneDrive ainda será mantido. No enTanto, as estatísticas de retenção não incluirão mais itens de um local de conteúdo que tenha sido movido para uma região diferente. Para incluir estatísticas de retenção para um local de conteúdo que tenha sido movido, você terá que editar a espera e atualizar a URL (ou o endereço SMTP de uma caixa de correio) para que o local do conteúdo seja novamente incluído nas estatísticas de retenção. 
     
 - **E como colocar uma retenção em grupos do Office 365 e no Microsoft Teams?** O Microsoft Teams é desenvolvido em grupos do Office 365. Portanto, colocá-los em espera em um caso de descoberta eletrônica é muito semelhante. Lembre-se do seguinte ao colocar grupos do Office 365 e do Microsoft Teams em espera. 
     
@@ -595,4 +595,4 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
     > [!NOTE]
     > A capacidade de manter o conteúdo do wiki para uma equipe do Microsoft ou um canal de equipe (quando você coloca o site do SharePoint da equipe em espera) foi lançada em 22 de junho de 2017. Se um site de equipe estiver em espera, o conteúdo wiki será retido a partir dessa data. No enTanto, se um site de equipe estiver em espera e o conteúdo wiki tiver sido excluído antes de 22 de junho de 2017, o conteúdo wiki não foi mantido. 
   
-- **Como encontrar a URL para os sites do onedrive for Business?** Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização para que você possa adicioná-los a uma isenção ou a uma pesquisa associada a uma ocorrência de descoberta eletrônica, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Este script neste artigo cria um arquivo de texto que contém uma lista de todos os sites do OneDrive. Para executar esse script, você precisará instalar e usar o Shell de gerenciamento do SharePoint Online. Certifique-se de acrescentar a URL para o domínio meusite da sua organização a cada site do OneDrive que você deseja pesquisar. Este é o domínio que contém todos os seus OneDrive; por exemplo, `https://contoso-my.sharepoint.com`. Veja um exemplo de uma URL para o site do OneDrive de um usuário `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`:.
+- **Como encontrar a URL para os sites do OneDrive for Business?** Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização para que você possa adicioná-los a uma isenção ou a uma pesquisa associada a uma ocorrência de descoberta eletrônica, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Este script neste artigo cria um arquivo de texto que contém uma lista de todos os sites do OneDrive. Para executar esse script, você precisará instalar e usar o Shell de gerenciamento do SharePoint Online. Certifique-se de acrescentar a URL para o domínio meusite da sua organização a cada site do OneDrive que você deseja pesquisar. Este é o domínio que contém todos os seus OneDrive; por exemplo, `https://contoso-my.sharepoint.com`. Veja um exemplo de uma URL para o site do OneDrive de um usuário `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`:.

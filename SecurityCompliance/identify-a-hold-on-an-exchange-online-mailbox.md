@@ -1,5 +1,5 @@
 ---
-title: Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
+title: Como identificar o tipo de retenção colocado em uma caixa de correio do Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Saiba como identificar os diferentes tipos de retenção que podem ser colocados em uma caixa de correio do Office 365. Esses tipos de isenções incluem retenção de litígio, bloqueios de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário foi excluído de uma política de retenção em toda a organização
-ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296804"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900150"
 ---
-# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
+# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção colocado em uma caixa de correio do Exchange Online
 
 Este artigo explica como identificar as isenções colocadas nas caixas de correio do Exchange Online no Office 365.
 
@@ -38,9 +38,10 @@ O Office 365 oferece diversas maneiras pelas quais sua organização pode impedi
 
     - **Políticas de retenção de local específico** -essas são as políticas atribuídas aos locais de conteúdo de usuários específicos. Você usa o cmdlet **Get-Mailbox** no PowerShell do Exchange Online para obter informações sobre políticas de retenção atribuídas a caixas de correio específicas.
 
-    - **Políticas de retenção em toda a organização** -são as políticas atribuídas a todos os locais de conteúdo em sua organização. Você usa o cmdlet **Get-OrganizationConfig** no PowerShell do Exchange Online para obter informações sobre políticas de retenção em toda a organização. Para obter mais informações, consulte a seção "aplicando uma política de retenção a uma organização inteira ou locais específicos" em [visão geral das políticas de retenção do Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    - **Políticas de retenção em toda a organização** -são as políticas atribuídas a todos os locais de conteúdo em sua organização. Você usa o cmdlet **Get-OrganizationConfig** no PowerShell do Exchange Online para obter informações sobre políticas de retenção em toda a organização.
+  Para obter mais informações, consulte a seção "aplicando uma política de retenção a uma organização inteira ou locais específicos" em [visão geral das políticas de retenção do Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Rótulos de retenção do office 365** -se um usuário aplicar um rótulo de retenção do Office 365 (um que esteja configurado para reter conteúdo ou reter e excluir conteúdo) em *qualquer* pasta ou item na caixa de correio, uma retenção será colocada na caixa de correio como se a caixa de correio estivesse colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365. Para obter mais informações, consulte o artigo [identificando caixas de correio em espera porque um rótulo de retenção foi aplicado a uma seção de pasta ou item](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) neste artigo.
+- **Rótulos de retenção do office 365** -se um usuário aplicar um rótulo de retenção do Office 365 (um que esteja configurado para reter conteúdo ou reter e excluir conteúdo) em *qualquer* pasta ou item na caixa de correio, uma retenção será colocada na caixa de correio como se a caixa de correio estivesse colocado em retenção de litígio ou atribuído a uma política de retenção do Office 365. Para obter mais informações, consulte o artigo [identificando caixas de correio em espera porque um rótulo de retenção foi aplicado a uma seção de pasta ou item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) neste artigo.
 
 Para gerenciar caixas de correio em espera, talvez seja necessário identificar o tipo de retenção colocado em uma caixa de correio para que você possa realizar tarefas como alterar a duração da retenção, remover temporariamente ou permanentemente a retenção ou excluir uma caixa de correio de uma política de retenção do Office 365. Nesses casos, a primeira etapa é identificar o tipo de retenção colocado na caixa de correio. E como várias isenções (e diferentes tipos de isenções) podem ser colocadas em uma única caixa de correio, você precisará identificar todas as isenções colocadas em uma caixa de correio se quiser remover ou alterar essas isenções.
 
@@ -138,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Para se conectar ao & de segurança do centro de conformidade do Windows, confira [conectar-se ao PowerShell do centro de conformidade do Office 365 Security &](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Bloqueio In-loco
+### <a name="in-place-holds"></a>Bloqueio in-loco
 
 Execute o seguinte comando no PowerShell do Exchange Online para identificar o bloqueio in-loco aplicado à caixa de correio. Use o GUID do bloqueio in-loco identificado na etapa 1. O comando exibe o nome da retenção e uma lista das caixas de correio às quais o bloqueio se aplica.
 
@@ -209,4 +210,4 @@ Após identificar as isenções aplicadas a uma caixa de correio, você pode exe
 
 - [Excluir uma caixa de correio inativa no Office 365](delete-an-inactive-mailbox.md)
 
-- [Excluir itens na pasta de Itens recuperáveis de caixas de correio baseadas em nuvem em retenção](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+- [Excluir itens da pasta itens recuperáveis das caixas de correio baseadas em nuvem em espera](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
