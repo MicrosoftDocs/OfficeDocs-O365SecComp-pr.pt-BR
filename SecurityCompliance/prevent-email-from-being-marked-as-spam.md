@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670646"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936701"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 

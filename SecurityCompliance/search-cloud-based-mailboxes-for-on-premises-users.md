@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use a ferramenta de pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar e exportar dados de chat do MicrosoftTeams (chamados chat 1xN) para usuários locais em uma implantação híbrida do Exchange.
-ms.openlocfilehash: 148a5766342fcdd52e0505a59729cad3d2993908
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296694"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935226"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Pesquisando caixas de correio baseadas em nuvem para usuários locais no Office 365
 
@@ -32,7 +32,7 @@ Estes são os requisitos e limitações para configurar e configurar e Pesquisar
     
 - A caixa de correio baseada em nuvem para usuários locais é usada apenas para dados de chat de equipes de repositório. Um usuário local não pode entrar na caixa de correio baseada em nuvem ou acessar de qualquer forma. Ele não pode ser usado para enviar ou receber mensagens de email. 
     
-- Você precisa enviar uma solicitação ao suporte da Microsoft para permitir que sua organização pesquise dados de chat de equipes nas caixas de correio baseadas em nuvem para usuários locais. ConFira [como arquivar uma solicitação com o suporte da Microsoft para habilitar &amp; esse recurso no centro de conformidade de segurança](#filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center) neste artigo. 
+- Você precisa enviar uma solicitação ao suporte da Microsoft para permitir que sua organização pesquise dados de chat de equipes nas caixas de correio baseadas em nuvem para usuários locais. ConFira [como arquivar uma solicitação com o suporte da Microsoft para habilitar esse recurso](#filing-a-request-with-microsoft-support-to-enable-this-feature) neste artigo. 
     
  **Observação:** As conversas de canal do teams sempre são armazenadas na caixa de correio baseada em nuvem associada à equipe. Isso significa que você pode usar a pesquisa de conteúdo para pesquisar conversas de canal sem ter que arquivar uma solicitação de suporte. Para obter mais informações sobre como Pesquisar conversas de canal de equipes, consulte [searchIng Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
@@ -46,7 +46,7 @@ O gráfico a seguir mostra o fluxo de trabalho de como os dados de chat do Micro
   
 Além desse novo recurso, você ainda pode usar a pesquisa de conteúdo para pesquisar, Visualizar e exportar o conteúdo do teams no site do SharePoint baseado na nuvem e na caixa de correio do Exchange associada a todos os dados de chat do Microsoft Team e do 1xN Teams na caixa de correio do Exchange Online para usuários baseados em nuvem.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center"></a>Arquivar uma solicitação com o suporte da Microsoft para habilitar esse recurso &amp; no centro de conformidade de segurança
+## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Como arquivar uma solicitação com o suporte da Microsoft para habilitar esse recurso
 
 Você deve arquivar uma solicitação com o suporte da Microsoft para permitir que sua organização Use a interface gráfica do &amp; usuário no centro de conformidade de segurança para pesquisar dados de chat de equipes nas caixas de correio baseadas em nuvem para usuários locais. Observe que esse recurso está disponível no PowerShell do centro &amp; de conformidade de segurança do Office 365. Você não precisa enviar uma solicitação de suporte para usar o PowerShell para pesquisar dados de chat do teams para usuários locais. 
   

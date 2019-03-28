@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Edite o registro do Windows no computador local para desabilitar relatórios ao exportar os resultados de uma pesquisa de conteúdo do centro de segurança &amp; do Office 365 Comliance. A desabilitação desses relatórios pode acelerar o tempo de download e poupar espaço em disco.
-ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213471"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936711"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Desabilitar relatórios ao exportar resultados de pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
 
@@ -97,7 +97,7 @@ Se você desabilitou os relatórios Results. csv e manifest. XML criando os arqu
   
 Os arquivos Results. csv e manifest. xml contêm informações adicionais sobre o conteúdo que foi exportado.
   
-- **Results. csv** um documento do Excel que contém informações sobre cada item que é baixado como resultado da pesquisa. Para email, o log de resultados contém informações sobre cada mensagem, incluindo: 
+- **Results. csv** um documento do Excel que contém informações sobre cada item que é baixado como resultado da pesquisa. Para emails, o log do resultado contém informações sobre cada mensagem, incluindo: 
     
   - O local da mensagem na caixa de correio de origem (inclusive se a mensagem está na caixa de correio principal ou de arquivo morto).
     

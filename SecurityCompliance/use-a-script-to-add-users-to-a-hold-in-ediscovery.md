@@ -14,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Execute um script para adicionar rapidamente as caixas de correio e os sites do OneDrive for Business a uma nova retenção associada a um caso de descoberta eletrônica no &amp; centro de conformidade de segurança do Office 365.
-ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214281"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935236"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Usar um script para adicionar usuários a uma retenção em caso de descoberta eletrônica no centro de conformidade &amp; de segurança do Office 365
 
@@ -29,7 +29,7 @@ O script solicita o nome do domínio meusite da sua organização (por exemplo, 
   
 Estas são as etapas para fazer isso:
   
-[Etapa 1: Instalar o Shell de gerenciamento do SharePoint Online](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step1)
+[Etapa 1: Instalar o Shell de gerenciamento do SharePoint Online](#step-1-install-the-sharepoint-online-management-shell)
   
 [Etapa 2: gerar uma lista de usuários](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
   

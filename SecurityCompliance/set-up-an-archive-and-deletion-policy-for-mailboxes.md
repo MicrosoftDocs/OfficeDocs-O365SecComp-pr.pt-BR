@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Criar uma política de arquivamento e exclusão no Office 365 que move automaticamente itens para a caixa de correio de arquivo morto de um usuário.
-ms.openlocfilehash: a32c6607ec43634e317ee92b8fed6698e3a5c3b9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297004"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935266"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar uma política de arquivo morto e exclusão para caixas de correio em sua organização do Office 365
 
@@ -61,7 +61,7 @@ A primeira etapa é habilitar a caixa de correio de arquivo morto para cada usu�
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 usando sua conta de administrador global.
+2. Sign in to Office 365 using your global administrator account.
     
     
 3. No centro de &amp; conformidade de segurança, vá para **arquivo**de **governança** \> de dados.
@@ -191,7 +191,7 @@ Após criar as marcas de retenção personalizadas, a próxima etapa é criar um
     
     É exibida uma lista das marcas de retenção em sua organização. Observação as marcas personalizadas que você criou na etapa 2 são exibidas.
     
-5. Adicione as 9 marcas de retenção realçadas na captura de tela a seguir (essas marcas são descritas em mais detalhes na seção [mais informações](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) ). Para adicionar uma marca de retenção, selecione-a e clique em **Adicionar**. 
+5. Adicione as 9 marcas de retenção realçadas na captura de tela a seguir (essas marcas são descritas em mais detalhes na seção [mais informações](#more-information) ). Para adicionar uma marca de retenção, selecione-a e clique em **Adicionar**. 
     
     ![Adicionar marcas de retenção à nova política de retenção](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
@@ -210,7 +210,7 @@ Após criar as marcas de retenção personalizadas, a próxima etapa é criar um
 
 Quando uma nova caixa de correio é criada, uma política de retenção chamada Default MRM Policy é atribuída por padrão. Nesta etapa, você substituirá essa política de retenção (porque uma caixa de correio pode ter apenas uma política de retenção atribuída a ela), atribuindo a nova política de retenção que você criou na etapa 3 às caixas de correio do usuário em sua organização. Esta etapa pressupõe que você atribuirá a nova política a todas as caixas de correio em sua organização.
   
-1. No EAC, acesse **Destinatários ** \> **Caixas de Correio**.
+1. No EAC, vá até **Destinatários** \> **Caixas de Correio**.
     
     É exibida uma lista de todas as caixas de correio de usuário em sua organização. 
     
@@ -279,7 +279,7 @@ Aqui estão as etapas para se conectar ao PowerShell do Exchange Online e, em se
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
-Isso é tudo! Você configurou uma política de arquivamento e exclusão para a organização Alpine House.
+Isso é tudo. Você configurou uma política de arquivamento e exclusão para a organização Alpine House.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Opcion Etapa 6: tornar a nova política de retenção o padrão para sua organização
 
@@ -303,7 +303,7 @@ Na etapa 4, você precisa atribuir a nova política de retenção a caixas de co
 
 ## <a name="more-information"></a>Mais informações
 
-- Como a idade de retenção é calculada? A idade de retenção de itens de caixa de correio é calculada a partir da data de entrega ou da data de criação de itens como mensagens de rascunho que não são enviadas, mas são criadas pelo usuário. Quando o assistente de pasta gerenciada processa itens em uma caixa de correio, ele marca uma data de início e uma data de expiração para todos os itens que têm marcas de retenção com a ação de retenção excluir e permitir recuperação ou excluir permanentemente. Os itens que têm uma marca de arquivo morto são carimbados com uma data de movimentação. 
+- Como a idade de retenção é calculada? A idade de retenção de itens de caixa de correio é calculada a partir da data de entrega ou da data de criação de itens como mensagens de rascunho que não são enviadas, mas são criadas pelo usuário. Quando o Assistente de Pasta Gerenciada processa itens em uma caixa de correio, ele insere uma data inicial e uma data de expiração para todos os itens com marcas de retenção com a ação de retenção Excluir e Permitir Recuperação ou Excluir Permanentemente. Os itens que têm uma marca de arquivo morto são carimbados com uma data de movimentação. 
     
 - A tabela a seguir fornece mais informações sobre cada marca de retenção que é adicionada à política de retenção personalizada que foi criada seguindo as etapas deste tópico.
     
@@ -312,12 +312,12 @@ Na etapa 4, você precisa atribuir a nova política de retenção a caixas de co
     |Mover para arquivo morto da Alpine House 3 anos  <br/> |Move itens que são 1095 dias (3 anos) de idade para a caixa de correio de arquivo morto.  <br/> |Personalizado (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivo morto e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de política padrão (arquivo morto); Essa marca é aplicada automaticamente à caixa de correio inteira.  <br/> |
     |Alpine House 7 ano excluir permanentemente  <br/> |Exclui permanentemente os itens na caixa de correio principal ou na caixa de correio de arquivo morto quando eles têm 7 anos de idade.  <br/> |Personalizado (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivo morto e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de política padrão (exclusão); Essa marca é aplicada automaticamente à caixa de correio inteira.  <br/> |
     |Alpine House itens excluídos 5 anos excluir e permitir recuperação  <br/> |Exclui itens da pasta itens excluídos que têm 5 anos de idade. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Personalizado (consulte [etapa 2: criar novas marcas de retenção para as políticas de arquivo morto e exclusão](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Marca de política de retenção (itens excluídos); Essa marca é aplicada automaticamente a itens na pasta itens excluídos.  <br/> |
-    |Itens recuperáveis 14 dias mover para o arquivo morto  <br/> |Move itens que estão na pasta itens recuperáveis por 14 dias para a pasta itens recuperáveis na caixa de correio de arquivo morto.  <br/> |Integração  <br/> |Marca de política de retenção (itens recuperáveis); Essa marca é aplicada automaticamente a itens na pasta itens recuperáveis.  <br/> |
-    |Lixo eletrônico  <br/> |Exclui permanentemente os itens que estão na pasta lixo eletrônico por 30 dias. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Integração  <br/> |Marca de política de retenção (lixo eletrônico); Essa marca é aplicada automaticamente a itens na pasta lixo eletrônico.  <br/> |
-    |Excluir em 1 mês  <br/> |Exclui permanentemente os itens que têm 30 dias de idade. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Integração  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
-    |Excluir em 1 ano  <br/> |Exclui permanentemente os itens que têm 365 dias de idade. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Integração  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
-    |Nunca excluir  <br/> |Essa marca impede que itens sejam excluídos por uma política de retenção.  <br/> |Integração  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
-    |Pessoal: mover para arquivo morto em 1 ano  <br/> |Move itens para a caixa de correio de arquivo morto após 1 ano.  <br/> |Integração  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
+    |Itens recuperáveis 14 dias mover para o arquivo morto  <br/> |Move itens que estão na pasta itens recuperáveis por 14 dias para a pasta itens recuperáveis na caixa de correio de arquivo morto.  <br/> |Interno  <br/> |Marca de política de retenção (itens recuperáveis); Essa marca é aplicada automaticamente a itens na pasta itens recuperáveis.  <br/> |
+    |Lixo eletrônico  <br/> |Exclui permanentemente os itens que estão na pasta lixo eletrônico por 30 dias. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Interno  <br/> |Marca de política de retenção (lixo eletrônico); Essa marca é aplicada automaticamente a itens na pasta lixo eletrônico.  <br/> |
+    |Exclusão de 1 mês  <br/> |Exclui permanentemente os itens que têm 30 dias de idade. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Interno  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
+    |Exclusão de 1 ano  <br/> |Exclui permanentemente os itens que têm 365 dias de idade. Os usuários podem recuperar esses itens por até 14 dias após serem excluídos.<sup>\*</sup> <br/> |Interno  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
+    |Nunca excluir  <br/> |Essa marca impede que itens sejam excluídos por uma política de retenção.  <br/> |Interno  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
+    |Movimentação de 1 anos para arquivo pessoal  <br/> |Move itens para a caixa de correio de arquivo morto após 1 ano.  <br/> |Interno  <br/> |PCs Essa marca pode ser aplicada pelos usuários.  <br/> |
    
     > <sup>\*</sup>Os usuários podem usar a ferramenta recuperar itens excluídos no Outlook e no Outlook na Web (anteriormente conhecido como Outlook Web App) para recuperar um item excluído dentro do período de retenção de itens excluídos, que por padrão é de 14 dias no Exchange Online. Um administrador pode usar o Windows PowerShell para aumentar o período de retenção de itens excluídos para no máximo 30 dias. Para obter mais informações, consulte: [recuperar itens excluídos no Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e [alterar o período de retenção de itens excluídos para uma caixa de correio no Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
   

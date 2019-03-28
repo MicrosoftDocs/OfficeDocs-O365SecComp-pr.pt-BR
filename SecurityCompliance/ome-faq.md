@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagens no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217111"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936781"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -116,7 +116,7 @@ Se você anexar um arquivo PDF a uma mensagem protegida, a mensagem será proteg
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Há suporte para anexos do OneDrive for Business?
 
-Ainda não. Não há suporte para anexos do OneDrive for Business, e os usuários finais não podem criptografar um email que contenha um anexo do OneDrive for Business em nuvem.
+Not yet. Não há suporte para anexos do OneDrive for Business, e os usuários finais não podem criptografar um email que contenha um anexo do OneDrive for Business em nuvem.
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Posso criptografar mensagens automaticamente Configurando políticas?
 

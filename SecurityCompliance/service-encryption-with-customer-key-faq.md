@@ -1,5 +1,5 @@
 ---
-title: Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
+title: PERGUNTAS FREQUENTEs sobre criptografia de serviço com a chave do cliente do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Além da linha de base, a criptografia no nível do volume habilitada por meio do BitLocker e do protocolo DKM, o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para conteúdo do cliente no Office 365, incluindo dados do Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
-ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216501"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936761"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>PERGUNTAS FREQUENTEs sobre criptografia de serviço com a chave do cliente do Office 365
 
 Além da linha de base, a criptografia no nível do volume habilitada por meio do BitLocker e do protocolo DKM, o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para conteúdo do cliente no Office 365, incluindo dados do Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
   
@@ -142,7 +142,7 @@ O Office 365 usa a chave de disponibilidade para disponibilidade de serviço e r
   
 ![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
-Se as chaves do Azure Key Vault de uma única diretiva de criptografia de dados (DEP) não estiverem disponíveis, o Office 365 poderá usar a chave de disponibilidade para mudar para um novo DEP. o Office 365 determina se a chave de disponibilidade para disponibilidade de serviço deve ser usada de forma diferente, dependendo se um atividade iniciada pelo usuário, por exemplo, quando um usuário baixa um email para o cliente do Outlook ou uma atividade iniciada pelo sistema, como indexação de conteúdo da caixa de correio ou para pesquisas de descoberta eletrônica, disparou o processo.
+Se as chaves do Azure Key Vault de uma única diretiva de criptografia de dados (DEP) não estiverem disponíveis, o Office 365 poderá usar a chave de disponibilidade para mudar para uma nova DEP. O Office 365 determina se deve ser usada a chave de disponibilidade para disponibilidade de serviço de maneira diferente, dependendo se uma atividade iniciada pelo usuário, por exemplo, quando um usuário baixa emails para o cliente do Outlook ou uma atividade iniciada pelo sistema, como indexação conteúdo da caixa de correio ou para pesquisas de descoberta eletrônica, disparou o processo.
   
 O Office 365 segue esse processo em resposta às ações iniciadas pelo usuário para determinar se deve usar a chave de disponibilidade para caixas de correio do usuário:
   
@@ -222,7 +222,7 @@ Não. Por definição, as assinaturas de avaliação têm um tempo de vida limit
 
 Além do licenciamento necessário para a chave do cliente, os clientes incorrerão em um custo para o uso do cofre de chaves. Os [detalhes de preços do Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) descrevem o modelo de custo e ajudarão na estimativa. Não há uma maneira de prever o custo exato que qualquer cliente se incorrerá porque os padrões de uso variam. A experiência mostrou que o custo é muito baixo e geralmente está dentro do intervalo de $0.02 a $0.05 por usuário, mais o custo de chaves com suporte a HSM. O custo também variará de acordo com a configuração de registro em log escolhida pelo cliente e a quantidade de armazenamento do Azure usada para os logs do Azure Key Vault. 
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para começar a usar a chave do cliente, consulte [controle dos dados no Office 365 usando a chave do cliente](controlling-your-data-using-customer-key.md).
