@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurar políticas de links seguros para proteger sua organização contra links mal-intencionados nos arquivos do Word, Excel, PowerPoint e Visio, bem como em mensagens de email.
-ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296824"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862473"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de links seguros de ATP do Office 365
 
@@ -33,13 +33,13 @@ Os [links seguros de ATP](atp-safe-links.md), um recurso da [proteção avançad
 
 ## <a name="what-to-do"></a>O que fazer 
   
-1. [Examine os pré-requisitos](#review-the-prerequisites).
+1. Examine os pré-requisitos.
     
-2. [Revise e edite a política de links seguros padrão ATP que se aplica a todos](#define-an-atp-safe-links-policy-that-applies-to-everyone). Por exemplo, você pode [configurar sua lista de URLs bloqueadas personalizada para links seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Revise e edite a política de links seguros padrão ATP que se aplica a todos. Por exemplo, você pode [configurar sua lista de URLs bloqueadas personalizada para links seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Adicione ou edite políticas para destinatários de email específicos](#add-a-policy-for-specific-email-recipients), incluindo [a configuração da lista de URLs de "não reescrever" personalizada para links seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+3. Adicione ou edite políticas para destinatários de email específicos, incluindo [a configuração da lista de URLs de "não reescrever" personalizada para links seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. [Saiba mais sobre as opções de política de links seguros de ATP](#learn-about-atp-safe-links-policy-options) (neste artigo), incluindo as configurações para alterações recentes.
+4. Saiba mais sobre as opções de política de links seguros de ATP (neste artigo), incluindo configurações para alterações recentes.
     
 ## <a name="step-1-review-the-prerequisites"></a>Etapa 1: reVisar os pré-requisitos
 
@@ -47,7 +47,7 @@ Os [links seguros de ATP](atp-safe-links.md), um recurso da [proteção avançad
     
 - Verifique se você tem as permissões necessárias. Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir: <br>
 
-    |Função  |Onde/como a atribuição  |
+    |Role  |Onde/como a atribuição  |
     |---------|---------|
     |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
     |Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
@@ -57,7 +57,7 @@ Os [links seguros de ATP](atp-safe-links.md), um recurso da [proteção avançad
 
 - Certifique-se de que os clientes do Office estão configurados para usar a [autenticação moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (isso é para proteção de links de segurança ATP em documentos do Office).
     
-- [Saiba mais sobre as opções de política de links seguros de ATP](#learn-about-atp-safe-links-policy-options) (neste artigo). 
+- [Saiba mais sobre as opções de política de links seguros de ATP](#step-4-learn-about-atp-safe-links-policy-options) (neste artigo). 
 
 - Aguarde até 30 minutos para que a política nova ou atualizada se espalhe para todos os datacenters do Office 365.
     
@@ -75,7 +75,7 @@ Quando você tiver a [proteção avançada contra ameaças do Office 365](office
     
 5. Na seção **configurações que se aplicam a conteúdo exceto email** , marque (ou desmarque) as opções que você deseja usar. (Recomendamos que você selecione todas as opções.) 
     
-6. Escolha **Salvar**.
+6. Selecione **Salvar**.
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Etapa 3: Adicionar (ou editar) políticas de links seguros de ATP que se aplicam a destinatários de email específicos
 
@@ -107,7 +107,7 @@ Depois de revisar (ou editar) a política de links seguros padrão ATP que se ap
     
   - Na seção **aplica-se** a, escolha **o destinatário é um membro de**e, em seguida, escolha o (s) grupo (s) que você deseja incluir na política. Escolha **Adicionar**e, em seguida, escolha **OK**.
     
-6. Escolha **Salvar**.
+6. Selecione **Salvar**.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Etapa 4: Saiba mais sobre as opções de política de links seguros de ATP
 
@@ -130,13 +130,13 @@ As opções de política padrão se aplicam a todas as pessoas em sua organizaç
 
 |Essa opção  |Faça isto  |
 |---------|---------|
-|**Desligado** <br/> |Não verifica URLs em mensagens de email.  <br/> Permite que você defina uma regra de exceção, como uma regra que não examina URLs em mensagens de email para um grupo específico de destinatários.  <br/> |
-|**Nos** <br/> |Reconfigura URLs para rotear usuários por meio da proteção de links seguros de ATP quando os usuários clicam em URLs em mensagens de email.  <br/> Verifica uma URL quando clicado em uma lista de URLs bloqueadas ou maliciosas.  <br/> |
+|**Desativada** <br/> |Não verifica URLs em mensagens de email.  <br/> Permite que você defina uma regra de exceção, como uma regra que não examina URLs em mensagens de email para um grupo específico de destinatários.  <br/> |
+|**On** <br/> |Reconfigura URLs para rotear usuários por meio da proteção de links seguros de ATP quando os usuários clicam em URLs em mensagens de email.  <br/> Verifica uma URL quando clicado em uma lista de URLs bloqueadas ou maliciosas.  <br/> |
 |**Usar anexos seguros para examinar Conteúdo baixável** <br/> |Quando essa opção é selecionada, as URLs que apontam para o conteúdo baixável são verificadas.  <br/> |
 |**Aplicar links seguros a mensagens enviadas dentro da organização** <br/> | Quando essa opção está disponível e selecionada, a proteção de links de segurança ATP é aplicada a mensagens de email enviadas entre pessoas em sua organização, desde que as contas de email sejam hospedadas no Office 365.  <br/> |
 |**Não rastrear cliques do usuário** <br/> |Quando essa opção é selecionada, clique em dados para URLs em emails de remetentes externos não são armazenados. URL o acompanhamento de links em mensagens de email enviadas dentro da organização atualmente não tem suporte.  <br/> |
 |**Não permitir que os usuários cliquem através da URL original** <br/> |Quando essa opção é selecionada, os usuários não podem continuar após uma [página de aviso](atp-safe-links-warning-pages.md) para uma URL que é determinada como mal-intencionada.  <br/> |
-|**Não Reescreva as seguintes URLs** <br/> |Deixa as URLs como estão. Mantém uma lista personalizada de URLs seguras que não precisam de varredura para um grupo específico de destinatários de email em sua organização.  ConFira [Configurar uma lista de URLs de "não reconfigurar" personalizada usando links seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obter mais detalhes, incluindo as alterações recentes de suporte para\*asteriscos curinga ().<br/> |
+|**Não Reescreva as seguintes URLs** <br/> |Deixa as URLs como estão. Mantém uma lista personalizada de URLs seguras que não precisam de varredura para um grupo específico de destinatários de email em sua organização.  ConFira [Configurar uma lista de URLs de "não reconfigurar" personalizada usando links seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obter mais detalhes, incluindo as alterações recentes de suporte para\*asteriscos curinga ().  <br/> |
    
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,74 +1,53 @@
 ---
-title: Vídeos de introdução ao EOP
+title: O que é EOP
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: A série de vídeos a seguir ajudará você a configurar e usar o serviço de filtragem de email hospedado pelo Exchange Online Protection (EOP).
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: Este documento introdutório o ajudará a entender o Exchange Online Protection (EOP) e uma terminologia importante. Isso se aplica aos clientes do Office 365 que estão protegendo caixas de correio hospedadas em nuvem do Exchange Online e clientes autônomos do EOP que estão protegendo caixas de correio locais, como o Exchange Server 2016.
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926711"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950428"
 ---
-# <a name="videos-for-getting-started-with-eop"></a>Vídeos de introdução ao EOP
+## <a name="what-is-exchange-online-protection-eop"></a>O que é proteção do Exchange Online (EOP)
 
-A série de vídeos a seguir ajudará você a configurar e usar o serviço de filtragem de email hospedado pelo Exchange Online Protection (EOP).
-  
-> [!NOTE]
-> Antes de iniciar as tarefas descritas nos vídeos, recomendamos que você configure o fluxo de emails. Para saber mais, consulte o tópico [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
-  
-Estes vídeos são sobre como adaptar as configurações antispam para atender às necessidades da sua organização. Para emails de entrada que trafeguem do serviço para a sua organização, isso inclui criar listas de remetentes e destinatários confiáveis com base nos endereços IP e definir configurações de filtro de conteúdo. Há também um vídeo mostrando como os administradores podem localizar e liberar mensagens de spam filtradas por conteúdo ou mensagens que correspondam a uma regra de fluxo de emails (também conhecida como regra de transporte) que foram enviadas para a quarentena e também como relatar mensagens de spam para nos ajudar a melhorar o serviço.
-  
-- Configurar as Listas de permissão de IP e de bloqueio de IP no EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    Para obter mais detalhes, consulte o tópico [Configurar a política de filtro de conexão](../configure-the-connection-filter-policy.md) . 
-    
-- Configurar a filtragem de conteúdo de spam no EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    Para obter mais detalhes, consulte o tópico [configurar suas políticas de filtro de spam](../configure-your-spam-filter-policies.md) . 
-    
-- Localizar e liberar as mensagens da quarentena
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    Para obter mais detalhes, consulte o tópico [Localizar e liberar mensagens em quarentena como um administrador](../find-and-release-quarantined-messages-as-an-administrator.md). 
-    
-Você também pode querer configurar a política de spam de saída porque desejará monitorar se está sendo enviado algum spam na sua organização. Confira o vídeo de spam de saída para saber como.
-  
-- Configurar a Política de Spam de Saída
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    Para obter mais detalhes, consulte o [Configure the Outbound Spam Policy](../configure-the-outbound-spam-policy.md)
-    
-O EOP também tem configurações para tratar malware que é detectado pelo serviço, como descrito pelo vídeo de filtragem antimalware.
-  
-- Configurar a política antimalware
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    Para obter mais detalhes, consulte o tópico [Configurar políticas antimalware](../configure-anti-malware-policies.md). 
-    
-Para filtrar e rotear mensagens com base em condições específicas definidas, com base na política ou nas normas da empresa, convém assistir ao vídeo sobre como criar regras de fluxo de emails.
-  
-- Configurar regras de fluxo de mensagens do Exchange no EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    Para obter mais detalhes, consulte o tópico sobre [regras de fluxo de emails (regras de transporte) no Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se você usar o EOP autônomo ou consulte [regras de fluxo de emails (regras de transporte) no tópico do Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se usar o Exchange Online.
-    
-Se estiver interessado em configurar o serviço executando scripts na linha de comando, o vídeo do PowerShell remoto o ajudará a começar.
-  
-- Usar o PowerShell remoto no EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    Para saber mais, consulte o tópico [PowerShell da Proteção do Exchange Online](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) se desejar usar o EOP autônomo ou veja o tópico [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) se for usar o Exchange Online. 
-    
+O Exchange Online Protection (EOP) é um serviço de filtragem de email baseado em nuvem que ajuda a proteger sua organização contra spam e malware. Se você tiver caixas de correio no Office 365, elas serão automaticamente protegidas por EOP, uma vez que ela faz parte do serviço. Isso inclui as organizações que têm caixas de correio no Office 365 e no local, que costuma ser conhecido como um cenário híbrido. O EOP autônomo também está disponível para clientes que não têm caixas de correio na nuvem, mas querem proteger suas caixas de correio locais. 
 
+O EOP tenta filtrar o lixo eletrônico, mantendo a caixa de entrada limpa do conteúdo que os usuários não desejam ver. Normalmente, o lixo eletrônico é enviado para a pasta lixo eletrônico. Alguns usuários gostam de verificar se a filtragem está fazendo o que eles desejam, para que a pasta lixo eletrônico seja uma maneira fácil de os usuários verificarem por conta própria.  
+
+> [!TIP]
+> É uma boa coisa quando o lixo eletrônico ou emails mal incorretos entram na pasta lixo eletrônico automaticamente. O serviço fará o que for necessário com base no que o padrão ou o estado de configurações personalizadas do administrador. Em outras palavras, os usuários não devem se preocupar em ver uma grande quantidade de mensagens de spam na pasta lixo eletrônico. Se os administradores preferem mover todo o lixo eletrônico para fora da visão, então a quarentena deve ser configurada. Para obter mais detalhes, consulte o artigo sobre [mensagens de email em quarentena no Office 365](../quarantine-email-messages.md) .
+
+## <a name="important-terms"></a>Termos importantes
+
+**Entrada:** Mensagens que estão chegando no Office 365.
+
+**Saída:** Mensagens que estão saindo do Office 365.
+
+**Interno:** Mensagens de alguém dentro da organização para alguém dentro da organização. Isso inclui os clientes que estão em cenários híbridos e uma caixa de correio pode ser local e a outra caixa de correio está na nuvem.
+
+**Falso negativo (FN):** Spam e outros lixos que são enviados incorretamente para a caixa de entrada.
+
+**Falso positivo (FP):** Mensagens legítimas que são marcadas incorretamente como spam e colocadas na pasta lixo eletrônico ou quarentena.
+
+**Spam, também conhecido como email não solicitado:** Isso vem na forma de propaganda comercial, correntes, correspondências políticas, etc. Essa é uma mensagem de email informando que os usuários não se inscrevem e de spammers que estão tentando solicitar produtos ou tentar confirmar a fraude.
+
+**Phish:** Phishing é um tipo especial de spam destinado a induzir você a fornecer informações pessoais com o objetivo de confirmar o roubo de identidade ou fraude. Esse tipo de mensagem normalmente contém um link ou anexo mal-intencionado, mas nem sempre.
+
+**Spoof:** Falsificação é quando os spammers forjam o cabeçalho FROM para que as mensagens pareçam ter sido originadas de alguém ou de outro lugar que não seja a fonte real. Isso pode ser spam, mas usado com mais frequência para usuários de Phish.
+
+**Representação:** Esse tipo de spam também é uma maneira de forjar o endereço do remetente, mas isso é feito modificando parte do nome ou domínio, de forma que ele se pareça com a fonte real. Por exemplo, Bi11@micr0s0ft.com, onde "l" no Bill foi realmente o número onze e o "o" no Microsoft foi substituído pelo número zero.
+
+**Em massa:** Em geral, o email em massa é solicitado por usuários, embora às vezes as empresas vendem informações para outras empresas. É comum que os usuários se inscrevam intencionalmente no email em massa (ou seja, newletters), mas se esqueçam mais tarde e pense que é spam. O email em massa se torna spam quando os emails em massa enviam mais do que os níveis de inscrição e de reclamação ficam muito altos.

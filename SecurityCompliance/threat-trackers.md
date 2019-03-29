@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os rastreadores de ameaças, incluindo novos rastreadores dignos de importância, para ajudar sua organização a se manter informado sobre segurança.
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693070"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862513"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de ameaça-novidade e digno de sessão
 
@@ -38,7 +38,7 @@ A maioria das páginas de rastreador inclui os números de tendência atualizado
   
 ![Exemplo de informações de campanha no Explorer](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Os rastreadores são apenas alguns dos vários recursos excelentes que você obtém com o [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Os rastreadores de [](threat-trackers.md#notey)ameaças incluem rastreadores dignos de [tendências](threat-trackers.md#trending), rastreadores, [consultas rastreadas](threat-trackers.md#trackedq)e [consultas salvas](threat-trackers.md#savedq).
+Os rastreadores são apenas alguns dos vários recursos excelentes que você obtém com o [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Os rastreadores de ameaças incluem [Noteworth rastreadores](#noteworthy-trackers), rastreadores de [tendências](#trending-trackers), [consultas rastreadas](#tracked-queries)e [consultas salvas](#saved-queries).
   
 Para exibir e usar seus rastreadores de ameaça para sua organização, acesse o &amp; centro de conformidade[https://protection.office.com](https://protection.office.com)de segurança () e escolha **Threat Management** \> **Threat Tracker**.
   

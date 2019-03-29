@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para administradores: saiba como importar em massa os arquivos PST da sua organização para as caixas de correio do Office 365 copiando arquivos PST para um disco rígido e, em seguida, enviá-los para a Microsoft. '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354743"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950468"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Usar o envio de unidade para importar arquivos PST da sua organização para o Office 365
 
@@ -86,16 +86,16 @@ Para perguntas frequentes sobre como usar o envio de unidade para importar arqui
     
 - Pode ser que o disco rígido seja enviado para a Microsoft através de uma remessa internacional. Se esse for o caso, você é responsável por garantir que o disco rígido e os dados incluídos nele sejam importados e/ou exportados de acordo com a legislação vigente. Antes de enviar um disco rígido, peça aos seus consultores para verificar se a unidade e os dados podem ser enviados legalmente para o datacenter identificado da Microsoft. Isso ajudará a garantir que o material chegue à Microsoft em tempo hábil.
     
-- Esse procedimento implica copiar e salvar uma chave do armazenamento seguro e uma chave de criptografia BitLocker. Não deixe de tomar medidas para proteger estas chaves, do mesmo modo que o faria com senhas ou outras informações relacionadas à segurança. Por exemplo, você pode salvá-las em um documento do Microsoft Word protegido por senha ou em uma unidade USB criptografada. Consulte a seção [mais informações](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) para obter um exemplo dessas chaves. 
+- Esse procedimento implica copiar e salvar uma chave do armazenamento seguro e uma chave de criptografia BitLocker. Não deixe de tomar medidas para proteger estas chaves, do mesmo modo que o faria com senhas ou outras informações relacionadas à segurança. Por exemplo, você pode salvá-las em um documento do Microsoft Word protegido por senha ou em uma unidade USB criptografada. Consulte a seção [mais informações](#more-information) para obter um exemplo dessas chaves. 
     
-- Depois que os arquivos PST são importados para uma caixa de correio do Office 365, a configuração de retenção da caixa de correio é ativada por uma duração indefinida. Isso significa que a política de retenção atribuída à caixa de correio não será processada até que você desative o bloqueio de retenção ou defina uma data para desativar o bloqueio. Por que fazemos isso? Se as mensagens importadas para uma caixa de correio forem antigas, elas poderão ser excluídas permanentemente (descartadas) porque o período de retenção expirou com base nas configurações de retenção configuradas para a caixa de correio. Colocar a caixa de correio no bloqueio de retenção fornecerá ao proprietário da caixa de correio o tempo para gerenciar essas mensagens importadas recentemente ou dará tempo para alterar as configurações de retenção da caixa de correio. Consulte a seção [mais informações](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) para obter sugestões sobre como gerenciar a retenção. 
+- Depois que os arquivos PST são importados para uma caixa de correio do Office 365, a configuração de retenção da caixa de correio é ativada por uma duração indefinida. Isso significa que a política de retenção atribuída à caixa de correio não será processada até que você desative o bloqueio de retenção ou defina uma data para desativar o bloqueio. Por que fazemos isso? Se as mensagens importadas para uma caixa de correio forem antigas, elas poderão ser excluídas permanentemente (descartadas) porque o período de retenção expirou com base nas configurações de retenção configuradas para a caixa de correio. Colocar a caixa de correio no bloqueio de retenção fornecerá ao proprietário da caixa de correio o tempo para gerenciar essas mensagens importadas recentemente ou dará tempo para alterar as configurações de retenção da caixa de correio. Consulte a seção [mais informações](#more-information) para obter sugestões sobre como gerenciar a retenção. 
     
 - Por padrão, o tamanho máximo de mensagens que podem ser recebidas por uma caixa de correio do Office 365 é de 35 MB. Isso ocorre porque o valor padrão para a propriedade *MaxReceiveSize* de uma caixa de correio é definido como 35 MB. No enTanto, o limite do tamanho máximo de recebimento de mensagens no Office 365 é de 150 MB. Portanto, se você importar um arquivo PST que contenha um item maior do que 35 MB, o serviço de importação do Office 365 alteraremos automaticamente o valor da propriedade *MaxReceiveSize* na caixa de correio de destino para 150 MB. Isso permite que as mensagens até 150 MB sejam importadas para as caixas de correio do usuário. 
     
     > [!TIP]
     > Para identificar o tamanho de recebimento da mensagem de uma caixa de correio, você pode executar este comando no `Get-Mailbox <user mailbox> | FL MaxReceiveSize`PowerShell do Exchange Online:. 
   
-- Você pode importar arquivos PST para uma caixa de correio inativa no Office 365. Para fazer isso, especifique o GUID da caixa de correio inativa no `Mailbox` parâmetro no arquivo de mapeamento de importação de PST. Consulte [etapa 3: criar o arquivo de mapeamento de importação de PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) para obter mais informações. 
+- Você pode importar arquivos PST para uma caixa de correio inativa no Office 365. Para fazer isso, especifique o GUID da caixa de correio inativa no `Mailbox` parâmetro no arquivo de mapeamento de importação de PST. Consulte [etapa 3: criar o arquivo de mapeamento de importação de PST](#step-3-create-the-pst-import-mapping-file) para obter mais informações. 
     
 - Em uma implantação híbrida do Exchange, você pode importar arquivos PST para uma caixa de correio de arquivo morto baseado na nuvem para um usuário cuja caixa de correio principal esteja no local. Para fazer isso, faça o seguinte no arquivo de mapeamento de importação de PST:
     
@@ -103,7 +103,7 @@ Para perguntas frequentes sobre como usar o envio de unidade para importar arqui
     
   - Especifique o valor **true** no `IsArchive` parâmetro. 
     
-    Consulte [etapa 3: criar o arquivo de mapeamento de importação de PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) para obter mais informações. 
+    Consulte [etapa 3: criar o arquivo de mapeamento de importação de PST](#step-3-create-the-pst-import-mapping-file) para obter mais informações. 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Etapa 1: baixar a chave de armazenamento seguro e a ferramenta de importação de PST
 
@@ -308,7 +308,7 @@ A próxima etapa é criar o trabalho de importação de PST no serviço de impor
 A próxima etapa é enviar o disco rígido para a Microsoft e, em seguida, fornecer o número de controle para a entrega e retornar informações de remessa para o trabalho de envio da unidade. Depois que a unidade for recebida pela Microsoft, levará entre 7 e 10 dias úteis para que o pessoal do Data Center carregue seus arquivos PST para a área de armazenamento do Azure para sua organização.
   
 > [!NOTE]
-> Se você não fornecer o número de controle e retornar as informações de remessa dentro de 14 dias da criação do trabalho de importação, o trabalho de importação será expirado. Se isso acontecer, você terá que criar um novo trabalho de importação de envio de unidades (consulte [etapa 4: criar um trabalho de importação de PST no Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) e enviar novamente o arquivo de unidade e o arquivo de mapeamento de importação de PST. 
+> Se você não fornecer o número de controle e retornar as informações de remessa dentro de 14 dias da criação do trabalho de importação, o trabalho de importação será expirado. Se isso acontecer, você terá que criar um novo trabalho de importação de envio de unidades (consulte [etapa 4: criar um trabalho de importação de PST no Office 365](#step-4-create-a-pst-import-job-in-office-365)) e enviar novamente o arquivo de unidade e o arquivo de mapeamento de importação de PST. 
   
 ### <a name="ship-the-hard-drive"></a>Enviar o disco rígido
 
@@ -502,7 +502,7 @@ Para instalar o Azure Storage Explorer e se conectar à sua área de armazenamen
     
   - Após um determinado período de tempo, você pode desativar o bloqueio de retenção executando o `Set-Mailbox -RetentionHoldEnabled $false` comando. Para obter instruções, consulte [colocar uma caixa de correio em retenção](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Você pode configurar a retenção para que ela esteja desativada em alguma data no futuro. Para fazer isso, execute o `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por exemplo, supondo que a data de hoje seja 1º de julho de 2016 e você queira que a retenção tenha sido desativada em 30 dias, execute `Set-Mailbox -EndDateForRetentionHold 8/1/2016`o seguinte comando:. Neste cenário, você deixaria a propriedade *RentionHoldEnabled* definida como *true* . Para obter mais informações, consulte [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Você pode configurar a retenção para que ela esteja desativada em alguma data no futuro. Para fazer isso, execute o `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por exemplo, supondo que a data de hoje seja 1º de junho de 2016 e você queira que a retenção tenha sido desativada em 30 dias, execute `Set-Mailbox -EndDateForRetentionHold 7/1/2016`o seguinte comando:. Neste cenário, você deixaria a propriedade *RentionHoldEnabled* definida como *true*. Para obter mais informações, consulte [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
   - Você pode alterar as configurações da política de retenção atribuída à caixa de correio para que os itens mais antigos que foram importados não sejam imediatamente excluídos ou movidos para a caixa de correio de arquivo morto do usuário. Por exemplo, você poderia estender a idade de retenção para uma política de exclusão ou arquivamento atribuída à caixa de correio. Neste cenário, você desativaria a retenção da caixa de correio depois de alterar as configurações da política de retenção. Para obter mais informações, consulte [Configurar uma política de arquivo morto e exclusão para caixas de correio em sua organização do Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

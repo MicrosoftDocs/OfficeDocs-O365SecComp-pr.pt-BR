@@ -1,5 +1,5 @@
 ---
-title: Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
+title: Configurar limites de conformidade para investigações de descoberta eletrônica no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: 2671711d5b37f9f0f8793bb528741dc7b6d05680
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296424"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862433"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de descoberta eletrônica no Office 365
 
 Os limites de conformidade criam limites lógicos em uma organização do Office 365 que controlam os locais de conteúdo do usuário (como caixas de correio, sites do SharePoint e contas do OneDrive) que os gerentes de descoberta eletrônica podem pesquisar. Além disso, os limites de conformidade controlam quem pode acessar os casos de descoberta eletrônica usados para gerenciar os recursos jurídicos, humanos ou outras investigações em sua organização. A necessidade de limites de conformidade é geralmente necessária para as corporações de várias nações que precisam respeitar as normas e as regulamentações geográficas, e para governos, que geralmente são divididas em diferentes agências. No Office 365, os limites de conformidade o ajudam a atender a esses requisitos ao executar pesquisas de conteúdo e gerenciar investigações com ocorrências de descoberta eletrônica.
   
@@ -101,7 +101,6 @@ Usando o cenário de limites de conformidade da Contoso, quatro grupos de funç�
 
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Etapa 4: criar um filtro de permissões de pesquisa para reforçar o limite de conformidade
-<a name="step4"> </a>
 
 Depois de criar grupos de função para cada agência, a próxima etapa é criar os filtros de permissão de pesquisa que associam cada grupo de função a sua agência específica e definem o limite de conformidade propriamente dito. Você precisa criar um filtro de permissões de pesquisa para cada agência. Para obter mais informações sobre como criar filtros de permissões de segurança, consulte [Configure Permissions Filtering for Content Search](permissions-filtering-for-content-search.md).
   
@@ -180,39 +179,40 @@ Tenha em mente as seguintes limitações ao gerenciar casos de descoberta eletr�
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Pesquisando e exportando conteúdo em ambientes multiGeográfico
 
-Os filtros de permissões de pesquisa também permitem que você controle onde o conteúdo é encaminhado para exportação e qual datacenter pode ser pesquisado ao pesquisar sites do SharePoint e contas do OneDrive em um [ambiente multigeográfico do SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
+Os filtros de permissões de pesquisa também permitem que você controle onde o conteúdo é encaminhado para exportação e qual datacenter pode ser pesquisado ao pesquisar locais de conteúdo em um [ambiente multigeográfico do SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
-- Exportar resultados de pesquisa de um Data Center específico. Isso significa que você pode especificar o local do data center de onde os resultados da pesquisa serão exportados.
+- **Exportar resultados de pesquisa** -você pode exportar os resultados da pesquisa de caixas de correio do Exchange, sites do SharePoint e contas do onedrive de um Data Center específico. Isso significa que você pode especificar o local do data center de onde os resultados da pesquisa serão exportados.
+
+    Use o parâmetro **Region** para os cmdlets **New-ComplianceSecurityFilter** ou **set-ComplianceSecurityFilter** para criar ou alterar o datacenter ao qual a exportação será roteada.
+  
+    |**Valor do parâmetro**|**Local do datacenter**|
+    |:-----|:-----|
+    |NAM  <br/> |América do Norte (os data centers atuais estão nos EUA)  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Ásia (Pacífico)  <br/> |
+    |CAN <br/> |Canadá
     
-- Direcionar pesquisas de sites do SharePoint e contas do OneDrive para um data center de satélite. Isso significa que você pode especificar o local do data center onde as pesquisas serão executadas.
+- **Pesquisas de conteúdo de roteiro** -você pode rotear as pesquisas de conteúdo de sites do SharePoint e contas do onedrive para um data center de satélite. Isso significa que você pode especificar o local do datacenter onde as pesquisas serão executadas.
     
-Use o parâmetro **Region** para os cmdlets **New-ComplianceSecurityFilter** ou **set-ComplianceSecurityFilter** para criar ou alterar o datacenter ao qual a exportação será roteada.
+    Use os seguintes valores para os valores de parâmetro de **região** para controlar em qual datacenter que as pesquisas de conteúdo serão executadas ao pesquisar sites do SharePoint e locais do onedrive. Observe que a tabela a seguir também mostra quais exportações de datacenter serão roteadas. 
   
-|**Valor do parâmetro**|**Local do Data Center**|
-|:-----|:-----|
-|NAM  <br/> |América do Norte (os data centers reais estão nos EUA)  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Ásia (Pacífico)  <br/> |
-|CAN <br/> |Canadá
+    |**Valor do parâmetro**|**Locais de roteamento de datacenter para exportação**|
+    |:-----|:-----|
+    |NAM  <br/> |Unidos  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Ásia (Pacífico)  <br/> |
+    |CAN  <br/> |Unidos  <br/> |
+    |AUS  <br/> |Ásia (Pacífico)  <br/> |
+    |KOR  <br/> |O Data Center padrão da organização  <br/> |
+    |GBR  <br/> |Europa  <br/> |
+    |JPN  <br/> |Ásia (Pacífico)  <br/> |
+    |IND  <br/> |Ásia (Pacífico)  <br/> |
+    |LAM  <br/> |Unidos  <br/> |
    
-Da mesma forma, você pode usar os valores a seguir para os valores de parâmetros de **região** para controlar em quais data centers as pesquisas de conteúdo serão executadas ao pesquisar o SharePoint e os locais do onedrive. Observe que a tabela a seguir também mostra quais exportações de data centers serão roteadas. 
+> [!NOTE]
+> Se você não especificar o parâmetro **Region** para um filtro de permissões de pesquisa, a região padrão do SharePoint da organização será pesquisada e os resultados da pesquisa serão exportados para o datacenter mais próximo. 
   
-|**Valor do parâmetro**|**Locais de roteamento do Data Center para exportação**|
-|:-----|:-----|
-|NAM  <br/> |EUA  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Ásia (Pacífico)  <br/> |
-|CAN  <br/> |EUA  <br/> |
-|AUS  <br/> |Ásia (Pacífico)  <br/> |
-|KOR  <br/> |O Data Center padrão da organização  <br/> |
-|GBR  <br/> |Europa  <br/> |
-|JPN  <br/> |Ásia (Pacífico)  <br/> |
-|IND  <br/> |Ásia (Pacífico)  <br/> |
-|LAM  <br/> |EUA  <br/> |
-   
- **Observação:** Se você não especificar o parâmetro Region para um filtro de permissões de pesquisa, a região padrão do SharePoint da organização será pesquisada e os resultados da pesquisa serão exportados para o Data Center mais próximo. 
-  
-Aqui estão exemplos de como usar o parâmetro **-Region** ao criar filtros de permissão de pesquisa para limites de conformidade. Isso pressupõe que a quarta subsidiária de café está localizada na América do Norte e que a Coho Winery está na Europa. 
+Aqui estão exemplos de como usar o parâmetro **Region** ao criar filtros de permissão de pesquisa para limites de conformidade. Isso pressupõe que a quarta subsidiária de café está localizada na América do Norte e que a Coho Winery está na Europa. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM

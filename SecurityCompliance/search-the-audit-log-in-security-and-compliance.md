@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança do Office 365 para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411016"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935346"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365
+
+## <a name="introduction"></a>Introdução
 
 Precisa localizar se um usuário exibir um documento específico ou limpar um item de sua caixa de correio? Em caso afirmativo, você pode usar o centro &amp; de conformidade de segurança do Office 365 para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. Por que um log de auditoria unificado? Como é possível pesquisar os seguintes tipos de atividade de usuário e administrador no Office 365:
   
@@ -57,7 +59,7 @@ Precisa localizar se um usuário exibir um documento específico ou limpar um it
 
 - Atividade de Analista e administração no Microsoft Workplace Analytics
 
-- Atividade de usuário e administrador no PowerApps
+- Atividade de usuário e administrador no Microsoft PowerApps
     
    
 ## <a name="before-you-begin"></a>Antes de começar
@@ -296,12 +298,11 @@ Clique em um dos seguintes links para ir para uma tabela específica.
 |:-----|:-----|:-----|
 |[Atividades de arquivo e página](#file-and-page-activities)<br/> |[Atividades de pasta](#folder-activities)<br/> |[Compartilhamento e acesso às atividades de solicitação](#sharing-and-access-request-activities)<br/> |
 |[Atividades de sincronização](#synchronization-activities)<br/> |[Atividades de administração do site](#site-administration-activities)<br/> |[Atividades de caixa de correio do Exchange](#exchange-mailbox-activities)<br/> |
-|[Política de retenção e atividades de rótulo](#retention-policy-and-label-activities) <br/>|[Atividades do Sway](#sway-activities) <br/> |[Atividades de administração de usuário](#user-administration-activities) <br/> 
-|[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> |[Atividades de administração de aplicativos](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |
-|[Atividades de administração de diretório](#directory-administration-activities) <br/> |[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades do Power BI](#power-bi-activities) <br/> |
-|[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |[Atividades do Yammer](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>
+|[Atividades do Sway](#sway-activities) <br/> |[Atividades de administração de usuário](#user-administration-activities) <br/> |[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> 
+|[Atividades de administração de aplicativos](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |[Atividades de administração de diretório](#directory-administration-activities) <br/>| 
+|[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades do Power BI](#power-bi-activities) <br/> |[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|
+|[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |[Atividades do Yammer](#yammer-activities) <br/> |[Atividades de fluxo da Microsoft](#microsoft-flow-activities) <br/>|
+|[Atividades do Microsoft PowerApps](#microsoft-powerapps)<br/>|[Atividades do Microsoft Stream](#microsoft-stream-activities) <br/>|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -320,7 +321,7 @@ A tabela a seguir descreve as atividades de arquivo e de página no SharePoint O
 |Arquivo excluído da lixeira  <br/> |FileDeletedFirstStageRecycleBin  <br/> |O usuário exclui um arquivo da lixeira de um site.  <br/> |
 |Arquivo excluído da lixeira de segundo estágio  <br/> |FileDeletedSecondStageRecycleBin  <br/> |O usuário exclui um arquivo da lixeira de segundo estágio de um site.  <br/> |
 |Detectado malware no arquivo  <br/> |FileMalwareDetected  <br/> |O mecanismo antivírus do SharePoint detecta malware em um arquivo.  <br/> |
-|Check-out de arquivo Descartado  <br/> |FileCheckOutDiscarded  <br/> |O usuário descarta (ou desfaz) o check-out de um arquivo. Isso significa que as alterações feitas no arquivo no momento do check-out serão descartadas e não serão salvas na versão do documento na biblioteca de documentos.  <br/> |
+|Check-out de arquivo Descartado  <br/> |FileCheckOutDiscarded  <br/> |O usuário descarta (ou desfaz) um arquivo em check-out. Isso significa que todas as alterações que ele tiver feito nesse arquivo durante o estado de check-out serão descartados, e não salvas na versão do documento localizada na biblioteca de documentos.  <br/> |
 |Arquivo baixado  <br/> |FileDownloaded  <br/> |O usuário baixa um documento de um site.  <br/> |
 |Arquivo modificado  <br/> |FileModified  <br/> |A conta de usuário ou sistema modifica o conteúdo ou as propriedades de um documento localizado em um site.  <br/> |
 |(nenhum)  <br/> |FileModifiedExtended  <br/> |Isso está relacionado à atividade "arquivo modificado" (fileModified). Um evento FileModifiedExtended é registrado quando a mesma pessoa modifica continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo de registrar eventos do FileModifiedExtended é reduzir o número de eventos fileModified que são registrados quando um arquivo é modificado continuamente. Isso ajuda a reduzir o ruído de vários registros fileModified para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) fileModified.  <br/> |
@@ -420,7 +421,7 @@ A tabela a seguir lista os eventos resultantes das tarefas de administração do
 |Usuário permitido para criar grupos  <br/> |AllowGroupCreationSet  <br/> |O administrador ou proprietário do site adiciona um nível de permissão a um site que permite que um usuário atribuído essa permissão para criar um grupo para esse site.  <br/> |
 |Movimentação geográfica do site canCelada  <br/> |SiteGeoMoveCancelled  <br/> |Um administrador global ou do SharePoint cancela com êxito uma movimentação geográfica de site do SharePoint ou do OneDrive. O recurso multiGeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Alterou uma política de compartilhamento  <br/> |SharingPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou uma política de compartilhamento do SharePoint usando o portal de administração do Office 365, o portal de administração do SharePoint ou o Shell de gerenciamento do SharePoint Online. Qualquer alteração nas configurações da política de compartilhamento da sua organização será registrada. A política alterada é identificada no campo **ModifiedProperties** nas propriedades detalhadas do registro do evento.  <br/> |
-|Política de acesso de dispositivo alterada  <br/> |DeviceAccessPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou a política de dispositivos não gerenciados para sua organização. Esta política controla o acesso ao SharePoint, OneDrive e Office 365 de dispositivos que não estão associados à sua organização. A configuração desta política exige uma assinatura corporativa + segurança. Para obter mais informações, consulte [controlar o acesso de dispositivos não gerenciados](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
+|Política de acesso de dispositivo alterada  <br/> |DeviceAccessPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou a política de dispositivos não gerenciados para sua organização. Esta política controla o acesso ao SharePoint, OneDrive e Office 365 de dispositivos que não estão associados à sua organização. A configuração desta política exige uma assinatura corporativa + segurança. Para obter informações, consulte [Controlar o acesso de dispositivos gerenciados](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
 |Agentes de usuário isentos alterados  <br/> |CustomizeExemptUsers  <br/> |Um administrador global ou do SharePoint personalizou a lista de agentes de usuário isentos no centro de administração do SharePoint. Você pode especificar quais agentes de usuário isentar do recebimento de uma página da Web inteira para indexação. Isso significa que quando um agente de usuário especificado como isento encontra um formulário do InfoPath, o formulário será retornado como um arquivo XML, em vez de uma página da Web inteira. Isso torna a indexação de formulários do InfoPath mais rápida.  <br/> |
 |Política de acesso à rede alterada  <br/> |NetworkAccessPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou a política de acesso baseado em local (também chamada de limite de rede confiável) no centro de administração do SharePoint ou usando o SharePoint Online PowerShell. Esse tipo de política controla quem pode acessar os recursos do SharePoint e do OneDrive em sua organização com base em intervalos de endereços IP autorizados que você especificar. Para obter mais informações, consulte [controlar o acesso aos dados do SharePoint Online e do onedrive baseados no local de rede](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
 |Movimentação geográfica de site concluída  <br/> |SiteGeoMoveCompleted  <br/> |Uma movimentação geográfica de site que foi agendada por um administrador global em sua organização foi concluída com êxito. O recurso multiGeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
@@ -468,28 +469,6 @@ A tabela a seguir lista as atividades que podem ser registradas pelo log de audi
 |Mensagem atualizada  <br/> |Atualizar  <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |
 |Usuário conectado à caixa de correio  <br/> |MailboxLogin  <br/> |O usuário entrou em sua caixa de correio.  <br/> |
 |(nenhum)  <br/> |UpdateInboxRules  <br/> |Uma regra de caixa de entrada foi adicionada, removida ou alterada. As regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e realizar ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou excluir uma mensagem.  <br/> Para retornar entradas para atividades de regra de caixa de entrada, você precisa selecionar **Mostrar resultados de todas as atividades** na lista de **atividades** . Use as caixas intervalo de datas e lista de **usuários** para restringir os resultados da pesquisa.  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>Política de retenção e atividades de rótulo
-
-A tabela a seguir descreve as atividades relacionadas a políticas de retenção e rótulos de retenção no centro de conformidade do & de segurança. Para obter mais informações, consulte:
-
-- [Visão geral de políticas de retenção](retention-policies.md)
-- [Visão geral de rótulos de retenção](labels.md)
-<br/>
-
-|**Atividades**|**Operation**|**Descrição**|
-|:-----|:-----|:-----|
-| Configuração de retenção criada para uma política de retenção<br/> |NewRetentionComplianceRule<br/> |O administrador define as configurações de retenção para uma nova política de retenção. As configurações de retenção incluem por quanto tempo os itens são mantidos e o que acontece com os itens quando o período de retenção expira (como a exclusão de itens, retenção de itens ou retenção e exclusão). Essa atividade também corresponde à execução do cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
-| Rótulo de retenção criado <br/> |NewComplianceTag<br/>  |O administrador cria um novo rótulo de retenção.<br/> |
-| Política de retenção criada<br/> |NewRetentionCompliancePolicy<br/> |O administrador cria uma nova política de retenção.<br/>  |
-| Exclusão da configuração de retenção de uma política de retenção<br/> | RemoveRetentionComplianceRule<br/>| O administrador exclui as definições de configuração de uma política de retenção. Provavelmente, essa atividade será registrada quando um administrador excluir uma política de retenção ou executar o cmdlet **Remove-RetentionComplianceRule** .<br/> |
-| Rótulo de retenção excluído <br/> |RemoveComplianceTag<br/>  | O administrador exclui um rótulo de retenção.<br/>|
-| Política de retenção excluída<br/> |RemoveRetentionCompliancePolicy<br/> |O administrador exclui uma política de retenção. <br/>  |
-| Habilitar recursos de conformidade normativa<br/> |SetRestrictiveRetentionUI<br/> |O administrador permite recursos de conformidade normativa executando o cmdlet **set-RegulatoryComplianceUI** . Depois que este cmdlet é executado, os administradores podem bloquear uma política de retenção e especificar um rótulo de retenção como um registro normativo usando a interface de usuário do centro de conformidade do & de segurança. Até que uma organização Use o cmdlet **set-RegulatoryComplianceUI** para habilitar esses recursos, o bloqueio de uma política de retenção e a criação de um rótulo de retenção regulamentada só podem ser realizados usando o PowerShell. <br/>|
-| Configuração de retenção atualizada para uma política de retenção<br/> | SetRetentionComplianceRule<br/>| O administrador altera as configurações de retenção de uma política de retenção existente. As configurações de retenção incluem por quanto tempo os itens são mantidos e o que acontece com os itens quando o período de retenção expira (como a exclusão de itens, retenção de itens ou retenção e exclusão). Essa atividade também corresponde à execução do cmdlet [set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) . <br/>|
-| Rótulo de retenção atualizado <br/> |SetComplianceTag<br/>  | O administrador atualiza um rótulo de retenção existente.<br/>|
-| Política de retenção atualizada<br/> |SetRetentionCompliancePolicy <br/>|O administrador atualiza uma política de retenção existente. As atualizações que disparam esse evento incluem adicionar ou excluir locais de conteúdo aos quais a política de retenção é aplicada.<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Atividades do Sway
@@ -725,7 +704,7 @@ Para obter mais informações sobre os recursos de auditoria e relatórios dispo
 
 **Quais são os diferentes serviços do Office 365 que são auditados atualmente?**
 
-Os serviços do Office 365 mais usados, como o Exchange Online, o SharePoint, o OneDrive, o Active Directory do Azure, o Microsoft Teams, o CRM, a proteção avançada contra ameaças e a prevenção contra perda de dados são auditados. Consulte a seção [introdução](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) deste artigo para obter uma lista completa.
+Os serviços do Office 365 mais usados, como o Exchange Online, o SharePoint Online, o OneDrive for Business, o Azure Active Directory, o Microsoft Teams, o Dynamics 365, a proteção avançada contra ameaças e o Power BI são auditados. Consulte o [início deste artigo](search-the-audit-log-in-security-and-compliance.md) para obter uma lista de serviços que são auditados.
 
 **Quais atividades são auditadas pelo serviço de auditoria no Office 365?**
 
@@ -771,15 +750,3 @@ Não. Atualmente, temos implantações de pipeline de auditoria nas regiões NA 
 **A auditoria de dados está criptografada?**
 
 Os dados de auditoria são armazenados em caixas de correio do Exchange (dados em repouso) na mesma região onde o pipeline de auditoria é implantado. Esses dados não são criptografados. No enTanto, os dados em trânsito são sempre criptografados. 
-
-
-
-
-
-
-
-
-
-
-
-

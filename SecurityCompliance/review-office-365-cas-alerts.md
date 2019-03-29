@@ -1,5 +1,5 @@
 ---
-title: Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
+title: Examinar e tomar medidas em alertas no Office 365 Cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use a página alertas no Office 365 Cloud app Security para exibir possíveis problemas e tomar ações. Você pode descartar ou resolver alertas e, se necessário, suspender uma conta de usuário.
-ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213161"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862463"
 ---
-# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
+# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Examinar e tomar medidas em alertas no Office 365 Cloud app Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
@@ -35,7 +35,10 @@ Você pode usar a página alertas no Office 365 Cloud app Security para exibir p
 1. Vá para o portal do Cloud app Security[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() e entre.
   
 2. Na barra de navegação na parte superior da tela, escolha **alertas**.<br/>![Na página alertas, você pode ver os alertas que foram disparados e as ações realizadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
-  
+ 
+> [!NOTE]
+> os alertas do Cloud App security também estão visíveis no centro de conformidade do & de segurança do **** > Office 365 (vá para alertas,**exibir alertas**. No momento, no entanto, você deve resolver esses alertas no portal do Cloud app Security e no centro de conformidade do & de segurança do Office 365. Para saber mais, consulte [viewIng Cloud app Security Alerts](alert-policies.md#viewing-cloud-app-security-alerts).) 
+ 
 ## <a name="review-and-handle-alerts"></a>Examinar e lidar com alertas
 
 Os alertas ajudam a identificar atividades no seu ambiente de nuvem do Office 365 que você pode querer investigar. Você também pode optar por criar novas políticas ou editar políticas existentes com base nos alertas exibidos. Por exemplo, se você vir um administrador fazendo logon a partir de um local estranho, poderá decidir configurar uma política que impede que os administradores entrem no Office 365 de determinados locais.

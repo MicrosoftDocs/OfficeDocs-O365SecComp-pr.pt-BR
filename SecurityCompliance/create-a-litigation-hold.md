@@ -1,5 +1,5 @@
 ---
-title: Criar uma retenção de litígio no Office 365
+title: Criar uma retenção de litígio
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218651"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862403"
 ---
-# <a name="create-a-litigation-hold-in-office-365"></a>Criar uma retenção de litígio no Office 365
+# <a name="create-a-litigation-hold"></a>Criar uma retenção de litígio
 
 Você pode colocar uma caixa de correio em retenção de litígio para reter todo o conteúdo da caixa de correio, incluindo itens excluídos e as versões originais de itens modificados. Quando você coloca uma caixa de correio de usuário em retenção de litígio, o conteúdo da caixa de correio de arquivo morto do usuário (se estiver habilitado) também é mantido. Ao criar uma retenção, você pode especificar uma duração de retenção (também chamada de *retenção baseada em tempo*) para que os itens excluídos e modificados sejam mantidos por um período especificado e, em seguida, excluídos permanentemente da caixa de correio. Ou você pode simplesmente reter o conteúdo indefinidamente (chamado de *retenção infinita*) ou até que a retenção de litígio seja removida. Se você especificar um período de duração de retenção, ele é calculado a partir da data em que uma mensagem é recebida ou de um item de caixa de correio é criado. 
   
@@ -36,28 +36,56 @@ Veja o que acontece quando você cria uma retenção de litígio.
 - Para colocar uma caixa de correio do Exchange Online em retenção de litígio, é necessário atribuir uma licença do Exchange Online Plan 2. Se uma licença do Exchange Online plano 1 for atribuída a uma caixa de correio, você precisará atribuí-la a uma licença de arquivamento do Exchange Online separada para colocá-la em espera.
     
 
-## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>Colocar uma caixa de correio em retenção de litígio no centro de administração do Office 365
+## <a name="place-a-mailbox-on-litigation-hold"></a>Colocar uma caixa de correio em Retenção de Litígio
 
-Aqui estão as etapas para colocar um Maibox em retenção de litígio usando o centro de administração do Office 365.
+Aqui estão as etapas para colocar uma caixa de correio em retenção de litígio usando o centro de administração do Exchange.
 
-1. AcEsse https://portal.office.com/adminportal/home e entre usando sua conta de administrador global.
-2. Clique em usuários**ativos** do painel de navegação à esquerda. **** > 
-3. Selecione o usuário cuja caixa de correio você deseja colocar em retenção de litígio.
-4. Na página de saída, clique em **configurações de email**e, em seguida, clique em **Editar** ao lado de **retenção de litígio**.
-5. Na página **retenção de litígio** , clique no botão de alternância para ativar a retenção de litígio e conclua as seguintes configurações opcionais exibidas:
- 
-    ![O365_LitigationHold1. png](media/O365-LitigationHold1.png)
+1. AcEsse [https://outlook.office.com/ecp](https://outlook.office.com/ecp) e entre usando sua conta de administrador global.
 
-    a. **duração da retenção (dias)** : Use esta caixa para criar uma retenção baseada em tempo e especificar quanto tempo os itens de caixa de correio serão mantidos quando a caixa de correio for colocada em retenção de litígio. A duração é calculada a partir da data em que um item de caixa de correio é recebido ou criado. Se você deixar essa caixa em branco, os itens serão mantidos indefinidamente ou até que a retenção seja removida. Use dias para especificar a duração.
+2. Clique em **destinatários _GT_ caixas de correio** no painel de navegação esquerdo.
+
+3. Selecione a caixa de correio que você deseja colocar em retenção de litígio e clique em **Editar**.
+
+4. Na página de propriedades da caixa de correio, clique em **Recursos da Caixa de Correio**.
     
-    b. **Observação** : Use esta caixa para informar ao usuário que a caixa de correio está em retenção de litígio. A nota aparecerá na página informações da conta na caixa de correio do usuário se estiver usando o Outlook 2010 ou posterior. Para acessar essa página, os usuários podem clicar em **arquivo** no Outlook.
-     
-    **página da Web** c: Use esta caixa para direcionar o usuário para um site para obter mais informações sobre a retenção de litígio. Essa URL aparecerá na página informações da conta na caixa de correio do usuário se estiver usando o Outlook 2010 ou posterior. Para acessar essa página, os usuários podem clicar em **arquivo** no Outlook.
- 
-6. Clique em **salvar** para criar a retenção de litígio.
+5. Em **Retenção de Litígio: Desativado**, clique em **Habilitar** para colocar a caixa de correio em Retenção de Litígio.
+    
+6. Na página **retenção de litígio** , insira as seguintes informações opcionais: 
+    
+    - **Duração da retenção de litígio (dias)** – Use esta caixa para criar uma retenção baseada em tempo e especificar quanto tempo os itens de caixa de correio devem ser mantidos quando a caixa de correio é colocada em retenção de litígio. A duração é calculada a partir da data em que um item de caixa de correio é recebido ou criado. Quando a duração da retenção expira para um item específico, esse item não será mais preservado. Se você deixar essa caixa em branco, os itens serão preservados indefinidamente ou até que a retenção seja removida. Use dias para especificar a duração.
+    
+    - **Observação** : Use esta caixa para informar ao usuário que sua caixa de correio está em retenção de litígio. A nota aparecerá na página informações da conta na caixa de correio do usuário se estiver usando o Outlook 2010 ou posterior. Para acessar essa página, os usuários podem clicar em **arquivo** no Outlook.
+    
+    - **URL** : Use esta caixa para direcionar o usuário para um site para obter mais informações sobre a retenção de litígio. Essa URL aparecerá na página informações da conta na caixa de correio do usuário se estiver usando o Outlook 2010 ou posterior. Para acessar essa página, os usuários podem clicar em **arquivo** no Outlook..
 
-Após criar a isenção, as configurações de email na página de saída mostrarão que a retenção de litígio está ativada para o usuário selecionado.
+7. Clique em **salvar** na página **retenção de litígio** e, em seguida, clique em **salvar** na página de propriedades da caixa de correio.
 
-![O365_LitigationHold2. png](media/O365-LitigationHold2.png)
+### <a name="create-a-litigation-hold-using-powershell"></a>Criar uma retenção de litígio usando o PowerShell
 
-Para obter mais informações sobre como criar e gerenciar isenções de litígio e usar o PowerShell do Exchange Online para criar uma retenção de litígio em massa, consulte [colocar uma caixa de correio em retenção de litígio](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).
+Você também pode criar uma retenção de litígio executando o seguinte comando no [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true
+```
+
+O comando anterior preserva os itens indefinidamente porque a duração da retenção não é especificada. Para criar uma retenção baseada em tempo, usando o seguinte comando:
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
+```
+
+Para obter mais informações, consulte [Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox).
+
+## <a name="how-does-litigation-hold-work"></a>Como funciona a retenção de litígio?
+
+No fluxo de trabalho normal de item excluído, um item de caixa de correio é movido para a subpasta Exclusões na pasta Itens recuperáveis quando um usuário o excluir permanentemente (Shift + Delete) ou o excluir da pasta Itens excluídos. Uma política de exclusão (que é uma marca de retenção configurada com uma ação de retenção de exclusão) também move itens para a subpasta Exclusões quando o período de retenção expira. Quando um usuário descarta um item da pasta Itens recuperáveis ou quando o período de retenção do item excluído expira para um item, ele é movido para a subpasta Exclusões na pasta Itens recuperáveis e marcado para exclusão permanente. Ele será excluído do Exchange na próxima vez em que a caixa de correio for processada pelo Assistente de Pasta Gerenciada (MFA).
+
+Quando uma caixa de correio é colocada em retenção de litígio, os itens na subpasta Exclusões são preservados durante o período especificado pela retenção de litígio. A duração da retenção é calculada a partir da data original em que um item foi recebido ou criado e define por quanto tempo os itens na subpasta Exclusões são retidos. Quando expira o período de retenção de um item na subpasta Exclusões, o item é marcado para exclusão permanente e é excluído da Exchange na próxima vez em que a caixa de correio for processada pelo MFA. Se uma caixa de correio for colocada em retenção indefinida, os itens nunca serão excluídos da subpasta Exclusões.
+
+A imagem a seguir mostra as subpastas nas pastas Itens Recuperáveis e o processo de fluxo de trabalho de retenção.
+
+![Ciclo de vida de retenção de litígio](media/LitigationHoldLifeCycle.png)
+
+> [!NOTE]
+> Se uma retenção associada a uma ocorrência de descoberta eletrônica for colocada em uma caixa de correio, os itens excluídos serão movidos da subpasta Exclusões para a subpasta retenções quando e serão preservados até que a caixa de correio seja liberada da descoberta eletrônica.
+  

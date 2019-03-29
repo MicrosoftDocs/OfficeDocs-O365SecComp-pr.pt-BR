@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639138"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862533"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
@@ -100,7 +100,7 @@ As condições disponíveis agora podem determinar se:
   
 - O conteúdo contém um tipo de informação confidencial.
     
-- O conteúdo contém um rótulo. Para obter mais informações, consulte a seção a seguir [usando um rótulo como uma condição em uma política de DLP](data-loss-prevention-policies.md#label).
+- O conteúdo contém um rótulo. Para obter mais informações, consulte a seção a seguir [usando um rótulo como uma condição em uma política de DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - O conteúdo é compartilhado com pessoas de fora ou de dentro da sua organização.
     
@@ -376,7 +376,7 @@ Para ir rapidamente para uma seção, clique em um item na navegação superior 
   
 ![Menu de navegação superior do editor de regras DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modelos de política de DLP
+## <a name="dlp-policy-templates"></a>Modelos de política DLP
 
 A primeira etapa na criação de uma política de DLP é escolher quais informações proteger. Ao iniciar com um modelo DLP, você salva o trabalho de criar um novo conjunto de regras do zero e descobrir quais tipos de informações devem ser incluídos por padrão. Em seguida, você pode adicionar ou modificar esses requisitos para ajustar a regra para atender aos requisitos específicos da sua organização.
   
@@ -498,7 +498,7 @@ No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365
     
 ## <a name="more-information"></a>Mais informações
 
-- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política DLP com base em um modelo](create-a-dlp-policy-from-a-template.md)
     
 - [Enviar notificações e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md)
     

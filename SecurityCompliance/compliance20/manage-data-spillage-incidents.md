@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade do & de segurança do Office 365 para gerenciar um incidente de derramamento de dados.
-ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 33943ee4367e01f413cfa7840c796d5197323185
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295804"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862553"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de derramamento de dados no Microsoft 365 
 
@@ -96,14 +96,14 @@ Para criar uma investigação de dados:
  
 Se você souber quais usuários você deseja pesquisar por dados derramados, você pode adicioná-los como pessoas de interesse para mapear suas fontes de dados para a investigação e pesquisar rapidamente a sua caixa de correio e a conta do OneDrive. Para adicionar pessoas de interesse à investigação, clique em **pessoas de interesse**e, em seguida, clique em **adicionar pessoas de interesse**. 
 
-Na guia **pesquisas** , você pode criar pesquisas para localizar os dados derramados. Você usará a mesma consulta de pesquisa que usou para localizar os dados derramados para excluir essas mesmas mensagens na [etapa 4](##step-4:-permanently-delete-the-spilled-data). Para obter mais informações sobre a criação de pesquisas, consulte [criar uma pesquisa para coletar dados](create-search-to-collect-data.md).
+Na guia **pesquisas** , você pode criar pesquisas para localizar os dados derramados. Você usará a mesma consulta de pesquisa que usou para localizar os dados derramados para excluir essas mesmas mensagens na [etapa 4](#step-4-permanently-delete-the-spilled-data). Para obter mais informações sobre a criação de pesquisas, consulte [criar uma pesquisa para coletar dados](create-search-to-collect-data.md).
 
 Depois de executar a pesquisa, você pode Visualizar amostras de resultados de pesquisa e exibir estatísticas de pesquisa para avaliar a eficácia da consulta de pesquisa. Depois de identificar os itens que você deseja excluir do Office 365, você pode clicar na guia **incidentes** e, em seguida, criar um incidente e adicionar resultados de pesquisa que contenham esses itens. 
 
-Para fazer isso, clique na pesquisa que você deseja investigar. Na página do menu suspenso, clique em **Adicionar resultados a incidentes** e siga as instruções. Em seguida, no incidente, você pode revisar documentos individuais, investigar quem teve acesso aos documentos e exportar os documentos. Para simplesmente excluir os documentos em vez de analisá-los, vá para a [etapa 4](##step-4:-permanently-delete-the-spilled-data). 
+Para fazer isso, clique na pesquisa que você deseja investigar. Na página do menu suspenso, clique em **Adicionar resultados a incidentes** e siga as instruções. Em seguida, no incidente, você pode revisar documentos individuais, investigar quem teve acesso aos documentos e exportar os documentos. Para simplesmente excluir os documentos em vez de analisá-los, vá para a [etapa 4](#step-4-permanently-delete-the-spilled-data). 
 
 > [!IMPORTANT]
-> As palavras-chave que você usa na consulta de pesquisa podem conter os dados reais derramados que você está pesquisando. Por exemplo, se você estiver procurando documentos que contenham um número de seguro social e usá-lo como uma palavra-chave na consulta de pesquisa, você deverá excluir a consulta posteriormente para evitar mais derramamento. Você pode excluir a pesquisa ou excluir toda a investigação na [etapa 5](##step-5:-close-or-delete-investigation). 
+> As palavras-chave que você usa na consulta de pesquisa podem conter os dados reais derramados que você está pesquisando. Por exemplo, se você estiver procurando documentos que contenham um número de seguro social e usá-lo como uma palavra-chave na consulta de pesquisa, você deverá excluir a consulta posteriormente para evitar mais derramamento. Você pode excluir a pesquisa ou excluir toda a investigação na [etapa 5](#step-5-close-or-delete-the-investigation). 
 
 ## <a name="step-3-review-and-investigate"></a>Etapa 3: analisar e investigar 
 
@@ -112,7 +112,7 @@ Na investigação, vá para a guia **incidentes** e clique no incidente que voc�
 Para agrupar documentos e obter mais assistência para revisão, clique em **gerenciar incidente**. No bloco de **análise** , clique em **analisar**. Isso executará análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de tema. Para obter mais informações, consulte:
 
 - [Detecção próxima duplicação](near-duplicates.md)
-- [Encadeamento de email](email-threading.md)
+- [Conversa de email](email-threading.md)
 - [Temas](themes.md)
 
 Para determinar quais usuários estão envolvidos no derramamento de dados, você pode criar uma nova consulta no incidente e usar as condições remetente/autor e destinatários. Isso criará uma lista de todos os remetentes, destinatários e autores encontrados nos dados coletados que foram adicionados ao incidente. Certifique-se de examinar a lista para determinar se há usuários externos na lista. Para obter mais informações, consulte [Search Conditions](../keyword-queries-and-search-conditions.md#search-conditions).

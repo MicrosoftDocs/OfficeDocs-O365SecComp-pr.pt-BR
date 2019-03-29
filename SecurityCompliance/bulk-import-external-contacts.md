@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Saiba como os administradores podem usar o PowerShell do Exchange Online e um arquivo CSV para importar contatos externos para a lista de endereços global em massa.
-ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215911"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862493"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importação em massa de contatos externos para o Exchange Online
 
@@ -34,9 +34,9 @@ Sua empresa tem muitos contatos comerciais existentes que você deseja incluir n
 
 Após concluir essas etapas para importar contatos, você pode executar estas tarefas adicionais:
   
-- [Adicionar mais contatos externos](bulk-import-external-contacts.md#AddMore)
+- [Adicionar mais contatos externos](#add-more-external-contacts)
   
-- [Ocultar contatos externos do catálogo de endereços compartilhado](bulk-import-external-contacts.md#Hide)
+- [Ocultar contatos externos do catálogo de endereços compartilhado](#hide-external-contacts-from-the-shared-address-book)
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Etapa 1: criar um arquivo CSV que contenha informações sobre os contatos externos
 
@@ -123,7 +123,7 @@ Após executar o comando na etapa 2, os contatos externos são criados, mas não
     
 2. Clique em um contato e, **** ![em seguida,](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) clique em Editar ícone de edição para exibir as propriedades do contato. 
     
-Isso é tudo! Os usuários podem ver os contatos e as informações adicionais no catálogo de endereços Outlook e Outlook na Web.
+Isso é tudo. Os usuários podem ver os contatos e as informações adicionais no catálogo de endereços Outlook e Outlook na Web.
   
 ## <a name="add-more-external-contacts"></a>Adicionar mais contatos externos
 

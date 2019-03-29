@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar caixas de correio, sites do SharePoint Online e locais do onedrive for Business. '
-ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223730"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935316"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Executar uma pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
 
@@ -33,21 +33,21 @@ Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo 
     
 - Grupos do Office 365
     
-A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrônica com recursos novos e aprimorados de escala e desempenho. Use a pesquisa de conteúdo para executar pesquisas de descoberta eletrônica muito grande. Você pode pesquisar todas as caixas de correio, todas as pastas públicas do Exchange e todos os sites do SharePoint Online e do OneDrive for Business em uma única pesquisa de conteúdo. Não há limites para o número de locais de conteúdo que você pode pesquisar. Também não há limites para o número de pesquisas que podem ser executadas ao mesmo tempo. Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um número estimado de resultados de pesquisa são exibidos no painel de detalhes na página de **pesquisa de conteúdo** . Depois de executar uma pesquisa, você pode visualizar os resultados, obter estatísticas de palavras-chave para uma ou mais pesquisas, editar pesquisas de conteúdo em massa e exportar os resultados para um computador local. 
+A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrônica com recursos novos e aprimorados de desempenho e dimensionamento. Use a Pesquisa de conteúdo para executar pesquisas de Descoberta Eletrônica muito grandes. Você pode pesquisar todas as caixas de correio, todas as pastas públicas do Exchange e todos os sites do SharePoint Online e do OneDrive for Business em uma única pesquisa de conteúdo. Não há limites para o número de locais de conteúdo que você pode pesquisar. Também não há limites para o número de pesquisas que podem ser executadas ao mesmo tempo. Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um número estimado de resultados de pesquisa são exibidos no painel de detalhes na página de **pesquisa de conteúdo** . Depois de executar uma pesquisa, você pode visualizar os resultados, obter estatísticas de palavras-chave para uma ou mais pesquisas, editar pesquisas de conteúdo em massa e exportar os resultados para um computador local. 
   
  **Sumário**
   
-[Criar uma pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#create)
+[Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
 [Exportar resultados de pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#export)
   
-[Visualização de resultados de pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#preview)
+[Preview search results](run-a-content-search-in-the-security-and-compliance-center.md#preview)
   
-[Atualizar os resultados da pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#restart)
+[Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Editar uma pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Repetir uma pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -57,7 +57,7 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
     
 - Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar os resultados da pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de &amp; função Gerenciador de descoberta eletrônica na conformidade de segurança Centro. Você não precisa atribuir permissões de pesquisa adicionais no Exchange Online, no SharePoint Online ou no OneDrive for Business sites. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
     
-- Há limites aplicados à pesquisa de conteúdo para manter a integridade e a qualidade dos serviços fornecidos nas organizações do Office 365. Na maioria dos casos, não é possível modificar esses limites, mas você deve estar ciente deles para que você possa levar esses limites em consideração ao planejar, executar e solucionar problemas de pesquisa. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
+- Há limites aplicados à pesquisa de conteúdo para manter a integridade e a qualidade dos serviços fornecidos nas organizações do Office 365. Na maioria dos casos, não é possível modificar os limites, mas você deve estar ciente deles para que possa levá-los em consideração ao planejar, executar e solucionar problemas de pesquisas. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
     
 - Consulte a seção sobre tempos estimados de pesquisa com base no número de caixas de correio pesquisadas em uma única pesquisa de conteúdo. 
     
@@ -71,7 +71,7 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Criar uma pesquisa
+## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
 1. Acesse [https://protection.office.com](https://protection.office.com).
@@ -98,7 +98,7 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
     
     **Caixas de correio**
     
-  - Ao clicar em **Adicionar**![ícone](media/ITPro-EAC-AddIcon.gif) de adicionar para especificar as caixas de correio a serem pesquisadas, o seletor de caixa de correio exibido estará vazio. Isso é projetado para melhorar o desempenho. Para adicionar destinatários a essa lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa e clique em ****![ícone](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)de pesquisa de pesquisa.
+  - Ao clicar em **Adicionar**![ícone](media/ITPro-EAC-AddIcon.gif) de adicionar para especificar as caixas de correio a serem pesquisadas, o seletor de caixa de correio exibido estará vazio. Isso foi desenvolvido para melhorar o desempenho. Para adicionar destinatários a essa lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa e clique em ****![ícone](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)de pesquisa de pesquisa.
     
   - Você pode adicionar caixas de correio e grupos de distribuição inativos à lista de caixas de correio a serem pesquisadas. Para grupos de distribuição, as caixas de correio dos membros do grupo são pesquisadas. Observe que não há suporte para grupos dinâmicos de distribuição.
     
@@ -138,7 +138,7 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
     
 3. Clique em **verificar erros de ortografia** para verificar a consulta em busca de caracteres não suportados e para operadores booleanos que podem não estar em maiúsculas. Os caracteres sem suporte são geralmente ocultos e geralmente causam um erro de pesquisa ou retornam resultados indesejados. Para obter mais informações sobre os caracteres não suportados verificados, confira [verificar se há erros na consulta de pesquisa de conteúdo](check-your-content-search-query-for-errors.md).
     
-4. Em **condições**, adicione condições a uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta de pesquisa do KQL que é criada e executada quando você inicia a pesquisa. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) pelo operador **and** . Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser incluída nos resultados. É assim que as condições ajudam a restringir os resultados. 
+4. Em **condições**, adicione condições a uma consulta de pesquisa para restringir uma pesquisa e retornar um conjunto mais refinado de resultados. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você inicia a pesquisa. Uma condição é logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador **AND**. Isso significa que os itens precisam atender à consulta de palavra-chave e à condição para serem incluídos nos resultados. É assim que as condições ajudam a restringir os resultados. 
     
 ||
 |:-----|
@@ -154,7 +154,7 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
     
 2. O número (e o tamanho total) dos itens que foram encontrados que correspondem à consulta de pesquisa. Exemplos de tipos de item incluem mensagens de email, itens de calendário e documentos. Se um item contiver várias instâncias de uma palavra-chave que está sendo pesquisada, ela só será contada uma vez no número total de itens. Por exemplo, se você estiver pesquisando palavras "stock" ou "Tip" e uma mensagem de email contiver três instâncias da palavra "stock", ela só será contada uma vez no campo **itens** . 
     
-3. O número e o tamanho total dos itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa serão incluídos nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. No enTanto, se um item não indexado for excluído pelos critérios de pesquisa, ele não será incluído na estimativa de itens não indexados.
+3. O número e o tamanho total dos itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. No enTanto, se um item não indexado for excluído pelos critérios de pesquisa, ele não será incluído na estimativa de itens não indexados.
     
 4. O número de cada tipo de local de conteúdo pesquisado. Para caixas de correio, observe que as caixas de correio de arquivo morto são incluídas no número total de caixas de correio que foram pesquisadas. No exemplo anterior, quatro caixas de correio de usuário foram pesquisadas e a caixa de correio de arquivo morto para cada um desses usuários está habilitada. É por isso que oito caixas de correio são citadas nas estatísticas de pesquisa.
     
@@ -167,12 +167,12 @@ A pesquisa de conteúdo é uma nova ferramenta de pesquisa de descoberta eletrô
 ## <a name="export-search-results"></a>Exportar resultados de pesquisa
 <a name="export"> </a>
 
-Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para o computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Também existem documentos adicionais e relatórios incluídos nos resultados de pesquisa exportados. Para obter mais informações, consulte [Exportar resultados de pesquisa do centro de &amp; conformidade de segurança do Office 365](export-search-results.md).
+Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Também há outros documentos e relatórios que são incluídos nos resultados de pesquisa exportados. Para obter mais informações, consulte [Exportar resultados de pesquisa do centro de &amp; conformidade de segurança do Office 365](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Visualização de resultados de pesquisa
 <a name="preview"> </a>
 
-Após a conclusão bem-sucedida da pesquisa, você pode visualizar os resultados da pesquisa. Há vários limites relacionados à visualização de resultados de pesquisa de conteúdo. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md). Observe que itens não indexados não estão disponíveis para visualização.
+Após a conclusão da pesquisa, você poderá visualizar os resultados. Há uma série de limites relacionados à visualização dos resultados da Pesquisa de Conteúdo. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md). Observe que itens não indexados não estão disponíveis para visualização.
   
 1. Na página **pesquisa de conteúdo** , selecione uma pesquisa. 
     
@@ -187,7 +187,7 @@ Após a conclusão bem-sucedida da pesquisa, você pode visualizar os resultados
 4. Se não houver suporte para o tipo de arquivo para visualização ou para baixar uma cópia de um documento, você poderá clicar em **baixar arquivo original** para baixá-lo no computador local. Para páginas da Web. aspx, a URL da página é incluída, embora você talvez não tenha permissões para acessar a página. 
     
 > [!NOTE]
-> Se você visualizar os resultados da pesquisa de uma pesquisa que foi executada pela última vez há mais de sete dias, você será solicitado a atualizar os resultados da pesquisa. A pesquisa é executada novamente para obter os resultados mais atuais que atendem à consulta de pesquisa. 
+> Se você visualizar os resultados da pesquisa de uma pesquisa realizada há mais de 7 dias, deverá atualizar os resultados da pesquisa. A pesquisa é executada novamente para obter os resultados mais atuais que atendem à consulta de pesquisa. 
   
 ### <a name="file-types-that-can-be-previewed"></a>Tipos de arquivo que podem ser visualizados
 
@@ -205,7 +205,7 @@ Você pode visualizar tipos de arquivo suportados no painel de visualização. S
     
 Além disso, há suporte para os seguintes tipos de contêiner de arquivos. Você pode exibir a lista de arquivos no contêiner no painel de visualização.
   
-- .zip
+- . zip
     
 - . gzip
     
@@ -220,7 +220,7 @@ Quando você atualiza os resultados de uma pesquisa de conteúdo existente, a co
     
 2. No painel de detalhes, em **Resultados**, clique em **Atualizar resultados da pesquisa**.
     
-    É exibida uma mensagem de status dizendo que os resultados estão sendo recuperados. Quando a pesquisa é concluída, as informações atualizadas são exibidas em **resultados** no painel de detalhes. Observe que a data no campo **pesquisado** no painel de detalhes é atualizada para a data e a hora atuais. Para atualizar as informações na lista de pesquisas de conteúdo, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
+    Uma mensagem de status é exibida para informar que os resultados estão sendo recuperados. Após a conclusão da pesquisa, as informações atualizadas serão exibidas em **Resultados** no painel de detalhes. Observe que a data no campo **Pesquisado em** no painel de detalhes é atualizada para a data e a hora atuais. Para atualizar as informações na lista de pesquisas de conteúdo, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -233,7 +233,7 @@ Você pode alterar as caixas de correio de origem e a consulta de pesquisa para 
     
 2. No painel de detalhes, em **Consulta**, clique em **Editar a pesquisa**.
     
-3. Na página **locais** , você pode alterar quais caixas de correio, grupos, sites do SharePoint ou sites do onedrive for Business para pesquisa. Você também pode selecionar (ou Cancelar seleção) para pesquisar todas as pastas públicas no Exchange. 
+3. Na página **locais** , você pode alterar quais caixas de correio, grupos, sites do SharePoint ou sites do onedrive for Business para pesquisa. Também pode marcar ou desmarcar a opção para pesquisar todas as pastas públicas no Exchange. 
     
 4. Na página de **consulta** , você pode editar a consulta de pesquisa. 
     
@@ -250,32 +250,32 @@ Se uma pesquisa retornar algum erro, você não precisará pesquisar novamente t
     
 2. No painel de detalhes, em **Erro**, clique em **Repetir a pesquisa**.
     
-    É exibida uma mensagem de status dizendo que os resultados estão sendo recuperados. Quando a pesquisa é concluída, as informações atualizadas são exibidas em **resultados** no painel de detalhes. Observe que a data no campo **pesquisado** no painel de detalhes é atualizada para a data e a hora atuais. Para atualizar as informações na lista de pesquisas, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
+    Uma mensagem de status é exibida informando que os resultados estão sendo recuperados. Após a conclusão da pesquisa, as informações atualizadas serão exibidas em **Resultados** no painel de detalhes. Observe que a data no campo **Pesquisado em** no painel de detalhes é atualizada para a data e hora atuais. Para atualizar as informações na lista de pesquisas, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
     
-[Voltar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Mais informações
 <a name="moreinfo"> </a>
 
 Veja mais informações sobre as pesquisas de conteúdo.
   
-[Limites e desempenho](run-a-content-search-in-the-security-and-compliance-center.md#limits)
+[Limites e desempenho](#limits-and-performance)
   
-[Itens não indexados](run-a-content-search-in-the-security-and-compliance-center.md#unindexeditems)
+[Itens não indexados](#unindexed-items) 
+ 
+[Microsoft Teams e grupos do Office 365](#microsoft-teams-and-office-365-groups)
   
-[Microsoft Teams e grupos do Office 365](run-a-content-search-in-the-security-and-compliance-center.md#teams)
+[OneDrive for Business](#onedrive-for-business)
   
-[OneDrive for Business](run-a-content-search-in-the-security-and-compliance-center.md#onedrive)
+[Consultas de pesquisa](#search-queries)
   
-[Consultas de pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#queries)
+[Pesquisando caixas de correio inativas](#searching-inactive-mailboxes)
   
-[Pesquisando caixas de correio inativas](run-a-content-search-in-the-security-and-compliance-center.md#inactivemailboxes)
+[Miscellaneous](#miscellaneous)
   
-[Diversos](run-a-content-search-in-the-security-and-compliance-center.md#misc)
+[Return to top](#before-you-begin)
   
-[(Retornar ao início)](run-a-content-search-in-the-security-and-compliance-center.md#top)
-  
- **Limites e desempenho**
+### <a name="limits-and-performance"></a>Limites e desempenho
   
 - Para obter uma descrição dos limites que são aplicados ao recurso de pesquisa de conteúdo, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
     
@@ -284,21 +284,20 @@ Veja mais informações sobre as pesquisas de conteúdo.
 |**Número de caixas de correio**|**Tempo médio de pesquisa**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1,000  <br/> |45 segundos  <br/> |
+|1.000  <br/> |45 segundos  <br/> |
 |10.000  <br/> |4 minutos  <br/> |
 |25.000  <br/> |10 minutos  <br/> |
 |50.000  <br/> |20 minutos  <br/> |
 |100.000  <br/> |25 minutos  <br/> |
    
-
   
- **Itens não indexados**
+### <a name="unindexed-items"></a>Itens não indexados
   
-- Como explicado anteriormente, os itens não indexados em locais de conteúdo pesquisados são incluídos nos resultados estimados da pesquisa. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído no número estimado de itens não indexados. Para obter mais informações, consulte [itens não indexados na pesquisa de conteúdo](https://go.microsoft.com/fwlink/p/?LinkId=780739).
+- Como explicado anteriormente, os itens não indexados em locais de conteúdo pesquisados são incluídos nos resultados estimados da pesquisa. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. Se um item não indexado for excluído pelos critérios de pesquisa, ele também não será incluído no número estimado de itens não indexados. Para saber mais, confira [Unindexed items in Content Search](https://go.microsoft.com/fwlink/p/?LinkId=780739).
     
 
   
- **Microsoft Teams e grupos do Office 365**
+### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft Teams e grupos do Office 365
   
 - O Microsoft Teams é desenvolvido em grupos do Office 365. Portanto, procurá-los é muito semelhante. Lembre-se do seguinte ao pesquisar conteúdo no Microsoft Teams e nos grupos do Office 365.
     
@@ -343,15 +342,12 @@ Veja mais informações sobre as pesquisas de conteúdo.
     > [!NOTE]
     > A capacidade de Pesquisar o wiki para uma equipe ou um canal da Microsoft (quando você pesquisa o site do SharePoint da equipe) foi lançada em 22 de junho de 2017. Páginas wiki que foram salvas ou atualizadas nessa data ou após estão disponíveis para serem pesquisadas. Páginas wiki salvas ou atualizadas pela última vez antes da data não estão disponíveis para pesquisa. 
   
-
-  
- **OneDrive for Business **
+### <a name="onedrive-for-business"></a>OneDrive for Business
   
 - Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). O script neste artigo cria um arquivo de texto que contém uma lista de todos os sites do OneDrive for Business. Para executar esse script, você precisará instalar e usar o Shell de gerenciamento do SharePoint Online. Certifique-se de acrescentar a URL para o domínio meusite da sua organização a cada site do OneDrive for Business que você deseja pesquisar. Este é o domínio que contém todos os seus OneDrive for Business; por exemplo, `https://contoso-my.sharepoint.com`. Veja um exemplo de uma URL para o site do OneDrive for Business de um usuário `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`:.
     
 
-  
- **Consultas de pesquisa**
+### <a name="search-queries"></a>Consultas de pesquisa
   
 - Lembre-se do seguinte ao usar a lista de palavras-chave para criar uma consulta de pesquisa.
     
@@ -367,7 +363,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
   
   - Você também pode preparar uma lista de palavras-chave ou frases de palavras-chave em um arquivo do Excel ou em um arquivo de texto sem formatação e, em seguida, copiar e colar a lista na lista de palavras-chave. Para fazer isso, você precisa selecionar a caixa de seleção **Mostrar lista de palavras-chave** . Em seguida, clique na primeira linha da lista de palavras-chave e cole sua lista. Cada linha do Excel ou arquivo de texto será colada em uma linha separada na lista de palavras-chave. 
     
-  - Após criar uma consulta usando a lista de palavras-chave, é uma boa ideia verificar a sintaxe da consulta de pesquisa (no painel de detalhes da pesquisa selecionada) para fazer com que a consulta de pesquisa seja o que você pretendia. Na consulta de pesquisa exibida em **consulta** no painel de detalhes, as palavras-chave são separadas pelo texto **(c:s)**. isso indica que as palavras-chave estão conectadas pelo operador **or** . Da mesma forma, se a consulta de pesquisa incluir condições, as palavras-chave e as condições serão separadas pelo texto **(c:c)**. isso indica que as palavras-chave estão conectadas às condições pelo operador **and** . Veja a seguir um exemplo da consulta de pesquisa (exibido no painel de detalhes) que ocorre quando se usa a lista de palavras-chave e uma condição. 
+  - Após criar uma consulta usando a lista de palavras-chave, é uma boa ideia verificar a sintaxe da consulta de pesquisa (no painel de detalhes da pesquisa selecionada) para fazer com que a consulta de pesquisa seja o que você pretendia. Na consulta de pesquisa exibida em **consulta** no painel de detalhes, as palavras-chave são separadas pelo texto **(c:s)**. Isso indica que as palavras-chave estão conectadas pelo operador **or** . Da mesma forma, se a consulta de pesquisa incluir condições, as palavras-chave e as condições serão separadas pelo texto **(c:c)**. Isso indica que as palavras-chave estão conectadas às condições pelo operador **and** . Veja a seguir um exemplo da consulta de pesquisa (exibido no painel de detalhes) que ocorre quando se usa a lista de palavras-chave e uma condição. 
     
     ![Exemplo da consulta que é criada ao usar a lista de palavras-chave e uma condição](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -384,8 +380,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
     Por exemplo, para alterar a configuração de idioma para chinês, você usaria `zh-CN` o valor do código de cultura. Depois de alterar a configuração de idioma, você terá que executar novamente a pesquisa. Para obter uma lista de possíveis valores de código de cultura, confira [classe CultureInfo](https://go.microsoft.com/fwlink/p/?LinkID=184859). Para pesquisas de conteúdo, recomendamos que você use códigos de cultura de duas partes para o valor da configuração de idioma; por exemplo, `ja-JP` e não `ja`.
     
 
-  
- **Pesquisando caixas de correio inativas**
+### <a name="searching-inactive-mailboxes"></a>Pesquisando caixas de correio inativas
   
 Conforme mencionado anteriormente, você pode pesquisar caixas de correio inativas em uma pesquisa de conteúdo. Veja algumas coisas que você deve ter em mente ao pesquisar caixas de correio inativas.
   
@@ -401,9 +396,7 @@ Conforme mencionado anteriormente, você pode pesquisar caixas de correio inativ
     
   - [Excluir uma caixa de correio inativa no Office 365](delete-an-inactive-mailbox.md)
     
-
-  
- **Diversos**
+### <a name="miscellaneous"></a>Diversos
   
 - As pesquisas de conteúdo criadas na página de **pesquisa** de conteúdo &amp; no centro de conformidade de segurança não são exibidas na página de **bloqueio de descoberta eletrônica &amp; in-loco** no centro de administração do Exchange. Isso ocorre porque a arquitetura de pesquisa de conteúdo e os objetos de pesquisa criados &amp; no centro de conformidade de segurança são completamente diferentes do recurso de descoberta eletrônica in-loco no Exchange Online. 
     

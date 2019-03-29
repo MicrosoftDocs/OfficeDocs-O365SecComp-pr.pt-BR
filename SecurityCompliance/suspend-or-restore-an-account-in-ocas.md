@@ -1,5 +1,5 @@
 ---
-title: Suspender ou restaurar uma conta de usuário no Office 365 Cloud App Security
+title: Suspender ou restaurar uma conta de usuário no Office 365 Cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Com o Office 365 Cloud app Security, as ações de governança que você pode executar são suspender ou cancelar a suspensão de uma conta de usuário. '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215091"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862443"
 ---
-# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspender ou restaurar uma conta de usuário no Office 365 Cloud App Security
+# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspender ou restaurar uma conta de usuário no Office 365 Cloud app Security
 
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
-|[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |[Iniciar implantação](turn-on-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próximas etapas](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |[Iniciar implantação](turn-on-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próximas etapas](#next-steps)<br/> |
    
 Suponha que você receba um alerta de que uma das contas de usuário da sua organização para o Office 365 foi comprometida. Ou, suponha que você recebeu um alerta que indica que algo está errado com uma conta de usuário. Com o Office 365 Cloud app Security, você pode suspender uma conta de usuário e restaurá-la posteriormente após investigar os alertas recebidos.
   
@@ -56,9 +56,9 @@ Consulte [restaurar um usuário no Office 365](https://support.office.com/articl
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+- [Examinar e tomar medidas em alertas no Office 365 Cloud app Security](review-office-365-cas-alerts.md)
     
-- [Gerenciar aplicativos do OAuth usando o Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+- [Gerenciar aplicativos OAuth usando o Office 365 Cloud app Security](manage-app-permissions-in-ocas.md)
     
 - ReVisar suas [atividades de utilização do Office 365 Cloud app Security](utilization-activities-for-ocas.md)
     

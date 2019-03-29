@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Saiba como encontrar e usar relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684360"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862503"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 
@@ -29,24 +29,15 @@ Vários relatórios estão disponíveis no [centro de conformidade de &amp; segu
 ![Painel em que você vê como a proteção avançada contra ameaças está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Os relatórios de segurança de email incluem o seguinte:
-
 - [Relatório de criptografia](#encryption-report) (Novo!)
-  
-- [Relatório de status de proteção contra ameaças](view-email-security-reports.md#tps) 
-    
-- [Relatório de detecções de malware](view-email-security-reports.md#maldet)
-    
+- [Relatório de status de proteção contra ameaças](#threat-protection-status-report) 
+- [Relatório de detecções de malware](#malware-detections-report)    
 - [Relatório de malware superior](#top-malware-report)
-    
-- [Relatório de principais remetentes e destinatários](view-email-security-reports.md#topsenders)
-    
-- [Relatório de falsificação de email](#spoof-mail-report)
-    
+- [Relatório de principais remetentes e destinatários](#top-senders-and-recipients-report)
+- [Relatório de detecções falsas](#spoof-detections-report)
 - [Relatório de detecções de spam](#spam-detections-report)
-    
-- [Relatório de email enviado e recebido](view-email-security-reports.md#sentreceivedemail)
-
-- [Relatório de mensagens relatadas pelo usuário](view-email-security-reports.md#userreported)
+- [Relatório de email enviado e recebido](#sent-and-received-email-report)
+- [Relatório de mensagens relatadas pelo usuário](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>Relatório de criptografia
 
