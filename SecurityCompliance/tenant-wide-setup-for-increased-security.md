@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Orienta você na configuração recomendada para definições de todos os locatários que afetam a segurança de seu ambiente do Office 365. Suas necessidades de segurança podem exigir mais ou menos segurança. Use estas recomendações como ponto de partida.
-ms.openlocfilehash: fadaea97a3e79130f33250e39ea642a040a40a69
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693320"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955264"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configure seu locatário do Office 365 para maior segurança
 
@@ -30,9 +30,9 @@ Este tópico o orienta através da configuração recomendada para definições 
 
 A pontuação segura do Office 365 analisa a segurança da sua organização do Office 365 com base em suas atividades regulares e configurações de segurança e atribui uma pontuação. Comece anotando sua pontuação atual. O ajuste de algumas configurações de todos os locatários aumentará a sua pontuação. O objetivo não é atingir a pontuação máxima, mas para estar ciente das oportunidades de proteger seu ambiente que não afete negativamente a produtividade dos seus usuários. ConFira [introdução à pontuação segura do Office 365](office-365-secure-score.md).
   
-## <a name="tune-threat-management-policies-in-the-office-365-security-amp-compliance-center"></a>Ajustar as políticas de gerenciamento de ameaças no centro &amp; de conformidade de segurança do Office 365
+## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>Ajustar as políticas de gerenciamento de ameaças no centro de segurança do Microsoft 365
 
-O centro de conformidade &amp; de segurança do Office 365 inclui recursos que protegem o seu ambiente. Também inclui relatórios e painéis que você pode usar para monitorar e tomar medidas. Algumas áreas vêm com as configurações de política padrão. Algumas áreas não incluem políticas ou regras padrão. Visite estas políticas em gerenciamento de ameaças para ajustar as configurações de gerenciamento de ameaças para um ambiente mais seguro. 
+O centro de segurança do Microsoft 365 inclui recursos que protegem o seu ambiente. Também inclui relatórios e painéis que você pode usar para monitorar e tomar medidas. Algumas áreas vêm com as configurações de política padrão. Algumas áreas não incluem políticas ou regras padrão. Visite estas políticas em gerenciamento de ameaças para ajustar as configurações de gerenciamento de ameaças para um ambiente mais seguro. 
   
 |Área * * * *|Inclui uma política padrão * * * *|Recomendação * * * *|
 |:-----|:-----|:-----|
@@ -41,27 +41,27 @@ O centro de conformidade &amp; de segurança do Office 365 inclui recursos que p
 |**Anexos seguros de ATP** <br/> |Não  <br/> | Na página principal de anexos seguros, proteja arquivos no SharePoint, no OneDrive e no Microsoft Teams marcando esta caixa:  <br/>  &ensp;&ensp;• Ative a ATP para SharePoint, OneDrive e Microsoft Teams  <br/> <br> Adicione uma nova política de anexo seguro com estas configurações:  <br/>  &ensp;&ensp;• Bloquear — bloquear emails e anexos atuais e futuros com malware detectado (escolha esta opção)  <br/>  &ensp;&ensp;• Habilitar o redirecionamento — (Marque esta caixa e insira um endereço de email, como uma conta de administrador ou de quarentena)  <br/>  &ensp;&ensp;• Aplique a seleção acima se o malware verificando se há anexos expirados ou se ocorrer um erro (Marque esta caixa)  <br/>  &ensp;&ensp;• Aplicado a – o domínio do destinatário é (selecione seu domínio)  <br/>  <br>Mais informações: [Configurar políticas de anexos seguros do Office 365 ATP](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Links seguros de ATP** <br/> |Sim  <br/> | Adicione essa configuração à política padrão para toda a organização:  <br/> &ensp;&ensp;• Use links seguros no: Office 365 proPlus, Office para iOS e Android (Selecione essa opção).  <br/> <br>Política recomendada para destinatários específicos:  <br/>  &ensp;&ensp;• As URLs serão reescritas e verificadas em relação a uma lista de links mal-intencionados conhecidos quando o usuário clicar no link (Selecione essa opção).  <br/>  &ensp;&ensp;• Use anexos seguros para examinar Conteúdo baixável (Marque esta caixa).  <br/>  &ensp;&ensp;• Aplicado a – o domínio do destinatário é (selecione seu domínio).  <br/> <br> Mais informações: [Office 365 ATP Safe links](atp-safe-links.md).  <br/> |
 |**Anti-spam (filtragem de email)** <br/> |Sim  <br/> | O que observar:  <br/>  &ensp;&ensp;• Muito spam — escolha as configurações personalizadas e edite a política padrão de filtro de spam.  <br/>  &ensp;&ensp;• Inteligência de falsificação — revise os remetentes que estão falsificando seu domínio. Bloquear ou permitir estes remetentes.  <br/>  <br>Mais informações: [proteção antispam de email do Office 365](anti-spam-protection.md).  <br/> |
-|***Autenticação de email*** <br/> |Sim  <br/> |A autenticação de email usa um DNS (sistema de nomes de domínio) para adicionar informações verificáveis a mensagens de email sobre o remetente de um email. O Office 365 configura a autenticação de email para seu domínio padrão (onmicrosoft.com), mas os administradores do Office 365 também podem usar a autenticação de email para domínios personalizados. Três métodos de autenticação são usados: <br/> <br> &ensp;&ensp;• Estrutura de política de remetente (ou SPF).<br/>&ensp;&ensp;&ensp;&ensp;– Para configuração, consulte [set up SPF in Office 365 para ajudar a impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;• DomainKeys Identificated mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;– Consulte [usar o DKIM para email em seu domínio personalizado no Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email). <br>&ensp;&ensp;&ensp;&ensp;Após configurar o DKIM, habilite-o no centro de &amp; conformidade de segurança.<br/> &ensp;&ensp;• Autenticação, geração de relatórios e conformidade de mensagens baseadas em domínio (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;– Para a configuração do DMARC, [use o DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md).<br/>  <br/>
+|***Autenticação de email*** <br/> |Sim  <br/> |A autenticação de email usa um DNS (sistema de nomes de domínio) para adicionar informações verificáveis a mensagens de email sobre o remetente de um email. O Office 365 configura a autenticação de email para seu domínio padrão (onmicrosoft.com), mas os administradores do Office 365 também podem usar a autenticação de email para domínios personalizados. Três métodos de autenticação são usados: <br/> <br> &ensp;&ensp;• Estrutura de política de remetente (ou SPF).<br/>&ensp;&ensp;&ensp;&ensp;– Para configuração, consulte [set up SPF in Office 365 para ajudar a impedir a falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;• DomainKeys Identificated mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;– Consulte [usar o DKIM para email em seu domínio personalizado no Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email). <br>&ensp;&ensp;&ensp;&ensp;Após configurar o DKIM, habilite-o na central de segurança.<br/> &ensp;&ensp;• Autenticação, geração de relatórios e conformidade de mensagens baseadas em domínio (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;– Para a configuração do DMARC, [use o DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md).<br/>  <br/>
 |
 
 > [!NOTE]
 > Para implantações não padrão de SPF, implantações híbridas e solução de problemas: [como o Office 365 usa o Sender Policy Framework (SPF) para evitar a falsificação](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>Exibir painéis e relatórios no centro de conformidade &amp; de segurança
+## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>Exibir painéis e relatórios nos centros de segurança e conformidade
 
-Visite esses relatórios e painéis para saber mais sobre a integridade de seu ambiente. Os dados desses relatórios ficarão mais sofisticados, pois sua organização usa os serviços do Office 365. Por enquanto, familiarize-se com o que você pode monitorar e tomar ações. Para obter mais informações, consulte: [relatórios no centro de conformidade &amp; de segurança do Office 365](reports-in-security-and-compliance.md).
+Visite esses relatórios e painéis para saber mais sobre a integridade de seu ambiente. Os dados desses relatórios ficarão mais sofisticados, pois sua organização usa os serviços do Office 365. Por enquanto, familiarize-se com o que você pode monitorar e tomar ações. Para obter mais informações, consulte: [relatórios nos centros de segurança e conformidade do Microsoft 365](reports-in-security-and-compliance.md).
   
 |Painel * * * *|****Descrição****|
 |:-----|:-----|
-|Painel de gerenciamento de ameaças  <br/> |Na seção Gerenciamento de ameaças do centro &amp; de conformidade de segurança, use este painel para ver ameaças que já foram tratadas e como uma ferramenta útil para relatar os tomadores de decisões de negócios sobre quais recursos de investigação e resposta de ameaças têm Já foi feito para proteger sua empresa.  <br/> |
-|Explorador de ameaças  <br/> |Isso também está na seção Gerenciamento de ameaças do centro &amp; de conformidade de segurança. Se você estiver investigando ou experimentando um ataque contra o locatário do Office 365, use o Gerenciador de ameaças para analisar ameaças. O Gerenciador de ameaças mostra o volume de ataques ao longo do tempo, e você pode analisar esses dados por famílias de ameaças, infraestrutura de atacante e muito mais. Você também pode marcar qualquer email suspeito para a lista de incidentes.  <br/> |
-|Relatórios — painel  <br/> |Na seção relatórios do centro de &amp; conformidade de segurança, exiba relatórios de auditoria para as organizações do SharePoint Online e do Exchange Online. Você também pode acessar os relatórios de entrada do usuário do Azure Active Directory (AD), relatórios de atividades do usuário e o log de auditoria do Azure AD na página exibir relatórios.  <br/> |
+|Painel de gerenciamento de ameaças  <br/> |Na seção Gerenciamento de ameaças da central de segurança, use este painel para ver as ameaças que já foram tratadas e como uma ferramenta útil para relatar os tomadores de decisões de negócios sobre o que os recursos de investigação e resposta de ameaças já fizeram para proteger sua empresa.  <br/> |
+|Explorador de ameaças  <br/> |Isso também está na seção Gerenciamento de ameaças da central de segurança. Se você estiver investigando ou experimentando um ataque contra o locatário do Office 365, use o Gerenciador de ameaças para analisar ameaças. O Gerenciador de ameaças mostra o volume de ataques ao longo do tempo, e você pode analisar esses dados por famílias de ameaças, infraestrutura de atacante e muito mais. Você também pode marcar qualquer email suspeito para a lista de incidentes.  <br/> |
+|Relatórios — painel  <br/> |Na seção relatórios da central de segurança, exiba relatórios de auditoria para as organizações do SharePoint Online e do Exchange Online. Você também pode acessar os relatórios de entrada do usuário do Azure Active Directory (Azure AD), relatórios de atividades do usuário e o log de auditoria do Azure AD na página exibir relatórios.  <br/> |
    
-![Painel &amp; do centro de conformidade de segurança](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Painel central de segurança](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Definir configurações adicionais para todos os locatários do Exchange Online
 
-Muitos dos controles de segurança e proteção no centro de administração do Exchange também estão incluídos no centro de segurança e conformidade. Não é necessário configurá-los nos dois lugares. Aqui estão algumas configurações adicionais recomendadas. 
+Muitos dos controles de segurança e proteção no centro de administração do Exchange também estão incluídos na central de segurança. Não é necessário configurá-los nos dois lugares. Aqui estão algumas configurações adicionais recomendadas. 
   
 |Área * * * *|Inclui uma política padrão * * * *|Recomendação * * * *|
 |:-----|:-----|:-----|
