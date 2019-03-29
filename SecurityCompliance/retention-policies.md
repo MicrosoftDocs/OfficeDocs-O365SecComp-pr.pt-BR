@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455443"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935296"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -244,7 +244,7 @@ Ainda estamos trabalhando em retenção no Teams e outros recursos estão chegan
     
 - **O Teams não está incluído em uma política no âmbito da organização** Se você criar uma política no âmbito da organização, o Teams não estará incluído, porque ele exige uma política de retenção separada. 
     
-- **O Teams não dá suporte a retenção avançada** Quando você cria uma política de retenção, se escolher [Configurações avançadas que aplicam uma política apenas ao conteúdo que atende a determinadas condições](retention-policies.md#advanced), o local do Teams não estará disponível. No momento, a retenção no Teams aplica-se a todo o conteúdo de chat e mensagens de canal.
+- **O Teams não dá suporte a retenção avançada** Quando você cria uma política de retenção, se escolher [Configurações avançadas que aplicam uma política apenas ao conteúdo que atende a determinadas condições](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), o local do Teams não estará disponível. No momento, a retenção no Teams aplica-se a todo o conteúdo de chat e mensagens de canal.
     
 - **O conteúdo do Teams deve ter pelo menos 30 dias para ser excluído** Neste momento, não há suporte para criar uma política para excluir o conteúdo do Teams com menos de 30 dias. Se quiser que essa política seja aplicada ao conteúdo do Teams, especifique um período de retenção igual ou maior do que 30 dias. 
     
@@ -252,7 +252,7 @@ Ainda estamos trabalhando em retenção no Teams e outros recursos estão chegan
     
 Em uma equipe, os arquivos compartilhados em um chat são armazenados na conta do OneDrive do usuário que compartilhou o arquivo. Os arquivos que são carregados nos canais são armazenados no site do SharePoint para a equipe. Portanto, para manter ou excluir arquivos em uma equipe, você precisará criar uma política de retenção que se aplica aos locais do SharePoint e do OneDrive. Se quiser aplicar uma política aos arquivos de apenas uma equipe específica, você poderá escolher o site do SharePoint para a equipe e as contas de usuários do OneDrive na equipe.
   
-Uma política de retenção que se aplica ao Teams pode usar [Bloqueio de Preservação](retention-policies.md#locking).
+Uma política de retenção que se aplica ao Teams pode usar [Bloqueio de Preservação](#locking-a-retention-policy).
   
 ![Os locais do Teams para chat e mensagens de canal](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
