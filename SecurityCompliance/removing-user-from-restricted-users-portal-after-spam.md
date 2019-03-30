@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se um usuário enviar continuamente emails do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens.
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692010"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998494"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Remover um usuário do portal de usuários restritos após o envio de email de spam
 
@@ -40,7 +40,7 @@ O procedimento a seguir também pode ser realizado pelo PowerShell remoto. Use o
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Remover restrições para uma conta de email bloqueada do Office 365
 
-Você conclui essa tarefa no centro de conformidade do & de segurança do Office 365 (SCC). [Vá para o centro de conformidade do & de segurança do Office 365](go-to-the-securitycompliance-center.md) para obter mais detalhes sobre SCC. Você precisa estar no grupo de função **Gerenciamento da organização** ou administrador de **segurança** para executar essas funções. [Vá até permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md) para obter mais detalhes sobre grupos de função SCC.
+Você conclui essa tarefa no centro de conformidade do & de segurança (SCC). [Vá para o centro de conformidade do & de segurança](go-to-the-securitycompliance-center.md) para obter mais detalhes sobre SCC. Você precisa estar no grupo de função **Gerenciamento da organização** ou administrador de **segurança** para executar essas funções. [Vá até permissões no centro de conformidade do & de segurança](permissions-in-the-security-and-compliance-center.md) para obter mais detalhes sobre grupos de função SCC.
 
 1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global do Office 365, entre no centro de conformidade e segurança do Office 365 e, na lista à esquerda, expanda **Gerenciamento de ameaças**, escolha **revisão**e, em seguida, escolha **restrito Usuários**.
     
@@ -60,7 +60,7 @@ Você conclui essa tarefa no centro de conformidade do & de segurança do Office
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Garantir que os administradores sejam alertados quando isso acontecer
 
-Os administradores de locatários também receberão um alerta informando que o usuário foi impedido de enviar mais mensagens de saída. É um alerta padrão que é fornecido para todos os locatários e está listado na página políticas de alerta SCC, intitulado "usuário restrito a enviar email". Vá para [políticas de alerta no centro de conformidade do & de segurança do Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) para obter mais informações sobre o alerta.
+Os administradores de locatários também receberão um alerta informando que o usuário foi impedido de enviar mais mensagens de saída. É um alerta padrão que é fornecido para todos os locatários e está listado na página políticas de alerta SCC, intitulado "usuário restrito a enviar email". Vá para [políticas de alerta no centro de conformidade do & de segurança](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) para obter mais informações sobre o alerta.
 
 ## <a name="for-more-information"></a>Para obter mais informações
 
@@ -70,4 +70,4 @@ Os administradores de locatários também receberão um alerta informando que o 
 
 [Pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
+[Permissões no centro de conformidade do & de segurança](permissions-in-the-security-and-compliance-center.md)

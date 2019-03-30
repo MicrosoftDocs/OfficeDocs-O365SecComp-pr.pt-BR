@@ -1,5 +1,5 @@
 ---
-title: Definir opções de análise na Descoberta Eletrônica Avançada do Office 365
+title: Definir opções de análise na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Revise as etapas para configurar opções para o processo de análise na descoberta eletrônica avançada do Office 365, incluindo duplicatas, threads de email e temas.  '
-ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218221"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998524"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Definir opções de análise na Descoberta Eletrônica Avançada do Office 365
+# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Definir opções de análise na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -33,7 +33,7 @@ Abra \> **a configuração**de **análise de preparação \> ** . A janela a seg
   
 ![Definir Opções de Análise](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
- **Threads quase duplicados e email** Marque esta caixa se você deseja executar a análise. Ela é selecionada por padrão. 
+ **Threads quase duplicados e email** Marque esta caixa se você deseja executar a análise. Ele é selecionado por padrão. 
   
  **Similaridade de documentos** Insira o valor de limite Near-duplicates ou aceite o padrão de 65%. 
   
@@ -52,7 +52,7 @@ Abra \> **a configuração**de **análise de preparação \> ** . A janela a seg
   
 1. Para exibir, adicionar ou editar temas sugeridos, clique em **Modificar**.
     
-2. No painel **temas sugeridos** , clique no ícone **Adicionar**![ícone](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) de adição para adicionar um tema. No painel **Adicionar tema sugerido** , adicione as palavras, separadas por vírgulas. 
+2. No painel **temas sugeridos** , clique no ícone **Adicionar** ![ícone](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) de adição para adicionar um tema. No painel **Adicionar tema sugerido** , adicione as palavras, separadas por vírgulas. 
     
 3. Em **número de temas**, selecione um valor para determinar o número de temas que a descoberta eletrônica avançada tentará gerar para essas palavras (o padrão é 1 tema).
     

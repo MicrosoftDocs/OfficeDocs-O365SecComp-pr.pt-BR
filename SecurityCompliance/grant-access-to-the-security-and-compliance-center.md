@@ -3,7 +3,7 @@ title: Conceder aos usuários acesso ao centro de conformidade &amp; de seguran�
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Os usuários precisam receber permissões no centro de conformidade de segurança &amp; do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216301"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997228"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Conceder aos usuários acesso ao centro de conformidade &amp; de segurança do Office 365
 
-Os usuários precisam receber permissões no centro de conformidade de segurança &amp; do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade. Como um administrador global do Office 365 ou membro do grupo de função gerenciamento no centro &amp; de conformidade de segurança, você pode conceder essas permissões aos usuários. Os usuários só poderão gerenciar os recursos de segurança ou de conformidade aos quais você conceder acesso. 
+Os usuários precisam receber permissões no centro de conformidade de segurança &amp; do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade. Como um administrador global do Office 365 ou membro do grupo de função gerenciamento no centro &amp; de conformidade de segurança, você pode conceder essas permissões aos usuários. Os usuários só podem gerenciar os recursos de segurança ou de conformidade para os quais você conceder acesso. 
   
 Para obter mais informações sobre as diferentes permissões que você pode dar aos usuários no &amp; centro de conformidade de segurança, confira [permissões no centro &amp; de conformidade de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
   
@@ -72,11 +72,11 @@ Para obter mais informações sobre as diferentes permissões que você pode dar
   
   ```
 
- **Parâmetros**
+ **Parameters**
   
 - _-Identity_ é o grupo de funções ao qual adicionar um membro. 
     
-- _Member_ é a caixa de correio, grupo de segurança universal (USG) ou computador a ser adicionado ao grupo de funções. Você pode especificar apenas um membro por vez. 
+- _Member_ é a caixa de correio, grupo de segurança universal (USG) ou computador a ser adicionado ao grupo de funções. Você só pode especificar um membro por vez. 
     
 Para obter informações detalhadas sobre sintaxe e parâmetros, consulte [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   

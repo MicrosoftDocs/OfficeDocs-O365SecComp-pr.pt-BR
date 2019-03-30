@@ -10,22 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: Bloqueio in-loco, retenção de litígio e políticas de retenção do Office 365 permitem preservar o conteúdo da caixa de correio para atender aos requisitos de conformidade normativa e eDiscovery.
-ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693230"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999514"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Preservar destinatários Cco e de grupos de distribuição expandidos para Descoberta Eletrônica
   
-Bloqueio in-loco, retenção de litígio e [políticas de retenção do office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (criadas no centro de conformidade &amp; de segurança do Office 365) permitem preservar o conteúdo da caixa de correio para atender aos requisitos de conformidade normativa e eDiscovery. As informações sobre os destinatários endereçados diretamente nos campos para e CC de uma mensagem são incluídas em todas as mensagens por padrão, mas sua organização pode exigir a capacidade de Pesquisar e reproduzir detalhes sobre todos os destinatários de uma mensagem. Isso inclui: 
+O bloqueio in-loco, a retenção de litígio e [as políticas de retenção do Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (criadas no centro de conformidade do _AMP_ de segurança) permitem preservar o conteúdo da caixa de correio para atender aos requisitos de conformidade normativa e eDiscovery. As informações sobre os destinatários endereçados diretamente nos campos para e CC de uma mensagem são incluídas em todas as mensagens por padrão, mas sua organização pode exigir a capacidade de Pesquisar e reproduzir detalhes sobre todos os destinatários de uma mensagem. Isso inclui: 
   
 - **Destinatários endereçados usando o campo Cco de uma mensagem** Os destinatários Cco são armazenados na mensagem da caixa de correio do remetente, mas não estão incluídos nos cabeçalhos da mensagem entregue aos destinatários. 
     
 - **Destinatários de grupos de distribuição expandidos** Destinatários que recebem a mensagem porque são membros de um grupo de distribuição para o qual a mensagem foi tratada, nos campos para, CC ou Cco. 
     
-Exchange Online e Exchange Server 2013 (atualização cumulativa 7 e versões posteriores) retêm informações sobre Cco e destinatários expandidos do grupo de distribuição. Você pode pesquisar essas informações usando uma pesquisa de descoberta eletrônica in-loco no centro de administração do Exchange (Eat) ou uma pesquisa de conteúdo no &amp; centro de conformidade de segurança. 
+Exchange Online e Exchange Server 2013 (atualização cumulativa 7 e versões posteriores) retêm informações sobre Cco e destinatários expandidos do grupo de distribuição. Você pode pesquisar essas informações usando uma pesquisa de descoberta eletrônica in-loco no centro de administração do Exchange (Eat) ou uma pesquisa de conteúdo no centro de conformidade do & de segurança. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Como os destinatários Cco e os destinatários de grupos de distribuição expandidos são preservados
 <a name="sectionSection0"> </a>

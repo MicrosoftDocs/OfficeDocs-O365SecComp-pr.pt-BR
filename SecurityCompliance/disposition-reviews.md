@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Ao criar um rótulo de retenção que mantém o conteúdo no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Ao criar um rótulo de retenção que mantém o conteúdo no Microsoft 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512656"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997257"
 ---
 # <a name="overview-of-disposition-reviews"></a>Visão geral das revisões de disposição
 
@@ -33,7 +33,7 @@ Quando o conteúdo atinge o final do período de retenção, há vários motivos
     
 - Retornar o conteúdo aos clientes ou transferi-lo para outra organização.
     
-Ao criar um rótulo de retenção no Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
+Ao criar um rótulo de retenção no centro de conformidade da Microsoft 365, no centro de segurança da Microsoft 365 ou no centro de conformidade do Office 365 Security &, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
   
 - As pessoas escolhidas recebem uma notificação por email de que o conteúdo deve ser revisado. Esses revisores podem ser usuários individuais, grupos de distribuição ou segurança ou grupos do Office 365. Observe que as notificações são enviadas semanalmente.
     

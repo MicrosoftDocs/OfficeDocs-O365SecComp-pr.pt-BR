@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integre a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender para ver informações mais detalhadas sobre o gerenciamento de ameaças.
-ms.openlocfilehash: bbbb42c9d0f37ab33323b2fa1dd071bd5ee16829
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30523975"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998954"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrar a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender
 
@@ -42,7 +42,7 @@ Neste exemplo, você pode ver que os destinatários da mensagem de email têm qu
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>Para integrar a proteção avançada contra ameaças do Office 365 com o Windows Defender ATP
 
-Integrando o Office 365 proteção avançada contra ameaças à proteção avançada contra ameaças do Windows Defender é configurada usando o centro de conformidade do Office 365 Security & e o portal de proteção avançada contra ameaças do Windows Defender.
+Integrando o Office 365 proteção avançada contra ameaças à proteção avançada contra ameaças do Windows Defender é configurada usando o centro de conformidade do & de segurança e o portal de proteção avançada contra ameaças do Windows Defender.
   
 1. Como um administrador global do Office 365 ou um administrador de segurança, [https://protection.office.com](https://protection.office.com) acesse e entre com sua conta corporativa ou de estudante para o Office 365. 
     

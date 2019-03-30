@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Os administradores podem saber mais sobre as regras de fluxo de email lentos no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Os administradores podem saber mais sobre as regras de fluxo de email lentos no painel de fluxo de emails no centro de conformidade do & de segurança.
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720251"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999774"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Visão de regras de fluxo de email lento
 
@@ -29,7 +29,7 @@ Regras de fluxo de emails ineficientes (também conhecidas como regras de transp
 
 As informações ajudarão você a identificar e ajustar as regras de fluxo de emails para ajudar a reduzir os atrasos de fluxo de emails.
 
-![Uma visão mais lenta das regras de fluxo de email no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Uma visão mais lenta das regras de fluxo de email no painel de fluxo de emails no centro de conformidade do & de segurança](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Quando você clica em **Exibir detalhes**, um painel flutuante aparece onde você pode revisar a regra. No painel de submenu, também é possível clicar em **Exibir mensagens de amostra** para ver quais tipos de mensagens são impactados pela regra.
 

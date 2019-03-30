@@ -1,5 +1,5 @@
 ---
-title: Executar uma pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
+title: Executar uma pesquisa de conteúdo no Centro de Conformidade e Segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar caixas de correio, sites do SharePoint Online e locais do onedrive for Business. '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Use a pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar caixas de correio, sites do SharePoint Online e locais do OneDrive for Business. '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935316"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000274"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Executar uma pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>Executar uma pesquisa de conteúdo no Centro de Conformidade e Segurança
 
-Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo no &amp; centro de conformidade de segurança do Office 365 para pesquisar itens como email, documentos e conversas de mensagens instantâneas em sua organização do Office 365. Use esta ferramenta para pesquisar itens nestes serviços do Office 365:
+Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar itens como email, documentos e conversas de mensagens instantâneas na sua organização do Office 365. Use esta ferramenta para pesquisar itens nestes serviços do Office 365:
   
 - Caixas de correio do Exchange Online e pastas públicas
     
@@ -55,9 +55,9 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
 
 - Para obter informações e orientações sobre como criar consultas de pesquisa e usar operadores de pesquisa booleanos, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md). Este artigo também contém informações sobre a pesquisa de tipos de informações confidenciais e a pesquisa de conteúdo compartilhado com pessoas dentro e fora da sua organização.
     
-- Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar os resultados da pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de &amp; função Gerenciador de descoberta eletrônica na conformidade de segurança Centro. Você não precisa atribuir permissões de pesquisa adicionais no Exchange Online, no SharePoint Online ou no OneDrive for Business sites. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+- Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar resultados de pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. Você não precisa atribuir permissões de pesquisa adicionais no Exchange Online, no SharePoint Online ou no OneDrive for Business sites. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](assign-ediscovery-permissions.md).
     
-- Há limites aplicados à pesquisa de conteúdo para manter a integridade e a qualidade dos serviços fornecidos nas organizações do Office 365. Na maioria dos casos, não é possível modificar os limites, mas você deve estar ciente deles para que possa levá-los em consideração ao planejar, executar e solucionar problemas de pesquisas. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
+- Há limites aplicados à pesquisa de conteúdo para manter a integridade e a qualidade dos serviços fornecidos nas organizações do Office 365. Na maioria dos casos, não é possível modificar os limites, mas você deve estar ciente deles para que possa levá-los em consideração ao planejar, executar e solucionar problemas de pesquisas. Para obter mais informações, consulte [Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Consulte a seção sobre tempos estimados de pesquisa com base no número de caixas de correio pesquisadas em uma única pesquisa de conteúdo. 
     
@@ -74,11 +74,11 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** \> **Pesquisa de Conteúdo**.
+3. No painel esquerdo do centro de conformidade do & de segurança, clique em **pesquisa de conteúdo**de **pesquisa** \> .
     
 4. Clique em **Novo**![Ícone Adicionar](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
@@ -102,7 +102,7 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
     
   - Você pode adicionar caixas de correio e grupos de distribuição inativos à lista de caixas de correio a serem pesquisadas. Para grupos de distribuição, as caixas de correio dos membros do grupo são pesquisadas. Observe que não há suporte para grupos dinâmicos de distribuição.
     
-  - Para obter uma lista das caixas de correio inativas em sua organização, execute o `Get-Mailbox -InactiveMailboxOnly` comando no PowerShell do Exchange Online. Como alternativa, você pode ir para a **retenção** de **governança** \> de dados &amp; no centro de conformidade de segurança e, em seguida,](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> clicar em **mais**![reticências de barras de navegação inativas. ****
+  - Para obter uma lista das caixas de correio inativas em sua organização, execute o `Get-Mailbox -InactiveMailboxOnly` comando no PowerShell do Exchange Online. Como alternativa, você pode ir para a **retenção** de **governança** \> de dados no centro de conformidade do & de segurança e, em seguida](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> , clicar em **mais**![reticências de barras de navegação inativas. ****
     
   - Você também pode adicionar a caixa de correio que está associada a um grupo do Office 365 ou a uma equipe da Microsoft. Nesse caso, somente a caixa de correio de grupo ou de equipe é pesquisada; as caixas de correio do grupo ou membros da equipe não são pesquisadas. Para procurá-los, adicione-os especificamente à pesquisa.
     
@@ -167,12 +167,12 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
 ## <a name="export-search-results"></a>Exportar resultados de pesquisa
 <a name="export"> </a>
 
-Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Também há outros documentos e relatórios que são incluídos nos resultados de pesquisa exportados. Para obter mais informações, consulte [Exportar resultados de pesquisa do centro de &amp; conformidade de segurança do Office 365](export-search-results.md).
+Após uma pesquisa ser executada com êxito, você pode exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Também há outros documentos e relatórios que são incluídos nos resultados de pesquisa exportados. Para obter mais informações, consulte [Exportar resultados de pesquisa do centro de conformidade do & de segurança](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Visualização de resultados de pesquisa
 <a name="preview"> </a>
 
-Após a conclusão da pesquisa, você poderá visualizar os resultados. Há uma série de limites relacionados à visualização dos resultados da Pesquisa de Conteúdo. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md). Observe que itens não indexados não estão disponíveis para visualização.
+Após a conclusão da pesquisa, você poderá visualizar os resultados. Há uma série de limites relacionados à visualização dos resultados da Pesquisa de Conteúdo. Para obter mais informações, consulte [Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md). Observe que itens não indexados não estão disponíveis para visualização.
   
 1. Na página **pesquisa de conteúdo** , selecione uma pesquisa. 
     
@@ -277,7 +277,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
   
 ### <a name="limits-and-performance"></a>Limites e desempenho
   
-- Para obter uma descrição dos limites que são aplicados ao recurso de pesquisa de conteúdo, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
+- Para obter uma descrição dos limites que são aplicados ao recurso de pesquisa de conteúdo, consulte [Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - A Microsoft coleta informações de desempenho para pesquisas de conteúdo executadas por todas as organizações do Office 365. Embora a complexidade da consulta de pesquisa possa causar impacto nos tempos de pesquisa, o maior fator que afeta a duração das pesquisas longas é o número de caixas de correio pesquisadas. Embora a Microsoft não forneça um contrato de nível de serviço para tempos de pesquisa, a tabela a seguir lista os tempos de pesquisa médios de uma pesquisa de conteúdo com base no número de caixas de correio incluídas na pesquisa.
     
@@ -319,7 +319,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
   
   - Quando a caixa de correio de um usuário é pesquisada, qualquer Microsoft Team ou grupo do Office 365 do qual o usuário é membro não será pesquisado. Da mesma forma, quando você pesquisa um grupo do Microsoft Team ou do Office 365, somente a caixa de correio de grupo e o site de grupo que você especifica são pesquisados; as contas de caixas de correio e do OneDrive for Business dos membros do grupo não são pesquisadas, a menos que você as adicione explicitamente à pesquisa.
     
-  - Para obter uma lista dos membros de um grupo do Microsoft Team ou do Office 365, você pode exibir as propriedades na página **grupos \> domésticos** no centro de administração do Office 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online: 
+  - Para obter uma lista dos membros de um grupo do Microsoft Team ou do Office 365, você pode exibir as propriedades na página **grupos \> domésticos** no centro de administração do Microsoft 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ Veja mais informações sobre as pesquisas de conteúdo.
     
     ![Exemplo da consulta que é criada ao usar a lista de palavras-chave e uma condição](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - Se você tiver uma consulta de pesquisa que contenha palavras-chave para caracteres não inglesas (como caracteres chineses), talvez seja necessário usar o cmdlet **set-ComplianceSearch** para configurar a propriedade Language para a pesquisa de conteúdo. Ao criar uma pesquisa de conteúdo usando a GUI no centro de &amp; conformidade de segurança, o idioma padrão é neutro. 
+  - Se você tiver uma consulta de pesquisa que contenha palavras-chave para caracteres não inglesas (como caracteres chineses), talvez seja necessário usar o cmdlet **set-ComplianceSearch** para configurar a propriedade Language para a pesquisa de conteúdo. Ao criar uma pesquisa de conteúdo usando a GUI no centro de conformidade do & de segurança, o idioma padrão é neutro. 
     
     Como saber se você precisa alterar a configuração de idioma de uma pesquisa de conteúdo? Se você estiver certo de que os locais de conteúdo contêm os caracteres que você está procurando, mas a pesquisa não retornar nenhum resultado, a configuração de idioma poderá ser a causa.
     
-    Para alterar a configuração de idioma de uma pesquisa de conteúdo existente, execute o seguinte comando &amp; no PowerShell do centro de conformidade de segurança:
+    Para alterar a configuração de idioma de uma pesquisa de conteúdo existente, execute o seguinte comando no Security & Compliance Center PowerShell:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ Conforme mencionado anteriormente, você pode pesquisar caixas de correio inativ
     
 ### <a name="miscellaneous"></a>Diversos
   
-- As pesquisas de conteúdo criadas na página de **pesquisa** de conteúdo &amp; no centro de conformidade de segurança não são exibidas na página de **bloqueio de descoberta eletrônica &amp; in-loco** no centro de administração do Exchange. Isso ocorre porque a arquitetura de pesquisa de conteúdo e os objetos de pesquisa criados &amp; no centro de conformidade de segurança são completamente diferentes do recurso de descoberta eletrônica in-loco no Exchange Online. 
+- As pesquisas de conteúdo criadas na página de **pesquisa de conteúdo** no centro de conformidade do _AMP_ de segurança não são exibidas na página de **bloqueio de descoberta eletrônica &amp; in-loco** no centro de administração do Exchange. Isso ocorre porque a arquitetura de pesquisa de conteúdo e os objetos de pesquisa criados no centro de conformidade do & de segurança são completamente diferentes do recurso de descoberta eletrônica in-loco no Exchange Online. 
     
-    Pelo mesmo motivo, as pesquisas criadas na página de **pesquisa de conteúdo** não são exibidas na página **pesquisas** de um caso de descoberta eletrônica &amp; no centro de conformidade de segurança. 
+    Pelo mesmo motivo, as pesquisas criadas na página de **pesquisa de conteúdo** não são exibidas na página **pesquisas** de um caso de descoberta eletrônica no centro de conformidade do & de segurança. 
     
 - Qual é a diferença entre reiniciar e repetir uma pesquisa? Quando você reinicia uma pesquisa, todos os locais de conteúdo especificados na pesquisa são pesquisados novamente em uma nova pesquisa de visualização. No enTanto, quando você repetir uma pesquisa, somente os locais de conteúdo que falharam quando a pesquisa foi executada pela última vez serão pesquisadas novamente.
    

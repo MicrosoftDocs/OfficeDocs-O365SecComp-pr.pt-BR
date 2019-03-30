@@ -1,9 +1,8 @@
 ---
-title: Definir problemas e atribuir usuários na Descoberta Eletrônica Avançada do Office 365
+title: Definir problemas e atribuir usuários na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Saiba como adicionar ou editar um problema, incluindo a atribuição de usuários a ele ou a exclusão de um problema para um caso de descoberta eletrônica na descoberta eletrônica avançada do Office 365.
-ms.openlocfilehash: b8ed024983c527246236b355c81ef226c98f404b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218231"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000634"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definir problemas e atribuir usuários na Descoberta Eletrônica Avançada do Office 365
+# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definir problemas e atribuir usuários na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

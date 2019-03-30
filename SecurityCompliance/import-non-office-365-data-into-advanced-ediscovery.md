@@ -1,9 +1,8 @@
 ---
-title: Importar conteúdo não relacionado ao Office 365 para Descoberta Eletrônica Avançada
+title: Importar conteúdo não-Office 365 para análise de descoberta eletrônica avançada
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Como as etapas para importar o conteúdo que não é armazenado no O365 em um blob do Azure para que ele possa ser analisado com o AeD
-ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217061"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001164"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar conteúdo não relacionado ao Office 365 para Descoberta Eletrônica Avançada
+# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar conteúdo não-Office 365 para análise de descoberta eletrônica avançada
 
 Nem todos os documentos que você pode precisar analisar com a descoberta eletrônica avançada do Office 365 residirão no Office 365. Com o recurso de importação de conteúdo não-Office 365 na descoberta eletrônica avançada, é possível carregar documentos que não estão no Office 365 (exceto arquivos PST) em um caso vinculado, BLOB de armazenamento do Azure e analisá-los com a descoberta eletrônica avançada. Este procedimento mostra como trazer documentos não-Office 365 para a descoberta eletrônica avançada para análise.
   
@@ -62,7 +61,7 @@ O uso do recurso de upload que não é do Office 365 conforme descrito neste pro
     
 7. Construa a linha de comando AzCopy para carregar os arquivos da seguinte maneira:
     
-    AzCopy/Source: " *caminho completo para a pasta raiz na máquina local* "/dest: " *URL do contêiner até mas não incluindo o?* "/DestSAS: " *o restante da URL do contêiner do? ao final* "/S. 
+    AzCopy/Source: " *caminho completo para a pasta raiz na máquina local* "/dest: " *URL do contêiner até mas não incluindo o?*  "/DestSAS:" *restante da URL do contêiner do? ao final* "/S. 
     
     Por exemplo, usando estes valores: 
     

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: O Microsoft Proteção do Exchange Online (EOP) oferece muitos relatórios diferentes que podem ajudá-lo a determinar o status e a integridade gerais de sua organização. Existem também ferramentas que ajudam você a solucionar problemas com eventos específicos (tais como uma mensagem que não chega aos destinatários pretendidos), e relatórios de auditoria para ajudar nos requisitos de conformidade. A tabela a seguir descreve os relatórios e as ferramentas de solução de problemas disponíveis para o administradores de EOP.
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693160"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000944"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Relatórios e rastreamento de mensagem no Exchange Online Protection
 
@@ -38,7 +38,7 @@ ConFira os recursos a seguir para obter mais informações:
 - [Relatórios do Office 365 no Centro de administrador - Uso do aplicativo de email](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [Relatórios do Office 365 no Centro de administrador - Uso de caixa de correio](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Relatórios &amp; de conformidade de segurança no centro de administração do Office 365
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Relatórios &amp; de conformidade de segurança no centro de administração do Microsoft 365
 
 Esses relatórios aprimorados fornecem uma experiência de relatório interativa para administradores do EOP, que inclui informações de resumo e a capacidade de aprofundar para obter mais detalhes.  
 
@@ -50,7 +50,7 @@ Esses relatórios aprimorados fornecem uma experiência de relatório interativa
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Relatórios personalizados usando o Microsoft Graph
 
-Criar proGramaticamente relatórios disponíveis no centro de administração do Office 365 usando o Microsoft Graph conFira os subtópicos sobre [como trabalhar com os relatórios de uso do office 365 no Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
+Criar proGramaticamente relatórios disponíveis no centro de administração do Microsoft 365 usando o Microsoft Graph conFira os subtópicos sobre [como trabalhar com os relatórios de uso do Office 365 no Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>Relatórios personalizados usando serviços Web de relatório
 
@@ -83,6 +83,6 @@ A tabela a seguir descreve quando dados de relatórios e rastreamento de mensage
 |Dados de rastreamento de mensagem  <br/> |90 dias  <br/> |Ao rastrear mensagens ocorridas em um período menor que 7 dias, as mensagens devem aparecer no intervalo de 5 a 30 minutos.  <br/> Ao rastrear mensagens ocorridas em um período superior a 7 dias, os resultados podem demorar umas poucas horas.  <br/> |
    
 > [!NOTE]
-> A disponibilidade e a latência de dados são as mesmas, sejam elas solicitadas por meio do Centro de administração do Office 365 ou pelo PowerShell remoto. 
+> A disponibilidade e a latência dos dados é a mesma, seja ela solicitada por meio do centro de administração do Microsoft 365 ou do PowerShell remoto. 
   
 

@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use o botão repetir para resolver pesquisas de conteúdo que têm erros de local de conteúdo.
-ms.openlocfilehash: 032d93ef0990ed1dd7c1ea7bf2ba16653b3a862f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218851"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998994"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Repetir uma pesquisa de conteúdo para resolver um erro de localização de conteúdo
 
-Ao usar a pesquisa de conteúdo no centro de conformidade do & de segurança do Office 365 para pesquisar um número muito grande de caixas de correio (por exemplo, Pesquisar em 100.000 caixas de correio ou mais em uma única pesquisa de conteúdo), você pode receber erros de pesquisa semelhantes aos seguintes:
+Ao usar a pesquisa de conteúdo no centro de segurança e conformidade para pesquisar um número muito grande de caixas de correio (por exemplo, Pesquisar 100.000 caixas de correio ou mais em uma única pesquisa de conteúdo), você pode receber erros de pesquisa semelhantes aos seguintes:
 
 ```
 Error

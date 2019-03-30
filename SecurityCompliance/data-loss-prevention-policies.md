@@ -3,8 +3,8 @@ title: Visão geral das políticas de prevenção de perda de dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862533"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000014"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
@@ -28,7 +28,7 @@ Para estar em conformidade com padrões de negócios e regulamentações do seto
   
 Com uma política de DLP, você pode:
   
-- **Identificar informações confidenciais em vários locais, como o Exchange Online, o SharePoint Online e o OneDrive for Business.**
+- **Identificar informações confidenciais em vários locais, como o Exchange Online, o SharePoint Online, o OneDrive for Business e o Microsoft Teams.**
     
     Por exemplo, você pode identificar qualquer documento que contenha um número de cartão de crédito armazenado em qualquer site do OneDrive for Business ou pode monitorar apenas os sites do OneDrive de pessoas específicas.
     
@@ -36,13 +36,13 @@ Com uma política de DLP, você pode:
     
     Por exemplo, você pode identificar qualquer documento ou email contendo um registro de integridade compartilhado com pessoas de fora da organização e, em seguida, bloquear automaticamente o acesso a esse documento ou bloquear o envio do email.
     
-- **Monitore e proteja as informações confidenciais nas versões de área de trabalho do Excel 2016, PowerPoint 2016 e Word 2016.**
+- **Monitorar e proteger informações confidenciais nas versões de área de trabalho do Excel, PowerPoint e Word.**
     
-    Assim como no Exchange Online, no SharePoint Online e no OneDrive for Business, esses programas da área de trabalho do Office 2016 incluem os mesmos recursos para identificar informações confidenciais e aplicar políticas de DLP. A DLP oferece monitoramento contínuo, quando as pessoas compartilham conteúdo nestes programas do Office 2016.
+    Assim como no Exchange Online, no SharePoint Online e no OneDrive for Business, esses programas da área de trabalho do Office incluem os mesmos recursos para identificar informações confidenciais e aplicar políticas de DLP. O DLP fornece monitoramento contínuo quando as pessoas compartilham o conteúdo desses programas do Office.
     
 - **Ajude os usuários a aprender a manter a conformidade sem interromper o fluxo de trabalho.**
     
-    Você pode instruir os usuários sobre políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear seu trabalho. Por exemplo, se um usuário tentar compartilhar um documento que contém informações confidenciais, uma política de DLP pode enviar uma notificação por email e mostrar uma dica de política no contexto da biblioteca de documentos que permite substituir a política se ele tivere uma justificativa de negócios. As mesmas dicas de política também aparecem no Outlook na Web, Outlook 2013 e posterior, Excel 2016, PowerPoint 2016 e Word 2016.
+    Você pode instruir os usuários sobre políticas de DLP e ajudá-los a permanecer em conformidade sem bloquear seu trabalho. Por exemplo, se um usuário tentar compartilhar um documento que contém informações confidenciais, uma política de DLP pode enviar uma notificação por email e mostrar uma dica de política no contexto da biblioteca de documentos que permite substituir a política se ele tivere uma justificativa de negócios. As mesmas dicas de política também aparecem no Outlook na Web, Outlook, Excel, PowerPoint e Word.
     
 - **Exibir relatórios DLP mostrando o conteúdo que corresponde às políticas de DLP da sua organização.**
     
@@ -56,7 +56,7 @@ Você cria e gerencia políticas de DLP na página prevenção de perda de dados
 
 Uma política de DLP contém algumas informações básicas:
   
-- Onde proteger os **locais** de conteúdo, como o Exchange Online, o SharePoint Online e o onedrive for Business sites. 
+- Onde proteger os **locais** de conteúdo, como o Exchange Online, o SharePoint Online e o onedrive for Business, bem como chats e canais do Microsoft Teams. 
     
 - Quando e como proteger o conteúdo aplicando **regras** compostas por: 
     
@@ -72,7 +72,7 @@ Por exemplo, você pode ter uma política de DLP que ajuda a detectar a presenç
   
 ### <a name="locations"></a>Locais
 
-Uma política de DLP pode encontrar e proteger informações confidenciais no Office 365, se essas informações estão localizadas no Exchange Online, no SharePoint Online ou no OneDrive for Business. Você pode escolher facilmente proteger todos os sites do SharePoint ou contas do OneDrive, apenas sites ou contas específicos ou todas as caixas de correio. Observe que ainda não é possível selecionar apenas as caixas de correio de usuários específicos.
+Uma política de DLP pode encontrar e proteger informações confidenciais no Office 365, se essas informações estão localizadas no Exchange Online, no SharePoint Online, no OneDrive for Business ou no Microsoft Teams. Você pode optar por proteger o conteúdo em emails do Exchange, chats e canais do Microsoft Teams e todas as bibliotecas do SharePoint ou do OneDrive, ou selecionar locais específicos para uma política.
   
 ![Opções para locais onde uma política DLP pode ser aplicada](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ O email pode notificar a pessoa que enviou, compartilhou ou modificou o conteúd
   
 Além de enviar uma notificação por email, uma notificação de usuário exibe uma dica de política:
   
-- No Outlook 2013 e posterior e no Outlook na Web.
+- No Outlook e no Outlook na Web.
     
 - Para o documento em um site do SharePoint Online ou do OneDrive for Business.
     
-- No Excel 2016, PowerPoint 2016 e Word 2016, quando o documento é armazenado em um site incluído em uma política de DLP.
+- No Excel, PowerPoint e Word, quando o documento é armazenado em um site incluído em uma política de DLP.
     
 A dica de política e a notificação por email explicam por que o conteúdo está em conflito com uma política de DLP. Se você escolher, a notificação por email e a dica de política podem permitir que usuários substituam uma regra ao relatar um falso positivo ou fornecer uma justificativa de negócios. Isso pode ajudar você a treinar os usuários sobre as políticas de DLP e aplicá-las sem impedir que as pessoas façam seu trabalho. Informações sobre substituições e falsos positivos também são registradas para relatório (veja abaixo sobre os relatórios de DLP) e incluídas nos relatórios de incidentes (próxima seção), para que o responsável pela conformidade possa analisar regularmente essas informações.
   
@@ -428,13 +428,15 @@ A DLP detecta informações confidenciais usando análise profunda de conteúdo 
 
 Depois de criar uma política de DLP no centro &amp; de conformidade de segurança, ela é armazenada em um repositório central de políticas e, em seguida, sincronizada com várias fontes de conteúdo, incluindo:
   
-- Exchange Online e de lá para o Outlook na Web e o Outlook 2013 e posterior
+- Exchange Online e de lá para o Outlook na Web e o Outlook
     
 - Sites do OneDrive for Business
     
 - Sites do SharePoint Online
     
-- Programas de área de trabalho do Office 2016 (Excel 2016, PowerPoint 2016 e Word 2016)
+- Programas de área de trabalho do Office (Excel, PowerPoint e Word)
+
+- Canais e chats do Microsoft Teams
     
 Após a sincronização da política com os locais certos, ela começará a avaliar o conteúdo e imporá ações.
   
@@ -444,26 +446,36 @@ Em todos os sites do SharePoint Online e do OneDrive for Business, os documentos
   
 Por esse motivo, as políticas de DLP verificam documentos em busca de correspondências de política com frequência em segundo plano. Você pode considerar isso uma avaliação assíncrona da política.
   
-Veja como funciona. À medida que as pessoas adicionam ou alteram documentos em seus sites, o mecanismo de pesquisa verifica o conteúdo para que você possa procurá-lo mais tarde. Enquanto isso ocorre, o conteúdo também verifica informações confidenciais e verifica se ela é compartilhada. Todas as informações confidenciais encontradas são armazenadas com segurança no índice de pesquisa, de modo que somente a equipe de conformidade possa acessá-la, mas não usuários típicos. Cada política de DLP que você ativou é executada em segundo plano (de maneira assíncrona), verificando a pesquisa com frequência para qualquer conteúdo que corresponda a uma política e aplicando ações para protegê-lo contra vazamentos inadvertidos.
+#### <a name="how-it-works"></a>Como funciona
+ 
+À medida que as pessoas adicionam ou alteram documentos em seus sites, o mecanismo de pesquisa verifica o conteúdo para que você possa procurá-lo mais tarde. Enquanto isso ocorre, o conteúdo também verifica informações confidenciais e verifica se ela é compartilhada. Todas as informações confidenciais encontradas são armazenadas com segurança no índice de pesquisa, de modo que somente a equipe de conformidade possa acessá-la, mas não usuários típicos. Cada política de DLP que você ativou é executada em segundo plano (de maneira assíncrona), verificando a pesquisa com frequência para qualquer conteúdo que corresponda a uma política e aplicando ações para protegê-lo contra vazamentos inadvertidos.
   
 ![Diagrama mostrando como a política de DLP avalia o conteúdo de forma assíncrona](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Por fim, os documentos podem conflitar uma política de DLP, mas eles também podem ficar em conformidade com ela. Por exemplo, se uma pessoa adicionar números de cartão de crédito a um documento, isso poderá fazer com que uma política de DLP bloqueie o acesso ao documento automaticamente. Mas, se a pessoa remover, mais tarde, as informações confidenciais, a ação (neste caso, bloqueio) será desfeita na próxima vez que se avaliar se o documento está de acordo com a política.
   
-A DLP avalia qualquer conteúdo que possa ser indexado. Para obter mais informações sobre quais tipos de arquivo são rastreados por padrão, confira [extensões de nome de arquivo rastreaDo padrão e tipos de arquivo analisados no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+A DLP avalia qualquer conteúdo que possa ser indexado. Para obter mais informações sobre quais tipos de arquivo são rastreados por padrão, confira [extensões de nome de arquivo rastreaDo padrão e tipos de arquivo analisados no SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Avaliação de política no Exchange Online, Outlook 2013 e posterior e Outlook na Web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Avaliação de política no Exchange Online, Outlook e Outlook na Web
 
-Quando você cria uma política de DLP que inclui o Exchange Online como um local, a política foi sincronizada do centro de &amp; conformidade de segurança do Office 365 para o Exchange Online e, em seguida, do Exchange Online para o Outlook na Web e do Outlook 2013 e posterior.
+Quando você cria uma política de DLP que inclui o Exchange Online como um local, a política foi sincronizada do centro de &amp; conformidade de segurança do Office 365 para o Exchange Online e, em seguida, do Exchange Online para o Outlook na Web e no Outlook.
   
-Quando uma mensagem está sendo composta no Outlook, o usuário pode ver dicas de política à medida que o conteúdo que está sendo criado é avaliado em relação a políticas de DLP. E depois que uma mensagem é enviada, ela é avaliada em relação às políticas de DLP como uma parte normal do fluxo de emails, juntamente com as regras de fluxo de email do Exchange (também conhecidas como regras de transporte) e as políticas de DLP criadas no centro de administração do Exchange (consulte a próxima seção para obter mais informações). As políticas DLP examinam a mensagem e os anexos.
+Quando uma mensagem está sendo composta no Outlook, o usuário pode ver dicas de política à medida que o conteúdo que está sendo criado é avaliado em relação a políticas de DLP. E depois que uma mensagem é enviada, ela é avaliada em relação às políticas de DLP como uma parte normal do fluxo de emails, juntamente com as regras de fluxo de email do Exchange (também conhecidas como regras de transporte) e as políticas de DLP criadas no centro de administração do Exchange. As políticas DLP examinam a mensagem e os anexos.
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Avaliação de política nos programas de área de trabalho do Office 2016
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Avaliação de política nos programas de área de trabalho do Office
 
-O Excel 2016, o PowerPoint 2016 e o Word 2016 incluem o mesmo recurso para identificar informações confidenciais e aplicar políticas de DLP que o SharePoint Online e o OneDrive for Business. Estes programas do Office 2016 sincronizam suas políticas de DLP diretamente no repositório de políticas central e, em seguida, avaliam continuamente o conteúdo em relação às políticas de DLP quando as pessoas trabalham com documentos abertos de um site incluído em uma política de DLP.
+O Excel, PowerPoint e Word têm a mesma capacidade de identificar informações confidenciais e aplicar políticas de DLP como o SharePoint Online e o OneDrive for Business. Esses programas do Office sincronizam suas políticas de DLP diretamente a partir do repositório de políticas central e, em seguida, avaliam continuamente o conteúdo em relação às políticas de DLP quando as pessoas trabalham com documentos abertos de um site incluído em uma política de DLP.
   
-A avaliação de política de DLP no Office 2016 foi projetada para não afetar o desempenho dos programas ou a produtividade de pessoas que trabalham no conteúdo. Se eles estiverem trabalhando em um documento grande ou se o computador do usuário estiver ocupado, pode levar alguns segundos para que uma dica de política seja exibida.
-  
+A avaliação de política de DLP no Office foi projetada para não afetar o desempenho dos programas ou a produtividade de pessoas que trabalham no conteúdo. Se eles estiverem trabalhando em um documento grande ou se o computador do usuário estiver ocupado, pode levar alguns segundos para que uma dica de política seja exibida.
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Avaliação de política no Microsoft Teams
+ 
+Quando você cria uma política de DLP que inclui o Microsoft Teams como um local, a política foi sincronizada do centro &amp; de conformidade de segurança do Office 365 para contas de usuário e os canais e chats do Microsoft Teams. Dependendo de como as políticas de DLP são configuradas, quando alguém tenta compartilhar informações confidenciais em um Microsoft Teams chat ou canal, a mensagem pode ser bloqueada ou revogada. E os documentos que contêm informações confidenciais e que são compartilhados com convidados (usuários externos) não serão abertos para esses usuários.
+
+Por exemplo, suponha que alguém tente compartilhar informações confidenciais em um chat de equipes ou canal com usuários externos. Suponha que há uma política de DLP definida para evitar isso. Com a proteção in-loco, as mensagens que contêm informações confidenciais enviadas a usuários externos são excluídas. Isso ocorre em segundos e acontece automaticamente, de acordo com o modo como a política de DLP é configurada.
+
+Dicas de política notificam os remetentes sobre por que suas mensagens foram bloqueadas ou revogadas. Por exemplo, um remetente pode ser informado de que sua mensagem contém informações de identificação pessoal (PII) que não podem ser compartilhadas com qualquer pessoa, ou que um documento que contém PII não pode ser compartilhado com pessoas de fora da organização. O remetente pode então editar sua mensagem para estar em conformidade com as políticas de DLP.
+ 
 ## <a name="permissions"></a>Permissões
 
 Os membros da sua equipe de conformidade que criarão políticas de DLP precisam de &amp; permissões para o centro de conformidade de segurança. Por padrão, o administrador de locatários terá acesso a esse local e poderá dar aos gerentes de conformidade e outras pessoas &amp; acesso ao centro de conformidade de segurança, sem fornecer todas as permissões de um administrador de locatários. Para fazer isso, recomendamos que você:
@@ -482,19 +494,19 @@ Essas permissões são necessárias somente para criar e aplicar uma política d
 
 Para usar a maioria dos cmdlets do centro de &amp; conformidade de segurança, você precisa:
   
-1. [Conectar ao &amp;Centro de Conformidade e Segurança do Office 365 usando o PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectar ao &amp;Centro de Conformidade e Segurança do Office 365 usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. Use qualquer um destes [cmdlets do &amp; centro de conformidade de segurança do Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Use qualquer um desses [cmdlets de política e conformidade-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365, incluindo o Exchange Online. Por esse motivo, os cmdlets dos relatórios de DLP estão disponíveis no PowerShell do Exchange Online, não no PowerShell &amp; do centro de conformidade de segurança. Portanto, para usar os cmdlets dos relatórios de DLP, você precisa:
+No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365, incluindo o Exchange Online. Por esse motivo, **os cmdlets dos relatórios de DLP estão disponíveis no PowerShell do Exchange Online, não no PowerShell &amp; do centro de conformidade de segurança**. Portanto, para usar os cmdlets dos relatórios de DLP, você precisa:
   
-1. [Conectar-se ao Exchange Online usando o PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Conectar-se ao Exchange Online usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use qualquer um destes cmdlets para os relatórios de DLP:
     
-  - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Mais informações
 

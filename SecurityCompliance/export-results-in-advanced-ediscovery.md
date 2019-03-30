@@ -1,9 +1,8 @@
 ---
-title: Exportar resultados na Descoberta Eletrônica Avançada do Office 365
+title: Exportar resultados na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Saiba como definir opções para exportar os resultados da descoberta eletrônica avançada do Office 365, incluindo o procedimento para especificar parâmetros para um lote de exportação. '
-ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218091"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000904"
 ---
-# <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados na Descoberta Eletrônica Avançada do Office 365
+# <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -183,10 +182,10 @@ A tabela a seguir lista os arquivos de saída que são gerados quando você exec
 |**Nome do arquivo**|**Tipo de arquivo**|**Descrição**|
 |:-----|:-----|:-----|
 |Resumo de exportação  <br/> |Limit  <br/> |Um arquivo de log gerado pela ferramenta de exportação de descoberta eletrônica.  <br/> |
-|Fazer  <br/> |txt  <br/> |Um arquivo de log gerado pela ferramenta de exportação de descoberta eletrônica.  <br/> |
+|Rastrear  <br/> |txt  <br/> |Um arquivo de log gerado pela ferramenta de exportação de descoberta eletrônica.  <br/> |
 |Arquivos de texto extraídos  <br/> |Pasta de arquivo  <br/> |Pasta que contém os arquivos de texto extraídos dos arquivos exportados.  <br/> |
 |Entrada ou arquivos nativos  <br/> |Pasta de arquivo  <br/> |Pasta que contém os arquivos nativos e de entrada dos arquivos exportados.  <br/> |
-|Exportar lista  <br/> |xlsx  <br/> |Metadados de arquivos exPortados no formato xlsx. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação. Se necessário, vários arquivos são criados, cada um contém linhas de 100 150K. Se um determinado valor contiver mais caracteres do que uma célula do Excel pode conter (atualmente, o limite é de 32.767 caracteres), o valor será cortado para o comprimento máximo permitido. Se um valor for cortado, a cor de plano de fundo da célula será vermelha para indicar isso ao usuário. " Participantes de email "é um exemplo de um campo que pode exceder o limite de tamanho, se o email foi enviado para uma distribuição grande. ConFira [Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md) para obter detalhes sobre os campos de saída.<br/> |
+|Exportar lista  <br/> |xlsx  <br/> |Metadados de arquivos exPortados no formato xlsx. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação. Se necessário, vários arquivos são criados, cada um contém linhas de 100 150K. Se um determinado valor contiver mais caracteres do que uma célula do Excel pode conter (atualmente, o limite é de 32.767 caracteres), o valor será cortado para o comprimento máximo permitido. Se um valor for cortado, a cor de plano de fundo da célula será vermelha para indicar isso ao usuário. " Participantes de email "é um exemplo de um campo que pode exceder o limite de tamanho, se o email foi enviado para uma distribuição grande. ConFira [Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md) para obter detalhes sobre os campos de saída.  <br/> |
 |Carregar arquivo  <br/> |Limit  <br/> |Metadados de arquivos exPortados no formato CSV para carregar em um aplicativo diferente. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação.  <br/> |
 |Indicador de êxito  <br/> |txt  <br/> |Criado somente ao exportar para um blob do Azure de terceiros. Se a exportação tiver êxito completamente, o arquivo será criado. No caso de falha, ou o sucesso parcial, o arquivo não será criado. O arquivo será criado na pasta raiz, permitindo o rastreamento automático em diferentes status de lotes/sessões de exportação. Este é um arquivo vazio. O nome é: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: Habilitar caixas de correio de arquivo morto no centro &amp; de conformidade de segurança do Office 365
+title: Habilitar caixas de correio de arquivo morto no centro de conformidade do & de segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,34 +16,34 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Use o centro de conformidade &amp; de segurança do Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
-ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Use o centro de conformidade do & de segurança no Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341792"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000254"
 ---
-# <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro &amp; de conformidade de segurança do Office 365
+# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro de conformidade do & de segurança
   
 O arquivamento no Office 365 (também chamado de arquivamento in-loco) fornece aos usuários espaço de armazenamento adicional de caixa de correio. Depois de ativar as caixas de correio de arquivo morto, os usuários podem acessar e armazenar mensagens em suas caixas de correio de arquivo morto usando o Microsoft Outlook e o Outlook na Web (anteriormente conhecido como Outlook Web App). Os usuários também podem mover ou copiar mensagens entre a caixa de correio principal e a caixa de correio de arquivo morto. Eles também podem recuperar itens excluídos da pasta itens recuperáveis em suas caixas de correio de arquivo morto usando a ferramenta recuperar itens excluídos. 
   
 > [!TIP]
-> O Office 365 fornece uma quantidade ilimitada de armazenamento de arquivos com o recurso de arquivamento de expansão automática. Quando o arquivamento de expansão automática está ativado e, em seguida, a cota de armazenamento inicial na caixa de correio de arquivo morto de um usuário é atingida, o Office 365 adiciona automaticamente espaço de armazenamento adicional. Isso significa que os usuários não ficarão sem espaço de armazenamento de caixa de correio e você não precisará gerenciar nada depois de habilitar inicialmente a caixa de correio de arquivo morto e ativar o arquivamento de expansão automática para sua organização. Para obter mais informações, consulte [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md). 
+> O Office 365 fornece uma quantidade ilimitada de armazenamento de arquivos com o recurso de arquivamento de expansão automática. Quando o arquivamento de expansão automática está ativado e, em seguida, a cota de armazenamento inicial na caixa de correio de arquivo morto de um usuário é atingida, o Office 365 adiciona automaticamente espaço de armazenamento adicional. Isso significa que os usuários não ficarão sem espaço de armazenamento de caixa de correio e você não precisará gerenciar nada depois de habilitar inicialmente a caixa de correio de arquivo morto e ativar o arquivamento de expansão automática para sua organização. Confira mais informações em [Visão geral de arquivamento ilimitado no Office 365](unlimited-archiving.md). 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-Você precisa receber a função de destinatários de email no Exchange Online para habilitar ou desabilitar caixas de correio de arquivo morto. Por padrão, essa função é atribuída aos grupos de função gerenciamento de destinatários e gerenciamento de organização na página **permissões** no centro de administração do Exchange. Se você não vir a página **arquivo morto** no centro &amp; de conformidade de segurança, peça ao administrador para atribuir as permissões necessárias. 
+Você precisa receber a função de destinatários de email no Exchange Online para habilitar ou desabilitar caixas de correio de arquivo morto. Por padrão, essa função é atribuída aos grupos de função gerenciamento de destinatários e gerenciamento de organização na página **permissões** no centro de administração do Exchange. Se você não vir a página **arquivo morto** no centro de conformidade do _AMP_ de segurança, peça ao administrador para atribuir as permissões necessárias. 
   
 ## <a name="enable-an-archive-mailbox"></a>Habilitar uma caixa de correio de arquivo morto
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do centro de conformidade &amp; de segurança, clique em arquivamento de **governança** \> **** de dados.
+3. No painel esquerdo do centro de conformidade do & de segurança, clique em arquivamento de **governança** \> **** de dados.
     
-    A página **Arquivo Morto** é exibida. A coluna **Caixa de correio de arquivo morto** indica se uma caixa de correio de arquivo morto está habilitada ou desabilitada para cada usuário. 
+    A página **arquivo morto** é exibida. A coluna **caixa de correio de arquivo morto** indica se uma caixa de correio de arquivo morto está habilitada ou desabilitada para cada usuário. 
     
 4. Na lista de caixas de correio, selecione o usuário para o qual você deseja habilitar a caixa de correio de arquivo morto.
     
@@ -58,27 +58,27 @@ Você precisa receber a função de destinatários de email no Exchange Online p
     Pode levar alguns momentos para criar a caixa de correio de arquivo morto. Quando ele é criado, a **caixa de correio de arquivo morto: habilitada** é exibida no painel de detalhes para o usuário selecionado. Talvez seja necessário clicar em **Atualizar** ![ícone](media/O365-MDM-Policy-RefreshIcon.gif) de atualização para atualizar as informações no painel de detalhes. 
     
 > [!TIP]
-> Você pode também habilitar caixas de correio de arquivo morto em massa, selecionando vários usuários com caixas de correio de arquivo morto (use as teclas Shift ou Ctrl). Depois de selecionar várias caixas de correio, clique em **Habilitar** no painel de detalhes.  
+> Você também pode habilitar as caixas de correio de arquivo morto em massa, selecionando vários usuários com caixas de correio de arquivo morto desabilitadas (use as teclas Shift ou CTRL). Depois de selecionar várias caixas de correio, clique em **habilitar** no painel de detalhes. 
   
 ## <a name="disable-an-archive-mailbox"></a>Desabilitar uma caixa de correio de arquivo morto
   
-Você também pode usar a página **arquivo morto** no centro &amp; de conformidade de segurança para desabilitar a caixa de correio de arquivo morto de um usuário. Após desabilitar uma caixa de correio de arquivo morto, você poderá reconectá-la à caixa de correio principal do usuário dentro de 30 dias de desabilitá-la. Nesse caso, o conteúdo original da caixa de correio de arquivo morto é restaurado. Após 30 dias, o conteúdo da caixa de correio de arquivo morto original é excluído permanentemente e não pode ser recuperado. Portanto, se você reabilitar o arquivo morto mais de 30 dias após desabilitá-lo, uma nova caixa de correio de arquivo morto será criada. 
+Você também pode usar a página **arquivo morto** no centro de conformidade do _AMP_ de segurança para desabilitar a caixa de correio de arquivo morto de um usuário. Após desabilitar uma caixa de correio de arquivo morto, você poderá reconectá-la à caixa de correio principal do usuário dentro de 30 dias de desabilitá-la. Neste caso, o conteúdo original da caixa de correio de arquivo morto é restaurado. Após 30 dias, o conteúdo da caixa de correio de arquivo morto original é excluído permanentemente e não pode ser recuperado. Então, se você habilitar novamente o arquivo morto 30 dias ou mais após desabilitá-lo, será criada uma nova caixa de correio de arquivo morto. 
   
 Observe que a política de arquivo morto padrão atribuída às caixas de correio dos usuários move itens para a caixa de correio de arquivo morto dois anos após a data em que o item é entregue. Se você desabilitar a caixa de correio de arquivo morto de um usuário, nenhuma ação será realizada nos itens de caixa de correio e ela permanecerá na caixa de correio principal do usuário.
   
 Para desabilitar uma caixa de correio de arquivo morto:
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do centro de conformidade &amp; de segurança, clique em arquivamento de **governança** \> **** de dados.
+3. No painel esquerdo do centro de conformidade do & de segurança, clique em arquivamento de **governança** \> **** de dados.
     
-    A página **Arquivo Morto** é exibida. A coluna **Caixa de correio de arquivo morto** indica se uma caixa de correio de arquivo morto está habilitada ou desabilitada para cada usuário. 
+    A página **arquivo morto** é exibida. A coluna **caixa de correio de arquivo morto** indica se uma caixa de correio de arquivo morto está habilitada ou desabilitada para cada usuário. 
     
-4. Na lista de caixas de correio, selecione o usuário para o qual você deseja habilitar a caixa de correio arquivo morto.
+4. Na lista de caixas de correio, selecione o usuário para o qual você deseja desabilitar a caixa de correio de arquivo morto.
     
-5. No painel de detalhes, clique em **Desabilitar**. 
+5. No painel de detalhes, clique em **desabilitar**. 
     
     Uma mensagem de aviso é exibida dizendo que você terá 30 dias para reabilitar a caixa de correio de arquivo morto e, após 30 dias, todas as informações no arquivo morto serão excluídas permanentemente. 
     
@@ -87,7 +87,7 @@ Para desabilitar uma caixa de correio de arquivo morto:
     Pode levar alguns instantes para desabilitar a caixa de correio de arquivo morto. Quando estiver desabilitada, **caixa de correio de arquivo morto: Disabled** será exibido no painel de detalhes para o usuário selecionado. Talvez seja necessário clicar em **Atualizar** ![ícone](media/O365-MDM-Policy-RefreshIcon.gif) de atualização para atualizar as informações no painel de detalhes. 
     
 > [!TIP]
-> Você pode também desabilitar caixas de correio de arquivo morto em massa, selecionando vários usuários com caixas de correio de arquivo morto (use as teclas Shift ou Ctrl). Depois de selecionar várias caixas de correio, clique em **Desabilitar** no painel de detalhes.  
+> Você também pode desabilitar em massa as caixas de correio de arquivo morto selecionando vários usuários com caixas de correio de arquivo morto habilitadas (use as teclas Shift ou CTRL). Depois de selecionar várias caixas de correio, clique em **desabilitar** no painel de detalhes. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Usar o PowerShell do Exchange Online para habilitar ou desabilitar caixas de correio de arquivo morto
 
@@ -127,9 +127,9 @@ Execute o seguinte comando para desabilitar a caixa de correio de arquivo morto 
 
 ## <a name="more-information"></a>Mais informações
   
-- As caixas de correio de arquivo morto ajudam você e seus usuários a atender aos requisitos de retenção, eDiscovery e bloqueio da sua organização. Por exemplo, você pode usar a política de retenção do Exchange da sua organização para mover o conteúdo da caixa de correio para a caixa de correio de arquivo morto dos usuários. Ao usar a ferramenta de pesquisa de conteúdo no centro &amp; de conformidade de segurança para pesquisar conteúdo específico na caixa de correio de um usuário, a caixa de correio de arquivo morto do usuário também será pesquisada. E, quando você coloca uma retenção de litígio ou aplica uma política de retenção do Office 365 à caixa de correio de um usuário, os itens na caixa de correio de arquivo morto também são mantidos.
+- As caixas de correio de arquivo morto ajudam você e seus usuários a atender aos requisitos de retenção, eDiscovery e bloqueio da sua organização. Por exemplo, você pode usar a política de retenção do Exchange da sua organização para mover o conteúdo da caixa de correio para a caixa de correio de arquivo morto dos usuários. Ao usar a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar conteúdo específico na caixa de correio de um usuário, a caixa de correio de arquivo morto do usuário também será pesquisada. E, quando você coloca uma retenção de litígio ou aplica uma política de retenção do Office 365 à caixa de correio de um usuário, os itens na caixa de correio de arquivo morto também são mantidos.
   
-- Quando uma caixa de correio de arquivo morto está habilitada, os usuários podem armazenar mensagens em suas caixas de correio de arquivo morto. Os usuários podem acessar suas caixas de correio de arquivo morto usando o Microsoft Outlook e o Outlook na Web. Usando qualquer um desses aplicativos cliente, os usuários podem exibir mensagens em suas caixas de correio de arquivo morto e mover ou copiar mensagens entre a caixa de correio principal e a caixa de correio de arquivo morto. Os usuários também podem recuperar itens excluídos da pasta itens recuperáveis em suas caixas de correio de arquivo morto usando a ferramenta recuperar itens excluídos. 
+- Quando uma caixa de correio de arquivo morto está habilitada, os usuários podem armazenar mensagens em suas caixas de correio de arquivo morto. Os usuários podem acessar suas caixas de correio de arquivo morto usando o Microsoft Outlook e o Outlook na Web. Usando qualquer um desses aplicativos de cliente, os usuários podem exibir mensagens em sua caixa de correio de arquivo morto e mover ou copiar mensagens entre a caixa de correio principal e a caixa de correio de arquivo morto. Os usuários também podem recuperar itens excluídos da pasta Itens Recuperáveis em suas caixas de correio de arquivo morto usando a ferramenta Recuperar Itens Excluídos. 
   
 - Após as caixas de correio de arquivo morto serem habilitadas, sua organização pode aproveitar a política de retenção padrão do Exchange (também chamada de gerenciamento de registros de mensagens ou política de MRM) que é atribuída automaticamente a cada caixa de correio. Quando uma caixa de correio de arquivo morto está habilitada, a política de retenção padrão do Exchange faz automaticamente o seguinte: 
   

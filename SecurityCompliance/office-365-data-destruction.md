@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral das políticas da Microsoft sobre a reciclagem, a alienação ou a destruição de drives e servidores de disco de datacenter do Office 365.
-ms.openlocfilehash: 6b9f6bacfa1c3bf5ee6c8cb76bc5a394812b49be
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fec6065434fa9fa555a057c68eca60082225652c
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220781"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004138"
 ---
 # <a name="office-365-data-destruction"></a>Destruição de dados do Office 365
 

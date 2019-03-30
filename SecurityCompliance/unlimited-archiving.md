@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Saiba mais sobre o arquivamento de expansão automática no Office 365, que fornece armazenamento de arquivo ilimitado para caixas de correio do Exchange Online.
-ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296644"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000784"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Visão geral do arquivamento ilimitado no Office 365
 
@@ -29,7 +29,7 @@ No Office 365, as caixas de correio de arquivo morto fornecem aos usuários espa
 Para obter instruções detalhadas sobre como ativar o arquivamento de expansão automática, consulte [Enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> O arquivamento de expansão automática também oferece suporte a caixas de correio compartilhadas. Para habilitar o arquivo morto para uma caixa de correio compartilhada, uma licença do Exchange Online Plan 2 ou uma licença do plano 1 do Exchange Online com uma licença de arquivamento do Exchange Online é necessária. 
+> A expansão automática do arquivamento também oferece suporte às caixas de correio compartilhadas. Para habilitar o arquivo morto para uma caixa de correio compartilhada, uma licença do Exchange Online Plan 2 ou uma licença do plano 1 do Exchange Online com uma licença de arquivamento do Exchange Online é necessária. 
   
 ## <a name="how-auto-expanding-archiving-works"></a>Como funciona o arquivamento de expansão automática
 
@@ -97,7 +97,7 @@ Esta seção explica a funcionalidade entre o arquivamento de expansão automát
   
 - **eDiscovery** – quando você usa uma ferramenta de descoberta eletrônica do Office 365, como pesquisa de conteúdo ou descoberta eletrônica in-loco, as áreas de armazenamento adicionais em um arquivo de arquivo expandido automático também são pesquisadas.
     
-- **Retenção** : quando você coloca uma caixa de correio em espera usando ferramentas como retenção de litígio no Exchange Online ou bloqueios de ocorrências de descoberta eletrônica e políticas de retenção no centro de conformidade do _AMP_ de segurança do Office 365, o conteúdo localizado em um arquivo expandido automaticamente também é colocado em espera.
+- **Retenção** : quando você coloca uma caixa de correio em espera usando ferramentas como retenção de litígio no Exchange Online ou bloqueios de ocorrências de descoberta eletrônica e políticas de retenção no centro de segurança e conformidade, o conteúdo localizado em um arquivo expandido automaticamente também é colocado em espera.
     
 - **Gerenciamento de registros de mensagens (MRM)** : se você usar as políticas de exclusão do MRM no Exchange Online para excluir permanentemente os itens de caixa de correio expirados, os itens expirados localizados no arquivo expandido automaticamente também serão excluídos.
     

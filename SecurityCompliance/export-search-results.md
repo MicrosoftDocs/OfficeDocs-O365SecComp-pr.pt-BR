@@ -1,5 +1,5 @@
 ---
-title: Exportar resultados de pesquisa de conteúdo do centro de conformidade do & de segurança do Office 365
+title: Exportar resultados de pesquisa de conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,17 +17,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exporte os resultados da pesquisa de uma pesquisa de conteúdo no centro de conformidade do & de segurança do Office 365 para um computador local. Os resultados de email são exportados como arquivos PST. O conteúdo de sites do SharePoint e do OneDrive for Business são exportados como documentos nativos do Office. '
-ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 'Exporte os resultados da pesquisa de uma pesquisa de conteúdo no centro de conformidade do & de segurança para um computador local. Os resultados de email são exportados como arquivos PST. O conteúdo de sites do SharePoint e do OneDrive for Business são exportados como documentos nativos do Office. '
+ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296564"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000464"
 ---
-# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar resultados de pesquisa de conteúdo do centro de conformidade do & de segurança do Office 365
+# <a name="export-content-search-results"></a>Exportar resultados de pesquisa de conteúdo
 
-Depois que uma pesquisa de conteúdo for executada com êxito, você poderá exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para o computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Há documentos adicionais e relatórios incluídos nos resultados de pesquisa exportados.
+Depois que uma pesquisa de conteúdo for executada com êxito, você poderá exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Há outros documentos e relatórios que são incluídos com os resultados da pesquisa exportados.
   
 Além disso, todas as mensagens de email criptografadas por RMS incluídas nos resultados de uma pesquisa de conteúdo serão descriptografadas quando você exportá-las (como mensagens individuais). Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de desCriptografia do RMS é atribuída a esse grupo de função. Consulte a seção [mais informações](#more-information) para obter detalhes sobre a desCRIPTOGRAFIA do RMS quando você exporta os resultados da pesquisa. 
   
@@ -35,14 +35,11 @@ Exportar os resultados de uma pesquisa de conteúdo envolve preparar os resultad
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para exportar os resultados da pesquisa, você precisa ter a função de gerenciamento de exportação no centro de &amp; conformidade de segurança do Office 365. Essa função é atribuída ao grupo de função Gerenciador de descoberta eletrônica interno. Ele não é atribuído por padrão ao grupo de funções Gerenciamento da organização. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+- Para exportar os resultados da pesquisa, você precisa ter a função de gerenciamento de exportação no centro de conformidade do & de segurança. Essa função é atribuída ao grupo de função do Gerente de Descoberta Eletrônica interno. Ela não é atribuída por padrão ao grupo de funções Gerenciamento da Organização. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
     
 - O computador que você usa para exportar os resultados da pesquisa devem atender aos seguintes requisitos de sistema:
     
   - Versões de 32 e 64 bits do Windows 7 e versões posteriores
-
-
-
     
   - Microsoft .NET Framework 4,7
     
@@ -81,13 +78,13 @@ Exportar os resultados de uma pesquisa de conteúdo envolve preparar os resultad
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Etapa 1: preparar resultados de pesquisa para exportação
 
-A primeira etapa é preparar os resultados da pesquisa para exportação. Ao preparar os resultados, eles são carregados em um local de armazenamento do Azure na nuvem da Microsoft. Observe que o conteúdo de caixas de correio e sites é carregado com uma taxa máxima de 2 GB por hora.
+A primeira etapa é preparar os resultados da pesquisa para a exportação. Ao preparar os resultados, eles são carregados em um local de armazenamento do Azure na nuvem da Microsoft. Observe que o conteúdo de caixas de correio e sites é carregado com uma taxa máxima de 2 GB por hora.
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** \> **Pesquisa de Conteúdo**.
+3. No painel esquerdo do centro de conformidade do & de segurança, clique em **pesquisa de conteúdo**de **pesquisa** \> .
     
 4. Na página **pesquisa de conteúdo** , selecione uma pesquisa. 
     
@@ -129,7 +126,7 @@ A primeira etapa é preparar os resultados da pesquisa para exportação. Ao pre
     
 11. Clique em **Iniciar exportação**.
     
-    Os resultados da pesquisa são preparados para download, o que significa que eles estão sendo carregados para o local de armazenamento do Azure na nuvem da Microsoft. Quando os resultados da pesquisa estiverem prontos para download, o link **baixar resultados** exportados será exibido em **Exportar resultados para um computador** no painel de detalhes. 
+    Os resultados da pesquisa são preparados para download, o que significa que eles estão sendo carregados para o local de armazenamento do Azure na nuvem da Microsoft. Quando os resultados da pesquisa estiverem prontos para download, o link **Baixar resultados exportados** será exibido em **Exportar resultados para um computador** no painel de detalhes. 
   
 ## <a name="step-2-download-the-search-results"></a>Etapa 2: baixar os resultados da pesquisa
 
@@ -162,14 +159,14 @@ Conforme explicado anteriormente, você pode aumentar a velocidade de download C
     
 5. Na **Ferramenta de Exportação de Descoberta Eletrônica**, cole a chave de exportação que você copiou na etapa 2 na caixa apropriada.
     
-6. Clique em **Procurar** para especificar o local onde deseja baixar os arquivos de resultado da pesquisa. 
+6. Clique em **Procurar** para especificar o local onde você deseja baixar os arquivos de resultado da pesquisa. 
     
     > [!NOTE]
     > Devido à grande quantidade de atividade do disco (leituras e gravações), você deve baixar os resultados da pesquisa para uma unidade de disco local; Não baixe-os para uma unidade de rede mapeada ou outro local de rede. 
   
 1. Clique em **Iniciar** para baixar os resultados da pesquisa em seu computador. 
     
-    A **ferramenta de exportação de descoberta eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. 
+    A **Ferramenta de Exportação de Descoberta Eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. 
     
 
   
@@ -189,11 +186,11 @@ Veja mais informações sobre como exportar resultados de pesquisa.
 
 [Nomes de itens exportados](#filenames-of-exported-items)  
   
-[Diversos](#miscellaneous)
+[Miscellaneous](#miscellaneous)
   
  ### <a name="export-limits"></a>Limites de exportação
   
-- Exportar os resultados da pesquisa do &amp; centro de conformidade de segurança tem os seguintes limites:
+- Exportar resultados de pesquisa do centro de conformidade do & de segurança tem os seguintes limites:
     
   - Você pode exportar no máximo 2 TB de dados de uma única pesquisa de conteúdo. Se os resultados da pesquisa forem maiores que 2 TB, considere o uso de intervalos de datas ou outros tipos de filtros para diminuir o tamanho total dos resultados da pesquisa.
     
@@ -220,7 +217,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
     
   - **Manifesto** Um arquivo de manifesto (em formato XML) que contém informações sobre cada item incluído nos resultados da pesquisa. 
     
-  - **Resultados da** Um documento do Excel que contém informações sobre cada item que é baixado como resultado da pesquisa. Para email, o log de resultados contém informações sobre cada mensagem, incluindo: 
+  - **Resultados da** Um documento do Excel que contém informações sobre cada item que é baixado como resultado da pesquisa. Para emails, o log do resultado contém informações sobre cada mensagem, incluindo: 
     
       - O local da mensagem na caixa de correio de origem (inclusive se a mensagem está na caixa de correio principal ou de arquivo morto).
         
@@ -257,7 +254,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
   
 - Se você estiver exportando itens de caixa de correio de uma pesquisa de conteúdo que retorna todos os itens de caixa de correio nos resultados da pesquisa (porque nenhuma palavra-chave está incluída na consulta de pesquisa), os itens parcialmente indexados não serão copiados para o arquivo PST que contém os itens não indexados. Isso ocorre porque todos os itens, incluindo qualquer item parcialmente indexado, são incluídos automaticamente nos resultados normais da pesquisa. Isso significa que os itens parcialmente indexados serão incluídos em um arquivo PST (ou como mensagens individuais) que contenham os outros itens indexados.
     
-    Além disso, se você exportar os itens indexado e parcialmente indexado ou se exportar apenas os itens indexados de uma pesquisa de conteúdo que retorna todos os itens, o mesmo número de itens será baixado. Isso acontece, mesmo que os resultados de pesquisa estimados para a pesquisa de conteúdo (exibidos nas estatísticas de &amp; pesquisa no centro de conformidade de segurança) ainda incluam uma estimativa separada para o número de itens parcialmente indexados. Por exemplo, digamos que a estimativa de uma pesquisa que inclua todos os itens (sem palavras-chave na consulta de pesquisa) mostra que 1.000 itens foram encontrados e que 200 itens parcialmente indexados também foram encontrados. Nesse caso, os itens 1.000 incluem os itens parcialmente indexados, pois a pesquisa retorna todos os itens. Em outras palavras, há 1.000 total de itens retornados pela pesquisa, e não 1.200 itens (como você pode esperar). Se você exportar os resultados dessa pesquisa e optar por exportar itens indexados e parcialmente indexados (ou apenas itens indexados), serão baixados 1.000 itens. Novamente, isso ocorre porque os itens parcialmente indexados estão incluídos nos resultados regulares (indexados) quando você usa uma consulta de pesquisa em branco para retornar todos os itens. Neste mesmo exemplo, se você optar por exportar apenas itens parcialmente indexados, somente os itens não indexados 200 serão baixados.
+    Além disso, se você exportar os itens indexado e parcialmente indexado ou se exportar apenas os itens indexados de uma pesquisa de conteúdo que retorna todos os itens, o mesmo número de itens será baixado. Isso acontece mesmo que os resultados de pesquisa estimados para a pesquisa de conteúdo (exibidos nas estatísticas de pesquisa no centro de conformidade do & de segurança) ainda incluam uma estimativa separada para o número de itens parcialmente indexados. Por exemplo, digamos que a estimativa de uma pesquisa que inclua todos os itens (sem palavras-chave na consulta de pesquisa) mostra que 1.000 itens foram encontrados e que 200 itens parcialmente indexados também foram encontrados. Nesse caso, os itens 1.000 incluem os itens parcialmente indexados, pois a pesquisa retorna todos os itens. Em outras palavras, há 1.000 total de itens retornados pela pesquisa, e não 1.200 itens (como você pode esperar). Se você exportar os resultados dessa pesquisa e optar por exportar itens indexados e parcialmente indexados (ou apenas itens indexados), serão baixados 1.000 itens. Novamente, isso ocorre porque os itens parcialmente indexados estão incluídos nos resultados regulares (indexados) quando você usa uma consulta de pesquisa em branco para retornar todos os itens. Neste mesmo exemplo, se você optar por exportar apenas itens parcialmente indexados, somente os itens não indexados 200 serão baixados.
     
     Observe também que, no exemplo anterior (quando você exporta itens indexados e parcialmente indexados ou você exporta apenas itens indexados), o relatório de **Resumo de exportação** incluído nos resultados de pesquisa exportados listaria 1.000 itens estimados e 1.000 baixado itens pelas mesmas razões descritas anteriormente. 
     
@@ -328,8 +325,8 @@ Veja mais informações sobre como exportar resultados de pesquisa.
     
  ### <a name="miscellaneous"></a>Diversos
   
-- Todos os resultados de pesquisa e os relatórios de exportação estão incluídos em uma pasta com o mesmo nome da pesquisa de conteúdo. As mensagens de email que foram exportadas estão localizadas em uma pasta chamada **Exchange**. Os documentos estão localizados em uma pasta chamada **SharePoint**. 
+- Todos os resultados da pesquisa e os relatórios de exportação estão incluídos em uma pasta que tem o mesmo nome que a Pesquisa de Conteúdo. As mensagens de email que foram exportadas estão localizadas em uma pasta chamada **Exchange**. Os documentos estão localizados em uma pasta chamada **SharePoint**. 
     
-- Os metadados do sistema de arquivos para documentos nos sites do SharePoint e do OneDrive for Business são mantidos quando os documentos são exportados para o computador local. Isso significa que as propriedades do documento, como datas de criação e de última modificação, não são alteradas quando os documentos são exportados.
+- Os metadados do sistema de arquivos para documentos nos sites do SharePoint e do OneDrive for Business são mantidos quando os documentos são exportados para o computador local. Isso significa as propriedades do documento, tais como data de criação e última modificação, não são alteradas quando os documentos são exportados.
 
 - Se os resultados da pesquisa incluírem um item de lista do SharePoint que corresponda à consulta de pesquisa, todas as linhas da lista serão exportadas além do item que corresponde à consulta de pesquisa. Isso inclui todos os anexos na lista. O motivo para isso é fornecer um contexto para os itens de lista retornados nos resultados da pesquisa. Observe também que os itens de lista adicionais e os anexos podem fazer com que a contagem de itens exportados seja diferente da estimativa original dos resultados da pesquisa.

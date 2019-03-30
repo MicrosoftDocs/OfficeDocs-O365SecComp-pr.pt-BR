@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Saiba mais sobre o novo centro de conformidade da Microsoft 365, incluindo o que ele contém, como obtê-lo e suas próximas etapas.
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950438"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001034"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bem-vindo ao novo centro de conformidade da Microsoft 365
 
@@ -83,7 +83,7 @@ Além de links em cartões na Home Page, você encontrará um painel de navegaç
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Por que estou levado para o centro de conformidade do & de segurança do Office 365 para executar algumas tarefas, como definir determinadas políticas?
 
-Ainda estamos desenvolvendo o centro de conformidade da Microsoft 365 e vamos adicionar mais funcionalidades e soluções nos próximos meses. Enquanto isso, há algumas tarefas que devem ser realizadas no centro de conformidade do & de segurança do Office 365. Nesses casos, você será direcionado automaticamente para o local onde você pode executar a tarefa em mãos, como criar ou editar uma política de supervisão.
+Ainda estamos desenvolvendo o centro de conformidade da Microsoft 365 e vamos adicionar mais funcionalidades e soluções nos próximos meses. Enquanto isso, há algumas tarefas que devem ser realizadas no centro de conformidade do & de segurança. Nesses casos, você será direcionado automaticamente para o local onde você pode executar a tarefa em mãos, como criar ou editar uma política de supervisão.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Por que não vejo o novo centro de conformidade da Microsoft 365 ainda?
 

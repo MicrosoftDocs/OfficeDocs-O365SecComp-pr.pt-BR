@@ -15,17 +15,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Use a pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do onedrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo que possa estar relacionado a uma solicitação de entidade de dados do RGPD.
-ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade do Office 365 ou Microsoft 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo que possa estar relacionado a uma solicitação de entidade de dados do RGPD.
+ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900100"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001014"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
-Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo no &amp; centro de conformidade de segurança do Office 365 para pesquisar itens no local, como email, documentos e conversas de mensagens instantâneas em sua organização do Office 365. Use esta ferramenta para pesquisar itens nestes serviços do Office 365:
+Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo no centro de conformidade no Office 365 ou no Microsoft 365 para pesquisar itens no local, como email, documentos e conversas de mensagens instantâneas na sua organização do Office 365. Use esta ferramenta para pesquisar itens nestes serviços do Office 365:
   
 - Caixas de correio do Exchange Online e pastas públicas
     
@@ -42,62 +42,60 @@ Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um 
 
 ## <a name="create-a-new-search"></a>Criar uma nova pesquisa
 
-Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar resultados de pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de função &amp; Gerenciador de descoberta eletrônica no centro de conformidade de segurança. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar resultados de pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. AcEsse [https://compliance.microsoft.com](https://compliance.microsoft.com) e entre usando seu endereço de email e senha do Office 365.
     
-2. Entre usando seu endereço de email e senha do Office 365. 
+2. Clique em **pesquisa de conteúdo**de **pesquisa** \> .
     
-3. No centro de &amp; conformidade de segurança, clique em pesquisa de \> **conteúdo**de **investigação de pesquisa &amp; ** .
-    
-4. Na página de **pesquisa** , clique na seta ao lado ![de adicionar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **novo**ícone de pesquisa. 
+3. Na página de **pesquisa** , clique na seta ao lado ![de adicionar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **novo**ícone de pesquisa. 
     
     ![A nova lista suspensa de pesquisa](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     Utilize a guia Pesquisas de DNS Interno para especificar se serão utilizados servidores DNS configurados em um adaptador de rede instalado no servidor ou se serão utilizados servidores DNS específicos ao resolver os endereços de servidores de email para entrega de mensagens internas. Servidores DNS internos são usados para resolver os endereços IP de servidores que estão dentro da organização.
     
-  - **Pesquisa orientada** : essa opção inicia um assistente que orienta você durante a criação da pesquisa. A interface do usuário para selecionar locais de conteúdo e compilar a consulta de pesquisa é a mesma que a nova opção de **pesquisa** . 
+    - **Pesquisa orientada** : essa opção inicia um assistente que orienta você durante a criação da pesquisa. A interface do usuário para selecionar locais de conteúdo e compilar a consulta de pesquisa é a mesma que a nova opção de **pesquisa** . 
     
-  - **Nova pesquisa** -esta opção exibe uma interface do usuário atualizada para criar uma nova pesquisa. Esta é a opção padrão se você clicar em **nova pesquisa**.
+    - **Nova pesquisa** -esta opção exibe uma interface do usuário atualizada para criar uma nova pesquisa. Esta é a opção padrão se você clicar em **nova pesquisa**.
     
-  - **Pesquisar por lista de IDs** -esta opção permite pesquisar mensagens de email específicas e outros itens de caixa de correio usando uma lista de IDs do Exchange. Para criar uma pesquisa de lista de ID (formalmente chamada de pesquisa direcionada), você envia um arquivo CSV (valor separado por vírgula) que identifica os itens de caixa de correio específicos para pesquisa. Para obter instruções, consulte [preparar um arquivo CSV para uma pesquisa de conteúdo de lista de ID no Office 365](csv-file-for-an-id-list-content-search.md).
+    - **Pesquisar por lista de IDs** -esta opção permite pesquisar mensagens de email específicas e outros itens de caixa de correio usando uma lista de IDs do Exchange. Para criar uma pesquisa de lista de ID (formalmente chamada de pesquisa direcionada), você envia um arquivo CSV (valor separado por vírgula) que identifica os itens de caixa de correio específicos para pesquisa. Para obter instruções, consulte [preparar um arquivo CSV para uma pesquisa de conteúdo de lista de ID no Office 365](csv-file-for-an-id-list-content-search.md).
     
     O restante das etapas deste procedimento seguirá o novo fluxo de trabalho de pesquisa padrão.
     
-5. Clique em **nova pesquisa** na lista suspensa. 
+4. Clique em **nova pesquisa** na lista suspensa. 
     
-6. Em **consulta de pesquisa**, especifique os itens a seguir.
+5. Em **consulta de pesquisa**, especifique os itens a seguir.
     
     ![Especificar palavras-chave, condições e locais para pesquisa](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Palavras-chave para pesquisar** -digite uma consulta de pesquisa na caixa **palavras-chave** . Você pode especificar palavras-chave, propriedades de mensagem, como datas de envio e recebimento, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterado pela última vez. Você pode usar consultas mais complexas que usam um operador Boolean, como **e**, **ou**, e **não**, e **Near**. Você também pode pesquisar informações confidenciais (como números de seguridade social) em documentos ou pesquisar documentos que foram compartilhados externamente. Se você deixar a caixa de palavras-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será incluído nos resultados da pesquisa.
+   - **Palavras-chave para pesquisar** -digite uma consulta de pesquisa na caixa **palavras-chave** . Você pode especificar palavras-chave, propriedades de mensagem, como datas de envio e recebimento, ou propriedades de documento, como nomes de arquivo ou a data em que um documento foi alterado pela última vez. Você pode usar consultas mais complexas que usam um operador Boolean, como **e**, **ou**, e **não**, e **Near**. Você também pode pesquisar informações confidenciais (como números de seguridade social) em documentos ou pesquisar documentos que foram compartilhados externamente. Se você deixar a caixa de palavras-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será incluído nos resultados da pesquisa.
     
-    Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavras-chave** e a palavra-chave tipo a em cada linha. Se você fizer isso, as palavras-chave em cada linha serão conectadas por um operador lógico ( **c:s**) que é semelhante em funcionalidade ao operador **or** na consulta de pesquisa criada. 
+      Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavras-chave** e a palavra-chave tipo a em cada linha. Se você fizer isso, as palavras-chave em cada linha serão conectadas por um operador lógico ( **c:s**) que é semelhante em funcionalidade ao operador **or** na consulta de pesquisa criada. 
     
-    Por que usar a lista de palavras-chave? Você pode obter estatísticas que mostram quantos itens correspondem a cada palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Você também pode usar uma frase de palavra-chave (entre parênteses) em uma linha. Para obter mais informações sobre estatísticas de pesquisa, consulte [View keyword Statistics for Content Search Results](view-keyword-statistics-for-content-search.md).
+      Por que usar a lista de palavras-chave? Você pode obter estatísticas que mostram quantos itens correspondem a cada palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Você também pode usar uma frase de palavra-chave (entre parênteses) em uma linha. Para obter mais informações sobre estatísticas de pesquisa, consulte [View keyword Statistics for Content Search Results](view-keyword-statistics-for-content-search.md).
 
     > [!NOTE]
     > Para ajudar a reduzir os problemas causados por listas de palavras-chave grandes, agora você está limitado a um máximo de 20 linhas na lista de palavras-chave.
     
-- **Condições** -você pode adicionar condições de pesquisa para restringir uma pesquisa e retornar um conjunto de resultados mais refinado. Cada condição adiciona uma cláusula à consulta de pesquisa criada e executada quando você inicia a pesquisa. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) por um operador lógico ( **c:c**) que é semelhante em funcionalidade ao operador **and** . Isso significa que os itens precisam satisfazer a consulta de palavra-chave e uma ou mais condições a serem incluídas nos resultados. É assim que as condições ajudam a restringir os resultados. Para obter uma lista e uma descrição das condições que você pode usar em uma consulta de pesquisa, consulte a seção "condições de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
+    - **Condições** -você pode adicionar condições de pesquisa para restringir uma pesquisa e retornar um conjunto de resultados mais refinado. Cada condição adiciona uma cláusula à consulta de pesquisa criada e executada quando você inicia a pesquisa. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) por um operador lógico ( **c:c**) que é semelhante em funcionalidade ao operador **and** . Isso significa que os itens precisam satisfazer a consulta de palavra-chave e uma ou mais condições a serem incluídas nos resultados. É assim que as condições ajudam a restringir os resultados. Para obter uma lista e uma descrição das condições que você pode usar em uma consulta de pesquisa, consulte a seção "condições de pesquisa" em [consultas de palavra-chave e condições de pesquisa para pesquisa de conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
     
-- **Locations** -escolha os locais de conteúdo para pesquisa.
+       - **Locations** -escolha os locais de conteúdo para pesquisa.
     
-  - **Todos os locais** – Use esta opção para pesquisar todos os locais de conteúdo em sua organização. Isso inclui emails em todas as caixas de correio do Exchange (incluindo todas as caixas de correio inativas, caixas de correio de todos os grupos do Office 365, caixas de correio para todas as equipes do Microsoft Teams), todas as conversas do Skype for Business, todos os sites do SharePoint e do OneDrive for Business (incluindo os sites para todos os grupos do Office 365 e o Microsoft Teams) e itens em todas as pastas públicas do Exchange.
+      - **Todos os locais** – Use esta opção para pesquisar todos os locais de conteúdo em sua organização. Isso inclui emails em todas as caixas de correio do Exchange (incluindo todas as caixas de correio inativas, caixas de correio de todos os grupos do Office 365, caixas de correio para todas as equipes do Microsoft Teams), todas as conversas do Skype for Business, todos os sites do SharePoint e do OneDrive for Business (incluindo os sites para todos os grupos do Office 365 e o Microsoft Teams) e itens em todas as pastas públicas do Exchange.
     
-  - **Locais específicos** : Use esta opção para pesquisar locais de conteúdo específicos. Você pode pesquisar todos os locais de conteúdo de um serviço específico do Office 365 (como pesquisar todas as caixas de correio do Exchange ou Pesquisar todos os sites do SharePoint) ou pode pesquisar locais específicos em qualquer um dos serviços do Office 365 que são exibidos. 
+      - **Locais específicos** : Use esta opção para pesquisar locais de conteúdo específicos. Você pode pesquisar todos os locais de conteúdo de um serviço específico do Office 365 (como pesquisar todas as caixas de correio do Exchange ou Pesquisar todos os sites do SharePoint) ou pode pesquisar locais específicos em qualquer um dos serviços do Office 365 que são exibidos. 
     
-    ![Interface de usuário para escolher locais de conteúdo para pesquisa](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interface de usuário para escolher locais de conteúdo para pesquisa](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
-    Observe que você também pode adicionar grupos de distribuição à lista de caixas de correio do Exchange a Pesquisar. Para grupos de distribuição, as caixas de correio dos membros do grupo são pesquisadas. Observe que não há suporte para grupos dinâmicos de distribuição.
+         Observe que você também pode adicionar grupos de distribuição à lista de caixas de correio do Exchange a Pesquisar. Para grupos de distribuição, as caixas de correio dos membros do grupo são pesquisadas. Observe que não há suporte para grupos dinâmicos de distribuição.
     
-    **Importante:** Quando você pesquisa todos os locais da caixa de correio ou apenas caixas de correio específicas, os dados do myAnalytics e outros aplicativos do Office 365 salvos nas caixas de correio do usuário serão incluídos quando você exportar os resultados de uma pesquisa de conteúdo. Esses dados não serão incluídos nos resultados de pesquisa estimados e não estarão disponíveis para visualização. Ela só será incluída quando você exportar e baixar os resultados da pesquisa; consulte [exportando dados do myAnalytics e outros aplicativos do Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications) na seção "mais informações sobre a pesquisa de conteúdo". 
+       **Importante:** Quando você pesquisa todos os locais da caixa de correio ou apenas caixas de correio específicas, os dados do myAnalytics e outros aplicativos do Office 365 salvos nas caixas de correio do usuário serão incluídos quando você exportar os resultados de uma pesquisa de conteúdo. Esses dados não serão incluídos nos resultados de pesquisa estimados e não estarão disponíveis para visualização. Ela só será incluída quando você exportar e baixar os resultados da pesquisa; consulte [exportando dados do myAnalytics e outros aplicativos do Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications) na seção "mais informações sobre a pesquisa de conteúdo". 
     
-7. Depois de configurar a consulta de pesquisa, clique em **Salvar &amp; executar**.
+6. Depois de configurar a consulta de pesquisa, clique em **Salvar &amp; executar**.
     
-8. Na página **Salvar pesquisa** , digite um nome para a pesquisa e uma descrição opcional que ajuda a identificar a pesquisa. Observe que o nome da pesquisa precisa ser exclusivo em sua organização. 
+7. Na página **Salvar pesquisa** , digite um nome para a pesquisa e uma descrição opcional que ajuda a identificar a pesquisa. Observe que o nome da pesquisa precisa ser exclusivo em sua organização. 
     
-9. Clique em **salvar** para iniciar a pesquisa. 
+8. Clique em **salvar** para iniciar a pesquisa. 
     
     Depois de salvar e executar a pesquisa, os resultados retornados pela pesquisa são exibidos no painel de resultados. Dependendo de como você tem a configuração de visualização configurada, os resultados da pesquisa são exibidos ou você precisa clicar em **Visualizar resultados** para visualizá-los. ConFira a próxima seção para obter detalhes. 
     
@@ -116,7 +114,7 @@ Há duas definições de configuração para a visualização dos resultados da 
     
 2. **Visualizar resultados manualmente** -essa configuração exibe espaços reservados no painel de resultados da pesquisa e exibe o botão **Visualizar resultados** que você precisa clicar para exibir os resultados da pesquisa. Essa é a configuração padrão; Ele ajuda a melhorar o desempenho da pesquisa, não exibindo automaticamente os resultados da pesquisa quando você abre uma pesquisa existente. 
     
-Há limites relacionados à quantidade de itens disponíveis para visualização. Para obter mais informações, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md). 
+Há limites relacionados à quantidade de itens disponíveis para visualização. Para obter mais informações, consulte [Limits for Content Search](limits-for-content-search.md). 
   
 Para obter uma lista dos tipos de arquivo com suporte que podem ser visualizados, consulte [visualização dos resultados da pesquisa](#previewing-search-results) na seção "mais informações sobre a pesquisa de conteúdo". Se não houver suporte para o tipo de arquivo para visualização ou para baixar uma cópia de um documento, você poderá clicar em **baixar arquivo original** para baixá-lo no computador local. Para páginas da Web. aspx, a URL da página é incluída, embora você talvez não tenha permissões para acessar a página. 
   
@@ -130,7 +128,7 @@ Você também pode baixar as estatísticas de pesquisa e as estatísticas de pal
   
 Para exibir as estatísticas de pesquisa:
   
-1. Na página de **pesquisa de conteúdo** no centro &amp; de conformidade de segurança, clique em **abrir** e, em seguida, clique na pesquisa para a qual você deseja exibir a estatística. 
+1. Na página **pesquisa de conteúdo** , clique em **abrir** e, em seguida, clique na pesquisa para a qual você deseja exibir a estatística. 
     
 2. Na página sair, clique em **Abrir consulta**. 
     
@@ -153,7 +151,7 @@ Após uma pesquisa ser executada com êxito, você pode exportar os resultados d
   
 Para exportar os resultados da pesquisa:
   
-1. Na página de **pesquisa de conteúdo** no centro &amp; de conformidade de segurança, clique na pesquisa para a qual você deseja exportar os resultados da pesquisa. 
+1. Na página **pesquisa de conteúdo** , clique na pesquisa para a qual você deseja exportar os resultados da pesquisa. 
     
 2. Na página sair ![, clique em exportar ícone](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de resultados de pesquisa **mais**e clique em **Exportar resultados**. Observe que você também pode exportar um relatório de resultados de pesquisa.
     
@@ -161,11 +159,10 @@ Para exportar os resultados da pesquisa:
     
 Para obter instruções mais detalhadas e dicas de solução de problemas, consulte:
   
-- [Exportar resultados de pesquisa do centro de conformidade &amp; de segurança do Office 365](export-search-results.md)
+- [Exportar resultados de pesquisa de conteúdo](export-search-results.md)
     
 - [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
     
-
   
 ## <a name="more-information-about-content-search"></a>Mais informações sobre a pesquisa de conteúdo
 
@@ -189,14 +186,14 @@ Consulte as seções a seguir para obter mais informações sobre pesquisas de c
   
 ### <a name="content-search-limits"></a>Limites de pesquisa de conteúdo
 
-- Para obter uma descrição dos limites que são aplicados ao recurso de pesquisa de conteúdo, consulte [Limits for Search in The Office &amp; 365 Security Compliance Center](limits-for-content-search.md).
+- Para obter uma descrição dos limites que são aplicados ao recurso de pesquisa de conteúdo, consulte [Limits for Content Search](limits-for-content-search.md).
     
 - A Microsoft coleta informações de desempenho para pesquisas de conteúdo executadas por todas as organizações do Office 365. Embora a complexidade da consulta de pesquisa possa causar impacto nos tempos de pesquisa, o maior fator que afeta a duração das pesquisas longas é o número de caixas de correio pesquisadas. Embora a Microsoft não forneça um contrato de nível de serviço para tempos de pesquisa, a tabela a seguir lista os tempos de pesquisa médios de uma pesquisa de conteúdo com base no número de caixas de correio incluídas na pesquisa.
     
 |**Número de caixas de correio**|**Tempo médio de pesquisa**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1,000  <br/> |45 segundos  <br/> |
+|1.000  <br/> |45 segundos  <br/> |
 |10.000  <br/> |4 minutos  <br/> |
 |25.000  <br/> |10 minutos  <br/> |
 |50.000  <br/> |20 minutos  <br/> |
@@ -258,7 +255,7 @@ Lembre-se do seguinte ao pesquisar conteúdo no Microsoft Teams e nos grupos do 
   
 - Quando a caixa de correio de um usuário é pesquisada, qualquer Microsoft Team ou grupo do Office 365 do qual o usuário é membro não será pesquisado. Da mesma forma, quando você pesquisa um grupo do Microsoft Team ou do Office 365, somente a caixa de correio de grupo e o site de grupo que você especifica são pesquisados; as contas de caixas de correio e do OneDrive for Business dos membros do grupo não são pesquisadas, a menos que você as adicione explicitamente à pesquisa.
     
-- Para obter uma lista dos membros de um grupo do Microsoft Team ou do Office 365, você pode exibir as propriedades na página **grupos \> domésticos** no centro de administração do Office 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online: 
+- Para obter uma lista dos membros de um grupo do Microsoft Team ou do Office 365, você pode exibir as propriedades na página **grupos \> domésticos** no centro de administração do Microsoft 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -310,7 +307,7 @@ Observe que as condições são logicamente conectadas à consulta de palavra-ch
   
 ### <a name="searching-inactive-mailboxes"></a>Pesquisando caixas de correio inativas
 
-Você pode pesquisar caixas de correio inativas em uma pesquisa de conteúdo. Para obter uma lista das caixas de correio inativas em sua organização, execute o `Get-Mailbox -InactiveMailboxOnly` comando no PowerShell do Exchange Online. Como alternativa, você pode ir para a **retenção** de **governança** \> de dados &amp; no centro de conformidade de segurança e, em seguida,](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> clicar em **mais**![reticências de barras de navegação inativas. ****
+Você pode pesquisar caixas de correio inativas em uma pesquisa de conteúdo. Para obter uma lista das caixas de correio inativas em sua organização, execute o `Get-Mailbox -InactiveMailboxOnly` comando no PowerShell do Exchange Online. Como alternativa, você pode ir para a **retenção** de **governança** \> de dados no centro de conformidade do & de segurança e, em seguida](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> , clicar em **mais**![reticências de barras de navegação inativas. ****
   
 Veja algumas coisas que você deve ter em mente ao pesquisar caixas de correio inativas.
   

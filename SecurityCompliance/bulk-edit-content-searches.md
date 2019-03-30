@@ -1,5 +1,5 @@
 ---
-title: Editar em massa pesquisas de conteúdo no centro de &amp; conformidade de segurança do Office 365
+title: Edição em massa de pesquisas de conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
-description: Use o editor de pesquisa em massa no centro de &amp; conformidade de segurança do Office 365 para alterar rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas de conteúdo.
-ms.openlocfilehash: ff96beacdde3192db65c5eb31d14649c6bed4afc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Use o editor de pesquisa em massa no centro de segurança e conformidade no Office 365 ou no Microsoft 365 para alterar rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas de conteúdo.
+ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214881"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001094"
 ---
-# <a name="bulk-edit-content-searches-in-the-office-365-security-amp-compliance-center"></a>Editar em massa pesquisas de conteúdo no centro de &amp; conformidade de segurança do Office 365
+# <a name="bulk-edit-content-searches"></a>Edição em massa de pesquisas de conteúdo
 
-Você pode usar o editor de pesquisa em massa no centro de &amp; conformidade de segurança do Office 365 para editar várias pesquisas de conteúdo ao mesmo tempo. O uso dessa ferramenta permite que você altere rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas. Em seguida, você pode executar novamente as pesquisas e obter os resultados de pesquisa estimados para as pesquisas revisadas. O editor também permite copiar e colar as consultas e os locais de conteúdo de um arquivo do Microsoft Excel ou arquivo de texto. Isso significa que você pode usar a ferramenta de estatísticas de pesquisa para exibir as estatísticas de uma ou mais pesquisas, exportar as estatísticas para um arquivo CSV, onde você pode editar as consultas e os locais de conteúdo no Excel. Em seguida, use o editor de pesquisa em massa para adicionar as consultas revisadas e os locais de conteúdo às pesquisas. Após revisar uma ou mais pesquisas, você pode reiniciá-las e obter novos resultados de pesquisa estimados.
+Você pode usar o editor de pesquisa em massa na ferramenta de pesquisa de conteúdo para editar várias pesquisas ao mesmo tempo. O uso dessa ferramenta permite que você altere rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas. Em seguida, você pode executar novamente as pesquisas e obter os resultados de pesquisa estimados para as pesquisas revisadas. O editor também permite copiar e colar as consultas e os locais de conteúdo de um arquivo do Microsoft Excel ou arquivo de texto. Isso significa que você pode usar a ferramenta de estatísticas de pesquisa para exibir as estatísticas de uma ou mais pesquisas, exportar as estatísticas para um arquivo CSV, onde você pode editar as consultas e os locais de conteúdo no Excel. Em seguida, use o editor de pesquisa em massa para adicionar as consultas revisadas e os locais de conteúdo às pesquisas. Após revisar uma ou mais pesquisas, você pode reiniciá-las e obter novos resultados de pesquisa estimados.
   
 Para obter mais informações sobre como usar a ferramenta de estatísticas de pesquisa, consulte [exibir estatísticas de palavra-chave para resultados de pesquisa de conteúdo](view-keyword-statistics-for-content-search.md).
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Usar o editor de pesquisa em massa para alterar consultas
 
-1. No centro de &amp; conformidade de segurança, vá para pesquisa de \> **conteúdo**de **investigação de pesquisa &amp; ** .
+1. Vá para [https://compliance.microsoft.com](https://compliance.microsoft.com)e clique em pesquisa de **conteúdo**de **pesquisa** \> .
     
 2. Na lista de pesquisas, selecione uma ou mais pesquisas e, em seguida, clique em editor de **pesquisa em massa** ![no botão](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor de pesquisa em massa.
     
@@ -36,9 +36,9 @@ Para obter mais informações sobre como usar a ferramenta de estatísticas de p
     
     ![A página do editor de pesquisa em massa exibe as consultas para as pesquisas selecionadas](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
-    a. a coluna de **pesquisa** exibe o nome da pesquisa de conteúdo. Conforme mencionado anteriormente, você pode editar a consulta para várias pesquisas. 
+    a. A coluna de **pesquisa** exibe o nome da pesquisa de conteúdo. Conforme mencionado anteriormente, você pode editar a consulta para várias pesquisas. 
     
-    b. a coluna **consulta** exibe a consulta para a pesquisa de conteúdo listada na coluna **pesquisa** . Se a consulta foi criada usando o recurso de lista de palavras-chave, as palavras-chave são separadas pelo `(c:s)`texto * * **. Isso indica que as palavras-chave estão conectadas pelo operador **or** . Além disso, se a consulta incluir condições, as palavras-chave e as condições serão separadas pelo texto * * `(c:c)` **. Isso indica que as palavras-chave (ou fases da palavra-chave) estão conectadas às condições pelo operador **and** . Por exemplo, na captura de tela anterior da ContosoSearch1 de pesquisa, a consulta KQL que é equivalente `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` a seria `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
+    b. A coluna **consulta** exibe a consulta para a pesquisa de conteúdo listada na coluna **pesquisa** . Se a consulta foi criada usando o recurso de lista de palavras-chave, as palavras-chave são separadas pelo `(c:s)`texto * * **. Isso indica que as palavras-chave estão conectadas pelo operador **or** . Além disso, se a consulta incluir condições, as palavras-chave e as condições serão separadas pelo texto * * `(c:c)` **. Isso indica que as palavras-chave (ou fases da palavra-chave) estão conectadas às condições pelo operador **and** . Por exemplo, na captura de tela anterior da ContosoSearch1 de pesquisa, a consulta KQL que é equivalente `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` a seria `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
     
 3. Para editar uma consulta, clique na célula da consulta que você deseja alterar e siga um destes procedimentos. Observe que a célula é borda por uma caixa azul quando você clica nela.
     
@@ -71,11 +71,11 @@ Veja algumas dicas para editar consultas usando o editor de pesquisa em massa:
     
     ![Clique em Habilitar editor de local em massa e, em seguida, clique em locais para adicionar ou remover locais de conteúdo](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
-    a. **caixas de correio para pesquisar**esta seção exibe uma coluna para cada pesquisa de conteúdo selecionada e linha para cada caixa de correio incluída na pesquisa. Uma marca de marca indica que a caixa de correio está incluída na pesquisa. Você pode adicionar caixas de correio adicionais a uma pesquisa digitando o endereço de email da caixa de correio em uma linha em branco e, em seguida, clicando na caixa de seleção da pesquisa de conteúdo à qual deseja adicioná-lo. Ou você pode remover uma caixa de correio de uma pesquisa desmarcando a caixa de seleção.
+    a. **Caixas de correio para pesquisa** Esta seção exibe uma coluna para cada pesquisa de conteúdo selecionada e linha para cada caixa de correio incluída na pesquisa. Uma marca de marca indica que a caixa de correio está incluída na pesquisa. Você pode adicionar caixas de correio adicionais a uma pesquisa digitando o endereço de email da caixa de correio em uma linha em branco e, em seguida, clicando na caixa de seleção da pesquisa de conteúdo à qual deseja adicioná-lo. Ou você pode remover uma caixa de correio de uma pesquisa desmarcando a caixa de seleção.
     
-    b. os **sites do SharePoint para pesquisar**esta seção exibe uma linha para cada site do SharePoint e do onedrive incluído em cada pesquisa de conteúdo selecionada. Uma marca de marca indica que o site está incluído na pesquisa. Você pode adicionar outros sites a uma pesquisa digitando a URL do site em uma linha em branco e, em seguida, clicando na caixa de seleção da pesquisa de conteúdo à qual deseja adicioná-lo. Ou você pode remover um site de uma pesquisa desmarcando a caixa de seleção.
+    b. **Sites do SharePoint para pesquisa** Esta seção exibe uma linha para cada site do SharePoint e do OneDrive incluído em cada pesquisa de conteúdo selecionada. Uma marca de marca indica que o site está incluído na pesquisa. Você pode adicionar outros sites a uma pesquisa digitando a URL do site em uma linha em branco e, em seguida, clicando na caixa de seleção da pesquisa de conteúdo à qual deseja adicioná-lo. Ou você pode remover um site de uma pesquisa desmarcando a caixa de seleção.
     
-    c. **outras opções de pesquisa**esta seção indica se itens não indexados e pastas públicas estão incluídos na pesquisa. Para incluí-los, certifique-se de que a caixa de seleção está marcada. Para removê-los, desmarque a caixa de seleção.
+    c. **Outras opções de pesquisa** Esta seção indica se itens não indexados e pastas públicas estão incluídos na pesquisa. Para incluí-los, certifique-se de que a caixa de seleção está marcada. Para removê-los, desmarque a caixa de seleção.
     
 2. Após editar uma ou mais seções na página **locais** , clique em **salvar**.
     

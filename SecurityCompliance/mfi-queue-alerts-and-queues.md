@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Os administradores podem aprender sobre alertas de fila e filas no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Os administradores podem aprender sobre alertas de fila e filas no painel de fluxo de emails no centro de conformidade do & de segurança.
+ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720301"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998604"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertas de fila e filas
 
@@ -30,7 +30,7 @@ O Office 365 continuará a tentar a entrega por 48 horas. Após 48 horas, as men
 
 Se o volume de email em fila exceder o limite predefinido (o valor padrão é 2000), os alertas estarão disponíveis no painel de fluxo de emails em **alertas recentes**, e os administradores receberão uma notificação por email (para o endereço de email alternativo) . Para configurar o limite de alerta, o limite de notificação diária e/ou os destinatários do alerta, consulte a seção **Personalizar alertas de fila** abaixo.
 
-![EnFileirar alertas na área de alertas recentes do painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![EnFileirar alertas na área de alertas recentes do painel de fluxo de emails no centro de conformidade do & de segurança](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>Personalizar alertas de fila
 
@@ -50,13 +50,13 @@ A lâmina de informações será alterada para a **política de edição**. Agor
 
 Quando você clica no alerta, os detalhes de alerta aparecem em um painel de submenu.
 
-![Selecione um alerta de fila na área de alerta recentes do painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![Selecione um alerta de fila na área de alerta recentes do painel de fluxo de emails no centro de conformidade do & de segurança](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![O submenu detalhes do alerta de fila no centro de conformidade do & de segurança do Office 365](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![O submenu detalhes de alerta da fila no centro de conformidade do & de segurança](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
 Você pode clicar em **Exibir fila** nos detalhes do alerta para ver os detalhes da fila, os problemas e os links para as correções disponíveis em um novo painel de submenu.
 
-![O submenu detalhes do alerta de fila no centro de conformidade do & de segurança do Office 365](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![O submenu detalhes de alerta da fila no centro de conformidade do & de segurança](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![Exibir fila nos detalhes do alerta](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
@@ -64,7 +64,7 @@ Você pode clicar em **Exibir fila** nos detalhes do alerta para ver os detalhes
 
 Mesmo que o volume da mensagem na fila não tenha excedido o limite, você ainda pode usar a área **filas** do painel de fluxo de email para ver as mensagens que foram enfileiradas por mais de uma hora. Você pode usar a área **filas** para monitorar o número de mensagens em fila (o valor 0 indica que o fluxo de emails está ok) e tomar medidas antes que o número de mensagens na fila fique muito grande.
 
-![Filas no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Filas no painel de fluxo de emails no centro de conformidade do & de segurança](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
 Quando você clica no número de mensagens em filas, **** os detalhes e a orientação da fila para corrigir o problema aparecerão em um painel de submenu (o mesmo submenu exibido depois que você clicar em **Exibir fila** nos detalhes de um alerta de fila).
 

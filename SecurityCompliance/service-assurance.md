@@ -1,5 +1,5 @@
 ---
-title: Garantia de serviço no centro de conformidade &amp; de segurança do Office 365
+title: Garantia de serviço no centro de conformidade de & de segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Baixe as auditorias de terceiros, descubra como a Microsoft mantém a segurança dos dados dos clientes e saiba como você pode estar em conformidade com ISO, HIPAA, FINRA e FedRAMP ao usar o Office 365.
-ms.openlocfilehash: 6596eadac1702f286d57b516e11334a06553af51
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213931"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999444"
 ---
-# <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>Garantia de serviço no centro de conformidade &amp; de segurança do Office 365
+# <a name="service-assurance-in-the-security--compliance-center"></a>Garantia de serviço no centro de conformidade de & de segurança
 
-Use a garantia de serviço no centro de &amp; conformidade de segurança do Office 365 para acessar documentos que descrevem vários tópicos, incluindo: 
+Use a garantia de serviço no centro de conformidade do & de segurança para acessar documentos que descrevem uma variedade de tópicos, incluindo: 
   
 - Práticas de segurança da Microsoft para dados do cliente armazenadas no Office 365. 
     
@@ -47,20 +47,20 @@ Você também pode descobrir como o Office 365 pode ajudar os clientes a cumprir
  **Os membros de assinatura do O365** podem acessar a seção de garantia de serviço no centro de proteção do Office365 por padrão se o acesso baseado em funções de garantia de serviço não tiver sido implementado em sua assinatura. O serviço Assurance fornece relatórios e documentos que descrevem as práticas de segurança da Microsoft para dados do cliente armazenados no Office 365. Ele também fornece relatórios de auditoria de terceiros independentes no Office 365. 
   
 > [!NOTE]
-> Observação: se sua empresa tiver implementado o acesso baseado em funções de garantia de serviço em sua assinatura do Office 365 (que pode ser que sua organização tenha recebido acesso a relatórios personalizados), e você precisa acessar a garantia de serviço, mas não está incluído à esquerda painel do centro de &amp; conformidade de segurança, peça ao administrador do Office 365 para adicioná-lo ao grupo de funções de usuário de garantia de serviço na página **permissões** . Para obter mais informações, consulte integração de outros usuários ou grupos do serviço Assurance. 
+> Observação: se sua empresa tiver implementado o acesso baseado em funções de garantia de serviço em sua assinatura do Office 365 (que pode ser que sua organização tenha recebido acesso a relatórios personalizados), e você precisa acessar a garantia de serviço, mas não está incluído à esquerda painel do centro de conformidade do & de segurança, peça ao administrador do Office 365 para adicioná-lo ao grupo de funções de usuário de garantia de serviço na página **permissões** . Para obter mais informações, consulte integração de outros usuários ou grupos do serviço Assurance. 
   
  **Usuários provisionados pelo acesso baseado em funções de garantia de serviço** Se sua empresa tiver implementado o acesso baseado em funções de garantia de serviço, você poderá fornecer acesso de garantia de serviço a todos os profissionais de segurança e conformidade, incluindo segurança de informações, gerenciamento de riscos, conformidade e equipes de auditoria e pessoal no seu departamento. Para obter detalhes, consulte [onboard outros usuários ou grupos de garantia de serviço](service-assurance.md#addother).
   
-A garantia de serviço pode ser acessada usando o centro de conformidade de segurança &amp; . ConFira aqui como chegar lá.
+A garantia de serviço pode ser acessada usando o centro de conformidade do & de segurança. ConFira aqui como chegar lá.
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante. 
     
 3. No painel esquerdo, selecione **garantia de serviço**. Em seguida, [escolha as configurações da indústria e regionais](service-assurance.md#Chooseyourindustryregional) e [outros usuários ou grupos da garantia de serviço](service-assurance.md#addother).
     
     > [!NOTE]
-    > Se você precisar de acesso à garantia de serviço e ela não estiver incluída no painel esquerdo do centro de &amp; conformidade de segurança, peça ao administrador do Office 365 para adicioná-lo ao grupo de funções de usuário de garantia de serviço na página **permissões** . 
+    > Se você precisar de acesso à garantia de serviço e ela não estiver incluída no painel esquerdo do centro de conformidade do & de segurança, peça ao administrador do Office 365 para adicioná-lo ao grupo de funções de usuário de garantia de serviço na página **permissões** . 
   
 ## <a name="choose-your-industry-and-regional-settings"></a>Escolha suas configurações regionais e do setor
 <a name="Chooseyourindustryregional"> </a>
@@ -101,7 +101,7 @@ Selecione o relatório que você deseja baixar e selecione **salvar** para baix�
   
 |**Página de garantia de serviço**|**Conteúdo disponível**|**Descrição**|
 |:-----|:-----|:-----|
-|Relatórios de conformidade  <br/> | FedRamp  <br/>  Apuração de GRC  <br/>  STANDARDIZATION  <br/>  SOC/SSAE  <br/> |Use relatórios de conformidade de serviço para revisar avaliações de auditoria realizadas por auditores independentes de terceiros das operações de entrega de serviço do Office 365.  <br/> |
+|Relatórios de conformidade  <br/> | FedRamp  <br/>  Apuração de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use relatórios de conformidade de serviço para revisar avaliações de auditoria realizadas por auditores independentes de terceiros das operações de entrega de serviço do Office 365.  <br/> |
 |Documentos de confiança  <br/> | PERGUNTAS FREQUENTEs e White papers  <br/>  Relatórios de gerenciamento de risco  <br/> |Use White papers, perguntas frequentes, relatórios de fim de ano e outros recursos confidenciais da Microsoft que são disponibilizados para você sob contrato de não divulgação para suas avaliações de análise/risco.  <br/> |
 |Controles auditados  <br/> |Normas e regulamentos globais que o Office 365 implementou.  <br/> | Ajuda com avaliação de risco ao avaliar, integrar ou usar os serviços do Office 365. Descobrir:  <br/> <br/>– Como os controles do Office 365 atendem aos requisitos de segurança, conformidade e privacidade.  <br/>– Sobre o teste de controles no Office 365, resultados desses testes e quando eles foram concluídos.  <br/> |
    
@@ -112,7 +112,7 @@ Dependendo da configuração específica, as opções incluídas no modo de exib
 
 Para acessar relatórios padrão que geralmente estão disponíveis em todas as assinaturas do Microsoft Cloud, você não precisa implementar o modelo de acesso baseado em funções de garantia de serviço e pode ignorar esta etapa. No enTanto, se sua organização tiver recebido acesso aos relatórios personalizados, adicione outros usuários ou grupos às funções de garantia de serviço. Para adicionar outros usuários ou grupos:
   
-1. No centro de &amp; conformidade de segurança, selecione **permissões** no painel esquerdo, conforme mostrado na captura de tela a seguir. 
+1. No centro de conformidade do & de segurança, selecione **permissões** no painel esquerdo, conforme mostrado na captura de tela a seguir. 
     
     ![Menu &amp; de permissões de conformidade de segurança](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
@@ -124,7 +124,7 @@ Para acessar relatórios padrão que geralmente estão disponíveis em todas as 
     
     ![Usuário de garantia de serviço-escolha usuário](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
-4. Todos os usuários ou grupos adicionados à função de usuário de garantia de serviço agora podem encontrar os relatórios de garantia de serviço e download e outros &amp; documentos no centro de conformidade de segurança.
+4. Todos os usuários ou grupos adicionados à função de usuário de garantia de serviço agora podem encontrar os relatórios de garantia de serviço e download e outros documentos no centro de conformidade do & de segurança.
     
 ReTorne à página **permissões** a qualquer momento para adicionar mais usuários ou remova os existentes. 
   

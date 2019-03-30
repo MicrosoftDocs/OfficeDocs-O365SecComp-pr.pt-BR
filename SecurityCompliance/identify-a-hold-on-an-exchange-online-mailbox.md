@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Saiba como identificar os diferentes tipos de retenção que podem ser colocados em uma caixa de correio do Office 365. Esses tipos de isenções incluem retenção de litígio, bloqueios de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário foi excluído de uma política de retenção em toda a organização
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900150"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001214"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção colocado em uma caixa de correio do Exchange Online
 
@@ -28,7 +28,7 @@ O Office 365 oferece diversas maneiras pelas quais sua organização pode impedi
 
 - **Retenção de litígio** -isenções que são aplicadas às caixas de correio do usuário no Exchange Online.
 
-- **bloqueios de descoberta eletrônica** associados a uma ocorrência de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. as suspensões de descoberta eletrônica podem ser aplicadas às caixas de correio do usuário e na caixa de correio correspondente dos grupos do Office 365 e do Microsoft Teams.
+- **bloqueios de descoberta eletrônica** associados a uma ocorrência de descoberta eletrônica no centro de segurança e conformidade. as suspensões de descoberta eletrônica podem ser aplicadas às caixas de correio do usuário e na caixa de correio correspondente dos grupos do Office 365 e do Microsoft Teams.
 
 - **Bloqueios in-loco** aplicados às caixas de correio do usuário usando a ferramenta de bloqueio de descoberta eletrônica in-loco do & no centro de administração do Exchange no Exchange Online.
 
@@ -53,7 +53,7 @@ Você pode executar os dois cmdlets a seguir no PowerShell do Exchange Online pa
 
 - **Get-OrganizationConfig** -Use este cmdlet para obter os GUIDs de políticas de retenção em toda a organização.
 
-Para se conectar ao PowerShell do Exchange Online, confira [conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Para se conectar ao Exchange Online PowerShell, confira [Conectar ao Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -72,7 +72,7 @@ A tabela a seguir descreve como identificar diferentes tipos de isenções com b
 |Tipo de bloqueio  |Valor de exemplo  |Como identificar a isenção  |
 |---------|---------|---------|
 |Retenção de litígio     |    `True`     |     A retenção de litígio está habilitada para uma caixa ** de correio se a propriedade `True`LitigationHoldEnabled estiver definida como.    |
-|retenção de descoberta eletrônica     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   A *Propriedade InPlaceHolds* contém o GUID de qualquer isenção associada a uma ocorrência de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. É possível dizer que esse é um bloqueio de descoberta eletrônica porque o GUID `UniH` começa com o prefixo (que denota uma retenção unificada).      |
+|retenção de descoberta eletrônica     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   A *Propriedade InPlaceHolds* contém o GUID de qualquer isenção associada a uma ocorrência de descoberta eletrônica no centro de conformidade e segurança. É possível dizer que esse é um bloqueio de descoberta eletrônica porque o GUID `UniH` começa com o prefixo (que denota uma retenção unificada).      |
 |Bloqueio In-loco     |     `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     A propriedade *InPlaceHolds* contém o GUID do bloqueio in-loco colocado na caixa de correio. Você pode dizer que isso é um bloqueio in-loco, pois o GUID não começa com um prefixo ou começa com o `cld` prefixo.     |
 |Política de retenção do Office 365 aplicada especificamente à caixa de correio     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     A propriedade InPlaceHolds contém GUIDs de qualquer política de retenção de local específica que é aplicada à caixa de correio. Você pode identificar as políticas de retenção porque o GUID começa `mbx` com o `skp` ou o prefixo. O `skp` prefixo indica que a política de retenção é aplicada às conversas do Skype for Business na caixa de correio do usuário.    |
 |Excluído de uma política de retenção do Office 365 em toda a organização     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Se uma caixa de correio for excluída de uma política de retenção do Office 365 em toda a organização, o GUID da política de retenção para a qual a caixa de correio é excluída `-mbx` é exibida na propriedade InPlaceHolds e é identificado pelo prefixo.    |
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Para se conectar ao & de segurança do centro de conformidade do Windows, confira [conectar-se ao PowerShell do centro de conformidade do Office 365 Security &](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Para conectar-se ao PowerShell do centro de conformidade do & de segurança, confira [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="in-place-holds"></a>Bloqueio in-loco
 

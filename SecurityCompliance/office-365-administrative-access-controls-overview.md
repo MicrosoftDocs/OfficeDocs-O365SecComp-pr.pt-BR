@@ -3,23 +3,22 @@ title: Controles de acesso administrativo no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma visão geral dos controles de acesso administrativo e categorização de dados do Office 365.'
-ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216021"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004128"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Controles de acesso administrativo no Office 365 
 
@@ -58,5 +57,5 @@ O Office 365 permite que você gerencie seus dados da mesma forma que os dados s
 - [Controles de isolamento](office-365-isolation-controls.md)
 - [Controles de pessoal](office-365-personnel-controls.md)
 - [Controles de tecnologia](office-365-technology-controls.md)
-- [Monitorando e auditando controles de acesso ](office-365-monitoring-and-auditing-access-controls.md)
-- [Controles de acesso do Yammer Enterprise](office-365-yammer-enterprise-access-controls.md)
+- [Monitoramento e auditoria de controles de acesso](office-365-monitoring-and-auditing-access-controls.md)
+- [Controles de acesso corporativo do Yammer](office-365-yammer-enterprise-access-controls.md)

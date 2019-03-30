@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Itens parcialmente indexados (também chamadas de itens não indexados) são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive que, por algum motivo, não foram completamente indexados para pesquisa de conteúdo. Neste artigo, você pode aprender por que os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados, identificar erros de pesquisa para itens parcialmente indexados e usar um script do PowerShell para determinar a exposição da sua organização a emails parcialmente indexados itens.
-ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295624"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000884"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar itens parcialmente indexados na Descoberta Eletrônica do Office 365
 
-Uma pesquisa de conteúdo que você executa do centro de conformidade &amp; de segurança do Office 365 inclui automaticamente itens parcialmente indexados nos resultados estimados da pesquisa quando você executa uma pesquisa. Itens parcialmente indexados são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive for Business que por algum motivo não foram completamente indexados para pesquisa. A maioria das mensagens de email e documentos de site são indexados com êxito porque estão dentro dos [limites de indexação para mensagens de email](limits-for-content-search.md#indexing-limits-for-email-messages). No enTanto, alguns itens podem exceder esses limites de indexação e serão parcialmente indexados. Aqui estão outras razões pelas quais os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados quando você executa uma pesquisa de conteúdo:
+Uma pesquisa de conteúdo que você executa a partir do centro de conformidade do & de segurança inclui automaticamente itens parcialmente indexados nos resultados estimados da pesquisa quando você executa uma pesquisa. Itens parcialmente indexados são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive for Business que por algum motivo não foram completamente indexados para pesquisa. A maioria das mensagens de email e documentos de site são indexados com êxito porque estão dentro dos [limites de indexação para mensagens de email](limits-for-content-search.md#indexing-limits-for-email-messages). No enTanto, alguns itens podem exceder esses limites de indexação e serão parcialmente indexados. Aqui estão outras razões pelas quais os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados quando você executa uma pesquisa de conteúdo:
   
 - As mensagens de email têm um arquivo anexado de um tipo de arquivo que não pode ser indexado; na maioria dos casos, o tipo de arquivo é [não reconhecido ou não tem suporte para indexação](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
@@ -37,7 +37,7 @@ Embora varie, a maioria dos clientes do Office 365 têm menos de 1% de conteúdo
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Por que a contagem de itens parcialmente indexados é alterada para uma pesquisa?
 
-Após executar uma pesquisa de conteúdo no centro de conformidade de &amp; segurança do Office 365, o número total e o tamanho de itens parcialmente indexados nos locais que foram pesquisados são listados nas estatísticas de resultados de pesquisa que são exibidas nas estatísticas detalhadas para a pesquisa. Observe que são chamados de *itens* não indexados nas estatísticas de pesquisa. Veja algumas coisas que afetarão o número de itens parcialmente indexados retornados nos resultados da pesquisa: 
+Após executar uma pesquisa de conteúdo no centro de conformidade do & de segurança, o número total e o tamanho de itens parcialmente indexados nos locais que foram pesquisados são listados nas estatísticas de resultados de pesquisa que são exibidas nas estatísticas detalhadas da pesquisa. Observe que são chamados de *itens* não indexados nas estatísticas de pesquisa. Veja algumas coisas que afetarão o número de itens parcialmente indexados retornados nos resultados da pesquisa: 
   
 - Se um item for parcialmente indexado e corresponder à consulta de pesquisa, ele será incluído na contagem (e no tamanho) dos itens de resultado de pesquisa e dos itens parcialmente indexados. No enTanto, quando os resultados da mesma pesquisa são exportados, o item é incluído somente com o conjunto de resultados de pesquisa; Ele não está incluído como um item parcialmente indexado.
     
@@ -122,7 +122,7 @@ As etapas a seguir mostram como executar um script do PowerShell que pesquisa to
 
 ```
   write-host "**************************************************"
-  write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "**************************************************"
   " " 
@@ -164,9 +164,9 @@ As etapas a seguir mostram como executar um script do PowerShell que pesquisa to
   
 ```
    
-2. [Conecte-se ao PowerShell &amp; do centro de conformidade de segurança do Office 365](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Conecte-se ao PowerShell do centro de conformidade do & de segurança](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
-3. No PowerShell &amp; do centro de conformidade de segurança, vá para a pasta onde você salvou o script na etapa 1 e execute o script; por exemplo:
+3. No PowerShell do centro de conformidade do & de segurança, vá para a pasta onde você salvou o script na etapa 1 e execute o script; por exemplo:
 
     ```
     .\PartiallyIndexedItems.ps1

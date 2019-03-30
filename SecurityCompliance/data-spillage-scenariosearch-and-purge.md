@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Usar as ferramentas de descoberta eletrônica e de pesquisa do Office 365 para gerenciar e responder a um incidente de derramamento de dados em sua organização.
-ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296594"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000144"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de soluções de descoberta eletrônica: cenário de derramamento de dados-pesquisa e limpeza
 
@@ -60,7 +60,7 @@ Veja como gerenciar um incidente de derramamento de dados:
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Opcion Etapa 1: gerenciar quem pode acessar o caso e definir limites de conformidade
 
-Dependendo da sua prática organizacional, você precisará controlar quem pode acessar a ocorrência de descoberta eletrônica usada para investigar um incidente de derramamento de dados e configurar os limites de conformidade. A maneira mais fácil de fazer isso é adicionar investigadores como membros de um grupo de função existente no centro de conformidade do & de segurança do Office 365 e, em seguida, adicionar o grupo de função como membro da ocorrência de descoberta eletrônica. Para obter informações sobre os grupos de função de descoberta eletrônica interna e como adicionar membros a uma ocorrência de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica &amp; no centro de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+Dependendo da sua prática organizacional, você precisará controlar quem pode acessar a ocorrência de descoberta eletrônica usada para investigar um incidente de derramamento de dados e configurar os limites de conformidade. A maneira mais fácil de fazer isso é adicionar investigadores como membros de um grupo de função existente no centro de conformidade do & de segurança e, em seguida, adicionar o grupo de função como membro da ocorrência de descoberta eletrônica. Para obter informações sobre os grupos de função de descoberta eletrônica interna e como adicionar membros a uma ocorrência de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
   
 Você também pode criar um novo grupo de função que se alinhe às suas necessidades organizacionais. Por exemplo, você pode querer um grupo de dados derramamento investigadores na organização para acessar e colaborar em todas as ocorrências de derramamento de dados. Você pode fazer isso criando um grupo de função "investigador de dados derramamento", atribuindo as funções apropriadas (exportar, desCriptografar, reVisar, Visualizar, pesquisa de conformidade e gerenciamento de casos), adicionando os dados do derramamento Investigations ao grupo de função e, em seguida, adicionando o grupo de função como um membro da ocorrência de descoberta eletrônica derramamento de dados. ConFira [configurar limites de conformidade para investigações de descoberta eletrônica no Office 365](set-up-compliance-boundaries.md) para obter instruções detalhadas sobre como fazer isso. 
   
@@ -68,19 +68,19 @@ Você também pode criar um novo grupo de função que se alinhe às suas necess
 
 Um caso de descoberta eletrônica oferece uma maneira eficaz de gerenciar sua investigação de derramamento de dados. Você pode adicionar membros ao grupo de função que você criou na etapa 1, adicionar o grupo de função como um membro de um novo caso de descoberta eletrônica, realizar pesquisas iterativas para localizar os dados derramados, exportar um relatório para compartilhar, rastrear o status da ocorrência e, em seguida, consultar os detalhes do c ASE, se necessário. Considere o estabelecimento de uma Convenção de nomenclatura para casos de descoberta eletrônica usados para incidentes de derramamento de dados e forneça tantas informações quantas forem necessárias no nome e na descrição do caso, para que você possa localizar e consultar no futuro, se necessário.
   
-Para criar um novo caso, você pode usar a descoberta eletrônica no &amp; centro de conformidade de segurança. Consulte "criar um novo caso" em [casos de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](ediscovery-cases.md#step-2-create-a-new-case).
+Para criar um novo caso, você pode usar a descoberta eletrônica no centro de segurança e conformidade. Consulte "criar um novo caso" em [casos de descoberta eletrônica](ediscovery-cases.md#step-2-create-a-new-case).
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Etapa 3: Pesquisar os dados derramados
 
 Agora que você criou um caso e acesso gerenciado, você pode usar o caso para pesquisa iterativamente para localizar os dados derramados e identificar as caixas de correio que contêm os dados derramados. Você usará a mesma consulta de pesquisa que usou para localizar as mensagens de email para excluir essas mesmas mensagens na [etapa 7](#step-7-permanently-delete-the-spilled-data).
   
-Para criar uma pesquisa de conteúdo associada a uma ocorrência de descoberta eletrônica, consulte "criar e executar uma pesquisa de conteúdo associada a um caso" em [casos de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Para criar uma pesquisa de conteúdo associada a uma ocorrência de descoberta eletrônica, consulte "criar e executar uma pesquisa de conteúdo associada a um caso" em [casos de descoberta eletrônica](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
   
  **Importante:** As palavras-chave que você usa na consulta de pesquisa podem conter os dados reais derramados que você está pesquisando. Por exemplo, se você estiver procurando documentos que contenham um número de seguridade social e usar a palavra-chave ti como pesquisa, deverá excluir a consulta posteriormente para evitar mais derramamento. Consulte [excluindo a consulta de pesquisa](#deleting-the-search-query) na etapa 8. 
   
 ## <a name="step-4-review-and-validate-case-findings"></a>Etapa 4: analisar e validar as descobertas de caso
 
-Após criar uma pesquisa de conteúdo, você precisará rever e validar que os resultados da pesquisa e verificar se eles consistam apenas das mensagens de email que devem ser excluídas. Em uma pesquisa de conteúdo, você pode visualizar uma amostra aleatória de 1.000 mensagens de email sem exportar os resultados da pesquisa para evitar outros dados de derramamento. Você pode ler mais sobre as limitações de visualização em [limites de pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365](limits-for-content-search.md).
+Após criar uma pesquisa de conteúdo, você precisará rever e validar que os resultados da pesquisa e verificar se eles consistam apenas das mensagens de email que devem ser excluídas. Em uma pesquisa de conteúdo, você pode visualizar uma amostra aleatória de 1.000 mensagens de email sem exportar os resultados da pesquisa para evitar outros dados de derramamento. Você pode ler mais sobre as limitações de visualização em [limites de pesquisa de conteúdo](limits-for-content-search.md).
   
 Se você tiver mais de 1.000 caixas de correio ou mais de 100 mensagens de email por caixa de correio para revisão, poderá dividir a pesquisa inicial em várias pesquisas usando palavras-chave ou condições adicionais, como intervalo de datas ou remetente/destinatário, e revisar os resultados de cada pesquisa individual. Certifique-se de anotar todas as consultas de pesquisa para usar quando excluir mensagens na [etapa 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -116,11 +116,11 @@ Para obter mais informações sobre como exportar relatórios, consulte [exporta
 
 Para investigar melhor se um email com dados derramados foi compartilhado, você pode opcionalmente consultar os logs de rastreamento de mensagens com as informações do remetente e as informações do intervalo de datas que você coletou na etapa 4. Observe que o período de retenção para rastreamento de mensagens é de 30 dias para dados em tempo real e 90 dias para dados históricos.
   
-Você pode usar o rastreamento de mensagens no centro de conformidade do & de segurança ou usar os cmdlets correspondentes no PowerShell do Exchange Online. É importante observar que o rastreamento de mensagens não oferece garantias completas sobre a integridade dos dados retornados. Para obter mais informações sobre como usar o rastreamento de mensagens, consulte: 
+Você pode usar o rastreamento de mensagens no centro de segurança e conformidade ou usar os cmdlets correspondentes no PowerShell do Exchange Online. É importante observar que o rastreamento de mensagens não oferece garantias completas sobre a integridade dos dados retornados. Para obter mais informações sobre como usar o rastreamento de mensagens, consulte: 
   
-- [Rastreamento de mensagens no centro de conformidade &amp; de segurança do Office 365](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Rastreamento de mensagens no centro de conformidade do & de segurança](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Novo rastreamento de mensagens no centro de &amp; conformidade de segurança do Office 365](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Novo rastreamento de mensagens no centro de conformidade de & de segurança](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Etapa 6: preparar as caixas de correio
 
@@ -206,7 +206,7 @@ Se você alterou qualquer configuração de caixa de correio na etapa 6 para pre
 
 Se as palavras-chave na consulta de pesquisa que você criou e usou na etapa 3 contiverem alguns de todos os dados líquidos, você deverá excluir a consulta de pesquisa para evitar mais dados derramamento.
   
-1. No centro de conformidade do & de segurança, abra o caso de descoberta eletrônica, vá para a página de **pesquisa** e selecione a pesquisa de conteúdo apropriada.
+1. No centro de segurança e conformidade, abra o caso de descoberta eletrônica, vá para a página de **pesquisa** e selecione a pesquisa de conteúdo apropriada.
     
 2. Na página do menu suspenso, clique em **excluir**.
 
@@ -216,10 +216,10 @@ Se as palavras-chave na consulta de pesquisa que você criou e usou na etapa 3 c
 
 Você pode pesquisar o log de auditoria do Office 365 para as atividades de descoberta eletrônica que foram realizadas durante a investigação. Você também pode pesquisar o log de auditoria para retornar os registros de auditoria que foram criados quando você executou o comando **Search-Mailbox-DeleteContent** para excluir os dados derramados. Para obter mais informações, consulte:
 
-- [Pesquisar o log de auditoria no Centro de Conformidade &amp; Segurança do Office 365](search-the-audit-log-in-security-and-compliance.md)
+- [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md)
 
-- [Pesquisar atividades de descoberta eletrônica no log de auditoria do Office 365](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Pesquisar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Consulte a seção "atividades auditadas-log de auditoria do administrador do Exchange" em [Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obter orientação sobre como pesquisar registros de auditoria relacionados a cmdlets em execução no Exchange Online.
+- Consulte a seção "atividades auditadas-log de auditoria do administrador do Exchange" em [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obter orientação sobre como pesquisar registros de auditoria relacionados a cmdlets em execução no Exchange Online.
   
 

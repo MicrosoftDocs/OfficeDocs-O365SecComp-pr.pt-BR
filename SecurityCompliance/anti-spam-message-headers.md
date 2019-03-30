@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem.
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936741"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004238"
 ---
 # <a name="anti-spam-message-headers"></a>Cabeçalhos de mensagem antispam
 
 Quando o Proteção do Exchange Online examina emails de entrada, insere o cabeçalho **X-Forefront-Antispam-Report** em cada mensagem. Os campos nesse cabeçalho podem ajudar a fornecer aos administradores informações sobre a mensagem e sobre como ela foi processada. Os campos no cabeçalho **X-Microsoft-Antispam** fornecem mais informações sobre email em massa e phishing. Além esses dois cabeçalhos, o Proteção do Exchange Online também insere resultados de autenticação de email para cada mensagem que ele processa no cabeçalho **Authentication-results**.
+
+Para obter informações sobre como exibir um cabeçalho da mensagem de email em vários clientes de email, consulte [Analisador de Cabeçalho de Mensagens](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
   
 > [!TIP]
-> Para obter informações sobre como exibir um cabeçalho da mensagem de email em vários clientes de email, consulte [Analisador de Cabeçalho de Mensagens](https://go.microsoft.com/fwlink/p/?LinkId=306583). Você pode copiar e colar o conteúdo do cabeçalho da mensagem na ferramenta [Analisador de Cabeçalhos de Mensagens](https://testconnectivity.microsoft.com/?tabid=mha). Quando você selecionar uma mensagem na quarentena no centro de administração do Exchange, o link **Visualizar cabeçalho da mensagem** também deixará que você facilmente copie e cole o texto do cabeçalho da mensagem na ferramenta. Quando estiver na ferramenta Analisador de Cabeçalhos de Mensagens, clique em **Analisar cabeçalhos** para recuperar informações sobre o cabeçalho.
+>  Você pode copiar e colar o conteúdo do cabeçalho da mensagem na ferramenta [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) . Esta ferramenta ajuda a analisar os cabeçalhos e o coloca em um formato mais readible.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campos de cabeçalho da mensagem X-Forefront-Antispam-Report
 

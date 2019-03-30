@@ -1,5 +1,5 @@
 ---
-title: Atividades de utilização após a implantação do Office 365 Cloud App Security
+title: Atividades de utilização após a implantação do Office 365 Cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,21 +13,21 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Depois de configurar e distribuir o Office 365 Cloud app Security, convém executar determinadas tarefas para garantir que sua configuração esteja correta e que você esteja preparado para revisões regulares.
-ms.openlocfilehash: 3afcfc307ea4a587287f3b71080bba89c715c908
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215941"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999944"
 ---
-# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Atividades de utilização após a implantação do Office 365 Cloud App Security
+# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Atividades de utilização após a implantação do Office 365 Cloud app Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
 |[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |[Iniciar implantação](turn-on-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> O Office 365 Cloud app Security está disponível no Office 365 Enterprise e5. Se sua organização estiver usando outra assinatura do Office 365 Enterprise, o Office 365 Cloud app Security pode ser adquirido como um complemento. (como administrador global, no centro de administração do Office 365, escolha **cobrança** \> **adicionar assinaturas**.) Para obter mais informações, consulte [Descrição do serviço da plataforma do office 365 &amp; : centro de conformidade de segurança](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) do Office 365 e [comprar ou editar um complemento para o Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> O Office 365 Cloud app Security está disponível no Office 365 Enterprise e5. Se sua organização estiver usando outra assinatura do Office 365 Enterprise, o Office 365 Cloud app Security pode ser adquirido como um complemento. (como administrador global, no centro de administração do Microsoft 365, escolha **cobrança** \> **adicionar assinaturas**.) Para obter mais informações, consulte [Descrição do serviço da plataforma do office 365 &amp; : centro de conformidade de segurança](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) do Office 365 e [comprar ou editar um complemento para o Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Depois de configurar e configurar o Office 365 Cloud app Security, convém executar determinadas tarefas de utilização como um administrador global do Office 365 ou administrador de segurança para sua organização. 
 
@@ -94,7 +94,7 @@ Se um período de tempo decorrido tiver passado desde que você inicialmente con
     
 - [Gerenciar aplicativos OAuth](manage-app-permissions-in-ocas.md)
     
-- [Analisar descobertas de aplicativos do Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+- [Examinar as descobertas de descoberta de aplicativos no Office 365 Cloud app Security](review-app-discovery-findings-in-ocas.md)
     
 - Exibir uma lista de [logs de tráfego da Web e fontes de dados](web-traffic-logs-and-data-sources-for-ocas.md) suportados
     

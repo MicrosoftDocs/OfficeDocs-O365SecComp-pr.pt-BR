@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Saiba como a descoberta eletrônica avançada do Office 365 pode ajudá-lo a analisar os dados no Office 365, simplificar as revisões de documentos e tomar decisões de descoberta eletrônica eficiente.
-ms.openlocfilehash: 7bef666b4b178fee883f52549ae75717bd55f45a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 203d3bfa627064704b4123a757db94bc3478b7bc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219271"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000644"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Descoberta Eletrônica Avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Com a descoberta eletrônica avançada, você pode entender melhor seus dados do Office 365 e reduzir seus custos de descoberta eletrônica. A descoberta eletrônica avançada ajuda você a analisar dados não estruturados no Office 365, realizar uma revisão de documentos mais eficiente e tomar decisões para reduzir os dados da descoberta eletrônica. Você pode trabalhar com dados armazenados no Exchange Online, no SharePoint Online, no OneDrive for Business, no Skype for Business, nos grupos do Office 365 e no Microsoft Teams. Você pode realizar uma pesquisa de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365 para pesquisar conteúdo em grupos, caixas de correio e sites individuais e, em seguida, analisar os resultados da pesquisa com descoberta eletrônica avançada. Observe que ao preparar resultados de pesquisa para análise na descoberta eletrônica avançada, o reconhecimento óptico de caracteres permite a extração de texto de imagens. Este recurso permite que os avançados recursos analíticos de descoberta eletrônica avançada sejam aplicados a arquivos de imagem.
+Com a descoberta eletrônica avançada, você pode entender melhor seus dados do Office 365 e reduzir seus custos de descoberta eletrônica. A descoberta eletrônica avançada ajuda você a analisar dados não estruturados no Office 365, realizar uma revisão de documentos mais eficiente e tomar decisões para reduzir os dados da descoberta eletrônica. Você pode trabalhar com dados armazenados no Exchange Online, no SharePoint Online, no OneDrive for Business, no Skype for Business, nos grupos do Office 365 e no Microsoft Teams. Você pode realizar uma pesquisa de descoberta eletrônica no centro de &amp; conformidade de segurança do Microsoft 365 para pesquisar conteúdo em grupos, caixas de correio e sites individuais e, em seguida, analisar os resultados da pesquisa com descoberta eletrônica avançada. Observe que ao preparar resultados de pesquisa para análise na descoberta eletrônica avançada, o reconhecimento óptico de caracteres permite a extração de texto de imagens. Este recurso permite que os avançados recursos analíticos de descoberta eletrônica avançada sejam aplicados a arquivos de imagem.
   
 A descoberta eletrônica avançada simplifica e acelera o processo de revisão de documentos identificando informações redundantes com recursos como detecção de duplicatas e análise de threads de email. O recurso de relevância aplica a tecnologia de codificação de previsão para identificar documentos relevantes. A descoberta eletrônica avançada aprende com suas decisões de marcação em documentos de exemplo e aplica técnicas estatísticas e de aprendizado automático para calcular a relevância de cada documento no conjunto de dados. Isso permite que você se concentre em documentos importantes, tome decisões rápidas e fundamentadas sobre a estratégia de casos, a seleção de dados e a revisão de prioridades.
   

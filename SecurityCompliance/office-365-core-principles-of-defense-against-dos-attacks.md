@@ -6,23 +6,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Como a Microsoft utiliza os princípios fundamentais de absorção, detecção e atenuação em sua defesa contra ataques de negação de serviço (DoS).
-ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216001"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004098"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Princípios básicos de defesa contra ataques de negação de serviço
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principais princípios de defesa contra ataques de negação de serviço
 
-Os três princípios fundamentais ao se defender contra ataques de DoS baseados em rede são absorção, detecção e mitigação. A absorção ocorre antes da detecção e a detecção ocorre antes da redução. O absorção é a melhor defesa contra ataques de DoS. Se não for possível detectar o ataque, não será possível diminuí-lo. Mas, se mesmo o menor ataque de DoS não puder ser absorvido, os serviços não ficarão sobreviventes o suficiente para que o ataque seja detectado.
+Os três princípios fundamentais ao se defender contra ataques de DoS baseados em rede são absorção, detecção e mitigação.
+A absorção ocorre antes da detecção e a detecção ocorre antes da redução. O absorção é a melhor defesa contra ataques de DoS. Se não for possível detectar o ataque, não será possível diminuí-lo. Mas, se mesmo o menor ataque de DoS não puder ser absorvido, os serviços não ficarão sobreviventes o suficiente para que o ataque seja detectado.
 
 Obviamente, geralmente não é possível ser economicamente viável para a maioria das organizações comprar a capacidade em excesso necessária para absorver ataques de DoS, já que isso requer um investimento considerável em tecnologia e habilidades técnicas. Isso realça um dos benefícios de segurança do uso dos serviços de nuvem da Microsoft; a escalabilidade de nossos serviços nos permite fornecer uma forte proteção de rede para nossos clientes de nuvem de forma econômica. Mas mesmo em nossa escala, no entanto, ainda deve haver um equilíbrio entre absorção, detecção e mitigação. Para encontrar esse saldo, estudamos a taxa de crescimento de um ataque para estimar a quantidade de necessidade de absorver.
 

@@ -3,30 +3,29 @@ title: Resiliência de dados do Exchange do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma explicação sobre os vários aspectos da resiliência de dados no Exchange Online e no Office 365.
-ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220401"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004228"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resiliência de dados do Exchange Online no Office 365
 
 ## <a name="introduction"></a>Introdução
 Há dois tipos de danos que podem afetar um banco de dados do Exchange: corrupção física, que normalmente é causado por problemas de hardware (em particular, hardware de armazenamento) e danos lógicos, que ocorre devido a outros fatores. Geralmente, há dois tipos de corrupção lógica que podem ocorrer em um banco de dados do Exchange: 
 - **Corrupção lógica do banco** de dados-o checksum da página do banco de dados corresponde, mas os dados na página estão errados de forma lógica. Isso pode ocorrer quando o mecanismo de banco de dados (o mecanismo de armazenamento exTensível (ESE) tenta gravar uma página de banco de dados e, embora o sistema operacional retorne uma mensagem de êxito, os dados nunca são gravados no disco ou gravados no lugar errado. Isso é conhecido como *liberação perdida*. O ESE inclui vários recursos e proteções projetadas para impedir a corrupção física de um banco de dados e outros cenários de perda de dados. Para evitar que as liberações perdidas percam dados, o ESE inclui um mecanismo de detecção de liberação perdido no banco de dados, juntamente com um recurso (restauração de página única) para corrigi-lo. 
-- **Corrupção lógica de armazenamento** -os dados são adicionados, excluídos ou manipulados de forma que o usuário não espera. Esses casos geralmente são causados por aplicativos de terceiros. Geralmente, ele só está corrompido no sentido de que o usuário o visualiza como corrompido. O repositório do Exchange considera a transação que produziu a corrupção lógica para ser uma série de operações MAPI válidas. Os recursos de [bloqueio in-loco](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) no Exchange Online oferecem proteção contra corrupção lógica de armazenamento (porque impede que o conteúdo seja excluído permanentemente por um usuário ou um aplicativo). 
+- **Corrupção lógica de armazenamento** -os dados são adicionados, excluídos ou manipulados de forma que o usuário não espera. Esses casos normalmente são causados por aplicativos de terceiros. Ele normalmente é apenas um dano no sentido em que o usuário o considera assim. O repositório do Exchange considera a transação que produziu o dano lógico uma série de operações MAPI válidas. Os recursos de [bloqueio in-loco](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) no Exchange Online oferecem proteção contra corrupção lógica de armazenamento (porque impede que o conteúdo seja excluído permanentemente por um usuário ou um aplicativo). 
 
 O Exchange Online executa várias verificações de consistência em arquivos de log replicados durante a inspeção de logs e a repetição de log. Essas verificações de consistência impedem que a corrupção física seja replicada pelo sistema. Por exemplo, durante a inspeção do log, há uma verificação de integridade física que verifica o arquivo de log e valida que a soma de verificação registrada no arquivo de log corresponde à soma de verificação gerada na memória. Além disso, o cabeçalho do arquivo de log é examinado para garantir que a assinatura do arquivo de log registrada no cabeçalho do log corresponda à do arquivo de log. Durante a repetição de log, o arquivo de log fica em uma análise mais detalhada. Por exemplo, o cabeçalho do banco de dados também contém a assinatura de log que é comparada com a assinatura do arquivo de log para garantir que eles correspondam. 
 
@@ -46,7 +45,7 @@ Para obter mais informações sobre os recursos nativos listados acima, clique n
 - [Bloqueio In-loco e Retenção de Litígio](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds) 
 - [Retenção de item excluído e caixas de correio excluídas por software (habilitadas por padrão)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
-## <a name="database-availability-groups"></a>Grupos de Disponibilidade de Banco de Dados 
+## <a name="database-availability-groups"></a>Grupos de disponibilidade de banco de dados 
 Cada banco de dados de caixa de correio no Office 365 é hospedado em um [grupo de disponibilidade de banco de dados (DAG)](https://docs.microsoft.com/exchange/back-up-email) e replicado para datacenters separados geograficamente dentro da mesma região. A configuração mais comum é de quatro cópias de banco de dados em quatro data centers; no entanto, algumas regiões têm menos datacenters (bancos de dados são replicados para três data centers na Índia e dois datacenters na Austrália e no Japão). Mas em todos os casos, cada banco de dados de caixa de correio tem quatro cópias que são distribuídas por vários datacenters, garantindo que os dados da caixa de correio estejam protegidos de software, hardware e até mesmo falhas de datacenter. 
 
 Dessas quatro cópias, três delas são configuradas como altamente disponíveis. A quarta cópia é configurada como uma [cópia de banco de dados](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)com retardamento. A cópia de banco de dados com retardamento não se destina a recuperação de caixa de correio ou de caixa de correio individual. Sua finalidade é fornecer um mecanismo de recuperação para o raro evento de danos lógicos catastróficos em todo o sistema. 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Se um antigo funcionário retornar à sua organização ou se um novo funcionário for contratado para assumir as responsabilidades de trabalho de um funcionário de parte, você poderá recuperar o conteúdo da caixa de correio inativa no Office 365. Ao recuperar uma caixa de correio inativa, ela é convertida em uma nova caixa de correio que contém o conteúdo da caixa de correio inativa. '
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900040"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999814"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar uma caixa de correio inativa no Office 365
 
@@ -69,7 +69,7 @@ Use o cmdlet **New-Mailbox** com o parâmetro *InactiveMailbox* para recuperar u
 
     O endereço SMTP principal da caixa de correio inativa recuperada terá o mesmo valor que aquele especificado pelo parâmetro *MicrosoftOnlineServicesID* . 
     
-Após recuperar uma caixa de correio inativa, uma nova conta de usuário do Office 365 também é criada. You have to activate this user account by assigning a license. Para atribuir uma licença no centro de administração do Office 365, confira [atribuir ou cancelar a atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+Após recuperar uma caixa de correio inativa, uma nova conta de usuário do Office 365 também é criada. You have to activate this user account by assigning a license. Para atribuir uma licença no centro de administração do Microsoft 365, confira [Atribuir ou cancelar atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
 ## <a name="more-information"></a>Mais informações
 

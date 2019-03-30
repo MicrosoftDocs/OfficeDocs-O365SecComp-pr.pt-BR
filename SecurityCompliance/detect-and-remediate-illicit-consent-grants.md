@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656067"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999934"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir subsídios de consentimento ilícito no Office 365
 
@@ -86,7 +86,7 @@ O script produz um arquivo chamado Permissions. csv. Siga estas etapas para proc
 4.  Na coluna ClientDisplayName (coluna C), procure aplicativos que parecem suspeitos. Os aplicativos com nomes digitados incorretamente, nomes Bland ou nomes de som de hackers devem ser revisados com cuidado.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar o escopo do ataque
-Após concluir o inventário do acesso ao aplicativo, revise o **log de auditoria** do Office 365 para determinar o escopo completo da violação.  Pesquisar os usuários afetados, os intervalos de tempo que o aplicativo ilícito tinha acesso à sua organização e as permissões que o aplicativo tinha. Você pode pesquisar o **log de auditoria** no [centro de segurança e conformidade do Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
+Após concluir o inventário do acesso ao aplicativo, revise o **log de auditoria** do Office 365 para determinar o escopo completo da violação.  Pesquisar os usuários afetados, os intervalos de tempo que o aplicativo ilícito tinha acesso à sua organização e as permissões que o aplicativo tinha. Você pode pesquisar o **log de auditoria** no [centro de segurança e conformidade do Microsoft 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
 
 > [!IMPORTANT]
 > A [auditoria de caixa de correio](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) e [a auditoria de atividades para administradores e usuários](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014) devem ter sido habilitadas antes do ataque para obter essas informações.

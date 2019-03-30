@@ -1,9 +1,8 @@
 ---
-title: Decisão baseada nos resultados da Descoberta Eletrônica Avançada do Office 365
+title: Decisão com base nos resultados da descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Saiba como a guia decidir na descoberta eletrônica avançada do Office 365 fornece dados que podem ajudá-lo a determinar o tamanho correto do conjunto de arquivos de caso. '
-ms.openlocfilehash: c4767e703d03ef5dbdb808332e873d22094d7bca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216101"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999904"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisão baseada nos resultados da Descoberta Eletrônica Avançada do Office 365
+# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisão com base nos resultados da descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

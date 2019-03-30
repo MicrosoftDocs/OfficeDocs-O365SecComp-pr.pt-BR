@@ -1,5 +1,5 @@
 ---
-title: Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no &amp; centro de conformidade de segurança do Office 365
+title: Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no centro de conformidade do & de segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: O RGPD fornece aos seus dados pessoais direitos específicos da UE (chamados de dados). esses direitos incluem a obtenção de cópias dele, a solicitação de alterações, a restrição do processamento dele, a exclusão ou o recebimento de um formato eletrônico. Uma solicitação formal por um assunto de dados para realizar uma ação em seus dados pessoais é chamada de solicitação de entidade de dados ou DSR. Você pode usar casos de DSR no centro de conformidade &amp; de segurança do Office 365 para gerenciar as investigações de DSR da sua organização.
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: O RGPD fornece aos seus dados pessoais direitos específicos da UE (chamados de dados). esses direitos incluem a obtenção de cópias dele, a solicitação de alterações, a restrição do processamento dele, a exclusão ou o recebimento de um formato eletrônico. Uma solicitação formal por um assunto de dados para realizar uma ação em seus dados pessoais é chamada de solicitação de entidade de dados ou DSR. Você pode usar casos de DSR no centro de conformidade no Office 365 e no Microsoft 365 para gerenciar as investigações de DSR da sua organização.
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900140"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000104"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no &amp; centro de conformidade de segurança do Office 365
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no centro de conformidade do & de segurança
 
 A regulamentação geral de proteção de dados da UE (RGPD) é sobre a proteção e habilitação dos direitos de privacidade dos indivíduos dentro da União Européia (UE). O RGPD fornece aos indivíduos da União Européia (conhecidos como entidades de dados) o direito de acessar, recuperar, corrigir, apagar e restringir o processamento de seus dados pessoais. No RGPD, os dados pessoais significam qualquer informação relacionada a uma pessoa física identificada ou identificável. Uma solicitação formal de uma pessoa à sua organização para executar uma ação em seus dados pessoais é chamada de solicitação de assunto de dados ou DSR. Para obter informações detalhadas sobre como responder a DSRs para dados no Office 365, consulte [office 365 data Subject Request Guide](https://go.microsoft.com/fwlink/?linkid=871169 ).
   
-Para gerenciar investigações em resposta a um DSR enviado por uma pessoa em sua organização, você pode usar a ferramenta de ocorrência de DSR no centro de &amp; conformidade de segurança do Office 365 para localizar conteúdo armazenado em:
+Para gerenciar investigações em resposta a um DSR enviado por uma pessoa em sua organização, você pode usar a ferramenta de caso DSR no centro de conformidade do & de segurança para localizar o conteúdo armazenado em:
   
 - Qualquer caixa de correio de usuário em sua organização. Isso inclui conversas do Skype for Business e chats um-para-um no Microsoft Teams
     
@@ -42,7 +42,7 @@ Usando a ferramenta de ocorrência de DSR, você pode:
   
 - Criar uma ocorrência separada para cada investigação de DSR.
     
-- Controle quem tem acesso à ocorrência de DSR adicionando pessoas como membros do caso; Somente membros podem acessar o caso e só podem ver seus casos na lista de casos na página de **casos de DSR** no centro de &amp; conformidade de segurança. Além disso, você pode atribuir diferentes permissões a diferentes membros do mesmo caso. Por exemplo, você pode permitir que alguns membros apenas exibam os resultados de ocorrência e de pesquisa e permitir que outros membros criem pesquisas e exportem resultados de pesquisa. 
+- Controle quem tem acesso à ocorrência de DSR adicionando pessoas como membros do caso; Somente membros podem acessar o caso e só podem ver seus casos na lista de casos na página de **casos de DSR** no centro de conformidade do _AMP_ de segurança. Além disso, você pode atribuir diferentes permissões a diferentes membros do mesmo caso. Por exemplo, você pode permitir que alguns membros apenas exibam os resultados de ocorrência e de pesquisa e permitir que outros membros criem pesquisas e exportem resultados de pesquisa. 
     
 - Use a pesquisa interna para pesquisar todo o conteúdo criado ou carregado por um assunto de dados específico.
     
@@ -73,20 +73,20 @@ Este é o processo de alto nível para usar a ferramenta de caso DSR para gerenc
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência
 
-Por padrão, um administrador global do Office 365 pode acessar a ferramenta de caso DSR no &amp; centro de conformidade de segurança. Por design, outros usuários, como um diretor de privacidade de dados, um gerente de recursos humanos ou outras pessoas envolvidas nas investigações DSR não têm acesso à ferramenta de caso DSR e precisam receber as permissões apropriadas para acessar a ferramenta. A maneira mais fácil de fazer isso é ir para a página **permissões** no centro de conformidade &amp; de segurança e adicionar usuários ao grupo de funções Gerenciador de descoberta eletrônica. Observe que você também precisa atribuir essas permissões para que possa adicioná-las como membros da ocorrência de DSR criada na etapa 2. 
+Por padrão, um administrador global do Office 365 pode acessar a ferramenta de caso DSR no centro de conformidade do & de segurança. Por design, outros usuários, como um diretor de privacidade de dados, um gerente de recursos humanos ou outras pessoas envolvidas nas investigações DSR não têm acesso à ferramenta de caso DSR e precisam receber as permissões apropriadas para acessar a ferramenta. A maneira mais fácil de fazer isso é ir para a página **permissões** no centro de conformidade do _AMP_ de segurança e adicionar usuários ao grupo de funções Gerenciador de descoberta eletrônica. Observe que você também precisa atribuir essas permissões para que possa adicioná-las como membros da ocorrência de DSR criada na etapa 2. 
   
-Para obter instruções detalhadas, consulte [atribuir permissões de descoberta eletrônica no centro de conformidade de segurança &amp; do Office 365](assign-ediscovery-permissions.md).
+Para obter instruções detalhadas, consulte [atribuir permissões de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> Por padrão, um administrador global do Office 365 (ou outros membros do grupo de função gerenciamento da organização no &amp; centro de conformidade de segurança não tem as permissões necessárias para exportar resultados de pesquisa de conteúdo (consulte a etapa 4 neste artigo). Para resolver isso, um administrador pode adicionar a si mesmo como um membro do grupo de função Gerenciador de descoberta eletrônica. 
+> Por padrão, um administrador global do Office 365 (ou outros membros do grupo de função gerenciamento da organização no centro de conformidade do & de segurança não têm as permissões necessárias para exportar resultados de pesquisa de conteúdo (consulte a etapa 4 neste artigo). Para resolver isso, um administrador pode adicionar a si mesmo como um membro do grupo de função Gerenciador de descoberta eletrônica. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Etapa 2: criar uma ocorrência de DSR e adicionar membros
 
 A próxima etapa é criar um caso DSR. Ao criar um caso, você pode optar por iniciar a pesquisa interna ou pode criar a ocorrência sem iniciar a pesquisa. O procedimento a seguir instrui você a criar o caso sem iniciar a pesquisa e, em seguida, mostrar como adicionar membros ao caso.
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre no Office 365 usando sua conta corporativa ou de estudante. 
+1. AcEsse [https://compliance.microsoft.com](https://compliance.microsoft.com) e entre no Office 365 usando sua conta corporativa ou de estudante. 
     
-2. No centro de &amp; conformidade de segurança, clique em **solicitações de entidades de dados**de privacidade ![](media/ITPro-EAC-AddIcon.gif) \> de **dados** e clique em Adicionar ícone **novo caso de DSR**.
+2. No centro de conformidade do & de segurança, clique em **solicitações de assunto de dados**de ![](media/ITPro-EAC-AddIcon.gif) privacidade \> de **dados** e clique em Adicionar ícone **novo caso de DSR**.
     
 3. Na página **novo** submenu de caso em DSR, dê um nome ao caso, digite uma descrição opcional e clique em **Avançar**. Observe que o nome do caso deve ser exclusivo em sua organização.
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Para executar a pesquisa interna por um caso de DSR:**
   
-1. No centro de &amp; conformidade de segurança, clique em **solicitações de entidades de dados**de privacidade **** \> de **dados** e clique em abrir ao lado do caso de DSR que você criou na etapa 2. 
+1. No centro de conformidade do & de segurança, clique em **solicitações de assunto de dados**de privacidade \> de **dados** e clique em **abrir** ao lado do caso de DSR que você criou na etapa 2. 
     
     Clique na guia **Pesquisar** na parte superior da página e, em seguida, clique na caixa de seleção ao lado da pesquisa interna criada quando você criou o novo caso de DSR. Observe que a pesquisa tem o mesmo nome que o caso DSR. 
     
@@ -164,10 +164,10 @@ Você pode editar a consulta de pesquisa interna, alterar os locais de conteúdo
 
 Depois de executar a pesquisa interna, você pode exportar os resultados da pesquisa. Como alternativa, antes de exportar os dados, talvez você queira revisar a consulta para reduzir o número de resultados da pesquisa. Consulte a etapa 5 para obter mais informações sobre a limitação dos resultados da pesquisa.
   
-Quando você exporta os resultados da pesquisa, os itens da caixa de correio podem ser baixados em arquivos PST ou como mensagens individuais. Quando você exporta conteúdo de contas do SharePoint e do OneDrive, cópias de documentos nativos do Office e outros documentos são exportadas. Um arquivo de resultados que contém informações sobre cada item que é exportado também está incluído nos resultados da pesquisa. Para obter informações mais detalhadas sobre a exportação, consulte [Exportar resultados de pesquisa de conteúdo do &amp; centro de conformidade de segurança do Office 365](export-search-results.md).
+Quando você exporta os resultados da pesquisa, os itens da caixa de correio podem ser baixados em arquivos PST ou como mensagens individuais. Quando você exporta conteúdo de contas do SharePoint e do OneDrive, cópias de documentos nativos do Office e outros documentos são exportadas. Um arquivo de resultados que contém informações sobre cada item que é exportado também está incluído nos resultados da pesquisa. Para obter informações mais detalhadas sobre como exportar, consulte [Exportar resultados de pesquisa de conteúdo](export-search-results.md).
   
 > [!NOTE]
-> Por padrão, um administrador global do Office 365 (ou outros membros do grupo de função gerenciamento da organização no &amp; centro de conformidade de segurança) não tem as permissões necessárias para exportar os resultados da pesquisa de conteúdo. Para resolver isso, um administrador pode adicionar a si mesmo como um membro do grupo de função Gerenciador de descoberta eletrônica. 
+> Por padrão, um administrador global do Office 365 (ou outros membros do grupo de função gerenciamento da organização no centro de conformidade do & de segurança) não tem as permissões necessárias para exportar os resultados da pesquisa de conteúdo. Para resolver isso, um administrador pode adicionar a si mesmo como um membro do grupo de função Gerenciador de descoberta eletrônica. 
   
 O computador que você usa para exportar dados precisa atender aos seguintes requisitos de sistema:
   
@@ -188,7 +188,7 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
   
  **Para exportar dados da pesquisa interna em um caso DSR:**
   
-1. No centro de &amp; conformidade de segurança, clique em **solicitações de entidades de dados**de privacidade **** \> de **dados** e clique em abrir ao lado do caso de DSR para o qual você deseja exportar dados. 
+1. No centro de conformidade do & de segurança, clique em **solicitações de assunto de dados**de privacidade \> de **dados** e clique em **abrir** ao lado do caso de DSR do qual você deseja exportar dados. 
     
 2. Clique na guia **Pesquisar** na parte superior da página e, em seguida, clique na caixa de seleção ao lado da pesquisa interna que foi criada quando você criou o caso de DSR. Ou clique em outra pesquisa para exportar dados dessa pesquisa. 
     
@@ -229,7 +229,7 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
   
 13. Clique em **Iniciar** para baixar os resultados da pesquisa em seu computador. 
     
-    A **Ferramenta de Exportação de Descoberta Eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. Para obter mais informações sobre os relatórios que foram incluídos ao baixar os resultados da pesquisa de conteúdo, consulte a seção [mais informações](export-search-results.md#more-information) em "exportar resultados de pesquisa de &amp; conteúdo do centro de conformidade de segurança do Office 365". 
+    A **Ferramenta de Exportação de Descoberta Eletrônica** exibe informações de status sobre o processo de exportação, incluindo uma estimativa do número (e tamanho) dos itens restantes a serem baixados. Quando o processo de exportação estiver concluído, você poderá acessar os arquivos no local onde foram baixados. Para obter mais informações sobre os relatórios que foram incluídos ao baixar os resultados da pesquisa de conteúdo, consulte a seção [mais informações](export-search-results.md#more-information) em "exportar resultados de pesquisa de conteúdo". 
     
 Depois que os dados são exportados, os resultados da pesquisa e os relatórios de exportação estão localizados em uma pasta com o mesmo nome do caso DSR. Os arquivos PST que contêm itens de caixa de correio estão localizados em uma subpasta denominada **Exchange**. Documentos e outros itens de sites estão localizados em uma subpasta denominada **SharePoint**. 
   
@@ -304,7 +304,7 @@ Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os
    
  **Para pesquisar e exportar dados do serviço de roaming e do Office**
   
-1. No centro de &amp; conformidade de segurança, clique em **solicitações de entidades de dados**de privacidade **** \> de **dados** e clique em abrir ao lado do caso de DSR para o requerente de dados para o qual você deseja exportar os dados de uso. 
+1. No centro de conformidade do & de segurança, clique em **solicitações de entidades**de **privacidade** \> de dados e clique em **abrir** ao lado do caso de DSR para o requerente de dados para o qual você deseja exportar os dados de uso. 
     
 2. Clique na guia **Pesquisar** na parte superior da página e, em seguida, ![clique em](media/ITPro-EAC-AddIcon.gif) adicionar **pesquisa orientada**a ícone.
     

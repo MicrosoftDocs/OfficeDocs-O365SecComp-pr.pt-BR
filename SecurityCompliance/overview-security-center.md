@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 863cd36d383000b81d1a543d866f24b0380e5fdd
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a0acaf9560b814fe8e87751d3a8f4b6d13b3864a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791530"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000594"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Visão geral da central de segurança do Microsoft 365
-
-[!include[Prerelease�information](prerelease.md)]
 
 Gerenciar a segurança de sua empresa para proteger-se contra um panorama de ameaças em constante evolução traz muitos desafios. Você pode ter muitas soluções de segurança com vários lugares para configurar vários controles e não sabe quais são os controles mais eficientes e o que apresentará novos desafios para a sua força de funcionários. Pode ser difícil para as equipes de segurança encontrar o equilíbrio certo de segurança e produtividade.
 

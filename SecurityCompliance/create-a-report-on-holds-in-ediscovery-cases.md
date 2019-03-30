@@ -11,31 +11,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Use o script neste artigo para gerar um relatório que contenha informações sobre todas as isenções associadas a ocorrências de descoberta eletrônica no centro de conformidade &amp; de segurança do Office 365.
-ms.openlocfilehash: 95a960e8f76c672185e10d5b6be2a7ff2538a34b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Use o script neste artigo para gerar um relatório que contenha informações sobre todas as isenções associadas a ocorrências de descoberta eletrônica no centro de conformidade no Office 365 ou Microsoft 365.
+ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296994"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000874"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Criar um relatório sobre isenções em casos de descoberta eletrônica no Office 365
   
-O script neste artigo permite que os administradores de descoberta eletrônica e os gerentes de descoberta eletrônica gerem um relatório que contém informações sobre todas as isenções associadas a &amp; casos de descoberta eletrônica no centro de conformidade de segurança do Office 365. O relatório contém informações como o nome do caso ao qual uma retenção está associada, os locais de conteúdo que são colocados em espera e se a retenção é baseada em consulta. Se houver casos em que não haja isenções, o script criará um relatório adicional com uma lista de casos sem isenções.
+O script neste artigo permite que os administradores de descoberta eletrônica e os gerentes de descoberta eletrônica gerem um relatório que contém informações sobre todas as isenções associadas a casos de descoberta eletrônica no centro de conformidade no Office 365 ou Microsoft 365. O relatório contém informações como o nome do caso ao qual uma retenção está associada, os locais de conteúdo que são colocados em espera e se a retenção é baseada em consulta. Se houver casos em que não haja isenções, o script criará um relatório adicional com uma lista de casos sem isenções.
 
 Consulte a seção [mais informações](#more-information) para obter uma descrição detalhada das informações incluídas no relatório. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para gerar um relatório sobre todas as ocorrências de descoberta eletrônica em sua organização, você precisa ser um administrador de descoberta eletrônica em sua organização. Se você for um gerente de descoberta eletrônica, o relatório só incluirá informações sobre os casos que você pode acessar. Para obter mais informações sobre permissões de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica &amp; no centro de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+- Para gerar um relatório sobre todas as ocorrências de descoberta eletrônica em sua organização, você precisa ser um administrador de descoberta eletrônica em sua organização. Se você for um gerente de descoberta eletrônica, o relatório só incluirá informações sobre os casos que você pode acessar. Para obter mais informações sobre permissões de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
     
 - O script deste artigo tem um tratamento de erros mínimo. O objetivo principal é criar rapidamente um relatório sobre as isenções associadas às ocorrências de descoberta eletrônica em sua organização.
     
 - Os scripts de exemplo fornecidos neste tópico não são compatíveis com nenhum serviço ou programa de suporte padrão da Microsoft. Os scripts de exemplo são fornecidos COMO ESTÃO sem qualquer tipo de garantia. A Microsoft também se isenta de todas as garantias implícitas, incluindo sem limitações quaisquer garantias aplicáveis de padrões de comercialização ou de adequação a uma finalidade específica. Todos os riscos decorrentes do uso ou da execução da documentação ou scripts de exemplo serão de sua responsabilidade. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Etapa 1: conectar-se ao &amp; centro de conformidade de segurança usando o PowerShell remoto
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Etapa 1: conectar-se ao PowerShell do centro de conformidade do & de segurança
 
-A primeira etapa é conectar o Windows PowerShell ao centro de &amp; conformidade de segurança da sua organização.
+A primeira etapa é conectar-se ao centro de conformidade do & de segurança da sua organização.
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `ConnectSCC.ps1`. 
     
@@ -44,7 +44,7 @@ A primeira etapa é conectar o Windows PowerShell ao centro de &amp; conformidad
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
       Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. No computador local, abra o Windows PowerShell e vá para a pasta onde você salvou o script. 
@@ -59,7 +59,7 @@ A primeira etapa é conectar o Windows PowerShell ao centro de &amp; conformidad
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Etapa 2: executar o script para relatar em suspensões associadas a ocorrências de descoberta eletrônica
 
-Depois de se conectar ao centro de &amp; conformidade de segurança com o PowerShell remoto, a próxima etapa é criar e executar o script que coleta informações sobre as ocorrências de descoberta eletrônica em sua organização. 
+Depois de se conectar ao PowerShell do centro de conformidade do & de segurança, a próxima etapa é criar e executar o script que coleta informações sobre os casos de descoberta eletrônica em sua organização. 
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, CaseHoldsReport. ps1. 
     
@@ -67,7 +67,7 @@ Depois de se conectar ao centro de &amp; conformidade de segurança com o PowerS
 #script begin
 " " 
 write-host "***********************************************"
-write-host "   Office 365 Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "        eDiscovery cases - Holds report         " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " " 
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
   
 ## <a name="more-information"></a>Mais informações
 
-O relatório de ocorrências que é criado quando você executa o script neste artigo contém as seguintes informações sobre cada isenção. Conforme explicado anteriormente, você precisa ser um administrador de descoberta eletrônica para retornar informações de todas as isenções em sua organização. Para obter mais informações sobre isenções de caso, consulte [casos de descoberta eletrônica no &amp; centro de conformidade de segurança do Office 365](ediscovery-cases.md).
+O relatório de ocorrências que é criado quando você executa o script neste artigo contém as seguintes informações sobre cada isenção. Conforme explicado anteriormente, você precisa ser um administrador de descoberta eletrônica para retornar informações de todas as isenções em sua organização. Para obter mais informações sobre retenções de caso, confira [casos de descoberta eletrônica](ediscovery-cases.md).
   
   - O nome da retenção e o nome da ocorrência de descoberta eletrônica à qual a suspensão está associada.
     

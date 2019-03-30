@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muitas organizações já têm um processo para identificar e classificar informações confidenciais usando as propriedades de classificação no arquivo de classificação de infraestrutura (FCI) do Windows Server, as propriedades do documento no SharePoint ou as propriedades do documento aplicadas por um sistema de terceiros. Se essa for a sua organização, você pode criar uma política de DLP no Office 365 que reconhece as propriedades que foram aplicadas a documentos pelo FCI do Windows Server ou outro sistema, para que a política de DLP possa ser imposta em documentos do Office com FCI específico ou outros valores de propriedade.
-ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639078"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000574"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Criar uma política de DLP para proteger documentos com FCI ou outras propriedades
 
@@ -50,7 +50,7 @@ Primeiro você precisa carregar um documento com a propriedade à qual você des
   
 ### <a name="step-2-create-a-managed-property"></a>Etapa 2: Criar uma propriedade gerenciada
 
-1. Entre no Centro de administração do Office 365.
+1. Entre no centro de administração do Microsoft 365.
     
 2. No painel de navegação à esquerda, escolha **central** \> de administração **do SharePoint**. Agora você está no centro de administração do SharePoint.
     
@@ -141,7 +141,7 @@ Para obter mais informações, consulte [manualmente solicitações de rastreame
 
 - [Visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md)
     
-- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política DLP com base em um modelo](create-a-dlp-policy-from-a-template.md)
     
 - [Enviar notificações e mostrar dicas de política para políticas de DLP](use-notifications-and-policy-tips.md)
     

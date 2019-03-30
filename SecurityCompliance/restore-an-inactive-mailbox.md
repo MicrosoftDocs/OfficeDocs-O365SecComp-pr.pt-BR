@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Se um novo funcionário ou outro usuário precisar acessar o conteúdo de uma caixa de correio inativa no Office 365, você poderá restaurar (ou mesclar) o conteúdo da caixa de correio inativa para uma caixa de correio existente.
-ms.openlocfilehash: fa3572ef34a905ae2216672ed42507f0c712accb
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1b80cf5bf9361959f1622b7b42f5c7598609539c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296614"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999304"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Restaurar uma caixa de correio inativa no Office 365
 
@@ -27,13 +27,13 @@ Uma caixa de correio inativa (que é um tipo de caixa de correio excluída por s
   
 - **Restaurar uma caixa de correio inativa** Se outro funcionário assumir as responsabilidades do trabalho do funcionário de parte, ou se outro usuário precisar acessar o conteúdo da caixa de correio inativa, você poderá restaurar (ou mesclar) o conteúdo da caixa de correio inativa para uma caixa de correio existente. Você também pode restaurar o arquivo morto de uma caixa de correio inativa. Após a restauração, a caixa de correio inativa é preservada e é mantida como uma caixa de correio inativa. Este tópico descreve os procedimentos para restaurar uma caixa de correio inativa. 
     
-- **Recuperar uma caixa de correio inativa** Se o funcionário desparter retornar à sua organização ou se um novo funcionário for contratado para realizar as responsabilidades de trabalho do funcionário de parte, você poderá recuperar o conteúdo da caixa de correio inativa. Este método converte a caixa de correio inativa em uma nova caixa de correio que contenha o conteúdo da caixa de correio inativa. Após a recuperação, a caixa de correio inativa não existe mais. Para obter os procedimentos passo a passo, consulte [recuperar uma caixa de correio inativa no Office 365](recover-an-inactive-mailbox.md).
+- **Recuperar uma caixa de correio inativa** Se o funcionário desparter retornar à sua organização ou se um novo funcionário for contratado para realizar as responsabilidades de trabalho do funcionário de parte, você poderá recuperar o conteúdo da caixa de correio inativa. Este método converte a caixa de correio inativa em uma nova caixa de correio que contenha o conteúdo da caixa de correio inativa. Após sua recuperação, a caixa de correio inativa deixa de existir. Para obter os procedimentos passo a passo, consulte [recuperar uma caixa de correio inativa no Office 365](recover-an-inactive-mailbox.md).
     
 Consulte a seção **mais informações** neste artigo para obter mais detalhes sobre as diferenças entre a restauração e a recuperação de uma caixa de correio inativa. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa usar o PowerShell do Exchange Online para restaurar uma caixa de correio inativa. Você não pode usar o centro de administração do Exchange (Eat). Para obter instruções detalhadas, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+- Você precisa usar o PowerShell do Exchange Online para restaurar uma caixa de correio inativa. Você não pode usar o Centro de Administração do Exchange (EAC). Para obter instruções detalhadas, consulte [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
 - Execute o seguinte comando no PowerShell do Exchange Online para obter informações de identidade para as caixas de correio inativas em sua organização. 
     
@@ -94,7 +94,7 @@ Se uma caixa de correio inativa tiver uma caixa de correio de arquivo morto, voc
   
 ## <a name="more-information"></a>Mais informações
 
-- **Qual é a principal diferença entre a recuperação e a restauração de uma caixa de correio inativa?** Ao recuperar uma caixa de correio inativa, a caixa de correio é basicamente convertida para uma nova caixa de correio, o conteúdo e a estrutura de pastas da caixa de correio inativa são mantidos e a caixa de correio é vinculada a uma nova conta de usuário. Após a recuperação, a caixa de correio inativa não existe mais e qualquer alteração feita no conteúdo da nova caixa de correio afetará o conteúdo que estava originalmente em retenção na caixa de correio inativa. Por outro lado, quando você restaura uma caixa de correio inativa, o conteúdo é simplesmente copiado para outra caixa de correio. A caixa de correio inativa é preservada e permanece uma caixa de correio inativa. As alterações feitas no conteúdo da caixa de correio de destino não afetarão o conteúdo original mantido na caixa de correio inativa. A caixa de correio inativa ainda pode ser pesquisada usando a [ferramenta de pesquisa de conteúdo](run-a-content-search-in-the-security-and-compliance-center.md) no &amp; centro de conformidade de segurança do Office 365, seu conteúdo pode ser restaurado para outra caixa de correio ou pode ser recuperado ou excluído posteriormente. 
+- **Qual é a principal diferença entre a recuperação e a restauração de uma caixa de correio inativa?** Ao recuperar uma caixa de correio inativa, a caixa de correio é basicamente convertida para uma nova caixa de correio, o conteúdo e a estrutura de pastas da caixa de correio inativa são mantidos e a caixa de correio é vinculada a uma nova conta de usuário. Após a recuperação, a caixa de correio inativa não existe mais e qualquer alteração feita no conteúdo da nova caixa de correio afetará o conteúdo que estava originalmente em retenção na caixa de correio inativa. Por outro lado, quando você restaura uma caixa de correio inativa, o conteúdo é simplesmente copiado para outra caixa de correio. A caixa de correio inativa é preservada e permanece como inativa. As alterações feitas no conteúdo da caixa de correio de destino não afetarão o conteúdo original mantido na caixa de correio inativa. A caixa de correio inativa ainda pode ser pesquisada usando a [ferramenta de pesquisa de conteúdo](run-a-content-search-in-the-security-and-compliance-center.md) no centro de conformidade do _AMP_ de segurança, seu conteúdo pode ser restaurado para outra caixa de correio ou pode ser recuperado ou excluído posteriormente. 
     
 - **Como localizar caixas de correio inativas?** Para obter uma lista das caixas de correio inativas em sua organização e exibir informações que são úteis para restaurar uma caixa de correio inativa, você pode executar este comando. 
 

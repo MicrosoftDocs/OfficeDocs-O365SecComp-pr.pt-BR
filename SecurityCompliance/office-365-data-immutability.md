@@ -7,19 +7,19 @@ ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Define e explica a imutabilidade dos dados ou os dados que devem ser detectáveis e não podem ser destruídos ou alterados.
-ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215561"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004148"
 ---
 # <a name="immutability-in-office-365"></a>Imutabilidade no Office 365
 Para algumas organizações, conformidade normativa, requisitos de governança interna ou risco de litígio exigem a preservação de email e dados associados em um formulário detectável. Todos os dados no sistema devem ser detectáveis e nenhum deles pode ser destruído ou alterado. O termo padrão do setor para isso é "imutabilidade". 
@@ -35,9 +35,9 @@ Por meio da configuração dos recursos de política de retenção e preservaç�
 - Documentos compartilhados durante reuniões online
 - Caixa postal
 
-Além disso, a Microsoft desenvolveu recursos complementares para permitir o [arquivamento de dados](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de outras fontes por meio da integração com soluções de captura e gerenciamento de dados de terceiros. Após a importação dos dados de terceiros, você pode aplicar recursos de conformidade do Office 365 aos dados, incluindo retenção de litígio, descoberta eletrônica in-loco e bloqueio, pesquisa de conformidade, arquivamento in-loco, auditoria e políticas de retenção. Por exemplo, quando uma caixa de correio é colocada em retenção de litígio, os dados de terceiros serão preservados. Você pode pesquisar dados de terceiros usando a descoberta eletrônica in-loco ou a pesquisa de conformidade. Ou você pode aplicar políticas de arquivamento e retenção a dados de terceiros da mesma forma que você pode para os dados da Microsoft. Em suma, o arquivamento de dados de terceiros no Office 365 pode ajudar sua organização a se manter em conformidade com as políticas governamentais e regulamentares.
+Além disso, a Microsoft desenvolveu recursos complementares para permitir o [arquivamento de dados](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de outras fontes por meio da integração com soluções de captura e gerenciamento de dados de terceiros. Após a importação dos dados de terceiros, você pode aplicar recursos de conformidade do Office 365 aos dados, incluindo retenção de litígio, descoberta eletrônica in-loco e bloqueio, pesquisa de conformidade, arquivamento in-loco, auditoria e políticas de retenção. Por exemplo, quando uma caixa de correio é colocada em Retenção de Litígio, os dados de terceiros são preservados. Você pode pesquisar dados de terceiros usando a Descoberta Eletrônica In-loco ou a Pesquisa de Conformidade. Se preferir, você pode aplicar políticas de arquivamento e de retenção aos dados de terceiros, assim como faz com os dados da Microsoft. Em suma, o arquivamento de dados de terceiros no Office 365 pode ajudar sua organização a se manter em conformidade com as políticas governamentais e regulamentares.
 
-O arquivamento no Office 365 oferece um armazenamento em conformidade com a regra de Securities-4 de títulos e de comissões do Exchange (seg) e preserva arquivos permanentes de todos os dados coletados em um formato não-regravável e não apagável usando políticas de retenção in-loco e políticas de preservação , incluindo bloqueio de preservação. Específicas
+O arquivamento no Office 365 oferece um armazenamento em conformidade com a regra de Securities-4 de títulos e de comissões do Exchange (seg) e preserva arquivos permanentes de todos os dados coletados em um formato não-regravável e não apagável usando políticas de retenção in-loco e políticas de preservação , incluindo bloqueio de preservação. Especificamente:
 - Todos os registros armazenados usando as políticas de retenção indicadas acima são mantidos em uma área de armazenamento dedicada fora do âmbito do usuário comum. Além disso, somente os usuários autorizados podem acessar e Pesquisar esses registros, mas não podem alterá-los ou apagá-los.
 - Os metadados de cada item incluem um carimbo de data/hora que é usado no cálculo da duração da retenção. Os carimbos de data/hora são aplicados quando um novo item é recebido ou criado e não pode ser modificado ou removido dos metadados.
 - O arquivamento no Office 365 permite aos usuários combinar diferentes políticas de retenção e ações de bloqueio para criar políticas de retenção granulares para definir o tipo ou o local dos itens a serem imutavelmente preservados e a duração da preservação.

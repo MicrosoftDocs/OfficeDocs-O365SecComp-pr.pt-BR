@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Você pode usar a ferramenta de pesquisa de log de auditoria do Office 365 para ajudá-lo a solucionar problemas comuns, como investigar uma conta comprometida ou descobrir quem configurou o encaminhamento de email para uma caixa de correio.
-ms.openlocfilehash: bf07df7ef0767e525ca3e6ff7f5ce4c637880b80
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296764"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999624"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Pesquisar o log de auditoria do Office 365 para solucionar problemas de cenários comuns
 
@@ -32,7 +32,7 @@ Este artigo descreve como usar a ferramenta de pesquisa de log de auditoria do O
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Usando a ferramenta de pesquisa de log de auditoria do Office 365
 
-Cada um dos cenários de solução de problemas descritos neste artigo se baseia em usar a ferramenta de pesquisa de log de auditoria no centro de conformidade do & de segurança do Office 365. Esta seção lista as permissões necessárias para pesquisar o log de auditoria e descreve as etapas para acessar e executar pesquisas de log de auditoria. Cada seção de cenário fornece orientações específicas sobre como configurar uma consulta de pesquisa de log de auditoria e o que procurar nas informações detalhadas nos registros de auditoria que correspondem aos critérios de pesquisa.
+Cada um dos cenários de solução de problemas descritos neste artigo se baseia em usar a ferramenta de pesquisa de log de auditoria no centro de segurança e conformidade do Office 365. Esta seção lista as permissões necessárias para pesquisar o log de auditoria e descreve as etapas para acessar e executar pesquisas de log de auditoria. Cada seção de cenário fornece orientações específicas sobre como configurar uma consulta de pesquisa de log de auditoria e o que procurar nas informações detalhadas nos registros de auditoria que correspondem aos critérios de pesquisa.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permissões necessárias para usar a ferramenta de pesquisa de log de auditoria
 
@@ -40,13 +40,13 @@ Você precisa receber a função de logs de auditoria somente para exibição ou
 
 ### <a name="running-audit-log-searches"></a>Executando pesquisas de log de auditoria
 
-Esta seção descreve as noções básicas para criar e executar pesquisas de log de auditoria. Use estas instruções como ponto de partida para cada cenário de solução de problemas neste artigo. Para obter instruções passo a passo mais detalhadas, consulte [Search the Audit Log In The Office 365 Security _AMP_ Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+Esta seção descreve as noções básicas para criar e executar pesquisas de log de auditoria. Use estas instruções como ponto de partida para cada cenário de solução de problemas neste artigo. Para obter instruções passo a passo detalhadas, consulte [Search the Audit Log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
   
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
 
-3. No painel esquerdo do centro de conformidade do & de segurança, clique em pesquisa **& investigação** > de**log de auditoria**.
+3. No painel esquerdo do centro de segurança e conformidade, clique em **** > **pesquisa de log de auditoria**de pesquisa.
     
     A página **pesquisa de log de auditoria** é exibida. 
     
@@ -54,13 +54,13 @@ Esta seção descreve as noções básicas para criar e executar pesquisas de lo
   
 4. Você pode configurar os seguintes critérios de pesquisa. Observe que cada cenário de solução de problemas neste artigo recomendará orientações específicas para configurar esses campos.
     
-    a. **Activities** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades que atendem aos outros critérios de pesquisa. Você também precisará deixar este campo em branco em alguns dos cenários de solução de problemas.
+    a. **Atividades** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades que atendem aos outros critérios de pesquisa. Você também precisará deixar este campo em branco em alguns dos cenários de solução de problemas.
     
-    b. **data de início** e **data de término** -selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. Os últimos sete dias são selecionados por padrão. A data e a hora são apresentadas no formato UTC (tempo Universal Coordenado). O intervalo de datas máximo que você pode especificar é de 90 dias.
+    b. **Data de início** e **data de término** -selecione um intervalo de data e hora para exibir os eventos que ocorreram dentro desse período. Os últimos sete dias são selecionados por padrão. A data e a hora são apresentadas no formato UTC (tempo Universal Coordenado). O intervalo de datas máximo que você pode especificar é de 90 dias.
 
-    c. **Users** -clique nesta caixa e selecione um ou mais usuários para exibir os resultados da pesquisa. Os registros de auditoria da atividade selecionada executada pelos usuários selecionados nesta caixa são exibidos na lista de resultados. Deixe esta caixa em branco para retornar entradas para todos os usuários (e contas de serviço) em sua organização.
+    c. **Usuários** – clique nesta caixa e selecione um ou mais usuários para exibir os resultados da pesquisa. Os registros de auditoria da atividade selecionada executada pelos usuários selecionados nesta caixa são exibidos na lista de resultados. Deixe esta caixa em branco para retornar entradas para todos os usuários (e contas de serviço) em sua organização.
     
-    d. **arquivo, pasta ou site** -digite alguns ou todos os nomes de arquivos ou pastas para pesquisar atividades relacionadas ao arquivo de pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de digitar o caminho de URL completo ou se digitar apenas uma parte da URL, não inclua nenhum caractere ou espaço especial. Deixe esta caixa em branco para retornar entradas para todos os arquivos e pastas em sua organização. Observe que esse campo é deixado em branco em todos os cenários de solução de problemas neste artigo.
+    d. **Arquivo, pasta ou site** -digite alguns ou todos os nomes de arquivo ou pasta para pesquisar atividades relacionadas ao arquivo de pasta que contém a palavra-chave especificada. Você também pode especificar uma URL de um arquivo ou pasta. Se você usar uma URL, certifique-se de digitar o caminho de URL completo ou se digitar apenas uma parte da URL, não inclua nenhum caractere ou espaço especial. Deixe esta caixa em branco para retornar entradas para todos os arquivos e pastas em sua organização. Observe que esse campo é deixado em branco em todos os cenários de solução de problemas neste artigo.
     
 5. Clique em **Pesquisar** para executar a pesquisa usando seus critérios de pesquisa. 
     
@@ -113,13 +113,13 @@ Neste ponto, você precisa examinar os detalhes de cada registro de auditoria pa
 
 ![Informações detalhadas do registro de auditoria](media/emailforwarding2.png)
 
-a. no campo **ObjectID** , o alias da caixa de correio para o qual o encaminhamento de email foi definido é exibido. Essa caixa de correio também é exibida na coluna **Item** na página de resultados da pesquisa.
+a. No campo **ObjectID** , o alias da caixa de correio para o qual o encaminhamento de email foi definido é exibido. Essa caixa de correio também é exibida na coluna **Item** na página de resultados da pesquisa.
 
-b. no campo **parâmetros** , o valor *ForwardingSmtpAddress* indica que o encaminhamento de emails foi definido na caixa de correio. Neste exemplo, o email está sendo encaminhado para o endereço de email mike@contoso.com, que está fora da organização do alpinehouse.onmicrosoft.com.
+b. No campo **parâmetros** , o valor *ForwardingSmtpAddress* indica que o encaminhamento de emails foi definido na caixa de correio. Neste exemplo, o email está sendo encaminhado para o endereço de email mike@contoso.com, que está fora da organização do alpinehouse.onmicrosoft.com.
 
-c. o valor *true* para o parâmetro *DeliverToMailboxAndForward* indica que uma cópia da mensagem entregue ao Sarad@alpinehouse.onmicrosoft.com *e* é encaminhada para o endereço de email especificado pelo *ForwardingSmtpAddress *o parâmetro, que neste exemplo é Mike@contoso.com. Se o valor do parâmetro *DeliverToMailboxAndForward* for definido como *false*, o email será encaminhada somente para o endereço especificado pelo parâmetro *ForwardingSmtpAddress* . Ele não é entregue à caixa de correio especificada no campo **ObjectID** .
+c. O valor *true* para o parâmetro *DeliverToMailboxAndForward* indica que uma cópia da mensagem entregue ao Sarad@alpinehouse.onmicrosoft.com *e* é encaminhada para o endereço de email especificado pelo *ForwardingSmtpAddress *o parâmetro, que neste exemplo é Mike@contoso.com. Se o valor do parâmetro *DeliverToMailboxAndForward* for definido como *false*, o email será encaminhada somente para o endereço especificado pelo parâmetro *ForwardingSmtpAddress* . Ele não é entregue à caixa de correio especificada no campo **ObjectID** .
 
-d. o campo **userid** indica o usuário que define o encaminhamento de emails na caixa de correio especificada no campo de campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa. Nesse caso, parece que o proprietário da caixa de correio define o encaminhamento de email em sua caixa de correio.
+d. O campo **userid** indica o usuário que define o encaminhamento de emails na caixa de correio especificada no campo de campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa. Nesse caso, parece que o proprietário da caixa de correio define o encaminhamento de email em sua caixa de correio.
 
 Se você determinar que o encaminhamento de emails não deve ser definido na caixa de correio, é possível removê-lo executando o seguinte comando no PowerShell do Exchange Online:
 
@@ -131,7 +131,9 @@ Consulte o artigo [Set-Mailbox](https://docs.microsoft.com/powershell/module/exc
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>Determinando se um usuário excluiu itens de email
 
-Antes que os registros de log de auditoria sobre itens de email excluídos sejam salvos no log de auditoria do Office 365, a auditoria de caixa de correio deve estar habilitada para cada caixa de correio de usuário em sua organização. Além disso, as ações de caixa de correio do SoftDelete e do HardDelete devem ser habilitadas para auditoria. Para obter instruções, consulte [habilitar a auditoria de caixa de correio no Office 365](enable-mailbox-auditing.md). Se a auditoria de caixa de correio já estiver habilitada para usuários, use as etapas a seguir para pesquisar eventos relacionados a itens de email excluídos no log de auditoria.
+A partir de janeiro de 2019, a Microsoft está ativando o log de auditoria de caixa de correio por padrão para todas as organizações do Office 365 e Microsoft. Isso significa que determinadas ações executadas por proprietários de caixa de correio são automaticamente registradas, e os registros de auditoria de caixa de correio correspondentes estarão disponíveis quando você procurá-los no log de auditoria de caixa de correio. Antes de a auditoria da caixa de correio ser ativada por padrão, você precisava habilitá-la manualmente para cada caixa de correio de usuário em sua organização. 
+
+As ações de caixa de correio registradas por padrão incluem as ações de caixa de correio SoftDelete e HardDelete executadas por proprietários de caixa de correio. Isso significa que você pode usar as seguintes etapas para pesquisar o log de auditoria em busca de eventos relacionados a itens de email excluídos. Para obter mais informações sobre a auditoria de caixa de correio por padrão, consulte [Manage Mailbox Auditing](enable-mailbox-auditing.md).
 
 ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
 
@@ -139,7 +141,7 @@ ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para e
 
 - **Mensagens excluídas da pasta itens excluídos** -esta atividade corresponde à ação de auditoria de caixa de correio do **SoftDelete** . Essa atividade também é registrada quando um usuário exclui permanentemente um item selecionando-o e pressionando **Shift + Delete**. Depois que um item é excluído permanentemente, o usuário pode recuperá-lo até que expire o período de retenção do item excluído.
 
-- **Mensagens limpas da caixa de correio** -esta atividade corresponde à ação de auditoria de caixa de correio do **HardDelete** . Isso é registrado quando um usuário limpa um item da pasta itens recuperáveis. Os administradores podem usar a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança do Office 365 para pesquisar e recuperar itens excluídos até que o período de retenção do item excluído expire ou maior se a caixa de correio do usuário estiver em espera.
+- **Mensagens limpas da caixa de correio** -esta atividade corresponde à ação de auditoria de caixa de correio do **HardDelete** . Isso é registrado quando um usuário limpa um item da pasta itens recuperáveis. Os administradores podem usar a ferramenta de pesquisa de conteúdo no centro de segurança e conformidade para pesquisar e recuperar itens excluídos até que o período de retenção do item excluído expire ou maior se a caixa de correio do usuário estiver em espera.
 
 **Data de início** e **data de término** -selecione um intervalo de datas que se aplica à sua investigação.
 
@@ -187,10 +189,10 @@ Depois de executar a pesquisa, todos os registros de auditoria dessa atividade s
 
 ![Registro de auditoria para nova regra de caixa de entrada](media/NewInboxRuleRecord.png)
 
-a. no campo **ObjectID** , o nome completo da regra de caixa de entrada é exibido. Esse nome inclui o alias da caixa de correio do usuário (por exemplo, em inglês) e o nome da regra de caixa de entrada (por exemplo, "mover mensagens do administrador").
+a. No campo **ObjectID** , o nome completo da regra de caixa de entrada é exibido. Esse nome inclui o alias da caixa de correio do usuário (por exemplo, em inglês) e o nome da regra de caixa de entrada (por exemplo, "mover mensagens do administrador").
 
-b. no campo **parâmetros** , a condição da regra de caixa de entrada é exibida. Neste exemplo, a condição é especificada pelo parâmetro *from* . O valor definido para o parâmetro from indica que a regra de caixa *de* entrada atua no email enviado por admin@alpinehouse.onmicrosoft.com. Para obter uma lista completa dos parâmetros que podem ser usados para definir condições de regras de caixa de entrada, consulte o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. No campo **parâmetros** , a condição da regra de caixa de entrada é exibida. Neste exemplo, a condição é especificada pelo parâmetro *from* . O valor definido para o parâmetro from indica que a regra de caixa *de* entrada atua no email enviado por admin@alpinehouse.onmicrosoft.com. Para obter uma lista completa dos parâmetros que podem ser usados para definir condições de regras de caixa de entrada, consulte o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. o parâmetro *MoveToFolder* especifica a ação para a regra de caixa de entrada; Neste exemplo, as mensagens recebidas de admin@alpinehouse.onmicrosoft.com são movidas para a pasta denominada *AdminSearch*. Consulte também o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obter uma lista completa de parâmetros que podem ser usados para definir a ação de uma regra de caixa de entrada.
+c. O parâmetro *MoveToFolder* especifica a ação para a regra de caixa de entrada; Neste exemplo, as mensagens recebidas de admin@alpinehouse.onmicrosoft.com são movidas para a pasta denominada *AdminSearch*. Consulte também o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obter uma lista completa de parâmetros que podem ser usados para definir a ação de uma regra de caixa de entrada.
 
-d. o campo **userid** indica o usuário que criou a regra de caixa de entrada especificada no campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa.
+d. O campo **userid** indica o usuário que criou a regra de caixa de entrada especificada no campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa.

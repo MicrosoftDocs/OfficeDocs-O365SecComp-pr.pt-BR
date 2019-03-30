@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre o gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: d8b16d7dd73f99c15ec241963a58273966074318
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a464bacaa568515e470e29a0c9c45a91a79cf8e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214921"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001244"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gerenciamento de acesso privilegiado no Office 365
 
@@ -45,23 +45,23 @@ O gerenciamento de acesso privilegiado no Office 365 pode ser definido e escopos
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Arquitetura de gerenciamento de acesso privilegiado e fluxo de processo
 
-Cada um dos fluxos de processo a seguir descreve a arquitetura do priveleged Access e como ele interage com o substrato do Office 365, auditoria do Office 365 e o runspace de gerenciamento do Exchange.
+Cada um dos fluxos de processo a seguir descreve a arquitetura de acesso privilegiado e como ele interage com o substrato do Office 365, a auditoria do Office 365 e o espaço de gerenciamento do Exchange.
 
 ### <a name="step-1-configuring-a-privileged-access-policy"></a>Etapa 1: conFigurando uma política de acesso privilegiado
 
-Ao configurar uma política de acesso privilegiado usando o centro de administração do Office 365 ou o PowerShell de gerenciamento do Exchange, você cria e define a política e o recurso de acesso privilegiado processa os atributos de política no substrato do Office 365 e registra o atividade no centro de segurança e conformidade do Office 365. A política agora está habilitada e pronta para lidar com solicitações de entrada para aprovações.
+Ao configurar uma política de acesso privilegiado usando o [centro de administração do Microsoft 365](https://admin.microsoft.com) ou o PowerShell de gerenciamento do Exchange, você cria e define a política e o recurso de acesso privilegiado processa os atributos de política no substrato do Office 365 e registra a atividade no centro de segurança e conformidade do Office 365. A política agora está habilitada e pronta para lidar com solicitações de entrada para aprovações.
 
 ![Etapa 1-criação de política](media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Etapa 2: solicitação de acesso
 
-Usando o centro de administração do Office 365 ou o PowerShell de gerenciamento do Exchange, os usuários podem solicitar acesso a tarefas elevadas ou privilegiadas. O recurso de acesso privilegiado envia a solicitação para o substrato do Office 365 para processamento com a política de acesso de privilégio configurada e registra o sctivity nos logs do centro de conformidade e segurança do Office 365.
+Usando o [centro de administração do Microsoft 365](https://admin.microsoft.com) ou o PowerShell de gerenciamento do Exchange, os usuários podem solicitar acesso a tarefas elevadas ou privilegiadas. O recurso de acesso privilegiado envia a solicitação para o substrato do Office 365 para processamento com a política de acesso de privilégio configurada e registra a atividade nos logs do centro de conformidade e segurança do Office 365.
 
 ![Etapa 2-solicitação de acesso](media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Etapa 3: aprovação do acesso
 
-Uma solicitação de aprovação é gerada e o grupo de aprovação é notificado por email da solicitação pendente. Se a aprovação for concedida, a solicitação de acesso privilegiado será processada como uma aprovação e a tarefa estará pronta para ser concluída. Se a solicitação for negada, a tarefa será bloqueada e nenhum acesso será concedido ao reqeustor. O solicitante será notificado sobre a aprovação da solicitação ou a negação via mensagem de email.
+Uma solicitação de aprovação é gerada e o grupo de aprovação é notificado por email da solicitação pendente. Se a aprovação for concedida, a solicitação de acesso privilegiado será processada como uma aprovação e a tarefa estará pronta para ser concluída. Se a solicitação for negada, a tarefa será bloqueada e nenhum acesso será concedido ao solicitante. O solicitante será notificado sobre a aprovação da solicitação ou a negação via mensagem de email.
 
 ![Etapa 3: aprovação do acesso](media/pam-step3-access-approval.jpg)
 
@@ -84,7 +84,7 @@ Planejamos oferecer esse recurso em outras cargas de trabalho do Office 365 em b
 Estamos planejando aumentar o limite atual de 30 políticas de acesso privilegiado por organização do Office 365 em breve.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Preciso ser um administrador global para gerenciar o acesso privilegiado no Office 365?
-Não, você precisa ter a função de gerenciamento de função do Exchange atribuída às contas que irão gerenciar o acesso privilegiado no Office 365. No enTanto, a função de administrador global inclui essa função por padrão e pode ser usada para gerenciar o acesso privilegiado se você não quiser configurar a função de gerenciamento de função como uma permissão de conta autônoma. Os usuários que estão incluídos em um grupo de aprovadores não precisam ser um administrador global ou ter a função de gerenciamento de função atribuída para revisar e aprovar solicitações. 
+Não, você precisa ter a função de gerenciamento de função do Exchange atribuída às contas que irão gerenciar o acesso privilegiado no Office 365. No enTanto, a função de administrador global inclui essa função por padrão e pode ser usada para gerenciar o acesso privilegiado se você não quiser configurar a função de gerenciamento de função como uma permissão de conta autônoma. Os usuários que estão incluídos em um grupo de aprovadores não precisam ser um administrador global ou ter a função de gerenciamento de função atribuída para revisar e aprovar solicitações.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Como o gerenciamento de acesso privilegiado no Office 365 está relacionado ao Lockbox do cliente?
 O [Lockbox de clientes](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) permite que um nível de controle de acesso para as organizações acessem os dados de acordo com o provedor de serviços, ou seja, a Microsoft. O gerenciamento de acesso privilegiado no Office 365 permite o controle de acesso granular dentro de uma organização para todas as tarefas privilegiadas do Office 365.

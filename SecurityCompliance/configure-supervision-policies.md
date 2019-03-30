@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar uma política de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 1e381f5f435c7edb9f59afb07c22905f12d35513
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866387"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001024"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
@@ -34,31 +34,29 @@ Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão
   
 Siga estas etapas para configurar e usar a supervisão na sua organização do Office 365:
   
-- **Etapa 1 (opcional)** - [configurar grupos de supervisão](configure-supervision-policies.md#exampledist)
+- **Etapa 1 (opcional)** - [configurar grupos de supervisão (opcional)](#step-1---set-up-groups-for-supervision-optional)
 
     Antes de começar a usar a supervisão, determine quem terá suas comunicações revisadas e quem executará essas análises. Se você quiser começar com apenas alguns usuários para ver como a supervisão funciona, você pode ignorar a configuração de grupos por enquanto.
 
-- **Etapa 2 (obrigatório)** - [tornar a supervisão disponível em sua organização](configure-supervision-policies.md#MakeAvailable)
+- **Etapa 2 (obrigatório)** - [disponibilizar a supervisão em sua organização (obrigatório)](#step-2---make-supervision-available-in-your-organization-required)
 
-    Adicione a si mesmo ao grupo de função de análise de supervisão para que você possa configurar políticas. Qualquer pessoa que tenha essa função atribuída pode acessar a página de **supervisão** sob **governança de dados** no centro de conformidade do & de segurança. Se o email a ser revisado estiver hospedado no Exchange Online, cada revisor também deverá ter [acesso ao PowerShell remoto para o Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Adicione a si mesmo ao grupo de função de análise de supervisão para que você possa configurar políticas. Qualquer pessoa que tenha essa função atribuída pode acessar a página de **supervisão** no centro de conformidade. Se o email a ser revisado estiver hospedado no Exchange Online, cada revisor também deverá ter [acesso ao PowerShell remoto para o Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- **Etapa 3 (opcional)** - [Configure tipos de informações confidenciais personalizados ou dicionários de palavras-chave personalizados](configure-supervision-policies.md#sensitiveinfo) e léxicos
+- **Etapa 3 (opcional)** - [criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     Se você precisar usar um tipo de informação confidencial personalizado ou um dicionário de palavras-chave personalizado para sua política de supervisão, você precisará criá-lo antes de iniciar o assistente de supervisão.
 
-- **Etapa 4 (obrigatório)** - [Configurar uma política de supervisão](configure-supervision-policies.md#setupsuper)
+- **Etapa 4 (obrigatório)** - [Configurar uma política de supervisão](#step-4---set-up-a-supervision-policy-required)
 
-    Você criará políticas de supervisão no centro de conformidade do & de segurança. Essas políticas definem quais comunicações estão sujeitas a revisar em sua organização e especifica quem deve realizar revisões. As comunicações incluem email e comunicações do Microsoft Teams, bem como comunicações de plataforma de terceiros (como Facebook, Twitter, etc.)
+    Você criará políticas de supervisão no centro de conformidade. Essas políticas definem quais comunicações estão sujeitas a revisar em sua organização e especifica quem deve realizar revisões. As comunicações incluem email e comunicações do Microsoft Teams, bem como comunicações de plataforma de terceiros (como Facebook, Twitter, etc.)
 
-- **Etapa 5-(opcional)** [Testar sua nova política de supervisão](configure-supervision-policies.md#TestPolicy)
+- **Etapa 5-(opcional)** [Testar sua política de supervisão](#step-5---test-your-supervision-policy-optional)
 
     Testar sua política de supervisão para garantir que esteja funcionando conforme o desejado é uma parte importante da garantia de que sua estratégia de conformidade esteja atendendo aos padrões.
 
-- **Etapa 6-(opcional)** [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](configure-supervision-policies.md#UseOutlook)
+- **Etapa 6-(opcional)** [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](#step-6---configure-outlook-for-reviewers-optional)
 
     O Outlook pode ser configurado para dar aos revisores o acesso à funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
-
-<a name="exampledist"> </a>
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Etapa 1-configurar grupos de supervisão (opcional)
 
@@ -104,11 +102,9 @@ Para obter mais informações sobre a configuração de grupos, consulte:
 - [Gerenciar grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Visão geral dos grupos do Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-<a name="MakeAvailable"> </a>
-
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Etapa 2-tornar a supervisão disponível em sua organização (obrigatório)
 
-Para tornar a **supervisão** disponível como uma opção de menu no centro de conformidade do _AMP_ de segurança, você deve receber a função de administrador de análise de supervisão.
+Para tornar a **supervisão** disponível como uma opção de menu no centro de conformidade, você deve ter a função de administrador de análise de supervisão atribuída.
   
 Para fazer isso, você pode adicionar a si mesmo como um membro do grupo de função de análise de supervisão ou pode criar um novo grupo de função.
   
@@ -116,7 +112,7 @@ Para fazer isso, você pode adicionar a si mesmo como um membro do grupo de fun�
 
 1. Entre [https://protection.office.com](https://protection.office.com) usando as credenciais de uma conta de administrador na sua organização do Office 365.
 
-2. No centro de conformidade do & de segurança, acesse **permissões**.
+2. No centro de conformidade, acesse **permissões**.
 
 3. Selecione o grupo de função de **análise de supervisão** e clique no ícone Editar.
 
@@ -126,20 +122,18 @@ Para fazer isso, você pode adicionar a si mesmo como um membro do grupo de fun�
 
 1. Entre [https://protection.office.com](https://protection.office.com) usando as credenciais de uma conta de administrador na sua organização do Office 365.
 
-2. No centro de conformidade do & de segurança, acesse **permissões** e clique em**+** adicionar ().
+2. No centro de conformidade, vá até **permissões** e clique em Adicionar (**+**).
 
 3. Na seção **funções** , clique em Adicionar (**+**) e role para baixo até **administrador de análise de supervisão**. Adicione esta função ao grupo de função.
 
 4. Na seção **Membros** , adicione as pessoas que você deseja gerenciar a supervisão da sua organização.
 
-Para obter mais informações sobre grupos de funções e permissões, consulte [permissões no centro de &amp; conformidade de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
+Para obter mais informações sobre grupos de funções e permissões, consulte [permissões no centro de conformidade](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Habilitar o acesso ao PowerShell remoto para revisores (se o email estiver hospedado no Exchange Online)
 
 1. Siga as orientações em [habilitar ou desabilitar o acesso ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-<a name="sensitiveinfo"> </a>
-  
 ## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Etapa 3: criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados (opcional)
 
 Para escolher entre os tipos de informações confidenciais personalizadas existentes ou os dicionários de palavras-chave personalizados no assistente de política de supervisão, primeiro você precisará criar esses itens, se necessário.
@@ -161,13 +155,11 @@ Usando um editor de texto (como o bloco de notas), crie um novo arquivo que incl
 
     Depois que o dicionário personalizado/léxico é criado, você pode exibir as palavras-chave configuradas usando o cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) ou adicionar e remover termos usando o cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
 
-<a name="setupsuper"> </a>
-
 ## <a name="step-4---set-up-a-supervision-policy-required"></a>Etapa 4-configurar uma política de supervisão (obrigatório)
   
 1. Entre [https://protection.office.com](https://protection.office.com) usando as credenciais de uma conta de administrador na sua organização do Office 365.
 
-2. No centro de conformidade do & de segurança, selecione **supervisão**.
+2. No centro de conformidade, selecione **supervisão**.
   
 3. Selecione **criar** e siga o assistente para configurar as seguintes páginas da política. Usando o assistente, você irá:
 
@@ -178,8 +170,6 @@ Usando um editor de texto (como o bloco de notas), crie um novo arquivo que incl
     - Defina a porcentagem de comunicação a ser revisada.
     - Escolha os revisores da política. Os revisores podem ser usuários individuais ou [grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group).
     - Revise suas seleções de política e crie a política.
-
-<a name="TestPolicy"> </a>
 
 ## <a name="step-5---test-your-supervision-policy-optional"></a>Etapa 5: testar sua política de supervisão (opcional)
 
@@ -192,8 +182,6 @@ Depois de criar uma política de supervisão, é uma boa ideia testar para garan
     > Os emails sujeitos às políticas definidas são processados quase em tempo real e podem ser testados imediatamente após a configuração da política. Os chats no Microsoft Teams podem levar até 24 horas para processar totalmente em uma política. 
 
 3. Faça logon em seu locatário do Office 365 como um revisor designado na política de supervisão. Navegue até a **supervisão** > da*política* > personalizada**aberta** para exibir o relatório da política.
-
-<a name="UseOutlook"> </a>
 
 ## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Etapa 6: configurar o Outlook para revisores (opcional)
 
@@ -208,7 +196,7 @@ Para configurar a revisão do Outlook para a área de trabalho do Outlook para a
 
  **Para localizar o endereço da caixa de correio de supervisão**
   
-1. Entre no [centro de &amp; conformidade de segurança](https://protection.office.com) usando credenciais para uma conta de administrador na sua organização do Office 365.
+1. Entre no [centro de conformidade](https://compliance.microsoft.com) usando as credenciais de uma conta de administrador em sua organização.
 
 2. Vá até **supervisão**.
 

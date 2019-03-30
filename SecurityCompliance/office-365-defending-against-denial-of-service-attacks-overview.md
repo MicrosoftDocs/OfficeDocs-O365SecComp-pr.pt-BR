@@ -3,23 +3,22 @@ title: Como se proteger contra ataques de negação de serviço no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral dos ataques de negação de serviço (DoS).
-ms.openlocfilehash: 246704bff18c07d9b76281ae3c7071cd0d747630
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220501"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004068"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Como se proteger contra ataques de negação de serviço no Office 365
 
@@ -42,6 +41,6 @@ A [equipe de preparação para emergências dos Estados Unidos](https://www.us-c
 - Perda de longo prazo do acesso à Web ou a qualquer serviço de Internet
 
 ## <a name="related-topics"></a>Tópicos Relacionados
-- [Princípios básicos de defesa contra ataques de negação de serviço](office-365-core-principles-of-defense-against-dos-attacks.md)
+- [Principais princípios de defesa contra ataques de negação de serviço](office-365-core-principles-of-defense-against-dos-attacks.md)
 - [Estratégia de defesa de negação de serviço da Microsoft](office-365-microsoft-dos-defense-strategy.md)
 - [Defendendo os serviços de nuvem da Microsoft contra ataques de negação de serviço](office-365-defending-cloud-services-against-dos-attacks.md)

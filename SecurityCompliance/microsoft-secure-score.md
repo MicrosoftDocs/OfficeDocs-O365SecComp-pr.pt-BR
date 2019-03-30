@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 981cb2e6820cb349ff1e2d101bf21d592c2191c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789406"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001154"
 ---
 # <a name="microsoft-secure-score"></a>Pontuação segura da Microsoft
-
-[!include[Prerelease�information](prerelease.md)]
 
 Com a pontuação segura da Microsoft na central de segurança do Microsoft 365, você pode ter maior visibilidade e controle sobre a postura de segurança da sua organização. A partir de um painel centralizado, você pode monitorar e aprimorar a segurança de suas identidades, dados, aplicativos, dispositivos e infraestrutura do Microsoft 365.
 

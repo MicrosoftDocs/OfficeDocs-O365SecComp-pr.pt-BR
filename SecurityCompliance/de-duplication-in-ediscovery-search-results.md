@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Você tem a opção de cancelar a duplicação de resultados de pesquisa de descoberta eletrônica que são exportados para que apenas uma cópia de uma mensagem de email seja exportada, embora várias instâncias da mesma mensagem possam ter sido encontradas em caixas de correio diferentes.
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936721"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999294"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicação nos resultados da pesquisa de descoberta eletrônica
 
@@ -66,7 +66,7 @@ Observe que as mensagens exclusivas também podem ser marcadas como duplicatas q
 
 - As informações deste artigo se aplicam ao exportar os resultados da pesquisa usando uma das seguintes ferramentas de descoberta eletrônica:
     
-  - Pesquisa de conteúdo no centro de conformidade &amp; de segurança do Office 365
+  - Pesquisa de conteúdo no centro de conformidade no Office 365
     
   - Descoberta Eletrônica In-loco no Exchange Online
     
@@ -74,9 +74,9 @@ Observe que as mensagens exclusivas também podem ser marcadas como duplicatas q
     
 - Para obter mais informações sobre como exportar resultados de pesquisa, consulte:
     
-  - [Exportar resultados de pesquisa do centro de conformidade &amp; de segurança do Office 365](export-search-results.md)
+  - [Exportar pesquisa de conteúdo](export-search-results.md)
     
-  - [Exportar um relatório de pesquisa de conteúdo do centro de &amp; conformidade de segurança do Office 365](export-a-content-search-report.md)
+  - [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
     
   - [Exportar resultados de pesquisa de descoberta eletrônica in-loco para um arquivo PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

@@ -1,5 +1,5 @@
 ---
-title: Configurar usuários e casos na Descoberta Eletrônica Avançada do Office 365
+title: Configurar usuários e casos na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Saiba como configurar funções de usuário, criar ocorrências e atribuir usuários a casos na descoberta eletrônica avançada do Office 365.  '
-ms.openlocfilehash: f393c59a9726baa6d7423eacb33543ae7adf5065
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5a22e0683e49ebdaf8391e092aeb101386e0636b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212982"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999264"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuários e casos na Descoberta Eletrônica Avançada do Office 365
+# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuários e casos na descoberta eletrônica avançada do Office 365
 
 Este tópico descreve como configurar usuários e casos para a descoberta eletrônica avançada do Office 365.
   
@@ -35,27 +35,27 @@ Antes de configurar casos e usuários na descoberta eletrônica avançada, é ne
     
 - Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade de &amp; segurança do Office 365 para criar um caso de descoberta eletrônica e adicionar membros a ele. Para se adicionar ao grupo de funções Gerenciador de descoberta eletrônica &amp; no centro de conformidade de segurança, você precisa ser um administrador global em sua organização do Office 365. Se você não for um administrador global, será necessário pedir a um administrador global para adicioná-lo ao grupo de funções Gerenciador de descoberta eletrônica. Para obter mais informações, consulte:
     
-  - [Permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md)
+  - [Permissões no centro de conformidade de &amp; segurança do Microsoft 365](permissions-in-the-security-and-compliance-center.md)
     
-  - [Atribuir permissões de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365](assign-ediscovery-permissions.md)
+  - [Atribuir permissões de descoberta eletrônica no centro de &amp; conformidade de segurança do Microsoft 365](assign-ediscovery-permissions.md)
     
 ## <a name="step-1-assign-users-ediscovery-permissions"></a>Etapa 1: atribuir permissões de descoberta eletrônica de usuários
 
 A primeira etapa é atribuir aos usuários as permissões de requisito no centro &amp; de conformidade de segurança para que eles possam ser adicionados como um membro de uma ocorrência de descoberta eletrônica. Após um usuário ser adicionado como um membro de um caso no centro de &amp; conformidade de segurança, ele poderá acessar o caso na descoberta eletrônica avançada.
   
-Para atribuir a um usuário as permissões necessárias para que possam ser adicionadas como um membro de um caso de descoberta eletrônica, confira a etapa 1 em [casos &amp; de descoberta eletrônica no centro de conformidade de segurança do Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+Para atribuir a um usuário as permissões necessárias para que possam ser adicionadas como um membro de um caso de descoberta eletrônica, confira a etapa 1 em [casos &amp; de descoberta eletrônica no centro de conformidade de segurança do Microsoft 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
   
 ## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>Etapa 2: criar um caso de descoberta eletrônica e adicionar membros
 
 A próxima etapa é criar uma nova ocorrência de descoberta eletrônica no centro &amp; de conformidade de segurança e adicionar membros. Os membros do caso serão capazes de acessar o caso na descoberta eletrônica avançada.
   
-1. Para criar uma nova ocorrência de descoberta eletrônica, confira a etapa 2 em [casos de descoberta &amp; eletrônica no centro de conformidade de segurança do Office 365](ediscovery-cases.md#step-2-create-a-new-case).
+1. Para criar uma nova ocorrência de descoberta eletrônica, confira a etapa 2 em [casos de descoberta &amp; eletrônica no centro de conformidade de segurança do Microsoft 365](ediscovery-cases.md#step-2-create-a-new-case).
     
-2. Para adicionar membros a um caso de descoberta eletrônica, confira a etapa 3 em [casos de descoberta &amp; eletrônica no centro de conformidade de segurança do Office 365](ediscovery-cases.md#step-3-add-members-to-a-case)
+2. Para adicionar membros a um caso de descoberta eletrônica, confira a etapa 3 em [casos de descoberta &amp; eletrônica no centro de conformidade de segurança do Microsoft 365](ediscovery-cases.md#step-3-add-members-to-a-case)
     
 ## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>Etapa 3: usar uma descoberta eletrônica avançada
 
-Após criar um caso de descoberta eletrônica e adicionar membros, você (ou qualquer membro do caso) pode acessar o caso correspondente na descoberta eletrônica avançada. Para acessar um caso na descoberta eletrônica avançada, confira a etapa 8 em [casos de descoberta eletrônica &amp; no centro de conformidade de segurança do Office 365](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
+Após criar um caso de descoberta eletrônica e adicionar membros, você (ou qualquer membro do caso) pode acessar o caso correspondente na descoberta eletrônica avançada. Para acessar um caso na descoberta eletrônica avançada, confira a etapa 8 em [casos de descoberta eletrônica &amp; no centro de conformidade de segurança do Microsoft 365](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
   
 ## <a name="see-also"></a>Confira também
 

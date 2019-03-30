@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral das políticas da Microsoft para o Office 365 em relação à retenção, exclusão e destruição de dados.
-ms.openlocfilehash: 6aa272ece723aa83e15581062fd2348c508b04d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219951"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004118"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retenção, exclusão e destruição de dados no Office 365
 
@@ -31,7 +31,7 @@ A Microsoft tem uma política padrão de manipulação de dados para o Office 36
 
 Para cada um desses cenários de exclusão, a tabela a seguir mostra o período máximo de retenção de dados, por categoria e classificação de dados:
 
-| Categoria de dados | Classificação de dados | Descrição | Exemplos | Período de retenção |
+| Categoria de dados | Classificação de dados | Descrição | Exemplos | Período de retenção |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | Dados do cliente | Conteúdo do cliente| Conteúdo fornecido diretamente/criado por administradores e usuários <br><br> Isso inclui todos os textos, sons, vídeos, arquivos de imagem e software criados e armazenados nos data centers da Microsoft ao usar os serviços do Office 365 | Exemplos dos aplicativos do Office 365 usados com mais frequência que permitem aos usuários criar dados incluem Word, Excel, PowerPoint, Outlook e OneNote <br><br> O conteúdo do cliente também inclui segredos de Propriedade do cliente/fornecidos (senhas, certificados, chaves de criptografia, chaves de armazenamento) | **Cenário de exclusão ativa:** no máximo 30 dias <br><br> **Cenário de exclusão passiva:** no máximo 180 dias |
 | Dados do cliente | Informações de identificação do usuário final (EUII) | Dados que identificam ou podem ser usados para identificar o usuário de um serviço Microsoft. EUII não contém conteúdo do cliente | Nome de usuário ou nome de exibição (domínio \ nome_de_usuário) <br><br> Nome principal do usuário (nome @ domínio) <br><br>  Endereços IP específicos do usuário | **Cenário de exclusão ativa:** no máximo 180 dias (apenas uma ação de administrador de locatário) <br><br> **Cenário de exclusão passiva:** no máximo 180 dias |
@@ -48,8 +48,7 @@ Em todos os momentos durante o período de qualquer assinatura, um assinante pod
 
 ## <a name="related-links"></a>Links relacionados
 - [Destruição de dados](office-365-data-destruction.md)
-
 - [Imutabilidade no Office 365](office-365-data-immutability.md)
 - [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 - [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
-- [Exclusão de dados do Skype for Business ](office-365-skype-data-deletion.md)
+- [Exclusão de dados do Skype for Business](office-365-skype-data-deletion.md)

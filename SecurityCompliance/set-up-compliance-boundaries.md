@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862433"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001084"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de descoberta eletrônica no Office 365
 
@@ -34,7 +34,7 @@ Neste exemplo, a contoso LTD é uma organização do Office 365 que consiste em 
   
 - A funcionalidade de filtragem de permissões de pesquisa na pesquisa de conteúdo controla os locais de conteúdo que os gerentes de descoberta eletrônica e os investigadores podem pesquisar. Isso significa que os gerentes de descoberta eletrônica e os investigadores no quarto café podem pesquisar apenas os locais de conteúdo na quarta subsidiária. A mesma restrição se aplica à subsidiária Coho Winery.
     
-    Grupos de função controle quem pode ver os casos de descoberta eletrônica no centro &amp; de conformidade de segurança do Office 365. Isso significa que os gerentes e investigadores de descoberta eletrônica só podem ver os casos de descoberta eletrônica em suas agências.
+    Grupos de função controlam quem pode ver os casos de descoberta eletrônica no centro de conformidade do & de segurança. Isso significa que os gerentes e investigadores de descoberta eletrônica só podem ver os casos de descoberta eletrônica em suas agências.
     
 - Os grupos de função também controlam quem pode atribuir membros a uma ocorrência de descoberta eletrônica. Isso significa que os gerentes de descoberta eletrônica e os investigadores só podem atribuir membros a casos nos quais eles eles mesmos são membros.
     
@@ -84,9 +84,9 @@ Após a alteração da engenharia ser feita e o atributo ser sincronizado com o 
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Etapa 3: criar um grupo de função para cada agência
 
-A próxima etapa é criar os grupos de função no centro de conformidade de &amp; segurança do Office 365 que serão alinhados com suas agências. Recomendamos que você crie um novo grupo de função, copiando o grupo de gerenciadores de descoberta eletrônica interno, adicionando os membros apropriados e removendo funções que podem não se aplicar às suas necessidades. Para obter mais informações sobre funções relacionadas à descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no &amp; centro de conformidade de segurança do Office 365](assign-ediscovery-permissions.md).
+A próxima etapa é criar os grupos de função no centro de conformidade do & de segurança que serão alinhados com suas agências. Recomendamos que você crie um novo grupo de função, copiando o grupo de gerenciadores de descoberta eletrônica interno, adicionando os membros apropriados e removendo funções que podem não se aplicar às suas necessidades. Para obter mais informações sobre funções relacionadas à descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica no centro de conformidade do & de segurança do Office 365](assign-ediscovery-permissions.md).
   
-Para criar os grupos de função, acesse a página de **permissões** no &amp; centro de conformidade de segurança e crie um grupo de função para cada equipe em cada agência que usará limites de conformidade e ocorrências de descoberta eletrônica para gerenciar investigações. 
+Para criar os grupos de função, acesse a página de **permissões** no centro de conformidade do _AMP_ de segurança e crie um grupo de função para cada equipe em cada agência que usará limites de conformidade e casos de descoberta eletrônica para gerenciar investigações. 
   
 Usando o cenário de limites de conformidade da Contoso, quatro grupos de função precisam ser criados e os membros apropriados são adicionados a cada um.
   
@@ -144,16 +144,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Etapa 5: criar um caso de descoberta eletrônica para investigações dentro da Agência
 
-A etapa final é criar uma nova ocorrência de descoberta eletrônica no centro &amp; de conformidade de segurança e, em seguida, adicionar o grupo de função, que você criou na etapa 3, como membro do caso. Isso resulta em duas características importantes de usar limites de conformidade:
+A etapa final é criar uma nova ocorrência de descoberta eletrônica no centro de conformidade do & de segurança e, em seguida, adicionar o grupo de função, que você criou na etapa 3, como membro do caso. Isso resulta em duas características importantes de usar limites de conformidade:
   
-- Somente os membros do grupo de função adicionado ao caso poderão ver e acessar o caso no centro de conformidade de segurança &amp; . Por exemplo, se o grupo de funções da Fourth Coffee Investigations for o único membro de um caso, os membros do grupo de função gerentes de descoberta eletrônica da Fourth Coffee (ou membros de qualquer outro grupo de função) não poderão ver ou acessar o caso.
+- Somente os membros do grupo de função adicionado ao caso poderão ver e acessar o caso no centro de conformidade do & de segurança. Por exemplo, se o grupo de funções da Fourth Coffee Investigations for o único membro de um caso, os membros do grupo de função gerentes de descoberta eletrônica da Fourth Coffee (ou membros de qualquer outro grupo de função) não poderão ver ou acessar o caso.
     
 - Quando um membro do grupo de função atribuído a uma ocorrência executar uma pesquisa associada ao caso, eles só poderão pesquisar os locais de conteúdo dentro da agência (que é definido pelo filtro de permissões de pesquisa que você criou na etapa 4.)
 
 
 Para criar um novo caso e atribuir Membros:
     
-1. Vá para a página de **descoberta eletrônica** no &amp; centro de conformidade de segurança e crie um novo caso. 
+1. Vá para a página de **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança e crie um novo caso. 
     
 2. Na lista de ocorrências de descoberta eletrônica, clique no nome do caso que você acabou de criar.
     
@@ -189,7 +189,7 @@ Os filtros de permissões de pesquisa também permitem que você controle onde o
     |:-----|:-----|
     |NAM  <br/> |América do Norte (os data centers atuais estão nos EUA)  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Ásia (Pacífico)  <br/> |
+    |APC  <br/> |Pacífico Asiático  <br/> |
     |CAN <br/> |Canadá
     
 - **Pesquisas de conteúdo de roteiro** -você pode rotear as pesquisas de conteúdo de sites do SharePoint e contas do onedrive para um data center de satélite. Isso significa que você pode especificar o local do datacenter onde as pesquisas serão executadas.
@@ -200,13 +200,13 @@ Os filtros de permissões de pesquisa também permitem que você controle onde o
     |:-----|:-----|
     |NAM  <br/> |Unidos  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Ásia (Pacífico)  <br/> |
+    |APC  <br/> |Pacífico Asiático  <br/> |
     |CAN  <br/> |Unidos  <br/> |
-    |AUS  <br/> |Ásia (Pacífico)  <br/> |
+    |AUS  <br/> |Pacífico Asiático  <br/> |
     |KOR  <br/> |O Data Center padrão da organização  <br/> |
     |GBR  <br/> |Europa  <br/> |
-    |JPN  <br/> |Ásia (Pacífico)  <br/> |
-    |IND  <br/> |Ásia (Pacífico)  <br/> |
+    |JPN  <br/> |Pacífico Asiático  <br/> |
+    |IND  <br/> |Pacífico Asiático  <br/> |
     |LAM  <br/> |Unidos  <br/> |
    
 > [!NOTE]
@@ -242,7 +242,7 @@ Tenha em mente as seguintes coisas ao pesquisar e exportar conteúdo em ambiente
 
  **Quem pode criar e gerenciar filtros de permissões de pesquisa (usando os cmdlets New-ComplianceSecurityFilter e Set-ComplianceSecurityFilter)?**
   
-Para criar, exibir e modificar filtros de permissões de pesquisa, você precisa ser membro do grupo de função gerenciamento da organização no centro &amp; de conformidade de segurança.
+Para criar, exibir e modificar filtros de permissões de pesquisa, você precisa ser membro do grupo de função gerenciamento da organização no centro de conformidade do & de segurança.
   
  **Se um gerente de descoberta eletrônica for atribuído a mais de um grupo de função que abrange várias agências, como pesquisará conteúdo em uma agência ou outra?**
   

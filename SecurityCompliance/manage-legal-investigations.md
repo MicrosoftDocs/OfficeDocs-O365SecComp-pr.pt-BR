@@ -1,5 +1,5 @@
 ---
-title: Gerencie as investigações legais no Office 365
+title: Gerenciar investigações legais no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Use casos de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365 para gerenciar a investigação legal da sua organização. Se você tiver uma assinatura e5, poderá analisar mais dados de caso usando a análise de texto, aprendizado de máquinas e recursos de codificação de descoberta eletrônica avançada.
-ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Use casos de descoberta eletrônica no centro de conformidade do & de segurança no Office 365 para gerenciar a investigação legal da sua organização. Se você tiver uma assinatura e5, poderá analisar mais dados de caso usando a análise de texto, aprendizado de máquinas e recursos de codificação de descoberta eletrônica avançada.
+ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296894"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999914"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Gerencie as investigações legais no Office 365
+# <a name="manage-legal-investigations-in-office-365"></a>Gerenciar investigações legais no Office 365
 
-As organizações têm vários motivos para responder a um caso jurídico que envolve determinados executivos ou outros funcionários em sua organização. Isso pode envolver rapidamente a localização e a retenção de informações específicas de investigação em email, documentos, conversas de mensagens instantâneas e outros locais de conteúdo usados por pessoas em suas tarefas diárias de trabalho. Você pode executar essas e muitas outras atividades semelhantes usando as ferramentas de casos de descoberta eletrônica no centro de &amp; conformidade de segurança do Office 365.
+As organizações têm vários motivos para responder a um caso jurídico que envolve determinados executivos ou outros funcionários em sua organização. Isso pode envolver rapidamente a localização e a retenção de informações específicas de investigação em email, documentos, conversas de mensagens instantâneas e outros locais de conteúdo usados por pessoas em suas tarefas diárias de trabalho. Você pode executar essas e muitas outras atividades semelhantes usando as ferramentas de casos de descoberta eletrônica no centro de conformidade do & de segurança.
   
 [Gerenciar investigações legais com ocorrências de descoberta eletrônica](#manage-legal-investigations-with-ediscovery-cases)
   
@@ -46,7 +46,7 @@ as ocorrências de descoberta eletrônica permitem que você controle quem pode 
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para cenários avançados
 
-Como a seção anterior que listava scripts para cenários de pesquisa de conteúdo, também criamos &amp; alguns scripts do PowerShell do centro de conformidade de segurança para ajudá-lo a gerenciar ocorrências de descoberta eletrônica.
+Assim como a seção anterior que listava scripts para cenários de pesquisa de conteúdo, também criamos alguns scripts do PowerShell de segurança do centro de conformidade do & para ajudá-lo a gerenciar ocorrências de descoberta eletrônica.
   
 - [Criar um relatório de retenção de descoberta eletrônica](create-a-report-on-holds-in-ediscovery-cases.md) que contenha informações sobre todas as isenções associadas a ocorrências de descoberta eletrônica em sua organização 
     
@@ -54,18 +54,18 @@ Como a seção anterior que listava scripts para cenários de pesquisa de conte�
   
 ## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analisar dados de caso usando a descoberta eletrônica avançada do Office 365
 
-A descoberta eletrônica avançada do Office 365 cria a pesquisa de conteúdo e os recursos de descoberta eletrônica descritos nas seções anteriores. Depois de criar um caso de descoberta eletrônica, coloque os locais em espera e colete dados que possam ser responsivos para o caso, você pode analisar mais os dados usando a análise de texto, o Machine Learning e os recursos de codificação de previsão do Advanced descobertas. Isso pode ajudar sua organização a processar rapidamente milhares de mensagens de email, documentos e outros tipos de dados para localizar os itens que mais provavelmente são relevantes para um caso específico. E temos o gerenciamento unificado de casos e a descoberta eletrônica avançada para que você possa gerenciar o mesmo caso no &amp; centro de conformidade de segurança.
+A descoberta eletrônica avançada do Office 365 cria a pesquisa de conteúdo e os recursos de descoberta eletrônica descritos nas seções anteriores. Depois de criar um caso de descoberta eletrônica, coloque os locais em espera e colete dados que possam ser responsivos para o caso, você pode analisar mais os dados usando a análise de texto, o Machine Learning e os recursos de codificação de previsão do Advanced descobertas. Isso pode ajudar sua organização a processar rapidamente milhares de mensagens de email, documentos e outros tipos de dados para localizar os itens que mais provavelmente são relevantes para um caso específico. E temos o gerenciamento de casos unificado e a descoberta eletrônica avançada para que você possa gerenciar o mesmo caso no centro de conformidade do & de segurança.
   
 > [!NOTE]
 > Para analisar os dados de um usuário usando a descoberta eletrônica avançada, o usuário (o responsáveis dos dados) deve receber uma licença do Office 365 e5. Como alternativa, os usuários com uma licença do Office 365 E1 ou E3 podem receber uma licença autônoma de descoberta eletrônica avançada. Administradores e gerentes de conformidade atribuídos aos casos e usar a descoberta eletrônica avançada para analisar os dados não precisam de uma licença e5. 
   
 ### <a name="get-started"></a>Introdução
 
-A maneira mais rápida de começar a usar a descoberta eletrônica avançada é criar um caso e preparar os resultados da &amp; pesquisa no centro de conformidade de segurança, carregar os resultados na descoberta eletrônica avançada e, em seguida, executar a análise expressa para analisar os dados de caso e exportar o resultados para revisão externa.
+A maneira mais rápida de começar a usar a descoberta eletrônica avançada é criar um caso e preparar os resultados da pesquisa no centro de conformidade do & de segurança, carregar os resultados na descoberta eletrônica avançada e, em seguida, executar a análise expressa para analisar esses dados de caso e exportar os resultados para revisão externa.
   
 - [Obter uma visão geral rápida](quick-setup-for-advanced-ediscovery.md) do fluxo de trabalho de descoberta eletrônica avançada 
     
-- [Configurar usuários e casos](set-up-users-and-cases-in-advanced-ediscovery.md) para descoberta eletrônica avançada criando um caso, atribuindo permissões de descoberta eletrônica e adicionando membros de caso, tudo usando o centro de &amp; conformidade de segurança 
+- [Configurar usuários e casos](set-up-users-and-cases-in-advanced-ediscovery.md) para descoberta eletrônica avançada criando um caso, atribuindo permissões de descoberta eletrônica e adicionando membros de caso, tudo usando o centro de conformidade do _AMP_ de segurança 
     
 - [Preparar e carregar dados de pesquisa](prepare-data-for-advanced-ediscovery.md) no caso da descoberta eletrônica avançada 
     

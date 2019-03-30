@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Aqui está um guia de início rápido que você pode usar para garantir que o Office 365 Advanced Threat Protection (ATP) esteja configurado e configurado para sua organização.
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693290"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999394"
 ---
 # <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guia de início rápido: configurar a proteção avançada contra ameaças do Office 365
 
@@ -44,7 +44,7 @@ Aqui está um guia de início rápido que você pode usar como uma lista de veri
 
 ## <a name="part-1---anti-malware"></a>Parte 1-anti-malware
 
-1. no [centro de conformidade do & de segurança do Office 365](https://protection.office.com), escolha**Anti-malware**de**política** > de **gerenciamento** > de ameaças.
+1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-malware**de**política** > de **Gerenciamento** > de ameaças.
 2. Clique duas vezes na política **padrão** e, em seguida, escolha **configurações**.
 3. Especifique as seguintes configurações:
     - Na seção **resposta de detecção de malware** , mantenha a configuração padrão **no**.
@@ -59,7 +59,7 @@ A proteção de dia zero é configurada por meio de políticas, como links segur
 
 ### <a name="atp-safe-attachments-policies"></a>Políticas de anexos seguros de ATP
 
-1. no [centro de conformidade do Office 365 Security &](https://protection.office.com), escolha**política** > de **gerenciamento** > de ameaças de**anexos seguros de ATP**.
+1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha a**política** > de **Gerenciamento** > de ameaça**anexos seguros de ATP**.
 2. Selecione a opção **ativar a ATP para SharePoint, onedrive e Microsoft Teams**.
 3. Na seção **proteger anexos de email** , clique no sinal de mais**+**().
 4. Especifique as seguintes configurações:
@@ -76,7 +76,7 @@ Para saber mais, confira [configurar as políticas de anexos seguros do Microsof
 
 Para configurar links de ATP seguros, revise a política padrão e adicione uma política.
 
-1. no [centro de conformidade do Office 365 Security &](https://protection.office.com), escolha**política** > de **gerenciamento** > de ameaça**Links seguros de ATP**.
+1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha links de segurança**ATP**da**política** > de **Gerenciamento** > de ameaças.
 2. Clique duas vezes na política **padrão** .
 3. Na seção **usar links seguros em** , selecione a opção **Office 365 ProPlus, Office para IOS e Android**e clique em **salvar**.
 4. Na seção **políticas que se aplicam a destinatários específicos** , clique no sinal de**+** mais ().
@@ -94,7 +94,7 @@ Para saber mais, confira [configurar as políticas de links seguros de ATP do Of
 
 ## <a name="part-3---anti-phishing"></a>Parte 3-anti-phishing 
 
-1. no [centro de conformidade do Office 365 Security &](https://protection.office.com), escolha**política** > de **gerenciamento** > de ameaças**ATP anti-phishing**.
+1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-phishing**da**política** > de **Gerenciamento** > de ameaças.
 2. Clique em **política padrão**.
 3. Na seção **representação** , clique em **Editar**e especifique as seguintes configurações:
     -  Na guia **Adicionar usuários para proteger** , ative a proteção. Em seguida, adicione usuários, como os membros da diretoria da sua organização, seu CEO, CFO e outros líderes seniores. (Você pode digitar um endereço de email individual ou clicar para exibir uma lista.)
@@ -112,7 +112,7 @@ Para saber mais sobre suas opções de política anti-phishing, confira [Configu
 
 ## <a name="part-4---anti-spam"></a>Parte 4-antispam
 
-1. no [centro de conformidade do & de segurança do Office 365](https://protection.office.com), escolha**Anti-spam**de**política** > de **gerenciamento** > de ameaças.
+1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-spam**de**política** > de **Gerenciamento** > de ameaças.
 2. Na guia **Personalizar** , ative **as configurações personalizadas** .
 3. Expanda **política de filtro de spam padrão**, clique em **Editar política**e especifique as seguintes configurações:
     - Na seção **ações de spam e em massa** , defina o limite para um valor de 5 ou 6.
