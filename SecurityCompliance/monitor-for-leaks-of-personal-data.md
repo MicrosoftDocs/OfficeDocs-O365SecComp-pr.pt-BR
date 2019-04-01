@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Conheça três ferramentas disponíveis para monitorar o vazamento de dados pessoais.
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373882"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955204"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorar o vazamento de dados pessoais
 
@@ -57,7 +57,7 @@ Você pode usar os relatórios DLP para:
 
 Além disso, você pode usar os relatórios de DLP para ajustar suas políticas DLP conforme as executa no modo de teste.
 
-Os relatórios DLP ficam disponíveis no Centro de Conformidade e Segurança. Navegue até Relatórios \> Exibir relatórios. Em DLP (prevenção contra perda de dados), vá para as correspondências de regra e política DLP ou para as Substituições e falsos positivos DLP.
+Os relatórios DLP estão no centro de segurança e o no centro de conformidade. Navegue até Relatórios \> Exibir relatórios. Em prevenção de perda de dados (DLP), vá para correspondências de políticas e regras DLP ou substituições e falsos positivos DLP.
 
 Para saber mais, confira o artigo [Exibir o relatório de prevenção contra perda de dados](https://support.office.com/pt-BR/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
@@ -67,9 +67,9 @@ Para saber mais, confira o artigo [Exibir o relatório de prevenção contra per
 
 O log de auditoria inclui eventos das plataformas Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway e de outros serviços do Office 365.
 
-O Centro de Conformidade e Segurança oferece duas maneiras de monitorar e gerar relatórios no log de auditoria do Office 365:
+O centro de conformidade e o centro de segurança oferecem duas maneiras de monitorar e gerar relatórios no log de auditoria do Office 365:
 
--   Configurar políticas de alerta, exibir alertas e monitorar tendências – use as ferramentas Painel de Alerta e a nova política de alerta no Centro de Conformidade e Segurança do Office 365.
+-   Configurar políticas de alerta, exibir alertas e monitorar tendências – Use as ferramentas painel de alerta e política de alerta no centro de conformidade ou no centro segurança.
 
 -   Pesquisar diretamente no log de auditoria – você pode pesquisar todos os eventos em um intervalo de datas especificado ou filtrar os resultados com base em determinados critérios; por exemplo, o usuário que executou a ação, a ação ou o objeto de destino.
 
@@ -81,14 +81,14 @@ Existem soluções disponíveis, com quais é possível inscrever-se nos logs de
 
 Clique nos links abaixo para saber mais sobre as políticas de alerta e como pesquisar no log de auditoria.
 
--   [Políticas de alerta no Centro de Conformidade e Segurança do Office 365](https://support.office.com/pt-BR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Políticas de alerta nos centros de conformidade e segurança do Microsoft Office 365](https://support.office.com/pt-BR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365](https://support.office.com/pt-BR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introdução)
 
 -   [Ativar e desativar a Pesquisa de log de auditoria do Office 365](https://support.office.com/pt-BR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Pesquisar o log de auditoria no Centro de Conformidade e Segurança do Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Pesquisas o log de auditoria](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 

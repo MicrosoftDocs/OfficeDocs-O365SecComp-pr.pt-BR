@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como usar os rótulos do Office como parte do seu plano de proteção do GDPR.
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800283"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955194"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar rótulos a dados pessoais no Office 365
 
@@ -167,7 +167,7 @@ Seu plano para a implementação de rótulos deve:
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Criar rótulos e políticas de aplicação automática de rótulos
 
-Crie rótulos e políticas no Centro de Conformidade e Segurança.
+Crie rótulos e políticas no centro de segurança e no centro de conformidade.
 
 <table>
 <thead>
@@ -179,16 +179,16 @@ Crie rótulos e políticas no Centro de Conformidade e Segurança.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Conceder permissões aos membros da sua equipe de conformidade.</p></td>
-<td align="left"><p>Os membros da sua equipe de conformidade que criarão os rótulos precisam de permissões para usar o Centro de Conformidade e Segurança. Acesse as Permissões, no Centro de Conformidade e Segurança, e modifique os membros do grupo Administrador de Conformidade.</p>
-<p>Confira <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Conceder aos usuários acesso ao Centro de Conformidade e Segurança do Office 365</a>.</p></td>
+<td align="left"><p>Os membros da equipe de conformidade que criarão os rótulos precisam de permissões para usar o centro de segurança e/ou o centro de conformidade. Acesse as Permissões, no centro de segurança ou no centros de conformidade e modifique os membros do grupo Administrador de Conformidade.</p>
+<p>Confira <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Conceder aos usuários acesso ao centro de segurança e/ou o centro de conformidade</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Crie rótulos de retenção.</p></td>
-<td align="left">Acesse Classificações, no Centro de Conformidade e Segurança, escolha Rótulos de retenção e crie os rótulos para o seu ambiente.</td>
+<td align="left">Acesse Classificações, no centro de Segurança ou centro de Conformidade, escolha Rótulos de retenção e crie os rótulos para o seu ambiente.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Criar políticas de aplicação automática para rótulos.</p></td>
-<td align="left">Acesse Classificações, no Centro de Conformidade e Segurança, escolha Políticas de rotulação e crie as políticas para a aplicação automática de rótulos. Crie as políticas por ordem de prioridade.</td>
+<td align="left">Acesse Classificações, no centro de segurança ou centro de conformidade, escolha políticas de Rotulação e crie as políticas para a aplicação automática de rótulos. Certifique-se de criar as políticas por ordem de prioridade.</td>
 </tr>
 </tbody>
 </table>

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como pesquisar e localizar dados pessoais no Office 365.
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373872"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955174"
 ---
 # <a name="search-for-and-find-personal-data"></a>Pesquisar e localizar dados pessoais
 
@@ -72,13 +72,12 @@ Se necessário, adicione parâmetros às consultas para reduzir os falsos positi
 </tbody>
 </table>
 
-Em breve será possível criar e modificar os tipos de informações confidenciais em uma nova interface do usuário no Centro de Conformidade e Segurança. Veja resultados correspondentes dinamicamente e ajuste os tipos de informações confidenciais para atender às suas necessidades.
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>Buscar tipos de informações confidenciais usando a Pesquisa de Conteúdo
 
-Comece a pesquisa de dados pessoais usando os tipos de informações confidenciais incluídos no Office 365. Eles estão relacionados no Centro de Conformidade e Segurança, em Classificação.
+Começar a pesquisar dados pessoais usando os tipos de informações confidenciais incluídas no Office 365. Eles estão listados em Classificação no centro de segurança e no centro de conformidade.
 
-Este tópico inclui uma lista atual dos tipos de informações confidenciais que se aplicam a cidadãos da União Europeia. Use-os como ponto de partida. Consulte regularmente o Centro de Conformidade e Segurança para ver as novas inclusões que podem ajudar a ficar em conformidade com o RGPD.
+Este tópico inclui uma lista de alguns tipos de informações confidenciais que se aplicam a cidadãos na União Europeia. Verifique o centro de segurança ou centro de conformidade para novas adições que podem ajudar com a conformidade GDPR.
 
 Confira também este artigo: [Lista de tipos de informações confidenciais e para que serve cada um](https://support.office.com/pt-BR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 

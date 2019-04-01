@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900130"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955234"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -384,11 +384,13 @@ Um rótulo de retenção pode impor ações de retenção ao conteúdo. Além di
   
 Para saber mais, confira [Usar um rótulo como condição em uma política DLP](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>Usar o Explorador de Atividade de Rótulo e os relatórios de governança de dados
+## <a name="monitor-retention-labels"></a>Monitorar rótulos de retenção.
 
 Após a publicação ou aplicação automática dos rótulos de retenção, convém verificar se eles estão sendo aplicados ao conteúdo da forma pretendida. Para monitorar seus rótulos de retenção, use o:
   
 - **Explorador de Atividade de Rótulo**. Com o explorador (exibido abaixo), você pode pesquisar e exibir rapidamente a atividade do rótulo para todo o conteúdo no SharePoint e OneDrive for Business nos últimos 30 dias. Para saber mais, confira [Exibir a atividade do rótulo para documentos](view-label-activity-for-documents.md).
+
+- Página.**Análise de rótulo**. No centro de conformidade do Microsoft 365 e no centro de segurança do Microsoft 365, você pode exibir rapidamente os rótulos superiores e onde foram aplicados. Você também pode exibir todo o conteúdo com um rótulo específico. Para saber mais, confira [Exibir uso do rótulo uso com análises do rótulo](label-analytics.md).
     
 - **Relatórios de governança de dados**. Com esses relatórios, você pode exibir rapidamente as tendências e atividades do rótulo de retenção para todo o conteúdo no Exchange, SharePoint e OneDrive for Business nos últimos 90 dias. Para saber mais, confira [Exibir relatórios de governança de dados](view-the-data-governance-reports.md).
     
