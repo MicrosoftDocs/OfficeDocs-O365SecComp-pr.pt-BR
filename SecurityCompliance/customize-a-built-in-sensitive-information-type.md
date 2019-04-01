@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ao procurar informações confidenciais no conteúdo, você precisa descrevê-las no que é chamado de regra. A Prevenção contra perda de dados (DLP) inclui regras para os tipos de informação confidencial mais comuns que você pode usar imediatamente. Para usar essas regras, você precisa incluí-las em uma política. Se quiser ajustar essas regras internas para atender às necessidades específicas da sua organização, basta criar um tipo de informação confidencial personalizado. Este tópico mostra como personalizar o arquivo XML que contém a coleção de regras existente para detectar um intervalo maior de possíveis informações de cartão de crédito.
-ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639068"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999604"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar um tipo de informação confidencial interno
 
@@ -74,7 +74,7 @@ Agora que você localizou a definição de regra de Número do cartão de crédi
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modificar o XML e criar um novo tipo de informação confidencial
 
-Primeiro, você precisa criar um novo tipo de informação confidencial porque não é possível modificar diretamente as regras padrão. Você pode fazer uma grande variedade de coisas com tipos de informação confidencial personalizados, descritas em [Criar um tipo de informação confidencial personalizado no PowerShell do Centro de Conformidade e Segurança do Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md). Para este exemplo, vamos mantê-lo simples e apenas remover provas corroborativas e adicionar palavras-chave à regra do número do cartão de crédito.
+Primeiro, você precisa criar um novo tipo de informações confidenciais, porque você não pode modificar as regras padrão diretamente. Você pode fazer uma grande variedade de coisas com os tipos de informações confidenciais personalizadas que são descritas em [Criar um tipo personalizado de informações confidenciais no Centro de Conformidade e Segurança do PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). Para esse exemplo, manteremos a simplicidade e apenas removeremos evidências comprobatórias e adicionaremos palavras-chave para a regra de número do cartão de crédito.
   
 Todas as definições de regra XML são criadas no modelo geral a seguir. É necessário copiar e colar o XML da definição de Número do cartão de crédito no modelo, modificar alguns valores (observe os espaços reservados ". . ." no exemplo a seguir) e carregar o XML modificado como uma nova regra que pode ser usada nas políticas.
   

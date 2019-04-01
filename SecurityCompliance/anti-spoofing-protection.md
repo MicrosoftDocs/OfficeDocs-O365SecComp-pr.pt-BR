@@ -3,7 +3,7 @@ title: Proteção antifalsificação no Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artigo descreve como o Office 365 mitiga ataques de phishing que usam domínios de remetentes forjados, ou seja, domínios falsificados. Isso é feito analisando as mensagens e bloqueando as que não podem ser autenticadas com métodos de autenticação de email padrão nem outras técnicas de reputação de remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 estão expostas.
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936791"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004258"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -410,34 +410,6 @@ No momento esse recurso está em desenvolvimento. À medida que mais detalhes fo
   
 ![Possível experiência do usuário para permitir um remetente falsificado](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Entender como as detecções de spam, phishing e phishing avançado são combinadas
-
-As organizações que usam o Exchange Online, com ou sem ATP, podem especificar quais ações devem ser executadas quando o serviço identifica mensagens como malware, spam, spam de alta confiança, phishing e em massa. Com as políticas antiphishing da ATP para clientes da ATP e as políticas antiphishing para clientes da EOP, além do fato de que uma mensagem pode passar por vários tipos de detecção (por exemplo, malware, phishing e representação de usuário), pode haver confusão sobre qual política é aplicável.
-  
-Em geral, a política aplicada a uma mensagem é identificada no cabeçalho X-Forefront-Antispam-Report na propriedade CAT (Categoria).
-  
-|**Prioridade**|**Política**|**Categoria**|**Gerenciada onde?**|**Aplica-se a**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Política de malware](configure-anti-malware-policies.md) <br/> |Todas as organizações  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|3  <br/> |Spam de alta confiança  <br/> |HSPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|4  <br/> |Spoofing  <br/> |SPOOF  <br/> |[Política antiphishing](https://go.microsoft.com/fwlink/?linkid=864553), [Inteligência contra Falsificação](learn-about-spoof-intelligence.md) <br/> |Todas as organizações  <br/> |
-|5  <br/> |Spam  <br/> |SPM  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|6  <br/> |Em massa  <br/> |BULK  <br/> |[Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) <br/> |Todas as organizações  <br/> |
-|7  <br/> |Representação de domínio  <br/> |DIMP  <br/> |[ Configurar políticas antiphishing e antiphishing da ATP do Office 365](set-up-anti-phishing-policies.md) <br/> |Apenas organizações com ATP  <br/> |
-|8  <br/> |Representação de usuário  <br/> |UIMP  <br/> |[ Configurar políticas antiphishing e antiphishing da ATP do Office 365](set-up-anti-phishing-policies.md) <br/> |Apenas organizações com ATP <br/> |
-
-Se você tiver várias políticas antiphishing diferentes, a que tiver prioridade máxima será aplicada. Por exemplo, suponha que você tenha duas políticas:
-
-|**Política**|**Prioridade**|**Representação de Usuário/Domínio**|**Antifalsificação**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Ativada  <br/> |Desativada  <br/> |
-|B  <br/> |2  <br/> |Desativada  <br/> |Ativada  <br/> |
-
-Se uma mensagem chegar e for identificada como falsificação e representação de usuário e o mesmo conjunto de usuários tiver como escopo a Política A e a Política B, a mensagem será tratada como uma falsificação, mas nenhuma ação será aplicada porque a Antifalsificação está desativada e SPOOF é executado com prioridade mais alta (4) do que a Representação do Usuário (8).
-  
-Para aplicar outros tipos de política de phishing, você precisará ajustar as configurações que indicam para quem as várias políticas são aplicadas.
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Cenários legítimos para desabilitar a antifalsificação
 
 A antifalsificação protege melhor os clientes contra ataques de phishing. Portanto, a desabilitação da proteção antifalsificação é altamente desencorajada. Se a desabilitar, você poderá resolver alguns falsos positivos de curto prazo, mas estará exposto a mais riscos em longo prazo. O custo da configuração da autenticação no lado do remetente ou dos ajustes nas políticas de phishing geralmente envolve eventos únicos ou apenas manutenção mínima e periódica. No entanto, o custo para se recuperar de um ataque de phishing em que os dados foram expostos ou os ativos foram comprometidos é muito maior.
@@ -546,18 +518,8 @@ Lembre-se: isso só deve ser aplicado a domínios que passam por roteamento indi
 ### <a name="information-for-individual-users"></a>Informações para usuários individuais
 
 Há limitações na maneira como usuários individuais podem interagir com a dica de segurança antifalsificação. No entanto, há várias coisas que você pode fazer para resolver cenários comuns.
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>Cenário comum nº 1 ‒ encaminhamento de caixa de correio
-
-Se você usar outro serviço de email e encaminhar seus emails para o Office 365 ou o Outlook.com, eles poderão ser marcado como falsificação e receber uma dica de segurança vermelha. O Office 365 e o Outlook.com planejam tratar disso automaticamente quando o encaminhador for um dos serviços Outlook.com, Office 365, Gmail ou qualquer outro serviço que use o [protocolo ARC](https://arc-spec.org). No entanto, até que essa correção seja implantada, os usuários devem usar o recurso Contas Conectadas para importar suas mensagens diretamente, em vez de usar a opção de encaminhamento.
-  
-Para configurar contas conectadas no Office 365, selecione o ícone de engrenagem no canto superior direito da interface da Web do Office 365 em \> Email \> Email \> Contas \> Contas conectadas.
-  
-![Office 365 ‒ Opção de contas conectadas](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-No Outlook.com, o processo é o ícone de engrenagem \> Opções \> Email \> Contas \> Contas conectadas.
-  
-### <a name="common-scenario-2---discussion-lists"></a>Cenário comum nº 2 ‒ listas de discussão
+ 
+### <a name="common-scenario-1---discussion-lists"></a>Cenário comum nº 1 ‒ Listas de discussão
 
 Sabe-se que as listas de discussão têm problemas com a antifalsificação, devido à maneira como encaminham mensagens e modificam o conteúdo, mas mantêm o endereço De: original.
   
@@ -659,7 +621,7 @@ Após começar a usar um registro SPF com a política de fallback ?all, você po
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>E se você for o proprietário de uma lista de discussão?
 
-Confira a seção [Cenário comum nº 2 ‒ listas de discussão](#common-scenario-2---discussion-lists).
+Confira a seção [Cenário comum nº 1 ‒ Listas de discussão](#common-scenario-1---discussion-lists).
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>E se você for um provedor de infraestrutura, como um ISP (Provedor de Serviços de Internet), um ESP (Provedor de Serviços de Email) ou um serviço de hospedagem na nuvem?
 

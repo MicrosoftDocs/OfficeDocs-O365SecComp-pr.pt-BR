@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumo: Crie assinaturas de teste do Office 365 e Enterprise Mobility + Security (EMS) com usuários e grupos para um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: 098ae2c3005e0c6ba7939c52260b1a2c49dc557e
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0b2bf64a408eeee457dfc6c2ac8565e91c927f72
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223700"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000134"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Defina grupos e usuários para um ambiente de desenvolvimento/teste de uma campanha política
 
@@ -36,7 +36,7 @@ Primeiro, siga as instruções na **Fase 2** do [ambiente de desenvolvimento/de 
   
 Em seguida, inscreva-se para a assinatura de avaliação do EMS E5 e adicione-a à mesma organização de sua assinatura de avaliação do Office 365.
   
-1. Se necessário, entre no Portal do Office 365 com as credenciais da conta de administrador global da sua assinatura de avaliação. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no centro de administração com as credenciais da conta do administrador global da sua assinatura de avaliação. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Clique no bloco de **Administração**.
     
@@ -50,7 +50,7 @@ Em seguida, inscreva-se para a assinatura de avaliação do EMS E5 e adicione-a 
     
 Em seguida, habilite a licença do EMS E5 para a sua conta de administrador global.
   
-1. Na guia **Centro de administração do Office 365** do navegador, no painel de navegação esquerdo, clique em **Usuários > Usuários ativos**.
+1. Na guia **centro de administração do Microsoft 365** no navegador, na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
 2. Clique em sua conta de administrador global e, em seguida, clique em **Editar** para **Licenças de produto**.
     
