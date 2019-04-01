@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Demonstre recursos de RGPD no Office 365.
-ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373902"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955274"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Descoberta de RGPD, proteção e relatórios no ambiente de desenvolvimento/teste do Office 365
 
@@ -175,7 +175,7 @@ A Contoso sempre faz referência aos clientes usando um CCN nas correspondência
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Fase 5: Demonstrar a proteção de dados
 
-A proteção de informações pessoais no Office 365 inclui o uso de recursos de prevenção contra perda de dados (DLP). Com as políticas DLP no Centro de Conformidade e Segurança do Office 365, você pode proteger automaticamente informações confidenciais no Office 365.
+A proteção de informações pessoais no Office 365 inclui o uso de recursos de prevenção contra perda de dados (DLP).  Com as políticas de DLP, é possível proteger automaticamente informações confidenciais no Office 365.
 
 Há várias maneiras de aplicar a proteção. Instruindo e aumentar a conscientização sobre onde os dados de residentes da UE estão armazenados em seu ambiente e como os seus funcionários têm permissão para gerenciá-los representa um nível de proteção de informações usando a DLP do Office 365.
 
