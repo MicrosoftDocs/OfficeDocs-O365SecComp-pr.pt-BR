@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001084"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014020"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de descoberta eletrônica no Office 365
 
@@ -63,6 +63,8 @@ Veja a seguir uma lista de atributos de usuário do Azure Active Directory que v
 - Departamento
     
 - Escritório
+
+- C (código do país de duas letras)
     
 Embora mais atributos de usuário estejam disponíveis, particularmente para caixas de correio do Exchange, os atributos listados acima são os únicos com suporte no OneDrive.
   
