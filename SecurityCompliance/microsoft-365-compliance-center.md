@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Saiba mais sobre o novo centro de conformidade da Microsoft 365, incluindo o que ele contém, como obtê-lo e suas próximas etapas.
-ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001034"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026312"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bem-vindo ao novo centro de conformidade da Microsoft 365
 
@@ -68,7 +68,7 @@ Além de links em cartões na Home Page, você encontrará um painel de navegaç
 
 |  |  |
 |---------|---------|
-|![Navegação no centro de conformidade da Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir para **alertas** para exibir e resolver [alertas](alerts.md)<br/><br/>Visite **monitorIng &** Reports para exibir dados sobre o [uso e a retenção de etiquetas](sensitivity-labels.md), correspondências de [política de DLP e substituições](view-the-dlp-reports.md), [arquivos compartilhados](https://docs.microsoft.com/cloud-app-security/file-filters), [aplicativos de terceiros em uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)e muito mais.<br/><br/>Expanda a seção **classificação** para acessar seus [Rótulos](labels.md), [políticas de rótulo](sensitivity-labels.md#what-label-policies-can-do), tipos de [informações confidenciais](what-the-sensitive-information-types-look-for.md)e [análises de etiquetas](view-label-activity-for-documents.md).<br/><br/>Vá até **políticas** para exibir [alertas](alerts.md) e acessar suas políticas de [DLP](data-loss-prevention-policies.md) e [retenção](retention-policies.md) .<br/><br/> Use os links na seção **soluções** para acessar as soluções de conformidade da sua organização. Eles incluem: <br/>[Desposições de > de governança de dados](disposition-reviews.md)<br/>[Descoberta eletrônica (prévia)](compliance20/overview-ediscovery-20.md)<br/>[Supervisão](supervision-policies.md)<br/>[Investigações de dados](compliance20/manage-data-spillage-incidents.md)<br/>[Solicitações de entidades de dados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navegação no centro de conformidade da Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir para **alertas** para exibir e resolver [alertas](alerts.md)<br/><br/>Visite **monitorIng &** Reports para exibir dados sobre o [uso e a retenção de etiquetas](sensitivity-labels.md), correspondências de [política de DLP e substituições](view-the-dlp-reports.md), [arquivos compartilhados](https://docs.microsoft.com/cloud-app-security/file-filters), [aplicativos de terceiros em uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)e muito mais.<br/><br/>Expanda a seção **classificação** para acessar seus [Rótulos](labels.md), [políticas de rótulo](sensitivity-labels.md#what-label-policies-can-do), tipos de [informações confidenciais](what-the-sensitive-information-types-look-for.md)e [análises de etiquetas](view-label-activity-for-documents.md).<br/><br/>Vá até **políticas** para exibir [alertas](alerts.md) e acessar suas políticas de [DLP](data-loss-prevention-policies.md) e [retenção](retention-policies.md) .<br/><br/> Use os links na seção **soluções** para acessar as soluções de conformidade da sua organização. Eles incluem: <br/>[Desposições de > de governança de dados](disposition-reviews.md)<br/>[Descoberta eletrônica (prévia)](compliance20/overview-ediscovery-20.md)<br/>[Supervisão](supervision-policies.md)<br/>[Investigações de dados](datainvestigations/overview-data-investigations.md)<br/>[Solicitações de entidades de dados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>Como posso obter isso?
