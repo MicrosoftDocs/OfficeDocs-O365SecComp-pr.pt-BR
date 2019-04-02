@@ -1,9 +1,9 @@
 ---
-title: Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365
+title: Proteja arquivos do SharePoint Online com DLP e rótulos de retenção
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,88 +16,72 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: 'Resumo: Aplique rótulos do Office 365 e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
-ms.openlocfilehash: 759722e7e3ba7c07b869d56a271af7d40692d39e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Resumo: Aplique rótulos de retenção e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
+ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214432"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999154"
 ---
-# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365
+# <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteja arquivos do SharePoint Online com DLP e rótulos de retenção
 
- **Resumo:** Aplique rótulos do Office 365 e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.
+ **Resumo:** Aplique rótulos de retenção e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.
   
-Use as etapas neste artigo para projetar e implantar políticas de DLP e rótulos do Office 365 para sites de equipe do SharePoint Online de linha de base, confidenciais e altamente confidenciais. Para obter mais informações sobre essas três camadas de proteção, consulte [Arquivos e sites do SharePoint Online seguros](secure-sharepoint-online-sites-and-files.md).
+Use as etapas neste artigo para projetar e implantar rótulos de retenção e políticas de DLP (prevenção de perda de dados) para sites de equipe do SharePoint Online de linha de base, confidenciais e altamente confidenciais. Para obter mais informações sobre essas três camadas de proteção, consulte [Proteção de arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
 ## <a name="how-this-works"></a>Como isso funciona
-1. Crie os rótulos desejados e publique-os. Pode levar até 12 horas para que eles sejam publicados.
-2. Para os sites do SharePoint desejados, edite as configurações de biblioteca de documentos para aplicar um rótulo a itens na biblioteca.
-3. Crie políticas DLP para agir com base nas etiquetas.
+1. Crie e publique as etiquetas de retenção desejadas. Pode levar até 12 horas para que elas sejam publicadas.
+2. Para os sites do SharePoint desejados, edite as configurações de biblioteca de documentos para aplicar os rótulos de retenção desejados a itens na biblioteca.
+3. Crie políticas DLP para executar ações com base nos rótulos de retenção.
 
-Quando os usuários adicionam um documento à biblioteca, o documento recebe o rótulo atribuído por padrão. Os usuários podem alterar o rótulo, se necessário. Quando um usuário compartilha um documento para fora da organização, a DLP verifica se um rótulo foi atribuído e toma medidas caso uma política DLP corresponda ao rótulo. A DLP também procura por outras correspondências de política, como a proteção de arquivos com números de cartão de crédito, se esse tipo de política estiver configurado. 
+Quando os usuários adicionarem um documento à biblioteca, este receberá por padrão o rótulo de retenção atribuído. Os usuários podem alterar o rótulo, se necessário. Quando um usuário compartilha um documento para fora da organização, a DLP verificará se há um rótulo atribuído e agirá se houver uma política DLP que corresponda ao rótulo. A DLP também procurará outras políticas que correspondam, como proteger arquivos com números de cartão de crédito, caso este tipo de política estiver configurado. 
 
-## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Rótulos do Office 365 para seus sites do SharePoint Online
+## <a name="retention-labels-for-your-sharepoint-online-sites"></a>Rótulos de retenção para seus sites do SharePoint Online
 
-Há três etapas para criar e atribuir rótulos do Office 365 a sites de equipe do SharePoint Online.
+Há três etapas para criar e atribuir rótulos de retenção a sites de equipe do SharePoint Online.
   
-### <a name="phase-1-determine-the-office-365-label-names"></a>Etapa 1: Determinar os nomes de rótulo do Office 365
+### <a name="phase-1-determine-the-retention-label-names"></a>Etapa 1: Determinar os nomes dos rótulos de retenção
 
-Nesta fase, você determina os nomes dos rótulos do Office 365 para os quatro níveis de proteção de informações aplicados a sites de equipe do SharePoint Online. A tabela a seguir lista os nomes recomendados para cada nível.
+Nesta fase, você determina os nomes dos rótulos de retenção para os quatro níveis de proteção de informações aplicados a sites de equipe do SharePoint Online. A tabela a seguir lista os nomes recomendados para cada nível.
   
 |**Nível de proteção do site de equipe do SharePoint Online**|**Nome do rótulo**|
 |:-----|:-----|
 |Linha de base público  <br/> |Público interno  <br/> |
 |Linha de base privado  <br/> |Private  <br/> |
 |Confidencial  <br/> |Confidencial  <br/> |
-|Altamente Confidencial  <br/> |Altamente Confidencial  <br/> |
+|Altamente Confidencial  <br/> |Altamente confidencial  <br/> |
    
-### <a name="phase-2-create-the-office-365-labels"></a>Fase 2: Criar os rótulos do Office 365
+### <a name="phase-2-create-the-retention-labels"></a>Fase 2: Criar as etiquetas de retenção
 
-Nesta fase, você cria e publica seus determinados rótulos para os diferentes níveis de proteção de informações.
+Nesta fase, você cria e publica seus rótulos determinados para os diferentes níveis de proteção de informações.
   
-Para criar os rótulos, você pode usar o Centro de administração do Office 365 ou o Microsoft PowerShell.
+1. Entre no [portal de segurança do Microsoft 365](https://security.microsoft.com) com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa.
+    
+2. Na guia **Início – Segurança do Microsoft 365** do navegador, clique em **Classificações > Rótulos**.
+    
+3. Clique em **Rótulos de retenção > Criar um rótulo**.
+    
+4. No painel **Atribuir nome ao seu rótulo**, digite o nome do rótulo e uma descrição para administradores e usuários e, em seguida, clique em **Avançar**.
+
+5. No painel **Descritores do planejamento de arquivo**, preencha conforme necessário e clique em **Avançar**.
+    
+6. No painel **Configurações de rótulo**, se necessário, defina **Retenção** como **Ligado** e faça as configurações de retenção. Clique em **Avançar**.
+    
+7. No painel **Revise suas configurações**, clique em **Criar o rótulo**.
+    
+8. Para seus rótulos adicionais, clique em **Criar um rótulo**, e, em seguida, repita as etapas 4 a 7.
+    
+
+### <a name="publish-your-new-labels"></a>Publique seus novos rótulos
+
+Em seguida, use estas etapas para publicar os novos rótulos de retenção.
   
-### <a name="create-office-365-labels-with-the-office-365-admin-center"></a>Criar rótulos do Office 365 com o Centro de administração do Office 365
-
-1. Entre no Portal do Office 365 com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
-    
-2. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
-    
-3. Na nova guia **Centro de Administração do Office** do navegador, clique em **Centros de Administração > Segurança&amp; e Conformidade**.
-    
-4. Na nova guia **Início – Segurança &amp;e Conformidade** do navegador, clique em **Classificações > Rótulos**.
-    
-5. No painel **Página inicial > Rótulos**, clique na guia **Retenção** e, em seguida, clique em **Criar um rótulo**.
-    
-6. No painel **Atribuir nome ao seu rótulo**, digite o nome do rótulo e uma descrição para administradores e usuários e, em seguida, clique em **Avançar**.
-
-7. No painel **Configurações do rótulo**, clique em **Avançar**.
-    
-8. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
-    
-9. Repita as etapas de 5 a 8 para os rótulos adicionais.
-    
-### <a name="create-office-365-labels-with-powershell"></a>Criar rótulos do Office 365 com o PowerShell
-
-1. [Conecte-se ao Centro de Segurança e Conformidade do Office 365 &amp;usando o PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) remoto e especifique as credenciais da conta que têm a função de Administrador de Segurança ou Administrador da Empresa.
-    
-2. Preencha a lista de nomes de rótulo e execute esses comandos no prompt de comando do PowerShell:
-    
-  ```
-  $labelNames=@(<list of label names, each enclosed in quotes and separated by commas>)
-ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
-  ```
-
-### <a name="publish-your-new-labels"></a>Publicar seus novos rótulos
-
-Em seguida, use estas etapas para publicar os novos rótulos do Office 365.
-  
-1. No painel **Início > Rótulos** no Centro de Segurança &amp;e Conformidade, clique na guia **Retenção** e, em seguida, clique em **Publicar rótulos**.
+1. No painel **Rótulos**, clique na guia **Rótulos de retenção** e, em seguida, clique em **Publicar rótulos**.
     
 2. No painel **Escolher rótulos para publicar**, clique em **Escolher rótulos para publicar**.
     
-3. No painel **Escolher rótulos**, clique em **Adicionar** e selecione todos os quatro rótulos.
+3. No painel **Escolher rótulos**, clique em **Adicionar**, selecione todos os quatro rótulos, clique em **Adicionar**.
     
 4. Clique em **Concluído**.
     
@@ -110,13 +94,13 @@ Em seguida, use estas etapas para publicar os novos rótulos do Office 365.
 8. No painel **Examine as configurações**, clique em **Publicar rótulos** e clique em **Fechar**.
 
     
-### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Etapa 3: Aplicar os rótulos do Office 365 aos sites do SharePoint Online
+### <a name="phase-3-apply-the-retention-labels-to-your-sharepoint-online-sites"></a>Etapa 3: Aplicar os rótulos de retenção aos seus sites do SharePoint Online
 
-Use estas etapas para aplicar os rótulos do Office 365 às pastas de documentos de seus sites de equipe do SharePoint Online.
+Use estas etapas para aplicar os rótulos de retenção às pastas de documentos de seus sites de equipe do SharePoint Online.
   
-1. Na guia **Microsoft Office Home** do navegador, clique no bloco **SharePoint**.
+1. Acesse o [portal do Office 365](https://www.office.com), clique no aplicativo **SharePoint**.
     
-2. Na nova guia **SharePoint** no navegador, clique em um site que precisa de um rótulo do Office 365 atribuído.
+2. Na nova guia **SharePoint** no seu navegador, clique em um site que precise de um rótulo de retenção atribuído.
     
 3. Na nova guia de site do SharePoint do navegador, clique em **Documentos**.
     
@@ -124,41 +108,39 @@ Use estas etapas para aplicar os rótulos do Office 365 às pastas de documentos
     
 5. Em **Permissões e Gerenciamento**, clique em **Aplicar o rótulo aos itens nessa biblioteca**.
     
-6. Em **Configurações – Aplicar Rótulo**, selecione o rótulo adequado e clique em **Salvar**.
+6. Em **Configurações – Aplicar Rótulo**, selecione o rótulo de retenção adequado e clique em **Salvar**.
     
 7. Feche a guia para o site do SharePoint Online.
     
-8. Repita as etapas 3 a 8 acima para atribuir rótulos do Office 365 aos sites adicionais do SharePoint Online.
+8. Repita as etapas 2 a 8 acima para atribuir rótulos de retenção aos seus sites adicionais do SharePoint Online.
     
 Esta é a configuração resultante.
   
-![Rótulos do Office 365 para os quatro tipos de sites de equipe do SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![rótulos de retenção para os quatro tipos de sites de equipe do SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Políticas DLP para seus sites do SharePoint Online
 
 Use estas etapas para configurar uma política DLP que notifica os usuários quando eles compartilham um documento em um site de equipe confidencial do SharePoint Online fora da organização.
 
-1. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
+1. Entre no [portal de conformidade do Microsoft 365](https://compliance.microsoft.com/) com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa.
     
-2. Na nova guia **Centro de Administração do Office** do navegador, clique em **Centros de Administração > Segurança&amp; e Conformidade**.
+2. Na nova guia **conformidade do Microsoft 365** em seu navegador, clique em**Políticas > Prevenção de perda de dados**.
     
-3. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+3. No painel **Início > Prevenção de perda de dados**, clique em **Criar uma política**.
     
-4. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
-    
-5. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
+4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e, em seguida, clique em **Avançar**.
     
 5. No painel **Atribuir um nome à política**, digite o nome da política DLP de nível confidencial em **Nome** e clique em **Avançar**.
     
 6. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
-7. Na lista de locais, desabilite os locais **Email do Exchange** e **Contas do OneDrive** e clique em **Avançar**.
+7. Na lista de locais, desabilite os locais **email do Exchange**, **contas do OneDrive** e **Mensagens do canal e do chat do Teams** e, em seguida, clique em **Avançar**.
     
-8. Em **personalizar um tipo de conteúdo que deseja proteger** painel, clique em **editar**.
+8. No painel **Personalizar o tipo de conteúdo que você deseja proteger**, clique em **Editar**.
     
-9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e clique em **Rótulos**.
+9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e, em seguida, clique em **Rótulos de retenção**.
     
-10. No painel **Rótulos**, clique em **+ Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e clique em **Concluído**.
+10. No painel **Rótulos de retenção**, clique em ** Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e, em seguida, clique em **Concluído**.
     
 11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
@@ -185,31 +167,29 @@ Use estas etapas para configurar uma política DLP que notifica os usuários qua
     
 Aqui está a configuração resultante dos sites confidenciais da equipe do SharePoint Online.
   
-![A política DLP para um site de equipe isolado do SharePoint Online usando o rótulo Confidencial do Office 365.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Política DLP para um site de equipe isolado do SharePoint Online usando o rótulo de retenção Confidencial.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Em seguida, use estas etapas para configurar uma política DLP que bloqueia os usuários quando eles compartilham um documento em um site de equipe altamente confidencial do SharePoint Online fora da organização.
   
-1. Na guia **Microsoft Office Home** no navegador, clique no bloco **Segurança&amp; Conformidade**.
+1. Na nova guia **conformidade do Microsoft 365** em seu navegador, clique em**Políticas > Prevenção de perda de dados**.
     
-2. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+2. No painel **Prevenção de perda de dados**, clique em **Criar uma política**.
     
-3. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
+3. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
     
-4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
+4. No painel **Atribuir um nome à política**, digite o nome da política DLP de nível altamente confidencial em **Nome** e clique em **Avançar**.
     
-5. No painel **Atribuir um nome à política**, digite o nome da política DLP de nível altamente confidencial em **Nome** e clique em **Avançar**.
+5. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
-6. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
+6. Na lista de locais, desabilite os locais **email do Exchange**, **contas do OneDrive** e **Mensagens do canal e do chat do Teams** e, em seguida, clique em **Avançar**.
     
-7. Na lista de locais, desabilite os locais **Email do Exchange** e **Contas do OneDrive** e clique em **Avançar**.
+7. No painel **Personalizar os tipos de informações confidenciais que deseja proteger**, clique em **Editar**.
     
-8. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Editar**.
+8. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e, em seguida, clique em **Rótulos de retenção**.
     
-9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e clique em **Rótulos**.
+9. No painel **Rótulos de retenção**, clique em **Adicionar**, selecione o rótulo **Altamente Confidencial**, clique em **Adicionar** e, em seguida, clique em **Concluído**.
     
-10. No painel **Rótulos**, clique em **+ Adicionar**, selecione o **rótulo Altamente Confidencial**, clique em **Adicionar** e clique em **Concluído**.
-    
-11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
+10. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
 12. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Avançar**.
     
@@ -233,7 +213,7 @@ Em seguida, use estas etapas para configurar uma política DLP que bloqueia os u
     
 Aqui está a configuração resultante para sites de equipe do SharePoint Online de alta confidencialidade.
   
-![A política DLP para um site de equipe isolado do SharePoint Online usando o rótulo Altamente Confidencial do Office 365.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Política DLP para um site de equipe isolado do SharePoint Online usando o rótulo de retenção Altamente Confidencial.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Próxima etapa
 
@@ -241,11 +221,9 @@ Aqui está a configuração resultante para sites de equipe do SharePoint Online
     
 ## <a name="see-also"></a>Confira também
 
-[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger os sites do SharePoint Online em um ambiente de desenvolvimento/teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-  
-[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

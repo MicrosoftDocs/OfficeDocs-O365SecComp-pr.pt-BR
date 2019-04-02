@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com o Explorador de Atividade de Rótulo no Centro de Conformidade e Segurança do Office 365, você pode rapidamente pesquisar e exibir a atividade de rótulo para todo o conteúdo no SharePoint e no OneDrive for Business nos últimos 30 dias. Esses são dados em tempo real que fornecem uma exibição clara para o que está acontecendo no seu locatário.
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410466"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997107"
 ---
 # <a name="view-label-activity-for-documents"></a>Exibir a atividade de rótulos de documentos
 
@@ -36,7 +36,7 @@ Por exemplo, com o Explorador de Atividade do Rótulo, você pode:
     
 - Exiba a atividade de rótulo para pastas, além de documentos individuais. Em breve haverá a capacidade para mostrar quantos arquivos dentro dessa pasta foram rotulados como resultado da rotulação da pasta.
     
-Você pode encontrar o Gerenciador de Atividade de Rótulo no Centro de Conformidade e Segurança\> **Governança de Dados** \> **Gerenciador de Atividade de Rótulo**.
+Você pode encontrar o Explorador de Atividade de Rótulo no &amp;Centro de Conformidade e Segurança > **Governança de dados** > **Explorador de Atividade de Etiqueta**.
   
 Observe que no Gerenciador de Atividade de Rótulo exige uma assinatura do Office 365 Enterprise E5.
   

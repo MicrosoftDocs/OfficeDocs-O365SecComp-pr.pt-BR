@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Saiba como criar, modificar, remover e testar tipos de informações confidenciais personalizados para DLP na interface gráfica do usuário no Centro de Conformidade e Segurança do Office 365.
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Saiba como criar, modificar, remover e testar tipos de informações confidenciais personalizados para DLP na interface gráfica do usuário, no Centro de Conformidade e Segurança.
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639058"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999084"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Criar um tipo de informação confidencial personalizado
 
@@ -42,11 +42,11 @@ As partes fundamentais de um tipo personalizado de informações confidenciais s
 
     ![Contagem de instâncias e opções de precisão de correspondência](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Para criar tipos de informações confidenciais personalizados no Centro de Conformidade e Segurança do Office 365, você tem as seguintes opções:
+Para criar tipos de informações confidenciais personalizados no Centro de Conformidade e Segurança, você tem as seguintes opções:
 
 - **Usar a interface do usuário**: este método é mais fácil e rápido, mas você tem menos opções de configuração do PowerShell. O restante deste tópico descreve esses procedimentos.
 
-- **Usar o PowerShell**: este método requer que você crie primeiro um arquivo XML (chamado de _pacote de regras_) que contém um ou mais tipos de informações confidenciais e use o PowerShell para importar o pacote de regras (a importação do pacote de regras é simples em comparação com a criação do pacote de regras). Esse método é muito mais complexo do que a interface do usuário, mas você tem mais opções de configuração. Para obter instruções, confira [Criar um tipo personalizado de informações confidenciais no PowerShell no Centro de Conformidade e Segurança do Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Usar o PowerShell**: Este método requer que você primeiro crie um arquivo XML (chamado de _pacote de regras_) que contém um ou mais tipos de informações confidenciais e, em seguida, usar o PowerShell para importar o pacote de regras (importar o pacote de regras é simples se comparado a criar o pacote de regras. Este método é muito mais complexo do que a Interface do Usuário, mas você tem mais opções de configuração. Para obter instruções, consulte [Criar um tipo personalizado de informações confidenciais no Centro de Conformidade e Segurança do PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 As principais diferenças são descritas na seguinte tabela:
 
@@ -60,7 +60,7 @@ As principais diferenças são descritas na seguinte tabela:
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
-- Para abrir o Centro de Conformidade e Segurança, confira [Acessar o Centro de Conformidade e Segurança do Office 365](go-to-the-securitycompliance-center.md).
+- Para abrir o Centro de Conformidade e Segurança, consulte [Acessar o Centro de Conformidade e Segurança](go-to-the-securitycompliance-center.md).
 
 - Os tipos de informações confidenciais personalizados exigem familiaridade com expressões regulares (RegEx). Para saber mais sobre o mecanismo de RegEx (anteriormente conhecido como RegEx++) usado para processar o texto, confira [Boost.RegEx 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 

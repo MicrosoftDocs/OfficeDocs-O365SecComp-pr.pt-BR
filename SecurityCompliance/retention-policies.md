@@ -3,7 +3,7 @@ title: Visão geral de políticas de retenção
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Com uma política de retenção, você pode decidir proativamente se deseja reter o conteúdo, excluí-lo ou ambos: reter depois excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que corresponder a determinadas condições'
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Com uma política de retenção, você pode decidir proativamente se deseja para reter o conteúdo, excluí-lo ou ambos: reter e em seguida excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas a locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que cumpra certas condições.'
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935296"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997137"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -31,7 +31,7 @@ Para a maioria das organizações, o volume e a complexidade dos dados aumentam 
     
 - **Ajudar a sua organização a compartilhar conhecimento de maneira eficaz e ser mais ágil** garantindo que seus usuários trabalhem apenas com conteúdo atual e relevante para eles. 
     
-Uma política de retenção no Office 365 pode ajudá-lo a atingir todos esses objetivos. O gerenciamento de conteúdo normalmente requer duas ações:
+Uma política de retenção pode ajudá-lo a atingir todos esses objetivos. O gerenciamento de conteúdo normalmente requer duas ações:
   
 - **Reter** conteúdo para que ele não seja excluído permanentemente antes do fim do período de retenção. 
     
@@ -49,10 +49,10 @@ Quando o conteúdo está sujeito a uma política de retenção, as pessoas podem
   
 Por fim, algumas organizações talvez precisem cumprir regulamentações, como a Regra 17a-4 do Securities and Exchange Commission (SEC), que exige que após uma política de retenção ser ativada, ela não pode ser desativada ou se tornar menos restritiva. Para atender a esse requisito, você pode usar o Bloqueio de Preservação. Após uma política ser bloqueada, ninguém, nem mesmo o administrador, poderá desativar a política ou torná-la menos restritiva.
   
-Você pode criar e gerenciar políticas de retenção na página **Retenção** no Centro de Conformidade e Segurança do Office 365 &amp;. 
-  
-![Página Retenção no Centro de Conformidade e Segurança](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+Você cria e gerencia políticas de retenção na:
+
+- Página **Políticas** no centro de conformidade do Microsoft 365.
+- Página **Retenção** sob **Governança de dados** no Centro de Conformidade &amp;e Segurança do Office 365.
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Como funciona uma política de retenção com conteúdo in-loco
 
@@ -322,7 +322,7 @@ Por fim, uma política de retenção ou rótulo não pode excluir permanentement
 
 Uma única política de retenção pode facilmente ser aplicada a uma organização inteira e locais no Office 365, incluindo o Exchange Online, o SharePoint Online, o OneDrive for Business e os grupos do Office 365. Se você precisar manter ou excluir conteúdo em praticamente qualquer lugar no Office 365, recomendamos usar uma política de retenção. (Você também pode usar rótulos com configurações de retenção. Para saber mais, confira [Visão geral de rótulos](labels.md).)
   
-Há vários outros recursos que eram usados anteriormente para reter ou excluir conteúdo no Office 365. Eles estão listados abaixo. Esses recursos continuarão a funcionar lado a lado com políticas de retenção e rótulos criados no &amp; Centro de Conformidade e Segurança. Mas, futuramente, para governança de dados, recomendamos que você use uma política de retenção ou rótulos em vez desses recursos. Uma política de retenção é o único recurso que pode tanto reter e excluir conteúdo no Office 365.
+Há vários outros recursos que já foram usados para reter ou excluir conteúdo no Office 365. Eles estão listados abaixo. Esses recursos continuarão a funcionar lado a lado com políticas de retenção e rótulos de retenção. Porém, futuramente, para governança de dados, recomendamos o uso de uma política de retenção ou o uso de rótulos no lugar de todos esses recursos. Uma política de retenção é o único recurso que pode tanto reter quanto excluir conteúdo por todo o Office 365.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -346,15 +346,15 @@ Há vários outros recursos que eram usados anteriormente para reter ou excluir 
     
 - [Políticas de gerenciamento de informações](intro-to-info-mgmt-policies.md) (apenas exclusão) 
     
-Observe que, se você tiver usado anteriormente qualquer um dos bloqueios de Descoberta Eletrônica para fins de governança de dados, deverá usar uma política de retenção para conformidade proativa. Você deverá usar um bloqueio criado no &amp; Centro de Conformidade e Segurança apenas para a Descoberta Eletrônica.
+Observe que se você tiver usado anteriormente qualquer um dos bloqueios de descoberta eletrônica para fins de governança de dados, você deve usar uma política de retenção para conformidade proativa. Você deve usar um bloqueio apenas para a descoberta eletrônica.
   
 ### <a name="retention-policies-override-information-management-policies"></a>As políticas de retenção substituem as políticas de gerenciamento de informações
 
-Nos sites do SharePoint, talvez você esteja usando [políticas de gerenciamento de informações](intro-to-info-mgmt-policies.md) para reter conteúdo. Se você aplicar uma política de retenção criada no Centro de Conformidade e Segurança a um site que já use políticas de tipo de conteúdo ou políticas de gerenciamento de informações para uma lista ou biblioteca, essas políticas serão ignoradas enquanto a política de retenção estiver em vigor. 
+Nos sites do SharePoint, talvez você esteja usando [políticas de gerenciamento de informações](intro-to-info-mgmt-policies.md) para reter conteúdo. Se você aplicar uma política de retenção em um site que já usa políticas de tipo de conteúdo ou políticas de gerenciamento de informações para uma lista ou biblioteca, essas políticas serão ignoradas enquanto a política de retenção estiver em vigor. 
   
 ## <a name="what-happened-to-preservation-policies"></a>O que aconteceu com as políticas de preservação?
 
-Se você estava usando uma política de preservação, essa política terá sido automaticamente convertida em uma política de retenção que usa apenas a ação de retenção, sem excluir conteúdo. A política de preservação continuará a funcionar e preservar o conteúdo sem exigir que você faça mudanças. Você pode encontrar essas políticas na página **Retenção** página no &amp; Centro de Conformidade e Segurança. Você pode editar uma política de preservação para alterar o período de retenção, mas você não pode fazer outras alterações, como adicionar ou remover locais. 
+Se você estava usando uma política de preservação, essa política foi automaticamente convertida em uma política de retenção que usa apenas a ação de retenção - a política não excluirá conteúdo. A política de preservação continuará a funcionar e preservar seu conteúdo sem exigir mudanças da sua parte. Você pode encontrar essas políticas na página **Políticas** no centro de conformidade do Microsoft 365 ou na página **Retenção**, em **Governança de dados**, no &amp;Centro de Conformidade e Segurança. Você pode editar uma política de preservação para alterar o período de retenção, mas você não pode fazer outras alterações, como adicionar ou remover locais. 
   
 ## <a name="permissions"></a>Permissões
 
