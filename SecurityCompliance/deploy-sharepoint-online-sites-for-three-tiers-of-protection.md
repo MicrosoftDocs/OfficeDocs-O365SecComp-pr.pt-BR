@@ -3,7 +3,7 @@ title: Implantar sites do SharePoint Online para três camadas de proteção
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumo: Crie e configure sites de equipe do SharePoint Online para vários níveis de proteção de informações.'
-ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220301"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999254"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implantar sites do SharePoint Online para três camadas de proteção
 
@@ -38,7 +38,7 @@ A proteção de linha de base inclui os sites de equipe públicos e privados. Os
 
 Para criar um site de equipe do SharePoint Online de linha de base com permissões e acesso público, faça o seguinte:
   
-1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no centro de administração com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -62,7 +62,7 @@ Esta é a configuração resultante.
 
 Para criar um site de equipe do SharePoint Online de linha de base com permissões e acesso privado, faça o seguinte:
   
-1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no centro de administração com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -126,7 +126,7 @@ Para obter as etapas detalhadas, consulte a **Fase 1** de [Implantar um site de 
   
 Em seguida, crie o site de equipe do SharePoint Online com estas etapas.
   
-1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no centro de administração com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -144,7 +144,7 @@ Em seguida, crie o site de equipe do SharePoint Online com estas etapas.
     
 Em seguida, no novo site de equipe do SharePoint Online, configure as permissões com estas etapas.
   
-1. Determine o nome UPN do administrador de TI ou outra pessoa que será responsável por responder e resolver as solicitações de acesso ao site (elzap@contoso.com é um exemplo de um UPN). Anote esse UPN aqui: ![](./media/Common-Images/TableLine.png).
+1. Determine o nome UPN do administrador de TI ou outra pessoa que será responsável por responder e resolver as solicitações de acesso ao site (belindan@contoso.com é um exemplo de um UPN). 
     
 2. Na barra de ferramentas, clique no ícone Configurações e, em seguida, clique em **Permissões do site**.
     
@@ -264,8 +264,7 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
   
 ## <a name="next-step"></a>Próxima etapa
 
-[Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
-
+[Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>Confira também
 
@@ -274,7 +273,3 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-
