@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Demonstre recursos de RGPD no Office 365.
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955274"
+ms.locfileid: "31001254"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Descoberta de RGPD, proteção e relatórios no ambiente de desenvolvimento/teste do Office 365
 
@@ -98,7 +98,7 @@ Nesta fase, você pode criar um tipo personalizado de informações confidenciai
 
 A Contoso sempre faz referência aos clientes usando um CCN nas correspondências interna e externa, em documentos e outras formas. Eles precisam de um tipo personalizado confidencial para detectar o uso do CCN em conteúdo do Office 365 e assim aplicar proteção no uso desse formulário de informações de identificação pessoal.
 
-1. Use as instruções em [Conectar-se ao PowerShell do Centro de Conformidade e Segurança do Office 365 usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) e conecte-se ao Centro de Conformidade e Segurança com o UPN da sua conta de administrador global.
+1. Siga as instruções em [Conectar-se ao PowerShell do Centro de Conformidade e Segurança usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) e conecte-se ao Centro de Conformidade e Segurança com o UPN da sua conta de administrador global.
 2. Execute os seguintes comandos do PowerShell.
 
      ```

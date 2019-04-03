@@ -3,7 +3,7 @@ title: Visão geral de rótulos de confidencialidade
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor as configurações de proteção, como criptografia ou marcas d'água no conteúdo rotulado.
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor configurações de proteção, como criptografia ou marcas d'água em conteúdo rotulado.
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737681"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999734"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
 Para realizar seus trabalhos, seu pessoal precisa colaborar com outras pessoas dentro e fora da organização. Isso significa que o conteúdo deixa de estar protegido por um firewall – ele percorre todos os lugares, entre dispositivos, aplicativos e serviços. E você quer que esses percursos sejam feitos de modo seguro e protegido, atendendo às políticas de conformidade dos negócios da sua organização.
 
-Com os rótulos de confidencialidade no Office 365, você pode classificar e ajudar a proteger o conteúdo confidencial e, ao mesmo tempo, garantir que a produtividade e a capacidade de colaboração das pessoas não sejam prejudicadas.
+Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas.
 
 ![Rótulo de confidencialidade na faixa de opções e barra de status do Excel](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ Você pode usar rótulos de confidencialidade para:
     
 Em todos esses casos, os rótulos de confidencialidade do Office 365 podem ajudar você a adotar as ações certas no conteúdo certo. Com os rótulos de confidencialidade, você pode classificar dados em toda a organização e impor configurações de proteção com base nessa classificação.
   
-Você cria rótulos de confidencialidade no Centro de Conformidade &amp; Segurança do Office 365, que agora é o único local para configurar políticas e rótulos de confidencialidade em toda a Proteção de Informações do Azure e Office 365. Esses rótulos de confidencialidade podem ser usados pela Proteção de Informações do Azure, pelos aplicativos do Office e pelos serviços do Office 365.
+Você cria rótulos de confidencialidade na Central de Conformidade do Microsoft 365, no centro de segurança do Microsoft 365 ou no Centro de Conformidade e Segurança do Office 365. Esses rótulos de confidencialidade podem ser usados pela Proteção de Informações do Azure, aplicativos do Office e serviços do Office 365.
 
-Para clientes da Proteção de Informações do Azure, você pode usar os rótulos dessa Proteção no Centro de Conformidade e Segurança, os quais serão sincronizados com o portal do Azure caso você opte por executar configurações adicionais ou avançadas. **Os rótulos da Proteção de Informações do Azure e os rótulos de confidencialidade do Office 365 são totalmente compatíveis entre si. **Isso significa que, por exemplo, se você tiver um conteúdo rotulado pela Proteção de Informações do Azure, não será necessário classificar ou rotular novamente o conteúdo.
-
-![Guia Confidencialidade na página Rótulos do Centro de Conformidade e Segurança](media/Sensitivity_label_tab_on_Labels_page.png)
+Para clientes da Proteção de Informações do Azure, você pode usar seus rótulos de Proteção de Informações do Azure nos outros centros de administração e seus rótulos serão sincronizados com o portal do Azure, caso você opte por executar configurações adicionais ou avançadas. **Os rótulos de Proteção de Informações do Azure e os rótulos de confidencialidade do Office 365 são totalmente compatíveis entre si.** Isso significa, por exemplo, se você tiver um conteúdo marcado pela Proteção de Informações do Azure, não precisará reclassificar ou rotular novamente seu conteúdo.
 
 ## <a name="what-a-sensitivity-label-is"></a>O que é um rótulo de confidencialidade
 
@@ -84,13 +82,13 @@ Depois que um rótulo de confidencialidade é aplicado a um email ou documento, 
     ![Solicitar confirmação antes de atribuir a um rótulo necessário](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-Todas essas opções estão disponíveis quando você cria um rótulo no Centro de Conformidade e Segurança.
+Todas essas opções estão disponíveis quando você cria um rótulo de confidencialidade.
 
 ![Opções ao criar um rótulo de confidencialidade](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>Prioridade de rótulo (a ordem importa)
 
-Ao criar rótulos de confidencialidade no Centro de Conformidade e Segurança, eles aparecem em uma lista na guia **Confidencialidade**, na página **Rótulos**. Nessa lista, a ordem dos rótulos é importante porque reflete sua prioridade. O rótulo de confidencialidade mais restritiva, como Altamente Confidencial, deve aparecer na **parte inferior** da lista, e seu rótulo de confidencialidade menos restritiva, como Público, deve aparecer no **topo**.
+Quando você cria seus rótulos de confidencialidade, eles aparecem em uma lista na guia **Confidencialidade**, na página **Rótulos**. Nessa lista, a ordem dos rótulos é importante porque reflete sua prioridade. Você quer que seu rótulo de confidencialidade mais restritivo, como o Altamente Confidencial, apareça na **parte inferior** da lista, e que seu rótulo de confidencialidade menos restritivo, como o Público, apareça na **parte superior**.
 
 Um documento ou email pode ter apenas um único rótulo de confidencialidade aplicado a ele. Se você solicitar que seus usuários forneçam uma justificativa para alterar o rótulo para uma classificação inferior, a ordem desta lista determina o que é uma classificação inferior.
 
@@ -108,9 +106,9 @@ Os sub-rótulos são simplesmente uma maneira de apresentar as etiquetas aos usu
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Editar ou excluir um rótulo de confidencialidade
 
-Se você excluir um rótulo de confidencialidade no Centro de Conformidade e Segurança, observe que o rótulo não será removido do conteúdo e que as configurações de proteção continuam impostas ao conteúdo.
+Se você excluir um rótulo de confidencialidade, observe que o rótulo não é removido do conteúdo, e as configurações de proteção continuam a ser aplicadas ao conteúdo.
 
-Se você editar um rótulo de confidencialidade no Centro de Conformidade e Segurança, a versão do rótulo que foi aplicada ao conteúdo é o que é imposto a ele.
+Se você editar um rótulo de confidencialidade, a versão do rótulo que foi aplicada ao conteúdo é a que será imposta a esse conteúdo.
 
 ## <a name="what-label-policies-can-do"></a>O que as políticas de rótulo podem fazer
 
@@ -120,7 +118,7 @@ Com uma política de rótulos, você pode:
 
 - **Escolher quais usuários e grupos veem os rótulos.** Rótulos podem ser publicados em quaisquer grupos de segurança habilitados para email, grupos de distribuição, grupos do Office 365 ou grupos de distribuição dinâmica.
 
-- **Aplicar um rótulo padrão** para todos os novos documentos e email criados pelos usuários e grupos incluídos na política de rótulo. Esse rótulo padrão pode definir um nível de base de configurações de proteção que você deseja aplicar a todo o seu conteúdo. (Observe que)
+- **Aplicar um rótulo padrão** a todos os novos documentos e email criados pelos usuários e grupos incluídos na política de rótulo. Esse rótulo padrão pode definir um nível de base de configurações de proteção que deve ser aplicado a todo o conteúdo.
 
 - **Solicitar uma justificativa para alterar um rótulo.** Se o conteúdo estiver marcado como Confidencial e um usuário desejar remover esse rótulo ou substituí-lo com uma classificação inferior, como um rótulo denominado Público, você pode solicitar que o usuário forneça uma justificativa ao realizar esta ação. Essas justificativas estarão disponíveis para a análise do administrador. Estamos trabalhando em um relatório em que os administradores poderão ver as justificativas do usuário.
 
@@ -197,7 +195,7 @@ Atualmente, os usuários da Proteção de Informações do Azure conseguem class
 - Manter os rótulos existentes da Proteção de Informações do Azure em documentos e email.
 - Manter a configuração de rótulo da Proteção de Informações do Azure.
 
-Caso esteja usando rótulos da Proteção de Informações do Azure, recomendamos evitar a criação de novos rótulos no Centro de Conformidade e Segurança até concluir a migração. O [tópico de migração da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-policy-migrate-labels) tem algumas restrições específicas e informações importantes. Se você não ainda está pronto para migrar seus locatários de produção para rótulos de confidencialidade, não há motivos para se preocupar: por enquanto, seus usuários podem continuar usando o cliente da Proteção de Informações do Azure, e os administradores podem continuar usando o portal do Azure para o gerenciamento.
+Se você estiver usando rótulos de Proteção de Informações do Azure, por enquanto, é recomendável evitar a criação de novos rótulos em outros centros de administração até que você tenha concluído sua migração. O [tópico de migração da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-policy-migrate-labels) contém informações importantes e algumas advertências específicas. Se você ainda não estiver pronto para migrar seus locatários de produção para rótulos de confidencialidade, não há motivos para preocupação: por enquanto, seus usuários podem continuar usando o cliente da Proteção de Informações do Azure, e os administradores podem continuar usando o portal do Azure para gerenciamento.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Proteger o conteúdo em dispositivos Windows usando a proteção do ponto de extremidade no Microsoft Intune
 
@@ -252,6 +250,6 @@ Para saber mais sobre o SDK da Proteção de Informações da Microsoft, consult
 
 Os membros da equipe de conformidade que criarão rótulos de confidencialidade precisam de permissões para o Centro de Conformidade e Segurança. Por padrão, o administrador de locatários terá acesso a este local e poderá fornecer acesso a outras pessoas e aos responsáveis pela conformidade ao Centro de Conformidade e Segurança, sem lhes dar todas as permissões de um administrador de locatários. Para fazer isso, recomendamos que você acesse a página **Permissões** do Centro de Conformidade e Segurança, edite o grupo de função **Administrador de Conformidade** e adicione membros a esse grupo de função.
 
-Para obter mais informações, consulte Dar aos usuários acesso ao Centro de Conformidade e Segurança do Office 365.
+Para saber mais, consulte [Fornecer aos usuários acesso ao Centro de Conformidade e Segurança do Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Essas permissões só serão necessárias para criar e aplicar rótulos. A imposição da política não exige acesso ao conteúdo.

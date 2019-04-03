@@ -3,7 +3,7 @@ title: Visão geral de rótulos de retenção
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955234"
+ms.locfileid: "31000814"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -60,10 +60,9 @@ Com os rótulos de retenção, você pode:
     
 - **Implemente o gerenciamento de registros no Office 365**, inclusive em emails e documentos. Você pode usar um rótulo de retenção para classificar o conteúdo como registro. Quando isso acontece, o rótulo não pode ser alterado ou removido, e o conteúdo não pode ser editado ou excluído. 
     
-Você pode criar e gerenciar políticas de retenção na guia**Retenção** e na página **Rótulos** no Centro de Conformidade e Segurança &amp; do Office 365. 
+Você cria e gerencia rótulos de retenção na página **Rótulos** > guia **Retenção** na central de conformidade do Microsoft 365, na central de segurança do Microsoft 365 ou na Central de Conformidade &amp;e Segurança do Office 365. 
   
-![Guia Retenção na página Rótulos](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>Como os rótulos de retenção funcionam com políticas de rótulo
 
 A disponibilização dos rótulos de retenção para as pessoas da sua organização, para que elas possam classificar o conteúdo, é um processo de duas etapas: primeiro você cria os rótulos e, depois, os publica nos locais escolhidos. Quando você publica os rótulos de retenção, uma política de rótulos é criada.
@@ -98,7 +97,7 @@ Todas as informações nesta seção se aplicam somente aos rótulos de retenç�
 
 Quando você publica ou aplica rótulos de retenção automaticamente, eles não entram em vigor imediatamente:
   
-1. Primeiro, a política de rótulos precisa ser sincronizada com os locais na política no Centro de Conformidade &amp; Segurança.
+1. Primeiro, a política de rótulos precisa ser sincronizada desde o centro de administração até os locais na política.
     
 2. Depois, o local pode precisar de algum tempo para disponibilizar os rótulos manuais para os usuários finais, ou aplicar rótulos automaticamente ao conteúdo. Quanto tempo isso demora depende do local e do tipo de rótulo.
     
@@ -110,7 +109,7 @@ Se você publicar rótulos de retenção no SharePoint ou no OneDrive, talvez de
   
 ### <a name="auto-apply-retention-labels"></a>Aplicação automática de rótulos de retenção
 
-Se você aplicar automaticamente os rótulos de retenção ao conteúdo que atenda a condições específicas, talvez demore sete dias para que os rótulos sejam aplicados a todo o conteúdo que corresponde às condições.
+Se você aplicar automaticamente rótulos de retenção a conteúdos que se encaixem em condições específicas, poderá levar sete dias para que os rótulos de retenção sejam aplicados a todo o conteúdo existente que se encaixe nas condições. Mas observe que, depois que seus rótulos de retenção forem implantados, eles serão aplicados ao novo conteúdo rapidamente, geralmente em 15 minutos ou menos.
   
 ![Diagrama de quando os rótulos de aplicação automática entram em vigor](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -398,9 +397,7 @@ Após a publicação ou aplicação automática dos rótulos de retenção, conv
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Usar a Pesquisa de Conteúdo para localizar todo o conteúdo com um rótulo de retenção específico aplicado
 
-Após a atribuição dos rótulos de retenção ao conteúdo, por usuários ou automaticamente, você pode usar a pesquisa de conteúdo no Centro de Conformidade &amp; de Segurança para localizar todo o conteúdo classificado com um rótulo de retenção específico.
-  
-![Página Pesquisa de Conteúdo](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+Depois que os rótulos de retenção são atribuídos ao conteúdo, seja por usuários ou aplicados automaticamente, você pode usar a pesquisa de conteúdo para encontrar todo o conteúdo classificado com um rótulo de retenção específico.
   
 Quando você cria uma pesquisa de conteúdo, escolha a condição **Marca de Conformidade** e, em seguida, insira o nome do rótulo completo ou parte do nome do rótulo e use um caractere curinga. Para saber mais, confira [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md).
   
@@ -434,7 +431,7 @@ Por fim, uma política de retenção ou rótulo não pode excluir permanentement
 
 Os rótulos de retenção podem ser disponibilizados facilmente para uma organização inteira e seu conteúdo no Office 365, incluindo Exchange, SharePoint, OneDrive e grupos do Office 365. Se você precisar classificar o conteúdo ou gerenciar registros em qualquer lugar no Office 365, recomendamos o uso de rótulos de retenção.
   
-Vários outros recursos eram usados anteriormente para classificar o conteúdo ou gerenciar registros no Office 365. Confira-os abaixo. Esses recursos continuarão funcionando paralelamente aos rótulos de retenção criados no Centro de Conformidade e&amp; Segurança. Observe que, embora haja instâncias nas quais a implementação de rótulos de retenção difere dos recursos anteriores, a evolução dos rótulos de retenção conduzirá o futuro do gerenciamento de registros no Office 365. Portanto, a partir de agora, para governança de dados, recomendamos o uso de rótulos de retenção em vez desses recursos.
+Há vários outros recursos usados anteriormente para classificar o conteúdo ou gerenciar registros no Office 365. Eles estão listados abaixo. Esses recursos continuarão a trabalhar lado a lado com os rótulos de retenção. Observe que, embora haja casos em que a implementação de rótulos de retenção é diferente de recursos anteriores, a evolução dos rótulos de retenção orientará o futuro do gerenciamento de registros no Office 365. Portanto, seguindo em frente, para governança de dados, recomendamos o uso de rótulos de retenção em vez desses recursos.
   
 ### <a name="exchange-online"></a>Exchange Online
 

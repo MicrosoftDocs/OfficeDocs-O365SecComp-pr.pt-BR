@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Saiba como acessar a Descoberta Eletrônica Avançada do Office 365 pelo Centro de Conformidade e Segurança do Office 365 e analisar o fluxo de trabalho típico para usar a Descoberta Eletrônica avançada.  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218741"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999764"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Configuração rápida da Descoberta Eletrônica Avançada do Office 365
 
-Esta seção de configuração mostra a um gerente de Descoberta Eletrônica do Centro de Conformidade e Segurança do Office 365 como começar a usar a Descoberta Eletrônica Avançada. Supomos o conhecimento prático de ambos.
+Esta seção de configuração mostra a um gerente de Descoberta Eletrônica do Centro de Conformidade e Segurança &amp;do Microsoft 365 como começar a usar a Descoberta Eletrônica Avançada. Pressupõe-se um conhecimento prático de ambos.
   
 > [!NOTE]
 > A Descoberta Eletrônica Avançada requer o Office 365 E3 com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tem esse plano e quer experimentar a Descoberta Eletrônica Avançada, [inscreva-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
