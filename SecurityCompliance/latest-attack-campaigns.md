@@ -11,17 +11,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2bd777b6e785d1631810469f699da0823f1c3320
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: e3644f5ace35a574613447ae30b6fa3c665662fe
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998674"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043262"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="a14bc-104">Entender as campanhas e as técnicas de ataque mais recentes com a análise de ameaças</span><span class="sxs-lookup"><span data-stu-id="a14bc-104">Understand the latest attack campaigns and techniques with threat analytics</span></span>
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="17d37-104">Entender as campanhas e as técnicas de ataque mais recentes com a análise de ameaças</span><span class="sxs-lookup"><span data-stu-id="17d37-104">Understand the latest attack campaigns and techniques with threat analytics</span></span>
 
-<span data-ttu-id="a14bc-105">As ameaças da CyberSource estão se tornando mais frequentes e sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="a14bc-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="a14bc-106">É fundamental que as organizações avaliem rapidamente a postura e a resiliência de segurança contra ameaças emergentes específicas.</span><span class="sxs-lookup"><span data-stu-id="a14bc-106">It’s critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
+<span data-ttu-id="17d37-105">As ameaças da CyberSource estão se tornando mais frequentes e sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="17d37-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="17d37-106">É fundamental que as organizações avaliem rapidamente a postura e a resiliência de segurança contra ameaças emergentes específicas.</span><span class="sxs-lookup"><span data-stu-id="17d37-106">It’s critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
 
-<span data-ttu-id="a14bc-107">A **análise de ameaças** é um conjunto de relatórios interativos publicados assim como ameaças emergentes – novas técnicas, campanhas de ataque e epidemias de malware são identificadas.</span><span class="sxs-lookup"><span data-stu-id="a14bc-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified.</span></span> <span data-ttu-id="a14bc-108">Os relatórios ajudam a avaliar o impacto das ameaças ao seu ambiente e fornece as ações recomendadas a serem confinadas, aumentar a resiliência organizacional e evitar ameaças específicas.</span><span class="sxs-lookup"><span data-stu-id="a14bc-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
+<span data-ttu-id="17d37-107">A **análise de ameaças** é um conjunto de relatórios interativos publicados assim como ameaças emergentes – novas técnicas, campanhas de ataque e epidemias de malware são identificadas.</span><span class="sxs-lookup"><span data-stu-id="17d37-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified.</span></span> <span data-ttu-id="17d37-108">Os relatórios ajudam a avaliar o impacto das ameaças ao seu ambiente e fornece as ações recomendadas a serem confinadas, aumentar a resiliência organizacional e evitar ameaças específicas.</span><span class="sxs-lookup"><span data-stu-id="17d37-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
 
-<span data-ttu-id="a14bc-109">[Saiba mais sobre a análise de ameaças no Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).</span><span class="sxs-lookup"><span data-stu-id="a14bc-109">[Learn more about threat analytics in Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).</span></span>  
+<span data-ttu-id="17d37-109">[Saiba mais sobre a análise de ameaças no Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).</span><span class="sxs-lookup"><span data-stu-id="17d37-109">[Learn more about threat analytics in Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).</span></span>  
