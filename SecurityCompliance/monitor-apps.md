@@ -11,16 +11,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 02cc511532f65172aba2c0f98cdf594776f586a5
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+search.appverid: met150
+ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791532"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043292"
 ---
 # <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Monitorar e relatar o status do aplicativo no Microsoft 365 Security
 
-[!include[Prerelease�information](prerelease.md)]
 
 Esses relatórios fornecem mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização, incluindo os tipos de aplicativos, seu nível de risco e alertas.
 

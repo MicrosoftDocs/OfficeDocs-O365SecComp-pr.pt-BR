@@ -11,15 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a1a6970e81f3c6ce3f768958333f3a692b05346c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: e10ec5cc54ed53242f62871a8837885c9520c749
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999994"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043302"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>Busca por malware e outras ameaças no Microsoft 365
-
 
 A busca fornece às equipes de segurança uma visão de possíveis ameaças em sua organização por email e dados, dispositivos e identidades. Dentro do Windows Defender ATP, Office 365 ATP e portais ATP do Azure, você pode procurar contas comprometidas, arquivos menos malware, emails suspeitos e muito mais.
 
