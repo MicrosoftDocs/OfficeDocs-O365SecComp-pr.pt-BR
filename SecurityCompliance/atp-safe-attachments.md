@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/08/2019
+ms.date: 04/04/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: O recurso de anexos seguros oferece verificação de horário de clique de anexos de email. Use anexos seguros para proteger sua organização contra arquivos mal-intencionados enviados ou recebidos por email.
-ms.openlocfilehash: 25fbfba104694f7f7418fadb88d60b17ea3d1ae6
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
+ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357482"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "31476819"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Anexos seguros de ATP do Office 365
 
@@ -40,9 +40,11 @@ Aqui estão dois exemplos de anexos seguros de ATP no trabalho.
 
 - **Exemplo 2: arquivo no SharePoint Online** Suponha que Jean recebeu um arquivo e o carregou em uma biblioteca no SharePoint Online. Jean compartilha o link para o arquivo com o restante da equipe, não sabendo que o arquivo é realmente mal-intencionado. Felizmente, [a ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-and-teams.md) detecta o arquivo mal-intencionado e o bloqueia. Alguns dias depois, Chris vai abrir o documento. Embora Carla possa ver que o arquivo está lá, Carla não pode abrir ou compartilhar, o que impede o computador de Carla e outros do arquivo mal-intencionado.
 
-A verificação de anexos seguros de ATP ocorre na mesma região onde seus dados do Office 365 residem. Para obter mais informações sobre a geografia do Data Center, confira [onde estão seus dados?](https://products.office.com/where-is-your-data-located?geo=All) 
-
 As políticas de anexos seguros de ATP podem ser aplicadas a pessoas ou grupos específicos em sua organização ou a todo o seu domínio. Além disso, as políticas de anexos seguros de ATP podem ser configuradas para usar anexos de espaço reservado enquanto anexos reais estão sendo verificados. Para saber mais, confira **[configurar as políticas de anexos seguros de ATP no Office 365](set-up-atp-safe-attachments-policies.md)**.
+
+> [!NOTE]
+> A verificação de anexos seguros de ATP ocorre na mesma região onde seus dados do Office 365 residem. Para obter mais informações sobre a geografia do Data Center, confira [onde estão seus dados?](https://products.office.com/where-is-your-data-located?geo=All) 
+
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Como obter anexos seguros de ATP
 
@@ -56,7 +58,7 @@ Em seguida, verifique se as políticas de anexos seguros de ATP estão definidas
 
 Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir:
 
-|Função  |Onde/como a atribuição  |
+|Role  |Onde/como a atribuição  |
 |---------|---------|
 |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
 |Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
@@ -74,7 +76,7 @@ A tabela a seguir descreve alguns exemplos de cenários. Em todos esses casos, a
 |Lee é um funcionário no departamento de vendas da contoso. A organização de Lee tem uma política de anexos seguros de ATP em vigor que se aplica apenas aos funcionários de finanças.  <br/> |Não. Nesse caso, os funcionários de finanças teriam proteção de anexos seguros de ATP, mas outros funcionários, incluindo o departamento de vendas, não até as políticas que incluem esses grupos são definidas.  <br/> |
 |Ontem, um administrador do Office 365 na organização de Jean configurou uma política de anexos seguros de ATP que se aplica a todos os funcionários. Hoje em dia, Jean recebeu uma mensagem de email que inclui um anexo.  <br/> |Sim. Neste exemplo, Jean tem uma licença para proteção avançada contra ameaças e uma política de anexos seguros de ATP que inclui Jean foi definida. Geralmente, leva cerca de 30 minutos para uma nova política entrar em vigor nos data centers; como um dia passou nesse caso, a política deve estar em vigor.  <br/> |
 |A organização de Carla tem o Office 365 Enterprise E5 com as políticas de anexos seguros de ATP in-loco para todas as pessoas na organização. Chris recebe um email que tem um anexo e encaminha a mensagem para outras pessoas que estão fora da organização.  <br/> |A proteção de anexos seguros de ATP está em vigor para mensagens que Carla receber. Se as organizações dos destinatários também tiverem diretivas de anexos seguros de ATP em vigor, a mensagem informando que Carla estaria sujeita às políticas quando a mensagem encaminhada chegar.  <br/> |
-|A organização de Jaime tem políticas de anexos seguros de ATP no local e [a ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-and-teams.md) foi ativada. Jaime supõe que cada arquivo no SharePoint Online foi verificado e é seguro para ser aberto ou baixado.<br/> |A proteção de anexos seguros de ATP está no local de acordo com as políticas definidas; no entanto, isso não significa que cada arquivo único no SharePoint Online, no OneDrive for Business ou no Microsoft Teams seja verificado. (Para saber mais, confira [ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-and-teams.md).)<br/> |
+|A organização de Jaime tem políticas de anexos seguros de ATP no local e [a ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-and-teams.md) foi ativada. Jaime supõe que cada arquivo no SharePoint Online foi verificado e é seguro para ser aberto ou baixado.  <br/> |A proteção de anexos seguros de ATP está no local de acordo com as políticas definidas; no entanto, isso não significa que cada arquivo único no SharePoint Online, no OneDrive for Business ou no Microsoft Teams seja verificado. (Para saber mais, confira [ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-and-teams.md).)  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>Enviando arquivos para análise de malware
 
