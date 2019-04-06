@@ -1,5 +1,5 @@
 ---
-title: Limpeza automática de zero horas-proteção contra spam e malware
+title: Limpeza automática zero hora – proteção contra spam e malware
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,14 +17,14 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670574"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479627"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática de zero horas-proteção contra spam e malware
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática zero hora – proteção contra spam e malware
 
 ## <a name="overview"></a>Visão geral
 
@@ -34,19 +34,19 @@ O ZAP está disponível com a proteção do Exchange Online padrão incluída em
 
 O ZAP é ativado por padrão, mas as seguintes condições devem ser atendidas:
   
-- A **ação de spam** é definida para **mover a mensagem para a pasta lixo eletrônico**. <br/>Você também pode criar uma nova política de filtro de spam que se aplique somente a um conjunto de usuários se não quiser que todas as caixas de correio sejam filtradas por ZAP.
+- A **ação de spam** é definida para **mover a mensagem para a pasta lixo eletrônico**. Você também pode criar uma nova política de filtro de spam que se aplique somente a um conjunto de usuários se não quiser que todas as caixas de correio sejam filtradas por ZAP.
 
 - Os usuários mantiveram suas configurações de lixo eletrônico padrão e não desativaram a proteção de lixo eletrônico. (Consulte [alterar o nível de proteção no filtro de lixo eletrônico](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obter detalhes sobre as opções do usuário no Outlook.) 
   
-## <a name="how-does-zap-work"></a>Como o ZAP funciona?
+## <a name="how-zap-works"></a>Como o ZAP funciona
 
-O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No enTanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários. 
+O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No enTanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários.
 
-- Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários. 
+- Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários.
 
 - Para email identificado como Phish, o ZAP move mensagens para a pasta lixo eletrônico dos usuários, independentemente se o email foi lido.
 
-- Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido. 
+- Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido.
   
 A ação ZAP é transparente para o usuário da caixa de correio; Eles não são notificados quando uma mensagem de email é movida.
   
@@ -58,20 +58,20 @@ As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p
 
 2. Em **Gerenciamento de ameaças**, escolha **anti-spam**.
 
-3. Revise as configurações padrão. 
+3. Revise as configurações padrão.
 
-4. Se você quiser personalizar suas configurações, selecione a guia **personalizado** e ative **as configurações personalizadas**. Edite suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova política. 
-    
+4. Se você quiser personalizar suas configurações, selecione a guia **personalizado** e ative **as configurações personalizadas**. Edite suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova política.
+
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP moveu sua mensagem
 
 Se você deseja ver se ZAP moveu sua mensagem, pode usar o relatório de [status de proteção contra ameaças](view-email-security-reports.md#threat-protection-status-report) (ou o [Gerenciador de ameaças](use-explorer-in-security-and-compliance.md)).
-    
+
 ## <a name="to-disable-zap"></a>Para desabilitar o ZAP
   
 Se você quiser desabilitar o ZAP para o seu locatário do Office 365, ou um conjunto de usuários, use o parâmetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
-    
+
 No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conteúdo chamada "Test".
-    
+
 ```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
@@ -92,8 +92,6 @@ Regras criadas por administradores (regras de fluxo de emails) ou regras de bloq
   
 ## <a name="related-topics"></a>Tópicos Relacionados
 
-[Proteção anti-spam de emails do Office 365](anti-spam-protection.md)
+[Proteção contra spam de email do Office 365](anti-spam-protection.md)
   
 [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](reduce-spam-email.md)
-  
-

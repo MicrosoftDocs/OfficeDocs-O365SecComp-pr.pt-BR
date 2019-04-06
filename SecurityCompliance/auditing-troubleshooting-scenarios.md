@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Você pode usar a ferramenta de pesquisa de log de auditoria do Office 365 para ajudá-lo a solucionar problemas comuns, como investigar uma conta comprometida ou descobrir quem configurou o encaminhamento de email para uma caixa de correio.
-ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999624"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479657"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Pesquisar o log de auditoria do Office 365 para solucionar problemas de cenários comuns
 
@@ -36,17 +36,13 @@ Cada um dos cenários de solução de problemas descritos neste artigo se baseia
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permissões necessárias para usar a ferramenta de pesquisa de log de auditoria
 
-Você precisa receber a função de logs de auditoria somente para exibição ou logs de auditoria no Exchange Online para pesquisar o log de auditoria do Office 365. Por padrão, essas funções são atribuídas aos grupos de função gerenciamento de conformidade e gerenciamento da organização na página **permissões** no centro de administração do Exchange. Para obter mais informações, consulte [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Você precisa receber a função de logs de auditoria somente para exibição ou logs de auditoria no Exchange Online para pesquisar o log de auditoria do Office 365. Por padrão, essas funções são atribuídas aos grupos de função gerenciamento de conformidade e gerenciamento da organização na página **permissões** no centro de administração do Exchange. Observe que os administradores globais no Office 365 e Microsoft 365 são automaticamente adicionados como membros do grupo de função gerenciamento da organização no Exchange Online. Para obter mais informações, consulte [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Executando pesquisas de log de auditoria
 
 Esta seção descreve as noções básicas para criar e executar pesquisas de log de auditoria. Use estas instruções como ponto de partida para cada cenário de solução de problemas neste artigo. Para obter instruções passo a passo detalhadas, consulte [Search the Audit Log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
-  
-2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
-
-3. No painel esquerdo do centro de segurança e conformidade, clique em **** > **pesquisa de log de auditoria**de pesquisa.
+1. AcEsse [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e entre usando sua conta corporativa ou de estudante.
     
     A página **pesquisa de log de auditoria** é exibida. 
     
@@ -115,9 +111,9 @@ Neste ponto, você precisa examinar os detalhes de cada registro de auditoria pa
 
 a. No campo **ObjectID** , o alias da caixa de correio para o qual o encaminhamento de email foi definido é exibido. Essa caixa de correio também é exibida na coluna **Item** na página de resultados da pesquisa.
 
-b. No campo **parâmetros** , o valor *ForwardingSmtpAddress* indica que o encaminhamento de emails foi definido na caixa de correio. Neste exemplo, o email está sendo encaminhado para o endereço de email mike@contoso.com, que está fora da organização do alpinehouse.onmicrosoft.com.
+b. No campo **parâmetros** , o valor *ForwardingSmtpAddress* indica que o encaminhamento de emails foi definido na caixa de correio. Neste exemplo, o email está sendo encaminhado para o endereço mike@contoso.comde email, que está fora da organização do alpinehouse.onmicrosoft.com.
 
-c. O valor *true* para o parâmetro *DeliverToMailboxAndForward* indica que uma cópia da mensagem entregue ao Sarad@alpinehouse.onmicrosoft.com *e* é encaminhada para o endereço de email especificado pelo *ForwardingSmtpAddress *o parâmetro, que neste exemplo é Mike@contoso.com. Se o valor do parâmetro *DeliverToMailboxAndForward* for definido como *false*, o email será encaminhada somente para o endereço especificado pelo parâmetro *ForwardingSmtpAddress* . Ele não é entregue à caixa de correio especificada no campo **ObjectID** .
+c. O valor *true* para o parâmetro *DeliverToMailboxAndForward* indica que uma cópia da mensagem entregue sarad@alpinehouse.onmicrosoft.com *e* é encaminhada para o endereço de email especificado pelo parâmetro *ForwardingSmtpAddress* , que neste exemplo é mike@contoso.com. Se o valor do parâmetro *DeliverToMailboxAndForward* for definido como *false*, o email será encaminhada somente para o endereço especificado pelo parâmetro *ForwardingSmtpAddress* . Ele não é entregue à caixa de correio especificada no campo **ObjectID** .
 
 d. O campo **userid** indica o usuário que define o encaminhamento de emails na caixa de correio especificada no campo de campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa. Nesse caso, parece que o proprietário da caixa de correio define o encaminhamento de email em sua caixa de correio.
 
@@ -191,8 +187,8 @@ Depois de executar a pesquisa, todos os registros de auditoria dessa atividade s
 
 a. No campo **ObjectID** , o nome completo da regra de caixa de entrada é exibido. Esse nome inclui o alias da caixa de correio do usuário (por exemplo, em inglês) e o nome da regra de caixa de entrada (por exemplo, "mover mensagens do administrador").
 
-b. No campo **parâmetros** , a condição da regra de caixa de entrada é exibida. Neste exemplo, a condição é especificada pelo parâmetro *from* . O valor definido para o parâmetro from indica que a regra de caixa *de* entrada atua no email enviado por admin@alpinehouse.onmicrosoft.com. Para obter uma lista completa dos parâmetros que podem ser usados para definir condições de regras de caixa de entrada, consulte o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. No campo **parâmetros** , a condição da regra de caixa de entrada é exibida. Neste exemplo, a condição é especificada pelo parâmetro *from* . O valor definido para o parâmetro from indica que a regra de caixa *de* entrada atua no admin@alpinehouse.onmicrosoft.comemail enviado por. Para obter uma lista completa dos parâmetros que podem ser usados para definir condições de regras de caixa de entrada, consulte o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. O parâmetro *MoveToFolder* especifica a ação para a regra de caixa de entrada; Neste exemplo, as mensagens recebidas de admin@alpinehouse.onmicrosoft.com são movidas para a pasta denominada *AdminSearch*. Consulte também o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obter uma lista completa de parâmetros que podem ser usados para definir a ação de uma regra de caixa de entrada.
+c. O parâmetro *MoveToFolder* especifica a ação para a regra de caixa de entrada; Neste exemplo, as mensagens recebidas admin@alpinehouse.onmicrosoft.com são movidas para a pasta chamada *AdminSearch*. Consulte também o artigo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obter uma lista completa de parâmetros que podem ser usados para definir a ação de uma regra de caixa de entrada.
 
 d. O campo **userid** indica o usuário que criou a regra de caixa de entrada especificada no campo **ObjectID** . Esse usuário também é exibido na coluna **usuário** na página de resultados da pesquisa.
