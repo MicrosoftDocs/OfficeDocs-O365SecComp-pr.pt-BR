@@ -523,8 +523,7 @@
 ### [Monitoramento e autorrecuperação](office-365-monitoring-and-self-healing.md)
 ### [Resiliência de dados do SharePoint Online](office-365-sharepoint-data-resiliency.md)
 ## [Retenção, exclusão e destruição de dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
-### [Destruição de dados
-](office-365-data-destruction.md)
+### [Destruição de dados](office-365-data-destruction.md)
 ### [Imutabilidade no Office 365](office-365-data-immutability.md)
 ### [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 ### [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
