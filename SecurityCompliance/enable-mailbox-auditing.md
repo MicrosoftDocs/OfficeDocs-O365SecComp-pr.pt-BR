@@ -1,8 +1,8 @@
 ---
 title: Gerenciar a auditoria de caixa de correio
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: O registro em log de auditoria de caixa de correio é ativado por padrão no Microsoft 365 (também chamado de auditoria de caixa de correio padrão ou de caixa de correio ativada por padrão). Isso significa que determinadas ações executadas por proprietários de caixa de correio, representantes e administradores são automaticamente registrados em um log de auditoria de caixa de correio, onde você pode pesquisar atividades realizadas na caixa de correio.
-ms.openlocfilehash: 604b7fc26c2e97a5efce28fe844fbd066196c4ce
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670626"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745313"
 ---
 # <a name="manage-mailbox-auditing"></a>Gerenciar a auditoria de caixa de correio
   
@@ -60,11 +60,11 @@ A tabela a seguir mostra os tipos de caixa de correio com suporte no momento pel
 
 |Tipo de caixa de correio|Com suporte|Sem suporte|
 |:---------|:---------:|:---------:|
-|Caixas de correio do usuário    |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         |
+|Caixas de correio de usuário    |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         |
 |Caixas de correio compartilhadas    |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)        |       |
 |Caixas de correio de grupo do Office 365    |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)         |         |
 |Caixas de correio de recurso    |      |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)        |
-|Caixas de correio de pasta pública    |       |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)  |
+|Caixas de correio de pastas públicas    |       |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)  |
 ||||
 
 ## <a name="mailbox-actions-logged-by-default"></a>Ações de caixa de correio registradas por padrão
@@ -90,7 +90,7 @@ A tabela a seguir lista as ações de caixa de correio atualmente registradas po
 
 |Ações de administrador|Ações de representante|Ações do proprietário|
 |:---------|:---------|:---------|
-|Create    |Create       | HardDelete        |
+|Criar    |Criar       | HardDelete        |
 |HardDelete    |HardDelete        |MoveToDeletedItems       |
 |MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
 |SendAs    |SendAs      |    Atualizar     |
@@ -112,7 +112,7 @@ Aqui estão as descrições para essas ações de caixa de correio.
 |**SendAs** <br/> |Uma mensagem foi enviada usando a permissão SendAs. Isto significa que outro usuário enviou a mensagem apesar de ter vindo do proprietário da caixa de correio.  <br/> |
 |**SendOnBehalf** <br/> |Uma mensagem foi enviada usando a permissão SendOnBehalf. Isto significa que outro usuário enviou a mensagem em nome do proprietário da caixa de correio. A mensagem indica ao destinatário em nome de quem a mensagem foi enviada e quem na verdade enviou a mensagem.  <br/> |
 |**SoftDelete** <br/> |Uma mensagem foi excluída permanentemente da pasta Itens Excluídos. Os itens excluídos temporariamente são movidos para a pasta Itens Recuperáveis.  <br/> |
-|**Update** <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |
+|**Atualizar** <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |
 |**UpdateCalendarDelegation** <br/> |Uma delegação de calendário foi atribuída a uma caixa de correio. A delegação de calendário oferece a outra pessoa na mesma organização permissões para gerenciar o calendário do proprietário da caixa de correio.  <br/> |
 |**UpdateFolderPermissions** <br/> |Uma permissão de pasta foi alterada. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas em uma caixa de correio e as mensagens localizadas nessas pastas.  <br/> |
 |**UpdateInboxRules** <br/> |Uma regra de caixa de entrada foi adicionada, removida ou alterada. As regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e realizar ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou excluir uma mensagem.  <br/> |
@@ -268,20 +268,20 @@ Um valor **true** indica que o log de auditoria de caixa de correio é ignorado 
   
 A tabela a seguir resume as ações que são auditadas para cada tipo de logon de usuário. Na tabela, um asterisco ( **\*** ) indica que a ação é registrada por padrão. Um **não** indica que uma ação não pode ser registrada para esse tipo de logon. Observe que um administrador ao qual foi atribuída a permissão de acesso total à caixa de correio de um usuário é considerado um usuário representante. 
   
-|**Action**|**Descrição**|**Admin**|**Delegar**|**Owner**|
+|**Ação**|**Descrição**|**Admin**|**Delegar**|**Proprietário**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Copy** <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
-|**Create** <br/> |Um item é criado nas pastas Calendário, Contatos, Anotações ou Tarefas na caixa de correio; por exemplo, é criada uma nova solicitação de reunião. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
+|**Copiar** <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
+|**Criar** <br/> |Um item é criado nas pastas Calendário, Contatos, Anotações ou Tarefas na caixa de correio; por exemplo, é criada uma nova solicitação de reunião. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim  <br/> |
 |**FolderBind**\** <br/> |Uma pasta da caixa de correio foi acessada. Esta ação também é registrada quando o administrador ou representante abrem a caixa de correio.  <br/> |Sim  <br/> |Sim  <br/> |Não  <br/> |
 |**HardDelete** <br/> |Uma mensagem foi removida da pasta de Itens Recuperáveis.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
 |**MailboxLogin** <br/> |O usuário entrou em sua caixa de correio.  <br/> |Não  <br/> |Não  <br/> |Sim  <br/> |
 |**MessageBind**\*** <br/> |Uma mensagem foi exibida no painel de visualização ou aberta.  <br/> |Sim  <br/> |Não  <br/> |Não  <br/> |
-|**Move** <br/> |Uma mensagem foi movida para outra pasta.  <br/> |Sim  <br/> |Sim  <br/> |Sim  <br/> |
+|**Mover** <br/> |Uma mensagem foi movida para outra pasta.  <br/> |Sim  <br/> |Sim  <br/> |Sim  <br/> |
 |**MoveToDeletedItems** <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
 |**SendAs** <br/> |Uma mensagem foi enviada usando a permissão SendAs. Isto significa que outro usuário enviou a mensagem apesar de ter vindo do proprietário da caixa de correio.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Não  <br/> |
 |**SendOnBehalf** <br/> |Uma mensagem foi enviada usando a permissão SendOnBehalf. Isto significa que outro usuário enviou a mensagem em nome do proprietário da caixa de correio. A mensagem indica ao destinatário em nome de quem a mensagem foi enviada e quem na verdade enviou a mensagem.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Não  <br/> |
 |**SoftDelete** <br/> |Uma mensagem foi excluída permanentemente da pasta Itens Excluídos. Os itens excluídos temporariamente são movidos para a pasta Itens Recuperáveis.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
-|**Update** <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
+|**Atualizar** <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
 |**UpdateCalendarDelegation** <br/> |Uma delegação de calendário foi atribuída a uma caixa de correio. A delegação de calendário permite que outra pessoa nas permissões da organização gerencie o calendário do proprietário da caixa de correio.  <br/> |Sim\*  <br/> |Não  <br/> |Sim\*  <br/> |
 |**UpdateFolderPermissions** <br/> |Uma permissão de pasta foi alterada. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas em uma caixa de correio e as mensagens localizadas nessas pastas.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
 |**UpdateInboxRules** <br/> |Uma regra de caixa de entrada foi adicionada, removida ou alterada. As regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e realizar ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou excluir uma mensagem.  <br/> |Sim\*  <br/> |Sim\*  <br/> |Sim\*  <br/> |
