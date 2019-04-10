@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumo: Aplique rótulos de retenção e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999154"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745253"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteja arquivos do SharePoint Online com DLP e rótulos de retenção
 
@@ -56,9 +56,9 @@ Nesta fase, você determina os nomes dos rótulos de retenção para os quatro n
 
 Nesta fase, você cria e publica seus rótulos determinados para os diferentes níveis de proteção de informações.
   
-1. Entre no [portal de segurança do Microsoft 365](https://security.microsoft.com) com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa.
+1. Entre no [portal de conformidade do Microsoft 365](https://compliance.microsoft.com) com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa.
     
-2. Na guia **Início – Segurança do Microsoft 365** do navegador, clique em **Classificações > Rótulos**.
+2. Na guia **Início - Conformidade do Microsoft 365** do navegador, clique em **Classificações > Rótulos**.
     
 3. Clique em **Rótulos de retenção > Criar um rótulo**.
     
@@ -70,7 +70,7 @@ Nesta fase, você cria e publica seus rótulos determinados para os diferentes n
     
 7. No painel **Revise suas configurações**, clique em **Criar o rótulo**.
     
-8. Para seus rótulos adicionais, clique em **Criar um rótulo**, e, em seguida, repita as etapas 4 a 7.
+8. Para seus rótulos adicionais, clique em **Criar um rótulo** e, em seguida, repita as etapas 3 a 7, conforme necessário.
     
 
 ### <a name="publish-your-new-labels"></a>Publique seus novos rótulos
@@ -219,12 +219,12 @@ Aqui está a configuração resultante para sites de equipe do SharePoint Online
 
 [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira Também
 
-[Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
 
