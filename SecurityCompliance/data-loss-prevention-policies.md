@@ -3,7 +3,7 @@ title: Visão geral das políticas de prevenção de perda de dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000014"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784102"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
@@ -56,13 +56,13 @@ Você cria e gerencia políticas de DLP na página prevenção de perda de dados
 
 Uma política de DLP contém algumas informações básicas:
   
-- Onde proteger os **locais** de conteúdo, como o Exchange Online, o SharePoint Online e o onedrive for Business, bem como chats e canais do Microsoft Teams. 
+- Onde proteger o conteúdo: **locais** como o Exchange Online, o SharePoint Online e o onedrive for Business sites, bem como chats e canais do Microsoft Teams. 
     
 - Quando e como proteger o conteúdo aplicando **regras** compostas por: 
     
-  - **Condições** que o conteúdo deve corresponder antes que a regra seja imposta – por exemplo, procure apenas o conteúdo que contém os números de seguridade social que foram compartilhados com pessoas de fora da sua organização. 
+  - **Condições** que o conteúdo deve corresponder antes que a regra seja imposta. Por exemplo, uma regra pode ser configurada para procurar apenas conteúdo que contenha números de seguridade social que foram compartilhados com pessoas de fora da organização. 
     
-  - **Ações** que você deseja que a regra adote automaticamente quando o conteúdo correspondente às condições for encontrado -- por exemplo, bloquear o acesso ao documento e enviar uma notificação por email ao responsável pela conformidade e ao usuário. 
+  - **Ações** que você deseja que a regra realize automaticamente quando o conteúdo que corresponde às condições for encontrado. Por exemplo, uma regra pode ser configurada para bloquear o acesso a um documento e enviar uma notificação por email para o usuário e o responsável pela conformidade. 
     
 Você pode usar uma regra para atender a uma necessidade específica de proteção e, em seguida, usar uma política de DLP para agrupar os requisitos de proteção comuns, como todas as regras necessárias à conformidade com uma regulamentação específica.
   
@@ -204,7 +204,7 @@ Por exemplo, a política do HIPAA interna da **U.S.** tem uma regra que usa um o
   
 - no grupo **identificadorEs PII** (pelo menos um número de SSN **ou** número DEA) 
     
-    **AND**
+    **E**
     
 - no grupo de **termos médicos** (pelo menos uma palavra-chave ICD-9-cm **ou** uma palavra-chave ICD-10-cm) 
     
@@ -212,10 +212,14 @@ Por exemplo, a política do HIPAA interna da **U.S.** tem uma regra que usa um o
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>A prioridade pela qual as regras são processadas
 
-Quando você cria regras em uma política, cada regra é atribuída a uma prioridade na ordem em que ela é criada, a regra criada primeiro tem prioridade, a regra criada segundo tem uma segunda prioridade e assim por diante. Depois de criar uma regra, sua prioridade não pode ser alterada, exceto por excluí-la e recriá-la.
+Quando você cria regras em uma política, cada regra é atribuída a uma prioridade na ordem em que ela é criada, a regra criada primeiro tem prioridade, a regra criada segundo tem uma segunda prioridade e assim por diante. 
   
 ![Regras em ordem de prioridade](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+Depois de configurar mais de uma política de DLP, você pode alterar a prioridade de uma ou mais políticas. Para fazer isso, selecione uma política, escolha **Editar política**e use a lista de **prioridades** para especificar sua prioridade.
+
+![Definir a prioridade de uma política](media/dlp-set-policy-priority.png)
+
 Quando o conteúdo é avaliado em relação a regras, as regras são processadas em ordem de prioridade. Se o conteúdo corresponder a várias regras, as regras são processadas na ordem de prioridade e a ação mais restritiva é imposta. Por exemplo, se o conteúdo corresponder a todas as seguintes regras, a regra 3 será imposta porque é a prioridade mais alta e a regra mais restritiva:
   
 - Regra 1: notifica apenas os usuários
@@ -244,7 +248,7 @@ Depois que as pessoas criarem e ativarem suas políticas de DLP, elas às vezes 
   
 - Muito conteúdo que **não seja** de informações confidenciais corresponde às regras que estão em outras palavras, muitos falsos positivos. 
     
-- Muito pouco conteúdo informações **** confidenciais correspondem às regras, em outras palavras, as ações de proteção não estão sendo aplicadas nas informações confidenciais. 
+- Muito pouco conteúdo que **são** informações confidenciais correspondem às regras. Em outras palavras, as ações de proteção não estão sendo aplicadas nas informações confidenciais. 
     
 Para resolver esses problemas, você pode ajustar suas regras ajustando a contagem de instância e a precisão de correspondência para tornar mais difícil ou mais fácil para o conteúdo corresponder às regras. Cada tipo de informação confidencial usado em uma regra tem uma contagem de instância e uma precisão de correspondência.
   
@@ -403,6 +407,10 @@ Se você estiver criando políticas DLP com um grande impacto em potencial, reco
 Você pode desativar uma política de DLP a qualquer momento, o que afeta todas as regras da política. No enTanto, cada regra também pode ser desativada individualmente ao alternar seu status no editor de regras.
   
 ![Opções para desativar uma regra em uma política](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+Você também pode alterar a prioridade de várias regras em uma política. Para fazer isso, abra uma política para edição. Em uma linha para uma regra, escolha as reticências (**...**) e, em seguida, escolha uma opção, como **mover para baixo** ou **trazer para a última**.
+
+![Definir prioridade de regra](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Relatórios DLP
 
@@ -500,7 +508,7 @@ Para usar a maioria dos cmdlets do centro de &amp; conformidade de segurança, v
     
 No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365, incluindo o Exchange Online. Por esse motivo, **os cmdlets dos relatórios de DLP estão disponíveis no PowerShell do Exchange Online, não no PowerShell &amp; do centro de conformidade de segurança**. Portanto, para usar os cmdlets dos relatórios de DLP, você precisa:
   
-1. [Conectar-se ao Exchange Online usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use qualquer um destes cmdlets para os relatórios de DLP:
     
