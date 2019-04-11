@@ -472,6 +472,7 @@
 ### [Implantar sites do SharePoint Online para três camadas de proteção](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
 ### [Proteja arquivos do SharePoint Online com DLP e rótulos de retenção](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
+### [Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 ## [Sites de equipe isolados do SharePoint Online](isolated-sharepoint-online-team-sites.md)
 ### [Projetar um site de equipe do SharePoint Online isolado](design-an-isolated-sharepoint-online-team-site.md)
 ### [Implantar um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md)
