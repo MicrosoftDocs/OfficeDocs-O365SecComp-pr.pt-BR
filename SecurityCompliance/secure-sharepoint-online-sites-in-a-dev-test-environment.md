@@ -3,7 +3,7 @@ title: Proteger sites do SharePoint Online em um ambiente de desenvolvimento/tes
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999974"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745303"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -34,23 +34,21 @@ Use este ambiente de desenvolvimento/teste para experimentar com os comportament
   
 ## <a name="phase-1-create-your-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste
 
-Nesta fase, você deve obter assinaturas de avaliação do Office 365 e do Enterprise Mobility + Security para uma organização fictícia.
+Nesta fase, você deve obter assinaturas de avaliação do Office 365 e do Enterprise Mobility + Security (EMS) para uma organização fictícia.
   
 Primeiro, siga as instruções na **Fase 2** do [ambiente de desenvolvimento/de teste do Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
   
 Em seguida, inscreva-se para a assinatura de avaliação do EMS e adicione-a à mesma organização de sua assinatura de avaliação do Office 365.
   
-1. Se necessário, entre no centro de administração com as credenciais da conta do administrador global da sua assinatura de avaliação. Para obter ajuda, confira [Como entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no centro de administração [Microsoft 365](https://admin.microsoft.com) com as credenciais da conta do administrador global da sua assinatura de avaliação.
     
-2. Clique no bloco de **Administração**.
+2. Na navegação à esquerda, clique em **cobrança > Serviços de compra**.
     
-3. Na guia **Centro de Administração do Office** no navegador, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
+3. Na página **Comprar serviços**, encontre o item **Enterprise Mobility + Security E5**. Passe o ponteiro do mouse sobre ele e clique em **Iniciar avaliação gratuita**.
     
-4. Na página **Comprar serviços**, encontre o item **Enterprise Mobility + Security E5**. Passe o ponteiro do mouse sobre ele e clique em **Iniciar avaliação gratuita**.
+4. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
-    
-6. Na página **Recibo do pedido**, clique em **Continuar**.
+5. Na página **Recibo do pedido**, clique em **Continuar**.
     
 Em seguida, habilite a licença do Enterprise Mobility + Security E5 para sua conta de administrador global.
   
@@ -122,7 +120,7 @@ Em seguida, configure o licenciamento automático para que os membros de seus gr
     
 6. Feche a guia do Portal do Azure no navegador.
     
-Em seguida, você deve se [Conectar ao módulo PowerShell do Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
+Em seguida, conecte-se ao módulo [PowerShell do Azure Active Directory para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Preencha o nome da organização, seu local e uma senha comum. Execute esses comandos no prompt de comando do PowerShell ou no ISE (Ambiente de Script Integrado) para criar contas de usuário e adicioná-las aos grupos:
   
@@ -179,7 +177,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> O uso de uma senha comum aqui é para a automação e facilidade de configuração para um ambiente de desenvolvimento/teste. Isso nunca é recomendado assinaturas de produção. 
+> O uso de uma senha comum aqui é para a automação e facilidade de configuração para um ambiente de desenvolvimento/teste. Obviamente, isso é recomendado para assinaturas de produção. 
   
 Use essas etapas para verificar se o licenciamento baseado em grupo está funcionando corretamente.
   
@@ -191,34 +189,35 @@ Use essas etapas para verificar se o licenciamento baseado em grupo está funcio
     
 4. No painel que lista as propriedades da conta de usuário **CEO**, verifique se ele recebeu a atribuição das licenças **Enterprise Mobility + Security E5** e **Office 365 Enterprise E5** (em **Licenças de produto**).
     
-## <a name="phase-3-create-office-365-labels"></a>Fase 3: criar rótulos do Office 365
+## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: Criar etiquetas de retenção do Office 365
 
 Nesta fase, você deve criar os rótulos para os diferentes níveis de segurança das pastas e documentos do site de equipe do SharePoint Online.
-  
-1. Se necessário, use uma instância privada do seu navegador da Internet e entre centro de administração com a conta de administrador global da sua assinatura de avaliação do Office 365 E5. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+
+1. Acesse o [portal de conformidade do Microsoft 365](https://compliance.microsoft.com) com sua conta de administrador global.
     
-2. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
+2. Na guia **Início - Conformidade do Microsoft 365** do navegador, clique em **Classificações > Rótulos**.
     
-3. Na nova guia **Centro de Administração do Office** do navegador, clique em **Centros de Administração > Segurança&amp; e Conformidade**.
+3. Clique em **Rótulos de retenção > Criar um rótulo**.
     
-4. Na nova guia **Início – Segurança &amp;e Conformidade** do navegador, clique em **Classificações > Rótulos**.
+4. No painel **Atribuir nome ao seu rótulo** digite **Público interno** em **Atribuir nome ao seu rótulo**, e clique em **Avançar**.
+
+5. No painel **descritores de plano de arquivo**, clique em **próximo**.
     
-5. No painel **Página inicial > Rótulos**, clique na guia **Retenção** e, em seguida, clique em **Criar um rótulo**.
+6. No painel **configurações de etiqueta**, se necessário, defina **retenção** para **no**e, em seguida, clique em **próximo**.
     
-6. No painel **Atribuir nome ao seu rótulo**, digite **Público interno** e clique em **Avançar**.
+7. No painel **Revise suas configurações**, clique em **Criar o rótulo**.
     
-7. No painel **Configurações de rótulo**, clique em **Avançar**.
+8. Para seus rótulos adicionais, clique em **Criar um rótulo**, e, em seguida, repita as etapas 3 a 7.
+
+9. Repita as etapas 3 a 8 para etiquetas adicionais com esses nomes:
     
-8. No painel **Examine as configurações**, clique em **Criar este rótulo** e clique em **Fechar**.
-    
-9. Repita as etapas de 5 a 8 para os rótulos adicionais:
-    
-  - Private
+  - Privado
     
   - Confidencial
     
   - Altamente Confidencial
-    
+  
 10. No painel **Início > Rótulos**, clique em **Publicar rótulos**.
     
 11. No painel **Escolher rótulos para publicar**, clique em **Escolher rótulos para publicar**.
@@ -243,7 +242,7 @@ Nesta fase, você cria e configura os quatro tipos de sites de equipe do SharePo
 
 Para criar um site de equipe do SharePoint Online público de linha de base, faça o seguinte:
   
-1. Se necessário, use um navegador do seu computador local e entre no centro de administração usando sua conta de administrador global. Para obter ajuda, confira [Como entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no [Portal do Office 365](https://portal.office.com) com as credenciais da conta de administrador global da sua assinatura de avaliação.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -269,15 +268,11 @@ Em seguida, configure a pasta de documentos do site de equipe Toda a organizaç�
     
 4. Em **Configurações – Aplicar Rótulo**, escolha **Público interno** e clique em **Salvar**.
     
-Esta é a configuração resultante.
-  
-![Proteção básica para sites de equipe do SharePoint Online público para toda a Organização.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
-  
 ### <a name="project-1-team-site"></a>Site de equipe do projeto 1
 
 Para criar um site de equipe básico e privado do SharePoint Online para um projeto dentro da organização, faça o seguinte:
   
-1. Se necessário, use um navegador do seu computador local e entre no centro de administração usando sua conta de administrador global. Para obter ajuda, confira [Como entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no [Portal do Office 365](https://portal.office.com) com as credenciais da conta de administrador global da sua assinatura de avaliação.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -303,15 +298,12 @@ Em seguida, configure a pasta de documentos do site de equipe Projeto 1 para o r
     
 4. Em **Configurações – Aplicar Rótulo**, escolha **Privado** e clique em **Salvar**.
     
-Esta é a configuração resultante.
-  
-![Proteção básica para o site de equipe privado do SharePoint Online do Projeto 1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
-  
 ### <a name="marketing-campaigns-team-site"></a>Site de equipe de campanhas de marketing
 
 Para criar um site de equipe do SharePoint Online isolado e com nível confidencial para recursos de campanha de marketing, faça o seguinte:
-  
-1. Usando um navegador no seu computador local, entre no centro de administração usando sua conta de administrador global. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+ 
+1. Se necessário, entre no [Portal do Office 365](https://portal.office.com) com as credenciais da conta de administrador global da sua assinatura de avaliação.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -378,56 +370,52 @@ Em seguida, configure a pasta de documentos do site de equipe Campanhas de marke
 4. Em **Configurações – Aplicar Rótulo**, escolha **Confidencial** e clique em **Salvar**.
     
 Em seguida, configure uma política DLP (prevenção de perda de dados) que notifica os usuários quando eles compartilham um documento em um site de equipe do SharePoint Online com o rótulo Confidencial, que inclui o site de Campanhas de marketing, fora da organização.
-  
-1. Na guia **Página Inicial do Microsoft Office** no navegador, clique no bloco **Segurança e Conformidade**.
+
+1. Acesse o [portal de conformidade do Microsoft 365](https://compliance.microsoft.com/) com sua conta de administrador global.
     
-2. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+2. Na nova guia **conformidade do Microsoft 365** em seu navegador, clique em**Políticas > Prevenção de perda de dados**.
     
-3. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
+3. No painel **Início > Prevenção de perda de dados**, clique em **Criar uma política**.
     
-4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
+4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e, em seguida, clique em **Avançar**.
     
 5. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online de rótulo Confidencial** em **Nome** e clique em **Avançar**.
     
 6. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
-7. Na lista de locais, desabilite os locais **Email do Exchange** e **Contas do OneDrive** e clique em **Avançar**.
+7. Na lista de locais, desabilite os locais **email do Exchange**, **contas do OneDrive** e **Mensagens do canal e do chat do Teams** e, em seguida, clique em **Avançar**.
     
-8. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Editar**.
+8. No painel **Personalizar o tipo de conteúdo que você deseja proteger**, clique em **Editar**.
     
-9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e clique em **Rótulos**.
+9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e, em seguida, clique em **Rótulos de retenção**.
     
-10. No painel **Rótulos**, clique em **+ Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e clique em **Concluído**.
+10. No painel **Rótulos de retenção**, clique em ** Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e, em seguida, clique em **Concluído**.
     
 11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
-12. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Avançar**.
-    
+12. No painel **personalizar um tipo de conteúdo que deseja proteger**, clique em **próxima**.
+
 13. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Personalizar a dica e o email**.
     
 14. No painel **Personalizar dicas de política e notificações de email**, clique em **Personalizar o texto da dica da política**.
     
-15. Na caixa de texto, digite ou cole o seguinte:
+15. Na caixa de texto, digite ou cole uma das dicas a seguir, dependendo de se você implementou a Proteção de Informações do Azure para proteger arquivos altamente confidenciais:
     
   - Para compartilhar com um usuário de fora da organização, baixe o arquivo e abra-o. Clique em Arquivo, em seguida, Proteger Documento e Criptografar com Senha e especifique uma senha forte. Envie a senha em um email separado ou outros meios de comunicação.
     
 16. Clique em **OK**.
     
-17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, desmarque a caixa de seleção **Impedir que as pessoas compartilhem e restringir o acesso ao conteúdo compartilhado** e clique em **Avançar**.
+17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
     
 18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     
 19. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
-    
-Esta é a configuração resultante.
-  
-![Proteção de nível confidencial para campanhas de Marketing isoladas do site de equipe do SharePoint Online.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Site de equipe de estratégia empresarial
 
 Para criar um site de equipe do SharePoint Online isolado no nível altamente confidencial para recursos corporativos estratégicos dos diretores da organização, faça o seguinte:
   
-1. Se necessário, use um navegador do seu computador local e entre no centro de administração usando sua conta de administrador global. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no [Portal do Office 365](https://portal.office.com) com as credenciais da conta de administrador global da sua assinatura de avaliação.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -491,53 +479,52 @@ Em seguida, configure a pasta de documentos do site da equipe de estratégia da 
     
 Em seguida, configure uma política DLP que bloqueia os usuários quando eles compartilham um documento em um site de equipe do SharePoint Online com o rótulo Altamente Confidencial, que inclui o site de Estratégia da empresa, fora da organização.
   
-1. Se necessário, use um navegador no seu computador local e entre no centro de administração com uma conta com a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, confira [Como entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Acesse o [portal de conformidade do Microsoft 365](https://compliance.microsoft.com/) com seu administrador global.
     
-2. Na guia **Microsoft Office Home** no navegador, clique no bloco **Segurança&amp; Conformidade**.
+2. Na nova guia **conformidade do Microsoft 365** em seu navegador, clique em**Políticas > Prevenção de perda de dados**.
     
-3. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+3. No painel **Início > Prevenção de perda de dados**, clique em **Criar uma política**.
     
-4. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
+4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e, em seguida, clique em **Avançar**.
     
-5. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
+5. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online de rótulo Altamente Confidencial** em **Nome** e clique em **Avançar**.
     
-6. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online de rótulo Altamente Confidencial** em **Nome** e clique em **Avançar**.
+6. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
-7. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
+7. Na lista de locais, desabilite os locais **email do Exchange**, **contas do OneDrive** e **Mensagens do canal e do chat do Teams** e, em seguida, clique em **Avançar**.
     
-8. Na lista de locais, desabilite os locais **Email do Exchange** e **Contas do OneDrive** e clique em **Avançar**.
+8. No painel **Personalizar o tipo de conteúdo que você deseja proteger**, clique em **Editar**.
     
-9. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Editar**.
+9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e, em seguida, clique em **Rótulos de retenção**.
     
-10. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e clique em **Rótulos**.
+10. No painel **Rótulos de retenção**, clique em **Adicionar**, selecione o rótulo **Altamente Confidencial**, clique em **Adicionar** e, em seguida, clique em **Concluído**.
     
-11. No painel **Rótulos**, clique em **+ Adicionar**, selecione o **rótulo Altamente Confidencial**, clique em **Adicionar** e clique em **Concluído**.
+11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
-12. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
+12. No painel **personalizar um tipo de conteúdo que deseja proteger**, clique em **próxima**.
+
+13. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Personalizar a dica e o email**.
     
-13. No painel **Personalizar os tipos de informações confidenciais que deseja proteger** e clique em **Avançar**.
+14. No painel **Personalizar dicas de política e notificações de email**, clique em **Personalizar o texto da dica da política**.
     
-14. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Personalizar a dica e o email**.
-    
-15. No painel **Personalizar dicas de política e notificações de email**, clique em **Personalizar o texto da dica da política**.
-    
-16. Na caixa de texto, digite ou cole o seguinte:
+15. Na caixa de texto, digite ou cole uma das dicas a seguir, dependendo de se você implementou a Proteção de Informações do Azure para proteger arquivos altamente confidenciais:
     
   - Para compartilhar com um usuário de fora da organização, baixe o arquivo e abra-o. Clique em Arquivo, em seguida, Proteger Documento e Criptografar com Senha e especifique uma senha forte. Envie a senha em um email separado ou outros meios de comunicação.
     
-17. Clique em **OK**.
+16. Clique em **OK**.
     
-18. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
+17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
     
-19. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
+18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     
-20. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
+19. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
+   
     
 Em seguida, siga as instruções em [Ativar o Azure RMS com o centro de administração do Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Depois, configure a Proteção de Informações do Azure com uma nova política e sub-rótulo em escopo para o grupo de Pacote C para proteção e permissões com as seguintes etapas:
   
-1. Entre no centro de administração com uma conta com a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no [centro de administração do Microsoft 365](https://admin.microsoft.com) com sua conta de administrador global.
     
 2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -581,10 +568,6 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
     
 Para proteger um documento com a Proteção de Informações do Azure e esse novo rótulo, você deve [instalar o cliente de Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em um computador de teste, instale o Office no centro de administração e entre no Microsoft Word com um conta no grupo **C-Suite** da sua assinatura de avaliação.
   
-Esta é a configuração resultante.
-  
-![Proteção com alto nível de confidencialidade para o site de equipe isolado do SharePoint Online chamado Estratégia empresarial.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
-  
 Agora você está pronto para criar documentos nestes quatro sites e testar o acesso a eles com várias contas de usuário em sua assinatura de avaliação.
   
 Aqui está a configuração geral para todos os quatro sites de equipe do SharePoint Online.
@@ -595,11 +578,11 @@ Aqui está a configuração geral para todos os quatro sites de equipe do ShareP
 
 Quando você estiver pronto para a implantação dos sites do SharePoint Online seguros na produção, consulte [Arquivos e sites do SharePoint Online seguros](secure-sharepoint-online-sites-and-files.md) para obter informações detalhadas e links para os artigos de implantação passo a passo.
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira Também
 
-[Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
