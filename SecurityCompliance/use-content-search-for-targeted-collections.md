@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use a pesquisa de conteúdo no centro de conformidade do & de segurança para realizar coleções direcionadas. Uma coleção direcionada significa que você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Use o script neste artigo para obter a ID da pasta ou o caminho das pastas de caixa de correio ou de site específicas que você deseja pesquisar.
-ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001234"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813992"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para coleções direcionadas
 
@@ -48,7 +48,7 @@ O recurso de pesquisa de conteúdo no centro de &amp; conformidade de segurança
 
 O script executado nesta primeira etapa retornará uma lista de pastas de caixa de correio ou pastas do SharePoint e do OneDrive for Business e a ID de pasta ou o caminho correspondente de cada pasta. Quando você executar esse script, ele solicitará as seguintes informações.
   
-- **Endereço de email ou URL do site** Digite um endereço de email do responsáveis para retornar uma lista de pastas de caixa de correio do Exchange e IDs de pasta. Ou digite a URL de um site do SharePoint ou do OneDrive for Business para retornar uma lista de caminhos para o site especificado. Estes são alguns exemplos: 
+- **Endereço de email ou URL do site** Digite um endereço de email do responsáveis para retornar uma lista de pastas de caixa de correio do Exchange e IDs de pasta. Ou digite a URL de um site do SharePoint ou do OneDrive for Business para retornar uma lista de caminhos para o site especificado. Aqui estão alguns exemplos: 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
@@ -213,7 +213,7 @@ Veja um exemplo de saída retornada pelo script para pastas de site.
 
 Após executar o script para coletar uma lista de IDs de pasta ou documentlinks para um usuário específico, a próxima etapa para acessar o centro de conformidade do & de segurança e criar uma nova pesquisa de conteúdo para pesquisar uma pasta específica. Você usará o `folderid:<folderid>` par `documentlink:<path>` propriedade ou: valor na consulta de pesquisa que você configurou na caixa palavra-chave de pesquisa de conteúdo (ou como o valor para o parâmetro *ContentMatchQuery* se você usar o cmdlet **New-ComplianceSearch** ). Você pode combinar a `folderid` propriedade `documentlink` ou com outros parâmetros de pesquisa ou condições de pesquisa. Se você incluir apenas a `folderid` propriedade `documentlink` ou na consulta, a pesquisa retornará todos os itens localizados na pasta especificada. 
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a conta e as credenciais que você usou para executar o script na etapa 1.
     

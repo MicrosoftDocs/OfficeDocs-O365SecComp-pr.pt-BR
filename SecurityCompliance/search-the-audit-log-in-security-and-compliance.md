@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479677"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814172"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
 
@@ -147,7 +147,7 @@ Este é o processo de pesquisa do log de auditoria no Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Etapa 1: executar uma pesquisa de log de auditoria
 
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Use uma sessão de navegação privada (não uma sessão normal) para acessar o centro de conformidade do & de segurança, pois isso impedirá que a credencial com a qual você está conectado no momento seja usada. Para abrir uma sessão de navegação InPrivate no Internet Explorer ou no Microsoft Edge, basta pressionar CTRL + SHIFT + P. Para abrir uma sessão de navegação privada no Google Chrome (chamado de janela incógnito), pressione CTRL + SHIFT + N. 

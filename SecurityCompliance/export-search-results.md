@@ -1,5 +1,5 @@
 ---
-title: Exportar resultados de pesquisa de conteúdo
+title: Exportar os resultados da Pesquisa de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte os resultados da pesquisa de uma pesquisa de conteúdo no centro de conformidade do & de segurança para um computador local. Os resultados de email são exportados como arquivos PST. O conteúdo de sites do SharePoint e do OneDrive for Business são exportados como documentos nativos do Office. '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000464"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814052"
 ---
-# <a name="export-content-search-results"></a>Exportar resultados de pesquisa de conteúdo
+# <a name="export-content-search-results"></a>Exportar os resultados da Pesquisa de Conteúdo
 
 Depois que uma pesquisa de conteúdo for executada com êxito, você poderá exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Há outros documentos e relatórios que são incluídos com os resultados da pesquisa exportados.
   
@@ -80,7 +80,7 @@ Exportar os resultados de uma pesquisa de conteúdo envolve preparar os resultad
 
 A primeira etapa é preparar os resultados da pesquisa para a exportação. Ao preparar os resultados, eles são carregados em um local de armazenamento do Azure na nuvem da Microsoft. Observe que o conteúdo de caixas de correio e sites é carregado com uma taxa máxima de 2 GB por hora.
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -186,7 +186,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
 
 [Nomes de itens exportados](#filenames-of-exported-items)  
   
-[Miscellaneous](#miscellaneous)
+[Diversos](#miscellaneous)
   
  ### <a name="export-limits"></a>Limites de exportação
   

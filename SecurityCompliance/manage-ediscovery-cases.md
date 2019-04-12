@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use o centro de conformidade do & de segurança para criar suspensões de descoberta eletrônica e para acessar e gerenciar casos de descoberta eletrônica em sua organização.
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000444"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814132"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gerenciar ocorrências de Descoberta Eletrônica no Centro de Conformidade e Segurança
 
@@ -25,7 +25,7 @@ Uma ocorrência de Descoberta Eletrônica permite a você adicionar membros a um
   
 Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta eletrônica no centro de conformidade do & de segurança e descoberta eletrônica avançada.
   
-[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
+[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](manage-ediscovery-cases.md#step1_1)
   
 [Etapa 2: criar um novo caso](manage-ediscovery-cases.md#step2_1)
   
@@ -73,7 +73,7 @@ A primeira etapa é atribuir as permissões relacionadas à descoberta eletrôni
   
  **Para atribuir as permissões de Descoberta Eletrônica:**
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -94,7 +94,7 @@ A primeira etapa é atribuir as permissões relacionadas à descoberta eletrôni
 
 A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função Gerente de Descoberta Eletrônica para criar ocorrências de Descoberta Eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no centro de conformidade do & de segurança, você (e outros membros de caso) poderão acessar o mesmo caso em uma descoberta eletrônica avançada, se você tiver uma assinatura do Office 365 e5.
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     

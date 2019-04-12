@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use o centro de conformidade do & de segurança para criar e gerenciar casos de descoberta eletrônica em sua organização. Você pode atribuir Membros ao caso, colocar os locais de conteúdo em espera, executar pesquisas de conteúdo associadas ao caso e exportar os resultados da pesquisa. Você também pode preparar dados de caso para análise adicional na descoberta eletrônica avançada.
-ms.openlocfilehash: 3c3d3fb6d4e2244554059e731b4585dd546ff52b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000724"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814102"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>ocorrências de descoberta eletrônica no centro de conformidade do & de segurança
 
@@ -30,7 +30,7 @@ Uma ocorrência de Descoberta Eletrônica permite a você adicionar membros a um
   
 Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta eletrônica no centro de conformidade do & de segurança e descoberta eletrônica avançada.
 
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Etapa 2: criar um novo caso](#step-2-create-a-new-case)
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre permissões de descoberta eletrônica, consu
   
  **Para atribuir as permissões de Descoberta Eletrônica:**
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -97,7 +97,7 @@ Para obter mais informações sobre permissões de descoberta eletrônica, consu
 
 A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função Gerente de Descoberta Eletrônica para criar ocorrências de Descoberta Eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no centro de conformidade do & de segurança, você (e outros membros de caso) poderão acessar o mesmo caso em uma descoberta eletrônica avançada, se você tiver uma assinatura do Office 365 e5.
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -105,7 +105,7 @@ A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você 
     
 4. Na página **nova ocorrência** , dê um nome à caixa, digite uma descrição opcional e clique em **salvar**. Observe que o nome do caso deve ser exclusivo em sua organização.
     
-    ![Criar um novo caso](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Criar uma nova ocorrência](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     O novo caso é exibido na lista de casos na página de **descoberta eletrônica** . Observe que você pode focalizar o cursor sobre um nome de caso para exibir informações sobre o caso, incluindo o status da ocorrência ( **ativa** ou **fechada**), a descrição do caso (que foi criada na etapa anterior) e quando o caso foi alterado por último e Quem a alterou.
     
@@ -528,7 +528,7 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
    
 - **E os casos que foram criados na página de gerenciamento de casos na descoberta eletrônica avançada?** Você pode acessar uma lista de casos de descoberta eletrônica avançada mais antigas clicando no link na parte inferior da página de **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança. No enTanto, para fazer qualquer trabalho em um caso mais antigo, você precisa entrar em contato com o suporte do Office 365 e solicitar que o caso seja movido para uma nova ocorrência de descoberta eletrônica no centro de conformidade do & de segurança. 
     
-- **Por que criar um Administrador de Descoberta Eletrônica? ** Conforme explicado anteriormente, um Administrador de Descoberta Eletrônica é membro do grupo de funções Gerente de Descoberta Eletrônica e pode ver e acessar todas as ocorrências de Descoberta Eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
+- **Por que criar um Administrador de Descoberta Eletrônica?** Conforme explicado anteriormente, um Administrador de Descoberta Eletrônica é membro do grupo de funções Gerente de Descoberta Eletrônica e pode ver e acessar todas as ocorrências de Descoberta Eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
     
   - se uma pessoa que é o único membro de um ocorrência de Descoberta Eletrônica sair de sua organização, ninguém (incluindo os membros do grupo de funções Gerenciamento da organização ou outro membro do grupo de funções Gerente de Descoberta Eletrônica) poderá acessar essa ocorrência de Descoberta Eletrônica, pois não é membro de uma ocorrência. Nessa situação, não haveria um modo de acessar os dados na ocorrência. No enTanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles podem ver o caso no centro de conformidade do & de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
     

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Criar uma política de arquivamento e exclusão no Office 365 que move automaticamente itens para a caixa de correio de arquivo morto de um usuário.
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935266"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814012"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar uma política de arquivo morto e exclusão para caixas de correio em sua organização do Office 365
 
@@ -64,7 +64,7 @@ A primeira etapa é habilitar a caixa de correio de arquivo morto para cada usu�
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. No centro de &amp; conformidade de segurança, vá para **arquivo**de **governança** \> de dados.
+3. No centro de conformidade do & de segurança, vá para **arquivo morto**de **governança** \> de dados.
     
     Uma lista das caixas de correio em sua organização é exibida e se a caixa de correio de arquivo morto correspondente está habilitada ou desabilitada. 
     
@@ -85,7 +85,7 @@ A primeira etapa é habilitar a caixa de correio de arquivo morto para cada usu�
     
     ![A lista de caixas de correio com a caixa de correio de arquivo morto habilitada](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Deixe o centro &amp; de conformidade de segurança aberto. Você o usará na próxima etapa.
+8. Deixe o centro de conformidade do & de segurança aberto. Você o usará na próxima etapa.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Etapa 2: criar novas marcas de retenção para as políticas de arquivo morto e exclusão
 
@@ -99,11 +99,11 @@ Nesta etapa, você criará as três marcas de retenção personalizadas descrita
     
 Para criar novas marcas de retenção, você usará o centro de administração do Exchange (Eat) em sua organização do Exchange Online.
   
-1. No centro de &amp; conformidade de segurança, clique no inicializador de aplicativos no canto superior esquerdo e, em seguida, clique no bloco **administrador** . 
+1. No centro de conformidade do & de segurança, clique no inicializador de aplicativos no canto superior esquerdo e, em seguida, clique no bloco **administrador** . 
     
-2. No painel de navegação esquerdo do centro de administração do Office 365, clique em **centros de administração**e, em seguida, clique em **Exchange**.
+2. No painel de navegação esquerdo do centro de administração do Microsoft 365, clique em **centros de administração**e, em seguida, clique em **Exchange**.
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![A captura de tela mostra o centro de administração do Microsoft 365 com a opção centros de administração expandida e o Exchange selecionado.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. No Eat, vá para **marcas de retenção** de **Gerenciamento** \> de conformidade
     

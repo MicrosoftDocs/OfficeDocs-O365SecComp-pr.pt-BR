@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento está sendo usado em sua organização. '
-ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219881"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813942"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 
@@ -73,13 +73,13 @@ Um requisito comum para administradores é criar uma lista de todos os recursos 
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Etapa 1: Pesquisar eventos de compartilhamento e exportar os resultados para um arquivo CSV
 
-A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de compartilhamento. Para obter mais detalhes (incluindo as permissões necessárias) sobre pesquisa no log de auditoria, consulte [Search the Audit Log In The Office &amp; 365 Security Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de compartilhamento. Para obter mais detalhes (incluindo as permissões necessárias) sobre pesquisa no log de auditoria, consulte [Search the Audit Log in the Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do centro de conformidade &amp; de segurança, clique **em &amp; investigação de pesquisa**e clique em **pesquisa de log de auditoria**.
+3. No painel esquerdo do centro de conformidade do & de segurança, clique em**pesquisa de log de auditoria**de **pesquisa**  > .
     
     A página **pesquisa de log de auditoria** é exibida. 
     
@@ -105,7 +105,7 @@ A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvi
   
 1. No Excel 2016, abra uma pasta de trabalho em branco.
     
-2. Clique na guia **Dados**. 
+2. Clique na guia **dados** . 
     
 3. Clique em **nova consulta** \> **de arquivo** \> **de CSV**.
     

@@ -3,7 +3,7 @@ title: Limpeza automática zero hora – proteção contra spam e malware
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479627"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818598"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática zero hora – proteção contra spam e malware
 
@@ -48,7 +48,7 @@ O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo re
 
 - Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido.
   
-A ação ZAP é transparente para o usuário da caixa de correio; Eles não são notificados quando uma mensagem de email é movida.
+A ação ZAP é transparente para o usuário da caixa de correio; Eles não são notificados quando uma mensagem de email é movida. A mensagem não deve ser mais antiga que 2 dias.
   
 As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p/?LinkId=722755)de emails e as regras de usuário final ou filtros adicionais têm precedência sobre o zap.
   
@@ -89,8 +89,11 @@ ZAP não move mensagens para a quarentena da caixa de entrada neste momento.
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>E se eu tiver uma regra de fluxo de emails personalizada (regra bloquear/permitir)?
   
 Regras criadas por administradores (regras de fluxo de emails) ou regras de bloqueio e permissão têm precedência. Essas mensagens são excluídas dos critérios de recurso para que o fluxo de email siga a ação de regra (regra bloquear/permitir).
-  
-## <a name="related-topics"></a>Tópicos Relacionados
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>E se uma mensagem for movida para outra pasta (por exemplo, regra de caixa de entrada)?
+ZAP ainda funciona nesse caso, a menos que a mensagem tenha sido excluída ou esteja em lixo eletrônico.
+
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Proteção contra spam de email do Office 365](anti-spam-protection.md)
   

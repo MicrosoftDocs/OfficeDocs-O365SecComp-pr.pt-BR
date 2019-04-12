@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Saiba como pesquisar o log de auditoria do Office 365 em busca de eventos registrados quando os administradores de conformidade executam tarefas de pesquisa de conteúdo e casos de descoberta eletrônica no centro de conformidade do & de segurança.
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000704"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814092"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Pesquisar atividades de descoberta eletrônica no log de auditoria do Office 365
 
@@ -42,7 +42,7 @@ Para obter mais informações sobre como pesquisar o log de auditoria do Office 
 
 Atualmente, você precisa fazer algumas coisas específicas para exibir as atividades de descoberta eletrônica no log de auditoria do Office 365. Veja como.
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -73,7 +73,7 @@ A tabela a seguir descreve a pesquisa de conteúdo e as atividades relacionadas 
 > [!NOTE]
 > As atividades de descoberta eletrônica descritas nesta seção fornecem informações semelhantes às atividades de cmdlet de descoberta eletrônica descritas na próxima seção. Recomendamos que você use as atividades de descoberta eletrônica descritas nesta seção, pois elas aparecerão nos resultados da pesquisa de log de auditoria em 30 minutos. É necessário até 24 horas para que as atividades do cmdlet de descoberta eletrônica apareçam nos resultados da pesquisa de log de auditoria. 
   
-|**Nome amigável**|**Operação**|**Cmdlet correspondente**|**Descrição**|
+|**Nome amigável**|**Operation**|**Cmdlet correspondente**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |Membro adicionado ao caso de descoberta eletrônica  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Um usuário foi adicionado como um membro de uma ocorrência de descoberta eletrônica. Como um membro de um caso, um usuário pode realizar várias tarefas relacionadas a maiúsculas e minúsculas, dependendo se foram atribuídas as permissões necessárias.  <br/> |
 |Pesquisa de conteúdo alterada  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Uma pesquisa de conteúdo existente foi alterada. As alterações podem incluir adição ou remoção de locais de conteúdo ou edição da consulta de pesquisa.  <br/> |
@@ -154,7 +154,7 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 > [!TIP]
 > Quando você exporta os resultados da pesquisa, o arquivo CSV contém uma coluna chamada **Detail**, que contém as propriedades detalhadas descritas na tabela a seguir em uma propriedade de vários valores. Você pode usar o recurso de consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade terá sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para obter mais informações, consulte a seção "exportar os resultados da pesquisa para um arquivo" em [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
   
-|**Property**|**Descrição**|
+|**Propriedade**|**Descrição**|
 |:-----|:-----|
 |Caso  <br/> |A identidade (GUID) da ocorrência de descoberta eletrônica que foi criada, alterada ou excluída.  <br/> |
 |ClientApplication  <br/> |as atividades de cmdlet de descoberta eletrônica têm um valor da **EMC** para esta propriedade. Isso indica que a atividade foi realizada usando a GUI do centro de conformidade do & de segurança ou executando o cmdlet no PowerShell.  <br/> |
@@ -174,7 +174,7 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 |OrganizationId  <br/> |O GUID da sua organização do Office 365.  <br/> |
 |Parâmetros  <br/> |O nome e o valor dos parâmetros que foram usados com o cmdlet correspondente.  <br/> |
 |PublicFolderLocations  <br/> |Os locais de pasta pública no Exchange Online que estão incluídos em uma pesquisa de conteúdo ou colocados em retenção em uma ocorrência de descoberta eletrônica.  <br/> |
-|Consulta  <br/> |A consulta de pesquisa associada à atividade, como uma pesquisa de conteúdo ou uma retenção baseada em consulta.  <br/> |
+|Consultar  <br/> |A consulta de pesquisa associada à atividade, como uma pesquisa de conteúdo ou uma retenção baseada em consulta.  <br/> |
 |RecordType  <br/> |O tipo de operação indicado pelo registro. O valor **18** indica um evento relacionado a uma atividade listada na seção [atividades de cmdlet de descoberta eletrônica](#ediscovery-cmdlet-activities) . Um valor de **24** indica um evento relacionado a uma atividade listada na seção [como Pesquisar e exibir atividades de descoberta eletrônica](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |
 |ResultStatus  <br/> |Indica se a ação (especificada na propriedade Operation) foi bem-sucedida ou não.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indica que a atividade era um evento de centro de conformidade do & de segurança. Todas as atividades de descoberta eletrônica terão o valor **0** para esta propriedade.  <br/> |

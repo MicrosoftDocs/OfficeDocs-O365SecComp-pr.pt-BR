@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use o centro de conformidade do & de segurança para obter vários relatórios para sua organização do SharePoint Online e do Exchange Online, além de relatórios do Azure Active Directory.  '
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999054"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813912"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Relatórios no Centro de Conformidade e Segurança
 
@@ -37,13 +37,13 @@ Você precisa das permissões a seguir para exibir relatórios no centro de conf
   
  **Para abrir a página exibir relatórios no centro de conformidade do & de segurança:**
   
-1. Acesse [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports).
+1. Acesse [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
 2. Entre no Office 365 usando as credenciais de uma conta de usuário na sua organização do Office 365.
     
 Na página **exibir relatórios** , você pode exibir os seguintes tipos de relatórios: 
   
-- [Relatórios de Auditoria](#auditing-reports)
+- [Relatórios de auditoria](#auditing-reports)
 - [Relatório de análise de supervisão](#supervisory-review-report)
 - [Relatórios de prevenção contra perda de dados](#data-loss-prevention-reports)
     

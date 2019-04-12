@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Você pode criar uma caixa de correio inativa no Office 365 aplicando uma política de retenção de bloqueio ou do Office 365 à caixa de correio e, em seguida, excluindo a conta de usuário do Office 365 correspondente. Os itens em uma caixa de correio inativa são mantidos pela duração da política de retenção ou retenção aplicada a ele antes de ser tornado inativo. Para excluir permanentemente uma caixa de correio inativa, apenas remova a política de retenção ou bloqueio.
-ms.openlocfilehash: a04447778c8083c96b77776c36984743d618a711
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001054"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813972"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Criar e gerenciar caixas de correio inativas no Office 365
 
@@ -71,9 +71,9 @@ Depois que a caixa de correio é colocada em espera ou uma política de retenç�
 
 Para exibir uma lista das caixas de correio inativas em sua organização:
   
-1. AcEsse [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
     
-2. Clique em **retenção**de **governança** \> de dados.
+2. Clique em**retenção**de **governança** > de dados.
     
 3. Na página **retenção** , clique em **mais**![elipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)de barra de navegação e clique em **caixas de correio**inativas.
     
@@ -106,7 +106,7 @@ Você pode acessar o conteúdo da caixa de correio inativa usando a ferramenta d
   
 - [Pesquisa de conteúdo no Office 365](content-search.md)
     
-- [Exportar resultados de pesquisa de conteúdo](export-search-results.md)
+- [Exportar os resultados da Pesquisa de Conteúdo](export-search-results.md)
     
 Veja algumas coisas que você deve ter em mente ao pesquisar caixas de correio inativas.
   

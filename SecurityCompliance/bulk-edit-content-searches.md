@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use o editor de pesquisa em massa no centro de segurança e conformidade no Office 365 ou no Microsoft 365 para alterar rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas de conteúdo.
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001094"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813932"
 ---
 # <a name="bulk-edit-content-searches"></a>Edição em massa de pesquisas de conteúdo
 
@@ -26,7 +26,7 @@ Para obter mais informações sobre como usar a ferramenta de estatísticas de p
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Usar o editor de pesquisa em massa para alterar consultas
 
-1. Vá para [https://compliance.microsoft.com](https://compliance.microsoft.com)e clique em pesquisa de **conteúdo**de **pesquisa** \> .
+1. Vá para [https://protection.office.com](https://protection.office.com)e clique em pesquisa de **conteúdo**de **pesquisa** \> .
     
 2. Na lista de pesquisas, selecione uma ou mais pesquisas e, em seguida, clique em editor de **pesquisa em massa** ![no botão](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor de pesquisa em massa.
     

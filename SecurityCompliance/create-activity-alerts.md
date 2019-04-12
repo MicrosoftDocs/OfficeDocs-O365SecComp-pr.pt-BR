@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Adicione e gerencie alertas de atividade no centro de conformidade e segurança para que o Office 365 envie notificações por email quando os usuários executarem atividades específicas no Office 365.
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999654"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813982"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Criar alertas de atividade no Office 365
 
@@ -43,7 +43,7 @@ Você pode criar um alerta de atividade que lhe enviará uma notificação por e
     
 ## <a name="create-an-activity-alert"></a>Criar um alerta de atividade
 
-1. Acesse [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Acesse [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -82,7 +82,7 @@ Você pode criar um alerta de atividade que lhe enviará uma notificação por e
 
 Você pode desativar um alerta de atividade para que uma notificação por email não seja enviada. Após desativar o alerta de atividade, ele ainda será exibido na lista de alertas de atividade da sua organização e você ainda poderá exibir suas propriedades.
   
-1. Acesse [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Vá para [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     

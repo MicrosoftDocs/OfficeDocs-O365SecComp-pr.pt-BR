@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade do Office 365 ou Microsoft 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo que possa estar relacionado a uma solicitação de entidade de dados do RGPD.
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001014"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814062"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
@@ -44,7 +44,7 @@ Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um 
 
 Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar resultados de pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
   
-1. AcEsse [https://compliance.microsoft.com](https://compliance.microsoft.com) e entre usando seu endereço de email e senha do Office 365.
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando seu endereço de email e senha do Office 365.
     
 2. Clique em **pesquisa de conteúdo**de **pesquisa** \> .
     
@@ -159,9 +159,9 @@ Para exportar os resultados da pesquisa:
     
 Para obter instruções mais detalhadas e dicas de solução de problemas, consulte:
   
-- [Exportar resultados de pesquisa de conteúdo](export-search-results.md)
+- [Exportar os resultados da Pesquisa de Conteúdo](export-search-results.md)
     
-- [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
+- [Exportar um relatório de Pesquisa de Conteúdo](export-a-content-search-report.md)
     
   
 ## <a name="more-information-about-content-search"></a>Mais informações sobre a pesquisa de conteúdo
