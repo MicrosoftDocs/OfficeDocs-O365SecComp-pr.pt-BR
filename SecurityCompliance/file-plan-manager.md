@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, à declaração de registros, à retenção e por fim a disposição.
-ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
+ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997267"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824430"
 ---
 # <a name="overview-of-file-plan-manager"></a>Visão geral do gerenciador de planos de arquivo
 
@@ -31,9 +31,26 @@ O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento 
 
 Há dois requisitos para acessar o gerenciador de planos de arquivo, que são:
 - Uma assinatura do Office 365 Enterprise E5.
-- O usuário ter recebido uma das seguintes funções do Centro de Conformidade e Segurança: 
+- O usuário ter recebido uma das seguintes funções do Centro de Conformidade e Segurança:
     - Gerenciador de Retenção
     - Gerenciador de Retenção somente exibição
+
+## <a name="default-retention-labels-and-label-policy"></a>Rótulos de retenção e política de rótulos padrão
+
+Se não houver rótulos de retenção na Central de Conformidade e Segurança, na primeira vez que você escolher **Planejamento de Arquivos** na navegação à esquerda, será criada uma política de rótulo chamada **Política Padrão de Publicação de Governança de Dados**. 
+
+Esta política de rótulo contém três etiquetas de retenção:
+
+- **Procedimento operacional**
+- **Geral de negócios**
+- **Contrato**
+
+Estes rótulos de retenção estão configurados apenas para reter conteúdo, e não para excluir conteúdo. Esta política de rótulos será publicada para toda a organização e poderá ser desativada ou removida. 
+
+Você pode determinar quem abriu o gerenciador de planejamento de arquivos e iniciou a primeira experiência de execução examinando as atividades **Política de retenção criada** e **Configuração de retenção criada para uma política de retenção** no log de auditoria.
+
+> [!NOTE]
+> Devido aos comentários dos clientes, removemos esse recurso que cria a política de rótulos e os rótulos de retenção padrão mencionados acima. Você só verá essa política e os rótulos se tiver usado o gerenciador de planejamento de arquivos antes de 11 de abril de 2019.
 
 ## <a name="navigating-your-file-plan"></a>Navegar pelo plano de arquivo
 
@@ -44,8 +61,8 @@ Observe que os rótulos de retenção criados fora do plano de arquivamento esta
 Na guia **rótulos de plano de arquivo**, as seguintes informações e recursos adicionais estão disponíveis:
 
 ### <a name="label-settings-columns"></a>Colunas de configurações de rótulo
- 
-- **Com base em** identifica o tipo de gatilho que iniciará o período de retenção. Os valores válidos estão: 
+
+- **Com base em** identifica o tipo de gatilho que iniciará o período de retenção. Os valores válidos estão:
     - Evento
     - Data de criação
     - Data da última modificação
@@ -58,7 +75,7 @@ Na guia **rótulos de plano de arquivo**, as seguintes informações e recursos 
     - Manter
     - Manter e excluir
     - Excluir
-- **Descarte** identifica o que acontecerá com o conteúdo no final do período de retenção. Os valores válidos são: 
+- **Descarte** identifica o que acontecerá com o conteúdo no final do período de retenção. Os valores válidos são:
     - null
     - Nenhuma ação
     - Excluir automaticamente
