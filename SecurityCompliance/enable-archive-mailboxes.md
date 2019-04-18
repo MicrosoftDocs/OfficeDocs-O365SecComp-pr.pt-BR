@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use o centro de conformidade do & de segurança no Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813962"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901939"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro de conformidade do & de segurança
   
@@ -37,7 +37,7 @@ Você precisa receber a função de destinatários de email no Exchange Online p
   
 ## <a name="enable-an-archive-mailbox"></a>Habilitar uma caixa de correio de arquivo morto
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -68,7 +68,7 @@ Observe que a política de arquivo morto padrão atribuída às caixas de correi
   
 Para desabilitar uma caixa de correio de arquivo morto:
   
-1. Acesse [https://protection.office.com](https://protection.office.com).
+1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -141,6 +141,6 @@ Execute o seguinte comando para desabilitar a caixa de correio de arquivo morto 
     
   - [Marcas e políticas de retenção](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Política de retenção padrão no Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Política de retenção padrão no Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Configurar uma política de arquivo morto e exclusão para caixas de correio em sua organização do Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
