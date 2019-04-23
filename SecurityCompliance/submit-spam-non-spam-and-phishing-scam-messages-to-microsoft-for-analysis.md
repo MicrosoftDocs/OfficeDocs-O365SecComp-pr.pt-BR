@@ -1,9 +1,9 @@
 ---
-title: Enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise
+title: Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +14,14 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Você e seus usuários podem enviar mensagens de spam falsas negativas e falsos positivos para a Microsoft para análise. '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958672"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e golpes de phishing para a Microsoft para análise
+# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 
 Pode ser frustrante quando os usuários da sua organização recebem mensagens de lixo eletrônico (spam) ou de phishing scam em suas respectivas caixa de entrada ou se não recebem uma mensagem de email legítima porque estão marcados como lixo eletrônico. Estamos constantemente ajustando os nossos filtros de spam para serem mais precisos. Você e seus usuários podem ajudar nesse processo enviando mensagens de spam falso negativo e falso positivo para a Microsoft para análise. Um "falso negativo" é uma mensagem de spam que deveria ter sido, mas não foi identificada como spam. Um "falso positivo" é uma mensagem de email legítima que foi identificada incorretamente como spam. 
   
@@ -33,11 +33,11 @@ Pode ser frustrante quando os usuários da sua organização recebem mensagens d
 
 Se você receber uma mensagem que passou pelos filtros de spam que devem ser classificados como lixo eletrônico ou golpes de phishing, você pode enviar a mensagem "falso negativo" para a análise de spam da Microsoft e as equipes de análise de phishing da Microsoft, conforme apropriado. Os analistas revisarão a mensagem e a adicionarão aos filtros de todo o serviço se atenderem aos critérios de classificação. 
   
-Para obter mais configurações de spam que se apliquem a toda a organização, consulte [Bloquear email spam com o filtro de spam do Office 365 para evitar problemas falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Este artigo contém dicas para ajudar a evitar falsos negativos.
+Para obter mais configurações de spam que se apliquem a toda a organização, consulte [Bloquear email spam com o filtro de spam do Office 365 para evitar problemas falsos negativos](reduce-spam-email.md). Este artigo contém dicas para ajudar a evitar falsos negativos.
   
 Você pode enviar mensagens de lixo eletrônico das seguintes maneiras:
   
-- Para Outlook e Outlook nos usuários da Web, use o suplemento de mensagem de relatório para o Microsoft Outlook. Para obter informações sobre como instalar e usar essa ferramenta, consulte [habilitar o suplemento de mensagem de relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). 
+- Para Outlook e Outlook nos usuários da Web, use o suplemento de mensagem de relatório para o Microsoft Outlook. Para obter informações sobre como instalar e usar essa ferramenta, consulte [habilitar o suplemento de mensagem de relatório](enable-the-report-message-add-in.md). 
         
 - Você também pode usar o email para enviar mensagens à Microsoft que devem ser classificadas como spam ou golpes de phishing, conforme descrito no procedimento a seguir.
     
@@ -66,7 +66,7 @@ Para enviar uma mensagem de spam ou golpe de phishing à Microsoft:
 
 Se uma mensagem foi identificada incorretamente como lixo eletrônico, você pode enviar a mensagem "falso positivo" para a equipe de análise de spam da Microsoft. Os analistas irão avaliar e analisar a mensagem. Dependendo dos resultados da análise, as regras de filtro de conteúdo de spam de todo o serviço podem ser ajustadas para permitir a mensagem.
   
-Os administradores podem revisar mais informações de configuração de spam que se aplicam a uma organização inteira. Veja [como ajudar a garantir que uma mensagem não seja marcada como spam](https://go.microsoft.com/fwlink/p/?LinkId=534224). Essas informações são úteis se você tiver controle de nível de administrador e quiser impedir falsos positivos.
+Os administradores podem revisar mais informações de configuração de spam que se aplicam a uma organização inteira. Veja [como ajudar a garantir que uma mensagem não seja marcada como spam](prevent-email-from-being-marked-as-spam.md). Essas informações são úteis se você tiver controle de nível de administrador e quiser impedir falsos positivos.
   
 Você pode enviar mensagens que não são spam das seguintes maneiras:
   
@@ -82,7 +82,7 @@ Você pode enviar mensagens que não são spam das seguintes maneiras:
     
   - Os usuários podem liberar suas próprias mensagens em quarentena de spam e relatá-las como falsos positivos por meio dos seguintes canais: 
     
-  - Interface do usuário do EAC (Centro de administração do Exchange). Para obter mais informações, consulte [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+  - Interface do usuário do EAC (Centro de administração do Exchange). Para obter mais informações, consulte [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
     
   - Mensagens de notificação de spam de usuário final (se estiverem habilitadas pelo administrador). 
     
@@ -118,10 +118,10 @@ A avaliação de spam é um processo contínuo que se aplica independentemente d
 ## <a name="for-more-information"></a>Para obter mais informações
 <a name="sectionSection4"> </a>
 
-[Proteção antispam e antimalware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[Proteção antispam e antimalware](anti-spam-and-anti-malware-protection.md)
   
-[Como ajudar a garantir que uma mensagem não é marcada como spam](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[Como ajudar a garantir que uma mensagem não é marcada como spam](prevent-email-from-being-marked-as-spam.md)
   
-[Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](reduce-spam-email.md)
   
 

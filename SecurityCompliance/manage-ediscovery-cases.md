@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use o centro de conformidade do & de segurança para criar suspensões de descoberta eletrônica e para acessar e gerenciar casos de descoberta eletrônica em sua organização.
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958542"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gerenciar ocorrências de Descoberta Eletrônica no Centro de Conformidade e Segurança
 
@@ -25,7 +25,7 @@ Uma ocorrência de Descoberta Eletrônica permite a você adicionar membros a um
   
 Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta eletrônica no centro de conformidade do & de segurança e descoberta eletrônica avançada.
   
-[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](manage-ediscovery-cases.md#step1_1)
+[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
   
 [Etapa 2: criar um novo caso](manage-ediscovery-cases.md#step2_1)
   

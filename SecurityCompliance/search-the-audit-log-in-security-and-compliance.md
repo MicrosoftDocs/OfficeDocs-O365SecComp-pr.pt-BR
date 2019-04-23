@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
 ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958632"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
 
@@ -498,7 +498,7 @@ A tabela a seguir lista as atividades de usuário e administrador no Sway. O Swa
   
 A tabela a seguir lista as atividades de administração do usuário registradas quando um administrador adiciona ou altera uma conta de usuário usando o centro de administração do Microsoft 365 ou o portal de gerenciamento do Azure.
   
-|**Atividade**|**Operation**|**Descrição**|
+|**Atividades**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
 |Usuário adicionado  <br/> |Adicionar usuário  <br/> |Uma conta de usuário do Office 365 foi criada.  <br/> |
 |Licença de usuário alterada  <br/> |Alterar licença de usuário  <br/> |A licença atribuída a um usuário o que foi alterado. Para ver quais licenças foram alteradas, consulte a atividade do **usuário atualizada** correspondente.  <br/> |

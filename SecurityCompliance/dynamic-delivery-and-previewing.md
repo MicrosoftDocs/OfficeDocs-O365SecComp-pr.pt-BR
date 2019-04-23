@@ -3,7 +3,7 @@ title: Entrega dinâmica e visualização com anexos seguros de ATP do Office 36
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Ao configurar as políticas de anexos seguros de ATP, você escolhe a entrega dinâmica para evitar atrasos de mensagens e permite que as pessoas visualizem os anexos que estão sendo examinados.
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958561"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinâmica e visualização com anexos seguros de ATP do Office 365
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 A entrega dinâmica é uma opção que pode ser selecionada para [anexos seguros de ATP](atp-safe-attachments.md). Leia este artigo para saber mais sobre a entrega dinâmica e recursos de visualização de anexos nos [anexos seguros de ATP no Office 365](atp-safe-attachments.md).
 
@@ -81,4 +81,4 @@ Há determinados cenários em que a entrega dinâmica não é suportada. Isso in
 
 - Mensagens criptografadas com [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
-Nos casos em que a entrega dinâmica não é suportada, os anexos seguros de ATP não verificam as mensagens de email. No enTanto, dependendo de como as [políticas de links seguros de ATP](set-up-atp-safe-links-policies.md) estão configuradas, as URLs nas mensagens de email (e arquivos do Office) serão verificadas.
+- Nos casos em que a entrega dinâmica não é suportada, os anexos seguros de ATP não verificam as mensagens de email. No enTanto, a entrega de mensagens de email com anexos que contenham URLs será verificada, dependendo de como as [políticas de links seguros de ATP](set-up-atp-safe-links-policies.md) estão configuradas. Nesses casos, as URLs em mensagens de email e arquivos do Office são verificadas.

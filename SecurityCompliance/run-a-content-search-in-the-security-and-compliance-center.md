@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use a pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar caixas de correio, sites do SharePoint Online e locais do OneDrive for Business. '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958272"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Executar uma pesquisa de conteúdo no Centro de Conformidade e Segurança
 
@@ -35,7 +35,7 @@ Você pode usar a ferramenta de descoberta eletrônica de pesquisa de conteúdo 
     
 A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrônica com recursos novos e aprimorados de desempenho e dimensionamento. Use a Pesquisa de conteúdo para executar pesquisas de Descoberta Eletrônica muito grandes. Você pode pesquisar todas as caixas de correio, todas as pastas públicas do Exchange e todos os sites do SharePoint Online e do OneDrive for Business em uma única pesquisa de conteúdo. Não há limites para o número de locais de conteúdo que você pode pesquisar. Também não há limites para o número de pesquisas que podem ser executadas ao mesmo tempo. Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um número estimado de resultados de pesquisa são exibidos no painel de detalhes na página de **pesquisa de conteúdo** . Depois de executar uma pesquisa, você pode visualizar os resultados, obter estatísticas de palavras-chave para uma ou mais pesquisas, editar pesquisas de conteúdo em massa e exportar os resultados para um computador local. 
   
- **Conteúdos**
+ **Sumário**
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -45,9 +45,9 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
   
 [Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Editar uma pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Repetir uma pesquisa](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -69,7 +69,7 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
     
     Consulte a seção sobre dicas de pesquisa de conteúdo nos grupos do Office 365 e no Microsoft Teams. 
     
-[Retornar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
@@ -162,7 +162,7 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
     
     Se necessário, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif) de atualização para atualizar as informações no painel de detalhes para a pesquisa selecionada. 
     
-[Retornar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="export-search-results"></a>Exportar resultados de pesquisa
 <a name="export"> </a>
@@ -209,7 +209,7 @@ Além disso, há suporte para os seguintes tipos de contêiner de arquivos. Voc�
     
 - . gzip
     
-[Retornar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Atualizar os resultados da pesquisa
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Quando você atualiza os resultados de uma pesquisa de conteúdo existente, a co
     
     Uma mensagem de status é exibida para informar que os resultados estão sendo recuperados. Após a conclusão da pesquisa, as informações atualizadas serão exibidas em **Resultados** no painel de detalhes. Observe que a data no campo **Pesquisado em** no painel de detalhes é atualizada para a data e a hora atuais. Para atualizar as informações na lista de pesquisas de conteúdo, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
     
-[Retornar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Editar uma pesquisa
 <a name="edit"> </a>
@@ -252,7 +252,7 @@ Se uma pesquisa retornar algum erro, você não precisará pesquisar novamente t
     
     Uma mensagem de status é exibida informando que os resultados estão sendo recuperados. Após a conclusão da pesquisa, as informações atualizadas serão exibidas em **Resultados** no painel de detalhes. Observe que a data no campo **Pesquisado em** no painel de detalhes é atualizada para a data e hora atuais. Para atualizar as informações na lista de pesquisas, clique em **Atualizar**![ícone](media/O365-MDM-Policy-RefreshIcon.gif)de atualização.
     
-[Retornar ao início](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Mais informações
 <a name="moreinfo"> </a>
@@ -265,15 +265,16 @@ Veja mais informações sobre as pesquisas de conteúdo.
  
 [Microsoft Teams e grupos do Office 365](#microsoft-teams-and-office-365-groups)
   
-[OneDrive for Business](#onedrive-for-business)
+
+  [OneDrive for Business](#onedrive-for-business)
   
 [Consultas de pesquisa](#search-queries)
   
 [Pesquisando caixas de correio inativas](#searching-inactive-mailboxes)
   
-[Diversos](#miscellaneous)
+[Miscellaneous](#miscellaneous)
   
-[Retornar ao início](#before-you-begin)
+[Return to top](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Limites e desempenho
   

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Noções básicas sobre políticas de supervisão no Office 365
-ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 550f37ad4aa8af9e6bc1d3fd8b799c72c37f2067
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958552"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
-As políticas de supervisão no Office 365 permitem que você capture comunicações de funcionários para verificação por revisores designados. Você pode definir políticas específicas que capturam emails internos e externos, Microsoft Teams ou comunicações de terceiros em sua organização. Os revisores podem, então, examinar as mensagens para garantir que estejam em conformidade com os padrões de mensagem da sua organização e resolvê-los com o tipo de classificação. Essas políticas também podem ajudá-lo a superar muitos desafios de conformidade modernos, incluindo o monitoramento de tipos crescentes de canais de comunicação, o aumento do volume de dados da mensagem e a imposição normativa &ndo o risco de multas.
+As políticas de supervisão no Office 365 permitem que você capture comunicações de funcionários para verificação por revisores designados. Você pode definir políticas específicas que capturam emails internos e externos, Microsoft Teams ou comunicações de terceiros em sua organização. Os revisores podem, então, examinar as mensagens para garantir que estejam em conformidade com os padrões de mensagem da sua organização e as resolvem com o tipo de classificação. Essas políticas também podem ajudá-lo a superar muitos desafios de conformidade modernos, incluindo o monitoramento de tipos crescentes de canais de comunicação, o aumento do volume de dados da mensagem e a imposição normativa &ndo o risco de multas.
 
 Em algumas organizações, pode haver uma separação de tarefas entre o suporte de ti e o grupo de gerenciamento de conformidade. O Office 365 oferece suporte à separação entre configurar o locatário com recursos de suporte de política de supervisão e a configuração de políticas e atuar em comunicações capturadas. Por exemplo, o grupo de ti de uma organização pode ser responsável por configurar permissões e grupos de função para dar suporte a políticas de supervisão configuradas e gerenciadas pela equipe de conformidade da organização.
 
@@ -50,7 +50,7 @@ As políticas de supervisão podem ajudar a monitorar as comunicações em sua o
 
 ### <a name="supervision-policy"></a>Política de supervisão
 
-Você criará políticas de supervisão no centro de conformidade do & de segurança. Essas políticas definem quais comunicações e usuários estão sujeitos a revisar em sua organização, definir condições personalizadas que as comunicações devem atender e especifica quem deve realizar revisões. Os usuários incluídos no grupo de função de análise de supervisão podem configurar políticas e qualquer pessoa que tenha essa função atribuída pode acessar a página de supervisão sob governança de dados no centro de conformidade do & de segurança do Office 365.
+Você criará políticas de supervisão no centro de conformidade. Essas políticas definem quais comunicações e usuários estão sujeitos a revisar em sua organização, definir condições personalizadas que as comunicações devem atender e especifica quem deve realizar revisões. Os usuários incluídos no grupo de função de análise de supervisão podem configurar políticas e qualquer pessoa que tenha essa função atribuída pode acessar a página de supervisão no centro de conformidade.
 
 ### <a name="supervised-users"></a>Usuários supervisionados
 
@@ -60,9 +60,9 @@ Antes de começar a usar a supervisão, você precisará determinar quem terá s
 > Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5.
 Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
-### <a name="reviewers"></a>Reviewers
+### <a name="reviewers"></a>Revisores
 
-Ao criar uma política de supervisão, você também determinará quem executará as revisões das mensagens dos usuários supervisionados. Na política, você usará endereços de email do usuário para identificar pessoas ou grupos de pessoas para analisar comunicações supervisionadas.
+Ao criar uma política de supervisão, você também determinará quem executará as revisões das mensagens dos usuários supervisionados. Na política, você usará endereços de email do usuário para identificar pessoas ou grupos de pessoas para analisar comunicações supervisionadas. Todos os revisores devem ter caixas de correio hospedadas no Exchange Online.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos de usuários e revisores supervisionados
 
@@ -129,7 +129,7 @@ Cada linha de palavras inserida será aplicada separadamente (somente uma linha 
   
 ##### <a name="entering-multiple-conditions"></a>Inserindo várias condições
 
-Se você inserir várias condições, o Office 365 usará todas as condições juntas para determinar quando aplicar a política a itens de comunicação. Quando você configura várias condições, todas elas devem ser atendidas para que a política seja aplicada, a menos que você digite uma exceção. Por exemplo, digamos que você precise criar uma política que deve ser aplicada se uma mensagem contiver a palavra "comércio" e maior do que 2MB. No enTanto, se a mensagem também contiver as palavras "aprovadas pela contoso Financial", a política não deverá ser aplicada. Portanto, nesse caso, as três condições seriam as seguintes:
+Se você inserir várias condições, o Office 365 usará todas as condições juntas para determinar quando aplicar a política a itens de comunicação. Quando você configura várias condições, todas elas devem ser atendidas para que a política seja aplicada, a menos que você digite uma exceção. Por exemplo, digamos que você precise criar uma política que deve ser aplicada se uma mensagem contiver a palavra "comércio" e maior que 2 MB. No enTanto, se a mensagem também contiver as palavras "aprovadas pela contoso Financial", a política não deverá ser aplicada. Portanto, nesse caso, as três condições seriam as seguintes:
   
 - A **mensagem contém qualquer uma destas palavras**, com as palavras-chave "trade"
 
@@ -139,7 +139,7 @@ Se você inserir várias condições, o Office 365 usará todas as condições j
 
 #### <a name="review-percentage"></a>Porcentagem de revisão
 
-Você pode especificar uma porcentagem de todas as comunicações governadas por uma política de supervisão se quiser reduzir a quantidade de conteúdo a ser revisado. Selecionaremos aleatoriamente essa quantidade de conteúdo da porcentagem total que corresponde às condições escolhidas. Se quiser que os revisores Revisem todos os itens, você pode inserir **100%** em uma política de supervisão.
+Se quiser reduzir a quantidade de conteúdo a ser revisada, você poderá especificar uma porcentagem de todas as comunicações governadas por uma política de supervisão. Selecionaremos aleatoriamente essa quantidade de conteúdo da porcentagem total que corresponde às condições escolhidas. Se quiser que os revisores Revisem todos os itens, você pode inserir **100%** em uma política de supervisão.
 
 ## <a name="monitoring--managing"></a>Monitoramento do & gerenciamento
 
@@ -147,7 +147,7 @@ Monitorar os resultados de suas políticas de supervisão e aplicar uma marca de
 
 ### <a name="supervision-policy-dashboard"></a>Painel de política de supervisão
 
-A maneira mais fácil de gerenciar os resultados da política de supervisão e resolver itens pendentes é usar o painel de política de supervisão. Este painel permite que os revisores vejam rapidamente os itens que precisam ser revisados, executem ações em um item e analise os resultados de itens previamente revisados e resolvidos para cada política de supervisão. você pode acessar o painel de política de supervisão no centro de conformidade do & de segurança do Office 365 em **supervisão** > *de sua política* > personalizada**aberta**.
+A maneira mais fácil de gerenciar os resultados da política de supervisão e resolver itens pendentes é usar o painel de política de supervisão. Este painel permite que os revisores vejam rapidamente os itens que precisam ser revisados, executem ações em um item e analise os resultados de itens previamente revisados e resolvidos para cada política de supervisão. Você pode acessar o painel de políticas de supervisão no centro de conformidade em **supervisão** > *da política* > personalizada**aberta**.
 
 #### <a name="dashboard-home"></a>Página inicial do painel
 
@@ -181,9 +181,9 @@ Se os revisores preferem não usar o painel de supervisão no Office 365, eles t
 
 #### <a name="outlook-on-the-web"></a>Outlook na Web
 
-Os usuários designados como revisores em uma política de supervisão podem usar o Outlook na Web para analisar e resolver os itens de supervisão. O suplemento de supervisão é instalado automaticamente no Outlook na Web para todos os revisores que você especificou na política. Nenhuma configuração adicional é necessária para sua organização para que as pastas compartilhadas da política de supervisão estejam disponíveis para revisores configurados.
+Os usuários designados como revisores em uma política de supervisão podem usar o Outlook na Web para analisar e resolver os itens de supervisão. O suplemento de supervisão é instalado automaticamente no Outlook na Web para todos os revisores que você especificou na política. Nenhuma configuração adicional é necessária para que as pastas compartilhadas da política de supervisão estejam disponíveis para revisores configurados.
 
-Usando o Outlook na Web, os revisores podem:
+Com o Outlook na Web, os revisores podem:
 
 - Exibir itens filtrados por status de conformidade, sem conformidade, questionável e resolvido
 - Marcar um item único como compatível, não compatível, questionável ou resolvido. Você também pode gravar um comentário com o item para ajudar a esclarecer a ação de marcação executada.
@@ -194,7 +194,7 @@ Usando o Outlook na Web, os revisores podem:
 
 Para revisar as comunicações identificadas por uma política de supervisão, os revisores também podem usar o suplemento de supervisão para o Microsoft Outlook. No enTanto, os revisores devem ser executados por meio de algumas etapas para instalá-lo na versão da área de trabalho do Outlook. Para obter orientações detalhadas sobre como instalar o suplemento de supervisão para o Outlook, consulte [Configure supervisão Policies](configure-supervision-policies.md).
 
-Usando o Outlook, os revisores podem:
+Com o Outlook, os revisores podem:
 
 - Exibir itens filtrados por status de conformidade, sem conformidade, questionável e resolvido
 - Marcar um item único como compatível, não compatível, questionável ou resolvido. Você também pode gravar um comentário com o item para ajudar a esclarecer a ação de marcação executada.
@@ -206,12 +206,12 @@ Usando o Outlook, os revisores podem:
 Use os relatórios de supervisão para ver a atividade de análise no nível de política e de revisor. Para cada política, você também pode exibir estatísticas dinâmicas no estado atual da atividade de análise. Você pode usar os relatórios de supervisão para:
   
 - Verifique se as políticas estão funcionando conforme desejado.
-- Descubra quantas comunicações estão sendo identificadas para revisão.
+- Descubra quantas comunicações são identificadas para revisão.
 - Descubra quantas comunicações não estão em conformidade e quais estão passando revisão. Essas informações podem ajudá-lo a decidir se deve ajustar suas políticas ou alterar o número de revisores.
 
 ### <a name="view-the-supervision-report"></a>Exibir o relatório de supervisão
 
-1. Entre no [centro de conformidade do & de segurança](https://protection.office.com/) usando as credenciais de uma conta de administrador na sua organização do Office 365 que tenha permissões para exibir relatórios de supervisão.
+1. Entre no [centro de conformidade](https://compliance.microsoft.com) com as credenciais de uma conta de administrador em sua organização que tenha permissões para exibir relatórios de supervisão.
 2. Vá para o **** \> **painel** de relatórios ou **supervisão**. Você verá um widget relatório de supervisão com um resumo da atividade atual de política de supervisão.
 3. Selecione o widget **supervisão** para abrir a página relatório detalhado.
 
@@ -220,7 +220,7 @@ Use os relatórios de supervisão para ver a atividade de análise no nível de 
   
 ### <a name="how-to-use-the-report"></a>Como usar o relatório
 
-Quando uma política de supervisão identifica uma mensagem de comunicação para revisão, o email é entregue na pasta de supervisão do revisor no Outlook e no Outlook na Web (anteriormente conhecido como Outlook Web App). Este relatório lista o nome de cada política e o número de comunicações em cada estágio no processo de revisão.
+Quando uma política de supervisão identifica uma mensagem de comunicação para revisão, o email é entregue na pasta de supervisão do revisor no Outlook e no Outlook na Web (anteriormente conhecido como Outlook Web App). Este relatório lista cada política e o número de comunicações em cada estágio no processo de revisão.
   
 Use o relatório para:
   
@@ -234,7 +234,7 @@ Aqui está uma divisão dos valores que podem ser exibidos na coluna **tipo de m
 |**Tipo de marca**|**O que significa**|
 |:-----|:-----|
 | Não reVisado | O número de emails que ainda não foram revisados. Estes emails estão aguardando revisão no painel de supervisão do Office 365 ou na pasta de supervisão do revisor no Outlook/Outlook na Web
-| Compliant | O número de emails revisados e marcados como em conformidade. Essas mensagens ainda precisam ser resolvidas. |
+| Compatível com | O número de emails revisados e marcados como em conformidade. Essas mensagens ainda precisam ser resolvidas. |
 | Questionáveis | O número de emails revisados e marcados como questionáveis. Isso atua como um sinalizador; outros revisores podem ajudar a verificar se um email precisa de investigação de conformidade. Essas mensagens ainda precisam ser resolvidas. |
 | Não compatível (ativo) | O número de emails não compatíveis que os revisores estão investigando no momento. |
 | Não compatível (resolvido) | O número de emails não compatíveis que os revisores investigaram e resolveram. |
@@ -247,9 +247,9 @@ Aqui está uma divisão dos valores que podem ser exibidos na coluna **tipo de m
 
 ## <a name="auditing"></a>Auditoria
 
-Em alguns casos, você precisará fornecer informações a auditores normativos ou de conformidade para provar a supervisão de atividades e comunicações de funcionários. Isso pode ser um resumo de todas as atividades de supervisão associadas a uma política definida ou sempre que uma política de supervisão foi alterada ou atualizada. As políticas de supervisão têm trilhas de auditoria internas para uma preparação completa para auditorias internas ou externas. A prova de procedimentos de supervisão pode ser demonstrada com um histórico de auditoria detalhado de todas as ações monitoradas por suas políticas de supervisão.
+Em alguns casos, você precisa fornecer informações a auditores normativos ou de conformidade para provar a supervisão de atividades e comunicações de funcionários. Isso pode ser um resumo de todas as atividades de supervisão associadas a uma política definida ou sempre que uma política de supervisão foi alterada ou atualizada. As políticas de supervisão têm trilhas de auditoria internas para uma preparação completa para auditorias internas ou externas. A prova de procedimentos de supervisão pode ser demonstrada com um histórico de auditoria detalhado de todas as ações monitoradas por suas políticas de supervisão.
 
-As seguintes atividades de política de supervisão são auditadas e podem ser exibidas usando os logs de auditoria unificados do Office 365:
+As seguintes atividades de política de supervisão são auditadas e estão disponíveis nos logs de auditoria unificados do Office 365:
 
 |**Atividades**|**Comandos associados**|
 |:-----|:-----|
@@ -258,7 +258,7 @@ As seguintes atividades de política de supervisão são auditadas e podem ser e
 | Excluindo uma política| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
 | Exibindo uma política | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
-As auditorias podem ser recuperadas usando a função de pesquisa de log de auditoria unificada ou usando o cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) do PowerShell.
+As atividades de auditoria são exibidas com a função de pesquisa de log de auditoria unificado ou com o cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) do PowerShell.
 
 Por exemplo, o exemplo a seguir retorna as atividades para todas as atividades de análise de supervisão (políticas e regras) e lista informações detalhadas de cada:
 

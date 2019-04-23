@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Saiba como pesquisar o log de auditoria do Office 365 em busca de eventos registrados quando os administradores de conformidade executam tarefas de pesquisa de conteúdo e casos de descoberta eletrônica no centro de conformidade do & de segurança.
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958712"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Pesquisar atividades de descoberta eletrônica no log de auditoria do Office 365
 
@@ -73,7 +73,7 @@ A tabela a seguir descreve a pesquisa de conteúdo e as atividades relacionadas 
 > [!NOTE]
 > As atividades de descoberta eletrônica descritas nesta seção fornecem informações semelhantes às atividades de cmdlet de descoberta eletrônica descritas na próxima seção. Recomendamos que você use as atividades de descoberta eletrônica descritas nesta seção, pois elas aparecerão nos resultados da pesquisa de log de auditoria em 30 minutos. É necessário até 24 horas para que as atividades do cmdlet de descoberta eletrônica apareçam nos resultados da pesquisa de log de auditoria. 
   
-|**Nome amigável**|**Operation**|**Cmdlet correspondente**|**Descrição**|
+|**Nome amigável**|**Operação**|**Cmdlet correspondente**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |Membro adicionado ao caso de descoberta eletrônica  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Um usuário foi adicionado como um membro de uma ocorrência de descoberta eletrônica. Como um membro de um caso, um usuário pode realizar várias tarefas relacionadas a maiúsculas e minúsculas, dependendo se foram atribuídas as permissões necessárias.  <br/> |
 |Pesquisa de conteúdo alterada  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Uma pesquisa de conteúdo existente foi alterada. As alterações podem incluir adição ou remoção de locais de conteúdo ou edição da consulta de pesquisa.  <br/> |
@@ -154,7 +154,7 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 > [!TIP]
 > Quando você exporta os resultados da pesquisa, o arquivo CSV contém uma coluna chamada **Detail**, que contém as propriedades detalhadas descritas na tabela a seguir em uma propriedade de vários valores. Você pode usar o recurso de consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade terá sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para obter mais informações, consulte a seção "exportar os resultados da pesquisa para um arquivo" em [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
   
-|**Propriedade**|**Descrição**|
+|**Property**|**Descrição**|
 |:-----|:-----|
 |Caso  <br/> |A identidade (GUID) da ocorrência de descoberta eletrônica que foi criada, alterada ou excluída.  <br/> |
 |ClientApplication  <br/> |as atividades de cmdlet de descoberta eletrônica têm um valor da **EMC** para esta propriedade. Isso indica que a atividade foi realizada usando a GUI do centro de conformidade do & de segurança ou executando o cmdlet no PowerShell.  <br/> |
@@ -184,5 +184,5 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 |UserKey  <br/> |Uma ID alternativa para o usuário identificado na propriedade UserId. Para atividades de descoberta eletrônica, o valor dessa propriedade é geralmente o mesmo que a propriedade UserId.  <br/> |
 |UserServicePlan  <br/> |A assinatura do Office 365 usada por sua organização. Para atividades de descoberta eletrônica, essa propriedade geralmente está em branco.  <br/> |
 |UserType  <br/> |O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário.  <br/> 0 um usuário regular. 2 um administrador na sua organização do Office 365. 3 uma conta de administrador de datacenter da Microsoft ou sistema de datacenter. 4 uma conta do sistema. 5 um aplicativo. 6 uma entidade de serviço. |
-|Versão  <br/> |Indica o número da versão da atividade (identificado pela Propriedade Operation) registrada.  <br/> |
+|Version  <br/> |Indica o número da versão da atividade (identificado pela Propriedade Operation) registrada.  <br/> |
 |Workload  <br/> |O serviço do Office 365 em que a atividade ocorreu. Para atividades de descoberta eletrônica, o valor é **SecurityComplianceCenter**.  <br/> |

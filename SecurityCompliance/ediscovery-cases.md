@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use o centro de conformidade do & de segurança para criar e gerenciar casos de descoberta eletrônica em sua organização. Você pode atribuir Membros ao caso, colocar os locais de conteúdo em espera, executar pesquisas de conteúdo associadas ao caso e exportar os resultados da pesquisa. Você também pode preparar dados de caso para análise adicional na descoberta eletrônica avançada.
-ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958522"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>ocorrências de descoberta eletrônica no centro de conformidade do & de segurança
 
@@ -30,7 +30,7 @@ Uma ocorrência de Descoberta Eletrônica permite a você adicionar membros a um
   
 Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta eletrônica no centro de conformidade do & de segurança e descoberta eletrônica avançada.
 
-[Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Etapa 2: criar um novo caso](#step-2-create-a-new-case)
 
@@ -95,7 +95,7 @@ Para obter mais informações sobre permissões de descoberta eletrônica, consu
 
 ## <a name="step-2-create-a-new-case"></a>Etapa 2: criar um novo caso
 
-A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função Gerente de Descoberta Eletrônica para criar ocorrências de Descoberta Eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no centro de conformidade do & de segurança, você (e outros membros de caso) poderão acessar o mesmo caso em uma descoberta eletrônica avançada, se você tiver uma assinatura do Office 365 e5.
+A próxima etapa é criar uma nova ocorrência de descoberta eletrônica. Você deve ser membro do grupo de função Gerente de Descoberta Eletrônica para criar ocorrências de Descoberta Eletrônica. Conforme explicado anteriormente, após a criação de um novo caso no centro de conformidade do & de segurança, você (e outros membros de caso) poderão acessar o mesmo caso na descoberta eletrônica avançada, se sua organização tiver uma assinatura do Office 365 e5.
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
@@ -528,7 +528,7 @@ Quando você reabrir um caso, qualquer bloqueio que estava no lugar quando o cas
    
 - **E os casos que foram criados na página de gerenciamento de casos na descoberta eletrônica avançada?** Você pode acessar uma lista de casos de descoberta eletrônica avançada mais antigas clicando no link na parte inferior da página de **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança. No enTanto, para fazer qualquer trabalho em um caso mais antigo, você precisa entrar em contato com o suporte do Office 365 e solicitar que o caso seja movido para uma nova ocorrência de descoberta eletrônica no centro de conformidade do & de segurança. 
     
-- **Por que criar um Administrador de Descoberta Eletrônica?** Conforme explicado anteriormente, um Administrador de Descoberta Eletrônica é membro do grupo de funções Gerente de Descoberta Eletrônica e pode ver e acessar todas as ocorrências de Descoberta Eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
+- **Por que criar um Administrador de Descoberta Eletrônica? ** Conforme explicado anteriormente, um Administrador de Descoberta Eletrônica é membro do grupo de funções Gerente de Descoberta Eletrônica e pode ver e acessar todas as ocorrências de Descoberta Eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
     
   - se uma pessoa que é o único membro de um ocorrência de Descoberta Eletrônica sair de sua organização, ninguém (incluindo os membros do grupo de funções Gerenciamento da organização ou outro membro do grupo de funções Gerente de Descoberta Eletrônica) poderá acessar essa ocorrência de Descoberta Eletrônica, pois não é membro de uma ocorrência. Nessa situação, não haveria um modo de acessar os dados na ocorrência. No enTanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles podem ver o caso no centro de conformidade do & de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
     

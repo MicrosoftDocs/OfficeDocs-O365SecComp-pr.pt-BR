@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use o centro de conformidade do & de segurança no Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958302"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro de conformidade do & de segurança
   
@@ -37,7 +37,7 @@ Você precisa receber a função de destinatários de email no Exchange Online p
   
 ## <a name="enable-an-archive-mailbox"></a>Habilitar uma caixa de correio de arquivo morto
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
@@ -68,7 +68,7 @@ Observe que a política de arquivo morto padrão atribuída às caixas de correi
   
 Para desabilitar uma caixa de correio de arquivo morto:
   
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     

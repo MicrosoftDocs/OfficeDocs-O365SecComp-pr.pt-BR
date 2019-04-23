@@ -1,5 +1,5 @@
 ---
-title: Carregar dados que não sejam do Office 365 em um conjunto de trabalho
+title: Carregar dados do Office 365 em um conjunto de trabalho
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958692"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>Carregar dados que não sejam do Office 365 em um conjunto de trabalho
+# <a name="load-non-office-365-data-into-a-working-set"></a>Carregar dados do Office 365 em um conjunto de trabalho
 
 Nem todos os documentos que você pode precisar analisar com a descoberta eletrônica avançada do Office 365 residirão no Office 365. Com o recurso de importação de conteúdo não-Office 365 na descoberta eletrônica avançada, é possível carregar documentos que não residem no Office 365 em um conjunto de trabalho para que seja analisado com a descoberta eletrônica avançada. Este procedimento mostra como trazer documentos não-Office 365 para a descoberta eletrônica avançada para análise.
 
@@ -47,19 +47,21 @@ O uso do recurso de upload que não é do Office 365 conforme descrito neste pro
 
    Onde abraham.mcmahon@contoso.com, jewell.gordon@contoso.com e staci.gonzalez@contoso.com são endereços SMTP dos responsáveis no caso.
 
+![Estrutura de pastas de carregamento de dados não-Office 365](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - Uma conta que seja um Gerenciador de descoberta eletrônica ou ferramentas de armazenamento do Microsoft Azure administrador instaladas em um computador que tenha acesso à estrutura de pasta de conteúdo não-Office 365.
 
 - Instale o AzCopy, que pode ser feito aqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Carregar conteúdo que não seja do Office 365 na descoberta eletrônica avançada
 
-1. Como um gerente de descoberta eletrônica ou administrador de descoberta eletrônica, abra a descoberta eletrônica avançada e, em seguida, o caso em que os dados que não sejam do Office 365 serão carregados.  Clique na guia **conjuntos de trabalho** e selecione o conjunto de trabalho para o qual você deseja carregar os dados não-Office 365.  Se você ainda não criou um conjunto de trabalho, você pode fazer isso agora.  Por fim, clique em **gerenciar conjunto de trabalho** , **Exibir uploads** na seção de dados não-Office 365
+1. Como um gerente de descoberta eletrônica ou administrador de descoberta eletrônica, abra a descoberta eletrônica avançada e, em seguida, o caso em que os dados que não sejam do Office 365 serão carregados.  Clique na guia **conjuntos de trabalho** e selecione o conjunto de trabalho para o qual você deseja carregar os dados não-Office 365.  Se você ainda não criou um conjunto de trabalho, você pode fazer isso agora.  Por fim, clique em **gerenciar conjunto de trabalho** e, em seguida, **exiba** os carregamentos na seção dados não-Office 365.
 
 2. Clique no botão **carregar arquivos** para iniciar o assistente de importação de dados não-Office 365.
 
 ![Carregar arquivos](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. A primeira etapa no assistente simplesmente prepara um blob do Azure seguro para os arquivos a serem carregados.  Após a preparação ser compelted, clique no botão **próximo: carregar arquivos** .
+3. A primeira etapa no assistente simplesmente prepara um blob do Azure seguro para os arquivos a serem carregados.  Após a conclusão da preparação, clique no botão **próximo: carregar arquivos** .
 
 ![Não-Office 365 Import-Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
