@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241092"
 ---
 # <a name="tag-documents-in-a-working-set"></a>Marcar documentos em um conjunto de trabalho
 
 Organizar o conteúdo em um conjunto de trabalho é importante para concluir vários fluxos de trabalho no processo de descoberta eletrônica. Isso inclui:
 
--  Remoção de conteúdo desnecessário.
+-  Como analisar conteúdo desnecessário
 
-- Identificação de conteúdo relevante.
+- Identificando conteúdo relevante
  
--  Identificar o conteúdo que deve ser revisado por um especialista ou advogado.
+-  Identificar conteúdo que deve ser revisado por um especialista ou advogado
 
 Quando especialistas, advogados ou outros usuários revisam o conteúdo em um conjunto de trabalho, suas opiniões relacionadas ao conteúdo podem ser capturadas usando marcas. Por exemplo, se a intenção é de analisar conteúdo desnecessário, um usuário pode marcar documentos com uma marca como "não responsiva". Após o conteúdo ter sido revisado e marcado, uma pesquisa de conjunto de trabalho pode ser criada para excluir qualquer conteúdo marcado como "não responsivo", o que elimina esse conteúdo das próximas etapas no fluxo de trabalho de descoberta eletrônica. O painel de marcas pode ser personalizado para todos os casos, para que as marcas possam suportar o fluxo de trabalho de revisão desejado.
 

@@ -1,5 +1,5 @@
 ---
-title: Remover um usuário do portal de usuários restritos após o envio de email de spam
+title: Remoção de um usuário do portal de Usuários Restritos após o envio de email de spam
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 description: Se um usuário enviar continuamente emails do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens.
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264933"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Remover um usuário do portal de usuários restritos após o envio de email de spam
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Remoção de um usuário do portal de Usuários Restritos após o envio de email de spam
 
 Se um usuário enviar continuamente emails do Office 365 classificados como spam, eles serão impedidos de enviar mais mensagens de saída. O usuário será listado no serviço como um remetente de saída incorreto e receberá uma notificação de falha na entrega (NDR) que diz:
 

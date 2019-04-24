@@ -15,15 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Resumo: uma descrição da criptografia para o Skype, o OneDrive, o SharePoint e o Exchange Online.'
 ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262783"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Criptografia do Office 365 para o Skype for Business, OneDrive for Business, SharePoint Online e Exchange Online
 
-O Office 365 é um ambiente altamente seguro que oferece proteção abrangente em várias camadas: segurança física do Data Center, segurança da rede, segurança do acesso, segurança do aplicativo e segurança dos dados.
+O Office 365 é um ambiente altamente seguro, que fornece proteção ampla em várias camadas: segurança física de data center, segurança de rede, segurança de acesso, segurança de aplicativo e segurança de dados.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -44,12 +44,12 @@ Várias cargas de trabalho no Office 365 armazenar dados no SharePoint Online, i
     - O banco de dados de conteúdo é protegido por controles de acesso ao banco de dados e criptografia em repouso. A criptografia é realizada usando a [criptografia de dados transparente](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) (TDE) no banco de dados [SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). (O banco de dados SQL do Azure é um serviço de banco de dados relacional de uso geral no Microsoft Azure que oferece suporte a estruturas como dados relacionais, JSON, Spatial e XML.) Esses segredos estão no nível de serviço do SharePoint Online, e não no nível do locatário. Esses segredos (às vezes chamados de chaves mestras) são armazenados em um repositório seguro separado chamado de armazenamento de chave. O TDE fornece segurança em repouso para o banco de dados ativo e os backups e logs de transações.
     - Quando os clientes fornecem a chave opcional, a chave do cliente é armazenada no Azure Key Vault, e o serviço usa a chave para criptografar uma chave de locatário, que é usada para criptografar uma chave de site, que é usada para criptografar as chaves de nível de arquivo. Essencialmente, uma nova hierarquia de chave é introduzida quando o cliente fornece uma chave.
 - O mapa usado para remontar o arquivo é armazenado no banco de dados de conteúdo juntamente com as chaves criptografadas, separadamente da chave mestra necessária para descriptografá-las.
-- Cada conta de armazenamento do Azure tem suas próprias credenciais exclusivas por tipo de acesso (ler, gravar, enumerar e excluir). Cada conjunto de credenciais é mantido no armazenamento de chave segura e é atualizado regularmente. Conforme descrito acima, há três tipos diferentes de repositórios, cada um com uma função distinta:
+- Cada conta de armazenamento do Azure tem suas próprias credenciais exclusivas por tipo de acesso (ler, gravar, enumerar e excluir). Cada conjunto de credenciais é mantido no Repositório de Chaves seguro e atualizado regularmente. Conforme descrito acima, há três tipos diferentes de repositórios, cada um com uma função distinta:
     - Os dados do cliente são armazenados como BLOBs criptografados no armazenamento do Azure. A chave para cada parte dos dados do cliente é criptografada e armazenada separadamente no banco de dados de conteúdo. Os dados do cliente propriamente ditos não têm idéia de como ele pode ser descriptografado.
     - O banco de dados de conteúdo é um banco de dados do SQL Server. Ele mantém o mapa necessário para localizar e remontar os blobs de dados do cliente mantidos no armazenamento do Azure, bem como as chaves necessárias para criptografar esses BLOBs. No enTanto, o conjunto de chaves é criptografado (conforme explicado acima) e mantido em um repositório de chaves separado.
     - O repositório de chave é fisicamente separado do banco de dados de conteúdo e do Azure Storage. Ele contém as credenciais de cada contêiner de armazenamento do Azure e a chave mestra para o conjunto de chaves criptografadas mantidas no banco de dados de conteúdo.
 
-Cada um desses três componentes de armazenamento – o repositório de blob do Azure, o banco de dados de conteúdo e o armazenamento de chaves – é fisicamente separado. As informações contidas em qualquer um dos componentes não podem ser usadas por conta própria. Sem acesso a todos os três, é impossível recuperar as chaves para os fragmentos, descriptografar as teclas para torná-las utilizáveis, associar as chaves com seus blocos correspondentes, descriptografar cada parte ou reconstruir um documento de seus blocos constituintes.
+Cada um desses três componentes de armazenamento – o repositório de blob do Azure, o banco de dados de conteúdo e o armazenamento de chaves – é fisicamente separado. As informações contidas nesses componentes por si só não são utilizáveis. Sem acesso a todos os três, é impossível recuperar as chaves para os fragmentos, descriptografar as teclas para torná-las utilizáveis, associar as chaves com seus blocos correspondentes, descriptografar cada parte ou reconstruir um documento de seus blocos constituintes.
 
 Os certificados do BitLocker, que protegem os volumes de disco físico em máquinas no datacenter, são armazenados em um repositório seguro (o repositório secreto do SharePoint Online) que é protegido pela chave do farm.
 
@@ -73,8 +73,8 @@ Itens de lista são partes menores de dados do cliente que são criados ad-hoc o
 
 No OneDrive for Business e no SharePoint Online, há dois cenários em que os dados entram e saem dos data centers.
 
-- A **comunicação do cliente com a comunicação do servidor com o** onedrive for Business pela Internet usa conexões SSL/TLS. Todas as conexões SSL são estabelecidas usando chaves de 2048 bits.
-- **Movimentação de dados entre** data centers-o principal motivo para mover dados entre data centers é para replicação geográfica para permitir a recuperação de desastres. Por exemplo, logs de transações do SQL Server e deltas de armazenamento de blob viajam ao longo desse pipe. Embora esses dados já estejam sendo transmitidos por meio de uma rede privada, eles estão protegidos com a melhor criptografia de classe.
+- A **comunicação do cliente com a comunicação do servidor com o** onedrive for Business pela Internet usa conexões SSL/TLS. Todas as conexões SSL são estabelecidas por meio de chaves de 2.048 bits.
+- **Movimentação de dados entre** data centers-o principal motivo para mover dados entre data centers é para replicação geográfica para permitir a recuperação de desastres. Por exemplo, os logs de transação e os deltas de armazenamento de blobs do SQL Server passam por esse pipe. Embora esses dados já sejam transmitidos por meio de uma rede privada, eles estarão ainda mais protegidos com a melhor criptografia do mercado.
 
 ## <a name="exchange-online"></a>Exchange Online
 

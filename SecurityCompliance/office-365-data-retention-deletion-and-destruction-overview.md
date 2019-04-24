@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Uma visão geral das políticas da Microsoft para o Office 365 em relação à retenção, exclusão e destruição de dados.
 ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262833"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retenção, exclusão e destruição de dados no Office 365
 
@@ -51,4 +51,4 @@ Em todos os momentos durante o período de qualquer assinatura, um assinante pod
 - [Imutabilidade no Office 365](office-365-data-immutability.md)
 - [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 - [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
-- [Exclusão de dados do Skype for Business](office-365-skype-data-deletion.md)
+- [Exclusão de dados do Skype for Business ](office-365-skype-data-deletion.md)

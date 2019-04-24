@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Os administradores podem saber mais sobre o relatório de mapa de fluxo de emails no painel de fluxo de emails no centro de conformidade do & de segurança.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252404"
 ---
 # <a name="mail-flow-map-report"></a>Relatório de mapa de fluxo de email
 
@@ -32,7 +32,7 @@ Por padrão, o mapa de fluxo de emails mostra o padrão de fluxo de emails de al
 
 ![Setas para a esquerda e para a direita no widget mapa de fluxo de emails](media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 Clicar no widget **mapa de fluxo** de emails o levará para o relatório de **mapa de fluxo** de emails. Aqui você pode ver o nível mais granular do relatório, você pode clicar em Exibir tabela de detalhes para ver os dados detalhados. Você também pode baixar o relatório detalhado clicando em solicitação de relatório.
 

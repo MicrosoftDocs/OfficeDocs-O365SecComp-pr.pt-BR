@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Criar relatórios com o Office 365 Cloud app Security que permite que você entenda como as pessoas em sua organização estão usando o Office 365 e outros aplicativos.
 ms.openlocfilehash: 23165a52a09e5bcde46ee3ab2110dc17d0faf7f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259630"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Criar relatórios de descoberta de aplicativo usando o Office 365 Cloud App Security
 

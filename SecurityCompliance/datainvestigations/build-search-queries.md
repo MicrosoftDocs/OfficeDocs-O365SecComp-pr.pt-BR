@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Use palavras-chave e condições para restringir o escopo da pesquisa ao pesquisar dados ao usar a investigação de dados no Microsoft 365.
 ms.openlocfilehash: eeca1bf7ff89d1b7f79ceeed3334668e354f035a
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262875"
 ---
 # <a name="build-search-queries"></a>Criar consultas de pesquisa
 

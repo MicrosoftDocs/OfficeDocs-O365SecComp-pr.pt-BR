@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Você pode ativar o recurso pesquisa de log de auditoria no centro de conformidade do & de segurança. Se você mudar de ideia, poderá desativar se estiver desligado a qualquer momento. Quando a pesquisa de log de auditoria está desativada, os administradores não podem pesquisar o log de auditoria do Office 365 para atividades de usuário e administrador em sua organização.
 ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265365"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Ativar e desativar a Pesquisa de log de auditoria do Office 365
 
@@ -59,7 +59,7 @@ Você pode usar o centro de conformidade ou o PowerShell de segurança do & para
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Usar o PowerShell para ativar a pesquisa de log de auditoria
 
-1. [Conectar-se ao Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Conectar-se ao PowerShell do Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. Execute o seguinte comando do PowerShell para ativar a pesquisa de log de auditoria no Office 365.
     
@@ -73,7 +73,7 @@ Você pode usar o centro de conformidade ou o PowerShell de segurança do & para
 
 Você precisa usar o PowerShell remoto conectado à sua organização do Exchange Online para desativar a pesquisa de log de auditoria. Semelhante à ativação da pesquisa de log de auditoria, você precisa ter atribuído a função de logs de auditoria no Exchange Online para desativar a pesquisa de log de auditoria.
   
-1. [Conectar-se ao Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Conectar-se ao PowerShell do Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. Execute o seguinte comando do PowerShell para desativar a pesquisa de log de auditoria no Office 365.
     

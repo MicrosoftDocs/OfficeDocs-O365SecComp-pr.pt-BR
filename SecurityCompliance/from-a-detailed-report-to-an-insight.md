@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Saiba como você pode migrar de um relatório detalhado para uma visão com as ações recomendadas &amp; no centro de conformidade de segurança.
 ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255292"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Passo a passo – De um relatório detalhado para um insight
 
@@ -32,7 +32,7 @@ Esta é uma das várias orientações passo a passo para &amp; o centro de confo
 
 Vamos examinar o fluxo de um relatório detalhado para obter informações e ações. (Este é um exemplo breve [de antispam e antimalware](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Começamos com os relatórios do [centro de conformidade de segurança &amp; ](https://protection.office.com) . (Vá para o **painel**de **relatórios** \> .)<br/>![No centro de &amp; conformidade de segurança, vá para \> painel de relatórios](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Começamos com os relatórios do [centro de conformidade de segurança &amp; ](https://protection.office.com) . (Vá para o **painel**de **relatórios** \> .) <br/>![No centro de &amp; conformidade de segurança, vá para \> painel de relatórios](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Escolhemos um relatório para obter uma visão mais detalhada. (Escolha um relatório, como o relatório de **status de proteção contra ameaças** .)<br/>![Relatório de status de proteção contra ameaças mostrando insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

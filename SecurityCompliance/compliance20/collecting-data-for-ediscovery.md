@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242549"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Coletar dados para uma ocorrência na descoberta eletrônica avançada (visualização)
 
@@ -40,7 +40,7 @@ Após a conclusão da pesquisa, clique na pesquisa para exibir a página do menu
 
 - Resumo
 - Principais locais
-- Queries
+- Consultas
 
 Para obter mais informações sobre estatísticas de pesquisa, confira [Estatísticas de pesquisa](search-statistics.md).
 

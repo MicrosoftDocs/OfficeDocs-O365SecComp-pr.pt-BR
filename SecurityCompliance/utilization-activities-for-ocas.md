@@ -1,5 +1,5 @@
 ---
-title: Atividades de utilização após a implantação do Office 365 Cloud app Security
+title: Atividades de utilização após a implantação do Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Depois de configurar e distribuir o Office 365 Cloud app Security, convém executar determinadas tarefas para garantir que sua configuração esteja correta e que você esteja preparado para revisões regulares.
 ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242539"
 ---
-# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Atividades de utilização após a implantação do Office 365 Cloud app Security
+# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Atividades de utilização após a implantação do Office 365 Cloud App Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
@@ -94,7 +94,7 @@ Se um período de tempo decorrido tiver passado desde que você inicialmente con
     
 - [Gerenciar aplicativos OAuth](manage-app-permissions-in-ocas.md)
     
-- [Examinar as descobertas de descoberta de aplicativos no Office 365 Cloud app Security](review-app-discovery-findings-in-ocas.md)
+- [Analisar descobertas de aplicativos do Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 - Exibir uma lista de [logs de tráfego da Web e fontes de dados](web-traffic-logs-and-data-sources-for-ocas.md) suportados
     

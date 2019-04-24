@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Você pode usar o gerenciamento de direitos de informação (IRM) para ajudar a controlar e proteger arquivos baixados de listas ou bibliotecas.
 ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244014"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar o gerenciamento de direitos de informação (IRM) a uma lista ou biblioteca
 
@@ -77,7 +77,7 @@ Você pode usar o gerenciamento de direitos de informação (IRM) para ajudar a 
 ## <a name="what-is-information-rights-management"></a>O que é gerenciamento de direitos de informação?
 <a name="__toc256598175"> </a>
 
-O gerenciamento de direitos de informação (IRM) permite limitar as ações que os usuários podem executar em arquivos que foram baixados de listas ou bibliotecas. O IRM criptografa os arquivos baixados e limita o conjunto de usuários e programas que têm permissão para descriptografar esses arquivos. O IRM também pode limitar os direitos dos usuários que têm permissão para ler arquivos, para que eles não possam realizar ações como cópias impressas dos arquivos ou copiar texto deles.
+O gerenciamento de direitos de informação (IRM) permite limitar as ações que os usuários podem executar em arquivos que foram baixados de listas ou bibliotecas. O IRM criptografa os arquivos baixados e limite o conjunto de usuários e programas que podem descriptografar estes arquivos. O IRM também pode limitar os direitos dos usuários que podem ler arquivos, para que eles não possam tomar ações como imprimir cópias dos arquivos ou copiar o texto.
   
 Você pode usar o IRM em listas ou bibliotecas para limitar a disseminação de conteúdo confidencial. Por exemplo, se você estiver criando uma biblioteca de documentos para compartilhar informações sobre produtos futuros com representantes de marketing selecionados, você pode usar o IRM para impedir que essas pessoas compartilhem esse conteúdo com outros funcionários da empresa.
   
@@ -133,8 +133,8 @@ Os tipos de restrições que são aplicadas a um arquivo quando ele é baixado d
 |:-----|:-----|
 |Gerenciar permissões, gerenciar site da Web  <br/> |**Controle total** (conforme definido pelo programa cliente): essa permissão geralmente permite que um usuário leia, edite, copie, salve e modifique permissões de conteúdo gerenciado por direitos.  <br/> |
 |Editar itens, gerenciar listas, adicionar e personalizar páginas  <br/> |**Editar**, **copiar**e **salvar**: um usuário pode imprimir um arquivo somente se a caixa de seleção **permitir que os usuários imprimam documentos** estiver marcada na página Configurações de gerenciamento de direitos de informação para a lista ou biblioteca.  <br/> |
-|Exibir Itens  <br/> |**Leitura**: um usuário pode ler o documento, mas não pode copiar nem modificar seu conteúdo. Um usuário pode imprimir somente se a caixa de seleção **permitir que os usuários imprimam documentos** estiver marcada na página Configurações de gerenciamento de direitos de informação da lista ou biblioteca.<br/> |
-|Outro  <br/> |Nenhuma outra permissão corresponde diretamente às permissões de IRM.  <br/> |
+|Exibir Itens  <br/> |**Leitura**: um usuário pode ler o documento, mas não pode copiar nem modificar seu conteúdo. Um usuário pode imprimir somente se a caixa de seleção **permitir que os usuários imprimam documentos** estiver marcada na página Configurações de gerenciamento de direitos de informação da lista ou biblioteca.  <br/> |
+|Outros  <br/> |Nenhuma outra permissão corresponde diretamente às permissões de IRM.  <br/> |
    
 Ao habilitar o IRM para uma lista ou biblioteca no SharePoint Server 2013, você só pode proteger tipos de arquivo nessa lista ou biblioteca para a qual um protetor está instalado em todos os servidores Web front-end. Um protetor é um programa que controla a criptografia e a descriptografia de arquivos gerenciados por direitos de um formato de arquivo específico. O SharePoint inclui protetores para os seguintes tipos de arquivo:
   

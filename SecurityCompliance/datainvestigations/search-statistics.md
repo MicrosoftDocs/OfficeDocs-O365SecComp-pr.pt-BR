@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 986c3f3cbb19cd0f66b18db274e68a3bf8414952
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258091"
 ---
 # <a name="search-statistics"></a>Estatísticas de pesquisa
 
@@ -59,7 +59,7 @@ No modo de exibição **locais principais** , você vê os locais de conteúdo i
 
 - O tamanho total de todos os itens que correspondem aos critérios de pesquisa.
 
-## <a name="queries"></a>Queries
+## <a name="queries"></a>Consultas
 
 No modo de exibição **consultas** , você pode ver estatísticas detalhadas para cada componente da consulta de pesquisa. Se você usou a lista de palavras-chave na consulta de pesquisa, poderá exibir as estatísticas aprimoradas no modo de exibição **consultas** que mostram quantos itens correspondem a cada palavra-chave ou frase de palavra-chave. Isso pode ajudá-lo a identificar rapidamente quais partes da consulta são as mais (e menos) eficientes. 
 

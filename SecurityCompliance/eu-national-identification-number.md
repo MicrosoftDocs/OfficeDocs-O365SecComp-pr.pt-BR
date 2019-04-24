@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação nacional da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255639"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificação nacional da UE
 
@@ -23,7 +23,7 @@ Este tópico mostra o que uma política de prevenção de perda de dados (DLP) p
   
 ## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de 24 caracteres de letras, dígitos e caracteres especiais
   
@@ -77,7 +77,7 @@ Para obter detalhes, consulte a seção "número nacional da Bélgica" em o [que
   
 ## <a name="bulgaria"></a>Bulgária
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos sem espaços e delimitadores
   
@@ -165,7 +165,7 @@ Para obter detalhes, consulte a seção "número de identidade da Croácia" em o
   
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos sem espaços e delimitadores
   
@@ -219,7 +219,7 @@ Para obter detalhes, consulte a seção "Dinamarca Personal Identification Numbe
   
 ## <a name="estonia"></a>Estônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos sem espaços e delimitadores
   
@@ -304,7 +304,7 @@ Para obter detalhes, consulte a seção "cartão de ID nacional da Grécia" em [
   
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos
   
@@ -362,7 +362,7 @@ személyazonosító igazolvány
   
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de letras, dígitos e um espaço no padrão especificado de nove caracteres
   
@@ -439,7 +439,7 @@ uimh. PSP
   
 ## <a name="italy"></a>Itália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de 16 caracteres de letras e dígitos no padrão especificado
   
@@ -521,7 +521,7 @@ fiscalização codice
   
 ## <a name="italy"></a>Itália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos e um hífen no formato especificado
   
@@ -585,7 +585,7 @@ Kods personas
   
 ## <a name="lithuania"></a>Lituânia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos sem espaços e delimitadores
   
@@ -658,7 +658,7 @@ kodas.
   
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos sem espaços e delimitadores
   
@@ -735,7 +735,7 @@ eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Sete dígitos seguidos de uma letra
   
@@ -800,7 +800,7 @@ numru ta ' Identità uniku
   
 ## <a name="netherlands"></a>Países Baixos
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços ou delimitadores
   
@@ -873,7 +873,7 @@ Para obter detalhes, consulte a seção "número de cartão de cidadão da Portu
   
 ## <a name="romania"></a>Romênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos sem espaços e delimitadores
   
@@ -954,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>Eslováquia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos contendo uma barra invertida
   
@@ -1023,7 +1023,7 @@ RODNE cislo
   
 ## <a name="slovenia"></a>Eslovênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 13 dígitos sem espaços ou delimitadores
   
@@ -1094,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>Espanha
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Sete dígitos seguidos de um caractere
   

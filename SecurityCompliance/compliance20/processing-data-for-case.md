@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 918a49859d3e3a10d14b346860027a1b434c73e9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240906"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery-preview"></a>Trabalhar com erros de processamento em descoberta eletrônica avançada (versão prévia)
 
@@ -31,5 +31,5 @@ A guia **processamento** em descoberta eletrônica avançada (visualização) fo
 
 Consulte os artigos a seguir para obter mais detalhes.
 
-- [Indexação avançada de dados de responsáveis](indexing-custodian-data.md)
-- [Correção de erro ao processar dados](error-remediation.md)
+- [Indexação de dados custodiante avançados](indexing-custodian-data.md)
+- [Correção de erros durante o processamento de dados](error-remediation.md)

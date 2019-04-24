@@ -1,5 +1,5 @@
 ---
-title: Informações sobre o fluxo de emails no centro de conformidade do & de segurança
+title: Fluxo de emails no Centro de Conformidade e Segurança
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,27 +10,27 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade do & de segurança.
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252380"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informações sobre o fluxo de emails no centro de conformidade do & de segurança
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Fluxo de emails no Centro de Conformidade e Segurança
 
 Os administradores podem usar o painel de fluxo de emails no centro de conformidade do & de segurança para descobrir tendências, insights e realizar ações para corrigir problemas relacionados ao fluxo de emails em sua organização do Office 365.
 
 As ideias, os relatórios e os widgets disponíveis no painel de fluxo de emails são:
 
-- [Fluxo de mensagens de entrada e de saída](mfi-outbound-and-inbound-mail-flow.md)
+- [Fluxo de entrada e saída de emails](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Alertas de fila e filas](mfi-queue-alerts-and-queues.md)
+- [Alertas de filas e filas](mfi-queue-alerts-and-queues.md)
 
-- [Relatório de mensagens automaticamente encaminhadas](mfi-auto-forwarded-messages-report.md)
+- [Relatório de encaminhamento automático de mensagens](mfi-auto-forwarded-messages-report.md)
 
-- [Informações de loop de email](mfi-mail-loop-insight.md)
+- [Insight de loop de email](mfi-mail-loop-insight.md)
 
-- [Visão de regras de fluxo de email lento](mfi-slow-mail-flow-rules-insight.md)
+- [Insights de regras de fluxo de email – modo lento](mfi-slow-mail-flow-rules-insight.md)
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Permissões necessárias para exibir o painel de fluxo de emails
 

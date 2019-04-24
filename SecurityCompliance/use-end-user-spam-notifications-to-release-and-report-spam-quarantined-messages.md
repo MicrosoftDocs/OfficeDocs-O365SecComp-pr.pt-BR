@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Os usuários que vêem uma mensagem de notificação de spam de usuário final do seu administrador sobre emails em quarentena podem executar essas ações nas mensagens. '
 ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264324"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificações de spam do usuário final para liberar e relatar mensagens de spam em quarentena
 

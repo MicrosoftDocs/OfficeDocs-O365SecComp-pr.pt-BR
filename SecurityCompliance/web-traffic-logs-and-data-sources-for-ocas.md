@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: O Office 365 Cloud app Security funciona com logs de tráfego da Web de uma ampla variedade de provedores. Leia este artigo para saber mais sobre os logs de tráfego da Web e as fontes de dados com suporte para o Office 365 Cloud app Security.
 ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266846"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Logs do tráfego da Web e fontes de dados do Office 365 Cloud App Security
   
@@ -68,28 +68,28 @@ A tabela a seguir resume as informações nos logs de tráfego da Web de vários
 
 |                 Fonte de dados                  |    URL do aplicativo de destino    |    IP do aplicativo de destino     |       Nome de usuário       |      IP de origem       |    Tráfego total     |    Bytes carregados    |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |          Não          |
-|                  Revestimento azul                   | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Barracuda                   | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |          Não          |
+|                  Revestimento azul                   | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |                  Verificação                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
-|              Cisco ASA (syslog)              |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|           Cisco ASA com FirePOWER           | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  Cisco FWSM                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|              CABEÇALHO do Cisco IronPort              | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Cisco Meraki                 | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
-|           Clavister NGFW (syslog)            | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                SonicWall (anteriormente Dell)                | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|            FILTRO digital de arte             | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  FortiGate                   |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                 Juniper SSG                  |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                  McAfee SWG                  | <strong>Sim</strong> |          Não          |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                    MS TMG                    | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|              Redes de Palo Alto              |          Não          | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|                    Sophos                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
-|                Squid (comum)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
-|                Squid (nativo)                | <strong>Sim</strong> |          Não          | <strong>Sim</strong> | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |
-| WebSense-relatório detalhado de investigação (CSV) | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
-|    WebSense-log de atividades da Internet (CEF)    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|              Cisco ASA (syslog)              |          Não          | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> |          Não          |
+|           Cisco ASA com FirePOWER           | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  Cisco FWSM                  |          Não          | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> |          Não          |
+|              CABEÇALHO do Cisco IronPort              | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Cisco Meraki                 | Sim | <strong>Sim</strong> |          Não          | <strong>Sim</strong> |          Não          |          Não          |
+|           Clavister NGFW (syslog)            | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                SonicWall (anteriormente Dell)                | Sim | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> |
+|            FILTRO digital de arte             | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  FortiGate                   |          Não          | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SRX                  |          Não          | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> |
+|                 Juniper SSG                  |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                  McAfee SWG                  | <strong>Sim</strong> |          Não          |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    MS TMG                    | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|              Palo Alto Networks              |          Não          | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|                    Sophos                    | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |          Não          |
+|                Squid (comum)                | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> |          Não          | Sim |
+|                Squid (nativo)                | <strong>Sim</strong> |          Não          | Sim | <strong>Sim</strong> |          Não          | Sim |
+| WebSense-relatório detalhado de investigação (CSV) | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
+|    WebSense-log de atividades da Internet (CEF)    | Sim | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
 |                   Zscaler                    | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> | <strong>Sim</strong> |
    
 ## <a name="supported-vendor-firewalls-and-proxies"></a>Firewalls e proxies de fornecedor suportados
@@ -130,7 +130,7 @@ O Office 365 Cloud app Security oferece suporte aos seguintes firewalls e proxie
 
 Após carregar os arquivos de log de tráfego da Web, verifique o log de governança para ver se houve algum erro. Se houver erros, use as informações da tabela a seguir para resolver esses erros.
   
-|**Erro**|**Descrição**|**Resolução**|
+|**Error**|**Descrição**|**Resolução**|
 |:-----|:-----|:-----|
 |Tipo de arquivo não suportado  <br/> |O arquivo carregado não é um arquivo de log válido. Por exemplo, um arquivo de imagem.  <br/> |Carregar um arquivo de texto, zip ou gzip que foi exportado diretamente do seu firewall ou proxy.  <br/> |
 |Erro interno  <br/> |Uma falha interna de recurso foi detectada.  <br/> |Clique em **repetir** para executar novamente a tarefa.  <br/> |
@@ -138,7 +138,7 @@ Após carregar os arquivos de log de tráfego da Web, verifique o log de governa
 Verifique se o log não está corrompido. Compare e coincida o formato de arquivo de log no formato de exemplo mostrado na página de upload. |
 |As transações têm mais de 90 dias  <br/> |Todas as transações têm mais de 90 dias e, portanto, estão sendo ignoradas.  <br/> |Exporte um novo log com eventos recentes e carregue-o novamente.  <br/> |
 |Nenhuma transação para catalogar aplicativos de nuvem  <br/> |Nenhuma transação para qualquer aplicativo de nuvem reconhecido é encontrada no log.  <br/> |Verifique se o log contém informações de tráfego de saída.  <br/> |
-|Tipo de log sem suporte  <br/> |Quando você seleciona a **fonte de dados = outro (sem suporte)**, o log não é analisado. Em vez disso, ele é enviado para revisão para a equipe técnica do [Microsoft Cloud app Security](https://aka.ms/whatiscas) .<br/> |A equipe técnica do [Microsoft Cloud app Security](https://aka.ms/whatiscas) cria um analisador dedicado para cada fonte de dados. As fontes de dados mais populares já têm suporte. Quando uma fonte de dados sem suporte é carregada, ela é revisada e adicionada à lista de possíveis analisadores de novas fontes de dados.<br/> Quando um novo analisador é adicionado ao recurso, uma notificação é incluída nas notas de versão do Microsoft Cloud app Security.  <br/> |
+|Tipo de log sem suporte  <br/> |Quando você seleciona a **fonte de dados = outro (sem suporte)**, o log não é analisado. Em vez disso, ele é enviado para revisão para a equipe técnica do [Microsoft Cloud app Security](https://aka.ms/whatiscas) .  <br/> |A equipe técnica do [Microsoft Cloud app Security](https://aka.ms/whatiscas) cria um analisador dedicado para cada fonte de dados. As fontes de dados mais populares já têm suporte. Quando uma fonte de dados sem suporte é carregada, ela é revisada e adicionada à lista de possíveis analisadores de novas fontes de dados.  <br/> Quando um novo analisador é adicionado ao recurso, uma notificação é incluída nas notas de versão do Microsoft Cloud app Security.  <br/> |
    
 ## <a name="next-steps"></a>Próximas etapas
 

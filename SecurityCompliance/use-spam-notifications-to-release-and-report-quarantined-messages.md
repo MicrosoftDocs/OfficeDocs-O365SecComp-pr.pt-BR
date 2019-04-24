@@ -1,5 +1,5 @@
 ---
-title: Usar notificações de spam do usuário para liberar e relatar mensagens em quarentena no Office 365
+title: Usar notificações de spam do usuário para liberar e reportar mensagens em quarentena no Office 365spam
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 description: Se seu administrador habilitar as notificações para usuários, você receberá uma mensagem de notificação que lista as mensagens enviadas para sua caixa de correio que foram identificadas como spam, massa ou mensagens de phishing. Você pode liberar ou relatar mensagens depois de ser notificado.
 ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263433"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificações de spam do usuário para liberar e relatar mensagens em quarentena no Office 365
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificações de spam do usuário para liberar e reportar mensagens em quarentena no Office 365spam
 
 Se seu administrador habilitar notificações de spam para usuários, você receberá uma mensagem de notificação que lista as mensagens endereçadas à sua caixa de correio que foram identificadas como spam e colocadas em quarentena.
   

@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Fornece ajuda para os administradores que têm caracteres inválidos na configuração antispam e estão em problemas ao tentar usar o centro de conformidade &amp; de segurança.
 ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253949"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar caracteres inválidos em suas regras de filtro de spam e política de filtro de spam 
 
@@ -52,7 +52,7 @@ Depois de identificar a política e as regras que contêm caracteres inválidos,
     ```  
 
   
- ## <a name="for-more-information"></a>Para saber mais
+ ## <a name="for-more-information"></a>Para obter mais informações
 
 [Gerenciamento de ameaças no centro &amp; de conformidade de segurança](threat-management.md)
   

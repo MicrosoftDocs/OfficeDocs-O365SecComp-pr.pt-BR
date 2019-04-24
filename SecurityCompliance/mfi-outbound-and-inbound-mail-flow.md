@@ -1,5 +1,5 @@
 ---
-title: Fluxo de mensagens de entrada e de saída
+title: Fluxo de entrada e saída de emails
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: Os administradores podem saber mais sobre o widget fluxo de email de saída e entrada no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Os administradores podem saber mais sobre o widget fluxo de email de saída e entrada no painel de fluxo de emails no centro de conformidade do & de segurança.
+ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252201"
 ---
-# <a name="outbound-and-inbound-mail-flow"></a>Fluxo de mensagens de entrada e de saída
+# <a name="outbound-and-inbound-mail-flow"></a>Fluxo de entrada e saída de emails
 
 O widget **saída e fluxo** de emails de entrada combina as informações do **relatório de conector** e o **relatório de visão geral de TLS** anterior em um só lugar.
 
-![O relatório de fluxo de emails de entrada e de saída no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![O relatório de fluxo de emails de entrada e de saída no painel de fluxo de emails no centro de conformidade do & de segurança](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 As informações no widget estão relacionadas a conectores e proteção de mensagem TLS no Office 365. Para obter mais informações, consulte estes tópicos:
 
@@ -33,7 +33,7 @@ As informações no widget estão relacionadas a conectores e proteção de mens
 
 O widget **saída e fluxo** de emails de entrada exibe a criptografia TLS que é usada para a conexão quando as mensagens são entregues e de sua organização do Office 365. As conexões estabelecidas com outros serviços de email são criptografadas por TLS quando o TLS é oferecido por ambos os lados. O widget oferece um instantâneo da última semana de fluxo de emails. Quando você clica em **Exibir detalhes**, o submenu **mensagem protegido por transporte (TLS)** mostra a proteção TLS para mensagens que entram e saem da sua organização.
 
-![O submenu mensagens protegidas em trânsito (por TLS) no centro de conformidade do & de segurança do Office 365](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![O submenu mensagens protegidas em trânsito (por TLS) no centro de conformidade de & de segurança](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 Atualmente, o TLS 1,2 é a versão mais segura do TLS oferecido pelo Office 365. Muitas vezes, você precisará saber a criptografia TLS que está sendo usada para auditorias de conformidade. Provavelmente você não tem uma relação direta com a maioria dos servidores de email de origem e de destino (você não é proprietário deles, e nenhuma da Microsoft), portanto, você não tem muitas opções para melhorar a criptografia TLS usada por esses servidores.
 

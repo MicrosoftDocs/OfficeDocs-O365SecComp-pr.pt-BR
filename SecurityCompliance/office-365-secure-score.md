@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Você já se perguntou qual é a segurança da sua organização no Office 365? A pontuação segura está aqui para ajudar. A pontuação segura analisa a segurança da sua organização com base em suas atividades regulares e configurações de segurança no Office 365 e atribui uma pontuação.
 ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262429"
 ---
 # <a name="office-365-secure-score"></a>Classificação de Segurança do Office 365
 
@@ -71,7 +71,7 @@ Mas não considere apenas nossa palavra. Os clientes que usam a pontuação segu
 > [!NOTE]
 > A pontuação segura não expressa uma medida absoluta da probabilidade de você ser violada. Ele expressa a extensão à qual você adotou controles que podem compensar o risco de ser violado. Nenhum serviço pode garantir que você não será violado, e a pontuação segura não deve ser interpretada como uma garantia de qualquer forma. 
   
-## <a name="required-permissions"></a>Permissões necessárias
+## <a name="required-permissions"></a>Permissões obrigatórias
 
 Para exibir e usar seu painel de Pontuação segura, você deve receber uma das seguintes funções no [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 - Administrador global

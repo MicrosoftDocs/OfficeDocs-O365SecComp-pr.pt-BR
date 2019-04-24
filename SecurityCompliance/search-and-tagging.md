@@ -12,11 +12,11 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Na descoberta eletrônica avançada, o módulo de pesquisa e marcação permite pesquisar, Visualizar e organizar os documentos em seu caso. Atualmente, este módulo está no beta.
 ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261360"
 ---
 # <a name="search-and-tagging"></a>Pesquisa e marcação
 
@@ -31,28 +31,28 @@ Depois de processar documentos em um caso de descoberta eletrônica avançada (e
 
 A tabela a seguir lista as propriedades que você pode pesquisar usando uma consulta de palavra-chave KQL. Como alternativa, você pode usar um cartão de condição para na ferramenta de pesquisa de descoberta eletrônica avançada para adicionar uma condição (para propriedades selecionadas) a uma consulta de pesquisa.
 
-|**Propriedade**|**Descrição**|
+|**Property**|**Descrição**|
 |:-----|:-----|
 |**caselabel** <br/> | O nome da marca criada/aplicada quando um documento é marcado. <br/> |
 |**custódia** <br/> | Os responsáveis associados a um documento; sujeito a limitações. <br/> |
-|**pós-datados** <br/> | Data de envio de email; a data de modificação para documentos de site. <br/> |
+|**data** <br/> | Data de envio de email; a data de modificação para documentos de site. <br/> |
 |**FileID** <br/> | A ID do arquivo no caso. <br/> |
 |**filetype** <br/> | A extensão de arquivo nativo. <br/> |
 |**fileclass** <br/> | Email, documento ou anexo. <br/> |
 |**senderauthor** <br/> | O remetente de email; o autor para documentos de site. <br/> |
-|**porte** <br/> | O tamanho do arquivo em KB. <br/> |
+|**size** <br/> | O tamanho do arquivo em KB. <br/> |
 |**subjecttitle** <br/> | O assunto de email; o título dos documentos do site. <br/> |
 |**bcc** <br/> | O campo Cco de um email. <br/> |
 |**cc** <br/> | O campo CC de um email. <br/> |
-|**participante** <br/> | O endereço de email de todos os participantes de um thread de email, incluindo links ausentes. <br/> |
-|**recebido** <br/> | A data em que um email foi recebido. <br/> |
-|**Eles** <br/> | Destinatários de um email, incluídos nos campos para, CC ou Cco. <br/> |
-|**remetente** <br/> | O remetente de um email. <br/> |
+|**participants** <br/> | O endereço de email de todos os participantes de um thread de email, incluindo links ausentes. <br/> |
+|**received** <br/> | A data em que um email foi recebido. <br/> |
+|**recipients** <br/> | Destinatários de um email, incluídos nos campos para, CC ou Cco. <br/> |
+|**sender** <br/> | O remetente de um email. <br/> |
 |**LastModifiedDate** <br/> | A data da última modificação de um documento de site. <br/> |
-|**enviados** <br/> | A data de envio de um email. <br/> |
-|**Para** <br/> | O destinatário listado no campo para de um email. <br/> |
+|**sent** <br/> | A data de envio de um email. <br/> |
+|**to** <br/> | O destinatário listado no campo para de um email. <br/> |
 |**autor** <br/> | O autor de um documento de site. <br/> |
-|**título** <br/> | O título de um documento de site. <br/> |
+|**title** <br/> | O título de um documento de site. <br/> |
 |**dominanttheme**\* <br/> | O tema dominante de um item. <br/> |
 |**themelist**\* <br/> | Temas associados a um item. <br/> |
 |**readpercentile_ [issuenum]**\*\* <br/> | O percentil de leitura de um item, para o problema definido por [issuenum]. <br/> |

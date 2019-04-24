@@ -1,5 +1,5 @@
 ---
-title: Como identificar o tipo de retenção colocado em uma caixa de correio do Exchange Online
+title: Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Saiba como identificar os diferentes tipos de retenção que podem ser colocados em uma caixa de correio do Office 365. Esses tipos de isenções incluem retenção de litígio, bloqueios de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário foi excluído de uma política de retenção em toda a organização
 ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253879"
 ---
-# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção colocado em uma caixa de correio do Exchange Online
+# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
 
 Este artigo explica como identificar as isenções colocadas nas caixas de correio do Exchange Online no Office 365.
 
@@ -210,4 +210,4 @@ Após identificar as isenções aplicadas a uma caixa de correio, você pode exe
 
 - [Excluir uma caixa de correio inativa no Office 365](delete-an-inactive-mailbox.md)
 
-- [Excluir itens da pasta itens recuperáveis das caixas de correio baseadas em nuvem em espera](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+- [Excluir itens na pasta de Itens recuperáveis de caixas de correio baseadas em nuvem em retenção](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)

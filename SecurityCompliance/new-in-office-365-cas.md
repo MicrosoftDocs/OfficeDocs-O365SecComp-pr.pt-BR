@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Veja o que há de novo no Office 365 Cloud app Security
 ms.openlocfilehash: bc85c0c6444eadf8f623a6fee853ff03d31565d1
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262993"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>O que há de novo no Office 365 Cloud app Security
 
@@ -57,4 +57,4 @@ Seguinte [Microsoft Cloud app Security versão 142](https://docs.microsoft.com/e
 
 [Consulte as atualizações 2017 para o Office 365 Cloud app Security](new-in-office-365-cas-2017.md)
     
-[Atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md)
+[Atividades de utilização após a implantação do Office 365 Cloud App Security](utilization-activities-for-ocas.md)

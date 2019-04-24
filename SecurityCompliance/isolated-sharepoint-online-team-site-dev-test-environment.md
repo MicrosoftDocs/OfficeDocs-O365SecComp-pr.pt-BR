@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumo: Configure um site de equipe do SharePoint Online isolado do restante da organização no seu ambiente de desenvolvimento/teste do Office 365.'
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254351"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste
 
@@ -175,7 +175,7 @@ Para criar um site de equipe do SharePoint Online para o projeto x, faça o segu
     
 13. Na caixa de diálogo **Compartilhar**, digite **Projeto X-Membros**, selecione-o e clique em **Compartilhar**.
     
-14. Clique no botão Voltar de seu navegador.
+14. Clique no botão voltar de seu navegador.
     
 15. Clique em **Proprietários do Projeto X** na lista.
     
@@ -207,7 +207,7 @@ Estes são os resultados da configuração das permissões:
     
 A Figura 2 mostra os grupos do SharePoint e suas associações.
   
-**Figure 2**
+**Figura 2**
 
 ![Os grupos do SharePoint Online e seus membros para um site de grupo do SharePoint Online isolado](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   

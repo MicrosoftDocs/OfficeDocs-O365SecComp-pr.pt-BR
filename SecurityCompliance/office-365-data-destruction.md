@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Uma visão geral das políticas da Microsoft sobre a reciclagem, a alienação ou a destruição de drives e servidores de disco de datacenter do Office 365.
 ms.openlocfilehash: fec6065434fa9fa555a057c68eca60082225652c
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262903"
 ---
 # <a name="office-365-data-destruction"></a>Destruição de dados do Office 365
 

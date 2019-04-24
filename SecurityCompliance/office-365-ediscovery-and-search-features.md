@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: Uma visão geral do recurso de descoberta eletrônica e outros recursos de pesquisa no Office 365 para o uso de auditoria e transparência.
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262803"
 ---
-# <a name="ediscovery-and-search-features"></a>Recursos de descoberta eletrônica e pesquisa 
+# <a name="ediscovery-and-search-features"></a>Recursos de pesquisa e descoberta eletrônica 
 
 ## <a name="ediscovery"></a>Descoberta eletrônica
 O recurso de descoberta eletrônica fornece um único local para administradores, responsáveis pela conformidade e outros usuários autorizados a realizar uma investigação abrangente na atividade do usuário do Office 365. Os responsáveis pela segurança com as permissões apropriadas podem realizar pesquisas e armazenar bloqueios de conteúdo. Os resultados da pesquisa são os mesmos resultados obtidos de uma pesquisa de conteúdo, exceto pelo fato de que um caso de descoberta eletrônica é criado para qualquer retenção aplicada. Os resultados das pesquisas de descoberta eletrônica são criptografados por segurança e os dados exportados podem ser analisados usando a [descoberta eletrônica avançada](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
@@ -36,7 +36,7 @@ Os eventos do SharePoint Online e do OneDrive for Business são exibidos no log 
 A tabela a seguir detalha algumas das informações exibidas nos relatórios de atividades. Consulte as [propriedades detalhadas no log de auditoria do Office 365](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3
 ) para obter mais informações sobre quais propriedades são coletadas por cada carga de trabalho do Office 365.
 
-| Propriedade | Descrição |
+| Propriedade	 | Descrição |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Date | Data e hora do evento |
 | Usuário | Usuário que executou a ação |

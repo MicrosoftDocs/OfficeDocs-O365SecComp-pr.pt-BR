@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Como as exclusões de dados suaves e difíceis são tratadas no Exchange Online.
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262683"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Exclusão de dados do Exchange Online no Office 365
 No Exchange Online, há dois tipos de exclusões: exclusões suaves e exclusões graves. Isso se aplica a caixas de correio e itens em uma caixa de correio.

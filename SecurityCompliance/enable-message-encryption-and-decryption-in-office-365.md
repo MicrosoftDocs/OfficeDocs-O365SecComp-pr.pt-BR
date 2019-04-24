@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: A criptografia de mensagem do Office 365 permite que os usuários de email enviem mensagens criptografadas para pessoas dentro ou fora da organização. Como administrador, você pode habilitar a criptografia de mensagem do Office 365 criando regras de fluxo de emails (também conhecidas como regras de transporte) que definem as condições de criptografia.
 ms.openlocfilehash: e15a433f7f9dacdec870faff11a43e4699bef822
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256679"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Habilitar a criptografia e a descriptografia [EOP]
 

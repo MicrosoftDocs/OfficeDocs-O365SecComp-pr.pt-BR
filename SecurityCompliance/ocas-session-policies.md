@@ -1,5 +1,5 @@
 ---
-title: Diretivas de sessão no Office 365 Cloud app Security
+title: Políticas de sessão no Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -11,13 +11,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: As políticas de sessão do Office 365 Cloud app Security permitem o monitoramento em tempo real em nível de sessão, o que proporciona visibilidade detalhada dos aplicativos do Office 365 e a capacidade de realizar ações diferentes dependendo da política definida para uma sessão de usuário. Em vez de permitir ou bloquear totalmente o acesso, com o controle de sessão, você pode permitir o acesso enquanto monitora a sessão e/ou limita as atividades específicas da sessão usando as funcionalidades de proxy reverso do controle de aplicativo de acesso condicional.
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263015"
 ---
-# <a name="session-policies-in-office-365-cloud-app-security"></a>Diretivas de sessão no Office 365 Cloud app Security
+# <a name="session-policies-in-office-365-cloud-app-security"></a>Políticas de sessão no Office 365 Cloud App Security
 
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|

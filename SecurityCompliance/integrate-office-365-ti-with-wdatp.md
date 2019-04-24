@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Integre a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender para ver informações mais detalhadas sobre o gerenciamento de ameaças.
 ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254412"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrar a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender
 
@@ -32,7 +32,7 @@ A imagem a seguir mostra a guia **dispositivos** que você verá quando tiver a 
   
 Neste exemplo, você pode ver que os destinatários da mensagem de email têm quatro dispositivos e um tem um alerta. Clicar no link de um dispositivo abre sua página no portal de proteção avançada contra ameaças do Windows Defender.
   
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 - Sua organização deve ter o plano de proteção avançada contra ameaças do Office 365 (ou o Office 365 E5) e o Windows Defender ATP.
     

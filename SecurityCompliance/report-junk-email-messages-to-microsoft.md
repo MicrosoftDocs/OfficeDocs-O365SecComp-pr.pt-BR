@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'O Suplemento de Relatório de Lixo Eletrônico da Microsoft do Microsoft Office Outlook oferece várias maneiras para você relatar mensagens de lixo eletrônico:'
 ms.openlocfilehash: 7e50143acd6efeb3d47ad0fa04d6d9b57a5ca161
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264996"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Relatar mensagens de Lixo Eletrônico à Microsoft
 
@@ -69,7 +69,7 @@ A mensagem selecionada será enviada à Microsoft para análise e movida para a 
   
 ## <a name="for-more-information"></a>Para obter mais informações
 
-[Habilitar o suplemento de mensagem de relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Habilitar o suplemento de Mensagem de Relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Solução de problemas e informações de suporte](troubleshooting-and-support-information.md)
   

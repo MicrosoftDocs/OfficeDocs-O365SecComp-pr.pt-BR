@@ -1,5 +1,5 @@
 ---
-title: Rastreamento de mensagens no centro de conformidade do & de segurança
+title: Rastreamento de mensagens no Centro de Conformidade e Segurança
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade do & de segurança para descobrir o que aconteceu com as mensagens.
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265599"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no centro de conformidade do & de segurança
+# <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no Centro de Conformidade e Segurança
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 O rastreamento de mensagens no centro de conformidade do & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.
 

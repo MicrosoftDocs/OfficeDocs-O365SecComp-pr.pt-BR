@@ -1,5 +1,5 @@
 ---
-title: Treinamento de marcação e relevância na Descoberta Eletrônica Avançada do Office 365
+title: Treinamento de marcação e relevância na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Conheça as etapas para marcar e, em seguida, trabalhar com um exemplo de treinamento de 40 arquivos durante o estágio de treinamento de relevância do Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260392"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Treinamento de marcação e relevância na Descoberta Eletrônica Avançada do Office 365
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Treinamento de marcação e relevância na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -46,9 +46,9 @@ Após a conclusão da avaliação na descoberta eletrônica avançada, e você i
 | |
 |**Opção de marcação**|**Descrição**|**Atalho de teclado**|**Para vários problemas – atalho de teclado de marca em massa**|
 |:-----|:-----|:-----|:-----|
-|S  <br/> |Necessários  <br/> |A  <br/> |Shift + Z  <br/> |
+|R  <br/> |Necessários  <br/> |Z  <br/> |Shift + Z  <br/> |
 |NR  <br/> |Não relevante  <br/> |X  <br/> |Shift + X  <br/> |
-|Pular  <br/> |Pular  <br/> |C  <br/> |Shift + A  <br/> |
+|Ignorar  <br/> |Ignorar  <br/> |C  <br/> |Shift + A  <br/> |
    
   - Quando houver vários problemas para um arquivo, depois de marcar um problema, a seleção será movida para o próximo problema (se houver algum). 
     
@@ -66,7 +66,7 @@ Após a conclusão da avaliação na descoberta eletrônica avançada, e você i
     
     Arquivos ignorados não serão considerados para fins de classificação de relevância e treinamento de relevância.
     
-3. Comentários de texto livre, associados a um arquivo, podem ser exibidos e editados por meio da opção **Comentário** na lista suspensa do painel esquerdo. opcion 
+3. Comentários de texto livre, associados a um arquivo, podem ser exibidos e editados por meio da opção **Comentário** na lista suspensa do painel esquerdo. (opcional) 
     
 4. As diretrizes para marcação podem ser exibidas selecionando a opção **diretrizes de marcação** na lista suspensa do painel esquerdo. 
     

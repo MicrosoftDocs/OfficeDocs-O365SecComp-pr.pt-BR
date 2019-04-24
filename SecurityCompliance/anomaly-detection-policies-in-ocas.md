@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Diretivas de detecção de anomalias no Office 365 Cloud app Security usam algoritmos internos para ajudar a descobrir possíveis problemas. Você deve ter pelo menos uma política de detecção de anomalias, que você pode ajustar (ao criá-la) usando filtros. '
 ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242838"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Políticas de detecção de anomalias no Office 365 Cloud App Security
 
@@ -98,7 +98,7 @@ Um alerta em vários logons com falha pode ser de fato suspeito, e pode indicar 
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar o controle de aplicativo do Access condicional para aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Implantar o Controle de Aplicativos de Acesso Condicional nos aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [Agrupar seus endereços IP para simplificar o gerenciamento](group-your-ip-addresses-in-ocas.md)
 

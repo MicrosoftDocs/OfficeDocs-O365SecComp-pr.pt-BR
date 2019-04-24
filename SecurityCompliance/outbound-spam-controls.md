@@ -1,5 +1,5 @@
 ---
-title: Como controlar spam de saída no Office 365
+title: Controlando o spam de saída no Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,16 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se sua organização enviar muitas mensagens em massa marcadas como spam, você poderá ter impedido de enviar emails com o Office 365. Leia este artigo para saber mais sobre por que isso acontece e o que você pode fazer sobre ele.
-ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262303"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Como controlar spam de saída no Office 365
+# <a name="controlling-outbound-spam-in-office-365"></a>Controlando o spam de saída no Office 365
 
-Adotamos o gerenciamento de spam de saída seriamente porque nosso é um serviço compartilhado.  Há muitos clientes por trás de um pool compartilhado de recursos, onde um cliente envia spams de saída, pode degradar a reputação de IP de saída do serviço e afeta a entrega bem-sucedida de emails para outros clientes. Não é justo para o cliente A se o cliente B spam e vários IPs de terceiros listas listar o endereço IP que ele usa.
+Adotamos o gerenciamento de spam de saída seriamente porque nosso é um serviço compartilhado.  Há muitos clientes por trás de um pool compartilhado de recursos, onde um cliente envia spams de saída, pode degradar a reputação de IP de saída do serviço e afeta a entrega bem-sucedida de emails para outros clientes.
+
+> [!IMPORTANT]
+> A notificação de quando um remetente é restrito agora faz parte da plataforma de alerta do centro de conformidade do & de segurança (SCC). Em vez de usar os métodos descritos abaixo para enviar notificações, a lista de usuários a serem alertados pode ser encontrada no alerta "usuário restrito a enviar email". Comece a usar a [página políticas de alerta](https://sip.protection.office.com/alertpolicies) no centro de conformidade do _AMP_ de segurança para configurar o alerta, pois o método anterior será removido no futuro. Leia sobre a nova [experiência restrita de usuários](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>O que os administradores podem fazer para controlar o spam de saída
 
@@ -52,17 +55,17 @@ Uma única mensagem marcada como spam pode ser uma classificação inválida pel
 
 É difícil fazer um equilíbrio entre os clientes que desejam enviar um grande volume de emails versus proteger o serviço de contas comprometidas e emails em massa com práticas de aquisição de lista deficiente. Novamente, o custo de um início de IP de saída em uma barra de bloqueio de terceiros é maior do que impedir que um cliente envie emails de saída. Conforme descrito na [Descrição do serviço do Exchange Online](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits), o uso do EOP para enviar emails em massa não é um uso com suporte do serviço e só é permitido em uma base de "melhor esforço". Para clientes que desejam enviar email em massa, recomendamos o seguinte:
 
-a. **envie o email em massa por meio de seus próprios servidores de email locais**. Isso significa que o cliente terá que manter sua própria infraestrutura de email para esse tipo de email.
+a. **Envie o email em massa por meio de seus próprios servidores de email locais**. Isso significa que o cliente terá que manter sua própria infraestrutura de email para esse tipo de email.
 
-b. **use um email em massa de terceiros para enviar a comunicação em massa**. Há vários emails em massa de terceiros cujo único negócio é enviar email em massa. Eles podem trabalhar com os clientes para garantir que eles tenham boas práticas de email e que tenham recursos dedicados à imposição. 
+b. **Use um email em massa de terceiros para enviar a comunicação em massa**. Há vários emails em massa de terceiros cujo único negócio é enviar email em massa. Eles podem trabalhar com os clientes para garantir que eles tenham boas práticas de email e que tenham recursos dedicados à imposição. 
 
 O grupo de trabalho do MAAWG (mensagens antiAbuso, móvel e malware) publica sua lista de associação [aqui](http://www.maawg.org/about/roster). Vários provedores de email em massa estão na lista e são conhecidos como cidadãos da Internet responsáveis. 
   
-## <a name="for-more-information"></a>Para saber mais
+## <a name="for-more-information"></a>Para obter mais informações
 
 [Notificação de exemplo quando um remetente é bloqueado enviando spam de saída](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
-[Proteção antispam de emails do Office 365](anti-spam-protection.md)
+[Office 365 email anti-spam protection](anti-spam-protection.md)
 
 [Proteção antifalsificação no Office 365](anti-spoofing-protection.md)
 

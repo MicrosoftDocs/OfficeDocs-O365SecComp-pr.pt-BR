@@ -3,23 +3,22 @@ title: Isolamento de locatário do Office 365 no Office 365 Search
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma explicação do isolamento de locatário na pesquisa do Office 365.'
-ms.openlocfilehash: fa9ba75f6ae5b0b89e3565ffb0e6f022ab36f81b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5254ffe2e6b92c6ba100a9e45b35b456ead1b000
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262593"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Isolamento de locatário na pesquisa do Office 365
 A pesquisa do SharePoint Online usa um modelo de separação de locatários que equilibra a eficiência de estruturas de dados compartilhadas com proteção contra vazamento de informações entre locatários. Com esse modelo, impedimos os recursos de pesquisa de:

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: A filtragem de spam é automaticamente habilitada em toda a empresa por meio das políticas antispam padrão (filtro de conexão, filtro de spam e spam de saída). Como administrador, você pode exibir e editar, mas não excluir, as políticas antispam padrão de forma que elas sejam ajustadas para atender melhor às necessidades da sua organização. Para maior granularidade, você também pode criar políticas personalizadas e aplicá-las a usuários, grupos ou domínios especificados em sua organização. Por padrão, as políticas personalizadas têm precedência sobre a política padrão, mas é possível alterar a prioridade de suas políticas.
 ms.openlocfilehash: 992885a394031e133008f28a455383fc2f3f0616
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260799"
 ---
 # <a name="configure-the-anti-spam-policies"></a>Configurar políticas antispam
 
@@ -27,7 +27,7 @@ A filtragem de spam é automaticamente habilitada em toda a empresa por meio das
   
 Para obter mais informações sobre como configurar suas políticas contra spam, consulte os seguintes tópicos:
   
-[Configurar a política de filtro de conexão](configure-the-connection-filter-policy.md)
+[Configurar a política do filtro de conexão](configure-the-connection-filter-policy.md)
   
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   

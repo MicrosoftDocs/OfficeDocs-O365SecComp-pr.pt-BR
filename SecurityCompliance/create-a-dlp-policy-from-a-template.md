@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258481"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
+# <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política DLP com base em um modelo
 
 A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. Você pode usar um desses modelos como está ou personalizar as regras para atender aos requisitos de conformidade específicos da sua organização.
   
@@ -52,7 +52,7 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 - Permitir que os usuários substituam as ações fornecendo uma justificativa de negócios ou relatando um falso positivo. Dessa forma, sua política de DLP não impedirá que as pessoas em sua organização tenham seus trabalhos concluídos, contanto que tenham uma razão comercial válida para o compartilhamento de informações confidenciais.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política de DLP a partir de um modelo
+### <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política DLP com base em um modelo
 
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
@@ -167,7 +167,7 @@ Eis aqui os diferentes status e o que eles significam.
 |**Testando, sem notificações** <br/> |A política está no modo de teste. As ações em uma regra não são aplicadas, mas as correspondências de política são coletadas e podem ser visualizadas usando os relatórios de DLP. As notificações sobre correspondências de política não são enviadas aos destinatários especificados.  <br/> |
 |**On** <br/> |A política está ativa e imposta. A política foi implantada com êxito a todas as suas fontes de conteúdo.  <br/> |
 |**Desativando...** <br/> |A política está sendo removida para as fontes de conteúdo incluídas. A política ainda pode estar ativa e imposta em algumas fontes. Desativando uma política pode levar até 45 minutos.  <br/> |
-|**Desligado** <br/> |A política não está ativa e não foi imposta. As configurações da política (fontes, palavras-chave, duração, etc.) são salvas.  <br/> |
+|**Desativada** <br/> |A política não está ativa e não foi imposta. As configurações da política (fontes, palavras-chave, duração, etc.) são salvas.  <br/> |
 |**Excluindo...** <br/> |A política está sendo excluída. A política não está ativa e não foi imposta.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Desativar uma política de DLP

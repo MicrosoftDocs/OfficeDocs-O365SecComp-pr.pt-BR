@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243764"
 ---
 # <a name="close-or-delete-a-case"></a>Fechar ou excluir uma ocorrência
 
@@ -27,7 +27,7 @@ Quando o caso ou a investigação legal suportados por uma ocorrência de descob
 
 - Se o caso contiver qualquer local de conteúdo em espera, essas isenções serão desativadas. Isso pode resultar na exclusão ou limpeza permanente do conteúdo, seja pelo usuário ou por um processo automatizado, como uma política de exclusão.
 
-- O fechamento de um caso desativa apenas as suspensões que estão associadas a esse caso. Se outras isenções forem mantidas em um local de conteúdo (como uma retenção de litígio. uma política de preservação ou uma retenção de um caso de descoberta eletrônica diferente) essas isenções ainda serão mantidas.
+- O fechamento de um caso desativa apenas as suspensões que estão associadas a esse caso. Se outras isenções forem colocadas em um local de conteúdo (como uma retenção de litígio. uma política de preservação, ou uma retenção de um caso de descoberta eletrônica diferente, essas isenções ainda serão mantidas.
 
 - O caso ainda está listado na página descoberta eletrônica no centro de conformidade do & de segurança. Os detalhes, isenções, pesquisas e membros de um caso fechado são mantidos.
 

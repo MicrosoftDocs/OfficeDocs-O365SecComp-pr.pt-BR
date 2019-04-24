@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: O Microsoft Proteção do Exchange Online oferece recursos de política e conformidade de mensagens que podem ajudar você a gerenciar seus dados de email.
 ms.openlocfilehash: 3e966c03c40cbcce53a92d4052151241759bb85f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255779"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Política de mensagens e conformidade no EOP
 

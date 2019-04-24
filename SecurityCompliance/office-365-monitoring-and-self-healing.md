@@ -3,23 +3,22 @@ title: Monitoramento e auto-recuperação do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informações sobre o monitoramento e recursos de auto-recuperação do Office 365.
-ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6a7753fbd1e20c690c45b670240afa36baf9ffdb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262493"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Monitoramento e auto-recuperação do Office 365
 Dada a escala do Office 365, seria impossível manter os dados do cliente resistentes e seguros contra malware sem o monitoramento integrado, que é um alerta abrangente e de auto-recuperação, que é mais rápido e confiável. Monitorar um conjunto de serviços na escala do Office 365 é muito desafiador. Novas mentalidades e metodologias precisavam ser introduzidas, e todos os novos conjuntos de tecnologia precisavam ser criados para operar e gerenciar o serviço em um ambiente global conectado. Mudamos para longe da abordagem de monitoramento tradicional da coleta de dados e filtragem para criar alertas para uma abordagem baseada na análise de dados; demorando sinais e criando confiança nesses dados e usando a automação para recuperar ou resolver o problema. Essa abordagem ajuda a tirar os seres humanos da equação de recuperação, o que, por sua vez, torna as operações menos dispendiosas, mais rápidas e menos sujeitas a erros. 
@@ -35,16 +34,16 @@ Com base na combinação do alerta de falha e dos alertas vermelhos, esse alerta
 Além de recursos de auto-recuperação, como a restauração de uma única página, o Exchange Online inclui vários recursos que usam uma abordagem para monitoramento e auto-recuperação que se concentram em preservar a experiência do usuário final. Esses recursos incluem a *disponibilidade gerenciada*, que fornece ações internas de monitoramento e recuperação, e o AutoReseed, que restaura automaticamente a redundância do banco de dados após uma falha de disco. 
 
 ## <a name="managed-availability"></a>Disponibilidade gerenciada 
-A disponibilidade gerenciada oferece uma solução de recuperação e verificação de integridade nativa que monitora e protege a experiência do usuário final por meio de ações orientadas à recuperação. A disponibilidade gerenciada é a integração das ações internas de monitoramento e recuperação com a plataforma de alta disponibilidade do Exchange. Ele foi projetado para detectar e recuperar problemas assim que eles ocorrerem e forem descobertos pelo sistema. Diferentemente das soluções e das técnicas anteriores de monitoramento externo para o Exchange, a disponibilidade gerenciada não tenta identificar ou comunicar a causa raiz de um problema. Em vez disso, ele está voltado para os aspectos de recuperação que lidam com três áreas principais da experiência do usuário final: 
+A disponibilidade gerenciada oferece uma solução de recuperação e verificação de integridade nativa que monitora e protege a experiência do usuário final por meio de ações orientadas à recuperação. A disponibilidade gerenciada é a integração das ações internas de monitoramento e recuperação com a plataforma de alta disponibilidade do Exchange. O recurso foi projetado para detectar e se recuperar de problemas assim que eles ocorrem e são descobertos pelo sistema. Diferentemente das soluções e técnicas anteriores de monitoramento externo do Exchange, a disponibilidade gerenciada não tenta identificar ou comunicar a causa raiz de um problema. Em vez disso, ele está voltado para os aspectos de recuperação que lidam com três áreas principais da experiência do usuário final: 
 - **Disponibilidade** : os usuários podem acessar o serviço? 
 - **Latência** -como é a experiência para os usuários? 
 - **Erros** – os usuários podem realizar o que querem? 
 
-A disponibilidade gerenciada é um recurso interno que é executado em todos os servidores do Office 365 que executam o Exchange Online. Ele pesquisa e analisa centenas de métricas de integridade a cada segundo. Se algo for considerado errado, a maior parte do tempo é corrigida automaticamente. Mas sempre haverá problemas que a disponibilidade gerenciada não será capaz de corrigir por conta própria. Nesses casos, a disponibilidade gerenciada escalará o problema para uma equipe de suporte do Office 365 por meio do log de eventos. 
+A disponibilidade gerenciada é um recurso interno que é executado em todos os servidores do Office 365 que executam o Exchange Online. Ela examina e analisa centenas de métricas de integridade a cada segundo. Se algo for considerado errado, a maior parte do tempo é corrigida automaticamente. Mas sempre haverá problemas que a disponibilidade gerenciada não será capaz de corrigir por conta própria. Nesses casos, a disponibilidade gerenciada escalará o problema para uma equipe de suporte do Office 365 por meio do log de eventos. 
 
 ## <a name="autoreseed"></a>Propagação automática 
 Os servidores do Exchange Online são implantados em uma configuração que armazena vários bancos de dados e seus fluxos de log no mesmo disco não-RAID. Essa configuração geralmente é chamada de *apenas um monte de discos* (JBOD) porque nenhum mecanismo de redundância de armazenamento, como RAID, está sendo usado para duplicar os dados no disco. Quando um disco falha em um ambiente JBOD, os dados desse disco são perdidos. 
 
 Dado o tamanho do Exchange Online e o fato de que implantado dentro dele são milhões de drives de disco, as falhas de unidade de disco são uma ocorrência normal no Exchange Online. Na verdade, mais de 100 falha todos os dias. Quando um disco falha em uma implantação corporativa local, um administrador deve substituir manualmente o disco com falha e restaurar os dados afetados. Em uma implantação de nuvem o tamanho do Office 365, ter operadores (administradores de nuvem) a substituição manual dos discos não é prático ou economicamente viável. 
 
-A repropagação automática, ou *AutoReseed*, é um recurso que é a substituição do que normalmente é orientada por operador em resposta a uma falha de disco, evento de corrupção de banco de dados ou outro problema que requer uma repropagação de uma cópia de banco de dados. O AutoReseed foi projetado para restaurar automaticamente a redundância de banco de dados após uma falha de disco usando discos sobressalentes que foram provisionados no sistema. Se um disco falhar, as cópias de banco de dados armazenadas nesse disco são automaticamente propagadas para um disco de reserva pré-configurado no servidor, restaurando assim a redundância. 
+A repropagação automática, ou *AutoReseed*, é um recurso que é a substituição do que normalmente é orientada por operador em resposta a uma falha de disco, evento de corrupção de banco de dados ou outro problema que requer uma repropagação de uma cópia de banco de dados. A AutoReseed foi projetada para restaurar automaticamente a redundância de banco de dados após uma falha de disco usando discos sobressalentes provisionados no sistema. Se um disco falhar, as cópias de banco de dados armazenadas nesse disco são automaticamente propagadas para um disco de reserva pré-configurado no servidor, restaurando assim a redundância. 

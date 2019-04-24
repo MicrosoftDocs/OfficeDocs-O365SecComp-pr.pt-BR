@@ -13,25 +13,23 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241549"
 ---
 # <a name="view-documents-in-a-working-set"></a>Exibir documentos em um conjunto de trabalho
 
 A descoberta eletrônica avançada (visualização) exibe o conteúdo por vários visualizadores, cada um com finalidades diferentes. Os vários visualizadores podem ser usados clicando em qualquer documento dentro de um conjunto de trabalho. Os visualizadores atualmente fornecidos são:
 
-- Metadados de arquivos  
-
+- Metadados de arquivo
 - Modo de exibição nativo
 - Exibição de texto
 - Modo de anotações
 - Exibição conVertida
 
-## <a name="file-metadata"></a>Metadados de arquivos  
-
+## <a name="file-metadata"></a>Metadados de arquivo
 
 Este painel pode ser ativado/desativado para exibir vários metadados associados ao documento. Embora a grade de resultados de pesquisa possa ser personalizada para exibir metadados específicos, há situações nas quais rolar horizontalmente pode ser difícil durante a análise de dados. O painel metadados de arquivo permite que um usuário alterne em um modo de exibição no visualizador.
 

@@ -1,5 +1,5 @@
 ---
-title: Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365
+title: Pesquisar o log de auditoria para a atividade de usuário e administrador no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'O log de auditoria do Office 365 é um log de auditoria unificado. Por que um log de auditoria unificado? Como os eventos da maioria dos serviços do Office 365 que você é assinante são registrados em um único log de auditoria que você pode pesquisar. Isso significa que você pode pesquisar o usuário e a atividade de administrador nesses serviços:'
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265853"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Pesquisar o log de auditoria para a atividade de usuário e administrador no Office 365
 
 O log de auditoria do Office 365 é um log de auditoria unificado. Por que um log de auditoria unificado? Como os eventos da maioria dos serviços do Office 365 que você é assinante são registrados em um único log de auditoria que você pode pesquisar. Isso significa que você pode pesquisar o usuário e a atividade de administrador nesses serviços: 
   
@@ -28,7 +28,7 @@ O log de auditoria do Office 365 é um log de auditoria unificado. Por que um lo
 - Exchange
 - Azure Active Directory
 - Microsoft Teams
-- Descoberta Eletrônica
+- Descoberta eletrônica
 - Power BI
 - Yammer
 - Sway
@@ -42,7 +42,7 @@ Há algumas coisas que você precisa fazer antes de Pesquisar o log de auditoria
     
 - [Habilitar a auditoria de caixa de correio](enable-mailbox-auditing.md) para que você possa procurar eventos relacionados à caixa de correio; como quando um usuário entra na caixa de correio ou exclui itens da pasta itens recuperáveis 
     
- ## <a name="search-the-audit-log"></a>Pesquisas o log de auditoria
+ ## <a name="search-the-audit-log"></a>Pesquisar o log de auditoria
   
 Depois de ativar a auditoria, você pesquisa centenas de tipos individuais de eventos de vários serviços do Office 365.
   

@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Você pode usar o Proteção do Exchange Online (EOP) para criar grupos habilitados para email para uma organização do Exchange. Você também pode usar o EOP para definir ou atualizar propriedades de grupo que especificam associação, endereços de email e outros aspectos de grupos.
 ms.openlocfilehash: db649e4fd955d13e50e96007e8e38fe2c1de5b4d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255901"
 ---
 # <a name="manage-groups-in-eop"></a>Gerenciar grupos no EOP
 

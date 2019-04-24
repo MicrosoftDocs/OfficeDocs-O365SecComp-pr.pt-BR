@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262041"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
@@ -204,7 +204,7 @@ Por exemplo, a política do HIPAA interna da **U.S.** tem uma regra que usa um o
   
 - no grupo **identificadorEs PII** (pelo menos um número de SSN **ou** número DEA) 
     
-    **E**
+    **AND**
     
 - no grupo de **termos médicos** (pelo menos uma palavra-chave ICD-9-cm **ou** uma palavra-chave ICD-10-cm) 
     
@@ -508,7 +508,7 @@ Para usar a maioria dos cmdlets do centro de &amp; conformidade de segurança, v
     
 No enTanto, os relatórios de DLP precisam de dados de recebimento no Office 365, incluindo o Exchange Online. Por esse motivo, **os cmdlets dos relatórios de DLP estão disponíveis no PowerShell do Exchange Online, não no PowerShell &amp; do centro de conformidade de segurança**. Portanto, para usar os cmdlets dos relatórios de DLP, você precisa:
   
-1. [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Conectar-se ao Exchange Online usando o PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use qualquer um destes cmdlets para os relatórios de DLP:
     

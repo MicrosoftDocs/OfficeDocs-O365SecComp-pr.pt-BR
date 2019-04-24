@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: aaec95ec4bb8e55d1ed1c7d9552ee7215ba5ec14
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242884"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Adicionar ou remover membros de uma ocorrência
 
@@ -31,7 +31,8 @@ Você pode adicionar ou remover membros para gerenciar quem pode acessar o caso.
  
 3. Clique em **Atualizar**.
  
-4. Em **gerenciar Membros**, clique em Adicionar ícone Adicionar para adicionar membros à ocorrência. Você também pode optar por adicionar um grupo de funções ao caso. Em **gerenciar grupos de função**, clique em Adicionar ícone Adicionar.  Tenha em mente que os grupos de função controlam a permissão para acessar o caso. Isso significa que você só pode atribuir revisores, Gerenciador de descoberta eletrônica ou grupos de função personalizada com a função de gerenciamento de casos.
+4. Em **gerenciar Membros**, clique em Adicionar ícone Adicionar para adicionar membros à ocorrência. Você também pode optar por adicionar um grupo de funções ao caso. Em **gerenciar grupos de função**, clique em Adicionar ícone Adicionar. 
+    Tenha em mente que os grupos de função controlam a permissão para acessar o caso. Isso significa que você só pode atribuir revisores, Gerenciador de descoberta eletrônica ou grupos de função personalizada com a função de gerenciamento de casos.
  
 5. Na lista de pessoas ou grupos de funções que podem ser adicionados como membros do caso, clique na caixa de seleção ao lado dos nomes das pessoas ou grupos de função que você deseja adicionar.
 

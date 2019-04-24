@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: Ajuda a explicar as diferenças nos recursos entregues com diferentes versões da criptografia de mensagem do Office 365 e como os dois continuam a trabalhar juntos.
 ms.openlocfilehash: bb13208e2b630c8a6217b78b48a4cd3bb4b0de79
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262323"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versões de OME
 

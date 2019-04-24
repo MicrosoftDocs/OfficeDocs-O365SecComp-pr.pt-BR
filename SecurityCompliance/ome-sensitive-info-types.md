@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 'Resumo: política de criptografia de mensagem do Office 365 para tipos de informações confidenciais agora disponível.'
 ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261259"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Política de criptografia de mensagem do Office 365 para informações confidenciais
 
@@ -50,7 +50,7 @@ A execução dos seguintes comandos no PowerShell cria uma regra de fluxo de ema
 - Número de roteamento ABA
 - Número do cartão de crédito
 - Número da Agência de aplicação de medicamentos (DEA)
-- Número de passaporte americano/Reino Unido
+- EUA/REINO UNIDO passport number
 - Número de conta bancária dos EUA
 - Número de identificação de contribuinte individual (ITIN) dos EUA
 - Número de seguridade social dos EUA (SSN)

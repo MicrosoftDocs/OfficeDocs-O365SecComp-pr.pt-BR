@@ -1,5 +1,5 @@
 ---
-title: Habilitar ou desabilitar dicas de segurança no Office 365
+title: Ativar ou desativar as dicas de segurança no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email.
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256932"
 ---
-# <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar ou desabilitar dicas de segurança no Office 365
+# <a name="enable-or-disable-safety-tips-in-office-365"></a>Ativar ou desativar as dicas de segurança no Office 365
 
 O proteção do Exchange Online (EOP) adiciona, ou carimbos, uma dica de segurança a mensagens de email que ele fornece. Essas dicas de segurança fornecem aos destinatários uma forma rápida e Visual de determinar se uma mensagem é de um remetente seguro e verificado, se a mensagem tiver sido marcada como spam pelo Office 365, se a mensagem contiver algo suspeito, como um golpe de phishing, ou se imagens externas tiverem foi bloqueado. Os administradores do Office 365 e do EOP-autônomo podem editar uma configuração de política de spam para habilitar ou desabilitar que as dicas de segurança sejam exibidas no email no Outlook e em outros clientes de email de área de trabalho. 
   
@@ -40,7 +40,7 @@ Neste tópico:
 
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 com a sua conta corporativa ou de estudante.
+2. Entre no Office 365 com uma conta corporativa ou de estudante.
     
 3. Escolha **** \> **política**de gerenciamento de ameaças. 
     

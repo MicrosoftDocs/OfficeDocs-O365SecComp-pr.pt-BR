@@ -1,5 +1,5 @@
 ---
-title: Executar relatórios na Descoberta Eletrônica Avançada do Office 365
+title: Executar relatórios na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Saiba como executar um relatório e, em seguida, baixe o arquivo. csv na descoberta eletrônica avançada do Office 365.  '
 ms.openlocfilehash: c6b70700d785c2616f984f3902fbc543d1ae26b3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261200"
 ---
-# <a name="run-reports-in-office-365-advanced-ediscovery"></a>Executar relatórios na Descoberta Eletrônica Avançada do Office 365
+# <a name="run-reports-in-office-365-advanced-ediscovery"></a>Executar relatórios na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

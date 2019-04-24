@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240886"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Tipos de arquivo com suporte na descoberta eletrônica avançada (versão prévia)
 
@@ -55,11 +55,11 @@ A descoberta eletrônica avançada (visualização) oferece suporte a muitos tip
 | aplicativo/x-mspublisher | Documento | Sim | Sim | Sim | Não | . pub |
 | application/x-rar-compactado | Arquivo morto/contêiner | Não | Não | Não | Sim | . rar |
 | aplicativo/zip | Arquivo morto/contêiner | Não | Não | Não | Sim | . zip |
-| imagem/BMP | Image | Sim | Sim | Sim | Não | . bmp |
+| imagem/BMP | Image | Sim | Sim | Sim | Não | .bmp |
 | imagem/EMF | Image | Sim | Sim | Sim | Não | . EMF |
-| image/gif | Documento | Sim | Sim | Sim | Não | . gif |
+| image/gif | Documento | Sim | Sim | Sim | Não | .gif |
 | image/jpeg | Image | Sim | Sim | Sim | Não | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Sim | Sim | Sim | Não | . png |
+| image/png | Image | Sim | Sim | Sim | Não | .png |
 | imagem/TIFF | Image | Sim | Sim | Sim | Não | . tif |
 | Image/vnd. dwg | Documento | Sim | Sim | Sim | Não | . dwg;. DXF |
 | imagem/WMF | Documento | Sim | Sim | Sim | Não | . wmf |

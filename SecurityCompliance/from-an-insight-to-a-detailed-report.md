@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Veja como você pode mudar de uma visão detalhada para um relatório detalhado no centro &amp; de conformidade de segurança por meio de um exemplo de prevenção de perda de dados.
 ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255364"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Passo a passo – de um insight para um relatório detalhado
 

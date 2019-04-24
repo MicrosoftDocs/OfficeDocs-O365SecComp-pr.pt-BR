@@ -15,18 +15,19 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240963"
 ---
 # <a name="search-statistics"></a>Estatísticas de pesquisa
 
 Uma maneira de validar seus resultados de pesquisa é examinar as estatísticas em torno dos seus resultados para garantir que eles se alinhem às suas expectativas. Quando uma pesquisa é concluída, as estatísticas de alto nível são exibidas no submenu detalhes da pesquisa:
 - Número e volume de itens recuperados pela pesquisa
 - Número e volume de itens parcialmente indexados/não indexados que foram encontrados nos locais de pesquisa
-- Número de caixas de correio e locais pesquisados. Para exibir estatísticas mais detalhadas, clique em "Estatísticas" no submenu detalhes da pesquisa.
+- Número de caixas de correio e locais pesquisados.
+Para exibir estatísticas mais detalhadas, clique em "Estatísticas" no submenu detalhes da pesquisa.
 
 ## <a name="summary"></a>Resumo
 
@@ -43,7 +44,7 @@ No modo de exibição de locais principais, você vê os locais individuais com 
 - Número de itens que corresponderam às condições de pesquisa
 - Volume total de itens que correspondem às condições de pesquisa.
 
-## <a name="queries"></a>Repete
+## <a name="queries"></a>Consultas
 
 Se você tiver usado (c:s) linhas de palavra-chave ou de palavra-chave em sua consulta, poderá ver a divisão da consulta no modo de exibição de consultas por tipo de local. Para cada tipo de local, você verá:
 

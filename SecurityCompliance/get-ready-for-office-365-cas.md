@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introdução ao uso do Office 365 Cloud app Security
 ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254002"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Introdução ao Office 365 Cloud App Security
   
@@ -46,7 +46,7 @@ Você pode acessar o portal do Office 365 Cloud app Security entrando no [https:
 
 Você também pode chegar lá no centro de conformidade de &amp; segurança do Office 365. Veja uma boa maneira de fazer isso:
 
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre. (isso leva você para o centro de &amp; conformidade de segurança.)
+1. AcEsse [https://protection.office.com](https://protection.office.com) e entre. (Isso leva você para o centro &amp; de conformidade de segurança.)
     
 2. Vá até **alertas** \> **Gerenciar alertas avançados**.
     
@@ -73,9 +73,9 @@ Configurar e impor controles nos aplicativos da sua organização, com base em d
 
 ConFira os seguintes recursos para saber mais:
 
-- [Proteger aplicativos com o Office 365 Cloud app Security controle de aplicativo de acesso condicional](ocas-conditional-access-app-control.md)
+- [Proteger os aplicativos com o Controle de Aplicativos de Acesso Condicional do Office 365 Cloud App Security](ocas-conditional-access-app-control.md)
 
-- [Implantar o controle de aplicativo do Access condicional para aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Implantar o Controle de Aplicativos de Acesso Condicional nos aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>Etapa 6: Saiba mais sobre o uso da nuvem da sua organização
 
@@ -99,7 +99,8 @@ Como administrador global ou administrador de segurança, você pode gerenciar a
   
 ## <a name="step-8-create-a-maintenance-plan"></a>Etapa 8: criar um plano de manutenção
 
-Depois de configurar e configurar o Office 365 Cloud app Security, convém executar determinadas tarefas de utilização como um administrador global do Office 365 ou administrador de segurança para sua organização. Ao executar essas tarefas, você ajudará a garantir que o Office 365 Cloud app Security esteja configurado corretamente, suas políticas estejam atualizadas e sua organização perceba o valor do Office 365. Use este artigo como um guia para ajudá-lo a planejar essas tarefas. Veja [as atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md).
+Depois de configurar e configurar o Office 365 Cloud app Security, convém executar determinadas tarefas de utilização como um administrador global do Office 365 ou administrador de segurança para sua organização.
+Ao executar essas tarefas, você ajudará a garantir que o Office 365 Cloud app Security esteja configurado corretamente, suas políticas estejam atualizadas e sua organização perceba o valor do Office 365. Use este artigo como um guia para ajudá-lo a planejar essas tarefas. Veja [as atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md).
 
 ## <a name="optional-step-9-use-your-siem-server-with-office-365-cloud-app-security"></a>Opcion Etapa 9: usar seu servidor SIEM com o Office 365 Cloud app Security
 
@@ -107,7 +108,7 @@ A sua organização está usando um servidor de gerenciamento de eventos e infor
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Ativar o Office 365 Cloud App Security](turn-on-office-365-cas.md)
+- [Ativar o Office 365 Cloud app Security](turn-on-office-365-cas.md)
     
 - Experimente nosso [Guia de laboratório de teste](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) para obter uma experiência prática onde você pode demonstrar os recursos avançados do Office 365 Cloud app Security e criar uma prova de conceito. 
     

@@ -1,5 +1,5 @@
 ---
-title: Ativar o Office 365 Cloud App Security
+title: Ativar o Office 365 Cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Leia este artigo para saber como ativar o Office 365 Cloud app Security, ativado pela Cloud app Security no Microsoft Azure.
 ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264123"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
+# <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud app Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
 |[Iniciar avaliação](office-365-cas-overview.md) <br/> |[Iniciar planejamento](get-ready-for-office-365-cas.md) <br/> |Você está aqui!  <br/> [Próxima etapa](activity-policies-and-alerts.md) <br/> |[Começar a usar](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud App Security
+## <a name="turn-on-office-365-cloud-app-security"></a>Ativar o Office 365 Cloud app Security
 
 > [!IMPORTANT]
 > Você deve ser um administrador global ou administrador de segurança para executar a tarefa a seguir. Para saber mais, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md). Para que o Office 365 Cloud app Security funcione corretamente, o **log de auditoria deve estar ativado** para o seu ambiente do Office 365. Para obter mais informações, consulte [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md). 

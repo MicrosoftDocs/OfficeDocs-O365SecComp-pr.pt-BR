@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 916691e1f2470ef9e9e54d9dfe06c5277a92ba53
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241248"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Trabalhar com comunicações na descoberta eletrônica avançada (visualização)
 
@@ -53,11 +53,11 @@ As equipes jurídicas podem controlar e segmentar a atividade de casos usando gr
 
 Para criar e gerenciar notificações de retenção legal, um usuário deve fazer parte dos seguintes grupos de função:
 
-- **Gerenciador de descoberta eletrônica** -os membros desse grupo de funções podem criar e gerenciar ocorrências de descoberta eletrônica. Eles podem adicionar e remover membros, colocar os responsáveis e os locais de conteúdo em espera, gerenciar notificações de retenção legal, criar e editar pesquisas de conteúdo associadas a uma ocorrência, exportar os resultados de uma pesquisa de conteúdo e preparar os resultados da pesquisa para análise no Advanced Descoberta eletrônica (prévia). Há dois subgrupos nesse grupo de função. A diferença entre esses subgrupos baseia-se no escopo.
+- **Gerenciador de descoberta eletrônica** -os membros desse grupo de funções podem criar e gerenciar ocorrências de descoberta eletrônica. Eles podem adicionar e remover membros, colocar os responsáveis e os locais de conteúdo em espera, gerenciar notificações de retenção legal, criar e editar pesquisas de conteúdo associadas a uma ocorrência, exportar os resultados de uma pesquisa de conteúdo e preparar os resultados da pesquisa para análise no Advanced Descoberta eletrônica (prévia). Há dois subgrupos nesse grupo de função. A diferença entre esses subgrupos está no escopo.
 
   - **Gerenciador de descoberta eletrônica** – pode exibir e gerenciar os casos de descoberta eletrônica que eles criam ou são membros de. Se outro gerenciador de descoberta eletrônica criar uma ocorrência, mas não adicionar um segundo Gerenciador de descoberta eletrônica como membro desse caso, o segundo Gerenciador de descoberta eletrônica não poderá exibir ou abrir o caso na página descoberta eletrônica no centro de conformidade do & de segurança. Os gerentes de descoberta eletrônica também podem acessar seus casos na descoberta eletrônica avançada (visualização) para realizar tarefas de análise.
 
-  - **administrador de descoberta eletrônica** – pode executar todas as tarefas de gerenciamento de caso que um gerente de descoberta eletrônica possa fazer. Além disso, um administrador de descoberta eletrônica pode:
+  - **administrador de descoberta eletrônica** – pode executar todas as tarefas de gerenciamento de caso que um gerente de descoberta eletrônica possa fazer. Além disso, um Administrador de Descoberta Eletrônica pode:
     
     - Exibir todas as ocorrências listadas na página Descoberta Eletrônica.
     - Gerencie qualquer caso na organização depois que eles se adicionarem como um membro do caso.

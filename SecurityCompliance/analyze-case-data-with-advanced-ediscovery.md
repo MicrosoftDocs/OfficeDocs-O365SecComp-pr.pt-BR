@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Obtenha uma visão geral do processo de análise, que permite definir parâmetros, opções de execução e exibir resultados, na descoberta eletrônica avançada do Office 365. '
 ms.openlocfilehash: 11ef6f9bd052134625012742e64c466ae1e54f91
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243022"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analisar dados de caso com a descoberta eletrônica avançada do Office 365
 

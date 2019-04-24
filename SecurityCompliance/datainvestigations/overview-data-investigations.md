@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Este artigo descreve a nova ferramenta de investigações de dados (visualização) no Microsoft 365.
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257710"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Visão geral das investigações de dados (prévia) no Microsoft 365
 
@@ -45,7 +45,7 @@ Você também pode executar a análise avançada nas evidências coletadas. Isso
 
   - [Analisar dados em evidência](review-data-in-evidence.md)
 
-  - [Executar a análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
+  - [Executar análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>Gerenciando pessoas de interesse

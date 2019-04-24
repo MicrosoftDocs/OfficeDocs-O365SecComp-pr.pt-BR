@@ -1,5 +1,5 @@
 ---
-title: Pontuação segura da Microsoft
+title: Classificação de Segurança da Microsoft
 description: Descreve a pontuação segura da Microsoft 365, como os detalhes são calculados e quais administradores de segurança podem esperar usá-lo.
 keywords: segurança, malware, Microsoft 365, M365, Pontuação segura, central de segurança, ações de melhoria
 ms.prod: w10
@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252292"
 ---
-# <a name="microsoft-secure-score"></a>Pontuação segura da Microsoft
+# <a name="microsoft-secure-score"></a>Classificação de Segurança da Microsoft
 
 Com a pontuação segura da Microsoft na central de segurança do Microsoft 365, você pode ter maior visibilidade e controle sobre a postura de segurança da sua organização. A partir de um painel centralizado, você pode monitorar e aprimorar a segurança de suas identidades, dados, aplicativos, dispositivos e infraestrutura do Microsoft 365.
 
@@ -29,7 +29,7 @@ A pontuação segura da Microsoft oferece visualizações robustas, integração
 
 Você receberá pontos para configurar os recursos de segurança recomendados, executar tarefas relacionadas à segurança (como exibir relatórios) ou abordar a ação de aperfeiçoamento com um aplicativo ou software de terceiros. Algumas ações são classificadas para conclusão parcial, como habilitar a MFA (autenticação multifator) para seus usuários. A segurança deve sempre ser balanceada com usabilidade, e nem todas as recomendações funcionarão para o seu ambiente.
 
-## <a name="required-permissions"></a>Permissões necessárias
+## <a name="required-permissions"></a>Permissões obrigatórias
 
 Atualmente, para exibir a pontuação segura da Microsoft, você deve receber uma das seguintes funções no Azure Active Directory:
 

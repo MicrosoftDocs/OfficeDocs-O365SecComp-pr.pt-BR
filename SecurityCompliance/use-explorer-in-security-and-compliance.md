@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre o Explorer (também chamado de Gerenciador de ameaças &amp; ) no centro de conformidade de segurança.
 ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264680"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Usar o explorador de ameaças no &amp; centro de conformidade de segurança
 
@@ -84,7 +84,7 @@ Para obter detalhes sobre isso, consulte [example: um administrador de seguranç
 ## <a name="more-ways-to-use-explorer"></a>Outras maneiras de usar o Explorer
 
 Além dos cenários descritos neste artigo, você tem muito mais opções de relatórios disponíveis no Explorer. 
-- [Encontre e investigue emails mal-intencionados que foram entregues](investigate-malicious-email-that-was-delivered.md)
+- [Localizar e investigar email malicioso que foi entregue](investigate-malicious-email-that-was-delivered.md)
 - [Exibir arquivos mal-intencionados detectados no SharePoint Online, no OneDrive e no Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Obter uma visão geral dos modos de exibição no explorador de ameaças](threat-explorer-views.md)
 

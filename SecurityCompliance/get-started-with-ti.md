@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre a investigação e a resposta contra ameaças do Office 365 e como começar.
 ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254154"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Introdução à investigação e à resposta contra ameaças (Office 365 Advanced Threat Protection Plan 2)
 
@@ -47,7 +47,7 @@ Use o painel de ameaças (isso também é conhecido como [painel de segurança](
   
 Para exibir e usar esse painel, no centro de &amp; conformidade de segurança, vá para o **painel** **Gerenciamento** \> de ameaças.
   
-### <a name="threat-explorer"></a>Explorador de ameaças
+### <a name="threat-explorer"></a>Explorador de Ameaças
 
 Use o Gerenciador de ameaças (isso também é chamado de Explorer) para analisar ameaças, confira o volume de ataques ao longo do tempo e analise os dados por famílias de ameaças, infraestrutura de atacante e muito mais. O Gerenciador de ameaças é o local inicial para o fluxo de trabalho de investigação de qualquer analista de segurança.
   

@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Uma visão geral dos ataques de negação de serviço (DoS).
 ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262813"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Como se proteger contra ataques de negação de serviço no Office 365
 
@@ -40,7 +40,7 @@ A [equipe de preparação para emergências dos Estados Unidos](https://www.us-c
 - Desconexão de uma conexão com a Internet sem fio ou com fio
 - Perda de longo prazo do acesso à Web ou a qualquer serviço de Internet
 
-## <a name="related-topics"></a>Tópicos Relacionados
-- [Principais princípios de defesa contra ataques de negação de serviço](office-365-core-principles-of-defense-against-dos-attacks.md)
+## <a name="related-topics"></a>Tópicos relacionados
+- [Princípios básicos de defesa contra ataques de negação de serviço](office-365-core-principles-of-defense-against-dos-attacks.md)
 - [Estratégia de defesa de negação de serviço da Microsoft](office-365-microsoft-dos-defense-strategy.md)
 - [Defendendo os serviços de nuvem da Microsoft contra ataques de negação de serviço](office-365-defending-cloud-services-against-dos-attacks.md)

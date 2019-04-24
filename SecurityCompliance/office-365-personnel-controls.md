@@ -3,23 +3,22 @@ title: Controles de pessoal do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma visão geral das práticas de triagem de pessoal da Microsoft para o Office 365.'
-ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262413"
 ---
 # <a name="office-365-personnel-controls"></a>Controles de pessoal do Office 365 
 
@@ -70,7 +69,8 @@ Onde a legislação local permite, o departamento de segurança global da Micros
 - Confirmação de identidade de uma identificação emitida pelo governo
 - Verificação de crédito quando apropriado
 
-A Reprojeção periódica e/ou verificações adicionais em segundo plano podem ser necessárias para determinadas funções de gerenciamento, segurança ou outras, incluindo, mas não se limitar a funcionários baseados nos Estados Unidos, em funções que exigem acesso aos dados do cliente. No caso de pessoas contingentes, o contrato com terceiros especifica os requisitos da Microsoft para a triagem que devem ser conduzidas pela terceiros. Para verificações em segundo plano, a empresa de terceiros é responsável por fornecer à verificação da Microsoft que uma verificação em segundo plano foi executada. Os resultados da verificação em segundo plano normalmente são recebidos por email do departamento de recursos humanos de terceiros. Os funcionários internacionais da equipe de contrato podem ser isentos do processo de triagem em segundo plano devido às leis em países que proíbem verificações em segundo plano.
+A Reprojeção periódica e/ou verificações adicionais em segundo plano podem ser necessárias para determinadas funções de gerenciamento, segurança ou outras, incluindo, mas não se limitar a funcionários baseados nos Estados Unidos, em funções que exigem acesso aos dados do cliente.
+No caso de pessoas contingentes, o contrato com terceiros especifica os requisitos da Microsoft para a triagem que devem ser conduzidas pela terceiros. Para verificações em segundo plano, a empresa de terceiros é responsável por fornecer à verificação da Microsoft que uma verificação em segundo plano foi executada. Os resultados da verificação em segundo plano normalmente são recebidos por email do departamento de recursos humanos de terceiros. Os funcionários internacionais da equipe de contrato podem ser isentos do processo de triagem em segundo plano devido às leis em países que proíbem verificações em segundo plano.
 
 ## <a name="microsoft-employment-screening"></a>TriAgem de emprego da Microsoft
 Desde 2004, a Microsoft exigia que os usuários passem uma tela de registro criminal de sete anos para o felonies e o Misdemeanors, e para verificar o histórico de educação e empregos, como parte da triagem de pré-venda nos Estados Unidos para funcionários e estagiários.

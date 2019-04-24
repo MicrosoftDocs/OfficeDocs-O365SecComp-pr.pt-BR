@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: As configurações básicas de filtro de spam incluem a seleção da ação a ser executada em mensagens identificadas como spam e a escolha da filtragem de mensagens escritas em idiomas específicos ou enviadas de países ou regiões específicos.
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258809"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
   
-As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada. Você pode editar a política de filtro de spam padrão para definir as configurações de filtro de spam para toda a empresa e criar políticas personalizadas de filtro de spam e aplicá-las a usuários, grupos ou domínios específicos em sua organização. Políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de prioridade mais alta será aplicada se várias políticas atenderem ao conjunto de critérios. 
+As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada. Você pode editar a política de filtro de spam padrão para definir as configurações de filtro de spam para toda a empresa e criar políticas personalizadas de filtro de spam e aplicá-las a usuários, grupos ou domínios específicos em sua organização. Políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de prioridade mais alta será aplicada se várias políticas atenderem ao conjunto de critérios.
   
 > [!IMPORTANT]
 > Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No enTanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar regras de fluxo de email do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 

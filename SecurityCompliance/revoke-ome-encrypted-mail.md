@@ -1,5 +1,5 @@
 ---
-title: Revogar e-mails criptografados por criptografia de mensagens do Office 365
+title: Revogar emails criptografados por criptografia de mensagens do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: Como administrador do Office 365, você pode revogar determinados emails que foram criptografados com a criptografia de mensagem do Office 365.
 ms.openlocfilehash: 75b5e46e25f447ddac0de5a7911d0df8385da6b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264814"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Revogação de email de criptografia de mensagem do Office 365
 
@@ -69,7 +69,7 @@ Para verificar se você pode ou não revogar uma mensagem de email específica, 
      Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
      ```
 
-   Isso retorna o assunto da mensagem e se a mensagem é revogável. Por exemplo,
+   Isso retorna o assunto da mensagem e se a mensagem é revogável. For example,
 
      ```text
      Subject IsRevocable

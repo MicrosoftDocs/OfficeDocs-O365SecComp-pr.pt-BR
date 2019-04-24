@@ -1,5 +1,5 @@
 ---
-title: Verificar sua consulta de Pesquisa de Conteúdo para erros
+title: Verifique se há erros na sua consulta da Pesquisa de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,13 +12,13 @@ search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Verifique a pesquisa de palavras-chave em busca de erros e erros de digitação, como caracteres não suportados e operadores booleanos minúsculos, antes de executar a pesquisa. Se encontrarmos um erro, sugeriremos uma consulta revisada.
 ms.openlocfilehash: 00612116f345e2a01471d5c83df77f4bc8db9ce5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243648"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Verificar sua consulta de Pesquisa de Conteúdo para erros
+# <a name="check-your-content-search-query-for-errors"></a>Verifique se há erros na sua consulta da Pesquisa de Conteúdo
 
 Ao criar ou editar uma pesquisa de conteúdo, você pode fazer com que o Office 365 Verifique sua consulta em busca de caracteres não suportados e operadores booleanos que podem não estar em maiúsculas. Como? Basta clicar em **verificar erros de digitação** na página consulta de uma pesquisa de conteúdo. 
   

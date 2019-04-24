@@ -11,11 +11,11 @@ search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Saiba como criar um bloqueio in-loco para uma caixa de correio excluída de forma reversível para torná-la inativa e preservar seu conteúdo. Em seguida, você pode usar as ferramentas de descoberta eletrônica da Microsoft para pesquisar a caixa de correio inativa.
 ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261599"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar um bloqueio in-loco em uma caixa de correio excluída de forma reversível no Exchange Online
 
@@ -83,7 +83,7 @@ Use o cmdlet **New-MailboxSearch** para tornar uma caixa de correio de exclusão
 
 Após tornar uma caixa de correio inativa excluída por software, há várias maneiras de gerenciar a caixa de correio. Para obter mais informações, consulte:
   
-- [Alterar a duração da retenção de uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
+- [Alterar a duração do bloqueio para uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
     
 - [Recuperar uma caixa de correio inativa](recover-an-inactive-mailbox.md)
     

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Descubra como os recursos de inteligência de ameaças no Office 365 proteção avançada contra ameaças pode ajudá-lo a Pesquisar ameaças em sua organização, responder a malware, phishing e outros ataques que o Office 365 detectou em seu nome e Pesquisar ameaças indicadores.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265393"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigação e resposta contra ameaças do Office 365
 
@@ -65,7 +65,7 @@ Use os seguintes recursos para saber mais sobre os recursos de investigação de
 
 - [Usar o explorador de ameaças no &amp; centro de conformidade de segurança](use-explorer-in-security-and-compliance.md)
     
-- [Encontre e investigue emails mal-intencionados que foram entregues](investigate-malicious-email-that-was-delivered.md)
+- [Localizar e investigar email malicioso que foi entregue](investigate-malicious-email-that-was-delivered.md)
     
 - [Usar o simulador de ataque](attack-simulator.md)
     
@@ -73,7 +73,7 @@ Use os seguintes recursos para saber mais sobre os recursos de investigação de
     
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Modos de exibição do Gerenciador de ameaças](threat-explorer-views.md)
+[Exibições do Explorador de Ameaças](threat-explorer-views.md)
 
 [Proteção contra ameaças no Office 365](protect-against-threats.md)
   

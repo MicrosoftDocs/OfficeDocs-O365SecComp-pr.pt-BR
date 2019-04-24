@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'O Office 365 Cloud app Security fornece informações sobre atividades suspeitas no Office 365 para que você possa investigar situações que são potencialmente problemáticas e, se necessário, tomar medidas para resolver problemas de segurança. '
 ms.openlocfilehash: 960e4c75a4da13e1a0365f75d290cd18587abd58
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263047"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Overview of Office 365 Cloud App Security
   
@@ -60,9 +60,9 @@ para exibir/usar modelos de política, no portal do Office 365 Cloud App Securit
   
 Para saber mais sobre políticas, confira os seguintes recursos:
   
-- [Políticas e alertas de atividades no Office 365 Cloud app Security](activity-policies-and-alerts.md)
+- [Políticas de atividades e alertas no Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Políticas de detecção de anomalias no Office 365 Cloud app Security](anomaly-detection-policies-in-ocas.md)
+- [Políticas de detecção de anomalias no Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
 ## <a name="alerts"></a>Alertas
 
@@ -74,9 +74,9 @@ Quando as políticas são definidas, os alertas notificam você sobre atividades
   
 Para saber mais sobre alertas, confira os seguintes recursos:
   
-- [Políticas e alertas de atividades no Office 365 Cloud app Security](activity-policies-and-alerts.md)
+- [Políticas de atividades e alertas no Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Políticas de detecção de anomalias no Office 365 Cloud app Security](anomaly-detection-policies-in-ocas.md)
+- [Políticas de detecção de anomalias no Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
 - [Examinar e adotar medidas nos alertas do Office 365 Cloud app Security](review-office-365-cas-alerts.md)
     
@@ -104,7 +104,7 @@ Para acessar essa página, vá para **investigar** \> **aplicativos OAuth**.
   
 ![No portal do O365 CAS, escolha investigar.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Gerenciar aplicativos OAuth usando o Office 365 Cloud app Security](manage-app-permissions-in-ocas.md)
+[Gerenciar aplicativos do OAuth usando o Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Painel de descoberta de nuvem
 
@@ -116,12 +116,12 @@ para acessar esse painel, no portal do Office 365 Cloud App Security, vá para *
   
 ![No portal CAS do Office 365, escolha descobrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-[Examinar as descobertas de descoberta de aplicativos no Office 365 Cloud app Security](review-app-discovery-findings-in-ocas.md)
+[Analisar descobertas de aplicativos do Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
   
 ## <a name="next-steps"></a>Próximas etapas
 
 - Obter o [Guia de uso e casos de uso do Office 365 Cloud app Security](https://aka.ms/O365CASGuide)
     
-- [Prepare-se para o Office 365 Cloud app Security](get-ready-for-office-365-cas.md)
+- [Introdução ao Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
     
 

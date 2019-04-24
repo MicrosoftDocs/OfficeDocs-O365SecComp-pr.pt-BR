@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241828"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gerenciar os responsáveis em um caso de descoberta eletrônica avançada (visualização)
 
@@ -122,5 +122,5 @@ Para liberar um responsáveis:
 
 ## <a name="related-information"></a>Informações relacionadas
 
- - [Correção de erro ao processar dados](error-remediation.md) 
+ - [Correção de erros durante o processamento de dados](error-remediation.md) 
 - [Trabalhar com comunicações](managing-custodian-communications.md)

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Se você enviar um alto volume de emails de domínio não registrados, correrá o risco de que seu email fique bloqueado. Leia este artigo para saber mais.
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263983"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Email de domínio não registrado: o que você precisa saber
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5593d9bbf76cd0004b48f45123c4921dc3fed9e6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257619"
 ---
 # <a name="process-data-for-an-investigation"></a>Dados de processo para uma investigação
 
@@ -32,4 +32,4 @@ A guia **processamento** em investigações de dados (visualização) fornece tr
 Consulte os artigos a seguir para obter mais detalhes.
 
 - [Indexação avançada de dados para uma investigação](index-data-people-of-interest.md)
-- [Correção de erro ao processar dados](error-remediation.md)
+- [Correção de erros durante o processamento de dados](error-remediation.md)

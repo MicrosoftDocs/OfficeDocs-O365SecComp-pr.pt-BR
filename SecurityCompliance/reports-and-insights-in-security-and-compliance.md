@@ -1,5 +1,5 @@
 ---
-title: Relatórios inteligentes e insights no centro de conformidade de & de segurança
+title: Relatórios inteligentes e insights no Centro de Conformidade e Segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenha uma visão geral de relatórios e ideias de avialable no centro de &amp; conformidade de segurança.
 ms.openlocfilehash: fff1fac7d35a4e12e66f27ac0069d34eb86f3fe0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261509"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Relatórios inteligentes e insights no centro de conformidade de &amp; segurança do Office 365
 

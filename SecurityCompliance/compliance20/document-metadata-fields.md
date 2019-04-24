@@ -1,5 +1,5 @@
 ---
-title: Campos de metadados do documento
+title: Campos de metadados de documentos na descoberta eletrônica avançada (visualização)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,49 +14,55 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251849"
 ---
-# <a name="document-metadata-fields"></a>Campos de metadados do documento
+# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>Campos de metadados de documentos na descoberta eletrônica avançada (visualização)
 
+A tabela a seguir lista os campos de metadados para documentos em um conjunto de trabalho em um caso de descoberta eletrônica avançada (versão prévia). A tabela indica o nome do campo de metadados, se o campo pode ser pesquisado durante a execução de uma consulta em um conjunto de trabalho, se o campo está presente ao exibir os metadados de arquivo de um documento selecionado em um conjunto de trabalho e se o campo é incluído quando os documentos são exportados. 
 
-|**Nome do campo** </br>|**Pesquisável e visível no conjunto de trabalho** |**Painel metadados de arquivo** |**Expor** |
+A tabela a seguir lista os campos de metadados para documentos em um conjunto de trabalho em um caso de descoberta eletrônica avançada (versão prévia). A tabela indica o nome do campo de metadados, se o campo pode ser pesquisado durante a execução de uma consulta em um conjunto de trabalho, se o campo está presente ao exibir os metadados de arquivo de um documento selecionado em um conjunto de trabalho e se o campo é incluído quando os documentos são exportados. 
+
+> [!NOTE]
+> Os valores entre parênteses na coluna **conjunto de trabalho pesquisável** é o nome da propriedade que você pode pesquisar. Os valores entre parênteses na coluna de **metadados de arquivo visível** é o nome da propriedade que é exibida quando você está exibindo os metadados do arquivo.
+
+|**Nome do campo** </br>|**Pesquisável no conjunto de trabalho** |**Visível nos metadados do arquivo** |**Exported** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Marcas de caso                  | Sim (marcas)                                      |                         | Sim         |
 |Rótulos de conformidade          |                                                 |                         | Sim         |
 |Caminho composto              |                                                 |                         | Sim         |
 |ID do contêiner               |                                                 |                         | Sim         |
 |Índice de conversa         |                                                 |                         | Sim         |
-|Custodian                  | Sim (responsáveis)                                 |                         | Sim         |
-|Fonte de dados                | Sim (origem)                                    |                         | Sim         |
-|Data                       | Sim (Data)                                      |                         | Sim         |
+|Custodian                  | Sim (responsáveis)                                 |   Sim (responsáveis)       | Sim         |
+|Fonte de dados                | Sim (origem)                                    |   Sim (carga de trabalho)          | Sim         |
+|Data                       | Sim (Data)                                      |   Sim (data UTC)        | Sim         |
 |Caminho composto deduplicado      |                                                 |                         | Sim         |
 |Responsáveis pela eliminação de duplicação         |                                                 |                         | Sim         |
 |IDs de arquivo com eliminação de duplicação           |                                                 |                         | Sim         |
-|Autores de Doc                | Sim (autor) *                                   |                         | Sim         |
-|Comentários doc               |                                                 |                         | Sim         |
+|Autores de Doc                | Sim (autor) *                                   |    Sim (autor)         | Sim         |
+|Comentários doc               | Sim (comentários)                                  |                         | Sim         |
 |Empresa doc                |                                                 |                         | Sim         |
-|Data de criação do documento           | Sim (criadotime) *                              |                         | Sim         |
+|Data de criação do documento           | Sim (criadotime) *                              |    Sim (hora de criação)   | Sim         |
 |Data de modificação do documento          | Sim (lastModifiedDate) *                         |                         | Sim         |
 |Palavras-chave de Doc               |                                                 |                         | Sim         |
 |Doc salvo pela última vez por          |                                                 |                         | Sim         |
 |Doc modificado por            |                                                 |                         | Sim         |
-|Assunto doc                |                                                 |                         | Sim         |
+|Assunto doc                |                                                 |  Sim (assunto/título)    | Sim         |
 |Modelo de documento               |                                                 |                         | Sim         |
-|Título do documento                  | Sim (título)                                     |                         | Sim         |
+|Título do documento                  | Sim (título)                                     |  Sim (título)            | Sim         |
 |Versão doc                |                                                 |                         | Sim         |
-|Tema dominante             | Sim (dominantTheme)                             |                         | Sim         |
+|Tema dominante             | Sim (dominantTheme)                             |  Sim (tema dominante)   | Sim         |
 |Subconjunto duplicado           |                                                 |                         | Sim         |
 |Ação de email               |                                                 |                         | Sim         |
 |Email Cco                  | Sim (Cco)                                       |                         | Sim         |
 |Email CC                   | Sim (CC)                                        |                         | Sim         |
 |ID da conversa de email      |                                                 |                         | Sim         |
-|Data de recebimento do email        | Sim (recebido)                                  |                         | Sim         |
-|Data de envio do email            | Sim (enviado)                                      |                         | Sim         |
+|Data de recebimento do email        | Sim (recebido)                                  |   Sim (recebido)        | Sim         |
+|Data de envio do email            | Sim (enviado)                                      |   Sim (enviado)            | Sim         |
 |Email com anexo       |                                                 |                         | Sim         |
 |Importância de email           |                                                 |                         | Sim         |
 |Cabeçalhos de email da Internet     |                                                 |                         | Sim         |
@@ -67,58 +73,59 @@ ms.locfileid: "30639108"
 |Domínios de destinatários de email    | Sim (recipientDomains)                          |                         | Sim         |
 |Destinatários de email           | Sim (destinatários)                                |                         | Sim         |
 |Segurança de email             |                                                 |                         | Sim         |
-|Remetente de email               | Sim (remetente)                                    |                         | Sim         |
+|Remetente de email               | Sim (remetente)                                    |   Sim (remetente)          | Sim         |
 |Domínio do remetente do email        | Sim (senderDomain)                              |                         | Sim         |
 |Confidencialidade de email          |                                                 |                         | Sim         |
-|Conjunto de emails                  | Sim (emailSetId)                                |                         | Sim         |
-|Assunto do email              | Sim (assunto)                                   |                         | Sim         |
+|Conjunto de emails                  | Sim (emailSetId)                                |   Sim (EmailSetID)      | Sim         |
+|Assunto do email              | Sim (assunto)                                   |   Sim (assunto/título)   | Sim         |
 |Thread de email               |                                                 |                         | Sim         |
 |Email para                   | Sim (para)                                        |                         | Sim         |
 |Código de erro                 | Sim (processingStatus)                          |                         | Sim         |
 |Exportar caminho nativo         |                                                 |                         | Sim         |
 |Comprimento de texto extraído      |                                                 |                         | Sim         |
 |Caminho de texto extraído        |                                                 |                         | Sim         |
-|ID da família                  | Sim (FamilyID)                                  |                         | Sim         |
+|ID da família                  | Sim (FamilyID)                                  |   Sim (FamilyID)        | Sim         |
 |Tamanho da família                |                                                 |                         | Sim         |
-|Classe de arquivo                 | Sim (fileClass)                                 |                         | Sim         |
-|ID de arquivo                    | Sim (fileid)                                    |                         | Sim         |
+|Classe de arquivo                 | Sim (fileClass)                                 |   Sim (classe de arquivo)      | Sim         |
+|ID de arquivo                    | Sim (fileid)                                    |   Sim (ID)              | Sim         |
 |Tem texto                   |                                                 |                         | Sim         |
-|Tipo inclusivo             | Sim (inclusivo)                             |                         | Sim         |
+|Tipo inclusivo             | Sim (inclusivo)                             |   Sim (tipo inclusivo)  | Sim         |
 |Data de entrada modificada        |                                                 |                         | Sim         |
 |ID do arquivo de entrada              |                                                 |                         | Sim         |
 |Caminho de entrada                 |                                                 |                         | Sim         |
 |ID de mensagem da Internet        |                                                 |                         | Sim         |
-|É representante          | Sim (markAsRepresntative)                       |                         | Sim         |
+|É representante          | Sim (markAsRepresentative)                      |                         | Sim         |
 |Classe de item                 |                                                 |                         | Sim         |
 |ID de carregamento                    | Sim (loadid)                                    |                         | Sim         |
 |Nome do local              |                                                 |                         | Sim         |
-|Marcado como dinâmico            | Sim (markAsPivot)                               |                         | Sim         |
+|Marcado como dinâmico            | Sim (markAsPivot)                               |   Sim (marcado como dinâmico) | Sim         |
 |Tipo de mensagem               | Sim (messageKind)                               |                         | Sim         |
 |Extensão nativa           |                                                 |                         | Sim         |
-|Nome do arquivo nativo           |                                                 |                         | Sim         |
+|Nome do arquivo nativo           |                                                 |    Sim (nome de arquivo)      | Sim         |
 |MD5 nativo                 |                                                 |                         | Sim         |
 |SHA nativo 256             |                                                 |                         | Sim         |
-|Tamanho nativo                | Sim (tamanho)                                      |                         | Sim         |
-|Tipo nativo                | Sim (fileType)                                  |                         | Sim         |
+|Tamanho nativo                | Sim (tamanho)                                      |   Sim (NativeSize)     | Sim         |
+|Tipo nativo                | Sim (fileType)                                  |   Sim (tipo de arquivo)       | Sim         |
 |ND ET classificar excl anexar     |                                                 |                         | Sim         |
 |Ordem de classificação do ND ET incl Attach     |                                                 |                         | Sim         |
 |Conjunto de ND                     |                                                 |                         | Sim         |
-|Autores do O365               | Sim (autor) *                                   |                         | Sim         |
+|Autores do O365               | Sim (autor) *                                   |   Sim (remetente/autor)   | Sim         |
 |O365 criado por            |                                                 |                         | Sim         |
 |Data do O365 criada          | Sim (criadotime) *                              |                         | Sim         |
-|Data de modificação do O365         | Sim (lastModifiedDate) *                         |                         | Sim         |
+|Data de modificação do O365         | Sim (lastModifiedDate) *                         |   Sim (data da última modificação) | Sim      |
 |O365 modificado por           |                                                 |                         | Sim         |
 |Nó pai                |                                                 |                         | Sim         |
-|ID da tabela dinâmica                   | Sim (pivotid)                                   |                         | Sim         |
+|ID da tabela dinâmica                   | Sim (pivotid)                                   |  Sim (Pivotid)          | Sim         |
 |Contagem de destinatários            |                                                 |                         | Sim         |
 |Número da linha                 |                                                 |                         | Sim         |
 |ID do conjunto                     |                                                 |                         | Sim         |
 |Definir ordem inclusive primeiro |                                                 |                         | Sim         |
 |Porcentagem de similaridade         |                                                 |                         | Sim         |
-|Lista de temas                | Sim (temas)                                |                         | Sim         |
+|Lista de temas                | Sim (temas)                                | Sim (lista de temas)       | Sim         |
 |Word count                 | Sim (wordCount)                                 |                         | Sim         |
-|Pontuação de relevância (problema)    | Sim (relevanceScore_issueNum)                   |                         |             |
-|Ler percentil (problema)    | Sim (readPercentile_issueNum)                   |                         |             |
-|Marca de relevância (problema)      | Sim (relevanceTag_issueNum)                     |                         |             |
+|Pontuação de relevância (problema)    | Sim (relevanceScore_issueNum)                   |                         | Sim           |
+|Ler percentil (problema)    | Sim (readPercentile_issueNum)                   |                         | Sim          |
+|Marca de relevância (problema)      | Sim (relevanceTag_issueNum)                     |                         | Sim           |
+|||||
 
-  \*Para esses campos, se houver valores incorporados nos documentos, a pesquisa priorizará esses valores; caso contrário, ele tentará apresentar valores do O365.
+  \*Para esses campos, se houver valores incorporados dentro de um documento, a pesquisa priorizará esses valores; caso contrário, ele tentará exibir o valor do Office 365.

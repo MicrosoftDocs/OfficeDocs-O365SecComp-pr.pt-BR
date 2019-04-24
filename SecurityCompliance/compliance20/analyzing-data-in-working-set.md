@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e3f3e863423fe4312a944eb6f04a58182e11665c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243232"
 ---
 # <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analisar dados em um conjunto de trabalho em descoberta eletrônica avançada (visualização)
 
 Quando o número de documentos coletados é grande, pode ser muito difícil examiná-los. A descoberta eletrônica avançada (prévia) fornece várias ferramentas para analisar os documentos para reduzir o volume de documentos a serem revisados sem perda de informações e para ajudá-lo a organizar os documentos de forma coerente. Para saber mais sobre esses recursos, confira:
 
-- [Detecção próxima duplicação](near-duplicates.md)
-- [Encadeamento de email](email-threading.md)
+- [Detecção de duplicata próxima](near-duplicates.md)
+- [Conversa de email](email-threading.md)
 - [Temas](themes.md)
 
 Para analisar dados em um conjunto de trabalho:

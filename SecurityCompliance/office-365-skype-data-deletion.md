@@ -3,23 +3,22 @@ title: Exclusão de dados do Skype for Business do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma explicação da exclusão de dados no Skype for Business.
-ms.openlocfilehash: 77ead8b8c2251ce21f9a0c0db9e29d5d48829760
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ca48a4bc57cdba7301a51cc6404a7d402166ffb0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261299"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Exclusão de dados do Skype for Business no Office 365
 
@@ -28,15 +27,15 @@ O Skype for Business oferece arquivamento de mensagens instantâneas ponto a pon
 Todo o arquivamento no Skype for Business é considerado "arquivamento de nível do usuário" porque é possível habilitá-lo ou desabilitá-lo para um ou mais usuários ou grupos de usuários específicos criando, configurando e aplicando uma política de arquivamento de nível do usuário para esses usuários. Não há controle direto das configurações de arquivamento de dentro do Centro de administração do Skype for Business.
 
 Os seguintes tipos de conteúdo não são arquivados no Skype for Business: 
-- Transferências de arquivos de ponto a ponto
-- Áudio/vídeo para mensagens instantâneas de ponto a ponto e conferências
+- Transferências de arquivo ponto a ponto
+- Áudio/vídeo para mensagens instantâneas ponto a ponto e conferências
 - Compartilhamento de aplicativo para mensagens instantâneas ponto a ponto e conferências
 - Anotações de conferência 
 
 ## <a name="meeting-content-retention"></a>Retenção de conteúdo de reunião
-Os clientes que usam o Skype for Business podem carregar conteúdo para uma reunião do Skype for Business como anexos, como apresentações do PowerPoint, arquivos do OneNote e outros arquivos. O período de retenção do conteúdo que foi carregado para uma reunião é o seguinte:
+Os clientes que usam o Skype for Business podem carregar conteúdo para uma reunião do Skype for Business como anexos, como apresentações do PowerPoint, arquivos do OneNote e outros arquivos. O período de retenção para o conteúdo que foi carregado para uma reunião é o seguinte:
 - **Reunião de uso único** -o conteúdo é mantido por 15 dias a partir de quando a última pessoa deixa a reunião.
-- **Reunião recorrente** -o conteúdo é mantido por 15 dias após a última pessoa sair da última sessão da reunião. O timer de retenção redefine se alguém ingressar na mesma sessão de reunião dentro de 15 dias. Por exemplo, suponha que uma reunião do Skype for Business está agendada para ocorrer semanal por um ano, e um arquivo é carregado para a reunião durante a primeira instância. Se pelo menos uma pessoa ingressar na sessão de reunião toda semana, o arquivo será mantido nos servidores do Skype for Business online por todo o ano mais 15 dias após a última pessoa sair da última reunião da série.
+- **Reunião recorrente** -o conteúdo é mantido por 15 dias após a última pessoa sair da última sessão da reunião. O temporizador de retenção reinicia se alguém ingressar na mesma sessão de reunião em 15 dias. Por exemplo, suponha que uma reunião do Skype for Business está agendada para ocorrer semanal por um ano, e um arquivo é carregado para a reunião durante a primeira instância. Se pelo menos uma pessoa ingressar na sessão de reunião toda semana, o arquivo será mantido nos servidores do Skype for Business online por todo o ano mais 15 dias após a última pessoa sair da última reunião da série.
 - **Reunião agora** -o conteúdo é retido por 8 horas após a hora de término da reunião.
 
 > [!NOTE]
@@ -49,7 +48,7 @@ Os usuários podem acessar uma reunião específica, após a reunião ter termin
 - **Reunião agora** – a reunião expira após 8 horas.
 
 ## <a name="whiteboard-collaboration"></a>Colaboração de quadro de comunicações
-As anotações feitas em quadros de comunicações serão vistas por todos os participantes. Ao salvar um quadro de comunicações, o quadro de comunicações e todas as anotações serão armazenados em um Skype for Business Server e serão retidos no servidor de acordo com as políticas de expiração de conteúdo da reunião definidas pelo administrador.
+As anotações feitas em quadros de comunicação serão vistas por todos os participantes. Ao salvar um quadro de comunicações, o quadro de comunicações e todas as anotações serão armazenados em um Skype for Business Server e serão retidos no servidor de acordo com as políticas de expiração de conteúdo da reunião definidas pelo administrador.
 
 ## <a name="audio-test-service"></a>Serviço de teste de áudio
 Um curto (aproximadamente 5 segundos) amostra de sua voz é registrado durante a chamada do serviço de teste de áudio. O exemplo de voz é usado para verificar e/ou verificar a qualidade de som da chamada do Skype for Business com base na qualidade da gravação. Quando a chamada de serviço de teste de áudio termina, a amostra de voz é excluída.

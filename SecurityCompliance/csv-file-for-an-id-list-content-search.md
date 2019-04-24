@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use o arquivo Results. csv ou itens não indexados. csv de uma pesquisa de conteúdo existente para criar uma pesquisa de lista de ID que retorna mensagens de email específicas. Pesquisas de lista de ID normalmente são usadas para retornar itens de caixa de correio parcialmente indexados.
 ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265436"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar um arquivo CSV para uma pesquisa de conteúdo de lista de ID no Office 365
 
@@ -29,9 +29,9 @@ Veja uma rápida visão geral do processo de criação de uma pesquisa de lista 
     
 2. Exporte os resultados da pesquisa de conteúdo ou exporte o relatório de pesquisa de conteúdo. Para obter mais informações, consulte:
     
-    - [Exportar resultados de pesquisa de conteúdo](export-search-results.md)
+    - [Exportar os resultados da Pesquisa de Conteúdo](export-search-results.md)
     
-    - [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
+    - [Exportar um relatório de Pesquisa de Conteúdo](export-a-content-search-report.md)
     
 3. Edite o arquivo **Results. csv** ou os **itens não indexados. csv** e identifique os itens de caixa de correio específicos que você deseja incluir na pesquisa de lista de ID. Consulte as [instruções](#prepare-the-csv-file-for-an-id-list-search) para preparar um arquivo CSV para uma pesquisa de lista de ID. 
     

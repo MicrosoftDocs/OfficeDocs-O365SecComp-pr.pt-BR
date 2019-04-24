@@ -1,5 +1,5 @@
 ---
-title: Simulador de ataque no Office 365
+title: Simulador de Ataque no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: Como administrador global do Office 365, você pode usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real atinja sua empresa.
 ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249680"
 ---
-# <a name="attack-simulator-in-office-365"></a>Simulador de ataque no Office 365
+# <a name="attack-simulator-in-office-365"></a>Simulador de Ataque no Office 365
 
 **Resumo** Se você for um administrador global do Office 365 e sua organização tiver [recursos de investigação e resposta de ameaças do office 365](office-365-ti.md), você poderá usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real afete o resultado final. Leia este artigo para saber mais.
 
@@ -127,7 +127,7 @@ Um ataque de senha de força bruta em relação a uma organização é geralment
     
 ## <a name="new-features-in-attack-simulator"></a>Novos recursos no simulador de ataques
 
-Novos recursos estão sendo adicionados ao simulador de ataques. Eles incluem:
+Novos recursos estão sendo adicionados ao simulador de ataques. Entre eles:
 
 - **Recursos avançados de relatórios**. Você poderá ver dados como o tempo mais rápido (ou mais lento) para abrir uma mensagem de email de simulação de ataque, o tempo mais rápido (ou mais lento) para clicar em um link na mensagem e muito mais.
 

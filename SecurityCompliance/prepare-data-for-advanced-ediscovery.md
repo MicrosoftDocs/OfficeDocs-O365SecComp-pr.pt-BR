@@ -1,5 +1,5 @@
 ---
-title: Preparar dados para a Descoberta Eletrônica Avançada do Office 365
+title: Preparar dados para a descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,15 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Saiba como usar o centro de conformidade de &amp; segurança do Office 365 para preparar os dados do Office 365 para análise com a descoberta eletrônica avançada do Office 365. '
-ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Saiba como usar o centro de conformidade de &amp; segurança do Microsoft 365 para preparar dados do Office 365 para análise com a descoberta eletrônica avançada do Office 365. '
+ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265503"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparar dados para a Descoberta Eletrônica Avançada do Office 365
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparar dados para a descoberta eletrônica avançada do Office 365
 
 Este tópico descreve como carregar os resultados de uma pesquisa de conteúdo em um caso na descoberta eletrônica avançada. 
   
@@ -29,7 +29,7 @@ Este tópico descreve como carregar os resultados de uma pesquisa de conteúdo e
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Etapa 1: preparar os dados do Office 365 para descoberta eletrônica avançada
 
-Para analisar dados com a descoberta eletrônica avançada, você pode usar os resultados de uma pesquisa de conteúdo executada no centro de conformidade &amp; de segurança do Office 365 (listado na página de **pesquisa de conteúdo** no &amp; centro de conformidade de segurança do Office 365) ou em uma pesquisa associado a um caso de descoberta eletrônica (listado na página **descoberta eletrônica** no &amp; centro de conformidade de segurança). 
+Para analisar dados com a descoberta eletrônica avançada, você pode usar os resultados de uma pesquisa de conteúdo executada no centro de conformidade &amp; de segurança do Microsoft 365 (listado na página de **pesquisa de conteúdo** no &amp; centro de conformidade com segurança da Microsoft 365) ou em um pesquisa associada a um caso de descoberta eletrônica (listado na página **descoberta eletrônica** no &amp; centro de conformidade de segurança). 
   
 Para obter as etapas detalhadas sobre como preparar os resultados de pesquisa para análise na descoberta eletrônica avançada, consulte [preparar resultados de pesquisa para a descoberta eletrônica avançada do Office 365](prepare-search-results-for-advanced-ediscovery.md).
   
@@ -68,11 +68,11 @@ Após os resultados da pesquisa do centro &amp; de conformidade de segurança se
   
 [Configurar usuários e casos](set-up-users-and-cases-in-advanced-ediscovery.md)
   
-[Analisando dados de caso](analyze-case-data-with-advanced-ediscovery.md)
+[Analisando dados de ocorrências](analyze-case-data-with-advanced-ediscovery.md)
   
 [Gerenciamento da configuração de relevância](manage-relevance-setup-in-advanced-ediscovery.md)
   
-[Usando o módulo de relevância](use-relevance-in-advanced-ediscovery.md)
+[Usando o módulo de Relevância](use-relevance-in-advanced-ediscovery.md)
   
-[Exportar dados de caso](export-case-data-in-advanced-ediscovery.md)
+[Exportando dados de ocorrências](export-case-data-in-advanced-ediscovery.md)
 

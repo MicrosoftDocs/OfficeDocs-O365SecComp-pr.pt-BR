@@ -1,5 +1,5 @@
 ---
-title: Executar o Módulo de processo na Descoberta Eletrônica Avançada do Office 365
+title: Executar o módulo de processo na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Saiba mais sobre as diretrizes para preparar arquivos de caso dos dados do Office 365 para análise com a descoberta eletrônica avançada do Office 365.  '
 ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261029"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Executar o Módulo de processo na Descoberta Eletrônica Avançada do Office 365
+# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Executar o módulo de processo na descoberta eletrônica avançada do Office 365
 
 Os arquivos de caso são carregados na descoberta eletrônica avançada durante o **processo**de **preparação** \> . 
   
@@ -39,7 +39,7 @@ Os arquivos de caso são carregados na descoberta eletrônica avançada durante 
     
 - **Nome e tipo de arquivo**:
     
-  - A descoberta eletrônica avançada pode processar arquivos de vários formatos e extrair arquivos nativos carregados em um formato padrão, \*como. TXT, HTML ou. XML. o processamento de arquivos de texto é mais rápido do que arquivos nativos. Arquivos de texto extraídos são armazenados na pasta de casos.
+  - A descoberta eletrônica avançada pode processar arquivos de vários formatos e extrair arquivos nativos carregados em um formato padrão, \*como. TXT, HTML ou. XML. O processamento de arquivos de texto é mais rápido do que os arquivos nativos. Arquivos de texto extraídos são armazenados na pasta de casos.
     
   - Não carregue arquivos que não podem ser extraídos, como arquivos do sistema ou imagens gráficas. Esses arquivos podem atrasar o processamento.
     

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Saiba mais sobre os limites em vigor para o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança no Office 365, como o número máximo de pesquisas simultâneas. '
 ms.openlocfilehash: 715c64433ad78197411aff465c7a08baf2f71eb8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252019"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limites de pesquisa de conteúdo no centro de conformidade do & de segurança
 
@@ -75,7 +75,7 @@ A tabela a seguir descreve os limites de indexação que podem resultar em uma m
 
 Há limites adicionais relacionados a diferentes aspectos da pesquisa de conteúdo, como exportar resultados de pesquisa e indexação de conteúdo. Para obter uma descrição desses limites, consulte os seguintes tópicos:
   
-- [Exportar resultados de pesquisa de conteúdo](export-search-results.md#export-limits)
+- [Exportar os resultados da Pesquisa de Conteúdo](export-search-results.md#export-limits)
     
 - [Itens parcialmente indexados na Pesquisa de Conteúdo do Office 365](partially-indexed-items-in-content-search.md)
     

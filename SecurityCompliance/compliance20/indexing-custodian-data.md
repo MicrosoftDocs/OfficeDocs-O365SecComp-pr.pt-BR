@@ -1,5 +1,5 @@
 ---
-title: Indexação avançada de dados de responsáveis
+title: Indexação de dados custodiante avançados
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 1521aadca42c8119ae341065865b227fb16ffcf3
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251939"
 ---
-# <a name="advanced-indexing-of-custodian-data"></a>Indexação avançada de dados de responsáveis
+# <a name="advanced-indexing-of-custodian-data"></a>Indexação de dados custodiante avançados
 
 Quando um qualificador é adicionado a um caso de descoberta eletrônica avançada (visualização), qualquer conteúdo no Office 365 que foi considerado parcialmente indexado é reprocessado para torná-lo totalmente pesquisável.  Esse processo é chamado de *indexAção avançada*. O conteúdo pode ser parcialmente indexado por vários motivos, incluindo a existência de imagens, tipos de arquivos não suportados ou quando são encontrados limites de tamanho de arquivo de indexação.
 

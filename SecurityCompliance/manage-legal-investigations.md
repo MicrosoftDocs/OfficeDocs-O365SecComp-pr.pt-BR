@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de descoberta eletrônica no centro de conformidade do & de segurança no Office 365 para gerenciar a investigação legal da sua organização. Se você tiver uma assinatura e5, poderá analisar mais dados de caso usando a análise de texto, aprendizado de máquinas e recursos de codificação de descoberta eletrônica avançada.
 ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252089"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gerenciar investigações legais no Office 365
 
@@ -87,7 +87,7 @@ Após o carregamento dos dados de pesquisa no caso da descoberta eletrônica ava
     
 - [Definir configurações avançadas](set-analyze-advanced-settings-in-advanced-ediscovery.md) para o processo de análise 
     
-### <a name="set-up-relevance-training"></a>Configurar o treinamento de relevância
+### <a name="set-up-relevance-training"></a>Configurar treinamento de Relevância
 
 A codificação preditiva (chamada de relevância) na descoberta eletrônica avançada permite que você treine o sistema no que você está procurando, permitindo tomar decisões (sobre se algo é relevante ou não) em um pequeno conjunto de documentos.
   
@@ -123,11 +123,11 @@ A etapa final na análise de dados de caso na descoberta eletrônica avançada �
   
 - [Saiba mais sobre exportação de dados de ocorrência](export-case-data-in-advanced-ediscovery.md)
     
-- [Exportar dados de caso](export-results-in-advanced-ediscovery.md)
+- [Exportar dados de ocorrência](export-results-in-advanced-ediscovery.md)
     
-- [Exibir histórico de lote e exportar resultados passados](view-batch-history-and-export-past-results.md)
+- [Exibir histórico em lotes e exportar resultados passados](view-batch-history-and-export-past-results.md)
     
-- [Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md)
+- [Campos do relatório de exportação](export-report-fields-in-advanced-ediscovery.md)
     
 ### <a name="other-advanced-ediscovery-tools"></a>Outras ferramentas avançadas de descoberta eletrônica
 

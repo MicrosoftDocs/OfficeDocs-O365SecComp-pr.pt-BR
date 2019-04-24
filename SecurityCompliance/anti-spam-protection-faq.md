@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
 ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242489"
 ---
 # <a name="anti-spam-protection-faq"></a>PERGUNTAS FREQUENTEs sobre proteção antispam
 
@@ -47,7 +47,7 @@ R. Depois de se inscrever no serviço e adicionar o seu domínio, a filtragem de
   
 Para obter mais informações sobre como configurar suas políticas contra spam, consulte os seguintes tópicos:
   
-[Configurar a política de filtro de conexão](configure-the-connection-filter-policy.md)
+[Configurar a política do filtro de conexão](configure-the-connection-filter-policy.md)
   
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   

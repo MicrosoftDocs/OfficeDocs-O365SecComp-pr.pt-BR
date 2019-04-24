@@ -1,5 +1,5 @@
 ---
-title: Configurar carregamentos para adicionar arquivos importados na Descoberta Eletrônica Avançada do Office 365
+title: Configurar carregamentos para adicionar arquivos importados na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise as etapas para adicionar arquivos importados à última carga definida ou ao lote de arquivos antes de realizar o treinamento de relevância na descoberta eletrônica avançada do Office 365.  '
 ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260730"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar carregamentos para adicionar arquivos importados na Descoberta Eletrônica Avançada do Office 365
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar carregamentos para adicionar arquivos importados na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Na descoberta eletrônica avançada, uma carga é um novo lote de arquivos adicionados a um caso. Por padrão, uma carga é definida e todos os arquivos importados são adicionados a ela. Antes de realizar o treinamento de relevância, os arquivos importados devem ser adicionados à carga. 
   
-Considere os seguintes cenários:
+Considere as seguintes situações:
   
 - Os novos arquivos são conhecidos como semelhantes aos arquivos anteriores carregados para o banco de dados de caso ou a carga de arquivos anterior era um conjunto aleatório da coleção de arquivos. Nesta instância, adicione os arquivos importados à carga de arquivo atual.
     

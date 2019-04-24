@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de licença do driver da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
 ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255769"
 ---
 # <a name="eu-drivers-license-number"></a>Número da carteira de motorista da UE
 
@@ -23,7 +23,7 @@ Este tópico mostra o que uma política de prevenção de perda de dados (DLP) p
   
 ## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos sem espaços e delimitadores
   
@@ -63,7 +63,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="belgium"></a>Bélgica 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos sem espaços e delimitadores
   
@@ -103,7 +103,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="bulgaria"></a>Bulgária
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -143,7 +143,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="croatia"></a>Croácia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos sem espaços e delimitadores
   
@@ -183,7 +183,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos sem espaços e delimitadores
   
@@ -222,7 +222,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="czech-republic"></a>República Tcheca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por seis dígitos
   
@@ -268,7 +268,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos sem espaços e delimitadores
   
@@ -308,7 +308,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="estonia"></a>Estônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por seis dígitos
   
@@ -351,7 +351,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="finland"></a>Finlândia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos que contêm um hífen
   
@@ -404,7 +404,7 @@ Para obter detalhes, consulte a seção "número da carteira de motorista do dri
   
 ## <a name="greece"></a>Grécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -443,7 +443,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por seis dígitos
   
@@ -486,7 +486,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Seis dígitos seguidos de quatro letras
   
@@ -533,7 +533,7 @@ Para obter detalhes, consulte a seção "número da carteira de motorista do dri
   
 ## <a name="latvia"></a>Letônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Três letras seguidas por seis dígitos
   
@@ -576,7 +576,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="lithuania"></a>Lituânia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos sem espaços e delimitadores
   
@@ -615,7 +615,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Seis dígitos sem espaços e delimitadores
   
@@ -654,7 +654,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Combinação de dois caracteres e seis dígitos no padrão especificado
   
@@ -703,7 +703,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="netherlands"></a>Países Baixos
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos sem espaços e delimitadores
   
@@ -742,7 +742,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="poland"></a>Polônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 14 dígitos contendo 2 barras
   
@@ -791,7 +791,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por sete números no padrão especificado
   
@@ -840,7 +840,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="romania"></a>Romênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Um caractere seguido por oito dígitos
   
@@ -883,7 +883,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="slovakia"></a>Eslováquia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Um caractere seguido por sete dígitos
   
@@ -926,7 +926,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="slovenia"></a>Eslovênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -965,7 +965,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="spain"></a>Espanha
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos seguidos de um caractere
   
@@ -1008,7 +1008,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="sweden"></a>Suécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos contendo um hífen
   

@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está trabalhando com conteúdo que está em conflito com uma política de DLP. Você pode usar notificações por email e dicas de política para aumentar a conscientização e ajudar a ensinar as pessoas sobre as políticas da sua organização. Você também pode conceder às pessoas a opção de substituir a política, para que elas não sejam bloqueadas se tiverem uma necessidade comercial válida ou se a política estiver detectando um falso positivo. '
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263828"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e mostrar dicas de política para políticas de DLP
 
@@ -114,7 +114,7 @@ Você pode criar uma notificação de email personalizada em vez de enviar a not
   
 Você também pode usar os tokens a seguir para ajudar a personalizar a notificação por email. Esses tokens são variáveis que são substituídas por informações específicas na notificação que é enviada.
 
-|**Geração**|**Descrição**|
+|**Token**|**Descrição**|
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |As ações aplicadas ao conteúdo.  <br/> |
 |%% ContentURL%%  <br/> |A URL do documento no site do SharePoint Online ou do OneDrive for Business.  <br/> |
@@ -211,7 +211,7 @@ Atualmente, o Outlook 2013 e versões posteriores dão suporte à exibição de 
 - Conteúdo contém
 - O conteúdo é compartilhado
 
-No momento, estamos trabalhando no suporte para mostrar dicas de política para condições adicionais. Eles incluem:
+No momento, estamos trabalhando no suporte para mostrar dicas de política para condições adicionais. Entre eles:
 
 - O conteúdo de qualquer anexo de email não pôde ser verificado
 - O conteúdo de qualquer anexo de email não concluiu a verificação
@@ -285,12 +285,12 @@ Você pode personalizar o texto para dicas de política separadamente da notific
 
 - [Visão geral das políticas de prevenção contra perda de dados](data-loss-prevention-policies.md)
     
-- [Criar uma política de DLP a partir de um modelo](create-a-dlp-policy-from-a-template.md)
+- [Criar uma política DLP com base em um modelo](create-a-dlp-policy-from-a-template.md)
     
 - [Criar uma política de DLP para proteger documentos com FCI ou outras propriedades](protect-documents-that-have-fci-or-other-properties.md)
     
 - [O que os modelos de política de DLP incluem](what-the-dlp-policy-templates-include.md)
     
-- [O que os tipos de informação confidencial procuram](what-the-sensitive-information-types-look-for.md)
+- [O que os tipos de informações confidenciais procuram](what-the-sensitive-information-types-look-for.md)
     
 

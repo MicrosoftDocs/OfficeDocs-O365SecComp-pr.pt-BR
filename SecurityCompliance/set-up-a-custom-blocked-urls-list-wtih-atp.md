@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Saiba como configurar uma lista de URLs bloqueadas para sua organização usando a proteção avançada contra ameaças do Office 365. As URLs bloqueadas serão aplicadas a mensagens de email e documentos do Office de acordo com as políticas de links seguros de ATP.
 ms.openlocfilehash: c5444e644a35688ea626004fbc6865df4ae645f9
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264505"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar uma lista de URLs bloqueadas personalizada usando os links seguros de ATP do Office 365
 
@@ -76,7 +76,7 @@ Ao adicionar URLs à sua lista, tenha em mente os seguintes pontos:
     
 |**Entrada de exemplo**|**O que ele faz**|
 |:-----|:-----|
-|`contoso.com`ou`*contoso.com*`  <br/> |Bloqueia o domínio, subdomínios e caminhos, como `https://www.contoso.com`, e `http://sub.contoso.com``http://contoso.com/abc`  <br/> |
+|`contoso.com` ou `*contoso.com*`  <br/> |Bloqueia o domínio, subdomínios e caminhos, como `https://www.contoso.com`, e `http://sub.contoso.com``http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloqueia um site `http://contoso.com/a` , mas não outros subcaminhos como`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Bloqueia um site `http://contoso.com/a` e subcaminhos adicionais, como`http://contoso.com/a/b`  <br/> |
 |`http://toys.contoso.com*`  <br/> |Bloqueia um subdomínio ("Toys" nesse caso), mas permite cliques para outras URLs de domínio ( `http://contoso.com` como `http://home.contoso.com`ou).  <br/> |

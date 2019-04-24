@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 description: Use o novo painel de segurança para analisar o status de proteção contra ameaças do Office 365 e exibir e agir em alertas de segurança.
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261046"
 ---
 # <a name="security-dashboard"></a>Painel de segurança
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 O [Centro &amp; de conformidade de segurança](go-to-the-securitycompliance-center.md) permite que sua organização gerencie a proteção e a conformidade dos dados. Supondo que você tenha as permissões necessárias, o painel de segurança permite que você revise o status da proteção contra ameaças, bem como o modo de exibição e agir nos alertas de segurança. 
   
@@ -85,7 +85,7 @@ As métricas são calculadas conforme descrito na tabela a seguir:
 |Bloqueado por [ATP](office-365-atp.md) |Número de mensagens de email bloqueadas por ATP multiplicado pelo número de destinatários |
 |Removido após a entrega |Número de mensagens removidas por [limpeza automática de zero hora](zero-hour-auto-purge.md) multiplicado pelo número de destinatários |
 
-## <a name="malware"></a>Software
+## <a name="malware"></a>Malware
 
 Os widgets de malware mostram detalhes sobre tendências de malware e tipos de família de malware nos últimos sete (7) dias.
 
@@ -99,7 +99,7 @@ Insights não apenas os principais problemas de superfície que você deve exami
 
 Por exemplo, você pode ver que as mensagens de email de phishing estão sendo entregues, pois alguns usuários desabilitaram suas opções de lixo eletrônico. Para saber mais sobre como as ideias funcionam, confira [relatórios e insights no centro de conformidade de &amp; segurança do Office 365](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-investigation-and-response"></a>Investigação e resposta contra ameaças
+## <a name="threat-investigation-and-response"></a>Investigação e resposta a ameaças
 
 Se a assinatura de sua organização incluir o [plano de proteção avançada contra ameaças do Office 365](office-365-ti.md), o painel de segurança tem uma seção que inclui investigação avançada de ameaças e ferramentas de resposta. A equipe de segurança da sua organização pode usar as informações desta seção para entender campanhas emergentes, investigar ameaças e gerenciar incidentes. 
   

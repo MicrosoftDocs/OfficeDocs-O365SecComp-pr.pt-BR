@@ -1,5 +1,5 @@
 ---
-title: Gerenciar notificações de retenção
+title: Gerenciar as notificações de retenção
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241258"
 ---
-# <a name="manage-hold-notifications"></a>Gerenciar notificações de retenção
+# <a name="manage-hold-notifications"></a>Gerenciar as notificações de retenção
 
 Após iniciar seu fluxo de trabalho de notificação de retenção legal, você pode aproveitar a descoberta eletrônica avançada (visualização) para acompanhar o status de suas comunicações. A guia comunicações contém todas as notificações de bloqueio no caso de descoberta eletrônica avançada (visualização). Aqui, você pode ver detalhes, como o número de responsáveis que foram atribuídos ou que confirmaram o aviso.
 
@@ -62,7 +62,7 @@ Para atualizar o conteúdo do aviso de bloqueio inicial:
 2. Depois de selecionar uma ocorrência, navegue até a guia **comunicações** .
 3. Selecione o aviso de isenção que você deseja atualizar e clique em **Editar**.
 4. No fluxo de trabalho editar, selecione **definir conteúdo do portal** e atualizar o conteúdo do seu aviso. 
-5. Clique em **salvar**. Depois de salvo, o aviso de reemissão será enviado a todos os responsáveis que estão atualmente atribuídos à notificação de retenção legal. Além disso, se os avisos de encaminhamento/lembrete estiverem habilitados, esses fluxos de trabalho também serão reiniciados. 
+5. Clique em **Salvar**. Depois de salvo, o aviso de reemissão será enviado a todos os responsáveis que estão atualmente atribuídos à notificação de retenção legal. Além disso, se os avisos de encaminhamento/lembrete estiverem habilitados, esses fluxos de trabalho também serão reiniciados. 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>Atualizar notificações e configurações de retenção legal
@@ -73,6 +73,6 @@ Ao atualizar o conteúdo ou as configurações do aviso de emissão, lançamento
 
 - [Criar um aviso de retenção legal](create-hold-notification.md)
     
-- [Confirmar uma notificação de bloqueio](acknowledge-hold-notification.md)
+- [Confirmar uma notificação de retenção](acknowledge-hold-notification.md)
     
-- [Adicionar os responsáveis a um caso](add-custodians-to-case.md)
+- [Adicionar custodiantes a uma ocorrência](add-custodians-to-case.md)

@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Uma visão geral da criptografia na nuvem da Microsoft.
 ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262773"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Criptografia no Microsoft Cloud
 

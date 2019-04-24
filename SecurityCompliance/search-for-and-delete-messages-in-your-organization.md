@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use o recurso de pesquisa e limpeza no centro de conformidade do & de segurança no Office 365 para pesquisar e excluir uma mensagem de email de todas as caixas de correio em sua organização.
 ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265343"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Procurar e excluir mensagens de email na sua organização do Office 365-ajuda do administrador
 

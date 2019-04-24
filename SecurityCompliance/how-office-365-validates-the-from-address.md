@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Para ajudar a evitar phishing, o Office 365 e o Outlook.com agora exigem a conformidade RFC de: endereços.'
 ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253929"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Como o Office 365 valida o endereço de para impedir o phishing
 
@@ -225,7 +225,7 @@ Você não pode substituir esta política para emails de saída enviados no Offi
 
 Para obter mais informações sobre como você pode reforçar sua organização contra cybercrimes como phishing, spam, violações de dados e outras ameaças, consulte [Security Best Practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Mnsagens backscatter e EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
   

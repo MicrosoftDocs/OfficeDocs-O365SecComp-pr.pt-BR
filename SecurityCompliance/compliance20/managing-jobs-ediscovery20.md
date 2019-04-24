@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 9898e3c4861da8dbd90168622395981f34aaa510
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240896"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gerenciar trabalhos na descoberta eletrônica avançada (versão prévia)
 
@@ -41,3 +41,17 @@ Veja a seguir uma lista dos trabalhos (que geralmente são processos de longa du
 |Executando o Analytics | Um usuário analisa dados em um conjunto de trabalho executando ferramentas avançadas de análise de descoberta eletrônica, como detecção de duplicidades, análise de threads de email e análise de temas. Para obter mais informações, consulte [analisar dados em um conjunto de trabalho](analyzing-data-in-working-set.md). | 
 |Marcando documentos | Esse trabalho é acionado quando um usuário clica em **Iniciar trabalho de marcação** no **painel de marcação** ao revisar documentos em um conjunto de trabalho. Um usuário pode iniciar esse trabalho depois de marcar documentos em um conjunto de trabalho e, em seguida, selecioná-los em massa no painel Exibir documento. Para obter mais informações, consulte [tag Documents in a Working Set](tagging-documents.md). | 
 |||
+
+
+## <a name="job-status"></a>Status do trabalho
+
+A tabela a seguir descreve os diferentes Estados de status dos trabalhos.
+
+| Status           | Descrição     |
+| :----------------- | :----------     |
+| Enviado | Um novo trabalho foi criado.  A data e a hora em que o trabalho foi enviado é exibida na coluna **criado** na guia **trabalhos** . |
+| Falha no envio | Falha no envio do trabalho.  Você deve tentar executar novamente a ação que disparou o trabalho. |
+| Em andamento | O trabalho está em andamento, você pode monitorar o andamento do trabalho na guia **trabalhos** . |
+| Foi | O trabalho foi concluído com êxito. A data e hora em que o trabalho foi concluído é exibida na coluna **concluído** da guia **trabalhos** . |
+| Parcialmente bem-sucedido | O trabalho foi parcialmente bem-sucedido. |
+| Falhou | O trabalho falhou.  Você deve tentar executar novamente a ação que disparou o trabalho. Se o trabalho falhar uma segunda vez, recomendamos que você entre em contato com o suporte da Microsoft e forneça as informações de suporte do trabalho. |

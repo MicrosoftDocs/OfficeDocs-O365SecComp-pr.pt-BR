@@ -15,11 +15,11 @@ ms.collection:
 - M365-analytics
 description: Uma visão geral dos recursos de auditoria e relatórios no Office 365, no Microsoft 365 e no serviço Assurance.
 ms.openlocfilehash: a5df0dcb6f762723c6ec0102b2c39f1bc157720c
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262963"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Auditoria e relatórios nos serviços em nuvem da Microsoft
 
@@ -49,8 +49,8 @@ O novo centro de administração do Microsoft OneDrive ajuda você a gerenciar d
 Os principais recursos incluem uma área de conformidade que oferece aos administradores links para o centro de gerenciamento apropriado para cenários principais, como pesquisar o log de auditoria, trabalhar com DLP, retenção, eDiscovery e alertas.
 
 ## <a name="related-links"></a>Links relacionados
-- [Recursos de descoberta eletrônica e pesquisa](office-365-ediscovery-and-search-features.md)
-- [Recursos de relatórios do Office 365](office-365-reporting-features.md)
+- [Recursos de pesquisa e descoberta eletrônica](office-365-ediscovery-and-search-features.md)
+- [Recursos de relatório do Office 365](office-365-reporting-features.md)
 - [API da Atividade de Gerenciamento do Office 365](office-365-management-activity-api.md)
-- [Migrações de caixa de correio do Office 365](office-365-mailbox-migrations.md)
-- [Log interno da engenharia do Office 365](office-365-internal-logging.md)
+- [Migrações de caixas de correio do Office 365](office-365-mailbox-migrations.md)
+- [Log interno de engenharia do Office 365](office-365-internal-logging.md)

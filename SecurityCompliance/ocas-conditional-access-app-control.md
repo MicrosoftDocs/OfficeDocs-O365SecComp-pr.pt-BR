@@ -1,5 +1,5 @@
 ---
-title: Proteger aplicativos com o Office 365 Cloud app Security controle de aplicativo de acesso condicional
+title: Proteger os aplicativos com o Controle de Aplicativos de Acesso Condicional do Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -11,13 +11,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Parar violações e vazamentos em tempo real com o controle de aplicativo de acesso condicional do Office 365 Cloud app Security.
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262983"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteger aplicativos com o Office 365 Cloud app Security controle de aplicativo de acesso condicional
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteger os aplicativos com o Controle de Aplicativos de Acesso Condicional do Office 365 Cloud App Security
 
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
@@ -104,7 +104,7 @@ Aplicativos adicionais estão sendo continuamente integrados ao controle de sess
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar o controle de aplicativo do Access condicional para aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Implantar o Controle de Aplicativos de Acesso Condicional nos aplicativos do Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [Saiba mais sobre as políticas de sessão no Office 365 Cloud app Security](ocas-session-policies.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PERGUNTAS FREQUENTEs sobre criptografia de serviço com a chave do cliente do Office 365
+title: Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Além da linha de base, a criptografia no nível do volume habilitada por meio do BitLocker e do protocolo DKM, o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para conteúdo do cliente no Office 365, incluindo dados do Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266934"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>PERGUNTAS FREQUENTEs sobre criptografia de serviço com a chave do cliente do Office 365
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
 
 Além da linha de base, a criptografia no nível do volume habilitada por meio do BitLocker e do protocolo DKM, o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para conteúdo do cliente no Office 365, incluindo dados do Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
   
@@ -46,7 +46,7 @@ O BYOK com proteção de informações do Azure para o Exchange Online é oferec
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>A criptografia de mensagem do Office 365 e a traga sua própria chave com a proteção de informações do Azure alteram a abordagem da Microsoft para solicitações de dados de terceiros, como intimações?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Não. A criptografia de mensagem do Office 365 e a opção para fornecer e controlar suas próprias chaves de criptografia com a BYOK (traga sua própria chave) para a proteção de informações do Azure (AIP) não foram projetadas para responder às intimações de aplicação de leis. A criptografia de mensagem do Office 365 com o BYOK para o AIP foi projetada para clientes voltados à conformidade que precisam atender às obrigações de conformidade internas ou externas. A Microsoft leva muito seriamente as solicitações de terceiros para os dados dos clientes. Como um provedor de serviços de nuvem, sempre defendemos a privacidade dos dados do cliente. No evento, obtemos uma intimação, tentamos sempre redirecionar o terceiro para o cliente para obter as informações. (Leia o blog de Brad Smith: [proteção dos dados do cliente a partir do rastreamento governamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Publicamos periodicamente informações detalhadas sobre a solicitação que recebemos [aqui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Não. A criptografia de mensagem do Office 365 e a opção para fornecer e controlar suas próprias chaves de criptografia com a BYOK (traga sua própria chave) para a proteção de informações do Azure não foram projetadas para responder às intimações de aplicação de leis. A criptografia de mensagem do Office 365 com o BYOK para o AIP foi projetada para clientes voltados à conformidade que precisam atender às obrigações de conformidade internas ou externas. A Microsoft leva muito seriamente as solicitações de terceiros para os dados dos clientes. Como um provedor de serviços de nuvem, sempre defendemos a privacidade dos dados do cliente. No evento, obtemos uma intimação, tentamos sempre redirecionar o terceiro para o cliente para obter as informações. (Leia o blog de Brad Smith: [proteção dos dados do cliente a partir do rastreamento governamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Publicamos periodicamente informações detalhadas sobre a solicitação que recebemos [aqui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Consulte a [central de confiabilidade da Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) sobre solicitações de dados de terceiros e "divulgação de dados do cliente" nos [termos dos serviços online (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)para obter mais informações.
   

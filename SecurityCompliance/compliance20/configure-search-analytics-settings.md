@@ -1,5 +1,5 @@
 ---
-title: Definir as configurações de pesquisa e análise
+title: Definir configurações de pesquisa e análise
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243181"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Definir as configurações de pesquisa e análise
-
+# <a name="configure-search-and-analytics-settings"></a>Definir configurações de pesquisa e análise
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicados próximos e threads de email
 
@@ -34,7 +33,8 @@ Nesta seção, você pode definir parâmetros para detecção de duplicidades, d
 
 - Ocultar duplicatas por padrão: se essa configuração estiver ativada, um filtro para ocultar documentos duplicados será aplicado no conjunto de trabalho por padrão. O filtro pode ser removido manualmente no conjunto de trabalho, se necessário.
 
-- Número mínimo/máximo de palavras: próximas duplicatas e o encadeamento de emails será executado somente em documentos que tenham pelo menos o número mínimo de palavras e, no máximo, o número máximo de palavras. Para obter mais informações, consulte [Near Duplicate](near-duplicates.md) Detection and [e-mail Threading](email-threading.md).
+- Número mínimo/máximo de palavras: próximas duplicatas e o encadeamento de emails será executado somente em documentos que tenham pelo menos o número mínimo de palavras e, no máximo, o número máximo de palavras.
+Para obter mais informações, consulte [Near Duplicate](near-duplicates.md) Detection and [e-mail Threading](email-threading.md).
 
 ## <a name="themes"></a>Temas
 

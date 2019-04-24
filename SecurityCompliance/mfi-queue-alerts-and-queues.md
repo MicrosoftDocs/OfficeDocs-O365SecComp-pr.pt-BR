@@ -1,5 +1,5 @@
 ---
-title: Alertas de fila e filas
+title: Alertas de filas e filas
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Os administradores podem aprender sobre alertas de fila e filas no painel de fluxo de emails no centro de conformidade do & de segurança.
 ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267633"
 ---
-# <a name="queue-alerts-and-queues"></a>Alertas de fila e filas
+# <a name="queue-alerts-and-queues"></a>Alertas de filas e filas
 
 ## <a name="queue-alerts"></a>Alertas de fila
 

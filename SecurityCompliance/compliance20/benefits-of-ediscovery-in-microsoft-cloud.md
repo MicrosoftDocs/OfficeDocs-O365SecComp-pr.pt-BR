@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5584f123ac9cf47542b3665d3c142b1b87c600dd
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243242"
 ---
 # <a name="ediscovery-in-the-microsoft-cloud"></a>Descoberta eletrônica na nuvem da Microsoft
 

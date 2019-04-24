@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Os administradores podem aprender a usar regras de fluxo de email no Exchange Online Protection para filtragem de email em massa.
 ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267001"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar regras de fluxo de email para configurar a filtragem de email em massa no Exchange Online Protection
 
@@ -31,7 +31,7 @@ Se você quiser mais opções para filtrar mensagens em massa, você pode criar 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Criar uma regra de fluxo de emails para filtrar mensagens de email em massa com base em padrões de texto
 
-1. No Centro de administração do Exchange (EAC), vá para **Fluxo de emails** \> **Regras**.
+1. No Centro de administração do Exchange (EAC), acesse **Fluxo de emails** \> **Regras**.
     
 2. Clique em **Adicionar** ![ícone](media/ITPro-EAC-AddIcon.gif) de adição e selecione **criar uma nova regra**.
     

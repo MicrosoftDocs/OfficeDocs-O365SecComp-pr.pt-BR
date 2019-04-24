@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Apresenta dicas de segurança para mensagens de email filtradas pelo EOP e pelo filtro de spam do Office 365.
 ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261423"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Dicas de segurança em mensagens de email no Office 365
 
@@ -62,5 +62,5 @@ Se você discordar com o modo como o Office 365 e o EOP categorizaram uma mensag
   
 ## <a name="see-also"></a>Confira também
 
-[Habilitar ou desabilitar dicas de segurança no Office 365](enable-or-disable-safety-tips.md)
+[Ativar ou desativar as dicas de segurança no Office 365](enable-or-disable-safety-tips.md)
 

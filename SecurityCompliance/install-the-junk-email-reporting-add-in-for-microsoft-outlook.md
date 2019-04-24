@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: Neste articleSupported LanguagesInstall o relatório de lixo eletrônico adicionar-desIntalar o suplemento de relatório de lixo eletrônico-inFor mais informações
 ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259819"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar o Suplemento Relatório de Lixo Eletrônico para o Microsoft Outlook
   
@@ -211,7 +211,7 @@ Use uma dessas opções para desinstalar o Suplemento Relatório de Lixo Eletrô
 ## <a name="for-more-information"></a>Para obter mais informações
 <a name="sectionSection3"> </a>
 
-[Relatar mensagens de lixo eletrônico à Microsoft](report-junk-email-messages-to-microsoft.md)
+[Relatar mensagens de Lixo Eletrônico à Microsoft](report-junk-email-messages-to-microsoft.md)
   
 [Solução de problemas e informações de suporte](troubleshooting-and-support-information.md)
   

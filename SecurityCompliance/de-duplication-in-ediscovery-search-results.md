@@ -1,5 +1,5 @@
 ---
-title: Desduplicação nos resultados da pesquisa de descoberta eletrônica
+title: Deduplicação nos resultados de pesquisa de Descoberta Eletrônica
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Você tem a opção de cancelar a duplicação de resultados de pesquisa de descoberta eletrônica que são exportados para que apenas uma cópia de uma mensagem de email seja exportada, embora várias instâncias da mesma mensagem possam ter sido encontradas em caixas de correio diferentes.
 ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258061"
 ---
-# <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicação nos resultados da pesquisa de descoberta eletrônica
+# <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicação nos resultados de pesquisa de Descoberta Eletrônica
 
 Este artigo descreve como a duplicação de resultados de pesquisa de descoberta eletrônica funciona e explica as limitações do algoritmo de eliminação de duplicação.
   
@@ -76,7 +76,7 @@ Observe que as mensagens exclusivas também podem ser marcadas como duplicatas q
     
   - [Exportar pesquisa de conteúdo](export-search-results.md)
     
-  - [Exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md)
+  - [Exportar um relatório de Pesquisa de Conteúdo](export-a-content-search-report.md)
     
   - [Exportar resultados de pesquisa de descoberta eletrônica in-loco para um arquivo PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

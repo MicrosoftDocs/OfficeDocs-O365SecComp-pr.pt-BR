@@ -1,5 +1,5 @@
 ---
-title: Tipos de arquivo com suporte em investigações de dados
+title: Tipos de arquivo com suporte em investigações de dados (versão prévia)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bec8c01b75d68249a335c4de48909ce50ab3bf97
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257629"
 ---
-# <a name="supported-file-types-in-data-investigations"></a>Tipos de arquivo com suporte em investigações de dados
+# <a name="supported-file-types-in-data-investigations-preview"></a>Tipos de arquivo com suporte em investigações de dados (versão prévia)
 
+As investigações de dados (visualização) dão suporte a vários tipos de arquivos de várias maneiras diferentes, que são descritas na tabela a seguir. Essa lista não é finalizada e adicionaremos novos tipos de arquivos conforme continuamos com o teste de validação. A tabela também indica se um tipo de arquivo pode ser exibido nos visualizadores disponíveis quando você estiver revisando evidências.
 
-| Tipo MIME | Classe de arquivo (ou seja, imagem, arquivo morto, email, Office Doc, etc.) | Visualizador nativo | Texto | Visualizador de anotações | Extração de contêiner | Extensões possíveis |
+| Tipo MIME | Classe de arquivo | Visualizador nativo | Visualizador de texto | Visualizador de anotações | Extração de contêiner | Extensões |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Documento | Sim | Sim | Sim | Não | . doc;. dat |
 | application/pdf | Documento | Sim | Sim | Sim | Não | .pdf |
@@ -54,11 +55,11 @@ ms.locfileid: "31029825"
 | aplicativo/x-mspublisher | Documento | Sim | Sim | Sim | Não | . pub |
 | application/x-rar-compactado | Arquivo morto/contêiner | Não | Não | Não | Sim | . rar |
 | aplicativo/zip | Arquivo morto/contêiner | Não | Não | Não | Sim | . zip |
-| imagem/BMP | Image | Sim | Sim | Sim | Não | . bmp |
+| imagem/BMP | Image | Sim | Sim | Sim | Não | .bmp |
 | imagem/EMF | Image | Sim | Sim | Sim | Não | . EMF |
-| image/gif | Documento | Sim | Sim | Sim | Não | . gif |
+| image/gif | Documento | Sim | Sim | Sim | Não | .gif |
 | image/jpeg | Image | Sim | Sim | Sim | Não | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Sim | Sim | Sim | Não | . png |
+| image/png | Image | Sim | Sim | Sim | Não | .png |
 | imagem/TIFF | Image | Sim | Sim | Sim | Não | . tif |
 | Image/vnd. dwg | Documento | Sim | Sim | Sim | Não | . dwg;. DXF |
 | imagem/WMF | Documento | Sim | Sim | Sim | Não | . wmf |
@@ -67,3 +68,4 @@ ms.locfileid: "31029825"
 | texto/HTML | Documento | Sim | Sim | Sim | Não | . html;. shtml;. htm |
 | texto/simples | Documento | Sim | Sim | Sim | Não | . txt;. css;. con;. pl;. csv;. dat |
 | texto/vCard-contato | Documento | Sim | Sim | Sim | Não | . vcf |
+||||||||

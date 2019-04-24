@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e62d486b102fa035ae21b379d30bb0657b82acc9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242499"
 ---
 # <a name="build-search-queries"></a>Criar consultas de pesquisa
 

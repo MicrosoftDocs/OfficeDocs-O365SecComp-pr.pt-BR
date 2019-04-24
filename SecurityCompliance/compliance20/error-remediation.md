@@ -1,5 +1,5 @@
 ---
-title: Correção de erro ao processar dados
+title: Correção de erros durante o processamento de dados
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252605"
 ---
-# <a name="error-remediation-when-processing-data"></a>Correção de erro ao processar dados
+# <a name="error-remediation-when-processing-data"></a>Correção de erros durante o processamento de dados
 
 A correção de erros permite que os administradores de descoberta eletrônica corrijam problemas de dados que impedem a descoberta eletrônica avançada (visualização) de processar corretamente o conteúdo. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os administradores de descoberta eletrônica podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.
 

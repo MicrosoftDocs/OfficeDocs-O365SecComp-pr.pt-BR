@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: A realização da auditoria de relatórios no Microsoft Proteção do Exchange Online (EOP) pode ajudá-lo a satisfazer requisitos regulamentares, de conformidade e de litígio para sua organização. Você pode obter relatórios de auditoria a qualquer momento para determinar as alterações que foram realizadas na configuração do EOP. Estes relatórios ajudam você a solucionar problemas de configuração ou a encontrar a causa de problemas relacionados à conformidade ou à segurança.
 ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256649"
 ---
 # <a name="auditing-reports-in-eop"></a>Relatórios de auditoria no EOP
 

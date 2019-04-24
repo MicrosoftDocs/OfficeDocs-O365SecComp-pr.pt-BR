@@ -1,5 +1,5 @@
 ---
-title: Exibir histórico em lotes e exportar resultados passados na Descoberta Eletrônica Avançada do Office 365
+title: Exibir histórico de lote e exportar resultados passados na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Saiba como exibir informações detalhadas para as sessões de lote de exportação selecionadas e como desfazer a última sessão de exportação na descoberta eletrônica avançada do Office 365.  '
 ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243483"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Exibir histórico em lotes e exportar resultados passados na Descoberta Eletrônica Avançada do Office 365
+# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Exibir histórico de lote e exportar resultados passados na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -63,5 +63,5 @@ A caixa de diálogo Exportar histórico fornece informações detalhadas sobre a
   
 [Exportação de resultados](export-results-in-advanced-ediscovery.md)
 
-[Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md)
+[Campos do relatório de exportação](export-report-fields-in-advanced-ediscovery.md)
 

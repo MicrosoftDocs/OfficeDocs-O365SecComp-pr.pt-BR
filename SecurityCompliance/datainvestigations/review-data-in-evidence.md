@@ -1,5 +1,5 @@
 ---
-title: Analisar dados em evidência
+title: Revise os dados em evidência
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,104 +14,92 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 279d2117a69e889f9e605e0ab211c03c5842a59d
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258039"
 ---
-# <a name="review-data-in-evidence"></a>Analisar dados em evidência
+# <a name="review-the-data-in-evidence"></a>Revise os dados em evidência
 
-**Evidence** é um instantâneo dos resultados de pesquisa coletados. Quando você adiciona resultados de pesquisa a evidências, um processo é disparado para extrair arquivos, metadados e texto. Em seguida, o sistema cria um novo índice de todos os dados e adiciona à **evidência**. 
+Os dados em um conjunto de evidências em uma investigação de dados é um instantâneo dos resultados da pesquisa que você coletou e adicionou ao conjunto de evidências. Quando você adiciona resultados de pesquisa a evidências, um processo é disparado para extrair arquivos, metadados e texto dos itens retornados pela pesquisa. Em seguida, a ferramenta de investigações de dados (visualização) cria um novo índice (por um processo chamado *indexAção avançada*) de todos os dados e adiciona a uma evidência definida na guia **evidência** . 
 
-Para qualquer incidentes que confiram tempo, isso permite que você contenha rapidamente o ambiente, excluindo dados em locais originais ao investigar evidências recriadas em um ambiente em quarentena. Depois que a evidência é coletada, você pode revisar documentos individuais em seu formato nativo, formato de texto ou um formato Near-Native. Além disso, você pode executar consultas para restringir os dados por intervalo de tempo, tipos de arquivo, proprietários de dados e muitas outras placas de condição. Usando cartões de criação/remetente/destinatário, você pode examinar rapidamente quem está envolvido no despejo e se houve qualquer compartilhamento externo. Para obter mais informações, consulte:
+Para investigações temporais, isso permite que você contenha rapidamente o ambiente, excluindo os dados reais derramados ou mal-intencionados localizados na fonte de dados original e, ao mesmo tempo, permitindo que você investigue a evidência recriada em um ambiente em quarentena, que, nesse caso, são os dados copiados para o conjunto de evidências). Depois que as evidências são coletadas e adicionadas ao conjunto de evidências, você pode revisar documentos individuais no formato nativo, no formato de texto ou em um formato Near-nativo que você pode usar para anotar e redigir documentos. Além disso, você pode executar consultas para restringir o conjunto de dados por intervalo de tempo, tipos de arquivo, proprietários de dados e muitas outras propriedades e condições de pesquisa. Por exemplo, usando as condições autor, remetente ou destinatário, você pode identificar rapidamente as pessoas estão envolvidas no incidente e, se algum dado da sua organização tiver sido compartilhado com usuários externos. Para obter mais informações sobre como pesquisar dados em um conjunto de evidências, consulte [Query The data in Evidence](evidence-query.md).
 
-  - [Consultar os dados em evidência](evidence-query.md)
-
-Para agrupar documentos e obter mais assistência para revisão, clique em **gerenciar evidência**. No bloco de **análise** , clique em **analisar**. Isso executará análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de tema. Posteriormente, você pode ver os temas gerais dos dados e também organizar documentos por threads de email, duplicatas exatas e quase duplicatas para facilitar sua investigação. Para obter mais informações, consulte:
-
-  - [Executar a análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
+Para agrupar documentos e obter mais assistência para revisão, selecione um conjunto de evidências na guia **evidência** e clique em **gerenciar evidência**. No bloco de **análise** , clique em **Recompilar análise de todo o conjunto**. Isso executará análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de tema. Posteriormente, você pode ver os temas gerais dos dados e também organizar documentos por threads de email, próximos duplicatas e duplicatas exatas para ajudar sua investigação. Para obter mais informações, consulte [executar análise para investigar mais rápido](run-analytics-to-investigate-faster.md).
 
 ## <a name="view-documents-in-evidence"></a>Exibir documentos em evidência
 
-A investigação de dados (visualização) exibe o conteúdo através de vários visualizadores, cada um com finalidades diferentes. Os vários visualizadores podem ser usados clicando em qualquer documento em **evidência**. Os visualizadores atualmente fornecidos são:
+As investigações de dados (visualização) permitem exibir conteúdo em vários visualizadores diferentes, com cada visualizador com uma finalidade diferente. Esses visualizadores são:
 
 - Metadados de arquivo
 - Modo de exibição nativo
 - Exibição de texto
 - Modo de anotações
-- Exibição conVertida
+
+Para acessar qualquer um desses visualizadores, basta selecionar um documento em um conjunto de evidências.
 
 ## <a name="file-metadata"></a>Metadados de arquivo
 
-Este painel pode ser ativado/desativado para exibir vários metadados associados ao documento. Embora a grade de resultados de pesquisa possa ser personalizada para exibir metadados específicos, há situações nas quais rolar horizontalmente pode ser difícil durante a análise de dados. O painel metadados de arquivo permite que um usuário alterne em um modo de exibição no visualizador.
+Este modo de exibição exibe várias propriedades de metadados associadas ao documento selecionado. Você pode ativar e desativar este modo de exibição clicando em **metadados de arquivo**. Ao revisar um documento, você pode exibir os metadados do arquivo e ainda alterar entre os diferentes visualizadores.
 
-![Painel metadados de arquivo
-](../media/Reviewimage2.png)
+Veja um exemplo dos metadados de arquivo para um documento. Para obter mais informações sobre os campos de metadados, consulte [Document Metadata Fields in data investigações (Preview)](document-metadata-fields.md).
+
+![Painel metadados de arquivo](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Modo de exibição nativo
 
-O visualizador nativo exibe o modo de exibição mais avançado de um documento. Ele oferece suporte a centenas de tipos de arquivo e deve exibir a experiência nativa mais verdadeira possível. Para arquivos do Microsoft Office, por exemplo, o visualizador aproveita o Office Online para exibir conteúdo como comentários de documento, fórmulas do Excel, linhas/colunas ocultas, anotações do PowerPoint, etc. Para obter mais informações sobre os visualizadores do Office Online \[, visite aqui é necessário vincular\]
+O visualizador nativo exibe o modo de exibição mais preciso de um documento no formato nativo. O modo de exibição nativo é suportado para centenas de tipos de arquivo e deve exibir documentos na experiência nativa verdadeiramente mais verdadeira possível. Para arquivos do Microsoft Office, o visualizador nativo usa o Office Online. Isso permite que você exiba conteúdo como comentários em diferentes documentos do Office, fórmulas e linhas/colunas ocultas no Excel e o modo de anotações no PowerPoint.
 
 ![Modo de exibição nativo
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Exibição de texto
 
-O Visualizador de texto fornece um modo de exibição do texto extraído de um arquivo. Ele ignora todas as imagens e formatação inseridas, mas será um modo de exibição de alto desempenho se um usuário estiver tentando entender o conteúdo rapidamente. O modo de exibição de texto também inclui outros recursos:
+O Visualizador de texto fornece um modo de exibição do texto extraído de um arquivo. Ele ignora todas as imagens e formatação inseridas, mas esse modo de exibição é muito útil se você estiver tentando rapidamente revisar e entender o conteúdo em um documento. O modo de exibição de texto também inclui estes recursos:
 
-  - O contador de linhas facilita a referência a partes específicas de um documento
+  - Um contador de linhas, que facilita a referência a partes específicas de um documento.
 
-  - Realce de visitas de pesquisa que realçará os termos no documento, bem como o ScrollBar
+  - Visitas de pesquisa realçando que realçar termos no documento e no ScrollBar
 
-  - O modo de exibição de comparação fornece um modo de exibição de comparação que realça diferenças textuais ao exibir documentos próximos duplicados
+  - Um modo de exibição de comparação fornece um modo de exibição de comparação que realça as diferenças de texto ao exibir documentos usando o painel **próximo duplicatas** .
+
+**Exemplo de contador de linha e realce de ocorrência de pesquisa em texto e ScrollBar**
 
 ![Exibição de texto
 ](../media/Reviewimage4.png)
+
+**Exemplo da exibição de comparação**
 
 ![Exibição de comparação
 ](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Modo de anotações
 
-O modo de anotações fornece recursos que permitem que os usuários apliquem marcações em um documento durante a investigação, incluindo:
+O modo de anotações fornece recursos que permitem que você aplique marcação em um documento durante o processo de revisão; Isso inclui as seguintes ferramentas:
 
-  - Redação de área – os usuários podem desenhar uma caixa no documento para ocultar conteúdo confidencial
+  - **Redação de área** – você pode desenhar uma caixa opaca no documento que oculta conteúdo confidencial.
 
-  - Lápis – os usuários podem fazer o desenho de forma livre em um documento para dar atenção a certas partes de um documento
+  - **Lápis** – você pode desenhar em um documento para dar atenção a certas partes do conteúdo
 
-  - Selecionar anotações-os usuários podem selecionar anotações em um documento para excluir
+  - **Selecionar anotações** -você pode selecionar e excluir anotações em um documento.
 
-  - Alternar transparência da anotação – torna as anotações semitransparentes para exibir o conteúdo por trás da anotação
+  - **Alternar transparência da anotação** – é possível alternar a transparência de anotações (entre opaco e semi-transparente) para que você possa exibir o conteúdo por trás da anotação. Isso inclui a alternância da transparência de anotações e redaçãos de lápis.
 
-  - Página anterior – navega para a página anterior
+O modo de anotações também fornece a seguinte funcionalidade de navegação:
 
-  - Próxima página – navega para a próxima página
+  - **Página anterior**, **próxima página**e **ir para** controles de navegação de página para usar para documentos de várias páginas.
 
-  - Ir para página – o usuário pode inserir um número de página específico para navegar até
+  - **Zoom** – aumenta ou diminui o tamanho dos documentos no modo de anotações.
 
-  - Zoom – definir o nível de zoom para o modo de anotações
+  - **Girar** – girar documentos no sentido horário.
 
-  - Girar – o usuário pode girar o documento no sentido horário
+  - **Pesquisa** – pesquise palavras-chave em um documento e, em seguida, use os controles anteriores e próximos para exibir os acertos (que são realçados) no documento.
 
-  - Pesquisa: o usuário pode pesquisar dentro de um documento e navegar até os vários acertos no documento
-    
-    ![Modo de anotações
-    ](../media/Reviewimage1.png)
+**Exemplo de exibição de anotações**
 
-Observe que essas anotações estão nos dados coletados como evidência, e não em seu local original no sistema ativo. 
+![Modo de anotações](../media/Reviewimage1.png)
 
-## <a name="more-information"></a>Mais informações
-
-A tabela a seguir lista os limites para evidências em investigações de dados (prévia).  Todos os itens que excederem os máximos de arquivo serão exibidos como erros de processamento.
-    
-  |**Descrição do limite**|**Limite**|
-  |:-----|:-----|
-  |Número máximo de coletas de evidências  <br/> |50  <br/> |
-  |Número total de documentos que podem ser incluídos em um caso (para todas as coleções de evidências na investigação)  <br/> |1 milhão  <br/> |
-  |Tamanho total do arquivo por carga  <br/> |100 GB  <br/> |
-  |Tamanho máximo de um único arquivo   <br/> |100 MB  <br/> |
-  |Número máximo de caracteres extraídos de um único arquivo  <br/> |10 milhões  <br/> |
-  |Profundidade de itens incorporados em um documento  <br/> |25  <br/> |
-  
+> [!NOTE]
+> As anotações são aplicadas a uma cópia do documento que foi adicionado ao conjunto de evidências. Os documentos originais no serviço ativo não estão anotados.

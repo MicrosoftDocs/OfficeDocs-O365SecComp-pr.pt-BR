@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: 'Resumo: uma explicação do isolamento de locatário no Office Graph e no Delve.'
 ms.openlocfilehash: 22bcf581c26ea4e334539a81861ff4dee68967ef
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262603"
 ---
-# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Isolamento de locatário no Office Graph e no Delve
+# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Isolamento de locatário no Office Graph e Delve
 
 ## <a name="tenant-isolation-in-the-office-graph"></a>Isolamento de locatário no Office Graph
 A atividade de modelos do [Office Graph](https://dev.office.com/officegraph) nos serviços do Office 365, incluindo Exchange Online, SharePoint Online, Yammer, Skype for Business, Azure Active Directory e mais e em serviços externos, como outros serviços da Microsoft ou serviços de terceiros. Os componentes do Office Graph são usados em todo o Office 365. O Office Graph representa uma coleção de conteúdo e atividade e as relações entre elas que ocorrem em todo o pacote do Office. Ele usa técnicas de aprendizado de máquina sofisticadas para conectar pessoas ao conteúdo relevante, conversas e pessoas em torno delas. Por exemplo, o índice de locatário no SharePoint Online tem um índice do Office Graph que é usado para atender consultas de Delve, o mecanismo de processamento de análise no SharePoint Online é usado para armazenar sinais e calcular insights e o Exchange Online calcula cada usuário cache de destinatários como entrada na análise de locatários.

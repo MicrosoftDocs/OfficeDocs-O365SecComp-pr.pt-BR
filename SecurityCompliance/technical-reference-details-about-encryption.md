@@ -1,5 +1,5 @@
 ---
-title: Detalhes técnicos de referência sobre criptografia no Office 365
+title: Detalhes de referências técnicas sobre a criptografia no Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Veja detalhes técnicos sobre o encyption no Office 365.
 ms.openlocfilehash: afe077fdedb3e01e5658d27a13e17ae3a3ab5929
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260289"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>Detalhes técnicos de referência sobre criptografia no Office 365
+# <a name="technical-reference-details-about-encryption-in-office-365"></a>Detalhes de referências técnicas sobre a criptografia no Office 365
 
 Consulte este artigo para saber mais sobre certificados, tecnologias e pacotes de criptografia TLS usados para [criptografia no Office 365](encryption.md). Este artigo também fornece detalhes sobre as preterições planejadas.
   
@@ -97,7 +97,7 @@ Um conjunto de codificações é uma coleção de algoritmos de criptografia que
 
 [Criptografia no Office 365](encryption.md)
   
-[Configurar a criptografia no Office 365 Enterprise](set-up-encryption.md)
+[Configure a criptografia no Office 365 Enterprise](set-up-encryption.md)
   
 [Implementação Schannel de TLS 1,0 na atualização de status de segurança do Windows: 24 de novembro de 2015](https://support.microsoft.com/kb/3117336)
   

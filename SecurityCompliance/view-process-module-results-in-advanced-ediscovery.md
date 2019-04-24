@@ -1,5 +1,5 @@
 ---
-title: Exibir os resultados do Módulo de processo na Descoberta Eletrônica Avançada do Office 365
+title: Exibir resultados do módulo de processo na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Saiba mais sobre como localizar os resultados de um módulo de processo executado na descoberta eletrônica avançada do Office 365, incluindo o status da tarefa e o resumo do processo.  '
 ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267152"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Exibir os resultados do Módulo de processo na Descoberta Eletrônica Avançada do Office 365
+# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Exibir resultados do módulo de processo na descoberta eletrônica avançada do Office 365
 
 Depois que o **processo** de **preparação** \> é iniciado, você pode exibir o progresso e os resultados. 
   

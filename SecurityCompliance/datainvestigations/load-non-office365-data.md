@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f5478d89d71db22e710b5d5fcab397ae8d6aee56
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259559"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Carregar dados que não sejam do Office 365 em evidência
 

@@ -1,5 +1,5 @@
 ---
-title: Acompanhar análises de relevância na Descoberta Eletrônica Avançada do Office 365
+title: Rastrear a análise de relevância na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Saiba como exibir e interpretar os resultados e o status de treinamento de relevância para problemas de caso na descoberta eletrônica avançada do Office 365.  '
 ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264379"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Acompanhar análises de relevância na Descoberta Eletrônica Avançada do Office 365
+# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Rastrear a análise de relevância na descoberta eletrônica avançada do Office 365
 
 > [!NOTE]
 > A Descoberta Eletrônica Avançada exige um Office 365 E3, com um complemento de Conformidade Avançada ou uma assinatura do E5 para sua organização. Se você não tiver esse plano e quiser tentar a Descoberta Eletrônica Avançada, poderá [Inscrever-se para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -136,7 +136,7 @@ O painel **andamento do treinamento** inclui um gráfico de progresso de treinam
 
 O painel **resultados do cálculo em lotes** inclui o número de arquivos que foram pontuados para fins de relevância da seguinte maneira: 
   
-- **Êxito**
+- **Success**
     
 - **Vazio**: não contém texto, por exemplo, somente espaços/abas
     

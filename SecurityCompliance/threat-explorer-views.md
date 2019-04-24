@@ -1,5 +1,5 @@
 ---
-title: Modos de exibição do Gerenciador de ameaças
+title: Exibições do Explorador de Ameaças
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os vários tipos de modos de exibição disponíveis no Explorer (também chamado de Gerenciador de ameaças) como parte do Office 365 Advanced Threat Protection Plan 2.
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260477"
 ---
-# <a name="threat-explorer-views"></a>Modos de exibição do Gerenciador de ameaças
+# <a name="threat-explorer-views"></a>Exibições do Explorador de Ameaças
 
 O [Gerenciador de ameaças](use-explorer-in-security-and-compliance.md) é uma ferramenta poderosa e quase em tempo real para ajudar as equipes de operações de segurança a investigar e &amp; responder a ameaças no centro de conformidade de segurança. O Explorer exibe informações sobre o malware e phishing suspeitos em emails e arquivos no Office 365, bem como outras ameaças e riscos de segurança à sua organização. 
 
 Quando você abre o Explorer pela primeira vez, o modo de exibição padrão mostra as detecções de malware de email dos últimos 7 dias. 
 
-![Explorador de ameaças](media/ThreatExplorerFirstOpened.png)
+![Explorador de Ameaças](media/ThreatExplorerFirstOpened.png)
 
 O Explorer também pode mostrar recursos de proteção de segurança no Office 365, incluindo [links seguros](atp-safe-links.md) e [anexos seguros](atp-safe-attachments.md) e pode ser modificado para mostrar dados nos últimos 30 dias. 
 

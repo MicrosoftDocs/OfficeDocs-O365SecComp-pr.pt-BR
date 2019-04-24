@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Você pode usar regras de fluxo de emails (regras de transporte) para identificar e executar ações em mensagens que fluem pela sua organização do Office 365.
 ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256620"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regras de fluxo de emails (regras de transporte) no Exchange Online Protection
 
@@ -31,13 +31,13 @@ Para implementar políticas de mensagens específicas usando regras do fluxo de 
   
 - [Usar regras de fluxo de email para inspecionar anexos de mensagens no Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Configurar a criptografia no Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Configure a criptografia no Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Avisos de isenção de mensagem em toda a organização, assinaturas, rodapés ou cabeçalhos no Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
 - [Usar regras de fluxo de correio para definir o nível de confiança de spam (SCL) em mensagens](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Criar listas de remetentes seguros para toda a organização ou remetentes bloqueados no Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
     
 - [Redução de ameaças de malware com o bloqueio de anexos de arquivo no Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     

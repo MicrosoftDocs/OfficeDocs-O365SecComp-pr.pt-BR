@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: ReVisando os relatórios de descoberta de aplicativos no Office 365 Cloud app Security pode ajudá-lo a saber mais sobre como as pessoas em sua organização usam aplicativos de nuvem. Depois de criar relatórios de descoberta de aplicativos usando arquivos de log de seus firewalls e proxies, revise os resultados no painel de descoberta de aplicativos.
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264947"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Analisar descobertas de aplicativos do Office 365 Cloud App Security
   

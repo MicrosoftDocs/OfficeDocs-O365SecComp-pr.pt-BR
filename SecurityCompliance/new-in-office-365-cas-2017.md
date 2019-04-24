@@ -10,11 +10,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Veja o que foi lançado em 2017 para o Office 365 Cloud app Security
 ms.openlocfilehash: fdb245ce1f6f8c033244e498c16451ea865b61c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263186"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Atualizações do Office 365 Cloud app Security durante 2017
     

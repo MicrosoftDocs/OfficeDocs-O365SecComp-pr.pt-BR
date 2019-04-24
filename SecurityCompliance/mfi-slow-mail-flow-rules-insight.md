@@ -1,5 +1,5 @@
 ---
-title: Visão de regras de fluxo de email lento
+title: Insights de regras de fluxo de email – modo lento
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Os administradores podem saber mais sobre as regras de fluxo de email lentos no painel de fluxo de emails no centro de conformidade do & de segurança.
 ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267209"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>Visão de regras de fluxo de email lento
+# <a name="slow-mail-flow-rules-insight"></a>Insights de regras de fluxo de email – modo lento
 
 Regras de fluxo de emails ineficientes (também conhecidas como regras de transporte) podem levar a atrasos de fluxo de emails para sua organização. Esta percepção relata regras de fluxo de emails que afetam o fluxo de email da sua organização. Exemplos desses tipos de regras:
 

@@ -3,23 +3,22 @@ title: Controles de tecnologia do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma visão geral das práticas de controle de tecnologia da Microsoft para o Office 365.'
-ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262333"
 ---
 # <a name="office-365-technology-controls"></a>Controles de tecnologia do Office 365 
 
@@ -34,7 +33,7 @@ O Lockbox processa as solicitações que concedem aos engenheiros a capacidade d
 
 O Lockbox do cliente para o Office 365 pode ajudá-lo a cumprir as obrigações de conformidade, como as encontradas no FedRAMP e HIPAA, se você precisar de procedimentos para autorização explícita de acesso a dados. Na rara instância, quando um engenheiro de serviços da Microsoft precisa acessar seus dados, você concede a eles acesso apenas aos dados necessários para resolver o problema e por um tempo limitado. As ações realizadas pelo engenheiro de suporte são registradas para fins de auditoria e podem ser acessadas por meio da [API de atividade de gerenciamento do Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e do [centro de segurança e conformidade](http://protection.office.com/). O Lockbox do cliente insere o cliente no processo de aprovação de Lockbox e fornece a capacidade de controlar a autorização do Microsoft Access para o conteúdo do Exchange Online ou do SharePoint Online para operações de serviço.
 
->**Observação**: a Lockbox de clientes está disponível no [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) e como uma compra de complemento, mas a ação manual deve ser realizada no centro de administração do Office 365 (em configurações de serviço | Lockbox de cliente) para habilitá-lo. Para obter mais informações, consulte [solicitações de lockbox de cliente do Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+>**Observação**: a Lockbox de clientes está disponível no [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) e como uma compra de complemento, mas a ação manual deve ser realizada no centro de administração do Microsoft 365 (em configurações de serviço | Lockbox de cliente) para habilitá-lo. Para saber mais, consulte [Solicitações do Sistema de Proteção de Dados do Cliente do Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 Todas as solicitações de serviço do Exchange Online e do SharePoint Online são tratadas pelo sistema de lockbox. E com o Lockbox do cliente, qualquer operação de serviço que precisa de acesso a esses serviços com a exposição aos dados do cliente passa pelo processo de aprovação de Lockbox e permite que o cliente aprove ou rejeite a solicitação posteriormente.
  

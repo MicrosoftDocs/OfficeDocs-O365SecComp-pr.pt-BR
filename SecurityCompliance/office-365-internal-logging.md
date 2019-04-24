@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: Uma explicação sobre como o log interno para o Office 365 Engineering Teams funciona.
 ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262673"
 ---
-# <a name="internal-logging-for-office-365-engineering"></a>Log interno da engenharia do Office 365
+# <a name="internal-logging-for-office-365-engineering"></a>Log interno de engenharia do Office 365
 Além dos eventos e dados de log disponíveis para os clientes, há também um sistema de coleta de dados de log interno disponível para os engenheiros do Office 365. Muitos tipos diferentes de dados de log são carregados de servidores do Office 365 para um serviço de computação de dados interno e global chamado Cosmos. Cada equipe de serviço carrega logs de auditoria de seus respectivos servidores no banco de dados do cosmos para agregação e análise. Essa transferência de dados ocorre em uma conexão TLS validada pelo FIPS 140-2 em portas e protocolos especificamente aprovados usando uma ferramenta de automação proprietária chamada ODL (Office Data Loader). As ferramentas usadas no Office 365 para coletar e processar registros de auditoria não permitem alterações permanentes ou irreversíveis no conteúdo do registro de auditoria original ou na ordenação do tempo.
 
 As equipes de serviço usam o cosmos como um repositório centralizado para conduzir uma análise de uso do aplicativo, medir o desempenho operacional e do sistema e procurar anormalidades e padrões que possam indicar problemas ou problemas de segurança. Cada equipe de serviço carrega uma linha de base de logs no cosmos, dependendo do que estão procurando analisar, que geralmente incluem:

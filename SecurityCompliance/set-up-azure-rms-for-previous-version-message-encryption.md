@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: A versão anterior da criptografia de mensagem do Office 365 depende do Microsoft Azure Rights Management (anteriormente conhecido como gerenciamento de direitos do Windows Azure Active Directory).
 ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266883"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurar o Azure Rights Management para a versão anterior de criptografia de mensagem do Office 365
 
@@ -36,7 +36,7 @@ A criptografia de mensagem do Office 365 (OME), incluindo o IRM, depende do Azur
 
 - Se você não tiver uma assinatura do Azure RMS para Exchange Online ou proteção do Exchange Online, você deverá comprar uma assinatura e ativá-la primeiro.
 
-    Para obter informações sobre como adquirir uma assinatura para o Azure Rights Management, consulte [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). A próxima seção fornece informações sobre como ativar o Azure Rights Management.
+    Para obter informações sobre como adquirir uma assinatura para o Azure Rights Management, consulte [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). A seção a seguir oferece informações sobre como ativar o Azure Rights Management.
 
 - Se você tiver o Azure Rights Management, mas ele não estiver configurado para o Exchange Online ou o Exchange Online Protection, este artigo explica como ativar o Azure Rights Management e, em seguida, descreve a melhor maneira de configurar o OME para trabalhar com o Azure Rights Management.
 
@@ -107,7 +107,7 @@ Um TPD é um arquivo XML que contém informações sobre as configurações de g
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. Para verificar se você importou com êxito o TPD e habilitou o Azure Rights Management, use o cmdlet Test-IRMConfiguration para testar a funcionalidade de gerenciamento de direitos do Azure. Para obter detalhes, consulte "exemplo 1" em [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
+8. Para verificar se você importou com êxito o TPD e habilitou o Azure Rights Management, use o cmdlet Test-IRMConfiguration para testar a funcionalidade de gerenciamento de direitos do Azure. Para obter detalhes, confira "Exemplo 1" em [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tenho a versão anterior do OME configurada com o Active Directory Rights Management e a proteção de informações do Azure, o que eu faço?
 <a name="importTPDs"> </a>

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Para administradores: saiba como usar o serviço de importação no centro de conformidade do & de segurança para importar em massa dados de email (arquivos PST) para caixas de correio do usuário no Exchange Online. Este tópico fornece perguntas frequentes e explica como funciona o processo de importação de PST.'
-ms.openlocfilehash: 3a7dba3db608eb45347609acef396faf73da483f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254882"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -95,6 +95,8 @@ Aqui está uma ilustração e uma descrição do processo de importação de PST
   - Usar [casos de descoberta eletrônica](ediscovery-cases.md) para gerenciar investigações legais da sua organização 
     
   - Use [as políticas de retenção](retention-policies.md) no centro de conformidade do _AMP_ de segurança para controlar o tempo de retenção do conteúdo da caixa de correio e exclua o conteúdo depois que o período de retenção expira. 
+
+  - Use [políticas de supervisão](supervision-policies.md) para examinar as mensagens para garantir que elas estejam em conformidade com os padrões de mensagens e adicionar um tipo de classificação.
     
 - A importação de dados para o Office 365 ajuda a proteger contra a perda de dados. Os dados de email que são importados para o Office 365 herdam os recursos de alta disponibilidade do Exchange Online.
     

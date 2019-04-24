@@ -1,5 +1,5 @@
 ---
-title: Monitorar dispositivos no Microsoft 365 Security
+title: Monitorar dispositivos na segurança do Microsoft 365
 description: Descreve como você pode manter seus dispositivos seguros, atualizados e identificar possíveis ameaças em sua organização
 keywords: segurança, malware, Microsoft 365, M365, central de segurança, monitor, relatório, dispositivos
 ms.prod: w10
@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263480"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Monitorar dispositivos no Microsoft 365 Security
+# <a name="monitor-devices-in-microsoft-365-security"></a>Monitorar dispositivos na segurança do Microsoft 365
 
 Mantenha seus dispositivos seguros, atualizados e identifique as possíveis ameaças no centro de segurança do Microsoft 365.
 

@@ -1,26 +1,26 @@
 ---
-title: Recursos de relatórios do Office 365
+title: Recursos de relatório do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Uma explicação de recursos de relatório no Office 365.
-ms.openlocfilehash: 5e765045982d6788ee93550fa8041a52efb306c0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 150928ccfb99da8b762cf5d5b99bf152a91949fa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262393"
 ---
-# <a name="office-365-reporting-features"></a>Recursos de relatórios do Office 365 
+# <a name="office-365-reporting-features"></a>Recursos de relatório do Office 365 
 
 ## <a name="introduction"></a>Introdução
 O recurso de relatórios do Office 365 fornece uma variedade de relatórios de auditoria para o Azure Active Directory (AD), o Exchange Online, o gerenciamento de dispositivos, a análise de supervisão e a prevenção de perda de dados (DLP). Eles são diferentes e separados dos relatórios de atividades do Office 365.
@@ -78,7 +78,7 @@ O Yammer Enterprise oferece aos administradores a capacidade de exportar dados d
 
 Os dados a seguir podem ser exportados:
 
-| Nomes | Descrição |
+| Nome do arquivo | Descrição |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | Todos os usuários novos, pendentes e suspensos na rede |
 | Messages.csv | Todas as mensagens na rede |

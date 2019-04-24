@@ -3,7 +3,7 @@ title: A nova central de segurança do Microsoft 365 e o centro de conformidade 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 04/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepare-se para o novo centro de segurança e centro de conformidade do Microsoft 365
-ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265475"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>A nova central de segurança do Microsoft 365 e o centro de conformidade da Microsoft 365 agora estão disponíveis em geral
 
@@ -26,7 +26,7 @@ ms.locfileid: "31518371"
 
 Sua nova [central de segurança do Microsoft 365](overview-security-center.md) inclui um painel para ajudá-lo a gerenciar e monitorar a segurança em suas identidades, dados, dispositivos, aplicativos e infraestrutura. Você também terá acesso fácil à sua nova [Pontuação segura da Microsoft](microsoft-secure-score.md), a novos relatórios de ameaças de dispositivos, novos relatórios de ameaças de identidade e seus relatórios de segurança de aplicativos na nuvem. 
 
-[![Novo Microsoft 365 Security Center](media/m365-security-center.png)](overview-security-center.md)
+[![Nova central de segurança do Microsoft 365](media/m365-security-center.png)](overview-security-center.md)
 
 Ao usar a central de segurança do Microsoft 365 pela primeira vez, você verá as informações na parte superior da tela para ajudá-lo a começar. Você também verá como navegar facilmente para os recursos de segurança mais interessados em explorar. Para saber mais, confira [visão geral da central de segurança do Microsoft 365](overview-security-center.md).
 
@@ -41,7 +41,7 @@ Seu novo [centro de conformidade da microsoft 365](microsoft-365-compliance-cent
 
 Você terá acesso fácil a rótulos e políticas de confidencialidade e retenção, prevenção de perda de dados (DLP), governança de dados, descoberta eletrônica, solicitações de entidades de dados (DSRs), gerenciamento de casos e segurança de aplicativos em nuvem. Além disso, você pode obter informações acionáveis e aproveitar a automação inteligente para reduzir seus riscos de conformidade e proteger seu imóvel digital. 
 
-[![MCentro de conformidade do objeto Microsoft 365(media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Centro de conformidade do Microsoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 Ao usar o centro de conformidade da Microsoft 365 pela primeira vez, você verá as informações na parte superior da tela para ajudá-lo a começar. Você verá como navegar facilmente para os recursos de conformidade que está mais interessado em explorar. Para saber mais, confira [Bem-vindo ao novo centro de conformidade do Microsoft 365](microsoft-365-compliance-center.md).
 
@@ -87,11 +87,13 @@ Os usuários devem ser atribuídos à função de administrador global, administ
 
 - Administradores de segurança, operadores de segurança e leitores de segurança podem acessar a central de segurança
 
+ Para saber mais sobre essas funções, confira [permissões no centro de conformidade do & de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
+ 
 A tabela a seguir resume quem pode acessar vários portais no Azure, no Office 365 e no Windows:
 
 |Portal |Administrador global |Administrador de segurança, operador de segurança ou leitor de segurança|Administrador de conformidade ou administrador de dados de conformidade |
 |---------|---------|---------|---------|
-|[Centro de Conformidade e Segurança](https://protection.office.com) |Sim |Sim  |Sim |
+|[Centro de conformidade do & de segurança](https://protection.office.com) |Sim |Sim  |Sim |
 |[Centro de segurança do Microsoft 365](https://security.microsoft.com) |Sim  | Sim  | Não        |
 |[Centro de conformidade do Microsoft 365](https://compliance.microsoft.com) | Sim | Não | Sim |
 |[Gerente de Conformidade](https://aka.ms/compliancemanager) |Sim | Sim |Sim  |
@@ -115,3 +117,5 @@ A tabela a seguir resume quem pode acessar vários portais no Azure, no Office 3
 [Roteiro do Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descrição do serviço centro de conformidade do & de segurança do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+Para fornecer comentários sobre a central de segurança da Microsoft 365 e o centro de conformidade da Microsoft 365, como ideias para novos recursos, visite [o feedback dos clientes do Microsoft Office 365](https://office365.uservoice.com)

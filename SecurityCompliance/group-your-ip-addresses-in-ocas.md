@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Para identificar facilmente conjuntos de endereços IP que você usará no Office 365 Cloud app Security, como seus endereços IP do Office físico, você pode configurar grupos de intervalos de endereços IP.
 ms.openlocfilehash: b8f5c1dd46b2e3990d53a65881d12ca8f3961b16
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254850"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Agrupar seus endereços IP para simplificar o gerenciamento do Office 365 Cloud App Security
   
@@ -45,13 +45,13 @@ Cada grupo de intervalos IP pode ser marcado com nomes de marca que você escolh
     
 |**Campo ou lista**|**O que fazer**|
 |:-----|:-----|
-|**Name** <br/> |Use este campo para gerenciar o intervalo de endereços IP e as configurações. (Esse valor não será exibido nos logs de atividades.)  <br/> |
+|**Nome** <br/> |Use este campo para gerenciar o intervalo de endereços IP e as configurações. (Esse valor não será exibido nos logs de atividades.)  <br/> |
 |**Intervalos de endereços IP** <br/> |Especifique um intervalo, usando a notação de prefixo de rede (também conhecida como notação CIDR). Por exemplo, 192.168.1.0/27 inclui o intervalo de valores 192.168.1.0 a 192.168.1.31 (inclusive).  <br/> |
 |**Local** e **ISP registrado** <br/> |Especifique o local e o provedor de serviços de Internet (ISP) para o intervalo de endereços IP. Isso substitui os campos públicos definidos para os endereços, o que é útil para casos, como um endereço IP é considerado público para estar na Irlanda, mas na verdade nos EUA.  <br/> |
-|**Tags** <br/> |Use marcas para nomear seus grupos de endereços IP. (Ao contrário do campo nome, você verá marcas nos logs de atividades.) Digite uma palavra ou frase que você deseja usar para uma marca. Você pode adicionar quantas marcas quiser para cada intervalo de endereços IP. E se você já configurou uma marca e deseja adicionar esse intervalo de endereços IP a ela, escolha-a na lista de marcas atuais que aparece ao começar a digitar.  <br/> |
-|**Categoria** <br/> | Atribua categorias às suas marcas para facilitar o reconhecimento de atividades provenientes de determinados endereços IP. Escolha uma das seguintes opções:<br/> **Administrativo** Todos os endereços IP de seus administradores.  <br/> **Provedor de nuvem** O endereço IP do seu proxy na nuvem.  <br/> **Corporativo** Todos os endereços IP na sua rede interna, suas filiais e seus endereços de roaming de Wi-Fi.  <br/> **Arriscado** Qualquer endereço IP que você considere como um risco, como endereços IP suspeitos que você viu nos passados, endereços IP nas redes dos concorrentes e assim por diante. Por padrão, as categorias arriscadas incluem duas marcas de IP: **proxy anônimo** e **Tor** <br/> **VPN** Qualquer endereço IP que seus funcionários remotos utilizam.  <br/> |
+|**Marcas** <br/> |Use marcas para nomear seus grupos de endereços IP. (Ao contrário do campo nome, você verá marcas nos logs de atividades.) Digite uma palavra ou frase que você deseja usar para uma marca. Você pode adicionar quantas marcas quiser para cada intervalo de endereços IP. E se você já configurou uma marca e deseja adicionar esse intervalo de endereços IP a ela, escolha-a na lista de marcas atuais que aparece ao começar a digitar.  <br/> |
+|**Categoria** <br/> | Atribua categorias às suas marcas para facilitar o reconhecimento de atividades provenientes de determinados endereços IP. Escolha uma das seguintes opções:  <br/> **Administrativo** Todos os endereços IP de seus administradores.  <br/> **Provedor de nuvem** O endereço IP do seu proxy na nuvem.  <br/> **Corporativo** Todos os endereços IP na sua rede interna, suas filiais e seus endereços de roaming de Wi-Fi.  <br/> **Arriscado** Qualquer endereço IP que você considere como um risco, como endereços IP suspeitos que você viu nos passados, endereços IP nas redes dos concorrentes e assim por diante. Por padrão, as categorias arriscadas incluem duas marcas de IP: **proxy anônimo** e **Tor** <br/> **VPN** Qualquer endereço IP que seus funcionários remotos utilizam.  <br/> |
    
-7. Escolha **Salvar**.
+7. Selecione **Salvar**.
     
 Depois de configurar os intervalos de endereços IP, lembre-se de que apenas eventos futuros serão afetados por essas alterações.
   
