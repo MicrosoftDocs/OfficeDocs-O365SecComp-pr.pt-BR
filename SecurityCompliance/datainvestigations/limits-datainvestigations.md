@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258729"
 ---
-# <a name="data-investigations-limits"></a><span data-ttu-id="cd055-102">Limites de investigações de dados</span><span class="sxs-lookup"><span data-stu-id="cd055-102">Data Investigations limits</span></span>
+# <a name="data-investigations-preview-limits"></a><span data-ttu-id="244ea-102">Limites de investigações de dados (visualização)</span><span class="sxs-lookup"><span data-stu-id="244ea-102">Data Investigations (Preview) limits</span></span>
 
-<span data-ttu-id="cd055-103">Este artigo descreve os limites nas investigações de dados.</span><span class="sxs-lookup"><span data-stu-id="cd055-103">This article describes the limits in Data Investigations.</span></span>
+<span data-ttu-id="244ea-103">Este artigo descreve os limites nas investigações de dados (prévia).</span><span class="sxs-lookup"><span data-stu-id="244ea-103">This article describes the limits in Data Investigations (Preview).</span></span>
 
-## <a name="investigatino-limits"></a><span data-ttu-id="cd055-104">Limites Investigatino</span><span class="sxs-lookup"><span data-stu-id="cd055-104">Investigatino limits</span></span>
+## <a name="investigation-limits"></a><span data-ttu-id="244ea-104">Limites de investigação</span><span class="sxs-lookup"><span data-stu-id="244ea-104">Investigation limits</span></span>
 
-## <a name="indexing-limits"></a><span data-ttu-id="cd055-105">Limites de indexação</span><span class="sxs-lookup"><span data-stu-id="cd055-105">Indexing limits</span></span>
-
-## <a name="search-limits"></a><span data-ttu-id="cd055-106">Limites da pesquisa</span><span class="sxs-lookup"><span data-stu-id="cd055-106">Search limits</span></span>
-
-## <a name="incident-limits"></a><span data-ttu-id="cd055-107">Limites de incidentes</span><span class="sxs-lookup"><span data-stu-id="cd055-107">Incident limits</span></span>
-
-<span data-ttu-id="cd055-108">A tabela a seguir lista os limites de incidentes em investigações de dados.</span><span class="sxs-lookup"><span data-stu-id="cd055-108">The following table lists the limits for incidents in Data Investigations.</span></span>  <span data-ttu-id="cd055-109">Todos os itens que excederem os máximos de arquivo serão exibidos como erros de processamento.</span><span class="sxs-lookup"><span data-stu-id="cd055-109">Any items that exceed the single file maximums will show up as processing errors.</span></span>
+<span data-ttu-id="244ea-105">A tabela a seguir lista os limites para investigações em investigações de dados (prévia).</span><span class="sxs-lookup"><span data-stu-id="244ea-105">The following table lists the limits for investigations in Data Investigations (Preview).</span></span> 
     
-  |<span data-ttu-id="cd055-110">**Descrição do limite**</span><span class="sxs-lookup"><span data-stu-id="cd055-110">**Description of limit**</span></span>|<span data-ttu-id="cd055-111">**Limite**</span><span class="sxs-lookup"><span data-stu-id="cd055-111">**Limit**</span></span>|
+  |<span data-ttu-id="244ea-106">**Descrição do limite**</span><span class="sxs-lookup"><span data-stu-id="244ea-106">**Description of limit**</span></span>|<span data-ttu-id="244ea-107">**Limite**</span><span class="sxs-lookup"><span data-stu-id="244ea-107">**Limit**</span></span>|
   |:-----|:-----|
-  |<span data-ttu-id="cd055-112">Número máximo de incidentes</span><span class="sxs-lookup"><span data-stu-id="cd055-112">Maximum number of incidents</span></span>  <br/> |<span data-ttu-id="cd055-113">50</span><span class="sxs-lookup"><span data-stu-id="cd055-113">50</span></span>  <br/> |
-  |<span data-ttu-id="cd055-114">Número total de documentos que podem ser incluídos em um incidente (para todos os incidentes na investigação)</span><span class="sxs-lookup"><span data-stu-id="cd055-114">Total number of documents that can be ingested into an incident (for all incidents in the investigation)</span></span>  <br/> |<span data-ttu-id="cd055-115">1 milhão</span><span class="sxs-lookup"><span data-stu-id="cd055-115">1 million</span></span>  <br/> |
-  |<span data-ttu-id="cd055-116">Tamanho total do arquivo por carga</span><span class="sxs-lookup"><span data-stu-id="cd055-116">Total file size per load</span></span>  <br/> |<span data-ttu-id="cd055-117">100 GB</span><span class="sxs-lookup"><span data-stu-id="cd055-117">100 GB</span></span>  <br/> |
-  |<span data-ttu-id="cd055-118">Tamanho máximo de um único arquivo</span><span class="sxs-lookup"><span data-stu-id="cd055-118">Maximum size of single file</span></span>   <br/> |<span data-ttu-id="cd055-119">100 MB</span><span class="sxs-lookup"><span data-stu-id="cd055-119">100 MB</span></span>  <br/> |
-  |<span data-ttu-id="cd055-120">Número máximo de caracteres extraídos de um único arquivo</span><span class="sxs-lookup"><span data-stu-id="cd055-120">Maximum number of characters extracted from a single file</span></span>  <br/> |<span data-ttu-id="cd055-121">10 milhões</span><span class="sxs-lookup"><span data-stu-id="cd055-121">10 million</span></span>  <br/> |
-  |<span data-ttu-id="cd055-122">Profundidade de itens incorporados em um documento</span><span class="sxs-lookup"><span data-stu-id="cd055-122">Depth of embedded items in a document</span></span>  <br/> |<span data-ttu-id="cd055-123">25</span><span class="sxs-lookup"><span data-stu-id="cd055-123">25</span></span>  <br/> |
-  
+  |<span data-ttu-id="244ea-108">Número máximo de investigações.</span><span class="sxs-lookup"><span data-stu-id="244ea-108">Maximum number of investigations.</span></span>  <br/> |<span data-ttu-id="244ea-109">50</span><span class="sxs-lookup"><span data-stu-id="244ea-109">50</span></span>  <br/> |
+  |<span data-ttu-id="244ea-110">Número total de documentos que podem ser adicionados a uma investigação (para todos os conjuntos de evidências na investigação).</span><span class="sxs-lookup"><span data-stu-id="244ea-110">Total number of documents that can be added to an investigation (for all evidence sets in the investigation).</span></span>  <br/> |<span data-ttu-id="244ea-111">1 milhão</span><span class="sxs-lookup"><span data-stu-id="244ea-111">1 million</span></span>  <br/> |
+  |<span data-ttu-id="244ea-112">Tamanho total do arquivo por carga.</span><span class="sxs-lookup"><span data-stu-id="244ea-112">Total file size per load.</span></span>  <br/> |<span data-ttu-id="244ea-113">100 GB</span><span class="sxs-lookup"><span data-stu-id="244ea-113">100 GB</span></span>  <br/> |
+  |<span data-ttu-id="244ea-114">Tamanho máximo de um único arquivo.</span><span class="sxs-lookup"><span data-stu-id="244ea-114">Maximum size of a single file.</span></span>   <br/> |<span data-ttu-id="244ea-115">100 MB <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="244ea-115">100 MB <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="244ea-116">Número máximo de caracteres extraídos de um único arquivo.</span><span class="sxs-lookup"><span data-stu-id="244ea-116">Maximum number of characters extracted from a single file.</span></span>  <br/> |<span data-ttu-id="244ea-117">10 milhões <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="244ea-117">10 million <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="244ea-118">Profundidade de itens incorporados em um único arquivo.</span><span class="sxs-lookup"><span data-stu-id="244ea-118">Depth of embedded items in a single file.</span></span>  <br/> |<span data-ttu-id="244ea-119">25 <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="244ea-119">25 <sup>1</sup></span></span> <br/> |
+|||
+> [!NOTE]
+><span data-ttu-id="244ea-120"><sup>1</sup> todos os itens que excederem um limite de arquivo único aparecerão como erros de processamento.</span><span class="sxs-lookup"><span data-stu-id="244ea-120"><sup>1</sup>  Any items that exceed a single file limit will show up as processing errors.</span></span>
 
-## <a name="export-limits"></a><span data-ttu-id="cd055-124">Limites de exportação</span><span class="sxs-lookup"><span data-stu-id="cd055-124">Export limits</span></span>
+## <a name="indexing-limits"></a><span data-ttu-id="244ea-121">Limites de indexação</span><span class="sxs-lookup"><span data-stu-id="244ea-121">Indexing limits</span></span>
 
-## <a name="download-limits"></a><span data-ttu-id="cd055-125">Limites de download</span><span class="sxs-lookup"><span data-stu-id="cd055-125">Download limits</span></span>
+<span data-ttu-id="244ea-122">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="244ea-122">Content coming soon.</span></span>
+
+## <a name="search-limits"></a><span data-ttu-id="244ea-123">Limites da pesquisa</span><span class="sxs-lookup"><span data-stu-id="244ea-123">Search limits</span></span>
+
+<span data-ttu-id="244ea-124">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="244ea-124">Content coming soon.</span></span>
+
+## <a name="export-limits"></a><span data-ttu-id="244ea-125">Limites de exportação</span><span class="sxs-lookup"><span data-stu-id="244ea-125">Export limits</span></span>
+
+<span data-ttu-id="244ea-126">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="244ea-126">Content coming soon.</span></span>
+
+## <a name="download-limits"></a><span data-ttu-id="244ea-127">Limites de download</span><span class="sxs-lookup"><span data-stu-id="244ea-127">Download limits</span></span>
+
+<span data-ttu-id="244ea-128">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="244ea-128">Content coming soon.</span></span>
 
