@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Com o lançamento dos novos recursos para a criptografia de mensagens do Office 365 (OME), não é mais necessário configurar o IRM separadamente. A Microsoft não recomenda configurar novas implantações usando o OME e o IRM herdados com o Azure Rights Management. Para obter mais informações sobre os novos recursos do OME, consulte as perguntas FREQUENTEs sobre a criptografia de mensagens do Office 365. Se você estiver pronto para começar a usar os novos recursos do OME em sua organização, confira configurar os novos recursos de criptografia de mensagens do Office 365 criados na parte superior da proteção de informações do Azure.
 ms.openlocfilehash: 7902eafd45e90a9aa5ac4c34fbeec066425473b4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259489"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurar o IRM para usar o Azure Rights Management
 

@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Os administradores podem saber mais sobre como usar S/MIME no Exchange Online.
 ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261379"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para assinatura e criptografia de mensagens no Exchange Online
 
@@ -51,7 +51,7 @@ As etapas a seguir para configurar o S/MIME com cada um desses pontos de extremi
 
 A configuração do S/MIME para o Exchange Online com o Outlook na Web envolve as seguintes etapas principais:
 
-1. [Configurar definições S/MIME para o Outlook na Web](configure-s-mime-settings-for-outlook-web-app.md)
+1. [Definir as configurações de S/MIME para o Outlook Web](configure-s-mime-settings-for-outlook-web-app.md)
 
 2. [Configurar coleção de certificados virtuais para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Quando uma mensagem de email passa pela filtragem de spam, recebe uma pontuação de spam. Essa pontuação é mapeada para uma classificação individual de Nível de Confiança de Spam (SCL) em um cabeçalho X. O serviço executa ações nas mensagens, dependendo da interpretação da confiança do spam da classificação SCL. A tabela a seguir mostra como as diferentes classificações SCL são interpretadas pelos filtros e a ação padrão tomada em mensagens de entrada para cada classificação.
 ms.openlocfilehash: 48ca02bf3f6549c5acc1147ea477b9d22f1c76e1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260669"
 ---
 # <a name="spam-confidence-levels"></a>Níveis de confiança de spam
 

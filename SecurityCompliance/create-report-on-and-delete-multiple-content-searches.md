@@ -1,5 +1,5 @@
 ---
-title: Criar, relatar e excluir várias pesquisas de conteúdo
+title: Criar, gerar relatórios sobre e excluir várias Pesquisas de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell &amp; no centro de conformidade de segurança do Office 365.
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell no centro de conformidade do & de segurança no Office 365.
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258422"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, relatar e excluir várias pesquisas de conteúdo
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, gerar relatórios sobre e excluir várias Pesquisas de Conteúdo
 
- Criar e relatar rapidamente pesquisas de descoberta é geralmente uma etapa importante na descoberta eletrônica e investigações quando você está tentando saber mais sobre os dados subjacentes, e a riqueza e a qualidade das pesquisas. Para ajudá-lo a fazer isso, &amp; o centro de conformidade de segurança oferece um conjunto de cmdlets do Windows PowerShell para automatizar tarefas de pesquisa de conteúdo demoradas. Esses scripts fornecem uma maneira rápida e fácil de criar várias pesquisas e, em seguida, executar relatórios dos resultados estimados da pesquisa que podem ajudá-lo a determinar a quantidade de dados em questão. Você também pode usar os scripts para criar versões diferentes de pesquisas para comparar os resultados que cada um produz. Esses scripts podem ajudá-lo a identificar e analisar os dados de forma rápida e eficiente. 
+ Criar e relatar rapidamente pesquisas de descoberta é geralmente uma etapa importante na descoberta eletrônica e investigações quando você está tentando saber mais sobre os dados subjacentes, e a riqueza e a qualidade das pesquisas. Para ajudá-lo a fazer isso, o PowerShell do centro de conformidade do & de segurança oferece um conjunto de cmdlets para automatizar tarefas de pesquisa de conteúdo demoradas. Esses scripts fornecem uma maneira rápida e fácil de criar várias pesquisas e, em seguida, executar relatórios dos resultados estimados da pesquisa que podem ajudá-lo a determinar a quantidade de dados em questão. Você também pode usar os scripts para criar versões diferentes de pesquisas para comparar os resultados que cada um produz. Esses scripts podem ajudá-lo a identificar e analisar os dados de forma rápida e eficiente. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de &amp; conformidade de segurança para executar os scripts descritos neste tópico. 
+- Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do & de segurança para executar os scripts descritos neste tópico. 
     
 - Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização que você pode adicionar ao arquivo CSV na etapa 1, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
@@ -59,7 +59,7 @@ O arquivo de valor separado por vírgula (CSV) que você criou nesta etapa cont�
     |**Parâmetro**|**Descrição**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |O endereço SMTP da caixa de correio do usuário.  <br/> |
-    | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
     | `ContentMatchQuery` <br/> |A consulta de pesquisa para a pesquisa. Para obter mais informações sobre como criar uma consulta de pesquisa, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Para email, a data de ou após uma mensagem foi recebida por um destinatário ou enviada pelo remetente. Para documentos em sites do SharePoint ou do OneDrive for Business, a data da última modificação de um documento.  <br/> |
     | `EndDate` <br/> |Para email, a data de ou antes de uma mensagem foi enviada por um enviado pelo usuário. Para documentos em sites do SharePoint ou do OneDrive for Business, a data em ou antes da última modificação de um documento.  <br/> |
@@ -68,7 +68,7 @@ O arquivo de valor separado por vírgula (CSV) que você criou nesta etapa cont�
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Etapa 2: conectar-se ao Security & central de conformidade do PowerShell
 
-A próxima etapa é conectar o Windows PowerShell ao centro de &amp; conformidade de segurança da sua organização.
+A próxima etapa é conectar-se ao PowerShell do centro de conformidade do & de segurança para sua organização.
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1; por exemplo, `ConnectSCC.ps1`. Salve o arquivo na mesma pasta em que você salvou o arquivo CSV na etapa 1.
     
@@ -77,7 +77,7 @@ A próxima etapa é conectar o Windows PowerShell ao centro de &amp; conformidad
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. No computador local, abra o Windows PowerShell, vá para a pasta onde o script criado na etapa anterior está localizado e, em seguida, execute o script; por exemplo:

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumo: implante um novo site de equipe do SharePoint Online isolado com as instruções passo a passo.'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256992"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implantar um site de equipe do SharePoint Online isolado
 
@@ -83,7 +83,7 @@ Você precisa criar os seguintes grupos de acesso no Azure AD:
 6. Repita as etapas 3-5 para seus grupos adicionais.
     
 > [!NOTE]
-> Você precisa usar o portal do Azure para criar os grupos de modo que eles tenham recursos do Office habilitados. Se um site isolado do SharePoint Online for configurado posteriormente como um site altamente confidencial com um rótulo de proteção de informações do Azure (AIP) para criptografar arquivos e atribuir permissão a grupos específicos, os grupos permitidos deverão ter sido criados com recursos do Office permiti. Você não pode alterar a configuração de recursos do Office de um grupo do Azure AD após ele ter sido criado. 
+> Você precisa usar o portal do Azure para criar os grupos de modo que eles tenham recursos do Office habilitados. Se um site isolado do SharePoint Online for configurado posteriormente como um site altamente confidencial com um rótulo de proteção de informações do Azure para criptografar arquivos e atribuir permissão a grupos específicos, os grupos permitidos deverão ter sido criados com recursos do Office habilitados. Você não pode alterar a configuração de recursos do Office de um grupo do Azure AD após ele ter sido criado. 
   
 Aqui está a configuração resultante com os três grupos de acesso de site.
   
@@ -105,7 +105,7 @@ Se estiver gerenciando contas de usuário e grupos através do Office 365, você
   
 Para o centro de administração do Office, entre com uma conta de usuário que tenha atribuído a função Administrador de conta de usuário ou administrador da empresa e use grupos para adicionar as contas de usuário e grupos apropriados aos grupos de acesso apropriados.
   
-Para o PowerShell, primeiro [Conecte-se ao módulo PowerShell do Azure Active Directory v2](https://go.microsoft.com/fwlink/?linkid=842218).
+Para o PowerShell, primeiro [Conecte-se ao módulo do PowerShell do Azure Active Directory para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Em seguida, use o seguinte bloco de comando para adicionar uma conta de usuário individual a um grupo de acesso:
   
@@ -231,7 +231,7 @@ Você e os membros do site, por meio da Associação de grupo em um dos grupos d
 
 Quando você precisar alterar a associação de grupo de acesso ao site ou criar uma pasta de documentos com permissões personalizadas, consulte [gerenciar um site de equipe isolado do SharePoint Online](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
 [Sites de equipe do SharePoint Online isolados](isolated-sharepoint-online-team-sites.md)
   

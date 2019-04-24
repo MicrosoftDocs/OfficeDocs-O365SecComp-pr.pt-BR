@@ -1,5 +1,5 @@
 ---
-title: Criar listas de remetentes seguros para toda a organização ou remetentes bloqueados no Office 365
+title: Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se você quiser ter certeza de que recebeu emails de um remetente específico, porque confia neles e suas mensagens, é possível ajustar a lista de permissões em uma política de filtro de spam no centro de administração do Exchange.
 ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258169"
 ---
-# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Criar listas de remetentes seguros para toda a organização ou remetentes bloqueados no Office 365
+# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365
   
 Se você quiser ter certeza de que recebeu emails de um remetente específico, porque confia neles e suas mensagens, é possível ajustar a lista de permissões em uma política de filtro de spam no centro de administração do Exchange (Eat) no **filtro de spam**de **proteção** \> . Saiba mais sobre isso em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md). Outra opção seria criar uma regra de fluxo de emails do Exchange (também conhecida como regra de transporte) que funciona como o domínio ou a lista de permissões baseada no usuário no filtro de spam. Você pode bloquear mensagens enviadas de um determinado domínio ou usuário de uma forma semelhante.
   
@@ -67,7 +67,7 @@ Para tarefas de gerenciamento adicionais relacionadas a regras de fluxo de email
 - Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de Administração do Exchange**.
     
 > [!TIP]
-> Está enfrentando problemas? Peça ajuda nos fóruns do Exchange. Visite os fóruns no [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), no [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)ou no [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Está com problemas? Peça ajuda nos fóruns do Exchange. Visite os fóruns no [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), no [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)ou no [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Use o Eat para criar uma regra de fluxo de emails para ignorar a filtragem de spam para um domínio ou usuário
 
@@ -115,5 +115,5 @@ Depois de criar e impor a regra, todas as mensagens enviadas do domínio ou do u
 
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   
-[Usar regras de fluxo de email para configurar a filtragem de email em massa](use-transport-rules-to-configure-bulk-email-filtering.md)
+[Usar regras de fluxo para configurar a filtragem de email em massa](use-transport-rules-to-configure-bulk-email-filtering.md)
 

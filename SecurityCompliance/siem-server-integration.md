@@ -15,11 +15,11 @@ ms.custom:
 - SIEM
 description: 'Resumo: Leia este artigo para obter uma visão geral da integração do SIEM Server com o Microsoft 365.'
 ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260659"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integração com o servidor SIEM com serviços e aplicativos da Microsoft 365
 
@@ -35,7 +35,7 @@ Um servidor SIEM pode receber dados de uma ampla variedade de serviços e aplica
 | --- | --- | --- |
 | [Proteção Avançada contra Ameaças do Office 365](office-365-atp.md) <br/>   ou   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Logs de auditoria | [Integração do SIEM com a proteção avançada contra ameaças do Office 365](siem-integration-with-office-365-ti.md) |
 | [Segurança no Aplicativo da Nuvem da Microsoft](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integração de log | [Integração do SIEM com o Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integração de log | [Integrar seu servidor SIEM com o Office 365 Cloud app Security](integrate-your-siem-server-with-office-365-cas.md) |
+| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integração de log | [Integrar seu servidor SIEM ao Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
 | [Proteção Avançada contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integração de log | [Extrair alertas para suas ferramentas SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Proteção contra ameaças e detecção de ameaças) | Alertas | [Exportação de dados de segurança do Azure para configuração de pipeline SIEM-visualização](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Logs de auditoria | [Integrar logs de auditoria do Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
@@ -50,7 +50,6 @@ Certifique-se de que o registro em log de auditoria está ativado antes de confi
 - Para o Exchange Online, o [log de auditoria é ativado com o Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
 ## <a name="see-also"></a>Confira também
-
 
 [Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

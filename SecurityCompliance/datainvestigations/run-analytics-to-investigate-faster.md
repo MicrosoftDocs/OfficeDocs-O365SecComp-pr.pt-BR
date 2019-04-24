@@ -1,5 +1,5 @@
 ---
-title: Executar a análise para investigar mais rápido
+title: Executar análise para investigar mais rápido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257609"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>Executar a análise para investigar mais rápido
+# <a name="run-analytics-to-investigate-faster"></a>Executar análise para investigar mais rápido
 
 Quando uma coleção de evidências é grande, pode ser difícil revisar todas elas. Um conjunto de evidências geralmente inclui várias cópias das mesmas ou de documentos ou mensagens de email semelhantes. As investigações de dados (visualização) fornecem várias ferramentas de análise que podem ajudá-lo a reduzir o volume de documentos que precisam ser revisados sem qualquer perda de informações. Para saber mais sobre esses recursos, confira:
 
-- [Detecção próxima duplicação](near-duplicates.md)
+- [Detecção de duplicata próxima](near-duplicates.md)
 
 - [Conversa de email](email-threading.md)
 

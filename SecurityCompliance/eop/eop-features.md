@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: A tabela a seguir fornece uma lista dos recursos que estão disponíveis no serviço de filtragem de email hospedado da Proteção do Exchange Online (EOP).
 ms.openlocfilehash: 8eb6eafb7214938af302852e2726af3fcdbd44d3
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256689"
 ---
 # <a name="eop-features"></a>Recursos EOP
 

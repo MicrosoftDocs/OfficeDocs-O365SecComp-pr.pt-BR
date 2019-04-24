@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Como um usuário do Office 365, você pode gerenciar suas próprias mensagens de spam em quarentena de duas maneiras: respondendo a notificações de spam enviadas diretamente para você (se o seu administrador tiver configurado esse recurso) ou usando o recurso de quarentena de spam na conformidade com segurança &amp; Centro.'
 ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255199"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Localizar e liberar mensagens em quarentena como um usuário no Office 365
 
@@ -61,7 +61,7 @@ Se você tiver muitos itens em quarentena, poderá reduzir o número para um con
     
   - **ID da mensagem** Use essa ação para selecionar uma mensagem específica quando você souber a ID da mensagem. 
     
-    Por exemplo, se uma mensagem específica é enviada por ou destinada a um usuário em sua organização, mas nunca atingiu seu destino, você pode pesquisar a mensagem usando um rastreamento de mensagem (consulte [executar um rastreamento de mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para a quarentena, talvez porque correspondeu a uma regra de fluxo de emails ou tenha sido identificada como spam, você pode facilmente localizar essa mensagem em quarentena, especificando sua ID de mensagem. Certifique-se de incluir a cadeia de ID de mensagem completa. Isso pode incluir colchetes angulares\<\>(), por exemplo:
+    Por exemplo, se uma mensagem específica é enviada por ou destinada a um usuário em sua organização, mas nunca atingiu seu destino, você pode pesquisar a mensagem usando um rastreamento de mensagem (consulte [executar um rastreamento de mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para a quarentena, talvez porque correspondeu a uma regra de fluxo de emails ou tenha sido identificada como spam, você pode facilmente localizar essa mensagem em quarentena, especificando sua ID de mensagem. Não deixe de incluir a cadeia de caracteres completa da ID da mensagem. Isso pode incluir colchetes angulares\<\>(), por exemplo:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
@@ -108,7 +108,7 @@ Você pode obter ainda mais detalhes sobre a mensagem escolhendo uma das seguint
 
 Após selecionar uma mensagem ou grupo de mensagens, você tem várias opções para gerenciar mensagens em quarentena.
   
-- Não faça nada. Se você optar por não fazer nada, a mensagem será excluída pelo Office 365 automaticamente após a expiração. Lembre-se de que, quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente.
+- Nada a fazer. Se você optar por não fazer nada, a mensagem será excluída pelo Office 365 automaticamente após a expiração. Lembre-se de que, quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente.
     
 - **Mensagem de liberação** Liberar uma mensagem em quarentena (ou conjunto de mensagens) para que a mensagem seja enviada à sua caixa de correio. Ao liberar uma mensagem, você tem a opção de relatar a mensagem para a Microsoft para análise. 
     
