@@ -1,5 +1,5 @@
 ---
-title: Examinar e tomar medidas em alertas no Office 365 Cloud app Security
+title: Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use a página alertas no Office 365 Cloud app Security para exibir possíveis problemas e tomar ações. Você pode descartar ou resolver alertas e, se necessário, suspender uma conta de usuário.
 ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261470"
 ---
-# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Examinar e tomar medidas em alertas no Office 365 Cloud app Security
+# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar e tomar atitudes sobre alertas no Office 365 Cloud App Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
