@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Com os relatórios de DLP no Office 365, você pode exibir rapidamente o número de correspondências de política de DLP, substituições ou falsos positivos; Veja se eles estão em tendência de cima ou para baixo ao longo do tempo; filtrar o relatório de formas diferentes; e exiba detalhes adicionais selecionando um ponto em uma linha no gráfico.
 ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267277"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Exibir os relatórios de prevenção contra perda de dados
 

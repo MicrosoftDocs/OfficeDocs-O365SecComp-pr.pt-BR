@@ -1,5 +1,5 @@
 ---
-title: Integrar seu servidor SIEM com o Office 365 Cloud app Security
+title: Integrar seu servidor SIEM ao Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Você pode integrar seu servidor SIEM com o Office 365 Cloud app Security. Leia este artigo para obter uma visão geral de como ele funciona e como configurá-lo.
 ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
-ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30548581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254683"
 ---
-# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar seu servidor SIEM com o Office 365 Cloud app Security
+# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar seu servidor SIEM ao Office 365 Cloud App Security
   
 |Avaliação * *\>**|Planejamento * *\>**|Implantação * *\>**|Utilização * * *|
 |:-----|:-----|:-----|:-----|
@@ -198,7 +198,7 @@ Se você perder o token, poderá regenerar um.
   
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Atividades de utilização após a implantação do Office 365 Cloud app Security](utilization-activities-for-ocas.md)
+- [Atividades de utilização após a implantação do Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 - [ReVisar e executar ação em alertas](review-office-365-cas-alerts.md)
     

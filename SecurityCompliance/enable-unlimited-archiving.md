@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: saiba como habilitar o arquivamento de expansão automática no Office 365, que fornece aos usuários um armazenamento ilimitado para suas caixas de correio do Exchange Online. Você pode habilitar o arquivamento de expansão automática para toda a sua organização ou apenas para usuários específicos.'
 ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256830"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar o arquivamento ilimitado no Office 365-ajuda do administrador
 
@@ -44,7 +44,7 @@ Você pode usar o recurso de arquivamento de expansão automática do Exchange O
 
 Você pode habilitar o arquivamento de expansão automática para toda a sua organização. Depois que você ativá-la, o arquivamento de expansão automática será habilitado para caixas de correio de usuário existentes e para novas caixas de correio de usuário criadas. Ao criar novas caixas de correio de usuário, certifique-se de habilitar a caixa de correio de arquivo morto principal do usuário para que o recurso de arquivamento de expansão automática funcione para a nova caixa de correio de usuário.
   
-1. [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Conectar-se ao PowerShell do Exchange Online ](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Execute o seguinte comando no PowerShell do Exchange Online para habilitar o arquivamento de expansão automática para toda a sua organização.
 
@@ -64,7 +64,7 @@ Quando você habilita o arquivamento de expansão automática para um usuário e
     
 Esse espaço adicional é adicionado para evitar qualquer problema de armazenamento que possa ocorrer antes de o arquivo morto de expansão automática ser provisionado. Observe que espaço de armazenamento adicional *não é* adicionado quando você habilita o arquivamento de expansão automática para toda a sua organização, conforme descrito na seção anterior. 
   
-1. [Conectar-se ao Exchange Online usando o PowerShell Remoto](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Conectar-se ao PowerShell do Exchange Online ](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Execute o seguinte comando no PowerShell do Exchange Online para habilitar o arquivamento de expansão automática para um usuário específico. Conforme explicado anteriormente, a caixa de correio de arquivo morto do usuário (arquivo principal) deve estar habilitada para que você possa ativar o arquivamento de expansão automática para esse usuário.
     

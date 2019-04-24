@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Use um script do PowerShell para criar uma pesquisa de descoberta eletrônica in-loco no Exchange Online com base em uma pesquisa criada no centro de conformidade do & de segurança. '
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263793"
 ---
-# <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar a pesquisa de conteúdo no seu fluxo de trabalho de descoberta eletrônica
+# <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar a Pesquisa de Conteúdo no seu fluxo de trabalho de descoberta eletrônica
 
 O recurso de pesquisa de conteúdo no centro de conformidade do & de segurança permite pesquisar todas as caixas de correio em sua organização. Ao contrário da descoberta eletrônica in-loco no Exchange Online (onde você pode pesquisar até 10.000 caixas de correio), não há limites para o número de caixas de correio de destino em uma única pesquisa. Para cenários que exigem a execução de pesquisas em toda a organização, você pode usar a Pesquisa de Conteúdo para pesquisar todas as caixas de correio. Em seguida, você pode usar os recursos de fluxo de trabalho de descoberta eletrônica in-loco para realizar outras tarefas relacionadas à descoberta eletrônica, como colocar caixas de correio em espera e exportar resultados de pesquisa. Por exemplo, vamos supor que você precise pesquisar todas as caixas de correio para identificar os responsáveis específicos por um caso jurídico. Você pode usar a pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar todas as caixas de correio em sua organização para identificar as que estão respondendo ao caso. Em seguida, você pode usar essa lista de caixas de correio de responsáveis como caixas de correio de origem para uma pesquisa de descoberta eletrônica in-loco no Exchange Online. O uso da descoberta eletrônica in-loco também permite que você coloque uma retenção nas caixas de correio de origem, copie os resultados da pesquisa para uma caixa de correio de descoberta e exporte os resultados da pesquisa.
   

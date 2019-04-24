@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para os relatórios de conformidade normativa do Office 365, Azure e Dynamics 365 online, para ver auditorias de terceiros, descubra como a Microsoft mantém a segurança dos dados dos clientes e como é possível ser compatível com ISO, HIPAA, NIST, FINRA, RGPD e FedRAMP quando você usa esses serviços online.
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254275"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao portal de confiança do serviço Microsoft
 
@@ -33,7 +33,7 @@ O portal de confiança do serviço contém detalhes sobre a implementação da M
 
 - Dynamics 365
 
-- Azul-fino
+- Azure
     
  > [!NOTE]
  > As contas do Active Directory do Azure associadas a organizações têm acesso a todo o intervalo de documentos e recursos, como o Gerenciador de conformidade. As contas da Microsoft criadas para uso pessoal têm acesso limitado ao conteúdo do portal de confiança do serviço. 
@@ -118,7 +118,7 @@ Funções administrativas que estão disponíveis somente para a conta de admini
   
  A página de **configurações** permite que você atribua acesso baseado em função ao Gerenciador de conformidade. Para obter mais informações, consulte a seção "permissões e controle de acesso baseado em função" em [usar o Gerenciador de conformidade para ajudar a atender aos requisitos de proteção de dados e regulamentados ao usar os serviços de nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Pesquisar
+### <a name="search"></a>Pesquisa
 
 Clique na lupa no canto superior direito da página do portal de confiança do serviço para expandir a caixa, insira seus termos de pesquisa e pressione **Enter**.
 

@@ -1,5 +1,5 @@
 ---
-title: Recursos de anti-phishing do ATP no Office 365
+title: Recursos antiphishing ATP no Office 365
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: A ATP anti-phishing é parte da proteção avançada contra ameaças do Office 365. A ATP anti-phishing aplica um conjunto de modelos de aprendizado de máquina junto com algoritmos de detecção de representação a mensagens de entrada para fornecer proteção para ataques de mercadoria e spear phishing. Todas as mensagens estão sujeitas a um amplo conjunto de modelos de aprendizado de máquina treinados para detectar mensagens de phishing, juntamente com um conjunto de algoritmos avançados usados para proteção contra vários ataques de personificação de domínio e usuário.
 ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249561"
 ---
-# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Recursos de anti-phishing do ATP no Office 365
+# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Recursos antiphishing ATP no Office 365
 
 A ATP anti-phishing é parte da [proteção avançada contra ameaças do Office 365](office-365-atp.md). A ATP anti-phishing aplica um conjunto de modelos de aprendizado de máquina junto com algoritmos de detecção de representação a mensagens de entrada para fornecer proteção para ataques de mercadoria e spear phishing. Todas as mensagens estão sujeitas a um amplo conjunto de modelos de aprendizado de máquina treinados para detectar mensagens de phishing, juntamente com um conjunto de algoritmos avançados usados para proteção contra vários ataques de personificação de domínio e usuário. A ATP anti-phishing protege sua organização de acordo com as políticas definidas pelo seu Office 365 global ou administradores de segurança.
   
@@ -61,7 +61,7 @@ A tabela a seguir descreve alguns exemplos de cenários. Em cada um desses exemp
 
 [Proteção Avançada contra Ameaças do Office 365](office-365-atp.md)
   
-[Proteção contra phishing no Office 365](anti-phishing-protection.md)
+[Proteção antiphishing no Office 365](anti-phishing-protection.md)
   
 [Configurar políticas anti-phishing no Office 365](set-up-anti-phishing-policies.md)
   

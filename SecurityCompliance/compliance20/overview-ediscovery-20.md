@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Este artigo descreve a nova versão da descoberta eletrônica avançada (prévia) no Microsoft 365.
 ms.openlocfilehash: 2296f4ee1867cacc90eada9e5f12888a8ea0d242
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252461"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Visão geral da descoberta eletrônica avançada (visualização) no Microsoft 365
 
@@ -73,7 +73,7 @@ Ao adicionar um membro a um caso, você tem a opção de colocar uma retenção 
 
 Quando você adiciona um Objecte as fontes de dados do custodial correspondentes a um caso, qualquer item parcialmente indexado de uma fonte de dados do responsáveis é re-indexado (por um processo chamado *indexAção avançada*). Isso permite que o conteúdo do custodial, como imagens, tipos de arquivo não suportados, e outro conteúdo potencialmente não indexado seja totalmente pesquisável quando você executar pesquisas para coletar dados para o caso. Use a guia **processamento** para monitorar o status de erros avançados de indexação e processamento de correção (usando um processo chamado *correção de erro*.) Para obter mais informações, consulte [corrigir erros de processamento em descoberta eletrônica avançada (versão prévia)](processing-data-for-case.md).
 
-## <a name="collecting-case-data"></a>Coletando dados de caso
+## <a name="collecting-case-data"></a>Coletar dados de ocorrência
 
 Use a guia **pesquisas** para criar pesquisas para pesquisar as fontes de dados custodial e não-custodial no local no Office 365 para o conteúdo relevante para o caso. Você pode criar e executar pesquisas baseadas em consulta (usando palavras-chave e condições) para identificar um conjunto de mensagens e documentos de email que são relevantes para o caso e que você deseja revisar e analisar em etapas subsequentes no fluxo de trabalho de descoberta eletrônica. Você pode criar uma ou mais pesquisas associadas à ocorrência. Além disso, você pode usar a ferramenta de pesquisa para visualizar documentos de amostra e exibir estatísticas de pesquisa que podem ajudá-lo a refinar e aprimorar os resultados da pesquisa. Quando você estiver convencido de que os resultados da pesquisa contenham todos os dados relevantes para o caso, adicione os resultados da pesquisa a um conjunto de trabalho para revisão adicional, análise e, se necessário, de remoção. Para obter mais informações, consulte [coletar dados por um caso na descoberta eletrônica avançada (visualização)](collecting-data-for-ediscovery.md).
 

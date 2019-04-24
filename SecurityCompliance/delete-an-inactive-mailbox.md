@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando não for mais necessário preservar o conteúdo de uma caixa de correio inativa do Office 365, você poderá excluir permanentemente a caixa de correio inativa, removendo a isenção. Após a remoção da isenção, a caixa de correio inativa é marcada para exclusão e é excluída permanentemente após ser processada.
 ms.openlocfilehash: f1aa29b0e40d02e4b6450202c0b2a34ae3075677
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257100"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Excluir uma caixa de correio inativa no Office 365
 

@@ -1,5 +1,5 @@
 ---
-title: 'Executar um relatório de grupo de funções de administrador no EOP '
+title: 'Executar um relatório de grupo de função de administrador no EOP '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Quando um administrador adiciona ou remove membros dos grupos de função de administrador, o Microsoft Proteção do Exchange Online (EOP) registra cada ocorrência.
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256179"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>Executar um relatório de grupo de funções de administrador no EOP 
+# <a name="run-an-administrator-role-group-report-in-eop"></a>Executar um relatório de grupo de função de administrador no EOP 
 
  Quando um administrador adiciona ou remove membros dos grupos de função de administrador, o Microsoft Proteção do Exchange Online (EOP) registra cada ocorrência. Quando você executa um relatório de grupo de funções de administrador no Centro de administração do Exchange, as entradas são exibidas como resultados de pesquisa e incluem os grupos de função afetados, quem e quando alterou a associação do grupo de função, e quais atualizações de associação foram feitas. Use esse relatório para monitorar as alterações nas permissões administrativas atribuídas aos usuários da sua organização.
   

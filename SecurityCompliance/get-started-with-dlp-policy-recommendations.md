@@ -1,5 +1,5 @@
 ---
-title: Introdução às recomendações de política de DLP
+title: Introdução às recomendações de política DLP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,13 +12,13 @@ ms.collection:
 localization_priority: Normal
 description: Essa recomendação orientada por informações ajuda sua organização a manter o conteúdo confidencial seguro quando ele é armazenado e compartilhado no Office 365, informando quando há uma lacuna possível na cobertura da política de DLP. Você verá essa recomendação na home page do centro de conformidade de &amp; segurança, se seus documentos contiverem qualquer um dos cinco tipos de informações confidenciais mais comuns, mas não estiverem protegidos por uma política de DLP.
 ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254072"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>Introdução às recomendações de política de DLP
+# <a name="get-started-with-dlp-policy-recommendations"></a>Introdução às recomendações de política DLP
 
 Essa recomendação orientada por informações ajuda sua organização a manter o conteúdo confidencial seguro quando ele é armazenado e compartilhado no Office 365, informando quando há uma lacuna possível na cobertura da política de DLP. Você verá essa recomendação na **Home** Page do centro de conformidade de &amp; segurança, se seus documentos contiverem qualquer um dos cinco tipos de informações confidenciais mais comuns, mas não estiverem protegidos por uma política de prevenção de perda de dados (DLP). 
   

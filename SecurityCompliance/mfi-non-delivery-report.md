@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Os administradores podem aprender sobre a notificação de falha na entrega no painel de fluxo de emails no centro de conformidade do & de segurança.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267124"
 ---
 # <a name="non-delivery-report"></a>Notificação de falha na entrega
 

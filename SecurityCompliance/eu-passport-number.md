@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número do Passport da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
 ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256819"
 ---
 # <a name="eu-passport-number"></a>Número do Passport da UE
 
@@ -23,7 +23,7 @@ Este tópico mostra o que uma política de prevenção de perda de dados (DLP) p
   
 ## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra seguida de um espaço opcional e sete dígitos
   
@@ -68,7 +68,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="belgium"></a>Bélgica 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por seis dígitos sem espaços ou delimitadores
   
@@ -107,7 +107,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="bulgaria"></a>Bulgária
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -146,7 +146,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="croatia"></a>Croácia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -185,7 +185,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra seguida de 6-8 dígitos sem espaços ou delimitadores
   
@@ -224,7 +224,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="czech-republic"></a>República Tcheca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos sem espaços ou delimitadores
   
@@ -263,7 +263,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -302,7 +302,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="estonia"></a>Estônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra seguida por sete dígitos sem espaços ou delimitadores
   
@@ -353,7 +353,7 @@ Para obter detalhes, consulte a seção "número de passaporte da Alemanha" em [
   
 ## <a name="greece"></a>Grécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por sete dígitos sem espaços ou delimitadores
   
@@ -392,7 +392,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por seis ou sete dígitos sem espaços ou delimitadores
   
@@ -431,7 +431,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
@@ -474,7 +474,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="italy"></a>Itália
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
@@ -517,7 +517,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="latvia"></a>Letônia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras ou dígitos seguidos de sete dígitos sem espaços ou delimitadores
   
@@ -560,7 +560,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="lithuania"></a>Lituânia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos ou letras sem espaços ou delimitadores
   
@@ -599,7 +599,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito dígitos ou letras sem espaços ou delimitadores
   
@@ -638,7 +638,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Sete dígitos sem espaços ou delimitadores
   
@@ -677,7 +677,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="netherlands"></a>Países Baixos
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove letras ou dígitos sem espaços ou delimitadores
   
@@ -720,7 +720,7 @@ Para obter detalhes, consulte a seção "número de passaporte da Polônia" em [
   
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma letra seguida de seis dígitos sem espaços ou delimitadores
   
@@ -763,7 +763,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="romania"></a>Romênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Oito ou nove dígitos sem espaços e delimitadores
   
@@ -802,7 +802,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="slovakia"></a>Eslováquia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Um dígito ou letra seguido por sete dígitos sem espaços ou delimitadores
   
@@ -841,7 +841,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="slovenia"></a>Eslovênia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Duas letras seguidas por sete dígitos sem espaços ou delimitadores
   
@@ -886,7 +886,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
    
 ## <a name="spain"></a>Espanha
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de letras e números de oito ou nove caracteres sem espaços ou delimitadores
   

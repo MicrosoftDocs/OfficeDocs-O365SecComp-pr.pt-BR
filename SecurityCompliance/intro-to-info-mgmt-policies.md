@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
-description: Uma política de gerenciamento de informações é um conjunto de regras para um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e controlem coisas como o tempo de retenção de conteúdo ou as ações que os usuários podem realizar com esse conteúdo. As políticas de gerenciamento de informações podem ajudar as organizações a cumprir normas legais ou governamentais, ou podem simplesmente impor processos comerciais internos.
+description: Uma política de gerenciamento de informações é um conjunto de regras aplicáveis a um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e rastreiem o tempo em que um documento é retido ou quais ações os usuários podem realizar com esse conteúdo, dentre outras coisas. Essas políticas podem ajudar as organizações a cumprir regulamentações legais ou governamentais, ou podem simplesmente impor processos comerciais internos.
 ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254214"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introdução às políticas de gerenciamento de informações
 
-Uma política de gerenciamento de informações é um conjunto de regras para um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e controlem coisas como o tempo de retenção de conteúdo ou as ações que os usuários podem realizar com esse conteúdo. As políticas de gerenciamento de informações podem ajudar as organizações a cumprir normas legais ou governamentais, ou podem simplesmente impor processos comerciais internos. 
+Uma política de gerenciamento de informações é um conjunto de regras aplicáveis a um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e rastreiem o tempo em que um documento é retido ou quais ações os usuários podem realizar com esse conteúdo, dentre outras coisas. Essas políticas podem ajudar as organizações a cumprir regulamentações legais ou governamentais, ou podem simplesmente impor processos comerciais internos. 
   
 Por exemplo, uma organização que deve seguir normas governamentais que exijam que eles demonstrem "controles adequados" de seus demonstrativos financeiros podem criar uma ou mais políticas de gerenciamento de informações que auditam ações específicas na criação e processo de aprovação para todos os documentos relacionados a arquivamentos financeiros.
   
@@ -43,12 +43,12 @@ O recurso de política de auditoria ajuda as organizações a analisar como seus
   
 O recurso de política de expiração ajuda as organizações a excluir ou remover conteúdo desatualizado de seus sites de forma consistente e rastreável. Isso ajuda você a gerenciar o custo e o risco associados à retenção de conteúdo desatualizado. Você pode configurar uma política de expiração para especificar que determinados tipos de conteúdo expirem em uma determinada data ou dentro de um período de tempo após o documento ter sido criado ou modificado pela última vez.
   
-As organizações também podem criar e implantar recursos de política personalizada para atender a necessidades específicas. Por exemplo, uma organização de fabricação pode querer definir uma política de gerenciamento de informações para todos os documentos de especificação de design de produto de rascunho que proíbem os usuários de imprimir cópias desses documentos em impressoras não seguras. Para definir esse tipo de política de gerenciamento de informações, você pode criar e implantar um recurso de política de restrição de impressão que pode ser adicionado à política de gerenciamento de informações relevantes para o tipo de conteúdo de especificação de design de produto.
+As organizações também podem criar e implantar recursos de política personalizados para atender a necessidades específicas. Por exemplo, uma organização de fabricação pode querer definir uma política de gerenciamento de informações para todos os documentos de especificação de design de produto de rascunho que proíbem os usuários de imprimir cópias desses documentos em impressoras não seguras. Para definir esse tipo de política de gerenciamento de informações, você pode criar e implantar um recurso de política de restrição de impressão que pode ser adicionado à política de gerenciamento de informações relevantes para o tipo de conteúdo de especificação de design de produto.
   
 ## <a name="locations-to-use-an-information-management-policy"></a>Locais para usar uma política de gerenciamento de informações
 <a name="__toc340213528"> </a>
 
-Para implementar uma política de gerenciamento de informações, você deve adicioná-la a uma lista, biblioteca ou tipo de conteúdo em um site. O local em que você cria ou adiciona uma política de gerenciamento de informações afeta o quão amplamente a política se aplica ou como ela pode ser usada de maneira ampla. É possível:
+Para implementar uma política de gerenciamento de informações, você deve adicioná-la a uma lista, biblioteca ou tipo de conteúdo em um site. O local em que você cria ou adiciona uma política de gerenciamento de informações afeta o quão amplamente a política se aplica ou como ela pode ser usada de maneira ampla. Você pode:
   
  **Criar uma política de conjunto de sites e, em seguida, adicionar essa política a um tipo de conteúdo, lista ou biblioteca** Você pode criar uma política de conjunto de sites na lista de políticas no site de nível superior de um conjunto de sites. Depois de criar uma política de conjunto de sites, você pode exportá-la para que os administradores de outros conjuntos de sites possam importá-lo para a lista de políticas. A criação de uma política de conjunto de sites exportáveis permite padronizar as políticas de gerenciamento de informações nos sites da sua organização. 
   

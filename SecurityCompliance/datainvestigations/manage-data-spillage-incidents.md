@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade & de segurança para gerenciar um incidente de derramamento de dados.
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258819"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de derramamento de dados no Microsoft 365
 
@@ -111,8 +111,8 @@ Na investigação, vá para a guia **evidência** e clique no conjunto de evidê
 
 Para agrupar documentos e obter mais assistência para revisão, clique em **gerenciar evidência**. No bloco de **análise** , clique em **analisar**. Isso executará análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de tema. Para obter mais informações, consulte:
 
-- [Executar a análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
-- [Detecção próxima duplicação](near-duplicates.md)
+- [Executar análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
+- [Detecção de duplicata próxima](near-duplicates.md)
 - [Conversa de email](email-threading.md)
 - [Temas](themes.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Relatório de mensagens automaticamente encaminhadas
+title: Relatório de encaminhamento automático de mensagens
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Os administradores podem saber mais sobre o relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
 ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252323"
 ---
-# <a name="auto-forwarded-messages-report"></a>Relatório de mensagens automaticamente encaminhadas
+# <a name="auto-forwarded-messages-report"></a>Relatório de encaminhamento automático de mensagens
 
 O relatório de **mensagens automaticamente** no painel de fluxo de emails exibe informações sobre as mensagens que são automaticamente encaminhadas da sua organização do Office 365 para destinatários em domínios externos.
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: A filtragem de spam de saída está sempre habilitada se você utilizar o serviço de envio de email de saída, protegendo assim as organizações que utilizam o serviço e seus destinatários desejados.
 ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258399"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar a política de spam de saída
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240946"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gerenciar isenções na descoberta eletrônica avançada (versão prévia)
 
@@ -56,7 +56,7 @@ Para criar uma retenção para um caso de descoberta eletrônica avançada (visu
   
 4. Na guia **isenções** , clique em **criar**.
   
-5. Na página **nomear sua suspensão** , dê um nome à isenção. O nome da retenção deve ser exclusivo em sua organização.
+5. Na página **nomear sua suspensão** , dê um nome à isenção. O nome da retenção deve ser exclusivo na sua organização.
  
 6. Opcion Na caixa **Descrição** , adicione uma descrição da isenção.
   
@@ -64,19 +64,19 @@ Para criar uma retenção para um caso de descoberta eletrônica avançada (visu
   
 8. Escolha os locais de conteúdo que você deseja colocar em espera. Você pode colocar caixas de correio, sites e pastas públicas em espera.
 
-   a. **email do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente para especificar as caixas de correio a serem colocadas em espera. Use a caixa de pesquisa para localizar caixas de correio de usuários e grupos de distribuição (para colocar uma retenção nas caixas de correio dos membros do grupo) para colocar em espera. Você também pode colocar uma retenção na caixa de correio associada para um grupo do Office 365 ou uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
+   a. **Email do Exchange** -clique em **escolher usuários, grupos ou equipes** e, em seguida, clique em **escolher usuários, grupos ou equipes** novamente para especificar as caixas de correio a serem colocadas em espera. Use a caixa de pesquisa para localizar caixas de correio de usuários e grupos de distribuição (para colocar uma retenção nas caixas de correio dos membros do grupo) para colocar em espera. Você também pode colocar uma retenção na caixa de correio associada para um grupo do Office 365 ou uma equipe da Microsoft. Marque a caixa de seleção usuário, grupo, equipe, clique em **escolher**e em **concluído**.
  
     > [!NOTE]
-    > Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio que serão colocadas em espera, o seletor de caixa de correio exibido estará vazio. Isso é projetado para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa.
+    > Ao clicar em **escolher usuários, grupos ou equipes** para especificar as caixas de correio que serão colocadas em espera, o seletor de caixa de correio exibido estará vazio. Isso foi desenvolvido para melhorar o desempenho. Para adicionar pessoas a esta lista, digite um nome (no mínimo 3 caracteres) na caixa de pesquisa.
 
-    b. **sites do SharePoint** -clique em **escolher sites** e clique em **escolher sites** novamente para especificar o SharePoint e os sites do onedrive for Business para colocar em espera. Digite a URL de cada site que você deseja colocar em espera. Você também pode adicionar a URL do site do SharePoint para um grupo do Office 365 ou uma equipe da Microsoft. Clique em **escolher**e em **concluído**.
+    b. **Sites do SharePoint** -clique em **escolher sites** e, em seguida, clique em **escolher sites** novamente para especificar o SharePoint e os sites do onedrive for Business para colocar em espera. Digite a URL de cada site que você deseja colocar em retenção. Você também pode adicionar a URL do site do SharePoint para um grupo do Office 365 ou uma equipe da Microsoft. Clique em **escolher**e em **concluído**.
     
      Consulte a seção **perguntas frequentes** para obter dicas sobre como colocar grupos do Office 365 e o Microsoft Teams em espera.
 
     > [!NOTE]
     > No caso raro que o UPN (nome principal de usuário) de uma pessoa tenha mudado, a URL de sua conta do OneDrive também será alterada para incorporar o novo UPN. Se isso acontecer, você terá que modificar a retenção adicionando a nova URL do OneDrive do usuário e removendo a antiga.
 
-     c. **pastas públicas do Exchange** -mova o comutador alternar para a posição All para colocar todas as pastas públicas em sua organização do Exchange Online em espera. Observe que você não pode escolher pastas públicas específicas para colocar em espera. Deixe a opção de alternância definida como **nenhuma** se você não quiser colocar uma retenção em pastas públicas.
+     c. **Pastas públicas do Exchange** -mova o comutador alternar para a posição All para colocar todas as pastas públicas em sua organização do Exchange Online em espera. Observe que você não pode escolher pastas públicas específicas para colocar em espera. Deixe a opção de alternância definida como **nenhuma** se você não quiser colocar uma retenção em pastas públicas.
 
 9. Quando você terminar de adicionar locais de conteúdo à isenção, clique em **Avançar**.
   
@@ -84,7 +84,7 @@ Para criar uma retenção para um caso de descoberta eletrônica avançada (visu
     
     - Na caixa em **palavras-chave**, digite uma consulta de pesquisa na caixa para que apenas o conteúdo que atende aos critérios de pesquisa seja colocado em espera. Você pode especificar palavras-chave, propriedades de mensagem ou propriedades do documento, como nomes de arquivo. Você também pode usar consultas mais complexas que usam um operador Boolean, como e, ou ou não. Se você deixar a caixa de palavras-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será colocado em espera.
 
-    - Clique em **Adicionar** condições para adicionar uma ou mais condições para restringir a consulta de pesquisa para a isenção. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você cria a retenção. Por exemplo, você pode especificar um intervalo de datas para que os documentos de email ou de site criados dentro do intervalo de datas sejam colocados em espera. Uma condição é conectada logicamente à consulta de palavra-chave (especificada na caixa palavra-chave) pelo operador AND. Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser colocada em espera.
+    - Clique em **Adicionar** condições para adicionar uma ou mais condições para restringir a consulta de pesquisa para a isenção. Cada condição adiciona uma cláusula à consulta de pesquisa KQL que é criada e executada quando você cria a retenção. Por exemplo, você pode especificar um intervalo de datas para que os documentos de email ou de site criados dentro do intervalo de datas sejam colocados em espera. Uma condição está logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) pelo operador AND. Isso significa que os itens precisam satisfazer a consulta de palavra-chave e a condição a ser colocada em espera.
 
      Para obter mais informações sobre como criar uma consulta de pesquisa e usar condições, consulte [keyword queries and Search Conditions for Content Search](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 

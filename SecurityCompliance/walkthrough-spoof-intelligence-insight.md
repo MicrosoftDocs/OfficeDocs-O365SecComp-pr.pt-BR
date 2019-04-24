@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Veja como funciona a nova compreensão de inteligência de falsificação.
 ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267239"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Passo a passo: informações sobre spoof Intelligence
 
@@ -59,7 +59,7 @@ De qualquer forma, os domínios falsificados exibidos na percepção são separa
   
 Um *par de domínio* é uma combinação do endereço "de:" e da infraestrutura de envio. 
   
-- O endereço "de" é o endereço exibido como o endereço de pelo seu aplicativo de email. Esse endereço identifica o autor do email. Ou seja, a caixa de correio da pessoa ou do sistema responsável por gravar a mensagem. Isso às vezes é chamado de endereço 5322. from.
+- O endereço "de" é o endereço exibido como o endereço de pelo seu aplicativo de email. Esse endereço identifica o autor do email. Ou seja, a caixa de correio da pessoa ou sistema responsável por escrever a mensagem. Isso também é conhecido como endereço 5322.From.
     
 - A infraestrutura de envio, ou remetente, é o domínio organizacional do registro PTR do endereço IP de envio. Se o endereço IP de envio não tiver um registro PTR, o remetente será identificado pelo IP de envio com a máscara de sub-rede 255.255.255.0 em notação CIDR (/24). Por exemplo, se o endereço IP for 192.168.100.100, o endereço IP completo do remetente será 192.168.100.100/24.
     

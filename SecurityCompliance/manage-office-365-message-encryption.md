@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Depois de concluir a configuração do Office 365 Message Encryption (OME), você pode personalizar a configuração da implantação de várias maneiras. Por exemplo, você pode configurar se deseja habilitar códigos de passagem única, exibir o botão proteger no Outlook na Web e muito mais. As tarefas deste artigo descrevem como.
 ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259809"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gerenciar a Criptografia de Mensagens do Office 365
 
@@ -109,7 +109,7 @@ Por padrão, o botão **proteger** no Outlook na Web não é habilitado quando v
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Habilitar a descriptografia do lado do serviço de mensagens de email para usuários do aplicativo iOS mail
 
-O aplicativo de email iOS não pode descriptografar mensagens protegidas com a criptografia de mensagem do Office 365. Como administrador do Office 365, você pode aplicar a descriptografia do lado do serviço para mensagens entregues ao aplicativo de email iOS. Quando você optar por fazer isso, o serviço enviará uma cópia descriptografada da mensagem para o dispositivo iOS. A mensagem é armazenada descriptografada no dispositivo cliente. A mensagem também mantém informações sobre direitos de uso, mesmo que o aplicativo de email iOS não aplique direitos de uso do lado do cliente ao usuário. Isso significa que o usuário pode copiar ou imprimir a mensagem, mesmo que não tenha originalmente os direitos para fazer isso. No enTanto, se o usuário tentar concluir uma ação que requer o servidor de email do Office 365, como encaminhar a mensagem, o servidor não permitirá a ação se o usuário não tiver originalmente o direito de uso para fazer isso. No enTanto, os usuários finais podem trabalhar para não enCaminhar a restrição de uso ao encaminhar a mensagem de uma conta diferente em seu aplicativo de email iOS. independentemente de você configurar a descriptografia do lado do serviço de email, todos os anexos para email criptografado e protegido por direitos Não pode ser exibido no aplicativo de email do iOS.
+O aplicativo de email iOS não pode descriptografar mensagens protegidas com a criptografia de mensagem do Office 365. Como administrador do Office 365, você pode aplicar a descriptografia do lado do serviço para mensagens entregues ao aplicativo de email iOS. Quando você optar por fazer isso, o serviço enviará uma cópia descriptografada da mensagem para o dispositivo iOS. A mensagem é armazenada descriptografada no dispositivo cliente. A mensagem também mantém informações sobre direitos de uso, mesmo que o aplicativo de email iOS não aplique direitos de uso do lado do cliente ao usuário. Isso significa que o usuário pode copiar ou imprimir a mensagem, mesmo que não tenha originalmente os direitos para fazer isso. No enTanto, se o usuário tentar concluir uma ação que requer o servidor de email do Office 365, como encaminhar a mensagem, o servidor não permitirá a ação se o usuário não tiver originalmente o direito de uso para fazer isso. No enTanto, os usuários finais podem trabalhar em torno não para enCaminhar a restrição de uso ao encaminhar a mensagem de uma conta diferente no aplicativo de email do iOS. Independentemente de você configurar a descriptografia do lado do serviço de email, todos os anexos a mensagens criptografadas e de direitos protegidos não podem ser exibidos no aplicativo de email do iOS.
   
 Se você optar por não permitir que as mensagens descriptografadas sejam enviadas aos usuários do aplicativo de email iOS, os usuários receberão uma mensagem afirmando que eles não têm direitos para exibir a mensagem. Por padrão, a descriptografia do lado do serviço de mensagens de email não está habilitada.
   

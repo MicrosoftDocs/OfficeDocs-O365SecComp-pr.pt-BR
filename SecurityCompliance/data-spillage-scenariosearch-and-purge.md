@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Usar as ferramentas de descoberta eletrônica e de pesquisa do Office 365 para gerenciar e responder a um incidente de derramamento de dados em sua organização.
 ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258914"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de soluções de descoberta eletrônica: cenário de derramamento de dados-pesquisa e limpeza
 
@@ -216,9 +216,10 @@ Se as palavras-chave na consulta de pesquisa que você criou e usou na etapa 3 c
 
 Você pode pesquisar o log de auditoria do Office 365 para as atividades de descoberta eletrônica que foram realizadas durante a investigação. Você também pode pesquisar o log de auditoria para retornar os registros de auditoria que foram criados quando você executou o comando **Search-Mailbox-DeleteContent** para excluir os dados derramados. Para obter mais informações, consulte:
 
-- [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md)
+- 
+  [Pesquisas o log de auditoria](search-the-audit-log-in-security-and-compliance.md)
 
-- [Pesquisar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Procurar atividades de descoberta eletrônica no log de auditoria](search-for-ediscovery-activities-in-the-audit-log.md)
 
 - Consulte a seção "atividades auditadas-log de auditoria do administrador do Exchange" em [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obter orientação sobre como pesquisar registros de auditoria relacionados a cmdlets em execução no Exchange Online.
   

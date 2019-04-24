@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Saiba como baixar um ou mais relatórios existentes no centro de conformidade &amp; de segurança.
 ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256919"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Baixar relatórios existentes no centro de &amp; conformidade de segurança
 

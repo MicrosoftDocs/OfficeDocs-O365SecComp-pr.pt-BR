@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Com frequência, as organizações estão sujeitas a regulamentações de conformidade, legais ou outras que exigem que elas retenham documentos por um determinado período. No entanto, reter os documentos por mais tempo do que o necessário poderá expor a organização a riscos legais. Por esse motivo, sua organização pode ter criado uma política de exclusão de documentos para seu site. Por exemplo, pode ser necessário que documentos comerciais gerais sejam excluídos cinco anos após sua criação.
 ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243257"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Aplicar ou remover uma política de exclusão de documentos de um site
 
@@ -97,7 +97,7 @@ Um site pode usar outras políticas de retenção e exclusão de conteúdo:
     
 - Políticas de gerenciamento de informações para uma lista ou biblioteca.
     
-Se você aplicar uma política de exclusão de documentos a um site que já usa políticas de tipo de conteúdo ou políticas de gerenciamento de informações para uma lista ou biblioteca, essas políticas serão ignoradas enquanto a política de exclusão de documentos estiver em vigor. Se outras políticas forem ignoradas, você verá a mensagem "o conteúdo deste site usa políticas de exclusão de documentos".
+Se você aplicar uma política de exclusão de documentos a um site que já use políticas de tipo de conteúdo ou políticas de gerenciamento de informações para uma lista ou biblioteca, essas políticas serão ignoradas enquanto a política de exclusão de documentos estiver em vigor. Se outras políticas forem ignoradas, você verá a mensagem "o conteúdo deste site usa políticas de exclusão de documentos".
   
 Isso significa que você deve planejar para que um site use somente políticas destinadas a conteúdo estruturado (políticas de gerenciamento de informações e políticas de tipo de conteúdo) ou a conteúdo não estruturado (políticas de exclusão de documentos), e não ambas. Caso você recuse uma política de exclusão de documentos, o aviso não será exibido e outros tipos de políticas continuarão a funcionar.
   
@@ -105,7 +105,7 @@ As políticas de site não são afetadas por políticas de exclusão de document
   
 ### <a name="determine-if-content-type-policies-are-being-ignored"></a>Determinar se as políticas de tipo de conteúdo estão sendo ignoradas
 
-Se o seu site estava usando políticas de tipo de conteúdo e agora você vê esta mensagem, essas políticas não estão mais em vigor. Para restaurar as políticas de tipo de conteúdo, você pode remover a política de exclusão de documentos do seu site, conforme descrito anteriormente, se houver uma opção de recusa disponível. Se não houver opção para recusar, a política de exclusão de documentos será obrigatória e você precisará entrar em contato com o responsável pela conformidade em sua organização.
+Se o seu site estava usando políticas de tipo de conteúdo e agora você vê essa mensagem, essas políticas não estarão mais em vigor. Para restaurar as políticas de tipo de conteúdo, você pode remover a política de exclusão de documentos do seu site, conforme descrito anteriormente, se houver uma opção de recusa disponível. Se não houver opção para recusar, a política de exclusão de documentos será obrigatória e você precisará entrar em contato com o responsável pela conformidade em sua organização.
   
 1. No canto superior direito, escolha **configurações** [ícone de engrenagem] \> **configurações de site**.
     
@@ -115,7 +115,7 @@ Se o seu site estava usando políticas de tipo de conteúdo e agora você vê es
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Determinar se as políticas de gerenciamento de informações estão sendo ignoradas
 
-Se seu site estava usando políticas de gerenciamento de informações e você agora vê esta mensagem, essas políticas não estão mais em vigor. Para restaurar as políticas de gerenciamento de informações, você pode remover a política de exclusão de documentos do seu site, conforme descrito anteriormente, se houver uma opção de recusa disponível. Se não houver opção para recusar, a política de exclusão de documentos será obrigatória e você precisará entrar em contato com o responsável pela conformidade em sua organização.
+Se o seu site estava usando políticas de gerenciamento de informações e agora você vê essa mensagem, essas políticas não estarão mais em vigor. Para restaurar as políticas de gerenciamento de informações, você pode remover a política de exclusão de documentos do seu site, conforme descrito anteriormente, se houver uma opção de recusa disponível. Se não houver opção para recusar, a política de exclusão de documentos será obrigatória e você precisará entrar em contato com o responsável pela conformidade em sua organização.
   
 - Para uma lista ou biblioteca, nas **configurações** \> da \> biblioteca de \> guias da **biblioteca** de faixa de **opções em configurações de política de gerenciamento de informações** **de gerenciamento** \> e permissões.
     
@@ -123,7 +123,8 @@ Se seu site estava usando políticas de gerenciamento de informações e você a
   
 ## <a name="see-also"></a>Confira também
 
-[Visão geral das políticas de exclusão de documentos](document-deletion-policies.md)
+
+  [Visão geral das políticas de exclusão de documento](document-deletion-policies.md)
   
 [Criar uma política de exclusão de documentos](create-a-document-deletion-policy.md)
 

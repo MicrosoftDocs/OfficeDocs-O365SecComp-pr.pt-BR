@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Além da central de confiabilidade do Office 365, que fornece informações de segurança, privacidade e conformidade do Office 365, você pode querer saber como o Office 365 ajuda a proteger os segredos que você fornece em seus datacenters. Usamos uma tecnologia chamada DKM (Distributed Key Manager).
 ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255479"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Como o Exchange Online protege seus segredos de email
 
@@ -34,7 +34,6 @@ O Distributed Key Manager (DKM) é uma funcionalidade no lado do cliente que usa
 Para fins de depuração, solução de problemas ou auditoria, um administrador de datacenter deve solicitar acesso elevado para obter credenciais temporárias que fazem parte do grupo de segurança. Esse processo requer vários níveis de aprovação legal. Se o acesso for concedido, toda as atividades são registradas e auditadas. Além disso, o acesso é concedido apenas por um tempo definido, expirando automaticamente após esse período.
   
 Para maior proteção, a tecnologia do DKM inclui a sobreposição de chave e o arquivamento automatizados. Isso também garante que você pode continuar acessando seu conteúdo antigo sem depender da mesma chave indefinidamente.
-
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>Em que circunstâncias o Exchange Online usa o DKM?
 
@@ -42,7 +41,7 @@ A Microsoft usa o DKM para criptografar seus segredos nos datacenters do Exchang
   
 - Credenciais de conta de email para contas conectadas. As contas conectadas são as contas de email de terceiros, como Hotmail, Gmail e Yahoo!.
     
-- Chaves raiz do RMS (serviço de gerenciamento de direitos). São as chaves de cliente que são importadas do Azure RMS ou de implantações do RMS de serviços de domínio do Active Directory no local que são usadas para criptografar e descriptografar emails com o RMS ou o OME (criptografia de mensagem do Office 365).
+- Chaves-raiz do Rights Management Service (RMS). São as chaves de cliente que são importadas do Azure RMS ou de implantações do RMS de serviços de domínio do Active Directory no local que são usadas para criptografar e descriptografar emails com o RMS ou o OME (criptografia de mensagem do Office 365).
     
 ## <a name="related-topics"></a>Tópicos relacionados
 

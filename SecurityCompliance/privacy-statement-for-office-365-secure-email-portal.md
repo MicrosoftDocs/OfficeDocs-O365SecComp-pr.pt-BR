@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Última atualização: maio de 2017'
 ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265263"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Declaração de privacidade do portal de email seguro do Office 365
 
@@ -37,7 +37,7 @@ Durante o processo de descriptografia, o email criptografado que você recebe n�
   
 O novo portal de recursos do OME pode, em alguns casos, coletar pontos de dados sobre o uso e o desempenho dos novos recursos do OME (por exemplo, a frequência com que as mensagens criptografadas são exibidas, o navegador ou o aplicativo usado e todos os erros encontrados), que podem ser analisados em agregação para fins de melhorar a qualidade, a segurança e a integridade desse e de outros aplicativos, produtos ou serviços da Microsoft. Essas informações não são usadas para identificar, contatar ou direcionar anúncios para você.
   
-## <a name="for-more-information"></a>Para Obter Mais Informações
+## <a name="for-more-information"></a>Para obter mais informações
 
 Envie consultas diretas relacionadas à Microsoft por meio do [omepriv@microsoft.com](mailto:omepriv@microsoft.com)ou por email no seguinte endereço:
   
@@ -51,6 +51,6 @@ Redmond, Washington 98052 EUA
   
 ## <a name="changes"></a>Altera
 
-Se publicarmos as alterações nessa instrução, revisaremos os dados de "última atualização" na parte superior da instrução. Consulte a organização que fornece acesso aos seus serviços para saber mais sobre as alterações nas práticas de privacidade.
+Se publicarmos as alterações nessa instrução, revisaremos os dados de "última atualização" na parte superior da instrução. Consulte a organização que fornece a você acesso aos serviços para saber mais sobre as alterações das práticas de privacidade.
   
 

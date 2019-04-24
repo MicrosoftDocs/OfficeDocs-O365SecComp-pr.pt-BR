@@ -1,5 +1,5 @@
 ---
-title: Controlar seus dados no Office 365 usando a Chave do cliente
+title: Controlar seus dados no Office 365 usando a Chave do Cliente
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Saiba como configurar a chave do cliente para o Office 365 para Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Com a chave do cliente, você controla as chaves de criptografia da sua organização e, em seguida, configura o Office 365 para usá-las para criptografar seus dados em repouso nos datacenters da Microsoft.
 ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258349"
 ---
-# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar seus dados no Office 365 usando a Chave do cliente
+# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar seus dados no Office 365 usando a Chave do Cliente
 
 Com a chave do cliente, você controla as chaves de criptografia da sua organização e, em seguida, configura o Office 365 para usá-las para criptografar seus dados em repouso nos data centers da Microsoft. Em outras palavras, a chave do cliente permite que os clientes adicionem uma camada de criptografia que pertença a eles, com suas chaves. Os dados em repouso incluem dados do Exchange Online e do Skype for Business que são armazenados em caixas de correio e arquivos armazenados no SharePoint Online e no OneDrive for Business.
   
@@ -103,7 +103,7 @@ Conclua essas tarefas no Azure Key Vault para configurar a chave do cliente para
 Duas assinaturas do Azure são necessárias para a chave do cliente. Como prática recomendada, a Microsoft recomenda que você crie novas assinaturas do Azure para uso com a chave do cliente. Chaves do Azure Key Vault só podem ser autorizadas para aplicativos no mesmo locatário do Azure Active Directory (AAD), você deve criar as novas assinaturas usando o mesmo locatário do Azure AD usado com sua organização do Office 365, onde o DEPs será atribuído. Por exemplo, usando sua conta corporativa ou de estudante que tenha privilégios de administrador global em sua organização do Office 365. Para obter etapas detalhadas, consulte [inscrever-se no Azure como uma organização](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> A chave do cliente requer duas chaves para cada DEP (política de criptografia de dados). Para conseguir isso, você deve criar duas assinaturas do Azure. Como prática recomendada, a Microsoft recomenda que você tenha Membros separados da sua organização para configurar uma chave em cada assinatura. Além disso, essas assinaturas do Azure devem ser usadas apenas para administrar chaves de criptografia para o Office 365. Isso protegerá a sua organização caso um de seus operadores acidentalmente, intencionalmente ou exclua inadvertidamente as chaves para as quais são responsáveis.<br/> Recomendamos que você configure novas assinaturas do Azure que são usadas unicamente para o gerenciamento de recursos do Azure Key Vault para uso com a chave do cliente. Não há um limite prático para o número de assinaturas do Azure que você pode criar para sua organização. Seguir estas práticas recomendadas minimizará o impacto do erro humano enquanto ajuda a gerenciar os recursos usados pela chave do cliente. 
+> A chave do cliente requer duas chaves para cada DEP (política de criptografia de dados). Para conseguir isso, você deve criar duas assinaturas do Azure. Como prática recomendada, a Microsoft recomenda que você tenha Membros separados da sua organização para configurar uma chave em cada assinatura. Além disso, essas assinaturas do Azure devem ser usadas apenas para administrar chaves de criptografia para o Office 365. Isso protegerá a sua organização caso um de seus operadores acidentalmente, intencionalmente ou exclua inadvertidamente as chaves para as quais são responsáveis. <br/> Recomendamos que você configure novas assinaturas do Azure que são usadas unicamente para o gerenciamento de recursos do Azure Key Vault para uso com a chave do cliente. Não há um limite prático para o número de assinaturas do Azure que você pode criar para sua organização. Seguir estas práticas recomendadas minimizará o impacto do erro humano enquanto ajuda a gerenciar os recursos usados pela chave do cliente. 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Enviar uma solicitação para ativar a chave do cliente para o Office 365
 <a name="FastTrack"> </a>
@@ -290,7 +290,7 @@ Em que:
   
 - Se você pretende proteger a chave com um HSM, certifique-se de especificar o **HSM** como o valor do parâmetro _Destination_ , caso contrário, especifique **software**.
     
-Por exemplo,
+For example,
   
 ```
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
@@ -581,7 +581,7 @@ Se já existir uma chave com o mesmo nome no cofre de chaves, a operação de re
 As chaves sem interrupção não são exigidas pelo Azure Key Vault ou pela chave do cliente. Além disso, as chaves protegidas com um HSM são praticamente impossíveis de ser comprometidas. Mesmo que uma chave raiz estivesse na posse de um ator mal-intencionado, não há meios viáveis de usá-lo para descriptografar dados, já que apenas o código do Office 365 sabe como usá-lo. No enTanto, a chave do cliente oferece suporte à substituição de uma chave.
   
 > [!CAUTION]
-> Apenas rolo uma chave de criptografia que você usa com a chave do cliente quando existe uma razão técnica clara ou um requisito de conformidade determina que você precisa rolar a chave. Além disso, não exclua chaves que estejam associadas a políticas. Ao rolar suas chaves, haverá conteúdo criptografado com as teclas anteriores. Por exemplo, enquanto as caixas de correio ativas forem criptografadas freqüentemente, inativas, desconectadas e desativadas, as caixas de correio ainda poderão ser criptografadas com as teclas anteriores. O SharePoint Online realiza o backup de conteúdo para fins de restauração e recuperação, para que ainda possa haver conteúdo arquivado usando chaves antigas.<br/> Para garantir a segurança de seus dados, o SharePoint Online permitirá que não haja mais de uma operação de registro de chave em andamento por vez. Se quiser rolar as duas chaves em um cofre de chaves, você precisará aguardar a conclusão completa da primeira operação do rolo de chave. Nossa recomendação é escalonar as operações de seu rolo principal em intervalos diferentes, para que isso não seja um problema. 
+> Apenas rolo uma chave de criptografia que você usa com a chave do cliente quando existe uma razão técnica clara ou um requisito de conformidade determina que você precisa rolar a chave. Além disso, não exclua chaves que estejam associadas a políticas. Ao rolar suas chaves, haverá conteúdo criptografado com as teclas anteriores. Por exemplo, enquanto as caixas de correio ativas forem criptografadas freqüentemente, inativas, desconectadas e desativadas, as caixas de correio ainda poderão ser criptografadas com as teclas anteriores. O SharePoint Online realiza o backup de conteúdo para fins de restauração e recuperação, para que ainda possa haver conteúdo arquivado usando chaves antigas. <br/> Para garantir a segurança de seus dados, o SharePoint Online permitirá que não haja mais de uma operação de registro de chave em andamento por vez. Se quiser rolar as duas chaves em um cofre de chaves, você precisará aguardar a conclusão completa da primeira operação do rolo de chave. Nossa recomendação é escalonar as operações de seu rolo principal em intervalos diferentes, para que isso não seja um problema. 
   
 Ao lançar uma chave, você está solicitando uma nova versão de uma chave existente. Para solicitar uma nova versão de uma chave existente, use o mesmo cmdlet, [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), com a mesma sintaxe que você usou para criar a chave no primeiro lugar.
   

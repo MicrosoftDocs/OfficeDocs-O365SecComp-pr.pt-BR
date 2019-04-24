@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o número de segurança social da UE ou o tipo de informação confidencial de ID equivalente. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
 ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255549"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de seguro social da UE ou ID equivalente
 
@@ -23,7 +23,7 @@ Este tópico mostra o que uma política de prevenção de perda de dados (DLP) p
   
 ## <a name="austria"></a>Áustria 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 10 dígitos no formato especificado
   
@@ -98,7 +98,7 @@ versicherungsnummer
   
 ## <a name="belgium"></a>Bélgica 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos sem espaços ou delimitadores
   
@@ -175,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>Croácia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 11 dígitos sem espaços e delimitadores
   
@@ -250,7 +250,7 @@ Osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>República Tcheca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos e uma barra invertida no padrão especificado
   
@@ -327,7 +327,7 @@ RODNE cislo
   
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Dez dígitos e um hífen no padrão especificado
   
@@ -398,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>Finlândia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Uma combinação de 11 caracteres no formato especificado
   
@@ -509,7 +509,7 @@ Para obter detalhes, consulte a seção "cartão de ID nacional da Grécia" em [
   
 ## <a name="hungary"></a>Hungria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 Nove dígitos sem espaços e delimitadores
   
@@ -594,7 +594,7 @@ Para obter detalhes, consulte a seção "número de seguridade social da Espanha
   
 ## <a name="sweden"></a>Suécia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formatar
 
 12 dígitos sem espaços e delimitadores
   
