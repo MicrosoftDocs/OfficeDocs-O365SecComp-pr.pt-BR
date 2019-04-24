@@ -12,11 +12,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Os funcionários de TI em sua organização lidam com vários tipos de informações confidenciais em um dia comum. A Impressão Digital de Documento facilita a proteção dessas informações identificando formas padrão usadas em sua organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
 ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256890"
 ---
 # <a name="document-fingerprinting"></a>Impressão Digital de Documento
 
@@ -50,7 +50,7 @@ O modelo de patente contém os campos em branco "título da patente", "inVentrs"
 
 Por exemplo, você pode querer configurar uma política de DLP que impede que funcionários regulares enviem mensagens de saída contendo patentes. A DLP usará a impressão digital de patente para detectar patentes e bloquear esses emails. Como alternativa, você pode querer permitir que seu departamento jurídico seja capaz de enviar patentes para outras organizações, pois tem uma necessidade comercial para fazê-lo. Você pode permitir que departamentos específicos enviem informações confidenciais criando exceções para esses departamentos em sua política de DLP ou pode permitir que eles substituam uma dica de política com uma justificativa de negócios.
   
-### <a name="supported-file-types"></a>Tipos de arquivo com suporte
+### <a name="supported-file-types"></a>Tipos de arquivo compatíveis
 
 A impressão digital de documento oferece suporte aos mesmos tipos de arquivo suportados nas regras de fluxo de emails (também conhecidas como regras de transporte). Para obter uma lista de tipos de arquivo com suporte, confira [tipos de arquivo com suporte para inspeção de conteúdo de regra de fluxo de email](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Uma observação rápida sobre os tipos de arquivo: nem as regras de fluxo de emails e a impressão digital de documentos dão suporte ao tipo de arquivo. dotx, que pode ser confuso porque é um arquivo de modelo no Word. Quando você vir a palavra "modelo" neste e em outros tópicos sobre Impressão Digital de Documento, ela se referirá a um documento já estabelecido como um formulário padrão, e não ao tipo de arquivo de modelo.
   

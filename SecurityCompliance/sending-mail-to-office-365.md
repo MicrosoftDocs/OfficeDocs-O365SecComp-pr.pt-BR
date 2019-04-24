@@ -1,5 +1,5 @@
 ---
-title: Envio de email para o Office 365
+title: Enviar email para o Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Estes artigos ajudam os remetentes externos a melhorar sua reputação e aumentar a capacidade de entregar emails aos usuários no Office 365. Eles também fornecem algumas informações sobre como é possível relatar lixo eletrônico e tentativas de phishing, mesmo que você não seja um usuário do Office 365.
 ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260909"
 ---
-# <a name="sending-mail-to-office-365"></a>Envio de email para o Office 365
+# <a name="sending-mail-to-office-365"></a>Enviar email para o Office 365
 
 Estes artigos ajudam os remetentes externos a melhorar sua reputação e aumentar a capacidade de entregar emails aos usuários no Office 365. Eles também fornecem algumas informações sobre como é possível relatar lixo eletrônico e tentativas de phishing, mesmo que você não seja um usuário do Office 365.
   
@@ -30,7 +30,7 @@ Se você não for um cliente do Office 365, mas estiver tentando enviar emails p
 |**Para obter informações sobre...**|**Consulte...**|
 |:-----|:-----|
 |Serviços que fornecemos aos administradores de sistemas de email que estão enviando emails individuais e em massa para os clientes do Office 365.  <br/> |[Serviços para não clientes enviando emails para o Office 365](services-for-non-customers.md) <br/> |
-|Como corrigir problemas que chegam aos clientes no Office 365 por email. Práticas recomendadas para o envio de email em massa para destinatários do Office 365.  <br/> |[Solucionando problemas de email enviado para o Office 365](troubleshooting-mail-sent-to-office-365.md) <br/> |
+|Como corrigir problemas que chegam aos clientes no Office 365 por email. Práticas recomendadas para o envio de email em massa para destinatários do Office 365.  <br/> |[Solução de problemas de email enviados para o Office 365](troubleshooting-mail-sent-to-office-365.md) <br/> |
 |Como o Office 365 impede que o lixo eletrônico, incluindo phishing e spoofing email, sejam enviados para nossos clientes.  <br/> |[Combatendo lixo eletrônico enviado para o Office 365](fighting-junk-email.md) <br/> |
 |Como você, um administrador enviando emails para os clientes do Office 365, pode evitar que os emails sejam bloqueados ao aderir às políticas antispam. Este é o material legal que você precisa saber.  <br/> |[Referência: políticas, práticas e diretrizes](reference-policies-practices-and-guidelines.md) <br/> |
    
