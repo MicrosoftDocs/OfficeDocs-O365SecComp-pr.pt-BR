@@ -13,16 +13,16 @@ search.appverid:
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Enviar ou responder a mensagens criptografadas com S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada.
 ms.openlocfilehash: dabb911cf770ae843d97eb6ac8b0f683f27a78dd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264463"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="dafc2-103">Enviar e receber emails assinados e criptografados por S/MIME no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="dafc2-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
+# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="dff2a-103">Enviar e receber emails assinados e criptografados por S/MIME no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="dff2a-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
 
-<span data-ttu-id="dafc2-104">Enviar ou responder a mensagens criptografadas com S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada.</span><span class="sxs-lookup"><span data-stu-id="dafc2-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="dafc2-105">Para obter mais informações sobre como ler ou enviar mensagens criptografadas por S/MIME de um programa de email como o Outlook na Web (anteriormente conhecido como Outlook Web App), consulte [usar o Outlook para enviar e responder a mensagens criptografaDas S/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span><span class="sxs-lookup"><span data-stu-id="dafc2-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span></span>
+<span data-ttu-id="dff2a-104">Enviar ou responder a mensagens criptografadas com S/MIME no Microsoft Outlook é muito semelhante à experiência com uma mensagem não criptografada.</span><span class="sxs-lookup"><span data-stu-id="dff2a-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="dff2a-105">Para obter mais informações sobre como ler ou enviar mensagens criptografadas por S/MIME de um programa de email como o Outlook na Web (anteriormente conhecido como Outlook Web App), consulte [usar o Outlook para enviar e responder a mensagens criptografaDas S/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span><span class="sxs-lookup"><span data-stu-id="dff2a-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="dafc2-106">Para obter mais informações</span><span class="sxs-lookup"><span data-stu-id="dafc2-106">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="dff2a-106">Para obter mais informações</span><span class="sxs-lookup"><span data-stu-id="dff2a-106">For more information</span></span>
 
-[<span data-ttu-id="dafc2-107">S/MIME para assinatura e criptografia de mensagens</span><span class="sxs-lookup"><span data-stu-id="dafc2-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+[<span data-ttu-id="dff2a-107">S/MIME para assinatura e criptografia de mensagens</span><span class="sxs-lookup"><span data-stu-id="dff2a-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)

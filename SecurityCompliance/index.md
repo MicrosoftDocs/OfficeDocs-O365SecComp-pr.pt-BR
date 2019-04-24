@@ -1,6 +1,6 @@
 ---
-title: Segurança e conformidade do Office 365
-description: 'Se sua organização precisar proteger seus dados ou estar em conformidade com padrões legais ou regulamentares, você está no lugar certo. Aqui você pode aprender sobre segurança e conformidade no Office 365'
+title: Conformidade e Segurança do Office 365
+description: Se sua organização precisar proteger seus dados ou estar em conformidade com padrões legais ou regulamentares, você está no lugar certo. Aqui você pode aprender sobre segurança e conformidade no Office 365
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -11,8 +11,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
+ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256499"
 ---
-# <a name="office-365-security-and-compliance"></a>Segurança e conformidade do Office 365
+# <a name="office-365-security-and-compliance"></a>Conformidade e Segurança do Office 365
 
 Se sua organização precisar proteger seus dados ou estar em conformidade com padrões legais ou regulamentares, você está no lugar certo. As áreas abaixo são sua primeira parada para aprender sobre segurança e conformidade no Office 365.
 
@@ -90,7 +96,7 @@ Se sua organização precisar proteger seus dados ou estar em conformidade com p
                     <div class="cardText">
                         <h3>Permaneça protegido</h3>
                         <p><a href="security-roadmap.md">Mapa de segurança do Office 365</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Pontuação segura da Microsoft</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Classificação de Segurança da Microsoft</a></p>
                         <p><a href="https://protection.office.com" target="_blank">Centro de conformidade do & de segurança</a></p>
                     </div>
                 </div>
@@ -109,7 +115,7 @@ Se sua organização precisar proteger seus dados ou estar em conformidade com p
                     <div class="cardText">
                         <h3>Manter-se em conformidade</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Central de Confiabilidade da Microsoft</a></p>
-                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Portal de confiança do serviço Microsoft</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Portal de Confiança do Serviço da Microsoft</a></p>
                     </div>
                 </div>
             </div>
