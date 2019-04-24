@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumo: recomendações de configuração para proteger arquivos no SharePoint Online e no Office 365.'
 ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265405"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteger sites e arquivos do SharePoint Online
 
@@ -115,7 +115,7 @@ A tabela a seguir resume a configuração para cada um dos sites de equipe descr
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Proteção de linha de base nº1** <br/> |**Proteção de linha de base nº2** <br/> |**Proteção confidencial** <br/> |**Altamente confidencial** <br/> |
+||**Proteção de linha de base nº 1** <br/> |**Proteção de linha de base nº 2** <br/> |**Proteção confidencial** <br/> |**Altamente confidencial** <br/> |
 |Descrição  <br/> |Abra a descoberta e a colaboração dentro da organização.  <br/> |Grupo e site particulares com o compartilhamento permitido fora do grupo.  <br/> |Site isolado, no qual os níveis de acesso são definidos pela associação em grupos específicos. O compartilhamento é permitido apenas para membros do site. A DLP avisa os usuários quando tenta enviar arquivos fora da organização.  <br/> |Criptografia de arquivo + site isolado e permissões com a Proteção de Informações do Azure. A DLP impede que os usuários enviem arquivos fora da organização.  <br/> |
 |Site de equipe público ou privado  <br/> |Público  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Quem tem acesso?  <br/> |Todas as pessoas na organização, incluindo usuários convidados e usuários de B2B.  <br/> |Membros do site somente. Outros usuários podem solicitar acesso.  <br/> |Membros do site somente. Outros usuários podem solicitar acesso.  <br/> |Somente membros. Outros usuários não podem solicitar acesso.  <br/> |
@@ -185,9 +185,9 @@ Para as etapas de configuração de Proteção de Informações do Azure nesta s
 
 Crie isso como uma prova de conceito com [Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md).
 
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
-[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Saiba como acessar a Descoberta Eletrônica Avançada do Office 365 pelo Centro de Conformidade e Segurança do Office 365 e analisar o fluxo de trabalho típico para usar a Descoberta Eletrônica avançada.  '
 ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261610"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Configuração rápida da Descoberta Eletrônica Avançada do Office 365
 

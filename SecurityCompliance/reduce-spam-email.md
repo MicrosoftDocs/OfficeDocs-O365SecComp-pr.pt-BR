@@ -18,11 +18,11 @@ ms.collection:
 - Strat_O365_IP
 description: Aprenda as maneiras mais comuns de reduzir spam e lixo eletrônico no Office 365.
 ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261519"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Como reduzir emails de spam no Office 365
 

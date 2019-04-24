@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Com os relatórios de governança de dados no Centro de Conformidade e Segurança do Office 365, você pode visualizar rapidamente se os rótulos estão sendo aplicados ao conteúdo como pretendido.
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266972"
 ---
 # <a name="view-the-data-governance-reports"></a>Exibir os relatórios de governança de dados
 
