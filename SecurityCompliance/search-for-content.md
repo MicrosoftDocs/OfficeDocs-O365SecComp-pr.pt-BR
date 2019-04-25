@@ -3,7 +3,7 @@ title: Pesquisar conteúdo no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/4/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use a ferramenta descoberta eletrônica de pesquisa de conteúdo no centro de conformidade do & de segurança para localizar rapidamente emails em caixas de correio do Exchange, documentos em sites do SharePoint e locais do OneDrive e conversas de mensagens instantâneas no Skype for Business.
-ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
+ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261349"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33248296"
 ---
 # <a name="search-for-content-in-office-365"></a>Pesquisar conteúdo no Office 365
 
@@ -42,7 +42,10 @@ A primeira etapa é começar a usar a ferramenta de pesquisa de conteúdo para e
     
 - [Editar em massa](bulk-edit-content-searches.md) os locais de consulta e conteúdo para várias pesquisas 
     
+- [Repetir uma pesquisa de conteúdo](retry-failed-content-search.md) para resolver um erro de localização de conteúdo
+
 - [Preservar destinatários Cco](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) para que você possa procurá-los 
+
 
 ## <a name="perform-actions-on-content-you-find"></a>Executar ações no conteúdo que você encontrar
 
