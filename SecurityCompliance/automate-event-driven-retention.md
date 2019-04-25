@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este tópico explica como configurar os fluxos dos processos empresariais para automatizar a retenção por meio de eventos usando a API REST do Microsoft 365.
-ms.openlocfilehash: 55bfdccea07b6aaa9227974b43b1b20adcf97ff5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 99ece368cbda5318556d1f3863fa07ee11a1d003
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251043"
 ---
 # <a name="automate-event-based-retention"></a>Automatizar retenção baseada em eventos
 
@@ -52,16 +52,16 @@ Identifique as diferentes funções de uma organização que executam as tarefas
 
   | **Pessoal**| **Função**|
   | - | - |
-  | Administrador do Centro de Conformidade e Segurança | Cria tipos de evento de retenção, rótulos de retenção e repositórios de registro no SharePoint |
+  | Administrador | Cria tipos de evento de retenção, rótulos de retenção e repositórios de registro no SharePoint |
   | Gerente de registros                                  | Fornece políticas de retenção, diretrizes de agendamento de retenção e detalhes de conformidade   |
   | Administrador do sistema (empresa)                          | Configura e gerencia sistemas externos para trabalhar com o Microsoft 365                       |
   | Operador de Informações                               | Gerencia o ciclo de vida dos processos empresariais (RH, finanças, TI, etc.)                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Configurar o Centro de Conformidade e Segurança
   
-1. O administrador de conformidade cria um tipo de evento. Por exemplo, rescisão de funcionário, vencimento de contrato ou término de fabricação de produto (confira o processo passo a passo no [artigo sobre retenção baseada em eventos](https://docs.microsoft.com/pt-BR/office365/securitycompliance/event-driven-retention))
+1. O administrador de conformidade cria um tipo de evento. Por exemplo, rescisão de funcionário, vencimento de contrato ou término de fabricação de produto (confira o processo passo a passo na [retenção orientada por eventos](https://docs.microsoft.com/pt-BR/office365/securitycompliance/event-driven-retention)).
     
-1. O administrador de conformidade cria um rótulo de retenção com base em um evento e associa o rótulo a um tipo de evento
+1. O administrador de conformidade cria um rótulo de retenção com base em um evento e associa o rótulo a um tipo de evento.
     
 1. Há quatro tipos de disparadores para rótulos de retenção:
             
@@ -73,7 +73,7 @@ Identifique as diferentes funções de uma organização que executam as tarefas
                 
     1. Com base em eventos
     
-1. O administrador de conformidade publica o rótulo
+1. O administrador de conformidade publica o rótulo de retenção.
 
 ### <a name="set-up-sharepoint"></a>Configurar o SharePoint
    
@@ -93,7 +93,7 @@ Para criar um repositório de registros, o administrador de conformidade:
 
 Há duas maneiras pelas quais a retenção baseada em eventos pode ser disparada:
 
-- **Usando a IU do Centro de Conformidade e Segurança** Esse processo que pode ser usado para reter menos conteúdo por vez ou para reduzir a frequência de disparo da retenção, como mensal ou anual. Para saber mais sobre este método, confira [Visão geral da retenção orientada a eventos](event-driven-retention.md). No entanto, essa maneira de disparar a retenção pode ser demorada e passível de erros, retardando a escalabilidade. Portanto, uma solução automatizada e perfeita para acionar a retenção pode aumentar a segurança e a conformidade dos dados.
+- **Usando a IU do centro de administração** Esse processo que pode ser usado para reter menos conteúdo por vez ou para reduzir a frequência de disparo da retenção, como mensal ou anual. Para saber mais sobre este método, confira [Visão geral da retenção orientada a eventos](event-driven-retention.md). No entanto, essa maneira de disparar a retenção pode ser demorada e passível de erros, retardando a escalabilidade. Portanto, uma solução automatizada e perfeita para acionar a retenção pode aumentar a segurança e a conformidade dos dados.
 
 - **Usando uma API REST do Microsoft 365** Esse processo pode ser usado quando grandes quantidades de conteúdo devem ser retidas por vez e/ou quando a frequência de disparo da retenção for mais frequente, como diária ou semanal. O fluxo detecta quando um evento ocorre no sistema de linha de negócios e cria automaticamente um evento relacionado no Centro de Conformidade e Segurança. Não é necessário criar manualmente um evento na interface do usuário sempre que ocorrer um.
 
@@ -135,11 +135,11 @@ Portanto, um processo automatizado para disparar esses diferentes relógios de r
 
   - Administrador do Centro de Conformidade e Segurança I
 
-  - Entra no Centro de Conformidade e Segurança.
+  - Entra no Centro de Conformidade e Segurança
 
-  - O administrador do Centro de Conformidade e Segurança cria tipos de eventos relacionados a funcionários, como "Rescisão de funcionário" e "Contratação de funcionário", no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria tipos de eventos relacionados a funcionários, como "Rescisão de funcionário" e "Contratação de funcionário".
 
-  - O administrador cria o rótulo "Retenção de funcionário" no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria o rótulo "Retenção de funcionários".
 
   - O rótulo "Retenção de funcionário" é publicado e aplicado de forma automática ou manual aos arquivos de funcionários no SharePoint.
 
@@ -433,9 +433,9 @@ Um sistema de CRM (gerenciamento de relacionamento com o cliente) pode trabalhar
 
   - O administrador entra no Centro de Conformidade e Segurança.
 
-  - O administrador cria tipos de eventos relacionados a contratos, como "Criação de contrato" e "Expiração de contrato", no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria tipos de eventos relacionados a contratos, como "Criação de contrato" e "Expiração de contrato".
 
-  - O administrador cria o rótulo "Expiração de contrato", no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria o rótulo "Expiração do contrato".
 
   - O rótulo "Expiração de contrato" é publicado e aplicado de forma automática ou manual aos arquivos de contratos no SharePoint.
 
@@ -461,9 +461,9 @@ Um sistema de ERP (Planejamento de Recursos Empresariais) pode trabalhar com o M
 
   - O administrador entra no Centro de Conformidade e Segurança.
 
-  - O administrador cria tipos de eventos relacionados a produtos, como "Início de fabricação de produto" e "Término de fabricação de produto", no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria tipos de eventos relacionados a produtos, como "Início de fabricação de produto" e "Término de fabricação de produto".
 
-  - O administrador cria o rótulo "Término de fabricação de produto" no Centro de Conformidade e Segurança.
+  - O administrador do Centro de Conformidade e Segurança cria o rótulo "Término de fabricação de produto".
 
   - O rótulo "Término de fabricação de produto" é publicado e aplicado de forma automática ou manual aos arquivos de produtos no SharePoint.
 

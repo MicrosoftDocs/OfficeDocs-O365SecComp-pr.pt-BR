@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Saiba como usar os rótulos do Office como parte do seu plano de proteção do GDPR.
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244145"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar rótulos a dados pessoais no Office 365
 
@@ -34,7 +34,7 @@ Se você estiver usando rótulos para proteção de dados pessoais no Office 365
 
 O Cloud App Security atualmente não suporta rótulos de retenção, mas você pode usar tipos de informações confidenciais do Office 365 com o Cloud App Security para monitorar dados pessoais que residem em outros aplicativos SaaS.
 
-[Rótulos de confidencialidade](sensitivity-labels.md) atualmente são recomendados para a aplicação de rótulos a arquivos locais e em outros serviços de nuvem e provedores. Eles também são recomendados para arquivos no Office 365 que exijam criptografia de proteção de informações do Azure (AIP) para a proteção de dados, como arquivos secretos.
+[Rótulos de confidencialidade](sensitivity-labels.md) atualmente são recomendados para a aplicação de rótulos a arquivos locais e em outros serviços de nuvem e provedores. Também são recomendados para arquivos no Office 365 que exijam criptografia de proteção de informações do Azure para a proteção de dados, como arquivos secretos.
 
 Neste momento, usar a proteção de informações do Azure para aplicar a criptografia não é recomendável para arquivos no Office 365 com dados sujeitos ao GDPR. Os serviços do Office 365 não podem ler em arquivos criptografados AIP no momento. Portanto, o serviço não consegue encontrar dados confidenciais nesses arquivos.
 

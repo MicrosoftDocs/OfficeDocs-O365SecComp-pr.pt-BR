@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: 7e28034955a54fe7c2013dcaaf606c24c4089e75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 29220c83eb207d58586b39d101e7139dc6ddf94a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259179"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Criar sites de equipe em um ambiente de desenvolvimento/teste de campanha política
 
@@ -37,7 +37,7 @@ Primeiro, siga as instruções em [Configurar grupos e usuários para um ambient
 
 Nesta fase, você deve criar os rótulos para os diferentes níveis de segurança para as pastas e documentos do site da equipe do SharePoint Online.
   
-1. Se necessário, entre no Portal do Office 365 com as credenciais da conta de administrador global da sua assinatura de avaliação. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessário, entre no centro de administração com as credenciais da conta do administrador global da sua assinatura de avaliação. Para obter ajuda, confira [Como entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
     
@@ -85,7 +85,7 @@ Nessa fase, você cria e configura sites de equipe do SharePoint Online para a c
 
 Para criar um site de equipe do SharePoint Online público de linha de base, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador do seu computador local e entre no centro de administração ([https://admin.microsoft.com](https://admin.microsoft.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -115,7 +115,7 @@ Em seguida, configure a pasta de documentos do site de equipe Toda a campanha co
 
 Para criar um site de equipe do SharePoint Online privado de linha de base para um projeto dentro da campanha, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador do seu computador local e entre no centro de administração ([https://admin.microsoft.com](https://admin.microsoft.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -145,7 +145,7 @@ Em seguida, configure a pasta de documentos do site de equipe Projeto 1 de campa
 
 Para criar um site de equipe do SharePoint Online isolado de nível confidencial para recursos de marketing de campanha, faça o seguinte:
   
-1. Usando um navegador no computador local, entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Usando um navegador no seu computador local, entre no centro de administração ([https://admin.microsoft.com](https://admin.microsoft.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -257,7 +257,7 @@ Em seguida, configure uma política de DLP (prevenção de perda de dados) que n
 
 Para criar um site de equipe do SharePoint Online isolado no nível altamente confidencial para recursos de estratégia de campanha, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador do seu computador local e entre no centro de administração ([https://admin.microsoft.com](https://admin.microsoft.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -321,9 +321,9 @@ Em seguida, configure a pasta de documentos do Site de equipe de estratégia de 
     
 Em seguida, configure uma política de DLP que bloqueia os usuários quando eles compartilham um documento em um site de equipe do SharePoint Online com o rótulo altamente confidencial fora da organização. Essa política de DLP se aplicará a recursos no site de estratégia da campanha.
   
-1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa.
+1. Se necessário, use um navegador no seu computador local e entre no centro de administração ([https://admin.microsoft.com](https://admin.microsoft.com)) com uma conta com a função de Administrador de Segurança ou Administrador da Empresa.
     
-2. Na guia **Microsoft Office Home** no navegador, clique no bloco **Segurança&amp; Conformidade**.
+2. Na guia **Página Inicial do Microsoft Office** no navegador, clique no bloco **Segurança e Conformidade**.
     
 3. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
     
@@ -363,11 +363,11 @@ Em seguida, configure uma política de DLP que bloqueia os usuários quando eles
     
 20. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
     
-Use as instruções em [Ativar o Azure RMS com o centro de administração do Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Use as instruções em [Ativar o Azure RMS com o centro de administração do Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Depois, configure a Proteção de Informações do Azure com uma nova política e sub-rótulo em escopo para proteção e permissões com as seguintes etapas:
   
-1. Entre no Portal do Office 365 com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Acesse o centro de administração com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -411,7 +411,7 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
   
 Agora você está pronto para começar a criar documentos nesses quatro sites e testar o acesso a eles com várias contas de usuário. 
   
-Para proteger um documento com a Proteção de Informações do Azure e esse novo rótulo, você deve [instalar o cliente de Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em um computador de teste, instalar o Office do Portal do Office 365 e entrar no Microsoft Word com uma conta no grupo **Funcionários sênior e estratégicos** de sua assinatura de avaliação.
+Para proteger um documento com a Proteção de Informações do Azure e esse novo rótulo, você deve [instalar o cliente de Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em um computador de teste, instalar o Office do centro de administração e entrar no Microsoft Word com uma conta no grupo **Funcionários sênior e estratégicos** de sua assinatura de avaliação.
   
 ## <a name="see-also"></a>Confira também
 

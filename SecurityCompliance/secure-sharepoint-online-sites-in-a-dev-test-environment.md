@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260940"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -208,31 +208,29 @@ Nesta fase, você deve criar os rótulos para os diferentes níveis de seguranç
     
 7. No painel **Revise suas configurações**, clique em **Criar o rótulo**.
     
-8. Para seus rótulos adicionais, clique em **Criar um rótulo**, e, em seguida, repita as etapas 3 a 7.
-
-9. Repita as etapas 3 a 8 para etiquetas adicionais com esses nomes:
+8. Repita as etapas 3 a 7 para etiquetas adicionais com esses nomes:
     
-  - Privado
+  - Private
     
   - Confidencial
     
   - Altamente Confidencial
   
-10. No painel **Início > Rótulos**, clique em **Publicar rótulos**.
+9. No painel **Início > Rótulos**, clique em **Publicar rótulos**.
     
-11. No painel **Escolher rótulos para publicar**, clique em **Escolher rótulos para publicar**.
+10. No painel **Escolher rótulos para publicar**, clique em **Escolher rótulos para publicar**.
     
-12. No painel **Escolher rótulos**, clique em **Adicionar** e selecione todos os quatro rótulos.
+11. No painel **Escolher rótulos**, clique em **Adicionar** e selecione todos os quatro rótulos.
     
-13. Clique em **Concluído**.
+12. Clique em **Concluído**.
     
-14. No painel **Escolher rótulos para publicar**, clique em **Avançar**.
+13. No painel **Escolher rótulos para publicar**, clique em **Avançar**.
     
-15. No painel **Escolher locais**, clique em **Avançar**.
+14. No painel **Escolher locais**, clique em **Avançar**.
     
-16. No painel **Atribuir um nome à política**, digite **Organização de exemplo** em **Nome** e clique em **Avançar**.
+15. No painel **Atribuir um nome à política**, digite **Organização de exemplo** em **Nome** e clique em **Avançar**.
     
-17. No painel **Examine as configurações**, clique em **Publicar rótulos** e clique em **Fechar**.
+16. No painel **Examine as configurações**, clique em **Publicar rótulos** e clique em **Fechar**.
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Fase 4: criar sites de equipe do SharePoint Online
 
@@ -578,11 +576,11 @@ Aqui está a configuração geral para todos os quatro sites de equipe do ShareP
 
 Quando você estiver pronto para a implantação dos sites do SharePoint Online seguros na produção, consulte [Arquivos e sites do SharePoint Online seguros](secure-sharepoint-online-sites-and-files.md) para obter informações detalhadas e links para os artigos de implantação passo a passo.
   
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
-[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Adoção da nuvem e soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Adoção da nuvem e de soluções híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 

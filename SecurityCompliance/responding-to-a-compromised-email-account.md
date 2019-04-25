@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconhecer e responder a uma conta de email comprometida no Office 365
-ms.openlocfilehash: f974719e5609645314bf1e8d7b15ae30cda6282e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: abb9cbae0d1df41f5513e7958aaf1dc04ce66154
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264833"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Respondendo a uma conta de email comprometida no Office 365
 
@@ -132,3 +132,4 @@ Sua assinatura do Office 365 vem com um poderoso conjunto de recursos de seguran
 - [Detectar e corrigir ataques de injeção a regras e formulários personalizados do Outlook no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Centro de Reclamações contra Crimes pela Internet](http://www.ic3.gov/preventiontips.aspx)
 - [Comissão de Valores Mobiliários - Fraude de "Phishing"](http://www.sec.gov/investor/pubs/phishing.htm)
+- Para denunciar emails de spam diretamente ao seu administrador e à Microsoft [Use o suplemento Reportar mensagem](https://support.office.com/pt-BR/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

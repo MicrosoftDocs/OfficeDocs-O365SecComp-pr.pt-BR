@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Com os rótulos no Office 365, é possível basear um período de retenção no momento que um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo aplicado para esse tipo de evento recebe as ações de retenção do rótulo. Normalmente, a retenção controlada por eventos é usada como parte de um processo de gerenciamento de registros.
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: Com os rótulos de retenção no Office 365, é possível basear um período de retenção no momento que um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo de retenção aplicado para esse tipo de evento recebe as ações de retenção do rótulo. Normalmente, a retenção controlada por eventos é usada como parte de um processo de gerenciamento de registros.
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256349"
 ---
 # <a name="overview-of-event-driven-retention"></a>Visão geral da retenção controlada por eventos
 
-Quando você retém o conteúdo, o período de retenção normalmente é baseado na idade desse conteúdo. Por exemplo, você pode reter os documentos por sete anos após a criação e, depois disso, excluí-los. Porém, com os rótulos no Office 365, também é possível basear um período de retenção no momento em quando um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo aplicado para esse tipo de evento recebe as ações de retenção do rótulo.
+Quando você retém o conteúdo, o período de retenção normalmente é baseado na idade desse conteúdo. Por exemplo, você pode reter os documentos por sete anos após a criação e, depois disso, excluí-los. Porém, com os rótulos de retenção no Office 365, também é possível basear um período de retenção no momento em quando um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo de retenção aplicado para esse tipo de evento recebe as ações de retenção do rótulo.
   
 Por exemplo, você pode usar rótulos com a retenção controlada por eventos para:
   
@@ -77,7 +77,7 @@ Este é o fluxo de trabalho de nível superior para retenção controlada por ev
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Etapa 1: Criar um rótulo cujo período de retenção seja baseado em um evento
 
-No Centro de Conformidade e Segurança, na navegação à esquerda, em **Classificações**, escolha **Rótulos** \> **Criar um rótulo**.
+Na central de conformidade do Microsoft 365, na central de segurança do Microsoft 365 ou na Central de Conformidade &amp; Segurança do Office 365, na navegação à esquerda, escolha **Classificações** > **Rótulos** > guia**Rótulos de retenção** > **Criar um rótulo**.
   
 Ao criar o rótulo, ative a retenção e escolha a opção exibida abaixo para reter ou excluir o conteúdo com base em um evento. Isso significa que as configurações de retenção não entrarão em vigor até a Etapa 5, quando você criar um evento na página **Eventos**. 
   
@@ -103,7 +103,7 @@ Observe que após escolher um tipo de evento e criar o rótulo, o tipo de evento
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Etapa 3: Publicar ou aplicar automaticamente o rótulo
 
-Assim como com qualquer rótulo, você precisa publicar ou aplicar automaticamente um rótulo baseado em eventos, para que seja aplicado manual ou automaticamente ao conteúdo. Faça isso na página **Rótulos**. Note que os rótulos que classificam o conteúdo como registro só podem ser publicados e aplicados manualmente ao conteúdo; não é possível aplicá-los automaticamente ao conteúdo. 
+Assim como com qualquer rótulo, você precisa publicar ou aplicar automaticamente um rótulo baseado em eventos, para que seja aplicado manual ou automaticamente ao conteúdo. Você pode fazer isso na página **Rótulos** ou **Políticas de rótulos**. Note que os rótulos que classificam o conteúdo como registro só podem ser publicados e aplicados manualmente ao conteúdo. 
   
 ![Opções para publicar ou aplicar automaticamente um rótulo](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ Por fim, escolha a data de ocorrência do evento; essa data é usada como o iní
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usar a Pesquisa de Conteúdo para localizar todo o conteúdo com um rótulo ou ID de ativo específicos
 
-Após a atribuição dos rótulos ao conteúdo, você pode usar a pesquisa de conteúdo no Centro de Conformidade e Segurança para localizar todo o conteúdo classificado com um rótulo específico ou que contenha uma ID de ativo específica.
+Após a atribuição dos rótulos ao conteúdo, você pode usar a pesquisa de conteúdo para localizar todo o conteúdo classificado com um rótulo específico ou que contenha uma ID de ativo específica.
   
 Ao criar uma pesquisa de conteúdo:
   
@@ -167,11 +167,9 @@ Para saber mais, consulte [Dar aos usuários acesso ao Centro de Conformidade e 
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizar eventos usando o PowerShell
 
-No Centro de Conformidade e Segurança do Office 365, você só pode criar eventos manualmente; não é possível acionar automaticamente um evento. No entanto, você pode usar um script do PowerShell para automatizar a retenção com base em eventos de seus aplicativos de negócios.
-  
-No momento, estamos trabalhando em APIs que permitam a conexão de seus aplicativos comerciais (como RH, CRM ou aplicativos financeiros) com a retenção controlada por eventos. Por exemplo, você poderá conectar seu sistema de RH à retenção controlada por eventos, assim, quando um funcionário deixar a organização, um evento desse tipo será acionado automaticamente.
-  
-Enquanto isso, estes são os cmdlets do PowerShell disponíveis para retenção controlada por eventos:
+No Centro de administração, você só pode criar eventos manualmente; não é possível acionar automaticamente um evento. No entanto, você pode usar uma API de REST para acionar eventos automaticamente; para saber mais, confira [Automatizar a retenção baseada em eventos](automate-event-driven-retention.md).
+
+Também é possível usar um script do PowerShell para automatizar a retenção com base em eventos de aplicativos de negócios. Estes são os cmdlets do PowerShell disponíveis para retenção controlada por eventos:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
