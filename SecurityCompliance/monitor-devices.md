@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
+ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263480"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33302735"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Monitorar dispositivos na segurança do Microsoft 365
 
@@ -25,7 +25,7 @@ Mantenha seus dispositivos seguros, atualizados e identifique as possíveis amea
 
 ## <a name="view-device-alerts"></a>Exibir alertas de dispositivo
 
-Obtenha alertas atualizados sobre a atividade de violação e outras ameaças em seus dispositivos do Windows Defender ATP (disponível com uma licença E5). A central de segurança do Microsoft 365 tem vários cartões que permitem monitorar efetivamente esses alertas em um nível superior, dependendo do seu fluxo de trabalho preferido.
+Obtenha alertas atualizados sobre a atividade de violação e outras ameaças em seus dispositivos do Windows Defender ATP (disponível com uma licença E5). O Microsoft 365 Security Center monitora efetivamente esses alertas em um nível alto usando seu fluxo de trabalho preferido.
 
 ### <a name="monitor-high-impact-alerts"></a>Monitorar alertas de alto impacto
 
@@ -183,19 +183,44 @@ O Microsoft Intune fornece funcionalidade de gerenciamento para suas regras ASR.
 
 ### <a name="exclude-files-from-asr-rules"></a>Excluir arquivos de regras ASR
 
-Ao excluir arquivos de detecções, você pode evitar detecções de falsos positivos e de implantar com segurança as regras de redução de superfície de ataque no modo de bloqueio.
+A central de segurança do Microsoft 365 coleta os nomes dos [arquivos que você pode querer excluir](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive) das detecções por regras de redução de superfície de ataque. Ao excluir arquivos, você pode reduzir as detecções de falsos positivos e implantar com segurança as regras de redução de superfície de ataque no modo de bloqueio.
 
-Enquanto as exclusões de arquivo para regras de redução de superfície de ataque são gerenciadas no Microsoft Intune, a central de segurança do Microsoft 365 oferece uma ferramenta de análise para ajudá-lo a entender os arquivos que estão disparando detecções. Também ajuda a coletar os nomes dos arquivos que você pode querer excluir.
+As exclusões são gerenciadas no Microsoft Intune, mas o centro de segurança do Microsoft 365 oferece uma ferramenta de análise para ajudá-lo a entender os arquivos. Para começar a coletar arquivos para exclusão, vá para a guia **adicionar exclusões** na página relatório de **regras de redução de superfície de ataque** .
 
-Para começar a analisar detecções e coletar arquivos para exclusão, vá para a guia **adicionar exclusões** na página relatório de **regras de redução de superfície de ataque** .
+>[!NOTE]  
+>A ferramenta analisa as detecções por todas as regras de redução da superfície de ataque, mas [apenas algumas regras dão suporte a exclusões](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules).
 
 ![Adicionar guia exclusões](./media/security-docs/add-exclusions-tab.png)
 
-A tabela lista todos os nomes de arquivo detectados por suas regras de redução de superfície de ataque. Depois de selecionar um arquivo ou vários arquivos, você pode revisar o impacto da adição desses arquivos às suas exceções:
+A tabela lista todos os nomes de arquivo detectados por suas regras de redução de superfície de ataque. Você pode selecionar arquivos para revisar o impacto da exclusão deles:
 
-* A redução no número total de detecções
-* A redução no número total de dispositivos afetados pelas detecções
+* Quantas detecções menos
+* Quantos dispositivos menos relatam as detecções
 
 Para obter uma lista dos arquivos selecionados com seus caminhos completos para exclusão, selecione **obter caminhos de exclusão**.
 
-Para obter mais informações sobre exclusões e instruções detalhadas sobre como adicioná-las, leia [solucionar problemas de regras de redução de superfície de ataque](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr).
+Os logs para o bloqueio de credenciais de bloqueio de regra ASR **do subsistema de autoridade de segurança local (Lsass. exe) do Windows** capturam o aplicativo de origem LSASS **. exe**, um arquivo de sistema normal, como o arquivo detectado. Como resultado, a lista gerada de caminhos de exclusão incluirá esse arquivo. Para excluir o arquivo que disparou essa regra em vez de **LSASS. exe**, use o caminho para o aplicativo de origem em vez do arquivo detectado.
+
+Para localizar o aplicativo de origem, execute a seguinte [consulta de busca avançada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) para esta regra específica (identificada por ID de regra 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2): 
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+| project InitiatingProcessFolderPath, InitiatingProcessFileName
+```
+
+#### <a name="check-files-for-exclusion"></a>Verificar arquivos para exclusão
+Antes de excluir um arquivo do ASR, recomendamos inspecionar o arquivo para determinar se ele não é mal-intencionado.
+
+Para revisar um arquivo, use a [página informações do arquivo](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection) na central de segurança do Windows Defender. A página fornece informações de prevalência, bem como a taxa de detecção de antivírus do VirusTotal. Você também pode usar a página para enviar o arquivo para análise profunda.
+
+Para localizar um arquivo detectado na central de segurança do Windows Defender, procure todas as detecções de ASR usando a seguinte consulta de busca avançada:
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
+```
+
+Use o **SHA1** ou o **InitiatingProcessSHA1** nos resultados para pesquisar o arquivo usando a barra de pesquisa universal na central de segurança do Windows Defender.

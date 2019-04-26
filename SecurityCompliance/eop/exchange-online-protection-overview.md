@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens.
-ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
+ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256150"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33306575"
 ---
 # <a name="exchange-online-protection-overview"></a>Visão geral do Exchange Online Protection
 
@@ -25,9 +25,11 @@ Veja a seguir algumas das principais formas de usar o EOP para proteção de men
   
 - **Em um cenário autônomo** O EOP fornece proteção de email baseada em nuvem para seu ambiente local do Microsoft Exchange Server 2013, versões herdadas do Exchange Server ou para qualquer outra solução de email SMTP local. 
     
-- **Como parte do Microsoft Exchange Online** Por padrão, o EOP protege caixas de correio do Microsoft Exchange Online hospedadas na nuvem. 
+- **Como parte do Microsoft Exchange Online** Por padrão, o EOP protege caixas de correio do Microsoft Exchange Online hospedadas na nuvem. ConFira [proteção contra ameaças](../protect-against-threats.md) para ajudar a configurar esses recursos do Exchange Online. 
     
 - **Em uma implantação híbrida** O EOP pode ser configurado para proteger seu ambiente de mensagens e controlar o roteamento de email quando você tem uma combinação de caixas de correio locais e na nuvem. 
+
+Estes artigos da proteção do Exchange Online se aplicam a ambientes híbridos e locais. 
     
 ## <a name="how-eop-works"></a>Como o EOP funciona
 
@@ -74,7 +76,7 @@ A configuração do EOP pode ser simples, especialmente no caso de uma pequena o
   
 Se você já comprou o EOP, consulte [Configurar seu serviço EOP](set-up-your-eop-service.md) para garantir a conclusão de todas as etapas necessárias de configuração do EOP, a fim de proteger seu ambiente de mensagens. 
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Recursos EOP](eop-features.md)
   
