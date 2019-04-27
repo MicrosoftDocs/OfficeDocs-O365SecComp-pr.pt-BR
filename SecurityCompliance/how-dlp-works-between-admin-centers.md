@@ -3,7 +3,7 @@ title: Funcionamento da DLP entre o Centro de Conformidade e Segurança e o cent
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Saiba como a DLP no centro de conformidade do & de segurança funciona com a DLP e regras de fluxo de emails (regras de transporte) no centro de administração do Exchange.
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254920"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362029"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funcionamento da DLP entre o Centro de Conformidade e Segurança e o centro de administração do Exchange
 
 No Office 365, você pode criar uma política de prevenção de perda de dados (DLP) em dois centros de administração diferentes:
   
-- No **centro de conformidade do & de segurança**, você pode criar uma única política de DLP para ajudar a proteger o conteúdo no SharePoint, no onedrive e no Exchange. Quando possível, recomendamos que você crie uma política de DLP aqui. Para obter mais informações, consulte [DLP no centro de conformidade do & de segurança](data-loss-prevention-policies.md).
+- No **centro de conformidade do & de segurança**, você pode criar uma única política de DLP para ajudar a proteger o conteúdo no SharePoint, onedrive, Exchange e agora Microsoft Teams. Quando possível, recomendamos que você crie uma política de DLP aqui. Para obter mais informações, consulte [DLP no centro de conformidade do & de segurança](data-loss-prevention-policies.md).
     
 - No **centro de administração do Exchange**, você pode criar uma política de DLP para ajudar a proteger o conteúdo somente no Exchange. Essa política pode usar regras de fluxo de emails do Exchange (também conhecidas como regras de transporte), portanto, ela tem mais opções específicas para lidar com emails. Para obter mais informações, consulte [DLP no centro de administração do Exchange](https://go.microsoft.com/fwlink/?linkid=852311).
     

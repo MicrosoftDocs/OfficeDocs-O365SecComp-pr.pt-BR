@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262041"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362049"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Visão geral das políticas de prevenção de perda de dados
 
@@ -78,7 +78,7 @@ Uma política de DLP pode encontrar e proteger informações confidenciais no Of
   
 Observe que, se você optar por incluir ou excluir sites específicos do SharePoint ou contas do OneDrive, uma política de DLP não poderá conter mais de 100 tais inclusões e exclusões. Embora esse limite exista, entenda que você pode exceder esse limite aplicando uma política de toda a organização ou uma política que se aplica a locais inteiros.
   
-### <a name="rules"></a>Regras
+### <a name="rules"></a>Rules
 
 As regras são o que impõe seus requisitos de negócios no conteúdo da sua organização. Uma política contém uma ou mais regras, e cada regra consiste em condições e ações. Para cada regra, quando as condições forem atendidas, as ações são executadas automaticamente. As regras são executadas de forma seqüencial, começando com a regra de maior prioridade em cada política.
   
@@ -122,7 +122,7 @@ Quando uma política de DLP procura um tipo de informação confidencial, como u
     
 Isso ajuda a detecção de DLP a alcançar um alto grau de precisão enquanto reduz o número de falsos positivos que podem interromper o trabalho das pessoas.
   
-#### <a name="actions"></a>Ações
+#### <a name="actions"></a>Actions
 
 Quando o conteúdo corresponde a uma condição em uma regra, você pode aplicar ações para proteger automaticamente o conteúdo.
   
@@ -478,11 +478,7 @@ A avaliação de política de DLP no Office foi projetada para não afetar o des
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Avaliação de política no Microsoft Teams
  
-Quando você cria uma política de DLP que inclui o Microsoft Teams como um local, a política foi sincronizada do centro &amp; de conformidade de segurança do Office 365 para contas de usuário e os canais e chats do Microsoft Teams. Dependendo de como as políticas de DLP são configuradas, quando alguém tenta compartilhar informações confidenciais em um Microsoft Teams chat ou canal, a mensagem pode ser bloqueada ou revogada. E os documentos que contêm informações confidenciais e que são compartilhados com convidados (usuários externos) não serão abertos para esses usuários.
-
-Por exemplo, suponha que alguém tente compartilhar informações confidenciais em um chat de equipes ou canal com usuários externos. Suponha que há uma política de DLP definida para evitar isso. Com a proteção in-loco, as mensagens que contêm informações confidenciais enviadas a usuários externos são excluídas. Isso ocorre em segundos e acontece automaticamente, de acordo com o modo como a política de DLP é configurada.
-
-Dicas de política notificam os remetentes sobre por que suas mensagens foram bloqueadas ou revogadas. Por exemplo, um remetente pode ser informado de que sua mensagem contém informações de identificação pessoal (PII) que não podem ser compartilhadas com qualquer pessoa, ou que um documento que contém PII não pode ser compartilhado com pessoas de fora da organização. O remetente pode então editar sua mensagem para estar em conformidade com as políticas de DLP.
+Quando você cria uma política de DLP que inclui o Microsoft Teams como um local, a política foi sincronizada do centro &amp; de conformidade de segurança do Office 365 para contas de usuário e os canais e chats do Microsoft Teams. Dependendo de como as políticas de DLP são configuradas, quando alguém tenta compartilhar informações confidenciais em um Microsoft Teams chat ou canal, a mensagem pode ser bloqueada ou revogada. E os documentos que contêm informações confidenciais e que são compartilhados com convidados (usuários externos) não serão abertos para esses usuários. Para saber mais, confira [prevenção de perda de dados e Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Permissões
 
