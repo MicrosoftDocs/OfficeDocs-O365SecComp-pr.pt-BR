@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use o centro de conformidade do & de segurança no Office 365 para habilitar caixas de correio de arquivo morto para suportar a retenção de mensagens, os requisitos de descoberta eletrônica e de bloqueio da sua organização.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958302"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402919"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar caixas de correio de arquivo morto no centro de conformidade do & de segurança
   
@@ -127,9 +127,11 @@ Execute o seguinte comando para desabilitar a caixa de correio de arquivo morto 
 
 ## <a name="more-information"></a>Mais informações
   
+- Quando uma caixa de correio de arquivo morto está habilitada, os usuários podem armazenar mensagens em suas caixas de correio de arquivo morto. Os usuários podem acessar suas caixas de correio de arquivo morto usando o Microsoft Outlook e o Outlook na Web. Usando qualquer um desses aplicativos de cliente, os usuários podem exibir mensagens em sua caixa de correio de arquivo morto e mover ou copiar mensagens entre a caixa de correio principal e a caixa de correio de arquivo morto. Os usuários também podem recuperar itens excluídos da pasta Itens Recuperáveis em suas caixas de correio de arquivo morto usando a ferramenta Recuperar Itens Excluídos.
+
+   Para obter uma lista de licenças do Outlook que dão suporte ao arquivamento in-loco, consulte [Outlook License Requirements for Exchange Features](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+
 - As caixas de correio de arquivo morto ajudam você e seus usuários a atender aos requisitos de retenção, eDiscovery e bloqueio da sua organização. Por exemplo, você pode usar a política de retenção do Exchange da sua organização para mover o conteúdo da caixa de correio para a caixa de correio de arquivo morto dos usuários. Ao usar a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar conteúdo específico na caixa de correio de um usuário, a caixa de correio de arquivo morto do usuário também será pesquisada. E, quando você coloca uma retenção de litígio ou aplica uma política de retenção do Office 365 à caixa de correio de um usuário, os itens na caixa de correio de arquivo morto também são mantidos.
-  
-- Quando uma caixa de correio de arquivo morto está habilitada, os usuários podem armazenar mensagens em suas caixas de correio de arquivo morto. Os usuários podem acessar suas caixas de correio de arquivo morto usando o Microsoft Outlook e o Outlook na Web. Usando qualquer um desses aplicativos de cliente, os usuários podem exibir mensagens em sua caixa de correio de arquivo morto e mover ou copiar mensagens entre a caixa de correio principal e a caixa de correio de arquivo morto. Os usuários também podem recuperar itens excluídos da pasta Itens Recuperáveis em suas caixas de correio de arquivo morto usando a ferramenta Recuperar Itens Excluídos. 
   
 - Após as caixas de correio de arquivo morto serem habilitadas, sua organização pode aproveitar a política de retenção padrão do Exchange (também chamada de gerenciamento de registros de mensagens ou política de MRM) que é atribuída automaticamente a cada caixa de correio. Quando uma caixa de correio de arquivo morto está habilitada, a política de retenção padrão do Exchange faz automaticamente o seguinte: 
   

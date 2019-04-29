@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: Prepare-se para o novo centro de segurança e centro de conformidade do Microsoft 365
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265475"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402989"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>A nova central de segurança do Microsoft 365 e o centro de conformidade da Microsoft 365 agora estão disponíveis em geral
 
@@ -66,7 +66,7 @@ Com a navegação aprimorada, soluções integradas e uma experiência simplific
 
 Você pode esperar uma transição suave para os novos centros. Eventualmente, o antigo centro de conformidade do Microsoft 365 Security[https://protection.microsoft.com](https://protection.microsoft.com)& () será desativado. Embora a experiência do administrador mude, isso não afetará suas configurações atuais de segurança e conformidade. Se sua organização tem o Microsoft 365 Enterprise E3 ou e5, seus administradores de segurança e conformidade podem:
 
-- Navegue diretamente para [https://security.microsoft.com](https://security.microsoft.com) e [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>ou  
+- Navegue diretamente para [https://security.microsoft.com](https://security.microsoft.com) e [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>or  
 - Vá para o centro de administração do Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () e navegue de lá (no painel de navegação, clique em **Mostrar tudo**e, em seguida, escolha **segurança** ou **conformidade**).
 
 Além disso, você ainda pode configurar e gerenciar as configurações no centro de conformidade do Office 365 Security &[https://protection.office.com](http://protection.office.com)(). Suas configurações serão mantidas no centro de conformidade do & de segurança do Office 365 existente e na nova central de segurança do Microsoft 365 e no centro de conformidade da Microsoft 365.  
@@ -102,7 +102,7 @@ A tabela a seguir resume quem pode acessar vários portais no Azure, no Office 3
 |[Proteção Avançada contra Ameaças do Azure](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Sim |Sim |Não |
 |[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Sim |Sim |Não |
 |[Proteção de identidade](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Sim |Sim |Não |
-|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sim |Sim |Não |
+|[Gerenciamento de identidade privilegiado](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sim |Sim |Não |
 |[Intune](https://docs.microsoft.com/intune)     |Sim |Sim |Sim |
 |[Segurança no Aplicativo na Nuvem](https://docs.microsoft.com/cloud-app-security/)     |Sim |Sim |Sim |
 |[Classificação de Segurança](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Sim |Sim |Não |

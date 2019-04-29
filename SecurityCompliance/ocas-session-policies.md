@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: As políticas de sessão do Office 365 Cloud app Security permitem o monitoramento em tempo real em nível de sessão, o que proporciona visibilidade detalhada dos aplicativos do Office 365 e a capacidade de realizar ações diferentes dependendo da política definida para uma sessão de usuário. Em vez de permitir ou bloquear totalmente o acesso, com o controle de sessão, você pode permitir o acesso enquanto monitora a sessão e/ou limita as atividades específicas da sessão usando as funcionalidades de proxy reverso do controle de aplicativo de acesso condicional.
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263015"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403029"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Políticas de sessão no Office 365 Cloud App Security
 
@@ -117,7 +117,7 @@ O controle de aplicativos de acesso condicional registra os logs de tráfego de 
 
 1. Vá para a COG configurações e clique em **controle de aplicativo de acesso condicional**.
 
-2. No lado direito da tabela, clique no botão Exportar.<br>![botão Exportar](media/image3.png)<br>
+2. No lado direito da tabela, clique no botão Exportar.<br>![botão Exportar](media/OCASimage3.png)<br>
 
 3. Selecione o intervalo do relatório e clique em **Exportar**. Esse processo pode levar algum tempo.
 
@@ -125,7 +125,7 @@ O controle de aplicativos de acesso condicional registra os logs de tráfego de 
 
 1. Depois que o relatório estiver pronto, vá para **configurações** e, em seguida, **relatórios**exportados.
 
-2. Na tabela, selecione o relatório relevante na lista de logs de **tráfego de controle de aplicativo de acesso condicional**e clique em baixar.<br>![botão baixar](media/image4.png)<br>
+2. Na tabela, selecione o relatório relevante na lista de logs de **tráfego de controle de aplicativo de acesso condicional**e clique em baixar.<br>![botão baixar](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>Bloquear todos os downloads
 

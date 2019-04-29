@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrições de propriedades adicionais incluídas em um registro de log de auditoria do Office 365.
-ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257640"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402959"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriedades detalhadas no log de auditoria do Office 365
 
@@ -34,7 +34,7 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 > [!TIP]
 > Você pode usar a consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade tenha sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para saber como fazer isso, confira a seção "dividir uma coluna por delimitador" em [dividir uma coluna de texto (consulta de força)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
   
-|**Property**|**Descrição**|**Serviço do Office 365 que tem essa propriedade**|
+|**Propriedade**|**Descrição**|**Serviço do Office 365 que tem essa propriedade**|
 |:-----|:-----|:-----|
 |Actor|A conta de usuário ou de serviço que executou a ação.|Azure Active Directory|
 |AddOnName|O nome de um complemento que foi adicionado, removido ou atualizado em uma equipe. O tipo de Complementos no Microsoft Teams é um bot, um conector ou uma guia.|Microsoft Teams|
@@ -42,7 +42,7 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 |AzureActiveDirectoryEventType|O tipo de evento do Azure Active Directory. Os valores a seguir indicam o tipo de evento.  <br/> **0** -indica um evento de login de conta.<br/> **1** -indica um evento de segurança do aplicativo do Azure.|Azure Active Directory|
 |ChannelGuid|A ID de um canal do Microsoft Teams. A equipe em que o canal está localizado é identificada pelas **** Propriedades teamname e **TeamGuid** .|Microsoft Teams|
 |ChannelName|O nome de um canal do Microsoft Teams. A equipe em que o canal está localizado é identificada pelas **** Propriedades teamname e **TeamGuid** .|Microsoft Teams|
-|Cliente|O dispositivo cliente, o so do dispositivo e o navegador do dispositivo usado para o evento de logon (por exemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
+|Client|O dispositivo cliente, o so do dispositivo e o navegador do dispositivo usado para o evento de logon (por exemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Informações sobre o cliente de email que foi usado para executar a operação, como uma versão do navegador, uma versão do Outlook e informações sobre dispositivos móveis|Exchange (atividade de caixa de correio)|
 |ClientIP|O endereço IP do dispositivo que foi usado quando a atividade foi registrada. O endereço IP é exibido em um formato de endereço IPv4 ou IPv6.|Exchange e Azure Active Directory|
 |ClientIPAddress|O mesmo que ClientIP.|SharePoint|
@@ -76,7 +76,7 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 |SourceFileExtension|A extensão do arquivo que foi acessado pelo usuário. Esta propriedade fica em branco se o objeto que foi acessado for uma pasta.|SharePoint|
 |SourceFileName|O nome do arquivo ou pasta acessado pelo usuário.|SharePoint|
 |SourceRelativeUrl|O URL da pasta que contém o arquivo acessado pelo usuário. A combinação dos valores para **SiteUrl**, **SourceRelativeURL**e **sourceFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo acessado pelo usuário.|SharePoint|
-|Assunto|A linha de assunto da mensagem que foi acessada.|Exchange (atividade de caixa de correio)|
+|Subject|A linha de assunto da mensagem que foi acessada.|Exchange (atividade de caixa de correio)|
 |TabType| O tipo de guia adicionado, removido ou atualizado em uma equipe. Os valores possíveis para esta propriedade são:  <br/><br/> **Excelpin** -uma guia do Excel.  <br/> **Ramal** : todos os aplicativos de terceiros e de terceiros; como o Planner, VSTS e formulários.  <br/> **Observações** -guia do OneNote.  <br/> **Pdfpin** -uma guia PDF.  <br/> **Powerbi** -uma guia powerbi.  <br/> **Powerpointpin** -uma guia do PowerPoint.  <br/> **Sharepointfiles** -uma guia do SharePoint.  <br/> **Página da Web** -uma guia site fixo.  <br/> **Wiki-guia** -uma guia wiki.  <br/> **Wordpin** -uma guia do Word.|Microsoft Teams|
 |Target|O usuário em que a ação (identificado na propriedade **Operation** ) foi executada em. Por exemplo, se um usuário convidado for adicionado ao SharePoint ou a uma equipe da Microsoft, esse usuário será listado nessa propriedade.|Azure Active Directory|
 |TeamGuid|A ID de uma equipe no Microsoft Teams.|Microsoft Teams|
@@ -86,13 +86,15 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 |UserID|O usuário que executou a ação (especificada na propriedade **Operation** ) que resultou no registro que está sendo registrado. Observe que os registros da atividade realizada por contas do sistema (como o Sharepoint\sistema ou o NT AUTHORITY\SYSTEM) também estão incluídos no log de auditoria.|Tudo|
 |UserKey|Uma ID alternativa para o usuário identificado na propriedade **userid** . Por exemplo, essa propriedade é preenchida com a identificação exclusiva do Passport (PUID) para eventos executados por usuários no SharePoint. Essa propriedade também pode especificar o mesmo valor que a propriedade **userid** de eventos que ocorrem em outros serviços e eventos executados por contas do sistema.|Tudo|
 |UserSharedWith|O usuário com o qual um recurso foi compartilhado. Essa propriedade será incluída se o valor da propriedade **Operation** for **sharingset**. Este usuário também está listado na coluna **compartilhado com** no relatório.|SharePoint|
-|UserType|O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário. <br/> <br/> **0** -um usuário regular. <br/>**2** -um administrador na sua organização do Office 365. <br/>**3** -um administrador de dataCenter da Microsoft ou uma conta de sistema de datacenter. <br/>**4** -uma conta do sistema. <br/>**5** -um aplicativo. <br/>**6** -entidade de serviço.<br/>**7** -uma política personalizada.<br/>**8** -uma política do sistema.|Tudo|
-|Version|Indica o número da versão da atividade (identificado pela propriedade **Operation** ) registrada.|Tudo|
+|UserType|O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário. <br/> <br/> **0** -um usuário regular. <br/>**2** -um administrador na sua organização do Office 365. <sup>1</sup> <br/>**3** -um administrador de dataCenter da Microsoft ou uma conta de sistema de datacenter. <br/>**4** -uma conta do sistema. <br/>**5** -um aplicativo. <br/>**6** -entidade de serviço.<br/>**7** -uma política personalizada.<br/>**8** -uma política do sistema.|Tudo|
+|Versão|Indica o número da versão da atividade (identificado pela propriedade **Operation** ) registrada.|Tudo|
 |Workload|O serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são:  <br/> <br/>**SharePoint<br/>onedrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**|Tudo|
 ||||
-   
-Observe que as propriedades descritas acima também são exibidas quando você clica em **mais informações** ao exibir os detalhes de um evento específico. 
+
+> [!NOTE]
+> <sup>1</sup> para eventos relacionados ao Azure Active Directory, o valor de um administrador não é usado em um registro de auditoria. Os registros de auditoria para atividades realizadas por administradores indicarão que um usuário regular (por exemplo, **UserType: 0**) realizou a atividade. A propriedade **userid** identificará a pessoa (usuário regular ou administrador) que realizou a atividade.
+
+As propriedades descritas acima também são exibidas quando você clica em **mais informações** ao exibir os detalhes de um evento específico. 
   
 ![Clique em mais informações para exibir as propriedades detalhadas do registro de eventos do log de auditoria](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
   
-

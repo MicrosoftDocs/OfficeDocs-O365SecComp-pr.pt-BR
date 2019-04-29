@@ -1,5 +1,5 @@
 ---
-title: Detectar e corrigir subsídios de consentimento ilícito no Office 365
+title: Detectar e corrigir a concessão de autorização ilícita no Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,14 +14,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
-ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999934"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402949"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir subsídios de consentimento ilícito no Office 365
+# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir a concessão de autorização ilícita no Office 365
 
 **Resumo**  Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
 
@@ -36,7 +36,11 @@ Você precisa pesquisar o **log de auditoria** do Office 365 para encontrar sina
 3. Criar uma pesquisa (todas as atividades e todos os usuários) e filtrar os resultados de consentimento para o aplicativo e adicionar OAuth2PermissionGrant.
 4. Examine as propriedades estendidas e verifique se IsAdminContent está definido como true.
 
-
+> [!NOTE]
+>  
+   - Pode levar até 30 minutos ou até 24 horas após a ocorrência de um evento para que a entrada do log de auditoria correspondente seja exibida nos resultados da pesquisa.
+   - O período de tempo que um registro de auditoria é mantido e pesquisável no log de auditoria depende da sua assinatura do Office 365 e, especificamente, do tipo da licença atribuída a um usuário específico. Para obter mais informações, consulte [log de auditoria](search-the-audit-log-in-security-and-compliance.md).
+      
 Se esse valor for true, ele indicará que alguém com acesso de administrador global pode ter concedido acesso amplo aos dados. Se isso for inesperado, execute etapas para [confirmar um ataque](detect-and-remediate-illicit-consent-grants.md#confirmattack).
 
 <a name="confirmattack"> </a>
@@ -103,11 +107,11 @@ Após identificar um aplicativo com permissões ilícita, você tem várias mane
 - Você também pode desabilitar a entrada para a conta afetada, o que, por sua vez, desabilitará o acesso do aplicativo aos dados dessa conta. Isso não é ideal para a produtividade do usuário final, mas se você estiver trabalhando para limitar o impacto rapidamente, pode ser uma remediação de curto prazo viável.
 - Você pode desativar aplicativos integrados para sua locação. Esta é uma etapa drástica que desabilita a capacidade de os usuários finais concederem o consentimento por todo o locatário. Isso impede que os usuários conceda acidentalmente acesso a um aplicativo mal-intencionado. Isso não é altamente recomendado, pois ele prejudica seriamente a capacidade dos usuários de ser produtiva com aplicativos de terceiros.  Você pode fazer isso seguindo as etapas em [ativando ou desativaNdo aplicativos integrados](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger o Office 365 como um cybersecurity pro
-Sua assinatura do Office 365 vem com um conjunto poderoso de recursos de segurança que você pode usar para proteger seus dados e seus usuários.  Use o [mapa de segurança do Office 365: as principais prioridades para os primeiros 30 dias, 90 dias e além da](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) implementação das práticas recomendaDas da Microsoft recomendadas para proteger seu locatário do Office 365.
-- Tarefas a serem realizadas nos primeiros 30 dias.  Eles têm efeito imediato e têm baixo impacto para os usuários.
-- Tarefas a serem realizadas em 90 dias. Esses tempos são mais demorados para planejar e implementar, mas melhorar muito a postura de segurança.
-- Além de 90 dias. Esses aprimoramentos são criados nos seus primeiros 90 dias de trabalho.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteja o Office 365 como um profissional de cibersegurança
+Sua assinatura do Office 365 vem com um poderoso conjunto de recursos de segurança que você pode usar para proteger seus dados e seus usuários.  Use o [roteiro de segurança do Office 365: Principais prioridades para os primeiros 30 dias, 90 dias e além](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), para implementar práticas recomendadas pela Microsoft para proteger o seu locatário do Office 365.
+- Tarefas a realizar nos primeiros 30 dias.  Estas têm efeito imediato e baixo impacto para seus usuários.
+- Tarefas para realizar em 90 dias. Estas levam um pouco mais de tempo para planejar e implementar, mas melhoram muito sua postura de segurança.
+- Além de 90 dias. Estes aprimoramentos são desenvolvidos nos seus primeiros 90 dias de trabalho.
 
 ## <a name="see-also"></a>Confira também:
 - [Aplicativo inesperado na lista meus aplicativos](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) orienta os administradores por meio de várias ações que podem ser tomadas após perceber que há aplicativos inesperados com acesso aos dados.
