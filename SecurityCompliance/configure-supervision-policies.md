@@ -15,14 +15,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configure as políticas de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259504"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470391"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
@@ -34,31 +33,31 @@ Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão
   
 Siga estas etapas para configurar e usar a supervisão na sua organização do Office 365:
   
-- **Etapa 1 (opcional)** - [configurar grupos de supervisão (opcional)](#step-1---set-up-groups-for-supervision-optional)
+- **Etapa 1 (opcional)**: [configurar grupos de supervisão (opcional)](#step-1---set-up-groups-for-supervision-optional)
 
-    Antes de começar a usar a supervisão, determine quem precisa de comunicações revisadas e quem executará as revisões. Se você quiser começar com apenas alguns usuários para ver como a supervisão funciona, você pode ignorar a configuração de grupos por enquanto.
+    Antes de começar a usar a supervisão, determine quem precisa de comunicações revisadas e quem realiza as revisões. Se você quiser começar com apenas alguns usuários para ver como a supervisão funciona, você pode ignorar a configuração de grupos por enquanto.
 
-- **Etapa 2 (obrigatório)** - [disponibilizar a supervisão em sua organização (obrigatório)](#step-2---make-supervision-available-in-your-organization-required)
+- **Etapa 2 (obrigatório)**: [tornar a supervisão disponível em sua organização (obrigatório)](#step-2---make-supervision-available-in-your-organization-required)
 
     Adicione a si mesmo ao grupo de função de análise de supervisão para que você possa configurar políticas. Qualquer pessoa que tenha essa função atribuída pode acessar a página de **supervisão** no centro de conformidade. Se o email reviewable estiver hospedado no Exchange Online, cada revisor deverá ter [acesso ao PowerShell remoto para o Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- **Etapa 3 (opcional)** - [criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **Etapa 3 (opcional)**: [criar tipos de informações confidenciais personalizadas e dicionários de palavras-chave personalizados](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     Se você precisar de um tipo de informação confidencial personalizado ou de um dicionário de palavras-chave personalizado para sua política de supervisão, você precisará criá-lo antes de iniciar o assistente de supervisão.
 
-- **Etapa 4 (obrigatório)** - [Configurar uma política de supervisão](#step-4---set-up-a-supervision-policy-required)
+- **Etapa 4 (obrigatório)**: [Configurar uma política de supervisão](#step-4---set-up-a-supervision-policy-required)
 
     Você cria políticas de supervisão no centro de conformidade. Essas políticas definem quais comunicações estão sujeitas a análise em sua organização e especifica quem realiza as revisões. As comunicações incluem email e comunicações do Microsoft Teams e comunicações de plataforma de terceiros (como Facebook, Twitter, etc.)
 
-- **Etapa 5-(opcional)** [Testar sua política de supervisão](#step-5---test-your-supervision-policy-optional)
+- **Etapa 5 (opcional)**: [testar sua política de supervisão](#step-5---test-your-supervision-policy-optional)
 
     Teste sua política de supervisão para garantir que ela funcione conforme desejado. É importante garantir que sua estratégia de conformidade esteja atendendo aos padrões.
 
-- **Etapa 6-(opcional)** [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](#step-6---configure-outlook-for-reviewers-optional)
+- **Etapa 6 (opcional)**: [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](#step-6---configure-outlook-for-reviewers-optional)
 
     Configure o Outlook para dar aos revisores o acesso à funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
 
-## <a name="step-1---set-up-groups-for-supervision-optional"></a>Etapa 1-configurar grupos de supervisão (opcional)
+## <a name="step-1-set-up-groups-for-supervision-optional"></a>Etapa 1: configurar grupos de supervisão (opcional)
 
  Ao criar uma política de supervisão, você define quem tem suas comunicações revisadas e quem realiza as revisões. Na política, você usará endereços de email para identificar pessoas ou grupos de pessoas. Para simplificar a configuração, você pode criar grupos para pessoas que tenham suas comunicações revisadas e grupos para pessoas que revisam essas comunicações. Se você estiver usando grupos, poderá precisar de vários. Por exemplo, você deseja monitorar as comunicações entre dois grupos distintos de pessoas ou se quiser especificar um grupo que não será supervisionado.
 
@@ -102,7 +101,7 @@ Para obter mais informações sobre a configuração de grupos, consulte:
 - [Gerenciar grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Visão geral dos grupos do Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Etapa 2-tornar a supervisão disponível em sua organização (obrigatório)
+## <a name="step-2-make-supervision-available-in-your-organization-required"></a>Etapa 2: tornar a supervisão disponível em sua organização (obrigatório)
 
 Para tornar a **supervisão** disponível como uma opção de menu no centro de conformidade, você deve ter a função de administrador de análise de supervisão atribuída.
   
@@ -134,13 +133,13 @@ Para obter mais informações sobre grupos de funções e permissões, consulte 
 
 1. Siga as orientações em [habilitar ou desabilitar o acesso ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Etapa 3: criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados (opcional)
+## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Etapa 3: criar tipos de informações confidenciais personalizados e dicionários de palavras-chave personalizados (opcional)
 
 Para escolher entre os tipos de informações confidenciais personalizadas existentes ou os dicionários de palavras-chave personalizados no assistente de política de supervisão, primeiro você precisará criar esses itens, se necessário.
 
 ### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Criar dicionário de palavras-chave personalizado/léxico (opcional)
 
-Use um editor de texto (como o bloco de notas) para criar um novo arquivo que inclui os termos de palavra-chave que você gostaria de monitorar em uma política de supervisão. Certifique-se de que cada termo está em uma linha separada e salve o arquivo no formato **Unicode/UTF-16 (little endian)** .
+Use um editor de texto (como o bloco de notas) para criar um arquivo que inclui os termos de palavra-chave que você gostaria de monitorar em uma política de supervisão. Certifique-se de que cada termo está em uma linha separada e salve o arquivo no formato **Unicode/UTF-16 (little endian)** .
 
 ### <a name="create-custom-sensitive-information-types"></a>Criar tipos de informações confidenciais personalizados
 
@@ -155,23 +154,24 @@ Use um editor de texto (como o bloco de notas) para criar um novo arquivo que in
 
     Depois que o dicionário personalizado/léxico é criado, você pode exibir as palavras-chave configuradas com o cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) ou adicionar e remover termos usando o cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
 
-## <a name="step-4---set-up-a-supervision-policy-required"></a>Etapa 4-configurar uma política de supervisão (obrigatório)
+## <a name="step-4-set-up-a-supervision-policy-required"></a>Etapa 4: configurar uma política de supervisão (obrigatório)
   
 1. Entre [https://protection.office.com](https://protection.office.com) usando as credenciais de uma conta de administrador na sua organização do Office 365.
 
 2. No centro de conformidade, selecione **supervisão**.
   
-3. Selecione **criar** e siga o assistente para configurar as seguintes páginas da política. Usando o assistente, você irá:
+3. Selecione **criar** e siga o assistente para definir a configuração da política. Usando o assistente, você irá:
 
     - Forneça um nome e uma descrição para a política.
     - Escolha os usuários ou grupos para supervisionar, incluindo a escolha de usuários ou grupos que você gostaria de excluir.
     - Definir as condições da política de supervisão.
     - Escolha se você deseja incluir tipos de informações confidenciais. É aí que você pode selecionar os tipos de informações confidenciais padrão e personalizadas.
+    - Escolha se você deseja habilitar o modelo de linguagem ofensiva. Isso detecta o idioma inadequado enviado ou recebido no corpo de mensagens de email.
     - Defina a porcentagem de comunicação a ser revisada.
     - Escolha os revisores da política. Os revisores podem ser usuários individuais ou [grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Todos os revisores devem ter caixas de correio hospedadas no Exchange Online.
     - Revise suas seleções de política e crie a política.
 
-## <a name="step-5---test-your-supervision-policy-optional"></a>Etapa 5: testar sua política de supervisão (opcional)
+## <a name="step-5-test-your-supervision-policy-optional"></a>Etapa 5: testar sua política de supervisão (opcional)
 
 Depois de criar uma política de supervisão, é uma boa ideia testar para garantir que as condições definidas estejam sendo aplicadas corretamente pela política. Você também pode querer [testar suas políticas de DLP (prevenção de perda de dados)](create-test-tune-dlp-policy.md) se suas políticas de supervisão incluírem tipos de informações confidenciais. Siga estas etapas para testar sua política de supervisão:
 
@@ -183,7 +183,7 @@ Depois de criar uma política de supervisão, é uma boa ideia testar para garan
 
 3. Faça logon em seu locatário do Office 365 como um revisor designado na política de supervisão. Navegue até a **supervisão** > da*política* > personalizada**aberta** para exibir o relatório da política.
 
-## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Etapa 6: configurar o Outlook para revisores (opcional)
+## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Etapa 6: configurar o Outlook para revisores (opcional)
 
 Os revisores que desejam usar o Outlook em vez do painel de supervisão no Office 365 para rever as comunicações devem configurar o cliente do Outlook.
 
@@ -241,7 +241,7 @@ Para a etapa final, os revisores precisam criar um perfil do Outlook para se con
   
 8. Quando solicitado, insira suas credenciais do Office 365.
 
-9. Se tiver êxito, você verá a pasta **supervisão \<– nome\> da política** listada no modo de exibição lista de pastas no Outlook.
+9. Se tiver êxito, a pasta **supervisão \<–\> nome da política** será listada no modo de exibição lista de pastas no Outlook.
 
 ## <a name="powershell-reference"></a>Referência do PowerShell
 
