@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Saiba mais sobre itens não indexados no Exchange e no SharePoint que você pode incluir em uma pesquisa de conteúdo executada por meio do centro de conformidade do & de segurança. '
-ms.openlocfilehash: da51788b3f017811756c3c07294bf6e2712e2e2c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 22eca4e56c21783db348f6569b73257a9cc53dab
+ms.sourcegitcommit: 0baa79a6e6fb72be488556607bc8c441642981a7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262313"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33527649"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Itens parcialmente indexados na Pesquisa de Conteúdo do Office 365
 
@@ -65,24 +65,19 @@ Para obter uma lista de formatos de arquivo com suporte ou desabilitados, confir
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Mensagens e documentos com tipos de arquivo parcialmente indexados podem ser retornados nos resultados da pesquisa
 
-Nem toda mensagem de email com um anexo de arquivo parcialmente indexado ou cada documento do SharePoint parcialmente indexado é retornado automaticamente como um item parcialmente indexado. Isso ocorre porque outras propriedades de mensagem ou de documento, como a propriedade **Subject** nas mensagens de email e as propriedades **title** ou **Author** para documentos estão indexadas e disponíveis para pesquisa. Por exemplo, uma pesquisa de palavra-chave para "financeiro" retornará itens com um anexo de arquivo parcialmente indexado, se essa palavra-chave aparecer no assunto de uma mensagem de email ou no nome de arquivo ou no título de um documento. No enTanto, se a palavra-chave aparecer somente no corpo do arquivo, a mensagem ou o documento seria retornado como um item parcialmente indexado. 
+Nem toda mensagem de email com um anexo de arquivo parcialmente indexado ou cada documento do SharePoint parcialmente indexado é retornado automaticamente como um item parcialmente indexado. Isso ocorre porque outras propriedades de mensagem ou de documento, como a propriedade **Subject** nas mensagens de email e as propriedades **title** ou **Author** para documentos estão indexadas e disponíveis para pesquisa. Por exemplo, uma pesquisa de palavra-chave para "financeiro" retornará itens com um anexo de arquivo parcialmente indexado, se essa palavra-chave aparecer no assunto de uma mensagem de email ou no nome de arquivo ou no título de um documento. No entanto, se a palavra-chave aparecer somente no corpo do arquivo, a mensagem ou o documento seria retornado como um item parcialmente indexado. 
   
 Da mesma forma, as mensagens com anexos de arquivo parcialmente indexados e documentos de um tipo de arquivo parcialmente indexado são incluídas nos resultados da pesquisa quando outras propriedades de mensagem ou documento, que são indexadas e pesquisáveis, atendem aos critérios de pesquisa. Propriedades de mensagem indexadas para pesquisa incluem datas enviadas e recebidas, remetente e destinatário, o nome do arquivo de um anexo e o texto no corpo da mensagem. Propriedades do documento indexadas para pesquisa incluem datas criadas e modificadas. Assim, mesmo que um anexo de mensagem possa ser um item parcialmente indexado, a mensagem será incluída nos resultados de pesquisa regulares se o valor de outras propriedades de mensagem ou de documento corresponder aos critérios de pesquisa.
   
 Para obter uma lista de propriedades de email e de documento que você pode pesquisar usando o recurso de pesquisa no centro de conformidade do & de segurança, consulte [keyword queries and Search Conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-
-  
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Itens parcialmente indexados incluídos nos resultados da pesquisa
-<a name="unindexeditemsresults"> </a>
 
-Sua organização pode ser necessária para identificar e realizar análises adicionais sobre itens parcialmente indexados para determinar o que eles são, o que eles contêm e se são relevantes para uma investigação específica. Como explicado anteriormente, os itens parcialmente indexados nos locais de conteúdo pesquisados são incluídos automaticamente nos resultados de pesquisa estimados. Você tem a opção de incluir esses itens parcialmente indexados ao exportar os resultados da pesquisa ou preparar os resultados da pesquisa para descoberta eletrônica avançada. Para incluir itens parcialmente indexados quando você estiver exportando resultados de pesquisa ou preparando-os para descoberta eletrônica avançada, selecione uma das opções para incluir itens que tenham um formato não reconhecido, sejam criptografadas ou não foram indexadas por outros motivos.
+Sua organização pode ser necessária para identificar e realizar análises adicionais sobre itens parcialmente indexados para determinar o que eles são, o que eles contêm e se são relevantes para uma investigação específica. Como explicado anteriormente, os itens parcialmente indexados nos locais de conteúdo pesquisados são incluídos automaticamente nos resultados de pesquisa estimados. Você tem a opção de incluir esses itens parcialmente indexados ao exportar os resultados da pesquisa ou preparar os resultados da pesquisa para descoberta eletrônica avançada.
   
 Tenha em mente o seguinte sobre itens parcialmente indexados:
   
-- Quando você executa uma pesquisa de conteúdo, o número total e o tamanho de itens parcialmente indexados (retornados pela consulta de pesquisa) são exibidos em estatísticas de pesquisa no painel de detalhes, como rotulado como "itens não indexados".
-    
-- Quando você exporta os resultados da pesquisa e inclui itens parcialmente indexados, os itens do Exchange parcialmente indexados são exportados para um arquivo PST separado para cada caixa de correio na qual eles estão localizados, ou como mensagens individuais, se você selecionar a opção para baixar itens do Exchange como enviadas. os itens do SharePoint parcialmente indexados são exportados para uma pasta chamada não **rastreável**.
+- Quando você executa uma pesquisa de conteúdo, o número total e o tamanho dos itens do Exchange parcialmente indexados (retornados pela consulta de pesquisa) são exibidos em estatísticas de pesquisa no painel de detalhes e rotulados como **itens indexados**. Observe que as estatísticas sobre itens parcialmente indexados exibidas no painel de detalhes não incluem itens parcialmente indexados no SharePoint ou no OneDrive.
     
 - Se a pesquisa de que você está exportando os resultados for uma pesquisa de locais de conteúdo específicos ou de todos os locais de conteúdo em sua organização, somente os itens não indexados de locais de conteúdo que contêm itens que correspondam aos critérios de pesquisa serão exportados. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. O motivo disso é que exportar itens parcialmente indexados de muitos locais na organização pode aumentar a probabilidade de erros de exportação e aumentar o tempo necessário para exportar e baixar os resultados da pesquisa.
     
@@ -91,6 +86,17 @@ Tenha em mente o seguinte sobre itens parcialmente indexados:
 - Se você optar por incluir todos os itens de caixa de correio nos resultados da pesquisa, ou se uma consulta de pesquisa não especificar nenhuma palavra-chave ou apenas especificar um intervalo de datas, os itens parcialmente indexados podem não ser copiados para o arquivo PST que contém os itens parcialmente indexados. Isso ocorre porque todos os itens, incluindo qualquer item parcialmente indexado, serão automaticamente incluídos nos resultados normais da pesquisa.
     
 - Os itens parcialmente indexados não estão disponíveis para visualização. Você precisa exportar os resultados da pesquisa para exibir itens parcialmente indexados retornados pela pesquisa.
+
+Além disso, quando você exporta os resultados da pesquisa e inclui itens parcialmente indexados nos itens exportar, parcialmente indexados de itens do SharePoint são **** exportados para uma pasta chamada não rastreável. Quando você exporta itens do Exchange parcialmente indexados, eles são exportados de forma diferente, dependendo de se ou não os itens parcialmente indexados correspondiam à consulta de pesquisa e à configuração das configurações de exportação. 
+
+A tabela a seguir mostra o comportamento de exportação de itens indexados e parcialmente indexados e se cada um é ou não incluído para as diferentes definições de configuração de exportação.
+
+|**Exportar configuração**|**Itens indexados que correspondem à consulta de pesquisa**|**Itens parcialmente indexados que correspondem à consulta de pesquisa**|**Itens parcialmente indexados que não correspondem à consulta de pesquisa**|
+|:-----|:-----|:-----|:-----|
+|Exportar somente itens indexados  <br/> |Exported<br/> |Exportado (incluído com os itens indexados que são exportados)<br/>  |Não exportado <br/>|
+|Exportar somente itens parcialmente indexados  <br/> |Não exportado  <br/> |Exportado (como itens parcialmente indexados)<br/> |Exportado (como itens parcialmente indexados)|
+|Exportar itens indexados e parcialmente indexados  <br/> |Exported<br/> |Exportado (incluído com os itens indexados que são exportados)<br/>  |Exportado (como itens parcialmente indexados)<br/>|
+||||
 
 ## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Itens parcialmente indexados excluídos dos resultados da pesquisa
 
@@ -122,7 +128,6 @@ Para obter uma lista de limites de indexação para documentos do SharePoint, co
 
   
 ## <a name="more-information-about-partially-indexed-items"></a>Mais informações sobre itens parcialmente indexados
-<a name="moreinfo"> </a>
 
 - Conforme mencionado anteriormente, como as propriedades message e Document e seus metadados são indexados, uma pesquisa de palavra-chave poderá retornar resultados se essa palavra-chave aparecer nos metadados indexados. No entanto, essa mesma pesquisa de palavra-chave poderá não retornar o mesmo item se a palavra-chave só aparece no conteúdo de um item com um tipo de arquivo sem suporte. Nesse caso, o item seria retornado como um item parcialmente indexado.
     
