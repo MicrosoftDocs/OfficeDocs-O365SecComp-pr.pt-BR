@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crie políticas de alerta no centro de segurança e conformidade no Office 365 e no Microsoft 365 para monitorar possíveis ameaças, perda de dados e problemas de permissões. Em seguida, você pode exibir e gerenciar os alertas gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: e88c3657a03b3cb0ca27b9ae7489e37e986e8199
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243039"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516499"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Políticas de alerta no centro de conformidade e segurança
 
 Você pode usar a nova política de alerta e as ferramentas de painel de alerta nos centros de segurança e conformidade do Office 365 e Microsoft 365 para criar políticas de alerta e, em seguida, exibir os alertas gerados quando os usuários realizam atividades que correspondem às condições de uma política de alerta . As políticas de alerta criam e expandem a funcionalidade dos alertas de atividade, permitindo que você categorize a política de alerta, aplique a política a todos os usuários em sua organização, defina um nível de limite para quando um alerta for disparado e decida se deseja ou não receber emails por. Há também uma página **exibir alertas** no centro de conformidade e segurança, onde você pode exibir e filtrar alertas, definir um status de alerta para ajudá-lo a gerenciar alertas e, em seguida, ignorar alertas após ter resolvido ou resolvido o incidente subjacente. Também expandimos o tipo de eventos para os quais você pode criar alertas. Por exemplo, você pode criar políticas de alerta para acompanhar incidentes de perda de dados e atividade de malware. Por fim, também incluímos diversas políticas de alerta padrão que ajudam a monitorar a atribuição de privilégios de administrador no Exchange Online, nos ataques de malware e em níveis incomuns de exclusões de arquivos e compartilhamento externo. 
   
 > [!NOTE]
-> As políticas de alerta estão disponíveis para organizações que possuem uma assinatura do Office 365 Enterprise ou do Office 365 governo dos EUA, E3/G3 ou E5/G5. No enTanto, algumas funcionalidades avançadas só estão disponíveis para organizações com uma assinatura do E5/G5 ou para organizações que possuem uma assinatura E1/G1 ou E3/G3 e um complemento de proteção avançada contra ameaças (ATP) P2 ou Office 365 Advanced Compliance scriçõe. A funcionalidade que requer uma assinatura do E5/G5 ou complemento é realçada neste tópico. Observe também que as políticas de alerta estão disponíveis nos ambientes do Office 365 GCC, GCC High e DoD US governamentais.
+> As políticas de alerta estão disponíveis para organizações que possuem uma assinatura do Office 365 Enterprise ou do Office 365 governo dos EUA, E3/G3 ou E5/G5. No entanto, algumas funcionalidades avançadas só estão disponíveis para organizações com uma assinatura do E5/G5 ou para organizações que possuem uma assinatura E1/G1 ou E3/G3 e 365 um complemento de proteção avançada contra ameaças (ATP) P2 ou Office 365 Advanced Compliance scriçõe. A funcionalidade que requer uma assinatura do E5/G5 ou complemento é realçada neste tópico. Observe também que as políticas de alerta estão disponíveis nos ambientes do Office 365 GCC, GCC High e DoD US governamentais.
   
 ## <a name="how-alert-policies-work"></a>Como funcionam as políticas de alerta
 
@@ -35,7 +35,7 @@ Veja aqui uma rápida visão geral de como as políticas de alerta funcionam e o
   
 ![Visão geral de como as políticas de alerta funcionam](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Um administrador de sua organização cria, configura e ativa uma política de alerta usando a página **políticas de alerta** no centro de conformidade e segurança. Você também pode criar políticas de alerta usando o cmdlet **New-ProtectionAlert** no PowerShell. Para criar políticas de alerta, você precisa ter a função de configuração da organização ou a função Gerenciar alertas no centro de conformidade do & de segurança.
+1. Um administrador de sua organização cria, configura e ativa uma política de alerta usando a página **políticas de alerta** no centro de conformidade e segurança. Você também pode criar políticas de alerta usando o cmdlet **New-ProtectionAlert** no PowerShell do centro de conformidade do _AMP_ de segurança. Para criar políticas de alerta, você precisa receber a função Gerenciar alertas ou a função de configuração da organização no centro de segurança e conformidade.  
     
 2. Um usuário realiza uma atividade que corresponde às condições de uma política de alerta. No caso de ataques de malware, as mensagens de email infectadas enviadas para os usuários em sua organização irão disparar um alerta.
     
@@ -75,7 +75,7 @@ Uma política de alerta consiste nas configurações e condições a seguir.
     
   - Prevenção contra perda de dados
 
-  - Fluxo de emails
+  - Fluxo de mensagens
     
   - Permissões
     
@@ -109,7 +109,7 @@ A tabela também indica os planos do governo dos EUA do Office 365 Enterprise e 
 |**Mensagens de email contendo malware removidos após a entrega** <br/> |Gera um alerta quando qualquer mensagem que contenha malware é entregue às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas de correio do Exchange Online usando a [limpeza automática de zero hora](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge). Essa política tem uma **** configuração de severidade informativa e dispara automaticamente a [investigação e a resposta automáticas do Office 365](https://go.microsoft.com/fwlink/?linkid=2084737).<br/> |Gerenciamento de ameaças <br/> |Licença de complemento do Microsoft E5/G5 ou do Office 365 ATP P2  <br/> |
 |**Mensagens de email que contêm URLs de phishing removidos após a entrega** <br/> |Gera um alerta quando qualquer mensagem que contenha Phish é entregue às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas de correio do Exchange Online usando a [limpeza automática de zero hora](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge). Essa política tem uma **** configuração de severidade informativa e dispara automaticamente a [investigação e a resposta automáticas do Office 365](https://go.microsoft.com/fwlink/?linkid=2084737).<br/> |Gerenciamento de ameaças <br/> |Licença de complemento do Microsoft E5/G5 ou do Office 365 ATP P2  <br/> |
 |**Email relatado por usuário como malware ou phishing** <br/> |Gera um alerta quando os usuários na sua organização relatam mensagens como email de phishing usando o suplemento de mensagem de relatório. Essa política tem uma **** configuração de severidade informativa. Para obter mais informações sobre esse suplemento, confira [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Para os clientes do Office 365 ATP P2, e5, G5, este alerta dispara automaticamente a [investigação e a resposta automáticas do office 365](https://go.microsoft.com/fwlink/?linkid=2084737).  <br/> |Gerenciamento de ameaças <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
-|**As mensagens foram atrasadas** <br/> |Gera um alerta quando o Office 365 não consegue enviar mensagens de email para sua organização local ou para servidores parceiros usando um conector. Quando isso acontecer, a mensagem será enfileirada no Office 365. Este alerta é disparado quando há 2.000 mensagens ou mais que foram enfileiradas por mais de uma hora. Essa política tem uma configuração de **alta** gravidade.  <br/> |Fluxo de emails<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
+|**As mensagens foram atrasadas** <br/> |Gera um alerta quando o Office 365 não consegue enviar mensagens de email para sua organização local ou para servidores parceiros usando um conector. Quando isso acontecer, a mensagem será enfileirada no Office 365. Este alerta é disparado quando há 2.000 mensagens ou mais que foram enfileiradas por mais de uma hora. Essa política tem uma configuração de **alta** gravidade.  <br/> |Fluxo de mensagens<br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
 |**Campanha de malware detectada após a entrega** <br/> |Gera um alerta quando um número excepcionalmente grande de mensagens contendo malware é entregue às caixas de correio em sua organização. Se esse evento ocorrer, o Office 365 removerá as mensagens infectadas das caixas de correio do Exchange Online. Essa política tem uma configuração de **alta** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença de complemento do Microsoft E5/G5 ou do Office 365 ATP P2  <br/> |
 |**Campanha de malware detectada e bloqueada** <br/> |Gera um alerta quando alguém tentava enviar um número excepcionalmente grande de mensagens de email contendo um determinado tipo de malware para os usuários em sua organização. Se esse evento ocorrer, as mensagens infectadas serão bloqueadas pelo Office 365 e não serão entregues às caixas de correio. Essa política tem uma configuração de **baixa** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença de complemento do Microsoft E5/G5 ou do Office 365 ATP P2  <br/> |
 |**Campanha de malware detectada no SharePoint e no OneDrive** <br/> |Gera um alerta quando um volume excepcionalmente alto de malware ou vírus é detectado em arquivos localizados em sites do SharePoint ou em contas do OneDrive em sua organização. Essa política tem uma configuração de **alta** gravidade.  <br/> |Gerenciamento de ameaças<br/> |Licença de complemento do Microsoft E5/G5 ou do Office 365 ATP P2  <br/> |
@@ -146,9 +146,6 @@ Você pode usar os filtros a seguir para exibir um subconjunto de todos os alert
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permissões de RBAC necessárias para exibir alertas
 
-> [!NOTE]
-> A funcionalidade descrita nesta seção será implantada nas organizações que começam em 20 de fevereiro de 2019 e será concluída no mundo todo até o final de 2019 de março.
-
 As permissões de controle de acesso de base de função (RBAC) atribuídas aos usuários em sua organização determinam quais alertas um usuário pode ver na página **exibir alertas** . Como isso é feito? As funções de gerenciamento atribuídas aos usuários (com base em sua associação em grupos de função no centro de conformidade do & de segurança) determinam quais categorias de alerta um usuário pode ver na página **exibir alertas** . Aqui estão alguns exemplos:
 
 - Os membros do grupo de função gerenciamento de registros podem exibir apenas os alertas gerados por políticas de alerta atribuídas à categoria de **governança de dados** .
@@ -163,12 +160,12 @@ A tabela a seguir lista as funções necessárias para exibir alertas das 6 cate
 
 Para ver a qual categoria uma política de alerta padrão é atribuída, confira a tabela na seção [políticas de alerta padrão](#default-alert-policies) .
 
-|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de emails|Permissões|Gerenciamento de ameaças|Outros | 
+|<br/>|Governança de dados|Prevenção contra perda de dados|Fluxo de mensagens|Permissões|Gerenciamento de ameaças|Outros | 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Logs de auditoria <br/> |         ||         |         |         |         |
 |Gerenciamento de casos <br/>|         |         |         |         |         |         |
 |Administrador de Conformidade<br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Pesquisa de conformidade<br/>|         |         |         |         |         |         |
+|Pesquisa de Conformidade<br/>|         |         |         |         |         |         |
 |Gerenciamento de dispositivo<br/>|         |         |         |         |         |         |
 |Gerenciamento de descarte<br/>|         |         |         |         |         |         |
 |Gerenciamento de conformidade de DLP<br/>|         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
@@ -180,7 +177,7 @@ Para ver a qual categoria uma política de alerta padrão é atribuída, confira
 |Gerenciamento de registros <br/>|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Gerenciamento de retenção <br/>| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Examinar <br/>|         |         |         |         |         |         |
-|DesCriptografia do RMS<br/>|         |         |         |         |         |         |
+|Descriptografia do RMS<br/>|         |         |         |         |         |         |
 |Gerenciamento de função<br/>|         |         |         |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
 |Pesquisa e limpeza<br/>|         |         |         |         |         |         |
 |Administrador de segurança<br/>||![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -222,11 +219,11 @@ Após os alertas terem sido gerados e exibidos na página **exibir alertas** no 
     
   - O número de vezes que a atividade rastreada pelo alerta foi executada. Observe que esse número pode não coincidir com o número real de alertas relacionados listados na página exibir alertas, pois os alertas adicionais podem ter sido disparados.
     
-  - Um link para uma lista de atividades que inclui um item para cada atividade que foi executada que disparou o alerta. Cada entrada dessa lista identifica quando a atividade ocorreu, o nome da operação real (como "fileDeleted") e o usuário que realizou a atividade, o objeto (como um arquivo, uma ocorrência de descoberta eletrônica ou uma caixa de correio) em que a atividade foi executada e o IP Endereço do computador do usuário. Para alertas relacionados a malware, esses links para uma lista de mensagens.
+  - Um link para uma lista de atividades que inclui um item para cada atividade que foi executada que disparou o alerta. Cada entrada dessa lista identifica quando a atividade ocorreu, o nome da operação real (como "filedeleted") e o usuário que realizou a atividade, o objeto (como um arquivo, uma ocorrência de descoberta eletrônica ou uma caixa de correio) em que a atividade foi executada e o IP Endereço do computador do usuário. Para alertas relacionados a malware, esses links para uma lista de mensagens.
     
   - O nome (e o link para) da política de alerta correspondente.
     
-- **Suprimir notificações por email** -você pode desativar (ou suprimir) notificações por email da página de submenu de um alerta. Quando você suprimir notificações por email, o Office 365 não enviará notificações quando atividades ou eventos que corresponderem às condições da política de alerta. No enTanto, os alertas continuarão a ser acionados quando as atividades realizadas por usuários corresponderem às condições da política de alerta. Você também pode desativar as notificações por email editando a política de alerta.
+- **Suprimir notificações por email** -você pode desativar (ou suprimir) notificações por email da página de submenu de um alerta. Quando você suprimir notificações por email, o Office 365 não enviará notificações quando atividades ou eventos que corresponderem às condições da política de alerta. No entanto, os alertas continuarão a ser acionados quando as atividades realizadas por usuários corresponderem às condições da política de alerta. Você também pode desativar as notificações por email editando a política de alerta.
     
 - **Resolver alertas** -é possível marcar um alerta como resolvido na página de menu de um alerta (que define o status do alerta como **resolvido**). A menos que você altere o filtro, os alertas resolvidos não são exibidos na página **exibir alertas** . 
     
