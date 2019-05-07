@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c521ca4485b00963c7d144b3013134fcaa30f298
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
+ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33641570"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gerenciar conjuntos de análise na descoberta eletrônica avançada
 
@@ -41,16 +41,16 @@ Os conjuntos de revisão podem ser criados na guia **conjuntos de revisão** cli
 
 ![Adicionar conjunto de revisão](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Um submenu é exibido.  Basta nomear o conjunto de revisão pode clicar no botão **salvar**.  O novo conjunto de revisão é exibido na guia **conjuntos de revisão** .
+Na página **Adicionar** submenu do conjunto de revisão, digite um nome para o conjunto de revisão e clique em **salvar**.  O novo conjunto de revisão é exibido na lista da guia **conjuntos de revisão** .
 
-![Adicionar submenu de conjunto de revisão](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+![Novo conjunto de revisão listado na guia conjunto de revisão](../media/AeDnewreviewset.png)
 
-Há três maneiras de adicionar conteúdo a um conjunto de revisão:
+Há três maneiras diferentes de adicionar dados a uma análise definida em uma ocorrência de descoberta eletrônica avançada.
+
+![Três maneiras de adicionar a um conjunto de revisão](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Adicionar resultados de pesquisa a um conjunto de revisão](add-data-to-review-set.md)
 
 2. [Carregar dados que não sejam do Office 365 em um conjunto de revisão](load-non-office365-data.md)
 
-3. [Adicione dados a um conjunto de revisão de outro conjunto de revisão](add-data-to-review-set-from-another-review-set.md).
-
-![revisar conjuntos](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+3. [Adicionar dados a um conjunto de revisão de outro conjunto de revisão](add-data-to-review-set-from-another-review-set.md)
