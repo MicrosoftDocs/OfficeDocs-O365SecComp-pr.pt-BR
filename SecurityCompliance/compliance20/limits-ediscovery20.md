@@ -1,5 +1,5 @@
 ---
-title: Limites avançados de descoberta eletrônica (prévia)
+title: Limites avançados de descoberta eletrônica
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,32 +12,32 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0c5213a49744b997037b084f33dce1ab47df05bf
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243792"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834940"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a>Limites da Descoberta Eletrônica Avançada (visualização)
+# <a name="limits-in-advanced-ediscovery"></a>Limites na descoberta eletrônica avançada
 
-Este artigo descreve os limites da descoberta eletrônica avançada (visualização).
+Este artigo descreve os limites da descoberta eletrônica avançada.
 
 ## <a name="case-limits"></a>Limites de caso
 
-A tabela a seguir lista os limites para casos na descoberta eletrônica avançada (visualização).
+A tabela a seguir lista os limites para casos na descoberta eletrônica avançada.
 
 |**Descrição do limite**|**Limite**|
   |:-----|:-----|
   |Número máximo de casos.  <br/> |50  <br/> |
-  |Número total de documentos que podem ser adicionados a um caso (para todos os conjuntos de trabalho no caso).  <br/> |1 milhão  <br/> |
-  |Tamanho total do arquivo por carga.  <br/> |100 GB  <br/> |
+  |Número total de documentos que podem ser adicionados a um caso (para todos os conjuntos de revisão no caso).  <br/> |1 milhão  <br/> |
+  |Tamanho total do arquivo por conjunto de carga.  <br/> |100 GB  <br/> |
   |Tamanho máximo de um único arquivo.   <br/> |100 MB <sup>1</sup> <br/> |
   |Número máximo de caracteres extraídos de um único arquivo.  <br/> |10 milhões <sup>1</sup> <br/> |
-  |Profundidade de itens incorporados em um documento.  <br/> |25 <sup>1</sup> <br/> |
+  |Profundidade máxima de itens incorporados em um documento.  <br/> |25 <sup>1</sup> <br/> |
 |||
  > [!NOTE]
-> <sup>1</sup> todos os itens que excederem um limite de arquivo único aparecerão como erros de processamento. 
+> <sup>1</sup> qualquer item que exceda um limite de arquivo único aparecerá como um erro de processamento. 
 
 ## <a name="indexing-limits"></a>Limites de indexação
 

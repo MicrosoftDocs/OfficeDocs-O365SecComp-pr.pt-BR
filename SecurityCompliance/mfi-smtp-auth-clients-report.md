@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre o relatório de clientes de autenticação SMTP no painel de fluxo de emails no centro de conformidade do & de segurança.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252525"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868549"
 ---
 # <a name="smtp-auth-clients-report"></a>Relatório de clientes de autenticação SMTP
-
-> [!NOTE]
-> Os recursos descritos neste tópico não foram implantados em todas as organizações do Office 365 e estão sujeitos a alterações.
 
 O relatório de **clientes de autenticação SMTP** realça o uso do protocolo de envio de cliente de autenticação SMTP por usuários ou contas de sistema em sua organização. Este protocolo herdado (que usa o ponto de extremidade smtp.office365.com) só oferece autenticação básica e é suscetível a uso por contas comprometidas para enviar emails.  Este relatório permite verificar atividades incomuns. Ele também mostra os dados de uso de TLS para clientes ou dispositivos que usam a autenticação SMTP.
 

@@ -1,51 +1,42 @@
 ---
-title: Política de criptografia de mensagem do Office 365 para informações confidenciais
+title: Criar uma política de tipo de informação confidencial para sua organização usando a criptografia de mensagem do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2019
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Resumo: política de criptografia de mensagem do Office 365 para tipos de informações confidenciais agora disponível.'
-ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_Enterprise
+description: 'Resumo: política de criptografia de mensagem do Office 365 para tipos de informações confidenciais.'
+ms.openlocfilehash: 44966303ec7c58fdd82f733e1922073de848cf73
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261259"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834830"
 ---
-# <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Política de criptografia de mensagem do Office 365 para informações confidenciais
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Criar uma política de tipo de informação confidencial para sua organização usando a criptografia de mensagem do Office 365
 
-Atualização (1/30/19): em outubro de 2018, trabalhamos com uma pequena amostra de clientes para entender se podemos simplificar a proteção criptografando automaticamente emails confidenciais com base em determinados tipos de informações confidenciais. Com base nos comentários positivos deste exemplo, decidimos expandir para um perfil mais variado de locatários em dezembro de 2018. Depois de comunicar a próxima implantação para selecionar locatários, ouvimos seus comentários e determinamos que os clientes com ambientes mais complexos queriam implementar as regras com mais cautela, e estamos, portanto, ajustando nossos planos.
-
-Se sua organização foi selecionada para a distribuição a partir de 15 de janeiro de 2019, não iremos distribuir a política automática. Em vez disso, forneceremos instruções neste artigo sobre como você pode concluir o yourselves de distribuição. Continue lendo para saber como.
-
-||
-|:-----|
-|Este artigo faz parte de uma série maior de artigos sobre a criptografia de mensagens do Office 365. Este artigo destina-se a administradores e ITPros. Se você estiver apenas procurando informações sobre como enviar ou receber uma mensagem criptografada, consulte a lista de artigos na [ome (criptografia de mensagens do Office 365)](ome.md) e localize o artigo que melhor atende às suas necessidades. |
-||
-
-## <a name="how-to-create-the-sensitive-information-type-policy-for-your-tenant"></a>Como criar a política de tipo de informação confidencial para o locatário
-
-Você pode usar as regras de fluxo de email do Exchange ou a prevenção de perda de dados do Office 365 (DLP) para criar a política de tipo de informação confidencial. Para criar uma regra de fluxo de email do Exchange, você pode usar o centro de administração do Exchange (Eat) ou o PowerShell.
+Você pode usar as regras de fluxo de email do Exchange ou a prevenção de perda de dados do Office 365 (DLP) para criar uma política de tipo de informação confidencial com a criptografia de mensagem do Office 365. Para criar uma regra de fluxo de email do Exchange, você pode usar o centro de administração do Exchange (Eat) ou o PowerShell.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Para criar a política usando regras de fluxo de emails no Eat
 
-Entre no centro de administração do Exchange (Eat) e vá para**regras**de **fluxo** > de emails. Lá, crie uma regra que aplique a criptografia de mensagem do Office 365 com base em condições como a presença de determinadas palavras-chave ou tipos de informações confidenciais na mensagem ou no anexo.
+Entre no centro de administração do Exchange (Eat) e vá para **** > **regras**de fluxo de emails. Na página regras, crie uma regra que aplique a criptografia de mensagem do Office 365. Você pode criar uma regra com base em condições como a presença de determinadas palavras-chave ou tipos de informações confidenciais na mensagem ou no anexo.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Para criar a política usando regras de fluxo de email no PowerShell
 
-Usando uma conta corporativa ou de estudante que tenha permissões de administrador global em sua organização do Office 365, inicie uma sessão do Windows PowerShell e conecte-se ao Exchange Online. Para obter instruções, consulte [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Use os cmdlets Set-IRMConfiguration e New-TransporRule para criar a política.
+Use uma conta corporativa ou de estudante que tenha permissões de administrador global em sua organização do Office 365, inicie uma sessão do Windows PowerShell e conecte-se ao Exchange Online. Para obter instruções, consulte [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Use os cmdlets Set-IRMConfiguration e New-TransportRule para criar a política.
 
 ### <a name="example-mail-flow-rule-created-with-powershell"></a>Regra de fluxo de emails de exemplo criada com o PowerShell
 
-A execução dos seguintes comandos no PowerShell cria uma regra de fluxo de email do Exchange que criptografa automaticamente os emails que estão fora da sua organização com a política *somente criptografia* se os emails ou seus anexos contiverem as seguintes informações confidenciais tipos de informações:
+Execute os seguintes comandos no PowerShell para criar uma regra de fluxo de email do Exchange que criptografa automaticamente os emails enviados fora da sua organização com a política *somente criptografia* se os emails ou seus anexos contiverem as seguintes informações confidenciais digitar
 
 - Número de roteamento ABA
 - Número do cartão de crédito
@@ -62,7 +53,7 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>Como os destinatários acessam anexos
 
-Após a criptografia de uma mensagem, os destinatários terão acesso irrestrito aos anexos depois que acessarem e abrirem seus emails criptografados.
+Depois que o Office 365 criptografa uma mensagem, os destinatários têm acesso irrestrito aos anexos quando acessam e abrem seus emails criptografados.
 
 ## <a name="to-prepare-for-this-change"></a>Para se preparar para essa alteração
 
@@ -73,12 +64,11 @@ Talvez você queira atualizar qualquer material de treinamento e documentação 
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Exibir essas alterações no log de auditoria
 
-Esta atividade é auditada e está disponível para os administradores do Office 365. A operação é ' New-TransportRule ' e um trecho de uma amostra de entrada de auditoria da pesquisa de log de auditoria no centro de conformidade do & de segurança está abaixo:
+O Office 365 audita essa atividade e a disponibiliza para os administradores do Office 365. A operação é ' New-TransportRule ' e um trecho de uma amostra de entrada de auditoria da pesquisa de log de auditoria no centro de conformidade do & de segurança está abaixo:
 
-|     |
-| --- |
-| *{"CreationTime": "2018-11-28T23:35:01", "ID": "a1b2c3d4-DAA0-4c4f-a019-03a1234a1b0c", "Operation": "New-TransportRule", "OrganizationId": "123456-221d-12345", "RecordType": 1, "ResultStatus": "true", "UserKey": "operador da Microsoft", " UserType ": 3," Version ": 1," Workload ":" Exchange "," ClientIP ":" 123.456.147.68:17584 "," ObjectId ":" "," UserId ":" Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso. onmicrosoft. com "," OriginatingServer ":" CY4PR13MBXXXX ( 15.20.1382.008) "," paraMeters ": {" Name ":" organização "," valor ":" 123456-221d-12346 "{" Name ":" ApplyRightsProtectionTemplate "," value ":" Encrypt "}, {" Name ":" Name "," value ":" criptografar emails confidenciais (regra de entrada) "}, {" Name ":" MessageContainsDataClassifications "... etc.* |
-| |
+```text
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Para desabilitar ou personalizar a política de tipos de informações confidenciais
 

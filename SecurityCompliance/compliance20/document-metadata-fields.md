@@ -1,5 +1,5 @@
 ---
-title: Campos de metadados de documentos na descoberta eletrônica avançada (visualização)
+title: Campos de metadados de documentos na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75550d48a474fc6429a780d0a03d28745e20e1f7
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251849"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33835051"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>Campos de metadados de documentos na descoberta eletrônica avançada (visualização)
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadados de documentos na descoberta eletrônica avançada
 
-A tabela a seguir lista os campos de metadados para documentos em um conjunto de trabalho em um caso de descoberta eletrônica avançada (versão prévia). A tabela indica o nome do campo de metadados, se o campo pode ser pesquisado durante a execução de uma consulta em um conjunto de trabalho, se o campo está presente ao exibir os metadados de arquivo de um documento selecionado em um conjunto de trabalho e se o campo é incluído quando os documentos são exportados. 
-
-A tabela a seguir lista os campos de metadados para documentos em um conjunto de trabalho em um caso de descoberta eletrônica avançada (versão prévia). A tabela indica o nome do campo de metadados, se o campo pode ser pesquisado durante a execução de uma consulta em um conjunto de trabalho, se o campo está presente ao exibir os metadados de arquivo de um documento selecionado em um conjunto de trabalho e se o campo é incluído quando os documentos são exportados. 
+A tabela neste artigo lista os campos de metadados para documentos em um conjunto de revisão em um caso de descoberta eletrônica avançada. A tabela indica o nome do campo de metadados, se o campo pode ser pesquisado durante a execução de uma consulta em um conjunto de revisão, se o campo está presente ao exibir os metadados de arquivo de um documento selecionado em um conjunto de revisão e se o campo é incluído quando os documentos a re-exportado. 
 
 > [!NOTE]
-> Os valores entre parênteses na coluna **conjunto de trabalho pesquisável** é o nome da propriedade que você pode pesquisar. Os valores entre parênteses na coluna de **metadados de arquivo visível** é o nome da propriedade que é exibida quando você está exibindo os metadados do arquivo.
+> Os valores entre parênteses na coluna de **conjunto de revisão pesquisável** é o nome da propriedade que você pode pesquisar. Os valores entre parênteses na coluna de **metadados de arquivo visível** é o nome da propriedade que é exibida quando você está exibindo os metadados do arquivo.
 
-|**Nome do campo** </br>|**Pesquisável no conjunto de trabalho** |**Visível nos metadados do arquivo** |**Exported** |
+|**Nome do campo** </br>|**Pesquisável no conjunto de análise** |**Visível nos metadados do arquivo** |**Exported** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Marcas de caso                  | Sim (marcas)                                      |                         | Sim         |
 |Rótulos de conformidade          |                                                 |                         | Sim         |
@@ -86,7 +84,7 @@ A tabela a seguir lista os campos de metadados para documentos em um conjunto de
 |Caminho de texto extraído        |                                                 |                         | Sim         |
 |ID da família                  | Sim (FamilyID)                                  |   Sim (FamilyID)        | Sim         |
 |Tamanho da família                |                                                 |                         | Sim         |
-|Classe de arquivo                 | Sim (fileClass)                                 |   Sim (classe de arquivo)      | Sim         |
+|Classe de arquivo                 | Sim (fileclass)                                 |   Sim (classe de arquivo)      | Sim         |
 |ID de arquivo                    | Sim (fileid)                                    |   Sim (ID)              | Sim         |
 |Tem texto                   |                                                 |                         | Sim         |
 |Tipo inclusivo             | Sim (inclusivo)                             |   Sim (tipo inclusivo)  | Sim         |

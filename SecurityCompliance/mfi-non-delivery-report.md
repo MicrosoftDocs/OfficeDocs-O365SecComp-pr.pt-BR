@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem aprender sobre a notificação de falha na entrega no painel de fluxo de emails no centro de conformidade do & de segurança.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267124"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868599"
 ---
 # <a name="non-delivery-report"></a>Notificação de falha na entrega
-
-> [!NOTE]
-> Os recursos descritos neste tópico não foram implantados em todas as organizações do Office 365 e estão sujeitos a alterações.
 
 A notificação de falha na **entrega** mostra os códigos de erro mais encontrados nas notificações de falha na entrega (também conhecidas como NDRs ou mensagens de devolução) para usuários em sua organização. Este relatório tem como objetivo mostrar os detalhes dos NDRs, para que você possa solucionar problemas.
 

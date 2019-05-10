@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre a correção do domínio do remetente no painel de fluxo de emails no centro de conformidade do & de segurança.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252162"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868559"
 ---
 # <a name="fix-sender-domain-insight"></a>Corrigir a percepção do domínio do remetente
-
-> [!NOTE]
-> Os recursos descritos neste tópico não foram implantados em todas as organizações do Office 365 e estão sujeitos a alterações.
 
 O Office 365 requer mensagens de envio de ambientes de email locais internos para o Office 365 para atender a determinados critérios de segurança:
 

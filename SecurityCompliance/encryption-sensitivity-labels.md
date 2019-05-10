@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode restringir o acesso ao conteúdo ao qual o rótulo será aplicado. Rótulos de confidencialidade podem usar criptografia para proteger o conteúdo.
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257233"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628326"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade
 
@@ -113,6 +113,26 @@ O emissor do Gerenciamento de Direitos sempre recebe as permissões de Controle 
 - O emissor do Gerenciamento de Direitos ainda consegue abrir um documento após sua revogação.
 
 Para saber mais, confira [Emissor do Gerenciamento de Direitos e Proprietário do Gerenciamento de Direitos](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>O que acontece com a criptografia existente quando um rótulo é aplicado
+
+Antes de um rótulo de sensibilidade for aplicado ao conteúdo, é possível que um usuário já tenha criptografado o conteúdo ao aplicar outras configurações de proteção. Por exemplo, um usuário pode ter aplicado:
+
+- A opção **Não Encaminhar**.
+- Proteção personalizada usando a rotulagem de cliente unificado da Proteção de informações do Azure.
+- Um modelo de Serviço de Gerenciamento de Direitos (RMS) do Azure que criptografa o conteúdo, mas não está associado um rótulo.
+
+Esta tabela descreve o que acontece com a criptografia existente quando um rótulo de sensibilidade é aplicado ao conteúdo.
+<br/>
+<br/>
+
+| |**O usuário aplica um rótulo de sensibilidade com a criptografia desativada**|**O usuário aplica um rótulo de sensibilidade com a criptografia ativada**|**Usuário aplica um rótulo com Remover a Proteção**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**Não Encaminhar**|Email – a proteção é removida<br/>Documento – a proteção é preservada|Proteção de rótulo é aplicada|**Não encaminhar** é removida|
+|**Proteção personalizada**<sup>1</sup>|A proteção é preservada|Proteção de rótulo é aplicada|A proteção personalizada é removida|
+|**Modelo do Azure RMS**|A proteção é preservada|Proteção de rótulo é aplicada|A proteção personalizada é removida|
+
+<sup>1</sup>Isso tem suporte apenas na rotulagem de cliente da Proteção de informações do Azure.
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Armazenar conteúdo criptografado no OneDrive e no SharePoint
 

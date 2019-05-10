@@ -9,34 +9,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade do & de segurança.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252100"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868619"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Fluxo de emails no Centro de Conformidade e Segurança
-
-> [!NOTE]
-> Os recursos descritos neste tópico não foram implantados em todas as organizações do Office 365 e estão sujeitos a alterações.
 
 Os administradores podem usar o painel de fluxo de emails no centro de conformidade do & de segurança para descobrir tendências, insights e realizar ações para corrigir problemas relacionados ao fluxo de emails em sua organização do Office 365.
 
 As ideias, os relatórios e os widgets disponíveis no painel de fluxo de emails são:
 
-- [Relatório de mapa de fluxo de email](mfi-mail-flow-map-report.md) (Este relatório é novo e está sendo implantado no Office 365.)
+- [Relatório de mapa de fluxo de email](mfi-mail-flow-map-report.md)
 
-- [Visão do status do fluxo de email de domínio](mfi-domain-mail-flow-status-insight.md) (Esta percepção é nova e está sendo implantada no Office 365.)
+- [Visão do status do fluxo de email de domínio](mfi-domain-mail-flow-status-insight.md)
 
-- [Relatório de clientes de autenticação SMTP](mfi-smtp-auth-clients-report.md) (Este relatório é novo e está sendo implantado no Office 365.)
+- [Relatório de clientes de autenticação SMTP](mfi-smtp-auth-clients-report.md)
 
-- [Percepção do domínio do remetente](mfi-sender-domain-insight.md) (Esta percepção é nova e está sendo implantada no Office 365.)
+- [Percepção do domínio do remetente](mfi-sender-domain-insight.md)
 
-- Notificação de falha na [entrega](mfi-non-delivery-report.md) (Este relatório é novo e está sendo implantado no Office 365.)
+- [Notificação de falha na entrega](mfi-non-delivery-report.md)
 
-- [Relatório de domínio não aceito](mfi-non-accepted-domain-report.md) (Este relatório é novo e está sendo implantado no Office 365.)
+- [Relatório de domínio não aceito](mfi-non-accepted-domain-report.md)
 
 - [Fluxo de entrada e saída de emails](mfi-outbound-and-inbound-mail-flow.md)
 
