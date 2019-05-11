@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade & de segurança para gerenciar um incidente de derramamento de dados.
-ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258819"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884759"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de derramamento de dados no Microsoft 365
 
@@ -34,9 +34,12 @@ Este artigo fornece uma lista de instruções sobre como excluir permanentemente
 
 ## <a name="scenario"></a>Cenário
 
-Você é informado de um incidente de derramamento de dados em que um funcionário compartilhou inadvertidamente um documento altamente confidencial com várias pessoas por email. Você deseja avaliar rapidamente quem recebeu este documento, tanto dentro e fora da sua organização. Após investigar o incidente, você planeja compartilhar suas descobertas com outros investigadores para analisar e, em seguida, remover permanentemente os dados derramados do Office 365. Após a conclusão da investigação, você deseja remover todas as evidências. 
+Você é informado de um incidente de derramamento de dados em que um funcionário compartilhou inadvertidamente um documento altamente confidencial com várias pessoas por email. Você deseja avaliar rapidamente quem recebeu este documento, tanto dentro e fora da sua organização. Após investigar o incidente, você planeja compartilhar suas descobertas com outros investigadores para revisão e, em seguida, remover permanentemente os dados derramados de sua organização do Office 365. Após a conclusão da investigação, você deseja remover todas as evidências. 
 
-## <a name="workflow"></a>Fluxo de trabalho
+> [!IMPORTANT]
+> Embora você possa remover permanentemente os dados derramados dentro de sua própria organização, nenhum dado derramado fora da sua organização não pode ser removido com esses recursos.
+
+## <a name="workflow"></a>Fluxo de Trabalho
 
 Este é o fluxo de trabalho para usar investigações de dados (visualização) para gerenciar um incidente de derramamento de dados:
 
