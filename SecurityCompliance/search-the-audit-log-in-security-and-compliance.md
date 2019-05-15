@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9bf288618d91d4084580c45d96d13e345af32ea9
+ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264847"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970304"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
 
@@ -80,10 +80,10 @@ Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de a
 
      - **Office 365 E3** -os registros de auditoria são mantidos por 90 dias. Isso significa que você pode pesquisar o log de auditoria para atividades realizadas nos últimos 90 dias.
 
-     - **Office 365 E5** -os registros de auditoria são mantidos por 365 dias (um ano). Isso significa que você pode pesquisar o log de auditoria para atividades realizadas no último ano. A retenção de registros de auditoria por um ano também está disponível para usuários que recebem uma licença E3/Exchange Online Plan 1 e que têm uma licença complementar de conformidade avançada do Office 365.
+     - **Office 365 E5** -os registros de auditoria também são mantidos por 90 dias. A retenção de registros de auditoria por um ano pode, eventualmente, ser disponibilizada para usuários e usuários do E5 com uma licença E3 e uma licença de complemento avançado de conformidade do Office 365.
 
         > [!NOTE]
-        > O período de retenção de um ano para registros de auditoria para organizações E5 (ou organizações E3 que possuem licenças de complemento de conformidade avançada) atualmente está disponível apenas como parte de um programa de visualização privado. Para se inscrever neste programa de visualização, registre uma solicitação com o [suporte da Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e inclua o seguinte como a descrição do que você precisa ajuda com: "visualização privada do log de auditoria do Office 365 de longo prazo".
+        > O programa de visualização privada para o período de retenção de um ano para registros de auditoria para organizações E5 (ou para usuários em organizações E3 com licenças de complemento de conformidade avançada) é fechado para o novo registro. Este artigo será atualizado quando o período de retenção de um ano estiver disponível em visualização pública ou liberado para disponibilidade geral.
 
 - Se quiser desativar a pesquisa de log de auditoria no Office 365 para sua organização, você pode executar o seguinte comando no PowerShell remoto conectado à sua organização do Exchange Online:
     
@@ -312,10 +312,10 @@ A tabela a seguir descreve as atividades de arquivo e de página no SharePoint O
   
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
-|Arquivo acEssado  <br/> |FileAccessed  <br/> |A conta do usuário ou do sistema acessa um arquivo.  <br/> |
-|(nenhum)  <br/> |FileAccessedExtended  <br/> |Isso está relacionado à atividade "arquivo acEssado" (arquivos acessados). Um evento FileAccessedExtended é registrado quando a mesma pessoa acessa continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo do registro em log de eventos do FileAccessedExtended é reduzir o número de eventos de arquivo que são registrados quando um arquivo é acessado continuamente. Isso ajuda a reduzir o ruído de vários registros de fileAccess para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) fileAccessed.  <br/> |
-|Arquivo com check-in  <br/> |FileCheckem  <br/> |O usuário faz o check-in de um documento que fez check-out de uma biblioteca de documentos.  <br/> |
-|Arquivo com check-out  <br/> |FileCheckout  <br/> |O usuário faz check-out de um documento localizado em uma biblioteca de documentos. Os usuários podem fazer check-out e alterações nos documentos que foram compartilhados com eles.  <br/> |
+|Arquivo acessado  <br/> |FileAccessed  <br/> |A conta do usuário ou do sistema acessa um arquivo.  <br/> |
+|(nenhum)  <br/> |FileAccessedExtended  <br/> |Isso está relacionado à atividade "arquivo acessado" (arquivos acessados). Um evento FileAccessedExtended é registrado quando a mesma pessoa acessa continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo do registro em log de eventos do FileAccessedExtended é reduzir o número de eventos de arquivo que são registrados quando um arquivo é acessado continuamente. Isso ajuda a reduzir o ruído de vários registros de FileAccess para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) fileaccessed.  <br/> |
+|Arquivo com check-in  <br/> |Filecheckem  <br/> |O usuário faz o check-in de um documento que fez check-out de uma biblioteca de documentos.  <br/> |
+|Arquivo com check-out  <br/> |Filecheckout  <br/> |O usuário faz check-out de um documento localizado em uma biblioteca de documentos. Os usuários podem fazer check-out e alterações nos documentos que foram compartilhados com eles.  <br/> |
 |Arquivo copiado  <br/> |FileCopied  <br/> |O usuário copia um documento de um site. O arquivo copiado pode ser salvo em outra pasta no site.  <br/> |
 |Arquivo excluído  <br/> |FileDeleted  <br/> |O usuário exclui um documento de um site.  <br/> |
 |Arquivo excluído da lixeira  <br/> |FileDeletedFirstStageRecycleBin  <br/> |O usuário exclui um arquivo da lixeira de um site.  <br/> |
@@ -324,7 +324,7 @@ A tabela a seguir descreve as atividades de arquivo e de página no SharePoint O
 |Check-out de arquivo Descartado  <br/> |FileCheckOutDiscarded  <br/> |O usuário descarta (ou desfaz) um arquivo em check-out. Isso significa que todas as alterações que ele tiver feito nesse arquivo durante o estado de check-out serão descartados, e não salvas na versão do documento localizada na biblioteca de documentos.  <br/> |
 |Arquivo baixado  <br/> |FileDownloaded  <br/> |O usuário baixa um documento de um site.  <br/> |
 |Arquivo modificado  <br/> |FileModified  <br/> |A conta de usuário ou sistema modifica o conteúdo ou as propriedades de um documento localizado em um site.  <br/> |
-|(nenhum)  <br/> |FileModifiedExtended  <br/> |Isso está relacionado à atividade "arquivo modificado" (fileModified). Um evento FileModifiedExtended é registrado quando a mesma pessoa modifica continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo de registrar eventos do FileModifiedExtended é reduzir o número de eventos fileModified que são registrados quando um arquivo é modificado continuamente. Isso ajuda a reduzir o ruído de vários registros fileModified para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) fileModified.  <br/> |
+|(nenhum)  <br/> |FileModifiedExtended  <br/> |Isso está relacionado à atividade "arquivo modificado" (filemodified). Um evento FileModifiedExtended é registrado quando a mesma pessoa modifica continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo de registrar eventos do FileModifiedExtended é reduzir o número de eventos filemodified que são registrados quando um arquivo é modificado continuamente. Isso ajuda a reduzir o ruído de vários registros filemodified para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) filemodified.  <br/> |
 |Arquivo movido  <br/> |FileMoved  <br/> |O usuário move um documento de seu local atual em um site para um novo local.  <br/> |
 |Reciclagem de todas as versões secundárias do arquivo  <br/> |FileVersionsAllMinorsRecycled  <br/> |O usuário exclui todas as versões secundárias do histórico de versões de um arquivo. As versões excluídas são movidas para a lixeira do site.  <br/> |
 |Recicla todas as versões do arquivo  <br/> |FileVersionsAllRecycled  <br/> |O usuário exclui todas as versões do histórico de versões de um arquivo. As versões excluídas são movidas para a lixeira do site.  <br/> |
@@ -342,7 +342,7 @@ A tabela a seguir descreve as atividades de pasta no SharePoint Online e no OneD
   
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
-|Pasta coPiada  <br/> |FolderCopied  <br/> |O usuário copia uma pasta de um site para outro local no SharePoint ou no OneDrive for Business.  <br/> |
+|Pasta copiada  <br/> |FolderCopied  <br/> |O usuário copia uma pasta de um site para outro local no SharePoint ou no OneDrive for Business.  <br/> |
 |Pasta criada  <br/> |FolderCreated  <br/> |O usuário cria uma pasta em um site.  <br/> |
 |Pasta excluída  <br/> |FolderDeleted  <br/> |O usuário exclui uma pasta de um site.  <br/> |
 |Pasta excluída da lixeira  <br/> |FolderDeletedFirstStageRecycleBin  <br/> |O usuário exclui uma pasta da lixeira em um site.  <br/> |
@@ -419,12 +419,12 @@ A tabela a seguir lista os eventos resultantes das tarefas de administração do
 |(nenhum)  <br/> |SiteCollectionAdminRemoved <br/> |O administrador do conjunto de sites ou proprietário remove uma pessoa como um administrador de conjunto de sites de um site. Essa atividade também é registrada quando um administrador se remove da lista de administradores de conjunto de sites para a conta do OneDrive de um usuário (editando o perfil do usuário no centro de administração do SharePoint).  Observe que para retornar essa atividade nos resultados de pesquisa do log de auditoria, você precisa pesquisar todas as atividades. <br/> |
 |Usuário ou grupo adicionado ao grupo do SharePoint  <br/> |AddedToGroup  <br/> |O usuário adicionou um membro ou convidado a um grupo do SharePoint. Isso pode ter sido uma ação intencional ou o resultado de outra atividade, como um evento de compartilhamento.  <br/> |
 |Usuário permitido para criar grupos  <br/> |AllowGroupCreationSet  <br/> |O administrador ou proprietário do site adiciona um nível de permissão a um site que permite que um usuário atribuído essa permissão para criar um grupo para esse site.  <br/> |
-|Movimentação geográfica do site canCelada  <br/> |SiteGeoMoveCancelled  <br/> |Um administrador global ou do SharePoint cancela com êxito uma movimentação geográfica de site do SharePoint ou do OneDrive. O recurso multiGeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
+|Movimentação geográfica do site cancelada  <br/> |SiteGeoMoveCancelled  <br/> |Um administrador global ou do SharePoint cancela com êxito uma movimentação geográfica de site do SharePoint ou do OneDrive. O recurso multigeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Alterou uma política de compartilhamento  <br/> |SharingPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou uma política de compartilhamento do SharePoint usando o portal de administração do Office 365, o portal de administração do SharePoint ou o Shell de gerenciamento do SharePoint Online. Qualquer alteração nas configurações da política de compartilhamento da sua organização será registrada. A política alterada é identificada no campo **ModifiedProperties** nas propriedades detalhadas do registro do evento.  <br/> |
 |Política de acesso de dispositivo alterada  <br/> |DeviceAccessPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou a política de dispositivos não gerenciados para sua organização. Esta política controla o acesso ao SharePoint, OneDrive e Office 365 de dispositivos que não estão associados à sua organização. A configuração desta política exige uma assinatura corporativa + segurança. Para obter informações, consulte [Controlar o acesso de dispositivos gerenciados](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
 |Agentes de usuário isentos alterados  <br/> |CustomizeExemptUsers  <br/> |Um administrador global ou do SharePoint personalizou a lista de agentes de usuário isentos no centro de administração do SharePoint. Você pode especificar quais agentes de usuário isentar do recebimento de uma página da Web inteira para indexação. Isso significa que quando um agente de usuário especificado como isento encontra um formulário do InfoPath, o formulário será retornado como um arquivo XML, em vez de uma página da Web inteira. Isso torna a indexação de formulários do InfoPath mais rápida.  <br/> |
 |Política de acesso à rede alterada  <br/> |NetworkAccessPolicyChanged  <br/> |Um administrador global ou do SharePoint alterou a política de acesso baseado em local (também chamada de limite de rede confiável) no centro de administração do SharePoint ou usando o SharePoint Online PowerShell. Esse tipo de política controla quem pode acessar os recursos do SharePoint e do OneDrive em sua organização com base em intervalos de endereços IP autorizados que você especificar. Para obter mais informações, consulte [controlar o acesso aos dados do SharePoint Online e do onedrive baseados no local de rede](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
-|Movimentação geográfica de site concluída  <br/> |SiteGeoMoveCompleted  <br/> |Uma movimentação geográfica de site que foi agendada por um administrador global em sua organização foi concluída com êxito. O recurso multiGeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
+|Movimentação geográfica de site concluída  <br/> |SiteGeoMoveCompleted  <br/> |Uma movimentação geográfica de site que foi agendada por um administrador global em sua organização foi concluída com êxito. O recurso multigeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Grupo criado  <br/> |GroupAdded  <br/> |O administrador ou proprietário do site cria um grupo para um site ou realiza uma tarefa que resulta em um grupo sendo criado. Por exemplo, na primeira vez que um usuário cria um link para compartilhar um arquivo, um grupo de sistemas é adicionado ao site do OneDrive for Business do usuário. Esse evento também pode ser o resultado de um usuário ter criado um link com permissões de edição para um arquivo compartilhado.  <br/> |
 |Criado enviado para conexão  <br/> |SendToConnectionAdded  <br/> |Um administrador global ou do SharePoint cria uma nova conexão enviar para na página Gerenciamento de registros no centro de administração do SharePoint. Uma conexão Enviar para especifica configurações para um repositório de documentos ou um centro de registros. Quando você cria uma conexão Enviar para, um Organizador de Conteúdo pode enviar documentos para o local especificado.  <br/> |
 |Conjunto de sites criado  <br/> |SiteCollectionCreated  <br/> |Um administrador global ou do SharePoint cria um novo conjunto de sites em sua organização do SharePoint Online ou um usuário provisiona o site do OneDrive for Business.  <br/> |
@@ -441,7 +441,7 @@ A tabela a seguir lista os eventos resultantes das tarefas de administração do
 |Usuário ou grupo removido do grupo do SharePoint  <br/> |RemovedFromGroup  <br/> |O usuário removeu um membro ou convidado de um grupo do SharePoint. Isso pode ter sido uma ação intencional ou o resultado de outra atividade, como um evento de descompartilhamento.  <br/> |
 |Site renomeado  <br/> |SiteRenamed  <br/> |O administrador ou proprietário do site renomeia um site  <br/> |
 |Permissões de administrador de site solicitadas  <br/> |SiteAdminChangeRequest  <br/> |As solicitações de usuário a serem adicionadas como um administrador de conjunto de sites para um conjunto de sites. Os administradores do conjunto de sites têm permissões de controle total para o conjunto de sites e todos os subsites.  <br/> |
-|Movimentação geográfica do site agendado  <br/> |SiteGeoMoveScheduled  <br/> |Um administrador global ou do SharePoint agenda uma movimentação geográfica de site do SharePoint ou do OneDrive. O recurso multiGeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
+|Movimentação geográfica do site agendado  <br/> |SiteGeoMoveScheduled  <br/> |Um administrador global ou do SharePoint agenda uma movimentação geográfica de site do SharePoint ou do OneDrive. O recurso multigeográfico permite que uma organização do Office 365 alcance vários geografias do Office 365 datacenter, que são chamados de GEOS. Para obter mais informações, consulte [recursos de várias geografias no onedrive e no SharePoint Online no Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Definir site do host  <br/> |HostSiteSet  <br/> |Um administrador global ou do SharePoint altera o site designado para hospedar sites pessoais ou do OneDrive for Business.  <br/> |
 |Grupo atualizado  <br/> |GroupUpdated  <br/> |O administrador ou proprietário do site altera as configurações de um grupo para um site. Isso pode incluir a alteração do nome do grupo, quem pode visualizar ou editar a associação ao grupo e como as solicitações de associação são tratadas.  <br/> |
 ||||
@@ -454,12 +454,12 @@ A tabela a seguir lista as atividades que podem ser registradas pelo log de audi
 |:-----|:-----|:-----|
 |Adicionadas permissões de caixa de correio delegada  <br/> |Add-MailboxPermission  <br/> |Um administrador atribuiu a permissão de caixa de correio FullAccess a um usuário (conhecido como um representante) à caixa de correio de outra pessoa. A permissão FullAccess permite que o representante Abra a caixa de correio da outra pessoa e leia e gerencie o conteúdo da caixa de correio.  <br/> |
 |Mensagem classificada como registro  <br/> |ApplyRecordLabel<br/> |Uma mensagem foi classificada como um registro. Isso ocorre quando um rótulo de retenção que classifica o conteúdo como um registro é aplicado manualmente ou automaticamente a uma mensagem.<br/> |
-|Mensagens coPiadas para outra pasta  <br/> |Copiar  <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |
-|Item de caixa de correio criado  <br/> |Criar  <br/> |Um item é criado nas pastas Calendário, Contatos, Anotações ou Tarefas na caixa de correio; por exemplo, é criada uma nova solicitação de reunião. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |
+|Mensagens copiadas para outra pasta  <br/> |Copiar  <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |
+|Item de caixa de correio criado  <br/> |Create  <br/> |Um item é criado nas pastas Calendário, Contatos, Anotações ou Tarefas na caixa de correio; por exemplo, é criada uma nova solicitação de reunião. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |
 |Nova regra de caixa de entrada criada no Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Mensagens excluídas da pasta itens excluídos  <br/> |SoftDelete  <br/> |Uma mensagem foi excluída permanentemente da pasta Itens Excluídos. Esses itens são movidos para a pasta itens recuperáveis. As mensagens também são movidas para a pasta itens recuperáveis quando um usuário seleciona e pressiona **Shift + Delete**.  <br/> |
-|Mensagens moVidas para outra pasta  <br/> |Mover  <br/> |Uma mensagem foi movida para outra pasta.  <br/> |
-|Mensagens moVidas para a pasta itens excluídos  <br/> |MoveToDeletedItems  <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |
+|Mensagens movidas para outra pasta  <br/> |Mover  <br/> |Uma mensagem foi movida para outra pasta.  <br/> |
+|Mensagens movidas para a pasta itens excluídos  <br/> |MoveToDeletedItems  <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |
 |Permissão de pasta modificada  <br/> |UpdateFolderPermissions  <br/> |Uma permissão de pasta foi alterada. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas de caixa de correio e as mensagens na pasta.  <br/> |
 |Mensagens limpas da caixa de correio  <br/> |HardDelete  <br/> |Uma mensagem foi removida da pasta itens recuperáveis (excluídos permanentemente da caixa de correio).  <br/> |
 |Removidos permissões de caixa de correio delegada  <br/> |Remove-MailboxPermission  <br/> |Um administrador removeu a permissão FullAccess (que foi atribuída a um representante) da caixa de correio de uma pessoa. Depois que a permissão FullAccess for removida, o representante não poderá abrir a caixa de correio da outra pessoa nem acessar qualquer conteúdo.  <br/> |
@@ -486,7 +486,7 @@ A tabela a seguir lista as atividades de usuário e administrador no Sway. O Swa
 |Duplicação de Sway habilitada  <br/> |EnableDuplication  <br/> |O usuário habilita a duplicação de um Sway; a capacidade de um usuário habilitar a duplicação de um Sway é habilitada por padrão.  <br/> |
 |Compartilhamento de Sway revogado  <br/> |SwayRevokeShare  <br/> |O usuário para de compartilhar um Sway revogando o acesso a ele. Revogar o acesso altera os links associados a um Sway.  <br/> |
 |Sway compartilhado  <br/> |SwayShare  <br/> |O usuário pretende compartilhar um Sway. Esse evento captura a ação do usuário de clicar em um destino de compartilhamento específico no menu de compartilhamento do Sway. O evento não indica se o usuário concluiu a ação de compartilhamento.  <br/> |
-|DesAtivada o compartilhamento externo do Sway  <br/> |SwayExternalSharingOff  <br/> |O administrador desabilita o compartilhamento externo de Sway para toda a organização usando o centro de administração do Microsoft 365.  <br/> |
+|Desativada o compartilhamento externo do Sway  <br/> |SwayExternalSharingOff  <br/> |O administrador desabilita o compartilhamento externo de Sway para toda a organização usando o centro de administração do Microsoft 365.  <br/> |
 |Ativado o compartilhamento externo do Sway  <br/> |SwayExternalSharingOn  <br/> |O administrador habilita o compartilhamento externo de Sway para toda a organização usando o centro de administração do Microsoft 365.  <br/> |
 |Serviço de Sway desativado  <br/> |SwayServiceOff  <br/> |O administrador desabilita o Sway para toda a organização usando o centro de administração do Microsoft 365.  <br/> |
 |Ativou o serviço Sway  <br/> |SwayServiceOn  <br/> |O administrador habilita o Sway para toda a organização usando o centro de administração do Microsoft 365 (o serviço Sway é habilitado por padrão).  <br/> |
@@ -532,9 +532,9 @@ A tabela a seguir lista as atividades de administração de aplicativos que são
 |Entrada de delegação adicionada  <br/> |Adicionar entrada de delegação  <br/> |Uma permissão de autenticação foi criada/concedida a um aplicativo no Azure AD.  <br/> |
 |Entidade de serviço adicionada  <br/> |Adicionar entidade de serviço  <br/> |Um aplicativo foi registrado no Azure AD. Um aplicativo é representado por uma entidade de serviço no diretório.  <br/> |
 |As credenciais foram adicionadas a uma entidade de serviço  <br/> |Adicionar credenciais de entidade de serviço  <br/> |As credenciais foram adicionadas a uma entidade de serviço no Azure AD. Um princípio de serviço representa um aplicativo no diretório.  <br/> |
-|Entrada de delegação reMovida  <br/> |Remover entrada de delegação  <br/> |Uma permissão de autenticação foi removida de um aplicativo no Azure AD.  <br/> |
-|Foi reMovida uma entidade de serviço do diretório  <br/> |Remover entidade de serviço  <br/> |Um aplicativo foi excluído/cancelado no Azure AD. Um aplicativo é representado por uma entidade de serviço no diretório.  <br/> |
-|Credenciais reMovidas de uma entidade de serviço  <br/> |Remover credenciais de entidade de serviço  <br/> |As credenciais foram removidas de uma entidade de serviço no Azure AD. Um princípio de serviço representa um aplicativo no diretório.  <br/> |
+|Entrada de delegação removida  <br/> |Remover entrada de delegação  <br/> |Uma permissão de autenticação foi removida de um aplicativo no Azure AD.  <br/> |
+|Foi removida uma entidade de serviço do diretório  <br/> |Remover entidade de serviço  <br/> |Um aplicativo foi excluído/cancelado no Azure AD. Um aplicativo é representado por uma entidade de serviço no diretório.  <br/> |
+|Credenciais removidas de uma entidade de serviço  <br/> |Remover credenciais de entidade de serviço  <br/> |As credenciais foram removidas de uma entidade de serviço no Azure AD. Um princípio de serviço representa um aplicativo no diretório.  <br/> |
 |Definir entrada de delegação  <br/> |Definir entrada de delegação  <br/> |Uma permissão de autenticação foi atualizada para um aplicativo no Azure AD.  <br/> |
 ||||
 
@@ -579,7 +579,7 @@ A pesquisa de conteúdo e as atividades relacionadas à descoberta eletrônica r
     
 - Executar ações de pesquisa de conteúdo, como Visualizar, exportar e excluir resultados de pesquisa
     
-- ConFigurando a filtragem de permissões para pesquisa de conteúdo
+- Configurando a filtragem de permissões para pesquisa de conteúdo
     
 - Gerenciando a função de administrador de descoberta eletrônica
     
@@ -600,8 +600,8 @@ A análise do local de trabalho fornece informações sobre como os grupos colab
 
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
-|Link OData acEssado <br/> |AccessedOdataLink <br/> |O analista acessou o link OData para uma consulta.|
-|Consulta canCelada <br/> |CanceledQuery <br/> |O analista cancelou uma consulta em execução.|
+|Link OData acessado <br/> |AccessedOdataLink <br/> |O analista acessou o link OData para uma consulta.|
+|Consulta cancelada <br/> |CanceledQuery <br/> |O analista cancelou uma consulta em execução.|
 |Exclusão de reunião criada <br/> |MeetingExclusionCreated <br/> |O analista criou uma nova regra de exclusão de reunião.|
 |Resultado excluído <br/> |DeletedResult <br/> |O analista excluiu um resultado de consulta.|
 |Relatório baixado <br/> |DownloadedReport <br/> |Analista baixado um arquivo de resultado de consulta.|
@@ -649,23 +649,23 @@ A tabela a seguir lista as atividades de usuário e de administrador no Yammer q
   
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
-|Política de retenção de dados alterada  <br/> |SoftDeleteSettingsUpdated  <br/> |Verificado se o administrador atualiza a configuração da política de retenção de dados da rede para exclusão forçada ou exclusão reVersível. Somente os administradores verificados podem executar essa operação.  <br/> |
+|Política de retenção de dados alterada  <br/> |SoftDeleteSettingsUpdated  <br/> |Verificado se o administrador atualiza a configuração da política de retenção de dados da rede para exclusão forçada ou exclusão reversível. Somente os administradores verificados podem executar essa operação.  <br/> |
 |Configuração de rede alterada  <br/> |NetworkConfigurationUpdated  <br/> |Rede ou verificado o administrador altera a configuração da rede do Yammer. Isso inclui definir o intervalo para exportar dados e habilitar o chat.  <br/> |
 |Configurações de perfil de rede alteradas  <br/> |ProcessProfileFields  <br/> |A rede ou o administrador verificado altera as informações que aparecem em perfis de membro para a rede de usuários de rede.  <br/> |
 |Modo de conteúdo privado alterado  <br/> |SupervisorAdminToggled  <br/> |Verificado se o administrador ativa ou desativa o *modo de conteúdo privado* . Este modo permite que um administrador visualize postagens em grupos privados e exiba mensagens privadas entre usuários individuais (ou grupos de usuários). Somente administradores verificados podem executar essa operação.  <br/> |
 |Configuração de segurança alterada  <br/> |NetworkSecurityConfigurationUpdated  <br/> |Verificado se o administrador atualiza a configuração de segurança da rede do Yammer. Isso inclui a definição de políticas e restrições de validade de senha em endereços IP. Somente os administradores verificados podem executar essa operação.  <br/> |
-|Arquivo criado  <br/> |FileCreated  <br/> |O usuário carrega um arquivo.  <br/> |
+|Arquivo criado  <br/> |Filecreated  <br/> |O usuário carrega um arquivo.  <br/> |
 |Grupo criado  <br/> |GroupCreation  <br/> |O usuário cria um novo grupo.  <br/> |
 |Grupo excluído  <br/> |GroupDeletion  <br/> |Um grupo é excluído do Yammer.  <br/> |
 |Mensagem excluída  <br/> |MessageDeleted  <br/> |O usuário exclui uma mensagem.  <br/> |
 |Arquivo baixado  <br/> |FileDownloaded  <br/> |O usuário baixa um arquivo.  <br/> |
-|Dados exPortados  <br/> |Exportação de  <br/> |Verificado se o administrador exporta dados de rede do Yammer. Somente os administradores verificados podem executar essa operação.  <br/> |
-|Arquivo compartilhado  <br/> |FileShared  <br/> |O usuário compartilha um arquivo com outro usuário.  <br/> |
+|Dados exportados  <br/> |Exportação de  <br/> |Verificado se o administrador exporta dados de rede do Yammer. Somente os administradores verificados podem executar essa operação.  <br/> |
+|Arquivo compartilhado  <br/> |Fileshared  <br/> |O usuário compartilha um arquivo com outro usuário.  <br/> |
 |Usuário de rede suspenso  <br/> |NetworkUserSuspended  <br/> |A rede ou o administrador verificado suspende (desativa) um usuário do Yammer.  <br/> |
-|Usuário suspenso  <br/> |UserSuspensão  <br/> |A conta de usuário é suspensa (desativada).  <br/> |
+|Usuário suspenso  <br/> |Usersuspensão  <br/> |A conta de usuário é suspensa (desativada).  <br/> |
 |Descrição do arquivo atualizado  <br/> |FileUpdateDescription  <br/> |O usuário altera a descrição de um arquivo.  <br/> |
-|Nome de arquivo atualizado  <br/> |FileUpdatename  <br/> |O usuário altera o nome de um arquivo.  <br/> |
-|Arquivo exibido  <br/> |FileVisitado  <br/> |O usuário exibe um arquivo.  <br/> |
+|Nome de arquivo atualizado  <br/> |Fileupdatename  <br/> |O usuário altera o nome de um arquivo.  <br/> |
+|Arquivo exibido  <br/> |Filevisitado  <br/> |O usuário exibe um arquivo.  <br/> |
 ||||
    
 ### <a name="microsoft-flow-activities"></a>Atividades de fluxo da Microsoft
@@ -720,12 +720,12 @@ Conforme explicado anteriormente, o período de retenção para registros de aud
 
 - **Office 365 E3** -os registros de auditoria são mantidos por 90 dias.
 
-- **Office 365 E5** -os registros de auditoria são mantidos por 365 dias (um ano). Manter registros de auditoria por um ano também está disponível para organizações que possuem uma assinatura E3 e uma assinatura de complemento de conformidade avançada do Office 365.
+- **Office 365 E5** -os registros de auditoria também são mantidos por 90 dias. A retenção de registros de auditoria por um ano pode, eventualmente, ser disponibilizada para usuários e usuários do E5 com uma licença E3 e uma licença de complemento avançado de conformidade do Office 365.
 
      > [!NOTE]
-     > Como explicado anteriormente, o período de retenção de um ano para registros de auditoria para organizações E5 (ou organizações E3 que têm licenças de complemento de conformidade avançada) atualmente está disponível apenas como parte de um programa de visualização privado. Para se inscrever neste programa de visualização, registre uma solicitação com o [suporte da Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e inclua o seguinte como a descrição do que você precisa ajuda com: "visualização privada do log de auditoria do Office 365 de longo prazo".
+     > Como explicado anteriormente, o programa de visualização privada para o período de retenção de um ano para registros de auditoria para organizações E5 (ou com licenças de complemento de conformidade avançada) é fechado para o novo registro. Este artigo será atualizado quando o período de retenção de um ano estiver disponível em visualização pública ou liberado para disponibilidade geral.
 
-Observe também que a duração do período de retenção para registros de auditoria é baseada em licenciamento por usuário. Por exemplo, se um usuário na sua organização é atribuído a uma licença do Office 365 E3, os registros de auditoria para atividades realizadas por esse usuário são mantidos por 90 dias. Se um usuário diferente recebe uma licença do Office 365 e5, seus registros de auditoria são mantidos por um ano. 
+Observe também que a duração do período de retenção para registros de auditoria é baseada em licenciamento por usuário. Por exemplo, se um usuário na sua organização é atribuído a uma licença do Office 365 E3 ou e5, os registros de auditoria para atividades realizadas por esse usuário são mantidos por 90 dias.
 
 **Posso acessar os dados de auditoria programaticamente?**
 
@@ -737,7 +737,7 @@ Não. Estas são as duas maneiras de obter dados do serviço de auditoria do Off
 
 **É necessário habilitar individualmente a auditoria em cada serviço para o qual desejo capturar os logs de auditoria?**
 
-Na maioria dos serviços do Office 365, a auditoria é habilitada por padrão depois que você ativa inicialmente a auditoria para sua organização do Office 365 (conforme descrito na seção [antes de começar](#before-you-begin) neste artigo). No enTanto, é necessário habilitar a auditoria de caixa de correio no Exchange Online para cada caixa de correio que você deseja auditar.   Estamos trabalhando para habilitar a auditoria de caixa de correio por padrão para todas as caixas de correio em uma organização do Office 365. Para saber mais, confira "A auditoria de caixa de correio do Exchange ativada por padrão" no [blog de Segurança, Privacidade e Conformidade da Microsoft](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
+Na maioria dos serviços do Office 365, a auditoria é habilitada por padrão depois que você ativa inicialmente a auditoria para sua organização do Office 365 (conforme descrito na seção [antes de começar](#before-you-begin) neste artigo). No entanto, é necessário habilitar a auditoria de caixa de correio no Exchange Online para cada caixa de correio que você deseja auditar.   Estamos trabalhando para habilitar a auditoria de caixa de correio por padrão para todas as caixas de correio em uma organização do Office 365. Para saber mais, confira "A auditoria de caixa de correio do Exchange ativada por padrão" no [blog de Segurança, Privacidade e Conformidade da Microsoft](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
 
 **O serviço de auditoria do Office 365 oferece suporte à eliminação de duplicação de registros?**
 
@@ -745,8 +745,8 @@ Não. O pipeline de serviço de auditoria é quase em tempo real e, portanto, n�
  
 **Os dados de auditoria do Office 365 fluem entre regiões geográficas?**
 
-Não. Atualmente, temos implantações de pipeline de auditoria nas regiões NA (América do Norte), EMEA (Europa, Oriente Médio e África) e da Ásia (Pacífico). No enTanto, podemos transmitir os dados entre essas regiões para balanceamento de carga e apenas durante problemas do local. Quando realizamos essas atividades, os dados em trânsito são criptografados.   
+Não. Atualmente, temos implantações de pipeline de auditoria nas regiões NA (América do Norte), EMEA (Europa, Oriente Médio e África) e da Ásia (Pacífico). No entanto, podemos transmitir os dados entre essas regiões para balanceamento de carga e apenas durante problemas do local. Quando realizamos essas atividades, os dados em trânsito são criptografados.   
  
 **A auditoria de dados está criptografada?**
 
-Os dados de auditoria são armazenados em caixas de correio do Exchange (dados em repouso) na mesma região onde o pipeline de auditoria é implantado. Esses dados não são criptografados. No enTanto, os dados em trânsito são sempre criptografados. 
+Os dados de auditoria são armazenados em caixas de correio do Exchange (dados em repouso) na mesma região onde o pipeline de auditoria é implantado. Esses dados não são criptografados. No entanto, os dados em trânsito são sempre criptografados. 
