@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crie políticas de alerta no centro de segurança e conformidade no Office 365 e no Microsoft 365 para monitorar possíveis ameaças, perda de dados e problemas de permissões. Em seguida, você pode exibir e gerenciar os alertas gerados quando os usuários realizam atividades que correspondam às condições de uma política de alerta.
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516499"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979497"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Políticas de alerta no centro de conformidade e segurança
 
@@ -229,7 +229,8 @@ Após os alertas terem sido gerados e exibidos na página **exibir alertas** no 
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Exibindo alertas do Cloud app Security
   
-Os alertas que são acionados pelas políticas de segurança do aplicativo Cloud do Office 365 agora são exibidos na página **exibir alertas** no centro de segurança e conformidade. Isso inclui alertas disparados por políticas de atividade e alertas disparados por políticas de detecção de anomalias no Office 365 Cloud app Security. Isso significa que você pode exibir todos os alertas no centro de conformidade e segurança. Observe que a segurança do aplicativo de nuvem do Office 365 só está disponível para organizações com uma assinatura do Office 365 Enterprise E5 ou do Office 365 US governos do governo dos EUA. Para obter mais informações, consulte [Overview of Office 365 Cloud app Security](office-365-cas-overview.md).
+Os alertas que são acionados pelas políticas de segurança do aplicativo Cloud do Office 365 agora são exibidos na página **exibir alertas** no centro de segurança e conformidade. Isso inclui alertas disparados por políticas de atividade e alertas disparados por políticas de detecção de anomalias no Office 365 Cloud app Security. Isso significa que você pode exibir todos os alertas no centro de conformidade e segurança. Observe que a segurança do aplicativo de nuvem do Office 365 só está disponível para organizações com uma assinatura do Office 365 Enterprise E5 ou do Office 365 US governos do governo dos EUA. Para obter mais informações, consulte [Overview of Cloud app Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+).
 
 Além disso, as organizações que têm o Microsoft Cloud app Security como parte de uma assinatura do Enterprise Mobility + Security E5 ou como um serviço autônomo também podem exibir os alertas de segurança do aplicativo na nuvem que estão relacionados aos aplicativos e serviços do Office 365 no & de segurança Centro de conformidade.
 
@@ -237,7 +238,7 @@ Para exibir apenas os alertas de segurança do Cloud app no centro de segurança
 
 ![Usar o filtro de origem para exibir somente os alertas de segurança do aplicativo na nuvem](media/FilterCASAlerts.png)
 
-Semelhante a um alerta disparado por uma política de alerta de segurança e central de conformidade, você pode clicar em um alerta de segurança do Cloud app para exibir uma página de submenu com detalhes sobre o alerta. O alerta inclui um link para exibir os detalhes e gerenciar o alerta no portal do Cloud app Security e um link para a política de segurança de aplicativo na nuvem correspondente que disparou o alerta. Consulte [revisar e executar ação em alertas no Office 365 Cloud app Security](review-office-365-cas-alerts.md).
+Semelhante a um alerta disparado por uma política de alerta de segurança e central de conformidade, você pode clicar em um alerta de segurança do Cloud app para exibir uma página de submenu com detalhes sobre o alerta. O alerta inclui um link para exibir os detalhes e gerenciar o alerta no portal do Cloud app Security e um link para a política de segurança de aplicativo na nuvem correspondente que disparou o alerta. Consulte [monitorar alertas no Cloud app Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
 ![Detalhes do alerta contêm links para o portal do Cloud app Security](media/CASAlertDetail.png)
 

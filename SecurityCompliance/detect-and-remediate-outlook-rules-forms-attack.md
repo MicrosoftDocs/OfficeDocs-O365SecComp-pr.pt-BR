@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256859"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979487"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar e corrigir ataques de injeção a regras e formulários personalizados do Outlook no Office 365
 
@@ -141,7 +141,7 @@ As regras e os exploits de formulários são usados apenas por um invasor depois
 
 A melhor maneira de proteger suas contas de usuário e, especialmente suas contas de administrador, é [Configurar a autenticação multifator para usuários do Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  Você também deve:
 <ol>
-    <li>Monitorar como suas contas de usuário são acessadas <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">e usadas</a>. Não é possível impedir a violação inicial, mas você diminuirá a duração e o impacto da violação detectando-a antes. Você pode usá-las: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">as políticas de segurança do aplicativo Cloud do Office 365</a> para monitorar suas contas e alertar sobre atividades incomuns. 
+    <li>Monitorar como suas contas de usuário são acessadas <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">e usadas</a>. Não é possível impedir a violação inicial, mas você diminuirá a duração e o impacto da violação detectando-a antes. Você pode usá-las: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">as políticas de segurança do aplicativo Cloud do Office 365</a> para monitorar suas contas e alertar sobre atividades incomuns. 
         <ol type="a">
             <li><b>Várias tentativas de logon com falha</b> Esta política faz o perfil de seu ambiente e dispara alertas quando os usuários executam várias atividades de logon com falha em uma única sessão com relação à linha de base aprendida, que pode indicar uma tentativa de violação.</li>
             <li><b>Viagens impossível</b> - Essa política faz o perfil de seu ambiente e dispara alertas quando as atividades são detectadas do mesmo usuário em diferentes locais dentro de um período de tempo menor do que o tempo de viagem esperado entre os dois locais. Isso pode indicar que um usuário diferente está usando as mesmas credenciais. Detectar esse comportamento anômala exige um período de aprendizado inicial de sete dias durante o qual ele aprende o padrão de atividade de um novo usuário.</li>
