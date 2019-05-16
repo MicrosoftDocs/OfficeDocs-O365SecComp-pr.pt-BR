@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global do Office 365, você pode usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real atinja sua empresa.
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077617"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de Ataque no Office 365
 
@@ -54,7 +54,7 @@ Verifique se você e sua organização atendem aos seguintes requisitos para o s
     
 - **A [protocolo de autenticação](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) multifator (MFA) está ativada, por pelo menos a conta de administrador global do Office 365**. (O ideal é que a MFA seja ativada para todos os usuários da sua organização.)
  
-- **sua organização tem [o plano de proteção avançada contra ameaças do Office 365](office-365-ti.md)**, com o simulador &amp; de ataques visível no centro de conformidade de segurança (vá para o simulador de **ataques**de **gerenciamento** \> de ameaças)<br/>![Gerenciamento de ameaças-simulador de ataques](media/ThreatMgmt-AttackSimulator.png)
+- **Sua organização tem [o plano de proteção avançada contra ameaças do Office 365](office-365-ti.md)**, com o simulador &amp; de ataques visível no centro de conformidade de segurança (vá para o simulador de **ataques**de **Gerenciamento** \> de ameaças)<br/>![Gerenciamento de ameaças-simulador de ataques](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nome de exibição spear-phishing Attack

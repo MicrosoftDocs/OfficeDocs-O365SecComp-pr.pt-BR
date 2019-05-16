@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use o novo painel de segurança para analisar o status de proteção contra ameaças do Office 365 e exibir e agir em alertas de segurança.
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077217"
 ---
 # <a name="security-dashboard"></a>Painel de segurança
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 O [Centro &amp; de conformidade de segurança](go-to-the-securitycompliance-center.md) permite que sua organização gerencie a proteção e a conformidade dos dados. Supondo que você tenha as permissões necessárias, o painel de segurança permite que você revise o status da proteção contra ameaças, bem como o modo de exibição e agir nos alertas de segurança. 
   
@@ -34,7 +34,7 @@ Assista ao vídeo para obter uma visão geral e leia este artigo para saber mais
   
 Dependendo da sua assinatura do Office 365 da sua organização, o painel de segurança inclui vários widgets, como Resumo de gerenciamento de ameaças, status da proteção contra ameaças, detecções semanais globais de ameaças, malware e muito mais, conforme descrito no seções a seguir.
   
-para exibir o painel de segurança, no [centro de conformidade &amp; de segurança do Office 365](go-to-the-securitycompliance-center.md), vá para o **painel** **gerenciamento** \> de ameaças.
+Para exibir o painel de segurança, no [centro de conformidade &amp; de segurança do Office 365](go-to-the-securitycompliance-center.md), vá para o **painel** **Gerenciamento** \> de ameaças.
   
 > [!NOTE]
 > Você deve ser um administrador global do Office 365, um administrador de segurança ou um leitor de segurança para exibir o painel de segurança. Alguns widgets exigem permissões adicionais para exibir. Para saber mais, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md). 
@@ -78,7 +78,7 @@ O widget global Weekly detecções de ameaças mostra quantas ameaças foram det
 
 As métricas são calculadas conforme descrito na tabela a seguir:
 
-|Indicadores  |Como é calculado  |
+|Indicador  |Como é calculado  |
 |---------|---------|
 |Mensagens verificadas |Número de mensagens de email verificadas multiplicadas pelo número de destinatários |
 |Ameaças interrompidas  |Número de mensagens de email identificadas como contendo malware multiplicado pelo número de destinatários |

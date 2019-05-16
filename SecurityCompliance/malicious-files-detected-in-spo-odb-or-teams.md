@@ -3,7 +3,7 @@ title: Exibir informações sobre arquivos mal-intencionados detectados no Share
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Saiba onde ir para exibir informações sobre arquivos mal-intencionados detectados no SharePoint, no OneDrive ou no Microsoft Teams e como executar ações nesses arquivos.
-ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 070640d9aa1d28cc1a49a9d8b88e5bf5780d3622
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259829"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077577"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Exibir informações sobre arquivos mal-intencionados detectados no SharePoint, no OneDrive ou no Microsoft Teams
 
@@ -31,7 +31,7 @@ Para executar as tarefas descritas neste artigo, você deve ter as [permissões 
 
 Para exibir o status e informações detalhadas sobre arquivos detectados pelo Office 365 ATP, você pode usar o relatório de status de proteção contra ameaças.
   
-1. no [centro de conformidade de &amp; segurança do Office 365](https://protection.office.com), escolha **painel** \> de **relatórios** \> **Status da proteção contra ameaças**.
+1. No [centro de conformidade de &amp; segurança do Office 365](https://protection.office.com), escolha **painel** \> de **relatórios** \> **status da proteção contra ameaças**.
     
 2. No canto superior direito do relatório, escolha **Exibir tabela de detalhes**.
     
@@ -43,7 +43,7 @@ Para exibir o status e informações detalhadas sobre arquivos detectados pelo O
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Exibir e executar ação em arquivos em quarentena
 
-1. no centro de conformidade de &amp; segurança do Office 365, escolha **quarentena**de **análise** \> de **gerenciamento** \> de ameaças.
+1. No centro de conformidade de &amp; segurança do Office 365, escolha **quarentena**de **análise** \> de **Gerenciamento** \> de ameaças.
     
 2. No canto superior esquerdo, altere o filtro de **email** para **conteúdo**.
     

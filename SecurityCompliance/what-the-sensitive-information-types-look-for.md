@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
@@ -13,13 +13,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
-ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: A prevenção de perda de dados (DLP) no centro de conformidade de segurança do Office 365 80 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
+ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077547"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>O que os tipos de informações confidenciais procuram
 
@@ -71,16 +71,16 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - aba #
 - aba routing #
 - aba routing number
-- aba #
-- abarouting #
+- aba#
+- abarouting#
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting #
+- americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting #
+- bankrouting#
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -194,7 +194,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - bank details
 - banking information
 - full names
-- IAEA
+- iaea
 
    
 ## <a name="australia-drivers-license-number"></a>Número de carteira de motorista da Austrália
@@ -279,34 +279,34 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic #
-- DriverLics #
-- DriverLicence #
-- DriverLicences #
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic #
-- DriversLics #
-- DriversLicence #
-- DriversLicences #
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
 - Drivers Licences#
-- Driver'Lic #
-- Driver'Lics #
-- Driver'Licence #
-- Driver'Licences #
 - Driver'Lic#
 - Driver'Lics#
 - Driver'Licence#
 - Driver'Licences#
-- Driver'sLic #
-- Driver'sLics #
-- Driver'sLicence #
-- Driver'sLicences #
+- Driver'Lic#
+- Driver'Lics#
+- Driver'Licence#
+- Driver'Licences#
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
@@ -331,20 +331,20 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driver'sLicenses
 - Driver's License
 - Driver's Licenses
-- DriverLicense #
-- DriverLicenses #
+- DriverLicense#
+- DriverLicenses#
 - Driver License#
 - Driver Licenses#
-- DriversLicense #
-- DriversLicenses #
+- DriversLicense#
+- DriversLicenses#
 - Drivers License#
 - Drivers Licenses#
-- Driver'License #
-- Driver'Licenses #
 - Driver'License#
 - Driver'Licenses#
-- Driver'sLicense #
-- Driver'sLicenses #
+- Driver'License#
+- Driver'Licenses#
+- Driver'sLicense#
+- Driver'sLicenses#
 - Driver's License#
 - Driver's Licenses#
    
@@ -407,7 +407,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - credit card loan
 - department of human services
 - local service
-- Medicare
+- medicare
 
    
 ## <a name="australia-passport-number"></a>Número de passaporte da Austrália
@@ -462,7 +462,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -613,7 +613,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -673,7 +673,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -733,7 +733,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -784,7 +784,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -839,7 +839,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -933,7 +933,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -999,7 +999,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -1441,7 +1441,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
 
 - A abreviação da província, por exemplo AB
 - O nome da província, por exemplo, Alberta
@@ -1520,49 +1520,49 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - DISTRIBUIÇÃO
 - DL 
 - CDL 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- CDLS# 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
 - Drivers Licence# 
 - Drivers Licences# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
+- Driver'Licence# 
+- Driver'Licences# 
 - Driver'Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver'Licenses# 
 - Driver'Licence# 
 - Driver'Licences# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1574,7 +1574,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - código 
 - idcard card# 
 - idcard cards# 
-- idcard # 
+- idcard# 
 - identification card# 
 - identification cards# 
 - identificador 
@@ -1683,12 +1683,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - パスポート
 - パスポート番号
 - パスポートのNum
-- パスポート #
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
    
@@ -2014,10 +2014,10 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 - card verification
 - card identification number
-- CVN
+- cvn
 - CID
-- CVC2
-- CVV2
+- cvc2
+- cvv2
 - pin block
 - security code
 - security number
@@ -2047,9 +2047,9 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- Cód. segurança
+- cód. segurança
 - COD. seguranca Cod. segurança
-- Cód. seguranca
+- cód. seguranca
 - cód segurança
 - COD seguranca COD segurança
 - cód seguranca
@@ -2078,7 +2078,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordccname"></a>Keyword_cc_name
 
-- Amex
+- amex
 - american express
 - americanexpress
 - Cartões
@@ -2089,9 +2089,9 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - master cards
 - diner's Club
 - diners club
-- Dinersclub
+- dinersclub
 - discover card
-- DiscoverCard
+- discovercard
 - discover cards
 - JCB
 - japanese card bureau
@@ -2107,15 +2107,15 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - date d'exp
 - date expiration
 - bank card
-- BankCard
+- bankcard
 - card number
 - card num
-- cardNumber
+- cardnumber
 - cardnumbers
 - card numbers
 - CreditCard
 - credit cards
-- CreditCards
+- creditcards
 - CCN
 - card holder
 - aos
@@ -2126,7 +2126,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - check cards
 - checkcards
 - debit card
-- Debitcard
+- debitcard
 - debit cards
 - debitcards
 - atm card
@@ -2144,7 +2144,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - nº de la carte
 - nº de carte
 - kreditkarte
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -2154,12 +2154,12 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - kartennr 
 - kartennummer
 - kreditkartennummer
-- kreditkarten-Nummer
+- kreditkarten-nummer
 - carta di credito
 - carta credito
 - carta
 - n carta
-- Nr. carta
+- nr. carta
 - nr carta
 - numero carta
 - numero della carta
@@ -2483,7 +2483,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - american express 
 - americanexpress 
 - americano espresso 
-- Amex 
+- amex 
 - atm card 
 - atm cards 
 - atm kaart 
@@ -2491,7 +2491,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - atmcards 
 - atmkaart 
 - atmkaarten 
-- Bancontact 
+- bancontact 
 - bank card 
 - bankkaart 
 - card holder 
@@ -2503,7 +2503,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - cardano numerico 
 - aos 
 - titulares de cartões 
-- cardNumber 
+- cardnumber 
 - cardnumbers 
 - carta bianca 
 - carta credito 
@@ -2537,23 +2537,23 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - credit card 
 - credit cards 
 - CreditCard 
-- CreditCards 
+- creditcards 
 - debetkaart 
 - debetkaarten 
 - debit card 
 - debit cards 
-- Debitcard 
+- debitcard 
 - debitcards 
 - debito automatico 
 - diners club 
-- Dinersclub 
+- dinersclub 
 - tect 
 - discover card 
 - discover cards 
-- DiscoverCard 
+- discovercard 
 - discovercards 
 - débito automático
-- EDC 
+- edc 
 - eigentümername 
 - european debit card 
 - hoofdkaart 
@@ -2568,13 +2568,13 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - kaartaantallen 
 - kaarthouder 
 - kaarthouders 
-- Karte  
+- karte  
 - karteninhaber 
 - karteninhabers
 - kartennr 
 - kartennummer 
 - kreditkarte 
-- kreditkarten-Nummer 
+- kreditkarten-nummer 
 - kreditkarteninhaber 
 - kreditkarteninstitut 
 - kreditkartennummer 
@@ -2595,7 +2595,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Não. do cartao 
 - Não. do cartão 
 - nr carta 
-- Nr. carta 
+- nr. carta 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -2678,16 +2678,16 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - crittogramma 
 - cryptogram 
 - cryptogramme 
-- CV2 
-- CVC 
-- CVC2 
-- CVN 
-- CVV 
-- CVV2 
+- cv2 
+- cvc 
+- cvc2 
+- cvn 
+- cvv 
+- cvv2 
 - cód seguranca 
 - cód segurança 
-- Cód. seguranca 
-- Cód. segurança 
+- cód. seguranca 
+- cód. segurança 
 - CFOP 
 - código de seguranca 
 - código de segurança 
@@ -2977,7 +2977,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -3172,18 +3172,18 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- NR-Führerschein 
-- NR-Fuhrerschein 
-- NR-Fuehrerschein 
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
 - No-Führerschein 
 - No-Fuhrerschein 
 - No-Fuehrerschein 
 - N-Führerschein 
 - N-Fuhrerschein 
 - N-Fuehrerschein
-- NR-Führerschein 
-- NR-Fuhrerschein 
-- NR-Fuehrerschein 
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
 - No-Führerschein 
 - No-Fuhrerschein 
 - No-Fuehrerschein 
@@ -3277,7 +3277,7 @@ No-Reisepass NR-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
-Reisepass-NR
+Reisepass-Nr
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
@@ -4055,23 +4055,23 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座 # 
+- 銀行口座＃ 
 - 銀行の勘定番号 
-- 銀行のacct # 
+- 銀行のacct＃ 
 - 銀行の勘定いいえ 
 - 銀行口座番号
 - 普通預金口座番号 
 - 預金口座 
-- 貯蓄口座 # 
+- 貯蓄口座＃ 
 - 貯蓄勘定の数 
-- 貯蓄勘定 # 
+- 貯蓄勘定＃ 
 - 貯蓄勘定番号 
 - 普通預金口座番号 
 - 引き落とし口座番号 
 - 口座番号 
-- 口座番号 # 
+- 口座番号＃ 
 - デビットのacct番号 
-- デビット勘定 # 
+- デビット勘定＃ 
 - デビットACCTの番号 
 - デビット口座番号 
 
@@ -4130,7 +4130,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - state id 
 - state identification 
 - state identification number 
-- 低所得国 # 
+- 低所得国＃ 
 - 免許証 
 - 状態ID
 - 状態の識別 
@@ -4176,7 +4176,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
    
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente do Japão
 
@@ -4219,8 +4219,8 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号 、 登録番号をレジデント 
-- 住民基本登録番号 、 登録番号 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
 - 住民基本レジストリ番号を常駐 
 - 登録番号を常駐住民基本台帳登録番号 
 
@@ -4375,14 +4375,14 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - kad pengenalan Malásia
 - KP
 - KP não
-- MyKad
-- Mykas
+- mykad
+- mykas
 - mykid
 - mypr
 - mytentera
 - cartão de identidade da Malásia
 - cartão de identidade do Malasiano
-- NRIC
+- nric
 - cartão de identificação pessoal
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número do Serviço do Cidadão (BSN) da Holland
@@ -4474,7 +4474,7 @@ Keyword_nz_terms
 
 - NHI 
 - Nova Zelândia 
-- Saúde 
+- Integridade 
 - tratamento 
    
 ## <a name="norway-identification-number"></a>Número de Identificação da Noruega
@@ -5038,7 +5038,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - fabrikam
 - Northwind
 - área restrita
-- Onebox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->suplementos
@@ -5142,12 +5142,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5201,11 +5201,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - swift routing number 
 - bic number 
 - bic code 
-- BIC\# 
-- BIC\# 
+- bic\# 
+- bic\# 
 - bank identifier code 
 - 標準化 9362 
-- 迅速 # 
+- 迅速＃ 
 - SWIFTコード 
 - SWIFT番号 
 - 迅速なルーティング番号 
@@ -5512,7 +5512,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - 125cc 
 - sidecar 
 - tricycles 
-- Motorcycles 
+- motorcycles 
 - photocard licence 
 - learner drivers 
 - licence holder 
@@ -5748,12 +5748,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5877,7 +5877,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - DISTRIBUIÇÃO 
 - DL 
 - CDL 
-- CDLS # 
+- CDLS# 
 - ID
 - Código 
 - ID number 
@@ -5926,34 +5926,34 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5964,7 +5964,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
 
 - Abreviação do estado (por exemplo, "NY") 
 - Nome do estado (por exemplo, "Nova York")    
@@ -6044,7 +6044,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - contribui 
 - tax id 
 - tax identification 
-- ITIN 
+- itin 
 - es 
 - Tin 
 - social security 

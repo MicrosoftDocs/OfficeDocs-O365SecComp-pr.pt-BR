@@ -3,7 +3,7 @@ title: Ativar o Office 365 ATP para SharePoint, OneDrive e Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: Saiba como ativar a ATP para SharePoint, OneDrive e Teams, incluindo como definir alertas para arquivos detectados.
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264285"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077237"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Ativar o Office 365 ATP para SharePoint, OneDrive e Microsoft Teams
 
@@ -28,9 +28,9 @@ O [Office 365 ATP para SharePoint, onedrive e Microsoft Teams](atp-for-spo-odb-a
   
 Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir:
 
-|Função  |Onde/como a atribuição  |
+|Role  |Onde/como a atribuição  |
 |---------|---------|
-|Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
+|Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (Confira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
 |Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
 |Gerenciamento da organização do Exchange Online |Centro de administração do[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>ou <br>  Cmdlets do PowerShell (consulte [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
@@ -40,7 +40,7 @@ Para definir (ou editar) políticas ATP, você deve ter uma função apropriada 
   
 1. Vá até [https://protection.office.com](https://protection.office.com)e entre com sua conta corporativa ou de estudante.
     
-2. no centro de conformidade com &amp; segurança do Office 365, no painel de navegação esquerdo, em **gerenciamento de ameaças**, escolha **anexos seguros**de **política** \> . <br/>![No centro de &amp; conformidade de segurança, escolha política \> de gerenciamento de ameaças](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. No centro de conformidade com &amp; segurança do Office 365, no painel de navegação esquerdo, em **Gerenciamento de ameaças**, escolha **anexos seguros**de **política** \> . <br/>![No centro de &amp; conformidade de segurança, escolha política \> de gerenciamento de ameaças](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. Selecione **Ativar ATP para SharePoint, onedrive e Microsoft Teams**.<br/>![Ativar a proteção avançada contra ameaças para o SharePoint Online, o OneDrive for Business e o Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
@@ -64,7 +64,7 @@ Para saber mais sobre a experiência do usuário quando um arquivo foi detectado
 
 Para receber notificações quando um arquivo no SharePoint Online, no OneDrive for Business ou no Microsoft Teams foi identificado como mal-intencionado, você pode configurar um alerta.
   
-1. no [centro de conformidade de &amp; segurança do Office 365](https://protection.office.com), escolha **alertas** \> **gerenciar alertas**.
+1. No [centro de conformidade de &amp; segurança do Office 365](https://protection.office.com), escolha **alertas** \> **Gerenciar alertas**.
     
 2. Escolha **nova política de alerta**.
     

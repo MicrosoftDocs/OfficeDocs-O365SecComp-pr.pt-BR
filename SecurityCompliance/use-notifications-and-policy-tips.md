@@ -1,10 +1,10 @@
 ---
-title: Enviar notificações por email e mostrar dicas de política para políticas de DLP
+title: Enviar notificações por email e mostrar dicas para políticas de DLP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está trabalhando com conteúdo que está em conflito com uma política de DLP. Você pode usar notificações por email e dicas de política para aumentar a conscientização e ajudar a ensinar as pessoas sobre as políticas da sua organização. Você também pode conceder às pessoas a opção de substituir a política, para que elas não sejam bloqueadas se tiverem uma necessidade comercial válida ou se a política estiver detectando um falso positivo. '
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263828"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077357"
 ---
-# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e mostrar dicas de política para políticas de DLP
+# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e mostrar dicas para políticas de DLP
 
 Você pode usar uma política de prevenção contra perda de dados (DLP) para identificar, monitorar e proteger informações confidenciais no Office 365. Você deseja que as pessoas em sua organização que trabalhem com essas informações confidenciais permaneçam em conformidade com suas políticas de DLP, mas não convém bloqueá-las desnecessariamente da realização de seus trabalhos. É aí que as notificações por email e as dicas de política podem ajudar.
   
@@ -65,7 +65,7 @@ Quando você cria uma política de DLP, as notificações por email e as dicas d
     
 6. Para escolher os locais que você deseja que a política de DLP proteja, siga um destes procedimentos:
     
-  - escolha **todos os locais no Office 365** \> **em seguida**.
+  - Escolha **todos os locais no Office 365** \> **em seguida**.
     
   - Escolha **deixe-me escolher locais** \> específicos **em seguida**.
     
@@ -87,7 +87,7 @@ Para cada regra de uma política de DLP, você pode:
   
 - Enviar a notificação para as pessoas que você escolher. Essas pessoas podem incluir o proprietário do conteúdo, a pessoa que modificou o conteúdo pela última vez, o proprietário do site em que o conteúdo está armazenado ou um usuário específico.
     
-- Personalizar o texto que está incluído na notificação usando HTML ou tokens. ConFira a seção abaixo para obter mais informações.
+- Personalizar o texto que está incluído na notificação usando HTML ou tokens. Confira a seção abaixo para obter mais informações.
     
 > [!NOTE]
 >  As notificações por email podem ser enviadas somente para destinatários individuais, não grupos ou listas de distribuição. Apenas o novo conteúdo disparará uma notificação por email. Editar o conteúdo existente disparará dicas de política, mas não uma notificação por email. 
@@ -114,11 +114,11 @@ Você pode criar uma notificação de email personalizada em vez de enviar a not
   
 Você também pode usar os tokens a seguir para ajudar a personalizar a notificação por email. Esses tokens são variáveis que são substituídas por informações específicas na notificação que é enviada.
 
-|**Token**|**Descrição**|
+|**Geração**|**Descrição**|
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |As ações aplicadas ao conteúdo.  <br/> |
 |%% ContentURL%%  <br/> |A URL do documento no site do SharePoint Online ou do OneDrive for Business.  <br/> |
-|%% MatchedConditions%%  <br/> |As condições que foram atendidas pelo conteúdo. Use este token para informar pessoas de possíveis problemas com o conteúdo.  <br/> |
+|%%MatchedConditions%%  <br/> |As condições que foram atendidas pelo conteúdo. Use este token para informar pessoas de possíveis problemas com o conteúdo.  <br/> |
    
 ![Mensagem de notificação mostrando onde os tokens aparecem](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   

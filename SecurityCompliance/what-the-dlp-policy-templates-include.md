@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 inclui modelos de política prontos para uso que atendem aos requisitos de conformidade comuns, como ajudá-lo a proteger informações confidenciais sujeitas ao decreto de seguro de saúde dos EUA ( HIPAA), lei Gramm-Leach-Bliley (GLBA) dos EUA ou Patriot americano. Este tópico lista todos os modelos de política, quais tipos de informações confidenciais elas procuram e quais são as condições e ações padrão.
-ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266836"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077147"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>O que os modelos de política de DLP incluem
 
@@ -220,8 +220,8 @@ A prevenção de perda de dados (DLP) no centro &amp; de conformidade de seguran
 
 |**Nome da regra**|**Condições <br/> (incluindo tipos de informações confidenciais)**|**Actions**|
 |:-----|:-----|:-----|
-|AMRA do Reino Unido: Examinar o conteúdo compartilhado fora - contagem baixa  <br/> | Conteúdo tem informações confidenciais:  <br/>  Britânico Número do serviço de integridade nacional – min contagem 1, máx. 9  <br/>  Britânico Número de seguro nacional (NINO) — Mín de contagem 1, contagem máxima 9  <br/>  O conteúdo é compartilhado com:  <br/>  Pessoas de fora da minha organização  <br/> |Enviar uma notificação  <br/> |
-|AMRA do Reino Unido: Examinar o conteúdo compartilhado fora - contagem alta  <br/> | Conteúdo tem informações confidenciais:  <br/>  Britânico Número do serviço de integridade nacional – contagem mín 10, contagem máx de qualquer  <br/>  Britânico Número de seguro nacional (NINO) — contagem mín 10, contagem máx de qualquer  <br/>  O conteúdo é compartilhado com:  <br/>  Pessoas de fora da minha organização  <br/> | Bloquear o acesso ao conteúdo  <br/>  Enviar uma notificação  <br/>  Permitir substituição  <br/>  Exigir justificativa comercial  <br/>  Enviar relatório de incidente  <br/> |
+|AMRA do Reino Unido: Examinar o conteúdo compartilhado fora - contagem baixa  <br/> | Conteúdo tem informações confidenciais:  <br/>  britânico Número do serviço de integridade nacional – min contagem 1, máx. 9  <br/>  britânico Número de seguro nacional (NINO) — Mín de contagem 1, contagem máxima 9  <br/>  O conteúdo é compartilhado com:  <br/>  Pessoas de fora da minha organização  <br/> |Enviar uma notificação  <br/> |
+|AMRA do Reino Unido: Examinar o conteúdo compartilhado fora - contagem alta  <br/> | Conteúdo tem informações confidenciais:  <br/>  britânico Número do serviço de integridade nacional – contagem mín 10, contagem máx de qualquer  <br/>  britânico Número de seguro nacional (NINO) — contagem mín 10, contagem máx de qualquer  <br/>  O conteúdo é compartilhado com:  <br/>  Pessoas de fora da minha organização  <br/> | Bloquear o acesso ao conteúdo  <br/>  Enviar uma notificação  <br/>  Permitir substituição  <br/>  Exigir justificativa comercial  <br/>  Enviar relatório de incidente  <br/> |
    
 ## <a name="uk-data-protection-act"></a>Ato de Proteção de Dados do Reino Unido
 

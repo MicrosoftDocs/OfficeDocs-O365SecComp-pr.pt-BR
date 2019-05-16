@@ -3,7 +3,7 @@ title: Configurar as políticas anti-phishing do Office 365 ATP
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Proteção contra phishing, com proteção abrangente como parte do Office 365 proteção avançada contra ameaças e proteção básica no Office 365 proteção do Exchange Online, pode ajudar a proteger sua organização contra ataques de phishing baseados em representação mal-intencionada. e outros ataques de phishing.
-ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077207"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a> Configurar políticas antiphishing e antiphishing da ATP do Office 365
 
@@ -26,55 +26,55 @@ A [proteção antiphishing da ATP](atp-anti-phishing.md), parte da [proteção a
 Os ataques de phishing vêm em uma variedade de formulários de ataques baseados em mercadoria ao spear phishing ou Whaling. Com a complexidade crescente, é difícil até mesmo um olho treinado para identificar alguns desses ataques sofisticados. Felizmente, a proteção avançada contra ameaças do Office 365 pode ajudar. Você pode configurar uma política anti-phishing do ATP para ajudar a garantir que sua organização esteja protegida contra esses ataques.
   
 > [!NOTE]
-> A ATP anti-phishing só está disponível na proteção avançada contra ameaças (ATP). A ATP está incluída em inscrições, como [o microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [o Microsoft 365 Business, o](https://www.microsoft.com/microsoft-365/business)Office 365 Enterprise E5, o Office 365 Education a5, etc. Se sua organização tiver uma assinatura do Office 365 que não inclua o Office 365 ATP, você poderá comprar ATP como um complemento. Confira mais informações em [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Certifique-se de que sua organização esteja usando a versão mais recente do Office 365 proPlus no Windows para aproveitar totalmente a proteção antiphishing da ATP. 
+> A ATP anti-phishing só está disponível na proteção avançada contra ameaças (ATP). A ATP é incluída em assinaturas, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise e5, Office 365 Education a5, etc. Se sua organização tiver uma assinatura do Office 365 que não inclua o Office 365 ATP, você poderá comprar ATP como um complemento. Confira mais informações em [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Certifique-se de que sua organização esteja usando a versão mais recente do Office 365 ProPlus no Windows para aproveitar totalmente a proteção antiphishing da ATP. 
 
 Uma política anti-phishing também está disponível para o Office 365 proteção do Exchange Online, com um conjunto limitado de proteção contra falsificação destinado a proteger contra ataques baseados em autenticação e de base.
   
 O que fazer:
   
 1. Examine os pré-requisitos.
-    
+
 2. Saiba mais sobre as opções de política anti-phishing e de anti-phishing da ATP.
-    
+
 3. Configurar uma política de anti-phishing ou uma política anti-phishing do ATP.
-    
-## <a name="review-the-prerequisites"></a>ReVisar os pré-requisitos
 
-- Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir: <br>
+## <a name="review-the-prerequisites"></a>Revisar os pré-requisitos
 
-    |Função  |Onde/como a atribuição  |
+- Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir:
+
+    |Role  |Onde/como a atribuição  |
     |---------|---------|
-    |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
+    |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (Confira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
     |Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
     |Gerenciamento da organização do Exchange Online |Centro de administração do[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>ou <br>  Cmdlets do PowerShell (consulte [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
-    
+
     Para saber mais sobre funções e permissões, confira [permissões no centro de conformidade &amp; de segurança do Office 365](permissions-in-the-security-and-compliance-center.md).
 
 - Provavelmente, você configurará várias políticas anti-phishing para sua organização. O Office 365 impõe essas políticas na ordem em que estão listadas na **página** anti-phishing e nas páginas **anti-phishing do ATP** no centro de conformidade de segurança &amp; . Após revisar suas [Opções de política](#learn-about-atp-anti-phishing-policy-options), Reserve algum tempo para determinar quantas políticas você precisará e a prioridade de cada uma. 
-    
+
 - Planeje gastar cerca de 5-15 minutos para configurar sua primeira política anti-phishing.
-    
+
 - Aguarde até 30 minutos para que a política nova ou atualizada se espalhe para todos os datacenters do Office 365.
-    
+
 ## <a name="set-up-an-anti-phishing-or-atp-anti-phishing-policy"></a>Configurar uma política anti-phishing de anti-phishing ou de anti-phishing
 
 Cada organização no Office 365 tem uma política anti-phishing padrão que se aplica a todos os usuários. Você pode criar várias políticas anti-phishing personalizadas que podem ser delimitadas a usuários, grupos ou domínios específicos em sua organização. As políticas personalizadas criadas prevalecem sobre a política padrão. Você adiciona, edita e exclui políticas anti-phishing no centro de conformidade de segurança &amp; do Office 365.
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
-    
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
+
 2. No centro de conformidade com &amp; segurança do Office 365, no painel de navegação esquerdo, em **Gerenciamento de ameaças**, escolha **política**.
-    
+
 3. Na página **política** , escolha anti- **phishing** ou **antivírus ATP**.
-    
-4. Na página **** anti-phishing ou anti **-phishing da ATP** , siga um destes procedimentos: 
-    
+
+4. Na página **** anti-phishing ou anti **-phishing da ATP** , siga um destes procedimentos:
+
     - Para adicionar uma nova política, selecione **+ criar**.
     - Para editar uma política existente, selecione o nome da política na lista exibida na página **anti-phishing** . (Como alternativa, você pode ou escolher **política padrão** acima da lista.) Na página exibida, escolha **Editar política**.  
-    
+
 5. Especifique o nome, a descrição e as configurações da política. Consulte [saiba mais sobre as opções de política de anti-phishing do ATP](#learn-about-atp-anti-phishing-policy-options) para obter mais detalhes. 
-    
-6. Depois de revisar as configurações, escolha **criar esta política** (ou **salvar**). 
-    
+
+6. Depois de revisar as configurações, escolha **criar esta política** (ou **salvar**).
+
 ## <a name="learn-about-atp-anti-phishing-policy-options"></a>Saiba mais sobre as opções de política anti-phishing do ATP
 
 À medida que você configura ou edita as políticas de anti-phishing da ATP, é possível escolher entre várias opções que oferecem a proteção mais sofisticada e abrangente, conforme descrito na tabela a seguir:
@@ -88,8 +88,8 @@ Cada organização no Office 365 tem uma política anti-phishing padrão que se 
 |**Adicionar domínios e remetentes confiáveis** <br/> |Define endereços de email e domínios que não serão considerados impróprios por essa política. As mensagens dos endereços e domínios de email do remetente que você adiciona como remetentes confiáveis e domínios nunca serão classificadas como um ataque baseado em representação. Como resultado, as ações e configurações nesta política não serão aplicadas a mensagens desses remetentes e domínios.  <br/> |Quando os usuários interagem com domínios ou usuários que disparam a representação, mas são considerados seguros. Por exemplo, se um parceiro tiver o mesmo nome de exibição ou nome de domínio semelhante ao definido como um usuário na lista.  <br/> |
 |**Aplicado a** <br/> |Define os destinatários cujas mensagens de email de entrada serão sujeitas às regras da política. Você pode criar condições e exceções para os destinatários associados à política.  <br/> Por exemplo, você pode criar uma política global para sua organização aplicando a regra a todos os destinatários em seu domínio.  <br/> Você também pode criar regras de exceção, como uma regra que não verifica mensagens de email para um grupo específico de destinatários.  <br/> |Cada política deve ser associada a um conjunto de usuários, por exemplo, usuários em um grupo ou domínio específico.  <br/> |
 |**Limites avançados de phishing** <br/> |Define o nível de configurações para como as mensagens de phishing são tratadas.  <br/> **Padrão** Um email suspeito de ser phishing é tratado da forma padrão.  <br/> **Agressivo** É suspeito que o sistema fique em caso de phishing com um alto grau de confiança e que seja tratado pelo sistema da mesma maneira.  <br/> **Mais agressivo** É suspeito que o sistema seja de phishing com uma média, alta ou muito alto grau de confiança é manipulado pelo sistema da mesma maneira.  <br/> **Mais agressivo** É suspeito que o sistema seja de phishing com baixa, média, alta ou muito alto grau de confiança é tratado pelo sistema da mesma maneira.  <br/> |Quando você deseja ser mais agressivo no tratamento de mensagens potencialmente de phishing no Office 365. Por exemplo, as mensagens com uma grande probabilidade de ser phishing terão as ações mais agressivas tomadas neles enquanto as mensagens com baixa probabilidade têm ações menos agressivas tomadas. Essa configuração também afeta outras partes do sistema de filtragem que combinam sinais juntos. A possibilidade de mover mensagens boas aumenta conforme o nível das configurações aumenta.  <br/>|
-   
-## <a name="learn-about-anti-phishing-policy-options"></a>Saiba mais sobre as opções de política anti-phishing 
+
+## <a name="learn-about-anti-phishing-policy-options"></a>Saiba mais sobre as opções de política anti-phishing
 
 Ao configurar ou editar seu anti-phishing, você pode escolher entre várias opções, conforme descrito na tabela a seguir: 
 
@@ -105,11 +105,11 @@ Depois que a sua organização configurou políticas anti-phishing ou políticas
 Este exemplo configura uma política chamada "Domain and CEO" que fornece proteção de usuário e de domínio da representação e aplica a política a todos os emails recebidos por usuários no domínio `contoso.com`. O administrador de segurança determinou que a política deve atender a esses requisitos de negócios:
   
 - A política precisa fornecer proteção para a conta de email do CEO e o domínio inteiro.
-    
+
 - As mensagens que são consideradas como tentativas de representação em relação à conta de usuário do CEO precisam ser redirecionadas para o endereço de email do administrador de segurança.
-    
+
 - As mensagens determinadas em tentativas de representação no domínio são menos urgentes e devem ser colocadas em quarentena para análise posterior.
-    
+
 O administrador de segurança na Contoso pode usar valores como o seguinte para criar uma política anti-phishing que atenda a essas necessidades.
   
 |||
@@ -123,27 +123,27 @@ O administrador de segurança na Contoso pode usar valores como o seguinte para 
 |Inteligência de caixa de correio  <br/> |Por padrão, a inteligência de caixa de correio é selecionada quando você cria uma nova política anti-phishing. Deixe esta configuração **em** para obter os melhores resultados.  <br/> |
 |Adicionar domínios e remetentes confiáveis  <br/> |Para este exemplo, não defina substituições.  <br/> |
 |Aplicado a  <br/> |Selecione **o domínio do destinatário**. Em **qualquer um dos seguintes**, selecione **escolher**. Selecione **+ Adicionar**. Marque a caixa de seleção ao lado do nome do domínio, por exemplo `contoso.com`, na lista e selecione **Adicionar**. Selecione **concluído**.  <br/> |
-   
+
 ## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>Excluir uma política anti-phishing de anti-phishing ou ATP
 
 Você pode excluir políticas personalizadas criadas usando o centro de conformidade de &amp; segurança. Não é possível excluir a política padrão para sua organização. Recomendamos usar o centro &amp; de conformidade de segurança para rever ou editar qualquer uma das suas políticas de ATP.
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
-    
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante.
+
 2. Na navegação à esquerda, em **Gerenciamento de ameaças**, escolha **política**.
-    
+
 3. Na página **política** , escolha anti- **phishing** ou **antivírus ATP**.
-    
+
 4. Na página **** anti-phishing ou anti **-phishing da ATP** , selecione o nome da política na lista.
 
 5. Na página exibida, escolha **excluir política**. Aguarde até 30 minutos para que as alterações se espalhem para todos os datacenters do Office 365.
-    
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Quando suas políticas anti-phishing estiverem em vigor, você poderá ver como os recursos de proteção contra ameaças estão funcionando para sua organização, exibindo relatórios. ConFira os seguintes recursos para saber mais:
+Quando suas políticas anti-phishing estiverem em vigor, você poderá ver como os recursos de proteção contra ameaças estão funcionando para sua organização, exibindo relatórios. Confira os seguintes recursos para saber mais:
+
 - [Exibir relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md) ou [exibir relatórios de segurança de email](view-email-security-reports.md)
+
 - [Usar o Explorer (também chamado de Gerenciador de ameaças)](use-explorer-in-security-and-compliance.md)
 
 Fique à frente dos novos recursos que chegam à ATP. Visite o [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) e saiba mais sobre os [novos recursos que estão sendo adicionados à ATP](office-365-atp.md#new-features-in-office-365-atp).
- 

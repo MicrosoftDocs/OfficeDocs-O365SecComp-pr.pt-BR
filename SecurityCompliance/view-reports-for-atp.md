@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Saiba como encontrar e usar relatórios para a proteção avançada contra ameaças do Office 365 no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: ff80191ae75a37994d1ad08f587fa07f72b88f24
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077317"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios para a proteção avançada contra ameaças do Office 365
 
@@ -45,7 +45,7 @@ Para obter o status detalhado de um dia, passe o mouse sobre o gráfico.
   
 ![Dados de status de proteção de ameaças ATP por um dia](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Por padrão, o relatório de status de proteção contra ameaças mostra os dados dos últimos sete dias. No enTanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados de até 90 dias. 
+Por padrão, o relatório de status de proteção contra ameaças mostra os dados dos últimos sete dias. No entanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados de até 90 dias. 
   
 ![Filtros de status de proteção contra ameaças ATP](media/4f703369-642b-402b-9758-b9c828283410.png)
   

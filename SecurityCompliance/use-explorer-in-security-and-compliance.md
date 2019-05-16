@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre o Explorer (também chamado de Gerenciador de ameaças &amp; ) no centro de conformidade de segurança.
-ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30f3759b6eb35508a9de8c03abb72562417aa04f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077327"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Usar o explorador de ameaças no &amp; centro de conformidade de segurança
 
@@ -34,7 +34,7 @@ O Explorer é uma ferramenta poderosa, quase em tempo real, para ajudar as equip
 - [Iniciar um processo de investigação e resposta automatizado de um modo de exibição no Explorer](#start-automated-investigation-and-response)
 - ... [e muito mais](#more-ways-to-use-explorer)!
 
-## <a name="see-malware-detected-in-email-by-technology"></a>ConFira malware detectado em email por tecnologia
+## <a name="see-malware-detected-in-email-by-technology"></a>Confira malware detectado em email por tecnologia
 
 Suponha que você queira ver o malware detectado no email e por qual tecnologia no Office 365. Para fazer isso, use o [email _GT_ malware](threat-explorer-views.md#email--malware) View do Explorer.
 
@@ -55,7 +55,7 @@ Suponha que você queira ver as tentativas de phishing por meio de URLs no email
 4. Selecione uma ou mais opções, como **bloqueado** e o **bloco substituído**, e clique no botão **Atualizar** para aplicar esse filtro.<br/>![URLs e clique em verdicts](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
 O relatório é atualizado para mostrar duas tabelas de URL diferentes na guia URL abaixo:
-1. As **principais URLs** são as URLs contidas nas mensagens que foram filtradas para baixo e a ação de entrega de emails conta para cada URL. No modo de exibição email de phishing, essa lista normalmente conterá URLs legítimas. Os inVasores incluem uma mistura de URLs boas e ruins nas mensagens para tentar obtê-las, mas eles tornarão os links mal-intencionados mais interessantes para o usuário clicar. A tabela de URLs é classificada pela contagem total de emails (Observação: esta coluna não é mostrada para simplificar o modo de exibição).
+1. As **principais URLs** são as URLs contidas nas mensagens que foram filtradas para baixo e a ação de entrega de emails conta para cada URL. No modo de exibição email de phishing, essa lista normalmente conterá URLs legítimas. Os invasores incluem uma mistura de URLs boas e ruins nas mensagens para tentar obtê-las, mas eles tornarão os links mal-intencionados mais interessantes para o usuário clicar. A tabela de URLs é classificada pela contagem total de emails (Observação: esta coluna não é mostrada para simplificar o modo de exibição).
 2. Os **principais cliques** são as URLs encapsuladas de links seguros que foram clicados, classificados por contagem de clique total (essa coluna também não é exibida para simplificar o modo de exibição). Total de contagens por coluna indicam os links seguros clique em contagem de veredicto para cada URL clicada. No modo de exibição email de phishing, esses links serão freqüentemente suspeitos ou mal-intencionados, mas podem incluir URLs limpas que estão em mensagens de phishing. Os cliques de URL em links não ajustados não aparecerão aqui.
 
 As duas tabelas URLs mostram as principais URLs nos emails de phishing por status de entrega e mostram cliques de URL que foram bloqueados (ou visitados apesar de um aviso) para que você possa entender quais links defeituosos possíveis foram recebidos por usuários e interagem com os usuários. A partir daqui, você pode realizar uma análise adicional. Por exemplo, abaixo do gráfico, você pode ver as principais URLs nos emails que foram bloqueados no ambiente da sua organização. 
