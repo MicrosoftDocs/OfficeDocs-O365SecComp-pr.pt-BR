@@ -14,60 +14,176 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 378bd9ae88269d6a6d15a672473550e50179f772
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: d8e9689cb04929137787225579dcda17005c8bfe
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834930"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088804"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de arquivo com suporte na descoberta eletrônica avançada
 
-A descoberta eletrônica avançada oferece suporte a vários tipos de arquivo e dá suporte a eles em diferentes níveis, que são descritos na tabela a seguir. Esta lista ainda não foi finalizada e adicionaremos novos tipos de arquivo, conforme continuamos com o teste de validação. A tabela também indica se um tipo de arquivo pode ser exibido nos visualizadores disponíveis em descoberta eletrônica avançada.
+A descoberta eletrônica avançada oferece suporte a vários tipos de arquivo para vários níveis diferentes, que são descritos na tabela a seguir. Essa lista não é finalizada e adicionaremos novos tipos de arquivos conforme continuamos com o teste de validação. As tabelas indicam se um tipo de arquivo é suportado para a extração de texto (OCR para imagens), visível no visualizador nativo e também suporte no Visualizador de anotações na descoberta eletrônica avançada.
 
-| Tipo MIME | Descrição | Visualizador nativo | Visualizador de texto | Visualizador de anotações | Extração de contêiner | Extensões |
-| :- | :- | :- | :- | :- | :- | :- |
-| aplicativo/mbox | Arquivo morto/contêiner |  |  |  | Sim | .mbox |
-| application/msword | Produtividade | Sim | Sim | Sim |  | . doc;. dat |
-| application/pdf | Produtividade | Sim | Sim | Sim |  | .pdf |
-| Application/RTF | Documento | Sim | Sim | Sim |  | . rtf;. Doc |
-| application/vnd. MS-Excel | Produtividade | Sim | Sim | Sim |  | . xls;. dat |
-| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produtividade | Sim | Sim | Não |  | . xlsb |
-| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Produtividade | Sim | Sim | Sim |  | . xlsm |
-| application/vnd. MS-Excel. Template. macroenabled. 12 | Produtividade | Não | Sim | Não |  | . xltm |
-| application/vnd. MS-Outlook | Colaboração | Sim | Sim | Sim |  | . msg |
-| application/vnd. MS-Outlook-PST | Arquivo morto/contêiner |  |  |  | Sim | . pst |
-| application/vnd. ms-PowerPoint | Produtividade | Sim | Sim | Sim |  | . ppt;. PPS;. Pot |
-| application/vnd. MS-Word. Document. macroenabled. 12 | Produtividade | Sim | Sim | Sim |  | .docm |
-| application/vnd. MS-Word. Template. macroenabled. 12 | Produtividade | Sim | Sim | Sim |  | . dotm |
-| application/vnd. Oasis. OpenDocument. Text | Produtividade | Sim | Sim | Sim |  | ODT  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Produtividade | Sim | Sim | Sim |  | . pptx |
-| application/vnd. openxmlformats-officeDocument. presentationml. slideshow | Produtividade | Sim | Sim | Sim |  | . ppsx |
-| application/vnd. openxmlformats-officeDocument. presentationml. Template | Produtividade | Sim | Sim | Sim |  | . potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Produtividade | Sim | Sim | Sim |  | . xlsx |
-| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Produtividade | Sim | Sim | Sim |  | . xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Produtividade | Sim | Sim | Sim |  | . docx |
-| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Produtividade | Sim | Sim | Sim |  | . dotx |
-| application/vnd. Visio | Produtividade | Sim | Sim | Sim |  | . vsd |
-| aplicativo/x-7z-compactado | Arquivo morto/contêiner |  |  |  | Sim | .7z |
-| aplicativo/XHTML + XML | Documento | Sim | Sim | Sim |  | . XHTML |
-| aplicativo/XML | Documento | Sim | Sim | Sim |  | . xml |
-| application/x-Msaccess | Produtividade | Sim | Sim | Sim |  | . mdb |
-| aplicativo/x-mspublisher | Produtividade | Sim | Sim | Sim |  | . pub |
-| application/x-rar-compactado | Arquivo morto/contêiner |  |  |  | Sim | . rar |
-| application/x-tar | Arquivo morto/contêiner |  |  |  | Sim | . tar |
-| aplicativo/zip | Arquivo morto/contêiner |  |  |  | Sim | . zip |
-| imagem/BMP | Image | Sim | Sim | Sim |  | .bmp |
-| imagem/EMF | Image | Sim | Sim | Sim |  | . EMF |
-| image/gif | Image | Sim | Sim | Sim |  | .gif |
-| image/jpeg | Image | Sim | Sim | Sim |  | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Sim | Sim | Sim |  | .png |
-| imagem/TIFF | Image | Sim | Sim | Sim |  | . tif |
-| Image/vnd. dwg | Desenhos | Sim | Sim | Sim |  | . dwg;. DXF |
-| imagem/WMF | Documento | Sim | Sim | Sim |  | . wmf |
-| mensagem/RFC822 | Colaboração | Sim | Sim | Sim |  | . eml |
-| texto/CSV | Documento | Sim | Sim | Sim |  | . csv |
-| texto/HTML | Documento | Sim | Sim | Sim |  | . html;. shtml;. htm |
-| texto/simples | Documento | Sim | Sim | Sim |  | . txt;. css;. con;. pl;. csv;. dat |
-| texto/vCard-contato | Colaboração | Sim | Sim | Sim |  | . vcf |
+## <a name="archive--container"></a>Arquivo morto/contêiner
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de contêiner | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |
+| aplicativo/x-7z-compactado | Sim | Sim | Sim | .7z |
+| application/x-rar-compactado | Sim | Sim | Sim | . rar |
+| application/x-tar | Sim | Sim | Sim | . tar |
+| aplicativo/zip | Sim | Sim | Sim | . zip |
+||||||||
+
+## <a name="database"></a>Banco de dados
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/x-Msaccess | Sim | Sim | Sim | Não | Não | . mdb |
+||||||||
+
+## <a name="email"></a>Email
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Outlook | Sim | Sim | Sim | Sim | Sim | . msg |
+| mensagem/RFC822 | Sim | Sim | Sim | Sim | Sim | . eml |
+| texto/vCard-contato | Sim | Sim | Sim | Sim | Sim | . vcf |
+||||||||
+
+## <a name="email-container"></a>Contêiner de email
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de contêiner | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |
+| aplicativo/mbox | Sim | Sim | Sim | .mbox |
+| application/vnd. MS-Outlook-PST | Sim | Sim | Sim | . pst |
+||||||||
+
+## <a name="html"></a>HTML
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| aplicativo/XHTML + XML | Sim | Sim | Sim | Sim | Sim | . XHTML |
+| aplicativo/XML | Sim | Sim | Sim | Sim | Sim | . xml |
+| texto/HTML | Sim | Sim | Sim | Sim | Sim | . htm;. html;. shtml |
+||||||||
+
+## <a name="image"></a>Image
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto OCR | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| imagem/BMP | Sim | Sim | Sim | Sim | Sim | .bmp |
+| imagem/EMF | Sim | Sim | Sim | Sim | Sim | . EMF |
+| image/gif | Sim | Sim | Sim | Sim | Sim | .gif |
+| image/jpeg | Sim | Sim | Sim | Sim | Sim | . jpeg;. jpg |
+| image/png | Sim | Sim | Sim | Sim | Sim | .png |
+| Imagem/SVG + XML | Sim | Sim | Sim | Sim | Não | . svg |
+| imagem/TIFF | Sim | Sim | Sim | Sim | Sim | . tif |
+| Image/vnd. dwg | Sim | Sim | Sim | Sim | Sim | . dwg;. DXF |
+| imagem/WMF | Sim | Sim | Sim | Sim | Sim | . wmf |
+||||||||
+
+## <a name="microsoft-excel"></a>Microsoft Excel
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Excel | Sim | Sim | Sim | Sim | Sim | . dat;. xls |
+| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Sim | Sim | Sim | Sim | Não | . xlsb |
+| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Sim | Sim | Sim | Sim | Sim | . xlsm |
+| application/vnd. MS-Excel. Template. macroenabled. 12 | Sim | Sim | Sim | Não | Não | . xltm |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Sim | Sim | Sim | Sim | Sim | . xlsx |
+| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Sim | Sim | Sim | Sim | Sim | . xltx |
+||||||||
+
+## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. ms-PowerPoint | Sim | Sim | Sim | Sim | Sim | . pot;. PPS;. ppt |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Sim | Sim | Sim | Sim | Sim | . pptx |
+| application/vnd. openxmlformats-officeDocument. presentationml. slideshow | Sim | Sim | Sim | Sim | Sim | . ppsx |
+| application/vnd. openxmlformats-officeDocument. presentationml. Template | Sim | Sim | Sim | Sim | Sim | . potx |
+||||||||
+
+## <a name="microsoft-publisher"></a>Microsoft Publisher
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| aplicativo/x-mspublisher | Sim | Sim | Sim | Sim | Sim | . pub |
+||||||||
+
+## <a name="microsoft-visio"></a>Microsoft Visio
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Visio. Drawing | Sim | Sim | Sim | Sim | Não |  |
+| application/vnd. Visio | Sim | Sim | Sim | Sim | Sim | . vsd |
+||||||||
+
+## <a name="microsoft-word"></a>Microsoft Word
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/msword | Sim | Sim | Sim | Sim | Sim | . dat;. doc |
+| Application/RTF | Sim | Sim | Sim | Sim | Sim | . doc;. rtf |
+| application/vnd. MS-Word. Document. macroenabled. 12 | Sim | Sim | Sim | Sim | Sim | .docm |
+| application/vnd. MS-Word. Template. macroenabled. 12 | Sim | Sim | Sim | Sim | Sim | . dotm |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Sim | Sim | Sim | Sim | Sim | . docx |
+| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Sim | Sim | Sim | Sim | Sim | . dotx |
+||||||||
+
+## <a name="microsoft-works"></a>Microsoft Works
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. ms-Works-SS | Sim | Sim | Não | Não | Não | . WPS |
+| application/vnd. ms-Works-wp | Sim | Sim | Não | Não | Não | . WPS |
+||||||||
+
+## <a name="open-document-format"></a>Formato de documento aberto
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. Oasis. OpenDocument. Text | Sim | Sim | Sim | Sim | Sim | . odt |
+||||||||
+
+## <a name="other"></a>Other
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/json | Sim | Sim | Sim | Sim | Sim | n/d |
+| application/vnd. ms-Graph | Sim | Sim | Não | Não | Não |  |
+| aplicativo/winhlp | Sim | Sim | Não | Não | Não | . hlp |
+| aplicativo/x-TNEF | Sim | Sim | Não | Não | Não |  |
+||||||||
+
+## <a name="plain-text"></a>Texto simples
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| texto/CSV | Sim | Sim | Sim | Sim | Sim | . csv |
+| texto/simples | Sim | Sim | Sim | Sim | Sim | . con;. css;. csv;. dat;. pl;. txt |
+||||||||
+
+## <a name="portable-document-format"></a>Formato de documento portátil
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/pdf | Sim | Sim | Sim | Sim | Sim | .pdf |
+||||||||
+
+## <a name="word-perfect"></a>Word Perfect
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. WordPerfect; versão = 5.0 | Sim | Sim | Sim | Não | Não | . wpd |
+| application/vnd. WordPerfect; versão = 5.1 | Sim | Sim | Sim | Não | Não | . wpd |
+| application/vnd. WordPerfect; versão = 6. x | Sim | Sim | Sim | Não | Não | . wpd |
+||||||||
+
+## <a name="word-pro"></a>Word Pro
+
+| Tipo MIME | Identificação de arquivo | Extração de metadados | Extração de texto | Visualizador nativo | Visualizador de anotações | Extensões possíveis |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. Lotus-Wordpro | Sim | Sim | Não | Não | Não | . lwp |
 ||||||||

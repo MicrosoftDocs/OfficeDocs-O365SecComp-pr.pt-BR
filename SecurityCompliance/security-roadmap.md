@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Principais recomendações da equipe do cybersecurity da Microsoft para a implementação de recursos de segurança para proteger seu ambiente do Office 365. '
-ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d6ac885d2517a7933df52b34124654784012c677
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260919"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088814"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Mapa de segurança do Office 365-principais prioridades para os primeiros 30 dias, 90 dias e além de
 
@@ -59,10 +59,10 @@ Essas tarefas podem ser realizadas rapidamente e tem baixo impacto para os usuá
 |||
 |:-----|:-----|
 |Área  <br/> |Tarefas  <br/> |
-|Gerenciamento de segurança  <br/> |• Verifique a pontuação segura e anote sua pontuação atual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Ative o log de auditoria do Office 365. ConFira [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md).  <br/> • [Configure seu locatário do Office 365 para maior segurança](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise regularmente painéis e relatórios no centro de segurança do Microsoft 365 e no Cloud app Security.  <br/> |
+|Gerenciamento de segurança  <br/> |• Verifique a pontuação segura e anote sua pontuação atual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Ative o log de auditoria do Office 365. Confira [Pesquisar o log de auditoria](search-the-audit-log-in-security-and-compliance.md).  <br/> • [Configure seu locatário do Office 365 para maior segurança](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise regularmente painéis e relatórios no centro de segurança do Microsoft 365 e no Cloud app Security.  <br/> |
 |Proteção contra Ameaças  <br/> |[Conecte o Office 365 ao Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar o monitoramento usando as políticas de detecção de ameaças padrão para comportamentos anormais. Leva sete dias para criar uma linha de base para detecção de anomalias.  <br><br/>  Implementar proteção para contas de administrador:  <br/> • Use contas de administrador dedicadas para atividades de administração.  <br/>  • Aplicar a MFA (autenticação multifator) para contas de administrador.  <br/>  • Use um [dispositivo Windows 10 altamente seguro](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para a atividade de administração.  <br/> |
 |Gerenciamento de identidades e acesso  <br/> |• [Habilitar a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para ambientes de identidade federada, reforçar a segurança da conta (comprimento da senha, idade, complexidade, etc.).  <br/> |
-|Proteção de informações  <br/> | ReVisar exemplos de recomendações de proteção de informações. A proteção de informações exige coordenação em toda a organização. Comece a trabalhar com estes recursos:  <br/> • [Proteção de informações do Office 365 para rgpd](http://aka.ms/o365gdpr) <br/> • [Proteger sites e arquivos do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) (inclui compartilhamento, classificação, prevenção de perda de dados e proteção de informações do Azure)  <br/> |
+|Proteção de informações  <br/> | Revisar exemplos de recomendações de proteção de informações. A proteção de informações exige coordenação em toda a organização. Comece a trabalhar com estes recursos:  <br/> • [Proteção de informações do Office 365 para rgpd](http://aka.ms/o365gdpr) <br/> • [Proteger sites e arquivos do SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) (inclui compartilhamento, classificação, prevenção de perda de dados e proteção de informações do Azure)  <br/> |
    
 ## <a name="90-days--enhanced-protections"></a>90 dias — proteções aprimoradas
 <a name="Ninetydays"> </a>
@@ -86,9 +86,9 @@ Essas são medidas de segurança importantes que são criadas no trabalho anteri
 |:-----|:-----|
 |Área  <br/> |Tarefa  <br/> |
 |Gerenciamento de segurança  <br/> |• Continue planejando as próximas ações usando a pontuação segura [https://securescore.office.com](https://securescore.office.com)().  <br/>  • Continue a examinar regularmente painéis e relatórios no centro de segurança do Microsoft 365, no Cloud app Security e nas ferramentas SIEM.  <br/>  • Continue a procurar e implementar atualizações de software.  <br/>  • Integre a descoberta eletrônica em seus processos de resposta legal e de ameaça.  <br/> |
-|Proteção contra Ameaças  <br/> | • Implemente o [acesso privilegiaDo seguro](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (Spa) para componentes de identidade no local (AD, AD FS).  <br/>  • Use o Cloud app Security para monitorar ameaças Insider.  <br/>  • Descubra o uso do SaaS de ti de sombra usando o Cloud app Security.  <br/> |
-|Gerenciamento de identidades e acesso  <br/> | • Aprimore as políticas de proteção de informações:  <br/>  • Proteção de informações do Azure e prevenção de perda de dados do Office 365 (DLP).  <br/>  • Políticas e alertas do Cloud app Security.  <br/> |
-|Proteção de informações  <br/> | • Refine políticas e processos operacionais.  <br/>  • Use o Azure AD Identity Protection para identificar ameaças Insider.  <br/> |
+|Proteção contra Ameaças  <br/> | • Implemente o [acesso privilegiado seguro](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (Spa) para componentes de identidade no local (AD, AD FS).  <br/>  • Use o Cloud app Security para monitorar ameaças Insider.  <br/>  • Descubra o uso do SaaS de ti de sombra usando o Cloud app Security.  <br/> |
+|Gerenciamento de identidades e acesso  <br/> | • Refine políticas e processos operacionais.  <br/>  • Use o Azure AD Identity Protection para identificar ameaças Insider.  |
+|Proteção de informações  <br/> | Refinar políticas de proteção de informações:  <br/>  • Microsoft 365 e Office 365 rótulos de sensibilidade e prevenção de perda de dados (DLP) ou proteção de informações do Azure.  <br/>  • Políticas e alertas do Cloud app Security.  <br/> |
    
 Consulte também: [como mitigar cyberattacks rápidos, como Petya e WannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/). 
   
