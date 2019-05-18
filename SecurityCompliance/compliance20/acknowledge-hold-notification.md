@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243627"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151943"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar uma notificação de retenção 
 Ao responder a uma solicitação ou investigação regulamentar, talvez seja necessário informar os responsáveis pela obrigação de preservar as ESI (electronicly Stored Information), bem como qualquer material que possa ser relevante para uma questão legal ativa ou iminente. Depois de enviada, as equipes jurídicas devem saber que cada um deles recebeu, leu e entendeu e concordou em cumprir as instruções fornecidas.
 
-Para ajudar a reduzir o tempo, o custo e o esforço de acompanhamento de seus responsáveis, a descoberta eletrônica avançada (visualização) permite que você envie e acompanhe notificações de bloqueio legal por email. Além de avisos por email, todos os responsáveis também terão acesso a um portal de conformidade individual, permitindo que os responsáveis sejam mantidos informados sobre as alterações em seu status de obrigação.
+Para ajudar a reduzir o tempo, o custo e o esforço de acompanhamento de seus responsáveis, a descoberta eletrônica avançada permite que você envie e acompanhe notificações de bloqueio legal por email. Além de avisos por email, todos os responsáveis também terão acesso a um portal de conformidade individual, permitindo que os responsáveis sejam mantidos informados sobre as alterações em seu status de obrigação.
 
 ## <a name="email-notifications"></a>Notificações por email
 Após a emissão de uma notificação de retenção legal, todos os responsáveis receberão um email exclusivo e personalizado contendo o aviso de retenção legal definido e adicionarão instruções. 

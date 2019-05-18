@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-msft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Com frequência, as organizações estão sujeitas a regulamentações de conformidade, legais ou outras que exigem que elas retenham documentos por um determinado período. No entanto, reter os documentos por mais tempo do que o necessário poderá expor a organização a riscos legais. Por esse motivo, sua organização pode ter criado uma política de exclusão de documentos para seu site. Por exemplo, pode ser necessário que documentos comerciais gerais sejam excluídos cinco anos após sua criação.
-ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c826d6c9e163e79c4e72510e3362328ae902c80c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243257"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152283"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Aplicar ou remover uma política de exclusão de documentos de um site
 

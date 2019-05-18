@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: As políticas de gerenciamento de informações permitem que sua organização controle o tempo de retenção de conteúdo, para auditar o que as pessoas fazem com o conteúdo e adicionar códigos de barras ou rótulos a documentos. Uma política pode ajudar a garantir a conformidade com normas legais e governamentais ou processos corporativos internos. Como administrador, você pode configurar uma política para controlar como controlar documentos e quanto tempo manter documentos.
-ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258831"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151233"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Criar e aplicar políticas de gerenciamento de informações
 
@@ -43,7 +43,7 @@ Confira mais informações em [introdução às políticas de gerenciamento de i
 
 Para garantir que uma política de informações seja aplicada a todos os documentos de um determinado tipo dentro de um conjunto de sites, considere a criação da política no nível do conjunto de sites e, posteriormente, aplique a política aos tipos de conteúdo. Eles são chamados de políticas de conjunto de sites. 
   
-1. no botão \> **configurações**![de home page do conjunto de sites do SharePoint 2016, na barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configurações do site**.
+1. No botão \> **configurações**![de home page do conjunto de sites do SharePoint 2016, na barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configurações do site**.
     
     Em um site conectado ao grupo do SharePoint, clique em **configurações**, em **conteúdo do site**e em **configurações do site**. 
     
@@ -66,7 +66,7 @@ A adição de uma política de gerenciamento de informações a um tipo de conte
   
  Você também pode adicionar uma política de gerenciamento de informações a um tipo de conteúdo específico às listas. Isso tem o efeito de aplicar a política somente aos itens dessa lista que estão usando o tipo de conteúdo. 
   
-1. no botão \> **configurações**![de home page do conjunto de sites do SharePoint 2016, na barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configurações do site**.
+1. No botão \> **configurações**![de home page do conjunto de sites do SharePoint 2016, na barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configurações do site**.
     
     Em um site conectado ao grupo do SharePoint, clique em **configurações**, em **conteúdo do site**e em **configurações do site**. 
     
@@ -92,7 +92,7 @@ A adição de uma política de gerenciamento de informações a um tipo de conte
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> | Selecione uma opção de período de retenção para especificar quando documentos ou itens estão definidos para expirar. Siga um destes procedimentos:  <br/>  Para definir a data de vencimento com base em uma propriedade de data, em **evento** \> **este estágio é baseado em uma propriedade de data no item**e, em seguida, selecione a ação de documento ou item (por exemplo, criado ou modificado) e o incremento de tempo após esta ação ( por exemplo, o número de dias, meses ou anos) quando você deseja que o item expire.  <br/>  Para usar uma fórmula de retenção personalizada para determinar a expiração, escolha **definir por uma fórmula de retenção personalizada instalada neste servidor**.  <br/> > [!NOTE]> esta opção só estará disponível se uma fórmula personalizada tiver sido configurada pelo administrador.           |
 ||||||3.  <br/> |A opção **Iniciar um fluxo de trabalho** só estará disponível se você estiver definindo uma política para uma lista, biblioteca ou tipo de conteúdo que já tenha um fluxo de trabalho associado. Você receberá uma opção de fluxos de trabalho para escolher.  <br/> |
-||||||4.  <br/> |Na seção **recorrência** , selecione **repetir a ação deste estágio...** e insira com que frequência você deseja que a ação ocorra novamente.  <br/> > [!NOTE]> essa opção só estará disponível se a ação selecionada puder ser repetida. Por exemplo, você não pode definir a recorrência para que a ação seja **excluíDa permanentemente**.           |
+||||||4.  <br/> |Na seção **recorrência** , selecione **repetir a ação deste estágio...** e insira com que frequência você deseja que a ação ocorra novamente.  <br/> > [!NOTE]> essa opção só estará disponível se a ação selecionada puder ser repetida. Por exemplo, você não pode definir a recorrência para que a ação seja **excluída permanentemente**.           |
 ||||||5.  <br/> |Escolha **OK**.  <br/> |
    
 1. Para habilitar a auditoria para os documentos e itens sujeitos a esta política, escolha **habilitar auditoria**e especifique os eventos que você deseja auditar.
@@ -136,7 +136,7 @@ A adição de uma política de gerenciamento de informações a um tipo de conte
 ## <a name="create-a-policy-for-a-list-library-or-folder-location-based-retention-policy"></a>Criar uma política para uma lista, biblioteca ou pasta (política de retenção com base em local)
 <a name="__create_a_policy"> </a>
 
-Você pode definir uma política de retenção que se aplica apenas a uma lista, uma biblioteca ou uma pasta específica. No enTanto, se você criar uma política de retenção dessa maneira, não será possível reutilizar essa política em outras listas, bibliotecas, pastas ou sites, e não será possível aplicar uma política de conjunto de sites a uma política baseada em local.
+Você pode definir uma política de retenção que se aplica apenas a uma lista, uma biblioteca ou uma pasta específica. No entanto, se você criar uma política de retenção dessa maneira, não será possível reutilizar essa política em outras listas, bibliotecas, pastas ou sites, e não será possível aplicar uma política de conjunto de sites a uma política baseada em local.
   
 Se você deseja aplicar uma única política de retenção a todos os tipos de conteúdo em um único local, você provavelmente vai querer usar a retenção baseada em local. Na maioria dos outros casos, você desejará verificar se uma política de retenção está especificada para todos os tipos de conteúdo.
   
@@ -186,7 +186,7 @@ Se **tipo de conteúdo** aparecer como origem, clique em **Alterar fonte**e em *
 9. Em **recorrência**, escolha **repetir a ação deste estágio...** e insira com que frequência você deseja que a ação ocorra novamente. 
     
     > [!NOTE]
-    >  Essa opção só estará disponível se a ação selecionada puder ser repetida. Por exemplo, você não pode definir a recorrência para que a ação seja **excluíDa permanentemente**. 
+    >  Essa opção só estará disponível se a ação selecionada puder ser repetida. Por exemplo, você não pode definir a recorrência para que a ação seja **excluída permanentemente**. 
   
 10. Escolha **OK**.
     

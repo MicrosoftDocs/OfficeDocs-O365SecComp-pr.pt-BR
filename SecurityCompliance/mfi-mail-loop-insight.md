@@ -3,18 +3,18 @@ title: Insight de loop de email
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Os administradores podem aprender sobre as informações de loop de email no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267062"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158663"
 ---
 # <a name="mail-loop-insight"></a>Insight de loop de email
 
@@ -24,7 +24,7 @@ Um loop de email é ruim porque ele desperdiça recursos do sistema, consome a c
 
 Você pode clicar em **Exibir detalhes** para ver os detalhes em um painel de submenu. Também identificamos os cenários de loop mais comuns e fornecemos as ações recomendadas (se disponível) para corrigir o loop.
 
-![Painel de subMenu depois de clicar em Exibir detalhes em uma percepção de um loop de mal-formado no painel de fluxo de emails](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+![Painel de submenu depois de clicar em Exibir detalhes em uma percepção de um loop de mal-formado no painel de fluxo de emails](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
 ## <a name="see-also"></a>Confira também
 

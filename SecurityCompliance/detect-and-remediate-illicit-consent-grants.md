@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 4/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,19 +14,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
-ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 5e89e6cb39c04b708ffe0a49a2cd41d6a775e4a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402949"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150273"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar e corrigir a concessão de autorização ilícita no Office 365
 
 **Resumo**  Saiba como reconhecer e corrigir o consentimento ilícito conceder ataque no Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>O que é o ataque de concessão de consentimento ilícito no Office 365?
-Em um ataque de concessão de consentimento ilícito, o invasor cria um aplicativo registrado pelo Azure que solicita acesso a dados, como informações de contato, email ou documentos. O invasor, então, vaza um usuário final para conceder a ele o consentimento de acessar seus dados através de um ataque de phishing ou injetando código ilícito em um site confiável. Depois que o aplicativo ilícito tiver sido concedido, ele terá acesso de nível de conta aos dados sem a necessidade de uma conta organizacional. Etapas de correção normais, como redefinir senhas para contas violadas ou exigir a autenticação multiFator (MFA) em contas, não são eficazes contra esse tipo de ataque, já que são aplicativos de terceiros e são externos à organização. Esses ataques aproveitam um modelo de interação que pressupõe que a entidade que está chamando as informações é automação e não é um homem.
+Em um ataque de concessão de consentimento ilícito, o invasor cria um aplicativo registrado pelo Azure que solicita acesso a dados, como informações de contato, email ou documentos. O invasor, então, vaza um usuário final para conceder a ele o consentimento de acessar seus dados através de um ataque de phishing ou injetando código ilícito em um site confiável. Depois que o aplicativo ilícito tiver sido concedido, ele terá acesso de nível de conta aos dados sem a necessidade de uma conta organizacional. Etapas de correção normais, como redefinir senhas para contas violadas ou exigir a autenticação multifator (MFA) em contas, não são eficazes contra esse tipo de ataque, já que são aplicativos de terceiros e são externos à organização. Esses ataques aproveitam um modelo de interação que pressupõe que a entidade que está chamando as informações é automação e não é um homem.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>O que um invasor de concessão de consentimento ilícito parece no Office 365?
 Você precisa pesquisar o **log de auditoria** do Office 365 para encontrar sinais, também chamados de os indicadores de comprometimento (IOC) desse ataque. Para organizações com muitos aplicativos registrados pelo Azure e uma grande base de usuários, a prática recomendada é revisar as autorizações de consentimento de suas organizações por semana.
@@ -84,7 +84,7 @@ A maneira mais simples de verificar o consentimento ilícito de concessão é ex
 5. Execute esta linha de comando do PowerShell da seguinte maneira:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 O script produz um arquivo chamado Permissions. csv. Siga estas etapas para procurar por subsídios de permissão de aplicativo ilícitos: 
-1. Na coluna resenttype (coluna G), procure o valor "multiPrincípios". A permissão de entidades de segurança permite que o aplicativo cliente acesse o conteúdo de todos os usuários na locação. Aplicativos nativos do Office 365 precisam que essa permissão funcione corretamente. Todo aplicativo não-Microsoft com essa permissão deve ser revisado com cuidado.
+1. Na coluna resenttype (coluna G), procure o valor "multiprincípios". A permissão de entidades de segurança permite que o aplicativo cliente acesse o conteúdo de todos os usuários na locação. Aplicativos nativos do Office 365 precisam que essa permissão funcione corretamente. Todo aplicativo não-Microsoft com essa permissão deve ser revisado com cuidado.
 2.  Na coluna permissão (coluna F) revise as permissões que cada aplicativo delegado tem para conteúdo. Procure por permissões de "leitura" e "gravação" ou "*. All ", e revise-as cuidadosamente porque elas podem não ser apropriadas.
 3.  Revise os usuários específicos que foram concedidos. Se os usuários de alto perfil ou alto impacto tiverem autorização inadequada, você deverá investigar mais.
 4.  Na coluna ClientDisplayName (coluna C), procure aplicativos que parecem suspeitos. Os aplicativos com nomes digitados incorretamente, nomes Bland ou nomes de som de hackers devem ser revisados com cuidado.
@@ -105,7 +105,7 @@ Após identificar um aplicativo com permissões ilícita, você tem várias mane
 - Você pode revogar a concessão de consentimento OAuth com o PowerShell seguindo as etapas em [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0).
 - Você pode revogar a atribuição da função de aplicativo de serviço com o PowerShell seguindo as etapas em [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0).
 - Você também pode desabilitar a entrada para a conta afetada, o que, por sua vez, desabilitará o acesso do aplicativo aos dados dessa conta. Isso não é ideal para a produtividade do usuário final, mas se você estiver trabalhando para limitar o impacto rapidamente, pode ser uma remediação de curto prazo viável.
-- Você pode desativar aplicativos integrados para sua locação. Esta é uma etapa drástica que desabilita a capacidade de os usuários finais concederem o consentimento por todo o locatário. Isso impede que os usuários conceda acidentalmente acesso a um aplicativo mal-intencionado. Isso não é altamente recomendado, pois ele prejudica seriamente a capacidade dos usuários de ser produtiva com aplicativos de terceiros.  Você pode fazer isso seguindo as etapas em [ativando ou desativaNdo aplicativos integrados](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34).
+- Você pode desativar aplicativos integrados para sua locação. Esta é uma etapa drástica que desabilita a capacidade de os usuários finais concederem o consentimento por todo o locatário. Isso impede que os usuários conceda acidentalmente acesso a um aplicativo mal-intencionado. Isso não é altamente recomendado, pois ele prejudica seriamente a capacidade dos usuários de ser produtiva com aplicativos de terceiros.  Você pode fazer isso seguindo as etapas em [ativando ou desativando aplicativos integrados](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34).
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteja o Office 365 como um profissional de cibersegurança
 Sua assinatura do Office 365 vem com um poderoso conjunto de recursos de segurança que você pode usar para proteger seus dados e seus usuários.  Use o [roteiro de segurança do Office 365: Principais prioridades para os primeiros 30 dias, 90 dias e além](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), para implementar práticas recomendadas pela Microsoft para proteger o seu locatário do Office 365.

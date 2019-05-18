@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Com o Office 365, seu conteúdo é criptografado em repouso e em trânsito, usando a criptografia, protocolos e tecnologias mais fortes disponíveis. Obtenha uma visão geral da criptografia no Office 365.
-ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3cd72b3caf26c18ca6836490bc3cd48c2977863b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256669"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154713"
 ---
 # <a name="encryption-in-office-365"></a>Criptografia no Office 365
 
@@ -33,7 +33,7 @@ A criptografia é uma parte importante das estratégias de proteção de arquivo
 
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>O que é criptografia e como ela funciona no Office 365?
 
-Em um nível alto, a criptografia é o processo de codificar seus dados (chamados de texto sem formatação) em texto cifrado que não pode ser usado por pessoas ou computadores, a menos que e até que o texto cifrado seja descriptografado. A desCriptografia requer uma chave de criptografia que apenas usuários autorizados têm. A criptografia ajuda a garantir que apenas destinatários autorizados possam descriptografar o conteúdo, como mensagens de email e arquivos.
+Em um nível alto, a criptografia é o processo de codificar seus dados (chamados de texto sem formatação) em texto cifrado que não pode ser usado por pessoas ou computadores, a menos que e até que o texto cifrado seja descriptografado. A descriptografia requer uma chave de criptografia que apenas usuários autorizados têm. A criptografia ajuda a garantir que apenas destinatários autorizados possam descriptografar o conteúdo, como mensagens de email e arquivos.
   
 A criptografia por si só não impede o conteúdo, como arquivos, mensagens de email, entradas de calendário e assim por diante, desde o recebimento das mãos erradas. A criptografia faz parte de uma estratégia de proteção de informações maior para sua organização. Usando a criptografia, você pode ajudar a garantir que apenas as pessoas que devem ser capazes de usar dados criptografados sejam capazes de fazê-lo.
   
@@ -57,7 +57,7 @@ Com o Office 365, você pode ter várias camadas e tipos de criptografia trabalh
 
 Além das soluções gerenciadas pela Microsoft de criptografia de volume, criptografia de arquivo e criptografia de caixa de correio no Office 365, as opções gerenciadas pelo cliente podem ser usadas para atender a requisitos de segurança e conformidade mais rigorosos. Essas soluções usam o Azure Rights Management (Azure RMS) junto com o Office 365.
   
-ConFira os seguintes recursos para saber mais:
+Confira os seguintes recursos para saber mais:
   
 - [O que é o Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
@@ -67,7 +67,7 @@ ConFira os seguintes recursos para saber mais:
 
 ## <a name="how-do-i"></a>Como...
 
-|**Para executar esta tarefa**|**ConFira estes recursos**|
+|**Para executar esta tarefa**|**Confira estes recursos**|
 |:-----|:-----|
 |Configurar a criptografia para minha organização  <br/> |[Configure a criptografia no Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Exibir detalhes sobre certificados, tecnologias e pacotes de criptografia TLS no Office 365  <br/> |[Detalhes técnicos sobre a criptografia no Office 365](technical-reference-details-about-encryption.md) <br/> |
@@ -80,5 +80,3 @@ ConFira os seguintes recursos para saber mais:
 [Planejar recursos de proteção de informações e segurança do Office 365](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
   
 [Segurança e conformidade no Office 365 para empresas-ajuda para administradores](https://support.office.com/article/7fe448f7-49bd-4d3e-919d-0a6d1cf675bb)
-  
-

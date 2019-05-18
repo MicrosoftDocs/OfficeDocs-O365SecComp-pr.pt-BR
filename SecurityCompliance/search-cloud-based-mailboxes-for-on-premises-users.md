@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar e exportar dados de chat do MicrosoftTeams (chamados 1xN chats) para usuários locais em uma implantação híbrida do Exchange.
-ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb53daa381b89d8ded4f2400ed7781e2306eb263
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260991"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158733"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Pesquisando caixas de correio baseadas em nuvem para usuários locais no Office 365
 
@@ -32,9 +32,9 @@ Estes são os requisitos e limitações para configurar e configurar e Pesquisar
     
 - A caixa de correio baseada em nuvem para usuários locais é usada apenas para dados de chat de equipes de repositório. Um usuário local não pode entrar na caixa de correio baseada em nuvem ou acessar de qualquer forma. Ele não pode ser usado para enviar ou receber mensagens de email. 
     
-- Você precisa enviar uma solicitação ao suporte da Microsoft para permitir que sua organização pesquise dados de chat de equipes nas caixas de correio baseadas em nuvem para usuários locais. ConFira [como arquivar uma solicitação com o suporte da Microsoft para habilitar esse recurso](#filing-a-request-with-microsoft-support-to-enable-this-feature) neste artigo. 
+- Você precisa enviar uma solicitação ao suporte da Microsoft para permitir que sua organização pesquise dados de chat de equipes nas caixas de correio baseadas em nuvem para usuários locais. Confira [como arquivar uma solicitação com o suporte da Microsoft para habilitar esse recurso](#filing-a-request-with-microsoft-support-to-enable-this-feature) neste artigo. 
     
- **Observação:** As conversas de canal do teams sempre são armazenadas na caixa de correio baseada em nuvem associada à equipe. Isso significa que você pode usar a pesquisa de conteúdo para pesquisar conversas de canal sem ter que arquivar uma solicitação de suporte. Para obter mais informações sobre como Pesquisar conversas de canal de equipes, consulte [searchIng Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
+ **Observação:** As conversas de canal do teams sempre são armazenadas na caixa de correio baseada em nuvem associada à equipe. Isso significa que você pode usar a pesquisa de conteúdo para pesquisar conversas de canal sem ter que arquivar uma solicitação de suporte. Para obter mais informações sobre como Pesquisar conversas de canal de equipes, consulte [Searching Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
 ## <a name="how-it-works"></a>Como funciona
 
@@ -54,7 +54,7 @@ Inclua as seguintes informações ao enviar a solicitação para o suporte da Mi
   
 - O nome de domínio padrão da sua organização do Office 365.
     
-- O nome do locatário e a ID do locatário de sua organização do Office 365. Você pode encontrá-los no portal do Azure Active Directory (em **gerenciar** \> **Propriedades**). ConFira [localizar sua ID de locatário do Office 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- O nome do locatário e a ID do locatário de sua organização do Office 365. Você pode encontrá-los no portal do Azure Active Directory (em **gerenciar** \> **Propriedades**). Confira [localizar sua ID de locatário do Office 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
     
 - O seguinte título ou descrição da finalidade da solicitação de suporte: "Habilitar pesquisa de conteúdo de aplicativo para usuários locais". Isso ajudará a encaminhar a solicitação para a equipe de engenharia de descoberta eletrônica do Office 365 que implementará a solicitação. 
     
@@ -137,7 +137,7 @@ Para obter mais informações sobre como usar esses cmdlets, consulte:
 
 - No momento, só é possível pesquisar, Visualizar e exportar conteúdo em caixas de correio baseadas em nuvem para usuários locais. Não há suporte para a colocação de uma caixa de correio baseada em nuvem para um usuário local em um bloqueio associado a um caso de descoberta eletrônica ou a atribuição de uma política de retenção do Office 365. 
     
-- O seletor de local de conteúdo para descoberta eletrônica exibe os usuários locais e permite que você os selecione. No enTanto, conforme explicado anteriormente, a suspensão não será aplicada ao usuário local.
+- O seletor de local de conteúdo para descoberta eletrônica exibe os usuários locais e permite que você os selecione. No entanto, conforme explicado anteriormente, a suspensão não será aplicada ao usuário local.
     
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 

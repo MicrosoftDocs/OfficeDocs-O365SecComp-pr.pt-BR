@@ -3,43 +3,55 @@ title: Adicionar a marca da sua organização às mensagens criptografadas
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
+- Strat_O365_IP
 - M365-security-compliance
-description: Como administrador do Exchange, você pode aplicar a identidade visual da sua organização às mensagens de email criptografadas da sua organização e ao conteúdo do portal de criptografia.
-ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Como administrador global do Office 365, você pode aplicar a identidade visual da sua organização às mensagens de email criptografadas da sua organização e ao conteúdo do portal de criptografia.
+ms.openlocfilehash: 6b51aefc10c0070749fcf4bc8c2d56c7ff7a3ef3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242639"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152463"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Adicionar a marca da sua organização a suas mensagens criptografadas
 
 Como administrador do Exchange Online ou do Exchange Online Protection, você pode aplicar a identidade visual da sua empresa para personalizar a aparência das mensagens de email de criptografia de mensagem do Office 365 da sua organização e o conteúdo do portal de criptografia. Usando os cmdlets Get-OMEConfiguration e Set-OMEConfiguration do Windows PowerShell, você pode personalizar os seguintes aspectos da experiência de visualização para destinatários de mensagens de email criptografadas:
   
 - Texto introdutório do email que contém a mensagem criptografada
+
 - Texto do aviso de isenção de responsabilidade do email que contém a mensagem criptografada
+
 - Texto que aparece no portal OME
+
 - Logotipo que aparece na mensagem de email e no portal do OME
+
 - Cor de plano de fundo na mensagem de email e no portal OME
 
 Você também pode reverter para a aparência padrão a qualquer momento.
 
-Se quiser mais controle, você pode criar vários modelos para emails criptografados provenientes de sua organização. Usando esses modelos, você pode controlar mais do que apenas a aparência das mensagens de email, mas também controlar partes da experiência do usuário final. Por exemplo, você pode especificar se os destinatários de emails que têm esse modelo aplicado e quem usam o Google, Yahoo e contas da Microsoft podem usar essas contas para entrar no portal de criptografia de mensagens do Office 365. Você pode usar modelos para cumprir vários casos de uso, como:
+ Se quiser mais controle, você pode usar a criptografia de mensagem avançada do Office 365 e criar vários modelos para emails criptografados provenientes da sua organização. Usando esses modelos, você pode controlar mais do que apenas a aparência das mensagens de email, mas também controlar partes da experiência do usuário final. Por exemplo, você pode especificar se os destinatários de emails que têm esse modelo aplicado e quem usam o Google, Yahoo e contas da Microsoft podem usar essas contas para entrar no portal de criptografia de mensagens do Office 365. Você pode usar modelos para cumprir vários casos de uso, como:
 
 - Modelos para cada departamento, como finanças, vendas, etc.
+
 - Modelos para produtos diferentes
+
 - Modelos para diferentes regiões geográficas ou países
 
-Depois de criar os modelos, você pode aplicá-los a emails criptografados usando regras de fluxo de email do Exchange. Todos os emails com identidade visual usando esses modelos podem ser revogados.
+- Se você deseja ou não permitir que os emails sejam revogados
+
+- Se você deseja ou não que os emails enviados para destinatários externos expirem após um determinado número de dias.
+
+Depois de criar os modelos, você pode aplicá-los a emails criptografados usando regras de fluxo de email do Exchange. Se você tiver a criptografia de mensagem avançada do Office 365, poderá revogar qualquer email que tenha marcado usando esses modelos.
   
 ||
 |:-----|
@@ -59,11 +71,13 @@ Você cria modelos de identidade visual para sua organização no Windows PowerS
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
+
    For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
    ```
+
 3. Defina as personalizações para o modelo que você acabou de definir usando o cmdlet Set-OMEConfiguration conforme descrito em [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) ou use a tabela a seguir para orientação.
 
 |**Para personalizar este recurso da experiência com criptografia**|**Use estes comandos**|
@@ -99,6 +113,7 @@ Você cria modelos de identidade visual para sua organização no Windows PowerS
 Depois de criar um modelo de identidade visual, você pode criar regras de fluxo de email do Exchange para aplicar a identidade visual personalizada com base em determinadas condições. Tal regra aplicará a identidade visual personalizada nos seguintes cenários:
 
 - Se o email foi criptografado manualmente pelo usuário final do Outlook ou do Outlook na Web (anteriormente conhecido como Outlook Web App) clientes
+
 - Se o email foi criptografado automaticamente por uma regra de fluxo de email do Exchange ou pela política de prevenção de perda de dados do Office 365
 
 Para obter informações sobre como criar uma regra de fluxo de email do Exchange que aplica criptografia, consulte [definir regras de fluxo de emails para criptografar mensagens de email no Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -120,8 +135,9 @@ Para obter informações sobre como criar uma regra de fluxo de email do Exchang
      - Emails criptografados enviados para um domínio específico
 
 7. Em **faça o seguinte**, selecione **Modificar a segurança** > da mensagem**aplicar a identidade visual personalizada às mensagens do ome**. Em seguida, na lista suspensa, selecione um modelo de identidade visual dos que você criou.
+
 8. Opcion Se você deseja que a regra de fluxo de emails também aplique criptografia além da identidade visual personalizada, em **faça o seguinte**, selecione **Modificar a segurança da mensagem** e, em seguida, escolha **aplicar proteção de mensagens e proteção de direitos do Office 365**. Selecione um modelo do RMS na lista, escolha **salvar**e, em seguida, escolha **OK**.
   
-     A lista de modelos inclui todos os modelos e opções padrão, bem como os modelos personalizados que você criou para uso pelo Office 365. Se a lista estiver vazia, verifique se você configurou a criptografia de mensagem do Office 365 com os novos recursos, conforme descrito em [configurar novos recursos de criptografia de mensagens do office 365](set-up-new-message-encryption-capabilities.md). Para obter informações sobre os modelos padrão, consulte conFigurando [e Gerenciando modelos para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obter informações sobre **** a opção não encaminhar, confira a opção não [encaminhar para emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obter informações sobre a opção **somente criptografia** , confira a [opção criptografar somente para emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+     A lista de modelos inclui todos os modelos e opções padrão, bem como os modelos personalizados que você criou para uso pelo Office 365. Se a lista estiver vazia, verifique se você configurou a criptografia de mensagem do Office 365 com os novos recursos, conforme descrito em [configurar novos recursos de criptografia de mensagens do office 365](set-up-new-message-encryption-capabilities.md). Para obter informações sobre os modelos padrão, consulte Configurando [e Gerenciando modelos para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obter informações sobre **** a opção não encaminhar, confira a opção não [encaminhar para emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obter informações sobre a opção **somente criptografia** , confira a [opção criptografar somente para emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
      Você pode escolher **Adicionar ação** se quiser especificar outra ação.

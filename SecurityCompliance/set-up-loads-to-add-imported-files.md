@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise as etapas para adicionar arquivos importados à última carga definida ou ao lote de arquivos antes de realizar o treinamento de relevância na descoberta eletrônica avançada do Office 365.  '
-ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 65e022680cc0bd39bbca3e05a4e3b6d24da1b2ad
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260730"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158603"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar carregamentos para adicionar arquivos importados na descoberta eletrônica avançada do Office 365
 
@@ -35,7 +35,7 @@ Considere as seguintes situações:
     
 ## <a name="adding-imported-files-to-the-current-load"></a>Adicionando arquivos importados à carga atual
 
-Todos os arquivos importados devem ser adicionados a uma carga a ser processada na descoberta eletrônica avançada. Arquivos imPortados são adicionados à última carga definida. Se você importar arquivos adicionais mais tarde, eles também devem ser adicionados à carga.
+Todos os arquivos importados devem ser adicionados a uma carga a ser processada na descoberta eletrônica avançada. Arquivos importados são adicionados à última carga definida. Se você importar arquivos adicionais mais tarde, eles também devem ser adicionados à carga.
   
 1. Na guia **configuração \> de relevância de relevância** , selecione **cargas**.
     
@@ -127,7 +127,7 @@ As cargas sem interrupção e a funcionalidade de atualização variam da seguin
     
 2. Se as cargas foram distintas: é necessário mais treinamento de relevância e a próxima etapa é a decisão de acompanhamento. Selecione uma decisão de ajuste da seguinte maneira:
     
-    Se você selecionar **mesclar cargas**, as mesclaGens de descoberta eletrônica avançada e as novas cargas anteriores e novas para o conjunto de treinamento. Embora o primeiro carregamento tenha sido calculado em lote, mais treinamento é necessário. Continue treinando as cargas novas e anteriores juntas. Em seguida, o cálculo em lotes será executado novamente e as pontuações de cálculo em lotes anteriores deverão ser ignoradas. Escolha esta seleção quando as pontuações de relevância para cargas existentes puderem ser recalculadas, por exemplo, quando a revisão das cargas de arquivo existentes não tiver sido iniciada.
+    Se você selecionar **mesclar cargas**, as mesclagens de descoberta eletrônica avançada e as novas cargas anteriores e novas para o conjunto de treinamento. Embora o primeiro carregamento tenha sido calculado em lote, mais treinamento é necessário. Continue treinando as cargas novas e anteriores juntas. Em seguida, o cálculo em lotes será executado novamente e as pontuações de cálculo em lotes anteriores deverão ser ignoradas. Escolha esta seleção quando as pontuações de relevância para cargas existentes puderem ser recalculadas, por exemplo, quando a revisão das cargas de arquivo existentes não tiver sido iniciada.
     
     Se você selecionar **cargas divididas**, continue o treinamento de relevância apenas na nova carga. Nesta instância, as pontuações de cálculo em lotes anteriores permanecerão como estão. Escolha essa opção quando as pontuações de relevância existentes para as cargas existentes não puderem ser recalculadas, por exemplo, se a análise de cargas existentes já tiver sido iniciada. As pontuações de relevância são gerenciadas separadamente desse ponto em diante e não podem ser mescladas.
     

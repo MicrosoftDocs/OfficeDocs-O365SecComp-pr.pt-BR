@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ao criar um rótulo de retenção que mantém o conteúdo no Microsoft 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
-ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257296"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153423"
 ---
 # <a name="overview-of-disposition-reviews"></a>Visão geral das revisões de disposição
 
@@ -56,7 +56,7 @@ Uma análise de disposição pode incluir conteúdo em caixas de correio do Exch
   
 ![Página de desposições no centro de conformidade e segurança](media/Retention_Dispositions_v2_page.png)
 
-## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>ConFigurando a análise de disposição criando um rótulo de retenção
+## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configurando a análise de disposição criando um rótulo de retenção
 
 Este é o fluxo de trabalho básico para configurar uma revisão de disposição. Observe que esse fluxo mostra um rótulo de retenção sendo publicado e, em seguida, aplicado manualmente por um usuário; Como alternativa, um rótulo de retenção que dispara uma análise de disposição pode ser aplicado automaticamente ao conteúdo.
   
@@ -68,7 +68,7 @@ Para obter mais informações sobre rótulos de retenção, consulte [Overview o
   
 ![Configurações de retenção para um rótulo](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
   
-## <a name="disposing-content"></a>DesCartando conteúdo
+## <a name="disposing-content"></a>Descartando conteúdo
 
 Quando um revisor é notificado por email que o conteúdo está pronto para revisão, eles podem ir até a página de **disposição** no &amp; centro de conformidade de segurança. Os revisores podem ver quantos itens de cada rótulo de retenção estão aguardando disposição e, em seguida, selecione um rótulo de retenção para ver todo o conteúdo com esse rótulo.
 
@@ -130,6 +130,6 @@ Você pode filtrar esses modos de exibição por rótulo de retenção ou interv
 
 Além disso, você pode exportar os itens em um modo de exibição como um arquivo. csv que pode ser aberto no Excel.
   
-![Dados de disposição exPortados no Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Dados de disposição exportados no Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

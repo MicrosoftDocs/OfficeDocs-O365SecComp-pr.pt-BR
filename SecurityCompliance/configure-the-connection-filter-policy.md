@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para garantir que os emails enviados de pessoas confiáveis não sejam bloqueados, você pode usar a política de filtro de conexão para criar uma lista de permissões, também conhecida como lista de remetentes confiáveis, dos endereços IP nos quais você confia. Você também pode criar uma lista de remetentes bloqueados.
-ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d19898b6baf01c7348b434f3caced202507c4d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259000"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151293"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar a política do filtro de conexão
  
@@ -73,7 +73,7 @@ A seguir estão algumas considerações adicionais que você pode desejar consul
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Especificando uma faixa de CIDR que está fora da faixa recomendada
 
-Para especificar um intervalo de endereços IP CIDR de/1 a/23, você deve criar uma regra de fluxo de emails que opere no intervalo de endereços IP que define o nível de confiança de spam (SCL) para **ignorar a filtragem de spam** (o que significa que todas as mensagens recebidas desse intervalo de endereços IP são definido como "não spam") e nenhuma filtragem adicional é realizada pelo serviço. No enTanto, se qualquer um desses endereços IP aparecer em qualquer uma das listas de bloqueios proprietários da Microsoft ou em qualquer uma das listas de bloqueios de terceiros, essas mensagens ainda serão bloqueadas. Portanto, é altamente recomendável que você use o intervalo de endereços IP/24 para/32. 
+Para especificar um intervalo de endereços IP CIDR de/1 a/23, você deve criar uma regra de fluxo de emails que opere no intervalo de endereços IP que define o nível de confiança de spam (SCL) para **ignorar a filtragem de spam** (o que significa que todas as mensagens recebidas desse intervalo de endereços IP são definido como "não spam") e nenhuma filtragem adicional é realizada pelo serviço. No entanto, se qualquer um desses endereços IP aparecer em qualquer uma das listas de bloqueios proprietários da Microsoft ou em qualquer uma das listas de bloqueios de terceiros, essas mensagens ainda serão bloqueadas. Portanto, é altamente recomendável que você use o intervalo de endereços IP/24 para/32. 
   
 Para criar essa regra de fluxo de emails, execute as etapas a seguir.
   
@@ -97,7 +97,7 @@ Depois de criar e impor a regra, o serviço ignora a filtragem de spam para o in
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Controlando uma exceção da lista de IP Permitidos para um domínio específico
 
-Em geral, recomendamos que você adicione endereços IP (ou faixas de endereço IP) para todos os domínios que você considerar seguro para a lista de IP Permitidos. No enTanto, se você não quiser que a entrada da lista de IPs permitidos seja aplicada a todos os seus domínios, você pode criar uma regra de fluxo de emails (também conhecida como regra de transporte), exceto domínios específicos. 
+Em geral, recomendamos que você adicione endereços IP (ou faixas de endereço IP) para todos os domínios que você considerar seguro para a lista de IP Permitidos. No entanto, se você não quiser que a entrada da lista de IPs permitidos seja aplicada a todos os seus domínios, você pode criar uma regra de fluxo de emails (também conhecida como regra de transporte), exceto domínios específicos. 
   
 Por exemplo, digamos que você tem três domínios: ContosoA.com, ContosoB.com e ContosoC.com, e você deseja adicionar o endereço IP (para simplificar, vamos usar 1.2.3.4) e pular a filtragem apenas para o domínio ContosoB.com. Você poderia criar uma lista de permissões de IP para 1.2.3.4, que define o nível de confiança de spam (SCL) a -1 (o que significa que é classificado como não-spam) em todos os domínios. Você pode criar uma regra de fluxo de emails que define o SCL de todos os domínios, exceto ContosoB.com para 0. Isso resulta na mensagem sendo reexaminada novamente para todos os domínios relacionados com o endereço IP, exceto para ContosoB.com que é o domínio listado como exceção na regra. ContosoB.com ainda tem um SCL de -1, o que significa ignorar filtragem, enquanto ContosoA.com e ContosoC.com têm SCLs de 0, o que significa que será examinado novamente pelo filtro de conteúdo.
   
@@ -132,7 +132,7 @@ Depois de criar e aplicar a regra, a filtragem de spam para o endereço IP ou in
 |:-----|
 |![O ícone pequeno do LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Começando a usar o Office 365?**         Descubra cursos em vídeo gratuitos para **Office 365 admins and IT pros**, oferecidos pelo LinkedIn Learning. |
    
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection4"> </a>
 
 [Listas de remetentes seguros e remetentes bloqueados no Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

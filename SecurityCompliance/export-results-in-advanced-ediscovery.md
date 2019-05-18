@@ -3,7 +3,7 @@ title: Exportar resultados na descoberta eletrônica avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Saiba como definir opções para exportar os resultados da descoberta eletrônica avançada do Office 365, incluindo o procedimento para especificar parâmetros para um lote de exportação. '
-ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255797"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152923"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados na descoberta eletrônica avançada do Office 365
 
@@ -80,7 +80,7 @@ A ferramenta de exportação de descoberta eletrônica é usada para exportar re
     
 2. Em **população**, selecione **incluir somente os arquivos acima da classificação** de recorte de relevância e/ou refinar **lote de exportação** se quiser ajustar as configurações para o lote de exportação. 
     
-3. Se você selecionar **incluir somente os arquivos acima da Pontuação**de reCorte de relevância, o **problema** será habilitado. Se a pontuação de relevância do arquivo for maior do que a pontuação de recorte do problema selecionado, o arquivo será exportado, a menos que seja excluído pelo filtro "para revisão". 
+3. Se você selecionar **incluir somente os arquivos acima da Pontuação**de recorte de relevância, o **problema** será habilitado. Se a pontuação de relevância do arquivo for maior do que a pontuação de recorte do problema selecionado, o arquivo será exportado, a menos que seja excluído pelo filtro "para revisão". 
   
     Se você selecionar **refinar lote de exportação**, os botões de opção de eliminação **de duplicação** e filtro por "para revisão" estão habilitados. Se você escolher **** a eliminação da duplicação, os arquivos duplicados serão filtrados de acordo com a política definida [nível de caso (padrão): a partir de cada conjunto de arquivos duplicados em todo o caso, todos os arquivos, exceto um, serão eliminados da duplicação. Nível do responsáveis: de cada conjunto de arquivos duplicados do mesmo mesmo, todos os arquivos, exceto um, serão eliminados.] A saída de exportação contém um registro de todos os arquivos duplicados. Se você escolher **Filtrar por "para revisão"** , selecione **Modificar em metadados** para inserir as configurações de campo **"para revisão"** . Selecione **incluir arquivos de entrada** para incluir arquivos de origem no conteúdo do pacote. Você pode desmarcar essa configuração para acelerar o processo de exportação. Observe que os arquivos nativos serão exportados em qualquer caso. 
     
@@ -185,8 +185,8 @@ A tabela a seguir lista os arquivos de saída que são gerados quando você exec
 |Rastrear  <br/> |txt  <br/> |Um arquivo de log gerado pela ferramenta de exportação de descoberta eletrônica.  <br/> |
 |Arquivos de texto extraídos  <br/> |Pasta de arquivo  <br/> |Pasta que contém os arquivos de texto extraídos dos arquivos exportados.  <br/> |
 |Entrada ou arquivos nativos  <br/> |Pasta de arquivo  <br/> |Pasta que contém os arquivos nativos e de entrada dos arquivos exportados.  <br/> |
-|Exportar lista  <br/> |xlsx  <br/> |Metadados de arquivos exPortados no formato xlsx. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação. Se necessário, vários arquivos são criados, cada um contém linhas de 100 150K. Se um determinado valor contiver mais caracteres do que uma célula do Excel pode conter (atualmente, o limite é de 32.767 caracteres), o valor será cortado para o comprimento máximo permitido. Se um valor for cortado, a cor de plano de fundo da célula será vermelha para indicar isso ao usuário. " Participantes de email "é um exemplo de um campo que pode exceder o limite de tamanho, se o email foi enviado para uma distribuição grande. ConFira [Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md) para obter detalhes sobre os campos de saída.  <br/> |
-|Carregar arquivo  <br/> |Limit  <br/> |Metadados de arquivos exPortados no formato CSV para carregar em um aplicativo diferente. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação.  <br/> |
+|Exportar lista  <br/> |xlsx  <br/> |Metadados de arquivos exportados no formato xlsx. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação. Se necessário, vários arquivos são criados, cada um contém linhas de 100 150K. Se um determinado valor contiver mais caracteres do que uma célula do Excel pode conter (atualmente, o limite é de 32.767 caracteres), o valor será cortado para o comprimento máximo permitido. Se um valor for cortado, a cor de plano de fundo da célula será vermelha para indicar isso ao usuário. " Participantes de email "é um exemplo de um campo que pode exceder o limite de tamanho, se o email foi enviado para uma distribuição grande. Confira [Exportar campos de relatório](export-report-fields-in-advanced-ediscovery.md) para obter detalhes sobre os campos de saída.  <br/> |
+|Carregar arquivo  <br/> |Limit  <br/> |Metadados de arquivos exportados no formato CSV para carregar em um aplicativo diferente. Os campos nos arquivos são de acordo com o modelo de usuário selecionado para exportação.  <br/> |
 |Indicador de êxito  <br/> |txt  <br/> |Criado somente ao exportar para um blob do Azure de terceiros. Se a exportação tiver êxito completamente, o arquivo será criado. No caso de falha, ou o sucesso parcial, o arquivo não será criado. O arquivo será criado na pasta raiz, permitindo o rastreamento automático em diferentes status de lotes/sessões de exportação. Este é um arquivo vazio. O nome é: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Confira também

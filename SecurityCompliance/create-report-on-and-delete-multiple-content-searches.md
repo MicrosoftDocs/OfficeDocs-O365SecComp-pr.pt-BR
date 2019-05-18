@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Saiba como automatizar tarefas de pesquisa de conteúdo, como criar pesquisas e executar relatórios por meio de scripts do PowerShell no centro de conformidade do & de segurança no Office 365.
-ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258422"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151173"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Criar, gerar relatórios sobre e excluir várias Pesquisas de Conteúdo
 
@@ -56,7 +56,7 @@ O arquivo de valor separado por vírgula (CSV) que você criou nesta etapa cont�
     
 2. Abra o arquivo. txt no Excel e use as informações da tabela a seguir para editar o arquivo com as informações de cada pesquisa. 
     
-    |**Parâmetro**|**Descrição**|
+    |**Parâmetro**|**Description**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |O endereço SMTP da caixa de correio do usuário.  <br/> |
     | `SharePointLocation` <br/> |A URL do site do OneDrive for Business do usuário ou a URL de qualquer site em sua organização. Para a URL dos sites do OneDrive for Business, use este formato ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `:. Por exemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: saiba como habilitar o arquivamento de expansão automática no Office 365, que fornece aos usuários um armazenamento ilimitado para suas caixas de correio do Exchange Online. Você pode habilitar o arquivamento de expansão automática para toda a sua organização ou apenas para usuários específicos.'
-ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a6f1e0e43854372b2c7b93c22c1160a7c555a95f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256830"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154743"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar o arquivamento ilimitado no Office 365-ajuda do administrador
 
@@ -114,7 +114,7 @@ Tenha em mente as seguintes coisas depois de habilitar o arquivamento de expans�
     
 - Após ativar o arquivamento de expansão automática, não é possível desativá-la.
     
-- O arquivamento de expansão automática é suportado para caixas de correio de arquivo morto baseadas em nuvem em uma implantação híbrida do Exchange para usuários que tenham uma caixa de correio primária local. No enTanto, após o arquivamento de expansão automática ser habilitado para uma caixa de correio de arquivo morto baseado em nuvem, não é possível desconectar a caixa de correio de arquivo morto à organização local do Exchange. Observe que o arquivamento de expansão automática não é suportado para caixas de correio locais no Exchange Server 2010.
+- O arquivamento de expansão automática é suportado para caixas de correio de arquivo morto baseadas em nuvem em uma implantação híbrida do Exchange para usuários que tenham uma caixa de correio primária local. No entanto, após o arquivamento de expansão automática ser habilitado para uma caixa de correio de arquivo morto baseado em nuvem, não é possível desconectar a caixa de correio de arquivo morto à organização local do Exchange. Observe que o arquivamento de expansão automática não é suportado para caixas de correio locais no Exchange Server 2010.
     
 - Para obter uma lista de clientes do Outlook que os usuários podem usar para acessar itens na área de armazenamento adicional em suas caixas de correio de arquivo morto, consulte a seção "requisitos do Outlook para acessar itens em um arquivo expandido automaticamente" em [visão geral de arquivamento ilimitado no Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) .
     

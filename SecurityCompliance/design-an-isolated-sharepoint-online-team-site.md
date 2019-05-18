@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Resumo: Percorra o processo de design para sites de equipe isolados do SharePoint Online.'
-ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257140"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150313"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Projetar um site de equipe do SharePoint Online isolado
 
@@ -43,11 +43,11 @@ O conjunto de permissões específicas que determina o que um membro de um grupo
   
 |**Grupo do SharePoint**|**Nível de permissão**|
 |:-----|:-----|
-|\<Membros name> de site  <br/> |Editar  <br/> |
-|\<Visitantes do site name>  <br/> |Leitura  <br/> |
+|\<Membros name> de site  <br/> |Edit  <br/> |
+|\<Visitantes do site name>  <br/> |Ler  <br/> |
 |\<Proprietários de name> de site  <br/> |Controle total  <br/> |
    
- Práticas **recomendadas:** Você pode criar grupos adicionais do SharePoint e níveis de permissão. No enTanto, recomendamos o uso dos grupos e níveis de permissão padrão do SharePoint para seu site isolado do SharePoint Online.
+ Práticas **recomendadas:** Você pode criar grupos adicionais do SharePoint e níveis de permissão. No entanto, recomendamos o uso dos grupos e níveis de permissão padrão do SharePoint para seu site isolado do SharePoint Online.
   
 Estes são os grupos e os níveis de permissão padrão do SharePoint.
   
@@ -83,8 +83,8 @@ Para sites de equipe isolados do SharePoint Online, a estrutura de grupo recomen
   
 |**Grupo do SharePoint**|**Grupo de acesso baseado no AD do Azure**|**Nível de permissão**|
 |:-----|:-----|:-----|
-|\<Membros name> de site  <br/> |\<Membros name> de site  <br/> |Editar  <br/> |
-|\<Visitantes do site name>  <br/> |\<Visualizadores de name> de site  <br/> |Leitura  <br/> |
+|\<Membros name> de site  <br/> |\<Membros name> de site  <br/> |Edit  <br/> |
+|\<Visitantes do site name>  <br/> |\<Visualizadores de name> de site  <br/> |Ler  <br/> |
 |\<Proprietários de name> de site  <br/> |\<Administradores de name> de site  <br/> |Controle total  <br/> |
    
  Práticas **recomendadas:** Embora você possa usar os grupos do Office 365 ou do Azure AD como membros de grupos do SharePoint, recomendamos usar os grupos do Azure AD. Os grupos do Azure AD, gerenciados pelo Windows Server AD ou pelo Office 365, oferecem mais flexibilidade para usar grupos aninhados para atribuir permissões.
@@ -105,7 +105,7 @@ Veja um exemplo de grupos do SharePoint e grupos de acesso para um site isolado 
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: usar grupos aninhados do Azure AD
 
-Para um projeto confinado a um pequeno número de pessoas, um único nível de grupos de acesso baseado no AD do Azure adicionado aos grupos do SharePoint do site se ajustará à maioria dos cenários. No enTanto, se você tiver um grande número de pessoas e essas pessoas já forem membros dos grupos do Azure AD estabelecidos, poderá atribuir permissões do SharePoint com mais facilidade usando grupos aninhados ou grupos que contenham outros grupos como membros.
+Para um projeto confinado a um pequeno número de pessoas, um único nível de grupos de acesso baseado no AD do Azure adicionado aos grupos do SharePoint do site se ajustará à maioria dos cenários. No entanto, se você tiver um grande número de pessoas e essas pessoas já forem membros dos grupos do Azure AD estabelecidos, poderá atribuir permissões do SharePoint com mais facilidade usando grupos aninhados ou grupos que contenham outros grupos como membros.
   
 Por exemplo, você deseja criar um site de equipe isolado do SharePoint Online para colaboração entre os executivos dos departamentos de vendas, marketing, engenharia, legal e de suporte e esses departamentos que já têm seus próprios grupos com conta de usuário executivo Academy. Em vez de criar um novo grupo para os novos membros do site e colocar todas as contas de usuário executivo individuais, coloque os grupos executivos existentes para cada departamento do novo grupo.
   

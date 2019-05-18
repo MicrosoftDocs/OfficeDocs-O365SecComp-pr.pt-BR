@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: No Microsoft Proteção do Exchange Online (EOP), é possível usar o Centro de administração do Exchange (EAC) para tornar um usuário membro de um grupo ou de grupos de funções a fim de atribuir a ele permissões de execução de tarefas administrativas específicas. Também é possível remover um usuário de um grupo ou grupo de funções usando o EAC.
-ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f248bce26d28c8ab7465ff983629eb01db407b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256139"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150153"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gerenciar permissões do grupo de funções de administrador no EOP
   

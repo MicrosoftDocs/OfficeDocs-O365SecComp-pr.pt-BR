@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aaec95ec4bb8e55d1ed1c7d9552ee7215ba5ec14
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: db473aa4cf6e48a52693ebec85c5dde5a28ac482
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242884"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151912"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Adicionar ou remover membros de uma ocorrência
 
 Você pode adicionar ou remover membros para gerenciar quem pode acessar o caso. Observe que os usuários adicionados aos grupos de função de revisores ou gerentes de descoberta eletrônica podem ser adicionados como membros da ocorrência. Observe que o Gerenciador de descoberta eletrônica que criou o caso é automaticamente adicionado como um membro.
 
-1. Na página **descoberta eletrônica avançada (visualização)** , vá para o seu caso.
+1. Na página **descoberta eletrônica avançada** , vá para o seu caso.
 
 2. Vá até **configurações** e selecione "permissões de _AMP_ de acesso".
  

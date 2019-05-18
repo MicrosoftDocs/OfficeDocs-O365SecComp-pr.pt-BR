@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835061"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155183"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>Configurar a detecção de privilégio de cliente de advogado (visualização) na descoberta eletrônica avançada
 
@@ -65,7 +65,7 @@ Quando você analisa o conjunto de análise, a detecção de privilégio de clie
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Etapa 2: criar um grupo de marcas inteligentes com modelo de detecção de privilégio de cliente advogado
 
-Uma das principais maneiras de consumir os resultados da detecção de privilégio de cliente de advogados no processo de revisão é usar um grupo de marcas inteligentes. Os grupos de marcas inteligentes usam os resultados de um modelo de ML e mostram os resultados do modelo em linha ao lado das marcas, para que você possa consumir facilmente os resultados do modelo, quando for relevante, e usar as marcas no processo de revisão, como faria com qualquer outra marca no painel de marcação.
+Uma das principais maneiras de consumir os resultados da detecção de privilégio de cliente de advogados no processo de revisão é usar um grupo de marcas inteligentes. Os grupos de marcas inteligentes usam os resultados de um modelo de ML e mostram os resultados do modelo em linha ao lado das marcas, para que você possa consumir facilmente os resultados do modelo, quando for relevante, e usar as marcas no processo de revisão, como faria com qualquer outra marca no painel de marcação. Confira [Configurar marcas inteligentes para revisão de suporte para ml na descoberta eletrônica avançada](smart-tags.md) para obter mais informações.
 
 - Em "gerenciar marcas", clique em "Adicionar seção de marca inteligente".
 

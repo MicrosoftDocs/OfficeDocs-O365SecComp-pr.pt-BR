@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade & de segurança para gerenciar um incidente de derramamento de dados.
-ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 7aada296566bb5312ab56680485798323d0ab096
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884759"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150743"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de derramamento de dados no Microsoft 365
 

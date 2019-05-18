@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, à declaração de registros, à retenção e por fim a disposição.
-ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256021"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152893"
 ---
 # <a name="overview-of-file-plan-manager"></a>Visão geral do gerenciador de planos de arquivo
 

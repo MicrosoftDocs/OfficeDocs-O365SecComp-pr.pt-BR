@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/21/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Você tem a opção de cancelar a duplicação de resultados de pesquisa de descoberta eletrônica que são exportados para que apenas uma cópia de uma mensagem de email seja exportada, embora várias instâncias da mesma mensagem possam ter sido encontradas em caixas de correio diferentes.
-ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 98639bd23b3d7c99b91a193c2651ff2fad677eeb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258061"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150653"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicação nos resultados de pesquisa de Descoberta Eletrônica
 

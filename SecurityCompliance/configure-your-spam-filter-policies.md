@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: As configurações básicas de filtro de spam incluem a seleção da ação a ser executada em mensagens identificadas como spam e a escolha da filtragem de mensagens escritas em idiomas específicos ou enviadas de países ou regiões específicos.
-ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 740da796d0e2215076bfe38120f98e349099a758
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258809"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151313"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
   
 As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada. Você pode editar a política de filtro de spam padrão para definir as configurações de filtro de spam para toda a empresa e criar políticas personalizadas de filtro de spam e aplicá-las a usuários, grupos ou domínios específicos em sua organização. Políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de prioridade mais alta será aplicada se várias políticas atenderem ao conjunto de critérios.
   
 > [!IMPORTANT]
-> Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No enTanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar regras de fluxo de email do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No entanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar regras de fluxo de email do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>O que você precisa saber antes de começar
 
@@ -34,7 +34,7 @@ Tempo estimado para conclusão: 30 minutos
   
 Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o entrada anti-spam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de administração do Exchange**.
+Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de Administração do Exchange**.
   
 ## <a name="use-the-security--compliance-center-scc-to-configure-spam-filter-policies"></a>Usar o centro de conformidade do & de segurança (SCC) para configurar as políticas de filtro de spam
 
@@ -68,9 +68,9 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
         
       - **Ceder a linha de assunto com o texto:** Envia a mensagem para os destinatários pretendidos, mas precede a linha de assunto com o texto especificado na **linha de assunto do prefixo com esta caixa de entrada de texto** . Usando esse texto como um identificador, você pode opcionalmente criar regras para filtrar ou rotear as mensagens, conforme necessário. 
         
-      - **Redirecionar mensagem para endereço de email:** Envia a mensagem para um endereço de email designado em vez de para os destinatários pretendidos. Especifique o endereço "redirecionar" na caixa de entrada reDirecionar **para este endereço de email** . <br/><br/>Observação: para obter mais informações sobre níveis de confiança de spam, consulte [níveis de confiança de spam](spam-confidence-levels.md). 
+      - **Redirecionar mensagem para endereço de email:** Envia a mensagem para um endereço de email designado em vez de para os destinatários pretendidos. Especifique o endereço "redirecionar" na caixa de entrada redirecionar **para este endereço de email** . <br/><br/>Observação: para obter mais informações sobre níveis de confiança de spam, consulte [níveis de confiança de spam](spam-confidence-levels.md). 
   
-5. Em **Email em massa**, você pode selecionar um limite para tratar emails em massa como spam. Esse limite é baseado no nível de reclamação em volume da mensagem. Você pode escolher uma configuração de limite de 1 a 9, em que 1 indica a maioria dos emails em massa como spam, e 9 permite que a maioria dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. Veja [valores de nível de reclamaÇão em massa](bulk-complaint-level-values.md) e [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obter mais detalhes. 
+5. Em **Email em massa**, você pode selecionar um limite para tratar emails em massa como spam. Esse limite é baseado no nível de reclamação em volume da mensagem. Você pode escolher uma configuração de limite de 1 a 9, em que 1 indica a maioria dos emails em massa como spam, e 9 permite que a maioria dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. Veja [valores de nível de reclamação em massa](bulk-complaint-level-values.md) e [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obter mais detalhes. 
     
 6. Na página **Listas de Bloqueios**, você pode especificar as entradas, como remetentes ou domínios, que sempre serão marcadas como spam. O serviço aplicará a ação de spam de alta confiança configurada nos emails que corresponderem a essas entradas. 
     
@@ -96,7 +96,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
     
 13. **Desativado** Nenhuma ação é tomada em mensagens que atendem aos critérios do filtro de spam. Todas as opções estão desativadas por padrão. 
     
-14. **Testar** Nenhuma ação é tomada em mensagens que atendem aos critérios do filtro de spam. No enTanto, as mensagens podem ser marcadas adicionando um cabeçalho X antes de serem entregues ao destinatário pretendido. Esse cabeçalho X permite que você saiba qual opção ASF foi correspondida. Se você especificou **Testar** para qualquer uma das opções avançadas, poderá definir que as configurações de modo de teste a seguir sejam aplicadas quando uma correspondência for encontrada para uma opção habilitada para teste: 
+14. **Testar** Nenhuma ação é tomada em mensagens que atendem aos critérios do filtro de spam. No entanto, as mensagens podem ser marcadas adicionando um cabeçalho X antes de serem entregues ao destinatário pretendido. Esse cabeçalho X permite que você saiba qual opção ASF foi correspondida. Se você especificou **Testar** para qualquer uma das opções avançadas, poderá definir que as configurações de modo de teste a seguir sejam aplicadas quando uma correspondência for encontrada para uma opção habilitada para teste: 
     
       - **Nenhuma** Não tomar ação de modo de teste na mensagem. Esse é o padrão. 
         
@@ -147,7 +147,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 Você também pode habilitar as opções avançadas de filtragem de spam, caso queira adotar uma abordagem mais agressiva de filtragem de spam. Para configurações gerais de spam que se apliquem a toda a organização, consulte [Prevenir email falso positivo marcado como spam com uma lista segura ou outras técnicas](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquear spam de email com o filtro de spam do Office 365 para evitar problemas de falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Elas serão úteis se você tiver o controle de nível de administrador e quiser impedir falsos positivos ou falsos negativos.
    
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection6"> </a>
 
 [Configurar a política do filtro de conexão](configure-the-connection-filter-policy.md)

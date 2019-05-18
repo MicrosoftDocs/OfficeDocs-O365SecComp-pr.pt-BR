@@ -3,7 +3,7 @@ title: Usar regras de fluxo de email para configurar a filtragem de email em mas
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,21 +13,21 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Os administradores podem aprender a usar regras de fluxo de email no Exchange Online Protection para filtragem de email em massa.
-ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8ec0f8385393cfd573191b75dd56944f3a6123df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267001"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157873"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar regras de fluxo de email para configurar a filtragem de email em massa no Exchange Online Protection
 
-Você pode definir filtros de conteúdo para toda a empresa para spam e email em massa usando as políticas padrão de filtro de conteúdo de spam. ConFira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) e [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) em como definir as políticas de filtro de conteúdo. 
+Você pode definir filtros de conteúdo para toda a empresa para spam e email em massa usando as políticas padrão de filtro de conteúdo de spam. Confira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) e [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) em como definir as políticas de filtro de conteúdo. 
   
 Se você quiser mais opções para filtrar mensagens em massa, você pode criar regras de fluxo de emails (também conhecidas como regras de transporte) para procurar padrões de texto ou frases freqüentemente encontradas em emails em massa. Qualquer mensagem que contenha essas características será marcada como spam. O uso dessas regras pode ajudar a reduzir a quantidade de emails em massa indesejados que sua organização recebe.
 
 > [!IMPORTANT]
-> Antes de criar as regras de fluxo de emails documentadas neste tópico, recomendamos que você leia primeiro [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valores de nível de reclamação em massa](bulk-complaint-level-values.md).<br> Os seguintes procedimentos marcam uma mensagem como spam para toda a sua organização. No enTanto, você pode adicionar outra condição para aplicar essas regras somente a destinatários específicos em sua organização. Dessa forma, as configurações agressivas de filtragem de email em massa podem ser aplicadas a alguns usuários altamente direcionados, enquanto o restante de seus usuários (que recebem principalmente o email em massa que eles se inscreveram) não são afetados. 
+> Antes de criar as regras de fluxo de emails documentadas neste tópico, recomendamos que você leia primeiro [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valores de nível de reclamação em massa](bulk-complaint-level-values.md).<br> Os seguintes procedimentos marcam uma mensagem como spam para toda a sua organização. No entanto, você pode adicionar outra condição para aplicar essas regras somente a destinatários específicos em sua organização. Dessa forma, as configurações agressivas de filtragem de email em massa podem ser aplicadas a alguns usuários altamente direcionados, enquanto o restante de seus usuários (que recebem principalmente o email em massa que eles se inscreveram) não são afetados. 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Criar uma regra de fluxo de emails para filtrar mensagens de email em massa com base em padrões de texto
 

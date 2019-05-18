@@ -3,18 +3,18 @@ title: Notificação de falha na entrega
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem aprender sobre a notificação de falha na entrega no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 9f9cc2865174344a2d411add4032ddf6ced8c740
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868599"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158623"
 ---
 # <a name="non-delivery-report"></a>Notificação de falha na entrega
 

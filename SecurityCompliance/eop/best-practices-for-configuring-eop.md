@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estas práticas recomendadas para a EOP (Proteção do Exchange Online) a fim de evitar erros comuns de configuração e obter êxito.
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256639"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150278"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Práticas recomendadas para a configuração do EOP
   
@@ -97,7 +97,7 @@ Para maior proteção, nós também recomendamos que você bloqueie algumas ou t
 
 Solucionar problemas gerais e tendências usando os relatórios no centro de administração. Encontre um ponto de dados específico sobre uma mensagem usando a ferramenta de Rastreamento de Mensagem. Saiba mais sobre relatórios em [Relatórios e rastreamento de mensagem no Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Saiba mais sobre a ferramenta de Rastreamento de Mensagem em [Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx).
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Perguntas frequentes gerais sobre o EOP](eop-general-faq.md)
   

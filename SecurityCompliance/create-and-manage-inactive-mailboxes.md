@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Você pode criar uma caixa de correio inativa no Office 365 aplicando uma política de retenção de bloqueio ou do Office 365 à caixa de correio e, em seguida, excluindo a conta de usuário do Office 365 correspondente. Os itens em uma caixa de correio inativa são mantidos pela duração da política de retenção ou retenção aplicada a ele antes de ser tornado inativo. Para excluir permanentemente uma caixa de correio inativa, apenas remova a política de retenção ou bloqueio.
-ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258872"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151223"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Criar e gerenciar caixas de correio inativas no Office 365
 
@@ -36,7 +36,7 @@ O Office 365 torna possível manter o conteúdo de caixas de correio excluídas.
     
 - A licença associada à caixa de correio do Exchange Online excluída estará disponível após a exclusão da conta de usuário do Office 365 correspondente. Você pode então [atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a outro usuário. 
     
-- Se uma retenção de litígio ou uma política de retenção do Office 365 não for aplicada a uma caixa de correio antes de ser excluída, o conteúdo da caixa de correio não será mantido ou detectável. No enTanto, a caixa de correio excluída pode ser recuperada em até 30 dias após a exclusão, mas a caixa de correio e seu conteúdo serão excluídos permanentemente após 30 dias, se não for recuperado.
+- Se uma retenção de litígio ou uma política de retenção do Office 365 não for aplicada a uma caixa de correio antes de ser excluída, o conteúdo da caixa de correio não será mantido ou detectável. No entanto, a caixa de correio excluída pode ser recuperada em até 30 dias após a exclusão, mas a caixa de correio e seu conteúdo serão excluídos permanentemente após 30 dias, se não for recuperado.
     
 - Para obter mais informações sobre retenção de litígio, consulte [bloqueio in-loco e retenção de litígio](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obter mais informações sobre as políticas de retenção do Office 365, consulte [visão geral das políticas de retenção no Office 365](retention-policies.md).
   
@@ -57,7 +57,7 @@ Para obter os procedimentos passo a passo para colocar uma caixa de correio em r
 - [Visão geral das políticas de retenção no Office 365](retention-policies.md)
     
 > [!NOTE]
-> Para conTenções de litígio e políticas de retenção do Office 365, você pode criar uma retenção indefinida ou em uma retenção baseada em tempo. Em um bloqueio indefinido, o conteúdo da caixa de correio inativa será mantido para sempre ou até que a retenção seja removida ou até que a duração da retenção seja alterada. Após a remoção ou não da política de retenção (supondo que a caixa de correio tenha sido excluída há mais de 30 dias), a caixa de correio inativa será marcada para exclusão permanente e o conteúdo da caixa de correio não será mais mantido ou detectável. Em uma política de retenção baseada em tempo ou no Office 365, você especifica a duração da retenção. Essa duração é aplicada a cada item e é calculada a partir da data em que o item foi recebido ou criado. Após a expiração de um item de caixa de correio, e esse item é movido para ou localizado na pasta itens recuperáveis da caixa de correio inativa, o item é excluído permanentemente (removido) da caixa de correio inativa após o período de retenção do item excluído expirar. 
+> Para contenções de litígio e políticas de retenção do Office 365, você pode criar uma retenção indefinida ou em uma retenção baseada em tempo. Em um bloqueio indefinido, o conteúdo da caixa de correio inativa será mantido para sempre ou até que a retenção seja removida ou até que a duração da retenção seja alterada. Após a remoção ou não da política de retenção (supondo que a caixa de correio tenha sido excluída há mais de 30 dias), a caixa de correio inativa será marcada para exclusão permanente e o conteúdo da caixa de correio não será mais mantido ou detectável. Em uma política de retenção baseada em tempo ou no Office 365, você especifica a duração da retenção. Essa duração é aplicada a cada item e é calculada a partir da data em que o item foi recebido ou criado. Após a expiração de um item de caixa de correio, e esse item é movido para ou localizado na pasta itens recuperáveis da caixa de correio inativa, o item é excluído permanentemente (removido) da caixa de correio inativa após o período de retenção do item excluído expirar. 
   
 ### <a name="step-2-delete-the-mailbox"></a>Etapa 2: Excluir a caixa de correio
 
@@ -71,7 +71,7 @@ Depois que a caixa de correio é colocada em espera ou uma política de retenç�
 
 Para exibir uma lista das caixas de correio inativas em sua organização:
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
     
 2. Clique em**retenção**de **governança** > de dados.
     

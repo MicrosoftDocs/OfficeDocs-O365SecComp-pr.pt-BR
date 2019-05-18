@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c2086c1667f4c5a612f0980c2492819168d92977
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258789"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150813"
 ---
 # <a name="email-threading"></a>Threading de emails
 
@@ -39,6 +39,6 @@ O encadeamento de emails analisa cada email e o desconstructs para mensagens ind
 - **Nenhum**: o conteúdo desse email está totalmente contido em pelo menos um email marcado como incluindo, inclusive, o menos.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>Qual é a diferença entre conversas no Outlook?
-Em resumo, isso parece muito semelhante aos agrupamentos de conversa no Outlook. No enTanto, há algumas diferenças importantes. Considere uma conversa de email que foi bifurcada em duas conversas; por exemplo, alguém respondeu a um email que não é o mais recente na conversa para que os dois últimos emails da conversa tenham conteúdo exclusivo.
+Em resumo, isso parece muito semelhante aos agrupamentos de conversa no Outlook. No entanto, há algumas diferenças importantes. Considere uma conversa de email que foi bifurcada em duas conversas; por exemplo, alguém respondeu a um email que não é o mais recente na conversa para que os dois últimos emails da conversa tenham conteúdo exclusivo.
 
 O Outlook ainda agruparia os emails em uma única conversa; somente leitura o último email significaria ter o contexto do segundo email, que também contém conteúdo exclusivo. Como o encadeamento de emails analisa todos os emails em componentes individuais e os compara, o encadeamento de emails marcaria os dois últimos emails como inclusivos, garantindo que você não perderá nenhum contexto, desde que Leia todos os emails marcados como inclusive.

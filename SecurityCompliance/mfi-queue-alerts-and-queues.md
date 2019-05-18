@@ -3,18 +3,18 @@ title: Alertas de filas e filas
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Os administradores podem aprender sobre alertas de fila e filas no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267633"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158753"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertas de filas e filas
 
@@ -30,7 +30,7 @@ O Office 365 continuará a tentar a entrega por 48 horas. Após 48 horas, as men
 
 Se o volume de email em fila exceder o limite predefinido (o valor padrão é 2000), os alertas estarão disponíveis no painel de fluxo de emails em **alertas recentes**, e os administradores receberão uma notificação por email (para o endereço de email alternativo) . Para configurar o limite de alerta, o limite de notificação diária e/ou os destinatários do alerta, consulte a seção **Personalizar alertas de fila** abaixo.
 
-![EnFileirar alertas na área de alertas recentes do painel de fluxo de emails no centro de conformidade do & de segurança](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![Enfileirar alertas na área de alertas recentes do painel de fluxo de emails no centro de conformidade do & de segurança](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>Personalizar alertas de fila
 

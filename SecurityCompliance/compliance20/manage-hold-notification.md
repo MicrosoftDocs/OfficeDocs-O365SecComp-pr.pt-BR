@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241258"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151733"
 ---
 # <a name="manage-hold-notifications"></a>Gerenciar as notificações de retenção
 
-Após iniciar seu fluxo de trabalho de notificação de retenção legal, você pode aproveitar a descoberta eletrônica avançada (visualização) para acompanhar o status de suas comunicações. A guia comunicações contém todas as notificações de bloqueio no caso de descoberta eletrônica avançada (visualização). Aqui, você pode ver detalhes, como o número de responsáveis que foram atribuídos ou que confirmaram o aviso.
+Depois de iniciar seu fluxo de trabalho de notificação de retenção legal, você pode aproveitar a descoberta eletrônica avançada para acompanhar o status de suas comunicações. A guia comunicações contém todas as notificações de bloqueio dentro da caixa de descoberta eletrônica avançada. Aqui, você pode ver detalhes, como o número de responsáveis que foram atribuídos ou que confirmaram o aviso.
 
 ## <a name="view-communication-details"></a>Exibir detalhes de comunicação
 
@@ -42,7 +42,7 @@ No submenu detalhes da comunicação, você pode visualizar os detalhes sobre a 
 Ocasionalmente, os responsáveis perdem o controle de seus emails no seu trabalho diário. Ou, para um litígio de longa duração, os responsáveis podem chegar e solicitar que você envie novamente um aviso. Ao gerenciar o fluxo de trabalho em relação aos avisos de retenção legal, talvez seja necessário enviar novamente um aviso para trazê-lo de volta à "parte superior da caixa de correio de um usuário".
 
 Você pode reenviar um aviso de isenção para seus responsáveis por:
-1. Navegue até um caso na **descoberta eletrônica avançada de segurança e conformidade do > (visualização)**.
+1. Navegue até um caso dentro da **descoberta eletrônica avançada de segurança e conformidade do >**.
 2. Depois de selecionar uma ocorrência, navegue até a guia **comunicações** .
 3. Para reenviar um aviso de retenção legal para um responsáveis, selecione a comunicação e clique na **** opção reenviar.
 4. Se um funcionário ainda não confirmou sua notificação de espera, o lembrete e o fluxo de escalonamento serão reiniciados. Se um dos responsáveis já tiver confirmado o aviso de espera, ele receberá apenas uma cópia do aviso de bloqueio inicial.
@@ -58,7 +58,7 @@ Como o caso progride, os responsáveis podem ser necessários para preservar dad
 
 Para atualizar o conteúdo do aviso de bloqueio inicial:
 
-1. Navegue até um caso na **descoberta eletrônica avançada de segurança e conformidade do > (visualização)**.
+1. Navegue até um caso dentro da **descoberta eletrônica avançada de segurança e conformidade do >**.
 2. Depois de selecionar uma ocorrência, navegue até a guia **comunicações** .
 3. Selecione o aviso de isenção que você deseja atualizar e clique em **Editar**.
 4. No fluxo de trabalho editar, selecione **definir conteúdo do portal** e atualizar o conteúdo do seu aviso. 
@@ -67,7 +67,7 @@ Para atualizar o conteúdo do aviso de bloqueio inicial:
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>Atualizar notificações e configurações de retenção legal
 
-Ao atualizar o conteúdo ou as configurações do aviso de emissão, lançamento, reEmissão, lembrete ou escalonamento, essas alterações serão aplicadas a todas as comunicações futuras geradas pelo fluxo de trabalho.
+Ao atualizar o conteúdo ou as configurações do aviso de emissão, lançamento, reemissão, lembrete ou escalonamento, essas alterações serão aplicadas a todas as comunicações futuras geradas pelo fluxo de trabalho.
 
 ## <a name="related-information"></a>Informações relacionadas 
 

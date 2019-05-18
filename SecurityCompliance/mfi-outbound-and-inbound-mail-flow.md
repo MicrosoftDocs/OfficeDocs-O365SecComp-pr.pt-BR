@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 8/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Os administradores podem saber mais sobre o widget fluxo de email de saída e entrada no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252201"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158723"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Fluxo de entrada e saída de emails
 
@@ -37,7 +37,7 @@ O widget **saída e fluxo** de emails de entrada exibe a criptografia TLS que é
 
 Atualmente, o TLS 1,2 é a versão mais segura do TLS oferecido pelo Office 365. Muitas vezes, você precisará saber a criptografia TLS que está sendo usada para auditorias de conformidade. Provavelmente você não tem uma relação direta com a maioria dos servidores de email de origem e de destino (você não é proprietário deles, e nenhuma da Microsoft), portanto, você não tem muitas opções para melhorar a criptografia TLS usada por esses servidores.
 
-No enTanto, você [](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) pode usar conectores para garantir a melhor proteção TLS disponível para mensagens enviadas entre seus servidores de email e o Office 365. O fluxo de email entre o Office 365 e seus próprios servidores de email ou servidores que pertencem a seus parceiros é freqüentemente mais importante e confidencial do que as mensagens normais, portanto, você deve aplicar segurança e vigilância extra a essas mensagens. Você pode atualizar ou corrigir seus próprios servidores de email para melhorar a criptografia TLS que está sendo usada ou acessar seus parceiros para fazer o mesmo. O **relatório do conector** exibe o volume de fluxo de emails e a criptografia TLS para mensagens que usam os conectores do Office 365.
+No entanto, você [](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) pode usar conectores para garantir a melhor proteção TLS disponível para mensagens enviadas entre seus servidores de email e o Office 365. O fluxo de email entre o Office 365 e seus próprios servidores de email ou servidores que pertencem a seus parceiros é freqüentemente mais importante e confidencial do que as mensagens normais, portanto, você deve aplicar segurança e vigilância extra a essas mensagens. Você pode atualizar ou corrigir seus próprios servidores de email para melhorar a criptografia TLS que está sendo usada ou acessar seus parceiros para fazer o mesmo. O **relatório do conector** exibe o volume de fluxo de emails e a criptografia TLS para mensagens que usam os conectores do Office 365.
 
 ## <a name="connector-report"></a>Relatório do conector
 

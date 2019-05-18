@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação de imposto da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255519"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152953"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificação do imposto da UE
 
@@ -82,7 +82,7 @@ número de registro de imposto
   
 tax id
   
-St.Nr.
+st.nr.
   
 steuernummer
   
@@ -195,21 +195,21 @@ bucn
   
 número civil uniforme
   
-bucn #
+bucn#
   
-uniformcivilnumber #
+uniformcivilnumber#
   
 ID civil uniforme
   
 Nenhum civil uniforme
   
-Egn
+egn
   
 número civil uniforme búlgaro
   
-uniformcivilno #
+uniformcivilno#
   
-Egn #
+egn#
   
 униформ граждански номер
   
@@ -335,9 +335,9 @@ tax id
   
 código de identificação de imposto
   
-TIC
+tic
   
-TIC #
+tic#
   
 αριθμός φορολογικού μητρώου
   
@@ -458,7 +458,7 @@ número de CPR
   
 pedir
   
-Skat Nummer
+skat nummer
   
 ID Skat
   
@@ -586,7 +586,7 @@ número de identidade
   
 número de ID nacional da finlandês
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -604,19 +604,19 @@ henkilötunnus
   
 yksilöllinen henkilökohtainen tunnistenumero
   
-ainutlaatuinen henkilökohtainen Tunnus
+ainutlaatuinen henkilökohtainen tunnus
   
 identiteetti numero
   
-Suomen Kansallinen henkilötunnus
+suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
 tunnusnumero
   
-Kansallinen Tunnus numero
+kansallinen tunnus numero
   
 ## <a name="france"></a>França
 
@@ -726,9 +726,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -800,9 +800,9 @@ AFM
   
 Tin
   
-taxidno #
+taxidno#
   
-taxregistryno #
+taxregistryno#
   
 αριθμός φορολογικού μητρώου
   
@@ -877,15 +877,15 @@ autoridade de imposto não
   
 número de identidade do imposto ID do imposto
   
-taxidnumber #
+taxidnumber#
   
 Tin
   
-hungatiantin #
+hungatiantin#
   
 identificação de imposto não
   
-taxidno #
+taxidno#
   
 adóazonosító szám
   
@@ -950,11 +950,11 @@ serviço pessoal não
   
 serviço PPS não
   
-ppsno #
+ppsno#
   
 número do PPS do irlandês
   
-publicserviceno #
+publicserviceno#
   
 número de serviço público pessoal
   
@@ -1025,9 +1025,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1092,9 +1092,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1161,7 +1161,7 @@ n º do imposto
   
 n º do imposto
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1175,9 +1175,9 @@ n º de identificação de imposto
   
 ID mokesčių
   
-mokesčių Numeris
+mokesčių numeris
   
-mokesčių identifikavimas Numeris
+mokesčių identifikavimas numeris
   
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -1230,9 +1230,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1307,9 +1307,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1414,7 +1414,7 @@ Países Baixos Nummer ID da última vez
   
 Países Baixos belastingnummer
   
-BTW Nummer
+btw nummer
   
 Nederlandse identificatie
   
@@ -1465,15 +1465,15 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
-Nip
+nip
   
-Nip #
+nip#
   
 tax id
   
@@ -1491,7 +1491,7 @@ número de IVA
   
 IVA não.
   
-vatno #
+vatno#
   
 ID de IVA
   
@@ -1499,9 +1499,9 @@ ID de IVA #
   
 numer identyfikacji podatkowej
   
-Polski numer identyfikacji podatkowej
+polski numer identyfikacji podatkowej
   
-numeridentyfikacjipodatkowej #
+numeridentyfikacjipodatkowej#
   
 ## <a name="portugal"></a>Portugal
 
@@ -1550,9 +1550,9 @@ número do imposto
   
 n º do imposto
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1614,7 +1614,7 @@ número do imposto
   
 táxi #
   
-taxno #
+taxno#
   
 ID-UL Taxei
   
@@ -1678,7 +1678,7 @@ número do imposto
   
 táxi #
   
-taxno #
+taxno#
   
 daňové identifikačné číslo
   
@@ -1751,7 +1751,7 @@ número do imposto
   
 táxi #
   
-taxno #
+taxno#
   
 identifikacijska številka davka
   
@@ -1864,13 +1864,13 @@ número do imposto
   
 táxi #
   
-taxno #
+taxno#
   
-cifid #
+cifid#
   
-spanishcifid #
+spanishcifid#
   
-spanishcifno #
+spanishcifno#
   
 número de contribuyente
   
@@ -1880,7 +1880,7 @@ número de Identificación fiscal
   
 número CIF
   
-cifnúmero #
+cifnúmero#
   
 ## <a name="sweden"></a>Suécia
 

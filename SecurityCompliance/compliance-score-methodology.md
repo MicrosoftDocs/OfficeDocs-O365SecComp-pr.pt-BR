@@ -3,7 +3,7 @@ title: Metodologia de Pontuação de conformidade
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: 120aede52d67375f60145412f5d210509ac57581
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33472987"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155253"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodologia de Pontuação de conformidade (prévia)
 

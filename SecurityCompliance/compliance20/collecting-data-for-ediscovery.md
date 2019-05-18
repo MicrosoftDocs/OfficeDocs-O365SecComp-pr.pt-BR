@@ -1,10 +1,10 @@
 ---
-title: Coletar dados para uma ocorrência na descoberta eletrônica avançada (visualização)
+title: Coletar dados para uma ocorrência na descoberta eletrônica avançada
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242549"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151883"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Coletar dados para uma ocorrência na descoberta eletrônica avançada (visualização)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Coletar dados para uma ocorrência na descoberta eletrônica avançada
 
-Depois de identificar os responsáveis e as fontes de dados que são de interesse para o seu caso, é hora de identificar o conjunto de documentos para o qual você deseja se aprofundar. Você pode usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para identificá-los de locais do custodial e do não custodial no Office 365.
+Depois de identificar os responsáveis e as fontes de dados que são de interesse para o seu caso, é hora de identificar o conjunto de documentos para o qual você deseja se aprofundar. Você pode usar a ferramenta de pesquisa na descoberta eletrônica avançada para identificá-las de locais custodial e não custodial no Office 365.
 
-Após executar uma pesquisa, você poderá exibir estatísticas sobre os itens recuperados, como os locais que tinham a maioria dos itens que corresponderam à consulta de pesquisa. Você também pode visualizar um subconjunto dos resultados. Quando você identificou o conjunto de documentos que deseja examinar mais, você pode adicionar os resultados da pesquisa a um conjunto de trabalho para coletar e processar.
+Após executar uma pesquisa, você poderá exibir estatísticas sobre os itens recuperados, como os locais que tinham a maioria dos itens que corresponderam à consulta de pesquisa. Você também pode visualizar um subconjunto dos resultados. Quando você identificou o conjunto de documentos que deseja examinar mais, você pode adicionar os resultados da pesquisa a uma revisão definida como coletar e processar.
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -46,6 +46,6 @@ Para obter mais informações sobre estatísticas de pesquisa, confira [Estatís
 
 Após a conclusão da visualização, o botão **Visualizar** estará ativo. Clique nele para visualizar um subconjunto de amostra dos resultados.
 
-## <a name="adding-search-results-to-a-working-set"></a>Adicionando resultados de pesquisa a um conjunto de trabalho
+## <a name="adding-search-results-to-a-review-set"></a>Adicionando resultados de pesquisa a um conjunto de revisão
 
-Quando estiver pronto para coletar e processar os resultados inteiros de uma pesquisa, você poderá adicioná-lo a um conjunto de trabalho. Para obter detalhes, consulte [Add data to a Working Set](add-data-to-working-set.md). 
+Quando estiver pronto para coletar e processar os resultados inteiros de uma pesquisa, você poderá fazê-lo adicionando-o a um conjunto de revisão. Para obter detalhes, consulte [Adicionar dados a um conjunto de revisão](add-data-to-review-set.md). 

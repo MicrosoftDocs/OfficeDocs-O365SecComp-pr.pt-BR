@@ -3,7 +3,7 @@ title: Descoberta Eletrônica Avançada do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Saiba como a descoberta eletrônica avançada do Office 365 pode ajudá-lo a analisar os dados no Office 365, simplificar as revisões de documentos e tomar decisões de descoberta eletrônica eficiente.
-ms.openlocfilehash: 203d3bfa627064704b4123a757db94bc3478b7bc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 54700ad8d6d2dce07490caa82917bcfeee6036b6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262953"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158613"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Descoberta Eletrônica Avançada do Office 365
 

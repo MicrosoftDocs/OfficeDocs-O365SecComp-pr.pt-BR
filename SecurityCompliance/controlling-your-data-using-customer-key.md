@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 8/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Saiba como configurar a chave do cliente para o Office 365 para Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Com a chave do cliente, você controla as chaves de criptografia da sua organização e, em seguida, configura o Office 365 para usá-las para criptografar seus dados em repouso nos datacenters da Microsoft.
-ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258349"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153713"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar seus dados no Office 365 usando a Chave do Cliente
 
@@ -170,7 +170,7 @@ Antes de entrar em contato com a equipe do Office 365, você deve executar as se
 
 As etapas para criar um cofre de chaves são documentadas na [introdução ao Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/), que orienta você durante a instalação e o lançamento do Azure PowerShell, a conexão com sua assinatura do Azure, a criação de um grupo de recursos e a criação de um cofre de chaves nesse grupo de recursos.
   
-Ao criar um cofre de chaves, você deve escolher um SKU: Standard ou Premium. A SKU padrão permite que as chaves do Azure Key Vault sejam protegidas por software – não há nenhuma proteção de chave do módulo de segurança de hardware (HSM), e a SKU Premium permite o uso de HSMs para proteção de chaves de compartimento de chaves. A chave do cliente aceita os principais cofres que usam SKU, embora a Microsoft recomende enfaticamente que você use apenas o SKU Premium. O custo das operações com chaves de qualquer tipo é o mesmo, portanto, a única diferença no custo é o custo por mês para cada chave protegida por HSM. ConFira os [preços do Key Vault](https://azure.microsoft.com/pricing/details/key-vault/) para obter detalhes. 
+Ao criar um cofre de chaves, você deve escolher um SKU: Standard ou Premium. A SKU padrão permite que as chaves do Azure Key Vault sejam protegidas por software – não há nenhuma proteção de chave do módulo de segurança de hardware (HSM), e a SKU Premium permite o uso de HSMs para proteção de chaves de compartimento de chaves. A chave do cliente aceita os principais cofres que usam SKU, embora a Microsoft recomende enfaticamente que você use apenas o SKU Premium. O custo das operações com chaves de qualquer tipo é o mesmo, portanto, a única diferença no custo é o custo por mês para cada chave protegida por HSM. Confira os [preços do Key Vault](https://azure.microsoft.com/pricing/details/key-vault/) para obter detalhes. 
   
 > [!IMPORTANT]
 > Use os compartimentos de chave de SKU Premium e chaves protegidas por HSM para dados de produção e use somente os compartimentos de chave de SKU padrão e chaves para fins de teste e validação. 
@@ -184,7 +184,7 @@ Crie um conjunto separado e emparelhado de cofres para cada política de criptog
 A criação de compartimentos de chave também requer a criação de grupos de recursos do Azure, pois os principais cofres precisam de capacidade de armazenamento (embora muito pequeno) e do registro em log de compartimento de chaves, se habilitado, também gera dados armazenados. Como prática recomendada, a Microsoft recomenda o uso de administradores separados para gerenciar cada grupo de recursos, com a administração centralizada com o conjunto de administradores que gerenciará todos os recursos de chave do cliente relacionados.
   
 > [!IMPORTANT]
-> Para maximizar a disponibilidade, seus cofres de chaves devem estar próximos às regiões do serviço do Office 365. Por exemplo, se sua organização do Exchange Online estiver na América do Norte, coloque seus principais cofres na América do Norte. Se sua organização do Exchange Online estiver na Europa, coloque seus principais cofres na Europa.<br/>Use um prefixo comum para os principais compartimentos e inclua uma abreviação do uso e do escopo do compartimento de chaves e chaves (por exemplo, para o serviço do SharePoint da Contoso onde os cofres estarão localizados na América do Norte, um possível par de nomes é contoso-O365SP-NÃODISP-VaultA1 e Contoso-O365SP-NA-VaultA2. Os nomes de cofre são cadeias de caracteres globalmente exclusivas no Azure, portanto, talvez você precise tentar variações dos nomes desejados, caso os nomes desejados já sejam reivindicados por outros clientes do Azure. Os nomes de cofre de julho de 2017 não podem ser alterados, portanto, uma prática recomendada é ter um plano escrito para configuração e usar uma segunda pessoa para verificar se o plano foi executado corretamente.<br/>Se possível, crie seus cofres em regiões não emparelhadas. As regiões emparelhadas do Azure fornecem alta disponibilidade entre domínios de falha de serviço. Portanto, os pares regionais podem ser considerados como a região de backup uns dos outros. Isso significa que um recurso do Azure colocado em uma região é automaticamente obter tolerância a falhas por meio da região emparelhada. Por esse motivo, escolher regiões para dois cofres usados em uma DEP onde as regiões estão emparelhadas significa que apenas um total de duas regiões de disponibilidade está em uso. A maioria dos geografias tem apenas duas regiões, portanto, ainda não é possível selecionar regiões não emparelhadas. Se possível, escolha duas regiões não emparelhadas para os dois cofres usados com uma DEP. Isso beneficia de um total de quatro regiões de disponibilidade. Para obter mais informações, consulte [continuidade de negócios e recuperação de desastres (BCDR): regiões emparelhaDas do Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para uma lista atual de pares regionais. 
+> Para maximizar a disponibilidade, seus cofres de chaves devem estar próximos às regiões do serviço do Office 365. Por exemplo, se sua organização do Exchange Online estiver na América do Norte, coloque seus principais cofres na América do Norte. Se sua organização do Exchange Online estiver na Europa, coloque seus principais cofres na Europa.<br/>Use um prefixo comum para os principais compartimentos e inclua uma abreviação do uso e do escopo do compartimento de chaves e chaves (por exemplo, para o serviço do SharePoint da Contoso onde os cofres estarão localizados na América do Norte, um possível par de nomes é contoso-O365SP-NÃODISP-VaultA1 e Contoso-O365SP-NA-VaultA2. Os nomes de cofre são cadeias de caracteres globalmente exclusivas no Azure, portanto, talvez você precise tentar variações dos nomes desejados, caso os nomes desejados já sejam reivindicados por outros clientes do Azure. Os nomes de cofre de julho de 2017 não podem ser alterados, portanto, uma prática recomendada é ter um plano escrito para configuração e usar uma segunda pessoa para verificar se o plano foi executado corretamente.<br/>Se possível, crie seus cofres em regiões não emparelhadas. As regiões emparelhadas do Azure fornecem alta disponibilidade entre domínios de falha de serviço. Portanto, os pares regionais podem ser considerados como a região de backup uns dos outros. Isso significa que um recurso do Azure colocado em uma região é automaticamente obter tolerância a falhas por meio da região emparelhada. Por esse motivo, escolher regiões para dois cofres usados em uma DEP onde as regiões estão emparelhadas significa que apenas um total de duas regiões de disponibilidade está em uso. A maioria dos geografias tem apenas duas regiões, portanto, ainda não é possível selecionar regiões não emparelhadas. Se possível, escolha duas regiões não emparelhadas para os dois cofres usados com uma DEP. Isso beneficia de um total de quatro regiões de disponibilidade. Para obter mais informações, consulte [continuidade de negócios e recuperação de desastres (BCDR): regiões emparelhadas do Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para uma lista atual de pares regionais. 
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Atribuir permissões a cada cofre de chaves
 <a name="KeyVaultPerms"> </a>
@@ -220,7 +220,7 @@ Para cada cofre de chave, você precisará definir três conjuntos separados de 
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
   ```
 
-    Em que:
+    Onde:
     
   - *vaultname* é o nome do cofre de chaves que você criou. 
     
@@ -245,9 +245,9 @@ Para cada cofre de chave, você precisará definir três conjuntos separados de 
 ### <a name="enable-and-then-confirm-soft-delete-on-your-key-vaults"></a>Habilitar e confirmar a exclusão reversível nos seus principais cofres
 <a name="SoftDelete"> </a>
 
-Quando você pode recuperar rapidamente suas chaves, é menos provável que haja uma interrupção de serviço estendido devido a chaves acidentalmente ou excluídas de forma mal-intencionada. Você precisa habilitar essa configuração, conhecida como exclusão reVersível, antes de poder usar suas chaves com a chave do cliente. Habilitar a exclusão reVersível permite recuperar chaves ou cofres dentro de 90 dias de exclusão sem precisar restaurá-los do backup.
+Quando você pode recuperar rapidamente suas chaves, é menos provável que haja uma interrupção de serviço estendido devido a chaves acidentalmente ou excluídas de forma mal-intencionada. Você precisa habilitar essa configuração, conhecida como exclusão reversível, antes de poder usar suas chaves com a chave do cliente. Habilitar a exclusão reversível permite recuperar chaves ou cofres dentro de 90 dias de exclusão sem precisar restaurá-los do backup.
   
-Para habilitar a exclusão reVersível nos seus cofres de chaves, conclua estas etapas:
+Para habilitar a exclusão reversível nos seus cofres de chaves, conclua estas etapas:
   
 1. Faça logon em sua assinatura do Azure com o Windows PowerShell. Para obter instruções, consulte [fazer logon com o Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
     
@@ -260,7 +260,7 @@ Para habilitar a exclusão reVersível nos seus cofres de chaves, conclua estas 
    Set-AzureRmResource -ResourceId $r.ResourceId -Properties $r.Properties
    ``` 
     
-3. Confirmar se a exclusão reversível está configurada para o cofre de chaves executando o cmdlet **Get-AzureRmKeyVault** . Se a exclusão reversível estiver configurada corretamente para o cofre de chaves, a exclusão reVersível será habilitada? Propriedade retorna um valor **true**: 
+3. Confirmar se a exclusão reversível está configurada para o cofre de chaves executando o cmdlet **Get-AzureRmKeyVault** . Se a exclusão reversível estiver configurada corretamente para o cofre de chaves, a exclusão reversível será habilitada? Propriedade retorna um valor **true**: 
     
    ```
    Get-AzureRmKeyVault -VaultName <vaultname> | fl
@@ -279,7 +279,7 @@ Para criar uma chave diretamente no seu cofre de chaves, execute o cmdlet [Add-A
 Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-Em que:
+Onde:
   
 -  *compartimentalizaname* é o nome do cofre de chaves em que você deseja criar a chave. 
     
@@ -448,7 +448,7 @@ Para criar a DEP, siga estas etapas:
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   Em que:
+   Onde:
     
    -  *PolicyName* é o nome que você deseja usar para a política. Os nomes não podem conter espaços. Por exemplo, USA_mailboxes. 
     
@@ -486,7 +486,7 @@ Use o cmdlet Get-MailboxStatistics para determinar se uma caixa de correio está
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
-A propriedade isEncrypted retornará um valor **true** se a caixa de correio for criptografada e um valor **false** se a caixa de correio não estiver criptografada. 
+A Propriedade IsEncrypted retornará um valor **true** se a caixa de correio for criptografada e um valor **false** se a caixa de correio não estiver criptografada. 
 
 O tempo para concluir movimentações de caixa de correio depende do número de caixas de correio às quais você atribui uma DEP pela primeira vez, bem como o tamanho das caixas de correio. Se as caixas de correio não foram criptografadas após uma semana a partir do momento em que você atribuiu a DEP, inicie uma movimentação de caixa de correio para as caixas de correio não criptografadas usando o cmdlet New-MoveRequest.
 
@@ -561,7 +561,7 @@ Depois de configurar a chave do cliente para o Office 365, você pode executar e
 ### <a name="restore-azure-key-vault-keys"></a>Restaurar chaves do Azure Key Vault
 <a name="RestoreAzureKeyVaultKeys"> </a>
 
-Antes de executar uma restauração, use os recursos de recuperação fornecidos pela exclusão reversível. Todas as chaves usadas com a chave do cliente são necessárias para que a exclusão reversível seja habilitada. A exclusão reVersível funciona como uma lixeira e permite a recuperação de até 90 dias sem a necessidade de restauração. A restauração deve ser necessária somente em circunstâncias extremas ou incomuns, por exemplo, se a chave ou o cofre de chaves for perdido. Se for necessário restaurar uma chave para uso com a chave do cliente, no PowerShell do Azure, execute o cmdlet Restore-AzureKeyVaultKey da seguinte maneira:
+Antes de executar uma restauração, use os recursos de recuperação fornecidos pela exclusão reversível. Todas as chaves usadas com a chave do cliente são necessárias para que a exclusão reversível seja habilitada. A exclusão reversível funciona como uma lixeira e permite a recuperação de até 90 dias sem a necessidade de restauração. A restauração deve ser necessária somente em circunstâncias extremas ou incomuns, por exemplo, se a chave ou o cofre de chaves for perdido. Se for necessário restaurar uma chave para uso com a chave do cliente, no PowerShell do Azure, execute o cmdlet Restore-AzureKeyVaultKey da seguinte maneira:
   
 ```
 Restore-AzureKeyVaultKey -VaultName <vaultname> -InputFile <filename>
@@ -578,7 +578,7 @@ Se já existir uma chave com o mesmo nome no cofre de chaves, a operação de re
 ### <a name="rolling-or-rotating-a-key-in-azure-key-vault-that-you-use-with-customer-key"></a>Reverter ou girar uma chave no Azure Key Vault que você usa com a chave do cliente
 <a name="RollCKkey"> </a>
 
-As chaves sem interrupção não são exigidas pelo Azure Key Vault ou pela chave do cliente. Além disso, as chaves protegidas com um HSM são praticamente impossíveis de ser comprometidas. Mesmo que uma chave raiz estivesse na posse de um ator mal-intencionado, não há meios viáveis de usá-lo para descriptografar dados, já que apenas o código do Office 365 sabe como usá-lo. No enTanto, a chave do cliente oferece suporte à substituição de uma chave.
+As chaves sem interrupção não são exigidas pelo Azure Key Vault ou pela chave do cliente. Além disso, as chaves protegidas com um HSM são praticamente impossíveis de ser comprometidas. Mesmo que uma chave raiz estivesse na posse de um ator mal-intencionado, não há meios viáveis de usá-lo para descriptografar dados, já que apenas o código do Office 365 sabe como usá-lo. No entanto, a chave do cliente oferece suporte à substituição de uma chave.
   
 > [!CAUTION]
 > Apenas rolo uma chave de criptografia que você usa com a chave do cliente quando existe uma razão técnica clara ou um requisito de conformidade determina que você precisa rolar a chave. Além disso, não exclua chaves que estejam associadas a políticas. Ao rolar suas chaves, haverá conteúdo criptografado com as teclas anteriores. Por exemplo, enquanto as caixas de correio ativas forem criptografadas freqüentemente, inativas, desconectadas e desativadas, as caixas de correio ainda poderão ser criptografadas com as teclas anteriores. O SharePoint Online realiza o backup de conteúdo para fins de restauração e recuperação, para que ainda possa haver conteúdo arquivado usando chaves antigas. <br/> Para garantir a segurança de seus dados, o SharePoint Online permitirá que não haja mais de uma operação de registro de chave em andamento por vez. Se quiser rolar as duas chaves em um cofre de chaves, você precisará aguardar a conclusão completa da primeira operação do rolo de chave. Nossa recomendação é escalonar as operações de seu rolo principal em intervalos diferentes, para que isso não seja um problema. 

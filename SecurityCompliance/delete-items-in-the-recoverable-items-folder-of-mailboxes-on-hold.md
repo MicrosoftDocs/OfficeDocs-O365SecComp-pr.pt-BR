@@ -3,7 +3,7 @@ title: Excluir itens da pasta itens recuperáveis das caixas de correio baseadas
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para administradores: excluir itens na pasta itens recuperáveis de um usuário para uma caixa de correio do Exchange Online, mesmo se essa caixa de correio for colocada em retenção legal. Essa é uma maneira eficaz de excluir dados que foram desfeitos acidentalmente no Office 365.'
-ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256869"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150403"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Excluir itens da pasta itens recuperáveis das caixas de correio baseadas em nuvem em manter ajuda do administrador
 
-A pasta itens recuperáveis para uma caixa de correio do Exchange Online existe para proteger contra exclusões acidentais ou mal-intencionadas. Também é usado para armazenar itens que são mantidos e acessados pelos recursos de conformidade do Office 365, como bloqueios e pesquisas de descoberta eletrônica. No enTanto, em algumas situações, as organizações podem ter dados que são retidos acidentalmente na pasta itens recuperáveis que devem ser excluídos. Por exemplo, um usuário pode enviar ou encaminhar uma mensagem de email que contenha informações confidenciais ou informações que possam ter sérias conseqüências de negócios. Mesmo que a mensagem seja excluída permanentemente, ela pode ser retida indefinidamente porque uma retenção legal foi colocada na caixa de correio. Este cenário é conhecido como dados derramamento porque os dados foram desfeitos acidentalmente no Office 365. Nessas situações, você pode excluir itens na pasta itens recuperáveis de um usuário para uma caixa de correio do Exchange Online, mesmo que essa caixa de correio seja colocada em espera com um dos diferentes recursos de retenção no Office 365. Esses tipos de isenções incluem bloqueios de litígio, isenções in-loco, retenções de descoberta eletrônica e políticas de retenção do Office 365 criadas no centro de segurança e conformidade do Office 365 ou Microsoft 365.
+A pasta itens recuperáveis para uma caixa de correio do Exchange Online existe para proteger contra exclusões acidentais ou mal-intencionadas. Também é usado para armazenar itens que são mantidos e acessados pelos recursos de conformidade do Office 365, como bloqueios e pesquisas de descoberta eletrônica. No entanto, em algumas situações, as organizações podem ter dados que são retidos acidentalmente na pasta itens recuperáveis que devem ser excluídos. Por exemplo, um usuário pode enviar ou encaminhar uma mensagem de email que contenha informações confidenciais ou informações que possam ter sérias conseqüências de negócios. Mesmo que a mensagem seja excluída permanentemente, ela pode ser retida indefinidamente porque uma retenção legal foi colocada na caixa de correio. Este cenário é conhecido como dados derramamento porque os dados foram desfeitos acidentalmente no Office 365. Nessas situações, você pode excluir itens na pasta itens recuperáveis de um usuário para uma caixa de correio do Exchange Online, mesmo que essa caixa de correio seja colocada em espera com um dos diferentes recursos de retenção no Office 365. Esses tipos de isenções incluem bloqueios de litígio, isenções in-loco, retenções de descoberta eletrônica e políticas de retenção do Office 365 criadas no centro de segurança e conformidade do Office 365 ou Microsoft 365.
   
  Este artigo explica como excluir itens da pasta itens recuperáveis para caixas de correio baseadas em nuvem que estão em espera. Este procedimento envolve desabilitar o acesso à caixa de correio e desabilitar a recuperação de item único, desabilitar o assistente de pasta gerenciada do processamento da caixa de correio, removendo temporariamente a retenção, excluindo itens da pasta itens recuperáveis e revertendo a caixa de correio para a configuração anterior. Este é o processo: 
   
@@ -210,7 +210,7 @@ As políticas de retenção de toda a organização e do Exchange 365 são aplic
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-após identificar as políticas de retenção do Office 365 em toda a organização, vá para a página de **retenção** de **governança** \> de data no centro de conformidade do & de segurança, edite cada política de retenção em toda a organização que você identificou na etapa anterior e adicione a caixa de correio à lista de destinatários excluídos. Isso removerá a caixa de correio do usuário da política de retenção. 
+Após identificar as políticas de retenção do Office 365 em toda a organização, vá para a página de **retenção** de **governança** \> de data no centro de conformidade do & de segurança, edite cada política de retenção em toda a organização que você identificou na etapa anterior e adicione a caixa de correio à lista de destinatários excluídos. Isso removerá a caixa de correio do usuário da política de retenção. 
 
 ### <a name="office-365-retention-labels"></a>Rótulos de retenção do Office 365
 
@@ -278,7 +278,7 @@ Observe que os itens na pasta itens recuperáveis na caixa de correio de arquivo
 > [!NOTE]
 > Se você incluir uma consulta de pesquisa (usando o parâmetro *SearchQuery* ), o cmdlet **Search-Mailbox** retornará um máximo de 10.000 itens nos resultados da pesquisa. Portanto, se você incluir uma consulta de pesquisa, talvez seja necessário executar o comando **Search-Mailbox** várias vezes para excluir mais de 10.000 itens. 
   
-Os exemplos a seguir mostram a sintaxe de comando de cada uma dessas opções. Estes exemplos usam o `-SearchQuery size>0` valor de parâmetro, que exclui todos os itens de todas as subpastas da pasta itens recuperáveis. Se você precisar excluir apenas os itens que correspondem a condições específicas, você também pode usar o parâmetro *SearchQuery* para especificar outras condições, como o assunto de uma mensagem ou um intervalo de datas. ConFira os [outros exemplos de como usar o parâmetro SearchQuery a](#other-examples-of-using-the-searchquery-parameter) seguir. 
+Os exemplos a seguir mostram a sintaxe de comando de cada uma dessas opções. Estes exemplos usam o `-SearchQuery size>0` valor de parâmetro, que exclui todos os itens de todas as subpastas da pasta itens recuperáveis. Se você precisar excluir apenas os itens que correspondem a condições específicas, você também pode usar o parâmetro *SearchQuery* para especificar outras condições, como o assunto de uma mensagem ou um intervalo de datas. Confira os [outros exemplos de como usar o parâmetro SearchQuery a](#other-examples-of-using-the-searchquery-parameter) seguir. 
   
 ### <a name="example-1"></a>Exemplo 1
 
@@ -288,7 +288,7 @@ Este exemplo copia todos os itens da pasta itens recuperáveis do usuário para 
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
-No exemplo anterior, não é necessário copiar itens para a caixa de correio de pesquisa de descoberta. Você pode copiar mensagens para qualquer caixa de correio de destino. No enTanto, para impedir o acesso a dados potencialmente confidenciais de caixa de correio, é recomendável copiar mensagens para uma caixa de correio que tenha acesso restrito a pessoal autorizado. Por padrão, o acesso à caixa de correio de pesquisa de descoberta padrão é restrito aos membros do grupo de função gerenciamento de descoberta no Exchange Online. 
+No exemplo anterior, não é necessário copiar itens para a caixa de correio de pesquisa de descoberta. Você pode copiar mensagens para qualquer caixa de correio de destino. No entanto, para impedir o acesso a dados potencialmente confidenciais de caixa de correio, é recomendável copiar mensagens para uma caixa de correio que tenha acesso restrito a pessoal autorizado. Por padrão, o acesso à caixa de correio de pesquisa de descoberta padrão é restrito aos membros do grupo de função gerenciamento de descoberta no Exchange Online. 
   
 ### <a name="example-2"></a>Exemplo 2
 

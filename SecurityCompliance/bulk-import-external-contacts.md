@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Saiba como os administradores podem usar o PowerShell do Exchange Online e um arquivo CSV para importar contatos externos para a lista de endereços global em massa.
-ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244495"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152203"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importação em massa de contatos externos para o Exchange Online
 
-**Este artigo é para administradores. Você está tentando importar contatos para sua própria caixa de correio? ConFira [importar contatos para o Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+**Este artigo é para administradores. Você está tentando importar contatos para sua própria caixa de correio? Confira [importar contatos para o Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
 Sua empresa tem muitos contatos comerciais existentes que você deseja incluir no catálogo de endereços compartilhado (também chamado de lista de endereços global) no Exchange Online? Você deseja adicionar contatos externos como membros de grupos de distribuição, da mesma forma que é possível com os usuários dentro da sua empresa? Em caso afirmativo, você pode usar o PowerShell do Exchange Online e um arquivo CSV (valor separado por vírgula) para importar contatos externos em massa para o Exchange Online. É um processo de três etapas:
   
@@ -91,7 +91,7 @@ A próxima etapa é usar o arquivo CSV que você criou na etapa 1 e o PowerShell
     Os contatos importados aparecerão no catálogo de endereços compartilhado no Outlook e no Outlook na Web.
     
     > [!NOTE]
-    > você também pode exibir os contatos no centro de administração do Microsoft 365 indo para **os contatos dos usuários** \> ****. 
+    > Você também pode exibir os contatos no centro de administração do Microsoft 365 indo para **os contatos dos usuários** \> ****. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Etapa 3: adicionar informações às propriedades dos contatos externos
 

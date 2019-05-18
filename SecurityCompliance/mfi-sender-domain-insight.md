@@ -3,18 +3,18 @@ title: Corrigir a percepção do domínio do remetente
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre a correção do domínio do remetente no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868559"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158703"
 ---
 # <a name="fix-sender-domain-insight"></a>Corrigir a percepção do domínio do remetente
 

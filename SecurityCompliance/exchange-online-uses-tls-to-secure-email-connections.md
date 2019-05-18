@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Saiba como o Exchange Online e o Office 365 usam a segurança de camada de transporte (TLS) e o sigilo total de comunicação por email. Além disso, obtenha informações sobre o certificado emitido pela Microsoft para o Exchange Online.
-ms.openlocfilehash: e80f477c807f3a7ad5f751e0987b191024c816d9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255629"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152873"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Como o Exchange Online usa o TLS para proteger conexões de email no Office 365
 
@@ -41,7 +41,7 @@ Os servidores do Exchange Online sempre criptografam conexões com outros servid
   
 ## <a name="how-office-365-uses-tls-between-office-365-and-external-trusted-partners"></a>Como o Office 365 usa o TLS entre o Office 365 e parceiros externos, confiáveis
 
-Por padrão, o Exchange Online sempre usa o TLS oportunista. Isso significa que o Exchange Online sempre tenta criptografar as conexões com a versão mais segura do TLS primeiro e, em seguida, testa a lista de codificações TLS até encontrar uma que seja aceita por ambas as partes. A menos que você tenha configurado o Exchange Online para garantir que as mensagens desse destinatário sejam enviadas apenas por meio de conexões seguras, por padrão a mensagem será enviada sem criptografia se a organização de destinatários não oferecer suporte à criptografia TLS. O TLS oportunista é suficiente para a maioria das empresas. No enTanto, para empresas que têm requisitos de conformidade, como organizações médicas, de bancos ou governamentais, você pode configurar o Exchange Online para exigir ou forçar o TLS. Para obter instruções, consulte [Configure Mail Flow using Connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Por padrão, o Exchange Online sempre usa o TLS oportunista. Isso significa que o Exchange Online sempre tenta criptografar as conexões com a versão mais segura do TLS primeiro e, em seguida, testa a lista de codificações TLS até encontrar uma que seja aceita por ambas as partes. A menos que você tenha configurado o Exchange Online para garantir que as mensagens desse destinatário sejam enviadas apenas por meio de conexões seguras, por padrão a mensagem será enviada sem criptografia se a organização de destinatários não oferecer suporte à criptografia TLS. O TLS oportunista é suficiente para a maioria das empresas. No entanto, para empresas que têm requisitos de conformidade, como organizações médicas, de bancos ou governamentais, você pode configurar o Exchange Online para exigir ou forçar o TLS. Para obter instruções, consulte [Configure Mail Flow using Connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
   
 Se você decidir configurar o TLS entre sua organização e uma organização de parceiro confiável, o Exchange Online pode usar o TLS forçado para criar canais de comunicação confiáveis. O TLS forçado requer que a organização do parceiro autentique-se no Exchange Online com um certificado de segurança para enviar emails para você. Seu parceiro precisará gerenciar os próprios certificados para fazer isso. No Exchange Online, usamos conectores para proteger as mensagens enviadas de acesso não autorizado antes de chegarem ao provedor de email do destinatário. Para obter informações sobre como usar conectores para configurar o fluxo de emails, consulte [Configure Mail Flow using Connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
   
@@ -62,12 +62,12 @@ As informações do certificado usadas pelo Exchange Online são descritas na ta
 |**Atributo**|**Valor**|
 |:-----|:-----|
 |Emissor da raiz da autoridade de certificação  <br/> |GlobalSign AC raiz – R1 <br/> |
-|Nome do certificado  <br/> |mail.Protection.Outlook.com  <br/> |
+|Nome do certificado  <br/> |mail.protection.outlook.com  <br/> |
 |Organização  <br/> |Microsoft Corporation  <br/> |
 |Unidade organizacional  <br/> |  <br/> |
 |Nível de segurança da chave do certificado  <br/> |2048  <br/> |
    
- **Informações de certificado preTeridas válidas até 3 de setembro de 2018**
+ **Informações de certificado preteridas válidas até 3 de setembro de 2018**
   
 Para ajudar a garantir uma transição suave, continuaremos a fornecer as informações de certificado antigas para sua referência por algum tempo, no entanto, você deve usar as informações atuais do certificado de agora em diante.
   
@@ -76,7 +76,7 @@ Para ajudar a garantir uma transição suave, continuaremos a fornecer as inform
 |**Atributo**|**Valor**|
 |:-----|:-----|
 |Emissor da raiz da autoridade de certificação  <br/> |Baltimore CyberTrust Root  <br/> |
-|Nome do certificado  <br/> |mail.Protection.Outlook.com  <br/> |
+|Nome do certificado  <br/> |mail.protection.outlook.com  <br/> |
 |Organização  <br/> |Microsoft Corporation  <br/> |
 |Unidade organizacional  <br/> |Microsoft Corporation  <br/> |
 |Nível de segurança da chave do certificado  <br/> |2048  <br/> |
@@ -91,11 +91,11 @@ O novo certificado requer a conexão aos pontos de extremidade da nova AC como p
   `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. Na janela exibida, escolha **recuperar**.
 3. Quando o utilitário concluir sua verificação, ele retornará um status. Se o status Exibir **OK**, seu servidor de email poderá validar com êxito o novo certificado. Caso contrário, você precisará determinar o que está causando falha nas conexões. Provavelmente, você precisará atualizar as configurações de um firewall. A lista completa de pontos de extremidade que precisam ser acessados incluem:
-    - OCSP.GlobalSign.com
-     - CRL.GlobalSign.com
-     - Secure.GlobalSign.com   
+    - ocsp.globalsign.com
+     - crl.globalsign.com
+     - secure.globalsign.com   
 
-Normalmente, você recebe atualizações para seus certificados raiz automaticamente por meio do Windows Update. No enTanto, algumas implantações têm segurança adicional no local que impede que essas atualizações ocorram automaticamente. Nessas implantações bloqueadas nas quais o Windows Update não pode atualizar automaticamente os certificados raiz, você precisa garantir que o certificado de autoridade de certificação raiz correto seja instalado executando estas etapas:
+Normalmente, você recebe atualizações para seus certificados raiz automaticamente por meio do Windows Update. No entanto, algumas implantações têm segurança adicional no local que impede que essas atualizações ocorram automaticamente. Nessas implantações bloqueadas nas quais o Windows Update não pode atualizar automaticamente os certificados raiz, você precisa garantir que o certificado de autoridade de certificação raiz correto seja instalado executando estas etapas:
 1.  Conecte-se ao seu servidor Exchange local usando o Windows PowerShell e execute o seguinte comando:  
   `certmgr.msc`
 2. Em **autoridades de certificação raiz confiáveis/certificados**, confirme se o novo certificado está listado.

@@ -3,7 +3,7 @@ title: Configurar notificações de spam do usuário final no Exchange Online
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Você pode configurar as notificações de spam para o usuário final para a política de filtro de spam padrão para toda a empresa ou para políticas de filtro de spam personalizadas que são aplicadas a domínios.
-ms.openlocfilehash: 33eb3eca1556507af22a6888a4455944ac51f0cf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c56aa3d5bbc771641f9082095c930c66dc8cee96
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259580"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153883"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificações de spam do usuário final no Exchange Online
 
@@ -49,7 +49,7 @@ Tempo estimado para conclusão: 2 minutos
   
 Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o entrada "anti-spam" no tópico [permissões de recursos no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de administração do Exchange**.
+Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de Administração do Exchange**.
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Use o EAC para configurar as notificações de spam do usuário final
 
@@ -76,7 +76,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
   
 ![Regra de transporte para testar notificações de spam do usuário final](media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   

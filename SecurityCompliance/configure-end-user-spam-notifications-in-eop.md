@@ -3,7 +3,7 @@ title: Configurar as notificações de spam para o usuário final no EOP
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Você pode configurar as notificações de spam do usuário final para a política padrão de filtro de conteúdo para toda a organização ou para políticas personalizadas de filtro de conteúdo que são aplicadas aos domínios.
-ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259619"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151453"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar as notificações de spam para o usuário final no EOP
   
@@ -77,7 +77,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
   
 ![Regra de transporte para testar notificações de spam do usuário final](media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md)
   

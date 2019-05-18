@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: A tabela a seguir fornece uma lista dos recursos que estão disponíveis no serviço de filtragem de email hospedado da Proteção do Exchange Online (EOP).
-ms.openlocfilehash: 8eb6eafb7214938af302852e2726af3fcdbd44d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9d408aed63027915b6d2ff3466bc629fa2a51236
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256689"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150343"
 ---
 # <a name="eop-features"></a>Recursos EOP
 
@@ -28,7 +28,7 @@ A tabela a seguir fornece uma lista dos recursos que estão disponíveis no serv
 |:-----|:-----|
 |**Recurso**|**Descrição**|
 |**Proteção antispam**||
-|Detecção de entrada de spam|A proteção contra spam de entrada está sempre habilitada e não pode ser desabilitada. Você pode definir configurações personalizadas por meio de seu filtro de conexão e políticas de filtro de conteúdo.  <br/> Para clientes autônomos do EOP: por padrão, os filtros de conteúdo do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No enTanto, para ajudar a garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|
+|Detecção de entrada de spam|A proteção contra spam de entrada está sempre habilitada e não pode ser desabilitada. Você pode definir configurações personalizadas por meio de seu filtro de conexão e políticas de filtro de conteúdo.  <br/> Para clientes autônomos do EOP: por padrão, os filtros de conteúdo do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No entanto, para ajudar a garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|
 |Detecção de saída de spam|A proteção contra spam de saída está sempre habilitada se você usar o serviço para enviar emails de saída ajudando, assim, a proteger as organizações que usam o serviço e seus destinatários. Semelhante à filtragem de entrada, a filtragem de spam de saída é composta pela filtragem de conexão e de conteúdo. As configurações de filtragem de spam de saída não são configuráveis, mas há configurações da política de spam de saída que você pode usar para configurar notificações de administração para mensagens de saída suspeitas e bloqueadas. Para obter mais informações, consulte [Configure the Outbound Spam Policy](../configure-the-outbound-spam-policy.md).|
 |Proteção contra NDR - backscatter|Para obter mais informações sobre a dispersão de notificação de falha na entrega, confira a configuração de dispersa do NDR nas [Opções avançadas de filtragem de spam](../advanced-spam-filtering-asf-options.md) , bem como [mensagens de EOP](../backscatter-messages-and-eop.md).|
 |Filtragem de email em massa|A EOP aprimorou os métodos de detecção para identificar mensagens de email em massa. Você pode configurar o serviço para marcar as mensagens de email em massa por meio da interface do usuário. Você também pode criar regras de fluxo de emails para filtrar emails em massa de forma mais agressiva, pesquisando um selo de cabeçalho de mensagem de email em massa. Para obter mais informações sobre emails em massa, confira [o que é a diferença entre lixo eletrônico e email em massa?](../what-s-the-difference-between-junk-email-and-bulk-email.md) e seus subtópicos associados.|
@@ -84,7 +84,7 @@ A tabela a seguir fornece uma lista dos recursos que estão disponíveis no serv
 |**Criação de relatórios e registro em log**||
 |Rastreamento de mensagens|O recurso de rastreamento de mensagem permite que um administrador acompanhe as mensagens de email conforme elas passam pelo serviço. Ele o ajuda a determinar se uma mensagem de email direcionada foi recebida, rejeitada, adiada ou entregue pelo serviço. Isso permite responder com eficiências às perguntas dos usuários, solucionar problemas de fluxo de emails, validar alterações nas políticas e diminuir a necessidade de entrar em contato com o suporte técnico para solicitar assistência. Para saber mais, consulte [Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx).  |
 |Relatórios com base na Web|Os relatórios de proteção de email no centro de administração do Microsoft 365 fornecem dados de mensagens. Por exemplo, você pode monitorar o quanto spam e malware está sendo detectado ou com que frequência suas regras de fluxo de emails estão sendo atendidas. Com esses relatórios interativos, você pode obter rapidamente um relatório visual de dados resumidos e obter detalhes sobre mensagens individuais de até 90 dias. Para saber mais informações, consulte [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](http://technet.microsoft.com/library/bcef7984-4bfa-4ca8-9fa5-a65af8618f5d.aspx).|
-|Relatório detalhado por meio da pasta de trabalho de relatório do Excel|Os relatórios de proteção de email na pasta de trabalho do Excel 2013 também estão disponíveis. No enTanto, recomendamos usar os relatórios do centro de administração. A pasta de trabalho de criação de relatórios do Excel 2013 deverá ser preterida no futuro.|
+|Relatório detalhado por meio da pasta de trabalho de relatório do Excel|Os relatórios de proteção de email na pasta de trabalho do Excel 2013 também estão disponíveis. No entanto, recomendamos usar os relatórios do centro de administração. A pasta de trabalho de criação de relatórios do Excel 2013 deverá ser preterida no futuro.|
 |Registro em log de auditoria|O relatório de grupo de função do administrador e o log de auditoria do administrador estão disponíveis para administradores da EOP. Para saber mais, veja [Relatórios de auditoria no EOP](auditing-reports-in-eop.md).  |
 |**Contratos de Nível de Serviço (SLAs) e suporte**||
 |SLA da eficácia do spam|\>99%|

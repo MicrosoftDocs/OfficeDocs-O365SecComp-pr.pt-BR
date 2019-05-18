@@ -4,18 +4,18 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 01/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: O Microsoft Proteção do Exchange Online (EOP) é um serviço de filtragem de e-mails baseado na nuvem que ajuda a proteger sua organização contra spam e malware, e inclui recursos para defender sua organização das violações da política de mensagens.
-ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: b9fb5591834292fba4a58cfd024a667edce3c7ca
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402879"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150243"
 ---
 # <a name="exchange-online-protection-overview"></a>Visão geral do Exchange Online Protection
 
@@ -25,7 +25,7 @@ Veja a seguir algumas das principais formas de usar o EOP para proteção de men
   
 - **Em um cenário autônomo** O EOP fornece proteção de email baseada em nuvem para seu ambiente local do Microsoft Exchange Server 2013, versões herdadas do Exchange Server ou para qualquer outra solução de email SMTP local. 
     
-- **Como parte do Microsoft Exchange Online** Por padrão, o EOP protege caixas de correio do Microsoft Exchange Online hospedadas na nuvem. ConFira [proteção contra ameaças](../protect-against-threats.md) para ajudar a configurar esses recursos do Exchange Online. 
+- **Como parte do Microsoft Exchange Online** Por padrão, o EOP protege caixas de correio do Microsoft Exchange Online hospedadas na nuvem. Confira [proteção contra ameaças](../protect-against-threats.md) para ajudar a configurar esses recursos do Exchange Online. 
     
 - **Em uma implantação híbrida** O EOP pode ser configurado para proteger seu ambiente de mensagens e controlar o roteamento de email quando você tem uma combinação de caixas de correio locais e na nuvem. 
 

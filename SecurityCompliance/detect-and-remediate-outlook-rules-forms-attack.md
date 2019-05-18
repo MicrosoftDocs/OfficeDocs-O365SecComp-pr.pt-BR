@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 04/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Saiba como reconhecer e corrigir as regras do Outlook e os ataques de injeção de formulários personalizados no Office 365
-ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979487"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150253"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar e corrigir ataques de injeção a regras e formulários personalizados do Outlook no Office 365
 

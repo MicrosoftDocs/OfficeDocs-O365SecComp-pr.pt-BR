@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número do Passport da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256819"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152963"
 ---
 # <a name="eu-passport-number"></a>Número do Passport da UE
 
@@ -103,7 +103,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de passaporte belga  <br/> Passport não  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass Kein  <br/> reisepass  <br/> |
+|passport number  <br/> número de passaporte belga  <br/> Passport não  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgária
 
@@ -513,7 +513,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|número de passaporte italiano  <br/> Repubblica Italiana PASSAPORTO  <br/> PASSAPORTO  <br/> PASSAPORTO italiana  <br/> passport number  <br/> italiana PASSAPORTO numero  <br/> PASSAPORTO numero  <br/> Numéro passeport Italien  <br/> Numéro passeport  <br/> |
+|número de passaporte italiano  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> passport number  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Letônia
 
@@ -595,7 +595,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de passaporte lithunian  <br/> Passport não  <br/> Paso Numeris  <br/> |
+|passport number  <br/> número de passaporte lithunian  <br/> Passport não  <br/> paso numeris  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -673,7 +673,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de passaporte Maltês  <br/> Passport não  <br/> numru tal-Passaport  <br/> |
+|passport number  <br/> número de passaporte Maltês  <br/> Passport não  <br/> numru tal-passaport  <br/> |
    
 ## <a name="netherlands"></a>Países Baixos
 
@@ -712,7 +712,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|número de passaporte holandês  <br/> passport number  <br/> número de passaporte Holanda  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|número de passaporte holandês  <br/> passport number  <br/> número de passaporte Holanda  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polônia
 
@@ -837,7 +837,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de passaporte eslovaco  <br/> Passport não  <br/> číslo Pasu  <br/> |
+|passport number  <br/> número de passaporte eslovaco  <br/> Passport não  <br/> číslo pasu  <br/> |
    
 ## <a name="slovenia"></a>Eslovênia
 
@@ -927,7 +927,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|Passaport  <br/> o Passport da Espanha  <br/> Catálogo do Passport  <br/> passport number  <br/> Passport não  <br/> Libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
+|Passaport  <br/> o Passport da Espanha  <br/> Catálogo do Passport  <br/> passport number  <br/> Passport não  <br/> libreta pasaporte  <br/> número pasaporte  <br/> españa pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suécia
 

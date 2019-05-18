@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254964"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154343"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -279,12 +279,14 @@ Você pode aplicar automaticamente os rótulos ao conteúdo que atenda a certas 
 
 Para saber mais sobre sintaxe de consulta, confira:
 
-- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Rótulos baseados em consultas usam o índice de pesquisa para identificar conteúdos. Para saber mais sobre propriedades pesquisáveis válidas, confira:
 
 - [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
-- [Visão geral de propriedades rastreadas e gerenciadas no SharePoint Server](https://docs.microsoft.com/pt-BR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- 
+  [Visão geral de propriedades rastreadas e gerenciadas no SharePoint Server](https://docs.microsoft.com/pt-BR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Consultas de exemplos:
 

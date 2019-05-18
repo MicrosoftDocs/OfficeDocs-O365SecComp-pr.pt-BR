@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use a pesquisa de conteúdo e o script neste artigo para pesquisar as caixas de correio e os sites do OneDrive for Business para um grupo de usuários.
-ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7be1494f7a69c5865974a6c4ee0be65a6acb49d4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260929"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158763"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Use a Pesquisa de Conteúdo para procurar uma lista de usuários na caixa de correio e no site do OneDrive for Business
 

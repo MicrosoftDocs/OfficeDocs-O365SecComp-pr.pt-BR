@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 2/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento está sendo usado em sua organização. '
-ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263369"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157893"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 
@@ -28,7 +28,7 @@ O compartilhamento é uma atividade importante no SharePoint Online e no OneDriv
   
 ## <a name="the-sharepoint-sharing-schema"></a>O esquema de compartilhamento do SharePoint
 
-Eventos de compartilhamento (exceto o compartilhamento de política e eventos de link de compartilhamento) são diferentes dos eventos relacionados a arquivos e pastas de uma maneira principal: um usuário está executando uma ação que tem algum efeito sobre outro usuário. Por exemplo, O usuário A fornece ao usuário B acesso a um arquivo. Neste exemplo, o usuário A é o *usuário* que está agindo e O usuário B é o *usuário de destino*. No esquema de arquivos do SharePoint, a ação do usuário que está agindo só afeta o próprio arquivo. Quando o usuário A abre um arquivo, as únicas informações necessárias no **** evento fileaccessed são o usuário que está agindo. Para resolver essa diferença, há um esquema separado, chamado esquema de *compartilhamento do SharePoint*, que captura mais informações sobre o compartilhamento de eventos. Isso garante que os administradores tenham mais informações sobre quem compartilhou um recurso e o usuário com o qual o recurso foi compartilhado. 
+Eventos de compartilhamento (exceto o compartilhamento de política e eventos de link de compartilhamento) são diferentes dos eventos relacionados a arquivos e pastas de uma maneira principal: um usuário está executando uma ação que tem algum efeito sobre outro usuário. Por exemplo, o usuário A fornece ao usuário B acesso a um arquivo. Neste exemplo, o usuário A é o *usuário* que está agindo e o usuário B é o *usuário de destino*. No esquema de arquivos do SharePoint, a ação do usuário que está agindo só afeta o próprio arquivo. Quando o usuário A abre um arquivo, as únicas informações necessárias no **** evento fileaccessed são o usuário que está agindo. Para resolver essa diferença, há um esquema separado, chamado esquema de *compartilhamento do SharePoint*, que captura mais informações sobre o compartilhamento de eventos. Isso garante que os administradores tenham mais informações sobre quem compartilhou um recurso e o usuário com o qual o recurso foi compartilhado. 
   
 O esquema de compartilhamento fornece dois campos adicionais no log de auditoria relacionado aos eventos de compartilhamento: 
   
@@ -117,7 +117,7 @@ A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvi
     
 5. Selecione a coluna **detalhes** e, na guia **página inicial** , clique em **dividir coluna** \> **por**delimitador.
     
-    ![Na guia página inicial, clique em dividir coluna e, em seguida, clique em por deLimitador](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
+    ![Na guia página inicial, clique em dividir coluna e, em seguida, clique em por delimitador](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
   
 6. Na janela **dividir coluna por** delimitador, faça o seguinte: 
     
@@ -149,7 +149,7 @@ A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvi
     
 A tabela a seguir mostra todos os usuários da organização que compartilharam recursos com um usuário convidado em um intervalo de datas especificado.
   
-![ComPartilhando eventos no log de auditoria do Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
+![Compartilhando eventos no log de auditoria do Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
 Embora não esteja incluído na tabela anterior, a coluna **detail. 10** (ou qualquer coluna contém a propriedade **ObjectID** ) identifica o recurso que foi compartilhado com o usuário de destino; por exemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
   

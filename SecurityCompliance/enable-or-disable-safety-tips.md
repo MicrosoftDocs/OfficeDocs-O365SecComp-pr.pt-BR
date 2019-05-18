@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Informa aos administradores do Office 365 e do EOP como habilitar e desabilitar dicas de segurança em mensagens de email.
-ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a782c9a1eca874c2aa2128b6129257067c63219a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256932"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154753"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Ativar ou desativar as dicas de segurança no Office 365
 
@@ -62,7 +62,7 @@ Neste tópico:
     
 9. Para habilitar as dicas de segurança, em **dicas de segurança**, marque a caixa **de seleção ao** . Para desabilitar as dicas de segurança, desmarque a caixa **de seleção ao** . 
     
-10. Selecione **Salvar**.
+10. Escolha **Salvar**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Para habilitar ou desabilitar dicas de segurança usando o PowerShell
 <a name="pshellsafetytip"> </a>
@@ -77,7 +77,7 @@ Os administradores podem usar o PowerShell do Exchange Online para habilitar ou 
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-Em que:
+Onde:
     
   -  *nome da política* é o nome da política que você deseja modificar, por exemplo, **padrão**.
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use a pesquisa de conteúdo no centro de conformidade do & de segurança para realizar coleções direcionadas. Uma coleção direcionada significa que você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Use o script neste artigo para obter a ID da pasta ou o caminho das pastas de caixa de correio ou de site específicas que você deseja pesquisar.
-ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 476478f3f4d5c2d1992989eac790068f28ba747f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263996"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156303"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar a pesquisa de conteúdo no Office 365 para coleções direcionadas
 
-O recurso de pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 não oferece uma maneira direta na interface de usuário pesquisar pastas específicas em caixas de correio do Exchange ou sites do SharePoint e do onedrive for Business. No enTanto, é possível pesquisar pastas específicas (chamadas de *coleção direcionadas*) especificando a propriedade ID da pasta para a propriedade email ou caminho (DocumentLink) para sites na sintaxe de consulta de pesquisa real. O uso da pesquisa de conteúdo para executar uma coleção direcionada é útil quando você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Você pode usar o script neste artigo para obter a ID de pasta para pastas de caixa de correio ou o caminho (DocumentLink) para pastas em um site do SharePoint e do OneDrive for Business. Em seguida, você pode usar a ID de pasta ou o caminho em uma consulta de pesquisa para retornar itens localizados na pasta.
+O recurso de pesquisa de conteúdo no centro de &amp; conformidade de segurança do Office 365 não oferece uma maneira direta na interface de usuário pesquisar pastas específicas em caixas de correio do Exchange ou sites do SharePoint e do onedrive for Business. No entanto, é possível pesquisar pastas específicas (chamadas de *coleção direcionadas*) especificando a propriedade ID da pasta para a propriedade email ou caminho (DocumentLink) para sites na sintaxe de consulta de pesquisa real. O uso da pesquisa de conteúdo para executar uma coleção direcionada é útil quando você tem certeza de que os itens que respondem a um caso ou itens privilegiados estão localizados em uma caixa de correio ou pasta de site específica. Você pode usar o script neste artigo para obter a ID de pasta para pastas de caixa de correio ou o caminho (DocumentLink) para pastas em um site do SharePoint e do OneDrive for Business. Em seguida, você pode usar a ID de pasta ou o caminho em uma consulta de pesquisa para retornar itens localizados na pasta.
 
 > [!NOTE]
 > Para retornar conteúdo localizado em uma pasta em um site do SharePoint ou do OneDrive for Business, o script neste tópico usa a propriedade gerenciada DocumentLink em vez da propriedade Path. A propriedade DocumentLink é mais robusta que a propriedade Path porque ela retornará todo o conteúdo de uma pasta, enquanto a propriedade Path não retornará alguns arquivos de mídia.

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova ferramenta de investigações de dados (visualização) no Microsoft 365.
-ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257710"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150673"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Visão geral das investigações de dados (prévia) no Microsoft 365
 
@@ -54,9 +54,9 @@ Use a guia **pessoas de interesse** para adicionar e gerenciar as pessoas que vo
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>Indexando os dados de pessoas de interesse
 
-Adicionar uma pessoa de interesse a uma investigação reindexa todos os itens parcialmente indexados das fontes de dados da pessoa. Esse processo é chamado de *indexAção avançada*. A indexação avançada reprocessa dados, como imagens e tipos de arquivo não suportados, de forma que esses dados sejam totalmente detectáveis quando você executa pesquisas para coletar dados de uma investigação. Use a guia **processamento** para monitorar o status da indexação avançada e corrigir qualquer erro de processamento que possa ocorrer usando um processo chamado *correção de erros*. Confira mais informações em [correção de erros ao processar dados para uma investigação](error-remediation.md).
+Adicionar uma pessoa de interesse a uma investigação reindexa todos os itens parcialmente indexados das fontes de dados da pessoa. Esse processo é chamado de *indexação avançada*. A indexação avançada reprocessa dados, como imagens e tipos de arquivo não suportados, de forma que esses dados sejam totalmente detectáveis quando você executa pesquisas para coletar dados de uma investigação. Use a guia **processamento** para monitorar o status da indexação avançada e corrigir qualquer erro de processamento que possa ocorrer usando um processo chamado *correção de erros*. Confira mais informações em [correção de erros ao processar dados para uma investigação](error-remediation.md).
 
-## <a name="exporting-data"></a>ExPortando dados
+## <a name="exporting-data"></a>Exportando dados
 
 Se você quiser exportar dados, use a guia **** exportações para gerenciar um trabalho de exportação e baixar dados do conjunto de evidências. Quando você exporta evidências, os dados são carregados em um local de armazenamento do Azure e, em seguida, estão disponíveis para download em um computador local. Na guia **** exportações, você pode obter a URL do local de armazenamento do Azure e a chave de avaliação de armazenamento, que são necessárias para baixar os dados exportados. Para obter mais informações, consulte [exportar dados de uma investigação](export-data.md).
 

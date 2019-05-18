@@ -3,22 +3,22 @@ title: Rastreamento de mensagens no Centro de Conformidade e Segurança
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade do & de segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265599"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158673"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no Centro de Conformidade e Segurança
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 O rastreamento de mensagens no centro de conformidade do & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.
 
@@ -67,7 +67,7 @@ O valor padrão é **2 dias**, mas você pode especificar intervalos de data/hor
 
    ![Um intervalo de tempo de controle deslizante em um novo rastreamento de mensagem no centro de conformidade do & de segurança](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   No enTanto, você também pode alternar para o modo de exibição **personalizado** onde você pode especificar os valores de **data de início** e **data de término** (incluindo horas) e também pode selecionar o **fuso horário** para o intervalo de data/hora. Observe que a configuração de **fuso horário** se aplica às suas entradas de consulta e aos resultados de consulta.
+   No entanto, você também pode alternar para o modo de exibição **personalizado** onde você pode especificar os valores de **data de início** e **data de término** (incluindo horas) e também pode selecionar o **fuso horário** para o intervalo de data/hora. Observe que a configuração de **fuso horário** se aplica às suas entradas de consulta e aos resultados de consulta.
 
    ![Um intervalo de tempo personalizado em um novo rastreamento de mensagem no centro de conformidade do & de segurança](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 

@@ -3,18 +3,18 @@ title: Relatório de mapa de fluxo de email
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre o relatório de mapa de fluxo de emails no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868579"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158683"
 ---
 # <a name="mail-flow-map-report"></a>Relatório de mapa de fluxo de email
 

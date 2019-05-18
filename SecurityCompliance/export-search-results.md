@@ -3,7 +3,7 @@ title: Exportar os resultados da Pesquisa de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte os resultados da pesquisa de uma pesquisa de conteúdo no centro de conformidade do & de segurança para um computador local. Os resultados de email são exportados como arquivos PST. O conteúdo de sites do SharePoint e do OneDrive for Business são exportados como documentos nativos do Office. '
-ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255491"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154543"
 ---
 # <a name="export-content-search-results"></a>Exportar os resultados da Pesquisa de Conteúdo
 
 Depois que uma pesquisa de conteúdo for executada com êxito, você poderá exportar os resultados da pesquisa para um computador local. Quando você exporta os resultados de email, eles são baixados para seu computador como arquivos PST. Quando você exporta conteúdo de sites do SharePoint e do OneDrive for Business, cópias de documentos nativos do Office são exportadas. Há outros documentos e relatórios que são incluídos com os resultados da pesquisa exportados.
   
-Além disso, todas as mensagens de email criptografadas por RMS incluídas nos resultados de uma pesquisa de conteúdo serão descriptografadas quando você exportá-las (como mensagens individuais). Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de desCriptografia do RMS é atribuída a esse grupo de função. Consulte a seção [mais informações](#more-information) para obter detalhes sobre a desCRIPTOGRAFIA do RMS quando você exporta os resultados da pesquisa. 
+Além disso, todas as mensagens de email criptografadas por RMS incluídas nos resultados de uma pesquisa de conteúdo serão descriptografadas quando você exportá-las (como mensagens individuais). Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de descriptografia do RMS é atribuída a esse grupo de função. Consulte a seção [mais informações](#more-information) para obter detalhes sobre a descriptografia do RMS quando você exporta os resultados da pesquisa. 
   
 Exportar os resultados de uma pesquisa de conteúdo envolve preparar os resultados e, em seguida, baixá-los para um computador local.
   
@@ -55,7 +55,7 @@ Exportar os resultados de uma pesquisa de conteúdo envolve preparar os resultad
     
 - Ao baixar os resultados da pesquisa (descritos na etapa 2), você pode aumentar a velocidade de download Configurando uma configuração do registro do Windows no computador que você usa para exportar os resultados da pesquisa. Para obter mais informações, consulte [aumentar a velocidade de download ao exportar resultados de pesquisa de descoberta eletrônica do Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Quando você exporta os resultados da pesquisa, os dados são temporariamente armazenados em um local de armazenamento exclusivo do Microsoft Azure na nuvem da Microsoft antes de ele ser baixado para o computador local. certifique-se de que sua organização possa se conectar ao ponto de extremidade no Azure, que é ** \*. blob.core.windows.net** (o caractere curinga representa um identificador exclusivo para sua exportação). Os dados dos resultados da pesquisa são excluídos do local de armazenamento do Azure duas semanas após sua criação. 
+- Quando você exporta os resultados da pesquisa, os dados são temporariamente armazenados em um local de armazenamento exclusivo do Microsoft Azure na nuvem da Microsoft antes de ele ser baixado para o computador local. Certifique-se de que sua organização possa se conectar ao ponto de extremidade no Azure, que é ** \*. blob.Core.Windows.net** (o caractere curinga representa um identificador exclusivo para sua exportação). Os dados dos resultados da pesquisa são excluídos do local de armazenamento do Azure duas semanas após sua criação. 
     
 - Se sua organização usa um servidor proxy para se comunicar com a Internet, você precisa definir as configurações do servidor proxy no computador que você usa para exportar os resultados da pesquisa (para que a ferramenta exportar possa ser autenticada pelo seu servidor proxy). Para fazer isso, abra o arquivo *Machine. config* no local que corresponde à sua versão do Windows. 
     
@@ -178,11 +178,11 @@ Veja mais informações sobre como exportar resultados de pesquisa.
   
 [Exportar relatórios](#export-reports)
   
-[ExPortando itens parcialmente indexados](#exporting-partially-indexed-items)
+[Exportando itens parcialmente indexados](#exporting-partially-indexed-items)
 
-[ExPortando mensagens individuais ou arquivos PST](#exporting-individual-messages-or-pst-files)
+[Exportando mensagens individuais ou arquivos PST](#exporting-individual-messages-or-pst-files)
   
-[DesCriptografando mensagens criptografadas por RMS](#decrypting-rms-encrypted-messages)
+[Descriptografando mensagens criptografadas por RMS](#decrypting-rms-encrypted-messages)
 
 [Nomes de itens exportados](#filenames-of-exported-items)  
   
@@ -250,7 +250,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
     > [!NOTE]
     > Você pode apenas exportar esses documentos sem precisar exportar os resultados de pesquisa reais. Consulte [exportar um relatório de pesquisa de conteúdo](export-a-content-search-report.md). 
   
- ### <a name="exporting-partially-indexed-items"></a>ExPortando itens parcialmente indexados
+ ### <a name="exporting-partially-indexed-items"></a>Exportando itens parcialmente indexados
   
 - Se você estiver exportando itens de caixa de correio de uma pesquisa de conteúdo que retorna todos os itens de caixa de correio nos resultados da pesquisa (porque nenhuma palavra-chave está incluída na consulta de pesquisa), os itens parcialmente indexados não serão copiados para o arquivo PST que contém os itens não indexados. Isso ocorre porque todos os itens, incluindo qualquer item parcialmente indexado, são incluídos automaticamente nos resultados normais da pesquisa. Isso significa que os itens parcialmente indexados serão incluídos em um arquivo PST (ou como mensagens individuais) que contenham os outros itens indexados.
     
@@ -279,7 +279,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
 
 - Se itens parcialmente indexados forem retornados nos resultados da pesquisa (porque outras propriedades de um item parcialmente indexado corresponderam aos critérios de pesquisa), esses parcialmente indexados serão exportados com os resultados de pesquisa regulares. Portanto, se você optar por exportar tanto itens indexados quanto itens parcialmente indexados (selecionando **todos os itens, incluindo aqueles que têm formato não reconhecido, estão criptografados ou não foram indexados por outros motivos** exportar opção), os itens parcialmente indexados serão exportados com os resultados regulares serão listados no relatório Results. csv. Eles não serão listados no relatório de itens não indexados. csv.
     
- ### <a name="exporting-individual-messages-or-pst-files"></a>ExPortando mensagens individuais ou arquivos PST
+ ### <a name="exporting-individual-messages-or-pst-files"></a>Exportando mensagens individuais ou arquivos PST
   
 - Se o nome do caminho do arquivo de uma mensagem exceder o limite máximo de caracteres para o Windows, o nome do caminho do arquivo será truncado. Mas o nome do caminho do arquivo original será listado no manifesto e no ResultsLog.
     
@@ -287,11 +287,11 @@ Veja mais informações sobre como exportar resultados de pesquisa.
     
 - Se você optar por exportar mensagens de email em um arquivo PST que contenha todas as mensagens em uma única pasta, uma pasta **itens excluídos** e **pastas de pesquisa** serão incluídas no nível superior da pasta PST. Essas pastas ficarão vazias. 
   
- ### <a name="decrypting-rms-encrypted-messages"></a>DesCriptografando mensagens criptografadas por RMS
+ ### <a name="decrypting-rms-encrypted-messages"></a>Descriptografando mensagens criptografadas por RMS
   
 - Conforme explicado anteriormente, para descriptografar mensagens criptografadas por RMS ao exportá-las, você precisa exportar os resultados da pesquisa como mensagens individuais. Se você exportar resultados de pesquisa para um arquivo PST, as mensagens criptografadas por RMS permanecerão criptografadas.
     
-- O recurso de descriptografia do RMS na pesquisa de conteúdo não descriptografa mensagens criptografadas com o Office 365 Message Encryption (OME) quando você exporta os resultados da pesquisa. No enTanto, se uma mensagem criptografada com OME for enviada por um usuário em sua organização, a cópia da mensagem na pasta enviada do usuário não será criptografada e poderá ser exibida depois de ser exportada. No enTanto, se as mensagens criptografadas com o OME forem recebidas pelos usuários em sua organização, elas não serão descriptografadas após serem exportadas. Para obter mais informações sobre o OME, consulte [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?linkid=844966).
+- O recurso de descriptografia do RMS na pesquisa de conteúdo não descriptografa mensagens criptografadas com o Office 365 Message Encryption (OME) quando você exporta os resultados da pesquisa. No entanto, se uma mensagem criptografada com OME for enviada por um usuário em sua organização, a cópia da mensagem na pasta enviada do usuário não será criptografada e poderá ser exibida depois de ser exportada. No entanto, se as mensagens criptografadas com o OME forem recebidas pelos usuários em sua organização, elas não serão descriptografadas após serem exportadas. Para obter mais informações sobre o OME, consulte [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?linkid=844966).
     
 - As mensagens descriptografadas são identificadas no relatório **ResultsLog** . Este relatório contém uma coluna chamada **status**de decodificação e um valor **** de decodificado nesta coluna identifica as mensagens que foram descriptografadas. 
     
@@ -301,7 +301,7 @@ Veja mais informações sobre como exportar resultados de pesquisa.
     
 - Você não pode visualizar uma mensagem de email criptografada por RMS. Para exibir uma mensagem criptografada, você precisa exportá-la.
     
-- Se você precisar impedir que alguém descriptografe mensagens criptografadas por RMS, será necessário criar um grupo de função personalizado (copiando o grupo de função Gerenciador de descoberta eletrônica interno) e, em seguida, removendo a função de gerenciamento de desCriptografia do RMS do grupo de função personalizado. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como um membro do grupo de função personalizado.
+- Se você precisar impedir que alguém descriptografe mensagens criptografadas por RMS, será necessário criar um grupo de função personalizado (copiando o grupo de função Gerenciador de descoberta eletrônica interno) e, em seguida, removendo a função de gerenciamento de descriptografia do RMS do grupo de função personalizado. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como um membro do grupo de função personalizado.
   
  ### <a name="filenames-of-exported-items"></a>Nomes de itens exportados
   

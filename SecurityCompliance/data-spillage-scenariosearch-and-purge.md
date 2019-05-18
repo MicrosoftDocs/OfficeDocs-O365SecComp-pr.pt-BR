@@ -3,7 +3,7 @@ title: cenário derramamento de dados da série de soluções de descoberta elet
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Usar as ferramentas de descoberta eletrônica e de pesquisa do Office 365 para gerenciar e responder a um incidente de derramamento de dados em sua organização.
-ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b06dea5449d655cfe66072b3607f40c3bb7362da
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258914"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153793"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de soluções de descoberta eletrônica: cenário de derramamento de dados-pesquisa e limpeza
 
@@ -62,7 +62,7 @@ Veja como gerenciar um incidente de derramamento de dados:
 
 Dependendo da sua prática organizacional, você precisará controlar quem pode acessar a ocorrência de descoberta eletrônica usada para investigar um incidente de derramamento de dados e configurar os limites de conformidade. A maneira mais fácil de fazer isso é adicionar investigadores como membros de um grupo de função existente no centro de conformidade do & de segurança e, em seguida, adicionar o grupo de função como membro da ocorrência de descoberta eletrônica. Para obter informações sobre os grupos de função de descoberta eletrônica interna e como adicionar membros a uma ocorrência de descoberta eletrônica, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
   
-Você também pode criar um novo grupo de função que se alinhe às suas necessidades organizacionais. Por exemplo, você pode querer um grupo de dados derramamento investigadores na organização para acessar e colaborar em todas as ocorrências de derramamento de dados. Você pode fazer isso criando um grupo de função "investigador de dados derramamento", atribuindo as funções apropriadas (exportar, desCriptografar, reVisar, Visualizar, pesquisa de conformidade e gerenciamento de casos), adicionando os dados do derramamento Investigations ao grupo de função e, em seguida, adicionando o grupo de função como um membro da ocorrência de descoberta eletrônica derramamento de dados. ConFira [configurar limites de conformidade para investigações de descoberta eletrônica no Office 365](set-up-compliance-boundaries.md) para obter instruções detalhadas sobre como fazer isso. 
+Você também pode criar um novo grupo de função que se alinhe às suas necessidades organizacionais. Por exemplo, você pode querer um grupo de dados derramamento investigadores na organização para acessar e colaborar em todas as ocorrências de derramamento de dados. Você pode fazer isso criando um grupo de função "investigador de dados derramamento", atribuindo as funções apropriadas (exportar, descriptografar, revisar, Visualizar, pesquisa de conformidade e gerenciamento de casos), adicionando os dados do derramamento Investigations ao grupo de função e, em seguida, adicionando o grupo de função como um membro da ocorrência de descoberta eletrônica derramamento de dados. Confira [configurar limites de conformidade para investigações de descoberta eletrônica no Office 365](set-up-compliance-boundaries.md) para obter instruções detalhadas sobre como fazer isso. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Etapa 2: criar uma ocorrência de descoberta eletrônica
 

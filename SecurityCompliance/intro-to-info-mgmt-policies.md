@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2014
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Uma política de gerenciamento de informações é um conjunto de regras aplicáveis a um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e rastreiem o tempo em que um documento é retido ou quais ações os usuários podem realizar com esse conteúdo, dentre outras coisas. Essas políticas podem ajudar as organizações a cumprir regulamentações legais ou governamentais, ou podem simplesmente impor processos comerciais internos.
-ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254214"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152603"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introdução às políticas de gerenciamento de informações
 
@@ -56,7 +56,7 @@ Quando você adiciona uma política de conjunto de sites a um tipo de conteúdo 
   
 ![Link do modelo de política de tipo de conteúdo na página Definições do site](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
- **Criar uma política de gerenciamento de informações para um tipo de conteúdo de site na Galeria de tipos de conteúdo do site de nível superior e adicionar esse tipo de conteúdo a uma ou mais listas ou bibliotecas** Você também pode criar uma política de gerenciamento de informações diretamente para um tipo de conteúdo de site e, em seguida, associar uma instância desse tipo de conteúdo de site a várias listas ou bibliotecas. Se você criar uma política de gerenciamento de informações dessa forma, cada item no conjunto de sites desse tipo de conteúdo ou um tipo de conteúdo que herda desse tipo de conteúdo terá a política. No enTanto, se você criar uma política de gerenciamento de informações diretamente para um tipo de conteúdo de site, será mais difícil reutilizar essa política de gerenciamento de informações em outros conjuntos de sites, porque as políticas criadas dessa forma não podem ser exportadas. 
+ **Criar uma política de gerenciamento de informações para um tipo de conteúdo de site na Galeria de tipos de conteúdo do site de nível superior e adicionar esse tipo de conteúdo a uma ou mais listas ou bibliotecas** Você também pode criar uma política de gerenciamento de informações diretamente para um tipo de conteúdo de site e, em seguida, associar uma instância desse tipo de conteúdo de site a várias listas ou bibliotecas. Se você criar uma política de gerenciamento de informações dessa forma, cada item no conjunto de sites desse tipo de conteúdo ou um tipo de conteúdo que herda desse tipo de conteúdo terá a política. No entanto, se você criar uma política de gerenciamento de informações diretamente para um tipo de conteúdo de site, será mais difícil reutilizar essa política de gerenciamento de informações em outros conjuntos de sites, porque as políticas criadas dessa forma não podem ser exportadas. 
   
 ![Link tipos de conteúdo do site na página Configurações do site](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
@@ -64,7 +64,7 @@ Quando você adiciona uma política de conjunto de sites a um tipo de conteúdo 
   
 Observação para controlar quais políticas são usadas em um conjunto de sites, os administradores de conjunto de sites podem desabilitar a capacidade de definir recursos de política diretamente em um tipo de conteúdo. Quando essa restrição é ativada, os usuários que criam tipos de conteúdo são limitados à seleção de políticas na lista de políticas de conjunto de sites.
   
- **Criar uma política de gerenciamento de informações para uma lista ou biblioteca** Se sua organização precisar aplicar uma política de gerenciamento de informações específica a um conjunto muito limitado de conteúdo, você pode criar uma política de gerenciamento de informações que se aplica apenas a uma lista ou biblioteca individual. Esse método de criação de uma política de gerenciamento de informações é o menos flexível, porque a política se aplica apenas a um local e não pode ser exportada ou reutilizada para outros locais. No enTanto, às vezes você pode precisar criar políticas exclusivas de gerenciamento de informações com aplicabilidade limitada para tratar de situações específicas. 
+ **Criar uma política de gerenciamento de informações para uma lista ou biblioteca** Se sua organização precisar aplicar uma política de gerenciamento de informações específica a um conjunto muito limitado de conteúdo, você pode criar uma política de gerenciamento de informações que se aplica apenas a uma lista ou biblioteca individual. Esse método de criação de uma política de gerenciamento de informações é o menos flexível, porque a política se aplica apenas a um local e não pode ser exportada ou reutilizada para outros locais. No entanto, às vezes você pode precisar criar políticas exclusivas de gerenciamento de informações com aplicabilidade limitada para tratar de situações específicas. 
   
 ![Link de políticas de gerenciamento de informações na página de configurações da biblioteca de documentos](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   

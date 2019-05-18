@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Este tópico explica como configurar a Proteção do Exchange Online (EOP) da Microsoft. Se você foi direcionado do Assistente de domínios do Office 365, volte para o Assistente de domínios do Office 365 se você não quiser usar o Proteção do Exchange Online. Se você quiser mais informações sobre como configurar conectores, confira Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 496a249f1dc269151dad4b93d2b5cf30fa6ec91b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 93c6cbe41177103778bf96ca652d9d2889849372
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256589"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153053"
 ---
 # <a name="set-up-your-eop-service"></a>Configurar seu serviço EOP
 

@@ -1,10 +1,10 @@
 ---
-title: Criar um novo caso na descoberta eletrônica avançada (visualização)
+title: Criar um novo caso na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b06c377c4841bce16e0121177665d1884497eaaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: afd5fe71bfc78f5a28fe9bd57ce305650337f331
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244093"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151953"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Criar um novo caso na descoberta eletrônica avançada (visualização)    
+# <a name="create-a-new-case-in-advanced-ediscovery"></a>Criar um novo caso na descoberta eletrônica avançada  
 
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
@@ -29,7 +29,7 @@ ms.locfileid: "32244093"
     
 3. No centro de conformidade do & de segurança, clique em descoberta eletrônica **avançada do >**.
  
-4. Na página **descoberta eletrônica avançada (visualização)** , clique em **criar uma ocorrência**.
+4. Na página **descoberta eletrônica avançada** , clique em **criar uma ocorrência**.
     
 5. Na página novo submenu de **ocorrência de descoberta eletrônica** , dê um nome (obrigatório) e digite um número de caso e descrição opcionais. Observe que o nome do caso deve ser exclusivo em sua organização.
 
@@ -37,11 +37,11 @@ ms.locfileid: "32244093"
 
     - Clique em **Sim** para criar o caso e exiba a página de **configurações** no novo caso. Isso permite que você adicione membros à ocorrência.
     
-    - Clique em **não** para apenas criar o caso e exibi-lo na lista de casos na página **descoberta eletrônica avançada (visualização)** . Se você escolher essa opção, será adicionado como o único membro do caso e as configurações padrão de pesquisa e análise serão usadas. Você pode adicionar membros ou alterar as configurações a qualquer momento após a criação do caso.
+    - Clique em **não** para apenas criar o caso e exibi-lo na lista de casos na página **descoberta eletrônica avançada** . Se você escolher essa opção, será adicionado como o único membro do caso e as configurações padrão de pesquisa e análise serão usadas. Você pode adicionar membros ou alterar as configurações a qualquer momento após a criação do caso.
 
 7. Clique em **salvar** para criar o caso.
 
-    O novo caso é exibido na lista de casos na página **descoberta eletrônica avançada (visualização)** . 
+    O novo caso é exibido na lista de casos na página **descoberta eletrônica avançada** . 
 
 8. Para abrir uma ocorrência, clique no nome da ocorrência. 
 

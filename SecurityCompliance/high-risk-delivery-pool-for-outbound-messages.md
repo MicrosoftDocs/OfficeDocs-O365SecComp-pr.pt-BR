@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Quando o sistema de email de um cliente é comprometido por malware ou um ataque de spam mal-intencionado e está enviando spam de saída por meio do serviço de filtragem hospedado, isso pode resultar em endereços IP dos servidores de data center do Office 365 listados no bloco de terceiros contém.
-ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0581d4d0ac745f7520f73cd6b4465d72fa1dcf48
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253939"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152723"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de entrega de alto risco para mensagens de saída
 
@@ -45,10 +45,10 @@ As possíveis causas para um surto nas mensagens DSN incluem o seguinte:
     
 Todos esses problemas podem resultar em um aumento repentino no número de mensagens DSN processadas pelo serviço. Muitas vezes, essas mensagens DSN parecem ser spam para outros serviços e servidores de email.
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Configurar a política de spam de saída](configure-the-outbound-spam-policy.md)
   
-[PERGUNTAS FREQUENTEs sobre proteção antispam](anti-spam-protection-faq.md)
+[Perguntas frequentes sobre proteção antispam](anti-spam-protection-faq.md)
   
 

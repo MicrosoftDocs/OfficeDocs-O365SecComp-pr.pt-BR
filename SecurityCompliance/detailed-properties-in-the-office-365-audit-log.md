@@ -3,7 +3,7 @@ title: Propriedades detalhadas no log de auditoria do Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrições de propriedades adicionais incluídas em um registro de log de auditoria do Office 365.
-ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 69dfe34b0ace8061c3c41ae074582016fe61a55d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402959"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150333"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriedades detalhadas no log de auditoria do Office 365
 
@@ -34,7 +34,7 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 > [!TIP]
 > Você pode usar a consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade tenha sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para saber como fazer isso, confira a seção "dividir uma coluna por delimitador" em [dividir uma coluna de texto (consulta de força)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
   
-|**Propriedade**|**Descrição**|**Serviço do Office 365 que tem essa propriedade**|
+|**Property**|**Descrição**|**Serviço do Office 365 que tem essa propriedade**|
 |:-----|:-----|:-----|
 |Actor|A conta de usuário ou de serviço que executou a ação.|Azure Active Directory|
 |AddOnName|O nome de um complemento que foi adicionado, removido ou atualizado em uma equipe. O tipo de Complementos no Microsoft Teams é um bot, um conector ou uma guia.|Microsoft Teams|
@@ -42,14 +42,14 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 |AzureActiveDirectoryEventType|O tipo de evento do Azure Active Directory. Os valores a seguir indicam o tipo de evento.  <br/> **0** -indica um evento de login de conta.<br/> **1** -indica um evento de segurança do aplicativo do Azure.|Azure Active Directory|
 |ChannelGuid|A ID de um canal do Microsoft Teams. A equipe em que o canal está localizado é identificada pelas **** Propriedades teamname e **TeamGuid** .|Microsoft Teams|
 |ChannelName|O nome de um canal do Microsoft Teams. A equipe em que o canal está localizado é identificada pelas **** Propriedades teamname e **TeamGuid** .|Microsoft Teams|
-|Client|O dispositivo cliente, o so do dispositivo e o navegador do dispositivo usado para o evento de logon (por exemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
+|Cliente|O dispositivo cliente, o so do dispositivo e o navegador do dispositivo usado para o evento de logon (por exemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Informações sobre o cliente de email que foi usado para executar a operação, como uma versão do navegador, uma versão do Outlook e informações sobre dispositivos móveis|Exchange (atividade de caixa de correio)|
 |ClientIP|O endereço IP do dispositivo que foi usado quando a atividade foi registrada. O endereço IP é exibido em um formato de endereço IPv4 ou IPv6.|Exchange e Azure Active Directory|
 |ClientIPAddress|O mesmo que ClientIP.|SharePoint|
 |CreationTime|A data e hora no Tempo Universal Coordenado (UTC) de quando o usuário realizou a atividade.|Tudo|
-|DestinationFileExtension|A extensão de um arquivo que foi copiado ou movido. Essa propriedade é exibida somente para as atividades de usuário fileCopied e fileMoved.|SharePoint|
-|DestinationFileName|O nome do arquivo é copiado ou movido. Essa propriedade é exibida somente para as ações fileCopied e fileMoved.|SharePoint|
-|DestinationRelativeUrl|A URL da pasta de destino em que um arquivo é copiado ou movido. A combinação dos valores para **SiteUrl**, **DestinationRelativeURL**e **DestinationFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo que foi copiado. Essa propriedade é exibida somente para as atividades de usuário fileCopied e fileMoved.|SharePoint|
+|DestinationFileExtension|A extensão de um arquivo que foi copiado ou movido. Essa propriedade é exibida somente para as atividades de usuário filecopied e filemoved.|SharePoint|
+|DestinationFileName|O nome do arquivo é copiado ou movido. Essa propriedade é exibida somente para as ações filecopied e filemoved.|SharePoint|
+|DestinationRelativeUrl|A URL da pasta de destino em que um arquivo é copiado ou movido. A combinação dos valores para **SiteUrl**, **DestinationRelativeURL**e **DestinationFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo que foi copiado. Essa propriedade é exibida somente para as atividades de usuário filecopied e filemoved.|SharePoint|
 |EventSource|Identifica que um evento ocorreu no SharePoint. Os valores possíveis são **SharePoint** e **ObjectModel**.|SharePoint|
 |ExternalAccess|Para a atividade de administração do Exchange, especifica se o cmdlet foi executado por um usuário da sua organização, pela equipe do Microsoft Datacenter ou por uma conta de serviço do Datacenter ou por um administrador delegado. O valor **Falso** indica que o cmdlet foi executado por alguém em sua organização. O valor **Verdadeiro** indica que o cmdlet foi executado pela equipe do datacenter, por uma conta de serviço do datacenter ou por um administrador delegado.  <br/> Para a atividade de caixa de correio do Exchange, especifica se uma caixa de correio foi acessada por um usuário fora da sua organização.|Exchange|
 |ExtendedProperties|As propriedades estendidas para um evento do Azure Active Directory.|Azure Active Directory|
@@ -86,9 +86,9 @@ A tabela a seguir descreve as propriedades incluídas, dependendo do serviço do
 |UserID|O usuário que executou a ação (especificada na propriedade **Operation** ) que resultou no registro que está sendo registrado. Observe que os registros da atividade realizada por contas do sistema (como o Sharepoint\sistema ou o NT AUTHORITY\SYSTEM) também estão incluídos no log de auditoria.|Tudo|
 |UserKey|Uma ID alternativa para o usuário identificado na propriedade **userid** . Por exemplo, essa propriedade é preenchida com a identificação exclusiva do Passport (PUID) para eventos executados por usuários no SharePoint. Essa propriedade também pode especificar o mesmo valor que a propriedade **userid** de eventos que ocorrem em outros serviços e eventos executados por contas do sistema.|Tudo|
 |UserSharedWith|O usuário com o qual um recurso foi compartilhado. Essa propriedade será incluída se o valor da propriedade **Operation** for **sharingset**. Este usuário também está listado na coluna **compartilhado com** no relatório.|SharePoint|
-|UserType|O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário. <br/> <br/> **0** -um usuário regular. <br/>**2** -um administrador na sua organização do Office 365. <sup>1</sup> <br/>**3** -um administrador de dataCenter da Microsoft ou uma conta de sistema de datacenter. <br/>**4** -uma conta do sistema. <br/>**5** -um aplicativo. <br/>**6** -entidade de serviço.<br/>**7** -uma política personalizada.<br/>**8** -uma política do sistema.|Tudo|
+|UserType|O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário. <br/> <br/> **0** -um usuário regular. <br/>**2** -um administrador na sua organização do Office 365. <sup>1</sup> <br/>**3** -um administrador de datacenter da Microsoft ou uma conta de sistema de datacenter. <br/>**4** -uma conta do sistema. <br/>**5** -um aplicativo. <br/>**6** -entidade de serviço.<br/>**7** -uma política personalizada.<br/>**8** -uma política do sistema.|Tudo|
 |Versão|Indica o número da versão da atividade (identificado pela propriedade **Operation** ) registrada.|Tudo|
-|Workload|O serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são:  <br/> <br/>**SharePoint<br/>onedrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**|Tudo|
+|Carga de trabalho|O serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são:  <br/> <br/>**SharePoint<br/>onedrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**|Tudo|
 ||||
 
 > [!NOTE]

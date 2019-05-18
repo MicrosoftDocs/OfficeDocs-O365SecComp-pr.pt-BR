@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova ferramenta de investigações de dados (visualização) no Microsoft 365.
-ms.openlocfilehash: 648f223c136007e88a3beb6b58e692b758b5d27f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150893"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de versão para investigações de dados (visualização) no Microsoft 365
 
@@ -39,7 +39,7 @@ Você pode usar a ferramenta novas investigações de dados (visualização) no 
 
 - **Redigir, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você revisar documentos.
   
-- **IndexAção avançada** – se houver algum item parcialmente indexado, eles serão novamente reindexados por demanda, de forma que todos os dados estarão disponíveis para pesquisa.
+- **Indexação avançada** – se houver algum item parcialmente indexado, eles serão novamente reindexados por demanda, de forma que todos os dados estarão disponíveis para pesquisa.
 
 - **Correção de erro** : corrigir ou baixar erros de processamento. Isso inclui suporte de correção para tipos de arquivo grandes, arquivos protegidos por senha e outros problemas relacionados a erros de indexação. 
 

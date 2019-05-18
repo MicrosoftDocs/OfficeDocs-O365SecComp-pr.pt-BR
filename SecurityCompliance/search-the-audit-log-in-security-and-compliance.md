@@ -3,7 +3,7 @@ title: Pesquisar o log de auditoria no centro de conformidade do & de segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: 9bf288618d91d4084580c45d96d13e345af32ea9
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970304"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158783"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
 

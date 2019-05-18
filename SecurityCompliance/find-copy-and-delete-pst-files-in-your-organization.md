@@ -3,7 +3,7 @@ title: Usar a ferramenta de coleção PST para localizar, copiar e excluir arqui
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use a ferramenta de coleção PST da Microsoft para pesquisar a rede da sua organização para obter um inventário de arquivos PST espalhados por toda a organização. Após localizar arquivos PST, você pode usar a ferramenta de coleção PST para copiá-los em um local central para que possa importá-los para o Office 365.
-ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255331"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152773"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar a ferramenta de coleção PST para localizar, copiar e excluir arquivos PST em sua organização
 
@@ -65,7 +65,7 @@ A primeira etapa é executar a ferramenta de coleção PST para localizar arquiv
     
 - Compartilhamentos de arquivos de rede. A ferramenta pesquisa os compartilhamentos de arquivos de rede especificados. 
     
-ConFira a descrição do `Locations` parâmetro na tabela no procedimento a seguir para obter exemplos de sintaxe a serem usados para cada um desses tipos de local. 
+Confira a descrição do `Locations` parâmetro na tabela no procedimento a seguir para obter exemplos de sintaxe a serem usados para cada um desses tipos de local. 
   
 > [!IMPORTANT]
 > Você deve executar a ferramenta de coleção PST no modo de localização antes de poder executar outras ações, como bloquear, coletar ou excluir arquivos PST. 
@@ -74,7 +74,7 @@ ConFira a descrição do `Locations` parâmetro na tabela no procedimento a segu
     
 2. Vá para a pasta PSTCollectionTool (ou a pasta para a qual você extraiu o arquivo PSTCollectionTool. zip).
     
-3. Mude para o diretório dataCollector.
+3. Mude para o diretório DataCollector.
     
 4. Execute o seguinte comando para localizar arquivos PST em um local especificado.
     
@@ -82,7 +82,7 @@ ConFira a descrição do `Locations` parâmetro na tabela no procedimento a segu
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
-    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando dataCollector. exe para localizar arquivos PST. 
+    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando DataCollector. exe para localizar arquivos PST. 
     
     |Parâmetro * * * *|****Descrição****|Exemplos * * * *|
     |:-----|:-----|:-----|
@@ -95,7 +95,7 @@ ConFira a descrição do `Locations` parâmetro na tabela no procedimento a segu
     | `ExcludedLocations` <br/> |Esse parâmetro opcional especifica locais a serem ignorados durante uma operação de localização. Você pode excluir UOs, máquinas e compartilhamentos de arquivos de rede específicos. Por exemplo, você pode excluir máquinas, como o computador configurado como SQL Server (ou outros tipos de servidores de aplicativos), aos quais os usuários não têm acesso. Se você especificar mais de um local para exclusão, use um ponto-e-vírgula (;) para separar locais individuais. Não deixe de colocar os valores individuais desse parâmetro com aspas duplas ("").  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
     | `ForceRestart` <br/> |Essa opção opcional permite executar a ferramenta no modo de localização para um trabalho da coleção PST existente. Quando você usa a `ForceRestart` opção, os resultados da operação de localização anterior do trabalho serão descartados e a ferramenta verificará novamente os locais especificados e criará novos arquivos de log e de configuração.  <br/> | `-ForceRestart` <br/> |
    
-    Veja um exemplo da sintaxe do comando dataCollector. exe usando valores reais para cada parâmetro:
+    Veja um exemplo da sintaxe do comando DataCollector. exe usando valores reais para cada parâmetro:
     
     ```
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
@@ -103,7 +103,7 @@ ConFira a descrição do `Locations` parâmetro na tabela no procedimento a segu
 
     Após executar o comando, são exibidas mensagens de status detalhadas que mostram o andamento da localização de arquivos PST nos locais especificados. Após um tempo, uma mensagem de status final mostra o número total de arquivos PST que foram encontrados, se o trabalho foi concluído e se houve algum erro. As mesmas mensagens de status são copiadas para o arquivo. log.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>Resultados da execução do dataCollector. exe no modo localizar
+### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>Resultados da execução do DataCollector. exe no modo localizar
 
 Depois de executar com êxito a ferramenta de coleção PST no modo localizar, os arquivos a seguir são criados e armazenados nas pastas especificadas pelos `LogLocation` parâmetros `ConfigurationLocation` e. 
   
@@ -112,7 +112,7 @@ Depois de executar com êxito a ferramenta de coleção PST no modo localizar, o
 - **\>__ JobName localizar\<DateTimeStamp\>. csv-o arquivo CSV contém uma linha para cada \<** arquivo PST encontrado. As informações de cada PST incluem o computador onde o arquivo PST foi encontrado, o local do caminho completo do arquivo PST, o proprietário do arquivo PST e o tamanho (em kilobytes, KBs) do arquivo PST. Esse arquivo é criado na pasta especificada pelo `LogLocation` parâmetro. 
     
     > [!TIP]
-    > Use a ferramenta autoSoma no Excel para calcular o tamanho total (em KB) de todos os arquivos PST listados no arquivo CSV. Em seguida, você pode usar uma calculadora de conversão para converter o tamanho total em megabytes (MB) ou gigabytes (GB). 
+    > Use a ferramenta AutoSoma no Excel para calcular o tamanho total (em KB) de todos os arquivos PST listados no arquivo CSV. Em seguida, você pode usar uma calculadora de conversão para converter o tamanho total em megabytes (MB) ou gigabytes (GB). 
   
 - **\>__ JobName localizar\<DateTimeStamp\>. xml-o arquivo XML contém informações sobre os valores de parâmetro que são usados quando você executou a ferramenta \<** no modo localizar. Esse arquivo também contém informações sobre cada arquivo PST encontrado. Os dados nesse arquivo são usados quando você executa a ferramenta novamente para que o mesmo trabalho bloqueie, colete ou exclua os arquivos PST que foram encontrados. Esse arquivo é criado na pasta especificada pelo `ConfigurationLocation` parâmetro. 
     
@@ -142,7 +142,7 @@ Para bloquear o acesso a arquivos PST:
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
-    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando dataCollector. exe para bloquear a criação e a alteração de arquivos PST. 
+    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando DataCollector. exe para bloquear a criação e a alteração de arquivos PST. 
     
     |Parâmetro * * * *|****Descrição****|Exemplos * * * *|
     |:-----|:-----|:-----|
@@ -154,7 +154,7 @@ Para bloquear o acesso a arquivos PST:
     | `BlockChangesToFiles` <br/> |Use essa opção para impedir que os usuários alterem um arquivo PST. Quando você usa essa opção, a entrada de registro a seguir é `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` criada: e o valor de dados é definido como 1. Essa configuração do registro é criada nas máquinas da sua organização pelo GPO que é criado quando você executa a ferramenta de coleção PST no modo de bloqueio.  <br/> | `-BlockChangesToFiles` <br/> |
     | `BlockNewFiles` <br/> |Use essa opção para impedir que os usuários criem novos arquivos PST, abrir e importar arquivos PST para o Outlook e exportar arquivos PST do Outlook. Quando você usa essa opção, a entrada de registro a seguir é `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` criada: e o valor de dados é definido como 1. Essa configuração do registro é criada nas máquinas da sua organização pelo GPO que é criado quando você executa a ferramenta de coleção PST no modo de bloqueio.  <br/> | `-BlockNewFiles` <br/> |
    
-    Veja um exemplo da sintaxe do comando dataCollector. exe usando valores reais para cada parâmetro:
+    Veja um exemplo da sintaxe do comando DataCollector. exe usando valores reais para cada parâmetro:
 
     ```
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
@@ -179,7 +179,7 @@ A próxima etapa é copiar os arquivos PST que foram encontrados quando você ex
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    A tabela a seguir descreve os parâmetros e os valores necessários ao executar o comando dataCollector. exe para copiar os arquivos PST. 
+    A tabela a seguir descreve os parâmetros e os valores necessários ao executar o comando DataCollector. exe para copiar os arquivos PST. 
     
     |Parâmetro * * * *|****Descrição****|Exemplos * * * *|
     |:-----|:-----|:-----|
@@ -192,7 +192,7 @@ A próxima etapa é copiar os arquivos PST que foram encontrados quando você ex
     | `LogLocation` <br/> |Especifica a pasta para a qual o arquivo de log do modo de coleta será copiado. Esse é um parâmetro opcional. Se você não incluir, o arquivo de log será copiado para a pasta onde você baixou a ferramenta de coleção PST. Considere usar o mesmo local de log que você usou ao executar a ferramenta no modo localizar na etapa 1 para que todos os arquivos de log sejam salvos na mesma pasta.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |Essa opção opcional permite executar novamente a ferramenta no modo de coleção para um trabalho de coleção PST existente. Se você já executou a ferramenta no modo de coleta, mas, em seguida, executou a ferramenta novamente no `ForceRestart` modo localizar com o switch para verificar novamente os locais de arquivos PST, você pode usar essa opção para executar novamente a ferramenta no modo de coleta e copiar novamente os arquivos PST encontrados quando o examina novamente os locais. Ao usar a `ForceRestart` opção no modo de coleção, a ferramenta ignora qualquer operação de coleta anterior e tenta copiar os arquivos pst do zero.  <br/> | `-ForceRestart` <br/> |
    
-    Veja um exemplo da sintaxe da ferramenta dataCollector. exe usando valores reais para cada parâmetro:
+    Veja um exemplo da sintaxe da ferramenta DataCollector. exe usando valores reais para cada parâmetro:
     
     ```
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -200,13 +200,13 @@ A próxima etapa é copiar os arquivos PST que foram encontrados quando você ex
 
     Após executar o comando, são exibidas mensagens de status detalhadas que mostram o progresso da coleta de arquivos PST que foram encontrados na etapa 1. Após um tempo, uma mensagem de status final mostrará se houve algum erro e o local para o qual o log foi copiado. As mesmas mensagens de status são copiadas para o arquivo. log.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>Resultados da execução do dataCollector. exe no modo de coleta
+### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>Resultados da execução do DataCollector. exe no modo de coleta
 
-Após executar com êxito o dataCollector. exe no modo de coleta, os arquivos a seguir são criados e armazenados nas pastas especificadas pelos parâmetros `LogLocation` e. `ConfigurationLocation` 
+Após executar com êxito o DataCollector. exe no modo de coleta, os arquivos a seguir são criados e armazenados nas pastas especificadas pelos parâmetros `LogLocation` e. `ConfigurationLocation` 
   
 - **\>__ JobName coletar\<DateTimeStamp\>. log-o arquivo de log contém as mensagens de status \<** que foram exibidas. Esse arquivo é criado na pasta especificada pelo `LogLocation` parâmetro. 
     
-- **\>__ JobName coletar\<DateTimeStamp\>. xml-o arquivo XML contém apenas informações sobre os valores de parâmetro que, em que foram usados pela ferramenta, foram executados no \<** modo de coleta. Os dados nesse arquivo são usados quando você executa a ferramenta de dataCollector. exe novamente para excluir arquivos PST; consulte a [etapa 5](#step-5-delete-the-pst-files-found-on-your-network).
+- **\>__ JobName coletar\<DateTimeStamp\>. xml-o arquivo XML contém apenas informações sobre os valores de parâmetro que, em que foram usados pela ferramenta, foram executados no \<** modo de coleta. Os dados nesse arquivo são usados quando você executa a ferramenta de DataCollector. exe novamente para excluir arquivos PST; consulte a [etapa 5](#step-5-delete-the-pst-files-found-on-your-network).
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>Etapa 4: importar os arquivos PST para o Office 365
@@ -234,7 +234,7 @@ Depois que os arquivos PST encontrados e coletados tiverem sido importados para 
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando dataCollector. exe para excluir arquivos PST. 
+    A tabela a seguir descreve os parâmetros e seus valores obrigatórios quando você executa o comando DataCollector. exe para excluir arquivos PST. 
     
     |Parâmetro * * * *|****Descrição****|Exemplos * * * *|
     |:-----|:-----|:-----|
@@ -245,7 +245,7 @@ Depois que os arquivos PST encontrados e coletados tiverem sido importados para 
     | `LogLocation` <br/> |Especifica a pasta para a qual o arquivo de log do modo de exclusão será copiado. Esse é um parâmetro opcional. Se você não incluir, o arquivo de log será copiado para a pasta onde você baixou a ferramenta de coleção PST. Considere usar o mesmo local de log que você usou ao executar a ferramenta nos modos localizar e coletar na etapa 1 e etapa 3 para que todos os arquivos de log sejam salvos na mesma pasta.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |Essa opção opcional permite executar novamente a ferramenta no modo de exclusão de um trabalho da coleção PST existente. Se você já executou a ferramenta no modo de exclusão, mas executou a ferramenta novamente no modo localizar com o `ForceRestart` switch para examinar novamente os locais de arquivos PST, você pode usar essa opção para executar novamente a ferramenta no modo de exclusão e excluir os arquivos PST encontrados quando o re-SCA nned os locais. Ao usar a `ForceRestart` opção no modo de exclusão, a ferramenta ignora qualquer operação de exclusão anterior e tenta excluir os arquivos PST novamente.  <br/> | `-ForceRestart` <br/> 
 
-    Veja um exemplo da sintaxe da ferramenta dataCollector. exe usando valores reais para cada parâmetro:
+    Veja um exemplo da sintaxe da ferramenta DataCollector. exe usando valores reais para cada parâmetro:
     
     ```
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -253,9 +253,9 @@ Depois que os arquivos PST encontrados e coletados tiverem sido importados para 
    
     Após executar o comando, são exibidas mensagens de status detalhadas que mostram o progresso da exclusão dos arquivos PST que foram encontrados na etapa 1 e coletados na etapa 3. Após um tempo, uma mensagem de status final mostrará se houve algum erro e o local para o qual o log foi copiado. As mesmas mensagens de status são copiadas para o arquivo. log.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>Resultados da execução do dataCollector. exe no modo de exclusão
+### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>Resultados da execução do DataCollector. exe no modo de exclusão
 
-Após executar com êxito o dataCollector. exe no modo de exclusão, os arquivos a seguir são criados e armazenados na pasta especificada pelos parâmetros `LogLocation` e. `ConfigurationLocation` 
+Após executar com êxito o DataCollector. exe no modo de exclusão, os arquivos a seguir são criados e armazenados na pasta especificada pelos parâmetros `LogLocation` e. `ConfigurationLocation` 
   
 - **\>__ JobName Delete\<DateTimeStamp\>. log-o arquivo de log contém as mensagens de status \<** que foram exibidas. Esse arquivo é criado na pasta especificada pelo `LogLocation` parâmetro. 
     

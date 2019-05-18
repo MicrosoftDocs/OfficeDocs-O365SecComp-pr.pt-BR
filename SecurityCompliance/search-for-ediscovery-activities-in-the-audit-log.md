@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Saiba como pesquisar o log de auditoria do Office 365 em busca de eventos registrados quando os administradores de conformidade executam tarefas de pesquisa de conteúdo e casos de descoberta eletrônica no centro de conformidade do & de segurança.
-ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260959"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158803"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Pesquisar atividades de descoberta eletrônica no log de auditoria do Office 365
 
@@ -29,7 +29,7 @@ A pesquisa de conteúdo e as atividades relacionadas à descoberta eletrônica r
     
 - Executar ações de pesquisa de conteúdo, como Visualizar, exportar e excluir resultados de pesquisa
     
-- ConFigurando a filtragem de permissões para pesquisa de conteúdo
+- Configurando a filtragem de permissões para pesquisa de conteúdo
     
 - Gerenciando a função de administrador de descoberta eletrônica
     
@@ -98,11 +98,11 @@ A tabela a seguir descreve a pesquisa de conteúdo e as atividades relacionadas 
 |Exportação baixa de pesquisa de conteúdo  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Um usuário baixou os resultados de uma pesquisa de conteúdo para o computador local. Observe que uma **exportação iniciada da atividade de pesquisa de conteúdo** deve ser iniciada para que os resultados da pesquisa possam ser baixados.  <br/> |
 |Resultados visualizados da pesquisa de conteúdo  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Um usuário visualize os resultados de uma pesquisa de conteúdo.  <br/> |
 |Resultados excluídos da pesquisa de conteúdo  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Um usuário limpou os resultados de uma pesquisa de conteúdo executando o comando **New-ComplianceSearchAction-Purge** .  <br/> |
-|Análise de pesquisa de conteúdo reMovida  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de preparação de pesquisa de conteúdo (para preparar resultados de pesquisa para a descoberta eletrônica avançada do Office 365) foi excluída. Se a ação de preparação tiver menos de duas semanas, os resultados da pesquisa que foram preparados para descoberta eletrônica avançada foram excluídos da área de armazenamento do Microsoft Azure. Se a ação de preparação tiver mais de duas semanas, esse evento indicará que somente a ação de preparação correspondente foi excluída.  <br/> |
-|Exportação de pesquisa de conteúdo reMovida  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de exportação de pesquisa de conteúdo foi excluída. Se a ação de exportação tiver menos de duas semanas, os resultados da pesquisa que foram carregados para a área de armazenamento do Microsoft Azure foram excluídos. Se a ação de exportação tiver mais de duas semanas, esse evento indicará que somente a ação de exportação correspondente foi excluída.  <br/> |
+|Análise de pesquisa de conteúdo removida  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de preparação de pesquisa de conteúdo (para preparar resultados de pesquisa para a descoberta eletrônica avançada do Office 365) foi excluída. Se a ação de preparação tiver menos de duas semanas, os resultados da pesquisa que foram preparados para descoberta eletrônica avançada foram excluídos da área de armazenamento do Microsoft Azure. Se a ação de preparação tiver mais de duas semanas, esse evento indicará que somente a ação de preparação correspondente foi excluída.  <br/> |
+|Exportação de pesquisa de conteúdo removida  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de exportação de pesquisa de conteúdo foi excluída. Se a ação de exportação tiver menos de duas semanas, os resultados da pesquisa que foram carregados para a área de armazenamento do Microsoft Azure foram excluídos. Se a ação de exportação tiver mais de duas semanas, esse evento indicará que somente a ação de exportação correspondente foi excluída.  <br/> |
 |Membro removido da ocorrência de descoberta eletrônica  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Um usuário foi removido como membro de uma ocorrência de descoberta eletrônica.  <br/> |
 |Removidos resultados da visualização da pesquisa de conteúdo  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de visualização de pesquisa de conteúdo foi excluída.  <br/> |
-|Ação de limpeza reMovida executada na pesquisa de conteúdo  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de limpeza de pesquisa de conteúdo foi excluída.  <br/> |
+|Ação de limpeza removida executada na pesquisa de conteúdo  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de limpeza de pesquisa de conteúdo foi excluída.  <br/> |
 |Relatório de pesquisa removido  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |Uma ação de relatório de exportação de pesquisa de conteúdo foi excluída.  <br/> |
 |Análise de pesquisa de conteúdo iniciada  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Os resultados de uma pesquisa de conteúdo foram preparados para análise na descoberta eletrônica avançada.  <br/> |
 |Pesquisa de conteúdo iniciada  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Uma pesquisa de conteúdo foi iniciada. Quando você cria ou altera uma pesquisa de conteúdo usando a GUI do centro de conformidade do & de segurança, a pesquisa é iniciada automaticamente. Se você criar ou alterar uma pesquisa usando o cmdlet **New-ComplianceSearch** ou **set-ComplianceSearch** , será necessário executar o cmdlet **Start-ComplianceSearch** para iniciar a pesquisa.  <br/> |
@@ -167,7 +167,7 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 |Exclusões  <br/> |Locais de caixa de correio ou de site excluídos de uma pesquisa de conteúdo ou de um bloqueio em uma ocorrência de descoberta eletrônica.  <br/> |
 |ExtendedProperties  <br/> |Propriedades adicionais de uma pesquisa de conteúdo, uma ação de pesquisa de conteúdo ou uma retenção em caso de descoberta eletrônica, como o GUID do objeto e os parâmetros de cmdlet e cmdlet correspondentes que foram usados quando a atividade foi realizada.  <br/> |
 |Id  <br/> |A ID da entrada de relatório. A ID identifica exclusivamente a entrada do log de auditoria.  <br/> |
-|NonPIIParameters  <br/> |Uma lista dos parâmetros (sem qualquer valor) que foram usados com o cmdlet identificado na Propriedade Operation. Os parâmetros listados nesta propriedade são os mesmos que os listados na propriedade paraMeters.  <br/> |
+|NonPIIParameters  <br/> |Uma lista dos parâmetros (sem qualquer valor) que foram usados com o cmdlet identificado na Propriedade Operation. Os parâmetros listados nesta propriedade são os mesmos que os listados na Propriedade Parameters.  <br/> |
 |ObjectId  <br/> |O GUID ou o nome do objeto (por exemplo, uma pesquisa de conteúdo ou um caso de descoberta eletrônica) que foi criado, alterado ou excluído pela atividade listada na Propriedade Operation. Esse objeto também é identificado na coluna item nos resultados de pesquisa do log de auditoria.  <br/> |
 |ObjectType  <br/> |O tipo de objeto de descoberta eletrônica que o usuário criou, excluiu ou modificou; por exemplo, uma ação de pesquisa de conteúdo (Visualizar, exportar ou limpar), uma ocorrência de descoberta eletrônica ou uma pesquisa de conteúdo.  <br/> |
 |Operation  <br/> |O nome da operação que corresponde à atividade de descoberta eletrônica executada.  <br/> |
@@ -184,5 +184,5 @@ A tabela a seguir descreve as propriedades que são incluídas quando você clic
 |UserKey  <br/> |Uma ID alternativa para o usuário identificado na propriedade UserId. Para atividades de descoberta eletrônica, o valor dessa propriedade é geralmente o mesmo que a propriedade UserId.  <br/> |
 |UserServicePlan  <br/> |A assinatura do Office 365 usada por sua organização. Para atividades de descoberta eletrônica, essa propriedade geralmente está em branco.  <br/> |
 |UserType  <br/> |O tipo de usuário que executou a operação. Os valores a seguir indicam o tipo de usuário.  <br/> 0 um usuário regular. 2 um administrador na sua organização do Office 365. 3 uma conta de administrador de datacenter da Microsoft ou sistema de datacenter. 4 uma conta do sistema. 5 um aplicativo. 6 uma entidade de serviço. |
-|Version  <br/> |Indica o número da versão da atividade (identificado pela Propriedade Operation) registrada.  <br/> |
-|Workload  <br/> |O serviço do Office 365 em que a atividade ocorreu. Para atividades de descoberta eletrônica, o valor é **SecurityComplianceCenter**.  <br/> |
+|Versão  <br/> |Indica o número da versão da atividade (identificado pela Propriedade Operation) registrada.  <br/> |
+|Carga de trabalho  <br/> |O serviço do Office 365 em que a atividade ocorreu. Para atividades de descoberta eletrônica, o valor é **SecurityComplianceCenter**.  <br/> |

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,18 +13,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Fornece ajuda para os administradores que têm caracteres inválidos na configuração antispam e estão em problemas ao tentar usar o centro de conformidade &amp; de segurança.
-ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0e7dcb40d8e54045caa55083e2cbf0585a80869d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253949"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154153"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar caracteres inválidos em suas regras de filtro de spam e política de filtro de spam 
 
 Anteriormente, os administradores do Office 365 configuram e configuraram regras de filtro de spam e a política de filtro de spam usando o centro de administração do Exchange (Eat). Agora, use o centro de &amp; conformidade de segurança para gerenciar a configuração antispam. Os seguintes caracteres foram suportados no Eat, mas não têm suporte para uso no centro de &amp; conformidade de segurança.  
 
-**Caracteres inVálidos:**
+**Caracteres inválidos:**
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
@@ -52,7 +52,7 @@ Depois de identificar a política e as regras que contêm caracteres inválidos,
     ```  
 
   
- ## <a name="for-more-information"></a>Para obter mais informações
+ ## <a name="for-more-information"></a>Para saber mais
 
 [Gerenciamento de ameaças no centro &amp; de conformidade de segurança](threat-management.md)
   

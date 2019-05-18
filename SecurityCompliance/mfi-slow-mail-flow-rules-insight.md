@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Os administradores podem saber mais sobre as regras de fluxo de email lentos no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267209"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158583"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Insights de regras de fluxo de email – modo lento
 
@@ -33,7 +33,7 @@ As informações ajudarão você a identificar e ajustar as regras de fluxo de e
 
 Quando você clica em **Exibir detalhes**, um painel flutuante aparece onde você pode revisar a regra. No painel de submenu, também é possível clicar em **Exibir mensagens de amostra** para ver quais tipos de mensagens são impactados pela regra.
 
-![Painel de subMenu depois de clicar em Exibir detalhes em uma visão geral de regras de fluxo de emails no painel de fluxo de emails](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Painel de submenu depois de clicar em Exibir detalhes em uma visão geral de regras de fluxo de emails no painel de fluxo de emails](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
 ## <a name="see-also"></a>Confira também
 

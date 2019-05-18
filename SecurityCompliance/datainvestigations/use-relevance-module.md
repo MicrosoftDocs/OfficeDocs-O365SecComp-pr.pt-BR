@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3aa37a6778947934759eb652a9367559b9ef838b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2d7c3ae16b573af7351abda19edebde7ad7491b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257279"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150583"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Usar o módulo de relevância para analisar dados em evidência
 
@@ -75,7 +75,7 @@ Veja a seguir uma visão geral das diretrizes de treinamento e análise de relev
     
   - Os arquivos do Excel digitalizados no formato PDF devem ser tratados da mesma forma que os arquivos nativos do Excel ao marcar arquivos.
     
-  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações inCorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
+  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações incorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
     
   - As palavras-chave que foram definidas nas listas de palavras-chave serão exibidas em cores para ajudar o usuário a identificar arquivos relevantes durante a marcação.
     

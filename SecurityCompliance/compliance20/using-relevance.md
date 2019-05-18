@@ -1,10 +1,10 @@
 ---
-title: Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada (visualização)
+title: Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ae0546edbc9cb95808ba1843f835eab7dc460f0b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242112"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151490"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada (visualização)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Usar o módulo de relevância para analisar dados na descoberta eletrônica avançada
 
-Na descoberta eletrônica avançada (visualização), o módulo de relevância inclui o treinamento de relevância e a revisão de arquivos relacionados a um caso. Para usar o fluxo de trabalho de relevância, vá para gerenciar o conjunto de trabalho em um conjunto de trabalho e clique em mostrar relevância. Há algumas etapas que precisam ser concluídas para que você possa iniciar o fluxo de trabalho:
-- Processo: cada conjunto de carga adicionado ao conjunto de trabalho será exibido como um "contêiner" aqui. Você precisa processar esses documentos para poder adicioná-los ao módulo de relevância; Isso também é onde você pode marcá-los como semente ou pré-selecionado para um problema específico.
+Na descoberta eletrônica avançada, o módulo de relevância inclui o treinamento de relevância e a revisão de arquivos relacionados a uma ocorrência. Para usar o fluxo de trabalho de relevância, vá para gerenciar análise definida em um conjunto de análise e clique em mostrar relevância. Há algumas etapas que precisam ser concluídas para que você possa iniciar o fluxo de trabalho:
+
+- Processo: cada conjunto de carga adicionado ao conjunto de revisão será exibido como um "contêiner" aqui. Você precisa processar esses documentos para poder adicioná-los ao módulo de relevância; Isso também é onde você pode marcá-los como semente ou pré-selecionado para um problema específico.
+
 - Adicionar à relevância: em cargas \> de relevância, você pode adicionar documentos que foram processados à relevância para torná-los disponíveis para treinamento.
 
 O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
@@ -39,7 +41,7 @@ O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
     
 - **Ciclos de treinamento e acompanhamento**
     
-  - **Marca**: descoberta eletrônica avançada (versão prévia) aprende critérios de relevância específicos para cada problema com base na revisão iterativa do especialista e marcação de arquivos individuais.
+  - **Marca**: a descoberta eletrônica avançada aprende critérios de relevância específicos para cada problema com base na revisão iterativa do especialista e na marcação de arquivos individuais.
     
   - **Track**: calcular e exibir resultados provisórios do treinamento de relevância e monitorar a validade estatística do processo. 
     
@@ -47,9 +49,9 @@ O fluxo de trabalho de relevância é mostrado e descrito da seguinte maneira:
     
 - ****@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ Os resultados da análise aplicada ao caso inteiro são exibidos após o cálculo de lote, e os dados usados para fazer decisões de revisão
     
-- **Test**: os resultados podem ser testados para verificar a validade e a eficácia do processamento de descoberta eletrônica avançada (visualização).
+- **Test**: os resultados podem ser testados para verificar a validade e a eficácia do processamento avançado de descoberta eletrônica.
 
-- **Pesquisa**: depois que o fluxo de trabalho de relevância estiver concluído, você poderá usar a saída como ler percentil de um documento para o seu problema ao executar uma consulta dentro do seu conjunto de trabalho.
+- **Pesquisa**: depois que o fluxo de trabalho de relevância estiver concluído, você poderá usar a saída como ler percentil de um documento para o seu problema ao executar uma consulta no conjunto de análise.
     
 ## <a name="guidelines-for-relevance-training-and-review"></a>Diretrizes para treinamento e análise de relevância
 
@@ -67,7 +69,7 @@ Veja a seguir uma visão geral das diretrizes de treinamento e análise de relev
      
   - Ignorar o texto aplicado à relevância será removido no conteúdo do arquivo exibido no modo de exibição de texto de relevância. Se os valores para ignorar texto tiverem sido definidos após o treinamento de relevância já ter sido iniciado, o novo texto ignorado será aplicado a arquivos de exemplo criados a partir do ponto em que foi definido. O recurso Ignorar texto deve ser usado com cautela, pois seu uso pode reduzir o desempenho da análise de arquivos
     
-  - Use a opção **ignorar marcação** apenas quando necessário. A descoberta eletrônica avançada (prévia) não treina com base em arquivos ignorados. Em avaliação, se for difícil dizer se um arquivo é relevante, é melhor marcar como relevante (R) ou não relevante (NR) sempre que possível, em vez de selecionar **ignorar**. Quando a descoberta eletrônica avançada (prévia) avalia o treinamento, ela pode ser vista como esses tipos de arquivos foram processados.
+  - Use a opção **ignorar marcação** apenas quando necessário. A descoberta eletrônica avançada não treina com base em arquivos ignorados. Em avaliação, se for difícil dizer se um arquivo é relevante, é melhor marcar como relevante (R) ou não relevante (NR) sempre que possível, em vez de selecionar **ignorar**. Quando a descoberta eletrônica avançada avaliar o treinamento, ela poderá ser vista como esses tipos de arquivos foram processados.
     
   - Até mesmo arquivos com uma quantidade muito pequena de texto extraído deve ser marcado em treinamento como R/NR, e não como "ignorar", quando possível. 
     
@@ -79,7 +81,7 @@ Veja a seguir uma visão geral das diretrizes de treinamento e análise de relev
     
   - Os arquivos do Excel digitalizados no formato PDF devem ser tratados da mesma forma que os arquivos nativos do Excel ao marcar arquivos.
     
-  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações inCorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
+  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações incorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
     
   - As palavras-chave que foram definidas nas listas de palavras-chave serão exibidas em cores para ajudar o usuário a identificar arquivos relevantes durante a marcação.
     
@@ -144,4 +146,4 @@ Embora a descoberta eletrônica avançada orienta você durante o processo, com 
   
 [Testando análise de relevância](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Consulta no conjunto de trabalho](working-set-search.md)
+[Consultar os dados em um conjunto de revisão](review-set-search.md)

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/10/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: A filtragem de spam de saída está sempre habilitada se você utilizar o serviço de envio de email de saída, protegendo assim as organizações que utilizam o serviço e seus destinatários desejados.
-ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 517a78338f9a9e1c3611f78daf6f57e37c67f165
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258399"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153823"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar a política de spam de saída
 
@@ -36,7 +36,7 @@ Tempo estimado para conclusão: 5 minutos
   
 Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o tópico "entrada antispam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de administração do Exchange**.
+Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de Administração do Exchange**.
   
 O procedimento a seguir também pode ser realizado pelo PowerShell remoto. Use o cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) para analisar suas configurações e o cmdlet [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) para editar as configurações de política de spam de saída. Para saber como usar o Windows PowerShell para se conectar à proteção do Exchange Online, confira [conectar-se ao PowerShell do Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290). Para saber como usar o Windows PowerShell para se conectar ao Exchange Online, confira [Connect to Exchange Online Using Remote PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
   
@@ -66,6 +66,6 @@ Utilize o procedimento a seguir para editar a política de spam de saída padrã
 
 [Pool de entrega de alto risco para mensagens de saída](high-risk-delivery-pool-for-outbound-messages.md)
   
-[PERGUNTAS FREQUENTEs sobre proteção antispam](anti-spam-protection-faq.md)
+[Perguntas frequentes sobre proteção antispam](anti-spam-protection-faq.md)
   
 

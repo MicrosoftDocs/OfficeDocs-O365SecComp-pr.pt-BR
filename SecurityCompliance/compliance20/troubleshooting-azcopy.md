@@ -1,10 +1,10 @@
 ---
-title: Solucionar problemas de AzCopy na descoberta eletrônica avançada (versão prévia)
+title: Solucionar problemas de AzCopy na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241068"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151513"
 ---
-# <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>Solucionar problemas de AzCopy na descoberta eletrônica avançada (versão prévia)
+# <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy na descoberta eletrônica avançada
 
-Ao carregar dados não-Office 365 ou documentos para correção de erros na descoberta eletrônica avançada (versão prévia), a interface do usuário fornece um comando do AzCopy do Azure que contém parâmetros com o local onde os arquivos que você deseja carregar estão armazenados e o Azure local de armazenamento no qual os arquivos serão carregados. Para carregar seus documentos, copie esse comando e execute-o em um prompt de comando no computador local.  A captura de tela a seguir mostra um exemplo de um comando do AzCopy:
+Ao carregar dados não-Office 365 ou documentos para correção de erros na descoberta eletrônica avançada, a interface do usuário fornece um comando do AzCopy do Azure que contém parâmetros com o local onde os arquivos que você deseja carregar estão armazenados e o armazenamento do Azure local para o qual os arquivos serão carregados. Para carregar seus documentos, copie esse comando e execute-o em um prompt de comando no computador local.  A captura de tela a seguir mostra um exemplo de um comando do AzCopy:
 
 ![Carregar arquivos que não são do Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
-Na maioria dos casos, o comando fornecido funcionará quando você executá-lo. No enTanto, pode haver casos em que o comando exibido não seja executado com êxito. Veja alguns motivos possíveis.
+Na maioria dos casos, o comando fornecido funcionará quando você executá-lo. No entanto, pode haver casos em que o comando exibido não seja executado com êxito. Veja alguns motivos possíveis.
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>O AzCopy não está instalado no computador local ou não está instalado no local padrão
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c2957c88217bce4c9a34f8d3f9a9e291f1223cc9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78865efc5c10ebcff9742f922f675b637bb9b2b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241238"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151463"
 ---
 # <a name="use-the-communications-editor"></a>Usar o editor de comunicações
 
@@ -39,7 +39,7 @@ Você pode usar campos de mala direta por email selecionando os ícones do **cam
 
 | Nome do campo                  | Detalhes do campo | 
 | :------------------- | :------------------- |
-| Nome para Exibição  | O nome e o sobrenome do responsáveis. | 
+| Nome de exibição  | O nome e o sobrenome do responsáveis. | 
 | Link de confirmação | Um link personalizado para registrar a confirmação de cada um dos responsáveis.|                 |
 | Link do portal     | Um link personalizado para o portal de conformidade do responsáveis.|                |
 | Responsável pela emissão                   | O endereço de email do responsável pela emissão especificado.|                   |

@@ -3,7 +3,7 @@ title: Pesquisa de conteúdo no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade do Office 365 ou Microsoft 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo que possa estar relacionado a uma solicitação de entidade de dados do RGPD.
-ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4661f724a646eaaf522485726b2cb0475483e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264041"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153923"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
@@ -44,7 +44,7 @@ Após executar uma pesquisa de conteúdo, o número de locais de conteúdo e um 
 
 Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas e visualizar e exportar resultados de pesquisa, um administrador, um responsável pela conformidade ou um gerente de descoberta eletrônica deve ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do _AMP_ de segurança. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando seu endereço de email e senha do Office 365.
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando seu endereço de email e senha do Office 365.
     
 2. Clique em **pesquisa de conteúdo**de **pesquisa** \> .
     
@@ -97,7 +97,7 @@ Para ter acesso à página de **pesquisa de conteúdo** para executar pesquisas 
     
 8. Clique em **salvar** para iniciar a pesquisa. 
     
-    Depois de salvar e executar a pesquisa, os resultados retornados pela pesquisa são exibidos no painel de resultados. Dependendo de como você tem a configuração de visualização configurada, os resultados da pesquisa são exibidos ou você precisa clicar em **Visualizar resultados** para visualizá-los. ConFira a próxima seção para obter detalhes. 
+    Depois de salvar e executar a pesquisa, os resultados retornados pela pesquisa são exibidos no painel de resultados. Dependendo de como você tem a configuração de visualização configurada, os resultados da pesquisa são exibidos ou você precisa clicar em **Visualizar resultados** para visualizá-los. Confira a próxima seção para obter detalhes. 
     
 Para acessar a pesquisa de conteúdo novamente ou acessar outras pesquisas de conteúdo listadas na página de **pesquisa de conteúdo** , selecione a pesquisa e clique em **abrir**. 
   
@@ -138,7 +138,7 @@ Para exibir as estatísticas de pesquisa:
     
   - **Resumo** : exibe as estatísticas de cada tipo de local de conteúdo pesquisado. Esse conteúdo é o número de locais de conteúdo que continham itens que corresponderam à consulta de pesquisa e o número total e o tamanho dos itens de resultado de pesquisa. Essa é a configuração padrão.
     
-  - **Consultas** – exibe estatísticas sobre a consulta de pesquisa. Isso inclui o tipo de local de conteúdo ao qual as estatísticas de consulta se aplicam, parte da consulta de pesquisa à qual as estatísticas são aplicáveis (Observe que **principal** indica a consulta de pesquisa inteira), o número de locais de conteúdo que contêm itens que corresponder à consulta de pesquisa e o número total e o tamanho e os itens que foram encontrados (no local de conteúdo especificado) que correspondem à consulta de pesquisa. Observe que as estatísticas de itens não indexados (também chamados de itens parcialmente indexados) também são exibidas. No enTanto, apenas itens parcialmente indexados de caixas de correio são incluídos nas estatísticas. Itens parcialmente indexados do SharePoint e do OneDrive não estão incluídos nas estatísticas.
+  - **Consultas** – exibe estatísticas sobre a consulta de pesquisa. Isso inclui o tipo de local de conteúdo ao qual as estatísticas de consulta se aplicam, parte da consulta de pesquisa à qual as estatísticas são aplicáveis (Observe que **principal** indica a consulta de pesquisa inteira), o número de locais de conteúdo que contêm itens que corresponder à consulta de pesquisa e o número total e o tamanho e os itens que foram encontrados (no local de conteúdo especificado) que correspondem à consulta de pesquisa. Observe que as estatísticas de itens não indexados (também chamados de itens parcialmente indexados) também são exibidas. No entanto, apenas itens parcialmente indexados de caixas de correio são incluídos nas estatísticas. Itens parcialmente indexados do SharePoint e do OneDrive não estão incluídos nas estatísticas.
     
   - **Principais locais** – exibe estatísticas sobre o número de itens que correspondem à consulta de pesquisa em cada local de conteúdo pesquisado. Os principais locais de 1.000 são exibidos.
     
@@ -182,7 +182,7 @@ Consulte as seções a seguir para obter mais informações sobre pesquisas de c
   
 [Itens parcialmente indexados](#partially-indexed-items)
   
-[ExPortando dados do myAnalytics e outros aplicativos do Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications)
+[Exportando dados do myAnalytics e outros aplicativos do Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications)
   
 ### <a name="content-search-limits"></a>Limites de pesquisa de conteúdo
 
@@ -193,7 +193,7 @@ Consulte as seções a seguir para obter mais informações sobre pesquisas de c
 |**Número de caixas de correio**|**Tempo médio de pesquisa**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1.000  <br/> |45 segundos  <br/> |
+|1,000  <br/> |45 segundos  <br/> |
 |10.000  <br/> |4 minutos  <br/> |
 |25.000  <br/> |10 minutos  <br/> |
 |50.000  <br/> |20 minutos  <br/> |
@@ -276,7 +276,7 @@ Lembre-se do seguinte ao pesquisar conteúdo no Microsoft Teams e nos grupos do 
     > [!NOTE]
     > A capacidade de Pesquisar o wiki para uma equipe ou um canal da Microsoft (quando você pesquisa o site do SharePoint da equipe) foi lançada em 22 de junho de 2017. Páginas wiki que foram salvas ou atualizadas nessa data ou após estão disponíveis para serem pesquisadas. Páginas wiki salvas ou atualizadas pela última vez antes da data não estão disponíveis para pesquisa. 
  
-- As informações reSumidas para reuniões e chamadas em um canal do Microsoft Teams também são armazenadas nas caixas de correio de usuários que discaram para a reunião ou chamada. Isso significa que você pode usar a pesquisa de conteúdo para pesquisar esses registros de resumo. As informações de resumo incluem: 
+- As informações resumidas para reuniões e chamadas em um canal do Microsoft Teams também são armazenadas nas caixas de correio de usuários que discaram para a reunião ou chamada. Isso significa que você pode usar a pesquisa de conteúdo para pesquisar esses registros de resumo. As informações de resumo incluem: 
   - Data, hora de início, hora de término e duração de uma reunião ou chamada
 
   - A data e a hora em que cada participante ingressou ou saiu da reunião ou chamada
@@ -350,9 +350,9 @@ Além disso, há suporte para os seguintes tipos de contêiner de arquivos. Voc�
     
 - Se um item parcial corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. Se um item parcial for excluído pelos critérios de pesquisa, ele também não será incluído no número estimado de itens parcialmente indexados. Para obter mais informações, consulte [itens parcialmente indexados na pesquisa de conteúdo no Office 365](partially-indexed-items-in-content-search.md).
     
-### <a name="exporting-data-from-myanalytics-and-other-office-365-applications"></a>ExPortando dados do myAnalytics e outros aplicativos do Office 365
+### <a name="exporting-data-from-myanalytics-and-other-office-365-applications"></a>Exportando dados do myAnalytics e outros aplicativos do Office 365
 
-- Dados do myAnalytics (como insights sobre como os usuários passam o tempo com base nos dados de email e calendário em suas caixas de correio) e os dados de outros aplicativos do Office 365 são salvos em um local oculto (em uma sub-árvore não-IPM) na caixa de correio baseada em nuvem do usuário. Após executar uma pesquisa de conteúdo, esses dados não são incluídos nos resultados de pesquisa estimados, nas estatísticas de consulta e não estão disponíveis para visualização. No enTanto, esses dados serão exportados quando você exportar os resultados de uma pesquisa.
+- Dados do myAnalytics (como insights sobre como os usuários passam o tempo com base nos dados de email e calendário em suas caixas de correio) e os dados de outros aplicativos do Office 365 são salvos em um local oculto (em uma sub-árvore não-IPM) na caixa de correio baseada em nuvem do usuário. Após executar uma pesquisa de conteúdo, esses dados não são incluídos nos resultados de pesquisa estimados, nas estatísticas de consulta e não estão disponíveis para visualização. No entanto, esses dados serão exportados quando você exportar os resultados de uma pesquisa.
     
 - Os dados do myAnalytics e os dados de outros aplicativos do Office 365 são exportados para uma pasta chamada "outros dados do Office 365". Essa pasta inclui subpastas para cada usuário.
   

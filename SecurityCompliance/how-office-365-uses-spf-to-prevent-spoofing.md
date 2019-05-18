@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: Este artigo descreve como o Office 365 usa o registro TXT SPF (Sender Policy Framework) no DNS para garantir que os sistemas de email de destino confiem em mensagens enviadas do seu domínio personalizado. Isso se aplica a mensagens de saída enviadas do Office 365. As mensagens enviadas do Office 365 para um destinatário no Office 365 sempre passarão a SPF.'
-ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9c52f5d0f83ce90b4c46e0d377afcd02eadf224b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256532"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152783"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Como o Office 365 usa o Sender Policy Framework (SPF) para evitar falsificação
 
@@ -241,7 +241,7 @@ Quando você inclui domínios de terceiros no seu registro TXT SPF, precisa conf
 
 Você pode usar nslookup para visualizar seus registros DNS, incluindo seu registro TXT SPF. Ou, se preferir, há uma série de ferramentas online gratuitas disponíveis que você pode usar para visualizar o conteúdo do seu registro TXT SPF. Ao examinar seu registro TXT SPF e seguir a cadeia de redirecionamentos e instruções de inclusão, é possível determinar quantas pesquisas de DNS o registro exige. Algumas ferramentas online até mesmo contarão e exibirão essas pesquisas para você. Manter o controle desse número ajudará a evitar que mensagens enviadas da sua organização disparem um erro permanente, chamado de permerror, do servidor de recebimento.
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="SPFTroubleshoot"> </a>
 
 Precisa de ajuda para adicionar o registro TXT SPF? Estão disponíveis [instruções passo a passo](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) para atualizar registros TXT SPF em uma série de registradores de domínios conhecidos. [Cabeçalhos de mensagem antispam](anti-spam-message-headers.md) inclui os campos de cabeçalho e sintaxe usados pelo Office 365 para verificações do SPF. 

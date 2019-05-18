@@ -3,18 +3,18 @@ title: Visão superior do status do fluxo de emails do domínio
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre a visão geral do status do fluxo de email de domínio no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 851ef1438f111a36f69563670bbd0835a9956edc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868581"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158643"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Visão superior do status do fluxo de emails do domínio
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b78a8e45ffb0833dec5116ff637cd0930387ebfe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258859"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150853"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correção de erro ao processar dados de uma investigação
 
@@ -30,7 +30,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 ## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Criando uma sessão de correção de erro para corrigir arquivos com erros de processamento
 
 >[!NOTE]
->Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correÇões de **erro** no menu suspenso **Exibir** .
+>Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correções de **erro** no menu suspenso **Exibir** .
 
 1. Na guia **processamento** em um caso de investigações de dados (visualização), selecione **erros** no menu suspenso **Exibir** .
 

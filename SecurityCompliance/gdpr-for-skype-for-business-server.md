@@ -3,17 +3,17 @@ title: RGPD para Skype for Business Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Saiba mais sobre como atender aos requisitos de RGPD no Skype for Business Server e no Lync Server.
-ms.openlocfilehash: 3452a6cf6ffdd16f18b7fbc0876d2ae424a6fc76
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 835876af133dfbce056ee765336c9e981732226d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254869"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154383"
 ---
 # <a name="gdpr-for-skype-for-business-server-and-lync-server"></a>RGPD para Skype for Business Server e Lync Server
 

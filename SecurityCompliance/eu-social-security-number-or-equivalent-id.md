@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o número de segurança social da UE ou o tipo de informação confidencial de ID equivalente. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255549"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154483"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de seguro social da UE ou ID equivalente
 
@@ -88,11 +88,11 @@ código de seguro
   
 código de seguro #
   
-socialsecurityno #
+socialsecurityno#
   
 sozialversicherungsnummer
   
-soziale Sicherheit Kein
+soziale sicherheit kein
   
 versicherungsnummer
   
@@ -145,7 +145,7 @@ número nacional
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -153,25 +153,25 @@ es
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 nacional Numéro
   
 numéro de sécurité
   
-Numéro d'assuré
+numéro d'assuré
   
 nacional de identificação
   
-identifiantnational #
+identifiantnational#
   
-numéronational #
+numéronational#
   
 ## <a name="croatia"></a>Croácia
 
@@ -228,7 +228,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -236,17 +236,17 @@ es
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 NIB
   
-Osobni identifikacijski broj
+osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>República Tcheca
 
@@ -307,7 +307,7 @@ número de identificação pessoal
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -317,13 +317,13 @@ número nacional
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 rč
   
 rodné číslo
   
-RODNE cislo
+rodne cislo
   
 ## <a name="denmark"></a>Dinamarca
 
@@ -380,7 +380,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -390,7 +390,7 @@ número nacional
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 CPR-Nummer
   
@@ -412,7 +412,7 @@ Uma combinação de 11 caracteres no formato especificado:
     
   - Símbolo de adição
     
-  - Símbolo de subTração
+  - Símbolo de subtração
     
   - A letra "A" (não diferencia maiúsculas de minúsculas)
     
@@ -461,7 +461,7 @@ número de identidade
   
 número de ID nacional da finlandês
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -479,21 +479,21 @@ henkilötunnus
   
 yksilöllinen henkilökohtainen tunnistenumero
   
-ainutlaatuinen henkilökohtainen Tunnus
+ainutlaatuinen henkilökohtainen tunnus
   
 identiteetti numero
   
-Suomen Kansallinen henkilötunnus
+suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
 tunnusnumero
   
-Kansallinen Tunnus numero
+kansallinen tunnus numero
   
-Hetu
+hetu
   
 ## <a name="france"></a>França
 
@@ -554,17 +554,17 @@ número de seguro social de seguridade
   
 social security number
   
-socialSecurityNumber #
+socialsecuritynumber#
   
-hssn #
+hssn#
   
 socialsecuritynno
   
 hssn
   
-Taj
+taj
   
-Taj #
+taj#
   
 es
   
@@ -582,7 +582,7 @@ hozzáadottérték adó
   
 áfa szám
   
-Magyar áfa szám
+magyar áfa szám
   
 ## <a name="portugal"></a>Portugal
 
@@ -667,9 +667,9 @@ personnummer
   
 identifikationsnumret
   
-personnummer #
+personnummer#
   
-identifikationsnumret #
+identifikationsnumret#
   
 ## <a name="see-also"></a>Confira também
 
