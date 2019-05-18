@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 923a94b5d1fc2852869cb7dfc8f54af29a1e5b6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0ae46b80a1424db60246d0b5739b2c0fca8ee01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259849"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151064"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="ef59a-102">Anotar e redigir documentos em evidência</span><span class="sxs-lookup"><span data-stu-id="ef59a-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="eb99c-102">Anotar e redigir documentos em evidência</span><span class="sxs-lookup"><span data-stu-id="eb99c-102">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="ef59a-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="ef59a-103">Content coming soon.</span></span>
+<span data-ttu-id="eb99c-103">Conteúdo em breve.</span><span class="sxs-lookup"><span data-stu-id="eb99c-103">Content coming soon.</span></span>
