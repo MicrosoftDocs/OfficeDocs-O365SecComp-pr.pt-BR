@@ -1,9 +1,9 @@
 ---
-title: ReProvando o aplicativo visualizador de criptografia de mensagens do Office 365
+title: Reprovando o aplicativo visualizador de criptografia de mensagens do Office 365
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: No dia 15 de agosto de 2018, iremos remover o aplicativo móvel do Visualizador de criptografia de mensagens do Office 365 (OME) do Android e dos repositórios da Apple. O aplicativo móvel Office 365 Message Encryption Viewer era necessário para ler mensagens de email e anexos que foram criptografados com a versão anterior do OME em telefones Apple e Android. Além de remover o aplicativo OME Viewer, não estamos fazendo outras alterações na versão anterior do OME.
-ms.openlocfilehash: 82f28249e6b9911faea866f5a3574b635e45156c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3b5c92d4fa700a1ae8d7b104e33100301cf43506
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256969"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153343"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>ReProvando o aplicativo visualizador de criptografia de mensagens do Office 365
+# <a name="deprecating-office-365-message-encryption-viewer-app"></a>Reprovando o aplicativo visualizador de criptografia de mensagens do Office 365
 
 No dia 15 de agosto de 2018, removemos o aplicativo móvel do Visualizador de criptografia de mensagens do Office 365 (OME) do Android e dos repositórios da Apple. O aplicativo móvel Office 365 Message Encryption Viewer era necessário para ler mensagens de email e anexos que foram criptografados com a versão anterior do OME em telefones Apple e Android. Além de remover o aplicativo OME Viewer, não estamos fazendo outras alterações na versão anterior do OME.
   
@@ -33,7 +33,7 @@ Conforme anunciado em setembro de 2017, lançamos uma nova versão da [criptogra
 
 - [Controle para descriptografar anexos](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
-Com essa alteração, os usuários não poderão mais baixar o aplicativo móvel do Office 365 Message Encryption Viewer, começando em 1º de agosto. Como resultado, os destinatários de email podem não conseguir ler mensagens criptografadas com a versão anterior do OME em alguns dispositivos móveis Android e Apple. No enTanto, eles ainda poderão ler essas mensagens em computadores pessoais (por meio de navegadores da área de trabalho). Os usuários que já baixaram o aplicativo continuarão a ser capazes de usá-lo.
+Com essa alteração, os usuários não poderão mais baixar o aplicativo móvel do Office 365 Message Encryption Viewer, começando em 1º de agosto. Como resultado, os destinatários de email podem não conseguir ler mensagens criptografadas com a versão anterior do OME em alguns dispositivos móveis Android e Apple. No entanto, eles ainda poderão ler essas mensagens em computadores pessoais (por meio de navegadores da área de trabalho). Os usuários que já baixaram o aplicativo continuarão a ser capazes de usá-lo.
   
 ## <a name="why-this-change-was-made"></a>Por que essa alteração foi feita
 

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 04/27/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - o365_security_incident_response
@@ -14,19 +14,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Esta solução informa o que os ataques de segurança da Cyber mais comuns podem parecer no Office 365 e como respondê-los
-ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262353"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157668"
 ---
 # <a name="office-365-security-incident-response"></a>Resposta a incidentes de segurança do Office 365
 
  **Resumo:** Esta solução informa quais são os indicadores para os ataques mais comuns de segurança da CyberSource no Office 365, como confirmar positivamente qualquer ataque e como respondê-lo.
   
 ## <a name="overview"></a>Visão geral
-Nem todos os ataques de Cyber podem ser frustrados. Os inVasores estão constantemente procurando novas fraquezas em sua estratégia defensiva ou estão explorando os antigos. Saber como reconhecer um ataque permite que você responda com mais rapidez, o que reduz a duração do incidente de segurança.
+Nem todos os ataques de Cyber podem ser frustrados. Os invasores estão constantemente procurando novas fraquezas em sua estratégia defensiva ou estão explorando os antigos. Saber como reconhecer um ataque permite que você responda com mais rapidez, o que reduz a duração do incidente de segurança.
 
 Esta série de artigos ajuda você a entender o que um tipo específico de ataque pode parecer no Office 365 e oferece etapas que podem ser tomadas para responder. Eles são pontos de entrada rápida para entender:
  
@@ -36,7 +36,7 @@ Esta série de artigos ajuda você a entender o que um tipo específico de ataqu
 - Etapas a serem executadas para cortar o ataque e proteger melhor sua organização no futuro.
 - Links para informações detalhadas sobre cada tipo de ataque.
 
-ConFira aqui mensalmente quando mais artigos forem adicionados com o tempo.
+Confira aqui mensalmente quando mais artigos forem adicionados com o tempo.
 
 ## <a name="detect-and-remediate-articles"></a>Detectar e corrigir artigos
 

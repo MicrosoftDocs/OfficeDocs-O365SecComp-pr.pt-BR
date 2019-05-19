@@ -4,27 +4,27 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
-description: Sua organização pode ser necessária para reter documentos por um período de tempo por causa de conformidade, legal ou outras necessidades de negócios. No enTanto, se sua organização mantém documentos mais do que o necessário, você cria um risco legal desnecessário. Com uma política de exclusão de documentos, você pode reduzir o risco de forma proativa, excluindo documentos em um site após um período específico de tempo — por exemplo, você pode excluir documentos nos sites dos usuários do OneDrive for Business cinco anos depois que os documentos foram criados.
-ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Sua organização pode ser necessária para reter documentos por um período de tempo por causa de conformidade, legal ou outras necessidades de negócios. No entanto, se sua organização mantém documentos mais do que o necessário, você cria um risco legal desnecessário. Com uma política de exclusão de documentos, você pode reduzir o risco de forma proativa, excluindo documentos em um site após um período específico de tempo — por exemplo, você pode excluir documentos nos sites dos usuários do OneDrive for Business cinco anos depois que os documentos foram criados.
+ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154853"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Visão geral das políticas de exclusão de documentos
 
 > [!IMPORTANT]
 > Em frente, recomendamos usar uma política de retenção ou rótulos criados no centro de conformidade da Microsoft 365, no centro de segurança da Microsoft 365 ou no &amp; centro de conformidade de segurança do Office 365, em vez de uma política de exclusão de documentos. As políticas de exclusão de documentos continuarão a funcionar lado a lado com políticas de retenção, mas se você precisar reter ou excluir conteúdo em qualquer lugar no Office 365, recomendamos que você use uma política de retenção. Para obter mais informações, consulte [usar uma política de retenção em vez desses recursos](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
-Sua organização pode ser necessária para reter documentos por um período de tempo por causa de conformidade, legal ou outras necessidades de negócios. No enTanto, se sua organização mantém documentos mais do que o necessário, você cria um risco legal desnecessário. Com uma política de exclusão de documentos, você pode reduzir o risco de forma proativa, excluindo documentos em um site após um período específico de tempo — por exemplo, você pode excluir documentos nos sites dos usuários do OneDrive for Business cinco anos depois que os documentos foram criados.
+Sua organização pode ser necessária para reter documentos por um período de tempo por causa de conformidade, legal ou outras necessidades de negócios. No entanto, se sua organização mantém documentos mais do que o necessário, você cria um risco legal desnecessário. Com uma política de exclusão de documentos, você pode reduzir o risco de forma proativa, excluindo documentos em um site após um período específico de tempo — por exemplo, você pode excluir documentos nos sites dos usuários do OneDrive for Business cinco anos depois que os documentos foram criados.
   
 As políticas de exclusão de documentos são poderosas, mas flexíveis — por exemplo, você pode:
   
@@ -102,7 +102,7 @@ Um proprietário de site pode determinar que o seu conjunto de sites contém doc
 
 O relacionamento básico é o seguinte:
   
-Um conjunto de sites ou um modelo de conjunto de sites pode conter uma ou mais políticas associadas a ele, e cada uma dessas políticas pode conter uma ou mais regras. No enTanto, pode haver apenas uma política ativa por site e pode haver apenas uma regra de exclusão ativa a qualquer momento para as bibliotecas no site.
+Um conjunto de sites ou um modelo de conjunto de sites pode conter uma ou mais políticas associadas a ele, e cada uma dessas políticas pode conter uma ou mais regras. No entanto, pode haver apenas uma política ativa por site e pode haver apenas uma regra de exclusão ativa a qualquer momento para as bibliotecas no site.
   
 ![Diagrama mostrando a relação entre as políticas](media/IP-Two-policies-four-rules.png)
   
@@ -128,7 +128,7 @@ O link **políticas de exclusão de documentos** não aparecerá, a menos que as
 
 Os membros da sua equipe de conformidade que utilizam o Centro de Política de Exclusão de Documento precisam ter permissões para o centro de políticas e para os conjuntos de sites a que as políticas serão aplicadas. Recomendamos que você:
   
-1. Crie um grupo de segurança que contenha todos os usuários do centro de políticas de exclusão de documentos, que é provavelmente sua equipe de gerenciamento de políticas de conformidade. ConFira [gerenciar grupos de segurança habilitados para email](https://go.microsoft.com/fwlink/p/?LinkID=404345) para obter mais informações. 
+1. Crie um grupo de segurança que contenha todos os usuários do centro de políticas de exclusão de documentos, que é provavelmente sua equipe de gerenciamento de políticas de conformidade. Confira [gerenciar grupos de segurança habilitados para email](https://go.microsoft.com/fwlink/p/?LinkID=404345) para obter mais informações. 
     
 2. No Centro de Política de Exclusão de Documento, atribua permissões de proprietário do conjunto de sites ao grupo de segurança. Consulte [permissões para administradores de conjunto de sites](https://go.microsoft.com/fwlink/p/?LinkID=404346) para obter mais informações. 
     

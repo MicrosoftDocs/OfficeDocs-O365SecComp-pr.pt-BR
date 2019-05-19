@@ -1,10 +1,10 @@
 ---
-title: PERGUNTAS FREQUENTEs sobre proteção antispam
+title: Perguntas frequentes sobre proteção antispam
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242489"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152373"
 ---
-# <a name="anti-spam-protection-faq"></a>PERGUNTAS FREQUENTEs sobre proteção antispam
+# <a name="anti-spam-protection-faq"></a>Perguntas frequentes sobre proteção antispam
 
 Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP). 
   
@@ -123,7 +123,7 @@ R. As diretrizes apresentadas abaixo são as práticas recomendas para o envio d
     
     Os registros SPF são um mecanismo para a validação de que os emails enviados de um domínio realmente vêm desse domínio e de que os emails não são falsificados. Para obter mais informações sobre registros SPF, consulte os seguintes links:
     
-    [Configurar a SPF no Office 365 para ajudar a evitar falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+    [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
     [Criar registros DNS do Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
     
@@ -187,7 +187,7 @@ R. As diretrizes apresentadas abaixo são as práticas recomendas para o envio d
     
     O Hotmail usa um programa chamado Serviços de Dados de Rede Inteligente do Hotmail que permite que os remetentes verifiquem as reclamações enviadas pelos usuários finais. O SNDS é o portal principal para a solução de problemas de entrega ao Hotmail.
     
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Proteção anti-spam de emails do Office 365](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
   

@@ -3,7 +3,7 @@ title: Pesquisar o log de auditoria do Office 365 para solucionar problemas de c
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Você pode usar a ferramenta de pesquisa de log de auditoria do Office 365 para ajudá-lo a solucionar problemas comuns, como investigar uma conta comprometida ou descobrir quem configurou o encaminhamento de email para uma caixa de correio.
-ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e5c043668d73bdff30dfce962962a015a6748949
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250229"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155673"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Pesquisar o log de auditoria do Office 365 para solucionar problemas de cenários comuns
 
@@ -42,7 +42,7 @@ Você precisa receber a função de logs de auditoria somente para exibição ou
 
 Esta seção descreve as noções básicas para criar e executar pesquisas de log de auditoria. Use estas instruções como ponto de partida para cada cenário de solução de problemas neste artigo. Para obter instruções passo a passo detalhadas, consulte [Search the Audit Log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. AcEsse [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e entre usando sua conta corporativa ou de estudante.
+1. Acesse [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e entre usando sua conta corporativa ou de estudante.
     
     A página **pesquisa de log de auditoria** é exibida. 
     
@@ -72,7 +72,7 @@ Esta seção descreve as noções básicas para criar e executar pesquisas de lo
 
 O endereço IP correspondente a uma atividade realizada por qualquer usuário é incluído na maioria dos registros de auditoria. As informações sobre o cliente usado também estão incluídas no registro de auditoria.
 
-ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
+Confira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
 
 **Atividades** – se relevante para o seu caso, selecione uma atividade específica a ser pesquisada. Para solucionar problemas de contas comprometidas, considere selecionar o **usuário conectado à** atividade de caixa de correio em **atividades de caixa de correio do Exchange**. Isso retornará registros de auditoria, mostrando o endereço IP que foi usado ao entrar na caixa de correio. Caso contrário, deixe este campo em branco para retornar os registros de auditoria de todas as atividades. 
 
@@ -91,7 +91,7 @@ Depois de executar a pesquisa, o endereço IP de cada atividade é exibido na co
 
 Quando o encaminhamento de emails é configurado para uma caixa de correio, as mensagens de email enviadas para a caixa de correio são encaminhadas para outra caixa de correio. As mensagens podem ser encaminhadas para os usuários dentro ou fora da sua organização. Quando o encaminhamento de emails é configurado em uma caixa de correio, o cmdlet do Exchange Online subjacente usado é **Set-Mailbox**.
 
-ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
+Confira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
 
 **Atividades** -deixe este campo em branco para que a pesquisa retorne registros de auditoria de todas as atividades. Isso é necessário para retornar registros de auditoria relacionados ao cmdlet **Set-Mailbox** .
 
@@ -131,7 +131,7 @@ A partir de janeiro de 2019, a Microsoft está ativando o log de auditoria de ca
 
 As ações de caixa de correio registradas por padrão incluem as ações de caixa de correio SoftDelete e HardDelete executadas por proprietários de caixa de correio. Isso significa que você pode usar as seguintes etapas para pesquisar o log de auditoria em busca de eventos relacionados a itens de email excluídos. Para obter mais informações sobre a auditoria de caixa de correio por padrão, consulte [Manage Mailbox Auditing](enable-mailbox-auditing.md).
 
-ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
+Confira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
 
 **Atividades** – em **atividades de caixa de correio do Exchange**, selecione uma ou ambas as atividades a seguir:
 
@@ -171,7 +171,7 @@ Quando os usuários criam uma regra de caixa de entrada para sua caixa de correi
 - [Usar regras de caixa de entrada no Outlook na Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [Gerenciar mensagens de email no Outlook usando regras](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
-ConFira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
+Confira aqui como configurar uma consulta de pesquisa de log de auditoria para este cenário:
 
 **Atividades** – em **atividades de caixa de correio do Exchange**, selecione **novo-InboxRule criar/modificar/habilitar/desabilitar regra de caixa de entrada**.
 

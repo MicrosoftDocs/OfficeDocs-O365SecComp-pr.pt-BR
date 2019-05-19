@@ -4,20 +4,20 @@ ms.author: MSFTTracyP
 author: tracyp
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
-description: Neste articleSupported LanguagesInstall o relatório de lixo eletrônico adicionar-desIntalar o suplemento de relatório de lixo eletrônico-inFor mais informações
-ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Neste articleSupported LanguagesInstall o relatório de lixo eletrônico adicionar-desintalar o suplemento de relatório de lixo eletrônico-inFor mais informações
+ms.openlocfilehash: c9211cd71fd82af2b9fc0533435ff27a82cd47be
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259819"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152553"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar o Suplemento Relatório de Lixo Eletrônico para o Microsoft Outlook
   
@@ -208,7 +208,7 @@ Use uma dessas opções para desinstalar o Suplemento Relatório de Lixo Eletrô
     
 4. Inicie o Outlook novamente para confirmar se o suplemento não está mais sendo exibido na faixa de opções do Outlook.
     
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection3"> </a>
 
 [Relatar mensagens de Lixo Eletrônico à Microsoft](report-junk-email-messages-to-microsoft.md)

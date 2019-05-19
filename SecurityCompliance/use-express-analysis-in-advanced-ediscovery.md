@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Saiba como executar o modo de análise expressa da descoberta eletrônica avançada do Office 365
-ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264475"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156153"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar a análise expressa na descoberta eletrônica avançada do Office 365
 
@@ -77,7 +77,7 @@ Opcionalmente, você pode definir **Configurações avançadas** para alterar os
   - No **número máximo de temas** , insira ou selecione um valor para o número de temas a serem criados. O padrão é 200. 
     
     > [!NOTE]
-    > Aumentar o número de temas afeta o desempenho, bem como a capacidade de um tema generalizar. Quanto maior o número de temas, mais granulares eles são. Por exemplo, se um conjunto de 50 temas incluir um tema como "basquete, Spurs, clipes, Lakers"; 300 temas podem incluir temas separados: "Spurs", "Clippings", "Lakers". Se você não teve conhecimento do tema "basquete" e usar esse recurso para ECA, ver o tema "basquete" pode ser útil. Mas, se o processamento tiver muitos temas, talvez você nunca veja a palavra "basquete" e talvez não saiba que Spurs e reCortes são bons temas de basquete para revisar, em vez de itens que entram em inicializações e usados para cabelo. 
+    > Aumentar o número de temas afeta o desempenho, bem como a capacidade de um tema generalizar. Quanto maior o número de temas, mais granulares eles são. Por exemplo, se um conjunto de 50 temas incluir um tema como "basquete, Spurs, clipes, Lakers"; 300 temas podem incluir temas separados: "Spurs", "Clippings", "Lakers". Se você não teve conhecimento do tema "basquete" e usar esse recurso para ECA, ver o tema "basquete" pode ser útil. Mas, se o processamento tiver muitos temas, talvez você nunca veja a palavra "basquete" e talvez não saiba que Spurs e recortes são bons temas de basquete para revisar, em vez de itens que entram em inicializações e usados para cabelo. 
   
   - Nos **temas sugeridos** , escolha **Modificar** para sugerir que as palavras do tema controlem o processamento de temas. A descoberta eletrônica avançada se concentrará nessas palavras sugeridas e tentará criar um ou mais temas relevantes, com base nas configurações de "número máximo de temas". 
     
@@ -114,7 +114,7 @@ Opcionalmente, você pode definir **Configurações avançadas** para alterar os
     
   - Para exibir o histórico de um lote, escolha **** ![o ícone](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)histórico de exibição do histórico de lotes.
     
-2. Em definir p **opulation:** selecione **incluir somente os arquivos acima da classificação** de recorte de relevância e/ou refinar **lote de exportação** se quiser ajustar as configurações para o lote de exportação. Se você selecionar **incluir apenas arquivos acima da Pontuação**de reCorte de relevância, o **problema** será habilitado, e se a pontuação de relevância do arquivo for maior do que a pontuação de recorte do problema selecionado, o arquivo será exportado. O arquivo será exportado, a menos que seja excluído pelo filtro " **para revisão** . Se você selecionar **refinar lote de exportação**, os botões de opção de eliminação **de duplicação** e **filtro por "para revisão"** estão habilitados. Se você escolher **** a eliminação da duplicação, os arquivos duplicados serão filtrados de acordo com a política definida: [nível de caso (padrão): de cada conjunto de arquivos duplicados em todo o caso, todos exceto um arquivo serão eliminados. Nível do responsáveis: de cada conjunto de arquivos duplicados do mesmo mesmo, todos os arquivos, exceto um, serão eliminados de duplicação. Um registro de todos os arquivos duplicados está disponível na saída para exportação. Se você escolher **Filtrar por "para revisão"** , selecione **Modificar em metadados** para inserir as configurações de campo **"para revisão"**. Selecione **incluir arquivos de entrada**para incluir arquivos de origem no conteúdo do pacote. Você pode desmarcar essa opção para acelerar o processo de exportação. Observe que os arquivos nativos serão exportados em qualquer caso.
+2. Em definir p **opulation:** selecione **incluir somente os arquivos acima da classificação** de recorte de relevância e/ou refinar **lote de exportação** se quiser ajustar as configurações para o lote de exportação. Se você selecionar **incluir apenas arquivos acima da Pontuação**de recorte de relevância, o **problema** será habilitado, e se a pontuação de relevância do arquivo for maior do que a pontuação de recorte do problema selecionado, o arquivo será exportado. O arquivo será exportado, a menos que seja excluído pelo filtro " **para revisão** . Se você selecionar **refinar lote de exportação**, os botões de opção de eliminação **de duplicação** e **filtro por "para revisão"** estão habilitados. Se você escolher **** a eliminação da duplicação, os arquivos duplicados serão filtrados de acordo com a política definida: [nível de caso (padrão): de cada conjunto de arquivos duplicados em todo o caso, todos exceto um arquivo serão eliminados. Nível do responsáveis: de cada conjunto de arquivos duplicados do mesmo mesmo, todos os arquivos, exceto um, serão eliminados de duplicação. Um registro de todos os arquivos duplicados está disponível na saída para exportação. Se você escolher **Filtrar por "para revisão"** , selecione **Modificar em metadados** para inserir as configurações de campo **"para revisão"**. Selecione **incluir arquivos de entrada**para incluir arquivos de origem no conteúdo do pacote. Você pode desmarcar essa opção para acelerar o processo de exportação. Observe que os arquivos nativos serão exportados em qualquer caso.
     
 3. Em **definir metadados**, selecione uma das seguintes opções na lista **Exportar modelo** (uma vez por sessão). 
     

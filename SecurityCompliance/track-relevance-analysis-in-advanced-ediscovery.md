@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Saiba como exibir e interpretar os resultados e o status de treinamento de relevância para problemas de caso na descoberta eletrônica avançada do Office 365.  '
-ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264379"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158323"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Rastrear a análise de relevância na descoberta eletrônica avançada do Office 365
 
@@ -46,7 +46,7 @@ Na descoberta eletrônica avançada, a guia controle de relevância exibe a vali
     O modo de exibição expandido exibe informações e opções adicionais. A margem de erro atual exibida é a margem de erro da recuperação no estado atual de avaliação, dado os arquivos de avaliação existentes (já marcados).
     
     > [!NOTE]
-    >  O estágio de avaliação pode ser ignorado, desmarcando a caixa de seleção de **avaliação** por problema e, em seguida, para "todos os problemas". No enTanto, como resultado, não haverá estatísticas para esse problema. > a caixa de seleção de **avaliação** só pode ser feita antes da avaliação ser realizada. Onde houver vários problemas em um caso, a avaliação será ignorada somente se a caixa de seleção estiver desmarcada para cada problema 
+    >  O estágio de avaliação pode ser ignorado, desmarcando a caixa de seleção de **avaliação** por problema e, em seguida, para "todos os problemas". No entanto, como resultado, não haverá estatísticas para esse problema. > a caixa de seleção de **avaliação** só pode ser feita antes da avaliação ser realizada. Onde houver vários problemas em um caso, a avaliação será ignorada somente se a caixa de seleção estiver desmarcada para cada problema 
   
     Quando a avaliação não é concluída com o primeiro conjunto de exemplos de arquivos, a avaliação pode ser a próxima etapa para marcar mais arquivos. 
     
@@ -130,7 +130,7 @@ O painel **andamento do treinamento** inclui um gráfico de progresso de treinam
  **Gráfico de progresso do treinamento**: mostra o grau de estabilidade de treinamento de relevância após vários ciclos de treinamento de relevância em comparação ao valor de medida F. À medida que mudamos da esquerda para a direita no gráfico, o intervalo de confiança diminui e é usado, juntamente com a medida F, por uma relevância avançada de descoberta eletrônica para determinar a estabilidade quando os resultados de treinamento de relevância são otimizados.
   
 > [!NOTE]
-> A relevância usa F2, uma métrica de C-Measure onde a recuperação recebe duas vezes mais peso que a precisão. Para casos com grande riqueza (mais de 25%), a relevância usa F1 (taxa de 1:1). A taxa de medida de F pode ser configurada em **Configurações avançadas**de **configuração** \> de relevância. 
+> A relevância usa F2, uma métrica de c-Measure onde a recuperação recebe duas vezes mais peso que a precisão. Para casos com grande riqueza (mais de 25%), a relevância usa F1 (taxa de 1:1). A taxa de medida de F pode ser configurada em **Configurações avançadas**de **configuração** \> de relevância. 
   
 ### <a name="batch-calculation-results"></a>Resultados do cálculo em lote
 
@@ -157,7 +157,7 @@ O painel **Estatísticas de treinamento** exibe as estatísticas e os gráficos 
   
 Este modo de exibição mostra o seguinte:
   
-- **Taxa de recuperação de revisão**: comparação de resultados de acordo com as pontuaÇões de relevância em uma revisão hipotéticamente linear. A reChamada é estimada de acordo com o tamanho do conjunto de revisão definido.
+- **Taxa de recuperação de revisão**: comparação de resultados de acordo com as pontuações de relevância em uma revisão hipotéticamente linear. A rechamada é estimada de acordo com o tamanho do conjunto de revisão definido.
     
 - **Parâmetros**: estatísticas calculadas cumulativas pertencentes ao conjunto de revisão em relação à população de arquivo para o caso inteiro.
     

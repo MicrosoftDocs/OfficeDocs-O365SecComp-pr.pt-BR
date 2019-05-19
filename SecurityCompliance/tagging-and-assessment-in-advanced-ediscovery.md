@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Revise as etapas para executar o treinamento de avaliação, incluindo arquivos de marcação e análise dos resultados da avaliação na descoberta eletrônica avançada do Office 365. '
-ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 15463ac841e2fbbafe1fe502657a659f4a9e1883
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260334"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156403"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Marcação e avaliação na descoberta eletrônica avançada do Office 365
 
@@ -115,7 +115,7 @@ A exibição de faixa expandida mostra a próxima etapa recomendada, as estatís
   
 Quando a riqueza é muito baixa, o número de arquivos de avaliação adicionais necessários para atingir um número mínimo de arquivos relevantes para produzir estatísticas úteis é muito alto. A descoberta eletrônica avançada recomendará a migração para o treinamento. O indicador de progresso da avaliação será sombreado e nenhuma estatística estará disponível. 
   
-Na ausência de estabilização com base Estatistica, haverá resultados com um nível inferior de precisão e nível de confiança. No enTanto, esses resultados podem ser usados para localizar arquivos relevantes quando você não precisa saber a porcentagem de arquivos relevantes encontrados. Da mesma forma, esse status pode ser usado para treinar problemas com uma riqueza inferior, em que as pontuações de relevância podem acelerar o acesso a arquivos relevantes para um problema específico.
+Na ausência de estabilização com base Estatistica, haverá resultados com um nível inferior de precisão e nível de confiança. No entanto, esses resultados podem ser usados para localizar arquivos relevantes quando você não precisa saber a porcentagem de arquivos relevantes encontrados. Da mesma forma, esse status pode ser usado para treinar problemas com uma riqueza inferior, em que as pontuações de relevância podem acelerar o acesso a arquivos relevantes para um problema específico.
   
 > [!TIP]
 > Na guia **controle \> de relevância** , exibição de problema expandido, as seguintes opções de exibição estão disponíveis: > a próxima etapa recomendada, como **próxima etapa: a marcação** pode ser ignorada (por problema) clicando no botão **Modificar** em seu direito e selecione uma etapa diferente na **próxima etapa**. Quando o indicador de progresso da avaliação não for concluído, a avaliação será a próxima opção recomendada para marcar mais arquivos de avaliação e aumentar a precisão das estatísticas. > você pode alterar a margem de erro e avaliar seu impacto, clicando em **Modificar**e, na **caixa de diálogo nível de avaliação**, alterando a **margem de erro de destino para obter estimativas de**cancelamento e clicando em **atualizar valores**. Além disso, nessa caixa de diálogo, você pode exibir opções avançadas clicando em **avançado**. > você pode exibir estatísticas de nível de avaliação adicionais e seu impacto clicando em **Exibir**. Na caixa de diálogo resultados detalhados exibidos, as estatísticas estão disponíveis por questão, quando há pelo menos 500 arquivos de avaliação marcados e pelo menos 18 arquivos são marcados conforme relevante para o problema. 

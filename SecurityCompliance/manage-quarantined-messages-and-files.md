@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, você pode exibir, liberar e relatar mensagens em quarentena falsas positivas no Office 365. Você pode configurar políticas para que o Office 365 Filtre mensagens e as envie para quarentena por vários motivos: porque elas foram identificadas como spam, em massa, phishing, malware ou porque corresponderam a uma regra de fluxo de emails. '
-ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155693"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -205,6 +205,6 @@ Você pode configurar por quanto tempo as mensagens e os arquivos permanecerão 
     
 7. Em **quarentena**, na caixa de texto **reter spam por (dias)** , insira a quantidade de tempo que você deseja que o Office 365 retenha mensagens e arquivos em quarentena. O padrão é 30 dias. Este também é o máximo. 
     
-8. Selecione **Salvar**.
+8. Escolha **Salvar**.
     
 

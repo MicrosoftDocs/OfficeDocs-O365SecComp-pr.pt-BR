@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,35 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f4bac6ae7a51b01ff6f9b303bb5c2f4911bdb53d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241016"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153903"
 ---
 # <a name="view-custodian-audit-activity"></a>Exibir atividade de auditoria de responsáveis
 
-Precisa localizar se um usuário exibir um documento específico ou limpar um item de sua caixa de correio? A descoberta eletrônica avançada (visualização) agora está integrada à ferramenta de pesquisa de log de auditoria existente no centro de conformidade do & de segurança. Usando essa experiência incorporada, você pode usar a ferramenta de gerenciamento de descoberta eletrônica avançada (visualização) para facilitar sua investigação, acessando e pesquisando facilmente a atividade dos responsáveis em seu caso.
+Precisa localizar se um usuário exibir um documento específico ou limpar um item de sua caixa de correio? A descoberta eletrônica avançada agora está integrada à ferramenta de pesquisa de log de auditoria existente no centro de conformidade do & de segurança. Usando essa experiência incorporada, você pode usar a ferramenta de gerenciamento de descoberta eletrônica avançada para facilitar sua investigação, acessando e pesquisando facilmente a atividade dos responsáveis em seu caso.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Você precisa receber a função de logs de auditoria somente para exibição ou logs de auditoria no Exchange Online para pesquisar o log de auditoria do Office 365. Por padrão, essas funções são atribuídas aos grupos de função gerenciamento de conformidade e gerenciamento da organização na página permissões no centro de administração do Exchange. Para conceder ao usuário a capacidade de Pesquisar o log de auditoria de descoberta eletrônica avançada (visualização) com o nível mínimo de privilégios, você pode criar um grupo de função personalizado no Exchange Online, adicionar os logs de auditoria somente para exibição ou a função logs de auditoria e, em seguida, adicionar o usuário como membro da nova função gr oup. Para obter mais informações, consulte Manage role groups in Exchange Online.
+Você precisa receber a função de logs de auditoria somente para exibição ou logs de auditoria no Exchange Online para pesquisar o log de auditoria do Office 365. Por padrão, essas funções são atribuídas aos grupos de função gerenciamento de conformidade e gerenciamento da organização na página permissões no centro de administração do Exchange. Para permitir que um usuário pesquise o log de auditoria de descoberta eletrônica avançado com o nível mínimo de privilégios, você pode criar um grupo de função personalizado no Exchange Online, adicionar os logs de auditoria somente para exibição ou a função logs de auditoria e, em seguida, adicionar o usuário como membro do novo grupo de funções. Para obter mais informações, consulte Manage role groups in Exchange Online.
 
 > [!IMPORTANT]
 > Se você atribuir a um usuário a função logs de auditoria somente para exibição ou logs de auditoria na página permissões no centro de conformidade do & de segurança, elas não poderão pesquisar o log de auditoria do Office 365. Você precisa atribuir as permissões no Exchange Online. Isso ocorre porque o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online.
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>Etapa 1: criar uma pesquisa de log de auditoria de descoberta eletrônica avançada (visualização)
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Etapa 1: Pesquisar o log de auditoria para atividades realizadas por um responsáveis
 
-   1. Selecione um caso existente no **centro de conformidade do & de segurança > de descoberta eletrônica avançada (versão prévia)**.
+1. Vá para descoberta eletrônica **avançada do >** e abra o caso.
+  
+2. Clique na guia **responsáveis** .
+  
+3. Selecione um dos responsáveis na lista e clique em **Exibir atividade de responsáveis** na página do menu suspenso.
+
+    A página de pesquisa de atividades do responsáveis é exibida. Observação os responsáveis que você selecionou na etapa anterior são exibidos na caixa suspensa **responsáveis** . Você pode selecionar diferentes responsáveis na caixa suspensa, mas só pode pesquisar atividades de um único membro por vez.
+
+    ![Página de pesquisa de atividades do responsáveis](../media/AeDCustodianActivities1.png)
    
-   2. Navegue até a guia **responsáveis** e selecione um responsáveis.
-   
-   3. Depois de selecionar um responsáveis, clique em  ![Exibir atividade de responsáveis](../media/ViewCustodianActivity.PNG)  no painel de detalhes.
-   
-   4. Configure os seguintes critérios de pesquisa:
+4. Configure os seguintes critérios de pesquisa:
       
-      a. **Atividades** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades que atendem aos outros critérios de pesquisa.
+   a. **Atividades** -clique na lista suspensa para exibir as atividades que você pode pesquisar. Depois de executar a pesquisa, somente os registros de auditoria das atividades selecionadas são exibidos. Selecionar **Mostrar resultados de todas as atividades** exibirá os resultados de todas as atividades realizadas pelos responsáveis que correspondam aos outros critérios de pesquisa.
 
       ![Lista de atividades](../media/CustodianActivityAudit.PNG)
       
@@ -103,4 +107,4 @@ Você pode exportar os resultados de uma pesquisa de log de auditoria para um ar
 
 3. Após selecionar uma opção de exportação, uma mensagem é exibida na parte inferior da janela que solicita que você abra o arquivo CSV, salve-o na pasta downloads ou salve-o em uma pasta específica
 
-Para obter mais informações sobre como exibir, filtrar ou exportar resultados de pesquisa de log de auditoria, confira [Pesquisar o log de auditoria no centro de conformidade do & de segurança do Office 365](../search-the-audit-log-in-security-and-compliance.md).
+Para obter mais informações sobre como exibir, filtrar ou exportar resultados de pesquisa de log de auditoria, confira [Pesquisar o log de auditoria no centro de conformidade do & de segurança](../search-the-audit-log-in-security-and-compliance.md).

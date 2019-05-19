@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: chrisda
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os administradores podem saber mais sobre as permissões disponíveis no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 81b9020260f11700038f7cc266179355dd1a7896
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 9305800ed19f6a3748b667ed04fb90dedafb624c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884769"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156973"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Permissões no Centro de Conformidade e Segurança do Office 365
 

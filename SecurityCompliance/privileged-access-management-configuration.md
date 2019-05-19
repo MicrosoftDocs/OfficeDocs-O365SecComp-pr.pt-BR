@@ -1,9 +1,9 @@
 ---
-title: ConFigurando o gerenciamento de acesso privilegiado no Office 365
+title: Configurando o gerenciamento de acesso privilegiado no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre como configurar o gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: e086e93c268fe4de627bef30d3ac7aed8e6b1f98
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265233"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157413"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>ConFigurando o gerenciamento de acesso privilegiado no Office 365
+# <a name="configuring-privileged-access-management-in-office-365"></a>Configurando o gerenciamento de acesso privilegiado no Office 365
 
 > [!IMPORTANT]
 > Este tópico aborda as diretrizes de implantação e configuração dos recursos disponíveis atualmente no Office 365 E5 e nas SKUs de conformidade avançada.
@@ -82,7 +82,7 @@ Depois que a aprovação for concedida, o usuário solicitante poderá executar 
 
 3. Habilitar as **aprovações de controle de acesso privilegiado** .
 
-4. Atribua o grupo do aprovador que você criou na etapa 1 como o **grupo de aprovadoRes padrão**.
+4. Atribua o grupo do aprovador que você criou na etapa 1 como o **grupo de aprovadores padrão**.
 
 5. **Salvar** e **fechar**.
 

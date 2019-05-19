@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 3/9/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: O Microsoft Proteção do Exchange Online oferece recursos de política e conformidade de mensagens que podem ajudar você a gerenciar seus dados de email.
-ms.openlocfilehash: 3e966c03c40cbcce53a92d4052151241759bb85f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fd3221117cb3113f975b4ad512cee72a36c4a307
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255779"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153073"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Política de mensagens e conformidade no EOP
 

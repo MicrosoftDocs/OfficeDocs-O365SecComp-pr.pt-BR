@@ -3,7 +3,7 @@ title: Exportar um relatório de Pesquisa de Conteúdo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Em vez de exportar os resultados reais de uma pesquisa de conteúdo no centro de conformidade do & de segurança no Office 365, você pode apenas exportar um relatório de resultados de pesquisa. O relatório contém um resumo dos resultados da pesquisa e um documento com informações detalhadas sobre cada item que seria exportado.
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255649"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154603"
 ---
 # <a name="export-a-content-search-report"></a>Exportar um relatório de Pesquisa de Conteúdo
 
@@ -36,7 +36,7 @@ Quando um relatório é exportado, ele é baixado para uma pasta que tenha o mes
 
 - Para exportar um relatório de pesquisa de conteúdo, você precisa receber a função de gerenciamento de pesquisa de conformidade no centro de conformidade do & de segurança. Essa função é atribuída ao Gerenciador de descoberta eletrônica interno e aos grupos de função de gerenciamento da organização. Ela não é atribuída por padrão ao grupo de funções Gerenciamento da Organização. Para obter mais informações, consulte [atribuir permissões de descoberta eletrônica](assign-ediscovery-permissions.md).
     
-- Quando um relatório é exportado, os dados são temporariamente armazenados em uma área de armazenamento exclusiva do Windows Azure na nuvem da Microsoft antes de ele ser baixado para o computador local. certifique-se de que sua organização possa se conectar ao ponto de extremidade no Azure, que é ** \*. blob.core.windows.net** (o caractere curinga representa um identificador exclusivo para sua exportação). Os dados dos resultados da pesquisa são excluídos da área de armazenamento do Azure duas semanas após sua criação. 
+- Quando um relatório é exportado, os dados são temporariamente armazenados em uma área de armazenamento exclusiva do Windows Azure na nuvem da Microsoft antes de ele ser baixado para o computador local. Certifique-se de que sua organização possa se conectar ao ponto de extremidade no Azure, que é ** \*. blob.Core.Windows.net** (o caractere curinga representa um identificador exclusivo para sua exportação). Os dados dos resultados da pesquisa são excluídos da área de armazenamento do Azure duas semanas após sua criação. 
     
 - O computador que você usa para exportar os resultados da pesquisa devem atender aos seguintes requisitos de sistema:
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243181"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155113"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Definir configurações de pesquisa e análise
+
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicados próximos e threads de email
 
@@ -31,7 +32,7 @@ Nesta seção, você pode definir parâmetros para detecção de duplicidades, d
 
 - Limite: se o nível de similaridade de dois documentos estiver acima do limite, ele será colocado no mesmo conjunto próximo duplicado.
 
-- Ocultar duplicatas por padrão: se essa configuração estiver ativada, um filtro para ocultar documentos duplicados será aplicado no conjunto de trabalho por padrão. O filtro pode ser removido manualmente no conjunto de trabalho, se necessário.
+- Ocultar duplicatas por padrão: se essa configuração estiver ativada, um filtro para ocultar documentos duplicados será aplicado na análise definida por padrão. O filtro pode ser removido manualmente no conjunto de revisão, se necessário.
 
 - Número mínimo/máximo de palavras: próximas duplicatas e o encadeamento de emails será executado somente em documentos que tenham pelo menos o número mínimo de palavras e, no máximo, o número máximo de palavras.
 Para obter mais informações, consulte [Near Duplicate](near-duplicates.md) Detection and [e-mail Threading](email-threading.md).
@@ -47,7 +48,7 @@ Nesta seção, você pode definir parâmetros para temas.
 
 ## <a name="optical-character-recognition-ocr"></a>Reconhecimento óptico de caracteres (OCR)
 
-Quando essa configuração estiver ativada, o OCR será executado em imagens que são incluídas em conjuntos de trabalho para que possam ser pesquisadas.
+Quando essa configuração estiver ativada, o OCR será executado em imagens que são incluídas nos conjuntos de revisão para que possam ser pesquisadas.
 
 ## <a name="ignore-text"></a>Ignorar texto
 

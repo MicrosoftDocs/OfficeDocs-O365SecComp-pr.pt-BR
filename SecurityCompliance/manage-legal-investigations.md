@@ -3,7 +3,7 @@ title: Gerenciar investigações legais no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de descoberta eletrônica no centro de conformidade do & de segurança no Office 365 para gerenciar a investigação legal da sua organização. Se você tiver uma assinatura e5, poderá analisar mais dados de caso usando a análise de texto, aprendizado de máquinas e recursos de codificação de descoberta eletrônica avançada.
-ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f5b7bc7b1c8d672efe60629b1ccf1315c8b74dd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252089"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155723"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gerenciar investigações legais no Office 365
 

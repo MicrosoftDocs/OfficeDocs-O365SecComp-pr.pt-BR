@@ -1,10 +1,10 @@
 ---
-title: Gerenciar isenções na descoberta eletrônica avançada (versão prévia)
+title: Gerenciar isenções na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240946"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154893"
 ---
-# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gerenciar isenções na descoberta eletrônica avançada (versão prévia)
+# <a name="manage-holds-in-advanced-ediscovery"></a>Gerenciar isenções na descoberta eletrônica avançada
 
-Você pode usar um caso de descoberta eletrônica avançada (visualização) para criar isenções para preservar o conteúdo que pode ser relevante para seu caso. Usando os recursos de descoberta eletrônica avançada (visualização), você pode colocar suspensões em responsáveis e em suas fontes de dados. Além disso, você pode colocar um bloqueio não custodial em caixas de correio e sites do OneDrive for Business. Você também pode colocar uma retenção na caixa de correio de grupo, site do SharePoint e no OneDrive for Business para um grupo do Office 365. Da mesma forma, você pode colocar uma retenção na caixa de correio e no site associados ao Microsoft Teams. Quando você coloca os locais de conteúdo em espera, o conteúdo é mantido até que você libere os responsáveis, remova um local de dados específico ou exclua a política de retenção totalmente.
+Você pode usar um caso de descoberta eletrônica avançada para criar isenções para preservar o conteúdo que pode ser relevante para seu caso. Usando os recursos avançados de retenção de descoberta eletrônica, você pode colocar bloqueios em seus responsáveis e suas fontes de dados. Além disso, você pode colocar um bloqueio não custodial em caixas de correio e sites do OneDrive for Business. Você também pode colocar uma retenção na caixa de correio de grupo, site do SharePoint e no OneDrive for Business para um grupo do Office 365. Da mesma forma, você pode colocar uma retenção na caixa de correio e no site associados ao Microsoft Teams. Quando você coloca os locais de conteúdo em espera, o conteúdo é mantido até que você libere os responsáveis, remova um local de dados específico ou exclua a política de retenção totalmente.
 
 ## <a name="manage-custodian-based-holds"></a>Gerenciar bloqueios baseados em responsáveis
 
-Em alguns casos, você pode ter um conjunto de responsáveis por dados identificados e optar por preservá-los. Na descoberta eletrônica avançada (visualização), quando esses responsáveis são colocados em espera, o usuário e suas fontes de dados selecionadas são adicionados automaticamente a uma política de retenção de responsáveis. 
+Em alguns casos, você pode ter um conjunto de responsáveis por dados identificados e optar por preservá-los. Na descoberta eletrônica avançada, quando esses responsáveis são colocados em espera, o usuário e suas fontes de dados selecionadas são adicionados automaticamente a uma política de retenção de responsáveis. 
 
 Para exibir a política de retenção de responsáveis:
 
-1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica avançada do **> (visualização)** para exibir a lista de casos em sua organização.
+1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica **avançada >** para exibir a lista de casos em sua organização.
    
-2. Vá para a guia **responsáveis** para adicionar os responsáveis dentro do seu caso. Para saber como adicionar e colocar os responsáveis em espera em um caso de descoberta eletrônica avançada (visualização), confira [Adicionar responsáveis a uma descoberta eletrônica avançada (visualização)](add-custodians-to-case.md). Se você já tiver adicionado os responsáveis e os colocou em espera, vá para a etapa 3.
+2. Vá para a guia **responsáveis** para adicionar os responsáveis dentro do seu caso. Para saber como adicionar e colocar os responsáveis em espera dentro de um caso de descoberta eletrônica avançada, confira [Adicionar responsáveis a uma ocorrência de descoberta eletrônica avançada](add-custodians-to-case.md). Se você já tiver adicionado os responsáveis e os colocou em espera, vá para a etapa 3.
    
 3. Vá até a guia **isenções** e selecione "política de responsáveis".
    
@@ -46,9 +46,9 @@ Ao criar uma isenção, você tem as seguintes opções para fazer o escopo do c
   - Você cria uma retenção infinita onde todo o conteúdo é colocado em espera. Como alternativa, você pode criar uma isenção baseada em consulta, onde somente o conteúdo que corresponde a uma consulta de pesquisa é colocado em espera.
   - Você pode especificar um intervalo de datas para armazenar somente o conteúdo que foi enviado, recebido ou criado dentro desse intervalo de datas. Como alternativa, você pode manter todo o conteúdo independentemente de quando ele foi enviado, recebido ou criado.
 
-Para criar uma retenção para um caso de descoberta eletrônica avançada (visualização):
+Para criar uma retenção para um caso de descoberta eletrônica avançada:
 
-1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica avançada do **> (visualização)** para exibir a lista de casos em sua organização.
+1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica **avançada >** para exibir a lista de casos em sua organização.
   
 2. Clique em **abrir** ao lado do caso para o qual você deseja criar as isenções.
   
@@ -109,7 +109,7 @@ Tenha em mente as seguintes coisas em relação a estatísticas de retenção:
 
 - É normal para o número de itens em espera aumentar ao longo do tempo, pois os usuários cuja caixa de correio ou site está em espera geralmente estão enviando ou recebendo novas mensagens de email e criando novos documentos do SharePoint e do OneDrive for Business.
 
-- Se um site do SharePoint ou uma conta do OneDrive for movido para uma região diferente em um ambiente multigeográfico, as estatísticas desse site não serão incluídas nas estatísticas de retenção. No enTanto, o conteúdo do site permanecerá em espera. Além disso, se um site for movido para uma região diferente, a URL exibida na retenção não será atualizada. Você terá que editar a isenção e atualizar a URL.
+- Se um site do SharePoint ou uma conta do OneDrive for movido para uma região diferente em um ambiente multigeográfico, as estatísticas desse site não serão incluídas nas estatísticas de retenção. No entanto, o conteúdo do site permanecerá em espera. Além disso, se um site for movido para uma região diferente, a URL exibida na retenção não será atualizada. Você terá que editar a isenção e atualizar a URL.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -128,9 +128,9 @@ Tenha em mente as seguintes coisas em relação a estatísticas de retenção:
     ```
 
     > [!NOTE]
-    > Para executar o cmdlet Get-uniFicado, você deve receber a função de destinatários somente para exibição no Exchange Online ou ser um membro de um grupo de função atribuído à função de destinatários somente para exibição.
+    > Para executar o cmdlet Get-unificado, você deve receber a função de destinatários somente para exibição no Exchange Online ou ser um membro de um grupo de função atribuído à função de destinatários somente para exibição.
 
- - Quando a caixa de correio de um usuário é pesquisada, qualquer grupo do Office 365 ou Microsoft Team do qual o usuário é membro não será pesquisado. Da mesma forma, quando você coloca um grupo do Office 365 ou um bloqueio de equipe da Microsoft, somente a caixa de correio de grupo e o site de grupo são colocados em espera; as caixas de correio e os sites do OneDrive for Business de membros do grupo não são colocados em espera, a menos que você os adicione explicitamente como responsáveis ou coloque suas fontes de dados em espera. Portanto, se você precisar colocar um grupo do Office 365 ou o Microsoft Team em espera para um determinado local, considere o mapeamento do site de grupo e da caixa de correio de grupo para os responsáveis (consulte Gerenciando os responsáveis em descoberta eletrônica avançada (prévia)). Se o grupo do Office 365 ou a equipe da Microsoft não puder ser atribuído a um único membro, considere a adição da origem a um bloqueio não custodial. 
+ - Quando a caixa de correio de um usuário é pesquisada, qualquer grupo do Office 365 ou Microsoft Team do qual o usuário é membro não será pesquisado. Da mesma forma, quando você coloca um grupo do Office 365 ou um bloqueio de equipe da Microsoft, somente a caixa de correio de grupo e o site de grupo são colocados em espera; as caixas de correio e os sites do OneDrive for Business de membros do grupo não são colocados em espera, a menos que você os adicione explicitamente como responsáveis ou coloque suas fontes de dados em espera. Portanto, se você precisar colocar um grupo do Office 365 ou o Microsoft Team em espera para um determinado local, considere o mapeamento do site de grupo e da caixa de correio de grupo para os responsáveis (consulte Gerenciando responsáveis em descoberta eletrônica avançada). Se o grupo do Office 365 ou a equipe da Microsoft não puder ser atribuído a um único membro, considere a adição da origem a um bloqueio não custodial. 
  
  - Para obter uma lista dos membros de um grupo do Office 365 ou de uma equipe da Microsoft, você pode exibir as propriedades na página de grupos de > domésticos no centro de administração do Office 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online:
 
@@ -148,4 +148,4 @@ Tenha em mente as seguintes coisas em relação a estatísticas de retenção:
 - Cada equipe do Microsoft ou canal de equipe contém um wiki para anotações e colaboração. O conteúdo wiki é automaticamente salvo em um arquivo com um formato. mht. Esse arquivo é armazenado na biblioteca de documentos de dados wiki do teams no site do SharePoint da equipe. Você pode colocar o conteúdo do wiki em espera, colocando o site do SharePoint da equipe em espera.
 
   > [!NOTE]
-  > A capacidade de manter o conteúdo do wiki para uma equipe do Microsoft ou um canal de equipe (quando você coloca o site do SharePoint da equipe em espera) foi lançada em 22 de junho de 2017. Se um site de equipe estiver em espera, o conteúdo wiki será retido a partir dessa data. No enTanto, se um site de equipe estiver em espera e o conteúdo wiki tiver sido excluído antes de 22 de junho de 2017, o conteúdo wiki não foi mantido.
+  > A capacidade de manter o conteúdo do wiki para uma equipe do Microsoft ou um canal de equipe (quando você coloca o site do SharePoint da equipe em espera) foi lançada em 22 de junho de 2017. Se um site de equipe estiver em espera, o conteúdo wiki será retido a partir dessa data. No entanto, se um site de equipe estiver em espera e o conteúdo wiki tiver sido excluído antes de 22 de junho de 2017, o conteúdo wiki não foi mantido.

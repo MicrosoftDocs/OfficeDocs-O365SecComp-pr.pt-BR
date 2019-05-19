@@ -3,19 +3,19 @@ title: 'Workshop do diretor de segurança de informações (CISO), módulo 1: Mi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os princípios de segurança e as recomendações para modernização de segurança em sua organização.
-ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243992"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152153"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Módulo 1 do CISO Workshop: Microsoft cybersecurity
 

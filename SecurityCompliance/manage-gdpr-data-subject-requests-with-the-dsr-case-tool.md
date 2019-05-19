@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: O RGPD fornece aos seus dados pessoais direitos específicos da UE (chamados de dados). esses direitos incluem a obtenção de cópias dele, a solicitação de alterações, a restrição do processamento dele, a exclusão ou o recebimento de um formato eletrônico. Uma solicitação formal por um assunto de dados para realizar uma ação em seus dados pessoais é chamada de solicitação de entidade de dados ou DSR. Você pode usar casos de DSR no centro de conformidade no Office 365 e no Microsoft 365 para gerenciar as investigações de DSR da sua organização.
-ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 644a604959d4063e5e7bd994bc9dfb57f8642081
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259865"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155803"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gerenciar solicitações de entidades de dados do RGPD com a ferramenta de casos DSR no centro de conformidade do & de segurança
 
@@ -64,12 +64,12 @@ Este é o processo de alto nível para usar a ferramenta de caso DSR para gerenc
 
 [Etapa 4: exportar os dados](#step-4-export-the-data)
 
-[Opcion Etapa 5: reVisar a consulta de pesquisa interna](#optional-step-5-revise-the-built-in-search-query)
+[Opcion Etapa 5: revisar a consulta de pesquisa interna](#optional-step-5-revise-the-built-in-search-query)
 
 [Mais informações sobre como usar a ferramenta de ocorrência de DSR](#more-information-about-using-the-dsr-case-tool)
   
 > [!IMPORTANT]
-> Nossas ferramentas podem ajudar os administradores a executar o acesso DSR ou solicitações de exportação, permitindo que eles utilizem a funcionalidade interna de pesquisa e exportação encontrada na ferramenta de caso DSR. A ferramenta ajuda a facilitar um método de melhor esforço para exportar dados relevantes para uma solicitação de DSR enviada por um assunto de dados. No enTanto, é importante observar que os resultados da pesquisa podem variar com base no assunto dos dados ou nas ações de administrador realizadas que podem afetar a possibilidade de um item ser considerado "dados pessoais" para fins de exportação. Por exemplo, se o assunto dos dados foi a última pessoa a modificar um arquivo que ele não criou, o arquivo pode não ser retornado nos resultados da pesquisa. Da mesma forma, um administrador pode exportar dados sem incluir itens parcialmente indexados ou todas as versões de documentos do SharePoint. Portanto, as ferramentas fornecidas podem ajudar a facilitar o acesso e a exportação de solicitações de dados; no entanto, os resultados estão sujeitos aos cenários específicos de uso de entidades de dados e de administração. 
+> Nossas ferramentas podem ajudar os administradores a executar o acesso DSR ou solicitações de exportação, permitindo que eles utilizem a funcionalidade interna de pesquisa e exportação encontrada na ferramenta de caso DSR. A ferramenta ajuda a facilitar um método de melhor esforço para exportar dados relevantes para uma solicitação de DSR enviada por um assunto de dados. No entanto, é importante observar que os resultados da pesquisa podem variar com base no assunto dos dados ou nas ações de administrador realizadas que podem afetar a possibilidade de um item ser considerado "dados pessoais" para fins de exportação. Por exemplo, se o assunto dos dados foi a última pessoa a modificar um arquivo que ele não criou, o arquivo pode não ser retornado nos resultados da pesquisa. Da mesma forma, um administrador pode exportar dados sem incluir itens parcialmente indexados ou todas as versões de documentos do SharePoint. Portanto, as ferramentas fornecidas podem ajudar a facilitar o acesso e a exportação de solicitações de dados; no entanto, os resultados estão sujeitos aos cenários específicos de uso de entidades de dados e de administração. 
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Etapa 1: atribuir permissões de Descoberta Eletrônica para possíveis membros da ocorrência
 
@@ -84,7 +84,7 @@ Para obter instruções detalhadas, consulte [atribuir permissões de descoberta
 
 A próxima etapa é criar um caso DSR. Ao criar um caso, você pode optar por iniciar a pesquisa interna ou pode criar a ocorrência sem iniciar a pesquisa. O procedimento a seguir instrui você a criar o caso sem iniciar a pesquisa e, em seguida, mostrar como adicionar membros ao caso.
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre no Office 365 usando sua conta corporativa ou de estudante. 
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre no Office 365 usando sua conta corporativa ou de estudante. 
     
 2. No centro de conformidade do & de segurança, clique em **solicitações de assunto de dados**de ![](media/ITPro-EAC-AddIcon.gif) privacidade \> de **dados** e clique em Adicionar ícone **novo caso de DSR**.
     
@@ -198,7 +198,7 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
     
     ![Definir as configurações de exportação](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    a. Em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados. O motivo pelo qual você não deseja exportar itens parcialmente indexados da pesquisa interna é porque itens parcialmente indexados de outros usuários serão exportados. Para exportar apenas os itens parcialmente indexados para o assunto dos dados, recomendamos que você crie uma pesquisa separada. Para obter mais informações, consulte exPortando [itens parcialmente indexados](#exporting-partially-indexed-items) na seção "mais informações sobre como usar a ferramenta de caso DSR".
+    a. Em **Opções de saída**, selecione a primeira opção ( **todos os itens, excluindo aqueles que têm um formato não reconhecido, estão criptografados ou não foram indexados por outros motivos**) para exportar somente itens indexados. O motivo pelo qual você não deseja exportar itens parcialmente indexados da pesquisa interna é porque itens parcialmente indexados de outros usuários serão exportados. Para exportar apenas os itens parcialmente indexados para o assunto dos dados, recomendamos que você crie uma pesquisa separada. Para obter mais informações, consulte Exportando [itens parcialmente indexados](#exporting-partially-indexed-items) na seção "mais informações sobre como usar a ferramenta de caso DSR".
     
     b. Em **exportar conteúdo do Exchange como**, selecione a terceira opção, **um arquivo PST contendo todas as mensagens em uma única pasta**. Como alguns dos resultados podem ser para itens originados na caixa de correio de outro usuário, essa opção apenas lista o item em uma única pasta sem indicar a caixa de correio real e é a melhor opção para usar quando você elimina a duplicação dos resultados, conforme recomendado no próximo item . Essa opção também permite que o assunto dos dados revise itens em ordem cronológica (os itens são classificados por data de envio) sem precisar navegar na estrutura de pastas da caixa de correio original de cada item.
     
@@ -233,7 +233,7 @@ O computador que você usa para exportar dados precisa atender aos seguintes req
     
 Depois que os dados são exportados, os resultados da pesquisa e os relatórios de exportação estão localizados em uma pasta com o mesmo nome do caso DSR. Os arquivos PST que contêm itens de caixa de correio estão localizados em uma subpasta denominada **Exchange**. Documentos e outros itens de sites estão localizados em uma subpasta denominada **SharePoint**. 
   
-## <a name="optional-step-5-revise-the-built-in-search-query"></a>Opcion Etapa 5: reVisar a consulta de pesquisa interna
+## <a name="optional-step-5-revise-the-built-in-search-query"></a>Opcion Etapa 5: revisar a consulta de pesquisa interna
 
 Depois de executar a pesquisa interna, você pode revisá-la para restringir o escopo a retornar menos resultados de pesquisa. Você pode fazer isso adicionando condições à consulta. Uma condição é conectada logicamente à consulta de palavra-chave pelo operador **and** . Isso significa ser retornado nos resultados da pesquisa, os itens devem atender à consulta de palavra-chave e às condições adicionadas. É assim que as condições ajudam a restringir os resultados. Se você adicionar duas ou mais condições exclusivas a uma consulta de pesquisa (condições que especificam propriedades diferentes), essas condições serão conectadas logicamente pelo operador **and** . Isso significa que somente os itens que atendem a todas as condições (além da consulta de palavra-chave) são retornados. Se você adicionar vários valores (separados por vírgulas ou pontos-e-vírgulas) a uma única condição, esses valores serão conectados pelo operador **or** . Isso significa que os itens serão retornados se contiverem qualquer um dos valores especificados para a propriedade na condição. 
   
@@ -275,21 +275,21 @@ Para modificar os locais de conteúdo para pesquisa:
 
 As seções a seguir contêm mais informações sobre como usar a ferramenta de ocorrência de DSR para responder às solicitações de exportação de DSR.
   
-[ExPortando dados do myAnalytics e do serviço de roaming do Office](#exporting-data-from-myanalytics-and-the-office-roaming-service)
+[Exportando dados do myAnalytics e do serviço de roaming do Office](#exporting-data-from-myanalytics-and-the-office-roaming-service)
 
-[ExPortando itens parcialmente indexados](#exporting-partially-indexed-items)
+[Exportando itens parcialmente indexados](#exporting-partially-indexed-items)
 
 [Pesquisando e exportando dados de grupos do Microsoft Teams e do Office 365](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
 
 [Pesquisando pastas públicas do Exchange](#searching-exchange-public-folders)
   
-### <a name="exporting-data-from-myanalytics-and-the-office-roaming-service"></a>ExPortando dados do myAnalytics e do serviço de roaming do Office
+### <a name="exporting-data-from-myanalytics-and-the-office-roaming-service"></a>Exportando dados do myAnalytics e do serviço de roaming do Office
 
 Você pode usar a ferramenta de caso DSR para pesquisar e exportar dados de uso gerados pelo myAnalytics e o serviço de roaming do Office. Veja a seguir uma descrição do que esses serviços fazem:
   
 - **MyAnalytics** – fornece aos usuários informações sobre como eles passam o tempo com base nos dados de email e de calendário em suas caixas de correio. Todos os insights do myAnalytics são derivados dos cabeçalhos de email e de reunião da caixa de correio do usuário. Os usuários que receberam uma licença do myAnalytics podem entrar no Office 365 e acessar o painel myAnalytics para exibir os insights sobre como eles passam o tempo. (Os usuários podem fazer capturas de tela desses percepções em resposta a uma solicitação de acesso DSR). A pesquisa interna em um caso DSR exportará os dados usados para gerar o myAnalytics insights. 
     
-- **Serviço de roamIng do Office** – o roaming é um serviço que armazena configurações relacionadas ao Office, como tema do Office, dicionário personalizado, configurações de idioma, modo de desenvolvedor e correção automática. 
+- **Serviço de roaming do Office** – o roaming é um serviço que armazena configurações relacionadas ao Office, como tema do Office, dicionário personalizado, configurações de idioma, modo de desenvolvedor e correção automática. 
     
 Os dados do myAnalytics e do serviço de roaming do Office são armazenados na caixa de correio de um assunto de dados em pastas ocultas localizadas em uma subárvore de mensagens não interpessoais (não-IPM) de caixas de correio do Exchange Online. Isso significa que os dados ficam ocultos do modo de exibição do usuário quando eles usam o Outlook ou outros clientes de email para acessar sua caixa de correio. Para obter mais informações sobre pastas ocultas, consulte [pastas ocultas do MAPI](https://go.microsoft.com/fwlink/?linkid=872758).
   
@@ -297,9 +297,9 @@ Você pode criar uma pesquisa de conteúdo separada (e associá-la a uma ocorrê
   
 Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os dados são salvos em uma pasta separada para cada aplicativo localizado na pasta **ApplicationDataRoot** , que está em uma pasta que é nome com o endereço de email da entidade de dados. Esses dados são exportados como arquivos JSON, que são arquivos de texto legíveis para pessoas semelhantes aos arquivos XML ou TXT, anexados a mensagens de email. Atualmente, essas pastas são nomeadas com um identificador global exclusivo (GUID) atribuído ao myAnalytics e ao serviço de roaming do Office, que estão listados na tabela a seguir. Em versões futuras da ferramenta de caso DSR, o GUID será substituído pelo nome do aplicativo real. 
   
-|**Aplicativo**|**GUID/nome da pasta**|
+|**Application**|**GUID/nome da pasta**|
 |:-----|:-----|
-|MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
+|MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
 |Serviço de roaming do Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Para pesquisar e exportar dados do serviço de roaming e do Office**
@@ -369,7 +369,7 @@ Quando você exporta dados do myAnalytics e do serviço de roaming do Office, os
     
     Como explicado anteriormente, os arquivos JSON que contêm dados de uso são anexados a mensagens. Para exibir um arquivo JSON, clique em uma mensagem e, em seguida, abra o arquivo JSON anexado. 
   
-### <a name="exporting-partially-indexed-items"></a>ExPortando itens parcialmente indexados
+### <a name="exporting-partially-indexed-items"></a>Exportando itens parcialmente indexados
 
 Recomendamos que você não exporte itens parcialmente indexados (também chamados de itens não indexados) da pesquisa interna criada quando você cria um novo caso de DSR. Isso ocorre porque os resultados da pesquisa mais do que provavelmente incluem itens parcialmente indexados para outros usuários em sua organização, e não apenas os itens parcialmente indexados para o assunto dos dados). Em vez disso, recomendamos que você crie uma pesquisa de conteúdo separada que esteja associada ao caso DSR projetado para exportar apenas os itens parcialmente indexados relacionados ao assunto dos dados. 
   
@@ -395,7 +395,7 @@ Para obter mais informações sobre itens parcialmente indexados, consulte:
   
 - [Itens parcialmente indexados na Pesquisa de Conteúdo do Office 365](partially-indexed-items-in-content-search.md)
 
-- [ExPortando itens parcialmente indexados](export-search-results.md#exporting-partially-indexed-items)
+- [Exportando itens parcialmente indexados](export-search-results.md#exporting-partially-indexed-items)
     
 ### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>Pesquisando e exportando dados de grupos do Microsoft Teams e do Office 365
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/19/2018
-ms.audience: Consumer/IW
+audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 'Como um usuário do Office 365, você pode gerenciar suas próprias mensagens de spam em quarentena de duas maneiras: respondendo a notificações de spam enviadas diretamente para você (se o seu administrador tiver configurado esse recurso) ou usando o recurso de quarentena de spam na conformidade com segurança &amp; Centro.'
-ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255199"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152813"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Localizar e liberar mensagens em quarentena como um usuário no Office 365
 
@@ -76,7 +76,7 @@ Se você tiver muitos itens em quarentena, poderá reduzir o número para um con
   - **Data de vencimento** Para filtrar por data de expiração, escolha **filtro avançado**. Você pode selecionar mensagens que serão excluídas da quarentena nas próximas 24 horas ( **hoje**), nas próximas 48 horas ( **próximos 2 dias**), na próxima semana ( **próximos 7 dias**) ou você pode selecionar um intervalo de tempo personalizado.
     
     > [!IMPORTANT]
-    > Por padrão, as mensagens de spam e em massa são mantidas em quarentena por 30 dias. No enTanto, esse período de tempo é configurável e seu administrador pode ter definido um período diferente de retenção de quarentena. Quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente. 
+    > Por padrão, as mensagens de spam e em massa são mantidas em quarentena por 30 dias. No entanto, esse período de tempo é configurável e seu administrador pode ter definido um período diferente de retenção de quarentena. Quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente. 
   
 ## <a name="view-details-for-a-specific-message"></a>Exibir detalhes de uma mensagem específica
 

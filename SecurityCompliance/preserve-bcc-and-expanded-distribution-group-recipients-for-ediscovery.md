@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: Bloqueio in-loco, retenção de litígio e políticas de retenção do Office 365 permitem preservar o conteúdo da caixa de correio para atender aos requisitos de conformidade normativa e eDiscovery.
-ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 85e291b5fb4e12ad077c98d805ac232b17e6e647
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261679"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157403"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Preservar destinatários Cco e de grupos de distribuição expandidos para Descoberta Eletrônica
   

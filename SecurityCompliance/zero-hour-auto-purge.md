@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/11/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,16 +17,16 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266903"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155953"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática zero hora – proteção contra spam e malware
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com phishing, spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP depende do tipo de conteúdo mal-intencionado detectado; os emails podem ser zapped devido a conteúdo, URLs ou anexos de email.
   
@@ -40,7 +40,7 @@ O ZAP é ativado por padrão, mas as seguintes condições devem ser atendidas:
   
 ## <a name="how-zap-works"></a>Como o ZAP funciona
 
-O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No enTanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários.
+O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No entanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários.
 
 - Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários.
 
@@ -54,7 +54,7 @@ As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p
   
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar ou configurar uma política de filtro de spam
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365.
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365.
 
 2. Em **Gerenciamento de ameaças**, escolha **anti-spam**.
 
@@ -93,7 +93,7 @@ Regras criadas por administradores (regras de fluxo de emails) ou regras de bloq
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>E se uma mensagem for movida para outra pasta (por exemplo, regra de caixa de entrada)?
 ZAP ainda funciona nesse caso, a menos que a mensagem tenha sido excluída ou esteja em lixo eletrônico.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Proteção anti-spam de emails do Office 365](anti-spam-protection.md)
   

@@ -3,7 +3,7 @@ title: Criptografia de mensagem avançada do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: A criptografia de mensagem avançada no Office 365 ajuda as organizações a cumprir suas obrigações de conformidade, permitindo que os administradores expirem e revogassem o acesso por meio de um portal da Web do Office 365 para emails criptografados.
-ms.openlocfilehash: 5559a2bca4cd804cfcfdf547146eeb416252ca5f
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: dcef5f861711acffb8359063373cd90d4b122d88
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834900"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157644"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Criptografia de mensagem avançada do Office 365
 

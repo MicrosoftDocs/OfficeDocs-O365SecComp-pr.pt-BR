@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Saiba como definir a regra para ignorar texto específico ao usar os módulos de análise e de processo na descoberta eletrônica avançada do Office 365.  '
-ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260811"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156673"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Definir a opção Ignorar texto para análise na descoberta eletrônica avançada do Office 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "32260811"
   
 O recurso Ignorar texto pode ser aplicado a todos os módulos de descoberta eletrônica avançados a seguir ou a qualquer um dos seguintes módulos de descoberta eletrônica avançada: analisar (próximos duplicatas, threads de email, temas) e relevância. O texto ignorado não aparecerá nos arquivos exibidos de relevância e a análise/cálculo descartará o texto ignorado.
   
-Se o recurso Ignorar texto tiver sido definido anteriormente para módulos que já foram executados, a configuração de ignorar texto será agora protegida contra modificações. No enTanto, o recurso Ignorar texto para o módulo de relevância ainda pode ser alterado a qualquer momento.
+Se o recurso Ignorar texto tiver sido definido anteriormente para módulos que já foram executados, a configuração de ignorar texto será agora protegida contra modificações. No entanto, o recurso Ignorar texto para o módulo de relevância ainda pode ser alterado a qualquer momento.
   
 ## <a name="how-ignore-text-filters-are-applied"></a>Como ignorar filtros de texto são aplicados
 

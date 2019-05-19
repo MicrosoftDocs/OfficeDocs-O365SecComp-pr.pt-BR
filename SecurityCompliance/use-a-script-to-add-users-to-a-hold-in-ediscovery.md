@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Execute um script para adicionar rapidamente as caixas de correio e os sites do OneDrive for Business a uma nova retenção associada a um caso de descoberta eletrônica no centro de conformidade do & de segurança.
-ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263973"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156223"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Use um script para adicionar usuários a uma retenção em caso de descoberta eletrônica no centro de conformidade do & de segurança
 

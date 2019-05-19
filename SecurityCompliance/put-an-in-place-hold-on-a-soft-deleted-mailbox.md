@@ -3,19 +3,19 @@ title: Colocar um bloqueio in-loco em uma caixa de correio excluída de forma re
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Saiba como criar um bloqueio in-loco para uma caixa de correio excluída de forma reversível para torná-la inativa e preservar seu conteúdo. Em seguida, você pode usar as ferramentas de descoberta eletrônica da Microsoft para pesquisar a caixa de correio inativa.
-ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ce4121e6187a765b5a9e23d6e6e11d8cc2640161
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261599"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157273"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar um bloqueio in-loco em uma caixa de correio excluída de forma reversível no Exchange Online
 

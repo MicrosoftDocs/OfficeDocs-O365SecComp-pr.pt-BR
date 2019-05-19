@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Verifique a pesquisa de palavras-chave em busca de erros e erros de digitação, como caracteres não suportados e operadores booleanos minúsculos, antes de executar a pesquisa. Se encontrarmos um erro, sugeriremos uma consulta revisada.
-ms.openlocfilehash: 00612116f345e2a01471d5c83df77f4bc8db9ce5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9f9f59c4466102d678bc3a599aa208869bbd9d64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243648"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155573"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verifique se há erros na sua consulta da Pesquisa de Conteúdo
 
@@ -32,7 +32,7 @@ Aqui está uma lista de caracteres não suportados que verificamos. Os caractere
     
 - **Marcas da esquerda para a direita e da direita para a esquerda** -estes são caracteres de controle usados para indicar a direção do texto para idiomas da esquerda para a direita (como Inglês e espanhol) e idiomas da direita para a esquerda (como árabe e Hebraico).
     
-- **Operadores booleanOs minúsculos** -se você usar um operador Boolean, como **e**, **ou**, e **não** em uma consulta de pesquisa, ele deverá estar em letras maiúsculas. Quando verificamos uma consulta em busca de erros de digitação, a sintaxe da consulta geralmente indica que um operador booliano está sendo usado, mesmo que operadores minúsculos possam ser usados; por exemplo, `(WordA or WordB) and (WordC or WordD)`.
+- **Operadores booleanos minúsculos** -se você usar um operador Boolean, como **e**, **ou**, e **não** em uma consulta de pesquisa, ele deverá estar em letras maiúsculas. Quando verificamos uma consulta em busca de erros de digitação, a sintaxe da consulta geralmente indica que um operador booliano está sendo usado, mesmo que operadores minúsculos possam ser usados; por exemplo, `(WordA or WordB) and (WordC or WordD)`.
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>O que acontece se uma consulta tiver um caractere sem suporte?
 

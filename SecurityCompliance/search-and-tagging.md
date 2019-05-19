@@ -3,7 +3,7 @@ title: Pesquisa e marcação
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Na descoberta eletrônica avançada, o módulo de pesquisa e marcação permite pesquisar, Visualizar e organizar os documentos em seu caso. Atualmente, este módulo está no beta.
-ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261360"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158533"
 ---
 # <a name="search-and-tagging"></a>Pesquisa e marcação
 
@@ -48,15 +48,15 @@ A tabela a seguir lista as propriedades que você pode pesquisar usando uma cons
 |**received** <br/> | A data em que um email foi recebido. <br/> |
 |**recipients** <br/> | Destinatários de um email, incluídos nos campos para, CC ou Cco. <br/> |
 |**sender** <br/> | O remetente de um email. <br/> |
-|**LastModifiedDate** <br/> | A data da última modificação de um documento de site. <br/> |
+|**lastmodifieddate** <br/> | A data da última modificação de um documento de site. <br/> |
 |**sent** <br/> | A data de envio de um email. <br/> |
 |**to** <br/> | O destinatário listado no campo para de um email. <br/> |
 |**autor** <br/> | O autor de um documento de site. <br/> |
 |**title** <br/> | O título de um documento de site. <br/> |
 |**dominanttheme**\* <br/> | O tema dominante de um item. <br/> |
 |**themelist**\* <br/> | Temas associados a um item. <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | O percentil de leitura de um item, para o problema definido por [issuenum]. <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | A pontuação de relevância de um item, para o problema definido por [issuenum]. <br/> |
+|**readpercentile_[issuenum]**\*\* <br/> | O percentil de leitura de um item, para o problema definido por [issuenum]. <br/> |
+|**relevancescore_[issuenum]**\*\* <br/> | A pontuação de relevância de um item, para o problema definido por [issuenum]. <br/> |
 |**relevancetag_ [TagName]**\*\* <br/> | Se um item tiver sido marcado manualmente para relevância, a marca definida por [TagName]. <br/> |
 |||
 

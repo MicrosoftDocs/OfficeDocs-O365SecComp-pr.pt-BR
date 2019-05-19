@@ -3,7 +3,7 @@ title: Introdução ao portal de confiança do serviço Microsoft
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para os relatórios de conformidade normativa do Office 365, Azure e Dynamics 365 online, para ver auditorias de terceiros, descubra como a Microsoft mantém a segurança dos dados dos clientes e como é possível ser compatível com ISO, HIPAA, NIST, FINRA, RGPD e FedRAMP quando você usa esses serviços online.
-ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254275"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154433"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introdução ao portal de confiança do serviço Microsoft
 
@@ -42,11 +42,11 @@ O portal de confiança do serviço contém detalhes sobre a implementação da M
   
 Para criar uma nova conta ou criar uma conta de avaliação, use um dos seguintes formulários de inscrição (também usados para contas de avaliação) para obter acesso ao STP.
   
-- InScreva-se para obter uma nova conta de [avaliação do office 365 Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou uma nova [conta de avaliação do Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Inscreva-se para obter uma nova conta de [avaliação do office 365 Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou uma nova [conta de avaliação do Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-- InScreva-se para uma nova [conta de avaliação do Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
+- Inscreva-se para uma nova [conta de avaliação do Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- InScreva-se para uma nova [conta de avaliação do Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
+- Inscreva-se para uma nova [conta de avaliação do Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
     
 Ao se inscrever em uma avaliação gratuita ou uma assinatura, você deve habilitar o Azure Active Directory para dar suporte ao seu acesso ao STP.
   
@@ -87,8 +87,8 @@ Fornece informações de conformidade específicas do setor e da região sobre o
     - Educação
     - Serviços financeiros
     - Legais
-    - Saúde
-    - Fabricação
+    - Integridade
+    - Indústria
     - Loja
 
 - **Regiões** : fornece opiniões legais sobre a conformidade dos serviços em nuvem da Microsoft com várias leis de vários países. Os países específicos incluem Austrália, República Tcheca, Alemanha, Polônia, Romênia, Espanha e Reino Unido.
@@ -118,7 +118,7 @@ Funções administrativas que estão disponíveis somente para a conta de admini
   
  A página de **configurações** permite que você atribua acesso baseado em função ao Gerenciador de conformidade. Para obter mais informações, consulte a seção "permissões e controle de acesso baseado em função" em [usar o Gerenciador de conformidade para ajudar a atender aos requisitos de proteção de dados e regulamentados ao usar os serviços de nuvem da Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Pesquisa
+### <a name="search"></a>Search
 
 Clique na lupa no canto superior direito da página do portal de confiança do serviço para expandir a caixa, insira seus termos de pesquisa e pressione **Enter**.
 

@@ -3,17 +3,17 @@ title: RGPD para SharePoint Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Saiba mais sobre como atender aos requisitos de RGPD no SharePoint Server local.
-ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253882"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152733"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD para SharePoint Server
 
@@ -35,7 +35,9 @@ A abordagem básica recomendada para o conteúdo gerado pelo usuário em sites e
 
 A abordagem recomendada para compartilhamentos de arquivos e sites do SharePoint inclui estas etapas:
 
-1.  **[Instale e configure o verificador da Proteção de Informações do Azure.](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  
+  **
+  [Instale e configure o verificador da Proteção de Informações do Azure.](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Decida quais tipos de dados confidenciais usar.
 

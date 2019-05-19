@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: As organizações frequentemente são obrigadas a manter documentos por um determinado período devido a regulamentações de conformidade, legais ou outras. No entanto, reter os documentos por mais tempo do que o necessário poderá expor a organização a riscos legais.
-ms.openlocfilehash: 7fb0c546fb65bf2cc2e67fe7e047593892cea58d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e8f85f4cc9ae541d8a962dfb270e5216c912ac7d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259682"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153913"
 ---
 # <a name="create-a-document-deletion-policy"></a>Criar uma política de exclusão de documentos
 
@@ -40,7 +40,7 @@ Você pode criar uma política de exclusão do documento do zero ou pode usar um
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Exemplos
 
-Um conjunto de sites ou um modelo de conjunto de sites pode conter uma ou mais políticas associadas a ele, e cada uma dessas políticas pode conter uma ou mais regras. No enTanto, pode haver apenas uma política ativa por site e pode haver apenas uma regra de exclusão ativa a qualquer momento para as bibliotecas no site.
+Um conjunto de sites ou um modelo de conjunto de sites pode conter uma ou mais políticas associadas a ele, e cada uma dessas políticas pode conter uma ou mais regras. No entanto, pode haver apenas uma política ativa por site e pode haver apenas uma regra de exclusão ativa a qualquer momento para as bibliotecas no site.
   
 ![Diagrama mostrando a relação entre as políticas](media/IP-Two-policies-four-rules.png)
   
@@ -122,7 +122,7 @@ Além disso, as políticas e regras são ajustadas a um conjunto de sites espec�
     
 6. Insira um nome e escolha estas opções:
     
-  - Escolha se a regra excluirá permanentemente documentos ou os excluirá para a Lixeira. A Lixeira oferece um segundo nível de segurança antes que um item seja permanentemente excluído de um site. Para obter mais informações sobre a lixeira, confira esVaziar [a lixeira ou restaurar seus arquivos](http://go.microsoft.com/fwlink/p/?LinkID=404348).
+  - Escolha se a regra excluirá permanentemente documentos ou os excluirá para a Lixeira. A Lixeira oferece um segundo nível de segurança antes que um item seja permanentemente excluído de um site. Para obter mais informações sobre a lixeira, confira esvaziar [a lixeira ou restaurar seus arquivos](http://go.microsoft.com/fwlink/p/?LinkID=404348).
     
   - Escolha se a data de exclusão será calculada a partir da data em que um documento foi criado ou modificado pela última vez.
     

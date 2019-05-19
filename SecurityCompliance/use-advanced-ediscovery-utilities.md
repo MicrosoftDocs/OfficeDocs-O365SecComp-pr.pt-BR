@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Saiba mais sobre os utilitários na descoberta eletrônica avançada do Office 365, incluindo log de caso, dados claros, erros de processo, modificar relevância e análise de transparência.  '
-ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df769ddddd37284da50bc715444f2bf928307706
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265353"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157953"
 ---
 # <a name="use-office-365-advanced-ediscovery-utilities"></a>Usar os utilitários de descoberta eletrônica avançada do Office 365
 
@@ -82,7 +82,7 @@ Esta seção descreve como ignorar ou reverter uma amostra de relevância.
     
   - **Ignorar amostra atual-todos os exemplos abertos**: isso marcará, como **ignorar**, todos os arquivos não marcados em todos os exemplos abertos de todos os usuários. Essa opção não é recomendada se os usuários estiverem atualmente em uma marcação de amostra.
     
-  - **Reverter último exemplo**: a última amostra de treinamento de relevância será revertida, independentemente de estar antes ou após o processo de "cálculo". A reVersão de um exemplo de atualização não é permitida.
+  - **Reverter último exemplo**: a última amostra de treinamento de relevância será revertida, independentemente de estar antes ou após o processo de "cálculo". A reversão de um exemplo de atualização não é permitida.
     
 4. Clique em **executar** para executar. 
     

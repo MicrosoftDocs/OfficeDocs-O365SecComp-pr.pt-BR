@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/20/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Os administradores podem usar o cmdlet Search-Mailbox para pesquisar caixas de correio do usuário e, em seguida, excluir mensagens de uma caixa de correio.
-ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158483"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Procurar e excluir mensagens - Ajuda para administradores
   
 Os administradores podem usar o cmdlet **Search-Mailbox** para pesquisar caixas de correio do usuário e, em seguida, excluir mensagens de uma caixa de correio. 
   
-Para pesquisar e excluir mensagens em uma etapa, execute o cmdlet **Search-Mailbox** com a opção _DeleteContent_ No enTanto, ao fazer isso, você não pode visualizar os resultados da pesquisa ou gerar um log de mensagens que serão retornadas pela pesquisa, e você poderá excluir inadvertidamente mensagens que não pretendia. Para visualizar um log das mensagens encontradas na pesquisa antes de serem excluídas, execute o cmdlet **Search-Mailbox** com o comutador de _logon_ . 
+Para pesquisar e excluir mensagens em uma etapa, execute o cmdlet **Search-Mailbox** com a opção _DeleteContent_ No entanto, ao fazer isso, você não pode visualizar os resultados da pesquisa ou gerar um log de mensagens que serão retornadas pela pesquisa, e você poderá excluir inadvertidamente mensagens que não pretendia. Para visualizar um log das mensagens encontradas na pesquisa antes de serem excluídas, execute o cmdlet **Search-Mailbox** com o comutador de _logon_ . 
   
 Como uma proteção adicional, você pode primeiro copiar as mensagens para outra caixa de correio usando os parâmetros _TargetMailbox_ e _TargetFolder_ . Ao fazer isso, você mantém uma cópia das mensagens excluídas caso precise acessá-las novamente. 
   

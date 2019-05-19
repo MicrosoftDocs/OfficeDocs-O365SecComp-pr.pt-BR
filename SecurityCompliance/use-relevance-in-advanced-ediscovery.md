@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Saiba mais sobre o módulo de relevância na descoberta eletrônica avançada do Office 365, incluindo um fluxo de trabalho e diretrizes e etapas para treinamento e análise de arquivo.  '
-ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b585008dca58f95b0f3b932b2ee4b82a1ae731
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263783"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156073"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Usar o módulo de relevância na descoberta eletrônica avançada do Office 365
 
@@ -77,7 +77,7 @@ Veja a seguir uma visão geral das diretrizes de treinamento e análise de relev
     
   - Os arquivos do Excel digitalizados no formato PDF devem ser tratados da mesma forma que os arquivos nativos do Excel ao marcar arquivos.
     
-  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações inCorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
+  - Quando estiver em dúvida sobre a marcação de relevância de um arquivo, consulte um especialista. Marcações incorretas durante o treinamento de relevância podem causar perda de tempo mais tarde no processo e também podem ter um impacto negativo sobre a qualidade dos resultados gerais.
     
   - As palavras-chave que foram definidas nas listas de palavras-chave serão exibidas em cores para ajudar o usuário a identificar arquivos relevantes durante a marcação.
     

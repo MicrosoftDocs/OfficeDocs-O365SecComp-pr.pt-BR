@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/19/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: Este artigo descreve como atualizar um registro de Serviço de Nome de Domínio (DNS) para que você possa usar a Sender Policy Framework (SPF) com seu domínio personalizado no Office 365. Usar a SPF ajuda a validar emails de saída enviados do seu domínio personalizado.'
-ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5194a9a8a8b694bc2dbac0eaf9b50517e46a9064
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260709"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158193"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurar o SPF no Office 365 para ajudar a evitar falsificações
 
@@ -75,7 +75,7 @@ Reúna essas informações:
 
 1,2 este é o registro TXT da SPF do Office 365 mais comum. Este registro funciona para praticamente todos, independentemente de o datacenter do Office 365 estar localizado nos Estados Unidos ou na Europa (inclusive na Alemanha) ou em outro local.
     
-1,3 no enTanto, se você comprou o Office 365 Alemanha, parte do Microsoft Cloud Alemanha, você deve usar a instrução include da linha 4 em vez da linha 2. Por exemplo, se você estiver totalmente hospedado no Office 365 Alemanha, ou seja, se você não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 4 e 7 e teria esta aparência:
+1,3 no entanto, se você comprou o Office 365 Alemanha, parte do Microsoft Cloud Alemanha, você deve usar a instrução include da linha 4 em vez da linha 2. Por exemplo, se você estiver totalmente hospedado no Office 365 Alemanha, ou seja, se você não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 4 e 7 e teria esta aparência:
     
   ```
    v=spf1 include:spf.protection.outlook.de -all

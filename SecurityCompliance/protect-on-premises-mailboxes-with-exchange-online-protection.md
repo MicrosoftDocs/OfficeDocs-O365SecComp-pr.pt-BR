@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: Mesmo que você planeje hospedar algumas ou todas as suas caixas de correio no local, ainda poderá proteger as caixas de correio com o Exchange Online Protection (EOP). Para configurar conectores, você precisa ter uma conta de administrador global do Office 365 ou de administrador da empresa do Exchange (grupo de funções do Gerenciamento de Organização). Para obter informações sobre como as permissões do Office 365 se relacionam às permissões do Exchange, consulte Atribuindo funções de administrador no Office 365 operado pela 21Vianet. Se todas as suas caixas de correio do Exchange estiverem no local, siga estas etapas para configurar o serviço EOP.
-ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261549"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156933"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteger caixas de correio locais com o Exchange Online Protection
 
@@ -85,6 +85,6 @@ Se você tiver caixas de correio do Exchange no local e uma ou mais caixas de co
   
 Você pode escolher um cenário híbrido para aproveitar o email baseado em nuvem para a maioria dos seus funcionários. Você pode fazer isso enquanto também hospeda algumas caixas de correio no local; por exemplo, para seu departamento jurídico. 
   
-Uma configuração híbrida pode ser complexa, mas tem vários benefícios. Para saber mais sobre como configurar cenários híbridos com o Exchange, confira conFigurando [recursos de implantação híbrida do Exchange com o Office 365 operado pela 21vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
+Uma configuração híbrida pode ser complexa, mas tem vários benefícios. Para saber mais sobre como configurar cenários híbridos com o Exchange, confira Configurando [recursos de implantação híbrida do Exchange com o Office 365 operado pela 21vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
   
 

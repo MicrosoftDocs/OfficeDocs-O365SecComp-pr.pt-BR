@@ -3,7 +3,7 @@ title: Configurar limites de conformidade para investigações de Descoberta ele
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264645"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156573"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
 
@@ -171,15 +171,15 @@ Para criar um novo caso e atribuir Membros:
 
 Tenha em mente as seguintes limitações ao gerenciar casos de descoberta eletrônica e investigações que usam limites de conformidade.
   
-- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar locais de conteúdo fora da sua agência. No enTanto, por causa do filtro de permissões de pesquisa, o conteúdo desses locais não será incluído nos resultados da pesquisa.
+- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar locais de conteúdo fora da sua agência. No entanto, por causa do filtro de permissões de pesquisa, o conteúdo desses locais não será incluído nos resultados da pesquisa.
     
-- Os limites de conformidade não se aplicam a isenções em casos de descoberta eletrônica. Isso significa que um gerente de descoberta eletrônica em uma agência pode colocar um usuário em uma agência diferente em espera. No enTanto, o limite de conformidade será imposto se o Gerenciador de descoberta eletrônica Pesquisar nos locais de conteúdo do usuário que foi colocado em espera. Isso significa que o Gerenciador de descoberta eletrônica não poderá pesquisar os locais de conteúdo do usuário, mesmo que eles possam colocar o usuário em espera.
+- Os limites de conformidade não se aplicam a isenções em casos de descoberta eletrônica. Isso significa que um gerente de descoberta eletrônica em uma agência pode colocar um usuário em uma agência diferente em espera. No entanto, o limite de conformidade será imposto se o Gerenciador de descoberta eletrônica Pesquisar nos locais de conteúdo do usuário que foi colocado em espera. Isso significa que o Gerenciador de descoberta eletrônica não poderá pesquisar os locais de conteúdo do usuário, mesmo que eles possam colocar o usuário em espera.
     
     Além disso, as estatísticas de retenção só serão aplicadas aos locais de conteúdo na agência.
     
 - Os filtros de permissão de pesquisa não são aplicados às pastas públicas do Exchange.
 
-## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Pesquisando e exportando conteúdo em ambientes multiGeográfico
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Pesquisando e exportando conteúdo em ambientes multigeográfico
 
 Os filtros de permissões de pesquisa também permitem que você controle onde o conteúdo é encaminhado para exportação e qual datacenter pode ser pesquisado ao pesquisar locais de conteúdo em um [ambiente multigeográfico do SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
@@ -268,4 +268,4 @@ Se a região especificada no filtro permissões de pesquisa não existir na sua 
   
  **Qual é o número máximo de filtros de permissão de pesquisa que podem ser criados em uma organização?**
   
-Não há limite para o número de filtros de permissões de pesquisa que podem ser criados em uma organização. No enTanto, o desempenho da pesquisa será afetado quando houver mais de 100 filtros de permissões de pesquisa. Para manter o número de filtros de permissão de pesquisa em sua organização o menor possível, crie filtros que combinem regras para o Exchange, SharePoint e OneDrive em um único filtro de permissões de pesquisa sempre que possível.
+Não há limite para o número de filtros de permissões de pesquisa que podem ser criados em uma organização. No entanto, o desempenho da pesquisa será afetado quando houver mais de 100 filtros de permissões de pesquisa. Para manter o número de filtros de permissão de pesquisa em sua organização o menor possível, crie filtros que combinem regras para o Exchange, SharePoint e OneDrive em um único filtro de permissões de pesquisa sempre que possível.

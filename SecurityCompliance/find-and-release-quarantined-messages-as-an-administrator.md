@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Este tópico descreve como os administradores do Exchange Online e do Exchange Online Protection (EOP) podem localizar, liberar e relatar mensagens que estejam na quarentena do Centro de administração do Exchange (EAC).
-ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7ac65ae5b4225e56861dacacdd61bf5a237f7ca8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255251"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154563"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Localizar e liberar mensagens em quarentena como um administrador
 
@@ -144,7 +144,7 @@ Se você quiser liberar as mensagens para destinatários, as opções são:
   
 Clique em **Liberar mensagem selecionada e permitir remetente** na lista suspensa. 
     
-3. A caixa de diálogo **liberar mensagem e permitir remetente** é exibida. Opcionalmente, você pode optar por relatar a mensagem para a Microsoft e, então, clicar em **liberar e permitir**. A mensagem será disponibilizada a todos os destinatários para os quais é endereçada e todas as mensagens futuras deste remetente serão permitidas. No enTanto, se essa mensagem foi colocada em quarentena devido a uma regra de fluxo de emails ou remetente bloqueado, o remetente continuará a ser bloqueado para mensagens futuras. 
+3. A caixa de diálogo **liberar mensagem e permitir remetente** é exibida. Opcionalmente, você pode optar por relatar a mensagem para a Microsoft e, então, clicar em **liberar e permitir**. A mensagem será disponibilizada a todos os destinatários para os quais é endereçada e todas as mensagens futuras deste remetente serão permitidas. No entanto, se essa mensagem foi colocada em quarentena devido a uma regra de fluxo de emails ou remetente bloqueado, o remetente continuará a ser bloqueado para mensagens futuras. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Liberar uma mensagem em quarentena para destinatários específicos sem relatá-la como falso positivo
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
@@ -192,7 +192,7 @@ Se você clicar no ícone **Atualizar**![ícone](media/ITPro-EAC-RefreshIcon.gif
   
 Se você clicar no ícone **Atualizar**![ícone](media/ITPro-EAC-RefreshIcon.gif) de atualização para atualizar seus dados e, em seguida, clicar duas vezes na mensagem, verá que ela foi liberada para os destinatários pretendidos. 
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection4"> </a>
 
 [Quarantine FAQ](quarantine-faq.md)

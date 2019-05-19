@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Você pode configurar uma quarentena para mensagens de email de entrada no Office 365, onde as mensagens de email de entrada que foram filtradas como spam, em massa, emails de phishing e malware podem ser mantidas para revisão posterior.
-ms.openlocfilehash: 37d573dda0065ce00b0b838bad56c5d9b1979477
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90a8c9f36468fdc8c5d5825776e9678cd8f8e109
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266817"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156823"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Colocar mensagens de email em quarentena no Office 365
 

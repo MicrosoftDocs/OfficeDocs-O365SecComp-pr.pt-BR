@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Se você enviar um alto volume de emails de domínio não registrados, correrá o risco de que seu email fique bloqueado. Leia este artigo para saber mais.
-ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 207b71ab7e144af9709e7485d61c936e07271a11
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263983"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156293"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Email de domínio não registrado: o que você precisa saber
 
@@ -48,7 +48,7 @@ Há várias coisas que você precisa fazer se você estiver bloqueado para envio
 
 4. Após concluir, você precisará ligar para o suporte da Microsoft e solicitar que o locatário seja desbloqueado para envio de domínios não registrados.  Fornecer o código de erro é útil, mas você precisará provar que seu ambiente está protegido e que o spam não será enviado novamente. É possível encontrar mais informações sobre como abrir um caso de suporte [aqui](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Office 365 email anti-spam protection](anti-spam-protection.md)
 

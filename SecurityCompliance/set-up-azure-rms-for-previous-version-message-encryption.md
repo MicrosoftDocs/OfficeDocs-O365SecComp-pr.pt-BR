@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/30/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: A versão anterior da criptografia de mensagem do Office 365 depende do Microsoft Azure Rights Management (anteriormente conhecido como gerenciamento de direitos do Windows Azure Active Directory).
-ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 84922a57c6245cf3214f17ba922417b5e025b796
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266883"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158493"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurar o Azure Rights Management para a versão anterior de criptografia de mensagem do Office 365
 
@@ -51,7 +51,7 @@ Você precisa ativar o Azure Rights Management para que os usuários em sua orga
 Um TPD é um arquivo XML que contém informações sobre as configurações de gerenciamento de direitos da sua organização. Por exemplo, o TPD contém informações sobre o SLC (certificado de licenciante do servidor) usado para assinar e criptografar certificados e licenças, as URLs usadas para licenciamento e publicação e assim por diante. Importe o TPD para a sua organização do Office 365 usando o Windows PowerShell.
   
 > [!IMPORTANT]
-> Anteriormente, você poderia optar por importar o TPDs do Active Directory Rights Management Service (AD RMS) para sua organização do Office 365. No enTanto, isso impedirá que você use os novos recursos do OME e não seja recomendado. Se sua organização do Office 365 estiver atualmente configurada dessa forma, a Microsoft recomenda que você crie um plano para migrar do seu RMS do Active Directory local para a proteção de informações do Azure baseada em nuvem. Para saber mais, confira [migrar do AD RMS para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Você não poderá usar os novos recursos do OME até concluir a migração para a proteção de informações do Azure.
+> Anteriormente, você poderia optar por importar o TPDs do Active Directory Rights Management Service (AD RMS) para sua organização do Office 365. No entanto, isso impedirá que você use os novos recursos do OME e não seja recomendado. Se sua organização do Office 365 estiver atualmente configurada dessa forma, a Microsoft recomenda que você crie um plano para migrar do seu RMS do Active Directory local para a proteção de informações do Azure baseada em nuvem. Para saber mais, confira [migrar do AD RMS para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Você não poderá usar os novos recursos do OME até concluir a migração para a proteção de informações do Azure.
   
  **Para importar o TPDs do Azure RMS**
   

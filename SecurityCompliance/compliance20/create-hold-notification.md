@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242769"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155153"
 ---
 # <a name="create-a-legal-hold-notice"></a>Criar um aviso de retenção legal
 
-Usando as comunicações de conversões de descoberta eletrônica avançada (prévia), as organizações podem gerenciar seu fluxo de trabalho em relação à comunicação com os responsáveis. Por meio da ferramenta de comunicação, as equipes jurídicas podem, sistematicamente, enviar, coletar e acompanhar as notificações de retenção legal. O processo de criação flexível também permite que as equipes personalizem o fluxo de trabalho de notificação de espera e o conteúdo dos avisos enviados aos responsáveis. 
+Usando a comunicação de descoberta eletrônica avançada, as organizações podem gerenciar seu fluxo de trabalho em relação à comunicação com os responsáveis. Por meio da ferramenta de comunicação, as equipes jurídicas podem, sistematicamente, enviar, coletar e acompanhar as notificações de retenção legal. O processo de criação flexível também permite que as equipes personalizem o fluxo de trabalho de notificação de espera e o conteúdo dos avisos enviados aos responsáveis. 
 
 ![Página de comunicações](../media/CommunicationPage.PNG)
 
@@ -35,7 +35,7 @@ A primeira etapa é especificar os detalhes apropriados para avisos de retençã
 
 ![Página de comunicação de nome](../media/NameCommunication.PNG)
 
-1. No centro de conformidade do & de segurança, vá para descoberta **eletrônica avançada do > (visualização)** para exibir a lista de casos em sua organização.
+1. No centro de conformidade do & de segurança, vá para descoberta eletrônica **avançada do >** para exibir a lista de casos em sua organização.
    
 2. Clique na guia **comunicações** e, em seguida, clique em **nova comunicação**.
    
@@ -49,7 +49,7 @@ A primeira etapa é especificar os detalhes apropriados para avisos de retençã
 
 ## <a name="step-2-define-the-portal-content"></a>Etapa 2: definir o conteúdo do portal
 
-Em seguida, você pode criar e adicionar o conteúdo do aviso de isenção. Na página **definir conteúdo do portal** no Assistente para **criar comunicação** , especifique o conteúdo do aviso de isenção. Esse conteúdo será automaticamente acrescentado aos avisos de emissão, reEmissão, lembrete e escalonamento. Além disso, esse conteúdo aparecerá no portal de conformidade do responsáveis. 
+Em seguida, você pode criar e adicionar o conteúdo do aviso de isenção. Na página **definir conteúdo do portal** no Assistente para **criar comunicação** , especifique o conteúdo do aviso de isenção. Esse conteúdo será automaticamente acrescentado aos avisos de emissão, reemissão, lembrete e escalonamento. Além disso, esse conteúdo aparecerá no portal de conformidade do responsáveis. 
 
 ![Página de conteúdo do portal](../media/PortalContent.PNG)
 
@@ -68,7 +68,7 @@ Para criar o conteúdo do portal:
 
 Após definir o conteúdo do aviso de espera, você pode configurar os fluxos de trabalho em torno do envio e gerenciamento do processo de notificação. Notificações são mensagens de email enviadas para notificação e acompanhamento de responsáveis. Todos os responsáveis adicionados à comunicação receberão a mesma notificação. 
 
-Para configurar e enviar um aviso de espera, você deve incluir notificações de emissão, reEmissão e lançamento.
+Para configurar e enviar um aviso de espera, você deve incluir notificações de emissão, reemissão e lançamento.
 
 ### <a name="issuance-notification"></a>Notificação de emissão 
 
@@ -86,7 +86,7 @@ Para criar uma notificação de emissão:
    
 5. Clique em **Salvar** 
 
-### <a name="re-issuance-notification"></a>Notificação de reEmissão 
+### <a name="re-issuance-notification"></a>Notificação de reemissão 
 
 Como o caso progride, os responsáveis podem ser necessários para preservar dados adicionais ou menos do que foram instruídos anteriormente. Depois de atualizar o conteúdo do aviso de espera, a notificação de reemissão alerta os responsáveis sobre as alterações às obrigações de preservação.
 
@@ -184,6 +184,6 @@ Para adicionar os responsáveis:
 >[!NOTE]
 >Você só pode adicionar os responsáveis que foram adicionados ao caso e não foram enviados outra notificação no caso.
 
-## <a name="step-6-review-settings"></a>Etapa 6: reVisar as configurações
+## <a name="step-6-review-settings"></a>Etapa 6: revisar as configurações
 
 Após revisar as configurações e clicar em **Enviar** para concluir a comunicação, o sistema iniciará automaticamente o fluxo de trabalho de comunicação enviando o aviso de emissão.

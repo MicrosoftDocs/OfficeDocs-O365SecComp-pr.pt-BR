@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,18 +12,18 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se você quiser ter certeza de que recebeu emails de um remetente específico, porque confia neles e suas mensagens, é possível ajustar a lista de permissões em uma política de filtro de spam no centro de administração do Exchange.
-ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4731fe4a72a3c331725b82e09240e6af91bb6afd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258169"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153723"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365
   
 Se você quiser ter certeza de que recebeu emails de um remetente específico, porque confia neles e suas mensagens, é possível ajustar a lista de permissões em uma política de filtro de spam no centro de administração do Exchange (Eat) no **filtro de spam**de **proteção** \> . Saiba mais sobre isso em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md). Outra opção seria criar uma regra de fluxo de emails do Exchange (também conhecida como regra de transporte) que funciona como o domínio ou a lista de permissões baseada no usuário no filtro de spam. Você pode bloquear mensagens enviadas de um determinado domínio ou usuário de uma forma semelhante.
   
-Uma regra de fluxo de emails seria útil nessa situação se você precisar filtrar por critérios complexos, como a verificação de cabeçalhos de mensagens ou os nomes de anexos ou se você quiser adicionar ações complexas, como adicionar um aviso de isenção de responsabilidade à mensagem ou aplicar um período de tempo em que o regra o e está ativo. No enTanto, o método preferencial para garantir que os emails de um remetente ou domínio específico ignorem o filtro de spam é adicioná-los à sua política de filtro de spam. Comece a usar o **filtro de spam**de **proteção** \> . Saiba mais em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
+Uma regra de fluxo de emails seria útil nessa situação se você precisar filtrar por critérios complexos, como a verificação de cabeçalhos de mensagens ou os nomes de anexos ou se você quiser adicionar ações complexas, como adicionar um aviso de isenção de responsabilidade à mensagem ou aplicar um período de tempo em que o regra o e está ativo. No entanto, o método preferencial para garantir que os emails de um remetente ou domínio específico ignorem o filtro de spam é adicioná-los à sua política de filtro de spam. Comece a usar o **filtro de spam**de **proteção** \> . Saiba mais em [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md).
   
 > [!TIP]
 > Uma lista baseada em domínio em uma regra de fluxo de emails não é tão segura quanto uma lista baseada em endereço IP, pois os domínios podem ser falsificados. Além disso, se o endereço IP de envio estiver em uma lista de bloqueio, ele será bloqueado mesmo se a filtragem do domínio ou do usuário for ignorada. Isso ocorre porque uma regra de fluxo de emails em um domínio ou usuário não substitui a lista de bloqueios de IP global. Recomendamos o uso de uma lista com base em endereço IP, na maioria dos casos. Para criar uma lista baseada no endereço IP, você pode usar a lista de IP permitidos ou a lista de IP bloqueados no filtro de conexão. Todas as mensagens enviadas desses endereços IP não serão verificadas pelo filtro de conteúdo. Para obter instruções sobre como configurar a política de filtro de conexão adicionando endereços IP à lista de IPs permitidos ou à lista de IPs bloqueados, consulte [Configurar a política de filtro de conexão](configure-the-connection-filter-policy.md). 

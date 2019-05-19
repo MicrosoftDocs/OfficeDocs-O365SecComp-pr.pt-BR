@@ -3,7 +3,7 @@ title: Gerenciar a configuração de relevância na Descoberta Eletrônica Avan�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Leia as recomendações para a configuração do treinamento em relevância na Descoberta Eletrônica Avançada do Office 365 para classificar arquivos por relevância e gerar resultados analíticos.
-ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5efcaca0d62cec6ccf61f20eea72ed9c538e436e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259659"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155683"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gerenciar a configuração de relevância na Descoberta Eletrônica Avançada do Office 365
 

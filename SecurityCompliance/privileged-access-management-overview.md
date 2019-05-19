@@ -3,7 +3,7 @@ title: Gerenciamento de acesso privilegiado no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre o gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: e03b615971b90e8443f73c3ec8c4cd3febe90450
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261794"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157323"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gerenciamento de acesso privilegiado no Office 365
 
@@ -39,7 +39,7 @@ O gerenciamento de acesso privilegiado complementa outras proteções de recurso
 
 O gerenciamento de acesso privilegiado no Office 365 é definido e escopo no nível da **tarefa** , enquanto o gerenciamento de identidade privilegiada do Azure ad aplica proteção no nível da **função** com a capacidade de executar várias tarefas. O gerenciamento de identidade privilegiada do Azure AD permite principalmente o gerenciamento de acessos para funções do AD e grupos de função, enquanto o gerenciamento de acesso privilegiado no Office 365 aplica-se apenas no nível da tarefa.
 
-- **Habilitando o gerenciamento de acesso privilegiado no Office 365 enquanto já estava usando o gerenciamento de identidade privilegiaDa do Azure AD:** A adição de gerenciamento de acesso privilegiado no Office 365 fornece outra camada granular de recursos de proteção e auditoria para acesso privilegiado aos dados do Office 365.
+- **Habilitando o gerenciamento de acesso privilegiado no Office 365 enquanto já estava usando o gerenciamento de identidade privilegiada do Azure AD:** A adição de gerenciamento de acesso privilegiado no Office 365 fornece outra camada granular de recursos de proteção e auditoria para acesso privilegiado aos dados do Office 365.
 
 - **Habilitar o Azure ad Privileged Identity Management enquanto já usa o gerenciamento de acesso privilegiado no Office 365:**  Adicionar o Azure AD Privileged Identity Management ao gerenciamento de acesso privilegiado no Office 365 pode estender o acesso privilegiado a dados fora do Office 365, que é definido principalmente por funções de usuário ou identidade.  
 

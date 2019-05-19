@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor configurações de proteção, como criptografia ou marcas d'água em conteúdo rotulado.
-ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265689"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155973"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -75,7 +75,7 @@ Depois que um rótulo de confidencialidade é aplicado a um email ou documento, 
     ![Marca-d'água e cabeçalho aplicados ao documento](media/Sensitivity_label_watermark_header.png)
 
 - 
-  **Evitar a perda de dados** ativando a proteção do ponto de extremidade no Intune. Se um conteúdo confidencial for baixado, é possível evitar a perda de dados em dispositivos Windows. Por exemplo, não é possível copiar o conteúdo rotulado no Dropbox, Gmail ou em uma unidade USB. Para que seus rótulos de confidencialidade possam usar a WIP (Proteção de Informações do Windows), primeiro é necessário criar uma política de proteção de aplicativos no portal do Azure. Para obter mais informações, confira [Como a Proteção de Informações do Windows protege arquivos com um rótulo de confidencialidade](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+  **Evitar a perda de dados** ativando a proteção do ponto de extremidade no Intune. Se um conteúdo confidencial for baixado, é possível evitar a perda de dados em dispositivos Windows. Por exemplo, não é possível copiar o conteúdo rotulado no Dropbox, Gmail ou em uma unidade USB. Para que seus rótulos de confidencialidade possam usar a WIP (Proteção de Informações do Windows), primeiro é necessário criar uma política de proteção de aplicativos no portal do Azure. Para obter mais informações, confira [Como a Proteção de Informações do Windows protege arquivos com um rótulo de confidencialidade](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Aplique o rótulo automaticamente ao conteúdo que contém informações confidenciais. ** Você pode escolher quais tipos de informações confidenciais que você deseja rotuladas e o rótulo pode ser aplicado automaticamente ou você pode solicitar aos usuários a aplicarem o rótulo recomendável. Se você recomendar um rótulo, o prompt exibe qualquer texto que você escolher. Para saber mais, confira [aplicar um rótulo de confidencialidade ao conteúdo automaticamente](apply_sensitivity_label_automatically.md).
 
@@ -185,8 +185,10 @@ Nos aplicativos do Office em dispositivos Android, os rótulos de confidencialid
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Mais informações sobre rótulos de confidencialidade nos aplicativos do Office
 
-- [Aplicar rótulos de confidencialidade aos seus documentos e email no Office](https://support.office.com/pt-BR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Problemas conhecidos ao aplicar rótulos de confidencialidade aos arquivos do Office](https://support.office.com/pt-BR/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- 
+  [Aplicar rótulos de confidencialidade aos seus documentos e email no Office](https://support.office.com/pt-BR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- 
+  [Problemas conhecidos ao aplicar rótulos de confidencialidade aos arquivos do Office](https://support.office.com/pt-BR/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Como os rótulos de confidencialidade funcionam com rótulos existentes da Proteção de Informações do Azure
 
@@ -215,13 +217,16 @@ E se um usuário tentar salvar o conteúdo rotulado em uma unidade USB, será ex
 
 ### <a name="important-prerequisites"></a>Pré-requisitos importantes
 
-Antes que seus rótulos de confidencialidade possam usar a WIP, é necessário atender aos pré-requisitos descritos aqui: [Como a Proteção de Informações do Windows protege arquivos com um rótulo de confidencialidade](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Este tópico descreve os seguintes pré-requisitos:
+Antes que seus rótulos de confidencialidade possam usar a WIP, é necessário atender aos pré-requisitos descritos aqui: [Como a Proteção de Informações do Windows protege arquivos com um rótulo de confidencialidade](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Este tópico descreve os seguintes pré-requisitos:
 
 - Verifique se você tem o Windows 10, versão 1809 ou posterior.
-- [Configure a WDATP (Proteção Avançada contra Ameaças do Windows Defender)](https://docs.microsoft.com/pt-BR/windows/security/threat-protection/windows-defender-atp/get-started), que examina o conteúdo em busca de um rótulo e aplica a proteção WIP correspondente. A ATP executa algumas ações independentemente da WIP, como gerar relatórios sobre anomalias.
+- 
+  [Configure a WDATP (Proteção Avançada contra Ameaças do Windows Defender)](https://docs.microsoft.com/pt-BR/windows/security/threat-protection/windows-defender-atp/get-started), que examina o conteúdo em busca de um rótulo e aplica a proteção WIP correspondente. A ATP executa algumas ações independentemente da WIP, como gerar relatórios sobre anomalias.
 - Crie uma política de WIP que se aplique aos dispositivos de ponto de extremidade. Você pode fazer isso em qualquer um destes locais:
-    - [Crie uma política de WIP com MDM usando o portal do Azure para o Microsoft Intune](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Crie e implante uma política de WIP usando o System Center Configuration Manager](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - 
+  [Crie uma política de WIP com MDM usando o portal do Azure para o Microsoft Intune](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - 
+  [Crie e implante uma política de WIP usando o System Center Configuration Manager](https://docs.microsoft.com/pt-BR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteger o conteúdo em aplicativos e serviços de terceiros usando o Microsoft Cloud App Security
 
@@ -233,8 +238,10 @@ Para obter mais informações, consulte [Aplicar automaticamente rótulos de cla
 
 Antes que seus rótulos de confidencialidade possam usar a CAS, é necessário atender aos pré-requisitos descritos aqui: [Aplicar automaticamente os rótulos de classificação da Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/use-case-information-protection). Esse tópico descreve os seguintes pré-requisitos:
 
-- [Habilitar a Segurança no Aplicativo na Nuvem e a Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/azip-integration) para seu locatário.
-- [Conectar o aplicativo](https://docs.microsoft.com/pt-BR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Segurança no Aplicativo na Nuvem.
+- 
+  [Habilitar a Segurança no Aplicativo na Nuvem e a Proteção de Informações do Azure](https://docs.microsoft.com/pt-BR/cloud-app-security/azip-integration) para seu locatário.
+- 
+  [Conectar o aplicativo](https://docs.microsoft.com/pt-BR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Segurança no Aplicativo na Nuvem.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Estender rótulos de confidencialidade a aplicativos e serviços de terceiros usando o SDK de Proteção de Informações da Microsoft
 

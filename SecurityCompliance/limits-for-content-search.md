@@ -3,7 +3,7 @@ title: Limites de pesquisa de conteúdo no centro de conformidade do & de segura
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Saiba mais sobre os limites em vigor para o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança no Office 365, como o número máximo de pesquisas simultâneas. '
-ms.openlocfilehash: 715c64433ad78197411aff465c7a08baf2f71eb8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252019"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155903"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limites de pesquisa de conteúdo no centro de conformidade do & de segurança
 
@@ -37,10 +37,10 @@ A tabela a seguir lista os limites de pesquisa no centro de conformidade do & de
 |:-----|:-----|
 |O número máximo de caixas de correio ou sites que podem ser pesquisados em uma única pesquisa de conteúdo  <br/> |Sem limite  <br/> |
 |O número máximo de pesquisas de conteúdo que podem ser executadas ao mesmo tempo em sua organização.  <br/> |Sem limite  <br/> |
-|O número máximo de pesquisas de conteúdo que um único usuário pode iniciar ao mesmo tempo. Observe que esse limite é mais provável de hit quando o usuário tenta iniciar várias pesquisas usando o comando **Get-ComplianceSearch \| Start-ComplianceSearch** no PowerShell de segurança do centro de conformidade do &.  <br/> |254  <br/> |
+|O número máximo de pesquisas de conteúdo que um único usuário pode iniciar ao mesmo tempo. Observe que esse limite é mais provável de hit quando o usuário tenta iniciar várias pesquisas usando o comando **Get-ComplianceSearch \| Start-ComplianceSearch** no PowerShell de segurança do centro de conformidade do &.  <br/> |10   <br/> |
 |O número máximo de itens por caixa de correio do usuário que são exibidos na página de visualização durante a visualização dos resultados da pesquisa de conteúdo.  <br/> |100  <br/> |
-|O número máximo de itens encontrados em todas as caixas de correio de usuário que são exibidas na página de visualização durante a visualização dos resultados da pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |1.000  <br/> |
-|O número máximo de caixas de correio do usuário que podem ser visualizadas nos resultados da pesquisa. Se houver mais de 1000 caixas de correio que contenham conteúdo que corresponda à consulta de pesquisa, somente as primeiras caixas de correio de 1000 com a maioria dos resultados de pesquisa estarão disponíveis para visualização.  <br/> |1.000  <br/> |
+|O número máximo de itens encontrados em todas as caixas de correio de usuário que são exibidas na página de visualização durante a visualização dos resultados da pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |1,000  <br/> |
+|O número máximo de caixas de correio do usuário que podem ser visualizadas nos resultados da pesquisa. Se houver mais de 1000 caixas de correio que contenham conteúdo que corresponda à consulta de pesquisa, somente as primeiras caixas de correio de 1000 com a maioria dos resultados de pesquisa estarão disponíveis para visualização.  <br/> |1,000  <br/> |
 |O número máximo de itens encontrados em sites do SharePoint e do OneDrive for Business que são exibidos na página de visualização durante a visualização dos resultados da pesquisa de conteúdo. Os itens mais recentes são exibidos.  <br/> |200  <br/> |
 |O número máximo de sites (no SharePoint e no OneDrive for Business) que podem ser visualizados nos resultados da pesquisa. Se houver mais de 200 sites de total que contenham conteúdo que corresponda à consulta de pesquisa, somente os primeiros 200 sites com mais resultados de pesquisa estarão disponíveis para visualização.  <br/> |200  <br/> |
 |O número máximo de itens por caixa de correio de pasta pública que são exibidos na página de visualização durante a visualização dos resultados da pesquisa de conteúdo.  <br/> |100  <br/> |

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ajudar a manter a confiança do usuário no uso de email, a Microsoft colocou várias políticas e tecnologias para ajudar a proteger os usuários.
-ms.openlocfilehash: 540610fc3d1b53692688c729b714c839bf436e24
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 836beea966e4c944876d418fa88e8c4f6baaf770
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260869"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156633"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Serviços para não clientes enviando emails para o Office 365
   
-O abuso por email, lixo eletrônico e emails fraudulentos (phishing) continuam a sobrecarregar todo o ecossistema de email. Para ajudar a manter a confiança do usuário no uso de email, a Microsoft colocou várias políticas e tecnologias para ajudar a proteger os usuários. No enTanto, a Microsoft reconhece que os emails legítimos não devem ser afetados negativamente. Portanto, estabelecemos um pacote de serviços para ajudar os remetentes a aprimorar a capacidade de enviar emails para os usuários do Office 365 ao gerenciar proativamente sua reputação de envio.
+O abuso por email, lixo eletrônico e emails fraudulentos (phishing) continuam a sobrecarregar todo o ecossistema de email. Para ajudar a manter a confiança do usuário no uso de email, a Microsoft colocou várias políticas e tecnologias para ajudar a proteger os usuários. No entanto, a Microsoft reconhece que os emails legítimos não devem ser afetados negativamente. Portanto, estabelecemos um pacote de serviços para ajudar os remetentes a aprimorar a capacidade de enviar emails para os usuários do Office 365 ao gerenciar proativamente sua reputação de envio.
   
 Esta visão geral fornece informações sobre os benefícios que fornecemos à sua organização, mesmo que você não seja um cliente do Office 365.
   
@@ -44,13 +44,13 @@ A Microsoft oferece várias opções de suporte para pessoas com problemas de en
   
 - Siga as instruções em qualquer notificação de falha na entrega que você receber.
     
-- ConFira os problemas mais comuns que não os clientes encontram na [solução de problemas de email enviados para o Office 365](troubleshooting-mail-sent-to-office-365.md).
+- Confira os problemas mais comuns que não os clientes encontram na [solução de problemas de email enviados para o Office 365](troubleshooting-mail-sent-to-office-365.md).
     
 - Use o portal de deslistação do [Office 365](https://sender.office.com) para enviar uma solicitação para que o seu IP seja removido da lista do remetente bloqueado. 
     
 - Leia os [fóruns da Comunidade da Microsoft](https://community.office365.com/en-us/f/).
     
-- Entre em contato com o cliente do Office 365 em que você está tentando enviar um email usando outro método e peça a ele para entrar em contato com o suporte da Microsoft e abrir um tíquete de suporte em seu nome. Em alguns casos, por motivos legais, o suporte da Microsoft deve se comunicar diretamente com o remetente que possui o espaço IP que está sendo bloqueado. No enTanto, os usuários que não são normalmente não podem abrir tíquetes de suporte.
+- Entre em contato com o cliente do Office 365 em que você está tentando enviar um email usando outro método e peça a ele para entrar em contato com o suporte da Microsoft e abrir um tíquete de suporte em seu nome. Em alguns casos, por motivos legais, o suporte da Microsoft deve se comunicar diretamente com o remetente que possui o espaço IP que está sendo bloqueado. No entanto, os usuários que não são normalmente não podem abrir tíquetes de suporte.
     
      Para obter mais informações sobre o suporte técnico da Microsoft para o Office 365, consulte [support](https://technet.microsoft.com/library/office-365-support.aspx).
     

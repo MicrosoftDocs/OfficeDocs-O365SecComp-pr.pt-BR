@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Além da linha de base, a criptografia no nível do volume habilitada por meio do BitLocker e do protocolo DKM, o Office 365 oferece uma camada adicional de criptografia no nível do aplicativo para conteúdo do cliente no Office 365, incluindo dados do Exchange Online, Skype for Business, SharePoint Online e OneDrive for Business. Isso é chamado de criptografia de serviço.
-ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266934"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156643"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Criptografia de serviço com chave do cliente para perguntas frequentes do Office 365
 
@@ -168,7 +168,7 @@ O código de serviço do Office 365 sempre tem um token de logon válido e não 
   
  **Usando a chave de disponibilidade para recuperar da perda de chave.**
   
-Você pode usar a chave de disponibilidade para se recuperar da perda das chaves do Azure Key Vault que estão associadas à mesma DEP, conforme descrito na resposta à entrada de perguntas FREQUENTEs "se minhas chaves forem destruídas, como posso recuperar?".
+Você pode usar a chave de disponibilidade para se recuperar da perda das chaves do Azure Key Vault que estão associadas à mesma DEP, conforme descrito na resposta à entrada de perguntas frequentes "se minhas chaves forem destruídas, como posso recuperar?".
   
 ## <a name="how-is-the-availability-key-used-with-sharepoint-online-and-onedrive-for-business"></a>Como a chave de disponibilidade é usada com o SharePoint Online e o OneDrive for Business?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -179,7 +179,7 @@ Quando um cliente se move para chaves gerenciadas pelo cliente, o Office 365 cri
   
 O Office 365 segue esse processo para acessar um blob que tem dados de arquivo de cliente:
   
-1. DesCriptografar o TIK usando a chave do cliente.
+1. Descriptografar o TIK usando a chave do cliente.
     
 2. Use o TIK descriptografado para descriptografar uma chave de site.
     
@@ -191,7 +191,7 @@ Ao descriptografar um TIK, o Office 365 emite duas solicitações de descriptogr
   
 Caso o cliente perca o acesso às chaves do cliente, o Office 365 também criptografa o TIK com uma chave de disponibilidade e o armazena junto com o TIKs criptografado com cada chave do cliente. O TIK criptografado com a chave de disponibilidade é usado somente quando o cliente chama a Microsoft para inscrever o caminho de recuperação quando perdeu o acesso às suas chaves, de forma mal-intencionada ou acidental.
   
-Por motivos de disponibilidade e escala, os TIKs descriptografados são armazenados em cache em um cache de memória limitado por tempo. Duas horas antes de um cache do TIK ser definido como expirar, o Office 365 tenta descriptografar cada TIK. DesCriptografar o TIKs estende o tempo de vida do cache. Se a descriptografia do TIK falhar por um período significativo, o Office 365 gerará um alerta para notificar a engenharia antes da expiração do cache. Somente se o cliente chamar a Microsoft, o Office 365 iniciará a operação de recuperação, que envolve a descriptografia do TIK com a chave de disponibilidade armazenada no repositório secreto da Microsoft e a integração do locatário novamente usando o TIK descriptografado e um novo conjunto de chaves do Azure Key Vault fornecidas pelo cliente.
+Por motivos de disponibilidade e escala, os TIKs descriptografados são armazenados em cache em um cache de memória limitado por tempo. Duas horas antes de um cache do TIK ser definido como expirar, o Office 365 tenta descriptografar cada TIK. Descriptografar o TIKs estende o tempo de vida do cache. Se a descriptografia do TIK falhar por um período significativo, o Office 365 gerará um alerta para notificar a engenharia antes da expiração do cache. Somente se o cliente chamar a Microsoft, o Office 365 iniciará a operação de recuperação, que envolve a descriptografia do TIK com a chave de disponibilidade armazenada no repositório secreto da Microsoft e a integração do locatário novamente usando o TIK descriptografado e um novo conjunto de chaves do Azure Key Vault fornecidas pelo cliente.
   
 A partir de hoje, a chave do cliente está envolvida na cadeia de criptografia e descriptografia dos dados de arquivo do SharePoint Online armazenadas no repositório de blob do Azure, mas não no SharePoint Online itens de lista ou metadados armazenados no banco de dados SQL. O Office 365 não usa a chave de disponibilidade para o SharePoint Online ou o OneDrive for Business diferente do caso descrito acima, que é iniciado pelo cliente. O acesso humano aos dados do cliente é protegido por Lockbox de cliente.
   
@@ -222,7 +222,7 @@ Não. Por definição, as assinaturas de avaliação têm um tempo de vida limit
 
 Além do licenciamento necessário para a chave do cliente, os clientes incorrerão em um custo para o uso do cofre de chaves. Os [detalhes de preços do Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) descrevem o modelo de custo e ajudarão na estimativa. Não há uma maneira de prever o custo exato que qualquer cliente se incorrerá porque os padrões de uso variam. A experiência mostrou que o custo é muito baixo e geralmente está dentro do intervalo de $0.02 a $0.05 por usuário, mais o custo de chaves com suporte a HSM. O custo também variará de acordo com a configuração de registro em log escolhida pelo cliente e a quantidade de armazenamento do Azure usada para os logs do Azure Key Vault. 
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para começar a usar a chave do cliente, consulte [controle dos dados no Office 365 usando a chave do cliente](controlling-your-data-using-customer-key.md).

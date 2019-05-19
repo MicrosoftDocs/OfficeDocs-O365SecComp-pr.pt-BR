@@ -4,20 +4,23 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/30/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Com os recursos avançados de criptografia de mensagens do Office 365 na parte superior da criptografia de mensagens do Office 365 (OME), você pode estender sua segurança de email Configurando uma data de validade por emails por meio de um modelo personalizado com marca.
-ms.openlocfilehash: c1fb876724bed970095e950906500ff551d93cee
-ms.sourcegitcommit: 8eb3cb4ec45ae0bb75fde249e35c4bc3d263b84f
+ms.openlocfilehash: 260e6032d3b7a4c9b81fca73dfbcd57fa01168cb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33506702"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157663"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Definir uma data de expiração para email criptografado pela criptografia de mensagem avançada do Office 365
 
@@ -25,17 +28,17 @@ A criptografia de mensagem avançada do Office 365 está disponível na parte su
 
 Você pode usar a expiração de mensagens em emails enviados por seus usuários para destinatários externos que usam o portal do OME para acessar emails criptografados. Você força os destinatários a usar o portal do OME para exibir e responder a emails criptografados enviados pela sua organização usando um modelo personalizado com marca que especifica uma data de expiração no Windows PowerShell.
 
-Como administrador global do O365, quando você aplica a identidade visual da sua empresa para personalizar a aparência das mensagens de email da sua organização do Office 365, você também pode especificar uma expiração para essas mensagens de email. Com a criptografia de mensagem avançada do Office 365, você pode criar vários modelos para emails criptografados provenientes da sua organização. Usando um modelo, você pode controlar por quanto tempo os destinatários têm acesso a emails enviados por seus usuários.
+Como administrador global do O365, quando você aplica a marca da empresa para personalizar a aparência das mensagens de email da sua organização do Office 365, você também pode especificar uma expiração para essas mensagens de email. Com a criptografia de mensagem avançada do Office 365, você pode criar vários modelos para emails criptografados originados em sua organização. Usando um modelo, você pode controlar por quanto tempo os destinatários têm acesso a emails enviados por seus usuários.
 
 Quando um usuário final recebe emails com uma data de expiração definida, o usuário vê a data de expiração no email de conteúdo adicional. Se um usuário tentar abrir um email expirado, um erro aparecerá no portal do OME.
 
-Somente emails para destinatários externos são expirados.
+Você só pode definir datas de expiração para emails para destinatários externos.
 
-Com a criptografia de mensagem avançada do Office 365, sempre que você aplicar a identidade visual personalizada, o Office 365 aplica o wrapper a emails que se ajustam à regra de fluxo de emails para a qual você aplica o modelo. Além disso, a expiração só poderá ser usada se a identidade visual personalizada for usada.
+Com a criptografia de mensagem avançada do Office 365, sempre que você aplicar a identidade visual personalizada, o Office 365 aplica o wrapper a emails que se ajustam à regra de fluxo de emails para a qual você aplica o modelo. Além disso, você só poderá usar a expiração se usar identidade visual personalizada.
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Criar um modelo de identidade visual personalizado para forçar a expiração de email usando o PowerShell
 
-1. [Conecte-se ao PowerShell do Exchange Online](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando uma conta com permissões de administrador global em seu locatário do Office 365.
+1. [Conecte-se ao PowerShell do Exchange Online](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) com uma conta que tenha permissões de administrador global em sua organização do Office 365.
 
 2. Execute o cmdlet New-OMEConfiguration.
 
@@ -45,9 +48,9 @@ Com a criptografia de mensagem avançada do Office 365, sempre que você aplicar
 
 Onde:
 
-- Identity é o nome do modelo personalizado.
+- `Identity`é o nome do modelo personalizado.
 
-- ExternalMailExpiryInDays identifica o número de dias que os destinatários poderão manter os emails antes de expirarem. Você pode usar qualquer valor entre 1 e 730 dias.
+- `ExternalMailExpiryInDays`Identifica o número de dias que os destinatários podem manter os emails antes de expirarem. Você pode usar qualquer valor entre 1 a 730 dias.
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>Mais informações sobre a criptografia de mensagem avançada do Office 365
 

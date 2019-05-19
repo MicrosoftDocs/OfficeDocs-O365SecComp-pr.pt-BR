@@ -1,10 +1,10 @@
 ---
-title: Notas de versão para descoberta eletrônica avançada (versão prévia)
+title: Notas de versão para descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,29 +13,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artigo contém as notas de versão da descoberta eletrônica avançada (versão prévia).
-ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Este artigo contém as notas de versão da descoberta eletrônica avançada.
+ms.openlocfilehash: f3d26b1c84746581ccf32e1d4aada079fc21dfb3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240936"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154883"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de versão para descoberta eletrônica avançada (versão prévia)
+# <a name="release-notes-for-advanced-ediscovery"></a>Notas de versão para descoberta eletrônica avançada
 
-O programa de visualização pública para descoberta eletrônica avançada é a maneira de obter acesso antecipado à funcionalidade e às atualizações futuras. Para obter acesso antecipado aos recursos mais recentes, basta criar e usar um caso de descoberta eletrônica avançada (visualização) no centro de conformidade do & de segurança do Office 365. ConFira [criar um novo caso](create-new-ediscovery-case.md).
+O programa de visualização pública para descoberta eletrônica avançada é a maneira de obter acesso antecipado à funcionalidade e às atualizações futuras. Para obter acesso antecipado aos recursos mais recentes, basta criar e usar uma caixa de descoberta eletrônica avançada no centro de conformidade do & de segurança. Confira [criar um novo caso](create-new-ediscovery-case.md).
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
 **Microsoft Forms**
 
-- Os dados correspondentes a um formulário criado antes de 31 de janeiro de 2019 não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio. Formulários criados após essa data estarão disponíveis para pesquisa.
+- Os dados correspondentes a um formulário criado antes de 31 de janeiro de 2019 não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada para pesquisar caixas de correio de responsáveis. Formulários criados após essa data estarão disponíveis para pesquisa.
 
-- Um formulário criado por um usuário ainda pode receber respostas, mesmo depois que o usuário que criou o formulário é excluído. No enTanto, os dados correspondentes para essas respostas (que ocorreram depois da exclusão da caixa de correio) não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio de responsáveis.
+- Um formulário criado por um usuário ainda pode receber respostas, mesmo depois que o usuário que criou o formulário é excluído. No entanto, os dados correspondentes para essas respostas (que ocorreram depois da exclusão da caixa de correio) não poderão ser pesquisados ao usar a ferramenta de pesquisa na descoberta eletrônica avançada para pesquisar caixas de correio.
  
 **Microsoft Sway**
 
-- Se um usuário editar um Sway imediatamente antes da exclusão da conta de usuário para o proprietário desse Sway, essas alterações poderão não ser pesquisadas ao usar a ferramenta de pesquisa na descoberta eletrônica avançada (visualização) para pesquisar caixas de correio de responsáveis. O Sway bloqueia alterações em um Sway assim que recebe um sinal de que a conta foi excluída. No enTanto, há uma pequena chance de que um Sway possa ser editado antes que esse sinal seja recebido.
+- Se um usuário editar um Sway imediatamente antes da exclusão da conta de usuário para o proprietário desse Sway, essas alterações poderão não ser pesquisadas ao usar a ferramenta de pesquisa na descoberta eletrônica avançada para pesquisar caixas de correio de responsáveis. O Sway bloqueia alterações em um Sway assim que recebe um sinal de que a conta foi excluída. No entanto, há uma pequena chance de que um Sway possa ser editado antes que esse sinal seja recebido.
 
 ## <a name="issues-fixed-in-this-release"></a>Problemas corrigidos nesta versão
 
@@ -45,7 +45,7 @@ O programa de visualização pública para descoberta eletrônica avançada é a
 
 ## <a name="whats-new"></a>Novidades
 
-- **Navegação reprojetada no centro de conformidade do & de segurança** – a descoberta eletrônica avançada (visualização) tem uma nova aparência. Use a descoberta eletrônica avançada (versão prévia) para gerenciar mais de seu fluxo de trabalho de caso.
+- **Navegação reprojetada no centro de conformidade do & de segurança** – a descoberta eletrônica avançada tem uma nova aparência. Use a descoberta eletrônica avançada para gerenciar mais de seu fluxo de trabalho de caso.
 
 - **Gerenciamento de casos** – há suporte adicional para novos tipos de caso. Você também pode selecionar e salvar seus casos recentes e favoritos. Controlar e monitorar a atividade em e entre casos usando novos painéis.
 
@@ -57,19 +57,19 @@ O programa de visualização pública para descoberta eletrônica avançada é a
 
 - **Portal de responsáveis** – novo portal para que os responsáveis acessem seus avisos de isenção ativos.
 
-- **IndexAção profunda** – Rastreie novamente os itens parcialmente indexados sob demanda.
+- **Indexação profunda** – Rastreie novamente os itens parcialmente indexados sob demanda.
 
 - **Correção de erro** : corrigir ou baixar erros de processamento; Isso inclui suporte de correção para tipos de arquivo grandes, arquivos protegidos por senha e muito mais. 
 
 - **Melhorias na pesquisa** – crie uma pesquisa identificando os responsáveis e/ou locais.
 
-- **Conjuntos de trabalho** – gerencie, rastreie e faça auditoria de conjuntos estáticos de documentos.
+- **Conjuntos de revisão** – gerencie, rastreie e faça auditoria de conjuntos estáticos de documentos.
 
-- **Revisão** – use um modo de exibição nativo, de texto e quase nativo para revisar os documentos adicionados ao seu conjunto de trabalho.
+- **Revisão** – use um modo de exibição nativo, de texto e quase nativo para revisar os documentos adicionados ao conjunto de análise.
 
 - **Redigir, marcar e anotar** – redigir texto, aplicar marcas e fazer anotações à medida que você revisar documentos.
   
-- **Análise com capacidade para análise**– Aproveite a análise de descoberta eletrônica para localizar, Pesquisar e examinar os resultados em um conjunto de trabalho.
+- **Análise com capacidade para análise**– Aproveite a análise de descoberta eletrônica avançada para localizar, Pesquisar e buscar resultados em um conjunto de revisão.
 
 - **Jobs** – rastreie o status de processos de execução longa.
 

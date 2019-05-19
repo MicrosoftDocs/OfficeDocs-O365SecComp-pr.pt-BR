@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: O Office 365 oferece várias ferramentas de descoberta eletrônica diferentes que você pode usar para pesquisar e manter o conteúdo encontrado em locais diferentes, como caixas de correio do Exchange, sites do SharePoint e do OneDrive for Business, grupos do Office 365 e conversas do Skype for Business.
-ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256799"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153313"
 ---
 # <a name="ediscovery-in-office-365"></a>Descoberta eletrônica no Office 365
 
@@ -86,7 +86,7 @@ A tabela a seguir contém links para tópicos que irão ajudá-lo a aprender sob
 |[Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md) <br/> |Saiba como a ferramenta de descoberta eletrônica avançada pode ajudá-lo a analisar dados no Office 365, simplificar as revisões de documentos e tomar decisões de descoberta eletrônica eficiente.  <br/> |
 |[Configuração rápida da descoberta eletrônica avançada](quick-setup-for-advanced-ediscovery.md) <br/> |Saiba como começar a usar a descoberta eletrônica avançada.  <br/> |
 |[Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365](prepare-search-results-for-advanced-ediscovery.md) <br/> |Saiba como preparar os resultados de uma pesquisa de conteúdo para análise na descoberta eletrônica avançada.  <br/> |
-|[ConFigurando usuários e casos na descoberta eletrônica avançada do Office 365](set-up-users-and-cases-in-advanced-ediscovery.md) <br/> |Saiba como configurar funções de usuário, criar ocorrências e atribuir usuários a casos na descoberta eletrônica avançada.  <br/> |
+|[Configurando usuários e casos na descoberta eletrônica avançada do Office 365](set-up-users-and-cases-in-advanced-ediscovery.md) <br/> |Saiba como configurar funções de usuário, criar ocorrências e atribuir usuários a casos na descoberta eletrônica avançada.  <br/> |
 |[Executando o módulo de processo e carregando dados](run-the-process-module-and-load-data-in-advanced-ediscovery.md) <br/> |Saiba mais sobre as diretrizes para preparar arquivos de caso para análise com descoberta eletrônica avançada.  <br/> |
 |[Usar a análise expressa na descoberta eletrônica avançada do Office 365](use-express-analysis-in-advanced-ediscovery.md) <br/> |Saiba como executar o modo de análise expressa da descoberta eletrônica avançada para analisar rapidamente um caso e exportar os resultados.  <br/> |
 |[Analisando dados de caso com descoberta eletrônica avançada](analyze-case-data-with-advanced-ediscovery.md) <br/> |Obtenha uma visão geral do processo de análise, que permite definir parâmetros, opções de execução e exibir resultados na descoberta eletrônica avançada.  <br/> |

@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Os administradores podem configurar um conector nativo para importar dados do Twitter para o Office 365. Isso permite que você arquive dados de fontes de dados de terceiros no Office 365 para que possa usar recursos de conformidade, como retenção legal, pesquisa de conteúdo e políticas de retenção para gerenciar a governança dos dados de terceiros da sua organização.
-ms.openlocfilehash: b561c5f471988e567624b49475bbf24a6dd88a2a
-ms.sourcegitcommit: 5bd7a97aeab1c89e0a3660ba7bdb3200224107a1
+ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34103748"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155613"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Usar um exemplo de conector para arquivar dados do Twitter no Office 365 (versão prévia)
 

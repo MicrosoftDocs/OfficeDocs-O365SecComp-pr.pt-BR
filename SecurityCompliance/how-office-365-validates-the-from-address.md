@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'Para ajudar a evitar phishing, o Office 365 e o Outlook.com agora exigem a conformidade RFC de: endereços.'
-ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253929"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154283"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Como o Office 365 valida o endereço de para impedir o phishing
 
@@ -73,9 +73,9 @@ O formato para o valor do endereço de: é definido em detalhes em várias RFCs.
 From: "displayname " <emailaddress >
 ```
 
-Em que:
+Onde:
   
-- Opcion  *DisplayName* é uma frase que descreve o proprietário do endereço de email. Por exemplo, este pode ser um nome mais amigável para descrever o remetente do que o nome da caixa de correio. O uso de um nome de exibição é opcional. No enTanto, se você optar por usar um nome de exibição, a Microsoft recomenda que você sempre o coloque entre aspas, conforme mostrado. 
+- Opcion  *DisplayName* é uma frase que descreve o proprietário do endereço de email. Por exemplo, este pode ser um nome mais amigável para descrever o remetente do que o nome da caixa de correio. O uso de um nome de exibição é opcional. No entanto, se você optar por usar um nome de exibição, a Microsoft recomenda que você sempre o coloque entre aspas, conforme mostrado. 
     
 - Precisam  *EmailAddress* é composto por: 
     
@@ -83,7 +83,7 @@ Em que:
   local-part @domain
   ```
 
-    Em que:
+    Onde:
     
   - Precisam  *local-Part* é uma cadeia de caracteres que identifica a caixa de correio associada ao endereço. Isso é exclusivo no domínio. Geralmente, o nome de usuário ou o GUID do proprietário da caixa de correio é usado como o valor para a parte local. 
     
@@ -225,7 +225,7 @@ Você não pode substituir esta política para emails de saída enviados no Offi
 
 Para obter mais informações sobre como você pode reforçar sua organização contra cybercrimes como phishing, spam, violações de dados e outras ameaças, consulte [Security Best Practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Mnsagens backscatter e EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
   

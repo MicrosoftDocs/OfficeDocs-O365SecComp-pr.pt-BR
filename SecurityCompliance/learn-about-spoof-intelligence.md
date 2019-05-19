@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use a inteligência de spoof no &amp; centro de conformidade de segurança na página configurações antispam para examinar todos os remetentes que estão falsificando os domínios que fazem parte da sua organização ou falsificando domínios externos. A inteligência de falsificação está disponível como parte do Office 365 Enterprise E5 ou separadamente como parte da proteção avançada contra ameaças e proteção do Exchange Online.
-ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252234"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155933"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Saiba mais sobre a inteligência de falsificação
 
@@ -57,9 +57,9 @@ A política de inteligência de spoof que você configurou é sempre imposta pel
   
 Você pode revisar os remetentes que estão falsificando seu domínio ou domínios externos e, em seguida, decidir se cada remetente deve ter permissão para fazê-lo &amp; usando o centro de conformidade de segurança. Para cada conta de usuário falsificada que um remetente falsifica do seu domínio ou de um domínio externo, você pode exibir as informações na tabela a seguir.
   
-|**Parâmetro**|**Descrição**|
+|**Parâmetro**|**Description**|
 |:-----|:-----|
-|Remetente  <br/> |Também chamado de verdadeiro remetente. Em geral, esse é o domínio do qual o email de falsificação é originado. O Office 365 determina o domínio do registro DNS de ponteiro (PTR) do endereço IP de envio que está falsificando sua organização. Se nenhum domínio for encontrado, o relatório exibirá o endereço IP do remetente.  <br/> |
+|Sender  <br/> |Também chamado de verdadeiro remetente. Em geral, esse é o domínio do qual o email de falsificação é originado. O Office 365 determina o domínio do registro DNS de ponteiro (PTR) do endereço IP de envio que está falsificando sua organização. Se nenhum domínio for encontrado, o relatório exibirá o endereço IP do remetente.  <br/> |
 |Usuário falsificado  <br/> |A conta de usuário que está sendo falsificada pelo remetente.  <br/> Somente a guia **interna** . Este campo contém um único endereço de email ou, se o remetente estiver falsificando várias contas de usuário, ele conterá **mais de um**.  <br/> Somente a guia **externa** . Os domínios externos só contêm um domínio de envio e não contêm um endereço de email completo.  <br/> **Tip! Para administradores avançados.** O usuário falsificado é o endereço de (5322. from) que também é o endereço exibido como o endereço de email. Isso às vezes é chamado de cabeçalho. do endereço. A validade desse endereço não é verificada por SPF.           |
 |Número de mensagens  <br/> |O número de mensagens de email enviadas pelo remetente para sua organização em nome do remetente falsificado identificado ou remetentes nos últimos 30 dias.  <br/> |
 |Número de reclamações de usuários  <br/> |Reclamações arquivadas pelos usuários em relação a esse remetente pelos seus usuários nos últimos 30 dias. As reclamações geralmente estão na forma de envios de lixo eletrônico para a Microsoft.  <br/> |
@@ -83,7 +83,7 @@ Você pode revisar os remetentes que estão falsificando seu domínio ou domíni
   
     ![Captura de tela mostrando o acesso às configurações personalizadas antispam](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. Para exibir a lista de remetentes que falsificam seu domínio, escolha reVisar **novos remetentes** e selecione a guia **domínios** . 
+5. Para exibir a lista de remetentes que falsificam seu domínio, escolha revisar **novos remetentes** e selecione a guia **domínios** . 
     
     Se você já examinou os remetentes e deseja alterar algumas de suas escolhas anteriores, você pode escolher **mostrar a mim que eu já analisei** em vez disso. Em ambos os casos, o painel a seguir é exibido.  
   
@@ -101,7 +101,7 @@ Você pode revisar os remetentes que estão falsificando seu domínio ou domíni
 
 Se você tiver uma assinatura do Office 365 Enterprise E5 ou se tiver uma proteção avançada contra ameaças adquiridas separadamente como um complemento, também poderá gerenciar os remetentes que estão falsificando seu domínio por meio da [compreensão de inteligência](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)de falsificação.
     
-## <a name="configuring-the-anti-spoofing-policy"></a>ConFigurando a política antifalsificação
+## <a name="configuring-the-anti-spoofing-policy"></a>Configurando a política antifalsificação
 <a name="Managespooflist"> </a>
 
 Além de permitir ou impedir que um remetente específico envie emails falsificados para sua organização, você também pode configurar o rigor que deseja que o filtro seja, e a ação a ser executada quando uma mensagem de falsificação é encontrada.

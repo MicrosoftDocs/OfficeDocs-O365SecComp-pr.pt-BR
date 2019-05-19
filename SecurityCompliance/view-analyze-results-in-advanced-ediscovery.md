@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Entenda onde exibir os resultados do processo de análise na descoberta eletrônica avançada do Office 365, incluindo as definições das opções de tarefa exibidas.  '
-ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267093"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157853"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Exibir resultados de análise na descoberta eletrônica avançada do Office 365
 
@@ -50,7 +50,7 @@ As tarefas exibidas podem variar dependendo das opções selecionadas.
 - **Status da tarefa**: essa linha é exibida após a conclusão da tarefa. Enquanto as tarefas estão em execução, a duração da execução é exibida.
     
 > [!NOTE]
-> Os resultados da análise de quase duplicatas e threads de email (ND e ED) se aplicam ao número de documentos a serem processados. Ele não inclui arquivos duplicados exAtos. 
+> Os resultados da análise de quase duplicatas e threads de email (ND e ED) se aplicam ao número de documentos a serem processados. Ele não inclui arquivos duplicados exatos. 
   
 ## <a name="view-near-duplicates-and-email-threads-status"></a>Exibir o status de duplicidades e threads de email
 

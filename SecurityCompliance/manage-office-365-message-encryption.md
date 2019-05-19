@@ -3,7 +3,7 @@ title: Gerenciar a Criptografia de Mensagens do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Após concluir a configuração do Office 365 Message Encryption (OME), você pode personalizar a configuração de sua implantação de várias maneiras. Por exemplo, você pode configurar se deseja habilitar códigos de passagem única, exibir o botão proteger no Outlook na Web e muito mais. As tarefas deste artigo descrevem como.
-ms.openlocfilehash: 1afaaea3cd744878630598acd3f02dc7dc70e9cb
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834920"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155743"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gerenciar a Criptografia de Mensagens do Office 365
 

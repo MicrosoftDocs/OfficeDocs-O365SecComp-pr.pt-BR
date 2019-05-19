@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Itens parcialmente indexados (também chamadas de itens não indexados) são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive que, por algum motivo, não foram completamente indexados para pesquisa de conteúdo. Neste artigo, você pode aprender por que os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados, identificar erros de pesquisa para itens parcialmente indexados e usar um script do PowerShell para determinar a exposição da sua organização a emails parcialmente indexados itens.
-ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254112"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154214"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar itens parcialmente indexados na Descoberta Eletrônica do Office 365
 
-Uma pesquisa de conteúdo que você executa a partir do centro de conformidade do & de segurança inclui automaticamente itens parcialmente indexados nos resultados estimados da pesquisa quando você executa uma pesquisa. Itens parcialmente indexados são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive for Business que por algum motivo não foram completamente indexados para pesquisa. A maioria das mensagens de email e documentos de site são indexados com êxito porque estão dentro dos [limites de indexação para mensagens de email](limits-for-content-search.md#indexing-limits-for-email-messages). No enTanto, alguns itens podem exceder esses limites de indexação e serão parcialmente indexados. Aqui estão outras razões pelas quais os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados quando você executa uma pesquisa de conteúdo:
+Uma pesquisa de conteúdo que você executa a partir do centro de conformidade do & de segurança inclui automaticamente itens parcialmente indexados nos resultados estimados da pesquisa quando você executa uma pesquisa. Itens parcialmente indexados são itens de caixa de correio do Exchange e documentos em sites do SharePoint e do OneDrive for Business que por algum motivo não foram completamente indexados para pesquisa. A maioria das mensagens de email e documentos de site são indexados com êxito porque estão dentro dos [limites de indexação para mensagens de email](limits-for-content-search.md#indexing-limits-for-email-messages). No entanto, alguns itens podem exceder esses limites de indexação e serão parcialmente indexados. Aqui estão outras razões pelas quais os itens não podem ser indexados para pesquisa e são retornados como itens parcialmente indexados quando você executa uma pesquisa de conteúdo:
   
 - As mensagens de email têm um arquivo anexado de um tipo de arquivo que não pode ser indexado; na maioria dos casos, o tipo de arquivo é [não reconhecido ou não tem suporte para indexação](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
@@ -39,11 +39,11 @@ Embora varie, a maioria dos clientes do Office 365 têm menos de 1% de conteúdo
 
 Após executar uma pesquisa de conteúdo no centro de conformidade do & de segurança, o número total e o tamanho de itens parcialmente indexados nos locais que foram pesquisados são listados nas estatísticas de resultados de pesquisa que são exibidas nas estatísticas detalhadas da pesquisa. Observe que são chamados de *itens* não indexados nas estatísticas de pesquisa. Veja algumas coisas que afetarão o número de itens parcialmente indexados retornados nos resultados da pesquisa: 
   
-- Se um item for parcialmente indexado e corresponder à consulta de pesquisa, ele será incluído na contagem (e no tamanho) dos itens de resultado de pesquisa e dos itens parcialmente indexados. No enTanto, quando os resultados da mesma pesquisa são exportados, o item é incluído somente com o conjunto de resultados de pesquisa; Ele não está incluído como um item parcialmente indexado.
+- Se um item for parcialmente indexado e corresponder à consulta de pesquisa, ele será incluído na contagem (e no tamanho) dos itens de resultado de pesquisa e dos itens parcialmente indexados. No entanto, quando os resultados da mesma pesquisa são exportados, o item é incluído somente com o conjunto de resultados de pesquisa; Ele não está incluído como um item parcialmente indexado.
     
 - Se você especificar um intervalo de datas para uma consulta de pesquisa (incluindo-a na consulta de palavra-chave ou usando uma condição), qualquer item parcialmente indexado que não coincida com o intervalo de datas não será incluído na contagem de itens parcialmente indexados. Somente os itens parcialmente indexados que estão no intervalo de datas são incluídos na contagem de itens parcialmente indexados.
     
- **Observação:** Os itens parcialmente indexados localizados nos sites do SharePoint e do OneDrive *não são* incluídos na estimativa de itens parcialmente indexados que são exibidos nas estatísticas detalhadas da pesquisa. No enTanto, os itens parcialmente indexados podem ser exportados quando você exporta os resultados de uma pesquisa de conteúdo. Por exemplo, se você só pesquisa sites em uma pesquisa de conteúdo, o número estimado de itens parcialmente indexados será zero. 
+ **Observação:** Os itens parcialmente indexados localizados nos sites do SharePoint e do OneDrive *não são* incluídos na estimativa de itens parcialmente indexados que são exibidos nas estatísticas detalhadas da pesquisa. No entanto, os itens parcialmente indexados podem ser exportados quando você exporta os resultados de uma pesquisa de conteúdo. Por exemplo, se você só pesquisa sites em uma pesquisa de conteúdo, o número estimado de itens parcialmente indexados será zero. 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calculando a taxa de itens parcialmente indexados em sua organização
 

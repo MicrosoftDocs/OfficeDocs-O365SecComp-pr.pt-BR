@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumo: Gerencie seu site de equipe do SharePoint Online isolado com estes procedimentos.'
-ms.openlocfilehash: f8531c4922f6ee6a86e32e646692825e71fafec2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1670c806c799cdbd9ffa6d3c45568a3342b88815
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251980"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155813"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gerenciar um site de equipe do SharePoint Online isolado
 
@@ -177,9 +177,9 @@ Para criar uma subpasta documentos com permissões personalizadas, faça o segui
     
 14. Atualize a página da Web para ver os novos resultados.
     
-15. em **grupos** no painel de navegação à esquerda, clique no grupo ** \<visitantes do name> do site** e use as etapas 11-14 para especificar o conjunto de contas de usuário que podem exibir os arquivos na subpasta (conforme necessário).
+15. Em **grupos** no painel de navegação à esquerda, clique no grupo ** \<visitantes do name> do site** e use as etapas 11-14 para especificar o conjunto de contas de usuário que podem exibir os arquivos na subpasta (conforme necessário).
     
-16. em **grupos** no painel de navegação à esquerda, clique no ** \<grupo proprietários do site name>** e use as etapas 11-14 para especificar o conjunto de contas de usuário que podem administrar as permissões na subpasta (conforme necessário).
+16. Em **grupos** no painel de navegação à esquerda, clique no ** \<grupo proprietários do site name>** e use as etapas 11-14 para especificar o conjunto de contas de usuário que podem administrar as permissões na subpasta (conforme necessário).
     
 17. Feche a guia **pessoas e grupos** no navegador.
     

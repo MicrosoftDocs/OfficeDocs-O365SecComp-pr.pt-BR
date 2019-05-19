@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 02/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagens no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261289"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157563"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -37,25 +37,25 @@ O OME combina recursos de gerenciamento de direitos e criptografia de email. Os 
 Você pode usar os novos recursos para o OME sob as seguintes condições:
   
 - Se você nunca configurou o OME ou o IRM para Exchange Online no Office 365.
-    
+
 - Se você tiver configurado o OME e o IRM, poderá usar estas etapas se estiver usando o serviço de gerenciamento de direitos do Azure da proteção de informações do Azure.
-    
-- Se estiver usando o Exchange Online com o Active Directory Rights Management Service (AD RMS), você não poderá habilitar esses novos recursos imediatamente. Em vez disso, você precisa migrar primeiro o [AD RMS para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . Após concluir a migração, você pode configurar com êxito o OME. 
-    
+
+- Se estiver usando o Exchange Online com o Active Directory Rights Management Service (AD RMS), você não poderá habilitar esses novos recursos imediatamente. Em vez disso, você precisa migrar primeiro o [AD RMS para a proteção de informações do Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . Após concluir a migração, você pode configurar com êxito o OME.
+
     Se você optar por continuar a usar o AD RMS local com o Exchange Online em vez de migrar para a proteção de informações do Azure, não será possível usar esses novos recursos.
-    
+
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>Quais assinaturas são necessárias para usar os novos recursos do OME?
 
 Para usar os novos recursos do OME, você precisa de um dos seguintes planos:
   
-- A criptografia de mensagem do Office 365 é oferecida como parte do Office 365 Enterprise E3 e e5, Microsoft Enterprise E3 e e5, Microsoft 365 Business, Office 365 a1, a3 e a5 e Office 365 governo G3 e G5. Os clientes não precisam de licenças adicionais para receber os novos recursos de proteção baseados na proteção de informações do Azure. 
-    
+- A criptografia de mensagem do Office 365 é oferecida como parte do Office 365 Enterprise E3 e e5, Microsoft Enterprise E3 e e5, Microsoft 365 Business, Office 365 a1, a3 e a5 e Office 365 governo G3 e G5. Os clientes não precisam de licenças adicionais para receber os novos recursos de proteção baseados na proteção de informações do Azure.
+
 - Você também pode adicionar o plano de proteção de informações do Azure 1 aos seguintes planos para receber os novos recursos de criptografia de mensagens do Office 365: Exchange Online plano 1, Exchange Online Plan 2, Office 365 F1, Office 365 Business Essentials, Office 365 Business Premium ou Office 365 Enterprise E1.
-    
+
 - Todos os usuários que se beneficiam da criptografia de mensagens do Office 365 precisam ser licenciados para serem cobertos pelo recurso.
-    
-- Para obter a lista completa, Confira as [descrições de serviço do Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) para a criptografia de mensagem do Office 365. 
-    
+
+- Para obter a lista completa, Confira as [descrições de serviço do Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) para a criptografia de mensagem do Office 365.
+
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Posso usar o Exchange Online com a sua própria chave (BYOK) na proteção de informações do Azure?
 
 Sim! A Microsoft recomenda que você conclua as etapas para configurar o BYOK antes de configurar o OME.
@@ -75,18 +75,18 @@ Os novos recursos da criptografia de mensagem do Office 365 são uma evolução 
 |**Funcionalidade**|**Versões anteriores do OME**|**IRM**|**Novos recursos do OME**|
 |:-----|:-----|:-----|:-----|
 |**Enviar um email criptografado**|Somente por meio de regras de fluxo de email do Exchange|Usuário final iniciado no Outlook para PC, Outlook para Mac ou Outlook na Web; ou por meio de regras de fluxo de email do Exchange|Usuário final iniciado no Outlook para PC, Outlook para Mac ou Outlook na Web; ou por meio de regras de fluxo de emails|
-|**Gerenciamento de direitos**|-|Opção não enCaminhar e modelos personalizados|Opção não enCaminhar, opção somente criptografia, modelos padrão e personalizados|
+|**Gerenciamento de direitos**|-|Opção não encaminhar e modelos personalizados|Opção não encaminhar, opção somente criptografia, modelos padrão e personalizados|
 |**Tipo de destinatário suportado**|Somente destinatários externos|Somente destinatários internos|Destinatários internos e externos|
 |**Experiência para o destinatário**|Destinatários externos receberam uma mensagem HTML que eles baixaram e abriram em um navegador ou aplicativo móvel baixado.|Os destinatários internos receberam apenas emails criptografados no Outlook para PC, no Outlook para Mac e no Outlook na Web.|Destinatários internos e externos recebem emails no Outlook para PC, Outlook para Mac, Outlook na Web, Outlook para Android e Outlook para iOS, ou por meio de um portal da Web, independentemente de estarem ou não na mesma organização do Office 365 ou em qualquer escritório 365 departamento. O portal do OME não requer download separado.|
 |**Traga seu próprio suporte de chave**|Não disponível|Não disponível| BYOK com suporte|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Como habilitar os novos recursos do OME para minha organização?
 
-ConFira [configurar os novos recursos de criptografia de mensagens do Office 365](set-up-new-message-encryption-capabilities.md).
+Confira [configurar os novos recursos de criptografia de mensagens do Office 365](set-up-new-message-encryption-capabilities.md).
   
 ## <a name="will-the-previous-version-of-ome-be-deprecated"></a>A versão anterior do OME será preterida?
 
-Você ainda pode usar a versão anterior do OME, ela não será preterida no momento. No enTanto, incentivamos as organizações a usar a solução nova e aprimorada do OME. Os clientes que ainda não implantaram o OME não podem configurar uma nova implantação da versão anterior do OME.
+Você ainda pode usar a versão anterior do OME, ela não será preterida no momento. No entanto, incentivamos as organizações a usar a solução nova e aprimorada do OME. Os clientes que ainda não implantaram o OME não podem configurar uma nova implantação da versão anterior do OME.
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Minha organização usa o Active Directory Rights Management, posso usar essa funcionalidade?
 
@@ -108,11 +108,11 @@ Você pode ler e responder do Outlook para PC e Mac (2013 e 2016), Outlook na We
 
 Você pode anexar qualquer tipo de arquivo a um email protegido, no entanto, as políticas de proteção são aplicadas somente nos formatos de arquivo mencionados [aqui](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). 
   
-Se houver suporte para um formato de arquivo, como um arquivo do Word, Excel ou PowerPoint, o arquivo estará sempre protegido, mesmo depois que o anexo tiver sido baixado pelo destinatário. Por exemplo, se um anexo estiver protegido por não enCaminhar, e o destinatário original baixar e encaminhar o anexo para um novo destinatário, o novo destinatário não poderá abrir o arquivo protegido.
+Se houver suporte para um formato de arquivo, como um arquivo do Word, Excel ou PowerPoint, o arquivo estará sempre protegido, mesmo depois que o anexo tiver sido baixado pelo destinatário. Por exemplo, se um anexo estiver protegido por não encaminhar, e o destinatário original baixar e encaminhar o anexo para um novo destinatário, o novo destinatário não poderá abrir o arquivo protegido.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Há suporte para anexos de arquivos PDF?
 
-Se você anexar um arquivo PDF a uma mensagem protegida, a mensagem será protegida, mas nenhuma proteção adicional será aplicada ao arquivo PDF depois que o destinatário o recebeu. Isso significa que o destinatário pode salvar como, enCaminhar, copiar e imprimir o arquivo PDF.
+Se você anexar um arquivo PDF a uma mensagem protegida, a mensagem será protegida, mas nenhuma proteção adicional será aplicada ao arquivo PDF depois que o destinatário o recebeu. Isso significa que o destinatário pode salvar como, encaminhar, copiar e imprimir o arquivo PDF.
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Há suporte para anexos do OneDrive for Business?
 
@@ -132,7 +132,7 @@ As mensagens criptografadas atualmente não têm suporte para uma caixa de corre
 
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Posso personalizar mensagens criptografadas com a identidade visual da minha empresa?
 
-Sim! Para obter informações sobre como personalizar mensagens de email e o portal do OME, consulte Adicionar a marca da sua organização às mensagens criptografadas. ConFira [Adicionar a marca da sua organização às mensagens criptografadas.](add-your-organization-brand-to-encrypted-messages.md)
+Sim! Para obter informações sobre como personalizar mensagens de email e o portal do OME, consulte Adicionar a marca da sua organização às mensagens criptografadas. Confira [Adicionar a marca da sua organização às mensagens criptografadas.](add-your-organization-brand-to-encrypted-messages.md)
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Há alguma capacidade de relatórios ou insights para emails criptografados?
 
@@ -141,5 +141,3 @@ Não está neste momento, mas chegando em breve.
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Posso usar a criptografia de mensagem com recursos de conformidade, como eDiscovery?
 
 Sim. Todas as mensagens de email criptografadas são detectáveis pelos recursos de conformidade do Office 365.
-  
-

@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Edite o registro do Windows no computador local para desabilitar relatórios ao exportar os resultados de uma pesquisa de conteúdo do centro de conformidade do & de segurança no Office 365. A desabilitação desses relatórios pode acelerar o tempo de download e poupar espaço em disco.
-ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256849"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154823"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Desabilitar relatórios ao exportar os resultados da Pesquisa de Conteúdo
 

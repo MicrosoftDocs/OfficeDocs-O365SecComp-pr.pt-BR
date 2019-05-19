@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.IngestionHelp
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Para administradores: saiba como usar o serviço de importação no centro de conformidade do & de segurança para importar em massa dados de email (arquivos PST) para caixas de correio do usuário no Exchange Online. Este tópico fornece perguntas frequentes e explica como funciona o processo de importação de PST.'
-ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: ab623c531f5e322a99aef5c8c33f110fc140a6f7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403019"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154213"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
 > [!NOTE]
-> Este artigo é para administradores. Você está tentando importar arquivos PST para sua própria caixa de correio? ConFira [importar email, contatos e calendário de um arquivo. pst do Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> Este artigo é para administradores. Você está tentando importar arquivos PST para sua própria caixa de correio? Confira [importar email, contatos e calendário de um arquivo. pst do Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
 Você pode usar o serviço de importação no centro de conformidade do & de segurança para importar arquivos PST rapidamente em massa para caixas de correio do Exchange Online em sua organização do Office 365. Há duas maneiras de importar arquivos PST para o Office 365:
    
@@ -152,7 +152,7 @@ Isso também significa que, após os arquivos PST serem excluídos da área de a
   
  **What version of the PST file format is supported for importing to Office 365?**
   
-There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. No enTanto, os arquivos que usam o formato de arquivo PST ANSI, como aqueles para idiomas que usam um conjunto de caracteres de dois bytes (DBCS), também podem ser importados para o Office 365. Para obter mais informações sobre a importação de arquivos PST ANSI, consulte a etapa 4 em [usar o carregamento de rede para importar arquivos pst para o Office 365](https://go.microsoft.com/fwlink/p/?LinkId=823074).
+There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. No entanto, os arquivos que usam o formato de arquivo PST ANSI, como aqueles para idiomas que usam um conjunto de caracteres de dois bytes (DBCS), também podem ser importados para o Office 365. Para obter mais informações sobre a importação de arquivos PST ANSI, consulte a etapa 4 em [usar o carregamento de rede para importar arquivos pst para o Office 365](https://go.microsoft.com/fwlink/p/?LinkId=823074).
   
 Additionally, PST files from Outlook 2007 and later versions can be imported to Office 365.
   
@@ -223,7 +223,7 @@ The cost to use drive shipping to import PST files to Office 365 mailboxes is $2
   
  **What kind of hard drives are supported for drive shipping?**
   
-Somente discos rígidos internos de estado sólido (SSDs) de 2,5 polegadas ou 2,5 ou 3,5 polegadas SATA II/III são suportados para uso com o serviço de importação do Office 365. You can use hard drives up to 10 TB. Para trabalhos de importação, somente o primeiro volume de dados no disco rígido será processado. The data volume must be formatted with NTFS. Ao copiar dados para uma unidade de disco rígido, você pode anexá-los diretamente usando um conector SATA de 2,5 polegadas ou 2,5 ou 3,5 polegada SATA II/III ou pode anexá-lo externamente usando um adaptador de USB de ou/ou/ou/ou/ou SATA II de 4 pol
+Somente discos rígidos internos de estado sólido (SSDs) de 2,5 polegadas ou 2,5 ou 3,5 polegadas SATA II/III são suportados para uso com o serviço de importação do Office 365. You can use hard drives up to 10 TB. Para trabalhos de importação, somente o primeiro volume de dados no disco rígido será processado. The data volume must be formatted with NTFS. Ao copiar dados para uma unidade de disco rígido, você pode anexá-los diretamente usando um conector SATA de 2,5 polegadas ou 2,5 ou 3,5 polegada SATA II/III ou pode anexá-lo externamente usando um adaptador de USB 2,5 de ou/ou/ou/ou/2,5 ou SATA II de 4 pol
   
 > [!IMPORTANT]
 > Discos rígidos externos que acompanham um adaptador USB interno não são compatíveis com o serviço de importação do Office 365. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives. 
@@ -254,7 +254,7 @@ Isso também significa que, após os arquivos PST serem excluídos da área de a
   
  **What version of the PST file format is supported for importing to Office 365?**
   
-There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. No enTanto, os arquivos que usam o formato de arquivo PST ANSI, como aqueles para idiomas que usam um conjunto de caracteres de dois bytes (DBCS), também podem ser importados para o Office 365. Para obter mais informações sobre a importação de arquivos PST ANSI, consulte a etapa 3 em [usar o envio de unidade para importar seus arquivos PST de organização para o Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
+There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. No entanto, os arquivos que usam o formato de arquivo PST ANSI, como aqueles para idiomas que usam um conjunto de caracteres de dois bytes (DBCS), também podem ser importados para o Office 365. Para obter mais informações sobre a importação de arquivos PST ANSI, consulte a etapa 3 em [usar o envio de unidade para importar seus arquivos PST de organização para o Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
   
 Additionally, PST files from Outlook 2007 and later versions can be imported to Office 365.
   

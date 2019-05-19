@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Você pode ativar o recurso pesquisa de log de auditoria no centro de conformidade do & de segurança. Se você mudar de ideia, poderá desativar se estiver desligado a qualquer momento. Quando a pesquisa de log de auditoria está desativada, os administradores não podem pesquisar o log de auditoria do Office 365 para atividades de usuário e administrador em sua organização.
-ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c5e1106617aa4828ec2db5afcc44ac55e91f2383
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265365"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158293"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Ativar e desativar a Pesquisa de log de auditoria do Office 365
 
-Você (ou outro administrador) deve ativar o log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Quando a pesquisa de log de auditoria no centro de conformidade do & de segurança está ativada, a atividade do usuário e do administrador de sua organização é registrada no log de auditoria e mantida por 90 dias. No enTanto, sua organização pode não querer gravar e reter dados de log de auditoria. Ou você pode estar usando um aplicativo de gerenciamento de eventos e informações de segurança (SIEM) de terceiros para acessar seus dados de auditoria. Nesses casos, um administrador global pode desativar a pesquisa de log de auditoria no Office 365.
+Você (ou outro administrador) deve ativar o log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Quando a pesquisa de log de auditoria no centro de conformidade do & de segurança está ativada, a atividade do usuário e do administrador de sua organização é registrada no log de auditoria e mantida por 90 dias. No entanto, sua organização pode não querer gravar e reter dados de log de auditoria. Ou você pode estar usando um aplicativo de gerenciamento de eventos e informações de segurança (SIEM) de terceiros para acessar seus dados de auditoria. Nesses casos, um administrador global pode desativar a pesquisa de log de auditoria no Office 365.
   
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -35,7 +35,7 @@ Você (ou outro administrador) deve ativar o log de auditoria antes de começar 
     > [!IMPORTANT]
     > Os usuários precisam receber permissões no Exchange Online para ativar ou desativar a pesquisa de log de auditoria. Se você atribuir aos usuários a função logs de auditoria na página **permissões** no centro de conformidade do _AMP_ de segurança, eles não poderão ativar ou desativar a pesquisa de log de auditoria. Isso ocorre porque o cmdlet subjacente é um cmdlet do Exchange Online. 
   
-- Se você desativar a pesquisa de log de auditoria no Office 365, não será possível usar a API da atividade de gerenciamento do Office 365 para acessar os dados de auditoria da sua organização. DesAtivando a pesquisa de log de auditoria seguindo as etapas deste artigo significa que nenhum resultado será retornado quando você pesquisar o log de auditoria usando o centro de conformidade do & de segurança ou quando executar o cmdlet **Search-UnifiedAuditLog** no Exchange Online ™. Isso também significa que seus logs de auditoria não estarão disponíveis por meio da API de atividade de gerenciamento do Office 365.  
+- Se você desativar a pesquisa de log de auditoria no Office 365, não será possível usar a API da atividade de gerenciamento do Office 365 para acessar os dados de auditoria da sua organização. Desativando a pesquisa de log de auditoria seguindo as etapas deste artigo significa que nenhum resultado será retornado quando você pesquisar o log de auditoria usando o centro de conformidade do & de segurança ou quando executar o cmdlet **Search-UnifiedAuditLog** no Exchange Online ™. Isso também significa que seus logs de auditoria não estarão disponíveis por meio da API de atividade de gerenciamento do Office 365.  
     
 - Para obter instruções passo a passo sobre como pesquisar o log de auditoria do Office 365, consulte [Pesquisar o log de auditoria no centro de conformidade do & de segurança](search-the-audit-log-in-security-and-compliance.md).
     

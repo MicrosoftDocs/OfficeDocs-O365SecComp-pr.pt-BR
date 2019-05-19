@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 1/7/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Os clientes às vezes askwhat a diferença entre lixo eletrônico e mensagens de email em massa? O objetivo deste tópico é explicar a diferença e fornecer informações sobre as diferentes opções disponíveis para o Exchange Online e o Exchange Online Protection (EOP).
-ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f0e80b460af2ff5b51f5380063780ee653e00b3d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266923"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155983"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Qual é a diferença entre lixo eletrônico e email em massa?
 
@@ -42,6 +42,6 @@ A maneira de gerenciar o email em massa não é uma decisão clara - afinal, se 
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Habilitar o controle de sensibilidade de email em massa na política de filtro de conteúdo
 
-Dependendo da política de sua empresa em relação a mensagens de email em massa, os administradores podem selecionar um limite para atribuir ao email em massa. A configuração é configurável por meio de políticas de filtro de conteúdo no Eat. ConFira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para as etapas. Você pode escolher uma configuração de limite de 1-9, onde 1 marca a maior parte dos emails em massa como spam, e 9 permite que a maior parte dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. 
+Dependendo da política de sua empresa em relação a mensagens de email em massa, os administradores podem selecionar um limite para atribuir ao email em massa. A configuração é configurável por meio de políticas de filtro de conteúdo no Eat. Confira [configurar suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para as etapas. Você pode escolher uma configuração de limite de 1-9, onde 1 marca a maior parte dos emails em massa como spam, e 9 permite que a maior parte dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. 
   
 

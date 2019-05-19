@@ -3,7 +3,7 @@ title: Usar DMARC para validar emails no Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Saiba como configurar a autenticação, o relatório e a conformidade de mensagens baseadas em domínio (DMARC) para validar as mensagens enviadas de sua organização do Office 365.
-ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9e3c2cd21e411d775f621c8b353bee9e6b0e235e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263723"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156183"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar emails no Office 365
 
@@ -224,7 +224,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 Todos os, ou a maioria dos, emails primeiro serão direcionados a mail.contoso.com, já que este é o MX primário e, então, serão direcionados para o EOP. Em alguns casos, o EOP pode nem estar listado como registro MX e você usa conectores para direcionar os emails. EOP não precisa ser a primeira entrada para a validação de DMARC ser feita. Só garante a validação, já que não podemos ter certeza de que todos os servidores locais/não do O365 farão verificações do DMARC.  O DMARC está qualificado para ser aplicado ao domínio de um cliente (não ao servidor) quando você configura o registro TXT do DMARC, mas está no servidor de recebimento para realmente realizar a aplicação.  Se você configurar o EOP como o servidor de recebimento, então o EOP fará a imposição de DMARC.
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection8"> </a>
 
 Quer mais informações sobre o DMARC? Estes recursos podem ajudar.
@@ -242,7 +242,7 @@ Quer mais informações sobre o DMARC? Estes recursos podem ajudar.
 
 [Como o Office 365 usa o Sender Policy Framework (SPF) para evitar falsificação](how-office-365-uses-spf-to-prevent-spoofing.md)
   
-[Configurar a SPF no Office 365 para ajudar a evitar falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
   
 [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
 

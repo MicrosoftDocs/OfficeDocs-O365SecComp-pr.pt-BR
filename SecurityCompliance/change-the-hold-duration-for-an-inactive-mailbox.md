@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 8/29/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Depois que uma caixa de correio do Office 365 é desativada, você pode alterar a duração da política de retenção de bloqueio ou do Office 365 atribuída à caixa de correio inativa. A duração da retenção define por quanto tempo os itens da pasta itens recuperáveis são mantidos.
-ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243678"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155563"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Alterar a duração da retenção para uma caixa de correio inativa no Office 365
 
@@ -112,7 +112,7 @@ Depois de identificar o tipo de retenção que é colocado na caixa de correio i
   
 ### <a name="change-the-duration-for-a-litigation-hold"></a>Alterar a duração de uma retenção de litígio
 
-ConFira aqui como usar o PowerShell do Exchange Online para alterar a duração da retenção para uma retenção de litígio que é colocada em uma caixa de correio inativa. Você não pode usar o Eat. Execute o seguinte comando para alterar a duração da retenção. Neste exemplo, a duração da retenção é alterada para um período de tempo ilimitado.
+Confira aqui como usar o PowerShell do Exchange Online para alterar a duração da retenção para uma retenção de litígio que é colocada em uma caixa de correio inativa. Você não pode usar o Eat. Execute o seguinte comando para alterar a duração da retenção. Neste exemplo, a duração da retenção é alterada para um período de tempo ilimitado.
   
 ```
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited

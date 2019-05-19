@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Saiba como usar o centro de conformidade de &amp; segurança do Office 365 para acessar a descoberta eletrônica avançada do Office 365 e executar o módulo de processo para um caso.  '
-ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261391"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157013"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Executar o módulo de processo e carregar dados na descoberta eletrônica avançada do Office 365
 

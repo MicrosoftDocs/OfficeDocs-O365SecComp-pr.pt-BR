@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados ou criar uma consulta para Pesquisar tipos de dados específicos de terceiros. Este artigo lista os valores que podem ser usados em uma consulta de palavra-chave para pesquisar os tipos de dados de terceiros que podem ser importados para o Office 365.
-ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402899"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156203"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar a pesquisa de conteúdo para pesquisar dados de terceiros que foram importados para o Office 365
 
@@ -66,7 +66,7 @@ A tabela a seguir lista os tipos de dados de terceiros que podem ser pesquisados
 |Espaço reservado do AXS  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
-|BearShare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
+|Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Rim  <br/> | `ipm.externaldata.Blackberry*` <br/> |
 |Logs de chamadas do BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |

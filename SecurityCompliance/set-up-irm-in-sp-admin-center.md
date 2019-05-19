@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Saiba como usar o IRM do SharePoint Online por meio do Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas e bibliotecas de documentos do SharePoint.
-ms.openlocfilehash: 6b68135720846a0e74f5b0272dc5f25272381284
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260760"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156553"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -40,7 +40,7 @@ Após ativar o serviço de gerenciamento de direitos, entre no centro de adminis
     
 4. No painel esquerdo, escolha **configurações**.
     
-5. Na seção **Gerenciamento de direitos de informação (IRM)** , escolha **usar o serviço IRM especificado em sua configuração**e, em seguida, escolha **Atualizar configurações de IRM**. Depois de atualizar as configurações do IRM, as pessoas em sua organização podem começar a usar o IRM em suas listas e bibliotecas de documentos do SharePoint. No enTanto, as opções para fazer isso pode levar até uma hora para que apareçam em configurações de biblioteca e configurações de lista.
+5. Na seção **Gerenciamento de direitos de informação (IRM)** , escolha **usar o serviço IRM especificado em sua configuração**e, em seguida, escolha **Atualizar configurações de IRM**. Depois de atualizar as configurações do IRM, as pessoas em sua organização podem começar a usar o IRM em suas listas e bibliotecas de documentos do SharePoint. No entanto, as opções para fazer isso pode levar até uma hora para que apareçam em configurações de biblioteca e configurações de lista.
     
 ## <a name="irm-enable-sharepoint-document-libraries-and-lists"></a>Habilitar o IRM para bibliotecas de documentos e listas do SharePoint
 <a name="__toc220831191"> </a>

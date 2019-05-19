@@ -3,7 +3,7 @@ title: Solicitações do Sistema de Proteção de Dados do Cliente do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Saiba mais sobre as solicitações de lockbox de clientes que permitem controlar como um engenheiro de suporte da Microsoft pode acessar seus dados quando você se deparar com um problema.
-ms.openlocfilehash: 3a86f3333114f3015b85d8066298f9834737f127
-ms.sourcegitcommit: 000548aa269ad775f20af5acd6aa726ac340c793
+ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33661417"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153833"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Lockbox de cliente no Office 365
 
@@ -228,7 +228,7 @@ Os administradores globais e qualquer pessoa que tenha atribuído a função de 
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Como faço para optar pela Lockbox do cliente?
 
-Um administrador global pode habilitar e configurar O Lockbox do cliente no centro de administração do Microsoft 365 ou do Microsoft 365.
+Um administrador global pode habilitar e configurar o Lockbox do cliente no centro de administração do Microsoft 365 ou do Microsoft 365.
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Se eu aprovar uma solicitação de lockbox do cliente, o que o engenheiro pode fazer e como saberei o que o engenheiro da Microsoft fazia?
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Saiba como identificar os diferentes tipos de retenção que podem ser colocados em uma caixa de correio do Office 365. Esses tipos de isenções incluem retenção de litígio, bloqueios de descoberta eletrônica e políticas de retenção do Office 365. Você também pode determinar se um usuário foi excluído de uma política de retenção em toda a organização
-ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 29ae9d7ba8be2bf0064c163605aee9ad8fd5fd07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253879"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154193"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Como identificar o tipo de retenção de uma caixa de correio do Exchange Online
 
@@ -139,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Para conectar-se ao PowerShell do centro de conformidade do & de segurança, confira [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Bloqueio in-loco
+### <a name="in-place-holds"></a>Bloqueio In-loco
 
 Execute o seguinte comando no PowerShell do Exchange Online para identificar o bloqueio in-loco aplicado à caixa de correio. Use o GUID do bloqueio in-loco identificado na etapa 1. O comando exibe o nome da retenção e uma lista das caixas de correio às quais o bloqueio se aplica.
 

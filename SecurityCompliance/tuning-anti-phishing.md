@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Os administradores podem aprender a identificar os motivos por que e como as mensagens de phishing foram recebidas e o que fazer para evitar mais mensagens de phishing no futuro.
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264313"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156343"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajustar a proteção contra phishing no Office 365
 
@@ -52,7 +52,7 @@ Especificamente, você deve verificar o campo de cabeçalho **X-Forefront-antisp
 
 ## <a name="best-practices-to-stay-protected"></a>Práticas recomendadas para permanecer protegidas
 
-- Mensalmente, execute a [Pontuação segura do office 365](office-365-secure-score.md) para avaliar as configurações de segurança da sua organização do Office 365.
+- Mensalmente, execute a [Pontuação segura](microsoft-secure-score.md) para avaliar as configurações de segurança da sua organização do Office 365.
 
 - Revise periodicamente o [relatório de inteligência](learn-about-spoof-intelligence.md) de falsificação e habilite a [proteção contra falsificação na política](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) anti-phishing para **colocar em quarentena** mensagens suspeitas, em vez de entregá-las na pasta lixo eletrônico do usuário.
 
@@ -68,7 +68,7 @@ Especificamente, você deve verificar o campo de cabeçalho **X-Forefront-antisp
 
   Para obter instruções de configuração, consulte:
   
-  - [Configurar a SPF no Office 365 para ajudar a evitar falsificação](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Configurar o SPF no Office 365 para ajudar a evitar falsificações](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md)
 
@@ -78,4 +78,4 @@ Especificamente, você deve verificar o campo de cabeçalho **X-Forefront-antisp
 
 - A MFA (autenticação multifator) é uma ótima maneira de evitar contas comprometidas. Você deve considerar fortemente habilitar a MFA para todos os seus usuários. Para obter uma abordagem em fases, comece habilitando a MFA para seus usuários mais confidenciais (administradores, executivos, etc.) antes de habilitar a MFA para todos. Para obter instruções, consulte [Configurar a autenticação](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)multifator.
 
-- As regras de encaminhamento para destinatários externos costumam ser usadas por invasores para extrair dados. Use as informações de **revisão de regras** de encaminhamento de caixa de correio no [Office 365 Pontuação segura](office-365-secure-score.md) para localizar e até mesmo impedir o encaminhamento de regras para destinatários externos. Para obter mais informações, consulte [mitigaTing Client external forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- As regras de encaminhamento para destinatários externos costumam ser usadas por invasores para extrair dados. Use as informações revisar regras de encaminhamento de **caixa de correio** na [Pontuação segura da Microsoft](microsoft-secure-score.md) para localizar e até mesmo impedir o encaminhamento de regras para destinatários externos. Para obter mais informações, consulte [mitigating Client external Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

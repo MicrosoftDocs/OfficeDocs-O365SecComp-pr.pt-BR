@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 3/15/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Página de aterrissagem para planejar a segurança e a conformidade
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265863"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157503"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planejar a conformidade &amp; de segurança no Office 365
 
 O gerenciamento de segurança e conformidade é uma parceria. Você é responsável por proteger seus dados, identidades e dispositivos, enquanto a Microsoft protege rigorosamente os serviços do Office 365. Você pode usar o Office 365 e o Enterprise Mobility + Security (EMS) juntos para ajudá-lo a obter o nível de proteção apropriado para sua organização.
   
-## <a name="step-1-review-capabilities"></a>Etapa 1: reVisar recursos
+## <a name="step-1-review-capabilities"></a>Etapa 1: revisar recursos
 
 Orientar-se para os recursos de proteção de informações no pôster de proteção de informações para o Office 365. 
   
@@ -35,7 +35,7 @@ Orientar-se para os recursos de proteção de informações no pôster de prote�
 
 Depois de configurar sua assinatura do Office 365, anote sua pontuação inicial. A pontuação segura fornece sugestões de configuração do Office 365 que você pode tomar para aumentar sua pontuação. O objetivo é estar ciente das oportunidades que você pode tomar para proteger seu ambiente, o que não afetará negativamente a produtividade dos seus usuários.
   
-- [Introdução à pontuação segura do Office 365](office-365-secure-score.md)
+- [Introdução à pontuação segura do Office 365](microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Etapa 3: planejar a proteção de acesso para identidade e dispositivos
 
@@ -75,7 +75,7 @@ Use estas configurações recomendadas como ponto de partida para cenários de s
 
 Defina suas configurações de segurança e conformidade nesses centros e painéis de administração para proteger seu ambiente do Office 365
   
-|**Assinatura**|**URL de gerenciamento**|**Painéis e centros de administração**|
+|**Scriçõe**|**URL de gerenciamento**|**Painéis e centros de administração**|
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Centro de administração do Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centro de administração do Exchange  <br/>  Centro de administração do SharePoint e centro de administração do OneDrive for Business  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gerenciamento de aplicativos móveis da Microsoft  <br/>  Microsoft Intune  <br/> |

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumo: Configure um site de equipe do SharePoint Online isolado do restante da organização no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254351"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152583"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste
 
  **Resumo:** Configure um site de equipe do SharePoint Online isolado do restante da organização no seu ambiente de desenvolvimento/teste do Office 365.
   
-Os sites de equipe do SharePoint Online no Office 365 são locais para colaboração usando uma biblioteca de documentos comum, um bloco de anotações do OneNote e outros serviços. Em muitos casos, convém ter acesso e colaboração amplos entre departamentos ou organizações. No enTanto, em alguns casos, você deseja controlar rigidamente o acesso e as permissões para colaboração entre um pequeno grupo de pessoas.
+Os sites de equipe do SharePoint Online no Office 365 são locais para colaboração usando uma biblioteca de documentos comum, um bloco de anotações do OneNote e outros serviços. Em muitos casos, convém ter acesso e colaboração amplos entre departamentos ou organizações. No entanto, em alguns casos, você deseja controlar rigidamente o acesso e as permissões para colaboração entre um pequeno grupo de pessoas.
   
 Acesso aos sites de equipe do SharePoint Online e o que os usuários podem fazer são controlados pelos grupos do SharePoint e níveis de permissão. Por padrão, os sites do SharePoint Online têm três níveis de acesso:
   
@@ -175,7 +175,7 @@ Para criar um site de equipe do SharePoint Online para o projeto x, faça o segu
     
 13. Na caixa de diálogo **Compartilhar**, digite **Projeto X-Membros**, selecione-o e clique em **Compartilhar**.
     
-14. Clique no botão voltar de seu navegador.
+14. Clique no botão Voltar de seu navegador.
     
 15. Clique em **Proprietários do Projeto X** na lista.
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Use o novo recurso de importação inteligente no serviço de importação do Office 365 para filtrar os itens que realmente são importados para as caixas de correio de destino. A importação inteligente permite que você decida de forma proativa quais dados importar e o que deixar atrás. A importação inteligente também fornece informações sobre os dados que você está importando para o Office 365. '
-ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255676"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154593"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrar dados ao importar arquivos PST para o Office 365
 
@@ -59,7 +59,7 @@ O gráfico a seguir mostra o processo de importação inteligente e realça as t
 
 Depois de criar um trabalho de importação de PST, siga estas etapas para filtrar os dados antes de importá-los para o Office 365.
   
-1. AcEsse [https://protection.office.com/](https://protection.office.com/) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
+1. Acesse [https://protection.office.com/](https://protection.office.com/) e entre usando as credenciais de uma conta de administrador na sua organização do Office 365. 
     
 2. Clique em **importação**de **governança** \> de dados.
     
@@ -100,7 +100,7 @@ Depois de criar um trabalho de importação de PST, siga estas etapas para filtr
       - **Usuários** – é possível excluir mensagens enviadas ou recebidas por pessoas específicas. Para excluir pessoas que aparecem no campo de:, para: ou no campo CC: de mensagens, clique em **excluir usuários** ao lado desse tipo de destinatário. Digite o endereço de email (endereço SMTP) da pessoa, clique em **Adicionar**![novo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) ícone para adicioná-los à lista de usuários excluídos para esse tipo de destinatário e clique em **salvar** para salvar a lista de usuários excluídos. 
     
         > [!NOTE]
-        > O Office 365 não mostra informações de dados que resultam da configuração do filtro de **pessoas** . No enTanto, se você definir esse filtro para excluir mensagens enviadas ou recebidas por pessoas específicas, essas mensagens serão excluídas durante o processo de importação real. 
+        > O Office 365 não mostra informações de dados que resultam da configuração do filtro de **pessoas** . No entanto, se você definir esse filtro para excluir mensagens enviadas ou recebidas por pessoas específicas, essas mensagens serão excluídas durante o processo de importação real. 
   
     c. Clique em **aplicar** na página **mais opções de filtragem** para salvar as configurações de filtro. 
     
@@ -141,6 +141,6 @@ Depois de criar um trabalho de importação de PST, siga estas etapas para filtr
     |IPM. Note. Rules. OOF. Template. Microsoft  <br/> |Mensagens de resposta automática de ausência temporária  <br/> |
     |IPM. Note. Rules. Replytemplate. Microsoft  <br/> |Respostas enviadas por uma regra de caixa de entrada  <br/> |
     |IPM. OLE. Classificação  <br/> |Exceções de uma série recorrente  <br/> |
-    |IPM. ReCall. Report  <br/> |Relatórios de cancelamento de mensagens  <br/> |
+    |IPM. Recall. Report  <br/> |Relatórios de cancelamento de mensagens  <br/> |
     |IPM. Remota  <br/> |Mensagens de email remotas  <br/> |
     |IPM. Lo  <br/> |Relatórios de status do item  <br/> |

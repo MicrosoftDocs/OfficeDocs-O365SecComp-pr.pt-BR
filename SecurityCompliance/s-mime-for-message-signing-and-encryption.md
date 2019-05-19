@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Os administradores podem saber mais sobre como usar S/MIME no Exchange Online.
-ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261379"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156993"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para assinatura e criptografia de mensagens no Exchange Online
 

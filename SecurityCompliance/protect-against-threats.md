@@ -3,10 +3,11 @@ title: Proteção contra ameaças no Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MOE150
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artigo como guia para configurar seus recursos de proteção contra ameaças agora.
-ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157293"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças no Office 365
 
@@ -65,9 +66,9 @@ A [proteção Antimalware](anti-malware-protection.md) está disponível em assi
 2. Clique duas vezes na política **padrão** e, em seguida, escolha **configurações**.
 
 3. Especifique as seguintes configurações:
-    
+
     - Na seção **resposta de detecção de malware** , mantenha a configuração padrão **no**.
-   
+
     - Na seção **filtro de tipos de anexo comuns** , escolha **ativado**.
 
 4. Clique em **Salvar**.
@@ -146,7 +147,7 @@ A [proteção contra phishing](anti-phishing-protection.md) está disponível em
 
 3. Na seção **representação** , clique em **Editar**e especifique as seguintes configurações:
 
-    -  Na guia **Adicionar usuários para proteger** , ative a proteção. Em seguida, adicione usuários, como os membros da diretoria da sua organização, seu CEO, CFO e outros líderes seniores. (Você pode digitar um endereço de email individual ou clicar para exibir uma lista.)
+    - Na guia **Adicionar usuários para proteger** , ative a proteção. Em seguida, adicione usuários, como os membros da diretoria da sua organização, seu CEO, CFO e outros líderes seniores. (Você pode digitar um endereço de email individual ou clicar para exibir uma lista.)
 
     - Na guia **adicionar domínios para proteger** , ative **automaticamente os domínios que eu sou proprietário**. Se você tiver domínios personalizados, adicione-os também.
 
@@ -213,5 +214,3 @@ Depois de configurar seus recursos de proteção contra ameaças, não deixe de 
 |Veja como os recursos de proteção contra ameaças estão trabalhando para sua organização exibindo relatórios    |[Painel de segurança](security-dashboard.md)<br/>[Relatórios de segurança de email](view-email-security-reports.md)<br/>[Relatórios para o Office 365 ATP](view-reports-for-atp.md)<br/>[Explorador de Ameaças](use-explorer-in-security-and-compliance.md)    |
 |Revisar e revisar periodicamente suas políticas de proteção contra ameaças, conforme necessário    |[Classificação de Segurança](microsoft-secure-score.md)<br/>[Relatórios inteligentes e insights](reports-and-insights-in-security-and-compliance.md)<br/>[Investigação de ameaças e recursos de resposta do Office 365](keep-users-safe-with-office-365-ti.md)          |
 |Assista a novos recursos e atualizações de serviço     |[Opções de lançamento direcionado e padrão](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro de Mensagens](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Roteiro do Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descrições de serviço](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
-
-

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: Este tópico descreve as etapas de solução de problemas para os usuários finais e administradores e fornece informações sobre como contatar o suporte técnico para obter assistência.
-ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259839"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156333"
 ---
 # <a name="troubleshooting-and-support-information"></a>Solução de problemas e informações de suporte
 
@@ -88,7 +88,7 @@ Como administrador, você pode perceber problemas com usuários que utilizam o S
 
 Se você precisar de ajuda com a instalação, configuração ou desinstalação do suplemento, entre em contato com o suporte técnico usando o link nova solicitação de serviço na página suporte no centro de administração do Microsoft 365. Para opções adicionais, incluindo o envio de uma solicitação de serviço por meio de opções de telefone e de autoatendimento, consulte [ajuda e suporte para EOP](eop/help-and-support-for-eop.md).
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 [Habilitar o suplemento de Mensagem de Relatório](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

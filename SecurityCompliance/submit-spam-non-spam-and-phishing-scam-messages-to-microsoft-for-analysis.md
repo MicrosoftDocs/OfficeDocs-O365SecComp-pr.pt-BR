@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Você e seus usuários podem enviar mensagens de spam falsas negativas e falsos positivos para a Microsoft para análise. '
-ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260649"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156453"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 
@@ -72,7 +72,7 @@ Você pode enviar mensagens que não são spam das seguintes maneiras:
   
 - Se você usar a ação **mover mensagem para a pasta lixo eletrônico** ao configurar seus filtros de conteúdo (essa é a ação padrão), os usuários poderão liberar mensagens falsas falsas no Outlook ou no Outlook na Web pasta lixo eletrônico (anteriormente conhecida como Outlook Web App) . 
     
-  - Os usuários do Outlook podem liberar mensagens falsas, usando a opção de menu **não é lixo eletrônico** clique. No enTanto, eles devem enviar a mensagem para a Microsoft por email, conforme mostrado no procedimento neste artigo. 
+  - Os usuários do Outlook podem liberar mensagens falsas, usando a opção de menu **não é lixo eletrônico** clique. No entanto, eles devem enviar a mensagem para a Microsoft por email, conforme mostrado no procedimento neste artigo. 
     
   - Os usuários do Outlook na Web podem liberar mensagens falsas e enviá-las para a Microsoft para análise usando a ação **Marcar como não é lixo eletrônico** . Para obter mais informações sobre como fazer isso, confira [relatar spam e golpes de phishing no Outlook na Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
     
@@ -115,7 +115,7 @@ Depois de examinar essas informações, a equipe de spam pode fazer alterações
   
 A avaliação de spam é um processo contínuo que se aplica independentemente do idioma ou conjunto de caracteres de origem. Como uma mensagem de spam pode ser vaga ou mesmo falta de texto no corpo da mensagem ou assunto, a equipe de spam se baseia em outras características da mensagem para executar a filtragem. Isso significa que, após a equipe de spam marcar uma determinada mensagem como spam e fazer as alterações necessárias na sua base de regra, essa mensagem ficará bloqueada no futuro até que suas características sejam modificadas o suficiente para evitar os nossos filtros. Novas regras de spam são implantadas de forma contínua. Os intervalos de tempo para regras em envios individuais variam de acordo com a quantidade e a qualidade dos envios. Como as novas regras de spam são definidas globalmente para todos os clientes, nem todos os envios de spam individuais resultarão em uma nova regra de spam.
    
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 <a name="sectionSection4"> </a>
 
 [Proteção antispam e antimalware](anti-spam-and-anti-malware-protection.md)

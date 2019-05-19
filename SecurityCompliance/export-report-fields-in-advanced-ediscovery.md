@@ -3,7 +3,7 @@ title: Exportar campos de relatório na descoberta eletrônica avançada do Offi
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Descreve todos os campos incluídos nos relatórios de exportação para descoberta eletrônica avançada.
-ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255459"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154457"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de relatório na descoberta eletrônica avançada do Office 365
 
@@ -39,13 +39,13 @@ A tabela a seguir lista os campos de cada modelo de exportação.
 |For_review  <br/> |Processamento   <br/> |Sinalizador para indicar que o campo será incluído na exportação para revisão.  <br/> |Sim  <br/> |Sim  <br/> |
 |Native_file_name  <br/> |Processamento   <br/> |Nome do arquivo nativo, sem fazer referência à pasta e à extensão.  <br/> |Sim  <br/> |Sim  <br/> |
 |Responsáveis  <br/> |Geral  <br/> |Os responsáveis pelo arquivo.  <br/> |Sim  <br/> |Sim  <br/> |
-|Set_ID  <br/> |Análise  <br/> |ID "ND set" ou "conjunto de emails".  <br/> |Sim  <br/> |Sim  <br/> |
+|Set_ID  <br/> |Analisar  <br/> |ID "ND set" ou "conjunto de emails".  <br/> |Sim  <br/> |Sim  <br/> |
 |Inclusive_type  <br/> |Email  <br/> |Indica se o arquivo é inclusivo, de acordo com os seguintes valores: 0-não inclusivo, 1-inclusive, 2, incluindo menos, 3-inclusive a cópia.  <br/> |Sim  <br/> |Sim  <br/> |
 |Marked_as_pivot  <br/> |Duplicatas próximas  <br/> |Indica se o arquivo é uma tabela dinâmica.  <br/> |Sim  <br/> |Sim  <br/> |
 |Similarity_percent  <br/> |Duplicatas próximas  <br/> |Porcentagem de similaridade em relação à tabela dinâmica.  <br/> |Sim  <br/> |Sim  <br/> |
 |Duplicate_subset  <br/> |Duplicatas próximas  <br/> |Identificador exclusivo do subconjunto duplicado. Indica se o arquivo tem duplicatas de texto exatas.  <br/> |Sim  <br/> |Sim  <br/> |
 |Data  <br/> |Geral  <br/> |Data do arquivo (depende do tipo de arquivo-email: data de envio; documento: data de modificação).  <br/> |Sim  <br/> |Sim  <br/> |
-|Dominant_theme  <br/> |Análise  <br/> |Tema principal do arquivo.  <br/> |Sim  <br/> |Sim  <br/> |
+|Dominant_theme  <br/> |Analisar  <br/> |Tema principal do arquivo.  <br/> |Sim  <br/> |Sim  <br/> |
 |Themes_list  <br/> |Temas  <br/> |Lista de nomes de temas.  <br/> |Sim  <br/> |Sim  <br/> |
 |ND_set  <br/> |EquiSet  <br/> |Identificador numérico exclusivo de um conjunto de Nearduplicate.  <br/> |Sim  <br/> |Sim  <br/> |
 |Email_set  <br/> |Email  <br/> |Identificador numérico exclusivo de um conjunto de emails.  <br/> |Sim  <br/> |Sim  <br/> |
@@ -61,7 +61,7 @@ A tabela a seguir lista os campos de cada modelo de exportação.
 |Email_bcc  <br/> |Email  <br/> |Destinatário Cco do email.  <br/> |Sim  <br/> |Sim  <br/> |
 |Email_recipient_domains  <br/> |Email  <br/> |Domínios de destinatários de email (para, CC e Cco).  <br/> |Sim  <br/> |Sim  <br/> |
 |Email_date_received  <br/> |Email  <br/> |Data em que o email foi recebido.  <br/> |Sim  <br/> |Sim  <br/> |
-|Email_action  <br/> |Email  <br/> |Valores: de acordo com o assunto do email: "enCaminhar" (para "FW:"), "responder" (para "RE:") ou "outros" (outro texto do assunto).  <br/> |Sim  <br/> |Sim  <br/> |
+|Email_action  <br/> |Email  <br/> |Valores: de acordo com o assunto do email: "encaminhar" (para "FW:"), "responder" (para "RE:") ou "outros" (outro texto do assunto).  <br/> |Sim  <br/> |Sim  <br/> |
 |Meeting_Start_Date/hora  <br/> ||A data e a hora em que um item de reunião foi iniciado.  <br/> |Sim  <br/> |Sim  <br/> |
 |Meeting_End_Date/hora  <br/> ||A data e a hora em que um item de reunião terminou.  <br/> |Sim  <br/> |Sim  <br/> |
 |File_relevance_score  <br/> |Relevância  <br/> |Pontuação de relevância (0-100). Por problema.  <br/> |Sim  <br/> |Sim  <br/> |
@@ -89,8 +89,8 @@ A tabela a seguir lista os campos de cada modelo de exportação.
 |Compound_path  <br/> |Processamento   <br/> |Caminho de arquivo nativo incluindo sua fonte composta.  <br/> |Sim  <br/> |Sim  <br/> |
 |Input_path  <br/> |Processamento   <br/> |Caminho do arquivo de entrada.  <br/> |Sim  <br/> |Sim  <br/> |
 |Input_date_modified  <br/> |Processamento   <br/> |O arquivo de entrada de data foi modificado pela última vez.  <br/> |Sim  <br/> |Sim  <br/> |
-|ND_ET_sort_excl_attach  <br/> |Análise  <br/> |Concatenação de conjunto de emails e ND definidos para revisão. ' D' é adicionado como um prefixo para conjuntos ND, e ' E ' é adicionado a email ssets.  <br/> |Sim  <br/> |Sim  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Análise  <br/> |A concatenação do conjunto de emails e da ND definida para revisar é adicionada como um prefixo para conjuntos de ND, e ' E ' é adicionado aos conjuntos de emails. Além disso, cada email em um Email_set é seguido pelos seus anexos apropriados.  <br/> |Sim  <br/> |Sim  <br/> |
+|ND_ET_sort_excl_attach  <br/> |Analisar  <br/> |Concatenação de conjunto de emails e ND definidos para revisão. ' D' é adicionado como um prefixo para conjuntos ND, e ' E ' é adicionado a email ssets.  <br/> |Sim  <br/> |Sim  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analisar  <br/> |A concatenação do conjunto de emails e da ND definida para revisar é adicionada como um prefixo para conjuntos de ND, e ' E ' é adicionado aos conjuntos de emails. Além disso, cada email em um Email_set é seguido pelos seus anexos apropriados.  <br/> |Sim  <br/> |Sim  <br/> |
 |Deduped_custodians  <br/> |Geral  <br/> |Responsáveis por arquivos com eliminação de duplicação  <br/> |Sim  <br/> |Sim  <br/> |
 |Deduped_file_IDs  <br/> |Geral  <br/> |IDs de arquivos com eliminação da duplicação  <br/> |Sim  <br/> |Sim  <br/> |
 |Deduped_paths  <br/> |Geral  <br/> |Caminhos dos arquivos com eliminação da duplicação  <br/> |Sim  <br/> |Sim  <br/> |
@@ -129,12 +129,12 @@ A tabela a seguir lista os campos de cada modelo de exportação.
 |Parent_node  <br/> |Email  <br/> |Relaciona um nó em um thread de email ao nó pai mais próximo que não está em um link ausente.  <br/> |Não  <br/> |Sim  <br/> |
 |Set_order_inclusives_first  <br/> |Email  <br/> |Emails e anexos: ordem cronológica do contador (inclusive primeiro). Documents: pivô primeiro e o restante por Pontuação de similaridade, decrescente.  <br/> |Não  <br/> |Sim  <br/> |
 |Tagged_By  <br/> |Relevância  <br/> |Usuário que marcou o arquivo em relevância para o problema específico.  <br/> |Não  <br/> |Sim  <br/> |
-|Word_count  <br/> |Análise  <br/> |Número de palavras no documento.  <br/> |Não  <br/> |Sim  <br/> |
+|Word_count  <br/> |Analisar  <br/> |Número de palavras no documento.  <br/> |Não  <br/> |Sim  <br/> |
 |||||||||||
 ||||||
 ||||||
    
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Descoberta Eletrônica Avançada do Office 365](office-365-advanced-ediscovery.md)
   

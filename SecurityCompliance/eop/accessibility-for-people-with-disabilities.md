@@ -4,19 +4,19 @@ ms.author: scotv
 author: scotvidican
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: A Microsoft está comprometida com a fabricação de produtos e serviços que sejam fáceis para todos usarem.
-ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cf86f2ce4aa176baa0a151edea93a247a2113c7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257039"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154703"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Acessibilidade para pessoas com deficiências
 
@@ -73,7 +73,7 @@ Se você é surdo ou tem problema auditivo, conclua o acesso aos serviços do cl
     
 Os Serviços de Suporte da Microsoft estão sujeitos aos preços, termos e condições no momento que o serviço é usado. Para obter mais informações, consulte [suporte da Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Para obter mais informações
+## <a name="for-more-information"></a>Para saber mais
 
 Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar a vida de pessoas com deficiências, consulte [Microsoft Accessibility](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

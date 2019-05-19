@@ -3,19 +3,19 @@ title: 'Workshop do diretor de segurança de informações (CISO), módulo 2: ge
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os princípios de segurança e as recomendações para modernização de segurança em sua organização.
-ms.openlocfilehash: d802f6ad1af1cd818dffeba32c5b8c101636da61
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 356c485c3a58f917c3e607ee68fbaa0a5c3c1eff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244082"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155523"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Módulo 2 do CISO Workshop: gerenciamento de segurança 
 

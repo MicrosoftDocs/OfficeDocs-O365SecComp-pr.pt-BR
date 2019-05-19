@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: página de aterrissagem para proteger o acesso a dados e serviços do O365
-ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402999"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156863"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger o acesso de usuários e dispositivos
 

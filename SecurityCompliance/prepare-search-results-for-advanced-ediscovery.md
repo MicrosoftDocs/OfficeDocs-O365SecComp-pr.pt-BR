@@ -3,7 +3,7 @@ title: Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Saiba como preparar os resultados de uma pesquisa de conteúdo no centro de conformidade do & de segurança no Office 365 para análise adicional com a ferramenta de descoberta eletrônica avançada.
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261973"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157463"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar resultados de pesquisa para Descoberta Eletrônica Avançada do Office 365
 
@@ -95,7 +95,7 @@ Quando a preparação é concluída, a próxima etapa é usar a descoberta eletr
     
     ![Clique em alternar para descoberta eletrônica avançada para abrir o caso na descoberta eletrônica avançada](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    A barra de progresso **conectaNdo-se à descoberta eletrônica avançada** é exibida. Quando você estiver conectado à descoberta eletrônica avançada, uma lista de contêineres será exibida na página de configuração do caso. 
+    A barra de progresso **conectando-se à descoberta eletrônica avançada** é exibida. Quando você estiver conectado à descoberta eletrônica avançada, uma lista de contêineres será exibida na página de configuração do caso. 
     
     ![O caso é exibido na descoberta eletrônica avançada](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
@@ -109,10 +109,10 @@ Depois que os resultados de uma pesquisa de descoberta eletrônica são adiciona
   
 ## <a name="more-information"></a>Mais informações
 
-Todas as mensagens de email criptografadas por RMS incluídas nos resultados da pesquisa serão descriptografadas quando você prepará-las para análise na descoberta eletrônica avançada. Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de desCriptografia do RMS é atribuída a esse grupo de função. Lembre-se das seguintes coisas em relação à descriptografia de mensagens de email:
+Todas as mensagens de email criptografadas por RMS incluídas nos resultados da pesquisa serão descriptografadas quando você prepará-las para análise na descoberta eletrônica avançada. Esse recurso de descriptografia é habilitado por padrão para membros do grupo de funções Gerenciador de descoberta eletrônica. Isso ocorre porque a função de gerenciamento de descriptografia do RMS é atribuída a esse grupo de função. Lembre-se das seguintes coisas em relação à descriptografia de mensagens de email:
   
 - Atualmente, esse recurso de descriptografia não inclui conteúdo criptografado de sites do SharePoint e do OneDrive for Business. Somente mensagens de email criptografadas por RMS serão descriptografadas quando você exportá-las.
     
 - Se uma mensagem de email criptografada por RMS tiver um anexo (como um documento ou outra mensagem de email) também criptografada, somente a mensagem de email de nível superior será descriptografada.
     
-- Se você precisar impedir que alguém descriptografe mensagens criptografadas por RMS ao preparar resultados de pesquisa para análise na descoberta eletrônica avançada, será necessário criar um grupo de função personalizado (copiando o grupo de função de Gerenciador de descoberta eletrônica interno) e remover o RMS DesCriptografar função de gerenciamento do grupo de função personalizado. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como um membro do grupo de função personalizado.
+- Se você precisar impedir que alguém descriptografe mensagens criptografadas por RMS ao preparar resultados de pesquisa para análise na descoberta eletrônica avançada, será necessário criar um grupo de função personalizado (copiando o grupo de função de Gerenciador de descoberta eletrônica interno) e remover o RMS Descriptografar função de gerenciamento do grupo de função personalizado. Em seguida, adicione a pessoa que você não deseja descriptografar mensagens como um membro do grupo de função personalizado.

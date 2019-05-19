@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Saiba como usar o carregamento de rede para importar arquivos PST criptografados por RMS para caixas de correio de usuário no Office 365.
-ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263659"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157993"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Usar o carregamento de rede para importar arquivos PST criptografados por RMS para o Office 365
 
-**Este artigo é para administradores. Você está tentando importar arquivos PST para sua própria caixa de correio? ConFira [importar email, contatos e calendário de um arquivo. pst do Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**Este artigo é para administradores. Você está tentando importar arquivos PST para sua própria caixa de correio? Confira [importar email, contatos e calendário de um arquivo. pst do Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Use a opção de carregamento de rede e o serviço de importação do Office 365 para importar arquivos PST para caixas de correio do usuário. O carregamento de rede significa que você carrega os arquivos PST uma área de armazenamento temporária na nuvem da Microsoft. Em seguida, o serviço de importação do Office 365 copia os arquivos PST da área de armazenamento para as caixas de correio do usuário de destino. Um novo recurso do serviço de importação permite que você criptografe seus arquivos PST antes que eles sejam carregados e armazenados na nuvem da Microsoft. Esses arquivos serão descriptografados, depois de serem importados para as caixas de correio de usuário. 
   
@@ -94,7 +94,7 @@ A configuração do Azure RMS para importação de PST consiste em três etapas:
   
 - [Ativando o Azure RMS](#activating-azure-rms)
     
-- [ConFigurando o RMS no Exchange Online](#configuring-rms-in-exchange-online)
+- [Configurando o RMS no Exchange Online](#configuring-rms-in-exchange-online)
     
 - [Instalando o cliente RMS do Active Directory](#installing-the-active-directory-rms-client)
     
@@ -102,7 +102,7 @@ A configuração do Azure RMS para importação de PST consiste em três etapas:
 
 O Azure RMS está desabilitado por padrão, mas você ou outro administrador na sua organização pode ter ativado isso. Siga as instruções sobre como [ativar o Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service) para instalar e ativar o Azure DRM.
   
-### <a name="configuring-rms-in-exchange-online"></a>ConFigurando o RMS no Exchange Online
+### <a name="configuring-rms-in-exchange-online"></a>Configurando o RMS no Exchange Online
 
 Depois de ter ativado o serviço de gerenciamento de direitos, a próxima etapa é configurar o gerenciamento de direitos de informação (IRM) no Exchange Online para usar o Azure RMS. Para obter mais informações, consulte [Configurar o IRM para usar o Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=394816).
   
@@ -229,7 +229,7 @@ Agora que você configurou o Azure RMS e obteve as IDs necessárias para criptog
     
 4. Na página **Importar**, clique em **Ir para o serviço de Importação**.
     
-5. na página **importar dados para o Office 365** , clique em **novo trabalho** ![adicionar](media/ITPro-EAC-AddIcon.gif)ícone e, em seguida, clique em **carregar mensagens de email (arquivos PST)**.
+5. Na página **importar dados para o Office 365** , clique em **novo trabalho** ![adicionar](media/ITPro-EAC-AddIcon.gif)ícone e, em seguida, clique em **carregar mensagens de email (arquivos PST)**.
     
 6. Na página **carregar arquivos pela rede** , na etapa 2, clique em **Mostrar URL SAS de carregamento de rede**.
     
@@ -266,7 +266,7 @@ Após concluir a etapa 1 até a etapa 4, você está pronto para usar a ferramen
 
     A tabela a seguir descreve os parâmetros e os valores necessários. Observe que as informações obtidas nas etapas anteriores são usadas nos valores desses parâmetros.
     
-    |**Parâmetro**|**Descrição**|**Exemplo**|
+    |**Parâmetro**|**Description**|**Exemplo**|
     |:-----|:-----|:-----|
     | `/srcdir:` <br/> |Especifica o diretório de origem em sua organização que contém os arquivos PST que serão carregados no Office 365.  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
     | `/protect-rmsserver:` <br/> |Especifica o local de licenciamento para o serviço do Azure RMS. Use o valor da `LicensingIntranetDistributionPointUrl` propriedade que você obteve na etapa 3. Certifique-se de colocar o valor deste parâmetro com aspas duplas ("")  <br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
@@ -360,14 +360,14 @@ Após os arquivos PST terem sido criptografados e carregados no local de armazen
   
 3. Use as informações da tabela a seguir para preencher o arquivo CSV com as informações necessárias.
     
-    |**Parâmetro**|**Descrição**|**Exemplo**|
+    |**Parâmetro**|**Description**|**Exemplo**|
     |:-----|:-----|:-----|
     | `Workload` <br/> |Especifica o serviço do Office 365 para o qual os dados serão importados. Para importar arquivos PST para caixas de correio de usuário `Exchange`, use.  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |Especifica o local da pasta no local de armazenamento do Azure em que você carregou os arquivos PST na etapa 5.  <br/>  Se você não incluir um nome de subpasta opcional na URL de rede `/upload-dest:` no parâmetro da etapa 5, deixe esse parâmetro em branco no arquivo CSV. Se você tiver incluído um nome de subpasta, especifique-o nesse parâmetro. O valor desse parâmetro diferencia maiúsculas de minúsculas. De qualquer forma, *não* inclua "ingestiondata" no valor para o `FilePath` parâmetro.  <br/> <br/>**Importante:** O caso do nome do caminho do arquivo deve ser o mesmo caso que você usou se você tiver incluído um nome de subpasta opcional na URL `/upload-dest:` SAS no parâmetro da etapa 5. Por exemplo, se você usou `EncryptedPSTs` para o nome da subpasta na etapa 5 e `encryptedpsts` usar no `FilePath` parâmetro no arquivo CSV, a importação do arquivo PST falhará. Certifique-se de usar o mesmo caso em ambas as instâncias.           |(deixar em branco)  <br/> Ou  <br/>  `EncryptedPSTs` <br/> |
     | `Name` <br/> |Especifica o nome do arquivo PST que será importado para a caixa de correio do usuário.  O valor desse parâmetro diferencia maiúsculas de minúsculas. Como os arquivos PST carregados para o local de armazenamento do Azure são criptografados, `.pfile` uma extensão é adicionada ao nome de arquivo PST. Você deve adicionar a `.pfile` extensão ao nome dos arquivos pst no arquivo CSV.  <br/><br/> **Importante:** O caso do nome de arquivo PST no arquivo CSV deve ser igual ao arquivo PST que foi carregado no local de armazenamento do Azure na etapa 5. Por exemplo, se você usar `annb.pst.pfile` no `Name` parâmetro no arquivo CSV, mas o nome do arquivo PST real for `AnnB.pst`, a importação desse arquivo PST falhará. Certifique-se de que o nome do PST no arquivo CSV use o mesmo caso do arquivo PST real.           | `annb.pst.pfile` <br/> |
     | `Mailbox` <br/> |Especifica o endereço de email da caixa de correio para a qual o arquivo PST será importado.   <br/> Para importar um arquivo PST para uma caixa de correio inativa, você precisa especificar o GUID da caixa de correio para esse parâmetro. Para obter esse GUID, execute o seguinte comando do PowerShell no Exchange Online:`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **Observação:** Em alguns casos, você pode ter várias caixas de correio com o mesmo endereço de email, em que uma caixa de correio está ativa e a outra caixa de correio está em um estado de exclusão reversível (ou inativa). Nessas situações, você deve especificar o GUID da caixa de correio para identificar exclusivamente a caixa de correio para a qual importar o arquivo PST. Para obter esse GUID para caixas de correio ativas, execute o seguinte comando `Get-Mailbox - <identity of active mailbox> | FL Guid`do PowerShell:. Para obter o GUID das caixas de correio excluídas por software (ou inativo), execute este comando`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Especifica se deve ou não importar o arquivo PST para a caixa de correio de arquivo morto do usuário. Há duas opções:  <br/> **False** Importa o arquivo PST para a caixa de correio principal do usuário.  <br/> **True** Importa o arquivo PST para a caixa de correio de arquivo morto do usuário.  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **Observação:** Para importar um arquivo PST para uma caixa de correio de arquivo morto baseado na nuvem para um usuário cuja caixa de correio principal esteja no local, basta especificar **true** para esse parâmetro e especificar o endereço de email da caixa de correio `Mailbox` local do usuário para o parâmetro.           | `FALSE` <br/> Ou  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Especifica a pasta de caixa de correio para a qual o arquivo PST será importado.  <br/>  Se você deixar esse parâmetro em branco, o PST será importado para uma nova **** pasta denominaDa importada localizada no nível raiz da caixa de correio (o mesmo nível que a pasta caixa de entrada e as outras pastas de caixa de correio padrão).  <br/>  Se você especificar `/`, os itens no arquivo PST serão importados diretamente para a pasta caixa de entrada do usuário.  <br/>  Se você especificar `/<foldername>`, os itens no arquivo PST serão importados para uma subpasta chamada * \<nome_da_pasta\> * . Por exemplo, se você usou `/ImportedPst`, os itens seriam importados para uma subpasta chamada **ImportedPst**. Essa subpasta estará localizada na pasta caixa de entrada do usuário.  <br/><br/> **Dica:** Considere a execução de alguns lotes de teste para experimentar esse parâmetro para que você possa determinar o melhor local da pasta para importar arquivos PSTs.           |(deixar em branco)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | Especifica a pasta de caixa de correio para a qual o arquivo PST será importado.  <br/>  Se você deixar esse parâmetro em branco, o PST será importado para uma nova **** pasta denominada importada localizada no nível raiz da caixa de correio (o mesmo nível que a pasta caixa de entrada e as outras pastas de caixa de correio padrão).  <br/>  Se você especificar `/`, os itens no arquivo PST serão importados diretamente para a pasta caixa de entrada do usuário.  <br/>  Se você especificar `/<foldername>`, os itens no arquivo PST serão importados para uma subpasta chamada * \<nome_da_pasta\> * . Por exemplo, se você usou `/ImportedPst`, os itens seriam importados para uma subpasta chamada **ImportedPst**. Essa subpasta estará localizada na pasta caixa de entrada do usuário.  <br/><br/> **Dica:** Considere a execução de alguns lotes de teste para experimentar esse parâmetro para que você possa determinar o melhor local da pasta para importar arquivos PSTs.           |(deixar em branco)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Este parâmetro opcional especifica um valor numérico para a página de código a ser usado para importar arquivos PST no formato de arquivo ANSI. Esse parâmetro é usado para importar arquivos PST de organizações chinesas, japonesas e coreanas (CJK), pois esses idiomas normalmente usam um DBCS (conjunto de caracteres de dois bytes) para codificação de caracteres. Se esse parâmetro não for usado para importar arquivos PST para idiomas que usam DBCS para nomes de pastas de caixa de correio, os nomes das pastas freqüentemente serão truncados após serem importados. Para obter uma lista de valores com suporte para usar esse parâmetro, confira identificadores de [página de código](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/><br/> **Observação:** Como mencionado anteriormente, este é um parâmetro opcional e você não precisa incluí-lo no arquivo CSV. Ou você pode incluí-lo e deixar o valor em branco para uma ou mais linhas.           |(deixar em branco)  <br/> Ou  <br/>  `932`(que é o identificador da página de código para ANSI/OEM japonês)  <br/> |
     | `SPFileContainer` <br/> |Deixe este parâmetro em branco para Importação de PST.   <br/> |Não aplicável  <br/> |
     | `SPManifestContainer` <br/> |Deixe este parâmetro em branco para Importação de PST.   <br/> |Não aplicável  <br/> |
@@ -385,7 +385,7 @@ A última etapa é criar o trabalho de importação de PST no serviço de import
     
 4. Na página **Importar**, clique em **Ir para o serviço de Importação**.
     
-5. na página **importar dados para o Office 365** , clique em **novo trabalho**![adicionar](media/ITPro-EAC-AddIcon.gif)ícone e, em seguida, clique em **carregar mensagens de email (arquivos PST)**.
+5. Na página **importar dados para o Office 365** , clique em **novo trabalho**![adicionar](media/ITPro-EAC-AddIcon.gif)ícone e, em seguida, clique em **carregar mensagens de email (arquivos PST)**.
     
 6. Na página **Carregar dados pela rede**, marque as caixas de seleção **Eu acabei de carregar os meus arquivos** e **Eu tenho acesso ao arquivo de mapeamento** e clique em **Avançar**.  
     

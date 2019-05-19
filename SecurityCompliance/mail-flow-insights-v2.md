@@ -3,18 +3,18 @@ title: Fluxo de emails no Centro de Conformidade e Segurança
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868619"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155873"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Fluxo de emails no Centro de Conformidade e Segurança
 

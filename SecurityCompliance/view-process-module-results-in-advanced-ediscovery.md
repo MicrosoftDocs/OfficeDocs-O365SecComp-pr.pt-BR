@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Saiba mais sobre como localizar os resultados de um módulo de processo executado na descoberta eletrônica avançada do Office 365, incluindo o status da tarefa e o resumo do processo.  '
-ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267152"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157793"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Exibir resultados do módulo de processo na descoberta eletrônica avançada do Office 365
 

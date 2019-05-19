@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use o centro de conformidade do & de segurança para criar suspensões de descoberta eletrônica e para acessar e gerenciar casos de descoberta eletrônica em sua organização.
-ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252966"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155853"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gerenciar ocorrências de Descoberta Eletrônica no Centro de Conformidade e Segurança
 
@@ -52,7 +52,7 @@ Use o fluxo de trabalho a seguir para configurar e usar casos de descoberta elet
 
 A primeira etapa é atribuir as permissões relacionadas à descoberta eletrônica apropriadas às pessoas para que você possa adicioná-las a um caso de descoberta eletrônica na etapa 2. Você precisa ser membro do grupo de função gerenciamento da organização (ou receber a função de gerenciamento de função) no centro de conformidade do & de segurança para atribuir permissões de descoberta eletrônica. A lista a seguir descreve os grupos de função relacionados à descoberta eletrônica no centro de conformidade do & de segurança.
   
-- **Revisor** Esse grupo de função tem as permissões mais restritivas relacionadas a descoberta eletrônica. Os membros desse grupo só podem ver e abrir a lista de casos na página **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança para os quais eles são membros. Eles não podem criar casos, adicionar membros a uma ocorrência, criar isenções, criar pesquisas, exportar resultados de pesquisa ou preparar resultados para descoberta eletrônica avançada. No enTanto, os membros podem acessar casos na descoberta eletrônica avançada para executar tarefas de análise. 
+- **Revisor** Esse grupo de função tem as permissões mais restritivas relacionadas a descoberta eletrônica. Os membros desse grupo só podem ver e abrir a lista de casos na página **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança para os quais eles são membros. Eles não podem criar casos, adicionar membros a uma ocorrência, criar isenções, criar pesquisas, exportar resultados de pesquisa ou preparar resultados para descoberta eletrônica avançada. No entanto, os membros podem acessar casos na descoberta eletrônica avançada para executar tarefas de análise. 
     
 - **Gerenciador de descoberta eletrônica** Os membros desse grupo de função podem criar e gerenciar ocorrências de descoberta eletrônica. Eles podem adicionar e remover membros, colocar os locais de conteúdo em espera, criar e editar pesquisas de conteúdo associadas a uma ocorrência, exportar os resultados de uma pesquisa de conteúdo e preparar resultados de pesquisa para análise na descoberta eletrônica avançada. Há dois subgrupos nesse grupo de função. A diferença entre esses subgrupos está no escopo.
     
@@ -416,7 +416,7 @@ Para ir a um caso na Descoberta Eletrônica Avançada:
     
     ![Clique em alternar para descoberta eletrônica avançada para abrir o caso na descoberta eletrônica avançada](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    A barra de progresso **conectaNdo-se à descoberta eletrônica avançada** é exibida. Quando você estiver conectado à descoberta eletrônica avançada, uma lista de contêineres será exibida na página. 
+    A barra de progresso **conectando-se à descoberta eletrônica avançada** é exibida. Quando você estiver conectado à descoberta eletrônica avançada, uma lista de contêineres será exibida na página. 
     
     ![O caso é exibido na descoberta eletrônica avançada](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
@@ -500,14 +500,14 @@ Quando você reabre uma ocorrência, qualquer bloqueio que estava no lugar quand
 |:-----|:-----|
 |Número máximo de casos para uma organização  <br/> |Sem limite  <br/> |
 |Número máximo de isenções de caso para uma organização  <br/> |10.000  <br/> |
-|Número máximo de caixas de correio em uma única retenção de caso  <br/> |1.000  <br/> |
+|Número máximo de caixas de correio em uma única retenção de caso  <br/> |1,000  <br/> |
 |Número máximo de sites do SharePoint e do OneDrive for Business em uma única retenção de caso  <br/> |100  <br/> |
    
-- **E os casos que foram criados na página de gerenciamento de casos na descoberta eletrônica avançada?** Você pode acessar uma lista de casos de descoberta eletrônica avançada mais antigas clicando no link na parte inferior da página de **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança. No enTanto, para fazer qualquer trabalho em um caso mais antigo, você precisa entrar em contato com o suporte do Office 365 e solicitar que o caso seja movido para uma nova ocorrência de descoberta eletrônica no centro de conformidade do & de segurança. 
+- **E os casos que foram criados na página de gerenciamento de casos na descoberta eletrônica avançada?** Você pode acessar uma lista de casos de descoberta eletrônica avançada mais antigas clicando no link na parte inferior da página de **descoberta eletrônica** no centro de conformidade do _AMP_ de segurança. No entanto, para fazer qualquer trabalho em um caso mais antigo, você precisa entrar em contato com o suporte do Office 365 e solicitar que o caso seja movido para uma nova ocorrência de descoberta eletrônica no centro de conformidade do & de segurança. 
     
 - **Por que criar um administrador de descoberta eletrônica?** Como explicado anteriormente, um administrador de descoberta eletrônica é membro do grupo de funções Gerenciador de descoberta eletrônica que pode exibir e acessar todos os casos de descoberta eletrônica em sua organização. A capacidade de acessar todas as ocorrências de Descoberta Eletrônica tem duas finalidades importantes:
     
-  - se uma pessoa que é o único membro de um ocorrência de Descoberta Eletrônica sair de sua organização, ninguém (incluindo os membros do grupo de funções Gerenciamento da organização ou outro membro do grupo de funções Gerente de Descoberta Eletrônica) poderá acessar essa ocorrência de Descoberta Eletrônica, pois não é membro de uma ocorrência. Nessa situação, não haveria um modo de acessar os dados na ocorrência. No enTanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles podem ver o caso no centro de conformidade do & de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
+  - se uma pessoa que é o único membro de um ocorrência de Descoberta Eletrônica sair de sua organização, ninguém (incluindo os membros do grupo de funções Gerenciamento da organização ou outro membro do grupo de funções Gerente de Descoberta Eletrônica) poderá acessar essa ocorrência de Descoberta Eletrônica, pois não é membro de uma ocorrência. Nessa situação, não haveria um modo de acessar os dados na ocorrência. No entanto, como um administrador de descoberta eletrônica pode acessar todos os casos de descoberta eletrônica na organização, eles podem ver o caso no centro de conformidade do & de segurança e adicioná-los ou outro gerenciador de descoberta eletrônica como membro do caso.
     
   - Como um administrador de descoberta eletrônica pode exibir e acessar todos os casos de descoberta eletrônica, eles podem auditar e supervisionar todos os casos e pesquisas de conteúdo associadas. Isso pode ajudar a evitar o uso indevido de Pesquisas de Conteúdo ou de ocorrências de Descoberta Eletrônica. Além disso, como os Administradores de Descoberta Eletrônica podem acessar informações possivelmente confidenciais nos resultados de uma Pesquisa de Conteúdo, você deve limitar o número de pessoas com a função de Administrador de Descoberta Eletrônica.
     
@@ -521,7 +521,7 @@ Quando você reabre uma ocorrência, qualquer bloqueio que estava no lugar quand
     
   - Se um local de conteúdo fizer parte de várias isenções dentro do mesmo caso, as consultas de retenção serão combinadas por um operador **or** quando você pesquisar esse local de conteúdo usando a opção de conteúdo de todos os casos. Da mesma forma, se um local de conteúdo fizer parte de duas isenções diferentes, onde um é baseado em consulta e o outro é um bloqueio infinito (onde todo o conteúdo é colocado em espera), todo o conteúdo será pesquisado por causa da isenção. 
     
-  - Se uma pesquisa de conteúdo for para um caso e você a configurou para pesquisar todo o conteúdo do caso e, em seguida, alterar uma retenção (adicionando ou removendo um local de conteúdo ou alterando a consulta de retenção), a configuração de pesquisa será atualizada com essas alterações. No enTanto, é necessário executar novamente a pesquisa após a alteração da retenção para atualizar os resultados da pesquisa.
+  - Se uma pesquisa de conteúdo for para um caso e você a configurou para pesquisar todo o conteúdo do caso e, em seguida, alterar uma retenção (adicionando ou removendo um local de conteúdo ou alterando a consulta de retenção), a configuração de pesquisa será atualizada com essas alterações. No entanto, é necessário executar novamente a pesquisa após a alteração da retenção para atualizar os resultados da pesquisa.
     
   - Se a retenção de vários casos for colocada em um local de conteúdo em uma ocorrência de descoberta eletrônica e você selecionar a pesquisa de todo o conteúdo do caso, o número máximo de palavras-chave para essa consulta de pesquisa será de 500. Isso ocorre porque a pesquisa de conteúdo combina todas as retenções baseadas em consulta usando o operador **ou** . Se houver mais de 500 palavras-chave nas consultas de retenção combinada e na consulta de pesquisa de conteúdo, todo o conteúdo da caixa de correio será pesquisado, e não apenas esse conteúdo que corresponda a qualquer um dos casos baseados em consulta. 
     
@@ -563,11 +563,11 @@ Quando você reabre uma ocorrência, qualquer bloqueio que estava no lugar quand
     Como alternativa, as conversas que fazem parte da lista de chat no Microsoft Teams são armazenadas na caixa de correio do usuário que participa do chat. Os arquivos que um usuário compartilha em conversas de chat são armazenados no site do OneDrive for Business do usuário que compartilha o arquivo. Portanto, você precisa colocar as caixas de correio de usuários individuais e os sites do OneDrive for Business em retenção para reter conversas e arquivos na lista de chat. É por isso que é uma boa ideia colocar uma retenção nas caixas de correio dos membros de uma equipe da Microsoft, além de colocar a caixa de correio da equipe (e o site) em espera.
     
     > [!IMPORTANT]
-    > Os usuários que participam de conversas que fazem parte da lista de chat no Microsoft Teams devem ter uma caixa de correio do Exchange Online (baseada na nuvem) para reter conversas de chat quando a caixa de correio é colocada em uma descoberta eletrônica. Isso ocorre porque as conversas que fazem parte da lista de chat são armazenadas nas caixas de correio baseadas em nuvem dos participantes do chat. Se um participante de chat não tiver uma caixa de correio do Exchange Online, você não conseguirá reter conversas de chat. Por exemplo, em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local podem conseguir participar de conversas que fazem parte da lista de chat no Microsoft Teams. No enTanto, nesse caso, o conteúdo dessas conversas não pode ser retido porque os usuários não têm caixas de correio baseadas em nuvem. 
+    > Os usuários que participam de conversas que fazem parte da lista de chat no Microsoft Teams devem ter uma caixa de correio do Exchange Online (baseada na nuvem) para reter conversas de chat quando a caixa de correio é colocada em uma descoberta eletrônica. Isso ocorre porque as conversas que fazem parte da lista de chat são armazenadas nas caixas de correio baseadas em nuvem dos participantes do chat. Se um participante de chat não tiver uma caixa de correio do Exchange Online, você não conseguirá reter conversas de chat. Por exemplo, em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local podem conseguir participar de conversas que fazem parte da lista de chat no Microsoft Teams. No entanto, nesse caso, o conteúdo dessas conversas não pode ser retido porque os usuários não têm caixas de correio baseadas em nuvem. 
   
   - Cada equipe do Microsoft ou canal de equipe contém um wiki para anotações e colaboração. O conteúdo wiki é automaticamente salvo em um arquivo com um formato. mht. Esse arquivo é armazenado na biblioteca de documentos de dados wiki do teams no site do SharePoint da equipe. Você pode colocar o conteúdo do wiki em espera, colocando o site do SharePoint da equipe em espera.
     
     > [!NOTE]
-    > A capacidade de manter o conteúdo do wiki para uma equipe do Microsoft ou um canal de equipe (quando você coloca o site do SharePoint da equipe em espera) foi lançada em 22 de junho de 2017. Se um site de equipe estiver em espera, o conteúdo wiki será retido a partir dessa data. No enTanto, se um site de equipe estiver em espera e o conteúdo wiki tiver sido excluído antes de 22 de junho de 2017, o conteúdo wiki não foi mantido. 
+    > A capacidade de manter o conteúdo do wiki para uma equipe do Microsoft ou um canal de equipe (quando você coloca o site do SharePoint da equipe em espera) foi lançada em 22 de junho de 2017. Se um site de equipe estiver em espera, o conteúdo wiki será retido a partir dessa data. No entanto, se um site de equipe estiver em espera e o conteúdo wiki tiver sido excluído antes de 22 de junho de 2017, o conteúdo wiki não foi mantido. 
   
 - **Como encontrar a URL para os sites do OneDrive for Business?** Para coletar uma lista das URLs para os sites do OneDrive for Business em sua organização para que você possa adicioná-los a uma isenção ou a uma pesquisa associada a uma ocorrência de descoberta eletrônica, consulte [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Este script neste artigo cria um arquivo de texto que contém uma lista de todos os sites do OneDrive. Para executar esse script, você precisará instalar e usar o Shell de gerenciamento do SharePoint Online. Certifique-se de acrescentar a URL para o domínio meusite da sua organização a cada site do OneDrive que você deseja pesquisar. Este é o domínio que contém todos os seus OneDrive; por exemplo, `https://contoso-my.sharepoint.com`. Veja um exemplo de uma URL para o site do OneDrive de um usuário `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`:.

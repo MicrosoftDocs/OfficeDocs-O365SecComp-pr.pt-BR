@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use o editor de pesquisa em massa no centro de segurança e conformidade no Office 365 ou no Microsoft 365 para alterar rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas de conteúdo.
-ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243826"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152213"
 ---
 # <a name="bulk-edit-content-searches"></a>Edição em massa de pesquisas de conteúdo
 
@@ -60,7 +60,7 @@ Veja algumas dicas para editar consultas usando o editor de pesquisa em massa:
   
 - Copie a consulta existente (usando **Ctrl C** ) para um arquivo de texto. Edite a consulta no arquivo de texto e, em seguida, copie a consulta revisada e Cole (usando **Ctrl V** ) novamente na célula da página **consultas** . 
     
-- Você também pode copiar consultas de outros aplicativos (como o Microsoft Word ou o Microsoft Excel). No enTanto, lembre-se de que você pode adicionar inadvertidamente caracteres não suportados a uma consulta usando o editor de pesquisa em massa. A melhor maneira de evitar que os caracteres não suportados seja apenas digitar a consulta em uma célula na página **consultas** . Como alternativa, você pode copiar uma consulta do Word ou Excel e colá-la no arquivo em um editor de texto sem formatação, como o bloco de notas da Microsoft. Em seguida, salve o arquivo de texto e selecione **ANSI** na lista suspensa **codificação** . Isso removerá qualquer formatação e caractere sem suporte. Em seguida, você pode copiar e colar a consulta do arquivo de texto para a página **consultas** . 
+- Você também pode copiar consultas de outros aplicativos (como o Microsoft Word ou o Microsoft Excel). No entanto, lembre-se de que você pode adicionar inadvertidamente caracteres não suportados a uma consulta usando o editor de pesquisa em massa. A melhor maneira de evitar que os caracteres não suportados seja apenas digitar a consulta em uma célula na página **consultas** . Como alternativa, você pode copiar uma consulta do Word ou Excel e colá-la no arquivo em um editor de texto sem formatação, como o bloco de notas da Microsoft. Em seguida, salve o arquivo de texto e selecione **ANSI** na lista suspensa **codificação** . Isso removerá qualquer formatação e caractere sem suporte. Em seguida, você pode copiar e colar a consulta do arquivo de texto para a página **consultas** . 
     
   
 ## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>Usar o editor de pesquisa em massa para alterar locais de conteúdo

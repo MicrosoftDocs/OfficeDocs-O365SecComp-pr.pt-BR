@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use a pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar caixas de correio, sites do SharePoint Online e locais do OneDrive for Business. '
-ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261698"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157093"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Executar uma pesquisa de conteúdo no Centro de Conformidade e Segurança
 
@@ -154,7 +154,7 @@ A Pesquisa de conteúdo é uma nova ferramenta de pesquisa de Descoberta Eletrô
     
 2. O número (e o tamanho total) dos itens que foram encontrados que correspondem à consulta de pesquisa. Exemplos de tipos de item incluem mensagens de email, itens de calendário e documentos. Se um item contiver várias instâncias de uma palavra-chave que está sendo pesquisada, ela só será contada uma vez no número total de itens. Por exemplo, se você estiver pesquisando palavras "stock" ou "Tip" e uma mensagem de email contiver três instâncias da palavra "stock", ela só será contada uma vez no campo **itens** . 
     
-3. O número e o tamanho total dos itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. No enTanto, se um item não indexado for excluído pelos critérios de pesquisa, ele não será incluído na estimativa de itens não indexados.
+3. O número e o tamanho total dos itens não indexados nos locais de conteúdo que foram pesquisados. O número de itens não indexados que não atendem aos critérios de pesquisa será incluído nas estatísticas de pesquisa exibidas no painel de detalhes. Se um item não indexado corresponder à consulta de pesquisa (porque outras propriedades de mensagem ou de documento atendem aos critérios de pesquisa), ela não será incluída no número estimado de itens não indexados. No entanto, se um item não indexado for excluído pelos critérios de pesquisa, ele não será incluído na estimativa de itens não indexados.
     
 4. O número de cada tipo de local de conteúdo pesquisado. Para caixas de correio, observe que as caixas de correio de arquivo morto são incluídas no número total de caixas de correio que foram pesquisadas. No exemplo anterior, quatro caixas de correio de usuário foram pesquisadas e a caixa de correio de arquivo morto para cada um desses usuários está habilitada. É por isso que oito caixas de correio são citadas nas estatísticas de pesquisa.
     
@@ -265,8 +265,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
  
 [Microsoft Teams e grupos do Office 365](#microsoft-teams-and-office-365-groups)
   
-
-  [OneDrive for Business](#onedrive-for-business)
+[OneDrive for Business](#onedrive-for-business)
   
 [Consultas de pesquisa](#search-queries)
   
@@ -285,7 +284,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
 |**Número de caixas de correio**|**Tempo médio de pesquisa**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1.000  <br/> |45 segundos  <br/> |
+|1,000  <br/> |45 segundos  <br/> |
 |10.000  <br/> |4 minutos  <br/> |
 |25.000  <br/> |10 minutos  <br/> |
 |50.000  <br/> |20 minutos  <br/> |
@@ -336,7 +335,7 @@ Veja mais informações sobre as pesquisas de conteúdo.
     Como alternativa, as conversas que fazem parte da lista de chat no Microsoft Teams são armazenadas na caixa de correio do Exchange Online dos usuários que participam do chat. Os arquivos que um usuário compartilha em conversas de chat são armazenados na conta do OneDrive for Business do usuário que compartilha o arquivo. Portanto, você precisa adicionar as caixas de correio de usuário individuais e as contas do OneDrive for Business como locais de conteúdo para pesquisar conversas e arquivos na lista de chat.
     
     > [!NOTE]
-    > Os usuários que participam de conversas que fazem parte da lista de chat no Microsoft Teams devem ter uma caixa de correio do Exchange Online (baseada na nuvem) para que você pesquise conversas de chat. Isso ocorre porque as conversas que fazem parte da lista de chat são armazenadas nas caixas de correio baseadas em nuvem dos participantes do chat. Se um participante de chat não tiver uma caixa de correio do Exchange Online, você não conseguirá Pesquisar conversas de chat. Por exemplo, em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local podem conseguir participar de conversas que fazem parte da lista de chat no Microsoft Teams. No enTanto, nesse caso, o conteúdo dessas conversas não é pesquisável porque os usuários não têm caixas de correio baseadas em nuvem. 
+    > Os usuários que participam de conversas que fazem parte da lista de chat no Microsoft Teams devem ter uma caixa de correio do Exchange Online (baseada na nuvem) para que você pesquise conversas de chat. Isso ocorre porque as conversas que fazem parte da lista de chat são armazenadas nas caixas de correio baseadas em nuvem dos participantes do chat. Se um participante de chat não tiver uma caixa de correio do Exchange Online, você não conseguirá Pesquisar conversas de chat. Por exemplo, em uma implantação híbrida do Exchange, os usuários com uma caixa de correio local podem conseguir participar de conversas que fazem parte da lista de chat no Microsoft Teams. No entanto, nesse caso, o conteúdo dessas conversas não é pesquisável porque os usuários não têm caixas de correio baseadas em nuvem. 
   
   - Cada equipe do Microsoft ou canal de equipe contém um wiki para anotações e colaboração. O conteúdo wiki é automaticamente salvo em um arquivo com um formato. mht. Esse arquivo é armazenado na biblioteca de documentos de dados wiki do teams no site do SharePoint da equipe. Você pode usar a ferramenta de pesquisa de conteúdo para pesquisar o wiki especificando o site do SharePoint da equipe como o local de conteúdo a ser pesquisado. 
     
@@ -403,6 +402,6 @@ Conforme mencionado anteriormente, você pode pesquisar caixas de correio inativ
     
     Pelo mesmo motivo, as pesquisas criadas na página de **pesquisa de conteúdo** não são exibidas na página **pesquisas** de um caso de descoberta eletrônica no centro de conformidade do & de segurança. 
     
-- Qual é a diferença entre reiniciar e repetir uma pesquisa? Quando você reinicia uma pesquisa, todos os locais de conteúdo especificados na pesquisa são pesquisados novamente em uma nova pesquisa de visualização. No enTanto, quando você repetir uma pesquisa, somente os locais de conteúdo que falharam quando a pesquisa foi executada pela última vez serão pesquisadas novamente.
+- Qual é a diferença entre reiniciar e repetir uma pesquisa? Quando você reinicia uma pesquisa, todos os locais de conteúdo especificados na pesquisa são pesquisados novamente em uma nova pesquisa de visualização. No entanto, quando você repetir uma pesquisa, somente os locais de conteúdo que falharam quando a pesquisa foi executada pela última vez serão pesquisadas novamente.
    
 

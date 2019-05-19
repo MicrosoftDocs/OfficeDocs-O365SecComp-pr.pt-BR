@@ -1,9 +1,9 @@
 ---
-title: Trabalhar com o gerente de conformidade da Microsoft
+title: Trabalhar com o Microsoft Compliance Manager (versão prévia)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: ec01bc8cbf1a1b59353d2f0840baa539e1331ef4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473010"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157863"
 ---
-# <a name="work-with-microsoft-compliance-manager"></a>Trabalhar com o gerente de conformidade da Microsoft
+# <a name="work-with-microsoft-compliance-manager-preview"></a>Trabalhar com o Microsoft Compliance Manager (versão prévia)
 
 > [!IMPORTANT]
 > O gerente de conformidade da Microsoft é um painel e uma ferramenta de gerenciamento que fornece um resumo de seus Stature de proteção e conformidade de dados e recomendações para melhorar a proteção e conformidade dos dados. As ações do cliente fornecidas no gerente de conformidade são recomendações; a sua organização pode avaliar a eficácia dessas recomendações em seu respectivo ambiente normativo antes da implementação. As recomendações encontradas no Gerenciador de conformidade não devem ser interpretadas como garantia de conformidade.
@@ -40,7 +40,7 @@ Para começar, uma avaliação ISO/IEC 27001:2103 para o Office 365 aparece por 
 
 ## <a name="administration"></a>Administração
 
-Há funções administrativas específicas que só estão disponíveis para o administrador de locatários e visíveis somente quando o logon é feito com uma conta de administrador global. No enTanto, até que o administrador atribua funções do Gerenciador de conformidade aos usuários, os dados no Gerenciador de conformidade são visíveis para todos os usuários em sua organização. É recomendável implementar o controle de acesso baseado em função para determinar quem pode acessar e realizar ações no Gerenciador de conformidade.
+Há funções administrativas específicas que só estão disponíveis para o administrador de locatários e visíveis somente quando o logon é feito com uma conta de administrador global. No entanto, até que o administrador atribua funções do Gerenciador de conformidade aos usuários, os dados no Gerenciador de conformidade são visíveis para todos os usuários em sua organização. É recomendável implementar o controle de acesso baseado em função para determinar quem pode acessar e realizar ações no Gerenciador de conformidade.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Atribuir funções do Gerenciador de Conformidade aos usuários
 
@@ -390,7 +390,7 @@ Um modelo é o objeto base no Gerenciador de conformidade (visualização) assoc
 
 ![Painel de modelo do Microsoft Gerenciador de conformidade](media/compliance-manager-template-dashboard.png)
  
-O painel exibe cada modelo, juntamente com a certificação e o produto associados ao modelo, as datas em que o modelo foi criado e modificado pela última vez, o número de controles gerenciados pelo cliente e pela Microsoft, a pontuação de conformidade máxima para o Modelo e o status do modelo (por exemplo, aprovado, aprovação pendente, imPortado).
+O painel exibe cada modelo, juntamente com a certificação e o produto associados ao modelo, as datas em que o modelo foi criado e modificado pela última vez, o número de controles gerenciados pelo cliente e pela Microsoft, a pontuação de conformidade máxima para o Modelo e o status do modelo (por exemplo, aprovado, aprovação pendente, importado).
 
 Cada um dos modelos internos tem uma avaliação interna associada a eles, mas você pode criar avaliações adicionais com base nos modelos internos e pode importar seus próprios modelos e criar avaliações personalizadas com base nesses modelos e em uma avaliação personalizada.
 
@@ -401,7 +401,7 @@ Cada modelo personalizado deve estar em uma pasta de trabalho do Excel separada 
 
 1. Modelo-avaliação
 2. ControlFamily
-3. Actions
+3. Ações
 4. Propriedade
 5. Dimensões
 

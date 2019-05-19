@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258360"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153743"
 ---
 # <a name="create-a-litigation-hold"></a>Criar uma Retenção de Litígio
 
@@ -40,7 +40,7 @@ Veja o que acontece quando você cria uma retenção de litígio.
 
 Aqui estão as etapas para colocar uma caixa de correio em retenção de litígio usando o centro de administração do Exchange.
 
-1. AcEsse [https://outlook.office.com/ecp](https://outlook.office.com/ecp) e entre usando sua conta de administrador global.
+1. Acesse [https://outlook.office.com/ecp](https://outlook.office.com/ecp) e entre usando sua conta de administrador global.
 
 2. Clique em **destinatários _GT_ caixas de correio** no painel de navegação esquerdo.
 

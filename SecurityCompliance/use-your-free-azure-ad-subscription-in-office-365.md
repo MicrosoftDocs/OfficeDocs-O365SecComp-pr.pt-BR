@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/8/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority\
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Saiba como acessar o Azure Active Directory, que vem incluído na assinatura paga de sua organização para o Office 365.
-ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a816e4e3d945ba361cc027658a977765190d0df2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242590"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157833"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Usar sua assinatura gratuita do Azure Active Directory no Office 365
 
@@ -41,6 +41,6 @@ Use uma sessão de navegação privada (não uma sessão normal) para acessar o 
     
 ## <a name="more-information"></a>Mais informações
 
-- Você também pode acessar o centro de administração **do Azure Active Directory** no centro de administração do Microsoft 365. no painel de navegação esquerdo do centro de administração do Microsoft 365, clique em central de **administração** \> do **Azure Active Directory**.
+- Você também pode acessar o centro de administração **do Azure Active Directory** no centro de administração do Microsoft 365. No painel de navegação esquerdo do centro de administração do Microsoft 365, clique em Central de **Administração** \> do **Azure Active Directory**.
     
 - Confira informações sobre como gerenciar usuários e grupos e realizar outras tarefas de gerenciamento do diretório em [Gerenciar seu diretório do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).

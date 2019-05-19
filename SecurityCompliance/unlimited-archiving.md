@@ -3,7 +3,7 @@ title: Visão geral do arquivamento ilimitado no Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Saiba mais sobre o arquivamento de expansão automática no Office 365, que fornece armazenamento de arquivo ilimitado para caixas de correio do Exchange Online.
-ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265916"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158063"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Visão geral do arquivamento ilimitado no Office 365
 
@@ -50,7 +50,7 @@ Veja aqui uma rápida visão geral do processo.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>O que é movido para o espaço de armazenamento de arquivo adicional?
 
-Para fazer uso eficiente do armazenamento de arquivo morto de expansão automática, as pastas podem ser movidas. O Office 365 determina quais pastas são movidas quando o armazenamento adicional é adicionado ao arquivo morto. Quando uma pasta é movida, uma subpasta é automaticamente criada na pasta original na parte de arquivo morto da lista de pastas no Outlook. Essa nova subpasta aponta para os itens que foram movidos. a convenção de nomenclatura que o Office 365 usa para nomear esta pasta é ** \<nome\>da pasta _yyyy (criado no mmm dd, yyyy h_mm)**, em que: 
+Para fazer uso eficiente do armazenamento de arquivo morto de expansão automática, as pastas podem ser movidas. O Office 365 determina quais pastas são movidas quando o armazenamento adicional é adicionado ao arquivo morto. Quando uma pasta é movida, uma subpasta é automaticamente criada na pasta original na parte de arquivo morto da lista de pastas no Outlook. Essa nova subpasta aponta para os itens que foram movidos. A Convenção de nomenclatura que o Office 365 usa para nomear esta pasta é ** \<nome\>da pasta _yyyy (criado no Mmm dd, yyyy h_mm)**, em que: 
   
 - **yyyy** é o ano em que as mensagens na pasta foram recebidas. 
     

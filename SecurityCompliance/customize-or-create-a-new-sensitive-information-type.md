@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Saiba como modificar ou criar novos tipos de informação confidencial do Office 365 para GDPR.
-ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258779"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153733"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar ou criar um novo tipo de informação confidencial
 
@@ -141,9 +141,11 @@ Talvez seja preciso criar outras consultas para localizar dados pessoais sujeito
 
 Use estes recursos para formular e otimizar consultas usando KQL:
 
--   [Referência de sintaxe (DMC) da Keyword Query Language(KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   
+  [Referência de sintaxe (DMC) da Keyword Query Language(KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Executar uma Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   
+  [Executar uma Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 A Pesquisa de Conteúdo oferece outro recurso para ajudar você a desenvolver consultas KQL e tipos de informação confidencial – as palavras-chave. Por que usar a lista de palavras-chave? Para ver estatísticas que mostram o número de itens que correspondem a cada palavra-chave, o que pode ajudar a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Para saber mais sobre as estatísticas de pesquisas, confira [Exibir as estatísticas de palavras-chave dos resultados da Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

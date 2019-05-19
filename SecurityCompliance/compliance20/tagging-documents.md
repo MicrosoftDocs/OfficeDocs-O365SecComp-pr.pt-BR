@@ -1,10 +1,10 @@
 ---
-title: Marcar documentos em um conjunto de trabalho
+title: Marcar documentos em um conjunto de revisão
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a3b588f4b8e24783cd0d7198ea995f0fd6c8ae3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241092"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154023"
 ---
-# <a name="tag-documents-in-a-working-set"></a>Marcar documentos em um conjunto de trabalho
+# <a name="tag-documents-in-a-review-set"></a>Marcar documentos em um conjunto de revisão
 
-Organizar o conteúdo em um conjunto de trabalho é importante para concluir vários fluxos de trabalho no processo de descoberta eletrônica. Isso inclui:
+Organizar o conteúdo em um conjunto de revisão é importante para concluir vários fluxos de trabalho no processo de descoberta eletrônica. Isso inclui:
 
 -  Como analisar conteúdo desnecessário
 
@@ -31,11 +31,11 @@ Organizar o conteúdo em um conjunto de trabalho é importante para concluir vá
  
 -  Identificar conteúdo que deve ser revisado por um especialista ou advogado
 
-Quando especialistas, advogados ou outros usuários revisam o conteúdo em um conjunto de trabalho, suas opiniões relacionadas ao conteúdo podem ser capturadas usando marcas. Por exemplo, se a intenção é de analisar conteúdo desnecessário, um usuário pode marcar documentos com uma marca como "não responsiva". Após o conteúdo ter sido revisado e marcado, uma pesquisa de conjunto de trabalho pode ser criada para excluir qualquer conteúdo marcado como "não responsivo", o que elimina esse conteúdo das próximas etapas no fluxo de trabalho de descoberta eletrônica. O painel de marcas pode ser personalizado para todos os casos, para que as marcas possam suportar o fluxo de trabalho de revisão desejado.
+Quando especialistas, advogados ou outros usuários revisam o conteúdo em um conjunto de revisão, suas opiniões relacionadas ao conteúdo podem ser capturadas usando marcas. Por exemplo, se a intenção é de analisar conteúdo desnecessário, um usuário pode marcar documentos com uma marca como "não responsiva". Após o conteúdo ter sido revisado e marcado, um conjunto de análise de pesquisa pode ser criado para excluir qualquer conteúdo marcado como "não responsivo", o que elimina esse conteúdo das próximas etapas no fluxo de trabalho de descoberta eletrônica. O painel de marcas pode ser personalizado para todos os casos, para que as marcas possam suportar o fluxo de trabalho de revisão desejado.
 
 ## <a name="tag-types"></a>Tipos de marca
 
-A descoberta eletrônica avançada (visualização) fornece dois tipos de marcas:
+A descoberta eletrônica avançada fornece dois tipos de marcas:
 
 - **Marcas de escolha única** -restringe os usuários a selecionar uma única marca dentro de um grupo. Isso pode ser útil para garantir que os usuários não selecionem marcas conflitantes, como "responsiva" e "sem resposta". 
 
@@ -43,7 +43,7 @@ A descoberta eletrônica avançada (visualização) fornece dois tipos de marcas
 
 ## <a name="tag-structure"></a>Estrutura da marca
 
-Além dos tipos de marca, a estrutura de como as marcas são organização no painel de marcas pode ser usada para tornar os documentos de marcação mais intuitivos. As marcas são agrupadas por seções. A pesquisa do conjunto de trabalho oferece suporte à capacidade de Pesquisar por marca e seção de marca. Isso significa que você pode criar uma pesquisa de conjunto de trabalho para recuperar documentos marcados com qualquer marca em uma seção.
+Além dos tipos de marca, a estrutura de como as marcas são organização no painel de marcas pode ser usada para tornar os documentos de marcação mais intuitivos. As marcas são agrupadas por seções. revisar definir pesquisa oferece suporte à capacidade de Pesquisar por marca e seção de marca. Isso significa que você pode criar uma análise definir pesquisa para recuperar documentos marcados com qualquer marca em uma seção.
 
 ![Seções de marcas no painel de marcas](../media/Tagtypes.png)
 
@@ -57,7 +57,7 @@ Há várias maneiras de aplicar uma marca ao conteúdo.
 
 ### <a name="tagging-a-single-document"></a>Marcando um único documento
 
-Ao exibir um documento em um conjunto de trabalho, você pode exibir as marcas que uma revisão pode usar clicando em **painel de codificação**.
+Ao exibir um documento em um conjunto de revisão, você pode exibir as marcas que uma revisão pode usar clicando em **painel de codificação**.
 
 ![Clique no painel de marcas para exibir o painel de marcas](../media/Singledoctag.png)
 

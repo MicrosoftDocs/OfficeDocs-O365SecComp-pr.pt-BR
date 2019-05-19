@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de retenção no Office 365, é possível basear um período de retenção no momento que um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo de retenção aplicado para esse tipo de evento recebe as ações de retenção do rótulo. Normalmente, a retenção controlada por eventos é usada como parte de um processo de gerenciamento de registros.
-ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256349"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154623"
 ---
 # <a name="overview-of-event-driven-retention"></a>Visão geral da retenção controlada por eventos
 

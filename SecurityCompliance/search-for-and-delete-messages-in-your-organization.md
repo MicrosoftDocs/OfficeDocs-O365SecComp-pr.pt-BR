@@ -3,7 +3,7 @@ title: Procurar e excluir mensagens de email na sua organização do Office 365-
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use o recurso de pesquisa e limpeza no centro de conformidade do & de segurança no Office 365 para pesquisar e excluir uma mensagem de email de todas as caixas de correio em sua organização.
-ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265343"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158473"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Procurar e excluir mensagens de email na sua organização do Office 365-ajuda do administrador
 
@@ -41,9 +41,9 @@ Você pode usar o recurso de pesquisa de conteúdo no Office 365 para procurar e
 
 - Para criar e executar uma pesquisa de conteúdo, você precisa ser membro do grupo de função **Gerenciador de descoberta eletrônica** ou ser atribuído à função de gerenciamento de **pesquisa de conformidade** . Para excluir mensagens, você precisa ser membro do grupo de função **Gerenciamento da organização** ou ter a função de gerenciamento de **pesquisa e limpeza** atribuída. Para obter informações sobre como adicionar usuários a um grupo de funções, consulte [conceder aos usuários acesso ao centro de segurança e conformidade](grant-access-to-the-security-and-compliance-center.md).
     
-- Você precisa usar o PowerShell de segurança do & de conformidade para excluir mensagens. ConFira a [etapa 2](#step-2-connect-to-security--compliance-center-powershell) para obter instruções sobre como se conectar.
+- Você precisa usar o PowerShell de segurança do & de conformidade para excluir mensagens. Confira a [etapa 2](#step-2-connect-to-security--compliance-center-powershell) para obter instruções sobre como se conectar.
     
-- No máximo 10 itens por caixa de correio podem ser removidos ao mesmo tempo. Como o recurso de pesquisa e remoção de mensagens tem como objetivo ser uma ferramenta de resposta a incidentes, esse limite ajuda a garantir que as mensagens sejam rapidamente removidas das caixas de correio. Este recurso não tem como objetivo limpar as caixas de correio do usuário. Para excluir mais de 10 itens, você pode usar o comando **Search-Mailbox-DeleteContent** no PowerShell do Exchange Online. ConFira [Pesquisar e excluir mensagens-ajuda do administrador](search-for-and-delete-messagesadmin-help.md).
+- No máximo 10 itens por caixa de correio podem ser removidos ao mesmo tempo. Como o recurso de pesquisa e remoção de mensagens tem como objetivo ser uma ferramenta de resposta a incidentes, esse limite ajuda a garantir que as mensagens sejam rapidamente removidas das caixas de correio. Este recurso não tem como objetivo limpar as caixas de correio do usuário. Para excluir mais de 10 itens, você pode usar o comando **Search-Mailbox-DeleteContent** no PowerShell do Exchange Online. Confira [Pesquisar e excluir mensagens-ajuda do administrador](search-for-and-delete-messagesadmin-help.md).
     
 - O número máximo de caixas de correio em uma pesquisa de conteúdo que você pode excluir itens em uma ação de pesquisa e limpeza é 50.000. Se a pesquisa de conteúdo (que você criou na [etapa 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiver mais de 50.000 caixas de correio de origem, a ação de limpeza (que você cria na etapa 3) falhará. Consulte a seção [mais informações](#more-information) para obter uma dica sobre como executar uma operação de pesquisa e limpeza em mais de 50.000 caixas de correio. 
     
@@ -128,7 +128,7 @@ Para obter mais informações, consulte [New-ComplianceSearchAction](https://doc
 
    Uma mensagem que é excluída com `New-ComplianceSearchAction -Purge -PurgeType HardDelete` o comando é movida para a pasta purges e não pode ser acessada pelo usuário. Depois que a mensagem for movida para a pasta Purges, a mensagem será mantida pela duração do período de retenção do item excluído se a recuperação de item único estiver habilitada para a caixa de correio. (No Office 365, a recuperação de item individual é habilitada por padrão quando uma nova caixa de correio é criada.) Após o período de retenção do item excluído expirar, a mensagem será marcada para exclusão permanente e será removida do Office 365 na próxima vez que a caixa de correio for processada pelo assistente de pasta gerenciada. 
 
-   Se você usar o `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando, as mensagens serão movidas para a pasta exclusões na pasta itens recuperáveis do usuário. Ele não é removido imediatamente do Office 365. O usuário pode recuperar mensagens na pasta Itens Excluídos de acordo com o período de retenção do item excluído configurado para a caixa de correio. Após esse período de retenção (ou se o usuário remover a mensagem antes do período expirar), a mensagem será movida para a pasta Remoções e não poderá mais ser acessada pelo usuário. Uma vez na pasta exPurgates, a mensagem será mantida pela duração com base no período de retenção de itens excluídos configurado para a caixa de correio se a recuperação de itens únicos estiver habilitada para a caixa de correio. (No Office 365, a recuperação de item individual é habilitada por padrão quando uma nova caixa de correio é criada.) Após o período de retenção do item excluído expirar, a mensagem será marcada para exclusão permanente e será removida do Office 365 na próxima vez que a caixa de correio for processada pelo assistente de pasta gerenciada. 
+   Se você usar o `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando, as mensagens serão movidas para a pasta exclusões na pasta itens recuperáveis do usuário. Ele não é removido imediatamente do Office 365. O usuário pode recuperar mensagens na pasta Itens Excluídos de acordo com o período de retenção do item excluído configurado para a caixa de correio. Após esse período de retenção (ou se o usuário remover a mensagem antes do período expirar), a mensagem será movida para a pasta Remoções e não poderá mais ser acessada pelo usuário. Uma vez na pasta expurgates, a mensagem será mantida pela duração com base no período de retenção de itens excluídos configurado para a caixa de correio se a recuperação de itens únicos estiver habilitada para a caixa de correio. (No Office 365, a recuperação de item individual é habilitada por padrão quando uma nova caixa de correio é criada.) Após o período de retenção do item excluído expirar, a mensagem será marcada para exclusão permanente e será removida do Office 365 na próxima vez que a caixa de correio for processada pelo assistente de pasta gerenciada. 
     
 - **E se você precisar excluir uma mensagem de mais de 50.000 caixas de correio?**
 

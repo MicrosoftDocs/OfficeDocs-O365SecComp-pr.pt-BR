@@ -3,7 +3,7 @@ title: Recursos antiphishing ATP no Office 365
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: A ATP anti-phishing é parte da proteção avançada contra ameaças do Office 365. A ATP anti-phishing aplica um conjunto de modelos de aprendizado de máquina junto com algoritmos de detecção de representação a mensagens de entrada para fornecer proteção para ataques de mercadoria e spear phishing. Todas as mensagens estão sujeitas a um amplo conjunto de modelos de aprendizado de máquina treinados para detectar mensagens de phishing, juntamente com um conjunto de algoritmos avançados usados para proteção contra vários ataques de personificação de domínio e usuário.
-ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0c17273d935dbdaec6d78a62a4edfa015b6b8efa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249561"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155543"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Recursos antiphishing ATP no Office 365
 
@@ -39,7 +39,7 @@ As políticas de anti-phishing do ATP podem ser aplicadas a um conjunto específ
   
 ## <a name="how-to-get-atp-anti-phishing"></a>Como obter anti-phishing do ATP
 
-Os recursos de anti-phishing do ATP fazem parte da [proteção avançada contra ameaças](office-365-atp.md); no entanto, a proteção anti-phishing do ATP se aplica quando políticas anti-phishing são definidas. (Um exemplo é uma política baseada em representação.) ConFira [Configurar políticas anti-phishing no Office 365](set-up-anti-phishing-policies.md).
+Os recursos de anti-phishing do ATP fazem parte da [proteção avançada contra ameaças](office-365-atp.md); no entanto, a proteção anti-phishing do ATP se aplica quando políticas anti-phishing são definidas. (Um exemplo é uma política baseada em representação.) Confira [Configurar políticas anti-phishing no Office 365](set-up-anti-phishing-policies.md).
   
 ## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Como saber se o anti-phishing da ATP está no local
 

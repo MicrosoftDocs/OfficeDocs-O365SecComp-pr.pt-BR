@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Revise como o valor de similaridade do documento, o nível mínimo de aparência de dois arquivos a serem considerados próximos duplicados, funciona na descoberta eletrônica avançada do Office 365. '
-ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ce9c2e6ea1d40c82b7a124c9d4d64ce915d266b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264135"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156373"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Entender a similaridade de documentos na descoberta eletrônica avançada do Office 365
 
@@ -37,7 +37,7 @@ Dentro de um conjunto Near-Duplicate (ND), pode haver documentos com um nível d
   
 Por exemplo, suponha que a similaridade seja definida como 80%, o documento F1 se parece com o documento F2 em um nível de 85%, e o documento F2 é parecido com o documento F3 em um nível de 90%. 
   
-No enTanto, o documento F1 pode se parecer com o documento F3 em um nível de apenas 70%, o que está abaixo do limite. No enTanto, neste exemplo, os documentos F1, F2 e F3 aparecem no conjunto de um. Da mesma forma, usando um valor de similaridade de 80%, podemos criar dois conjuntos, EquiSet-1 e EquiSet-2. EquiSet-1 contém documentos E1 e E2. Equiset-2 contém documentos F1, F2 e F3. 
+No entanto, o documento F1 pode se parecer com o documento F3 em um nível de apenas 70%, o que está abaixo do limite. No entanto, neste exemplo, os documentos F1, F2 e F3 aparecem no conjunto de um. Da mesma forma, usando um valor de similaridade de 80%, podemos criar dois conjuntos, EquiSet-1 e EquiSet-2. EquiSet-1 contém documentos E1 e E2. Equiset-2 contém documentos F1, F2 e F3. 
   
 Os níveis de semelhança são ilustrados da seguinte maneira:
   

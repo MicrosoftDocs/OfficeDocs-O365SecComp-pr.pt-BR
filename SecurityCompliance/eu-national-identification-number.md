@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação nacional da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255639"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154453"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificação nacional da UE
 
@@ -69,7 +69,7 @@ número de identidade
   
 national id
   
-Personalausweis REPUBLIK ÖSTERREICH
+personalausweis republik österreich
   
 ## <a name="belgium"></a>Bélgica 
 
@@ -125,9 +125,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
-Egn
+egn
   
-Egn #
+egn#
   
 número nacional búlgaro
   
@@ -135,7 +135,7 @@ número nacional
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -143,13 +143,13 @@ es
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 единен граждански номер
   
@@ -157,7 +157,7 @@ edinen grazhdanski de nome
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>Croácia
 
@@ -278,7 +278,7 @@ número nacional
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 IKMover
   
@@ -501,7 +501,7 @@ número do certificado pessoal
   
 código fiscal
   
-personalcodeno #
+personalcodeno#
   
 número de identificação pessoal
   
@@ -575,7 +575,7 @@ número de código pessoal
   
 número do certificado pessoal
   
-personalcodeno #
+personalcodeno#
   
 número de identificação pessoal
   
@@ -642,15 +642,15 @@ número do serviço do cidadão
   
 número de identidade exclusivo
   
-uniqueidentityno #
+uniqueidentityno#
   
 código pessoal.
   
 asmeninis skaitmeninis kodas
   
-unikalus identifikavimo Numeris
+unikalus identifikavimo numeris
   
-piliečio paslaugos Numeris
+piliečio paslaugos numeris
   
 unikalus identifikavimo kodas
   
@@ -703,17 +703,17 @@ ID pessoal
   
 número de identificação pessoal
   
-personalidno #
+personalidno#
   
 número de identificação exclusivo
   
-personalidnumber #
+personalidnumber#
   
 chave de ID exclusiva
   
 código de ID pessoal
   
-uniqueidkey #
+uniqueidkey#
   
 código individual
   
@@ -727,11 +727,11 @@ ID personnelle
   
 Numéro d'identification
   
-idpersonnelle #
+idpersonnelle#
   
-Persönliche identifikationsnummer
+persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>Malta
 
@@ -788,7 +788,7 @@ número do serviço do cidadão
   
 número de identidade exclusivo
   
-uniqueidentityno #
+uniqueidentityno#
   
 Kodiċi numerali pessoali
   
@@ -849,7 +849,7 @@ número do serviço do cidadão
   
 número de identidade exclusivo
   
-uniqueidentityno #
+uniqueidentityno#
   
 BSN
   
@@ -918,9 +918,9 @@ código numérico pessoal
   
 número de identificação exclusivo
   
-CNP
+cnp
   
-CNP #
+cnp#
   
 pessoal
   
@@ -928,11 +928,11 @@ pessoal
   
 número de seguro
   
-insurancenumber #
+insurancenumber#
   
 número de identidade exclusivo
   
-uniqueidentityno #
+uniqueidentityno#
   
 c.o.d. numérico pessoal
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr identificare pessoal
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>Eslováquia
 
@@ -1003,7 +1003,7 @@ número de identificação pessoal
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 es
   
@@ -1013,13 +1013,13 @@ número nacional
   
 número de identificação pessoal
   
-personalidnumber #
+personalidnumber#
   
 rč
   
 rodné číslo
   
-RODNE cislo
+rodne cislo
   
 ## <a name="slovenia"></a>Eslovênia
 
@@ -1080,7 +1080,7 @@ número de registro exclusivo
   
 número de identidade exclusivo
   
-uniqueidentityno #
+uniqueidentityno#
   
 número de cidadão mestre exclusivo
   
@@ -1132,7 +1132,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 
-DNI
+dni
   
 national identification number
   
@@ -1148,19 +1148,19 @@ identidade pessoal não
   
 número de identidade exclusivo
   
-nationalidno #
+nationalidno#
   
 UniqueId
   
-DNI #
+dni#
   
 nationalid #
   
-Nie #
+nie#
   
-Nie
+nie
   
-nienúmero #
+nienúmero#
   
 Nie número
   
@@ -1172,9 +1172,9 @@ número nacional identidad
   
 DNI número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>Suécia
 
