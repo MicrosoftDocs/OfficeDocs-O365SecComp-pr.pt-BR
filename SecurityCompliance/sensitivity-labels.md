@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor configurações de proteção, como criptografia ou marcas d'água em conteúdo rotulado.
-ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
+ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155973"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34166917"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -94,6 +94,8 @@ Um documento ou email pode ter apenas um único rótulo de confidencialidade apl
 
 ![Opção para criar um sub-rótulo](media/Sensitivity_label_sublabel_options.png)
 
+Observe que, além da prioridade de rótulo, a ordem das políticas de rótulos também é importante - veja [esta seção abaixo](#sensitivity-label-priority-order-matters).
+
 ### <a name="sublabels-grouping-labels"></a>Sub-rótulos (agrupamento de rótulos)
 
 Com os sub-rótulos, você pode agrupar um ou mais rótulos abaixo de um rótulo pai que o usuário verá em um aplicativo do Office. Por exemplo, em Confidencial, sua organização pode usar várias etiquetas diferentes para tipos específicos dessa classificação. Neste exemplo, o rótulo pai Confidencial é simplesmente um rótulo de texto sem as configurações de proteção e por ser um sub-rótulo, não pode ser aplicado ao conteúdo. Em vez disso, os usuários deverão escolher Confidencial para visualizar os sub-rótulos e, em seguida, eles podem escolher um sub-rótulo para aplicar o conteúdo.
@@ -136,6 +138,24 @@ Com uma política de rótulos, você pode:
     ![Link do Saiba mais no botão Confidencialidade na faixa de opções](media/Sensitivity_label_learn_more.png)
 
 Depois de criar uma política de rótulos e atribuir rótulos de confidencialidade para usuários e grupos, essas pessoas podem ver os rótulos disponíveis nos aplicativos do Office em uma hora ou menos.
+
+### <a name="label-policy-priority-order-matters"></a>Prioridade das políticas de rótulos (a ordem é importante)
+
+Você disponibiliza seus rótulos de confidencialidade aos usuários ao publicá-los em uma política de rótulos de confidencialidade, que aparece em uma lista na guia **Políticas de confidencialidade** na página **Políticas de rótulos**. Assim como rótulos de confidencialidade (veja [a seção acima](#sensitivity-label-priority-order-matters)), a ordem das políticas de rótulos de confidencialidade é importante porque reflete sua prioridade. A política de rótulo com prioridade mais baixa aparece na **parte superior** e a política de rótulo com a prioridade mais alta aparece na **parte inferior**.
+
+Uma política de rótulo consiste em:
+
+- Um conjunto de rótulos.
+- O escopo da política de rótulos, que são os usuários e grupos incluídos na política.
+- As configurações da política de rótulo descritas acima (rótulo padrão, justificativa, rótulo obrigatório e link de ajuda).
+
+Você pode incluir um usuário em várias políticas de rótulos e o usuário verá todas os rótulos de confidencialidade dessas políticas. Entretanto, um usuário só verá as configurações de políticas da política de rótulo com a prioridade mais alta.
+
+Se um usuário ou grupo na sua organização não estiver vendo uma opção na política de rótulo que você pretendia, como um rótulo padrão ou obrigatório, verifique a ordem das políticas de rótulos de confidencialidade. Para reordenar as políticas de rótulos, selecione uma política de rótulo de confidencialidade > escolha as reticências à direita > **Mover para baixo** ou **Mover para cima**.
+
+![Opções de movimentação na página de políticas de rótulos de confidencialidade](media/sensitivity-label-policy-priority.png)
+
+Observe que, embora a prioridade seja importante para políticas de rótulos de confidencialidade, ela **não** é importante para políticas de rótulo de retenção. Conforme explicado em [Os princípios de retenção ou o que tem precedência?](labels.md#the-principles-of-retention-or-what-takes-precedence), o conteúdo pode estar sujeito a várias políticas de retenção.
 
 ## <a name="how-to-get-started"></a>Como começar
 
