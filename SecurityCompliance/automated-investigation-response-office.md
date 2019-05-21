@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Saiba mais sobre os recursos de investigação e resposta automatizados do Office 365 proteção avançada contra ameaças.
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249802"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250314"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigação e resposta automatizadas (AIR) com o Office 365
 
-A investigação e a resposta automatizadas (AIR) (em breve para os [recursos de investigação e resposta contra ameaças do Office 365](office-365-ti.md)) permitem que você execute investigação e correção automatizadas para ameaças conhecidas que existem atualmente. Leia este artigo para obter uma visão geral do AIR e como ele pode ajudar sua organização e as equipes de operações de segurança a reduzir as ameaças de forma mais eficaz e eficiente. 
+A investigação e a resposta automatizadas (AIR) (atualmente em visualização pública, como uma das muitas [funcionalidades de investigação e resposta contra ameaças do Office 365](office-365-ti.md)) permitem que você execute investigação e correção automatizadas para ameaças conhecidas que existem atualmente. Leia este artigo para obter uma visão geral do AIR e como ele pode ajudar sua organização e as equipes de operações de segurança a reduzir as ameaças de forma mais eficaz e eficiente. 
 
 Para saber mais sobre quando os recursos do AIR estarão disponíveis, consulte o [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -154,15 +154,15 @@ O status de investigação indica o progresso das análises e ações. À medida
 - **Iniciando**: a investigação será enfileirada para começar em breve
 - **Executando**: a investigação foi iniciada e está realizando a análise
 - **Nenhuma ameaça encontrada**: a investigação concluiu a ' análise e nenhuma ameaça foi encontrada
-- **EncerraDo pelo sistema**: a investigação não foi fechada e expirou após 7 dias
+- **Encerrado pelo sistema**: a investigação não foi fechada e expirou após 7 dias
 - **Ação pendente**: a investigação encontrou ameaças com ações recomendadas
 - **Ameaças encontradas**: a investigação encontrou ameaças, mas as ameaças não têm ações disponíveis no Air
 - **Corrigido**: o investgation foi concluído e foi totalmente corrigido (todas as ações foram aprovadas)
 - **Parcialmente corrigido**: a investigação concluída e algumas das ações recomendadas foram aprovadas
-- **EncerraDo pelo usuário**: um administrador terminou a investigação
+- **Encerrado pelo usuário**: um administrador terminou a investigação
 - **Falha**: ocorreu um erro durante a investigação que impediu que ele chegasse em ameaças
-- **EnfileiraDo por limitação**: a investigação está aguardando a análise devido às limitações de processamento do sistema (para proteger o desempenho do serviço)
-- **TerminaDa pela limitação**: não foi possível concluir a investigação em tempo suficiente devido à investigação de limitações de processamento de volume e sistema. Você pode acionar novamente a investigação selecionando o email no Explorer e selecionando a ação investigar.
+- **Enfileirado por limitação**: a investigação está aguardando a análise devido às limitações de processamento do sistema (para proteger o desempenho do serviço)
+- **Terminada pela limitação**: não foi possível concluir a investigação em tempo suficiente devido à investigação de limitações de processamento de volume e sistema. Você pode acionar novamente a investigação selecionando o email no Explorer e selecionando a ação investigar.
 
 ### <a name="investigation-graph"></a>Gráfico de investigação
 
@@ -222,7 +222,7 @@ Você pode:
 
 ![Email de investigação de ar com detalhes de submenu](media/air-investigationemailpageflyoutdetails.png)
 
-* Observação: no contexto de email, você pode ver uma superfície de ameaça de anomalias de volume como parte da investigação. Uma anomalia de volume indica um pico em mensagens de email semelhantes em torno do tempo de evento de investigação em comparação aos prazos anteriores. Esse pico no tráfego de email com características semelhantes (por exemplo, domínio de assunto e remetente, semelhança de corpo e IP de remetente) é típico do início de campanhas ou ataques de email. No enTanto, as campanhas de emails em massa, spam e legítimas normalmente compartilham essas características. As anomalias de volume representam uma possível ameaça e, portanto, podem ser menos graves em comparação às ameaças de malware ou phishing identificadas usando mecanismos antivírus, acionamento ou reputação mal-intencionados.
+* Observação: no contexto de email, você pode ver uma superfície de ameaça de anomalias de volume como parte da investigação. Uma anomalia de volume indica um pico em mensagens de email semelhantes em torno do tempo de evento de investigação em comparação aos prazos anteriores. Esse pico no tráfego de email com características semelhantes (por exemplo, domínio de assunto e remetente, semelhança de corpo e IP de remetente) é típico do início de campanhas ou ataques de email. No entanto, as campanhas de emails em massa, spam e legítimas normalmente compartilham essas características. As anomalias de volume representam uma possível ameaça e, portanto, podem ser menos graves em comparação às ameaças de malware ou phishing identificadas usando mecanismos antivírus, acionamento ou reputação mal-intencionados.
 
 ### <a name="user-investigation"></a>Investigação de usuário
 
