@@ -9,15 +9,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252292"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334539"
 ---
 # <a name="microsoft-secure-score"></a>Classificação de Segurança da Microsoft
 
@@ -79,6 +82,10 @@ Quando você clica em uma ação de melhoria, uma saída é exibida. Para conclu
 Você pode exibir um gráfico da pontuação da sua organização com o tempo na guia **histórico** . Este modo de exibição inclui a média global, média da indústria e contagem de assentos similares, juntamente com todas as ações realizadas no intervalo de tempo selecionado. Você também pode personalizar um intervalo de datas e filtrar por categoria.
 
 A pontuação é calculada uma vez por dia (em torno de 1:00 AM PST). Se você fizer uma alteração em uma ação medida, a pontuação será automaticamente atualizada no dia seguinte. Também é importante observar que alguns outros portais mostram partes da Pontuação segura da Microsoft (como a central de segurança do Windows Defender). Se você concluir uma ação de melhoria e a pontuação for aumentada nesses portais, pode levar até 24 horas para que a pontuação atualizada seja exibida no centro de segurança do Microsoft 365.  
+
+## <a name="how-controls-are-scored"></a>Como os controles são pontuados
+
+Os controles podem ser pontuados de duas maneiras. Alguns são pontuados de uma maneira binária-você obtém 100% da Pontuação se tiver o recurso ou a configuração configurada com base em nossa recomendação. Outras pontuações são calculadas como uma porcentagem da configuração total. Por exemplo, se a recomendação de melhoria diz que você receberá 30 pontos se você proteger todos os seus usuários com a MFA e tiver apenas 5 de 100 total de usuários protegidos, receberá uma pontuação parcial em torno de 2 pontos (5 protegido/100 total * 30 pt máx.) . 
 
 ## <a name="risk-awareness"></a>Reconhecimento de risco
 
