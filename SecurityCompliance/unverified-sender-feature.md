@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para impedir que mensagens de phishing acessem sua caixa de correio, o Outlook.com e o Outlook na Web verificam se o remetente é quem dizem eles e marcam mensagens suspeitas como lixo eletrônico.
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157983"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341619"
 ---
 # <a name="unverified-sender"></a>Remetente não verificado
 
@@ -55,26 +55,6 @@ Quando o Outlook.com e o Outlook na Web não conseguem verificar a identidade do
 
 Nem todas as mensagens que não são autenticadas são mal-intencionadas. No entanto, você deve ter cuidado para interagir com mensagens que não são autenticadas se você não reconhece o remetente. Ou, se você reconhece um remetente que normalmente não tem um '? ' na imagem do remetente, mas, repentinamente, você começa a vê-lo, que pode ser um sinal de que o remetente está sendo falsificado.
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>O endereço do remetente é diferente do que aparece no endereço do
-
-Frequentemente, o endereço de email que você vê em uma mensagem é diferente daquele que você vê no endereço do remetente. Às vezes, os golpistas tentam enganar você pensando que o remetente é alguém que não é quem eles realmente estão.
-
-Quando o Outlook.com e o Outlook na Web detectam uma diferença entre o endereço real do remetente e o endereço no endereço de, eles mostram o remetente real usando a marca via, que será sublinhada.
-
-![texto alternativo de remetente não verificado](media/unverified-sender-feature1.png)
-
-Neste exemplo, o domínio `suspicious.com` de envio é autenticado, mas o remetente colocou `unknown@contoso.com` no endereço de.
-
-Nem todas as mensagens com uma marca de via é suspeitas. No entanto, se você não reconhece uma mensagem com uma marca via, você deve ter cuidado para interagir com ela.
-
-No Outlook.com e no novo Outlook na Web, você pode passar o cursor sobre o nome ou endereço de um remetente na lista de mensagens para ver seus endereços de email, sem a necessidade de abrir a mensagem.
-
-![Introdução ao OneDrive](media/get-started-with-onedrive-message.png)
-
-Como saber se você está usando o novo Outlook na Web? Confira os seguintes exemplos:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Que critérios o Outlook.com e o Outlook na Web usam para adicionar as propriedades '? ' e ' via '?
@@ -83,11 +63,7 @@ Para o '? ' na imagem do remetente: Outlook.com requer que a mensagem passe o SP
 
 Para o via Tag: se o domínio no endereço de for diferente do domínio na assinatura do DKIM ou do email SMTP de, Outlook.com exibe o domínio em um desses dois campos (preferência à assinatura DKIM).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>Posso substituir essas propriedades por IP permite, a regra de transporte do Exchange permite ou remetentes confiáveis?
-
-Você não pode substituir essas propriedades.
-
-### <a name="how-do-i-remove-these-properties"></a>Como faço para remover essas propriedades?
+### <a name="how-do-i-remove-the-"></a>Como remover o '? '
 
 Para o '? ' na imagem do remetente: como um remetente, você deve autenticar sua mensagem com o SPF ou o DKIM.
 

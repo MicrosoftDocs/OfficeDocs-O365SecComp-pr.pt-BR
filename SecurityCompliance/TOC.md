@@ -164,6 +164,7 @@
 ## [Responder a uma conta de email comprometida no Office 365](responding-to-a-compromised-email-account.md)
 
 # Gerenciamento de registros
+## [Records management](records-management.md)
 ## Plano de arquivos
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
