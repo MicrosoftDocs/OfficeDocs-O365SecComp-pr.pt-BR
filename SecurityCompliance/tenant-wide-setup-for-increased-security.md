@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Orienta você na configuração recomendada para definições de todos os locatários que afetam a segurança de seu ambiente do Office 365. Suas necessidades de segurança podem exigir mais ou menos segurança. Use estas recomendações como ponto de partida.
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158253"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408246"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configure o locatário do Office 365 para aumentar a segurança
 
@@ -53,9 +53,9 @@ Visite esses relatórios e painéis para saber mais sobre a integridade de seu a
   
 |Painel * * * *|****Descrição****|
 |:-----|:-----|
-|Painel de gerenciamento de ameaças  <br/> |Na seção Gerenciamento de ameaças da central de segurança, use este painel para ver as ameaças que já foram tratadas e como uma ferramenta útil para relatar os tomadores de decisões de negócios sobre o que os recursos de investigação e resposta de ameaças já fizeram para proteger sua empresa.  <br/> |
-|Explorador de ameaças  <br/> |Isso também está na seção Gerenciamento de ameaças da central de segurança. Se você estiver investigando ou experimentando um ataque contra o locatário do Office 365, use o Gerenciador de ameaças para analisar ameaças. O Gerenciador de ameaças mostra o volume de ataques ao longo do tempo, e você pode analisar esses dados por famílias de ameaças, infraestrutura de atacante e muito mais. Você também pode marcar qualquer email suspeito para a lista de incidentes.  <br/> |
-|Relatórios — painel  <br/> |Na seção relatórios da central de segurança, exiba relatórios de auditoria para as organizações do SharePoint Online e do Exchange Online. Você também pode acessar os relatórios de entrada do usuário do Azure Active Directory (Azure AD), relatórios de atividades do usuário e o log de auditoria do Azure AD na página exibir relatórios.  <br/> |
+|[Painel de gerenciamento de ameaças](security-dashboard.md)  <br/> |Na seção **Gerenciamento de ameaças** da central de segurança, use este painel para ver as ameaças que já foram tratadas e como uma ferramenta útil para relatar os tomadores de decisões de negócios sobre quais recursos de investigação e resposta de ameaças já foram feito para proteger sua empresa.  <br/> |
+|[Explorador de ameaças (ou detecções em tempo real)](threat-explorer.md)  <br/> |Isso também está na seção **Gerenciamento de ameaças** da central de segurança. Se você estiver investigando ou experimentando um ataque contra o locatário do Office 365, use o Explorer (ou detecções em tempo real) para analisar ameaças. O Explorer (e o relatório de detecções em tempo real) mostra o volume de ataques ao longo do tempo, e você pode analisar esses dados por famílias de ameaças, infraestrutura de atacante e muito mais. Você também pode marcar qualquer email suspeito para a lista de incidentes.  <br/> |
+|Relatórios — painel  <br/> |Na seção **relatórios** da central de segurança, exiba relatórios de auditoria para as organizações do SharePoint Online e do Exchange Online. Você também pode acessar os relatórios de entrada do usuário do Azure Active Directory (Azure AD), relatórios de atividades do usuário e o log de auditoria do Azure AD na página **exibir relatórios** .  <br/> |
    
 ![Painel central de segurança](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

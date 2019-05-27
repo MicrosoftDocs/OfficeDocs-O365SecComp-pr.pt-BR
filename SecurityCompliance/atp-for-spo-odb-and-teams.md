@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Estenda a proteção avançada contra ameaças do Office 365 para arquivos no SharePoint Online, OneDrive for Business e Microsoft Teams para permitir a colaboração mais segura para sua organização.
-ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077607"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408256"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP para SharePoint, OneDrive e Microsoft Teams
 
@@ -50,7 +50,7 @@ Para saber mais, confira [ativar o Office 365 ATP para SharePoint, onedrive e Mi
 
 - Certifique-se de que seus sites do SharePoint estão configurados para usar a [experiência moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Quando um arquivo é identificado como mal-intencionado e bloqueado, as pessoas podem ver que isso ocorreu na experiência moderna, mas não no modo de exibição clássico. A proteção ATP aplica se a experiência moderna ou o modo de exibição clássico é usado; no entanto, os indicadores visuais que um arquivo está bloqueado estão presentes apenas na experiência moderna.
     
-- Arquivos identificados como mal intencionados no SharePoint Online, no OneDrive for Business ou no Microsoft Teams aparecerão em [relatórios para a proteção avançada contra ameaças do office 365](view-reports-for-atp.md) e no Gerenciador de ameaças (parte do [plano de proteção avançada contra ameaças do Office 365](office-365-ti.md) ).
+- Arquivos identificados como mal-intencionados no SharePoint Online, no OneDrive for Business ou no Microsoft Teams aparecerão em [relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md) e no [Explorer (e detecções em tempo real)](threat-explorer.md).
     
 - A ATP faz parte da estratégia geral de proteção contra ameaças da sua organização, que inclui proteção antispam e antimalware, bem como links seguros e anexos seguros. Para saber mais, confira [proteger contra ameaças no Office 365](protect-against-threats.md).
     

@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Proteção contra phishing, com proteção abrangente como parte do Office 365 proteção avançada contra ameaças e proteção básica no Office 365 proteção do Exchange Online, pode ajudar a proteger sua organização contra ataques de phishing baseados em representação mal-intencionada. e outros ataques de phishing.
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077207"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408366"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a> Configurar políticas antiphishing e antiphishing da ATP do Office 365
 
@@ -142,8 +142,8 @@ Você pode excluir políticas personalizadas criadas usando o centro de conformi
 
 Quando suas políticas anti-phishing estiverem em vigor, você poderá ver como os recursos de proteção contra ameaças estão funcionando para sua organização, exibindo relatórios. Confira os seguintes recursos para saber mais:
 
-- [Exibir relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md) ou [exibir relatórios de segurança de email](view-email-security-reports.md)
+- [Exibir relatórios do Office 365 ATP](view-reports-for-atp.md) ou [exibir relatórios de segurança de email](view-email-security-reports.md)
 
-- [Usar o Explorer (também chamado de Gerenciador de ameaças)](use-explorer-in-security-and-compliance.md)
+- [Usar o explorador de ameaças (ou detecções em tempo real)](threat-explorer.md)
 
 Fique à frente dos novos recursos que chegam à ATP. Visite o [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) e saiba mais sobre os [novos recursos que estão sendo adicionados à ATP](office-365-atp.md#new-features-in-office-365-atp).

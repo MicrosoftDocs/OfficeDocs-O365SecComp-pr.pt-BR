@@ -3,8 +3,8 @@ title: Exibir relatórios de segurança de email no &amp; centro de conformidade
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Saiba como encontrar e usar relatórios de segurança de email para sua organização com o Office 365 Enterprise. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: Saiba como localizar e usar relatórios de segurança de email da sua organização. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970252"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408406"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 
@@ -65,7 +65,7 @@ Use este relatório permite que a equipe de segurança e conformidade da sua org
 
 ## <a name="threat-protection-status-report"></a>Relatório de status de proteção contra ameaças
 
-O relatório de **status de proteção contra ameaças** é um relatório inteligente que mostra emails mal-intencionados que foram detectados e bloqueados pela proteção do Exchange Online. Este relatório mostra informações sobre o email identificado como malware ou uma tentativa de phishing. 
+O relatório de **status de proteção contra ameaças** é um relatório inteligente que mostra emails mal-intencionados que foram detectados e bloqueados pela proteção do Exchange Online. Este relatório é útil para exibir emails identificados como malware ou uma tentativa de phishing ao longo do tempo (até 90 dias) e permite que administradores de segurança identifiquem tendências ou determinem se as políticas precisam de ajustes.
 
 > [!NOTE]
 > Um relatório de status de proteção contra ameaças está disponível para clientes que tenham o [Office 365 ATP](office-365-atp.md) ou o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); no entanto, as informações exibidas no relatório de status de proteção contra ameaças para clientes ATP provavelmente conterão dados diferentes do que os clientes do EOP podem ver. Por exemplo, os clientes do EOP podem exibir informações sobre malware detectado no email, mas não informações sobre [arquivos mal-intencionados detectados no SharePoint Online, no onedrive ou no Microsoft Teams](atp-for-spo-odb-and-teams.md), um recurso específico de ATP. ([Saiba mais sobre os relatórios de ATP](view-reports-for-atp.md).)
@@ -74,7 +74,9 @@ Para exibir esse relatório, no [centro de &amp; conformidade de segurança](htt
   
 ![Relatório de status de proteção contra ameaças](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Quando você abre o relatório de status de proteção contra ameaças pela primeira vez, o relatório mostra os dados dos últimos sete dias por padrão; no entanto, você pode clicar em **filtros** e alterar o intervalo de datas para até 90 dias de detalhes. Este relatório é útil para ver a eficácia e o impacto dos recursos de [proteção do Exchange Online](eop/eop-features.md)da sua organização e para tendência de longo prazo. 
+Quando você abre o relatório de status de proteção contra ameaças pela primeira vez, o relatório mostra os dados dos últimos sete dias por padrão; no entanto, você pode clicar em **filtros** e alterar o intervalo de datas para até 90 dias de detalhes. (Se estiver usando uma assinatura de avaliação, você poderá estar limitado a 30 dias de dados.)
+
+Este relatório é útil para ver a eficácia e o impacto dos recursos de [proteção do Exchange Online](eop/eop-features.md)da sua organização e para tendência de longo prazo. 
   
 ![Filtros de relatório de status de proteção contra ameaças](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   

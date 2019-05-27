@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integre a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender para ver informações mais detalhadas sobre o gerenciamento de ameaças.
-ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8fbbc8beeeba6cfee0e87ee44f99819094d5569e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077247"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408266"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrar a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Windows Defender
 
@@ -38,7 +38,7 @@ Neste exemplo, você pode ver que os destinatários da mensagem de email têm qu
     
 - Você deve ser um administrador global do Office 365 ou ter uma função de administrador de segurança (como administrador de segurança) atribuída no [centro de conformidade de segurança &amp; ](https://protection.office.com). (Consulte [permissões no centro de conformidade de &amp; segurança do Office 365](permissions-in-the-security-and-compliance-center.md))
     
-- Você deve ter acesso ao Office 365 Threat Explorer no centro de conformidade do & de segurança e do portal de proteção avançada contra ameaças do Windows Defender.
+- Você deve ter acesso ao [Explorer (ou às detecções em tempo real)](threat-explorer.md) no centro de conformidade do _AMP_ de segurança e no portal de proteção avançada contra ameaças do Windows Defender.
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>Para integrar a proteção avançada contra ameaças do Office 365 com o Windows Defender ATP
 

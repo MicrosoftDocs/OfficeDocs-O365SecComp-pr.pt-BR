@@ -3,7 +3,7 @@ title: Exibir relatórios para a proteção avançada contra ameaças do Office 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Saiba como encontrar e usar relatórios para a proteção avançada contra ameaças do Office 365 no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6bf8c3222b0ce4cecd1b14f407f7e9ee42783a75
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077317"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408396"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Exibir relatórios para a proteção avançada contra ameaças do Office 365
 
@@ -28,11 +28,20 @@ Se sua organização tiver a [proteção avançada contra ameaças do Office 365
   
 ![O painel &amp; do centro de conformidade de segurança pode ajudá-lo a ver onde a proteção avançada contra ameaças está funcionando](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Os relatórios de ATP incluem o [relatório de status de proteção contra ameaças](#threat-protection-status-report), o relatório de tipos de [arquivos ATP](#atp-file-types-report)e o [relatório de disposição de mensagens ATP](#atp-message-disposition-report). Este artigo descreve os relatórios ATP e inclui links para [relatórios adicionais a serem exibidos](#additional-reports-to-view).
+Os relatórios ATP incluem o seguinte:
+- [Relatório de status de proteção contra ameaças](#threat-protection-status-report)
+- [Relatório de tipos de arquivo ATP](#atp-file-types-report)
+- [Relatório de disposição de mensagens ATP](#atp-message-disposition-report)
+- [detecções ou Explorer em tempo real](threat-explorer.md) (dependendo se você tem o plano ATP 1 ou 2 do Office 365)
+- ... [e muito mais](#additional-reports-to-view). 
+
+Leia este artigo para obter uma visão geral dos relatórios ATP e como usá-los.
   
 ## <a name="threat-protection-status-report"></a>Relatório de status de proteção contra ameaças
 
-O relatório de **status de proteção contra ameaças** é um modo de exibição único que reúne informações sobre conteúdo mal-intencionado e email mal-intencionado detectado e bloqueado pela [proteção do Exchange Online](eop/exchange-online-protection-overview.md) (EOP) e pelo [Office 365 ATP](office-365-atp.md). O relatório fornece uma contagem agregada de mensagens de email exclusivas com conteúdo mal-intencionado (arquivos ou endereços de sites (URLs) bloqueados pelo Mecanismo Antimalware, [exclusão automática de zero horas (zap)](zero-hour-auto-purge.md)e recursos ATP, como [links seguros de ATP](atp-safe-links.md), [segurança ATP Anexos](atp-safe-attachments.md)e recursos de anti-phishing do [ATP](atp-anti-phishing.md).
+O relatório de **status de proteção contra ameaças** é um modo de exibição único que reúne informações sobre conteúdo mal-intencionado e email mal-intencionado detectado e bloqueado pela [proteção do Exchange Online](eop/exchange-online-protection-overview.md) (EOP) e pelo [Office 365 ATP](office-365-atp.md). Este relatório é útil para exibir detecções ao longo do tempo (até 90 dias) e permite que os administradores de segurança identifiquem tendências ou determinem se as políticas precisam de ajustes. 
+
+O relatório de status de proteção contra ameaças fornece uma contagem agregada de mensagens de email exclusivas com conteúdo mal-intencionado, como arquivos ou endereços de sites (URLs) que foram bloqueados pelo Mecanismo Antimalware, [exclusão automática de zero horas (zap)](zero-hour-auto-purge.md)e recursos ATP como [Links seguros de ATP](atp-safe-links.md), [anexos seguros de ATP](atp-safe-attachments.md)e recursos de anti-phishing da [ATP](atp-anti-phishing.md). 
 
 > [!NOTE]
 > Um relatório de status de proteção contra ameaças está disponível para clientes que tenham o [Office 365 ATP](office-365-atp.md) ou o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); no entanto, as informações exibidas no relatório de status de proteção contra ameaças para clientes ATP provavelmente conterão dados diferentes do que os clientes do EOP podem ver. Por exemplo, o relatório de status de proteção contra ameaças para clientes ATP conterá informações sobre [arquivos mal-intencionados detectados no SharePoint Online, no onedrive ou no Microsoft Teams](atp-for-spo-odb-and-teams.md). Essas informações são específicas para a ATP, para que os clientes que tenham o EOP, mas não a ATP, não vejam esses detalhes no relatório de status de proteção contra ameaças.
@@ -45,7 +54,7 @@ Para obter o status detalhado de um dia, passe o mouse sobre o gráfico.
   
 ![Dados de status de proteção de ameaças ATP por um dia](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Por padrão, o relatório de status de proteção contra ameaças mostra os dados dos últimos sete dias. No entanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados de até 90 dias. 
+Por padrão, o relatório de status de proteção contra ameaças mostra os dados dos últimos sete dias. No entanto, você pode escolher **filtros** e alterar o intervalo de datas para exibir dados de até 90 dias. (Se estiver usando uma assinatura de avaliação, você poderá estar limitado a 30 dias de dados.)
   
 ![Filtros de status de proteção contra ameaças ATP](media/4f703369-642b-402b-9758-b9c828283410.png)
   
@@ -83,9 +92,9 @@ Além dos relatórios ATP descritos neste artigo, vários outros relatórios est
 
 |Relatório (s)  |Detalhes  |
 |---------|---------|
-|**Rastreamento de URL de links seguros de ATP** (Esse é um relatório que você gera usando o PowerShell.) Este relatório mostra os resultados das ações de links seguros de ATP nos últimos sete (7) dias. |[Referência do cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
+|As detecções do **Explorer** ou **em tempo real** (Office 365 ATP Plan 2 clientes têm Explorer; O Office 365 ATP Plan 1 clientes têm detecções em tempo real.| [Explorador de ameaças (e detecções em tempo real)](threat-explorer.md)       |
 |**Relatórios de segurança de email**, como um relatório superior de remetentes e destinatários, um relatório de email de falsificação e um relatório de detecções de spam. | [Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança](view-email-security-reports.md)        |
-|**Explorer** (também mencionado como o explorador de ameaças, isso está incluído no [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md))     | [Usar o Explorer no centro &amp; de conformidade de segurança](use-explorer-in-security-and-compliance.md)        |
+|**Rastreamento de URL de links seguros de ATP** (Esse é um relatório que você gera usando o PowerShell.) Este relatório mostra os resultados das ações de links seguros de ATP nos últimos sete (7) dias. |[Referência do cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
 |**Resultados de EOP e ATP** (Este é um relatório personalizado que você gera usando o PowerShell). Este relatório contém informações, como o domínio, a data, o tipo de evento, a direção, a ação e a contagem de mensagens.  | [Referência do cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
 |**Detecções de EOP e ATP** (Este é um relatório personalizado que você gera usando o PowerShell). Este relatório contém detalhes sobre arquivos mal-intencionados ou URLs, tentativas de phishing, representação e outras ameaças potenciais em emails ou arquivos.   | [Referência do cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
 

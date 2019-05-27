@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155953"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408346"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática zero hora – proteção contra spam e malware
 
@@ -64,7 +64,7 @@ As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p
 
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP moveu sua mensagem
 
-Se você deseja ver se ZAP moveu sua mensagem, pode usar o relatório de [status de proteção contra ameaças](view-email-security-reports.md#threat-protection-status-report) (ou o [Gerenciador de ameaças](use-explorer-in-security-and-compliance.md)).
+Se você deseja ver se ZAP moveu sua mensagem, pode usar o relatório de [status de proteção contra ameaças](view-email-security-reports.md#threat-protection-status-report) ou o [Explorador de ameaças (e detecções em tempo real)](threat-explorer.md).
 
 ## <a name="to-disable-zap"></a>Para desabilitar o ZAP
   

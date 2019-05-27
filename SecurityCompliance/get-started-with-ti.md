@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre a investigação e a resposta contra ameaças do Office 365 e como começar.
-ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254154"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408336"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Introdução à investigação e à resposta contra ameaças (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Os recursos de investigação e resposta contra ameaças ajudam a impulsionar as
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Familiarize-se com o Dashboard de ameaças, o Explorer e os incidentes
 
-Esses recursos de investigação e resposta contra ameaças no centro &amp; de conformidade de segurança, como um conjunto de ferramentas e fluxos de trabalho de resposta, incluindo o [painel de ameaças](#threat-dashboard), o [Explorador de ameaças](#threat-explorer), [incidentes](get-started-with-ti.md#incidents), [ataques Simulador](attack-simulator.md)e investigações automatizaDas _AMP_ resposta.
+Esses recursos de investigação e resposta contra ameaças no centro &amp; de conformidade de segurança, como um conjunto de ferramentas e fluxos de trabalho de resposta, incluindo o [painel de ameaças](#threat-dashboard), o [Explorador de ameaças](#threat-explorer), [incidentes](get-started-with-ti.md#incidents), [ataques Simulador](attack-simulator.md)e investigações automatizadas _AMP_ resposta.
   
 ### <a name="threat-dashboard"></a>Painel de ameaças
 
@@ -49,7 +49,7 @@ Para exibir e usar esse painel, no centro de &amp; conformidade de segurança, v
   
 ### <a name="threat-explorer"></a>Explorador de Ameaças
 
-Use o Gerenciador de ameaças (isso também é chamado de Explorer) para analisar ameaças, confira o volume de ataques ao longo do tempo e analise os dados por famílias de ameaças, infraestrutura de atacante e muito mais. O Gerenciador de ameaças é o local inicial para o fluxo de trabalho de investigação de qualquer analista de segurança.
+Use o [Explorador de ameaças (e detecções em tempo real)](threat-explorer.md) para analisar ameaças, confira o volume de ataques ao longo do tempo e analise os dados por famílias de ameaças, infraestrutura de atacante e muito mais. O Gerenciador de ameaças (também mencionado como Explorer) é o local inicial para o fluxo de trabalho de investigação de qualquer analista de segurança.
   
 ![Explorador de ameaças](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -84,16 +84,16 @@ O Invesigation de ameaças e os recursos de resposta do Office 365 estão inclu�
     - Se você vir o **office 365 Enterprise E5**, sua organização terá o Office 365 Advanced Threat Protection Plan 2 (que inclui os recursos de investigação e resposta contra ameaças). 
     - Se você vir uma assinatura diferente, como o **office 365 Enterprise E3** ou o **Office 365 Enterprise E1**, considere adicionar o Office 365 Advanced Threat Protection Plan 2. (Para fazer isso, escolha **+ Adicionar assinatura**.)
     
-3. no centro de administração do Microsoft 365, escolha usuários **ativos**do **usuário** \> .
+3. No centro de administração do Microsoft 365, escolha usuários **ativos**do **usuário** \> .
     
 5. Atribuir licenças do Office 365 Advanced Threat Protection Plan 2 a todos os usuários ativos. (Apenas os usuários que têm uma licença para isso aparecerão em relatórios, como o Explorer.)
     
-6. Atribua funções às pessoas em sua organização que irão trabalhar com a proteção avançada contra ameaças do Office 365. ConFira [conceder aos usuários acesso ao centro de &amp; conformidade de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md)e consulte a seguinte tabela:<br/>
+6. Atribua funções às pessoas em sua organização que irão trabalhar com a proteção avançada contra ameaças do Office 365. Confira [conceder aos usuários acesso ao centro de &amp; conformidade de segurança do Office 365](grant-access-to-the-security-and-compliance-center.md)e consulte a seguinte tabela:<br/>
 
   |**Para executar esta atividade...** <br/> |**Você deve ter uma destas funções** <br/> |  
   |:-----|:-----|
   |Usar o painel de ameaças (ou o novo [painel de segurança](security-dashboard.md))<br/> Exibir informações sobre ameaças recentes ou atuais  <br/> |Administrador global do Office 365  <br/> Administrador de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> Leitor de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> |
-  |Usar o explorador de ameaças (também chamado de Explorer)  <br/> Analisar ameaças  <br/> |Administrador global do Office 365  <br/> Administrador de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> Leitor de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> |
+  |Usar o [Explorador de ameaças (e detecções em tempo real)](threat-explorer.md) para analisar ameaças  <br/> |Administrador global do Office 365  <br/> Administrador de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> Leitor de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> |
   |Exibir incidentes (também conhecidos como investigações) <br/> Adicionar mensagens de email a um incidente  <br/> |Administrador global do Office 365  <br/> Administrador de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> Leitor de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> |
   |Acionar ações de email em um incidente  <br/> Localizar e excluir mensagens de email suspeitas  <br/> |Administrador global do Office 365 ou administrador de segurança  <br/> Uma das funções acima e pesquisa e limpeza (atribuída no centro de conformidade &amp; de segurança)  <br/> |
   |Integrar o Office 365 Advanced Threat Protection Plan 2 com a proteção avançada contra ameaças do Windows Defender  <br/> Integrar o Office 365 Advanced Threat Protection Plan 2 com um servidor SIEM  <br/> |Administrador global do Office 365  <br/> Administrador de segurança (atribuído no centro &amp; de conformidade de segurança)  <br/> Função apropriada atribuída em aplicativos adicionais (como o portal de proteção avançada contra ameaças do Windows Defender ou um servidor SIEM)  <br/> |

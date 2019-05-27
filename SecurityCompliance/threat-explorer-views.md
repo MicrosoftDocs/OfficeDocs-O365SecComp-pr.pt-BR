@@ -1,46 +1,44 @@
 ---
-title: Exibições do Explorador de Ameaças
+title: Modos de exibição no Gerenciador de ameaças e detecções em tempo real
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Saiba mais sobre os vários tipos de modos de exibição disponíveis no Explorer (também chamado de Gerenciador de ameaças) como parte do Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Saiba mais sobre os vários tipos de modos de exibição disponíveis no Gerenciador de ameaças e detecções em tempo real.
+ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260477"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408316"
 ---
-# <a name="threat-explorer-views"></a>Exibições do Explorador de Ameaças
-
-O [Gerenciador de ameaças](use-explorer-in-security-and-compliance.md) é uma ferramenta poderosa e quase em tempo real para ajudar as equipes de operações de segurança a investigar e &amp; responder a ameaças no centro de conformidade de segurança. O Explorer exibe informações sobre o malware e phishing suspeitos em emails e arquivos no Office 365, bem como outras ameaças e riscos de segurança à sua organização. 
-
-Quando você abre o Explorer pela primeira vez, o modo de exibição padrão mostra as detecções de malware de email dos últimos 7 dias. 
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>Modos de exibição no Gerenciador de ameaças e detecções em tempo real
 
 ![Explorador de Ameaças](media/ThreatExplorerFirstOpened.png)
 
-O Explorer também pode mostrar recursos de proteção de segurança no Office 365, incluindo [links seguros](atp-safe-links.md) e [anexos seguros](atp-safe-attachments.md) e pode ser modificado para mostrar dados nos últimos 30 dias. 
+[Explorador de ameaças](use-explorer-in-security-and-compliance.md) (e o relatório de detecções em tempo real) é uma ferramenta poderosa e quase em tempo real para ajudar as equipes de operações de segurança a investigar e responder a &amp; ameaças no centro de conformidade de segurança. O Explorer (e o relatório de detecções em tempo real) exibe informações sobre o malware e phishing suspeitos em emails e arquivos no Office 365, bem como outras ameaças e riscos de segurança à sua organização. 
 
-> [!NOTE]
-> Se você tiver uma assinatura de avaliação do plano de proteção avançada contra ameaças do Office 365 ou o Office 365 e5, verá apenas detecções e dados de email nos últimos sete dias.
-  
+- Se você tiver o [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) plano 2, você terá o Explorer.
+- Se você tiver o Office 365 ATP Plan 1, então você tem detecções em tempo real.
+
+Quando você abre o primeiro Explorer (ou o relatório de detecções em tempo real), o modo de exibição padrão mostra as detecções de malware de email dos últimos 7 dias. Este relatório também pode mostrar detecções de ATP, como URLs mal-intencionadas detectadas por [links seguros](atp-safe-links.md)e arquivos mal-intencionados detectados por [anexos seguros](atp-safe-attachments.md). Esse relatório pode ser modificado para mostrar dados nos últimos 30 dias (a menos que você esteja usando uma assinatura de avaliação). As assinaturas de avaliação incluirão dados apenas nos últimos sete dias.
+
 Use o menu **Exibir** para alterar as informações que são exibidas. As dicas de ferramentas ajudam a determinar o modo de exibição a ser usado.
   
 ![Menu Exibir do explorador de ameaças](media/ThreatExplorerViewMenu.png)
 
-Depois de selecionar um modo de exibição, você pode aplicar filtros e configurar consultas para realizar mais análises. As seções a seguir fornecem uma breve visão geral dos vários modos de exibição disponíveis no Explorer.  
+Depois de selecionar um modo de exibição, você pode aplicar filtros e configurar consultas para realizar mais análises. As seções a seguir fornecem uma breve visão geral dos vários modos de exibição disponíveis no Explorer (ou detecções em tempo real).  
 
 ## <a name="email--malware"></a>Email > malware
 
-Para exibir esse relatório, no Explorer, escolha **Exibir** > **** > **malware**de email. Este modo de exibição mostra informações sobre mensagens de email identificadas como contendo malware.  
+Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **malware**de email. Este modo de exibição mostra informações sobre mensagens de email identificadas como contendo malware.  
 
 ![Exibir dados sobre email identificados como malware](media/ExplorerEmailMalwareMenu.png) 
 
@@ -56,7 +54,7 @@ Abaixo do gráfico, veja mais detalhes sobre mensagens específicas. Quando voc�
 
 ## <a name="email--phish"></a>Email > Phish
 
-Para exibir esse relatório, no Explorer, escolha **Exibir** > **** > **phishing**de email. Este modo de exibição mostra mensagens de email identificadas como tentativas de phishing.  
+Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **phishing**de email. Este modo de exibição mostra mensagens de email identificadas como tentativas de phishing.  
 
 ![Exibir dados sobre email identificados como tentativas de phishing](media/ThreatExplorerEmailPhish.png) 
 
@@ -76,7 +74,7 @@ Quando você seleciona um item na lista, como uma URL que foi detectada, um pain
 
 ## <a name="email--user-reported"></a>Email > relatado pelo usuário
 
-Para exibir esse relatório, no Explorer, escolha **Exibir** > **email** > **reportado pelo usuário**. Este modo de exibição mostra o email que os usuários relataram como lixo eletrônico, não lixo eletrônico ou email de phishing. 
+Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **email** > **reportado pelo usuário**. Este modo de exibição mostra o email que os usuários relataram como lixo eletrônico, não lixo eletrônico ou email de phishing. 
 
 ![Mensagens de email relatadas por usuários](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -107,7 +105,7 @@ Abaixo do gráfico, veja mais detalhes sobre mensagens de email específicas, co
 
 ## <a name="content--malware"></a>Malware de > de conteúdo
 
-Para exibir esse relatório, no Explorer, escolha **Exibir** > **** > **malware**de conteúdo. Este modo de exibição mostra arquivos que foram identificados como mal-intencionados pela [proteção avançada contra ameaças do Office 365 no SharePoint Online, no onedrive for Business e no Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **malware**de conteúdo. Este modo de exibição mostra arquivos que foram identificados como mal-intencionados pela [proteção avançada contra ameaças do Office 365 no SharePoint Online, no onedrive for Business e no Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Exibir informações pela família de malware, tecnologia de detecção (como o malware foi detectado) e carga de trabalho (OneDrive, SharePoint ou Teams). 
 
@@ -117,7 +115,7 @@ Abaixo do gráfico, veja mais detalhes sobre arquivos específicos, como o nome 
   
 ## <a name="click-to-filter-capabilities"></a>Recursos de clique para filtrar
 
-Com o Explorer, você pode aplicar um filtro em um clique. Clique em um item na legenda e esse item se torna um filtro para o relatório. Por exemplo, vamos supor que estamos examinando o modo de exibição de malware no Explorer:
+Com o Explorer (e detecções em tempo real), você pode aplicar um filtro em um clique. Clique em um item na legenda e esse item se torna um filtro para o relatório. Por exemplo, vamos supor que estamos examinando o modo de exibição de malware no Explorer:
   
 ![Vá para o Gerenciador \> de gerenciamento de ameaças](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -137,7 +135,7 @@ A capacidade de filtrar em um clique e navegar para detalhes específicos pode p
 
 ## <a name="queries-and-filters"></a>Consultas e filtros
 
-O Explorer tem vários filtros e recursos de consulta avançados que permitem detalhar os detalhes, como os principais usuários direcionados, famílias de malware principais, tecnologia de detecção e muito mais. Cada tipo de relatório oferece várias maneiras de exibir e explorar dados.
+O Explorer (e o relatório de detecções em tempo real) tem vários filtros e recursos de consulta avançados que permitem detalhar detalhes, como os principais usuários direcionados, principais famílias de malware, tecnologia de detecção e muito mais. Cada tipo de relatório oferece várias maneiras de exibir e explorar dados.
 
 > [!IMPORTANT]
-> Não use caracteres curinga, como um asterisco (*) ou um ponto de interrogação (?), na barra de consulta do Explorer. Quando você pesquisar o campo assunto de mensagens de email, o Explorer executará a correspondência parcial e produzirá resultados similares a uma pesquisa curinga.
+> Não use caracteres curinga, como um asterisco (*) ou um ponto de interrogação (?), na barra de consulta para o Explorer (ou detecções em tempo real). Quando você pesquisa o campo assunto de mensagens de email, Explorer (ou detecções em tempo real) executará a correspondência parcial e produzirá resultados similares a uma pesquisa curinga.

@@ -1,10 +1,10 @@
 ---
-title: Investigação e resposta contra ameaças do Office 365
+title: Investigação e resposta a ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,14 +15,14 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra como os recursos de inteligência de ameaças no Office 365 proteção avançada contra ameaças pode ajudá-lo a Pesquisar ameaças em sua organização, responder a malware, phishing e outros ataques que o Office 365 detectou em seu nome e Pesquisar ameaças indicadores.
-ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3a1ccc3d3e37b9b1433e8e339709d09ba56970b0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265393"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408356"
 ---
-# <a name="office-365-threat-investigation-and-response"></a>Investigação e resposta contra ameaças do Office 365
+# <a name="office-365-threat-investigation-and-response"></a>Investigação e resposta a ameaças do Office 365
 
 Os recursos de investigação e resposta contra ameaças no [office 365 proteção avançada contra ameaças](office-365-atp.md) ajudam os analistas e administradores de segurança a proteger os usuários do Office 365 da sua organização:
   
@@ -61,15 +61,15 @@ Use os seguintes recursos para saber mais sobre os recursos de investigação de
     
 - [Saiba mais sobre os rastreadores de ameaças-novidade e digno de sessão](threat-trackers.md)
 
-- [Investigação e resposta automatizadas (AIR) com inteligência contra ameaças do Office 365](automated-investigation-response-office.md)
+- [Economize tempo e esforço com recursos de investigação e resposta automatizados (AIR)](automated-investigation-response-office.md)
 
-- [Usar o explorador de ameaças no &amp; centro de conformidade de segurança](use-explorer-in-security-and-compliance.md)
+- [Usar o explorador de ameaças (ou detecções em tempo real) para identificar e investigar conteúdo mal-intencionado em emails e arquivos](threat-explorer.md)
     
 - [Localizar e investigar email malicioso que foi entregue](investigate-malicious-email-that-was-delivered.md)
     
-- [Usar o simulador de ataque](attack-simulator.md)
+- [Usar o simulador de ataques para simular ataques e aumentar a conscientização do usuário](attack-simulator.md)
     
-- [Integre a investigação e a resposta de ameaças com a proteção avançada contra ameaças do Windows Defender](integrate-office-365-ti-with-wdatp.md)
+- [Integração de investigação de ameaças e recursos de resposta com a proteção avançada contra ameaças do Windows Defender](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>Tópicos relacionados
 

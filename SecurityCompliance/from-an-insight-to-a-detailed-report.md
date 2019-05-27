@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Veja como você pode mudar de uma visão detalhada para um relatório detalhado no centro &amp; de conformidade de segurança por meio de um exemplo de prevenção de perda de dados.
-ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255364"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408286"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Passo a passo – de um insight para um relatório detalhado
 
@@ -38,7 +38,7 @@ Vamos examinar o fluxo do painel para obter uma visão detalhada de um relatóri
   
 3. Selecionar um item na lista abre um painel onde podemos exibir mais detalhes sobre esse item. (Clique em um item).<br/>![Detalhes de uma percepção selecionada](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Vemos as ações recomendadas que devemos considerar, como as políticas de revisão. ([Saiba mais sobre as políticas de prevenção contra perda de dados](data-loss-prevention-policies.md).)
     
-4. Também temos um link para exibir mais detalhes. (Clique em **ver atividade relacionada no Explorer**.)<br/>Isso nos leva a um tipo de relatório chamado [Explorer](use-explorer-in-security-and-compliance.md) (também chamado de Gerenciador de ameaças), onde podemos aplicar filtros e detalhar detalhes específicos.<br/>![Exibição do Explorer com mais detalhes sobre uma percepção selecionada](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. Também temos um link para exibir mais detalhes. (Clique em **ver atividade relacionada no Explorer**.)<br/>Isso leva a um tipo de relatório chamado [Gerenciador de ameaças (e detecções em tempo real)](threat-explorer.md), onde podemos aplicar filtros e detalhar detalhes específicos.<br/>![Exibição do Explorer com mais detalhes sobre uma percepção selecionada](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 Dessa forma, podemos mudar facilmente de uma percepção de seus detalhes subjacentes e tomar decisões mais informadas sobre a prevenção contra perda de dados para uma organização.
   
