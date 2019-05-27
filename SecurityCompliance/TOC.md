@@ -100,8 +100,8 @@
 #### [Proteja os usuários por meio da investigação de ameaças e respostas](keep-users-safe-with-office-365-ti.md)
 #### [Localizar e investigar emails mal-intencionados entregues](investigate-malicious-email-that-was-delivered.md)
 ### [Resposta e investigação automatizadas](automated-investigation-response-office.md)
-### [Explorador de Ameaças](use-explorer-in-security-and-compliance.md)
-#### [Modos de exibição do Explorador de Ameaças](threat-explorer-views.md)
+### [Explorador de Ameaças e detecções em tempo real](threat-explorer.md)
+#### [Visualizações do Explorador de Ameaças](threat-explorer-views.md)
 ### [Controladores de Ameaças](threat-trackers.md)
 ### [Simulador de Ataque no Office 365](attack-simulator.md)
 ### [Integrar a ATP do Office 365 com a Proteção Avançada contra Ameaças do Windows Defender](integrate-office-365-ti-with-wdatp.md)
@@ -530,6 +530,7 @@
 ### [Resiliência de dados do SharePoint Online](office-365-sharepoint-data-resiliency.md)
 ## [Retenção, exclusão e destruição de dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Destruição de dados](office-365-data-destruction.md)
+
 ### [Imutabilidade no Office 365](office-365-data-immutability.md)
 ### [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 ### [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
