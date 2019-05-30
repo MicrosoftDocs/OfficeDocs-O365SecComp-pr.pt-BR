@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150853"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547946"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correção de erro ao processar dados de uma investigação
 
@@ -40,7 +40,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    A sessão de correção de erro será iniciada, começando com um estágio de preparação em que os arquivos com erro são movidos para um local seguro do Azure a ser baixado.
+    A sessão de correção de erro será iniciada, começando com um estágio de preparação onde os arquivos com erros são copiados para um local seguro do Azure para que eles possam ser baixados.
 
     ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
     ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Se você tiver problemas para executar este comando, https://go.microsoft.com/fwlink/?linkid=2038117 consulte para obter dicas de solução de problemas.
+     > Se você tiver problemas para executar este comando, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](../compliance20/troubleshooting-azcopy.md).
 
 7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
-    > [!NOTE]
-    > É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
+    
+   > [!NOTE]
+    > É importante que você mantenha a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
 
 8. Agora, retorne a investigações de dados (visualização) e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.
 
     ![Carregar arquivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para o clibpboard**.
+9. Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para área de transferência**.
 
 10. Cole o comando em um prompt de comando do Windows e pressione **Enter** para carregar os arquivos.
 
@@ -87,12 +88,9 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
 Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - Loadid
 - ProcessingErrorMessage
 - ProcessingStatus

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151783"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547936"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correção de erros durante o processamento de dados
 
@@ -40,7 +40,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    A sessão de correção de erro será iniciada, começando com um estágio de preparação em que os arquivos com erro são movidos para um local seguro do Azure a ser baixado.
+    A sessão de correção de erro será iniciada, começando com um estágio de preparação onde os arquivos com erros são copiados para um local seguro do Azure para que eles possam ser baixados.
 
     ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,7 +63,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
     ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md)
+    > Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md).
 
 7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     > [!NOTE]
@@ -73,7 +73,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
     ![Carregar arquivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para o clibpboard**.
+9. Especifique o local dos arquivos corrigidos na caixa de texto **caminho para o local de arquivos** e clique em **copiar para área de transferência**.
 
 10. Cole o comando em um prompt de comando do Windows e pressione **Enter** para carregar os arquivos.
 
@@ -87,12 +87,9 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
 Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - Loadid
 - ProcessingErrorMessage
 - ProcessingStatus

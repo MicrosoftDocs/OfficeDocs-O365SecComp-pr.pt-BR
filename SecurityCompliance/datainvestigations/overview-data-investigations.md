@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova ferramenta de investigações de dados (visualização) no Microsoft 365.
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547906"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Visão geral das investigações de dados (prévia) no Microsoft 365
 
 Um despejo de dados ocorre quando um documento que contém conteúdo confidencial, confidencial ou mal-intencionado é liberado em um ambiente não confiável. Quando um despejo de dados é detectado, é importante conter rapidamente o ambiente, avaliar o tamanho e os locais do derramamento, examinar as atividades do usuário em torno dele e, em seguida, excluir os dados derramados do serviço. Usando a nova ferramenta de investigações de dados (visualização), você pode pesquisar dados confidenciais, mal-intencionados ou incorretos no Office 365, investigar o que aconteceu e tomar as medidas apropriadas para corrigir o derramamento.  
 
 Este artigo descreve como usar os recursos da nova ferramenta de investigações de dados (visualização) para lidar com um cenário de derramamento de dados.
+
+## <a name="permissions"></a>Permissões
+
+Para acessar e conduzir uma investigação de dados, você precisa ser membro do grupo de função do investigador de dados. Para obter mais informações, consulte [atribuir permissões para investigações de dados](permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Fluxo de trabalho de investigações de dados (prévia) 
 

@@ -3,22 +3,22 @@ title: Visão geral do novo centro de conformidade da Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Saiba mais sobre o novo centro de conformidade da Microsoft 365, incluindo o que ele contém, como obtê-lo e suas próximas etapas.
-ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265529"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547916"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Visão geral do novo centro de conformidade da Microsoft 365
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 Se você estiver interessado na postura de conformidade da sua organização, você vai adorar o novo [centro de conformidade da Microsoft 365](https://compliance.microsoft.com). O centro de conformidade da Microsoft 365 fornece acesso fácil aos dados e ferramentas que você precisa gerenciar para as necessidades de conformidade da sua organização. 
 
@@ -68,7 +68,7 @@ Além de links em cartões na Home Page, você encontrará um painel de navegaç
 
 |  |  |
 |---------|---------|
-|![Navegação no centro de conformidade da Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir para **alertas** para exibir e resolver [alertas](alerts.md)<br/><br/>Visite **monitorIng &** Reports para exibir dados sobre o [uso e a retenção de etiquetas](sensitivity-labels.md), correspondências de [política de DLP e substituições](view-the-dlp-reports.md), [arquivos compartilhados](https://docs.microsoft.com/cloud-app-security/file-filters), [aplicativos de terceiros em uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)e muito mais.<br/><br/>Expanda a seção **classificação** para acessar seus [Rótulos](labels.md), [políticas de rótulo](sensitivity-labels.md#what-label-policies-can-do), tipos de [informações confidenciais](what-the-sensitive-information-types-look-for.md)e [análises de etiquetas](view-label-activity-for-documents.md).<br/><br/>Vá até **políticas** para exibir [alertas](alerts.md) e acessar suas políticas de [DLP](data-loss-prevention-policies.md) e [retenção](retention-policies.md) .<br/><br/> Use os links na seção **soluções** para acessar as soluções de conformidade da sua organização. Entre eles: <br/>[Desposições de > de governança de dados](disposition-reviews.md)<br/>[Descoberta eletrônica (prévia)](compliance20/overview-ediscovery-20.md)<br/>[Supervisão](supervision-policies.md)<br/>[Investigações de dados](datainvestigations/overview-data-investigations.md)<br/>[Solicitações de entidades de dados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navegação no centro de conformidade da Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir para **alertas** para exibir e resolver [alertas](alerts.md)<br/><br/>Visite **Monitoring &** Reports para exibir dados sobre o [uso e a retenção de etiquetas](sensitivity-labels.md), correspondências de [política de DLP e substituições](view-the-dlp-reports.md), [arquivos compartilhados](https://docs.microsoft.com/cloud-app-security/file-filters), [aplicativos de terceiros em uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)e muito mais.<br/><br/>Expanda a seção **classificação** para acessar seus [Rótulos](labels.md), [políticas de rótulo](sensitivity-labels.md#what-label-policies-can-do), tipos de [informações confidenciais](what-the-sensitive-information-types-look-for.md)e [análises de etiquetas](view-label-activity-for-documents.md).<br/><br/>Vá até **políticas** para exibir [alertas](alerts.md) e acessar suas políticas de [DLP](data-loss-prevention-policies.md) e [retenção](retention-policies.md) .<br/><br/> Use os links na seção **soluções** para acessar as soluções de conformidade da sua organização. Entre eles: <br/>[Desposições de > de governança de dados](disposition-reviews.md)<br/>[Descoberta eletrônica (prévia)](compliance20/overview-ediscovery-20.md)<br/>[Supervisão](supervision-policies.md)<br/>[Investigações de dados](datainvestigations/overview-data-investigations.md)<br/>[Solicitações de entidades de dados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>Como posso obter isso?
@@ -89,9 +89,14 @@ Ainda estamos desenvolvendo o centro de conformidade da Microsoft 365 e vamos ad
 
 Primeiro, verifique se você tem as [licenças e permissões](microsoft-security-and-compliance.md#required-licenses-and-permissions)apropriadas. Em seguida, entre em [https://compliance.microsoft.com](https://compliance.microsoft.com). Se você ainda não vir o novo centro de conformidade, você o terá em breve.
 
-### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>Não consigo encontrar algumas das minhas configurações de conformidade. What do I do?
+### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>Alguns dos meus recursos de conformidade não estão disponíveis no centro de conformidade da Microsoft 365. What do I do?
 
-Ainda estamos adicionando funcionalidade ao centro de conformidade da Microsoft 365. Se não for possível localizar algo, como pesquisa de log de auditoria, tente navegar até o centro de conformidade do &[https://protection.office.com](https://protection.office.com)de segurança do Office 365 (). Suas configurações serão salvas no centro de conformidade do & de segurança do Office 365 existente e no novo centro de conformidade da Microsoft 365 automaticamente.
+Ainda estamos adicionando funcionalidade ao centro de conformidade da Microsoft 365. Se não for possível localizar algo, como pesquisa de log de auditoria, use o centro de conformidade do &[https://protection.office.com](https://protection.office.com)de segurança do Office 365 (). Suas configurações serão salvas no centro de conformidade do & de segurança do Office 365 existente e no novo centro de conformidade da Microsoft 365 automaticamente.
+
+Para ir para lá, no centro de conformidade da Microsoft 365, no painel de navegação no lado esquerdo da tela, escolha **mais recursos**e, em **Office 365 Security & Compliance Center**, escolha **abrir**.
+
+![Mais recursos](media/MoreResourcesShowAll.png)
+
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -101,4 +106,4 @@ Ainda estamos adicionando funcionalidade ao centro de conformidade da Microsoft 
 
 - Familiarize-se **com e configure o Microsoft Cloud app Security**. Veja [início rápido: introdução ao Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).  
 
-- **Visite o centro de conformidade da Microsoft 365 com frequência**e certifique-se de revisar quaisquer alertas ou possíveis riscos que possam surgir. AcEsse [https://compliance.microsoft.com](https://compliance.microsoft.com) e entre.
+- **Visite o centro de conformidade da Microsoft 365 com frequência**e certifique-se de revisar quaisquer alertas ou possíveis riscos que possam surgir. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com) e entre.

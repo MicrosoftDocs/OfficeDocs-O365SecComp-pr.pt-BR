@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158783"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490487"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
 
@@ -115,7 +115,6 @@ Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de a
     |Descoberta eletrônica  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Marca de seleção](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ A tabela a seguir lista as atividades de sincronização de arquivo no SharePoin
 |Arquivos baixados para o computador  <br/> |FileSyncDownloadedFull  <br/> |O usuário estabelece uma relação de sincronização e baixa com êxito os arquivos pela primeira vez para o computador a partir de uma biblioteca de documentos.  <br/> |
 |Alterações de arquivo baixadas para o computador  <br/> |FileSyncDownloadedPartial  <br/> |O usuário baixa com êxito qualquer alteração nos arquivos de uma biblioteca de documentos. Essa atividade indica que todas as alterações feitas nos arquivos da biblioteca de documentos foram baixadas para o computador do usuário. Somente as alterações foram baixadas porque a biblioteca de documentos foi baixada anteriormente pelo usuário (conforme indicado na atividade **arquivos baixados para o computador** ).  <br/> |
 |Arquivos carregados na biblioteca de documentos  <br/> |FileSyncUploadedFull  <br/> |O usuário estabelece uma relação de sincronização e carrega com êxito os arquivos pela primeira vez do seu computador para uma biblioteca de documentos.  <br/> |
-|Alterações de arquivo carregadas na biblioteca de documentos  <br/> |FileSyncUploadedPartial  <br/> |O usuário carrega com êxito as alterações nos arquivos de uma biblioteca de documentos. Esse evento indica que quaisquer alterações feitas na versão local de um arquivo de uma biblioteca de documentos foram carregadas com êxito para a biblioteca de documentos. Somente as alterações são descarregadas porque esses arquivos foram carregados anteriormente pelo usuário (conforme indicado na atividade * * carregado arquivos na biblioteca de documentos * *).  <br/> |
+|Alterações de arquivo carregadas na biblioteca de documentos  <br/> |FileSyncUploadedPartial  <br/> |O usuário carrega com êxito as alterações nos arquivos de uma biblioteca de documentos. Esse evento indica que quaisquer alterações feitas na versão local de um arquivo de uma biblioteca de documentos foram carregadas com êxito para a biblioteca de documentos. Somente as alterações são carregadas porque esses arquivos foram carregados anteriormente pelo usuário (conforme indicado pelos **arquivos carregados na atividade da biblioteca de documentos** ).  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>Atividades de administração do site

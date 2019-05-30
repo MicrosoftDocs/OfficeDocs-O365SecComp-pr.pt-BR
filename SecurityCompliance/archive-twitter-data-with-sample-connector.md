@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Os administradores podem configurar um conector nativo para importar dados do Twitter para o Office 365. Isso permite que você arquive dados de fontes de dados de terceiros no Office 365 para que possa usar recursos de conformidade, como retenção legal, pesquisa de conteúdo e políticas de retenção para gerenciar a governança dos dados de terceiros da sua organização.
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155613"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490497"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Usar um exemplo de conector para arquivar dados do Twitter no Office 365 (versão prévia)
 
@@ -101,10 +101,10 @@ Para obter instruções passo a passo, consulte [etapa 5: criar o aplicativo Twi
 
 Durante a conclusão desta etapa (seguindo as instruções passo a passo), você salvará as informações a seguir em um arquivo de texto. Os valores para eles serão usados para configurar o aplicativo do conector do Twitter na etapa 6.
 
-- ID do aplicativo Twitter
-- Segredo do aplicativo Twitter (chave secreta da API)
-- Token de cliente do Twitter
-- Segredo de token do cliente Twitter
+- Chave de API do Twitter
+- Chave secreta da API do Twitter
+- Token de acesso do Twitter
+- Segredo do token de acesso do Twitter
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>Etapa 6: configurar o aplicativo do conector do Twitter
 
@@ -114,10 +114,10 @@ Para obter instruções detalhadas, consulte [etapa 6: Configure the Connector W
 
 Durante a conclusão desta etapa (seguindo as instruções passo a passo), você fornecerá as seguintes informações (que você copiou para um arquivo de texto depois de concluir as etapas anteriores):
 
-- ID do aplicativo Twitter (obtido na etapa 5)
-- Segredo do aplicativo Twitter (obtido na etapa 5)
-- Token de cliente do Twitter (obtido na etapa 5)
-- Segredo de token de cliente do Twitter (obtido na etapa 5)
+- Chave de API do Twitter (obtida na etapa 5)
+- Chave secreta da API do Twitter (obtida na etapa 5)
+- Token de acesso do Twitter (obtido na etapa 5)
+- Segredo do token de acesso do Twitter (obtido na etapa 5)
 - ID de aplicativo do Azure Active Directory (a ID de aplicativo do AAD obtida na etapa 2)
 - Segredo de aplicativo do Azure Active Directory (o segredo do aplicativo AAD obtido na etapa 2)
 - URI do aplicativo do Azure Active Directory (o URI do aplicativo AAD obtido na etapa 2; por exemplo,https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
