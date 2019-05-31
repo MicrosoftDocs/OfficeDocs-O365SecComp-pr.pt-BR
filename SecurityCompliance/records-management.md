@@ -13,28 +13,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Com o gerenciamento de registros no Microsoft 365, você pode aplicar a agenda de retenção específica da sua organização em um plano de arquivo para gerenciar a retenção, a declaração de registros e o descarte no suporte de todo o ciclo de vida do conteúdo.
-ms.openlocfilehash: f399fbf29c549c3b0cba47f82bdb3b508a3c5819
-ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
+ms.openlocfilehash: 7e7167cdc37c37cf785eb2a248c8610661ba7f5c
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34379203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547886"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gerenciamento de registros no Office 365
 
-Organizações de todos os tipos exigem uma solução de gerenciamento de registros para gerenciar registros corporativos, jurídicos e de RH em seus dados corporativos. O gerenciamento de registros no Microsoft 365 ajuda a sua organização a gerenciar suas obrigações legais, oferecer a capacidade de demonstrar a conformidade com as regulamentações e aumentar a eficiência com o descarte regular de itens que não são mais importantes ou obrigatórios para fins comerciais.
+Organizações de todos os tipos exigem uma solução de gerenciamento de registros para gerenciar registros reguladores, jurídicos e corporativos em seus dados corporativos. O gerenciamento de registros no Microsoft 365 ajuda a sua organização a gerenciar suas obrigações legais, oferecer a capacidade de demonstrar a conformidade com as regulamentações e aumentar a eficiência com o descarte regular de itens que não precisam mais ser mantidos, não são mais importantes ou obrigatórios para fins comerciais.
 
-A solução de gerenciamento de registros é compatível com os seguintes elementos: 
+A solução de gerenciamento de registros é compatível com os seguintes elementos:
 
--   **Rotule como um registro**. Publique [os rótulos](labels.md#using-retention-labels-for-records-management) de registro a serem aplicados pelos usuários finais [ou aplique automaticamente os rótulos](labels.md#applying-a-retention-label-automatically-based-on-conditions) de registro aos itens que contêm informações confidenciais, palavras-chave ou tipos de conteúdo específicos.
+-   **Migrar e gerenciar seu plano de retenção com o plano de arquivo** e usar o [gerenciador de planos de arquivo](file-plan-manager.md) para reunir seu plano de retenção existente ou criar um novo com os descritores de arquivo e expandir as hierarquias.
 
 -   **Estabeleça políticas de retenção e exclusão dentro do rótulo do registro**. Defina os períodos de [retenção](retention-policies.md#retaining-content-for-a-specific-period-of-time) e [de eliminação ](retention-policies.md#deleting-content-thats-older-than-a-specific-age) com base em vários fatores, incluindo a data da última modificação ou criação.
 
--   **Acione a retenção** baseada em eventos [com retenção baseada em eventos](event-driven-retention.md).
+-   **Acione a retenção baseada em eventos** com [retenção baseada em eventos](event-driven-retention.md).
 
--   **Migrar e gerenciar seu plano de retenção com** o plano [de arquivo e](file-plan-manager.md) usar o Gerenciador de planos de arquivo para reunir seu plano de retenção existente ou criar um novo com os descritores de arquivo e expandir as hierarquias.
+-   **Rotule como um registro**. Publique [os rótulos de registro](labels.md#using-retention-labels-for-records-management) a serem aplicados pelos usuários finais ou [aplique automaticamente os rótulos de registro](labels.md#applying-a-retention-label-automatically-based-on-conditions) aos itens que contêm informações confidenciais, palavras-chave ou tipos de conteúdo específicos.
 
--   **Examine e valide o** descarte [com a](disposition-reviews.md)revisão de disposição.
+-   **Examine e valide o descarte** com a [revisão de disposição](disposition-reviews.md).
 
 -   **Revisar os itens descartados com a revisão do descarte ** e [exportar um relatório de eliminação ](disposition-reviews.md#export-the-disposition-items) para validação e relatórios posteriores.
 
