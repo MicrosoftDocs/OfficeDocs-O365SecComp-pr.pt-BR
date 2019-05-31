@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154343"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547976"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -45,43 +45,46 @@ Com os rótulos de retenção, você pode:
     
   - Palavras-chave específicas que correspondem a uma consulta criada por você.
     
-    A capacidade de aplicar rótulos de retenção automaticamente ao conteúdo é importante porque:
+  A capacidade de aplicar rótulos de retenção automaticamente ao conteúdo é importante porque:
     
-  - Você não precisa treinar os usuários com relação a todas as suas classificações.
+     - Você não precisa treinar os usuários com relação a todas as suas classificações.
     
-  - Você não precisa depender dos usuários para classificar corretamente o conteúdo.
+     - Você não precisa depender dos usuários para classificar corretamente o conteúdo.
     
-  - Os usuários não precisam mais conhecer as políticas de governança de dados; em vez disso, eles podem se concentrar no próprio trabalho.
+   - Os usuários não precisam mais conhecer as políticas de governança de dados; em vez disso, eles podem se concentrar no próprio trabalho.
 
   > [!NOTE]
   > A capacidade de aplicar rótulos automaticamente requer uma licença do Office 365 Enterprise E5 para cada usuário que tem permissões para editar conteúdo que tenha sido rotulado automaticamente em um site ou caixa de correio. Os usuários que possuem apenas o acesso somente leitura não precisam de uma licença.
       
-- **Aplique um rótulo de retenção padrão a uma biblioteca de documentos** em sites de grupo do SharePoint ou do Office 365, de forma que todos os documentos nessa biblioteca recebam o rótulo de retenção padrão. 
-    
 - **Implemente o gerenciamento de registros no Office 365**, inclusive em emails e documentos. Você pode usar um rótulo de retenção para classificar o conteúdo como registro. Quando isso acontece, o rótulo não pode ser alterado ou removido, e o conteúdo não pode ser editado ou excluído. 
+
+- **Aplique um rótulo de retenção padrão a uma biblioteca de documentos** no SharePoint, de forma que todos os documentos que chegarem naquele local herdem o rótulo de retenção padrão.  
     
-Você cria e gerencia rótulos de retenção na página **Rótulos** > guia **Retenção** na central de conformidade do Microsoft 365, na central de segurança do Microsoft 365 ou na Central de Conformidade &amp;e Segurança do Office 365. 
-  
+Você cria e gerencia rótulos de retenção na página **Rótulos** > guia **Retenção** na central de conformidade do Microsoft 365, na central de segurança do Microsoft 365 ou na Central de Conformidade e Segurança do Office 365.  
 
-## <a name="how-retention-labels-work-with-label-policies"></a>Como os rótulos de retenção funcionam com políticas de rótulo
+## <a name="how-retention-labels-work-with-retention-label-policies"></a>Como os rótulos de retenção funcionam com políticas de rótulos de retenção
 
-A disponibilização dos rótulos de retenção para as pessoas da sua organização, para que elas possam classificar o conteúdo, é um processo de duas etapas: primeiro você cria os rótulos e, depois, os publica nos locais escolhidos. Quando você publica os rótulos de retenção, uma política de rótulos é criada.
+A disponibilização dos rótulos de retenção para as pessoas da sua organização, para que elas possam classificar o conteúdo, é um processo de duas etapas: primeiro você cria os rótulos de retenção e, depois, publica-os nos locais escolhidos. Quando você publica os rótulos de retenção, uma política de rótulos de retenção é criada.
   
 ![Diagrama de funções e tarefas para rótulos](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
-Os rótulos de retenção são blocos de construção independentes e reutilizáveis, incluídos em uma política de rótulos e publicados em locais diferentes. Eles podem ser reutilizados em várias políticas. O objetivo principal da política de rótulos é agrupar os rótulos de retenção e especificar os locais nos quais você deseja exibi-los.
+Os rótulos de retenção são blocos de construção independentes e reutilizáveis, incluídos em uma ou mais políticas de rótulos de retenção. O objetivo principal de uma política de rótulos de retenção é agrupar os rótulos de retenção e especificar os locais nos quais você deseja exibi-los.
   
-![Diagrama de rótulos, políticas de rótulo e locais](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![Diagrama de rótulos, políticas de rótulos e locais](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Ao publicar os rótulos de retenção, eles são incluídos em uma política de rótulos. Um único rótulo de retenção pode ser incluído em muitas políticas.
+1. Quando você publica rótulos de retenção, eles são incluídos em uma política de rótulos de retenção. 
+
+2. Um único rótulo de retenção pode ser incluído em várias políticas de rótulos de retenção.
+
+3. Um único local também pode ser incluído em várias políticas de rótulos de retenção.    
     
-2. As políticas de rótulo especificam os locais de publicação dos rótulos de retenção.
+3. As políticas de rótulos de retenção especificam os locais de publicação dos rótulos de retenção.
     
 ## <a name="only-one-retention-label-at-a-time"></a>Apenas um rótulo de retenção por vez
 
 É importante saber que um conteúdo, como um email ou documento, só pode receber um único rótulo de retenção por vez:
   
-- No caso dos rótulos atribuídos manualmente por usuários finais, as pessoas podem remover ou alterar o rótulo de retenção atribuído.
+- No caso dos rótulos de retenção atribuídos por usuários finais, as pessoas podem remover ou alterar o rótulo de retenção atribuído.
     
 - Se o conteúdo tiver um rótulo de aplicação automática, um rótulo de aplicação automática pode ser substituído por um rótulo de retenção atribuído manualmente por um usuário final.
     
@@ -99,9 +102,9 @@ Quando você publica ou aplica rótulos de retenção automaticamente, eles não
   
 1. Primeiro, a política de rótulos precisa ser sincronizada desde o centro de administração até os locais na política.
     
-2. Depois, o local pode precisar de algum tempo para disponibilizar os rótulos manuais para os usuários finais, ou aplicar rótulos automaticamente ao conteúdo. Quanto tempo isso demora depende do local e do tipo de rótulo.
+2. Em seguida, o local pode precisar de tempo para disponibilizar rótulos de retenção publicados para os usuários finais ou para aplicar rótulos automaticamente ao conteúdo. Quanto tempo isso leva depende do local e do tipo de rótulo de retenção.
     
-### <a name="manual-retention-labels"></a>Rótulos de retenção manuais
+### <a name="published-retention-labels"></a>Rótulos de retenção publicados
 
 Se você publicar rótulos de retenção no SharePoint ou no OneDrive, talvez demore um dia para que esses rótulos de retenção apareçam para os usuários finais. Além disso, se você publicar os rótulos de retenção no Exchange, talvez demore 7 dias para que eles apareçam para os usuários finais, e a caixa de correio deles deve conter pelo menos 10 MB de dados.
   
@@ -113,7 +116,7 @@ Se você aplicar automaticamente rótulos de retenção a conteúdos que se enca
   
 ![Diagrama de quando os rótulos de aplicação automática entram em vigor](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
-### <a name="how-to-check-on-the-status-of-exchange-labels"></a>Como verificar o status dos rótulos do Exchange
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Como verificar o status dos rótulos de retenção publicados no Exchange
 
 No Exchange Online, os rótulos de retenção são disponibilizados para os usuários finais por um processo executado a cada sete dias. Usando o Powershell, é possível ver quando esse processo foi executado pela última vez e, assim, determinar quando ele será executado novamente.
   
@@ -133,11 +136,11 @@ No Exchange Online, os rótulos de retenção são disponibilizados para os usu�
   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
   ```
 
-Nos resultados, a propriedade `ELCLastSuccessTimeStamp` (UTC) mostra quando o sistema processou sua caixa de correio pela última vez. Se isso não tiver ocorrido desde quando você criou a política, os rótulos não serão exibidos. Para forçar o processamento, execute `Start-ManagedFolderAssistant -Identity <user>`.
+Nos resultados, a propriedade `ELCLastSuccessTimeStamp` (UTC) mostra quando o sistema processou sua caixa de correio pela última vez. Se isso não tiver acontecido desde a hora em que você criou a política, os rótulos não serão exibidos. Para forçar o processamento, execute o  `Start-ManagedFolderAssistant -Identity <user>`.
     
 Se os rótulos não estiverem aparecendo no Outlook na Web, e você achar que deveriam aparecer, limpe o cache do navegador (CTRL + F5).
     
-## <a name="label-policies-and-locations"></a>Políticas e locais de rótulo
+## <a name="retention-label-policies-and-locations"></a>Políticas de rótulo de retenção e locais
 
 É possível publicar tipos diferentes de rótulos de retenção em locais diferentes, dependendo do que o rótulo faz.
   
@@ -205,13 +208,13 @@ Para rotular um item no Outlook na Web, clique com o botão direito no item \> n
   
 ![Botão Atribuir Política](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-Após a aplicação do rótulo de retenção, você poderá exibir esse rótulo e a ação necessária na parte superior do item. Se um email for classificado e tiver um período de retenção associado, você poderá saber rapidamente quando o email expirará.
+Depois que o rótulo de retenção for aplicado, você poderá exibi-lo juntamente com a ação necessária na parte superior do item. Se um email tiver um rótulo de retenção aplicado que tiver um período de retenção associado, você poderá ver num relance quando o email vai expirar.
   
 Você também pode aplicar rótulos de retenção a pastas. Isso funciona no Outlook 2010 ou posterior da mesma maneira que funciona no Outlook na Web. Confira a seção anterior para saber mais.
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive e SharePoint
 
-Para rotular um documento (incluindo arquivos do OneNote) no OneDrive ou SharePoint, selecione o item \> no canto superior direito, escolha **Abrir no painel de detalhes**![Ícone do painel de informações](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Aplicar rótulo** \>e escolha o rótulo de retenção. 
+Para rotular um documento (incluindo arquivos do OneNote) no OneDrive ou SharePoint, selecione o item \> no canto superior direito, escolha **Abrir o painel de detalhes**![Ícone do painel de informações](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> ** Aplicar rótulo de retenção** \> e escolha o rótulo de retenção. 
   
 Observe que você também pode aplicar um rótulo de retenção a uma pasta ou conjunto de documentos, e você pode definir um rótulo de retenção padrão para uma biblioteca de documentos. Confira a seção abaixo para saber mais.
   
@@ -453,8 +456,7 @@ Os membros da equipe de conformidade que criarão rótulos de retenção precisa
   
 Para saber mais, consulte [Dar aos usuários acesso ao &amp;Centro de Conformidade](grant-access-to-the-security-and-compliance-center.md) e Segurança do Office 365.
   
-Essas permissões só serão necessárias para criar e aplicar rótulos de retenção. A imposição da política não exige acesso ao conteúdo.
-  
+Essas permissões só serão necessárias para criar e aplicar rótulos de retenção. A imposição da política não exige acesso ao conteúdo.  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>Encontrar os cmdlets do PowerShell para rótulos
 
 Para usar cmdlets de rótulo, você precisa:
@@ -490,7 +492,3 @@ Para usar cmdlets de rótulo, você precisa:
   - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
 
   - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
-
-## <a name="more-information"></a>Mais informações
-
-[Visão geral de políticas de retenção](retention-policies.md)
