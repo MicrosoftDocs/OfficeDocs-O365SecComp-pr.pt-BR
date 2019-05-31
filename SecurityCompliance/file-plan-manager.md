@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, à declaração de registros, à retenção e por fim a disposição.
-ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, políticas de rótulos de retenção e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, declaração de registros, retenção e por fim, à disposição.
+ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152893"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547966"
 ---
 # <a name="overview-of-file-plan-manager"></a>Visão geral do gerenciador de planos de arquivo
 
-O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, à declaração de registros, à retenção e por fim a disposição.
+O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, políticas de rótulos de retenção e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, declaração de registros, retenção e por fim, à disposição.
 
 ![Página de plano de arquivo](media/file-plan-page.png)
 
@@ -50,7 +50,7 @@ Estes rótulos de retenção estão configurados apenas para reter conteúdo, e 
 Você pode determinar quem abriu o gerenciador de planejamento de arquivos e iniciou a primeira experiência de execução examinando as atividades **Política de retenção criada** e **Configuração de retenção criada para uma política de retenção** no log de auditoria.
 
 > [!NOTE]
-> Devido aos comentários dos clientes, removemos esse recurso que cria a política de rótulos e os rótulos de retenção padrão mencionados acima. Você só verá essa política e os rótulos se tiver usado o gerenciador de planejamento de arquivos antes de 11 de abril de 2019.
+> Devido aos comentários dos clientes, removemos esse recurso que cria a política de rótulos de retenção e os rótulos de retenção padrão mencionados acima. Você só verá os rótulos de retenção e a política de rótulos de retenção caso tenha aberto o gerenciador de planos de arquivo antes de 11 de abril de 2019.
 
 ## <a name="navigating-your-file-plan"></a>Navegar pelo plano de arquivo
 
@@ -83,9 +83,9 @@ Na guia **rótulos de plano de arquivo**, as seguintes informações e recursos 
 
 ![Configurações de rótulos no plano de arquivo](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a>Etiqueta plano de arquivo descritores colunas
+### <a name="retention-label-file-plan-descriptors-columns"></a>Colunas de descritores de plano de arquivo de rótulo de retenção
 
-Agora você pode incluir mais informações na configuração das suas etiquetas de retenção. Inserir descritores de plano de arquivo em rótulos melhora o gerenciamento e a organização do seu plano de arquivamento.
+Agora você pode incluir mais informações na configuração das suas etiquetas de retenção. Inserir descritores de plano de arquivo em rótulos de retenção melhora o gerenciamento e a organização do seu plano de arquivo.
 
 Para começar, o gerenciador de planos de arquivo fornece alguns valores prontos de origem para: Função/departamento, Categoria, Tipo de autoridade e Provisão/citação. Você pode adicionar novos valores descritores de planos de arquivo ao criar ou editar um rótulo de retenção.
 
@@ -97,7 +97,7 @@ Aqui está um modo de exibição das colunas de descritores de plano de arquivo 
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a>Exportar rótulos do seu plano de arquivo
+## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exportar todos os rótulos de retenção existentes para analisar e/ou executar revisões offline
 
 No gerenciador de planos de arquivo, você pode exportar os detalhes de todos os rótulos de retenção para um arquivo .csv, para ajudá-lo a facilitar as avaliações de conformidade periódicas com os participantes de governança de dados na sua organização.
 
@@ -109,11 +109,11 @@ Um arquivo *.csv que contém todos os rótulos de retenção existentes será ab
 
 ![Arquivo CSV mostrando todas as etiquetas de retenção](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a>Importar rótulos para seu plano de arquivo
+## <a name="import-retention-labels-into-your-file-plan"></a>Importar rótulos de retenção para seu plano de arquivo
 
-No gerenciador de planos de arquivo, você pode importar em massa novos rótulos, bem como modificar rótulos de retenção existentes.
+No gerenciador de planos de arquivo, você pode importar em massa novos rótulos de retenção, bem como modificar rótulos de retenção existentes.
 
-Para importar novos rótulos de retenção e fazer atualizações aos rótulos de retenção existentes, acesse **gerenciador de planos de arquivo** \> **ações de plano de arquivo** \> **importar rótulos**.
+Para importar novos rótulos de retenção e atualizar rótulos de retenção existentes, acesse **gerenciador de planos de arquivo** \> **ações de plano de arquivo** \> **importar rótulos**.
 
 ![Opção para importar plano de arquivo](media/file-plan-import-labels-option.png)
 
@@ -123,7 +123,7 @@ Baixar um modelo em branco (ou começar com base em uma exportação do seu plan
 
 ![Modelo de plano de arquivo em branco aberto no Excel](media/file-plan-blank-template.png)
 
-Preencha o modelo de discagem (em breve, estarão disponíveis informações de referência sobre os valores válidos para entradas).
+Preencha o modelo (em breve: informações de referência sobre combinações de valores válidas para um único rótulo de retenção).
 
 ![Modelo de plano de arquivo com as informações preenchidas](media/file-plan-filled-out-template.png)
 
@@ -131,7 +131,9 @@ Carregue o modelo preenchido, e o gerenciador de plano de arquivo validará as e
 
 ![Estatísticas de importação de plano de arquivo](media/file-plan-import-statistics.png)
 
-Quando a instalação for concluída, volte para o gerenciador de planos de arquivo e atribua novos rótulos às políticas novas ou existentes.
+Caso haja um erro de validação, a importação do plano de arquivo continuará a validar todas as entradas no arquivo de importação e exibirá todos os erros ao referenciar números de linha no arquivo de importação, copiar os resultados de erros exibidos para que você possa retornar facilmente ao arquivo de importação e corrigir os erros. 
+
+Quando a importação for concluída, volte para o gerenciador de planos de arquivo para associar os novos rótulos de retenção a políticas de rótulos de retenção novas ou existentes.
 
 ![Opção para publicar rótulos](media/file-plan-publish-labels-option.png)
 
