@@ -12,37 +12,37 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: No Office 365, você pode usar rótulos para implementar um agendamento de retenção para a sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos para criar e publicar. Você pode fazer isso pela interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos um de cada vez é ineficiente e demorado. Usando o script e os arquivos .csv fornecidos abaixo, você pode criar em massa e publicar rótulos e as políticas de rótulo. Primeiro, você cria uma lista dos rótulos e uma lista das políticas de rótulos no Excel e, em seguida, você cria em massa os rótulos e as políticas de rótulos nessas listas usando o PowerShell. Isso facilita criar e publicar ao mesmo tempo todos os rótulos exigidos pelo agendamento de retenção.
-ms.openlocfilehash: 09d1a1d2fa6faa333f9b53a7928abdc7409073b6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: No Office 365, você pode usar rótulos de retenção para implementar uma programação de retenção para sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos de retenção para criar e publicar. Você pode fazer isso por meio da interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos de retenção um por vez é demorado e ineficiente. Usando o script e os arquivos .csv fornecidos abaixo, você pode criar e publicar em massa rótulos de retenção e políticas de rótulo de retenção. Primeiro você cria uma lista dos rótulos de retenção e uma lista das políticas de rótulo de retenção no Excel e, em seguida, cria os rótulos de retenção e as diretivas de rótulo de retenção nessas listas usando o PowerShell. Isso torna mais fácil criar e publicar de uma só vez todos os rótulos de retenção exigidos pelo cronograma de retenção.
+ms.openlocfilehash: 1b6ab634ee0f168392981026367a3b8b2e98f5f8
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152103"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590544"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Criação e publicação em massa de rótulos de retenção usando o PowerShell
 
-No Office 365, você pode usar rótulos para implementar um agendamento de retenção para a sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos para criar e publicar. Você pode fazer isso pela interface do usuário no Centro de Conformidade e Segurança, mas criar rótulos uma de cada vez é demorado e ineficiente.
+No Office 365, você pode usar rótulos de retenção para implementar uma programação de retenção para sua organização. Como gerente de registros ou responsável pela conformidade, você pode ter centenas de rótulos de retenção para criar e publicar. Você pode fazer isso por meio da interface do usuário no Centro de Conformidade e &amp; Segurança, mas criar rótulos de retenção um por vez é demorado e ineficiente.
   
-Usando o script e os arquivos .csv fornecidos abaixo, você pode criar em massa e publicar rótulos e as políticas de rótulo. Primeiro, você cria uma lista dos rótulos e uma lista das políticas de rótulos no Excel e, em seguida, você cria em massa os rótulos e as políticas de rótulos nessas listas usando o PowerShell. Isso facilita criar e publicar ao mesmo tempo todos os rótulos exigidos pelo agendamento de retenção.
+Usando os arquivos script e .csv fornecidos abaixo, você pode criar rótulos de retenção em massa e publicar políticas de rótulo de retenção. Primeiro você cria uma lista dos rótulos de retenção e uma lista das políticas de rótulo de retenção no Excel e, em seguida, cria os rótulos de retenção e as políticas de rótulo de retenção nessas listas usando o PowerShell. Isso torna mais fácil criar e publicar de uma só vez todos os rótulos de retenção exigidos pelo cronograma de retenção.
   
-Para saber mais sobre rótulos, confira [Visão geral dos rótulos](labels.md).
+Para mais informações sobre rótulos de retenção, consulte [Visão geral de rótulos](labels.md).
   
 ## <a name="disclaimer"></a>Aviso de isenção de responsabilidade
 
 Os scripts de exemplo fornecidos neste tópico não são compatíveis com nenhum serviço ou programa de suporte padrão da Microsoft. Os scripts de exemplo são fornecidos COMO ESTÃO sem qualquer tipo de garantia. A Microsoft também se isenta de todas as garantias implícitas, incluindo sem limitações quaisquer garantias aplicáveis de padrões de comercialização ou de adequação a uma finalidade específica. Todos os riscos decorrentes do uso ou da execução da documentação ou scripts de exemplo serão de sua responsabilidade. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
   
-## <a name="step-1-create-a-csv-file-for-creating-the-labels"></a>Etapa 1: Criar um arquivo .csv para criar os rótulos
+## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>Etapa 1: crie um arquivo .csv para criar os rótulos de retenção
 
-Primeiro, você cria um arquivo .csv que contém uma lista dos seus rótulos com as configurações de retenção. Você pode usar o exemplo abaixo como um modelo copiando-os no Excel, convertendo o texto em colunas (no Excel, guia \> **Dados** \> **Texto para Colunas** \> **Delimitado** \> **Vírgula** \> **Geral**) e salvar a planilha como um arquivo .csv em um local que seja fácil de localizar.
+Primeiro você cria um arquivo .csv que contém uma lista de seus rótulos de retenção com suas configurações. Você pode usar o exemplo abaixo como um modelo copiando-o para o Excel, convertendo o texto em colunas (na guia \> **Dados** \>do Excel, ** **Texto em Colunas\> ** **Delimitado\> ** **Vírgula\> **Geral**) e, em seguida, salvando a planilha como um arquivo .csv em um local fácil de encontrar .
   
 Para saber mais sobre os valores de parâmetro para este cmdlet, confira [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
   
 Observações:
   
-- Se você não fornecer um arquivo de origem para criar rótulos, o script continuará e solicitará o arquivo de origem para publicar rótulos (confira a próxima seção) e o script publicará apenas os rótulos existentes.
+- Se você não fornecer um arquivo de origem para criar rótulos de retenção, o script avançará e solicitará o arquivo de origem para publicação de rótulos de retenção (consulte a próxima seção), e o script publicará apenas os rótulos de retenção existentes.
     
-- Se o arquivo .csv contiver um rótulo com o mesmo nome de um já existente, o script ignorará a criação desse rótulo. Nenhum rótulo duplicado será criado.
+- Se o arquivo .csv contiver um rótulo de retenção com o mesmo nome de um já existente, o script ignorará a criação desse rótulo de retenção. Nenhum rótulo de retenção duplicado será criado.
     
 - Se você alterar ou renomear os cabeçalhos de coluna, o script falhará. O script exige um arquivo .csv no formato fornecido aqui.
     
@@ -58,17 +58,17 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 ## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>Etapa 2: Criar um arquivo .csv para publicar os rótulos
 
-Em seguida, você cria um arquivo .csv que contém uma lista das políticas de rótulos com o locais e outras configurações. Você pode usar o exemplo abaixo como um modelo copiando-os no Excel, convertendo o texto em colunas (no Excel, guia \> **Dados** \> **Texto para Colunas** \> **Delimitado** \> **Vírgula** \> **Geral**) e salvar a planilha como um arquivo .csv em um local que seja fácil de localizar.
+Em seguida, você cria um arquivo .csv que contém uma lista de políticas de rótulo de retenção com seus locais e outras configurações. Você pode usar o exemplo abaixo como um modelo copiando-o para o Excel, convertendo o texto em colunas (na guia \> **Dados** \>do Excel, ** **Texto em Colunas\> ** **Delimitado\> ** **Vírgula\> **Geral**) e, em seguida, salvando a planilha como um arquivo .csv em um local fácil de encontrar .
   
 Para saber mais sobre os valores de parâmetro para este cmdlet, confira [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
   
 Observações:
   
-- Se você não fornecer um arquivo de origem para publicar rótulos, o script criará os rótulos (confira a seção anterior), mas não os publicará.
+- Se você não fornecer um arquivo de origem para publicar rótulos de retenção, o script criará rótulos de retenção (consulte a seção anterior), mas não os publicará.
     
-- Se o arquivo .csv contiver uma política de rótulo com o mesmo nome de um já existente, o script ignorará a criação dessa política de rótulo. Nenhuma política de rótulo duplicada será criada.
+- Se o arquivo .csv contiver uma política de rótulo de retenção com o mesmo nome de uma já existente, o script ignorará a criação dessa política de rótulo de retenção. Nenhuma política de rótulo de retenção duplicada será criada.
     
-- O script publica apenas os rótulos que são aplicados manualmente ao conteúdo. Esse script não dá suporte a rótulos que são aplicados automaticamente ao conteúdo.
+- O script publica apenas rótulos de retenção aplicados manualmente ao conteúdo. Este script não fornece suporte a rótulos de retenção aplicados automaticamente ao conteúdo.
     
 - Se você alterar ou renomear os cabeçalhos de coluna, o script falhará. O script exige um arquivo .csv no formato fornecido aqui.
     
@@ -713,9 +713,9 @@ Siga as etapas em aqui:
   
 - [Conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-labels"></a>Etapa 5: Executar o script do PowerShell para criar e publicar os rótulos
+## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Etapa 5: execute o script do PowerShell para criar e publicar os rótulos de retenção
 
-Depois de conectar o PowerShell do Centro de Conformidade e Segurança, você executará o script que cria e publica os rótulos.
+Depois que você se conectar ao Centro de Conformidade e &amp; Segurança do PowerShell, execute o script que cria e publica os rótulos de retenção.
   
 1. Na sessão do PowerShell do Centro de Conformidade, digite o caminho, seguido dos caracteres .\ e o nome do arquivo do script e pressione ENTER para executar o script, por exemplo:
     
@@ -733,7 +733,7 @@ Depois de conectar o PowerShell do Centro de Conformidade e Segurança, você ex
 
 ## <a name="step-6-view-the-log-file-with-the-results"></a>Etapa 6: Exibir o arquivo de log com os resultados
 
-Quando você executa o script, ele gera um arquivo de log que registra cada ação realizada e se a ação foi bem-sucedida ou não. O arquivo de log inclui todos os metadados sobre quais rótulos foram criados e quais foram publicados. Você pode encontrar o arquivo de log neste local. Observe que os dígitos no nome do arquivo podem variar.
+Ao executar o script, ele gera um arquivo de log que registra cada ação realizada e se a ação foi bem ou mal-sucedida. O arquivo de log inclui todos os metadados sobre os rótulos de retenção criados e os rótulos de retenção publicados. Você pode encontrar o arquivo de log nesse local -- observe que os dígitos no nome do arquivo variam.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
