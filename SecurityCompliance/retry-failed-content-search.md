@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use o botão repetir para resolver pesquisas de conteúdo que têm erros de local de conteúdo.
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157063"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748564"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Repetir uma pesquisa de conteúdo para resolver um erro de localização de conteúdo
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Esses erros (com códigos de erro de CS008-009 e CS012-002) indicam que a pesquisa de conteúdo falhou ao pesquisar locais de conteúdo específicos; Neste exemplo, duas caixas de correio não foram pesquisadas. Esses erros são exibidos na página do menu de detalhes de status da pesquisa de conteúdo.
+Esses erros (com códigos de erro de CS001-002, CS003-002, CS008-009, CS012-002 e outros erros da forma CS0XX-0XX) indicam que a pesquisa de conteúdo não pôde pesquisar locais de conteúdo específicos; Neste exemplo, duas caixas de correio não foram pesquisadas. Esses erros são exibidos na página do menu de detalhes de status da pesquisa de conteúdo.
 
 ## <a name="cause-of-content-location-errors"></a>Causa de erros de localização de conteúdo
 

@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: O recurso de links seguros oferece verificação de horário de clique de hiperlinks em documentos do Office e em mensagens de email. Use links seguros para proteger sua organização contra phishing e outros ataques.
-ms.openlocfilehash: 1be7db8ad96a5fd0b46500288e674946e763385a
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 4f1449fb97ad8d8f263073c917eed2c399bf4f22
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652524"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748574"
 ---
 # <a name="office-365-atp-safe-links"></a>Links seguros de ATP do Office 365
 
@@ -40,7 +40,7 @@ O Office 365 ATP Safe links (parte da [proteção avançada contra ameaças](off
   
 Depois que as políticas de links seguros de ATP estiverem no local, os administradores globais do Office 365, administradores de segurança e leitores de segurança poderão [exibir relatórios de proteção avançada contra ameaças](view-reports-for-atp.md). As informações nesses relatórios podem ajudar sua equipe de segurança a realizar mais etapas para proteger sua organização ou Pesquisar incidentes de segurança.
 
-À medida que [novos recursos são adicionados à ATP](office-365-atp.md#new-features-in-office-365-atp), sua equipe de segurança do Office 365 pode adicionar ou editar [as políticas de links seguros de ATP](set-up-atp-safe-links-policies.md)da sua organização. Além disso, você pode notar alterações e melhorias, como nossas [páginas de aviso](atp-safe-links-warning-pages.md) recentemente revisadas e renderização de link nativo no Outlook.
+À medida que [novos recursos são adicionados à ATP](office-365-atp.md#new-features-in-office-365-atp), sua equipe de segurança do Office 365 pode adicionar ou editar [as políticas de links seguros de ATP](set-up-atp-safe-links-policies.md)da sua organização. Além disso, você pode notar alterações e melhorias, como nossas [páginas de aviso](atp-safe-links-warning-pages.md) recentemente revisadas e renderização de link nativo no Outlook (introduzido no Office 365 ProPlus versão 1809).
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Como obter proteção de links de segurança ATP
 
