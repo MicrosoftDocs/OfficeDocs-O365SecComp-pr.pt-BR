@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de retenção no Office 365, é possível basear um período de retenção no momento que um tipo específico de evento ocorre. O evento dispara o início do período de retenção, e todo o conteúdo com um rótulo de retenção aplicado para esse tipo de evento recebe as ações de retenção do rótulo. Normalmente, a retenção controlada por eventos é usada como parte de um processo de gerenciamento de registros.
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154623"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728618"
 ---
 # <a name="overview-of-event-driven-retention"></a>Visão geral da retenção controlada por eventos
 
@@ -103,7 +103,7 @@ Observe que após escolher um tipo de evento e criar o rótulo, o tipo de evento
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Etapa 3: Publicar ou aplicar automaticamente o rótulo
 
-Assim como com qualquer rótulo, você precisa publicar ou aplicar automaticamente um rótulo baseado em eventos, para que seja aplicado manual ou automaticamente ao conteúdo. Você pode fazer isso na página **Rótulos** ou **Políticas de rótulos**. Note que os rótulos que classificam o conteúdo como registro só podem ser publicados e aplicados manualmente ao conteúdo. 
+Assim como qualquer rótulo, você precisa publicar ou aplicar automaticamente um rótulo baseado em evento para que seja aplicado manual ou automaticamente ao conteúdo. Você pode fazer isso na página de **Rótulos** ou **Políticas de rótulos**. 
   
 ![Opções para publicar ou aplicar automaticamente um rótulo](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
