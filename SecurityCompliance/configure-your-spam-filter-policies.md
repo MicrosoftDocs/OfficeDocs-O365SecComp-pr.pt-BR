@@ -13,48 +13,51 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: As configurações básicas de filtro de spam incluem a seleção da ação a ser executada em mensagens identificadas como spam e a escolha da filtragem de mensagens escritas em idiomas específicos ou enviadas de países ou regiões específicos.
-ms.openlocfilehash: c52c82c32c32383e4fb2df173aa98518ac52b115
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+description: As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam.
+ms.openlocfilehash: be99c017a5038fbfb431edbcf2d65c877d92388c
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490517"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857651"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar suas políticas de filtro de spam
-  
-As configurações básicas de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada. Você pode editar a política de filtro de spam padrão para definir as configurações de filtro de spam para toda a empresa e criar políticas personalizadas de filtro de spam e aplicá-las a usuários, grupos ou domínios específicos em sua organização. Políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de prioridade mais alta será aplicada se várias políticas atenderem ao conjunto de critérios.
-  
-> [!IMPORTANT]
-> Para clientes autônomos do Exchange Online Protection (EOP): por padrão, os filtros de spam do EOP enviam mensagens detectadas por spam para a pasta lixo eletrônico de cada destinatário. No entanto, para garantir que a ação **mover mensagem para a pasta lixo eletrônico** funcione para caixas de correio locais, você deve configurar regras de fluxo de email do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados por EOP. Para obter detalhes, consulte [Garantir que o spam seja direcionado para a pasta Lixo Eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
-  
+As configurações de filtro de spam incluem selecionar a ação a ser executada em mensagens identificadas como spam. As configurações de política de filtro de spam são aplicadas somente a mensagens de entrada e há dois tipos:
+
+  - Padrão: a política padrão de filtro de spam é usada para definir configurações de filtro de spam para toda a empresa. Essa política não pode ser renomeada e está sempre ativada.
+
+  - Personalizado: as políticas de filtro de spam personalizadas podem ser detalhadas e aplicadas a usuários, grupos ou domínios específicos em sua organização. Políticas personalizadas sempre têm precedência sobre a política padrão. Você pode alterar a ordem na qual suas políticas personalizadas são executadas, alterando a prioridade de cada política personalizada; no entanto, somente a política de maior prioridade (ou seja, número mais próximo a 0) será aplicada se várias políticas atenderem ao conjunto de critérios.
+
 ## <a name="what-you-must-know-before-you-begin"></a>O que você precisa saber antes de começar
 
 Tempo estimado para conclusão: 30 minutos
   
-Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o entrada anti-spam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
-  
-Para informações sobre atalhos de teclado que possam se aplicar aos procedimentos neste tópico, confira **Atalhos de teclado no Centro de Administração do Exchange**.
-  
-## <a name="use-the-security--compliance-center-scc-to-configure-spam-filter-policies"></a>Usar o centro de conformidade do & de segurança (SCC) para configurar as políticas de filtro de spam
+Para executar este procedimento ou estes procedimentos, você precisa receber permissões. Para ver de que permissões você precisa, consulte o entrada anti-spam no tópico [permissões de recurso no Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-1. No centro de conformidade do & de segurança (SCC), navegue até **anti-spam**de **política** \> de **Gerenciamento** \> de ameaças.
-    
-2. Execute um dos seguintes procedimentos na página **configurações antispam** : 
-    
-      - Revise a política padrão para toda a empresa nas configurações padrão.
-    
-      - Clique na guia **Personalizar** , altere o seletor de **configurações personalizadas** para **ativado**e clique no botão ![adicionar ícone](media/ITPro-EAC-AddIcon.gif) **criar uma política** para criar uma nova política personalizada de filtro de spam que possa ser aplicada a usuários, grupos e domínios em sua organização. Também é possível editar políticas personalizadas existentes clicando nelas duas vezes. 
-    
-3. Somente para políticas personalizadas, especifique um nome para a política. Opcionalmente, você também pode especificar uma descrição mais detalhada. Não é possível renomear a política padrão.<br/><br/>Observação: quando você cria uma política, todas as definições de configuração aparecem em uma única tela. Por outro lado, ao editar uma política, você deve navegar por várias telas. As configurações são as mesmas em qualquer um dos casos, mas o restante deste procedimento descreve como acessar essas configurações ao editar uma política. 
-  
-4. Na seção **ações de spam e em massa** , em **spam**, **spam de alta confiança**, **email de phishing**e **email em massa**, selecione a ação a ser tomada para o lixo de entrada. Os valores disponíveis são: 
+As configurações de política de filtro de spam estão todas no centro de conformidade e segurança & (SCC). É possível encontrar mais informações em [vá para o centro de conformidade & segurança do Office 365](go-to-the-securitycompliance-center.md). A página configurações antispam está dentro da seção **anti-spam** da **política** \> de **Gerenciamento** \> de ameaças SCC \> .
 
-      - **Mover mensagem para a pasta de lixo eletrônico:** Envia a mensagem para a pasta lixo eletrônico dos destinatários especificados. Esta é a ação padrão para spam, spam de alta confiança e massa.
+## <a name="access-and-create-spam-filter-policies"></a>Acessar e criar políticas de filtro de spam
 
- **Importante**: para os clientes do Exchange Online Protection (EOP): para que essa ação funcione com caixas de correio locais, você deve configurar duas regras de fluxo de email do Exchange em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte como [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
- 
-      - **Adicionar cabeçalho X:** Envia a mensagem para os destinatários especificados, mas adiciona o texto do cabeçalho X ao cabeçalho da mensagem para identificar a mensagem como spam. Usando esse texto como um identificador, você pode, opcionalmente, criar regras de caixa de entrada ou usar um dispositivo downstream para atuar na mensagem. O texto do cabeçalho X padrão é **Esta mensagem parece ser spam**.<br/>Você pode personalizar o texto do cabeçalho X usando a caixa de entrada **Adicionar este texto do cabeçalho x** . Se você personalizar o texto do cabeçalho X, esteja ciente das seguintes condições: 
+Dentro da página configurações antispam, as configurações padrão podem ser exibidas na guia padrão. Para alterar essas configurações, alterne para a guia **personalizado** . Você poderá ver e definir algumas das configurações padrão dentro da política de filtro de spam padrão.
+
+Para habilitar mais configurações personalizadas ou adicionar políticas personalizadas, altere o seletor de **configurações personalizadas** para **ativado** para habilitar políticas personalizadas de filtro de spam. Você pode exibir as políticas personalizadas existentes expandindo-as daqui.
+
+## <a name="configure-custom-spam-filter-policy-settings"></a>Definir configurações personalizadas de política de filtro de spam
+
+1. Selecione e clique em **Editar política** se você estiver editando uma política; caso contrário, clique em **criar uma política**
+
+2. Você pode especificar um nome exclusivo para políticas personalizadas, mas não pode renomear o padrão. Opcionalmente, você também pode especificar uma descrição mais detalhada para qualquer política.
+
+3. Na seção **ações de spam e em massa** :
+
+  - Selecione uma ação para spam ****, **spam de alta confiança**, **email de phishing**e tipos de **email em massa** . Os valores disponíveis são: 
+
+    - **Mover mensagem para a pasta de lixo eletrônico:** Envia a mensagem para a pasta lixo eletrônico dos destinatários especificados. Esta é a ação padrão para spam, spam de alta confiança e massa.<br/><br/>
+
+    > [!NOTE]
+    > Para que essa ação funcione com caixas de correio locais, você deve configurar duas regras de fluxo de mensagens do Exchange (também conhecidas como regras de transporte) em seus servidores locais para detectar cabeçalhos de spam adicionados pelo EOP. Para obter detalhes, consulte como [garantir que o spam seja roteado para a pasta lixo eletrônico de cada usuário](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Esta etapa é crítica para clientes autônomos do Exchange Online Protection (EOP).
+
+    - **Adicionar cabeçalho X:** Envia a mensagem para os destinatários especificados, mas adiciona o texto do cabeçalho X ao cabeçalho da mensagem para identificar a mensagem como spam. Usando esse texto como um identificador, você pode, opcionalmente, criar regras de caixa de entrada ou usar um dispositivo downstream para atuar na mensagem. O texto do cabeçalho X padrão é **Esta mensagem parece ser spam**.<br/>Você pode personalizar o texto do cabeçalho X usando a caixa de entrada **Adicionar este texto do cabeçalho x** . Se você personalizar o texto do cabeçalho X, esteja ciente das seguintes condições: 
     
       - Se você especificar apenas o cabeçalho no \< *cabeçalho*\>do formato, onde não há espaços no \< *cabeçalho*\>, dois-pontos serão acrescentados ao texto personalizado, seguido do texto padrão.       Por exemplo, se você especificar "This-Is-My-Custom-Header", o texto do cabeçalho X será exibido como "This-Is-My-Custom-header: esta mensagem parece ser spam." 
         
@@ -64,17 +67,17 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
       
       - Lembre-se de que as mensagens com esse cabeçalho X podem ainda ser movidas para a pasta de lixo eletrônico da caixa de correio devido à configuração de lixo eletrônico. Você pode alterar isso desabilitando esse recurso com Set-MailboxJunkEmailConfiguration.
 
-      - **Ceder a linha de assunto com o texto:** Envia a mensagem para os destinatários pretendidos, mas precede a linha de assunto com o texto especificado na **linha de assunto do prefixo com esta caixa de entrada de texto** . Usando esse texto como um identificador, você pode opcionalmente criar regras para filtrar ou rotear as mensagens, conforme necessário. 
+    - **Ceder a linha de assunto com o texto:** Envia a mensagem para os destinatários pretendidos, mas precede a linha de assunto com o texto especificado na **linha de assunto do prefixo com esta caixa de entrada de texto** . Usando esse texto como um identificador, você pode opcionalmente criar regras para filtrar ou rotear as mensagens, conforme necessário. 
+
+    - **Redirecionar mensagem para endereço de email:** Envia a mensagem para um endereço de email designado em vez de para os destinatários pretendidos. Especifique o endereço "redirecionar" na caixa de entrada redirecionar **para este endereço de email** .
+
+    - **Excluir mensagem:** Exclui a mensagem inteira, incluindo todos os anexos. 
         
-      - **Redirecionar mensagem para endereço de email:** Envia a mensagem para um endereço de email designado em vez de para os destinatários pretendidos. Especifique o endereço "redirecionar" na caixa de entrada redirecionar **para este endereço de email** .
+    - **Mensagem de quarentena:** Envia a mensagem para quarentena em vez de para os destinatários pretendidos. Esta é a ação padrão para Phish. Se você selecionar essa opção, na caixa de entrada **Manter spam por (dias)**, especifique a quantidade de dias durante os quais a mensagem de spam ficará em quarentena. (Ela será automaticamente excluída após o tempo decorrido. O valor padrão é 30 dias, que é o valor máximo. O valor mínimo é 1 dia).<br/><br/>Dica: para obter informações sobre como os administradores podem gerenciar mensagens de email residentes na quarentena no Eat, confira [quarentena](quarantine.md) e [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md). > para obter informações sobre como configurar as mensagens de notificação de spam a serem enviadas aos usuários, consulte [Configure End-User spam Notifications no EOP](configure-end-user-spam-notifications-in-eop.md) ou [Configure End-User spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
 
-      - **Excluir mensagem:** Exclui a mensagem inteira, incluindo todos os anexos. 
-        
-      - **Mensagem de quarentena:** Envia a mensagem para quarentena em vez de para os destinatários pretendidos. Esta é a ação padrão para Phish. Se você selecionar essa opção, na caixa de entrada **Manter spam por (dias)**, especifique a quantidade de dias durante os quais a mensagem de spam ficará em quarentena. (Ela será automaticamente excluída após o tempo decorrido. O valor padrão é 30 dias, que é o valor máximo. O valor mínimo é 1 dia).<br/><br/>Dica: para obter informações sobre como os administradores podem gerenciar mensagens de email residentes na quarentena no Eat, confira [quarentena](quarantine.md) e [Localizar e liberar mensagens em quarentena como um administrador](find-and-release-quarantined-messages-as-an-administrator.md). > para obter informações sobre como configurar as mensagens de notificação de spam a serem enviadas aos usuários, consulte [Configure End-User spam Notifications in EOP](configure-end-user-spam-notifications-in-eop.md) ou [Configure End-User spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+  - Configurar **Selecione o limite** para determinar como você deseja tratar emails em massa como spam, com base no nível de reclamação de massa (BCL) da mensagem. Você pode escolher uma configuração de limite de 1 a 9, em que 1 indica a maioria dos emails em massa como spam, e 9 permite que a maioria dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. Veja [valores de nível de reclamação em massa](bulk-complaint-level-values.md) e [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obter mais detalhes. 
 
-5. Em **Email em massa**, você pode selecionar um limite para tratar emails em massa como spam. Esse limite é baseado no nível de reclamação de massa (BCL) da mensagem. Você pode escolher uma configuração de limite de 1 a 9, em que 1 indica a maioria dos emails em massa como spam, e 9 permite que a maioria dos emails em massa seja entregue. O serviço então executa a ação configurada; por exemplo, enviar a mensagem para a pasta Lixo Eletrônico do destinatário. Veja [valores de nível de reclamação em massa](bulk-complaint-level-values.md) e [qual é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obter mais detalhes. 
-
-6. Na página **Propriedades de spam** , você pode definir as opções de modo de teste para a política Configurando: 
+4. Na página **Propriedades de spam** , você pode definir as opções de modo de teste para a política Configurando: 
     
       - **Nenhuma** Não tomar ação de modo de teste na mensagem. Esse é o padrão. 
         
@@ -82,7 +85,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
         
       - **Enviar uma mensagem Cco para este endereço** Selecionar essa opção envia uma cópia carbono oculta da mensagem para o endereço de email especificado na caixa de entrada. <br/><br/>Para obter mais informações sobre as opções avançadas de filtragem de spam, incluindo descrições sobre cada opção e o texto do cabeçalho X associado a cada uma, consulte [Advanced spam Filtering Options](advanced-spam-filtering-asf-options.md).
 
-7. Somente para políticas personalizadas, clique no item de menu **aplicar a** e crie uma regra baseada em condição para especificar os usuários, grupos e domínios aos quais aplicar essa política. Você pode criar várias condições, se elas forem exclusivas. 
+5. Somente para políticas personalizadas, clique no item de menu **aplicar a** e crie uma regra baseada em condição para especificar os usuários, grupos e domínios aos quais aplicar essa política. Você pode criar várias condições, se elas forem exclusivas. 
     
       - Para selecionar usuários, selecione **O destinatário é**. Na caixa de diálogo subsequente, selecione um ou mais remetentes da sua empresa na lista seletor de usuário e clique em **Adicionar**. Para adicionar remetentes que não estão na lista, digite seus endereços de email e clique em **verificar nomes**. Nessa caixa, também é possível usar caracteres curinga para vários endereços de email (por exemplo: \*@ _domainname_). Quando terminar de fazer suas seleções, clique em **OK** para retornar à tela principal. 
         
@@ -90,7 +93,7 @@ Para informações sobre atalhos de teclado que possam se aplicar aos procedimen
         
       - Para selecionar domínios, selecione **o domínio do destinatário**. Em seguida, na caixa de diálogo subsequente, adicione os domínios. Clique em **ok** para retornar à tela principal. <br/><br/>Você pode criar exceções dentro da regra. Por exemplo, você pode filtrar mensagens de todos os domínios, exceto para um determinado domínio. Clique em **Adicionar exceção**e crie suas condições de exceção de forma semelhante à maneira como você criou as outras condições.<br/><br/>A aplicação de uma política de spam a um grupo só é suportada para **grupos de segurança habilitados para email**. 
   
-8. Clique em **salvar**. Um resumo das configurações de política aparecerá no painel direito.
+6. Clique em **Salvar**. Um resumo das configurações de política aparecerá no painel direito.
 
 A política padrão não pode ser desabilitada ou excluída, e as políticas personalizadas sempre têm precedência sobre a política padrão. Para políticas personalizadas, você pode marcar ou desmarcar as caixas de seleção na coluna **habilitado** para habilitá-las ou desabilitá-las. Por padrão, todas as políticas estão habilitadas. Para excluir uma política personalizada, selecione a política, clique no ![ícone Excluir](media/ITPro-EAC-DeleteIcon.gif) ícone **excluir** e confirme que você deseja excluir a política.
 

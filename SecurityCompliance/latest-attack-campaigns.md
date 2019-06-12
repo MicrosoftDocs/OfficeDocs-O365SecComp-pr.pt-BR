@@ -1,7 +1,7 @@
 ---
 title: Entender as últimas campanhas de ataque e técnicas com análise de ameaças
 description: Descreve relatórios interativos de análise de ameaças
-keywords: segurança, malware, Microsoft 365, M365, central de segurança, análise de ameaças, Windows Defender ATP, cyber, postura de segurança, ameaças emergentes
+keywords: segurança, malware, Microsoft 365, M365, central de segurança, análise de ameaças, Microsoft defender ATP, cyber, postura de segurança, ameaças emergentes
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e3644f5ace35a574613447ae30b6fa3c665662fe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251949"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852545"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Entender as campanhas e as técnicas de ataque mais recentes com a análise de ameaças
 
@@ -25,4 +25,4 @@ As ameaças da CyberSource estão se tornando mais frequentes e sofisticadas. É
 
 A **análise de ameaças** é um conjunto de relatórios interativos publicados assim como ameaças emergentes – novas técnicas, campanhas de ataque e epidemias de malware são identificadas. Os relatórios ajudam a avaliar o impacto das ameaças ao seu ambiente e fornece as ações recomendadas a serem confinadas, aumentar a resiliência organizacional e evitar ameaças específicas.
 
-[Saiba mais sobre a análise de ameaças no Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).  
+[Saiba mais sobre a análise de ameaças no Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  

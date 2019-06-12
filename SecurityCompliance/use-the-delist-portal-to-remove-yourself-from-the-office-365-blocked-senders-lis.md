@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Você está recebendo uma mensagem de erro ao tentar enviar um email para um destinatário cujo endereço de email está no Office 365? Se acha que não deve estar recebendo a mensagem de erro, use o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365.
-ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157843"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857631"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365
 
@@ -54,4 +54,6 @@ em que  _IP address_ é o endereço IP do computador no qual o servidor de email
     Depois que o endereço IP for removido da lista de remetentes bloqueados, as mensagens de email desse endereço IP serão entregues aos destinatários que usam o Office 365. Portanto, certifique-se de que os emails enviados a partir desse endereço IP não sejam ofensivos ou mal-intencionados; caso contrário, o endereço IP pode ser bloqueado novamente.
     
     > [!NOTE]
-    > Pode levar até 1 hora antes que as restrições sejam removidas.
+    > Pode levar até 24 horas ou os resultados podem variar muito antes de as restrições serem removidas.
+    
+Leia sobre [como impedir que emails reais sejam marcados como spam no office 365](prevent-email-from-being-marked-as-spam.md ) e [controle de spam de saída no Office 365](outbound-spam-controls.md) para impedir que IP seja blacklistdo.

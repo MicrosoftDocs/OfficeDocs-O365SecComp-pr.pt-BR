@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Saiba mais sobre os recursos de investigação e resposta automatizados do Office 365 proteção avançada contra ameaças.
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250314"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852615"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigação e resposta automatizadas (AIR) com o Office 365
 
@@ -37,11 +37,11 @@ Na versão inicial do AIR em abril de 2019, os alertas gerados a partir das segu
 3. Mensagens de email contendo malware removidos após a entrega *
 4. Mensagens de email que contêm URLs de phishing removidos após a entrega *
 
-***Observação**: esses alertas receberam uma severidade "informativa" nas respectivas políticas de alerta no centro de conformidade do _AMP_ de segurança com notificações por email desativadas. Eles podem ser ativados por meio da configuração da política de alerta.
+***Observação**: esses alertas receberam uma severidade "informativa" nas respectivas políticas de alerta dentro do centro de conformidade & segurança com notificações por email desativadas. Eles podem ser ativados por meio da configuração da política de alerta.
 
-Para exibir alertas, no centro de conformidade do & de segurança, escolha **alertas** > **exibir alertas**. Selecione um alerta para exibir seus detalhes e, em seguida, use o link **Exibir investigação** para ir para a [investigação](#investigation-graph)correspondente. Observe que os alertas informativos ficam ocultos no modo de exibição de alerta por padrão. Para vê-los, você precisa alterar a filtragem de alerta para incluir alertas informativos.
+Para exibir alertas, no centro de conformidade & segurança, escolha **alertas** > **exibir alertas**. Selecione um alerta para exibir seus detalhes e, em seguida, use o link **Exibir investigação** para ir para a [investigação](#investigation-graph)correspondente. Observe que os alertas informativos ficam ocultos no modo de exibição de alerta por padrão. Para vê-los, você precisa alterar a filtragem de alerta para incluir alertas informativos.
 
-Se sua organização gerencia seus alertas de segurança por meio de um sistema de gerenciamento de alerta, sistema de gerenciamento de serviços ou informações de segurança e sistema de gerenciamento de eventos (SIEM), você pode enviar alertas do Office 365 para esse sistema por meio de [uma notificação por email ou via API de atividade de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). As notificações de alerta de investigação via email ou API incluirão links para acessar os alertas no centro de conformidade do & de segurança, permitindo que o administrador de segurança atribuído Navegue rapidamente para a investigação.
+Se sua organização gerencia seus alertas de segurança por meio de um sistema de gerenciamento de alerta, sistema de gerenciamento de serviços ou informações de segurança e sistema de gerenciamento de eventos (SIEM), você pode enviar alertas do Office 365 para esse sistema por meio de [uma notificação por email ou via API de atividade de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). As notificações de alerta de investigação via email ou API incluirão links para acessar os alertas no centro de conformidade & segurança, permitindo que o administrador de segurança atribuído Navegue rapidamente para a investigação.
 
 ![Alertas que se vinculam a investigações](media/air-alerts-page-details.png) 
 
@@ -96,7 +96,7 @@ Depois que a investigação raiz estiver concluída, o guia estratégico fornece
 Em seguida, várias etapas de investigação e busca de ameaças são executadas:
 
 - Mensagens de email semelhantes em outros clusters de email são pesquisadas.
-- O sinal é compartilhado com outras plataformas, como o [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+- O sinal é compartilhado com outras plataformas, como [o Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - É possível determinar se qualquer usuário clicou por links mal-intencionados em mensagens de email suspeitas.
 - Uma verificação é feita no Office 365 proteção do Exchange Online ([EOP](eop/exchange-online-protection-eop.md)) e no Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) para ver se há outras mensagens semelhantes relatadas pelos usuários.
 - Uma verificação é feita para ver se um usuário foi comprometido. Esta verificação utiliza sinais no [Microsoft Cloud app Security](https://docs.microsoft.com/cloud-app-security) e no [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlacionando qualquer anomalia de atividade do usuário relacionada. 
@@ -121,7 +121,7 @@ Semelhante aos guias estratégicos acionados por um alerta, as investigações a
 
 ## <a name="get-started"></a>Introdução
 
-Para acessar suas investigações, como administrador global do Office 365, administrador de segurança ou leitor de segurança, vá para o centro de conformidade do[https://protection.office.com](https://protection.office.com)_AMP_ de segurança () e entre. Em seguida, siga um destes procedimentos:
+Para acessar suas investigações, como administrador global do Office 365, administrador de segurança ou leitor de segurança, vá para o centro de conformidade de[https://protection.office.com](https://protection.office.com)& de segurança () e entre. Em seguida, siga um destes procedimentos:
 
 - No painel de navegação à esquerda, **** > vá para alertas**exibir alertas**, abra um dos alertas relacionados à investigação e, em seguida, clique no link **Exibir investigação** na parte inferior do submenu alerta. 
 
@@ -131,7 +131,7 @@ Para acessar suas investigações, como administrador global do Office 365, admi
 
     ou
 
-- Visite o painel de gerenciamento de ameaças (no centro de conformidade do & de segurança, vá para o**painel** **Gerenciamento** > de ameaças).
+- Visite o painel de gerenciamento de ameaças (no centro de conformidade & segurança, vá para o**painel** **Gerenciamento** > de ameaças).
 
 ![Widgets do AIR](media/air-widgets.png)
 
@@ -242,11 +242,12 @@ Na guia **computadores** , você pode ver todas as máquinas identificadas como 
 
 ![Página da máquina de investigação de ar](media/air-investigationmachinepage.png)
 
-Como parte da investigação, o AIR correlaciona ameaças de email a dispositivos. Por exemplo, uma investigação passa um hash de arquivo mal-intencionado no [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para investigar. Isso permite a investigação automatizada de máquinas relevantes para seus usuários, para ajudar a garantir que as ameaças sejam tratadas na nuvem e nos seus pontos de extremidade. 
+Como parte da investigação, o AIR correlaciona ameaças de email a dispositivos. Por exemplo, uma investigação passa um hash de arquivo mal-intencionado no [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) para investigar. Isso permite a investigação automatizada de máquinas relevantes para seus usuários, para ajudar a garantir que as ameaças sejam tratadas na nuvem e nos seus pontos de extremidade. 
 
 Você pode:
 - Obtenha uma visão geral das máquinas e ameaças atuais encontradas.
-- Selecione uma máquina para abrir um modo de exibição que nas [investigações ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) relacionadas do Windows Defender no centro de segurança ATP do Windows Defender.
+- Selecione uma máquina para abrir um modo de exibição que nas [investigações ATP do Microsoft](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) defender relacionadas na central de segurança do Microsoft defender.
 
 ### <a name="entity-investigation"></a>Investigação de entidade
 

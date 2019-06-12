@@ -3,7 +3,6 @@ title: Visão geral do painel de segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use o novo painel de segurança para analisar o status de proteção contra ameaças do Office 365 e exibir e agir em alertas de segurança.
-ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 78e6a67ace757cca9d25086c601ab4b4437c7bf8
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077217"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857661"
 ---
 # <a name="security-dashboard"></a>Painel de segurança
 
@@ -30,7 +29,7 @@ O [Centro &amp; de conformidade de segurança](go-to-the-securitycompliance-cent
   
 Assista ao vídeo para obter uma visão geral e leia este artigo para saber mais.
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
   
 Dependendo da sua assinatura do Office 365 da sua organização, o painel de segurança inclui vários widgets, como Resumo de gerenciamento de ameaças, status da proteção contra ameaças, detecções semanais globais de ameaças, malware e muito mais, conforme descrito no seções a seguir.
   
@@ -45,10 +44,10 @@ O widget Resumo de gerenciamento de ameaças informa rapidamente como sua organi
 
 ![Painel de segurança-widget Resumo de gerenciamento de ameaças](media/SecDash-ThreatMgmtSummary.png)
 
-As informações que você verá no Resumo de gerenciamento de ameaças depende do que a assinatura inclui. A tabela a seguir descreve quais informações estão incluídas no Office 365 Enterprise E3 e no Office 365 Enterprise e5.
+As informações que você verá no Resumo de gerenciamento de ameaças depende do que a assinatura inclui. A tabela a seguir descreve quais informações estão incluídas para o Office 365 E3 e o Office 365 e5.
 
 
-|Office 365 Enterprise E3  |Office 365 Enterprise E5  |
+|Office 365 E3  |Office 365 e5  |
 |---------|---------|
 |Mensagens de malware bloqueadas<br/>Mensagens de phishing bloqueadas<br>Mensagens relatadas por usuários<br><br><br><br> |Mensagens de malware bloqueadas<br>Mensagens de phishing bloqueadas<br>Mensagens relatadas por usuários<br>Malware de dia zero bloqueado<br>Mensagens de phishing avançadas detectadas<br>URLs mal-intencionadas bloqueadas |
 

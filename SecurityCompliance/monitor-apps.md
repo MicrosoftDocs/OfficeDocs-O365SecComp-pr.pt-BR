@@ -1,5 +1,5 @@
 ---
-title: Monitorar e relatar o status do aplicativo no Microsoft 365 Security
+title: Monitoramento de aplicativos e relatórios no centro de segurança do Microsoft 365
 description: Descreve como você pode obter mais informações sobre o uso do aplicativo na nuvem em sua organização
 keywords: segurança, malware, Microsoft 365, M365, central de segurança, monitor, relatório, aplicativos
 ms.prod: w10
@@ -12,21 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2641b90fd6f055352c5305d63ad98a54eb1ee483
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263299"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852655"
 ---
-# <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Monitorar e relatar o status do aplicativo no Microsoft 365 Security
-
+# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoramento de aplicativos e relatórios no centro de segurança do Microsoft 365
 
 Esses relatórios fornecem mais informações sobre como os aplicativos de nuvem estão sendo usados na sua organização, incluindo os tipos de aplicativos, seu nível de risco e alertas.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Monitorar contas de email em risco
 
-A **proteção de email** mostra as contas de email em risco. Você pode clicar em uma conta para investigar mais a central de segurança do Windows Defender.
+A **proteção de email** mostra as contas de email em risco. Você pode clicar em uma conta para investigar ainda mais a central de segurança do Microsoft defender.
 
 ![Cartão de proteção de email](./media/security-docs/email-protection.png)
 

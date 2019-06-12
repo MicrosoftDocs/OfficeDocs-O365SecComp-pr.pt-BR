@@ -1,7 +1,7 @@
 ---
 title: Como as políticas e proteções são combinadas quando os emails são sinalizados em vermelho
 description: Quais políticas se aplicam e quais ações tomar, quando o email está marcado como malware, spam, spam de alta confiança, phishing e massa por EOP e/ou ATP.
-keywords: segurança, malware, Microsoft 365, M365, central de segurança, ATP, Windows Defender ATP, Office 365 ATP, Azure ATP
+keywords: segurança, malware, Microsoft 365, M365, central de segurança, ATP, Microsoft defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152703"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852495"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Qual política se aplica quando vários métodos de proteção e verificações de detecção são executados em seu email
 
