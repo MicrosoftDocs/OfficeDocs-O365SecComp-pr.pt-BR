@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Você pode criar uma caixa de correio inativa no Office 365 aplicando uma política de retenção de bloqueio ou do Office 365 à caixa de correio e, em seguida, excluindo a conta de usuário do Office 365 correspondente. Os itens em uma caixa de correio inativa são mantidos pela duração da política de retenção ou retenção aplicada a ele antes de ser tornado inativo. Para excluir permanentemente uma caixa de correio inativa, apenas remova a política de retenção ou bloqueio.
-ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
+ms.sourcegitcommit: eed9fb363c939168e4bc49698bb34038a54433db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768946"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913072"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Criar e gerenciar caixas de correio inativas no Office 365
 
@@ -32,9 +32,9 @@ O Office 365 torna possível manter o conteúdo de caixas de correio excluídas.
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Para tornar uma caixa de correio inativa, deve ser atribuída uma licença do Exchange Online Plan 2 para que uma retenção de litígio ou uma política de retenção do Office 365 possa ser aplicada à caixa de correio antes de ser excluída. As licenças do Exchange Online Plan 2 fazem parte de uma assinatura do Office 365 Enterprise E3 e e5. Se uma caixa de correio for atribuída a uma licença do Exchange Online Plan 1 (que faz parte de uma assinatura do Office 365 Enterprise E1), você precisará atribuir uma licença de arquivamento do Exchange Online separada para que uma retenção possa ser aplicada à caixa de correio antes de ser excluída. Para saber mais, confira [Arquivamento do Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Para tornar uma caixa de correio inativa, deve ser atribuída uma licença do Exchange Online Plan 2 para que uma retenção de litígio ou uma política de retenção do Office 365 possa ser aplicada à caixa de correio antes de ser excluída. As licenças do Exchange Online Plan 2 fazem parte de uma assinatura do Office 365 Enterprise E3 e e5. Se uma caixa de correio for atribuída a uma licença de quiosque do Exchange Online plano 1 ou do Exchange Online (que fazem parte de uma assinatura do Office 365 E1 e F1, respectivamente), você precisará atribuir uma licença de arquivamento do Exchange Online separada para que uma retenção possa ser aplicada à caixa de correio b efore ele é excluído. Para saber mais, confira [Arquivamento do Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
-- A licença associada à caixa de correio do Exchange Online excluída estará disponível após a exclusão da conta de usuário do Office 365 correspondente. Você pode então [atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a outro usuário. 
+- As licenças associadas à caixa de correio do Exchange Online excluída estarão disponíveis após a exclusão da conta de usuário do Office 365 correspondente. Você pode [atribuir essas licenças a outro usuário](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
     
 - Se uma retenção de litígio ou uma política de retenção do Office 365 (que é configurada para reter ou reter e excluir conteúdo) não for aplicada a uma caixa de correio antes de ser excluída, o conteúdo da caixa de correio não será mantido ou detectável. No entanto, a caixa de correio excluída pode ser recuperada em até 30 dias após a exclusão, mas a caixa de correio e seu conteúdo serão excluídos permanentemente após 30 dias, se não for recuperado.
     
