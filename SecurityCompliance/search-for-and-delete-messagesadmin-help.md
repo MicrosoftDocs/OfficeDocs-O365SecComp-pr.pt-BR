@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Os administradores podem usar o cmdlet Search-Mailbox para pesquisar caixas de correio do usuário e, em seguida, excluir mensagens de uma caixa de correio.
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158483"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957413"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Procurar e excluir mensagens - Ajuda para administradores
   
@@ -48,7 +48,7 @@ Como uma proteção adicional, você pode primeiro copiar as mensagens para outr
     
 - Se você incluir uma consulta de pesquisa (usando o parâmetro *SearchQuery* ), o cmdlet **Search-Mailbox** retornará um máximo de 10.000 itens nos resultados da pesquisa. Portanto, se você incluir uma consulta de pesquisa, talvez seja necessário executar o comando **Search-Mailbox** várias vezes para excluir mais de 10.000 itens. 
     
-- A caixa de correio de arquivo morto do usuário também será pesquisada quando você executar o cmdlet **Search-Mailbox** . Da mesma forma, os itens na caixa de correio de arquivo morto principal serão excluídos quando você usar o cmdlet **Search-Mailbox** com a opção _DeleteContent_ . Para evitar isso, você pode incluir a opção *DoNotIncludeArchive* Além disso, recomendamos que você não use a opção _DeleteContent_ para excluir mensagens em caixas de correio do Exchange Online com o arquivamento de expansão automática habilitado, pois pode ocorrer perda de dados inesperada. 
+- A caixa de correio de arquivo morto do usuário também será pesquisada quando você executar o cmdlet **Search-Mailbox** . Da mesma forma, os itens na caixa de correio de arquivo morto principal serão excluídos quando você usar o cmdlet **Search-Mailbox** com a opção _DeleteContent_ . Para evitar isso, você pode incluir a opção *DoNotIncludeArchive*
     
 ## <a name="search-messages-and-log-the-search-results"></a>Pesquisar mensagens e registrar os resultados da pesquisa
 

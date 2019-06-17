@@ -3,7 +3,7 @@ title: Simulador de Ataque no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global do Office 365, você pode usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real atinja sua empresa.
-ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077617"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927564"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de Ataque no Office 365
 
-**Resumo** Se você for um administrador global do Office 365 e sua organização tiver [recursos de investigação e resposta de ameaças do office 365](office-365-ti.md), você poderá usar o simulador de ataques para executar cenários de ataque realistas em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real afete o resultado final. Leia este artigo para saber mais.
+**Resumo** Se você for um administrador global do Office 365 ou um administrador de segurança e sua organização tiver [recursos de investigação e resposta de ameaça do office 365](office-365-ti.md), você poderá usar o simulador de ataques para executar cenários de ataque realísticos em sua organização. Isso pode ajudá-lo a identificar e encontrar usuários vulneráveis antes que um ataque real afete o resultado final. Leia este artigo para saber mais.
 
 > [!IMPORTANT]
-> O Office 365 proteção avançada contra ameaças e a investigação e a resposta contra ameaças (anteriormente conhecida como inteligência de ameaças) agora fazem parte do plano de proteção avançada contra ameaças do Office 365, com recursos adicionais de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> O Office 365 proteção avançada contra ameaças e a investigação de ameaças e a resposta (anteriormente conhecida como inteligência de ameaças) fazem parte do Office 365 Advanced Threat Protection Plan 2, juntamente com outros recursos de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Os ataques
 
@@ -37,11 +37,8 @@ Três tipos de simulação de ataque estão disponíveis atualmente:
 - [Ataque de irrigação de senha](#password-spray-attack)
 - [Ataque de senha de força bruta](#brute-force-password-attack)
     
-Para que um ataque seja iniciado com êxito, use a autenticação multifator na conta que você está usando para executar ataques simulados. Além disso, você deve ser um administrador global do Office 365.
-  
-> [!NOTE]
-> O suporte para acesso condicional estará disponível em breve. 
-  
+Para que um ataque seja iniciado com êxito, certifique-se de que a conta que você está usando para executar ataques simulados esteja usando a autenticação multifator. Além disso, você deve ser um administrador global do Office 365 ou um administrador de segurança. (Para saber mais sobre funções e permissões, confira [permissões no centro de conformidade & segurança do Office 365](permissions-in-the-security-and-compliance-center.md).)
+    
 Para acessar o simulador de conformidade, &amp; no centro de conformidade de segurança, escolha simulador de **ataque**de **Gerenciamento** \> de ameaças.
   
 ## <a name="before-you-begin"></a>Antes de começar...
@@ -50,13 +47,12 @@ Verifique se você e sua organização atendem aos seguintes requisitos para o s
       
 - **O email da sua organização está hospedado no Exchange Online**. (O simulador de ataque não está disponível para os servidores de email locais.)
     
-- **Você é um administrador global do Office 365**
+- **Você é um administrador global do Office 365 ou administrador de segurança**
     
-- **A [protocolo de autenticação](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) multifator (MFA) está ativada, por pelo menos a conta de administrador global do Office 365**. (O ideal é que a MFA seja ativada para todos os usuários da sua organização.)
+- **A [autenticação multifator/acesso condicional](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) está ativada, por pelo menos a conta de administrador global do Office 365 e os administradores de segurança**. (Idealmente, a autenticação multifator/acesso condicional está ativada para todos os usuários da sua organização.)
  
 - **Sua organização tem [o plano de proteção avançada contra ameaças do Office 365](office-365-ti.md)**, com o simulador &amp; de ataques visível no centro de conformidade de segurança (vá para o simulador de **ataques**de **Gerenciamento** \> de ameaças)<br/>![Gerenciamento de ameaças-simulador de ataques](media/ThreatMgmt-AttackSimulator.png)
 
-    
 ## <a name="display-name-spear-phishing-attack"></a>Nome de exibição spear-phishing Attack
 
 Phishing é um termo genérico para um amplo conjunto de ataques de classe como um ataque de estilo de engenharia social. Esse ataque está voltado para o spear phishing, um ataque mais direcionado para um grupo específico de pessoas ou uma organização. Normalmente, um ataque personalizado com algum reconhecimento executado e usando um nome de exibição que irá gerar confiança no destinatário, como uma mensagem de email que parece ser proveniente de um executivo dentro da sua organização.
@@ -127,11 +123,17 @@ Um ataque de senha de força bruta em relação a uma organização é geralment
     
 ## <a name="new-features-in-attack-simulator"></a>Novos recursos no simulador de ataques
 
-Novos recursos estão sendo adicionados ao simulador de ataques. Entre eles:
+Novos recursos foram adicionados recentemente ao simulador de ataques. Entre eles:
 
-- **Recursos avançados de relatórios**. Você poderá ver dados como o tempo mais rápido (ou mais lento) para abrir uma mensagem de email de simulação de ataque, o tempo mais rápido (ou mais lento) para clicar em um link na mensagem e muito mais.
+- **Recursos avançados de relatórios**. A capacidade de ver dados como o tempo mais rápido (ou mais lento) para abrir uma mensagem de email de simulação de ataque, o tempo mais rápido (ou mais lento) para clicar em um link na mensagem e mais visualizações.
 
-- **Editor de modelos de email**. Você pode criar um modelo de email reutilizável e personalizado que pode ser usado para simulações de ataque futuras.
+- **Editor de modelos de email**. A capacidade de criar um modelo de email personalizado e reutilizável que você pode usar para simulações de ataque futuras.
+
+- **Importação de destinatário de CSV**. A capacidade de usar um arquivo CSV para importar sua lista de destinatários de destino em vez de usar o seletor de catálogo de endereços.
+
+**Mais novos recursos serão disponibilizados em breve para o simulador de ataques**. Entre eles:
+
+- **Simulação de phishing de carga de anexos**. A capacidade de usar um anexo como a carga de simulação de phishing no lugar de uma URL.
 
 Visite o [mapa do Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver o que está em desenvolvimento, o que está saindo e o que já foi iniciado.
 
