@@ -14,35 +14,37 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Os administradores podem importar dados de terceiros de plataformas de mídia social, plataformas de mensagens instantâneas e plataformas de colaboração de documentos para caixas de correio em sua organização do Office 365. Isso permite que você arquive dados de Facebook, Twitter e outras fontes de dados de terceiros no Office 365. Em seguida, você pode usar e aplicar recursos de conformidade do Office 365 (como retenção legal, eDiscovery, arquivamento in-loco e políticas de retenção) para dados de terceiros.
-ms.openlocfilehash: 33ce9c0d648d0c247abcaac8838e351d413a1990
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 796ad0314374dca60d1ff5f6b9317be491b757a1
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152073"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014600"
 ---
 # <a name="archive-third-party-data-in-office-365"></a>Arquivar dados de terceiros no Office 365
 
-O Office 365 permite que os administradores importem e arquivem dados de terceiros de plataformas de mídia social, plataformas de mensagens instantâneas e plataformas de colaboração de documentos, para caixas de correio em sua organização do Office 365. Exemplos de fontes de dados de terceiros que podem ser importadas para o Office 365 incluem o seguinte: 
+O Office 365 permite que os administradores importem e arquivem dados de terceiros de plataformas de mídia social, plataformas de mensagens instantâneas e plataformas de colaboração de documentos, para caixas de correio em sua organização do Office 365. Exemplos de fontes de dados de terceiros que podem ser importadas para o Office 365 incluem os seguintes serviços: 
   
-- **Social** -Twitter, Facebook, Yammer e LinkedIn 
+- **Social** – Facebook, LinkedIn, Twitter e Yammer 
     
-- **Mensagens instantâneas** -Yahoo Messenger, GoogleTalk e Cisco Jabber 
+- **Mensagens instantâneas** – Yahoo Messenger, GoogleTalk e Cisco Jabber 
     
-- Documentar a caixa de **colaboração** e o Dropbox 
+- **Colaboração de documentos** – caixa e Dropbox 
     
 - **Setores verticais** – gerenciamento de relacionamento com o cliente (como o Salesforce informativo) e serviços financeiros (como Bloomberg e Thomson Reuters) 
     
-- **SMS/mensagens de texto** -BlackBerry 
+- **SMS/mensagens de texto** – BlackBerry 
     
 Após a importação dos dados de terceiros, é possível aplicar recursos de conformidade do Office 365, como retenção de litígio, eDiscovery, arquivamento in-loco, auditoria, supervisão e políticas de retenção do Office 365 — a esses dados. Por exemplo, quando uma caixa de correio é colocada em Retenção de Litígio, os dados de terceiros são preservados. Você pode pesquisar dados de terceiros usando as ferramentas de descoberta eletrônica da Microsoft. Se preferir, você pode aplicar políticas de arquivamento e de retenção aos dados de terceiros, assim como faz com os dados da Microsoft. Em suma, o arquivamento de dados de terceiros no Office 365 pode ajudar sua organização a se manter em conformidade com as políticas governamentais e regulamentares.
 
 Há duas maneiras de importar e arquivar dados de terceiros no Office 365:
 
-- **Use um conector de dados de terceiros no centro de conformidade do & de segurança** -use um conector de dados personalizado que está disponível no centro de conformidade do _AMP_ de segurança no Office 365. Após configurar e configurar o conector, ele se conecta à fonte de dados de terceiros, converte o conteúdo de um item em um formato de mensagem de email e, em seguida, importa o item para uma caixa de correio no Office 365. No momento, você pode implementar conectores de amostra para importar e arquivar dados de páginas de negócios do Facebook e Twitter. Para obter instruções passo a passo para configurar um conector, consulte:
+- **Use um conector de dados de terceiros no centro de conformidade de & de segurança** – use um conector de dados personalizado que está disponível no centro de conformidade & segurança no Office 365. Após configurar e configurar o conector, ele se conecta à fonte de dados de terceiros, converte o conteúdo de um item em um formato de mensagem de email e, em seguida, importa o item para uma caixa de correio no Office 365. Neste momento, você pode implementar conectores para importar e arquivar dados de páginas de negócios do Facebook, contas do Twitter corporativos, o Instant Bloomberg e o LinkedIn. Para obter instruções passo a passo para configurar um conector, consulte:
    
-   - **Facebook** - [usar um exemplo de conector para arquivar dados do Facebook no Office 365 (versão prévia)](archive-facebook-data-with-sample-connector.md)
+   - **Facebook** – [use um conector de exemplo para arquivar dados do Facebook no Office 365](archive-facebook-data-with-sample-connector.md)
   
-   - **Twitter** - [use um exemplo de conector para arquivar dados do Twitter no Office 365 (versão prévia)](archive-twitter-data-with-sample-connector.md)
+   - **Twitter** – [use um exemplo de conector para arquivar dados do Twitter no Office 365](archive-twitter-data-with-sample-connector.md)
+    
+   - **LinkedIn** – [configurar um conector para arquivar dados do LinkedIn no Office 365](archive-linkedin-data.md)
 
-- **Trabalhar com um parceiro da Microsoft** -sua organização trabalha com um parceiro da Microsoft que fornecerá um conector personalizado que será configurado para extrair itens da fonte de dados de terceiros (regularmente) e conectar-se ao Microsoft Cloud por um API de terceiros e importe esses itens para o Office 365. O conector de parceiro também converte o conteúdo de um item da fonte de dados de terceiros em uma mensagem de email e, em seguida, importa-os para uma caixa de correio no Office 365. Para obter uma lista de parceiros com os quais você pode trabalhar e o processo passo a passo desse método, confira [trabalhar com um parceiro para arquivar dados de terceiros no Office 365](work-with-partner-to-archive-third-party-data.md).
+- **Trabalhar com um parceiro da Microsoft** – sua organização trabalha com um parceiro da Microsoft que fornecerá um conector personalizado que será configurado para extrair itens da fonte de dados de terceiros (regularmente) e conectar-se ao Microsoft Cloud por um API de terceiros e importe esses itens para o Office 365. O conector de parceiro também converte o conteúdo de um item da fonte de dados de terceiros em uma mensagem de email e, em seguida, importa-os para uma caixa de correio no Office 365. Para obter uma lista de parceiros com os quais você pode trabalhar e o processo passo a passo desse método, confira [trabalhar com um parceiro para arquivar dados de terceiros no Office 365](work-with-partner-to-archive-third-party-data.md).
