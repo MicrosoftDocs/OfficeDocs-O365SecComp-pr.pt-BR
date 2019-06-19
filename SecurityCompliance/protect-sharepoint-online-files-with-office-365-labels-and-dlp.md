@@ -3,7 +3,7 @@ title: Proteja arquivos do SharePoint Online com DLP e rótulos de retenção
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumo: Aplique rótulos de retenção e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156893"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059549"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteja arquivos do SharePoint Online com DLP e rótulos de retenção
 
@@ -116,7 +116,7 @@ Use estas etapas para aplicar os rótulos de retenção às pastas de documentos
     
 Esta é a configuração resultante.
   
-![rótulos de retenção para os quatro tipos de sites de equipe do SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Rótulos de retenção para os quatro tipos de sites de equipe do SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Políticas DLP para seus sites do SharePoint Online
 
@@ -205,7 +205,7 @@ Em seguida, use estas etapas para configurar uma política DLP que bloqueia os u
     
 16. Clique em **OK**.
     
-17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
+17. Na caixa **O que você deseja fazer se detectarmos informações confidenciais?**, em **Detectar quando uma quantidade específica de informações confidenciais está sendo compartilhada ao mesmo tempo**, clique em **Restringir acesso ou criptografar o conteúdo** e, em seguida, clique em **Avançar**.
     
 18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     
@@ -213,7 +213,7 @@ Em seguida, use estas etapas para configurar uma política DLP que bloqueia os u
     
 Aqui está a configuração resultante para sites de equipe do SharePoint Online de alta confidencialidade.
   
-![Política DLP para um site de equipe isolado do SharePoint Online usando o rótulo de retenção Altamente Confidencial.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Política DLP para um site de equipe isolado do SharePoint Online usando o rótulo de retenção Altamente Confidencial](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Próxima etapa
 
