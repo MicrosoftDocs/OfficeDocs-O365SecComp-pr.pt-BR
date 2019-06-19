@@ -3,7 +3,7 @@ title: Proteger sites do SharePoint Online em um ambiente de desenvolvimento/tes
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: 743a008a1d445d63054888499a0a805e546a1a4c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158813"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059539"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -511,8 +511,8 @@ Em seguida, configure uma política DLP que bloqueia os usuários quando eles co
     
 16. Clique em **OK**.
     
-17. No painel **O que deseja fazer se detectarmos informações confidenciais?**, clique em **Avançar**.
-    
+17. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
+
 18. No painel **Deseja ativar a política ou testar primeiro?**, clique em **Sim** para ativá-la imediatamente e clique em **Avançar**.
     
 19. No painel **Examine as configurações**, clique em **Criar** e em **Fechar**.
