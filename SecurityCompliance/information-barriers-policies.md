@@ -3,20 +3,20 @@ title: Definir políticas de barreira de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como definir políticas para barreiras de informações no Microsoft Teams.
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935943"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059529"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir políticas para barreiras de informação (versão prévia)
 
@@ -48,7 +48,7 @@ Este artigo descreve como planejar, definir, implementar e gerenciar políticas 
 |Fase    |O que está envolvido  |
 |---------|---------|
 |[Verifique se os pré-requisitos foram atendidos](#prerequisites)     |– Verifique se você tem as [licenças e permissões necessárias](information-barriers.md#required-licenses-and-permissions)<br/>– Certifique-se de que o diretório da sua organização inclua dados que reflitam a estrutura da sua organização<br/>-Habilitar a pesquisa de diretório no escopo para o Microsoft Teams<br/>– Verifique se o registro em log de auditoria está ativado<br/>– Use o PowerShell (exemplos são fornecidos)<br/>– Fornecer consentimento de administrador para o Microsoft Teams (etapas incluídas)          |
-|[Parte 1: segmentar todos os usuários em sua organização](#part-1-segment-users)     |– Determinar quais políticas são necessárias<br/>-Criar uma lista de segmentos para definir<br/>– Identificar quais atributos usar<br/>-Definir segmentos em termos de filtros de política        |
+|[Parte 1: segmentar usuários em sua organização](#part-1-segment-users)     |– Determinar quais políticas são necessárias<br/>-Criar uma lista de segmentos para definir<br/>– Identificar quais atributos usar<br/>-Definir segmentos em termos de filtros de política        |
 |[Parte 2: definir as políticas de barreira de informações](#part-2-define-information-barrier-policies)     |-Definir suas políticas (não se aplica ainda)<br/>-Escolha entre dois tipos (bloquear ou permitir) |
 |[Parte 3: aplicar políticas de barreira de informações](#part-3-apply-information-barrier-policies)     |-Definir políticas para status ativo<br/>– Executar o aplicativo de política<br/>-Exibir status da política         |
 |(Conforme necessário) [Editar um segmento ou uma política](#edit-a-segment-or-a-policy)     |-Editar um segmento<br/>– Editar ou remover uma política<br/>– Executar o aplicativo de política<br/>-Exibir status da política         |
@@ -104,12 +104,12 @@ Quando você tiver sua lista inicial de grupos e políticas, prossiga para ident
 
 ### <a name="identify-segments"></a>Identificar segmentos
 
-Além da sua lista inicial de políticas, faça uma lista de segmentos para sua organização. Todos os usuários de sua organização devem pertencer a um segmento e nenhum usuário deve pertencer a dois ou mais segmentos. Cada segmento pode ter apenas uma política de barreira de informações aplicada. 
+Além da sua lista inicial de políticas, faça uma lista de segmentos para sua organização. Os usuários que serão incluídos nas políticas de barreira de informações devem pertencer a um segmento e nenhum usuário deverá pertencer a dois ou mais segmentos. Cada segmento pode ter apenas uma política de barreira de informações aplicada. 
 
-Determine quais atributos dos dados de diretório da sua organização você usará para definir segmentos. Você pode usar *Department*, *memberOf*ou qualquer um dos atributos com suporte. Certifique-se de que você tem valores no atributo que você selecionou para todos os usuários. [Consulte a lista de atributos com suporte para barreiras de informações (visualização)](information-barriers-attributes.md).
+Determine quais atributos dos dados de diretório da sua organização você usará para definir segmentos. Você pode usar *Department*, *memberOf*ou qualquer um dos atributos com suporte. Certifique-se de que você tem valores no atributo que você selecionou para os usuários. [Consulte a lista de atributos com suporte para barreiras de informações (visualização)](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Antes de prosseguir para a próxima seção, certifique-se de que os dados do diretório têm valores para atributos que você pode usar para definir segmentos**. Se os dados do diretório não tiverem valores para os atributos que você deseja usar, todas as contas de usuário devem ser atualizadas para incluir essas informações antes de prosseguir com as barreiras de informação. Para obter ajuda com isso, consulte os seguintes recursos:<br/>- [Configurar propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Antes de prosseguir para a próxima seção, certifique-se de que os dados do diretório têm valores para atributos que você pode usar para definir segmentos**. Se os dados do diretório não tiverem valores para os atributos que você deseja usar, as contas de usuário devem ser atualizadas para incluir essas informações antes de prosseguir com as barreiras de informação. Para obter ajuda com isso, consulte os seguintes recursos:<br/>- [Configurar propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definir segmentos usando o PowerShell
 
@@ -128,7 +128,7 @@ A definição de segmentos não afeta os usuários; Ele apenas define o estágio
     Após executar cada cmdlet, você verá uma lista de detalhes sobre o novo segmento. Os detalhes incluem o tipo do segmento, que o criou ou modificou pela última vez, e assim por diante. 
 
 > [!IMPORTANT]
-> Certifique-se de **que seus segmentos não se**sobreponham. Cada usuário de sua organização deve pertencer a um segmento (e apenas um). Nenhum usuário deve pertencer a dois ou mais segmentos. Os segmentos devem ser definidos para todos os usuários em sua organização. (Consulte [exemplo: segmentos definidos pela contoso](#contosos-defined-segments) neste artigo.)
+> Certifique-se de **que seus segmentos não se**sobreponham. Cada usuário que será afetado por barreiras de informação deve pertencer a um único segmento (e apenas um). Nenhum usuário deve pertencer a dois ou mais segmentos. (Consulte [exemplo: segmentos definidos pela contoso](#contosos-defined-segments) neste artigo.)
 
 Após ter definido seus segmentos, vá para definir políticas de barreira de informações.
 
