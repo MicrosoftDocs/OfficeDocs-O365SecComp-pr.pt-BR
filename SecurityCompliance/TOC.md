@@ -101,7 +101,8 @@
 ### [Perguntas frequentes sobre como importar arquivos PST](faqimporting-pst-files-to-office-365.md)
 ### [Arquivar dados de terceiros no Office 365](archiving-third-party-data.md)
 #### [Use um conector de exemplo para arquivar dados do Facebook](archive-facebook-data-with-sample-connector.md)
-#### [Use um conector de exemplo para arquivar dados do Twitter](archive-twitter-data-with-sample-connector.md)
+#### [Usar um conector de exemplo para arquivar dados do Twitter](archive-twitter-data-with-sample-connector.md)
+#### [Configurar um conector para arquivar dados do LinkedIn](archive-linkedin-data.md)
 #### [Trabalhar com um parceiro para arquivar dados de terceiros](work-with-partner-to-archive-third-party-data.md)
 ## Armazenar dados
 ### [Habilitar caixas de correio de arquivo morto](enable-archive-mailboxes.md)
@@ -242,7 +243,8 @@
 ### [Perguntas frequentes sobre como importar arquivos PST](faqimporting-pst-files-to-office-365.md)
 ### [Arquivar dados de terceiros no Office 365](archiving-third-party-data.md)
 #### [Use um conector de exemplo para arquivar dados do Facebook](archive-facebook-data-with-sample-connector.md)
-#### [Use um conector de exemplo para arquivar dados do Twitter](archive-twitter-data-with-sample-connector.md)
+#### [Usar um conector de exemplo para arquivar dados do Twitter](archive-twitter-data-with-sample-connector.md)
+#### [Configurar um conector para arquivar dados do LinkedIn](archive-linkedin-data.md)
 #### [Trabalhar com um parceiro para arquivar dados de terceiros](work-with-partner-to-archive-third-party-data.md)
 ## Armazenar dados
 ### [Habilitar caixas de correio de arquivo morto](enable-archive-mailboxes.md)
