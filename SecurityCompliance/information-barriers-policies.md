@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como definir políticas para barreiras de informações no Microsoft Teams.
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083859"
+ms.locfileid: "35113245"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir políticas para barreiras de informação (versão prévia)
 
@@ -134,7 +134,7 @@ Após ter definido seus segmentos, vá para definir políticas de barreira de in
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Usando "igual a" e "não é igual a" nas definições de segmento
 
-No primeiro exemplo mostrado acima, definimos um segmento que inclui a lógica, o *departamento é igual a HR*. Você também pode definir segmentos usando um parâmetro "not Equals", conforme mostrado no exemplo a seguir:
+No primeiro exemplo mostrado acima, definimos um segmento de tal forma que "departamento é igual a HR". Esse segmento incluiu um parâmetro "Equals". Você também pode definir segmentos usando um parâmetro "not Equals", conforme mostrado no exemplo a seguir:
 
 Possuem`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
