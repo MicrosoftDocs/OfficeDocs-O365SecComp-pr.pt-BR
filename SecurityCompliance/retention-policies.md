@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja para reter o conteúdo, excluí-lo ou ambos: reter e em seguida excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas a locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que cumpra certas condições.'
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156963"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131386"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -78,11 +78,14 @@ A medida anterior se aplica ao conteúdo existente, na ocasião em que a políti
   
 Observe que um usuário receberá uma mensagem de erro se tentar excluir uma biblioteca, lista, pasta ou um site que está sujeito a uma política de retenção. Ele poderá excluir uma pasta, se primeiro mover ou excluir os arquivos da pasta que está sujeita à política. Além disso, a biblioteca de retenção para preservação é criada apenas quando o primeiro item precisa ser copiado para a biblioteca, e não quando você cria a política de retenção. Portanto, para testar a política, primeiro edite ou exclua um documento em um site que esteja sujeito à política e, em seguida, navegue até a biblioteca de retenção para preservação para exibir a cópia retida.
   
-![Diagrama de fluxo de retenção no SharePoint e no OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![Diagrama do ciclo de vida de conteúdo no SharePoint e no OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
   
 Depois que uma política de retenção é atribuída a uma conta do OneDrive ou site do SharePoint, o conteúdo pode seguir um destes dois caminhos:
   
-1. **Se o conteúdo for modificado ou excluído** durante o período de retenção, uma cópia do conteúdo original existente na ocasião em que a política de retenção foi atribuída será criada na biblioteca de retenção para preservação. Lá, um trabalho de temporizador é executado periodicamente e identifica itens cujo período de retenção expirou, e esses itens são excluídos permanentemente em até sete dias após o fim do período de retenção. 
+1. **Se o conteúdo for modificado ou excluído** durante o período de retenção, uma cópia do conteúdo original existente na ocasião em que a política de retenção foi atribuída será criada na biblioteca de Retenção para Preservação. Lá, um trabalho de temporizador é executado periodicamente e identifica itens cujo período de retenção expirou, e esses itens são movidos para a lixeira de segundo estágio, onde serão excluídos permanentemente ao final de 93 dias. Observe que a lixeira de segundo estágio não está visível para os usuários finais (somente a lixeira de primeiro estágio está), mas os administradores de conjunto de sites podem exibir e restaurar o conteúdo de lá.
+
+    > [!NOTE]
+    > Alteramos recentemente como o conteúdo é excluído da biblioteca de Retenção para Preservação. Para ajudar a evitar a perda de dados acidental, não excluímos mais permanentemente o conteúdo da biblioteca de Retenção para Preservação. Em vez disso, excluímos permanentemente somente o conteúdo da lixeira, portanto, todo o conteúdo da biblioteca de Retenção para Preservação agora passará pela lixeira de segundo estágio.
     
 2. **Se o conteúdo não for modificado ou excluído** durante o período de retenção, ele será movido para a Lixeira de primeiro estágio no final do período de retenção. Se um usuário excluir o conteúdo a partir daí, ou se esvaziar a Lixeira (também conhecido como limpeza), o documento será transferido para a Lixeira de segundo estágio. Um período de retenção de 93 dias abrange as duas lixeiras de primeiro e segundo estágio. O documento será excluído permanentemente no final de 93 dias, de onde eles estiverem, no primeiro ou segundo estágio. Observe que a Lixeira não é indexada e, portanto, pesquisas não localizam seu conteúdo. Isso significa que um bloqueio de Descoberta Eletrônica não consegue localizar o conteúdo da Lixeira para retê-lo. 
     
@@ -102,7 +105,7 @@ Se um usuário deixar a sua organização e a sua caixa de correio for incluída
   
 Depois que uma política de retenção é atribuída a uma caixa de correio ou pasta pública, o conteúdo pode seguir um destes dois caminhos:
   
-1. **Se o item for modificado ou excluído permanentemente** pelo usuário (usando SHIFT + DELETE ou excluído de Itens Excluídos) durante o período de retenção, o item será movido (ou copiado, no caso de edição) para a pasta Itens Recuperáveis. Lá, um processo é executado periodicamente e identifica itens cujo período de retenção tenha expirado, e esses itens são permanentemente excluídos em até 14 dias após o fim do período de retenção. Observe que 14 dias é a configuração padrão, que pode ser estendida para até 30 dias. 
+1. **Se o item for modificado ou excluído permanentemente** pelo usuário (usando SHIFT + DELETE ou excluído de Itens Excluídos) durante o período de retenção, o item será movido (ou copiado, no caso de edição) para a pasta Itens Recuperáveis. Lá, um processo é executado periodicamente e identifica itens cujo período de retenção tenha expirado, e esses itens são permanentemente excluídos em até 14 dias após o fim do período de retenção. Observe que 14 dias é a configuração padrão, que pode ser estendida para até 30 dias.
     
 2. **Se o item não for modificado ou excluído** durante o período de retenção, o mesmo processo será executado periodicamente em todas as pastas na caixa de correio e identificará itens cujo período de retenção tenha expirado, e esses itens serão permanentemente excluídos em até 14 dias após o fim do período de retenção. Observe que 14 dias é a configuração padrão, que pode ser estendida para até 30 dias. 
     
@@ -260,7 +263,8 @@ Uma política de retenção que se aplica ao Teams pode usar [Bloqueio de Preser
 Usando o PowerShell, você poderá excluir tipos específicos de itens do Exchange de uma política de retenção. Por exemplo, você poderá excluir mensagens de caixa postal, conversas de mensagens instantâneas e outro conteúdo do Skype for Business Online nas caixas de correio. Você também pode excluir o calendário, as anotações e os itens de tarefas. Esse recurso está disponível apenas usando o PowerShell; não está disponível na interface de usuário quando você cria uma política de retenção.
   
 Para fazer isso, use o parâmetro `ExcludedItemClasses` dos cmdlets `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Para saber mais sobre o PowerShell, confira a seção abaixo [Encontre os cmdlets do PowerShell para políticas de retenção](#find-the-powershell-cmdlets-for-retention-policies).
-  
+
+
 ## <a name="locking-a-retention-policy"></a>Como bloquear uma política de retenção
 Algumas organizações talvez precisem cumprir regras definidas por órgãos regulamentadores, como a Regra 17a-4 do Securities and Exchange Commission (SEC), que exige que após uma política de retenção ser ativada, ela não pode ser desativada ou se tornar menos restritiva. Com o Bloqueio de Preservação, você pode bloquear a política para que ninguém, nem o administrador, possa desativar a política ou torná-la menos restritiva.
   
@@ -294,6 +298,24 @@ Agora, o bloqueio de preservação é colocado na política de retenção. Se vo
 
 ![Bloquear a política com todos os parâmetros mostrados no PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>Como liberar uma política de retenção
+
+Você pode desativar ou excluir uma política de retenção a qualquer momento. Quando você faz isso, todo o conteúdo do SharePoint ou do OneDrive que está sendo mantido não é excluído imediata e permanentemente. Em vez disso, para ajudar a evitar a perda acidental de dados, há um período de cortesia de 30 dias, durante o qual a expiração de conteúdo dessa política não acontece na biblioteca de retenção para preservação para que você possa restaurar todo o conteúdo de lá, se necessário. Você também pode ativar a política de retenção novamente durante o período de cortesia e nenhum conteúdo será excluído para essa política. Esse período de cortesia é configurável usando o PowerShell.
+
+Primeiro, [conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Em seguida, execute esse script do PowerShell. Você pode definir a `ip_tenantGracePeriodInDays` propriedade nas configurações de assinatura do locatário em qualquer valor entre 0 a 100 dias. Se você definir essa configuração como 0, não haverá período de cortesia e qualquer política de retenção será liberada imediatamente. 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+O período de cortesia de 30 dias no SharePoint e no OneDrive corresponde à retenção por atraso de 30 dias no Exchange. Para saber mais, confira [Gerenciar caixas de correios em retenção por atraso](https://docs.microsoft.com/pt-BR/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Os princípios de retenção ou o que tem precedência?
 
 É possível ou até mesmo provável que o conteúdo tenha várias políticas de retenção aplicadas a ele, cada uma com uma ação diferente (manter, excluir ou ambas) e o período de retenção. O que tem precedência? No nível mais alto, esteja certo de que o conteúdo retido por uma política não pode ser excluído permanentemente por outra política.
