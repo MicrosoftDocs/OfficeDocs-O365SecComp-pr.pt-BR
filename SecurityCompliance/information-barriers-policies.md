@@ -3,7 +3,7 @@ title: Definir políticas de barreira de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como definir políticas para barreiras de informações no Microsoft Teams.
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131375"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203730"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir políticas para barreiras de informação (versão prévia)
 
@@ -29,20 +29,6 @@ Este artigo descreve como planejar, definir, implementar e gerenciar políticas 
 > [!TIP]
 > Este artigo inclui um [cenário de exemplo](#example-contosos-departments-segments-and-policies) e uma [pasta de trabalho do Excel baixável](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) para ajudá-lo a planejar e definir suas políticas de barreira de informações.
 
-## <a name="concepts-of-information-barrier-policies"></a>Conceitos de políticas de barreira de informações
-
-É útil saber os conceitos subjacentes das políticas de barreira de informações:
-
-- Os **atributos da conta de usuário** são definidos no Azure Active Directory (ou no Exchange Online). Esses atributos podem incluir departamento, cargo, local, nome da equipe e outros detalhes do perfil de trabalho. 
-
-- Os **segmentos** são conjuntos de usuários que são definidos no centro de conformidade & segurança do Office 365 usando um **atributo de conta de usuário**selecionado. (Confira a [lista de atributos com suporte](information-barriers-attributes.md).) 
-
-- **As políticas de barreira de informações** determinam limites ou restrições de comunicação. Ao definir políticas de barreira de informações, escolha um dos dois tipos de políticas:
-    - As políticas de "bloqueio" impedem um segmento de se comunicar com outro segmento.
-    - As políticas de "permitir" permitem que um segmento se comunique apenas com determinados segmentos.
-
-- O **aplicativo de política** é feito após a definição de todas as políticas de barreira de informações e você está pronto para aplicá-las em sua organização.
-
 ## <a name="the-work-flow-at-a-glance"></a>O fluxo de trabalho em um relance
 
 |Fase    |O que está envolvido  |
@@ -51,7 +37,7 @@ Este artigo descreve como planejar, definir, implementar e gerenciar políticas 
 |[Parte 1: segmentar usuários em sua organização](#part-1-segment-users)     |– Determinar quais políticas são necessárias<br/>-Criar uma lista de segmentos para definir<br/>– Identificar quais atributos usar<br/>-Definir segmentos em termos de filtros de política        |
 |[Parte 2: definir as políticas de barreira de informações](#part-2-define-information-barrier-policies)     |-Definir suas políticas (não se aplica ainda)<br/>-Escolha entre dois tipos (bloquear ou permitir) |
 |[Parte 3: aplicar políticas de barreira de informações](#part-3-apply-information-barrier-policies)     |-Definir políticas para status ativo<br/>– Executar o aplicativo de política<br/>-Exibir status da política         |
-|(Conforme necessário) [Editar um segmento ou uma política](#edit-a-segment-or-a-policy)     |-Editar um segmento<br/>– Editar ou remover uma política<br/>– Executar o aplicativo de política<br/>-Exibir status da política         |
+|(Conforme necessário) [Editar um segmento ou uma política](information-barriers-edit-segments-policies.md.md)    |-Editar um segmento<br/>– Editar ou remover uma política<br/>– Execute novamente o aplicativo de política<br/>-Exibir status da política         |
 |(Conforme necessário) [Solução de problemas](information-barriers-troubleshooting.md)|-Tomar medidas quando as coisas não estiverem funcionando conforme o esperado|
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -113,38 +99,44 @@ Determine quais atributos dos dados de diretório da sua organização você usa
 
 ### <a name="define-segments-using-powershell"></a>Definir segmentos usando o PowerShell
 
-A definição de segmentos não afeta os usuários; Ele apenas define o estágio para que as políticas de barreira de informações sejam definidas e, em seguida, aplicadas.
-
-Para definir um segmento organizacional, use o cmdlet **New-OrganizationSegment** com o parâmetro **UserGroupFilter** que corresponde ao [atributo](information-barriers-attributes.md) que você deseja usar.
-
-Possuem`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-Exemplo: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-Neste exemplo, um segmento chamado *HR* é definido usando *HR*, um valor no atributo *Department* . A parte "-eq" do cmdlet se refere a "igual a".
-
-Repita esse processo para cada segmento que você deseja definir.
-
-Após executar cada cmdlet, você verá uma lista de detalhes sobre o novo segmento. Os detalhes incluem o tipo do segmento, que o criou ou modificou pela última vez, e assim por diante. 
-
 > [!IMPORTANT]
 > Certifique-se de **que seus segmentos não se**sobreponham. Cada usuário que será afetado por barreiras de informação deve pertencer a um único segmento (e apenas um). Nenhum usuário deve pertencer a dois ou mais segmentos. (Consulte [exemplo: segmentos definidos pela contoso](#contosos-defined-segments) neste artigo.)
 
-Após ter definido seus segmentos, vá para definir políticas de barreira de informações.
+A definição de segmentos não afeta os usuários; Ele apenas define o estágio para que as políticas de barreira de informações sejam definidas e, em seguida, aplicadas.
+
+1. Use o cmdlet **New-OrganizationSegment** com o parâmetro **UserGroupFilter** que corresponde ao [atributo](information-barriers-attributes.md) que você deseja usar.
+    
+    Possuem`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    Exemplo: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    Neste exemplo, um segmento chamado *HR* é definido usando *HR*, um valor no atributo *Department* . A parte **-EQ** do cmdlet se refere a "igual a". (Como alternativa, você pode usar **-ne** para significar "não é igual a". Consulte [usar "igual a" e "não é igual a" em definições de segmento](#using-equals-and-not-equals-in-segment-definitions).
+
+    Após executar cada cmdlet, você verá uma lista de detalhes sobre o novo segmento. Os detalhes incluem o tipo do segmento, que o criou ou modificou pela última vez, e assim por diante. 
+
+2. Repita esse processo para cada segmento que você deseja definir.
+
+Após ter definido seus segmentos, vá para [definir políticas de barreira de informações](#part-2-define-information-barrier-policies).
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Usando "igual a" e "não é igual a" nas definições de segmento
 
-No primeiro exemplo mostrado acima, definimos um segmento de tal forma que "departamento é igual a HR". Esse segmento incluiu um parâmetro "Equals". Você também pode definir segmentos usando um parâmetro "not Equals", conforme mostrado no exemplo a seguir:
+No exemplo a seguir, estamos definindo um segmento de forma que "departamento seja igual a HR". 
 
-Possuem`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**Exemplo**: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-Exemplo: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+Observe que a definição de segmento inclui um parâmetro "Equals" indicado como **-EQ**. 
 
-Neste exemplo, definimos um segmento chamado minhas vendas que inclui todos os que não estão em vendas. A parte "-ne" do cmdlet se refere a "não é igual a".
+Você também pode definir segmentos usando um parâmetro "not Equals", indicado como **-ne**, conforme mostrado no exemplo a seguir:
 
-Além disso, você pode definir um segmento usando os parâmetros "Equals" e "not Equals".
+**Sintaxe**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-Exemplo: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**Exemplo**: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+Neste exemplo, definimos um segmento chamado minhas *vendas* que inclui todos os que não estão em *vendas*. A parte **-ne** do cmdlet se refere a "não é igual a".
+
+Além de definir os segmentos usando "igual a" ou "não é igual a", você pode definir um segmento usando os parâmetros "Equals" e "not Equals".
+
+**Exemplo**: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 Neste exemplo, definimos um segmento chamado *LocalFTE* que inclui pessoas que estão localizadas localmente e cujas posições não estão listadas ** como temporárias.
 
@@ -250,117 +242,6 @@ Com o PowerShell, você pode exibir o status de contas de usuário, segmentos, p
 |O aplicativo de política de barreira de informações mais recente     | Use o cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Possuem`Get-InformationBarrierPoliciesApplicationStatus`<p>    Isso exibirá informações sobre se o aplicativo de política foi concluído, falhou ou está em andamento.       |
 |Todos os aplicativos de política de barreira de informações|Use`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Isso exibirá informações sobre se o aplicativo de política foi concluído, falhou ou está em andamento.|
 
-## <a name="stop-a-policy-application"></a>Parar um aplicativo de política
-
-Se, depois de começar a aplicar as políticas de barreira de informações, você quiser impedir que essas políticas sejam aplicadas, use o procedimento a seguir. Tenha em mente que levará aproximadamente 30-35 minutos para que o processo seja iniciado.
-
-1. Para exibir o status do aplicativo de política de barreira de informações mais recente, use o cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
-
-    Possuem`Get-InformationBarrierPoliciesApplicationStatus`
-
-    Observe o GUID do aplicativo.
-
-2. Use o cmdlet **Stop-InformationBarrierPoliciesApplication** com um parâmetro Identity.
-
-    Possuem`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Exemplo: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    Neste exemplo, estamos interrompendo as políticas de barreira de informações de serem aplicadas.
-
-## <a name="edit-a-segment-or-a-policy"></a>Editar um segmento ou uma política
-
-### <a name="edit-a-segment"></a>Editar um segmento
-
-1. Para exibir todos os segmentos existentes, use o cmdlet **Get-OrganizationSegment** .
-    
-    Possuem`Get-OrganizationSegment`
-
-    Você verá uma lista de segmentos e detalhes para cada um, como tipo de segmento, seu valor UserGroupFilter, que o criou ou modificou pela última vez, GUID e assim por diante.
-
-    > [!TIP]
-    > Imprima ou salve sua lista de segmentos para referência posterior. Por exemplo, se quiser editar um segmento, você precisará saber seu nome ou identificar o valor (usado com o parâmetro Identity).
-
-2. Para editar um segmento, use o cmdlet **set-OrganizationSegment** com o parâmetro **Identity** e detalhes relevantes. 
-
-    Possuem`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Exemplo: `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    Neste exemplo, para o segmento que tem o GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*, atualizamos o nome do departamento para "HRDept".
-
-Quando terminar de editar os segmentos da sua organização, você poderá [definir](#part-2-define-information-barrier-policies) ou [Editar](#edit-a-policy) as políticas de barreira de informações.
-
-### <a name="edit-a-policy"></a>Editar uma política
-
-1. Para exibir uma lista de políticas de barreira de informações atuais, use o cmdlet **Get-InformationBarrierPolicy** .
-
-    Possuem`Get-InformationBarrierPolicy`
-
-    Na lista de resultados, identifique a política que você deseja alterar. Observe o GUID e o nome da política.
-
-2. Use o cmdlet **set-InformationBarrierPolicy** com um parâmetro **Identity** e especifique as alterações que deseja fazer.
-
-    Exemplo: Suponha que uma política foi definida para bloquear o segmento de *pesquisa* de se comunicar com os segmentos *vendas* e *marketing* . A política foi definida usando este cmdlet:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    Suponha que queremos alterá-lo para que as pessoas no segmento de *pesquisa* só possam se comunicar com pessoas no segmento de *RH* . Para fazer essa alteração, usamos este cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    Neste exemplo, alteramos "SegmentsBlocked" para "SegmentsAllowed" e especificamos o segmento *HR* .
-
-3. Quando terminar de editar uma política, certifique-se de aplicar as alterações. (Consulte [aplicar políticas de barreira de informações](#part-3-apply-information-barrier-policies).)
-
-### <a name="remove-a-policy"></a>Remover uma política
-
-1. Para exibir uma lista de políticas de barreira de informações atuais, use o cmdlet **Get-InformationBarrierPolicy** .
-
-    Possuem`Get-InformationBarrierPolicy`
-
-    Na lista de resultados, identifique a política que você deseja remover. Observe o GUID e o nome da política. Certifique-se de que a política está definida como status inativo.
-
-2. Use o cmdlet **Remove-InformationBarrierPolicy** com um parâmetro Identity.
-
-    Possuem`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Exemplo: Suponha que queremos remover uma política com GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. Para fazer isso, usamos este cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    Quando solicitado, confirme a alteração.
-
-3. Repita as etapas 1-2 para cada política que você deseja remover.
-
-4. Quando terminar de remover as políticas, aplique as alterações. Para fazer isso, use o cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Possuem`Start-InformationBarrierPoliciesApplication`
-
-    As alterações são aplicadas, usuário por usuário, para sua organização. Se sua organização for grande, pode levar 24 horas (ou mais) para que esse processo seja concluído.
-
-### <a name="set-a-policy-to-inactive-status"></a>Definir uma política para o status inativo
-
-1. Para exibir uma lista de políticas de barreira de informações atuais, use o cmdlet **Get-InformationBarrierPolicy** .
-
-    Possuem`Get-InformationBarrierPolicy`
-
-    Na lista de resultados, identifique a política que você deseja alterar (ou remover). Observe o GUID e o nome da política.
-
-2. Para definir o status da política como inativo, use o cmdlet **set-InformationBarrierPolicy** com um parâmetro Identity e o parâmetro State definido como inativo.
-
-    Possuem`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    Neste exemplo, definimos uma política de barreira de informações que tem o GUID *43c37853-ea10-4b90-a23d-ab8c9377247* para um status inativo.
-
-3. Para aplicar suas alterações, use o cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Possuem`Start-InformationBarrierPoliciesApplication`
-
-    As alterações são aplicadas, usuário por usuário, para sua organização. Se sua organização for grande, pode levar 24 horas (ou mais) para que esse processo seja concluído. (Como uma diretriz geral, leva cerca de uma hora para processar as contas de usuário 5.000.)
-
-Neste ponto, uma ou mais políticas de barreira de informações estão definidas para o status inativo. A partir daqui, você pode fazer o seguinte:
-- Mantê-lo como está (uma política definida como status inativo não tem efeito sobre os usuários)
-- [Editar uma política](#edit-a-policy) 
-- [Remover uma política](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemplo: departamentos, segmentos e políticas da contoso
 
@@ -414,6 +295,8 @@ Com segmentos e políticas definidas, a contoso aplica as políticas executando 
 Quando isso é concluído, a contoso é compatível com os requisitos jurídicos e do setor.
 
 ## <a name="related-articles"></a>Artigos relacionados
+
+[Editar ou remover políticas de barreira de informações (visualização)](information-barriers-edit-segments-policies.md.md)
 
 [Obter uma visão geral das barreiras de informação](information-barriers.md)
 

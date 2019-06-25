@@ -3,7 +3,7 @@ title: Solucionando problemas de barreiras de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artigo como um guia para solucionar problemas de barreiras de informações.
-ms.openlocfilehash: b88f97cd872d4ea3b95bfac049f47cd71dfb2cb2
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: e8750358aaa7788c85f0ab656b30f5b5149d898c
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131345"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199508"
 ---
 # <a name="troubleshooting-information-barriers-preview"></a>Solucionando problemas de barreiras de informações (versão prévia)
 
@@ -24,55 +24,54 @@ ms.locfileid: "35131345"
 
 No caso de as pessoas funcionarem em problemas inesperados depois que as barreiras de informações estiverem vigentes, há algumas etapas que você pode executar para resolver esses problemas. Use este artigo como uma guia.
 
+> [!IMPORTANT]
+> Para executar as tarefas descritas neste artigo, você deve receber uma função apropriada, como uma das seguintes:<br/>– Administrador global do Microsoft 365 Enterprise<br/>– Administrador global do Office 365<br/>-Administrador de conformidade<br/>– Gerenciamento de conformidade do IB (esta é uma nova função!)<p>Para saber mais sobre os pré-requisitos para barreiras de informações, consulte [pré-requisitos (para políticas de barreira de informações)](information-barriers-policies.md#prerequisites).<p>Certifique-se de [se conectar ao PowerShell do centro de conformidade & segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-## <a name="before-you-begin"></a>Antes de começar...
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problema: as comunicações são permitidas entre usuários que devem ser bloqueados no Microsoft Teams
 
-Para executar as tarefas descritas neste artigo, você deve receber uma função apropriada, como uma das seguintes:
-- Administrador global do Microsoft 365 Enterprise
-- Administrador global do Office 365
-- Administrador de Conformidade
-- Gerenciamento de conformidade IB (esta é uma nova função!)
-
-Para saber mais sobre os pré-requisitos para barreiras de informações, consulte [pré-requisitos (para políticas de barreira de informações)](information-barriers-policies.md#prerequisites).
-
-Certifique-se de [se conectar ao PowerShell do centro de conformidade & segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
-
-## <a name="issue-communications-are-still-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problema: as comunicações ainda são permitidas entre usuários que devem ser bloqueados no Microsoft Teams
-
-Nesse caso, embora as barreiras de informação sejam definidas, ativas e aplicadas, as pessoas que devem ser impedidas de se comunicar umas com as outras ainda podem no Microsoft Teams.
+Nesse caso, embora as barreiras de informação sejam definidas, ativas e aplicadas, as pessoas que devem ser impedidas de se comunicar entre si estão de alguma forma no Microsoft Teams.
 
 ### <a name="what-to-do"></a>O que fazer
 
-Verifique se os usuários em questão estão incluídos em uma política de barreira de informações. Use o cmdlet **Get-InformationBarrierRecipientStatus** com parâmetros de identidade.
+Verifique se os usuários em questão estão incluídos em uma política de barreira de informações. 
 
-Possuem`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
+1. Use o cmdlet **Get-InformationBarrierRecipientStatus** com parâmetros de identidade.
 
-Você pode usar qualquer valor que identifique exclusivamente cada usuário, como nome, alias, nome diferenciado, nome de domínio canônico, endereço de email ou GUID. 
+    Possuem`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
 
-Exemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
+    Você pode usar qualquer valor que identifique exclusivamente cada usuário, como nome, alias, nome diferenciado, nome de domínio canônico, endereço de email ou GUID. 
 
-Neste exemplo, nos referimos a duas contas de usuário no Office 365: *meganb* para *Megan*e *alexw* para *Alex*. 
+    Exemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
 
-(Você também pode usar esse cmdlet para um único usuário: `Get-InformationBarrierRecipientStatus -Identity <value>`) esse cmdlet retorna informações sobre os usuários, como valores de atributo e quaisquer políticas de barreira de informação aplicadas.
+    Neste exemplo, nos referimos a duas contas de usuário no Office 365: *meganb* para *Megan*e *alexw* para *Alex*. 
+    
+    > [!TIP]
+    > Você também pode usar esse cmdlet para um único usuário:`Get-InformationBarrierRecipientStatus -Identity <value>`
+    
+2. Revise as descobertas. O cmdlet **Get-InformationBarrierRecipientStatus** retorna informações sobre os usuários, como valores de atributo e quaisquer políticas de barreira de informação aplicadas. 
 
-
-|Resultados  |Próximas etapas  |
-|---------|---------|
-|Nenhum segmento está listado para os usuários selecionados     |Siga um destes procedimentos:<br/>-Atribuir usuários a um segmento existente editando seus perfis de usuário no Azure Active Directory<br/>-Definir um segmento usando um [atributo com suporte para barreiras de informação](information-barriers-attributes.md)         |
-|Os segmentos estão listados, mas nenhuma política de barreira de informações é atribuída a esses segmentos     |Siga um destes procedimentos:<br/>- [Definir uma política de barreira de informações](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento em questão<br/>- [Editar uma política de barreira de informações](information-barriers-policies.md#edit-a-policy) e atribuí-la ao segmento correto         |
-|Os segmentos são listados e cada um é incluído em uma política de barreira de informações     |– Execute o `Get-InformationBarrierPolicy` cmdlet para verificar se as políticas de barreira de informações estão ativas<br/>– Execute o `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que as políticas foram aplicadas<br/>– Execute o `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas as políticas de barreira de informações ativas          |
-
+    Revise os resultados e siga as próximas etapas, conforme descrito na tabela a seguir:
+    
+    |Resultados  |Próximas etapas  |
+    |---------|---------|
+    |Nenhum segmento está listado para os usuários selecionados     |Siga um destes procedimentos:<br/>– Atribua usuários a um segmento existente editando seus perfis de usuário no Azure Active Directory. (Consulte [Configurar Propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Definir um segmento usando um [atributo com suporte para barreiras de informação](information-barriers-attributes.md). Em seguida, [defina uma nova política](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [edite uma política existente](information-barriers-edit-segments-policies.md.md#edit-a-policy) para incluir esse segmento.  |
+    |Os segmentos estão listados, mas nenhuma política de barreira de informações é atribuída a esses segmentos     |Siga um destes procedimentos:<br/>- [Definir uma nova política de barreira de informações](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento em questão<br/>- [Editar uma política de barreira de informações existente](information-barriers-edit-segments-policies.md.md#edit-a-policy) para atribuí-la ao segmento correto         |
+    |Os segmentos são listados e cada um é incluído em uma política de barreira de informações     |– Execute o `Get-InformationBarrierPolicy` cmdlet para verificar se as políticas de barreira de informações estão ativas<br/>– Execute o `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que as políticas foram aplicadas<br/>– Execute o `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas as políticas de barreira de informações ativas          |
+    
 
 ## <a name="issue-people-are-unexpectedly-blocked-from-communicating-in-microsoft-teams"></a>Problema: as pessoas estão inesperadamente impedidas de se comunicar no Microsoft Teams 
 
-Nesse caso, as pessoas estão relatando problemas inesperados ao se comunicar no Microsoft Teams. Exemplos:
-- Um usuário não consegue encontrar ou se comunicar com outro usuário no Microsoft Teams.
-- Um usuário não pode ver ou selecionar outro usuário no Microsoft Teams.
+Nesse caso, as pessoas estão relatando problemas inesperados ao se comunicar com outras pessoas no Microsoft Teams. Exemplos:
+- Um usuário não consegue localizar outro usuário no Microsoft Teams.
+- Um usuário não pode selecionar outro usuário no Microsoft Teams.
 - Um usuário pode ver outro usuário, mas não pode selecionar ou enviar mensagens para esse outro usuário no Microsoft Teams.
+- Um usuário pode ver e selecionar outro usuário, mas não pode se comunicar com esse usuário no Microsoft Teams.
 
 ### <a name="what-to-do"></a>O que fazer
 
-1. Determinar se os usuários são afetados por uma política de barreira de informações. Para fazer isso, use o cmdlet **Get-InformationBarrierRecipientStatus** com o parâmetro Identity. 
+Determinar se os usuários são afetados por uma política de barreira de informações.
+
+1. Use o cmdlet **Get-InformationBarrierRecipientStatus** com o parâmetro Identity. 
 
     A sintaxe é`Get-InformationBarrierRecipientStatus -Identity`
 
@@ -109,7 +108,7 @@ Nesse caso, as pessoas estão relatando problemas inesperados ao se comunicar no
 
     Neste exemplo, estamos obtendo informações sobre o segmento que tem GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*.
 
-    Revise os detalhes do segmento. Se necessário, [edite um segmento](information-barriers-policies.md#edit-a-segment)e, em seguida, use `Start-InformationBarrierPoliciesApplication` o cmdlet novamente.
+    Revise os detalhes do segmento. Se necessário, [edite um segmento](information-barriers-edit-segments-policies.md.md#edit-a-segment)e, em seguida, use `Start-InformationBarrierPoliciesApplication` o cmdlet novamente.
 
     Se você ainda estiver tendo problemas com a política de barreira de informações, entre em contato com o suporte.
     
@@ -135,7 +134,7 @@ Tenha em mente que quando você executa o cmdlet aplicativo de política, as pol
     |Status  |Próxima etapa  |
     |---------|---------|
     |**Não iniciado**     |Se tiver sido mais de 45 minutos desde que o cmdlet **Start-InformationBarrierPoliciesApplication** foi executado, revise o log de auditoria para ver se há algum erro nas definições de política ou outro motivo pelo qual o aplicativo não foi iniciado. |
-    |**Falhou**     |Se o aplicativo falhou, revise o log de auditoria. Além disso, revise seus segmentos e políticas. Há usuários atribuídos a mais de um segmento? Há segmentos atribuídos a mais de um poliicy? Se necessário, [edite segmentos](information-barriers-policies.md#edit-a-segment) e/ou [edite políticas](information-barriers-policies.md#edit-a-policy)e, em seguida, execute o cmdlet **Start-InformationBarrierPoliciesApplication** novamente.  |
+    |**Falhou**     |Se o aplicativo falhou, revise o log de auditoria. Além disso, revise seus segmentos e políticas. Há usuários atribuídos a mais de um segmento? Há segmentos atribuídos a mais de um poliicy? Se necessário, [edite segmentos](information-barriers-edit-segments-policies.md.md#edit-a-segment) e/ou [edite políticas](information-barriers-edit-segments-policies.md.md#edit-a-policy)e, em seguida, execute o cmdlet **Start-InformationBarrierPoliciesApplication** novamente.  |
     |**Em andamento**     |Se o aplicativo ainda estiver em andamento, permita que mais tempo seja concluído. Se houver vários dias, reúna seus logs de auditoria e entre em contato com o suporte. |
 
 ## <a name="related-topics"></a>Tópicos relacionados
