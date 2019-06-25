@@ -27,7 +27,7 @@
 # [Proteger informações](protect-information.md)
 ## [Rótulos de confidencialidade](sensitivity-labels.md)
 ### [Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade](encryption-sensitivity-labels.md)
-### [Aplicar um rótulo de confidencialidade automaticamente ao conteúdo](apply_sensitivity_label_automatically.md)
+### [Aplicar um rótulo de confidencialidade automaticamente ao conteúdo](apply-sensitivity-label-automatically.md)
 ### [Exibição do uso do rótulo com análises de rótulo](label-analytics.md)
 
 ## [Evitar a perda de dados (DLP)](data-loss-prevention-policies.md)
@@ -538,6 +538,8 @@
 ### [Definir políticas de barreira de informações (visualização)](information-barriers-policies.md)
 ### [Atributos das políticas de barreira de informações (visualização)](information-barriers-attributes.md)
 ### [Solucionando problemas de barreiras de informações (visualização)](information-barriers-troubleshooting.md)
+### [Editar ou remover políticas de barreiras de informações (visualização)](information-barriers-edit-segments-policies.md.md)
+
 
 ## Chave do Cliente
 ### [Controlar seus dados no Office 365 usando a Chave do cliente](controlling-your-data-using-customer-key.md)
