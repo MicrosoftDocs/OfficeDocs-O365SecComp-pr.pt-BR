@@ -3,7 +3,7 @@ title: Investigação e resposta automatizadas (AIR) com o Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Saiba mais sobre os recursos de investigação e resposta automatizados do Office 365 proteção avançada contra ameaças.
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852615"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233328"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigação e resposta automatizadas (AIR) com o Office 365
 
@@ -37,7 +37,8 @@ Na versão inicial do AIR em abril de 2019, os alertas gerados a partir das segu
 3. Mensagens de email contendo malware removidos após a entrega *
 4. Mensagens de email que contêm URLs de phishing removidos após a entrega *
 
-***Observação**: esses alertas receberam uma severidade "informativa" nas respectivas políticas de alerta dentro do centro de conformidade & segurança com notificações por email desativadas. Eles podem ser ativados por meio da configuração da política de alerta.
+> [!NOTE]
+> Esses alertas receberam uma severidade "informativa" nas respectivas políticas de alerta dentro do centro de conformidade & segurança com notificações por email desativadas. Eles podem ser ativados por meio da configuração da política de alerta.
 
 Para exibir alertas, no centro de conformidade & segurança, escolha **alertas** > **exibir alertas**. Selecione um alerta para exibir seus detalhes e, em seguida, use o link **Exibir investigação** para ir para a [investigação](#investigation-graph)correspondente. Observe que os alertas informativos ficam ocultos no modo de exibição de alerta por padrão. Para vê-los, você precisa alterar a filtragem de alerta para incluir alertas informativos.
 
@@ -56,18 +57,14 @@ Os guias de segurança que você receberá com o AIR são projetados para lidar 
 
 Como parte do AIR, os guias de segurança são implantados em fases
 
-- **Fase 1 (abril de 2019)**: os guias estratégicos incluem recomendações para ações que os administradores de segurança revisam e aprovam. 
+- **Fase 1 (abril de 2019)**: os guias estratégicos incluem recomendações para ações que os administradores de segurança revisam e aprovam. A fase 1 incluirá os seguintes guias estratégicos:
+    - Mensagem de phishing relatada pelo usuário
+    - URL clique em alterar veredicto 
+    - Malware detectado após a entrega (malware ZAP)
+    - O phishing detectou o post-Delivery ZAP (Phish ZAP)
+    - Investigações de email manuais (usando o explorador de ameaças)
 
-- **Fase 2 (post-junho de 2019)**: melhorias de guias estratégicos, além disso, os administradores de segurança terão a opção de configurar os guias de segurança para realizar algumas ações automaticamente sem a interação administrativa.
-
-A fase 1 incluirá os seguintes guias estratégicos:
-- Mensagem de phishing relatada pelo usuário
-- URL clique em alterar veredicto 
-- Malware detectado após a entrega (malware ZAP)
-- O phishing detectou o post-Delivery ZAP (Phish ZAP)
-- Investigações de email manuais (usando o explorador de ameaças)
-
-Vários outros guias estratégicos estão planejados para a fase 2.
+- **Fase 2 (segunda metade de 2019)**: vários guias estratégicos e melhorias de guias estratégicos, além da opção para que os administradores de segurança configurem os guias de segurança para realizar algumas ações automaticamente sem interação administrativa. 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Os guias estratégicos incluem investigação e recomendações
 
