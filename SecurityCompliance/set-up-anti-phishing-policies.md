@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Proteção contra phishing, com proteção abrangente como parte do Office 365 proteção avançada contra ameaças e proteção básica no Office 365 proteção do Exchange Online, pode ajudar a proteger sua organização contra ataques de phishing baseados em representação mal-intencionada. e outros ataques de phishing.
-ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: f73c4404c2ff2f347bc770176e5b6b25e03af88c
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408366"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279449"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a> Configurar políticas antiphishing e antiphishing da ATP do Office 365
 
@@ -37,6 +37,9 @@ O que fazer:
 2. Saiba mais sobre as opções de política anti-phishing e de anti-phishing da ATP.
 
 3. Configurar uma política de anti-phishing ou uma política anti-phishing do ATP.
+
+>[!IMPORTANT]
+> Para saber como várias tecnologias são aplicadas, consulte [como as políticas e proteções são combinadas](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Revisar os pré-requisitos
 
