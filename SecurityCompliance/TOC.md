@@ -331,7 +331,7 @@
 #### [Correção de erros durante o processamento de dados](compliance20/error-remediation.md)
 
 ### [Coleta de dados para uma ocorrência](compliance20/collecting-data-for-ediscovery.md)
-#### [Criar uma pesquisa para coletar dados](compliance20/create-search-to-collect-data.md)
+#### [Criar uma pesquisa](compliance20/create-search-to-collect-data.md)
 #### [Criar consultas de pesquisa](compliance20/building-search-queries.md)
 #### [Estatísticas de pesquisa](compliance20/search-statistics.md)
 #### [Adicionar os resultados da pesquisa a um conjunto de revisão](compliance20/add-data-to-review-set.md)
@@ -538,7 +538,7 @@
 ### [Definir políticas de barreira de informações (visualização)](information-barriers-policies.md)
 ### [Atributos das políticas de barreira de informações (visualização)](information-barriers-attributes.md)
 ### [Solucionando problemas de barreiras de informações (visualização)](information-barriers-troubleshooting.md)
-### [Editar ou remover políticas de barreiras de informações (visualização)](information-barriers-edit-segments-policies.md.md)
+### [Editar políticas de barreira de informações (visualização)](information-barriers-edit-segments-policies.md.md)
 
 
 ## Chave do Cliente
