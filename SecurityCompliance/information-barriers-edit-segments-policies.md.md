@@ -1,9 +1,9 @@
 ---
-title: Editar ou remover políticas de barreira de informações
+title: Editar políticas de barreira de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,29 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como editar ou remover políticas para barreiras de informação.
-ms.openlocfilehash: e6bed4df2329d426f86bd4cde07bdc7d1a2792cd
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35215644"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394326"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Editar ou remover políticas de barreira de informações (visualização)
-
-## <a name="overview"></a>Visão geral
+# <a name="edit-or-remove-information-barrier-policies-preview"></a>Editar (ou remover) políticas de barreira de informações (visualização)
 
 Depois de [definir as políticas de barreira de informações](information-barriers-policies.md), talvez seja necessário fazer alterações nas políticas ou nos segmentos de usuário, como parte da [solução de problemas](information-barriers-troubleshooting.md) ou de manutenção regular. Use este artigo como uma guia.
+
+## <a name="what-do-you-want-to-do"></a>O que você deseja fazer?
+
+|Ação  |Descrição |
+|---------|---------|
+|[Editar atributos da conta de usuário](#edit-user-account-attributes)     |Preencha os atributos no Azure Active Directory que podem ser usados para definir segmentos.<br/>Editar os atributos da conta de usuário quando os usuários não estão incluídos nos segmentos que devem ser, para alterar quais segmentos os usuários estão ou para definir segmentos usando atributos diferentes.         |
+|[Editar um segmento](#edit-a-segment)     |Edite segmentos quando você quiser alterar o modo como um segmento é definido. <br/>Por exemplo, você pode ter originalmente definido segmentos usando *Departamento* e agora deseja usar outro atributo, como *memberOf*.         |
+|[Editar uma política](#edit-a-policy)     |Edite uma política de barreira de informações quando quiser alterar a forma como uma política funciona.<br/>Por exemplo, em vez de bloquear comunicações entre dois segmentos, você pode decidir permitir que as comunicações ocorram apenas entre determinados segmentos.         |
+|[Definir uma política para o status inativo](#set-a-policy-to-inactive-status)     |Defina uma política como status inativo quando você quiser fazer alterações em uma política ou quando não quiser que uma política entre em vigor.         |
+|[Remover uma política](#remove-a-policy)     |Remova uma política de barreira de informações quando não precisar mais de uma determinada política no local.         |
+|[Parar um aplicativo de política](#stop-a-policy-application)     |Faça isso quando você quiser interromper o processo de aplicação de políticas de barreira de informações.<br/>Observe que a interrupção de um aplicativo de política não é instantânea e não desfaz políticas já aplicadas aos usuários.         |
+|[Definir políticas para barreiras de informação (versão prévia)](information-barriers-policies.md)     |Defina uma política de barreira de informações quando você ainda não tiver essas políticas funcionando, e você deve restringir ou limitar a comunicação entre grupos de usuários específicos.         |
+|[Solucionando problemas de barreiras de informações (versão prévia)](information-barriers-troubleshooting.md)     |Consulte este artigo quando você tiver problemas inesperados com barreiras de informação.         |
 
 > [!IMPORTANT]
 > Para executar as tarefas descritas neste artigo, você deve receber uma função apropriada, como uma das seguintes:<br/>– Administrador global do Microsoft 365 Enterprise<br/>– Administrador global do Office 365<br/>-Administrador de conformidade<br/>– Gerenciamento de conformidade do IB (esta é uma nova função!)<p>Para saber mais sobre os pré-requisitos para barreiras de informações, consulte [pré-requisitos (para políticas de barreira de informações)](information-barriers-policies.md#prerequisites).<p>Certifique-se de [se conectar ao PowerShell do centro de conformidade & segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -37,16 +48,10 @@ Os atributos da conta de usuário são usados para definir os segmentos de modo 
 
 1. Para exibir detalhes de uma conta de usuário específica, como valores de atributo e segmentos atribuídos, use o cmdlet **Get-InformationBarrierRecipientStatus** com parâmetros de identidade. 
 
-   Possuem`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
-    
-   Você pode usar qualquer valor que identifique exclusivamente cada usuário, como nome, alias, nome diferenciado, nome de domínio canônico, endereço de email ou GUID. 
-    
-   Exemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
-    
-   Neste exemplo, nos referimos a duas contas de usuário no Office 365: *meganb* para *Megan*e *alexw* para *Alex*. 
-    
-   (Você também pode usar esse cmdlet para um único usuário: `Get-InformationBarrierRecipientStatus -Identity <value>`) 
-    
+    |Sintaxe  |Exemplo  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Você pode usar qualquer valor que identifique exclusivamente cada usuário, como nome, alias, nome diferenciado, nome de domínio canônico, endereço de email ou GUID. <p>   (Você também pode usar esse cmdlet para um único usuário: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   Neste exemplo, nos referimos a duas contas de usuário no Office 365: *meganb* para *Megan*e *alexw* para *Alex*.         |
+
 2. Determine o atributo que você deseja editar para o (s) perfil (es) da conta de usuário. Consulte [atributos para diretivas de barreira de informações (visualização)](information-barriers-attributes.md) para obter mais detalhes. 
 
 3. Edite uma ou mais contas de usuário para incluir valores para o atributo selecionado na etapa anterior. Para fazer isso, use um dos seguintes procedimentos:
@@ -70,11 +75,9 @@ Use este procedimento para editar a definição de um segmento de usuário. Por 
 
 2. Para editar um segmento, use o cmdlet **set-OrganizationSegment** com o parâmetro **Identity** e detalhes relevantes. 
 
-    Possuem`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Exemplo: `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    Neste exemplo, para o segmento que tem o GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*, atualizamos o nome do departamento para "HRDept".
+    |Sintaxe  |Exemplo  |
+    |---------|---------|
+    |`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`     |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p>Neste exemplo, para o segmento que tem o GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*, atualizamos o nome do departamento para "HRDept".         |
 
 Ao concluir a edição dos segmentos da sua organização, você pode [definir](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [Editar](#edit-a-policy) as políticas de barreira de informações.
 
@@ -106,11 +109,9 @@ Ao concluir a edição dos segmentos da sua organização, você pode [definir](
 
 2. Para definir o status da política como inativo, use o cmdlet **set-InformationBarrierPolicy** com um parâmetro Identity e o parâmetro State definido como inativo.
 
-    Possuem`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    Neste exemplo, definimos uma política de barreira de informações que tem o GUID *43c37853-ea10-4b90-a23d-ab8c9377247* para um status inativo.
+    |Sintaxe  |Exemplo  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Inactive`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p>Neste exemplo, definimos uma política de barreira de informações que tem o GUID *43c37853-ea10-4b90-a23d-ab8c9377247* para um status inativo.         |
 
 3. Para aplicar suas alterações, use o cmdlet **Start-InformationBarrierPoliciesApplication** .
 
@@ -133,11 +134,9 @@ Neste ponto, uma ou mais políticas de barreira de informações estão definida
 
 2. Use o cmdlet **Remove-InformationBarrierPolicy** com um parâmetro Identity.
 
-    Possuem`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Exemplo: Suponha que queremos remover uma política com GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. Para fazer isso, usamos este cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
+    |Sintaxe  |Exemplo  |
+    |---------|---------|
+    |`Remove-InformationBarrierPolicy -Identity GUID`     |`Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <p>Neste exemplo, estamos removendo a política com GUID *43c37853-ea10-4b90-a23d-ab8c93772471*.          |
 
     Quando solicitado, confirme a alteração.
 
@@ -161,11 +160,9 @@ Se, depois de começar a aplicar as políticas de barreira de informações, voc
 
 2. Use o cmdlet **Stop-InformationBarrierPoliciesApplication** com um parâmetro Identity.
 
-    Possuem`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Exemplo: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    Neste exemplo, estamos interrompendo as políticas de barreira de informações de serem aplicadas.
+    |Sintaxe  |Exemplo  |
+    |---------|---------|
+    |`Stop-InformationBarrierPoliciesApplication -Identity GUID`     |`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p>Neste exemplo, estamos interrompendo as políticas de barreira de informações de serem aplicadas.         |
 
 ## <a name="related-articles"></a>Artigos relacionados
 

@@ -3,7 +3,7 @@ title: Explorador de ameaças (e detecções em tempo real)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre o Explorer (e as detecções em tempo real) no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490527"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394346"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de ameaças (e detecções em tempo real)
 
-Se sua organização tem a [proteção avançada contra ameaças do office 365](office-365-atp.md) (Office 365 ATP) e você tem as [permissões necessárias](#required-licenses-and-permissions), você tem as detecções do **Explorer** ou do **tempo real** (anteriormente conhecida como *relatórios em tempo real* , [consulte o que há de novo](#new-features-in-real-time-detections)!). No centro de conformidade do & de segurança, vá para **Gerenciamento de ameaças**e escolha as detecções do **Explorer** ou **em tempo real**. 
+Se sua organização tem a [proteção avançada contra ameaças do office 365](office-365-atp.md) (Office 365 ATP) e você tem as [permissões necessárias](#required-licenses-and-permissions), você tem as detecções do **Explorer** ou do **tempo real** (anteriormente conhecida como *relatórios em tempo real* , [consulte o que há de novo](#new-features-in-real-time-detections)!). No centro de conformidade & segurança, vá para **Gerenciamento de ameaças**e escolha as detecções do **Explorer** ou **em tempo real**. 
 
 |Com o plano ATP 2, você vê:  |Com o plano ATP 1, você vê:  |
 |---------|---------|
@@ -42,26 +42,41 @@ Com esse relatório, você pode:
 
 ## <a name="new-features-in-real-time-detections"></a>Novos recursos em detecções em tempo real
 
-Para clientes do Office 365 ATP Plan 1, o relatório de *detecções em tempo real* era conhecido anteriormente como *relatórios em tempo real*. Além da alteração do nome, vários novos recursos e aprimoramentos estão sendo lançados:
+O Explorer/detecções em tempo real adiciona novos campos criados para dar a você uma visão mais completa de onde seus emails estão no terreno. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
 
-- No modo de exibição phishing, você pode ver mais detalhes sobre URLs detectadas por meio de [links seguros de ATP](atp-safe-links.md). Os novos detalhes e recursos incluem:
-  - URLs em mensagens de email
-  - Filtragem com base nas informações de URL
-  - Informações de URL exibidas em gráficos de dados
-  - Dados de tempo de clique sobre cliques em mensagens
+Como isso é feito? O status de entrega agora é dividido em duas colunas:
 
-- Sempre que houver uma alteração em uma URL, clique em veredicto, você verá um alerta. URL clique em verdicts pode mudar quando a reputação de uma URL muda de post-acionamento ou quando um usuário protegido por links seguros de ATP substitui um [aviso de links seguros de ATP](atp-safe-links-warning-pages.md).  
- 
-Esses aprimoramentos permitem que os administradores de segurança da sua organização vejam mais detalhes do que antes. Os administradores de segurança podem exibir informações sobre domínios de URL, URLs perdidas, clicar em verdicts e mais e ajustar as políticas de ATP do Office 365 apropriadamente.
+- Ação de entrega-qual é o status desse email?
+- Local de entrega-onde esse email foi roteado como resultado?
 
-> [!NOTE]
-> Embora esses recursos estejam em visualização, os dados de URL estarão disponíveis por um número limitado de dias. 
+A ação de entrega é a ação realizada em um email devido a políticas ou detecções existentes. Veja a seguir as possíveis ações que um email pode executar:
+
+|Gerados  |Lixo eletrônico  |Blocked  |Devido  |
+|---------|---------|---------|---------|
+|O email foi entregue à caixa de entrada ou pasta de um usuário, e o usuário pode acessá-lo diretamente.    | O email foi enviado à pasta de lixo eletrônico ou à pasta excluída do usuário, e o usuário tem acesso a emails nessas pastas.       | Todos os emails colocados em quarentena, que falharam ou foram descartados. Isso é completamente inacessível pelo usuário!     | Qualquer email onde anexos mal-intencionados são substituídos por arquivos. txt que indicam que o anexo era mal-intencionado.     |
+
+E aqui está o que o usuário pode ver e o que eles não podem:
+
+|Acessível para os usuários finais  |Inacessível para os usuários finais  |
+|---------|---------|
+|Gerados     | Blocked        |
+|Lixo eletrônico     | Devido        |
+
+O local de entrega mostra os resultados das políticas e detecções que executam post-Delivery. Ele está vinculado a uma ação de entrega. Este campo foi adicionado para dar informações sobre a ação tomada quando um email de problema é encontrado. Estes são os valores de possilbe do local de entrega:
+
+1. Caixa de entrada ou pasta – o email está na caixa de entrada ou uma pasta (de acordo com suas regras de email).
+2. Local ou externo – a caixa de correio não existe na nuvem, mas está no local.
+3. Pasta lixo eletrônico – o email na pasta lixo eletrônico de um usuário.
+4. Pasta itens excluídos – o email na pasta itens excluídos de um usuário.
+5. Quarentena – o email em quarentena e não está na caixa de correio de um usuário.
+6. Falha – o email não pôde chegar à caixa de correio.
+7. Descartado – o email é perdido em algum lugar no fluxo.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Confira malware detectado em email por tecnologia
 
-Suponha que você queira ver o malware detectado no email, pela tecnologia do Office 365. Para fazer isso, use a exibição de [email _GT_ malware](threat-explorer-views.md#email--malware) do Explorer (ou detecções em tempo real).
+Suponha que você queira ver o malware detectado no email, pela tecnologia do Office 365. Para fazer isso, use o [>](threat-explorer-views.md#email--malware) modo de exibição de malware de email do Explorer (ou detecções em tempo real).
 
-1. No centro de conformidade do & de[https://protection.office.com](https://protection.office.com)segurança (), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
+1. No centro de conformidade e segurança &[https://protection.office.com](https://protection.office.com)(), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
 
 2. No menu **Exibir** , escolha**malware**de **email** > .<br/>![Menu Exibir para Explorer](media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -75,9 +90,9 @@ O relatório é atualizado para mostrar o malware de resultados detectado no ema
 
 Suponha que você queira ver as tentativas de phishing por meio de URLs no email, incluindo uma lista de URLs que foram permitidas, bloqueadas e substituídas. A identificação de URLs que foram clicadas requer que os [links seguros de ATP](atp-safe-links.md) sejam configurados. Verifique se você configurou [as políticas de links seguros de ATP](set-up-atp-safe-links-policies.md) para proteção de tempo de clique e log de clique em verdicts por links seguros de ATP. 
 
-Para examinar as URLs de phishing em mensagens e clicar em URLs nas mensagens de phishing, use o [email _GT_ Phish](threat-explorer-views.md#email--phish) View of Explorer (ou detecções em tempo real).
+Para examinar as URLs de phishing em mensagens e clicar em URLs nas mensagens de phishing, use a exibição de [Email > Phish](threat-explorer-views.md#email--phish) do Explorer (ou detecções em tempo real).
 
-1. No centro de conformidade do & de[https://protection.office.com](https://protection.office.com)segurança (), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
+1. No centro de conformidade e segurança &[https://protection.office.com](https://protection.office.com)(), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
 
 2. No menu **Exibir** , escolha**phishing**de **email** > .<br/>![Menu Exibir para Explorer](media/ExplorerViewEmailPhishMenu.png)<br/>
 
@@ -99,9 +114,9 @@ Para examinar as URLs de phishing em mensagens e clicar em URLs nas mensagens de
 
 ## <a name="review-email-messages-reported-by-users"></a>Analisar mensagens de email relatadas por usuários
 
-Suponha que você queira ver as mensagens de email que os usuários em sua organização relataram como lixo eletrônico, não lixo eletrônico ou phishing usando o [suplemento de mensagem de relatório para Outlook e Outlook na Web](enable-the-report-message-add-in.md). Para fazer isso, use a exibição de [email > relatada pelo usuário](threat-explorer-views.md#email--user-reported) do Explorer (ou detecções em tempo real).
+Suponha que você queira ver as mensagens de email que os usuários em sua organização relataram como lixo eletrônico, não lixo eletrônico ou phishing usando o [suplemento de mensagem de relatório para Outlook e Outlook na Web](enable-the-report-message-add-in.md). Para fazer isso, use o [Email > exibição relatada pelo usuário](threat-explorer-views.md#email--user-reported) do Explorer (ou detecções em tempo real).
 
-1. No centro de conformidade do & de[https://protection.office.com](https://protection.office.com)segurança (), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
+1. No centro de conformidade e segurança &[https://protection.office.com](https://protection.office.com)(), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
 
 2. No menu **Exibir** , escolha **email** > **reportado pelo usuário**.<br/>![Menu Exibir para Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
@@ -132,6 +147,7 @@ Além dos cenários descritos neste artigo, você tem muito mais opções de rel
 Você deve ter o [Office 365 ATP](office-365-atp.md) para obter as detecções do Explorer ou em tempo real.
 - O Explorer está incluído no plano 2 do Office 365 ATP. 
 - O relatório de detecções em tempo real está incluído no plano 1 de ATP do Office 365.
+- Planejar a atribuição de licenças para todos os usuários que devem estar protegidos por ATP. (As detecções de Explorer ou em tempo real mostrarão dados de detecção para usuários licenciados.)
 
 Para exibir e usar as detecções do Explorer ou em tempo real, você deve ter as permissões apropriadas, como aquelas concedidas a um administrador de segurança ou leitor de segurança. 
 
