@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
+ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394286"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35414801"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Encontre e investigue emails mal-intencionados que foram entregues (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,9 @@ Para ver as alterações no campo status da entrega anterior (agora, a ação de
 1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365. Isso leva você para o centro &amp; de conformidade de segurança. 
     
 2. No painel de navegação à esquerda, escolha **Gerenciador**de **Gerenciamento** \> de ameaças.
-
-![Captura de tela do explorador de ameaças.](media/Threat Explorer Delivery Action and Delivery Location.PNG)
-
 <!--Comment>
+![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+
     
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   

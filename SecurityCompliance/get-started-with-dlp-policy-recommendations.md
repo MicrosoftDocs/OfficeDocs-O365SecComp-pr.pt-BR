@@ -4,19 +4,19 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Essa recomendação orientada por informações ajuda sua organização a manter o conteúdo confidencial seguro quando ele é armazenado e compartilhado no Office 365, informando quando há uma lacuna possível na cobertura da política de DLP. Você verá essa recomendação na home page do centro de conformidade de &amp; segurança, se seus documentos contiverem qualquer um dos cinco tipos de informações confidenciais mais comuns, mas não estiverem protegidos por uma política de DLP.
-ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 326efb7591ba75ada9eec6a5e61e39e2a1fc09f9
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077967"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introdução às recomendações de política DLP
 

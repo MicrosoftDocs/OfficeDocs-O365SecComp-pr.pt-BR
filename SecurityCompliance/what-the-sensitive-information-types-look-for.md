@@ -3,7 +3,7 @@ title: O que os tipos de informações confidenciais procuram
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 05/20/2019
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -13,13 +13,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: A prevenção de perda de dados (DLP) no centro de conformidade de segurança do Office 365 80 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
-ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 80 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
+ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
+ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077547"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34247294"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>O que os tipos de informações confidenciais procuram
 
@@ -508,17 +508,16 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A soma de verificação passa.
 
 ```
-    <!-- Australia Tax File Number -->
-<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
-    
-  <Pattern confidenceLevel="85">
+   <!-- Australia Tax File Number -->
+    <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
+        <Match idRef="Keyword_Australia_Tax_File_Number" />
         <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_Australia_Tax_File_Number" />
           <Match idRef="Keyword_number_exclusions" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palavras-chave
@@ -4980,7 +4979,7 @@ A cadeia de caracteres "User ID", "User ID", "UID" ou "UserId" seguida dos carac
 - Qualquer combinação entre 1-200 letras minúsculas ou maiúsculas, dígitos, símbolos, caracteres especiais ou espaços
 - A cadeia de caracteres "password" ou "pwd", onde "pwd" não é precedida por uma letra minúscula
 - Um sinal de igual (=)
-- Qualquer caractere que não seja um cifrão ($), símbolo de porcentagem (%), maior que símbolo (>), em símbolo (@), aspas ("), ponto e vírgula (;), chave esquerda ([) ou colchete esquerdo ({)
+- Qualquer caractere que não seja um cifrão ($), símbolo de porcentagem (%), maior que símbolo (>), no símbolo (@), aspas ("), ponto e vírgula (;), chave esquerda ([) ou colchete esquerdo ({)
 - Qualquer combinação de 7-128 caracteres que não seja um ponto-e-vírgula (;), barra (/) ou aspas (")
 - Um ponto e vírgula (;) ou aspas (")
 

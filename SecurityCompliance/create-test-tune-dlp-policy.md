@@ -3,7 +3,7 @@ title: Criar, testar e ajustar uma política DLP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 32b0b4baa058fda031a58681e107b01bf207da55
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077957"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Criar, testar e ajustar uma política DLP
 
@@ -42,7 +42,7 @@ A DLP usa um mecanismo de análise de conteúdo para examinar o conteúdo de men
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Como as informações confidenciais são detectadas pela DLP
 
-As informações confidenciais são identificadas por correspondência de padrões de expressão regular (RegEx), em combinação com outros indicadores, como a proximidade de determinadas palavras-chave para os padrões correspondentes. Um exemplo disso é números de cartões de crédito. Um número de cartão de crédito da VISA tem 16 dígitos. No enTanto, esses dígitos podem ser escritos de maneiras diferentes, como 1111-1111-1111-1111, 1111 1111 1111 1111 ou 1111111111111111.
+As informações confidenciais são identificadas por correspondência de padrões de expressão regular (RegEx), em combinação com outros indicadores, como a proximidade de determinadas palavras-chave para os padrões correspondentes. Um exemplo disso é números de cartões de crédito. Um número de cartão de crédito da VISA tem 16 dígitos. No entanto, esses dígitos podem ser escritos de maneiras diferentes, como 1111-1111-1111-1111, 1111 1111 1111 1111 ou 1111111111111111.
 
 Qualquer cadeia de 16 dígitos não é necessariamente um número de cartão de crédito, pode ser um número de tíquete de um sistema de suporte técnico ou um número de série de hardware. Para indicar a diferença entre um número de cartão de crédito e uma cadeia de 16 dígitos inofensiva, um cálculo é executado (checksum) para confirmar que os números correspondem a um padrão conhecido das várias marcas de cartão de crédito.
 
@@ -59,7 +59,7 @@ Uma boa referência para manter o indicador é este [tópico sobre tipos de info
 
 Quando os riscos de perda de dados não são totalmente óbvios, é difícil descobrir onde exatamente você deve começar com a implementação de DLP. Felizmente, as políticas de DLP podem ser executadas no "modo de teste", permitindo que você avalie sua eficácia e precisão antes de ligá-los.
 
-As políticas de DLP do Exchange Online podem ser gerenciadas por meio do centro de administração do Exchange. Mas você pode configurar políticas de DLP para todas as cargas de trabalho por meio do centro de conformidade do & de segurança, portanto, é o que usarei para demonstrações neste artigo. No centro de conformidade do & de segurança, você encontrará as políticas de DLP em**política**de **prevenção** > de perda de dados. Clique em **criar uma política** para iniciar.
+As políticas de DLP do Exchange Online podem ser gerenciadas por meio do centro de administração do Exchange. Mas você pode configurar políticas de DLP para todas as cargas de trabalho por meio do centro de conformidade & segurança, portanto, é o que usarei para demonstrações neste artigo. No centro de conformidade & segurança, você encontrará as políticas de DLP em**política**de **prevenção** > de perda de dados. Clique em **criar uma política** para iniciar.
 
 O Office 365 fornece uma variedade de [modelos de política de DLP](what-the-dlp-policy-templates-include.md) que você pode usar para criar políticas de DLP. Digamos que você seja um negócio australiano. Você pode filtrar os modelos de política para exibir apenas aqueles que são relevantes para a Austrália, que se enquadram nas categorias gerais de finanças, médicos e saúde e privacidade.
 
@@ -121,7 +121,7 @@ Se você deixar sua política de DLP no modo de teste e analisar os emails de re
 
 À medida que você analisar seus acertos de política, talvez queira fazer alguns ajustes em como as políticas se comportam. Como um exemplo simples, você pode determinar que um TFN no email não é um problema (acho que ele ainda é, mas vamos prosseguir com isso para demonstração), mas duas ou mais instâncias são um problema. Várias instâncias podem ser um cenário arriscado, como um funcionário enviando uma exportação de CSV do banco de dados de RH para uma parte externa, por exemplo, um serviço de contabilidade externo. Definitivamente, algo que você prefere detectar e bloquear.
 
-No centro de conformidade do & de segurança, você pode editar uma política existente para ajustar o comportamento.
+No centro de conformidade & segurança, você pode editar uma política existente para ajustar o comportamento.
 
 ![Opção para editar a política](media/DLP-create-test-tune-edit-policy.png)
  
@@ -173,7 +173,7 @@ Veja um exemplo de falso positivo. Este email é bastante inofensivo. O usuário
 
 ![Email mostrando informações falsas positivas](media/DLP-create-test-tune-false-positive-email.png)
  
-No enTanto, o usuário vê uma dica de política avisando que o email contém informações confidenciais, especificamente, o número da carteira de motorista da Austrália.
+No entanto, o usuário vê uma dica de política avisando que o email contém informações confidenciais, especificamente, o número da carteira de motorista da Austrália.
 
 ![Opção para relatar falso positivo na dica de política](media/DLP-create-test-tune-policy-tip-closeup.png)
 
@@ -203,7 +203,7 @@ Quando você estiver contente que sua política de DLP está detectando com prec
 
 ![Opção para ativar a política](media/DLP-create-test-tune-turn-on-policy.png)
  
-Se você estiver aguardando para ver quando a política entrará em vigor, [Conecte-se ao PowerShell do centro de conformidade do & de segurança](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) e execute o [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) para ver o DistributionStatus.
+Se você estiver esperando para ver quando a política entrará em vigor, [Conecte-se ao PowerShell do centro de conformidade & segurança](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) e execute o [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) para ver o DistributionStatus.
 
 ![Executando o cmdlet no PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

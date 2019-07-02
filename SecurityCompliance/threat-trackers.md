@@ -3,7 +3,7 @@ title: Rastreadores de ameaça-novidade e digno de sessão
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os rastreadores de ameaças, incluindo novos rastreadores dignos de importância, para ajudar sua organização a se manter informado sobre segurança.
-ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d86eb53c1dc407fc109b39fc0f9f1809b43b8d7a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259996"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077797"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de ameaça-novidade e digno de sessão
 
@@ -83,7 +83,7 @@ E lembre-se de que você sempre pode fornecer comentários sobre este ou outros 
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores e proteção avançada contra ameaças do Office 365
 
-Com nossa ameaça digno de inaugural, estamos realçando ameaças avançadas de malware detectadas pelos [anexos seguros do Office 365 ATP](atp-safe-attachments.md). Se você é um cliente do Office 365 Enterprise E5 e não está usando o [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), você deve ser incluído na sua assinatura. A ATP fornece um valor mesmo se você tiver outras ferramentas de segurança filtrando o fluxo de emails com seus serviços do Office 365. No enTanto, os recursos do anti-spam e [do office 365 ATP Safe links](atp-safe-links.md) funcionam melhor quando sua solução de segurança de email principal é através do Office 365. 
+Com nossa ameaça digno de inaugural, estamos realçando ameaças avançadas de malware detectadas pelos [anexos seguros do Office 365 ATP](atp-safe-attachments.md). Se você é um cliente do Office 365 Enterprise E5 e não está usando o [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), você deve ser incluído na sua assinatura. A ATP fornece um valor mesmo se você tiver outras ferramentas de segurança filtrando o fluxo de emails com seus serviços do Office 365. No entanto, os recursos do anti-spam e [do office 365 ATP Safe links](atp-safe-links.md) funcionam melhor quando sua solução de segurança de email principal é através do Office 365. 
   
 ![ATP no centro de &amp; conformidade de segurança](media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   

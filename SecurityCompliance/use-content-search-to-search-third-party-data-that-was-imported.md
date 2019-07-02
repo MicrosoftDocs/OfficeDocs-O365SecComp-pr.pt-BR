@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use a ferramenta de descoberta eletrônica de pesquisa de conteúdo para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados ou criar uma consulta para Pesquisar tipos de dados específicos de terceiros. Este artigo lista os valores que podem ser usados em uma consulta de palavra-chave para pesquisar os tipos de dados de terceiros que podem ser importados para o Office 365.
-ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0881456d377569fb55f0daf0d0a8a2a15bce62fc
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156203"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014740"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar a pesquisa de conteúdo para pesquisar dados de terceiros que foram importados para o Office 365
 
-Você pode usar a [ferramenta de descoberta eletrônica de pesquisa de conteúdo](content-search.md) no centro de conformidade do _AMP_ de segurança para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados de dados de terceiros ou pode criar uma consulta para pesquisar apenas itens de dados de terceiros específicos. Além disso, você também pode criar uma política de preservação baseada em consulta ou uma descoberta eletrônica baseada em consulta para preservar dados de terceiros no Office 365. 
+Você pode usar a [ferramenta de descoberta eletrônica de pesquisa de conteúdo](content-search.md) no centro de conformidade de & de segurança para pesquisar itens que foram importados para caixas de correio no Office 365 de uma fonte de dados de terceiros. Você pode criar uma consulta para pesquisar todos os itens importados de dados de terceiros ou pode criar uma consulta para pesquisar apenas itens de dados de terceiros específicos. Além disso, você também pode criar uma política de retenção baseada em consulta do Office 365 ou um controle de descoberta eletrônica baseado em consulta para preservar dados de terceiros no Office 365. 
   
 Para obter mais informações sobre a importação de dados de terceiros e uma lista dos tipos de dados de terceiros que podem ser importados para o Office 365, consulte [trabalhar com um parceiro para arquivar dados de terceiros no office 365](work-with-partner-to-archive-third-party-data.md). 
   

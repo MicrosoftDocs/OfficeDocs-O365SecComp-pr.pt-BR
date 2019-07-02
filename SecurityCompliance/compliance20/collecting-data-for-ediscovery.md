@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151883"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703834"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Coletar dados para uma ocorrência na descoberta eletrônica avançada
 
@@ -34,6 +34,7 @@ Clicar em **nova pesquisa** na guia **pesquisas** iniciará um assistente que or
 Após a criação de uma pesquisa, uma página de submenu com detalhes é exibida. Observe que os botões **estatísticas** e **Visualização** estão esmaecidos inicialmente porque a pesquisa ainda não foi concluída. Você pode acompanhar o progresso da pesquisa na guia **pesquisas** .
 
 ## <a name="view-search-results-and-statistics"></a>Exibir resultados e estatísticas de pesquisa
+
 Há dois componentes de uma pesquisa de conteúdo: estatísticas (estimativas) e visualização. Como cada um desses componentes é concluído, você verá o status exibido nas colunas correspondentes na guia **pesquisas** mudar de de **enviado** para **em andamento** para **concluído**.
 
 Após a conclusão da pesquisa, clique na pesquisa para exibir a página do menu suspenso, que exibirá algumas estatísticas de alto nível sobre os resultados da pesquisa. Neste ponto, o botão **estatísticas** estará ativo. Você pode clicar nele para ver as estatísticas de pesquisa, como:

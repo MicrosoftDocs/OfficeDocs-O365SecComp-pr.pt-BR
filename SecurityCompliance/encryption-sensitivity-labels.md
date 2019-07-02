@@ -3,7 +3,6 @@ title: Restringir o acesso ao conteúdo usando criptografia nos rótulos de conf
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode restringir o acesso ao conteúdo ao qual o rótulo será aplicado. Rótulos de confidencialidade podem usar criptografia para proteger o conteúdo.
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153263"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199752"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade
 
@@ -50,7 +49,7 @@ Para começar, basta colocar **Criptografia** no estado **Ativado** e depois usa
 2. **Permitir que o acesso ao conteúdo rotulado expire**, em uma data específica ou depois de um número específico de dias após o rótulo ser aplicado. Após este período, os usuários não poderão abrir o item rotulado. Se você especificar uma data, isso será válido a partir da meia-noite da data em questão em seu fuso horário atual. (Observe que alguns clientes de email podem não impor expiração e exibir emails após a data de vencimento, devido a seus mecanismos de cache.)
 3. **Permitir o acesso offline** nunca, sempre ou por um número específico de dias após o rótulo ser aplicado. Se você restringir o acesso offline para nunca ou por um número de dias, quando este limite for atingido, os usuários precisarão ser autenticados novamente e seu acesso será registrado. Para saber mais, confira a próxima seção na licença de uso de Gerenciamento de Direitos.
 
-![Configurações de criptografia do rótulo de confidencialidade](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![Configurações de criptografia do rótulo de confidencialidade](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licença de uso de Gerenciamento de Direitos para acesso offline
 
@@ -71,7 +70,7 @@ Este é um processo de duas etapas simples:
 1. Primeiro você adiciona usuários ou grupos que receberão permissões para o conteúdo rotulado.
 2. Em seguida, escolhe quais permissões os usuários têm para o conteúdo rotulado.
 
-![Opções para atribuir permissões para usuários](media/Sensitivity_Assign_permissions_settings.png)
+![Opções para atribuir permissões para usuários](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>Adicionar usuários ou grupos
 
@@ -94,13 +93,13 @@ Quando você escolhe quais permissões atribuir para os usuários ou grupos, voc
 
 Para saber mais sobre cada permissão específica, confira [Direitos de uso e descrições](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opções para escolher permissões predefinidas ou personalizadas](media/Sensitivity_Choose_permissions_settings.png)
+![Opções para escolher permissões predefinidas ou personalizadas](media/Sensitivity-Choose-permissions-settings.png)
 
 Observe que o mesmo rótulo pode atribuir permissões diferentes a usuários diferentes. Por exemplo, um rótulo único pode definir alguns usuários como Revisores e um usuário diferente como Co-Autor, como mostrado abaixo.
 
 Para fazer isso, adicione usuários ou grupos, atribua-lhes permissões e salve essas configurações. Depois repita essas etapas, adicionando usuários e atribuindo-lhes permissões, salvando as configurações a cada vez. Você pode fazer isso quantas vezes for necessário para definir permissões diferentes para usuários diferentes.
 
-![Usuários diferentes com permissões diferentes](media/Sensitivity_Multiple_users_permissions.png)
+![Usuários diferentes com permissões diferentes](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>O emissor do Gerenciamento de Direitos (usuário que aplica o rótulo de confidencialidade) sempre tem o Controle Total
 

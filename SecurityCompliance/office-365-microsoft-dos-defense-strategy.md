@@ -1,9 +1,8 @@
 ---
-title: Estratégia de defesa do DoS do Office 365 da Microsoft
+title: Estratégia de defesa do DoS do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,22 +12,22 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Uma visão geral da estratégia de defesa da Microsoft para lidar com ataques de negação de serviço (DoS).
-ms.openlocfilehash: acc0c74ae9ed434d4718d7b8b3bd9429b3245d46
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Uma visão geral da estratégia de defesa da Microsoft para ataques de negação de serviço (DoS).
+ms.openlocfilehash: 0c046657ddd11412730c64bef475ba62e391c0bb
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262543"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622361"
 ---
-# <a name="microsofts-denial-of-service-defense-strategy"></a>Estratégia de defesa de negação de serviço da Microsoft
+# <a name="office-365-denial-of-service-defense-strategy"></a>Estratégia de defesa de negação de serviço do Office 365
 
-A estratégia da Microsoft para defesa contra ataques de negação de serviço (DoS) baseado em rede é um pouco exclusiva devido à nossa escala e ao espaço global. Essa escala permite que a Microsoft use estratégias e técnicas de que poucas organizações (provedores ou organizações de clientes) podem ser compatíveis. A base da estratégia de DoS está aproveitando nossa presença global. A Microsoft se comunica com provedores de Internet, provedores de emparelhamento (públicos e privados) e corporações privadas em todo o mundo, dando a eles uma presença de Internet significativa (que por esse texto é escrito, dobra a cada 18 meses). Ter uma presença tão grande permite que a Microsoft absorve ataques em uma área de superfície muito grande.
+A estratégia da Microsoft para se defender contra ataques de negação de serviço (DoS) baseado em rede é exclusiva devido à nossa escala e ao espaço global. Essa escala permite que a Microsoft use estratégias e técnicas de que poucas organizações, provedores ou organizações de clientes podem ser compatíveis. A base da estratégia de DoS é nossa presença global. A Microsoft se comunica com provedores de Internet, provedores de emparelhamento (públicos e privados) e corporações privadas em todo o mundo. Isso dá à Microsoft uma presença significativa na Internet e permite que a Microsoft absorver ataques em uma grande área de superfície.
 
-Considerando nossa natureza exclusiva, a Microsoft usa processos de detecção e atenuação diferentes daqueles usados por grandes empresas. Nossa estratégia é baseada em uma separação de detecção e atenuação, bem como redução global e distribuída por meio de nossas diversas bordas. Muitas empresas usam soluções de terceiros que detectam e reduzem os ataques na borda. À medida que nossa capacidade de borda cresceu, ficou claro que a significância de qualquer ataque contra bordas individuais ou específicas era muito baixa. Por causa da nossa configuração exclusiva, separamos os componentes de detecção e mitigação. Implantamos uma detecção de várias camadas que nos permite detectar ataques mais próximos de seus pontos de saturação, mantendo a redução global na borda. Essa estratégia garante que possamos lidar com vários ataques simultâneos.
+Considerando essa natureza exclusiva, a Microsoft usa processos de detecção e mitigação que diferem dos usados por grandes empresas. A estratégia é baseada em uma separação de detecção e redução global distribuída por várias bordas de rede. Muitas empresas usam soluções de terceiros para detectar e reduzir ataques na borda. À medida que a capacidade de borda da Microsoft aumentou, ficou claro o significado de qualquer ataque em relação a bordas individuais ou específicas era baixo. Por causa dessa configuração exclusiva, a Microsoft separou os componentes de detecção e mitigação. A Microsoft implanta sistemas de detecção de várias camadas para detectar ataques mais próximos de seus pontos de saturação, mantendo a redução global na borda. Essa estratégia garante que possamos lidar com vários ataques simultâneos.
 
-Uma das defesas mais eficazes e de baixo custo empregadas pela Microsoft contra ataques de DoS é reduzir nossa superfície de ataque. Isso permite que possamos descartar tráfego indesejado na borda, em vez de analisar, processar e depurar os dados embutidos.
+Uma das defesas mais eficazes e de baixo custo empregadas pela Microsoft contra ataques de negação de serviço é reduzir as superfícies de ataque. O tráfego indesejado é Descartado na borda da rede em vez de analisar, processar e depurar os dados embutidos.
 
-Na interface com a rede pública, a Microsoft usa dispositivos de segurança de uso especial para firewall, conversão de endereços de rede e funções de filtragem de IP. Também utilizamos o roteamento global de vários caminhos de custo igual (ECMP). Global ECMP Routing é uma estrutura de rede que garante que há vários caminhos globais para chegar a um serviço. Graças a esses vários caminhos, um ataque contra o serviço deve ser limitado à região da qual o ataque se originou – outras regiões devem ser não afetadas por esse ataque, já que os usuários finais usariam outros caminhos para acessar o serviço nessas regiões. Também desenvolvemos nosso próprio sistema de detecção e correlação do DoS interno que usa dados de fluxo, métricas de desempenho e outras informações. Este é um serviço de nuvem de hiperescala executado no Microsoft Azure, que analisa dados coletados de vários pontos em redes e serviços da Microsoft. Uma equipe de resposta a incidentes de um entre cargas de trabalho identifica as funções e responsabilidades entre as equipes, os critérios de escalonamento e os protocolos para envolver várias equipes e tratamento de incidentes. Essas soluções fornecem proteção baseada em rede contra ataques de DoS.
+Na interface com a rede pública, a Microsoft usa dispositivos de segurança de uso especial para firewall, conversão de endereços de rede e funções de filtragem de IP. A Microsoft também usa roteamento global de vários caminhos de custo igual (ECMP). Global ECMP Routing é uma estrutura de rede para garantir que haja vários caminhos globais para chegar a um serviço. Com esses vários caminhos, os ataques contra serviços são limitados à região da qual o ataque se originou. Outras regiões devem ser não afetadas por esse ataque, já que os usuários finais usariam outros caminhos para acessar o serviço nessas regiões. A Microsoft também desenvolveu sistemas de detecção e correlação de DoS internos que usam dados de fluxo, métricas de desempenho e outras informações. Este é um serviço de nuvem de hiperescalas no Microsoft Azure, que analisa dados coletados de vários pontos em redes e serviços da Microsoft. Uma equipe de resposta a incidentes de um entre cargas de trabalho identifica as funções e responsabilidades entre as equipes, os critérios de escalonamento e os protocolos para envolver várias equipes e tratamento de incidentes. Essas soluções fornecem proteção baseada em rede contra ataques de DoS.
 
 Por fim, as cargas de trabalho baseadas em nuvem são configuradas com limites otimizados com base em seu protocolo e uso de largura de banda precisa proteger exclusivamente essa carga de trabalho.

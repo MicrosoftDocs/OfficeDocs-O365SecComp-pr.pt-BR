@@ -3,7 +3,7 @@ title: Configurar políticas de anexos seguros de ATP do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,34 +15,37 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir políticas de anexos seguros para proteger sua organização contra arquivos mal-intencionados no email.
-ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 532a4b6ab2d26506f10adb621a29718a32d52ff6
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266856"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652694"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar políticas de anexos seguros de ATP do Office 365
+
+> [!IMPORTANT]
+> Este artigo destina-se a clientes corporativos com [proteção avançada contra ameaças do Office 365](office-365-atp.md). Se você for um usuário doméstico que procura informações sobre anexos seguros no Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Pessoas costumam enviar, receber e compartilhar anexos, como documentos, apresentações, planilhas e muito mais. Nem sempre é fácil dizer se um anexo é seguro ou mal-intencionado apenas olhando uma mensagem de email. E a última coisa que você deseja é um anexo mal-intencionado para obter estragos para sua organização. Felizmente, a [proteção avançada contra ameaças do Office 365](office-365-atp.md) (ATP) pode ajudar. Você pode configurar as políticas de [anexos seguros de ATP](atp-safe-attachments.md) para ajudar a garantir que sua organização seja protegida contra ataques por anexos de email não seguros. 
   
 ## <a name="what-to-do"></a>O que fazer 
   
-1. ReVisar os pré-requisitos
+1. Revisar os pré-requisitos
     
 2. Configurar uma política de anexos seguros de ATP
     
 3. Saiba mais sobre as opções de política de anexos seguros de ATP
     
-## <a name="step-1-review-the-prerequisites"></a>Etapa 1: reVisar os pré-requisitos
+## <a name="step-1-review-the-prerequisites"></a>Etapa 1: revisar os pré-requisitos
 
 - Certifique-se de que sua organização tenha a [proteção avançada contra ameaças do Office 365](office-365-atp.md).
     
 - Verifique se você tem as permissões necessárias. Para definir (ou editar) políticas ATP, você deve ter uma função apropriada atribuída. Alguns exemplos são descritos na tabela a seguir: <br>
 
-    |Função  |Onde/como a atribuição  |
+    |Role  |Onde/como a atribuição  |
     |---------|---------|
-    |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (ConFira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
+    |Administrador global do Office 365 |Por padrão, a pessoa que se inscreve para comprar o Office 365 é um administrador global. (Confira [sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para saber mais.)         |
     |Administrador de segurança |Centro de administração do Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
     |Gerenciamento da organização do Exchange Online |Centro de administração do[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>ou <br>  Cmdlets do PowerShell (consulte [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
@@ -54,9 +57,9 @@ Pessoas costumam enviar, receber e compartilhar anexos, como documentos, apresen
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Etapa 2: configurar (ou editar) uma política de anexos seguros de ATP
   
-1. AcEsse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre com sua conta corporativa ou de estudante. 
     
-2. no centro de conformidade com &amp; segurança do Office 365, no painel de navegação esquerdo, em **gerenciamento de ameaças**, escolha **anexos seguros**de **política** \> .
+2. No centro de conformidade com &amp; segurança do Office 365, no painel de navegação esquerdo, em **Gerenciamento de ameaças**, escolha **anexos seguros**de **política** \> .
     
 3. Se você vir **ativar a ATP para SharePoint, onedrive e Microsoft Teams**, recomendamos que você selecione essa opção. Isso habilitará a [proteção avançada contra ameaças do Office 365 para o SharePoint, o onedrive e o Microsoft Teams](atp-for-spo-odb-and-teams.md) para seu ambiente do Office 365. 
     
@@ -74,7 +77,7 @@ Pessoas costumam enviar, receber e compartilhar anexos, como documentos, apresen
     
       - Na seção **aplica-se** a, escolha **o domínio do destinatário**e selecione o seu domínio. Escolha **Adicionar**e, em seguida, escolha **OK**.
     
-6. Selecione **Salvar**.
+6. Escolha **Salvar**.
     
 Considere configurar várias políticas de anexos seguros de ATP para sua organização. Essas políticas serão aplicadas na ordem em que estão listadas na página de **anexos seguros de ATP** . Após uma política ter sido definida ou editada, permita pelo menos 30 minutos para que as políticas entrem em vigor nos datacenters da Microsoft. 
   
@@ -84,7 +87,7 @@ Considere configurar várias políticas de anexos seguros de ATP para sua organi
   
 |**Opção**|**Effect**|**Use quando quiser:**|
 |:-----|:-----|:-----|
-|**Desativada** <br/> |Não examina anexos de malware  <br/> Não atrasa a entrega de mensagens  <br/> |DesAtive a verificação para remetentes, scanners, faxes ou hosts inteligentes internos que só enviarão anexos conhecidos e bons  <br/> Evitar atrasos desnecessários no roteamento de email interno  <br/> **Essa opção não é recomendada para a maioria dos usuários. Ele permite que você ative a verificação de anexos seguros de ATP para um pequeno grupo de remetentes internos.**           |
+|**Desativada** <br/> |Não examina anexos de malware  <br/> Não atrasa a entrega de mensagens  <br/> |Desative a verificação para remetentes, scanners, faxes ou hosts inteligentes internos que só enviarão anexos conhecidos e bons  <br/> Evitar atrasos desnecessários no roteamento de email interno  <br/> **Essa opção não é recomendada para a maioria dos usuários. Ele permite que você ative a verificação de anexos seguros de ATP para um pequeno grupo de remetentes internos.**           |
 |**Monitorar** <br/> |Entrega mensagens com anexos e rastreia o que acontece com o malware detectado  <br/> |Veja onde o malware detectado entra em sua organização  <br/> |
 |**Bloquear** <br/> |Impede que mensagens com anexos de malware detectados continuem  <br/> Envia mensagens com malware detectado para [colocar em quarentena no Office 365](manage-quarantined-messages-and-files.md) , onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> Bloqueia automaticamente mensagens e anexos futuros  <br/> |Proteger sua organização de ataques repetidos usando os mesmos anexos de malware  <br/> |
 |**Replace** <br/> |Remove anexos detectados de malware  <br/> Notifica os destinatários de que os anexos foram removidos  <br/> Envia mensagens com malware detectado para [colocar em quarentena no Office 365](manage-quarantined-messages-and-files.md) , onde um administrador de segurança ou analista pode revisar e liberar (ou excluir) essas mensagens  <br/> |Aumentar a visibilidade dos destinatários que os anexos foram removidos devido a um malware detectado  <br/> |
@@ -93,7 +96,7 @@ Considere configurar várias políticas de anexos seguros de ATP para sua organi
    
 ## <a name="next-steps"></a>Próximas etapas
 
-Quando suas políticas de anexos seguros de ATP estiverem vigentes, você poderá ver como a ATP está trabalhando para sua organização exibindo relatórios. ConFira os seguintes recursos para saber mais:
+Quando suas políticas de anexos seguros de ATP estiverem vigentes, você poderá ver como a ATP está trabalhando para sua organização exibindo relatórios. Confira os seguintes recursos para saber mais:
 - [Exibir relatórios para a proteção avançada contra ameaças do Office 365](view-reports-for-atp.md)
 - [Usar o Explorer no centro &amp; de conformidade de segurança](use-explorer-in-security-and-compliance.md)
 

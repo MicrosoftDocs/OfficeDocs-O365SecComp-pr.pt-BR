@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: página de aterrissagem para proteger o acesso a dados e serviços do O365
-ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156863"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852735"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger o acesso de usuários e dispositivos
 
@@ -35,19 +35,19 @@ As contas administrativas que você usa para administrar seu ambiente do Office 
 
 Comece usando contas de administrador somente para administração. Os administradores devem ter uma conta de usuário separada para uso regular e não administrativo e só usarem a conta administrativa, quando necessário, para concluir uma tarefa associada à função de trabalho.
 
-Proteger suas contas de administrador com autenticação multifator e acesso condicional. Para obter mais informações, consulte [protegendo contas de administrador](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
+Proteger suas contas de administrador com autenticação multifator e acesso condicional. Para obter mais informações, consulte [protegendo contas de administrador](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
 
 Em seguida, configure o gerenciamento de acesso privilegiado no Office 365. O gerenciamento de acesso privilegiado permite o controle de acesso granular sobre tarefas administrativas privilegiadas no Office 365. Ele pode ajudar a proteger sua organização contra violações que podem usar contas de administrador privilegiadas existentes com acesso à dados confidenciais ou acesso a definições de configuração crítica.
 
 - [Visão geral do gerenciamento de acesso privilegiado](privileged-access-management-overview.md)
 - [Configurar gerenciamento de acesso privilegiado](privileged-access-management-configuration.md)
 
-Outra recomendação principal é usar as estações de trabalho especificamente configuradas para trabalhos administrativos. Estes são dispositivos dedicados que são usados apenas para tarefas administrativas. Consulte [protegendo o acesso privilegiado](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Outra recomendação principal é usar as estações de trabalho especificamente configuradas para trabalhos administrativos. Estes são dispositivos dedicados que são usados apenas para tarefas administrativas. Consulte [protegendo o acesso privilegiado](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
-Por fim, você pode reduzir o impacto da falta inadvertida de acesso administrativo, criando duas ou mais contas de acesso de emergência em seu locatário. Consulte [gerenciar contas de acesso de emergência no Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access). 
+Por fim, você pode reduzir o impacto da falta inadvertida de acesso administrativo, criando duas ou mais contas de acesso de emergência em seu locatário. Consulte [gerenciar contas de acesso de emergência no Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Etapa 3: configurar as políticas recomendadas de acesso de dispositivo e identidades
-A MFA (autenticação multifator) e as políticas de acesso condicional são ferramentas poderosas para reduzir as contas comprometidas e o acesso não autorizado. É recomendável implementar um conjunto de políticas que foram testadas juntas. Para obter mais informações, incluindo etapas de implantação, consulte [Identity and Device Access](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)Configurations.
+A MFA (autenticação multifator) e as políticas de acesso condicional são ferramentas poderosas para reduzir as contas comprometidas e o acesso não autorizado. É recomendável implementar um conjunto de políticas que foram testadas juntas. Para obter mais informações, incluindo etapas de implantação, consulte [Identity and Device Access](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)Configurations.
 
  Essas políticas implementam os seguintes recursos:
 - Mediante-factor Authentication
@@ -60,7 +60,7 @@ A conformidade de dispositivo do Implemetning Intune requer o registro do dispos
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Etapa 4: configurar as políticas de acesso do dispositivo do SharePoint
 
-A Microsoft recomenda que você proteja o conteúdo em sites do SharePoint com conteúdo confidencial e altamente regulamentado com controles de acesso do dispositivo. Para mais informações, consulte [recomendações de política para proteger sites e arquivos do SharePoint](https://docs.microsoft.com/en-us/microsoft-365/enterprise/sharepoint-file-access-policies).
+A Microsoft recomenda que você proteja o conteúdo em sites do SharePoint com conteúdo confidencial e altamente regulamentado com controles de acesso do dispositivo. Para mais informações, consulte [recomendações de política para proteger sites e arquivos do SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
 
 
 

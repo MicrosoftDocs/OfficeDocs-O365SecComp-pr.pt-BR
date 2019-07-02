@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155203"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703804"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analisar dados em um conjunto de revisão na descoberta eletrônica avançada
 
@@ -39,7 +39,7 @@ Para analisar dados em um conjunto de revisão:
 
 3. Clique em **gerenciar análise definida**.
 
-4. Clique em **analisar**.
+4. Clique em **executar análise para o conjunto de revisão**.
 
 Você pode verificar o progresso da análise na guia **trabalhos** da ocorrência.
 
@@ -53,7 +53,7 @@ Para exibir um relatório de análise para um conjunto de análise:
 
 2. Clique em **gerenciar análise definida**.
 
-3. Clique em **relatório**.
+3. Clique em **Exibir relatório**.
 
 O relatório tem quatro componentes da análise:
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150663"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767332"
 ---
 # <a name="review-the-data-in-evidence"></a>Revise os dados em evidência
 
@@ -50,7 +50,7 @@ Veja um exemplo dos metadados de arquivo para um documento. Para obter mais info
 
 ## <a name="native-view"></a>Modo de exibição nativo
 
-O visualizador nativo exibe o modo de exibição mais preciso de um documento no formato nativo. O modo de exibição nativo é suportado para centenas de tipos de arquivo e deve exibir documentos na experiência nativa verdadeiramente mais verdadeira possível. Para arquivos do Microsoft Office, o visualizador nativo usa o Office Online. Isso permite que você exiba conteúdo como comentários em diferentes documentos do Office, fórmulas e linhas/colunas ocultas no Excel e o modo de anotações no PowerPoint.
+O visualizador nativo exibe o modo de exibição mais preciso de um documento no formato nativo. O modo de exibição nativo é suportado para centenas de tipos de arquivo e deve exibir documentos na experiência nativa verdadeiramente mais verdadeira possível. Para arquivos do Microsoft Office, o visualizador nativo usa a versão da Web dos aplicativos do Office. Isso permite que você exiba conteúdo como comentários em diferentes documentos do Office, fórmulas e linhas/colunas ocultas no Excel e o modo de anotações no PowerPoint.
 
 ![Modo de exibição nativo
 ](../media/Reviewimage3.png)

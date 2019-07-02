@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154033"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703746"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gerenciar conjuntos de análise na descoberta eletrônica avançada
 
@@ -41,7 +41,7 @@ Os conjuntos de revisão podem ser criados na guia **conjuntos de revisão** cli
 
 ![Adicionar conjunto de revisão](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Na página **Adicionar** submenu do conjunto de revisão, digite um nome para o conjunto de revisão e clique em **salvar**.  O novo conjunto de revisão é exibido na lista da guia **conjuntos de revisão** .
+Na página **Adicionar** submenu do conjunto de revisão, digite um nome para o conjunto de revisão e clique em **salvar**. O novo conjunto de revisão é exibido na lista da guia **conjuntos de revisão** .
 
 ![Novo conjunto de revisão listado na guia conjunto de revisão](../media/AeDnewreviewset.png)
 

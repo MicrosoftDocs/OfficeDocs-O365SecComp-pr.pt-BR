@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ao criar um rótulo de retenção que mantém o conteúdo no Microsoft 365, você pode optar por acionar uma análise de disposição no final do período de retenção.
-ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b85d1ac4c8ed0527a8018129e146fee074d942
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153423"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199668"
 ---
 # <a name="overview-of-disposition-reviews"></a>Visão geral das revisões de disposição
 
@@ -33,7 +33,7 @@ Quando o conteúdo atinge o final do período de retenção, há vários motivos
     
 - Retornar o conteúdo aos clientes ou transferi-lo para outra organização.
     
-Ao criar um rótulo de retenção no centro de conformidade da Microsoft 365, no centro de segurança da Microsoft 365 ou no centro de conformidade do Office 365 Security &, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
+Ao criar um rótulo de retenção no centro de conformidade da Microsoft 365, no centro de segurança da Microsoft 365 ou no centro de conformidade & segurança do Office 365, você pode optar por acionar uma análise de disposição no final do período de retenção. Em uma revisão de disposição:
   
 - As pessoas escolhidas recebem uma notificação por email de que o conteúdo deve ser revisado. Esses revisores podem ser usuários individuais, grupos de distribuição ou segurança ou grupos do Office 365. Observe que as notificações são enviadas semanalmente.
     
@@ -54,7 +54,7 @@ Ao criar um rótulo de retenção no centro de conformidade da Microsoft 365, no
   
 Uma análise de disposição pode incluir conteúdo em caixas de correio do Exchange, sites do SharePoint, contas do OneDrive e grupos do Office 365. O conteúdo que está aguardando uma revisão de disposição nesses locais é excluído somente depois que um revisor escolhe excluir permanentemente o conteúdo.
   
-![Página de desposições no centro de conformidade e segurança](media/Retention_Dispositions_v2_page.png)
+![Página de desposições no centro de conformidade e segurança](media/Retention-Dispositions-v2-page.png)
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configurando a análise de disposição criando um rótulo de retenção
 
@@ -74,7 +74,7 @@ Quando um revisor é notificado por email que o conteúdo está pronto para revi
 
 Depois que você selecionar um rótulo de retenção, a próxima página mostrará todas as desposições pendentes para esse rótulo.
 
-![Opções de disposição](media/Retention_Disposition_options_v2.png)
+![Opções de disposição](media/Retention-Disposition-options-v2.png)
 
 O revisor pode então: 
   
@@ -118,13 +118,13 @@ Na página de **disposição pendente** , você pode exibir as desposições pen
     
 - A guia **itens** descartados mostra que as reposições foram aprovadas para exclusão durante uma revisão de disposição e agora estão em processo de exclusão permanente. Os itens que tiveram um rótulo de retenção diferente aplicado ou seu período de retenção estendido como parte de uma revisão não aparecerão aqui.
 
-![Guias de disposição](media/Retention_Disposition_tabs.png)
+![Guias de disposição](media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrar as exibições de disposição
 
 Você pode filtrar esses modos de exibição por rótulo de retenção ou intervalo de tempo. Para desposições pendentes, o intervalo de tempo é baseado na data de expiração. Para itens descartados, o intervalo de tempo é baseado na data de exclusão.
   
-![Opções de filtro de disposição](media/Retention_filter_options.png)
+![Opções de filtro de disposição](media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportar os itens de disposição
 

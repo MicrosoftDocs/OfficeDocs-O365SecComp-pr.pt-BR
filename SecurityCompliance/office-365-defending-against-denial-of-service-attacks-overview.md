@@ -1,5 +1,5 @@
 ---
-title: Como se proteger contra ataques de negação de serviço no Office 365
+title: Defesa contra ataques de negação de serviço no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,26 +13,35 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral dos ataques de negação de serviço (DoS).
-ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262813"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622471"
 ---
-# <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Como se proteger contra ataques de negação de serviço no Office 365
+# <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Defesa contra ataques de negação de serviço no Office 365
 
 ## <a name="introduction"></a>Introdução
-A Microsoft fornece uma infraestrutura confiável para mais de 200 serviços em nuvem, incluindo Microsoft Azure, Microsoft Bing, Microsoft Office 365, Microsoft Dynamics 365, Microsoft OneDrive, Skype e Xbox Live que são hospedados em nossa nuvem global infraestrutura de mais de 100 datacenters.
 
-Como uma organização global com uma presença de Internet significativa e muitas propriedades proeminentes da Internet que oferecem serviços em nuvem, a Microsoft é um grande alvo comum para hackers e outras pessoas mal-intencionadas. A rede – a camada de comunicação entre os clientes e a nuvem da Microsoft – é um dos maiores alvos de ataques mal-intencionados. Na verdade, há muitos anos, a Microsoft foi continuamente e persistente sob alguma forma de cyberattack baseados em rede. Quase todos os momentos, pelo menos uma das propriedades da Internet da Microsoft está enfrentando alguma forma de ataque. Sem sistemas de mitigação confiáveis e persistentes que podem se defender contra esses ataques, os serviços de nuvem da Microsoft ficarão offline e indisponíveis para os clientes.
+A Microsoft fornece uma infraestrutura confiável para mais de 200 serviços em nuvem hospedados em uma infraestrutura de nuvem global de mais de 100 datacenters. Entre eles:
 
-A Microsoft usa princípios de segurança de proteção em camadas para proteger seus serviços e redes de nuvem. 
+- Microsoft Azure
+- Microsoft Bing
+- Microsoft Dynamics 365
+- Microsoft Office 365
+- Microsoft OneDrive
+- Skype
+- Xbox Live
+
+Como uma organização global com uma presença de Internet significativa e muitas propriedades proeminentes da Internet que oferecem serviços em nuvem, a Microsoft é um grande alvo comum para hackers e outras pessoas mal-intencionadas. A camada de comunicação de rede entre clientes e a nuvem da Microsoft é um dos maiores alvos de ataques mal-intencionados. Na verdade, a Microsoft está continuamente e persistentemente sob alguma forma de ataque de terceiros baseado em rede. Com isso, a Microsoft usa princípios de segurança de defesa profunda para proteger seus serviços de nuvem e redes. Sem sistemas de mitigação confiáveis e persistentes que defendem contra esses ataques, os serviços em nuvem da Microsoft ficarão offline e indisponíveis para os clientes.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Definição e sintomas de ataques de negação de serviço
-Uma maneira de atacar os serviços de rede é criar muitas solicitações em relação aos hosts de um serviço para sobrecarregar a rede e os servidores para negar o serviço a usuários legítimos. Isso é conhecido como um ataque de negação de serviço (DoS). Quando o ataque é executado por vários atores, pontos de extremidade e/ou vetores, ele é conhecido como um ataque de negação de serviço distribuído (DDoS). Embora os meios, motivos e metas variem, os ataques DoS e DDoS geralmente consistem nos esforços de uma pessoa ou de pessoas para impedir que um site ou serviço da Internet funcione corretamente ou de forma temporária ou indefinida.
+
+Uma maneira de atacar os serviços de rede é criar muitas solicitações em relação aos hosts de serviço para sobrecarregar a rede e os servidores para negar o serviço a usuários legítimos. Isso é conhecido como um ataque de negação de serviço (DoS). Quando o ataque é executado por vários atores, pontos de extremidade e/ou vetores, ele é conhecido como um ataque de negação de serviço distribuído (DDoS). Embora os meios, motivos e metas variem, os ataques DoS e DDoS geralmente consistem em esforços para impedir que um serviço ou site da Internet funcione corretamente ou, de forma temporária ou indefinida.
 
 A [equipe de preparação para emergências dos Estados Unidos](https://www.us-cert.gov/) (US-CERT) define sintomas de ataques de dos para incluir:
+
 - Desempenho de rede excepcionalmente lento (ao abrir arquivos ou acessar sites da Internet)
 - Indisponibilidade de um site da Web
 - Incapacidade de acessar um site da Web
@@ -40,7 +49,8 @@ A [equipe de preparação para emergências dos Estados Unidos](https://www.us-c
 - Desconexão de uma conexão com a Internet sem fio ou com fio
 - Perda de longo prazo do acesso à Web ou a qualquer serviço de Internet
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
+
 - [Princípios básicos de defesa contra ataques de negação de serviço](office-365-core-principles-of-defense-against-dos-attacks.md)
 - [Estratégia de defesa de negação de serviço da Microsoft](office-365-microsoft-dos-defense-strategy.md)
 - [Defendendo os serviços de nuvem da Microsoft contra ataques de negação de serviço](office-365-defending-cloud-services-against-dos-attacks.md)

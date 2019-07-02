@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Tem uma pergunta sobre como os novos recursos de proteção de mensagens no Office 365 funcionam? Verifique se há uma resposta aqui.
-ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157563"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222255"
 ---
 # <a name="office-365-message-encryption-faq"></a>Perguntas frequentes sobre Criptografia de Mensagem do Office 365
 
@@ -136,7 +136,7 @@ Sim! Para obter informações sobre como personalizar mensagens de email e o por
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Há alguma capacidade de relatórios ou insights para emails criptografados?
 
-Não está neste momento, mas chegando em breve.
+Há um relatório de criptografia no centro de segurança e conformidade. Confira [exibir relatórios de segurança de email no centro de conformidade de & de segurança.](view-email-security-reports.md)
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Posso usar a criptografia de mensagem com recursos de conformidade, como eDiscovery?
 

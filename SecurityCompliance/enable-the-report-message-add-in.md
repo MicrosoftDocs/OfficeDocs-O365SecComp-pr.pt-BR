@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Saiba como habilitar o suplemento de mensagem de relatório para o Outlook e o Outlook na Web, para usuários individuais ou para toda a organização.
-ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d74772502f5ffd7e274574075604c2fc0c235f30
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077947"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar o suplemento de Mensagem de Relatório
 
 > [!NOTE]
 > O suplemento de mensagem de relatório para o Outlook e o Outlook na Web não é exatamente o mesmo que o [filtro de lixo eletrônico do Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), embora ambos possam ser usados para marcar email como lixo eletrônico, não lixo eletrônico ou uma tentativa de phishing. A diferença é, o suplemento de mensagem de relatório para o Outlook e o Outlook na Web notifica a Microsoft sobre emails não classificados, enquanto o filtro de lixo eletrônico do Outlook é usado para organizar mensagens de email na caixa de correio de um usuário. 
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 O suplemento de mensagem de relatório para o Outlook e o Outlook na Web permite que as pessoas relatem facilmente emails mal classificados, sejam seguros ou mal-intencionados, para a Microsoft e seus afiliados para análise. A Microsoft usa esses envios para melhorar a eficácia das tecnologias de proteção de email. Além disso, se sua organização estiver usando o [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou o [plano 2](office-365-ti.md), o suplemento de mensagem de relatório fornecerá a equipe de segurança da sua organização com informações úteis que podem ser usadas para analisar e atualizar as políticas de segurança. 
 
@@ -38,7 +38,7 @@ O suplemento de mensagem de relatório funciona com sua assinatura do Office 365
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 para Mac
- - Outlook incluído no Office 365 proPlus
+ - Outlook incluído no Office 365 ProPlus
 
 O navegador da Web existente deve ser suficiente para que o suplemento de mensagem de relatório funcione; no entanto, se você notar que o suplemento não está disponível ou não está funcionando conforme o esperado, tente um navegador diferente.
   
@@ -69,7 +69,7 @@ Depois que o suplemento estiver instalado e habilitado, você verá os seguintes
 > [!IMPORTANT]
 > Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para concluir essa tarefa. Além disso, o Exchange deve ser configurado para usar a autenticação OAuth para saber mais, consulte [Exchange Requirements (implantação centralizada de suplementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins). 
 
-1. Vá para a [página de suplementos de serviços do &](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no centro de administração do Microsoft 365.<br/>![Página serviços e suplementos no novo centro de administração do Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. Vá até a [página serviços & suplementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no centro de administração do Microsoft 365.<br/>![Página serviços e suplementos no novo centro de administração do Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
 2. Escolha **+ implantar suplemento**.<br/>![Escolha implantar suplemento](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
@@ -121,22 +121,22 @@ Você pode configurar uma regra para obter uma cópia das mensagens de email rel
     
 9. Em **escolher um modo para essa regra**, escolha **impor**.<br/>![Configurar uma regra para obter uma cópia de cada mensagem relatada](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Selecione **Salvar**. 
+10. Escolha **Salvar**. 
     
 Com essa regra em vigor, sempre que alguém em sua organização relatar uma mensagem de email usando o suplemento de mensagem de relatório, seu administrador global, administrador de segurança e/ou leitor de segurança receberá uma cópia dessa mensagem. Essas informações podem permitir que você configure ou ajuste políticas, como as políticas de [links seguros de ATP do Office 365](atp-safe-links.md) ou suas configurações [antispam](anti-spam-protection.md) . 
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Saiba como usar o suplemento de mensagem de relatório
 
-ConFira [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Confira [usar o suplemento de mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revise ou edite as configurações do suplemento de mensagem de relatório
 
-Você pode revisar e editar as configurações padrão para o suplemento de mensagem de relatório na [página de suplementos de serviços do &](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
+Você pode revisar e editar as configurações padrão para o suplemento de mensagem de relatório na [página de suplementos de serviços &](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
 
 > [!IMPORTANT]
 > Você deve ser um administrador global do Office 365 ou um administrador do Exchange Online para concluir essa tarefa.
     
-1. Vá para a [página de suplementos de serviços do &](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no centro de administração do Microsoft 365.<br/>![Página serviços e suplementos no novo centro de administração do Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+1. Vá até a [página serviços & suplementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) no centro de administração do Microsoft 365.<br/>![Página serviços e suplementos no novo centro de administração do Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
 2. Localize e selecione o suplemento de mensagem de relatório.<br/>![Localizar e selecionar o suplemento de mensagem de relatório](media/FindReportMessageAddIn.png)<br/> 
     

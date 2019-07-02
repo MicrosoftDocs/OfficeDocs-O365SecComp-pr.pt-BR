@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Saiba mais sobre as propriedades de email e de arquivo que você pode pesquisar em caixas de correio do Exchange Online e em sites do SharePoint ou do OneDrive for Business usando a ferramenta de pesquisa de conteúdo no centro de conformidade do & de segurança.  '
-ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152493"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017643"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo
 
-Este tópico descreve as propriedades de email e de documento que você pode pesquisar em itens de email no Exchange Online e documentos armazenados em sites do SharePoint e do OneDrive for Business usando o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança. Você também pode usar os ** \*cmdlets-ComplianceSearch** no centro de segurança & de conformidade do PowerShell para pesquisar essas propriedades. O tópico também descreve:   
+Este tópico descreve as propriedades de email e de documento que você pode pesquisar em itens de email no Exchange Online e documentos armazenados em sites do SharePoint e do OneDrive for Business usando o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança. Você também pode usar os ** \*cmdlets-ComplianceSearch** no PowerShell do centro de conformidade e segurança & para pesquisar essas propriedades. O tópico também descreve:   
   
 - Usando operadores de pesquisa booleanos, condições de pesquisa e outras técnicas de consulta de pesquisa para refinar os resultados da pesquisa.
     
@@ -38,11 +38,14 @@ Para obter instruções passo a passo sobre como criar uma pesquisa de conteúdo
 
   
 > [!NOTE]
-> Pesquisa de conteúdo no centro de conformidade do & de segurança e os cmdlets ** \*ComplianceSearch** correspondentes no Security & centro de conformidade o PowerShell usam a palavra-chave Query Language (KQL). Para obter informações mais detalhadas, consulte [referência de sintaxe de linguagem de consulta de palavra-chave](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Pesquisa de conteúdo no centro de conformidade e segurança & e os cmdlets do ** \*ComplianceSearch** correspondentes no PowerShell do centro de conformidade e segurança & usam o idioma de consulta de palavra-chave (KQL). Para obter informações mais detalhadas, consulte [referência de sintaxe de linguagem de consulta de palavra-chave](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Propriedades de emails pesquisáveis
 
-A tabela a seguir lista as propriedades de mensagens de email que podem ser pesquisadas usando o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança ou usando o **novo-ComplianceSearch** ou o cmdlet **set-ComplianceSearch** . A tabela inclui um exemplo da sintaxe da _Propriedade: Value_ para cada propriedade e uma descrição dos resultados da pesquisa retornados pelos exemplos. Você pode digitar esses `property:value` pares na caixa palavras-chave para uma pesquisa de conteúdo. 
+A tabela a seguir lista as propriedades de mensagens de email que podem ser pesquisadas usando o recurso de pesquisa de conteúdo no centro de conformidade & segurança ou usando o cmdlet **New-ComplianceSearch** ou **set-ComplianceSearch** . A tabela inclui um exemplo da sintaxe da _Propriedade: Value_ para cada propriedade e uma descrição dos resultados da pesquisa retornados pelos exemplos. Você pode digitar esses `property:value` pares na caixa palavras-chave para uma pesquisa de conteúdo. 
+
+> [!NOTE]
+> Ao pesquisar as propriedades de email, não é possível pesquisar itens em que a propriedade especificada está vazia ou em branco. Por exemplo, usando o par *Propriedade: Value* do **assunto: ""** para pesquisar mensagens de email com uma linha de assunto vazia retornará zero resultados. Isso também se aplica ao pesquisar Propriedades de site e de contato.
   
 |**Property**|**Descrição da propriedade**|**Exemplos**|**Resultados de pesquisa retornados pelos exemplos**|
 |:-----|:-----|:-----|:-----|
@@ -62,15 +65,16 @@ A tabela a seguir lista as propriedades de mensagens de email que podem ser pesq
 |Destinatários|Todos os campos de destinatários em uma mensagem de email; esses campos são para, CC e Cco. <sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Mensagens enviadas para pauloa@contoso.com. O segundo exemplo retorna mensagens enviadas para qualquer destinatário no domínio contoso.com.|
 |Sent|A data em que uma mensagem de email foi enviada pelo remetente.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Mensagens que foram enviadas na data especificada ou dentro do intervalo de datas especificado.|
 |Tamanho|O tamanho de um item, em bytes.|`size>26214400`  <br/> `size:1..1048567`|Mensagens maiores do que 25?? MB. O segundo exemplo retorna mensagens de 1 a 1.048.567 bytes (1 MB) de tamanho.|
-|Subject|O texto na linha de assunto de uma mensagem de email.  <br/> **Observação:** Quando você usa a propriedade Subject em uma consulta, a pesquisa do ???the retorna todas as mensagens nas quais a linha de assunto contém o texto que você está pesquisando. Em outras palavras, a consulta não retorna apenas as mensagens que têm uma correspondência exata. Por exemplo, se você procurar `subject:"Quarterly Financials"`, seus resultados incluirão mensagens com o assunto "Finanças trimestralmente 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Mensagens que contenham a frase "Finanças trimestrais" em qualquer lugar do texto da linha de assunto. O segundo exemplo retorna todas as mensagens que contêm a palavra northwind na linha de assunto.|
+|Subject|O texto na linha de assunto de uma mensagem de email.  <br/> **Observação:** Quando você usa a propriedade Subject em uma consulta,??? a pesquisa retorna todas as mensagens nas quais a linha de assunto contém o texto que você está pesquisando. Em outras palavras, a consulta não retorna apenas as mensagens que têm uma correspondência exata. Por exemplo, se você procurar `subject:"Quarterly Financials"`, seus resultados incluirão mensagens com o assunto "Finanças trimestralmente 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Mensagens que contenham a frase "Finanças trimestrais" em qualquer lugar do texto da linha de assunto. O segundo exemplo retorna todas as mensagens que contêm a palavra northwind na linha de assunto.|
 |To|O campo para de uma mensagem de email. <sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|Todos os exemplos retornam mensagens em que Clara Barbosa é especificada na linha Para:.|
+|||||
    
 > [!NOTE]
 > <sup>1</sup> para o valor de uma propriedade de destinatário, você pode usar o endereço de email (também chamado de UPN ou *nome principal de usuário* ), nome de exibição ou alias para especificar um usuário. Por exemplo, você pode usar clarab@contoso.com, clarab ou "Clara Barbosa" para especificar o usuário Clara Barbosa.<br/><br/>Ao pesquisar qualquer uma das propriedades de destinatário (de, para, CC, Cco, participantes e destinatários), o Office 365 tenta expandir a identidade de cada usuário procurando-o no Azure Active Directory.  Se o usuário for localizado no Azure Active Directory, a consulta será expandida para incluir o endereço de email do usuário (ou UPN), o alias, o nome para exibição e LegacyExchangeDN.<br/><br/>Por exemplo, uma consulta como `participants:ronnie@contoso.com` expande para. `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`
 
 ## <a name="searchable-site-properties"></a>Propriedades de sites pesquisáveis
 
-A tabela a seguir lista algumas das propriedades do SharePoint e do OneDrive for Business que podem ser pesquisadas usando o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança ou usando o **New-ComplianceSearch** ou o **set-ComplianceSearch **cmdlet. A tabela inclui um exemplo da sintaxe da _Propriedade: Value_ para cada propriedade e uma descrição dos resultados da pesquisa retornados pelos exemplos. 
+A tabela a seguir lista algumas das propriedades do SharePoint e do OneDrive for Business que podem ser pesquisadas usando o recurso de pesquisa de conteúdo no centro de conformidade de & de segurança ou usando o **New-ComplianceSearch** ou o **set-ComplianceSearch **cmdlet. A tabela inclui um exemplo da sintaxe da _Propriedade: Value_ para cada propriedade e uma descrição dos resultados da pesquisa retornados pelos exemplos. 
   
 Para obter uma lista completa das propriedades do SharePoint que podem ser pesquisadas, confira [visão geral das propriedades rastreadas e gerenciadas no SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). As propriedades marcadas com um **Sim** na coluna **consultável** podem ser pesquisadas. 
   
@@ -91,6 +95,7 @@ Para obter uma lista completa das propriedades do SharePoint que podem ser pesqu
 |Site|A URL de um site ou grupo de sites em sua organização.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|O primeiro exemplo retorna itens dos sites do OneDrive for Business para todos os usuários da organização. O segundo exemplo retorna itens de todos os sites de equipe.|
 |Tamanho|O tamanho de um item, em bytes.|`size>=1`  <br/> `size:1..10000`|O primeiro exemplo retorna itens com mais de 1 byte. O segundo exemplo retorna itens de 1 a 10.000 bytes de tamanho.|
 |Título|O título do documento. A propriedade Title é metadados especificados em documentos do Microsoft Office. É diferente do nome de arquivo do documento.|`title:"communication plan"`|Qualquer documento que contém a frase "plano de comunicação" na propriedade de metadados Title de um documento do Office.|
+|||||
    
 ## <a name="searchable-contact-properties"></a>Propriedades de contato pesquisáveis
 
@@ -119,13 +124,13 @@ A tabela a seguir lista as propriedades de contato que estão indexadas e que vo
 |OtherAddress|O valor da propriedade **outro** endereço.|
 |Sobrenome|O nome na propriedade **Last** Name.|
 |Título|O título na propriedade **cargo** .|
-   
+|||||
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de dados confidenciais pesquisáveis
 
-Você pode usar o recurso de pesquisa de conteúdo no centro de conformidade e segurança para pesquisar dados confidenciais, como números de cartão de crédito ou números de seguridade social, que são armazenados em documentos nos sites do SharePoint e do OneDrive for Business. Você pode fazer isso usando a `SensitiveType` Propriedade e o nome de um tipo de informação confidencial em uma consulta de palavra-chave. Por exemplo, a consulta `SensitiveType:"Credit Card Number"` retorna documentos que contenham um número de cartão de crédito. A consulta `SensitiveType:"U.S. Social Security Number (SSN)"` retorna documentos que contêm um número de segurança social dos EUA. Para ver uma lista dos tipos de dados confidenciais que você pode pesquisar, vá para **classificações** \> de **tipos de informações confidenciais** no centro de conformidade do & de segurança. Ou você pode usar o cmdlet **Get-DlpSensitiveInformationType** no PowerShell do centro de conformidade do _AMP_ de segurança para exibir uma lista de tipos de informações confidenciais. 
+Você pode usar o recurso de pesquisa de conteúdo no centro de conformidade e segurança para pesquisar dados confidenciais, como números de cartão de crédito ou números de seguridade social, que são armazenados em documentos nos sites do SharePoint e do OneDrive for Business. Você pode fazer isso usando a `SensitiveType` Propriedade e o nome de um tipo de informação confidencial em uma consulta de palavra-chave. Por exemplo, a consulta `SensitiveType:"Credit Card Number"` retorna documentos que contenham um número de cartão de crédito. A consulta `SensitiveType:"U.S. Social Security Number (SSN)"` retorna documentos que contêm um número de segurança social dos EUA. Para ver uma lista dos tipos de dados confidenciais que você pode pesquisar, vá para **classificações** \> de **tipos de informações confidenciais** no centro de conformidade de & de segurança. Ou você pode usar o cmdlet **Get-DlpSensitiveInformationType** no PowerShell do centro de conformidade e segurança & para exibir uma lista de tipos de informações confidenciais. 
   
-Você também pode usar a `SensitiveType` propriedade para pesquisar o nome de um tipo de informação confidencial personalizado que você (ou outro administrador) criou para sua organização. Observe que você pode usar a coluna **Publisher** na página **tipos de informações confidenciais** no centro de conformidade do & de segurança (ou na propriedade **Publisher** no PowerShell) para diferenciar entre informações confidenciais internas e personalizadas digitar. Para obter mais informações, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md).
+Você também pode usar a `SensitiveType` propriedade para pesquisar o nome de um tipo de informação confidencial personalizado que você (ou outro administrador) criou para sua organização. Observe que você pode usar a coluna **Publisher** na página **tipos de informações confidenciais** no centro de conformidade & segurança (ou na propriedade **Publisher** no PowerShell) para diferenciar entre informações confidenciais internas e personalizadas digitar. Para obter mais informações, consulte [criar um tipo de informação confidencial personalizado](create-a-custom-sensitive-information-type.md).
   
 Para obter mais informações sobre como criar consultas `SensitiveType` usando a propriedade, consulte [formulário uma consulta para encontrar dados confidenciais armazenados em sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
@@ -144,7 +149,7 @@ Operadores de pesquisa booleanos, como **e**, **ou**, e **não**, ajudam você a
 |NÃO|palavra-chave1 NOT palavra-chave2  <br/> NOT from:"Clara Barbosa"  <br/> Não tipo: im|Exclui os itens especificados por uma palavra-chave `property:value` ou uma expressão. No segundo exemplo exclui mensagens enviadas por Ana Beebe. O terceiro exemplo exclui conversas de mensagens instantâneas, como conversas do Skype for Business salvas na pasta caixa de correio de histórico de conversas. <sup>duas</sup>|
 |-|palavra-palavra-chave2|O mesmo que o operador **NOT**. Portanto, essa consulta retorna itens que `keyword1` contenham e exclua `keyword2`itens que contêm.|
 |NEAR|palavra-chave1 NEAR(n) palavra-chave2|Retorna itens com palavras que estão próximas umas das outras, em que n é igual ao número de palavras de distância. Por exemplo, `best NEAR(5) worst` retorna qualquer item em que a palavra "pior" está dentro de cinco palavras de "Best". Se nenhum número for especificado, a distância padrão será de oito palavras. <sup>duas</sup>|
-|ONEAR|palavra-chave1 ONEAR(n) palavra-chave2|Semelhante a **Near**, mas retorna itens com palavras próximas umas das outras na ordem especificada. Por exemplo, `best ONEAR(5) worst` retorna qualquer item em que a palavra "Best" ocorre antes da palavra "pior" e que as duas palavras estejam dentro de cinco palavras umas das outras. Se nenhum número for especificado, a distância padrão será de oito palavras. <sup>duas</sup> <br/> > [!NOTE]> não há suporte para o operador **ONEAR** ao pesquisar caixas de correio; Ele só funciona ao pesquisar sites do SharePoint e do OneDrive for Business. Se você estiver pesquisando caixas de correio e sites na mesma pesquisa e a consulta incluir o operador **ONEAR** , a pesquisa retornará itens de caixa de correio como se você estivesse usando o operador **Near** . Em outras palavras, a pesquisa retorna itens nos quais as palavras especificadas estão próximas umas das outras, independentemente da ordem na qual as palavras ocorrem.|
+|ONEAR|palavra-chave1 ONEAR(n) palavra-chave2|Semelhante a **Near**, mas retorna itens com palavras próximas umas das outras na ordem especificada. Por exemplo, `best ONEAR(5) worst` retorna qualquer item em que a palavra "Best" ocorre antes da palavra "pior" e que as duas palavras estejam dentro de cinco palavras umas das outras. Se nenhum número for especificado, a distância padrão será de oito palavras. <sup>duas</sup> <br/> > [!NOTE]> o operador **ONEAR** não é suportado ao pesquisar caixas de correio; Ele só funciona ao pesquisar sites do SharePoint e do OneDrive for Business. Se você estiver pesquisando caixas de correio e sites na mesma pesquisa e a consulta incluir o operador **ONEAR** , a pesquisa retornará itens de caixa de correio como se você estivesse usando o operador **Near** . Em outras palavras, a pesquisa retorna itens nos quais as palavras especificadas estão próximas umas das outras, independentemente da ordem na qual as palavras ocorrem.|
 |:|Propriedade: Value|Os dois-pontos (:) na `property:value` sintaxe especifica que o valor da propriedade que está sendo pesquisada contém o valor especificado. Por exemplo, `recipients:garthf@contoso.com` retorna qualquer mensagem enviada para garthf@contoso.com.|
 |=|Propriedade = valor|O mesmo que o operador **:** .|
 |\<|valor\<da propriedade|Indica que a propriedade que está sendo pesquisada é menor do que o valor especificado.  <sup>1</sup>|
@@ -155,6 +160,7 @@ Operadores de pesquisa booleanos, como **e**, **ou**, e **não**, ajudam você a
 |"  "|"valor justo"  <br/> assunto:"Finanças trimestrais"|Usar aspas duplas ("") para pesquisar uma frase exata ou termo em consultas de palavra `property:value` -chave e de pesquisa.|
 |\*|tomografia\*  <br/> subject: Set\*|As pesquisas curinga de prefixo (onde o asterisco é colocado no final de uma palavra) correspondem a zero ou mais caracteres em palavras-chave `property:value` ou consultas. Por exemplo, `title:set*` retorna documentos que contenham a palavra set, setup e setting (e outras palavras que começam com "set") no título do documento.  <br/><br/> **Observação:** Você pode usar apenas pesquisas curinga de prefixo; por exemplo, **Cat\* ** ou **set\***. Pesquisas de sufixo ( ** \*Cat** ), pesquisas de refixo ( **\*c t** ) e pesquisas de subcadeias ( ** \*Cat\* ** ) não são suportadas.|
 |(  )| (justo OR grátis) AND (from:contoso.com)  <br/>  (IPO OR inicial) AND (ação OR títulos)  <br/>  (finanças trimestrais)|Os parênteses agrupam frases, `property:value` itens e palavras-chave booleanas. Por exemplo, `(quarterly financials)` retorna itens que contêm as palavras trimestrais e financeiras.|
+|||||
    
 > [!NOTE]
 > <sup>1</sup> Use esse operador para propriedades que têm valores de data ou numéricos.<br/> <sup>2</sup> operadores de pesquisa booleanos devem estar em maiúsculas; por exemplo, **e**. Se você usar um operador em minúsculas, como **e**, ele será tratado como uma palavra-chave na consulta de pesquisa. 
@@ -186,6 +192,7 @@ Crie uma condição usando propriedades comuns ao pesquisar caixas de correio e 
 |Tamanho (em bytes)|Para emails e documentos, o tamanho do item (em bytes).|
 |Assunto/título|Para email, o texto na linha de assunto de uma mensagem. Para documentos, o título do documento. Como explicado anteriormente, a propriedade Title é Metadata especificado em documentos do Microsoft Office. Você pode digitar o nome de mais de um assunto/título, separados por vírgulas. Dois ou mais valores são logicamente conectadas pelo operador **OR**.|
 |Marca de conformidade|Para emails e documentos, rótulos que foram atribuídos a mensagens e documentos automaticamente por políticas de rótulo ou rótulos que foram atribuídos manualmente pelos usuários. Os rótulos são usados para classificar emails e documentos para governança de dados e aplicar regras de retenção com base na classificação definida pelo rótulo. Você pode digitar parte do nome do rótulo e usar um caractere curinga ou digitar o nome completo do rótulo. Para obter mais informações, consulte [visão geral dos rótulos no Office 365](labels.md).|
+|||
   
 ### <a name="conditions-for-mail-properties"></a>Condições para propriedades de email
 
@@ -202,6 +209,7 @@ Crie uma condição usando propriedades de email ao pesquisar caixas de correio 
 |Sent|A data em que uma mensagem de email foi enviada pelo remetente. Essa propriedade é igual à propriedade de email Sent.|
 |Subject|O texto na linha de assunto de uma mensagem de email.|
 |To|O destinatário de uma mensagem de email.|
+|||
   
 ### <a name="conditions-for-document-properties"></a>Condições para propriedades de documentos
 
@@ -214,6 +222,7 @@ Crie uma condição usando as propriedades do documento ao pesquisar documentos 
 |Created|A data em que um documento foi criado.|
 |Última modificação|A data em que um documento foi alterado pela última vez.|
 |Tipo de arquivo|A extensão de um arquivo; por exemplo, docx, One, pptx ou xlsx. Essa propriedade é igual à propriedade de site FileExtension.|
+|||
   
 ### <a name="operators-used-with-conditions"></a>Operadores usados com condições
 
@@ -234,6 +243,7 @@ Ao adicionar uma condição, você pode selecionar um operador que é relevante 
 |Menos|`size<value`|Retorna itens que são maiores ou iguais ao valor específico. <sup>1</sup>|
 |Less or equal|`size<=value`|Retorna itens que são maiores ou iguais ao valor específico. <sup>1</sup>|
 |Not equal|`size<>value`|Retorna itens que não são iguais ao tamanho especificado. <sup>1</sup>|
+|||
    
 > [!NOTE]
 > <sup>1</sup> esse operador está disponível somente para condições que usam a propriedade Size. 
@@ -320,7 +330,7 @@ Este exemplo retorna mensagens de email ou reuniões de calendário que foram en
   
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Pesquisar conteúdo de site compartilhado com usuários externos
 
-Você também pode usar o recurso de pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar documentos armazenados em sites do SharePoint e do OneDrive for Business que foram compartilhados com pessoas de fora da sua organização. Isso pode ajudá-lo a identificar informações confidenciais ou proprietárias que estão sendo compartilhadas fora de sua organização. Você pode fazer isso usando a `ViewableByExternalUsers` Propriedade em uma consulta de palavra-chave. Esta propriedade retornará documentos ou sites que foram compartilhados com usuários externos usando um dos seguintes métodos de compartilhamento: 
+Você também pode usar o recurso de pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar documentos armazenados em sites do SharePoint e do OneDrive for Business que foram compartilhados com pessoas de fora da sua organização. Isso pode ajudá-lo a identificar informações confidenciais ou proprietárias que estão sendo compartilhadas fora de sua organização. Você pode fazer isso usando a `ViewableByExternalUsers` Propriedade em uma consulta de palavra-chave. Esta propriedade retornará documentos ou sites que foram compartilhados com usuários externos usando um dos seguintes métodos de compartilhamento: 
   
 - Um convite de compartilhamento que exige que os usuários entrem em sua organização como um usuário autenticado.
     

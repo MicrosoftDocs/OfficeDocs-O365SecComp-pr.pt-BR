@@ -3,20 +3,19 @@ title: Impressão Digital de Documento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Os funcionários de TI em sua organização lidam com vários tipos de informações confidenciais em um dia comum. A Impressão Digital de Documento facilita a proteção dessas informações identificando formas padrão usadas em sua organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
-ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 56f67d1e3948ed66defa10a0815a4fdf87a13cb1
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256890"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199538"
 ---
 # <a name="document-fingerprinting"></a>Impressão Digital de Documento
 
@@ -44,9 +43,9 @@ O exemplo a seguir mostra o que acontecerá se você criar uma impressão digita
   
 **Exemplo de um documento de patente correspondente a uma impressão digital de documento de um modelo de patente**
 
-![Document_Fingerprinting_diagram. png](media/Document_Fingerprinting_diagram.png)
+![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
   
-O modelo de patente contém os campos em branco "título da patente", "inVentrs" e "Descrição" e as descrições de cada um desses campos, que é o padrão da palavra. Quando você carrega o modelo de patente original, ele está em um dos tipos de arquivo com suporte e em texto sem formatação. A DLP converte esse padrão de Word em uma impressão digital de documento, que é um pequeno arquivo XML Unicode contendo um valor de hash exclusivo representando o texto original e a impressão digital é salva como uma classificação de dados no Active Directory. (Como medida de segurança, o próprio documento original não é armazenado no serviço; somente o valor de hash é armazenado e o documento original não pode ser reconstruído com base no valor de hash.) A impressão digital de patente torna-se um tipo de informação confidencial que você pode associar a uma política de DLP. Depois de associar a impressão digital com uma política de DLP, a DLP detecta qualquer email de saída contendo documentos que correspondam à impressão digital de patente e lidam com eles de acordo com a política da sua organização. 
+O modelo de patente contém os campos em branco "título da patente", "inventrs" e "Descrição" e as descrições de cada um desses campos, que é o padrão da palavra. Quando você carrega o modelo de patente original, ele está em um dos tipos de arquivo com suporte e em texto sem formatação. A DLP converte esse padrão de Word em uma impressão digital de documento, que é um pequeno arquivo XML Unicode contendo um valor de hash exclusivo representando o texto original e a impressão digital é salva como uma classificação de dados no Active Directory. (Como medida de segurança, o próprio documento original não é armazenado no serviço; somente o valor de hash é armazenado e o documento original não pode ser reconstruído com base no valor de hash.) A impressão digital de patente torna-se um tipo de informação confidencial que você pode associar a uma política de DLP. Depois de associar a impressão digital com uma política de DLP, a DLP detecta qualquer email de saída contendo documentos que correspondam à impressão digital de patente e lidam com eles de acordo com a política da sua organização. 
 
 Por exemplo, você pode querer configurar uma política de DLP que impede que funcionários regulares enviem mensagens de saída contendo patentes. A DLP usará a impressão digital de patente para detectar patentes e bloquear esses emails. Como alternativa, você pode querer permitir que seu departamento jurídico seja capaz de enviar patentes para outras organizações, pois tem uma necessidade comercial para fazê-lo. Você pode permitir que departamentos específicos enviem informações confidenciais criando exceções para esses departamentos em sua política de DLP ou pode permitir que eles substituam uma dica de política com uma justificativa de negócios.
   

@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: A proteção avançada contra ameaças do Office 365 inclui anexos seguros, links seguros, ferramentas anti-phishing avançadas, ferramentas de relatórios e recursos de inteligência de ameaças.
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408376"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652654"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Proteção Avançada contra Ameaças do Office 365
 
 > [!IMPORTANT]
-> Este artigo destina-se aos clientes do Office 365 Enterprise e do Microsoft 365 Enterprise. Se você estiver usando o Outlook.com, o Office 365 Home ou o Office 365 Personal e estiver procurando informações sobre links seguros no Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artigo destina-se a clientes corporativos com [proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se você estiver usando o Outlook.com, o Office 365 Home ou o Office 365 Personal e estiver procurando informações sobre links seguros no Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Visão geral
 
@@ -47,7 +47,7 @@ A ATP está incluída no Office 365 e5; no entanto, o plano ATP e o plano ATP 2 
 
 O Office 365 ATP oferece várias ferramentas para definir um nível apropriado de proteção para sua organização. 
 
-A equipe de segurança da sua organização deve definir políticas para cada ferramenta ATP no centro de conformidade do & de segurança do Office 365. Vá para **** > **política** de gerenciamento de ameaças para acessar opções de política. (Para obter ajuda para isso, confira [Guia de início rápido: configurar a proteção avançada contra ameaças do Office 365](checklist-atp-setup.md).)
+A equipe de segurança da sua organização deve definir políticas para cada ferramenta ATP no centro de conformidade & segurança do Office 365. Vá para **** > **política** de gerenciamento de ameaças para acessar opções de política. (Para obter ajuda para isso, confira [Guia de início rápido: configurar a proteção avançada contra ameaças do Office 365](checklist-atp-setup.md).)
 
 As políticas definidas para sua organização determinam o comportamento e o nível de proteção para ameaças predefinidas. As opções de política são extremamente flexíveis. Por exemplo, a equipe de segurança da sua organização pode definir a proteção de ameaças refinada no nível de usuário, organização, destinatário e domínio. É importante revisar suas políticas regularmente, pois surgem novas ameaças e desafios.  
 
@@ -61,7 +61,7 @@ As políticas definidas para sua organização determinam o comportamento e o n�
 
 ## <a name="view-atp-reports"></a>Exibir relatórios da ATP
 
-O Office 365 ATP inclui um [painel](view-reports-for-atp.md) avançado de relatórios para monitorar o desempenho da ATP. Você pode acessá-lo em **relatórios do _GT_ Dashboard** no centro de conformidade do _AMP_ de segurança. 
+O Office 365 ATP inclui um [painel](view-reports-for-atp.md) avançado de relatórios para monitorar o desempenho da ATP. Você pode acessá-lo em **relatórios > painel** no centro de conformidade do & de segurança. 
 
 Relata a atualização em tempo real, fornecendo as informações mais recentes. Esses relatórios também fornecem recomendações e alertam você sobre ameaças iminentes. Os relatórios predefinidos incluem o seguinte: 
 
@@ -93,7 +93,7 @@ O AIR inclui um conjunto de guias de segurança que podem ser iniciados automati
 
 ## <a name="permissions-required-to-use-atp-features"></a>Permissões necessárias para usar os recursos de ATP
 
-Para acessar os recursos de ATP no centro de conformidade do & de segurança, você deve ter uma função apropriada atribuída. A tabela a seguir inclui alguns exemplos:
+Para acessar os recursos de ATP no centro de conformidade de & de segurança, você deve ter uma função apropriada atribuída. A tabela a seguir inclui alguns exemplos:
 
 |Função ou grupo de função  |Recursos para saber mais  |
 |---------|---------|
@@ -103,9 +103,9 @@ Para acessar os recursos de ATP no centro de conformidade do & de segurança, vo
 
 Para obter mais informações, consulte:
 
-- [Permissões no centro de conformidade do & de segurança](permissions-in-the-security-and-compliance-center.md) 
+- [Permissões no centro de conformidade & segurança](permissions-in-the-security-and-compliance-center.md) 
 
-- [Conceder aos usuários acesso ao centro de conformidade do & de segurança](grant-access-to-the-security-and-compliance-center.md)
+- [Conceder aos usuários acesso ao centro de conformidade & segurança](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="get-office-365-atp"></a>Obter o Office 365 ATP
 

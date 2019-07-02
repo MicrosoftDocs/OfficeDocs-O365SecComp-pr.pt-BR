@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 37a5c6805579ecb9b03e6bd8f95562fe4c3e9521
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1641c97e115c8dc12a0df3a0e6bba99163bae90c
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261270"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852835"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Visão geral da central de segurança do Microsoft 365
 
@@ -42,8 +42,8 @@ Essa informação instantânea ajuda você a acompanhar as atividades mais recen
 A central de segurança do Microsoft 365 inclui:
 
 * **Página inicial** – obtenha uma visão geral da integridade geral da segurança da sua organização.
-* **Alertas** – tenha maior visibilidade em todos os alertas em seu ambiente do Microsoft 356, incluindo alertas do Microsoft Cloud app Security, Office 365 ATP, Azure AD e Windows Defender ATP. Disponível para clientes E3 e e5.  
-* **Monitoramento de relatórios do &** – obtenha os detalhes e as informações de que você precisa para proteger melhor seus usuários, dispositivos, aplicativos e muito mais. 
+* **Alertas** – tenha maior visibilidade em todos os alertas em seu ambiente do Microsoft 356, incluindo alertas do Microsoft Cloud app Security, Office 365 ATP, Azure AD e Microsoft defender ATP. Disponível para clientes E3 e e5.  
+* **Relatórios** – obtenha os detalhes e as informações de que você precisa para proteger melhor seus usuários, dispositivos, aplicativos e muito mais.
 * **Pontuação segura** – aprimore sua postura geral de segurança com a pontuação segura da Microsoft. Esta página fornece um resumo de recursos de segurança e recursos diferentes que você habilitou e inclui recomendações para as áreas a serem aprimoradas.
 * **Caça** – pesquise proativamente por malware, arquivos suspeitos e atividades em sua organização do Microsoft 365.
 * **Classificação** – ajude a proteger a perda de dados adicionando rótulos para classificar documentos, mensagens de email, documentos, sites e muito mais. Quando um rótulo é aplicado (automaticamente ou pelo usuário), o conteúdo ou site é protegido com base nas configurações escolhidas. Por exemplo, você pode criar rótulos que criptografam arquivos, adicionam a marcação de conteúdo e controlam o acesso do usuário a sites específicos.
@@ -55,6 +55,6 @@ A central de segurança do Microsoft 365 inclui:
 Explore estes tópicos sobre como monitorar, analisar e responder às suas necessidades de segurança:
 
 * Revise e aprimore a postura de segurança globalmente com a [Pontuação segura da Microsoft](microsoft-secure-score.md)
-* [Monitorar e relatar](monitoring-and-reporting.md) o status de suas identidades, dados, dispositivos, aplicativos e infraestrutura
+* [Relatar](monitoring-and-reporting.md) o status de suas identidades, dados, dispositivos, aplicativos e infraestrutura
 * [Busca pró-ativa](hunting.md) por tentativas de invasão e atividade de violação que afetem seus emails, dados, dispositivos e contas
 * [Entender as campanhas e as técnicas de ataque mais recentes com a](latest-attack-campaigns.md) análise de ameaças

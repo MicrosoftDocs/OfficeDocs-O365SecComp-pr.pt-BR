@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os tipos de informações confidenciais procuram um padrão específico e o corroboratem, garantindo a formatação adequada, aplicando as somas de verificação e procurando palavras-chave relevantes ou outras informações. Algumas dessas funcionalidades são realizadas por funções internas. Este tópico explica o que essas funções procuram, para ajudar você a entender como funcionam os tipos de informações confidenciais predefinidas.
-ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266913"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077997"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>O que as funções DLP procuram
 
@@ -93,7 +93,7 @@ Nomes de meses aceitos:
     
   - Janvier, Février, Mars, Avril, Mai, Juin Juillet, Août, Septembre, outubro, Novembre, décembre
     
-  - Janv. févr. Mars Avril Mai Juin Juil. Août set. Outubro. Nov. déc.
+  - janv. févr. Mars Avril Mai Juin Juil. Août set. Outubro. Nov. déc.
     
 - Alemão
     
@@ -103,9 +103,9 @@ Nomes de meses aceitos:
     
 - Italiano
     
-  - gennaio, febbraio, Marzo, Aprile, Maggio, giugno, Luglio, agosto, Settembre, ottobre, Novembre, Dicembre
+  - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - Genn. febbr. mar. abr. Magg. giugno Luglio AG. definida. Ott. Nov. DIC.
+  - genn. febbr. mar. abr. magg. giugno Luglio AG. definida. ott. Nov. DIC.
     
 - Português
     
@@ -115,7 +115,7 @@ Nomes de meses aceitos:
     
 - Espanhol
     
-  - Enero, Febrero, Marzo, abril, Mayo, junio, Julio, agosto, Septiembre, Octubre, Noviembre, Diciembre
+  - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
     
   - Enero Fev. Marzo abr. Mayo Jun. Jul. agosto set./set. Outubro. Nov. DIC.
     

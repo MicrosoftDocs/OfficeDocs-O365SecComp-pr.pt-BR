@@ -3,7 +3,7 @@ title: Enviar notificações por email e mostrar dicas para políticas de DLP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
+ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Uma dica de política é uma notificação ou um aviso que aparece quando alguém está trabalhando com conteúdo que está em conflito com uma política de DLP. Você pode usar notificações por email e dicas de política para aumentar a conscientização e ajudar a ensinar as pessoas sobre as políticas da sua organização. Você também pode conceder às pessoas a opção de substituir a política, para que elas não sejam bloqueadas se tiverem uma necessidade comercial válida ou se a política estiver detectando um falso positivo. '
-ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
+ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077357"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34948899"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificações por email e mostrar dicas para políticas de DLP
 
@@ -41,9 +41,9 @@ No centro de conformidade de &amp; segurança do Office 365, ao criar uma polít
     
   - Para email no Outlook na Web e no Outlook 2013 e posterior, a dica de política aparece na parte superior de uma mensagem acima dos destinatários enquanto a mensagem está sendo redigida.
     
-  - Para documentos em uma conta do OneDrive for Business ou site do SharePoint Online, a dica de política é indicada por um ícone de aviso que aparece no item. Para exibir mais informações, você pode selecionar um item e, em ****![seguida, escolher o](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) ícone painel de informações de informações no canto superior direito da página para abrir o painel de detalhes. 
+  - Para documentos em uma conta do OneDrive for Business ou site do SharePoint Online, a dica de política é indicada por um ícone de aviso que aparece no item. Para exibir mais informações, você pode selecionar um item e, em **** ![seguida, escolher o](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) ícone painel de informações de informações no canto superior direito da página para abrir o painel de detalhes. 
     
-  - Para documentos do Excel 2016, PowerPoint 2016 e Word 2016 que são armazenados em um site do OneDrive for Business ou site do SharePoint Online incluído na política de DLP, a dica de política é exibida na barra de mensagens e no modo de exibição Backstage (menu **arquivo** \> ** Informações**).
+  - Para documentos do Excel, PowerPoint e Word que são armazenados em um site do onedrive for Business ou site do SharePoint Online incluído na política de DLP, a dica de política é exibida na barra de mensagens e no modo de exibição Backstage ( \> **informações**do menu de **arquivo** ).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Adicionar notificações de usuário a uma política de DLP
 
@@ -80,6 +80,9 @@ Quando você cria uma política de DLP, as notificações por email e as dicas d
 9. No editor de regras, em **notificações do usuário**, altere o status para.
     
     ![Seção notificações de usuário do editor de regras](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+
+> [!NOTE]
+> As políticas de DLP aplicam-se a todos os documentos que correspondem à política, independentemente de esses documentos serem novos ou existentes. No entanto, uma notificação de email só é gerada quando o novo conteúdo corresponde a uma política de DLP existente. O conteúdo existente é protegido, mas não gerará uma notificação de usuário por email.
   
 ## <a name="options-for-configuring-email-notifications"></a>Opções para a configuração de notificações por email
 
@@ -90,7 +93,7 @@ Para cada regra de uma política de DLP, você pode:
 - Personalizar o texto que está incluído na notificação usando HTML ou tokens. Confira a seção abaixo para obter mais informações.
     
 > [!NOTE]
->  As notificações por email podem ser enviadas somente para destinatários individuais, não grupos ou listas de distribuição. Apenas o novo conteúdo disparará uma notificação por email. Editar o conteúdo existente disparará dicas de política, mas não uma notificação por email. 
+>  As notificações por email podem ser enviadas somente para destinatários individuais, não grupos ou listas de distribuição. Apenas o novo conteúdo disparará uma notificação por email. A edição do conteúdo existente disparará dicas de política, mas não uma notificação por email. 
   
 ![Opções de notificação por email](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -162,7 +165,7 @@ Quando um documento em um site do OneDrive for Business ou do SharePoint Online 
     
 ![Ícones de dica de política em documentos em uma conta do OneDrive](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Para executar uma ação em um documento, você pode selecionar um \> item escolha o ícone](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) do painel de informações de **informações**![no canto superior direito da página para abrir a \> **dica de política de exibição**do painel de detalhes.
+Para executar uma ação em um documento, você pode selecionar um \> item escolha o ícone](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) do painel de informações de **informações** ![no canto superior direito da página para abrir a \> **dica de política de exibição**do painel de detalhes.
   
 A dica de política lista os problemas com o conteúdo e se as dicas de política forem configuradas com essas opções, você pode escolher **Resolver** e então **Substituir** a dica de política ou **Relatar** um falso positivo. 
   
@@ -241,15 +244,15 @@ Por padrão, as dicas de política exibem texto semelhante ao seguinte para emai
 |Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Seu email entra em conflito com uma política da sua organização.  <br/> |
 |Bloqueia o acesso e envia uma notificação  <br/> |Seu email entra em conflito com uma política da sua organização.  <br/> |
    
-## <a name="policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Dicas de política no Excel 2016, PowerPoint 2016 e Word 2016
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Dicas de política no Excel, PowerPoint e Word
 
-Quando as pessoas trabalham com conteúdo confidencial nas versões de área de trabalho do Excel 2016, PowerPoint 2016 e Word 2016, as dicas de política podem notificar a elas em tempo real que o conteúdo está em conflito com uma política de DLP. Isso requer que:
+Quando as pessoas trabalham com conteúdo confidencial nas versões de área de trabalho do Excel, PowerPoint e Word, as dicas de política podem notificá-los em tempo real de que o conteúdo está em conflito com uma política de DLP. Isso requer que:
   
 - O documento do Office esteja armazenado em um site do OneDrive for Business ou do SharePoint Online.
     
 - O site é incluído em uma política de DLP que é configurada para usar dicas de política.
     
-Estes programas de área de trabalho do Office 2016 sincronizam automaticamente políticas DLP diretamente do Office 365 e, em seguida, examinam seus documentos para garantir que eles não entrem em conflito com suas políticas de DLP e exibam dicas de política em tempo real.
+Os programas da área de trabalho do Office sincronizam automaticamente políticas DLP diretamente do Office 365 e, em seguida, examinam seus documentos para garantir que eles não entrem em conflito com suas políticas de DLP e exibem dicas de política em tempo real.
   
 Dependendo de como você configurar as dicas de política na política de DLP, as pessoas podem optar por simplesmente ignorar a dica de política, substituir a diretiva com ou sem uma justificativa de negócios ou relatar um falso positivo.
   
@@ -265,7 +268,7 @@ Se as dicas de política na política de DLP forem configuradas com essas opçõ
   
 ![Opções sobre dicas de política no Backstage no Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-Em cada um desses programas de área de trabalho do Office 2016, as pessoas podem optar por desativar dicas de política. Se estiverem desativadas, as dicas de política que são simples notificações não aparecerão no modo de exibição Backstage ou Barra de mensagens (na guia **Arquivo**). Entretanto, as dicas de política sobre bloqueio e substituição ainda serão exibidas e ainda receberão a notificação de email. Além disso, desativar dicas de política não isenta o documento de quaisquer políticas de DLP que foram aplicadas a ele. 
+Em cada um desses programas da área de trabalho do Office, as pessoas podem optar por desativar as dicas de política. Se estiverem desativadas, as dicas de política que são simples notificações não aparecerão no modo de exibição Backstage ou Barra de mensagens (na guia **Arquivo**). Entretanto, as dicas de política sobre bloqueio e substituição ainda serão exibidas e ainda receberão a notificação de email. Além disso, desativar dicas de política não isenta o documento de quaisquer políticas de DLP que foram aplicadas a ele. 
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto padrão para dicas de política no Excel 2016, PowerPoint 2016 e Word 2016
 
@@ -277,7 +280,7 @@ Por padrão, as dicas de política exibem texto semelhante ao seguinte no modo d
 |Bloqueia o acesso, envia uma notificação e permite a substituição  <br/> |Este arquivo está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.  <br/> |
 |Bloqueia o acesso e envia uma notificação  <br/> |Este arquivo está em conflito com uma política de sua organização. Se você não resolver esse conflito, o acesso a esse arquivo poderá ser bloqueado. Vá para o menu **arquivo** para obter mais informações.  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto personalizado para dicas de política no Excel 2016, PowerPoint 2016 e Word 2016
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Texto personalizado para dicas de política no Excel, PowerPoint e Word
 
 Você pode personalizar o texto para dicas de política separadamente da notificação por email. Ao contrário do texto personalizado para notificações por email (consulte a seção acima), o texto personalizado para dicas de política não aceita HTML ou tokens. Em vez disso, o texto personalizado para dicas de política é texto sem formatação somente com um limite de 256 caracteres.
   

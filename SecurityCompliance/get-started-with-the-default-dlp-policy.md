@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 8/10/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Antes de criar a primeira política de DLP (prevenção contra perda de dados), a DLP está ajudando a proteger suas informações confidenciais com uma política padrão. Essa política padrão e sua recomendação (mostrado abaixo) ajudam a manter seu conteúdo confidencial seguro, notificando-o quando emails ou documentos contendo um número de cartão de crédito foram compartilhados com alguém de fora da sua organização.
-ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a14e2c9c1f833552c11e55ec76f6f804e0311479
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077917"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introdução à política DLP padrão
 
@@ -32,7 +32,7 @@ Você pode usar esse widget para exibir rapidamente quando e quantas informaçõ
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Exibir o relatório e refinar a política de DLP padrão
 
-Quando o widget mostrar que os usuários compartilharam informações confidenciais com pessoas de fora da sua organização, escolha reFinar **política de DLP** na parte inferior. 
+Quando o widget mostrar que os usuários compartilharam informações confidenciais com pessoas de fora da sua organização, escolha refinar **política de DLP** na parte inferior. 
   
 O relatório detalhado mostra quando e quanto conteúdo que contém os números do cartão de crédito foi compartilhado nos últimos 30 dias. Observe que as correspondências de regra podem levar até 48 horas para serem exibidas no widget.
   

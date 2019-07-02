@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Com a criptografia de mensagem do Office 365, sua organização pode enviar e receber mensagens de email criptografadas entre pessoas dentro e fora da sua organização. A criptografia de mensagens de email ajuda a garantir que somente os destinatários pretendidos possam exibir o conteúdo da mensagem.
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157583"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852855"
 ---
 # <a name="office-365-message-encryption"></a>Criptografia de Mensagem do Office 365
 
@@ -58,7 +58,7 @@ O Office 365 Advanced Message Encryption permite que você crie vários modelos 
 
 A criptografia de mensagem avançada no Office 365 ajuda a atender às obrigações de conformidade que exigem controle mais flexível sobre o acesso do destinatário externo a emails criptografados. Com a criptografia de mensagem avançada no Office 365, como administrador, você pode controlar emails confidenciais compartilhados fora da organização com políticas automáticas que detectam tipos de informações confidenciais (por exemplo, PII, finanças ou IDs de integridade) ou palavras-chave para melhorar proteção ao expirar o acesso por meio de um portal da Web seguro para emails criptografados. Além disso, como administrador, você pode controlar ainda mais emails criptografados acessados externamente por meio de um portal da Web do Office 365, revogando o acesso a um email a qualquer momento.
 
-A revogação e a expiração de mensagens só funcionam para emails enviados por seus usuários para destinatários fora da organização do Office 365. Além disso, os destinatários devem acessar o email através do portal da Web. Para garantir que o destinatário use o portal para receber emails, você deve configurar um modelo personalizado de identidade visual que aplica o invólucro. Em seguida, você aplica o modelo de identidade visual em uma regra de fluxo de emails. Para obter mais informações sobre a criptografia avançada de mensagens, consulte [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+A revogação e a expiração de mensagens só funcionam para emails enviados por seus usuários para destinatários fora da organização do Office 365. Além disso, os destinatários devem acessar o email através do portal da Web. Para garantir que o destinatário use o portal para receber emails, você deve configurar um modelo personalizado de identidade visual que aplica o invólucro. Em seguida, você aplica o modelo de identidade visual em uma regra de fluxo de emails. Para obter mais informações sobre a criptografia avançada de mensagens, consulte [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Definir regras para a Criptografia de Mensagens do Office 365
 

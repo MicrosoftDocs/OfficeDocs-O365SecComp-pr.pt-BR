@@ -1,5 +1,5 @@
 ---
-title: Pesquisar o log de auditoria no centro de conformidade do & de segurança
+title: Pesquisar o log de auditoria no centro de conformidade & segurança
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Use o centro de conformidade do & de segurança para pesquisar o log de auditoria unificado para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+description: 'Use o centro de conformidade & segurança para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547986"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113285"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade do & de segurança
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade & segurança
 
 ## <a name="introduction"></a>Introdução
 
@@ -31,9 +31,6 @@ Precisa localizar se um usuário exibir um documento específico ou limpar um it
 - Atividade do usuário no SharePoint Online e no OneDrive for Business
     
 - Atividade do usuário no Exchange Online (log de auditoria de caixa de correio do Exchange)
-    
-    > [!IMPORTANT]
-    > O log de auditoria de caixa de correio deve ser ativado para cada caixa de correio do usuário antes que a atividade do usuário no Exchange Online seja registrada. Para obter mais informações, consulte [habilitar a auditoria de caixa de correio no Office 365](enable-mailbox-auditing.md).
   
 - Atividade de administração no SharePoint Online
     
@@ -66,7 +63,7 @@ Precisa localizar se um usuário exibir um documento específico ou limpar um it
 
 Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de auditoria do Office 365.
   
-- Você (ou outro administrador) deve primeiro ativar o registro em log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Para ativá-la, basta clicar em **iniciar a gravação da atividade de administrador e usuário** na página pesquisa de log de **auditoria** no centro de conformidade do & de segurança. (Se você não vir este link, a auditoria já foi ativada para sua organização.) Depois que você ativá-la, será exibida uma mensagem dizendo que o log de auditoria está sendo preparado e que você pode executar uma pesquisa em algumas horas após a conclusão da preparação. Você só precisa fazer isso uma vez. 
+- Você (ou outro administrador) deve primeiro ativar o registro em log de auditoria antes de começar a pesquisar o log de auditoria do Office 365. Para ativá-la, basta clicar em **iniciar a gravação da atividade de administrador e usuário** na página pesquisa de log de **auditoria** no centro de conformidade de & de segurança. (Se você não vir este link, a auditoria já foi ativada para sua organização.) Depois que você ativá-la, será exibida uma mensagem dizendo que o log de auditoria está sendo preparado e que você pode executar uma pesquisa em algumas horas após a conclusão da preparação. Você só precisa fazer isso uma vez. 
     
     > [!NOTE]
     > Estamos no processo de ativar a auditoria por padrão. Até então, você pode ativá-lo conforme descrito anteriormente. 
@@ -74,7 +71,7 @@ Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de a
 - Você precisa receber a função de logs de auditoria somente para exibição ou logs de auditoria no Exchange Online para pesquisar o log de auditoria do Office 365. Por padrão, essas funções são atribuídas aos grupos de função gerenciamento de conformidade e gerenciamento da organização na página **permissões** no centro de administração do Exchange. Observe que os administradores globais no Office 365 e Microsoft 365 são automaticamente adicionados como membros do grupo de função gerenciamento da organização no Exchange Online. Para conceder ao usuário a capacidade de Pesquisar o log de auditoria do Office 365 com o nível mínimo de privilégios, você pode criar um grupo de função personalizado no Exchange Online, adicionar os logs de auditoria somente para exibição ou a função logs de auditoria e, em seguida, adicionar o usuário como membro do novo grupo de funções. Para obter mais informações, consulte [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Se você atribuir a um usuário a função logs de auditoria somente para exibição ou logs de auditoria na página **permissões** no centro de conformidade do _AMP_ de segurança, elas não poderão pesquisar o log de auditoria do Office 365. Você precisa atribuir as permissões no Exchange Online. Isso ocorre porque o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online. 
+    > Se você atribuir a um usuário a função logs de auditoria somente para exibição ou logs de auditoria na página **permissões** no centro de conformidade de & de segurança, elas não poderão pesquisar o log de auditoria do Office 365. Você precisa atribuir as permissões no Exchange Online. Isso ocorre porque o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online. 
   
 - Quando uma atividade auditada é executada por um usuário ou administrador, um registro de auditoria é gerado e armazenado no log de auditoria do Office 365 para sua organização. O período de tempo que um registro de auditoria é mantido (e pesquisável no log de auditoria) depende da sua assinatura do Office 365 e, especificamente, do tipo da licença atribuída a um usuário específico.
 
@@ -99,9 +96,9 @@ Certifique-se de ler os seguintes itens antes de começar a pesquisar o log de a
 
     Para obter mais informações, consulte desativar [pesquisa de log de auditoria no Office 365](turn-audit-log-search-on-or-off.md).
     
-- Conforme mencionado anteriormente, o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online, que é o **UnifiedAuditLog de pesquisa**. Isso significa que você pode usar esse cmdlet para pesquisar o log de auditoria do Office 365 em vez de usar a página **pesquisa de log de auditoria** no centro de conformidade do _AMP_ de segurança. Você precisa executar esse cmdlet no PowerShell remoto conectado à sua organização do Exchange Online. Para obter mais informações, consulte [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Conforme mencionado anteriormente, o cmdlet subjacente usado para pesquisar o log de auditoria é um cmdlet do Exchange Online, que é o **UnifiedAuditLog de pesquisa**. Isso significa que você pode usar esse cmdlet para pesquisar o log de auditoria do Office 365 em vez de usar a página **pesquisa de log de auditoria** no centro de conformidade de segurança &. Você precisa executar esse cmdlet no PowerShell remoto conectado à sua organização do Exchange Online. Para obter mais informações, consulte [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Se você deseja baixar dados programaticamente do log de auditoria do Office 365, recomendamos usar a API da atividade de gerenciamento do Office 365 em vez de usar um script do PowerShell. A API de atividade de gerenciamento do Office 365 é um serviço Web REST que você pode usar para desenvolver operações, segurança e soluções de monitoramento de conformidade para sua organização. Para obter mais informações, consulte [referência da API de atividade de gerenciamento do Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
+- Se você deseja baixar dados programaticamente do log de auditoria do Office 365, recomendamos usar a API da atividade de gerenciamento do Office 365 em vez de usar um script do PowerShell. A API de atividade de gerenciamento do Office 365 é um serviço Web REST que você pode usar para desenvolver operações, segurança e soluções de monitoramento de conformidade para sua organização. Para obter mais informações, consulte [referência da API de atividade de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
     
 - Pode levar até 30 minutos ou até 24 horas após a ocorrência de um evento para que a entrada do log de auditoria correspondente seja exibida nos resultados da pesquisa. A tabela a seguir mostra o tempo que leva para os diferentes serviços no Office 365.
     
@@ -149,11 +146,11 @@ Este é o processo de pesquisa do log de auditoria no Office 365.
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Use uma sessão de navegação privada (não uma sessão normal) para acessar o centro de conformidade do & de segurança, pois isso impedirá que a credencial com a qual você está conectado no momento seja usada. Para abrir uma sessão de navegação InPrivate no Internet Explorer ou no Microsoft Edge, basta pressionar CTRL + SHIFT + P. Para abrir uma sessão de navegação privada no Google Chrome (chamado de janela incógnito), pressione CTRL + SHIFT + N. 
+    > Use uma sessão de navegação privada (não uma sessão normal) para acessar o centro de conformidade de & de segurança, pois isso impedirá que a credencial com a qual você está conectado no momento seja usada. Para abrir uma sessão de navegação InPrivate no Internet Explorer ou no Microsoft Edge, basta pressionar CTRL + SHIFT + P. Para abrir uma sessão de navegação privada no Google Chrome (chamado de janela incógnito), pressione CTRL + SHIFT + N. 
   
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do centro de conformidade do & de segurança, clique em **Pesquisar**e clique em **pesquisa de log de auditoria**.
+3. No painel esquerdo do centro de conformidade & segurança, clique em **Pesquisar**e, em seguida, clique em **pesquisa de log de auditoria**.
     
     A página **pesquisa de log de auditoria** é exibida. 
     
@@ -266,12 +263,12 @@ Você pode exportar os resultados de uma pesquisa de log de auditoria para um ar
     
 2. Clique em **Exportar resultados** e selecione uma das seguintes opções: 
     
-  - **Salvar resultados carregados** Escolha essa opção para exportar apenas as entradas que são exibidas em **resultados** na página * * pesquisa de log de auditoria * *. O arquivo CSV baixado contém as mesmas colunas (e dados) exibidas na página (data, usuário, atividade, item e detalhes). Uma coluna adicional (chamada **mais**) é incluída no arquivo CSV que contém mais informações da entrada do log de auditoria. Como você está exportando os mesmos resultados que são carregados (e exibíveis) na página **pesquisa de log de auditoria** , um máximo de 5.000 entradas são exportadas. 
+     - **Salvar resultados carregados** – escolha esta opção para exportar somente as entradas que são exibidas em **resultados** na página **pesquisa de log de auditoria** . O arquivo CSV baixado contém as mesmas colunas (e dados) exibidas na página (data, usuário, atividade, item e detalhes). Uma coluna adicional (chamada **mais**) é incluída no arquivo CSV que contém mais informações da entrada do log de auditoria. Como você está exportando os mesmos resultados que são carregados (e exibíveis) na página **pesquisa de log de auditoria** , um máximo de 5.000 entradas são exportadas. 
     
-  - **Baixar todos os resultados** Escolha essa opção para exportar todas as entradas do log de auditoria do Office 365 que atendam aos critérios de pesquisa. Para obter um grande conjunto de resultados de pesquisa, escolha essa opção para baixar todas as entradas do log de auditoria, além dos resultados 5.000 que podem ser exibidos na página **pesquisa de log de auditoria** . Essa opção baixará os dados brutos do log de auditoria para um arquivo CSV e conterá informações adicionais da entrada do log de auditoria em uma coluna chamada **AuditData**. Pode levar mais tempo para baixar o arquivo se você escolher essa opção de exportação porque o arquivo pode ser muito maior do que o baixado, se você escolher a outra opção.
+     - **Baixar todos os resultados** – escolha esta opção para exportar todas as entradas do log de auditoria do Office 365 que atendem aos critérios de pesquisa. Para obter um grande conjunto de resultados de pesquisa, escolha essa opção para baixar todas as entradas do log de auditoria, além dos resultados 5.000 que podem ser exibidos na página **pesquisa de log de auditoria** . Essa opção baixará os dados brutos do log de auditoria para um arquivo CSV e conterá informações adicionais da entrada do log de auditoria em uma coluna chamada **AuditData**. Pode levar mais tempo para baixar o arquivo se você escolher essa opção de exportação porque o arquivo pode ser muito maior do que o baixado, se você escolher a outra opção.
     
-    > [!IMPORTANT]
-    > Você pode baixar um máximo de 50.000 entradas para um arquivo CSV de uma única pesquisa de log de auditoria. Se as entradas 50.000 forem baixadas para o arquivo CSV, provavelmente você poderá supor que há mais de 50.000 eventos que atingiram os critérios de pesquisa. Para exportar mais do que esse limite, tente usar um intervalo de datas para reduzir o número de entradas de log de auditoria. Você pode ter que executar várias pesquisas com intervalos de datas menores para exportar mais de 50.000 entradas. 
+       > [!IMPORTANT]
+       > Você pode baixar um máximo de 50.000 entradas para um arquivo CSV de uma única pesquisa de log de auditoria. Se as entradas 50.000 forem baixadas para o arquivo CSV, provavelmente você poderá supor que há mais de 50.000 eventos que atingiram os critérios de pesquisa. Para exportar mais do que esse limite, tente usar um intervalo de datas para reduzir o número de entradas de log de auditoria. Você pode ter que executar várias pesquisas com intervalos de datas menores para exportar mais de 50.000 entradas. 
   
 3. Após selecionar uma opção de exportação, uma mensagem é exibida na parte inferior da janela que solicita que você abra o arquivo CSV, salve-o na pasta downloads ou salve-o em uma pasta específica.
 
@@ -301,13 +298,13 @@ Clique em um dos seguintes links para ir para uma tabela específica.
 ||||
 |:-----|:-----|:-----|
 |[Atividades de arquivo e página](#file-and-page-activities)<br/> |[Atividades de pasta](#folder-activities)<br/> |[Atividades de lista do SharePoint](#sharepoint-list-activities)<br/>|
-|[Compartilhamento e acesso às atividades de solicitação](#sharing-and-access-request-activities)<br/> |[Atividades de sincronização](#synchronization-activities)<br/> |[Atividades de administração do site](#site-administration-activities)<br/> |
-|[Atividades de caixa de correio do Exchange](#exchange-mailbox-activities)<br/> |[Atividades do Sway](#sway-activities) <br/> |[Atividades de administração de usuário](#user-administration-activities) <br/> |
-|[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> |[Atividades de administração de aplicativos](#application-administration-activities) <br/> |[Atividades de administração de função](#role-administration-activities) <br/> |
-|[Atividades de administração de diretório](#directory-administration-activities) <br/>|[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |[Atividades de descoberta eletrônica avançada](#advanced-ediscovery-activities)<br/> |
-|[Atividades do Power BI](#power-bi-activities) <br/> |[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Atividades do Yammer](#yammer-activities) <br/> |[Atividades de fluxo da Microsoft](#microsoft-flow-activities) <br/>|[Atividades do Microsoft PowerApps](#microsoft-powerapps)<br/>|
-|[Atividades do Microsoft Stream](#microsoft-stream-activities) <br/>|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>|
+|[Compartilhamento e acesso às atividades de solicitação](#sharing-and-access-request-activities)<br/> |[Atividades de sincronização](#synchronization-activities)<br/> |[Atividades de permissões do site](#site-permissions-activities)<br/> |
+|[Atividades de administração do site](#site-administration-activities)<br/> |[Atividades de caixa de correio do Exchange](#exchange-mailbox-activities)<br/> |[Atividades do Sway](#sway-activities) <br/> |
+|[Atividades de administração de usuário](#user-administration-activities) <br/> |[Atividades de administração de grupos do Azure AD](#azure-ad-group-administration-activities) <br/> |[Atividades de administração de aplicativos](#application-administration-activities) <br/> |
+|[Atividades de administração de função](#role-administration-activities) <br/> |[Atividades de administração de diretório](#directory-administration-activities) <br/>|[atividades de descoberta eletrônica](#ediscovery-activities) <br/> |
+|[Atividades de descoberta eletrônica avançada](#advanced-ediscovery-activities)<br/> |[Atividades do Power BI](#power-bi-activities) <br/> |[Análise de local de trabalho da Microsoft](#microsoft-workplace-analytics-activities)<br/>|
+|[Atividades do Microsoft Teams](#microsoft-teams-activities) <br/> |[Atividades do Yammer](#yammer-activities) <br/> |[Atividades de fluxo da Microsoft](#microsoft-flow-activities) <br/>|
+|[Atividades do Microsoft PowerApps](#microsoft-powerapps)<br/>|[Atividades do Microsoft Stream](#microsoft-stream-activities) <br/>|[Atividades de administração do Exchange](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>Atividades de arquivo e página
@@ -318,12 +315,16 @@ A tabela a seguir descreve as atividades de arquivo e de página no SharePoint O
 |:-----|:-----|:-----|
 |Arquivo acessado  <br/> |FileAccessed  <br/> |A conta do usuário ou do sistema acessa um arquivo.  <br/> |
 |(nenhum)  <br/> |FileAccessedExtended  <br/> |Isso está relacionado à atividade "arquivo acessado" (arquivos acessados). Um evento FileAccessedExtended é registrado quando a mesma pessoa acessa continuamente um arquivo por um período de tempo estendido (até 3 horas). O objetivo do registro em log de eventos do FileAccessedExtended é reduzir o número de eventos de arquivo que são registrados quando um arquivo é acessado continuamente. Isso ajuda a reduzir o ruído de vários registros de FileAccess para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) fileaccessed.  <br/> |
+|Rótulo de política de conformidade alterado<br/> |ComplianceSettingChanged<br/> |Um rótulo de retenção foi aplicado ou removido de um documento. Este evento é disparado quando um rótulo de retenção é aplicado manualmente ou automaticamente a uma mensagem.<br/> |
+|Status do registro alterado para bloqueado<br/> |LockRecord<br/> |O status do registro de um rótulo de retenção que classifica um documento como um registro foi bloqueado. Isso significa que o documento não pode ser modificado ou excluído. Somente usuários atribuídos pelo menos a permissão de colaborador para um site podem alterar o status do registro de um documento.<br/> |
+|Status do registro alterado para desbloqueado<br/> |UnlockRecord<br/> |O status do registro de um rótulo de retenção que classifica um documento como um registro foi desbloqueado. Isso significa que o documento pode ser modificado ou excluído. Somente usuários atribuídos pelo menos a permissão de colaborador para um site podem alterar o status do registro de um documento.<br/><br/> |
 |Arquivo com check-in  <br/> |Filecheckem  <br/> |O usuário faz o check-in de um documento que fez check-out de uma biblioteca de documentos.  <br/> |
 |Arquivo com check-out  <br/> |Filecheckout  <br/> |O usuário faz check-out de um documento localizado em uma biblioteca de documentos. Os usuários podem fazer check-out e alterações nos documentos que foram compartilhados com eles.  <br/> |
 |Arquivo copiado  <br/> |FileCopied  <br/> |O usuário copia um documento de um site. O arquivo copiado pode ser salvo em outra pasta no site.  <br/> |
 |Arquivo excluído  <br/> |FileDeleted  <br/> |O usuário exclui um documento de um site.  <br/> |
 |Arquivo excluído da lixeira  <br/> |FileDeletedFirstStageRecycleBin  <br/> |O usuário exclui um arquivo da lixeira de um site.  <br/> |
 |Arquivo excluído da lixeira de segundo estágio  <br/> |FileDeletedSecondStageRecycleBin  <br/> |O usuário exclui um arquivo da lixeira de segundo estágio de um site.  <br/> |
+|Rótulo de política de conformidade de registro excluído<br/> |ComplianceRecordDelete<br/> |Um documento que foi classificado como registro foi excluído. Um documento é considerado um registro quando um rótulo de retenção que classifica o conteúdo como um registro é aplicado ao documento. <br/> |
 |Diferença de confidencialidade de documento detectada <br/>|DocumentSensitivityMismatchDetected<br/>|O usuário carrega um documento classificado com um rótulo de confidencialidade que tem uma prioridade maior do que o rótulo de confidencialidade aplicado ao site no qual o documento é carregado. Observação esse evento não é disparado se o rótulo de confidencialidade aplicado a um site tiver uma prioridade maior do que o rótulo de confidencialidade aplicado a um documento que é carregado no site. Para obter mais informações sobre prioridade de rótulo de confidencialidade, consulte a seção "prioridade de rótulo" em [visão geral de rótulos de sensibilidade](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Detectado malware no arquivo  <br/> |FileMalwareDetected  <br/> |O mecanismo antivírus do SharePoint detecta malware em um arquivo.  <br/> |
 |Check-out de arquivo Descartado  <br/> |FileCheckOutDiscarded  <br/> |O usuário descarta (ou desfaz) um arquivo em check-out. Isso significa que todas as alterações que ele tiver feito nesse arquivo durante o estado de check-out serão descartados, e não salvas na versão do documento localizada na biblioteca de documentos.  <br/> |
@@ -398,12 +399,12 @@ A tabela a seguir descreve as atividades de compartilhamento de usuários e soli
   
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
+|Adicionado o nível de permissão para o conjunto de sites  <br/> |PermissionLevelAdded  <br/> |Um nível de permissão foi adicionado a um conjunto de sites.  <br/> |
 |Solicitação de acesso aceito  <br/> |AccessRequestAccepted  <br/> |Uma solicitação de acesso a um site, pasta ou documento foi aceita e o usuário solicitante recebeu acesso.  <br/> |
 |Convite de compartilhamento aceito  <br/> |SharingInvitationAccepted  <br/> |O usuário (membro ou convidado) aceitou um convite de compartilhamento e recebeu acesso a um recurso. Esse evento inclui informações sobre o usuário que foi convidado e o endereço de email usado para aceitar o convite (eles podem ser diferentes). Essa atividade geralmente acompanha um segundo evento que descreve como o usuário recebeu acesso ao recurso, por exemplo, adicionar o usuário a um grupo que tem acesso ao recurso.  <br/> |
-|Adicionado o nível de permissão para o conjunto de sites  <br/> |PermissionLevelAdded  <br/> |Um nível de permissão foi adicionado a um conjunto de sites.  <br/> |
 |Convite de compartilhamento bloqueado  <br/> |SharingInvitationBlocked  <br/> | Um convite de compartilhamento enviado por um usuário em sua organização é bloqueado por causa de uma política de compartilhamento externa que permite ou impede o compartilhamento externo com base no domínio do usuário de destino. Nesse caso, o convite de compartilhamento foi bloqueado porque:  <br/>  O domínio do usuário de destino não está incluído na lista de domínios permitidos.  <br/>  Ou  <br/>  O domínio do usuário de destino está incluído na lista de domínios bloqueados.  <br/>  Para obter mais informações sobre como permitir ou bloquear o compartilhamento externo com base em domínios, consulte [Restricted Domains Sharing in SharePoint Online e onedrive for Business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Criou um link compartilhável pela empresa  <br/> |CompanyLinkCreated  <br/> |O usuário criou um link para toda a empresa em um recurso. os links para toda a empresa só podem ser usados por membros em sua organização. Eles não podem ser usados por convidados.  <br/> |
 |Solicitação de acesso criada  <br/> |AccessRequestCreated  <br/> |O usuário solicita acesso a um site, pasta ou documento que eles não têm permissões para acessar.  <br/> |
+|Criou um link compartilhável pela empresa  <br/> |CompanyLinkCreated  <br/> |O usuário criou um link para toda a empresa em um recurso. os links para toda a empresa só podem ser usados por membros em sua organização. Eles não podem ser usados por convidados.  <br/> |
 |Criou um link anônimo  <br/> |AnonymousLinkCreated  <br/> |O usuário criou um link anônimo para um recurso. Qualquer pessoa com este link pode acessar o recurso sem precisar ser autenticado.  <br/> |
 |Link seguro criado  <br/> |SecureLinkCreated  <br/> |Um link de compartilhamento seguro foi criado para esse item.  <br/> |
 |Convite de compartilhamento criado  <br/> |SharingInvitationCreated  <br/> |O usuário compartilhou um recurso no SharePoint Online ou no OneDrive for Business com um usuário que não está no diretório da sua organização.  <br/> |
@@ -503,27 +504,32 @@ A tabela a seguir lista os eventos resultantes das tarefas de administração do
   
 ### <a name="exchange-mailbox-activities"></a>Atividades de caixa de correio do Exchange
   
-A tabela a seguir lista as atividades que podem ser registradas pelo log de auditoria de caixa de correio. As atividades de caixa de correio realizadas pelo proprietário da caixa de correio, um usuário delegado ou um administrador são registrados em log. Por padrão, a auditoria de caixa de correio no Office 365 não está ativada. O log de auditoria de caixa de correio deve ser ativado para cada caixa de correio antes que a atividade da caixa de correio seja registrada Para obter mais informações, consulte [habilitar a auditoria de caixa de correio no Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+A tabela a seguir lista as atividades que podem ser registradas pelo log de auditoria de caixa de correio. As atividades de caixa de correio realizadas pelo proprietário da caixa de correio, um usuário delegado ou administrador são automaticamente registrados no log de auditoria do Office 365 por até 90 dias. Observe que é possível que um administrador desative o log de auditoria de caixa de correio para todos os usuários no seu organizatin. Nesse caso, nenhuma ação de caixa de correio para qualquer usuário é registrada. Para obter mais informações, consulte [gerenciar a auditoria de caixa de correio](enable-mailbox-auditing.md).
+
+ Você também pode pesquisar atividades de caixa de correio usando o cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) no PowerShell do Exchange Online. 
   
 |**Nome amigável**|**Operation**|**Descrição**|
 |:-----|:-----|:-----|
-|Adicionadas permissões de caixa de correio delegada  <br/> |Add-MailboxPermission  <br/> |Um administrador atribuiu a permissão de caixa de correio FullAccess a um usuário (conhecido como um representante) à caixa de correio de outra pessoa. A permissão FullAccess permite que o representante Abra a caixa de correio da outra pessoa e leia e gerencie o conteúdo da caixa de correio.  <br/> |
-|Mensagem classificada como registro  <br/> |ApplyRecordLabel<br/> |Uma mensagem foi classificada como um registro. Isso ocorre quando um rótulo de retenção que classifica o conteúdo como um registro é aplicado manualmente ou automaticamente a uma mensagem.<br/> |
+|Adicionadas permissões de caixa de correio delegada  <br/> |AddMailboxPermissions  <br/> |Um administrador atribuiu a permissão de caixa de correio FullAccess a um usuário (conhecido como um representante) à caixa de correio de outra pessoa. A permissão FullAccess permite que o representante Abra a caixa de correio da outra pessoa e leia e gerencie o conteúdo da caixa de correio.  <br/> |
+|Usuário adicionado ou removido com acesso de representante à pasta calendário<br/> |UpdateCalendarDelegation<br/> |Um usuário foi adicionado ou removido como um representante para o calendário da caixa de correio de outro usuário. A delegação de calendário oferece a outra pessoa na mesma organização permissões para gerenciar o calendário do proprietário da caixa de correio. <br/> |
+|Permissões adicionadas à pasta<br/> |AddFolderPermissions<br/> |Foi adicionada uma permissão de pasta. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas em uma caixa de correio e as mensagens localizadas nessas pastas.<br/> |
 |Mensagens copiadas para outra pasta  <br/> |Copiar  <br/> |Uma mensagem foi copiada a outra pasta.  <br/> |
 |Item de caixa de correio criado  <br/> |Create  <br/> |Um item é criado nas pastas Calendário, Contatos, Anotações ou Tarefas na caixa de correio; por exemplo, é criada uma nova solicitação de reunião. Observe que a criação, o envio ou o recebimento de uma mensagem não é auditado. Além disso, criar uma pasta de caixa de correio não é auditada.  <br/> |
-|Nova regra de caixa de entrada criada no Outlook Web App  <br/> |NewInboxRule<br/> |Um usuário criou uma nova regra de caixa de entrada no Outlook Web App (OWA).<br/> |
+|Nova regra de caixa de entrada criada no Outlook Web App  <br/> |NewInboxRule<br/> |Um proprietário de caixa de correio ou outro usuário com acesso à caixa de correio criou uma nova regra de caixa de entrada no Outlook Web App.<br/> |
 |Mensagens excluídas da pasta itens excluídos  <br/> |SoftDelete  <br/> |Uma mensagem foi excluída permanentemente da pasta Itens Excluídos. Esses itens são movidos para a pasta itens recuperáveis. As mensagens também são movidas para a pasta itens recuperáveis quando um usuário seleciona e pressiona **Shift + Delete**.  <br/> |
+|Mensagem rotulada como registro  <br/> |ApplyRecordLabel<br/> |Uma mensagem foi classificada como um registro. Isso ocorre quando um rótulo de retenção que classifica o conteúdo como um registro é aplicado manualmente ou automaticamente a uma mensagem.<br/> |
 |Mensagens movidas para outra pasta  <br/> |Mover  <br/> |Uma mensagem foi movida para outra pasta.  <br/> |
 |Mensagens movidas para a pasta itens excluídos  <br/> |MoveToDeletedItems  <br/> |Uma mensagem foi excluída e movida para a pasta Itens Excluídos.  <br/> |
 |Permissão de pasta modificada  <br/> |UpdateFolderPermissions  <br/> |Uma permissão de pasta foi alterada. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas de caixa de correio e as mensagens na pasta.  <br/> |
+|Regra de caixa de entrada modificada do Outlook Web App<br/> |SetInboxRule<br/> |Um proprietário de caixa de correio ou outro usuário com acesso à caixa de correio modificou uma regra de caixa de entrada usando o Outlook Web App.<br/> |
 |Mensagens limpas da caixa de correio  <br/> |HardDelete  <br/> |Uma mensagem foi removida da pasta itens recuperáveis (excluídos permanentemente da caixa de correio).  <br/> |
 |Removidos permissões de caixa de correio delegada  <br/> |Remove-MailboxPermission  <br/> |Um administrador removeu a permissão FullAccess (que foi atribuída a um representante) da caixa de correio de uma pessoa. Depois que a permissão FullAccess for removida, o representante não poderá abrir a caixa de correio da outra pessoa nem acessar qualquer conteúdo.  <br/> |
+|Permissões removidas da pasta<br/> |RemoveFolderPermissions<br/> |Uma permissão de pasta foi removida. As permissões de pasta controlam quais usuários em sua organização podem acessar pastas em uma caixa de correio e as mensagens localizadas nessas pastas.<br/> |
 |Mensagem enviada usando permissões Enviar como  <br/> |SendAs  <br/> |Uma mensagem foi enviada usando a permissão SendAs. Isto significa que outro usuário enviou a mensagem apesar de ter vindo do proprietário da caixa de correio.  <br/> |
 |Mensagem enviada usando permissões Enviar em nome de  <br/> |SendOnBehalf  <br/> |Uma mensagem foi enviada usando a permissão SendOnBehalf. Isto significa que outro usuário enviou a mensagem em nome do proprietário da caixa de correio. A mensagem indica ao destinatário em nome de quem a mensagem foi enviada e quem na verdade enviou a mensagem.  <br/> |
-|Acesso de representante atualizado à pasta calendário  <br/> |UpdateCalendarDelegation  <br/> |Uma delegação de calendário foi atribuída a uma caixa de correio. A delegação de calendário oferece a outra pessoa na mesma organização permissões para gerenciar o calendário do proprietário da caixa de correio.  <br/> |
+|Regras atualizadas da caixa de entrada do cliente do Outlook<br/> |UpdateInboxRules<br/> |Um proprietário de caixa de correio ou outro usuário com acesso à caixa de correio modificou uma regra de caixa de entrada no cliente do Outlook.<br/> |
 |Mensagem atualizada  <br/> |Atualizar  <br/> |Uma mensagem ou suas propriedades foram alteradas.  <br/> |
 |Usuário conectado à caixa de correio  <br/> |MailboxLogin  <br/> |O usuário entrou em sua caixa de correio.  <br/> |
-|(nenhum)  <br/> |UpdateInboxRules  <br/> |Uma regra de caixa de entrada foi adicionada, removida ou alterada. As regras de caixa de entrada são usadas para processar mensagens na caixa de entrada do usuário com base nas condições especificadas e realizar ações quando as condições de uma regra são atendidas, como mover uma mensagem para uma pasta especificada ou excluir uma mensagem.  <br/> Para retornar entradas para atividades de regra de caixa de entrada, você precisa selecionar **Mostrar resultados de todas as atividades** na lista de **atividades** . Use as caixas intervalo de datas e lista de **usuários** para restringir os resultados da pesquisa.  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Atividades do Sway
@@ -756,7 +762,7 @@ A tabela a seguir lista as atividades de usuário e de administrador no Yammer q
    
 ### <a name="microsoft-flow-activities"></a>Atividades de fluxo da Microsoft
 
-Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem criar, editar e excluir fluxos e alterar as permissões de fluxo. Para obter informações sobre auditoria de atividades de fluxo, consulte o blog [Microsoft Flow Audit Events Now Available in Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+Você pode pesquisar o log de auditoria para atividades no Microsoft Flow. Essas atividades incluem criar, editar e excluir fluxos e alterar as permissões de fluxo. Para obter informações sobre auditoria de atividades de fluxo, consulte o blog [Microsoft Flow Audit Events Now Available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Use um script do PowerShell para criar uma pesquisa de descoberta eletrônica in-loco no Exchange Online com base em uma pesquisa criada no centro de conformidade do & de segurança. '
-ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157973"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199818"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar a Pesquisa de Conteúdo no seu fluxo de trabalho de descoberta eletrônica
 
-O recurso de pesquisa de conteúdo no centro de conformidade do & de segurança permite pesquisar todas as caixas de correio em sua organização. Ao contrário da descoberta eletrônica in-loco no Exchange Online (onde você pode pesquisar até 10.000 caixas de correio), não há limites para o número de caixas de correio de destino em uma única pesquisa. Para cenários que exigem a execução de pesquisas em toda a organização, você pode usar a Pesquisa de Conteúdo para pesquisar todas as caixas de correio. Em seguida, você pode usar os recursos de fluxo de trabalho de descoberta eletrônica in-loco para realizar outras tarefas relacionadas à descoberta eletrônica, como colocar caixas de correio em espera e exportar resultados de pesquisa. Por exemplo, vamos supor que você precise pesquisar todas as caixas de correio para identificar os responsáveis específicos por um caso jurídico. Você pode usar a pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar todas as caixas de correio em sua organização para identificar as que estão respondendo ao caso. Em seguida, você pode usar essa lista de caixas de correio de responsáveis como caixas de correio de origem para uma pesquisa de descoberta eletrônica in-loco no Exchange Online. O uso da descoberta eletrônica in-loco também permite que você coloque uma retenção nas caixas de correio de origem, copie os resultados da pesquisa para uma caixa de correio de descoberta e exporte os resultados da pesquisa.
+O recurso de pesquisa de conteúdo no centro de conformidade & segurança permite pesquisar todas as caixas de correio em sua organização. Ao contrário da descoberta eletrônica in-loco no Exchange Online (onde você pode pesquisar até 10.000 caixas de correio), não há limites para o número de caixas de correio de destino em uma única pesquisa. Para cenários que exigem a execução de pesquisas em toda a organização, você pode usar a Pesquisa de Conteúdo para pesquisar todas as caixas de correio. Em seguida, você pode usar os recursos de fluxo de trabalho de descoberta eletrônica in-loco para realizar outras tarefas relacionadas à descoberta eletrônica, como colocar caixas de correio em espera e exportar resultados de pesquisa. Por exemplo, vamos supor que você precise pesquisar todas as caixas de correio para identificar os responsáveis específicos por um caso jurídico. Você pode usar a pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar todas as caixas de correio em sua organização para identificar as que estão respondendo ao caso. Em seguida, você pode usar essa lista de caixas de correio de responsáveis como caixas de correio de origem para uma pesquisa de descoberta eletrônica in-loco no Exchange Online. O uso da descoberta eletrônica in-loco também permite que você coloque uma retenção nas caixas de correio de origem, copie os resultados da pesquisa para uma caixa de correio de descoberta e exporte os resultados da pesquisa.
   
-Este tópico inclui um script que você pode executar para criar uma pesquisa de descoberta eletrônica in-loco no Exchange Online usando a lista de caixas de correio de origem e consulta de pesquisa de uma pesquisa criada no centro de conformidade do & de segurança. Esta é uma visão geral do processo:
+Este tópico inclui um script que você pode executar para criar uma pesquisa de descoberta eletrônica in-loco no Exchange Online usando a lista de caixas de correio de origem e consulta de pesquisa de uma pesquisa criada no centro de conformidade de segurança &. Esta é uma visão geral do processo:
   
 [Etapa 1: Criar uma Pesquisa de Conteúdo para pesquisar todas as caixas de correio em sua organização](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,14 +33,14 @@ Este tópico inclui um script que você pode executar para criar uma pesquisa de
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Etapa 1: Criar uma Pesquisa de Conteúdo para pesquisar todas as caixas de correio em sua organização
 
-A primeira etapa é usar o centro de conformidade do & de segurança (ou o PowerShell do centro de conformidade do & de segurança) para criar uma pesquisa de conteúdo que pesquise todas as caixas de correio em sua organização. Não há qualquer limite para o número de caixas de correio em uma única pesquisa de conteúdo. Especifica uma consulta de palavra-chave apropriada (ou uma consulta de tipos de informações confidenciais) para que a pesquisa retorne apenas as caixas de correio de origem relevantes para a investigação. Se for necessário, refine a consulta de pesquisa para restringir o escopo dos resultados da pesquisa e as caixas de correio de origem retornadas.
+A primeira etapa é usar o centro de conformidade de & de segurança (ou o PowerShell de segurança & do centro de conformidade) para criar uma pesquisa de conteúdo que pesquise todas as caixas de correio em sua organização. Não há qualquer limite para o número de caixas de correio em uma única pesquisa de conteúdo. Especifica uma consulta de palavra-chave apropriada (ou uma consulta de tipos de informações confidenciais) para que a pesquisa retorne apenas as caixas de correio de origem relevantes para a investigação. Se for necessário, refine a consulta de pesquisa para restringir o escopo dos resultados da pesquisa e as caixas de correio de origem retornadas.
   
 > [!NOTE]
 > Se a pesquisa de conteúdo de origem não retornar qualquer resultado, a Descoberta Eletrônica In-loco não será criada quando você executar o script na Etapa 3. Talvez seja necessário revisar a consulta de pesquisa e executar novamente a pesquisa de conteúdo para retornar os resultados de pesquisa. 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Usar o Centro de Conformidade e Segurança para pesquisar todas as caixas de correio
 
-1. [Vá para o centro de conformidade do & de segurança](go-to-the-securitycompliance-center.md). 
+1. [Vá para o centro de conformidade & segurança](go-to-the-securitycompliance-center.md). 
     
 2. Clique em**pesquisa de conteúdo**de **pesquisa** > e clique em novo ícone](media/O365-MDM-CreatePolicy-AddIcon.gif)de adição de **pesquisa** ![.
     
@@ -56,9 +56,9 @@ A primeira etapa é usar o centro de conformidade do & de segurança (ou o Power
     
 7.  Se for necessário, refine a consulta de pesquisa para restringir o escopo dos resultados da pesquisa e reinicie a pesquisa. 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Usar o & de segurança do centro de conformidade do PowerShell para pesquisar todas as caixas de correio
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Usar o centro de conformidade & o PowerShell para pesquisar todas as caixas de correio
 
-Você também pode usar o cmdlet **New-ComplianceSearch** para pesquisar em todas as caixas de correio em sua organização. A primeira etapa é [conectar-se ao PowerShell do centro de conformidade do & de segurança](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+Você também pode usar o cmdlet **New-ComplianceSearch** para pesquisar em todas as caixas de correio em sua organização. A primeira etapa é [conectar-se ao PowerShell do centro de conformidade & segurança](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Veja um exemplo de como usar o PowerShell para pesquisar todas as caixas de correio em sua organização. A consulta de pesquisa retorna todas as mensagens enviadas entre 1º de janeiro de 2015 e 30 de junho de 2015 e que contenham a frase "relatório financeiro" na linha de assunto. O primeiro comando cria a pesquisa e o segundo comando executa a pesquisa. 
   
@@ -110,7 +110,7 @@ Para ajudá-lo a criar uma pesquisa de conteúdo com mais de 1.000 caixas de cor
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. No PowerShell do centro de conformidade do & de segurança, vá para a pasta onde o script criado na etapa anterior está localizado e, em seguida, execute o script; por exemplo:
+2. Em segurança & centro de conformidade do PowerShell, vá para a pasta onde o script criado na etapa anterior está localizado e, em seguida, execute o script; por exemplo:
     
     ```
     .\SourceMailboxes.ps1
@@ -124,7 +124,7 @@ Se houver mais de 1.000 caixas de correio de origem, tente criar duas (ou mais) 
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Etapa 2: conectar-se ao \& centro de conformidade de segurança e ao Exchange Online em uma única sessão remota do PowerShell
 
-A próxima etapa é conectar o Windows PowerShell ao centro de conformidade do & de segurança e à sua organização do Exchange Online. Isso é necessário porque o script executado na etapa 3 requer acesso aos cmdlets de pesquisa de conteúdo no centro de conformidade do & de segurança e nos cmdlets de descoberta eletrônica in-loco no Exchange Online.
+A próxima etapa é conectar o Windows PowerShell ao centro de conformidade de & de segurança e à sua organização do Exchange Online. Isso é necessário porque o script executado na etapa 3 requer acesso aos cmdlets de pesquisa de conteúdo no centro de conformidade e segurança & e nos cmdlets de descoberta eletrônica in-loco no Exchange Online.
   
 1. Salve o seguinte texto em um arquivo de script do Windows PowerShell usando um sufixo de nome de arquivo. ps1. Por exemplo, você pode salvá-lo em um arquivo `ConnectEXO-CC.ps1`chamado.
     
@@ -143,7 +143,7 @@ A próxima etapa é conectar o Windows PowerShell ao centro de conformidade do &
     .\ConnectEXO-CC.ps1
     ```
 
-Como saber se funcionou? Depois de executar o script, os cmdlets do centro de conformidade do & de segurança e do Exchange Online são importados para sua sessão local do PowerShell. Se nenhum erro aparecer, a conexão terá sido estabelecida. Um teste rápido é executar um cmdlet de centro de conformidade do & de segurança — por exemplo, **install-UnifiedCompliancePrerequisite** — e um cmdlet do Exchange Online, como o **Get-Mailbox**. 
+Como saber se funcionou? Depois de executar o script, os cmdlets do centro de conformidade & segurança e do Exchange Online são importados para sua sessão local do PowerShell. Se nenhum erro aparecer, a conexão terá sido estabelecida. Um teste rápido é executar um cmdlet de segurança & o centro de conformidade — por exemplo, **install-UnifiedCompliancePrerequisite** — e um cmdlet do Exchange Online, como o **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Etapa 3: Execute o script para criar uma pesquisa de Descoberta Eletrônica In-loco na Pesquisa de Conteúdo
 
@@ -266,7 +266,7 @@ Depois de criar e iniciar a pesquisa de Descoberta Eletrônica In-loco criada pe
 
 1. No Eat, vá para **Gerenciamento** \> **de conformidade e descoberta eletrônica &amp; in-loco**.
     
-2. No modo de exibição de lista, selecione a pesquisa de descoberta eletrônica in-loco que você criou na etapa 3 **** ![e clique em](media/O365_MDM_CreatePolicy_EditIcon.gif)editar ícone de edição.
+2. No modo de exibição de lista, selecione a pesquisa de descoberta eletrônica in-loco que você criou na etapa 3 **** ![e clique em](media/O365-MDM-CreatePolicy-EditIcon.gif)editar ícone de edição.
     
 3. Na página **Bloqueio In-loco**, marque a caixa de seleção **Colocar conteúdo correspondente à consulta de pesquisa nas caixas de correio selecionadas em bloqueio** e selecione uma das seguintes opções: 
     

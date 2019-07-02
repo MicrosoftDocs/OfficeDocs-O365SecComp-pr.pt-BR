@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, você pode exibir, liberar e relatar mensagens em quarentena falsas positivas no Office 365. Você pode configurar políticas para que o Office 365 Filtre mensagens e as envie para quarentena por vários motivos: porque elas foram identificadas como spam, em massa, phishing, malware ou porque corresponderam a uma regra de fluxo de emails. '
-ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
+ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155693"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35115922"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -29,7 +29,7 @@ Como administrador, você pode exibir, liberar e excluir mensagens em quarentena
   
 Por padrão, o Office 365 envia mensagens de phishing e mensagens contendo malware diretamente para a quarentena. Outras mensagens filtradas são enviadas para a pasta lixo eletrônico dos usuários, a menos que você configure uma política para enviá-las à quarentena.
   
-Você deve ter permissões de administrador global (GA) no Office 365 para trabalhar com mensagens em quarentena que foram enviadas a outros usuários e para trabalhar com arquivos em quarentena.
+Você deve ter permissões de administrador global (GA) no Office 365 ou administrador de segurança no centro de segurança e conformidade para trabalhar com mensagens em quarentena que foram enviadas para outros usuários e para trabalhar com arquivos em quarentena.
   
 > [!IMPORTANT]
 >Por padrão, as mensagens de spam, de massa e de phishing são mantidas em quarentena por 30 dias. As mensagens colocadas em quarentena porque corresponderam a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. As mensagens de malware são mantidas em quarentena por 15 dias. Você pode personalizar o tempo de quarentena de spam em configurações antispam no centro de conformidade &amp; de segurança. Quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente. Se desejar, você pode alterar o período de retenção para mensagens em quarentena nas políticas de filtro antispam. Para obter mais informações, consulte [configuração do período de retenção de quarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) neste artigo. 

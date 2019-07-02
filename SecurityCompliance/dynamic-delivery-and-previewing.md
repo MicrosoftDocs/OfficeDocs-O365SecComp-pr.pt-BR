@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Ao configurar as políticas de anexos seguros de ATP, você escolhe a entrega dinâmica para evitar atrasos de mensagens e permite que as pessoas visualizem os anexos que estão sendo examinados.
-ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d04593dd0884b21deefc202485aee27f60d1a5f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257219"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077827"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinâmica e visualização com anexos seguros de ATP do Office 365
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 A entrega dinâmica é uma opção que pode ser selecionada para [anexos seguros de ATP](atp-safe-attachments.md). Leia este artigo para saber mais sobre a entrega dinâmica e recursos de visualização de anexos nos [anexos seguros de ATP no Office 365](atp-safe-attachments.md).
 
@@ -65,7 +65,7 @@ Suponha que uma organização esteja usando a entrega dinâmica para a [polític
     
 ## <a name="additional-considerations"></a>Considerações adicionais
 
-Há determinados cenários em que a entrega dinâmica não é suportada. Isso inclui o seguinte:
+Há determinados cenários em que a entrega dinâmica não é suportada. Elas incluem o seguinte:
   
 - Mensagens de email que estão em pastas públicas
     
@@ -81,4 +81,4 @@ Há determinados cenários em que a entrega dinâmica não é suportada. Isso in
 
 - Mensagens criptografadas com [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
-- Nos casos em que a entrega dinâmica não é suportada, os anexos seguros de ATP não verificam as mensagens de email. No enTanto, a entrega de mensagens de email com anexos que contenham URLs será verificada, dependendo de como as [políticas de links seguros de ATP](set-up-atp-safe-links-policies.md) estão configuradas. Nesses casos, as URLs em mensagens de email e arquivos do Office são verificadas.
+- Nos casos em que a entrega dinâmica não é suportada, os anexos seguros de ATP não verificam as mensagens de email. No entanto, a entrega de mensagens de email com anexos que contenham URLs será verificada, dependendo de como as [políticas de links seguros de ATP](set-up-atp-safe-links-policies.md) estão configuradas. Nesses casos, as URLs em mensagens de email e arquivos do Office são verificadas.

@@ -1,5 +1,5 @@
 ---
-title: Configurar marcas inteligentes para detecção de privilégio de cliente de advogado na descoberta eletrônica avançada
+title: Configurar marcas inteligentes na descoberta eletrônica avançada
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,28 +14,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 5310acad1aa1bc2e01cbabee69dd7bb38084bd9a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: As marcas inteligentes permitem que você aplique os recursos de aprendizado da máquina ao revisar o conteúdo em uma ocorrência de descoberta eletrônica avançada. Use grupos de marcas inteligentes para exibir os resultados dos modelos de detecção de aprendizagem de máquina, como o modelo de privilégio de cliente advogado.
+ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153963"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703824"
 ---
-# <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>Configurar marcas inteligentes para revisão assistida por ML na descoberta eletrônica avançada
+# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurar marcas inteligentes na descoberta eletrônica avançada
 
-Os recursos de aprendizado de máquina em descoberta eletrônica avançada têm como objetivo ajudar a tornar o processo de decisão sobre os documentos de forma mais eficiente. Marcas inteligentes é uma maneira de trazer os recursos de aprendizado de máquina para onde as decisões são registradas: marcas e grupos de marcas. Quando você cria um grupo de marcas inteligentes, as decisões do modelo ML mapeados para o grupo serão mostradas em linha com as marcas no grupo para ajudá-lo a ver as informações em linha, onde fazem a maioria dos sentidos de forma contextual.
+Os recursos do Machine Learning (ML) na descoberta eletrônica avançada podem ajudá-lo a tornar o processo de decisão mais eficiente ao revisar os documentos de caso em um conjunto de revisão. As marcas inteligentes são uma maneira de trazer os recursos de ML para onde as decisões são registradas: ao marcar documentos durante a revisão. Quando você cria um grupo de marcas inteligentes, as decisões que são o resultado do modelo ML que você associou ao grupo de marcas inteligentes são exibidas em linha com as marcas no grupo de marcas. Isso ajuda a ver as informações de resultados de ML em linha quando você está examinando documentos específicos.
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Como configurar um grupo de marcas inteligentes
 
-1. Em um conjunto de revisão, vá para **gerenciar análise configurar** -> **gerenciar marcas**.
+1. Em um conjunto de revisão, clique em **gerenciar análise definida** e, em seguida, clique em **gerenciar marcas**.
 
-2. Clique na lista suspensa ao lado de **Adicionar grupo de marcas** e selecione **Adicionar grupo de marcas inteligentes**.
+2. Clique em **Adicionar grupo de marcas** e selecione **Adicionar grupo de marcas inteligentes**.
 
-3. Selecione o modelo que você deseja mapear para este grupo. Isso criará uma seção de marca e N marcas filhas, onde N é o número de saídas possíveis do modelo. Por exemplo, o modelo de detecção de privilégio de cliente de advogados tem dois possíveis resultados-privilegiados e não privilegiados; selecionar esse modelo criará duas marcas filhas no conjunto de revisão, cada uma delas correspondente a uma das possíveis saídas.
+3. Selecione o modelo ML que você deseja associar ao grupo de marcas.
+    
+   Isso cria um grupo de marcas e *n* marcas filhas, onde *N* é o número de saídas possíveis do modelo. Por exemplo, o [modelo de detecção de privilégio de cliente advogado](attorney-privilege-detection.md) tem duas saídas possíveis: 
 
-4. Renomeie o grupo de marcas e as marcas conforme você vê ajustar.
+   - **Positivo** – use para marcar documentos que contenham conteúdo privilegiado pelo cliente advogado.
+   
+   - **Negativo** – use para marcar documentos que não contenham conteúdo privilegiado pelo cliente advogado.
+    
+    Se você selecionar este modelo, um grupo de marcas com duas marcas filhas será criado (uma marca filha denominada **positiva** e a outra chamada **negativa**) para o conjunto de revisão. Neste exemplo, cada marca filha corresponde a uma das possíveis saídas do modelo de detecção de privilégio de cliente advogado.
 
-## <a name="how-to-use-a-smart-tag-group"></a>Como usar um grupo de marcas inteligentes
+4. Opcionalmente, você pode renomear o grupo de marcas e as marcas filhas. Por exemplo, você pode renomear a marca **** **positiva** como privilegiada e a marca **negativa** como **não privilegiada**.
 
-Ao revisar um documento, os resultados do modelo serão expostos ao lado do valor de marca apropriado. Por exemplo, se você tiver um grupo de marcas inteligentes para detecção de privilégio de cliente de advogados e revisar um documento que o modelo decidiu ser potencialmente privilegiado, você verá o motivo para isso ao lado da marca apropriada. É importante observar que a marca não é aplicada automaticamente; para todos os efeitos e finalidades, as marcas dentro de um grupo de marcas inteligentes atuam exatamente como marcas normais, exceto pelo fato de que elas expõem os resultados do modelo ao lado, quando apropriado.
+## <a name="how-to-use-smart-tags"></a>Como usar marcas inteligentes
+
+Ao revisar um documento, os resultados do modelo são exibidos ao lado da marca filha apropriada. Por exemplo, se você tiver um grupo de marcas inteligentes para detecção de privilégio de cliente de advogado e revisar um documento que é potencialmente privilegiado, o motivo para essa conclusão será exibido ao lado da marca apropriada. É importante observar que a marca não é automaticamente aplicada ao documento. O revisor toma a decisão de como marcar o documento.

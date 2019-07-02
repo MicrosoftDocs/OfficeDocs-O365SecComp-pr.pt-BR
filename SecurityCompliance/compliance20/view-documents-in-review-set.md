@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151543"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767362"
 ---
 # <a name="view-documents-in-a-review-set"></a>Exibir documentos em um conjunto de revisão
 
@@ -38,14 +38,14 @@ Este painel pode ser ativado/desativado para exibir vários metadados associados
 
 ## <a name="native-view"></a>Modo de exibição nativo
 
-O visualizador nativo exibe o modo de exibição mais avançado de um documento. Ele oferece suporte a centenas de tipos de arquivo e deve exibir a experiência nativa mais verdadeira possível. Para arquivos do Microsoft Office, por exemplo, o visualizador aproveita o Office Online para exibir conteúdo como comentários de documento, fórmulas do Excel, linhas/colunas ocultas, anotações do PowerPoint, etc. Para obter mais informações sobre os visualizadores do Office Online \[, visite aqui é necessário vincular\]
+O visualizador nativo exibe o modo de exibição mais avançado de um documento. Ele oferece suporte a centenas de tipos de arquivo e deve exibir a experiência nativa mais verdadeira possível. Para arquivos do Microsoft Office, o visualizador usa a versão Web de aplicativos do Office para exibir conteúdo como comentários de documento, fórmulas do Excel, linhas/colunas ocultas e anotações do PowerPoint.
 
 ![Modo de exibição nativo
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Exibição de texto
 
-O Visualizador de texto fornece um modo de exibição do texto extraído de um arquivo. Ele ignora todas as imagens e formatação inseridas, mas será um modo de exibição de alto desempenho se um usuário estiver tentando entender o conteúdo rapidamente. O modo de exibição de texto também inclui outros recursos:
+O Visualizador de texto fornece um modo de exibição do texto extraído de um arquivo. Ele ignora todas as imagens e formatação inseridas, mas é muito eficaz se você estiver tentando entender o conteúdo rapidamente. O modo de exibição de texto também inclui estes recursos:
 
   - O contador de linhas facilita a referência a partes específicas de um documento
 

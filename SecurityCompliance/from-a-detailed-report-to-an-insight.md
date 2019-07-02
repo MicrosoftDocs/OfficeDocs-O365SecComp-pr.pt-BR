@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Saiba como você pode migrar de um relatório detalhado para uma visão com as ações recomendadas &amp; no centro de conformidade de segurança.
-ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f97501ddfa749e8d05ea8cb663f455a357df667c
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077977"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Passo a passo – De um relatório detalhado para um insight
 

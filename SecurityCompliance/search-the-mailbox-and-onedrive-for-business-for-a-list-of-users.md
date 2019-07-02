@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use a pesquisa de conteúdo e o script neste artigo para pesquisar as caixas de correio e os sites do OneDrive for Business para um grupo de usuários.
-ms.openlocfilehash: 7be1494f7a69c5865974a6c4ee0be65a6acb49d4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9ee2db0bc0fc7a4b53c58f02bcb9d16f96fc403
+ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158763"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253920"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Use a Pesquisa de Conteúdo para procurar uma lista de usuários na caixa de correio e no site do OneDrive for Business
 
-O centro de conformidade do & de segurança fornece vários cmdlets do Windows PowerShell que permitem automatizar tarefas relacionadas a descoberta eletrônica demoradas. Atualmente, criar uma pesquisa de conteúdo no centro de conformidade do & de segurança para pesquisar um grande número de locais de conteúdo dos responsáveis leva tempo e preparação. Antes de criar uma pesquisa, você precisa coletar a URL de cada site do OneDrive for Business e, em seguida, adicionar cada caixa de correio e O neDrive para o site de negócios à pesquisa. Em versões futuras, isso será mais fácil de fazer no centro de conformidade do & de segurança. Até lá, você pode usar o script neste artigo para automatizar esse processo. Esse script solicita o nome do domínio meusite da sua organização (por exemplo, **contoso** na URL https://contoso-my.sharepoint.com), uma lista de endereços de email do usuário, o nome da nova pesquisa de conteúdo e a consulta de pesquisa a ser usada. O script Obtém a URL do OneDrive for Business para cada usuário na lista e, em seguida, cria e inicia uma pesquisa de conteúdo que pesquisa a caixa de correio e o site do OneDrive for Business para cada usuário na lista, usando a consulta de pesquisa que você fornece. 
+O centro de conformidade do & de segurança fornece vários cmdlets do Windows PowerShell que permitem automatizar tarefas relacionadas a descoberta eletrônica demoradas. Atualmente, a criação de uma pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar um grande número de locais de conteúdo dos responsáveis leva tempo e preparação. Antes de criar uma pesquisa, você precisa coletar a URL de cada site do OneDrive for Business e, em seguida, adicionar cada caixa de correio e o site do OneDrive for Business à pesquisa. Em versões futuras, isso será mais fácil de fazer no centro de conformidade de & de segurança. Até lá, você pode usar o script neste artigo para automatizar esse processo. Esse script solicita o nome do domínio meusite da sua organização (por exemplo, **contoso** na URL https://contoso-my.sharepoint.com), uma lista de endereços de email do usuário, o nome da nova pesquisa de conteúdo e a consulta de pesquisa a ser usada. O script Obtém a URL do OneDrive for Business para cada usuário na lista e, em seguida, cria e inicia uma pesquisa de conteúdo que pesquisa a caixa de correio e o site do OneDrive for Business para cada usuário na lista, usando a consulta de pesquisa que você fornece. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade do & de segurança e um administrador global do SharePoint Online para executar o script na etapa 3.
+- Você precisa ser membro do grupo de função Gerenciador de descoberta eletrônica no centro de conformidade & segurança e um administrador global do SharePoint Online para executar o script na etapa 3.
     
 - Certifique-se de salvar a lista de usuários que você criou na etapa 2 e o script na etapa 3 para a mesma pasta. Isso facilitará a execução do script.
     
@@ -57,7 +57,7 @@ Depois de executar esse comando, certifique-se de abrir o arquivo e remover o ca
 
 Quando você executar o script nesta etapa, ele solicitará as seguintes informações. Certifique-se de ter essas informações prontas antes de executar o script.
   
-- **Suas credenciais de usuário** -o script usará suas credenciais para acessar o SharePoint Online para obter as URLs do onedrive for Business e se conectar ao centro de conformidade do _AMP_ de segurança com o PowerShell remoto. 
+- **Suas credenciais de usuário** -o script usará suas credenciais para acessar o SharePoint Online para obter as URLs do onedrive for Business e se conectar ao centro de conformidade de & de segurança com o PowerShell remoto. 
     
 - **Nome do seu domínio meusite** -o domínio MeuSite é o domínio que contém todos os sites do onedrive for Business em sua organização. Por exemplo, se a URL do seu domínio meusite for **https://contoso-my.sharepoint.com**, você deve inserir `contoso` quando o script solicitar o nome do seu domínio meusite. 
     
@@ -182,4 +182,4 @@ Quando você executar o script nesta etapa, ele solicitará as seguintes informa
     
     - A consulta de pesquisa (deixe em branco para retornar todos os itens nos locais de conteúdo).
     
-    O script Obtém as URLs para cada site do OneDrive for Business e, em seguida, cria e inicia a pesquisa. Você pode executar o cmdlet **Get-ComplianceSearch** no centro de segurança _AMP_ de conformidade do PowerShell para exibir as estatísticas e os resultados da pesquisa ou pode ir para a página de **pesquisa de conteúdo** no centro de conformidade de segurança & para exibir informações sobre a pesquisa. 
+    O script Obtém as URLs para cada site do OneDrive for Business e, em seguida, cria e inicia a pesquisa. Você pode executar o cmdlet **Get-ComplianceSearch** no & de segurança do centro de conformidade para exibir as estatísticas de pesquisa e os resultados, ou pode ir para a página de **pesquisa de conteúdo** no centro de conformidade & de segurança para exibir informações sobre a pesquisa. 

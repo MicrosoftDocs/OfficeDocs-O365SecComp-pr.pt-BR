@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Você pode usar regras de fluxo de emails (regras de transporte) para identificar e executar ações em mensagens que fluem pela sua organização do Office 365.
-ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
+ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153143"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726052"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regras de fluxo de emails (regras de transporte) no Exchange Online Protection
 
@@ -37,7 +37,7 @@ Para implementar políticas de mensagens específicas usando regras do fluxo de 
     
 - [Usar regras de fluxo de correio para definir o nível de confiança de spam (SCL) em mensagens](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Criar listas de remetentes confiáveis ou remetentes bloqueados para toda a organização no Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Criar listas de remetentes bloqueados no Office 365](../create-block-sender-lists-in-office-365.md)
     
 - [Redução de ameaças de malware com o bloqueio de anexos de arquivo no Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     

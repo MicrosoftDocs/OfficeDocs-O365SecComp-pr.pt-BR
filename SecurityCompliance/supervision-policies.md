@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Saiba mais sobre as políticas de supervisão no Office 365
-ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156473"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694705"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -31,7 +31,7 @@ Essas políticas também podem ajudá-lo a superar muitos desafios de conformida
 
 - Monitorar o aumento dos tipos de canais de comunicação
 - O aumento do volume de dados da mensagem
-- Imposição de regulamentação & o risco de multas
+- A imposição normativa & o risco de multas
 
 Em algumas organizações, pode haver uma separação de tarefas entre o suporte de ti e o grupo de gerenciamento de conformidade. O Office 365 oferece suporte à separação entre a configuração de recurso de política de supervisão e a configuração de políticas para comunicações capturadas. Por exemplo, o grupo de ti de uma organização pode ser responsável por configurar permissões e grupos de função para dar suporte a políticas de supervisão configuradas e gerenciadas pela equipe de conformidade da organização.
 
@@ -82,10 +82,15 @@ Para simplificar a configuração, crie grupos para pessoas que precisam de suas
 Com políticas de supervisão, você pode optar por monitorar mensagens em uma ou mais das seguintes plataformas de comunicação:
 
 - **Email do Exchange:** As caixas de correio hospedadas no Exchange Online como parte da sua assinatura do Office 365 estão qualificadas para supervisão de mensagens. Os emails e anexos que correspondem às condições de política de supervisão estão disponíveis instantaneamente para monitoramento e relatórios de supervisão. Os tipos de anexo com suporte para supervisão são os mesmos que os [tipos de arquivo com suporte para inspeções de conteúdo de regra de fluxo de email do Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+
 - **Microsoft Teams:** Comunicações de chat e anexos associados nos canais do Microsoft Teams públicos e privados e chats individuais podem ser supervisionados. O Team chats que correspondem às condições de política de supervisão são processados uma vez a cada 24 horas e, em seguida, estão disponíveis para monitoramento e relatórios de supervisão. Use as configurações de gerenciamento de grupo a seguir para supervisionar chats de usuários individuais e comunicações de canal no Teams:
 
     - **Para supervisão de chat do teams:** Atribuir usuários individuais ou atribuir um [grupo de distribuição](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à política de supervisão. Isso é para relações de usuário/chat de 1 para 1 ou de um para muitos.
-    - **Para comunicações de canal do teams:** Atribua cada grupo do Microsoft Team Channel ou Office 365 que você deseja monitorar que contenha um usuário específico à política de supervisão. Se você adicionar o mesmo usuário a outros canais do Microsoft Teams ou grupos do Office 365, não deixe de adicionar esses novos canais e grupos à política de supervisão.
+    - **Para comunicações de canal do teams:** Atribua cada grupo do Microsoft Team Channel ou Office 365 que você deseja monitorar que contenha um usuário específico à política de supervisão. Se você adicionar o mesmo usuário a outros canais do Microsoft Teams ou grupos do Office 365, certifique-se de adicionar esses novos canais e grupos à política de supervisão.
+
+- **Skype for Business Online:** Comunicações de chat e anexos associados no Skype for Business Online podem ser supervisionados. As condições de política de supervisão de correspondência do Skype for Business online são processadas uma vez a cada 24 horas e, em seguida, estão disponíveis para monitoramento e relatórios de supervisão. Conversas de chat supervisionadas são originadas de [conversas anteriores salvas no Skype for Business online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use a seguinte configuração de gerenciamento de grupos para supervisionar as comunicações de chat do usuário no Skype for Business Online:
+
+    - **Para supervisão de chat do Skype for Business Online:** Atribuir usuários individuais ou atribuir um [grupo de distribuição](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à política de supervisão. Isso é para relações de usuário/chat de 1 para 1 ou de um para muitos.
 
 - **Fontes de terceiros:** Você pode supervisionar as comunicações de fontes de terceiros (como do Facebook ou do DropBox) para dados importados para as caixas de correio do Office 365 em sua organização. [Saiba como importar dados de terceiros para o Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
@@ -134,7 +139,7 @@ O modelo de linguagem ofensiva atualmente oferece suporte a palavras-chave em in
 | **Extremism** | Expressões que se destinam a Religion e políticas Ideologies. |
 | **Disfarce** | Expressões para as quais o significado ou pronúncia é o mesmo que outro termo mais ofensivo. |
 | **Idioma provocative** | Expressões que podem causar Anger ou violência. |
-| **Taboo** | Expressões que geralmente não são apropriadas nas comunicações de societal. |
+| **Taboo** | Expressões geralmente inadequadas em comunicações de societal de educado. |
 | **Idioma não refinado** | Expressões que não têm Manners educadores e que são potencialmente esversos e rudes. |
 
 #### <a name="conditional-settings"></a>Configurações condicionais
@@ -145,12 +150,12 @@ A tabela a seguir explica mais sobre cada condição.
   
 |**Condition**|**Como usar essa condição**|
 |:-----|:-----|
-| **A mensagem é recebida de qualquer um desses domínios**  <br><br> **A mensagem não é recebida de nenhum desses domínios** | Para aplicar a política quando determinados domínios são incluídos ou excluídos em uma mensagem recebida, insira cada domínio e separe vários domínios com uma vírgula. Cada domínio inserido é aplicado separadamente (apenas um desses domínios deve se aplicar à política para aplicar à mensagem). |
-| **A mensagem é enviada para qualquer um desses domínios**  <br><br> **A mensagem não é enviada a nenhum desses domínios** | Para aplicar a política quando determinados domínios são incluídos ou excluídos em uma mensagem enviada, insira cada domínio e separe vários domínios com uma vírgula. Cada domínio inserido será aplicado separadamente (apenas um desses domínios deve ser aplicado à política para aplicar à mensagem). |
+| **A mensagem é recebida de qualquer um desses domínios**  <br><br> **A mensagem não é recebida de nenhum desses domínios** | Aplique a política para incluir ou excluir domínios ou endereços de email específicos em mensagens recebidas. Insira cada domínio ou endereço de email e separe vários domínios ou endereços de email com uma vírgula. Cada endereço de domínio ou de email inserido é aplicado separadamente, somente um domínio ou endereço de email deve ser aplicado para que a política seja aplicada à mensagem. <br><br> Se você quiser monitorar todos os emails de um domínio específico, mas quiser excluir mensagens que não precisam ser revisadas (boletins informativos, anúncios, etc.), você deve configurar duas condições: <br> – Uma **mensagem é recebida de qualquer uma destas** condições de domínios que define o domínio ("contoso.com") e <br> – Uma **mensagem não é recebida de qualquer uma destas** condições de domínios que exclua o endereço de email ("newsletter@contoso.com"). |
+| **A mensagem é enviada para qualquer um desses domínios**  <br><br> **A mensagem não é enviada a nenhum desses domínios** | Aplique a política para incluir ou excluir domínios ou endereços de email específicos em mensagens enviadas. Insira cada domínio ou endereço de email e separe vários domínios ou endereços de email com uma vírgula. Cada domínio ou endereço de email é aplicado separadamente, apenas um endereço de domínio ou de email deve ser aplicado para que a política seja aplicada à mensagem. <br><br> Se você quiser monitorar todos os emails enviados para um domínio específico, mas quiser excluir as mensagens enviadas que não precisam de revisão, você deve configurar duas condições: <br> -Uma **mensagem é enviada a qualquer uma das condições de domínios** que define o domínio ("contoso.com") e <br> -Uma **mensagem não é enviada para qualquer uma dessas condições de domínio** que exclua o endereço de email ("subscriptions@contoso.com"). |
 | **A mensagem é classificada com qualquer um desses rótulos**  <br><br> **A mensagem não é classificada com nenhum desses rótulos** | Para aplicar a política quando determinados rótulos de retenção são incluídos ou excluídos em uma mensagem. Os rótulos de retenção devem ser configurados separadamente e os rótulos configurados são escolhidos como parte dessa condição. Cada rótulo escolhido é aplicado separadamente (somente um desses rótulos deve se aplicar à política para aplicar à mensagem). Para obter mais informações sobre a configuração de rótulos de retenção, consulte [Overview of Retention Labels](https://docs.microsoft.com/office365/securitycompliance/labels).|
 | **A mensagem contém qualquer uma destas palavras**  <br><br> **A mensagem não contém nenhuma destas palavras** | Para aplicar a política quando determinadas palavras ou frases forem incluídas ou excluídas em uma mensagem, insira cada palavra ou frase em uma linha separada. Cada linha de palavras inserida é aplicada separadamente (apenas uma dessas linhas deve se aplicar à política a ser aplicada à mensagem). Para saber mais sobre como inserir palavras ou frases, consulte a próxima seção [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **O anexo contém qualquer uma destas palavras**  <br><br> **O anexo não contém nenhuma destas palavras** | Para aplicar a política quando determinadas palavras ou frases forem incluídas ou excluídas em um anexo de mensagem (como um documento do Word), insira cada palavra ou frase em uma linha separada. Cada linha de palavras inserida é aplicada separadamente (somente uma linha deve ser aplicada à política a ser aplicada ao anexo). Para saber mais sobre como inserir palavras ou frases, consulte a próxima seção [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
-| **O anexo é qualquer um desses tipos de arquivo**  <br><br> **O anexo não é nenhum desses tipos de arquivo** | Para supervisionar as comunicações que incluem ou excluem tipos específicos de anexos, insira as extensões de arquivo (como. exe ou. pdf). Se você quiser incluir ou excluir várias extensões de arquivo, insira-as em linhas separadas. Basta apenas uma correspondência de extenção de anexo para que a política seja aplicada.|
+| **O anexo é qualquer um desses tipos de arquivo**  <br><br> **O anexo não é nenhum desses tipos de arquivo** | Para supervisionar as comunicações que incluem ou excluem tipos específicos de anexos, insira as extensões de arquivo (como. exe ou. pdf). Se você quiser incluir ou excluir várias extensões de arquivo, insira-as em linhas separadas. Somente uma extensão de anexo deve corresponder à política a ser aplicada.|
 | **Tamanho da mensagem é maior que**  <br><br> **O tamanho da mensagem não é maior que** | Para revisar mensagens com base em um determinado tamanho, use essas condições para especificar o tamanho máximo ou mínimo que uma mensagem pode ser antes de estar sujeita a revisão. Por exemplo, se você especificar o **tamanho da mensagem é maior que** \> **1,0 MB**, todas as mensagens com 1, 1 MB e maiores estão sujeitas a revisão. Você pode optar por bytes, kilobytes, megabytes ou gigabytes para essa condição.|
 | **O anexo é maior que**  <br><br> **O anexo não é maior que** | Para revisar mensagens com base no tamanho de seus anexos, especifique o tamanho máximo ou mínimo que um anexo pode ser antes da mensagem e seus anexos estão sujeitos à revisão. Por exemplo, se você especificar que o **anexo é maior que** \> **2,0 MB**, todas as mensagens com anexos de 2, 1 MB e mais estão sujeitas a revisão. Você pode optar por bytes, kilobytes, megabytes ou gigabytes para essa condição.|
    
@@ -159,7 +164,7 @@ A tabela a seguir explica mais sobre cada condição.
   
 ##### <a name="enter-multiple-conditions"></a>Inserir várias condições
 
-Se você inserir várias condições, o Office 365 usará todas as condições juntas para determinar quando aplicar a política a itens de comunicação. Quando você configura várias condições, todas elas devem ser atendidas para que a política seja aplicada, a menos que você digite uma exceção. Por exemplo, você precisa criar uma política que se aplique se uma mensagem contiver a palavra "comércio" e maior que 2 MB. No entanto, se a mensagem também contiver as palavras "aprovadas pela contoso Financial", a política não deverá ser aplicada. Portanto, nesse caso, as três condições seriam as seguintes:
+Se você inserir várias condições, o Office 365 usará todas as condições juntas para determinar quando aplicar a política a itens de comunicação. Quando você configura várias condições, todas as condições devem ser atendidas para que a política seja aplicada, a menos que você insira uma exceção. Por exemplo, você precisará de uma política que se aplique se uma mensagem contiver a palavra "comércio" e maior que 2 MB. No entanto, se a mensagem também contiver as palavras "aprovadas pela contoso Financial", a política não deverá ser aplicada. Portanto, nesse caso, as três condições seriam as seguintes:
   
 - A **mensagem contém qualquer uma destas palavras**, com as palavras-chave "trade"
 
@@ -173,15 +178,19 @@ Se quiser reduzir a quantidade de conteúdo a ser revisada, você poderá especi
 
 ## <a name="monitor--manage"></a>Monitorar & gerenciar
 
-É fácil monitorar os resultados de suas políticas de supervisão e aplicar uma marca de resolução. Você pode ver rapidamente o status dos itens revisados, os usuários e grupos em supervisão e os usuários e grupos designados como revisores.
+É fácil monitorar os resultados de suas políticas de supervisão e aplicar uma marca de resolução. Você pode ver rapidamente:
+
+- O status dos itens revisados
+- Usuários e grupos em supervisão
+- Usuários e grupos designados como revisores
 
 ### <a name="supervision-policy-dashboard"></a>Painel de política de supervisão
 
-Use o painel de políticas de supervisão para gerenciar os resultados da política de supervisão e para resolver itens pendentes. Este painel permite que os revisores exibam itens que precisam ser revisados, executem ações em um item e analisem os resultados de itens previamente revisados e resolvidos para cada política de supervisão. Você pode acessar o painel de políticas de supervisão no centro de conformidade em **supervisão** > *da política* > personalizada**aberta**.
+Use o painel de políticas de supervisão para gerenciar os resultados da política de supervisão e para resolver itens pendentes. Este painel permite que os revisores exibam itens que precisam ser revisados, atuem em um item e analisem os resultados de itens previamente revisados e resolvidos para cada política de supervisão. Você pode acessar o painel de políticas de supervisão no centro de conformidade em **supervisão** > *da política* > personalizada**aberta**.
 
 #### <a name="dashboard-home"></a>Página inicial do painel
 
-A **Home** Page do painel tem várias seções para ajudá-lo a tomar medidas rapidamente em suas políticas de supervisão. Aqui você pode:
+A **Home** Page do painel tem várias seções para ajudá-lo a agir rapidamente em suas políticas de supervisão. Aqui você pode:
 
 - Revise rapidamente os destaques pendentes e resolvidos da semana
 - Ver uma lista dos usuários supervisionados e dos grupos supervisionados da política selecionada
@@ -195,7 +204,7 @@ A guia **revisão** é onde os revisores classificam e resolvem itens identifica
 - Filtrar por itens pendentes, compatíveis, não compatíveis e questionáveis.
 - Marcar um item único como compatível, não compatível ou questionável. Você também pode gravar um comentário com o item para ajudar a esclarecer a ação de marcação executada.
 - Marcar vários itens em massa como em conformidade, não compatível ou questionável. Você também pode gravar um comentário com vários itens para ajudar a esclarecer a ação de marcação executada.
-- Exibir o histórico da marcação de um único item. Isso inclui quem resolveu o item, a data e a hora da ação, a marca de resolução e quaisquer comentários incluídos.
+- Exibir o histórico da marcação de um único item. Inclui quem resolveu o item, a data e a hora da ação, a marca de resolução e quaisquer comentários incluídos.
 - Reclassificar itens revisados anteriormente como em conformidade, não compatível ou questionável. Você também pode gravar um comentário com um ou vários itens para ajudar a esclarecer a ação de reclassificação executada.
 
 #### <a name="resolved-items-tab"></a>Guia itens resolvidos
@@ -215,8 +224,8 @@ Use os relatórios de supervisão para ver a atividade de análise no nível de 
 
 ### <a name="view-the-supervision-report"></a>Exibir o relatório de supervisão
 
-1. Entre no [centro de conformidade](https://compliance.microsoft.com) com as credenciais de uma conta de administrador em sua organização que tenha permissões para exibir relatórios de supervisão.
-2. Vá para **painel** de **relatórios** \> ou **supervisão** para exibir o widget relatório de supervisão com um resumo da atividade atual de política de supervisão.
+1. Entre no [centro de conformidade](https://compliance.microsoft.com) com as credenciais de uma conta de administrador com permissões para exibir relatórios de supervisão.
+2. Vá para **painel** de **relatórios** \> ou **supervisão** para exibir o widget relatório de supervisão para obter um resumo da atividade atual de política de supervisão.
 3. Selecione o widget **supervisão** para abrir a página relatório detalhado.
 
 > [!NOTE]
@@ -237,7 +246,7 @@ Aqui está uma divisão dos valores exibidos na coluna **tipo de marca** .
 |:-----|:-----|
 | **Não revisado** | O número de emails ainda não revisados. Esses emails estão aguardando revisão no painel de supervisão do Office 365.
 | **Compliant** | O número de emails revisados e marcados como em conformidade. Essas mensagens ainda precisam de resolução. |
-| **Questionáveis** | O número de emails revisados e marcados como questionáveis. Isso atua como um sinalizador para outros revisores para ajudar a verificar se um email precisa de investigação para fins de conformidade. Essas mensagens ainda precisam de resolução. |
+| **Questionáveis** | O número de emails revisados e marcados como questionáveis. O serve como um sinalizador para outros revisores para ajudar a verificar se um email precisa de investigação para fins de conformidade. Essas mensagens ainda precisam de resolução. |
 | **Não compatível (ativo)** | O número de emails não compatíveis que os revisores estão investigando no momento. |
 | **Não compatível (resolvido)** | O número de emails não compatíveis que os revisores investigaram e resolveram. |
 | **Política de hit** | O número total (diário) de mensagens do Exchange, do Microsoft Teams e de fontes de dados de terceiros que correspondem a uma ou mais condições definidas em uma política de supervisão |
@@ -245,7 +254,7 @@ Aqui está uma divisão dos valores exibidos na coluna **tipo de marca** .
 | **Resolvido** | O número total de mensagens do Exchange, do Microsoft Teams e de fontes de dados de **** terceiros classificadas como resolvidas|
 
 > [!NOTE]
-> As políticas de supervisão devem primeiro ser provisionadas para que apareçam no relatório. Além disso, se as políticas forem excluídas, os dados históricos ainda serão exibidos. No entanto, eles são indicados como uma política não existente e a função de **exportação** não está disponível.
+> As políticas de supervisão devem ser provisionadas antes de serem exibidas nos relatórios. Se as políticas forem excluídas, os dados históricos ainda serão exibidos. No entanto, eles são indicados como uma política não existente e a função de **exportação** não está disponível.
 
 ## <a name="audit"></a>Faça
 
@@ -258,7 +267,6 @@ As seguintes atividades de política de supervisão são auditadas e estão disp
 | **Criar uma política** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
 | **Editar uma política** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
 | **Excluir uma política** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| **Exibir uma política** | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Exibir as atividades de auditoria no log de auditoria unificada ou com o cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) do PowerShell.
 
@@ -272,4 +280,4 @@ Além das informações fornecidas nos logs e relatórios de supervisão, você 
 
 ## <a name="ready-to-get-started"></a>Pronto para começar?
 
-Para começar a configurar as políticas de supervisão para sua organização, consulte [Configure supervisão Policies](configure-supervision-policies.md).
+Para configurar as políticas de supervisão para sua organização, consulte [Configure supervisão Policies](configure-supervision-policies.md).

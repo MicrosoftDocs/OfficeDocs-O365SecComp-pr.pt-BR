@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Os administradores podem configurar um conector nativo para importar dados de uma página da empresa do LinkedIn para o Office 365. Isso permite que você arquive dados de fontes de dados de terceiros no Office 365 para que possa usar recursos de conformidade, como retenção legal, pesquisa de conteúdo e políticas de retenção para gerenciar a conformidade dos dados de terceiros da sua organização.
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017942"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079375"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurar um conector para arquivar dados do LinkedIn no Office 365 (versão prévia)
 
@@ -27,9 +27,11 @@ Depois que os dados da página da empresa do LinkedIn são armazenados em uma ca
 
 ## <a name="before-you--begin"></a>Antes de começar
 
-- Você deve ter as credenciais de entrada (endereço de email ou número de telefone e senha) de uma conta de usuário do LinkedIn que seja um administrador para a página da empresa do LinkedIn que você deseja arquivar. Use essas credenciais para entrar no LinkedIn ao configurar o conector.
+- Sua organização deve dar o consentimento para permitir que o serviço de importação do Office 365 acesse dados de caixa de correio em sua organização. Para concordar com essa solicitação, acesse [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), entre com as credenciais de um administrador global do Office 365 e aceite a solicitação.
 
 - O usuário que cria um conector de página da empresa do LinkedIn deve receber a função de exportação de importação de caixa de correio no Exchange Online. Isso é necessário para acessar a página **arquivar dados** de terceiros no centro de conformidade de & de segurança. Por padrão, essa função não é atribuída a nenhum grupo de função no Exchange Online. Você pode adicionar a função de exportação de importação de caixa de correio ao grupo de funções Gerenciamento da organização no Exchange Online. Ou você pode criar um grupo de função, atribua a função de exportação de importação de caixa de correio e, em seguida, adicione os usuários apropriados como membros. Para obter mais informações, consulte as seções [criar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou [modificar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) no artigo "gerenciar grupos de função no Exchange Online".
+
+- Você deve ter as credenciais de entrada (endereço de email ou número de telefone e senha) de uma conta de usuário do LinkedIn que seja um administrador para a página da empresa do LinkedIn que você deseja arquivar. Use essas credenciais para entrar no LinkedIn ao configurar o conector.
 
 ## <a name="create-a-linkedin-connector"></a>Criar um conector do LinkedIn
 
@@ -50,7 +52,6 @@ Depois que os dados da página da empresa do LinkedIn são armazenados em uma ca
    Uma página de assistente é exibida com uma lista de todas as páginas da empresa do LinkedIn associadas à conta na qual você entrou no. Um conector só pode ser configurado para uma página da empresa. Se sua organização tiver várias páginas da empresa do LinkedIn, você precisará criar um conector para cada uma delas.
 
    ![Uma página com uma lista de páginas da empresa do LinkedIn é exibida](media/LinkedInSelectCompanyPage.png)
-
 
 6. Selecione a página da empresa da qual você deseja arquivar itens e clique em **Avançar**.
 
@@ -80,4 +81,4 @@ Para exibir mais detalhes, clique no conector na lista na página de **dados** d
    subject:"Contoso Company Page"
    ```
 
-- Para facilitar a localização ou o gerenciamento de itens do LinkedIn importados para o Office 365, o proprietário da caixa de correio de armazenamento (ou qualquer pessoa que tenha atribuído a permissão FullAccess) pode configurar uma regra de caixa de entrada para mover os itens de uma página específica da empresa do LinkedIn para uma pasta específica. Isso é útil se a caixa de correio de armazenamento é usada para arquivar itens importados de diferentes fontes de dados de terceiros. Por exemplo, você pode criar uma regra de caixa de entrada que move todos os itens que contêm o nome de uma página específica da empresa do LinkedIn no campo assunto para uma pasta específica.
+- Para facilitar a localização ou o gerenciamento de itens do LinkedIn importados para o Office 365, o proprietário da caixa de correio de armazenamento (ou qualquer pessoa que tenha atribuído a permissão FullAccess) pode configurar uma regra de caixa de entrada para mover os itens de uma página da empresa do LinkedIn para uma pasta específica. Isso é útil se a caixa de correio de armazenamento é usada para arquivar itens importados de diferentes fontes de dados de terceiros. Por exemplo, você pode criar uma regra de caixa de entrada que move todos os itens que contêm o nome de uma página específica da empresa do LinkedIn no campo assunto para uma pasta específica.

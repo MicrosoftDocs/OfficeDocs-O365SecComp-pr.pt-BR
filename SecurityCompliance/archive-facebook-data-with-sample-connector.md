@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Os administradores podem configurar um conector nativo para importar dados de terceiros de fontes de dados, como páginas de negócios do Facebook, Twitter, páginas da empresa do LinkedIn e Bloomberg instantâneo. Isso permite que você arquive dados de fontes de dados de terceiros no Office 365 para que possa usar recursos de conformidade, como retenção legal, pesquisa de conteúdo e políticas de retenção para gerenciar a governança dos dados de terceiros da sua organização.
-ms.openlocfilehash: 33972d6d3124841a4cd2636c3d7756ec55f5cfa9
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852605"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014700"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Usar um exemplo de conector para arquivar dados do Facebook no Office 365 (versão prévia)
 
 O recurso de conector de exemplo para arquivar dados do Facebook no Office 365 está em visualização.
 
-Use um conector de exemplo no centro de conformidade & segurança no Office 365 para importar e arquivar dados de uma fonte de dados de terceiros, como páginas de negócios do Facebook, LinkedIn, Twitter e o Bloomberg instantâneo. Depois de configurar e configurar um conector de exemplo, ele se conecta à fonte de dados de terceiros (em uma base agendada), converte o conteúdo de um item em um formato de mensagem de email e, em seguida, importa esses itens para uma caixa de correio no Office 365.
+Use um conector de exemplo no centro de conformidade & segurança no Office 365 para importar e arquivar dados de páginas de negócios do Facebook para o Office 365. Depois de configurar e configurar um conector de exemplo, ele se conecta à página de negócios do Facebook (em uma base agendada), converte o conteúdo de itens do Facebook em um formato de mensagem de email e, em seguida, importa esses itens para uma caixa de correio no Office 365.
 
-Após a importação dos dados de terceiros, é possível aplicar recursos de conformidade do Office 365, como retenção de litígio, pesquisa de conteúdo, arquivamento in-loco, auditoria, supervisão e políticas de retenção do Office 365 aos dados de terceiros. Por exemplo, quando uma caixa de correio é colocada em retenção de litígio ou atribuída a uma política de retenção, os dados de terceiros serão mantidos. Você pode pesquisar dados de terceiros usando a pesquisa de conteúdo ou associá-los a um funcionário em um caso de descoberta eletrônica avançada. O uso de conectores de amostra para importar e arquivar dados de terceiros no Office 365 pode ajudar sua organização a se manter em conformidade com as políticas governamentais e regulamentares.
+Depois que os dados do Facebook são importados, você pode aplicar recursos de conformidade do Office 365, como retenção de litígio, pesquisa de conteúdo, arquivamento in-loco, auditoria, supervisão e políticas de retenção do Office 365 para os dados do Facebook. Por exemplo, quando uma caixa de correio é colocada em retenção de litígio ou atribuída a uma política de retenção, os dados do Facebook são preservados. Você pode pesquisar dados de terceiros usando a pesquisa de conteúdo ou associar a caixa de correio onde os dados do Facebook são armazenados com um funcionário em uma caixa de descoberta eletrônica avançada. O uso de um conector para importar e arquivar dados do Facebook no Office 365 pode ajudar sua organização a se manter em conformidade com as políticas governamentais e regulamentares.
 
 > [!NOTE]
-> Atualmente, somente os conectores de amostra para páginas de negócios do Facebook e o [Twitter](archive-twitter-data-with-sample-connector.md) estão disponíveis para visualização. Mais exemplos de conectores serão disponibilizados em breve.
+> Neste momento, somente os conectores de amostra para páginas de negócios do Facebook e [Twitter](archive-twitter-data-with-sample-connector.md) estão disponíveis para visualização. Mais exemplos de conectores serão disponibilizados em breve.
 
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Pré-requisitos para configurar um conector para páginas de negócios do Facebook
@@ -37,16 +37,16 @@ Você deve concluir os pré-requisitos a seguir antes de configurar e configurar
 
 - Sua organização deve ter uma assinatura válida do Azure. Se você não tiver uma assinatura do Azure existente, poderá se inscrever em uma destas opções:
 
-    – [Inscreva-se para obter uma assinatura gratuita do Azure em 1 ano](https://azure.microsoft.com/free) 
+    - [Inscreva-se para uma assinatura gratuita do Azure para um ano](https://azure.microsoft.com/free) 
 
-    – [Inscreva-se para uma assinatura do Azure de pagamento conforme a ser](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) acessada
+    - [Inscreva-se para obter uma assinatura do Azure de pagamento conforme a ser acessado](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > A [assinatura gratuita do Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) incluída na assinatura do Office 365 não dá suporte aos conectores de amostra no centro de conformidade de segurança &.
 
 - Sua organização deve dar o consentimento para permitir que o serviço de importação do Office 365 acesse dados de caixa de correio em sua organização. Para concordar com essa solicitação, acesse [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), entre com as credenciais de um administrador global do Office 365 e aceite a solicitação.
 
-- O usuário que configura o conector personalizado no Security & Compliance (na etapa 7) deve ser atribuído à função de exportação de importação de caixa de correio no Exchange Online. Por padrão, essa função não é atribuída a nenhum grupo de função no Exchange Online. Você pode adicionar a função de exportação de importação de caixa de correio ao grupo de funções Gerenciamento da organização no Exchange Online. Ou você pode criar um novo grupo de função, atribua a função de exportação de importação de caixa de correio e, em seguida, adicione os usuários apropriados como membros. Para obter mais informações, consulte as seções [criar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou [modificar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) no artigo "gerenciar grupos de função no Exchange Online".
+- O usuário que configura o conector personalizado no Security & Compliance (na etapa 7) deve ser atribuído à função de exportação de importação de caixa de correio no Exchange Online. Por padrão, essa função não é atribuída a nenhum grupo de função no Exchange Online. Você pode adicionar a função de exportação de importação de caixa de correio ao grupo de funções Gerenciamento da organização no Exchange Online. Ou você pode criar um grupo de função, atribua a função de exportação de importação de caixa de correio e, em seguida, adicione os usuários apropriados como membros. Para obter mais informações, consulte as seções [criar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou [modificar grupos de função](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) no artigo "gerenciar grupos de função no Exchange Online".
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Etapa 1: baixar o pacote de aplicativos do conector pré-criado do github
 
@@ -54,7 +54,7 @@ A primeira etapa é baixar o código-fonte para o aplicativo de conector do Face
 
 1. Vá para [este site do GitHub](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases). 
 2. Na versão mais recente, clique no arquivo **SampleConnector. zip** .
-3. Salve o arquivo ZIP em um local no computador local. Você carregará este arquivo zip no Azure na etapa 4.
+3. Salve o arquivo ZIP em um local no computador local. Você carrega este arquivo zip no Azure na etapa 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Etapa 2: criar um aplicativo no Azure Active Directory
 
@@ -62,7 +62,7 @@ A próxima etapa é registrar um novo aplicativo no Azure Active Directory (AAD)
 
 Para obter instruções detalhadas, consulte [criar um aplicativo no Azure Active Directory](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory).
 
-Durante a conclusão desta etapa (seguindo as instruções passo a passo), você salvará as informações a seguir em um arquivo de texto. Esses valores são usados nas etapas posteriores do processo de implantação.
+Durante a conclusão desta etapa (usando as instruções passo a passo anteriores), você salvará as informações a seguir em um arquivo de texto. Esses valores são usados nas etapas posteriores do processo de implantação.
 
 - ID do aplicativo AAD
 - Segredo do aplicativo AAD
@@ -75,7 +75,7 @@ O conector do Facebook que você implantar para sua organização carregará os 
 
 Para obter instruções detalhadas, consulte [criar uma conta de armazenamento do Azure](deploy-facebook-connector.md#step-3-create-an-azure-storage-account).
 
-Durante a conclusão desta etapa (seguindo as instruções passo a passo), você salva o URI da cadeia de caracteres de conexão gerado. Você usará essa cadeia de caracteres ao criar um recurso do aplicativo Web no Azure na etapa 4.
+Durante a conclusão desta etapa (seguindo as instruções passo a passo), você salva o URI da cadeia de caracteres de conexão gerado. Use esta cadeia de caracteres ao criar um recurso do aplicativo Web no Azure na etapa 4.
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>Etapa 4: criar um recurso do aplicativo Web no Azure
 
@@ -107,7 +107,7 @@ Durante a conclusão desta etapa (seguindo as instruções passo a passo), você
 
 ## <a name="step-6-configure-the-facebook-connector-app"></a>Etapa 6: configurar o aplicativo do Facebook Connector
 
-A próxima etapa é adicionar configurações de configurações ao aplicativo do Facebook Connector carregado quando você criou o recurso do Azure Web App na etapa 4. Você fará isso indo para a home page do seu aplicativo conector e configurá-lo.
+A próxima etapa é adicionar configurações de configurações ao aplicativo do Facebook Connector carregado quando você criou o recurso do Azure Web App na etapa 4. Para fazer isso, vá até a home page do seu aplicativo conector e configure-a.
 
 Para obter instruções detalhadas, consulte [etapa 6: Configure the Connector Web App](deploy-facebook-connector.md#step-6-configure-the-connector-web-app).
 

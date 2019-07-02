@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'A maneira mais fácil e mais comum para começar a usar políticas de DLP é usar um dos modelos incluídos no Office 365. '
-ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0f1cd4fdf08edcd747dc3d1bc92625dda49e50de
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077707"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Criar uma política DLP com base em um modelo
 
@@ -74,7 +74,7 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 6. Para escolher os locais que você deseja que a política de DLP proteja, siga um destes procedimentos:
     
-  - escolha **todos os locais no Office 365** \> **em seguida**.
+  - Escolha **todos os locais no Office 365** \> **em seguida**.
     
   - Escolha **deixe-me escolher locais** \> específicos **em seguida**. Para este exemplo, escolha esta.
     
@@ -134,7 +134,7 @@ Neste exemplo, você criará uma política de DLP que identifica os dados PII do
     
 15. Revise as condições e ações para esta \> regra **em seguida**.
     
-    À direita, observe a opção de **status** da regra. Se você desativar uma política inteira, todas as regras contidas na política também serão desativadas. No enTanto, você pode desativar uma regra específica sem desativar toda a política. Isso pode ser útil quando você precisar investigar uma regra que está gerando um grande número de falsos positivos. 
+    À direita, observe a opção de **status** da regra. Se você desativar uma política inteira, todas as regras contidas na política também serão desativadas. No entanto, você pode desativar uma regra específica sem desativar toda a política. Isso pode ser útil quando você precisar investigar uma regra que está gerando um grande número de falsos positivos. 
     
 16. Na próxima página, leia e entenda o seguinte e, em seguida, escolha se deseja ativar ou testar primeiro \> **** a regra.
     
