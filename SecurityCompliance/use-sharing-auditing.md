@@ -3,7 +3,7 @@ title: Compartilhamento de auditoria para localizar recursos compartilhados com 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/13/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento está sendo usado em sua organização. '
-ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157893"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435231"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 
@@ -32,9 +32,9 @@ Eventos de compartilhamento (exceto o compartilhamento de política e eventos de
   
 O esquema de compartilhamento fornece dois campos adicionais no log de auditoria relacionado aos eventos de compartilhamento: 
   
-- **TargetUserOrGroupName** -armazena o UPN ou o nome do usuário ou grupo de destino com o qual um recurso foi compartilhado (usuário B no exemplo anterior). 
+- **TargetUserOrGroupName** – armazena o UPN ou o nome do usuário ou grupo de destino com o qual um recurso foi compartilhado (usuário B no exemplo anterior). 
     
-- **TargetUserOrGroupType** -identifica se o usuário ou grupo de destino é um membro, convidado, grupo ou parceiro. 
+- **TargetUserOrGroupType** – identifica se o usuário ou grupo de destino é um membro, convidado, grupo ou parceiro. 
     
 Esses dois campos, além de outras propriedades do esquema de log de auditoria do Office 365, como User, Operation e Date, podem informar a história completa sobre *qual* usuário compartilhou *o* recurso com *quem* e *quando*. 
   
@@ -42,7 +42,7 @@ Há outra propriedade de esquema que é importante para o texto de compartilhame
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>O modelo de compartilhamento do SharePoint e eventos de compartilhamento
 
-O compartilhamento é definido de fato por três eventos **** separados: compartilhando, **SharingInvitationCreated**e **SharingInvitaitonAccepted**. Este é o fluxo de trabalho para como o compartilhamento de eventos é registrado no log de auditoria do Office 365. 
+O compartilhamento é definido por três eventos separados ****: sharingset, **SharingInvitationCreated**e **SharingInvitaitonAccepted**. Este é o fluxo de trabalho para como o compartilhamento de eventos é registrado no log de auditoria do Office 365. 
   
 ![Fluxograma de como o compartilhamento de auditoria funciona](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
@@ -73,19 +73,19 @@ Um requisito comum para administradores é criar uma lista de todos os recursos 
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Etapa 1: Pesquisar eventos de compartilhamento e exportar os resultados para um arquivo CSV
 
-A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de compartilhamento. Para obter mais detalhes (incluindo as permissões necessárias) sobre pesquisa no log de auditoria, consulte [Search the Audit Log in the Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de compartilhamento. Para obter mais informações (incluindo as permissões necessárias) sobre pesquisa no log de auditoria, consulte [Pesquisar o log de auditoria no centro de conformidade de & de segurança](search-the-audit-log-in-security-and-compliance.md).
   
 1. Acesse [https://protection.office.com](https://protection.office.com).
     
 2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
     
-3. No painel esquerdo do centro de conformidade do & de segurança, clique em**pesquisa de log de auditoria**de **pesquisa**  > .
+3. No painel esquerdo do centro de conformidade & segurança, clique em ****  > **pesquisa de log de auditoria**de pesquisa.
     
     A página **pesquisa de log de auditoria** é exibida. 
     
-4. Em **atividades**, clique em **compartilhar atividades** para pesquisar somente eventos de compartilhamento. 
+4. Em **atividades**, clique em **compartilhar e acessar as atividades de solicitação** para pesquisar eventos relacionados ao compartilhamento. 
     
-    ![Em atividades, selecione compartilhar atividades](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Em atividades, selecione compartilhar e acessar atividades de solicitação](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Selecione um intervalo de data e hora para localizar os eventos de compartilhamento que ocorreram dentro desse período. 
     
@@ -96,54 +96,24 @@ A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de c
     Depois que você selecionar a opção Exportar, uma mensagem será exibida na parte inferior da janela que solicitará que você abra ou salve o arquivo CSV.
     
 8. Clique em **salvar** \> **salvar como** e salve o arquivo CSV em uma pasta no computador local. 
-    
 
-  
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Etapa 2: filtrar o arquivo CSV para recursos compartilhados com usuários externos
 
-A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvitationCreated** e exibir os eventos em que a propriedade **TargetUserOrGroupType** é **Guest**. Você usará o recurso de consulta de energia no Excel para fazer isso. O procedimento a seguir é executado no Excel 2016. 
-  
-1. No Excel 2016, abra uma pasta de trabalho em branco.
+A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvitationCreated** e exibir os eventos em que a propriedade **TargetUserOrGroupType** é **Guest**. Use a ferramenta Editor de consulta de alimentação no Excel para fazer isso. Para obter instruções detalhadas, consulte [Export, configure e View Audit Log Records](export-view-audit-log-records.md). 
+
+Após seguir as instruções no tópico anterior para preparar o arquivo CSV, faça o seguinte:
     
-2. Clique na guia **dados** . 
+1. Abra o arquivo CSV que você preparou com o editor de consulta de energia. 
+
+2. Na guia **página inicial** , clique em **classificar & filtro**e, em seguida, clique em **Filtrar**.
     
-3. Clique em **nova consulta** \> **de arquivo** \> **de CSV**.
-    
-    ![Na guia dados, selecione Nova consulta, selecione de arquivo e, em seguida, selecione do CSV](media/5170ab34-b449-40ea-bd3f-f1432c1c5973.png)
-  
-4. Abra o arquivo CSV que você baixou na etapa 1.
-    
-    O arquivo CSV é aberto no editor de consultas. Observe que há quatro colunas: **hora**, **usuário**, **ação**e **detalhes**. A coluna de **detalhes** é um campo de várias propriedades. A próxima etapa é criar uma nova coluna para cada uma das propriedades na coluna **detalhes** . 
-    
-5. Selecione a coluna **detalhes** e, na guia **página inicial** , clique em **dividir coluna** \> **por**delimitador.
-    
-    ![Na guia página inicial, clique em dividir coluna e, em seguida, clique em por delimitador](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
-  
-6. Na janela **dividir coluna por** delimitador, faça o seguinte: 
-    
-      - Em **selecionar ou inserir**delimitador, selecione **vírgula**.
-    
-      - Em **dividir**, selecione **em cada ocorrência do**delimitador.
-    
-7. Clique em **OK**.
-    
-    A coluna de **detalhes** é dividida em várias colunas. Cada nova coluna é denominada **detail. 1**, **detail. 2**, **detail. 3**e assim por diante. Você notará que os valores em cada célula das colunas **detail. n** são prefixados com o nome da propriedade; por exemplo, **operação: sharingset**, **Operation: SharingInvitationAccepted**e **Operation: SharingInvitationCreated**.
-    
-    ![A coluna de detalhes é dividida em várias colunas, uma para cada propriedade](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
-  
-8. Na guia **arquivo** , clique em **fechar &amp; carregamento** para fechar o editor de consultas e abrir o arquivo em uma pasta de trabalho do Excel. 
-    
-    A próxima etapa é filtrar o arquivo para exibir apenas os eventos **sharingset** e **SharingInvitationCreated** . 
-    
-9. Vá para a guia **página inicial** e, em seguida, selecione a coluna **ação** . 
-    
-10. Na lista **suspensa &amp; filtro de classificação** , desmarque todas as seleções e, em seguida, selecione compartilhamentos e **SharingInvitationCreated**e clique em **OK**. ****
+3. Na lista suspensa **classificar & filtro** na coluna **operações** , desmarque todas as seleções e, em seguida, selecione **compartilhamento** e **SharingInvitationCreated**e clique em **OK**.
     
     O Excel exibe as linhas dos **** eventos sharingset e **SharingInvitationCreated** . 
     
-11. Vá até a coluna chamada **detail. 17** (ou qualquer coluna que contenha a propriedade **TargetUserOrGroupType** ) e selecione-a. 
+4. Vá até a coluna chamada **TargetUserOrGroupType** e selecione-a. 
     
-12. Na lista **suspensa &amp; filtro de classificação** , desmarque todas as seleções e, em seguida, selecione **TargetUserOrGroupType: convidado**e clique em **OK**.
+5. Na lista suspensa **classificar & filtro** , desmarque todas as seleções e, em seguida, selecione **TargetUserOrGroupType: convidado**e clique em **OK**.
     
     Agora o Excel exibe as linhas dos eventos **SharingInvitationCreated** e **sharingset** e onde o usuário de destino está fora da sua organização, pois os usuários externos são identificados pelo valor **TargetUserOrGroupType: Guest**. 
     
@@ -151,7 +121,7 @@ A tabela a seguir mostra todos os usuários da organização que compartilharam 
   
 ![Compartilhando eventos no log de auditoria do Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
-Embora não esteja incluído na tabela anterior, a coluna **detail. 10** (ou qualquer coluna contém a propriedade **ObjectID** ) identifica o recurso que foi compartilhado com o usuário de destino; por exemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+Embora não esteja incluído na tabela anterior, a propriedade **ObjectID** identifica o recurso que foi compartilhado com o usuário de destino; por exemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
   
 > [!TIP]
-> Se você quiser identificar quando um usuário convidado foi realmente atribuído a permissões para acessar um recurso (em vez de apenas os recursos que foram compartilhados com eles), repita as etapas 10, 11 e 12 e filtre o **SharingInvitationAccepted** e o **sharingset **eventos na etapa 10. 
+> Se você deseja identificar quando um usuário convidado foi realmente atribuído a permissões para acessar um recurso (em vez de apenas os recursos que foram compartilhados com eles), repita as etapas 2, 3 e 4 e filtre o **SharingInvitationAccepted** e o **sharingset** eventos na etapa 5. 

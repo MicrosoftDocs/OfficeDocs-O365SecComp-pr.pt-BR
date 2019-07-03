@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use a pesquisa de conteúdo e o script neste artigo para pesquisar as caixas de correio e os sites do OneDrive for Business para um grupo de usuários.
-ms.openlocfilehash: a9ee2db0bc0fc7a4b53c58f02bcb9d16f96fc403
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253920"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435141"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Use a Pesquisa de Conteúdo para procurar uma lista de usuários na caixa de correio e no site do OneDrive for Business
 
@@ -34,14 +34,12 @@ O centro de conformidade do & de segurança fornece vários cmdlets do Windows P
 - Os scripts de exemplo fornecidos neste tópico não são suportados em nenhum programa ou serviço de suporte padrão da Microsoft. Os scripts de exemplo são fornecidos COMO ESTÃO sem qualquer tipo de garantia. A Microsoft se isenta de[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)todas as garantias mplied, incluindo, sem limitação, quaisquer garantias implícitas de comercialização ou ADEQÜAÇÃO para um propósito específico. Todos os riscos decorrentes do uso ou da execução da documentação ou scripts de exemplo serão de sua responsabilidade. De modo algum a Microsoft, seus autores ou qualquer outra pessoa envolvida na criação, produção ou veiculação dos scripts serão considerados responsáveis por quaisquer danos (incluindo sem limitações danos por perda de lucros comerciais, interrupção de negócios, perda de informações comerciais ou outras perdas pecuniárias) resultantes do uso ou da incapacidade de uso da documentação ou scripts de exemplo, mesmo que a Microsoft tenha sido alertada sobre a possibilidade de tais danos.
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Etapa 1: Instalar o Shell de gerenciamento do SharePoint Online
-<a name="step1"> </a>
 
 A primeira etapa é instalar o Shell de gerenciamento do SharePoint Online. Não é necessário usar o Shell neste procedimento, mas você precisa instalá-lo porque ele contém pré-requisitos necessários para o script executado na etapa 3. Esses pré-requisitos permitem que o script se comunique com o SharePoint Online para obter as URLs para os sites do OneDrive for Business.
   
 Vá para [Configurar o ambiente do Windows PowerShell do Shell de gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=286318) e execute a etapa 1 e a etapa 2 para instalar o Shell de gerenciamento do SharePoint Online.
   
 ## <a name="step-2-generate-a-list-of-users"></a>Etapa 2: gerar uma lista de usuários
-<a name="step2"> </a>
 
 O script na etapa 3 criará uma pesquisa de conteúdo para pesquisar as caixas de correio e as contas do OneDrive para uma lista de usuários. Você pode simplesmente digitar os endereços de email em um arquivo de texto ou pode executar um comando no Windows PowerShell para obter uma lista de endereços de email e salvá-los em um arquivo (localizado na mesma pasta em que você salvará o script na etapa 3).
   

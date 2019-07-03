@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade & segurança para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 656bb3a82c11308e8596c0eb71972ead5dfed620
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113285"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435221"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade & segurança
 
@@ -257,7 +257,7 @@ Para filtrar os resultados:
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Etapa 4: exportar os resultados da pesquisa para um arquivo
 
-Você pode exportar os resultados de uma pesquisa de log de auditoria para um arquivo CSV (valor separado por vírgula) no computador local. Você pode abrir esse arquivo no Microsoft Excel e usar recursos como pesquisa, classificação, filtragem e divisão de uma única coluna (que contém células de vários valores) em várias colunas.
+Você pode exportar os resultados de uma pesquisa de log de auditoria para um arquivo CSV (valor separado por vírgula) no computador local. Você pode abrir esse arquivo no Microsoft Excel e usar recursos como pesquisa, classificação, filtragem e divisão de uma única coluna (que contém várias propriedades) em várias colunas.
   
 1. Execute uma pesquisa de log de auditoria e revise os critérios de pesquisa até que você tenha os resultados desejados.
     
@@ -265,27 +265,24 @@ Você pode exportar os resultados de uma pesquisa de log de auditoria para um ar
     
      - **Salvar resultados carregados** – escolha esta opção para exportar somente as entradas que são exibidas em **resultados** na página **pesquisa de log de auditoria** . O arquivo CSV baixado contém as mesmas colunas (e dados) exibidas na página (data, usuário, atividade, item e detalhes). Uma coluna adicional (chamada **mais**) é incluída no arquivo CSV que contém mais informações da entrada do log de auditoria. Como você está exportando os mesmos resultados que são carregados (e exibíveis) na página **pesquisa de log de auditoria** , um máximo de 5.000 entradas são exportadas. 
     
-     - **Baixar todos os resultados** – escolha esta opção para exportar todas as entradas do log de auditoria do Office 365 que atendem aos critérios de pesquisa. Para obter um grande conjunto de resultados de pesquisa, escolha essa opção para baixar todas as entradas do log de auditoria, além dos resultados 5.000 que podem ser exibidos na página **pesquisa de log de auditoria** . Essa opção baixará os dados brutos do log de auditoria para um arquivo CSV e conterá informações adicionais da entrada do log de auditoria em uma coluna chamada **AuditData**. Pode levar mais tempo para baixar o arquivo se você escolher essa opção de exportação porque o arquivo pode ser muito maior do que o baixado, se você escolher a outra opção.
+     - **Baixar todos os resultados** – escolha esta opção para exportar todas as entradas do log de auditoria do Office 365 que atendem aos critérios de pesquisa. Para obter um grande conjunto de resultados de pesquisa, escolha essa opção para baixar todas as entradas do log de auditoria, além dos registros de auditoria 5.000 que podem ser exibidos na página **pesquisa de log de auditoria** . Essa opção baixará os dados brutos do log de auditoria para um arquivo CSV e conterá informações adicionais da entrada do log de auditoria em uma coluna chamada **AuditData**. Pode levar mais tempo para baixar o arquivo se você escolher essa opção de exportação porque o arquivo pode ser muito maior do que o baixado, se você escolher a outra opção.
     
        > [!IMPORTANT]
        > Você pode baixar um máximo de 50.000 entradas para um arquivo CSV de uma única pesquisa de log de auditoria. Se as entradas 50.000 forem baixadas para o arquivo CSV, provavelmente você poderá supor que há mais de 50.000 eventos que atingiram os critérios de pesquisa. Para exportar mais do que esse limite, tente usar um intervalo de datas para reduzir o número de entradas de log de auditoria. Você pode ter que executar várias pesquisas com intervalos de datas menores para exportar mais de 50.000 entradas. 
   
 3. Após selecionar uma opção de exportação, uma mensagem é exibida na parte inferior da janela que solicita que você abra o arquivo CSV, salve-o na pasta downloads ou salve-o em uma pasta específica.
+ 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Mais informações sobre como exportar e exibir resultados de pesquisa de log de auditoria
 
-  
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Mais informações sobre como exportar resultados de pesquisa de log de auditoria
-
-- A opção **baixar todos os resultados** baixa os dados brutos do log de auditoria do Office 365 para um arquivo CSV. Esse arquivo contém nomes de coluna diferentes (CreationDate, UserIds, Operation, AuditData) do que o arquivo baixado se você selecionar a opção **salvar resultados carregados** . Os valores dos dois arquivos CSV diferentes para a mesma atividade também podem ser diferentes. Por exemplo, a atividade na coluna **ação** no arquivo CSV e pode ter um valor diferente da versão "amigável" que é exibida na coluna **atividade** na página **pesquisa de log de auditoria** ; por exemplo, MailboxLogin vs. usuário conectado à caixa de correio.
-    
-- Se você baixar todos os resultados, o arquivo CSV conterá uma coluna chamada **AuditData**, que contém informações adicionais sobre cada evento. Conforme mencionado anteriormente, esta coluna contém uma propriedade de vários valores para várias propriedades do registro de log de auditoria. Cada um dos pares **Propriedade: valor** nessa propriedade de vários valores é separado por uma vírgula. Você pode usar a consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade tenha sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para saber como fazer isso, confira a seção "dividir uma coluna por delimitador" em [dividir uma coluna de texto (consulta de força)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Se você baixar todos os resultados da pesquisa, o arquivo CSV conterá uma coluna chamada **AuditData**, que contém informações adicionais sobre cada evento. Os dados nesta coluna consistem em um objeto JSON que contém várias propriedades do registro de log de auditoria. Cada par de *Propriedade: Value* no objeto JSON é separado por uma vírgula. Você pode usar a ferramenta de transformação JSON no editor do Power Query no Excel para dividir a coluna **AuditData** em várias colunas, de modo que cada propriedade no objeto JSON tenha sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para obter instruções passo a passo usando o editor de consulta de alimentação para transformar o objeto JSON, consulte [Export, configure e View Audit Log Records](export-view-audit-log-records.md).
     
     Após dividir a coluna **AuditData** , você pode filtrar a coluna **operações** para exibir as propriedades detalhadas de um tipo específico de atividade. 
     
-- Há um limite de 3.060 caracteres para os dados exibidos no campo **AuditData** para um registro de auditoria. Se o limite de 3.060 caracteres for excedido, os dados nesse campo serão truncados. 
-    
+- A opção **baixar todos os resultados** baixa os dados brutos do log de auditoria do Office 365 para um arquivo CSV. Esse arquivo contém nomes de coluna diferentes (CreationDate, UserIds, Operation, AuditData) do que o arquivo baixado se você selecionar a opção **salvar resultados carregados** . Os valores dos dois arquivos CSV diferentes para a mesma atividade também podem ser diferentes. Por exemplo, a atividade na coluna **ação** no arquivo CSV e pode ter um valor diferente do nome "amigável" que é exibido na coluna **atividade** da página **pesquisa de log de auditoria** ; por exemplo, MailboxLogin vs. usuário conectado à caixa de correio.
+
 - Ao baixar todos os resultados de uma consulta de pesquisa que contenha eventos de diferentes serviços do Office 365, a coluna **AuditData** no arquivo CSV contém propriedades diferentes, dependendo do serviço em que a ação foi executada. Por exemplo, as entradas dos logs de auditoria do Exchange e do Azure AD incluem uma propriedade denominada **ResultStatus** que indica se a ação foi bem-sucedida ou não. Essa propriedade não é incluída para eventos no SharePoint. Da mesma forma, os eventos do SharePoint têm uma propriedade que identifica a URL do site para atividades relacionadas a arquivos e pastas. Para reduzir esse comportamento, considere o uso de pesquisas diferentes para exportar os resultados das atividades de um único serviço. 
     
-    Para obter uma descrição das propriedades listadas na coluna **AuditData** no arquivo CSV, quando você baixar todos os resultados e o serviço ao qual cada um se aplica, consulte [propriedades detalhadas no log de auditoria do Office 365](detailed-properties-in-the-office-365-audit-log.md).
+    Para obter uma descrição de muitas das propriedades listadas na coluna **AuditData** no arquivo CSV, quando você baixar todos os resultados e o serviço ao qual cada um se aplica, confira [propriedades detalhadas no log de auditoria do Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Atividades auditadas
 

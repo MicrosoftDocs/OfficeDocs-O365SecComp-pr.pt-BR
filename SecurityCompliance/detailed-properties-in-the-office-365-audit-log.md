@@ -15,21 +15,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Descrições de propriedades adicionais incluídas em um registro de log de auditoria do Office 365.
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+description: Descrições das propriedades adicionais incluídas em um registro de log de auditoria do Office 365.
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253930"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435151"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriedades detalhadas no log de auditoria do Office 365
 
 Ao exportar os resultados de uma pesquisa de log de auditoria do centro de conformidade & segurança, você tem a opção de baixar todos os resultados que atendem aos critérios de pesquisa. Para fazer isso, selecione **Exportar resultados** \> **baixar todos os resultados** na página **pesquisa de log de auditoria** . Para obter mais informações, consulte [Search the Audit Log In The Office 365](search-the-audit-log-in-security-and-compliance.md).
   
- Quando exportar todos os resultados de uma pesquisa de log de auditoria, os dados brutos do log de auditoria unificada do Office 365 serão copiados para um arquivo CSV (valor separado por vírgula) baixado para o computador local. Este arquivo contém informações adicionais de cada registro de auditoria em uma coluna chamada **AuditData**. Esta coluna contém uma propriedade de vários valores para várias propriedades do registro de log de auditoria. Cada um dos pares **Propriedade: valor** nessa propriedade de vários valores é separado por uma vírgula. 
+ Quando exportar todos os resultados de uma pesquisa de log de auditoria, os dados brutos do log de auditoria unificada do Office 365 serão copiados para um arquivo CSV (valores separados por vírgula) baixados para o computador local. Este arquivo contém informações adicionais de cada registro de auditoria em uma coluna chamada **AuditData**. Esta coluna contém uma propriedade de vários valores para várias propriedades do registro de log de auditoria. Cada um dos pares **Propriedade: valor** nessa propriedade de vários valores é separado por uma vírgula. 
   
-A tabela a seguir descreve as propriedades que são incluídas, dependendo do serviço do Office 365 em que ocorre um evento, na coluna **AuditData** de várias propriedades. O **serviço do Office 365 que tem essa** coluna de propriedade indica o serviço e o tipo de atividade (usuário ou administrador) que inclui a propriedade. Para obter informações mais detalhadas sobre essas propriedades ou sobre as propriedades que podem não estar listadas neste tópico, consulte [esquema de API de atividade de gerenciamento do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+A tabela a seguir descreve as propriedades que são incluídas (dependendo do serviço do Office 365 no qual um evento ocorre) na coluna **AuditData** de várias propriedades. O **serviço do Office 365 que tem essa** coluna de propriedade indica o serviço e o tipo de atividade (usuário ou administrador) que inclui a propriedade. Para obter informações mais detalhadas sobre essas propriedades ou sobre as propriedades que podem não estar listadas neste tópico, consulte [esquema de API de atividade de gerenciamento do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
 > Você pode usar a consulta de energia no Excel para dividir esta coluna em várias colunas, de forma que cada propriedade tenha sua própria coluna. Isso permitirá que você classifique e filtre em uma ou mais dessas propriedades. Para saber como fazer isso, confira a seção "dividir uma coluna por delimitador" em [dividir uma coluna de texto (consulta de força)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
@@ -49,10 +49,10 @@ A tabela a seguir descreve as propriedades que são incluídas, dependendo do se
 |CreationTime|A data e hora no Tempo Universal Coordenado (UTC) de quando o usuário realizou a atividade.|Tudo|
 |DestinationFileExtension|A extensão de um arquivo que foi copiado ou movido. Essa propriedade é exibida somente para as atividades de usuário filecopied e filemoved.|SharePoint|
 |DestinationFileName|O nome do arquivo é copiado ou movido. Essa propriedade é exibida somente para as ações filecopied e filemoved.|SharePoint|
-|DestinationRelativeUrl|A URL da pasta de destino em que um arquivo é copiado ou movido. A combinação dos valores para **SiteUrl**, **DestinationRelativeURL**e **DestinationFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo que foi copiado. Essa propriedade é exibida somente para as atividades de usuário filecopied e filemoved.|SharePoint|
+|DestinationRelativeUrl|A URL da pasta de destino em que um arquivo é copiado ou movido. A combinação dos valores para **SiteUrl**, **DestinationRelativeURL**e a propriedade **DestinationFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo que foi copiado. Essa propriedade é exibida somente para as atividades de usuário filecopied e filemoved.|SharePoint|
 |EventSource|Identifica que um evento ocorreu no SharePoint. Os valores possíveis são **SharePoint** e **ObjectModel**.|SharePoint|
 |ExternalAccess|Para a atividade de administração do Exchange, especifica se o cmdlet foi executado por um usuário da sua organização, pela equipe do Microsoft Datacenter ou por uma conta de serviço do Datacenter ou por um administrador delegado. O valor **Falso** indica que o cmdlet foi executado por alguém em sua organização. O valor **Verdadeiro** indica que o cmdlet foi executado pela equipe do datacenter, por uma conta de serviço do datacenter ou por um administrador delegado.  <br/> Para a atividade de caixa de correio do Exchange, especifica se uma caixa de correio foi acessada por um usuário fora da sua organização.|Exchange|
-|ExtendedProperties|As propriedades estendidas para um evento do Azure Active Directory.|Azure Active Directory|
+|ExtendedProperties|As propriedades estendidas de um evento do Azure Active Directory.|Azure Active Directory|
 |ID|A ID da entrada de relatório. A identificação identifica exclusivamente a entrada de relatório.|Tudo|
 |InternalLogonType|Reservado para uso interno.|Exchange (atividade de caixa de correio)|
 |ItemType|O tipo de objeto que foi acessado ou modificado. Os valores possíveis incluem **arquivo**, **pasta**, **Web**, **site**, **locatário**e **DocumentLibrary**.|SharePoint|
@@ -75,9 +75,9 @@ A tabela a seguir descreve as propriedades que são incluídas, dependendo do se
 |SiteUrl|A URL do site onde o arquivo ou pasta acessado pelo usuário está localizado.|SharePoint|
 |SourceFileExtension|A extensão do arquivo que foi acessado pelo usuário. Esta propriedade fica em branco se o objeto que foi acessado for uma pasta.|SharePoint|
 |SourceFileName|O nome do arquivo ou pasta acessado pelo usuário.|SharePoint|
-|SourceRelativeUrl|O URL da pasta que contém o arquivo acessado pelo usuário. A combinação dos valores para **SiteUrl**, **SourceRelativeURL**e **sourceFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo acessado pelo usuário.|SharePoint|
+|SourceRelativeUrl|O URL da pasta que contém o arquivo acessado pelo usuário. A combinação dos valores para **SiteUrl**, **SourceRelativeURL**e a propriedade **sourceFileName** é o mesmo que o valor da propriedade **ObjectID** , que é o nome do caminho completo para o arquivo acessado pelo usuário.|SharePoint|
 |Subject|A linha de assunto da mensagem que foi acessada.|Exchange (atividade de caixa de correio)|
-|TabType| O tipo de guia adicionado, removido ou atualizado em uma equipe. Os valores possíveis para esta propriedade são:  <br/><br/> **Excelpin** -uma guia do Excel.  <br/> **Ramal** : todos os aplicativos de terceiros e de terceiros; como o Planner, VSTS e formulários.  <br/> **Observações** -guia do OneNote.  <br/> **Pdfpin** -uma guia PDF.  <br/> **Powerbi** -uma guia powerbi.  <br/> **Powerpointpin** -uma guia do PowerPoint.  <br/> **Sharepointfiles** -uma guia do SharePoint.  <br/> **Página da Web** -uma guia site fixo.  <br/> **Wiki-guia** -uma guia wiki.  <br/> **Wordpin** -uma guia do Word.|Microsoft Teams|
+|TabType| O tipo de guia adicionado, removido ou atualizado em uma equipe. Os valores possíveis para esta propriedade são:  <br/><br/> **PIN do Excel** -uma guia do Excel.  <br/> **Ramal** : todos os aplicativos de terceiros e de terceiros; como agenda de classe, VSTS e formulários.  <br/> **Observações** -guia do OneNote.  <br/> **Pdfpin** -uma guia PDF.  <br/> **Powerbi** -uma guia powerbi.  <br/> **Powerpointpin** -uma guia do PowerPoint.  <br/> **Sharepointfiles** -uma guia do SharePoint.  <br/> **Página da Web** -uma guia site fixo.  <br/> **Wiki-guia** -uma guia wiki.  <br/> **Wordpin** -uma guia do Word.|Microsoft Teams|
 |Target|O usuário em que a ação (identificado na propriedade **Operation** ) foi executada em. Por exemplo, se um usuário convidado for adicionado ao SharePoint ou a uma equipe da Microsoft, esse usuário será listado nessa propriedade.|Azure Active Directory|
 |TeamGuid|A ID de uma equipe no Microsoft Teams.|Microsoft Teams|
 |TeamName|O nome de uma equipe no Microsoft Teams.|Microsoft Teams|

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use o editor de pesquisa em massa no centro de segurança e conformidade no Office 365 ou no Microsoft 365 para alterar rapidamente os locais de consulta e conteúdo para uma ou mais pesquisas de conteúdo.
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152213"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435111"
 ---
 # <a name="bulk-edit-content-searches"></a>Edição em massa de pesquisas de conteúdo
 
@@ -92,7 +92,7 @@ Veja algumas dicas para editar locais de conteúdo usando o editor de pesquisa e
 - Você pode adicionar vários locais de conteúdo a uma ou mais pesquisas copiando várias linhas de um arquivo de texto ou de um arquivo do Excel e, em seguida, colando-as em uma seção na página **locais** . Após adicionar novos locais, certifique-se de marcar a caixa de seleção para cada pesquisa à qual deseja adicionar o local. 
     
     > [!TIP]
-    > Para gerar uma lista de endereços de email para todos os usuários em sua organização, execute o comando do PowerShell na etapa 2 em [usar a pesquisa de conteúdo para pesquisar a caixa de correio e o site do onedrive for Business para obter uma lista de usuários](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). Ou use o script em [criar uma lista de todos os locais do onedrive em sua organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) para gerar uma lista de todos os sites do onedrive for Business em sua organização. Observe que você terá que acrescentar a URL do seu domínio de meusite do organization's (por exemplo, https://contoso-my.sharepoint.com) para os sites do onedrive for Business criados pelo script. Depois de ter uma lista de endereços de email ou sites do OneDrive for Business, você pode copiá-los e colá-los na página **locais** no editor de pesquisa em massa. 
+    > Para gerar uma lista de endereços de email para todos os usuários em sua organização, execute o comando PowerShell na etapa 2 na [etapa 2: gerar uma lista de usuários](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users). Ou siga as etapas em [obter uma lista de todas as URLs do onedrive de usuários em sua organização](https://docs.microsoft.com/onedrive/list-onedrive-urls) para gerar uma lista de todos os sites do onedrive for Business em sua organização. Observe que você terá que acrescentar a URL para o domínio meusite da sua organização (por exemplo, https://contoso-my.sharepoint.com) para os sites do onedrive for Business criados pelo script. Depois de ter uma lista de endereços de email ou sites do OneDrive for Business, você pode copiá-los e colá-los na página **locais** no editor de pesquisa em massa. 
   
 - Depois que você clicar em **salvar** para salvar as alterações no editor de pesquisa em massa, o endereço de email para caixas de correio adicionadas a uma pesquisa será validado. Se o endereço de email não existir, será exibida uma mensagem de erro dizendo que a caixa de correio não pode ser localizada. Observe que as URLs para sites não são validadas. 
   
