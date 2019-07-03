@@ -1,11 +1,12 @@
 ---
-title: Criar um tipo de informação confidencial personalizado
+title: Criar um tipo personalizado de informação confidencial no Centro de Conformidade e Segurança
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como criar, modificar, remover e testar tipos de informações confidenciais personalizados para DLP na interface gráfica do usuário, no Centro de Conformidade e Segurança.
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077737"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>Criar um tipo de informação confidencial personalizado
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Criar um tipo personalizado de informação confidencial no Centro de Conformidade e Segurança
 
-A Prevenção contra perda de dados (DLP) no Office 365 inclui vários [tipos de informações confidenciais](what-the-sensitive-information-types-look-for.md) que estão prontos para uso nas suas políticas DLP. Esses tipos internos podem ajudar a identificar e proteger números de cartão de crédito, números de contas bancárias, números de passaporte e muito mais. 
+## <a name="summary"></a>Resumo
 
-Porém, se você precisar identificar e proteger um tipo diferente de informação confidencial, como IDs de funcionário ou números de projeto que usam um formato específico para sua organização, será possível criar um tipo personalizado de informação confidencial.
+Leia este artigo para criar um [ tipo personalizado de informação confidencial](custom-sensitive-info-types.md) no Centro de Conformidade e Segurança ([https://protection.office.com](https://protection.office.com)). Os tipos personalizados de informações confidenciais criados através desse método são adicionados ao pacote de regras chamado `Microsoft.SCCManaged.CustomRulePack`.
 
-As partes fundamentais de um tipo personalizado de informações confidenciais são:
+Também é possível criar tipos personalizados de informações confidenciais usando os recursos PowerShell e Exact Data Match. Para saber mais sobre esses métodos, confira:
+- [Crie um tipo personalizado de informação confidencial no PowerShell do Centro de Conformidade e Segurança](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Criar um tipo personalizado de informações confidenciais com Correspondência Exata de Dados (visualização)](create-custom-sensitive-info-type-edm.md)
 
-- **Padrão principal**: números de ID de funcionário, números de projeto etc. Isso geralmente é identificado por uma expressão regular (RegEx), mas também pode ser uma lista de palavras-chave.
+## <a name="before-you-begin"></a>Antes de começar...
 
-- **Evidências adicionais**: digamos que você esteja procurando por um número de ID de funcionário de nove dígitos. Nem todos os números de nove dígitos são números de ID de funcionário. Portanto, você pode pesquisar por texto adicional: palavras-chave como "funcionário", "crachá", "ID" ou outros padrões de texto com base em expressões regulares adicionais. Evidências de suporte (também chamadas de _suporte_ ou evidências _comprobatórias_) aumentam a probabilidade de que o número de nove dígitos no conteúdo seja realmente um número de ID de funcionário.
-
-- **Caractere de proximidade**: faz sentido que quanto mais próximos o padrão principal e as evidências de suporte estejam entre si, mais provável seja que o conteúdo detectado seja o que você está procurando. Você pode especificar a distância de caracteres entre o padrão principal e as evidências de suporte (também conhecido como a _janela de proximidade_), conforme mostrado no seguinte diagrama:
-
-    ![Diagrama da janela de proximidade e evidências comprobatórias](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **Nível de confiança**: quanto mais evidências de suporte você tiver, maior será a probabilidade de que uma correspondência contenha as informações confidenciais que está procurando. Você pode atribuir níveis mais altos de confiança para correspondências detectadas usando mais evidências.
-
-  Quando satisfeito, um padrão retorna uma contagem e um nível de confiança, que você pode usar nas condições de políticas DLP. Ao adicionar uma condição para detectar um tipo de informação confidencial a uma política DLP, você poderá editar o nível de confiança e a contagem, conforme mostrado no seguinte diagrama:
-
-    ![Contagem de instâncias e opções de precisão de correspondência](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-Para criar tipos de informações confidenciais personalizados no Centro de Conformidade e Segurança, você tem as seguintes opções:
-
-- **Usar a interface do usuário**: este método é mais fácil e rápido, mas você tem menos opções de configuração do PowerShell. O restante deste tópico descreve esses procedimentos.
-
-- **Usar o PowerShell**: Este método requer que você primeiro crie um arquivo XML (chamado de _pacote de regras_) que contém um ou mais tipos de informações confidenciais e, em seguida, usar o PowerShell para importar o pacote de regras (importar o pacote de regras é simples se comparado a criar o pacote de regras. Este método é muito mais complexo do que a Interface do Usuário, mas você tem mais opções de configuração. Para obter instruções, consulte [Criar um tipo personalizado de informações confidenciais no Centro de Conformidade e Segurança do PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
-
-As principais diferenças são descritas na seguinte tabela:
-
-|**Tipos de informações confidenciais personalizados na interface de usuário**|**Tipos de informações confidenciais personalizados no PowerShell**|
-|:-----|:-----|
-|O Nome e a Descrição estão em um idioma.|Dá suporte a vários idiomas para Nome e Descrição.|
-|Compatível com um padrão.|Compatível com vários padrões.|
-|As evidências de suporte podem ser: <br/>• Expressões regulares <br/>• Palavras-chave <br/>• Dicionários de palavras-chave|As evidências de suporte podem ser: <br/>• Expressões regulares <br/>• Palavras-chave <br/>• Dicionários de palavras-chave <br/>• [Funções DLP internas](what-the-dlp-functions-look-for.md)|
-|Os tipos de informações confidenciais personalizados são adicionados ao pacote de regras chamado Microsoft.SCCManaged.CustomRulePack|Você pode criar até 10 pacotes de regras com tipos de informações confidenciais personalizados.|
-|O padrão de comparação requer a detecção do padrão principal e todas as evidências de suporte (o operador AND implícito é usado).|O padrão de comparação requer a detecção do padrão principal e uma quantidade de evidências de suporte configurável (podem ser usados os operadores AND e OR implícitos).|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
-
-- Para abrir o Centro de Conformidade e Segurança, consulte [Acessar o Centro de Conformidade e Segurança](go-to-the-securitycompliance-center.md).
+- Sua organização deve ter uma assinatura, como o Office 365 Enterprise, que inclua Prevenção Contra Perda de Dados (DLP) Consulte [Política de Mensagens e Descrição do Serviço de Conformidade](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 - Os tipos de informações confidenciais personalizados exigem familiaridade com expressões regulares (RegEx). Para saber mais sobre o mecanismo de RegEx (anteriormente conhecido como RegEx++) usado para processar o texto, confira [Boost.RegEx 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
