@@ -3,7 +3,7 @@ title: Crie um tipo de informações confidenciais personalizado no PowerShell d
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a criar e importar um tipo de informações confidenciais personalizado para DLP no Centro de Conformidade e Segurança.
-ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b036d308a55dbd557c6b3dd5e0d5315d0d26bc83
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259034"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417403"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Crie um tipo de informações confidenciais personalizado no PowerShell do Centro de Conformidade e Segurança
 
 A Prevenção contra perda de dados (DLP) no Office 365 inclui vários [tipos de informações confidenciais](what-the-sensitive-information-types-look-for.md) que estão prontos para uso nas suas políticas DLP. Esses tipos internos podem ajudar a identificar e proteger números de cartão de crédito, números de contas bancárias, números de passaporte e muito mais. 
   
-Mas, se você precisa identificar e proteger um tipo diferente de informação confidencial, como uma ID de funcionário que usa um formato específico para sua organização, poderá criar um tipo personalizado de informação confidencial. Um tipo de informação confidencial é definido em um arquivo XML chamado _pacote de regras_.
+Mas e se você precisar identificar e proteger um tipo diferente de informações confidenciais (por exemplo, um ID de funcionário que usa um formato específico para sua organização)? Para fazer isso, você pode criar um tipo de informação sensível personalizado que é definido em um arquivo XML chamado de *pacote de regras*.
   
 Este tópico mostra como criar um arquivo XML que define seu próprio tipo personalizado de informações confidenciais. Você precisa saber criar uma expressão regular. Como exemplo, este tópico cria um tipo personalizado de informações confidenciais que identifica uma ID de funcionário. Você pode usar esse XML de exemplo como ponto de partida para seu próprio arquivo XML.
   
@@ -228,14 +228,26 @@ O elemento Any tem atributos opcionais minMatches e maxMatches que você pode us
 ### <a name="match-at-least-one-child-match-element"></a>Corresponder pelo menos um elemento Match filho
 
 Se você quiser exigir que apenas um número mínimo de elementos Match seja atendido, use o atributo minMatches. De fato, esses elementos Match são unidos por um operador OR implícito. Esse elemento Any será satisfeito se uma data no formato dos EUA ou uma palavra-chave de ambas as listas for encontrada.
-  
-![Marcação XML mostrando o elemento Any com o atributo minMatches](media/385db1b1-571b-4a05-81b3-db28f5099c17.png)
-  
+
+```
+<Any minMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
+    
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Corresponder um subconjunto exato dos elementos filhos de Match
 
 Se você quiser exigir que um número exato de elementos Match seja atendido, defina minMatches e maxMatches como o mesmo valor. Esse elemento Any apenas será satisfeito se exatamente uma data ou uma palavra-chave for encontrada: qualquer coisa além disso e o padrão não será correspondido.
-  
-![Marcação XML mostrando o elemento Any com o atributo minMatches e maxMatches](media/97b10002-7781-42e8-ac5a-20ad8c5a887e.png)
+
+```
+<Any minMatches="1" maxMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
   
 ### <a name="match-none-of-children-match-elements"></a>Corresponder nenhum dos elementos filhos de Match
 
@@ -243,7 +255,25 @@ Se você quiser exigir a ausência de evidências específicas para que um padr�
   
 Por exemplo, a entidade ID do funcionário procura a palavra-chave "cartão" porque ela pode fazer referência a um "cartão de ID". No entanto, se o cartão aparecer apenas na frase "cartão de crédito", "cartão" neste conteúdo é improvável que signifique um "cartão de ID". Portanto, você pode adicionar "cartão de crédito" como uma palavra-chave a uma lista de termos que você deseja excluir na hora de satisfazer o padrão.
   
-![Marcação XML mostrando o valor zero do atributo maxMatches](media/f81d44e5-3db8-48a8-8919-f483a386afdf.png)
+```
+<Any minMatches="0" maxMatches="0" >
+    <Match idRef="Keyword_false_positives_local" />
+    <Match idRef="Keyword_false_positives_intl" />
+</Any>
+```
+
+### <a name="match-a-number-of-unique-terms"></a>Corresponder a um número de termos exclusivos
+
+Se você quiser corresponder vários termos exclusivos, use o parâmetro *uniqueResults*, definido como *true*, conforme mostrado no exemplo a seguir:
+
+```
+<Pattern confidenceLevel="75">
+    <IdMatch idRef="Salary_Revision_terms" />
+    <Match idRef=" Salary_Revision_ID " minCount="3" uniqueResults="true" />
+</Pattern>
+```
+
+Neste exemplo, um padrão é definido para revisão salarial usando pelo menos três correspondências exclusivas. 
   
 ## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Qual a proximidade das outras evidências com a entidade? [atributo patternsProximity]
 
@@ -321,7 +351,7 @@ Ao concluir, seu elemento RulePack deve ter esta aparência.
 
 Anteriormente, você podia usar o Exchange Online PowerShell para importar os tipos personalizados de informações confidenciais para a DLP. Agora os tipos personalizados de informações confidenciais podem ser usados no Centro de administração do Exchange e o Centro de Conformidade &amp; Segurança. Como parte dessa melhoria, você deve usar o PowerShell do Centro de Conformidade &amp; Segurança para importar tipos de informações confidenciais personalizados, você não poderá mais importá-los do Exchange PowerShell. Os tipos personalizados de informações confidenciais continuarão a funcionar como antes; no entanto, pode levar até uma hora para que as alterações feitas nos tipos personalizados de informações confidenciais no Centro de Conformidade &amp; Segurança apareçam no Centro de administração do Exchange.
   
-Observe que, no Centro de Conformidade &amp; Segurança, o cmdlet `DlpSensitiveInformationTypeRulePackage` é usado para carregar um pacote de regras. Anteriormente, no Centro de administração do Exchange, o cmdlet `ClassificationRuleCollection` era usado. 
+Observe que, no Centro de Conformidade &amp; Segurança, você usa o cmdlet **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** para carregar um pacote de regras. (Anteriormente, no centro de administração do Exchange, você usava o cmdlet **ClassificationRuleCollection**`). 
   
 ## <a name="upload-your-rule-package"></a>Carregar o pacote de regras
 
@@ -347,13 +377,13 @@ Para carregar o pacote de regras, siga as etapas:
 
 5. Para confirmar que você criou um novo tipo de informação confidencial com êxito, execute uma destas etapas:
 
-  - Execute o comando a seguir e verifique se o novo pacote de regras está listado:
+  - Execute o cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) para verificar se o novo pacote de regras está listado:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - Execute o comando a seguir e verifique se o novo tipo de informação confidencial está listado:
+  - Execute o cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) para verificar se o tipo de informação confidencial está listado:
 
     ```
     Get-DlpSensitiveInformationType
@@ -361,7 +391,7 @@ Para carregar o pacote de regras, siga as etapas:
 
     Para tipos personalizados de informação confidencial, o valor da propriedade Publisher será diferente do Microsoft Corporation.
 
-  - Substitua \<Name\> com o valor de nome do tipo de informação confidencial (como ID do funcionário) e execute o seguinte comando:
+  - Substitua \<Name\> pelo valor Name do tipo de informação sensível (exemplo: ID do Funcionário) e execute o cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps):
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -407,11 +437,12 @@ Se um tipo personalizado de informações confidenciais contiver um problema que
 
 A DLP usa o rastreador de pesquisa para identificar e classificar informações confidenciais no conteúdo do site. O conteúdo em sites no SharePoint Online e no OneDrive for Business será novamente rastreado automaticamente sempre que ele for atualizado. Mas, para identificar seu novo tipo personalizado de informações confidenciais em todo o conteúdo existente, esse conteúdo deve ser novamente rastreado.
   
-No Office 365, não é possível solicitar manualmente um novo rastreamento de um locatário inteiro, mas você pode fazer isso para um conjunto de sites, lista ou biblioteca. Confira [Solicitar manualmente o rastreamento e a reindexação de um site, biblioteca ou lista](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e).
+No Office 365, não é possível solicitar manualmente um novo rastreamento de um locatário inteiro, mas você pode fazer isso para um conjunto de sites, lista ou biblioteca. Confira [Solicitar manualmente o rastreamento e a reindexação de um site, biblioteca ou lista](https://docs.microsoft.com/sharepoint/crawl-site-content).
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>Remover um tipo personalizado de informação confidencial
 
-**Observação**: antes de remover um tipo personalizado de informação confidencial, verifique se nenhuma política de DLP ou regras de fluxo de emails do Exchange (também conhecidas como regras de transporte) ainda fazem referência ao tipo de informação confidencial.
+> [!NOTE]
+> Antes de remover um tipo personalizado de informação confidencial, verifique se nenhuma política de DLP ou regras de fluxo de emails do Exchange (também conhecidas como regras de transporte) ainda fazem referência ao tipo de informação confidencial.
 
 No PowerShell do Centro de Conformidade e Segurança, há dois métodos para remover os tipos personalizados de informação confidencial:
 
@@ -421,7 +452,7 @@ No PowerShell do Centro de Conformidade e Segurança, há dois métodos para rem
 
 1. [Conecte-se ao PowerShell do Centro de Conformidade e Segurança](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. Para remover um pacote de regras personalizado, use a seguinte sintaxe:
+2. Para remover um pacote de regras personalizado, use o cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps):
 
     ```
     Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -439,13 +470,13 @@ No PowerShell do Centro de Conformidade e Segurança, há dois métodos para rem
 
 3. Para confirmar se você removeu um novo tipo de informação confidencial com êxito, execute uma destas etapas:
 
-  - Execute o comando a seguir e verifique se o pacote de regras não está mais listado:
+  - Execute o cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) e verifique se o pacote de regras não está mais listado:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - Execute o comando a seguir e verifique se os tipos de informação confidencial no pacote de regras removido não estão mais listados:
+  - Execute o cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) para verificar se os tipos de informações confidenciais no pacote de regras removido não estão mais listados:
 
     ```
     Get-DlpSensitiveInformationType
@@ -453,7 +484,7 @@ No PowerShell do Centro de Conformidade e Segurança, há dois métodos para rem
 
     Para tipos personalizados de informação confidencial, o valor da propriedade Publisher será diferente do Microsoft Corporation.
 
-  - Substitua \<Name\> com o valor de nome de Name do tipo de informação confidencial (como ID do funcionário) e execute o seguinte comando para verificar se o tipo de informação confidencial não está mais listado:
+  - Substitua \<Name\> pelo valor Name do tipo de informação confidencial (por exemplo, Employee ID) e execute o cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) para verificar se o tipo de informação confidencial não está mais listado:
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -473,9 +504,10 @@ Para conectar-se ao PowerShell do Centro de Conformidade e Segurança, consulte 
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Etapa 1: Exportar o pacote de regras existente para um arquivo XML
 
-**Observação**: se você tiver uma cópia do arquivo XML (por exemplo, você acabou criá-lo e importá-lo), pode pular a próxima etapa para modificar o arquivo XML.
+> [!NOTE]
+> Se você tiver uma cópia do arquivo XML (por exemplo, você acabou de criá-lo e importá-lo), poderá pular para a próxima etapa para modificar o arquivo XML.
 
-1. Se você ainda não souber, execute o seguinte comando para encontrar o nome do pacote de regras personalizado:
+1. Se você ainda não sabe, execute o cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) para encontrar o nome do pacote de regras personalizado:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
@@ -483,19 +515,19 @@ Para conectar-se ao PowerShell do Centro de Conformidade e Segurança, consulte 
 
     **Observação**: o pacote de regras interno que contém os tipos de informação confidencial internos é denominado Pacote de Regras da Microsoft. O pacote de regras que contém os tipos personalizados de informação confidencial que você criou na IU do Centro de Conformidade e Segurança é denominado Microsoft.SCCManaged.CustomRulePack.
 
-2. Use a seguinte sintaxe para armazenar o pacote de regras personalizado em uma variável:
+2. Use o cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) para armazenar o pacote de regras personalizadas em uma variável:
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
     ```
 
-   Por exemplo, se o nome do pacote de regras é "Pacote de regras personalizado de ID do funcionário", execute o seguinte comando:
+   Por exemplo, se o nome do pacote de regras for "Pacote de regras personalizadas do ID do funcionário", execute o seguinte cmdlet:
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
     ```
 
-3. Use a seguinte sintaxe para exportar o pacote de regras personalizado para um arquivo XML:
+3. Use o cmdlet [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) para exportar o pacote de regras personalizadas para um arquivo XML:
 
     ```
     Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -513,18 +545,10 @@ Os tipos de informação confidencial no arquivo XML e outros elementos no arqui
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>Etapa 3: Importar o arquivo XML atualizado de volta para o pacote de regras existente
 
-Para importar o arquivo XML atualizado de volta para o pacote de regras existente, use a seguinte sintaxe:
+Para importar o XML atualizado de volta para o pacote de regras existente, use o cmdlet [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps):
 
 ```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity" -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
-```
-
-Você pode usar o valor de Name ou o `RulePack id` valor (GUID) para identificar o pacote de regras.
-
-Este exemplo carrega o arquivo XML Unicode atualizado chamado MyUpdatedRulePack.xml de C:\Meus documentos para o pacote de regras existente chamado "Pacote de regras personalizado de ID do funcionário".
-
-```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack" -FileData (Get-Content -Path "C:\My Documents\MyUpdatedRulePack.xml" -Encoding Byte)
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
 Para informações detalhadas sobre sintaxe e parâmetros, confira [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage).
