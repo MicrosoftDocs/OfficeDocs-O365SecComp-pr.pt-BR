@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artigo como referência para vários atributos que podem ser usados em políticas de barreira de informações.
-ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
+ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394306"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35462402"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>Atributos para políticas de barreira de informações (versão prévia)
 
@@ -35,9 +35,9 @@ Os atributos listados neste artigo podem ser usados para definir ou editar segme
 
 2. Verifique se as contas de usuário têm valores preenchidos para o (s) atributo (s) que você selecionou na etapa 1. Exibir detalhes da conta de usuário e, se necessário, editar contas de usuário para incluir valores de atributo. 
 
-    Para fazer isso usando o PowerShell, confira [Configurar Propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Para editar várias contas (ou usar o PowerShell para editar uma única conta), confira [Configurar Propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
 
-    Para fazer isso no Azure Active Directory, confira [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Para editar uma única conta, confira [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Defina segmentos usando o PowerShell](information-barriers-policies.md#define-segments-using-powershell), de forma semelhante aos seguintes exemplos:
 
@@ -54,7 +54,7 @@ Os atributos listados neste artigo podem ser usados para definir ou editar segme
 
 A tabela a seguir lista os atributos que você pode usar com as barreiras de informação.
 
-|Nome da Propriedade do Active Directory do Azure (nome para exibição LDAP)  |Nome da Propriedade do Exchange  |
+|Nome da Propriedade do Azure Active Directory<br/>(Nome para exibição LDAP)  |Nome da Propriedade do Exchange  |
 |---------|---------|
 |Coautores       | Coautores        |
 |Empresa     |Empresa         |
