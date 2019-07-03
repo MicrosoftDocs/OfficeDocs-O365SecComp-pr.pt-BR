@@ -30,7 +30,7 @@
 ### [Aplicar um rótulo de confidencialidade automaticamente ao conteúdo](apply-sensitivity-label-automatically.md)
 ### [Exibição do uso do rótulo com análises de rótulo](label-analytics.md)
 
-## [Evitar a perda de dados (DLP)](data-loss-prevention-policies.md)
+## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 ### [DLP e Microsoft Teams](dlp-microsoft-teams.md)
 ### [Assistir a uma visão geral estendida de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Configurar DLP
