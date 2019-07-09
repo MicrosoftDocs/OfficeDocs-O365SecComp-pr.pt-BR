@@ -3,7 +3,7 @@ title: Definir políticas de barreira de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como definir políticas para barreiras de informações no Microsoft Teams.
-ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 527f059eb0bccb97429c649d055496c06710c2a9
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394316"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587080"
 ---
-# <a name="define-policies-for-information-barriers-preview"></a>Definir políticas para barreiras de informação (versão prévia)
+# <a name="define-policies-for-information-barriers"></a>Definir políticas para barreiras de informações
 
 ## <a name="overview"></a>Visão geral
 
-Com as barreiras de informação, você pode definir políticas projetadas para impedir que determinados segmentos de usuários se comuniquem entre si ou permitir que segmentos específicos se comuniquem apenas com determinados segmentos. As políticas de barreira de informações podem ajudar sua organização a manter a conformidade com normas e regulamentos relevantes do setor e evitar possíveis conflitos de interesse. Para saber mais, confira [barreiras de informação (versão prévia)](information-barriers.md). 
+Com as barreiras de informação, você pode definir políticas projetadas para impedir que determinados segmentos de usuários se comuniquem entre si ou permitir que segmentos específicos se comuniquem apenas com determinados segmentos. As políticas de barreira de informações podem ajudar sua organização a manter a conformidade com normas e regulamentos relevantes do setor e evitar possíveis conflitos de interesse. Para saber mais, confira [barreiras de informação](information-barriers.md). 
 
 Este artigo descreve como planejar, definir, implementar e gerenciar políticas de barreira de informações. Várias etapas estão envolvidas e o fluxo de trabalho é dividido em várias partes. Certifique-se de ler os [pré-requisitos](#prerequisites) e todo o processo antes de começar a definir (ou editar) as políticas de barreira de informações.
 
@@ -59,7 +59,7 @@ Ao definir políticas para barreiras de informações, você trabalhará com atr
 Além das [licenças e permissões necessárias](information-barriers.md#required-licenses-and-permissions), certifique-se de que os seguintes requisitos são atendidos: 
      
 - **Dados de diretório**. Certifique-se de que a estrutura da sua organização é refletida nos dados do diretório. Para fazer isso, verifique se os atributos da conta de usuário, como associação de grupo, nome do departamento, etc. estão preenchidos corretamente no Azure Active Directory (ou Exchange Online). Para saber mais, confira os seguintes recursos:
-  - [Atributos para políticas de barreira de informações (versão prévia)](information-barriers-attributes.md)
+  - [Atributos para políticas de barreira de informações](information-barriers-attributes.md)
   - [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -67,7 +67,7 @@ Além das [licenças e permissões necessárias](information-barriers.md#require
 
 - **Log de auditoria**. Para pesquisar o status de um aplicativo de política, o log de auditoria deve estar ativado. É recomendável fazer isso antes de começar a definir segmentos ou políticas. Para saber mais, confira [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md).
 
-- **Nenhuma política de catálogo de endereços**. Antes de definir e aplicar as políticas de barreira de informações, certifique-se de que não haja nenhuma política do catálogo de endereços do Exchange. Se você tiver essas políticas, certifique-se de [remover primeiro as políticas do catálogo de endereços](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) .
+- **Nenhuma política de catálogo de endereços**. Antes de definir e aplicar as políticas de barreira de informações, certifique-se de que não haja nenhuma política do catálogo de endereços do Exchange. (As barreiras de informação são baseadas nas políticas do catálogo de endereços, mas os dois tipos de políticas não são intercambiáveis.) Se você tiver essas políticas, certifique-se de [remover primeiro as políticas do catálogo de endereços](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) .
 
 - **PowerShell**. Atualmente, as políticas de barreira de informações são definidas e gerenciadas no centro de conformidade & segurança do Office 365 usando cmdlets do PowerShell. Embora vários exemplos sejam fornecidos neste artigo, você precisará estar familiarizado com os cmdlets e parâmetros do PowerShell. Você também precisará do módulo AzureRM.
     - [Conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -110,7 +110,7 @@ Quando você tiver sua lista inicial de grupos e políticas, prossiga para ident
 
 Além da sua lista inicial de políticas, faça uma lista de segmentos para sua organização. Os usuários que serão incluídos nas políticas de barreira de informações devem pertencer a um segmento e nenhum usuário deverá pertencer a dois ou mais segmentos. Cada segmento pode ter apenas uma política de barreira de informações aplicada. 
 
-Determine quais atributos dos dados de diretório da sua organização você usará para definir segmentos. Você pode usar *Department*, *memberOf*ou qualquer um dos atributos com suporte. Certifique-se de que você tem valores no atributo que você selecionou para os usuários. [Consulte a lista de atributos com suporte para barreiras de informações (visualização)](information-barriers-attributes.md).
+Determine quais atributos dos dados de diretório da sua organização você usará para definir segmentos. Você pode usar *Department*, *memberOf*ou qualquer um dos atributos com suporte. Certifique-se de que você tem valores no atributo que você selecionou para os usuários. [Consulte a lista de atributos com suporte para barreiras de informações](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Antes de prosseguir para a próxima seção, certifique-se de que os dados do diretório têm valores para atributos que você pode usar para definir segmentos**. Se os dados do diretório não tiverem valores para os atributos que você deseja usar, as contas de usuário devem ser atualizadas para incluir essas informações antes de prosseguir com as barreiras de informação. Para obter ajuda com isso, consulte os seguintes recursos:<br/>- [Configurar propriedades da conta de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Adicionar ou atualizar as informações de perfil de um usuário usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -255,13 +255,13 @@ Com o PowerShell, você pode exibir o status de contas de usuário, segmentos, p
 
 Os recursos estão disponíveis para ajudá-lo a gerenciar suas políticas de barreira de informações.
 
-- Se algo der errado com barreiras de informação, consulte [Troubleshooting Information barreiras (prévia)](information-barriers-troubleshooting.md).
+- Se algo der errado com as barreiras de informações, consulte [Solucionando problemas de barreiras de informações](information-barriers-troubleshooting.md).
 
 - Para impedir que as políticas sejam aplicadas, consulte [parar um aplicativo de política](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
 
 - Para remover uma política de barreira de informações, consulte [remover uma política](information-barriers-edit-segments-policies.md.md#remove-a-policy).
 
-- Para fazer alterações em segmentos ou políticas, consulte [Editar (ou remover) políticas de barreira de informações (versão prévia)](information-barriers-edit-segments-policies.md.md).
+- Para fazer alterações em segmentos ou políticas, consulte [Editar (ou remover) políticas de barreira de informações](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemplo: departamentos, segmentos e políticas da contoso
 
@@ -316,6 +316,6 @@ Quando isso é concluído, a contoso é compatível com os requisitos jurídicos
 
 ## <a name="related-articles"></a>Artigos relacionados
 
-- [Obter uma visão geral das barreiras de informação (versão prévia)](information-barriers.md)
+- [Obter uma visão geral das barreiras de informação](information-barriers.md)
 
-- [Barreiras de informação no Microsoft Teams Preview](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Barreiras de informação no Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

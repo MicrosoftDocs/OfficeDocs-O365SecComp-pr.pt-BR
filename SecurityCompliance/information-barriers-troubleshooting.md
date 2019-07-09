@@ -3,7 +3,7 @@ title: Solucionando problemas de barreiras de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artigo como um guia para solucionar problemas de barreiras de informações.
-ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394296"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587050"
 ---
-# <a name="troubleshooting-information-barriers-preview"></a>Solucionando problemas de barreiras de informações (versão prévia)
+# <a name="troubleshooting-information-barriers"></a>Solucionando problemas de barreiras de informações
 
-[As barreiras de informação (visualização)](information-barriers.md) podem ajudar sua organização a permanecer em conformidade com requisitos legais e regulamentações do setor. Por exemplo, com barreiras de informações, você pode restringir a comunicação entre grupos específicos de usuários para evitar um conflito de interesses ou outros problemas. (Para saber mais sobre como configurar as barreiras de informações, confira [definir políticas para barreiras de informação (versão prévia)](information-barriers-policies.md).
+[As barreiras de informação](information-barriers.md) podem ajudar sua organização a permanecer em conformidade com requisitos legais e regulamentações do setor. Por exemplo, com barreiras de informações, você pode restringir a comunicação entre grupos específicos de usuários para evitar um conflito de interesses ou outros problemas. (Para saber mais sobre como configurar as barreiras de informações, confira [definir políticas para barreiras de informação](information-barriers-policies.md).)
 
 No caso de as pessoas funcionarem em problemas inesperados depois que as barreiras de informações estiverem vigentes, há algumas etapas que você pode executar para resolver esses problemas. Use este artigo como uma guia.
 
@@ -171,9 +171,9 @@ Certifique-se de que sua organização não tenha [diretivas de catálogo de end
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Definir políticas para barreiras de informações no Microsoft Teams (visualização)](information-barriers-policies.md)
+[Definir políticas para barreiras de informações no Microsoft Teams](information-barriers-policies.md)
 
-[Barreiras de informação (visualização)](information-barriers.md)
+[Barreiras de informações](information-barriers.md)
 
 
 

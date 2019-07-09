@@ -3,7 +3,7 @@ title: Editar políticas de barreira de informações
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Saiba como editar ou remover políticas para barreiras de informação.
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394326"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587070"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Editar (ou remover) políticas de barreira de informações (visualização)
+# <a name="edit-or-remove-information-barrier-policies"></a>Editar (ou remover) políticas de barreira de informações
 
 Depois de [definir as políticas de barreira de informações](information-barriers-policies.md), talvez seja necessário fazer alterações nas políticas ou nos segmentos de usuário, como parte da [solução de problemas](information-barriers-troubleshooting.md) ou de manutenção regular. Use este artigo como uma guia.
 
@@ -32,8 +32,8 @@ Depois de [definir as políticas de barreira de informações](information-barri
 |[Definir uma política para o status inativo](#set-a-policy-to-inactive-status)     |Defina uma política como status inativo quando você quiser fazer alterações em uma política ou quando não quiser que uma política entre em vigor.         |
 |[Remover uma política](#remove-a-policy)     |Remova uma política de barreira de informações quando não precisar mais de uma determinada política no local.         |
 |[Parar um aplicativo de política](#stop-a-policy-application)     |Faça isso quando você quiser interromper o processo de aplicação de políticas de barreira de informações.<br/>Observe que a interrupção de um aplicativo de política não é instantânea e não desfaz políticas já aplicadas aos usuários.         |
-|[Definir políticas para barreiras de informação (versão prévia)](information-barriers-policies.md)     |Defina uma política de barreira de informações quando você ainda não tiver essas políticas funcionando, e você deve restringir ou limitar a comunicação entre grupos de usuários específicos.         |
-|[Solucionando problemas de barreiras de informações (versão prévia)](information-barriers-troubleshooting.md)     |Consulte este artigo quando você tiver problemas inesperados com barreiras de informação.         |
+|[Definir políticas para barreiras de informações](information-barriers-policies.md)     |Defina uma política de barreira de informações quando você ainda não tiver essas políticas funcionando, e você deve restringir ou limitar a comunicação entre grupos de usuários específicos.         |
+|[Solucionando problemas de barreiras de informações](information-barriers-troubleshooting.md)     |Consulte este artigo quando você tiver problemas inesperados com barreiras de informação.         |
 
 > [!IMPORTANT]
 > Para executar as tarefas descritas neste artigo, você deve receber uma função apropriada, como uma das seguintes:<br/>– Administrador global do Microsoft 365 Enterprise<br/>– Administrador global do Office 365<br/>-Administrador de conformidade<br/>– Gerenciamento de conformidade do IB (esta é uma nova função!)<p>Para saber mais sobre os pré-requisitos para barreiras de informações, consulte [pré-requisitos (para políticas de barreira de informações)](information-barriers-policies.md#prerequisites).<p>Certifique-se de [se conectar ao PowerShell do centro de conformidade & segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -52,7 +52,7 @@ Os atributos da conta de usuário são usados para definir os segmentos de modo 
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Você pode usar qualquer valor que identifique exclusivamente cada usuário, como nome, alias, nome diferenciado, nome de domínio canônico, endereço de email ou GUID. <p>   (Você também pode usar esse cmdlet para um único usuário: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   Neste exemplo, nos referimos a duas contas de usuário no Office 365: *meganb* para *Megan*e *alexw* para *Alex*.         |
 
-2. Determine o atributo que você deseja editar para o (s) perfil (es) da conta de usuário. Consulte [atributos para diretivas de barreira de informações (visualização)](information-barriers-attributes.md) para obter mais detalhes. 
+2. Determine o atributo que você deseja editar para o (s) perfil (es) da conta de usuário. Consulte [atributos para políticas de barreira de informações](information-barriers-attributes.md) para obter mais detalhes. 
 
 3. Edite uma ou mais contas de usuário para incluir valores para o atributo selecionado na etapa anterior. Para fazer isso, use um dos seguintes procedimentos:
 
@@ -168,10 +168,10 @@ Se, depois de começar a aplicar as políticas de barreira de informações, voc
 
 [Obter uma visão geral das barreiras de informação](information-barriers.md)
 
-[Definir políticas para barreiras de informação (versão prévia)](information-barriers-policies.md)
+[Definir políticas para barreiras de informações](information-barriers-policies.md)
 
 [Saiba mais sobre as barreiras de informação no Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[Atributos para políticas de barreira de informações (versão prévia)](information-barriers-attributes.md)
+[Atributos para políticas de barreira de informações](information-barriers-attributes.md)
 
-[Solucionando problemas de barreiras de informações (versão prévia)](information-barriers-troubleshooting.md)
+[Solucionando problemas de barreiras de informações](information-barriers-troubleshooting.md)
