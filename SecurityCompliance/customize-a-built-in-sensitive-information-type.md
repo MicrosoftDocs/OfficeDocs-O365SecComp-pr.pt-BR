@@ -3,7 +3,7 @@ title: Personalizar um tipo de informação confidencial interno
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 07/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ao procurar informações confidenciais no conteúdo, você precisa descrevê-las no que é chamado de regra. A Prevenção contra perda de dados (DLP) inclui regras para os tipos de informação confidencial mais comuns que você pode usar imediatamente. Para usar essas regras, você precisa incluí-las em uma política. Se quiser ajustar essas regras internas para atender às necessidades específicas da sua organização, basta criar um tipo de informação confidencial personalizado. Este tópico mostra como personalizar o arquivo XML que contém a coleção de regras existente para detectar um intervalo maior de possíveis informações de cartão de crédito.
-ms.openlocfilehash: ddfd8bd82164fde6d2121b37d867caaa69355b4b
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077197"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587100"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar um tipo de informação confidencial interno
 
@@ -214,7 +214,7 @@ Estas são as definições dos termos encontrados durante este procedimento.
 |:-----|:-----|
 |Entidade|Entidades são o que chamamos de tipos de informação confidencial, como os números de cartão de crédito. Cada entidade tem um GUID exclusivo como ID. Quando você copia um GUID e pesquisa por ele no XML, encontra a definição de regra XML e todas as traduções localizadas dessa regra XML. Também é possível encontrar essa definição localizando o GUID para a tradução e depois pesquisando por este GUID.|
 |Funções|As referências `Func_credit_card` do arquivo XML são uma função no código compilado. Funções são usadas para executar expressões regulares complexas e confirmam se as somas de verificação correspondem às nossas regras internas. Como isso ocorre no código, algumas das variáveis não aparecem no arquivo XML.|
-|IdMatch|É com esse identificador que o padrão está tentando fazer a correspondência, por exemplo, com um número de cartão de crédito. Saiba mais sobre isso e sobre as marcas `Match` em [Regras de entidades](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).|
+|IdMatch|Esse é o identificador que padrão deverá corresponder — por exemplo, um número de cartão de crédito.|
 |Lista de palavras-chave|O arquivo XML também faz referência a `keyword_cc_verification` e a `keyword_cc_name`, que são listas de palavras-chave, nas quais procuramos por correspondência em `patternsProximity` com a entidade. Atualmente elas não são exibidas no XML.|
 |Padrão|O padrão contém a lista daquilo que o tipo confidencial está procurando, o que inclui expressões regulares, palavras-chave e funções internas (que realizam tarefas como verificar as somas de verificação). Os tipos de informação confidencial podem ter vários padrões com confianças exclusivas, o que é útil na criação de um tipo de informação confidencial que retornará uma confiança alta se a evidência comprobatória for encontrada e uma confiança baixa se pouca ou nenhuma evidência comprobatória for encontrada.|
 |confidenceLevel padrão|Esse é o nível de confiança que o mecanismo de DLP encontrou na correspondência. Esse nível de confiança está associado a uma correspondência para o padrão se os requisitos do padrão são atendidos. Essa é a medida de confiança que deve ser considerada ao usar as regras de fluxo de emails (também conhecidas como regras de transporte) do Exchange.|

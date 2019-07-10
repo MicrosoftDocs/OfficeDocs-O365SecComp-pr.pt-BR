@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja para reter o conteúdo, excluí-lo ou ambos: reter e em seguida excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas a locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que cumpra certas condições.'
-ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435251"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587110"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
