@@ -2,8 +2,8 @@
 title: Níveis de confiança de spam
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 10/2/2017
+manager: dansimp
+ms.date: 10/02/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Quando uma mensagem de email passa pela filtragem de spam, recebe uma pontuação de spam. Essa pontuação é mapeada para uma classificação individual de Nível de Confiança de Spam (SCL) em um cabeçalho X. O serviço executa ações nas mensagens, dependendo da interpretação da confiança do spam da classificação SCL. A tabela a seguir mostra como as diferentes classificações SCL são interpretadas pelos filtros e a ação padrão tomada em mensagens de entrada para cada classificação.
-ms.openlocfilehash: 4eba1dc6fa1bbadcfd135a7bf43e7353755df6c4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: beb322341f4d0de25d7bac9681c0beed93c48e5f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158263"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600871"
 ---
 # <a name="spam-confidence-levels"></a>Níveis de confiança de spam
 

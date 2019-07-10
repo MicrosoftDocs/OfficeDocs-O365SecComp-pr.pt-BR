@@ -2,7 +2,7 @@
 title: Encontre e investigue emails mal-intencionados que foram fornecidos (investigação de ameaças e resposta do Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414801"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605446"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Encontre e investigue emails mal-intencionados que foram entregues (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,21 @@ Para ver as alterações no campo status da entrega anterior (agora, a ação de
 1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365. Isso leva você para o centro &amp; de conformidade de segurança. 
     
 2. No painel de navegação à esquerda, escolha **Gerenciador**de **Gerenciamento** \> de ameaças.
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![Gerenciador de ameaças com campos de ação de entrega e local de entrega.](media/ThreatExFields.PNG)
+
+Você pode notar a nova coluna "ações especiais" neste gráfico. Esse recurso é destinado a informar aos administradores o resultado do processamento de um email. As ações especiais podem ser atualizadas no final da linha do *tempo de email*do explorador de ameaças, que é um novo recurso destinado a tornar a experiência de busca melhor para administradores.
+
+O cronograma de email reduz a randomização porque há menos tempo gasto na verificação de locais diferentes para tentar entender os eventos que ocorreram desde que o email chegou. Quando vários eventos ocorrem ou próximos à mesma hora em um email, esses eventos serão exibidos em um modo de exibição de linha do tempo. Alguns eventos que acontecerão após a entrega ao seu email serão capturados na coluna ' ações especiais '. A combinação das informações da *linha do tempo de email* desse email com as *ações especiais* realizadas no envio de mensagens de email oferece aos administradores informações sobre como suas políticas funcionam, onde o email foi finalmente encaminhado e, em alguns casos, o que a última a avaliação foi. A coluna especial ações pode ser acessada no mesmo lugar que a ação de entrega e o local de entrega, mas para ver uma linha do tempo de email:
+
+1. Clique no assunto do email.
+2. No painel exibido, clique em *linha do tempo de email*. (Ele aparecerá entre outros títulos no painel como ' Resumo ' ou ' Detalhes ', et cetera.)
+
+Depois de abrir a linha do tempo de email, você deve ver uma tabela que informa os eventos de envio de entrega para esse email ou, caso não haja mais eventos para o email, você deve ver um único evento para a entrega original que irá declarar um resultado como *bloqueado* com um veredicto como *phishing*. A guia também tem a opção de exportar toda a linha do tempo de email e isso exportará todos os detalhes na guia e detalhes sobre o email (coisas como assunto, remetente, destinatário, rede e ID da mensagem).
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

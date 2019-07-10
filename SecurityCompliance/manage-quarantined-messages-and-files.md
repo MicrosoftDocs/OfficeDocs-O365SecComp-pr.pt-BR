@@ -2,7 +2,7 @@
 title: Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 09/05/2018
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, você pode exibir, liberar e relatar mensagens em quarentena falsas positivas no Office 365. Você pode configurar políticas para que o Office 365 Filtre mensagens e as envie para quarentena por vários motivos: porque elas foram identificadas como spam, em massa, phishing, malware ou porque corresponderam a uma regra de fluxo de emails. '
-ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
-ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
+ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35115922"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598797"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 

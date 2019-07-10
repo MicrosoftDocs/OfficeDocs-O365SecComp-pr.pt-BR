@@ -2,23 +2,23 @@
 title: Fluxo de emails no Centro de Conformidade e Segurança
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Os administradores podem saber mais sobre o painel de fluxo de emails no centro de conformidade de & de segurança.
+ms.openlocfilehash: 402fcf0ac29ecd67c9ecbc2e46c47d9a6392eedd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155873"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598897"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Fluxo de emails no Centro de Conformidade e Segurança
 
-Os administradores podem usar o painel de fluxo de emails no centro de conformidade do & de segurança para descobrir tendências, insights e realizar ações para corrigir problemas relacionados ao fluxo de emails em sua organização do Office 365.
+Os administradores podem usar o painel de fluxo de emails no centro de conformidade de & de segurança para descobrir tendências, insights e realizar ações para corrigir problemas relacionados ao fluxo de emails em sua organização do Office 365.
 
 As ideias, os relatórios e os widgets disponíveis no painel de fluxo de emails são:
 
@@ -52,9 +52,9 @@ O painel de fluxo de emails está disponível para:
 
 - Membros da função de **administrador do Exchange 365 do Office** .
 
-- Membros da **função de administrador de fluxo** de emails no centro de conformidade do _AMP_ de segurança. Se essa função for explicitamente atribuída a um usuário que não é membro das funções de administrador global ou administrador do Exchange:
+- Membros da **função de administrador de fluxo** de emails no centro de conformidade de & de segurança. Se essa função for explicitamente atribuída a um usuário que não é membro das funções de administrador global ou administrador do Exchange:
 
-  - O usuário deve fazer logon no centro de conformidade do & de segurança [https://protection.office.com](https://protection.office.com)diretamente em.
+  - O usuário deve fazer logon no centro de conformidade & segurança diretamente em [https://protection.office.com](https://protection.office.com).
 
   - O usuário só terá permissão somente leitura para o painel de fluxo de emails.
 
@@ -62,12 +62,12 @@ O painel de fluxo de emails está disponível para:
 
 Para obter mais informações sobre a função de administrador global do Office 365, consulte [about office 365 admin Roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Para obter informações sobre como atribuir funções do centro de conformidade do & de segurança aos usuários, consulte [fornecer aos usuários acesso ao centro de conformidade do & de segurança](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+Para obter informações sobre como atribuir funções de segurança & centro de conformidade aos usuários, consulte [conceder aos usuários acesso ao centro de conformidade & segurança](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Onde encontrar o painel de fluxo de emails
 
-1. Vá para o centro de conformidade do & [https://protection.office.com](https://protection.office.com)de segurança em.
+1. Vá para o centro de conformidade & segurança [https://protection.office.com](https://protection.office.com)em.
 
 2. Expanda **fluxo de email** e selecione **painel**.
 
-   ![O painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/mail-flow-dashboard-v2.png)
+   ![O painel de fluxo de emails no centro de conformidade & segurança do Office 365](media/mail-flow-dashboard-v2.png)

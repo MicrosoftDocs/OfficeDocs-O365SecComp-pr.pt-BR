@@ -2,7 +2,7 @@
 title: Entrega dinâmica e visualização com anexos seguros de ATP do Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Ao configurar as políticas de anexos seguros de ATP, você escolhe a entrega dinâmica para evitar atrasos de mensagens e permite que as pessoas visualizem os anexos que estão sendo examinados.
-ms.openlocfilehash: 5d04593dd0884b21deefc202485aee27f60d1a5f
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f965c119e9c4fca15e43d281dfc2d00d2c79c23
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077827"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599897"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinâmica e visualização com anexos seguros de ATP do Office 365
 

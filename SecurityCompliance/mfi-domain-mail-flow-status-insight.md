@@ -2,25 +2,25 @@
 title: Visão superior do status do fluxo de emails do domínio
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre a visão geral do status do fluxo de email de domínio no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d6a3345a614bcde42193eb9c78d93c56637ccac7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158643"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600834"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Visão superior do status do fluxo de emails do domínio
 
 A visão geral do **status do fluxo de email do domínio** oferece o status atual dos domínios da sua organização em termos de fluxo de emails. Essa percepção ajuda a identificar e solucionar problemas de domínios que estão enfrentando problemas de ***impacto de fluxo*** de emails (por exemplo, não é possível receber emails externos), especialmente expirações de domínio ou domínios com registros MX incorretos.
 
-![A visão geral do status do fluxo de domínio no painel de fluxo de emails no centro de conformidade do & de segurança](media/domain-mail-flow-status-selected.png)
+![A visão geral do status do fluxo de domínio no painel de fluxo de emails no centro de conformidade & segurança](media/domain-mail-flow-status-selected.png)
 
 Quando você clica em **Exibir detalhes** na percepção, um submenu aparece mostrando mais detalhes para o status de cada domínio.
 

@@ -1,8 +1,8 @@
 ---
 title: Configurar notificações de spam do usuário final no Exchange Online
 ms.author: tracyp
-author: MSFTTracyP
-manager: laurawi
+author: MSFTTracyp
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Você pode configurar as notificações de spam para o usuário final para a política de filtro de spam padrão para toda a empresa ou para políticas de filtro de spam personalizadas que são aplicadas a domínios.
-ms.openlocfilehash: c56aa3d5bbc771641f9082095c930c66dc8cee96
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ce63fae7749f716b7fdd00c72b207ba5b57a8d65
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153883"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600187"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificações de spam do usuário final no Exchange Online
 
@@ -37,9 +37,9 @@ Após receber uma mensagem de notificação, os usuários finais podem escolher 
 
 **Versão** se a mensagem não for spam e se você quiser que o Office 365 envie a mensagem para sua caixa de correio.
 
-**Release _AMP_ Allow Sender** se a mensagem não for spam e se você quiser que o Office 365 adicione o remetente à sua lista de remetentes e destinatários confiáveis para futuros emails. Tenha em mente que seu administrador pode ter outras configurações de permissão/bloqueio de toda a organização que substituem sua lista de remetentes seguros.
+**Versão & permitir remetente** se a mensagem não for spam e se você quiser que o Office 365 adicione o remetente à sua lista de remetentes e destinatários confiáveis para futuros emails. Tenha em mente que seu administrador pode ter outras configurações de permissão/bloqueio de toda a organização que substituem sua lista de remetentes seguros.
 
-**Release _AMP_ Report**, se a mensagem não for spam e você deseja enviar a mensagem para sua caixa de correio e relatá-la para a Microsoft para análise.
+**Release & Report**, se a mensagem não for spam e você quiser enviar a mensagem para sua caixa de correio e relatá-la para a Microsoft para análise.
 
 **Bloquear** se você quiser que o Office 365 adicione o remetente à sua lista de remetentes bloqueados.
   

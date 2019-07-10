@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova versão da descoberta eletrônica avançada no Microsoft 365.
-ms.openlocfilehash: 44bbc871295cb6b621ed6ee286c8dcd2c1cc1716
-ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
+ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35079385"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598727"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Visão geral da solução de descoberta eletrônica avançada no Microsoft 365
 
@@ -81,7 +81,8 @@ Use a guia **pesquisas** para criar pesquisas para pesquisar as fontes de dados 
 
 Use a guia **conjuntos de revisão** para analisar e analisar o conteúdo que você coletou do sistema em tempo real e adicionado a um conjunto de revisão. Um *conjunto de revisão* é uma coleção estática desses dados (em outras palavras, uma cópia offline de dados) de dados do custodial (e, se aplicável, dados não custodial) que você coletou na fase anterior do fluxo de trabalho de descoberta eletrônica. Quando você adiciona resultados de pesquisa a um conjunto de revisão, um processo é disparado que extrai arquivos de contêineres, extrai metadados e extrai texto. Quando esse processo é concluído, o sistema cria um novo índice de todos os dados coletados de responsáveis e os adiciona ao conjunto de revisão. Depois que os dados são adicionados ao conjunto de revisão, você pode executar mais consultas para restringir os dados de caso, exibir dados como texto ou no formato de arquivo nativo, e anotar, redigir e marcar documentos no conjunto de revisão. Você também pode executar análises avançadas, como identificar duplicação de documentos, threads de email e temas. Após a remoção dos dados para o que for relevante para o caso, você pode baixar documentos diretamente ou exportá-los junto com metadados, anotações e marcas de arquivo. Para obter mais informações, consulte:
 
- –[Revisar dados de caso em descoberta eletrônica avançada](reviewing-data-in-review-set.md) –[analisar dados em um conjunto de análise na descoberta eletrônica avançada](analyzing-data-in-review-set.md)
+- [Revisar dados de caso na descoberta eletrônica avançada](reviewing-data-in-review-set.md)
+- [Analisar dados em um conjunto de revisão na descoberta eletrônica avançada](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportando dados para revisão e apresentação
 

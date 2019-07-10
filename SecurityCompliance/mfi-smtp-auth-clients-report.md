@@ -2,19 +2,19 @@
 title: Relatório de clientes de autenticação SMTP
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre o relatório de clientes de autenticação SMTP no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21d2446bd7441f17c2371186d098118c6403de0c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158593"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598127"
 ---
 # <a name="smtp-auth-clients-report"></a>Relatório de clientes de autenticação SMTP
 
@@ -22,7 +22,7 @@ O relatório de **clientes de autenticação SMTP** realça o uso do protocolo d
 
 O widget que é mostrado no painel de fluxo de emails indica o número de usuários ou contas de serviço que usaram o protocolo de autenticação SMTP nos últimos sete dias.
 
-![O relatório de clientes de autenticação SMTP no painel de fluxo de emails no centro de conformidade do & de segurança](media/smtp-auth-clients-report-selected.png)
+![O relatório de clientes de autenticação SMTP no painel de fluxo de emails no centro de conformidade & segurança](media/smtp-auth-clients-report-selected.png)
 
 Clicar no widget abre um submenu que fornece uma exibição agregada do uso e dos volumes de TLS para a última semana.
 

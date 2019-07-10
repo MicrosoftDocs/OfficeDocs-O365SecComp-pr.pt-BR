@@ -1,8 +1,8 @@
 ---
 title: Ajuda e suporte para EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: A Microsoft fornece ajudar para a EOP através de uma variedade de lugares e métodos incluindo auto-suporte e suporte assistido.
-ms.openlocfilehash: 4343643d7c1c69d21b45d3a46ac8ac6dba42c3d1
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150323"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599657"
 ---
 # <a name="help-and-support-for-eop"></a>Ajuda e suporte para EOP
 

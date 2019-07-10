@@ -2,8 +2,8 @@
 title: Opções avançadas de filtragem de spam
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: As opções avançadas de filtragem de spam oferecem aos administradores a capacidade de inspecionar vários atributos de conteúdo de uma mensagem. A presença desses atributos em uma mensagem aumenta a pontuação de spam da mensagem (aumentando assim o potencial para que possa ser identificada como spam) ou marcar a mensagem como spam. As propriedades da mensagem específica do alvo das opções ASF, como marcas de HTML e redirecionamento de URL, que são comumente encontrados em mensagens de spam.
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152443"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598667"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opções avançadas de filtragem de spam
 
@@ -53,6 +53,6 @@ A tabela a seguir, descreve cada opção de filtragem de spam avançada.
 |Aplicar lista de palavras sensíveis  <br/> |Quando essa configuração estiver habilitada, qualquer mensagem que contenha uma palavra de uma lista de palavras sensíveis será marcada como spam. Utilizar a lista de palavras sensíveis permite um bloqueio fácil das palavras que estão associadas a mensagens potencialmente ofensivas. Algumas destas palavras diferenciam maiúsculas de minúsculas Como administrador, não é possível editar esta lista. Filtragem contra a lista de palavras sensíveis é aplicada ao corpo e ao assunto de uma mensagem.  <br/> |X-CustomSpam: Palavras confidenciais no assunto/corpo  <br/> |
 |Registro SPF: falha grave|Quando esta configuração estiver habilitada, as mensagens que não passarem na verificação SPF (o que significa que foram enviadas de um endereço de IP não especificado no registro SPF) serão marcadas como spam. Ativar essa configuração é recomendado para organizações que estão preocupadas com recebimento de mensagens de phishing.  <br/> <br/> O modo de teste não está disponível para essa opção.  <br/> |X-CustomSpam: Falha de registro SPF  <br/> |
 |Filtragem de ID por remetente condicional: falha grave  <br/> |Quando essa configuração estiver habilitada, qualquer mensagem que contenha uma falha grave de verificação condicional de ID do remetente será marcada como spam. Essa opção combina uma verificação SPF com uma verificação de ID para ajudar a proteger contra os cabeçalhos de mensagem que contenham remetentes forjados.  <br/> <br/> O modo de teste não está disponível para esta opção.  <br/> |X-CustomSpam: Falha de registro SPF  <br/> |
-|Backscatter NDR  <br/> |Se você estiver usando o EOP para proteger caixas de correio locais, quando essa configuração estiver habilitada, todas as mensagens de NDR (notificação de falha na entrega legítima) serão entregues ao remetente original, e todas as mensagens de dispersão (NDR ilegítimo) serão marcadas como spam. Se você não habilitar essa configuração, todos os NDRs ainda passarão por filtragem de spam. Nesse caso, a maioria das mensagens legítimas será entregue ao remetente original enquanto algumas, mas não todas, as mensagens de inspersão serão marcadas como spam. No entanto, as mensagens de dispersão que não estão marcadas como spam não vão para o remetente original, pois ele vai para o remetente falsificado. <br/> <br/> Se você estiver usando o serviço para proteger caixas de correio hospedadas na nuvem do Exchange Online, não é necessário definir essa configuração.  <br/><br/> Para ambos os cenários (caixas de correio locais e hospedadas na nuvem), também não é necessário habilitar essa configuração para mensagens de saída enviadas por meio do serviço, pois os NDRs que são mensagens de devolução legítimas serão automaticamente detectadas e entregues ao remetente original . o modo de teste > não está disponível para essa opção.           <br/><br/>Dica: para obter mais informações sobre mensagens de dispersão e EOP, confira [mensagens de dispersão e EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Notificação de falha na entrega - Backscatter  <br/> |
-|Email em Massa|Avançada-a filtragem de spam de email em massa foi removida e substituída com as configurações de limite de email e em massa. Confira o [que é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [configure suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para obter mais informações e como definir as configurações.||
+|Backscatter NDR  <br/> |Se você estiver usando o EOP para proteger caixas de correio locais, quando essa configuração estiver habilitada, todas as mensagens de NDR (notificação de falha na entrega legítima) serão entregues ao remetente original, e todas as mensagens de dispersão (NDR ilegítimo) serão marcadas como spam. Se você não habilitar essa configuração, todos os NDRs ainda passarão por filtragem de spam. Nesse caso, a maioria das mensagens legítimas será entregue ao remetente original enquanto algumas, mas não todas, as mensagens de inspersão serão marcadas como spam. No entanto, as mensagens de dispersão que não estão marcadas como spam não vão para o remetente original, pois ele vai para o remetente falsificado. <br/> <br/> Se você estiver usando o serviço para proteger caixas de correio hospedadas na nuvem do Exchange Online, não é necessário definir essa configuração.  <br/><br/> Para ambos os cenários (caixas de correio locais e hospedadas na nuvem), também não é necessário habilitar essa configuração para mensagens de saída enviadas por meio do serviço, pois os NDRs que são mensagens de devolução legítimas serão automaticamente detectadas e entregues ao remetente original . > modo de teste não está disponível para essa opção.           <br/><br/>Dica: para obter mais informações sobre mensagens de dispersão e EOP, confira [mensagens de dispersão e EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Notificação de falha na entrega - Backscatter  <br/> |
+|Email em Massa|Avançada-a filtragem de spam de email em massa foi removida e substituída com as configurações de limite de email e em massa. Confira o [que é a diferença entre lixo eletrônico e email em massa?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [configure suas políticas de filtro de spam](configure-your-spam-filter-policies.md) para obter mais informações e como definir as configurações.|X-CustomSpam: Email em Massa | Email em massa  <br/> |
 |

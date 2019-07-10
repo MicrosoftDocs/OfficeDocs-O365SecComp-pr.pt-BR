@@ -4,7 +4,7 @@ description: Quais políticas se aplicam e quais ações tomar, quando o email e
 keywords: segurança, malware, Microsoft 365, M365, central de segurança, ATP, Microsoft defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/26/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852495"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599107"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Qual política se aplica quando vários métodos de proteção e verificações de detecção são executados em seu email
 

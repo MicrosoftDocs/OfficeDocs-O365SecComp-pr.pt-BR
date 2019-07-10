@@ -2,8 +2,7 @@
 title: Gerenciar agendas para vários relatórios no centro &amp; de conformidade de segurança
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Saiba como exibir, editar e gerenciar cronogramas para relatórios no centro de conformidade &amp; de segurança.
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077587"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598807"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gerenciar agendas para vários relatórios no centro &amp; de conformidade de segurança
 
@@ -31,7 +30,7 @@ No centro de &amp; conformidade de segurança, vários [relatórios e informaç�
   
 ![No centro de &amp; conformidade de segurança, escolha \> relatórios gerenciar agendas](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. Acesse [https://protection.office.com](https://protection.office.com) e entre. Isso leva você para o centro de conformidade do & de segurança.
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre. Isso leva você para o centro de conformidade & segurança.
 
 2. No centro de &amp; conformidade de segurança, vá para **relatórios** \> **gerenciar agendas**.
     

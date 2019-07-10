@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre proteção antispam
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Este tópico fornece as perguntas frequentes e respectivas respostas sobre a proteção contra spam. As respostas são aplicáveis aos clientes do Microsoft Exchange Online e do Proteção do Exchange Online (EOP).
-ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8c374efcf109baa97755447ff1dc6fb20b253063
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152373"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598237"
 ---
 # <a name="anti-spam-protection-faq"></a>Perguntas frequentes sobre proteção antispam
 

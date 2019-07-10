@@ -2,7 +2,7 @@
 title: Gerenciar a auditoria de caixa de correio
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: O registro em log de auditoria de caixa de correio é ativado por padrão no Microsoft 365 (também chamado de auditoria de caixa de correio padrão ou de caixa de correio ativada por padrão). Isso significa que determinadas ações executadas por proprietários, representantes e administradores de caixa de correio são automaticamente registradas em um log de auditoria de caixa de correio, onde você pode pesquisar atividades realizadas na caixa de correio.
-ms.openlocfilehash: f100fa1eb8244aeaea463440025ee489ec019406
-ms.sourcegitcommit: ef2657e4221296be7032191f2d91e8ff727523c6
+ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35117686"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599917"
 ---
 # <a name="manage-mailbox-auditing"></a>Gerenciar a auditoria de caixa de correio
 

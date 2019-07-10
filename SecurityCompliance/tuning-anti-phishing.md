@@ -2,8 +2,7 @@
 title: Ajustar a proteção contra phishing no Office 365
 ms.author: chrisda
 author: chrisda
-manager: serdars
-ms.date: ''
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Os administradores podem aprender a identificar os motivos por que e como as mensagens de phishing foram recebidas e o que fazer para evitar mais mensagens de phishing no futuro.
-ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2f58cea6dee7681322ecfe392801d4ad2d9af2eb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156343"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600337"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajustar a proteção contra phishing no Office 365
 

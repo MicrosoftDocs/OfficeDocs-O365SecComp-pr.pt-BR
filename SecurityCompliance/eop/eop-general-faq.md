@@ -1,8 +1,8 @@
 ---
 title: Perguntas frequentes gerais sobre o EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 1/2/2018
 audience: ITPro
 ms.topic: reference
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Aqui, respondemos às dúvidas gerais mais comuns sobre o Proteção do Exchange Online (EOP), o serviço de filtragem de email hospedado na nuvem da Microsoft. Para ver mais tópicos de perguntas frequentes, vá para os seguintes links:'
-ms.openlocfilehash: 9960f21e13be7eee059f68a40282ed73ff934d02
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e8f10cfea19cf27fcb6c676c1eff301a87486679
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153153"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599757"
 ---
 # <a name="eop-general-faq"></a>Perguntas frequentes gerais sobre o EOP
 
@@ -33,9 +33,7 @@ Aqui, respondemos às dúvidas gerais mais comuns sobre o Proteção do Exchange
     
 - [Perguntas frequentes sobre proteção contra malware](../anti-malware-protection-faq-eop.md)
     
-- [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
-    
-- [FOPE to EOP Transition FAQ](http://technet.microsoft.com/library/e0e76b89-b0d3-4c0a-bfc8-137b579e983b.aspx)
+- [Perguntas Frequentes sobre Rastreamento de Mensagens](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
  **P. O que é o EOP?**
   

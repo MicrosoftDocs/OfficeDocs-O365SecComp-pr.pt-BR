@@ -2,8 +2,8 @@
 title: Mantenha os usuários do Office 365 seguros com os recursos de investigação e resposta de ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 02/13/2019
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Saiba como os recursos de investigação e resposta do Office 365 podem ajudar sua organização a detectar invasões e ameaças, e reduzir rapidamente e recuperar contra ameaças.
-ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408276"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598977"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenha os usuários do Office 365 seguros com os recursos de investigação e resposta de ameaças do Office 365
 
@@ -28,11 +28,8 @@ ms.locfileid: "34408276"
 
 Você sabe quais dos seus usuários do Office 365 estão sob ataque ou estão menos comprometidos? Sabe como mitigar e recuperar ataques direcionados a seus usuários? Você sabia que pode fazer isso exatamente com os recursos de segurança que já estão disponíveis no Office 365? 
   
-O [office 365 Threat Investigation and Response](office-365-ti.md) é um pacote de recursos incluídos em sua assinatura do Office 365 E5 (como parte do Office 365 Advanced Threat Protection Plan 2). Os recursos de investigação e resposta contra ameaças do Office 365 ajudaram a ti da Microsoft a reduzir o tempo médio de resolução de incidentes de engenharia social por 80% e maior throughput de caso em 37% por mês em comparação aos 2 últimos trimestres! 
+Os recursos de [investigação e resposta contra ameaças do office 365](office-365-ti.md) estão incluídos em sua assinatura do Office 365 E5 (como parte do Office 365 Advanced Threat Protection Plan 2). Esses recursos ajudaram a ti da Microsoft a reduzir o tempo médio de resolução de incidentes de engenharia social por 80% e maior throughput de caso em 37% por mês em comparação aos 2 últimos trimestres! 
 
-> [!IMPORTANT]
-> A investigação de ameaças e os recursos de resposta (anteriormente conhecidos como Office 365 Threat Intelligence) agora fazem parte do plano avançado de proteção avançada contra ameaças do Office 365, juntamente com outros recursos de proteção contra ameaças. Para saber mais, veja [planos e preços avançados de proteção contra ameaças do office 365](https://products.office.com/exchange/advance-threat-protection) e a [Descrição do serviço de proteção avançada contra ameaças do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
-  
 Recentemente, adicionamos novos recursos para ajudar a melhorar o modo como você pode detectar e recuperar contra ameaças! Veja aqui uma rápida explicação sobre como os recursos de investigação e resposta atualizados de ameaça podem tornar você ainda mais eficiente.
   
 ## <a name="detect-intrusions-and-threats"></a>Detectar invasões e ameaças
@@ -41,7 +38,7 @@ Recentemente, adicionamos novos recursos para ajudar a melhorar o modo como voc�
   
 O Explorer também ajuda os administradores a navegar pelas relações entre usuários e emails. Sabe de um email específico que era ruim? Procure-o para ver quais usuários receberam o email, depois siga a série de eventos e veja o que os usuários já fizeram em vez.
 
-Se você ainda não tem esses capabilties, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre a investigação e a resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
+Se você ainda não tem esses recursos, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre a investigação e a resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Captura de tela do explorador de ameaças no Office 365, codificado em cores pela família de malware](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
@@ -51,7 +48,7 @@ Depois que os administradores de segurança identificaram algo suspeito ou mal-i
   
  **Atualização:** Adicionamos a capacidade de excluir e-mails de emails diretamente da estrutura de incidentes. Os administradores anteriores só podiam mover emails para a pasta de lixo eletrônico de um usuário, onde os usuários podem recuperar o item. Com os recursos de exclusão recém-lançado, agora você pode ter certeza de que um email mal-intencionado ou indesejado é removido permanentemente. 
   
-Se você ainda não tem esses recursos, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre os recursos de investigação e resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
+Se você ainda não tem esses recursos, [Experimente agora](https://aka.ms/tryo365threatintel3)! E [saiba mais sobre a investigação e a resposta contra ameaças do Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Captura de tela da lista de emails de correção de incidentes](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -62,7 +59,7 @@ A investigação de ameaças e os recursos de resposta do Office 365 estão liga
    
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Por que usar os recursos de investigação e resposta contra ameaças do Office 365?
 
-O Gartner estima que, em 2017, apenas cerca de US $90B foi gasto no cybersecurity. O Sid Deshpande, analista de pesquisa principal da Gartner, está citado como dizer que "o turno da indústria para detecção e resposta... envia uma mensagem clara que a prevenção é futile, a menos que esteja vinculada a uma capacidade de detecção e resposta. " O investigtion e a resposta de ameaças são uma parte crítica do portfólio de serviços de cada empresa e podem ser consumidos como um serviço autônomo ou como parte do Office 365 e5.
+O Gartner estima que, em 2017, apenas cerca de US $90B foi gasto no cybersecurity. O Sid Deshpande, analista de pesquisa principal da Gartner, está citado como dizer que "o turno da indústria para detecção e resposta... envia uma mensagem clara que a prevenção é futile, a menos que esteja vinculada a uma capacidade de detecção e resposta. " A investigação e a resposta contra ameaças são uma parte crítica do portfólio de serviços de cada empresa e podem ser consumidas como serviço autônomo ou como parte do Office 365 e5.
   
 ## <a name="whats-next"></a>Qual é o próximo
 

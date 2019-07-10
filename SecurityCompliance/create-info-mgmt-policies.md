@@ -2,7 +2,7 @@
 title: Criar e aplicar políticas de gerenciamento de informações
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: As políticas de gerenciamento de informações permitem que sua organização controle o tempo de retenção de conteúdo, para auditar o que as pessoas fazem com o conteúdo e adicionar códigos de barras ou rótulos a documentos. Uma política pode ajudar a garantir a conformidade com normas legais e governamentais ou processos corporativos internos. Como administrador, você pode configurar uma política para controlar como controlar documentos e quanto tempo manter documentos.
-ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151233"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600017"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Criar e aplicar políticas de gerenciamento de informações
 
@@ -90,7 +90,7 @@ A adição de uma política de gerenciamento de informações a um tipo de conte
     
 ||||||**1.**|* * Escolha * * Adicionar um estágio de retenção para registros... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Selecione uma opção de período de retenção para especificar quando documentos ou itens estão definidos para expirar. Siga um destes procedimentos:  <br/>  Para definir a data de vencimento com base em uma propriedade de data, em **evento** \> **este estágio é baseado em uma propriedade de data no item**e, em seguida, selecione a ação de documento ou item (por exemplo, criado ou modificado) e o incremento de tempo após esta ação ( por exemplo, o número de dias, meses ou anos) quando você deseja que o item expire.  <br/>  Para usar uma fórmula de retenção personalizada para determinar a expiração, escolha **definir por uma fórmula de retenção personalizada instalada neste servidor**.  <br/> > [!NOTE]> esta opção só estará disponível se uma fórmula personalizada tiver sido configurada pelo administrador.           |
+||||||2.  <br/> | Selecione uma opção de período de retenção para especificar quando documentos ou itens estão definidos para expirar. Siga um destes procedimentos:  <br/>  Para definir a data de vencimento com base em uma propriedade de data, em **evento** \> **este estágio é baseado em uma propriedade de data no item**e, em seguida, selecione a ação de documento ou item (por exemplo, criado ou modificado) e o incremento de tempo após esta ação ( por exemplo, o número de dias, meses ou anos) quando você deseja que o item expire.  <br/>  Para usar uma fórmula de retenção personalizada para determinar a expiração, escolha **definir por uma fórmula de retenção personalizada instalada neste servidor**.  <br/> > [!NOTE]> essa opção só estará disponível se uma fórmula personalizada tiver sido configurada pelo administrador.           |
 ||||||3.  <br/> |A opção **Iniciar um fluxo de trabalho** só estará disponível se você estiver definindo uma política para uma lista, biblioteca ou tipo de conteúdo que já tenha um fluxo de trabalho associado. Você receberá uma opção de fluxos de trabalho para escolher.  <br/> |
 ||||||4.  <br/> |Na seção **recorrência** , selecione **repetir a ação deste estágio...** e insira com que frequência você deseja que a ação ocorra novamente.  <br/> > [!NOTE]> essa opção só estará disponível se a ação selecionada puder ser repetida. Por exemplo, você não pode definir a recorrência para que a ação seja **excluída permanentemente**.           |
 ||||||5.  <br/> |Escolha **OK**.  <br/> |
@@ -122,7 +122,7 @@ A adição de uma política de gerenciamento de informações a um tipo de conte
     
     Para habilitar rótulos
     
-||||||**1.**|* * Para exigir que os usuários adicionem um rótulo a um documento, escolha **avisar os usuários para inserir um rótulo antes de salvar ou imprimir**.  <br/> > [!NOTE]> se desejar que os rótulos sejam opcionais, não marque essa caixa de seleção.        **|
+||||||**1.**|* * Para exigir que os usuários adicionem um rótulo a um documento, escolha **avisar os usuários para inserir um rótulo antes de salvar ou imprimir**.  <br/> > [!NOTE]> se quiser que os rótulos sejam opcionais, não marque essa caixa de seleção.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> |Para bloquear um rótulo de modo que ele não possa ser alterado depois de inserido, escolha **impedir alterações nos rótulos depois de adicionados**.  <br/>  Essa configuração impede que o texto do rótulo seja atualizado depois que o rótulo tiver sido inserido em um item de um aplicativo cliente, como Word, Excel ou PowerPoint. Se você quiser que o rótulo seja adicionado quando as propriedades desse documento ou item forem atualizadas, não marque essa caixa de seleção.  <br/> |
 ||||||3.  <br/> |Na caixa formato do rótulo, insira o texto do rótulo como você deseja que ele seja exibido. Os rótulos podem conter até 10 referências de coluna, cada um deles pode ter até 255 caracteres de comprimento. Para criar o formato do rótulo, faça o seguinte:  <br/> Digite os nomes das colunas que você deseja incluir no rótulo na ordem em que você deseja que eles apareçam. Coloque os nomes das colunas entre chaves ({}), conforme mostrado no exemplo da página Editar política.  <br/> Digite palavras para identificar as colunas fora dos colchetes, conforme mostrado no exemplo da página Editar política.  <br/> |

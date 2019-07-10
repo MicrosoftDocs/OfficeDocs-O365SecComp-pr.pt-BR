@@ -2,8 +2,8 @@
 title: Como o Exchange Online protege seus segredos de email
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/24/2018
+manager: dansimp
+ms.date: 07/01/2019
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
 description: Além da central de confiabilidade do Office 365, que fornece informações de segurança, privacidade e conformidade do Office 365, você pode querer saber como o Office 365 ajuda a proteger os segredos que você fornece em seus datacenters. Usamos uma tecnologia chamada DKM (Distributed Key Manager).
-ms.openlocfilehash: 609d59b6e4da779e0fa663b40fdbf26036753669
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8350785968c68b22c58be17ec68d94ff908c95d9
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154582"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599427"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Como o Exchange Online protege seus segredos de email
 
@@ -29,7 +29,7 @@ Este artigo descreve como a Microsoft protege seus segredos de email em seus dat
 
 Além da central de confiabilidade do Office 365, que fornece [informações de segurança, privacidade e conformidade do office 365](https://go.microsoft.com/fwlink/?linkid=874644), você pode querer saber como o Office 365 ajuda a proteger os segredos que você fornece em seus datacenters. Usamos uma tecnologia chamada DKM (Distributed Key Manager).
   
-O Distributed Key Manager (DKM) é uma funcionalidade no lado do cliente que usa um conjunto de chaves secretas para criptografar e descriptografar informações. Somente os membros de um grupo de segurança específico nos Serviços de Domínio Active Directory podem acessar essas chaves para descriptografar os dados criptografados pelo DKM. No Exchange Online, apenas certas contas de serviço, sob as quais os processos do Exchange são executados, fazem parte do grupo de segurança. Como parte do procedimento operacional padrão no datacenter, nenhum humano recebe credenciais que fazem parte deste grupo de segurança e, portanto, nenhuma pessoa tem acesso às chaves que podem descriptografar esses segredos.
+[Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) é uma funcionalidade do lado do cliente que usa um conjunto de chaves secretas para criptografar e descriptografar informações. Somente os membros de um grupo de segurança específico nos Serviços de Domínio Active Directory podem acessar essas chaves para descriptografar os dados criptografados pelo DKM. No Exchange Online, apenas certas contas de serviço, sob as quais os processos do Exchange são executados, fazem parte do grupo de segurança. Como parte do procedimento operacional padrão no datacenter, nenhum humano recebe credenciais que fazem parte deste grupo de segurança e, portanto, nenhuma pessoa tem acesso às chaves que podem descriptografar esses segredos.
   
 Para fins de depuração, solução de problemas ou auditoria, um administrador de datacenter deve solicitar acesso elevado para obter credenciais temporárias que fazem parte do grupo de segurança. Esse processo requer vários níveis de aprovação legal. Se o acesso for concedido, toda as atividades são registradas e auditadas. Além disso, o acesso é concedido apenas por um tempo definido, expirando automaticamente após esse período.
   
@@ -37,11 +37,11 @@ Para maior proteção, a tecnologia do DKM inclui a sobreposição de chave e o 
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>Em que circunstâncias o Exchange Online usa o DKM?
 
-A Microsoft usa o DKM para criptografar seus segredos nos datacenters do Exchange Online. Por exemplo:
+A Microsoft usa o [Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) para criptografar seus segredos nos datacenters do Exchange Online. Por exemplo:
   
-- Credenciais de conta de email para contas conectadas. As contas conectadas são as contas de email de terceiros, como Hotmail, Gmail e Yahoo!.
+- Credenciais da conta de email para contas conectadas. As contas conectadas são contas de terceiros, como hotmail, Gmail e Yahoo! contas de email.
     
-- Chaves-raiz do Rights Management Service (RMS). São as chaves de cliente que são importadas do Azure RMS ou de implantações do RMS de serviços de domínio do Active Directory no local que são usadas para criptografar e descriptografar emails com o RMS ou o OME (criptografia de mensagem do Office 365).
+- Chave do cliente. Se você estiver usando a [chave do cliente no Office 365](controlling-your-data-using-customer-key.md), você usará o [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) para proteger seus segredos.
     
 ## <a name="related-topics"></a>Tópicos relacionados
 

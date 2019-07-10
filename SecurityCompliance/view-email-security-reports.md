@@ -2,7 +2,7 @@
 title: Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Saiba como localizar e usar relatórios de segurança de email da sua organização. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 17a8114ec1d4af9a665c235e38461f281f4fe83f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408406"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598547"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 
@@ -43,7 +43,7 @@ Os relatórios de segurança de email incluem o seguinte:
 
 (**Novo!**) O **relatório de criptografia** mostra informações sobre as mensagens de email que foram criptografadas, seja por meio das políticas da sua organização ou por meio de controles de usuário final. A equipe de segurança da sua organização pode usar informações neste relatório para identificar padrões e aplicar proativamente ou ajustar políticas para mensagens de email confidenciais.
 
-Para exibir esse relatório, no centro de conformidade do & de segurança, vá para **relatório de criptografia**de **painel** \> de **relatórios** \> .
+Para exibir esse relatório, no centro de conformidade & de segurança, vá para **relatório de criptografia**de **painel** \> de **relatórios** \> .
 
 ![Relatório de criptografia](media/encryptionreport-defaultview.png) 
 

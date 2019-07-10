@@ -2,7 +2,7 @@
 title: Desativar os relatórios de lixo eletrônico no Outlook na Web
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: Como um administrador do Office 365, você pode desativar a capacidade de os usuários reportarem email como lixo eletrônico.
-ms.openlocfilehash: a33e43444225cd3c23bc5d40cbf8581d19df2489
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a2a8c2f9120ff4b1d2efab4d7ae63294ce7f923b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156283"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600287"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desativar os relatórios de lixo eletrônico no Outlook na Web
 

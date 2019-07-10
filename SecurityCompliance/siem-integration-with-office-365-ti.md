@@ -2,7 +2,7 @@
 title: Integração do SIEM com a proteção avançada contra ameaças do Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: Integre o servidor SIEM da sua organização com a proteção avançada contra ameaças do Office 365 e eventos de ameaça relacionados na API de gerenciamento de atividades do Office 365.
-ms.openlocfilehash: da34073669d50cadcc01b5dd885d209a329c645f
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4bfc82be273bb4581aa49bbbbdab613bd87b1b89
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077187"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600898"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Integração do SIEM com a proteção avançada contra ameaças do Office 365
 
@@ -41,7 +41,7 @@ O servidor SIEM ou outro sistema semelhante deve sondar a **auditoria.** carga d
 |47|ThreatIntelligenceAtpContent|Eventos de phishing e malware para arquivos no SharePoint Online, no OneDrive for Business e no Microsoft Teams da proteção avançada contra ameaças do Office 365.|
 
 > [!IMPORTANT]
-> Você deve ser um administrador global do Office 365 ou ter a função de administrador de segurança atribuída para o centro de conformidade do & de segurança para configurar a integração do SIEM com a proteção avançada contra ameaças do Office 365.<br/>O log de auditoria deve estar ativado para o seu ambiente do Office 365. Para obter ajuda com isso, consulte [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md).
+> Você deve ser um administrador global do Office 365 ou ter a função de administrador de segurança atribuída para o centro de conformidade de & de segurança para configurar a integração do SIEM com a proteção avançada contra ameaças do Office 365.<br/>O log de auditoria deve estar ativado para o seu ambiente do Office 365. Para obter ajuda com isso, consulte [Ativar ou desativar a pesquisa de log de auditoria do Office 365](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

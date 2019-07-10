@@ -1,7 +1,7 @@
 ---
 title: BitLocker do Office 365 para criptografia
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Resumo: informações sobre o BitLocker para criptografia na nuvem.'
-ms.openlocfilehash: 293c7a3cef3ae2c55a0b12df139baf5302dd3b04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bbe32f642f214d27c7f9f82c39b11237556d51bf
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262933"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600938"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker e Distributed Key Manager (DKM) para criptografia
 
@@ -34,7 +34,7 @@ A tabela a seguir descreve a cadeia de proteção de chave do BitLocker para um 
 | Chave externa AES de 256 bits | Por servidor | APIs do BitLocker | TPM ou secreto seguro | Lockbox/controle de acesso |
 |  |  |  | Registro do servidor de caixa de correio | TPM criptografado |
 | Senha numérica de 48 dígitos | Por disco | APIs do BitLocker | Active Directory | Lockbox/controle de acesso |
-| O certificado X. 509 como o agente de recuperação de dados (DRA) também é chamado de protetor de chave pública | Ambiente (por exemplo, multilocatário do Exchange Online) | AUTORIDADE de certificação da Microsoft | Sistema de compilação | Não há um usuário com a senha completa para a chave privada. A senha está sob proteção física. |
+| O certificado X. 509 como o agente de recuperação de dados (DRA) também é chamado de protetor de chave pública | Ambiente (por exemplo, multilocatário do Exchange Online) | Autoridade de certificação da Microsoft | Sistema de compilação | Não há um usuário com a senha completa para a chave privada. A senha está sob proteção física. |
 
 
 O gerenciamento de chaves BitLocker envolve o gerenciamento de chaves de recuperação usadas para desbloquear/recuperar discos criptografados em um datacenter do Office 365. O Office 365 armazena as chaves mestre em um compartilhamento protegido, acessível somente por indivíduos que foram filtrados e aprovados. As credenciais para as chaves são armazenadas em um repositório seguro para dados de controle de acesso (o que chamamos de um "repositório secreto"), que exige um alto nível de aprovação de elevação e gerenciamento para acessar usando uma ferramenta de elevação de acesso just-in-time.

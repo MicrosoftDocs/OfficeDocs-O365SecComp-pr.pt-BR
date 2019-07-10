@@ -2,8 +2,8 @@
 title: Solução de problemas de email enviados para o Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/2/2016
+manager: dansimp
+ms.date: 05/02/2016
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Este artigo fornece informações de solução de problemas para remetentes que estão enfrentando problemas ao tentar enviar emails para caixas de entrada no Office 365 e práticas recomendadas para envio de email em massa para clientes do Office 365.
-ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9f4b5e8073c173da6638c30ccc5f123dc3b7a2a6
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158213"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600327"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Solução de problemas de email enviados para o Office 365
 

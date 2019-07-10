@@ -2,8 +2,8 @@
 title: Passo a passo – de um painel para um insight
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/4/2018
+manager: dansimp
+ms.date: 06/04/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Saiba como você pode ir de um painel para uma visão com as ações recomendadas no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 40f927ff394bc5a79e62eea7048bf2a48617cd90
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: e4ff0491e767fd4ffcf14a5ce8b5014447f80238
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34078017"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599307"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Passo a passo – de um painel para um insight
 

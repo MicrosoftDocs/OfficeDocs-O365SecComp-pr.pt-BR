@@ -1,8 +1,8 @@
 ---
 title: Perguntas frequentes sobre administração delegada
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: Este tópico fornece perguntas frequentes e suas respostas para parceiros e revendedores Microsoft que desejam executar tarefas de administração delegadas do Office 365, incluindo a habilidade de gerenciar o Exchange Online Protection (EOP) para outros locatários (empresas).
-ms.openlocfilehash: 15433a9ac0bb8b165dd8ee97767fca4a3e29f01a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153223"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599797"
 ---
 # <a name="delegated-administration-faq"></a>Perguntas frequentes sobre administração delegada
 

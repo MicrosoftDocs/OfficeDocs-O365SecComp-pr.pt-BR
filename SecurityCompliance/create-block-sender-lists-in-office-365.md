@@ -2,7 +2,7 @@
 title: Criar listas de remetentes bloqueados no Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Bloquear as opções da lista de remetentes incluem remetentes bloqueados do Outlook, listas de bloqueios de remetente/domínio antispam, listas de bloqueio de IP e regras de transporte do Exchange (ETRs) também chamadas de fluxo de emails.
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017683"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599987"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Criar listas de remetentes bloqueados no Office 365
 
@@ -48,6 +48,8 @@ As etapas para configurar isso são diferentes entre o [Outlook Web App](https:/
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Usar listas de bloqueio de remetente/domínio de política antispam
 
 Quando vários usuários estão sendo afetados, o escopo é mais largo e você precisa usar uma política anti-spam de lista de remetente/domínio em toda a empresa. As etapas detalhadas podem ser encontradas em [configurar seu documento de políticas de filtro de spam](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) . Qualquer mensagem bloqueada por esse método seguirá a ação de spam conforme configurada na política.
+
+O limite máximo para essas listas é de aproximadamente 1000 entradas.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Usar regras de transporte do Exchange (ETRs) para bloquear remetentes específicos
 

@@ -2,33 +2,33 @@
 title: Relatório de encaminhamento automático de mensagens
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Os administradores podem saber mais sobre o relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365.
-ms.openlocfilehash: 81d6235e549b6eed792d069e66c69da1d40103ff
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Os administradores podem saber mais sobre o relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade & segurança do Office 365.
+ms.openlocfilehash: 8260b2144d1973d7dca80b0021f13243dd75bcb9
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158653"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600854"
 ---
 # <a name="auto-forwarded-messages-report"></a>Relatório de encaminhamento automático de mensagens
 
 O relatório de **mensagens automaticamente** no painel de fluxo de emails exibe informações sobre as mensagens que são automaticamente encaminhadas da sua organização do Office 365 para destinatários em domínios externos.
 
-![As mensagens de encaminhamento automático são aprofundadas no centro de conformidade do & de segurança do Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![As mensagens de encaminhamento automático são aprofundadas no centro de conformidade & segurança do Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-![O relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade do & de segurança do Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![O relatório de mensagens de encaminhamento automático no painel de fluxo de emails no centro de conformidade & segurança do Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Detalhes de mensagens automaticamente encaminhadas
 
 Quando você clica no número de mensagens no widget, um painel de submenu aparece mostrando o status da mensagem de encaminhamento automático. Você pode ver os detalhes clicando no link **encaminhar relatório** .
 
-![O submenu de detalhes do relatório de mensagens automaticamente encaminhadas no centro de conformidade do & de segurança do Office 365](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+![O submenu de detalhes do relatório de mensagens automaticamente encaminhadas no centro de conformidade & segurança do Office 365](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>Informações
 

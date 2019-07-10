@@ -2,7 +2,7 @@
 title: Proteção anti-spam de email do Office 365
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre as configurações e filtros antispam que ajudarão você a evitar spam no Exchange Online e no Office 365. Obtendo muito spam no Office 365? Você pode personalizar suas configurações de política antispam e filtros de spam.
-ms.openlocfilehash: 64048e2621082edae21285df8b8fd1bcbd2e7c4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c82fc343d37c44352638cef71c5b34d28e091fb1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152323"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598267"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Proteção anti-spam de email do Office 365
 

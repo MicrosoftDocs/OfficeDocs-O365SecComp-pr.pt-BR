@@ -2,7 +2,7 @@
 title: Proteção contra ameaças no Office 365
 ms.author: tracyp
 author: msfttracyp
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artigo como guia para configurar seus recursos de proteção contra ameaças agora.
-ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 950259bb11446c3b7f27606b69a44f07ad478e79
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590574"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600517"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Proteção contra ameaças no Office 365
 
@@ -47,7 +47,7 @@ Os recursos de proteção contra ameaças estão incluídos em todas as assinatu
 
 ### <a name="roles-and-permissions"></a>Funções e permissões
 
-Você deve receber uma função apropriada para configurar políticas no centro de [conformidade do & de segurança](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). A tabela a seguir inclui alguns exemplos: 
+Você deve receber uma função apropriada para configurar as políticas no [centro de conformidade & segurança](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). A tabela a seguir inclui alguns exemplos: 
 
 |Função ou grupo de função  |Onde saber mais  |
 |---------|---------|
@@ -61,7 +61,7 @@ Para saber mais, confira [permissões no centro de conformidade &amp; de seguran
 
 A [proteção Antimalware](anti-malware-protection.md) está disponível em assinaturas que incluem [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
 
-1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-malware**de**política** > de **Gerenciamento** > de ameaças.
+1. No [centro de conformidade & segurança](https://protection.office.com), escolha**anti-malware**de**política** > de **Gerenciamento** > de ameaças.
 
 2. Clique duas vezes na política **padrão** e, em seguida, escolha **configurações**.
 
@@ -83,7 +83,7 @@ A proteção de horário de clique de URLs e arquivos mal-intencionados está di
 
 Para configurar [anexos de segurança ATP](atp-safe-attachments.md), você deve definir pelo menos uma política de anexos seguros de ATP. 
 
-1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha a**política** > de **Gerenciamento** > de ameaça**anexos seguros de ATP**.
+1. No [centro de conformidade & segurança](https://protection.office.com), escolha a**política** > de **Gerenciamento** > de ameaça**anexos seguros de ATP**.
 
 2. Selecione a opção **ativar a ATP para SharePoint, onedrive e Microsoft Teams**.
 
@@ -109,7 +109,7 @@ Para saber mais, confira [configurar as políticas de anexos seguros do Microsof
 
 Para configurar [links de ATP seguros](atp-safe-links.md), revise e edite sua política padrão e adicione uma política para usuários específicos.
 
-1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha links de segurança**ATP**da**política** > de **Gerenciamento** > de ameaças.
+1. No [centro de conformidade & segurança](https://protection.office.com), escolha **** > **política** > de gerenciamento de ameaça**links seguros de ATP**.
 
 2. Clique duas vezes na política **padrão** .
 
@@ -141,7 +141,7 @@ Para saber mais, confira [configurar as políticas de links seguros de ATP do Of
 
 A [proteção contra phishing](anti-phishing-protection.md) está disponível em assinaturas que incluem [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). A proteção contra phishing avançada está disponível na [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). O procedimento a seguir descreve como configurar uma política anti-phishing do ATP. As etapas são semelhantes à configuração de uma política anti-phishing (sem ATP).
 
-1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-phishing**da**política** > de **Gerenciamento** > de ameaças.
+1. No [centro de conformidade & segurança](https://protection.office.com), escolha**política** > de **Gerenciamento** > de ameaças**ATP anti-phishing**.
 
 2. Clique em **política padrão**.
 
@@ -173,7 +173,7 @@ Para saber mais sobre suas opções de política anti-phishing, consulte [set up
 
 A [proteção](anti-spam-protection.md) antispam está disponível em assinaturas que incluem [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. No [centro de conformidade do & de segurança](https://protection.office.com), escolha**anti-spam**de**política** > de **Gerenciamento** > de ameaças.
+1. No [centro de conformidade & segurança](https://protection.office.com), escolha**anti-spam**de**política** > de **Gerenciamento** > de ameaças.
 
 2. Na guia **Personalizar** , ative **as configurações personalizadas** .
 

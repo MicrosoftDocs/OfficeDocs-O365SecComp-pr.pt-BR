@@ -2,7 +2,7 @@
 title: Introdução às políticas de gerenciamento de informações
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Uma política de gerenciamento de informações é um conjunto de regras aplicáveis a um tipo de conteúdo. As políticas de gerenciamento de informações permitem que as organizações controlem e rastreiem o tempo em que um documento é retido ou quais ações os usuários podem realizar com esse conteúdo, dentre outras coisas. Essas políticas podem ajudar as organizações a cumprir regulamentações legais ou governamentais, ou podem simplesmente impor processos comerciais internos.
-ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5cf571b22b7d698daf8a70f8565b250e2388a1a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152603"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599077"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introdução às políticas de gerenciamento de informações
 

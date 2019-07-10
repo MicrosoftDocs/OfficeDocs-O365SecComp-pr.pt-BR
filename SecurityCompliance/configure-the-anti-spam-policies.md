@@ -2,7 +2,7 @@
 title: Configurar políticas antispam
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 6/9/2015
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 31279431-828d-48bd-b979-20b6de15fa4a
 ms.collection:
 - M365-security-compliance
 description: A filtragem de spam é automaticamente habilitada em toda a empresa por meio das políticas antispam padrão (filtro de conexão, filtro de spam e spam de saída). Como administrador, você pode exibir e editar, mas não excluir, as políticas antispam padrão de forma que elas sejam ajustadas para atender melhor às necessidades da sua organização. Para maior granularidade, você também pode criar políticas personalizadas e aplicá-las a usuários, grupos ou domínios especificados em sua organização. Por padrão, as políticas personalizadas têm precedência sobre a política padrão, mas é possível alterar a prioridade de suas políticas.
-ms.openlocfilehash: 73154ae18d6aff3d983ed8a9f175469056fb9487
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6690ddf0f50762aaa7b9ff61385c279f66716c8
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153843"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600107"
 ---
 # <a name="configure-the-anti-spam-policies"></a>Configurar políticas antispam
 

@@ -2,19 +2,19 @@
 title: Corrigir a percepção do domínio do remetente
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Os administradores podem saber mais sobre a correção do domínio do remetente no painel de fluxo de emails no centro de conformidade do & de segurança.
-ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 89c94616d612fa02c067e0bc2a89f5a3be704ed5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158703"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598057"
 ---
 # <a name="fix-sender-domain-insight"></a>Corrigir a percepção do domínio do remetente
 
@@ -34,7 +34,7 @@ As mensagens que não atenderem aos critérios não serão atribuídas à organi
 
 A **solução de correção de domínio do remetente** mostra emails do seu ambiente local que não atendem aos critérios, ajuda a identificar máquinas potencialmente comprometidas e contas de usuário em seu ambiente de email local e ajuda você a realizar ações de correção.
 
-![A correção do domínio do remetente se aprofunda no painel de fluxo de emails no centro de conformidade do & de segurança](media/sender-domain-insight-selected.png)
+![A correção do domínio do remetente se aprofunda no painel de fluxo de emails no centro de conformidade de & de segurança](media/sender-domain-insight-selected.png)
 
 Ao clicar em **Exibir detalhes**, você será levado para outro widget com mais detalhes, conforme mostrado no diagrama a seguir:
 

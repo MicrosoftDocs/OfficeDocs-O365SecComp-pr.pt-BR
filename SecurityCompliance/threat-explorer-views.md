@@ -2,7 +2,7 @@
 title: Modos de exibição no Gerenciador de ameaças e detecções em tempo real
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os vários tipos de modos de exibição disponíveis no Gerenciador de ameaças e detecções em tempo real.
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408316"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600814"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Modos de exibição no Gerenciador de ameaças e detecções em tempo real
 
@@ -36,7 +36,7 @@ Use o menu **Exibir** para alterar as informações que são exibidas. As dicas 
 
 Depois de selecionar um modo de exibição, você pode aplicar filtros e configurar consultas para realizar mais análises. As seções a seguir fornecem uma breve visão geral dos vários modos de exibição disponíveis no Explorer (ou detecções em tempo real).  
 
-## <a name="email--malware"></a>Email > malware
+## <a name="email--malware"></a>Malware de > de email
 
 Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **malware**de email. Este modo de exibição mostra informações sobre mensagens de email identificadas como contendo malware.  
 
@@ -52,7 +52,7 @@ Abaixo do gráfico, veja mais detalhes sobre mensagens específicas. Quando voc�
 
 ![Gerenciador de ameaças com submenu aberto](media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
-## <a name="email--phish"></a>Email > Phish
+## <a name="email--phish"></a>Phishing > Phish
 
 Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **phishing**de email. Este modo de exibição mostra mensagens de email identificadas como tentativas de phishing.  
 

@@ -2,7 +2,7 @@
 title: Controlando o spam de saída no Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,19 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se sua organização enviar muitas mensagens em massa marcadas como spam, você poderá ter impedido de enviar emails com o Office 365. Leia este artigo para saber mais sobre por que isso acontece e o que você pode fazer sobre ele.
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157593"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601128"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controlando o spam de saída no Office 365
 
 Adotamos o gerenciamento de spam de saída seriamente porque nosso é um serviço compartilhado.  Há muitos clientes por trás de um pool compartilhado de recursos, onde um cliente envia spams de saída, pode degradar a reputação de IP de saída do serviço e afeta a entrega bem-sucedida de emails para outros clientes.
 
 > [!IMPORTANT]
-> A notificação de quando um remetente é restrito agora faz parte da plataforma de alerta do centro de conformidade do & de segurança (SCC). Em vez de usar os métodos descritos abaixo para enviar notificações, a lista de usuários a serem alertados pode ser encontrada no alerta "usuário restrito a enviar email". Comece a usar a [página políticas de alerta](https://sip.protection.office.com/alertpolicies) no centro de conformidade do _AMP_ de segurança para configurar o alerta, pois o método anterior será removido no futuro. Leia sobre a nova [experiência restrita de usuários](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
+> A notificação de quando um remetente é restrito agora faz parte da plataforma de alerta do centro de conformidade do & de segurança (SCC). Em vez de usar os métodos descritos abaixo para enviar notificações, a lista de usuários a serem alertados pode ser encontrada no alerta "usuário restrito a enviar email". Comece a usar a [página políticas de alerta](https://sip.protection.office.com/alertpolicies) no centro de conformidade de & de segurança para configurar o alerta, pois o método anterior será removido no futuro. Leia sobre a nova [experiência restrita de usuários](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>O que os administradores podem fazer para controlar o spam de saída
 
