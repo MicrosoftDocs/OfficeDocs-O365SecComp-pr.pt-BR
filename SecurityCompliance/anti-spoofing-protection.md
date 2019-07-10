@@ -2,7 +2,7 @@
 title: Proteção antifalsificação no Office 365
 ms.author: tracyp
 author: MSFTtracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/29/2019
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artigo descreve como o Office 365 mitiga ataques de phishing que usam domínios de remetentes forjados, ou seja, domínios falsificados. Isso é feito analisando as mensagens e bloqueando as que não podem ser autenticadas com métodos de autenticação de email padrão nem outras técnicas de reputação de remetente. Essa alteração foi implementada para reduzir o número de ataques de phishing aos quais as organizações do Office 365 estão expostas.
-ms.openlocfilehash: 455ce577e4ffb3dc4d943004dd3c299e7e6f1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 066fbee27291ad8d89a7cb9d0f2abc586835b780
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155773"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598367"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Proteção antifalsificação no Office 365
 
@@ -114,7 +114,7 @@ A Microsoft diferencia dois tipos de mensagens de falsificação:
   
  **Falsificação dentro da organização**
   
-Também conhecida como falsificação self-to-self, ocorre quando o domínio no endereço De: é igual ou está alinhado ao domínio do destinatário (quando o domínio do destinatário é um dos [Domínios Aceitos](https://technet.microsoft.com/pt-BR/library/jj945194%28v=exchg.150%29.aspx) de sua organização) ou quando o domínio no endereço De: faz parte da mesma organização.
+Também conhecida como falsificação self-to-self, ocorre quando o domínio no endereço De: é igual ou está alinhado ao domínio do destinatário (quando o domínio do destinatário é um dos [Domínios Aceitos](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx) de sua organização) ou quando o domínio no endereço De: faz parte da mesma organização.
   
 O exemplo a seguir tem remetente e destinatário do mesmo domínio (contoso.com). Espaços são inseridos no endereço de email para evitar a coleta de spambot na página):
   
@@ -653,7 +653,7 @@ A tecnologia antifalsificação da Microsoft foi implantada inicialmente nas org
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Como relatar mensagens de spam ou não spam para a Microsoft?
 
-Você pode usar o [Suplemento para Relatar Mensagens para o Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, se não estiver instalado, [Enviar mensagens de spam, não spam e de phishing à Microsoft para análise](https://technet.microsoft.com/pt-BR/library/jj200769%28v=exchg.150%29.aspx).
+Você pode usar o [Suplemento para Relatar Mensagens para o Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, se não estiver instalado, [Enviar mensagens de spam, não spam e de phishing à Microsoft para análise](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sou um administrador de domínio que não sabe quem são todos os meus remetentes!
 

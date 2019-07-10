@@ -3,7 +3,7 @@ title: Bloquear spam no EOP autônomo
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores autônomos de EOP para ajudar a evitar falsos negativos de spam
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152193"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598487"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar o filtro antispam do Office 365 com estas configurações
 
@@ -35,7 +35,7 @@ Personalize o filtro de spam do Office 365 adicionando o endereço IP do remeten
     
 2. Procure o endereço IP após a marca CIP no cabeçalho X-Forefront-Antispam-Report usando o [Analisador de cabeçalho de mensagem](https://testconnectivity.microsoft.com/?tabid=mha) ou manualmente. 
     
-3. Adicione o endereço IP à Lista de IP Bloqueados executando as etapas em "Usar o EAC para editar a política de filtro de conexão padrão" em [Configurar a política de filtro de conexão](https://technet.microsoft.com/pt-BR/library/jj200718%28v=exchg.150%29.aspx).
+3. Adicione o endereço IP à Lista de IP Bloqueados executando as etapas em "Usar o EAC para editar a política de filtro de conexão padrão" em [Configurar a política de filtro de conexão](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloquear emails em massa com regras de fluxo de emails (também conhecida como regras de transporte) ou filtro de spam
 
@@ -45,8 +45,7 @@ O spam é, em grande parte, emails em massa, por exemplo, boletins informativos 
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloquear spam usando listas de bloqueio de filtro de spam
 
-
-  [Configure suas políticas de filtro de spam](https://technet.microsoft.com/pt-BR/library/jj200684%28v=exchg.150%29.aspx) para adicionar o endereço do remetente à lista de bloqueio de remetentes ou seu domínio à lista de bloqueio de domínios no filtro de spam. Os emails de um remetente ou domínio em uma lista de bloqueio de filtro de spam serão marcados como spam. 
+[Configure suas políticas de filtro de spam](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) para adicionar o endereço do remetente à lista de bloqueio de remetentes ou seu domínio à lista de bloqueio de domínios no filtro de spam. Os emails de um remetente ou domínio em uma lista de bloqueio de filtro de spam serão marcados como spam. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Os usuários de email também podem ajudar a garantir que os falsos negativos e spams sejam bloqueados com o filtro de spam do Office 365
 
@@ -55,7 +54,7 @@ Instruir seus usuários a adicionar o endereço do remetente de spam à lista de
 ![Bloquear um remetente no Outlook na web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Para saber mais sobre a lista de remetentes seguros, confira [Perguntas frequentes sobre Remetente confiável e Listas de Remetentes Bloqueados](https://technet.microsoft.com/pt-BR/library/dn133608%28v=exchg.150%29.aspx). 
+> Para saber mais sobre a lista de remetentes seguros, confira [Perguntas frequentes sobre Remetente confiável e Listas de Remetentes Bloqueados](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Clientes somente EOP: configurar a sincronização de diretório
 
