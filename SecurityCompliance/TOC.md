@@ -536,12 +536,12 @@
 ## [Gerenciador de conformidade (visualização)](compliance-manager-overview.md)
 ### [Novidades do Gerenciador de conformidade (visualização)](compliance-manager-release-notes.md)
 ### [Trabalhar com o Gerenciador de conformidade (visualização)](working-with-compliance-manager.md)
-### [Metodologia de pontuação de conformidade (visualização)](compliance-score-methodology.md)
-## [Barreiras de Informações (visualização)](information-barriers.md)
-### [Definir políticas de barreira de informações (visualização)](information-barriers-policies.md)
-### [Atributos das políticas de barreira de informações (visualização)](information-barriers-attributes.md)
-### [Solucionando problemas de barreiras de informações (visualização)](information-barriers-troubleshooting.md)
-### [Editar políticas de barreira de informações (visualização)](information-barriers-edit-segments-policies.md.md)
+### [Metodologia de pontuação de conformidade (Visualização)](compliance-score-methodology.md)
+## [Barreiras de informações](information-barriers.md)
+### [Definir políticas de barreira de informações](information-barriers-policies.md)
+### [Atributos das políticas de barreira de informações](information-barriers-attributes.md)
+### [Solução de problemas de barreiras de informações](information-barriers-troubleshooting.md)
+### [Editar políticas de barreira de informações](information-barriers-edit-segments-policies.md.md)
 
 
 ## Chave do Cliente
