@@ -2,7 +2,7 @@
 title: Limpeza automática zero hora – proteção contra spam e malware
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/11/2019
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: A limpeza automática de zero horas (ZAP) é um recurso de proteção de email que detecta mensagens com spam ou malware que já foram entregues às caixas de entrada dos seus usuários e renderiza o conteúdo mal-intencionado inofensivo. Como o ZAP faz isso depende do tipo de conteúdo mal-intencionado detectado.
-ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ceb5a973a65406527de3361a354247908b4cab63
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408346"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613659"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Limpeza automática zero hora – proteção contra spam e malware
 
@@ -42,33 +42,37 @@ O ZAP é ativado por padrão, mas as seguintes condições devem ser atendidas:
 
 O Office 365 atualiza as assinaturas de malware e mecanismo antispam em tempo real diariamente. No entanto, os usuários ainda podem obter mensagens mal-intencionadas entregues às suas caixas de entrada por vários motivos, incluindo se o conteúdo é enarmado depois de ser entregue aos usuários. O ZAP aborda isso ao monitorar atualizações continuamente nas assinaturas de spam e malware do Office 365. ZAP pode localizar e remover mensagens entregues anteriormente que já estão nas caixas de entrada dos usuários.
 
-- Para email identificado como spam, o ZAP move as mensagens não lidas para a pasta lixo eletrônico dos usuários.
-
-- Para email identificado como Phish, o ZAP move mensagens para a pasta lixo eletrônico dos usuários, independentemente se o email foi lido.
-
-- Para malware recém detectado, ZAP remove anexos de mensagens de email, independentemente de o email ter sido lido.
-  
 A ação ZAP é transparente para o usuário da caixa de correio; Eles não são notificados quando uma mensagem de email é movida. A mensagem não deve ser mais antiga que 2 dias.
   
 As listas de permissões, [as regras de fluxo](https://go.microsoft.com/fwlink/p/?LinkId=722755)de emails e as regras de usuário final ou filtros adicionais têm precedência sobre o zap.
-  
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar ou configurar uma política de filtro de spam
-  
-1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365.
 
-2. Em **Gerenciamento de ameaças**, escolha **anti-spam**.
+**Zap de malware** Para malware recém detectado, o ZAP remove anexos de mensagens de email, deixando o corpo da mensagem na caixa de correio do usuário. Os anexos são removidos independentemente do status de leitura do email.
 
-3. Revise as configurações padrão.
+O malware ZAP é habilitado por padrão na política de malware. O malware ZAP pode ser desabilitado usando o parâmetro **ZapEnabled** de [set-MalwareFilterPolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps), um cmdlet EOP.
 
-4. Se você quiser personalizar suas configurações, selecione a guia **personalizado** e ative **as configurações personalizadas**. Edite suas configurações e, se desejar, escolha **+ criar uma política** para adicionar uma nova política.
+**Phish de phishing** Para email que é identificado como Phish após a entrega, o ZAP realiza a ação de acordo com a política de spam pela qual o usuário é coberto. Se a ação de phishing de política estiver definida para executar uma ação em um email (redirecionar, excluir, quarentena, mover para lixo eletrônico), ZAP moverá a mensagem para a pasta lixo eletrônico da caixa de entrada do usuário, independentemente do status de leitura do email. Se a ação de phishing de política não estiver definida como executar ação (Adicionar cabeçalho X, modificar assunto, sem ação), ZAP não executará ações no email. Saiba mais sobre como [configurar suas políticas de filtro de spam](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) aqui.
+
+O phishing ZAP está habilitado por padrão na política de spam. O phishing ZAP pode ser desabilitado usando o parâmetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
+Observação: a desabilitação do ZapEnabled desabilitará as opções de phishing ZAP e spam
+
+**Zap de spam** Para email que é identificado como spam após a entrega, o ZAP realiza a ação de acordo com a política de spam pela qual o usuário é coberto. Se a ação de spam de política estiver definida como executar uma ação em um email (redirecionar, excluir, quarentena, mover para lixo eletrônico), ZAP moverá a mensagem para a pasta lixo eletrônico da caixa de entrada do usuário, se a mensagem for não lida. Se a ação de spam de política não estiver definida como executar ação (Adicionar cabeçalho X, modificar assunto, sem ação), ZAP não executará ações no email. Saiba mais sobre como [configurar suas políticas de filtro de spam](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) aqui.
+
+O ZAP de spam está habilitado por padrão na política de spam. O spam ZAP pode ser desabilitado usando o parâmetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
+Observação: a desabilitação do ZapEnabled desabilitará as opções de phishing ZAP e spam
 
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver se ZAP moveu sua mensagem
 
 Se você deseja ver se ZAP moveu sua mensagem, pode usar o relatório de [status de proteção contra ameaças](view-email-security-reports.md#threat-protection-status-report) ou o [Explorador de ameaças (e detecções em tempo real)](threat-explorer.md).
 
 ## <a name="to-disable-zap"></a>Para desabilitar o ZAP
-  
-Se você quiser desabilitar o ZAP para o seu locatário do Office 365, ou um conjunto de usuários, use o parâmetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
+**Desabilitando o malware zap** Para desabilitar o ZAP de malware para o locatário do O365, ou um conjunto de usuários, use o parâmetro **ZapEnabled** de [set-MalwareFilterPolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps), um cmdlet EOP.
+
+No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conteúdo chamada "Test".
+
+```Powershell
+  Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+```
+**Desabilitando o phishing e o spam zap** Para desabilitar o Phish e spam ZAP para o locatário do O365, ou um conjunto de usuários, use o parâmetro **ZapEnabled** do [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), um cmdlet EOP.
 
 No exemplo a seguir, o ZAP é desabilitado para uma política de filtro de conteúdo chamada "Test".
 

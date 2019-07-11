@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumo: este artigo descreve como usar o DomainKeys Identified Mail (DKIM) com o Office 365 para garantir que os sistemas de email de destino confiem em mensagens enviadas de seu domínio personalizado.'
-ms.openlocfilehash: e29a6e5d92c169c29e7562d9fb563e9ddc6c5d03
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 25427060140caee242944d56b24eaab362c2f36a
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600417"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613679"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365
 
@@ -234,7 +234,7 @@ Desabilitar a política de assinatura não desabilita completamente o DKIM. Apó
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Comportamento padrão para o DKIM e o Office 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Se você não habilitar o DKIM, o Office 365 criará automaticamente uma chave pública DKIM de 1.024 bits para seu domínio personalizado e a chave privada associada que é armazenada internamente em nosso data center. Por padrão, o Office 365 usa uma configuração de assinatura padrão para domínios que não têm uma política aplicada. Isso significa que se você não configurar o DKIM por conta própria, o Office 365 usará a política e as chaves padrão que ele criar para habilitar o DKIM para o seu domínio.
+Se você não habilitar o DKIM, o Office 365 criará automaticamente uma chave pública de 1024 bits do DKIM para seu domínio padrão e a chave privada associada, que armazenamos internamente em nosso datacenter. Por padrão, o Office 365 usa uma configuração de assinatura padrão para domínios que não têm uma política aplicada. Isso significa que se você não configurar o DKIM por conta própria, o Office 365 usará a política e as chaves padrão que ele criar para habilitar o DKIM para o seu domínio.
   
 Além disso, se você desabilitar a assinatura DKIM após ativá-la, depois de um período de tempo o Office 365 aplicará automaticamente a política padrão do Office 365 para o seu domínio.
   
