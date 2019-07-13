@@ -3,7 +3,7 @@ title: Visão geral da prevenção contra perda de dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Com uma política de prevenção de perda de dados (DLP) &amp; no centro de conformidade de segurança, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077847"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672920"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Visão geral da prevenção contra perda de dados
 
 > [!NOTE]
-> Os recursos de prevenção contra perda de dados foram recentemente adicionados ao Microsoft Teams no Office 365 E5 e no Office 365 Advanced Compliance. Para saber mais sobre a disponibilidade de recursos, confira [descrições de serviço do office 365: centro de conformidade & segurança do office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Os recursos de prevenção contra perda de dados foram recentemente adicionados às mensagens de chat e de canal do Microsoft Teams para usuários licenciados para a conformidade avançada do Office 365, que está disponível como uma opção autônoma e está incluído no Office 365 E5 e no Microsoft 365 E5 conformidade. Para saber mais sobre requisitos de licenciamento, confira [diretrizes de licenciamento de serviços em nível de locatário do Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Para estar em conformidade com padrões de negócios e regulamentações do setor, as organizações devem proteger informações confidenciais e impedir sua divulgação inadvertida. As informações confidenciais podem incluir dados financeiros ou informações de identificação pessoal (PII), como números de cartão de crédito, números de segurança social ou registros de integridade. Com uma política de prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365, você pode identificar, monitorar e proteger automaticamente as informações confidenciais no Office 365.
   
@@ -59,7 +59,7 @@ Você cria e gerencia políticas de DLP na página prevenção de perda de dados
 
 Uma política de DLP contém algumas informações básicas:
   
-- Onde proteger o conteúdo: **locais** como o Exchange Online, o SharePoint Online e o onedrive for Business sites, bem como chats e canais do Microsoft Teams. 
+- Onde proteger o conteúdo: **locais** como o Exchange Online, o SharePoint Online e o onedrive for Business sites, bem como mensagens de chat e de canal do Microsoft Teams. 
     
 - Quando e como proteger o conteúdo aplicando **regras** compostas por: 
     
@@ -75,7 +75,7 @@ Por exemplo, você pode ter uma política de DLP que ajuda a detectar a presenç
   
 ### <a name="locations"></a>Locais
 
-Uma política de DLP pode encontrar e proteger informações confidenciais no Office 365, se essas informações estão localizadas no Exchange Online, no SharePoint Online, no OneDrive for Business ou no Microsoft Teams. Você pode optar por proteger o conteúdo em emails do Exchange, chats e canais do Microsoft Teams e todas as bibliotecas do SharePoint ou do OneDrive, ou selecionar locais específicos para uma política.
+Uma política de DLP pode encontrar e proteger informações confidenciais no Office 365, se essas informações estão localizadas no Exchange Online, no SharePoint Online, no OneDrive for Business ou no Microsoft Teams. Você pode optar por proteger o conteúdo do email do Exchange, as mensagens de chat e o canal do Microsoft Teams e todas as bibliotecas do SharePoint ou do OneDrive, ou selecionar locais específicos para uma política.
   
 ![Opções para locais onde uma política DLP pode ser aplicada](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ Depois de criar uma política de DLP no centro &amp; de conformidade de seguran�
     
 - Programas de área de trabalho do Office (Excel, PowerPoint e Word)
 
-- Canais e chats do Microsoft Teams
+- Canais e mensagens de chat do Microsoft Teams
     
 Após a sincronização da política com os locais certos, ela começará a avaliar o conteúdo e imporá ações.
   
@@ -481,7 +481,7 @@ A avaliação de política de DLP no Office foi projetada para não afetar o des
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Avaliação de política no Microsoft Teams
  
-Quando você cria uma política de DLP que inclui o Microsoft Teams como um local, a política foi sincronizada do centro &amp; de conformidade de segurança do Office 365 para contas de usuário e os canais e chats do Microsoft Teams. Dependendo de como as políticas de DLP são configuradas, quando alguém tenta compartilhar informações confidenciais em um Microsoft Teams chat ou canal, a mensagem pode ser bloqueada ou revogada. E os documentos que contêm informações confidenciais e que são compartilhados com convidados (usuários externos) não serão abertos para esses usuários. Para saber mais, confira [prevenção de perda de dados e Microsoft Teams](dlp-microsoft-teams.md).
+Quando você cria uma política de DLP que inclui o Microsoft Teams como um local, a política foi sincronizada do centro &amp; de conformidade de segurança do Office 365 para contas de usuário e canais do Microsoft Teams e mensagens de chat. Dependendo de como as políticas DLP são configuradas, quando alguém tenta compartilhar informações confidenciais em uma mensagem de chat ou canal do Microsoft Teams, a mensagem pode ser bloqueada ou revogada. E os documentos que contêm informações confidenciais e que são compartilhados com convidados (usuários externos) não serão abertos para esses usuários. Para saber mais, confira [prevenção de perda de dados e Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Permissões
 
