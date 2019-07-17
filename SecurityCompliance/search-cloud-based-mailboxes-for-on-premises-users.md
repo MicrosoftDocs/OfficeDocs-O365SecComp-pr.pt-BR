@@ -3,7 +3,7 @@ title: Pesquisando caixas de correio baseadas em nuvem para usuários locais no 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/4/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar e exportar dados de chat do MicrosoftTeams (chamados 1xN chats) para usuários locais em uma implantação híbrida do Exchange.
-ms.openlocfilehash: b08e1ea9ea9fb9fe834bb10948be532cbc4337b4
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587798"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756853"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Pesquisando caixas de correio baseadas em nuvem para usuários locais no Office 365
 
 Se sua organização tiver uma implantação híbrida do Exchange e tiver habilitado o Microsoft Teams, os usuários poderão usar o aplicativo de chat do teams para mensagens instantâneas. Para o usuário baseado em nuvem, os dados de chat do Teams (também chamados de chats do 1xN) são salvos em sua caixa de correio baseada na nuvem principal. Quando um usuário local usa o aplicativo chat de equipe, sua caixa de correio principal está localizada no local. Para contornar essa limitação, a Microsoft lançou um novo recurso em que uma área de armazenamento baseada em nuvem (chamada de caixa de correio baseada em nuvem para usuários locais) é criada para armazenar dados de chat de equipes para usuários locais. Isso permite que você use a ferramenta de pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar e exportar dados de chat do teams para usuários locais. 
   
-Estes são os requisitos e limitações para configurar e configurar e Pesquisar caixas de correio baseadas em nuvem para usuários locais:
+Estes são os requisitos e limitações para configurar caixas de correio baseadas em nuvem para usuários locais:
   
 - As contas de usuário no serviço de diretório local (como Active Directory) devem ser sincronizadas com o Active Directory do Azure, o serviço de diretório no Office 365. Isso significa que uma conta de usuário de email é criada no Office 365 e é associada a um usuário cuja caixa de correio principal está localizada na organização local.
+
+- O usuário cuja caixa de correio principal está localizada na organização local deve receber uma licença do Microsoft Teams e uma licença do Exchange Online Plan 1.
     
 - A caixa de correio baseada em nuvem para usuários locais é usada apenas para dados de chat de equipes de repositório. Um usuário local não pode entrar na caixa de correio baseada em nuvem ou acessar de qualquer forma. Ele não pode ser usado para enviar ou receber mensagens de email. 
     
@@ -58,7 +60,7 @@ Inclua as seguintes informações ao enviar a solicitação para o suporte da Mi
     
 - O seguinte título ou descrição da finalidade da solicitação de suporte: "Habilitar pesquisa de conteúdo de aplicativo para usuários locais". Isso ajuda a rotear a solicitação para a equipe de engenharia de descoberta eletrônica do Office 365 que implementará a solicitação. 
     
-Após a alteração da engenharia ser feita, o suporte da Microsoft lhe enviará uma data de implantação estimada. O processo de implantação geralmente leva 2-3 semanas após o envio da solicitação de suporte. 
+Após a alteração da engenharia ser feita, o suporte da Microsoft lhe enviará uma data de implantação estimada. O processo de implantação geralmente leva de 2 a 3 semanas após o envio da solicitação de suporte. 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>O que acontece depois que este recurso é habilitado?
 
@@ -90,9 +92,9 @@ Após a habilitação do recurso, você pode usar a pesquisa de conteúdo no cen
 
 4. Neste ponto, você pode escolher uma das seguintes opções em **locais**:
     
-    - **Todos os locais** -Selecione essa opção para pesquisar as caixas de correio de todos os usuários em sua organização. Quando a caixa de seleção é selecionada, todas as caixas de correio baseadas em nuvem para usuários locais também serão pesquisadas. 
+    - **Todos os locais:** Selecione essa opção para pesquisar as caixas de correio de todos os usuários em sua organização. Quando a caixa de seleção é selecionada, todas as caixas de correio baseadas em nuvem para usuários locais também serão pesquisadas. 
     
-    - **Locais específicos** -Selecione essa opção e clique em **Modificar** \> escolher usuário, grupos ou equipes para pesquisar caixas de correio específicas. Conforme explicado anteriormente, o seletor de locais permite que você pesquise os usuários locais. 
+    - **Locais específicos:** Selecione essa opção e clique em **Modificar** \> escolher usuário, grupos ou equipes para pesquisar caixas de correio específicas. Conforme explicado anteriormente, o seletor de locais permite que você pesquise os usuários locais. 
     
 5. Salve e execute a pesquisa. Quaisquer resultados de pesquisa das caixas de correio baseadas em nuvem para usuários locais podem ser visualizados como qualquer outro resultado de pesquisa. Você também pode exportar os resultados da pesquisa (incluindo quaisquer dados de chat do Teams) para um arquivo PST. Para obter mais informações, consulte: 
     
@@ -159,4 +161,8 @@ Não.
   
  **A pesquisa de conteúdo pode localizar chats mais antigos de equipes para usuários locais antes do momento em que minha organização enviou a solicitação para habilitar esse recurso?**
   
-A Microsoft começou a armazenar dados de chat do Microsoft Teams para usuários locais em 31 de janeiro de 2018. Portanto, se a identidade de um usuário do teams local tiver sido sincronizada entre o Active Directory e o Azure Active Directory desde essa data, os dados de chat de suas equipes serão armazenados em uma caixa de correio baseada em nuvem e poderão ser pesquisados usando a pesquisa de conteúdo. A Microsoft também está trabalhando no armazenamento de dados de chat do Microsoft Teams de antes de 31 de janeiro de 2018 nas caixas de correio baseadas em nuvem para usuários locais. Mais informações sobre isso estarão disponíveis em breve.
+A Microsoft começou a armazenar dados de chat do Microsoft Teams para usuários locais em 31 de janeiro de 2018. Portanto, se a identidade de um usuário do teams local tiver sido sincronizada entre o Active Directory e o Azure Active Directory desde essa data, seus dados de chat de equipes serão armazenados em uma caixa de correio baseada em nuvem e pesquisados usando a pesquisa de conteúdo. A Microsoft também está trabalhando no armazenamento de dados de chat do Microsoft Teams de antes de 31 de janeiro de 2018 nas caixas de correio baseadas em nuvem para usuários locais. Mais informações sobre isso estarão disponíveis em breve.
+
+ * * Os usuários locais precisam de uma licença para armazenar dados de chat de equipes em uma caixa de correio baseada em nuvem? 
+  
+Sim. Para armazenar dados de chat do teams para um usuário local em uma caixa de correio baseada em nuvem, o usuário deve ter uma licença do Microsoft Teams e uma licença de plano do Exchange Online no Office 365 (ou Microsoft 365) atribuída.
