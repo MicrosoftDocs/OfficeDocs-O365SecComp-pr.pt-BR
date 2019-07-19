@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547976"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772158"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -72,7 +72,8 @@ Os rótulos de retenção são blocos de construção independentes e reutilizá
   
 ![Diagrama de rótulos, políticas de rótulos e locais](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Quando você publica rótulos de retenção, eles são incluídos em uma política de rótulos de retenção. 
+1. Quando você publica rótulos de retenção, eles são incluídos em uma política de rótulos de retenção. Observe que os nomes dos rótulos de retenção são imutáveis e não podem ser editados após a criação.
+
 
 2. Um único rótulo de retenção pode ser incluído em várias políticas de rótulos de retenção.
 
