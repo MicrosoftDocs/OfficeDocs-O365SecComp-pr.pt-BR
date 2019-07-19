@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62f0dc9e32e89954b2838b70757d3a7c17d79cc4
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: f88bdcfc4ac7ed31ec44a7d18bd74cc2a1842bc5
+ms.sourcegitcommit: 2560a3ecc6a5e3b8b79bbf56a157b66c7553682e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672948"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795567"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Analisar conversas na descoberta eletrônica avançada 
 
@@ -85,7 +85,7 @@ Para habilitar a recuperação de conversas:
   
 2. Selecione um conjunto de revisão existente ou crie um conjunto de revisão. Você pode configurar opções de recuperação ao adicionar resultados de pesquisa a um conjunto de análise de conversa padrão ou padrão.
   
-3. Configure as opções de recuperação de conversa para as fontes de conteúdo que você gostaria de expandir em sua pesquisa e, em seguida, clique em **Adicionar** para iniciar o processo.  
+3. Em **Opções de coleta**, configure as opções de recuperação de conversa para as fontes de conteúdo que você deseja expandir em sua pesquisa e clique em **Adicionar** para iniciar o processo.  
   
 4. Após a conclusão do trabalho de **adição à revisão** do trabalho na guia **trabalhos** , você poderá começar a revisar as conversas.
 
@@ -97,9 +97,15 @@ Após o conteúdo ter sido processado e adicionado ao conjunto de revisão, voc�
 
 Em um conjunto de revisão padrão, as mensagens são processadas e exibidas como itens individuais, semelhante à forma como estão armazenadas em uma pasta de caixa de correio. Neste fluxo de trabalho, cada mensagem é processada como um item separado. Como resultado, o resumo segmentado e as opções de exportação não estão disponíveis em um conjunto de análise padrão. 
 
+  ![Conjunto de revisão padrão](../media/standardrs.PNG)
+
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Analisar conversas em um conjunto de revisão de conversa
 
-Em um conjunto de revisão de conversa, as mensagens individuais são encadeadas e apresentadas como conversas. Isso permite que você revise e exporte conversas contextuais. As seções a seguir descrevem a revisão e exportação de conversas em um conjunto de análise de conversa.
+Em um conjunto de revisão de conversa, as mensagens individuais são encadeadas e apresentadas como conversas. Isso permite que você revise e exporte conversas contextuais. 
+
+  ![Conjunto de revisão de conversa](../media/ConversationRSOptions.PNG)
+
+As seções a seguir descrevem a revisão e exportação de conversas em um conjunto de análise de conversa.
 
 #### <a name="reviewing-conversations"></a>Revisando conversas
 
@@ -117,9 +123,9 @@ Em um conjunto de revisão de conversa, você pode usar as seguintes opções pa
 
 - **Modo de anotações:** Permite marcar um modo de exibição segmentado da conversa. Todas as mensagens na conversa compartilham o mesmo documento anotado.
 
-- **Marca:** Ao exibir conversas em um conjunto de revisão, você pode exibir e aplicar marcas clicando no **painel de codificação**.
+- **Marcação:** Ao exibir conversas em um conjunto de revisão, você pode exibir e aplicar marcas clicando em **painel de marcação** no painel de codificação.
 
-- **Executar a conversão de conversa novamente:** Quando as mensagens são adicionadas a um conjunto de revisão de conversa, um trabalho de conversão é executado automaticamente para criar os modos de exibição de resumo e anotações encadeados. Se o trabalho de reconstrução da conversa falhar, você poderá executar novamente o trabalho de conversão clicando em **ação > criar PDFs de conversa** no conjunto de revisão.
+- **Executar a conversão de conversa novamente:** Quando as mensagens são adicionadas a um conjunto de revisão de conversa, um trabalho de conversão é executado automaticamente para criar os modos de exibição de resumo e anotações encadeados. Se o trabalho de reconstrução da conversa falhar, você poderá executar novamente esse trabalho clicando em **ação > criar PDFs de conversa** no conjunto de revisão.
 
 
 #### <a name="exporting-conversations"></a>Exportando conversas
