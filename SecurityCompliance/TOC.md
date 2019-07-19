@@ -586,9 +586,8 @@
 ### [Lidando com dados corrompidos](office-365-dealing-with-data-corruption.md)
 ### [Resiliência de dados do Exchange Online](office-365-exchange-data-resiliency.md)
 ### [Proteção contra ransomware e malware](office-365-malware-and-ransomware-protection.md)
-### [Monitoramento e autorrecuperação](office-365-monitoring-and-self-healing.md)
-### [Resiliência de dados do SharePoint Online](office-365-sharepoint-data-resiliency.md)
-## [Retenção, exclusão e destruição de dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
+### [Monitoramento e Autorrecuperação](office-365-monitoring-and-self-healing.md)
+## [Retenção, Exclusão e Destruição de Dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Destruição de dados](office-365-data-destruction.md)
 
 ### [Imutabilidade no Office 365](office-365-data-immutability.md)
