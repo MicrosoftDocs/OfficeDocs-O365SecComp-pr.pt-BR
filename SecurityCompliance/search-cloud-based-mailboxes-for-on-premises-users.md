@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade de & de segurança para pesquisar e exportar dados de chat do MicrosoftTeams (chamados 1xN chats) para usuários locais em uma implantação híbrida do Exchange.
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756853"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820484"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Pesquisando caixas de correio baseadas em nuvem para usuários locais no Office 365
 
@@ -163,6 +163,6 @@ Não.
   
 A Microsoft começou a armazenar dados de chat do Microsoft Teams para usuários locais em 31 de janeiro de 2018. Portanto, se a identidade de um usuário do teams local tiver sido sincronizada entre o Active Directory e o Azure Active Directory desde essa data, seus dados de chat de equipes serão armazenados em uma caixa de correio baseada em nuvem e pesquisados usando a pesquisa de conteúdo. A Microsoft também está trabalhando no armazenamento de dados de chat do Microsoft Teams de antes de 31 de janeiro de 2018 nas caixas de correio baseadas em nuvem para usuários locais. Mais informações sobre isso estarão disponíveis em breve.
 
- * * Os usuários locais precisam de uma licença para armazenar dados de chat de equipes em uma caixa de correio baseada em nuvem? 
+ **Os usuários locais precisam de uma licença para armazenar dados de chat de equipes em uma caixa de correio baseada em nuvem?**
   
 Sim. Para armazenar dados de chat do teams para um usuário local em uma caixa de correio baseada em nuvem, o usuário deve ter uma licença do Microsoft Teams e uma licença de plano do Exchange Online no Office 365 (ou Microsoft 365) atribuída.

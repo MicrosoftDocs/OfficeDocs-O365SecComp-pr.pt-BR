@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade & segurança para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756873"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820494"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade & segurança
 
@@ -329,6 +329,7 @@ A tabela a seguir descreve as atividades de arquivo e de página no SharePoint O
 |Arquivo modificado  <br/> |FileModified  <br/> |A conta de usuário ou sistema modifica o conteúdo ou as propriedades de um documento em um site.  <br/> |
 |(nenhum)  <br/> |FileModifiedExtended  <br/> |Isso está relacionado à atividade "arquivo modificado" (filemodified). Um evento FileModifiedExtended é registrado quando a mesma pessoa modifica continuamente um arquivo por um período estendido (até 3 horas). O objetivo de registrar eventos do FileModifiedExtended é reduzir o número de eventos filemodified que são registrados quando um arquivo é modificado continuamente. Isso ajuda a reduzir o ruído de vários registros filemodified para o que é essencialmente a mesma atividade do usuário e permite que você se concentre no evento inicial (e mais importante) filemodified.  <br/> |
 |Arquivo movido  <br/> |FileMoved  <br/> |O usuário move um documento de seu local atual em um site para um novo local.  <br/> |
+|(nenhum)  <br/> |FilePreviewed  <br/> |O usuário visualiza arquivos em um site do SharePoint ou do OneDrive for Business. Esses eventos normalmente ocorrem em altos volumes baseados em uma única atividade, como a visualização de uma galeria de imagens.  <br/> |
 |Reciclagem de todas as versões secundárias do arquivo  <br/> |FileVersionsAllMinorsRecycled  <br/> |O usuário exclui todas as versões secundárias do histórico de versões de um arquivo. As versões excluídas são movidas para a lixeira do site.  <br/> |
 |Recicla todas as versões do arquivo  <br/> |FileVersionsAllRecycled  <br/> |O usuário exclui todas as versões do histórico de versões de um arquivo. As versões excluídas são movidas para a lixeira do site.  <br/> |
 |Versão reciclada do arquivo  <br/> |FileVersionRecycled  <br/> |O usuário exclui uma versão do histórico de versões de um arquivo. A versão excluída é movida para a lixeira do site.  <br/> |

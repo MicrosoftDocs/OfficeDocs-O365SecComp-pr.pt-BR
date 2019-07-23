@@ -3,53 +3,6 @@
 
 
 
-## <a name="week-of-june-10-2019"></a>Semana de 10 de junho de 2019
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 6/11/2019 | [Usar um exemplo de conector para arquivar dados do Facebook no Office 365 (versão prévia)](/Office365/SecurityCompliance/archive-facebook-data-with-sample-connector) | modificado |
-| 6/11/2019 | [Investigação e resposta automatizadas (AIR) com o Office 365](/Office365/SecurityCompliance/automated-investigation-response-office) | modificado |
-| 6/11/2019 | [Introdução à investigação e à resposta contra ameaças do Office 365](/Office365/SecurityCompliance/get-started-with-ti) | modificado |
-| 6/11/2019 | [Como as políticas e proteções são combinadas quando os emails são sinalizados em vermelho](/Office365/SecurityCompliance/how-policies-and-protections-are-combined) | modificado |
-| 6/11/2019 | [Busca por malware e outras ameaças no Microsoft 365](/Office365/SecurityCompliance/hunting) | modificado |
-| 6/11/2019 | [Integrar a proteção avançada contra ameaças do Office 365 com a proteção avançada contra ameaças do Microsoft defender](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | modificado |
-| 6/11/2019 | [Entender as últimas campanhas de ataque e técnicas com análise de ameaças](/Office365/SecurityCompliance/latest-attack-campaigns) | modificado |
-| 6/11/2019 | [Visão geral do novo centro de conformidade da Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | modificado |
-| 6/11/2019 | [Classificação de Segurança da Microsoft](/Office365/SecurityCompliance/microsoft-secure-score) | modificado |
-| 6/11/2019 | [A nova central de segurança do Microsoft 365 e o centro de conformidade da Microsoft 365 agora estão disponíveis em geral](/Office365/SecurityCompliance/microsoft-security-and-compliance) | modificado |
-| 6/11/2019 | [Monitoramento e relatórios de identidade no centro de segurança do Microsoft 365](/Office365/SecurityCompliance/monitor-and-report-identities) | modificado |
-| 6/11/2019 | [Monitoramento de aplicativos e relatórios no centro de segurança do Microsoft 365](/Office365/SecurityCompliance/monitor-apps) | modificado |
-| 6/11/2019 | [Monitoramento de dados e relatórios no centro de segurança do Microsoft 365](/Office365/SecurityCompliance/monitor-data) | modificado |
-| 6/11/2019 | [Monitoramento de dispositivos e relatórios no centro de segurança do Microsoft 365](/Office365/SecurityCompliance/monitor-devices) | modificado |
-| 6/11/2019 | [Monitorar e exibir relatórios no centro de segurança do Microsoft 365](/Office365/SecurityCompliance/monitoring-and-reporting) | modificado |
-| 6/11/2019 | [Investigação e resposta a ameaças do Office 365](/Office365/SecurityCompliance/office-365-ti) | modificado |
-| 6/11/2019 | [Visão geral da central de segurança do Microsoft 365](/Office365/SecurityCompliance/overview-security-center) | modificado |
-| 6/11/2019 | [Proteger o acesso de usuários e dispositivos](/Office365/SecurityCompliance/protect-access-to-data-and-services) | modificado |
-| 6/11/2019 | [Visão geral de rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) | modificado |
-| 6/11/2019 | [Integração do servidor SIEM com o Microsoft 365](/Office365/SecurityCompliance/siem-server-integration) | modificado |
-| 6/11/2019 | [Gerenciar a Criptografia de Mensagens do Office 365](/Office365/SecurityCompliance/manage-office-365-message-encryption) | modificado |
-| 6/11/2019 | [Definir uma data de expiração para email criptografado pela criptografia de mensagem avançada do Office 365](/Office365/SecurityCompliance/ome-advanced-expiration) | modificado |
-| 6/11/2019 | [Criptografia de mensagem do Office 365](/Office365/SecurityCompliance/ome) | modificado |
-| 6/11/2019 | [Políticas de alerta no centro de conformidade e segurança](/Office365/SecurityCompliance/alert-policies) | modificado |
-| 6/11/2019 | [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | modificado |
-| 6/11/2019 | [Pesquisar o log de auditoria no centro de conformidade & segurança](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
-| 6/11/2019 | [Configurar notificações de spam para o usuário final no EOP](/Office365/SecurityCompliance/configure-end-user-spam-notifications-in-eop) | modificado |
-| 6/11/2019 | [Configurar suas políticas de filtro de spam](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | modificado |
-| 6/11/2019 | [Como reduzir emails de spam no Office 365](/Office365/SecurityCompliance/reduce-spam-email) | modificado |
-| 6/11/2019 | [Remoção de um usuário do portal de Usuários Restritos após o envio de email de spam](/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam) | modificado |
-| 6/11/2019 | [Revogar emails criptografados pela criptografia de mensagem avançada do Office 365](/Office365/SecurityCompliance/revoke-ome-encrypted-mail) | modificado |
-| 6/11/2019 | [Visão geral do painel de segurança](/Office365/SecurityCompliance/security-dashboard) | modificado |
-| 6/11/2019 | [Usar o portal de remoção da lista para ser removido da lista de remetentes bloqueados do Office 365](/Office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis) | modificado |
-| 6/12/2019 | [Criar e gerenciar caixas de correio inativas no Office 365](/Office365/SecurityCompliance/create-and-manage-inactive-mailboxes) | modificado |
-| 6/13/2019 | [Solicitações de lockbox de cliente do Office 365](/Office365/SecurityCompliance/customer-lockbox-requests) | modificado |
-| 6/13/2019 | [Simulador de Ataque no Office 365](/Office365/SecurityCompliance/attack-simulator) | modificado |
-| 6/13/2019 | [Definir políticas de barreira de informações](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/13/2019 | [Visão geral das barreiras de informações](/Office365/SecurityCompliance/information-barriers) | modificado |
-| 6/14/2019 | [Enviar notificações por email e mostrar dicas para políticas de DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | modificado |
-| 6/14/2019 | [Procurar e excluir mensagens - Ajuda para administradores](/Office365/SecurityCompliance/search-for-and-delete-messagesadmin-help) | modificado |
-
-
 ## <a name="week-of-june-17-2019"></a>Semana de 17 de junho de 2019
 
 
@@ -367,3 +320,43 @@
 | 7/12/2019 | [Conceder aos usuários acesso ao centro de conformidade & segurança do Office 365](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modificado |
 | 7/12/2019 | [Visão geral da prevenção contra perda de dados](/Office365/SecurityCompliance/data-loss-prevention-policies) | modificado |
 | 7/12/2019 | [Prevenção de perda de dados e Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | modificado |
+
+
+## <a name="week-of-july-15-2019"></a>Semana de 15 de julho de 2019
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 7/16/2019 | [Pesquisando caixas de correio baseadas em nuvem para usuários locais no Office 365](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | modificado |
+| 7/16/2019 | [Pesquisar o log de auditoria no centro de conformidade & segurança](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
+| 7/16/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | modificado |
+| 7/16/2019 | [Usar a pesquisa de conteúdo no Office 365 para coleções direcionadas](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | modificado |
+| 7/17/2019 | [Visão geral de rótulos de retenção](/Office365/SecurityCompliance/labels) | modificado |
+| 7/17/2019 | [Resiliência de dados do SharePoint para o Office 365](/Office365/SecurityCompliance/office-365-sharepoint-data-resiliency) | modificado |
+| 7/17/2019 | [Visão geral de políticas de retenção](/Office365/SecurityCompliance/retention-policies) | modificado |
+| 7/17/2019 | Resiliência de dados do SharePoint para o Office 365 | removido |
+| 7/18/2019 | [Workshop do diretor de segurança de informações (CISO), módulo 3: identidade e gerenciamento de acesso](/Office365/SecurityCompliance/ciso-workshop-module-3) | modificado |
+| 7/18/2019 | [Workshop do diretor de segurança de informações (CISO), módulo 4a: estratégia de proteção contra ameaças](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificado |
+| 7/18/2019 | [Workshop do diretor de segurança de informações (CISO), módulo 4B: estratégia de proteção contra ameaças](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificado |
+| 7/18/2019 | [Workshop do diretor de segurança de informações (CISO), módulo 5: proteção de informações](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificado |
+| 7/18/2019 | [Gerente de conformidade da Microsoft e o RGPD](/Office365/SecurityCompliance/compliance-manager-and-the-gdpr) | modificado |
+| 7/18/2019 | [Visão geral do Gerenciador de conformidade da Microsoft](/Office365/SecurityCompliance/compliance-manager-overview) | modificado |
+| 7/18/2019 | [Metodologia de Pontuação de conformidade](/Office365/SecurityCompliance/compliance-score-methodology) | modificado |
+| 7/18/2019 | [Solicitações de lockbox de cliente do Office 365](/Office365/SecurityCompliance/customer-lockbox-requests) | modificado |
+| 7/18/2019 | [Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | modificado |
+| 7/18/2019 | [Resiliência de dados no Office 365](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | modificado |
+| 7/18/2019 | [Office 365 lidando com corrupção de dados](/Office365/SecurityCompliance/office-365-dealing-with-data-corruption) | modificado |
+| 7/18/2019 | [Office 365 defendendo serviços em nuvem contra ataques de negação de serviço](/Office365/SecurityCompliance/office-365-defending-cloud-services-against-dos-attacks) | modificado |
+| 7/18/2019 | [Resiliência de dados do Exchange do Office 365](/Office365/SecurityCompliance/office-365-exchange-data-resiliency) | modificado |
+| 7/18/2019 | [Exclusão de dados do Exchange Online do Office 365](/Office365/SecurityCompliance/office-365-exchange-online-data-deletion) | modificado |
+| 7/18/2019 | [Adicionar a marca da sua organização às mensagens criptografadas](/Office365/SecurityCompliance/add-your-organization-brand-to-encrypted-messages) | modificado |
+| 7/18/2019 | [Gerenciar isenções na descoberta eletrônica avançada](/Office365/SecurityCompliance/compliance20/managing-holds) | modificado |
+| 7/18/2019 | [Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
+| 7/18/2019 | [Criptografia no Office 365](/Office365/SecurityCompliance/encryption) | modificado |
+| 7/18/2019 | [RGPD para Servidor do Office Online e para o Servidor do Office Web Apps](/Office365/SecurityCompliance/gdpr-for-office-online-server) | modificado |
+| 7/18/2019 | [Conceder aos usuários acesso ao centro de conformidade & segurança do Office 365](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modificado |
+| 7/18/2019 | [Como funcionam os links seguros de ATP do Office 365](/Office365/SecurityCompliance/how-atp-safe-links-works) | modificado |
+| 7/18/2019 | [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | modificado |
+| 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | modificado |
+| 7/18/2019 | [Configurar novos recursos de Criptografia de Mensagens do Office 365](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | modificado |
+| 7/18/2019 | [Analisar conversas na descoberta eletrônica avançada](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | modificado |
