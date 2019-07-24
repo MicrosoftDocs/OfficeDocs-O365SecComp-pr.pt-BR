@@ -13,36 +13,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 86d858994f95176ea4d415405c4043f7e7c5308e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Importe dados que não sejam do Office 365 para uma análise definida em uma ocorrência de descoberta eletrônica avançada.
+ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155003"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840828"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Carregar dados que não sejam do Office 365 em um conjunto de revisão
 
-Nem todos os documentos que você pode precisar analisar com a descoberta eletrônica avançada do Office 365 residirão no Office 365. Com o recurso de importação de conteúdo não-Office 365 na descoberta eletrônica avançada, é possível carregar documentos que não residem no Office 365 em um conjunto de revisão para que seja analisado com a descoberta eletrônica avançada. Este procedimento mostra como trazer documentos não-Office 365 para a descoberta eletrônica avançada para análise.
+Nem todos os documentos que você precisa analisar na descoberta eletrônica avançada estão localizados no Office 365. Com o recurso de importação de dados não-Office 365 na descoberta eletrônica avançada, você pode carregar documentos que não estão localizados no Office 365 para um conjunto de revisão. Este artigo mostra como trazer documentos não-Office 365 para a descoberta eletrônica avançada para análise.
 
 >[!Note]
->A descoberta eletrônica avançada requer um Office 365 E3 com o complemento de conformidade avançada ou uma assinatura E5 para sua organização. Se você não tiver esse plano e quiser tentar a descoberta eletrônica avançada, poderá se inscrever para uma avaliação do Office 365 Enterprise e5.
+>A descoberta eletrônica avançada requer uma assinatura do Microsoft 365 ou do Office 365 E5 para sua organização ou uma assinatura E3 com a assinatura de complemento de conformidade avançada. Se você não tiver esse plano e quiser tentar a descoberta eletrônica avançada, poderá se inscrever para uma avaliação do Office 365 Enterprise e5.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-O uso do recurso de upload que não é do Office 365 conforme descrito neste artigo requer que você tenha o seguinte:
+O uso do recurso de upload que não é do Office 365 descrito neste artigo requer que você tenha o seguinte:
 
-- Uma assinatura do Office 365 ou do Microsoft 365 E5 ou uma assinatura E3 com a assinatura de complemento de conformidade avançada.
-
-- Todos os responsáveis cujo conteúdo que não seja do Office 365 será carregado deverá ter a licença E3 com uma licença de complemento de conformidade avançada ou ter uma licença e5.
+- Todos os responsáveis que você deseja associar o conteúdo não-Office 365 deve ser atribuído a uma licença E5 ou uma licença E3 com uma licença avançada de complemento de conformidade.
 
 - Uma ocorrência de descoberta eletrônica avançada existente.
 
-- Os responsáveis devem ser adicionados à ocorrência antes de você carregar os dados que não são do Office 365 associados a eles.
+- Os responsáveis devem ser adicionados ao caso antes que você possa carregar e associar os dados não-Office 365 a eles.
 
-- Todos os arquivos que serão carregados devem estar localizados em pastas, onde cada pasta é associada a um determinado local. Os nomes dessas pastas devem usar o seguinte formato de nomenclatura: *alias @ nome_do_domínio*. O *alias @ nome_do_domínio* deve ser o alias e o domínio do Office 365 do usuário. Você pode coletar todas as pastas *alias @* DomainName em uma pasta raiz. A pasta raiz pode conter apenas as pastas *alias @* DomainName; arquivos soltos não são permitidos na pasta raiz.
+- Dados não-Office 365 devem ser um tipo de arquivo com suporte da descoberta eletrônica avançada. Para saber mais, confira [tipos de arquivo com suporte na descoberta eletrônica avançada](supported-filetypes-ediscovery20.md).
 
-   Por exemplo, a estrutura de pastas dos dados não-Office 365 que você deseja carregar seria semelhante à seguinte:
+- Todos os arquivos carregados em um conjunto de revisão devem estar localizados em pastas, onde cada pasta é associada a um determinado local. Os nomes dessas pastas devem usar o seguinte formato de nomenclatura: *alias @ nome_do_domínio*. O *alias @ nome_do_domínio* deve ser o alias e o domínio do Office 365 do usuário. Você pode coletar todas as pastas *alias @* DomainName em uma pasta raiz. A pasta raiz só pode conter as pastas *alias @* DomainName. Não há suporte para arquivos soltos na pasta raiz.
+
+   A estrutura de pastas para os dados que não são do Office 365 que você deseja carregar seria semelhante ao exemplo a seguir:
 
    - c:\nonO365\abraham.mcmahon@contoso.com
    - c:\nonO365\jewell.gordon@contoso.com
@@ -52,39 +52,48 @@ O uso do recurso de upload que não é do Office 365 conforme descrito neste art
 
    ![Estrutura de pastas de carregamento de dados não-Office 365](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
-- Uma conta que seja um Gerenciador de descoberta eletrônica ou administrador de descoberta eletrônica
+- Uma conta atribuída ao grupo de função Gerenciador de descoberta eletrônica (e adicionada como administrador de descoberta eletrônica).
 
-- Ferramentas de armazenamento do Microsoft Azure instaladas em um computador que tem acesso à estrutura de pasta de conteúdo não-Office 365.
+- Ferramentas de armazenamento do Microsoft Azure instaladas em um computador que tem acesso à estrutura de pasta de conteúdo não-Office 365. Para instalar o AzCopy, confira [introdução ao AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Certifique-se de instalar o AzCopy no local padrão, que é **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**.
 
-- Instale o AzCopy, que pode ser feito aqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Carregar conteúdo que não seja do Office 365 na descoberta eletrônica avançada
 
-1. Como um gerente de descoberta eletrônica ou administrador de descoberta eletrônica, abra a descoberta eletrônica avançada e, em seguida, o caso em que os dados que não sejam do Office 365 serão carregados.  Clique na guia **conjuntos de revisão** e selecione o conjunto de revisão para o qual você deseja carregar os dados não-Office 365.  Se você ainda não criou um conjunto de revisão, é possível fazer isso agora.  Por fim, clique em **gerenciar o conjunto de revisão** e, em seguida, clique em **Exibir carregamentos** no bloco de dados * * não-Office 365.
+1. Como um gerente de descoberta eletrônica ou administrador de descoberta eletrônica, abra a descoberta eletrônica avançada e, em seguida, o caso em que os dados que não sejam do Office 365 serão carregados.  
 
-2. Clique no botão **carregar arquivos** para iniciar o assistente de importação de dados não-Office 365.
+2. Clique em revisar **conjuntos**e selecione o conjunto de revisão para carregar os dados que não são do Office 365.  Se você não tiver um conjunto de revisão, você pode criar um. 
+ 
+3. No conjunto de revisão, clique em **gerenciar o conjunto de revisão**e, em seguida, clique em **Exibir carregamentos** no bloco de **dados não-Office 365** .
+
+4. Clique em **carregar arquivos** para iniciar o assistente de importação de dados não-Office 365.
 
    ![Carregar arquivos](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. A primeira etapa no assistente simplesmente prepara um blob do Azure seguro para os arquivos a serem carregados.  Após a conclusão da preparação, clique no botão **próximo: carregar arquivos** .
+   A primeira etapa do assistente prepara um local de armazenamento do Azure seguro fornecido pela Microsoft para carregar os arquivos.  Quando a preparação estiver concluída, o botão **Avançar: carregar arquivos** se tornará ativo.
 
-   ![Não-Office 365 Import-Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Importação não-Office 365: preparar](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
-4. Na etapa **carregar arquivos** , especifique o **caminho para o local dos arquivos**, onde os dados não-Office 365 que você planeja importar estão localizados.  Definir o local correto garante que o comando AzCopy seja atualizado corretamente.
+5. Clique em **Avançar: carregar arquivos**.
 
-   > [!NOTE]
-   > Se você ainda não tiver instalado o AzCopy, poderá fazer isso daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+6. Na página **carregar arquivos** , faça o seguinte:
 
-5. Copie o comando predefinido clicando no link **copiar para a área de transferência** . Inicie um prompt de comando do Windows, Cole o comando e pressione Enter.  Os arquivos serão carregados para o armazenamento de blob do Azure seguro para a próxima etapa.
+   ![Importação não-Office 365: carregar arquivos](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   ![Arquivos não-Office 365 Import-upload](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   a. Na caixa **caminho para o local dos arquivos** , verifique ou digite o local da pasta raiz onde você armazenou os dados que não são do Office 365 que você deseja carregar. Por exemplo, para o local dos arquivos de exemplo mostrados na **seção antes de começar**, digite **%USERPROFILE\Downloads\nonO365**. Fornecer o local correto garante que o comando AzCopy exibido em caixa abaixo do caminho seja atualizado corretamente.
 
-   ![Importação de AzCopy não-Office 365](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   b. Clique em **copiar para área de transferência** para copiar o comando exibido na caixa. Inicie um prompt de comando do Windows, Cole o comando e pressione Enter.  Os arquivos serão carregados para o armazenamento de blob do Azure seguro para a próxima etapa.
+
+7. Inicie um prompt de comando do Windows, Cole o comando copiado na etapa anterior e pressione **Enter** para iniciar o comando AzCopy.  Depois de iniciar o comando, os arquivos que não são do Office 365 serão carregados no local de armazenamento do Azure que foi preparado na etapa 4.
+
+   ![Importação não-Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > Se o comando AzCopy fornecido falhar, consulte [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md)
 
-6. Por fim, volte para a conformidade do & de segurança e clique no botão **próximo: processar arquivos** .  Isso iniciará o processamento, a extração de texto e a indexação de arquivos carregados.  Você pode acompanhar o progresso do processamento aqui ou na guia **trabalhos** .  Depois de concluído, os novos arquivos estarão disponíveis no conjunto de revisão.  Quando o processamento estiver concluído, você poderá ignorar o assistente.
+8. Volte para o centro de conformidade & segurança e clique em **Avançar: processar arquivos** no assistente.  Isso inicia o processamento, extração de texto e indexação de arquivos que não são do Office 365 que foram carregados no local de armazenamento do Azure.  
 
-   ![Arquivos de processo de importação e não-Office 365](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+9. Acompanhe o progresso do processamento de arquivos que não são do Office 365 na página **arquivos de processo** ou na guia **trabalhos** , exibindo um trabalho chamado **adicionando dados que não sejam 365 do Office a um conjunto de revisão**.  Depois que o trabalho for concluído, os novos arquivos estarão disponíveis no conjunto de revisão.
 
+   ![Importação não-Office 365: processar arquivos](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+
+10. Depois que o processamento for concluído, você poderá fechar o assistente.
