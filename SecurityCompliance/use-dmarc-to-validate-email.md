@@ -6,19 +6,19 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Saiba como configurar a autenticação, o relatório e a conformidade de mensagens baseadas em domínio (DMARC) para validar as mensagens enviadas de sua organização do Office 365.
-ms.openlocfilehash: 997e90c7620b4b3ca14903da843475f4d724222a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 95d1220f065633d899d415800e7ad9c5e91e759f
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600377"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854745"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar emails no Office 365
 

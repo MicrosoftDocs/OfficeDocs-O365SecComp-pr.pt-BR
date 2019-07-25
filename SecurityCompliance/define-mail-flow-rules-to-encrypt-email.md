@@ -14,12 +14,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Os administradores podem aprender a criar regras de fluxo de emails (regras de transporte) para criptografar e descriptografar mensagens usando a criptografia de mensagem do Office 365.
-ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150643"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854685"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir regras de fluxo de e-mail para criptografar mensagens de e-mail no Office 365
 
@@ -47,7 +47,7 @@ Você pode definir regras de fluxo de email para acionar a criptografia de mensa
 
 2. Escolha o bloco **administrador** .
 
-3. No Centro de administração do Office 365, escolha **Centros de Administração** \> **Exchange**.
+3. No centro de administração do Microsoft 365, escolha central de **Administração** \> do **Exchange**.
 
 4. No Eat, vá para **regras** de **fluxo** \> de email e selecione **novo** ![novo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> ícone **criar uma nova regra**. Para obter mais informações sobre como usar o Eat, consulte [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -79,7 +79,7 @@ Você pode definir regras de fluxo de email para acionar a criptografia de mensa
 
 2. Escolha o bloco **administrador** .
 
-3. No Centro de administração do Office 365, escolha **Centros de Administração** \> **Exchange**.
+3. No centro de administração do Microsoft 365, escolha central de **Administração** \> do **Exchange**.
 
 4. No EAC, vá para **Fluxo de emails** \> **Regras**.
 
@@ -105,7 +105,7 @@ Se você ainda não tiver movido sua organização do Office 365 para os novos r
 
 2. Escolha o bloco **administrador** .
 
-3. No Centro de administração do Office 365, escolha **Centros de Administração** \> **Exchange**.
+3. No centro de administração do Microsoft 365, escolha central de **Administração** \> do **Exchange**.
 
 4. No Eat, vá para **regras** de **fluxo** \> de email e selecione **novo** ![novo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> ícone **criar uma nova regra**. Para obter mais informações sobre como usar o Eat, consulte [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -163,7 +163,7 @@ Quando os usuários de email enviam mensagens criptografadas, os destinatários 
 
 2. Escolha o bloco **administrador** .
 
-3. No Centro de administração do Office 365, escolha **Centros de Administração** \> **Exchange**.
+3. No centro de administração do Microsoft 365, escolha central de **Administração** \> do **Exchange**.
 
 4. No Eat, vá para **regras** de **fluxo** \> de email e selecione **novo** ![novo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> ícone **criar uma nova regra**. Para obter mais informações sobre como usar o Eat, consulte [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

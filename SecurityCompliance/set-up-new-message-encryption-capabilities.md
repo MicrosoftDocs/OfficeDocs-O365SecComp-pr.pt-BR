@@ -7,7 +7,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Novos recursos de criptografia de mensagens do Office 365 criados sobre a proteção de informações do Azure, sua organização pode usar comunicação de email protegido com pessoas dentro e fora da sua organização. Os novos recursos do OME funcionam com outras organizações do Office 365, Outlook.com, Gmail e outros serviços de email.
-ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156503"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854795"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurar novos recursos de Criptografia de Mensagens do Office 365
 
@@ -53,7 +53,7 @@ Para obter mais informações, consulte:
 
 Se você desabilitou o Azure RMS, ou se ele não foi ativado automaticamente por algum motivo, você pode ativá-lo manualmente no:
 
-- **Centro de administração do office 365**: Confira [como ativar o Azure Rights Management no centro de administração do Office 365](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) para obter instruções.
+- **Centro de administração do Microsoft 365**: Confira [como ativar o Azure Rights Management no centro de administração](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) para obter instruções.
 - **Portal do Azure**: Confira [como ativar o Azure Rights Management no portal do Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) para obter instruções.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar o gerenciamento de sua chave do locatário de proteção de informações do Azure
@@ -125,8 +125,8 @@ Para obter etapas sobre como criar regras de fluxo de email para o OME, consulte
 
 Para atualizar as regras existentes para usar os novos recursos do OME:
 
-1. No centro de administração do Office 365, acesse **centros de administração _GT_ Exchange**.
-2. No centro de administração do Exchange, acesse **regras de > de fluxo**de emails.
+1. No centro de administração do Microsoft 365, acesse **centros de administração > Exchange**.
+2. No centro de administração do Exchange, acesse **> regras de fluxo**de emails.
 3. Para cada regra, em **faça o seguinte**:
     - Selecione **Modificar a segurança da mensagem**.
     - Selecione **aplicar a criptografia de mensagem do Office 365 e proteção de direitos**.

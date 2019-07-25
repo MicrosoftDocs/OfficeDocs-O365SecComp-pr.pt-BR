@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a ferramenta de pesquisa de conteúdo no centro de conformidade do Office 365 ou Microsoft 365 para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar as consultas de pesquisa de palavra-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você pode visualizar e exportar os resultados da pesquisa. A pesquisa de conteúdo também é uma ferramenta eficaz para pesquisar conteúdo relacionado a uma solicitação de entidades de dados do RGPD.
-ms.openlocfilehash: 76c3ddbbd6cd7432a06506be62c63fbfa0291b46
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 12065a744b287bea5e2b9fc07e7fe8023d40bb5f
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587809"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854725"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de conteúdo no Office 365
 
