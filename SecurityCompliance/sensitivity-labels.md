@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor configurações de proteção, como criptografia ou marcas d'água em conteúdo rotulado.
-ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199838"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840883"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -267,8 +267,8 @@ Para saber mais sobre o SDK da Proteção de Informações da Microsoft, consult
 
 ## <a name="permissions"></a>Permissões
 
-Os membros da equipe de conformidade que criarão rótulos de confidencialidade precisam de permissões para o Centro de Conformidade e Segurança. Por padrão, o administrador de locatários terá acesso a este local e poderá fornecer acesso a outras pessoas e aos responsáveis pela conformidade ao Centro de Conformidade e Segurança, sem lhes dar todas as permissões de um administrador de locatários. Para fazer isso, recomendamos que você acesse a página **Permissões** do Centro de Conformidade e Segurança, edite o grupo de função **Administrador de Conformidade** e adicione membros a esse grupo de função.
+Os membros da sua equipe de conformidade que forem criar rótulos de confidencialidade precisam de permissões para o Centro de conformidade do Microsoft 365, o Centro de segurança do Microsoft 365 ou o Centro de Conformidade e Segurança do Office 365. Por padrão, seu administrador de locatários terá acesso a esses centros de administração e poderá fornecer acesso aos diretores de conformidade e a outras pessoas sem fornecer a eles todas as permissões de um administrador de locatários. Para isso, recomenda-se o acesso à página **Permissões** de um desses centros de administração e, em seguida, a adição de membros grupo de funções **Administrador de Conformidade** ou **Administrador de Segurança**.
 
-Para saber mais, consulte [Fornecer aos usuários acesso ao Centro de Conformidade e Segurança do Office 365](grant-access-to-the-security-and-compliance-center.md).
+Para obter mais informações, consulte [Fornecer aos usuários acesso ao Centro de Conformidade e Segurança do Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Essas permissões só serão necessárias para criar e aplicar rótulos. A imposição da política não exige acesso ao conteúdo.
