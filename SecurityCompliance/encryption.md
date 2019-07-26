@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Com o Office 365, seu conteúdo é criptografado em repouso e em trânsito, usando a criptografia, protocolos e tecnologias mais fortes disponíveis. Obtenha uma visão geral da criptografia no Office 365.
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613639"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902473"
 ---
 # <a name="encryption-in-office-365"></a>Criptografia no Office 365
 
-A criptografia é uma parte importante das estratégias de proteção de arquivos e proteção de informações. Leia este artigo para obter uma visão geral da criptografia usada para todas as versões do Office 365 e obter ajuda com tarefas de criptografia, desde configurar a criptografia para sua organização para proteger com senha os documentos do Office.
+A criptografia é uma parte importante da estratégia de proteção de arquivos e proteção de informações. Leia este artigo para obter uma visão geral da criptografia usada para todas as versões do Office 365 e obter ajuda com tarefas de criptografia, desde configurar a criptografia para sua organização para proteger com senha os documentos do Office.
   
 - Se você estiver procurando informações sobre certificados e tecnologias como TLS, consulte [Technical Reference Details about Encryption in Office 365](technical-reference-details-about-encryption.md).
 
@@ -61,7 +61,7 @@ Confira os seguintes recursos para saber mais:
   
 - [O que é o Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Ativar o Rights Management no Centro de administração do Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Ativar o gerenciamento de direitos no centro de administração](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ Confira os seguintes recursos para saber mais:
 |Configurar a criptografia para minha organização  <br/> |[Configure a criptografia no Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Exibir detalhes sobre certificados, tecnologias e pacotes de criptografia TLS no Office 365  <br/> |[Detalhes técnicos sobre a criptografia no Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Trabalhar com mensagens criptografadas em um dispositivo móvel  <br/> |[Exibir mensagens criptografadas no seu dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Exibir mensagens criptografadas no seu iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Criptografar um documento usando a proteção por senha  <br/><br/>  No momento, a proteção por senha não é suportada no Office Online. Use versões de área de trabalho do Word, Excel e PowerPoint para proteção por senha.           |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção **Adicionar proteção** e, em seguida, confira **criptografar com senha** )  <br/> |
+|Criptografar um documento usando a proteção por senha  <br/><br/>  No momento, a proteção por senha não é suportada no Office em um navegador. Use versões de área de trabalho do Word, Excel e PowerPoint para proteção por senha.           |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção **Adicionar proteção** e, em seguida, confira **criptografar com senha** )  <br/> |
 |Remover a criptografia de um documento  <br/> |[Adicionar ou remover proteção em seu documento, pasta de trabalho ou apresentação](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Escolha uma seção **remover proteção** e, em seguida, consulte **remover criptografia de senha** )  <br/> |
 
 ## <a name="related-topics"></a>Tópicos relacionados
