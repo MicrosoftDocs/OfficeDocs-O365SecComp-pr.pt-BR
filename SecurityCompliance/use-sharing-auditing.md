@@ -14,62 +14,77 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento está sendo usado em sua organização. '
-ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para identificar recursos compartilhados com usuários fora da sua organização. '
+ms.openlocfilehash: 8996d404e2dbeaba01952c33a8699ca2f151ad5d
+ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435231"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35911771"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 
-O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business e é amplamente usado nas organizações do Office 365. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento está sendo usado em sua organização. 
+O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business e é amplamente usado nas organizações do Office 365. Os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para determinar como o compartilhamento é usado em sua organização. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>O esquema de compartilhamento do SharePoint
 
-Eventos de compartilhamento (exceto o compartilhamento de política e eventos de link de compartilhamento) são diferentes dos eventos relacionados a arquivos e pastas de uma maneira principal: um usuário está executando uma ação que tem algum efeito sobre outro usuário. Por exemplo, o usuário A fornece ao usuário B acesso a um arquivo. Neste exemplo, o usuário A é o *usuário* que está agindo e o usuário B é o *usuário de destino*. No esquema de arquivos do SharePoint, a ação do usuário que está agindo só afeta o próprio arquivo. Quando o usuário A abre um arquivo, as únicas informações necessárias no **** evento fileaccessed são o usuário que está agindo. Para resolver essa diferença, há um esquema separado, chamado esquema de *compartilhamento do SharePoint*, que captura mais informações sobre o compartilhamento de eventos. Isso garante que os administradores tenham mais informações sobre quem compartilhou um recurso e o usuário com o qual o recurso foi compartilhado. 
+O compartilhamento de eventos (não incluindo eventos relacionados à política de compartilhamento e links de compartilhamento) são diferentes dos eventos relacionados a arquivos e pastas de uma maneira principal: um usuário está executando uma ação que tem efeito em outro usuário. Por exemplo, quando um usuário de recurso A dá acesso a um arquivo para o usuário B. Neste exemplo, o usuário A é o *usuário* que está agindo e o usuário B é o *usuário de destino*. No esquema de arquivos do SharePoint, a ação do usuário que está agindo só afeta o próprio arquivo. Quando o usuário A abre um arquivo, as únicas informações necessárias no **** evento fileaccessed são o usuário que está agindo. Para resolver essa diferença, há um esquema separado, chamado esquema de *compartilhamento do SharePoint*, que captura mais informações sobre o compartilhamento de eventos. Isso garante que os administradores tenham visibilidade de quem compartilhou um recurso e do usuário com o qual o recurso foi compartilhado. 
   
-O esquema de compartilhamento fornece dois campos adicionais no log de auditoria relacionado aos eventos de compartilhamento: 
+O esquema de compartilhamento fornece dois campos adicionais em um registro de auditoria relacionado aos eventos de compartilhamento: 
   
-- **TargetUserOrGroupName** – armazena o UPN ou o nome do usuário ou grupo de destino com o qual um recurso foi compartilhado (usuário B no exemplo anterior). 
-    
-- **TargetUserOrGroupType** – identifica se o usuário ou grupo de destino é um membro, convidado, grupo ou parceiro. 
-    
+- **TargetUserOrGroupType:** Identifica se o usuário ou grupo de destino é membro, convidado, grupo do SharePoint, grupo de segurança ou parceiro.
+
+- **TargetUserOrGroupName:** Armazena o UPN ou o nome do usuário ou grupo de destino com o qual um recurso foi compartilhado (usuário B no exemplo anterior). 
+
 Esses dois campos, além de outras propriedades do esquema de log de auditoria do Office 365, como User, Operation e Date, podem informar a história completa sobre *qual* usuário compartilhou *o* recurso com *quem* e *quando*. 
   
-Há outra propriedade de esquema que é importante para o texto de compartilhamento. A propriedade **EVENTDATA** armazena informações adicionais sobre o compartilhamento de eventos. Por exemplo, quando um usuário compartilha um site com outro usuário, isso é feito adicionando-se o usuário de destino a um grupo do SharePoint. A propriedade **EVENTDATA** captura essas informações adicionais para fornecer contexto para administradores. 
+Há outra propriedade de esquema que é importante para o texto de compartilhamento. Quando você exporta os resultados da pesquisa de log de auditoria, a coluna **AuditData** no arquivo CSV exportado armazena informações sobre o compartilhamento de eventos. Por exemplo, quando um usuário compartilha um site com outro usuário, isso é feito adicionando-se o usuário de destino a um grupo do SharePoint. A coluna **AuditData** captura essas informações para fornecer contexto para administradores. Consulte a [etapa 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) para obter instruções sobre como analisar as informações na coluna **AuditData** .
 
-## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>O modelo de compartilhamento do SharePoint e eventos de compartilhamento
+## <a name="sharepoint-sharing-events"></a>Eventos de compartilhamento do SharePoint
 
-O compartilhamento é definido por três eventos separados ****: sharingset, **SharingInvitationCreated**e **SharingInvitaitonAccepted**. Este é o fluxo de trabalho para como o compartilhamento de eventos é registrado no log de auditoria do Office 365. 
+O compartilhamento é definido pelo quando um usuário (o usuário *agindo* ) deseja compartilhar um recurso com outro usuário (o usuário de *destino* ). Os registros de auditoria relacionados ao compartilhamento de um recurso com um usuário externo (um usuário que está fora da sua organização e não têm uma conta de convidado no Azure Active Directory da sua organização) são identificados pelos seguintes eventos, que são registrados no Office 365 log de auditoria:
+
+- **SharingInvitationCreated:** Um usuário da sua organização tentou compartilhar um recurso (provavelmente um site) com um usuário externo. Isso resulta em um convite de compartilhamento externo enviado para o usuário de destino. Nenhum acesso ao recurso é concedido neste ponto.
+
+- **SharingInvitationAccepted:** O usuário externo aceitou o convite de compartilhamento enviado pelo usuário que está agindo e agora tem acesso ao recurso.
+
+- **AnonymousLinkCreated:** Um link anônimo (também chamado de link "qualquer pessoa") é criado para um recurso. Como um link anônimo pode ser criado e copiado, é razoável supor que qualquer documento que tenha um link anônimo tenha sido compartilhado com um usuário de destino.
+
+- **AnonymousLinkUsed:** Como o nome indica, esse evento é registrado quando um link anônimo é usado para acessar um recurso. 
+
+- **SecureLinkCreated:** Um usuário criou um "link de pessoas específico" para compartilhar um recurso com uma pessoa específica. Este usuário de destino pode ser alguém externo à sua organização.
+
+- **AddedToSecureLink:** Um usuário foi adicionado a um link de pessoas específico. Este usuário de destino pode ser alguém externo à sua organização.
+
+## <a name="sharing-auditing-work-flow"></a>Fluxo de trabalho de auditoria de compartilhamento
   
-![Fluxograma de como o compartilhamento de auditoria funciona](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
+Quando um usuário (o usuário agindo) deseja compartilhar um recurso com outro usuário (o usuário de destino), o SharePoint (ou o OneDrive for Business) primeiro verifica se o endereço de email do usuário de destino já está associado a uma conta de usuário no diretório da organização. Se o usuário de destino estiver no diretório (e tiver uma conta de usuário convidado correspondente), o SharePoint fará o seguinte:
   
-Quando um usuário (o usuário agindo) deseja compartilhar um recurso com outro usuário (o usuário de destino), o SharePoint (ou o OneDrive for Business) primeiro verifica se o endereço de email do usuário de destino já está associado a uma conta de usuário no diretório da organização. Se o usuário de destino estiver no diretório da organização, o SharePoint fará o seguinte:
-  
--  Atribui imediatamente as permissões de usuário de destino para acessar o recurso. 
+-  O atribui imediatamente as permissões de usuário de destino para acessar o recurso adicionando o usuário de destino ao grupo apropriado do SharePoint e registra um evento **AddedToGroup** . 
     
 - Envia uma notificação de compartilhamento para o endereço de email do usuário de destino.
     
-- Registra um **** evento sharingset. 
+- Registra um **** evento sharingset. Esse evento tem um nome amigável de "arquivo compartilhado, pasta ou site" em **atividades de compartilhamento e acesso de solicitação** no seletor de atividades da ferramenta de pesquisa de log de auditoria. Veja a captura de tela na [etapa 1](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file). 
     
- Se uma conta de usuário para o usuário de destino não estiver no diretório da organização, o SharePoint fará o seguinte: 
-  
-- Cria um convite de compartilhamento e o envia para o endereço de email do usuário de destino.
+Se uma conta de usuário para o usuário de destino não estiver no diretório, o SharePoint fará o seguinte: 
     
-- Registra um evento **SharingInvitationCreated** . 
-    
-    > [!NOTE]
-    > O evento **SharingInvitationCreated** é sempre associado ao compartilhamento de convidados ou externo quando o usuário de destino não tem acesso ao recurso que foi compartilhado. 
-  
-Quando o usuário de destino aceita o convite de compartilhamento que é enviado a eles (clicando no link no convite), o SharePoint registra um evento **SharingInvitationAccepted** e atribui as permissões de usuário de destino para acessar o recurso. Informações adicionais sobre o usuário de destino também são registradas, como a identidade do usuário para o qual o convite foi enviado e o usuário que aceitou o convite. Em alguns casos, esses usuários (ou endereços de email) podem ser diferentes. 
-  
+   - Registra um dos eventos a seguir com base em como o recurso é compartilhado:
+   
+      - **AnonymousLinkCreated**
+   
+      - **SecureLinkCreated**
+   
+      - **AddedToSecureLink** 
 
-  
+      - **SharingInvitationCreated** (esse evento é registrado somente quando o recurso compartilhado é um site)
+    
+   - Quando o usuário de destino aceita o convite de compartilhamento que é enviado a eles (clicando no link no convite), o SharePoint registra um evento **SharingInvitationAccepted** e atribui as permissões de usuário de destino para acessar o recurso. Se o usuário de destino for enviado um link anônimo, o evento **AnonymousLinkUsed** será registrado depois que o usuário de destino usar o link para acessar o recurso. Para links seguros, um **** evento fileaccessd é registrado quando um usuário externo usa o link para acessar o recurso.
+
+Informações adicionais sobre o usuário de destino também são registradas, como a identidade do usuário para o qual o convite se destina e o usuário que realmente aceita o convite. Em alguns casos, esses usuários (ou endereços de email) podem ser diferentes. 
+
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Como identificar recursos compartilhados com usuários externos
 
-Um requisito comum para administradores é criar uma lista de todos os recursos que foram compartilhados com usuários fora da organização. Usando a auditoria de compartilhamento no Office 365, os administradores agora podem gerar essa lista. Veja como.
+Um requisito comum para administradores é criar uma lista de todos os recursos que foram compartilhados com usuários fora da organização. Usando a auditoria de compartilhamento no Office 365, os administradores podem gerar essa lista. Veja como.
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Etapa 1: Pesquisar eventos de compartilhamento e exportar os resultados para um arquivo CSV
 
@@ -97,31 +112,39 @@ A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de c
     
 8. Clique em **salvar** \> **salvar como** e salve o arquivo CSV em uma pasta no computador local. 
 
-### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Etapa 2: filtrar o arquivo CSV para recursos compartilhados com usuários externos
+### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Etapa 2: usar o editor PowerQuery para formatar o log de auditoria exportado
 
-A próxima etapa é filtrar o CSV para os eventos **sharingset** e **SharingInvitationCreated** e exibir os eventos em que a propriedade **TargetUserOrGroupType** é **Guest**. Use a ferramenta Editor de consulta de alimentação no Excel para fazer isso. Para obter instruções detalhadas, consulte [Export, configure e View Audit Log Records](export-view-audit-log-records.md). 
+A próxima etapa é usar o recurso transformação JSON no editor do Power Query no Excel para dividir cada propriedade na coluna **AuditData** (que consiste em um objeto JSON de várias propriedades) em sua própria coluna. Isso permite que você filtre colunas para exibir registros relacionados ao compartilhamento
 
-Após seguir as instruções no tópico anterior para preparar o arquivo CSV, faça o seguinte:
+Para obter instruções passo a passo, consulte "etapa 2: Formatar o log de auditoria exportado usando o editor de consulta de alimentação" em [exportar, configurar e exibir registros de log de auditoria](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+
+### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>Etapa 3: filtrar o arquivo CSV para recursos compartilhados com usuários externos
+
+A próxima etapa é filtrar o CSV para os diferentes eventos relacionados a compartilhamento que foram descritos anteriormente na seção [eventos de compartilhamento do SharePoint](#sharepoint-sharing-events) . Como alternativa, você pode filtrar a coluna **TargetUserOrGroupType** para exibir todos os registros onde o valor dessa propriedade é **Guest**. 
+
+Depois de seguir as instruções da etapa anterior para preparar o arquivo CSV usando o editor PowerQuery, faça o seguinte:
     
-1. Abra o arquivo CSV que você preparou com o editor de consulta de energia. 
+1. Abra o arquivo do Excel que você criou na etapa 2. 
 
 2. Na guia **página inicial** , clique em **classificar & filtro**e, em seguida, clique em **Filtrar**.
     
-3. Na lista suspensa **classificar & filtro** na coluna **operações** , desmarque todas as seleções e, em seguida, selecione **compartilhamento** e **SharingInvitationCreated**e clique em **OK**.
+3. Na lista suspensa **classificar & filtro** na coluna **operações** , desmarque todas as seleções e selecione um ou mais dos seguintes eventos relacionados a compartilhamento e clique em **OK**.
+ 
+   - **SharingInvitationCreated**
+   
+   - **AnonymousLinkCreated**
+   
+   - **SecureLinkCreated**
+   
+   - **AddedToSecureLink** 
     
-    O Excel exibe as linhas dos **** eventos sharingset e **SharingInvitationCreated** . 
+    O Excel exibe as linhas dos eventos que você selecionou.
     
 4. Vá até a coluna chamada **TargetUserOrGroupType** e selecione-a. 
     
 5. Na lista suspensa **classificar & filtro** , desmarque todas as seleções e, em seguida, selecione **TargetUserOrGroupType: convidado**e clique em **OK**.
     
-    Agora o Excel exibe as linhas dos eventos **SharingInvitationCreated** e **sharingset** e onde o usuário de destino está fora da sua organização, pois os usuários externos são identificados pelo valor **TargetUserOrGroupType: Guest**. 
-    
-A tabela a seguir mostra todos os usuários da organização que compartilharam recursos com um usuário convidado em um intervalo de datas especificado.
-  
-![Compartilhando eventos no log de auditoria do Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
-  
-Embora não esteja incluído na tabela anterior, a propriedade **ObjectID** identifica o recurso que foi compartilhado com o usuário de destino; por exemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+    Agora o Excel exibe as linhas para o compartilhamento de eventos e onde o usuário de destino está fora da sua organização, porque usuários externos são identificados pelo valor **TargetUserOrGroupType: Guest**. 
   
 > [!TIP]
-> Se você deseja identificar quando um usuário convidado foi realmente atribuído a permissões para acessar um recurso (em vez de apenas os recursos que foram compartilhados com eles), repita as etapas 2, 3 e 4 e filtre o **SharingInvitationAccepted** e o **sharingset** eventos na etapa 5. 
+> Para os registros de auditoria exibidos, a coluna **ObjectID** identifica o recurso que foi compartilhado com o usuário de destino; por exemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
