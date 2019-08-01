@@ -2,7 +2,7 @@
 title: Configurar políticas de links seguros de ATP do Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurar políticas de links seguros para proteger sua organização contra links mal-intencionados nos arquivos do Word, Excel, PowerPoint e Visio, bem como em mensagens de email.
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394336"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048073"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de links seguros de ATP do Office 365
 
@@ -97,9 +97,9 @@ Depois de revisar (ou editar) a política de links seguros padrão ATP que se ap
     
   - Na seção **Selecionar ação** , escolha **ativado**.
     
-  - Selecione **usar anexos seguros para examinar Conteúdo baixável**.
+  - Selecione **aplicar verificação de URL em tempo real para links suspeitos e links que apontam para os arquivos** se você quiser habilitar a URL acionamento para URLs suspeitas e de arquivo apontado (recomendado). E selecione aguardar até que a **verificação de URL seja concluída antes de entregar a mensagem** se você quiser que os usuários recebam mensagens depois que as URLs tiverem sido totalmente verificadas.
     
-  - Se essa opção estiver disponível, selecione **aplicar links seguros a mensagens enviadas dentro da organização**.
+  - Selecione **aplicar links seguros a mensagens enviadas dentro da organização** se quiser habilitar links seguros para mensagens enviadas entre usuários dentro da sua organização (recomendado).
     
   - Selecione não **permitir que o usuário clique na URL original**.
     

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: eb8c84d696a05f86246a512f1867d8efc98881a0
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151513"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048083"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy na descoberta eletrônica avançada
 
@@ -27,7 +27,11 @@ Ao carregar dados não-Office 365 ou documentos para correção de erros na desc
 
 ![Carregar arquivos que não são do Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
-Na maioria dos casos, o comando fornecido funcionará quando você executá-lo. No entanto, pode haver casos em que o comando exibido não seja executado com êxito. Veja alguns motivos possíveis.
+Normalmente, o comando fornecido funciona quando você o executa. No entanto, pode haver casos em que o comando exibido não seja executado com êxito. Veja alguns motivos possíveis.
+
+## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>A versão suportada do AzCopy não está instalada no computador local
+
+Neste momento, você deve usar o AzCopy v 8.1 para carregar dados que não sejam do Office 365 na descoberta eletrônica avançada. O comando AzCopy exibido na página **carregar arquivos** mostrados na captura de tela anterior retornará um erro se você não estiver usando o AzCopy v 8.1. Para instalar essa versão, consulte [transferir dados com o AzCopy v 8.1 no Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>O AzCopy não está instalado no computador local ou não está instalado no local padrão
 
@@ -35,10 +39,9 @@ Se o AzCopy não estiver instalado ou estiver instalado em um local diferente do
 
     The system cannot find the path specified.
 
-Se o AzCopy não estiver instalado no computador local, você poderá instalar a partir daqui (não se esqueça de instalá-lo no local [https://docs.microsoft.com/azure/storage/common/storage-use-azcopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)padrão):.
+Se o AzCopy não estiver instalado no computador local, você poderá instalar [](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)daqui. Certifique-se de instalá-lo no local padrão.
 
-
-Se o AzCopy estiver instalado, mas estiver instalado em um local diferente do local padrão, você poderá copiar o comando, colá-lo em um arquivo de texto e alterar o caminho para o local em que o AzCopy está realmente instalado. Por exemplo, se Azcopy estiver localizado em `%ProgramFiles%`, então você poderá alterar a primeira parte do comando de `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` para. `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` Após fazer essa alteração, copie-a do arquivo de texto e, em seguida, execute um prompt de comando.
+Se o AzCopy estiver instalado, mas estiver instalado em um local diferente do local padrão, você poderá copiar o comando, colá-lo em um arquivo de texto e alterar o caminho para o local onde o AzCopy está instalado. Por exemplo, se Azcopy estiver localizado em `%ProgramFiles%`, então você poderá alterar a primeira parte do comando de `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` para. `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` Após fazer essa alteração, copie-a do arquivo de texto e, em seguida, execute um prompt de comando.
 
 > [!TIP]
 > Se o AzCopy estiver instalado em um local diferente do local de instalação padrão, considere desinstalá-lo e, em seguida, instale-o novamente no local padrão. Isso ajudará a evitar esse problema no futuro.

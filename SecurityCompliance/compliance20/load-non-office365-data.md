@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importe dados que não sejam do Office 365 para uma análise definida em uma ocorrência de descoberta eletrônica avançada.
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840828"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048103"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Carregar dados que não sejam do Office 365 em um conjunto de revisão
 
@@ -40,7 +40,7 @@ O uso do recurso de upload que não é do Office 365 descrito neste artigo reque
 
 - Dados não-Office 365 devem ser um tipo de arquivo com suporte da descoberta eletrônica avançada. Para saber mais, confira [tipos de arquivo com suporte na descoberta eletrônica avançada](supported-filetypes-ediscovery20.md).
 
-- Todos os arquivos carregados em um conjunto de revisão devem estar localizados em pastas, onde cada pasta é associada a um determinado local. Os nomes dessas pastas devem usar o seguinte formato de nomenclatura: *alias @ nome_do_domínio*. O *alias @ nome_do_domínio* deve ser o alias e o domínio do Office 365 do usuário. Você pode coletar todas as pastas *alias @* DomainName em uma pasta raiz. A pasta raiz só pode conter as pastas *alias @* DomainName. Não há suporte para arquivos soltos na pasta raiz.
+- Todos os arquivos carregados em um conjunto de revisão devem estar localizados em pastas, onde cada pasta é associada a um determinado local. Os nomes dessas pastas devem usar o seguinte formato de nomenclatura: *alias @ nome_do_domínio*. O alias @ nome_do_domínio deve ser o alias e o domínio do Office 365 do usuário. Você pode coletar todas as pastas alias @ DomainName em uma pasta raiz. A pasta raiz só pode conter as pastas alias @ DomainName. Não há suporte para arquivos soltos na pasta raiz.
 
    A estrutura de pastas para os dados que não são do Office 365 que você deseja carregar seria semelhante ao exemplo a seguir:
 
@@ -54,7 +54,7 @@ O uso do recurso de upload que não é do Office 365 descrito neste artigo reque
 
 - Uma conta atribuída ao grupo de função Gerenciador de descoberta eletrônica (e adicionada como administrador de descoberta eletrônica).
 
-- Ferramentas de armazenamento do Microsoft Azure instaladas em um computador que tem acesso à estrutura de pasta de conteúdo não-Office 365. Para instalar o AzCopy, confira [introdução ao AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Certifique-se de instalar o AzCopy no local padrão, que é **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**.
+- A ferramenta AzCopy v 8.1 instalada em um computador que tem acesso à estrutura de pastas de conteúdo não-Office 365. Para instalar o AzCopy, confira [transferir dados com o AzCopy v 8.1 no Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Certifique-se de instalar o AzCopy no local padrão, que é **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**. Você deve usar o AzCopy v 8.1. Outras versões do AzCopy podem não funcionar ao carregar dados que não sejam do Office 365 na descoberta eletrônica avançada.
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Carregar conteúdo que não seja do Office 365 na descoberta eletrônica avançada
@@ -81,14 +81,14 @@ O uso do recurso de upload que não é do Office 365 descrito neste artigo reque
 
    a. Na caixa **caminho para o local dos arquivos** , verifique ou digite o local da pasta raiz onde você armazenou os dados que não são do Office 365 que você deseja carregar. Por exemplo, para o local dos arquivos de exemplo mostrados na **seção antes de começar**, digite **%USERPROFILE\Downloads\nonO365**. Fornecer o local correto garante que o comando AzCopy exibido em caixa abaixo do caminho seja atualizado corretamente.
 
-   b. Clique em **copiar para área de transferência** para copiar o comando exibido na caixa. Inicie um prompt de comando do Windows, Cole o comando e pressione Enter.  Os arquivos serão carregados para o armazenamento de blob do Azure seguro para a próxima etapa.
+   b. Clique em **copiar para área de transferência** para copiar o comando exibido na caixa.
 
 7. Inicie um prompt de comando do Windows, Cole o comando copiado na etapa anterior e pressione **Enter** para iniciar o comando AzCopy.  Depois de iniciar o comando, os arquivos que não são do Office 365 serão carregados no local de armazenamento do Azure que foi preparado na etapa 4.
 
    ![Importação não-Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > Se o comando AzCopy fornecido falhar, consulte [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md)
+   > Conforme mencionado anteriormente, você deve usar o AzCopy v 8.1 para usar com êxito o comando fornecido na página **carregar arquivos** . Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md).
 
 8. Volte para o centro de conformidade & segurança e clique em **Avançar: processar arquivos** no assistente.  Isso inicia o processamento, extração de texto e indexação de arquivos que não são do Office 365 que foram carregados no local de armazenamento do Azure.  
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Veja detalhes técnicos sobre o encyption no Office 365.
-ms.openlocfilehash: 84416c67eb646c757da93fc9e4029c08efaa70a2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0ae26aa6a534f0de0923f869acb94d7ee8529f31
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158223"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048233"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Detalhes de referências técnicas sobre a criptografia no Office 365
 
@@ -57,7 +57,11 @@ O TLS e o SSL, que veio antes do TLS, são protocolos de criptografia que proteg
 
 Desde 31 de outubro de 2018, o Office 365 não oferece mais suporte a TLS 1,0 e 1,1. Isso significa que a Microsoft não corrigirá novos problemas encontrados em clientes, dispositivos ou serviços que se conectam ao Office 365 usando TLS 1,0 e 1,1.
 
-Observação isso não significa que o Office 365 bloqueará as conexões TLS 1,0 e 1,1. Não há nenhuma data oficial para desabilitar ou remover o TLS 1,0 e 1,1 no serviço TLS para conexões do cliente. A data de substituição eventual será determinada pela telemetria do cliente e ainda não é conhecida. Após a tomada de uma decisão, haverá um anúncio de seis meses antes, a menos que se tornemos informado de um comprometimento conhecido, e, nesse caso, podemos ter que agir em menos de seis meses para proteger os clientes que usam os serviços.
+Observação isso não significa que o Office 365 bloqueará as conexões TLS 1,0 e 1,1. 
+
+O TLS 1,0 e o TLS 1,1 serão oficialmente preteridos nas datas abaixo:
+- 1º de junho de 2020 para clientes nos ambientes de todo o mundo e GCC.
+- 15 de janeiro de 2020 para clientes nos ambientes GCC High e DoD soberana. 
 
 Você deve certificar-se de que todas as combinações de servidor de cliente e navegador de servidor usem TLS 1,2 (ou uma versão posterior) para manter a conexão com os serviços do Office 365. Talvez seja necessário atualizar determinadas combinações de servidor de cliente e de servidor. Para obter informações sobre como isso impacta, consulte [preparando-se para o uso obrigatório de TLS 1,2 no Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
   
