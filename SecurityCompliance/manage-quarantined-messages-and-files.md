@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, você pode exibir, liberar e relatar mensagens em quarentena falsas positivas no Office 365. Você pode configurar políticas para que o Office 365 Filtre mensagens e as envie para quarentena por vários motivos: porque elas foram identificadas como spam, em massa, phishing, malware ou porque corresponderam a uma regra de fluxo de emails. '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598797"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054713"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gerenciar arquivos e mensagens em quarentena como um administrador no Office 365
 
@@ -29,14 +29,14 @@ Como administrador, você pode exibir, liberar e excluir mensagens em quarentena
   
 Por padrão, o Office 365 envia mensagens de phishing e mensagens contendo malware diretamente para a quarentena. Outras mensagens filtradas são enviadas para a pasta lixo eletrônico dos usuários, a menos que você configure uma política para enviá-las à quarentena.
   
-Você deve ter permissões de administrador global (GA) no Office 365 ou administrador de segurança no centro de segurança e conformidade para trabalhar com mensagens em quarentena que foram enviadas para outros usuários e para trabalhar com arquivos em quarentena.
+Você deve ter permissões de administrador global (GA) no Office 365 ou ser um membro de um ou mais grupos de funções do centro de conformidade de & de segurança, para trabalhar com mensagens em quarentena ou arquivos em quarentena. Consulte [permissões no centro de conformidade & segurança do Office 365](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) para obter mais informações.
   
 > [!IMPORTANT]
 >Por padrão, as mensagens de spam, de massa e de phishing são mantidas em quarentena por 30 dias. As mensagens colocadas em quarentena porque corresponderam a uma regra de fluxo de emails são mantidas em quarentena por 7 dias. As mensagens de malware são mantidas em quarentena por 15 dias. Você pode personalizar o tempo de quarentena de spam em configurações antispam no centro de conformidade &amp; de segurança. Quando o Office 365 exclui uma mensagem da quarentena, não é possível obtê-la novamente. Se desejar, você pode alterar o período de retenção para mensagens em quarentena nas políticas de filtro antispam. Para obter mais informações, consulte [configuração do período de retenção de quarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) neste artigo. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Exibir as mensagens em quarentena da sua organização
 
-1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global em sua organização do Office 365, entre no Office 365 e [vá para o centro de segurança e conformidade](go-to-the-securitycompliance-center.md).
+1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global (ou funções apropriadas de segurança & central de conformidade) na sua organização do Office 365, entre no Office 365 e [vá para o centro de segurança e conformidade](go-to-the-securitycompliance-center.md).
     
 2. Na lista à esquerda, expanda **Gerenciamento de ameaças**, escolha **revisão**e, em seguida, escolha **quarentena**.
     
@@ -189,7 +189,7 @@ Você pode configurar por quanto tempo as mensagens e os arquivos permanecerão 
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>Para modificar o período de retenção de quarentena para a política de filtro de spam padrão no centro de segurança e conformidade
 
-1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global em sua organização do Office 365, entre no Office 365 e [vá para o centro de segurança e conformidade](go-to-the-securitycompliance-center.md).
+1. Usando uma conta corporativa ou de estudante que tenha privilégios de administrador global (ou funções apropriadas de segurança & central de conformidade) na sua organização do Office 365, entre no Office 365 e [vá para o centro de segurança e conformidade](go-to-the-securitycompliance-center.md).
     
 2. À esquerda, expanda **Gerenciamento de ameaças**, escolha **política**e, em seguida, escolha **anti-spam**. <br/>
     > [!TIP]

@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: A filtragem de spam de saída está sempre habilitada se você utilizar o serviço de envio de email de saída, protegendo assim as organizações que utilizam o serviço e seus destinatários desejados.
-ms.openlocfilehash: c3eb663d569e717597ff926896ed3daefb48186e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2bf2f8c7292bee4d1e89249bcec5c74a4b5d38c9
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600057"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054649"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar a política de spam de saída
 
@@ -29,6 +29,9 @@ O vídeo a seguir mostra como configurar a política de spam de saída:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
+> [!NOTE]
+> Para obter os melhores resultados de filtragem, o conteúdo do vídeo acima deve ser usado com uma configuração adequada e familiaridade com os [controles de spam de saída no Office 365](https://docs.microsoft.com/office365/securitycompliance/outbound-spam-controls).
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 <a name="sectionSection0"> </a>
 

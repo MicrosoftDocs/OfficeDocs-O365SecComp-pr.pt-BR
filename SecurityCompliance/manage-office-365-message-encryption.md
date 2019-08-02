@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Após concluir a configuração do Office 365 Message Encryption (OME), você pode personalizar a configuração de sua implantação de várias maneiras. Por exemplo, você pode configurar se deseja habilitar códigos de passagem única, exibir o botão proteger no Outlook na Web e muito mais. As tarefas deste artigo descrevem como.
-ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9b59e352131121978ae6a523cc07ea40196e8038
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852525"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054693"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gerenciar a Criptografia de Mensagens do Office 365
 
@@ -133,6 +133,9 @@ Para obter mais informações e para uma visão da experiência do cliente, cons
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
    ```
+> [!NOTE]
+
+> As políticas de caixa de correio individuais (OWA/ActiveSync) substituem essas configurações (ou seja, se-IRMEnabled estiver definida como false dentro da respectiva diretiva de caixa de correio do OWA ou da diretiva de caixa de correio do ActiveSync, essas configurações não serão aplicadas).
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Habilitar a descriptografia do lado do serviço de anexos de email para clientes de email de navegador da Web
 

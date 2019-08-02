@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: A definição de usuários de email é uma parte importante do gerenciamento do serviço Exchange Online Protection (EOP).
-ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599597"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054723"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gerenciar usuários de email no EOP
 
@@ -64,11 +64,9 @@ Obtenha as permissões necessárias e prepare-se para a sincronização de diret
     > [!IMPORTANT]
     > Após a conclusão do Assistente de Configuração da Ferramenta de Sincronização do Microsoft Azure Active Directory, a conta **MSOL_AD_SYNC** será criada em sua floresta do Active Directory. Esta conta é usada para ler e sincronizar suas informações do Active Directory local. Para que a sincronização de diretórios funcione corretamente, verifique se a porta TCP 443 em seu servidor de sincronização de diretórios local está aberta. 
   
-4. Ative usuários sincronizados, como descrito em [Ative os usuários sincronizados](http://go.microsoft.com/fwlink/p/?LinkId=308913).
+  4. Gerencie a sincronização de diretórios, como descrito em [Gerenciar a sincronização de diretórios](http://go.microsoft.com/fwlink/p/?LinkId=308915).
     
-5. Gerencie a sincronização de diretórios, como descrito em [Gerenciar a sincronização de diretórios](http://go.microsoft.com/fwlink/p/?LinkId=308915).
-    
-6. Verifique se o EOP está sincronizando corretamente. No EAC, vá para **Destinatários** \> **Contatos** e veja se a lista de usuários foi corretamente sincronizada com seu ambiente local. 
+  5. Verifique se o EOP está sincronizando corretamente. No EAC, vá para **Destinatários** \> **Contatos** e veja se a lista de usuários foi corretamente sincronizada com seu ambiente local. 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Usar o EAC para gerenciar usuários de email
 
