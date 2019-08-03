@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure as políticas de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151533"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168169"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
@@ -53,7 +53,7 @@ Siga estas etapas para configurar e usar a supervisão na sua organização do O
 
     Teste sua política de supervisão para garantir que ela funcione conforme desejado. É importante garantir que sua estratégia de conformidade esteja atendendo aos padrões.
 
-- **Etapa 6 (opcional)**: [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 ou o Outlook na Web (anteriormente conhecido como Outlook Web App) para examinar comunicações supervisionadas](#step-6-configure-outlook-for-reviewers-optional)
+- **Etapa 6 (opcional)**: [Configurar o Outlook para revisores que não desejam usar o painel de supervisão do Office 365 para analisar comunicações supervisionadas](#step-6-configure-outlook-for-reviewers-optional)
 
     Configure o Outlook para dar aos revisores o acesso à funcionalidade de supervisão no cliente do Outlook para que eles possam avaliar e categorizar cada item.
 
@@ -68,6 +68,8 @@ Use o gráfico a seguir para ajudá-lo a configurar grupos na sua organização 
 |Usuários supervisionados <br> Usuários não supervisionados | Grupos de distribuição <br> Grupos do Office 365 | Grupos dinâmicos de distribuição |
 | Revisores | Grupos de segurança habilitados para email  | Grupos de distribuição <br> Grupos dinâmicos de distribuição |
   
+Quando você seleciona um grupo do Office 365 para usuários supervisionados, a política monitora o conteúdo da caixa de correio compartilhada do Office 365 e os canais do Microsoft Teams associados ao grupo. Quando você seleciona uma lista de distribuição, a política monitora caixas de correio de usuários individuais.
+
 Para gerenciar usuários supervisionados em grandes organizações corporativas, talvez seja necessário monitorar todos os usuários em grupos grandes. Você pode usar o PowerShell para configurar um grupo de distribuição para uma política de supervisão global para o grupo atribuído. Isso permite monitorar milhares de usuários com uma única política e manter a política de supervisão atualizada à medida que novos funcionários ingressam em sua organização.
 
 1. Crie um [grupo de distribuição](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicado para sua política de supervisão global com as seguintes propriedades: Certifique-se de que esse grupo de distribuição não seja usado para outros fins ou outros serviços do Office 365.
@@ -143,7 +145,7 @@ Use um editor de texto (como o bloco de notas) para criar um arquivo que inclui 
 
 ### <a name="create-custom-sensitive-information-types"></a>Criar tipos de informações confidenciais personalizados
 
-1. Crie um novo tipo de informação confidencial e adicione seu dicionário personalizado no centro de conformidade do & de segurança do Office 365. Navegue até **classificações** \> de **tipos de informações confidenciais** e siga as etapas no **Assistente novo tipo de informação confidencial**. Aqui você irá:
+1. Crie um novo tipo de informação confidencial e adicione seu dicionário personalizado no centro de conformidade & segurança do Office 365. Navegue até **classificações** \> de **tipos de informações confidenciais** e siga as etapas no **Assistente novo tipo de informação confidencial**. Aqui você irá:
 
     - Definir um nome e uma descrição para o tipo de informações confidenciais
     - Definir os elementos de proximidade, nível de confiança e padrão primário
@@ -189,7 +191,7 @@ Os revisores que desejam usar o Outlook em vez do painel de supervisão no Offic
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Etapa 1: copiar o endereço da caixa de correio de supervisão
 
-Para configurar a revisão do Outlook para a área de trabalho do Outlook para a Web, você precisará do endereço da caixa de correio de supervisão criada como parte da configuração da política de supervisão.
+Para configurar a análise da área de trabalho do Outlook, você precisará do endereço da caixa de correio de supervisão criada como parte da configuração da política de supervisão.
   
 > [!NOTE]
 > Se outra pessoa criou a política, você precisará obter esse endereço deles para instalar o suplemento.
