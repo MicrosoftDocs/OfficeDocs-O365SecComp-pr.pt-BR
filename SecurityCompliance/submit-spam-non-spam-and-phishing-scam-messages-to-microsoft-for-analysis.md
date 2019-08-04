@@ -2,7 +2,7 @@
 title: Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Você e seus usuários podem enviar mensagens de spam falsas negativas e falsos positivos para a Microsoft para análise. '
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156453"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638470"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Enviar mensagens de spam, não spam e esquema de phishing à Microsoft para análise
 
@@ -27,6 +27,8 @@ Pode ser frustrante quando os usuários da sua organização recebem mensagens d
   
 > [!NOTE]
 > Devido ao alto volume de envios que recebemos, talvez não seja possível atender a todas as solicitações para análise. 
+
+Os administradores podem enviar emails, URLs e anexos para a Microsoft para análise. Consulte [envios de administradores no Office 365 ATP](admin-submission.md).
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Enviar mensagens de lixo eletrônico ou phishing que passaram pelos filtros de spam
 <a name="sectionSection0"> </a>

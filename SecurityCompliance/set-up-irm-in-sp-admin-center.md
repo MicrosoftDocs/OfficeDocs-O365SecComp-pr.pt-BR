@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Saiba como usar o IRM do SharePoint Online por meio do Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas e bibliotecas de documentos do SharePoint.
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756843"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792067"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ Após ativar o serviço de gerenciamento de direitos, entre no centro de adminis
   
 1. Entre no Office 365 como administrador global ou administrador do SharePoint.
     
-2. Selecione o ícone ![do inicializador de aplicativos o ícone do inicializador de aplicativos no Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) no canto superior esquerdo e escolha **administrador** para abrir o centro de administração do Office 365. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. Selecione o ícone do inicializador de aplicativos ![Ícone do inicializador de aplicativos do Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) no canto superior esquerdo e escolha **Administração** para abrir o Centro de administração do Office 365. (Se não vir o bloco Administração, você não tem permissões de administrador do Office 365 em sua organização). 
     
 3. No painel esquerdo, escolha **central** \> de administração **do SharePoint**.
     
@@ -51,7 +51,7 @@ Quando os proprietários de site habilitam o IRM para uma lista ou biblioteca, e
   
 Quando as pessoas baixam arquivos em uma lista ou biblioteca habilitada para IRM, os arquivos são criptografados para que apenas pessoas autorizadas possam exibi-los. Cada arquivo gerenciado por direitos também contém uma licença de publicação que impõe restrições às pessoas que exibem o arquivo. As restrições típicas incluem tornar um arquivo somente leitura, desabilitar a cópia de texto, impedir que as pessoas salvem uma cópia local e impedindo que as pessoas imprimam o arquivo. Os programas cliente que podem ler tipos de arquivo com suporte para IRM usam a licença de publicação dentro do arquivo gerenciado por direitos para impor essas restrições. É assim que um arquivo gerenciado por direitos mantém sua proteção mesmo depois de ser baixado. Para habilitar o IRM em uma lista ou biblioteca, confira [aplicar o gerenciamento de direitos de informação a uma lista ou biblioteca](apply-irm-to-a-list-or-library.md).
   
-Você não pode criar ou editar documentos em uma biblioteca habilitada para IRM usando o Office Online. Em vez disso, uma pessoa de cada vez pode baixar e editar arquivos criptografados por IRM. Use check-in e check-out para gerenciar ** a coautoria ou a criação de vários usuários. 
+Você não pode criar ou editar documentos em uma biblioteca habilitada para IRM usando o Office em um navegador. Em vez disso, uma pessoa de cada vez pode baixar e editar arquivos criptografados por IRM. Use check-in e check-out para gerenciar ** a coautoria ou a criação de vários usuários. 
   
 Ao baixar um arquivo PDF de uma biblioteca protegida por IRM, o Office 365 cria um arquivo PDF protegido. A extensão do arquivo não será alterada, mas o arquivo estará protegido. Para exibir este arquivo, você precisará do Azure Information Protection Viewer, o cliente completo de proteção de informações do Azure ou outro aplicativo que ofereça suporte à exibição de arquivos PDF protegidos. 
   

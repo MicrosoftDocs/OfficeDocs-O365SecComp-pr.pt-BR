@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Os usuários precisam receber permissões no centro de conformidade & segurança do Office 365 antes de poderem gerenciar qualquer um dos seus recursos de segurança ou conformidade.
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645116"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792007"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Conceder aos usuários acesso ao Centro de Conformidade e Segurança do Office 365
 
@@ -39,11 +39,11 @@ Para obter mais informações sobre as diferentes permissões que você pode dar
 
 - Permissão de acesso delegado (DAP) parceiros com permissões de administração em nome de (AOBO) não podem acessar o centro de conformidade & segurança.
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar o centro de administração do Office 365 para conceder a outro usuário acesso ao centro de conformidade & segurança
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar o centro de administração para conceder acesso a outro usuário ao centro de conformidade & segurança
 
 1. [Entre no Office 365 e vá para o centro de administração](https://go.microsoft.com/fwlink/p/?LinkId=525275).
 
-2. No centro de administração do Office 365, abra **centros de administração** e clique em **segurança & conformidade**.
+2. No centro de administração do Microsoft 365, abra **centros de administração** e clique em **segurança & conformidade**.
 
 3. No centro de conformidade & segurança, acesse **permissões**.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Entenda a resiliência de dados no Microsoft Office 365.
-ms.openlocfilehash: ef8f3f9599f187e26885cb8ff81559546cc49c50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90edfe1a7e2baac172fcd9b8cc36163b8130484b
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262853"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786676"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resiliência de dados no Office 365
 

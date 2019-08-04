@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2539a2bb7a5929330410db1f611ff9b8b1a7173
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155283"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786626"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gerente de conformidade da Microsoft (versão prévia)
 
@@ -107,7 +107,7 @@ Os [itens de ações](https://docs.microsoft.com/office365/securitycompliance/wo
 
 As pessoas da sua organização podem usar o Gerenciador de conformidade para analisar os controles gerenciados pelo cliente em todas as avaliações para as quais foram atribuídos. Quando um usuário entra no gerente de conformidade e abre o painel **itens de ação** , uma lista de itens de ação atribuídos a eles é exibida. Dependendo da função de gerente de conformidade atribuída ao usuário, eles podem fornecer detalhes de implementação ou teste, atualizar o status ou atribuir itens de ação.
 
-Os controles de certificação geralmente são implementados por uma pessoa e testados por outra. Por exemplo, depois que os itens de ação atribuídos inicialmente a uma pessoa para implementação são concluídos, os itens de ação são atribuídos à próxima pessoa para teste e carregamento de evidências. Qualquer usuário com permissões suficientes para as atribuições de controle pode atribuir e Reatribuir itens de ação. Isso permite o gerenciamento central de atribuições de controle e o roteamento descentralizado de itens de ação entre implementadores e testadores.
+Os controles de certificação geralmente são implementados por uma pessoa e testados por outra. Por exemplo, depois que os itens de ação atribuídos inicialmente a uma pessoa para implementação são concluídos, os itens de ação são atribuídos à próxima pessoa para testar e carregar evidências. Qualquer usuário com permissões suficientes para as atribuições de controle pode atribuir e Reatribuir itens de ação. Isso permite o gerenciamento central de atribuições de controle e o roteamento descentralizado de itens de ação entre implementadores e testadores.
 
 ## <a name="permissions"></a>Permissões
 
@@ -115,7 +115,7 @@ O Gerenciador de conformidade usa um [modelo de permissão](https://docs.microso
 
 Para alterar as permissões padrão e implementar um modelo de controle de acesso baseado em função totalmente, pelo menos um usuário deve ser adicionado a cada função de Gerenciador de conformidade. Após um usuário ser adicionado a uma função, as permissões para executar as ações atribuídas a essa função são removidas do conjunto padrão de permissões disponíveis para todos os usuários. Somente os usuários provisionados com a função poderão acessar o Gerenciador de conformidade e executar as ações permitidas por essa função.
 
-Por exemplo, se você adicionar um usuário à função para gerenciar avaliações, somente os membros dessa função poderão gerenciar avaliações. Se você não adicionar um usuário à função que permite que os usuários leiam os dados em avaliações, todos os usuários em sua organização poderão acessar o Gerenciador de conformidade e ler os dados em qualquer avaliação.
+Se você adicionar um usuário à função para gerenciar avaliações, somente os membros dessa função poderão gerenciar avaliações. Se você não adicionar um usuário à função que permite que os usuários leiam os dados em avaliações, todos os usuários em sua organização poderão acessar o Gerenciador de conformidade e ler os dados em qualquer avaliação.
   
 ## <a name="manage-evidence"></a>Gerenciar evidências
 

@@ -3,7 +3,7 @@ title: Remetente não verificado
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para impedir que mensagens de phishing acessem sua caixa de correio, o Outlook.com e o Outlook na Web verificam se o remetente é quem dizem eles e marcam mensagens suspeitas como lixo eletrônico.
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600257"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628504"
 ---
 # <a name="unverified-sender"></a>Remetente não verificado
+
+> [!NOTE] 
+> Essas atualizações estão sendo lançadas agora e talvez ainda não estejam disponíveis para todos os usuários.
 
 Para impedir que mensagens de phishing acessem sua caixa de correio, o Outlook.com e o Outlook na Web verificam se o remetente é quem dizem eles e marcam mensagens suspeitas como lixo eletrônico.
 
@@ -35,7 +38,7 @@ O Outlook.com e o Outlook na Web mostram indicadores quando o remetente de uma m
 
 Se você for um cliente do Office 365, poderá gerenciar esse recurso através do centro de conformidade & segurança. 
 
-- No centro de conformidade & segurança do Office 365, os administradores de locatários podem ativar ou desativar o recurso por meio da proteção contra falsificação na política de anti-phishing. Além disso, ele pode ser gerenciado por meio do cmdlet "Set-AntiPhishPolicy". Para obter mais detalhes, consulte proteção contra phishing no Office 365 e Set-AntiPhishPolicy.
+- No centro de conformidade & segurança do Office 365, os administradores globais ou de segurança podem ativar ou desativar o recurso, por meio da proteção antifalsificação na política de anti-phishing. Além disso, ele pode ser gerenciado por meio do cmdlet "Set-AntiPhishPolicy". Para obter mais detalhes, consulte [proteção contra phishing no Office 365](anti-phishing-protection.md) e [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
     ![Edição de remetentes não autenticados na interface gráfica.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

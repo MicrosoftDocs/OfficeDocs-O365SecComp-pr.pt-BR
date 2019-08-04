@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155253"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786636"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodologia de Pontuação de conformidade (prévia)
 
@@ -39,15 +39,15 @@ Itens de ação são mapeados para controles e quando um controle é mapeado par
   
 ### <a name="mandatory-or-discretionary-controls"></a>Controles obrigatórios ou discricionários
   
- Os **controles obrigatórios** são controles que não podem ser ignorados intencionalmente ou acidentalmente. Um exemplo de um controle obrigatório comum é uma política de senha gerenciada centralmente que define os requisitos de tamanho, complexidade e validade da senha. Os usuários devem cumprir esses requisitos para acessar o sistema.
+ Os **controles obrigatórios** são ações que não podem ser ignoradas intencionalmente ou acidentalmente. Um exemplo de um controle obrigatório comum é uma política de senha gerenciada centralmente que define os requisitos de tamanho, complexidade e validade da senha. Os usuários devem cumprir esses requisitos para acessar o sistema.
   
  Os **controles discricionários** dependem dos usuários para entender a política e agir de acordo. Por exemplo, uma política que exija que os usuários bloqueiem seu computador quando deixam de ser um controle discricionário, pois ele se baseia no usuário.
   
 ### <a name="preventative-detective-or-corrective-controls"></a>Controles de prevenção, detecção ou correção
   
- **Controles de prevenção** são controles que impedem riscos específicos. Por exemplo, a proteção de informações em repouso usando criptografia é um controle preventivo contra ataques, violações. A separação de direitos é um controle preventivo para gerenciar o conflito de interesses e para proteger contra fraudes.
+ Os **controles preventivos** são ações que impedem riscos específicos. Por exemplo, a proteção de informações em repouso usando criptografia é um controle preventivo contra ataques, violações. A separação de direitos é um controle preventivo para gerenciar o conflito de interesses e para proteger contra fraudes.
   
- Os **controles de detecção** são controles que monitoram ativamente os sistemas para identificar condições ou comportamentos irregulares que representam riscos ou que podem ser usados para detectar intrusões ou determinar se ocorreu uma violação. Auditoria de acesso do sistema e auditorias de ações administrativas privilegiadas são tipos de controles de monitoramento de detecção. Auditorias de conformidade normativa são um tipo de controle de detecção usado para encontrar problemas de processo.
+ Os **controles de detecção** são ações que monitoram ativamente os sistemas para identificar condições ou comportamentos irregulares que representam riscos ou que podem ser usados para detectar intrusões ou determinar se ocorreu uma violação. Auditoria de acesso do sistema e auditorias de ações administrativas privilegiadas são tipos de controles de monitoramento de detecção. Auditorias de conformidade normativa são um tipo de controle de detecção usado para encontrar problemas de processo.
   
 Os **controles corretivos** são controles que tentam manter os efeitos adversos de um incidente de segurança para um mínimo, realizar ações corretivas para reduzir o efeito imediato e reverter os danos, se possível. Privacy incidente Response é um controle corretivo para limitar danos e restaurar sistemas para um estado operacional após uma violação.
   

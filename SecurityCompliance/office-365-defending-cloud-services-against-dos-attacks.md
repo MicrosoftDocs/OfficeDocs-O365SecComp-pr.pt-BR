@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Como a Microsoft defende seus serviços em nuvem contra ataques de negação de serviço (DoS).
-ms.openlocfilehash: 784e17d4b80ac990c903c96f92cd6b96f194439b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 932e5a4d206a9d91c81e868e353259db954a2452
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262843"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786686"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Defendendo os serviços de nuvem da Microsoft contra ataques de negação de serviço
 
@@ -27,7 +27,7 @@ Os datacenters da Microsoft são protegidos por segurança de defesa profunda qu
 
 Para proteger ainda mais nossos serviços em nuvem, a Microsoft fornece um sistema de defesa contra DDoS que faz parte dos processos de monitoramento contínuo e teste de penetração do Microsoft Azure. O sistema de defesa de DDoS do Azure é projetado para não apenas resistir a ataques de fora, mas também de outros locatários do Azure. O Azure usa técnicas de detecção e atenuação padrão, como cookies SYN, limitação de taxa e limites de conexão para proteção contra ataques de DDoS.
 
-Os serviços de nuvem da Microsoft estão sujeitos à ameaça de ataques de várias fontes. Para reduzir e proteger contra as várias ameaças de DoS, um sistema de mitigação e detecção de ameaças com base no Azure altamente escalonável e dinâmico foi desenvolvido e implementado com o principal objetivo de proteger a infraestrutura subjacente contra ataques de DoS e ajudar a evitar interrupções de serviço para clientes de serviços de nuvem. O sistema de mitigação do Azure DoS protege o tráfego de entrada, de saída e de região para região.
+Os serviços de nuvem da Microsoft estão sujeitos à ameaça de ataques de várias fontes. Para reduzir e proteger contra as várias ameaças de DoS, um sistema de mitigação e detecção de ameaças com base no Azure altamente escalonável e dinâmico foi desenvolvido e implementado com o principal objetivo de proteger a infraestrutura subjacente do DoS ataques e ajudar a evitar interrupções de serviço para clientes de serviços de nuvem. O sistema de mitigação do Azure DoS protege o tráfego de entrada, de saída e de região para região.
 
 A maioria dos ataques de DoS é iniciado em relação aos destinos nas camadas de rede (L3) e transporte (L4) do modelo de interconexão de [sistemas abertos](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) (OSI). Os ataques direcionados às camadas de L3 e L4 foram projetados para inundar uma interface de rede ou serviço com tráfego de ataques para sobrecarregar recursos e negar a capacidade de responder a tráfego legítimo. Especificamente, os ataques de L3 e L4 tentam saturar a capacidade de links de rede, dispositivos ou serviços ou saturar as CPUs de servidores ou máquinas virtuais que dão suporte a um aplicativo.
 
@@ -42,13 +42,13 @@ As cargas de trabalho individuais incluem recursos internos que gerenciam a util
 
 O gatilho mais comum para limitação no SharePoint Online é o código do modelo de objeto do cliente (CSOM) que executa muitas ações em uma frequência muito alta. Com o CSOM, muitas ações podem ser executadas com uma única solicitação, que pode exceder os limites de uso e fazer com que a limitação por usuário.
 
-Independentemente da atividade que pode resultar em limitação, quando um usuário exceder os limites de uso, o SharePoint Online limita qualquer solicitação adicional dessa conta de usuário, geralmente por um curto período de tempo. Enquanto um acelerador de usuário está em vigor, todas as ações desse usuário são limitadas até que a limitação expire, de acordo com os seguintes critérios:
+Independentemente da atividade que pode resultar em limitação, quando um usuário exceder os limites de uso, o SharePoint Online limita qualquer solicitação adicional dessa conta de usuário, geralmente por um curto período. Enquanto um acelerador de usuário está em vigor, todas as ações desse usuário são limitadas até que a limitação expire, de acordo com os seguintes critérios:
 - Para solicitações realizadas pelo usuário diretamente em um navegador, o SharePoint Online redireciona para uma página de informações de limitação e as solicitações falham.
 - Para todas as outras solicitações, incluindo chamadas CSOM, o SharePoint Online retorna o código de status HTTP 429 ("muitas solicitações") e as solicitações falham.
 
 Se o processo transgressor continuar a exceder os limites de uso, o SharePoint Online pode bloquear completamente o processo e retornar o código de status HTTP 503 ("serviço não disponível").
 
 ## <a name="vulnerability-and-penetration-testing"></a>Teste de vulnerabilidade e penetração
-A Microsoft usa muitas [tecnologias e práticas de segurança](https://www.microsoft.com/en-us/trustcenter/security/threatmanagement) para [proteger sua infraestrutura de nuvem](https://blogs.technet.microsoft.com/hybridcloud/2015/05/05/protecting-your-datacenter-and-cloud-from-emerging-threats/) e redes locais contra ameaças modernas e sofisticadas, incluindo o uso de componentes e serviços antimalware para serviços de nuvem, virtual máquinas (VMs) e outros sistemas; Análise avançada de ameaças, que monitora padrões de uso normais para redes, sistemas e usuários e emprega o aprendizado da máquina para sinalizar qualquer comportamento que não seja o teste de penetração comum e normal.
+A Microsoft usa muitas [tecnologias e práticas de segurança](https://www.microsoft.com/en-us/trustcenter/security/threatmanagement) para [proteger sua infraestrutura de nuvem](https://blogs.technet.microsoft.com/hybridcloud/2015/05/05/protecting-your-datacenter-and-cloud-from-emerging-threats/) e redes locais contra ameaças modernas e sofisticadas, incluindo o uso de componentes e serviços antimalware para serviços de nuvem, virtual máquinas (VMs) e outros sistemas. Análise avançada de ameaças, que monitora padrões de uso normais para redes, sistemas e usuários e emprega o aprendizado da máquina para sinalizar qualquer comportamento que não seja o teste de penetração comum e normal.
 
-Além de realizar nossos próprios testes de penetração e oferta para nossos clientes em um programa de teste de penetração uniFicado de [nuvem da Microsoft](https://technet.microsoft.com/en-us/mt784683), também envolvemos profissionais de segurança de terceiros que realizam avaliações regulares de vulnerabilidades do e teste de penetração em nossos serviços em nuvem. Disponibilizamos os relatórios dessas avaliações de vulnerabilidade de terceiros para download na base de serviços de [confiança de serviço](https://aka.ms/STP) e os portais de [garantia de serviço](https://aka.ms/ServiceAssurance) .
+Além de realizar nossos próprios testes de penetração e oferta para nossos clientes em um programa de teste de penetração unificado de [nuvem da Microsoft](https://technet.microsoft.com/en-us/mt784683), também envolvemos profissionais de segurança de terceiros que realizam avaliações regulares de vulnerabilidades do e teste de penetração em nossos serviços em nuvem. Disponibilizamos os relatórios dessas avaliações de vulnerabilidade de terceiros para download na base de serviços de [confiança de serviço](https://aka.ms/STP) e os portais de [garantia de serviço](https://aka.ms/ServiceAssurance) .

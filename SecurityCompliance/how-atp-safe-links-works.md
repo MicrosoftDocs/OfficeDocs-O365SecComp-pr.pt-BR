@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: O recurso de links seguros oferece verificação de horário de clique de hiperlinks em documentos do Office e em mensagens de email. Leia este artigo para saber como os links seguros de ATP funcionam.
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599177"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792037"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Como funcionam os links seguros de ATP do Office 365
          
@@ -49,9 +49,9 @@ Em um nível alto, veja como a proteção de [links de segurança ATP](atp-safe-
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Como links seguros de ATP funciona com URLs em documentos do Office
 
-Em um nível alto, veja como a proteção de [links seguros ATP](atp-safe-links.md) funciona para URLs nos aplicativos do Office 365 ProPlus (versões atuais do Word, Excel e PowerPoint no Windows ou Mac, aplicativos do Office em dispositivos IOS ou Android, Visio no Windows, OneNote online e Office Online):
+Em um nível alto, veja como a proteção de [links seguros ATP](atp-safe-links.md) funciona para URLs nos aplicativos do Office 365 ProPlus (versões atuais do Word, Excel e PowerPoint no Windows ou Mac, aplicativos do Office em dispositivos IOS ou Android, Visio no Windows, OneNote em um navegador e Office em um navegador):
   
-1. As pessoas instalaram o Office 365 ProPlus em seus computadores, smartphone ou Tablet. (Ou, eles estão usando o Office Online em seu navegador.)
+1. As pessoas instalaram o Office 365 ProPlus em seus computadores, smartphone ou Tablet. (Ou, eles estão usando o Office em seu navegador.)
     
 2. Um usuário abre um Word, Excel, PowerPoint ou Visio e entra no Office 365 Enterprise usando sua conta corporativa ou de estudante. O documento contém URLs.
     

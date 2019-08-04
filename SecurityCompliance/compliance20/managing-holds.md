@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154893"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791987"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gerenciar isenções na descoberta eletrônica avançada
 
@@ -31,7 +31,7 @@ Em alguns casos, você pode ter um conjunto de responsáveis por dados identific
 
 Para exibir a política de retenção de responsáveis:
 
-1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica **avançada >** para exibir a lista de casos em sua organização.
+1. No **centro de conformidade & de segurança**, clique em descoberta eletrônica **avançada > eDiscovery** para exibir a lista de casos em sua organização.
    
 2. Vá para a guia **responsáveis** para adicionar os responsáveis dentro do seu caso. Para saber como adicionar e colocar os responsáveis em espera dentro de um caso de descoberta eletrônica avançada, confira [Adicionar responsáveis a uma ocorrência de descoberta eletrônica avançada](add-custodians-to-case.md). Se você já tiver adicionado os responsáveis e os colocou em espera, vá para a etapa 3.
    
@@ -48,7 +48,7 @@ Ao criar uma isenção, você tem as seguintes opções para fazer o escopo do c
 
 Para criar uma retenção para um caso de descoberta eletrônica avançada:
 
-1. No **centro de conformidade do & de segurança**, clique em descoberta eletrônica **avançada >** para exibir a lista de casos em sua organização.
+1. No **centro de conformidade & de segurança**, clique em descoberta eletrônica **avançada > eDiscovery** para exibir a lista de casos em sua organização.
   
 2. Clique em **abrir** ao lado do caso para o qual você deseja criar as isenções.
   
@@ -132,7 +132,7 @@ Tenha em mente as seguintes coisas em relação a estatísticas de retenção:
 
  - Quando a caixa de correio de um usuário é pesquisada, qualquer grupo do Office 365 ou Microsoft Team do qual o usuário é membro não será pesquisado. Da mesma forma, quando você coloca um grupo do Office 365 ou um bloqueio de equipe da Microsoft, somente a caixa de correio de grupo e o site de grupo são colocados em espera; as caixas de correio e os sites do OneDrive for Business de membros do grupo não são colocados em espera, a menos que você os adicione explicitamente como responsáveis ou coloque suas fontes de dados em espera. Portanto, se você precisar colocar um grupo do Office 365 ou o Microsoft Team em espera para um determinado local, considere o mapeamento do site de grupo e da caixa de correio de grupo para os responsáveis (consulte Gerenciando responsáveis em descoberta eletrônica avançada). Se o grupo do Office 365 ou a equipe da Microsoft não puder ser atribuído a um único membro, considere a adição da origem a um bloqueio não custodial. 
  
- - Para obter uma lista dos membros de um grupo do Office 365 ou de uma equipe da Microsoft, você pode exibir as propriedades na página de grupos de > domésticos no centro de administração do Office 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online:
+ - Para obter uma lista dos membros de um grupo do Office 365 ou de uma equipe da Microsoft, você pode exibir as propriedades na página de grupos de > domésticos no centro de administração do Microsoft 365. Como alternativa, você pode executar o seguinte comando no PowerShell do Exchange Online:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

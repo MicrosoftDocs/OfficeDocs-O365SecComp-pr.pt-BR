@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma explicação sobre os vários aspectos da resiliência de dados no Exchange Online e no Office 365.
-ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 96611c2db166e34a47b845b5683a367dd29ec25f
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262753"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786666"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resiliência de dados do Exchange Online no Office 365
 
 ## <a name="introduction"></a>Introdução
 Há dois tipos de danos que podem afetar um banco de dados do Exchange: corrupção física, que normalmente é causado por problemas de hardware (em particular, hardware de armazenamento) e danos lógicos, que ocorre devido a outros fatores. Geralmente, há dois tipos de corrupção lógica que podem ocorrer em um banco de dados do Exchange: 
-- **Corrupção lógica do banco** de dados-o checksum da página do banco de dados corresponde, mas os dados na página estão errados de forma lógica. Isso pode ocorrer quando o mecanismo de banco de dados (o mecanismo de armazenamento exTensível (ESE) tenta gravar uma página de banco de dados e, embora o sistema operacional retorne uma mensagem de êxito, os dados nunca são gravados no disco ou gravados no lugar errado. Isso é conhecido como *liberação perdida*. O ESE inclui vários recursos e proteções projetadas para impedir a corrupção física de um banco de dados e outros cenários de perda de dados. Para evitar que as liberações perdidas percam dados, o ESE inclui um mecanismo de detecção de liberação perdido no banco de dados, juntamente com um recurso (restauração de página única) para corrigi-lo. 
+- **Corrupção lógica do banco** de dados-o checksum da página do banco de dados corresponde, mas os dados na página estão errados de forma lógica. Isso pode ocorrer quando o mecanismo de banco de dados (o mecanismo de armazenamento extensível (ESE) tenta gravar uma página de banco de dados e, embora o sistema operacional retorne uma mensagem de êxito, os dados nunca são gravados no disco ou gravados no lugar errado. Isso é conhecido como *liberação perdida*. O ESE inclui vários recursos e proteções projetadas para impedir a corrupção física de um banco de dados e outros cenários de perda de dados. Para evitar que as liberações perdidas percam dados, o ESE inclui um mecanismo de detecção de liberação perdido no banco de dados, juntamente com um recurso (restauração de página única) para corrigi-lo. 
 - **Corrupção lógica de armazenamento** -os dados são adicionados, excluídos ou manipulados de forma que o usuário não espera. Esses casos normalmente são causados por aplicativos de terceiros. Ele normalmente é apenas um dano no sentido em que o usuário o considera assim. O repositório do Exchange considera a transação que produziu o dano lógico uma série de operações MAPI válidas. Os recursos de [bloqueio in-loco](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) no Exchange Online oferecem proteção contra corrupção lógica de armazenamento (porque impede que o conteúdo seja excluído permanentemente por um usuário ou um aplicativo). 
 
 O Exchange Online executa várias verificações de consistência em arquivos de log replicados durante a inspeção de logs e a repetição de log. Essas verificações de consistência impedem que a corrupção física seja replicada pelo sistema. Por exemplo, durante a inspeção do log, há uma verificação de integridade física que verifica o arquivo de log e valida que a soma de verificação registrada no arquivo de log corresponde à soma de verificação gerada na memória. Além disso, o cabeçalho do arquivo de log é examinado para garantir que a assinatura do arquivo de log registrada no cabeçalho do log corresponda à do arquivo de log. Durante a repetição de log, o arquivo de log fica em uma análise mais detalhada. Por exemplo, o cabeçalho do banco de dados também contém a assinatura de log que é comparada com a assinatura do arquivo de log para garantir que eles correspondam. 

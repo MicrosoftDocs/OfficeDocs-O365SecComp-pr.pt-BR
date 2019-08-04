@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Saiba mais sobre as solicitações de lockbox de clientes que permitem controlar como um engenheiro de suporte da Microsoft pode acessar seus dados quando você se deparar com um problema.
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927574"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786616"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Lockbox de cliente no Office 365
 
@@ -226,7 +226,7 @@ Os administradores globais e qualquer pessoa que tenha atribuído a função de 
 
 Os administradores globais e qualquer pessoa que tenha atribuído a função de administrador do aprovador de acesso de lockbox do cliente podem aprovar solicitações de lockbox do cliente. Os clientes controlam essas atribuições de função em suas organizações.
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Como faço para optar pela Lockbox do cliente?
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Como posso me inscrever no Lockbox de cliente?
 
 Um administrador global pode habilitar e configurar o Lockbox do cliente no centro de administração do Microsoft 365 ou do Microsoft 365.
 

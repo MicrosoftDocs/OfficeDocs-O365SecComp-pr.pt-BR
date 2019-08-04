@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152078"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786646"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gerente de conformidade da Microsoft e o RGPD
 
-A regulamentação geral de proteção de dados (RGPD) atuada pela União Européia pode impactar a estratégia de conformidade e exigir ações necessárias para gerenciar informações de usuário e de cliente usadas no Gerenciador de conformidade.
+A regulamentação geral de proteção de dados (RGPD), aprovada pela União Européia, pode impactar a estratégia de conformidade e exigir ações específicas para gerenciar as informações do usuário e do cliente usadas no Gerenciador de conformidade.
 
 ## <a name="user-privacy-settings"></a>Configurações de privacidade do usuário
 
@@ -59,7 +59,7 @@ Para cada conta de usuário identificada, você pode gerar um relatório de depe
 3. Abra o documento para verificar os dados do relatório.
 
 > [!IMPORTANT]
-> Este não é um relatório histórico que mantém e exibe alterações de estado para o histórico de atribuição de itens de ação. O relatório gerado é um instantâneo dos itens de ação de controle atribuídos no momento em que o relatório é executado (carimbo de data e hora gravados no relatório). Por exemplo, qualquer reatribuição subsequente de itens de ação resultará em diferentes dados de relatório de instantâneo se esse relatório for gerado novamente para o mesmo usuário.
+> Os dados do relatório não são uma lista histórica que mantém e exibe as alterações de estado no histórico de atribuição de itens de ação. O relatório gerado é um instantâneo dos itens de ação de controle atribuídos no momento em que o relatório é executado (carimbo de data e hora gravados no relatório). Por exemplo, qualquer reatribuição subsequente de itens de ação resultará em diferentes dados de relatório de instantâneo se o relatório for gerado novamente para o mesmo usuário.
   
 ## <a name="delete-user-data-history"></a>Excluir o histórico de dados do usuário
 
