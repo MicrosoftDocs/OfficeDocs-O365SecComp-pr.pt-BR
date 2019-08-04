@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Aprenda as maneiras mais comuns de reduzir spam e lixo eletrônico no Office 365.
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601228"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054703"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Como reduzir emails de spam no Office 365
 
  **Você está recebendo muito spam no Office 365? Faça o seguinte.**
   
-É altamente recomendável relatar as mensagens de Falso negativo [usando o suplemento Mensagem de relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ajudar a melhorar nossa filtros. Além disso, você pode encaminhar a mensagem *como um anexo* para junk@office365.microsoft.com ou phish@office365.microsoft.com (se foi phishing).
+É altamente recomendável que você relate mensagens de[falso negativo usando o suplemento](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) de mensagem de relatório para nos ajudar a melhorar os filtros. Além disso, você pode enviar a mensagem usando os[Envios do Explorador.](admin-submission.md)
 
 > [!TIP]
 > Se você acha que a mensagem é lixo eletrônico e está na pasta Lixo eletrônico, isso não deve ser um problema. Se você não deseja vê-la na caixa de correio, altere a política antispam para colocar a mensagem em quarentena. Mais informações sobre como colocar as mensagens em quarentena podem ser encontradas em [Colocar mensagens de email em quarentena no Office 365](quarantine-email-messages.md).
@@ -57,7 +57,10 @@ Para evitar que você receba muito spam, a Proteção do Exchange Online (EOP) e
     
 - **Bloquear um remetente imediatamente** Caso você precise bloquear imediatamente um remetente, poderá fazê-lo pelo endereço de email, domínio ou endereço IP. Confira [Criar listas de bloqueio de remetentes no Office 365](create-block-sender-lists-in-office-365.md). Uma entrada em uma lista de permissão de usuário final pode substituir um bloqueio definido pelo administrador.
     
-- **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas.
+- **Habilitar um suplemento de mensagem de relatório para usuários** Recomendamos habilitar [o suplemento de mensagem de relatório para os seus usuários.](enable-the-report-message-add-in.md).
+
+- **Use [o Explorador de envios do](admin-submission.md)** Agora os administradores podem enviar emails usando a ID da mensagem de arquivo ou rede, URLs e arquivos para verificação pela Microsoft no Office 365. Como administrador, você também pode visualizar o comentário que seus usuários estão enviando e usar qualquer padrão para ajustar as configurações que podem causar problemas.
+
 - **Habilite [DKIM](use-dkim-to-validate-outbound-email.md)** para assinar todas as suas mensagens de saída e aumentar a segurança no seu domínio e locatário.
  > [!TIP]
 > Depois de habilitar o DKIM, habilite o [ DMARC ](use-dkim-to-validate-outbound-email.md), pois esse registro validará se o DKIM e o SPF estão funcionando do modo correto e, geralmente, os e-mails de falsificação não têm assinatura, pois o O365 gerencia sua chave simétrica pública e privada.
@@ -66,8 +69,6 @@ Para evitar que você receba muito spam, a Proteção do Exchange Online (EOP) e
 
 - **Habilitar a regra de lixo eletrônico e verificar sua lista de permissões** Verifique se a regra de ação de lixo eletrônico está habilitada e se o remetente ou domínio do remetente não está definido para ignorar em sua lista de permissões pessoal. A melhor maneira de acessar essas configurações é em [Bloquear ou permitir (configurações de lixo eletrônico)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Enquanto estiver ali, você também pode optar por bloquear o endereço de email ou domínio do remetente.
     
-- **Relatar o spam à Microsoft** Relatar mensagens de spam para a Microsoft usando a opção [Usar o suplemento Mensagem de Relatório](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode enviar uma mensagem para junk@office365.microsoft.com e anexe uma ou mais mensagens ao relatório.
-    
-    **Importante** Se você não encaminhar as mensagens como anexos, os cabeçalhos estarão ausentes e não poderemos melhorar a filtragem de lixo eletrônico no Office 365. 
-    
+- **Reportar spam para a Microsoft** Reporte as mensagens de spam para a Microsoft usando o [suplemento Relatar Mensagem](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+       
 - **Cancelar inscrição de emails em massa** Se a mensagem foi um newsletter no qual você se inscreveu (boletins informativos, lançamentos de produto etc.) e contiver um link Cancelar inscrição de uma fonte respeitável, basta cancelar a inscrição. O Office 365 normalmente não trata essas mensagens como spam. Você também pode optar por bloquear o remetente ou pedir para seu administrador fazer uma alteração que fará com que todos os emails em massa sejam tratados como spam.

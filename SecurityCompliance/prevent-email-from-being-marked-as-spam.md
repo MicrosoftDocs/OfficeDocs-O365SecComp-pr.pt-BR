@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como impedir os falsos positivos e manter os emails livres de lixo eletrônico no Office 365.
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157473"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054669"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Como impedir que emails reais sejam marcados como spam no Office 365
 
  **Seu email real está sendo marcado como spam no Office 365? Faça isso.**
   
-Se você receber um falso positivo, relate a mensagem à Microsoft usando [Use o suplemento de relatório de mensagem](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode encaminhar a mensagem *como um anexo* para not_junk@office365.microsoft.com.
-
-**Importante** Se você não encaminhar as mensagens como anexos, os cabeçalhos estarão ausentes e não poderemos melhorar a filtragem de lixo eletrônico no Office 365.
+Se você receber um falso positivo, relate a mensagem à Microsoft usando [o suplemento de mensagem de relatório ](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Além disso, você pode encaminhar a mensagem usando [Explorador de Envios](admin-submission.md).
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar o motivo pelo qual a mensagem foi marcada como spam
 
@@ -62,7 +60,9 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
 
 - **Aponte seus registros de DNS para o Office 365** Para que o EOP ofereça proteção, os registros DNS do seu servidor de mensagens (MX) para todos os domínios devem apontar para o Office 365 e apenas para o Office 365. Se seu MX não apontar para o Office 365, o EOP não fornecerá filtragem de spam para seus usuários. Se você desejar usar outro dispositivo ou serviço para fornecer a filtragem de spam do seu domínio, desabilite a proteção contra spam no EOP. Você pode fazer isso criando uma regra de fluxo de emails que defina o valor do SCL como -1. Se você mais tarde decidir usar o EOP, remova essa regra de fluxo de emails. 
     
-- **Habilitar o suplemento de mensagem de relatório para usuários** Recomendamos que você [habilite o suplemento de mensagem de relatório para os usuários](enable-the-report-message-add-in.md). Como administrador, você também poderá exibir os comentários que seus usuários estão enviando e usar os padrões para ajustar as configurações que podem causar problemas. 
+- **Habilitar um suplemento de mensagem de relatório para usuários** Recomendamos habilitar [o suplemento de mensagem de relatório para os seus usuários.](enable-the-report-message-add-in.md).
+
+- **Use [o Explorador de envios](admin-submission.md)** Agora os administradores podem enviar emails usando a ID da mensagem de arquivo ou rede, URLs e arquivos para verificação pela Microsoft no Office 365. Como administrador, você também pode visualizar o comentário que seus usuários estão enviando e usar qualquer padrão para ajustar as configurações que podem causar problemas.
 
 - 
   **Verifique se os usuários estão dentro dos limites permitidos** para enviar e receber emails como mostrou [aqui](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
@@ -80,7 +80,6 @@ O EOP aceita os Remetentes e destinatários confiáveis dos seus usuários, mas 
 - **Desabilitar a filtragem de SmartScreen no Outlook** Se você estiver usando o antigo cliente de área de trabalho do Outlook, desabilite a funcionalidade de filtragem de SmartScreen, que foi descontinuada. Se estiver habilitado, ela poderá causar falsos positivos. Isso não será necessário se o cliente de área de trabalho do Outlook estiver atualizado.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Solução de problemas: Uma mensagem termina na pasta de Lixo eletrônico embora EOP tenha marcado a mensagem como não spam
-
 
 Se os usuários tem o Outlook habilitado para “Somente listas seguras: Somente emails de pessoas ou domínios na sua lista de Remetentes e destinatários confiáveis serão entregues na sua caixa de entrada”, todos os outros emails irão para a pasta de lixo eletrônico. Isso acontecerá independentemente do EOP marcar a mensagem como não spam, ou de você ter configurado uma regra no EOP para marcar uma mensagem como não spam.
   
