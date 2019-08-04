@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Saiba mais sobre como atender aos requisitos de RGPD no Exchange Server local.
-ms.openlocfilehash: 96caf2793f11772aafd80124b03fd0cb32599442
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152753"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792047"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGPD para Servidor do Office Web Apps e Servidor do Office Online
 
@@ -63,7 +63,7 @@ Para reunir todos os logs associados com a UserID 1, por exemplo, a primeira eta
 
 ## <a name="types-of-data"></a>Tipos de dados
 
-Os logs do Office Online contêm diversos tipos de dados. A seguir são apresentados exemplos de dados que podem conter logs ULS:
+Os logs do Office contêm diversos tipos de dados. A seguir são apresentados exemplos de dados que podem conter logs ULS:
 
 -   Códigos de erro para problemas encontrados durante o uso do produto
 
