@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: O Gerenciador de Conformidade no Portal de Confiança do Serviço Microsoft fornece ferramentas para monitorar, implementar e gerenciar os controles para ajudar sua organização a alcançar a conformidade de acordo com os padrões de segurança e proteção de dados do setor (como RGPD, ISO 27001 e 27018, e HIPAA) quando comparados aos serviços em nuvem da Microsoft, como o Microsoft Azure e o Office 365. O Gerenciador de Conformidade ajuda quem supervisiona a estratégia de privacidade e proteção de dados da sua organização a gerenciar o processo de avaliação de risco e conformidade.
-ms.openlocfilehash: c4b7188428fc494ca8b0bfc9f76b725a7b9f6538
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1c3bf4db5c2e1eabd431bc4d799c46ba8f41e97e
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158833"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786706"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar o Gerenciador de Conformidade para ajudar a atender aos requisitos regulamentares e de proteção de dados ao usar os serviços em nuvem da Microsoft
 
@@ -59,7 +59,7 @@ Uma Avaliação tem vários componentes, que são:
   
 - **Serviços no Escopo** – cada avaliação se aplica a um conjunto específico de serviços Microsoft, que são listados na seção Serviços em nuvem no escopo. 
     
-- **Controles Gerenciados pela Microsoft** – para cada serviço de nuvem, a Microsoft implementa e gerencia um conjunto de *controles* como parte da conformidade da Microsoft com vários padrões e regulamentações. Esses controles são organizados em *famílias de controles* que se alinham com a estrutura de certificação ou regulamentação correspondente à qual a Avaliação está alinhada. Para cada controle gerenciado pela Microsoft, o Gerenciador de Conformidade fornece detalhes sobre como a Microsoft implementou o controle, como isso foi feito e quando essa implementação foi testada e validada por um auditor independente de terceiros. 
+- **Controles Gerenciados pela Microsoft** – para cada serviço de nuvem, a Microsoft implementa e gerencia um conjunto de *controles* como parte da conformidade da Microsoft com vários padrões e regulamentações. Esses controles são organizados em *famílias de controles*, que se alinham com a estrutura de certificação ou regulamentação correspondente à qual a Avaliação está alinhada. Para cada controle gerenciado pela Microsoft, o Gerenciador de Conformidade fornece detalhes sobre como a Microsoft implementou o controle, como isso foi feito e quando essa implementação foi testada e validada por um auditor independente de terceiros. 
     
     Aqui está um exemplo de três controles gerenciados pela Microsoft na família de controle **Segurança** de uma Avaliação do Office 365 e do RGPD. 
 
@@ -114,13 +114,13 @@ Depois que o acesso ao Gerenciador de Conformidade estiver configurado, qualquer
 
 ## <a name="understanding-the-compliance-score"></a>Noções básicas sobre a pontuação de conformidade
 
-No Painel, o Gerenciador de Conformidade exibe uma pontuação total para avaliações do Office 365 no canto superior direito do bloco. Este é o total geral da Pontuação de Conformidade da Avaliação e apresenta o acúmulo de pontos recebidos para cada avaliação de controle marcada como Implementada e Testada na Avaliação. Ao adicionar uma Avaliação, você verá que a Pontuação de Conformidade já está a caminho da conclusão porque os pontos para os controles gerenciados da Microsoft que foram implementados pela Microsoft e testados por terceiros independentes já foram aplicados.
+No Painel, o Gerenciador de Conformidade exibe uma pontuação total para avaliações do Office 365 no canto superior direito do bloco. Este é o total geral da Pontuação de Conformidade da Avaliação e apresenta o acúmulo de pontos recebidos para cada avaliação de controle marcada como Implementada e Testada na Avaliação. Ao adicionar uma Avaliação, você verá que a Pontuação de conformidade já está a caminho da conclusão porque os pontos para os controles gerenciados da Microsoft que foram implementados pela Microsoft e testados por terceiros independentes já foram aplicados.
   
 ![Painel do Gerenciador de Conformidade – pontuação total de conformidade](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 Os pontos restantes vêm da avaliação bem-sucedida do controle do cliente, desde a implementação e teste dos controles gerenciados pelo cliente, cada um com um valor específico que contribui para a pontuação geral de conformidade. 
   
-Cada Avaliação exibe uma Pontuação de Conformidade com base no risco para ajudá-lo a avaliar o nível de risco (devido a problemas de incompatibilidades ou controle) associado a cada controle (incluindo os gerenciados pela Microsoft e pelo cliente) em uma Avaliação. A cada controle de gerenciamento de cliente é atribuído um número de pontos possíveis (chamados de *classificação de gravidade*) em uma escala de 1 a 10, onde mais pontos são concedidos para controles associados a um fator de risco mais alto se o controle falhar e menos pontos são concedidos para controles de menor risco. 
+Cada Avaliação exibe uma Pontuação de Conformidade com base no risco para ajudá-lo a avaliar o nível de risco (devido a problemas de incompatibilidades ou controle) associado a cada controle (incluindo os gerenciados pela Microsoft e pelo cliente) em uma Avaliação. A cada controle de gerenciamento de cliente é atribuído um número de pontos possíveis (chamados de classificação de gravidade) em uma escala de 1 a 10, onde mais pontos são concedidos para controles associados a um fator de risco mais alto se o controle falhar e menos pontos são concedidos para controles de menor risco. 
   
 Por exemplo, o controle de avaliação do Gerenciamento de acesso do usuário mostrado abaixo tem uma classificação de risco de gravidade muito alta e exibe um valor atribuído de 10.
   
@@ -132,7 +132,7 @@ Por exemplo, o controle de avaliação do Gerenciamento de acesso do usuário mo
   
 O Gerenciador de Conformidade atribui uma classificação de severidade padrão para cada controle. As classificações de risco são calculadas com base nos seguintes critérios:
   
-- Se um controle impede a ocorrência de incidentes (classificação mais alta), detecta incidentes que aconteceram ou corrige o impacto de um incidente (classificação mais baixa). Em termos de classificação de gravidade, uma pontuação maior é atribuída a um controle que impeça uma ameaça e seja obrigatório; os controles que são detectores ou corretivos (independentemente de serem obrigatórios ou discricionários) recebem uma pontuação menor.
+- Se um controle impede a ocorrência de incidentes (classificação mais alta), detecta incidentes que aconteceram ou corrige o impacto de um incidente (classificação mais baixa). Em termos de classificação de gravidade, uma pontuação maior é atribuída a um controle obrigatório que impeça uma ameaça; os controles que são detectores ou corretivos (independentemente de serem obrigatórios ou discricionários) recebem uma pontuação menor.
     
 - Se for um controle obrigatório (depois que for implementado) e, portanto, não pode ser ignorado pelos usuários (por exemplo, os usuários tem que redefinir a senha e atender aos requisitos de comprimento e caracteres da senha) ou se for opcional e os usuários podem ignorá-lo (por exemplo, as regras de negócios que exigem que os usuários bloqueiem suas telas quando os computadores estão sem supervisão).
     
@@ -142,13 +142,13 @@ O Gerenciador de Conformidade atribui uma classificação de severidade padrão 
     
 Os valores exibidos da Pontuação de Conformidade de um controle são aplicados *em sua totalidade* à Pontuação total de conformidade em uma base de aprovar/reprovar, ou seja, o controle é implementado e passa no teste de avaliação subsequente ou não; não há crédito parcial para uma implementação parcial. Somente quando o controle tem seu **Status de Implementação** definido como **Implementado** ou **Implementação Alternativa** e o **Resultado do Teste** é definido como **Aprovado** que os pontos atribuídos são adicionados à Pontuação total de conformidade. 
   
-O mais importante é que a Pontuação de Conformidade pode ajudá-lo a priorizar em quais controles a implementação deve se concentrar, indicando quais controles têm maior risco potencial se houver uma falha relacionada. Além da priorização baseada no risco, vale a pena observar quais controles de avaliação estão relacionados a outros controles (seja dentro da mesma avaliação ou em outra avaliação que esteja no mesmo grupo de avaliação) e concluir um único controle com sucesso pode resultar em uma redução significativa de esforço com base na sincronização dos resultados dos testes de controles.
+O mais importante é que a Pontuação de Conformidade pode ajudá-lo a priorizar em quais controles a implementação deve se concentrar, indicando quais controles têm maior risco potencial se houver uma falha relacionada. Além da priorização baseada no risco, quando controles de avaliação estão relacionados a outros controles (seja dentro da mesma avaliação ou em outra avaliação no mesmo grupo de avaliação), concluir um único controle com sucesso pode resultar em uma redução significativa de esforço com base na sincronização dos resultados dos testes de controles.
   
 Por exemplo, na imagem abaixo vemos que a Avaliação de RGPD no Office 365 atualmente está com 46% concluído, com 51 de 111 avaliações de controle concluídas para uma Pontuação total de conformidade de 289 em um máximo de 600.
   
 ![Gerenciador de Conformidade – resumo da avaliação](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-Na avaliação, o controle RGPD 7.5.5 está relacionado a 5 outros controles (7.4.1, 7.4.3, 7.4.4, 7.4.8 e 7.4.9), cada um com uma pontuação de classificação de risco de severidade de moderada a alta – 6 ou 8). Usando o filtro de avaliação, selecionamos todos esses controles, tornando-os visíveis no modo de exibição de avaliação, e podemos ver abaixo que nenhum deles foi avaliado. 
+Na avaliação, o controle RGPD 7.5.5 está relacionado a cinco outros controles (7.4.1, 7.4.3, 7.4.4, 7.4.8 e 7.4.9), cada um com uma pontuação de classificação de risco de severidade de moderada a alta – 6 ou 8). Usando o filtro de avaliação, foram selecionados todos esses controles, tornando-os visíveis no modo de exibição de avaliação, e é possível ver abaixo que nenhum deles foi avaliado. 
   
 ![Gerenciador de Conformidade – modo de exibição de Avaliação – controles de filtro, nenhum avaliado](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Como esses 6 controles estão relacionados, a conclusão de qualquer um deles causará a sincronização dos resultados do teste entre os controles relacionados dentro da avaliação (da mesma forma que ocorre com qualquer controle relacionado em uma avaliação que esteja no mesmo grupo de avaliação). Após a conclusão da implementação e do teste do controle RGPD 7.5.5, a área de detalhes de controle é atualizada para mostrar que todos os 6 controles foram avaliados, com um aumento correspondente no número de controles avaliados para 57 e 51% avaliados, e uma mudança na Pontuação de Conformidade total de +40. 
   
@@ -277,13 +277,13 @@ Com base na classificação da gravidade do controle, o controle recebe seu valo
    
 Ao priorizar os controles de avaliação com os valores mais altos de pontuação de conformidade, a organização se concentra nos itens de maior risco e recebe um retorno positivo proporcionalmente maior na forma de mais pontos adicionados à pontuação total de conformidade para a avaliação de cada avaliação de controle concluída.
   
-### <a name="summmary-of-scoring-methodology"></a>Resumo da metodologia de pontuação
+### <a name="summary-of-scoring-methodology"></a>Resumo da metodologia de pontuação
   
 A Pontuação de Conformidade é o principal componente da maneira em que o Gerenciador de Conformidade ajuda as organizações a entenderem e gerenciarem a conformidade. A Pontuação de Conformidade de uma avaliação é uma expressão da conformidade da empresa com um determinado padrão ou regulamentação, como um número onde quanto maior a pontuação (até o número máximo de pontos alocado para a Avaliação), melhor a postura de conformidade da empresa. Entender a metodologia da pontuação de conformidade, na qual os controles de avaliação recebem valores de gravidade de risco entre 1 a 10 (baixo a alto) e como as avaliações de controle concluídas aumentam a pontuação total de conformidade, é algo crucial para as organizações priorizarem suas ações.
 
 ## <a name="grouping-assessments"></a>Agrupamento de avaliações
 
-Ao criar uma nova Avaliação, você precisa criar um novo grupo para atribuir a Avaliação ou então deve atribuir a Avaliação a um grupo existente. Os grupos permitem organizar logicamente as Avaliações e compartilhar informações comuns e tarefas de fluxo de trabalho entre as Avaliações que possuem os mesmos controles relacionados gerenciados pelo cliente.
+Ao criar uma nova Avaliação, você é solicitado a criar um grupo ao qual ela será atribuída ou a atribuir a Avaliação a um grupo existente. Grupos permitem organizar Avaliações de forma lógica e compartilhar informações comuns e tarefas de fluxo de trabalho entre Avaliações com os controles gerenciados pelo cliente iguais ou relacionados.
   
 Por exemplo, você pode agrupar Avaliações por ano ou equipes, departamentos ou agências em sua organização ou agrupá-las por ano. Aqui estão alguns exemplos de grupos e as Avaliações que eles podem conter.
   
@@ -318,31 +318,31 @@ Por exemplo, você pode agrupar Avaliações por ano ou equipes, departamentos o
   
 Estes são os requisitos para agrupar Avaliações:
   
-- Os nomes de grupo (também chamado de *IDs de grupo*) devem ser exclusivos em sua organização. 
+- Os nomes de grupo (também chamado de *IDs de grupo) devem ser exclusivos em sua organização. 
     
 - Os grupos podem conter Avaliações da mesma certificação/regulamentação, mas cada grupo pode conter uma Avaliação para um par específico de certificação/serviços em nuvem. Por exemplo, um grupo não pode conter duas Avaliações do Office 365 e RGPD. Da mesma forma, um grupo pode conter várias Avaliações no mesmo serviço de nuvem desde que a certificação/regulamentação correspondente para cada uma delas seja diferente.
     
-Depois que uma avaliação for adicionada a um agrupamento de avaliação, o agrupamento não poderá ser alterado. Você pode renomear o grupo de avaliação, o que altera o nome do agrupamento de avaliação para todas as avaliações associadas a esse grupo. É possível criar uma nova avaliação e um novo grupo de avaliações e então copiar informações de uma avaliação existente, o que efetivamente cria uma duplicata dessa avaliação em um grupo de avaliação diferente. Arquivar uma avaliação quebra a relação entre essa avaliação e o grupo de avaliações; quaisquer outras atualizações em outras avaliações relacionadas não serão mais refletidas na avaliação arquivada.
+Após uma avaliação ser adicionada a um agrupamento de avaliações, o agrupamento não poderá ser alterado. Você pode renomear o grupo de avaliação, mas isso alterará o nome do agrupamento de avaliações de todas as avaliações associadas a esse grupo. Você pode criar uma avaliação e um novo grupo de avaliação e copiar informações de uma avaliação existente, o que efetivamente criará uma duplicata dessa avaliação em um grupo de avaliação diferente. O arquivamento de uma avaliação interrompe a relação entre ela e o grupo de avaliação. Quaisquer atualizações posteriores de outras avaliações relacionadas não serão mais refletidas na avaliação arquivada.
   
-Como explicado anteriormente, uma vantagem importante do uso de grupos é que, quando duas Avaliações diferentes no mesmo grupo compartilham o mesmo controle gerenciado pelo cliente (portanto as ações do cliente seriam as mesmas para cada controle), então a conclusão dos detalhes da implementação, as informações de testes e o status do controle em uma Avaliação seriam sincronizados com o mesmo controle em qualquer outra Avaliação do grupo. Em outras palavras, se as avaliações compartilharem o mesmo controle e essas Avaliações estiverem no mesmo grupo, você só precisará gerenciar o processo de avaliação do controle em uma Avaliação. Os resultados desse controle serão automaticamente sincronizados com as outras Avaliações. Por exemplo, a ISO 27001 e a ISO 27018 possuem um controle relacionado às políticas de senha. Se o Status do Teste para o controle for definido como "Aprovado" em uma Avaliação, o controle será atualizado (e marcado como "Aprovado") na outra Avaliação, desde que ambas as avaliações façam parte do mesmo Grupo de Avaliação.
+Como explicado anteriormente, a principal vantagem de usar grupos é que, quando duas Avaliações diferentes do mesmo grupo compartilharem o mesmo controle gerenciado pelo cliente (e, portanto, as ações do cliente seriam as mesmas para cada controle), então a conclusão dos detalhes da implementação, as informações do teste e os status do controle de uma Avaliação serão sincronizados para o mesmo controle em qualquer outra Avaliação do grupo. Em outras palavras, se essas Avaliações compartilham o mesmo controle e estão no mesmo grupo, você só precisa gerenciar o processo de avaliação desse controle em uma Avaliação. Os resultados desse controle serão automaticamente sincronizados com outras Avaliações. Por exemplo, os sistemas ISO 27001 e ISO 27018 têm um controle relacionado a políticas de senha. Se o Status do Teste do controle de uma avaliação estiver definido como “Aprovado”, o controle será atualizado (e marcado como “Aprovado”) na outra Avaliação desde que ambas sejam parte do mesmo Grupo de avaliação.
   
-Como exemplo disto, considere esses dois controles de avaliação relacionados, ambos relacionados com a criptografia de dados em redes públicas, o controle 6.10.1.2 no Office 365 – avaliação de RGPD, e o controle SC 13 no Office 365 – avaliação do NIST 800-53. Estes controles de avaliação se relacionam em duas avaliações diferentes, ambas no Grupo Padrão; inicialmente, nenhuma avaliação foi concluída em nenhuma das avaliações de controle de cliente, conforme exibido no Painel do Gerenciador de Conformidade que mostra estas duas Avaliações.
+Como um exemplo disso, considere esses dois controles de avaliação relacionados, cada um relacionado à criptografia de dados em redes públicas, controle 6.10.1.2 na avaliação RGPD – Office 365 e controle SC-13 na avaliação Office 365 – NIST 800–53. Esses são os controles de avaliação relacionados, em duas avaliações diferentes, ambas no Grupo Padrão. Inicialmente, nenhuma avaliação concluiu as avaliações de controle do cliente, conforme exibido no Painel do Gerenciador de Conformidade que mostra uma dessas duas Avaliações.
   
 ![Painel do Gerenciador de Conformidade – avaliações agrupadas – antes](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
 Ao clicar na avaliação **Office 365 – RGPD** e usar os controles de filtro para exibir o controle RGPD 6.10.1.2, podemos ver que o controle NIST 800-53 SC-13 está listado como um controle relacionado.
   
-![Avaliação do Gerenciador de Conformidade –controles compartilhados](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Avaliação do Gerenciador de Conformidade – controles compartilhados](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
   
  Aqui mostramos a conclusão da implementação e testes do controle RGPD 6.10.1.2. 
   
-![Avaliação do Gerenciador de Conformidade do controle RGPD 6.10.1.2 – aprovado](media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Avaliação do Gerenciador de Conformidade do controle RGPD 6.10.1.2 – aprovada](media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
   
 Ao navegar até o controle relacionado na avaliação agrupada, podemos ver que NIST 800-53 SC-13 também foi marcada como concluída com a mesma data e hora, sem a necessidade de implementação adicional ou teste.
   
 ![Avaliação do Gerenciador de Conformidade – NIST 800-53 SC(13) concluída](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
-Novamente no Painel, podemos ver que cada avaliação tem 1 avaliação de controle concluída e a Pontuação total de conformidade para cada avaliação aumentou em 8 (o valor de pontuação de conformidade do controle compartilhado).
+Novamente no Painel, podemos ver que cada avaliação tem uma avaliação de controle concluída e que a Pontuação total de conformidade de cada avaliação aumentou em oito (o valor de pontuação de conformidade do controle compartilhado).
   
 ![Painel do Gerenciador de Conformidade – andamento da sincronização da avaliação agrupada](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
@@ -357,7 +357,7 @@ Há funções administrativas específicas disponíveis apenas para a conta de a
 
 Cada função do Gerenciador de Conformidade tem permissões ligeiramente diferentes. Você pode exibir as permissões atribuídas a cada função, conferir quais usuários estão em quais funções e adicionar ou remover usuários dessa função no Portal de Confiança do Serviço, selecionando o item de menu **Administração** e, em seguida, escolhendo **Configurações **. 
   
-![Menu administrador do STP – configuração selecionada](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menu Administrador do STP – opção Configurações selecionada](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Para adicionar ou remover usuários das funções do Gerenciador de Conformidade.
   
@@ -369,13 +369,13 @@ Para adicionar ou remover usuários das funções do Gerenciador de Conformidade
     
 4. Na lista suspensa **Selecionar Função**, clique na função que deseja gerenciar. 
     
-5. Os usuários adicionados a cada função são listados na página **Selecionar função**. 
+5. Os usuários adicionados a cada função estão listados na página **Selecionar função**. 
     
 6. Para adicionar usuários a essa função, clique em **Adicionar**. Na caixa de diálogo **Adicionar Usuários**, clique no campo do usuário. Você pode percorrer a lista de usuários disponíveis ou começar a digitar o nome de usuário para filtrar a lista com base no termo de pesquisa. Clique no usuário para adicionar essa conta à lista **Adicionar Usuários** que será provisionada com essa função. Se você quiser adicionar vários usuários ao mesmo tempo, comece a digitar um nome de usuário para filtrar a lista e, em seguida, clique no usuário para adicioná-lo à lista. Clique em **Salvar** para provisionar a função selecionada a esses usuários. 
     
     ![Gerenciador de Conformidade – provisionar funções – adicionar usuários](media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
-7. Para remover os usuários dessa função, selecione os usuários e clique em **Excluir**. 
+7. Para remover os usuários dessa função, selecione-os e clique em **Excluir**. 
     
     ![Gerenciador de Conformidade – provisionar funções – remover usuário](media/17004def-604f-471d-a54d-f678fcc01c1e.png)
  
@@ -397,23 +397,23 @@ Determinadas regulamentações exigem que uma organização deve ser capaz de ex
 
 Para procurar uma conta de usuário:
   
-1. Insira o endereço de email do usuário digitando o alias (informações à esquerda do símbolo @) e escolhendo o nome de domínio clicando na lista sufixo de domínio à direita. Se esse for um locatário com vários domínios registrados, você pode verificar novamente o sufixo do nome de domínio do endereço de email para garantir que esteja correto.
+1. Insira o endereço de email do usuário digitando o alias (isto é, a informação que fica à esquerda do símbolo @) e escolhendo o nome do domínio clicando na lista de sufixos de domínios à direita. Se o locatário tiver vários domínios registrados, verifique novamente o sufixo do nome de domínio do endereço de email para garantir que é o correto.
     
 2. Assim que o nome de usuário for inserido corretamente, clique em **Pesquisar**. 
     
 3. Se a conta de usuário não for encontrada, a página exibe a mensagem de erro "Usuário não encontrado". Verifique as informações de endereço de email do usuário, faça as correções necessárias e clique em **Pesquisar** para tentar novamente. 
     
-4. Se a conta de usuário for encontrada, o texto do botão será alterado de **Pesquisar** para **Limpar**, o que indica que a conta de usuário retornada é o contexto operacional para as funções adicionais que serão exibidas abaixo e que a execução dessas funções será aplicada a essa conta de usuário. 
+4. Se a conta de usuário for encontrada, o texto do botão mudará de **Pesquisar** para **Limpar**, o que indica que a conta de usuário retornada é o contexto operacional para as funções adicionais que serão exibidas abaixo e que a execução dessas funções será aplicada a essa conta de usuário. 
     
 5. Para limpar os resultados da pesquisa e pesquisar um usuário diferente, clique em **Limpar**. 
     
 ### <a name="export-a-report-of-account-data-history"></a>Exportar um relatório do histórico de dados da conta
 
-Depois de identificar a conta de usuário, você poderá gerar um relatório das dependências existentes vinculadas a essa conta. Essas informações permitirão reatribuir itens de ação abertos ou garantir o acesso às evidências carregadas anteriormente. 
+Depois de identificar a conta do usuário, convém gerar um relatório das dependências vinculadas a essa conta. Essa informação permite reatribuir itens de ação abertos ou garantir o acesso a evidências carregadas anteriormente. 
   
  Para gerar e exportar um relatório:
   
-1. Clique em **Exportar** para gerar e baixar um relatório dos itens de ação de controle do Gerenciador de Conformidade atualmente atribuídos à conta de usuário retornada, bem como a lista de documentos carregados pelo usuário. Se não surgirem ações atribuídas ou documentos carregados, uma mensagem de erro informará "Nenhum dado para esse usuário". 
+1. Clique em **Exportar** para gerar e baixar um relatório dos itens de ação de controle do Gerenciador de Conformidade atribuídos atualmente à conta do usuário retornada e à lista de documentos carregados pelo usuário. Se não surgirem ações atribuídas ou documentos carregados, uma mensagem de erro informará “Não há dados para esse usuário”. 
     
 2. O relatório é baixado em segundo plano na janela ativa do navegador, assim, se você não vir um pop-up, verifique o histórico de download do navegador.
     
@@ -432,7 +432,7 @@ Esta função permite que uma organização remova quaisquer dependências ativa
     
 2. Selecione **Substituir** para reatribuir todos os itens de ação de controle do usuário retornado ao usuário recém-selecionado. 
     
-3. A caixa de diálogo de confirmação exibida informa "Isso reatribuirá todos os itens de ação de controle do usuário atual para o usuário selecionado. Essa ação não pode ser desfeita. Tem certeza de que deseja continuar?"
+3. Uma caixa de diálogo de confirmação será exibida com a mensagem “Isso reatribuirá todos os itens de ação de controle do usuário atual ao usuário selecionado. Não é possível desfazer a ação. Tem certeza de que deseja continuar?
     
 4. Para continuar, clique em **OK**, senão clique em **Cancelar**. 
     
@@ -493,7 +493,7 @@ Acesse o Gerenciador de Conformidade no Portal de Confiança do Serviço. Qualqu
   
 ## <a name="viewing-action-items"></a>Exibir os itens de ação
 
-O Gerenciador de Conformidade fornece uma exibição conveniente de todos os itens de ação de avaliações de controles atribuídos, permitindo que você tome ações de forma rápida e fácil. Você pode visualizar todos os itens de ação ou selecionar os itens de ação que correspondem a uma certificação específica ao clicar na guia associada a essa avaliação. Por exemplo, na imagem abaixo, a guia RGPD foi selecionada, mostrando os controles relacionados à avaliação RGPD.
+O Gerenciador de Conformidade oferece uma visão conveniente de todos os itens de ação de avaliação dos controle atribuídos, permitindo que você tome ações rápidas e fáceis sobre eles. É possível exibir todos os itens de ação ou escolher aqueles que correspondam a uma certificação específica clicando na guia associada a essa avaliação. Por exemplo, na imagem abaixo, a guia RGPD foi selecionada e ela exibe controles relacionados à avaliação de RGPD.
   
 ![Gerenciador de Conformidade – Itens de Ação listam várias guias RGPD selecionadas](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
@@ -513,17 +513,17 @@ Para adicionar uma avaliação ao Gerenciador de Conformidade:
     
 2. Na janela **Adicionar uma Avaliação**, você pode criar um novo grupo ao qual adicionará a avaliação ou pode adicioná-la a um grupo existente (o grupo interno é denominado "Grupo inicial"). Dependendo da opção escolhida, digite o nome do novo grupo ou selecione um grupo existente na lista suspensa. Para saber mais, confira [Agrupamento de avaliações](#grouping-assessments).
     
-    Se você criar um novo grupo, também tem a opção de copiar informações de um grupo existente para a nova avaliação. Isso significa que as informações adicionadas aos campos Detalhes da implementação, Plano de teste e Resposta de gerenciamento dos controles gerenciados pelo cliente das avaliações do grupo que você está copiando ficarão iguais nos mesmos controles gerenciados pelo cliente (ou relacionados) na nova avaliação. Se você adicionar uma nova avaliação a um grupo existente, as informações comuns das avaliações desse grupo serão copiadas para a nova avaliação. Para saber mais, confira [Copiar informações de avaliações existentes](#copying-information-from-existing-assessments).
+    Se você criar um grupo, também terá a opção de copiar informações de um grupo existente para a nova Avaliação. Isso significa que as informações adicionadas aos campos Detalhes da implementação, Plano do teste e Resposta de gerenciamento dos controles gerenciados pelo cliente nas Avaliações do grupo que você está copiando serão copiadas para os mesmos controles gerenciados pelo cliente (ou relacionados) da nova Avaliação. Se você estiver adicionando uma nova Avaliação a um grupo existente, as informações comuns das Avaliações desse grupo serão copiadas para a nova Avaliação. Saiba mais em [Copiar informações de Avaliações existentes](#copying-information-from-existing-assessments).
     
 3. Clique em **Avançar** e faça o seguinte:
     
-    a. Escolha um serviço de nuvem da Microsoft para avaliar a conformidade na lista suspensa **Selecionar um produto**. 
+    a. Escolha um serviço em nuvem da Microsoft para avaliar a conformidade na lista suspensa **Selecionar um produto**. 
     
-    b. Escolha uma certificação para avaliar o serviço de nuvem selecionado em comparação com uma opção da lista suspensa **Selecionar uma certificação**. 
+    b. Escolha uma certificação de referência para avaliar o serviço em nuvem selecionado na lista suspensa **Selecionar uma certificação**. 
     
 4. Clique em **Adicionar ao Painel** para criar a avaliação, que será adicionada ao painel Gerenciador de Conformidade como um novo bloco no final da lista de blocos existentes. 
     
-    O **Bloco de Avaliação** do painel Gerenciador de Conformidade exibe o agrupamento de avaliações, o nome da avaliação (criado automaticamente como uma combinação da certificação selecionado e do nome do serviço), a data da criação e a data da última modificação, a pontuação total de conformidade (que é a soma de todos os valores de risco de controles atribuídos que foram implementados, testados e aprovados) e, na parte inferior, o andamento dos indicadores que mostram o número de controles avaliados. 
+    O **bloco Avaliação** do painel Gerenciador de Conformidade exibe o agrupamento de avaliações, o nome da avaliação (criado automaticamente como uma combinação da certificação selecionado e do nome do serviço), a data da criação e a data da última modificação, a pontuação total de conformidade (que é a soma de todos os valores de risco de controles atribuídos que foram implementados, testados e aprovados) e, na parte inferior, o andamento dos indicadores que mostram o número de controles avaliados. 
     
 5. Clique no nome da avaliação para abri-la e exibir seus detalhes.
     
@@ -533,7 +533,7 @@ Para adicionar uma avaliação ao Gerenciador de Conformidade:
 
 ## <a name="copying-information-from-existing-assessments"></a>Copiar informações de avaliações existentes
 
-Como já explicado, quando você cria um novo grupo de avaliação, tem a opção de copiar informações das Avaliações em um grupo existente para a nova Avaliação no grupo novo. Isso permite aplicar o trabalho de avaliação e testes já concluídos aos mesmos controles de gerenciados do cliente na nova Avaliação. Por exemplo, se você tiver um grupo para todas as Avaliações relacionadas a RGPD na sua organização, pode copiar as informações comuns do trabalho de avaliação existente ao adicionar uma nova Avaliação ao grupo.
+Como explicado anteriormente, ao criar um grupo de avaliação, você tem a opção de copiar informações de Avaliações em um grupo existente para a nova Avaliação no grupo novo. Assim, é possível aplicar a avaliação e a tarefa de teste que já foi concluída aos mesmos controles gerenciados pelo clientes na nova Avaliação. Por exemplo, se você tem um grupo para todas as Avaliações relacionadas ao RGPD na sua organização, pode copiar as informações comuns da tarefa de avaliação existente ao adicionar uma nova Avaliação ao grupo.
   
 Você pode copiar as seguintes informações de cliente para uma nova Avaliação:
   
@@ -543,11 +543,11 @@ Você pode copiar as seguintes informações de cliente para uma nova Avaliaçã
     
 - Os detalhes da implementação e informações do plano de testes.
     
-Da mesma forma, as informações de controles gerenciados do cliente compartilhadas no mesmo grupo de Avaliação são sincronizadas. E as informações nos controles gerenciados de clientes relacionadas na mesma avaliação também são sincronizadas.
+De modo semelhantes, as informações de controles gerenciados pelo cliente compartilhadas no mesmo grupo de Avaliação são sincronizadas. E as informações relacionadas de controles gerenciados pelo cliente que estejam no mesmo grupo de Avaliação também são sincronizadas.
 
-## <a name="viewing-assessments"></a>Como exibir avaliações
+## <a name="viewing-assessments"></a>Exibir avaliações
 
-1. Localize o Bloco Avaliação correspondente à Avaliação que deseja exibir e, em seguida, clique no nome de avaliação para abri-la e visualizar os controles gerenciados da Microsoft e do cliente associados à Avaliação, junto com uma lista dos serviços em nuvem que estão no escopo da Avaliação. Aqui está um exemplo da Avaliação para o Office 365 e RGPD.
+1. Localize o bloco Avaliação correspondente à Avaliação que deseja exibir e clique no nome de avaliação para abri-la e exibir os controles gerenciados da Microsoft e do cliente associados à Avaliação, incluindo uma lista dos serviços em nuvem que estão no escopo da Avaliação. Aqui está um exemplo da Avaliação do Office 365 e RGPD.
     
     ![Modo de exibição da Avaliação do Gerenciador de Conformidade – tela inteira com textos explicativos](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
@@ -557,15 +557,15 @@ Da mesma forma, as informações de controles gerenciados do cliente compartilha
     
 3. Esta seção mostra os serviços em nuvem individuais no escopo da avaliação.
     
-4. Esta seção contém controles gerenciados pela Microsoft. Controles relacionados são organizados por família de controle. Clique em uma família de controle para expandi-la e exibir os controles de individuais.
+4. Esta seção contém controles gerenciados da Microsoft. Controles relacionados são organizados por famílias de controles. Clique em uma família de controles para expandi-la e exibir os controles individuais.
     
-5. Esta seção contém controles gerenciados pelo cliente, que também são organizados por família de controle. Clique em uma família de controle para expandi-la e exibir os controles de individuais.
+5. Esta seção contém controles gerenciados pelo cliente, que também são organizados por famílias de controles. Clique em uma família de controles para expandi-la e exibir os controles individuais.
     
-6. Exibe o número total de controles da família de controles e quantos desses controles já foram avaliados. Um recurso chave do Gerenciador de Conformidade é acompanhar o andamento da organização na avaliação dos controles gerenciados pelo cliente. Para saber mais, confira a seção [Noções básicas sobre a pontuação de conformidade](#understanding-the-compliance-score). 
+6. Exibe o número total de controles na família de controle e quantos deles foram avaliados. Um dos principais recursos do Gerenciador de Conformidade é acompanhar o andamento da sua organização quanto à avaliação dos controles gerenciados pelo cliente. Para obter mais informações, confira a seção [Noções básicas sobre a pontuação de conformidade](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gerenciar o processo de avaliação
 
-O criador de uma avaliação inicialmente é o único usuário da avaliação. Para cada controle gerenciado pelo cliente, você pode atribuir um Item de ação para uma pessoa da organização para que ela se torne o usuário de avaliação que pode executar as ações recomendadas ao cliente e também reunir e carregar evidências. Quando você atribui um Item de ação, pode optar por enviar para a pessoa um email com os detalhes, incluindo as Ações de cliente recomendadas e a prioridade do Item de ação. A notificação por email inclui um link para o painel **Itens de ação** que lista todos os itens de ação atribuídos a essa pessoa. 
+Inicialmente, o criador de uma Avaliação é o único Usuário da Avaliação. Para cada controle gerenciado pelo cliente, é possível atribuir um Item de Ação a uma pessoa da sua organização para que ela se torne um Usuário da Avaliação autorizado a executar as Ações do Cliente recomendadas, além de reunir e carregar evidências. Ao atribuir um Item de Ação, é possível optar por enviar para a pessoa um email com detalhes como as Ações do Cliente recomendadas e a prioridade do Item de Ação. A notificação por email incluirá um link para o painel **Itens de Ação**, que lista todos os Itens de Ação atribuídos a essa pessoa. 
   
 Aqui está uma lista de tarefas a executar usando os recursos do fluxo de trabalho do Gerenciador de Conformidade.
   
@@ -573,15 +573,15 @@ Aqui está uma lista de tarefas a executar usando os recursos do fluxo de trabal
   
 1. **Use as opções de filtragem para encontrar os controles de avaliação específicos** – o Gerenciador de Conformidade fornece **Opções de filtro**, que proporcionam critérios de seleção altamente precisos para exibir os controles de avaliação, ajudando a visar com precisão as áreas de destino específicas dos esforços de conformidade. 
     
-    Clique no ícone de funil no lado direito da página para mostrar ou ocultar os controles de **Opções de filtro**. Esses controles permitem especificar critérios de filtro e somente os controles de avaliação que atenderem a esses critérios serão exibidos abaixo. ![Controles de filtro de avaliações do Gerenciador de Conformidade](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    Clique no ícone de funil no lado direito da página para mostrar ou ocultar os controles das **Opções de Filtro **. Esses controles permitem especificar critérios de filtro, e somente os controles de avaliação que atenderem a esses critério serão exibidos abaixo. ![Controles de filtragem de Avaliações do Gerenciador de Conformidade](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
-    - **Artigos** – filtra o nome do artigo e retorna os controles de avaliação associados a esse artigo. Por exemplo, digitar "Artigo (5)" retorna uma lista de seleção de artigos cujos nomes incluem essa cadeia de caracteres, ou seja, o artigo (5)(1)(a), o artigo (5)(1)(b), o artigo (5)(1)(c), etc. Selecionar o artigo (5)(1)(c) retorna os controles associados ao artigo (5)(1)(c). Esse é um campo de seleções múltiplas que usa um operador OR (ou) com vários valores – por exemplo, se você selecionar o artigo (5)(1)(a) e depois adicionar o artigo (5)(1)(c), o filtro retornará controles associados tanto ao artigo (5)(1)(a) como ao artigo (5)(1)(c). 
+    - **Artigos** – filtra o nome do artigo e retorna os controles de avaliação associados a esse artigo. Por exemplo, se você digitar “Artigo (5)”, uma lista de seleção de artigos cujos nomes incluem essa cadeia de caracteres será retornada, ou seja, Artigo (5)(1)(a), Artigo (5)(1)(b), Artigo (5)(1)(c), etc. Se você selecionar o Artigo (5)(1)(c), os controles associados ao Artigo (5)(1)(c) serão retornados. Esse é um campo de seleção múltipla que usa um operador OR com vários valores. Por exemplo, se você escolher o Artigo (5)(1)(a) e depois adicionar o Artigo (5)(1)(c), o filtro retornará controles associados ao Artigo (5)(1)(a) ou ao Artigo (5)(1)(c). 
     
-      ![Modo de exibição de avaliação do Gerenciador de Conformidade – filtro no nome do artigo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+      ![Modo de exibição de avaliação do Gerenciador de Conformidade – Filtro de nome do artigo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
     - **Controles** – retorna a lista de controles cujos nomes se encaixam no filtro, por exemplo, digitar em 7.3 retorna uma lista de seleção de itens como 7.3.1, 7.3.4, 7.3.5, etc. Esse campo de seleções múltiplas usa um operador OR com vários valores; por exemplo, se você selecionar 7.3.1 e depois adicionar 7.3.4, o filtro retornará controles associados a 7.3.1 ou a 7.3.4. 
     
-      ![Modo de exibição de avaliação do Gerenciador de Conformidade – controles de filtro de seleção múltipla](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+      ![Modo de exibição de avaliação do Gerenciador de Conformidade – Controles de filtro de seleção múltipla](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
   
     - **Usuários atribuídos** – retorna a lista de controles atribuídos ao usuário selecionado. 
     
@@ -597,17 +597,17 @@ Aqui está uma lista de tarefas a executar usando os recursos do fluxo de trabal
     
 3. **Atribuir item de ação a um usuário** – você pode atribuir um Item de ação para uma pessoa implementar os requisitos de certificação/regulamentação ou para testar, verificar e documentar os requisitos de implementação da sua organização. Ao atribuir um Item de ação, você pode optar por enviar para a pessoa um email com os detalhes, incluindo as Ações de cliente recomendadas e a prioridade do Item de ação. Você também pode cancelar a atribuição ou reatribuir um Item de ação para outra pessoa. 
     
-4. **Gerenciar documentos** – controles gerenciados por clientes também têm um local para gerenciar documentos relacionados a realizar tarefas de implementação, de teste e de validação. Qualquer pessoa com permissões para editar dados no Gerenciador de Conformidade pode carregar documentos clicando em **Gerenciar documentos**. Depois de carregar um documento, você pode clicar em **Gerenciar documentos** para exibir e baixar os arquivos. 
+4. **Gerenciar documentos** – os controles gerenciados pelo cliente também têm um local para gerenciar documentos relacionados à execução de tarefas de implementação, teste e validação. Qualquer pessoa com permissões para editar dados no Gerenciador de Conformidade pode carregar documentos clicando em **Gerenciar Documentos**. Depois que um documentadas é carregado, é possível clicar em **Gerenciar Documentos** para exibir e baixar arquivos. 
     
-5. **Fornecer detalhes de implementações e testes** – cada controle gerenciado por cliente tem um campo editável em que os usuários podem adicionar os detalhes da implementação que documentam as etapas executadas pela sua organização para atender aos requisitos da certificação/regulamento e para validar e documentar como sua organização atendeu a esses requisitos.
+5. **Fornecer detalhes de implementações e testes** – cada controle gerenciado pelo cliente tem um campo editável em que os usuários podem adicionar os detalhes da implementação que documentam as etapas executadas pela sua organização para atender aos requisitos da certificação/regulamento e para validar e documentar como sua organização atendeu a esses requisitos.
     
 6. **Definir Status** – define o status de cada item como parte do processo de avaliação. Os valores de status disponíveis são **Implementado**, **Implementação alternativa**, **Planejado** e **Fora do Escopo**. 
     
-7. **Inserir resultado de testes e data de teste** – a pessoa com a função de Consultor do Gerenciador de Conformidade pode verificar se os testes adequados foram realizados, revisar os detalhes da implementação, o plano de teste, os resultados do teste e quaisquer evidências carregadas e depois definir a Data do teste e o Resultado do teste. Os valores de resultados de testes disponíveis são **Aprovado**, **Reprovado–baixo risco**, **Reprovado–médio risco** ** ** e **Reprovado–alto risco**. 
+7. **Inserir a data do teste e o resultado do teste** – a pessoa com a função de Avaliador do Gerenciador de Conformidade pode verificar se os testes adequados foram realizados, examinar os detalhes da implementação, o plano do teste, os resultados do teste e as evidências carregadas e depois definir a Data do teste e o Resultado do teste. Os valores de resultado do teste disponíveis são **Aprovado**, **Reprovado-Baixo Risco**, **Reprovado-Médio Risco** e **Reprovado-Alto Risco**. 
 
 ## <a name="managing-action-items"></a>Gerenciar itens de ação
 
-As pessoas envolvidas no processo de avaliação em sua organização podem usar o Gerenciador de Conformidade para examinar os controles gerenciados pelo cliente de todas as avaliações para as quais eles são usuários. Quando um usuário entra no Gerenciador de Conformidade e abre o painel **Itens de ação**, é exibida uma lista dos itens de ação atribuídos a ele. Dependendo da função do Gerenciador de Conformidade atribuída ao usuário, eles podem fornecer detalhes de implementações ou testes, atualizar o status ou atribuir itens de ação. 
+As pessoas envolvidas no processo de avaliação da sua organização podem usar o Gerenciador de Conformidade para revisar controles gerenciados pelo cliente de todas as Avaliações das quais são usuários. Quando o usuário entra no Gerenciador de Conformidade e abre o painel **Itens de Ação**, é exibida uma lista de Itens de Ação que foram atribuídos a ela. Dependendo da função do Gerenciador de Conformidade atribuída ao usuário, ele pode fornecer detalhes da implementação ou dos testes, atualizar o Status ou atribuir Itens de Ação. 
   
 Como os controles de certificação geralmente são implementados por uma pessoa e testados por outra, o item de ação do controle pode ser atribuído a uma pessoa para a implementação e, quando estiver concluída, essa pessoa pode reatribuir o item de ação do controle para a próxima pessoa controlar o teste e carregar as evidências. Essa atribuição/reatribuição de ações de controle pode ser realizada por todos os usuários que tenham uma função no Gerenciador de Conformidade com as permissões adequadas, permitindo o gerenciamento central de tarefas de controle ou o encaminhamento descentralizado de itens de ação de controle, do implementador ao testador, conforme apropriado.
   
@@ -617,7 +617,7 @@ Para atribuir um item de ação:
     
 2. Você pode clicar em **Filtrar** e usar os controles de filtros para localizar o controle de avaliação específico que você deseja atribuir ou 
     
-3. Role para baixo até a seção Controles Gerenciados por Cliente, expanda a família de controle e role pela lista de controles até localizar o controle de avaliação a atribuir
+3. Role para baixo até a seção Controles Gerenciados pelo Cliente, expanda a família de controle e role pela lista de controles até localizar o controle de avaliação a ser atribuído
     
 4. Na coluna **Usuário Atribuído**, clique em **Atribuir**. 
     
@@ -635,7 +635,7 @@ As anotações associadas aos itens de ação são mantidas na seção Anotaçõ
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportar informações de uma avaliação
 
-Você pode exportar a avaliação de um arquivo do Excel, que pode ser revisada por participantes de conformidade em sua organização e fornecida para auditores e regulamentadores. Este relatório da avaliação é como um instantâneo da avaliação na data e hora em que o relatório foi criado e contém os detalhes dos controles gerenciados da Microsoft e do cliente para essa avaliação, incluindo o status de implementação de controle, a data e os resultados dos testes de controles, e fornece os links para os documentos de evidências carregados. É recomendável exportar o relatório de avaliação antes do arquivamento da avaliação, pois avaliações arquivadas não mantêm os links para os documentos carregados.
+É possível exportar uma Avaliação para um arquivo do Excel, que pode ser revisado por interessados na conformidade da sua organização e fornecido para auditores e reguladores. Este relatório de avaliação é um instantâneo da avaliação a partir da data e da hora em que o relatório foi criado e contém os detalhes dos controles gerenciados pela Microsoft e dos controles gerenciados pelo cliente para essa avaliação, incluindo o status da implementação do controle e a data do teste de controle e os resultados do teste, além disso, fornece links para os documentos de provas carregados. É recomendável que você exporte o relatório de avaliação antes de arquivar uma avaliação já que as avaliações arquivadas não retêm seus links para documentos carregados.
   
 Para exportar um relatório de Avaliação:
   
@@ -684,7 +684,7 @@ Por padrão, a Pesquisa retorna resultados de Documentos e você pode usar os Fi
   
 ![Portal de Confiança do Serviço – pesquisa em documentos com filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
-Clique no link Gerenciador de Conformidade para exibir os resultados de pesquisa para controles de avaliação do Gerenciador de Conformidade. Os resultados listados na pesquisa mostram a data em que a avaliação foi criada, o nome do agrupamento da avaliação, o serviço de nuvem aplicável e se os controles são gerenciados pela Microsoft ou pelo cliente.
+Clique no link Gerenciador de Conformidade para exibir os resultados de Pesquisa para controles de gerenciamento do Gerenciador de Conformidade. Os resultados da pesquisa listados mostram a data em que a avaliação foi criada, o nome da do agrupamento de avaliação, o serviço de nuvem aplicável, e se os controles são da Microsoft ou gerenciados pelo cliente.
   
 ![Portal de Confiança do Serviço – pesquisa em controles de gerenciamento de conformidade](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
@@ -698,9 +698,9 @@ O Portal de Confiança do Serviço permite visualizar o conteúdo da página em 
 ![Portal de Confiança do Serviço – opções de conteúdo localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 
-## <a name="change-log-for-customer-managed-controls"></a>Alterar log para Controles gerenciados do cliente
+## <a name="change-log-for-customer-managed-controls"></a>Alterar log para Controles gerenciados pelo cliente
 
-O Gerenciador de Conformidade foi projetado para ser atualizado regularmente para acompanhar as mudanças nos requisitos regulamentares e as mudanças nos nossos serviços em nuvem. Essas atualizações incluem alterações nos Controles gerenciados do cliente. Um Log de alterações é fornecido para ajudá-lo a entender o impacto dessas alterações, incluindo os detalhes do conteúdo que está sendo adicionado ou alterado e orientações sobre o efeito que as alterações terão nas avaliações existentes. Geralmente existem dois tipos de alterações:
+O Gerenciador de Conformidade foi desenvolvido para ser atualizado regularmente para acompanhar as alterações nos requisitos de regulamentação, bem como as alterações em nossos serviços de nuvem. Essas atualizações incluem alterações nos controles gerenciados pelo cliente. Um Log de Alterações é fornecido para você entender o impacto dessas alterações, inclusive os detalhes do conteúdo adicionado ou alterado e orientações sobre o efeito das alterações nas Avaliações existentes. Em geral, há dois tipos de alterações:
   
 - Uma alteração **principal** é uma alteração significativa de uma ação de cliente, como adição ou remoção de um controle ou etapas numeradas específicas, ou como uma alteração nas orientações sobre responsabilidades, recomendações ou evidências. No caso de alterações principais, recomendamos avaliar novamente sua implementação e/ou avaliação do controle afetado.
     
