@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547936"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168119"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correção de erros durante o processamento de dados
 
@@ -27,7 +27,7 @@ A correção de erros permite que os administradores de descoberta eletrônica c
 
 Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de descoberta eletrônica avançada.
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Criando uma sessão de correção de erro para corrigir arquivos com erros de processamento
+## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Criar uma sessão de correção de erro para corrigir arquivos com erros de processamento
 
 >[!NOTE]
 >Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correções de **erro** no menu suspenso **Exibir** .
@@ -36,11 +36,11 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
 2. Selecione os erros que você deseja corrigir clicando no botão de opção ao lado do tipo de erro ou tipo de arquivo.  No exemplo a seguir, estamos corrigindo um arquivo protegido por senha.
 
-3. Clique em **+ nova correção de erro**.
+3. Clique em **nova correção de erro**.
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    A sessão de correção de erro será iniciada, começando com um estágio de preparação onde os arquivos com erros são copiados para um local seguro do Azure para que eles possam ser baixados.
+    A sessão de correção de erro começa com um estágio de preparação onde os arquivos com erros são copiados para um local de armazenamento do Azure fornecido pela Microsoft para que você possa baixá-los para o computador local para correção.
 
     ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -48,24 +48,18 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
     ![Baixar arquivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.
-
-    >[!NOTE]
-    >Recomendamos que você use um caminho de arquivo local em vez de um caminho de rede remoto para obter o desempenho ideal.
-
-    > [!NOTE]
-    > Se você ainda não instalou o AzCopy, você pode instalá-lo daqui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+5. Para baixar arquivos, especifique o **caminho de destino para download**. Este é um caminho no computador local onde o arquivo é baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado. Você pode alterar esse caminho, se necessário. Se você alterar, recomendamos que você use um caminho de arquivo local para o melhor desempenho. Não use um caminho de rede remoto.
 
 6. Copie o comando predefinido clicando em **copiar para área de transferência**. Inicie um prompt de comando do Windows, Cole o comando e pressione **Enter**.  
 
-    Os arquivos serão baixados.
+    Os arquivos são baixados.
 
-    ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparar para correção de erros](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md).
+    > Você deve usar o AzCopy v 8.1 para usar com êxito o comando fornecido na página **baixar arquivos** . Você também deve usar o AzCopy v 8.1 para carregar os arquivos na etapa 10 abaixo. Para instalar esta versão do AzCopy, confira [transferir dados com o AzCopy v 8.1 no Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Se o comando AzCopy fornecido falhar, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](troubleshooting-azcopy.md).
 
-7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
+7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, várias ferramentas de quebra de senha podem ser usadas. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     > [!NOTE]
     > É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
 
@@ -79,13 +73,13 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Por fim, retorne à descoberta eletrônica avançada e clique em **Avançar: processar arquivos**.
+11. Retorne à descoberta eletrônica avançada e clique em **Avançar: processar arquivos**.
 
-12. Quando o processamento estiver concluído.  Você pode retornar ao conjunto de revisão e ver o arquivo corrigido.
+12. Quando o processamento estiver concluído. Você pode retornar ao conjunto de revisão e ver o arquivo corrigido.
 
 ## <a name="what-happens-when-files-are-remediated"></a>O que acontece quando os arquivos são corrigidos
 
-Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos: 
+Quando os arquivos corrigidos são carregados, os metadados originais são preservados, exceto os seguintes campos: 
 
 - ExtractedTextSize
 - HasText
@@ -97,4 +91,4 @@ Quando os arquivos corrigidos são carregados, os metadados originais são prese
 - WordCount
 - WorkingsetId
 
-Para obter uma definição de todos os campos de metadados do documento na descoberta eletrônica avançada, confira [campos de metadados do documento](document-metadata-fields.md).
+Para obter uma definição de todos os campos de metadados na descoberta eletrônica avançada, confira [campos de metadados do documento](document-metadata-fields.md).

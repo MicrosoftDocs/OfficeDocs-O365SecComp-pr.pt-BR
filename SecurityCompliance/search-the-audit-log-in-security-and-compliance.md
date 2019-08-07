@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use o centro de conformidade & segurança para pesquisar o log de auditoria unificada para exibir as atividades do usuário e do administrador na sua organização do Office 365. '
-ms.openlocfilehash: d2e099343581c8842551491eb885534cbcbc961b
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 79309a2145db53f38d5d3c3c29777571d56910ae
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054773"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165687"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no centro de conformidade & segurança
 
@@ -789,18 +789,12 @@ Aqui estão algumas dicas para pesquisar atividades de administração do Exchan
     ![Digite um traço na caixa atividades para filtrar eventos de administração do Exchange](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
   
 - Para obter informações sobre qual cmdlet foi executado, quais parâmetros e valores de parâmetro foram usados e quais objetos foram afetados, você pode exportar os resultados da pesquisa selecionando a opção **baixar todos os resultados** . Para obter mais informações, consulte [exportar, configurar e exibir registros de log de auditoria](export-view-audit-log-records.md). 
-    
-
-- Você também pode exibir eventos no log de auditoria do administrador do Exchange usando o centro de administração do Exchange. Para obter instruções, consulte [View the Administrator Audit Log](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
-
-> [!IMPORTANT]
->  Para pesquisar e acompanhar o uso do Exchange Online Administrator privilegies use o cmdlet *Search-AdminAuditLog* sobre a *pesquisa-UnifiedAuditLog*.
-
 
 - Você também pode usar o `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando no PowerShell do Exchange Online para retornar apenas os registros de auditoria do log de auditoria do administrador do Exchange. Pode levar até 30 minutos após um cmdlet do Exchange ser executado para que a entrada do log de auditoria correspondente seja retornada nos resultados da pesquisa. Para obter mais informações, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). Para obter informações sobre como exportar os resultados de pesquisa retornados pelo cmdlet **Search-UnifiedAuditLog** para um arquivo CSV, consulte a seção "dicas para exportar e exibir o log de auditoria" em [exportar, configurar e exibir registros de log de auditoria](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Você também pode exibir eventos no log de auditoria do administrador do Exchange usando o centro de administração do Exchange ou executando o **Search-AdminAuditLog** no PowerShell do Exchange Online. Para obter instruções, veja:
-   - [Exibir o log de auditoria do administrador](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx). 
+- Você também pode exibir eventos no log de auditoria do administrador do Exchange usando o centro de administração do Exchange ou executando o **Search-AdminAuditLog** no PowerShell do Exchange Online. Essa é uma boa maneira de Pesquisar especificamente atividades realizadas por administradores do Exchange Online. Para obter instruções, veja:
+   
+   - [Exibir o log de auditoria do administrador](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx) 
    
    -  [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
    

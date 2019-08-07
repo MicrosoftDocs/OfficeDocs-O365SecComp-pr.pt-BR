@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumo: Configure um site de equipe do SharePoint Online isolado do restante da organização no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152583"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053086"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste
 
@@ -59,7 +59,7 @@ Se você só quiser criar um site de equipe isolado do SharePoint Online de form
 Se você quiser criar um site de equipe do SharePoint Online isolado em uma configuração empresarial simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
   
 > [!NOTE]
-> A criação de um site isolado do SharePoint Online não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do AD no Windows Server. Ele é fornecido aqui como uma opção para que você possa testar um site do SharePoint Online isolado e fazer testes com ele em um ambiente que representa uma organização comum. 
+> A criação de um site do SharePoint Online isolado não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). Ele é fornecido aqui como uma opção para que você possa testar um site do SharePoint Online isolado e fazer testes com ele em um ambiente que representa uma organização comum. 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: criar contas de usuário e grupos de acesso
 
@@ -235,7 +235,7 @@ Agora, vamos demonstrar o acesso usando a conta de usuário do designer de clien
     
 11. Na nova guia **Projeto X-Documentos** em seu navegador, clique em **Novo > Documento do Word**.
     
-12. Digite algum texto na página **Word Online**, aguarde até o status indicar **Salvo**, clique no botão Voltar de seu navegador e atualize a página. Você deverá ver um novo **Document.docx** na pasta **Documentos**.
+12. Digite algum texto na página, espere o status indicar que foi **salvo**, clique no botão voltar do navegador e atualize a página. Você deverá ver um novo **Document.docx** na pasta **Documentos**.
     
 13. Clique nas reticências do documento **Document.docx** e clique em **Obter um link**.
     

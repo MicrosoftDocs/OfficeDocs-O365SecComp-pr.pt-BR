@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Resumo: Percorra o processo de design para sites de equipe isolados do SharePoint Online.'
-ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 19f030f5210fb6742098543ae91117a90d583242
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150313"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053118"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Projetar um site de equipe do SharePoint Online isolado
 
@@ -31,11 +31,11 @@ Este artigo orienta as principais decisões de design que você deve fazer antes
 
 Todos os sites de equipe do SharePoint Online por padrão são criados com os seguintes grupos do SharePoint:
   
-- \<Membros name> de site
+- \<Membros do nome do site>
     
-- \<Visitantes do site name>
+- \<nome do site> visitantes
     
-- \<Proprietários de name> de site
+- \<nome do site> proprietários
     
 Esses grupos são separados dos grupos do Office 365 e do Azure Active Directory (AD) e são a base para atribuir permissões para os recursos do site.
   
@@ -43,9 +43,9 @@ O conjunto de permissões específicas que determina o que um membro de um grupo
   
 |**Grupo do SharePoint**|**Nível de permissão**|
 |:-----|:-----|
-|\<Membros name> de site  <br/> |Edit  <br/> |
-|\<Visitantes do site name>  <br/> |Ler  <br/> |
-|\<Proprietários de name> de site  <br/> |Controle total  <br/> |
+|\<Membros do nome do site>  <br/> |Edit  <br/> |
+|\<nome do site> visitantes  <br/> |Ler  <br/> |
+|\<nome do site> proprietários  <br/> |Controle total  <br/> |
    
  Práticas **recomendadas:** Você pode criar grupos adicionais do SharePoint e níveis de permissão. No entanto, recomendamos o uso dos grupos e níveis de permissão padrão do SharePoint para seu site isolado do SharePoint Online.
   
@@ -59,35 +59,35 @@ Você pode atribuir permissões aos usuários adicionando sua conta de usuário 
   
 Usando os grupos padrão do SharePoint como exemplo:
   
-- Os membros do grupo ** \<site name> Members** SharePoint, que podem incluir contas de usuário e grupos, recebem o nível de permissão **Editar**
+- Os membros do grupo ** \<nome do site> Membros** do SharePoint, que podem incluir contas de usuário e grupos, recebem o nível de permissão **Editar**
     
-- Os membros do grupo ** \<site name> visitantes** do SharePoint, que podem incluir contas de usuário e grupos, recebem o nível de permissão de **leitura**
+- Os membros do grupo ** \<nome do site> visitantes** do SharePoint, que podem incluir contas de usuário e grupos, recebem o nível de permissão de **leitura**
     
-- Os membros do grupo ** \<sites name> proprietários do site** , que podem incluir contas de usuário e grupos, recebem o nível de permissão **controle total**
+- Os membros do grupo ** \<nome do site> proprietários** do SharePoint, que podem incluir contas de usuário e grupos, recebem o nível de permissão **controle total**
     
  Práticas **recomendadas:** Embora você possa gerenciar permissões por meio de contas de usuário individuais, recomendamos usar um único grupo do Azure AD, conhecido como grupo de acesso, em vez disso. Isso simplifica o gerenciamento de permissões por meio da associação no grupo de acesso, em vez de gerenciar a lista de contas de usuário para cada grupo do SharePoint.
   
-Os grupos do Azure AD para Office 365 são diferentes dos grupos do Office 365. Os grupos do Azure AD aparecem no centro de administração do Office com o **tipo** definido como **segurança** e não têm um endereço de email. Os grupos do Azure AD podem ser gerenciados em:
+Os grupos do Azure AD para Office 365 são diferentes dos grupos do Office 365. Os grupos do Azure AD aparecem no centro de administração do Microsoft 365 com o **tipo** definido como **segurança** e não têm um endereço de email. Os grupos do Azure AD podem ser gerenciados em:
   
-- Windows Server Active Directory (AD)
+- Serviços de Domínio Active Directory (AD DS)
     
-    Estes são os grupos que foram criados em sua infraestrutura local do AD do Windows Server e estão sincronizados com a sua assinatura do Office 365. No centro de administração do Office, esses grupos têm **** um status **sincronizado com o Active Directory**.
+    Estes são grupos que foram criados em sua infraestrutura do AD DS local e sincronizados com a sua assinatura do Office 365. No centro de administração do Microsoft 365, esses grupos têm **** um status **sincronizado com o Active Directory**.
     
 - Office 365
     
-    Estes são os grupos que foram criados usando o centro de administração do Office, o portal do Azure ou o Microsoft PowerShell. No centro de administração do Office, esses grupos têm um **status** de **nuvem**.
+    Estes são os grupos que foram criados usando o centro de administração do Microsoft 365, o portal do Azure ou o Microsoft PowerShell. No centro de administração do Microsoft 365, esses grupos têm um **status** de **nuvem**.
     
- Práticas **recomendadas:** Se você estiver usando o Windows Server AD no local e estiver sincronizando com sua assinatura do Office 365, realize o gerenciamento de usuário e de grupo com o Windows Server AD.
+ Práticas **recomendadas:** Se você estiver usando o AD DS no local e estiver sincronizando com sua assinatura do Office 365, realize o gerenciamento de usuário e de grupo com o AD DS.
   
 Para sites de equipe isolados do SharePoint Online, a estrutura de grupo recomendada é semelhante a esta:
   
 |**Grupo do SharePoint**|**Grupo de acesso baseado no AD do Azure**|**Nível de permissão**|
 |:-----|:-----|:-----|
-|\<Membros name> de site  <br/> |\<Membros name> de site  <br/> |Edit  <br/> |
-|\<Visitantes do site name>  <br/> |\<Visualizadores de name> de site  <br/> |Ler  <br/> |
-|\<Proprietários de name> de site  <br/> |\<Administradores de name> de site  <br/> |Controle total  <br/> |
+|\<Membros do nome do site>  <br/> |\<Membros do nome do site>  <br/> |Edit  <br/> |
+|\<nome do site> visitantes  <br/> |\<Visualizadores de nome de site>  <br/> |Ler  <br/> |
+|\<nome do site> proprietários  <br/> |\<nome do site> administradores  <br/> |Controle total  <br/> |
    
- Práticas **recomendadas:** Embora você possa usar os grupos do Office 365 ou do Azure AD como membros de grupos do SharePoint, recomendamos usar os grupos do Azure AD. Os grupos do Azure AD, gerenciados pelo Windows Server AD ou pelo Office 365, oferecem mais flexibilidade para usar grupos aninhados para atribuir permissões.
+ Práticas **recomendadas:** Embora você possa usar os grupos do Office 365 ou do Azure AD como membros de grupos do SharePoint, recomendamos usar os grupos do Azure AD. Os grupos do Azure AD, gerenciados pelo AD DS ou pelo Office 365, oferecem mais flexibilidade para usar grupos aninhados para atribuir permissões.
   
 Estes são os grupos padrão do SharePoint configurados para usar grupos de acesso baseados no Azure AD.
   
@@ -95,9 +95,9 @@ Estes são os grupos padrão do SharePoint configurados para usar grupos de aces
   
 Ao projetar os três grupos de acesso, tenha em mente o seguinte:
   
-- Deve haver apenas alguns membros no grupo de acesso de ** \<administradores do site name>** , correspondente a um pequeno número de administradores do SharePoint Online que estão gerenciando o site de equipe.
+- Deve haver apenas alguns membros no grupo nome do ** \<site> administradores** de acesso, correspondendo a um pequeno número de administradores do SharePoint Online que estão gerenciando o site de equipe.
     
-- A maioria dos membros do site estão nos grupos de acesso de ** \<name> de site** ou ** \<** membros do site name> visualizadores. Como os membros do site no grupo de acesso de ** \<membros do site name>** podem excluir ou modificar recursos no site, considere cuidadosamente sua associação. Quando estiver em dúvida, adicione o membro de site ** \<** ao grupo de acesso name> visualizadores de site.
+- A maioria dos membros do site estão no ** \<nome do site> Membros** ou ** \<nome do site>** os grupos de acesso do visualizador. Como os membros do site no grupo ** \<nome do site> Members** Access têm a capacidade de excluir ou modificar recursos no site, considere cuidadosamente sua associação. Quando estiver em dúvida, adicione o membro do site ao grupo de acesso de ** \<nome do site> visualizadores** .
     
 Veja um exemplo de grupos do SharePoint e grupos de acesso para um site isolado chamado projeto x.
   
