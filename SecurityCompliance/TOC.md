@@ -6,10 +6,10 @@
 ## [O novo centro de segurança do Microsoft 365 e o centro de conformidade do Microsoft 365](microsoft-security-and-compliance.md)
 ### [Centro de conformidade do Microsoft 365](microsoft-365-compliance-center.md)
 ### [Centro de segurança do Microsoft 365](overview-security-center.md)
-### [Microsoft Secure Score](microsoft-secure-score.md)
+### [Permissões no centro de segurança do Microsoft 365 e no centro de conformidade do Microsoft 365](permissions-microsoft-365-compliance-security.md)
+### [Classificação de segurança da Microsoft](microsoft-secure-score.md)
 ## [Ir para o Centro de Conformidade e Segurança](go-to-the-securitycompliance-center.md)
 ### [Permissões no Centro de Conformidade e Segurança](permissions-in-the-security-and-compliance-center.md)
-### [Permissões no centro de segurança do Microsoft 365 e no centro de conformidade do Microsoft 365](permissions-microsoft-365-compliance-security.md)
 ### [Conceder aos usuários acesso ao Centro de Conformidade e Segurança](grant-access-to-the-security-and-compliance-center.md)
 ## [Usar sua assinatura gratuita do Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plano de segurança e conformidade no Office 365](plan-for-security-and-compliance.md)
@@ -81,7 +81,8 @@
 ## Plano de arquivos
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
-### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Exibição do uso do rótulo com análises de rótulo](label-analytics.md)
 ### [Exibir a atividade de rótulos de documentos](view-label-activity-for-documents.md)
 ### [Exibir os relatórios de governança de dados](view-the-data-governance-reports.md)
@@ -116,7 +117,8 @@
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
 ### [Cumprir com a Regra SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Retenção baseada em eventos](event-driven-retention.md)
 ### [Automatizar retenção baseada em eventos](automate-event-driven-retention.md)
 ## [Descartar dados](disposition-reviews.md)
@@ -260,7 +262,8 @@
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
 ### [Cumprir com a Regra SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Retenção baseada em eventos](event-driven-retention.md)
 ### [Automatizar retenção baseada em eventos](automate-event-driven-retention.md)
 ## [Descartar dados](disposition-reviews.md)
