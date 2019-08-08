@@ -1,7 +1,7 @@
 ---
 title: O que as funções DLP procuram
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os tipos de informações confidenciais procuram um padrão específico e o corroboratem, garantindo a formatação adequada, aplicando as somas de verificação e procurando palavras-chave relevantes ou outras informações. Algumas dessas funcionalidades são realizadas por funções internas. Este tópico explica o que essas funções procuram, para ajudar você a entender como funcionam os tipos de informações confidenciais predefinidas.
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077997"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230315"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>O que as funções DLP procuram
 
@@ -27,7 +27,7 @@ A política DLP inclui tipos de informação confidencial, como números de cart
   
 Este tópico explica o que essas funções procuram, para ajudar você a entender como funcionam os tipos de informações confidenciais predefinidas. Para saber mais, consulte [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 Essa função procura uma data no formato comumente usado nos EUA. Isso inclui os formatos "mês/dia/ano", "mês-dia-ano" e "ano dia do mês". Os nomes ou as abreviações de meses não diferenciam maiúsculas de minúsculas. 
   
@@ -55,7 +55,7 @@ Nomes de meses aceitos:
     
   - Jan. Fev. mar. abr. Maio de 1º de julho de agosto de setembro. Dec.
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 Essa função procura uma data no formato comumente usado na UE (e na maioria dos lugares fora dos Estados Unidos). Isso inclui os formatos de "dia/mês/ano", "dia-mês-ano" e "dia mês ano". Os nomes ou as abreviações de meses não diferenciam maiúsculas de minúsculas.
   
@@ -119,7 +119,7 @@ Nomes de meses aceitos:
     
   - Enero Fev. Marzo abr. Mayo Jun. Jul. agosto set./set. Outubro. Nov. DIC.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (preterido)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (preterido)
 
 > [!NOTE]
 > Essa função foi preterida porque dá suporte apenas a `Func_eu_date` nomes de meses em Português, que agora estão incluídos na função acima. 
@@ -150,7 +150,7 @@ Nomes de meses aceitos:
     
   - Jan fev mar abr mai jun jul atrás Set out nov dez
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (preterido)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (preterido)
 
 > [!NOTE]
 > Essa função foi preterida porque dá suporte apenas a `Func_eu_date` nomes de meses em Holandês, que agora estão incluídos na função acima. 
@@ -181,7 +181,7 @@ Nomes de meses aceitos:
     
   - Jan fevereiro de maart de abril de Mei jun jul setembro de agosto de dezembro de Okt de Nov
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 Essa função procura uma data nos formatos usados por cartões de crédito e débito, que exclui os dias e usa os meses. Essa função coincidirá datas no formato de "mês/ano", "Mês-Year", "[month Name] Year" e "[month abreviation] Year". Os nomes ou as abreviações de meses não diferenciam maiúsculas de minúsculas.
   
@@ -213,7 +213,7 @@ Nomes de meses aceitos:
     
   - Jan fev mar de junho de julho de agosto de agosto de abril de dezembro
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 Essa função procura por um nome ou sigla de estado dos EUA seguida de um CEP válido, como são usados em endereços postais. O CEP deve ser um dos CEPs corretos associados ao nome ou sigla do estado americano. O nome do estado americano e o CEP não podem ser separados por pontos ou letras.
   

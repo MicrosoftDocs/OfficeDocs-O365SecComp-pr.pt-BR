@@ -3,7 +3,7 @@ title: Modos de exibição no Gerenciador de ameaças e detecções em tempo rea
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre os vários tipos de modos de exibição disponíveis no Gerenciador de ameaças e detecções em tempo real.
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600814"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230385"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Modos de exibição no Gerenciador de ameaças e detecções em tempo real
 
@@ -72,9 +72,9 @@ Quando você seleciona um item na lista, como uma URL que foi detectada, um pain
 
 ![Detalhes sobre uma URL detectada](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>Email > relatado pelo usuário
+## <a name="email--submissions"></a>Envios de > de email
 
-Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **email** > **reportado pelo usuário**. Este modo de exibição mostra o email que os usuários relataram como lixo eletrônico, não lixo eletrônico ou email de phishing. 
+Para exibir esse relatório, no Explorer (ou detecções em tempo real), escolha **Exibir** > **** > **envios**de email. Este modo de exibição mostra o email que os usuários relataram como lixo eletrônico, não lixo eletrônico ou email de phishing. 
 
 ![Mensagens de email relatadas por usuários](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ A capacidade de filtrar em um clique e navegar para detalhes específicos pode p
 
 ## <a name="queries-and-filters"></a>Consultas e filtros
 
-O Explorer (e o relatório de detecções em tempo real) tem vários filtros e recursos de consulta avançados que permitem detalhar detalhes, como os principais usuários direcionados, principais famílias de malware, tecnologia de detecção e muito mais. Cada tipo de relatório oferece várias maneiras de exibir e explorar dados.
+O Explorer (bem como o relatório de detecções em tempo real) tem vários filtros e recursos de consulta avançados que permitem detalhar detalhes, como os principais usuários direcionados, principais famílias de malware, tecnologia de detecção e muito mais. Cada tipo de relatório oferece várias maneiras de exibir e explorar dados.
 
 > [!IMPORTANT]
-> Não use caracteres curinga, como um asterisco (*) ou um ponto de interrogação (?), na barra de consulta para o Explorer (ou detecções em tempo real). Quando você pesquisa o campo assunto de mensagens de email, Explorer (ou detecções em tempo real) executará a correspondência parcial e produzirá resultados similares a uma pesquisa curinga.
+> Não use caracteres curinga, como um asterisco ou um ponto de interrogação, na barra de consulta para o Explorer (ou detecções em tempo real). Quando você pesquisa o **campo assunto** de mensagens de email, Explorer (ou detecções em tempo real) executará a correspondência parcial e produzirá resultados similares a uma pesquisa curinga.

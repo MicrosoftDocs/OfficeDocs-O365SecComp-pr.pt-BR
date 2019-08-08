@@ -1,9 +1,9 @@
 ---
-title: Envios de administradores no Office 365
-ms.author: brwilcox
-author: briwilcox
+title: Envios de administradores no Office 365, envios do O365, problema do Office 365 spam, o O365 falso negativo, enviar phishing no Office 365, enviar email para verificação, email suspeito no Office 365, examinar um email, fazer com que a Microsoft examine o phishing, peça à Microsoft para spam, enviar email, enviar email
+ms.author: tracyp
+author: MSFTTracyP
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,26 +12,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Saiba como enviar mensagens, URLs e arquivos potencialmente nocivos à Microsoft.
-ms.openlocfilehash: 2e0bee0dd0a1ccc39d92ea9e175fc7fb10a5b6d3
-ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
+description: Saiba como enviar emails suspeitos, emails de phishing suspeitos, spam e outras mensagens, URLs e arquivos potencialmente nocivos do seu locatário do Office 365 para a Microsoft para verificação.
+ms.openlocfilehash: 5a909e8b587e2a1265c1b2afbd5e063d46a04e2c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643902"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230945"
 ---
-# <a name="admin-submissions-in-office-365"></a>Envios de administradores no Office 365
+# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Como enviar spam, phishing, URLs e arquivos suspeitos à Microsoft para a verificação do Office 365
 
-Agora, os administradores podem enviar emails usando a ID de mensagem de arquivo ou de rede, URLs e arquivos para verificação da Microsoft no Office 365. A seção de envios atualizados ainda inclui mensagens relatadas pelo usuário e estão disponíveis para todos os clientes que usam o EOP.
+Os administradores podem enviar emails usando ID de mensagem de arquivo ou rede, URLs e arquivos para verificação da Microsoft no Office 365. A seção de envios atualizados ainda inclui mensagens relatadas pelo usuário e estão disponíveis para todos os clientes que usam o EOP.
 
 Ao enviar um email, você receberá informações sobre qualquer política que possa ter permitido o email de entrada em seu locatário, bem como o exame de qualquer URL e anexo no email. As políticas que podem ter permitido um email incluem a lista de remetentes confiáveis de um usuário individual, bem como as políticas de nível de locatário, como regras ETR. 
 
-
-## <a name="how-to-submit-content"></a>Como enviar conteúdo
+## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>Como enviar conteúdo para a verificação da Microsoft para o Office 365
 
 Para enviar conteúdo à Microsoft, clique no botão **novo envio** no lado superior esquerdo da página envios. Um submenu no lado direito da página aparece com a opção de enviar um email, uma URL ou um arquivo. 
 
-### <a name="email"></a>Email
+### <a name="submit-an-email-to-microsoft"></a>Enviar um email para a Microsoft
 ![Exemplo de envio de email](media/submission-flyout-email.PNG)
 1. Para enviar um email, selecione **email** e ESPECIFIQUE a **ID da mensagem da rede** de email ou carregue o arquivo de email. 
 
@@ -45,7 +44,7 @@ Para enviar conteúdo à Microsoft, clique no botão **novo envio** no lado supe
 
 4. Clique no botão **Enviar** .
 
-### <a name="url"></a>URL
+### <a name="submit-a-url-to-microsoft"></a>Enviar uma URL para a Microsoft
 ![Exemplo de envio de email](media/submission-url-flyout.png)
 1. Para enviar uma URL de **** seleção de URL do submenu. Digite a URL completa incluindo o protocolo (**https://**). 
 
@@ -54,7 +53,7 @@ Para enviar conteúdo à Microsoft, clique no botão **novo envio** no lado supe
 2. Clique no botão **Enviar** . 
 
 
-### <a name="file"></a>Arquivo
+### <a name="submit-a-file-to-microsoft"></a>Enviar um arquivo para a Microsoft
 ![Exemplo de envio de email](media/submission-file-flyout.PNG)
 1. Para enviar um arquivo de **** seleção de arquivo do submenu e carregar o arquivo que você deseja verificar. 
 

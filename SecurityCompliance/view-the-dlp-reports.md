@@ -1,7 +1,7 @@
 ---
 title: Exibir os relatórios de prevenção contra perda de dados
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/7/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os relatórios de DLP no Office 365, você pode exibir rapidamente o número de correspondências de política de DLP, substituições ou falsos positivos; Veja se eles estão em tendência de cima ou para baixo ao longo do tempo; filtrar o relatório de formas diferentes; e exiba detalhes adicionais selecionando um ponto em uma linha no gráfico.
-ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077297"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230365"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Exibir os relatórios de prevenção contra perda de dados
 
@@ -73,11 +73,11 @@ Os relatórios podem mostrar ideias e recomendações onde você pode clicar no 
   
 ## <a name="permissions-for-dlp-reports"></a>Permissões para relatórios de DLP
 
-Para exibir relatórios de DLP no centro de conformidade do & de segurança, você precisa ter a atribuição de:
+Para exibir relatórios de DLP no centro de conformidade & segurança, você precisa ter a atribuição de:
 
 - Função de **leitor de segurança** no centro de administração do Exchange. Por padrão, essa função é atribuída aos grupos de função de gerenciamento de organização e leitor de segurança no centro de administração do Exchange.
 
-- **Somente exibição** a função de gerenciamento de conformidade DLP no centro de conformidade do _AMP_ de segurança. Por padrão, essa função é atribuída aos grupos de função Administrador de conformidade, gerenciamento de organização, administrador de segurança e leitor de segurança no centro de conformidade do & de segurança.
+- **Somente exibição** a função de gerenciamento de conformidade DLP no centro de conformidade de & de segurança. Por padrão, essa função é atribuída aos grupos de função Administrador de conformidade, gerenciamento de organização, administrador de segurança e leitor de segurança no centro de conformidade de & de segurança.
 
 - Função de **destinatários somente para exibição** no centro de administração do Exchange. Por padrão, essa função é atribuída ao gerenciamento de conformidade, ao gerenciamento da organização e aos grupos de função de gerenciamento da organização somente para exibição no centro de administração do Exchange.
 

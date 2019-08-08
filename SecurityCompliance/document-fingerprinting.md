@@ -1,7 +1,7 @@
 ---
 title: Impressão Digital de Documento
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Os funcionários de TI em sua organização lidam com vários tipos de informações confidenciais em um dia comum. A Impressão Digital de Documento facilita a proteção dessas informações identificando formas padrão usadas em sua organização. Este tópico descreve os conceitos por trás da impressão digital de documento e como criar um usando o PowerShell.
-ms.openlocfilehash: 56f67d1e3948ed66defa10a0815a4fdf87a13cb1
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 776410ec042e629e32fa6b03a2cb4fe0f2bacd2e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199538"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230685"
 ---
 # <a name="document-fingerprinting"></a>Impressão Digital de Documento
 

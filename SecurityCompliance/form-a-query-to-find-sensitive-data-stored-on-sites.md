@@ -1,8 +1,8 @@
 ---
 title: Criar uma consulta para encontrar dados confidenciais armazenados em sites
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com a prevenção de perda de dados (DLP) no SharePoint Online, você pode descobrir documentos que contêm dados confidenciais em todo o locatário. Após descobrir os documentos, você pode trabalhar com os proprietários do documento para proteger os dados. Este tópico pode ajudá-lo a formar uma consulta para procurar dados confidenciais.
-ms.openlocfilehash: a200cbd802922a694510e82bb8d394fed6bb2a32
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599317"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230545"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Criar uma consulta para encontrar dados confidenciais armazenados em sites
 

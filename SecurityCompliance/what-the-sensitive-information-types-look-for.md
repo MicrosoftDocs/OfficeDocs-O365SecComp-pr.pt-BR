@@ -1,7 +1,7 @@
 ---
 title: O que os tipos de informações confidenciais procuram
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 05/20/2019
 audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 80 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
-ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
-ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
+ms.openlocfilehash: 7f5c879b35f77ef142b8c45965357715f577832e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34247294"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230375"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>O que os tipos de informações confidenciais procuram
 
@@ -65,22 +65,22 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordabarouting"></a>Keyword_ABA_Routing
+#### <a name="keyword_aba_routing"></a>Keyword_ABA_Routing
 
 - aba
 - aba #
 - aba routing #
 - aba routing number
-- aba#
-- abarouting#
+- aba #
+- abarouting #
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting#
+- americanbankassociationrouting #
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting#
+- bankrouting #
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -122,7 +122,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
+#### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de Identidade Nacional da Argentina 
 - Identidade 
@@ -180,7 +180,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
+#### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
 - swift bank code
 - correspondent bank
@@ -246,7 +246,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
+#### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
 - international driving permits
 - australian automobile association
@@ -279,40 +279,40 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic#
-- DriverLics#
-- DriverLicence#
-- DriverLicences#
+- DriverLic #
+- DriverLics #
+- DriverLicence #
+- DriverLicences #
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic#
-- DriversLics#
-- DriversLicence#
-- DriversLicences#
+- DriversLic #
+- DriversLics #
+- DriversLicence #
+- DriversLicences #
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
 - Drivers Licences#
+- Driver'Lic #
+- Driver'Lics #
+- Driver'Licence #
+- Driver'Licences #
 - Driver'Lic#
 - Driver'Lics#
 - Driver'Licence#
 - Driver'Licences#
-- Driver'Lic#
-- Driver'Lics#
-- Driver'Licence#
-- Driver'Licences#
-- Driver'sLic#
-- Driver'sLics#
-- Driver'sLicence#
-- Driver'sLicences#
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicence #
+- Driver'sLicences #
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
 - Driver's Licences# 
 
-#### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
+#### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - AAA
 - DriverLicense
@@ -331,20 +331,20 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driver'sLicenses
 - Driver's License
 - Driver's Licenses
-- DriverLicense#
-- DriverLicenses#
+- DriverLicense #
+- DriverLicenses #
 - Driver License#
 - Driver Licenses#
-- DriversLicense#
-- DriversLicenses#
+- DriversLicense #
+- DriversLicenses #
 - Drivers License#
 - Drivers Licenses#
+- Driver'License #
+- Driver'Licenses #
 - Driver'License#
 - Driver'Licenses#
-- Driver'License#
-- Driver'Licenses#
-- Driver'sLicense#
-- Driver'sLicenses#
+- Driver'sLicense #
+- Driver'sLicenses #
 - Driver's License#
 - Driver's Licenses#
    
@@ -397,7 +397,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
+#### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
 - bank account details
 - medicare payments
@@ -445,12 +445,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Passaport
+- Passaport #
 - Passportid
 - Passportno
 - passportnumber
@@ -462,11 +462,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-#### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
+#### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
 - Passaport
 - passport details
@@ -522,7 +522,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
+#### <a name="keyword_australia_tax_file_number"></a>Keyword_Australia_Tax_File_Number
 
 - australian business number
 - marginal tax rate
@@ -533,7 +533,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - individual tax return
 - tax file number
 
-#### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
+#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 
 - 00000000
 - 11111111
@@ -604,7 +604,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -664,7 +664,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -724,7 +724,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -775,7 +775,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -830,7 +830,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -924,7 +924,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -984,13 +984,13 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+#### <a name="cep_azureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -1073,7 +1073,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
+#### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - Identidade
 - Registro
@@ -1148,7 +1148,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
+#### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
 - Identificador
@@ -1208,7 +1208,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
+#### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
 - CNPJ 
 - CNPJ/MF 
@@ -1284,7 +1284,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
+#### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
 Cédula de identidade ID nacional número de registro registro de identidade registro de geral RG (esta palavra-chave diferencia maiúsculas de minúsculas) RIC (essa palavra-chave diferencia maiúsculas de minúsculas) 
    
@@ -1337,7 +1337,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
+#### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
 - canada savings bonds
 - canada revenue agency
@@ -1440,12 +1440,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
 - A abreviação da província, por exemplo AB
 - O nome da província, por exemplo, Alberta
 
-#### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
+#### <a name="keyword_canada_drivers_license"></a>Keyword_canada_drivers_license
 
 - DISTRIBUIÇÃO
 - DL
@@ -1516,52 +1516,52 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - identification card
 - identification cards
 - identificador 
-- DISTRIBUIÇÃO
-- DL 
-- CDL 
-- CDLS# 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
-- DriverLicence# 
-- DriverLicences# 
+- DISTRIBUIÇÃO #
+- DL # 
+- CDL # 
+- CDLS # 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
+- DriverLicence # 
+- DriverLicences # 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
-- DriversLicence# 
-- DriversLicences# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
+- DriversLicence # 
+- DriversLicences # 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
 - Drivers Licence# 
 - Drivers Licences# 
-- Driver'Lic# 
-- Driver'Lics# 
-- Driver'License# 
-- Driver'Licenses# 
-- Driver'Licence# 
-- Driver'Licences# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- Driver'Licence # 
+- Driver'Licences # 
 - Driver'Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver'Licenses# 
 - Driver'Licence# 
 - Driver'Licences# 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
-- Driver'sLicence# 
-- Driver'sLicences# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
+- Driver'sLicence # 
+- Driver'sLicences # 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1569,14 +1569,14 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driver's Licence# 
 - Driver's Licences# 
 - Permis de Conduire# 
-- ID 
-- código 
+- ID # 
+- código # 
 - idcard card# 
 - idcard cards# 
-- idcard# 
+- idcard # 
 - identification card# 
 - identification cards# 
-- identificador 
+- identificador # 
    
 ## <a name="canada-health-service-number"></a>Número de serviço de saúde do Canadá
 
@@ -1612,7 +1612,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
+#### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
 - personal health number
 - patient information
@@ -1659,7 +1659,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
+#### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
 - canadian citizenship
 - canadian passport
@@ -1670,12 +1670,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - processing times
 - renewal application
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Passaport
+- Passaport #
 - Passportid
 - Passportno
 - passportnumber
@@ -1687,7 +1687,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
    
@@ -1725,7 +1725,7 @@ São encontradas pelo menos duas palavras-chave do Keyword_canada_phin ou do Key
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcanadaphin"></a>Keyword_canada_phin
+#### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
 - social insurance number
 - health information act
@@ -1743,7 +1743,7 @@ São encontradas pelo menos duas palavras-chave do Keyword_canada_phin ou do Key
 - patient referral
 - health and wellness
 
-#### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
+#### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
 - Quebec
@@ -1816,7 +1816,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordsin"></a>Keyword_sin
+#### <a name="keyword_sin"></a>Keyword_sin
 
 - sin 
 - social insurance 
@@ -1828,11 +1828,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - numero d'assurance social 
 - national identification number 
 - national id 
-- Sin 
+- Sin # 
 - soc ins 
 - social ins 
 
-#### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
+#### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
 - driver's license 
 - drivers license 
@@ -1890,7 +1890,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordchileidcard"></a>Keyword_chile_id_card
+#### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
 - Número de Identificação Nacional 
 - Cartão de identidade 
@@ -1949,7 +1949,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
+### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
 - Cartão de Identidade da Polônia 
 - POPULAR 
@@ -2009,7 +2009,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordccverification"></a>Keyword_cc_verification
+#### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
 - card verification
 - card identification number
@@ -2075,7 +2075,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - vencimento
 - Venc 
 
-#### <a name="keywordccname"></a>Keyword_cc_name
+#### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - amex
 - american express
@@ -2097,7 +2097,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - carte blanche
 - carteblanche
 - credit card
-- colocado
+- colocado #
 - CC #:
 - expiration date
 - exp date
@@ -2238,7 +2238,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcroatiaidcard"></a>Keyword_croatia_id_card
+#### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
 - Cartão de identidade croata
 - Osobna iskaznica
@@ -2286,7 +2286,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
+#### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
 - Número de Identificação Pessoal
 - Osobni identifikacijski broj 
@@ -2378,7 +2378,7 @@ A soma de verificação passa.
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keyworddenmarkid"></a>Keyword_denmark_id
+#### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
 - Número de Identificação Pessoal
 - PEDIR
@@ -2466,15 +2466,15 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
+#### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
 - account number 
 - card number 
 - card no. 
 - security number 
-- colocado 
+- colocado # 
 
-#### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
+#### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
 - acct nbr 
 - acct num 
@@ -2655,7 +2655,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - visum 
 - vpay   
 
-#### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
+#### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - card identification number
 - card verification 
@@ -2727,7 +2727,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - veiligheidsnummer 
 - verfalldatum 
 
-#### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
+#### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
 
 - ablauf 
 - data de expiracao 
@@ -2880,7 +2880,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
+#### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
 - drivers licence
 - drivers license
@@ -2959,12 +2959,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Passaport
+- Passaport #
 - Passportid
 - Passportno
 - passportnumber
@@ -2976,7 +2976,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
 
@@ -3032,7 +3032,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordfrinsee"></a>Keyword_fr_insee
+#### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
 - INSEE
 - securité sociale
@@ -3101,7 +3101,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
+#### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
 - Führerschein
 - Fuhrerschein
@@ -3169,7 +3169,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Driving Licence 
 - Driving Licences
 
-#### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
+#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
 
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
@@ -3190,7 +3190,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - N-Fuhrerschein 
 - N-Fuehrerschein 
 
-#### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
+#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
 - ausstellungsort
@@ -3256,7 +3256,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordgermanpassport"></a>Keyword_german_passport
+#### <a name="keyword_german_passport"></a>Keyword_german_passport
 
 - reisepass
 - reisepasse
@@ -3264,21 +3264,21 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passaport
 - Passports
 
-#### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
+#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
 - ausstellungsort
 
-#### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
+#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
 
 No-Reisepass NR-Reisepass
 
-#### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
+#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
 
 Reisepass-Nr
 
-#### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
+#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
 
 bnationalit. t
    
@@ -3321,7 +3321,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
+#### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - Cartão de Identidade
 - ID
@@ -3371,7 +3371,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
+#### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - Cartão de identidade grego
 - Tautotita
@@ -3421,7 +3421,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
+#### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - cartão de identidade de Hong Kong
 - HKIDC
@@ -3496,7 +3496,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
+#### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
 - Número da Conta Permanente 
 - APLICAR 
@@ -3533,7 +3533,7 @@ A soma de verificação passa.
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordindiaaadhar"></a>Keyword_india_aadhar
+#### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - Aadhar
 - Aadhaar
 - UID
@@ -3585,7 +3585,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
+#### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
 - KTP
 - Kartu Tanda Penduduk 
@@ -3689,7 +3689,7 @@ Para IPv6, uma política de DLP tem 95% de certeza de que ela detectou este tipo
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordipaddress"></a>Keyword_ipaddress
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
 - IP (esta palavra-chave diferencia maiúsculas de minúsculas)
 - ip address 
@@ -3817,14 +3817,14 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordirelandpps"></a>Keyword_ireland_pps
+#### <a name="keyword_ireland_pps"></a>Keyword_ireland_pps
 
 - Número do Serviço Público Pessoal 
 - Número PPS 
 - Núm PPS 
 - Nº PPS 
 - # PPS 
-- PPS 
+- PPS # 
 - PPSN 
 - Cartão dos Serviços Públicos 
 - Uimhir Phearsanta Seirbhíse Poiblí 
@@ -3873,7 +3873,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
+#### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
 - Bank Account Number 
 - Bank Account 
@@ -3915,7 +3915,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
+#### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
 - מספר זהות 
 - Número de identificação nacional
@@ -3958,7 +3958,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
+#### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
 - numero di patente di guida 
 - patente di guida 
@@ -4017,7 +4017,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
+#### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
 - Checking Account Number 
 - Checking Account 
@@ -4074,7 +4074,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - デビットACCTの番号 
 - デビット口座番号 
 
-#### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
+#### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
 Otemachi
 
@@ -4110,11 +4110,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
+#### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- distribuição 
+- distribuição # 
 - DISTRIBUIÇÃO 
-- DL 
+- DL # 
 - DL 
 - driver license 
 - driver licenses 
@@ -4123,9 +4123,9 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - drivers licenses 
 - driver's licenses 
 - driving licence 
-- driver'lic 
+- driver'lic # 
 - DRIVER'LIC 
-- driver'lics 
+- driver'lics # 
 - state id 
 - state identification 
 - state identification number 
@@ -4170,7 +4170,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjppassport"></a>Keyword_jp_passport
+#### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - パスポート 
 - パスポート番号 
@@ -4209,7 +4209,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
+#### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
 - Resident Register Number 
@@ -4268,7 +4268,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjpsin"></a>Keyword_jp_sin
+#### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
 - Social Insurance No. 
 - Social Insurance Num 
@@ -4311,11 +4311,11 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+#### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
 - Número do cartão de residência
 - Número do cartão de residência
-- N º do cartão de residência
+- Cartão de residência #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Número do Cartão de Identificação da Malásia
@@ -4357,7 +4357,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
+#### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
 - cartão de aplicativo digital
 - e/c
@@ -4424,7 +4424,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
+#### <a name="keyword_netherlands_bsn"></a>Keyword_netherlands_bsn
 
 - Número do serviço do cidadão 
 - BSN 
@@ -4518,7 +4518,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
+#### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
 - Número de identificação pessoal
 - Número de Identificação Norueguês
@@ -4565,7 +4565,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordphilippinesid"></a>Keyword_philippines_id
+#### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
 - Identificação Multiuso Unificada 
 - UMID 
@@ -4604,7 +4604,7 @@ A soma de verificação passa.
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
 - Numer dowodu osobistego
@@ -4648,7 +4648,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
+#### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
 - Nr PESEL
 - PESEL   
@@ -4688,7 +4688,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Numer paszportu
 - Nr. Paszportu
@@ -4727,7 +4727,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordportugalcitizencard"></a>Keyword_portugal_citizen_card
+#### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
 - Cartão de Cidadão
 - Cartão de Identidade Nacional
@@ -4769,7 +4769,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
+#### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
 - Identification Card 
 - I card number 
@@ -4820,7 +4820,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
+#### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
 - Número do Cartão de Identidade do Registro Nacional 
 - Número do Cartão de Identidade 
@@ -4869,7 +4869,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
+#### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - Cartão de identidade
 - ID
@@ -4921,7 +4921,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
+#### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
 - Cartão de identidade nacional 
 - Número de Registro do Cidadão 
@@ -5011,14 +5011,14 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+#### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
 - algumas-senha
 - somepassword
 - secretPassword
 - ISV
 
-#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+#### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -5029,7 +5029,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
     - Qualquer combinação de 1-200 caracteres que sejam letras maiúsculas ou minúsculas, dígitos, um asterisco (*), hífen (-), sublinhado (_) ou caractere de espaço em branco
     - Símbolo maior que (>)
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Observe que tecnicamente, esse tipo de informação confidencial identifica essas palavras-chave usando uma expressão regular, não uma lista de palavras-chave.)
 
@@ -5117,7 +5117,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
+#### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
 - visa requirements 
 - Alien Registration Card 
@@ -5129,12 +5129,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Multiple Entry 
 - G3 Processing Fees 
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number 
 - Passport No 
 - Passport # 
-- Passaport 
+- Passaport # 
 - Passportid 
 - Passportno 
 - passportnumber 
@@ -5146,7 +5146,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport# 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5186,7 +5186,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keywordswift"></a>Keyword_swift
+#### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362 
 - iso 9362 
@@ -5256,7 +5256,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
+#### <a name="keyword_taiwanese_national_id"></a>Keyword_taiwanese_national_id
 
 - 身份證字號 
 - 身份證 
@@ -5310,7 +5310,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
+#### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
 - Número de passaporte ROC 
 - Número de passaporte 
@@ -5355,7 +5355,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
+#### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
 - Certificado de Residente 
 - Cert de Residente 
@@ -5410,7 +5410,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+#### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
 
 - Número de Identificação
 - Número de identificação
@@ -5457,7 +5457,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+#### <a name="keyword_turkish_national_id"></a>Keyword_Turkish_National_Id
 
 - Kimlik TC não
 - TC Kimlik numarası
@@ -5502,7 +5502,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
+#### <a name="keyword_uk_drivers_license"></a>Keyword_uk_drivers_license
 
 - DVLA 
 - light vans 
@@ -5554,7 +5554,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordukelectoral"></a>Keyword_uk_electoral
+#### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
 - council nomination 
 - nomination form 
@@ -5607,21 +5607,21 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
    
-#### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
+#### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - national health service 
 - NHS 
 - health services authority 
 - health authority
 
-#### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
+#### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
 - patient id 
 - patient identification 
 - patient no 
 - patient number
 
-#### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
+#### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
 - GP 
 - DOB 
@@ -5689,7 +5689,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keyworduknino"></a>Keyword_uk_nino
+#### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number 
 - national insurance contributions 
@@ -5735,12 +5735,12 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number 
 - Passport No 
 - Passport # 
-- Passaport 
+- Passaport # 
 - Passportid 
 - Passportno 
 - passportnumber 
@@ -5752,7 +5752,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport# 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5788,7 +5788,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
+#### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
 - Checking Account Number 
 - Checking Account 
@@ -5865,7 +5865,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
+#### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
 - DISTRIBUIÇÃO 
 - DL 
@@ -5873,18 +5873,18 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - CDLS 
 - ID 
 - Código 
-- DISTRIBUIÇÃO 
-- DL 
-- CDL 
-- CDLS# 
-- ID
-- Código 
+- DISTRIBUIÇÃO # 
+- DL # 
+- CDL # 
+- CDLS # 
+- ID #
+- Código # 
 - ID number 
 - ID numbers 
 - DRIVER'LIC 
-- DRIVER'LIC 
+- DRIVER'LIC # 
 
-#### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
+#### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
 - DriverLic 
 - DriverLics 
@@ -5925,34 +5925,34 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
-- Driver'Lic# 
-- Driver'Lics# 
-- Driver'License# 
-- Driver'Licenses# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5963,7 +5963,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - Abreviação do estado (por exemplo, "NY") 
 - Nome do estado (por exemplo, "Nova York")    
@@ -6038,7 +6038,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keyworditin"></a>Keyword_itin
+#### <a name="keyword_itin"></a>Keyword_itin
 
 - contribui 
 - tax id 
@@ -6052,7 +6052,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - táxi 
 - individual taxpayer 
 
-#### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
+#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
 
 - Licença 
 - DISTRIBUIÇÃO 
@@ -6133,15 +6133,15 @@ Uma política de DLP tem 55% de certeza de que ela detectou este tipo de informa
 
 ### <a name="keywords"></a>Palavras-chave
 
-#### <a name="keywordssn"></a>Keyword_ssn
+#### <a name="keyword_ssn"></a>Keyword_ssn
 
 - Social Security 
 - Social Security# 
 - Soc Sec 
 - ES 
 - CPFs 
-- ES 
-- PLANILHA 
+- ES # 
+- PLANILHA # 
 - SSID 
    
 

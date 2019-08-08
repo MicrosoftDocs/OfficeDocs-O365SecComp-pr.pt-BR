@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Saiba mais sobre o arquivamento de expansão automática no Office 365, que fornece armazenamento de arquivo ilimitado para caixas de correio do Exchange Online.
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158063"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231075"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Visão geral do arquivamento ilimitado no Office 365
 
-No Office 365, as caixas de correio de arquivo morto fornecem aos usuários espaço de armazenamento adicional da caixa de correio. Depois que a caixa de correio de arquivo morto de um usuário estiver habilitada, até 100 GB de armazenamento adicional estará disponível. Quando a cota de armazenamento de 100 GB é atingida, as organizações tinham que contatar a Microsoft para solicitar espaço de armazenamento adicional para uma caixa de correio de arquivo morto. Isso não é mais o caso. O novo recurso de arquivamento ilimitado no Office 365 (chamado *de arquivamento de expansão automática*) fornece uma quantidade ilimitada de armazenamento em caixas de correio de arquivo morto. Agora, quando a cota de armazenamento na caixa de correio de arquivo morto é atingida, o Office 365 aumenta automaticamente o tamanho do arquivamento, o que significa que os usuários não ficarão sem espaço de armazenamento de caixa de correio e os administradores não precisarão solicitar armazenamento adicional para caixas de correio de arquivo morto .
+No Office 365, as caixas de correio de arquivo morto fornecem aos usuários espaço de armazenamento adicional da caixa de correio. Depois que a caixa de correio de arquivo morto de um usuário estiver habilitada, até 100 GB de armazenamento adicional estará disponível. No passado, quando a cota de armazenamento de 100 GB foi atingida, as organizações tinham que entrar em contato com a Microsoft para solicitar espaço de armazenamento adicional para uma caixa de correio de arquivo morto. Isso não é mais o caso.
+
+O recurso de arquivamento ilimitado no Office 365 (chamado *arquivamento de expansão automática*) fornece um volume ilimitado de armazenamento em caixas de correio de arquivo morto. Agora, quando a cota de armazenamento na caixa de correio de arquivo morto é atingida, o Office 365 aumenta automaticamente o tamanho do arquivamento, o que significa que os usuários não ficarão sem espaço de armazenamento de caixa de correio e os administradores não precisarão solicitar armazenamento adicional para caixas de correio de arquivo morto .
   
 Para obter instruções detalhadas sobre como ativar o arquivamento de expansão automática, consulte [Enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   

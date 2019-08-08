@@ -1,7 +1,7 @@
 ---
 title: Criar um dicionário de palavras-chave
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Identificar informações confidenciais, às vezes, exige procurar palavras-chave, especialmente quando identificar o conteúdo genérico (como comunicações relacionadas à saúde) ou idioma inapropriado ou explícito. Embora você possa criar listas de palavra-chave nos tipos de informação confidencial, essas listas são limitadas no tamanho e exigem modificar XML para criá-los ou editá-los. Dicionários de palavras-chave fornecem um gerenciamento mais simples de palavras-chave em uma escala muito maior, com suporte até 100.000 termos por dicionário.
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077567"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230785"
 ---
 # <a name="create-a-keyword-dictionary"></a>Criar um dicionário de palavras-chave
 
@@ -35,11 +35,11 @@ As palavras-chave para o seu dicionário podem vir de uma variedade de fontes, m
     
 3. **Crie seu dicionário**. Escolha um nome e uma descrição e crie seu dicionário.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Criar um dicionário de palavras-chave usando o centro de conformidade do & de segurança
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Criar um dicionário de palavras-chave usando o centro de conformidade de & de segurança
 
 Use as etapas a seguir para criar e importar palavras-chave para um dicionário personalizado:
 
-1. Conecte-se ao centro de conformidade do[https://protection.office.com](https://protection.office.com)_AMP_ de segurança ().
+1. Conecte-se ao centro de conformidade do[https://protection.office.com](https://protection.office.com)& de segurança ().
 
 2. Navegue até **Classificações > Tipos de informações confidenciais**.
 

@@ -1,9 +1,9 @@
 ---
-title: Encontre e investigue emails mal-intencionados que foram fornecidos (investigação de ameaças e resposta do Office 365
+title: Encontre e investigue emails mal-intencionados que foram entregues no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165667"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230555"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Encontre e investigue emails mal-intencionados que foram entregues (Office 365 Advanced Threat Protection Plan 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Encontre e investigue emails mal-intencionados que foram entregues no Office 365
 
 A [proteção avançada contra ameaças do Office 365](office-365-atp.md) permite investigar as atividades que colocam seus usuários em risco e tomar medidas para proteger sua organização. Por exemplo, se você fizer parte da equipe de segurança da sua organização, poderá encontrar e investigar mensagens de email suspeitas que foram entregues aos seus usuários. Você pode fazer isso usando o [Explorador de ameaças (ou detecções em tempo real)](threat-explorer.md).
   
@@ -30,7 +30,7 @@ A [proteção avançada contra ameaças do Office 365](office-365-atp.md) permit
 
 Verifique se os seguintes requisitos são atendidos:
   
-- Sua organização tem a [proteção avançada contra ameaças do Office 365](office-365-atp.md) (plano 2) e as [licenças são atribuídas aos usuários](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Sua organização tem a [proteção avançada contra ameaças do Office 365](office-365-atp.md) e as [licenças são atribuídas aos usuários](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - O [log de auditoria do Office 365](turn-audit-log-search-on-or-off.md) está ativado para sua organização. 
     

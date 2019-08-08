@@ -1,9 +1,9 @@
 ---
-title: Explorador de ameaças (e detecções em tempo real)
+title: Gerenciador de ameaças e detecções em tempo real
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Saiba mais sobre o Explorer (e as detecções em tempo real) no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: Saiba mais sobre as detecções do Explorer e do tempo real no &amp; centro de conformidade de segurança.
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054753"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230405"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Explorador de ameaças (e detecções em tempo real)
+# <a name="threat-explorer-and-real-time-detections"></a>Gerenciador de ameaças e detecções em tempo real
 
 Se sua organização tem a [proteção avançada contra ameaças do office 365](office-365-atp.md) (Office 365 ATP) e você tem as [permissões necessárias](#required-licenses-and-permissions), você tem as detecções do **Explorer** ou do **tempo real** (anteriormente conhecida como *relatórios em tempo real* , [consulte o que há de novo](#new-features-in-real-time-detections)!). No centro de conformidade & segurança, vá para **Gerenciamento de ameaças**e escolha as detecções do **Explorer** ou **em tempo real**. 
 
@@ -42,7 +42,7 @@ Com esse relatório, você pode:
 
 ## <a name="new-features-in-real-time-detections"></a>Novos recursos em detecções em tempo real
 
-O Explorer/detecções em tempo real adiciona novos campos criados para dar a você uma visão mais completa de onde seus emails estão no terreno. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
+Explorer (e detecções em tempo real) adiciona novos campos criados para fornecer uma imagem mais completa de onde seus emails se estendem. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
 
 Como isso é feito? O status de entrega agora é dividido em duas colunas:
 
@@ -105,9 +105,9 @@ Para examinar as URLs de phishing em mensagens e clicar em URLs nas mensagens de
 
     O relatório é atualizado para mostrar duas tabelas de URL diferentes na guia URL no relatório:
 
-   1. As **principais URLs** são as URLs contidas nas mensagens que foram filtradas para baixo e a ação de entrega de emails conta para cada URL. No modo de exibição email de phishing, essa lista normalmente conterá URLs legítimas. Os invasores incluem uma mistura de URLs boas e ruins nas mensagens para tentar obtê-las, mas eles farão com que os links mal-intencionados sejam mais interessantes para o usuário clicar. A tabela de URLs é classificada pela contagem total de emails (Observação: esta coluna não é mostrada para simplificar o modo de exibição).
+   - As **principais URLs** são as URLs contidas nas mensagens que foram filtradas para baixo e a ação de entrega de emails conta para cada URL. No modo de exibição email de phishing, essa lista normalmente conterá URLs legítimas. Os invasores incluem uma mistura de URLs boas e ruins nas mensagens para tentar obtê-las, mas eles farão com que os links mal-intencionados sejam mais interessantes para o usuário clicar. A tabela de URLs é classificada pela contagem total de emails (Observação: esta coluna não é mostrada para simplificar o modo de exibição).
 
-   2. Os **principais cliques** são as URLs encapsuladas de links seguros que foram clicados, classificados por contagem de clique total (essa coluna também não é exibida para simplificar o modo de exibição). Total de contagens por coluna indicam os links seguros clique em contagem de veredicto para cada URL clicada. No modo de exibição email de phishing, eles são URLs suspeitas ou maliciosas mais frequentes, mas podem incluir URLs limpas que estão nas mensagens de phishing. Os cliques de URL em links não ajustados não aparecerão aqui.
+   - Os **principais cliques** são as URLs encapsuladas de links seguros que foram clicados, classificados por contagem de clique total (essa coluna também não é exibida para simplificar o modo de exibição). Total de contagens por coluna indicam os links seguros clique em contagem de veredicto para cada URL clicada. No modo de exibição email de phishing, eles são URLs suspeitas ou maliciosas mais frequentes, mas podem incluir URLs limpas que estão nas mensagens de phishing. Os cliques de URL em links não ajustados não aparecerão aqui.
    
    As duas tabelas URLs mostram as principais URLs nos emails de phishing por ação de entrega e local, e mostram cliques de URL que foram bloqueados (ou visitados apesar de um aviso) para que você possa entender quais links defeituosos potenciais foram recebidos por usuários e interagem com os usuários. A partir daqui, você pode realizar uma análise adicional. Por exemplo, abaixo do gráfico, você pode ver as principais URLs nos emails que foram bloqueados no ambiente da sua organização.
    
@@ -117,11 +117,11 @@ Para examinar as URLs de phishing em mensagens e clicar em URLs nas mensagens de
 
 ## <a name="review-email-messages-reported-by-users"></a>Analisar mensagens de email relatadas por usuários
 
-Suponha que você queira ver as mensagens de email que os usuários em sua organização relataram como lixo eletrônico, não lixo eletrônico ou phishing usando o [suplemento de mensagem de relatório para Outlook e Outlook na Web](enable-the-report-message-add-in.md). Para fazer isso, use o [Email > exibição relatada pelo usuário](threat-explorer-views.md#email--user-reported) do Explorer (ou detecções em tempo real).
+Suponha que você queira ver as mensagens de email que os usuários em sua organização relataram como lixo eletrônico, não lixo eletrônico ou phishing usando o [suplemento de mensagem de relatório para Outlook e Outlook na Web](enable-the-report-message-add-in.md). Para fazer isso, use a exibição de [Email > envios](threat-explorer-views.md#email--submissions) do Explorer (ou detecções em tempo real).
 
 1. No centro de conformidade e segurança &[https://protection.office.com](https://protection.office.com)(), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
 
-2. No menu **Exibir** , escolha **email** > **reportado pelo usuário**.<br/>![Menu Exibir para Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. No menu **Exibir** , escolha envios de **email** > ****.<br/>![Menu Exibir para Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Clique em **remetente**e, em seguida, escolha**tipo de relatório** **básico** > .
 
@@ -170,8 +170,7 @@ Para saber mais sobre funções e permissões, confira os seguintes recursos:
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Permissões de recursos no Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Algumas diferenças entre a detecção em tempo real e o exportador de ameaças.
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Algumas diferenças entre exportadores de ameaça e detecções em tempo real
 
- - O **relatório de detecção em tempo real** é fornecido com a assinatura P1 da ATP enquanto o **Explorador de ameaças** vem com ATP P2.
- - O relatório de **detecções em tempo real** permite que você mostre as detecções em tempo real, enquanto os relatórios do explorador de ameaças permitem que você veja mais detalhes em um determinado ataque.
- - Os relatórios do **Explorador de ameaças** oferecem diferentes conjuntos de relatórios que aprimoram a experiência em relação aos relatórios de **detector em tempo real** .
+ - O relatório de **detecções em tempo real** está disponível no Office 365 ATP Plan 1, enquanto o **Explorador de ameaças** está disponível no Office 365 ATP Plan 2.
+ - O relatório de **detecções em tempo real** permite que você visualize detecções em tempo real. O **Gerenciador de ameaças** também faz isso, mas também permite que você exiba detalhes adicionais de um determinado ataque.
