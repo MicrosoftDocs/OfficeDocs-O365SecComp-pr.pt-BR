@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumo: Crie assinaturas de teste do Office 365 e Enterprise Mobility + Security (EMS) com usuários e grupos para um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: b81674723f1da5b4282a331207caad2fc6d3d0a0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 53d6bc8a4cdba6dab33b963344a3bfabdb1e6a26
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151477"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053138"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Defina grupos e usuários para um ambiente de desenvolvimento/teste de uma campanha política
 
@@ -40,7 +40,7 @@ Em seguida, inscreva-se para a assinatura de avaliação do EMS E5 e adicione-a 
     
 2. Clique no bloco de **Administração**.
     
-3. Na guia **Centro de Administração do Office** no navegador, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
+3. Na guia **centro de administração do Microsoft 365** em seu navegador, na navegação à esquerda, clique em **Cobrança > Comprar serviços**.
     
 4. Na página **Comprar serviços**, encontre o item **Enterprise Mobility + Security E5**. Passe o ponteiro do mouse sobre ele e clique em **Iniciar avaliação gratuita**.
     
@@ -170,7 +170,7 @@ Use estas etapas para verificar se a associação de grupo dinâmico e o licenci
   
 1. Na guia **Microsoft Office Home** do navegador, clique no bloco **Administração**.
     
-2. Na nova guia **Centro de Administração do Office** do navegador, clique em **Usuários**.
+2. Na nova guia **Centro de administração do Microsoft 365** do seu navegador, clique em **Usuários**.
     
 3. Na lista de usuários, clique em **Candidato**.
     
