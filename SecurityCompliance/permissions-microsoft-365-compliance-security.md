@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usando a central de segurança do Microsoft 365 ou o centro de conformidade da Microsoft 365, você pode gerenciar as permissões centralmente para todas as tarefas relacionadas à segurança ou conformidade.
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168286"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222771"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permissões novo centro de segurança do Microsoft 365 e no centro de conformidade do Microsoft 365
 
@@ -66,7 +66,7 @@ Os usuários com essa função têm permissões para gerenciar recursos relacion
 
 Os usuários com esta função têm permissões para proteger e controlar dados no centro de conformidade do Microsoft 365, no centro de administração do Microsoft 365 e no Azure. Os usuários também podem gerenciar todos os recursos no Centro de administração do Exchange, no Gerenciador de Conformidade e no Centro de administração do Teams e do Skype for Business, além de criar tíquetes de suporte para o Azure e o Microsoft 365.
 
-|**Neste serviço...**|**O administrador de conformidade pode...**|
+|**Neste serviço...**|**O administrador de dados de conformidade pode...**|
 |:-----|:-----|
 |[**Centro de conformidade do Microsoft 365**](https://compliance.microsoft.com/)|Proteger e gerenciar dados da sua organização em todos os serviços do Microsoft 365. <br/><br/> Gerenciar alertas de conformidade. <br/><br/> Gerenciar rótulos de sensibilidade|
 |[**Gerenciador de Conformidade**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Acompanhar, atribuir e verificar as atividades de conformidade regulatória da sua organização.|
@@ -78,7 +78,7 @@ Os usuários com esta função têm permissões para proteger e controlar dados 
 
 Os usuários com essa função têm permissões para gerenciar recursos relacionados à segurança na central de segurança do Microsoft 365, Azure Active Directory Identity Protection, Proteção de Informações do Azure e Centro de Conformidade e Segurança do Office 365.
 
-|**Neste serviço...**|**O administrador de conformidade pode...**|
+|**Neste serviço...**|**O administrador de segurança pode...**|
 |:-----|:-----|
 |[**Centro de segurança do Microsoft 365**](https://security.microsoft.com/)|Monitorar políticas relacionadas a segurança em todos os serviços do Microsoft 365. <br/><br/>  Gerenciar alertas e ameaças de segurança. <br/><br/> Exibir relatórios. <br/><br/> Gerenciar rótulos de confidencialidade.|
 |**Identity Protection Center**|Fazer tudo que o Leitor de Segurança pode fazer, além de executar todas as operações da central de proteção de identidade, exceto redefinir senhas.|
@@ -95,7 +95,7 @@ Os usuários com essa função têm permissões para gerenciar recursos relacion
 
 Usuários com essa função podem gerenciar alertas e ter acesso global somente leitura em recurso relacionado à segurança, incluindo todas as informações no centro de segurança do Microsoft 365, no Azure Active Directory, no Identity Protection e no Privileged Identity Management, bem como a capacidade de ler logs de auditoria e relatórios de entrada do Azure Active Directory e no Centro de Conformidade e Segurança do Office 365.
 
-|**Neste serviço...**|**O administrador de conformidade pode...**|
+|**Neste serviço...**|**O operador de segurança pode...**|
 |:-----|:-----|
 |[**Centro de segurança do Microsoft 365**](https://security.microsoft.com/)|Realizar tudo o que o Leitor de Segurança pode fazer. <br/><br/> Exibir, investigar e responder a alertas de segurança.|
 |**Identity Protection Center** (em breve)|Realizar tudo o que o Leitor de Segurança pode fazer.|
@@ -110,7 +110,7 @@ Usuários com essa função podem gerenciar alertas e ter acesso global somente 
 
 Usuários com essa função têm acesso somente leitura global em recurso relacionado à segurança, incluindo todas as informações no centro de segurança do Microsoft 365, no Azure Active Directory, no Identity Protection e no Privileged Identity Management, bem como a capacidade de ler logs de auditoria e relatórios de entrada do Azure Active Directory e no Centro de Conformidade e Segurança do Office 365.
 
-|**Neste serviço...**|**O administrador de conformidade pode...**|
+|**Neste serviço...**|**O leitor de segurança pode...**|
 |:-----|:-----|
 |[**Centro de segurança do Microsoft 365**](https://security.microsoft.com/)|Exibir políticas relacionadas à segurança em todos os serviços do Microsoft 365. <br/><br/> Exibir alertas e ameaças de segurança. <br/><br/> Exibir relatórios.|
 |**Identity Protection Center**|Lê todas as informações sobre as configurações e os relatórios de segurança para recursos de segurança: antispam, criptografia, prevenção contra perda de dados (DLP), anti-malware, proteção avançada contra ameaças (ATP), anti-phishing e regras de fluxo de email (também conhecidas como regras de transporte).|

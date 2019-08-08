@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Tenha uma visão geral da Proteção de Informações do Office 365 para o GDPR. Saiba como descobrir, classificar, proteger e monitorar dados pessoais.
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152483"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165657"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Visão geral da Proteção de Informações do Office 365 para o GDPR
 
@@ -35,7 +35,7 @@ Artigo 4 – Definições
 
 Essa solução se destina a ajudar as organizações a descobrir e proteger os dados pessoais no Office 365 que possam estar sujeitos ao GDPR, mas não é oferecida como uma comprovação de conformidade com o GDPR. A responsabilidade de garantir a conformidade com o GDPR é da própria organização e recomenda-se que ela consulte suas equipes jurídicas e de conformidade ou que busque orientação e consultoria de entidades terceiras especializadas em conformidade.
 
-A [Avaliação do GDPR](https://assessment.microsoft.com/gdpr-compliance) é uma ferramenta online para uma autoavaliação rápida e sem custo para ajudar sua organização a analisar o nível geral de preparação para cumprir com o GDPR (<http://aka.ms/gdprassessment>).
+A [Avaliação do GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D) é uma ferramenta online para uma autoavaliação rápida e sem custo para ajudar sua organização a analisar o nível geral de preparação para cumprir com o GDPR.
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>Avaliar e gerenciar o risco de conformidade
 
@@ -47,7 +47,7 @@ O Gerenciador de Conformidade fornece ferramentas para acompanhar, implementar e
 
 ![Use o Gerenciador de Conformidade para exibir as exigências e acompanhar o progresso](Media/Overview-image1.png)
 
-Confira mais informações sobre como [Usar o Gerenciador de Conformidade no portal Service Trust](https://support.office.com/pt-BR/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942). 
+Confira mais informações sobre como [Usar o Gerenciador de Conformidade no portal Service Trust](https://servicetrust.microsoft.com/ComplianceManager). 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Etapa 2: usar a Pesquisa de Conteúdo e os tipos de informações confidenciais para encontrar dados pessoais 
 
