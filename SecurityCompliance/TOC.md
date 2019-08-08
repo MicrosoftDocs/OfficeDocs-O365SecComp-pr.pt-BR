@@ -81,8 +81,7 @@
 ## Plano de arquivos
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
-### 
-  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Exibição do uso do rótulo com análises de rótulo](label-analytics.md)
 ### [Exibir a atividade de rótulos de documentos](view-label-activity-for-documents.md)
 ### [Exibir os relatórios de governança de dados](view-the-data-governance-reports.md)
@@ -117,8 +116,7 @@
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
 ### [Cumprir com a Regra SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Retenção baseada em eventos](event-driven-retention.md)
 ### [Automatizar retenção baseada em eventos](automate-event-driven-retention.md)
 ## [Descartar dados](disposition-reviews.md)
@@ -262,8 +260,7 @@
 ### [Gerenciador de planos de arquivo](file-plan-manager.md)
 ### [Rótulos de retenção](labels.md)
 ### [Cumprir com a Regra SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Retenção baseada em eventos](event-driven-retention.md)
 ### [Automatizar retenção baseada em eventos](automate-event-driven-retention.md)
 ## [Descartar dados](disposition-reviews.md)
@@ -421,7 +418,7 @@
 
 #### Configuração da Descoberta Eletrônica Avançada
 ##### [Configurar casos e configurações de organização](define-case-and-tenant-settings-in-advanced-ediscovery.md)
-##### Configurar as configurações de Análise](set-analyze-options-in-advanced-ediscovery.md)
+##### [Configurar as configurações de Análise](set-analyze-options-in-advanced-ediscovery.md)
 ##### [Configurar Ignorar as configurações de Texto](set-ignore-text-in-advanced-ediscovery.md)
 ##### [Configurar as palavras-chave realçadas e outras configurações de Relevância](define-highlighted-keywords-and-advanced-options.md)
 
@@ -593,7 +590,6 @@
 ### [Monitoramento e Autorrecuperação](office-365-monitoring-and-self-healing.md)
 ## [Retenção, Exclusão e Destruição de Dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Destruição de dados](office-365-data-destruction.md)
-
 ### [Imutabilidade no Office 365](office-365-data-immutability.md)
 ### [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 ### [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
