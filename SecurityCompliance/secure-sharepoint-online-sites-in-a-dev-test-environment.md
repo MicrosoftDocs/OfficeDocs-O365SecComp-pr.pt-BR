@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
-ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
+ms.openlocfilehash: bc17f5a4009b7a967a395084e8a058c45bbad82e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "35059539"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053128"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -183,7 +183,7 @@ Use essas etapas para verificar se o licenciamento baseado em grupo está funcio
   
 1. Na guia **Microsoft Office Home** do navegador, clique no bloco **Administração**.
     
-2. Na nova guia **Centro de Administração do Office** do navegador, clique em **Usuários**.
+2. Na nova guia **Centro de administração do Microsoft 365** do seu navegador, clique em **Usuários**.
     
 3. Na lista de usuários, clique em **CEO**.
     
