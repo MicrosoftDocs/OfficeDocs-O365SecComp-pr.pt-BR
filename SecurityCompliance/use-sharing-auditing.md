@@ -13,14 +13,15 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
+ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para identificar recursos compartilhados com usuários fora da sua organização. '
-ms.openlocfilehash: 8996d404e2dbeaba01952c33a8699ca2f151ad5d
-ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
+ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35911771"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258564"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 

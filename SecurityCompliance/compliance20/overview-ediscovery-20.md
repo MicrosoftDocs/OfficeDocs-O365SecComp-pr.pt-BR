@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artigo descreve a nova versão da descoberta eletrônica avançada no Microsoft 365.
-ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d3abd49d3ba336f5896887732ea0c37b59265bc9
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598727"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258554"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Visão geral da solução de descoberta eletrônica avançada no Microsoft 365
 
@@ -94,4 +94,4 @@ Use a guia **trabalhos** para monitorar processos de execução longa para taref
 
 ## <a name="configuring-case-settings"></a>Configurando as configurações de caso
 
-Use a guia **configurações** para definir as configurações em todo o caso. Isso inclui adicionar membros a um caso, fechar ou excluir uma ocorrência e definir as configurações de pesquisa e análise. Para obter mais informações, consulte [Configure Case Settings in Advanced eDiscovery](configuring-case-settings-ediscovery20.md).
+Use a guia **configurações** para definir as configurações em todo o caso. Isso inclui adicionar membros a um caso, fechar ou excluir uma ocorrência e definir as configurações de pesquisa e análise.
