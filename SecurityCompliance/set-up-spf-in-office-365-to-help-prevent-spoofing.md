@@ -16,7 +16,7 @@ ms.collection:
 description: 'Resumo: Este artigo descreve como atualizar um registro de Serviço de Nome de Domínio (DNS) para que você possa usar a Sender Policy Framework (SPF) com seu domínio personalizado no Office 365. Usar a SPF ajuda a validar emails de saída enviados do seu domínio personalizado.'
 ms.openlocfilehash: 15472900986a367e084c6126580cef85d286a94b
 ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/25/2019
 ms.locfileid: "35854785"
@@ -60,32 +60,32 @@ Reúna essas informações:
 ||**Se você estiver usando...**|**Comum para clientes do Office 365?**|**Adicione este...**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Qualquer sistema de email (obrigatório)  <br/> |Comum. Todos os registros TXT da SPF começam com esse valor  <br/> |v=spf1  <br/> |
-|duas  <br/> |Exchange Online  <br/> |Comum  <br/> |include:spf.protection.outlook.com  <br/> |
-|3D  <br/> |Somente Exchange Online dedicado  <br/> |Incomum  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 incluem include. Protection. Outlook. com  <br/> |
-|quatro  <br/> |Office 365 Alemanha, Microsoft Cloud Alemanha apenas  <br/> |Incomum  <br/> |incluir include. Protection. Outlook. de  <br/> |
-|0,5  <br/> |Sistema de email de terceiros  <br/> |Incomum  <br/> |incluir:\<nome do domínio\>  <br/> Onde o nome de domínio é o nome de domínio do sistema de email de terceiros.  <br/> |
+|2  <br/> |Exchange Online  <br/> |Comum  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |Somente Exchange Online dedicado  <br/> |Incomum  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
+|4  <br/> |Office 365 Alemanha, Microsoft Cloud Alemanha apenas  <br/> |Incomum  <br/> |include:spf.protection.outlook.de  <br/> |
+|5  <br/> |Sistema de email de terceiros  <br/> |Incomum  <br/> |incluir:\<nome do domínio\>  <br/> Onde o nome de domínio é o nome de domínio do sistema de email de terceiros.  <br/> |
 |6  <br/> |Sistema de emails local. Por exemplo, o Exchange Online Protection mais outro sistema de email  <br/> |Incomum  <br/> | Use um destes procedimentos para cada sistema de email adicional:  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  incluir:\<  _domain name_\>  <br/>  Em que o valor de \<  _IP address_\> é o endereço IP do outro sistema de email e \< _domain name_\> é o nome de domínio de outro sistema de email que envia emails em nome de seu domínio.  <br/> |
-|178  <br/> |Qualquer sistema de email (obrigatório)  <br/> |Comum. Todos os registros TXT da SPF terminam com esse valor  <br/> |\< _enforcement rule_\>  <br/> Isso pode ser um dos vários valores. Recomendamos que se use **-all**.  <br/> |
+|7  <br/> |Qualquer sistema de email (obrigatório)  <br/> |Comum. Todos os registros TXT da SPF terminam com esse valor  <br/> |\< _enforcement rule_\>  <br/> Isso pode ser um dos vários valores. Recomendamos que se use **-all**.  <br/> |
    
-1,1 por exemplo, se você estiver totalmente hospedado no Office 365, ou seja, se não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 2 e 7 e teria a seguinte aparência:
+1.1 Por exemplo, se você estiver totalmente hospedado no Office 365, ou seja, se você não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 2 e 7 e teria esta aparência:
     
   ```
    v=spf1 include:spf.protection.outlook.com -all
   ```
 
-1,2 este é o registro TXT da SPF do Office 365 mais comum. Este registro funciona para praticamente todos, independentemente de o datacenter do Office 365 estar localizado nos Estados Unidos ou na Europa (inclusive na Alemanha) ou em outro local.
+1.2 Este é o registro TXT SPF do Office 365. Esse registro funciona para praticamente qualquer pessoa, não importa se seu datacenter do Office 365 está situado nos Estados Unidos ou na Europa (incluindo a Alemanha) ou em outro local.
     
-1,3 no entanto, se você comprou o Office 365 Alemanha, parte do Microsoft Cloud Alemanha, você deve usar a instrução include da linha 4 em vez da linha 2. Por exemplo, se você estiver totalmente hospedado no Office 365 Alemanha, ou seja, se você não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 4 e 7 e teria esta aparência:
+1.3 No entanto, se você comprou o Office 365 Alemanha, parte do Microsoft Cloud Alemanha, você deve usar a instrução incluir na linha 4, em vez de na linha 2. Por exemplo, se você estiver totalmente hospedado no Office 365 Alemanha, ou seja, se você não tiver servidores de email locais, seu registro TXT SPF incluiria as linhas 1, 4 e 7 e teria esta aparência:
     
   ```
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1,4 se você já tiver implantado no Office 365 e tiver configurado seus registros TXT SPF para seu domínio personalizado e estiver migrando para o Office 365 Alemanha, precisará atualizar seu registro TXT SPF. Para fazer isso, altere **incluir include. Protection. Outlook. com** para **incluir include. Protection. Outlook. de**.
+1.4 Se você já implementou no Office 365 e configurou seus registros TXT SPF para o seu domínio personalizado e estiver migrando para o Office 365 Alemanha, será preciso atualizar para o registro TXT SPF. Para fazer isso, altere **include:spf.protection.outlook.com** para **include.spf.protection.outlook.de**.
     
 2. Depois que você formar seu registro TXT SPF, precisará atualizar o registro no DNS. Você só pode ter um registro TXT SPF para um domínio. Se em vez de adicionar um novo registro, você precisa atualizar o registro existente. Vá para [Criar registros de DNS para o Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide) e clique no link do seu host DNS. 
     
-3. Teste seu registro TXT SPF.
+3. Testar o registro do SPF TXT.
     
 ## <a name="more-information-about-spf"></a>Mais informações sobre a SPF
 
@@ -93,7 +93,7 @@ Para exemplos avançados, uma discussão mais detalhada sobre sintaxe de SPF com
   
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>Próximas etapas: Depois de configurar a SPF para o Office 365
 
-Algum problema com seu registro TXT da SPF? Leia [Solução de problemas: práticas recomendadas para o SPF no Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Algum problema com seu registro TXT da SPF? Leia [Solução de problemas: Práticas recomendadas para a SPF no Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
   
  A SPF foi projetada para ajudar a evitar a falsificação, mas existem técnicas de falsificação que a SPF não ajuda a proteger. Para proteger contra essas técnicas, depois de configurar a SPF, você também deve configurar o DKIM e o DMARC para o Office 365. Para começar, confira [Usar DKIM para validar emails enviados de seu domínio personalizado no Office 365](use-dkim-to-validate-outbound-email.md). A seguir, veja [Usar DMARC para validar emails no Office 365](use-dmarc-to-validate-email.md).
   
