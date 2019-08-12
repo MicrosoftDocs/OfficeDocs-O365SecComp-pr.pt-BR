@@ -345,7 +345,7 @@
 #### [Adicionar dados a outro conjunto de revisão](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Gerenciar conjuntos de carga](compliance20/manage-load-sets.md)
 
-### [Revisar dados de ocorrência](compliance20/reviewing-data-in-review-set.md)
+### Revisar dados de ocorrência
 #### [Exibir documentos em um conjunto de revisão](compliance20/view-documents-in-review-set.md)
 #### [Consultar os dados em um conjunto de revisão](compliance20/review-set-search.md)
 #### [Marcar documentos em um conjunto de revisão](compliance20/tagging-documents.md)
@@ -363,8 +363,8 @@
 
 ### [Gerenciar tarefas](compliance20/managing-jobs-ediscovery20.md)
 
-### [Configurações de maiúsculas e minúsculas](compliance20/configuring-case-settings-ediscovery20.md)
-#### [Feche ou exclua uma ocorrência](compliance20/close-or-delete-case.md)
+### Definir configurações da ocorrência
+#### [Fechar ou excluir uma ocorrência](compliance20/close-or-delete-case.md)
 #### [Adicionar ou remover membros de uma ocorrência](compliance20/add-remove-members.md)
 #### [Definir configurações de pesquisa e análise](compliance20/configure-search-analytics-settings.md)
 
@@ -590,6 +590,7 @@
 ### [Monitoramento e Autorrecuperação](office-365-monitoring-and-self-healing.md)
 ## [Retenção, Exclusão e Destruição de Dados no Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Destruição de dados](office-365-data-destruction.md)
+
 ### [Imutabilidade no Office 365](office-365-data-immutability.md)
 ### [Exclusão de dados do Exchange Online](office-365-exchange-online-data-deletion.md)
 ### [Exclusão de dados do SharePoint Online](office-365-sharepoint-online-data-deletion.md)
