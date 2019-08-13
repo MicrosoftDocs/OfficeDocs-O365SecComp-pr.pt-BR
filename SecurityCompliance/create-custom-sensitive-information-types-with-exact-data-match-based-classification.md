@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Criar tipos personalizados de informações confidenciais com classificação baseada em Exact Data Match.
-ms.openlocfilehash: 2e353eb078df335d80f669a8cef64a19bd7d9584
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279223"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297759"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Criar tipos personalizados de informações confidenciais com classificação baseada em Exact Data Match
 
@@ -123,13 +123,13 @@ Você será solicitado a confirmar da seguinte maneira:
 > [!NOTE]
 > Pode levar de 10 a 60 minutos para atualizar o EDMSchema com as adições. A atualização deve ser concluída antes que você execute as etapas que usam as adições.
 
-Agora que o esquema para o seu banco de dados de informações confidenciais está definido, a próxima etapa é configurar um pacote de regras. Continue na seção [Configurar um pacote de regras](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#set-up-a-rule-package).
+Agora que o esquema para o seu banco de dados de informações confidenciais está definido, a próxima etapa é configurar um pacote de regras. Continue na seção [Configurar um pacote de regras](#set-up-a-rule-package).
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Editando o esquema para classificação baseada em EDM
 
 Se você quiser fazer alterações em seu arquivo edm.xml, como alterar quais os campos usados para a classificação baseada em EDM, siga estas etapas:
 
-1. Edite o seu arquivo edm.xml (este é o arquivo discutido na seção [Definir o esquema](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#define-the-schema-for-your-database-of-sensitive-information) deste artigo).
+1. Edite o seu arquivo edm.xml (este é o arquivo discutido na seção [Definir o esquema](#define-the-schema-for-your-database-of-sensitive-information) deste artigo).
 
 2. [Conecte-se ao PowerShell do Centro de Conformidade e Segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -298,9 +298,9 @@ Durante essa fase, você configura um grupo de segurança personalizado e uma co
 #### <a name="set-up-the-edm-upload-agent"></a>Configurar o agente de carregamento do EDM
 
 >[!NOTE]
-> Antes de iniciar esse procedimento, certifique-se de que você é um membro do grupo de segurança *EDM\_DataUploaders*  e um administrador local no computador. 
+> Antes de iniciar esse procedimento, certifique-se de que você é um membro do grupo de segurança *EDM\_DataUploaders*  e um administrador local no computador.
 
-1. Baixe e instale o agente de carregamento do EDM em [https://go.microsoft.com/fwlink/?linkid=2088639](https://go.microsoft.com/fwlink/?linkid=2088639). Por padrão, o local de instalação deve ser C:\\Arquivos de Programa \\Microsoft\\EdmUploadAgent.
+1. Baixe e instale o [Agente de Carregamento do EDM](https://go.microsoft.com/fwlink/?linkid=2088639). Por padrão, o local de instalação deve ser C:\\Arquivos de Programa \\Microsoft\\EdmUploadAgent.
 
 2. Para autorizar o agente de carregamento do EDM, abra o prompt de comando do Windows (como um administrador) e execute o seguinte comando:
 
@@ -340,9 +340,9 @@ Para verificar os dados confidenciais indexados, execute o seguinte comando no p
 
 Você verá uma lista de repositórios de dados e a data da última atualização, similar à seguinte:
 
-Prossiga para configurar seu processo e cronograma da [Atualização de banco de dados de informação confidencial](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#refreshing-your-sensitive-information-database).
+Prossiga para configurar seu processo e cronograma da [Atualização de banco de dados de informação confidencial](#refreshing-your-sensitive-information-database).
 
-Nesse ponto, você já usou a classificação baseada em EDM com os serviços de nuvem da Microsoft. Por exemplo, você pode [configurar uma política usando a classificação baseada em EDM](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#to-create-a-dlp-policy-with-edm).
+Nesse ponto, você já usou a classificação baseada em EDM com os serviços de nuvem da Microsoft. Por exemplo, você pode [configurar uma política usando a classificação baseada em EDM](#to-create-a-dlp-policy-with-edm).
 
 #### <a name="refreshing-your-sensitive-information-database"></a>Atualização do banco de dados de informações confidenciais
 
@@ -350,16 +350,16 @@ Você pode atualizar seu banco de dados confidenciais diariamente ou semanalment
 
 1. Determine seu processo e a frequência (diariamente ou semanalmente) para atualização do banco de dados de informações confidenciais.
 
-2. Exporte novamente os dados confidenciais para um aplicativo, como o Microsoft Excel, e salve o arquivo no formato .csv. Mantenha o mesmo nome do arquivo e o local que você usou ao seguir as etapas descritas em [indexação e carregamento de dados confidenciais](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data).
+2. Exporte novamente os dados confidenciais para um aplicativo, como o Microsoft Excel, e salve o arquivo no formato .csv. Mantenha o mesmo nome do arquivo e o local que você usou ao seguir as etapas descritas em [indexação e carregamento de dados confidenciais](#index-and-upload-the-sensitive-data).
 
 > [!NOTE]
 > Se não houver alterações na estrutura (nomes de campos) do arquivo .csv, você não precisará fazer alterações no arquivo de esquema do banco de dados ao atualizar os dados. Mas se for necessário fazer alterações, não deixe de editar o esquema de banco de dados e seu pacote de regra correspondente.
 
-3. Use o [Agendador de tarefas](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) para automatizar as etapas 2 e 3 [no procedimento de indexação e carregamento de dados confidenciais](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data) . Você pode agendar tarefas usando vários métodos:
+3. Use o [Agendador de tarefas](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) para automatizar as etapas 2 e 3 [no procedimento de indexação e carregamento de dados confidenciais](#index-and-upload-the-sensitive-data) . Você pode agendar tarefas usando vários métodos:
 
 | **Método**             | **O que fazer**                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | Confira a [documentação do ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) e o [exemplo do script do PowerShell](https://review.docs.microsoft.com/pt-BR/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#example-powershell-script-for-task-scheduler) neste artigo. |
+| Windows PowerShell     | Confira a [documentação do ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) e o [exemplo do script do PowerShell](#example-powershell-script-for-task-scheduler) neste artigo. |
 | API do Agendador de Tarefas     | Confira a documentação do [Agendador de Tarefas](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                 |
 | Interface do usuário do Windows | No Windows, clique em **Iniciar** e digite Agendador de Tarefas. Em seguida, na lista de resultados, clique com o botão direito do mouse no **Agendador de Tarefas** e escolha **executar como administrador**.                                                                                                                                                                                                                                                                           |
 
@@ -494,7 +494,7 @@ Os tipos de informações confidenciais do EDM para os cenários a seguir estão
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 
-  [New-DlpEdmSchema](https://docs.microsoft.com/pt-BR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmsschema?view=exchange-ps)
+  [New-DlpEdmSchema](https://docs.microsoft.com/pt-BR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 Os comentários do GitHub estão habilitados, mas não é possível adicionar problemas no site público.
