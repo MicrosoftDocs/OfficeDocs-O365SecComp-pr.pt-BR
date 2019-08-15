@@ -1,5 +1,5 @@
 ---
-title: Gerenciador de ameaças e detecções em tempo real
+title: Gerenciador de ameaças e detecções em tempo real, novidade para o explorador de ameaças, alterações no explorador de ameaças, novidade para o Office 365, segurança, segurança na nuvem, novo para segurança na ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre as detecções do Explorer e do tempo real no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230405"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407950"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Gerenciador de ameaças e detecções em tempo real
 
@@ -42,12 +42,16 @@ Com esse relatório, você pode:
 
 ## <a name="new-features-in-real-time-detections"></a>Novos recursos em detecções em tempo real
 
-Explorer (e detecções em tempo real) adiciona novos campos criados para fornecer uma imagem mais completa de onde seus emails se estendem. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
+Três novos recursos adicionados ao explorador de ameaças estão descritos abaixo.
+
+Primeiro, a **visualização do cabeçalho de email e o download do corpo do email** são novos recursos disponíveis no explorador de ameaças. Os administradores poderão analisar os cabeçalhos/emails baixados quanto a ameaças. Como o download de emails pode arriscar a exposição das informações, esse processo é controlado pelo controle de acesso baseado em funções (RBAC). Uma nova função, chamada ' prévia ', deve ser adicionada a outro grupo de função do Office 365 (por exemplo, em operações da SEC, ou administração da SEC) para conceder a capacidade de baixar emails e Visualizar cabeçalhos no modo de exibição todos os emails.
+
+Mas o Explorer (e as detecções em tempo real) também adiciona novos campos criados para dar a você uma visão mais completa de onde seus emails estão no terreno. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
 
 Como isso é feito? O status de entrega agora é dividido em duas colunas:
 
-- Ação de entrega-qual é o status desse email?
-- Local de entrega-onde esse email foi roteado como resultado?
+- **Ação de entrega** -Qual é o status desse email?
+- **Local de entrega** -onde esse email foi roteado como resultado?
 
 A ação de entrega é a ação realizada em um email devido a políticas ou detecções existentes. Veja a seguir as possíveis ações que um email pode executar:
 
@@ -62,7 +66,7 @@ E aqui está o que o usuário pode ver e o que eles não podem:
 |Gerados     | Blocked        |
 |Lixo eletrônico     | Devido        |
 
-O local de entrega mostra os resultados das políticas e detecções que executam post-Delivery. Ele está vinculado a uma ação de entrega. Este campo foi adicionado para dar informações sobre a ação tomada quando um email de problema é encontrado. Estes são os valores de possilbe do local de entrega:
+O local de entrega mostra os resultados das políticas e detecções que executam post-Delivery. Ele está vinculado a uma ação de entrega. Este campo foi adicionado para dar informações sobre a ação tomada quando um email de problema é encontrado. Estes são os possíveis valores de local de entrega:
 
 1. Caixa de entrada ou pasta – o email está na caixa de entrada ou uma pasta (de acordo com suas regras de email).
 2. Local ou externo – a caixa de correio não existe na nuvem, mas está no local.
@@ -72,8 +76,9 @@ O local de entrega mostra os resultados das políticas e detecções que executa
 6. Falha – o email não pôde chegar à caixa de correio.
 7. Descartado – o email é perdido em algum lugar no fluxo.
 
-A linha do tempo de email é outro novo recurso do Explorer destinado a tornar a experiência de busca melhor para administradores. Ele reduz a randomização porque há menos tempo gasto na verificação de locais diferentes para tentar entender o evento. Quando vários eventos ocorrem ou próximos à mesma hora em um email, esses eventos serão exibidos em um modo de exibição de linha do tempo. Na verdade, alguns eventos que acontecerão após a entrega ao seu email serão capturados na coluna "ação especial". A combinação das informações da linha do tempo dos emails com a ação especial tomada no envio de mensagens enviará aos administradores informações sobre como as políticas funcionam, onde o email foi finalmente encaminhado e, em alguns casos, qual era a avaliação final.
+A **linha do tempo de email** é outro novo recurso do Explorer destinado a tornar a experiência de busca melhor para administradores. Ele reduz a randomização porque há menos tempo gasto na verificação de locais diferentes para tentar entender o evento. Quando vários eventos ocorrem ou próximos à mesma hora em um email, esses eventos serão exibidos em um modo de exibição de linha do tempo. Na verdade, alguns eventos que acontecerão após a entrega ao seu email serão capturados na coluna "ação especial". A combinação das informações da linha do tempo dos emails com a ação especial tomada no envio de mensagens enviará aos administradores informações sobre como as políticas funcionam, onde o email foi finalmente encaminhado e, em alguns casos, qual era a avaliação final.
 
+Para obter mais informações sobre a investigação de emails mal-intencionados [, consulte localizar e investigar emails mal-intencionados que foram entregues no Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Confira malware detectado em email por tecnologia
 
