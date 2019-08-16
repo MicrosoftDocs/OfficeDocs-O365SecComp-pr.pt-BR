@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: O gerenciador de planos de arquivo fornece recursos avançados de gerenciamento de políticas e rótulos de retenção, políticas de rótulos de retenção e oferece uma maneira integrada de percorrer a atividade de rótulos e de rótulo para conteúdo para todo o seu ciclo de vida de conteúdo, desde a criação à colaboração, declaração de registros, retenção e por fim, à disposição.
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547966"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430008"
 ---
 # <a name="overview-of-file-plan-manager"></a>Visão geral do gerenciador de planos de arquivo
 
@@ -123,7 +123,28 @@ Baixar um modelo em branco (ou começar com base em uma exportação do seu plan
 
 ![Modelo de plano de arquivo em branco aberto no Excel](media/file-plan-blank-template.png)
 
-Preencha o modelo (em breve: informações de referência sobre combinações de valores válidas para um único rótulo de retenção).
+Preencher o modelo. Esta tabela fornece valores válidos.
+
+|**Propriedade**|**Tipo**|**Valores válidos**|
+|:-----|:-----|:-----|
+|LabelName|String|Se o valor contiver espaços, coloque-o entre aspas (").|
+|Comentário|String|Se o valor contiver espaços, coloque-o entre aspas ("). |
+|Observações|String|Personalizado|
+|IsRecordLabel|String|$true: O rótulo é um rótulo de registro.</br>$false: O rótulo não é um rótulo de registro. Esse é o valor padrão.|
+|RetentionAction|String|Excluir</br>Manter</br>KeepAndDelete |
+|RetentionDuration|String|Esta propriedade especifica o número de dias para reter o conteúdo. Os valores válidos são:</br>Um inteiro positivo.</br>O valor é ilimitado.|
+|RetentionType|String|Esta propriedade especifica se a duração da retenção é calculada a partir da data de criação de conteúdo, da data rotulada (marcada) ou da data da última modificação. Os valores válidos são:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|Esta propriedade especifica o endereço de email de um revisor para as ações de retenção Excluir e KeepAndDelete. Você pode especificar vários endereços de email separados por vírgulas.|
+|ReferenceId|String|Personalizado|
+|DepartmentName|String|Personalizado|
+|Categoria|String|Personalizado|
+|SubCategory|String|Personalizado|
+|AuthorityType|String|Personalizado|
+|CitationName|String|Personalizado|
+|CitationUrl|String|Personalizado|
+|CitationJurisdiction|String|Personalizado|
+|Regulatório|String|Personalizado|
+|EventType|String|Esta propriedade especifica a regra de retenção associada ao rótulo. É possível usar qualquer valor que identifique a regra com exclusividade. Por exemplo:</br>Nome</br>DN (nome diferenciado)</br>GUID </br>Você pode usar o cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/pt-BR/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para exibir as regras de retenção disponíveis.|
 
 ![Modelo de plano de arquivo com as informações preenchidas](media/file-plan-filled-out-template.png)
 
