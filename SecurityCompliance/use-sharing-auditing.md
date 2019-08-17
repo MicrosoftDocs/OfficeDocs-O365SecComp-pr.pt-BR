@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'O compartilhamento é uma atividade importante no SharePoint Online e no OneDrive for Business. Agora, os administradores podem usar a auditoria de compartilhamento no log de auditoria do Office 365 para identificar recursos compartilhados com usuários fora da sua organização. '
-ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258564"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447358"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Compartilhamento de auditoria para localizar recursos compartilhados com usuários externos
 
@@ -53,9 +53,9 @@ O compartilhamento é definido pelo quando um usuário (o usuário *agindo* ) de
 
 - **AnonymousLinkUsed:** Como o nome indica, esse evento é registrado quando um link anônimo é usado para acessar um recurso. 
 
-- **SecureLinkCreated:** Um usuário criou um "link de pessoas específico" para compartilhar um recurso com uma pessoa específica. Este usuário de destino pode ser alguém externo à sua organização.
+- **SecureLinkCreated:** Um usuário criou um "link de pessoas específico" para compartilhar um recurso com uma pessoa específica. Este usuário de destino pode ser alguém externo à sua organização. A pessoa com a qual o recurso é compartilhado é identificada no registro de auditoria para o evento **AddedToSecureLink** . Os carimbos de data/hora desses dois eventos são quase idênticos.
 
-- **AddedToSecureLink:** Um usuário foi adicionado a um link de pessoas específico. Este usuário de destino pode ser alguém externo à sua organização.
+- **AddedToSecureLink:** Um usuário foi adicionado a um link de pessoas específico. Use o campo **TargetUserOrGroupName** neste evento para identificar o usuário adicionado ao link pessoas correspondente específico. Este usuário de destino pode ser alguém externo à sua organização.
 
 ## <a name="sharing-auditing-work-flow"></a>Fluxo de trabalho de auditoria de compartilhamento
   
@@ -81,7 +81,7 @@ Se uma conta de usuário para o usuário de destino não estiver no diretório, 
     
    - Quando o usuário de destino aceita o convite de compartilhamento que é enviado a eles (clicando no link no convite), o SharePoint registra um evento **SharingInvitationAccepted** e atribui as permissões de usuário de destino para acessar o recurso. Se o usuário de destino for enviado um link anônimo, o evento **AnonymousLinkUsed** será registrado depois que o usuário de destino usar o link para acessar o recurso. Para links seguros, um **** evento fileaccessd é registrado quando um usuário externo usa o link para acessar o recurso.
 
-Informações adicionais sobre o usuário de destino também são registradas, como a identidade do usuário para o qual o convite se destina e o usuário que realmente aceita o convite. Em alguns casos, esses usuários (ou endereços de email) podem ser diferentes. 
+Informações adicionais sobre o usuário de destino também são registradas, como a identidade do usuário para o qual o convite se destina e o usuário que aceita o convite. Em alguns casos, esses usuários (ou endereços de email) podem ser diferentes. 
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Como identificar recursos compartilhados com usuários externos
 
@@ -109,7 +109,7 @@ A primeira etapa é Pesquisar o log de auditoria do Office 365 para eventos de c
     
 7. Quando a pesquisa é concluída e os resultados são exibidos, clique em **Exportar resultados** \> **baixar todos os resultados**.
     
-    Depois que você selecionar a opção Exportar, uma mensagem será exibida na parte inferior da janela que solicitará que você abra ou salve o arquivo CSV.
+    Após selecionar a opção Exportar, uma mensagem na parte inferior da janela solicitará que você abra ou salve o arquivo CSV.
     
 8. Clique em **salvar** \> **salvar como** e salve o arquivo CSV em uma pasta no computador local. 
 
