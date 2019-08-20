@@ -1,5 +1,5 @@
 ---
-title: Encontre e investigue emails maliciosos que foram entregues no Office 365, TIMailData-inline, incidente de segurança, incidente, ATP PowerShell, malware de email, usuários comprometidos, golpes por email, malware de email
+title: Encontre e investigue emails mal-intencionados que foram entregues no Office 365, TIMailData-inline, incidente de segurança, incidente, ATP PowerShell, malware de email, usuários comprometidos, phishing de email, malware de email, ler cabeçalhos de email, ler cabeçalhos, abrir cabeçalhos de email
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407940"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444861"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Encontre e investigue emails mal-intencionados que foram entregues no Office 365
 
@@ -40,9 +40,56 @@ Verifique se os seguintes requisitos são atendidos:
     
 ## <a name="dealing-with-suspicious-emails"></a>Lidando com emails suspeitos
 
-Invasores mal-intencionados podem estar enviando emails aos seus usuários para tentarem e Phish suas credenciais e obter acesso aos segredos corporativos! Para evitar isso, você deve usar os serviços de proteção contra ameaças no Office 365, incluindo [proteção do Exchange Online](eop/exchange-online-protection-overview.md) e [proteção avançada contra ameaças](office-365-atp.md). No entanto, há ocasiões em que um invasor pode enviar emails para seus usuários que contenham uma URL e apenas mais tarde, fazer essa URL apontar para conteúdo mal-intencionado (malware, etc.). Como alternativa, você pode perceber muito tarde que um usuário em sua organização foi comprometido e enquanto esse usuário foi comprometido, um invasor usou essa conta para enviar emails a outros usuários da sua empresa. Como parte da limpeza desses dois cenários, talvez você queira remover mensagens de email de caixas de entrada de usuários. Em situações como essas, você pode usar o [Explorador de ameaças (ou detecções em tempo real)](threat-explorer.md) para encontrar e remover essas mensagens de email!
+Invasores mal-intencionados podem estar enviando emails aos seus usuários para tentarem e Phish suas credenciais e obter acesso aos segredos corporativos! Para evitar isso, você deve usar os serviços de proteção contra ameaças no Office 365, incluindo [proteção do Exchange Online](eop/exchange-online-protection-overview.md) e [proteção avançada contra ameaças](office-365-atp.md). No entanto, há ocasiões em que um invasor pode enviar emails para seus usuários que contenham uma URL e apenas mais tarde, fazer essa URL apontar para conteúdo mal-intencionado (malware, etc.). 
+
+Como alternativa, você pode perceber muito tarde que um usuário em sua organização foi comprometido e enquanto esse usuário foi comprometido, um invasor usou essa conta para enviar emails a outros usuários da sua empresa. Como parte da limpeza desses dois cenários, talvez você queira remover mensagens de email de caixas de entrada de usuários. Em situações como essas, você pode usar o [Explorador de ameaças (ou detecções em tempo real)](threat-explorer.md) para encontrar e remover essas mensagens de email!
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>Onde os emails redirecionados são localizados após a tomada de ações
+
+Então, onde os emails de problema vão e quais ferramentas ajudam os investigadores a entender o que aconteceu com eles? Os campos do explorador de ameaças relatam informações que ajudarão os administradores a decodificar eventos de email.
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>Exibir os cabeçalhos de email e baixar o corpo do email
+
+**O cabeçalho de email Preview e o download do corpo do email** são recursos úteis de gerenciamento de ameaças de email disponíveis no explorador de ameaças. Os administradores poderão analisar e baixar cabeçalhos e emails para ameaças. O acesso para usar esse recurso é controlado pelo RBAC (controle de acesso baseado em função) para reduzir o risco de exposição do conteúdo de email do usuário.
+
+Uma nova *função*, chamada ' prévia ', deve ser adicionada a outro grupo de função do Office 365 (por exemplo, em operações da SEC, ou administração da SEC) para conceder a capacidade de baixar emails e Visualizar cabeçalhos no modo de exibição todos os emails.
+
+Para ver o submenu com as opções de download e visualização de cabeçalho de email: 
+
+1. Acesse [https://protection.office.com](https://protection.office.com) e entre usando sua conta corporativa ou de estudante para o Office 365. Isso leva você para o centro &amp; de conformidade de segurança. 
+    
+2. No painel de navegação à esquerda, escolha **Gerenciador**de **Gerenciamento** \> de ameaças.
+
+3. Clique em um assunto na tabela Gerenciador de ameaças.
+
+Isso abrirá o submenu, onde os links de visualização de cabeçalho e download de email são posicionados.
+
+> [!IMPORTANT]
+> Use ambas as tabelas que acompanham o conjunto. Uma informa o RBAC necessário, o outro, o local onde os direitos devem ser concedidos.
+<p>
+
+|Atividade  |RoleGroup RBAC com acesso |Função "Preview" necessária?  |
+|---------|---------|---------|
+|Usar o explorador de ameaças (e detecções em tempo real) para analisar ameaças     |  Administrador global do Office 365,<br> Administrador de segurança, <br> Leitor de segurança      | Não   |
+|Usar o explorador de ameaças (e detecções em tempo real) para exibir cabeçalhos de emails, bem como Visualizar e baixar emails em quarentena    |     Administrador global do Office 365, <br> Administrador de segurança, <br>Leitor de segurança    |       Não  |
+|Usar o explorador de ameaças para exibir cabeçalhos e baixar emails entregues a caixas de correio     |      Administrador global do Office 365, <br>Administrador de segurança,<br> Leitor de segurança, <br> Visualização    |   Sim      |
+
+<br>
+
+|RoleGroup RBAC  |Onde os usuários são atribuídos  |
+|---------|---------|
+| Administração Global   | Office 365 Admin Center        |
+| Administrador de segurança      |    Centro de Conformidade e Segurança     |
+| Leitor de segurança   |    Centro de Conformidade e Segurança     |
+|      |    Centro de Conformidade e Segurança     |
+
+
+> [!CAUTION]
+> Lembre-se, "Preview" é uma função e não um RoleGroup e essa função deve ser adicionada a um RoleGroup posteriormente.
+
+![Submenu do Gerenciador de ameaças com links para baixar e Visualizar na página.](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>Verificar a ação e o local de entrega
 
 As detecções de tempo real do explorador de ameaças adicionaram os campos de ação de entrega e local de entrega no local do status de entrega. Isso resulta em uma imagem mais completa de onde seus emails se esterram. Parte do objetivo dessa alteração é tornar a busca mais fácil para pessoas de operações de segurança, mas o resultado líquido é saber o local dos emails de problemas em um relance.
 
@@ -67,7 +114,11 @@ O local de entrega mostra os resultados das políticas e detecções que executa
 - **Quarentena** – o email em quarentena e não está na caixa de correio de um usuário.
 - **Falha** – o email não pôde chegar à caixa de correio.
 - **Descartado** – o email é perdido em algum lugar no fluxo.
+
+### <a name="view-the-timeline-of-your-email"></a>Exibir a linha do tempo de seu email
   
+ **Linha do tempo de email** outro campo no Gerenciador de ameaças também será mais fácil para administradores. Em vez de gastar uma verificação de tempo valioso onde o email pode ter desaparecido, quando, ao investigar um evento, quando vários eventos ocorrem ou próximos, ao mesmo tempo em um email, esses eventos serão exibidos em um modo de exibição de linha do tempo. Alguns eventos que acontecerão após a entrega ao seu email serão capturados na coluna "*ação especial*". A combinação de informações a partir da linha do tempo do email com a ação especial tomada no correio de envio de email fornece informações sobre políticas e tratamento de ameaças (por exemplo, onde o email foi roteado e, em alguns casos, qual era a avaliação final).
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Localizar e excluir emails suspeitos que foram entregues
 
 > [!TIP]

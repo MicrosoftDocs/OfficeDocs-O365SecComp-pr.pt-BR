@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Saiba como criar, modificar, remover e testar tipos de informações confidenciais personalizados para DLP na interface gráfica do usuário, no Centro de Conformidade e Segurança.
-ms.openlocfilehash: 62a08b4978e7e962f46a1de43c3d3160a44dd46e
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: e7b2d07c64d97eafee5b269bbc0e395855c2ab44
+ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230895"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36279153"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Criar um tipo personalizado de informação confidencial no Centro de Conformidade e Segurança
 
@@ -29,7 +29,7 @@ Leia este artigo para criar um [ tipo personalizado de informação confidencial
 
 Também é possível criar tipos personalizados de informações confidenciais usando os recursos PowerShell e Exact Data Match. Para saber mais sobre esses métodos, confira:
 - [Crie um tipo personalizado de informação confidencial no PowerShell do Centro de Conformidade e Segurança](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Criar um tipo personalizado de informações confidenciais com Correspondência Exata de Dados (visualização)](create-custom-sensitive-info-type-edm.md)
+- [Criar um tipo personalizado de informações confidenciais com Correspondência Exata de Dados (visualização)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ## <a name="before-you-begin"></a>Antes de começar...
 

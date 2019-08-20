@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Saiba mais sobre as políticas de supervisão no Office 365
-ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
-ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
+ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34694705"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165647"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -66,8 +66,7 @@ Você cria políticas de supervisão no centro de conformidade. Essas políticas
 Antes de começar a usar a supervisão, você deve determinar quem precisa de suas comunicações revisadas. Na política, os endereços de email do usuário identificam pessoas ou grupos de pessoas para supervisionar. Alguns exemplos desses grupos são grupos do Office 365, listas de distribuição baseados no Exchange e canais do Microsoft Teams. Você também pode excluir usuários ou grupos específicos da supervisão com um grupo supervisionado ou uma lista de grupos.
 
 > [!IMPORTANT]
-> Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5.
-Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5. Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Revisores
 
@@ -76,6 +75,8 @@ Ao criar uma política de supervisão, você deve determinar quem executará as 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos de usuários e revisores supervisionados
 
 Para simplificar a configuração, crie grupos para pessoas que precisam de suas comunicações revisadas e grupos para pessoas que revisam essas comunicações. Se você estiver usando grupos, talvez precise de vários. Por exemplo, se você quiser monitorar as comunicações entre dois grupos distintos de pessoas ou se quiser especificar um grupo que não é supervisionado.
+
+Quando você seleciona um grupo do Office 365 para usuários supervisionados, a política monitora o conteúdo da caixa de correio compartilhada do Office 365 e os canais do Microsoft Teams associados ao grupo. Quando você seleciona uma lista de distribuição, a política monitora caixas de correio de usuários individuais.
 
 ### <a name="supported-communication-types"></a>Tipos de comunicação com suporte
 
@@ -123,24 +124,24 @@ Configure os dicionários de palavras-chave personalizados (ou léxicos) para fo
 
 #### <a name="offensive-language"></a>Linguagem ofensiva
 
-Monitorar mensagens de email enviadas ou recebidas em sua organização para uma linguagem ofensiva. O modelo usa uma combinação de aprendizado de máquina, inteligência artificial e palavras-chave para identificar mensagens de email inadequadas como parte dos requisitos de monitoramento antiassédio e anti-intimidação. Para impedir ou bloquear a linguagem ofensiva de outras comunicações em sua organização, crie uma [política de prevenção de perda de dados](create-test-tune-dlp-policy.md) que use um dicionário de [palavras-chave personalizado](create-a-keyword-dictionary.md) de termos ofensivos.
+Monitorar mensagens de email enviadas ou recebidas em sua organização para uma linguagem ofensiva. O modelo usa uma combinação de aprendizado de máquina, inteligência artificial e palavras-chave para identificar o idioma das mensagens de email que podem violar as políticas antiassédio e do anti-intimidação. O modelo de linguagem ofensiva atualmente oferece suporte a palavras-chave em inglês e monitora o corpo de mensagens de email.
 
-O modelo de linguagem ofensiva atualmente oferece suporte a palavras-chave em inglês e monitora o corpo de mensagens de email. O modelo de linguagem ofensiva monitora o email em busca de uma mensagem de erro associada aos seguintes tipos de idioma:
+> [!NOTE]
+> Crie uma [política de prevenção de perda de dados](create-test-tune-dlp-policy.md) com um [dicionário de palavras-chave personalizado](create-a-keyword-dictionary.md) de termos bloqueados se você precisar:
+>
+> - monitorar as comunicações do Microsoft Teams em sua organização para uma linguagem ofensiva
+> - impedir ou bloquear linguagem ofensiva em comunicações em sua organização
+
+Observe que o modelo não fornece uma lista exaustiva de idiomas ofensivos. Além disso, os padrões culturais e de idioma mudam continuamente e, em claro, a Microsoft reserva-se o direito de atualizar o modelo de acordo com sua vontade. Embora o modelo possa ajudar sua organização a monitorar a linguagem ofensiva, o modelo não se destina a fornecer o único meio de monitoramento ou a solução de tal idioma da sua organização. Sua organização, não a Microsoft, permanece responsável por todas as decisões relacionadas ao monitoramento e bloqueio da linguagem ofensiva.
+
+O modelo de linguagem ofensiva monitora o email em busca de uma mensagem de erro associada aos seguintes tipos de idioma:
 
 |**Tipo**|**Descrição**|
 |:-----|:-----|
-| **Obscenidades** | Expressões que são inadequadas e constrangidos na maioria das pessoas. |
-| **Slurs** | Expressões que atacam culturas e étnicas. |
-| **Taunts** | Expressões que taunt, condemn e ridicule. |
-| **Referências a handicaps** | Expressões que se destinam a handicaps física ou mental. |
-| **Idioma Squalid** | Expressões que direcionam interesses sexuais e estado físico de cleanliness. |
-| **Homophobia** | Expressões direcionadas a preferências sexuais. |
-| **Racism** | Expressões que direcionam a corrida e a étnica. |
-| **Extremism** | Expressões que se destinam a Religion e políticas Ideologies. |
-| **Disfarce** | Expressões para as quais o significado ou pronúncia é o mesmo que outro termo mais ofensivo. |
-| **Idioma provocative** | Expressões que podem causar Anger ou violência. |
-| **Taboo** | Expressões geralmente inadequadas em comunicações de societal de educado. |
-| **Idioma não refinado** | Expressões que não têm Manners educadores e que são potencialmente esversos e rudes. |
+| **Obscenidades** | Expressões que constrangim a maioria das pessoas. |
+| **Slurs** | Expressões que expressam contra prejuízo contra grupos específicos (por exemplo, raça, étnica, orientação sexual, deficiência). |
+| **Taunts** | Expressões que taunt, condemn, ridicule ou poderiam possivelmente causar Anger ou violência. |
+| **Expressões disfarçadas** | Expressões para as quais o significado ou pronúncia é o mesmo que outro termo mais ofensivo. |
 
 #### <a name="conditional-settings"></a>Configurações condicionais
 
@@ -150,7 +151,7 @@ A tabela a seguir explica mais sobre cada condição.
   
 |**Condition**|**Como usar essa condição**|
 |:-----|:-----|
-| **A mensagem é recebida de qualquer um desses domínios**  <br><br> **A mensagem não é recebida de nenhum desses domínios** | Aplique a política para incluir ou excluir domínios ou endereços de email específicos em mensagens recebidas. Insira cada domínio ou endereço de email e separe vários domínios ou endereços de email com uma vírgula. Cada endereço de domínio ou de email inserido é aplicado separadamente, somente um domínio ou endereço de email deve ser aplicado para que a política seja aplicada à mensagem. <br><br> Se você quiser monitorar todos os emails de um domínio específico, mas quiser excluir mensagens que não precisam ser revisadas (boletins informativos, anúncios, etc.), você deve configurar duas condições: <br> – Uma **mensagem é recebida de qualquer uma destas** condições de domínios que define o domínio ("contoso.com") e <br> – Uma **mensagem não é recebida de qualquer uma destas** condições de domínios que exclua o endereço de email ("newsletter@contoso.com"). |
+| **A mensagem é recebida de qualquer um desses domínios**  <br><br> **A mensagem não é recebida de nenhum desses domínios** | Aplique a política para incluir ou excluir domínios ou endereços de email específicos em mensagens recebidas. Insira cada domínio ou endereço de email e separe vários domínios ou endereços de email com uma vírgula. Cada endereço de domínio ou de email inserido é aplicado separadamente, somente um domínio ou endereço de email deve ser aplicado para que a política seja aplicada à mensagem. <br><br> Se você quiser monitorar todos os emails de um domínio específico, mas quiser excluir mensagens que não precisam ser revisadas (boletins informativos, anúncios, etc.), você deve configurar a condição que uma **mensagem não é recebida de qualquer uma destas** condições de domínio que exclua o Endereço de email (exemplo "newsletter@contoso.com"). |
 | **A mensagem é enviada para qualquer um desses domínios**  <br><br> **A mensagem não é enviada a nenhum desses domínios** | Aplique a política para incluir ou excluir domínios ou endereços de email específicos em mensagens enviadas. Insira cada domínio ou endereço de email e separe vários domínios ou endereços de email com uma vírgula. Cada domínio ou endereço de email é aplicado separadamente, apenas um endereço de domínio ou de email deve ser aplicado para que a política seja aplicada à mensagem. <br><br> Se você quiser monitorar todos os emails enviados para um domínio específico, mas quiser excluir as mensagens enviadas que não precisam de revisão, você deve configurar duas condições: <br> -Uma **mensagem é enviada a qualquer uma das condições de domínios** que define o domínio ("contoso.com") e <br> -Uma **mensagem não é enviada para qualquer uma dessas condições de domínio** que exclua o endereço de email ("subscriptions@contoso.com"). |
 | **A mensagem é classificada com qualquer um desses rótulos**  <br><br> **A mensagem não é classificada com nenhum desses rótulos** | Para aplicar a política quando determinados rótulos de retenção são incluídos ou excluídos em uma mensagem. Os rótulos de retenção devem ser configurados separadamente e os rótulos configurados são escolhidos como parte dessa condição. Cada rótulo escolhido é aplicado separadamente (somente um desses rótulos deve se aplicar à política para aplicar à mensagem). Para obter mais informações sobre a configuração de rótulos de retenção, consulte [Overview of Retention Labels](https://docs.microsoft.com/office365/securitycompliance/labels).|
 | **A mensagem contém qualquer uma destas palavras**  <br><br> **A mensagem não contém nenhuma destas palavras** | Para aplicar a política quando determinadas palavras ou frases forem incluídas ou excluídas em uma mensagem, insira cada palavra ou frase em uma linha separada. Cada linha de palavras inserida é aplicada separadamente (apenas uma dessas linhas deve se aplicar à política a ser aplicada à mensagem). Para saber mais sobre como inserir palavras ou frases, consulte a próxima seção [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -161,6 +162,8 @@ A tabela a seguir explica mais sobre cada condição.
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Palavras e frases correspondentes a emails ou anexos
 <a name="Matchwords"></a> Cada linha de palavras inserida é aplicada separadamente (somente uma linha deve ser aplicada à condição de política a ser aplicada ao email ou anexo). Por exemplo, vamos usar a condição, a **mensagem contém qualquer uma destas palavras**, com as palavras-chave "banco" e "comércio Insider" em linhas separadas. A política se aplica a qualquer mensagem que inclua a palavra "banco" ou a frase "insider trading". Apenas uma destas palavras ou frases deve ocorrer para que se aplique a condição dessa política. Palavras na mensagem ou anexo devem corresponder exatamente ao que você inserir.
+
+Para verificar as mensagens de email e anexos das mesmas palavras-chave, crie uma [política de prevenção de perda de dados](create-test-tune-dlp-policy.md) com um [dicionário de palavras-chave personalizado](create-a-keyword-dictionary.md) para os termos que você deseja monitorar. Essa configuração de política identifica palavras-chave definidas que aparecem na mensagem de email **ou** no anexo de email. Usando as configurações de política condicional padrão (*mensagem contém qualquer uma destas palavras* e *anexos contém qualquer uma destas palavras*) para identificar termos em mensagens e anexos requer que os termos estejam presentes **** na mensagem e no anexar.
   
 ##### <a name="enter-multiple-conditions"></a>Inserir várias condições
 

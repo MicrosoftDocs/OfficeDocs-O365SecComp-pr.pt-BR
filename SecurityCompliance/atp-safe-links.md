@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: O recurso de links seguros oferece verificação de horário de clique de hiperlinks em documentos do Office e em mensagens de email. Use links seguros para proteger sua organização contra phishing e outros ataques.
-ms.openlocfilehash: bb6a4c94f72e24ff4cf3baee337bc7c14953a399
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 725d5c331b330b2edca030b74a26eaa692f36465
+ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231095"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393320"
 ---
 # <a name="office-365-atp-safe-links"></a>Links seguros de ATP do Office 365
 
@@ -44,7 +44,7 @@ Depois que as políticas de links seguros de ATP estiverem no local, os administ
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Como obter proteção de links de segurança ATP
 
-**Primeiro, certifique-se de que sua assinatura inclua [proteção avançada contra ameaças](office-365-atp.md)**. A ATP está incluída em inscrições, como [o microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [o Microsoft 365 Business, o](https://www.microsoft.com/microsoft-365/business)Office 365 Enterprise E5, o Office 365 Education a5, etc. Se sua organização tiver uma assinatura do Office 365 que não inclua o Office 365 ATP, você poderá comprar ATP como um complemento. Para saber mais, veja os seguintes recursos: 
+**Primeiro, certifique-se de que sua assinatura inclua [proteção avançada contra ameaças](office-365-atp.md)**. A ATP é incluída em assinaturas, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise e5, Office 365 Education a5, etc. Se sua organização tiver uma assinatura do Office 365 que não inclua o Office 365 ATP, você poderá comprar ATP como um complemento. Para saber mais, veja os seguintes recursos: 
 
 - [Preços e planos para proteção avançada contra ameaças do Office 365](https://products.office.com/exchange/advance-threat-protection)
 
