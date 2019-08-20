@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenha uma visão geral dos tipos de informações confidenciais personalizadas para DLP.
-ms.openlocfilehash: 3c3acceb23fe74d22b9e952bf5dc76d9ed6eefd9
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: b73f0d51e57106cbcc6f0986261faabb26cc5b4a
+ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230775"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36279143"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipos de informações confidenciais personalizadas
 
@@ -49,7 +49,7 @@ As partes fundamentais de um tipo personalizado de informações confidenciais s
 
 Para criar tipos de informações confidenciais personalizadas no Centro de Conformidade e Segurança, você pode escolher entre várias opções:
 
-- **Use EDM** (NOVO!) Você pode configurar tipos de informações confidenciais personalizadas usando a classificação baseada em Exact Data Match (EDM). Esse método permite criar um tipo de informações confidenciais dinâmico usando um banco de dados seguro que você pode atualizar periodicamente. Confira [Criar um tipo de informações confidenciais personalizadas com classificação baseada em Exact Data Match (visualização)](create-custom-sensitive-info-type-edm.md).
+- **Use EDM** (NOVO!) Você pode configurar tipos de informações confidenciais personalizadas usando a classificação baseada em Exact Data Match (EDM). Esse método permite criar um tipo de informações confidenciais dinâmico usando um banco de dados seguro que você pode atualizar periodicamente. Confira [Criar um tipo de informações confidenciais personalizadas com classificação baseada em Exact Data Match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 - **Use o PowerShell** Você pode configurar tipos de informações confidenciais personalizadas usando o PowerShell. Embora esse método seja mais complexo do que usar a interface do usuário, você tem mais opções de configuração. Consulte [Criar um tipo de informações confidenciais personalizadas no Centro de Conformidade e Segurança do PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
