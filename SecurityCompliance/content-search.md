@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a ferramenta Pesquisa de Conteúdo, no centro de conformidade do Office 365 ou do Microsoft 365, para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar consultas de pesquisa de palavras-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você poderá visualizar e exportar os resultados da pesquisa. A Pesquisa de Conteúdo também é uma ferramenta efetiva para pesquisar conteúdo relacionado a uma solicitação do titular dos dados do RGPD.
-ms.openlocfilehash: 3df1ee02cc7b31a8dd316bac5ccd4455c26922c5
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
+ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048183"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36473411"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de Conteúdo no Office 365
 
@@ -51,13 +51,13 @@ Para ter acesso à página da **Pesquisa de conteúdo** e poder executar pesquis
     
     ![A Nova lista suspensa de pesquisa](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Escolha uma das seguintes opções:
+    Você pode escolher uma das seguintes opções:
     
-    - **Pesquisa guiada – Essa opção inicia um assistente que o guia durante a criação da pesquisa. A interface do usuário usada para selecionar locais de conteúdo e criar a consulta de pesquisa é igual à opção **Nova pesquisa**. 
+    - **Pesquisa dirigida:** Essa opção inicia um assistente que o orientará durante a criação da pesquisa. A interface do usuário usada para selecionar locais de conteúdo e criar a consulta de pesquisa é igual à opção **Nova pesquisa**. 
     
-    - **Nova pesquisa** – Essa opção exibe uma interface do usuário atualizada para criar uma pesquisa. Essa é a opção padrão se você clicar em **Nova pesquisa**.
+    - **Nova pesquisa:** Essa opção exibe uma interface do usuário atualizada para criar uma pesquisa. Essa é a opção padrão se você clicar em **Nova pesquisa**.
     
-    - **Pesquisar por lista de IDs** – Essa opção permite pesquisar mensagens de email específicas e outros itens da caixa de correio usando uma lista de IDs do Exchange. Para criar uma pesquisa de lista de IDs (chamada formalmente de pesquisa direcionada), envie um arquivo de valores separados por vírgula (CSV) que identifique os itens específicos da caixa de correio a serem pesquisados. Para obter instruções, confira [Preparar um arquivo CSV para uma lista de IDs de Pesquisa de Conteúdo no Office 365](csv-file-for-an-id-list-content-search.md).
+    - **Pesquisar por Lista de IDs** – Essa opção permite pesquisar mensagens de email específicas e outros itens da caixa de correio usando uma lista de IDs do Exchange. Para criar uma pesquisa de lista de IDs (chamada formalmente de pesquisa direcionada), envie um arquivo de valores separados por vírgula (CSV) que identifique os itens específicos da caixa de correio a serem pesquisados. Para obter instruções, confira [Preparar um arquivo CSV para uma lista de IDs de Pesquisa de Conteúdo no Office 365](csv-file-for-an-id-list-content-search.md).
     
     O restante das etapas desse procedimento segue o novo fluxo de trabalho de pesquisa padrão.
     
@@ -65,24 +65,24 @@ Para ter acesso à página da **Pesquisa de conteúdo** e poder executar pesquis
     
 5. Em **Consulta de pesquisa**, especifique o seguinte:
     
-    ![Especifique palavras-chave, condições e locais a pesquisar](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Especifique palavras-chave, condições e locais a serem pesquisados](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Palavras-chave para pesquisar** – Digite uma consulta de pesquisa na caixa de **Palavras-chave**. Você pode especificar palavras-chave, propriedades de mensagem, como datas enviadas e recebidas, ou propriedades do documento, como nomes de arquivos ou a data em que um documento foi alterado pela última vez. Faça consultas mais complexas que usam um operador Booleano, **E**, **OU**, **NÃO** e **PRÓXIMO**. Você também pode procurar informações confidenciais (por exemplo, números de seguridade social) em documentos ou pesquisar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será incluído nos resultados da pesquisa.
+   - **Palavras-chave a pesquisar:** Digite uma consulta de pesquisa na caixa de **Palavras-chave**. Você pode especificar palavras-chave, propriedades de mensagem como datas enviadas e recebidas, ou ainda, propriedades do documento como nomes de arquivos ou a data em que um documento foi alterado pela última vez. Faça consultas mais complexas que usam um operador Booleano, **E**, **OU**, **NÃO** e **PRÓXIMO**. Você também pode procurar informações confidenciais (por exemplo, números de seguridade social) em documentos ou pesquisar documentos que foram compartilhados externamente. Se você deixar a caixa de palavra-chave vazia, todo o conteúdo localizado nos locais de conteúdo especificado será incluído nos resultados da pesquisa.
     
       Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavras-chave** e digitar uma palavra-chave em cada linha. Ao fazer isso, as palavras-chave em cada linha serão conectadas por um operador lógico (**c:s**) com funcionalidade semelhante ao operador **OU** na consulta de pesquisa criada. 
     
       Por que usar a lista de palavras-chave? Para obter estatísticas que mostram quantos itens correspondem a cada palavra-chave. Isso ajudará a identificar rapidamente quais palavras-chave são as mais recentes. Também poderá usar uma frase de palavra-chave (entre parênteses) em uma linha. Para obter mais informações sobre as estatísticas de pesquisa, confira [Exibir estatísticas da palavra-chave para Resultados de Pesquisa de Conteúdo](view-keyword-statistics-for-content-search.md).
 
      > [!NOTE]
-     > Para ajudar a reduzir problemas causados por listas de palavras-chave grandes, agora você está limitado a um máximo de 20 linhas na lista de palavras-chave.
+     > Para ajudar a reduzir problemas causados por listas de palavras-chave muito extensas, agora você está limitado a um máximo de 20 linhas na lista de palavras-chave.
     
-    - **Condições** – Você também pode adicionar condições a uma consulta de pesquisa para restringir a pesquisa e retornar um conjunto de resultados mais refinado. Cada condição adiciona uma cláusula à consulta de pesquisa que é criada e executada quando você inicia a pesquisa. Uma condição é logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) por um operador lógico (**c:c**) parecido com a funcionalidade do operador **E**. Isso significa que os itens precisam atender à consulta de palavras-chave e uma ou mais condições para serem incluídas nos resultados. É assim que as condições ajudam a restringir os resultados. Para obter uma lista e uma descrição das condições que podem ser usadas em uma consulta de pesquisa, confira a seção "Condições de pesquisa" em [Consultas de palavra-chave e critérios de pesquisa para a Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
+    - **Condições:** Você também pode adicionar condições a uma consulta de pesquisa para restringir a pesquisa e produzir um conjunto de resultados mais refinado. Cada condição adiciona uma cláusula à consulta de pesquisa que é criada e executada quando você inicia a pesquisa. Uma condição é logicamente conectada à consulta de palavra-chave (especificada na caixa de palavra-chave) por um operador lógico (**c:c**) parecido com a funcionalidade do operador **E**. Isso significa que os itens precisam atender à consulta de palavras-chave e uma ou mais condições para serem incluídas nos resultados. É assim que as condições ajudam a restringir os resultados. Para obter uma lista e uma descrição das condições que podem ser usadas em uma consulta de pesquisa, confira a seção "Condições de pesquisa" em [Consultas de palavra-chave e condições ou critérios de pesquisa para a Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md#search-conditions).
     
-       - **Locais** – Escolha os locais de conteúdo a serem pesquisados.
+       - **Locais:** Escolha os locais de conteúdo a serem pesquisados.
     
-      - **Todos os locais** – Use essa opção para pesquisar todos os locais de conteúdo na organização. Isso inclui os emails em todas as caixas de correio do Exchange (incluindo todas as caixas de correio inativas, caixas de correio de todos os Grupos do Office 365, caixas de correio de todas as equipes da Microsoft). Também inclui todas as conversas do Skype for Business, todos os sites do SharePoint e OneDrive for Business (incluindo os sites de todos os Grupos do Office 365 e Microsoft Teams) e itens em todas as pastas públicas do Exchange.
+      - **Todos os locais:** Use essa opção para pesquisar todos os locais de conteúdo em sua organização. Isso inclui os emails em todas as caixas de correio do Exchange (incluindo todas as caixas de correio inativas, caixas de correio de todos os Grupos do Office 365, todas as caixas de correio do Microsoft Teams). Também inclui todas as conversas do Skype for Business, todos os sites do SharePoint e OneDrive for Business (incluindo os sites de todos os Grupos do Office 365 e Microsoft Teams) e itens em todas as pastas públicas do Exchange.
     
-      - **Locais específicos** – Use essa opção para pesquisar locais de conteúdo específicos. Você poderá pesquisar todos os locais de conteúdo de um serviço específico do Office 365 (por exemplo, pesquisar em todas as caixas de correio do Exchange ou pesquisar em todos os sites do SharePoint) ou pesquisar locais específicos em qualquer um dos serviços do Office 365 exibidos. 
+      - **Locais específicos:** Use essa opção para pesquisar locais de conteúdo específicos. Você poderá pesquisar todos os locais de conteúdo de um serviço específico do Office 365 (por exemplo, pesquisar em todas as caixas de correio do Exchange ou pesquisar em todos os sites do SharePoint) ou pesquisar locais específicos em qualquer um dos serviços do Office 365 exibidos. 
     
         ![Interface do usuário para escolher locais de conteúdo para pesquisar](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -111,9 +111,9 @@ Há dois parâmetros de configuração para visualizar os resultados de pesquisa
   
 ![Visualizar configurações de resultados de pesquisa](media/83519477-1c85-4442-8886-481f186fd758.png)
   
-1. **Visualizar resultados automaticamente** – Essa configuração exibe os resultados após a execução de uma pesquisa.
+1. **Visualizar resultados automaticamente:** Essa configuração exibe os resultados após a execução de uma pesquisa.
     
-2. **Visualizar resultados manualmente** – Essa configuração exibe espaços reservados no painel de resultados da pesquisa e exibe o botão **Visualizar resultados** que você deve clicar para exibir os resultados da pesquisa. Esta é a configuração padrão. Ela ajuda a melhorar o desempenho da pesquisa ao não exibir automaticamente os resultados quando uma pesquisa existente é aberta. 
+2. **Visualizar resultados manualmente:** Essa configuração exibe espaços reservados no painel de resultados da pesquisa e exibe o botão **Visualizar resultados** que você deve clicar para exibir os resultados da pesquisa. Esta é a configuração padrão. Ela ajuda a melhorar o desempenho da pesquisa ao não exibir automaticamente os resultados quando uma pesquisa existente é aberta. 
     
 Existem limites relacionados à quantidade de itens disponíveis para visualização. Para obter mais informações, confira [Limites de Pesquisa de Conteúdo](limits-for-content-search.md). 
   
@@ -135,13 +135,13 @@ Para visualizar as estatísticas de pesquisa:
     
 3. Na lista suspensa **Resultados individuais**, clique em **Pesquisar perfil**.
     
-4. Na lista suspensa **Tipo**, clique em uma das seguintes opções, dependendo das estatísticas de pesquisa que deseja visualizar. 
+4. Na lista suspensa **Tipo**, clique em uma das seguintes opções, dependendo das estatísticas de pesquisa que você deseja visualizar. 
     
-  - **Resumo** – Exibe as estatísticas de cada tipo de locais de conteúdo pesquisado. Isso contém o número de locais de conteúdo com os itens correspondentes à consulta de pesquisa, o número total e o tamanho dos itens de resultado da pesquisa. Esta é a configuração padrão.
+  - **Resumo**: Exibe as estatísticas de cada tipo de locais de conteúdo pesquisado. Tal resumo contém o número de locais de conteúdo com os itens correspondentes à consulta de pesquisa, o número total e o tamanho dos itens de resultado da pesquisa. Esta é a configuração padrão.
     
-  - **Consultas** – Exibe estatísticas sobre a consulta de pesquisa. Isso inclui o tipo de local de conteúdo ao qual as estatísticas de consulta são aplicáveis, parte da consulta de pesquisa à qual as estatísticas são aplicáveis (observe que **Primário** indica toda a consulta de pesquisa), o número de locais de conteúdo que contêm itens correspondentes à consulta de pesquisa, o número total, tamanho e os itens que foram encontrados (no local de conteúdo especificado) correspondentes à consulta de pesquisa. As estatísticas para itens não indexados (também chamados de *itens parcialmente indexados*) também são exibidas. No entanto, apenas itens parcialmente indexados de caixas de correio estão inclusos nas estatísticas. Itens parcialmente indexados do SharePoint e do OneDrive não são incluídos nas estatísticas.
+  - **Consultas:** Exibe estatísticas sobre a consulta de pesquisa. Já esse inclui o tipo de local de conteúdo ao qual as estatísticas de consulta são aplicáveis, parte da consulta de pesquisa à qual as estatísticas são aplicáveis (observe que **Primário** indica toda a consulta de pesquisa), o número de locais de conteúdo que contêm itens correspondentes à consulta de pesquisa, o número total, tamanho e os itens que foram encontrados (no local de conteúdo especificado) correspondentes à consulta de pesquisa. As estatísticas para itens não indexados (também chamados de *itens parcialmente indexados*) também são exibidas. No entanto, apenas itens parcialmente indexados de caixas de correio estão inclusos nas estatísticas. Itens parcialmente indexados do SharePoint e do OneDrive não são incluídos nas estatísticas.
     
-  - **Principais locais** – Exibe estatísticas sobre o número de itens correspondentes à consulta de pesquisa em cada local de conteúdo. Os primeiros 1.000 locais são exibidos.
+  - **Principais locais:** Exibe estatísticas sobre o número de itens que correspondem à consulta de pesquisa em cada local de conteúdo. Os primeiros 1.000 locais são exibidos.
     
 Para obter mais informações sobre as estatísticas de pesquisa, confira [Exibir estatísticas da palavra-chave para resultados de Pesquisa de Conteúdo](view-keyword-statistics-for-content-search.md).
   
@@ -179,7 +179,9 @@ Consulte as seções a seguir para obter mais informações sobre pesquisas de c
   
 [Pesquisar caixas de correio inativas](#searching-inactive-mailboxes)
   
-[Exibir resultados de pesquisa](#previewing-search-results)
+[Pesquisar caixas de correio desconectadas ou que tiveram a licença removida](#searching-disconnected-or-de-licensed-mailboxes)
+
+[Visualizar os resultados de pesquisa](#previewing-search-results)
   
 [Itens parcialmente indexados](#partially-indexed-items)
   
@@ -228,7 +230,7 @@ Lembre-se do seguinte ao usar a lista de palavras-chave para criar uma consulta 
 
 - Para coletar uma lista das URLs dos sites do OneDrive na organização, confira [Criar uma lista de todos os locais do OneDrive na organização](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Esse script neste artigo cria um arquivo de texto que contém uma lista de todos os sites do OneDrive. Para executar esse script, é necessário instalar e usar o Shell de Gerenciamento Online do SharePoint. Não se esqueça de acrescentar a URL do domínio MySite da organização para cada site do OneDrive que você deseja pesquisar. Este é o domínio que contém todos os seus OneDrive; por exemplo, `https://contoso-my.sharepoint.com`. Veja um exemplo de URL para o site do OneDrive de um usuário: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    No caso raro de o nome principal do usuário (UPN) de uma pessoa ser alterado, a URL do local do OneDrive é alterada para incorporar o novo UPN. Se isso acontecer, será preciso modificar uma pesquisa de conteúdo adicionando a nova URL do OneDrive do usuário e removendo o antigo.
+    No caso raro de acontecer do nome principal do usuário (UPN) ser alterado, a URL do local do OneDrive dessa pessoa é alterada para incorporar o novo UPN. Se isso acontecer, será preciso modificar uma pesquisa de conteúdo adicionando a nova URL do OneDrive do usuário e remover a antiga.
   
 ### <a name="searching-microsoft-teams-and-office-365-groups"></a>Pesquisar por Microsoft Teams e Grupos do Office 365
 
@@ -297,26 +299,31 @@ Lembre-se do seguinte ao pesquisar o conteúdo do Microsoft Teams e dos grupos d
   
   - Para usar a propriedade **Tipo** como parte da consulta de pesquisa de palavras-chave, na caixa **Palavras-chave** de uma consulta de pesquisa, digite `kind:microsoftteams`.
 
-    ![Use o tipo:microsoftteams na caixa Palavras-chave](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Use o termo tipo:microsoftteams na caixa Palavras-chave](media/O365-ContentSearch-Teams-Keywords.png)
   
-  - Para usar uma condição de pesquisa, adicione a condição de **Tipo de mensagem** e use o valor `microsoftteams`. 
+  - Para utilizar uma condição de pesquisa, adicione a condição de **Tipo de mensagem** e use o valor `microsoftteams`. 
 
-    ![Use a condição de tipo de mensagem com o valor microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Utilize a condição de Tipo de mensagem com o valor microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
-Observe que as condições estão logicamente associadas à consulta de palavra-chave por operador **E**. Isso significa que um item deve corresponder à consulta da palavra-chave e à condição da pesquisa a ser retornada nos resultados da pesquisa. Para saber mais, consulte a seção “Diretrizes de condições de uso” em [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
-
+Observe que as condições estão logicamente associadas à consulta de palavra-chave pelo operador **E (AND)**. Isso significa que um item deve corresponder à consulta da palavra-chave e à condição da pesquisa para aparecer nos resultados da pesquisa. Para saber mais, consulte a seção “Diretrizes de condições de uso” em [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
 ### <a name="searching-inactive-mailboxes"></a>Pesquisar caixas de correio inativas
 
 Você pode pesquisar por caixas de correio inativas em uma pesquisa de conteúdo. Para ver uma lista das caixas de correio inativas na sua organização, execute o comando  `Get-Mailbox -InactiveMailboxOnly`no PowerShell do Exchange Online. Como alternativa, vá para **Governança de dados** \> **Retenção** no Centro de Conformidade e Segurança, e em seguida, clique em **Mais**![Reticências da Barra de Navegação](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Caixas de Correio Inativas**.
   
-Eis alguns pontos a lembrar durante a pesquisa de caixas de correio inativas.
-  
-- Se uma pesquisa de conteúdo incluir uma caixa de correio de usuário e essa caixa de correio depois ficar inativa, a pesquisa de conteúdo continuará a pesquisar a caixa de correio inativa ao executar a pesquisa novamente.
+Eis alguns pontos a serem levados em consideração durante a pesquisa de caixas de correio inativas.
+
+- Se uma pesquisa de conteúdo incluir uma caixa de correio de usuário e essa caixa de correio depois for desativada, a pesquisa de conteúdo continuará a pesquisar a caixa de correio inativa ao executar a pesquisa novamente.
     
 - Em alguns casos, um usuário pode ter uma caixa de correio ativa e uma inativa com o mesmo endereço SMTP. Nesse caso, apenas a caixa de correio específica que você selecionar como local para uma pesquisa de conteúdo será pesquisada. Em outras palavras, se você adicionar a caixa de correio de um usuário a uma pesquisa, não será possível supor que as caixas de correio ativas e inativas sejam pesquisadas. Somente a caixa de correio que você adicionar explicitamente à pesquisa será pesquisada.
     
-- É altamente recomendável que você evite ter uma caixa de correio ativa e uma inativa com o mesmo endereço SMTP. Se você precisar reutilizar o endereço SMTP atribuído atualmente a uma caixa de correio inativa, é recomendável recuperar a caixa de correio inativa ou restaurar o conteúdo de uma caixa de correio inativa para uma ativa (ou o arquivo de uma caixa de correio ativa) e excluir a caixa de correio inativa. Para obter mais informações, consulte um dos seguintes tópicos:
+- Você pode usar o Centro de Conformidade & Segurança do PowerShell para criar uma pesquisa de conteúdo para pesquisar uma caixa de correio inativa. Para fazer isso, você precisa acrescentar um ponto (. ) ao endereço de email da caixa de correio inativa. Por exemplo, o comando a seguir cria uma pesquisa de conteúdo que pesquisa uma caixa de correio inativa com o endereço de email pavelb@contoso.onmicrosoft.com:
+
+   ``` 
+   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   ```
+
+- Não é recomendável de forma alguma que você tenha uma caixa de correio ativa e uma inativa com o mesmo endereço SMTP. Se você precisar reutilizar o endereço SMTP atribuído atualmente a uma caixa de correio inativa, é recomendável recuperar a caixa de correio inativa ou restaurar o conteúdo de uma caixa de correio inativa para uma ativa (ou o arquivo de uma caixa de correio ativa) e excluir a caixa de correio inativa. Para obter mais informações, consulte um dos seguintes tópicos:
     
   - [Recuperar uma caixa de correio inativa no Office 365](recover-an-inactive-mailbox.md)
     
@@ -324,8 +331,19 @@ Eis alguns pontos a lembrar durante a pesquisa de caixas de correio inativas.
     
   - [Excluir uma caixa de correio inativa no Office 365](delete-an-inactive-mailbox.md)
 
-  
-### <a name="previewing-search-results"></a>Exibir resultados de pesquisa
+### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Pesquisar caixas de correio desconectadas ou que tiveram a licença removida
+
+Se a licença do Exchange Online ( ou a licença inteira do Office 365) for removida de uma conta de usuário no Office 365 ou no Azure Active Directory, a caixa de correio do usuário se tornará uma caixa de correio *desconectada*. Isso significa que a caixa de correio não está mais associada à conta de usuário. Veja o que acontece ao pesquisar caixas de correio desconectadas:
+
+- Quando a licença for removida de uma caixa de correio, a caixa de correio entrará em um período de cortesia de 30 dias. Durante esse período, você ainda pode usar a pesquisa de conteúdo para pesquisar a caixa de correio.
+
+- Se a caixa de correio não for novamente licenciada dentro de 30 dias, ela será marcada para exclusão permanente e removida do Office 365 da próxima vez que a caixa de correio for processada. Dependendo do momento que a caixa de correio for processada, você poderá pesquisá-la após o término do período de cortesia de 30 dias. As caixas de correio são geralmente processadas uma vez a cada sete dias. Depois de processada, a caixa de correio será removida e deixará de ser pesquisada.
+
+- Se uma pesquisa de conteúdo existente incluir uma caixa de correio de usuário na qual a licença foi removida, a caixa de correio desconectada será incluída quando você executar a pesquisa novamente até que o período de cortesia de 30 dias expire. Depois que o período de cortesia expirar e a caixa de correio for removida, ela não será mais incluída quando você executar a pesquisa novamente.
+
+- Se a licença for removida de uma caixa de correio que foi colocada em espera (por meio de um dos vários [ recursos de retenção do Office 365](identify-a-hold-on-an-exchange-online-mailbox.md), a caixa de correio será preservada indefinidamente e permanecerá pesquisável além do período de cortesia de 30 dias.
+
+### <a name="previewing-search-results"></a>Visualizar os resultados de pesquisa
 
 É possível visualizar os tipos de arquivo com suporte no painel de visualização. Se não houver suporte para um tipo de arquivo, será necessário baixar uma cópia do arquivo no computador local para visualizá-lo. Os seguintes tipos de arquivo têm suporte e podem ser visualizados no painel de resultados da pesquisa.
   
