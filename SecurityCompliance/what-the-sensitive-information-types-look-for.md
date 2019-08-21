@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: A prevenção de perda de dados (DLP) no centro &amp; de conformidade de segurança do Office 365 80 inclui tipos de informações confidenciais que estão prontos para uso nas suas políticas de DLP. Este tópico lista todos os tipos de informações confidenciais e mostra o que uma política de DLP procura ao detectar cada tipo.
-ms.openlocfilehash: 7f5c879b35f77ef142b8c45965357715f577832e
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d486510c35aaf147e6d63e28d1df36ef689e3975
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230375"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478250"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>O que os tipos de informações confidenciais procuram
 
@@ -52,7 +52,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_aba_routing localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_ABA_Routing for encontrada.
 
-```
+```xml
 <!-- ABA Routing Number -->
 <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -110,7 +110,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_argentina_national_id localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_argentina_national_id for encontrada.
 
-```
+```xml
 <!-- Argentina National Identity (DNI) Number -->
 <Entity id="eefbb00e-8282-433c-8620-8f1da3bffdb2" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -163,7 +163,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_australia_bank_account_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_australia_bank_account_number for encontrada.
 
-```
+```xml
 <!-- Australia Bank Account Number -->
 <Entity id="74a54de9-2a30-4aa0-a8aa-3d9327fc07c7" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -231,7 +231,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_australia_drivers_license_number for encontrada.
 - Nenhuma palavra-chave de Keyword_australia_drivers_license_number_exclusions for encontrada.
 
-```
+```xml
 <!-- Australia Drivers License Number -->
 <Entity id="1cbbc8f5-9216-4392-9eb5-5ac2298d1356" patternsProximity="300" recommendedConfidence="75">
    <Pattern confidenceLevel="75">
@@ -377,7 +377,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_australian_medical_account_number localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
     <Pattern confidenceLevel="95">
@@ -430,7 +430,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_australia_passport_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_passport ou Keyword_australia_passport_number for encontrada.
 
-```
+```xml
 <!-- Australia Passport Number -->
 <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -507,7 +507,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Nenhuma palavra-chave de Keyword_Australia_Tax_File_Number ou Keyword_number_exclusions for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
    <!-- Australia Tax File Number -->
     <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -590,7 +590,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_Regex_AzureDocumentDBAuthKey localiza o conteúdo que corresponde ao padrão.
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!-- Azure Document DB Auth Key -->
 <Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -650,7 +650,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_Regex_AzureConnectionString localiza o conteúdo que corresponde ao padrão.
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
 <Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -710,7 +710,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_Regex_AzureIoTConnectionString localiza o conteúdo que corresponde ao padrão.
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure IoT Connection String-->
 <Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -761,7 +761,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
 
-```
+```xml
 <!--Azure Publish Setting Password-->
 <Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -816,7 +816,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_Regex_AzureRedisCacheConnectionString localiza o conteúdo que corresponde ao padrão..
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure Redis Cache Connection String-->
 <Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -869,7 +869,7 @@ Não
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A expressão regular CEP_Regex_AzureSAS localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure SAS-->
 <Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -910,7 +910,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_Regex_AzureServiceBusConnectionString localiza o conteúdo que corresponde ao padrão..
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure Service Bus Connection String-->
 <Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -969,7 +969,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_AzureEmulatorStorageAccountFilter não **** localiza o conteúdo que corresponde ao padrão.
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure Storage Account Key-->
 <Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -1026,7 +1026,7 @@ Não
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A expressão regular CEP_Regex_AzureStorageAccountKeyGeneric localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!--Azure Storage Account Key (Generic)-->
 <Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -1061,7 +1061,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_belgium_national_number for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Belgium National Number -->
   <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -1133,7 +1133,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_brazil_cpf localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Brazil CPF Number -->
 <Entity id="78e09124-f2c3-4656-b32a-c1a132cd2711" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1193,7 +1193,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_brazil_cnpj localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Brazil Legal Entity Number (CNPJ) -->
 <Entity id="9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4" recommendedConfidence="85" patternsProximity="300">
    <Pattern confidenceLevel="85">
@@ -1269,7 +1269,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_brazil_rg localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Brazil National ID Card (RG) -->
 <Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1320,7 +1320,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_canada_bank_account_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_canada_bank_account_number for encontrada.
 
-```
+```xml
 <!-- Canada Bank Account Number -->
 <Entity id="552e814c-cb50-4d94-bbaa-bb1d1ffb34de" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1382,7 +1382,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_[province_name]_drivers_license_name for encontrada.
 - Uma palavra-chave de Keyword_canada_drivers_license for encontrada.
 
-```
+```xml
 <!-- Canada Driver's License Number -->
     <Entity id="37186abb-8e48-4800-ad3c-e3d1610b3db0" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -1598,7 +1598,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_canada_health_service_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_canada_health_service_number for encontrada.
 
-```
+```xml
 <!-- Canada Health Service Number -->
 <Entity id="59c0bf39-7fab-482c-af25-00faa4384c94" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1644,7 +1644,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_canada_passport_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_canada_passport_number ou Keyword_passport for encontrada.
 
-``` 
+```xml 
 <!-- Canada Passport Number -->
 <Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1710,7 +1710,7 @@ Não
 Uma política de DLP é de 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres: a expressão regular Regex_canada_phin localiza o conteúdo que corresponde ao padrão.
 São encontradas pelo menos duas palavras-chave do Keyword_canada_phin ou do Keyword_canada_provinces..
 
-```
+```xml
 <!-- Canada PHIN -->
 <Entity id="722e12ac-c89a-4ec8-a1b7-fea3469f89db" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1796,7 +1796,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_sin for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Canada Social Insurance Number -->
 <Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1875,7 +1875,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_chile_id_card localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Chile Identity Card Number -->
 <Entity id="4e979794-49a0-407e-a0b9-2c536937b925" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1934,7 +1934,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_china_resident_id localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- China Resident Identity Card (PRC) Number -->
 <Entity id="c92daa86-2d16-4871-901f-816b3f554fc1" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1990,7 +1990,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - A função Func_credit_card localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Credit Card Number -->
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -2226,7 +2226,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_croatia_id_card localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_croatia_id_card for encontrada.
 
-```
+```xml
 <!--Croatia Identity Card Number-->
 <Entity id="ff12f884-c20a-4189-b185-34c8e7258d47" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2271,7 +2271,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_croatia_oib_number localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Croatia Personal Identification (OIB) Number -->
 <Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2329,7 +2329,7 @@ Uma política de DLP é de 85% de certeza de que ela detectou este tipo de infor
 Uma palavra-chave de Keyword_czech_id_card for encontrada.
 A soma de verificação passa.
 
-```
+```xml
 <!-- Czech Personal Identity Number -->
 <Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
    <Pattern confidenceLevel="85">
@@ -2366,7 +2366,7 @@ Uma política de DLP é de 75% de certeza de que ela detectou este tipo de infor
 Uma palavra-chave de Keyword_denmark_id for encontrada.
 A soma de verificação passa.
 
-```
+```xml
 <!-- Denmark Personal Identification Number -->
 <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2408,7 +2408,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_dea_number localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- DEA Number -->
 <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2448,7 +2448,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
     - A função Func_expiration_date encontra uma data no formato de data à direita.
 - A soma de verificação passa.
 
-```
+```xml
     <!-- EU Debit Card Number -->
     <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -2816,7 +2816,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_finnish_national_id for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Finnish National ID-->
 <Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -2865,7 +2865,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_french_drivers_license for encontrada.
 - A função Func_eu_date encontra uma data no formato de data à direita.
 
-```
+```xml
 <!-- France Driver's License Number -->
 <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -2911,7 +2911,7 @@ Não
 Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A expressão regular Regex_france_cni localiza o conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!-- France CNI -->
 <Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
   <Pattern confidenceLevel="65">
@@ -2947,7 +2947,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_fr_passport localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_passport for encontrada.
 
-```
+```xml
 <!-- France Passport Number -->
 <Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3010,7 +3010,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Nenhuma palavra-chave de Keyword_fr_insee for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- France INSEE -->
 <Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="95">
@@ -3085,7 +3085,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
     - Uma palavra-chave de Keyword_german_drivers_license for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- German Driver's License Number -->
 <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3228,7 +3228,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de qualquer uma das cinco listas de palavras-chave for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- German Passport Number -->
 <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -3309,7 +3309,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_germany_id_card localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_germany_id_card for encontrada.
 
-```
+```xml
 <!-- Germany Identity Card Number -->
 <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
   <Pattern confidenceLevel="65">
@@ -3359,7 +3359,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_greece_id_card localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_greece_id_card for encontrada.
 
-```
+```xml
 <!-- Greece National ID Card -->
 <Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3406,7 +3406,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - A função Func_hong_kong_id_card localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Hong Kong Identity Card (HKID) number -->
 <Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -3484,7 +3484,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_india_permanent_account_number for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- India Permanent Account Number -->
 <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3527,100 +3527,101 @@ Uma palavra-chave de Keyword_india_aadhar for encontrada.
 A soma de verificação passa.
 Uma política de DLP é de 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres: a função Func_india_aadhaar localiza conteúdo que corresponde ao padrão.
 A soma de verificação passa.
+```xml
 <!-- India Unique Identification (Aadhaar) number -->
-<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
+<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_india_aadhaar"/>
+     <Match idRef="Keyword_india_aadhar"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_india_aadhaar"/>
+  </Pattern>
 </Entity>
 
-### <a name="keywords"></a>Palavras-chave
+### Keywords
    
-#### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
+#### Keyword_india_aadhar
 - Aadhar
 - Aadhaar
 - UID
 - आधार
    
-## <a name="indonesia-identity-card-ktp-number"></a>Número do Cartão de Identidade da Indonésia (KTP)
+## Indonesia Identity Card (KTP) Number
 
-### <a name="format"></a>Formatar
+### Format
 
-16 dígitos contendo pontos opcionais
+16 digits containing optional periods
 
-### <a name="pattern"></a>Padrão
+### Pattern
 
-16 dígitos:
-- Código de província de dois dígitos  
-- Um ponto (opcional)  
-- Código de dois dígitos da regência ou da cidade  
-- Código de dois dígitos do subdistrito  
-- Um ponto (opcional)  
-- Seis dígitos no formato DDMMAA que são a data de nascimento 
-- Um ponto (opcional)  
-- Quatro dígitos
+16 digits:
+- Two-digit province code 
+- A period (optional) 
+- Two-digit regency or city code 
+- Two-digit subdistrict code 
+- A period (optional) 
+- Six digits in the format DDMMYY which are the date of birth 
+- A period (optional) 
+- Four digits
 
-### <a name="checksum"></a>Soma de verificação
+### Checksum
 
-Não
+No
 
-### <a name="definition"></a>Definição
+### Definition
 
-Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
-- A expressão regular Regex_indonesia_id_card localiza o conteúdo que corresponde ao padrão.
-- Uma palavra-chave de Keyword_indonesia_id_card for encontrada.
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
+- A keyword from Keyword_indonesia_id_card is found.
 
-Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
-- A expressão regular Regex_indonesia_id_card localiza o conteúdo que corresponde ao padrão.
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
 
 ```
 <!-- Indonesia Identity Card (KTP) Number -->
-<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-     <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
+<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Regex_indonesia_id_card"/> <Match idRef="Keyword_indonesia_id_card"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_indonesia_id_card"/> </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Palavras-chave
+### Keywords
    
-#### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
+#### Keyword_indonesia_id_card
 
 - KTP
 - Kartu Tanda Penduduk 
 - Nomor Induk Kependudukan 
    
-## <a name="international-banking-account-number-iban"></a>Número da Conta Bancária Internacional (IBAN)
+## International Banking Account Number (IBAN)
 
-### <a name="format"></a>Formatar
+### Format
 
-Código do país (duas letras) mais dígitos de verificação (dois dígitos) mais Bban número (até 30 caracteres)
+Country code (two letters) plus check digits (two digits) plus bban number (up to 30 characters)
 
-### <a name="pattern"></a>Padrão
+### Pattern
 
-O padrão deve incluir todos os seguintes itens:
+Pattern must include all of the following:
 
-- Código de país de duas letras
-- Dois dígitos de verificação (seguidos por um espaço opcional) 
-- 1-7 grupos de quatro letras ou dígitos (podem ser separados por espaços)
-- 1 a 3 letras ou dígitos
+- Two-letter country code
+- Two check digits (followed by an optional space) 
+- 1-7 groups of four letters or digits (can be separated by spaces)
+- 1-3 letters or digits
 
-O formato de cada país é um pouco diferente. O tipo de informação confidencial do IBAN cobre estes 60 países:
+The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
 
-AD, AE, Al, at, AZ, BA, be, BG, BH, ch, CR, Cy, cz, de, DK, do, EE, es, Fi, fo, FR, GB, GE, GI, GL, GR, HR, Hu, IE, Il, se,-, KZ, lb, li, o (a) e o (a) , NL, no, pl, pt, Ro, RS, SA, se, si, SK, SM, TN, TR, VG
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
-### <a name="checksum"></a>Soma de verificação
+### Checksum
 
-Sim
+Yes
 
-### <a name="definition"></a>Definição
+### Definition
 
-Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
-- A função Func_iban localiza conteúdo que corresponde ao padrão.
-- A soma de verificação passa.
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_iban finds content that matches the pattern.
+- The checksum passes.
 
-```
+```xml
 <Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_iban" />
@@ -3663,7 +3664,7 @@ Para IPv6, uma política de DLP tem 95% de certeza de que ela detectou este tipo
 - A expressão regular Regex_ipv6_address localiza o conteúdo que corresponde ao padrão.
 - Nenhuma palavra-chave de Keyword_ipaddress for encontrada.
 
-```
+```xml
     <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -3716,7 +3717,7 @@ Não
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - Uma palavra-chave de Dictionary_icd_10_cm for encontrada.
 
-```
+```xml
       <!-- ICD-10 CM -->
       <Entity id="3356946c-6bb7-449b-b253-6ffa419c0ce7" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
@@ -3749,7 +3750,7 @@ Não
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - Uma palavra-chave de Dictionary_icd_9_cm for encontrada.
 
-```
+```xml
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Dictionary_icd_9_cm" />
@@ -3799,7 +3800,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - A função Func_ireland_pps localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Ireland Personal Public Service (PPS) Number -->
 <Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3859,7 +3860,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_israel_bank_account_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_israel_bank_account_number for encontrada.
 
-```
+```xml
 <!-- Israel Bank Account Number -->
 <Entity id="7d08b2ff-a0b9-437f-957c-aeddbf9b2b25" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3901,7 +3902,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_Israel_National_ID for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Israel National ID Number -->
 <Entity id="e05881f5-1db1-418c-89aa-a3ac5c5277ee" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3944,7 +3945,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_italy_drivers_license_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_italy_drivers_license_number for encontrada.
 
-```
+```xml
 <!-- Italy Driver's license Number -->
 <Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3995,7 +3996,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_jp_bank_account localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_bank_account for encontrada.
 
-```
+```xml
 <!-- Japan Bank Account Number -->
 <Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
   <Version minEngineVersion="15.01.0131.000">
@@ -4098,7 +4099,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_jp_drivers_license_number localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_drivers_license_number for encontrada.
 
-```
+```xml
 <!-- Japan Driver's License Number -->
 <Entity id="c6011143-d087-451c-8313-7f6d4aed2270" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4158,7 +4159,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_jp_passport localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_passport for encontrada.
 
-```
+```xml
 <!-- Japan Passport Number -->
 <Entity id="75177310-1a09-4613-bf6d-833aae3743f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4197,7 +4198,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_jp_resident_registration_number localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_resident_registration_number for encontrada.
 
-```
+```xml
 <!-- Japan Resident Registration Number -->
 <Entity id="01c1209b-6389-4faf-a5f8-3f7e13899652" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4252,7 +4253,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_jp_sin_pre_1997 localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_sin for encontrada.
 
-```
+```xml
 <!-- Japan Social Insurance Number -->
 <Entity id="c840e719-0896-45bb-84fd-1ed5c95e45ff" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -4299,7 +4300,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_jp_residence_card_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_jp_residence_card_number for encontrada.
 
-```
+```xml
 <!--Japan Residence Card Number-->
 -<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="75">
@@ -4344,7 +4345,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_malaysia_id_card_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_malaysia_id_card_number for encontrada.
 
-```
+```xml
 <!-- Malaysia ID Card Number -->
 </Entity>
       <Entity id="7f0e921c-9677-435b-aba2-bb8f1013c749" patternsProximity="300" recommendedConfidence="85">
@@ -4411,7 +4412,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_eu_date2 encontra uma data no formato de data à direita.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Netherlands Citizen's Service (BSN) Number -->
 <Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -4455,7 +4456,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_nz_terms for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- New Zealand Health Number -->
 <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -4503,7 +4504,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_norway_id_numbe localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Norway Identification Number -->
 <Entity id="d4c8a798-e9f2-4bd3-9652-500d24080fc3" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4553,7 +4554,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_philippines_unified_id localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_philippines_id for encontrada.
 
-```
+```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
 <Entity id="019b39dd-8c25-4765-91a3-d9c6baf3c3b3" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -4592,7 +4593,7 @@ Uma política de DLP é de 75% de certeza de que ela detectou este tipo de infor
 Uma palavra-chave de Keyword_polish_national_id_passport_number for encontrada.
 A soma de verificação passa.
 
-```
+```xml
 <!-- Poland Identity Card-->
 <Entity id="25E64989-ED5D-40CA-A939-6C14183BB7BF" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4636,7 +4637,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_pesel_identification_number for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Poland National ID (PESEL) -->      
 <Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4675,7 +4676,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_polish_national_id_passport_number for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Poland Passport Number -->
 <Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4715,7 +4716,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_portugal_citizen_card localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_portugal_citizen_card for encontrada.
 
-```
+```xml
 <!-- Portugal Citizen Card Number -->
 <Entity id="91a7ece2-add4-4986-9a15-c84544d81ecd" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4755,7 +4756,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_saudi_arabia_national_id localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_saudi_arabia_national_id for encontrada.
 
-```
+```xml
 <!-- Saudi Arabia National ID -->
 <Entity id="8c5a0ba8-404a-41a3-8871-746aa21ee6c0" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4805,7 +4806,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_singapore_nric localiza o conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Singapore National Registration Identity Card (NRIC) Number -->
 <Entity id="cead390a-dd83-4856-9751-fb6dc98c34da" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4857,7 +4858,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_south_africa_identification_number for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- South Africa Identification Number -->
 <Entity id="e2adf7cb-8ea6-4048-a2ed-d89eb65f2780" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4906,7 +4907,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_south_korea_resident_number localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- South Korea Resident Registration Number -->
 <Entity id="5b802e18-ba80-44c4-bc83-bf2ad36ae36a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4954,7 +4955,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_spanish_social_security_number localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Spain SSN -->
 <Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -4995,7 +4996,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A expressão regular CEP_PasswordPlaceHolder não **** localiza o conteúdo que corresponde ao padrão.
 - A expressão regular CEP_CommonExampleKeywords não **** localiza o conteúdo que corresponde ao padrão.
 
-```
+```sql
 <!---SQL Server Connection String>
 <Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -5067,7 +5068,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - A função Func_swedish_national_identifier localiza conteúdo que corresponde ao padrão.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Sweden National ID -->
 <Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -5102,7 +5103,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
     - Uma palavra-chave de Keyword_passport for encontrada.
     - Uma palavra-chave de Keyword_sweden_passport for encontrada.
 
-```
+```xml
 <!-- Sweden Passport Number -->
 <Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5175,7 +5176,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_swift localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_swift for encontrada.
 
-```
+```xml
 <Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
 <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_swift" />
@@ -5244,7 +5245,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_taiwanese_national_id for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -5298,7 +5299,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_taiwan_passport localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_taiwan_passport for encontrada.
 
-```
+```xml
 <!-- Taiwan Passport Number -->
 <Entity id="e7251cb4-4c2c-41df-963e-924eb3dae04a" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -5343,7 +5344,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_taiwan_resident_certificate localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_taiwan_resident_certificate for encontrada.
 
-```
+```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
 <Entity id="48269fec-05ea-46ea-b326-f5623a58c6e9" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -5395,7 +5396,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_Thai_Citizen_Id localiza conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!-- Thai Citizen ID -->
 -<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="85">
@@ -5442,7 +5443,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_Turkish_National_Id localiza conteúdo que corresponde ao padrão.
 
-```
+```xml
 <!-- Turkish National Identity -->
 -<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="85">
@@ -5490,7 +5491,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_uk_drivers_license for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- U.K. Driver's License Number -->
 <Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5540,7 +5541,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_uk_electoral localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_uk_electoral for encontrada.
 
-```
+```xml
 <!-- U.K. Electoral Number -->
 <Entity id="a3eea206-dc0c-4f06-9e22-aa1be3059963" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5591,7 +5592,7 @@ Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informa
     - Uma palavra-chave de Keyword_uk_nhs_number_dob for encontrada.
 - A soma de verificação passa.
 
-```
+```xml
 <!-- U.K. NHS Number -->
 <Entity id="3192014e-2a16-44e9-aa69-4b20375c9a78" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -5669,7 +5670,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_uk_nino localiza conteúdo que corresponde ao padrão.
 - Nenhuma palavra-chave de Keyword_uk_nino for encontrada.
 
-```
+```xml
 <!-- U.K. NINO -->
 <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -5724,7 +5725,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A função Func_usa_uk_passport localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_passport for encontrada.
 
-```
+```xml
 <Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_usa_uk_passport" />
@@ -5776,7 +5777,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
 - A expressão regular Regex_usa_bank_account_number localiza o conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_usa_Bank_Account for encontrada.
 
-```
+```xml
 <!-- U.S. Bank Account Number -->
 <Entity id="a2ce32a8-f935-4bb6-8e96-2a5157672e2c" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5847,7 +5848,7 @@ Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informa
 - Uma palavra-chave de Keyword_us_drivers_license_abbreviations for encontrada.
 - Nenhuma palavra-chave de Keyword_us_drivers_license for encontrada.
 
-```
+```xml
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
@@ -6012,7 +6013,7 @@ Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informa
     - A função Func_us_address encontrar um endereço no formato de data à direita.
     - A função Func_us_date encontra uma data no formato de data à direita.
 
-```
+```xml
 <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
 <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -6088,44 +6089,89 @@ Não
 Uma política de DLP tem 85% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_ssn localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_ssn for encontrada.
+- A função Func_us_date encontra uma data no formato de data à direita.
+- A função Func_us_address localiza um endereço no formato correto.
 
 Uma política de DLP tem 75% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_unformatted_ssn localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_ssn for encontrada.
+- A função Func_us_date encontra uma data no formato de data à direita.
+- A função Func_us_address localiza um endereço no formato correto.
 
 Uma política de DLP tem 65% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_randomized_formatted_ssn localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_ssn for encontrada.
-- A função Func_ssn não localiza conteúdo que corresponde ao padrão.
+- A função Func_us_date encontra uma data no formato de data à direita.
+- A função Func_us_address localiza um endereço no formato correto.
 
 Uma política de DLP tem 55% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
 - A função Func_randomized_unformatted_ssn localiza conteúdo que corresponde ao padrão.
 - Uma palavra-chave de Keyword_ssn for encontrada.
-- A função Func_unformatted_ssn não localiza conteúdo que corresponde ao padrão.
+- A função Func_us_date encontra uma data no formato de data à direita.
+- A função Func_us_address localiza um endereço no formato correto.
 
-```
+Uma política de DLP é de 40% de certeza de que ela detectou este tipo de informação confidencial se, dentro de uma proximidade de 300 caracteres:
+- A função Func_ssn localiza conteúdo que corresponde ao padrão.
+- A função Func_unformatted_ssn não localiza conteúdo que corresponde ao padrão.
+- A função Func_randomized_unformatted_ssn não localiza conteúdo que corresponde ao padrão.
+- Uma palavra-chave de Keyword_ssn não é encontrada.
+ 
+Ou
+
+- A função Func_randomized_formatted_ssn localiza conteúdo que corresponde ao padrão.
+- A função Func_unformatted_ssn não localiza conteúdo que corresponde ao padrão.
+- A função Func_randomized_unformatted_ssn não localiza conteúdo que corresponde ao padrão.
+- Uma palavra-chave de Keyword_ssn não é encontrada.
+
+```xml
 <!-- U.S. Social Security Number (SSN) -->
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
+  <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ssn" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Match idRef="Keyword_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ssn" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
         </Any>
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="40">
+        <IdMatch idRef="Func_ssn" />
         <Any minMatches="0" maxMatches="0">
           <Match idRef="Func_unformatted_ssn" />
+          <Match idRef="Func_randomized_unformatted_ssn" />
+          <Match idRef="Keyword_ssn" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="40">
+        <IdMatch idRef="Func_randomized_formatted_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_unformatted_ssn" />
+          <Match idRef="Func_randomized_unformatted_ssn" />
+          <Match idRef="Keyword_ssn" />
         </Any>
       </Pattern>
     </Entity>

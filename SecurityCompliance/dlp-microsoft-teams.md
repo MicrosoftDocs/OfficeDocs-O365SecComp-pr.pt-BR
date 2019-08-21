@@ -13,17 +13,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Agora, você pode aplicar políticas de DLP a chats e canais do Microsoft Teams. Leia este artigo para saber mais sobre como ele funciona.
-ms.openlocfilehash: 8ac8f4e2a4189ca83772775a96067d0b5fc3a24b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4edc05a2e0759884570239a038d0869e15240d17
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230735"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478220"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenção de perda de dados e Microsoft Teams
+<!-- the note duplicates the first sentence of the overview, delete one or the other- -->
 
 > [!NOTE]
-> Os recursos de prevenção contra perda de dados foram recentemente adicionados às mensagens de chat e de canal do Microsoft Teams para usuários licenciados para a conformidade avançada do Office 365, que está disponível como uma opção autônoma e está incluído no Office 365 E5 e no Microsoft 365 E5 conformidade. Para saber mais sobre requisitos de licenciamento, confira [diretrizes de licenciamento de serviços em nível de locatário do Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Os recursos de prevenção de perda de dados foram recentemente adicionados às mensagens de chat e de canal do Microsoft Teams para usuários licenciados para conformidade avançada do Office 365, que está disponível como uma opção autônoma e está incluído no Office 365 E5 e no Microsoft 365 E5 conformidade. Para saber mais sobre requisitos de licenciamento, confira [diretrizes de licenciamento de serviços em nível de locatário do Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Visão geral da DLP para o Microsoft Teams
 
@@ -38,7 +39,7 @@ Recentemente, os recursos de DLP ( [prevenção contra perda de dados](data-loss
 
 ## <a name="policy-tips-help-educate-users"></a>Dicas de política ajudam a ensinar usuários
 
-Semelhante à forma como o DLP funciona no [Exchange, no Outlook e no Outlook na Web, no](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [SharePoint e nos sites do onedrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)e [clientes de área de trabalho do Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs), as dicas de política são exibidas quando uma ação entra em conflito com uma política de DLP. Veja um exemplo de uma dica de política:
+Semelhante à forma como o DLP funciona no [Exchange, Outlook, Outlook na Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online, sites do onedrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)e [clientes de área de trabalho do Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs), as dicas de política são exibidas quando uma ação entra em conflito com uma política de DLP. Veja um exemplo de uma dica de política:
 
 ![Notificação de mensagem bloqueada no Teams](media/dlp-teams-blockedmessage-notification.png)
 
@@ -46,7 +47,7 @@ Nesse caso, o remetente tentou compartilhar um número de segurança social em u
 
 ![Opções para resolver mensagem bloqueada](media/dlp-teams-blockedmessage-possibleactions.png)
 
-Em sua organização, você pode escolher se deseja permitir que os usuários substituam uma política de DLP ou não. E, ao configurar suas políticas de DLP, você pode usar as dicas de política padrão ou [personalizar dicas de política](#to-customize-policy-tips) para sua organização. 
+Em sua organização, você pode optar por permitir que os usuários substituam uma política de DLP. E, ao configurar suas políticas de DLP, você pode usar as dicas de política padrão ou [personalizar dicas de política](#to-customize-policy-tips) para sua organização. 
 
 Retornando ao nosso exemplo, em que um remetente compartilhou um número de seguro social em um canal do Teams, aqui está o que o destinatário viu:
 
@@ -73,7 +74,7 @@ Para realizar essa tarefa, você deve receber uma função que tenha permissões
 7. Na guia **configurações de política** , escolha **salvar**.
 
 Aguarde aproximadamente uma hora para que suas alterações funcionem de forma em seu data center e sincronize com as contas de usuário.
- 
+ <!-- why are these syncing to user accounts? -->
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>Adicionar o Microsoft Teams como um local às políticas de DLP existentes
 
 Para realizar essa tarefa, você deve receber uma função que tenha permissões para editar políticas de DLP. Para saber mais, confira [permissões](data-loss-prevention-policies.md#permissions).
@@ -91,7 +92,7 @@ Para realizar essa tarefa, você deve receber uma função que tenha permissões
 6. Clique em **Salvar**.
 
 Aguarde aproximadamente uma hora para que suas alterações funcionem de forma em seu data center e sincronize com as contas de usuário.
-
+<!-- again, why user accounts? -->
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Definir uma nova política de DLP para o Microsoft Teams
 
 Para realizar essa tarefa, você deve receber uma função que tenha permissões para editar políticas de DLP. Para saber mais, confira [permissões](data-loss-prevention-policies.md#permissions).
@@ -104,7 +105,7 @@ Para realizar essa tarefa, você deve receber uma função que tenha permissões
 
 4. Na guia **nomear sua política** , especifique um nome e uma descrição para a política e, em seguida, escolha **Avançar**. 
 
-5. Na guia **escolher locais** , mantenha a configuração padrão de todos os locais ou selecione **deixe-me escolher locais específicos**e, em seguida, escolha **Avançar**.<br/>Se você optou por escolher locais específicos, selecione os locais para sua política de DLP e, em seguida, escolha **Avançar**.<br/>![Locais de política de DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Na guia **escolher locais** , mantenha a configuração padrão de todos os locais ou selecione **deixe-me escolher locais específicos**e, em seguida, escolha **Avançar**.<br/>Se você escolher locais específicos, selecione-os para a política de DLP e, em seguida, escolha **Avançar**.<br/>![Locais de política de DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Se você quiser garantir que os documentos que contêm informações confidenciais não sejam compartilhados inadequadamente, verifique se os **sites do SharePoint** e as **contas do onedrive** estão ativados, junto com **as mensagens de chat e de canal**do teams.
 <br/>
