@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure as políticas de análise de supervisão para capturar comunicações de funcionários para revisão.
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168169"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490778"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar políticas de supervisão para sua organização
 
@@ -29,7 +29,7 @@ Use políticas de supervisão para capturar comunicações de funcionários para
 
 > [!NOTE]
 > Os usuários monitorados pelas políticas de supervisão devem ter uma licença de conformidade do Microsoft 365 e5, uma licença do Office 365 Enterprise E3 com o complemento de conformidade avançada ou ser incluída em uma assinatura do Office 365 Enterprise e5.
-Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Se você não tem um plano Enterprise E5 existente e deseja tentar a supervisão, você pode [se inscrever para uma avaliação do Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estas etapas para configurar e usar a supervisão na sua organização do Office 365:
   
@@ -99,6 +99,7 @@ Para gerenciar usuários supervisionados em grandes organizações corporativas,
     ```
 
 Para obter mais informações sobre a configuração de grupos, consulte:
+
 - [Criar e gerenciar grupos de distribuição](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gerenciar grupos de segurança habilitados para email](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Visão geral dos grupos do Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Use um editor de texto (como o bloco de notas) para criar um arquivo que inclui 
 
     - Forneça um nome e uma descrição para a política.
     - Escolha os usuários ou grupos para supervisionar, incluindo a escolha de usuários ou grupos que você gostaria de excluir.
-    - Definir as condições da política de supervisão.
+    - Definir as [condições](supervision-policies.md#ConditionalSettings)da política de supervisão. Você pode escolher entre as condições endereço da mensagem, palavra-chave, tipos de arquivo e correspondência de tamanho.
     - Escolha se você deseja incluir tipos de informações confidenciais. É aí que você pode selecionar os tipos de informações confidenciais padrão e personalizadas.
     - Escolha se você deseja habilitar o modelo de linguagem ofensiva. Isso detecta o idioma inadequado enviado ou recebido no corpo de mensagens de email.
     - Defina a porcentagem de comunicação a ser revisada.
@@ -196,7 +197,7 @@ Para configurar a análise da área de trabalho do Outlook, você precisará do 
 > [!NOTE]
 > Se outra pessoa criou a política, você precisará obter esse endereço deles para instalar o suplemento.
 
- **Para localizar o endereço da caixa de correio de supervisão**
+**Para localizar o endereço da caixa de correio de supervisão**
   
 1. Entre no [centro de conformidade](https://compliance.microsoft.com) usando as credenciais de uma conta de administrador em sua organização.
 

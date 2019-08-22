@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 45e4fb0651cc137a67cc5322bf5e874ea31df838
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "34547946"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490798"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correção de erro ao processar dados de uma investigação
 
-A correção de erros permite que o investigador possa corrigir problemas de dados que impedem que investigações de dados (visualização) processem o conteúdo corretamente. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os investigadores podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.
+A correção de erros permite que os investigadores corrijam problemas de dados que impedem que investigações de dados (visualização) processem o conteúdo corretamente. Por exemplo, os arquivos protegidos por senha não podem ser processados, já que os arquivos são bloqueados ou criptografados. Usando a correção de erros, os investigadores podem baixar arquivos com esses erros, remover a proteção por senha e carregar os arquivos corrigidos.
 
 Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de investigações de dados (visualização).
 
@@ -32,7 +32,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 >[!NOTE]
 >Se o assistente de correção de erros for fechado a qualquer momento durante o procedimento a seguir, você poderá retornar à sessão de correção de erro na guia **processamento** selecionando as correções de **erro** no menu suspenso **Exibir** .
 
-1. Na guia **processamento** em um caso de investigações de dados (visualização), selecione **erros** no menu suspenso **Exibir** .
+1. Na guia **processamento** em uma investigação de dados, selecione **erros** no menu suspenso **Exibir** .
 
 2. Selecione os erros que você deseja corrigir clicando no botão de opção ao lado do tipo de erro ou tipo de arquivo.  No exemplo a seguir, estamos corrigindo um arquivo protegido por senha.
 
@@ -40,7 +40,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
     ![Correção de erro](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    A sessão de correção de erro será iniciada, começando com um estágio de preparação onde os arquivos com erros são copiados para um local seguro do Azure para que eles possam ser baixados.
+    A sessão de correção de erro começa, começando com um estágio de preparação onde os arquivos com erros são copiados para um local seguro do Azure para que eles possam ser baixados.
 
     ![Preparando correção de erro](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -48,7 +48,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
     ![Baixar arquivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Para baixar arquivos, especifique o **caminho de destino para download**; Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.
+5. Para baixar arquivos, especifique o **caminho de destino para download**. Este é um caminho no computador local onde o arquivo deve ser baixado.  O caminho padrão,%USERPROFILE%\Downloads\errors, aponta para a pasta downloads do usuário conectado; Isso pode ser alterado conforme necessário.
 
     >[!NOTE]
     >Recomendamos que você use um caminho de arquivo local em vez de um caminho de rede remoto para obter o desempenho ideal.
@@ -62,13 +62,13 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
     ![Preparando correção de erro](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > Se você tiver problemas para executar este comando, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](../compliance20/troubleshooting-azcopy.md).
+    > [!NOTE]
+    > Se você tiver problemas para executar este comando, confira [solucionar problemas de AzCopy na descoberta eletrônica avançada](../compliance20/troubleshooting-azcopy.md).
 
 7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, há várias ferramentas de quebra de senha que você pode usar. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     
    > [!NOTE]
-    > É importante que você mantenha a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
+    > É importante que você mantenha a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos. Os nomes de caminho dos arquivos e pastas baixados possibilitam a Associação dos arquivos corrigidos aos arquivos originais.  Se a estrutura de diretório ou os nomes de arquivo forem alterados, você receberá o `Cannot apply Error Remediation to the current Evidenceset`seguinte erro:.
 
 8. Agora, retorne a investigações de dados (visualização) e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.
 
@@ -86,7 +86,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de in
 
 ## <a name="what-happens-when-files-are-remediated"></a>O que acontece quando os arquivos são corrigidos
 
-Quando os arquivos corrigidos são carregados, os metadados originais são preservados com a exceção dos seguintes campos: 
+Quando os arquivos corrigidos são carregados, os metadados originais são preservados, exceto os seguintes campos: 
 
 - ExtractedTextSize
 - HasText

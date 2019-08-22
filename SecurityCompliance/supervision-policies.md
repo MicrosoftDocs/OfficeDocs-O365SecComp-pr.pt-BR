@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Saiba mais sobre as políticas de supervisão no Office 365
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165647"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490758"
 ---
 # <a name="supervision-policies-in-office-365"></a>Políticas de supervisão no Office 365
 
@@ -144,6 +144,7 @@ O modelo de linguagem ofensiva monitora o email em busca de uma mensagem de erro
 | **Expressões disfarçadas** | Expressões para as quais o significado ou pronúncia é o mesmo que outro termo mais ofensivo. |
 
 #### <a name="conditional-settings"></a>Configurações condicionais
+<a name="ConditionalSettings"> </a>
 
 As condições escolhidas para a política se aplicam às comunicações de emails e fontes de terceiros em sua organização (como no Facebook ou no DropBox).
 

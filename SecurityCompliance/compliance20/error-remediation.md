@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: c9c2660929037430535c9b612218563c51b1f056
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168119"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490788"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correção de erros durante o processamento de dados
 
@@ -61,7 +61,7 @@ Use o fluxo de trabalho a seguir para corrigir arquivos com erros em casos de de
 
 7. Depois de baixar os arquivos, você pode corrigi-los com uma ferramenta apropriada. Para arquivos protegidos por senha, várias ferramentas de quebra de senha podem ser usadas. Se você souber as senhas dos arquivos, poderá abri-las e remover a proteção por senha.
     > [!NOTE]
-    > É importante manter a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos no tact.  Todas as convenções de nomenclatura usadas nas pastas e arquivos baixados tornam possível associar os arquivos do remdiated de volta ao original.
+    > É importante que você mantenha a estrutura de diretório e os nomes de arquivo dos arquivos corrigidos. Os nomes de caminho dos arquivos e pastas baixados possibilitam a Associação dos arquivos corrigidos aos arquivos originais.  Se a estrutura de diretório ou os nomes de arquivo forem alterados, você receberá o `Cannot apply Error Remediation to the current Workingset`seguinte erro:.
 
 8. Agora, retorne à descoberta eletrônica avançada e clique em **Avançar: carregar arquivos**.  Isso passará para a próxima etapa, onde você pode agora carregar os arquivos.
 
