@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Saiba como usar os recursos de investigação e resposta contra ameaças para encontrar e investigar emails mal-intencionados.
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444861"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566219"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Encontre e investigue emails mal-intencionados que foram entregues no Office 365
 
@@ -88,6 +88,9 @@ Isso abrirá o submenu, onde os links de visualização de cabeçalho e download
 > Lembre-se, "Preview" é uma função e não um RoleGroup e essa função deve ser adicionada a um RoleGroup posteriormente.
 
 ![Submenu do Gerenciador de ameaças com links para baixar e Visualizar na página.](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> Esse recurso não é exibido para emails que nunca foram encontrados na caixa de correio de um usuário, o que pode acontecer se um email tiver sido descartado ou se houvesse falha na entrega. Nos casos em que os emails foram excluídos das caixas de correio dos usuários, os administradores verão um erro ao mencionar "email não encontrado".
 
 ### <a name="check-the-delivery-action-and-location"></a>Verificar a ação e o local de entrega
 
