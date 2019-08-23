@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use a ferramenta Pesquisa de Conteúdo, no centro de conformidade do Office 365 ou do Microsoft 365, para pesquisar conteúdo em caixas de correio, sites do SharePoint Online, contas do OneDrive, Microsoft Teams, grupos do Office 365 e conversas do Skype for Business. Você pode usar consultas de pesquisa de palavras-chave e condições de pesquisa para restringir os resultados da pesquisa. Em seguida, você poderá visualizar e exportar os resultados da pesquisa. A Pesquisa de Conteúdo também é uma ferramenta efetiva para pesquisar conteúdo relacionado a uma solicitação do titular dos dados do RGPD.
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473411"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493162"
 ---
 # <a name="content-search-in-office-365"></a>Pesquisa de Conteúdo no Office 365
 
@@ -335,13 +335,13 @@ Eis alguns pontos a serem levados em consideração durante a pesquisa de caixas
 
 Se a licença do Exchange Online ( ou a licença inteira do Office 365) for removida de uma conta de usuário no Office 365 ou no Azure Active Directory, a caixa de correio do usuário se tornará uma caixa de correio *desconectada*. Isso significa que a caixa de correio não está mais associada à conta de usuário. Veja o que acontece ao pesquisar caixas de correio desconectadas:
 
-- Quando a licença for removida de uma caixa de correio, a caixa de correio entrará em um período de cortesia de 30 dias. Durante esse período, você ainda pode usar a pesquisa de conteúdo para pesquisar a caixa de correio.
+- Se a licença for removida de uma caixa de correio, esta não será mais pesquisável. 
 
-- Se a caixa de correio não for novamente licenciada dentro de 30 dias, ela será marcada para exclusão permanente e removida do Office 365 da próxima vez que a caixa de correio for processada. Dependendo do momento que a caixa de correio for processada, você poderá pesquisá-la após o término do período de cortesia de 30 dias. As caixas de correio são geralmente processadas uma vez a cada sete dias. Depois de processada, a caixa de correio será removida e deixará de ser pesquisada.
+- Se uma pesquisa de conteúdo existente incluir uma caixa de correio em que a licença for removida, nenhum resultado da pesquisa da caixa de correio desconectada será retornado se você executar novamente a pesquisa de conteúdo.
 
-- Se uma pesquisa de conteúdo existente incluir uma caixa de correio de usuário na qual a licença foi removida, a caixa de correio desconectada será incluída quando você executar a pesquisa novamente até que o período de cortesia de 30 dias expire. Depois que o período de cortesia expirar e a caixa de correio for removida, ela não será mais incluída quando você executar a pesquisa novamente.
+- Se você usar o cmdlet **New-ComplianceSearch** para criar uma pesquisa de conteúdo e especificar um caixa de correio desconectada como o local de conteúdo do Exchange para pesquisar, a pesquisa de conteúdo não retornará resultados de pesquisa da caixa de correio desconectada.
 
-- Se a licença for removida de uma caixa de correio que foi colocada em espera (por meio de um dos vários [ recursos de retenção do Office 365](identify-a-hold-on-an-exchange-online-mailbox.md), a caixa de correio será preservada indefinidamente e permanecerá pesquisável além do período de cortesia de 30 dias.
+Se você precisar preservar os dados em uma caixa de correio desconectada para que possam ser pesquisados, você deve colocar a caixa de correio em retenção antes de remover a licença. Isso preserva os dados e mantém a caixa de correio desconectada pesquisável até que a retenção seja removida. Para saber mais sobre retenções, confira [Como identificar o tipo de retenção de uma caixa de correio do Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
 ### <a name="previewing-search-results"></a>Visualizar os resultados de pesquisa
 
