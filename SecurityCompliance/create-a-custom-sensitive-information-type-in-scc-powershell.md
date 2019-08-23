@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a criar e importar um tipo de informações confidenciais personalizado para DLP no Centro de Conformidade e Segurança.
-ms.openlocfilehash: f038a37d2f049b49710c7f50e030bfe189be82b6
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: baf715b6bb3a09495d6b5efa47eee6ea0ec3160a
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230925"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478230"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Crie um tipo de informações confidenciais personalizado no PowerShell do Centro de Conformidade e Segurança
 
@@ -34,8 +34,7 @@ Depois de criar um arquivo XML bem formado, você poderá carregá-lo no Office 
 > Você também pode criar tipos personalizados de informação confidencial menos complexos na IU do Centro de Conformidade e Segurança. Para saber mais, confira [Criar um tipo personalizado de informação confidencial](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Aviso de isenção de responsabilidade importante
-
-Devido às variações nos ambientes do cliente e nos requisitos de correspondência de conteúdo, o Suporte da Microsoft não pode ajudar no fornecimento de definições de correspondência de conteúdo personalizado; por exemplo, definindo classificações personalizadas ou padrões de expressões regulares ("RegEx"). Para desenvolvimento, teste e depuração de correspondência de conteúdo personalizado, os clientes do Office 365 devem contar com recursos de TI internos ou usar um recurso de consultoria externo, como os Serviços de Consultoria Microsoft (MCS). Os engenheiros de suporte podem fornecer suporte limitado para o recurso, mas não podem garantir que o desenvolvimento de correspondência de conteúdo personalizado atenda aos requisitos ou à conformidade do cliente. Como exemplo do tipo de auxílio disponível que pode ser fornecido, amostras de padrões de expressão regular podem ser fornecidos para fins de teste. OU então, o suporte pode auxiliar na resolução de problemas em um padrão RegEx existente, que não esteja sendo acionado como esperado, com um único exemplo de conteúdo específico.
+<!-- this is worded much better than the previous one is --> Devido às variações nos ambientes do cliente e nos requisitos de correspondência de conteúdo, o Suporte da Microsoft não pode ajudar no fornecimento de definições de correspondência de conteúdo personalizado; por exemplo, definindo classificações personalizadas ou padrões de expressões regulares ("RegEx"). Para desenvolvimento, teste e depuração de correspondência de conteúdo personalizado, os clientes do Office 365 devem contar com recursos de TI internos ou usar um recurso de consultoria externo, como os Serviços de Consultoria Microsoft (MCS). Os engenheiros de suporte podem fornecer suporte limitado para o recurso, mas não podem garantir que o desenvolvimento de correspondência de conteúdo personalizado atenda aos requisitos ou à conformidade do cliente. Como exemplo do tipo de auxílio disponível que pode ser fornecido, amostras de padrões de expressão regular podem ser fornecidos para fins de teste. OU então, o suporte pode auxiliar na resolução de problemas em um padrão RegEx existente, que não esteja sendo acionado como esperado, com um único exemplo de conteúdo específico.
 
  Para saber mais sobre o mecanismo de Boost.RegEx (conhecido anteriormente como RegEx + +) é usado para processar o texto, confira [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
@@ -43,7 +42,7 @@ Devido às variações nos ambientes do cliente e nos requisitos de correspondê
 
 Eis um XML de exemplo do pacote de regras que criaremos neste tópico. Os elementos e os atributos são explicados nas seções abaixo.
   
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
@@ -129,9 +128,7 @@ Eis um XML de exemplo do pacote de regras que criaremos neste tópico. Os elemen
 
 Antes de começar, é importante compreender a estrutura básica do esquema XML para uma regra e como você pode usar essa estrutura para definir seu tipo personalizado de informações confidenciais para que ele identifique o conteúdo certo.
   
-Uma regra define uma ou mais entidades (tipos de informações confidenciais) e cada entidade define um ou mais padrões. Um padrão é o que a DLP procura ao avaliar conteúdo como emails e documentos.
-  
-(Uma breve observação sobre a terminologia: se você estiver familiarizado com as políticas DLP, saberá que uma política contém uma ou mais regras formadas por condições e ações. No entanto, neste tópico, a marcação XML usa regras para significar os padrões que definem uma entidade, também conhecido como tipo de informação confidencial. Neste tópico, ao ver uma regra, pense em entidade ou tipo de informação confidencial e não em condições e ações.)
+Uma regra define uma ou mais entidades (tipos de informações confidenciais) e cada entidade define um ou mais padrões. Um padrão é o que a DLP procura ao avaliar conteúdo como emails e documentos.   <!-- ok then this is going to be really confusing since the terminology changes.... --> (Uma breve observação sobre a terminologia: se você estiver familiarizado com as políticas DLP, saberá que uma política contém uma ou mais regras formadas por condições e ações. No entanto, neste tópico, a marcação XML usa regras para significar os padrões que definem uma entidade, também conhecido como tipo de informação confidencial. Neste tópico, ao ver uma regra, pense em entidade ou tipo de informação confidencial e não em condições e ações.)
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Cenário mais simples: entidade com um padrão
 
@@ -160,8 +157,7 @@ Observe alguns aspectos importantes dessa estrutura:
 Uma entidade é um tipo de informação confidencial, como um número de cartão de crédito, que tem um padrão bem definido. Cada entidade tem um GUID exclusivo como sua ID.
   
 ### <a name="name-the-entity-and-generate-its-guid"></a>Nomear a entidade e gerar seu GUID
-
-Adicione elementos Rules e Entity. Em seguida, adicione um comentário que contém o nome da sua entidade personalizada. Neste exemplo, ID do funcionário. Posteriormente, você adicionará o nome da entidade à seção de cadeias de caracteres localizadas, e esse nome será exibido na interface de usuário quando você criar uma política DLP.
+<!-- why isn't the following in procedure format? --> Adicione elementos Rules e Entity. Em seguida, adicione um comentário que contém o nome da sua entidade personalizada. Neste exemplo, ID do funcionário. Posteriormente, você adicionará o nome da entidade à seção de cadeias de caracteres localizadas, e esse nome será exibido na interface de usuário quando você criar uma política DLP.
   
 Em seguida, gere um GUID para a sua entidade. Há várias maneiras de gerar GUIDs, mas você pode fazer isso facilmente no PowerShell digitando [guid]::NewGuid(). Mais tarde, você também adicionará a GUID de entidade à seção de cadeias de caracteres localizadas.
   
@@ -321,7 +317,7 @@ O mais importante: você precisará gerar um GUID para o RulePack. Acima, você 
   
 O elemento Version também é importante. Ao carregar seu pacote de regras pela primeira vez, o Office 365 anotará o número da versão. Mais tarde, se você atualizar o pacote de regras e carregar uma nova versão, verifique se atualizou o número da versão ou o Office 365 não implantará o pacote de regras.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
@@ -363,13 +359,13 @@ Para carregar o pacote de regras, siga as etapas:
     
 3. Use a seguinte sintaxe:
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
     ```
 
     Este exemplo carrega o arquivo XML Unicode chamado MyNewRulePack.xml de C:\Meus documentos.
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
     ```
 
@@ -393,7 +389,7 @@ Para carregar o pacote de regras, siga as etapas:
 
   - Substitua \<Name\> pelo valor Name do tipo de informação sensível (exemplo: ID do Funcionário) e execute o cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps):
 
-    ```
+    ```powershell
     Get-DlpSensitiveInformationType -Identity "<Name>"
     ```
     
@@ -557,7 +553,7 @@ Para informações detalhadas sobre sintaxe e parâmetros, confira [Set-DlpSensi
 
 Você pode copiar essa marcação, salvá-la como um arquivo XSD e usá-la para validar o arquivo XML do seu pacote de regras.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
            targetNamespace="http://schemas.microsoft.com/office/2011/mce" 

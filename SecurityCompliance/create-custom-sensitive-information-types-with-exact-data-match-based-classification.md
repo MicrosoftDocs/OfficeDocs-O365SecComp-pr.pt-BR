@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Criar tipos personalizados de informações confidenciais com classificação baseada em Exact Data Match.
-ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 3c2b7cbabc77328f7d907927008e93606d40eded
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407903"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478190"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Criar tipos personalizados de informações confidenciais com classificação baseada em Exact Data Match
 
@@ -338,7 +338,7 @@ Para verificar os dados confidenciais indexados, execute o seguinte comando no p
 
 `EdmUploadAgent.exe /GetDataStore`
 
-Você verá uma lista de repositórios de dados e a data da última atualização, similar à seguinte:
+Você verá uma lista de repositórios de dados e a data da última atualização.
 
 Prossiga para configurar seu processo e cronograma da [Atualização de banco de dados de informação confidencial](#refreshing-your-sensitive-information-database).
 
