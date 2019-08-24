@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Se seu administrador habilitar as notificações para usuários, você receberá uma mensagem de notificação que lista as mensagens enviadas para sua caixa de correio que foram identificadas como spam, massa ou mensagens de phishing. Você pode liberar ou relatar mensagens depois de ser notificado.
-ms.openlocfilehash: 887dab0df489e6f71266a6fdabfdd04f26a14ded
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 499af3ae2934eed19e421918af07a45b72fe2518
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598437"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620475"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificações de spam do usuário para liberar e reportar mensagens em quarentena no Office 365spam
 
@@ -52,7 +52,7 @@ Estas são as ações que você pode realizar com uma mensagem em quarentena:
 
 - **Release & Report**, se a mensagem não for spam e você quiser enviar a mensagem para sua caixa de correio e relatá-la para a Microsoft para análise.
 
-- **Bloquear** se você quiser que o Office 365 adicione o remetente à sua lista de remetentes bloqueados.
+- **Bloquear remetente** se quiser que o Office 365 adicione o remetente à sua lista de remetentes bloqueados.
 
 Esteja ciente do seguinte:
   

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: A definição de usuários de email é uma parte importante do gerenciamento do serviço Exchange Online Protection (EOP).
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054723"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620485"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gerenciar usuários de email no EOP
 
@@ -53,20 +53,20 @@ Esta seção oferece informações sobre o gerenciamento de usuários de email u
   
 Obtenha as permissões necessárias e prepare-se para a sincronização de diretórios, como descrito em [Preparar a sincronização de diretórios](https://go.microsoft.com/fwlink/p/?LinkId=308908).
   
-### <a name="to-synchronize-user-directories"></a>Sincronizar diretórios de usuário
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Para sincronizar os diretórios de usuário com o Azure Active Directory Connect (AAD Connect)
 
-1. Ative a sincronização de diretórios, como descrito em [Ativar a sincronização de diretórios](https://go.microsoft.com/fwlink/p/?LinkId=308909).
-    
-2. Configure seu computador de sincronização de diretórios, como descrito em [Configurar o computador de sincronização de diretórios](http://go.microsoft.com/fwlink/p/?LinkId=308911).
-    
-3. Sincronize seus diretórios como descrito em [Usar o Assistente de Configuração para sincronizar diretórios](http://go.microsoft.com/fwlink/?LinkId=308912).
-    
-    > [!IMPORTANT]
-    > Após a conclusão do Assistente de Configuração da Ferramenta de Sincronização do Microsoft Azure Active Directory, a conta **MSOL_AD_SYNC** será criada em sua floresta do Active Directory. Esta conta é usada para ler e sincronizar suas informações do Active Directory local. Para que a sincronização de diretórios funcione corretamente, verifique se a porta TCP 443 em seu servidor de sincronização de diretórios local está aberta. 
-  
-  4. Gerencie a sincronização de diretórios, como descrito em [Gerenciar a sincronização de diretórios](http://go.microsoft.com/fwlink/p/?LinkId=308915).
-    
-  5. Verifique se o EOP está sincronizando corretamente. No EAC, vá para **Destinatários** \> **Contatos** e veja se a lista de usuários foi corretamente sincronizada com seu ambiente local. 
+Para sincronizar os usuários com o Azure Active Directory (AAD), primeiro você deve **ativar a sincronização de diretórios**, conforme descrito em [Activate Directory Synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909).
+
+A seguir, a instalação e a configuração de um computador local para executar o AAD Connect (se você ainda não tiver uma coisa que vale a pena verificar antes do tempo). O artigo abaixo mostra como configurar e sincronizar suas contas do no local para o Azure AD com o AAD Connect.
+
+[Configurar o AAD Connect, a maneira expressa.](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+Mas antes de fazer isso, certifique-se de que [você atende aos pré-requisitoshttps://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites] (e [escolha o tipo de instalação](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation). O link publicado acima é para um pequeno artigo para instalações expressas. Você também pode encontrar artigos sobre [instalações personalizadas](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)ou [autenticação de passagem](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start) , se for necessário.
+
+> [!IMPORTANT]
+> Após a conclusão do Assistente de Configuração da Ferramenta de Sincronização do Microsoft Azure Active Directory, a conta **MSOL_AD_SYNC** será criada em sua floresta do Active Directory. Esta conta é usada para ler e sincronizar suas informações do Active Directory local. Para que a sincronização de diretório funcione corretamente, verifique se o TCP 443 em seu servidor de sincronização de diretório local está aberto 
+
+Após configurar sua sincronização, verifique se o EOP está sincronizando corretamente. No EAC, vá para **Destinatários** \> **Contatos** e veja se a lista de usuários foi corretamente sincronizada com seu ambiente local.
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Usar o EAC para gerenciar usuários de email
 
