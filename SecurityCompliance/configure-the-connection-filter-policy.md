@@ -1,9 +1,9 @@
 ---
-title: Configurar a política do filtro de conexão
+title: Configurar a política de filtro de conexão, lista de permissões, lista de bloqueios
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para garantir que os emails enviados de pessoas confiáveis não sejam bloqueados, você pode usar a política de filtro de conexão para criar uma lista de permissões, também conhecida como lista de remetentes confiáveis, dos endereços IP nos quais você confia. Você também pode criar uma lista de remetentes bloqueados.
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600087"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643213"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar a política do filtro de conexão
  
 A maioria de nós tem amigos e parceiros de negócios, nos quais confiamos. Pode ser bem frustrante encontrar os emails deles na sua pasta de lixo eletrônico ou completamente bloqueados por um filtro de spam. Se quiser garantir que o email enviado por pessoas da sua confiança não seja bloqueado, use a política de filtro de conexão para criar uma Lista de permissões (ou "lista de remetentes confiáveis") contendo endereços IP nos quais você confia. Também é possível criar uma lista de remetentes bloqueados, que é uma lista de endereços IP, geralmente pertencentes a remetentes de spam conhecidos, dos quais você não quer receber mensagens.
   
+- Ao pensar nas *[listas de permissões](create-safe-sender-lists-in-office-365.md)*, tenha em mente que as políticas de filtro de conexão se preocupam com as *contas confiáveis permitidas* pelo filtro. Isso é feito com o objetivo de filtrar de forma mais precisa menos emails confiáveis ou não confiáveis, mantendo o que você precisa. Uma lista de permissões de política de filtro de conexão é sobre a filtragem para os poucos IPs confiáveis de um pool muito maior de contas e IPs, e para facilitar o acesso de seus remetentes confiáveis.
+
+- Uma política de filtro de conexão a criação de uma lista de bloqueio pode ser considerada como capturar menos contas, ou não confiáveis, no filtro.
+
  Para conhecer mais configurações de spam que se aplicam à toda a organização, consulte [Como ajudar a garantir que uma mensagem não seja marcada como spam](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquear spam no email com o filtro de spam do Office 365 para evitar problemas com falsos negativos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Estes artigos são úteis se você tiver controle de administrador e quiser evitar falsos positivos ou falsos negativos.
+
+> [!TIP]
+> Talvez você queira pausar e ler como criar [listas](create-block-sender-lists-in-office-365.md)de permissões e bloqueios [(ou remetentes confiáveis)](create-safe-sender-lists-in-office-365.md) .
   
 O vídeo a seguir mostra as etapas de configuração da política de filtro de conexão:
   

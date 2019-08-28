@@ -1,7 +1,7 @@
 ---
 title: Trabalhar com o Microsoft Compliance Manager (versão prévia)
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157863"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643303"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabalhar com o Microsoft Compliance Manager (versão prévia)
 
@@ -205,7 +205,7 @@ Em resumo, você pode ver o título, proprietário, categoria, imposição e pon
     - **Você gostaria de copiar os dados de um grupo existente? (opcional):** alternar o controle para habilitar a cópia de grupo e, em seguida:
         - **Selecione um grupo (opcional):** Se a cópia do grupo estiver habilitada, selecione o grupo do qual copiar
             - **Detalhes da implementação (opcional):** Selecione para copiar os detalhes de implementação para o novo grupo
-            - **Informações adicionais do plano de teste & (opcional):** Selecione para copiar o plano de teste e detalhes de informações adicionais para o novo grupo
+            - **Plano de teste & informações adicionais (opcional):** Selecione para copiar o plano de teste e detalhes de informações adicionais para o novo grupo
             - **Documentos (opcional):** Selecionar para copiar documentos para o novo grupo
 
 3. Selecione **salvar** para criar a avaliação.
@@ -223,7 +223,7 @@ Em resumo, você pode ver o título, proprietário, categoria, imposição e pon
 Ao criar uma avaliação, você tem a opção de copiar informações de um grupo existente. Isso permite que você aplique as informações inseridas na avaliação copiada para os mesmos controles na nova avaliação. Por exemplo, se você tiver um grupo para todas as avaliações relacionadas a FFIEC em sua organização, você pode copiar as seguintes informações de avaliações existentes:
 
 - Detalhes da implementação
-- Informações adicionais do plano de teste &
+- Plano de teste & informações adicionais
 - Documentos
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copiar informações de uma avaliação existente para uma nova avaliação
@@ -237,7 +237,7 @@ Ao criar uma avaliação, você tem a opção de copiar informações de um grup
     - **Selecione um grupo ou adicione um novo grupo (obrigatório):** Escolha **Adicionar um novo grupo** e forneça um nome de grupo exclusivo.
     - **Você gostaria de copiar os dados de um grupo existente? (opcional):** ativar/desativar o controle para habilitar a cópia de grupo e:- **Selecione um grupo (opcional):** se a cópia do grupo estiver habilitada, selecione o grupo a partir do qual copiar.
             - **Detalhes da implementação (opcional):** Selecione para copiar os detalhes de implementação para o novo grupo.
-            - **Informações adicionais do plano de teste & (opcional):** Selecione para copiar o plano de teste e detalhes de informações adicionais para o novo grupo.
+            - **Plano de teste & informações adicionais (opcional):** Selecione para copiar o plano de teste e detalhes de informações adicionais para o novo grupo.
             - **Documentos (opcional):** Selecione para copiar documentos para o novo grupo.
 
 3. Selecione **salvar** para criar a avaliação.

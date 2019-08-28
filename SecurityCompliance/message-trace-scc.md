@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade & segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601008"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643253"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no Centro de Conformidade e Segurança
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601008"
 O rastreamento de mensagens no centro de conformidade & de segurança segue as mensagens de email à medida que elas viajam pela sua organização do Exchange Online. Você pode determinar se uma mensagem foi recebida, rejeitada, adiada ou entregue pelo serviço. Também mostra as ações feitas na mensagem antes de ela chegar em seu status final.
 
 O rastreamento de mensagens no centro de conformidade & segurança melhora no rastreamento de mensagens que estava disponível no centro de administração do Exchange (Eat). Você pode usar as informações do rastreamento de mensagens para responder com eficiência às perguntas do usuário sobre o que aconteceu com suas mensagens, solucionar problemas de fluxo de emails e validar as alterações na política.
+
+> [!NOTE]
+>  A contagem de mensagens será interrompida às 50 000 e o relatório só refletirá até esse valor no console. O cmdlet Get-HistoricalSearch do cmdlet do PowerShell mostrará a verdadeira contagem de mensagens.
 
 ## <a name="open-message-trace"></a>Abrir rastreamento de mensagens
 
@@ -317,7 +320,7 @@ Relatórios estendidos disponíveis (concluídos) estão disponíveis na seção
 
 - **custom_data**: contém dados relacionados a tipos de eventos específicos. Para obter mais informações, consulte as seções a seguir.
 
-#### <a name="customdata-values"></a>valores de custom_data
+#### <a name="custom_data-values"></a>valores de custom_data
 
 O campo **custom_data** de um `AGENTINFO` evento é usado por uma variedade de agentes do Exchange Online para registrar detalhes do processamento de mensagens. Alguns dos agentes mais interessantes são descritos nas seções a seguir.
 
