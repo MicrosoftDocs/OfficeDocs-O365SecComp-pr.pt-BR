@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use palavras-chave e condições para restringir o escopo da pesquisa ao pesquisar dados ao usar a investigação de dados no Microsoft 365.
-ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 913306ff488d9cf2ba715c26eaa49f6f8e1473aa
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151053"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649936"
 ---
 # <a name="build-search-queries"></a>Criar consultas de pesquisa
 
@@ -31,7 +31,7 @@ Ao criar consultas de pesquisa, você pode usar palavras-chave para localizar co
 
 Digite uma consulta de palavra-chave na caixa **palavras-** chave na consulta de pesquisa. Você pode especificar palavras-chave, propriedades de mensagens de email (como datas enviadas e recebidas) ou propriedades do documento (como nomes de arquivo ou a data em que um documento foi alterado pela última vez). Você pode usar consultas mais complexas que usam um operador Boolean, como **e**, **ou**, e **não**, e **Near**. Você também pode pesquisar informações confidenciais (como números de seguridade social) em documentos no SharePoint e no OneDrive (não em mensagens de email) ou pesquisar documentos que foram compartilhados externamente. Se você deixar a caixa **palavras-chave** vazia, todo o conteúdo localizado nos locais de conteúdo especificado será incluído nos resultados da pesquisa.
     
-Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavras-chave** e frase de palavra-chave ou palavra-chave Type em cada linha. Se você fizer isso, as palavras-chave em cada linha serão conectadas por um operador lógico (que é representado como *c:s*) que é semelhante em funcionalidade ao operador **or** na consulta de pesquisa criada. Isso significa que os itens que contêm qualquer palavra-chave em qualquer linha serão incluídos nos resultados da pesquisa.
+Como alternativa, você pode clicar na caixa de seleção **Mostrar lista de palavras-chave** e frase de palavra-chave ou palavra-chave Type em cada linha. Se você fizer isso, as palavras-chave em cada linha serão conectadas por um operador lógico (representado como *c:s*) que é semelhante em funcionalidade ao operador **or** na consulta de pesquisa criada. Isso significa que os itens que contêm qualquer palavra-chave em qualquer linha são incluídos nos resultados da pesquisa.
 
 ![Use a lista de palavras-chave para obter estatísticas sobre cada palavra-chave na consulta](../media/KeywordListSearch.png)
 

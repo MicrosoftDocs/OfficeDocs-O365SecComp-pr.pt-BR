@@ -3,7 +3,7 @@ title: Criar uma política de tipo de informação confidencial para sua organiz
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Resumo: política de criptografia de mensagem do Office 365 para tipos de informações confidenciais.'
-ms.openlocfilehash: 44966303ec7c58fdd82f733e1922073de848cf73
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: d74712798ba9d46614b5fc916e4b1ce111582304
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834830"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658117"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Criar uma política de tipo de informação confidencial para sua organização usando a criptografia de mensagem do Office 365
 
@@ -47,9 +47,11 @@ Execute os seguintes comandos no PowerShell para criar uma regra de fluxo de ema
 - Número de seguridade social dos EUA (SSN)
 
 ```powershell
-Set-IRMConfiguration -DecryptAttachmentsForEncryptOnly $true
+Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
+
+Para obter mais informações, consulte [Set-IRMConfiguration](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps) e [New-TransportRule](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance/New-TransportRule?view=exchange-ps).
 
 ## <a name="how-recipients-access-attachments"></a>Como os destinatários acessam anexos
 
@@ -64,7 +66,7 @@ Talvez você queira atualizar qualquer material de treinamento e documentação 
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Exibir essas alterações no log de auditoria
 
-O Office 365 audita essa atividade e a disponibiliza para os administradores do Office 365. A operação é ' New-TransportRule ' e um trecho de uma amostra de entrada de auditoria da pesquisa de log de auditoria no centro de conformidade do & de segurança está abaixo:
+O Office 365 audita essa atividade e a disponibiliza para os administradores do Office 365. A operação é ' New-TransportRule ' e um trecho de uma amostra de auditoria de entrada da pesquisa de log de auditoria no centro de conformidade de segurança & está abaixo:
 
 ```text
 *{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*

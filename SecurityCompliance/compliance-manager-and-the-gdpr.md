@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: O Gerenciador de conformidade da Microsoft é uma ferramenta de avaliação de riscos gratuita baseada em fluxo de trabalho no portal de confiança do serviço Microsoft. O Gerenciador de conformidade permite que você rastreie, atribua e verifique as atividades de conformidade normativa relacionadas aos serviços em nuvem da Microsoft.
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786646"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649956"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gerente de conformidade da Microsoft e o RGPD
 
@@ -40,7 +40,7 @@ Para procurar uma conta de usuário:
 
 2. Quando o nome de usuário for inserido corretamente, selecione **Pesquisar**.
 
-3. Para contas de usuário não retornadas, o ' usuário não encontrado ' é exibido na página. Verifique as informações do endereço de email do usuário e faça as correções necessárias. Para repetir, selecione **Pesquisar**.
+3. Para contas de usuário não retornadas, a página exibe o **usuário não encontrado**. Verifique as informações do endereço de email do usuário e faça as correções necessárias. Para repetir, selecione **Pesquisar**.
 
 4. Para contas de usuário retornadas, o texto do botão muda de **pesquisa** para **limpo**. Isso indica que a conta de usuário retornada é o contexto operacional para as funções adicionais e que essas funções se aplicam a essa conta de usuário.
 

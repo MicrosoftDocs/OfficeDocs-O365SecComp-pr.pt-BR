@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-audience: Admin
+ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade & de segurança para gerenciar um incidente de derramamento de dados.
-ms.openlocfilehash: 7aada296566bb5312ab56680485798323d0ab096
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Este artigo descreve o uso da nova ferramenta de investigações de dados (visualização) no centro de conformidade & segurança para gerenciar um incidente de derramamento de dados.
+ms.openlocfilehash: 93199ad1f548e999dce9ad79ab311a57345b8772
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150743"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649917"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gerenciar um incidente de derramamento de dados no Microsoft 365
 
@@ -56,11 +56,7 @@ Este é o fluxo de trabalho para usar investigações de dados (visualização) 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Você usará a ferramenta de investigações de dados (visualização) no centro de conformidade do & de segurança para criar uma investigação, procurar os dados derramados e examiná-los e analisá-los. Em seguida, você usará o PowerShell do centro de conformidade do & de segurança para excluir permanentemente os dados derramados do Office 365. 
-
-- Para criar uma investigação, você precisa ser membro do grupo de função Administrador de conformidade no centro de conformidade do & de segurança.
-
-- Para excluir mensagens, você precisa ser membro de um grupo de função no centro de conformidade do & de segurança atribuído à função de pesquisa e limpeza. Por padrão, essa função é atribuída ao grupo de função gerenciamento da organização. Para obter informações sobre como adicionar usuários a um grupo de funções, consulte [permissões no centro de conformidade do & de segurança](../permissions-in-the-security-and-compliance-center.md). 
+- Para criar uma investigação de dados, procurar por conteúdo e excluir dados derramados, você precisa ser membro do grupo de função do investigador de dados no centro de conformidade de & de segurança.
 
 - Para controlar quais caixas de correio de usuário e contas do OneDrive podem pesquisar, sua organização pode configurar os limites de conformidade. Para obter mais informações, [Configure os limites de conformidade para investigações de descoberta eletrônica](../set-up-compliance-boundaries.md). 
 
@@ -68,21 +64,21 @@ Este é o fluxo de trabalho para usar investigações de dados (visualização) 
 
 Para criar uma investigação na ferramenta de investigações de dados (visualização):
 
-1. Acesse [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Acesse [https://protection.office.com](https://protection.office.com).
     
-2. Entre no Office 365 usando a sua conta corporativa ou de estudante.
+2. Entre no Office 365 usando uma conta que seja membro do grupo de função do investigador de dados.
     
-3. No centro de conformidade, clique em **investigações de dados**.
+3. No centro de segurança e conformidade, clique em **investigações de dados**.
  
 4. Na página **investigações de dados (visualização)** , clique em **criar nova investigação**.
     
-5. Na nova página de submenu de **investigação de dados** , dê um nome à investigação (obrigatório) e digite um número de investigação e uma descrição opcionais. Observe que o nome deve ser exclusivo em sua organização.
+5. Na nova página de submenu de **investigação de dados** , dê um nome à investigação (obrigatório) e digite um número de investigação e uma descrição opcionais. O nome deve ser exclusivo em sua organização.
 
 6. Em **você deseja definir configurações adicionais depois de criar esta investigação?**, siga um destes procedimentos:
 
     - Clique em **Sim** para criar a investigação e exiba a página **configurações** no novo caso. Isso permite adicionar membros à investigação.
     
-    - Clique em **não** para apenas criar a investigação e exibi-la na lista de casos na página **investigações de dados (visualização)** . Se você escolher essa opção, será adicionado como o único membro da investigação, e as configurações padrão de pesquisa e análise serão usadas. Você pode adicionar membros ou alterar as configurações a qualquer momento após a criação da investigação.
+    - Clique em **não** para criar a investigação e exibi-la na lista de casos da página **investigações de dados (visualização)** . Se você escolher essa opção, será adicionado como o único membro da investigação, e as configurações padrão de pesquisa e análise serão usadas. Você pode adicionar membros ou alterar configurações a qualquer momento após a criação da investigação.
 
 7. Clique em **salvar** para criar a investigação.
 
@@ -93,17 +89,15 @@ Para criar uma investigação na ferramenta de investigações de dados (visuali
     A guia **página inicial** da investigação é exibida. 
 
 > [!TIP]
-> Considere o estabelecimento de uma Convenção de nomenclatura para investigações e forneça tantas informações quantas forem necessárias no nome e na descrição para que você possa localizar e consultar no futuro, se necessário.
+> Considere o estabelecimento de uma Convenção de nomenclatura para investigações e forneça tantas informações quantas forem necessárias no nome e na descrição para que você possa localizar e se referir a elas no futuro, se necessário.
  
 ## <a name="step-2-search-for-the-spilled-data"></a>Etapa 2: Pesquisar os dados derramados 
  
 Se você souber quais usuários você deseja pesquisar por dados derramados, você pode adicioná-los como pessoas de interesse para mapear suas fontes de dados para a investigação e pesquisar rapidamente a sua caixa de correio e a conta do OneDrive. Para adicionar pessoas de interesse à investigação, clique em **pessoas de interesse**e, em seguida, clique em **adicionar pessoas de interesse**. Para obter mais informações, consulte [gerenciar pessoas de interesse](manage-people-of-interest.md).
 
-Na guia **pesquisas** , você pode criar pesquisas para localizar os dados derramados. Você usará a mesma consulta de pesquisa que usou para localizar os dados derramados para excluir essas mesmas mensagens na [etapa 4](#step-4-delete-the-spilled-data). Para obter mais informações sobre como criar pesquisas, confira [Pesquisar dados em uma investigação](search-for-data.md).
+Na guia **pesquisas** , você pode criar pesquisas para localizar os dados derramados. Para obter mais informações sobre como criar pesquisas, confira [Pesquisar dados em uma investigação](search-for-data.md).
 
-Depois de executar a pesquisa, você pode Visualizar amostras de resultados de pesquisa e exibir estatísticas de pesquisa para avaliar a eficácia da consulta de pesquisa. Depois de identificar os itens que você deseja excluir do Office 365, você pode clicar na guia **evidência** e, em seguida, criar um conjunto de evidências e adicionar resultados de pesquisa que contenham esses itens. 
-
-Para fazer isso, clique na pesquisa que você deseja investigar. Na página do menu suspenso, clique em **Adicionar resultados a evidências** e siga as instruções. Em seguida, nas evidências, você pode revisar documentos individuais, investigar quem teve acesso aos documentos e exportar os documentos. Para simplesmente excluir os documentos em vez de analisá-los, vá para a [etapa 4](#step-4-delete-the-spilled-data). 
+Depois de executar a pesquisa, você pode Visualizar amostras de resultados de pesquisa e exibir estatísticas de pesquisa para avaliar a eficácia da consulta de pesquisa. Após identificar os itens que você deseja excluir do Office 365, você pode adicionar os resultados da pesquisa a um conjunto de evidência. Para fazer isso, clique na pesquisa que você deseja investigar. Na página do menu suspenso, clique em **Adicionar resultados a evidências** e siga as instruções. Em seguida, no conjunto de evidências, você pode revisar documentos individuais, investigar quem teve acesso aos documentos e exportar os documentos. Para excluir os documentos (ou um subconjunto de documentos) em vez de analisá-los, vá para a [etapa 4](#step-4-delete-the-spilled-data). 
 
 > [!IMPORTANT]
 > As palavras-chave que você usa na consulta de pesquisa podem conter os dados reais derramados que você está pesquisando. Por exemplo, se você procurar documentos que contenham um número de seguro social e usá-lo como uma palavra-chave na consulta de pesquisa, você deverá excluir a consulta posteriormente para evitar mais derramamento. Você pode excluir a pesquisa ou excluir toda a investigação na [etapa 5](#step-5-close-or-delete-the-investigation). 
@@ -112,31 +106,30 @@ Para fazer isso, clique na pesquisa que você deseja investigar. Na página do m
 
 Na investigação, vá para a guia **evidência** e clique no conjunto de evidências que você criou na etapa anterior. Após o trabalho de processamento ser concluído e os resultados da pesquisa serem adicionados à evidência, você pode revisar documentos individuais em seu formato nativo, formato de texto ou um formato Near-Native. Você pode criar consultas adicionais para restringir a lista de documentos e marcar documentos para indicar resultados de sua investigação. Para obter mais informações, consulte [Review data in Evidence](review-data-in-evidence.md)
 
-Para agrupar documentos e obter mais assistência para revisão, clique em **gerenciar evidência**. No bloco de **análise** , clique em **analisar**. Isso executará análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de tema. Para obter mais informações, consulte:
+Para agrupar documentos e obter mais assistência para revisão, clique em **gerenciar evidência**. No bloco de **análise** , clique em **analisar**. Isso executa análises avançadas, como detecção de duplicidades, encadeamento de emails e análise de temas. Para obter mais informações, consulte:
 
 - [Executar análise para investigar mais rápido](run-analytics-to-investigate-faster.md)
 - [Detecção de duplicata próxima](near-duplicates.md)
 - [Conversa de email](email-threading.md)
 - [Temas](themes.md)
 
-Para determinar quais usuários estão envolvidos no derramamento de dados, você pode criar uma nova consulta no conjunto de evidências e, em seguida, usar as condições remetente/autor e destinatários. Isso criará uma lista de todos os remetentes, destinatários e autores encontrados nos dados coletados que foram adicionados à evidência. Certifique-se de examinar a lista para determinar se há usuários externos. Para obter mais informações sobre como usar condições para restringir os resultados da pesquisa, consulte [Search Conditions](../keyword-queries-and-search-conditions.md#search-conditions).
+Para determinar quais usuários estão envolvidos no derramamento de dados, você pode criar uma consulta no conjunto de evidências e, em seguida, usar as condições remetente/autor e destinatários. Isso cria uma lista de todos os remetentes, destinatários e autores encontrados nos dados coletados que foram adicionados à evidência. Certifique-se de examinar a lista para determinar se há usuários externos. Para obter mais informações sobre como usar condições para restringir os resultados da pesquisa, consulte [Search Conditions](../keyword-queries-and-search-conditions.md#search-conditions).
 
 ## <a name="step-4-delete-the-spilled-data"></a>Etapa 4: excluir os dados derramados
 
-### <a name="deleting-mailbox-items"></a>Excluir itens de caixa de correio
+Usando a ferramenta de investigações de dados, você pode excluir itens de seus locais originais. Por exemplo, você pode excluir itens de caixas de correio, sites do SharePoint e contas do OneDrive em sua organização. Lembre-se de que, como você coletou itens como evidência (adicionando os resultados da pesquisa ao conjunto de evidências na etapa 2), você tem cópias dos itens no conjunto de evidências para investigar ou preservá-los ainda mais.
 
-Após revisar e validar que os resultados da pesquisa contenham apenas as mensagens de email que devem ser excluídas, você pode excluí-las permanentemente executando o comando **New-ComplianceSearchAction-remove-purge HardDelete** em Security & Compliance Central do PowerShell. Para obter instruções, confira [Pesquisar e excluir mensagens de email](../search-for-and-delete-messages-in-your-organization.md). 
+Para excluir itens de seus locais originais:
 
-Se a recuperação de item único estiver habilitada para caixas de correio em sua organização, os itens excluídos permanentemente serão mantidos na pasta itens recuperáveis do usuário (e acessíveis por administradores) até que o período de retenção de item excluído termine (o padrão é 14 dias). Além disso, se qualquer caixa de correio que contenha dados derramados estiver em um bloqueio legal ou atribuída a uma política de retenção, as mensagens limpas serão mantidas na pasta itens recuperáveis até que a duração da retenção do item expire. Para excluir mensagens de forma rígida imediatamente, você precisa executar tarefas de adição. Para obter instruções, consulte [excluir itens da pasta itens recuperáveis das caixas de correio baseadas em nuvem em espera](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
+1. No conjunto de evidências, selecione os itens que você deseja excluir. Se você selecionar itens que estão anexados a uma mensagem de email, a mensagem de email pai também será selecionada e excluída. 
+ 
+2. Clique em **ação** e em **excluir itens de locais originais**.
 
-> [!IMPORTANT]
-> Consulte o gerenciamento de registros ou os departamentos legais antes de remover uma política de retenção ou bloqueio. Sua organização pode ter uma política que define se uma caixa de correio em espera ou um incidente de derramamento de dados tem prioridade. 
+   ![Clique em ação e em excluir itens de locais originais](../media/DataInvestigationsDeleteItems1.png)
 
-### <a name="deleting-site-items"></a>Excluindo itens de site
+3. Na página do menu suspenso, verifique o número de itens e documentos filhos relacionados que serão excluídos e clique em **excluir**.
 
-Para excluir permanentemente um documento de um site do SharePoint ou de uma conta do OneDrive, você precisa excluir o documento e, em seguida, excluir da lixeira do site e excluí-lo da lixeira do conjunto de sites. Para obter mais informações, consulte [Excluir documentos no SharePoint e no onedrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
-
-Como alternativa, você pode excluir um conjunto de sites inteiro que pode conter dados derramados. Para obter instruções, consulte [excluir um conjunto de sites](https://docs.microsoft.com/sharepoint/delete-site-collection).
+No momento, quando você exclui itens de seu local original, os itens são excluídos de forma reversível. Isso significa que os itens excluídos serão retidos até que o período de recuperação de item excluído do item expire. Isso também significa que é possível que os usuários recuperem esses itens. Para obter mais informações sobre o que acontece quando itens são excluídos de caixas de correio e sites, consulte [excluir itens de seu local original](delete-items-from-original-locations.md).
 
 ## <a name="step-5-close-or-delete-the-investigation"></a>Etapa 5: fechar ou excluir a investigação
 
@@ -148,4 +141,4 @@ Para excluir uma investigação:
 
 2. Clique em **excluir investigação**. 
 
-Se você não precisar excluir a investigação ou se quiser salvar as informações coletadas durante a investigação, clique em **fechar caso**. Depois, em uma data posterior, você pode reabrir investigações fechadas.
+Se você não precisar excluir a investigação ou se quiser salvar as informações coletadas durante a investigação, clique em **fechar caso**. Posteriormente, você poderá reabrir investigações fechadas.

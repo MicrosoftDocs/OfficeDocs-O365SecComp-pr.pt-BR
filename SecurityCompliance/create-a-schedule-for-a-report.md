@@ -3,7 +3,7 @@ title: Criar um cronograma para um relatório no centro de &amp; conformidade de
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Saiba como configurar um cronograma para um relatório no centro de conformidade de &amp; segurança.
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077597"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658077"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Criar um cronograma para um relatório no centro de &amp; conformidade de segurança
 
@@ -33,11 +33,29 @@ No centro de &amp; conformidade de segurança, vários [relatórios e informaç�
   
 1. No [centro de &amp; conformidade de segurança](https://protection.office.com), vá para **painel**de **relatórios** \> .
     
-2. Escolha um relatório. Para este exemplo, escolheremos o relatório de status de proteção contra ameaças.
+2. Escolha um dos seguintes relatórios: 
+
+    - Correspondências de política DLP
+    - Regra de transporte do Exchange
+    - Falsos positivos e substituições de DLP
+    - Tipos de arquivo do Office 365 ATP
+    - Disposição de mensagens ATP do Office 365
+    - Malware detectado no email
+    - Principais malware
+    - Principais remetentes e destinatários
+    - Detecções falsas
+    - Detecções de spam
+    - Emails enviados e recebidos
+    - Incidentes de DLP
+    - Relatório de criptografia
+
+    Para este exemplo, escolheremos o relatório tipos de arquivo de proteção avançada contra ameaças.
     
-3. No canto superior esquerdo do relatório, escolha **+ criar agendamento**.
+3. No canto superior esquerdo do relatório, escolha **+ criar agendamento**. 
     
-    ![Você pode criar um cronograma para relatórios no centro de &amp; conformidade de segurança](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Criar agendamento](media/atpfiletypes-createschedule.png)
+
+    (Observação: nem todos os relatórios têm o botão **+ criar agenda** .)
   
     A caixa de diálogo **criar agendamento** é aberta. 
     

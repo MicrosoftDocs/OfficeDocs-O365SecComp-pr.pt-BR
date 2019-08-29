@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: O registro em log de auditoria de caixa de correio é ativado por padrão no Microsoft 365 (também chamado de auditoria de caixa de correio padrão ou de caixa de correio ativada por padrão). Isso significa que determinadas ações executadas por proprietários, representantes e administradores de caixa de correio são automaticamente registradas em um log de auditoria de caixa de correio, onde você pode pesquisar atividades realizadas na caixa de correio.
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: O registro em log de auditoria de caixa de correio é ativado por padrão no Office 365 (também chamado de auditoria de caixa de correio padrão ou de caixa de correio ativada por padrão). Isso significa que determinadas ações executadas por proprietários, representantes e administradores de caixa de correio são automaticamente registradas em um log de auditoria de caixa de correio, onde você pode pesquisar atividades realizadas na caixa de correio.
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599917"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649906"
 ---
 # <a name="manage-mailbox-auditing"></a>Gerenciar a auditoria de caixa de correio
 
-A partir de janeiro de 2019, a Microsoft está ativando o log de auditoria de caixa de correio por padrão para todas as organizações 365 da Microsoft. Isso significa que determinadas ações executadas por proprietários, representantes e administradores de caixa de correio são automaticamente registradas, e os registros de auditoria de caixa de correio correspondentes estarão disponíveis quando você procurá-los no log de auditoria de caixa de correio. Antes de a auditoria da caixa de correio ser ativada por padrão, você precisava habilitá-la manualmente para cada caixa de correio de usuário em sua organização.
+A partir de janeiro de 2019, a Microsoft está ativando o log de auditoria de caixa de correio por padrão para todas as organizações do Office 365. Isso significa que determinadas ações executadas por proprietários, representantes e administradores de caixa de correio são automaticamente registradas, e os registros de auditoria de caixa de correio correspondentes estarão disponíveis quando você procurá-los no log de auditoria de caixa de correio. Antes de a auditoria da caixa de correio ser ativada por padrão, você precisava habilitá-la manualmente para cada caixa de correio de usuário em sua organização.
 
 Estes são alguns benefícios da auditoria de caixa de correio ativada por padrão:
 
@@ -36,8 +36,8 @@ Estes são alguns benefícios da auditoria de caixa de correio ativada por padr�
 
 - Você tem uma política de auditoria de caixa de correio consistente em sua organização (pois você está auditando as mesmas ações para todas as caixas de correio).
 
-> [!TIP]
-> Por padrão, o importante a ser lembrado sobre o lançamento da auditoria de caixa de correio é: não é necessário fazer nada para gerenciar a auditoria de caixa de correio. No entanto, para saber mais, personalizar a auditoria de caixa de correio nas configurações padrão ou desativá-la completamente, este tópico pode ajudá-lo.
+> [!NOTE]
+>• O importante a ser lembrado sobre o lançamento da auditoria de caixa de correio por padrão é: não é necessário fazer nada para gerenciar a auditoria de caixa de correio. No entanto, para saber mais, personalizar a auditoria de caixa de correio nas configurações padrão ou desativá-la completamente, este tópico pode ajudá-lo. <br><br>• Mesmo quando a auditoria de caixa de correio ativa por padrão, você pode notar que os eventos de auditoria de caixa de correio para alguns usuários não são encontrados nas pesquisas de log de auditoria no centro de conformidade do & de segurança ou por meio da API de atividade de gerenciamento do Office 365. Para obter mais informações, consulte a seção [mais informações](#more-information) neste tópico.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Verificar se a auditoria de caixa de correio está ativada por padrão
 
@@ -334,7 +334,23 @@ O valor **true** indica que o log de auditoria de caixa de correio é ignorado p
 
 ## <a name="more-information"></a>Mais informações
 
-- Por padrão, os registros de log de auditoria de caixa de correio são mantidos por 90 dias antes de serem excluídos. Você pode alterar o limite de idade para registros de log de auditoria usando o parâmetro *AuditLogAgeLimit* no cmdlet **Set-Mailbox** no PowerShell do Exchange Online. No entanto, aumentar esse valor não permite que você pesquise eventos com mais de 90 dias no log de auditoria do Microsoft 365.
+- Somente usuários com licenças E5 ou caixas de correio em que o log de auditoria de caixa de correio foi habilitado manualmente por um administrador retornará eventos de log de auditoria de caixa de correio nas pesquisas de log de auditoria no centro de conformidade & segurança ou por meio da API de atividade de gerenciamento do Office 365.
+
+  Para recuperar entradas de log de auditoria de caixa de correio para usuários sem licenças e5, você pode:
+
+  - Use os seguintes cmdlets no PowerShell do Exchange Online:
+
+    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) para pesquisar o log de auditoria de caixa de correio para usuários específicos.
+
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) para pesquisar o log de auditoria de caixa de correio para usuários específicos e para que os resultados sejam enviados por email para destinatários especificados.
+
+  - Use o centro de administração do Exchange (Eat) no Exchange Online para fazer o seguinte:
+
+    - [Exportar logs de auditoria de caixas de correio](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [Executar um relatório de acesso não proprietário da caixa de correio](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- Por padrão, os registros de log de auditoria de caixa de correio são mantidos por 90 dias antes de serem excluídos. Você pode alterar o limite de idade para registros de log de auditoria usando o parâmetro *AuditLogAgeLimit* no cmdlet **Set-Mailbox** no PowerShell do Exchange Online. No entanto, aumentar esse valor não permite que você pesquise eventos com mais de 90 dias no log de auditoria do Office 365.
 
   Se você aumentar o limite de idade, será necessário usar o cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) no PowerShell do Exchange Online para pesquisar o log de auditoria de caixa de correio do usuário em registros com mais de 90 dias.
 
@@ -361,6 +377,6 @@ O valor **true** indica que o log de auditoria de caixa de correio é ignorado p
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - Você não pode acessar diretamente um registro de log de auditoria na pasta itens recuperáveis; em vez disso, você usa o cmdlet **Search-MailboxAuditLog** ou pesquisa o Microsoft 365 Audit Log para localizar e exibir registros de auditoria de caixa de correio.
+    - Você não pode acessar diretamente um registro de log de auditoria na pasta itens recuperáveis; em vez disso, você usa o cmdlet **Search-MailboxAuditLog** ou pesquisa o log de auditoria do Office 365 para localizar e exibir registros de auditoria de caixa de correio.
 
 - Se uma caixa de correio for colocada em espera ou atribuída a uma política de retenção no centro de conformidade, os registros de log de auditoria ainda serão mantidos pela duração definida pela propriedade *AuditLogAgeLimit* da caixa de correio (90 dias por padrão). Para manter os registros de log de auditoria mais longos para caixas de correio em espera, você precisa aumentar o valor de *AuditLogAgeLimit* da caixa de correio.
