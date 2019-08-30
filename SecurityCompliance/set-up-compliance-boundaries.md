@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use limites de conformidade para criar limites lógicos em uma organização do Office 365 que controla os locais de conteúdo do usuário que um gerente de descoberta eletrônica pode pesquisar. Os limites de conformidade usam filtragem de permissões de pesquisa (também chamados de filtros de segurança de conformidade) para controlar quais caixas de correio, sites do SharePoint e contas do OneDrive podem ser pesquisadas por usuários específicos.
-ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: d89c1c3cc5619e446e0f733c4839bd41b15dd877
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675442"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676871"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar limites de conformidade para investigações de Descoberta eletrônica no Office 365
 
@@ -52,7 +52,7 @@ Este é o processo de configuração dos limites de conformidade:
   
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Etapa 1: identificar um atributo de usuário para definir suas agências
 
-A primeira etapa é escolher um atributo do Azure Active Directory para usar que irá definir suas agências. Este atributo será usado para criar o filtro permissões de pesquisa que limita um gerente de descoberta eletrônica para pesquisar apenas os locais de conteúdo de usuários aos quais foram atribuídos um valor específico para este atributo. Por exemplo, digamos que a contoso decida usar o atributo **Department** . O valor desse atributo para os usuários na quarta subsidiária da Fourth Coffee seria `FourthCoffee` e o valor para os usuários da vinícola Coho-subsidiária seria. `CohoWinery` Na etapa 4, você usa esse `attribute:value` par (por exemplo, *Department: fourthcoffee*) para limitar os locais de conteúdo do usuário que os gerentes de descoberta eletrônica podem pesquisar. 
+A primeira etapa é escolher um atributo do Azure Active Directory para usar que irá definir suas agências. Este atributo é usado para criar o filtro permissões de pesquisa que limita um gerente de descoberta eletrônica para pesquisar apenas os locais de conteúdo de usuários aos quais foram atribuídos um valor específico para este atributo. Por exemplo, digamos que a contoso decida usar o atributo **Department** . O valor desse atributo para os usuários na quarta subsidiária da Fourth Coffee seria `FourthCoffee` e o valor para os usuários da vinícola Coho-subsidiária seria. `CohoWinery` Na etapa 4, você usa esse `attribute:value` par (por exemplo, *Department: fourthcoffee*) para limitar os locais de conteúdo do usuário que os gerentes de descoberta eletrônica podem pesquisar. 
   
 Veja a seguir uma lista de atributos de usuário do Azure Active Directory que você pode usar para limites de conformidade:
   
@@ -78,7 +78,7 @@ Inclua as seguintes informações ao enviar a solicitação para o suporte da Mi
     
 - O nome do atributo do Azure Active Directory (da etapa 1)
     
-- O seguinte título ou descrição da finalidade da solicitação de suporte: "habilitar a sincronização do OneDrive for Business com o Azure Active Directory para filtros de segurança de conformidade". Isso ajuda a rotear a solicitação para a equipe de engenharia de descoberta eletrônica do Office 365 que implementará a solicitação.
+- O seguinte título ou descrição da finalidade da solicitação de suporte: "habilitar a sincronização do OneDrive for Business com o Azure Active Directory para filtros de segurança de conformidade". Isso ajuda a rotear a solicitação para a equipe de engenharia de descoberta eletrônica do Office 365 que implementa a solicitação.
     
 Após a alteração da engenharia ser feita e o atributo ser sincronizado com o OneDrive, o suporte da Microsoft lhe enviará o número de compilação que a alteração foi feita e uma data de implantação estimada. O processo de implantação geralmente leva de 4 a 6 semanas após o envio da solicitação de suporte.
   
@@ -120,9 +120,9 @@ Veja a seguir uma descrição de cada parâmetro no comando:
     
     -  `Mailbox`: Especifica as caixas de correio que os grupos de função definidos `Users` no parâmetro podem pesquisar. Para limites de conformidade ** , complianceattribute é o mesmo atributo identificado na etapa 1 e *AttributeValue* especifica a agência. Esse filtro permite que os membros do grupo de função pesquisem apenas as caixas de correio em uma agência específica; por exemplo, `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-    -  `Site`: Especifica as contas do OneDrive que os grupos de função definidos `Users` no parâmetro podem pesquisar. Para o filtro do OneDrive, use a cadeia `ComplianceAttribute`de caracteres real. Isso mapeia para o mesmo atributo que você identificou na etapa 1 e que é sincronizado com as contas do OneDrive como resultado da solicitação de suporte que você enviou na etapa 2;  *AttributeValue* especifica a agência. Este filtro permite que os membros do grupo de função pesquisem somente as contas do OneDrive em uma agência específica; por exemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Especifica as contas do OneDrive que os grupos de função definidos `Users` no parâmetro podem pesquisar. Para o filtro do OneDrive, use a cadeia `ComplianceAttribute`de caracteres real. Isso mapeia para o mesmo atributo que você identificou na etapa 1 e que é sincronizado com as contas do OneDrive como resultado da solicitação de suporte que você enviou na etapa 2; *AttributeValue* especifica a agência. Este filtro permite que os membros do grupo de função pesquisem somente as contas do OneDrive em uma agência específica; por exemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-    -  `Site_Path`: Especifica os sites do SharePoint que os grupos de função definidos `Users` no parâmetro podem pesquisar. O *SharePointURL* especifica os sites na agência que os membros do grupo de funções podem pesquisar; por exemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` Observe que `Site` os `Site_Path` filtros e são conectados por um **ou** um operador.
+    -  `Site_Path`: Especifica os sites do SharePoint que os grupos de função definidos `Users` no parâmetro podem pesquisar. O *SharePointURL* especifica os sites na agência que os membros do grupo de funções podem pesquisar. Por exemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Observe que `Site` os `Site_Path` filtros e são conectados por um operador **ou** .
     
      > [!NOTE]
      > A sintaxe do `Filters` parâmetro inclui uma *lista de filtros*. Uma lista de filtros é um filtro que inclui um filtro de caixa de correio e um filtro de site separado por uma vírgula. No exemplo anterior, observe que uma vírgula separa **Mailbox_ComplianceAttribute** e **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Quando esse filtro é processado durante a execução de uma pesquisa de conteúdo, dois filtros de permissão de pesquisa são criados a partir da lista de filtros: um filtro de caixa de correio e um filtro de site. Uma alternativa ao uso de uma lista de filtros seria criar dois filtros de permissões de pesquisa separados para cada agência: um filtro de permissões de pesquisa para o atributo de caixa de correio e um filtro para os atributos de site. Em ambos os casos, os resultados serão os mesmos. O uso de uma lista de filtros ou a criação de filtros de permissões de pesquisa separados é uma questão de preferência.
@@ -153,7 +153,6 @@ A etapa final é criar uma ocorrência de descoberta eletrônica no centro de co
     
 - Quando um membro do grupo de função atribuído a uma ocorrência executar uma pesquisa associada ao caso, eles só poderão pesquisar os locais de conteúdo dentro da agência (que é definido pelo filtro de permissões de pesquisa que você criou na etapa 4.)
 
-
 Para criar um caso e atribuir Membros:
     
 1. Vá para a página de **descoberta eletrônica** no centro de conformidade & segurança e crie uma ocorrência. 
@@ -172,7 +171,7 @@ Para criar um caso e atribuir Membros:
 
 Tenha em mente as seguintes limitações ao gerenciar casos de descoberta eletrônica e investigações que usam limites de conformidade.
   
-- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar locais de conteúdo fora da sua agência. No entanto, por causa do filtro de permissões de pesquisa, o conteúdo desses locais não será incluído nos resultados da pesquisa.
+- Ao criar e executar uma pesquisa de conteúdo, você pode selecionar locais de conteúdo fora da sua agência. No entanto, por causa do filtro de permissões de pesquisa, o conteúdo desses locais não é incluído nos resultados da pesquisa.
     
 - Os limites de conformidade não se aplicam a isenções em casos de descoberta eletrônica. Isso significa que um gerente de descoberta eletrônica em uma agência pode colocar um usuário em uma agência diferente em espera. No entanto, o limite de conformidade será imposto se o Gerenciador de descoberta eletrônica Pesquisar nos locais de conteúdo do usuário que foi colocado em espera. Isso significa que o Gerenciador de descoberta eletrônica não poderá pesquisar os locais de conteúdo do usuário, mesmo que eles possam colocar o usuário em espera.
     
@@ -198,7 +197,7 @@ Os filtros de permissões de pesquisa também permitem que você controle onde o
     
 - **Pesquisas de conteúdo de rota:** Você pode rotear as pesquisas de conteúdo de sites do SharePoint e contas do OneDrive para um data center de satélite. Isso significa que você pode especificar o local do datacenter onde as pesquisas serão executadas.
     
-    Use os seguintes valores para os valores de parâmetro de **região** para controlar em qual datacenter que as pesquisas de conteúdo serão executadas ao pesquisar sites do SharePoint e locais do onedrive. 
+    Use um dos seguintes valores para o parâmetro **Region** para controlar o local do Data Center em que pesquisas serão executadas ao pesquisar sites do SharePoint e contas do onedrive. 
   
     |**Valor do parâmetro**|**Locais de roteamento de datacenter para SharePoint**|
     |:-----|:-----|
@@ -214,10 +213,10 @@ Os filtros de permissões de pesquisa também permitem que você controle onde o
     |LAM  <br/> |Unidos  <br/> |
     |||
 
-   Se você não especificar o parâmetro **Region** para um filtro de permissões de pesquisa, a região padrão do SharePoint da organização será pesquisada e os resultados da pesquisa serão exportados para o datacenter mais próximo.
+   Se você não especificar o parâmetro **Region** para um filtro de permissões de pesquisa, a região padrão do SharePoint da organização será pesquisada. Os resultados da pesquisa são exportados para o datacenter mais próximo.
 
 > [!TIP]
-> Para simplificar o conceito, o parâmetro **Region** controla o datacenter que é usado para pesquisar conteúdo no SharePoint e no onedrive. Isso não se aplica à pesquisa de conteúdo no Exchange porque as pesquisas de conteúdo do Exchange não estão associadas à localização geográfica dos datacenters. Além disso, o mesmo valor de parâmetro **Region** também pode ditar o datacenter no qual as exportações são roteadas. Geralmente, isso é necessário para controlar a movimentação de dados entre os inboards geográficas.<br/><br/>Se você estiver usando a descoberta eletrônica avançada, a pesquisa de conteúdo no SharePoint e no OneDrive não será associada à localização geográfica dos datacenters. Para obter mais informações sobre a descoberta eletrônica avançada, confira [visão geral da solução de descoberta eletrônica avançada no Microsoft 365](compliance20/overview-ediscovery-20.md).
+> Para simplificar o conceito, o parâmetro **Region** controla o datacenter que é usado para pesquisar conteúdo no SharePoint e no onedrive. Isso não se aplica à pesquisa de conteúdo no Exchange porque as pesquisas de conteúdo do Exchange não estão associadas à localização geográfica dos datacenters. Além disso, o mesmo valor de parâmetro **Region** também pode ditar o datacenter no qual as exportações são roteadas. Geralmente, isso é necessário para controlar a movimentação de dados entre os inboards geográficas.<br/><br/>Se você estiver usando a descoberta eletrônica avançada, a pesquisa de conteúdo no SharePoint e no OneDrive não será associada à localização geográfica dos datacenters. Todos os datacenters são pesquisados. Para obter mais informações sobre a descoberta eletrônica avançada, confira [visão geral da solução de descoberta eletrônica avançada no Microsoft 365](compliance20/overview-ediscovery-20.md).
 
 Aqui estão exemplos de como usar o parâmetro **Region** ao criar filtros de permissão de pesquisa para limites de conformidade. Isso pressupõe que a quarta subsidiária de café está localizada na América do Norte e que a Coho Winery está na Europa. 
   
@@ -231,13 +230,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
    
 Tenha em mente as seguintes coisas ao pesquisar e exportar conteúdo em ambientes multigeográfico.
   
-- O parâmetro **Region** não controla pesquisas de caixas de correio do Exchange. Todos os data centers serão pesquisados quando você Pesquisar caixas de correio. Para limitar o escopo do qual as caixas de correio do Exchange podem ser pesquisadas, use o parâmetro **Filters** ao criar ou alterar um filtro de permissões de pesquisa. 
+- O parâmetro **Region** não controla pesquisas de caixas de correio do Exchange. Todos os data centers serão pesquisados quando você Pesquisar caixas de correio. Para limitar o escopo do qual as caixas de correio do Exchange são pesquisadas, use o parâmetro **Filters** ao criar ou alterar um filtro de permissões de pesquisa. 
     
-- Se for necessário que um gerente de descoberta eletrônica pesquise em várias regiões do SharePoint, você precisará criar uma conta de usuário diferente para o Gerenciador de descoberta eletrônica que possa ser usado no filtro de permissões de pesquisa para especificar a região em que os sites do SharePoint ou As contas do OneDrive estão localizadas. Para obter mais informações sobre como configurar isso, consulte a seção "pesquisando conteúdo em um ambiente multigeográfico do SharePoint" na [pesquisa de conteúdo no Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- Se for necessário que um gerente de descoberta eletrônica pesquise em várias regiões do SharePoint, você precisará criar uma conta de usuário diferente para o Gerenciador de descoberta eletrônica usar no filtro permissões de pesquisa para especificar a região em que os sites do SharePoint ou o OneDrive as contas estão localizadas. Para obter mais informações sobre como configurar isso, consulte a seção "pesquisando conteúdo em um ambiente multigeográfico do SharePoint" na [pesquisa de conteúdo no Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
-- Ao pesquisar conteúdo no SharePoint e no OneDrive, o parâmetro **Region** direciona as pesquisas para o local principal ou de satélite onde o gerente de descoberta eletrônica conduzirá investigações de descoberta eletrônica. Se um gerente de descoberta eletrônica pesquisa sites do SharePoint e do OneDrive fora da região especificada no filtro permissões de pesquisa, nenhum resultado de pesquisa será retornado. 
+- Ao pesquisar conteúdo no SharePoint e no OneDrive, o parâmetro **Region** direciona as pesquisas para o local principal ou de satélite onde o gerente de descoberta eletrônica conduzirá investigações de descoberta eletrônica. Se um gerente de descoberta eletrônica pesquisa sites do SharePoint e do OneDrive fora da região especificada no filtro permissões de pesquisa, nenhum resultado de pesquisa é retornado. 
     
-- Ao exportar os resultados da pesquisa, o conteúdo de todos os locais de conteúdo (incluindo o Exchange, o Skype for Business, o SharePoint, o OneDrive e outros serviços do Office 365 que você pode pesquisar usando a ferramenta de pesquisa de conteúdo) será carregado para o local de armazenamento do Azure no o datacenter que é especificado pelo parâmetro **Region** . Isso ajuda as organizações a ficar dentro da conformidade, não permitindo que o conteúdo seja exportado por bordas controladas. Se nenhuma região for especificada no filtro permissões de pesquisa, o conteúdo será carregado para a região padrão da organização. 
+- Ao exportar os resultados da pesquisa, o conteúdo de todos os locais de conteúdo (incluindo o Exchange, o Skype for Business, o SharePoint, o OneDrive e outros serviços do Office 365 que você pode pesquisar usando a ferramenta de pesquisa de conteúdo) são carregados para o local de armazenamento do Azure no datacenter especificado pelo parâmetro **Region** . Isso ajuda as organizações a ficar dentro da conformidade, não permitindo que o conteúdo seja exportado por bordas controladas. Se nenhuma região for especificada no filtro permissões de pesquisa, o conteúdo será carregado para a região padrão da organização. 
     
 - Você pode editar um filtro de permissões de pesquisa existente para adicionar ou alterar a região executando o seguinte comando:
 
