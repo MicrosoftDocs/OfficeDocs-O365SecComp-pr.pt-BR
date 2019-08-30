@@ -235,50 +235,6 @@
 ## [Detectar e corrigir ataques de injeção a regras do Outlook e formulários personalizados no Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Responder a uma conta de email comprometida no Office 365](responding-to-a-compromised-email-account.md)
 
-# Gerenciar governança de dados
-## [Importar dados](importing-pst-files-to-office-365.md)
-### [Usar o upload de rede para importar arquivos PST](use-network-upload-to-import-pst-files.md)
-### [Usar o envio de unidade para importar arquivos PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Use a ferramenta de coleção de PST para encontrar, copiar e excluir arquivos PST](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtrar dados ao importar arquivos PST](filter-data-when-importing-pst-files.md)
-### [Usar o upload de rede para importar arquivos PST criptografados por RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [Perguntas frequentes sobre como importar arquivos PST](faqimporting-pst-files-to-office-365.md)
-### [Arquivar dados de terceiros no Office 365](archiving-third-party-data.md)
-#### [Use um conector de exemplo para arquivar dados do Facebook](archive-facebook-data-with-sample-connector.md)
-#### [Usar um conector de exemplo para arquivar dados do Twitter](archive-twitter-data-with-sample-connector.md)
-#### [Configurar um conector para arquivar dados do LinkedIn](archive-linkedin-data.md)
-#### [Configurar um conector para arquivar dados do Instant Bloomberg](archive-instant-bloomberg-data.md)
-#### [Trabalhar com um parceiro para arquivar dados de terceiros](work-with-partner-to-archive-third-party-data.md)
-## Armazenar dados
-### [Habilitar caixas de correio de arquivo morto](enable-archive-mailboxes.md)
-### [Visão geral do arquivamento ilimitado](unlimited-archiving.md)
-### [Habilitar o arquivamento ilimitado](enable-unlimited-archiving.md)
-### [Configurar uma política de arquivo morto e exclusão para caixas de correio](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Reter os dados
-### [Políticas de retenção](retention-policies.md)
-### [Gerenciador de planos de arquivo](file-plan-manager.md)
-### [Rótulos de retenção](labels.md)
-### [Cumprir com a Regra SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Criar e publicar rótulos de retenção usando o PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Retenção baseada em eventos](event-driven-retention.md)
-### [Automatizar retenção baseada em eventos](automate-event-driven-retention.md)
-## [Descartar dados](disposition-reviews.md)
-## Supervisionar comunicações
-### [Políticas de supervisão](supervision-policies.md)
-### [Configure políticas de supervisão da sua organização](configure-supervision-policies.md)
-## [Gerencie caixas de correio inativas](inactive-mailboxes-in-office-365.md)
-### [Criar e gerenciar caixas de correio inativas](create-and-manage-inactive-mailboxes.md)
-### [Alterar a duração de retenção de uma caixa de correio inativa](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Recuperar uma caixa de correio inativa](recover-an-inactive-mailbox.md)
-### [Restaurar uma caixa de correio inativa](restore-an-inactive-mailbox.md)
-### [Excluir uma caixa de correio inativa](delete-an-inactive-mailbox.md)
-## Monitorar a governança de dados
-### [Exibir a atividade de rótulos de documentos](view-label-activity-for-documents.md)
-### [Exibição do uso do rótulo com análises de rótulo](label-analytics.md)
-### [Exibir os relatórios de governança de dados](view-the-data-governance-reports.md)
-## Mais informações sobre governança de dados
-### [Assistir aos vídeos da equipe de Governança de Dados da Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Procurar conteúdo](search-for-content.md)
 ## [Usar a Pesquisa de Conteúdo](content-search.md)
 ### [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [Preservar destinatários de grupo de distribuição Cco e expandido](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [Gerenciar investigações de dados](datainvestigations/overview-data-investigations.md)
-## [Notas de versão](datainvestigations/data-investigations-release-notes.md)
 ## [Gerenciar um incidente de derramamento de dados](datainvestigations/manage-data-spillage-incidents.md)
 ## [Criar uma nova investigação](datainvestigations/create-new-investigation.md)
 ## [Atribuir permissões para investigações de dados](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [Anotar e redigir documentos](datainvestigations/annotate-and-redact-documents.md)
 ### [Carregar dados que não são do Office 365](datainvestigations/load-non-office365-data.md)
 ### [Correção de erros durante o processamento de dados](datainvestigations/error-remediation.md)
+### [Excluir itens do local original](datainvestigations/delete-items-from-original-locations.md)
 
 ## [Executar análise para investigar mais rápido](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [Threading de emails](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [Feche ou exclua uma investigação](datainvestigations/close-or-delete-investigation.md)
 
 ## Referência de investigações de dados
+### [Notas de versão](datainvestigations/data-investigations-release-notes.md)
 ### [Limites nas investigações de dados](datainvestigations/limits-datainvestigations.md)
 ### [Tipos de arquivos compatíveis](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [Campos de metadados do documento](datainvestigations/document-metadata-fields.md)
