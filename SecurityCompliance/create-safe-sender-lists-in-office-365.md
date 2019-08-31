@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se você quiser ter certeza de que recebeu emails de um remetente específico, porque confia neles e suas mensagens, é possível ajustar a lista de permissões em uma política de filtro de spam no centro de administração do Exchange.
-ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 49803dee186a0f89e3caa42f8c7559bb6ce0c7c9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599977"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699209"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Criar listas de remetentes seguros no Office 365
 
@@ -51,7 +51,7 @@ Para garantir que apenas mensagens legítimas sejam permitidas para sua organiza
 > [!IMPORTANT]
 > Se você permitir um endereço IP que seja NATted, deverá saber as máquinas envolvidas nesse pool NAT para saber o escopo do seu permitido. Lembre-se de que os endereços IP podem ser alterados e os participantes de NAT também podem. Você deve verificar novamente todas as listas de permissões, incluindo IP, como parte da sua manutenção padrão.
 
-- *Opcionalmente*, adicione uma condição de que a mensagem se origine de fora da organização (isso é implícito, mas é bom adicioná-la como uma condição para a conta para servidores locais que podem não estar corretamente configurados).
+- *Opcionalmente*, adicione uma condição de que a mensagem se origine de fora da organização (isso é implícito, mas é bom adicioná-la como uma condição de conta para servidores locais que podem não estar corretamente configurados).
 
 - *Opcionalmente*, se você puder identificar palavras-chave ou frases exclusivas no assunto ou no corpo do email, use essas informações como uma condição adicional para restringir ainda mais as mensagens de email permitidas pela regra de fluxo de emails.
 

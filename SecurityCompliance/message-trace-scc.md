@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Os administradores podem usar o rastreamento de mensagens no centro de conformidade & segurança para descobrir o que aconteceu com as mensagens.
-ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
-ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
+ms.openlocfilehash: ad5e6e1f5e95b97cf9601890c11129f498fe95b9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36643253"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699219"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Rastreamento de mensagens no Centro de Conformidade e Segurança
 
@@ -25,7 +25,7 @@ O rastreamento de mensagens no centro de conformidade & de segurança segue as m
 O rastreamento de mensagens no centro de conformidade & segurança melhora no rastreamento de mensagens que estava disponível no centro de administração do Exchange (Eat). Você pode usar as informações do rastreamento de mensagens para responder com eficiência às perguntas do usuário sobre o que aconteceu com suas mensagens, solucionar problemas de fluxo de emails e validar as alterações na política.
 
 > [!NOTE]
->  A contagem de mensagens será interrompida às 50 000 e o relatório só refletirá até esse valor no console. O cmdlet Get-HistoricalSearch do cmdlet do PowerShell mostrará a verdadeira contagem de mensagens.
+> Somente as primeiras 50000 mensagens são exibidas nos resultados. O cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) no Exchange Online PowerShell ou no Exchange Online Protection PowerShell retorna todas as mensagens nos resultados.
 
 ## <a name="open-message-trace"></a>Abrir rastreamento de mensagens
 
@@ -190,35 +190,39 @@ Na saída do relatório de resumo, é possível exibir detalhes sobre uma mensag
 
 Os detalhes de rastreamento de mensagem contêm as seguintes informações adicionais que não estão presentes no relatório de Resumo:
 
-- **Eventos de mensagem**: Esta seção contém classificações que ajudam a categorizar as ações que o serviço executa em mensagens. Alguns dos eventos mais interessantes que você pode encontrar são:
+- **Eventos de mensagem**: Esta seção contém classificações que ajudam a categorizar as ações que o serviço executa em mensagens. **Alguns dos eventos mais interessantes** que você pode encontrar são:
 
-   - **Receive**: a mensagem foi recebida pelo serviço.
+  - **Receive**: a mensagem foi recebida pelo serviço.
 
-   - **Enviar**: a mensagem foi enviada pelo serviço.
+  - **Enviar**: a mensagem foi enviada pelo serviço.
 
-   - **Falha**: a mensagem falhou ao ser entregue.
+  - **Falha**: a mensagem falhou ao ser entregue.
 
-   - **Entregar**: a mensagem foi entregue a uma caixa de correio.
+  - **Entregar**: a mensagem foi entregue a uma caixa de correio.
 
-   - **Expand**: a mensagem foi enviada a um grupo de distribuição que foi expandido.
+  - **Expand**: a mensagem foi enviada a um grupo de distribuição que foi expandido.
 
-   - **Transferência**: os destinatários foram movidos para uma mensagem bifurcada por causa de conversão de conteúdo, limites de destinatário de mensagem ou agentes.
+  - **Transferência**: os destinatários foram movidos para uma mensagem bifurcada por causa de conversão de conteúdo, limites de destinatário de mensagem ou agentes.
 
-   - **Defer**: a entrega da mensagem foi adiada e pode ser tentada novamente mais tarde.
+  - **Defer**: a entrega da mensagem foi adiada e pode ser tentada novamente mais tarde.
 
-   - **Resolvido**: a mensagem foi redirecionada para um novo endereço de destinatário com base em uma pesquisa do Active Directory. Quando isso acontece, o endereço original de destinatário é listado em uma linha separada no rastreamento de mensagem junto com o status final de entrega da mensagem.
+  - **Resolvido**: a mensagem foi redirecionada para um novo endereço de destinatário com base em uma pesquisa do Active Directory. Quando isso acontece, o endereço original de destinatário é listado em uma linha separada no rastreamento de mensagem junto com o status final de entrega da mensagem.
 
-   Observe que até mesmo uma mensagem sem eventos que é entregue com êxito gerará várias entradas de **evento** no rastreamento de mensagens.
+  Observações:
+
+  - Uma mensagem sem erro entregue com êxito irá gerar várias entradas de **evento** no rastreamento de mensagens.
+
+  - Essa lista não deve ser exaustiva. Para obter descrições de mais eventos, confira [tipos de eventos no log de controle de mensagens](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observe que esse link é um tópico do Exchange Server (Exchange local).
 
 - **Mais informações**: Esta seção contém os seguintes detalhes:
 
-   - **ID da mensagem**: esse valor é descrito na seção [ID da mensagem](#message-id) anteriormente neste tópico. Por exemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **ID da mensagem**: esse valor é descrito na seção [ID da mensagem](#message-id) anteriormente neste tópico. Por exemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-   - **Tamanho da mensagem**
+  - **Tamanho da mensagem**
 
-   - **De IP**: o endereço IP do computador que enviou a mensagem. Para as mensagens de saída enviadas a partir do Exchange Online, o valor é nulo.
+  - **De IP**: o endereço IP do computador que enviou a mensagem. Para as mensagens de saída enviadas a partir do Exchange Online, o valor é nulo.
 
-   - **Para IP**: o endereço IP ou endereços onde o serviço tentou entregar a mensagem. Se a mensagem tiver vários destinatários, eles serão exibidos. Para mensagens de entrada enviadas para o Exchange Online, o valor é nulo.
+  - **Para IP**: o endereço IP ou endereços onde o serviço tentou entregar a mensagem. Se a mensagem tiver vários destinatários, eles serão exibidos. Para mensagens de entrada enviadas para o Exchange Online, o valor é nulo.
 
 ### <a name="enhanced-summary-reports"></a>Relatórios de resumo aprimorados
 
@@ -230,11 +234,11 @@ Disponível (concluído) relatórios de resumo aprimorados estão disponíveis n
 
 - **Recipient_status**: o status da entrega da mensagem para o destinatário. Se a mensagem foi enviada para vários destinatários, mostrará \<todos os destinatários e o status correspondente de cada um, no formato:*status*\>do *endereço*\>##\<de email. Por exemplo:
 
-   - **# #Receive, Send** significa que a mensagem foi recebida pelo serviço e foi enviada para o destino desejado.
+  - **# #Receive, Send** significa que a mensagem foi recebida pelo serviço e foi enviada para o destino desejado.
 
-   - **# #Receive, Fail** significa que a mensagem foi recebida pelo serviço, mas a entrega ao destino pretendido falhou.
+  - **# #Receive, Fail** significa que a mensagem foi recebida pelo serviço, mas a entrega ao destino pretendido falhou.
 
-   - **# #Receive, entregar** significa que a mensagem foi recebida pelo serviço e foi entregue à caixa de correio do destinatário.
+  - **# #Receive, entregar** significa que a mensagem foi recebida pelo serviço e foi entregue à caixa de correio do destinatário.
 
 - **message_subject**: os primeiros 256 caracteres do campo de **assunto** da mensagem.
 
@@ -268,17 +272,17 @@ Relatórios estendidos disponíveis (concluídos) estão disponíveis na seção
 
 - **source_context**: informações adicionais associadas ao campo **Source** . Por exemplo:
 
-   - `Protocol Filter Agent`
+  - `Protocol Filter Agent`
 
-   - `3489061114359050000`
+  - `3489061114359050000`
 
 - **origem**: o componente do Exchange Online responsável pelo evento. Por exemplo:
 
-   - `AGENT`
+  - `AGENT`
 
-   - `MAILBOXRULE`
+  - `MAILBOXRULE`
 
-   - `SMTP`
+  - `SMTP`
 
 - **event_id**: eles correspondem aos valores de **evento de mensagem** que são explicados na seção [localizar registros relacionados para esta mensagem](#find-related-records-for-this-message) .
 
@@ -292,27 +296,27 @@ Relatórios estendidos disponíveis (concluídos) estão disponíveis na seção
 
 - **referência**: Este campo contém informações adicionais para tipos específicos de eventos. Por exemplo:
 
-   - **DSN**: contém o link de relatório, que é o valor **message_id** da notificação de status de entrega associada (também conhecido como DSN, notificação de falha na entrega, NDR ou mensagem de devolução) se um DSN é gerado subsequentemente para esse evento. Se esta for uma mensagem DSN, este campo conterá o valor **message_id** da mensagem original para a qual o DSN foi gerado.
+  - **DSN**: contém o link de relatório, que é o valor **message_id** da notificação de status de entrega associada (também conhecido como DSN, notificação de falha na entrega, NDR ou mensagem de devolução) se um DSN é gerado subsequentemente para esse evento. Se esta for uma mensagem DSN, este campo conterá o valor **message_id** da mensagem original para a qual o DSN foi gerado.
 
-   - **Expand**: contém o valor **related_recipient_address** das mensagens relacionadas.
+  - **Expand**: contém o valor **related_recipient_address** das mensagens relacionadas.
 
-   - **Receive**: pode conter o valor **message_id** da mensagem relacionada se a mensagem foi gerada por outros processos (por exemplo, regras de caixa de entrada).
+  - **Receive**: pode conter o valor **message_id** da mensagem relacionada se a mensagem foi gerada por outros processos (por exemplo, regras de caixa de entrada).
 
-   - **Send**: contém o valor **internal_message_id** de qualquer mensagem DSN.
+  - **Send**: contém o valor **internal_message_id** de qualquer mensagem DSN.
 
-   - **Transfer**: contém o valor **internal_message_id** da mensagem que está sendo bifurcada (por exemplo, por conversão de conteúdo, limites de destinatário de mensagem ou agentes).
+  - **Transfer**: contém o valor **internal_message_id** da mensagem que está sendo bifurcada (por exemplo, por conversão de conteúdo, limites de destinatário de mensagem ou agentes).
 
-   - **MAILBOXRULE**: contém o valor **internal_message_id** da mensagem de entrada que fez com que a regra de caixa de entrada gerasse a mensagem de saída.
+  - **MAILBOXRULE**: contém o valor **internal_message_id** da mensagem de entrada que fez com que a regra de caixa de entrada gerasse a mensagem de saída.
 
-   Para outros tipos de eventos, esse campo geralmente está em branco.
+    Para outros tipos de eventos, esse campo geralmente está em branco.
 
 - **return_path**: o endereço de email de retorno especificado pelo comando **mail from** que enviou a mensagem. Embora esse campo nunca fique vazio, ele pode ter o valor de endereço de remetente nulo `<>`representado como.
 
 - **message_info**: informações adicionais sobre a mensagem. Por exemplo:
 
-   - A data/hora de origem da mensagem em UTC `DELIVER` para `SEND` e eventos. A data/hora da origem é a hora em que a mensagem entrou pela primeira vez na organização do Exchange Online. O UTC data-hora é representado no formato de data e hora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, onde `yyyy` = ano, `mm` = mês, `dd` = dia, `T` indica o início do componente de tempo, `hh` = hora, `mm` = minuto, `ss` = segundo, `fff` = frações de segundo e `Z` significa `Zulu`, que é outra maneira de indicar o UTC.
+  - A data/hora de origem da mensagem em UTC `DELIVER` para `SEND` e eventos. A data/hora da origem é a hora em que a mensagem entrou pela primeira vez na organização do Exchange Online. O UTC data-hora é representado no formato de data e hora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, onde `yyyy` = ano, `mm` = mês, `dd` = dia, `T` indica o início do componente de tempo, `hh` = hora, `mm` = minuto, `ss` = segundo, `fff` = frações de segundo e `Z` significa `Zulu`, que é outra maneira de indicar o UTC.
 
-   - Erros de autenticação. Por exemplo, você pode ver o valor `11a` e o tipo de autenticação que foi usado quando ocorreu o erro de autenticação.
+  - Erros de autenticação. Por exemplo, você pode ver o valor `11a` e o tipo de autenticação que foi usado quando ocorreu o erro de autenticação.
 
 - **tenant_id**: um valor de GUID que representa a organização do Exchange Online (por `39238e87-b5ab-4ef6-a559-af54c6b07b42`exemplo,).
 
