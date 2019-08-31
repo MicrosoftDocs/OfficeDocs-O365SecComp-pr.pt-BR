@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Os rótulos de retenção no Office 365 podem ajudar você a tomar as ações certas sobre o conteúdo correto. Com os rótulos de retenção, você pode classificar dados em toda a sua organização para prover governança e impor regras de retenção baseadas nessa classificação. Também é possível usar rótulos de retenção para implementar o gerenciamento de registros no Office 365.
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772158"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676651"
 ---
 # <a name="overview-of-retention-labels"></a>Visão geral de rótulos de retenção
 
@@ -163,7 +163,7 @@ Além disso, um rótulo de retenção tem duas opções de retenção, disponív
   
 - Disparar uma revisão de disposição ao final do período de retenção, de modo que os documentos do SharePoint e do OneDrive sejam revisados antes de serem excluídos. Para saber mais, confira [Visão geral das revisões de disposição](disposition-reviews.md).
     
-- Iniciar o período de retenção a partir do momento de aplicação do rótulo no conteúdo, em vez da idade do conteúdo ou da última modificação.
+- Iniciar o período de retenção a partir do momento de aplicação do rótulo no conteúdo, em vez da idade do conteúdo ou da última modificação. Observe que essa opção se aplica somente ao conteúdo de sites do SharePoint e às contas do OneDrive. Para um mail do Exchange, o período de retenção sempre é baseado na data em que a mensagem foi enviada ou recebida, independentemente da opção que você escolher aqui.
     
 ![Configurações de retenção com opções específicas aos rótulos](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
