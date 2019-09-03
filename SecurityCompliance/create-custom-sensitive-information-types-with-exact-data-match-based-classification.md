@@ -25,8 +25,7 @@ ms.locfileid: "36478190"
 
 ## <a name="overview"></a>Visão Geral
 
-
-  [Tipos personalizados de informações confidenciais](https://docs.microsoft.com/pt-BR/office365/securitycompliance/custom-sensitive-info-types)  são usados para ajudar a prevenir o compartilhamento acidental ou inadequado de informações confidenciais. Como administrador, você pode usar o [Centro de Conformidade e Segurança](https://docs.microsoft.com/pt-BR/office365/securitycompliance/create-a-custom-sensitive-information-type) ou [PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) para definir um tipo personalizado de informação baseado em padrões, evidências (palavras-chave como *funcionário*, *crachá*, *ID* e assim por diante), proximidade de caractere (quão próxima a evidência está dos caracteres em um padrão específico) e níveis de confiança. Esses tipos personalizados de informações confidenciais atendem às necessidades comerciais de várias organizações.
+[Tipos personalizados de informações confidenciais](https://docs.microsoft.com/pt-BR/office365/securitycompliance/custom-sensitive-info-types)  são usados para ajudar a prevenir o compartilhamento acidental ou inadequado de informações confidenciais. Como administrador, você pode usar o [Centro de Conformidade e Segurança](https://docs.microsoft.com/pt-BR/office365/securitycompliance/create-a-custom-sensitive-information-type) ou [PowerShell](https://docs.microsoft.com/pt-BR/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) para definir um tipo personalizado de informação baseado em padrões, evidências (palavras-chave como *funcionário*, *crachá*, *ID* e assim por diante), proximidade de caractere (quão próxima a evidência está dos caracteres em um padrão específico) e níveis de confiança. Esses tipos personalizados de informações confidenciais atendem às necessidades comerciais de várias organizações.
 
 Mas e se você quiser um tipo personalizado de informações confidenciais que usa valores de dados exatos, em vez de corresponder apenas a padrões genéricos? Com a classificação baseada em Exact Data Match (EDM), você pode criar um tipo personalizado de informações confidenciais que é criada para:
 
@@ -187,8 +186,7 @@ Você será solicitado a confirmar da seguinte maneira:
 
 Ao configurar o seu pacote de regras, certifique-se de referenciar corretamente o arquivo .csv e o arquivo edm.xml. Você pode copiar, modificar e usar nosso exemplo. Neste exemplo de xml, os seguintes campos precisam ser personalizados para criar seu tipo confidencial do EDM:
 
-- 
-  **RulePack id e ExactMatch id**: use [New-GUID](https://docs.microsoft.com/pt-BR/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) para gerar um GUID.
+- **RulePack id e ExactMatch id**: use [New-GUID](https://docs.microsoft.com/pt-BR/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) para gerar um GUID.
 
 - **Datastore**: este campo especifica o repositório de dados de pesquisa EDM a ser usado. Forneça um nome de fonte de dados de um esquema EDM configurado.
 
@@ -482,19 +480,15 @@ Os tipos de informações confidenciais do EDM para os cenários a seguir estão
 
 ## <a name="related-articles"></a>Artigos relacionados
 
+[Tipos de informações confidenciais integradas e o que procuram](https://docs.microsoft.com/pt-BR/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [Tipos de informações confidenciais integradas e o que procuram](https://docs.microsoft.com/pt-BR/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[Tipos personalizados de informações confidenciais](https://docs.microsoft.com/pt-BR/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [Tipos personalizados de informações confidenciais](https://docs.microsoft.com/pt-BR/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [Visão geral das políticas DLP](https://docs.microsoft.com/pt-BR/office365/securitycompliance/data-loss-prevention-policies)
+[Visão geral das políticas DLP](https://docs.microsoft.com/pt-BR/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/pt-BR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/pt-BR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 Os comentários do GitHub estão habilitados, mas não é possível adicionar problemas no site público.

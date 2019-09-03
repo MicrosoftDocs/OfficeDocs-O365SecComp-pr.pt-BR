@@ -47,14 +47,13 @@ O Azure RMS também é ativado automaticamente para a maioria dos planos qualifi
 Para saber mais, veja:
 
 - [Quais assinaturas eu preciso para usar os novos recursos do OME? ](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) para verificar se o seu plano de assinatura inclui a proteção de informações do Azure (que inclui a funcionalidade do Azure RMS).
-- [Proteção de Informações do Azure](https://azure.microsoft.com/en-us/services/information-protection/) para saber mais sobre como adquirir uma assinatura qualificada.  
+- [Proteção de Informações do Azure](https://azure.microsoft.com/pt-BR/services/information-protection/) para saber mais sobre como adquirir uma assinatura qualificada.  
 
 ### <a name="manually-activating-azure-rights-management"></a>Ativar manualmente o Gerenciamento de Direitos do Azure
 
 Se você tiver desabilitado o Azure RMS, ou se ele não tiver sido ativado automaticamente por algum motivo, você poderá ativá-lo manualmente no:
 
-- 
-  **Centro de administração do Microsoft 365** Confira [: Como ativar o Azure Rights Management no centro de administração](https://docs.microsoft.com/pt-BR/azure/information-protection/activate-office365) para obter instruções.
+- **Centro de administração do Microsoft 365** Confira [: Como ativar o Azure Rights Management no centro de administração](https://docs.microsoft.com/pt-BR/azure/information-protection/activate-office365) para obter instruções.
 - **Portal do Azure**: [Confira como ativar o Azure Rights Management no portal do Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) para obter instruções.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar o gerenciamento de sua chave do locatário de proteção de informações do Azure
@@ -67,8 +66,7 @@ Há muitos motivos, por exemplo, os requisitos de conformidade, que podem exigir
 
 Você pode verificar se o locatário do Office 365 está configurado corretamente para usar os novos recursos do Ome[no PowerShell do Exchange Online](https://docs.microsoft.com/pt-BR/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-1. 
-  [Conecte-se ao Exchange Online do PowerShell](https://docs.microsoft.com/pt-BR/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando uma conta com permissões de administrador global em seu locatário do Office 365.
+1. [Conecte-se ao Exchange Online do PowerShell](https://docs.microsoft.com/pt-BR/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando uma conta com permissões de administrador global em seu locatário do Office 365.
 
 2. Execute o cmdlet Get-IRMConfiguration.
 

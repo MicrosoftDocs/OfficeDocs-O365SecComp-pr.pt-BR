@@ -43,8 +43,7 @@ No cabeçalho, procure os cabeçalhos e os valores a seguir.
     
 - **SFV:SKB** Indica que a mensagem foi marcada como spam porque correspondeu a uma lista de bloqueios na política de filtro de spam. 
     
-- 
-  **SFV:Bulk** Indica que o valor do Nível de Reclamação em Massa (BCL) localizado no cabeçalho x-microsoft-antispam está acima do limite de massa que foi definido para o filtro de conteúdo. Emails em massa são emails que os usuários podem ter se inscrito para receber, mas ainda assim podem ser indesejados. No cabeçalho da mensagem, localize a propriedade BCL (Nível de Confiança em Massa) no cabeçalho X-Microsoft-Antispam. Se o valor de BCL for menor que o limite definido no filtro de spam, ajuste o limite para marcar esses tipos de mensagens em massa como spam. Usuários diferentes têm tolerâncias e preferências diferentes para [como o email em massa é tratado](https://docs.microsoft.com/pt-BR/office365/SecurityCompliance/bulk-complaint-level-values). Você pode criar regras ou políticas diferentes para atender a diferentes preferências do usuário.
+- **SFV:Bulk** Indica que o valor do Nível de Reclamação em Massa (BCL) localizado no cabeçalho x-microsoft-antispam está acima do limite de massa que foi definido para o filtro de conteúdo. Emails em massa são emails que os usuários podem ter se inscrito para receber, mas ainda assim podem ser indesejados. No cabeçalho da mensagem, localize a propriedade BCL (Nível de Confiança em Massa) no cabeçalho X-Microsoft-Antispam. Se o valor de BCL for menor que o limite definido no filtro de spam, ajuste o limite para marcar esses tipos de mensagens em massa como spam. Usuários diferentes têm tolerâncias e preferências diferentes para [como o email em massa é tratado](https://docs.microsoft.com/pt-BR/office365/SecurityCompliance/bulk-complaint-level-values). Você pode criar regras ou políticas diferentes para atender a diferentes preferências do usuário.
     
 - **CAT:SPOOF** ou **CAT:PHISH** Indica que a mensagem parece ser falsa, ou seja, a fonte da mensagem não pode ser validada e pode ser suspeita. Se for válida, o remetente precisará garantir que ele tenha a configuração correta de DKIM e SPF. Verifique o cabeçalho Authentication-Results para obter mais informações. Embora possa ser difícil fazer todos os remetentes usarem métodos adequados de autenticação de email, ignorar essas verificações podem ser muito perigoso e é a principal causa de comprometimentos. 
     
@@ -64,8 +63,7 @@ Para trabalhar com eficiência, a Proteção do Exchange Online (EOP) exige que 
 
 - **Use [o Explorador de envios](admin-submission.md)** Agora os administradores podem enviar emails usando a ID da mensagem de arquivo ou rede, URLs e arquivos para verificação pela Microsoft no Office 365. Como administrador, você também pode visualizar o comentário que seus usuários estão enviando e usar qualquer padrão para ajustar as configurações que podem causar problemas.
 
-- 
-  **Verifique se os usuários estão dentro dos limites permitidos** para enviar e receber emails como mostrou [aqui](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+- **Verifique se os usuários estão dentro dos limites permitidos** para enviar e receber emails como mostrou [aqui](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
  - **Verifique os níveis em massa** conforme especificado [aqui](bulk-complaint-level-values.md)
     
@@ -83,7 +81,7 @@ O EOP aceita os Remetentes e destinatários confiáveis dos seus usuários, mas 
 
 Se os usuários tem o Outlook habilitado para “Somente listas seguras: Somente emails de pessoas ou domínios na sua lista de Remetentes e destinatários confiáveis serão entregues na sua caixa de entrada”, todos os outros emails irão para a pasta de lixo eletrônico. Isso acontecerá independentemente do EOP marcar a mensagem como não spam, ou de você ter configurado uma regra no EOP para marcar uma mensagem como não spam.
   
-Você pode desabilitar a opção Apenas Listas de Confiança para seus usuários do Outlook seguindo as instruções em [Outlook: política de configuração para desabilitar a UI do lixo eletrônico e do mecanismo de filtragem](https://support.microsoft.com/en-us/kb/2180568).
+Você pode desabilitar a opção Apenas Listas de Confiança para seus usuários do Outlook seguindo as instruções em [Outlook: política de configuração para desabilitar a UI do lixo eletrônico e do mecanismo de filtragem](https://support.microsoft.com/pt-BR/kb/2180568).
   
 Se você visualizar a mensagem no Outlook na Web, existirá um aviso de segurança em amarelo indicando que a mensagem está na pasta Lixo eletrônico porque o remetente não está na lista de remetentes confiáveis do destinatário.
   

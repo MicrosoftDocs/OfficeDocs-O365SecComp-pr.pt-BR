@@ -81,22 +81,17 @@ Existem soluções disponíveis, com quais é possível inscrever-se nos logs de
 
 Clique nos links abaixo para saber mais sobre as políticas de alerta e como pesquisar no log de auditoria.
 
--   
-  [Políticas de alerta nos centros de conformidade e segurança do Microsoft Office 365](https://support.office.com/pt-BR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Políticas de alerta nos centros de conformidade e segurança do Microsoft Office 365](https://support.office.com/pt-BR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   
-  [Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365](https://support.office.com/pt-BR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introdução)
+-   [Pesquisar as atividades do administrador e dos usuários no log de auditoria do Office 365](https://support.office.com/pt-BR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introdução)
 
--   
-  [Ativar e desativar a Pesquisa de log de auditoria do Office 365](https://support.office.com/pt-BR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Ativar e desativar a Pesquisa de log de auditoria do Office 365](https://support.office.com/pt-BR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   
-  [Pesquisas o log de auditoria](https://support.office.com/pt-BR/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Pesquisas o log de auditoria](https://support.office.com/pt-BR/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
--   
-  [Propriedades detalhadas no log de auditoria do Office 365](https://support.office.com/pt-BR/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Propriedades detalhadas no log de auditoria do Office 365](https://support.office.com/pt-BR/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -130,13 +125,11 @@ Observação: não deixe de habilitar a opção "Examinar automaticamente os arq
 
 Mais informações:
 
--   
-  [Implantar o Cloud App Security](https://docs.microsoft.com/pt-BR/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Implantar o Cloud App Security](https://docs.microsoft.com/pt-BR/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Mais informações sobre o Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
+-   [Mais informações sobre o Microsoft Cloud App Security](https://www.microsoft.com/pt-BR/cloud-platform/cloud-app-security)
 
--   
-  [Bloqueando downloads de informações confidenciais usando o proxy do Microsoft Cloud App Security](https://docs.microsoft.com/pt-BR/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Bloqueando downloads de informações confidenciais usando o proxy do Microsoft Cloud App Security](https://docs.microsoft.com/pt-BR/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Políticas de atividade e arquivo de exemplo para detectar o compartilhamento de dados pessoais
 

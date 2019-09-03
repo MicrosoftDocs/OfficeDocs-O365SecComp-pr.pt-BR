@@ -248,11 +248,9 @@ A ilustração apresenta os níveis de permissão, desde Controle total a Soment
 
 Mais informações:
 
--   
-  [Compreender os níveis de permissão no SharePoint](https://support.office.com/pt-BR/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Compreender os níveis de permissão no SharePoint](https://support.office.com/pt-BR/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   
-  [Compreender os grupos do SharePoint](https://support.office.com/pt-BR/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Compreender os grupos do SharePoint](https://support.office.com/pt-BR/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Políticas de compartilhamento externo para bibliotecas do SharePoint e OneDrive for Business
 
@@ -302,11 +300,9 @@ A tabela a seguir resume os controles que você pode configurar.
 
 Mais informações:
 
--   
-  [Gerenciar compartilhamento externo para o ambiente do SharePoint Online](https://support.office.com/pt-BR/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gerenciar compartilhamento externo para o ambiente do SharePoint Online](https://support.office.com/pt-BR/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   
-  [Compartilhar sites ou documentos com pessoas de fora da organização](https://support.office.com/pt-BR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Compartilhar sites ou documentos com pessoas de fora da organização](https://support.office.com/pt-BR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Políticas de acesso de dispositivo no nível do site
 

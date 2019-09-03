@@ -98,10 +98,8 @@ Para acessar os recursos de ATP no Centro de Segurança e Conformidade, você de
 |Função ou grupo de funções  |Recursos para saber mais  |
 |---------|---------|
 |Administrador Global do Office 365 |[Sobre as funções de administrador do Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrador de Segurança |
-  [Permissões da função de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gerenciamento de Organização do Exchange Online |
-  [Permissões no Exchange Online](https://docs.microsoft.com/pt-BR/exchange/permissions-exo/permissions-exo) <br>e<br> [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Administrador de Segurança |[Permissões da função de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Gerenciamento de Organização do Exchange Online |[Permissões no Exchange Online](https://docs.microsoft.com/pt-BR/exchange/permissions-exo/permissions-exo) <br>e<br> [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Para saber mais, confira:
 
