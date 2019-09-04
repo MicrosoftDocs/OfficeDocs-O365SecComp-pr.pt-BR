@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurar políticas de links seguros para proteger sua organização contra links mal-intencionados nos arquivos do Word, Excel, PowerPoint e Visio, bem como em mensagens de email.
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230335"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717631"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar políticas de links seguros de ATP do Office 365
 
@@ -101,7 +101,7 @@ Depois de revisar (ou editar) a política de links seguros padrão ATP que se ap
     
   - Selecione **aplicar links seguros a mensagens enviadas dentro da organização** se quiser habilitar links seguros para mensagens enviadas entre usuários dentro da sua organização (recomendado).
     
-  - Selecione não **permitir que o usuário clique na URL original**.
+  - Selecione não **permitir que o usuário clique na URL original** se você não quiser que os usuários individuais substituam uma *verificação nas páginas de notificação de andamento ou de* *URL bloqueadas* .
     
   - (Isso é opcional) Na seção não **reescrever as seguintes URLs** , especifique uma ou mais URLs consideradas seguras para sua organização. (Consulte [Configurar uma lista de URLs "não reconfigurar" personalizada usando os links seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
     
