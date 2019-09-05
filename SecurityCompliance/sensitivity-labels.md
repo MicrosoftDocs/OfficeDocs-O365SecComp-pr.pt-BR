@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Com os rótulos de confidencialidade, você pode classificar e ajudar a proteger seu conteúdo confidencial, garantindo ao mesmo tempo que a produtividade e a capacidade de colaboração de seu pessoal não sejam prejudicadas. Você pode usar rótulos de confidencialidade para impor configurações de proteção, como criptografia ou marcas d'água em conteúdo rotulado.
-ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: ce05fe8062cb0f651edc74101b11877c091eb6fb
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675452"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717701"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Visão geral de rótulos de confidencialidade
 
@@ -68,7 +68,7 @@ Cada item de conteúdo pode ter um único rótulo de confidencialidade aplicado 
 
 Depois que um rótulo de confidencialidade é aplicado a um email ou documento, as configurações de proteção desse rótulo são aplicadas no conteúdo. Com um rótulo de confidencialidade, você pode:
 
-- **Criptografar** apenas o email ou o email e documentos. Você pode escolher quais usuários ou qual grupo têm permissões para executar as ações e por quanto tempo. Por exemplo, você pode optar por permitir que os usuários em um domínio específico fora da sua organização tenham permissões para examinar o conteúdo por apenas 7 dias após ele ser rotulado. Para saber mais, confira [Restringir o acesso ao conteúdo usando criptografia em rótulos de confidencialidade](encryption-sensitivity-labels.md).
+- **Criptografar** apenas o email ou tanto o email quanto os documentos. Você pode escolher quais usuários ou qual grupo têm permissões para executar quais ações e por quanto tempo. Por exemplo, você pode optar por permitir que os usuários em um domínio específico fora da sua organização tenham permissões para examinar o conteúdo por apenas 7 dias após ele ser rotulado. Para saber mais, confira [Restringir o acesso ao conteúdo usando criptografia em rótulos de confidencialidade](encryption-sensitivity-labels.md).
 
 - **Marcar o conteúdo** adicionando marcas-d'água, cabeçalhos ou rodapés personalizados a emails ou documentos com rótulos aplicados. As marcas-d'água são aplicadas apenas a documentos, não a emails, e são limitadas a 255 caracteres. Além disso, os cabeçalhos e rodapés também são limitados a 1.024 caracteres, exceto no Excel, onde são limitados a 255 caracteres ou menos, dependendo se o documento contém outros cabeçalhos ou rodapés e de outros fatores.
 

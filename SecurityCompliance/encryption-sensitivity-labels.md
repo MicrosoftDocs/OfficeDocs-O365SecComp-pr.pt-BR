@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando você cria um rótulo de confidencialidade, pode restringir o acesso ao conteúdo ao qual o rótulo será aplicado. Rótulos de confidencialidade podem usar criptografia para proteger o conteúdo.
-ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: a30f5d6168ea8118ef6b30ff26a429857affaa4a
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199752"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717641"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir o acesso ao conteúdo usando criptografia nos rótulos de confidencialidade
 
@@ -35,7 +35,12 @@ Quando um documento ou email é criptografado, o acesso ao conteúdo é restrito
 - Permaneça criptografado independentemente de onde esteja, dentro ou fora da sua organização, mesmo se o arquivo for renomeado.
 - Fique criptografado tanto em repouso (por exemplo, em uma conta do OneDrive) quanto em trânsito (por exemplo, um email enviado).
 
-As configurações de criptografia estão disponíveis quando você cria um rótulo de confidencialidade no centro de conformidade do Microsoft 365, centro de segurança do Microsoft 365 ou Centro de Conformidade e Segurança do Office 365.
+Por fim, como administrador, quando você cria um rótulo de sensibilidade, há duas opções a escolher:
+
+- **Atribuir permissões agora**, para que assim você possa determinar exatamente quais usuários podem obter quais permissões de conteúdo com esse rótulo.
+- **Permitir que os usuários atribuam permissões** quando aplicam o rótulo ao conteúdo. Dessa forma, você pode conceder a pessoas em sua organização uma certa flexibilidade que elas possam precisar para colaborar e realizar o trabalho.
+
+As configurações de criptografia estão disponíveis quando você cria um rótulo de confidencialidade no centro de conformidade do Microsoft 365, centro de segurança do Microsoft 365 ou Centro de Conformidade e Segurança do Office 365. Na barra de navegação à esquerda, escolha **Classificação** > ** Rótulo de sensibilidade** > **Criar um rótulo**.
 
 ## <a name="how-encryption-works"></a>Como funciona a criptografia
 
@@ -43,13 +48,26 @@ A criptografia usa o Azure Rights Management (Azure RMS). O Azure RMS usa identi
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Como ativar a criptografia para um rótulo de confidencialidade
 
-Para começar, basta colocar **Criptografia** no estado **Ativado** e depois usar as opções abaixo para controlar quem pode acessar emails ou documentos aos quais o rótulo é aplicado. Você pode:
+Para começar, basta no botão de alternância em**Criptografia**optar por**Ativar**, em seguida, escolha entre:
+
+- **Atribuir permissões agora**, para assim determinar exatamente quais usuários podem obter quais permissões de conteúdo com esse rótulo. Para mais informações, consulte a próxima seção[Atribuir permissões agora](#assign-permissions-now).
+- **Permitir que os usuários atribuam permissões** quando aplicam o rótulo ao conteúdo. Dessa forma, você pode conceder a pessoas em sua organização uma certa flexibilidade que elas possam precisar para colaborar e realizar o trabalho. Para mais informações, consulte a seção abaixo[ Permitir que usuários atribuam permissões](#let-users-assign-permissions).
+
+Por exemplo, se você tiver um rótulo de sensibilidade denominado **Altamente Confidencial** que seria aplicado ao seu conteúdo mais confidencial, talvez você queira decidir agora quem recebe o tipo de permissão para esse conteúdo.
+
+Como alternativa, se você tiver um rótulo de sensibilidade chamado **Contratos de Negócios**, e o fluxo de trabalho da sua organização exigir que as pessoas colaborem com outras pessoas de forma ad hoc, talvez você queira permitir que seus os usuários decidam quem receberá permissões quando atribui o rótulo. Essa flexibilidade auxilia não só a produtividade dos usuários como também reduz as solicitações dos seus administradores de atualizar ou criar novos rótulos de sensibilidade para cenários específicos.
+
+![Opção para adicionar permissões definidas por usuários ou administradores](media/sensitivity-label-user-or-admin-defined-permissions.png)
+
+## <a name="assign-permissions-now"></a>Atribuir permissões agora
+
+Use as opções abaixo para controlar quem pode acessar os emails e documentos aos quais aquele rótulo foi aplicado. Você pode:
 
 1. **Aplicar criptografia em emails e documentos, ou apenas em emails. ** Se quiser aplicar somente aos emails, as mensagens com esse rótulo serão criptografadas no Outlook, mas os documentos com este rótulo não serão criptografados em outros aplicativos, como Word ou PowerPoint. 
 2. **Permitir que o acesso ao conteúdo rotulado expire**, em uma data específica ou depois de um número específico de dias após o rótulo ser aplicado. Após este período, os usuários não poderão abrir o item rotulado. Se você especificar uma data, isso será válido a partir da meia-noite da data em questão em seu fuso horário atual. (Observe que alguns clientes de email podem não impor expiração e exibir emails após a data de vencimento, devido a seus mecanismos de cache.)
 3. **Permitir o acesso offline** nunca, sempre ou por um número específico de dias após o rótulo ser aplicado. Se você restringir o acesso offline para nunca ou por um número de dias, quando este limite for atingido, os usuários precisarão ser autenticados novamente e seu acesso será registrado. Para saber mais, confira a próxima seção na licença de uso de Gerenciamento de Direitos.
 
-![Configurações de criptografia do rótulo de confidencialidade](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
+![Configurações de permissões de administrador definidas](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licença de uso de Gerenciamento de Direitos para acesso offline
 
@@ -61,7 +79,7 @@ Além da nova autenticação, a política e a associação do grupo de usuários
 
 Para saber como alterar a configuração padrão de 30 dias, confira [Licença de uso de Gerenciamento de Direitos](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-usage-rights#rights-management-use-license)..
 
-## <a name="assign-permissions-to-specific-users-or-groups"></a>Atribuir permissões a usuários ou grupos específicos
+### <a name="assign-permissions-to-specific-users-or-groups"></a>Atribuir permissões a usuários ou grupos específicos
 
 Você pode conceder permissões para pessoas específicas para que somente elas possam interagir com o conteúdo rotulado.
 
@@ -72,7 +90,7 @@ Este é um processo de duas etapas simples:
 
 ![Opções para atribuir permissões para usuários](media/Sensitivity-Assign-permissions-settings.png)
 
-### <a name="add-users-or-groups"></a>Adicionar usuários ou grupos
+#### <a name="add-users-or-groups"></a>Adicionar usuários ou grupos
 
 Quando você atribui permissões, pode escolher:
 
@@ -84,7 +102,7 @@ Quando você escolhe todos os membros locatários e pesquisa o diretório, os us
 
 Como prática recomendada, use grupos em vez de usuários. Essa estratégia mantém a configuração mais simples.
 
-### <a name="choose-permissions"></a>Escolher permissões
+#### <a name="choose-permissions"></a>Escolher permissões
 
 Quando você escolhe quais permissões atribuir para os usuários ou grupos, você pode selecionar:
 
@@ -101,7 +119,7 @@ Para fazer isso, adicione usuários ou grupos, atribua-lhes permissões e salve 
 
 ![Usuários diferentes com permissões diferentes](media/Sensitivity-Multiple-users-permissions.png)
 
-### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>O emissor do Gerenciamento de Direitos (usuário que aplica o rótulo de confidencialidade) sempre tem o Controle Total
+#### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>O emissor do Gerenciamento de Direitos (usuário que aplica o rótulo de confidencialidade) sempre tem o Controle Total
 
 A criptografia de um rótulo de confidencialidade usa Azure RMS. Quando um usuário aplica um rótulo de confidencialidade para proteger um documento ou email usando o Azure RMS, esse usuário se torna o emissor do Gerenciamento de Direitos daquele conteúdo.
 
@@ -113,6 +131,48 @@ O emissor do Gerenciamento de Direitos sempre recebe as permissões de Controle 
 
 Para saber mais, confira [Emissor do Gerenciamento de Direitos e Proprietário do Gerenciamento de Direitos](https://docs.microsoft.com/pt-BR/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
+## <a name="let-users-assign-permissions"></a>Permitir que usuários atribuam permissões
+
+Você pode usar essas opções para permitir que os usuários atribuam permissões quando os mesmos aplicarem manualmente um rótulo de sensibilidade ao conteúdo:
+
+- No Outlook, um usuário pode aplicar restrições equivalente à opção**Não encaminhar**. Essa opção é compatível nativamente com o Outlook no Windows e não exige que você instale o cliente de rotulagem de Proteção de informações do Azure.
+- No Word, no PowerPoint e no Excel, um usuário deve selecionar um nível de permissão para usuários, grupos ou organizações específicos. Essa opção não é compatível nativamente com esses aplicativos e portanto exige que você instale o cliente de rotulagem de Proteção de informações do Azure.
+
+Essas opções determinam em quais aplicativos o rótulo de sensibilidade será exibido:
+
+- Se o rótulo de sensibilidade tiver apenas a opção Outlook habilitada, o rótulo aparecerá para os usuários somente no Outlook.
+- Se o rótulo de sensibilidade tiver apenas a opção Word, PowerPoint e Excel habilitada, o rótulo aparecerá para os usuários somente nesses aplicativos.
+- Se o rótulo de sensibilidade tiver ambas as opções habilitadas, o rótulo aparecerá para os usuários em todos os aplicativos disponíveis: Outlook, Word, PowerPoint e Excel.
+
+Um rótulo de sensibilidade que permite aos usuários atribuir permissões a conteúdo só poderá ser aplicado manualmente por usuários. Tal rótulo não pode ser aplicado automaticamente ou usado como um rótulo recomendado.
+
+> [!NOTE]
+> Permitir que os usuários atribuam permissões exige uma assinatura de Proteção de informações do Azure. Para usar esse recurso no Word, PowerPoint e Excel, você deve baixar e instalar o [cliente de rotulagem de Proteção de informações do Azure](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Estamos trabalhando na combatibilidade nativa desse recurso nestes aplicativos do Office, para que eles não exijam a instalação do cliente de Proteção de informações do Azure. Além disso, o cliente só é executado no Windows, portanto esse recurso ainda não é compatível com Mac, iOS, Android ou com o Office para a Web.
+
+![Configurações de criptografia para permissões definidas pelo usuário](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+
+### <a name="outlook-restrictions"></a>Restrições do Outlook
+
+No Outlook, quando um usuário aplica um rótulo de sensibilidade que permite atribuir permissões a uma mensagem, as restrições são as mesmas da opção Não Encaminhar. O usuário verá o nome e a descrição do rótulo na parte superior da mensagem, o que indica que o conteúdo é protegido. Diferentemente do Word, do PowerPoint e do Excel (confira a [ próxima seção](#word-powerpoint-and-excel-permissions)), os usuários não são solicitados a selecionar permissões específicas.
+
+![Rótulo de confidencialidade aplicado a uma mensagem no Outlook](media/sensitivity-label-outlook-protection-applied.png)
+
+Quando a opção Não Encaminhar for aplicada a um email, tal email será criptografado e os destinatários deverão ser autenticados. Subsequentemente, os destinatários não podem encaminhar, imprimir ou copiar esse email. Por exemplo, no cliente do Outlook, o botão Encaminhar não está disponível, as opções do menu Salvar Como e Imprimir não estão disponíveis, e você não pode adicionar ou alterar destinatários nas caixas Para, CC ou Cco.
+
+Os documentos do Office desprotegidos que são anexados ao email herdam automaticamente as mesmas restrições. Os direitos de uso aplicados a esses documentos são Editar Conteúdo, Editar; Salvar, Exibir, Abrir, Ler; e Permitir Macros. Se o usuário quiser direitos de uso diferentes para um anexo, ou se o anexo não for um documento do Office compatível com essa proteção herdada, o usuário precisará proteger o arquivo antes de anexá-lo ao email.
+
+### <a name="word-powerpoint-and-excel-permissions"></a>Permissões do Word, do PowerPoint e do Excel
+
+No Word, no PowerPoint e no Excel, quando um usuário aplica um rótulo de sensibilidade que permite atribuir permissões a um documento, eles são solicitados a proteger o conteúdo conforme mostrado a seguir.
+
+O usuário pode:
+
+- Selecionar um nível de permissão, como o Visualizador (que atribui permissão Somente para Exibição) ou Coautor (que atribui permissões de Exibição, Edição, Cópia e Impressão).
+- Selecione usuários, grupos ou organizações. Isso pode incluir pessoas tanto de dentro quanto de fora de sua organização.
+- Defina uma data de vencimento, após a qual os usuários selecionados não poderão acessar o conteúdo. Para saber mais, confira a seção acima [Licença de uso do Gerenciamento de Direitos para acesso online](#rights-management-use-license-for-offline-access).
+
+![Opções para o usuário proteger com permissões personalizadas](media/sensitivity-aip-custom-permissions-dialog.png)
+
 ## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>O que acontece com a criptografia existente quando um rótulo é aplicado
 
 Antes de um rótulo de sensibilidade for aplicado ao conteúdo, é possível que um usuário já tenha criptografado o conteúdo ao aplicar outras configurações de proteção. Por exemplo, um usuário pode ter aplicado:
@@ -121,7 +181,7 @@ Antes de um rótulo de sensibilidade for aplicado ao conteúdo, é possível que
 - Proteção personalizada usando a rotulagem de cliente unificado da Proteção de informações do Azure.
 - Um modelo de Serviço de Gerenciamento de Direitos (RMS) do Azure que criptografa o conteúdo, mas não está associado um rótulo.
 
-Esta tabela descreve o que acontece com a criptografia existente quando um rótulo de sensibilidade é aplicado ao conteúdo.
+Esta tabela descreve o que acontece com uma criptografia preexistente quando um rótulo de sensibilidade é aplicado ao conteúdo.
 <br/>
 <br/>
 

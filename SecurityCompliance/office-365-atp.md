@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: A Proteção Avançada contra Ameaças do Office 365 inclui anexos seguros, links seguros, ferramentas antiphishing avançadas, ferramentas de relatório e recursos de inteligência de ameaças.
-ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d9dda9b19f601e26d01a18f7602f4fae3e0a0cb4
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231085"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761717"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Proteção Avançada contra Ameaças do Office 365
 
@@ -87,7 +87,7 @@ O Office 365 ATP Plano 2 inclui uma melhor investigação de [ameaças e ferrame
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>Poupe tempo com investigação e resposta automatizadas
 
-(**NOVO!**) Quando você estiver investigando um ataque cibernético potencial, o tempo é essencial. Quanto mais cedo você puder identificar e reduzir as ameaças, melhor será a sua organização. O Office 365 ATP Plano 2 agora inclui [os recursos de investigação e resposta automatizadas (AIR).](automated-investigation-response-office.md) (Se você ainda não tiver esses recursos, eles estarão disponíveis em breve com a ATP Plano 2.)
+(**NOVO!**) Ao investigar um ataque cibernético potencial, o tempo é essencial. Quanto mais cedo você puder identificar e reduzir as ameaças, melhor será sua organização. O Office 365 ATP Plano 2 agora inclui [os recursos de investigação e resposta automatizadas (AIR).](automated-investigation-response-office.md) (Se você ainda não tiver esses recursos, eles estarão disponíveis em breve com a ATP Plano 2.)
 
 A AIR inclui um conjunto de guias de segurança que podem ser iniciados automaticamente, como quando um alerta é acionado, ou manualmente, como em um modo de exibição no Explorador. A AIR pode economizar o tempo e o esforço da equipe de operações de segurança para reduzir as ameaças de maneira eficaz e eficiente. Para saber mais, confira [Introdução à Investigação e Resposta Automatizadas (AIR) do Office 365](automated-investigation-response-office.md).
 
