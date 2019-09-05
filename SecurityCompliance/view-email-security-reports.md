@@ -1,9 +1,9 @@
 ---
 title: Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
-ms.author: chrfox
-author: chrfox
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Saiba como localizar e usar relatórios de segurança de email da sua organização. Relatórios de segurança de email estão disponíveis no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 90b4ab2c9fafc5c882791a5471e7e5a24f5ae4bd
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230415"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761707"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Exibir relatórios de segurança de email no &amp; centro de conformidade de segurança
 
@@ -132,7 +132,7 @@ Abaixo do gráfico, você verá quem os principais remetentes ou destinatários 
 
 O relatório de **detecções falsas** mostra quantas mensagens de email de falsificação foram detectadas, e dessas, quais foram consideradas "boas" (emails falsos realizados por motivos de negócios legítimos). 
   
-Para exibir esse relatório, no [centro de &amp; conformidade de segurança](https://protection.office.com), vá para **relatório** \> de falsificação de **painel** \> **** de relatórios.
+Para exibir esse relatório, no [centro de &amp; conformidade de segurança](https://protection.office.com), vá para relatório de **falsificação**de **painel** \> de **relatórios** \> .
   
 ![No centro de &amp; conformidade de segurança, vá para \> o \> painel relatórios email de spoof](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -142,7 +142,7 @@ Clique (ou toque) no relatório para abri-lo em uma nova janela do navegador, on
   
 ## <a name="spam-detections-report"></a>Relatório de detecções de spam
 
-O relatório **detecções de spam** mostra todo o conteúdo de spam bloqueado pelo Exchange Online. 
+O relatório **detecções de spam** mostra todo o conteúdo de spam bloqueado pelo Exchange Online. As mensagens são contadas por mensagem e não por destinatário. Por exemplo, se uma mensagem de email foi enviada a 100 destinatários em sua organização, ela será contada como uma mensagem.
   
 Para exibir esse relatório, no [centro de &amp; conformidade de segurança](https://protection.office.com), vá para relatórios de **spam**de **painel** \> de **relatórios** \> .
   
@@ -180,7 +180,7 @@ Para saber mais sobre inteligência de email, consulte [inteligência de fluxo d
   
 ## <a name="user-reported-messages-report"></a>Relatório de mensagens relatadas pelo usuário
 
-O relatório de mensagens relatadas pelo **usuário** mostra informações sobre as mensagens de email que os usuários relataram como lixo eletrônico, tentativas de phishing ou emails de boa qualidade usando o suplemento de [mensagem de relatório](enable-the-report-message-add-in.md).
+O relatório de **mensagens relatadas pelo usuário** mostra informações sobre as mensagens de email que os usuários relataram como lixo eletrônico, tentativas de phishing ou emails de boa qualidade usando o [suplemento de mensagem de relatório](enable-the-report-message-add-in.md).
   
 Os detalhes estão disponíveis para cada mensagem, incluindo o motivo da entrega, como uma exceção de política de spam ou uma regra de fluxo de email configurada para sua organização. Para exibir detalhes, selecione um item na lista relatórios do usuário e, em seguida, exiba as informações nas guias **Resumo** e **detalhes** . 
   

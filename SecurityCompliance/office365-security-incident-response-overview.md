@@ -13,20 +13,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Esta solução informa o que os ataques de segurança da Cyber mais comuns podem parecer no Office 365 e como respondê-los
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Esta solução informa o que os ataques de cybersecurity mais comuns podem parecer no Office 365 e como respondê-los
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157668"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761667"
 ---
 # <a name="office-365-security-incident-response"></a>Resposta a incidentes de segurança do Office 365
 
- **Resumo:** Esta solução informa quais são os indicadores para os ataques mais comuns de segurança da CyberSource no Office 365, como confirmar positivamente qualquer ataque e como respondê-lo.
+ **Resumo:** Esta solução informa quais são os indicadores para os ataques mais comuns do cybersecurity no Office 365, como confirmar positivamente qualquer ataque e como respondê-lo.
   
 ## <a name="overview"></a>Visão geral
-Nem todos os ataques de Cyber podem ser frustrados. Os invasores estão constantemente procurando novas fraquezas em sua estratégia defensiva ou estão explorando os antigos. Saber como reconhecer um ataque permite que você responda com mais rapidez, o que reduz a duração do incidente de segurança.
+Nem todos os cyberattacks podem ser frustrados. Os invasores estão constantemente procurando novas fraquezas em sua estratégia defensiva ou estão explorando os antigos. Saber como reconhecer um ataque permite que você responda com mais rapidez, o que reduz a duração do incidente de segurança.
 
 Esta série de artigos ajuda você a entender o que um tipo específico de ataque pode parecer no Office 365 e oferece etapas que podem ser tomadas para responder. Eles são pontos de entrada rápida para entender:
  

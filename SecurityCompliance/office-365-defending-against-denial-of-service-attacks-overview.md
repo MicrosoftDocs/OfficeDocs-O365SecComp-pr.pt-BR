@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral dos ataques de negação de serviço (DoS).
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622471"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761657"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Defesa contra ataques de negação de serviço no Office 365
 
@@ -34,7 +34,7 @@ A Microsoft fornece uma infraestrutura confiável para mais de 200 serviços em 
 - Skype
 - Xbox Live
 
-Como uma organização global com uma presença de Internet significativa e muitas propriedades proeminentes da Internet que oferecem serviços em nuvem, a Microsoft é um grande alvo comum para hackers e outras pessoas mal-intencionadas. A camada de comunicação de rede entre clientes e a nuvem da Microsoft é um dos maiores alvos de ataques mal-intencionados. Na verdade, a Microsoft está continuamente e persistentemente sob alguma forma de ataque de terceiros baseado em rede. Com isso, a Microsoft usa princípios de segurança de defesa profunda para proteger seus serviços de nuvem e redes. Sem sistemas de mitigação confiáveis e persistentes que defendem contra esses ataques, os serviços em nuvem da Microsoft ficarão offline e indisponíveis para os clientes.
+Como uma organização global com uma presença de Internet significativa e muitas propriedades proeminentes da Internet que oferecem serviços em nuvem, a Microsoft é um grande alvo comum para hackers e outras pessoas mal-intencionadas. A camada de comunicação de rede entre clientes e a nuvem da Microsoft é um dos maiores alvos de ataques mal-intencionados. Na verdade, a Microsoft está continuamente e persistentemente sob alguma forma de cyberattack baseados em rede. Com isso, a Microsoft usa princípios de segurança de defesa profunda para proteger seus serviços de nuvem e redes. Sem sistemas de mitigação confiáveis e persistentes que defendem contra esses ataques, os serviços em nuvem da Microsoft ficarão offline e indisponíveis para os clientes.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Definição e sintomas de ataques de negação de serviço
 
