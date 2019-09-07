@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatizado, investigação, resposta, correção, 
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Comece a usar os recursos de investigação e resposta automatizados no Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762015"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790925"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar automaticamente e responder a ameaças no Office 365
 
@@ -89,6 +89,12 @@ Determinados tipos de alertas disparam investigação automatizada no Office 365
 5. Selecione um item na lista. Um submenu abre, com detalhes sobre o alerta e links para informações adicionais e ações.
 
 6. Revise as informações no submenu e, dependendo do alerta específico, execute uma ação, como **resolver**, **suprimir**ou **notificar os usuários**. 
+
+    - **Resolver** é equivalente a fechar um alerta
+    
+    - **Supressão** faz com que uma política não acione alertas por um período de tempo especificado
+    
+    - **Notificar os usuários sobre** o início de um email com os endereços de email dos usuários já inseridos e permite que sua equipe de operações de segurança digite uma mensagem para esses usuários. (Isso é semelhante ao envio de uma mensagem para destinatários usando o [Explorador de ameaças](threat-explorer.md).)  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Usar a API de atividade de gerenciamento do Office 365 para soluções de relatórios personalizados ou de terceiros
 
