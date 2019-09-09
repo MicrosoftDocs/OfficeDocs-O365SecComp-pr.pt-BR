@@ -31,14 +31,14 @@ Como usuário do Office 365, você pode gerenciar as mensagens que foram enviada
   
 ## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Exibir mensagens que foram enviadas para a quarentena, em vez de serem enviadas para você
 
-1. Entre no Office 365 e [vá para o Centro de Conformidade e Segurança](go-to-the-securitycompliance-center.md) usando uma conta corporativa ou de estudante. 
+1. Entre no Office 365 e [vá para o Centro de Conformidade e Segurança](go-to-the-securitycompliance-center.md), usando uma conta corporativa ou de estudante. 
     
 2. No lado esquerdo, expanda **Gerenciamento de Ameaças**, escolha **Revisão** e escolha **Quarentena**.
     
     > [!TIP]
     > Para acessar diretamente a página **Quarentena ** no Centro de &amp;Conformidade e Segurança, use a seguinte URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
-Por padrão, o Centro de &amp; Conformidade e Segurança exibe todas as mensagens de email que foram enviadas para a quarentena como spam. As mensagens são classificadas da mais recente à mais antiga, de acordo com a **Data** de recebimento da mensagem. O **remetente**, **assunto**, e a data de vencimento (em **expiras** ) também são exibidos para cada mensagem. Para classificar um campo, clique no cabeçalho da coluna correspondente. clique no cabeçalho de uma coluna novamente para inverter a ordem da classificação.  
+Por padrão, o Centro de &amp; Conformidade e Segurança exibe todas as mensagens de email que foram enviadas para a quarentena como spam. As mensagens são classificadas da mais recente à mais antiga, de acordo com a **Data** de recebimento da mensagem. **Remetente**, **Assunto**, e a data de vencimento (em **expiras** ) também são exibidos para cada mensagem. Para classificar um campo, clique no cabeçalho da coluna correspondente. clique no cabeçalho de uma coluna novamente para inverter a ordem da classificação.  
   
 Você pode exibir uma lista de todas as mensagens em quarentena ou pesquisar mensagens específicas por meio de filtragem. Nosso sistema permite realizar operações em massa com até 100 itens, portanto a filtragem também pode ajudar a reduzir o conjunto de resultados, se você tiver mais do que essa quantidade de itens. Para filtrar rapidamente as mensagens por um único motivo de quarentena, escolha uma opção na lista suspensa. As opções são:
   
@@ -59,9 +59,9 @@ Caso tenha muitos itens em quarentena, filtre-os para reduzi-los a uma quantidad
     
 2. Em **Classificar resultados por**, defina os filtros adequados para escolher uma combinação de condições (no momento, não é possível usar caracteres curinga). Entre as várias condições disponíveis, estão as seguintes:
     
-  - **Identificação da mensagem** Use esse recurso para selecionar uma mensagem específica se souber a identificação da mensagem. 
+  - **ID de Mensagem** Use esse recurso para selecionar uma mensagem específica se souber a identificação da mensagem. 
     
-    Por exemplo, se uma mensagem específica é enviada por, ou destinada a, um usuário em sua organização, mas ela nunca chega ao seu destino, você pode procurar a mensagem utilizando um recurso de rastreamento de mensagens.(consulte [Executar um rastreamento de mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para a quarentena, talvez porque ela corresponde a uma regra ou foi identificada como spam, é possível encontrá-la facilmente na quarentena especificando sua ID de Mensagem. Certifique-se de incluir a cadeia de caracteres de ID de mensagem completa. Isso pode incluir colchetes angulares\<(\>), por exemplo:
+    Por exemplo, se uma mensagem específica é enviada por, ou destinada a, um usuário em sua organização, mas ela nunca chega ao seu destino, você pode procurar a mensagem, utilizando um recurso de rastreamento de mensagens.(consulte [Executar um rastreamento de mensagem e exibir resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Se você descobrir que a mensagem foi enviada para a quarentena, talvez porque ela corresponde a uma regra ou foi identificada como spam, é possível encontrá-la facilmente na quarentena especificando sua ID de Mensagem. Certifique-se de incluir a cadeia de caracteres de ID de Mensagem completa. Isso pode incluir colchetes angulares\<(\>), por exemplo:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
@@ -82,15 +82,15 @@ Caso tenha muitos itens em quarentena, filtre-os para reduzi-los a uma quantidad
 
 Depois de selecionar uma mensagem, você verá um resumo das propriedades da mensagem em um painel, no lado direito da página.
   
-- **Identificação da mensagem**: identificador exclusivo da mensagem. 
+- **ID de Mensagem**: identificador exclusivo da mensagem. 
     
-- **Endereço do remetente**: a pessoa que enviou a mensagem. 
+- **Endereço do Remetente**: a pessoa que enviou a mensagem. 
     
 - **Recebida:** data em que a mensagem foi recebida. 
     
 - **Assunto: ** O texto da linha de assunto da mensagem. 
     
-- **Motivo da Quarentena**: mostra se a mensagem foi identificada como **Spam** ou **Em massa**.
+- **Motivo da quarentena**: mostra se a mensagem foi identificada como **Spam** ou **Em massa**.
     
 - **Expira em**: data em que a mensagem será excluída da quarentena. 
     
@@ -114,7 +114,7 @@ Depois de selecionar uma mensagem ou um grupo de mensagens, há várias opções
     
     Se optar por relatar uma mensagem, fato referido também como "relatar mensagem como falso positivo", ela será relatada à Equipe de Análise de Spam da Microsoft. A equipe avalia e analisa mensagens identificadas como falsos positivos e, dependendo dos resultados da análise, é possível ajustar as regras de filtro de conteúdo de spam de todo o serviço para permitir o envio dessas mensagens.
     
-- **Baixar mensagem** Permite baixar a mensagem como um arquivo .eml. Depois de baixar a mensagem, é possível examinar o arquivo .eml usando o cliente de email, antes de liberá-la. 
+- **Baixar mensagem** Permite baixar a mensagem como um arquivo .eml. Depois de baixar a mensagem, é possível examinar o arquivo .eml, usando o cliente de email, antes de liberá-la. 
     
 - **Remover da quarentena** Exclui a mensagem imediatamente da quarentena, sem liberá-la para a Caixa de Entrada. 
     
