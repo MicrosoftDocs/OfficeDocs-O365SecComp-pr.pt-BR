@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatizado, investigação, resposta, correção, 
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Comece a usar os recursos de investigação e resposta automatizados no Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
-ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
+ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790925"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822491"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar automaticamente e responder a ameaças no Office 365
 
 ## <a name="overview"></a>Visão geral
 
-[Proteção avançada contra ameaças do Office 365](office-365-atp.md) O plano 2 inclui recursos automatizados de investigação e resposta (AIR) que podem economizar tempo e esforço da equipe de operações de segurança em lidar com alertas e ameaças. Leia este artigo para começar a usar os recursos de ar no Office 365. Para saber mais sobre como funciona o AIR, consulte [investigação e resposta automatizadas (Air) com o Office 365](automated-investigation-response-office.md).
+[Proteção avançada contra ameaças do Office 365](office-365-atp.md) O plano 2 inclui recursos de resposta de incidentes automatizados (ar) que podem economizar tempo e esforço da equipe de operações de segurança em lidar com alertas e ameaças. Leia este artigo para começar a usar os recursos de ar no Office 365. Para saber mais sobre como funciona o AIR, confira o [Air (resposta de incidente automatizado) no Office 365](automated-investigation-response-office.md).
 
 Com o AIR, quando determinados alertas são acionados, um ou mais guias estratégicos de segurança iniciam e a investigação automatizada é iniciada. Durante e após um processo de investigação automatizado, a equipe de administradores e operações de segurança pode:
 
@@ -98,7 +98,7 @@ Determinados tipos de alertas disparam investigação automatizada no Office 365
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Usar a API de atividade de gerenciamento do Office 365 para soluções de relatórios personalizados ou de terceiros
 
-Se sua organização estiver usando uma solução de relatório personalizada ou uma solução de relatório de terceiros, você poderá exibir informações sobre investigações automatizadas nessa solução usando a API da atividade de gerenciamento do Office 365.
+Se sua organização estiver usando uma solução de relatórios personalizada ou de terceiros, você poderá exibir informações sobre investigações automatizadas nessa solução usando a API da atividade de gerenciamento do Office 365.
 
 Use os seguintes recursos para configurar isso:
 

@@ -1,9 +1,9 @@
 ---
-title: Investigação e resposta automatizadas (AIR) no Office 365
+title: Resposta de incidente automatizado (AIR) no Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Saiba mais sobre os recursos de investigação e resposta automatizados do Office 365 proteção avançada contra ameaças.
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: Saiba mais sobre os recursos de resposta de incidentes automatizados no Office 365 proteção avançada contra ameaças.
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761697"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822481"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Investigação e resposta automatizadas (AIR) no Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Resposta de incidente automatizado (AIR) no Office 365
 
-Recursos automatizados de investigação e resposta (AIR) (incluídos no [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) permitem que você execute processos de investigação automatizados em resposta a ameaças bem conhecidas que existem hoje. Leia este artigo para obter uma visão geral do AIR e como ele pode ajudar sua organização e as equipes de operações de segurança a reduzir as ameaças de forma mais eficaz e eficiente. Para começar a usar o AIR, consulte [investigar automaticamente e responder a ameaças no Office 365](office-365-air.md).
+Os recursos de resposta de incidentes automatizados (AIR) (incluídos no [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) permitem que você execute processos de investigação automatizados em resposta a ameaças bem conhecidas que existem hoje. Leia este artigo para obter uma visão geral do AIR e como ele pode ajudar sua organização e as equipes de operações de segurança a reduzir as ameaças de forma mais eficaz e eficiente. Para começar a usar o AIR, consulte [investigar automaticamente e responder a ameaças no Office 365](office-365-air.md).
 
 > [!NOTE]
 > Você deve ser um administrador global, administrador de segurança, operador de segurança ou leitor de segurança para executar as tarefas descritas neste artigo. Para saber mais, veja [centro de segurança do Microsoft 365: funções e permissões](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
@@ -102,19 +102,22 @@ Você pode:
 - Aplicar filtros. Escolha um **tipo de investigação**, **intervalo de tempo**, **status**ou uma combinação desses.
 - Exporte os dados para um arquivo. csv.
 
-O status de investigação indica o progresso das análises e ações. À medida que a investigação é executada, o status é alterado para indicar se as ameaças foram encontradas e se as ações foram aprovadas. 
-- **Iniciando**: a investigação será enfileirada para começar em breve
-- **Executando**: a investigação foi iniciada e está conduzindo sua análise
-- **Nenhuma ameaça encontrada**: a investigação concluiu a análise e nenhuma ameaça foi encontrada
-- **Encerrado pelo sistema**: a investigação não foi fechada e expirou após 7 dias
-- **Ação pendente**: a investigação encontrou ameaças com ações recomendadas
-- **Ameaças encontradas**: a investigação encontrou ameaças, mas as ameaças não têm ações disponíveis no Air
-- **Corrigido**: a investigação foi concluída e foi totalmente corrigida (todas as ações foram aprovadas)
-- **Parcialmente corrigido**: a investigação concluída e algumas das ações recomendadas foram aprovadas
-- **Encerrado pelo usuário**: um administrador terminou a investigação
-- **Falha**: ocorreu um erro durante a investigação que impediu que ele chegasse em ameaças
-- **Enfileirado por limitação**: a investigação está aguardando a análise devido às limitações de processamento do sistema (para proteger o desempenho do serviço)
-- **Terminada pela limitação**: não foi possível concluir a investigação em tempo suficiente devido à investigação de limitações de processamento de volume e sistema. Você pode acionar novamente a investigação selecionando o email no Explorer e selecionando a ação investigar.
+O status de investigação indica o progresso das análises e ações. À medida que a investigação é executada, o status é alterado para indicar se as ameaças foram encontradas e se as ações foram aprovadas, conforme descrito na tabela a seguir:
+
+|Status | Descrição  |
+|----|----| 
+|**Iniciando**|A investigação será enfileirada para começar em breve |
+|**Executando** |A investigação foi iniciada e está conduzindo sua análise |
+|**Nenhuma ameaça encontrada** |A investigação concluiu a análise e nenhuma ameaça foi encontrada |
+|**Encerrado pelo sistema** |A investigação não foi fechada e expirou após 7 dias |
+|**Ação pendente** |A investigação encontrou ameaças com ações recomendadas |
+|**Ameaças encontradas** |A investigação encontrou ameaças, mas as ameaças não têm ações disponíveis no AIR |
+|**Corrigidos** |A investigação foi concluída e foi totalmente corrigida (todas as ações foram aprovadas) |
+|**Parcialmente corrigido** |A investigação terminou e algumas das ações recomendadas foram aprovadas |
+|**Encerrado pelo usuário** |Um administrador terminou a investigação |
+|**Falhou**|Ocorreu um erro durante a investigação que o impediu de chegar a uma conclusão em relação a ameaças |
+|**Em fila por limitação**|A investigação está aguardando a análise devido a limitações de processamento do sistema (para proteger o desempenho do serviço) |
+|**Terminada pela limitação**|A investigação não pôde ser concluída em tempo suficiente devido à investigação de limitações de processamento de volume e sistema. Você pode acionar novamente a investigação selecionando o email no Explorer e selecionando a ação investigar. |
 
 ### <a name="investigation-graph"></a>Gráfico de investigação
 
@@ -270,7 +273,7 @@ Correção é a fase final do guia estratégico. Durante esta fase, as etapas de
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exemplo: um administrador de segurança dispara uma investigação do explorador de ameaças
 
-Além de investigações automáticas disparadas por um alerta, a equipe de operações de segurança da sua organização pode acionar uma investigação automática de um modo de exibição no [Explorador de ameaças](use-explorer-in-security-and-compliance.md).
+Além de investigações automatizadas disparadas por um alerta, a equipe de operações de segurança da sua organização pode acionar uma investigação automatizada a partir de um modo de exibição no [Explorador de ameaças](use-explorer-in-security-and-compliance.md).
 
 Por exemplo, suponha que você está exibindo dados no Explorer sobre mensagens relatadas pelo usuário. Você pode selecionar um item na lista de resultados e, em seguida, clicar em **investigar**.
 
@@ -280,7 +283,7 @@ Como outro exemplo, suponha que você esteja exibindo dados sobre mensagens de e
 
 ![Iniciando uma investigação de malware no Explorer](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Semelhante aos guias estratégicos acionados por um alerta, as investigações automáticas disparadas de um modo de exibição no Explorer incluem uma investigação raiz, etapas para identificar e correlacionar ameaças e ações recomendadas para atenuar essas ameaças.
+Semelhante aos guias estratégicos acionados por um alerta, as investigações automatizadas disparadas de um modo de exibição no Explorer incluem uma investigação raiz, etapas para identificar e correlacionar ameaças e ações recomendadas para atenuar essas ameaças.
 
 ## <a name="how-to-get-air"></a>Como obter o AIR
 
