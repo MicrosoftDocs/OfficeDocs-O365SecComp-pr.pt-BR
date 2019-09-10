@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Com uma política de retenção, você pode decidir proativamente se deseja para reter o conteúdo, excluí-lo ou ambos: reter e em seguida excluir o conteúdo; aplicar uma única política para a organização inteira ou apenas a locais ou usuários específicos; e aplicar uma política a todo o conteúdo ou apenas ao conteúdo que cumpra certas condições.'
-ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: bb5c9a8c3c2443ff6913b3de1b88807d7530384e
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444891"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822501"
 ---
 # <a name="overview-of-retention-policies"></a>Visão geral de políticas de retenção
 
@@ -51,8 +51,8 @@ Por fim, algumas organizações talvez precisem cumprir regulamentações, como 
   
 Você cria e gerencia políticas de retenção na:
 
-- Página **Políticas** no centro de conformidade do Microsoft 365.
-- Página **Retenção** sob **Governança de dados** no Centro de Conformidade &amp;e Segurança do Office 365.
+- Página **Políticas** no [centro de conformidade do Microsoft 365](https://compliance.microsoft.com/).
+- Página **Retenção** sob **Governança de dados** no [Centro de Conformidade&amp; e Segurança do Office 365](https://protection.office.com/).
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Como funciona uma política de retenção com conteúdo in-loco
 
@@ -187,7 +187,7 @@ Um dos recursos mais avançados de política de retenção é que, por padrão, 
     
 - Contas do OneDrive
     
-- Grupos do Office 365 (aplicável ao conteúdo da caixa de correio, sites e documentos do grupo. O suporte para o conteúdo no Planner, no Yammer e no CRM estará disponível em breve).
+- Grupos do Office 365 (aplicável ao conteúdo da caixa de correio, site e documentos do grupo).
     
 - Pastas públicas do Exchange
     
@@ -198,6 +198,8 @@ Outros recursos importantes de uma política de retenção no âmbito da organiz
 - Não há um limite para o número de caixas de correio ou sites que essa política pode incluir.
     
 - Para o Exchange, as caixas de correio criadas após a aplicação da política herdam a política automaticamente.
+
+
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Uma política aplicável a locais inteiros
 
@@ -231,7 +233,7 @@ Observe que o **Histórico da Conversa**, uma pasta no Outlook, é um recurso qu
 
 ### <a name="office-365-groups-locations"></a>Locais de grupos do Office 365
 
-Para reter o conteúdo de um Grupo do Office 365, é necessário usar o local dos grupos do Office 365. Mesmo que um Grupo do Office 365 tenha uma caixa de correio do Exchange, uma política de retenção que inclua todo o local do Exchange não incluirá conteúdo nas caixas de correio de Grupo do Office 365. Uma política de retenção aplicada a um grupo do Office 365 inclui a caixa de correio do grupo e um site.
+Para manter o conteúdo de um grupo do Office 365, você precisa usar o local de grupos do Office 365. Mesmo que um grupo do Office 365 tenha uma caixa de correio do Exchange, uma política de retenção que inclua todo o local do Exchange não incluirá conteúdo nas caixas de correio de grupo do Office 365. Uma política de retenção aplicada a um grupo do Office 365 inclui a caixa de correio do grupo e um site. Uma política de retenção aplicada a um grupo do Office 365 protegerá os recursos criados por um grupo do Office 365, que inclui o Microsoft Teams.
 
 Além disso, não é possível usar o local do Exchange para incluir ou excluir uma caixa de correio de grupo específica. Embora o local do Exchange permita inicialmente que uma caixa de correio de grupo seja selecionada, quando você tentar salvar a política de retenção, receberá um erro informando que "RemoteGroupMailbox" não é uma seleção válida para o local do Exchange. 
   
@@ -253,7 +255,7 @@ Ainda estamos trabalhando em retenção no Teams e outros recursos estão chegan
     
 - **O Teams pode levar até 30 dias para limpar o conteúdo retido** Uma política de retenção aplicada ao Teams excluirá o conteúdo de todos os locais de armazenamento relevantes. No entanto, imediatamente após o lançamento, poderá levar até 30 dias para os clientes do Teams limpar o conteúdo com base na política de retenção. Mas mesmo que o conteúdo ainda apareça nos clientes do Teams, esse conteúdo não será exibido na pesquisa de conteúdo ou Descoberta Eletrônica após o término do período de retenção. 
     
-Em uma equipe, os arquivos compartilhados em um chat são armazenados na conta do OneDrive do usuário que compartilhou o arquivo. Os arquivos que são carregados nos canais são armazenados no site do SharePoint para a equipe. Portanto, para manter ou excluir arquivos em uma equipe, você precisará criar uma política de retenção que se aplica aos locais do SharePoint e do OneDrive. Se quiser aplicar uma política aos arquivos de apenas uma equipe específica, você poderá escolher o site do SharePoint para a equipe e as contas de usuários do OneDrive na equipe.
+Em uma equipe do Teams, arquivos compartilhados em chat são armazenados na conta do OneDrive do usuário que compartilhou o arquivo. Arquivos carregados em canais são armazenados no site do SharePoint da equipe do Teams. Portanto, para manter ou excluir arquivos em uma equipe do Teams, você precisa criar uma política de retenção que se aplique especificamente aos locais do SharePoint e do OneDrive. Para aplicar uma política aos arquivos apenas para uma equipe específica, escolha o site do SharePoint da equipe do Teams e as contas do OneDrive dos usuários na equipe do Teams.
   
 Uma política de retenção que se aplica ao Teams pode usar [Bloqueio de Preservação](#locking-a-retention-policy).
   
@@ -339,6 +341,8 @@ Há vários outros recursos que já foram usados para reter ou excluir conteúdo
 - [Gerenciar ocorrências de Descoberta Eletrônica no &amp;Centro de Conformidade e Segurança ](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)do Office 365 (Retenção de Descoberta Eletrônica) 
     
 - [Bloqueio In-loco e a Retenção de Litígio](https://go.microsoft.com/fwlink/?linkid=846124) (Retenção de Descoberta Eletrônica) 
+
+- [Como identificar o tipo de retenção de uma caixa de correio do Exchange Online](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox)
     
 - [Marcas de retenção e políticas de retenção](https://go.microsoft.com/fwlink/?linkid=846125), também conhecidas como [gerenciamento de registros de mensagens (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (apenas exclusão) 
     
@@ -364,11 +368,11 @@ Nos sites do SharePoint, talvez você esteja usando [políticas de gerenciamento
   
 ## <a name="what-happened-to-preservation-policies"></a>O que aconteceu com as políticas de preservação?
 
-Se você estava usando uma política de preservação, essa política foi automaticamente convertida em uma política de retenção que usa apenas a ação de retenção - a política não excluirá conteúdo. A política de preservação continuará a funcionar e preservar seu conteúdo sem exigir mudanças da sua parte. Você pode encontrar essas políticas na página **Políticas** no centro de conformidade do Microsoft 365 ou na página **Retenção**, em **Governança de dados**, no &amp;Centro de Conformidade e Segurança. Você pode editar uma política de preservação para alterar o período de retenção, mas você não pode fazer outras alterações, como adicionar ou remover locais. 
+Se você estava usando uma política de preservação, essa política foi automaticamente convertida em uma política de retenção que usa apenas a ação de retenção - a política não excluirá conteúdo. A política de preservação continuará a funcionar e preservar seu conteúdo sem exigir mudanças da sua parte. Você pode encontrar essas políticas na página **Políticas** no [centro de conformidade do Microsoft 365](https://compliance.microsoft.com/) ou na página **Retenção**, em **Governança de dados**, no [Centro de Conformidade&amp; e Segurança](https://protection.office.com/). Você pode editar uma política de preservação para alterar o período de retenção, mas você não pode fazer outras alterações, como adicionar ou remover locais. 
   
 ## <a name="permissions"></a>Permissões
 
-Os membros da equipe de conformidade que criarão políticas de retenção precisam de permissões para o &amp; Centro de Conformidade e Segurança. Por padrão, o administrador de locatário terá acesso a esse local e pode fornecer acesso a outras pessoas e aos responsáveis pela conformidade ao &amp; Centro de Conformidade e Segurança, sem lhes dar todas as permissões de um administrador de locatários Para fazer isso, recomendamos que você acesse a página **Permissões** do &amp; Centro de Conformidade e Segurança, edite o grupo de função **Administrador de Conformidade** e adicionar membros a esse grupo de função. 
+Os membros da sua equipe de conformidade que criarão políticas de retenção precisam de permissões para o [Centro de Conformidade&amp; e Segurança](https://protection.office.com/). Por padrão, o administrador de locatário terá acesso a esse local e pode dar acesso a outras pessoas e aos responsáveis pela conformidade ao [Centro de Conformidade&amp; e Segurança](https://protection.office.com/), sem lhes dar todas as permissões de um administrador de locatários. Para fazer isso, recomendamos que você acesse a página **Permissões** do [Centro de Conformidade&amp; e Segurança](https://protection.office.com/), edite o grupo de função **Administrador de Conformidade** e adicione membros a esse grupo de função. 
   
 Para saber mais, consulte [Dê aos usuários acesso ao Centro de Conformidade e Segurança&amp; do Office 365](grant-access-to-the-security-and-compliance-center.md).
   
@@ -385,5 +389,7 @@ Para usar os cmdlets de política de retenção, você precisará:
 ## <a name="more-information"></a>Mais informações
 
 - [Visão geral de rótulos](labels.md)
+- [Limites do SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limites e especificações para o Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/limits-specifications-teams) 
     
 
