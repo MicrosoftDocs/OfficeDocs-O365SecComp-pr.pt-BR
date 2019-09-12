@@ -35,9 +35,7 @@ A abordagem básica recomendada para o conteúdo gerado pelo usuário em sites e
 
 A abordagem recomendada para compartilhamentos de arquivos e sites do SharePoint inclui estas etapas:
 
-1.  
-  **
-  [Instale e configure o verificador da Proteção de Informações do Azure.](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Instale e configure o verificador da Proteção de Informações do Azure.](https://docs.microsoft.com/pt-BR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Decida quais tipos de dados confidenciais usar.
 

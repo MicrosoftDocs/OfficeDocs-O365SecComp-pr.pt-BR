@@ -141,11 +141,9 @@ Talvez seja preciso criar outras consultas para localizar dados pessoais sujeito
 
 Use estes recursos para formular e otimizar consultas usando KQL:
 
--   
-  [Referência de sintaxe (DMC) da Keyword Query Language(KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Referência de sintaxe (DMC) da Keyword Query Language(KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   
-  [Executar uma Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Executar uma Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 A Pesquisa de Conteúdo oferece outro recurso para ajudar você a desenvolver consultas KQL e tipos de informação confidencial – as palavras-chave. Por que usar a lista de palavras-chave? Para ver estatísticas que mostram o número de itens que correspondem a cada palavra-chave, o que pode ajudar a identificar rapidamente quais palavras-chave são mais (e menos) eficientes. Para saber mais sobre as estatísticas de pesquisas, confira [Exibir as estatísticas de palavras-chave dos resultados da Pesquisa de Conteúdo](https://support.office.com/pt-BR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
