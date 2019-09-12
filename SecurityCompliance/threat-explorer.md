@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Saiba mais sobre as detecções do Explorer e do tempo real no &amp; centro de conformidade de segurança.
-ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: b404fdf5abaf0031313b211c2ef2d415045de4d1
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444881"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852793"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Gerenciador de ameaças e detecções em tempo real
 
@@ -126,7 +126,7 @@ Suponha que você queira ver as mensagens de email que os usuários em sua organ
 
 1. No centro de conformidade e segurança &[https://protection.office.com](https://protection.office.com)(), escolha**Gerenciador** de **Gerenciamento** > de ameaças (ou **detecções em tempo real**). (Este exemplo usa o Explorer.)
 
-2. No menu **Exibir** , escolha envios de **email** > ****.<br/>![Menu Exibir para Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. No menu **Exibir** , escolha**envios**de **email** > .<br/>![Menu Exibir para Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Clique em **remetente**e, em seguida, escolha**tipo de relatório** **básico** > .
 
@@ -137,9 +137,9 @@ O relatório é atualizado para mostrar dados sobre mensagens de email que as pe
 ## <a name="start-automated-investigation-and-response"></a>Iniciar investigação e resposta automatizadas
 
 > [!NOTE]
-> Os recursos de investigação e resposta automatizados estão disponíveis no **office 365 ATP Plan 2** e no **Office 365 E5**.
+> Os recursos de resposta de incidentes automatizados estão disponíveis no **office 365 ATP Plan 2** e no **Office 365 E5**.
 
-(Novo!) A [investigação e a resposta automatizadas](automated-investigation-response-office.md) podem salvar sua equipe de operações de segurança muito tempo e esforço na investigação e redução de ataques de cyberismo. Além de configurar alertas que podem acionar um guia de segurança, você pode iniciar um processo de investigação e resposta automatizado de um modo de exibição no Explorer. 
+(Novo!) A [resposta de incidentes automatizado](automated-investigation-response-office.md) pode economizar sua equipe de operações de segurança muito tempo e esforço na investigação e redução do cyberattacks. Além de configurar alertas que podem acionar um guia de segurança, você pode iniciar um processo de investigação e resposta automatizado de um modo de exibição no Explorer. 
 
 Para obter detalhes sobre isso, consulte [example: um administrador de segurança dispara uma investigação do Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 

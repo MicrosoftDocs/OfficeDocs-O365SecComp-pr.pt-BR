@@ -1,7 +1,7 @@
 ---
 title: Investigação e resposta a ameaças do Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/23/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra como os recursos de inteligência de ameaças no Office 365 proteção avançada contra ameaças pode ajudá-lo a Pesquisar ameaças em sua organização, responder a malware, phishing e outros ataques que o Office 365 detectou em seu nome e Pesquisar ameaças indicadores.
-ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 0edf68f3383759a4cffd9cb7c25260a51913beb0
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761647"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852763"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigação e resposta a ameaças do Office 365
 
@@ -74,7 +74,7 @@ Use o simulador de ataques para configurar e executar o cyberattacks realista em
 
 ### <a name="automated-investigation-and-response"></a>Investigação e resposta automatizadas
 
-Use recursos automatizados de investigação e resposta (AIR) para economizar tempo e esforço de correlação de conteúdo, dispositivos e pessoas em risco de ameaças em sua organização. Os processos de ar podem começar sempre que determinados alertas são acionados ou quando iniciados por sua equipe de operações de segurança. Para saber mais, confira [investigação e resposta automatizadas (Air) com o Office 365](automated-investigation-response-office.md). 
+Use recursos automatizados de investigação e resposta (AIR) para economizar tempo e esforço de correlação de conteúdo, dispositivos e pessoas em risco de ameaças em sua organização. Os processos de ar podem começar sempre que determinados alertas são acionados ou quando iniciados por sua equipe de operações de segurança. Para saber mais, veja [resposta de incidente automatizado (Air) com o Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Widgets de inteligência de ameaças
 

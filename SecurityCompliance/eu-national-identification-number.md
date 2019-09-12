@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Este tópico mostra o que uma política de prevenção de perda de dados (DLP) procura quando detecta o tipo de informação confidencial do número de identificação nacional da UE. Esse tipo de informação confidencial define diferentes padrões, palavras-chave e outras evidências para cada país.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490768"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852743"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificação nacional da UE
 
@@ -1096,13 +1096,13 @@ emšo
 
 ### <a name="format"></a>Formatar
 
-Sete dígitos seguidos de um caractere
+Oito dígitos seguidos de um caractere
   
 ### <a name="pattern"></a>Padrão
 
-Sete dígitos seguidos de um caractere
+Oito dígitos seguidos de um caractere
   
-- Sete dígitos 
+- Oito dígitos
     
 - Um dígito ou letra (não diferencia maiúsculas de minúsculas)
     
