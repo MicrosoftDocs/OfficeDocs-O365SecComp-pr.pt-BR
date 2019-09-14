@@ -15,19 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use o Centro de Conformidade e Segurança para pesquisar o log de auditoria unificada para exibir a atividade do usuário e do administrador na sua organização do Office 365.
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838161"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877310"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Pesquisar o log de auditoria no Centro de Conformidade e Segurança
 
 ## <a name="introduction"></a>Introdução
 
-Precisa descobrir se um usuário visualizou um documento específico ou apagou um item de sua caixa de correio? Nesse caso, você pode usar o Centro de Conformidade &amp; Segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade do usuário e do administrador na sua organização do Office 365.
- Por que usar um log de auditoria unificada? Porque você pode procurar os seguintes tipos de atividades de usuários e administradores do Office 365:
+Precisa descobrir se um usuário visualizou um documento específico ou apagou um item de sua caixa de correio? Nesse caso, você pode usar o Centro de Conformidade & Segurança do Office 365 para pesquisar o log de auditoria unificada para exibir a atividade do usuário e do administrador na sua organização do Office 365. Por que usar um log de auditoria unificada? Porque você pode procurar os seguintes tipos de atividades de usuários e administradores do Office 365:
 
 - Atividade do usuário do SharePoint Online e do OneDrive for Business
 
@@ -76,6 +75,9 @@ Leia os seguintes itens antes de começar a pesquisar o log de auditoria do Offi
 - Quando uma atividade auditada é realizada por um usuário ou administrador, um registro de auditoria é gerado e armazenado no log de auditoria do Office 365 para a sua organização. O período de tempo em que um registro de auditoria é mantido (e pesquisável no log de auditoria) depende da sua assinatura do Office 365 e, especificamente, do tipo de licença atribuída a um usuário específico.
 
   - **Office 365 E3:** Os registros de auditoria são mantidos por 90 dias. Isso significa que você pode pesquisar o log de auditoria para atividades que foram realizadas nos últimos 90 dias.
+
+    > [!NOTE]
+    > Mesmo quando a auditoria da caixa de correio está ativada por padrão, pode-se notar que os eventos de auditoria de caixa de correio de alguns usuários não são encontrados nas pesquisas de log de auditoria no Centro de Conformidade & Segurança ou por meio da API de Atividade de Gerenciamento do Office 365. Para saber mais, confira [Mais informações sobre o log de auditoria de caixa de correio](enable-mailbox-auditing.md#more-information).
 
   - **Office 365 E5:** Os registros de auditoria também são mantidos por 90 dias. Manter registros de auditoria por um ano pode estar disponível para usuários do E5 e usuários com uma licença do E3 e uma licença do complemento de Conformidade Avançada do Office 365.
 
